@@ -1,0 +1,229 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 6.99.21 (GENERIC) #0: Wed Jun 12 11:26:12 JST 2013
+	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/GENERIC
+total memory = 2995 MB
+avail memory = 2932 MB
+timecounter: Timecounters tick every 10.000 msec
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+LENOVO 5397RS8 (ThinkPad X201s)
+mainbus0 (root)
+cpu0 at mainbus0 apid 0: Intel(R) Core(TM) i5 CPU       U 520  @ 1.07GHz, id 0x20655
+cpu1 at mainbus0 apid 1: Intel(R) Core(TM) i5 CPU       U 520  @ 1.07GHz, id 0x20655
+cpu2 at mainbus0 apid 4: Intel(R) Core(TM) i5 CPU       U 520  @ 1.07GHz, id 0x20655
+cpu3 at mainbus0 apid 5: Intel(R) Core(TM) i5 CPU       U 520  @ 1.07GHz, id 0x20655
+ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 20, 24 pins
+acpi0 at mainbus0: Intel ACPICA 20110623
+acpi0: X/RSDT: OemId <LENOVO,TP-6Q   ,00001150>, AslId < LTP,00000000>
+acpiecdt0 at acpi0: ACPI Embedded Controller via ECDT
+acpi0: SCI interrupting at int 9
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+acpiec0 at acpi0 (EC, PNP0C09-0): using acpiecdt0
+MEM (PNP0C01) at acpi0 not configured
+acpilid0 at acpi0 (LID, PNP0C0D): ACPI Lid Switch
+acpibut0 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
+acpivga0 at acpi0 (VID): ACPI Display Adapter
+acpiout0 at acpivga0 (LCD0, 0x0400): ACPI Display Output Device
+acpiout0: brightness levels: 2 3 4 5 7 8 10 12 14 17 20 22 30 42 63 100
+acpiout1 at acpivga0 (CRT0, 0x0100): ACPI Display Output Device
+acpiout2 at acpivga0 (DVI0, 0x0300): ACPI Display Output Device
+acpiout3 at acpivga0 (DVI1, 0x0301): ACPI Display Output Device
+acpiout4 at acpivga0 (DVI2, 0x0302): ACPI Display Output Device
+acpiout5 at acpivga0 (DVI3, 0x0303): ACPI Display Output Device
+acpiout6 at acpivga0 (DVI4, 0x0304): ACPI Display Output Device
+acpiout7 at acpivga0 (DVI5, 0x0305): ACPI Display Output Device
+acpivga0: unknown output device acpiout1
+acpivga0: unknown output device acpiout2
+acpivga0: unknown output device acpiout3
+acpivga0: unknown output device acpiout4
+acpivga0: unknown output device acpiout5
+acpivga0: unknown output device acpiout6
+acpivga0: unknown output device acpiout7
+acpivga0: connected output devices:
+acpivga0:   0x0400 (acpiout0): Unknown Output Device, head 0
+SIO (PNP0C02) at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43 irq 0
+pcppi1 at acpi0 (SPKR, PNP0800): io 0x61
+midi0 at pcppi1: PC speaker
+sysbeep0 at pcppi1
+npx1 at acpi0 (FPU, PNP0C04): io 0xf0 irq 13
+npx1: reported by CPUID; using exception 16
+pckbc1 at acpi0 (KBD, PNP0303) (kbd port): io 0x60,0x64 irq 1
+pckbc2 at acpi0 (MOU, LEN0018) (aux port): irq 12
+TPM (SMO1200) at acpi0 not configured
+acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
+acpibat0: LGC LION rechargeable battery
+acpibat0: granularity: low->warn 0.001 Ah, warn->full 0.001 Ah
+acpiacad0 at acpi0 (AC, ACPI0003-0): ACPI AC Adapter
+thinkpad0 at acpi0 (HKEY, IBM0068)
+acpiwmi0 at acpi0 (WMI1, PNP0C14-1): ACPI WMI Interface
+acpiwmibus at acpiwmi0 not configured
+acpitz0 at acpi0 (THM0): cpu0 cpu1 cpu2 cpu3
+acpitz0: levels: critical 100.0 C, passive 91.5 C, passive cooling
+apm0 at acpi0: Power Management spec V1.2
+attimer1: attached to pcppi1
+pckbd0 at pckbc1 (kbd slot)
+pckbc1: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc1 (aux slot)
+pms0: Synaptics touchpad version 7.4
+pms0: Passthrough, Palm detect
+pckbc1: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: vendor 0x8086 product 0x0044 (rev. 0x02)
+agp0 at pchb0: detected 32764k stolen memory
+agp0: aperture at 0xd0000000, size 0x10000000
+vga1 at pci0 dev 2 function 0: vendor 0x8086 product 0x0046 (rev. 0x02)
+vga1: WARNING: ignoring 64-bit BAR @ 0x10
+vga1: WARNING: ignoring 64-bit BAR @ 0x18
+wsdisplay0 at vga1 kbdmux 1: console (80x25, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+drm at vga1 not configured
+vendor 0x8086 product 0x3b64 (miscellaneous communications, revision 0x06) at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3: Intel 5 Series KT (com)
+com3 at puc0 port 0: interrupting at ioapic0 pin 17
+com3: ns16550a, working fifo
+wm0 at pci0 dev 25 function 0: PCH LAN (82577LM) Controller (rev. 0x06)
+wm0: interrupting at ioapic0 pin 20
+wm0: PCI-Express bus
+wm0: FLASH
+wm0: Ethernet address 5c:ff:35:0c:f9:b1
+ihphy0 at wm0 phy 2: i82577 10/100/1000 media interface, rev. 3
+ihphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+ehci0 at pci0 dev 26 function 0: vendor 0x8086 product 0x3b3c (rev. 0x06)
+ehci0: interrupting at ioapic0 pin 23
+ehci0: EHCI version 1.0
+usb0 at ehci0: USB revision 2.0
+hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
+hdaudio0: interrupting at ioapic0 pin 17
+hdafg0 at hdaudio0: Conexant CX20585
+hdafg0: DAC00 2ch: HP Out [Jack]
+hdafg0: ADC01 2ch: Mic In [Jack]
+hdafg0: DAC02 2ch: Speaker [Built-In]
+hdafg0: ADC03 2ch: Mic In [Built-In]
+hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: full duplex, playback, capture, independent
+hdvsmfg at hdaudio0 not configured
+hdafg1 at hdaudio0: Intel G45 HDMI
+hdafg1: DP00 8ch: Digital Out [Jack]
+hdafg1: 8ch/0ch 48000Hz PCM16*
+ppb0 at pci0 dev 28 function 0: vendor 0x8086 product 0x3b42 (rev. 0x06)
+ppb0: PCI Express 2.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
+pci1 at ppb0 bus 13
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb1 at pci0 dev 28 function 3: vendor 0x8086 product 0x3b48 (rev. 0x06)
+ppb1: PCI Express 2.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
+pci2 at ppb1 bus 5
+pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb2 at pci0 dev 28 function 4: vendor 0x8086 product 0x3b4a (rev. 0x06)
+ppb2: PCI Express 2.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
+pci3 at ppb2 bus 2
+pci3: i/o space, memory space enabled, rd/line, wr/inv ok
+iwn0 at pci3 dev 0 function 0: vendor 0x8086 product 0x0089 (rev. 0x35)
+iwn0: interrupting at ioapic0 pin 16
+iwn0: MIMO 1T2R, MoW, address 00:23:15:23:56:68
+iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+iwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ehci1 at pci0 dev 29 function 0: vendor 0x8086 product 0x3b34 (rev. 0x06)
+ehci1: interrupting at ioapic0 pin 19
+ehci1: EHCI version 1.0
+usb1 at ehci1: USB revision 2.0
+ppb3 at pci0 dev 30 function 0: vendor 0x8086 product 0x2448 (rev. 0xa6)
+pci4 at ppb3 bus 14
+pci4: i/o space, memory space enabled
+ichlpcib0 at pci0 dev 31 function 0: vendor 0x8086 product 0x3b07 (rev. 0x06)
+ichlpcib0: can't map power management i/o spaceahcisata0 at pci0 dev 31 function 2: vendor 0x8086 product 0x3b2f (rev. 0x06)
+ahcisata0: interrupting at ioapic0 pin 16
+ahcisata0: AHCI revision 1.30, 6 ports, 32 slots, CAP 0xff20ff65<SXS,EMS,PSC,SSC,PMD,ISS=0x2=Gen2,SCLO,SAL,SALP,SSS,SMPS,SSNTF,SNCQ,S64A>
+atabus0 at ahcisata0 channel 0
+atabus1 at ahcisata0 channel 1
+atabus2 at ahcisata0 channel 4
+atabus3 at ahcisata0 channel 5
+ichsmb0 at pci0 dev 31 function 3: vendor 0x8086 product 0x3b30 (rev. 0x06)
+ichsmb0: interrupting at ioapic0 pin 23
+iic0 at ichsmb0: I2C bus
+vendor 0x8086 product 0x3b32 (miscellaneous DASP, revision 0x06) at pci0 dev 31 function 6 not configured
+isa0 at ichlpcib0
+tpm0 at isa0 iomem 0xfed40000-0xfed44fff irq 7: device 0x0000104a rev 0x4e
+pci5 at mainbus0 bus 255
+pci5: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb1 at pci5 dev 0 function 0: vendor 0x8086 product 0x2c62 (rev. 0x02)
+pchb2 at pci5 dev 0 function 1: vendor 0x8086 product 0x2d01 (rev. 0x02)
+pchb3 at pci5 dev 2 function 0: vendor 0x8086 product 0x2d10 (rev. 0x02)
+pchb4 at pci5 dev 2 function 1: vendor 0x8086 product 0x2d11 (rev. 0x02)
+pchb5 at pci5 dev 2 function 2: vendor 0x8086 product 0x2d12 (rev. 0x02)
+pchb6 at pci5 dev 2 function 3: vendor 0x8086 product 0x2d13 (rev. 0x02)
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   3 us, pow  1000 mW
+acpicpu0: C2: FFH, lat 205 us, pow   500 mW
+acpicpu0: C3: FFH, lat 245 us, pow   350 mW, bus master check
+acpicpu0: P0: FFH, lat  10 us, pow 11000 mW, 1067 MHz, turbo boost
+acpicpu0: P1: FFH, lat  10 us, pow 11000 mW, 1066 MHz
+acpicpu0: P2: FFH, lat  10 us, pow  9509 mW,  933 MHz
+acpicpu0: P3: FFH, lat  10 us, pow  8060 mW,  799 MHz
+acpicpu0: P4: FFH, lat  10 us, pow  6641 mW,  666 MHz
+acpicpu0: T0: FFH, lat   1 us, pow  6641 mW, 100 %
+acpicpu0: T1: FFH, lat   1 us, pow  5810 mW,  88 %
+acpicpu0: T2: FFH, lat   1 us, pow  4980 mW,  75 %
+acpicpu0: T3: FFH, lat   1 us, pow  4150 mW,  63 %
+acpicpu0: T4: FFH, lat   1 us, pow  3320 mW,  50 %
+acpicpu0: T5: FFH, lat   1 us, pow  2490 mW,  38 %
+acpicpu0: T6: FFH, lat   1 us, pow  1660 mW,  25 %
+acpicpu0: T7: FFH, lat   1 us, pow   830 mW,  13 %
+coretemp0 at cpu0: thermal sensor, 1 C resolution
+acpicpu1 at cpu1: ACPI CPU
+acpicpu2 at cpu2: ACPI CPU
+coretemp1 at cpu2: thermal sensor, 1 C resolution
+acpicpu3 at cpu3: ACPI CPU
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+acpiacad0: AC adapter online.
+uhub0 at usb0: vendor 0x8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub0: 3 ports with 3 removable, self powered
+uhub1 at usb1: vendor 0x8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub1: 3 ports with 3 removable, self powered
+ahcisata0 port 0: device present, speed: 3.0Gb/s
+wd0 at atabus0 drive 0
+wd0: <TOSHIBA THNS128GG4BAAA-NonFDE>
+wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+wd0: 119 GB, 248085 cyl, 16 head, 63 sec, 512 bytes/sect x 250069680 sectors
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+uhub2 at uhub0 port 1: vendor 0x8087 product 0x0020, class 9/0, rev 2.00/0.00, addr 2
+uhub2: single transaction translator
+uhub3 at uhub1 port 1: vendor 0x8087 product 0x0020, class 9/0, rev 2.00/0.00, addr 2
+uhub3: single transaction translator
+uhub2: 6 ports with 6 removable, self powered
+uhub3: 8 ports with 8 removable, self powered
+ugen0 at uhub3 port 3
+umass0 at uhub2 port 1 configuration 1 interface 0
+ugen0: Intel(R) Corporation Intel(R) Centrino(R) Advanced-N + WiMAX 6250, rev 2.00/0.00, addr 3
+umass0: PQI PQI USB Flash Drive, rev 2.00/11.00, addr 3
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <Generic, USB Flash Disk, 1100> disk removable
+sd0: 3861 MB, 7872 cyl, 16 head, 63 sec, 512 bytes/sect x 7907328 sectors
+ugen1 at uhub2 port 3
+ugen1: UPEK Biometric Coprocessor, rev 1.01/0.02, addr 4
+ubt0 at uhub2 port 4
+ubt0: Broadcom Corp Broadcom Bluetooth Device, rev 2.00/3.60, addr 5
+Kernelized RAIDframe activated
+boot device: sd0
+root on sd0a dumps on sd0b
+root file system type: ffs
+WARNING: clock gained 2 days
+cprng sysctl: WARNING pseudorandom rekeying.
+acpibat0: normal capacity on 'charge state'
+iwn0: scan request(1) while scanning(0) ignored
+iwn0: scan request(1) while scanning(0) ignored
+iwn0: scan request(1) while scanning(0) ignored
+iwn0: scan request(1) while scanning(0) ignored
+iwn0: scan request(1) while scanning(0) ignored
