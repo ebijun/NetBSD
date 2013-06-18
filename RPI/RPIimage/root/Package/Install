@@ -1,0 +1,5 @@
+for i in `grep -v \# List`
+do
+	echo $i
+	pkg_add http://teokurebsd.org/netbsd/packages/arm/6.1_2013Q1/All/$i
+done
