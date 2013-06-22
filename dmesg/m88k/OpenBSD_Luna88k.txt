@@ -1,0 +1,89 @@
+cat /var/log/messages
+Jun 22 10:00:03 rhea newsyslog[12418]: logfile turned over
+Jun 22 10:00:08 rhea syslogd: restart
+Jun 22 10:16:05 rhea syslogd: exiting on signal 15
+Jun 22 10:18:18 rhea syslogd: start
+Jun 22 10:18:18 rhea /bsd: [ no symbol table formats found ]
+Jun 22 10:18:18 rhea /bsd: Copyright (c) 1982, 1986, 1989, 1991, 1993
+Jun 22 10:18:18 rhea /bsd:      The Regents of the University of California.  All rights reserved.
+Jun 22 10:18:19 rhea /bsd: Copyright (c) 1995-2013 OpenBSD. All rights reserved.  http://www.OpenBSD.org
+Jun 22 10:18:19 rhea /bsd: Copyright (c) 1995-2013 OpenBSD. All rights reserved.  http://www.OpenBSD.org
+Jun 22 10:18:19 rhea /bsd: OpenBSD 5.3-current (GENERIC) #75: Tue May 21 19:49:50 JST 2013
+Jun 22 10:18:19 rhea /bsd:     aoyama@rhea.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC
+Jun 22 10:18:19 rhea /bsd: real mem = 67108864 (64MB)
+Jun 22 10:18:19 rhea /bsd: avail mem = 62611456 (59MB)
+Jun 22 10:18:19 rhea /bsd: mainbus0 at root: OMRON LUNA-88K2, 33MHz
+Jun 22 10:18:19 rhea /bsd: cpu0: M88100 rev 0xb, 2 CMMU
+Jun 22 10:18:19 rhea /bsd: cpu0: M88200 (16K) rev 0x9, full Icache, M88200 (16K) rev 0x9, full Dcache
+Jun 22 10:18:19 rhea /bsd: clock0 at mainbus0: DS1397
+Jun 22 10:18:19 rhea /bsd: lcd0 at mainbus0
+Jun 22 10:18:19 rhea /bsd: le0 at mainbus0: address 00:00:0a:03:46:c3
+Jun 22 10:18:19 rhea /bsd: le0: 32 receive buffers, 8 transmit buffers
+Jun 22 10:18:19 rhea /bsd: sio0 at mainbus0: 7201a
+Jun 22 10:18:19 rhea /bsd: siotty0 at sio0 channel 0
+Jun 22 10:18:19 rhea /bsd: ws0 at sio0 channel 1
+Jun 22 10:18:19 rhea /bsd: wskbd0 at ws0: console keyboard
+Jun 22 10:18:19 rhea /bsd: wsmouse0 at ws0 mux 0
+Jun 22 10:18:19 rhea /bsd: fb0 at mainbus0: 1280 x 1024, 1bpp
+Jun 22 10:18:19 rhea /bsd: wsdisplay0 at fb0 mux 1: console (std, vt100 emulation), using wskbd0
+Jun 22 10:18:19 rhea /bsd: spc0 at mainbus0
+Jun 22 10:18:19 rhea /bsd: scsibus0 at spc0: 8 targets, initiator 7
+Jun 22 10:18:19 rhea /bsd: st0 at scsibus0 targ 4 lun 0: <TEAC, MT-2ST/N50, RV T> SCSI1 1/sequential removable
+Jun 22 10:18:19 rhea /bsd: sd0 at scsibus0 targ 6 lun 0: <IBM, DORS-32160, WA6A> SCSI2 0/direct fixed serial.IBM_DORS-32160_5U598629_
+Jun 22 10:18:19 rhea /bsd: sd0: 2063MB, 512 bytes/sector, 4226725 sectors
+Jun 22 10:18:19 rhea /bsd: spc1 at mainbus0
+Jun 22 10:18:19 rhea /bsd: scsibus1 at spc1: 8 targets, initiator 7
+Jun 22 10:18:19 rhea /bsd: /dev/ksyms: Symbol table not valid.
+Jun 22 10:18:19 rhea /bsd: vscsi0 at root
+Jun 22 10:18:19 rhea /bsd: scsibus2 at vscsi0: 256 targets
+Jun 22 10:18:20 rhea /bsd: softraid0 at root
+Jun 22 10:18:20 rhea /bsd: scsibus3 at softraid0: 256 targets
+Jun 22 10:18:20 rhea /bsd: boot device: sd0
+Jun 22 10:18:20 rhea /bsd: root on sd0a (5ff80b4b140a3486.a) swap on sd0b dump on sd0b
+Jun 22 10:18:20 rhea /bsd: luna88k_ext_int: cpu0: count=1, int_level=6, pre_int_level=3
+Jun 22 10:18:26 rhea savecore: no core dump
+Jun 22 12:00:48 rhea syslogd: exiting on signal 15
+Jun 22 12:02:59 rhea syslogd: start
+Jun 22 12:02:59 rhea /bsd: [ no symbol table formats found ]
+Jun 22 12:02:59 rhea /bsd: Copyright (c) 1982, 1986, 1989, 1991, 1993
+Jun 22 12:02:59 rhea /bsd:      The Regents of the University of California.  All rights reserved.
+Jun 22 12:02:59 rhea /bsd: Copyright (c) 1995-2013 OpenBSD. All rights reserved.  http://www.OpenBSD.org
+Jun 22 12:02:59 rhea /bsd: Copyright (c) 1995-2013 OpenBSD. All rights reserved.  http://www.OpenBSD.org
+Jun 22 12:02:59 rhea /bsd: OpenBSD 5.3-current (GENERIC.MP) #35: Wed May 22 01:26:06 JST 2013
+Jun 22 12:02:59 rhea /bsd:     aoyama@rhea.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC.MP
+Jun 22 12:02:59 rhea /bsd: real mem = 67108864 (64MB)
+Jun 22 12:02:59 rhea /bsd: avail mem = 62607360 (59MB)
+Jun 22 12:02:59 rhea /bsd: mainbus0 at root: OMRON LUNA-88K2, 33MHz
+Jun 22 12:02:59 rhea /bsd: cpu0: M88100 rev 0xb, 2 CMMU
+Jun 22 12:02:59 rhea /bsd: cpu0: M88200 (16K) rev 0x9, full Icache, M88200 (16K) rev 0x9, full Dcache
+Jun 22 12:02:59 rhea /bsd: cpu1: M88100 rev 0xb, secondary, 2 CMMU
+Jun 22 12:02:59 rhea /bsd: cpu1: M88200 (16K) rev 0x9, full Icache, M88200 (16K) rev 0x9, full Dcache
+Jun 22 12:02:59 rhea /bsd: clock0 at mainbus0: DS1397
+Jun 22 12:02:59 rhea /bsd: lcd0 at mainbus0
+Jun 22 12:02:59 rhea /bsd: le0 at mainbus0: address 00:00:0a:03:46:c3
+Jun 22 12:02:59 rhea /bsd: le0: 32 receive buffers, 8 transmit buffers
+Jun 22 12:02:59 rhea /bsd: sio0 at mainbus0: 7201a
+Jun 22 12:02:59 rhea /bsd: siotty0 at sio0 channel 0
+Jun 22 12:02:59 rhea /bsd: ws0 at sio0 channel 1
+Jun 22 12:02:59 rhea /bsd: wskbd0 at ws0: console keyboard
+Jun 22 12:02:59 rhea /bsd: wsmouse0 at ws0 mux 0
+Jun 22 12:02:59 rhea /bsd: fb0 at mainbus0: 1280 x 1024, 1bpp
+Jun 22 12:02:59 rhea /bsd: wsdisplay0 at fb0 mux 1: console (std, vt100 emulation), using wskbd0
+Jun 22 12:02:59 rhea /bsd: spc0 at mainbus0
+Jun 22 12:02:59 rhea /bsd: scsibus0 at spc0: 8 targets, initiator 7
+Jun 22 12:02:59 rhea /bsd: st0 at scsibus0 targ 4 lun 0: <TEAC, MT-2ST/N50, RV T> SCSI1 1/sequential removable
+Jun 22 12:02:59 rhea /bsd: sd0 at scsibus0 targ 6 lun 0: <IBM, DORS-32160, WA6A> SCSI2 0/direct fixed serial.IBM_DORS-32160_5U598629_
+Jun 22 12:03:00 rhea /bsd: sd0: 2063MB, 512 bytes/sector, 4226725 sectors
+Jun 22 12:03:00 rhea /bsd: spc1 at mainbus0
+Jun 22 12:03:00 rhea /bsd: scsibus1 at spc1: 8 targets, initiator 7
+Jun 22 12:03:00 rhea /bsd: /dev/ksyms: Symbol table not valid.
+Jun 22 12:03:00 rhea /bsd: vscsi0 at root
+Jun 22 12:03:00 rhea /bsd: scsibus2 at vscsi0: 256 targets
+Jun 22 12:03:00 rhea /bsd: softraid0 at root
+Jun 22 12:03:00 rhea /bsd: scsibus3 at softraid0: 256 targets
+Jun 22 12:03:00 rhea /bsd: boot device: sd0
+Jun 22 12:03:00 rhea /bsd: root on sd0a (5ff80b4b140a3486.a) swap on sd0b dump on sd0b
+Jun 22 12:03:07 rhea savecore: no core dump
+Jun 22 12:24:00 rhea /bsd: luna88k_ext_int: cpu1 level 7 stray interrupt.
+Jun 22 12:24:01 rhea /bsd: luna88k_ext_int: cpu1 level 7 interrupt.
+rhea[3] 
