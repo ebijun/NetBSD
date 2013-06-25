@@ -1,6 +1,7 @@
 =========================
 RaspberryPIでNetBSDを使ってみる
 =========================
+.. moduleauther:: Jun Ebihara <jun@netbsd.org>
 
 特徴
 ----
@@ -22,9 +23,9 @@ RaspberryPIでNetBSDを使ってみる
 -----------------
 * ディスクイメージのダウンロード
 
-	ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-06-19-netbsd-raspi.img.gz
+| # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-06-19-netbsd-raspi.img.gz
+| MD5 (2013-06-19-netbsd-raspi.img.gz) = 4a164d290bf673eee05315889f2b394e
 
-	MD5 (2013-06-19-netbsd-raspi.img.gz) = 4a164d290bf673eee05315889f2b394e
 
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -34,9 +35,9 @@ RaspberryPIでNetBSDを使ってみる
 
 RaspberryPIの起動
 ------------------
-* HDMIケーブル／USBキーボード/USBマウス/有線ネットワークをRPIにさします。
-* 電源を入れてRPIを起動します。
-* 少し待つと、HDMIからNetBSDの起動メッセージが表示されます。
+#. HDMIケーブル／USBキーボード/USBマウス/有線ネットワークをRPIにさします。
+#. 電源を入れてRPIを起動します。
+#. 少し待つと、HDMIからNetBSDの起動メッセージが表示されます。
 
 ログイン
 -------
@@ -108,19 +109,21 @@ pkg_infoコマンドで、インストールされているパッケージの一
 サービス起動方法
 ---------------
   /etc/rc.d以下にスクリプトがあります。dhcpクライアント(dhcpcd)を起動してみます。
+
 テスト起動：
    /etc/rc.d/dhcpcd onestart
-'テスト停止：
+テスト停止：
    /etc/rc.d/dhcpcd onestop
 
   正しく動作することが確認できたら/etc/rc.confに以下のとおり指定します。
    dhcpcd=YES
   /etc/rc.confでYESに指定したサービスは、マシン起動時に同時に起動します。
-'起動:
+
+起動:
    /etc/rc.d/dhcpcd start
-'停止：
+停止：
    /etc/rc.d/dhcpcd stop
-'再起動：
+再起動：
 　 /etc/rc.d/dhcpcd restart
 
 vnconfigでイメージ編集
@@ -143,13 +146,16 @@ HDMIじゃなくシリアルコンソールで使うには
 最小構成のディスクイメージ
 ------------------------
   NetBSD-currentのディスクイメージに関しては、以下の場所にあります。
-	# ftp ftp7.jp.netbsd.org:/pub/NetBSD-daily/HEAD/日付/evbarm/gz.../rpi.bin.gz
-	# ftp ftp7.jp.netbsd.org:/pub/NetBSD-daily/HEAD/日付/evbarm/gz.../rpi_inst.bin.gz
+
+::
+
+ # ftp ftp7.jp.netbsd.org:/pub/NetBSD-daily/HEAD/日付/evbarm/gz.../rpi.bin.gz
+ # ftp ftp7.jp.netbsd.org:/pub/NetBSD-daily/HEAD/日付/evbarm/gz.../rpi_inst.bin.gz
   HEADの部分を6.1に入れ替えるとNetBSD6.1のイメージがあります。
- 	# gunzip < rpi_inst.bin.gz |dd of=/dev/rsd3d bs=1m   .... sd3にコピー。
+ # gunzip < rpi_inst.bin.gz |dd of=/dev/rsd3d bs=1m   .... sd3にコピー。
 
   RaspberryPIにsdカードを差して、起動すると、#　プロンプトが表示されます。
- 	# sysinst      .... NetBSDのインストールプログラムが起動します。
+  	# sysinst      .... NetBSDのインストールプログラムが起動します。
 
 X11のインストール
 -----------------
