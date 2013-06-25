@@ -30,6 +30,8 @@ RaspberryPIでNetBSDを使ってみる
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
 
+::
+
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
 	gunzip < 2013-06-19-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
 
@@ -42,15 +44,25 @@ RaspberryPIの起動
 ログイン
 -------
 * rootでログインできます。
+
+::
+
 	login: root
 * startxでicewmが立ち上がります。
+
+::
+
 	# startx
 
 mikutterを使ってみよう
 ----------------------
 * xtermからdilloとmikutterを起動します。
+
+::
+
 	# dillo &
 	# mikutter &
+
 * しばらく待ちます。
 * mikutterの認証画面がうまく出たら、httpsからはじまるURLをカットアンドペーストして、dilloのURL画面に張り付けます。URLをなぞって、マウスボタン両押しです。
 * twitterのIDとパスワードを入力すると、pin番号が表示されます。pin番号をmikutterの認証画面に入力します。
@@ -60,9 +72,15 @@ mikutterを使ってみよう
 キーマップの設定を変更する
 ------------------------
 * ログインした状態でのキーマップは/etc/wscons.confで設定します。
+
+::
+
 	encoding jp.swapctrlcaps .... 日本語キーボード,CtrlとCAPSを入れ替える。
 
 * Xでのキーマップは.xinitrcで設定します。
+
+::
+
 	setxkbmap -layout jp -option ctrl:swapcap
 
 
@@ -76,14 +94,20 @@ mikutterを使ってみよう
 * パッケージのインストール
 pkg_addコマンドで、あらかじめコンパイル済みのパッケージをインストールします。関連するパッケージも自動的にインストールします。
 
+::
+
 	# pkg_add http://teokurebsd.org/netbsd/packages/arm/6.1_2013Q1/All/パッケージ
 
 * パッケージの一覧
 pkg_infoコマンドで、インストールされているパッケージの一覧を表示します。
 
+::
+
 	# pkg_info
 
 * パッケージの削除
+
+::
 
 	# pkg_delete パッケージ名
 
@@ -93,6 +117,8 @@ pkg_infoコマンドで、インストールされているパッケージの一
 * pkgsrc-2013Q1のイメージが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
+::
+
 	# cd /usr/pkgsrc/www/wordpress
 	# make package-install
 
@@ -100,6 +126,8 @@ pkg_infoコマンドで、インストールされているパッケージの一
 
 ユーザー作成
 -----------
+
+::
 
 	# useradd -m jun
 	# passwd jun
@@ -129,11 +157,13 @@ pkg_infoコマンドで、インストールされているパッケージの一
 vnconfigでイメージ編集
 ----------------------
 
-	# vnconfig vnd0 2013-01-14-netbsd-raspi.img
-	# disklabel vnd0
-	# newfs /dev/rvnd0a
-	# dump 0f - /dev/rsd3a | restore -xvf -
-	# newfs_msdos /dev/rvnd0e
+::
+
+ # vnconfig vnd0 2013-01-14-netbsd-raspi.img
+ # disklabel vnd0
+ # newfs /dev/rvnd0a
+ # dump 0f - /dev/rsd3a | restore -xvf -
+ # newfs_msdos /dev/rvnd0e
 
 HDMIじゃなくシリアルコンソールで使うには
 --------------------------------------
