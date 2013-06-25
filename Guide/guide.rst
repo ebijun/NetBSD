@@ -99,21 +99,15 @@ CPU:
 Portsいろいろ
 -------------
 
------- -------- -------- ---------- -------- --------    --------- -----------
-Alpha  arm     acorn26 acorn32   cats    evbarm    hpcarm   Netwinder
------- -------- -------- ---------- -------- --------    --------- -----------
-shark  WZero3  hppa    hp700     i386    sun2      m68k     Amiga
------- -------- -------- ---------- -------- --------    --------- -----------
-Atari  Cesfic  Hp300   Luna68k   Mac68k  Mvme68k   News68k  next68k
------- -------- -------- ---------- -------- --------    --------- -----------
-Algor  Arc     Cobalt  evbmips   hpcmips mipsco    newsmips Pmax
------- -------- -------- ---------- -------- --------    --------- -----------
-sbmips Sgimips powerpc Amigappc  Bebox   evbppc    Macppc   mvmeppc
------- -------- -------- ---------- -------- --------    --------- -----------
-Ofppc  pmppc   Prep    Sandpoint sh3     Dreamcast Evbsh3   Hpcsh
------- -------- -------- ---------- -------- --------    --------- -----------
-Mmeye
-------  -------- -------- ---------- -------- --------    --------- -----------
+
+.. csv-table:: Ports!
+
+   Alpha,arm,acorn26,acorn32,cats,evbarm,hpcarm,Netwinder
+   shark,  WZero3,  hppa,    hp700 ,    i386,    sun2,      m68k ,    Amiga
+   Atari,  Cesfic,  Hp300,   Luna68k,   Mac68k,  Mvme68k,   News68k,  next68k
+   Algor,  Arc,     Cobalt,  evbmips ,  hpcmips, mipsco ,   newsmips, Pmax
+   sbmips, Sgimips, powerpc, Amigappc , Bebox,   evbppc ,   Macppc,   mvmeppc
+   Ofppc,  pmppc,   Prep ,   Sandpoint, sh3  ,   Dreamcast, Evbsh3 ,  Hpcsh
 
 ドリームキャスト版CD
 -------------------
