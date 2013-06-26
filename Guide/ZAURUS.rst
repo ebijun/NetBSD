@@ -35,8 +35,11 @@ SL-C700用
 
 NetBSDディスクイメージのダウンロード
 -----------------------------------
-  http://ftp.netbsd.org/pub/NetBSD/misc/tsutsui/zaurus/
-  ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/tsutsui/zaurus/netbsd-zaurus-20120204-1GB-SD.img.gz
+
+::
+
+ http://ftp.netbsd.org/pub/NetBSD/misc/tsutsui/zaurus/
+ ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/tsutsui/zaurus/netbsd-zaurus-20120204-1GB-SD.img.gz
 
 ディスクイメージをコンパクトフラッシュにコピーする
 -----------------------------------------------
@@ -71,83 +74,101 @@ NetBSDをインストールするSDカードをUSBカードアダプタ経由で
  e:     65536      2048      MSDOS                     # (Cyl.      1 -     32)
 
 ターミナルソフトのインストール
-#. ターミナルソフトのダウンロード
-----------------------  
+----------------------------
+
+ターミナルソフトのダウンロード
+
+::
+
   ftp http://kimux.org/liza/arc/qpe-embeddedkonsole-ja_1.6.0-wide3_arm.ipk
+
+ターミナルソフトのコピー
 ----------------------
-#. ターミナルソフトのコピー
-----------------------
-<pre>
-# mount_msdos /dev/sd3e /mnt
-# cp qpe-embeddedkonsole-ja_1.6.0-wide3_arm.ipk /mnt
-# umount /mnt
-</pre>
-----------------------
-#. ターミナルソフトのインストール
-----------------------
+
+::
+
+ # mount_msdos /dev/sd3e /mnt
+ # cp qpe-embeddedkonsole-ja_1.6.0-wide3_arm.ipk /mnt
+ # umount /mnt
+
+ターミナルソフトのインストール
+----------------------------
   ターミナルソフトをインストールするために、ファイル→SDカード→qpe-embeddedkonsole-ja_1.6.0-wide3_arm.ipkをクリックして、インストーラ経由でターミナルソフトをインストールします。
+
+ターミナルソフトの起動
 ----------------------
-#. ターミナルソフトの起動
-----------------------
-アプリケーションメニュー内に端末ウィンドウアイコンがあることを確認します。端末ウィンドウアイコンを長押しして離すと、プロパティメニューを表示します。チェックボックス 「アプリケーションをVGA(480x640ドット)の画面に最適化して実行する」のチェックを外して、「OK」ボタンを押してアイコン画面に戻ります。
-----------------------
+ アプリケーションメニュー内に端末ウィンドウアイコンがあることを確認します。端末ウィンドウアイコンを長押しして離すと、プロパティメニューを表示します。チェックボックス 「アプリケーションをVGA(480x640ドット)の画面に最適化して実行する」のチェックを外して、「OK」ボタンを押してアイコン画面に戻ります。
+
 端末ウィンドウアイコンをクリックして、ターミナルを起動します。フォントの大きさは、Fn+Qで現れるメニューで変更できます。
 
 NetBSDの起動
+-------------
+SL-C700以外
+~~~~~~~~~~~~
 
-<h4>SL-C700以外</h4>
-<pre>
-bash-2.05$ cd /mnt/card
-bash-2.05$ su
-# insmod -f zbsdmod.o
-# ./zboot
-  :
-NetBSD/zaurus (Amnesiac) (console)
- 
-login:
-</pre>
-<h4>SL-C700の場合</h4>
-----------------------
-#. メンテナンスカーネルからLinuxを起動
-----------------------
-BとDを押しながら、電池ぶたロックをロック、解除、ロックと動かして電源ボタンを押すと、メンテナンスカーネルが起動します。メンテナンスカーネルでは、1GB以上のSDカードは認識しないため、差しておくとキーボード入力を受け付けません。
-<pre>
+::
+
+ bash-2.05$ cd /mnt/card
+ bash-2.05$ su
+ # insmod -f zbsdmod.o
+ # ./zboot
+   :
+ NetBSD/zaurus (Amnesiac) (console)
+  
+ login:
+
+SL-C700の場合
+~~~~~~~~~~~~~~
+ メンテナンスカーネルからLinuxを起動
+
+ BとDを押しながら、電池ぶたロックをロック、解除、ロックと動かして電源ボタンを押すと、メンテナンスカーネルが起動します。
+ メンテナンスカーネルでは、1GB以上のSDカードは認識しないため、差しておくとキーボード入力を受け付けません。
+
+ rootでログインします。
+
+::
+
+ # zaurus login: root
+ # cd /mnt/card
+ # insmod -f zbsdmod.o
+ # ./zboot
+   スペースキーを押して中断します。
+ > boot netbsd.c700
+   :
+
+ログイン
+--------
 rootでログインします。
-# zaurus login: root
-# cd /mnt/card
-# insmod -f zbsdmod.o
-# ./zboot
-  スペースキーを押して中断します。
-> boot netbsd.c700
-  :
-</pre>
-  * ログイン
-rootでログインします。
+
 X起動
-----------------------startxコマンドを実行すると、Xサーバが起動します。
-<pre>
-cp /etc/X11/xinit/xinitrc ~/.xinitrc
-chmod +w ~/.xinitrc
-vi ~/.xinitrc
-</pre>
-<pre>
-/etc/X11/xorg.conf:
-Section "Device"
+-----
+startxコマンドを実行すると、Xサーバが起動します。
+
+::
+
+ cp /etc/X11/xinit/xinitrc ~/.xinitrc
+ chmod +w ~/.xinitrc
+ vi ~/.xinitrc
+ /etc/X11/xorg.conf:
+ Section "Device"
       :
-#    Option  "Rotate"   "CW"   ... この行をコメントアウトしてください。
-EndSection
-</pre>
-参考リンク　より詳細な説明は、以下のリンクを参考にしてください。
-#. NetBSD/zaurus installation tips [http://mail-index.netbsd.org/port-zaurus/2011/05/20/msg000045.html]
-#. ↑日本語訳 [http://www.na.rim.or.jp/~kano/tmp/msg000045ja.html]
-#. [http://ftp.jp.NetBSD.org/pub/NetBSD/misc/tsutsui/zaurus/]
-#. ザウルス SL-C700 シリアルケーブル作成 [http://togetter.com/li/237198]
-#. NetBSDでザウルス SL-C700 サポートするぞ [http://togetter.com/li/242873]
-#. NetBSD/zaurus お試し用 1GB SDイメージ [http://togetter.com/li/243703]
-#. SDHCドライバ [http://petit-noise.net/download/sdhc-driver]
-#. SL-C700でNetBSD/zaurus [http://qml.610t.org/FreeBSD/mutoh_20120212.html]
-#. NetBSD/zaurus [http://www.NetBSD.org/ports/zaurus/]
-#. NetBSD Guide [http://www.NetBSD.org/docs/guide/download/netbsd-en.pdf.gz]
-#. Pkgsrc Guide [http://www.NetBSD.org/docs/pkgsrc/pkgsrc.pdf]
-#. 日本NetBSDユーザーグループ [http://www.jp.NetBSD.org/]
-#. 日本NetBSDユーザーグループfacebookページ [http://www.facebook.com/NetBSD.jp]
+ #    Option  "Rotate"   "CW"   ... この行をコメントアウトしてください。
+ EndSection
+
+参考リンク
+---------
+より詳細な説明は、以下のリンクを参考にしてください。
+
+* NetBSD/zaurus installation tips [http://mail-index.netbsd.org/port-zaurus/2011/05/20/msg000045.html]
+* ↑日本語訳 [http://www.na.rim.or.jp/~kano/tmp/msg000045ja.html]
+* [http://ftp.jp.NetBSD.org/pub/NetBSD/misc/tsutsui/zaurus/]
+* ザウルス SL-C700 シリアルケーブル作成 [http://togetter.com/li/237198]
+* NetBSDでザウルス SL-C700 サポートするぞ [http://togetter.com/li/242873]
+* NetBSD/zaurus お試し用 1GB SDイメージ [http://togetter.com/li/243703]
+* SDHCドライバ [http://petit-noise.net/download/sdhc-driver]
+* SL-C700でNetBSD/zaurus [http://qml.610t.org/FreeBSD/mutoh_20120212.html]
+* NetBSD/zaurus [http://www.NetBSD.org/ports/zaurus/]
+* NetBSD Guide [http://www.NetBSD.org/docs/guide/download/netbsd-en.pdf.gz]
+* Pkgsrc Guide [http://www.NetBSD.org/docs/pkgsrc/pkgsrc.pdf]
+* 日本NetBSDユーザーグループ [http://www.jp.NetBSD.org/]
+* 日本NetBSDユーザーグループfacebookページ [http://www.facebook.com/NetBSD.jp]
