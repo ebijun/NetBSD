@@ -4,7 +4,7 @@ NetBSDのご紹介
 
 こういうOSが欲しい
 -----------------
- 世界中にあるコンピュータ、昔の計算機から最近のパソコン、組み込み系まで、身の回りで目についたすべてのコンピュータで動くOSは、どのようなものでしょうか？コンピュータに接続できる機器もたくさんあります。手持ちの周辺機器を全部利用できるOSを考えてみましょう。これまでに利用したことのあるソフトウエアすべてを動かすことのできるOSはどのようなものであればよいでしょうか？ソースコードを自由に読んだり、書いたり、引用したり、配布したり、売ったり買ったりできるOSを共同で作るためにはどのような枠組みがあればよいでしょうか？
+ 世界中にあるコンピュータ、昔の計算機から最近のパソコン、組み込み系まで、身の回りで目についたすべてのコンピュータで動くOSは、どのようなものでしょうか？コンピュータに接続できる機器もたくさんあります。手持ちの周辺機器を全部利用できるOSを考えてみましょう。これまでに利用したことのあるソフトウェアすべてを動かすことのできるOSはどのようなものであればよいでしょうか？ソースコードを自由に読んだり、書いたり、引用したり、配布したり、売ったり買ったりできるOSを、世界中の人々と共同で作るためにはどのような枠組みがあればよいでしょうか？
 
 NetBSD
 -------
@@ -16,101 +16,102 @@ NetBSDのウエブサイトは、http://www.NetBSD.org/ です。
 
 NetBSD全般に関するガイドは、http://www.NetBSD.org/docs/guide/en/ にあります。
 
-NetBSDで利用しているライセンス
------------------------------
+BSDライセンス
+-------------
+
 2 条項 BSD ライセンス
+~~~~~~~~~~~~~~~~~~~~~
  http://www.jp.NetBSD.org/ja/about/redistribution.html
 
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
-  1. Redistributions of source code must retain the above copyright
-     notice, this list of conditions and the following disclaimer.
-  2. Redistributions in binary form must reproduce the above copyright
-     notice, this list of conditions and the following disclaimer in the
-     documentation and/or other materials provided with the distribution.
+ 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
-NetBSDで利用しているライセンス(訳)
----------------------------------
+2条項BSDライセンス(訳)
+~~~~~~~~~~~~~~~~~~~~~~
  http://www.jp.NetBSD.org/ja/about/redistribution.html
 
  ソースおよびバイナリー形式の再配布および使用を、変更の有無にかかわらず、
  以下の条件を満たす場合に認める:
-  1. ソースコードの再配布においては、上記の著作権表示、この条件の列挙、
-     下記の注意書きを残すこと。
-  2. バイナリー形式の再配布においては、上記の著作権表示、この条件の列挙、
-     下記の注意書きを、配布物に附属した文書および/または他のものに再現
-     させること。
+
+ 1. ソースコードの再配布においては、上記の著作権表示、この条件の列挙、下記の注意書きを残すこと。
+ 2. バイナリー形式の再配布においては、上記の著作権表示、この条件の列挙、下記の注意書きを、配布物に附属した文書および/または他のものに再現させること。
 
  このライセンスの前には著作権表示そのものが付きます。 この後には注意書きが付き、 このソフトウェアに関して問題が生じても、作者は責任を負わないと述べます。 
 
 BSDライセンスとNetBSD
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
  NetBSDのソースコードを自由に売ることができます。NetBSDのソースコードから作ったバイナリを売ることもできます。バイナリのソースコードを公開する義務はありません。
 
 ライセンス条項が異なるソースを分離する
------------------------------------
-NetBSDの配布物には、2 条項 BSD ライセンスのソースコードで書かれているソフトウェアと、そうでないソフトウェアが含まれています。
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ NetBSDの配布物には、2 条項 BSD ライセンスのソースコードで書かれているソフトウェアと、そうでないソフトウェアが含まれています。
 NetBSDでは、ライセンス条項が違うソースコードをディレクトリごとに分けて管理しています。
 
-/usr/src/dist:
-  dhcp: http://www.isc.org/isc-license-1.0.html
-  ipf: IPFILTER.LICENCE
-  pdisk: READMEに書かれている
-  :
-/usr/src/crypto/dist
-  ipsec-tools: 
-/usr/src/external:
-  atheros  gpl3       intel-fw-public public-domain
-  bsd      historical lgpl2           realtek
-  cddl     ibm-public lgpl3           zlib
-  apache2  gpl2       intel-fw-eula   mit
+::
+
+ %  ls /usr/src/external/
+ CVS             atheros         gpl2            intel-fw-eula   mit
+ Makefile        broadcom        gpl3            intel-fw-public public-domain
+ README          bsd             historical      lgpl2           realtek
+ apache2         cddl            ibm-public      lgpl3           zlib
+
+NetBSDを使う時
+~~~~~~~~~~~~~~~
+* OSをインストールする
+* pkgsrc.tar.gzを取得
+* 必要なパッケージをインストール
+* tcsh,icewm,kterm,anthy-elisp,ja-less
+* openoffice,firefox,gimp
 
 単一ソースツリー
 ---------------
+
 NetBSDは、単一ソースツリーで15種類のCPUアーキテクチャと58種類以上のプラットホームで動きます。
-CPU:
- i386
-プラットホーム：
 
-バス：
+::
 
-16種類のバスサポート
- ATA,CardBus,EISA,PCI,PCMCIA,VME
+ % ls /usr/src/sys/arch
+ CVS          bebox        hp300        m68k         pmax         sun3
+ Makefile     cats         hp700        mac68k       powerpc      sun68k
+ README       cesfic       hpc          macppc       prep         usermode
+ acorn26      cobalt       hpcarm       mips         rs6000       vax
+ acorn32      dreamcast    hpcmips      mipsco       sandpoint    x68k
+ algor        emips        hpcsh        mmeye        sbmips       x86
+ alpha        epoc32       hppa         mvme68k      sgimips      xen
+ amd64        evbarm       i386         mvmeppc      sh3          zaurus
+ amiga        evbmips      ia64         netwinder    sh5
+ amigappc     evbppc       ibmnws       news68k      shark
+ arc          evbsh3       iyonix       newsmips     sparc
+ arm          evbsh5       landisk      next68k      sparc64
+ atari        ews4800mips  luna68k      ofppc        sun2
 
-新しく移植するときには
----------------------
-
-* まず、機種に依存しない部品を組み合わせる
- CPU..バス..
-* 機種依存部分だけを追加する
-* サポートCPUアーキテクチャ
-
-2038年問題
----------
-* 1970/1/19 0:0:0 GMTからの経過秒数
- 2^31-1=2147483647
-* 2,147,483,648秒以上を表示できるか
- 対応済み：date -r 2147483648
- Tue Jan 19 12:14:08 JST 2038
- 未対応：date -r 2147483648
- Tue Jan 19 12:14:07 JST 2038
 
 Portsいろいろ
 -------------
 
-
 .. csv-table:: Ports!
 
-   Alpha,arm,acorn26,acorn32,cats,evbarm,hpcarm,Netwinder
-   shark,  WZero3,  hppa,    hp700 ,    i386,    sun2,      m68k ,    Amiga
-   Atari,  Cesfic,  Hp300,   Luna68k,   Mac68k,  Mvme68k,   News68k,  next68k
-   Algor,  Arc,     Cobalt,  evbmips ,  hpcmips, mipsco ,   newsmips, Pmax
-   sbmips, Sgimips, powerpc, Amigappc , Bebox,   evbppc ,   Macppc,   mvmeppc
-   Ofppc,  pmppc,   Prep ,   Sandpoint, sh3  ,   Dreamcast, Evbsh3 ,  Hpcsh
+   alpha,arm,acorn26,acorn32,cats,evbarm,hpcarm,Netwinder
+   shark,  wzero3,  hppa,    hp700 ,    i386,    sun2,      m68k ,    Amiga
+   atari,  cesfic,  Hp300,   Luna68k,   Mac68k,  Mvme68k,   News68k,  next68k
+   algor,  arc,     Cobalt,  evbmips ,  hpcmips, mipsco ,   newsmips, Pmax
+   sbmips, sgimips, powerpc, Amigappc , Bebox,   evbppc ,   Macppc,   mvmeppc
+   ofppc,  pmppc,   Prep ,   Sandpoint, sh3  ,   Dreamcast, Evbsh3 ,  Hpcsh
+
+
+TireI/II/III
+~~~~~~~~~~~~~~
+
+ておくれイメージ
+~~~~~~~~~~~~~~~
+
+i386/amd64で動作するイメージ
 
 ドリームキャスト版CD
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 http://ftp.netbsd.org/pub/NetBSD/misc/tsutsui/dreamcast/
  dreamcastbootcd-20101010.tar.gz
@@ -120,7 +121,7 @@ http://ftp.netbsd.org/pub/NetBSD/misc/tsutsui/dreamcast/
 #. dreamcastに入れて起動
 
 Ｘ６８０３０エミュレータ XM6i
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Windows上で動くX68000エミュレータ
  NetBSDがブートします
@@ -130,11 +131,110 @@ Windows上で動くX68000エミュレータ
  CPU内部の挙動を細かく観測できる
  ATCエントリが見える
 
-サポートハードウェア　56種類
+WindowsCE向けNetBSD
+~~~~~~~~~~~~~~~~~~~~~
+
+MIPS系CPU搭載
+ NEC MobileGear
+ SHARP Tellios
+SH系CPU搭載
+ HP　ジョルナダシリーズ
+ SEGA　DreamCast
+ARM系CPU搭載
+ Ｃｏｍｐａｑ　ｉＰＡＱ
+ ＨＰ　ジョルナダシリーズ
+ WZero3
+
+ブートまでの流れ
+""""""""""""""""
+コンパクトフラッシュを２分割
+ WindowsCEの領域
+ NetBSD/hpcmipsの領域
+WindowsCE上のブートローダからブート
+ メモリ空間を取れるだけ確保する
+カーネルファイルをメモリ空間に送り込んで
+ NetBSDの世界へ飛び込んでゆく
+
+NetBSD/hpcsh
+""""""""""""""
+* SH搭載WindowsCEマシン向け
+* HP Jornada680 690 620LX
+* 日立ペルソナ　HPW50　２３０
+* (NetBSD/sh3+NetBSD/hpcmips)/2＋α
+* 従来の開発ノウハウとソフトウェア資産
+* NetBSD/hpcmipsとのソース共有化
+* NetBSD/Dreamcast互換
+
+NetBSD/hpcarm
+""""""""""""""""
+* StrongArm搭載WindowsCEマシン向け
+* SA-1100/1110対応
+* HP　Jornada７２０
+* WZero3
+* Compaq　iPAQ
+* hpcファミリー中最速
+
+
+新しく移植するときには
+--------------------
+
+#. まず、機種に依存しない部品を組み合わせます
+ CPU..バス..
+#. 次に機種依存部分だけを追加します
+#. 足りない部分を作りこみます
+#. 自分で自分をコンパイルして、配布できる状態にします
+#. pkgsrcにあるソフトウェアを実際に動かしてみます
+#. 何か目的を持った配布イメージを配ってみます
+　twitterクライアント,Webサーバ....
+
+移植成果をNetBSDに組み込む
 --------------------------
+* カーネル部分を移植する
+* セルフコンパイルでスナップショット作成
+* パッケージソフトウェアセットを作る
+* ドキュメント整備
+* Web・マニュアル・FAQ
+* インストーラを作る
+* メーリングリストを作る
+
+プログラミング以外にすること
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Port登録　NetBSD/???? 部分
+* Webページ作成
+* バグレポートデータベース作成
+* GNATS
+* マニュアル作成
+* インストールマニュアル・マニュアル・FAQ
+* メーリングリスト作成
+* ニュースとして報告
+
+アーキテクチャに共通する部分
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Package system
+* バス　USB、CardBus
+* デバイスドライバ
+* オーディオフレームワーク
+* OSエミュレーション
+* バスサポート
+
+仮想デバイス
+~~~~~~~~~~~~
+* Concatenated disk driver
+* Memory disk driver
+* RAIDframe disk
+* Random device
+* Vnode disk
+
+物理デバイス
+~~~~~~~~~~~~
+* オーディオデバイス
+* WSCONS - ワークステーションコンソール
+* wsdisplay
+* wskbd
+* wsmouse
 
 4.4BSD由来の機能
-----------------
+~~~~~~~~~~~~~~~~
 #. Nullfs – loopbackマウント
 #. Unionfs – ファイルシステムを重ねる
 #. Lfs – 高速書き込み性能
@@ -142,7 +242,7 @@ Windows上で動くX68000エミュレータ
 #. IP virtual hosting
 
 NetBSD独自の改良
-----------------
+~~~~~~~~~~~~~~~~
 * NFS – WebNFS
 * NFS over IPv6
 * UVM　virtual memory system
@@ -155,31 +255,6 @@ NetBSD独自の改良
   http://www.NetBSD.org/about/features.html
   ZFS? Google Summer of Code
 
-アーキテクチャに共通する部分
---------------------------
-* Package system
-* バス　USB、CardBus
-* デバイスドライバ
-* オーディオフレームワーク
-* OSエミュレーション
-* バスサポート
-
-仮想デバイス
------------
-* Concatenated disk driver
-* Memory disk driver
-* RAIDframe disk
-* Random device
-* Vnode disk
-
-物理デバイス
------------
-* オーディオデバイス
-* WSCONS - ワークステーションコンソール
-* wsdisplay
-* wskbd
-* wsmouse
-
 NetBSD：カーネル
 ----------------
 * 機種に依存する部分
@@ -190,16 +265,13 @@ NetBSD：カーネル
   メモリ管理
 
 新しいマシンをサポートするには
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * 搭載CPUがサポートされているか？
 * 搭載バスがサポートされているか？
 * 搭載デバイスがサポートされているか？
 * 共有部分はすべてで共有できる
 * サポートされていない部分だけを作り
 　　　　CVSツリーに追加する
-
-エミュレーション
----------------
 
 Package - /usr/pkgsrc 
 ------------------------
@@ -211,17 +283,15 @@ Package - /usr/pkgsrc
 * Make installでソフトウェアのインストール
 
 各CPUアーキテクチャ間で共通
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Mipsel –mips endian little
 * Arc – MIPSで動くNTマシン
 * Cobalt – Cobalt Qube1/2
 * Pmax – DEC station
 * Hpcmips – MIPS搭載WinCE
-* NetBSD/Solaris/Linux/Darwin/FreeBSD/OpenBSD/
-*IRIX/BSDOS/AIX/SUA(Interix)/DragonFlyBSD/OSF1/hpux
 
 /usr/pkgsrc/emulators
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 * gxemul
 * mips (pmax,hpcmips)
 * dreamcast
@@ -234,10 +304,10 @@ Package - /usr/pkgsrc
 * USBデバッグ
 
 Packagesジャンル一覧
---------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 ソフトウェアのコンパイル／インストール
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 drupal
 | cd /usr/pkgsrc/www/drupal6
 | make package
@@ -249,22 +319,15 @@ OpenOffice
 | make install
 | /usr/pkg/bin/soffice ....
 
-NetBSDを使う時
---------------
-* OSをインストールする
-* pkgsrc.tar.gzを取得
-* 必要なパッケージをインストール
-* tcsh,icewm,kterm,anthy-elisp,ja-less
-* openoffice,firefox,gimp
 
 目的別
-------
+~~~~~~
 * デスクトップ向け
 * 組み込み向け
 * pkgsrc/meta-pkgにいくつかある
 
 Package対応プラットフォーム
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * NetBSD
 * FreeBSD
 * OpenBSD
@@ -275,10 +338,13 @@ Package対応プラットフォーム
 * (SSD Linux)
 
 Package – NetBSD以外での利用
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* NetBSD/Solaris/Linux/Darwin/FreeBSD/OpenBSD/
+*IRIX/BSDOS/AIX/SUA(Interix)/DragonFlyBSD/OSF1/hpux
+
 
 Packageとライセンスの取扱い
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * 個々のパッケージごとにLICENSE定義
 * 受け入れられるライセンスを制御したい
 * ツールとライブラリのライセンスが違う
@@ -303,45 +369,16 @@ NetBSDのリリース
  2.99.1...
 
 NetBSD開発ロードマップ
-----------------------
-
-NetBSD5.1サポート機能
-----------------------
-RAIDframe parity maps, which greatly improve parity rewrite times  after unclean shutdown
-X.Org updates
-Support for many more network devices
-Xen PAE dom0 support
-Xen PCI pass-through support
-
-NetBSD6.0に入れたい機能
--------------------------
-* kernel modules
-* kernel scalability improvements
-* 64bit time_t (solves year 2038 problem)
-* DTrace
-* ZFS
-* NILFS
-* Logical Volume Manager
-* NPF (New Packet Filter)
-* Thread Local Storage
-* Xen SMP support　
-
-NetBSD6.0に入れたい機能(2)
----------------------------
-* automated tests
-* improved puffs (Pass-to-Userspace Framework File System)
-* improved rump (Runnable Userspace Meta Program kernel)
-* UltraSPARC III(+) support
-* MIPS 64bit support
-* a lot of updated and new 3rd party software
+~~~~~~~~~~~~~~~~~~~~~~
 
 Automated Testing Framework
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 | cd /usr/tests;
 | atf-run | atf-report
 
 組織構成
 -------
+
 * Core 5人　テクニカルマネージメント
 * Port maintainer　28人
   各実装に関する担当者
@@ -350,14 +387,14 @@ Automated Testing Framework
 * アクティブなのは188人
 
 NetBSD Foundation,Inc
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 * デラウェア州の法人組織
 * サーバマシンを所有
 * お金と寄付を管理
 * NetBSDの版権を管理
 
 developer
-----------------------
+~~~~~~~~~~~
 直接ソースを変更できる
 CVS/FTP/WWWサーバの内容
 世界中で188人
@@ -366,13 +403,13 @@ Cvsweb.netbsd.org
 日本人38人
 
 NetBSD開発者世界分布図
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 NetBSD開発者分布図
-------------------
+~~~~~~~~~~~~~~~~~~
 
 Developerになるには（1）
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 * PGP/GnuPGの鍵を作る
 * fingerprint印刷
 * gpg --fingerprint jun@soum.co.jp
@@ -382,7 +419,7 @@ Developerになるには（1）
 * 公的証明書を見せあって本人確認
 
 Developerになるには(2)
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 * 相手の鍵を取り込んで、fingerprint照合
 * gpg-email-confirm soda@netbsd.org..
 * ランダムな文字列を送る
@@ -394,7 +431,7 @@ Developerになるには(2)
 * pgp.mit.eduにサイン入り自分の鍵を登録する
 
 世界中で打ち合わせをする時間
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 | May 21 03:00 PM -0700 America/Los_Angeles
 | May 21 06:00 PM -0400 America/New_York
 | May 21 11:00 PM +0100 Europe/London
@@ -404,14 +441,14 @@ Developerになるには(2)
 | May 22 08:00 AM +1000 Australia/Melbourne
 
 Port-maintainer
-----------------------
+~~~~~~~~~~~~~~~~~
 * 移植責任者
 * 57種類のうち15種類以上は日本人が担当
 * 日本人担当ハードウェア15/56
 * NetBSD動作マシン＠日本
 
 日本からの貢献
-----------------------
+~~~~~~~~~~~~~
 * 国産ハードウェアサポート
 * ゲーム機・携帯情報端末サポート
 * IPv6/ IPSEC
@@ -421,53 +458,10 @@ Port-maintainer
 * NetBSD書籍が世界一多く出版される
 * developer53人
 
-WindowsCE向けNetBSD
-----------------------
-MIPS系CPU搭載
- NEC MobileGear
- SHARP Tellios
-SH系CPU搭載
- HP　ジョルナダシリーズ
- SEGA　DreamCast
-ARM系CPU搭載
- Ｃｏｍｐａｑ　ｉＰＡＱ
- ＨＰ　ジョルナダシリーズ
- WZero3
 
- ブートまでの流れ
-----------------------
-コンパクトフラッシュを２分割
- WindowsCEの領域
- NetBSD/hpcmipsの領域
-WindowsCE上のブートローダからブート
- メモリ空間を取れるだけ確保する
-カーネルファイルをメモリ空間に送り込んで
- NetBSDの世界へ飛び込んでゆく
-
-NetBSD/hpcsh
-----------------------
-* SH搭載WindowsCEマシン向け
-* HP Jornada680 690 620LX
-* 日立ペルソナ　HPW50　２３０
-* (NetBSD/sh3+NetBSD/hpcmips)/2＋α
-* 従来の開発ノウハウとソフトウェア資産
-* NetBSD/hpcmipsとのソース共有化
-* NetBSD/Dreamcast互換
-
-NetBSD/hpcarm
-----------------------
-* StrongArm搭載WindowsCEマシン向け
-* SA-1100/1110対応
-* HP　Jornada７２０
-* WZero3
-* Compaq　iPAQ
-* hpcファミリー中最速
-
-TireI/II/III
---------------
 
 クロス開発環境
-----------------------
+-------------
 NetBSD/i386でクロスコンパイル
  build.sh –m hpcmips –D /hpcmips-root
 * Pkgsrc/cross以下に各種パッケージ
@@ -482,7 +476,7 @@ NetBSD/i386でクロスコンパイル
 * クロス用toolsを作る
 
 バイナリ互換性を利用する
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 * Cobalt　Qube２でhpcmipsバイナリ作成
 * MIPSでendian little =mipsel同士なら動く
 * ユーザランドはほとんどそのまま動く
@@ -491,7 +485,7 @@ NetBSD/i386でクロスコンパイル
 * 数GBある各種アプリケーション群を共通にする
 
 エミュレーション環境
-----------------------
+~~~~~~~~~~~~~~~~~~~
 * Linux
 * I386以外のバイナリも動くようにする
 * FreeBSD
@@ -501,39 +495,9 @@ NetBSD/i386でクロスコンパイル
   ゲームなど
   Unixware
 
-移植成果をNetBSDに組み込む
---------------------------
-* カーネル部分を移植する
-* セルフコンパイルでスナップショット作成
-* パッケージソフトウェアセットを作る
-* ドキュメント整備
-* Web・マニュアル・FAQ
-* インストーラを作る
-* メーリングリストを作る
-
-プログラミング以外にすること
-----------------------
-* Port登録　NetBSD/???? 部分
-* Webページ作成
-* バグレポートデータベース作成
-* GNATS
-* マニュアル作成
-* インストールマニュアル・マニュアル・FAQ
-* メーリングリスト作成
-* ニュースとして報告
-
-EeePC&Netbook
-----------------------
-* Escape押して起動ディスク選択
-* バックアップCDあり
-* ディスプレイ
-* 82915GM
-* Attansic Technologies L2 100Mbit Ethernet Adapter
-* http://www.NetBSD.org/ports/i386/netbook.html
-* VAIO Type P
 
 NetBSD開発者情報
-----------------------
+-----------------
 ftp/WWW/CVS/SUPサーバ
  http://www.jp.netbsd.org/ja/JP/sites.html
 開発環境設定方法
@@ -545,7 +509,7 @@ netbsd-request@re.soum.co.jp
  http://releng.netbsd.org  
 
 ソースコード取得方法
-----------------------
+~~~~~~~~~~~~~~~~~~~~
 * ftp
 * Cvs
 * cvsup
@@ -608,4 +572,12 @@ www.netbsd.org　翻訳
 * 最新のネットワークコードが利用できます
 * もしかしたらリサイクル団体なんでしょうか？
 
+.. 2038年問題
+* 1970/1/19 0:0:0 GMTからの経過秒数
+ 2^31-1=2147483647
+* 2,147,483,648秒以上を表示できるか
+ 対応済み：date -r 2147483648
+ Tue Jan 19 12:14:08 JST 2038
+ 未対応：date -r 2147483648
+ Tue Jan 19 12:14:07 JST 2038
 
