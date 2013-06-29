@@ -1,0 +1,512 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 6.1 (GATEWAY) #13: Tue Jun 25 20:01:30 JST 2013
+	ura@pkgbuild.soum.co.jp:/usr/src/sys/arch/amd64/compile/GATEWAY
+total memory = 4065 MB
+avail memory = 3938 MB
+timecounter: Timecounters tick every 10.000 msec
+RTC BIOS diagnostic error 0x80<clock_battery>
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+Dell Inc. PowerEdge R210 II
+mainbus0 (root)
+cpu0 at mainbus0 apid 0: Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz, id 0x306a9
+cpu1 at mainbus0 apid 1: Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz, id 0x306a9
+cpu2 at mainbus0 apid 2: Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz, id 0x306a9
+cpu3 at mainbus0 apid 3: Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz, id 0x306a9
+cpu4 at mainbus0 apid 4: Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz, id 0x306a9
+cpu5 at mainbus0 apid 5: Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz, id 0x306a9
+cpu6 at mainbus0 apid 6: Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz, id 0x306a9
+cpu7 at mainbus0 apid 7: Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz, id 0x306a9
+ioapic0 at mainbus0 apid 0: pa 0xfec00000, version 20, 24 pins
+acpi0 at mainbus0: Intel ACPICA 20110623
+acpi0: X/RSDT: OemId <DELL  ,PE_SC3  ,00000001>, AslId <DELL,00040000>
+acpi0: SCI interrupting at int 9
+timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+MI0 (IPI0001) [Intelligent Platform Management Interface] at acpi0 not configured
+FWHD (INT0800) [Intel Firmware Hub Device] at acpi0 not configured
+LDRC (PNP0C02) [Motherboard Register Resources] at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
+CWDT (INT3F0D) at acpi0 not configured
+UAR3 (PNP0501) [16550A-compatible COM port] at acpi0 not configured
+UAR4 (PNP0501) [16550A-compatible COM port] at acpi0 not configured
+VTD (PNP0C02) [Motherboard Register Resources] at acpi0 not configured
+acpiwmi0 at acpi0 (SRIO, PNP0C14-SRIO): ACPI WMI Interface
+acpiwmibus at acpiwmi0 not configured
+PDRC (PNP0C02) [Motherboard Register Resources] at acpi0 not configured
+acpifan0 at acpi0 (FAN0, PNP0C0B-0): ACPI Fan
+acpifan1 at acpi0 (FAN1, PNP0C0B-1): ACPI Fan
+acpifan2 at acpi0 (FAN2, PNP0C0B-2): ACPI Fan
+acpifan3 at acpi0 (FAN3, PNP0C0B-3): ACPI Fan
+acpifan4 at acpi0 (FAN4, PNP0C0B-4): ACPI Fan
+acpitz0 at acpi0 (TZ01): cpu0 cpu1 cpu2 cpu3 cpu4 cpu5 cpu6 cpu7
+acpitz0: levels: critical 106.0 C, passive 106.0 C, passive cooling
+acpi0: [MADT] LAPIC          : CPU ID 1, LAPIC ID 0, FLAGS 0x01
+acpi0: [MADT] LAPIC          : CPU ID 2, LAPIC ID 1, FLAGS 0x01
+acpi0: [MADT] LAPIC          : CPU ID 3, LAPIC ID 2, FLAGS 0x01
+acpi0: [MADT] LAPIC          : CPU ID 4, LAPIC ID 3, FLAGS 0x01
+acpi0: [MADT] LAPIC          : CPU ID 5, LAPIC ID 4, FLAGS 0x01
+acpi0: [MADT] LAPIC          : CPU ID 6, LAPIC ID 5, FLAGS 0x01
+acpi0: [MADT] LAPIC          : CPU ID 7, LAPIC ID 6, FLAGS 0x01
+acpi0: [MADT] LAPIC          : CPU ID 8, LAPIC ID 7, FLAGS 0x01
+acpi0: [MADT] I/O APIC       : ID 0, GSI 0, ADDR 0xFEC00000
+acpi0: [MADT] INTR OVERRIDE  : BUS 0, IRQ 0, GSI 2, FLAGS 0x00
+acpi0: [MADT] INTR OVERRIDE  : BUS 0, IRQ 9, GSI 9, FLAGS 0x0D
+acpi0: [MADT] LAPIC NMI      : CPU ID 255, LINT 1, FLAGS 0x05
+acpi0: [FADT] FACS           : 0x00000000BF7B8000
+acpi0: [FADT] DSDT           : 0x00000000BF7E1000
+acpi0: [FADT] INT_MODEL      : 0x0000000000000001
+acpi0: [FADT] PM_PROFILE     : 0x0000000000000001
+acpi0: [FADT] SCI_INT        : 0x0000000000000009
+acpi0: [FADT] SMI_CMD        : 0x00000000000000B2
+acpi0: [FADT] ACPI_ENABLE    : 0x00000000000000A0
+acpi0: [FADT] ACPI_DISABLE   : 0x00000000000000A1
+acpi0: [FADT] S4BIOS_REQ     : 0x0000000000000000
+acpi0: [FADT] PSTATE_CNT     : 0x0000000000000080
+acpi0: [FADT] PM1a_EVT_BLK   : 0x0000000000000400
+acpi0: [FADT] PM1b_EVT_BLK   : 0x0000000000000000
+acpi0: [FADT] PM1a_CNT_BLK   : 0x0000000000000404
+acpi0: [FADT] PM1b_CNT_BLK   : 0x0000000000000000
+acpi0: [FADT] PM2_CNT_BLK    : 0x0000000000000450
+acpi0: [FADT] PM_TMR_BLK     : 0x0000000000000408
+acpi0: [FADT] GPE0_BLK       : 0x0000000000000420
+acpi0: [FADT] GPE1_BLK       : 0x0000000000000000
+acpi0: [FADT] PM1_EVT_LEN    : 0x0000000000000004
+acpi0: [FADT] PM1_CNT_LEN    : 0x0000000000000002
+acpi0: [FADT] PM2_CNT_LEN    : 0x0000000000000001
+acpi0: [FADT] PM_TMR_LEN     : 0x0000000000000004
+acpi0: [FADT] GPE0_BLK_LEN   : 0x0000000000000010
+acpi0: [FADT] GPE1_BLK_LEN   : 0x0000000000000000
+acpi0: [FADT] GPE1_BASE      : 0x0000000000000000
+acpi0: [FADT] CST_CNT        : 0x0000000000000085
+acpi0: [FADT] P_LVL2_LAT     : 0x0000000000000065
+acpi0: [FADT] P_LVL3_LAT     : 0x0000000000000039
+acpi0: [FADT] FLUSH_SIZE     : 0x0000000000000400
+acpi0: [FADT] FLUSH_STRIDE   : 0x0000000000000010
+acpi0: [FADT] DUTY_OFFSET    : 0x0000000000000001
+acpi0: [FADT] DUTY_WIDTH     : 0x0000000000000003
+acpi0: [FADT] DAY_ALRM       : 0x000000000000000D
+acpi0: [FADT] MON_ALRM       : 0x0000000000000000
+acpi0: [FADT] CENTURY        : 0x0000000000000032
+acpi0: [FADT] IAPC_BOOT_ARCH : 0x0000000000000011
+acpi0: [FADT] RESET_VALUE    : 0x0000000000000004
+acpi0: [FADT] WBINVD         : 0x0000000000000001
+acpi0: [FADT] WBINVD_FLUSH   : 0x0000000000000000
+acpi0: [FADT] PROC_C1        : 0x0000000000000004
+acpi0: [FADT] P_LVL2_UP      : 0x0000000000000000
+acpi0: [FADT] PWR_BUTTON     : 0x0000000000000000
+acpi0: [FADT] SLP_BUTTON     : 0x0000000000000020
+acpi0: [FADT] FIX_RTC        : 0x0000000000000000
+acpi0: [FADT] RTC_S4         : 0x0000000000000080
+acpi0: [FADT] TMR_VAL_EXT    : 0x0000000000000000
+acpi0: [FADT] DCK_CAP        : 0x0000000000000200
+acpi0: [FADT] RESET_REG_SUP  : 0x0000000000000400
+acpi0: [FADT] SEALED_CASE    : 0x0000000000000000
+acpi0: [FADT] HEADLESS       : 0x0000000000000000
+acpi0: [FADT] CPU_SW_SLP     : 0x0000000000000000
+acpi0: [FADT] PCI_EXP_WAK    : 0x0000000000000000
+acpi0: [FADT] PLATFORM_CLK   : 0x0000000000008000
+acpi0: [FADT] S4_RTC_STS     : 0x0000000000010000
+acpi0: [FADT] REMOTE_POWER   : 0x0000000000020000
+acpi0: [FADT] APIC_CLUSTER   : 0x0000000000000000
+acpi0: [FADT] APIC_PHYSICAL  : 0x0000000000000000
+acpi0: [\   ] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [CPU0] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [CPU1] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [CPU2] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [CPU3] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [CPU4] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [CPU5] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [CPU6] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [CPU7] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [_SB ] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [PCI0] HID PNP0A08    UID 0    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [P0P1] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001E0000
+acpi0: [LPCB] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001F0000
+acpi0: [MI0 ] HID IPI0001    UID 0    STA 0x0000000F ADR -
+acpi0: [DMAC] HID PNP0200    UID -    STA 0xFFFFFFFF ADR -
+acpi0: [FWHD] HID INT0800    UID -    STA 0xFFFFFFFF ADR -
+acpi0: [HPET] HID PNP0103    UID 0    STA 0x0000000F ADR -
+acpi0: [IPIC] HID PNP0000    UID -    STA 0xFFFFFFFF ADR -
+acpi0: [MATH] HID PNP0C04    UID -    STA 0xFFFFFFFF ADR -
+acpi0: [LDRC] HID PNP0C02    UID 2    STA 0xFFFFFFFF ADR -
+acpi0: [RTC ] HID PNP0B00    UID -    STA 0xFFFFFFFF ADR -
+acpi0: [TIMR] HID PNP0100    UID -    STA 0xFFFFFFFF ADR -
+acpi0: [CWDT] HID INT3F0D    UID -    STA 0x0000000F ADR -
+acpi0: [PILT] HID PNP0A05    UID 78   STA 0x0000000F ADR -
+acpi0: [UAR1] HID PNP0501    UID 1    STA 0x00000000 ADR -
+acpi0: [UAR2] HID PNP0501    UID 2    STA 0x00000000 ADR -
+acpi0: [W450] HID PNP0A05    UID 1    STA 0xFFFFFFFF ADR -
+acpi0: [UAR3] HID PNP0501    UID 2    STA 0x0000000F ADR -
+acpi0: [UAR4] HID PNP0501    UID 3    STA 0x0000000F ADR -
+acpi0: [VTD ] HID PNP0C02    UID VTd  STA 0xFFFFFFFF ADR -
+acpi0: [SRIO] HID PNP0C14    UID SRIO STA 0x0000000F ADR -
+acpi0: [PS2K] HID PNP0303    UID -    STA 0x00000000 ADR -
+acpi0: [PS2M] HID PNP0F13    UID -    STA 0x00000000 ADR -
+acpi0: [PDRC] HID PNP0C02    UID 1    STA 0xFFFFFFFF ADR -
+acpi0: [GLAN] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000190000
+acpi0: [EHC1] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001D0000
+acpi0: [HUBN] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [PR01] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000001
+acpi0: [PR11] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000001
+acpi0: [PR12] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000002
+acpi0: [PR13] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000003
+acpi0: [PR14] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000004
+acpi0: [PR15] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000005
+acpi0: [PR16] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000006
+acpi0: [PR17] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000007
+acpi0: [PR18] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000008
+acpi0: [EHC2] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001A0000
+acpi0: [HUBN] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [PR01] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000001
+acpi0: [PR11] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000001
+acpi0: [PR12] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000002
+acpi0: [PR13] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000003
+acpi0: [PR14] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000004
+acpi0: [PR15] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000005
+acpi0: [PR16] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000006
+acpi0: [XHC ] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000140000
+acpi0: [RHUB] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [HSP1] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000001
+acpi0: [HSP2] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000002
+acpi0: [HSP3] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000003
+acpi0: [HSP4] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000004
+acpi0: [SSP1] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000005
+acpi0: [SSP2] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000006
+acpi0: [SSP3] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000007
+acpi0: [SSP4] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000008
+acpi0: [RP01] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001C0000
+acpi0: [PXSX] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [RP02] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001C0001
+acpi0: [PXSX] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [RP03] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001C0002
+acpi0: [PXSX] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [RP04] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001C0003
+acpi0: [PXSX] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [RP05] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001C0004
+acpi0: [PXSX] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [RP06] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001C0005
+acpi0: [PXSX] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [RP07] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001C0006
+acpi0: [PXSX] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [RP08] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001C0007
+acpi0: [PXSX] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [SAT0] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001F0002
+acpi0: [PRT2] HID -          UID -    STA 0xFFFFFFFF ADR 0x000000000002FFFF
+acpi0: [SAT1] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001F0005
+acpi0: [SBUS] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001F0003
+acpi0: [PEG0] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000010000
+acpi0: [PEGP] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000000000
+acpi0: [PEG1] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000010001
+acpi0: [PEG2] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000010002
+acpi0: [PEG3] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000060000
+acpi0: [B0D4] HID -          UID -    STA 0xFFFFFFFF ADR 0x0000000000040000
+acpi0: [AHCI] HID -          UID -    STA 0xFFFFFFFF ADR 0x00000000001F0002
+acpi0: [PRT0] HID -          UID -    STA 0xFFFFFFFF ADR 0x000000000000FFFF
+acpi0: [PRT1] HID -          UID -    STA 0xFFFFFFFF ADR 0x000000000001FFFF
+acpi0: [PRT2] HID -          UID -    STA 0xFFFFFFFF ADR 0x000000000002FFFF
+acpi0: [PRT3] HID -          UID -    STA 0xFFFFFFFF ADR 0x000000000003FFFF
+acpi0: [PRT4] HID -          UID -    STA 0xFFFFFFFF ADR 0x000000000004FFFF
+acpi0: [PRT5] HID -          UID -    STA 0xFFFFFFFF ADR 0x000000000005FFFF
+acpi0: [LNKA] HID PNP0C0F    UID 1    STA 0x0000000B ADR -
+acpi0: [LNKB] HID PNP0C0F    UID 2    STA 0x0000000B ADR -
+acpi0: [LNKC] HID PNP0C0F    UID 3    STA 0x00000009 ADR -
+acpi0: [LNKD] HID PNP0C0F    UID 4    STA 0x0000000B ADR -
+acpi0: [LNKE] HID PNP0C0F    UID 5    STA 0x0000000B ADR -
+acpi0: [LNKF] HID PNP0C0F    UID 6    STA 0x0000000B ADR -
+acpi0: [LNKG] HID PNP0C0F    UID 7    STA 0x00000009 ADR -
+acpi0: [LNKH] HID PNP0C0F    UID 8    STA 0x0000000B ADR -
+acpi0: [WERR] HID PNP0C33    UID -    STA 0x00000000 ADR -
+acpi0: [_TZ ] HID -          UID -    STA 0xFFFFFFFF ADR -
+acpi0: [FN00] HID -          UID -    STA          - ADR -
+acpi0: [FAN0] HID PNP0C0B    UID 0    STA 0xFFFFFFFF ADR -
+acpi0: [FN01] HID -          UID -    STA          - ADR -
+acpi0: [FAN1] HID PNP0C0B    UID 1    STA 0xFFFFFFFF ADR -
+acpi0: [FN02] HID -          UID -    STA          - ADR -
+acpi0: [FAN2] HID PNP0C0B    UID 2    STA 0xFFFFFFFF ADR -
+acpi0: [FN03] HID -          UID -    STA          - ADR -
+acpi0: [FAN3] HID PNP0C0B    UID 3    STA 0xFFFFFFFF ADR -
+acpi0: [FN04] HID -          UID -    STA          - ADR -
+acpi0: [FAN4] HID PNP0C0B    UID 4    STA 0xFFFFFFFF ADR -
+acpi0: [TZ01] HID -          UID -    STA          - ADR -
+
+\     [06] []
+    CPU0  [12] []
+    CPU1  [12] []
+    CPU2  [12] []
+    CPU3  [12] []
+    CPU4  [12] []
+    CPU5  [12] []
+    CPU6  [12] []
+    CPU7  [12] []
+    _SB   [06] []
+        PCI0  [06] [] (PCI) @ 0x00:0x00:0x00:0x00 [R] [B] -> 0x00:0x00
+            P0P1  [06] [] (PCI) @ 0x00:0x00:0x1E:0x00 [B] -> 0x00:0x02
+            LPCB  [06] [] (PCI) @ 0x00:0x00:0x1F:0x00
+                MI0   [06] []
+                DMAC  [06] []
+                FWHD  [06] []
+                HPET  [06] []
+                IPIC  [06] []
+                MATH  [06] []
+                LDRC  [06] []
+                RTC   [06] []
+                TIMR  [06] [] <attimer1>
+                CWDT  [06] []
+                PILT  [06] []
+                    UAR1  [06] []
+                    UAR2  [06] []
+                W450  [06] []
+                    UAR3  [06] []
+                    UAR4  [06] []
+                VTD   [06] []
+                SRIO  [06] [] <acpiwmi0>
+                PS2K  [06] []
+                PS2M  [06] []
+            PDRC  [06] []
+            GLAN  [06] [] (PCI) @ 0x00:0x00:0x19:0x00
+            EHC1  [06] [] (PCI) @ 0x00:0x00:0x1D:0x00
+                HUBN  [06] []
+                    PR01  [06] []
+                        PR11  [06] []
+                        PR12  [06] []
+                        PR13  [06] []
+                        PR14  [06] []
+                        PR15  [06] []
+                        PR16  [06] []
+                        PR17  [06] []
+                        PR18  [06] []
+            EHC2  [06] [] (PCI) @ 0x00:0x00:0x1A:0x00
+                HUBN  [06] []
+                    PR01  [06] []
+                        PR11  [06] []
+                        PR12  [06] []
+                        PR13  [06] []
+                        PR14  [06] []
+                        PR15  [06] []
+                        PR16  [06] []
+            XHC   [06] [] (PCI) @ 0x00:0x00:0x14:0x00
+                RHUB  [06] []
+                    HSP1  [06] []
+                    HSP2  [06] []
+                    HSP3  [06] []
+                    HSP4  [06] []
+                    SSP1  [06] []
+                    SSP2  [06] []
+                    SSP3  [06] []
+                    SSP4  [06] []
+            RP01  [06] [] (PCI) @ 0x00:0x00:0x1C:0x00 [B] -> 0x00:0x01
+                PXSX  [06] [] (PCI) @ 0x00:0x01:0x00:0x00
+            RP02  [06] [] (PCI) @ 0x00:0x00:0x1C:0x01
+                PXSX  [06] []
+            RP03  [06] [] (PCI) @ 0x00:0x00:0x1C:0x02
+                PXSX  [06] []
+            RP04  [06] [] (PCI) @ 0x00:0x00:0x1C:0x03
+                PXSX  [06] []
+            RP05  [06] [] (PCI) @ 0x00:0x00:0x1C:0x04
+                PXSX  [06] []
+            RP06  [06] [] (PCI) @ 0x00:0x00:0x1C:0x05
+                PXSX  [06] []
+            RP07  [06] [] (PCI) @ 0x00:0x00:0x1C:0x06
+                PXSX  [06] []
+            RP08  [06] [] (PCI) @ 0x00:0x00:0x1C:0x07
+                PXSX  [06] []
+            SAT0  [06] [] (PCI) @ 0x00:0x00:0x1F:0x02
+                PRT2  [06] []
+            SAT1  [06] [] (PCI) @ 0x00:0x00:0x1F:0x05
+            SBUS  [06] [] (PCI) @ 0x00:0x00:0x1F:0x03
+            PEG0  [06] [] (PCI) @ 0x00:0x00:0x01:0x00
+                PEGP  [06] []
+            PEG1  [06] [] (PCI) @ 0x00:0x00:0x01:0x01
+            PEG2  [06] [] (PCI) @ 0x00:0x00:0x01:0x02
+            PEG3  [06] [] (PCI) @ 0x00:0x00:0x06:0x00
+            B0D4  [06] [] (PCI) @ 0x00:0x00:0x04:0x00
+            AHCI  [06] [] (PCI) @ 0x00:0x00:0x1F:0x02
+                PRT0  [06] []
+                PRT1  [06] []
+                PRT2  [06] []
+                PRT3  [06] []
+                PRT4  [06] []
+                PRT5  [06] []
+        LNKA  [06] []
+        LNKB  [06] []
+        LNKC  [06] []
+        LNKD  [06] []
+        LNKE  [06] []
+        LNKF  [06] []
+        LNKG  [06] []
+        LNKH  [06] []
+        WERR  [06] []
+    _TZ   [06] []
+        FN00  [11] []
+        FAN0  [06] [] <acpifan0>
+        FN01  [11] []
+        FAN1  [06] [] <acpifan1>
+        FN02  [11] []
+        FAN2  [06] [] <acpifan2>
+        FN03  [11] []
+        FAN3  [06] [] <acpifan3>
+        FN04  [11] []
+        FAN4  [06] [] <acpifan4>
+        TZ01  [13] [] <acpitz0>
+ipmi0 at mainbus0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: Intel Ivy Bridge Host Bridge (rev. 0x09)
+ehci0 at pci0 dev 26 function 0: Intel 6 Series USB (rev. 0x04)
+ehci0: interrupting at ioapic0 pin 20
+ehci0: BIOS has given up ownership
+ehci0: EHCI version 1.0
+usb0 at ehci0: USB revision 2.0
+ppb0 at pci0 dev 28 function 0: Intel 6 Series PCIE (rev. 0xb4)
+ppb0: PCI Express 2.0 <Root Port of PCI-E Root Complex>
+pci1 at ppb0 bus 1
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+bnx0 at pci1 dev 0 function 0: Broadcom NetXtreme II BCM5716 1000Base-T
+bnx0: Ethernet address d4:ae:52:ca:47:1b
+bnx0: interrupting at ioapic0 pin 16
+brgphy0 at bnx0 phy 1: BCM5709 10/100/1000baseT PHY, rev. 8
+brgphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+bnx1 at pci1 dev 0 function 1: Broadcom NetXtreme II BCM5716 1000Base-T
+bnx1: Ethernet address d4:ae:52:ca:47:1c
+bnx1: interrupting at ioapic0 pin 17
+brgphy1 at bnx1 phy 1: BCM5709 10/100/1000baseT PHY, rev. 8
+brgphy1: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+ehci1 at pci0 dev 29 function 0: Intel 6 Series USB (rev. 0x04)
+ehci1: interrupting at ioapic0 pin 23
+ehci1: BIOS has given up ownership
+ehci1: EHCI version 1.0
+usb1 at ehci1: USB revision 2.0
+ppb1 at pci0 dev 30 function 0: Intel 82801BA Hub-PCI Bridge (rev. 0xa4)
+pci2 at ppb1 bus 2
+pci2: i/o space, memory space enabled
+vga0 at pci2 dev 3 function 0: Matrox MGA G200eW (rev. 0x0a)
+wsdisplay0 at vga0 kbdmux 1: console (80x25, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+drm at vga0 not configured
+ichlpcib0 at pci0 dev 31 function 0: Intel C202 LPC (rev. 0x04)
+timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
+ichlpcib0: 24-bit timer
+ichlpcib0: TCO (watchdog) timer configured.
+ahcisata0 at pci0 dev 31 function 2: Intel 6 Series AHCI (rev. 0x04)
+ahcisata0: interrupting at ioapic0 pin 19
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.30, 6 ports, 32 slots, CAP 0xcf20ff65<SXS,EMS,PSC,SSC,PMD,ISS=0x2=Gen2,SCLO,SAL,SALP,SSS,SNCQ,S64A>
+atabus0 at ahcisata0 channel 0
+atabus1 at ahcisata0 channel 1
+atabus2 at ahcisata0 channel 5
+ichsmb0 at pci0 dev 31 function 3: Intel 6 Series SMBus Controller (rev. 0x04)
+ichsmb0: interrupting at ioapic0 pin 19
+iic0 at ichsmb0: I2C bus
+spdmem0 at iic0 addr 0x51
+spdmem0: DDR3 SDRAM, ECC, temp-sensor, 4GB, 1600MHz (PC3-12800)
+spdmem0: 12 rows, 13 cols, 8 log. banks, 2 phys. banks, 1.250ns cycle time
+spdmem0: tAA-tRCD-tRP-tRAS: 10-10-10-28
+isa0 at ichlpcib0
+tpm0 at isa0 iomem 0xfed40000-0xfed44fff irq 7: device 0x0000104a rev 0x4e
+com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, working fifo
+com1 at isa0 port 0x2f8-0x2ff irq 3: ns16550a, working fifo
+pckbc0 at isa0 port 0x60-0x64
+pckbc: cmd word write error
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+acpicpu0: C2: FFH, lat  59 us, pow   500 mW
+acpicpu0: C3: FFH, lat  80 us, pow   350 mW
+acpicpu0: P0: FFH, lat  10 us, pow 69000 mW, 3401 MHz, turbo boost
+acpicpu0: P1: FFH, lat  10 us, pow 69000 mW, 3400 MHz
+acpicpu0: P2: FFH, lat  10 us, pow 66169 mW, 3300 MHz
+acpicpu0: P3: FFH, lat  10 us, pow 60660 mW, 3100 MHz
+acpicpu0: P4: FFH, lat  10 us, pow 57982 mW, 3000 MHz
+acpicpu0: P5: FFH, lat  10 us, pow 55354 mW, 2900 MHz
+acpicpu0: P6: FFH, lat  10 us, pow 52787 mW, 2800 MHz
+acpicpu0: P7: FFH, lat  10 us, pow 47776 mW, 2600 MHz
+acpicpu0: P8: FFH, lat  10 us, pow 45344 mW, 2500 MHz
+acpicpu0: P9: FFH, lat  10 us, pow 42959 mW, 2400 MHz
+acpicpu0: P10: FFH, lat  10 us, pow 38341 mW, 2200 MHz
+acpicpu0: P11: FFH, lat  10 us, pow 36098 mW, 2100 MHz
+acpicpu0: P12: FFH, lat  10 us, pow 33902 mW, 2000 MHz
+acpicpu0: P13: FFH, lat  10 us, pow 31751 mW, 1900 MHz
+acpicpu0: P14: FFH, lat  10 us, pow 28156 mW, 1700 MHz
+acpicpu0: P15: FFH, lat  10 us, pow 26134 mW, 1600 MHz
+acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
+acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
+acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
+acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
+acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
+acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
+acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
+acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
+coretemp0 at cpu0: thermal sensor, 1 C resolution
+acpicpu1 at cpu1: ACPI CPU
+acpicpu2 at cpu2: ACPI CPU
+coretemp1 at cpu2: thermal sensor, 1 C resolution
+acpicpu3 at cpu3: ACPI CPU
+acpicpu4 at cpu4: ACPI CPU
+coretemp2 at cpu4: thermal sensor, 1 C resolution
+acpicpu5 at cpu5: ACPI CPU
+acpicpu6 at cpu6: ACPI CPU
+coretemp3 at cpu6: thermal sensor, 1 C resolution
+acpicpu7 at cpu7: ACPI CPU
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+ERROR: 306 cycle TSC drift observed
+IPsec: Initialized Security Association Processing.
+uhub0 at usb0: Intel EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhub1 at usb1: Intel EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+ahcisata0 port 0: device present, speed: 3.0Gb/s
+ahcisata0 port 1: device present, speed: 3.0Gb/s
+wd0 at atabus0 drive 0
+wd0: <ST500NM0011>
+wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+wd0: 465 GB, 969021 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
+wd1 at atabus1 drive 0
+wd1: <ST500NM0011>
+wd1: drive supports 16-sector PIO transfers, LBA48 addressing
+wd1: 465 GB, 969021 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
+wd1: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
+wd1(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
+uhub2 at uhub0 port 1: vendor 0x8087 product 0x0024, class 9/0, rev 2.00/0.00, addr 2
+uhub2: single transaction translator
+uhub3 at uhub1 port 1: vendor 0x8087 product 0x0024, class 9/0, rev 2.00/0.00, addr 2
+uhub3: single transaction translator
+uhub2: 6 ports with 6 removable, self powered
+uhub3: 6 ports with 6 removable, self powered
+uhub4 at uhub3 port 5: SMSC product 0x2514, class 9/0, rev 2.00/0.00, addr 3
+uhub4: multiple transaction translators
+uhub4: 4 ports with 4 removable, self powered
+uhidev0 at uhub2 port 1 configuration 1 interface 0
+uhidev0: Avocent USB Composite Device-0, rev 1.10/0.00, addr 3, iclass 3/1
+ukbd0 at uhidev0
+wskbd0 at ukbd0 mux 1
+wskbd0: connecting to wsdisplay0
+uhidev1 at uhub2 port 1 configuration 1 interface 1
+uhidev1: Avocent USB Composite Device-0, rev 1.10/0.00, addr 3, iclass 3/1
+ums0 at uhidev1: 3 buttons and Z dir
+wsmouse0 at ums0 mux 0
+Kernelized RAIDframe activated
+pad0: outputs: 44100Hz, 16-bit, stereo
+audio0 at pad0: half duplex, playback, capture
+raid0: RAID Level 1
+raid0: Components: /dev/wd0a /dev/wd1a
+raid0: Total Sectors: 976691072 (476899 MB)
+boot device: raid0
+root on raid0a dumps on raid0b
+root file system type: ffs
+wsdisplay0: screen 1 added (80x25, vt100 emulation)
+wsdisplay0: screen 2 added (80x25, vt100 emulation)
+wsdisplay0: screen 3 added (80x25, vt100 emulation)
+wsdisplay0: screen 4 added (80x25, vt100 emulation)
+Accounting started
+ipmi0: version 2.0 interface KCS iobase 0xca8/8 spacing 4
