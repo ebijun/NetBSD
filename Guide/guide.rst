@@ -23,9 +23,12 @@ BSDライセンス
 ~~~~~~~~~~~~~~~~~~~~~
  http://www.jp.NetBSD.org/ja/about/redistribution.html
 
+::
+
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
+ 
  1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
  2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
@@ -33,13 +36,15 @@ BSDライセンス
 ~~~~~~~~~~~~~~~~~~~~~~
  http://www.jp.NetBSD.org/ja/about/redistribution.html
 
+::
+
  ソースおよびバイナリー形式の再配布および使用を、変更の有無にかかわらず、
  以下の条件を満たす場合に認める:
-
+ 
  1. ソースコードの再配布においては、上記の著作権表示、この条件の列挙、下記の注意書きを残すこと。
  2. バイナリー形式の再配布においては、上記の著作権表示、この条件の列挙、下記の注意書きを、配布物に附属した文書および/または他のものに再現させること。
-
- このライセンスの前には著作権表示そのものが付きます。 この後には注意書きが付き、 このソフトウェアに関して問題が生じても、作者は責任を負わないと述べます。 
+ 
+このライセンスの前には著作権表示そのものが付きます。 この後には注意書きが付き、 このソフトウェアに関して問題が生じても、作者は責任を負わないと述べます。 
 
 BSDライセンスとNetBSD
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -59,12 +64,145 @@ NetBSDでは、ライセンス条項が違うソースコードをディレク�
  apache2         cddl            ibm-public      lgpl3           zlib
 
 NetBSDを使う時
-~~~~~~~~~~~~~~~
+--------------
 * OSをインストールする
-* pkgsrc.tar.gzを取得
+* pkgsrc.tar.gzを展開
 * 必要なパッケージをインストール
 * tcsh,icewm,kterm,anthy-elisp,ja-less
 * openoffice,firefox,gimp
+
+pkgsrcをダウンロード
+~~~~~~~~~~~~~~~~~~~~
+ pkgsrcのWebサイトはhttp://www.pkgsrc.org/です。
+ /usr/pkgsrcにダウンロードしたtar ファイルを展開します。
+
+::
+
+ %  ls /usr/pkgsrc
+ CVS          comms        finance      math         pkglocate    wip
+ Makefile     converters   fonts        mbone        pkgtools     wip-jp
+ README       cross        games        meta-pkgs    print        wm
+ archivers    databases    geography    misc         regress      www
+ audio        devel        graphics     mk           security     x11
+ benchmarks   distfiles    ham          multimedia   shells
+ biology      doc          inputmethod  net          sysutils
+ bootstrap    editors      lang         news         templates
+ cad          emulators    licenses     packages     textproc
+ chat         filesystems  mail         parallel     time
+
+ソフトウェアをコンパイルしてインストールする枠組みが、/usr/pkgsrc/ジャンル/ソフトウェア名以下にあります。
+OpenOfficeをコンパイルして、インストールしたいときには、次のようにコマンドを実行します。
+
+::
+
+ # cd /usr/pkgsrc/misc/openoffice
+ # make package-install
+
+うまくコンパイルしてインストールできると、openofficeを実行出来ます。
+
+::
+
+ % soffice
+
+pkgsrcを使ってみる
+~~~~~~~~~~~~~~~~~~
+「RaspberryPIでmikutterというtwitterクライアントを動かしたい」場合を考えてみます。
+インストールできそうなソフトウェアは、/usr/pkgsrc/ジャンル名以下にディレクトリがあります。
+ここに使いたいソフトウェアがあれば、コンパイルしてインストールできるかもしれません。
+
+::
+
+ % ls /usr/pkgsrc/* |grep mikutter
+ mikutter                        .... pkgsrcにmikutterがある!
+ % cd /usr/pkgsrc/*/mikutter     .... ジャンルはわからないけど移動
+ % pwd
+ /usr/pkgsrc/net/mikutter        .... "net" の下にあった
+ % ls
+ CVS       DESCR     Makefile  PLIST     distinfo  files
+ % cat DESCR                     .... ソフトウェアの説明：なんとなくあってそう
+ Mikutter is a Twitter client aim for endsville Twitter client For all of
+ Miku-aholics and Twitter-holics.
+ % cat Makefile
+ # $NetBSD: Makefile,v 1.68 2013/06/23 01:09:43 tsutsui Exp $
+ #
+  
+ DISTNAME=       mikutter.0.2.2.1264    ... mikutterのバージョンとか
+ PKGNAME=        ${RUBY_PKGPREFIX}-${DISTNAME:S/./-/}
+ CATEGORIES=     net 
+ MASTER_SITES=   http://mikutter.hachune.net/bin/  ... 配布サイト
+ 
+ MAINTAINER=     obache@NetBSD.org　　　　　　　　　　 ... このパッケージを管理している人
+ HOMEPAGE=       http://mikutter.hachune.net/      ... ソフトウェアのホームページ
+ COMMENT=        Simple, powerful, and moeful twitter client  .. 一行説明
+ LICENSE=        gnu-gpl-v3 AND cc-by-sa-v3.0      ... ソフトウェアのライセンス
+ 
+ RUBY_VERSION_SUPPORTED= 193
+ 
+ .include "../../lang/ruby/rubyversion.mk"
+ 
+ DEPENDS+=       xdg-utils-[0-9]*:../../misc/xdg-utils　　... 依存しているソフトウェア
+ DEPENDS+=       ${RUBY_PKGPREFIX}-hmac>=0.4.0:../../security/ruby-hmac
+                 :
+ % cat PLIST　　　　　　　　　　　　　　　　　　... インストールするファイルの一覧です
+ @comment $NetBSD: PLIST,v 1.23 2013/05/15 11:24:14 obache Exp $
+ bin/mikutter                          　　... /usr/pkg/bin/mikutterにインストールされます                 
+ share/applications/mikutter.desktop      ... /usr/pkg/share/applications/mikutter.desktopに以下同文
+ share/doc/mikutter/README
+ share/mikutter/core/boot/check_config_permission.rb
+ share/mikutter/core/boot/load_plugin.rb
+ share/mikutter/core/boot/mainloop.rb
+ share/mikutter/core/boot/option.rb
+ 
+ % distinfo  .... ダウンロードするファイルの一覧とチェックサム
+ $NetBSD: distinfo,v 1.60 2013/06/16 08:58:06 obache Exp $
+ 
+ SHA1 (mikutter.0.2.2.1264.tar.gz) = f93757ca51f3fe9f555df32c86c2ed7021992887
+ RMD160 (mikutter.0.2.2.1264.tar.gz) = bd3f4a49eb8d96a225b4cc704115995fe390e42a
+ Size (mikutter.0.2.2.1264.tar.gz) = 2318031 bytes
+
+mikutterと、mikutterをインストールするために必要なソフトウェアをインストールします。
+
+::
+
+ % su
+ # cd /usr/pkgsrc/net/mikutter
+ # make package-install
+
+RaspberryPIで使いそうなソフトを一気にインストールする
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+ /usr/pkgsrc/ジャンル名を眺めて、使いそうなソフトウェアをリストアップします。
+
+::
+
+ % cat > List << EOF
+ kterm
+ tcsh
+ vlgothic-ttf
+ icewm
+ xli
+ mikutter
+ uim
+ fossil
+ sudo
+ scmgit-base
+ zsh
+ dillo
+ EOF
+
+簡単なシェルスクリプトを作って、実行します。コンパイルがうまく進めば、必要なソフトウェアがすべてソースコードからコンパイル・インストールされた状態になります。
+
+::
+
+ % cat > Package << EOF
+ for i in `cat List`
+ do
+   cd /usr/pkgsrc/*/$i
+   make package-install
+ done
+ EOF
+ % su
+ # sh Package
+ # pkg_info      .... インストールされたパッケージの一覧を表示します。
 
 単一ソースツリー
 ---------------
