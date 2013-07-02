@@ -1131,6 +1131,42 @@ www.netbsd.org　翻訳
 * Shikoku *BSD Users Group
 * Tohoku BSD Users Group
 
+オープンソースカンファレンスこの一年
+----------------------------------
+
+.. csv-table::
+
+ OSC2013名古屋NBUG&NetBSDブース展示の記録 ,1031 view,Luna88K&Luna68K
+ 名古屋*BSDユーザグループ(NBUG)2013/5月例会の記録 ,210 view 
+ NetBSDでuARM, 788 view
+ 名古屋*BSDユーザグループ(NBUG)2013/4月例会の記録 ,354 view
+ 名古屋*BSDユーザグループ(NBUG)2013 花見の記録 ,301 view 
+ 名古屋*BSDユーザグループ(NBUG)2013/3月例会の記録, 410 view
+ NetBSD/sparcをQEMUで動かす会の記録, 723 view
+ AsiaBSDCon 2013の記録 ,1259 view
+ OSC2013徳島 NetBSDブース展示の記録 ,755 view
+ OSC2013 東京春 NetBSDブース展示の記録 ,742 view
+ 名古屋*BSDユーザグループ(NBUG)2013/2月例会の記録,368 view
+ OSC2013 浜松 NetBSDブース展示の記録,466 view
+ 名古屋*BSDユーザグループ(NBUG)2013/1月例会の記録,443 view
+ 名古屋*BSDユーザグループ(NBUG)2012/12月例会の記録,482 view
+ OSC2012 福岡 NetBSDブース展示の記録,689 view
+ 名古屋*BSDユーザグループ(NBUG)2012/11月例会の記録,872 view
+ 関西オープンソース2012 NetBSDブース展示の記録,919 view
+ OSC2012 会津 NetBSDブース展示の記録,1756 view
+ OSC2012 大分秋 NetBSDブース展示の記録,595 view
+ OSC2012 広島 NetBSDブース展示の記録,2906 view
+ 名古屋*BSDユーザグループ(NBUG)2012/10月例会の記録,425 view
+ 名古屋*BSDユーザグループ(NBUG)2012/9 例会の記録,461 view
+ OSC2012沖縄 NetBSDブース展示の記録,392 view
+ OSC2012 東京秋 NetBSDブース展示の記録,1661 view
+ OSC2012 島根 NetBSDブース展示の記録,855 view
+ 名古屋*BSDユーザグループ(NBUG)2012/8 例会の記録,651 view
+ OSC2012 京都 NetBSDブース展示の記録,2399 view
+ 名古屋*BSDユーザグループ(NBUG)2012/7 例会の記録,1351 view
+ OSC2012 仙台 NetBSDブース展示の記録,610 view
+ 日本NetBSDユーザーグループ第十四回定期総会 および NetBSD BoF 2012,885 view
+
 まとめ
 ----------------------
 * NetBSDはいろんなハードで動きます
