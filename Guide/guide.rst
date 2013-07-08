@@ -19,6 +19,20 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+.. todo:: 漢字変換の設定
+.. todo:: 無線LANの設定
+.. todo:: デスクトップ環境の構築(Gnome/Xfce/icewm)
+.. todo:: OpenOfficeの構築
+.. todo:: inkscape/scribusの設定
+.. todo:: プリンタ
+.. todo:: samba
+.. todo:: rabbitのようなものでプレゼンできるか
+.. todo:: bccksで豆本にできるか
+.. todo:: latexに変換してみる
+.. todo:: latex環境設定
+.. todo:: イベント関連の設定・ファイルを分ける？
+.. todo:: facebookページとの連携：主なニュース取得とか
+
 ==============================
 NetBSDのご紹介        
 ==============================
@@ -82,6 +96,7 @@ NetBSDでは、ライセンス条項が違うソースコードをディレク�
 
 NetBSDを使う時
 --------------
+
 * OSをインストールする
 * pkgsrc.tar.gzを展開
 * 必要なパッケージをインストール
@@ -360,7 +375,7 @@ NetBSDは、単一ソースツリーで15種類のCPUアーキテクチャと58�
        :
      Successful make iso-image
 
-正常に終了すると、NetBSD/i386のCD-ROMイメージができています。
+正常に終了すると、NetBSD/i386のCD-ROMイメージができています。このイメージは、VirtualBoxなどでも利用できます。
 
 ::
 
@@ -394,7 +409,8 @@ NetBSDは、単一ソースツリーで15種類のCPUアーキテクチャと58�
  SHA512
 
 X11も作ってみる
-"""""""""""""""
+---------------
+
 X11を含んだ形のCD-ROMイメージを作ってみましょう。
 
 ::
@@ -437,8 +453,87 @@ Xを含むCD-ROM/起動イメージを作ってみましょう。
  NetBSD-6.99.22-i386.iso
  SHA512
 
+X Window システムの初期設定
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X Windowシステムも含めてインストールした場合、以下の手順で設定ファイルを作ります。
+
+::
+
+ % su root                  .... root権限で実行します。
+ # X -configure             .... /root/xorg.conf.new ができます。
+ # mv /root/xorg.conf.new /etc/X11/xorg.conf
+ % startx                   .... twmの画面が出てくれば成功です！twm!twm!
+ % xeyes &                  .... 浮動小数点チェック：ちゃんと目が回るかな？
+
+.xinitrc のコピー
+"""""""""""""""""
+
+::
+
+ cp /etc/X11/xinit/xinitrc ~/.xinitrc
+
+キーボードレイアウトの変更
+""""""""""""""""""""""""""
+
+コンソール画面ではwsconsを利用して、キーボードレイアウトを変更します。
+
+::
+
+ % more /etc/wscons.conf
+      :
+ # Select a kernel builtin keyboard map by uncommenting the following line and
+ # altering the country code to your requirements
+ # (choose from user, us, uk, be, cz, dk, nl, fi, fr, de, gr, hu, it, jp, no,
+ # pl, pt, ru, es, sv, sf, sg, ua)
+ # See wsconsctl(8), pckbd(4), ukbd(4) etc. for more details.
+ #encoding us.swapctrlcaps
+ encoding jp.swapctrlcaps    .... この行を追加します
+
+X Window システムでは、setxkbmapコマンドを利用して、レイアウトを切り替えます。
+
+::
+
+ setxkbmap -layout jp -option ctrl:swapcaps
+
+デスクトップ環境を作ってみる
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+デスクトップ環境の設定:Xfceの場合
+"""""""""""""""""""""""""""""""""
+
+::
+
+ # cd /usr/pkgsrc/meta-pkgs/xfce4
+ # make package-install
+
+デスクトップ環境の設定:gnomeの場合
+""""""""""""""""""""""""""""""""""
+
+::
+
+ # cd /usr/pkgsrc/meta-pkgs/xfce
+ # make package-install
+
+ウィンドウマネージャの設定:icewmの場合
+""""""""""""""""""""""""""""""""""""""
+
+::
+
+ # cd /usr/pkgsrc/wm/icewm
+ # make package-install
+
+ウィンドウマネージャの設定:jwmの場合
+"""""""""""""""""""""""""""""""""""""
+
+::
+
+ # cd /usr/pkgsrc/wm/jwm
+ # make package-install
+
+
 TireI/II/III
-~~~~~~~~~~~~~~
+------------
 
 Tier I
 """"""
@@ -1185,10 +1280,10 @@ www.netbsd.org　翻訳
 
 このドキュメント
 ---------------
-* http://github.com/ebijun/NetBSD/Guide
-* /usr/pkgsrc/textproc/py-sphinx
-* /usr/pkgsrc/editors/gedit
-* /usr/pkgsrc/pring/evince
+* https://github.com/ebijun/NetBSD/tree/master/Guide
+* フォーマット: /usr/pkgsrc/textproc/py-sphinx
+* 編集: /usr/pkgsrc/editors/gedit
+* PDFチェック: /usr/pkgsrc/pring/evince
 * bccksで豆本にしたい
 
 
