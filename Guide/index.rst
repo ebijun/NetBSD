@@ -24,7 +24,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-NetBSD観光ガイド          |today|
+NetBSD観光ガイド      
 ==============================================
 
 Contents:
@@ -34,10 +34,11 @@ Contents:
    :numbered:
 
    guide
+   pkgsrc
    RPI
    ZAURUS
    WZERO3
-
+   events
 
 Indices and tables
 ==================

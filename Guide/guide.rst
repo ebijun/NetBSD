@@ -19,18 +19,13 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-.. todo:: 漢字変換の設定
+.. todo:: もしかしてRPIだとそのまま動画が録画できるか
+.. todo:: インストールが進むにつれてバックトラックをふやす
 .. todo:: 無線LANの設定
-.. todo:: デスクトップ環境の構築(Gnome/Xfce/icewm)
-.. todo:: OpenOfficeの構築
-.. todo:: inkscape/scribusの設定
-.. todo:: プリンタ
-.. todo:: samba
 .. todo:: rabbitのようなものでプレゼンできるか
 .. todo:: bccksで豆本にできるか
 .. todo:: latexに変換してみる
 .. todo:: latex環境設定
-.. todo:: イベント関連の設定・ファイルを分ける？
 .. todo:: facebookページとの連携：主なニュース取得とか
 
 ==============================
@@ -93,183 +88,6 @@ NetBSDでは、ライセンス条項が違うソースコードをディレク�
  Makefile        broadcom        gpl3            intel-fw-public public-domain
  README          bsd             historical      lgpl2           realtek
  apache2         cddl            ibm-public      lgpl3           zlib
-
-NetBSDを使う時
---------------
-
-* OSをインストールする
-* pkgsrc.tar.gzを展開
-* 必要なパッケージをインストール
-* tcsh,icewm,kterm,anthy-elisp,ja-less
-* openoffice,firefox,gimp
-
-pkgsrcをダウンロード
-~~~~~~~~~~~~~~~~~~~~
- pkgsrcのWebサイトはhttp://www.pkgsrc.org/です。pkgsrcは、一年に4回定期的にリリースされます。
-
-::
-
- % ftp ftp://ftp.pkgsrc.org/pub/pkgsrc/
-   pkgsrc-2012Q4
-   pkgsrc-2013Q1
-   pkgsrc-2013Q2
-     :
- % ftp ftp://ftp.pkgsrc.org/pub/pkgsrc/stable/pkgsrc.tar.gz
- 日本のミラーの場合：
- % ftp ftp://ftp7.jp.NetBSD.org/pub/pkgsrc/stable/pkgsrc.tar.gz　
-
-/usr/pkgsrcにダウンロードしたtar ファイルを展開してみましょう。
-
-::
-
- % su
- # tar xzvf pkgsrc.tar.gz -C /usr   ... /usr以下に展開します。
- # ls /usr/pkgsrc
- CVS          comms        finance      math         pkglocate    wip
- Makefile     converters   fonts        mbone        pkgtools     wip-jp
- README       cross        games        meta-pkgs    print        wm
- archivers    databases    geography    misc         regress      www
- audio        devel        graphics     mk           security     x11
- benchmarks   distfiles    ham          multimedia   shells
- biology      doc          inputmethod  net          sysutils
- bootstrap    editors      lang         news         templates
- cad          emulators    licenses     packages     textproc
- chat         filesystems  mail         parallel     time
-
-ソフトウェアをコンパイルしてインストールする枠組みが、/usr/pkgsrc/ジャンル/ソフトウェア名 以下にあります。
-OpenOfficeをコンパイルして、インストールしたいときには、次のようにコマンドを実行します。
-
-::
-
- # cd /usr/pkgsrc/misc/openoffice
- # make package-install
-
-うまくコンパイルしてインストールできると、openofficeを実行出来ます。
-
-::
-
- % soffice
-
-pkgsrcを使ってみる
-~~~~~~~~~~~~~~~~~~
- 「RaspberryPIでmikutterというtwitterクライアントを使いたい」場合を考えてみます。
-インストールできそうなソフトウェアは、/usr/pkgsrc/ジャンル名以下にディレクトリがあります。
-ここに使いたいソフトウェアがあれば、コンパイルしてインストールできるかもしれません。
-
-::
-
- % ls /usr/pkgsrc/* |grep mikutter
- mikutter                        .... pkgsrcにmikutterがある!
- % cd /usr/pkgsrc/*/mikutter     .... ジャンルはわからないけど移動
- % pwd
- /usr/pkgsrc/net/mikutter        .... "net" の下にあった
- % ls
- CVS       DESCR     Makefile  PLIST     distinfo  files
- % cat DESCR                     .... ソフトウェアの説明
- Mikutter is a Twitter client aim for endsville Twitter client For all of
- Miku-aholics and Twitter-holics.
- % cat Makefile
- # $NetBSD: Makefile,v 1.68 2013/06/23 01:09:43 tsutsui Exp $
- #
-  
- DISTNAME=       mikutter.0.2.2.1264    ... mikutterのバージョンとか
- PKGNAME=        ${RUBY_PKGPREFIX}-${DISTNAME:S/./-/}
- CATEGORIES=     net 
- MASTER_SITES=   http://mikutter.hachune.net/bin/  ... 配布サイト
- 
- MAINTAINER=     obache@NetBSD.org　　　　　　　　　　 ... このパッケージを管理している人
- HOMEPAGE=       http://mikutter.hachune.net/      ... ソフトウェアのホームページ
- COMMENT=        Simple, powerful, and moeful twitter client  .. 一行説明
- LICENSE=        gnu-gpl-v3 AND cc-by-sa-v3.0      ... ソフトウェアのライセンス
- 
- RUBY_VERSION_SUPPORTED= 193
- 
- .include "../../lang/ruby/rubyversion.mk"
- 
- DEPENDS+=       xdg-utils-[0-9]*:../../misc/xdg-utils　　... 依存しているソフトウェア
- DEPENDS+=       ${RUBY_PKGPREFIX}-hmac>=0.4.0:../../security/ruby-hmac
-                 :
- % cat PLIST　　　　　　　　　　　　　　　　　　 ... インストールするファイルの一覧です
- @comment $NetBSD: PLIST,v 1.23 2013/05/15 11:24:14 obache Exp $
- bin/mikutter                          　　... /usr/pkg/bin/mikutterにインストールされます                 
- share/applications/mikutter.desktop      
- share/doc/mikutter/README
- share/mikutter/core/boot/check_config_permission.rb
- share/mikutter/core/boot/load_plugin.rb
- share/mikutter/core/boot/mainloop.rb
- share/mikutter/core/boot/option.rb
- 
- % distinfo  .... ダウンロードするファイルの一覧とチェックサム
- $NetBSD: distinfo,v 1.60 2013/06/16 08:58:06 obache Exp $
- 
- SHA1 (mikutter.0.2.2.1264.tar.gz) = f93757ca51f3fe9f555df32c86c2ed7021992887
- RMD160 (mikutter.0.2.2.1264.tar.gz) = bd3f4a49eb8d96a225b4cc704115995fe390e42a
- Size (mikutter.0.2.2.1264.tar.gz) = 2318031 bytes
-
-mikutterと、mikutterをインストールするために必要なソフトウェアをインストールします。
-
-::
-
- % su
- # cd /usr/pkgsrc/net/mikutter
- # make package-install
-
-RaspberryPIで使いそうなソフトを一気にインストールする
-""""""""""""""""""""""""""""""""""""""""""""""""""""
-/usr/pkgsrc/ジャンル名を眺めて、使いそうなソフトウェアをリストアップします。
-
-::
-
- % cat List 
- kterm
- tcsh
- vlgothic-ttf
- icewm
- xli
- mikutter
- uim
- fossil
- sudo
- scmgit-base
- zsh
- dillo
-
-簡単なシェルスクリプトを作って、実行します。コンパイルがうまく進めば、必要なソフトウェアがすべてソースコードからコンパイル・インストールされた状態になります。
-
-::
-
- % cat Package
- for i in `cat List`
- do
-   cd /usr/pkgsrc/*/$i
-   make package-install
- done
- % su
- # sh Package
- # pkg_info      .... インストールされたパッケージの一覧を表示します。
-
-pkgsrcを更新する
-~~~~~~~~~~~~~~~~
-まず/usr/pkgsrcを更新し、次に、必要なソフトウェアを再コンパイルします。
-
-* /usr/pkgsrcを更新します
-
-::
-
- # cd /usr/pkgsrc
- # cvs update -PAd               ... 最新版に上げる
- # cvs update -Pdr pkgsrc-2013Q2 ... 2013Q2に上げる
-
-* 更新が必要なソフトウェアを更新します
- pkg_chkコマンド、またはpkg_rolling-replaceコマンドで更新します。
-
-::
-
- # pkg_chk -u
- 
- # cd /usr/pkgsrc/pkgtools/pkg_rolling-replace 
- # make package-install
- # /usr/pkg/bin/pkg_rolling-replace
 
 単一ソースツリー
 ---------------
@@ -495,41 +313,6 @@ X Window システムでは、setxkbmapコマンドを利用して、レイア�
 ::
 
  setxkbmap -layout jp -option ctrl:swapcaps
-
-デスクトップ環境を作ってみる
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-デスクトップ環境の設定:Xfceの場合
-"""""""""""""""""""""""""""""""""
-
-::
-
- # cd /usr/pkgsrc/meta-pkgs/xfce4
- # make package-install
-
-デスクトップ環境の設定:gnomeの場合
-""""""""""""""""""""""""""""""""""
-
-::
-
- # cd /usr/pkgsrc/meta-pkgs/xfce
- # make package-install
-
-ウィンドウマネージャの設定:icewmの場合
-""""""""""""""""""""""""""""""""""""""
-
-::
-
- # cd /usr/pkgsrc/wm/icewm
- # make package-install
-
-ウィンドウマネージャの設定:jwmの場合
-"""""""""""""""""""""""""""""""""""""
-
-::
-
- # cd /usr/pkgsrc/wm/jwm
- # make package-install
 
 
 TireI/II/III
@@ -834,149 +617,6 @@ NetBSD：カーネル
 * 共有部分はすべてで共有できる
 * サポートされていない部分だけを作り、CVSツリーに追加する
 
-Package - /usr/pkgsrc 
-------------------------
-* 簡単にソフトウェアをコンパイル・インストール
-* 1997年8月開始
-* 201?-Q[1-4] もうすぐ準備
-* 41種類のジャンル
-* 9963種類以上のソフトウェア
-* Make installでソフトウェアのインストール
-
-各CPUアーキテクチャ間で共通
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-* mipsel –mips endian little
-* arc – MIPSで動くNTマシン
-* cobalt – Cobalt Qube1/2
-* pmax – DEC station
-* hpcmips – MIPS搭載WinCE
-
-/usr/pkgsrc/emulators
-~~~~~~~~~~~~~~~~~~~~~~~~
-* gxemul
-* mips (pmax,hpcmips)
-* dreamcast
-* simh
-* NetBSD/vax
-* tme
-* sun2,sun3,SPARCstation 2
-* QEMU
-* PC
-* USBデバッグ
-
-Packagesジャンル一覧
-~~~~~~~~~~~~~~~~~~~~~
-
-.. csv-table:: The NetBSD Packages Collection
-
-   x11, Packages to support the X window system
-   archivers, Archivers
-   audio, Audio tools
-   benchmarks, Benchmarking tools
-   biology, Software for the biological sciences
-   cad, CAD tools
-   chat, Communication programs
-   comms, Communication utilities
-   converters, Document format and character code converters
-   cross, Cross-platform development utilities
-   databases, Databases
-   devel, Development utilities
-   editors, Editors
-   emulators, Emulators for other operating systems
-   filesystems, File systems and file system related packages
-   finance, Monetary financial and related applications
-   fonts, Fonts
-   games, Games
-   geography, Software for geographical-related uses
-   graphics, Graphics tools and libraries
-   ham, Wireless communication tools and applications
-   inputmethod, Input method tools and libraries
-   lang, Programming languages
-   mail, Electronic mail utilities
-   math, Mathematics
-   mbone, Multi-cast backBone applications
-   meta-pkgs, Collections of other packages
-   misc, Miscellaneous utilities
-   multimedia, Multimedia utilities
-   net, Networking tools
-   news, Network news
-   parallel, Applications dealing with parallelism in computing
-   pkgtools, Tools for use in the packages collection
-   print, Desktop publishing
-   security, Security tools
-   shells, Shells
-   sysutils, System utilities
-   textproc, Text processing utilities (does not include desktop publishing)
-   time,Clocks calendars daily planners and other time related applications
-   wm, X11 window managers configuration tools and themes
-   www, Packages related to the World Wide Web
-
-ソフトウェアのコンパイル／インストール
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-drupal
-
-::
-
- cd /usr/pkgsrc/www/drupal6
- make package
- make install
-
-OpenOffice
-
-::
-
- cd /usr/pkgsrc/misc/openoffice3
- make package
- make install
- /usr/pkg/bin/soffice ....
-
-目的別
-~~~~~~
-* デスクトップ向け
-* 組み込み向け
-* pkgsrc/meta-pkgにいくつかある
-
-Package対応プラットフォーム
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#. NetBSD
-#. Solaris / SmartOS / illumos
-#. Linux
-#. Darwin (Mac OS X)
-#. FreeBSD
-#. OpenBSD
-#. IRIX
-#. AIX
-#. DragonFlyBSD
-#. OSF/1
-#. HP-UX
-#. QNX
-#. Haiku
-#. MirBSD
-#. Minix3
-#. Cygwin
-
-NetBSD以外でpkgsrc
-~~~~~~~~~~~~~~~~~~
-
-::
-
- # tar xzvf pkgsrc.tgz
- # cd pkgsrc/bootstrap
- # ./bootstrap
-
-Packageとライセンスの取扱い
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* 個々のパッケージごとにLICENSE定義
-* 受け入れられるライセンスを制御したい
-* ツールとライブラリのライセンスが違う
-* ツールがGPL,ライブラリがLGPL
-* GPLv2とv3が混在する例
-  rubyとreadline6
-* GPL2とGPL2 or laterの区別
-* GPL3とリンクできるかできないか
-  http://d.hatena.ne.jp/obache/20090922/
-
 NetBSDのリリース
 ----------------
 リリース版
@@ -1137,6 +777,7 @@ NetBSD/i386でクロスコンパイル
 * FreeBSD上でクロスコンパイル
 * distcc - コンパイルだけ速いマシンで
 * pkgsrcをクロスコンパイル
+
 * pkgsrcのcrossbuildでググる！
 * http://www.lins.jp/~obata/diary/200803242.html
 * クロス用toolsを作る
@@ -1182,20 +823,6 @@ netbsd-request@re.soum.co.jp
 * Anonymous CVS
 * rsync
 
-Japan NetBSD Users’ Group
------------------------------
-* 1999年8月21日成立
-* 日本のNetBSDユーザに便宜を図る
-* FTP/CVS/WWWサーバの管理
-* ドキュメント・WWWページ翻訳
-* KOF,OSCに全て参加(.DB/.cloud除く)
-* 回線提供：IIJ
-*  http://www.jp.NetBSD.org/
-* http://www.facebook.com/NetBSD.jp/
-* 年一度定期総会・BoFを実施
-* 2013/7/13
-* 東京 根津　東大武田先端知ビル
-
 www.netbsd.org　翻訳
 ----------------------
 現在
@@ -1210,58 +837,6 @@ www.netbsd.org　翻訳
  古いドキュメントでもあった方がいいか
  そもそも英語のドキュメントは正確か
 
-国内BSDユーザグループ
-----------------------
-.. 
-* http://www.netbsd.org/gallery/groups.html
-* BBQ
-* BSD Users Group,Shinshu
-* Chofu *BSD Users’ Group
-* Chiba *BSD Users’ Group
-* Daibou East *BSD Users Group
-* Echigo BSD Users Group
-* Kansai *BSD Users Group
-* Nagoya *BSD Users Group
-* Northern land BSD Users Group
-* Shikoku *BSD Users Group
-* Tohoku BSD Users Group
-
-オープンソースカンファレンスこの一年
-----------------------------------
-
-.. csv-table:: http://togetter.com/id/ebijun
-
- OSC2013名古屋NBUG&NetBSDブース展示の記録 ,1031 view,Luna88K&Luna68K
- 名古屋*BSDユーザグループ(NBUG)2013/5月例会の記録 ,210 view,XM6i 画面スクロールでもNetBSD/x68kスライドショー
- NetBSDでuARM, 788 view, uARM
- 名古屋*BSDユーザグループ(NBUG)2013/4月例会の記録 ,354 view,send-prしてみた
- 名古屋*BSDユーザグループ(NBUG)2013 花見の記録 ,301 view ,BSD鍋
- 名古屋*BSDユーザグループ(NBUG)2013/3月例会の記録, 410 view,JAIST合格記念発表
- NetBSD/sparcをQEMUで動かす会の記録, 723 view,QEMU/sparc
- AsiaBSDCon 2013の記録 ,1259 view,KOBO全部くれ攻撃
- OSC2013徳島 NetBSDブース展示の記録 ,755 view,丹下桜様にNetBSDブース&mikutterご紹介
- OSC2013 東京春 NetBSDブース展示の記録 ,742 view,ubootする黄旗ZAURUS
- 名古屋*BSDユーザグループ(NBUG)2013/2月例会の記録,368 view,luna68kと88kとbigNEWSが
- OSC2013 浜松 NetBSDブース展示の記録,466 view,NetBSD/RPI
- 名古屋*BSDユーザグループ(NBUG)2013/1月例会の記録,443 view,ておくれ6.0.1+mikutter 0.2.1
- 名古屋*BSDユーザグループ(NBUG)2012/12月例会の記録,482 view,薩摩で焼肉忘年会
- OSC2012 福岡 NetBSDブース展示の記録,689 view,Doc-Ja&NetWalker+mikutter
- 名古屋*BSDユーザグループ(NBUG)2012/11月例会の記録,872 view,NetWalker+mikutter
- 関西オープンソース2012 NetBSDブース展示の記録,919 view,XM6i
- OSC2012 会津 NetBSDブース展示の記録,1756 view,mikutterシール評議会開催
- OSC2012 大分秋 NetBSDブース展示の記録,595 view,KOBO&OpenBlocks
- OSC2012 広島 NetBSDブース展示の記録,2906 view,all that X68000!
- 名古屋*BSDユーザグループ(NBUG)2012/10月例会の記録,425 view,RPI来る
- 名古屋*BSDユーザグループ(NBUG)2012/9 例会の記録,461 view,納屋橋夜イチ
- OSC2012沖縄 NetBSDブース展示の記録,392 view,NetBSD/i386 6.0_RC2ておくれ,XM6iシンセ
- OSC2012 東京秋 NetBSDブース展示の記録,1661 view,OpenBlocksA6&KOBO
- OSC2012 島根 NetBSDブース展示の記録,855 view,ておくれへようこそ 6.0_RC1
- 名古屋*BSDユーザグループ(NBUG)2012/8 例会の記録,651 view,XCAST rubyライブラリ
- OSC2012 京都 NetBSDブース展示の記録,2399 view,NetBSD/luna68k LUNAII
- 名古屋*BSDユーザグループ(NBUG)2012/7 例会の記録,1351 view,FreeBSD XCAST
- OSC2012 仙台 NetBSDブース展示の記録,610 view,NetBSD/RPI
- 日本NetBSDユーザーグループ第十四回定期総会 および NetBSD BoF 2012,885 view,epoc32
-
 まとめ
 ----------------------
 * NetBSDはいろんなハードで動きます
@@ -1275,17 +850,5 @@ www.netbsd.org　翻訳
 * 愛着あるハードウェアが生き返ります
 * 最新のネットワークコードが利用できます
 * もしかしたらリサイクル団体なんでしょうか？
- 作成日
- |today|
-
-このドキュメント
----------------
-* https://github.com/ebijun/NetBSD/tree/master/Guide
-* フォーマット: /usr/pkgsrc/textproc/py-sphinx
-* 編集: /usr/pkgsrc/editors/gedit
-* PDFチェック: /usr/pkgsrc/pring/evince
-* bccksで豆本にしたい
 
 
-.. OSCのことを書く
-.. TODO
