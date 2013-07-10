@@ -27,6 +27,11 @@
 .. todo:: latexに変換してみる
 .. todo:: latex環境設定
 .. todo:: facebookページとの連携：主なニュース取得とか
+.. todo:: raid設定
+.. todo:: tmpfs/unionfsまわり
+.. todo:: http://www.fml.org/home/fukachan/ja/tech.netbsd.html
+.. todo:: brasero,cheese,rhythmbox,sound juicer,totem
+.. todo:: firefox,thunderbird
 
 ==============================
 NetBSDのご紹介        
@@ -34,16 +39,22 @@ NetBSDのご紹介
 
 こういうOSが欲しい
 -----------------
- 世界中にあるコンピュータ、昔の計算機から最近のパソコン、組み込み系まで、身の回りで目についたすべてのコンピュータで動くOSは、どのようなものでしょうか？コンピュータに接続できる機器もたくさんあります。手持ちの周辺機器を全部利用できるOSを考えてみましょう。これまでに利用したことのあるソフトウェアすべてを動かすことのできるOSはどのようなものであればよいでしょうか？ソースコードを自由に読んだり、書いたり、引用したり、配布したり、売ったり買ったりできるOSを、世界中の人々と共同で作るためにはどのような枠組みがあればよいでしょうか？
 
+ 世界中にあるコンピュータ、昔の計算機から最近のパソコン、組み込み系まで、身の回りで目についたすべてのコンピュータで動くOSは、どのようなものでしょうか？コンピュータに接続できる機器もたくさんあります。手持ちの周辺機器を全部利用できるOSを考えてみましょう。これまでに利用したことのあるソフトウェアすべてを動かすことのできるOSはどのようなものであればよいでしょうか？ソースコードを自由に読んだり、書いたり、引用したり、配布したり、売ったり買ったりできるOSを、世界中の人々と共同で作るためにはどのような枠組みがあればよいでしょうか？
+ 
 NetBSD
 -------
- NetBSDは、4.3/4.4BSD&386BSDベースのOSです。プロジェクトは1993年3月21日から開始していて、現在も活発に開発が進んでいます。60種類以上のハードウェアを、単一ソースツリーでサポートしています。
 
- ハードウェア依存/非依存部分を分離しており、IPv6をはじめとする最新のネットワークプロトコルをサポートしています。ソースコードは、商用ルータ・プリンタ・家電製品・ゲーム機など、幅広い機器に組み込まれています。OSとして組み込まれることもあれば、ネットワーク機能など、一部のコードが取り込まれることもあります。
-
+ NetBSDは、4.3/4.4BSD&386BSDベースのOSです。
+ プロジェクトは1993年3月21日から開始していて、現在も活発に開発が進んでいます。
+ 60種類以上のハードウェアを、単一ソースツリーでサポートしています。
+ 
+ ハードウェア依存/非依存部分を分離しており、IPv6をはじめとする最新のネットワークプロトコルをサポートしています。
+ ソースコードは、商用ルータ・プリンタ・家電製品・ゲーム機など、幅広い機器に組み込まれています。
+ OSとして組み込まれることもあれば、ネットワーク機能など、一部のコードが取り込まれることもあります。
+ 
  NetBSDのウエブサイトは、http://www.NetBSD.org/ です。
-
+ 
  NetBSD全般に関するガイドは、http://www.NetBSD.org/docs/guide/en/ にあります。
 
 BSDライセンス
@@ -52,7 +63,7 @@ BSDライセンス
 2 条項 BSD ライセンス
 ~~~~~~~~~~~~~~~~~~~~~
  http://www.jp.NetBSD.org/ja/about/redistribution.html
-
+ 
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -68,18 +79,18 @@ BSDライセンス
  以下の条件を満たす場合に認める:
  
  1. ソースコードの再配布においては、上記の著作権表示、この条件の列挙、下記の注意書きを残すこと。
- 2. バイナリー形式の再配布においては、上記の著作権表示、この条件の列挙、下記の注意書きを、配布物に附属した文書および/または他のものに再現させること。
+ 2. バイナリー形式の再配布においては、上記の著作権表示、この条件の列挙、下記の注意書きを、
+    配布物に附属した文書および/または他のものに再現させること。
  
- このライセンスの前には著作権表示そのものが付きます。 この後には注意書きが付き、 このソフトウェアに関して問題が生じても、作者は責任を負わないと述べます。 
+ このライセンスの前には著作権表示そのものが付きます。この後には注意書きが付き、このソフトウェアに関して問題が生じても、作者は責任を負わないと述べます。 
 
 BSDライセンスとNetBSD
 ~~~~~~~~~~~~~~~~~~~~~~
- NetBSDのソースコードを自由に売ることができます。NetBSDのソースコードから作ったバイナリを売ることもできます。バイナリのソースコードを公開する義務はありません。
+ NetBSDのソースコードを自由に売ることができます。 NetBSDのソースコードから作ったバイナリを売ることもできます。バイナリのソースコードを公開する義務はありません。
 
 ライセンス条項が異なるソースを分離する
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- NetBSDの配布物には、2 条項 BSD ライセンスのソースコードで書かれているソフトウェアと、そうでないソフトウェアが含まれています。
-NetBSDでは、ライセンス条項が違うソースコードをディレクトリごとに分けて管理しています。
+ NetBSDの配布物には、2 条項 BSD ライセンスのソースコードで書かれているソフトウェアと、そうでないソフトウェアが含まれています。NetBSDでは、ライセンス条項が違うソースコードをディレクトリごとに分けて管理しています。
 
 ::
 
@@ -417,6 +428,44 @@ Tier III: Life Support — severely incapacitated or broken
 NetBSDを使ってみる
 ------------------
 
+daily-snapshot
+~~~~~~~~~~~~~~~
+
+ftp://nyftp.netbsd.org/pub/NetBSD-daily/ 以下には、
+毎日コンパイルされているNetBSDの動作イメージがあります。
+ミラーサイトは、ftp7.jp.netbsd.orgにあります。
+
+.. csv-table:: ftp://nyftp.netbsd.org/pub/NetBSD-daily/ の一覧
+
+ 名前,サイズ, 最終更新日時
+ HEAD,,2013年07月10日 01時00分00秒
+ ファイル:README, 1 KB, 2012年11月21日 00時00分00秒
+ netbsd-5, 2013年07月10日, 01時00分00秒
+ netbsd-5-1, 2013年07月05日, 01時00分00秒
+ netbsd-5-2, 2013年07月01日, 01時00分00秒
+ netbsd-6, 2013年07月04日, 01時00分00秒
+ netbsd-6-0, 2013年07月03日, 01時00分00秒
+
+.. csv-table:: ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD の一覧
+
+   名前, サイズ, 最終更新日時
+ 201307060520Z, ,2013年07月06日 18時13分00秒
+ 201307070030Z, ,2013年07月07日 12時23分00秒
+ 201307071220Z, ,2013年07月08日 00時24分00秒
+ 201307080020Z, ,2013年07月08日 12時17分00秒
+ 201307081220Z, ,2013年07月09日 00時15分00秒
+ 201307090630Z, ,2013年07月09日 18時29分00秒
+
+PCでどの程度起動するか確認する
+""""""""""""""""""""""""""""""
+
+ ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201307080020Z/images/NetBSD-6.99.23-amd64-install.img.gz
+
+RPIでどの程度起動するか確認する
+"""""""""""""""""""""""""""""""
+ ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201307080020Z/evbarm/binary/gzimg/rpi.img.gz
+ ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201307080020Z/evbarm/binary/gzimg/rpi_inst.img.gz 
+
 ておくれイメージ
 ~~~~~~~~~~~~~~~~
 
@@ -429,6 +478,13 @@ NetBSDの設定例としても優れているので、一読をおすすめし�
  http://www.ceres.dti.ne.jp/tsutsui/netbsd/liveimage  ...i386/amd64 
  http://www.ceres.dti.ne.jp/tsutsui/netbsd/liveimage/wzero3.html ..WZero3
 
+::
+
+ http://www.youtube.com/watch?v=Jl0BZVfVSLs ... WZero3起動動画
+ http://www.slideshare.net/tsutsuii/netbsdcrossliveimage
+ http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html
+
+
 RaspberryPI用NetBSDイメージ
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 RaspberryPI用NetBSDイメージを配布しています。SDカードにコピーして、RaspberryPIから起動すると動作します。
@@ -437,7 +493,6 @@ RaspberryPI用NetBSDイメージを配布しています。SDカードにコピ�
 
  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/README-RPI.pdf
-
 
 ドリームキャスト版CD
 ~~~~~~~~~~~~~~~~~~~~
@@ -679,8 +734,12 @@ NetBSD開発ロードマップ
 
 Automated Testing Framework
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-| cd /usr/tests;
-| atf-run | atf-report
+
+http://www-soc.lip6.fr/~bouyer/NetBSD-tests/xen/ に、i386/amd64に関する自動テストレポートがあります。
+ 
+::
+ # cd /usr/tests;
+ # atf-run | atf-report
 
 組織構成
 -------
@@ -740,13 +799,16 @@ Developerになるには(2)
 
 世界中で打ち合わせをする時間
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-| May 21 03:00 PM -0700 America/Los_Angeles
-| May 21 06:00 PM -0400 America/New_York
-| May 21 11:00 PM +0100 Europe/London
-| May 22 00:00 AM +0200 Europe/Berlin
-| May 22 01:00 AM +0300 Europe/Helsinki
-| May 22 07:00 AM +0900 Asia/Tokyo
-| May 22 08:00 AM +1000 Australia/Melbourne
+
+.. csv-table:: 
+
+ May 21 03:00,PM -0700,America/Los_Angeles
+ May 21 06:00,PM -0400,America/New_York
+ May 21 11:00,PM +0100,Europe/London
+ May 22 00:00,AM +0200,Europe/Berlin
+ May 22 01:00,AM +0300,Europe/Helsinki
+ May 22 07:00,AM +0900,Asia/Tokyo
+ May 22 08:00,AM +1000,Australia/Melbourne
 
 Port-maintainer
 ~~~~~~~~~~~~~~~~~
@@ -792,9 +854,9 @@ NetBSD/i386でクロスコンパイル
 * 数GBある各種アプリケーション群を共通にする
 
 エミュレーション環境
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 * Linux
-* I386以外のバイナリも動くようにする
+* i386以外のバイナリも動くようにする
 * FreeBSD
 * Windows2000/XP
 * PECOFF

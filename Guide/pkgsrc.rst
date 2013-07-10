@@ -33,6 +33,7 @@
 .. todo:: イベント関連の設定・ファイルを分ける？
 .. todo:: facebookページとの連携：主なニュース取得とか
 .. todo:: VirtualBoxで徐々にメモリを減らしたときどうなるか
+.. todo:: othersrc/share/examples/ec2: build_ec2_img.sh
 
 pkgsrcでソフトウェアをインストールする
 --------------------------------------
@@ -324,6 +325,7 @@ firefox
  % cd /usr/pkgsrc/www/firefox-l10n
  # make package-install
 .. 言語タブ設定
+.. adobe
 
 OpenOffice
 """"""""""""
@@ -333,6 +335,14 @@ OpenOffice
  make package
  make install
  /usr/pkg/bin/soffice ....
+
+LaTeX
+"""""""
+
+::
+
+ # cd /usr/pkgsrc/print/ja-ptex
+ # make package-install
 
 CMSを使ってみる
 ~~~~~~~~~~~~~~~
@@ -349,6 +359,14 @@ wordpress
 ::
 
  cd /usr/pkgsrc/www/wordpress
+ make package-install
+
+エミュレータでNetBSD
+~~~~~~~~~~~~~~~~~~~~
+
+::
+
+ cd /usr/pkgsrc/emulators/qemu
  make package-install
 
 Package - /usr/pkgsrc 
@@ -486,9 +504,7 @@ Packageとライセンスの取扱い
 
 pkgsrcを更新する
 ~~~~~~~~~~~~~~~~
-まず/usr/pkgsrcを更新し、次に、必要なソフトウェアを再コンパイルします。
-
-* /usr/pkgsrcを更新します
+まず/usr/pkgsrcを更新し、次に、必要なソフトウェアを再コンパイルします。cvsで、/usr/pkgsrcを更新します。
 
 ::
 
@@ -496,19 +512,20 @@ pkgsrcを更新する
  # cvs update -PAd               ... 最新版に上げる
  # cvs update -Pdr pkgsrc-2013Q2 ... 2013Q2に上げる
 
-* 更新が必要なソフトウェアを更新します
- pkg_chkコマンド、またはpkg_rolling-replaceコマンドで更新します。
+更新が必要なソフトウェアを更新します。pkg_chkコマンド、またはpkg_rolling-replaceコマンドで更新します。
 
 ::
 
  # pkg_chk -u
+ # /usr/pkg/sbin/pkg_chk -u -b -n -P /usr/local/src/NetBSD/pkgsrc-2013Q2/packages/All
+ # /usr/pkg/sbin/pkg_chk -u -b -P /usr/local/src/NetBSD/pkgsrc-2013Q2/packages/All
  
  # cd /usr/pkgsrc/pkgtools/pkg_rolling-replace 
  # make package-install
  # /usr/pkg/bin/pkg_rolling-replace
 
 このドキュメント
----------------
+------------------
 * https://github.com/ebijun/NetBSD/tree/master/Guide
 * フォーマット: /usr/pkgsrc/textproc/py-sphinx
 * 編集: /usr/pkgsrc/editors/gedit
