@@ -39,6 +39,7 @@ Contents:
    ZAURUS
    WZERO3
    events
+   allevents
 
 Indices and tables
 ==================

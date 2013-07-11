@@ -32,6 +32,7 @@
 .. todo:: http://www.fml.org/home/fukachan/ja/tech.netbsd.html
 .. todo:: brasero,cheese,rhythmbox,sound juicer,totem
 .. todo:: firefox,thunderbird
+.. todo:: http://www.sekaichizu.jp/atlas/japan/area.html
 
 ==============================
 NetBSDのご紹介        
@@ -738,6 +739,7 @@ Automated Testing Framework
 http://www-soc.lip6.fr/~bouyer/NetBSD-tests/xen/ に、i386/amd64に関する自動テストレポートがあります。
  
 ::
+
  # cd /usr/tests;
  # atf-run | atf-report
 

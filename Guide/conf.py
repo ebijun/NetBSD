@@ -26,7 +26,7 @@ import sys, os
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 #extensions = ['sphinxjp.themecore','rst2pdf.pdfbuilder']
-extensions = ['rst2pdf.pdfbuilder']
+extensions = ['sphinx.ext.autodoc', 'rst2pdf.pdfbuilder']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -82,6 +82,7 @@ exclude_patterns = ['_build']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
+#pygments_style = 'bw'
 pygments_style = 'sphinx'
 
 # A list of ignored prefixes for module index sorting.
