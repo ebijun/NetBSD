@@ -216,7 +216,7 @@ RaspberryPIで使いそうなソフトを一気にインストールする
 
 ::
 
- # cd /usr/pkgsrc/meta-pkgs/xfce
+ # cd /usr/pkgsrc/meta-pkgs/gnome
  # make package-install
 
 ウィンドウマネージャの設定:icewmの場合

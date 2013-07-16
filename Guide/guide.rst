@@ -124,12 +124,13 @@ NetBSDは、単一ソースツリーで15種類のCPUアーキテクチャと58�
  atari        ews4800mips  luna68k      ofppc        sun2
 
 ソースコードからNetBSDをコンパイルする
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------
 
 ソースコードからNetBSDのインストールCDをコンパイルしてみましょう。
 
 ダウンロード
-""""""""""""
+~~~~~~~~~~~~
+
 ソースコードをダウンロードします。
 
 ::
@@ -137,7 +138,7 @@ NetBSDは、単一ソースツリーで15種類のCPUアーキテクチャと58�
  % ftp ftp://ftp.jp.NetBSD.org/pub/NetBSD/NetBSD-current/tar_files/src.tar.gz
 
 展開
-""""
+~~~~~
 
 ソースコードを展開します。
 
@@ -147,7 +148,8 @@ NetBSDは、単一ソースツリーで15種類のCPUアーキテクチャと58�
 
 
 コンパイル
-""""""""""
+~~~~~~~~~~~
+
 ここではbuild.shを利用して、i386用のバイナリを作ってみます。
 
 * -U
@@ -284,7 +286,7 @@ Xを含むCD-ROM/起動イメージを作ってみましょう。
  SHA512
 
 X Window システムの初期設定
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 X Windowシステムも含めてインストールした場合、以下の手順で設定ファイルを作ります。
 
@@ -297,14 +299,14 @@ X Windowシステムも含めてインストールした場合、以下の手順
  % xeyes &                  .... 浮動小数点チェック：ちゃんと目が回るかな？
 
 .xinitrc のコピー
-"""""""""""""""""
+~~~~~~~~~~~~~~~~~~
 
 ::
 
  cp /etc/X11/xinit/xinitrc ~/.xinitrc
 
 キーボードレイアウトの変更
-""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 コンソール画面ではwsconsを利用して、キーボードレイアウトを変更します。
 
@@ -326,12 +328,119 @@ X Window システムでは、setxkbmapコマンドを利用して、レイア�
 
  setxkbmap -layout jp -option ctrl:swapcaps
 
+外部ディスプレイへの出力切り替え
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ 外部ディスプレイへの出力は、xrandrコマンドで行います。xrandrを実行すると、X画面が表示されますが、色がおかしい場合、コンソールを一度、X以外に切り替えてからX画面に戻ると正しく表示されます。うまく切り替わらない場合は、/etc/rc.confに、wscons=YESが指定してあるか確認してください。
+
+::
+
+ % grep wscons /etc/rc.conf
+ wscons=YES
+ % xrandr --auto    ... 外部ディスプレイ端子に出力されます。
+ Control+Alt+F4 を押して、コンソール画面に切り替えます。
+ Control+Alt+F5 を押して、X画面に戻ります。
+
+ネットワーク設定
+---------------
+
+DHCPでつないでみる
+~~~~~~~~~~~~~~~~~~
+
+::
+
+ # dhcpcd ale0
+
+無線LANの設定(WEP)
+~~~~~~~~~~~~~~~~~~~
+
+::
+
+ # ifconfig ath0 up
+ # ifconfig ath0 ssid "SSIDをここに書く" nwkey "WEPキーをここに書く"
+
+無線LANの設定(WPA-PSK)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+ % cat wpa.conf
+ ctrl_interface=/var/run/wpa_supplicant
+ 
+ ctrl_interface_group=wheel
+ 
+ network={
+        ssid="SSIDをここに書く"
+        scan_ssid=1
+        key_mgmt=WPA-PSK
+        psk="pskをここに書く"
+ }
+ # /usr/sbin/wpa_supplicant -B -i athn0 -c wpa.conf
+ # dhcpcd athn0
+
+rc.d
+-----
+
+::
+
+ # ls /etc/rc.d
+ DAEMON          downinterfaces  ldpd            perusertmp      savecore
+ DISKS           envsys          local           pf              screenblank
+ LOGIN           fccache         lpd             pf_boot         securelevel
+ NETWORKING      fsck            lvm             pflogd          sshd
+ RCS             fsck_root       makemandb       postfix         staticroute
+ SERVERS         ftp_proxy       mdnsd           powerd          swap1
+ accounting      ftpd            mixerctl        ppp             swap2
+ altqd           gpio            mopd            pwcheck         sysctl
+ amd             hostapd         motd            quota           sysdb
+ apmd            httpd           mountall        racoon          syslogd
+ bluetooth       identd          mountcritlocal  raidframe       timed
+ bootconf.sh     ifwatchd        mountcritremote raidframeparity tpctl
+ bootparams      inetd           mountd          random_seed     ttys
+ ccd             ipfilter        moused          rarpd           veriexec
+ cgd             ipfs            mrouted         rbootd          virecover
+ cleartmp        ipmon           named           rndctl          wdogctl
+ cron            ipnat           ndbootd         root             wpa_supplicant
+ dbus            ipsec           network         route6d         wscons
+ devpubd         irdaattach      newsyslog       routed          wsmoused
+ dhclient        iscsi_target    nfsd            rpcbind         xdm
+ dhcpcd          isdnd           nfslocking      rtadvd          xfs
+ dhcpd           isibootd        npf             rtclocaltime    ypbind
+ dhcrelay        kdc             ntpd            rtsold          yppasswdd
+ dmesg           ldconfig        ntpdate         rwho            ypserv
+ # cat /etc/rc.conf
+     :
+ wscons=YES
+ rtclocaltime=YES
+ hostname=yourhostname.example.com
+ ip6mode=autohost
+ rtsol=YES
+ sshd=YES
+ powerd=YES
+ dbus=YES
+
+httpdの起動方法
+~~~~~~~~~~~~~~~
+ NetBSDには、標準でbozohttpdというhttpdプログラムが含まれています。以下の手順で起動できます。
+
+::
+
+ # cat > /var/www/index.html << EOF
+ <TITLE>test page</TITLE>
+ test
+ EOF
+ # /etc/rc.d/httpd onestart
+ # grep httpd /etc/rc.conf
+ httpd=YES
+ # /etc/rc.d/httpd start
+ # /etc/rc.d/httpd stop
 
 TireI/II/III
 ------------
 
 Tier I
-""""""
+~~~~~~~~
+
 .. csv-table:: Tier I: Focus — support is part of NetBSD's strategy 
 
  Port, CPU, Machines, Latest Release
@@ -344,8 +453,9 @@ Tier I
  sparc64, sparc, Sun UltraSPARC (64-bit), 6.1
  xen, i386 x86_64, Xen Virtual Machine Monitor, 6.1
 
+
 Tier II
-"""""""
+~~~~~~~~~
 
 .. csv-table:: Tier II: Organic — evolving at its own pace
 
@@ -401,7 +511,8 @@ Tier II
  zaurus,arm,Sharp C7x0/C860/C1000/C3x00 series PDA,6.1
 
 Tier III: Life Support — severely incapacitated or broken
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
  TierIII状態のPortはありません。
 
 サポートしているCPU
@@ -430,11 +541,11 @@ NetBSDを使ってみる
 ------------------
 
 daily-snapshot
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 ftp://nyftp.netbsd.org/pub/NetBSD-daily/ 以下には、
 毎日コンパイルされているNetBSDの動作イメージがあります。
-ミラーサイトは、ftp7.jp.netbsd.orgにあります。
+ミラーサイトは、ftp://ftp7.jp.netbsd.org/pub/NetBSD-daily/ にあります。
 
 .. csv-table:: ftp://nyftp.netbsd.org/pub/NetBSD-daily/ の一覧
 
@@ -458,12 +569,17 @@ ftp://nyftp.netbsd.org/pub/NetBSD-daily/ 以下には、
  201307090630Z, ,2013年07月09日 18時29分00秒
 
 PCでどの程度起動するか確認する
-""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
 
  ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201307080020Z/images/NetBSD-6.99.23-amd64-install.img.gz
 
 RPIでどの程度起動するか確認する
-"""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
  ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201307080020Z/evbarm/binary/gzimg/rpi.img.gz
  ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201307080020Z/evbarm/binary/gzimg/rpi_inst.img.gz 
 
@@ -487,7 +603,8 @@ NetBSDの設定例としても優れているので、一読をおすすめし�
 
 
 RaspberryPI用NetBSDイメージ
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 RaspberryPI用NetBSDイメージを配布しています。SDカードにコピーして、RaspberryPIから起動すると動作します。
 
 ::
@@ -730,7 +847,7 @@ NetBSD開発ロードマップ
     NetBSD 5.2 ,03 Dec 2012
     NetBSD 6.0 ,17 Oct 2012
     NetBSD 6.0.1 ,26 Dec 2012
-    NetBSD 6.1 ,26 Dec 2012
+..    NetBSD 6.1 ,26 Dec 2012
 
 
 Automated Testing Framework
@@ -832,8 +949,10 @@ Port-maintainer
 
 クロス開発環境
 -------------
+
 NetBSD/i386でクロスコンパイル
  build.sh –m hpcmips 
+
 * Pkgsrc/cross以下に各種パッケージ
 * Windows環境でクロスコンパイル
 * Cygwinなど
