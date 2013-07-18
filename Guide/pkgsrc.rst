@@ -324,17 +324,21 @@ firefox
  # make package-install
  % cd /usr/pkgsrc/www/firefox-l10n
  # make package-install
-.. 言語タブ設定
-.. adobe
+ # grep flashsupport /etc/mk.conf
+ ACCEPTABLE_LICENSES+= adobe-flashsupport-license
+ # cd /usr/pkgsrc/multimedia/adobe-flash-plugin11
+ # make package-install
 
 OpenOffice
 """"""""""""
 ::
 
- cd /usr/pkgsrc/misc/openoffice3
- make package
- make install
- /usr/pkg/bin/soffice ....
+ # grep openoffice3 /etc/mk.conf
+ # PKG_OPTIONS.openoffice3=lang-ja
+ # cd /usr/pkgsrc/misc/openoffice3
+ # make package
+ # make install
+ % /usr/pkg/bin/soffice ....
 
 LaTeX
 """""""
@@ -351,23 +355,42 @@ drupal
 """"""""
 ::
 
- cd /usr/pkgsrc/www/drupal7
- make package-install
+ # cd /usr/pkgsrc/www/drupal7
+ # make package-install
 
 wordpress
 """""""""""
 ::
 
- cd /usr/pkgsrc/www/wordpress
- make package-install
+ # cd /usr/pkgsrc/www/wordpress
+ # make package-install
 
 エミュレータでNetBSD
 ~~~~~~~~~~~~~~~~~~~~
 
+Qemu
+"""""
+
 ::
 
- cd /usr/pkgsrc/emulators/qemu
- make package-install
+ # cd /usr/pkgsrc/emulators/qemu
+ # make package-install
+ # qemu-img create -f qed NetBSD-sparc.qed 500M ... qedが動くかチェック
+ # qemu-system-sparc -M SS-20 -m 64  -kernel netbsd-GENERIC -hda my-sun4c-disk.img  -hdb miniroot.fs -nographic -cdrom NetBSD-6.99.17-sparc.iso
+ # qemu-system-sparc -M SS-20 -m 64  -kernel netbsd-sd -hda my-sun4c-disk.img  -nographic -net nic -net user -redir tcp:2222::22
+
+Gxemul
+""""""""
+
+::
+
+ # /usr/pkgsrc/emulators/gxemul
+ # make package-install
+ # gxemul -e mobilepro770 -M 128 -I 800000000 -d Z50.img -d c:/usr/release/images/NetBSD-6.99.14-hpcmips.iso netbsd-install
+
+::
+
+ # gxemul -e jornada680 -M 128 -I 800000000 -d c:/usr/release/iso/NetBSD-5.1.2-hpcmips.iso /mnt/netbsd
 
 Package - /usr/pkgsrc 
 ------------------------
@@ -483,6 +506,7 @@ NetBSD以外でpkgsrc
 
 Packageとライセンスの取扱い
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 * 個々のパッケージごとにLICENSE定義
 * 受け入れられるライセンスを制御したい
 * ツールとライブラリのライセンスが違う
@@ -495,6 +519,7 @@ Packageとライセンスの取扱い
 
 バイナリ互換性を利用する
 ~~~~~~~~~~~~~~~~~~~~~~~
+
 * Cobalt　Qube２でhpcmipsバイナリ作成
 * MIPSでendian little =mipsel同士なら動く
 * ユーザランドはほとんどそのまま動く

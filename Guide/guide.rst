@@ -760,18 +760,20 @@ NetBSD独自の改良
 * USB ver2.0
 * 64bit clean
 * Wireless networking
-  http://www.NetBSD.org/about/features.html
-  ZFS? Google Summer of Code
+* http://www.NetBSD.org/about/features.html
+* ZFS? Google Summer of Code
 
 2038年問題
 ~~~~~~~~~~
-* 1970/1/19 0:0:0 GMTからの経過秒数
-* 2^31-1=2147483647
-* 2,147,483,648秒以上を表示できるか
-* 対応済み：date -r 2147483648
-* Tue Jan 19 12:14:08 JST 2038
-* 未対応：date -r 2147483648
-* Tue Jan 19 12:14:07 JST 2038
+
+1970/1/19 0:0:0 GMTからの経過秒数
+ 2^31-1=2147483647
+ 2,147,483,648秒以上を表示できるか
+
+対応済み：date -r 2147483648
+ Tue Jan 19 12:14:08 JST 2038
+未対応：date -r 2147483648
+ Tue Jan 19 12:14:07 JST 2038
 
 NetBSD：カーネル
 ----------------
@@ -847,7 +849,8 @@ NetBSD開発ロードマップ
     NetBSD 5.2 ,03 Dec 2012
     NetBSD 6.0 ,17 Oct 2012
     NetBSD 6.0.1 ,26 Dec 2012
-..    NetBSD 6.1 ,26 Dec 2012
+    NetBSD 6.0.2 ,18 May 2013
+    NetBSD 6.1 ,18 May 2013
 
 
 Automated Testing Framework
@@ -876,15 +879,17 @@ NetBSD Foundation,Inc
 * サーバマシンを所有
 * お金と寄付を管理
 * NetBSDの版権を管理
+* http://www.NetBSD.org/foundation/
 
 developer
 ~~~~~~~~~~~
 * 直接ソースを変更できる
 * CVS/FTP/WWWサーバの内容
-* 世界中で188人
+* 世界中で256人
 * GNATSでバグ管理
 * cvsweb.netbsd.org
-* 日本人38人
+* 日本人40人
+* http://www.NetBSD.org/people/developers.html
 
 NetBSD開発者世界分布図
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -976,26 +981,22 @@ NetBSD/i386でクロスコンパイル
 
 エミュレーション環境
 ~~~~~~~~~~~~~~~~~~~~~
-* Linux
+* Linuxエミュレーション
 * i386以外のバイナリも動くようにする
 * FreeBSD
 * Windows2000/XP
 * PECOFF
 * Win32アプリケーションをそのまま動かす
-  ゲームなど
-  Unixware
+  ゲーム/WINE
+ Unixware
 
 NetBSD開発者情報
 -----------------
 ftp/WWW/CVS/SUPサーバ
- http://www.jp.netbsd.org/ja/JP/sites.html
+ http://www.jp.NetBSD.org/ja/JP/sites.html
 開発環境設定方法
- http://www.netbsd.org/developers/
-メーリングリスト
- http://www.jp.netbsd.org/ja/JP/ml.html
-netbsd-request@re.soum.co.jp
- 1994/11- 　10年以上！　参加者600名
- http://releng.netbsd.org  
+ http://www.NetBSD.org/developers/
+ http://releng.NetBSD.org  
 
 ソースコード取得方法
 ~~~~~~~~~~~~~~~~~~~~
@@ -1033,5 +1034,4 @@ www.netbsd.org　翻訳
 * 愛着あるハードウェアが生き返ります
 * 最新のネットワークコードが利用できます
 * もしかしたらリサイクル団体なんでしょうか？
-
 
