@@ -44,8 +44,8 @@ RaspberryPIでNetBSDを使ってみる
 -----------------
 * ディスクイメージのダウンロード
 
-| # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-06-19-netbsd-raspi.img.gz
-| MD5 (2013-06-19-netbsd-raspi.img.gz) = 4a164d290bf673eee05315889f2b394e
+| # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-07-18-netbsd-raspi.img.gz
+| MD5 (2013-07-18-netbsd-raspi.img.gz) = ec361710c93a7e8f9d8f70c9e1a142d0
 
 
 * 2GB以上のSDカードを準備します。
@@ -54,7 +54,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2013-06-19-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2013-07-18-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
 
 RaspberryPIの起動
 ------------------
