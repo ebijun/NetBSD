@@ -124,4 +124,21 @@ LUNA年表
 .. [#lu4] トラック一台分? http://www.jp.netbsd.org/ja/JP/ml/junk-ja/201301/msg00005.html
 .. [#lu5] というわけで https://twitter.com/tsutsuii/status/357219819289985024/photo/1
 .. [#lu6] 展示マシン紹介(3) http://www.ceres.dti.ne.jp/tsutsui/osc2011kyoto/
+    これだけサーベイ結果を投稿すればLUNAの薄い本も充実するであろう（投げっぱなし作戦）
+    @toshi_a LUNA展示の「1989年発売」を見て「まだ生まれてない」と言われるのには動揺せず説明を続けられるようになりました……
+    実際問題として 2011年のOSCでは「Windows95より年下です」というネタを発表する中学生がいてですね……
+    （LUNA-IIの生産終了は1996年です）
+    個人的に知恵袋パソコンカテゴリ最強の質問 http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1132299146 … まだ稼働しているのかがとても気になる
+    GOOD DESIGN AWARD http://www.g-mark.org/award/describe/15097 … 価格にマルが一つ足りない
+    「マルチRISCワークステーションLUNA‐88K2 - 33MHz MC88100 CPUを最大4個搭載したマルチRISCワークステーションについて」 http://jglobal.jst.go.jp/detail.php?JGLOBAL_ID=200902066730130379 … これも1992年12月でさっきのと同じだから同時進行だったのかな
+    MC88110とは http://en.wikipedia.org/wiki/MC88110  "... the MC88110 was ultimately unsuccessful and was used in few systems." 諸行無常
+    「MC88110を搭載したワークステーションのハードウェア - 64bits,Superscalerを採用したMC88110 CPUを搭載したワークステーションのハードウェアについて」 http://jglobal.jst.go.jp/detail.php?JGLOBAL_ID=200902068908677809 … 幻のLUNA88K3計画なのだろうか
+    @hkloverq 初代LUNAは68030 http://jglobal.jst.go.jp/detail.php?JGLOBAL_ID=200902088071486407 … LUNA-IIが68040ですね
+    「マルチプロセッサワークステーションのハードウエア - RISCマルチプロセッサのワークステーションへのインプリメンテーション技術について」 OMRON TECHNICS 1990年07月 実はLUNA88Kの設計のほうがLUNA-IIより先なんですよね
+    「68040を搭載したワークステーションLUNA‐IIのハードウェア」 http://jglobal.jst.go.jp/detail.php?JGLOBAL_ID=200902048488142806 … , Omron Tech 31巻 2号 91-97頁, 1991年06月
+    古文書に見る現実逃避パワー http://www.re.soum.co.jp/~fukaumi/ml/netbsd/200002/msg00122.html …
+    古文書に見る謎の痕跡 http://www.re.soum.co.jp/~fukaumi/ml/netbsd/199806/msg00068.html …
+    なぜ山に登るのか http://www.ceres.dti.ne.jp/tsutsui/kof2011/Why-enigmatic-machines.html …
+    @ebijun 電源シリーズ http://togetter.com/li/215988  http://togetter.com/li/354562 
+    @ebijun http://www.jp.netbsd.org/ports/luna68k/install.html … とか https://gist.github.com/tsutsui/5196134  とかですが netboot の説明を isibootd(8) に合わせて更新するのをさぼっている（ブーメラン）
 
