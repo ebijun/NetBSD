@@ -216,8 +216,20 @@ RaspberryPIで使いそうなソフトを一気にインストールする
 
 ::
 
- # cd /usr/pkgsrc/meta-pkgs/gnome
+ # cd /usr/pkgsrc/meta-pkgs/desctop-gnome
  # make package-install
+
+デスクトップ環境の設定: deforaos-desktopの場合
+""""""""""""""""""""""""""""""""""""""""""""""
+
+::
+
+ RPIなどでは、/etc/mk.confに以下の行を追加します。
+ PKG_OPTIONS.deforaos-terminal=embedded
+ 　
+ # cd /usr/pkgsrc/meta-pkgs/deforaos-desktop
+ # make package-install
+
 
 ウィンドウマネージャの設定:icewmの場合
 """"""""""""""""""""""""""""""""""""""
@@ -364,6 +376,43 @@ wordpress
 
  # cd /usr/pkgsrc/www/wordpress
  # make package-install
+
+fossilを使ってみる
+~~~~~~~~~~~~~~~~~~
+
+::
+
+ # cd /usr/pkgsrc/devel/fossil
+ # make package-install
+ % ls /usr/pkg/bin/fossil
+ % fossil help
+ Usage: fossil help COMMAND
+ Common COMMANDs:  (use "fossil help --all" for a complete list)
+ add         changes     finfo       merge       revert      tag       
+ addremove   clean       gdiff       mv          rm          timeline  
+ all         clone       help        open        settings    ui        
+ annotate    commit      import      pull        sqlite3     undo      
+ bisect      diff        info        push        stash       update    
+ branch      export      init        rebuild     status      version   
+ cat         extras      ls          remote-url  sync      
+ This is fossil version 1.25 [d2e07756d9] 2013-02-16 00:04:35 UTC
+ % fossil init my-repo
+ fossil init my-repo
+ project-id: fdd587ee44f524d432186fe6a1dc379c51b26c1d
+ server-id:  7873c960d27f3b0ef2d7da2294bfc6eb092dc61e
+ admin-user: jun (initial password is "bb4867")
+ % fossil server my-repo &
+  .... ブラウザでポート8080にアクセスするとGUI画面が表示されます。
+
+Gitのインストール
+~~~~~~~~~~~~~~~~~
+
+::
+
+ # cd /usr/pkgsrc/devel/scmgit-base
+ # make package-install
+ % ls -l /usr/pkg/bin/git
+
 
 エミュレータでNetBSD
 ~~~~~~~~~~~~~~~~~~~~
@@ -551,7 +600,15 @@ pkgsrcを更新する
 
 このドキュメント
 ------------------
-* https://github.com/ebijun/NetBSD/tree/master/Guide
+
+以下のURLからこのドキュメントのソースコードをダウンロードできます。
+ドキュメントはpy-sphinxを利用しています。
+
+::
+
+ https://github.com/ebijun/NetBSD/tree/master/Guide
+
+
 * フォーマット: /usr/pkgsrc/textproc/py-sphinx
 * 編集: /usr/pkgsrc/editors/gedit
 * PDFチェック: /usr/pkgsrc/pring/evince
