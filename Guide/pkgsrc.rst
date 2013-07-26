@@ -34,6 +34,8 @@
 .. todo:: facebookページとの連携：主なニュース取得とか
 .. todo:: VirtualBoxで徐々にメモリを減らしたときどうなるか
 .. todo:: othersrc/share/examples/ec2: build_ec2_img.sh
+.. todo:: ansible とpuppet
+.. todo:: html→pdf→epub→bccksできるか
 
 pkgsrcでソフトウェアをインストールする
 --------------------------------------
@@ -613,3 +615,5 @@ pkgsrcを更新する
 * 編集: /usr/pkgsrc/editors/gedit
 * PDFチェック: /usr/pkgsrc/pring/evince
 * bccksで豆本にしたい
+
+

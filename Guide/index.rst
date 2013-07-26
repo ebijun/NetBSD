@@ -35,6 +35,7 @@ Contents:
 
    guide
    pkgsrc
+   Luna
    RPI
    ZAURUS
    WZERO3

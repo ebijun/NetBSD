@@ -25,20 +25,36 @@
   「私が誰かは わかっているはずだ。」その声は天使の声だった。
        --- さまよえる天使 [2]_ [3]_ バーナード マラマッド [4]_
 
-.. .. image:: Picture/2012/08/05/DSC_0698.JPG
- :width: 350
+.. image:: Picture/2011/07/16/P1000588.JPG
+ :height: 300
+
+.. image:: Picture/2013/06/22/DSC_2130.jpg
+ :height: 300
 
 OMRON LUNA
 ------------
  オムロン株式会社が1990年代初めに発売していたワークステーション。
 
+ 「オムロンはインターネットの基礎となるＵＮＩＸにパイオニアとして取り組んできました。最初のマシンは１９８４年に出荷を開始した「スーパーメイト」と言うモトローラ社の６８０００をＣＰＵとして使ったワークステーションでした。、当時サンマイクロシステムズが設立されたばかりで、１０ＭＨｚのチップを使っていましたが、我々は国産の最新の１２．５ＭＨｚのチップを使い、当時の最高速マシンとして登場しました。
+
+ 当然ＵＮＩＸを使うと自然にインターネットを使う事になるのですが、ＵＮＩＸそのものが技術者しか使えないものだったため、技術者同士の通信手段として細々と使われていたに過ぎません。 しかし、それでもＵＮＩＸの将来性に気づいていた我々は草の根的にオムロンの中でネットワークを拡大していきました。シグマワークステーション、ＬＵＮＡワークステーションとマシンは進化していきましたが、その一方で「オムロン・インターネット」が着々と規模を拡大していました。 最終的には全国３０個所以上、２０００人が使うネットワークにまで成長しました。 当時はだれもこれが「イントラネット」だと言う意識は無く、ひたすら便利なネットワークとして整備を続けました。もちろん今ではこれが典型的なイントラネットである事は間違いありません。 しかし、この段階では依然として技術者専用の情報インフラでありました。 草の根的な従って統率の無いものでした。」 [50]_
+
 トラック一台分
 ~~~~~~~~~~~~~~
  引越しのため、収集していた古いワークステーションを廃棄している（しようとしている）ところです。そんななか、希少マシン？はNetBSDの移植に使用されていることを知り、事務局様を通じて、junk-jaへのポストをお願いしました。 [11]_
 
+1985年12月20日
+~~~~~~~~~~~~~~~
+ SEA設立総会の夜。「1985年12月20日という日付は、日本のソフトウェアの歴史に永久に記録されよう。」(c)岸田さん　「詳しくはシグマせんとのこと」 [54]_
+
+1986年10月
+~~~~~~~~~~
+ 「SIGMA サイドで作っていたオムロンのLUNA マシンは、そのころ，まだ影も形もなかった．わたしがソニーにアドバイスしたマーケティング戦略は，とりあえず最初のロットでできた何十台かのマシンを日本全国の大学の研究者に無料で配って使ってもらうというもの．これもみごとに図にあたったと思います．」 [53]_
+
 SX-9100
 ~~~~~~~~~
- 1987年発表 for ∑プロジェクト [36]_
+ 1987年発表 for ∑プロジェクト [36]_ [51]_
+ 「札幌Σサブセンターに設置されて、地場企業によるΣ CAI ソフトウエアの開発に利用されていた。」 [52]_
 
 LUNA68K [13]_ 
 ~~~~~~~~~~~~~~~~~~
@@ -52,7 +68,7 @@ UniOS-B
 UniOS-U 
     UnixAT&TSystemV R2.1をベースに4.2BSDの機能等を付加し、移植したもの。Luna、Luna-IIで稼動。
 UniOS-Σ 
-    ΣOS-VOR1準拠したもの。Luna-Σで稼動。
+    ΣOS-VOR1準拠したもの。Luna-Σで稼動。(XXX:Luna-∑という呼び方)
 UniOS-Mach 
     Machをベースに移植したもの。Luna-II、Luna-88Kで稼動。 
 
@@ -72,10 +88,12 @@ LUNA88k　[10]_
 #. OpenBSDはm88kの実機とtoolchainがメンテナンスされている唯一のBSD
 #. 1992/9 「マルチRISCワークステーションLUNA‐88K2 - 33MHz MC88100 CPUを最大4個搭載したマルチRISCワークステーションについて」 [16]_
 
+OEM版
+~~~~~
+ 「LUNAのシグマOSのやつで日本無線からでていたOEMのワークステーションというやつを使っていたことがあります。なんか日本語フォントがX-Window立ち上げなくても使えたようなおぼろげな記憶。銀座にあったオムロンのセミナー会場で講習をうけたのだけど、そこではOEMでなくて普通のLUNAだったからなんかちがってとまどったような...」 [64]_
+
 21世紀のイベント駆動開発
 -----------------------
- LUNAの移植には、いくつかポイントがあります。
-
 #. 動きそうなLUNAを探す
 #. ハードウェアを整備する
 #. ソフトウェアを書くために必要な情報を交換する
@@ -145,6 +163,7 @@ FPU判別ルーチン
 
 OSC2012Kansai@Kyoto
 ~~~~~~~~~~~~~~~~~~~~~~
+#. NetBSD/luna68k近況 [58]_
 #. wsconsコンソールフレームバッファ修正 (OpenBSD/luna88kから)
 #. オムロンフォントで表示
 #. 電源トラブル：電解コンデンサ全交換
@@ -153,21 +172,46 @@ OSC2012Kansai@Kyoto
 #. SSD on LUNA
 #. Xorgサーバー
 
+円頓寺LUNAエンカウント
+~~~~~~~~~~~~~~~~~~~~~~~
+ NBUG2013/2月例会。いきなりLuna68K/Luna88k/BigNEWSがNBUG例会にタクシーで持ち込まれる。「掲示板でLUNA88kをNBUG例会に持ち込もうか聞いている人がいる」と噂になっていたその人だった。 [56]_
+
 OSC2013tokushima
 ~~~~~~~~~~~~~~~~~~~
- LUNA68K展示
+#. NetBSDこの20年 [5]_
+#. NetBSD/luna68kブートローダー起動展示 [8]_
 
-LUNAエンカウント
-~~~~~~~~~~~~~~~~
- いきなりLuna68K/Luna88k/BigNEWSがNBUG例会にタクシーで持ち込まれる。
+::
+
+ Modified Files:
+        src/sys/arch/luna68k/stand/boot: Makefile conf.c devopen.c init_main.c
+            ioconf.c locore.S samachdep.h version
+ Added Files:
+        src/sys/arch/luna68k/stand/boot: getsecs.c if_le.c lance.c lance.h
+ Log Message:
+ Add netboot support.
+ Based on ews4800mips, mvme68k, and x68k standalone drivers.
+ Also bump version.
+ Tested on LUNA-I.
+ XXX: We really need proper documents about libsa APIs.
 
 OSC2013nagoya
 ~~~~~~~~~~~~~~~
-* あおやまさんと江富さんによるLuna88K/Luna68K完全動態展示
-* OpenBSD/luna88k開発者あおやまさんによるプレゼンテーション 
+* あおやまさんと江富さんによるLuna88K/Luna68K完全動態展示 [57]_
+* OpenBSD/luna88k開発者あおやまさんによるプレゼンテーション [10]_
 
-LUNAにはいくつも謎がある
-----------------------------
+LUNAグッズ
+----------
+* シールとフロッピー [59]_
+* たれまく
+* ペンセット [60]_
+
+LUNA関連書籍
+------------
+ UNIXワークステーションがわかる本 [61]_
+
+LUNAの謎
+--------
 
 LUNAインストール方法 
 ~~~~~~~~~~~~~~~~~~~~~
@@ -224,7 +268,8 @@ LUNAII
  会社でワークステーション（オムロン製LUNAⅡ）を使用していますが、プリンターが不良となりました。エプソンVP-4000です。中古をさがしていますが、これと互換性のあるプリンターはないでしょうか？ [14]_
 
 LUNA年表
-~~~~~~~~~
+--------
+ 「次の日からオレとルナ先生の生活がはじまったんだ」 [62]_
 青：あおやまさん,江：江富さん,オ：オムロン,筒：筒井さん,モ:モトローラ
 
 .. csv-table:: 
@@ -280,17 +325,23 @@ LUNA年表
  2013/04/13,青, Monochrome X serverが動作
  2013/06/22,青, Luna88K OSC 2013 Nagoyaで初展示。江富さんのLuna68kも初展示。
 
+それから
+--------
+
 メモリ64M
 ~~~~~~~~~
  というわけで LUNA-IIの64MB設定でも NetBSD/luna68kカーネル起動した。これでしばらく耐久テストするか… [12]_ [34]_
 
+mlterm-fb & tw
+~~~~~~~~~~~~~~
+ ツイッタークライアント！ [39]_ [40]_ [41]_ [42]_ [43]_ [44]_
 
 老ハード介護問題
 ~~~~~~~~~~~~~~~~
 * 電源修理
 * SCSI HDD確保
 * ブラウン管を知らない子どもたち
-* 液晶接続問題
+* 液晶接続問題 [63]_
 * ハード保守
 * 詳しい人がいなくなる
 
@@ -301,7 +352,7 @@ LUNA年表
 ----
 
 脚注
-~~~~
+----
  Luna関連コメントは筒井さんに紹介してもらったものです。
 .. rubic:: 
 
@@ -355,4 +406,22 @@ LUNA年表
  http://jglobal.jst.go.jp/public/20090422/200902068890346915 1987/9/30 Omron Tech p.207-213
 .. [48] OpenBSD/luna88k on OMRON LUNA-88K2 - bootstrap screen http://www.youtube.com/watch?v=btwiiZw3B2s 2013/07/06
 .. [49] OpenBSD/luna88k on OMRON LUNA-88K2 - starting X.org http://www.youtube.com/watch?v=_EUpSpUD0Qw 2013/07/06
+.. [50] オムロンのイントラネットの歴史 http://www.masuda.org/intra/rekisi.html
+.. [51] 【IT】日本のITの歴史―SONY『NEWS』の戦略(3)（1989-03-20 http://www.miraikeikaku-shimbun.com/article/13282000.html
+.. [52] さっぽろコンピュータ博物館 http://www.sec.or.jp/elecen/museum/
+.. [53] 歴史的コンピュータとソフトウェアプロジェクトに関する昔話(社外公開版) http://katsu.watanabe.name/doc/comphist/
+.. [54] SEA Mail Vol.1 No.1 http://www.sea.jp/office/seamail/1986/1986_1_honan.pdf
+.. [55] NetBSDこの20年 http://www.slideshare.net/tsutsuii/osc2013tokushima-net-bsd20th
+.. [56] 名古屋*BSDユーザグループ(NBUG)2013/2月例会の記録 http://togetter.com/li/456972
+.. [57] OSC2013名古屋 NBUG&NetBSDブース展示の記録 http://togetter.com/li/522396
+.. [58] NetBSD/luna68k 近況 http://www.ceres.dti.ne.jp/tsutsui/osc2012kyoto/NetBSD-luna68k-updates.html
+.. [59] LUNAシールとフロッピー http://movapic.com/pic/2013062214270151c535a5bd627
+.. [60] LUNAペンセットと本 https://twitter.com/tsutsuii/status/135565130372104192
+.. [61] UNIXワークステーションがわかる本 (LUNAの本シリーズ) http://www.amazon.co.jp/UNIX%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%8B%E6%9C%AC-LUNA%E3%81%AE%E6%9C%AC%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-LUNA%E3%83%A6%E3%83%BC%E3%82%B6%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97/dp/4526029963
+.. [62] いけない!ルナ先生 全５巻 http://www.comicpark.net/readcomic/index.asp?content_id=COMC_AKC01155_SET
+.. [63] PS2Linux Kit(Sync on Green)対応モニタ一覧 http://www.ps2linux.dev.jp/monitor.html
+.. [64] かやまさん https://www.facebook.com/jun.ebihara.18/posts/692735874076690?comment_id=30643585&offset=0&total_comments=1
 
+このページ
+~~~~~~~~~~~
+ https://github.com/ebijun/NetBSD/blob/master/Guide/Luna.rst にあります。
