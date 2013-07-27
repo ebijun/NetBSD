@@ -421,7 +421,16 @@ mlterm-fb & tw
 .. [62] いけない!ルナ先生 全５巻 http://www.comicpark.net/readcomic/index.asp?content_id=COMC_AKC01155_SET
 .. [63] PS2Linux Kit(Sync on Green)対応モニタ一覧 http://www.ps2linux.dev.jp/monitor.html
 .. [64] かやまさん https://www.facebook.com/jun.ebihara.18/posts/692735874076690?comment_id=30643585&offset=0&total_comments=1
-
+.. [65] LUNAのカタログ Holonic Workstation LUNA[マニュアル・データーシート類] http://www.h2.dion.ne.jp/~dogs/collect/ds/luna.html
+.. [66] ワークステーション操作入門 http://www.kumamotokokufu-h.ed.jp/kokufu/comp/ws_tx1.html
+.. [67] "It's never too late. When it's over, you get to tell the story" -- Garrison Keillor  http://www.cs.cmu.edu/afs/cs/project/mach/public/www/mach.html
+.. [68] ピッツバーグ便利帳 サーバーの歴史 http://komachi.sp.cs.cmu.edu/benricho/Komachi#.E3.82.B5.E3.83.BC.E3.83.90.E3.83.BC.E3.81.AE.E6.AD.B4.E5.8F.B2
+「1993年、オムロンのワークステーション業務撤退に伴い藤田さんと作業マシン達に突然の引き上げ命令が下りました。」
+.. [69] OpenBSD/luna88k「network bootでIPアドレス取得」(2002/06/05)の頃のページ
+http://t.co/VRxXgWWpTO
+.. [70] @ebijun 同じく「Miod Vallatさんに見つかる」(2004/03/21)の頃のページ
+http://t.co/3QmzWm7reR
+.. [71] OMRON Luna88Kについてのまとめ http://t.co/rt5kUB74VG 作者も忘れている説
 このページ
 ~~~~~~~~~~~
  https://github.com/ebijun/NetBSD/blob/master/Guide/Luna.rst にあります。
