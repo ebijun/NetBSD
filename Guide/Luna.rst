@@ -96,6 +96,7 @@ UniOS-Mach
     Machをベースに移植したもの。Luna-II、Luna-88Kで稼動。 
 
 ----
+
  本校のワークステーションはオムロン株式会社の「ＬＵＮＡ」（DT65及びFS180）というもので、ＣＰＵに「MC68030」（メインメモリー１６ＭＢ）を、基本ソフトウェアに統合化ＯＳ（後述します）である「Unios-U」を採用した高性能なものです。（注釈：ここの部分を読めば、最近のコンピュータの進化が実感できますね） [66]_
 
 LUNAII
@@ -104,7 +105,6 @@ LUNAII
 #. 68040を搭載したワークステーションLUNA‐IIのハードウェア
 #. 互換性を重視し,CISC CPUを採用したワークステーションについて [21]_
 #. カーネル起動問題
-
 
 .. csv-table:: シリーズ構成 [73]_
 
@@ -476,7 +476,7 @@ mlterm-fb & tw
 .. [58] NetBSD/luna68k 近況 http://www.ceres.dti.ne.jp/tsutsui/osc2012kyoto/NetBSD-luna68k-updates.html
 .. [59] LUNAシールとフロッピー http://movapic.com/pic/2013062214270151c535a5bd627
 .. [60] LUNAペンセットと本 https://twitter.com/tsutsuii/status/135565130372104192
-.. [61] UNIXワークステーションがわかる本 (LUNAの本シリーズ) http://www.amazon.co.jp/UNIX%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%8B%E6%9C%AC-LUNA%E3%81%AE%E6%9C%AC%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-LUNA%E3%83%A6%E3%83%BC%E3%82%B6%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97/dp/4526029963
+.. [61] UNIXワークステーションがわかる本 (LUNAの本シリーズ) http://www.amazon.co.jp/dp/4526029963
 .. [62] いけない!ルナ先生 全５巻 http://www.comicpark.net/readcomic/index.asp?content_id=COMC_AKC01155_SET
 .. [63] PS2Linux Kit(Sync on Green)対応モニタ一覧 http://www.ps2linux.dev.jp/monitor.html
 .. [64] かやまさん https://www.facebook.com/jun.ebihara.18/posts/692735874076690?comment_id=30643585&offset=0&total_comments=1
@@ -495,3 +495,4 @@ mlterm-fb & tw
 このページ
 ~~~~~~~~~~~
  https://github.com/ebijun/NetBSD/blob/master/Guide/Luna.rst にあります。
+
