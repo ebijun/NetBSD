@@ -26,10 +26,10 @@
        --- さまよえる天使 [2]_ [3]_ バーナード マラマッド [4]_
 
 .. image:: Picture/2011/07/16/P1000588.JPG
- :height: 300
+ :height: 230
 
 .. image:: Picture/2013/06/22/DSC_2130.jpg
- :height: 300
+ :height: 230
 
 OMRON LUNA
 ------------
@@ -56,12 +56,35 @@ SX-9100
  1987年発表 for ∑プロジェクト [36]_ [51]_
  「札幌Σサブセンターに設置されて、地場企業によるΣ CAI ソフトウエアの開発に利用されていた。」 [52]_
 
-LUNA68K [13]_ 
+LUNA [13]_ 
 ~~~~~~~~~~~~~~~~~~
 #. 1989年発表 MC68030 20MHz
 
+.. csv-table:: シリーズ構成 [65]_
+
+ ディスクレス,ベーシック,スタンダード,スタンダード,ファイルサーバ,ハイエンド
+ DT10      ,DT20/25, DT30/35 , DT32/37 ,DT40/45 ,DT50/55
+ 4MB       ,4MB    , 4MB     , 8MB     ,4MB     ,8MB
+ -         ,70MB   , 100MB   , 100MB   ,172MB   ,172MB
+ LAN       ,-      , LAN     , LAN     ,LAN     ,LAN
+ ブラック    ,ブラック ,　ホワイト , ホワイト  ,ホワイト  ,ホワイト
+ 55万円    , 88/103万,115/135万円,140/160万円,165/185万円,190/210万円
+
+* PC98インターフェースはホワイトタイプに装備,DT20/25はオプション
+* DT25,35,37は、フロッピーの代わりにテープストリーマ付き
+
+オプション
+"""""""""
+
+#. ビットマップボード:モノクロ:2048x1024,1プレーン
+#. ビットマップボード:カラー:2048x1024,4プレーン,4096色中16色/16階調同時表示
+#. 増設メモリボード:最大4MBx2枚
+#. LANボード:イーサネット,チーパネット(DT20/25)
+#. PC-98インターフェースボード
+#. GPXボード: X.25,GP-1B
+
 UNI-OS [37]_
-~~~~~~~
+~~~~~~~~~~~~~~~
 
 UniOS-B 
     Unix4.3BSDを移植したもの。Lunaで稼動。
@@ -71,6 +94,9 @@ UniOS-Σ
     ΣOS-VOR1準拠したもの。Luna-Σで稼動。(XXX:Luna-∑という呼び方)
 UniOS-Mach 
     Machをベースに移植したもの。Luna-II、Luna-88Kで稼動。 
+
+----
+ 本校のワークステーションはオムロン株式会社の「ＬＵＮＡ」（DT65及びFS180）というもので、ＣＰＵに「MC68030」（メインメモリー１６ＭＢ）を、基本ソフトウェアに統合化ＯＳ（後述します）である「Unios-U」を採用した高性能なものです。（注釈：ここの部分を読めば、最近のコンピュータの進化が実感できますね） [66]_
 
 LUNAII
 ~~~~~~~
@@ -87,6 +113,10 @@ LUNA88k　[10]_
 #. PC-98用バス対応
 #. OpenBSDはm88kの実機とtoolchainがメンテナンスされている唯一のBSD
 #. 1992/9 「マルチRISCワークステーションLUNA‐88K2 - 33MHz MC88100 CPUを最大4個搭載したマルチRISCワークステーションについて」 [16]_
+
+omron3
+~~~~~~~
+ omron3.sp.cs.cmu.edu (オムロン製 LUNA-88k) は 1990年から1997年の間 CMU の日本語コンピュータ環境を提供するべくボランティア達によって運用されてきた計算機です。1997年5月をもって komachi.sp.cs.cmu.edu (Intel Pentium 120Mhz FreeBSD) に役目を引き継ぎ引退しました。  [68]_
 
 OEM版
 ~~~~~
@@ -210,8 +240,13 @@ LUNA関連書籍
 ------------
  UNIXワークステーションがわかる本 [61]_
 
-LUNAの謎
---------
+
+Project Mach 
+--------------
+ Project Mach was an operating systems research project of the Carnegie Mellon University School of Computer Science from 1985 to 1994.
+ "It's never too late. When it's over, you get to tell the story" -- Garrison Keillor [67]_
+
+* luna88kカーネルソース [71]_
 
 LUNAインストール方法 
 ~~~~~~~~~~~~~~~~~~~~~
@@ -294,14 +329,14 @@ LUNA年表
  2001/12,青,LUNAにOpenBSD移植決意
  2002/01/27,青,OpenBSD/sparc上でm88kクロス環境構築
  2002/03/29,青,シリアルコンソールでカーネルCopyright表示
- 2002/06/05,青,network bootでIPアドレス取得
+ 2002/06/05,青,network bootでIPアドレス取得 [69]_
  2003/08,青,コンパイラのバグがなおったようなので再開
  2003/09/20,青,tarのオプションを間違えてソース消去、CVS導入
  2003/10/05,青,なんとかもとの状態に戻る
  2003/12/10,青,NFS rootでシングルユーザ＆マルチユーザ
  2003/12/10,青,NFS rootでシングルユーザ＆マルチユーザ
  2004/02/17,青,SCSI動作
- 2004/03/21,青,Miod Vallatさん(OpenBSD/mvme88kのport maintainer)に見つかる
+ 2004/03/21,青,Miod Vallatさん(OpenBSD/mvme88kのport maintainer)に見つかる [70]_
  2004/04/21,青, OpenBSD本家treeにcommit
  2004/11/01,青, OpenBSD 3.6: 初の正式リリース
  2007/08/31,青, LUNA-88K2の電源ユニット故障により起動できなくなる
@@ -424,13 +459,12 @@ mlterm-fb & tw
 .. [65] LUNAのカタログ Holonic Workstation LUNA[マニュアル・データーシート類] http://www.h2.dion.ne.jp/~dogs/collect/ds/luna.html
 .. [66] ワークステーション操作入門 http://www.kumamotokokufu-h.ed.jp/kokufu/comp/ws_tx1.html
 .. [67] "It's never too late. When it's over, you get to tell the story" -- Garrison Keillor  http://www.cs.cmu.edu/afs/cs/project/mach/public/www/mach.html
-.. [68] ピッツバーグ便利帳 サーバーの歴史 http://komachi.sp.cs.cmu.edu/benricho/Komachi#.E3.82.B5.E3.83.BC.E3.83.90.E3.83.BC.E3.81.AE.E6.AD.B4.E5.8F.B2
-「1993年、オムロンのワークステーション業務撤退に伴い藤田さんと作業マシン達に突然の引き上げ命令が下りました。」
-.. [69] OpenBSD/luna88k「network bootでIPアドレス取得」(2002/06/05)の頃のページ
-http://t.co/VRxXgWWpTO
-.. [70] @ebijun 同じく「Miod Vallatさんに見つかる」(2004/03/21)の頃のページ
-http://t.co/3QmzWm7reR
+.. [68] ピッツバーグ便利帳 サーバーの歴史 http://komachi.sp.cs.cmu.edu/benricho/Komachi#.E3.82.B5.E3.83.BC.E3.83.90.E3.83.BC.E3.81.AE.E6.AD.B4.E5.8F.B2 「1993年、オムロンのワークステーション業務撤退に伴い藤田さんと作業マシン達に突然の引き上げ命令が下りました。」
+.. [69] OpenBSD/luna88k「network bootでIPアドレス取得」(2002/06/05)の頃のページ http://t.co/VRxXgWWpTO
+.. [70] @ebijun 同じく「Miod Vallatさんに見つかる」(2004/03/21)の頃のページ http://t.co/3QmzWm7reR
 .. [71] OMRON Luna88Kについてのまとめ http://t.co/rt5kUB74VG 作者も忘れている説
+.. [72] http://www.cs.cmu.edu/afs/cs/project/mach/public/src/mkernel/src/kernel/luna88k/
+
 このページ
 ~~~~~~~~~~~
  https://github.com/ebijun/NetBSD/blob/master/Guide/Luna.rst にあります。
