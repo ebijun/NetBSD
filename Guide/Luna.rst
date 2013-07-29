@@ -148,9 +148,15 @@ OEM版
 ~~~~~
  「LUNAのシグマOSのやつで日本無線からでていたOEMのワークステーションというやつを使っていたことがあります。なんか日本語フォントがX-Window立ち上げなくても使えたようなおぼろげな記憶。銀座にあったオムロンのセミナー会場で講習をうけたのだけど、そこではOEMでなくて普通のLUNAだったからなんかちがってとまどったような...」 [64]_
 
-LUNA2010
-~~~~~~~~~
- 発掘された中の一台。ナニコレ。
+LUNA2010 [78]_
+~~~~~~~~~~~~~~~~~
+ Introduces Omron Electronic BV's Luna 2010, a multiprocessor Unix workstation that supports configurations of up to four 88110 CPUs. Compatibility with Data General's DG/UX 5.4 Release 2.10 operating system; Other features; Prices. [79]_
+
+ そして、新しいワークステーション用のチップセットのコードネームにAsteroidという名前をつけました。火星と木星の間にある無数にある小惑星群のことです。今から考えると、何でこんな名前を付けたのだろうを反省してしまいますが、とにかくそういう名前をつけてしまいました。 [77]_
+
+* 88110
+* 1993/9ごろ 
+* DC/UX5.4.X
 
 OSCを中心とするイベント駆動開発
 ---------------------------------
@@ -243,17 +249,43 @@ OSC2013Tokushima
 
 ::
 
- Modified Files:
-        src/sys/arch/luna68k/stand/boot: Makefile conf.c devopen.c init_main.c
-            ioconf.c locore.S samachdep.h version
+ Module Name:    src
+ Committed By:   tsutsui
+ Date:           Sat Jan  5 17:44:25 UTC 2013
+ 
  Added Files:
-        src/sys/arch/luna68k/stand/boot: getsecs.c if_le.c lance.c lance.h
+        src/sys/arch/luna68k/include: loadfile_machdep.h
+        src/sys/arch/luna68k/stand/boot: Makefile autoconf.c bmc.c bmd.c boot.c
+            boot.ldscript conf.c cons.c device.h devopen.c disklabel.c font.c
+            getline.c init_main.c ioconf.c kbd.c kbdreg.h locore.S machdep.c
+            omron_disklabel.h parse.c preset.h prf.c rcvbuf.h romcons.c
+            romvec.h samachdep.h sc.c screen.c scsi.c scsireg.h scsivar.h sd.c
+            sio.c sioreg.h status.h stinger.h trap.c ufs_disksubr.c vectors.h
+            version
+
  Log Message:
- Add netboot support.
- Based on ews4800mips, mvme68k, and x68k standalone drivers.
- Also bump version.
- Tested on LUNA-I.
- XXX: We really need proper documents about libsa APIs.
+ First cut at NetBSD/luna68k native bootloader.
+ 
+ Based on 4.4BSD-Lite2/luna68k "Stinger" loader revision "Phase-31"
+ http://svnweb.freebsd.org/csrg/sys/luna68k/stand/
+ and MI libsa glue stuff are taken from hp300 etc.
+ 
+ Tested on LUNA-I and old DK315C SCSI disk drive.
+ 
+ LUNA's monitor PROM can load only an a.out binary in 4.3BSD FFS partition
+ (i.e. created by "newfs -O 0") on disks with OMRON's UniOS disklabel,
+ but now we can load an ELF kernel in root partition via this bootloader.
+ (See luna68k/disksubr.c for details of UniOS label)
+ 
+ TODO:
+ - LUNA-II support (check 68040 to adjust cpuspeed for DELAY())
+ - secondary SCSI support for LUNA-II
+ - netboot via le(4) (should be trivial)
+ - support boot options on bootloader prompt
+ - bootinfo (passing info about booted device and kernel symbols)
+ - support "press return to boot now, any other key for boot menu" method
+   like x86 bootloader (needs cnscan() like functions)
+ - tapeboot (anyone wants it?)
 
 OSC2013Nagoya - Luna88K&Luna68K
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -360,8 +392,10 @@ LUNA年表　- 月の刃
  1991/11,モ,MC88110の存在が明らかになる [17]_
  1992/12,オ,LUNA‐88K2 Omron Tech No.32 p.336-344 [16]_
  1992/12,オ,MC88110ワークステーション Omron Tech No.32 p.345-350
+ 1993/9,オ,LUNA2010
  1994, , 4.4BSD Lite luna68K [18]_
  1994,オ,LUNA-IIの生産終了
+ 1994/3,オ,LUNA2010用システム診断プログラムの開発について [80]_
  1998/6, ,NetBSD/luna68k　やってるひと、いますよ。[netbsd 02006] [23]_
  1999/12, ,NetBSD/news68kマージ
  2000/1/6, ,NetBSD/luna68kマージ
@@ -509,6 +543,10 @@ mlterm-fb & tw
 .. [74] ユニマガのluna88k発売の記事。 https://twitter.com/a1kawa/status/360427576717611008
 .. [75] LUNA-88K2 の製品仕様 プロセッサ以外は同じという見方もある https://twitter.com/tsutsuii/status/361463750982778880/photo/1
 .. [76] もうひとつあった。2011年OSC京都 わざわざ2日目に持ってきていただいた超重要LUNAグッズ ペンケースとバンダナ http://movapic.com/ebijun/pic/3812352 たしか、来場者の方の奥様の所有で、「持って行くのはいいけれど絶対に持って返ってくるように」と申し渡された、というお話だったような
+.. [77]  名は体を表す http://ameblo.jp/hirokun39/entry-11345138649.html
+.. [78] LUNA2010 Good Design Award http://www.g-mark.org/award/describe/20641
+.. [79] Omron spins four 88110s at Data General Aviion line http://connection.ebscohost.com/c/articles/9402180800/omron-spins-four-88110s-data-general-aviion-line
+.. [80] システム診断プログラムの開発 LUNA2010用システム診断プログラムの開発について http://jglobal.jst.go.jp/public/20090422/200902172571690192
 
 このページ
 ~~~~~~~~~~~
