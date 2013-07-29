@@ -61,6 +61,7 @@ SX-9100
 LUNA [13]_ 
 ~~~~~~~~~~~~~~~~~~
 #. 1989年発表 MC68030 20MHz
+#. 起動動画 [45]_ [46]_  [38]_
 
 .. csv-table:: シリーズ構成 [65]_
 
@@ -93,7 +94,7 @@ UniOS-B
 UniOS-U 
     UnixAT&TSystemV R2.1をベースに4.2BSDの機能等を付加し、移植したもの。Luna、Luna-IIで稼動。
 UniOS-Σ 
-    ΣOS-VOR1準拠したもの。Luna-Σで稼動。(XXX:Luna-∑という呼び方)
+    ΣOS-VOR1準拠したもの。Luna-Σで稼動。(要出典:Luna-∑という呼び方)　[83]_
 UniOS-Mach 
     Machをベースに移植したもの。Luna-II、Luna-88Kで稼動。 
 
@@ -131,7 +132,9 @@ LUNA88k　[10]_
 #. PC-98用バス対応
 #. OpenBSDはm88kの実機とtoolchainがメンテナンスされている唯一のBSD
 #. 1992/9 「マルチRISCワークステーションLUNA‐88K2 - 33MHz MC88100 CPUを最大4個搭載したマルチRISCワークステーションについて」 [16]_
-#. LUNA88K2との違いは？
+#. 88Kと88K2ではNVRAM/Timekeeperが違う。 [84]_
+#. 起動動画 [30]_ [48]_ [49]_
+#. ユニマガ紹介記事 [74]_ と、製品仕様 [75]_ と、まとめ [71]_
 
 .. csv-table:: シリーズ構成 [73]_
 
@@ -171,7 +174,7 @@ OSCを中心とするイベント駆動開発
 OSC2011Kansai＠kyoto - LUNA復活 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NetBSD/m68k will never die!
- 当日いきなりSun/NEWS/Luna展示 [30]_
+ 当日いきなりSun/NEWS/Luna展示 [31]_
 
  2011/7/16のコミットメッセージ [35]_
 
@@ -244,7 +247,7 @@ OSC2012Kansai＠Kyoto
 
 OSC2013Tokushima
 ~~~~~~~~~~~~~~~~~~~
-#. NetBSDこの20年 [5]_
+#. NetBSDこの20年 [55]_
 #. NetBSD/luna68kブートローダー起動展示 [8]_
 
 ::
@@ -303,7 +306,7 @@ LUNAグッズ
 
 LUNA関連書籍
 ~~~~~~~~~~~~~
-LUNAユーザーグループとは何か - mikutterの薄い本を会場に忘れたら、なぜか一緒に送られてくる
+LUNAユーザーグループとは何か - mikutterの薄い本 [81]_ を会場に忘れたら、なぜか一緒に送られてくる
  UNIXワークステーションがわかる本 [61]_
 
 　@tsutsuii LUNAの薄い本2013作れってことすね [7]_
@@ -318,7 +321,7 @@ Project Mach
 
  *"It's never too late. When it's over, you get to tell the story"* -- Garrison Keillor [67]_
 
-* luna88kカーネルソース [71]_
+* luna88kカーネルソース [72]_
 
 LUNAインストール方法 
 ~~~~~~~~~~~~~~~~~~~~~
@@ -360,15 +363,20 @@ BSD広告条項
 LUNAII
 ~~~~~~~
 #. 1MB SIMM/4MB SIMM切替→SIMM脇に謎ジャンパが
-#. 4bppフレームバッファのX11R5ソースは？
- 
+#. 4bppフレームバッファのX11R5ソースは？ [85]_
+
+UniOS-Machと西暦2000年問題
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ でも、同じマシンでUniOS-Mach立ち上げると時刻が変になる。昔調べたとおりdate(8)コマンドでは2000年以降の日付は設定できないので、OS内部で元々Y2K対応が甘いだけかもしれない。 [82]_ [84]_
+
+
 質問日時:2009/10/28 17:51:08 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  会社でワークステーション（オムロン製LUNAⅡ）を使用していますが、プリンターが不良となりました。エプソンVP-4000です。中古をさがしていますが、これと互換性のあるプリンターはないでしょうか？ [14]_
 
 ----
 
-　「何となく捨てられなくて」
+ もう捨てようかと思う...が、未練があり捨てられず [10]_
 
 ----
 
@@ -383,22 +391,26 @@ LUNA年表　- 月の刃
 .. csv-table:: 
  :widths: 7 3 60
 
- 1987,∑,SX-9100 オムロンから発表
+ 1986/10, , いけない！ルナ先生連載開始
+ 1987,∑,SX-9100 オムロンから発表 [47]_
  1988,オ,グッドデザイン賞受賞 [15]_
+ 1988/7, , いけない!ルナ先生連載終了
  1989,オ,SX-9100/DT LUNA MC68030 20MHz
  1989/3,オ,LUNAのハードウエア Omron Tech No.29 p.8-15 [19]_
  1990/7,オ,Luna88k Omron Tech p.81-92 [20]_
  1991/6,オ,LUNA‐II Omron Tech No.31 p. 91-9 [21]_
  1991/11,モ,MC88110の存在が明らかになる [17]_
  1992/12,オ,LUNA‐88K2 Omron Tech No.32 p.336-344 [16]_
- 1992/12,オ,MC88110ワークステーション Omron Tech No.32 p.345-350
+ 1992/12,オ,MC88110ワークステーション Omron Tech No.32 p.345-350 [18]_
  1993/9,オ,LUNA2010
- 1994, , 4.4BSD Lite luna68K [18]_
+ 1994, , いけない!ルナ先生 復刻版
+ 1994, , 4.4BSD Lite luna68K 
  1994,オ,LUNA-IIの生産終了
  1994/3,オ,LUNA2010用システム診断プログラムの開発について [80]_
  1998/6, ,NetBSD/luna68k　やってるひと、いますよ。[netbsd 02006] [23]_
  1999/12, ,NetBSD/news68kマージ
  2000/1/6, ,NetBSD/luna68kマージ
+ 2000, , いけない!ルナ先生 復刻版
  2000/2/18, ,桝田さんluna68k起動成功 [netbsd 05132] [22]_
  2000/08,青,LUNA-88K2入手
  2001/12,青,LUNAにOpenBSD移植決意
@@ -547,6 +559,11 @@ mlterm-fb & tw
 .. [78] LUNA2010 Good Design Award http://www.g-mark.org/award/describe/20641
 .. [79] Omron spins four 88110s at Data General Aviion line http://connection.ebscohost.com/c/articles/9402180800/omron-spins-four-88110s-data-general-aviion-line
 .. [80] システム診断プログラムの開発 LUNA2010用システム診断プログラムの開発について http://jglobal.jst.go.jp/public/20090422/200902172571690192
+.. [81] mikutterの薄い本製作委員会 http://home1.tigers-net.com/brsywe/mikutter.html
+.. [82] https://twitter.com/ao_kenji/status/360775880198459394/photo/1
+.. [83] Wikipediaの「LUNA-Σ」という呼称は果てしなく要出典という感想。 https://twitter.com/tsutsuii/status/360430992638492672
+.. [84] "RTC" の stamp のオフセットをそれぞれ☓4してやればいいような気がします https://twitter.com/tsutsuii/status/360418015600312320
+.. [85] まずはDIP SW操作してみて変わるかどうか https://twitter.com/tsutsuii/status/360416804876722177
 
 このページ
 ~~~~~~~~~~~
