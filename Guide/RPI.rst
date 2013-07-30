@@ -250,10 +250,15 @@ inode
 
 パーティションサイズをSDカードに合わせる
 --------------------------------------
-  つついさんにスクリプトを作っていただきました。ありがとうございます。
-  Untested sh script that will expand NetBSD partition and BSD FFS partition in the RPI image prepared 
-　　by Jun Ebihara: http://mail-index.netbsd.org/port-arm/2013/06/19/msg001882.html
-	https://gist.github.com/tsutsui/5814498
+  手順は、http://wiki.netbsd.org/ports/evbarm/raspberry_pi/ のGrowing the root file-systemを参考にしてください。
+
+  つついさんにスクリプトを作っていただきました。ありがとうございます。シングルユーザで起動して、スクリプトを実行してください。
+
+::
+
+ Untested sh script that will expand NetBSD partition and BSD FFS partition in the RPI image prepared 
+ by Jun Ebihara: http://mail-index.netbsd.org/port-arm/2013/06/19/msg001882.html
+ https://gist.github.com/tsutsui/5814498
 
 参考URL
 -------
