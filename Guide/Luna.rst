@@ -31,6 +31,9 @@
 .. image:: Picture/2013/06/22/DSC_2130.jpg
  :height: 230
 
+.. image:: Picture/2013/01/27/DSC_1584.jpg
+ :height: 230
+
 LUNA前夜 - 誕生と再生のためのテーマ
 -------------------------------------
  オムロン株式会社が1990年代初めに発売していたワークステーションLUNA。
@@ -380,7 +383,7 @@ UniOS-Machと西暦2000年問題
 
 ----
 
- Sometimes you get so lonely / Sometimes you get nowhere / I've lived all over the world / I've left every place / Please be mine / Share my life / Stay with me / Be my wife [5]_
+ *Sometimes you get so lonely / Sometimes you get nowhere / I've lived all over the world / I've left every place / Please be mine / Share my life / Stay with me / Be my wife* [5]_
 
 LUNA年表　- 月の刃
 -----------------------
@@ -548,7 +551,7 @@ mlterm-fb & tw
 .. [67] "It's never too late. When it's over, you get to tell the story" -- Garrison Keillor  http://www.cs.cmu.edu/afs/cs/project/mach/public/www/mach.html
 .. [68] ピッツバーグ便利帳 サーバーの歴史 http://komachi.sp.cs.cmu.edu/benricho/Komachi#.E3.82.B5.E3.83.BC.E3.83.90.E3.83.BC.E3.81.AE.E6.AD.B4.E5.8F.B2 「1993年、オムロンのワークステーション業務撤退に伴い藤田さんと作業マシン達に突然の引き上げ命令が下りました。」
 .. [69] OpenBSD/luna88k「network bootでIPアドレス取得」(2002/06/05)の頃のページ http://t.co/VRxXgWWpTO
-.. [70] @ebijun 同じく「Miod Vallatさんに見つかる」(2004/03/21)の頃のページ http://t.co/3QmzWm7reR
+.. [70] 同じく「Miod Vallatさんに見つかる」(2004/03/21)の頃のページ http://t.co/3QmzWm7reR
 .. [71] OMRON Luna88Kについてのまとめ http://t.co/rt5kUB74VG 作者も忘れている説
 .. [72] http://www.cs.cmu.edu/afs/cs/project/mach/public/src/mkernel/src/kernel/luna88k/
 .. [73] LUNA-II スペック表というサーベイ漏れ https://t.co/KV9f6XS8bU
