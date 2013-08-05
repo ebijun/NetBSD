@@ -306,6 +306,7 @@ LUNAグッズ
 * たれまく
 * ペンセット [60]_
 * ペンケースとバンダナ [76]_
+* dpNote - 図形グッズ：シール・定規
 
 LUNA関連書籍
 ~~~~~~~~~~~~~
@@ -402,6 +403,7 @@ LUNA年表　- 月の刃
  1989/3,オ,LUNAのハードウエア Omron Tech No.29 p.8-15 [19]_
  1990/7,オ,Luna88k Omron Tech p.81-92 [20]_
  1991/6,オ,LUNA‐II Omron Tech No.31 p. 91-9 [21]_
+ 1991/10/11, ,春奈るなさんの誕生日
  1991/11,モ,MC88110の存在が明らかになる [17]_
  1992/12,オ,LUNA‐88K2 Omron Tech No.32 p.336-344 [16]_
  1992/12,オ,MC88110ワークステーション Omron Tech No.32 p.345-350 [18]_
@@ -568,6 +570,7 @@ mlterm-fb & tw
 .. [84] "RTC" の stamp のオフセットをそれぞれ☓4してやればいいような気がします https://twitter.com/tsutsuii/status/360418015600312320
 .. [85] まずはDIP SW操作してみて変わるかどうか https://twitter.com/tsutsuii/status/360416804876722177
 .. [86] マンガソフトウェア革命―Σプロジェクトの全貌 http://www.amazon.co.jp/dp/4339022543
+.. [87] 仁和寺 http://randen.keifuku.co.jp/map/17.html
 
 このページ
 ~~~~~~~~~~~

@@ -106,6 +106,7 @@ netbsd@re.soum.co.jp
 
 .. csv-table::
 
+ OSC2013京都 NetBSDブース展示の記録 , , Luna+mlterm-fb+mikutter
  OSC2013沖縄 NetBSDブース展示の記録 , 308 view,深町さん ちゃんおぷ
  OSC2013名古屋NBUG&NetBSDブース展示の記録 ,1125 view,Luna88K&Luna68K
  名古屋*BSDユーザグループ(NBUG)2013/5月例会の記録 ,225 view,XM6i 画面スクロールでもNetBSD/x68kスライドショー

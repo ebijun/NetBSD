@@ -19,8 +19,9 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
- .. todo:: 6.99.23で動くかテスト
+ .. todo:: Ontapの液晶で写らない
+ .. todo:: icewmの設定方法を書く
+ .. todo:: btキーボード・マウス
  .. todo:: deforaos-* をテスト
  .. todo:: puppetまたはansibleで設定する
  .. todo:: KOBO起動方法＆テスト
@@ -98,6 +99,7 @@ mikutterを使ってみよう
 * twitterのIDとパスワードを入力すると、pin番号が表示されます。pin番号をmikutterの認証画面に入力します。
 * しばらくすると、mikutterの画面が表示されます。表示されるはずです。落ちてしまう場合は時計が合っているか確認してください。
 * 漢字は[半角/全角]キーを入力すると漢字モードに切り替わります。anthyです。
+* 青い鳥を消したいとき：「mikutter」「青い鳥」でぐぐってください。
 
 キーマップの設定を変更する
 --------------------------

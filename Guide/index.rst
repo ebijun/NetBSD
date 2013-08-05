@@ -35,8 +35,8 @@ Contents:
 
    guide
    pkgsrc
-   Luna
    RPI
+   Luna
    ZAURUS
    WZERO3
    events

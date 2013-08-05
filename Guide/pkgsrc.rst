@@ -19,10 +19,10 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-.. todo:: 漢字変換の設定
-.. todo:: 無線LANの設定
-.. todo:: デスクトップ環境の構築(Gnome/Xfce/icewm)
-.. todo:: OpenOfficeの構築
+.. TODO:: 漢字変換の設定
+.. TODO:: 無線LANの設定
+.. TODO:: デスクトップ環境の構築(Gnome/Xfce/icewm)
+.. TODO:: OpenOfficeの構築
 .. todo:: inkscape/scribusの設定
 .. todo:: プリンタ
 .. todo:: samba
@@ -41,17 +41,18 @@ pkgsrcでソフトウェアをインストールする
 --------------------------------------
 
  pkgsrcを利用すると、さまざまなソフトウェアをコンパイル、インストールすることができます。
-* まずOSをインストールします
-* pkgsrc.tar.gzを展開します
-* 必要なパッケージをコンパイル、インストールします
+
+#. まずOSをインストールします
+#. pkgsrc.tar.gzを展開します
+#. 必要なパッケージをコンパイル、インストールします
 
 ::
 
  tcsh,icewm,kterm,anthy-elisp,ja-less
- openoffice,firefox,gimp
+ openoffice,firefox,gimp ...
 
 pkgsrcをダウンロード
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
  pkgsrcのWebサイトはhttp://www.pkgsrc.org/です。pkgsrcは、一年に4回定期的にリリースされます。
 
 ::
@@ -162,7 +163,7 @@ mikutterと、mikutterをインストールするために必要なソフトウ�
  # make package-install
 
 RaspberryPIで使いそうなソフトを一気にインストールする
-""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 /usr/pkgsrc/ジャンル名を眺めて、使いそうなソフトウェアをリストアップします。
 
 ::
@@ -197,7 +198,7 @@ RaspberryPIで使いそうなソフトを一気にインストールする
 
 
 デスクトップ環境を作ってみる
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 デスクトップ環境の設定:Xfceの場合
 """""""""""""""""""""""""""""""""
@@ -240,6 +241,57 @@ RaspberryPIで使いそうなソフトを一気にインストールする
 
  # cd /usr/pkgsrc/wm/icewm
  # make package-install
+ # which icewm 
+ /usr/pkg/bin/icewm
+ % cd 
+ % ls .xinitrc     ..... .xinitrcがあるかどうか確認します。
+ もし.xinitrcがない場合、以下の手順でコピーします。
+ cp /etc/X11/xinit/xinitrc ~/.xinitrc  ... XXX:上書きしないよう気をつけて！
+ % vi .xinitrc     ..... 最後の5行を書き換えます。
+ twm &
+ xclock -geometry 50x50-1+1 &
+ /usr/X11R7/bin/xterm -geometry 80x50+494+51 &
+ /usr/X11R7/bin/xterm -geometry 80x20+494-0 &
+ exec /usr/X11R7/bin/xterm -geometry 80x66+0+0 -name login
+             ↓
+ xclock -geometry 50x50-1+1 &
+ /usr/X11R7/bin/xterm -geometry 80x50+494+51 &
+ /usr/X11R7/bin/xterm -geometry 80x20+494-0 &
+ /usr/X11R7/bin/xterm -geometry 80x66+0+0 &
+ icewm
+ % startx    ..... icewmが起動します。
+ % cp -r /usr/pkg/share/icewm ~/.icewm  .... メニューをカスタマイズ
+ % vi ~/.icewm/menu
+ prog Kterm Kterm kterm -fk k14 -fn a14 -fr r14 -km euc
+ prog SeaMonkey seamonkey seamonkey
+ prog Mikutter mikutter miutter
+ separator
+ prog Shotwell shotwell shotwell
+ prog GtkPod gtkpod gtkpod 
+ prog Fossil fossil fossil server /usr/local/fossil/my-repo 
+ separator
+ prog OpenOffice soffice soffice
+ prog Acroread acroread9 acroread9
+ separator
+ menuprog Gnome folder icewm-menu-gnome1 --list 
+ menuprog Gnome folder icewm-menu-gnome2 --list 
+ menuprog KDE folder icewm-menu-gnome --list 
+ menufile Emulators folder programs          ... 階層構造
+ menufile Games folder games
+ % vi ~/.icewm/programs          ... .icewmで指定した階層構造
+ # This is an example for IceWM's toolbar definition file.
+ #
+ # Place your variants in /usr/pkg/etc/icewm or in $HOME/.icewm
+ # since modifications to this file will be discarded when you
+ # (re)install icewm.
+ #
+ prog Xnp2 xnp2 xnp2
+ prog XM6i xm6i xm6i
+ prog Minux Minux Minux
+ % vi ~/.icewm/preferences
+         :
+ #  Desktop background image
+ # DesktopBackgroundImage=""    .... 壁紙のイメージをここで設定できます。
 
 ウィンドウマネージャの設定:jwmの場合
 """""""""""""""""""""""""""""""""""""
@@ -319,7 +371,7 @@ emacsを利用する場合は、anthy-elispパッケージをインストール�
  xsetbg ~/Desktop/penguindrum_wp1_1s.jpg
 
 ソフトウェアのコンパイル／インストール
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 gedit
 """"""
@@ -453,7 +505,7 @@ Package - /usr/pkgsrc
 * Make installでソフトウェアのインストール
 
 各CPUアーキテクチャ間で共通
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * mipsel –mips endian little
 * arc – MIPSで動くNTマシン
 * cobalt – Cobalt Qube1/2
@@ -569,7 +621,7 @@ Packageとライセンスの取扱い
   http://d.hatena.ne.jp/obache/20090922/
 
 バイナリ互換性を利用する
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Cobalt　Qube２でhpcmipsバイナリ作成
 * MIPSでendian little =mipsel同士なら動く
