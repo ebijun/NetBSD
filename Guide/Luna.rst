@@ -138,6 +138,7 @@ LUNA88k　[10]_
 #. 88Kと88K2ではNVRAM/Timekeeperが違う。 [84]_
 #. 起動動画 [30]_ [48]_ [49]_
 #. ユニマガ紹介記事 [74]_ と、製品仕様 [75]_ と、まとめ [71]_
+#. miod@openbsd.org さんのOpenBSD/luna88k ページ [90]_
 
 .. csv-table:: シリーズ構成 [73]_
 
@@ -200,6 +201,15 @@ NetBSD/m68k will never die!
  
  Special Thanks to Tadashi Okamura, for providing
  a working SX-9100/DT "LUNA" for this mission.
+
+なぜNetBSD/luna68kなのか
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ LUNAを使っていたわけでもないのになぜNetBSD/luna68kにこだわるのか。それはNetBSDのyamt-kmemブランチマージ作業の際の話にまで遡る。 [91]_ [92]_
+違った yamt-km のほうだった orz  [93]_ [94]_
+yamt-km では hp300由来の m68k pmap でカーネルKVA用のセグメントテーブルをKVAの最上位に移動する必要があった。大部分のm68kではKVA空間上位は空いていたが luna68kだけは 0x40000000以降のデバイスアクセスにTTレジスタを使っていた。 [95]_
+で、hp300由来のpmapのセグメントテーブルとページテーブルの初期化は壮絶に何をやっているのかさっぱりわからない記述になっていて、かつ030と040は別の初期化が必要で、yamt-kmマージ当初はyamtさんがそれなりに書き換えたけれど誰もテストしていなかったわけですよ [96]_
+その後 NetBSD 4.0 が出る前に yamt-km マージで動かなくなっていた atari を修正して、そのあとをm68k全部のpmap初期化をすべて読み解いてそれぞれのpmap_bootstrap.cを初期化意図が読み取れるようにゴリゴリ書きなおしたわけなんですよ [97]_
+実機テストできない機種のソースを4つも5つも書きなおして、1年後に見直すと致命的なtypoがあったりして、誰も持ってないマシンのコードなんか何の意味があるのか消してしまえなどと言われて、でもOSC2011京都で入手したluna68k実機ではそのままのソースで起動した、というお話 [98]_
 
 OSC2011Kansai＠kyotoの波紋
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -363,6 +373,7 @@ BSD広告条項
 #. OMRONワークステーション LUNA-II 電源ユニット修理記 [25]_
 #. 「KOF本番週の日曜日に電源が不調になり急遽部品手配して展示直前に修理していた」
 #. OSC2012京都前に再度補修 [26]_
+#. LUNA-II, LUNA-88K 電源ユニット(PTD573-51) 四級塩電解コンデンサ一覧 [88]_
 
 LUNAII
 ~~~~~~~
@@ -461,6 +472,19 @@ LUNA年表　- 月の刃
 mlterm-fb & tw
 ~~~~~~~~~~~~~~~~~
  ツイッタークライアント！ [39]_ [40]_ [41]_ [42]_ [43]_ [44]_
+
+画像の2値化
+~~~~~~~~~~~
+ モノクロ画面で効率的にデモ画面を作る方法：（サーベイする）
+
+LUNA-88K:NVRAM and Timekeeper registers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ On 'original' LUNA-88K, NVRAM contents and Timekeeper registers are
+mapped on the most significant byte of each 32bit word. (i.e. 4-bytes
+stride)
+Also, add small 'Wrong year set by UniOS-Mach after Y2K' hack. [89]_
+
+
 
 老ハード介護問題
 ~~~~~~~~~~~~~~~~
@@ -571,6 +595,17 @@ mlterm-fb & tw
 .. [85] まずはDIP SW操作してみて変わるかどうか https://twitter.com/tsutsuii/status/360416804876722177
 .. [86] マンガソフトウェア革命―Σプロジェクトの全貌 http://www.amazon.co.jp/dp/4339022543
 .. [87] 仁和寺 http://randen.keifuku.co.jp/map/17.html
+.. [88] https://gist.github.com/tsutsui/6203477 OMRON LUNA-II および LUNA-88K の電源ユニットに使用されている要交換な四級塩電解コンデンサのリスト。
+.. [89] http://marc.info/?l=openbsd-cvs&m=137617369920936
+.. [90] miod@openbsd.org さんのOpenBSD/luna88k resource page http://gentiane.org/~miod/software/openbsd/luna88k/
+.. [91] https://twitter.com/tsutsuii/status/365121355001237505
+.. [92] http://nxr.netbsd.org/xref/src/doc/BRANCHES?r=1.330#623 
+.. [93] https://twitter.com/tsutsuii/status/365121528309891072
+.. [94] http://nxr.netbsd.org/xref/src/doc/BRANCHES?r=1.330#1611 
+.. [95] https://twitter.com/tsutsuii/status/365121928526184448
+.. [96] https://twitter.com/tsutsuii/status/365122443951616001
+.. [97] https://twitter.com/tsutsuii/status/365122859305140225
+.. [98] https://twitter.com/tsutsuii/status/365123833402896384
 
 このページ
 ~~~~~~~~~~~
