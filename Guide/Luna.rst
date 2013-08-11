@@ -126,6 +126,9 @@ LUNAII
 #. ビットマップボード:カラー:2048x1024,4プレーン,4096色中16色同時表示
 #. ビットマップボード:カラー:2048x1024,8プレーン,1670万色中256色同時表示
 
+ 88Kでも88K2でも、hwplanebits(=ROMモニタのワークエリアの値)は、 PW7131(8bpp) → 8 PW7102(4bpp) → 1 となる。 [101]_ [102]_  [103]_
+
+
 LUNA88k　[10]_ 
 ~~~~~~~~~~~~~~~~~
 
@@ -309,6 +312,10 @@ OSC2013Nagoya - Luna88K&Luna68K
 * Luna88K2 & Luna68K プロトタイプ7号機
 * OpenBSD/luna88k開発者あおやまさんによるプレゼンテーション [10]_
 
+OSC2013 Kansai@Kyoto
+~~~~~~~~~~~~~~~~~~~~~~~~~
+ 非力なマシンで最新のOSを動かすためには、大変な努力と工夫が必要です。その展示を実現させた方は、その努力と工夫を楽しんでおられたというわけです。 [100]_
+
 LUNAグッズ
 ~~~~~~~~~~~
 * LUNAグッズ持参でブースに遊びに来てくれる元関係者の方が！
@@ -484,7 +491,10 @@ mapped on the most significant byte of each 32bit word. (i.e. 4-bytes
 stride)
 Also, add small 'Wrong year set by UniOS-Mach after Y2K' hack. [89]_
 
-
+LUNA88K謎ボード
+~~~~~~~~~~~~~~~~~
+* PWB7183 [99]_
+* 専用チップが載っている　[102]_
 
 老ハード介護問題
 ~~~~~~~~~~~~~~~~
@@ -606,6 +616,11 @@ Also, add small 'Wrong year set by UniOS-Mach after Y2K' hack. [89]_
 .. [96] https://twitter.com/tsutsuii/status/365122443951616001
 .. [97] https://twitter.com/tsutsuii/status/365122859305140225
 .. [98] https://twitter.com/tsutsuii/status/365123833402896384
+.. [99] https://twitter.com/ao_kenji/status/366154076565680128/photo/1
+.. [100] 20年前のコンピュータで最新のOSを動かす意味とは？ http://notredameningen.kyo2.jp/e422862.html
+.. [101] 88Kと88K2のグラフィックボードを交換して調査。 https://twitter.com/ao_kenji/status/366066990093303809
+.. [102] 専用のゲートアレイでしょうか。https://twitter.com/ao_kenji/status/366056571609939968
+.. [103] PWB7102  https://twitter.com/ao_kenji/status/366009479285854208
 
 このページ
 ~~~~~~~~~~~
