@@ -26,7 +26,13 @@ import sys, os
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 #extensions = ['sphinxjp.themecore','rst2pdf.pdfbuilder']
-extensions = ['sphinx.ext.autodoc', 'rst2pdf.pdfbuilder']
+#extensions = ['sphinx.ext.autodoc', 'rst2pdf.pdfbuilder']
+# http://blockdiag.com/ja/blockdiag/sphinxcontrib.html
+# easy_install sphinxcontrib-blockdiag
+# easy_install sphinxjp.themes.s6
+# easy_install sphinxjp.themescore
+# easy_install sphinxjp.themes.htmlslide
+extensions = ['sphinxjp.themecore']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -83,7 +89,7 @@ exclude_patterns = ['_build']
 
 # The name of the Pygments (syntax highlighting) style to use.
 #pygments_style = 'bw'
-pygments_style = 'sphinx'
+pygments_style = 'monokai'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -94,6 +100,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = 'default'
+#html_theme = 'htmlslide'
 #html_theme = 'nature'
 #html_theme = 's6'
 
@@ -150,6 +157,7 @@ html_last_updated_fmt = '%b %d, %Y'
 
 # If false, no index is generated.
 #html_use_index = True
+html_use_index = False
 
 # If true, the index is split into individual pages for each letter.
 #html_split_index = False

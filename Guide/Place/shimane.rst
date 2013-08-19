@@ -21,22 +21,25 @@
 
 .. イメージファイルは圧縮すること
 
-OSC2013島根の発表全部をNetBSDで動かしてみる
-----------------------------------------------
- OSとしてできることを考える。この場所である発表をどこまでサポートできるか。サポートできないのはどこに問題があるのか考えたい。
+
 
 NetBSD
-~~~~~~~~
+--------
  NetBSDは１個のソースツリーをコンパイルすることで実行イメージを作ることができます。
 
 ソースコードから作る
 """"""""""""""""""""
+ tar 形式のファイルをダウンロード＆展開し、build.shというスクリプトでコンパイルすると、NetBSDの実行イメージができます。
+
+ このtarファイルの中には、これまでNetBSDがサポートしてきた50種類以上のハードウェアと、無数の周辺機器の仕様が含まれています。しかもコンパイルすると、実際にハードウェア上でNetBSDが動作します。
+
+ NetBSDのコンパイルはNetBSDでも、NetBSDではないOSでも、どのハードウェアでも、ほぼ同じ手順でコンパイルできます。（できるはずです）
 
 ::
 
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/tar_files/src.tar.gz
  # tar xzvf src.tar.gz
- # ./build.sh -U -m i386 release     .... -U:root以外で作成,i386向け
+ # ./build.sh -U -m i386 release     .... -U:root以外で作成,この場合i386向け
 
 Xを含んだシステムを作る
 """""""""""""""""""""""""
@@ -58,27 +61,40 @@ CD-ROMイメージを作る
 pkgsrc - ソースコードからソフトウェアを作る
 """"""""""""""""""""""""""""""""""""""""""""
 
+ tar 形式のファイルをダウンロード＆展開し、*ソフトウェアのジャンル/ソフトウェア名* 以下のディレクトリでmakeコマンドを実行すると、10000種類以上のソフトウェアをコンパイル・インストールすることができます。
+
+ このtarファイルの中には、10000種類以上のソフトウエアをコンパイルし、インストールする方法が含まれています。しかもコンパイルすると、実際にそのソフトウェアを動かすこともできます。ソフトウェアのインストールはNetBSDでも、NetBSDではないOSでも、ほぼ同じ手順でコンパイル・インストールできます。（できるはずです）
+
 ::
 
  # cd /usr
  # ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/tar_files/pkgsrc.tar.gz
  # tar xzvf pkgsrc.tar.gz
+ (# cd /usr/pkgsrc/bootstrap;# ./bootstrap) .. NetBSD以外のOSで実行する
+ # cd /usr/pkgsrc/net/mikutter
+ # make package-install
 
 ソースコードの更新
-"""""""""""""""""
+"""""""""""""""""""""
 
 ::
 
  http://cvsweb.netbsd.org/
  # cd src
- # cvs update -PAd                ... 最新に更新
- # cvs update -Pd -r NetBSD-6.1   ... NetBSD6.1
+ # cvs update -PAd                 ... 最新に更新
+ # cvs update -Pd -r netbsd-6      ... NetBSD6.1.1
  # cd pkgsrc
- # cvs update -PAd                ... 最新に更新
- # cvs update -Pd -r 2013Q2       ... 2013Q2に更新
+ # cvs update -PAd                 ... 最新に更新
+ # cvs update -Pd -r pkgsrc-2013Q2 ... 2013Q2に更新
+
+OSC2013島根の発表全部をNetBSDで動かしてみる
+----------------------------------------------
+
+ 次に、OSとしてできることを考えます。この場所である発表をどこまでサポートできるか、サポートできないのはどこに問題があるのか考えてみます。
 
 Ruby+4DDAM
-~~~~~~~~~~~~~~~
+"""""""""""""""
+
 4DDAM
  商用。
 Ruby
@@ -92,10 +108,10 @@ Ruby
  /usr/pkg/bin/ruby
 
 nanoc+github
-~~~~~~~~~~~~~~~~
+""""""""""""""""
 
 nanoc
-"""""""
+~~~~~~~
 
 ::
 
@@ -103,7 +119,7 @@ nanoc
  # gem install nanoc 
 
 github
-"""""""""
+"""""""""""
 
 ::
 
@@ -113,7 +129,7 @@ github
  /usr/pkg/bin/git
 
 redmine
-~~~~~~~~~
+""""""""""
 
 ::
 
@@ -128,7 +144,7 @@ redmine
  # man sqlite3
 
 net commons
-~~~~~~~~~~~~~~~
+"""""""""""""""
 
 ::
 
@@ -172,7 +188,7 @@ net commons
  make package-install
 
 SSL設定
-~~~~~~~~~
+""""""""""
 
 ::
 
@@ -185,7 +201,7 @@ SSL設定
  Include etc/httpd/httpd-ssl.conf  ... コメントはずす
  
 AmazonEC2
-~~~~~~~~~~~~
+""""""""""""""
 
 ::
 
@@ -194,8 +210,9 @@ AmazonEC2
  ami-1b3fb11a
 
 ADempiere
-~~~~~~~~~~~~
+""""""""""""""
 
+ これは何ができていればいいんでしょ？
 ::
 
  http://sourceforge.jp/projects/adempiere/
@@ -204,7 +221,9 @@ ADempiere
  # postgresql
 
 baserCMS
-~~~~~~~~~~~
+""""""""""""
+
+ 典型的なCMSは、この手順でインストールできます。
 
 ::
 
@@ -236,7 +255,7 @@ baserCMS
  管理者のアカウントとパスワードがメールで飛んでくる！！
 
 OpenOffice.org/LibreOffice
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""
 
 ::
 
@@ -250,7 +269,7 @@ OpenOffice.org/LibreOffice
  libreofficeで漢字が入力できない 
 
 sphinx
-~~~~~~~~
+"""""""""
 
 ::
 
@@ -264,7 +283,7 @@ sphinx
  # /etc/rc.d/httpd onestart
 
 firefox
-~~~~~~~~~~~~
+""""""""""
 
 ::
 
@@ -272,9 +291,11 @@ firefox
  # make package-install
  # cd /usr/pkgsrc/www/firefox-l10n
  # make package-install
+ # cd /usr/pkgsrc/multimedia/adobe-flash-plugin11
+ # make package-install
 
 gedit
-~~~~~~~~
+""""""""
 
 ::
 
@@ -282,7 +303,7 @@ gedit
  # make package-install
 
 icewm
-~~~~~~~~~
+"""""""""
 
 ::
 
@@ -290,7 +311,7 @@ icewm
  # make package-install
 
 漢字入力
-~~~~~~~~
+""""""""""
 
 ::
 
@@ -310,7 +331,7 @@ icewm
  export QT_IM_MODULE="ibus"
 
 emacs
-~~~~~~~~
+"""""""""
 
 ::
 
@@ -324,7 +345,7 @@ emacs
  (setq default-input-method "japanese-mozc")
 
 gnome/xfce
-~~~~~~~~~~~~~
+""""""""""""
 
 ::
 
@@ -332,6 +353,46 @@ gnome/xfce
  # make package-install
  # cd /usr/pkgsrc/meta-pkgs/xfce4
  # make package-install
+
+ライセンスを許可する
+"""""""""""""""""""
+
+ pkgsrcに含まれるソフトウェアのライセンスを見てみましょう。
+
+::
+
+ % cd /usr/pkgsrc/licenses
+ % ls |wc -l
+ 205 
+ % ls |head
+ % ls |head
+ 2-clause-bsd
+ 3proxy-0.5-license
+ CVS
+ acm-license
+ adobe-acrobat-license
+ adobe-flashsupport-license
+ amap-license
+ amaya-license
+ amazon-software-license
+ amiwm-license
+    :
+
+ 特定のライセンスを持つソフトウェアのインストールを許可する・許可しないよう、/etc/mk.confファイルで定義できます。
+
+::
+
+ % grep ACCEPTABLE /etc/mk.conf |head
+ ACCEPTABLE_LICENSES+= ruby-license
+ ACCEPTABLE_LICENSES+= xv-license
+ ACCEPTABLE_LICENSES+= mplayer-codec-license
+ ACCEPTABLE_LICENSES+= flash-license
+ ACCEPTABLE_LICENSES+= adobe-acrobat-license
+ ACCEPTABLE_LICENSES+= adobe-flashsupport-license
+ ACCEPTABLE_LICENSES+= skype-license
+ ACCEPTABLE_LICENSES+= lha-license
+ ACCEPTABLE_LICENSES+= opera-eula
+ ACCEPTABLE_LICENSES+= lame-license
 
 pkgsrc/packages
 """"""""""""""""""
@@ -353,7 +414,7 @@ pkgsrc/packages
  # pkg_del gedit                 ... 削除
 
 pkgsrcに何か追加したい
-~~~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""
 
 ::
 
@@ -371,7 +432,7 @@ pkgsrcに何か追加したい
 ----
 
 ベニヤ模型
-~~~~~~~~~~
+""""""""""""
  京町商店街の老舗模型店。
  http://www5a.biglobe.ne.jp/~beniya-rm
 

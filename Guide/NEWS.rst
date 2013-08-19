@@ -43,9 +43,15 @@ NetBSD/news68k
 NEWS年表　
 ------------
 
+椿:椿井さん,
+
 .. csv-table:: 
  :widths: 7 3 60
 
+ 1998/2/18,椿 ,Initial import of NetBSD/news　[17]_
+ 1998/3/4,椿, This is to facilitate an eventual NetBSD/news68k. [19]_
+ 1998/3/4,椿, Rename NetBSD/news to NetBSD/newsmips.  [18]_
+ 1998/12/1?,椿,NetBSD/newsmips 移植ページ [16]_
  1999/5/6, , 筒井さんがNEWS入手
 
 
@@ -71,4 +77,12 @@ NEWS年表　
 .. [13] NWS-3410のLocalDISKからのBoot http://www3.videa.or.jp/NEWS/nws34-boot.html
 .. [14] さてこの山の中からNEWS探すか http://twitpic.com/d7ilby
 .. [15] NEWS関連資料を探したところ http://twitpic.com/d7igfh
+.. [16] SONY NEWS3400 で NetBSD をうごかしてみました。 http://web.archive.org/web/19981201205111/http://nandra.iri.co.jp/NetBSD/newsmips-jp.html
+.. [17] Initial import http://mail-index.netbsd.org/source-changes/1998/02/18/0015.html
+.. [18] Rename NetBSD/news to NetBSD/newsmips. http://mail-index.netbsd.org/source-changes/1998/03/04/0019.html
+.. [19] This is to facilitate an eventual NetBSD/news68k port. http://mail-index.netbsd.org/port-mips/1998/03/04/0000.html
+.. [20] NetBSD/news68k への道 http://www.ceres.dti.ne.jp/tsutsui/netbsd/port-news68k.html
+.. [21] Hellooooo Nurse! http://mail-index.netbsd.org/current-users/1997/10/16/0012.html
+.. [22] Because NEWS3400 is BIG-ENDIAN http://mail-index.netbsd.org/netbsd-bugs/1997/10/16/0001.html
+.. [23] やっぱり NetBSD/news もちゃんとしたほうがいいでしょうかねえ。 http://www.re.soum.co.jp/~fukaumi/ml/netbsd/199710/msg00026.html
 

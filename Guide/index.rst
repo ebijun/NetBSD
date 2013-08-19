@@ -33,9 +33,10 @@ Contents:
    :maxdepth: 2
    :numbered:
 
-   guide
-   pkgsrc
+   Place/shimane
    RPI
+   pkgsrc
+   guide
    Luna
    ZAURUS
    WZERO3

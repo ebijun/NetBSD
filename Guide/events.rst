@@ -106,38 +106,40 @@ netbsd@re.soum.co.jp
 
 .. csv-table::
 
- OSC2013京都 NetBSDブース展示の記録 , , Luna+mlterm-fb+mikutter
- OSC2013沖縄 NetBSDブース展示の記録 , 308 view,深町さん ちゃんおぷ
- OSC2013名古屋NBUG&NetBSDブース展示の記録 ,1125 view,Luna88K&Luna68K
- 名古屋*BSDユーザグループ(NBUG)2013/5月例会の記録 ,225 view,XM6i 画面スクロールでもNetBSD/x68kスライドショー
- NetBSDでuARM, 800 view, uARM
- 名古屋*BSDユーザグループ(NBUG)2013/4月例会の記録 ,363 view,send-prしてみた
- 名古屋*BSDユーザグループ(NBUG)2013 花見の記録 ,307 view ,BSD鍋
- 名古屋*BSDユーザグループ(NBUG)2013/3月例会の記録, 416 view,JAIST合格記念発表
- NetBSD/sparcをQEMUで動かす会の記録, 734 view,QEMU/sparc
- AsiaBSDCon 2013の記録 ,1282 view,KOBO全部くれ攻撃
- OSC2013徳島 NetBSDブース展示の記録 ,768 view,丹下桜様にNetBSDブース&mikutterご紹介
- OSC2013 東京春 NetBSDブース展示の記録 ,752 view,ubootする黄旗ZAURUS
- 名古屋*BSDユーザグループ(NBUG)2013/2月例会の記録,374 view,luna68kと88kとbigNEWSが
- OSC2013 浜松 NetBSDブース展示の記録,472 view,NetBSD/RPI
- 名古屋*BSDユーザグループ(NBUG)2013/1月例会の記録,451 view,ておくれ6.0.1+mikutter 0.2.1
- 名古屋*BSDユーザグループ(NBUG)2012/12月例会の記録,487 view,薩摩で焼肉忘年会
- OSC2012 福岡 NetBSDブース展示の記録,700 view,Doc-Ja&NetWalker+mikutter
- 名古屋*BSDユーザグループ(NBUG)2012/11月例会の記録,879 view,NetWalker+mikutter
- 関西オープンソース2012 NetBSDブース展示の記録,925 view,XM6i
- OSC2012 会津 NetBSDブース展示の記録,1761 view,mikutterシール評議会開催
- OSC2012 大分秋 NetBSDブース展示の記録,600 view,KOBO&OpenBlocks
- OSC2012 広島 NetBSDブース展示の記録,2951 view,all that X68000!
- 名古屋*BSDユーザグループ(NBUG)2012/10月例会の記録,427 view,RPI来る
- 名古屋*BSDユーザグループ(NBUG)2012/9 例会の記録,466 view,納屋橋夜イチ
- OSC2012沖縄 NetBSDブース展示の記録,399 view,NetBSD/i386 6.0_RC2ておくれ,XM6iシンセ
- OSC2012 東京秋 NetBSDブース展示の記録,1675 view,OpenBlocksA6&KOBO
- OSC2012 島根 NetBSDブース展示の記録,864 view,ておくれへようこそ 6.0_RC1
- 名古屋*BSDユーザグループ(NBUG)2012/8 例会の記録,655 view,XCAST rubyライブラリ
- OSC2012 京都 NetBSDブース展示の記録,2419 view,NetBSD/luna68k LUNAII
- 名古屋*BSDユーザグループ(NBUG)2012/7 例会の記録,1357 view,FreeBSD XCAST
- OSC2012 仙台 NetBSDブース展示の記録,616 view,NetBSD/RPI
- 日本NetBSDユーザーグループ第十四回定期総会 および NetBSD BoF 2012,893 view,epoc32
+ OSC2013京都 NetBSDブース展示の記録 ,1381 view , Luna+mlterm-fb+mikutter
+ 名古屋*BSDユーザグループ(NBUG)2013/7月例会の記録 ,255 view,
+ 日本NetBSDユーザーグループ第十五回定期総会,546 view,NetBSD BOF
+ OSC2013沖縄 NetBSDブース展示の記録 , 546 view,深町さん ちゃんおぷ
+ OSC2013名古屋NBUG&NetBSDブース展示の記録 ,1290 view,Luna88K&Luna68K
+ 名古屋*BSDユーザグループ(NBUG)2013/5月例会の記録 ,277 view,XM6i 画面スクロールでもNetBSD/x68kスライドショー
+ NetBSDでuARM, 846 view, uARM
+ 名古屋*BSDユーザグループ(NBUG)2013/4月例会の記録 ,395 view,send-prしてみた
+ 名古屋*BSDユーザグループ(NBUG)2013 花見の記録 ,338 view ,BSD鍋
+ 名古屋*BSDユーザグループ(NBUG)2013/3月例会の記録, 441 view,JAIST合格記念発表
+ NetBSD/sparcをQEMUで動かす会の記録, 766 view,QEMU/sparc
+ AsiaBSDCon 2013の記録 ,1353 view,KOBO全部くれ攻撃
+ OSC2013徳島 NetBSDブース展示の記録 ,837 view,丹下桜様にNetBSDブース&mikutterご紹介
+ OSC2013 東京春 NetBSDブース展示の記録 ,804 view,ubootする黄旗ZAURUS
+ 名古屋*BSDユーザグループ(NBUG)2013/2月例会の記録,393 view,luna68kと88kとbigNEWSが
+ OSC2013 浜松 NetBSDブース展示の記録,525 view,NetBSD/RPI
+ 名古屋*BSDユーザグループ(NBUG)2013/1月例会の記録,474 view,ておくれ6.0.1+mikutter 0.2.1
+ 名古屋*BSDユーザグループ(NBUG)2012/12月例会の記録,503 view,薩摩で焼肉忘年会
+ OSC2012 福岡 NetBSDブース展示の記録,729 view,Doc-Ja&NetWalker+mikutter
+ 名古屋*BSDユーザグループ(NBUG)2012/11月例会の記録,896 view,NetWalker+mikutter
+ 関西オープンソース2012 NetBSDブース展示の記録,945 view,XM6i
+ OSC2012 会津 NetBSDブース展示の記録,1772 view,mikutterシール評議会開催
+ OSC2012 大分秋 NetBSDブース展示の記録,613 view,KOBO&OpenBlocks
+ OSC2012 広島 NetBSDブース展示の記録,3076 view,all that X68000!
+ 名古屋*BSDユーザグループ(NBUG)2012/10月例会の記録,435 view,RPI来る
+ 名古屋*BSDユーザグループ(NBUG)2012/9 例会の記録,474 view,納屋橋夜イチ
+ OSC2012沖縄 NetBSDブース展示の記録,411 view,NetBSD/i386 6.0_RC2ておくれ,XM6iシンセ
+ OSC2012 東京秋 NetBSDブース展示の記録,1742 view,OpenBlocksA6&KOBO
+ OSC2012 島根 NetBSDブース展示の記録,926 view,ておくれへようこそ 6.0_RC1
+ 名古屋*BSDユーザグループ(NBUG)2012/8 例会の記録,669 view,XCAST rubyライブラリ
+ OSC2012 京都 NetBSDブース展示の記録,2501 view,NetBSD/luna68k LUNAII
+ 名古屋*BSDユーザグループ(NBUG)2012/7 例会の記録,1369 view,FreeBSD XCAST
+ OSC2012 仙台 NetBSDブース展示の記録,634 view,NetBSD/RPI
+ 日本NetBSDユーザーグループ第十四回定期総会 および NetBSD BoF 2012,951 view,epoc32
 
 
 
