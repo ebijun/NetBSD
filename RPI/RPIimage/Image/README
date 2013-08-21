@@ -1,15 +1,98 @@
-To set HDMI output,add "console=fb" on cmdline.txt.
-rpi$ more /boot/cmdline.txt
-root=ld0a console=fb
+    To: port-armNetBSD.org@localhost
+    Subject: 2013-08-21-netbsd-raspi.img (Re: Raspberry Pi update please.)
 
-Packages:
-misc/raspberrypi-userland:
-webkit
-midori
+I've updated 2013-08-21-netbsd-raspi.img.gz for RPI.
+
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-21-evbearmv6hf-el/2013-08-21-netbsd-raspi.img.gz
+
+Update:
+- NetBSD-current 6.99.23+pkgsrc-current 
+- Move to hardfloat: build with evbearmv6hf-el
+ softfloat: 2013-07-30-netbsd-raspi.img.gz  evbarm 
+ hardfloat: 2013-08-21-netbsd-raspi.img.gz  evbearmv6hf-el
+
+Todo:
+- More Migration test for hardfloat: userland and pkgsrc
+- benchmarking
+- Check KOBO,Netwalker,beagleboard. (contain KOBO kernel on /boot)
+- need more good web browser.(compiling webkit...)
+  test midori.
+- test deforaos. : 
+  package compile failed on x11/xterm ?
+- Xfce?
+
+=====================
+
+For OpenSourceConference 2013 Shimane
+ (https://www.facebook.com/events/118791281644643/)
+demonstration use, I've updated raspberry-pi image.
+
+- NetBSD 6.99.23 evbearmv6hf-el rpi.img.gz base
+- Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
+- login root (no passwd)
+- startx ,and icewm running.
+  twitter client (net/mikutter) on 40inch home TV.
+  http://movapic.com/pic/2013061822184751c05e37e612e
+- running mikutter.
+  # startx
+  # dillo &
+  # mikutter &
+  copy twitter auth URL and paste into dillo URL bar.
+  -> get pin number.
+  -> paste pin number to mikutter
+  ==== one or two or threee moment =====
+  Get your twitter timeline with your family!
+
+Features:
+  - fit size for 2GB SD Card
+  - with X11
+  - increase more inodes on /dev/ld0a
+  - Recent current RPI kernel
+  - USB/video support: as -current (video needs more tests)
+  - pkgsrc: 2013-08-21 tree inside.
+  - pre-build packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-21-evbearmv6hf-el/packages
+
+Installed Packages:
+kterm
+tcsh
+vlgothic-ttf
+icewm
+xli
+mikutter
+uim
+fossil
+raspberrypi-userland
+sudo
+scmgit-base
+zsh
+dillo
+
+To set HDMI output,add "console=fb" on cmdline.txt.
+ rpi$ more /boot/cmdline.txt
+ root=ld0a console=fb
+
+Keyboard layout checkpoint:
+/etc/wscons.conf
+ #encoding sv
+ #encoding us.swapctrlcaps
+ encoding jp
+
+/root/.xinitrc
+ setxkbmap -layout jp
+
+Build sample script:
+ https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image
+
+Guide:
+ https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
 
 Fixed:
-pkg/48128: icewm build broken on 6.99.23
+ pkg/48128: icewm build broken on 6.99.23
 
 Need Fix:
-port-evbarm/48132: devel/tradcpp build broken on evbearmv6hf-el 6.99.23
+ port-evbarm/48132: devel/tradcpp build broken on evbearmv6hf-el 6.99.23
  s/-msoft-float/-marm -mthumb-interwork  -mfloat-abi=hard -mhard-float/
+
+--
+Jun Ebihara

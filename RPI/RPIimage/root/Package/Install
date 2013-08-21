@@ -1,5 +1,5 @@
 for i in `grep -v \# List`
 do
 	echo $i
-	pkg_add http://teokurebsd.org/netbsd/packages/arm/6.1_2013Q1/All/$i
+	pkg_add ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-21-evbearmv6hf-el/packages/$i
 done
