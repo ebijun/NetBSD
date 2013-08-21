@@ -1,0 +1,5 @@
+#
+foreach a (`cat ../root/Package/List`)
+	ls  /usr/release/earm/packages/All/${a}*
+	pkg_add -P /mnt -m earm /usr/release/earm/packages/All/${a}*
+end
