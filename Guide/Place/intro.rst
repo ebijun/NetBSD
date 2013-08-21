@@ -21,14 +21,43 @@
 
 .. イメージファイルは圧縮すること
 
+BSDライセンス
+-------------
 
+2 条項 BSD ライセンス
+~~~~~~~~~~~~~~~~~~~~~
+ http://www.jp.NetBSD.org/ja/about/redistribution.html
+ 
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 
+ 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+2条項BSDライセンス(訳)
+~~~~~~~~~~~~~~~~~~~~~~
+ http://www.jp.NetBSD.org/ja/about/redistribution.html
+
+ ソースおよびバイナリー形式の再配布および使用を、変更の有無にかかわらず、
+ 以下の条件を満たす場合に認める:
+ 
+ 1. ソースコードの再配布においては、上記の著作権表示、この条件の列挙、下記の注意書きを残すこと。
+ 2. バイナリー形式の再配布においては、上記の著作権表示、この条件の列挙、下記の注意書きを、
+    配布物に附属した文書および/または他のものに再現させること。
+ 
+ このライセンスの前には著作権表示そのものが付きます。この後には注意書きが付き、このソフトウェアに関して問題が生じても、作者は責任を負わないと述べます。 
+
+BSDライセンスとNetBSD
+~~~~~~~~~~~~~~~~~~~~~~
+ NetBSDのソースコードを自由に売ることができます。 NetBSDのソースコードから作ったバイナリを売ることもできます。バイナリのソースコードを公開する義務はありません。
 
 NetBSD
 --------
  NetBSDは１個のソースツリーをコンパイルすることで実行イメージを作ることができます。
 
 ソースコードから作る
-""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~
  tar 形式のファイルをダウンロード＆展開し、build.shというスクリプトでコンパイルすると、NetBSDの実行イメージができます。
 
  このtarファイルの中には、これまでNetBSDがサポートしてきた50種類以上のハードウェアと、無数の周辺機器の仕様が含まれています。しかもコンパイルすると、実際にハードウェア上でNetBSDが動作します。
@@ -42,7 +71,7 @@ NetBSD
  # ./build.sh -U -m i386 release     .... -U:root以外で作成,この場合i386向け
 
 Xを含んだシステムを作る
-"""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -52,14 +81,14 @@ Xを含んだシステムを作る
  # ./build.sh -u -U -m i386 -x -X ../xsrc release ... -u:更新,-xX Xも作る
 
 CD-ROMイメージを作る
-"""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~
 
 ::
 
  # ./build.sh -m i386 iso-image　　　... CD-ROMイメージ作成
 
 pkgsrc - ソースコードからソフトウェアを作る
-""""""""""""""""""""""""""""""""""""""""""""
+-------------------------------------------
 
  tar 形式のファイルをダウンロード＆展開し、*ソフトウェアのジャンル/ソフトウェア名* 以下のディレクトリでmakeコマンドを実行すると、10000種類以上のソフトウェアをコンパイル・インストールすることができます。
 
@@ -75,7 +104,7 @@ pkgsrc - ソースコードからソフトウェアを作る
  # make package-install
 
 ソースコードの更新
-"""""""""""""""""""""
+--------------------
 
 ::
 

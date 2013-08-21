@@ -33,7 +33,9 @@ Contents:
    :maxdepth: 2
    :numbered:
 
+   Place/intro
    Place/shimane
+   NEWS
    RPI
    pkgsrc
    guide

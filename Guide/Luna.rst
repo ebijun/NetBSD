@@ -621,7 +621,7 @@ LUNA88K謎ボード
 .. [101] 88Kと88K2のグラフィックボードを交換して調査。 https://twitter.com/ao_kenji/status/366066990093303809
 .. [102] 専用のゲートアレイでしょうか。https://twitter.com/ao_kenji/status/366056571609939968
 .. [103] PWB7102  https://twitter.com/ao_kenji/status/366009479285854208
-
+.. [104]  UniOS-Machを参考に1bpp/4bpp/8bppを自前で識別するようにした。 https://twitter.com/ao_kenji/status/368294458996948992
 このページ
 ~~~~~~~~~~~
 * https://github.com/ebijun/NetBSD/blob/master/Guide/Luna.rst にあります。
