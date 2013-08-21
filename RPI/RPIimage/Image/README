@@ -1,0 +1,15 @@
+To set HDMI output,add "console=fb" on cmdline.txt.
+rpi$ more /boot/cmdline.txt
+root=ld0a console=fb
+
+Packages:
+misc/raspberrypi-userland:
+webkit
+midori
+
+Fixed:
+pkg/48128: icewm build broken on 6.99.23
+
+Need Fix:
+port-evbarm/48132: devel/tradcpp build broken on evbearmv6hf-el 6.99.23
+ s/-msoft-float/-marm -mthumb-interwork  -mfloat-abi=hard -mhard-float/
