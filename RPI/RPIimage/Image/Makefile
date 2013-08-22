@@ -11,7 +11,8 @@ SETS=/usr/release/earm/evbarm/binary/sets
 RPI=/usr/release/earm/evbarm/binary/gzimg/rpi.img
 
 # extract sets.
-LIST=games man misc modules tests text xbase xcomp xetc xfont xserver
+#LIST=man misc modules tests text xbase xcomp xetc xfont xserver
+LIST=man modules text xbase xcomp xetc xfont xserver
 
 # mount point
 MNT=/mnt
@@ -64,6 +65,8 @@ pkg:
 	mount /dev/${VND}a ${MNT}
 	echo rc_configured=YES >> ${MNT}/etc/rc.conf
 	echo sshd=NO           >> ${MNT}/etc/rc.conf
+	echo syslogd=NO           >> ${MNT}/etc/rc.conf
+	echo dhcpcd=NO           >> ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
