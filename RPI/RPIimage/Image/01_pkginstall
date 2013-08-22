@@ -1,5 +1,21 @@
 #
-foreach a (`cat ../root/Package/List`)
-	ls  /usr/release/earm/packages/All/${a}*
-	pkg_add -P /mnt -m earm /usr/release/earm/packages/All/${a}*
-end
+# XXX this method still fail
+#foreach a (`cat ../root/Package/List`)
+#	ls  /usr/release/earm/packages/All/${a}*
+#	pkg_add -P /mnt -m earm /usr/release/earm/packages/All/${a}*
+#end
+#first: vnconfig vnd0 imgfile
+mount /dev/vnd0a /mnt
+cat << EOF >> /mnt/etc/rc.conf
+rc_configured=YES
+sshd=NO
+dhcpcd=NO
+wscons=YES
+ntpdate=NO
+ntpd=NO
+postfix=NO
+devpubd=YES
+EOF
+umount /mnt
+vnconfig -u vnd0
+

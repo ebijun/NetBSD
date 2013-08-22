@@ -1,3 +1,8 @@
+mount /dev/vnd0a /mnt
+mount_msdos /dev/vnd0e /mnt/boot
 cd ..
-tar cvpf - etc root |(cd /mnt;tar xvpf -)
+tar cvpf - etc root boot |(cd /mnt;tar xvpf -)
 tar cvpf - Oshimaya |(cd /mnt/root;tar xvpf -)
+umount /mnt/boot
+mount /dev/vnd0a /mnt
+vnconfig -u vnd0
