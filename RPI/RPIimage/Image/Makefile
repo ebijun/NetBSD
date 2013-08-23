@@ -73,10 +73,10 @@ pkg:
 # copy default setupfile
 release:
 	vnconfig ${VND} ${FILE}
-	fsck -fy /dev/r${VND}a
+	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
-	(cd ..; tar cvpf - etc root boot) |(cd /mnt;tar xvpf -)
+	(cd ..; tar cvpf - etc root ) |(cd /mnt;tar xvpf -)
 	(cd ..; tar cvpf - Oshimaya) |(cd /mnt/root;tar xvpf -)
 	umount ${MNT}/boot
 	umount ${MNT}
