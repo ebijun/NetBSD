@@ -1,15 +1,15 @@
     To: port-armNetBSD.org@localhost
-    Subject: 2013-08-21-netbsd-raspi.img (Re: Raspberry Pi update please.)
+    Subject: 2013-08-23-netbsd-raspi.img (Re: Raspberry Pi update please.)
 
-I've updated 2013-08-21-netbsd-raspi.img.gz for RPI.
+I've updated 2013-08-23-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-21-evbearmv6hf-el/2013-08-21-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/2013-08-23-netbsd-raspi.img.gz
 
 Update:
 - NetBSD-current 6.99.23+pkgsrc-current 
 - Move to hardfloat: build with evbearmv6hf-el
  softfloat: 2013-07-30-netbsd-raspi.img.gz  evbarm 
- hardfloat: 2013-08-21-netbsd-raspi.img.gz  evbearmv6hf-el
+ hardfloat: 2013-08-23-netbsd-raspi.img.gz  evbearmv6hf-el
 
 Todo:
 - More Migration test for hardfloat: userland and pkgsrc
@@ -51,7 +51,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2013-08-21 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-21-evbearmv6hf-el/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/packages
 
 Installed Packages:
 kterm
