@@ -116,6 +116,8 @@ mikutterを使ってみよう
 
 	setxkbmap -layout jp -option ctrl:swapcap
 
+* 106キーでのキーマップ
+ 右下のキー入力が一部おかしいものがあります。調べています。
 
 コンパイル済パッケージをインストールする
 --------------------------------------------------
@@ -132,8 +134,8 @@ mikutterを使ってみよう
 
 ::
 
-　# export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/packages
-　# pkg_add zsh
+ # export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/packages
+ # pkg_add zsh
 
 * パッケージの一覧
 
@@ -160,8 +162,7 @@ mikutterを使ってみよう
 	# cd /usr/pkgsrc/www/wordpress
 	# make package-install
 
-
- を実行すると、wordpressに関連したソフトウェアをコンパイル／インストールします。
+を実行すると、wordpressに関連したソフトウェアをコンパイル／インストールします。
 
 ユーザー作成
 --------------
@@ -209,7 +210,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
-　　 :
+ 　　 :
  8 partitions:
  #        size    offset     fstype [fsize bsize cpg/sgs]
  a:   3428352    385024     4.2BSD      0     0     0  # (Cyl.    188 -   1861)
@@ -235,9 +236,9 @@ HDMIじゃなくシリアルコンソールで使うには
 
 ::
 
- root=ld0a # console=fb      ←console以下をコメントアウトします。
- #fb=1280x1024           # to select a mode, otherwise try EDID 
- #fb=disable             # to disable fb completely
+  root=ld0a 
+  #fb=1280x1024           # to select a mode, otherwise try EDID 
+  #fb=disable             # to disable fb completely
 
 起動ディスクを変えるには
 ------------------------

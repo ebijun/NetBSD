@@ -34,16 +34,17 @@ Contents:
    :numbered:
 
    Place/intro
-   Place/shimane
-   NEWS
+   Place/hokkaido
    RPI
    pkgsrc
    guide
    Luna
    ZAURUS
    WZERO3
+   NEWS
    events
    allevents
+   Place/shimane
 
 Indices and tables
 ==================
