@@ -20,6 +20,8 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
  .. todo:: Ontapの液晶で写らない
+ .. todo:: apache+php+mysql設定
+ .. todo:: webkit-gtk
  .. todo:: icewmの設定方法を書く
  .. todo:: btキーボード・マウス
  .. todo:: deforaos-* をテスト
@@ -53,8 +55,7 @@ RaspberryPIでNetBSDを使ってみる
 
 ::
 
- # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-07-30-netbsd-raspi.img.gz
- MD5 (2013-07-30-netbsd-raspi.img.gz) = 915cafbbff8ad6d074516c1cca4f1867
+ # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/2013-08-23-netbsd-raspi.img.gz
 
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -62,7 +63,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2013-07-30-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2013-08-23-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
 
 RaspberryPIの起動
 ------------------
@@ -118,11 +119,12 @@ mikutterを使ってみよう
 
 コンパイル済パッケージをインストールする
 --------------------------------------------------
-* /root/Package以下に、今回のイメージに利用したパッケージをインストールしたスクリプトが入っています。
-* コンパイル済みパッケージ
+* コンパイルしたパッケージを以下のURLに用意しました。
 
-ここでは、筒井さん作成の、pkgsrc 2013Q2のARM向けコンパイル済みパッケージを利用します。
-	http://teokurebsd.org/netbsd/packages/arm/6.1_2013Q1
+::
+
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/packages
+
 
 * パッケージのインストール
 
@@ -130,7 +132,8 @@ mikutterを使ってみよう
 
 ::
 
-	# pkg_add http://teokurebsd.org/netbsd/packages/arm/6.1_2013Q1/All/パッケージ
+　# export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/packages
+　# pkg_add zsh
 
 * パッケージの一覧
 
@@ -149,7 +152,7 @@ mikutterを使ってみよう
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- pkgsrc-2013Q2が/usr/pkgsrcに展開してあります。
+ 2013/8/21時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
@@ -198,13 +201,33 @@ mikutterを使ってみよう
 vnconfigでイメージ編集
 ------------------------
 
+NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参照できます。
+
 ::
 
- # vnconfig vnd0 2013-07-30-netbsd-raspi.img
+ # vnconfig vnd0 2013-08-23-netbsd-raspi.img
+ # vnconfig -l
+ vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
- # newfs /dev/rvnd0a
- # dump 0f - /dev/rsd3a | restore -xvf -
- # newfs_msdos /dev/rvnd0e
+　　 :
+ 8 partitions:
+ #        size    offset     fstype [fsize bsize cpg/sgs]
+ a:   3428352    385024     4.2BSD      0     0     0  # (Cyl.    188 -   1861)
+ b:    262144    122880       swap                     # (Cyl.     60 -    187)
+ c:   3690496    122880     unused      0     0        # (Cyl.     60 -   1861)
+ d:   3813376         0     unused      0     0        # (Cyl.      0 -   1861)
+ e:    114688      8192      MSDOS                     # (Cyl.      4 -     59)
+ # mount_msdos /dev/vnd0e /mnt
+ # ls /mnt
+ LICENCE.broadcom    cmdline.txt         fixup_cd.dat        start.elf
+ bootcode.bin        fixup.dat           kernel.img          start_cd.elf
+ # cat /mnt/cmdline.txt
+ root=ld0a console=fb
+ #fb=1280x1024           # to select a mode, otherwise try EDID 
+ #fb=disable             # to disable fb completely
+
+ # umount /mnt
+ # vnconfig -u vnd0
 
 HDMIじゃなくシリアルコンソールで使うには
 ----------------------------------------
@@ -212,9 +235,9 @@ HDMIじゃなくシリアルコンソールで使うには
 
 ::
 
- console=fb      ←この行を消します
- genfb.type=39
- root=ld0a 
+ root=ld0a # console=fb      ←console以下をコメントアウトします。
+ #fb=1280x1024           # to select a mode, otherwise try EDID 
+ #fb=disable             # to disable fb completely
 
 起動ディスクを変えるには
 ------------------------
@@ -222,9 +245,9 @@ HDMIじゃなくシリアルコンソールで使うには
 
 ::
 
- console=fb
- genfb.type=39
- root=ld0a       ←ld0をsd0にするとUSB接続したディスクから起動します
+ root=sd0a console=fb ←ld0をsd0にするとUSB接続したディスクから起動します
+ #fb=1280x1024           # to select a mode, otherwise try EDID 
+ #fb=disable             # to disable fb completely
 
 最小構成のディスクイメージ
 --------------------------
@@ -232,9 +255,7 @@ HDMIじゃなくシリアルコンソールで使うには
 
 ::
 
- # ftp ftp7.jp.netbsd.org:/pub/NetBSD-daily/HEAD/日付/evbarm/gz.../rpi.bin.gz
- # ftp ftp7.jp.netbsd.org:/pub/NetBSD-daily/HEAD/日付/evbarm/gz.../rpi_inst.bin.gz
-  HEADの部分を6.1に入れ替えるとNetBSD6.1のイメージがあります。
+ # ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/
  # gunzip < rpi_inst.bin.gz |dd of=/dev/rsd3d bs=1m   .... sd3にコピー。
 
   RaspberryPIにsdカードを差して、起動すると、#　プロンプトが表示されます。
@@ -243,7 +264,7 @@ HDMIじゃなくシリアルコンソールで使うには
 X11のインストール
 ------------------
  rpi.bin.gzからインストールした場合、Xは含まれていません。追加したい場合は、
- ftp://ftp7.jp.netbsd.org/pub/NetBSD-daily/HEAD/日付/evbarm/binary/sets/x* をダウンロードし、tarファイルを展開します。
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/ をダウンロードし、tarファイルを展開します。
 
 ::
 
@@ -252,7 +273,7 @@ X11のインストール
 クロスビルドの方法
 ------------------
 * ソースファイル展開
-* ./build.sh -U -m evbarm release
+* ./build.sh -U -m evbearmv6hf-el release
 
 pkgsrcを最新にしてみる
 ----------------------
@@ -277,17 +298,29 @@ inode
 -----
   おおしまさん(@oshimyja)ありがとうございます。
 
-#47798
-------
 
-今回、mikutterのアイコンがでなくて落ちるバグに悩みました。つついさんに感謝します。
+関連バグ
+--------
+
+PR 47798
+ 今回、mikutterのアイコンがでなくて落ちるバグに悩みました。つついさんに感謝します。
 	http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=47798
+
+pkg/48128: icewm build broken on 6.99.23
+ 直っています。
+
+port-evbarm/48132: devel/tradcpp build broken on evbearmv6hf-el 6.99.23
+ まだ直っていません。soft-floatでコンパイルしようとするのでhardfloatでコンパイルします。
+ s/-msoft-float/-marm -mthumb-interwork  -mfloat-abi=hard -mhard-float/
+
+--
 
 パーティションサイズをSDカードに合わせる
 -----------------------------------------
 　2GB以上のSDカードを利用している場合、パーティションサイズをSDカードに合わせることができます。この手順はカードの内容が消えてしまう可能性もあるため、重要なデータはバックアップをとるようにしてください。
   手順は、http://wiki.netbsd.org/ports/evbarm/raspberry_pi/ のGrowing the root file-systemにあります。
- このイメージのために、つついさんにスクリプトを作っていただきました。
+
+ このイメージのために、つついさんにスクリプトを作っていただきました。（まだテスト中です）
 
 #. vi /etc/rc.confでrc_configured=NOに書き換え
 #. reboot　.... シングルユーザで起動
@@ -295,8 +328,6 @@ inode
 #. cd /root/Extract/
 #. sh expand-image-fssize-rpi.sh ... しばらくかかります
 #.  リターンを押すと再起動します
-
-どうしても失敗する場合は、SDカードにエラーが起きている場所があるかもしれません。
 
 ::
 
@@ -308,7 +339,6 @@ inode
 """""""""""""""""""""
 #. /etc/rc.confのrc_configured=YESをNOにして起動します。
 #.  戻すときはmount / ;vi /etc/rc.conf　でNOをYESに変更してrebootします。
-
 
 参考URL
 --------

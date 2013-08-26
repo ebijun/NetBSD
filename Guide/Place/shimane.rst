@@ -19,6 +19,10 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+.. todo:: 津山のあたりの移動方法をまとめる
+.. todo:: 典型的なwebサーバ構築方法を移動する
+
+
 OSC2013島根の発表全部をNetBSDで動かしてみる
 ----------------------------------------------
 
@@ -151,40 +155,6 @@ ADempiere
  # java+postgresql
  # openjdk
  # postgresql
-
-baserCMS
-""""""""""""
-
- 典型的なCMSは、この手順でインストールできます。
-
-::
-
- # cd /usr/pkgsrc/www/ap-php ... php54+apache
- # make package-install
- # vi /usr/pkg/etc/httpd/httpd.conf
- LoadModule php5_module lib/httpd/mod_php5.so
- AddHandler application/x-httpd-php .php
- 
- # cd /usr/pkgsrc/converters/php-mbstring
- # make package-install
- 
- # vi /usr/pkg/etc/php.ini
- extension=mbstring.so
- 
- # vi /usr/pkg/etc/httpd/httpd.conf
- DirectoryIndex index.php index.html
- 
- # vi /etc/rc.conf
- apache=YES
- # cp /usr/pkg/share/examples/rc.d/apache/etc/rc.d/apache
- # /etc/rc.d/apache start
- 
- basercms.netからzipファイルをダウンロード
- # cd /usr/pkg/share/httpd/htdocs
- # unzip basercms-2.1.2.zip
- # chown -R www.www basercms
- # http://localhost/basercms 
- 管理者のアカウントとパスワードがメールで飛んでくる！！
 
 OpenOffice.org/LibreOffice
 """"""""""""""""""""""""""""""""
@@ -366,7 +336,7 @@ pkgsrcに何か追加したい
 .. csv-table::
 
  ベニヤ模型,京町商店街の老舗模型店,http://www5e.biglobe.ne.jp/~beniya-m/
- EAD,松江大橋たもと、地下はDJ BAR MIX カフェバーEAD屋上にもバーがある。野菜カレーと豊の秋。とりあえずを頼むととりあえずが出てくる。,http://www.ead5.com/
+ EAD,松江大橋たもと、地下はDJ BAR MIX カフェバーEAD屋上にもバーがある。リニューアル前は、とりあえずを頼むととりあえずが出て来た。,http://www.ead5.com/
  デンゲンパーツ,くにびきメッセ隣の電子部品・無線機屋 H8マイコンロボットやトリオのTR-5000がおいてある。,690-0826 松江市学園南1-5-7
  山崎電気,鍛冶橋から新大橋北詰に行く途中にある。電子部品/サトーパーツ/フジシャーシ/2SK30。旦那さんが作ったLUXのような手作りアンプは必見。,島根県松江市東本町4丁目157
  たぬき堂書店,伊勢宮のたぬき堂書店。, 島根県松江市伊勢宮町503
@@ -382,6 +352,8 @@ pkgsrcに何か追加したい
  あご野焼き,あご野焼きは、すだれのようなもので作る。包装の上からだんだんのつき方で何かが判別できる。,http://www.tokusen.info/suisan/agonoyaki/
  ジャズバーぽえむ,毎月末日曜の夜セッション, 島根県松江市白潟本町10 園山ビル2F.
  三英堂,若草を買う。,http://www.saneido.jp/
+ のびた,たぬき書店の近く,フォントがのびたフォントっぽいうどん店
+ 赤べこ,たぬき書店に入る道,上寿司、煮物、大将がX68の偉い人に面影が
 
 鳥取
 
@@ -397,6 +369,13 @@ pkgsrcに何か追加したい
  焼きそば樫 ,俺の愛を焼きそばに込めてFor you。, 鳥取県鳥取市河原町山手47-1
  風味堂,何屋か気になる喫茶店。,鳥取県鳥取市職人町29
  ハードオフ,スペンドールのスピーカを見る。
+ 米子の居酒屋,米子駅近地酒1杯300円から
+ 米子の喫茶店,ビアへるんと大山Gビールがある。
+ 米子の古本屋,ゼネプロについて教えてもらおう。
+ ゼネプロα,まさかのゼネプロ。大日本とDAICON IV絵葉書を買うとおまけでのーてんき絵葉書が！
+ ネギマン,ネギマンは環境
+ 琴浦町の道の駅,琴浦さんグッズあり
+ 
 
 OSC松江展示物
 --------------
@@ -410,4 +389,8 @@ OSC松江展示物
 #. cobalt
 #. armadillo
 #. mikutter
+#. SONY NEWS
+#. OMRON LUNAII
+#. Sun Java Station
+
 

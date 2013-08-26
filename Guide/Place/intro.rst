@@ -20,6 +20,8 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 .. イメージファイルは圧縮すること
+.. puppetで設定できるようにする
+.. 典型的なCMSインストール方法を追加する
 
 BSDライセンス
 -------------
@@ -103,6 +105,40 @@ pkgsrc - ソースコードからソフトウェアを作る
  # cd /usr/pkgsrc/net/mikutter
  # make package-install
 
+baserCMS
+""""""""""""
+
+ 典型的なCMSは、この手順でインストールできます。
+
+::
+
+ # cd /usr/pkgsrc/www/ap-php ... php54+apache
+ # make package-install
+ # vi /usr/pkg/etc/httpd/httpd.conf
+ LoadModule php5_module lib/httpd/mod_php5.so
+ AddHandler application/x-httpd-php .php
+ 
+ # cd /usr/pkgsrc/converters/php-mbstring
+ # make package-install
+ 
+ # vi /usr/pkg/etc/php.ini
+ extension=mbstring.so
+ 
+ # vi /usr/pkg/etc/httpd/httpd.conf
+ DirectoryIndex index.php index.html
+ 
+ # vi /etc/rc.conf
+ apache=YES
+ # cp /usr/pkg/share/examples/rc.d/apache/etc/rc.d/apache
+ # /etc/rc.d/apache start
+ 
+ basercms.netからzipファイルをダウンロード
+ # cd /usr/pkg/share/httpd/htdocs
+ # unzip basercms-2.1.2.zip
+ # chown -R www.www basercms
+ # http://localhost/basercms 
+ 管理者のアカウントとパスワードがメールで飛んでくる！！
+
 ソースコードの更新
 --------------------
 
@@ -116,4 +152,150 @@ pkgsrc - ソースコードからソフトウェアを作る
  # cvs update -PAd                 ... 最新に更新
  # cvs update -Pd -r pkgsrc-2013Q2 ... 2013Q2に更新
 
+ライセンスを許可する
+"""""""""""""""""""
+
+ pkgsrcに含まれるソフトウェアのライセンスを見てみましょう。
+
+::
+
+ % cd /usr/pkgsrc/licenses
+ % ls |wc -l
+ 205 
+ % ls |head
+ % ls |head
+ 2-clause-bsd
+ 3proxy-0.5-license
+ CVS
+ acm-license
+ adobe-acrobat-license
+ adobe-flashsupport-license
+ amap-license
+ amaya-license
+ amazon-software-license
+ amiwm-license
+    :
+
+ 特定のライセンスを持つソフトウェアのインストールを許可する・許可しないよう、/etc/mk.confファイルで定義できます。
+
+::
+
+ % grep ACCEPTABLE /etc/mk.conf |head
+ ACCEPTABLE_LICENSES+= ruby-license
+ ACCEPTABLE_LICENSES+= xv-license
+ ACCEPTABLE_LICENSES+= mplayer-codec-license
+ ACCEPTABLE_LICENSES+= flash-license
+ ACCEPTABLE_LICENSES+= adobe-acrobat-license
+ ACCEPTABLE_LICENSES+= adobe-flashsupport-license
+ ACCEPTABLE_LICENSES+= skype-license
+ ACCEPTABLE_LICENSES+= lha-license
+ ACCEPTABLE_LICENSES+= opera-eula
+ ACCEPTABLE_LICENSES+= lame-license
+
+pkgsrc/packages
+""""""""""""""""""
+ コンパイルしたパッケージは、pkgsrc/packages以下に生成されます。
+
+::
+
+ % cd /usr/pkgsrc/packages/All/
+ % ls *.tgz |head
+ GConf-2.32.4nb7.tgz
+ GConf-ui-2.32.4nb11.tgz
+ ORBit2-2.14.19nb4.tgz
+ SDL-1.2.15nb7.tgz
+ SDL_mixer-1.2.12nb5.tgz
+ acroread9-jpnfont-9.1.tgz
+    :
+ # pkg_add gedit-2.30.4nb17.tgz  ... インストール
+ # pkg_info                      ... 一覧表示
+ # pkg_del gedit                 ... 削除
+
+pkgsrcに何か追加したい
+"""""""""""""""""""""""
+
+::
+
+ # cd /usr/pkgsrc/pkgtools/url2pkg
+ # make package-install
+ # cd /usr/pkgsrc/ジャンル/名前
+ # url2pkg ダウンロードURL
+ Makefileとかができる
+
+バグレポート・追加差分
+"""""""""""""""""""""
+ www.NetBSD.org から"send-pr"
+ライセンスを許可する
+"""""""""""""""""""
+
+ pkgsrcに含まれるソフトウェアのライセンスを見てみましょう。
+
+::
+
+ % cd /usr/pkgsrc/licenses
+ % ls |wc -l
+ 205 
+ % ls |head
+ % ls |head
+ 2-clause-bsd
+ 3proxy-0.5-license
+ CVS
+ acm-license
+ adobe-acrobat-license
+ adobe-flashsupport-license
+ amap-license
+ amaya-license
+ amazon-software-license
+ amiwm-license
+    :
+
+ 特定のライセンスを持つソフトウェアのインストールを許可する・許可しないよう、/etc/mk.confファイルで定義できます。
+
+::
+
+ % grep ACCEPTABLE /etc/mk.conf |head
+ ACCEPTABLE_LICENSES+= ruby-license
+ ACCEPTABLE_LICENSES+= xv-license
+ ACCEPTABLE_LICENSES+= mplayer-codec-license
+ ACCEPTABLE_LICENSES+= flash-license
+ ACCEPTABLE_LICENSES+= adobe-acrobat-license
+ ACCEPTABLE_LICENSES+= adobe-flashsupport-license
+ ACCEPTABLE_LICENSES+= skype-license
+ ACCEPTABLE_LICENSES+= lha-license
+ ACCEPTABLE_LICENSES+= opera-eula
+ ACCEPTABLE_LICENSES+= lame-license
+
+pkgsrc/packages
+""""""""""""""""""
+ コンパイルしたパッケージは、pkgsrc/packages以下に生成されます。
+
+::
+
+ % cd /usr/pkgsrc/packages/All/
+ % ls *.tgz |head
+ GConf-2.32.4nb7.tgz
+ GConf-ui-2.32.4nb11.tgz
+ ORBit2-2.14.19nb4.tgz
+ SDL-1.2.15nb7.tgz
+ SDL_mixer-1.2.12nb5.tgz
+ acroread9-jpnfont-9.1.tgz
+    :
+ # pkg_add gedit-2.30.4nb17.tgz  ... インストール
+ # pkg_info                      ... 一覧表示
+ # pkg_del gedit                 ... 削除
+
+pkgsrcに何か追加したい
+"""""""""""""""""""""""
+
+::
+
+ # cd /usr/pkgsrc/pkgtools/url2pkg
+ # make package-install
+ # cd /usr/pkgsrc/ジャンル/名前
+ # url2pkg ダウンロードURL
+ Makefileとかができる
+
+バグレポート・追加差分
+"""""""""""""""""""""
+ www.NetBSD.org から"send-pr"
 
