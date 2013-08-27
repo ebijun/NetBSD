@@ -19,15 +19,18 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: Ontapの液晶で写らない
+ .. todo:: Ontapの液晶でXが写らない
  .. todo:: apache+php+mysql設定
  .. todo:: webkit-gtk
  .. todo:: icewmの設定方法を書く
  .. todo:: btキーボード・マウス
  .. todo:: deforaos-* をテスト
+ .. todo:: lang/ocamlをテスト
+ .. todo:: lang/squeak
+ .. todo:: www/wordpress
  .. todo:: puppetまたはansibleで設定する
  .. todo:: KOBO起動方法＆テスト
- .. todo:: beaglebone black テスト
+ .. todo:: beaglebone black テスト v7
 
 =================================
 RaspberryPIでNetBSDを使ってみる
@@ -55,7 +58,8 @@ RaspberryPIでNetBSDを使ってみる
 
 ::
 
- # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/2013-08-23-netbsd-raspi.img.gz
+ # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
+ 2013-08-23-evbearmv6hf-el/2013-08-23-netbsd-raspi.img.gz
 
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -236,9 +240,10 @@ HDMIじゃなくシリアルコンソールで使うには
 
 ::
 
-  root=ld0a 
-  #fb=1280x1024           # to select a mode, otherwise try EDID 
-  #fb=disable             # to disable fb completely
+ ↓console=fbを消します。
+ root=ld0a 
+ #fb=1280x1024           # to select a mode, otherwise try EDID 
+ #fb=disable             # to disable fb completely
 
 起動ディスクを変えるには
 ------------------------
