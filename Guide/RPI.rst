@@ -121,7 +121,16 @@ mikutterを使ってみよう
 	setxkbmap -layout jp -option ctrl:swapcap
 
 * 106キーでのキーマップ
- 右下のキー入力が一部おかしいものがあります。調べています。
+
+::
+
+ on i386:
+ "\|" key returns keycode 133
+ "\_" key returns keycode 211
+
+ on evbearmv6hf-el
+ "\|" key returns keycode 8
+ "\_" key returns keycode 8
 
 コンパイル済パッケージをインストールする
 --------------------------------------------------
