@@ -35,6 +35,7 @@ Contents:
 
    Place/intro
    Place/hokkaido
+   hpcmips
    RPI
    pkgsrc
    guide

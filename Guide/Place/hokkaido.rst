@@ -62,6 +62,33 @@
 南千歳
 ------
 
+山西さんのカメラ情報
+--------------------
+ nobugの山西さんに、札幌おすすめカメラ店を教えていただきました。
+
+[nobug:3970] 
+市内の中古カメラ店は随分減りました。とりあえずこんなところでしょうか。
+希望のものがあれば探しておきます。
+
+* あすびーず(東急百貨店内)
+  http://asbe-z.co.jp/
+* カメラのいわもと(南1条東2) : 真空管と真空管式アンプも扱ってる
+  http://iwamoto-camera.com/
+* セブン商会(大通東5丁目)
+  http://www.camera-seven.com/
+* カメラ修理センター(北2条東3)
+  http://sapporocamera-repair-center.co.jp/tyukocamerarenzuhanbai/product.html
+* イシオ(北4西28)
+  http://www.isio28.com/
+* カメラの川田WILL(南1西18)
+  http://www.camera-kawata.jp/cont/nav.html
+* パラダイス(北18西4)
+  http://www.paradiseweb.jp/
+* タックカメラサービス(南3東4)
+  http://www.tac-cs.co.jp/index_b.html
+* マッキナフォト : いわゆる「カメラ日和」系ショップ
+  http://macchinafoto.com/
+
 .. csv-table::
 
  大夕張ダム,夕張,水没する橋。トンネルだけ残る。
