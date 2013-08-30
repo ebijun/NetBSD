@@ -13,7 +13,7 @@ KERNEL=/mnt1/hpcmips/binary/kernel
 
 # extract sets.
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-LIST=man modules text xbase xcomp xetc xfont xserver
+LIST=base etc comp man modules text xbase xcomp xetc xfont xserver kern-GENERIC
 
 # mount point
 MNT=/mnt
@@ -23,9 +23,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-
-#all: file newfs cdmount extract cdunmount
-all: 
+all: file newfs cdmount extract bootarea setup cdunmount
 
 # make image file. 512*3813376=2GB
 file: 
@@ -37,7 +35,7 @@ newfs:
 	vnconfig ${VND} ${FILE}
 	disklabel -R ${VND} DISKLABEL.proto
 	newfs_msdos /dev/r${VND}e
-	newfs /dev/r${VND}a
+	newfs -n 600000 /dev/r${VND}a
 	vnconfig -u ${VND}
 
 cdmount:
@@ -69,27 +67,9 @@ bootarea:
 	cp ${INSTALLATION}/hpcboot.exe ${MNT}
 	cp ${INSTALLATION}/pbsdboot.exe ${MNT}
 	cp ${INSTALLATION}/pbsdboot1.exe ${MNT}
+	cp ${KERNEL}/netbsd-GENERIC.gz ${MNT}
+	cp ${KERNEL}/netbsd-TX3912.gz ${MNT}
 	
-	umount ${MNT}
-	vnconfig -u ${VND}
-
-# copy rpi.img.gz to image file and resize partition.
-rpi:
-	echo Copy rpi.img.gz
-	vnconfig ${VND} ${FILE}
-	gunzip < ${RPI}.gz |dd of=/dev/r${VND}d bs=1m 
-	disklabel -R ${VND} DISKLABEL.proto
-	fsck -fy /dev/r${VND}a
-	resize_ffs -y /dev/r${VND}a
-	fsck -fy /dev/r${VND}a
-	vnconfig -u ${VND}
-
-# copy rpi.img and sets files to local.
-copy:
-	echo Copy binary image to local.
-	vnconfig ${VND} ${IMAGE}
-	mount_cd9660 /dev/${VND}a ${MNT}
-	cp -r ${MNT}/evbarm/binary .
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -106,13 +86,14 @@ pkg:
 	vnconfig -u ${VND}
 
 # copy default setupfile
-release:
+setup:
+	echo copy default files and make device nodes.
 	vnconfig ${VND} ${FILE}
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	mount /dev/${VND}e ${MNT}/boot
-	(cd ..; tar cvpf - etc root ) |(cd /mnt;tar xvpf -)
-	(cd ..; tar cvpf - Oshimaya) |(cd /mnt/root;tar xvpf -)
-	umount ${MNT}/boot
+	mkdir ${MNT}/msdos
+	tar cvpf - etc root  |(cd /mnt;tar xvpf -)
+	(cd /mnt/dev;./MAKEDEV all)
+	#(cd ..; tar cvpf - Oshimaya) |(cd /mnt/root;tar xvpf -)
 	umount ${MNT}
 	vnconfig -u ${VND}
