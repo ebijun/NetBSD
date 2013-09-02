@@ -31,6 +31,10 @@
  .. todo:: puppetまたはansibleで設定する
  .. todo:: KOBO起動方法＆テスト
  .. todo:: beaglebone black テスト v7
+ .. todo:: port-arm:2013/8/29 Radoslaw Kujawa
+ .. todo:: For I2C consult the iic(4) man page, also see the i2cscan(8) utility and its source.
+ .. todo:: For GPIO see gpio(4) man page.
+ .. todo:: For SPI as far as I know there are no generic user-space components provided, besides support for SPI flashes.
 
 =================================
 RaspberryPIでNetBSDを使ってみる

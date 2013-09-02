@@ -89,6 +89,23 @@ CD-ROMイメージを作る
 
  # ./build.sh -m i386 iso-image　　　... CD-ROMイメージ作成
 
+ソースコードの更新
+~~~~~~~~~~~~~~~~~~~~
+
+::
+
+ http://cvsweb.netbsd.org/
+ # cd src
+ # cvs update -PAd                 ... 最新に更新
+ # cvs update -Pd -r netbsd-6-1-1-RELEASE  ... NetBSD6.1.1
+ # cd pkgsrc
+ # cvs update -PAd                 ... 最新に更新
+ # cvs update -Pd -r pkgsrc-2013Q2 ... 2013Q2に更新
+
+バグレポート・追加差分
+~~~~~~~~~~~~~~~~~~~~~~~~
+ www.NetBSD.org から"send-pr"
+
 pkgsrc - ソースコードからソフトウェアを作る
 -------------------------------------------
 
@@ -101,19 +118,29 @@ pkgsrc - ソースコードからソフトウェアを作る
  # cd /usr
  # ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/tar_files/pkgsrc.tar.gz
  # tar xzvf pkgsrc.tar.gz
- (# cd /usr/pkgsrc/bootstrap;# ./bootstrap) .. NetBSD以外のOSで実行する
+ (cd /usr/pkgsrc/bootstrap;./bootstrap) .. NetBSD以外のOSで実行する
  # cd /usr/pkgsrc/net/mikutter
  # make package-install
 
-baserCMS
-""""""""""""
+gitをインストールしてみる
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+ # cd /usr/pkgsrc/devel/scmgit-base
+ # make install
+ # which git
+ /usr/pkg/bin/git
+
+baserCMSをインストールしてみる
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  典型的なCMSは、この手順でインストールできます。
 
 ::
 
  # cd /usr/pkgsrc/www/ap-php ... php54+apache
- # make package-install
+ # make package-install      .... 関連ソフトウェアがコンパイル・インストール
  # vi /usr/pkg/etc/httpd/httpd.conf
  LoadModule php5_module lib/httpd/mod_php5.so
  AddHandler application/x-httpd-php .php
@@ -123,6 +150,11 @@ baserCMS
  
  # vi /usr/pkg/etc/php.ini
  extension=mbstring.so
+ 
+ baserCMSはMySQLをインストールしなくても利用できますが、利用する場合
+ # cd /usr/pkgsrc/databases/php-mysql  ... php+mysqlインストール
+ # vi /usr/pkg/etc/php.ini
+ extension=mysql.so
  
  # vi /usr/pkg/etc/httpd/httpd.conf
  DirectoryIndex index.php index.html
@@ -139,30 +171,30 @@ baserCMS
  # http://localhost/basercms 
  管理者のアカウントとパスワードがメールで飛んでくる！！
 
-ソースコードの更新
---------------------
+SSL設定
+"""""""
+ 証明書のファイルを指定して、httpd.confのコメントを外して、apacheを再起動します。
 
 ::
 
- http://cvsweb.netbsd.org/
- # cd src
- # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r netbsd-6-1-1-RELEASE  ... NetBSD6.1.1
- # cd pkgsrc
- # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r pkgsrc-2013Q2 ... 2013Q2に更新
+ /usr/pkg/etc/httpd/httpd-ssl.conf
+ SSLCertificateFile
+ SSLCertificateKeyFile
+ SSLCertificateChainFile
+ 
+ /usr/pkg/etc/httpd/httpd.conf
+ Include etc/httpd/httpd-ssl.conf  ... コメントはずす
 
-ライセンスを許可する
-"""""""""""""""""""
+インストールするソフトウェアのライセンスを意識する
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  pkgsrcに含まれるソフトウェアのライセンスを見てみましょう。
 
 ::
 
- % cd /usr/pkgsrc/licenses
+ % cd /usr/pkgsrc/licenses  ... ライセンス条項が集まっている
  % ls |wc -l
  205 
- % ls |head
  % ls |head
  2-clause-bsd
  3proxy-0.5-license
@@ -176,7 +208,8 @@ baserCMS
  amiwm-license
     :
 
-特定のライセンスを持つソフトウェアのインストールを許可する・許可しないよう、 /etc/mk.conf ファイルで定義できます。
+特定のライセンスを持つソフトウェアのインストールを許可する・許可しないよう、 
+/etc/mk.conf ファイルで定義します。
 
 ::
 
@@ -193,7 +226,7 @@ baserCMS
  ACCEPTABLE_LICENSES+= lame-license
 
 pkgsrc/packages
-""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~
  コンパイルしたパッケージは、pkgsrc/packages以下に生成されます。
 
 ::
@@ -212,7 +245,7 @@ pkgsrc/packages
  # pkg_del gedit                 ... 削除
 
 pkgsrcに何か追加したい
-"""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -222,80 +255,4 @@ pkgsrcに何か追加したい
  # url2pkg ダウンロードURL
  Makefileとかができる
 
-バグレポート・追加差分
-"""""""""""""""""""""
- www.NetBSD.org から"send-pr"
-ライセンスを許可する
-"""""""""""""""""""
-
- pkgsrcに含まれるソフトウェアのライセンスを見てみましょう。
-
-::
-
- % cd /usr/pkgsrc/licenses
- % ls |wc -l
- 205 
- % ls |head
- % ls |head
- 2-clause-bsd
- 3proxy-0.5-license
- CVS
- acm-license
- adobe-acrobat-license
- adobe-flashsupport-license
- amap-license
- amaya-license
- amazon-software-license
- amiwm-license
-    :
-
- 特定のライセンスを持つソフトウェアのインストールを許可する・許可しないよう、/etc/mk.confファイルで定義できます。
-
-::
-
- % grep ACCEPTABLE /etc/mk.conf |head
- ACCEPTABLE_LICENSES+= ruby-license
- ACCEPTABLE_LICENSES+= xv-license
- ACCEPTABLE_LICENSES+= mplayer-codec-license
- ACCEPTABLE_LICENSES+= flash-license
- ACCEPTABLE_LICENSES+= adobe-acrobat-license
- ACCEPTABLE_LICENSES+= adobe-flashsupport-license
- ACCEPTABLE_LICENSES+= skype-license
- ACCEPTABLE_LICENSES+= lha-license
- ACCEPTABLE_LICENSES+= opera-eula
- ACCEPTABLE_LICENSES+= lame-license
-
-pkgsrc/packages
-""""""""""""""""""
- コンパイルしたパッケージは、pkgsrc/packages以下に生成されます。
-
-::
-
- % cd /usr/pkgsrc/packages/All/
- % ls *.tgz |head
- GConf-2.32.4nb7.tgz
- GConf-ui-2.32.4nb11.tgz
- ORBit2-2.14.19nb4.tgz
- SDL-1.2.15nb7.tgz
- SDL_mixer-1.2.12nb5.tgz
- acroread9-jpnfont-9.1.tgz
-    :
- # pkg_add gedit-2.30.4nb17.tgz  ... インストール
- # pkg_info                      ... 一覧表示
- # pkg_del gedit                 ... 削除
-
-pkgsrcに何か追加したい
-"""""""""""""""""""""""
-
-::
-
- # cd /usr/pkgsrc/pkgtools/url2pkg
- # make package-install
- # cd /usr/pkgsrc/ジャンル/名前
- # url2pkg ダウンロードURL
- Makefileとかができる
-
-バグレポート・追加差分
-"""""""""""""""""""""
- www.NetBSD.org から"send-pr"
 

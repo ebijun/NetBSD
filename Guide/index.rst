@@ -31,12 +31,12 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-..   :numbered:
+   :numbered:
 
-   Place/intro
    Place/hokkaido
-   hpcmips
+   Place/intro
    RPI
+   hpcmips
    pkgsrc
    guide
    Luna
