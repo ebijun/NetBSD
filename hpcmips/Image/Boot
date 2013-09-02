@@ -1,3 +1,3 @@
 #gxemul -e z50 -M 128 -I 800000000 -d 2013-08-30-netbsd-hpcmips.img netbsd
 #gxemul -e mobilepro770  -d 2013*.img netbsd
-gxemul -e mobilepro800 -d 2013-08-30-netbsd-hpcmips.img netbsd
+gxemul -e mobilepro800 -I 80000000  -d 2013-09-02-netbsd-hpcmips-5.2.img ../netbsd.gz
