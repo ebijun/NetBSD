@@ -128,7 +128,7 @@ gitをインストールしてみる
 
 ::
 
- # cd /usr/pkgsrc/devel/scmgit-base
+ # cd /usr/pkgsrc/devel/git-base  .. scmgit-baseからgit-baseに変更
  # make install
  # which git
  /usr/pkg/bin/git

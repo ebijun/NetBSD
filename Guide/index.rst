@@ -36,6 +36,10 @@ Contents:
    Place/hokkaido
    Place/intro
    kobo
+
+..   Place/hokkaido
+   Place/intro
+   kobo
    hpcmips
    pkgsrc
    guide
@@ -48,10 +52,7 @@ Contents:
    allevents
    Place/shimane
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
 
