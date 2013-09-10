@@ -7,7 +7,7 @@ FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 IMAGE=/usr/release/images/NetBSD-6.99.23-hpcarm.iso
 
 
-PKGSRC=pkgsrc-2013-08-21.tar.gz
+PKGSRC=pkgsrc-2013-09-06.tar.gz
 
 SETS=/mnt1/hpcarm/binary/sets
 INSTALLATION=/mnt1/hpcarm/installation

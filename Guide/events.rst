@@ -106,6 +106,7 @@ netbsd@re.soum.co.jp
 
 .. csv-table::
 
+ OSC2013松江 NetBSDブース展示の記録 , ,NEWS+LUNA+JavaStation+RPI hardfloat
  OSC2013京都 NetBSDブース展示の記録 ,1381 view , Luna+mlterm-fb+mikutter
  名古屋*BSDユーザグループ(NBUG)2013/7月例会の記録 ,255 view,
  日本NetBSDユーザーグループ第十五回定期総会,546 view,NetBSD BOF

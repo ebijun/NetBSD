@@ -35,7 +35,7 @@ Contents:
 
    Place/hokkaido
    Place/intro
-   RPI
+   kobo
    hpcmips
    pkgsrc
    guide
@@ -43,6 +43,7 @@ Contents:
    ZAURUS
    WZERO3
    NEWS
+   RPI
    events
    allevents
    Place/shimane
