@@ -1,0 +1,5 @@
+for i in `grep -v \# List`
+do
+	echo $i
+	echo "(cd /usr/pkgsrc/*/$i ;make package-install)"
+done

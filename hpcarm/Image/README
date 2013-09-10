@@ -1,0 +1,43 @@
+    To: port-hpcmipsNetBSD.org@localhost
+    Subject: 2013-08-30-netbsd-hpcmips.img
+
+I've updated 2013-08-23-netbsd-hpcmips.img.gz for hpcmips.
+
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcmips/2013-08-30-hpcmips/2013-08-30-netbsd-netbsd.img.gz
+
+Purpose:
+- NetBSD-current 6.99.23+pkgsrc-current 
+- For mips port testing. all the mips ports are drawning now,and I lived by the river.
+
+Todo:
+- send-pr for fix mips port.
+
+=====================
+
+- NetBSD 6.99.23 base
+- login root (no passwd)
+- startx ,and icewm running.
+
+Features:
+  - fit size for 2GB SD Card
+  - with X11
+  - pkgsrc: 2013-08-21 tree inside.
+
+
+Keyboard layout checkpoint:
+/etc/wscons.conf
+ #encoding sv
+ #encoding us.swapctrlcaps
+ encoding jp
+
+/root/.xinitrc
+ setxkbmap -layout jp
+
+Build sample script:
+ https://github.com/ebijun/NetBSD/tree/master/hpcmips/Image
+
+Guide:
+ https://github.com/ebijun/NetBSD/blob/master/Guide/hpcmips.rst
+
+--
+Jun Ebihara
