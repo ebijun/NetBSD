@@ -459,14 +459,14 @@ uboot
 ::
 
     mmcinfo 1
-    fatload mmc 1 0x70800000 netbsd.bin
+    fatload mmc 1 0x70800000 kobo.bin
     go 0x70800000
 
 または、環境変数に引数を設定しておきます。
 
 ::
 
- BR-1A # setenv bootcmd_netbsd 'mmcinfo 1;fatload mmc 1 0x70100000 netbsd.bin; go 0x70100000'
+ BR-1A # setenv bootcmd_netbsd 'mmcinfo 1;fatload mmc 1 0x70100000 kobo.bin; go 0x70100000'
  BR-1A # setenv bootcmd 'run bootcmd_netbsd'
  BR-1A # saveenv
 
