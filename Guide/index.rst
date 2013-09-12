@@ -31,7 +31,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
+..   :numbered:
 
    Place/hokkaido
    Place/intro
