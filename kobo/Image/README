@@ -1,0 +1,108 @@
+    To: port-armNetBSD.org@localhost
+    Subject: 2013-09-09-netbsd-evbarm.img (Re: Raspberry Pi update please.)
+
+I've updated 2013-09-09-netbsd-evbarm.img.gz for RPI.
+
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-09-09-netbsd-evbarm.img.gz
+
+Update:
+- NetBSD-current 6.99.23  2013-08-31
+- pkgsrc-current          2013-09-06
+- This is softfloat image, for building NetBSD/hpcarm,zaurus package on RPI.
+ softfloat: 2013-09-09-netbsd-evbarm.img.gz  evbarm 
+ hardfloat: 2013-08-23-netbsd-evbarmv6hf-el/ evbearmv6hf-el
+
+KOBO kernel image snapshot:
+  KOBO has two MicroSD slot.
+  One for u-boot image,another sideslot for this RPI image.
+  Connect serial cable and kick uboot to start NetBSD.
+  XXX: watchdog reset problem still remains.
+
+  Based on KOBO patch by Ken-ichi Hashimoto.
+   https://gist.github.com/hkenichi/6363751/download
+
+  Uboot image on DOS partition.
+   http://rappappararin.blogspot.jp/2012/09/kobou-boot.html
+
+  uboot:  /boot/u-boot.bin 
+  kernel: /boot/kobo.bin    
+  Document:
+  https://github.com/ebijun/NetBSD/blob/master/Guide/kobo.rst
+
+Todo:
+- More Migration test for hardfloat: userland and pkgsrc
+- benchmarking
+- Check KOBO,Netwalker,beagleboard. (contain KOBO kernel on /boot)
+- need more good web browser.(compiling webkit...)
+  webkit-gtk and kazehakase compiled.
+  test midori.
+- test deforaos. : 
+
+=====================
+
+For OpenSourceConference 2013 Hokkaido
+ (https://www.facebook.com/events/305556999564736/)
+Booth demonstration use, I've updated raspberry-pi image.
+
+- NetBSD 6.99.23 evbarm rpi.img.gz base
+- Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
+- login root (no passwd)
+- startx ,and icewm running.
+  twitter client (net/mikutter) on 40inch home TV.
+  http://movapic.com/pic/2013061822184751c05e37e612e
+- running mikutter.
+  # startx
+  # dillo &
+  # mikutter &
+  copy twitter auth URL and paste into dillo URL bar.
+  -> get pin number.
+  -> paste pin number to mikutter
+  ==== one or two or threee moment =====
+  Get your twitter timeline with your family!
+
+Features:
+  - fit size for 2GB SD Card
+  - with X11
+  - increase more inodes on /dev/ld0a
+  - Recent current RPI kernel
+  - USB/video support: as -current (video needs more tests)
+  - pkgsrc: 2013-09-06 tree inside.
+  - pre-build packages
+   http://teokurebsd.org/netbsd/packages/arm/6.1_2013Q1/All/
+
+Installed Packages:
+kterm
+tcsh
+vlgothic-ttf
+icewm
+xli
+mikutter
+uim
+fossil
+raspberrypi-userland
+sudo
+scmgit-base
+zsh
+dillo
+
+To set HDMI output,add "console=fb" on cmdline.txt.
+ rpi$ more /boot/cmdline.txt
+ root=ld0a console=fb
+
+Keyboard layout checkpoint:
+/etc/wscons.conf
+ #encoding sv
+ #encoding us.swapctrlcaps
+ encoding jp
+
+/root/.xinitrc
+ setxkbmap -layout jp
+
+Build sample script:
+ https://github.com/ebijun/NetBSD/tree/master/kobo/Image
+
+Guide:
+ https://github.com/ebijun/NetBSD/blob/master/Guide/kobo.rst
+
+--
+Jun Ebihara
