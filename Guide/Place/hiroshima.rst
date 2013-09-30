@@ -68,3 +68,20 @@ OSC広島発表
  http://www.pastel-flower.jp/~isaki/xm6i/ ,OSC2010東京秋
  http://xm6i.org/event/osc2012eh/page1.html ,OSC2012愛媛
 
+#. OSCとX68K
+
+ OSC2013島根,2013/8/24,XM6i
+ OSC2013名古屋,2013/6/21-22,XM6i
+ OSC2012広島,2012/10/20,Neptune-X Nereid 060turbo Xellent30 XM6i
+ KOF2012,2012/11/9-10,XM6i
+ OSC2012京都,2012/8/3-4,XM6i
+ OSC2012北海道,2012/6/16,XM6i
+ OSC2012愛媛,2012/3/24,XM6i
+ OSC2012大分,2012/2/11,XM6i
+ OSC2011東京秋,2011/11/19-20,XM6i
+ OSC2011広島,2011/10/1,Neptune-X Nereid 060turbo XM6i
+ OSC2011神戸,2011/4/16,TT030 X68
+ OSC2010東京秋,2010/9/10-11,XM6i
+ OSC2007東京秋,2007/10/5-6,Nereid
+ オープンソース祭り2001,2001/2/10-11,X68030 みのうらさんの？
+http://www.cqpub.co.jp/interface/column/ShowandNews/010211/010211.htm
