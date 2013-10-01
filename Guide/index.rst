@@ -31,11 +31,12 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-..   :numbered:
+   :numbered:
 
-   Place/hokkaido
+   Place/hiroshima
    Place/intro
-   kobo
+   X68K
+   mlterm
 
 ..   Place/hokkaido
    Place/intro
@@ -48,11 +49,13 @@ Contents:
    WZERO3
    NEWS
    RPI
+   kobo
    events
    allevents
    Place/shimane
+   Place/hokkaido
 
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
+ * :ref:`genindex`
+ * :ref:`modindex`
+ * :ref:`search`
 

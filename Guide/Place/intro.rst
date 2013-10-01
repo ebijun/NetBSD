@@ -98,7 +98,7 @@ CD-ROMイメージを作る
  http://cvsweb.netbsd.org/
  # cd src
  # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r netbsd-6-1-1-RELEASE  ... NetBSD6.1.1
+ # cvs update -Pd -r netbsd-6-1-2-RELEASE  ... NetBSD6.1.2
  # cd pkgsrc
  # cvs update -PAd                 ... 最新に更新
  # cvs update -Pd -r pkgsrc-2013Q2 ... 2013Q2に更新
