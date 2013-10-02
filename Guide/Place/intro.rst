@@ -128,7 +128,7 @@ gitをインストールしてみる
 
 ::
 
- # cd /usr/pkgsrc/devel/git-base  .. scmgit-baseからgit-baseに変更
+ # cd /usr/pkgsrc/devel/git-base  
  # make install
  # which git
  /usr/pkg/bin/git
@@ -141,7 +141,7 @@ baserCMSをインストールしてみる
 ::
 
  # cd /usr/pkgsrc/www/ap-php ... php54+apache
- # make package-install      .... 関連ソフトウェアがコンパイル・インストール
+ # make package-install      .... 関連するソフトウェアが全部コンパイル・インストール
  # vi /usr/pkg/etc/httpd/httpd.conf
  LoadModule php5_module lib/httpd/mod_php5.so
  AddHandler application/x-httpd-php .php

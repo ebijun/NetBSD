@@ -4,8 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/earm/images/NetBSD-6.99.23-evbarm-earmv6hf.iso  
-PKGSRC=pkgsrc-2013-08-21.tar.gz
+IMAGE=/usr/release/earm/images/NetBSD-6.99.24-evbarm-earmv6hf.iso  
+PKGSRC=pkgsrc-2013-09-28.tar.gz
 
 SETS=/usr/release/earm/evbarm/binary/sets
 RPI=/usr/release/earm/evbarm/binary/gzimg/rpi.img
@@ -27,8 +27,8 @@ extract:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	for i in ${LIST} ; do (tar xzpvf ${SETS}/$${i}.tgz -C ${MNT};); done
-	tar xzpvf ${PKGSRC} -C ${MNT}/usr
+	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
+	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -43,15 +43,6 @@ rpi:
 	fsck -fy /dev/r${VND}a
 	vnconfig -u ${VND}
 
-# copy rpi.img and sets files to local.
-copy:
-	echo Copy binary image to local.
-	vnconfig ${VND} ${IMAGE}
-	mount_cd9660 /dev/${VND}a ${MNT}
-	cp -r ${MNT}/evbarm/binary .
-	umount ${MNT}
-	vnconfig -u ${VND}
-
 # make image file. 512*3813376=2GB
 file: 
 	echo Create ${FILE}.
@@ -59,7 +50,7 @@ file:
 	sleep 3
 
 # stop sshd for package install
-pkg:
+pkg-setup:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}

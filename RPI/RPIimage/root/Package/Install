@@ -1,5 +1,7 @@
+export PKG_PATH="/usr/pkgsrc/packages/All;ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-02-evbearmv6hf-el/packages/All"
+
 for i in `grep -v \# List`
 do
 	echo $i
-echo	pkg_add ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-21-evbearmv6hf-el/packages/All/$i
+	pkg_add $i
 done

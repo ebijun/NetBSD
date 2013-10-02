@@ -406,6 +406,13 @@ OpenOffice
  # make install
  % /usr/pkg/bin/soffice ....
 
+LibreOffice
+""""""""""""""""
+pkgsrc-wip/libreoffice4 でテストをしています。
+
+.. /etc/mk.confにPKG_OPTIONS.harfbuzz=icuが必要か。
+
+
 LaTeX
 """""""
 

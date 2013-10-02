@@ -27,7 +27,7 @@
 NetBSD観光ガイド      
 ==============================================
 
-Contents:
+.. Contents:
 
 .. toctree::
    :maxdepth: 2
@@ -36,7 +36,7 @@ Contents:
    Place/hiroshima
    Place/intro
    X68K
-   mlterm
+   Software/mlterm
 
 ..   Place/hokkaido
    Place/intro
