@@ -101,7 +101,7 @@ CD-ROMイメージを作る
  # cvs update -Pd -r netbsd-6-1-2-RELEASE  ... NetBSD6.1.2
  # cd pkgsrc
  # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r pkgsrc-2013Q2 ... 2013Q2に更新
+ # cvs update -Pd -r pkgsrc-2013Q3 ... 2013Q3に更新
 
 バグレポート・追加差分
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -174,7 +174,7 @@ baserCMSをインストールしてみる
 
 SSL設定
 """""""
- 証明書のファイルを指定して、httpd.confのコメントを外して、apacheを再起動します。
+証明書のファイルを指定して、httpd.confのコメントを外して、apacheを再起動します。
 
 ::
 
@@ -195,7 +195,7 @@ SSL設定
 
  % cd /usr/pkgsrc/licenses  ... ライセンス条項が集まっている
  % ls |wc -l
- 205 
+ 206 
  % ls |head
  2-clause-bsd
  3proxy-0.5-license
@@ -256,4 +256,35 @@ pkgsrcに何か追加したい
  # url2pkg ダウンロードURL
  Makefileとかができる
 
+/usr/pkgsrc以下のメンテナンス
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+ # cd /usr/pkgsrc/pkgtools/lintpkgsrc
+ # make package-install
+ # cd /usr/pkgsrc;cvs update -PAd  ... /usr/pkgsrcを最新にする
+ # lintpkgsrc -pr   ....  古くなったバイナリパッケージを消す
+ # lintpkgsrc -or   ....  古くなったソースファイルを消す
+ # lintpkgsrc -mr   ....  ソースファイルのチェックサムが/usr/pkgsrcと合っているか
+
+pkgsrcの更新
+~~~~~~~~~~~~~~
+pkgchkを使う方法
+
+::
+
+ # cd /usr/pkgsrc/pkgtools/pkg_chk
+ # make package-install
+ # cvs update -PAd
+ # pkg_chk -u         .... 古いパッケージをコンパイルして更新する
+
+pkg_rolling-replaceを使う方法:依存関係に従って更新する
+
+::
+
+ # cd /usr/pkgsrc/pkgtools/pkg_rolling-replace
+ # make package-install
+ # cvs update -PAd
+ # pkg_rolling-replace -u
 
