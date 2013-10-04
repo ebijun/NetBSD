@@ -95,11 +95,3 @@ OSC広島発表
  NetBSD/x68kとXM6i 追いかけっこ開発,OSC2012広島,http://xm6i.org/event/osc2012hi
  OSC展示に見るNetBSD6.0新機能,OSC2012広島, http://www.slideshare.net/tsutsuii/osc-netbsd-60
 
-シール関連
-~~~~~~~~~~~~~
-
-.. csv-table::
- :widths: 70 70
-
- みくったーシールずかん,http://togetter.com/li/566230
- らこらこシール作成の記録,http://togetter.com/li/554138

@@ -288,3 +288,11 @@ pkg_rolling-replaceを使う方法:依存関係に従って更新する
  # cvs update -PAd
  # pkg_rolling-replace -u
 
+シール関連
+~~~~~~~~~~~~
+
+.. csv-table::
+ :widths: 70 70
+
+ みくったーシールずかん,http://togetter.com/li/566230
+ らこらこシール作成の記録,http://togetter.com/li/554138
