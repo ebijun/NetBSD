@@ -29,6 +29,27 @@ Maps:
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/hiroshima.rst
 
+OSC広島まとめ
+~~~~~~~~~~~~~
+
+.. csv-table::
+ :widths: 70 35 70
+
+ OSC2011神戸,開催募集,http://twitpic.com/4ls711
+ OSC2011広島,21世紀のX68000まとめ, http://togetter.com/li/195551
+ OSC2012広島, OSC2012 広島 NetBSDブース展示の記録,http://togetter.com/li/392778
+
+OSC広島発表
+~~~~~~~~~~~~~
+
+.. csv-table::
+ :widths: 70 35 70
+
+ ておくれライブイメージ,OSC2011広島,http://www.ceres.dti.ne.jp/tsutsui/osc11hi/Teokure-Live-Image.html
+ XM6iのご紹介, OSC2011広島, http://xm6i.org/event/osc2011hi
+ NetBSD/x68kとXM6i 追いかけっこ開発,OSC2012広島,http://xm6i.org/event/osc2012hi
+ OSC展示に見るNetBSD6.0新機能,OSC2012広島, http://www.slideshare.net/tsutsuii/osc-netbsd-60
+
 よく行く店
 ~~~~~~~~~~~~~~
 
@@ -74,24 +95,5 @@ Maps:
  広島市郷土資料館,宇品,曲がった鉄骨と、かもじづくり。かもじって何？
  旧広島港湾事務所,宇品,広島唯一の明治時代の公共建築かつ被曝建物。
 
-OSC広島まとめ
-~~~~~~~~~~~~~
 
-.. csv-table::
- :widths: 70 35 70
-
- OSC2011神戸,開催募集,http://twitpic.com/4ls711
- OSC2011広島,21世紀のX68000まとめ, http://togetter.com/li/195551
- OSC2012広島, OSC2012 広島 NetBSDブース展示の記録,http://togetter.com/li/392778
-
-OSC広島発表
-~~~~~~~~~~~~~
-
-.. csv-table::
- :widths: 70 35 70
-
- ておくれライブイメージ,OSC2011広島,http://www.ceres.dti.ne.jp/tsutsui/osc11hi/Teokure-Live-Image.html
- XM6iのご紹介, OSC2011広島, http://xm6i.org/event/osc2011hi
- NetBSD/x68kとXM6i 追いかけっこ開発,OSC2012広島,http://xm6i.org/event/osc2012hi
- OSC展示に見るNetBSD6.0新機能,OSC2012広島, http://www.slideshare.net/tsutsuii/osc-netbsd-60
 

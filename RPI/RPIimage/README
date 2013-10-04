@@ -1,17 +1,17 @@
 To: port-armNetBSD.org@localhost
-Subject: 2013-10-02-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2013-10-04-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2013-10-02-netbsd-raspi.img.gz for RPI.
+I've updated 2013-10-04-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-02-evbearmv6hf-el/2013-10-02-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-04-evbearmv6hf-el/2013-10-04-netbsd-raspi.img.gz
 
 Update:
 - NetBSD-current 6.99.24 2013-10-02
 - pkgsrc-current         2013-09-28
 - This is hardfloat image: build with evbearmv6hf-el
    softfloat: 2013-09-09-netbsd-evbarm.img.gz  evbarm 
->> hardfloat: 2013-10-02-netbsd-raspi.img.gz   evbearmv6hf-el
+>> hardfloat: 2013-10-04-netbsd-raspi.img.gz   evbearmv6hf-el
 
 Todo:
 - Check X11: display color and keyboard mapping
@@ -51,7 +51,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2013-09-28 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-02-evbearmv6hf-el/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-04-evbearmv6hf-el/packages
 
 Installed Packages:
 kterm

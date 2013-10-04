@@ -186,6 +186,26 @@ SSL設定
  /usr/pkg/etc/httpd/httpd.conf
  Include etc/httpd/httpd-ssl.conf  ... コメントはずす
 
+LibreOfficeを動かしてみる
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ /etc/mk.confに、設定を追加します。
+
+::
+
+ PKG_LANG=japanese
+ PKG_OPTIONS.halfbuzz=icu
+
+icuを有効にしたhalfbuzzパッケージをインストールします。
+
+::
+
+ # cd /usr/pkgsrc/fonts/halfbuzz
+ # make replace
+
+pkgsrc/wip (http://pkgsrc-wip.sourceforge.net/) から、
+wip/libreoffice4をインストールします。
+
+
 インストールするソフトウェアのライセンスを意識する
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
