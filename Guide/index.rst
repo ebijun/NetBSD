@@ -33,27 +33,24 @@ NetBSD観光ガイド
    :maxdepth: 2
    :numbered:
 
-   Place/hiroshima
    Place/intro
-   X68K
-   Software/mlterm
-
-..   Place/hokkaido
-   Place/intro
-   kobo
-   hpcmips
    pkgsrc
    guide
-   Luna
+   kobo
+   hpcmips
+
+..   Luna
+   Software/mlterm
    ZAURUS
    WZERO3
    NEWS
+   X68K
    RPI
-   kobo
+   Place/hokkaido
+   Place/shimane
+   Place/hiroshima
    events
    allevents
-   Place/shimane
-   Place/hokkaido
 
  * :ref:`genindex`
  * :ref:`modindex`
