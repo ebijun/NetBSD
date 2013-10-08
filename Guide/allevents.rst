@@ -25,16 +25,20 @@
 .. csv-table::
  :widths: 3 10 60 40
 
- 136,2013/8,Open Source Conference 2013 Shimane,
- 135,2013/8,Open Source Conference 2013 Kansai@Kyoto,
- 134,2012/7,Japan NetBSD Users' Group meeting & NetBSD BOF,
- 133,2013/7,Open Source Conference 2013 Okinawa,RPI XM6i zaurus WZero3
- 132,2013/6,Open Source Conference 2013 Nagoya,Luna88K/OpenBSD Luna68K XM6i RPI
- 131,2013/3,AsiaBSDCon 2013,KOBO NetWalker WZero3
- 130,2013/3,Open Source Conference 2013 Tokushima,Luna68K KOBO RPI NetWalker WZero3
- 129,2013/2,Open Source Conference 2013 Tokyo/Spring,RPI KOBO NetWalker WZero3
- 128,2013/2,Open Source Conference 2013 Hamamatsu,RPI KOBO NetWalker WZero3
- 127,2012/12,Open Source Conference 2012 Fukuoka,NetWalker XM6i WZero3
+ 140,2013/?,Open Source Conference 2013 Hiroshima
+ 139,2013/?,Open Source Conference 2013 Hokkaido
+ 138,2013/8,Open Source Conference 2013 Shimane
+ 137,2013/?,Kawagoe
+ 136,2013/8,Open Source Conference 2013 Kansai@Kyoto,
+ 135,2012/7,Japan NetBSD Users' Group meeting & NetBSD BOF,
+ 134,2013/7,Open Source Conference 2013 Okinawa,RPI XM6i zaurus WZero3
+ 133,2013/6,Open Source Conference 2013 Nagoya,Luna88K/OpenBSD Luna68K XM6i RPI
+ 132,2013/3,AsiaBSDCon 2013,KOBO NetWalker WZero3
+ 131,2013/3,Open Source Conference 2013 Tokushima,Luna68K KOBO RPI NetWalker WZero3
+ 130,2013/2,Open Source Conference 2013 Tokyo/Spring,RPI KOBO NetWalker WZero3
+ 129,2013/2,Open Source Conference 2013 Hamamatsu,RPI KOBO NetWalker WZero3
+ 128,2012/12,Open Source Conference 2012 Fukuoka,NetWalker XM6i WZero3
+ 127,2012/11,Kansai Open Source 2012,Osaka,RPI
  126,2012/11,Open Source Conference 2012 Aizu,NetWalker XM6i WZero3
  125,2012/10,Open Source Conference 2012 Oita/Fall,NetWalker XM6i WZero3
  124,2012/10,Open Source Conference 2012 Hiroshima,x68k Nereid Xellent30 X68060 Neptune-X XM6i

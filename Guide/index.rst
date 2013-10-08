@@ -33,11 +33,14 @@ NetBSD観光ガイド
    :maxdepth: 2
    :numbered:
 
+   Place/tokyo
    Place/intro
-   pkgsrc
-   guide
    kobo
-   hpcmips
+   RPI
+   WZERO3
+   ZAURUS
+   NEWS
+   allevents
 
 ..   Luna
    Software/mlterm

@@ -4,8 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-evbarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.23-evbarm-arm.iso  
-PKGSRC=pkgsrc-2013-09-06.tar.gz
+IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-arm-201310061640Z.iso
+PKGSRC=pkgsrc-2013-10-05.tar.gz
 
 # mount cdrom
 MNT_CDROM=/mnt1
@@ -92,3 +92,6 @@ cdunmount:
 	echo mount cdrom image.
 	umount ${MNT_CDROM}
 	vnconfig -u ${VND_CDROM}
+
+copy:
+	dd if=${FILE} of=/dev/rsd0d bs=4m progress=20

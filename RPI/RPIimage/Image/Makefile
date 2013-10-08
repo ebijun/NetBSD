@@ -4,12 +4,15 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-#IMAGE=/usr/release/earm/images/NetBSD-6.99.24-evbarm-earmv6hf.iso  
-IMAGE=/usr/release/earm/images/NetBSD-6.99.23-evbarm-earmv6hf.iso
-PKGSRC=pkgsrc-2013-09-28.tar.gz
+IMAGE=/usr/release/earm/images/NetBSD-6.99.24-evbarm-earmv6hf.iso  
 
-SETS=/usr/release/earm/evbarm/binary/sets
-RPI=/usr/release/earm/evbarm/binary/gzimg/rpi.img
+PKGSRC=pkgsrc-2013-09-28.tar.gz
+#PKGSRC=pkgsrc-2013Q3.tar.gz
+
+#SETS=/usr/release/earm/evbarm/binary/sets
+#RPI=/usr/release/earm/evbarm/binary/gzimg/rpi.img
+SETS=${MNT_CDROM}/*/binary/sets
+RPI=${MNT_CDROM}/*/binary/gzimg/rpi.img
 
 # extract sets.
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
@@ -18,9 +21,10 @@ LIST=man modules text xbase xcomp xetc xfont xserver
 # mount point
 MNT=/mnt
 VND=vnd0
+MNT_CDROM=/mnt1
+VND_CDROM=vnd1
 
-
-all: file rpi extract
+all: file cdmount rpi extract cdunmount
 
 # extract sets to image file.
 extract:
@@ -73,3 +77,15 @@ release:
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
+
+# mount cdrom image
+cdmount:
+	echo mount cdrom image.
+	vnconfig ${VND_CDROM} ${IMAGE}
+	mount_cd9660 /dev/${VND_CDROM}a ${MNT_CDROM}
+
+# unmount cdrom image
+cdunmount:
+	echo mount cdrom image.
+	umount ${MNT_CDROM}
+	vnconfig -u ${VND_CDROM}
