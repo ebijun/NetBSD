@@ -23,12 +23,11 @@
 ---------------
 
 .. csv-table::
- :widths: 3 10 60 40
 
- 140,2013/?,Open Source Conference 2013 Hiroshima
- 139,2013/?,Open Source Conference 2013 Hokkaido
- 138,2013/8,Open Source Conference 2013 Shimane
- 137,2013/?,Kawagoe
+ 140,2013/?,Open Source Conference 2013 Hiroshima,
+ 139,2013/?,Open Source Conference 2013 Hokkaido,
+ 138,2013/8,Open Source Conference 2013 Shimane,
+ 137,2013/?,Kawagoe,
  136,2013/8,Open Source Conference 2013 Kansai@Kyoto,
  135,2012/7,Japan NetBSD Users' Group meeting & NetBSD BOF,
  134,2013/7,Open Source Conference 2013 Okinawa,RPI XM6i zaurus WZero3
