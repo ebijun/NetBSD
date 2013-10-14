@@ -4,10 +4,10 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-earmhf-201310041500Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-earmhf-201310100300Z.iso
 
-PKGSRC=pkgsrc-2013-10-05.tar.gz
-#PKGSRC=pkgsrc-2013Q3.tar.gz
+#PKGSRC=pkgsrc-2013-10-05.tar.gz
+PKGSRC=pkgsrc-2013Q3.tar.gz
 
 #SETS=/usr/release/earm/evbarm/binary/sets
 #RPI=/usr/release/earm/evbarm/binary/gzimg/rpi.img
