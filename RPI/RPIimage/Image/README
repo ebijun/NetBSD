@@ -96,5 +96,8 @@ Need Fix:
  port-evbarm/48132: devel/tradcpp build broken on evbearmv6hf-el 6.99.23
  s/-msoft-float/-marm -mthumb-interwork  -mfloat-abi=hard -mhard-float/
 
+ port-evbarm/48288: Please update Raspberry Pi firmware
+  src/external/broadcom/rpi-firmware 
+
 --
 Jun Ebihara

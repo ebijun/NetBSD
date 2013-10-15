@@ -95,3 +95,11 @@ cdunmount:
 
 copy:
 	dd if=${FILE} of=/dev/rsd0d bs=4m progress=20
+
+firm:
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/bootcode.bin /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/fixup.dat /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/fixup_cd.dat /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/start.elf /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/start_cd.elf /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/LICENCE.broadcom /mnt

@@ -4,17 +4,16 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-earmhf-201310100300Z.iso
+#IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-earmhf-201310100300Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-earmhf-201310131600Z.iso
 
 #PKGSRC=pkgsrc-2013-10-05.tar.gz
 PKGSRC=pkgsrc-2013Q3.tar.gz
 
-#SETS=/usr/release/earm/evbarm/binary/sets
-#RPI=/usr/release/earm/evbarm/binary/gzimg/rpi.img
+# extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
 RPI=${MNT_CDROM}/evbarm/binary/gzimg/rpi.img
 
-# extract sets.
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules text xbase xcomp xetc xfont xserver
 
@@ -24,7 +23,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file cdmount rpi extract cdunmount
+all: file cdmount rpi extract firm cdunmount
 
 # extract sets to image file.
 extract:
@@ -89,3 +88,17 @@ cdunmount:
 	echo mount cdrom image.
 	umount ${MNT_CDROM}
 	vnconfig -u ${VND_CDROM}
+
+# copy newer firmware
+firm:
+	vnconfig ${VND} ${FILE}
+	fsck -fy /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/bootcode.bin /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/fixup.dat /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/fixup_cd.dat /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/start.elf /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/start_cd.elf /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/LICENCE.broadcom /mnt
+	umount ${MNT}
+	vnconfig -u ${VND}

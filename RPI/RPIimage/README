@@ -1,17 +1,18 @@
 To: port-armNetBSD.org@localhost
-Subject: 2013-10-04-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2013-10-14-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2013-10-04-netbsd-raspi.img.gz for RPI.
+I've updated 2013-10-14-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-04-evbearmv6hf-el/2013-10-04-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-14-earmhf/2013-10-14-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.24 2013-10-02
-- pkgsrc-current         2013-09-28
+- NetBSD-current 6.99.24 2013-10-14
+  from nyftp iso file:NetBSD-6.99.24-evbarm-earmhf-201310100300Z.iso
+- pkgsrc-current         2013Q3
 - This is hardfloat image: build with evbearmv6hf-el
    softfloat: 2013-09-09-netbsd-evbarm.img.gz  evbarm 
->> hardfloat: 2013-10-04-netbsd-raspi.img.gz   evbearmv6hf-el
+>> hardfloat: 2013-10-14-netbsd-raspi.img.gz   evbearmhf
 
 Todo:
 - Check X11: display color and keyboard mapping
@@ -23,11 +24,11 @@ Todo:
 
 =====================
 
-For OpenSourceConference 2013 Hiroshima
- (https://www.facebook.com/events/159576247556790/)
+For OpenSourceConference 2013 Tokyo/Fall
+ (https://www.facebook.com/events/540784009296966/)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.24 evbearmv6hf-el rpi.img.gz base
+- NetBSD 6.99.24 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -49,9 +50,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2013-09-28 tree inside.
+  - pkgsrc: 2013Q3 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-04-evbearmv6hf-el/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-14-earmhf/packages
 
 Installed Packages:
 kterm
@@ -89,11 +90,19 @@ Build sample script:
 Guide:
  https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
 
-Need Fix:
+Fixed:
  port-evbarm/48132: devel/tradcpp build broken on evbearmv6hf-el 6.99.23
  s/-msoft-float/-marm -mthumb-interwork  -mfloat-abi=hard -mhard-float/
 
-One more time: (we're gonna celebrate, in Hiroshima.
+Need Fix:
+ port-arm/48215: pkg_add fails on recent NetBSD/evbearmv6hf-el current
+ port-arm/48267: pkg_add thinks it's running on earm even though it's running on earmhf
+
+  workaround and around for loser.
+  add /etc/mk.conf
+  PKG_ADD_CMD:=   /usr/sbin/pkg_add -m earmhf
+
+One more time: (we're gonna celebrate
 
  1. login root
  2. start mlterm-fb 

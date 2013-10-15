@@ -437,6 +437,10 @@ wordpress
 
  # cd /usr/pkgsrc/www/wordpress
  # make package-install
+ # cd /usr/pkgsrc/archivers/php-zlib
+ # make package-install .... zip形式のテーマをインストールする時に必要
+ AddHandler application/x-httpd-php .php
+
 
 fossilを使ってみる
 ~~~~~~~~~~~~~~~~~~

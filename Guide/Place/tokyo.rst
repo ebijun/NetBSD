@@ -39,25 +39,10 @@ OSC東京まとめ
  OSC2012東京秋 NetBSDブース展示の記録, http://togetter.com/li/369471
  OSC2012東京春 NetBSDブース展示の記録, http://togetter.com/li/274145
 
-
-OSC東京発表
-~~~~~~~~~~~~~
-
-.. csv-table::
- :widths: 70 35 70
-
- ておくれライブイメージ,OSC2011広島,http://www.ceres.dti.ne.jp/tsutsui/osc11hi/Teokure-Live-Image.html
- XM6iのご紹介, OSC2011広島, http://xm6i.org/event/osc2011hi
- NetBSD/x68kとXM6i 追いかけっこ開発,OSC2012広島,http://xm6i.org/event/osc2012hi
- OSC展示に見るNetBSD6.0新機能,OSC2012広島, http://www.slideshare.net/tsutsuii/osc-netbsd-60
-
 OSC東京主な展示物
 ~~~~~~~~~~~~~~~~~
 
 #. 2013/2/22-23
-.. image:: Picture/2012/10/20/DSC_1045.JPG
- :width: 400
-
 #. 2012/9/7-8
 #. 2012/3/16-17
 #. 2011/11/19-20
@@ -66,171 +51,112 @@ OSC東京主な展示物
 #. 2010/2/26-27
 #. 2009/10/30-31
 
-Raspberry Pi,
-NetBSD/KOBO
-NetBSD/netwalker
-mikutter
+.. image:: /Picture/2013/02/22/DSC_1661.jpg
+.. image:: /Picture/2013/02/22/DSC_1662.jpg
+.. image:: /Picture/2013/02/22/DSC_1671.jpg
+.. image:: /Picture/2013/02/22/DSC_1672.jpg
+.. image:: /Picture/2013/02/22/DSC_1674.jpg
+.. image:: /Picture/2012/09/08/DSC_0820.JPG
+.. image:: /Picture/2012/09/08/DSC_0822.JPG
+.. image:: /Picture/2012/09/08/DSC_0824.JPG
+.. image:: /Picture/2012/09/08/DSC_0825.JPG
+.. image:: /Picture/2012/09/08/DSC_0826.JPG
+.. image:: /Picture/2012/09/08/DSC_0828.JPG
+.. image:: /Picture/2012/09/08/DSC_0829.JPG
+.. image:: /Picture/2012/09/07/DSC_0789.JPG
+.. image:: /Picture/2012/09/07/DSC_0790.JPG
+.. image:: /Picture/2012/09/07/DSC_0791.JPG
+.. image:: /Picture/2012/09/07/DSC_0792.JPG
+.. image:: /Picture/2012/09/07/DSC_0796.JPG
+.. image:: /Picture/2012/09/07/DSC_0797.JPG
+.. image:: /Picture/2012/09/07/DSC_0798.JPG
+.. image:: /Picture/2012/09/07/DSC_0800.JPG
+.. image:: /Picture/2012/09/07/DSC_0801.JPG
+.. image:: /Picture/2012/09/07/DSC_0802.JPG
+.. image:: /Picture/2012/09/07/DSC_0803.JPG
 
-.. figure:: /Picture.org/2013/02/22/DSC_1659.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1660.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1661.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1662.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1663.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1664.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1665.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1666.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1667.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1668.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1669.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1670.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1671.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1672.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1673.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1674.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1675.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/DSC_1676.jpg
- :scale: 20%
-.. figure:: /Picture.org/2013/02/22/dsc02147.jpg
- :scale: 20%
+.. image:: /Picture/2012/09/07/DSC_0805.JPG
+.. image:: /Picture/2012/09/07/DSC_0806.JPG
+.. image:: /Picture/2012/09/07/DSC_0807.JPG
 
-.. figure:: /Picture/2012/09/08/DSC_0820.JPG
 
-.. figure:: /Picture/2012/09/08/DSC_0821.JPG
+.. image:: /Picture/2012/09/07/DSC_0811.JPG
+.. image:: /Picture/2012/09/07/DSC_0812.JPG
+.. image:: /Picture/2012/09/07/DSC_0813.JPG
+.. image:: /Picture/2012/09/07/DSC_0814.JPG
+.. image:: /Picture/2012/09/07/DSC_0815.JPG
+.. image:: /Picture/2012/09/07/DSC_0816.JPG
+.. image:: /Picture/2012/09/07/DSC_0817.JPG
+.. image:: /Picture/2012/09/07/DSC_0818.JPG
 
-.. figure:: /Picture/2012/09/08/DSC_0822.JPG
-.. figure:: /Picture/2012/09/08/DSC_0823.JPG
-.. figure:: /Picture/2012/09/08/DSC_0824.JPG
-.. figure:: /Picture/2012/09/08/DSC_0825.JPG
-.. figure:: /Picture/2012/09/08/DSC_0826.JPG
-.. figure:: /Picture/2012/09/08/DSC_0827.JPG
-.. figure:: /Picture/2012/09/08/DSC_0828.JPG
-.. figure:: /Picture/2012/09/08/DSC_0829.JPG
-.. figure:: /Picture/2012/09/08/DSC_0830.JPG
-.. figure:: /Picture/2012/09/08/dsc01694.jpg
-.. figure:: /Picture/2012/09/07/DSC_0788.JPG
-.. figure:: /Picture/2012/09/07/DSC_0789.JPG
-.. figure:: /Picture/2012/09/07/DSC_0790.JPG
-.. figure:: /Picture/2012/09/07/DSC_0791.JPG
-.. figure:: /Picture/2012/09/07/DSC_0792.JPG
-.. figure:: /Picture/2012/09/07/DSC_0793.JPG
-.. figure:: /Picture/2012/09/07/DSC_0794.JPG
-.. figure:: /Picture/2012/09/07/DSC_0795.JPG
-.. figure:: /Picture/2012/09/07/DSC_0796.JPG
-.. figure:: /Picture/2012/09/07/DSC_0797.JPG
-.. figure:: /Picture/2012/09/07/DSC_0798.JPG
-.. figure:: /Picture/2012/09/07/DSC_0799.JPG
-.. figure:: /Picture/2012/09/07/DSC_0800.JPG
-.. figure:: /Picture/2012/09/07/DSC_0801.JPG
-.. figure:: /Picture/2012/09/07/DSC_0802.JPG
-.. figure:: /Picture/2012/09/07/DSC_0803.JPG
-.. figure:: /Picture/2012/09/07/DSC_0804.JPG
-.. figure:: /Picture/2012/09/07/DSC_0805.JPG
-.. figure:: /Picture/2012/09/07/DSC_0806.JPG
-.. figure:: /Picture/2012/09/07/DSC_0807.JPG
-.. figure:: /Picture/2012/09/07/DSC_0808.JPG
-.. figure:: /Picture/2012/09/07/DSC_0809.JPG
-.. figure:: /Picture/2012/09/07/DSC_0810.JPG
-.. figure:: /Picture/2012/09/07/DSC_0811.JPG
-.. figure:: /Picture/2012/09/07/DSC_0812.JPG
-.. figure:: /Picture/2012/09/07/DSC_0813.JPG
-.. figure:: /Picture/2012/09/07/DSC_0814.JPG
-.. figure:: /Picture/2012/09/07/DSC_0815.JPG
-.. figure:: /Picture/2012/09/07/DSC_0816.JPG
-.. figure:: /Picture/2012/09/07/DSC_0817.JPG
-.. figure:: /Picture/2012/09/07/DSC_0818.JPG
-.. figure:: /Picture/2012/09/07/DSC_0819.JPG
-.. figure:: /Picture/2012/09/07/dsc01692.jpg
-.. figure:: /Picture/2012/09/07/dsc01693.jpg
-.. figure:: /Picture/2012/03/17/DSC_0004.JPG
-.. figure:: /Picture/2012/03/17/DSC_0005.JPG
-.. figure:: /Picture/2012/03/17/DSC_0006.JPG
-.. figure:: /Picture/2012/03/17/DSC_0007.JPG
-.. figure:: /Picture/2012/03/17/DSC_0008.JPG
-.. figure:: /Picture/2012/03/17/DSC_0009.JPG
-.. figure:: /Picture/2012/03/17/DSC_0010.JPG
-.. figure:: /Picture/2012/03/17/DSC_0011.JPG
-.. figure:: /Picture/2012/03/17/DSC_0012.JPG
-.. figure:: /Picture/2012/03/17/DSC_0013.JPG
-.. figure:: /Picture/2012/03/17/DSC_0014.JPG
-.. figure:: /Picture/2012/03/17/DSC_0015.JPG
-.. figure:: /Picture/2012/03/17/DSC_0016.JPG
-.. figure:: /Picture/2012/03/17/DSC_0017.JPG
-.. figure:: /Picture/2012/03/17/DSC_0018.JPG
-.. figure:: /Picture/2012/03/17/DSC_0019.JPG
-.. figure:: /Picture/2012/03/17/DSC_0020.JPG
-.. figure:: /Picture/2012/03/17/DSC_0021.JPG
-.. figure:: /Picture/2012/03/17/DSC_0022.JPG
-.. figure:: /Picture/2012/03/17/DSC_0023.JPG
-.. figure:: /Picture/2012/03/17/DSC_0024.JPG
-.. figure:: /Picture/2012/03/17/DSC_0025.JPG
-.. figure:: /Picture/2012/03/17/DSC_0026.JPG
-.. figure:: /Picture/2012/03/17/DSC_0027.JPG
-.. figure:: /Picture/2012/03/17/DSC_0028.JPG
-.. figure:: /Picture/2012/03/17/DSC_0029.JPG
-.. figure:: /Picture/2012/03/17/DSC_0030.JPG
-.. figure:: /Picture/2012/03/17/dsc00366.jpg
-.. figure:: /Picture/2012/03/17/dsc00367.jpg
-.. figure:: /Picture/2012/03/17/dsc00368.jpg
-.. figure:: /Picture/2012/03/17/dsc00369.jpg
-.. figure:: /Picture/2012/03/16/DSC_0001.JPG
-.. figure:: /Picture/2012/03/16/DSC_0002.JPG
-.. figure:: /Picture/2012/03/16/DSC_0003.JPG
-.. figure:: /Picture/2012/03/16/dsc00363.jpg
-.. figure:: /Picture/2012/03/16/dsc00364.jpg
-.. figure:: /Picture/2012/03/16/dsc00365.jpg
-.. figure:: /Picture/2011/11/20/P1001286.JPG
-.. figure:: /Picture/2011/11/20/P1001287.JPG
-.. figure:: /Picture/2011/11/20/P1001288.JPG
-.. figure:: /Picture/2011/11/20/P1001289.JPG
-.. figure:: /Picture/2011/11/20/P1001290.JPG
-.. figure:: /Picture/2011/11/20/P1001291.JPG
-.. figure:: /Picture/2011/11/20/P1001292.JPG
-.. figure:: /Picture/2011/11/20/P1001293.JPG
-.. figure:: /Picture/2011/11/20/P1001294.JPG
-.. figure:: /Picture/2011/11/20/P1001295.JPG
-.. figure:: /Picture/2011/11/20/P1001296.JPG
-.. figure:: /Picture/2011/11/20/P1001297.JPG
-.. figure:: /Picture/2011/11/20/P1001298.JPG
-.. figure:: /Picture/2011/11/19/P1001268.JPG
-.. figure:: /Picture/2011/11/19/P1001269.JPG
-.. figure:: /Picture/2011/11/19/P1001270.JPG
-.. figure:: /Picture/2011/11/19/P1001271.JPG
-.. figure:: /Picture/2011/11/19/P1001272.JPG
-.. figure:: /Picture/2011/11/19/P1001273.JPG
-.. figure:: /Picture/2011/11/19/P1001274.JPG
-.. figure:: /Picture/2011/11/19/P1001275.JPG
-.. figure:: /Picture/2011/11/19/P1001276.JPG
-.. figure:: /Picture/2011/11/19/P1001277.JPG
-.. figure:: /Picture/2011/11/19/P1001278.JPG
-.. figure:: /Picture/2011/11/19/P1001279.JPG
-.. figure:: /Picture/2011/11/19/P1001280.JPG
-.. figure:: /Picture/2011/11/19/P1001281.JPG
-.. figure:: /Picture/2011/11/19/P1001282.JPG
-.. figure:: /Picture/2011/11/19/P1001283.JPG
-.. figure:: /Picture/2011/11/19/P1001284.JPG
-.. figure:: /Picture/2011/11/19/P1001285.JPG
-.. figure:: /Picture/2011/03/04/P1000299.JPG
-.. figure:: /Picture/2011/03/04/P1000300.JPG
-.. figure:: /Picture/2011/03/04/P1000301.JPG
-.. figure:: /Picture/2011/03/04/P1000302.JPG
-.. figure:: /Picture/2011/03/04/P1000303.JPG
+
+.. image:: /Picture/2012/09/07/dsc01693.jpg
+
+
+.. image:: /Picture/2012/03/17/DSC_0005.JPG
+
+.. image:: /Picture/2012/03/17/DSC_0009.JPG
+.. image:: /Picture/2012/03/17/DSC_0010.JPG
+
+.. image:: /Picture/2012/03/17/DSC_0012.JPG
+.. image:: /Picture/2012/03/17/DSC_0013.JPG
+
+
+.. image:: /Picture/2012/03/17/DSC_0016.JPG
+
+.. image:: /Picture/2012/03/17/DSC_0018.JPG
+
+.. image:: /Picture/2012/03/17/DSC_0020.JPG
+.. image:: /Picture/2012/03/17/DSC_0021.JPG
+.. image:: /Picture/2012/03/17/DSC_0022.JPG
+.. image:: /Picture/2012/03/17/DSC_0023.JPG
+
+.. image:: /Picture/2012/03/17/DSC_0025.JPG
+
+
+.. image:: /Picture/2012/03/17/DSC_0028.JPG
+
+.. image:: /Picture/2012/03/17/dsc00368.jpg
+
+.. image:: /Picture/2012/03/16/DSC_0003.JPG
+.. image:: /Picture/2012/03/16/dsc00364.jpg
+
+.. image:: /Picture/2011/11/20/P1001286.JPG
+
+.. image:: /Picture/2011/11/20/P1001288.JPG
+.. image:: /Picture/2011/11/20/P1001289.JPG
+.. image:: /Picture/2011/11/20/P1001290.JPG
+.. image:: /Picture/2011/11/20/P1001291.JPG
+.. image:: /Picture/2011/11/20/P1001292.JPG
+.. image:: /Picture/2011/11/20/P1001293.JPG
+.. image:: /Picture/2011/11/20/P1001294.JPG
+.. image:: /Picture/2011/11/20/P1001295.JPG
+.. image:: /Picture/2011/11/20/P1001296.JPG
+.. image:: /Picture/2011/11/20/P1001297.JPG
+.. image:: /Picture/2011/11/20/P1001298.JPG
+.. image:: /Picture/2011/11/19/P1001268.JPG
+.. image:: /Picture/2011/11/19/P1001269.JPG
+.. image:: /Picture/2011/11/19/P1001270.JPG
+.. image:: /Picture/2011/11/19/P1001271.JPG
+.. image:: /Picture/2011/11/19/P1001272.JPG
+.. image:: /Picture/2011/11/19/P1001273.JPG
+.. image:: /Picture/2011/11/19/P1001274.JPG
+.. image:: /Picture/2011/11/19/P1001275.JPG
+.. image:: /Picture/2011/11/19/P1001276.JPG
+.. image:: /Picture/2011/11/19/P1001277.JPG
+.. image:: /Picture/2011/11/19/P1001278.JPG
+.. image:: /Picture/2011/11/19/P1001279.JPG
+.. image:: /Picture/2011/11/19/P1001280.JPG
+.. image:: /Picture/2011/11/19/P1001281.JPG
+.. image:: /Picture/2011/11/19/P1001282.JPG
+.. image:: /Picture/2011/11/19/P1001283.JPG
+.. image:: /Picture/2011/11/19/P1001284.JPG
+.. image:: /Picture/2011/11/19/P1001285.JPG
+.. image:: /Picture/2011/03/04/P1000299.JPG
+.. image:: /Picture/2011/03/04/P1000300.JPG
+.. image:: /Picture/2011/03/04/P1000301.JPG
+.. image:: /Picture/2011/03/04/P1000302.JPG
+.. image:: /Picture/2011/03/04/P1000303.JPG
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -251,5 +177,46 @@ mikutter
  ポパイ,両国,ビール屋さんが研修に来る店
  たん清,秋葉原,焼肉夜話
  サトー電気,町田/川崎,エレックセンターにあった部品が一部ある
- 
- 
+ 明星大学
+ ノット
+ 東京都渋谷区幡ヶ谷１丁目４−１
+ いくどん柿生店
+ ヨーロピアンビアパブピガール
+ ムーンライト クラフト Craft ビア Beer
+ キールズ・バーハウス
+ ジャーマンホビードラ
+ 東京都東大和市多摩湖４丁目６４４
+ 厚木ビール（株）
+ GreenBud！！
+ ピンバイス
+ 所沢航空発祥記念館
+ 古書ドリス
+ 江東区森下文化センター「田河水泡・のらくろ館」
+ fukadaso
+ 和しょく えびはら
+ ザ・ロイヤル・スコッツマン(Public House The Royal Scotsman)
+ ラ・カシェット
+ 緑の豆神楽坂焙煎所
+ BEER BAR Bitter
+ 三共池袋ビル 4階 401号室
+ 東京都豊島区池袋２丁目１２−１１
+ 立川市こども未来センター
+ つるかめ食堂
+ 唯尼庵
+ らんぶる
+ アカシア 新宿本店
+ どん底 新宿
+ ともしび
+ でんえん
+ アミー
+ 〒185-0012 東京都国分寺市本町３丁目２−２
+ 喫茶ルオー
+ 麦
+ 呑喜
+ 月は夜を見て
+ 名曲喫茶ライオン
+ ヴィオロン,東京都杉並区阿佐谷北２丁目９
+ カフェアリエ
+ トルコ料理専門店 赤坂 アセナ
+ ニューマルヤ
+ d-倉庫

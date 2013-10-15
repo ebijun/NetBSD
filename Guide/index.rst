@@ -33,19 +33,16 @@ NetBSD観光ガイド
    :maxdepth: 2
    :numbered:
 
-   Place/tokyo
    Place/intro
-   kobo
    RPI
-   WZERO3
-   ZAURUS
-   NEWS
-   allevents
+   Place/tokyo
 
 ..   Luna
+    Place/tokyo
    Software/mlterm
    ZAURUS
    WZERO3
+   KOBO
    NEWS
    X68K
    RPI
