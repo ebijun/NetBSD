@@ -104,5 +104,9 @@ Build sample script:
 Guide:
  https://github.com/ebijun/NetBSD/blob/master/Guide/kobo.rst
 
+Fixed:
+ panic when attaching vcaudio on raspberry pi
+ http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48287
+
 --
 Jun Ebihara

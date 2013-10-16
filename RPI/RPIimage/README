@@ -13,6 +13,10 @@ Update:
 - This is hardfloat image: build with evbearmv6hf-el
    softfloat: 2013-09-09-netbsd-evbarm.img.gz  evbarm 
 >> hardfloat: 2013-10-14-netbsd-raspi.img.gz   evbearmhf
+- DMA support and (initial) isoc transfer support.
+  http://mail-index.netbsd.org/source-changes/2013/10/15/msg048238.html
+- Update firmware from today 2013-10-15. Requested in PR/48288.
+  http://mail-index.netbsd.org/source-changes/2013/10/15/msg048243.html
 
 Todo:
 - Check X11: display color and keyboard mapping
