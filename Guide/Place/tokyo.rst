@@ -57,106 +57,40 @@ OSC東京主な展示物
 .. image:: /Picture/2013/02/22/DSC_1672.jpg
 .. image:: /Picture/2013/02/22/DSC_1674.jpg
 .. image:: /Picture/2012/09/08/DSC_0820.JPG
-.. image:: /Picture/2012/09/08/DSC_0822.JPG
-.. image:: /Picture/2012/09/08/DSC_0824.JPG
-.. image:: /Picture/2012/09/08/DSC_0825.JPG
 .. image:: /Picture/2012/09/08/DSC_0826.JPG
 .. image:: /Picture/2012/09/08/DSC_0828.JPG
-.. image:: /Picture/2012/09/08/DSC_0829.JPG
-.. image:: /Picture/2012/09/07/DSC_0789.JPG
-.. image:: /Picture/2012/09/07/DSC_0790.JPG
 .. image:: /Picture/2012/09/07/DSC_0791.JPG
 .. image:: /Picture/2012/09/07/DSC_0792.JPG
 .. image:: /Picture/2012/09/07/DSC_0796.JPG
 .. image:: /Picture/2012/09/07/DSC_0797.JPG
-.. image:: /Picture/2012/09/07/DSC_0798.JPG
 .. image:: /Picture/2012/09/07/DSC_0800.JPG
 .. image:: /Picture/2012/09/07/DSC_0801.JPG
-.. image:: /Picture/2012/09/07/DSC_0802.JPG
 .. image:: /Picture/2012/09/07/DSC_0803.JPG
-
-.. image:: /Picture/2012/09/07/DSC_0805.JPG
 .. image:: /Picture/2012/09/07/DSC_0806.JPG
-.. image:: /Picture/2012/09/07/DSC_0807.JPG
-
-
-.. image:: /Picture/2012/09/07/DSC_0811.JPG
-.. image:: /Picture/2012/09/07/DSC_0812.JPG
-.. image:: /Picture/2012/09/07/DSC_0813.JPG
-.. image:: /Picture/2012/09/07/DSC_0814.JPG
-.. image:: /Picture/2012/09/07/DSC_0815.JPG
-.. image:: /Picture/2012/09/07/DSC_0816.JPG
 .. image:: /Picture/2012/09/07/DSC_0817.JPG
 .. image:: /Picture/2012/09/07/DSC_0818.JPG
-
-
-.. image:: /Picture/2012/09/07/dsc01693.jpg
-
-
 .. image:: /Picture/2012/03/17/DSC_0005.JPG
-
-.. image:: /Picture/2012/03/17/DSC_0009.JPG
 .. image:: /Picture/2012/03/17/DSC_0010.JPG
-
-.. image:: /Picture/2012/03/17/DSC_0012.JPG
 .. image:: /Picture/2012/03/17/DSC_0013.JPG
-
-
 .. image:: /Picture/2012/03/17/DSC_0016.JPG
-
 .. image:: /Picture/2012/03/17/DSC_0018.JPG
-
-.. image:: /Picture/2012/03/17/DSC_0020.JPG
-.. image:: /Picture/2012/03/17/DSC_0021.JPG
 .. image:: /Picture/2012/03/17/DSC_0022.JPG
-.. image:: /Picture/2012/03/17/DSC_0023.JPG
-
-.. image:: /Picture/2012/03/17/DSC_0025.JPG
-
-
-.. image:: /Picture/2012/03/17/DSC_0028.JPG
-
-.. image:: /Picture/2012/03/17/dsc00368.jpg
-
-.. image:: /Picture/2012/03/16/DSC_0003.JPG
-.. image:: /Picture/2012/03/16/dsc00364.jpg
-
 .. image:: /Picture/2011/11/20/P1001286.JPG
-
 .. image:: /Picture/2011/11/20/P1001288.JPG
 .. image:: /Picture/2011/11/20/P1001289.JPG
-.. image:: /Picture/2011/11/20/P1001290.JPG
 .. image:: /Picture/2011/11/20/P1001291.JPG
 .. image:: /Picture/2011/11/20/P1001292.JPG
 .. image:: /Picture/2011/11/20/P1001293.JPG
-.. image:: /Picture/2011/11/20/P1001294.JPG
-.. image:: /Picture/2011/11/20/P1001295.JPG
 .. image:: /Picture/2011/11/20/P1001296.JPG
-.. image:: /Picture/2011/11/20/P1001297.JPG
-.. image:: /Picture/2011/11/20/P1001298.JPG
-.. image:: /Picture/2011/11/19/P1001268.JPG
-.. image:: /Picture/2011/11/19/P1001269.JPG
 .. image:: /Picture/2011/11/19/P1001270.JPG
-.. image:: /Picture/2011/11/19/P1001271.JPG
 .. image:: /Picture/2011/11/19/P1001272.JPG
-.. image:: /Picture/2011/11/19/P1001273.JPG
-.. image:: /Picture/2011/11/19/P1001274.JPG
 .. image:: /Picture/2011/11/19/P1001275.JPG
 .. image:: /Picture/2011/11/19/P1001276.JPG
-.. image:: /Picture/2011/11/19/P1001277.JPG
-.. image:: /Picture/2011/11/19/P1001278.JPG
 .. image:: /Picture/2011/11/19/P1001279.JPG
 .. image:: /Picture/2011/11/19/P1001280.JPG
-.. image:: /Picture/2011/11/19/P1001281.JPG
-.. image:: /Picture/2011/11/19/P1001282.JPG
-.. image:: /Picture/2011/11/19/P1001283.JPG
-.. image:: /Picture/2011/11/19/P1001284.JPG
-.. image:: /Picture/2011/11/19/P1001285.JPG
-.. image:: /Picture/2011/03/04/P1000299.JPG
-.. image:: /Picture/2011/03/04/P1000300.JPG
 .. image:: /Picture/2011/03/04/P1000301.JPG
-.. image:: /Picture/2011/03/04/P1000302.JPG
-.. image:: /Picture/2011/03/04/P1000303.JPG
+
+
 
 よく行く店
 ~~~~~~~~~~~~~~

@@ -33,9 +33,9 @@ NetBSD観光ガイド
    :maxdepth: 2
    :numbered:
 
+   Place/tokyo
    Place/intro
    RPI
-   Place/tokyo
 
 ..   Luna
     Place/tokyo
