@@ -5,10 +5,9 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
 #IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-earmhf-201310100300Z.iso
-IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-earmhf-201310131600Z.iso
+IMAGE=/usr/release/earmhf/images/NetBSD-6.99.24-evbarm-earmhf-20131016.iso
 
-#PKGSRC=pkgsrc-2013-10-05.tar.gz
-PKGSRC=pkgsrc-2013Q3.tar.gz
+PKGSRC=pkgsrc-2013-10-05.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -23,7 +22,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file cdmount rpi extract firm cdunmount
+all: file cdmount rpi extract cdunmount
 
 # extract sets to image file.
 extract:
@@ -71,8 +70,8 @@ release:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
-	(cd ..; tar cvpf - etc root ) |(cd /mnt;tar xvpf -)
-	(cd ..; tar cvpf - Oshimaya) |(cd /mnt/root;tar xvpf -)
+	(cd ..; tar cpf - etc root ) |(cd /mnt;tar xvpf -)
+	(cd ..; tar cpf - Oshimaya) |(cd /mnt/root;tar xvpf -)
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}

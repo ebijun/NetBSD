@@ -1,35 +1,37 @@
-# add migration from softfloat.
+To: port-armNetBSD.org@localhost
+Subject: 2013-10-17-netbsd-raspi.img (Re: Raspberry Pi update please.)
+From: Jun Ebihara <jun@soum.co.jp>
 
-    To: port-armNetBSD.org@localhost
-    Subject: 2013-08-23-netbsd-raspi.img (Re: Raspberry Pi update please.)
+I've updated 2013-10-17-netbsd-raspi.img.gz for RPI.
 
-I've updated 2013-08-23-netbsd-raspi.img.gz for RPI.
-
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/2013-08-23-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-17-earmhf/2013-10-17-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.23+pkgsrc-current 
-- Move to hardfloat: build with evbearmv6hf-el
- softfloat: 2013-07-30-netbsd-raspi.img.gz  evbarm 
- hardfloat: 2013-08-23-netbsd-raspi.img.gz  evbearmv6hf-el
+- NetBSD-current 6.99.24 2013-10-16
+- pkgsrc-current         2013-10-05
+- This is hardfloat image: build with earmhf
+   softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
+>> hardfloat: 2013-10-17-netbsd-raspi.img.gz      earmhf
+- DMA support and (initial) isoc transfer support.
+  http://mail-index.netbsd.org/source-changes/2013/10/15/msg048238.html
+- Update firmware from today 2013-10-15 for 512M. Requested in PR/48288.
+  http://mail-index.netbsd.org/source-changes/2013/10/15/msg048243.html
 
 Todo:
+- Check X11: display color and keyboard mapping
 - More Migration test for hardfloat: userland and pkgsrc
-- benchmarking
-- Check KOBO,Netwalker,beagleboard. (contain KOBO kernel on /boot)
-- need more good web browser.(compiling webkit...)
-  test midori.
-- test deforaos. : 
-  package compile failed on x11/xterm ?
-- Xfce?
+  Check your favorite pkgsrc on RPI.
+- benchmarking between softfloat vs hardfloat: recommended benchmark?
+- need more good web browser. (midori,deforaos,kazehakase)
+- test deforaos 
 
 =====================
 
-For OpenSourceConference 2013 Shimane
- (https://www.facebook.com/events/118791281644643/)
+For OpenSourceConference 2013 Tokyo/Fall
+ (https://www.facebook.com/events/540784009296966/)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.23 evbearmv6hf-el rpi.img.gz base
+- NetBSD 6.99.24 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -51,9 +53,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2013-08-21 tree inside.
+  - pkgsrc: 2013-10-05 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-17-earmhf/packages
 
 Installed Packages:
 kterm
@@ -66,9 +68,11 @@ uim
 fossil
 raspberrypi-userland
 sudo
-scmgit-base
+git-base
 zsh
 dillo
+mlterm
+lintpkgsrc
 
 To set HDMI output,add "console=fb" on cmdline.txt.
  rpi$ more /boot/cmdline.txt
@@ -90,14 +94,26 @@ Guide:
  https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
 
 Fixed:
- pkg/48128: icewm build broken on 6.99.23
-
-Need Fix:
  port-evbarm/48132: devel/tradcpp build broken on evbearmv6hf-el 6.99.23
  s/-msoft-float/-marm -mthumb-interwork  -mfloat-abi=hard -mhard-float/
 
- port-evbarm/48288: Please update Raspberry Pi firmware
-  src/external/broadcom/rpi-firmware 
+Need Fix:
+1. pkg_add problem
+port-arm/48215: pkg_add fails on recent NetBSD/evbearmv6hf-el current
+port-arm/48267: pkg_add thinks it's running on earm even though it's running on earmhf
+
+  workaround and around for loser.
+  add /etc/mk.conf
+  PKG_ADD_CMD:=   /usr/sbin/pkg_add -m earmhf
+
+2. color problem:
+  togetter.
+
+One more time: (we're gonna celebrate
+
+ 1. login root
+ 2. start mlterm-fb 
+   # mlterm-fb
 
 --
 Jun Ebihara

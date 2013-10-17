@@ -1,21 +1,20 @@
 To: port-armNetBSD.org@localhost
-Subject: 2013-10-14-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2013-10-17-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2013-10-14-netbsd-raspi.img.gz for RPI.
+I've updated 2013-10-17-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-14-earmhf/2013-10-14-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-17-earmhf/2013-10-17-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.24 2013-10-14
-  from nyftp iso file:NetBSD-6.99.24-evbarm-earmhf-201310100300Z.iso
-- pkgsrc-current         2013Q3
-- This is hardfloat image: build with evbearmv6hf-el
-   softfloat: 2013-09-09-netbsd-evbarm.img.gz  evbarm 
->> hardfloat: 2013-10-14-netbsd-raspi.img.gz   evbearmhf
+- NetBSD-current 6.99.24 2013-10-16
+- pkgsrc-current         2013-10-05
+- This is hardfloat image: build with earmhf
+   softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
+>> hardfloat: 2013-10-17-netbsd-raspi.img.gz      earmhf
 - DMA support and (initial) isoc transfer support.
   http://mail-index.netbsd.org/source-changes/2013/10/15/msg048238.html
-- Update firmware from today 2013-10-15. Requested in PR/48288.
+- Update firmware from today 2013-10-15 for 512M. Requested in PR/48288.
   http://mail-index.netbsd.org/source-changes/2013/10/15/msg048243.html
 
 Todo:
@@ -54,9 +53,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2013Q3 tree inside.
+  - pkgsrc: 2013-10-05 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-14-earmhf/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-17-earmhf/packages
 
 Installed Packages:
 kterm
@@ -99,12 +98,16 @@ Fixed:
  s/-msoft-float/-marm -mthumb-interwork  -mfloat-abi=hard -mhard-float/
 
 Need Fix:
- port-arm/48215: pkg_add fails on recent NetBSD/evbearmv6hf-el current
- port-arm/48267: pkg_add thinks it's running on earm even though it's running on earmhf
+1. pkg_add problem
+port-arm/48215: pkg_add fails on recent NetBSD/evbearmv6hf-el current
+port-arm/48267: pkg_add thinks it's running on earm even though it's running on earmhf
 
   workaround and around for loser.
   add /etc/mk.conf
   PKG_ADD_CMD:=   /usr/sbin/pkg_add -m earmhf
+
+2. color problem:
+  togetter.
 
 One more time: (we're gonna celebrate
 
