@@ -33,6 +33,7 @@ NetBSD観光ガイド
    :maxdepth: 2
    :numbered:
 
+   Place/asiabsdcon
    Place/tokyo
    Place/intro
    RPI

@@ -63,7 +63,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2013-08-23-evbearmv6hf-el/2013-08-23-netbsd-raspi.img.gz
+ 2013-10-17-earmhf/2013-10-17-netbsd-raspi.img.gz
 
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -71,7 +71,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2013-08-23-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2013-10-17-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
 
 RaspberryPIの起動
 ------------------
@@ -142,7 +142,7 @@ mikutterを使ってみよう
 
 ::
 
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/packages
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-17-earmhf/packages
 
 
 * パッケージのインストール
@@ -151,7 +151,7 @@ mikutterを使ってみよう
 
 ::
 
- # export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/packages
+ # export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-17-earmhf/packages
  # pkg_add zsh
 
 * パッケージの一覧
@@ -171,7 +171,7 @@ mikutterを使ってみよう
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- 2013/8/21時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
+ 2013/10/05時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
@@ -223,7 +223,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2013-08-23-netbsd-raspi.img
+ # vnconfig vnd0 2013-10-17-netbsd-raspi.img
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
@@ -274,7 +274,8 @@ HDMIじゃなくシリアルコンソールで使うには
 
 ::
 
- # ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/
+XXX: URL直す
+ # ftp://nyftp.netbsd.org/pub/NetBSD-daily/2013-08-23-evbearmv6hf-el/
  # gunzip < rpi_inst.bin.gz |dd of=/dev/rsd3d bs=1m   .... sd3にコピー。
 
   RaspberryPIにsdカードを差して、起動すると、#　プロンプトが表示されます。
@@ -283,6 +284,7 @@ HDMIじゃなくシリアルコンソールで使うには
 X11のインストール
 ------------------
  rpi.bin.gzからインストールした場合、Xは含まれていません。追加したい場合は、
+XXX: URL直す
  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/ をダウンロードし、tarファイルを展開します。
 
 ::
@@ -292,7 +294,8 @@ X11のインストール
 クロスビルドの方法
 ------------------
 * ソースファイル展開
-* ./build.sh -U -m evbearmv6hf-el release
+* ./build.sh -U -m earmv6hf-el release
+XXX: パラメータ
 
 pkgsrcを最新にしてみる
 ----------------------
@@ -310,7 +313,9 @@ pkgsrcを最新にしてみる
 
 液晶ディスプレイ
 -----------------
-  液晶キット( http://www.aitendo.com/page/28 )で表示できています。HDMI-VGA変換ではうまく表示できていません。（電源が足りない)
+  液晶キット( http://www.aitendo.com/page/28 )で表示できています。
+aitendoの液晶キットはモデルチェンジした新型になっています。
+HDMI-VGA変換ではうまく表示できていません。（電源が足りない)
 
 inode
 -------
@@ -334,8 +339,14 @@ pkg/48128: icewm build broken on 6.99.23
  直っています。
 
 port-evbarm/48132: devel/tradcpp build broken on evbearmv6hf-el 6.99.23
- まだ直っていません。soft-floatでコンパイルしようとするのでhardfloatでコンパイルします。
- s/-msoft-float/-marm -mthumb-interwork  -mfloat-abi=hard -mhard-float/
+ 直っています。
+
+port-evbarm/48288:Update firmware from today 2013-10-15. 
+ 直っています。MSDOS領域に書かれたファームウェアが古い場合、512MBモデルで起動しません。
+
+DMA support and (initial) isoc transfer support.
+  http://mail-index.netbsd.org/source-changes/2013/10/15/msg048238.html
+  これでUSBカメラが使えるはずですが、、
 
 --
 
