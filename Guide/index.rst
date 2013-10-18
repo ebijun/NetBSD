@@ -36,6 +36,8 @@ NetBSD観光ガイド
    Place/tokyo
    Place/intro
    RPI
+   Software/mlterm
+   Place/asiabsdcon
 
 ..   Luna
     Place/tokyo
