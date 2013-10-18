@@ -132,3 +132,4 @@ OSC東京主な展示物
 .. image:: /Picture/2011/11/19/P1001279.JPG
 .. image:: /Picture/2011/11/19/P1001280.JPG
 .. image:: /Picture/2011/03/04/P1000301.JPG
+.. image:: /Picture/2007/10/06/20071603.JPG
