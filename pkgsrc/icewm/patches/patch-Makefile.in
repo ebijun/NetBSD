@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- Makefile.in.orig	2013-10-18 04:33:37.000000000 +0000
++++ Makefile.in
+@@ -33,7 +33,8 @@ DESTDIR     =
+ 
+ ################################################################################
+ 
+-BINFILES    = @BINFILES@ icewm-set-gnomewm
++BINFILES    = @BINFILES@
++SCRIPTFILE  = icewm-set-gnomewm
+ LIBFILES    = lib/preferences lib/winoptions lib/keys \
+               lib/menu lib/toolbar # lib/programs
+ DOCFILES    = README BUGS CHANGES COPYING AUTHORS INSTALL VERSION icewm.lsm

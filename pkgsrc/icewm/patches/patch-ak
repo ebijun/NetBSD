@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- src/wmtaskbar.cc.orig	2010-10-31 14:09:36.000000000 +0000
++++ src/wmtaskbar.cc
+@@ -80,6 +80,11 @@ static void initPixmaps() {
+      * filename. This will be unified and be a forced standard in
+      * icewm-2
+      */
++#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__)
++    /* pkgsrc on *BSD: Try Beastie first */
++    startImage = subdirs->loadImage(base, "bsd-daemon.xpm");
++    if (startImage == null || !startImage->valid())
++#endif
+     startImage = themedirs->loadImage(base, "start.xpm");
+ #if 1
+     if (startImage == null || !startImage->valid())
