@@ -63,7 +63,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2013-10-17-earmhf/2013-10-17-netbsd-raspi.img.gz
+ 2013-10-20-earmhf/2013-10-20-netbsd-raspi.img.gz
 
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -71,7 +71,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2013-10-17-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2013-10-20-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
 
 RaspberryPIの起動
 ------------------
@@ -142,7 +142,7 @@ mikutterを使ってみよう
 
 ::
 
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-17-earmhf/packages
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-20-earmhf/packages
 
 
 * パッケージのインストール
@@ -151,7 +151,7 @@ mikutterを使ってみよう
 
 ::
 
- # export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-17-earmhf/packages
+ # export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-20-earmhf/packages
  # pkg_add zsh
 
 * パッケージの一覧
@@ -223,7 +223,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2013-10-17-netbsd-raspi.img
+ # vnconfig vnd0 2013-10-20-netbsd-raspi.img
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
@@ -270,12 +270,11 @@ HDMIじゃなくシリアルコンソールで使うには
 
 最小構成のディスクイメージ
 --------------------------
-  NetBSD-currentのディスクイメージに関しては、以下の場所にあります。
+  NetBSD-currentのディスクイメージに関しては、以下の場所にあります。日付の部分は適宜読み替えてください。
 
 ::
 
-XXX: URL直す
- # ftp://nyftp.netbsd.org/pub/NetBSD-daily/2013-08-23-evbearmv6hf-el/
+ # ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201310161210Z/evbarm-earmhf/binary/gzimg/rpi_inst.bin.gz
  # gunzip < rpi_inst.bin.gz |dd of=/dev/rsd3d bs=1m   .... sd3にコピー。
 
   RaspberryPIにsdカードを差して、起動すると、#　プロンプトが表示されます。
@@ -284,18 +283,18 @@ XXX: URL直す
 X11のインストール
 ------------------
  rpi.bin.gzからインストールした場合、Xは含まれていません。追加したい場合は、
-XXX: URL直す
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-23-evbearmv6hf-el/ をダウンロードし、tarファイルを展開します。
+
+　ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201310161210Z/evbarm-earmhf/binary/sets/ 以下にあるtarファイルを展開します。tarで展開するときにpオプションをつけて、必要な権限が保たれるようにしてください。
 
 ::
 
- tar xzpvf xbase.tar.gz -C /
+ tar xzpvf xbase.tar.gz -C /     .... pをつける
 
 クロスビルドの方法
 ------------------
 * ソースファイル展開
-* ./build.sh -U -m earmv6hf-el release
-XXX: パラメータ
+* ./build.sh -U -m evbarm -a earmhf release
+
 
 pkgsrcを最新にしてみる
 ----------------------
@@ -327,6 +326,10 @@ inode
 -----
   おおしまさん(@oshimyja)ありがとうございます。
 
+mikutterの青い鳩
+-----------------
+% touch ~/.mikutter/plugin/display_requirements.rb
+すると、鳩が消えます。
 
 関連バグ
 --------
