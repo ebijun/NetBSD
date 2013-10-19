@@ -1,17 +1,17 @@
 To: port-armNetBSD.org@localhost
-Subject: 2013-10-17-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2013-10-20-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2013-10-17-netbsd-raspi.img.gz for RPI.
+I've updated 2013-10-20-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-17-earmhf/2013-10-17-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-20-earmhf/2013-10-20-netbsd-raspi.img.gz
 
 Update:
 - NetBSD-current 6.99.24 2013-10-16
 - pkgsrc-current         2013-10-05
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2013-10-17-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2013-10-20-netbsd-raspi.img.gz      earmhf
 - DMA support and (initial) isoc transfer support.
   http://mail-index.netbsd.org/source-changes/2013/10/15/msg048238.html
 - Update firmware from today 2013-10-15 for 512M. Requested in PR/48288.
@@ -55,7 +55,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2013-10-05 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-17-earmhf/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-20-earmhf/packages
 
 Installed Packages:
 kterm
@@ -66,7 +66,6 @@ xli
 mikutter
 uim
 fossil
-raspberrypi-userland
 sudo
 git-base
 zsh
@@ -114,6 +113,8 @@ One more time: (we're gonna celebrate
  1. login root
  2. start mlterm-fb 
    # mlterm-fb
+ 3. ftp http://mlterm.sf.net/vimperator.six
+ 4. cat vimperator.six
 
 --
 Jun Ebihara
