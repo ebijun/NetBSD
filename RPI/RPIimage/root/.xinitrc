@@ -39,7 +39,7 @@ export XMODIFIERS=@im=uim
 
 xsetroot -bg black -grey
 kterm -geometry 80x25+0+0 -fk k14 -fn a14 -fr r14 -km euc&
-xsetbg Oshimaya/20131002-6.1.2.jpg
+xsetbg Oshimaya/netbsd612.jpg
 xterm &
 
 if [ -f /usr/pkg/bin/icewm ]; then
