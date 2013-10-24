@@ -31,7 +31,8 @@ Keyboard layout checkpoint:
  encoding jp
 
 /root/.xinitrc
- setxkbmap -layout jp
+ setxkbmap -model jp106 jp
+
 
 Build sample script:
  https://github.com/ebijun/NetBSD/tree/master/hpcmips/Image

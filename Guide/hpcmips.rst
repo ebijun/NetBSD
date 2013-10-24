@@ -105,7 +105,8 @@ mikutterを使ってみよう
 
 ::
 
-	setxkbmap -layout jp -option ctrl:swapcap
+	setxkbmap -model jp106 jp -option ctrl:swapcap 
+
 
 * 106キーでのキーマップ
 

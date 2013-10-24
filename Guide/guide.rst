@@ -326,7 +326,8 @@ X Window システムでは、setxkbmapコマンドを利用して、レイア�
 
 ::
 
- setxkbmap -layout jp -option ctrl:swapcaps
+ setxkbmap -model jp106 jp -option ctrl:swapcap 
+
 
 外部ディスプレイへの出力切り替え
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

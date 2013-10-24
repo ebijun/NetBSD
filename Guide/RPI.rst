@@ -122,7 +122,7 @@ mikutterを使ってみよう
 
 ::
 
-	setxkbmap -layout jp -option ctrl:swapcap
+	setxkbmap -model jp106 jp -option ctrl:swapcap
 
 * 106キーでのキーマップ
 
@@ -326,6 +326,10 @@ inode
 -----
   おおしまさん(@oshimyja)ありがとうございます。
 
+::
+
+  http://www.yagoto-urayama.jp/~oshimaya/netbsd/Proudly/2013/
+
 mikutterの青い鳩
 -----------------
 % touch ~/.mikutter/plugin/display_requirements.rb
@@ -350,6 +354,14 @@ port-evbarm/48288:Update firmware from today 2013-10-15.
 DMA support and (initial) isoc transfer support.
   http://mail-index.netbsd.org/source-changes/2013/10/15/msg048238.html
   これでUSBカメラが使えるはずですが、、
+
+port-arm/48215: pkg_add fails on recent NetBSD/evbearmv6hf-el current
+port-arm/48267: pkg_add thinks it's running on earm even though it's running on earmhf
+  直っていません。/etc/mk.confに以下の行を足しています。
+
+::
+  
+  PKG_ADD_CMD:=   /usr/sbin/pkg_add -m earmhf
 
 --
 

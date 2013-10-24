@@ -33,7 +33,7 @@ NetBSD観光ガイド
    :maxdepth: 2
    :numbered:
 
-   Place/tokyo
+   Place/osaka
    Place/intro
    RPI
    Software/mlterm
