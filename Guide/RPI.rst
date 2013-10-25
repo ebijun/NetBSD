@@ -124,17 +124,6 @@ mikutterを使ってみよう
 
 	setxkbmap -model jp106 jp -option ctrl:swapcap
 
-* 106キーでのキーマップ
-
-::
-
- on i386:
- "\|" key returns keycode 133
- "\_" key returns keycode 211
-
- on evbearmv6hf-el
- "\|" key returns keycode 8
- "\_" key returns keycode 8
 
 コンパイル済パッケージをインストールする
 --------------------------------------------------
