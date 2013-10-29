@@ -102,3 +102,9 @@ firm:
 	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/LICENCE.broadcom /mnt
 	umount ${MNT}
 	vnconfig -u ${VND}
+
+# fetch newest isofileimage
+iso:
+	./NewestISO |tee Fetch
+	sh Fetch
+	rm Fetch
