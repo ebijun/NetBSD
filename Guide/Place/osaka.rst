@@ -45,7 +45,8 @@ KOFまとめ
  :widths: 25 15 60
 
  順記,梅田,終わった後の打ち上げはたいていここ。餃子と餃子と餃子。
- 松乃家まんさん通り店,,
+ ドリーム,西宮北口,15000回ループしてからKOF会場にゴー！朝8:00から。
+ 松乃家まんさん通り店,,関西初松乃家
  ホビーランド,,
  ドルフィンズ,,大阪さん業界館開催時に打ち上げをやってた
  Beer Belly,,箕面ビールの店
@@ -68,15 +69,17 @@ KOFまとめ
  阿木譲の店,,
 
 
+
 KOF主な発表
 ~~~~~~~~~~~~~~
 
 .. csv-table::
- なぜ謎マシン,KOF2011,http://www.ceres.dti.ne.jp/tsutsui/kof2011/Why-
-enigmatic-machines.html
+ :widths: 15 15 60
+
+ なぜ謎マシン,KOF2011,http://www.ceres.dti.ne.jp/tsutsui/kof2011/Why-enigmatic-machines.html
  曽田さん受賞記念,KOF2010,
  EuroBSDCon2009,KOF2009,msaitohさんの参加報告
- 2004,NBUGみずのさんUSBsnoopy
+ 2004,NBUGみずのさんUSBsnoopy,
 
 KOF主な展示物
 ~~~~~~~~~~~~~~~~~
@@ -93,6 +96,7 @@ KOF主な展示物
  2005/10/28-29,大阪産業創造館,EWS4800/360AD ドリキャス+ISAバス　USL-5P
  2004/10-22-23,大阪産業創造館,XCAST ふきだしくん 
  2003/10/31-11/1,大阪産業創造館,XCAST トレバ
+
 
 .. image:: /Picture/2012/11/11/dsc01961.jpg
 .. image:: /Picture/2012/11/11/dsc01959.jpg

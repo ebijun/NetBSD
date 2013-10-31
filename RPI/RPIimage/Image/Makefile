@@ -4,10 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-#IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-earmhf-201310100300Z.iso
-IMAGE=/usr/release/earmhf/images/NetBSD-6.99.24-evbarm-earmhf-20131023.iso
+IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-earmhf-201310231950Z.iso
 
-PKGSRC=pkgsrc-2013-10-19.tar.gz
+PKGSRC=pkgsrc-2013-10-26.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -104,7 +103,7 @@ firm:
 	vnconfig -u ${VND}
 
 # fetch newest isofileimage
-iso:
+fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch

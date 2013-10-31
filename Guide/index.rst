@@ -34,12 +34,13 @@ NetBSD観光ガイド
    :numbered:
 
    Place/osaka
-   Place/intro
+   Luna
    RPI
    Software/mlterm
    Place/asiabsdcon
 
 ..   Luna
+   Place/intro
     Place/tokyo
    Software/mlterm
    ZAURUS

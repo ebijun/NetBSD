@@ -85,14 +85,13 @@ RaspberryPIの起動
 
 ::
 
-	login: root
-
+ login: root
 
  startxでicewmが立ち上がります。
 
 ::
 
-	# startx
+ # startx
 
 mikutterを使ってみよう
 ----------------------

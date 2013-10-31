@@ -4,8 +4,8 @@
 require 'net/ftp'
 
 #FTP="ftp.jp.netbsd.org"
-#FTP="ftp7.jp.netbsd.org"
-FTP="nyftp.netbsd.org"
+FTP="ftp7.jp.netbsd.org"
+#FTP="nyftp.netbsd.org"
 BRANCH="/pub/NetBSD-daily/HEAD/"
 IMAGES="/usr/release/images/"
 ARCH="earmhf"
