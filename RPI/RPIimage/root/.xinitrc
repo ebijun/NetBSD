@@ -38,7 +38,7 @@ uim-xim &
 export XMODIFIERS=@im=uim
 
 xsetroot -bg black -grey
-kterm -geometry 80x25+0+0 -fk k14 -fn a14 -fr r14 -km euc&
+#kterm -geometry 80x25+0+0 -fk k14 -fn a14 -fr r14 -km euc&
 xsetbg Oshimaya/netbsd612.jpg
 xterm  -geometry 80x25+0+0 &
 
