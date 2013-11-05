@@ -35,6 +35,7 @@
  .. todo:: For I2C consult the iic(4) man page, also see the i2cscan(8) utility and its source.
  .. todo:: For GPIO see gpio(4) man page.
  .. todo:: For SPI as far as I know there are no generic user-space components provided, besides support for SPI flashes.
+ .. todo:: .build.sh -j -u -U -a earmhf -m evbarm iso-image
 
 =================================
 RaspberryPIでNetBSDを使ってみる
@@ -352,6 +353,10 @@ port-arm/48267: pkg_add thinks it's running on earm even though it's running on 
 ::
   
   PKG_ADD_CMD:=   /usr/sbin/pkg_add -m earmhf
+
+
+.. harfbuzzからicuが呼ばれているけどicuがコンパイルできない。
+ cd /usr/pkgsrc/font/harfbuzz && make PKG_OPTIONS.harfbuzz=-icu install
 
 --
 
