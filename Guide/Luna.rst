@@ -371,6 +371,11 @@ LUNA68Kのブートローダー
 #. NetBSD/luna68k の起動ディスクの作り方メモ [28]_
 #. なんか出た。これでデバッグできる [8]_
 
+LUNA88Kのブートローダー
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+#.. OpenBSD/luna88k standalone bootloader by @MiodVallat works fine on my LUNA-88K2! [107]_
+
+
 BSD広告条項
 ~~~~~~~~~~~
  4.4BSD-Lite2由来のコードに含まれる3項目(All advertising materials ..)、広告条項削除OKについて、文書で許可を出してくれるOMRONの方がいらっしゃると2-cluse BSDで配布できる。
@@ -627,6 +632,10 @@ LUNA88K謎ボード
 .. [102] 専用のゲートアレイでしょうか。https://twitter.com/ao_kenji/status/366056571609939968
 .. [103] PWB7102  https://twitter.com/ao_kenji/status/366009479285854208
 .. [104]  UniOS-Machを参考に1bpp/4bpp/8bppを自前で識別するようにした。 https://twitter.com/ao_kenji/status/368294458996948992
+.. [105] Luna88k マニュアル https://twitter.com/ao_kenji/status/395857381818519552
+.. [106] Luna88k FaceBook ページ　https://www.facebook.com/Luna88k
+.. [107] OpenBSD/luna88k standalone bootloader by @MiodVallat works fine on my LUNA-88K2! https://twitter.com/ao_kenji/status/395551245563219969
+
 このページ
 ~~~~~~~~~~~
 * https://github.com/ebijun/NetBSD/blob/master/Guide/Luna.rst にあります。

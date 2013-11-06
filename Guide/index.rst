@@ -41,7 +41,8 @@ NetBSD観光ガイド
 
 ..   Luna
    Place/intro
-    Place/tokyo
+   Place/fukuoka
+   Place/tokyo
    Software/mlterm
    ZAURUS
    WZERO3
