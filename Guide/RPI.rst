@@ -64,7 +64,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2013-10-20-earmhf/2013-10-20-netbsd-raspi.img.gz
+ 2013-11-09-earmhf/2013-11-09-netbsd-raspi.img.gz
 
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -72,7 +72,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2013-10-20-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2013-11-09-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
 
 RaspberryPIの起動
 ------------------
@@ -131,7 +131,7 @@ mikutterを使ってみよう
 
 ::
 
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-20-earmhf/packages
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-09-earmhf/packages
 
 
 * パッケージのインストール
@@ -140,7 +140,7 @@ mikutterを使ってみよう
 
 ::
 
- # export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-20-earmhf/packages
+ # export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-09-earmhf/packages
  # pkg_add zsh
 
 * パッケージの一覧
@@ -160,7 +160,7 @@ mikutterを使ってみよう
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- 2013/10/05時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
+ 2013/11/02時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
@@ -212,7 +212,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2013-10-20-netbsd-raspi.img
+ # vnconfig vnd0 2013-11-09-netbsd-raspi.img
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
@@ -348,15 +348,10 @@ DMA support and (initial) isoc transfer support.
 
 port-arm/48215: pkg_add fails on recent NetBSD/evbearmv6hf-el current
 port-arm/48267: pkg_add thinks it's running on earm even though it's running on earmhf
-  直っていません。/etc/mk.confに以下の行を足しています。
+  http://mail-index.netbsd.org/source-changes/2013/10/26/msg048721.html
 
-::
-  
-  PKG_ADD_CMD:=   /usr/sbin/pkg_add -m earmhf
-
-
-.. harfbuzzからicuが呼ばれているけどicuがコンパイルできない。
- cd /usr/pkgsrc/font/harfbuzz && make PKG_OPTIONS.harfbuzz=-icu install
+harfbuzzからicuが呼ばれているけどicuがコンパイルできない。
+  http://mail-index.netbsd.org/pkgsrc-changes/2013/11/05/msg097227.html
 
 --
 

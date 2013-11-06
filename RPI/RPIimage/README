@@ -126,9 +126,17 @@ port-arm/48267: pkg_add thinks it's running on earm even though it's running on 
   Workaround and around for loser.
   add /etc/mk.conf
   PKG_ADD_CMD:=   /usr/sbin/pkg_add -m earmhf
+Is fixed?
+  http://mail-index.netbsd.org/source-changes/2013/10/26/msg048721.html
 
 2. pkgsrc/misc/raspberrypi-userland/
  Makefile says ONLY_FOR_PLATFORM=      NetBSD-*-*arm
+
+3. icu build problem.
+ http://mail-index.netbsd.org/pkgsrc-changes/2013/11/05/msg097227.html
+
+4. ruby build problem
+ need devel/zlib?
 
 Wishlist from RPI user: (notify @ebijun)
 1. USB multifunction dongle.

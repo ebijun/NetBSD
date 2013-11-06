@@ -36,6 +36,7 @@
 .. todo:: othersrc/share/examples/ec2: build_ec2_img.sh
 .. todo:: ansible とpuppet
 .. todo:: html→pdf→epub→bccksできるか
+.. todo:: FuelPHPの例
 
 pkgsrcでソフトウェアをインストールする
 --------------------------------------
