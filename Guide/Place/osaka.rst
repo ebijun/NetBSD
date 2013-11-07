@@ -89,7 +89,7 @@ KOF主な展示物
  2012/11/9-10,南港ATC,WZero3 Zaurus XM6i
  2011/11/11-12,南港ATC,LunaII DreamCast+釣りコン HP9000/700 WZero3 hpcmips
  2010/11/5-6,南港ATC,NEC Express5800(arc+amd64) NWS5000 ML115 SunUltra10
- 2009/11/6-7,南港ATC,IIJ SEIL/X1 SEIL/B1 NSLU2 tadpole Linkstation LC475
+ 2009/11/6-7,南港ATC,IIJ SEIL/X1 SEIL/B1 NSLU2 tadpole Linkstation LC475 ドリキャス+ISAバス+NE2000
  2008/11/9-10,南港ATC,tadpole Sandpoint hpcmips/sh/arm Xen LC475 ネギサーボ
  2007/11/9-10,南港ATC,LC475 iBook Zaurus ネギサーボ
  2005/10/28-29,大阪産業創造館,EWS4800/360AD ドリキャス+ISAバス　USL-5P
