@@ -1,25 +1,22 @@
-VERSION: :1,$s/2013-10-20/??/g
+VERSION: :1,$s/2013-11-09/??/g
 ISO:     :1,$s/201310311700Z/??/g
 PKGSRC:  :1,$s/2013-10-26/2013-10-26/g
 NetBSD:  :1,$s/6.99.25/??/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2013-10-20-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2013-11-09-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2013-10-20-netbsd-raspi.img.gz for RPI.
+I've updated 2013-11-09-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-20-earmhf/2013-10-20-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-09-earmhf/2013-11-09-netbsd-raspi.img.gz
 
 Update:
 - NetBSD-current 6.99.25 evbarm-earmhf 201310311700Z from nyftp
 - pkgsrc-current         2013-10-26 tarball from ftp.NetBSD
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2013-10-20-netbsd-raspi.img.gz      earmhf
-XXX: Fix icewm icon color map.
-XXX: Fix keyboard mapping PR:
-XXX: Fix mlterm
+>> hardfloat: 2013-11-09-netbsd-raspi.img.gz      earmhf
 
 Todo:
 - More Migration test for hardfloat: userland and pkgsrc
@@ -33,8 +30,8 @@ Todo:
 
 =====================
 
-For Kansai OpenSource 2013
- (https://www.facebook.com/events/XXX;)
+For Kansai OpenSource 2013 NetBSD booth
+ (https://www.facebook.com/events/149008965300908/)
 demonstration use, I've updated raspberry-pi image.
 
 - NetBSD 6.99.25 earmhf rpi.img.gz base
@@ -52,7 +49,6 @@ demonstration use, I've updated raspberry-pi image.
   -> paste pin number to mikutter
   ==== one or two or threee moment =====
   Get your twitter timeline with your family!
-- Use fossil 
 
 Features:
   - fit size for 2GB SD Card
@@ -62,7 +58,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2013-10-26 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-10-20-earmhf/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-09-earmhf/packages
 
 Installed Packages:
 kterm
@@ -106,45 +102,53 @@ Fixed:
  port-evbarm/48132: 
  s/-msoft-float/-marm -mthumb-interwork  -mfloat-abi=hard -mhard-float/
 
-2. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch.
- xsrc/48347: 
- http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48347
- patch: external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c
+2. mlterm-fb color problem.
+update pkgsrc:mlterm 3.3.0 
 
-3. icewm icon color problem.
+3. pkg_add problem
+port-arm/48215: pkg_add fails on recent NetBSD/evbearmv6hf-el current
+port-arm/48267: pkg_add thinks it's running on earm even though it's running on earmhf
+ http://mail-index.netbsd.org/source-changes/2013/10/26/msg048721.html
+
+#  Workaround and around for loser.
+#  add /etc/mk.conf
+#  PKG_ADD_CMD:=   /usr/sbin/pkg_add -m earmhf
+
+4. icu build problem.
+ http://mail-index.netbsd.org/pkgsrc-changes/2013/11/05/msg097227.html
+
+5. ruby build problem
+ http://mail-index.netbsd.org/pkgsrc-changes/2013/11/06/msg097245.html
+
+Need Fix:
+1. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch.
+ xsrc/48347:open 
+ http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48347
+
+patch: xsrc/external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c
+ http://www.yagoto-urayama.jp/~oshimaya/netbsd/files/xf86-input-keyboard_N6.diff
+
+ bluetooth keyboard: add configration
+  include "dev/bluetooth/bluetoothdevices.config"
+
+2. icewm icon color problem.
 need update icewm 1.2 to 1.3, or apply patch.
 http://www.yagoto-urayama.jp/~oshimaya/netbsd/files/icewm-1.2.35.diff
 
-4. mlterm-fb color problem.
-XXX:update pkgsrc:mlterm 3.3.0 
-
-Need Fix:
-1. pkg_add problem
-port-arm/48215: pkg_add fails on recent NetBSD/evbearmv6hf-el current
-port-arm/48267: pkg_add thinks it's running on earm even though it's running on earmhf
-
-  Workaround and around for loser.
-  add /etc/mk.conf
-  PKG_ADD_CMD:=   /usr/sbin/pkg_add -m earmhf
-Is fixed?
-  http://mail-index.netbsd.org/source-changes/2013/10/26/msg048721.html
-
-2. pkgsrc/misc/raspberrypi-userland/
+3. pkgsrc/misc/raspberrypi-userland/
  Makefile says ONLY_FOR_PLATFORM=      NetBSD-*-*arm
 
-3. icu build problem.
- http://mail-index.netbsd.org/pkgsrc-changes/2013/11/05/msg097227.html
 
-4. ruby build problem
- need devel/zlib?
-
-Wishlist from RPI user: (notify @ebijun)
+Wishlist from RPI user: (please notify @ebijun)
 1. USB multifunction dongle.
- Bluetooth and url : XXX
-2. pkgsrc/devel/gmp
+ Bluetooth and urtwn : need multifunction support codes.
+ http://www.raspberrypi.org/phpBB3/viewtopic.php?f=82&t=58873
+ https://github.com/ebijun/NetBSD/blob/master/Guide/Device/BT-Micro3H2X/index.rst
+2. pkgsrc/devel/gmp -> works!
 3. pkgsrc/lang/squeak
 4. USB camera with mplayer
 5. pkgsrc/lang/ocaml
+6. pkgsrc/www/seamonkey
 
 One more time: (we're gonna celebrate
 
