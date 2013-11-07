@@ -1,22 +1,22 @@
-VERSION: :1,$s/2013-11-09/??/g
-ISO:     :1,$s/201310311700Z/??/g
-PKGSRC:  :1,$s/2013-10-26/2013-10-26/g
+VERSION: :1,$s/2013-11-08/2013-11-08/g
+ISO:     :1,$s/201311060020Z/201311060020Z/g
+PKGSRC:  :1,$s/2013-11-02/2013-11-02/g
 NetBSD:  :1,$s/6.99.25/??/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2013-11-09-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2013-11-08-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2013-11-09-netbsd-raspi.img.gz for RPI.
+I've updated 2013-11-08-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-09-earmhf/2013-11-09-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-08-earmhf/2013-11-08-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.25 evbarm-earmhf 201310311700Z from nyftp
-- pkgsrc-current         2013-10-26 tarball from ftp.NetBSD
+- NetBSD-current 6.99.25 evbarm-earmhf 201311060020Z from nyftp
+- pkgsrc-current         2013-11-02 tarball from ftp.NetBSD
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2013-11-09-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2013-11-08-netbsd-raspi.img.gz      earmhf
 
 Todo:
 - More Migration test for hardfloat: userland and pkgsrc
@@ -27,6 +27,7 @@ Todo:
 - need more good web browser. (seamonkey,midori,deforaos)
 - test deforaos 
 - Need GPIO & bus controll document and implimentation (via lua?)
+- (comment out kernel DEBUG option)
 
 =====================
 
@@ -56,9 +57,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2013-10-26 tree inside.
+  - pkgsrc: 2013-11-02 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-09-earmhf/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-08-earmhf/packages
 
 Installed Packages:
 kterm
@@ -121,7 +122,7 @@ port-arm/48267: pkg_add thinks it's running on earm even though it's running on 
  http://mail-index.netbsd.org/pkgsrc-changes/2013/11/06/msg097245.html
 
 Need Fix:
-1. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch.
+1. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch. (sample binary replaced in this image)
  xsrc/48347:open 
  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48347
 
@@ -135,11 +136,11 @@ patch: xsrc/external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c
 need update icewm 1.2 to 1.3, or apply patch.
 http://www.yagoto-urayama.jp/~oshimaya/netbsd/files/icewm-1.2.35.diff
 
-3. pkgsrc/misc/raspberrypi-userland/
+3. pkgsrc/misc/raspberrypi-userland/ (sample binary replaced in this image)
  Makefile says ONLY_FOR_PLATFORM=      NetBSD-*-*arm
 
 
-Wishlist from RPI user: (please notify @ebijun)
+Wishlist from RPI user: please notify @ebijun
 1. USB multifunction dongle.
  Bluetooth and urtwn : need multifunction support codes.
  http://www.raspberrypi.org/phpBB3/viewtopic.php?f=82&t=58873
