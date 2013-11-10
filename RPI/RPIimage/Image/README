@@ -121,6 +121,10 @@ port-arm/48267: pkg_add thinks it's running on earm even though it's running on 
 5. ruby build problem
  http://mail-index.netbsd.org/pkgsrc-changes/2013/11/06/msg097245.html
 
+6. pkgsrc/misc/raspberrypi-userland/ (sample binary replaced in this image)
+ http://mail-index.netbsd.org/pkgsrc-changes/2013/11/10/msg097381.html
+ Makefile says ONLY_FOR_PLATFORM=      NetBSD-*-*arm
+
 Need Fix:
 1. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch. (sample binary replaced in this image)
  xsrc/48347:open 
@@ -135,9 +139,6 @@ patch: xsrc/external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c
 2. icewm icon color problem.
 need update icewm 1.2 to 1.3, or apply patch.
 http://www.yagoto-urayama.jp/~oshimaya/netbsd/files/icewm-1.2.35.diff
-
-3. pkgsrc/misc/raspberrypi-userland/ (sample binary replaced in this image)
- Makefile says ONLY_FOR_PLATFORM=      NetBSD-*-*arm
 
 
 Wishlist from RPI user: please notify @ebijun

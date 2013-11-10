@@ -4,8 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-evbarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.24-evbarm-arm-201310061640Z.iso
-PKGSRC=pkgsrc-2013-10-05.tar.gz
+IMAGE=/usr/release/images/NetBSD-6.99.25-evbarm-arm-201311041810Z.iso
+PKGSRC=pkgsrc-2013-11-09.tar.gz
 
 # mount cdrom
 MNT_CDROM=/mnt1
@@ -103,3 +103,9 @@ firm:
 	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/start.elf /mnt
 	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/start_cd.elf /mnt
 	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/LICENCE.broadcom /mnt
+
+# fetch newest isofileimage
+fetch:  
+	./NewestISO |tee Fetch
+	sh Fetch
+	rm Fetch

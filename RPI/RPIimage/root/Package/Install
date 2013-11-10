@@ -1,5 +1,5 @@
 
-for i in `grep -v \# List`
+for i in `grep -v \# List List_compile`
 do
 	echo $i
 	(cd /usr/pkgsrc/*/$i;make package-install)
