@@ -239,6 +239,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 HDMIじゃなくシリアルコンソールで使うには
 ----------------------------------------
 * MSDOS領域にある設定ファイルcmdline.txtの内容を変更してください。
+https://raw.github.com/Evilpaul/RPi-config/master/config.txt
 
 ::
 
@@ -352,6 +353,13 @@ port-arm/48267: pkg_add thinks it's running on earm even though it's running on 
 
 harfbuzzからicuが呼ばれているけどicuがコンパイルできない。
   http://mail-index.netbsd.org/pkgsrc-changes/2013/11/05/msg097227.html
+
+pkgsrc/devel/bison
+  http://mail-index.netbsd.org/pkgsrc-changes/2013/11/09/msg097366.html
+
+pkgsrc/multimedia/libvpx
+  http://mail-index.netbsd.org/pkgsrc-changes/2013/11/09/msg097365.html
+
 
 --
 

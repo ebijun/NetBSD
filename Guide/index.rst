@@ -29,18 +29,13 @@ NetBSD観光ガイド
 
 .. Contents:
 
-.. toctree::
-   :maxdepth: 2
-   :numbered:
 
-   Place/osaka
-   Luna
-   RPI
-   Software/mlterm
-   Place/asiabsdcon
+ Place/fukuoka
+ Place/intro
+ RPI
+ Place/asiabsdcon
 
 ..   Luna
-   Place/intro
    Place/fukuoka
    Place/tokyo
    Software/mlterm
