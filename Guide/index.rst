@@ -27,13 +27,16 @@
 NetBSD観光ガイド      
 ==============================================
 
-.. Contents:
+Contents:
 
+.. toctree::
+   :maxdepth: 2
+   :numbered:
 
- Place/fukuoka
- Place/intro
- RPI
- Place/asiabsdcon
+   Place/fukuoka
+   Place/intro
+   RPI
+   Place/asiabsdcon
 
 ..   Luna
    Place/fukuoka
