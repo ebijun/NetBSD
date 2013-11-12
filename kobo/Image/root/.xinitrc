@@ -38,10 +38,8 @@ uim-xim &
 export XMODIFIERS=@im=uim
 
 xsetroot -bg black -grey
-#kterm -geometry 80x25+0+0 -fk k14 -fn a14 -fr r14 -km euc&
-#xsetbg Oshimaya/proudly_1280x800.jpg
-#xsetbg Oshimaya/botushitagaki.jpg
-xsetbg Oshimaya/OSC2013hokkaido-oshimaya.jpg
+kterm -geometry 80x25+0+0 -fk k14 -fn a14 -fr r14 -km euc&
+xsetbg Oshimaya/proudly_1280x800.jpg
 xterm &
 
 if [ -f /usr/pkg/bin/icewm ]; then

@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-evbarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.25-evbarm-arm-201311041810Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.25-evbarm-arm-201311071550Z.iso
 PKGSRC=pkgsrc-2013-11-09.tar.gz
 
 # mount cdrom
@@ -49,8 +49,8 @@ extract:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	for i in ${LIST} ; do (tar xzpvf ${SETS}/$${i}.tgz -C ${MNT};); done
-	tar xzpvf ${PKGSRC} -C ${MNT}/usr
+	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
+	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -73,10 +73,11 @@ release:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
-	(tar cvpf - boot etc root ) |(cd /mnt;tar xvpf -)
-	(tar cvpf - Oshimaya) |(cd /mnt/root;tar xvpf -)
-	cp u-boot.bin /mnt/boot
-	cp kobo.bin  /mnt/boot
+	tar cf - etc root |(cd ${MNT};tar xf -)
+	tar cf - Oshimaya |(cd ${MNT}/root;tar xpf -)
+	cp ../boot/*     ${MNT}/boot
+	cp u-boot.bin ${MNT}/boot
+	cp kobo.bin   ${MNT}/boot
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
