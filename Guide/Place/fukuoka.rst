@@ -56,22 +56,15 @@ OSC福岡まとめ
  CRAIC AND THE PORTER,,
  シムーン,,鉄鍋餃子近く。細野さんのサインがある
  CLURICAUNE,,注ぐのが最高にうまいマスターが
+ Three kings,,
  balance,,スペースインベーダーズ
  三喜屋酒店,,立ち飲み
  ソロモン,,赤いガンダムバー
  ウエスト,,朝4時に丸天うどん
  給水塔,,福岡空港からバスで行くと近い。
  ,, デスクリムゾンがある。
+ 餃子李,,
 
-
-
-OSC福岡主な発表
-~~~~~~~~~~~~~~
-
-.. csv-table::
- :widths: 15 15 60
-
- XXX,XXX,XXX
 
 OSC福岡主な展示物
 ~~~~~~~~~~~~~~~~~
@@ -79,55 +72,38 @@ OSC福岡主な展示物
 .. csv-table::
  :widths: 15 15 60
 
- 2012/XX/X-X,南港ATC,WZero3 Zaurus XM6i
+ 2013/11/16,福岡ソフトリサーチパーク,RPI
+ 2012/12/8,福岡情報専門学校,WZero3 Zaurus XM6i
+ 2011/12/3,筑紫女学院,hpcmips/hpcarm/Jornada680/WZero3/Xen4+teokure
+ 2010/12/11,福岡工業大学,hpcmips/hpcarm/Jornada680/WZero3
+ 2009/12/5,九州産業大学,hpcmips/hpcarm/Jornada680/WZero3
+ 2008/12/13,福岡大学,hpcmips/hpcarm/Jornada680/WZero3/USBカメラ
+ 2007/12/8,ASCビル,hpcmips/hpcarm/Jornada680
 
 
-
-.. image:: /Picture/2010/12/10/P1000097.JPG
-.. image:: /Picture/2010/12/10/P1000098.JPG
-.. image:: /Picture/2010/12/10/P1000099.JPG
-.. image:: /Picture/2010/12/10/P1000100.JPG
-.. image:: /Picture/2010/12/10/P1000101.JPG
 .. image:: /Picture/2010/12/10/P1000102.JPG
-.. image:: /Picture/2010/12/10/P1000103.JPG
 .. image:: /Picture/2010/12/10/P1000104.JPG
-.. image:: /Picture/2010/12/10/P1000105.JPG
-.. image:: /Picture/2010/12/10/P1000106.JPG
 .. image:: /Picture/2010/12/10/P1000107.JPG
-.. image:: /Picture/2010/12/10/P1000108.JPG
 .. image:: /Picture/2010/12/10/P1000109.JPG
 .. image:: /Picture/2010/12/10/P1000110.JPG
-.. image:: /Picture/2010/12/10/P1000111.JPG
-.. image:: /Picture/2010/12/10/P1000112.JPG
 .. image:: /Picture/2010/12/10/P1000113.JPG
-.. image:: /Picture/2010/12/11/P1000114.JPG
 .. image:: /Picture/2010/12/11/P1000115.JPG
 .. image:: /Picture/2010/12/11/P1000116.JPG
 .. image:: /Picture/2011/12/02/P1001367.JPG
-.. image:: /Picture/2011/12/02/P1001368.JPG
-.. image:: /Picture/2011/12/02/P1001369.JPG
-.. image:: /Picture/2011/12/02/P1001370.JPG
 .. image:: /Picture/2011/12/02/P1001371.JPG
 .. image:: /Picture/2011/12/02/P1001372.JPG
 .. image:: /Picture/2011/12/02/P1001373.JPG
-.. image:: /Picture/2011/12/02/P1001374.JPG
-.. image:: /Picture/2011/12/02/P1001375.JPG
 .. image:: /Picture/2011/12/02/P1001376.JPG
 .. image:: /Picture/2011/12/02/P1001377.JPG
-.. image:: /Picture/2011/12/02/P1001378.JPG
 .. image:: /Picture/2011/12/02/P1001379.JPG
 .. image:: /Picture/2011/12/02/P1001380.JPG
 .. image:: /Picture/2011/12/02/P1001381.JPG
-.. image:: /Picture/2011/12/03/P1001382.JPG
 .. image:: /Picture/2011/12/03/P1001383.JPG
 .. image:: /Picture/2011/12/03/P1001384.JPG
 .. image:: /Picture/2011/12/03/P1001385.JPG
 .. image:: /Picture/2011/12/03/P1001386.JPG
-.. image:: /Picture/2011/12/03/P1001387.JPG
-.. image:: /Picture/2011/12/03/P1001388.JPG
 .. image:: /Picture/2011/12/03/P1001389.JPG
 .. image:: /Picture/2011/12/04/P1001390.JPG
-.. image:: /Picture/2011/12/04/P1001391.JPG
 .. image:: /Picture/2011/12/04/P1001392.JPG
 .. image:: /Picture/2011/12/04/P1001393.JPG
 .. image:: /Picture/2011/12/04/P1001394.JPG
@@ -137,19 +113,14 @@ OSC福岡主な展示物
 .. image:: /Picture/2011/12/04/P1001398.JPG
 .. image:: /Picture/2012/12/08/DSC_1364.jpg
 .. image:: /Picture/2012/12/08/DSC_1365.jpg
-.. image:: /Picture/2012/12/08/DSC_1366.jpg
 .. image:: /Picture/2012/12/08/DSC_1367.jpg
 .. image:: /Picture/2012/12/08/DSC_1368.jpg
 .. image:: /Picture/2012/12/08/DSC_1369.jpg
 .. image:: /Picture/2012/12/08/DSC_1370.jpg
 .. image:: /Picture/2012/12/08/DSC_1371.jpg
-.. image:: /Picture/2012/12/08/DSC_1372.jpg
 .. image:: /Picture/2012/12/08/DSC_1373.jpg
 .. image:: /Picture/2012/12/08/DSC_1374.jpg
-.. image:: /Picture/2012/12/08/DSC_1375.jpg
 .. image:: /Picture/2012/12/08/DSC_1376.jpg
 .. image:: /Picture/2012/12/08/DSC_1377.jpg
-.. image:: /Picture/2012/12/08/DSC_1378.jpg
 .. image:: /Picture/2012/12/08/DSC_1379.jpg
-.. image:: /Picture/2012/12/08/dsc01985.jpg
-.. image:: /Picture/2012/12/08/dsc01986.jpg
+
