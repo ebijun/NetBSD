@@ -19,7 +19,6 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: Ontapの液晶でXが写らない
  .. todo:: apache+php+mysql設定
  .. todo:: webkit-gtk
  .. todo:: icewmの設定方法を書く
@@ -79,6 +78,9 @@ RaspberryPIの起動
 #. HDMIケーブル／USBキーボード/USBマウス/有線ネットワークをRPIにさします。
 #. 電源を入れてRPIを起動します。
 #. 少し待つと、HDMIからNetBSDの起動メッセージが表示されます。
+#. 起動しない場合、まず基板上のLEDを確認してください。
+#. 赤いランプのみ点灯している場合、OSを正しく読み込めていません。1) 少なくともMSDOS領域に各種ファームウェアファイルが見えていることを確認する。2) SDカードの接触不良の可能性があるので、SDカードを挿しなおしてみる。3) ファームウェアが古いため起動しない
+#. 緑のランプも点灯している場合、OSは起動しているのに画面をHDMIに表示できていません。1) HDMIケーブルを差した状態で電源ケーブルを抜き差しして、HDMIディスプレイに何か表示するか確認する。2) HDMIケーブル自体の接触不良。ケーブルを何度か差し直してください。3) 電源アダプタ容量に余裕がない。少なくとも800mA程度の容量を持つアダプタをまず使ってみてください。スマートフォン用のアダプタならまず大丈夫です。
 
 ログイン
 ---------
@@ -108,7 +110,40 @@ mikutterを使ってみよう
 * twitterのIDとパスワードを入力すると、pin番号が表示されます。pin番号をmikutterの認証画面に入力します。
 * しばらくすると、mikutterの画面が表示されます。表示されるはずです。落ちてしまう場合は時計が合っているか確認してください。
 * 漢字は[半角/全角]キーを入力すると漢字モードに切り替わります。anthyです。
-* 青い鳥を消したいとき：「mikutter」「青い鳥」でぐぐってください。
+* 青い鳩を消したいとき：mikutterのプラグインを試してみる
+
+::
+
+% touch ~/.mikutter/plugin/display_requirements.rb
+
+　すると、鳩が消えます。
+mikutterはプラグインを組み込むことで、機能を追加できる自由度の高いtwitterクライアントです。プラグインに関しては、「mikutterの薄い本 プラグイン」で検索してみてください。
+
+fossilを使ってみよう
+----------------------
+fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、コンパクトなソースコード管理システムです。fossilバイナリひとつと、リポジトリファイルひとつにすべての情報が集約されています。
+
+::
+
+ % fossil help
+ Usage: fossil help COMMAND
+ Common COMMANDs:  (use "fossil help -a|--all" for a complete list)
+ add         changes     finfo       merge       revert      tag       
+ addremove   clean       gdiff       mv          rm          timeline  
+ all         clone       help        open        settings    ui        
+ annotate    commit      import      pull        sqlite3     undo      
+ bisect      diff        info        push        stash       update    
+ branch      export      init        rebuild     status      version   
+ cat         extras      ls          remote-url  sync      
+ %  fossil init sample-repo
+ project-id: bcf0e5038ff422da876b55ef07bc8fa5eded5f55
+ server-id:  5b21bd9f4de6877668f0b9d90b3cff9baecea0f4
+ admin-user: jun (initial password is "f73efb")
+ %  ls -l 
+ total 116
+ -rw-r--r--  1 jun  users  58368 Nov 14 18:34 sample-repo
+ % fossil server sample-repo -P 12345 &
+ ブラウザでポート12345にアクセスし、fossil initを実行した時のユーザとパスワードでログインします。
 
 キーマップの設定を変更する
 --------------------------
@@ -177,8 +212,9 @@ mikutterを使ってみよう
 
 	# useradd -m jun
 	# passwd jun
-	# /etc/groupを編集する
-	wheel:*:0:root,jun
+　root権限で作業するユーザーの場合：
+	# useradd -m jun -G wheel
+       # passwd jun
 
 サービス起動方法
 ----------------
@@ -250,7 +286,7 @@ https://raw.github.com/Evilpaul/RPi-config/master/config.txt
 
 起動ディスクを変えるには
 ------------------------
-* MSDOS領域にある設定ファイルの内容を変更してください。
+* MSDOS領域にある設定ファイルcmdline.txtの内容を変更してください。
 
 ::
 
@@ -293,19 +329,18 @@ pkgsrcを最新にしてみる
 
 外付けUSB端子
 --------------
-  NetBSDで利用できるUSBデバイスは利用できる（はずです)。電源の制約があるので、十分に電源を供給できる外付けUSBハブ経由で接続したほうが良いです。
+  NetBSDで利用できるUSBデバイスは利用できる（はずです)。電源の制約があるので、十分に電源を供給できる外付けUSBハブ経由で接続したほうが良いです。動作しているRPIにUSBデバイスを挿すと、電源の関係でRPIが再起動してしまう場合があります。その場合、電源を増強する基板を利用する方法もあります。
 
 外付けSSD
 --------------
- コンパイルには、サンディスク X110 Series SSD 64GB（読込 505MB/s、書込 445MB/s） SD6SB1M-064G-1022I　を外付けディスクケース経由で使っています。NFSが使える環境なら、NFSを使い、pkgsrcの展開をNFSサーバ側で実行する方法もあります。
+ コンパイルには、サンディスク X110 Series SSD 64GB（読込 505MB/s、書込 445MB/s） SD6SB1M-064G-1022I　を外付けディスクケース経由で使っています。NFSが使える環境なら、NFSを使い、pkgsrcの展開をNFSサーバ側で実行する方法もあります。RPIにSSDを接続した場合、OSの種類と関係なく、RPI基板の個体差により、SSDが壊れる場合があるので十分注意してください。
 
 
 液晶ディスプレイ
 -----------------
   液晶キット( http://www.aitendo.com/page/28 )で表示できています。
 aitendoの液晶キットはモデルチェンジした新型になっています。
-HDMI-VGA変換ではうまく表示できていません。（電源が足りない)
-
+(HDMI-VGA変換ケーブルを利用する場合、MSDOS領域にある設定ファイルcmdline.txtで解像度を指定してください。)
 On-Lap 1302でHDMI出力を確認できました。
 
 inode
@@ -322,10 +357,6 @@ inode
 
   http://www.yagoto-urayama.jp/~oshimaya/netbsd/Proudly/2013/
 
-mikutterの青い鳩
------------------
-% touch ~/.mikutter/plugin/display_requirements.rb
-すると、鳩が消えます。
 
 関連バグ
 --------
