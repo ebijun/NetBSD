@@ -197,6 +197,15 @@ SSL設定
  /usr/pkg/etc/httpd/httpd.conf
  Include etc/httpd/httpd-ssl.conf  ... コメントはずす
 
+日本語Wordpress
+"""""""""""""""
+
+::
+
+ # cd /usr/pkgsrc/www/php-ja-wordpress
+ # make package-install
+
+
 LibreOfficeを動かしてみる
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 LibreOfficeをインストールしてみましょう。まず、
