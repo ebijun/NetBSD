@@ -340,14 +340,28 @@ pkgsrcを最新にしてみる
 -----------------
   液晶キット( http://www.aitendo.com/page/28 )で表示できています。
 aitendoの液晶キットはモデルチェンジした新型になっています。
-(HDMI-VGA変換ケーブルを利用する場合、MSDOS領域にある設定ファイルcmdline.txtで解像度を指定してください。)
 On-Lap 1302でHDMI出力を確認できました。
+HDMI-VGA変換ケーブルを利用する場合、MSDOS領域にある設定ファイルcmdline.txtで解像度を指定してください。
+
+::
+
+ https://twitter.com/oshimyja/status/399577939575963648
+ とりあえずうちの1024x768の液晶の場合、 hdmi_group=2 hdmi_mode=16 の2行をconfig.txtに書いただけ。なんと単純。disable_borderはあってもなくても関係なし。
+
 
 inode
 -------
   inodeが足りない場合は、ファイルシステムを作り直してください。このイメージでは以下のようにファイルシステムを作成しています。
 
 	# newfs -n 600000 /dev/rvnd0a
+
+bytebench
+--------------
+  おおしまさん(@oshimyja)がbytebenchの結果を測定してくれました。
+
+ https://twitter.com/oshimyja/status/400306733035184129/photo/1
+ https://twitter.com/oshimyja/status/400303304573341696/photo/1
+
 
 壁紙
 -----
