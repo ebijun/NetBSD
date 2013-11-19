@@ -4,8 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-evbarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.25-evbarm-arm-201311071550Z.iso
-PKGSRC=pkgsrc-2013-11-09.tar.gz
+IMAGE=/usr/release/images/NetBSD-6.99.26-evbarm-arm.iso
+PKGSRC=pkgsrc-2013-11-16.tar.gz
 
 # mount cdrom
 MNT_CDROM=/mnt1
@@ -75,7 +75,7 @@ release:
 	mount /dev/${VND}e ${MNT}/boot
 	tar cf - etc root |(cd ${MNT};tar xf -)
 	tar cf - Oshimaya |(cd ${MNT}/root;tar xpf -)
-	cp ../boot/*     ${MNT}/boot
+	cp boot/*     ${MNT}/boot
 	cp u-boot.bin ${MNT}/boot
 	cp kobo.bin   ${MNT}/boot
 	umount ${MNT}/boot
