@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-evbarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.26-evbarm-arm.iso
+IMAGE=/usr/release/images/NetBSD-6.99.27-evbarm-arm-201311201250Z.iso
 PKGSRC=pkgsrc-2013-11-16.tar.gz
 
 # mount cdrom
@@ -21,6 +21,10 @@ LIST=man modules text xbase xcomp xetc xfont xserver
 # mount point
 MNT=/mnt
 VND=vnd0
+
+# skelton
+RPIDIR=../../RPI/RPIimage
+KOBO=..
 
 
 
@@ -73,11 +77,12 @@ release:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
-	tar cf - etc root |(cd ${MNT};tar xf -)
-	tar cf - Oshimaya |(cd ${MNT}/root;tar xpf -)
-	cp boot/*     ${MNT}/boot
+	(cd ${RPIDIR};tar cf - etc root) |(cd ${MNT};tar xf -)
+	(cd ${RPIDIR};tar cf - Oshimaya) |(cd ${MNT}/root;tar xpf -)
+	cp ${RPIDIR}/boot/*     ${MNT}/boot
 	cp u-boot.bin ${MNT}/boot
-	cp kobo.bin   ${MNT}/boot
+	cp ${KOBO}/netbsd-ld0.bin   ${MNT}/boot/kobo-ld0.bin
+	cp ${KOBO}/netbsd-sd0.bin   ${MNT}/boot/kobo-sd0.bin
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
