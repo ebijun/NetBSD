@@ -1,41 +1,47 @@
-VERSION: :1,$s/2013-11-08/2013-11-08/g
-ISO:     :1,$s/201311060020Z/201311060020Z/g
-PKGSRC:  :1,$s/2013-11-02/2013-11-02/g
-NetBSD:  :1,$s/6.99.25/??/g
+VERSION: :1,$s/2013-11-23/2013-11-23/g
+ISO:     :1,$s/201311201250Z/201311201250Z/g
+PKGSRC:  :1,$s/2013-11-16/2013-11-16/g
+NetBSD:  :1,$s/6.99.27/6.99.27/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2013-11-08-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2013-11-23-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2013-11-08-netbsd-raspi.img.gz for RPI.
+I've updated 2013-11-23-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-08-earmhf/2013-11-08-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-23-earmhf/2013-11-23-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.25 evbarm-earmhf 201311060020Z from nyftp
-- pkgsrc-current         2013-11-02 tarball from ftp.NetBSD
+- NetBSD-current 6.99.27 evbarm-earmhf 201311201250Z from nyftp
+- pkgsrc-current         2013-11-16 tarball from ftp.NetBSD
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2013-11-08-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2013-11-23-netbsd-raspi.img.gz      earmhf
 
 Todo:
-- More Migration test for hardfloat: userland and pkgsrc
+- More Migration test for hardfloat: userland and pkgsrc 
   Check your favorite pkgsrc on RPI.
   This image is a sample NetBSD workbench for you.
   Once you make NetBSD environment,It should run on every hardware you have.
-- Benchmarking between softfloat vs hardfloat: recommended benchmark?
-- need more good web browser. (seamonkey,midori,deforaos)
-- test deforaos 
+- ByteBenchmarking between softfloat vs hardfloat:
+  earmhf:  https://twitter.com/oshimyja/status/400306733035184129
+  evbarm:  https://twitter.com/oshimyja/status/400303304573341696
+- ByteBenchmarking between 6.1 vs current
+  NODEBUG: https://twitter.com/oshimyja/status/402105186128121858
+       6.1: 24.3  6.99.27: 22.5  smells like PenIII 300MHz spirit.
+- Still need more good web browser. (seamonkey,midori,deforaos)
+- test deforaos,need icon packages and setting (adviced by obache)
 - Need GPIO & bus controll document and implimentation (via lua?)
-- (comment out kernel DEBUG option)
+- comment out kernel DEBUG/DIAGNOSTIC option
+- use pkgchk.conf
 
 =====================
 
-For Kansai OpenSource 2013 NetBSD booth
- (https://www.facebook.com/events/149008965300908/)
+For OpenSourceConference 2013Oita NetBSD booth
+ (https://www.facebook.com/events/188171754693153/)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.25 earmhf rpi.img.gz base
+- NetBSD 6.99.27 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -57,9 +63,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2013-11-02 tree inside.
+  - pkgsrc: 2013-11-16 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-08-earmhf/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-23-earmhf/packages
 
 Installed Packages:
 kterm
@@ -140,6 +146,9 @@ patch: xsrc/external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c
 need update icewm 1.2 to 1.3, or apply patch.
 http://www.yagoto-urayama.jp/~oshimaya/netbsd/files/icewm-1.2.35.diff
 
+3. bpf problem on 2013-11-08.
+should be fixed in this version.
+http://www.raspberrypi.org/phpBB3/viewtopic.php?p=455709#p455709
 
 Wishlist from RPI user: please notify @ebijun
 1. USB multifunction dongle.
