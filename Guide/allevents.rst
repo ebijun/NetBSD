@@ -19,15 +19,21 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-イベント参加実績
+
+$B%$%Y%s%H;22C<B@S(B
 ---------------
 
 .. csv-table::
 
- 140,2013/?,Open Source Conference 2013 Hiroshima,
- 139,2013/?,Open Source Conference 2013 Hokkaido,
+ 145,2014/2,Open Source Conference 2013 Tokyo/Spring,
+ 144,2013/11,Open Source Conference 2013 Oita,
+ 143,2013/11,Open Source Conference 2013 Fukuoka,
+ 142,2013/11,Kansai Open Source 2012,Osaka,RPI
+ 141,2013/10,Open Source Conference 2013 Tokyo/Fall,Netwinder
+ 140,2013/10,Open Source Conference 2013 Hiroshima,X68060 X68030 XM6i LunaII
+ 139,2013/9,Open Source Conference 2013 Hokkaido,
  138,2013/8,Open Source Conference 2013 Shimane,
- 137,2013/?,Kawagoe,
+ 137,2013/8,Open Source Un Conference 2013 Kawagoe,
  136,2013/8,Open Source Conference 2013 Kansai@Kyoto,
  135,2012/7,Japan NetBSD Users' Group meeting & NetBSD BOF,
  134,2013/7,Open Source Conference 2013 Okinawa,RPI XM6i zaurus WZero3

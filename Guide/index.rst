@@ -33,8 +33,12 @@ Contents:
    :maxdepth: 2
    :numbered:
 
-   Place/fukuoka
+   Place/oita
    Place/intro
+   Pkgsrc/jp
+   Pkgsrc/cms
+   Pkgsrc/sphinx
+   Software/mlterm
    RPI
    Place/asiabsdcon
 

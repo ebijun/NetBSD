@@ -320,6 +320,18 @@ X11のインストール
 ------------------
 * ソースファイル展開
 * ./build.sh -U -m evbarm -a earmhf release
+* earm{v[4567],}{hf,}{eb} earmv4hf
+* http://mail-index.netbsd.org/tech-kern/2013/11/12/msg015933.html
+
+.. csv-table::
+
+ acorn26,armv2
+ acorn32,armv3 armv4 (strongarm)
+ cats shark netwinder, armv4 (strongarm)
+ iyonix,armv5
+ hpcarm,armv4 (strongarm) armv5.
+ zaurus,armv5
+ evbarm,armv5/6/7
 
 
 pkgsrcを最新にしてみる
@@ -433,18 +445,6 @@ pkgsrc/multimedia/libvpx
 #. /etc/rc.confのrc_configured=YESをNOにして起動します。
 #.  戻すときはmount / ;vi /etc/rc.conf　でNOをYESに変更してrebootします。
 
-ARMとNetBSD
-""""""""""""""""""""
-
-.. csv-table::
-
- acorn26,armv2
- acorn32,armv3 armv4 (strongarm)
- cats shark netwinder, armv4 (strongarm)
- iyonix,armv5
- hpcarm,armv4 (strongarm) armv5.
- zaurus,armv5
- evbarm,armv5/6/7
 
 参考URL
 --------
