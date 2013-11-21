@@ -74,8 +74,8 @@ OSC大分主な展示物
 .. csv-table::
  :widths: 15 15 60
 
- 2008/02/15-16, hpcmips hpcarm hpcsh
- 2009/03/13-14, hpcmips hpcarm hpcsh zaurus
+ 2008/02/15-16, 参加してません
+ 2009/03/13-14, 参加してません
  2010/01/23, hpcmips hpcarm hpcsh zaurus
  2011/03/19,WZero3 hpcmips hpcarm hpcsh zaurus
  2012/02/11,WZero3 hpcmips hpcarm hpcsh zaurus XM6i mikutterシール

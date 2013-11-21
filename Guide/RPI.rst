@@ -63,7 +63,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2013-11-09-earmhf/2013-11-09-netbsd-raspi.img.gz
+ 2013-11-23-earmhf/2013-11-23-netbsd-raspi.img.gz
 
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -71,7 +71,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2013-11-09-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2013-11-23-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
 
 RaspberryPIの起動
 ------------------
@@ -166,7 +166,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
 ::
 
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-09-earmhf/packages
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-23-earmhf/packages
 
 
 * パッケージのインストール
@@ -175,7 +175,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
 ::
 
- # export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-09-earmhf/packages
+ # export PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-11-23-earmhf/packages
  # pkg_add zsh
 
 * パッケージの一覧
@@ -195,7 +195,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- 2013/11/02時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
+ 2013/11/16時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
@@ -248,7 +248,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2013-11-09-netbsd-raspi.img
+ # vnconfig vnd0 2013-11-23-netbsd-raspi.img
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
