@@ -1,3 +1,7 @@
 root=ld0a console=fb
+#for 1024x768 Display,uncomment hdmi_group and hdmi_mode line.
+#hdmi_group=2 
+#hdmi_mode=16
+#
 #fb=1280x1024		# to select a mode, otherwise try EDID 
 #fb=disable		# to disable fb completely
