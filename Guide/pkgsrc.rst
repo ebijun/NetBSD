@@ -355,6 +355,18 @@ emacsを利用する場合は、anthy-elispパッケージをインストール�
  % cd /usr/pkgsrc/inputmethod/anthy-elisp
  # make package-install
 
+.emacs に、以下の記述を追加します。
+
+::
+
+ (set-language-environment "Japanese")
+ (set-default-coding-systems 'utf-8)
+ (set-language-environment "Japanese")
+ (load-library "anthy")
+ (setq default-input-method "japanese-anthy")
+ ;
+ (define-obsolete-variable-alias 'last-command-char 'last-command-event "at least 19.34") 
+
 
 壁紙
 ~~~~
