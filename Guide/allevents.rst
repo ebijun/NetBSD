@@ -20,8 +20,8 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-$B%$%Y%s%H;22C<B@S(B
----------------
+これまで参加したイベント
+---------------------------
 
 .. csv-table::
 

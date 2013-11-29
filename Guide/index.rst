@@ -27,45 +27,43 @@
 NetBSD観光ガイド      
 ==============================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
    :numbered:
 
-    RPI
-    xev
-    ZAURUS
-    WZERO3
-    guide
-    Luna
-    NEWS
-    Software/mlterm
-    Software/sphinx
-    events
-    pkgsrc
-    hpcmips
-    kobo
-    allevents
-    X68K
-    Place/shimane
-    Place/intro
-    Place/kawagoe
-    Place/hokkaido
-    Place/hiroshima
-    Place/tokyo
-    Place/osaka
-    Place/asiabsdcon
-    Place/fukuoka
-    Place/oita
-    Pkgsrc/mlterm
-    Pkgsrc/cms
-    Pkgsrc/jp
-    Pkgsrc/sphinx
-    Device/BT-Micro3H2X/index
-    books
+ Place/intro
+ RPI
+ ZAURUS
+ WZERO3
+ guide
+ Luna
+ NEWS
+ Software/mlterm
+ Software/sphinx
+ events
+ pkgsrc
+ hpcmips
+ kobo
+ allevents
+ X68K
+ Place/shimane
+ Place/kawagoe
+ Place/hokkaido
+ Place/hiroshima
+ Place/tokyo
+ Place/osaka
+ Place/asiabsdcon
+ Place/fukuoka
+ Place/oita
+ Pkgsrc/mlterm
+ Pkgsrc/cms
+ Pkgsrc/jp
+ Pkgsrc/sphinx
+ Device/BT-Micro3H2X/index
+ books
 
- * :ref:`genindex`
- * :ref:`modindex`
- * :ref:`search`
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
 
