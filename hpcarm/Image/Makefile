@@ -4,9 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.27-hpcarm-201311201250Z.iso
-
-PKGSRC=pkgsrc-2013-09-06.tar.gz
+IMAGE=/usr/release/images/NetBSD-6.99.28-hpcarm-201312011300Z.iso
+PKGSRC=../../pkgsrc/pkgsrc-2013-11-30.tgz
 
 SETS=/mnt1/hpcarm/binary/sets
 INSTALLATION=/mnt1/hpcarm/installation
@@ -54,8 +53,8 @@ extract:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	for i in ${LIST} ; do (tar xzpvf ${SETS}/$${i}.tgz -C ${MNT};); done
-	tar xzpvf ${PKGSRC} -C ${MNT}/usr
+	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
+	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -96,3 +95,9 @@ setup:
 	#(cd ..; tar cvpf - Oshimaya) |(cd /mnt/root;tar xvpf -)
 	umount ${MNT}
 	vnconfig -u ${VND}
+
+# fetch newest isofileimage
+fetch:
+	./NewestISO |tee Fetch
+	sh Fetch
+	rm Fetch

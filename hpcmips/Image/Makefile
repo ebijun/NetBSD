@@ -6,12 +6,10 @@ FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 #FILE=`date +%Y-%m-%d`-netbsd-hpcmips-5.2.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.27-hpcmips-201311191330Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.28-hpcmips-201312011300Z.iso
 #IMAGE=/usr/release/6.1/NetBSD-6.1.1-hpcmips.iso
 #IMAGE=/usr/release/5/hpcmipscd-5.2.iso
-
-
-PKGSRC=pkgsrc-2013-11-16.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2013-11-30.tgz
 
 SETS=/mnt1/hpcmips/binary/sets
 INSTALLATION=/mnt1/hpcmips/installation
@@ -59,8 +57,8 @@ extract:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	for i in ${LIST} ; do (tar xzpvf ${SETS}/$${i}.tgz -C ${MNT};); done
-	tar xzpvf ${PKGSRC} -C ${MNT}/usr
+	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
+	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -103,3 +101,10 @@ setup:
 	#(cd ..; tar cvpf - Oshimaya) |(cd /mnt/root;tar xvpf -)
 	umount ${MNT}
 	vnconfig -u ${VND}
+
+# fetch newest isofileimage
+fetch:  
+	./NewestISO |tee Fetch
+	sh Fetch
+	rm Fetch
+
