@@ -21,9 +21,16 @@
 
 .. puppetで設定できるようにする
 .. contaoとか説明した方がいいのか。
+.. PSPとBSDライセンス
+.. BSDの略称説明
 
 BSDライセンス
 -------------
+
+BSDライセンスとNetBSD
+~~~~~~~~~~~~~~~~~~~~~~
+ NetBSDのソースコードは、自由に配布したり売ることができます。 NetBSDのソースコードから作ったバイナリを売ることもできます。バイナリのソースコードを公開する義務はありません。
+
 
 2 条項 BSD ライセンス
 ~~~~~~~~~~~~~~~~~~~~~
@@ -49,10 +56,6 @@ BSDライセンス
  
  このライセンスの前には著作権表示そのものが付きます。この後には注意書きが付き、このソフトウェアに関して問題が生じても、作者は責任を負わないと述べます。 
 
-BSDライセンスとNetBSD
-~~~~~~~~~~~~~~~~~~~~~~
- NetBSDのソースコードを自由に売ることができます。 NetBSDのソースコードから作ったバイナリを売ることもできます。バイナリのソースコードを公開する義務はありません。
-
 NetBSD
 --------
  NetBSDは１個のソースツリーをコンパイルすることで実行イメージを作ることができます。
@@ -67,16 +70,17 @@ NetBSD
 
 ::
 
- # ftp ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/tar_files/src.tar.gz
+ # ftp ftp://ftp.NetBSD.org/pub/NetBSD/NetBSD-current/tar_files/src.tar.gz
  # tar xzvf src.tar.gz
  # ./build.sh -U -m i386 release     .... -U:root以外で作成,この場合i386向け
 
 Xを含んだシステムを作る
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 ::
 
- # ftp ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/tar_files/xsrc.tar.gz
+ # ftp ftp://ftp.NetBSD.org/pub/NetBSD/NetBSD-current/tar_files/xsrc.tar.gz
  # tar xzvf xsrc.tar.gz
  # cd src
  # ./build.sh -u -U -m i386 -x -X ../xsrc release ... -u:更新,-xX Xも作る
@@ -88,29 +92,13 @@ CD-ROMイメージを作る
 
  # ./build.sh -m i386 iso-image　　　... CD-ROMイメージ作成
 
-ソースコードの更新
-~~~~~~~~~~~~~~~~~~~~
-
-::
-
- http://cvsweb.netbsd.org/
- # cd src
- # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r netbsd-6-1-2-RELEASE  ... NetBSD6.1.2
- # cd pkgsrc
- # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r pkgsrc-2013Q3 ... 2013Q3に更新
-
-バグレポート・追加差分
-~~~~~~~~~~~~~~~~~~~~~~~~
- www.NetBSD.org から"send-pr"
 
 pkgsrc - ソースコードからソフトウェアを作る
 -------------------------------------------
 
 世界中にあるいろいろなプログラムをコンパイル・インストールする手順は、プログラムごとにまちまちです。世界中のプログラムを、すべて同じ手順でコンパイルして、インストールするためには、どのような枠組みがあればよいでしょうか？
 
-ソースコードからプログラムをコンパイル・インストールする時、NetBSDでは主に、pkgsrcを利用します。pkgsrcでは、12000種類以上のプログラムについて、コンパイル手順を分野ごとにまとめて、収集しています。
+ソースコードからプログラムをコンパイル・インストールする時、NetBSDでは主に、pkgsrcを利用します。pkgsrcでは、13000種類以上のプログラムについて、コンパイル手順を分野ごとにまとめて、収集しています。
 
  pkgsrcの役割を挙げてみます。
 
@@ -125,7 +113,7 @@ pkgsrc - ソースコードからソフトウェアを作る
 ::
 
  # cd /usr
- # ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/tar_files/pkgsrc.tar.gz
+ # ftp://ftp.NetBSD.org/pub/NetBSD/NetBSD-current/tar_files/pkgsrc.tar.gz
  # tar xzvf pkgsrc.tar.gz
  (cd /usr/pkgsrc/bootstrap;./bootstrap) .. NetBSD以外のOSで実行する
  # cd /usr/pkgsrc/net/mikutter
@@ -184,7 +172,8 @@ baserCMSをインストールしてみる
  管理者のアカウントとパスワードがメールで飛んでくる！！
 
 SSL設定
-"""""""
+"""""""""
+
 証明書のファイルを指定して、httpd.confのコメントを外して、apacheを再起動します。
 
 ::
@@ -198,7 +187,7 @@ SSL設定
  Include etc/httpd/httpd-ssl.conf  ... コメントはずす
 
 日本語Wordpress
-"""""""""""""""
+"""""""""""""""""""
 
 ::
 
@@ -330,8 +319,41 @@ pkg_rolling-replaceを使う方法:依存関係に従って更新する
  # cvs update -PAd
  # pkg_rolling-replace -u
 
+ソースコードの更新
+~~~~~~~~~~~~~~~~~~~~
+
+::
+
+ http://cvsweb.NetBSD.org/
+ # cd src
+ # cvs update -PAd                 ... 最新に更新
+ # cvs update -Pd -r netbsd-6-1-2-RELEASE  ... NetBSD6.1.2
+ # cd pkgsrc
+ # cvs update -PAd                 ... 最新に更新
+ # cvs update -Pd -r pkgsrc-2013Q3 ... 2013Q3に更新
+
+
+バグレポート・追加差分
+~~~~~~~~~~~~~~~~~~~~~~~~
+ www.NetBSD.org から"send-pr"
+
+NetBSDとブース展示
+-------------------------
+ 日本NetBSDユーザーグループは、日本各地のオープンソースイベントに参加して、ブース出展とセミナー枠でNetBSD関連の情報をまとめています。
+
+ブース出展
+~~~~~~~~~~~
+
+オープンソース関連のイベントでは、たいてい幅1.8m程度の長机と椅子二つ程度のブースを出展します。各地域でのイベント開催に合わせて、最新の活動成果を展示しようとします。
+
+セミナー枠
+~~~~~~~~~~~~~
+
+セミナー枠では、NetBSDに関する情報を紙にまとめて配布して、出版物でカバーできないような情報をイベント毎にまとめています。開催地にある電子部品店・コンピュータショップ・古書店・クラフトビールバー等、生活に必要な情報もまとめています。
+
 シール関連まとめ
-----------------
+~~~~~~~~~~~~~~~~~~~~
+
 NetBSDブースでは、NetBSDのシールや、NetBSDがサポートしている・サポートしようとしている・みんなが好きで利用しているソフトウェアに関連したシールを持ち寄って配っています。
 OSの展示は単調になりがちで、OS開発やNetBSDについて通りすがりの数秒で理解してもらうのは不可能でしたが、シールなら数秒で何かわかってもらえます。
 かさばらないので、誰にも受け取ってもらいやすく、優れたデザインのシールに人気が出ると、ブース全体に活気が生まれて、思いもよらない進展を呼ぶことがあります。

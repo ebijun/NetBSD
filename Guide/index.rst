@@ -28,24 +28,28 @@ NetBSD観光ガイド
 ==============================================
 
 .. toctree::
-   :maxdepth: 2
-   :numbered:
+ :maxdepth: 2
+ :numbered:
 
  Place/intro
  RPI
+ kobo
  ZAURUS
  WZERO3
- guide
  Luna
  NEWS
+ hpcmips
+ X68K
+ pkgsrc
+ Pkgsrc/mlterm
+ Pkgsrc/cms
+ Pkgsrc/jp
+ Pkgsrc/sphinx
  Software/mlterm
  Software/sphinx
+ guide
  events
- pkgsrc
- hpcmips
- kobo
  allevents
- X68K
  Place/shimane
  Place/kawagoe
  Place/hokkaido
@@ -55,10 +59,6 @@ NetBSD観光ガイド
  Place/asiabsdcon
  Place/fukuoka
  Place/oita
- Pkgsrc/mlterm
- Pkgsrc/cms
- Pkgsrc/jp
- Pkgsrc/sphinx
  Device/BT-Micro3H2X/index
  books
 
