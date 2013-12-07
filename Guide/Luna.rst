@@ -635,6 +635,7 @@ LUNA88K謎ボード
 .. [105] Luna88k マニュアル https://twitter.com/ao_kenji/status/395857381818519552
 .. [106] Luna88k FaceBook ページ　https://www.facebook.com/Luna88k
 .. [107] OpenBSD/luna88k standalone bootloader by @MiodVallat works fine on my LUNA-88K2! https://twitter.com/ao_kenji/status/395551245563219969
+.. [108] LUNA-88KのPC-98拡張バス(Cバス)についてのメモ https://gist.github.com/ao-kenji/7843096
 
 このページ
 ~~~~~~~~~~~
