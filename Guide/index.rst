@@ -24,8 +24,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-NetBSD観光ガイド      
-==============================================
+.. ruby2.0対応
+.. php5.5対応
+.. sphinx:PDF出力：プレゼン用出力
+.. CMS:
+.. distcc環境の作り方
+.. 印刷プリンタ：
+.. tex関連 
+.. 2013Q4用イメージをつくるか？
+   RPI,RPIsf,Zaurus,Netwalker,hpcmips,hpcarm,hpcsh,(dreamcast) あたり
+   RPI,2013-11-23,そのままアップデート,アップデート中
+   evbarm,2013-09-09,そのままアップデート,make release
+   hpcarm,-,イメージ作成スクリプトテスト,make imageして起動してみる
+   zaurus,-,イメージ作成スクリプトテスト,スクリプトを作る
+   hpcmips,-,イメージ作成スクリプトテスト,スクリプトを作る
+   hpcsh,-,イメージ作成スクリプトテスト,スクリプトを作る
+   dreamcast,-,イメージ作成スクリプトテスト,スクリプトを作る
+   x68k,-,
+
+| NetBSD観光ガイド      
+| ==============================================
 
 .. toctree::
  :maxdepth: 2
