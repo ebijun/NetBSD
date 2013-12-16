@@ -62,8 +62,13 @@ RaspberryPIでNetBSDを使ってみる
 
 ::
 
+ earmhf (EARM：ハードフロート 通常はこちらを利用してください)
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
  2013-11-23-earmhf/2013-11-23-netbsd-raspi.img.gz
+ 
+ evbarm (ソフトフロート：hpcarm/zaurus互換)
+ # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
+ 2013-09-09-02-netbsd-evbarm.img.gz
 
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。

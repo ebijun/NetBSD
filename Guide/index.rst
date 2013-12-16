@@ -60,8 +60,6 @@
  Pkgsrc/cms
  Pkgsrc/jp
  Pkgsrc/sphinx
- Software/mlterm
- Software/sphinx
  guide
  events
  allevents
@@ -71,11 +69,11 @@
  Place/hiroshima
  Place/tokyo
  Place/osaka
- Place/asiabsdcon
  Place/fukuoka
  Place/oita
  Device/BT-Micro3H2X/index
  books
+ Place/asiabsdcon
 
 * :ref:`genindex`
 * :ref:`modindex`
