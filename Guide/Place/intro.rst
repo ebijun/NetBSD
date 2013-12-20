@@ -170,6 +170,10 @@ baserCMSをインストールしてみる
  # chown -R www.www basercms
  # http://localhost/basercms 
  管理者のアカウントとパスワードがメールで飛んでくる！！
+ 
+ pkgsrcを使う場合：
+ # cd /usr/pkgsrc/www/php-basercms
+ # make package-install
 
 SSL設定
 """""""""

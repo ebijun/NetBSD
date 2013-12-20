@@ -222,6 +222,7 @@ RaspberryPIで使いそうなソフトを一気にインストールする
 
  # cd /usr/pkgsrc/meta-pkgs/desctop-gnome
  # make package-install
+ # gnome-session
 
 デスクトップ環境の設定: deforaos-desktopの場合
 """"""""""""""""""""""""""""""""""""""""""""""
@@ -335,7 +336,9 @@ anthyを利用する場合
 
 ::
 
- % cd /usr/pkgsrc/inputmethod/ibus-mozc
+ # cd /usr/pkgsrc/inputmethod/anthy
+ # make package-install
+ # cd /usr/pkgsrc/inputmethod/uim
  # make package-install
 
 .xinitrcに以下の行を追加します。
@@ -408,22 +411,15 @@ firefox
  # cd /usr/pkgsrc/multimedia/adobe-flash-plugin11
  # make package-install
 
-OpenOffice
+LibreOffice
 """"""""""""
 ::
 
- # grep openoffice3 /etc/mk.conf
- # PKG_OPTIONS.openoffice3=lang-ja
- # cd /usr/pkgsrc/misc/openoffice3
- # make package
- # make install
- % /usr/pkg/bin/soffice ....
-
-LibreOffice
-""""""""""""""""
-pkgsrc-wip/libreoffice4 でテストをしています。
-
-.. /etc/mk.confにPKG_OPTIONS.harfbuzz=icuが必要か。
+ # grep libreoffice4 /etc/mk.conf
+ # PKG_OPTIONS.libreoffice4=lang-ja
+ # cd /usr/pkgsrc/misc/libreoffice4
+ # make package-install
+ % /usr/pkg/bin/soffice 
 
 
 LaTeX
@@ -448,7 +444,7 @@ wordpress
 """""""""""
 ::
 
- # cd /usr/pkgsrc/www/wordpress
+ # cd /usr/pkgsrc/www/php-ja-wordpress
  # make package-install
  # cd /usr/pkgsrc/archivers/php-zlib
  # make package-install .... zip形式のテーマをインストールする時に必要
@@ -487,7 +483,7 @@ Gitのインストール
 
 ::
 
- # cd /usr/pkgsrc/devel/scmgit-base
+ # cd /usr/pkgsrc/devel/git-base
  # make package-install
  % ls -l /usr/pkg/bin/git
 
