@@ -26,6 +26,8 @@ NetBSDでの無線LAN設定
 
 と書いて、
 
+::
+
  # ifconfig iwn0 up
  # /usr/sbin/wpa_supplicant -dd  -i iwn0 -c /etc/wpa_supplicant.conf
 
