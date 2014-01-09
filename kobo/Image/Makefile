@@ -5,7 +5,7 @@ FILE=`date +%Y-%m-%d`-netbsd-evbarm.img
 
 # iso file information
 IMAGE=/usr/release/images/NetBSD-6.99.28-evbarm-arm-201312050420Z.iso
-PKGSRC=pkgsrc-2013-12-07.tar.gz
+PKGSRC=pkgsrc-2013-12-28.tar.gz
 
 # mount cdrom
 MNT_CDROM=/mnt1
