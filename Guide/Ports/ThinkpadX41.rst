@@ -1,14 +1,34 @@
 ThinkpadX41 を使ってみる
 --------------------------
-NBUG例会にいく前に寄ったハードオフでThinkpad X41が3150円で売っていたので買ってみた。
+NBUG例会にいく前に寄ったハードオフでThinkpad X41が3150円で売っていたので買ってみました。WZero3（スマホ)と同じ値段！
+
+
+..  image:: ../Picture.org/2013/12/21/DSC_2993.jpg
+..  image:: ../Picture.org/2013/12/21/DSC_2994.jpg
+..  image:: ../Picture.org/2013/12/21/DSC_2995.jpg
+..  image:: ../Picture.org/2013/12/21/DSC_2996.jpg
+..  image:: ../Picture.org/2013/12/21/DSC_2997.jpg
+..  image:: ../Picture.org/2013/12/21/DSC_2998.jpg
+..  image:: ../Picture.org/2013/12/21/DSC_2999.jpg
+..  image:: ../Picture.org/2013/12/21/DSC_3000.jpg
+..  image:: ../Picture.org/2013/12/21/DSC_3001.jpg
+..  image:: ../Picture.org/2013/12/21/DSC_3002.jpg
+..  image:: ../Picture.org/2013/12/21/dsc03843.jpg
+..  image:: ../Picture.org/2013/12/21/dsc03844.jpg
+..  image:: ../Picture.org/2013/12/21/dsc03845.jpg
+..  image:: ../Picture.org/2013/12/21/dsc03846.jpg
+..  image:: ../Picture.org/2013/12/21/dsc03847.jpg
+..  image:: ../Picture.org/2013/12/21/dsc03848.jpg
+..  image:: ../Picture.org/2013/12/21/dsc03849.jpg
+..  image:: ../Picture.org/2013/12/21/dsc03850.jpg
 
 目標
 """""
-艦これを遊ぶ。
+艦これを遊ぶためずっと起動しっ放しマシン。
 
 主なスペック
 """""""""""""""""
-ここではじめてスペックを調べた。
+ここではじめてスペックを調べます。
 
 .. csv-table::
  :widths: 20 60
@@ -16,7 +36,7 @@ NBUG例会にいく前に寄ったハードオフでThinkpad X41が3150円で売
  形式,IBM 252557J (ThinkPad X41)
  CPU, Intel(R) Pentium(R) M processor 1.50GHz id 0x6d8
  メモリ, 758 MB
- ハードディスク, 38154 MB HTC426040G9AT00
+ ハードディスク, 38154 MB HTC426040G9AT00 1.8インチ日立
 
 USBスティックへインストールイメージ作成
 """""""""""""""""""""""""""""""""""""
@@ -59,6 +79,7 @@ USBから起動するために、青いAccessボタンを押してから、F12�
 NetBSDのインストール
 """"""""""""""""""""""
 普通にNetBSDをインストールします。たいていリターンキーを押しているとインストールが終わります。
+
 #. タイムゾーンを日本にします
 #. ユーザーを作っておきます。rootになれるgroupに追加しておきます。
 #. pkgsrcのソースだけインストールしておきます。
@@ -70,6 +91,7 @@ NetBSDのインストール
 NetBSDを起動する
 """""""""""""""""
 USBメモリを抜いて、NetBSDを起動します。
+
 #. ログインしてログインできるか確認します。
 #. dmesgコマンドを実行して、どのデバイスが見えているか／見えていないか確認します。
 #. ifconfig -aコマンドを実行して、どのネットワークデバイスが見えているか確認します。有線LANが設定してあればそのまま有線LANが設定されているはずです。
@@ -98,32 +120,32 @@ Xの設定
 
 ::
 
-audio/xmix
-devel/fossil
-editors/emacs24
-editors/gedit
-fonts/kochi-ttf
-fonts/vlgothic-ttf
-graphics/gimp
-graphics/shotwell
-graphics/xli
-inputmethod/anthy-elisp
-inputmethod/uim
-multimedia/adobe-flash-plugin11
-net/mikutter
-pkgtools/pkg_rolling-replace
-pkgtools/pkg_tarup
-print/acroread9
-print/evince
-shells/bash
-shells/tcsh
-textproc/py-sphinx
-wm/icewm
-www/seamonkey
-www/seamonkey-l10n
-x11/kterm
-x11/mlterm
-x11/xlockmore-lite
+　audio/xmix
+　devel/fossil
+　editors/emacs24
+　editors/gedit
+　fonts/kochi-ttf
+　fonts/vlgothic-ttf
+　graphics/gimp
+　graphics/shotwell
+　graphics/xli
+　inputmethod/anthy-elisp
+　inputmethod/uim
+　multimedia/adobe-flash-plugin11
+　net/mikutter
+　pkgtools/pkg_rolling-replace
+　pkgtools/pkg_tarup
+　print/acroread9
+　print/evince
+　shells/bash
+　shells/tcsh
+　textproc/py-sphinx
+　wm/icewm
+　www/seamonkey
+　www/seamonkey-l10n
+　x11/kterm
+　x11/mlterm
+　x11/xlockmore-lite
 
 
 フラッシュプレーヤーの動作確認
@@ -132,13 +154,59 @@ x11/xlockmore-lite
 各種設定
 """"""""""""
 
+キーボード設定
+""""""""""""""
+Aの左はCtrlの日本語配列（Sun Type5+JLEの影響)
+
+X41固有の設定(無線LANカード)
+"""""""""""""""""""""""""""""
+sysctl でiwiを有効にする。man iwi
+
+X41固有の設定(音)
+""""""""""""""""""""""
+音設定もしあれば。
+
+追加(メモリ)
+""""""""""""""""""
+艦これ、ずっと動かしていると760M+120Mくらいメモリ食う。
+netbookの余ったメモリを差したらメモリが倍に！
+
+追加(ハードディスク)
+"""""""""""""""""""""""""
+1,8インチディスクはいろいろめんどくさい。
+
+#. 1.8インチハードディスクに交換。40G→60G。8000円くらい。なんだかのー。
+#. X41用SSDに交換。32G 4750円 64G 8000円くらい。やってもいいかな。
+#. mSATAに交換。下駄1280円＋128G 10000円くらい。やってみたい。
+#. 標準以外のディスクにするとBIOSが文句を言う。(ver2.)
+
+ボリューム調整
+""""""""""""""""
+xmixとか。
+
+amd64
+""""""""""""
+たまたまi386で動かしたけどamd64でもたぶん動く。
+
+電源サスペンド
+"""""""""""""""""
+apmd？
+powerd？
+両方？
+
+電池
+""""""""
+icewmで電源表示をつける。1:10くらい持つらしい。
+
+#. 交換：　ロアで6000円くらい。
+
+無線LAN設定
+""""""""""""""""
+WEP
+WEPじゃないの
 
 やること
 """""""""
- 電源まわり
- YBBモバイル
- evince のバージョンが違う
- SSDに入れ替える？
  github設定、BIOSを1.0にダウングレードするか、それが嫌なら警告が表
 
 http://silentvoice.moe-nifty.com/blog/2013/06/thinkpad-x41win.html
