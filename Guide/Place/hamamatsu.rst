@@ -69,7 +69,6 @@ OSC福岡主な展示物
 .. image:: ../Picture/2013/02/09/DSC_1617.jpg
 .. image:: ../Picture/2013/02/09/DSC_1618.jpg
 .. image:: ../Picture/2013/02/09/DSC_1619.jpg
-.. image:: ../Picture/2013/02/09/dsc02121.jpg
 .. image:: ../Picture/2013/02/09/dsc02122.jpg
 .. image:: ../Picture/2013/02/09/dsc02123.jpg
 .. image:: ../Picture/2013/02/09/dsc02124.jpg
@@ -78,11 +77,8 @@ OSC福岡主な展示物
 .. image:: ../Picture/2013/02/09/dsc02127.jpg
 .. image:: ../Picture/2013/02/09/dsc02128.jpg
 .. image:: ../Picture/2013/01/20/DSC_1533.jpg
-.. image:: ../Picture/2013/01/20/DSC_1534.jpg
 .. image:: ../Picture/2013/01/20/DSC_1535.jpg
 .. image:: ../Picture/2013/01/20/DSC_1536.jpg
-.. image:: ../Picture/2013/01/20/DSC_1537.jpg
-.. image:: ../Picture/2013/01/20/DSC_1538.jpg
 .. image:: ../Picture/2013/01/20/DSC_1539.jpg
 .. image:: ../Picture/2013/01/20/DSC_1540.jpg
 .. image:: ../Picture/2013/01/20/DSC_1541.jpg
