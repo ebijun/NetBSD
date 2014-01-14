@@ -3,28 +3,15 @@ ThinkpadX41 を使ってみる
 NBUG例会にいく前に寄ったハードオフでThinkpad X41が3150円で売っていたので買ってみました。WZero3（スマホ)と同じ値段！
 
 
-..  image:: ../Picture.org/2013/12/21/DSC_2993.jpg
-..  image:: ../Picture.org/2013/12/21/DSC_2994.jpg
-..  image:: ../Picture.org/2013/12/21/DSC_2995.jpg
-..  image:: ../Picture.org/2013/12/21/DSC_2996.jpg
-..  image:: ../Picture.org/2013/12/21/DSC_2997.jpg
-..  image:: ../Picture.org/2013/12/21/DSC_2998.jpg
-..  image:: ../Picture.org/2013/12/21/DSC_2999.jpg
-..  image:: ../Picture.org/2013/12/21/DSC_3000.jpg
-..  image:: ../Picture.org/2013/12/21/DSC_3001.jpg
-..  image:: ../Picture.org/2013/12/21/DSC_3002.jpg
-..  image:: ../Picture.org/2013/12/21/dsc03843.jpg
-..  image:: ../Picture.org/2013/12/21/dsc03844.jpg
-..  image:: ../Picture.org/2013/12/21/dsc03845.jpg
-..  image:: ../Picture.org/2013/12/21/dsc03846.jpg
-..  image:: ../Picture.org/2013/12/21/dsc03847.jpg
-..  image:: ../Picture.org/2013/12/21/dsc03848.jpg
-..  image:: ../Picture.org/2013/12/21/dsc03849.jpg
-..  image:: ../Picture.org/2013/12/21/dsc03850.jpg
+
+
+
 
 目標
 """""
 艦これを遊ぶためずっと起動しっ放しマシン。
+
+..  image:: ../Picture/2013/12/21/DSC_3000.jpg
 
 主なスペック
 """""""""""""""""
@@ -88,6 +75,8 @@ NetBSDのインストール
 #. pkgsrc-currentのツリーを展開しておきます。
 #. 有線ネットワークをアクセスポイントにつないでdhcp経由でネットワークの設定をしておきます。
 
+..  image:: ../Picture/2013/12/21/DSC_2997.jpg
+
 NetBSDを起動する
 """""""""""""""""
 USBメモリを抜いて、NetBSDを起動します。
@@ -105,6 +94,8 @@ Xの設定
  # X -configure
  # cp /root/xorg.conf.new /etc/X11/xorg.conf
  # startx   ... うまくいけばtwmが表示されます。
+
+..  image:: ../Picture/2013/12/21/DSC_2999.jpg
 
 パッケージのコピー
 """""""""""""""""""""""

@@ -155,11 +155,14 @@ Wishlist from RPI user: please notify @ebijun
  Bluetooth and urtwn : need multifunction support codes.
  http://www.raspberrypi.org/phpBB3/viewtopic.php?f=82&t=58873
  https://github.com/ebijun/NetBSD/blob/master/Guide/Device/BT-Micro3H2X/index.rst
-2. pkgsrc/devel/gmp -> works!
-3. pkgsrc/lang/squeak
-4. USB camera with mplayer
-5. pkgsrc/lang/ocaml
-6. pkgsrc/www/seamonkey
+        
+                    evbarm earmhf
+devel/gmp             x      o
+lang/squeak           o
+lang/ocaml            x
+www/midori
+www/seamonkey
+www/php-ja-wordpress  o
 
 One more time: (we're gonna celebrate
 
