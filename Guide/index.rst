@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2014 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -46,37 +46,58 @@
  :maxdepth: 2
  :numbered:
 
+ Place/hamamatsu
  Place/intro
+ Ports/ThinkpadX41
  RPI
- kobo
- ZAURUS
- WZERO3
+
+.. 
+ Place/intro
+ Device/BT-Micro3H2X/index
  Luna
  NEWS
- hpcmips
- X68K
- pkgsrc
- Pkgsrc/mlterm
  Pkgsrc/cms
+ Pkgsrc/darktable
+ Pkgsrc/distcc
+ Pkgsrc/ekiga
+ Pkgsrc/gnome
+ Pkgsrc/groonga
  Pkgsrc/jp
+ Pkgsrc/makeguide
+ Pkgsrc/mlterm
+ Pkgsrc/slurm
  Pkgsrc/sphinx
- guide
- events
- allevents
- Place/shimane
- Place/kawagoe
- Place/hokkaido
- Place/hiroshima
- Place/tokyo
- Place/osaka
- Place/fukuoka
- Place/oita
- Device/BT-Micro3H2X/index
- books
+ Pkgsrc/tex
+ Pkgsrc/xfce4
+ Place/2013
  Place/asiabsdcon
+ Place/fukuoka
+ Place/hiroshima
+ Place/hokkaido
+ Place/intro
+ Place/kawagoe
+ Place/oita
+ Place/osaka
+ Place/shimane
+ Place/tokyo
+ Ports/ThinkpadX41
+ Ports/amd64
+ RPI
+ WZERO3
+ X68K
+ ZAURUS
+ allevents
+ books
+ events
+ guide
+ hpcmips
+ kobo
+ pkgsrc
+ printer
+ wlan
+ xev
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
 
