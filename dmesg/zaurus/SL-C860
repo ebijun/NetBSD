@@ -1,21 +1,22 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 5.99.64 (GENERIC) #9: Wed Feb  8 09:09:20 JST 2012
-	jun@amiasp1.soum.co.jp:/usr/obj/zaurus/sys/arch/zaurus/compile/GENERIC
+NetBSD 6.99.29 (GENERIC) #3: Thu Jan 23 09:55:16 JST 2014
+	jun@amivb.soum.co.jp:/usr/obj/zaurus.zaurus/sys/arch/zaurus/compile/GENERIC
 total memory = 65536 KB
-avail memory = 57860 KB
+avail memory = 57728 KB
+sysctl_createv: sysctl_create(machine_arch) returned 17
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
-cpu0 at mainbus0: PXA255/26x step A-0 (XScale core)
+cpu0 at mainbus0 core 0: PXA255/26x step A-0 (XScale V5TE core)
 cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
-cpu0: 32KB/32B 32-way Instruction cache
-cpu0: 32KB/32B 32-way write-back-locking Data cache
+cpu0: 32KB/32B 32-way L1 Instruction cache
+cpu0: 32KB/32B 32-way write-back-locking L1 Data cache
 pxaip0 at mainbus0: Onchip Peripheral Bus
-pxaip0: CPU clock = 398.100 MHz
+pxaip0: CPU clock = 398.101 MHz
 pxaip0: kernel is configured for PXA250 and PXA270, cpu type is PXA250
 pxaintc0 at pxaip0 addr 0x40d00000-0x40d0001f: Interrupt Controller
 pxagpio0 at pxaip0 addr 0x40e00000-0x40e0014f: GPIO Controller
@@ -47,12 +48,15 @@ wskbd0 at zkbd0: console keyboard, using wsdisplay0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 clock: hz=100 stathz=64
 timecounter: Timecounter "saost_count" frequency 3686400 Hz quality 100
-ld0 at sdmmc0: <SD   >
+ld0 at sdmmc0: <0x03:0x8368:SD   :0x10:0x000006f5:0x0bc>
 ld0: 30495 MB, 7744 cyl, 128 head, 63 sec, 512 bytes/sect x 62453760 sectors
 ld0: 1-bit width, bus clock 20.000 MHz
 boot device: ld0
 root on ld0a dumps on ld0b
+/: replaying log to memory
 root file system type: ffs
-WARNING: clock lost 16 days
+WARNING: clock lost 202 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
+/: replaying log to disk
+/usr: replaying log to disk
