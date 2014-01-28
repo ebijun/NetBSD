@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.29 (GENERIC) #4: Tue Jan 21 11:43:45 JST 2014
+NetBSD 6.99.30 (GENERIC) #7: Mon Jan 27 17:45:07 JST 2014
 	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1987 MB
@@ -50,8 +50,7 @@ acpibut1 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
 acpibat0 at acpi0 (BAT1, PNP0C0A-0): ACPI Battery
 acpiacad0 at acpi0 (ACAD, ACPI0003): ACPI AC Adapter
 SYSR (PNP0C02) at acpi0 not configured
-npx1 at acpi0 (FPU, PNP0C04): io 0xf0 irq 13
-npx1: reported by CPUID; using exception 16
+FPU (PNP0C04) at acpi0 not configured
 attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53
 FWHD (INT0800) at acpi0 not configured
 pckbc1 at acpi0 (KBC, PNP0303) (kbd port): io 0x60,0x64 irq 1
@@ -214,4 +213,5 @@ wsdisplay0: screen 1 added (80x25, vt100 emulation)
 wsdisplay0: screen 2 added (80x25, vt100 emulation)
 wsdisplay0: screen 3 added (80x25, vt100 emulation)
 wsdisplay0: screen 4 added (80x25, vt100 emulation)
+acpibat0: normal capacity on 'charge state'
 i915drm0: interrupting at ioapic0 pin 16
