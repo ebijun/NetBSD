@@ -1,0 +1,70 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 6.99.29 (GENERIC) #2: Thu Jan 23 09:18:18 JST 2014
+	jun@amivb.soum.co.jp:/usr/obj/zaurus.zaurus/sys/arch/zaurus/compile/GENERIC
+total memory = 65536 KB
+avail memory = 57728 KB
+sysctl_createv: sysctl_create(machine_arch) returned 17
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0 core 0: PXA27x step C-0 (XScale V5TE core)
+cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
+cpu0: 32KB/32B 32-way L1 Instruction cache
+cpu0: 32KB/32B 32-way write-back-locking L1 Data cache
+pxaip0 at mainbus0: Onchip Peripheral Bus
+pxaip0: CPU clock = 415.991 MHz
+pxaip0: kernel is configured for PXA250 and PXA270, cpu type is PXA270
+pxaintc0 at pxaip0 addr 0x40d00000-0x40d0001f: Interrupt Controller
+pxagpio0 at pxaip0 addr 0x40e00000-0x40e0014f: GPIO Controller
+com0 at pxaip0 addr 0x40100000-0x4010001f intr 22: ns16550a, working fifo
+com1 at pxaip0 addr 0x40200000-0x4020001f intr 21: ns16550a, working fifo
+com2 at pxaip0 addr 0x40700000-0x4070001f intr 20: ns16550a, working fifo
+ohci0 at pxaip0 addr 0x4c000000-0x4c00006f intr 3
+ohci0: OHCI version 1.0
+usb0 at ohci0: USB revision 1.0
+saost0 at pxaip0 addr 0x40a00000-0x40a0001f
+saost0: SA-11x0 OS Timer
+lcd0 at pxaip0: PXA2x0 LCD controller
+lcd0: console
+wsdisplay0 at lcd0 kbdmux 1: console (std, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+pxadmac0 at pxaip0 addr 0x40000000-0x400002ff intr 25: DMA Controller
+pxapcic0 at pxaip0: 1 slot
+pcmcia0 at pxapcic0
+pxartc0 at pxaip0 addr 0x40900000-0x4090000f: Real-time Clock
+pxamci0 at pxaip0 addr 0x41100000-0x41100047: MMC/SD Controller
+pxamci0: using DMA transfer
+sdmmc0 at pxamci0
+ziic0 at pxaip0 addr 0x40300000-0x403016a3: I2C controller
+iic0 at ziic0: I2C bus
+ioexp0 at iic0 addr 0x18: GPIO controller
+zaudio0 at iic0 addr 0x1b: I2S, WM8750 Audio
+audio0 at zaudio0: half duplex, playback, capture, mmap, independent
+scoop0 at pxaip0: PCMCIA/GPIO controller
+zssp0 at pxaip0
+lcdctl0 at zssp0
+ztp0 at zssp0
+wsmouse0 at ztp0 mux 0
+zkbd0 at pxaip0
+wskbd0 at zkbd0: console keyboard, using wsdisplay0
+zrc0 at pxaip0: CE-RH2 remote control
+wskbd1 at zrc0 mux 1
+wskbd1: connecting to wsdisplay0
+zapm0 at pxaip0: pseudo power management module
+apmdev0 at zapm0: Power Management spec V1.2
+zusb0 at pxaip0: USB Mode detection
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+clock: hz=100 stathz=64
+timecounter: Timecounter "saost_count" frequency 3250000 Hz quality 100
+uhub0 at usb0: PXA27x OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+ld0 at sdmmc0: <0x03:0x8368:SD   :0x10:0x000006f5:0x0bc>
+ld0: 30495 MB, 7744 cyl, 128 head, 63 sec, 512 bytes/sect x 62453760 sectors
+ld0: 4-bit width, bus clock 19.500 MHz
+boot device: ld0
+root on ld0a dumps on ld0b
+root file system type: ffs
