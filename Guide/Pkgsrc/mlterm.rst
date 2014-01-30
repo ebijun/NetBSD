@@ -69,4 +69,5 @@ pkgsrcからtwをインストールします。
 
 .. [mlterm] mlterm http://mlterm.sourceforge.net/
 .. [tw] tw http://shokai.github.io/tw/
+.. [はよーん] http://jnug.net/msg012914ja.html
 
