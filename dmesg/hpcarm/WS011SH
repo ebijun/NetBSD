@@ -1,20 +1,22 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.1 (WZERO3)
+NetBSD 6.99.30 (WZERO3) #1: Fri Jan 31 11:34:23 JST 2014
+	jun@amivb.soum.co.jp:/usr/obj/hpcarm.hpcarm/sys/arch/hpcarm/compile/WZERO3
 total memory = 128 MB
-avail memory = 119 MB
+avail memory = 118 MB
+sysctl_createv: sysctl_create(machine_arch) returned 17
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
-cpu0 at mainbus0: PXA27x rev 7 (XScale core)
+cpu0 at mainbus0 core 0: PXA27x rev 7 (XScale V5TE core)
 cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
-cpu0: 32KB/32B 32-way Instruction cache
-cpu0: 32KB/32B 32-way write-back-locking Data cache
+cpu0: 32KB/32B 32-way L1 Instruction cache
+cpu0: 32KB/32B 32-way write-back-locking L1 Data cache
 pxaip0 at mainbus0: Onchip Peripheral Bus
-pxaip0: CPU clock = 520.002 MHz
+pxaip0: CPU clock = 520.004 MHz
 pxaip0: kernel is configured for PXA270, cpu type is PXA270
 pxaintc0 at pxaip0 addr 0x40d00000-0x40d0001f: Interrupt Controller
 pxagpio0 at pxaip0 addr 0x40e00000-0x40e0014f: GPIO Controller
@@ -49,7 +51,7 @@ clock: hz=100 stathz=64
 timecounter: Timecounter "saost_count" frequency 3250000 Hz quality 100
 uhub0 at usb0: PXA27x OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-ld0 at sdmmc0: <00000>
+ld0 at sdmmc0: <0x1b:0x534d:00000:0x10:0x732466b9:0x0a2>
 ld0: 3884 MB, 1972 cyl, 64 head, 63 sec, 512 bytes/sect x 7954432 sectors
 ld0: 4-bit width, bus clock 19.500 MHz
 boot device: ld0
