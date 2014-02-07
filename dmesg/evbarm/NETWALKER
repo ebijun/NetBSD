@@ -1,0 +1,101 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 6.99.24 (NETWALKER.sd) #6: Sat Oct 19 14:44:22 JST 2013
+	jun@amiasp1.soum.co.jp:/usr/obj/evbarm.evbarm/sys/arch/evbarm/compile/NETWALKER.sd
+total memory = 512 MB
+avail memory = 497 MB
+sysctl_createv: sysctl_create(machine_arch) returned 17
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0 core 0: 800 MHz Cortex-A8 r2p1 (Cortex V7A core)
+cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu0: isar: [0]=0x101111 [1]=0x13112111 [2]=0x21232031 [3]=0x11112131, [4]=0x11142, [5]=0
+cpu0: mmfr: [0]=0x1100003 [1]=0x20000000 [2]=0x1202000 [3]=0x211
+cpu0: pfr: [0]=0x1131 [1]=0x11
+cpu0: 32KB/64B 4-way L1 Instruction cache
+cpu0: 32KB/64B 4-way write-back-locking-C L1 Data cache
+cpu0: 256KB/64B 8-way write-through L2 Unified cache
+axi0 at mainbus0: Advanced eXtensible Interface
+tzic0 at axi0 addr 0xe0000000-0xe0003fff irqbase 0: TrustZone Interrupt Controller
+tzic0: interrupts 0..128  register VA:0xc9fe4000
+imxccm0 at axi0 addr 0x73fd4000: Clock control module
+imxccm0: CPU clock=800000000, UART clock=66500000
+imxccm0: mainbus clock=332500000, ahb clock=66500000 ipg clock=33250000 perclk=24000000
+imxgpio0 at axi0 addr 0x73f84000
+imxgpio1 at axi0 addr 0x73f88000
+imxgpio2 at axi0 addr 0x73f8c000
+imxgpio3 at axi0 addr 0x73f90000
+imxuart0 at axi0 addr 0x73fbc000 intr 31
+imxuart0: console
+sdhc0 at axi0 addr 0x70004000 intr 1: SD/MMC host controller
+perclk = 166250000
+sdhc0: SD Host Specification 1.0, rev.0
+sdmmc0 at sdhc0 slot 0
+imxclock0 at axi0 addr 0x73fac000-0x73faffff intr 40
+imxclock1 at axi0 addr 0x73fb0000-0x73fb3fff intr 41
+imxiomux0 at axi0 addr 0x73fa8000
+ipu0 at axi0: i.MX51 IPUV3 controller
+ipu0: console
+wsdisplay0 at ipu0 kbdmux 1: console (std, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+wsdisplay0: screen 1-3 added (std, vt100 emulation)
+imxusbc_match
+imxusbc0 at axi0 addr 0x73f80000ehci0 at imxusbc0 unit 0 irq 18
+ehci0: i.MX USB Controller id=5 revision=65 HCI revision=0x100
+ehci0: 1 host port, device capable, 8 endpoints
+ehci0: EHCI version 1.0
+usb0 at ehci0: USB revision 2.0
+ehci1 at imxusbc0 unit 1 irq 14
+ehci1: i.MX USB Controller id=5 revision=65 HCI revision=0x100
+ehci1: 1 host port
+ehci1: ULPI phy VID 0x0424 PID 0x0006
+ehci1: EHCI version 1.0
+usb1 at ehci1: USB revision 2.0
+imxi2c0 at axi0 addr 0x83fc8000 intr 62: i.MX IIC bus controller
+iic0 at imxi2c0: I2C bus
+imxi2c1 at axi0 addr 0x83fc4000 intr 63: i.MX IIC bus controller
+iic1 at imxi2c1: I2C bus
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "epit" frequency 33250000 Hz quality 100
+imxclock0: timer clock frequency 33250000
+clock: hz=100 stathz = 0
+uhub0 at usb0: i.MX EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub0: 1 port with 1 removable, self powered
+uhub1 at usb1: i.MX EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub1: 1 port with 1 removable, self powered
+ld0 at sdmmc0: <0x02:0x544d:SA02G:0x09:0x28427115:0x0c1>
+ld0: 1898 MB, 964 cyl, 64 head, 63 sec, 512 bytes/sect x 3887104 sectors
+ld0: 4-bit width, bus clock 50.000 MHz
+uhub2 at uhub1 port 1: SMSC product 0x2514, class 9/0, rev 2.00/0.00, addr 2
+uhub2: multiple transaction translators
+uhub2: 4 ports with 4 removable, self powered
+uhidev0 at uhub0 port 1 configuration 1 interface 0
+uhidev0: SHARP USB Keyboard, rev 1.10/1.22, addr 2, iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd0 at ukbd0 mux 1
+wskbd0: connecting to wsdisplay0
+uhidev1 at uhub0 port 1 configuration 1 interface 1
+uhidev1: SHARP USB Keyboard, rev 1.10/1.22, addr 2, iclass 3/0
+uhidev1: 3 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=1, output=0, feature=0
+uhid2 at uhidev1 reportid 3: input=2, output=0, feature=0
+uhub3 at uhub2 port 1: Terminus Technology USB 2.0 Hub, class 9/0, rev 2.00/1.11, addr 3
+uhub3: single transaction translator
+uhub3: 4 ports with 4 removable, self powered
+umass0 at uhub3 port 4 configuration 1 interface 0
+umass0: SanDisk Corp. SDDR-113, rev 2.00/1.27, addr 4
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <SanDisk, SDDR-113, 1.00> disk removable
+sd0: fabricating a geometry
+sd0: 7659 MB, 7659 cyl, 64 head, 32 sec, 512 bytes/sect x 15685632 sectors
+boot device: <unknown>
+root on sd0a dumps on sd0b
+sd0: fabricating a geometry
+root file system type: ffs
+wsdisplay0: screen 4 added (std, vt100 emulation)
