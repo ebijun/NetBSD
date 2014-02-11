@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.30 (NETWALKER.sd) #0: Fri Feb  7 11:27:08 JST 2014
+NetBSD 6.99.30 (NETWALKER.sd) #2: Fri Feb  7 15:45:08 JST 2014
 	jun@amivb.soum.co.jp:/usr/obj/earmhf.evbarm/sys/arch/evbarm/compile/NETWALKER.sd
 total memory = 512 MB
 avail memory = 498 MB
@@ -19,6 +19,8 @@ cpu0: pfr: [0]=0x1131 [1]=0x11
 cpu0: 32KB/64B 4-way L1 Instruction cache
 cpu0: 32KB/64B 4-way write-back-locking-C L1 Data cache
 cpu0: 256KB/64B 8-way write-through L2 Unified cache
+vfp0 at cpu0: NEON MPE (VFP 3.0+)
+vfp0: mvfr: [0]=0x11110222 [1]=0x11111
 axi0 at mainbus0: Advanced eXtensible Interface
 tzic0 at axi0 addr 0xe0000000-0xe0003fff irqbase 0: TrustZone Interrupt Controller
 tzic0: interrupts 0..128  register VA:0xca060000
@@ -51,7 +53,7 @@ usb0 at ehci0: USB revision 2.0
 ehci1 at imxusbc0
 ehci1: i.MX USB Controller id=5 revision=65 HCI revision=0x100
 ehci1: 1 host port
-ehci1: ULPI phy VID 0x0400 PID 0x0006
+ehci1: ULPI phy VID 0x0418 PID 0x0006
 ehci1: EHCI version 1.0
 usb1 at ehci1: USB revision 2.0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
@@ -93,5 +95,4 @@ root file system type: ffs
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-
-// sh failed, with RPI earmhf userland (illigal instraction).
+wsdisplay0: screen 4 added (std, vt100 emulation)
