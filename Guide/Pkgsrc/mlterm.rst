@@ -29,7 +29,7 @@ mlterm-fb向けオプション設定
 
 PCでのmlterm-fb起動
 """"""""""""""""""""""
-NetBSD/i386,amd64でmlterm-fbを利用する場合、起動時にVESAを指定します。
+NetBSD/i386,amd64でmlterm-fbを利用する場合、起動時にVESAを指定します。 [はよーん]_
 
 #. 起動オプションで5を選択
 #. > プロンプトでvesa を指定
@@ -46,6 +46,25 @@ NetBSD/i386,amd64でmlterm-fbを利用する場合、起動時にVESAを指定�
 
  % ftp http://mlterm.sourceforge.net/vimperator.six
  % cat vimperator.six
+
+画像変換方法
+~~~~~~~~~~~~
+
+ netpbmをインストールして、以下のコマンドを実行するとsixel形式に変換できます。
+
+::
+
+ # cd /usr/pkgsrc/graphics/netpbm;make package-install
+ % jpegtopnm aaa.jpg |pnmquant 256 |ppmtosixel > aaa.sixel
+ % pngtopnm  aaa.png |pnmquant 256 |ppmtosixel > aaa.sixel
+
+mltermソースからmlterm-fbをコンパイルする
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+ # ./configure --with-gui=xlib,fb
+ # make install
 
 mltermについて
 ~~~~~~~~~~~~~~~
