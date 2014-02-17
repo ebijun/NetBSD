@@ -66,6 +66,14 @@ mltermソースからmlterm-fbをコンパイルする
  # ./configure --with-gui=xlib,fb
  # make install
 
+回転させて表示
+~~~~~~~~~~~~~~
+
+NetBSD/zaurus C1000以降および、NetBSD/hpcarm WS011SHでは、そのまま起動すると、
+mltermが縦画面で起動してしまいます。この場合、mltermに--rotateオプションをつけて起動するか、起動後に$ mlcc rotate_display trueすると回転します。
+この機能は最新版( http://t.co/l52DRJGwGf )　に追加されています。
+
+
 mltermについて
 ~~~~~~~~~~~~~~~
  *http://mlterm.sourceforge.net/* に、より詳しい情報があります。
