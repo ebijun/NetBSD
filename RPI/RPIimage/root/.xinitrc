@@ -25,8 +25,6 @@ if [ -f $usermodmap ]; then
 fi
 
 # start some nice programs
-xset +fp /usr/pkg/lib/X11/fonts/TTF
-xset +fp rehash
 xset b off
 #setxkbmap -layout jp -option ctrl:swapcaps
 setxkbmap -model jp106 jp
