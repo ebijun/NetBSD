@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,6 +35,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2013東京秋 NetBSDブース展示の記録, http://togetter.com/li/578893
  OSC2013東京春 NetBSDブース展示の記録, http://togetter.com/li/460484
  OSC2012東京秋 NetBSDブース展示の記録, http://togetter.com/li/369471
  OSC2012東京春 NetBSDブース展示の記録, http://togetter.com/li/274145
@@ -71,6 +72,7 @@ OSC東京まとめ
  ヴィオロン,阿佐谷,名曲喫茶。真空管アンプの最終目的地。
  Galaxy,原宿,マニアックラヴ＆シャッフルマスター
  たぬきや,稲田堤,チルアウトオアダイ。河原で飲む幸せ。
+ 丹青通商,町家,AppleII 5000円 マイコンマニュアル&ぱふ
 
 OSC東京主な展示物
 ~~~~~~~~~~~~~~~~~
@@ -78,6 +80,7 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2013/10/19-20,OSC2013東京秋,Netwinder OpenblocksA6 RPI  
  2013/2/22-23,OSC2013東京春,RPI KOBO netwalker mikutter WZERO3
  2012/9/7-8,OSC2013東京秋,OpenblocksA6 Openblocks266/600 RPI KOBO netwalker USL5P かめぬい
  2012/3/16-17,OSC2012東京春,ておくれイメージ WZero3 Zaurus Jornada680/720 yeeloong ZBOXNANO
@@ -96,6 +99,49 @@ OSC東京主な展示物
  2005/3/25-26,OSC2005,hpcmips/sh/arm
  2004/9/4,OSC2004,hpcmips/sh/arm
 
+.. image:: /Picture/2013/10/19/DSC_2749.jpg
+.. image:: /Picture/2013/10/19/DSC_2750.jpg
+.. image:: /Picture/2013/10/19/DSC_2752.jpg
+.. image:: /Picture/2013/10/19/DSC_2754.jpg
+.. image:: /Picture/2013/10/19/DSC_2755.jpg
+.. image:: /Picture/2013/10/19/DSC_2756.jpg
+.. image:: /Picture/2013/10/19/DSC_2758.jpg
+.. image:: /Picture/2013/10/19/DSC_2759.jpg
+.. image:: /Picture/2013/10/19/DSC_2760.jpg
+.. image:: /Picture/2013/10/19/DSC_2762.jpg
+.. image:: /Picture/2013/10/19/DSC_2763.jpg
+.. image:: /Picture/2013/10/19/DSC_2764.jpg
+.. image:: /Picture/2013/10/19/DSC_2765.jpg
+.. image:: /Picture/2013/10/19/DSC_2766.jpg
+.. image:: /Picture/2013/10/19/DSC_2767.jpg
+.. image:: /Picture/2013/10/19/DSC_2768.jpg
+.. image:: /Picture/2013/10/19/DSC_2771.jpg
+.. image:: /Picture/2013/10/19/DSC_2773.jpg
+.. image:: /Picture/2013/10/19/DSC_2774.jpg
+.. image:: /Picture/2013/10/19/DSC_2775.jpg
+.. image:: /Picture/2013/10/19/DSC_2776.jpg
+.. image:: /Picture/2013/10/19/DSC_2778.jpg
+.. image:: /Picture/2013/10/19/DSC_2779.jpg
+.. image:: /Picture/2013/10/19/DSC_2780.jpg
+.. image:: /Picture/2013/10/19/DSC_2781.jpg
+.. image:: /Picture/2013/10/19/DSC_2783.jpg
+.. image:: /Picture/2013/10/19/DSC_2784.jpg
+.. image:: /Picture/2013/10/19/DSC_2785.jpg
+.. image:: /Picture/2013/10/19/DSC_2786.jpg
+.. image:: /Picture/2013/10/19/DSC_2791.jpg
+.. image:: /Picture/2013/10/19/dsc03477.jpg
+.. image:: /Picture/2013/10/19/dsc03478.jpg
+.. image:: /Picture/2013/10/20/DSC_2793.jpg
+.. image:: /Picture/2013/10/20/DSC_2795.jpg
+.. image:: /Picture/2013/10/20/DSC_2796.jpg
+.. image:: /Picture/2013/10/20/DSC_2799.jpg
+.. image:: /Picture/2013/10/20/DSC_2801.jpg
+.. image:: /Picture/2013/10/20/DSC_2802.jpg
+.. image:: /Picture/2013/10/20/DSC_2803.jpg
+.. image:: /Picture/2013/10/20/DSC_2804.jpg
+.. image:: /Picture/2013/10/20/DSC_2806.jpg
+.. image:: /Picture/2013/10/20/dsc03486.jpg
+.. image:: /Picture/2013/10/20/dsc03487.jpg
 .. image:: /Picture/2013/02/22/DSC_1661.jpg
 .. image:: /Picture/2013/02/22/DSC_1662.jpg
 .. image:: /Picture/2013/02/22/DSC_1671.jpg

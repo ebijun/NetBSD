@@ -46,9 +46,8 @@
  :maxdepth: 2
  :numbered:
 
- Place/hamamatsu
+ Place/tokyo
  Place/intro
- Ports/ThinkpadX41
  RPI
 
 .. 
