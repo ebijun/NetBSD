@@ -128,15 +128,20 @@ Wishlist from RPI user: please notify @ebijun
  Bluetooth and urtwn : need multifunction support codes.
  http://www.raspberrypi.org/phpBB3/viewtopic.php?f=82&t=58873
  https://github.com/ebijun/NetBSD/blob/master/Guide/Device/BT-Micro3H2X/index.rst
-        
+
+2. pkgsrc status:
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/{evbarm,earmhf}
+
                     evbarm earmhf
 devel/gmp             x      o
 emulators/xnp2        o
+games/onscripter      o
 lang/squeak           o
 lang/ocaml            x
 print/evince
-www/midori
-www/seamonkey
+www/epiphany          x      o
+www/midori            x      o
+www/seamonkey         x      x
 www/php-ja-wordpress  o
 
 
