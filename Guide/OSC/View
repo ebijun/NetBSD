@@ -1,0 +1,49 @@
+#! /usr/bin/ruby -Ku
+# input: togetter with markdown format.
+#   pandoc -f html -t markdown http://togetter.com/id/ebijun?page=$1
+# output: CSV format
+#   event,togetter URL,views
+
+class EventView
+	def initialize(line)
+		a = line.split(/\[/)
+		@event = a[2].gsub("]","")
+		@event = @event.gsub("(http://",",http://")
+		@event = @event.gsub(")\n",",")
+	end
+	def searchview(line)
+		if @view 
+			return
+		end
+		a = line.split(/ /)
+		@view = a[6]
+	end
+	def searchview2(line)
+		if @view 
+			return
+		end
+		a = line.split(/ /)
+		@view = a[4]
+	end
+	def csv
+		@csv = @event + @view
+		@csv = @csv.tr("\n","")
+		@csv = @csv.tr("\\","")
+	end
+end
+
+while line = STDIN.gets
+	if line.include?("### !")
+		a = EventView.new(line)
+		line = STDIN.gets
+		line = STDIN.gets
+		line = STDIN.gets
+		a.searchview(line)
+		line = STDIN.gets
+		line = STDIN.gets
+		a.searchview(line)
+		line = STDIN.gets
+		a.searchview2(line)
+		print a.csv,"\n"
+	end
+end

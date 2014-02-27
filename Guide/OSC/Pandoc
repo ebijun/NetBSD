@@ -1,0 +1,2 @@
+# get togetter entry and put markdown format.
+pandoc -f html -t markdown http://togetter.com/id/ebijun?page=$1
