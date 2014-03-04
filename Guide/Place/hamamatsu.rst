@@ -52,59 +52,39 @@ OSC浜松まとめ
  テクソル,和田町,浜ホト開発者から真空管輸入業へ。
  マルツ発祥地,,
  マルツ,,マルツのある街は安心できる。
- 
-浜松市市民協働センター
-〒430-0928 静岡県浜松市中区中央１丁目１３−３
-
-むつぎく
-
-オーディオウインズ
-
-（株）マルツ電波 高林店パーツ
-
-アールクラフト
-
-株式会社テクソル
-
-喫茶　飛行場
-
-浜松市楽器博物館
-
-トゥルネ・ラ・パージュ
-
-クロスオーディオ
-
-さわやか東伊場店
-
-Choupana(ショウパーナ)
-
-マイン・シュロス
-
-天神蔵
-
-ハードオフ オフハウス浜松高林店
-
-ハードオフ浜松有玉店
-
-ハードオフ浜松芳川店
-
-カレー処ヤサカ
-静岡県浜松市中区領家１丁目７−３０
-
-加茂花菖蒲園
-
-加茂花菖蒲園
-
-ハードオフ・オフハウス掛川店
-
-マムゼル
-
-ベストバイ
-
-ダダリ
-
-そば屋 案山棒
-
+ サントス,,
+ ヤサカ,,
+ 三太,,
+ アールクラフト,,
+ 第一無線,,
+ むらたのたこやき,,
+ シンタロウ,,
+ まつや,豊橋,松屋フーズではない。豊橋カレーうどん。
+ ほしの珈琲,豊橋
+ チューブアンプクラブ豊橋,,http://www.geocities.jp/tactoyohashi/concert2.htm　
+ トーチカ,二川,http://www.k4.dion.ne.jp/~entaigou/toyohashi.html
+ タケウチ電子,,
+ むつぎく,,
+ （株）マルツ電波 高林店パーツ,,
+ 株式会社テクソル,,
+ 喫茶　飛行場,,
+ 浜松市楽器博物館,,
+ トゥルネ・ラ・パージュ,,
+ クロスオーディオ,,
+ さわやか東伊場店,,
+ Choupana(ショウパーナ),,
+ マイン・シュロス,,
+ 天神蔵,,
+ ハードオフ オフハウス浜松高林店,,
+ ハードオフ浜松有玉店,,
+ ハードオフ浜松芳川店,,
+ カレー処ヤサカ,,
+ 加茂花菖蒲園,,
+ ハードオフ・オフハウス掛川店,,
+ マムゼル,,
+ ベストバイ,,
+ ダダリ,,
+ そば屋 案山棒,,
 
 OSC浜名湖主な展示物
 ~~~~~~~~~~~~~~~~~
@@ -112,9 +92,46 @@ OSC浜名湖主な展示物
 .. csv-table::
  :widths: 15 15 60
 
- 2013/4/,浜松,RPI
+ 2013/2/9,浜松,RPI
 
-
+.. image:: ../Picture.org/2013/04/21/DSC_1981.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1982.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1983.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1984.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1985.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1986.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1987.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1988.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1989.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1990.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1991.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1992.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1993.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1994.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1995.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1996.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1997.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1998.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_1999.jpg
+.. image:: ../Picture.org/2013/04/21/DSC_2000.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02393.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02394.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02395.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02396.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02397.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02398.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02399.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02400.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02401.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02402.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02404.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02405.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02406.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02407.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02408.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02409.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02410.jpg
+.. image:: ../Picture.org/2013/04/21/dsc02411.jpg
 .. image:: ../Picture/2013/02/09/DSC_1605.jpg
 .. image:: ../Picture/2013/02/09/DSC_1606.jpg
 .. image:: ../Picture/2013/02/09/DSC_1607.jpg
