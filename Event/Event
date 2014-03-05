@@ -1,1 +1,1 @@
-pandoc -f html -t markdown http://www.netbsd.org/gallery/events.html |sed -e 's/{.code}//'
+pandoc -f docbook -t markdown http://www.netbsd.org/gallery/events.xml 
