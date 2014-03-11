@@ -25,7 +25,9 @@
 
 .. csv-table::
 
- 145,2014/2,Open Source Conference 2013 Tokyo/Spring,
+ 147,2014/3,Open Source Conference 2014 Hamanako,
+ 146,2014/3,AsiaBSDCon 2014,
+ 145,2014/2,Open Source Conference 2014 Tokyo/Spring,
  144,2013/11,Open Source Conference 2013 Oita,
  143,2013/11,Open Source Conference 2013 Fukuoka,
  142,2013/11,Kansai Open Source 2012,Osaka,RPI

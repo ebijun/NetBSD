@@ -1,6 +1,3 @@
-NetBSD Events
-=============
-
 This is an incomplete list of NetBSD-related events. If you know about
 some public event that fits and would like it to be listed here,
 [contact us.](http://www.NetBSD.org/cgi-bin/feedback.cgi)
@@ -8,501 +5,10 @@ some public event that fits and would like it to be listed here,
 For a list of NetBSD-related presentations, please check out our
 [presentation pages](/gallery/presentations/).
 
-### Future Events
+Future Events
+-------------
 
--   [Mar 2014 - AsiaBSDCon 2014](#asiabsdcon-tokyo-2014)
--   [Mar 2014 - Open Source Conference 2014
-    Hamanako](#opensourceconf2014-hamamatsu)
--   [Jun 2014 - Open Source Conference 2014
-    Hokkaido](#opensourceconf2014-DO)
--   [Jul 2014 - Open Source Conference 2014
-    Nagoya](#opensourceconf2014-Nagoya)
--   [Nov 2014 - Kansai OpenSource 2014](#kansai-os-jp-2014)
-
-### Past Events
-
--   [Feb 2014 - Open Source Conference 2014
-    Tokyo/Spring](#opensourceconf2014-tokyospring)
--   [Feb 2014 - NYC\*BSD Con 2014](#NYCBSDCon2014)
--   [Nov 2013 - Linux User Group of Mauritius - LinuxFest
-    2013](#LinuxFest2013Mauritius)
--   [Nov 2013 - Open Source Conference 2013
-    Oita](#opensourceconf2013-oita)
--   [Nov 2013 - Open Source Conference 2013
-    Fukuoka](#opensourceconf2013-fukuoka)
--   [Nov 2013 - Kansai OpenSource 2013](#kansai-os-jp-2013)
--   [Oct 2013 - Open Source Conference 2013
-    Tokyo/Fall](#opensourceconf2013-tokyofall)
--   [Oct 2013 - Open Source Conference 2013
-    Hiroshima](#opensourceconf2013-Hiroshima)
--   [Sep 2013 - Open Source Conference 2013
-    Hokkaido](#opensourceconf2013-DO)
--   [Aug 2013 - FrOSCon 2013](#froscon2013)
--   [Aug 2013 - Open Source Conference 2013
-    Shimane](#opensourceconf2013-Shimane)
--   [Aug 2013 - Open Source Conference 2013
-    Kansai@Kyoto](#opensourceconf2013-Kansai)
--   [Jul 2013 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2013)
--   [Jul 2013 - Open Source Conference 2013
-    Okinawa](#opensourceconf2013-Okinawa)
--   [Jun 2013 - Open Source Conference 2013
-    Nagoya](#opensourceconf2013-Nagoya)
--   [May 2013 - Linuxtag Berlin](#linuxtagB2013)
--   [May 2013 - BSDCan 2013, Ottawa, Canada](#bsdcan2013)
--   [Apr 2013 - Central European BSD-Day 2013, Naples,
-    Italy](#bsdday_2013)
--   [Mar 2013 - pkgsrcCon 2013, Berlin, Germany](#pkgsrcCon-2013)
--   [Mar 2013 - Chemnitz Linux Days 2013, Chemnitz,
-    Germany](#chemnitzer-linuxtage-2013)
--   [Mar 2013 - AsiaBSDCon 2013](#asiabsdcon-tokyo-2013)
--   [Mar 2013 - Open Source Conference 2013
-    Tokushima](#opensourceconf2013-tokushima)
--   [Feb 2013 - Open Source Conference 2013
-    Tokyo/Spring](#opensourceconf2013-tokyospring)
--   [Feb 2013 - Open Source Conference 2013
-    Hamamatsu](#opensourceconf2013-hamamatsu)
--   [Feb 2013 - FOSDEM 2013, Brussels, Belgium](#fosdem2013)
--   [Dec 2012 - Open Source Conference 2012
-    Fukuoka](#opensourceconf2012-fukuoka)
--   [Nov 2012 - Open Source Conference 2012
-    Aizu](#opensourceconf2012-aizu)
--   [Oct 2012 - Open Source Conference 2012
-    Oita/Fall](#opensourceconf2012-oita-fall)
--   [Oct 2012 - Open Source Conference 2012
-    Hiroshima](#opensourceconf2012-Hiroshima)
--   [Oct 2012 - EuroBSDCon 2012, Warsaw, Poland](#eurobsdcon2012)
--   [Sep 2012 - Open Source Conference 2012
-    Okinawa](#opensourceconf2012-Okinawa)
--   [Sep 2012 - Open Source Conference 2012
-    Tokyo/Spring](#opensourceconf2012-tokyofall)
--   [Nov 2012 - Kansai OpenSource 2012](#kansai-os-jp-2012)
--   [Sep 2012 - Open Source Conference 2012
-    Shimane](#opensourceconf2012-Shimane)
--   [Aug 2012 - XenSummit North America 2012](#xensummit2012)
--   [Aug 2012 - FrOSCon 2012](#froscon2012)
--   [Aug 2012 - Open Source Conference 2012
-    Kansai@Kyoto](#opensourceconf2012-Kansai)
--   [Jul 2012 - Open Source Conference 2012
-    Sendai](#opensourceconf2012-sendai)
--   [Jul 2012 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2012)
--   [Jun 2012 - 17th NetBSD Hackathon](#17th-hackathon)
--   [Jun 2012 - Open Source Conference 2012
-    Hokkaido](#opensourceconf2012-DO)
--   [May 2012 - Linuxtag Berlin](#linuxtagB2012)
--   [May 2012 - BSDCan 2012](#bsdcan2012)
--   [May 2012 - Open Source Conference 2012
-    Nagoya](#opensourceconf2012-Nagoya)
--   [May 2012 - Central European BSD-Day 2012 Vienna](#bsdday_2012)
--   [Apr 2012 - Open Source Conference 2012
-    Iwate](#opensourceconf2012-iwate)
--   [Mar 2012 - AsiaBSDCon 2012](#asiabsdcon-tokyo-2012)
--   [Mar 2012 - Open Source Conference 2012
-    Ehime](#opensourceconf2012-ehime)
--   [Mar 2012 - Chemnitzer Linux-Tage 2012](#chemnitzer-linuxtage-2012)
--   [Mar 2012 - Open Source Conference 2012
-    Tokyo/Spring](#opensourceconf2012-tokyospring)
--   [Feb 2012 - Open Source Conference 2012
-    Oita](#opensourceconf2012-oita)
--   [Feb 2012 - FOSDEM 2012](#fosdem2012)
--   [Dec 2011 - Open Source Conference 2011
-    Fukuoka](#opensourceconf2011-fukuoka)
--   [Nov 2011 - Open Source Conference 2011
-    Tokyo/Fall](#opensourceconf2011-tokyofall)
--   [Nov 2011 - Open Source Conference 2011
-    Shimane](#opensourceconf2011-Shimane)
--   [Nov 2011 - Kansai OpenSource 2011](#kansai-os-jp-2011)
--   [Nov 2011 - bsd\_day(2011)](#bsdday2011)
--   [Nov 2011 - BSDday Argentina 2011](#BSDdayArgentina2011)
--   [Oct 2011 - EuroBSDCon 2011](#eurobsdcon2011)
--   [Oct 2011 - Open Source Conference 2011
-    Hiroshima](#opensourceconf2011-Hiroshima)
--   [Sep 2011 - Open Source Conference 2011
-    Okinawa](#opensourceconf2011-Okinawa)
--   [Sep 2011 - Open Source Small Conference 2011
-    Aizu](#opensourcesmallconf2011-Aizu)
--   [Aug 2011 - Open Source Conference 2011
-    Nagoya](#opensourceconf2011-Nagoya)
--   [Aug 2011 - 15th NetBSD Hackathon](#15th-hackathon)
--   [Jul 2011 - Open Source Conference 2011
-    Kansai@Kyoto](#opensourceconf2011-Kansai)
--   [Jul 2011 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2011)
--   [Jun 2011 - Open Source Conference 2011
-    Hokkaido](#opensourceconf2011-DO)
--   [May 2011 - Open Source Conference 2011
-    Sendai](#opensourceconf2011-sendai)
--   [May 2011 - BSDCan 2011](#bsdcan2011)
--   [Apr 2011 - Open Source Conference 2011
-    Kansai@Kobe](#opensourceconf2011-kobe)
--   [Mar 2011 - AsiaBSDCon 2011](#asiabsdcon-tokyo-2011)
--   [Mar 2011 - Open Source Conference 2011
-    Oita](#opensourceconf2011-oita)
--   [Mar 2011 - Open Source Conference 2011
-    Tokyo/Spring](#opensourceconf2011-spring)
--   [Feb 2011 - FOSDEM 2011 Brussels, Belgium](#fosdem2011)
--   [Feb 2011 - Open Source Conference 2011
-    Kagawa](#opensourceconf2011-kagawa)
--   [Dec 2010 - Open Source Conference 2010
-    Fukuoka](#opensourceconf2010-fukuoka)
--   [Nov 2010 - Journ�es M�dit�ran�ennes du Logiciel Libre in
-    Sophia-Antipolis.](#jm2l2010)
--   [Nov 2010 - Open Source Conference 2010
-    Shimane](#opensourceconf2010-Shimane)
--   [Nov 2010 - NYCBSDCon 2010](#nycbsdcon2010)
--   [Nov 2010 - Kansai OpenSource 2010](#kansai-os-jp-2010)
--   [Oct 2010 - Open Source Conference 2010
-    Niigata](#opensourceconf2010-Niigata)
--   [Oct 2010 - EuroBSDCon 2010](#eurobsdcon2010)
--   [Oct 2010 - Open Source Conference 2010
-    Okinawa](#opensourceconf2010-Okinawa)
--   [Sep 2010 - Open Source Conference 2010
-    Tokyo/Fall](#opensourceconf2010-tokyofall)
--   [Aug 2010 - Open Source Conference 2010
-    Nagoya](#opensourceconf2010-Nagoya)
--   [Jul 2010 - Open Source Conference 2010
-    Kansai](#opensourceconf2010-Kansai)
--   [Jul 2010 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2010)
--   [Jun 2010 - Open Source Conference 2010
-    Hokkaido](#opensourceconf2010-DO)
--   [Jun 2010 - LinuxTag 2010](#linuxtag2010)
--   [May 2010 - pkgsrcCon 2010 Basel, Switzerland](#pkgsrcCon-2010)
--   [May 2010 - Open Source Conference 2010
-    Sendai](#opensourceconf2010-sendai)
--   [May 2010 - Rencontres Bretonnes du Logiciel Libre in
-    Rennes](#rmll2010)
--   [May 2010 - BSDCan 2010](#bsdcan2010)
--   [Mar 2010 - AsiaBSDCon 2010](#asiabsdcon-tokyo-2010)
--   [Mar 2010 - Open Source Conference 2010
-    Kansai@Kobe](#opensourceconf2010-kobe)
--   [Feb 2010 - Open Source Conference 2010
-    Tokyo/Spring](#opensourceconf2010-tokyo)
--   [Feb 2010 - Hackathon, February 2010](#hackathon-feb2010)
--   [Feb 2010 - FOSDEM 2010 Brussels, Belgium](#fosdem2010)
--   [Jan 2010 - Open Source Conference 2010
-    Oita](#opensourceconf2010-oita)
--   [Dec 2009 - Open Source Conference 2009
-    Fukuoka](#opensourceconf2009-fukuoka)
--   [Nov 2009 - Open Source Conference 2009
-    Kochi](#opensourceconf2009-kochi)
--   [Nov 2009 - OpenRheinRuhr 2009](#openrheinruhr2009)
--   [Nov 2009 - Kansai OpenSource 2009](#kansai-os-jp-2009)
--   [Oct 2009 - Open Source Conference 2009
-    Tokyo/Fall](#opensourceconf2009-tokyofall)
--   [Sep 2009 - Open Source Conference 2009
-    Okinawa](#opensourceconf2009-Okinawa)
--   [Sep 2009 - EuroBSDCon 2009](#eurobsdcon2009)
--   [Aug 2009 - Open Source Conference 2009
-    Nagoya](#opensourceconf2009-Nagoya)
--   [Aug 2009 - Open Source Conference 2009
-    Niigata](#opensourceconf2009-Niigata)
--   [Jul 2009 - Open Source Conference 2009
-    Kansai](#opensourceconf2009-Kansai)
--   [Jul 2009 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2009)
--   [Jul 2009 - Open Source World 2009](#opensourceworld2009-Tokyo)
--   [Jun 2009 - LinuxTag 2009](#linuxtag-berlin-2009)
--   [Jun 2009 - Open Source Conference 2009
-    Hokkaido](#opensourceconf2009-DO)
--   [May 2009 - Open Source Conference 2009
-    Shimane](#opensourceconf2009-Shimane)
--   [May 2009 - BSDCan 2009](#bsdcan2009)
--   [Mar 2009 - CeBIT 2009](#cebit-2009)
--   [Mar 2009 - AsiaBSDCon 2009](#asiabsdcon-tokyo-2009)
--   [Feb 2009 - Southern California Linux Expo](#scale09)
--   [Feb 2009 - Open Source Conference 2009
-    Tokyo/Spring](#opensourceconf2009-tokyospring)
--   [Feb 2009 - FOSDEM 2009](#fosdem2009)
--   [Feb 2009 - DCBSDCon 2009](#dcbsdcon2009)
--   [Jan 2009 - Open Source Conference 2009
-    Sendai](#opensourceconf2009-sendai)
--   [Dec 2008 - Open Source Conference 2008
-    Fukuoka](#opensourceconf2008-fukuoka)
--   [Nov 2008 - Open Source Conference 2008
-    Okinawa](#opensourceconf2008-okinawa)
--   [Nov 2008 - meetBSD California '08](#meetbsd2008)
--   [Nov 2008 - Kansai OpenSource 2008](#kansai-os-jp-2008)
--   [Oct 2008 - EuroBSDCon 2008](#eurobsdcon2008)
--   [Oct 2008 - NetBSD developers summit @ NYCBSDCon 2008](#devsummit08)
--   [Oct 2008 - NYCBSDCon 2008](#nycbsdcon08)
--   [Oct 2008 - Open Source Conference 2008
-    Tokyo/Fall](#opensourceconf2008-tokyofall)
--   [Sep 2008 - Open Source Conference 2008 in
-    Shimane](#opensourceconf2008-Shimane)
--   [Aug 2008 - Open Source Conference 2008 in
-    Nagoya](#opensourceconf2008-Nagoya)
--   [Jul 2008 - Open Source Conference 2008 in
-    Kansai](#opensourceconf2008-Kansai)
--   [Jul 2008 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2008)
--   [Jun 2008 - Open Source Conference 2008 in
-    Hokkaido](#opensourceconf2008-DO)
--   [Jun 2008 - pkgsrcCon 2008](#pkgsrcCon2008)
--   [May 2008 - BSDCan 2008](#bsdcan2008)
--   [Apr 2008 - BSDCon Barcelona 2008](#bsdbarcelona08)
--   [Apr 2008 - Open Source Conference 2008
-    Nagaoka](#opensourceconf2008-nagaoka)
--   [Mar 2008 - Fr�hjahrsfachgespr�ch (FFG) of the German Unix User
-    Group](#ffg2008)
--   [Mar 2008 - AsiaBSDCon 2008](#asiabsdcon-tokyo-2008)
--   [Feb 2008 - Open Source Conference 2008
-    Tokyo/Spring](#opensourceconf2008-spring)
--   [Feb 2008 - FOSDEM 2008](#fosdem-2008)
--   [Feb 2008 - SCALE 6x](#scale-2008)
--   [Dec 2007 - Open Source Conference 2007
-    Fukuoka](#opensourceconf2007-fukuoka)
--   [Nov 2007 - Open Source Conference 2007
-    Okinawa](#opensourceconf2007-okinawa)
--   [Nov 2007 - come2linux: Linux-days Essen 2007](#come2linux2007)
--   [Nov 2007 - Kansai OpenSource 2007](#kansai-os-jp-2007)
--   [Oct 2007 - Open Source Conference 2007
-    Niigata](#opensourceconf2007-niigata)
--   [Oct 2007 - Systems Munich](#systems-munich-2007)
--   [Oct 2007 - First Turkish Conference on BSD Systems](#bsdcontr2007)
--   [Oct 2007 - Brandenburger Linux-Infotag](#linuxinfotag-brb2007)
--   [Oct 2007 - Open Source Conference 2007
-    Tokyo/Fall](#opensourceconf2007-tokyofall)
--   [Sep 2007 - EuroBSDCon 2007](#eurobsdcon2007)
--   [Aug 2007 - Chaos Communications Camp 2007](#ccccamp2007)
--   [Jul 2007 - Open Source Conference 2007 in
-    Kansai](#opensourceconf2007-Kansai)
--   [Jul 2007 - Chaos Singularity (CoSin) 2007](#cosin2007)
--   [Jul 2007 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2007)
--   [Jun 2007 - Open Source Conference 2007 in
-    Hokkaido](#opensourceconf2007-DO)
--   [May 2007 - Linuxtag Berlin](#linuxtagB2007)
--   [May 2007 - BSDCan 2007](#bsdcan2007)
--   [Apr 2007 - pkgsrcCon 2007](#pkgsrcon2007)
--   [Mar 2007 - Linux-Infotag Augsburg](#lita2007)
--   [Mar 2007 - Open Source Conference 2007
-    Tokyo/Spring](#opensourceconf2007-tokyospring)
--   [Mar 2007 - AsiaBSDCon 2007](#asiabsdcon-tokyo-2007)
--   [Mar 2007 - Chemnitzer Linux-Tage](#chemnizer-linuxtage-2007)
--   [Feb 2007 - GUUG spring talk](#guug-spring-2007)
--   [Feb 2007 - FOSDEM 2007](#fosdem-2007)
--   [Feb 2007 - SCALE 5x](#scale5x)
--   [Dec 2006 - BSDCon Chile 2006](#bsdcon-chile-2006)
--   [Dec 2006 - OpenSource Conference 2006
-    Okinawa](#opensourceconf2006-okinawa)
--   [Nov 2006 - Hackathon](#hackathon-nov2006)
--   [Nov 2006 - LinuxDay Dornbirn, Austria](#dornbirn-2006)
--   [Nov 2006 - EuroBSDCon Milan](#eurobsdcon-milan-2006)
--   [Oct 2006 - NYCBSDCon 2006](#NYCBSDCon-2006)
--   [Oct 2006 - Open Source Conference 2006
-    Tokyo/Fall](#opensourceconf2006-tokyofall)
--   [Oct 2006 - Systems Munich](#systems-munich-2006)
--   [Sep 2006 - Ohio Linuxfest](#ohio-linuxfest-2006)
--   [Sep 2006 - NetBSD at Linux-days Essen 2006:
-    come2linux](#linux-days-2006)
--   [Sep 2006 - NetBSD at Linux-kongress Nuremberg
-    2006](#Linux-Kongress-2006)
--   [Jul 2006 - Open Source Conference 2006 in
-    Hokkaido](#opensourceconf2006-DO)
--   [Jun 2006 - Open Source Conference 2006 in
-    Niigata](#opensourceconf2006-Niigata)
--   [Jun 2006 - Interop 2006 Tokyo BSD BOF](#interop-tokyo-2006)
--   [May 2006 - BSDCan 2006](#bsdcan-2006)
--   [May 2006 - pkgsrcCon 2006](#pkgsrccon-2006)
--   [May 2006 - LinuxTag 2006](#lt-2006)
--   [Apr 2006 - Vintage Computer Festival Europe](#vcfe-2006)
--   [Apr 2006 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2006)
--   [Apr 2006 - LinuxWorld-Boston 2006](#linuxworld-boston-2006)
--   [Mar 2006 - Chemnitzer Linux-Tage 2006](#chemnitzer-linux-tage-2006)
--   [Mar 2006 - CeBIT 2006](#cebit-2006)
--   [Mar 2006 - Open Source Conference 2006
-    Tokyo/Spring](#opensourceconf2006-tokyospring)
--   [Mar 2006 - GUUG spring talk](#ffg-2006)
--   [Feb 2006 - FOSDEM 2006](#fosdem-2006)
--   [Feb 2006 - SCALE 4x](#scale-2006)
--   [Dec 2005 - 22nd Chaos Communication Congress (22C3)](#22c3-2005)
--   [Nov 2005 - OpenSource Conference 2005
-    Okinawa](#opensourceconf2005-okinawa)
--   [Nov 2005 - EuroBSDCon 2005](#eurobsdcon2005)
--   [Oct 2005 - Linux-Info-Tag Dresden 2005](#linux-info-tag-2005)
--   [Oct 2005 - Systems 2005](#systems2005)
--   [Oct 2005 - KANSAI-OPENSOURCE-2005](#kansai-os-jp-2005)
--   [Sep 2005 - Open Source Conference 2005
-    Fall](#opensourceconf2005-Fall)
--   [Sep 2005 - NYC BSD Con 2005](#nycbsdcon05)
--   [Sep 2005 - Computer-Bank-Office 2005](#cbo-2005)
--   [Sep 2005 - Portuguese NetBSD Users's Group meeting](#nbsdpt05)
--   [Aug 2005 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2005)
--   [Aug 2005 - BSDDAY S�o Paulo](#bsdday-brazil05)
--   [Aug 2005 - LinuxWorld Conference & Expo 2005](#linuxworldsf2005)
--   [Jul 2005 - BSD at What the Hack outdoor hacker
-    conference](#whatthehack20050728)
--   [Jul 2005 - BSD-CONFERENCE-JAPAN 2005](#bsdcon-jp-2005)
--   [Jul 2005 - Open Source Conference 2005 in
-    Hokkaido](#opensourceconf2005-DO)
--   [Jun 2005 - MeetBSD 2005](#meetbsd2005)
--   [Jun 2005 - Interop 2005 Tokyo BSD BOF](#interop-tokyo-2005)
--   [May 2005 - BSDCan2005](#bsdcan-2005)
--   [May 2005 - pkgsrcCon 2005](#pkgsrccon05)
--   [Apr 2005 - Linux Fest Northwest 2005](#linuxfestnw2005)
--   [Apr 2005 - 2005 USENIX Annual Technical Conference](#usenix-2005)
--   [Mar 2005 - Open Source Conference 2005](#opensourceconf2005)
--   [Mar 2005 - CeBIT 2005](#cebit2005)
--   [Mar 2005 - Chemnitzer Linux-Tage 2005](#chemnitzer-linux-tage-2005)
--   [Feb 2005 - Spring Talks of the German Unix User
-    Group](#german-spring-talks-2005)
--   [Feb 2005 - Southern California Linux Expo](#socallinux-2005)
--   [Feb 2005 - Solutions Linux 2005](#solutions-linux2005)
--   [Dec 2004 - 21st Chaos Communication Congress (21c3)](#21c3-2004)
--   [Oct 2004 - EuroBSDCon 2004](#eurobsdcon2004)
--   [Oct 2004 - Systems 2004](#systems2004)
--   [Oct 2004 - BSD-CONFERENCE-JAPAN 2004](#bsdcon-jp-2004)
--   [Oct 2004 - KANSAI-OPENSOURCE-2004](#kansai-os-jp-2004)
--   [Sep 2004 - Open Source Conference 2004](#opensourceconf2004)
--   [Sep 2004 - Swiss Unix Conference 2004](#sucon04)
--   [Aug 2004 - NetBSD System Administration training](#pstclass-200408)
--   [Aug 2004 - LinuxWorld 2004](#linuxworldsf04)
--   [Jul 2004 - Get into OpenSource Hokkaido 2004 (GODo2004)](#godo2004)
--   [Jun 2004 - NetWorld+Interop 2004 Tokyo BSD
-    BOF](#interop-tokyo-2004)
--   [Jun 2004 - USENIX 2004](#usenix04)
--   [Jun 2004 - Linuxtag 2004](#linuxtag04)
--   [May 2004 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2004)
--   [May 2004 - BSDCan 2004](#bsdcan2004)
--   [May 2004 - LinuxChix-Br II National Meeting](#linuxchix)
--   [Apr 2004 - pkgsrcCon 2004](#pkgsrccon2004)
--   [Apr 2004 - Linuxfest Northwest 2004](#lfnw2004)
--   [Mar 2004 - GUUG Fr�hjahrsfachgespr�ch](#ffg2004)
--   [Mar 2004 - Chemnitzer Linux-Tag 2004](#chemnitz-linuxtag04)
--   [Feb 2004 - Solutions Linux 2004](#solutionslinux-2004)
--   [Jan 2004 - LinuxWorld 2004](#linuxworld-2004)
--   [Dec 2003 - 20th Chaos Communication Congress (20c3)](#20c3-2003)
--   [Dec 2003 - BSDCon Brasil 2003](#bsdcon-brasil-2003)
--   [Dec 2003 - BSD-Linux-Day 2003](#bsdlinux-jp-2003)
--   [Nov 2003 - NetBSD System Administration training](#pstclass-200311)
--   [Oct 2003 - KANSAI-OPENSOURCE+FREEWARE-2003](#kansai-of-jp-2003)
--   [Oct 2003 - BSD-CONFERENCE-JAPAN 2003](#bsdcon-jp-2003)
--   [Oct 2003 - Linux-Kongress 2003](#linux-kongress-2003)
--   [Sep 2003 - BSDCon 2003](#bsdcon-2003)
--   [Aug 2003 - Chaos Communication Camp 2003](#chaos-camp-2003)
--   [Jul 2003 - Linuxtag Karlsruhe, Germany](#linuxtag-karlsruhe-2003)
--   [Jul 2003 - Libre Software Meeting in Metz](#lsm2003)
--   [Jul 2003 - NetWorld+Interop 2003 Tokyo BSD
-    BOF](#interop-tokyo-2003)
--   [Jun 2003 - Japan NetBSD Users' Group meeting & NetBSD
-    BOF](#jp-users-2003)
--   [Jun 2003 - Open Source Meeting 2003 in Nagoya
-    University](#opensource-nagoya-2003)
--   [Jun 2003 - 2003 USENIX Annual Technical Conference](#usenix03)
--   [May 2003 - BSDay 2003](#bsday-2003)
--   [May 2003 - BSDCon.it](#bsdcon.it-2003)
--   [Apr 2003 - DECUS Munich Symposium 2003](#decus2003)
--   [Apr 2003 - Magdeburg Linuxtag](#mdlug)
--   [Mar 2003 - NetBSD is ten years young and still going
-    strong!](#10th-birthday)
--   [Mar 2003 - CeBIT 2003](#cebit-2003)
--   [Mar 2003 - NetBSD System Administration training](#pstclass-200303)
--   [Mar 2003 - Chemnitzer Linux-Tag](#linuxtag-2003)
--   [Feb 2003 - Solutions Linux](#sollinux-2003)
--   [Jan 2003 - Ottawa Open Source Weekend](#osw-ottawa-2003)
--   [Jan 2003 - LinuxWorld 2003](#linuxworld-2003)
--   [Dec 2002 - 19th Chaos Communication Congress (19c3)](#19c3-2002)
--   [Dec 2002 - NetBSD System Administration training](#pstclass-2002)
--   [Dec 2002 - Internet Week 2002](#internetweek-2002)
--   [Nov 2002 - KNF Congress 2002](#knf-2002)
--   [Nov 2002 - BSD Conference Japan](#bsdcon_jp-2002)
--   [Nov 2002 - BSDCon Europe 2002](#bsdconeurope-2002)
--   [Nov 2002 - LISA '02](#lisa-2002)
--   [Nov 2002 - RISC OS S.E. Show](#riscos-seshow)
--   [Oct 2002 - Linuxdays 2002](#linux-days-2002)
--   [Sep 2002 - Linux-Kongress 2002](#linux-kongress-2002)
--   [Aug 2002 - 11th USENIX Security Symposium](#usenix-security-2002)
--   [Jul 2002 - NetBSD 1.5.3 release](#netbsd-1.5.3)
--   [Jul 2002 - NetWorld+Interop 2002 Tokyo BSD
-    BOF](#interop-tokyo-2002)
--   [Jun 2002 - USENIX Annual Technical Conference](#usenix-2002)
--   [Jun 2002 - Open Source Meeting 2002 in Nagoya
-    University](#opensource-nagoya-2002)
--   [Jun 2002 - Linuxtag 2002 in Karlsruhe](#linuxtag-karlsruhe-2002)
--   [May 2002 - Wakefield 2002, The Acorn RISC OS Show](#wakefield-2002)
--   [May 2002 - Japan NetBSD Users' Group meeting](#jp-users-2002)
--   [May 2002 - Annual International Free Software
-    Forum](#br-fsforum-2002)
--   [Mar 2002 - 4th Chemnitz Linuxday 2002](#clt4-2002)
--   [Feb 2002 - GUUG Fr�hjahrsfachgespr�ch 2002](#guug-ffg-2002)
--   [Feb 2002 - BSDCon 2002](#bsdcon-2002)
--   [Dec 2001 - Internet Week 2001](#internetweek-2001)
--   [Nov 2001 - BSDCon Europe 2001](#bsdconeurope-2001)
--   [Oct 2001 - RISC OS 2001 Show](#riscos2001)
--   [Sep 2001 - NetBSD 1.5.2 release](#netbsd-1.5.2)
--   [Aug 2001 - LinuxWorld Expo](#linuxworld-2001)
--   [Jul 2001 - NetBSD 1.5.1 release](#netbsd-1.5.1)
--   [Jun 2001 - Japan NetBSD Users' Group meeting](#jp-users-2001)
--   [Jun 2001 - USENIX Annual Technical Conference](#usenix-2001)
--   [Jun 2001 - Open Source Meeting 2001 in Nagoya
-    University](#opensource-nagoya-2001)
--   [Jun 2001 - NetWorld+Interop Tokyo, BSD BoF](#interop-tokyo-2001)
--   [May 2001 - Wakefield 2001](#wakefield-2001)
--   [Apr 2001 - Comdex Spring 2001](#comdex-spring-2001)
--   [Feb 2001 - Open Source Matsuri 2001 in
-    Akihabara](#opensourcematsuri-2001)
--   [Jan 2001 - LinuxWorld Expo 2001](#linuxworld-expo-2001)
--   [Dec 2000 - Internet Week 2000](#internetweek-osaka-2000)
--   [Dec 2000 - NetBSD 1.5 release](#netbsd-1.5)
--   [Dec 2000 - Usenix Systems Administration Conference
-    (LISA)](#usenix-lisa-2000)
--   [Nov 2000 - NetBSD 1.4.3 release](#netbsd-1.4.3)
--   [Nov 2000 - Comdex Fall 2000](#comdex-fall-2000)
--   [Oct 2000 - Linux Expo Toronto 2000](#linux-expo-toronto-2000)
--   [Oct 2000 - RISC OS 2000](#riscos2000)
--   [Oct 2000 - BSDCon 2000](#bsdcon-2000)
--   [Oct 2000 - Atlanta Linux Showcase](#atlanta-showcase-2000)
--   [Aug 2000 - LinuxWorld Conference & Expo](#linuxworldexpo)
--   [Jul 2000 - O'Reilly Open Source Software Convention
-    2000](#oreilly-open-source-2000)
--   [Jul 2000 - Comdex Canada 2000](#comdex-canada-2000)
--   [Jul 2000 - Japan NetBSD Users' Group meeting](#jp-users-2000)
--   [Jun 2000 - LinuxTag 2000](#linuxtag-2000)
--   [Jun 2000 - Usenix Annual Technical
-    Conference](#usenix-general-2000)
--   [Jun 2000 - German Unix User Group spring '00
-    meeting](#guug-ffg-2000)
--   [Jun 2000 - NetWorld+Interop Tokyo](#interop-tokyo-2000)
--   [Apr 2000 - Comdex Spring 2000](#comdex-spring-2000)
--   [Apr 2000 - Linux Expo](#linux-expo-montreal-2000)
--   [Mar 2000 - DECUS Munich](#decus-munich-2000)
--   [Mar 2000 - NetBSD 1.4.2 release](#netbsd-1.4.2)
--   [Feb 2000 - Linux Expo](#linux-expo-paris-2000)
--   [Dec 1999 - Internet Week 1999](#internetweek-yokohama-1999)
--   [Dec 1999 - The Bazaar](#bazaar-1999)
--   [Nov 1999 - Comdex Fall 1999](#comdex-fall-1999)
--   [Nov 1999 - Open Source Matsuri99 in
-    Akihabara](#opensourcematsuri-99)
--   [Oct 1999 - Atlanta Linux Showcase 1999](#linux-showcase-1999)
--   [Oct 1999 - BSD Social Event in Berlin](#bsd-social-berlin)
--   [Aug 1999 - NetBSD 1.4.1 release](#netbsd-1.4.1)
--   [Jul 1999 - Wizards of OS \#1](#wizards-of-os)
--   [Jun 1999 - LinuxTag '99](#linuxtag-99)
--   [Jun 1999 - Usenix '99](#usenix-99)
--   [Mar 1999 - German Unix User Group spring '99 meeting](#guug-99)
--   [May 1999 - NetBSD 1.4 release](#netbsd-1.4)
--   [Dec 1998 - NetBSD 1.3.3 release](#netbsd-1.3.3)
--   [Aug 1998 - Open Source Developer Day](#opensource-98)
--   [Jun 1998 - Usenix freenix track](#usenix-98)
--   [May 1998 - NetBSD 1.3.2 release](#netbsd-1.3.2)
--   [Apr 1998 - MTT '98 "Magic Days Trier"](#mtt-98)
--   [Mar 1998 - NetBSD 1.3.1 release](#netbsd-1.3.1)
--   [Jan 1998 - NetBSD 1.3 release](#netbsd-1.3)
--   [May 1997 - NetBSD 1.2.1 release](#netbsd-1.2.1)
--   [Apr 1997 - MTT '97 "Magic Days Trier"](#mtt-97)
--   [Apr 1997 - DECUS Munich](#decus-97)
--   [Jan 1997 - Anaheim Usenix Birds of a Feather](#usenix-97)
-
-* * * * *
-
-### Future Events
-
-#### `Mar 2014` - AsiaBSDCon 2014 ([top](#future))
+### `Mar 2014` - AsiaBSDCon 2014
 
 *Mar 13-16, 2014, Tokyo University of Science,Tokyo, Japan*
 
@@ -514,7 +20,7 @@ conference and aimed to collect the best technical papers and
 presentations available to ensure that the latest developments in our
 open source community are shared with the widest possible audience.
 
-#### `Mar 2014` - Open Source Conference 2014 Hamanako ([top](#future))
+### `Mar 2014` - Open Source Conference 2014 Hamanako
 
 *Mar. 22, 2014, [Hamamatsu Shimin Kyodo
 Center](http://www.machien-hamamatsu.jp/) , Shizuoka, Japan*
@@ -526,7 +32,7 @@ Group](http://www.jp.NetBSD.org/) with many gadgets demonstration (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/)).
 
-#### `Jun 2014` - Open Source Conference 2014 Hokkaido ([top](#future))
+### `Jun 2014` - Open Source Conference 2014 Hokkaido
 
 *Jun. 13-14, 2014, [Sapporo Business Innovation Center, Sapporo,
 Japan](http://www.sapporosansin.jp/access/)*
@@ -538,7 +44,7 @@ Group](http://www.jp.NetBSD.org/) and [NoBUG](http://www.no.bug.gr.jp/)
 with NetBSD gadget demonstrations ( [hpcarm](../ports/hpcarm/),
 [hpcmips](../ports/hpcmips/), [hpcsh](../ports/hpcsh/)).
 
-#### `Jul 2014` - Open Source Conference 2014 Nagoya ([top](#future))
+### `Jul 2014` - Open Source Conference 2014 Nagoya
 
 *Jul. 4-5, 2014, [Nagoya International
 Center](http://www.nic-nagoya.or.jp/en/e/about-us/access-hours), Nagoya,
@@ -551,7 +57,7 @@ Group](http://www.jp.NetBSD.org/) and [Nagoya \*BSD Users' Group
 (NBUG)](http://www.nagoya.bug.gr.jp/). There will be a gadget
 demonstration [BSD booth](http://twitpic.com/czat1r) and NBUG BOF.
 
-#### `Nov 2014` - Kansai OpenSource 2014 ([top](#future))
+### `Nov 2014` - Kansai OpenSource 2014
 
 *Nov. 7-8, 2014, [Asia and Pacific Trade Center ITM
 Building](http://www.atc-co.com/), Osaka, Japan*
@@ -563,11 +69,10 @@ Group](http://www.kbug.gr.jp/). with many gadget demonstrations {
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/) } and BSDBOF.
 
-* * * * *
+Past Events
+-----------
 
-### Past Events
-
-#### `Feb 2014` - Open Source Conference 2014 Tokyo/Spring ([top](#past))
+### `Feb 2014` - Open Source Conference 2014 Tokyo/Spring
 
 *Feb. 28- Mar. 1, 2014, [MEISEI
 UNIVERSITY](http://www.meisei-u.ac.jp/access/hino.html), Tokyo, Japan*
@@ -583,21 +88,21 @@ more reports on [togetter](http://togetter.com/li/635747). Japan NetBSD
 Users' Group got an award called "[Open Source Confernce
 Award](http://www.ospn.jp/press/20140218osc-award.html)".
 
-#### `Feb 2014` - NYC\*BSD Con 2014 ([top](#past))
+### `Feb 2014` - NYC\*BSD Con 2014
 
 *Feb 8, 2014 Suspenders Bar and Restaurant*
 
 [NYC\*BSD Con 2014](http://www.nycbsdcon.org/2014/) NYCBSDCon is on as a
 day-long event with the theme of "The BSDs in Production."
 
-#### `Nov 2013` - Linux User Group of Mauritius - LinuxFest 2013 ([top](#past))
+### `Nov 2013` - Linux User Group of Mauritius - LinuxFest 2013
 
 *Nov 25, 2013, Octave Wiehe Auditorium University of Mauritius*
 
 [Linux Fest 2013 in Mauritius](http://lugm.org/linuxfest/#) will feature
 some BSD thumb drives and other general IT and Open Source talks
 
-#### `Nov 2013` - Open Source Conference 2013 Oita ([top](#past))
+### `Nov 2013` - Open Source Conference 2013 Oita
 
 *Nov. 23, 2013, i-ness, Oita, Japan*
 
@@ -608,7 +113,7 @@ Group](http://www.jp.NetBSD.org/) with many gadgets demonstration (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/)).
 
-#### `Nov 2013` - Open Source Conference 2013 Fukuoka ([top](#past))
+### `Nov 2013` - Open Source Conference 2013 Fukuoka
 
 *Nov. 16, 2013, [Fukuoka Soft Research
 Park](http://www.fukuoka-srp.co.jp/access/index.html) , Fukuoka, Japan*
@@ -620,7 +125,7 @@ Group](http://www.jp.NetBSD.org/) with many gadgets demonstration (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/))
 
-#### `Nov 2013` - Kansai OpenSource 2013 ([top](#past))
+### `Nov 2013` - Kansai OpenSource 2013
 
 *Nov. 8-9, 2013, [Asia and Pacific Trade Center ITM
 Building](http://www.atc-co.com/), Osaka, Japan*
@@ -632,7 +137,7 @@ Group](http://www.kbug.gr.jp/). with many gadget demonstrations {
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/) } and BSDBOF.
 
-#### `Oct 2013` - Open Source Conference 2013 Tokyo/Fall ([top](#past))
+### `Oct 2013` - Open Source Conference 2013 Tokyo/Fall
 
 *Oct. 19-20, 2013, [MEISEI
 UNIVERSITY](http://www.meisei-u.ac.jp/access/hino.html), Tokyo, Japan*
@@ -644,7 +149,7 @@ Group](http://www.jp.NetBSD.org/) with NetBSD gadget demonstrations (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/)) and BSDBOF.
 
-#### `Oct 2013` - Open Source Conference 2013 Hiroshima ([top](#past))
+### `Oct 2013` - Open Source Conference 2013 Hiroshima
 
 *Oct. 6, 2013, [Satellite Campus
 Hiroshima](http://www.pu-hiroshima.ac.jp/site/satellite/accessmap.html)
@@ -657,7 +162,7 @@ Group](http://www.jp.NetBSD.org/) with NetBSD gadget demonstrations (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/)).
 
-#### `Sep 2013` - Open Source Conference 2013 Hokkaido ([top](#past))
+### `Sep 2013` - Open Source Conference 2013 Hokkaido
 
 *Sep. 14, 2013, [Sapporo Convention Center, Sapporo,
 Japan](http://www.sora-scc.jp/access/index.html)*
@@ -669,7 +174,7 @@ Group](http://www.jp.NetBSD.org/) and [NoBUG](http://www.no.bug.gr.jp/)
 with NetBSD gadget demonstrations ( [hpcarm](../ports/hpcarm/),
 [hpcmips](../ports/hpcmips/), [hpcsh](../ports/hpcsh/)).
 
-#### `Aug 2013` - FrOSCon 2013 ([top](#past))
+### `Aug 2013` - FrOSCon 2013
 
 *Aug. 24–25, 2013, [Bonn-Rhein-Sieg University of Applied Sciences,
 Campus
@@ -681,7 +186,7 @@ Software Conference), the NetBSD project will be present with a booth
 with several "showcase" machines, handing out flyers and CDs and
 answering users' questions.
 
-#### `Aug 2013` - Open Source Conference 2013 Shimane ([top](#past))
+### `Aug 2013` - Open Source Conference 2013 Shimane
 
 *Aug. 24, 2013, [MATSUE
 TERRSA](http://www.sanbg.com/terrsa/e/index.html), Shimane, Japan*
@@ -699,7 +204,7 @@ hardfloat
 NetBSD/evbarmv6hf](http://mail-index.netbsd.org/port-arm/2013/08/23/msg001984.html)
 ). more reports on [togetter](http://togetter.com/li/553529).
 
-#### `Aug 2013` - Open Source Conference 2013 Kansai@Kyoto ([top](#past))
+### `Aug 2013` - Open Source Conference 2013 Kansai@Kyoto
 
 *Aug. 2-3, 2013, [KYOTO RESEARCH
 PARK](http://www.krp.co.jp/english/access/index.html), Kyoto, Japan*
@@ -718,7 +223,7 @@ mikutter](http://movapic.com/ebijun/pic/4987913),
 Sheep?,](http://www.ceres.dti.ne.jp/tsutsui/osc2013kyoto/NetBSD-luna68k_mlterm-fb_Twitter.html)
 ). more report on [togetter](http://togetter.com/li/542885).
 
-#### `Jul 2013` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `Jul 2013` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *Jul 13, 2013, [VLSI Design and Education Center University of
 Tokyo](http://www.vdec.u-tokyo.ac.jp/English/contact.html), Tokyo,
@@ -729,7 +234,7 @@ See [Japan NetBSD Users Group 15th annual Meeting and BoF
 for meeting information.[more detail on
 togetter](http://togetter.com/li/532926).
 
-#### `Jul 2013` - Open Source Conference 2013 Okinawa ([top](#past))
+### `Jul 2013` - Open Source Conference 2013 Okinawa
 
 *Jul. 6, 2013, [Okinawa Convention
 Center](http://www.oki-conven.jp/en/modules/tinyd7/page/page1.html) ,
@@ -744,7 +249,7 @@ NetBSD](http://ftp.NetBSD.org/pub/NetBSD/misc/jun/raspberry-pi/),
 [XM6i](http://xm6i.org/)).[more detail on
 togetter](http://togetter.com/li/529669).
 
-#### `Jun 2013` - Open Source Conference 2013 Nagoya ([top](#past))
+### `Jun 2013` - Open Source Conference 2013 Nagoya
 
 *Jun. 21-22, 2013, [Nagoya International
 Center](http://www.nic-nagoya.or.jp/en/e/about-us/access-hours), Nagoya,
@@ -767,7 +272,7 @@ NetBSD/x68k,[NetBSD/RPI](http://ftp.NetBSD.org/pub/NetBSD/misc/jun/raspberry-pi/
 2038](http://www.slideshare.net/hirofumitouhei/osc2013-nagoya). [more
 detail on togetter](http://togetter.com/li/522396).
 
-#### May 2013 - Linuxtag Berlin ([top](#past))
+### May 2013 - Linuxtag Berlin
 
 *May 22-25, 2013, Berlin, Germany.*
 
@@ -780,7 +285,7 @@ cases or notebooks.
 See the [Linuxtag homepage](http://www.linuxtag.org/2013/en.html) for
 more information.
 
-#### `May 2013` - BSDCan 2013, Ottawa, Canada ([top](#past))
+### `May 2013` - BSDCan 2013, Ottawa, Canada
 
 *May 17-18, 2013, Ottawa, Canada.*
 
@@ -795,7 +300,7 @@ See [the call for
 papers](http://mail-index.NetBSD.org/netbsd-advocacy/2012/12/09/msg000506.html)
 for details.
 
-#### `Apr 2013` - Central European BSD-Day 2013, Naples, Italy ([top](#past))
+### `Apr 2013` - Central European BSD-Day 2013, Naples, Italy
 
 *Apr 6, 2013, Naples, Italy*
 
@@ -810,7 +315,7 @@ flexible: they may include presentations or demonstration of results, or
 even public discussions with developers involved, or a mix of all of
 these.
 
-#### `Mar 2013` - pkgsrcCon 2013, Berlin, Germany ([top](#past))
+### `Mar 2013` - pkgsrcCon 2013, Berlin, Germany
 
 *Mar. 23, 2013, IN-Berlin Space, Berlin, Germany*
 
@@ -820,7 +325,7 @@ conference for people working on the NetBSD Packages Collection
 works-in-progress in pkgsrc infrastructure. Developers, contributors,
 interested developers and users are all welcome to attend.
 
-#### `Mar 2013` - Chemnitz Linux Days 2013, Chemnitz, Germany ([top](#past))
+### `Mar 2013` - Chemnitz Linux Days 2013, Chemnitz, Germany
 
 *Mar. 16-17, 2013, Chemnitz, Germany*
 
@@ -832,7 +337,7 @@ BSD related talks.
 See the [website](http://chemnitzer.linux-tage.de/2013/) for more
 information.
 
-#### `Mar 2013` - AsiaBSDCon 2013 ([top](#past))
+### `Mar 2013` - AsiaBSDCon 2013
 
 *Mar 14-17, 2013, Tokyo University of Science,Tokyo, Japan*
 
@@ -851,7 +356,7 @@ on Togetter](http://togetter.com/li/472002) and [AsiaBSDCon Guide by
 Japan NetBSD Users
 Group](http://www.soum.co.jp/~jun/asiabsdcon2013.pdf).
 
-#### `Mar 2013` - Open Source Conference 2013 Tokushima ([top](#past))
+### `Mar 2013` - Open Source Conference 2013 Tokushima
 
 *Mar. 9, 2013, [TOKUGIN TOMONY
 PLAZA](http://www.tokuginplaza.com/own/index.asp) , Tokushima, Japan*
@@ -866,7 +371,7 @@ and ["NetBSD 20 years"
 presentation](http://www.slideshare.net/tsutsuii/osc2013tokushima-net-bsd20th)
 by tsutsui@. [More reports on Togetter](http://togetter.com/li/468577).
 
-#### `Feb 2013` - Open Source Conference 2013 Tokyo/Spring ([top](#past))
+### `Feb 2013` - Open Source Conference 2013 Tokyo/Spring
 
 *Feb. 22-23, 2013, Tokyo, Japan*
 
@@ -880,7 +385,7 @@ NetBSD/netwalker](http://movapic.com/ebijun/pic/4688202), [mikutter on
 WZERO3](http://movapic.com/ebijun/pic/4689261), ) and [more details on
 togetter](http://togetter.com/li/460484).
 
-#### `Feb 2013` - Open Source Conference 2013 Hamamatsu ([top](#past))
+### `Feb 2013` - Open Source Conference 2013 Hamamatsu
 
 *Feb. 9, 2013, [Hamamatsu Shimin Kyodo
 Center](http://www.machien-hamamatsu.jp/) , Shizuoka, Japan*
@@ -893,7 +398,7 @@ Group](http://www.jp.NetBSD.org/) with many gadgets demonstration (
 [hpcsh](../ports/hpcsh/)). [More reports on
 Togetter](http://togetter.com/li/452856).
 
-#### `Feb 2013` - FOSDEM 2013, Brussels, Belgium ([top](#past))
+### `Feb 2013` - FOSDEM 2013, Brussels, Belgium
 
 *Feb. 2-3, 2013, Brussels, Belgium*
 
@@ -914,7 +419,7 @@ Please see [this
 announcement](http://lists.freebsd.org/pipermail/freebsd-advocacy/2012-November/004276.html)
 for details.
 
-#### `Dec 2012` - Open Source Conference 2012 Fukuoka ([top](#past))
+### `Dec 2012` - Open Source Conference 2012 Fukuoka
 
 *Dec. 8, 2012, [Fukuoka Jyouhou
 Senmon-gakkou](http://www.kcs-f.ac.jp/index.html) , Fukuoka, Japan*
@@ -926,7 +431,7 @@ Group](http://www.jp.NetBSD.org/) with many gadgets demonstration (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/))
 
-#### `Nov 2012` - Open Source Conference 2012 Aizu ([top](#past))
+### `Nov 2012` - Open Source Conference 2012 Aizu
 
 *Nov. 3, 2012, [The University of
 Aizu](http://www.u-aizu.ac.jp/e-index.html) , Aizu, Japan*
@@ -938,7 +443,7 @@ Group](http://www.jp.NetBSD.org/) with many gadgets demonstration (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/))
 
-#### `Oct 2012` - Open Source Conference 2012 Oita/Fall ([top](#past))
+### `Oct 2012` - Open Source Conference 2012 Oita/Fall
 
 *Oct. 27, 2012, Sophia hall , Oita, Japan*
 
@@ -949,7 +454,7 @@ Group](http://www.jp.NetBSD.org/) with many gadgets demonstration (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/)).
 
-#### `Oct 2012` - Open Source Conference 2012 Hiroshima ([top](#past))
+### `Oct 2012` - Open Source Conference 2012 Hiroshima
 
 *Oct. 20, 2012, [Hiroshima Kokusai Gakuin
 University](http://www.hkg.ac.jp/html/about/access.html) , Hiroshima,
@@ -975,7 +480,7 @@ found at OSC booth" by
 tsutsui@](http://www.slideshare.net/tsutsuii/osc-netbsd-60). [The event
 summary is available on Togetter](http://togetter.com/li/392778).
 
-#### `Oct 2012` - EuroBSDCon 2012, Warsaw, Poland ([top](#past))
+### `Oct 2012` - EuroBSDCon 2012, Warsaw, Poland
 
 *Oct. 18-21, 2012, Warsaw, Poland*
 
@@ -996,7 +501,7 @@ firmly believe that high profile education is vital to the future of
 technology, and hence greatly welcome students and young people to this
 regular meeting.
 
-#### `Sep 2012` - Open Source Conference 2012 Okinawa ([top](#past))
+### `Sep 2012` - Open Source Conference 2012 Okinawa
 
 *Sep. 22, 2012, [Okinawa Convention
 Center](http://www.oki-conven.jp/en/modules/tinyd7/page/page1.html) ,
@@ -1009,7 +514,7 @@ Group](http://www.jp.NetBSD.org/) with many gadgets demonstration (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/)).
 
-#### `Sep 2012` - Open Source Conference 2012 Tokyo/Spring ([top](#past))
+### `Sep 2012` - Open Source Conference 2012 Tokyo/Spring
 
 *Sep. 7-8, 2012, Tokyo, Japan*
 
@@ -1028,7 +533,7 @@ USL-5P](http://movapic.com/ebijun/pic/4686571), [KAME
 Project](http://movapic.com/ebijun/pic/4686706) ) and BSD BOF. [more
 details on togetter](http://togetter.com/li/369471).
 
-#### `Nov 2012` - Kansai OpenSource 2012 ([top](#past))
+### `Nov 2012` - Kansai OpenSource 2012
 
 *Nov. 9-10, 2012, [Asia and Pacific Trade Center ITM
 Building](http://www.atc-co.com/), Osaka, Japan*
@@ -1041,7 +546,7 @@ NetBSD/evbarm, ZAURUS NetBSD/zaurus, [XM6i
 NetBSD/X68k](http://twitpic.com/bbvayo) } and BSDBOF (). [More reports
 on Togetter](http://togetter.com/li/404573).
 
-#### `Sep 2012` - Open Source Conference 2012 Shimane ([top](#past))
+### `Sep 2012` - Open Source Conference 2012 Shimane
 
 *Sep. 1, 2012, [MATSUE
 TERRSA](http://www.sanbg.com/terrsa/e/index.html), Shimane, Japan*
@@ -1054,7 +559,7 @@ demonstrations (
 [NetBSD/hpcarm,i386](http://movapic.com/ebijun/pic/4678623), ). [more
 details on togetter](http://togetter.com/li/365753).
 
-#### `Aug 2012` - XenSummit North America 2012 ([top](#past))
+### `Aug 2012` - XenSummit North America 2012
 
 *Aug. 27-28, 2012, [Sheraton Hotel &
 Marina](http://www.starwoodhotels.com/sheraton/property/overview/index.html?propertyID=127),
@@ -1066,7 +571,7 @@ North America. The event provides collaboration and education for the
 Xen® community. There was a talk on NetBSD (and FreeBSD) on Xen roadmap
 on day one of the conference.
 
-#### `Aug 2012` - FrOSCon 2012 ([top](#past))
+### `Aug 2012` - FrOSCon 2012
 
 *Aug. 25-26, 2012, [Hochschule Bonn-Rhein-Sieg](http://h-brs.de/), Sankt
 Augustin, Germany*
@@ -1074,7 +579,7 @@ Augustin, Germany*
 The [FrOSCon](http://www.froscon.de/en) (Free And Open Source
 Conference) is one of the largest Open Source conferences in Germany.
 
-#### `Aug 2012` - Open Source Conference 2012 Kansai@Kyoto ([top](#past))
+### `Aug 2012` - Open Source Conference 2012 Kansai@Kyoto
 
 *Aug. 3-4, 2012, [KYOTO RESEARCH
 PARK](http://www.krp.co.jp/english/access/index.html), Kyoto, Japan*
@@ -1098,7 +603,7 @@ updates presetation by
 tsutsuii](http://www.ceres.dti.ne.jp/tsutsui/osc2012kyoto/NetBSD-luna68k-updates.html)
 [more details on togetter](http://togetter.com/li/350035).
 
-#### `Jul 2012` - Open Source Conference 2012 Sendai ([top](#past))
+### `Jul 2012` - Open Source Conference 2012 Sendai
 
 *Jul 14, 2012, [Tohoku Computer
 College](http://www.jc-21.ac.jp/map/index.shtml), Sendai, Japan*
@@ -1110,7 +615,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/), [arm and
 Netwalker](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Jul 2012` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `Jul 2012` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *Jul 7, 2012, [VLSI Design and Education Center University of
 Tokyo](http://www.vdec.u-tokyo.ac.jp/English/contact.html), Tokyo,
@@ -1120,7 +625,7 @@ See [Japan NetBSD Users Group 14th annual Meeting and BoF
 2012](http://www.jp.NetBSD.org/ja/JP/JNUG/announce/meeting14.html.en)
 for meeting information.
 
-#### `Jun 2012` - 17th NetBSD Hackathon ([top](#past))
+### `Jun 2012` - 17th NetBSD Hackathon
 
 *June 14 - 17, 2012, [17th NetBSD
 Hackathon](http://wiki.NetBSD.org/hackathon)*
@@ -1130,7 +635,7 @@ the first release candidate. Our goal is fixing all the bugs that need
 fixing to get NetBSD-current ready for the creation of the NetBSD 6.0
 release branch.
 
-#### `Jun 2012` - Open Source Conference 2012 Hokkaido ([top](#past))
+### `Jun 2012` - Open Source Conference 2012 Hokkaido
 
 *Jun. 16, 2012, Sapporo Business Innovation Center, Sapporo, Japan*
 
@@ -1150,7 +655,7 @@ counter](http://movapic.com/ebijun/pic/4565528), [Making install-image
 Presentation](http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html)
 by tsutsui@. [more detail on togetter](http://togetter.com/li/318806).
 
-#### May 2012 - Linuxtag Berlin ([top](#past))
+### May 2012 - Linuxtag Berlin
 
 *May 23-26, 2012, Berlin, Germany.*
 
@@ -1163,7 +668,7 @@ developers or buy NetBSD T-Shirts.
 See the [Linuxtag homepage](http://www.linuxtag.org/2012/en.html) for
 more information.
 
-#### `May 2012` - BSDCan 2012 ([top](#past))
+### `May 2012` - BSDCan 2012
 
 *May 11-12, 2012, Ottawa, Canada.*
 
@@ -1176,7 +681,7 @@ University of Ottawa, and will be preceded by two days of Tutorials on
 9-10 May 2012. There were related events (of a social nature, for the
 most part) on the day before and after the conference.
 
-#### `May 2012` - Open Source Conference 2012 Nagoya ([top](#past))
+### `May 2012` - Open Source Conference 2012 Nagoya
 
 *May. 12, 2012, [Nagoya International
 Center](http://www.nic-nagoya.or.jp/en/e/about-us/access-hours), Nagoya,
@@ -1197,12 +702,12 @@ Mikutter](http://www.ceres.dti.ne.jp/tsutsui/netbsd/liveimage/),
 [mikutter mug and seal](http://movapic.com/ebijun/pic/4511548) ) and
 NBUG BOF. [more detail on togetter](http://togetter.com/li/302311).
 
-#### `May 2012` - Central European BSD-Day 2012 Vienna ([top](#past))
+### `May 2012` - Central European BSD-Day 2012 Vienna
 
 The [Central European BSD-Day](http://bsdday.eu/2012) took place at the
 University of Applied Sciences in Vienna, Austria, on saturday, may 5th.
 
-#### `Apr 2012` - Open Source Conference 2012 Iwate ([top](#past))
+### `Apr 2012` - Open Source Conference 2012 Iwate
 
 *Apr. 21, 2012, Iwate, Japan*
 
@@ -1215,7 +720,7 @@ booth](http://movapic.com/ebijun/pic/4472557) staffed by members of the
 [zaurus](../ports/zaurus/), [hpcsh](../ports/hpcsh/) } gadget
 demonstrations.
 
-#### `Mar 2012` - AsiaBSDCon 2012 ([top](#past))
+### `Mar 2012` - AsiaBSDCon 2012
 
 *Mar 22-25, 2012, Tokyo University of Science,Tokyo, Japan*
 
@@ -1227,7 +732,7 @@ conference and aimed to collect the best technical papers and
 presentations available to ensure that the latest developments in our
 open source community are shared with the widest possible audience.
 
-#### `Mar 2012` - Open Source Conference 2012 Ehime ([top](#past))
+### `Mar 2012` - Open Source Conference 2012 Ehime
 
 *Mar. 24, 2012, Ehime, Japan*
 
@@ -1246,7 +751,7 @@ mac](http://movapic.com/ebijun/pic/4422798), gadget demonstrations
 [[ustream live
 archive](http://www.ustream.tv/channel/japan-netbsd-users-group-meeting)].
 
-#### `Mar 2012` - Chemnitzer Linux-Tage 2012 ([top](#past))
+### `Mar 2012` - Chemnitzer Linux-Tage 2012
 
 *Mar. 17-18, 2012, Chemnitz, Germany*
 
@@ -1258,7 +763,7 @@ talks.
 See the [website](http://chemnitzer.linux-tage.de/2012/) for more
 information.
 
-#### `Mar 2012` - Open Source Conference 2012 Tokyo/Spring ([top](#past))
+### `Mar 2012` - Open Source Conference 2012 Tokyo/Spring
 
 *Mar. 16-17, 2012, Tokyo, Japan*
 
@@ -1283,7 +788,7 @@ pkgsrc/net/mikutter](http://movapic.com/ebijun/pic/4407661),
 seal](http://movapic.com/ebijun/pic/4408149), NetBSD [gadget
 demonstrations](http://movapic.com/ebijun/pic/4409260).
 
-#### `Feb 2012` - Open Source Conference 2012 Oita ([top](#past))
+### `Feb 2012` - Open Source Conference 2012 Oita
 
 *Feb. 11, 2012, Oita, Japan*
 
@@ -1312,7 +817,7 @@ tablet with NetBSD](http://movapic.com/pic/201202110957324f35bcfcaa63d),
 and brand new [NetBSD 5.1.2
 presentation](http://www.NetBSD.org/releases/formal-5/NetBSD-5.1.2.html).
 
-#### `Feb 2012` - FOSDEM 2012 ([top](#past))
+### `Feb 2012` - FOSDEM 2012
 
 *Feb. 4-5, 2012, Brussels, Belgium*
 
@@ -1326,7 +831,7 @@ licensed operating systems and their talks. Please see [the
 announcement](http://mail-index.NetBSD.org/netbsd-advocacy/2011/11/28/msg000374.html)
 for details.
 
-#### `Dec 2011` - Open Source Conference 2011 Fukuoka ([top](#past))
+### `Dec 2011` - Open Source Conference 2011 Fukuoka
 
 *Dec. 3, 2011, [CHIKUSHI
 JOGAKUEN](http://www-new.chikushi-u.ac.jp/english/about/index.html#Where),
@@ -1340,7 +845,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [arm(WZERO3)](http://twitpic.com/7nhfzq) } gadgets demonstration and
 [Xen4 live USB -teokure- memory](http://twitpic.com/7nhl97).
 
-#### `Nov 2011` - Open Source Conference 2011 Tokyo/Fall ([top](#past))
+### `Nov 2011` - Open Source Conference 2011 Tokyo/Fall
 
 *Nov. 19-20, 2011, [MEISEI
 UNIVERSITY](http://www.meisei-u.ac.jp/english/), Tokyo, Japan*
@@ -1363,7 +868,7 @@ Aspire One with [pkgsrc/net/mikutter](http://mikutter.hachune.net/)),
 SL-C1000, SL-C3200), } and BSD BOF ([Ustream
 Recorded](http://www.ustream.tv/recorded/18441201) ).
 
-#### `Nov 2011` - Open Source Conference 2011 Shimane ([top](#past))
+### `Nov 2011` - Open Source Conference 2011 Shimane
 
 *Nov. 12, 2011, [MATSUE
 TERRSA](http://www.sanbg.com/terrsa/e/index.html), Shimane, Japan*
@@ -1375,7 +880,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many gadget
 demonstrations ( [hpcarm](../ports/hpcarm/),
 [hpcmips](../ports/hpcmips/), [hpcsh](../ports/hpcsh/) ).
 
-#### `Nov 2011` - Kansai OpenSource 2011 ([top](#past))
+### `Nov 2011` - Kansai OpenSource 2011
 
 *Nov. 11-12, 2011, [Asia and Pacific Trade Center ITM
 Building](http://www.atc-co.com/), Osaka, Japan*
@@ -1395,7 +900,7 @@ pkgsrc by obache, [[Ustream
 Recorded](http://www.ustream.tv/recorded/18441201)]). [More reports on
 Togetter](http://togetter.com/li/213724).
 
-#### `Nov 2011` - bsd\_day(2011) ([top](#past))
+### `Nov 2011` - bsd\_day(2011)
 
 *Nov. 5, 2011, Slovak University of Technology, Bratislava, Slovakia*
 
@@ -1413,9 +918,9 @@ There is an additional schedule for participants and their guests on the
 day prior to (November 4th) and after (November 6th) the main event.
 
 For more information please visit the website
-[http://www.bsdday.eu/2011/](http://www.bsdday.eu/2011/).
+[](http://www.bsdday.eu/2011/).
 
-#### `Nov 2011` - BSDday Argentina 2011 ([top](#past))
+### `Nov 2011` - BSDday Argentina 2011
 
 *Nov. 5, 2011, Buenos Aires City, Argentina*
 
@@ -1428,9 +933,9 @@ presentations available to ensure that the latest developments in our
 open source community are shared with the widest possible audience.
 
 For more information please visit the website
-[http://www.bsdday.org.ar/](http://www.bsdday.org.ar/).
+[](http://www.bsdday.org.ar/).
 
-#### `Oct 2011` - EuroBSDCon 2011 ([top](#past))
+### `Oct 2011` - EuroBSDCon 2011
 
 *Oct. 6-9, 2011, Maarssen, Netherlands*
 
@@ -1441,9 +946,9 @@ The Netherlands 6 - 9 October 2011 at Meeting Plaza, Maarssen, The
 Netherlands.
 
 For more information please visit the website
-[http://2011.EuroBSDCon.org/](http://2011.EuroBSDCon.org/).
+[](http://2011.EuroBSDCon.org/).
 
-#### `Oct 2011` - Open Source Conference 2011 Hiroshima ([top](#past))
+### `Oct 2011` - Open Source Conference 2011 Hiroshima
 
 *Oct. 1, 2011, [Prefectual University of
 Hiroshima](http://www.pu-hiroshima.ac.jp/05_campus/08_access/index.html)
@@ -1467,7 +972,7 @@ OS X](http://movapic.com/pic/201110011101544e8674925d26a)), [WZero
 tsutsui](http://www.ceres.dti.ne.jp/tsutsui/osc11hi/Teokure-Live-Image.html),
 [event summary](http://togetter.com/li/195551).
 
-#### `Sep 2011` - Open Source Conference 2011 Okinawa ([top](#past))
+### `Sep 2011` - Open Source Conference 2011 Okinawa
 
 *Sep. 10, 2011, [Okinawa Convention
 Center](http://www.oki-conven.jp/en/modules/tinyd7/page/page1.html) ,
@@ -1481,7 +986,7 @@ demonstration ( [hpcarm](../ports/hpcarm/),
 [hpcmips](../ports/hpcmips/), [hpcsh](../ports/hpcsh/) ) and PCBSD9.0
 presentation by Jun YAMASHIRO.
 
-#### `Sep 2011` - Open Source Small Conference 2011 Aizu ([top](#past))
+### `Sep 2011` - Open Source Small Conference 2011 Aizu
 
 *Sep. 3, 2011, [University of
 Aizu](http://www.u-aizu.ac.jp/e-intro/e-facilities/e-campusmap.html) ,
@@ -1494,7 +999,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many gadgets
 demonstration ( [hpcarm](../ports/hpcarm/),
 [hpcmips](../ports/hpcmips/), [hpcsh](../ports/hpcsh/) ).
 
-#### `Aug 2011` - Open Source Conference 2011 Nagoya ([top](#past))
+### `Aug 2011` - Open Source Conference 2011 Nagoya
 
 *Aug. 20, 2011, [Nagoya International
 Center](http://www.nic-nagoya.or.jp/en/e/about-us/access-hours), Nagoya,
@@ -1513,7 +1018,7 @@ Controller](http://movapic.com/ebijun/pic/3923999),
 3460](http://movapic.com/ebijun/pic/3924343), [Geiger
 counter](http://movapic.com/ebijun/pic/3924354) ).
 
-#### `Aug 2011` - 15th NetBSD Hackathon ([top](#past))
+### `Aug 2011` - 15th NetBSD Hackathon
 
 *Aug. 10 - 15, 2011, [15th NetBSD
 Hackathon](http://wiki.NetBSD.org/hackathon)*
@@ -1521,7 +1026,7 @@ Hackathon](http://wiki.NetBSD.org/hackathon)*
 The 15th NetBSD hackathon focused on documentation. Please see the Wiki
 page at the URL mentioned above for details and progress.
 
-#### `Jul 2011` - Open Source Conference 2011 Kansai@Kyoto ([top](#past))
+### `Jul 2011` - Open Source Conference 2011 Kansai@Kyoto
 
 *Jul. 15-16, 2011, [KYOTO RESEARCH
 PARK](http://www.krp.co.jp/english/access/index.html), Kyoto, Japan*
@@ -1550,7 +1055,7 @@ and
 [commit](http://mail-index.NetBSD.org/source-changes/2011/07/16/msg024675.html)
 by tsutsui.
 
-#### `Jul 2011` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `Jul 2011` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *Jul 9, 2011, [VLSI Design and Education Center University of
 Tokyo](http://www.vdec.u-tokyo.ac.jp/English/contact.html), Tokyo,
@@ -1567,7 +1072,7 @@ OpenCV by mita@FreeBSD, Build [Facebook page for Japan NetBSD Users'
 Group](http://www.facebook.com/NetBSD.jp), 6.0 - here today by soda, PGP
 keysign party by soda.
 
-#### `Jun 2011` - Open Source Conference 2011 Hokkaido ([top](#past))
+### `Jun 2011` - Open Source Conference 2011 Hokkaido
 
 *Jun. 11, 2011, Sapporo Business Innovation Center, Sapporo, Japan*
 
@@ -1580,7 +1085,7 @@ JMBadgeBoard, Processing on NetBSD and many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } .
 
-#### `May 2011` - Open Source Conference 2011 Sendai ([top](#past))
+### `May 2011` - Open Source Conference 2011 Sendai
 
 *May 21, 2011, [Tohoku Computer
 College](http://www.jc-21.ac.jp/map/index.shtml), Sendai, Japan*
@@ -1592,7 +1097,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/), [arm and
 WZero3(WS011SH)](../ports/hpcarm/) } gadgets demonstration.
 
-#### `May 2011` - BSDCan 2011 ([top](#past))
+### `May 2011` - BSDCan 2011
 
 *May 13-14, 2011, Ottawa, Canada.*
 
@@ -1600,7 +1105,7 @@ WZero3(WS011SH)](../ports/hpcarm/) } gadgets demonstration.
 University of Ottawa. It was preceded by two days of tutorials on 11-12
 May 2011.
 
-#### `Apr 2011` - Open Source Conference 2011 Kansai@Kobe ([top](#past))
+### `Apr 2011` - Open Source Conference 2011 Kansai@Kobe
 
 *Apr. 16, 2011, [Kobe Industrial Promotion
 Center](http://www.kobe-ipc.or.jp/access/), Kobe, Japan*
@@ -1617,7 +1122,7 @@ TT030](../ports/atari/), [SHARP X68030](../ports/x68k/),
 [hpcsh](../ports/hpcsh/), [hpcarm](../ports/hpcarm/),
 [zaurus](../ports/zaurus/) gadgets demonstration.
 
-#### `Mar 2011` - AsiaBSDCon 2011 ([top](#past))
+### `Mar 2011` - AsiaBSDCon 2011
 
 *Mar 19-20, 2011, Tokyo University of Science,Tokyo, Japan*
 
@@ -1629,7 +1134,7 @@ conference and aims to collect the best technical papers and
 presentations available to ensure that the latest developments in our
 open source community are shared with the widest possible audience.
 
-#### `Mar 2011` - Open Source Conference 2011 Oita ([top](#past))
+### `Mar 2011` - Open Source Conference 2011 Oita
 
 *Mar. 19, 2011, [i-ness](http://www.pref.oita.jp/13040/index.html),
 Oita, Japan*
@@ -1641,7 +1146,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstrations.
 
-#### `Mar 2011` - Open Source Conference 2011 Tokyo/Spring ([top](#past))
+### `Mar 2011` - Open Source Conference 2011 Tokyo/Spring
 
 *Mar. 4-5, 2011, [Wasseda University,Nishiwaseda
 Campus](http://www.waseda.jp/eng/campus/map03.html), Tokyo, Japan*
@@ -1653,7 +1158,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Feb 2011` - FOSDEM 2011 Brussels, Belgium ([top](#past))
+### `Feb 2011` - FOSDEM 2011 Brussels, Belgium
 
 *Feb. 5-6, 2011, [FOSDEM](http://www.fosdem.org/2011/), Brussels,
 Belgium*
@@ -1664,7 +1169,7 @@ a joint BSD booth staffed by NetBSD and FreeBSD developers and users.
 [Marc Balmer](http://www.vnode.ch/) (mbalmer@) gave a talk "Lua in BSD"
 in the BSD devroom
 
-#### `Feb 2011` - Open Source Conference 2011 Kagawa ([top](#past))
+### `Feb 2011` - Open Source Conference 2011 Kagawa
 
 *Feb. 5, 2011, [Sunport Hall
 Takamatsu](http://www.sunport-hall.jp/shisetu/access.htm), Kagawa,
@@ -1681,7 +1186,7 @@ wscons](http://www.ceres.dti.ne.jp/tsutsui/osc11kg/netbsd-hp300.html)
 presentation by tsutsui ([Event driven Commit
 Log](http://mail-index.NetBSD.org/source-changes/2011/02/06/msg018165.html)).
 
-#### `Dec 2010` - Open Source Conference 2010 Fukuoka ([top](#past))
+### `Dec 2010` - Open Source Conference 2010 Fukuoka
 
 *Dec. 11, 2010, [Fukuoka Institute of
 Technology](http://www.fit.ac.jp/EN/index.html), Fukuoka, Japan*
@@ -1693,16 +1198,16 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Nov 2010` - Journ�es M�dit�ran�ennes du Logiciel Libre in Sophia-Antipolis. ([top](#past))
+### `Nov 2010` - Journées Méditéranéennes du Logiciel Libre in Sophia-Antipolis.
 
 *November 26-27, 2010, Sophia-Antipolis, France.*
 
-NetBSD was present for the 2nd time at the [Journ�es M�dit�ran�ennes du
+NetBSD was present for the 2nd time at the [Journées Méditéranéennes du
 Logiciel Libre](http://jm2l.linux-azur.org). Friday afternoon was
 generally more enterprise oriented, while Saturday was more end-users
 focused.
 
-#### `Nov 2010` - Open Source Conference 2010 Shimane ([top](#past))
+### `Nov 2010` - Open Source Conference 2010 Shimane
 
 *Nov 27, 2010, [MATSUE
 TERRSA](http://www.sanbg.com/terrsa/e/index.html), Shimane, Japan*
@@ -1714,7 +1219,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/). There was gadget
 demonstrations ( [hpcarm](../ports/hpcarm/),
 [hpcmips](../ports/hpcmips/), [hpcsh](../ports/hpcsh/) ).
 
-#### `Nov 2010` - NYCBSDCon 2010 ([top](#past))
+### `Nov 2010` - NYCBSDCon 2010
 
 *November 12-14, 2010, Cooper Union, New York, NY, USA*
 
@@ -1725,7 +1230,7 @@ share and gain knowledge, to network with like-minded people, and to
 have fun. This event was organized by members of the New York City \*BSD
 Users Group (NYC\*BUG).
 
-#### `Nov 2010` - Kansai OpenSource 2010 ([top](#past))
+### `Nov 2010` - Kansai OpenSource 2010
 
 *Nov. 5-6, 2010, [Asia and Pacific Trade Center ITC
 Building](http://www.atc-co.com/), Osaka, Japan*
@@ -1751,7 +1256,7 @@ tech](http://movapic.com/ebijun/pic/2899062) and [talkin' bout a
 revolution with soda-san](http://movapic.com/ebijun/pic/2899023) by
 tsutsui)
 
-#### `Oct 2010` - Open Source Conference 2010 Niigata ([top](#past))
+### `Oct 2010` - Open Source Conference 2010 Niigata
 
 *Oct. 23, 2010, Niigata University, Niigata, Japan*
 
@@ -1764,7 +1269,7 @@ Group](http://www.ebug.jp/) . There was a gadgets demonstration (
 [hpcsh](../ports/hpcsh/) and [FuguIta - OpenBSD LiveCD with 1seg
 tuner](http://kaw.ath.cx/openbsd/index.php?en%2FLiveCD). ).
 
-#### `Oct 2010` - EuroBSDCon 2010 ([top](#past))
+### `Oct 2010` - EuroBSDCon 2010
 
 *Oct. 8-10, 2010, Karlsruhe, Germany*
 
@@ -1774,9 +1279,9 @@ Karlsruhe, Germany. The two day conference program (October 9 - 10) was
 preceeded by a tutorial day (Oct 8).
 
 For more information please visit the website
-[http://2010.EuroBSDCon.org/](http://2010.EuroBSDCon.org/).
+[](http://2010.EuroBSDCon.org/).
 
-#### `Oct 2010` - Open Source Conference 2010 Okinawa ([top](#past))
+### `Oct 2010` - Open Source Conference 2010 Okinawa
 
 *Oct. 2, 2010, [Okinawa Convention
 Center](http://www.oki-conven.jp/en/modules/tinyd7/page/page1.html) ,
@@ -1789,7 +1294,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many gadgets
 demonstration ( [hpcarm](../ports/hpcarm/),
 [hpcmips](../ports/hpcmips/), [hpcsh](../ports/hpcsh/) ).
 
-#### `Sep 2010` - Open Source Conference 2010 Tokyo/Fall ([top](#past))
+### `Sep 2010` - Open Source Conference 2010 Tokyo/Fall
 
 *Sep. 10-11, 2010, [MEISEI
 UNIVERSITY](http://www.meisei-u.ac.jp/english/), Tokyo, Japan*
@@ -1803,7 +1308,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [NetBSD/x68k](../ports/x68k/) on [XM6i X68000
 emulator](http://www.pastel-flower.jp/~isaki/xm6i/).
 
-#### `Aug 2010` - Open Source Conference 2010 Nagoya ([top](#past))
+### `Aug 2010` - Open Source Conference 2010 Nagoya
 
 *Aug. 7, 2010, Nagoya City University, Nagoya, Japan*
 
@@ -1815,7 +1320,7 @@ Group](http://www.nagoya.bug.gr.jp/). There were gadget demonstrations (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/) ).
 
-#### `Jul 2010` - Open Source Conference 2010 Kansai ([top](#past))
+### `Jul 2010` - Open Source Conference 2010 Kansai
 
 *Jul. 9-10, 2010, Kyoto Computer Gakuin, Kyoto, Japan*
 
@@ -1827,7 +1332,7 @@ Group](http://www.kbug.gr.jp/) . There were gadgets demonstration (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/), ).
 
-#### `Jul 2010` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `Jul 2010` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *Jul 3, 2010, [The University of
 Tokyo](http://www.u-tokyo.ac.jp/campusmap/cam01_04_03_j.html), Tokyo,
@@ -1843,7 +1348,7 @@ Ryo SHIMIZU, [NetBSD goes POSIX.1-2008 and
 C1X](http://www.hi-matic.org/BOF/BOF.pdf) by tnozaki, YUREX by noztos,
 AsiaBSDCon by hrs, pkgsrc updates by obache.
 
-#### `Jun 2010` - Open Source Conference 2010 Hokkaido ([top](#past))
+### `Jun 2010` - Open Source Conference 2010 Hokkaido
 
 *Jun. 26, 2010, Sapporo Business Innovation Center, Sapporo, Japan*
 
@@ -1858,7 +1363,7 @@ VT220J, NetBSD/sparc on Sparcstation IPX, NetBSD/i386 on ThinkPad X200s
 NetBSD/evbmips-el on BBR-4MG, and many hpc{ [mips](../ports/hpcmips/),
 [sh](../ports/hpcsh/), [arm](../ports/hpcarm/),WZero3 with AM/FM Radio }
 
-#### `Jun 2010` - LinuxTag 2010 ([top](#past))
+### `Jun 2010` - LinuxTag 2010
 
 *June 9-12, 2010, Berlin, Germany*
 
@@ -1870,12 +1375,12 @@ in a shared BSD booth.
 If you are interested in helping out at the NetBSD booth or have any
 questions, please contact Thomas Kaepernick (mast\_1(at)gmx.net).
 
-#### `May 2010` - pkgsrcCon 2010 Basel, Switzerland ([top](#past))
+### `May 2010` - pkgsrcCon 2010 Basel, Switzerland
 
 *May. 28 -30, 2010, [Departement Informatik, University of
 Basel](http://www.pkgsrc.org/pkgsrcCon/2010/), Basel, Switzerland*
 
-#### `May 2010` - Open Source Conference 2010 Sendai ([top](#past))
+### `May 2010` - Open Source Conference 2010 Sendai
 
 *May. 22, 2010, [Tohoku Computer
 College](http://www.jc-21.ac.jp/map/index.shtml), Sendai, Japan*
@@ -1887,14 +1392,14 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/), [arm and
 WZero3(WS011SH)](../ports/hpcarm/) } gadgets demonstration.
 
-#### `May 2010` - Rencontres Bretonnes du Logiciel Libre in Rennes ([top](#past))
+### `May 2010` - Rencontres Bretonnes du Logiciel Libre in Rennes
 
 *May 15-16, 2010, Rennes, France.*
 
 NetBSD was present for the 2nd time at the [Rencontres Bretonnes du
 Logiciel Libre](http://www.rbll.info)
 
-#### `May 2010` - BSDCan 2010 ([top](#past))
+### `May 2010` - BSDCan 2010
 
 *May 13-14, 2010, Ottawa, Canada.*
 
@@ -1902,7 +1407,7 @@ Logiciel Libre](http://www.rbll.info)
 University of Ottawa, and was preceded by two days of tutorials on 11-12
 May 2010.
 
-#### `Mar 2010` - AsiaBSDCon 2010 ([top](#past))
+### `Mar 2010` - AsiaBSDCon 2010
 
 *Mar 11-14, 2010, Tokyo University of Science,Tokyo, Japan*
 
@@ -1916,7 +1421,7 @@ open source community are shared with the widest possible audience.
 
 A NetBSD BOF was held on March 12, 2010 14:00-16:30
 
-#### `Mar 2010` - Open Source Conference 2010 Kansai@Kobe ([top](#past))
+### `Mar 2010` - Open Source Conference 2010 Kansai@Kobe
 
 *Mar. 13, 2010, [Kobe Industrial Promotion
 Center](http://www.kobe-ipc.or.jp/access/), Kobe, Japan*
@@ -1930,7 +1435,7 @@ TT030](http://www.ceres.dti.ne.jp/tsutsui/smc_tt/SMC_TT-OSC2010Kobe.gif))
 , cobalt, many hpc{ [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Feb 2010` - Open Source Conference 2010 Tokyo/Spring ([top](#past))
+### `Feb 2010` - Open Source Conference 2010 Tokyo/Spring
 
 *Feb. 26-27, 2010, [MEISEI
 UNIVERSITY](http://www.meisei-u.ac.jp/english/), Tokyo, Japan*
@@ -1942,7 +1447,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with tadpole(sparc) and
 many hpc{ [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Feb 2010` - Hackathon, February 2010 ([top](#past))
+### `Feb 2010` - Hackathon, February 2010
 
 *Feb. 19-22, 2010,
 [Hackathon](http://www.NetBSD.org/community/hackathon.html)*
@@ -1951,7 +1456,7 @@ The [February 2010
 Hackathon](http://www.NetBSD.org/community/hackathon.html) was focusing
 on closing as many bugs and PRs as possible.
 
-#### `Feb 2010` - FOSDEM 2010 Brussels, Belgium ([top](#past))
+### `Feb 2010` - FOSDEM 2010 Brussels, Belgium
 
 *Feb. 6-7, 2010, [FOSDEM](http://www.fosdem.org/2010/), Brussels,
 Belgium*
@@ -1964,7 +1469,7 @@ License Matters: BSD as the Foundation for Commercial Point of Sale
 Applications](http://www.fosdem.org/2010/schedule/events/bsd_license) in
 the [BSD devroom](http://www.fosdem.org/2010/schedule/tracks/bsd).
 
-#### `Jan 2010` - Open Source Conference 2010 Oita ([top](#past))
+### `Jan 2010` - Open Source Conference 2010 Oita
 
 *Jan. 23, 2010, [i-ness](http://www.pref.oita.jp/13040/index.html),
 Oita, Japan*
@@ -1976,7 +1481,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstrations.
 
-#### `Dec 2009` - Open Source Conference 2009 Fukuoka ([top](#past))
+### `Dec 2009` - Open Source Conference 2009 Fukuoka
 
 *Dec. 5, 2009, [Kyushu Sangyo
 University](http://www.kyusan-u.ac.jp/E/index.html), Fukuoka, Japan*
@@ -1988,7 +1493,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Nov 2009` - Open Source Conference 2009 Kochi ([top](#past))
+### `Nov 2009` - Open Source Conference 2009 Kochi
 
 *Nov. 14, 2009, [Kochi City Culture-Plaze
 Cul-Port.](http://www.bunkaplaza.or.jp/access/index.html), Kochi, Japan*
@@ -2000,7 +1505,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with
 [hpcmips](../ports/hpcmips/), [hpcsh](../ports/hpcsh/), gadgets
 demonstration.
 
-#### `Nov 2009` - OpenRheinRuhr 2009 ([top](#past))
+### `Nov 2009` - OpenRheinRuhr 2009
 
 *Nov. 7-8, 2009, Saalbau, Bottrop, Germany*
 
@@ -2009,9 +1514,9 @@ impressive list of exhibitors. NetBSD had a booth as well as the other
 major BSDs.
 
 For more information about OpenRheinRuhr visit the website
-[http://www.openrheinruhr.de/](http://www.openrheinruhr.de/) .
+[](http://www.openrheinruhr.de/) .
 
-#### `Nov 2009` - Kansai OpenSource 2009 ([top](#past))
+### `Nov 2009` - Kansai OpenSource 2009
 
 *Nov. 6-7, 2009, [Asia and Pacific Trade Center ITC
 Building](http://www.atc-co.com/), Osaka, Japan*
@@ -2027,7 +1532,7 @@ Station(sandpoint), MacLC475upgrade(mac68k),
 [hpcarm](../ports/hpcarm/), BSD daemon statue gadgets demonstration and
 BSDBOF (EuroBSDCon2009 report by msaitoh).
 
-#### `Oct 2009` - Open Source Conference 2009 Tokyo/Fall ([top](#past))
+### `Oct 2009` - Open Source Conference 2009 Tokyo/Fall
 
 *Oct. 30-31, 2009, [Nihon Kogakuin College 12th
 build.](http://www.neec.ac.jp/access/kmt.html), Tokyo, Japan*
@@ -2043,7 +1548,7 @@ NetBSD](http://www.naobsd.org/udl/) on
 [hpcarm](../ports/hpcarm/), [tadpole GX3:sparc](../ports/sparc/) gadgets
 demonstration and BSD BOF.
 
-#### `Sep 2009` - Open Source Conference 2009 Okinawa ([top](#past))
+### `Sep 2009` - Open Source Conference 2009 Okinawa
 
 *Sep. 26, 2009, [Okinawa Convention
 Center](http://www.oki-conven.jp/en/modules/tinyd7/page/page1.html) ,
@@ -2056,7 +1561,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) . There was gadgets
 demonstration ( [hpcarm](../ports/hpcarm/),
 [hpcmips](../ports/hpcmips/), [hpcsh](../ports/hpcsh/) ).
 
-#### `Sep 2009` - EuroBSDCon 2009 ([top](#past))
+### `Sep 2009` - EuroBSDCon 2009
 
 *Sep. 18-20, 2009, University of Cambridge, England..*
 
@@ -2066,9 +1571,9 @@ at the University of Cambridge, England. One day of Tutorials preceded
 the conference on Sept 18th.
 
 For more information about EuroBSDCon 2009 visit the website
-[http://2009.EuroBSDCon.org/](http://2009.EuroBSDCon.org/).
+[](http://2009.EuroBSDCon.org/).
 
-#### `Aug 2009` - Open Source Conference 2009 Nagoya ([top](#past))
+### `Aug 2009` - Open Source Conference 2009 Nagoya
 
 *Aug. 22, 2009, Nagoya City University, Nagoya, Japan*
 
@@ -2080,7 +1585,7 @@ Group](http://www.nagoya.bug.gr.jp/). There were gadget demonstrations (
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/) ).
 
-#### `Aug 2009` - Open Source Conference 2009 Niigata ([top](#past))
+### `Aug 2009` - Open Source Conference 2009 Niigata
 
 *Aug. 1, 2009, Niigata University of International and Information
 Studies, Niigata, Japan*
@@ -2094,7 +1599,7 @@ Group](http://www.ebug.jp/) . There was gadgets demonstration (
 [hpcsh](../ports/hpcsh/) and [FuguIta - OpenBSD LiveCD with 1seg
 tuner](http://kaw.ath.cx/openbsd/index.php?en%2FLiveCD). ).
 
-#### `Jul 2009` - Open Source Conference 2009 Kansai ([top](#past))
+### `Jul 2009` - Open Source Conference 2009 Kansai
 
 *Jul. 10-11, 2009, Kyoto Computer Gakuin, Kyoto, Japan*
 
@@ -2116,7 +1621,7 @@ PReP](../ports/prep/), CPU Load average x 16 LED Meterboard with
 libFT245, bc benchmark time x electricity consumption = energy
 efficiency graph with all BSD machines. ).
 
-#### `Jul 2009` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `Jul 2009` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *Jul 4, 2009, [The University of
 Tokyo](http://www.u-tokyo.ac.jp/campusmap/cam01_04_03_j.html), Tokyo,
@@ -2131,7 +1636,7 @@ AsiaBSDCon reports, eXecute In Place (XIP), gumstix, IA64 , SheevaPlug,
 USB Wireless LAN drivers, NetBSD - Now, 6.0 and Future, PGP key sign
 party.
 
-#### `Jul 2009` - Open Source World 2009 ([top](#past))
+### `Jul 2009` - Open Source World 2009
 
 *Jul. 1-2, 2009, Tokyo International Forum, Tokyo, Japan*
 
@@ -2142,7 +1647,7 @@ consumption demonstration ( [hpcarm](../ports/hpcarm/),
 [hpcmips](../ports/hpcmips/), [hpcsh](../ports/hpcsh/) ) and [tadpole
 GX3:sparc](../ports/sparc/).
 
-#### `Jun 2009` - LinuxTag 2009 ([top](#past))
+### `Jun 2009` - LinuxTag 2009
 
 *June 24-27 2009, Berlin, Germany*
 
@@ -2151,7 +1656,7 @@ took place from 24th until 27th of June 2009 at the Berlin fairground
 under the radio tower. NetBSD was sharing a booth with the other BSD
 systems at the exhibition.
 
-#### `Jun 2009` - Open Source Conference 2009 Hokkaido ([top](#past))
+### `Jun 2009` - Open Source Conference 2009 Hokkaido
 
 *Jun. 20, 2009, Sapporo Business Innovation Center, Sapporo, Japan*
 
@@ -2168,7 +1673,7 @@ VT-220J, [NetBSD/sparc on SparcStation Classic](../ports/sparc/),
 [NetBSD/evbarm on BeagleBoard (working in progress,not boot
 yet)](../ports/evbarm/).
 
-#### `May 2009` - Open Source Conference 2009 Shimane ([top](#past))
+### `May 2009` - Open Source Conference 2009 Shimane
 
 *May 16, 2009, [MATSUE
 TERRSA](http://www.sanbg.com/terrsa/e/index.html), Shimane, Japan*
@@ -2182,7 +1687,7 @@ demonstrations ( [SONY VAIO type P](../ports/i386/),
 [hpcarm](../ports/hpcarm/), [hpcmips](../ports/hpcmips/),
 [hpcsh](../ports/hpcsh/) ).
 
-#### `May 2009` - BSDCan 2009 ([top](#past))
+### `May 2009` - BSDCan 2009
 
 *May 8-9, 2009, Ottawa, Canada.*
 
@@ -2190,7 +1695,7 @@ demonstrations ( [SONY VAIO type P](../ports/i386/),
 University of Ottawa, and was preceded by two days of tutorials on 6-7
 May 2009.
 
-#### `Mar 2009` - CeBIT 2009 ([top](#past))
+### `Mar 2009` - CeBIT 2009
 
 *March 3-8, 2009, Hannover, Germany*
 
@@ -2198,7 +1703,7 @@ The NetBSD project had a joint booth with the FreeBSD project at
 [CeBIT](http://www.cebit.de/), the large b2b trade fair held in
 Hannover, Germany.
 
-#### `Mar 2009` - AsiaBSDCon 2009 ([top](#past))
+### `Mar 2009` - AsiaBSDCon 2009
 
 *Mar 12-15, 2009, Tokyo University of Science,Tokyo, Japan*
 
@@ -2218,16 +1723,16 @@ was held on Mar 13,2009 17:30-19:00. [AsiaBSDCon 2009
 papers](http://2009.asiabsdcon.org/live/) and
 [presentations](http://www.youtube.com/bsdconferences) are available.
 
-#### `Feb 2009` - Southern California Linux Expo ([top](#past))
+### `Feb 2009` - Southern California Linux Expo
 
 *Feb 20-22, 2009, Los Angeles, CA*
 
-The NetBSD project was represented by Kevin Lahey and David Maxwell at
-[SCALE 7x](http://www.socallinuxexpo.org/), the 7th annual Southern
-California Linux Expo, which took place February 20-22, 2009 at The
-Westin Los Angeles Airport, Los Angeles, California.
+The NetBSD project was represented by A.KML and A.DAVID at [SCALE
+7x](http://www.socallinuxexpo.org/), the 7th annual Southern California
+Linux Expo, which took place February 20-22, 2009 at The Westin Los
+Angeles Airport, Los Angeles, California.
 
-#### `Feb 2009` - Open Source Conference 2009 Tokyo/Spring ([top](#past))
+### `Feb 2009` - Open Source Conference 2009 Tokyo/Spring
 
 *Feb. 20-21, 2009, [Japan Electronics
 College](http://www.jec.ac.jp/access/), Tokyo, Japan*
@@ -2240,20 +1745,19 @@ P](http://www.vaio.sony.co.jp/Products/P1/) with NetBSD, [tadpole
 GX3:sparc](../ports/sparc/) and many hpc{ [mips](../ports/hpcmips/),
 [sh](../ports/hpcsh/), [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Feb 2009` - FOSDEM 2009 ([top](#past))
+### `Feb 2009` - FOSDEM 2009
 
 NetBSD was present at FOSDEM on Feb 7-8 2009 in Brussels, Belgium.
 FOSDEM is a free and non-commercial event organised by the community for
 the community.
 
-#### `Feb 2009` - DCBSDCon 2009 ([top](#past))
+### `Feb 2009` - DCBSDCon 2009
 
 *Feb. 5-6, 2009, Washington, D.C.*
 
-For information, visit
-[http://www.dcbsdcon.org/](http://www.dcbsdcon.org/).
+For information, visit [](http://www.dcbsdcon.org/).
 
-#### `Jan 2009` - Open Source Conference 2009 Sendai ([top](#past))
+### `Jan 2009` - Open Source Conference 2009 Sendai
 
 *Jan. 24, 2009, [Tohoku Computer
 College](http://www.jc-21.ac.jp/map/index.shtml), Sendai, Japan*
@@ -2265,7 +1769,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Dec 2008` - Open Source Conference 2008 Fukuoka ([top](#past))
+### `Dec 2008` - Open Source Conference 2008 Fukuoka
 
 *Dec. 13, 2008, [Humanities and Social Sciences Center,Fukuoka
 University](http://www.fukuoka-u.ac.jp/unv_gide/access/cmps_map1.html),
@@ -2278,7 +1782,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets and USB Camera demonstration.
 
-#### `Nov 2008` - Open Source Conference 2008 Okinawa ([top](#past))
+### `Nov 2008` - Open Source Conference 2008 Okinawa
 
 *Nov. 29, 2008, [Okinawa Industory Support
 Center](http://www.okinawa-sangyoushien.co.jp/), Okinawa, Japan*
@@ -2290,14 +1794,13 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Nov 2008` - meetBSD California '08 ([top](#past))
+### `Nov 2008` - meetBSD California '08
 
 *Nov. 15-16, 2008, Mountain View, California*
 
-For information, visit
-[http://www.meetbsd.com/](http://www.meetbsd.com/).
+For information, visit [](http://www.meetbsd.com/).
 
-#### `Nov 2008` - Kansai OpenSource 2008 ([top](#past))
+### `Nov 2008` - Kansai OpenSource 2008
 
 *Nov. 7-8, 2008, [Asia and Pacific Trade Center ITC
 Building](http://www.atc-co.com/), Osaka, Japan*
@@ -2315,7 +1818,7 @@ GX3:sparc](../ports/sparc/), [Linkstation:sandpoint](../ports/evbarm/),
 control via USB audio](http://rogiken.org/daemon/works.html) gadgets
 demonstration and BSDBOF.
 
-#### `Oct 2008` - EuroBSDCon 2008 ([top](#past))
+### `Oct 2008` - EuroBSDCon 2008
 
 *Oct. 18-19, 2008, Strasbourg, France*
 
@@ -2325,9 +1828,9 @@ and with 4.4BSD based operating systems, was held on October 18-19th
 preceded the conference on Oct. 16-17th.
 
 For more information about EuroBSDCon 2008 visit the website
-[http://2008.EuroBSDCon.org/](http://2008.EuroBSDCon.org/).
+[](http://2008.EuroBSDCon.org/).
 
-#### `Oct 2008` - NetBSD developers summit @ NYCBSDCon 2008 ([top](#past))
+### `Oct 2008` - NetBSD developers summit @ NYCBSDCon 2008
 
 *Oct 10, 2008, Columbia University, NY, NY, USA*
 
@@ -2336,7 +1839,7 @@ event was sponsored by and leads up to that year's NYCBSDCon and took
 place at Columbia University on the island of Manhattan in New York
 City, NY, USA. The event was *open to the public*.
 
-#### `Oct 2008` - NYCBSDCon 2008 ([top](#past))
+### `Oct 2008` - NYCBSDCon 2008
 
 *Oct 11-12, 2008, Columbia University, NY, NY, USA*
 
@@ -2345,11 +1848,11 @@ Group](http://www.nycbug.org) took place in New York City on October
 11th and 12th, 2008.
 
 More information about NYCBSDCon 2008 is available at
-[http://www.nycbsdcon.org/2008/](http://www.nycbsdcon.org/2008/).
+[](http://www.nycbsdcon.org/2008/).
 
 Coinciding with the conference was the 12th NetBSD Hackathon being held.
 
-#### `Oct 2008` - Open Source Conference 2008 Tokyo/Fall ([top](#past))
+### `Oct 2008` - Open Source Conference 2008 Tokyo/Fall
 
 *Oct. 3-4, 2008, [Ota City Industrial
 Plaza](http://www.pio-ota.jp/english/access.html), Tokyo, Japan*
@@ -2366,7 +1869,7 @@ Hiroshima](http://www.wide.ad.jp/news/press/20080804-IETF-e.html),
 [Itojun Service
 Award](http://www.wide.ad.jp/news/press/20080912-itojun-fund-j.html) ).
 
-#### `Sep 2008` - Open Source Conference 2008 in Shimane ([top](#past))
+### `Sep 2008` - Open Source Conference 2008 in Shimane
 
 *Sep. 12-13, 2008, [MATSUE
 TERRSA](http://www.sanbg.com/terrsa/e/index.html), Shimane, Japan*
@@ -2383,7 +1886,7 @@ demonstrations ( [dynabook/SS:amd64](../ports/amd64/),
 [LaVie/G:OpenSolaris](http://www.solaris.com/), and
 [chumby](http://www.chumby.com/) ).
 
-#### `Aug 2008` - Open Source Conference 2008 in Nagoya ([top](#past))
+### `Aug 2008` - Open Source Conference 2008 in Nagoya
 
 *Aug. 9, 2008, Nagoya City University, Nagoya, Japan*
 
@@ -2398,7 +1901,7 @@ Group](http://www.nagoya.bug.gr.jp/). There were gadget demonstrations (
 [OpenBSD/zaurus](http://www.openbsd.org/zaurus.html), [Speecys Robot:
 NetBSD/sh3](http://www.speecys.com/), [samtk](http://www.samtk.org/) ).
 
-#### `Jul 2008` - Open Source Conference 2008 in Kansai ([top](#past))
+### `Jul 2008` - Open Source Conference 2008 in Kansai
 
 *Jul. 18-19, 2008, Kyoto Computer Gakuin, Kyoto, Japan*
 
@@ -2414,7 +1917,7 @@ USB, BeBox, Squeak on hpcmips, OneSeg TV recording with hpcmips, bc
 benchmark time x electricity consumption = energy efficiency graph with
 all BSD machines.
 
-#### `Jul 2008` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `Jul 2008` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *Jul 5, 2008, [The University of
 Tokyo](http://www.u-tokyo.ac.jp/campusmap/cam01_04_03_j.html), Tokyo,
@@ -2426,7 +1929,7 @@ Open Robot Operation And Design Specification, AsiaBSDCon2009, pkgsrc
 update, KURO-BOX/PRO MB88F5182, Toolchain and "mknative", EeePC, NetBSD
 - Now, 5.0 and Future, PGP key sign party.
 
-#### `Jun 2008` - Open Source Conference 2008 in Hokkaido ([top](#past))
+### `Jun 2008` - Open Source Conference 2008 in Hokkaido
 
 *Jun. 28, 2008, Sapporo Business Innovation Center, Sapporo, Japan*
 
@@ -2438,7 +1941,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [arm](../ports/hpcarm/) } gadgets demonstration, VT-220J, USL-5P with 3
 one-seg TV tuners, NetBSD/BBR-4MG .
 
-#### `Jun 2008` - pkgsrcCon 2008 ([top](#past))
+### `Jun 2008` - pkgsrcCon 2008
 
 *Jun 13-15, 2008, Technical University of Berlin*
 
@@ -2450,9 +1953,9 @@ on existing technologies, research projects, and works-in-progress in
 pkgsrc infrastructure.
 
 More information about pkgsrcCon 2008 is available at
-[http://www.pkgsrccon.org/2008/](http://www.pkgsrccon.org/2008/).
+[](http://www.pkgsrccon.org/2008/).
 
-#### `May 2008` - BSDCan 2008 ([top](#past))
+### `May 2008` - BSDCan 2008
 
 *May 16-17, 2008, University of Ottawa, Canada*
 
@@ -2462,17 +1965,17 @@ have found a formula that appeals to a wide range of people from extreme
 novices to advanced developers.
 
 For more information about BSDCan 2008 visit
-[http://www.BSDCan.org/2008/](http://www.BSDCan.org/2008/).
+[](http://www.BSDCan.org/2008/).
 
-#### `Apr 2008` - BSDCon Barcelona 2008 ([top](#past))
+### `Apr 2008` - BSDCon Barcelona 2008
 
-*Apr 19-20, 2008, Universitat Polit�cnica de Catalunya, Barcelona,
+*Apr 19-20, 2008, Universitat Politècnica de Catalunya, Barcelona,
 Spain*
 
 For more information about BSDCon Barcelona '08 visit
-[http://bcn.bsdcon.net/](http://bcn.bsdcon.net/).
+[](http://bcn.bsdcon.net/).
 
-#### `Apr 2008` - Open Source Conference 2008 Nagaoka ([top](#past))
+### `Apr 2008` - Open Source Conference 2008 Nagaoka
 
 *Apr. 12, 2008, [Nagaoka University of
 Technology.](http://www.nagaokaut.ac.jp/j/), Niigata, Japan*
@@ -2485,7 +1988,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [arm](../ports/hpcarm/) } gadgets demonstration, NetBSD/Playstation3,
 USB OneSeg TV tuner (DUS-01).
 
-#### `Mar 2008` - Fr�hjahrsfachgespr�ch (FFG) of the German Unix User Group ([top](#past))
+### `Mar 2008` - Frühjahrsfachgespräch (FFG) of the German Unix User Group
 
 *March 11-14, 2008, University of Munich, Germany*
 
@@ -2493,9 +1996,9 @@ The FFG is an annual meeting for professional users of Unix, networking
 technologies and IT security.
 
 For more information about FFG 2008 visit
-[http://www.guug.de/veranstaltungen/ffg2008/](http://www.guug.de/veranstaltungen/ffg2008/)
+[](http://www.guug.de/veranstaltungen/ffg2008/)
 
-#### `Mar 2008` - AsiaBSDCon 2008 ([top](#past))
+### `Mar 2008` - AsiaBSDCon 2008
 
 *Mar 27-30, 2008, Tokyo, Japan*
 
@@ -2524,7 +2027,7 @@ puffs](http://2008.asiabsdcon.org/timetable.html#P4B), Kristaps
 Džonsons: [Logical Resource Isolation in the NetBSD
 Kernel](http://2008.asiabsdcon.org/timetable.html#P5A) [detail:
 [mult](http://mult.bsd.lv/)] , Alistair Crooks: [A Portable iSCSI
-Initiator](http://2008.asiabsdcon.org/timetable.html#P6A), J�rg
+Initiator](http://2008.asiabsdcon.org/timetable.html#P6A), Jörg
 Sonnenberger and Jared D.McNeill: [Sleeping Beauty - NetBSD on Modern
 Laptops](http://2008.asiabsdcon.org/timetable.html#P9A)
 [[Presentation](./presentations/)] .
@@ -2532,8 +2035,7 @@ Laptops](http://2008.asiabsdcon.org/timetable.html#P9A)
 Mini Talk: M.Warner Losh: FreeBSD/mips, Alistair Crooks: Three roadmaps
 for NetBSD development through 5.0 and 6.0 - this will cover storage,
 networking and virtualisation.
-
-#### `Feb 2008` - Open Source Conference 2008 Tokyo/Spring ([top](#past))
+### `Feb 2008` - Open Source Conference 2008 Tokyo/Spring
 
 *Feb. 29-Mar. 1, 2008, [Japan Electronics
 College.](http://www.jec.ac.jp/college/access.html), Tokyo, Japan*
@@ -2547,25 +2049,25 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 EeePC](../ports/i386/netbook.html) } gadgets demonstration and
 [Speecys](http://www.speecys.com/) Robots.
 
-#### `Feb 2008` - FOSDEM 2008 ([top](#past))
+### `Feb 2008` - FOSDEM 2008
 
 *Feb 23-24, 2008, Brussels, Belgium*
 
 NetBSD has had a booth at the FOSDEM on Feb 23-24 2008 in Brussels,
 Belgium. FOSDEM is a free and non-commercial event organised by the
 community for the community. The NetBSD booth was manned by Thomas
-Reisky `<doppelhertz@bsdgroup.de>`{.email}.
+Reisky <doppelhertz@bsdgroup.de>.
 
-#### `Feb 2008` - SCALE 6x ([top](#past))
+### `Feb 2008` - SCALE 6x
 
 *Feb. 9-10, 2007, Los Angeles, USA*
 
-The NetBSD project was represented by Kevin Lahey and David Maxwell at
-[SCALE 6x](http://www.socallinuxexpo.org/), the 6th annual Southern
-California Linux Expo, which took place February 9-10, 2008 at The
-Westin Los Angeles Airport, Los Angeles, California.
+The NetBSD project was represented by A.KML and A.DAVID at [SCALE
+6x](http://www.socallinuxexpo.org/), the 6th annual Southern California
+Linux Expo, which took place February 9-10, 2008 at The Westin Los
+Angeles Airport, Los Angeles, California.
 
-#### `Dec 2007` - Open Source Conference 2007 Fukuoka ([top](#past))
+### `Dec 2007` - Open Source Conference 2007 Fukuoka
 
 *Dec. 8, 2007, [ASC BUILD.](http://www.kma.ne.jp/asc/), Fukuoka, Japan*
 
@@ -2576,7 +2078,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Nov 2007` - Open Source Conference 2007 Okinawa ([top](#past))
+### `Nov 2007` - Open Source Conference 2007 Okinawa
 
 *Nov. 17, 2007, [Okiden Fureai
 Hall](http://www.okiden.co.jp/corporate/branch/naha.html), Okinawa,
@@ -2589,7 +2091,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### Nov 2007 - come2linux: Linux-days Essen 2007 ([top](#past))
+### Nov 2007 - come2linux: Linux-days Essen 2007
 
 *November 10-11th 2007, University of Duisburg-Essen, Essen, Germany*
 
@@ -2597,7 +2099,7 @@ NetBSD was present at *come2linux*, the Linux-days Essen 2007. There was
 a joint BSD booth, the NetBSD part was manned by Stefan Klose, Julian
 Suschlik and Karsten Kruse.
 
-#### `Nov 2007` - Kansai OpenSource 2007 ([top](#past))
+### `Nov 2007` - Kansai OpenSource 2007
 
 *Nov. 9-10, 2007, [Asia and Pacific Trade Center ITC
 Building](http://www.atc-co.com/), Osaka, Japan*
@@ -2610,7 +2112,7 @@ realtime control via USB audio](http://rogiken.org/daemon/works.html),
 [Zaurus C3200](../ports/zaurus/), many hpc{ [mips](../ports/hpcmips/),
 [sh](../ports/hpcsh/), [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Oct 2007` - Open Source Conference 2007 Niigata ([top](#past))
+### `Oct 2007` - Open Source Conference 2007 Niigata
 
 *Oct. 27, 2007, [NIIGATA TERRSA](http://www.n-terrsa.jp/access/),
 Niigata, Japan*
@@ -2622,14 +2124,14 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Oct 2007` - Systems Munich ([top](#past))
+### `Oct 2007` - Systems Munich
 
 NetBSD was present at the Open Source Pavillon (hall B2, booth 110-2) at
 the [Systems](http://www.systems-world.de/) Computer Fair in Munich,
 Germany, from October 23rd to 26th. The booth is sponsored and organized
 by [Computer- und Literaturverlag](http://www.cul.de/).
 
-#### `Oct 2007` - First Turkish Conference on BSD Systems ([top](#past))
+### `Oct 2007` - First Turkish Conference on BSD Systems
 
 *Oct. 19-20, 2007, Sultanahmet Campus Marmara University, Istanbul,
 Turkey*
@@ -2639,10 +2141,9 @@ conference was organized in full cooperation with EnderUNIX Software
 Development team, which is largely known as its ongoing support for BSD
 systems in Turkey, and its open source projects and Marmara University.
 
-More information on BSDConTR at
-[http://www.bsdcontr.org/](http://www.bsdcontr.org/)
+More information on BSDConTR at [](http://www.bsdcontr.org/)
 
-#### `Oct 2007` - Brandenburger Linux-Infotag ([top](#past))
+### `Oct 2007` - Brandenburger Linux-Infotag
 
 The Brandenburg Linux-Infotag was held on Oct 20th 2007 at the FH
 Brandenburg, Germany. The NetBSD project was represented with an own
@@ -2650,7 +2151,7 @@ booth, and Stefan Schumacher was there to answer questions. For more
 information, see the [event's
 homepage](http://www.linuxinfotag-brb.de/).
 
-#### `Oct 2007` - Open Source Conference 2007 Tokyo/Fall ([top](#past))
+### `Oct 2007` - Open Source Conference 2007 Tokyo/Fall
 
 *Oct. 5-6, 2007, [Ota City Industrial
 Plaza](http://www.pio-ota.jp/english/access.html), Tokyo, Japan*
@@ -2665,7 +2166,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with
 Presentation by
 itojun](http://www.itojun.org/paper/itojun-200710-ospn-tokyo/mgp00001.html).
 
-#### `Sep 2007` - EuroBSDCon 2007 ([top](#past))
+### `Sep 2007` - EuroBSDCon 2007
 
 *Sep. 14-15, 2007, Copenhagen, Denmark*
 
@@ -2674,16 +2175,16 @@ September 14-15th 2007 at Symbion Science Park in Copenhagen, Denmark.
 Two days of Tutorials preceeded the Conference on Sep 12-13th.
 
 For more information about EuroBSDCon 2007 visit the website
-[http://2007.EuroBSDCon.org/](http://2007.EuroBSDCon.org/).
+[](http://2007.EuroBSDCon.org/).
 
-#### Aug 2007 - Chaos Communications Camp 2007 ([top](#past))
+### Aug 2007 - Chaos Communications Camp 2007
 
 The Chaos Communications Camp is the summer event of the Chaos Computer
 Club. It was held from August 8th to 12th at the Airport Museum
 Finowfurt near Berlin, Germany. See the event's
 [homepage](http://events.ccc.de/camp/2007/) for more information.
 
-#### `Jul 2007` - Open Source Conference 2007 in Kansai ([top](#past))
+### `Jul 2007` - Open Source Conference 2007 in Kansai
 
 *Jul. 20-21, 2007, Kyoto Computer Gakuin, Kyoto, Japan*
 
@@ -2710,7 +2211,7 @@ Java](http://www.yagoto-urayama.jp/~oshimaya/netbsd/netbsd-java/index.html)
 photos](http://www.nagoya.bug.gr.jp/2007/osc2007-kansai/index.html) is
 available.
 
-#### Jul 2007 - Chaos Singularity (CoSin) 2007 ([top](#past))
+### Jul 2007 - Chaos Singularity (CoSin) 2007
 
 *Jul. 6-8, 2007, Bremgarten AG, Switzerland*
 
@@ -2725,7 +2226,7 @@ report was posted to the
 [regional-de](http://mail-index.NetBSD.org/regional-de/2007/07/09/0000.html)
 mailing list.
 
-#### `Jul 2007` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `Jul 2007` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *Jul 7, 2007, [The University of
 Tokyo](http://www.t.u-tokyo.ac.jp/epage/public/map/e25-j.html), Tokyo,
@@ -2742,7 +2243,7 @@ net80211 and Atheros, pkgsrc,
 automake to BSD make converter, NetBSD - Now, 4.0 and Future, PGP key
 sign party.
 
-#### `Jun 2007` - Open Source Conference 2007 in Hokkaido ([top](#past))
+### `Jun 2007` - Open Source Conference 2007 in Hokkaido
 
 *Jun. 30, 2007, Hokkaido University, Sapporo, Japan*
 
@@ -2754,7 +2255,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [arm](../ports/hpcarm/) } gadgets demonstration, Internet Radio Player
 on USL-5P, NetBSD/Armadillo-9.
 
-#### May 2007 - Linuxtag Berlin ([top](#past))
+### May 2007 - Linuxtag Berlin
 
 LinuxTag 2007 opened its doors from May 30 to June 2, 2007 at the Berlin
 Expo Center under the Funkturm in Berlin, Germany. The event featured
@@ -2769,7 +2270,7 @@ BSD talks included Hubert Feyrer's NetBSD status report.
 See the [Linuxtag homepage](http://www.linuxtag.org/2007/) for more
 information.
 
-#### `May 2007` - BSDCan 2007 ([top](#past))
+### `May 2007` - BSDCan 2007
 
 *May 18-19, 2007, Ottawa, Canada*
 
@@ -2783,9 +2284,9 @@ That year, BSDCan 2007 was held on 18-19 May 2007 at University of
 Ottawa, and was preceded by two days of Tutorials on 16-17 May 2007.
 
 For more information about BSDCan 2007 visit
-[http://www.BSDCan.org/2007/](http://www.BSDCan.org/2007/).
+[](http://www.BSDCan.org/2007/).
 
-#### `Apr 2007` - pkgsrcCon 2007 ([top](#past))
+### `Apr 2007` - pkgsrcCon 2007
 
 *Apr. 27-29, 2007, Barcelona, Spain*
 
@@ -2798,9 +2299,9 @@ pkgsrc infrastructure. Developers, contributors, and users are all
 welcome to attend.
 
 More information about pkgsrcCon 2007 is available at
-[http://www.pkgsrccon.org/2007/](http://www.pkgsrccon.org/2007/).
+[](http://www.pkgsrccon.org/2007/).
 
-#### `Mar 2007` - Linux-Infotag Augsburg ([top](#past))
+### `Mar 2007` - Linux-Infotag Augsburg
 
 *Mar 24, 2007, Augsburg, Germany*
 
@@ -2813,7 +2314,7 @@ homepage](http://www.luga.de/Aktionen/LIT-2007/) for more information.
 P.S.: A report is available in [this
 mail](http://mail-index.NetBSD.org/netbsd-advocacy/2007/03/26/0000.html).
 
-#### `Mar 2007` - Open Source Conference 2007 Tokyo/Spring ([top](#past))
+### `Mar 2007` - Open Source Conference 2007 Tokyo/Spring
 
 *Mar. 16-17, 2007, Tokyo, Japan*
 
@@ -2825,7 +2326,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [arm](../ports/hpcarm/) } gadgets demonstration and
 [Speecys](http://www.speecys.com/) Robots.
 
-#### `Mar 2007` - AsiaBSDCon 2007 ([top](#past))
+### `Mar 2007` - AsiaBSDCon 2007
 
 *Mar. 8-11, 2007, Tokyo, Japan*
 
@@ -2839,42 +2340,40 @@ widest possible audience.
 
 Please contact secretary@asiabsdcon.org if you have any questions. The
 AsiaBSDCon 2007 timetable is available at
-[http://2007.asiabsdcon.org/timetable.html](http://2007.asiabsdcon.org/timetable.html).
+[](http://2007.asiabsdcon.org/timetable.html).
 
-#### `Mar 2007` - Chemnitzer Linux-Tage ([top](#past))
+### `Mar 2007` - Chemnitzer Linux-Tage
 
 *Mar. 3-4, 2007, Chemnitz*
 
 NetBSD will have a booth and related talks at the Chemnitzer Linux-Tage
 (linux days) in Chemnitz, Germany. See
-[http://chemnitzer.linux-tage.de/2007/](http://chemnitzer.linux-tage.de/2007/)
-for more information. If you want to help out manning the booth, please
-contact Hubert Feyrer `<hubertf@NetBSD.org>`{.email} for further
-details.
+[](http://chemnitzer.linux-tage.de/2007/) for more information. If you
+want to help out manning the booth, please contact Hubert Feyrer
+<hubertf@NetBSD.org> for further details.
 
-#### `Feb 2007` - GUUG spring talk ([top](#past))
+### `Feb 2007` - GUUG spring talk
 
 *Feb. 27-Mar. 2, 2007, Berlin, Germany*
 
 The German Unix User Group will have it's annual spring talk
-(Fr�hjahrsfachgespr�ch) in Berlin this year. It will take place February
-27-March 2, 2007, at the Freie Universit�t Berlin. There will be several
+(Frühjahrsfachgespräch) in Berlin this year. It will take place February
+27-March 2, 2007, at the Freie Universität Berlin. There will be several
 talks about Unix and Unix-related topics, and one will be held by Stefan
 Schumacher on how to secure a NetBSD system using Systrace.
 
 More information can be found at
-[http://www.guug.de/veranstaltungen/ffg2007/](http://www.guug.de/veranstaltungen/ffg2007/)
-and
-[http://www.guug.de/veranstaltungen/ffg2007/abstracts.html\#3\_7\_1](http://www.guug.de/veranstaltungen/ffg2007/abstracts.html#3_7_1).
-The German language article can be found at:
-[http://net-tex.dnsalias.org/\~stefan/nt/netbsd/systrace.html](http://net-tex.dnsalias.org/~stefan/nt/netbsd/systrace.html).
+[](http://www.guug.de/veranstaltungen/ffg2007/) and
+[](http://www.guug.de/veranstaltungen/ffg2007/abstracts.html#3_7_1). The
+German language article can be found at:
+[](http://net-tex.dnsalias.org/~stefan/nt/netbsd/systrace.html).
 
 Ignatios also
 [posted](http://mail-index.NetBSD.org/regional-de/2007/03/27/0000.html)
 his [slides (german
 language!)](http://theory.cs.uni-bonn.de/~ignatios/erlgrey-guug-ffg-2007.pdf).
 
-#### `Feb 2007` - FOSDEM 2007 ([top](#past))
+### `Feb 2007` - FOSDEM 2007
 
 *Feb 24-25, 2007, Brussels, Belgium*
 
@@ -2886,22 +2385,21 @@ There will be a joint \*BSD booth with flyers, CD's, T-shirts and other
 merchandising, and the Xen demo machine (now upgraded to NetBSD
 4.0\_BETA2 with Xen 3.x). Furthermore there are a lot of interesting
 talks, development rooms, a key signing event, etcetera. More
-information is available on
-[http://www.fosdem.org](http://www.fosdem.org).
+information is available on [](http://www.fosdem.org).
 
-#### `Feb 2007` - SCALE 5x ([top](#past))
+### `Feb 2007` - SCALE 5x
 
 *Feb. 10-11, 2007, Los Angeles, USA*
 
 [SCALE 5x](http://www.socallinuxexpo.org/), the 5th annual Southern
 California Linux Expo, took place February 10-11, 2007, at The Westin
 Los Angeles Airport, Los Angeles, California. The NetBSD Project had a
-booth at this event; see the reports by [Kevin
-Lahey](http://mail-index.NetBSD.org/netbsd-advocacy/2007/02/11/0000.html)
-and [Jan
-Schaumann](http://mail-index.NetBSD.org/netbsd-advocacy/2007/02/12/0000.html).
+booth at this event; see the reports by
+[A.KML](http://mail-index.NetBSD.org/netbsd-advocacy/2007/02/11/0000.html)
+and
+[A.JSCHAUMA](http://mail-index.NetBSD.org/netbsd-advocacy/2007/02/12/0000.html).
 
-#### `Dec 2006` - BSDCon Chile 2006 ([top](#past))
+### `Dec 2006` - BSDCon Chile 2006
 
 *December 9, 2006, Universidad Diego Portales - Santiago, Chile.*
 
@@ -2918,7 +2416,7 @@ and Solaris.
 For more information, please [visit the
 website](http://www.bsd.cl/index.php/BSDCon2006).
 
-#### `Dec 2006` - OpenSource Conference 2006 Okinawa ([top](#past))
+### `Dec 2006` - OpenSource Conference 2006 Okinawa
 
 *December 2, 2006, Okinawa Industry Support Center,Japan*
 
@@ -2929,21 +2427,20 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Nov 2006` - Hackathon ([top](#past))
+### `Nov 2006` - Hackathon
 
 NetBSD will run another hackathon, primarily dedicated to get -current
 ready for the 4.0 re-branch. See the [Hackathon
 page](../community/hackathon.html) for details.
 
-#### `Nov 2006` - LinuxDay Dornbirn, Austria ([top](#past))
+### `Nov 2006` - LinuxDay Dornbirn, Austria
 
 NetBSD will be present as part of the OpenSource community at the
 [LinuxDay in Dornbirn](http://www.linuxday.at/), Austria, on November
-18th. Please contact Raphael Langerhorst
-`<raphael@raphael.g-system.at>`{.email} if you have any questions or
-want to help out.
+18th. Please contact Raphael Langerhorst <raphael@raphael.g-system.at>
+if you have any questions or want to help out.
 
-#### `Nov 2006` - EuroBSDCon Milan ([top](#past))
+### `Nov 2006` - EuroBSDCon Milan
 
 EuroBSDCon 2006, the European BSD Conference will be held November 10th
 - 12th 2006 in Milan, Italy. The
@@ -2951,7 +2448,7 @@ EuroBSDCon 2006, the European BSD Conference will be held November 10th
 quite a bit of NetBSD-related content:
 
 -   Anders "Ragge" Magnusson: How to set an internet2 Landspeed record
--   J�rg Sonnenberger: pkg\_install
+-   Jörg Sonnenberger: pkg\_install
 -   Alistair Crooks: iSCSI - beyond the hype
 -   NetBSD Security Enhancements: Elad Efrat
 -   Emmanuel Dreyfus: What's new in NetBSD?
@@ -2963,7 +2460,7 @@ quite a bit of NetBSD-related content:
 Registration is open now. Please [see the
 website](http://www.eurobsdcon.org/) for more details!
 
-#### `Oct 2006` - NYCBSDCon 2006 ([top](#past))
+### `Oct 2006` - NYCBSDCon 2006
 
 *Oct. 28-29, 2006, New York, NY, USA*
 
@@ -2973,7 +2470,7 @@ Group](http://www.nycbug.org/) is organizing [NYCBSDCon
 [schedule](http://nycbsdcon.org/schedule) shows some speakers talking
 about NetBSD-related topics.
 
-#### `Oct 2006` - Open Source Conference 2006 Tokyo/Fall ([top](#past))
+### `Oct 2006` - Open Source Conference 2006 Tokyo/Fall
 
 *Oct. 28, 2006, Tokyo, Japan*
 
@@ -2984,37 +2481,37 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Oct 2006` - Systems Munich ([top](#past))
+### `Oct 2006` - Systems Munich
 
 NetBSD will be present at the Open Source Pavillon (hall A3, booth
 A3.542) at the [Systems](http://www.systems-world.de/) Computer Fair in
 Munich, Germany, from October 23rd to 27th. The booth is sponsored and
 organized by [Computer- und Literaturverlag](http://www.cul.de/) - if
 you want to join us in manning the booth, please contact Hubert Feyrer
-`<hubertf@NetBSD.org>`{.email}.
+<hubertf@NetBSD.org>.
 
 A report on the event is available
 [here](http://mail-index.NetBSD.org/netbsd-advocacy/2006/10/30/0001.html).
 
-#### `Sep 2006` - Ohio Linuxfest ([top](#past))
+### `Sep 2006` - Ohio Linuxfest
 
 *Sep. 30, 2006, Columbus, Ohio, USA*
 
 There will be a NetBSD booth at the 2006 [Ohio
-Linuxfest](http://www.ohiolinux.org/) Conference and Expo. Contact Jay
-Fink `<jrf@NetBSD.org>`{.email} if you have any questions or want to
-help out at the booth.
+Linuxfest](http://www.ohiolinux.org/) Conference and Expo. Contact A.JRF
+<jrf@NetBSD.org> if you have any questions or want to help out at the
+booth.
 
 A report of the event can be found
 [here](http://mail-index.NetBSD.org/netbsd-advocacy/2006/10/17/0000.html).
 
-#### `Sep 2006` - NetBSD at Linux-days Essen 2006: come2linux ([top](#past))
+### `Sep 2006` - NetBSD at Linux-days Essen 2006: come2linux
 
 NetBSD will participate in the Linux-days in Essen, dubbed "come2linux".
 There will be a joint BSD booth, the NetBSD part will be manned by
-Menuhin Saitov `<menuhin@web.de>`{.email}, feel free to contact him
-about helping out at the booth or if you have any questions. A number of
-NetBSD CDs, NetBSD t-shirts etc. will be available at the booth, too.
+Menuhin Saitov <menuhin@web.de>, feel free to contact him about helping
+out at the booth or if you have any questions. A number of NetBSD CDs,
+NetBSD t-shirts etc. will be available at the booth, too.
 
 The event takes place on September 9th and 10th 2006 at the Glaspavillon
 of the University of Duisburg-Essen. See
@@ -3024,21 +2521,21 @@ information.
 A report on the event was [posted to the regional-de mailing
 list](http://mail-index.NetBSD.org/regional-de/2006/09/16/0000.html).
 
-#### `Sep 2006` - NetBSD at Linux-kongress Nuremberg 2006 ([top](#past))
+### `Sep 2006` - NetBSD at Linux-kongress Nuremberg 2006
 
 There will be a NetBSD booth at the Linux-Kongress in Nuremberg on
 September 7th and 8th at the University of Applied Sciences
 (Fachhochschule) Nuernberg. See
 [http://www.linux-kongress.org/](http://www.linux-kongress.org/) for
 more information on the event, and contact Hubert Feyrer
-`<hubertf@NetBSD.org>`{.email} if you have any questions or want to help
-out at the booth.
+<hubertf@NetBSD.org> if you have any questions or want to help out at
+the booth.
 
-Hubert Feyrer wrote a short
+A.HUBERTF wrote a short
 [report](http://mail-index.NetBSD.org/netbsd-advocacy/2006/09/09/0000.html)
 about the event.
 
-#### `Jul 2006` - Open Source Conference 2006 in Hokkaido ([top](#past))
+### `Jul 2006` - Open Source Conference 2006 in Hokkaido
 
 *Jul. 15, 2006, Sapporo, Japan*
 
@@ -3048,7 +2545,7 @@ Users' Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Jun 2006` - Open Source Conference 2006 in Niigata ([top](#past))
+### `Jun 2006` - Open Source Conference 2006 in Niigata
 
 *Jun. 17, 2006, Niigata, Japan*
 
@@ -3059,7 +2556,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration with 150 attendances.
 
-#### `Jun 2006` - Interop 2006 Tokyo BSD BOF ([top](#past))
+### `Jun 2006` - Interop 2006 Tokyo BSD BOF
 
 *Jun 8, 2006, Makuhari-Messe, Chiba, Japan, 18:30-20:00 JST*
 
@@ -3071,20 +2568,22 @@ attendances. BOF03. Room 201.
 -   Asia BSD Con 2007 Call for Participation , George Neville-Neil /
     FreeBSD Project
 -   FreeBSD: Suspend and Resume Circumstances, for Panasonic Let's Note
-    CF-R4, Norikatsu Shigemura / [Ensure Technology
-    Ltd](http://www.ensure-tech.co.jp/).
--   BSD Usergroup activity: [Echigo BSD Users
-    Group](http://www.ebug.jp/) , T.Tamura@EBUG
--   [XCAST - Explicit Multi-Unicast](http://wiki.xcast.jp/)
+    CF-R4, Norikatsu Shigemura /
+    Ensure Technology Ltd
+    .
+-   BSD Usergroup activity:
+    Echigo BSD Users Group
+    , T.Tamura@EBUG
+-   XCAST - Explicit Multi-Unicast
 
-See [program for
+\> See [program for
 details](http://www.jp.NetBSD.org/ja/JP/ml/announce-ja/200606/msg00000.html).
 
 The BoF was broadcasted via RealVideo (238 clients),
 [xcast](http://www.xcast.jp/) (6 clients) ,
 [IRC](http://www.reicha.net/) (49 clients).
 
-#### `May 2006` - BSDCan 2006 ([top](#past))
+### `May 2006` - BSDCan 2006
 
 *May 12-13 2006, Ottawa, Canada*
 
@@ -3102,7 +2601,7 @@ during May 10-14th.
 [Watch out](http://www.bsdcan.org/2006/presentations.php) for the
 [NetBSD people](http://www.bsdcan.org/2006/speaker.php) on BSDCan 2006!
 
-#### `May 2006` - pkgsrcCon 2006 ([top](#past))
+### `May 2006` - pkgsrcCon 2006
 
 *May 5-7, Paris, France*
 
@@ -3121,7 +2620,7 @@ For more information, including how to register, and how to submit a
 presentation proposal, please visit
 [http://www.pkgsrcCon.org/](http://www.pkgsrcCon.org/).
 
-#### `May 2006` - LinuxTag 2006 ([top](#past))
+### `May 2006` - LinuxTag 2006
 
 *May 3-6 2006, Wiesbaden, Germany*
 
@@ -3130,19 +2629,19 @@ visit us at Hall 9, booth number 944. There will also be BSD talks and
 tutorials.
 
 If you're interested in helping out at the NetBSD booth or have any
-questions, please contact Dennis Wecker `<dennis@eperm.net>`{.email}.
+questions, please contact Dennis Wecker <dennis@eperm.net>.
 
-#### `Apr 2006` - Vintage Computer Festival Europe ([top](#past))
+### `Apr 2006` - Vintage Computer Festival Europe
 
 *Apr 29th - May 1st, Munich, Germany*
 
 The [Vintage Computer Festival Europe](http://www.vcfe.org/) is taking
-place from April 29th to May 1st in Munich, Germany. NetBSD's Jochen
-Kunz will demonstrate 2.11BSD on a PDP-11/73 and do some general NetBSD
-advocacy. If you're interested, please contact Jochen Kunz and/or visit
-the URL above.
+place from April 29th to May 1st in Munich, Germany. NetBSD's A.JKUNZ
+will demonstrate 2.11BSD on a PDP-11/73 and do some general NetBSD
+advocacy. If you're interested, please contact A.JKUNZ and/or visit the
+URL above.
 
-#### `Apr 2006` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `Apr 2006` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *Apr 16, 2006, [National Olympics Memorial Youth
 Center](http://nyc.niye.go.jp/e/), Tokyo, Japan*
@@ -3153,7 +2652,7 @@ meeting information. Talking about NetBSD/pc98, GDB operation on Emacs,
 NetBSD/dreamcast maracas controller, NetBSD/kurobako, NetBSD/Armadillo,
 Codeblog.
 
-#### `Apr 2006` - LinuxWorld-Boston 2006 ([top](#past))
+### `Apr 2006` - LinuxWorld-Boston 2006
 
 *April 3-6, 2006, Boston, MA, USA*
 
@@ -3164,9 +2663,9 @@ interested in helping out, please contact Brian Asemi (asemisldkfj at
 gmail.com).
 
 For more information about this event see
-[http://mail-index.NetBSD.org/netbsd-advocacy/2006/04/07/0000.html](http://mail-index.NetBSD.org/netbsd-advocacy/2006/04/07/0000.html).
+[](http://mail-index.NetBSD.org/netbsd-advocacy/2006/04/07/0000.html).
 
-#### `Mar 2006` - Chemnitzer Linux-Tage 2006 ([top](#past))
+### `Mar 2006` - Chemnitzer Linux-Tage 2006
 
 *March 4-5th 2006, TU Chemnitz, Chemnitz, Germany*
 
@@ -3185,7 +2684,7 @@ Additionally, several NetBSD presentations and a workshop will be held:
 For further information contact Stefan Schumacher \<stefan (at)
 net-tex.de\>.
 
-#### `Mar 2006` - CeBIT 2006 ([top](#past))
+### `Mar 2006` - CeBIT 2006
 
 *March 9-15 2006, Hannover, Germany*
 
@@ -3193,7 +2692,7 @@ The NetBSD project will have a booth at [CeBIT](http://www.cebit.de/),
 the large b2b-tradefair in Hannover, Germany, from March 12-15. The
 booth will be in Hall 5, number E 56 and will showcase NetBSD and Xen.
 
-#### `Mar 2006` - Open Source Conference 2006 Tokyo/Spring ([top](#past))
+### `Mar 2006` - Open Source Conference 2006 Tokyo/Spring
 
 *Mar. 17-18, 2006, Tokyo, Japan*
 
@@ -3204,14 +2703,14 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Mar 2006` - GUUG spring talk ([top](#past))
+### `Mar 2006` - GUUG spring talk
 
-*March 21-24th 2006, Osnabr�ck, Germany*
+*March 21-24th 2006, Osnabrück, Germany*
 
 [German Unix User Group
-“Fr�hjahrsfachgespr�ch”](http://www.guug.de/veranstaltungen/ffg2006/)
+“Frühjahrsfachgespräch”](http://www.guug.de/veranstaltungen/ffg2006/)
 (spring talk) will be passed during 21.-24.3.2006 in the [University of
-Osnabr�ck](http://www.uni-osnabrueck.de/).
+Osnabrück](http://www.uni-osnabrueck.de/).
 
 There will be at least one NetBSD-related talk, on [backup
 strategies](http://www.guug.de/veranstaltungen/ffg2006/abstracts.html#3_8_2).
@@ -3219,7 +2718,7 @@ Interested parties are welcome to coordinate any BOF sessions or booth
 activities with Stefan Schumacher, see [his posting on
 regional-de](http://mail-index.NetBSD.org/regional-de/2006/01/29/0000.html).
 
-#### `Feb 2006` - FOSDEM 2006 ([top](#past))
+### `Feb 2006` - FOSDEM 2006
 
 *February 25/26th 2006, Brussels, Belgium*
 
@@ -3230,28 +2729,27 @@ software. Taking place in the beautiful city of Brussels, Belgium FOSDEM
 meetings are recognised as the best Free and Open Source events in
 Europe.
 
-Peter Postma (`<peter>`{.email}) and Geert Hendrickx (`<ghen>`{.email})
-[will
+A.PETER (<peter>) and A.GHEN (<ghen>) [will
 advocate](http://mail-index.NetBSD.org/netbsd-advocacy/2006/02/21/0000.html)
 the NetBSD project on this event. Hope to see you too!
 
-Update: Geert Hendrickx posted a [review of the
+Update: A.GHEN posted a [review of the
 event](http://mail-index.NetBSD.org/netbsd-advocacy/2006/02/26/0000.html).
 
-#### `Feb 2006` - SCALE 4x ([top](#past))
+### `Feb 2006` - SCALE 4x
 
 *February 11-12th 2006, Los Angeles, California*
 
 [SCALE 4x](http://www.socallinuxexpo.org/), the 4th annual Southern
 California Linux Expo, will take place February 11-12, 2006, at The
 Westin Los Angeles Airport, Los Angeles, California. The NetBSD Project
-will have a booth at this event; please contact Kevin Lahey
-(`<kml@NetBSD.org>`{.email}) if you would like to help.
+will have a booth at this event; please contact A.KML (<kml@NetBSD.org>)
+if you would like to help.
 
 A report from Kevin Lahey is
 [available](http://mail-index.NetBSD.org/netbsd-advocacy/2006/02/14/0000.html).
 
-#### `Dec 2005` - 22nd Chaos Communication Congress (22C3) ([top](#past))
+### `Dec 2005` - 22nd Chaos Communication Congress (22C3)
 
 *December 27-30th 2005, Berlin, Germany*
 
@@ -3263,7 +2761,7 @@ information technology, IT-security, internet, cryptography and
 generally a critical-creative attitude towards technology and the
 discussion about the effects of technological advances on society.
 
-#### `Nov 2005` - OpenSource Conference 2005 Okinawa ([top](#past))
+### `Nov 2005` - OpenSource Conference 2005 Okinawa
 
 *November 19, 2005, Okiden Fureai Hall,Japan*
 
@@ -3274,7 +2772,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Nov 2005` - EuroBSDCon 2005 ([top](#past))
+### `Nov 2005` - EuroBSDCon 2005
 
 *November 25th-27th 2005, Switzerland*
 
@@ -3283,7 +2781,7 @@ University of Basel, Switzerland on November 25th to 27th 2005. Check
 the [website](http://2005.eurobsdcon.org/) for official program,
 conference venue and registration. present.
 
-#### `Oct 2005` - Linux-Info-Tag Dresden 2005 ([top](#past))
+### `Oct 2005` - Linux-Info-Tag Dresden 2005
 
 *October 29, 2005, Dresden, Germany*
 
@@ -3295,9 +2793,9 @@ Lockhoff.
 
 For further information contact Stefan Schumacher (stefan [at] net-tex
 [dot] de) and see the website of the event at
-[http://www.linux-info-tag.de/](http://www.linux-info-tag.de/).
+[](http://www.linux-info-tag.de/).
 
-#### `Oct 2005` - Systems 2005 ([top](#past))
+### `Oct 2005` - Systems 2005
 
 *October 24th-28th, 2005, Munich, Germany*
 
@@ -3309,13 +2807,12 @@ People willing to help are welcome. It's also fine that you have only on
 one or more days time to participate at the Booth. There is also a
 sponsor which provides food and drinks during the event!
 
-For more Information see
-[http://www.systems.de/](http://www.systems.de/)
+For more Information see [](http://www.systems.de/)
 
 Please contact Daniel Ettle (dan at deam dot org) to help at the booth,
 especially showing NetBSD!
 
-#### `Oct 2005` - KANSAI-OPENSOURCE-2005 ([top](#past))
+### `Oct 2005` - KANSAI-OPENSOURCE-2005
 
 *October 28-October 29, 2005, Osaka Sangyo Souzoukan, Japan*
 
@@ -3333,7 +2830,7 @@ At the \*BSD Meeting in Kansai 2005, There was a BoF about Secure
 Programing, embeded-NetBSD developers' Network, Devices and more about
 BSD, driven by [Kansai \*BSD Users Group](http://www.kbug.gr.jp/).
 
-#### `Sep 2005` - Open Source Conference 2005 Fall ([top](#past))
+### `Sep 2005` - Open Source Conference 2005 Fall
 
 *Sep. 17, 2005, Tokyo, Japan*
 
@@ -3344,7 +2841,7 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) with many hpc{
 [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) } gadgets demonstration.
 
-#### `Sep 2005` - NYC BSD Con 2005 ([top](#past))
+### `Sep 2005` - NYC BSD Con 2005
 
 *September 17th 2005, New York City, NY, USA*
 
@@ -3354,7 +2851,7 @@ for developers, systems administrators and end-users of the BSD
 operating systems and related open source projects. Please see the
 [conference website](http://nycbsdcon.org/) for details.
 
-#### `Sep 2005` - Computer-Bank-Office 2005 ([top](#past))
+### `Sep 2005` - Computer-Bank-Office 2005
 
 *September 7th-10th 2005, Odessa, Ukraine*
 
@@ -3364,20 +2861,20 @@ exhibition of information technologies, [Computer-Bank-Office
 take place at Expocentre of Odessa Marine Terminal. All talks about
 NetBSD and pkgsrc systems are scheduled for Sep 8th. Anyone interested
 in support for and preparation of this event, please contact Mike M.
-Volokhov `<mishka@NetBSD.org>`{.email}. See also [his
+Volokhov <mishka@NetBSD.org>. See also [his
 post](http://mail-index.NetBSD.org/netbsd-advocacy/2005/07/12/0000.html)
 on netbsd-advocacy.
 
-#### `Sep 2005` - Portuguese NetBSD Users's Group meeting ([top](#past))
+### `Sep 2005` - Portuguese NetBSD Users's Group meeting
 
 *September 10th 2005, Lisboa, Portugal*
 
 The [Portuguese NetBSD User Group](http://www.netbsd-pt.org/) second
 meeting will be held at [Parque das
-Na��es](http://www.parquedasnacoes.pt/) (Vasco da Gama). Please see the
+Nações](http://www.parquedasnacoes.pt/) (Vasco da Gama). Please see the
 group page for more information.
 
-#### `Aug 2005` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `Aug 2005` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *Aug 27, 2005, [National Olympics Memorial Youth
 Center](http://nyc.niye.go.jp/e/), Tokyo, Japan*
@@ -3390,32 +2887,32 @@ A
 [presentation](http://www.haun.org/kent/tmp/20050827-NetBSD-audio-en.pdf)
 about the changes on the NetBSD audio framework is also available.
 
-#### `Aug 2005` - BSDDAY S�o Paulo ([top](#past))
+### `Aug 2005` - BSDDAY São Paulo
 
-*August 13th, 2005, S�o Paulo, Brazil*
+*August 13th, 2005, São Paulo, Brazil*
 
-The first [BSDDAY](http://www.bsdday.com.br/) in S�o Paulo, Brazil took
+The first [BSDDAY](http://www.bsdday.com.br/) in São Paulo, Brazil took
 place on August 13th, 2005. Presentations regarding the main BSD
 derivatives including, of course, NetBSD were given. Since the event is
 also meant to promote charity, the entrance fee was 2 Kilograms of
 non-perishable food, which were donated to a non-governmental
 organization.
 
-#### `Aug 2005` - LinuxWorld Conference & Expo 2005 ([top](#past))
+### `Aug 2005` - LinuxWorld Conference & Expo 2005
 
 *August 9-11th, 2005, San Francisco, California, USA*
 
 [LinuxWorld Conference & Expo
 2005](http://www.linuxworldexpo.com/live/12/events/12SFO05A/) was held
 in San Francisco, California, USA from August 9th to 11th 2005. NetBSD
-had a booth in the ".org Pavilion", organized by Jeff Rizzo
-`<riz@NetBSD.org>`{.email}. One of the main attractions here was the
-[NetBSD Toaster](http://www.embeddedarm.com/news/netbsd_toaster.htm),
-engineered by Technologic Systems. See Jeff Rizzo's
+had a booth in the ".org Pavilion", organized by A.RIZ <riz@NetBSD.org>.
+One of the main attractions here was the [NetBSD
+Toaster](http://www.embeddedarm.com/news/netbsd_toaster.htm), engineered
+by Technologic Systems. See A.RIZ's
 [report](http://mail-index.NetBSD.org/netbsd-advocacy/2005/08/13/0000.html)
 for more details.
 
-#### `Jul 2005` - BSD at “What the Hack” outdoor hacker conference ([top](#past))
+### `Jul 2005` - BSD at “What the Hack” outdoor hacker conference
 
 *July 28 - 31, 2005, Liempde, near Den Bosch, The Netherlands*
 
@@ -3427,7 +2924,7 @@ more details about the \*BSD presence see Daniel Ettle's
 [message](http://mail-index.NetBSD.org/netbsd-advocacy/2005/07/04/0000.html)
 to the netbsd-advocacy mailinglist.
 
-#### `Jul 2005` - BSD-CONFERENCE-JAPAN 2005 ([top](#past))
+### `Jul 2005` - BSD-CONFERENCE-JAPAN 2005
 
 *July 23, 2005, [NADYA
 Park](http://www.u-net.city.nagoya.jp/t-index/nadia.htm) Nagoya, Japan*
@@ -3437,26 +2934,26 @@ There had be a BSD booth staffed by members of the [Nagoya \*BSD Users'
 Group](http://www.nagoya.bug.gr.jp/). See more
 [Reports](http://pcweb.mycom.co.jp/articles/2005/07/27/bsdcon/).
 
-#### `Jul 2005` - Open Source Conference 2005 in Hokkaido ([top](#past))
+### `Jul 2005` - Open Source Conference 2005 in Hokkaido
 
 *Jul. 9, 2005, Sapporo, Japan*
 
 At the Open Source Conference 2005 DO there had be a NetBSD booth
 staffed by members of the [Japan NetBSD Users'
 Group](http://www.jp.NetBSD.org/ja/JP/JNUG/).
-[http://www.ospn.jp/osc2005-do/](http://www.ospn.jp/osc2005-do/) with
-250 attendances and 17 user groups.
+[](http://www.ospn.jp/osc2005-do/) with 250 attendances and 17 user
+groups.
 
-#### `Jun 2005` - MeetBSD 2005 ([top](#past))
+### `Jun 2005` - MeetBSD 2005
 
-*June 17-19th, 2005, Krak�w, Poland*
+*June 17-19th, 2005, Kraków, Poland*
 
-[MeetBSD 2005](http://2005.meetbsd.org/) will be held in Krak�w, Poland,
+[MeetBSD 2005](http://2005.meetbsd.org/) will be held in Kraków, Poland,
 from June 17th to 19th 2005. Check the
 [website](http://2005.meetbsd.org/) for the official program conference
 venue and registration.
 
-#### `Jun 2005` - Interop 2005 Tokyo BSD BOF ([top](#past))
+### `Jun 2005` - Interop 2005 Tokyo BSD BOF
 
 *Jun 9, 2005, Makuhari-Messe, Chiba, Japan, 18:30-20:00 JST*
 
@@ -3465,13 +2962,11 @@ BOF](http://www.jp.NetBSD.org/ja/JP/ml/announce-ja/200506/msg00000.html)
 was held in [Interop 2005 Tokyo](http://www.interop.jp/2005/) with 130
 attendances. BOF01. Room 302.
 
--   [\*BSD Document
-    Internationalization](http://people.allbsd.org/~hrs/N+I2005/sato-n+i.pdf)
--   [A Robot that runs on NetBSD](http://www.speecys.com) Live
-    performance
--   [BSD Usergroup activity in
-    Japan](http://codezine.jp/a/article.aspx?aid=67)
--   [XCAST - Explicit Multi-Unicast](http://wiki.xcast.jp/)
+-   \*BSD Document Internationalization
+-   A Robot that runs on NetBSD
+    Live performance
+-   BSD Usergroup activity in Japan
+-   XCAST - Explicit Multi-Unicast
 
 See [program for
 details](http://www.jp.NetBSD.org/ja/JP/ml/announce-ja/200506/msg00000.html).
@@ -3483,7 +2978,7 @@ University](http://www.nagoya-u.ac.jp/en/), and [Nagoya \*BSD Users'
 Group](http://www.nagoya.bug.gr.jp/))/ [IRC](http://www.reicha.net/) (55
 clients,[BSD-BOF-LOG](http://motoyuki.bsdclub.org/boflog/NI2005-BSD-BOF-LOG.txt),[BSD-BOF-QA](http://motoyuki.bsdclub.org/boflog/NI2005-BSD-BOF-QA.txt)).
 
-#### `May 2005` - BSDCan2005 ([top](#past))
+### `May 2005` - BSDCan2005
 
 *May 13th - May 14th, Ottawa, Canada*
 
@@ -3491,7 +2986,7 @@ clients,[BSD-BOF-LOG](http://motoyuki.bsdclub.org/boflog/NI2005-BSD-BOF-LOG.txt)
 University of Ottawa. There were related events on the 12th and the 15th
 (of a social nature, for the most part).
 
-#### `May 2005` - pkgsrcCon 2005 ([top](#past))
+### `May 2005` - pkgsrcCon 2005
 
 *May 6th - May 8th 2005, Prague, Czech Republic*
 
@@ -3504,10 +2999,9 @@ contributors, and users are all welcome to attend. You can view the
 [slides for this
 event](http://www.pkgsrcCon.org/2005/presentations.html) here.
 
-See [http://www.pkgsrcCon.org/2005/](http://www.pkgsrcCon.org/2005/) for
-details.
+See [](http://www.pkgsrcCon.org/2005/) for details.
 
-#### `Apr 2005` - Linux Fest Northwest 2005 ([top](#past))
+### `Apr 2005` - Linux Fest Northwest 2005
 
 LinuxFest Northwest is an annual conference providing many free lectures
 and booths covering the open source Unix community. The free event was
@@ -3520,7 +3014,7 @@ More information is at
 volunteer to help with NetBSD advocacy at LinuxFest, please see [this
 email](http://mail-index.NetBSD.org/netbsd-advocacy/2005/03/25/0000.html).)
 
-#### `Apr 2005` - 2005 USENIX Annual Technical Conference ([top](#past))
+### `Apr 2005` - 2005 USENIX Annual Technical Conference
 
 *April 10-15, 2005, Anaheim, California, USA*
 
@@ -3531,19 +3025,18 @@ sessions devoted to Linux and Open Source Software. Join the community
 of programmers, developers, and systems professionals in sharing
 solutions and fresh ideas.
 
-See [http://www.usenix.org/usenix05/](http://www.usenix.org/usenix05/)
-for details.
+See [](http://www.usenix.org/usenix05/) for details.
 
-#### `Mar 2005` - Open Source Conference 2005 ([top](#past))
+### `Mar 2005` - Open Source Conference 2005
 
 *Mar. 25-26, 2005, Tokyo, Japan*
 
 At the Open Source Conference 2005 there was a NetBSD booth staffed by
 members of the [Japan NetBSD Users'
 Group](http://www.jp.NetBSD.org/ja/JP/JNUG/). For more details see
-[http://www.ospn.jp/osc2005/](http://www.ospn.jp/osc2005/).
+[](http://www.ospn.jp/osc2005/).
 
-#### `Mar 2005` - CeBIT 2005 ([top](#past))
+### `Mar 2005` - CeBIT 2005
 
 *March 10-16, 2005, Hannover, Germany*
 
@@ -3551,52 +3044,47 @@ The NetBSD Project was presented at the [CeBIT
 2005](http://www.cebit.de/) trade show. A few pictures are available at
 [this URL](http://nuxi.homeunix.org/album/messen/cebit-2005/).
 
-#### `Mar 2005` - Chemnitzer Linux-Tage 2005 ([top](#past))
+### `Mar 2005` - Chemnitzer Linux-Tage 2005
 
 NetBSD was present Mar 5th/6th 2005 in Chemnitz, Germany. We had a fine
 NetBSD booth at the Chemnitz Linuxdays Mar 5th/6th 2005, with lots of
 fun going on. Please check Hubert Feyrer's BLOG for all the details:
 
--   [Chemnitzer Linux-Tage 2005 Day 0 and
-    1](http://www.feyrer.de/NetBSD/blog.html#20050305_2305)
--   [Chemnitzer Linux-Tage 2005 Day
-    2](http://www.feyrer.de/NetBSD/blog.html#20050307_1620)
+-   Chemnitzer Linux-Tage 2005 Day 0 and 1
+-   Chemnitzer Linux-Tage 2005 Day 2
 
-#### `Feb 2005` - Spring Talks of the German Unix User Group ([top](#past))
+### `Feb 2005` - Spring Talks of the German Unix User Group
 
 Feb 22nd to 25th 2005 in Munich, Germany. For some details on the event
 itself and some rumours & gossips see Hubert Feyrer's BLOG entries:
 
--   [GUUG Spring Talk, Day
-    1](http://www.feyrer.de/NetBSD/blog.html#20050224_1005)
--   [GUUG Spring Talk, Day
-    2](http://www.feyrer.de/NetBSD/blog.html#20050225_1005)
--   [GUUG Spring Talk, Day
-    3](http://www.feyrer.de/NetBSD/blog.html#20050226_1005)
+-   GUUG Spring Talk, Day 1
+-   GUUG Spring Talk, Day 2
+-   GUUG Spring Talk, Day 3
 
-#### `Feb 2005` - Southern California Linux Expo ([top](#past))
+### `Feb 2005` - Southern California Linux Expo
 
 *Feb 12th -13th, 2005, Los Angeles, California*
 
 NetBSD had a booth at the [Southern California Linux
 Expo](http://www.socallinuxexpo.org/) at the LA Convention Center.
-NetBSD's presence in booth \#34 was organized by Kevin Lahey
-(`<kml@NetBSD.org>`{.email}). You can find an account of his experience
+NetBSD's presence in booth \#34 was organized by A.KML
+(<kml@NetBSD.org>). You can find an account of his experience
 [here](http://mail-index.NetBSD.org/netbsd-advocacy/2005/02/14/0008.html)
 and [here](http://www.nomadlogic.org/~pete/scale.html); a picture of the
 NetBSD booth also was prominently displayed
-[http://www.socallinuxexpo.org/images/pictures/scale3x\_day1\_6.jpg](http://www.socallinuxexpo.org/images/pictures/scale3x_day1_6.jpg).
+[](http://www.socallinuxexpo.org/images/pictures/scale3x_day1_6.jpg).
 
-#### `Feb 2005` - Solutions Linux 2005 ([top](#past))
+### `Feb 2005` - Solutions Linux 2005
 
 *Feb. 1-3, 2005, Paris, France*
 
 NetBSD will have a booth at Solutions Linux 2005. We will be presenting
 both NetBSD and pkgsrc on various hardware and software platforms, while
 selling CDs and other merchandise. If you want to help, you can contact
-Quentin Garnier (`<cube@cubidou.net>`{.email}).
+Quentin Garnier (<cube@cubidou.net>).
 
-#### `Dec 2004` - 21st Chaos Communication Congress (21c3) ([top](#past))
+### `Dec 2004` - 21st Chaos Communication Congress (21c3)
 
 *Dec. 27 - 29, 2004, Berlin, Germany*
 
@@ -3609,7 +3097,7 @@ interested in helping out. There are some [notes on the
 event](http://mail-index.NetBSD.org/netbsd-advocacy/2004/12/30/0000.html)
 available.
 
-#### `Oct 2004` - EuroBSDCon 2004 ([top](#past))
+### `Oct 2004` - EuroBSDCon 2004
 
 *Oct. 29 - 31, 2004, Karlsruhe, Germany*
 
@@ -3624,30 +3112,29 @@ A brief report from the conference is available
 A longer review was published in the [USENIX ;login:
 magazine](http://www.usenix.org/publications/login/2005-02/openpdfs/eurobsdcon.pdf).
 
-#### `Oct 2004` - Systems 2004 ([top](#past))
+### `Oct 2004` - Systems 2004
 
 *Oct. 18 - 22, 2004, Munich, Germany*
 
-There will be a 40m� BSD booth at the Systems computer show in Munich,
+There will be a 40m² BSD booth at the Systems computer show in Munich,
 Germany from October 18th to 22nd 2004, where the NetBSD project (among
 others) will be presented. People willing to help are welcome; Daniel
 Ettle (dan at deam org) will act as a point of contact. See
-[http://www.systems.de/](http://www.systems.de/) for more information on
-the exhibition.
+[](http://www.systems.de/) for more information on the exhibition.
 
-#### `Oct 2004` - BSD-CONFERENCE-JAPAN 2004 ([top](#past))
+### `Oct 2004` - BSD-CONFERENCE-JAPAN 2004
 
 *October 23, 2004, Osaka Sangyo Souzoukan, Japan*
 
-[http://www.bsdcon.jp/2004/](http://www.bsdcon.jp/2004/)
+[](http://www.bsdcon.jp/2004/)
 
-#### `Oct 2004` - KANSAI-OPENSOURCE-2004 ([top](#past))
+### `Oct 2004` - KANSAI-OPENSOURCE-2004
 
 *October 22-October 23, 2004, Osaka Sangyo Souzoukan, Japan*
 
-[http://k-of.jp/2004/](http://k-of.jp/2004/)
+[](http://k-of.jp/2004/)
 
-#### `Sep 2004` - Open Source Conference 2004 ([top](#past))
+### `Sep 2004` - Open Source Conference 2004
 
 *Sep. 4, 2004, Tokyo, Japan*
 
@@ -3655,7 +3142,7 @@ At the Open Source Conference 2004 there was a NetBSD booth staffed by
 members of the [Japan NetBSD Users'
 Group](http://www.jp.NetBSD.org/ja/JP/JNUG/).
 
-#### `Sep 2004` - Swiss Unix Conference 2004 ([top](#past))
+### `Sep 2004` - Swiss Unix Conference 2004
 
 *Sep. 2 - 4, 2004, Zurich, Switzerland*
 
@@ -3665,7 +3152,7 @@ was represented by Hubert Feyrer, who will gave [a
 presentation](http://www.feyrer.de/NetBSD/sucon-netbsd.pdf) at this
 conference.
 
-#### `Aug 2004` - NetBSD System Administration training ([top](#past))
+### `Aug 2004` - NetBSD System Administration training
 
 *August 10 - 13, 2004, Seattle, Washington, USA*
 
@@ -3675,7 +3162,7 @@ administration. Visit [http://www.pugetsoun
 dtechnology.com/training/netbsd/](http://www.pugetsoundtechnology.com/training/netbsd/)
 for details.
 
-#### `Aug 2004` - LinuxWorld 2004 ([top](#past))
+### `Aug 2004` - LinuxWorld 2004
 
 *Aug. 2 - 5, 2004, San Francisco, CA, USA*
 
@@ -3683,10 +3170,9 @@ for details.
 Expo](http://www.linuxworldexpo.com/live/12/events/12SFO04A) is going to
 take place in San Francisco, CA, USA at the beginning of August. The
 NetBSD Project might be represented with a booth there - if you are
-interested in helping out, please contact
-`<regional-sfba@NetBSD.org>`{.email}.
+interested in helping out, please contact <regional-sfba@NetBSD.org>.
 
-#### `Jul 2004` - Get into OpenSource Hokkaido 2004 (GODo2004) ([top](#past))
+### `Jul 2004` - Get into OpenSource Hokkaido 2004 (GODo2004)
 
 *Jul. 24, 2004, Sapporo Business Innovation Center, Sapporo, Japan*
 
@@ -3697,18 +3183,18 @@ Group](http://www.jp.NetBSD.org/ja/JP/JNUG/) and
 GT, and many hpc{ [mips](../ports/hpcmips/), [sh](../ports/hpcsh/),
 [arm](../ports/hpcarm/) }
 
-#### `Jun 2004` - NetWorld+Interop 2004 Tokyo BSD BOF ([top](#past))
+### `Jun 2004` - NetWorld+Interop 2004 Tokyo BSD BOF
 
 *Jun 30, 2004, Makuhari-Messe, Chiba, Japan, 18:30-20:00 JST*
 
-[http://www.interop.jp/2004/](http://www.interop.jp/2004/)
+[](http://www.interop.jp/2004/)
 
 [BOF
 information](http://www.re.soum.co.jp/%7Efukaumi/ml/netbsd/200406/msg00015.html)
 
-Contact Jun Ebihara `<jun@NetBSD.org>`{.email} for more information.
+Contact Jun Ebihara <jun@NetBSD.org> for more information.
 
-#### `Jun 2004` - USENIX 2004 ([top](#past))
+### `Jun 2004` - USENIX 2004
 
 *June 27 - July 2, 2004, Boston, MA, USA*
 
@@ -3723,16 +3209,16 @@ Projects](http://www.usenix.org/events/usenix04/tech/sigs.html#bsd_projects),
 and finally by a number of NetBSD developers who will be attending the
 conference.
 
-#### `Jun 2004` - Linuxtag 2004 ([top](#past))
+### `Jun 2004` - Linuxtag 2004
 
 *June 23 - 26, 2004, Karlsruhe, Germany*
 
 [Linuxtag 2004](http://www.linuxtag.org/2004/index.html) is going to
 take place in Karlsruhe, Germany. The NetBSD Project will be represented
-with a booth - please contact `<hubertf@NetBSD.org>`{.email} if you are
-interested in helping out.
+with a booth - please contact <hubertf@NetBSD.org> if you are interested
+in helping out.
 
-#### `May 2004` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `May 2004` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *May 22, 2004, [National Olympics Memorial Youth
 Center](http://nyc.niye.go.jp/e/), Tokyo, Japan*
@@ -3741,7 +3227,7 @@ See [this
 page](http://www.jp.NetBSD.org/ja/JP/JNUG/announce/meeting6.html) for
 meeting information.
 
-#### `May 2004` - BSDCan 2004 ([top](#past))
+### `May 2004` - BSDCan 2004
 
 *May 13-16, 2004, Ottawa, Canada*
 
@@ -3752,7 +3238,7 @@ were numerous. BSDMall had NetBSD paraphanalia available for sale. See
 also the [BSDCan Website](http://www.bsdcan.org/), and some [photos from
 Daemonnews.](http://ezine.daemonnews.org/200405/bsdcan_2004/)
 
-#### `May 2004` - LinuxChix-Br II National Meeting ([top](#past))
+### `May 2004` - LinuxChix-Br II National Meeting
 
 *May 1-2, 2004 Sao Paulo, Brazil*
 
@@ -3761,7 +3247,7 @@ Meeting](http://www.linuxchix.org.br/node.php?id=87) there will be a
 presentation about pkgsrc and a NetBSD booth staffed by members of
 NetBSD-BR.
 
-#### `Apr 2004` - pkgsrcCon 2004 ([top](#past))
+### `Apr 2004` - pkgsrcCon 2004
 
 *April 30 - May 2, 2004, Vienna, Austria*
 
@@ -3773,7 +3259,7 @@ more information, including slides of the talks, please visit
 see Hubert Feyrer's report in the [DaemonNews
 Ezine](http://ezine.daemonnews.org/200405/pkgsrcCon2004.html).
 
-#### `Apr 2004` - Linuxfest Northwest 2004 ([top](#past))
+### `Apr 2004` - Linuxfest Northwest 2004
 
 *April 17, 2004, Bellingham, Washington, USA*
 
@@ -3787,33 +3273,33 @@ BSD enthusiasts. Admission is free. Please see
 mailinglist](http://mail-index.NetBSD.org/netbsd-news/2004/04/16/0000.html)
 for more information.
 
-#### `Mar 2004` - GUUG Fr�hjahrsfachgespr�ch ([top](#past))
+### `Mar 2004` - GUUG Frühjahrsfachgespräch
 
 *March 9-12, 2004, Bochum, Germany*
 
 The NetBSD Project will in all likeliness be represented at this year's
 [GUUG
-Fr�hjahrsfachgespr�che](http://www.guug.de/veranstaltungen/ffg2004/), a
+Frühjahrsfachgespräche](http://www.guug.de/veranstaltungen/ffg2004/), a
 yearly congress for everybody interested in Unix(-like) Systems and
 System Administration organized by the [German Unix User
 Group](http://www.guug.de/).
 
-#### `Mar 2004` - Chemnitzer Linux-Tag 2004 ([top](#past))
+### `Mar 2004` - Chemnitzer Linux-Tag 2004
 
 *March 6-7, 2004, Chemnitz, Germany*
 
 NetBSD was represented with a booth at the Chemnitzer Linux-Tag 2004 in
 Chemnitz, Germany. In addition, there were three presentations:
 
--   \`\`[Cryptographic applications under
-    NetBSD](http://www.tu-chemnitz.de/linux/tag/2004/vortraege/detail.html?idx=84)''
-    by Stefan Schumacher
--   \`\`[Introduction to
-    NetBSD](http://www.tu-chemnitz.de/linux/tag/2004/vortraege/detail.html?idx=29)''
-    by Karl Uwe Lockhoff
--   \`\`[Software Installation under NetBSD, Linux & Solaris using
-    pkgsrc](http://www.tu-chemnitz.de/linux/tag/2004/vortraege/detail.html?idx=43)''
-    by Hubert Feyrer
+-   \`\`
+    Cryptographic applications under NetBSD
+    '' by Stefan Schumacher
+-   \`\`
+    Introduction to NetBSD
+    '' by Karl Uwe Lockhoff
+-   \`\`
+    Software Installation under NetBSD, Linux & Solaris using pkgsrc
+    '' by Hubert Feyrer
 
 Please see the
 [website](http://www.tu-chemnitz.de/linux/tag/2004/allgemeines/) for
@@ -3822,7 +3308,7 @@ website](http://www.uni-magdeburg.de/steschum/6clt/), more photos can be
 found on the [Linux-Tag
 website](http://www.tu-chemnitz.de/linux/tag/2004/media/bilder/).
 
-#### `Feb 2004` - Solutions Linux 2004 ([top](#past))
+### `Feb 2004` - Solutions Linux 2004
 
 *February 3-5, 2004, Paris, France*
 
@@ -3830,7 +3316,7 @@ NetBSD was represented with a booth at the [Solutions Linux
 2004](http://www.solutionslinux.fr) conference and expo in Paris,
 France.
 
-#### `Jan 2004` - LinuxWorld 2004 ([top](#past))
+### `Jan 2004` - LinuxWorld 2004
 
 *January 20-23, 2004, New York, New York*
 
@@ -3842,7 +3328,7 @@ shirts through the [BSDMall](http://www.bsdmall.com) booth. See the
 [report](http://daily.daemonnews.org/view_story.php3?story_id=4368) from
 the local user group ([NYCBUG](http://www.nycbug.org/)) for details.
 
-#### `Dec 2003` - 20th Chaos Communication Congress (20c3) ([top](#past))
+### `Dec 2003` - 20th Chaos Communication Congress (20c3)
 
 *December 27th to 29th, 2003, Berlin, Germany*
 
@@ -3856,7 +3342,7 @@ main attractions, you will find Lubomir Sedlacik's [post to the
 netbsd-advocacy](http://mail-index.NetBSD.org/netbsd-advocacy/2004/01/03/0000.html)
 MailingList useful.
 
-#### `Dec 2003` - BSDCon Brasil 2003 ([top](#past))
+### `Dec 2003` - BSDCon Brasil 2003
 
 *December 6 and 7, 2003, Instituto Militar de Engenharia (military
 institute of engineering - IME), Rio de Janeiro, Brasil*
@@ -3864,13 +3350,13 @@ institute of engineering - IME), Rio de Janeiro, Brasil*
 See [http://bsdcon.myfreebsd.com.br](http://bsdcon.myfreebsd.com.br) for
 details.
 
-#### `Dec 2003` - BSD-Linux-Day 2003 ([top](#past))
+### `Dec 2003` - BSD-Linux-Day 2003
 
 *December 2, 2003, Pacifico Yokohama, Japan*
 
 [http://www.jus.or.jp/events/bsd-linux-day/](http://www.jus.or.jp/events/bsd-linux-day/)
 
-#### `Nov 2003` - NetBSD System Administration training ([top](#past))
+### `Nov 2003` - NetBSD System Administration training
 
 *November 18-21, 2003, Seattle, Washington area*
 
@@ -3880,23 +3366,23 @@ administration. See
 [http://www.pugetsoundtechnology.com/training/netbsd/](http://www.pugetsoundtechnology.com/training/netbsd/)
 for details.
 
-#### `Oct 2003` - KANSAI-OPENSOURCE+FREEWARE-2003 ([top](#past))
+### `Oct 2003` - KANSAI-OPENSOURCE+FREEWARE-2003
 
 *October 31-November 1, 2003, Osaka Sangyo Souzoukan, Japan*
 
-[http://k-of.jp/2003/](http://k-of.jp/2003/)
+[](http://k-of.jp/2003/)
 
-#### `Oct 2003` - BSD-CONFERENCE-JAPAN 2003 ([top](#past))
+### `Oct 2003` - BSD-CONFERENCE-JAPAN 2003
 
 *October 18, 2003, BIZ SHINJUKU, Japan*
 
-[http://www.bsdcon.jp/2003/](http://www.bsdcon.jp/2003/)
+[](http://www.bsdcon.jp/2003/)
 
-#### `Oct 2003` - Linux-Kongress 2003 ([top](#past))
+### `Oct 2003` - Linux-Kongress 2003
 
-*October 14-16, 2003, Saarbr�cken, Germany*
+*October 14-16, 2003, Saarbrücken, Germany*
 
-NetBSD will be present at the Linux-Kongress in Saarbr�cken, Germany, an
+NetBSD will be present at the Linux-Kongress in Saarbrücken, Germany, an
 event mostly attended by Linux developers. Presenting NetBSD in this
 environment will give an interesting chance to compare open source
 operating systems on a highly skilled level. There will be a joint booth
@@ -3904,7 +3390,7 @@ by all BSD projects offering CDs, DVDs, t-shirts and other devotionalia.
 See [this page](http://www.linux-kongress.org/2003/index.html) for more
 information.
 
-#### `Sep 2003` - BSDCon 2003 ([top](#past))
+### `Sep 2003` - BSDCon 2003
 
 *September 8-12, 2003, Marriott Hotel,San Mateo, California, USA*
 
@@ -3916,7 +3402,7 @@ Contact name, address, phone, fax and/or e-mail: Conference Department,
 [report](http://mail-index.NetBSD.org/netbsd-advocacy/2003/09/13/0000.html)
 is available online.
 
-#### `Aug 2003` - Chaos Communication Camp 2003 ([top](#past))
+### `Aug 2003` - Chaos Communication Camp 2003
 
 *August 7-10, 2003, near Berlin, Germany (Old Europe).*
 
@@ -3924,7 +3410,7 @@ A lot of photos are available
 [online](http://www.uni-magdeburg.de/steschum/ccc03/index.html), as well
 as [some slides](advocacy/folienslide.pdf).
 
-#### `Jul 2003` - Linuxtag Karlsruhe, Germany ([top](#past))
+### `Jul 2003` - Linuxtag Karlsruhe, Germany
 
 *July 10-13, Karlsruhe, Germany*
 
@@ -3937,7 +3423,7 @@ Dolecek. See the [full
 report](http://mail-index.NetBSD.org/netbsd-advocacy/2003/07/14/0000.html)
 for details and pictures.
 
-#### `Jul 2003` - Libre Software Meeting in Metz ([top](#past))
+### `Jul 2003` - Libre Software Meeting in Metz
 
 *July 9-12, 2003, Metz, France*
 [http://www.rencontresmondiales.org/](http://www.rencontresmondiales.org/)
@@ -3947,26 +3433,26 @@ and Gilbert Fernandes. A
 [report](http://mail-index.NetBSD.org/netbsd-advocacy/2003/07/14/0002.html)
 of the meeting as well as some pictures are available online.
 
-#### `Jul 2003` - NetWorld+Interop 2003 Tokyo BSD BOF ([top](#past))
+### `Jul 2003` - NetWorld+Interop 2003 Tokyo BSD BOF
 
 *July 2, 2003, Makuhari-Messe, Chiba, Japan, 18:30-20:00 JST*
 
 [http://www.interop.jp/](http://www.interop.jp/)
 
-Call for Presentation: contact Jun Ebihara `<jun@NetBSD.org>`{.email}.
+Call for Presentation: contact Jun Ebihara <jun@NetBSD.org>.
 
-#### `Jun 2003` - Japan NetBSD Users' Group meeting & NetBSD BOF ([top](#past))
+### `Jun 2003` - Japan NetBSD Users' Group meeting & NetBSD BOF
 
 *Jun 28, 2003, [National Olympics Memorial Youth
 Center](http://nyc.niye.go.jp/e/), Tokyo, Japan*
 
-#### `Jun 2003` - Open Source Meeting 2003 in Nagoya University ([top](#past))
+### `Jun 2003` - Open Source Meeting 2003 in Nagoya University
 
 *June 7-8, 2003, Nagoya, Japan*
 
 [http://tokai.opensource.jp/tsudoi/2003/](http://tokai.opensource.jp/tsudoi/2003/)
 
-#### `Jun 2003` - 2003 USENIX Annual Technical Conference ([top](#past))
+### `Jun 2003` - 2003 USENIX Annual Technical Conference
 
 *June 9-14, 2003, San Antonio, Texas, USA*
 
@@ -3982,7 +3468,7 @@ Contact name, address, phone, fax and/or e-mail: Conference Department,
 Slides of Chris Demetriou's presentation are [available
 here](events/usenix2003/).
 
-#### `May 2003` - BSDay 2003 ([top](#past))
+### `May 2003` - BSDay 2003
 
 *May 21, 2003, Warszawa-Miedzeszyn, Poland*
 
@@ -3992,16 +3478,16 @@ holding the [BSDay
 on May 21, 2003, the first event of its kind in Poland. See the web site
 for more information.
 
-#### `May 2003` - BSDCon.it ([top](#past))
+### `May 2003` - BSDCon.it
 
 *May 9-11, 2003, Padova, Italy*
 
 As part of [Webbit '03](http://www.webb.it/),
 [BSDCon.it](http://www.bsdcon.it/) will be held from May 9th to may 11th
 in Padova, Italy. People interested in giving a talk on NetBSD should
-contact `<ed@bsdcon.it>`{.email}.
+contact <ed@bsdcon.it>.
 
-#### `Apr 2003` - DECUS Munich Symposium 2003 ([top](#past))
+### `Apr 2003` - DECUS Munich Symposium 2003
 
 *April 8th-10th, 2003, Bonn, Germany* *(updated)*
 
@@ -4011,23 +3497,23 @@ hardware, again with NetBSD as the host OS, and one about eletronic
 voting, using the procedure for the [election of the NetBSD Board of
 Directors](../changes/#board-elections2002) as an in-depth example.
 
-#### `Apr 2003` - Magdeburg Linuxtag ([top](#past))
+### `Apr 2003` - Magdeburg Linuxtag
 
 *April 5th, 2003, Magdeburg, Germany*
 
 There was a NetBSD booth and presentation at the Magdeburg Linuxtag in
 Magdeburg, Germany on April 5th 2003 at the University of Magdeburg,
 Germany. See [http://www.mdlug.de/](http://www.mdlug.de/) for more
-information. Contact Bernd Sieker `<bsieker@freenet.de>`{.email} for
-information regarding representation of NetBSD at the event.
+information. Contact Bernd Sieker <bsieker@freenet.de> for information
+regarding representation of NetBSD at the event.
 
-#### `Mar 2003` - NetBSD is ten years young and still going strong! ([top](#past))
+### `Mar 2003` - NetBSD is ten years young and still going strong!
 
 Several parties are being held in cities around the world to celebrate
 the tenth birthday of The NetBSD Project, March 21, 2003. Check out the
 [Events Gallery](events/) for more information.
 
-#### `Mar 2003` - CeBIT 2003 ([top](#past))
+### `Mar 2003` - CeBIT 2003
 
 *March 12-19, 2003, Hannover, Germany*
 
@@ -4038,7 +3524,7 @@ and there was a 30 minute presentation of the NetBSD Project. Bernd
 Sieker and Jaromir Dolocek manned the booth, see their
 [report](http://mail-index.NetBSD.org/netbsd-advocacy/2003/03/20/0001.html).
 
-#### `Mar 2003` - NetBSD System Administration training ([top](#past))
+### `Mar 2003` - NetBSD System Administration training
 
 *March 4-6, 2003, Phoenix, Arizona, USA area*
 
@@ -4048,7 +3534,7 @@ administration. See
 [http://www.pugetsoundtechnology.com/training/netbsd/](http://www.pugetsoundtechnology.com/training/netbsd/)
 for details.
 
-#### `Mar 2003` - Chemnitzer Linux-Tag ([top](#past))
+### `Mar 2003` - Chemnitzer Linux-Tag
 
 *March 1, 2003, Chemnitz, Germany*
 
@@ -4059,18 +3545,21 @@ events including several pictures is available online at
 Presentations, including mp3s of the talks (in German!) are available
 from:
 
--   [NetBSD - eine
-    Einf�hrung](http://www.tu-chemnitz.de/linux/tag/lt5/vortraege/detail.html?index=40)
-    [[mp3](http://www.tu-chemnitz.de/linux/tag/lt5/media/mp3/sonntag/v1/lockhoff2.mp3)]
--   [NetBSD 1.6 - Neuigkeiten und Einsatz im
-    Embedded-Umfeld](http://www.tu-chemnitz.de/linux/tag/lt5/vortraege/detail.html?index=20)
-    [[mp3](http://www.tu-chemnitz.de/linux/tag/lt5/media/mp3/sonntag/v1/feyrer1.mp3)]
--   [Der Regensburger Marathon-Cluster - eine Video-Rendering-Anwendung
-    mit
-    NetBSD](http://www.tu-chemnitz.de/linux/tag/lt5/vortraege/detail.html?index=19)
-    [[mp3](http://www.tu-chemnitz.de/linux/tag/lt5/media/mp3/sonntag/v1/feyrer2.mp3)]
+-   NetBSD - eine Einführung
+    [
+    mp3
+    ]
+-   NetBSD 1.6 - Neuigkeiten und Einsatz im Embedded-Umfeld
+    [
+    mp3
+    ]
+-   Der Regensburger Marathon-Cluster - eine Video-Rendering-Anwendung
+    mit NetBSD
+    [
+    mp3
+    ]
 
-#### `Feb 2003` - Solutions Linux ([top](#past))
+### `Feb 2003` - Solutions Linux
 
 *February 4-6, 2003, CNIT - Paris La Defense, France.*
 
@@ -4080,7 +3569,7 @@ Expo Paris) held a NetBSD booth run by the
 Group](http://www.netbsd-fr.org/). A [report is available
 online.](http://mail-index.NetBSD.org/netbsd-users/2003/02/08/0010.html)
 
-#### `Jan 2003` - Ottawa Open Source Weekend ([top](#past))
+### `Jan 2003` - Ottawa Open Source Weekend
 
 *January 25th, 26th, 2003, Ottawa, Canada*
 
@@ -4096,7 +3585,7 @@ activities will be the:
 
 For details, please see [http://www.osw.ca/](http://www.osw.ca/).
 
-#### `Jan 2003` - LinuxWorld 2003 ([top](#past))
+### `Jan 2003` - LinuxWorld 2003
 
 *January 21-24, 2003, New York, New York*
 
@@ -4110,7 +3599,7 @@ review](http://mail-index.NetBSD.org/netbsd-advocacy/2003/01/24/0000.html)
 and a [handful of pictures](http://www.NetBSD.org/~jschauma/lwe03/) are
 available online.
 
-#### `Dec 2002` - 19th Chaos Communication Congress (19c3) ([top](#past))
+### `Dec 2002` - 19th Chaos Communication Congress (19c3)
 
 *December 17th to 29th, Berlin, Germany*
 
@@ -4118,7 +3607,7 @@ The NetBSD Project will be present at the [19th Chaos Communication
 Congress](http://www.ccc.de/congress/2002/) (19c3) in Berlin, Germany,
 from December 27th to 29th.
 
-#### `Dec 2002` - NetBSD System Administration training ([top](#past))
+### `Dec 2002` - NetBSD System Administration training
 
 *December 10-12, 2002, Seattle, Washington, USA area*
 
@@ -4126,7 +3615,7 @@ from December 27th to 29th.
 teaching a hands-on class covering the fundamentals of NetBSD system
 administration.
 
-#### `Dec 2002` - Internet Week 2002 ([top](#past))
+### `Dec 2002` - Internet Week 2002
 
 *December 16-20, 2002, Pacifico Yokohama, Japan*
 
@@ -4137,7 +3626,7 @@ clients)](http://www.xcast.jp/)/IRC. See
 [http://www.nic.ad.jp/iw2002/bof/bof04.htm](http://www.nic.ad.jp/iw2002/bof/bof04.htm)
 for details.
 
-#### `Nov 2002` - KNF Congress 2002 ([top](#past))
+### `Nov 2002` - KNF Congress 2002
 
 *November 24, 2002, Nuremberg, Germany*
 
@@ -4155,14 +3644,13 @@ Germany. See
 [http://www.franken.de/kongress/index.html](http://www.franken.de/kongress/index.html)
 for more information.
 
-#### `Nov 2002` - BSD Conference Japan ([top](#past))
+### `Nov 2002` - BSD Conference Japan
 
 *November 23, 2002, tsudahall Tokyo, Japan*
 
-[http://www.bsdcon.jp/2002/](http://www.bsdcon.jp/2002/) with 172
-attendances.
+[](http://www.bsdcon.jp/2002/) with 172 attendances.
 
-#### `Nov 2002` - BSDCon Europe 2002 ([top](#past))
+### `Nov 2002` - BSDCon Europe 2002
 
 *November 15-17, 2002, Amsterdam, Netherlands*
 
@@ -4170,13 +3658,13 @@ attendances.
 Gossips and Facts](http://www.feyrer.de/NetBSD/eurobsdcon2002.html)''
 are available online thanks to Hubert Feyrer.
 
-#### `Nov 2002` - LISA '02 ([top](#past))
+### `Nov 2002` - LISA '02
 
 *November 3-8, 2002, Philadelphia, PA*
 
 [http://www.usenix.org/events/lisa02/](http://www.usenix.org/events/lisa02/)
 
-#### `Nov 2002` - RISC OS S.E. Show ([top](#past))
+### `Nov 2002` - RISC OS S.E. Show
 
 *November 2, 2002, Guildford, UK*
 
@@ -4184,7 +3672,7 @@ The Surrey and Sussex Acorn User Group [RISC OS South-East
 Show](http://www.fillin.co.uk/seshow/), held in Guildford Technical
 College.
 
-#### `Oct 2002` - Linuxdays 2002 ([top](#past))
+### `Oct 2002` - Linuxdays 2002
 
 *October 1-3, 2002, Luxembourg*
 
@@ -4199,7 +3687,7 @@ was sent to the netbsd-advocacy list, pictures and more information are
 available from [Hubert's
 website](http://www.feyrer.de/NetBSD/#linuxday.lu).
 
-#### `Sep 2002` - Linux-Kongress 2002 ([top](#past))
+### `Sep 2002` - Linux-Kongress 2002
 
 *September 4-6, 2002, Cologne, Germany*
 
@@ -4209,13 +3697,13 @@ Technology Conference, held at the Physics Institutes of the University
 of Cologne, Germany. A report and pictures of the BSD-booth is available
 online.
 
-#### `Aug 2002` - 11th USENIX Security Symposium ([top](#past))
+### `Aug 2002` - 11th USENIX Security Symposium
 
 *August 5-9, 2002, San Francisco, CA*
 
 [http://www.usenix.org/events/sec02/](http://www.usenix.org/events/sec02/)
 
-#### `Jul 2002` - NetBSD 1.5.3 release ([top](#past))
+### `Jul 2002` - NetBSD 1.5.3 release
 
 *July 22, 2002*
 
@@ -4226,7 +3714,7 @@ in, addressing security issues in, and adding some features to [NetBSD
 architectures. More information is available in the [1.5.3 release
 announcement](../releases/formal-1.5/NetBSD-1.5.3.html).
 
-#### `Jul 2002` - NetWorld+Interop 2002 Tokyo BSD BOF ([top](#past))
+### `Jul 2002` - NetWorld+Interop 2002 Tokyo BSD BOF
 
 *July 3, 2002, Chiba, Japan*
 
@@ -4236,7 +3724,7 @@ http://www.interop.jp/syutten/report.html
 , [BSD security update - BIND,
 OpenSSH](http://www.itojun.org/paper/itojun-interop2002-bsdbof/mgp00001.html).
 
-#### `Jun 2002` - USENIX Annual Technical Conference ([top](#past))
+### `Jun 2002` - USENIX Annual Technical Conference
 
 *June 9-14, 2002, Montery Conference Center Monterey, California, USA*
 
@@ -4244,13 +3732,13 @@ OpenSSH](http://www.itojun.org/paper/itojun-interop2002-bsdbof/mgp00001.html).
 Slides of Christos Zoulas' presentation are [available
 here](events/usenix2002/).
 
-#### `Jun 2002` - Open Source Meeting 2002 in Nagoya University ([top](#past))
+### `Jun 2002` - Open Source Meeting 2002 in Nagoya University
 
 *June 8-9, 2002, Nagoya, Japan*
 
-[http://tokai.opensource.jp/tsudoi/2002/](http://tokai.opensource.jp/tsudoi/2002/)
+[](http://tokai.opensource.jp/tsudoi/2002/)
 
-#### `Jun 2002` - Linuxtag 2002 in Karlsruhe ([top](#past))
+### `Jun 2002` - Linuxtag 2002 in Karlsruhe
 
 *June 6-9, 2002, Karlsruhe, Germany*
 
@@ -4258,13 +3746,13 @@ here](events/usenix2002/).
 [report](http://www.feyrer.de/NetBSD/linuxtag-karlsruhe-2002.html) is
 available.
 
-#### `May 2002` - Wakefield 2002, The Acorn RISC OS Show ([top](#past))
+### `May 2002` - Wakefield 2002, The Acorn RISC OS Show
 
 *May 18-19, 2002, Wakefield, UK*
 
 [http://www.wrocc.org.uk/show/2002/](http://www.wrocc.org.uk/show/2002/)
 
-#### `May 2002` - Japan NetBSD Users' Group meeting ([top](#past))
+### `May 2002` - Japan NetBSD Users' Group meeting
 
 *May 18, 2002, T-Zone Minami, Akihabara, Tokyo, Japan*
 
@@ -4276,7 +3764,7 @@ RealVideo. Talking about Zoularis, LCD System Status monitor, devsw
 again, presentation with less, citrus, ACPI, jp.netbsd servers, Upcoming
 1.6 and current, sourceforge.jp, xcast6.
 
-#### `May 2002` - Annual International Free Software Forum ([top](#past))
+### `May 2002` - Annual International Free Software Forum
 
 *May 2-4, 2002, Porto Alegre- RS, Brazil*
 
@@ -4290,7 +3778,7 @@ and Ricardo Nascimento Ferreira (OpenBSD) and they will focus in the
 general aspects of the systems: history, license, goods and bads,
 technical characteristics and philosophy.
 
-#### `Mar 2002` - 4th Chemnitz Linuxday 2002 ([top](#past))
+### `Mar 2002` - 4th Chemnitz Linuxday 2002
 
 *March 9-10, 2002, TU Chemnitz, Chemnitz, Germany*
 
@@ -4303,7 +3791,7 @@ Feyrer, Karl Uwe Lockhoff. A [detailed
 report](http://mail-index.NetBSD.org/netbsd-advocacy/2002/03/11/0000.html)
 is available.
 
-#### `Feb 2002` - GUUG Fr�hjahrsfachgespr�ch 2002 ([top](#past))
+### `Feb 2002` - GUUG Frühjahrsfachgespräch 2002
 
 *February 27-March 1, 2002, Ruhr-Uni Bochum, Bochum, Germany*
 
@@ -4313,14 +3801,14 @@ Presentations given during the spring meeting of the German Unix User
 Group (GUUG) included a report about NetBSD in 2002 and details about
 Rapid Deployment of IPv6 with 6to4, which covered NetBSD (among others).
 
-#### `Feb 2002` - BSDCon 2002 ([top](#past))
+### `Feb 2002` - BSDCon 2002
 
 *February 11-14, 2002, Cathedral Hill Hotel, San Francisco, California,
 USA*
 
 [http://www.usenix.org/events/bsdcon02/cfp/](http://www.usenix.org/events/bsdcon02/cfp/)
 
-#### `Dec 2001` - Internet Week 2001 ([top](#past))
+### `Dec 2001` - Internet Week 2001
 
 *December 3-7, 2001, Yokohama, Japan*
 
@@ -4342,13 +3830,13 @@ Day](http://www.jus.or.jp/events/bsd-linux-day2001/) session talking
 about BSD, Linux, Mail User Agents, Mail Transfer, Office Suite,
 Emulation.
 
-#### `Nov 2001` - BSDCon Europe 2001 ([top](#past))
+### `Nov 2001` - BSDCon Europe 2001
 
 *November 9-11, 2001, Thistle Hotel, Brighton, UK*
 
 [http://www.bsdconeurope.org/](http://www.bsdconeurope.org/)
 
-#### `Oct 2001` - RISC OS 2001 Show ([top](#past))
+### `Oct 2001` - RISC OS 2001 Show
 
 *October 20-21, 2001, Berkshire, England*
 
@@ -4358,7 +3846,7 @@ NetBSD had a stand at the [RISC OS 2001
 Show](http://www.riscos2001.com/). There was various NetBSD boxes on
 display and NetBSD 1.5.2 CDs for sale.
 
-#### `Sep 2001` - NetBSD 1.5.2 release ([top](#past))
+### `Sep 2001` - NetBSD 1.5.2 release
 
 *September 13, 2001*
 
@@ -4368,7 +3856,7 @@ stability, fixing bugs in, and adding some features to [NetBSD
 architectures. More information is available in the [1.5.2 release
 announcement](../releases/formal-1.5/NetBSD-1.5.2.html).
 
-#### `Aug 2001` - LinuxWorld Expo ([top](#past))
+### `Aug 2001` - LinuxWorld Expo
 
 *August 26-30, 2001, San Francisco, CA*
 
@@ -4381,7 +3869,7 @@ LinuxWorld](http://mail-index.NetBSD.org/netbsd-advocacy/2001/08/30/0000.html).
 Also at the booth was the debut of NetBSD running on a Playstation 2
 from Japan.
 
-#### `Jul 2001` - NetBSD 1.5.1 release ([top](#past))
+### `Jul 2001` - NetBSD 1.5.1 release
 
 *July 11, 2001*
 
@@ -4391,7 +3879,7 @@ stability, fixing bugs in, and adding some features to [NetBSD
 architectures. More information is available in the [1.5.1 release
 announcement](../releases/formal-1.5/NetBSD-1.5.1.html).
 
-#### `Jun 2001` - Japan NetBSD Users' Group meeting ([top](#past))
+### `Jun 2001` - Japan NetBSD Users' Group meeting
 
 *June 30, 2001, [ASCII Corporation](http://www.ascii.co.jp/info/),
 Tokyo, Japan*
@@ -4411,7 +3899,7 @@ Zoularis, PS2Linux for NetBSD, and special guest talking with Antti
 Kantee from Finland. Japan NetBSD Users' Group will have a special
 meeting on 54th IETF Yokohama, Japan.
 
-#### `Jun 2001` - USENIX Annual Technical Conference ([top](#past))
+### `Jun 2001` - USENIX Annual Technical Conference
 
 *June 25-30, 2001, Boston, MA*
 
@@ -4443,16 +3931,16 @@ web site.
 
 Again, a thank you to all involved.
 
-#### `Jun 2001` - Open Source Meeting 2001 in Nagoya University ([top](#past))
+### `Jun 2001` - Open Source Meeting 2001 in Nagoya University
 
 *June 9-10, 2001, Nagoya, Japan*
 
-[http://tokai.opensource.jp/tsudoi/2001/](http://tokai.opensource.jp/tsudoi/2001/)
+[](http://tokai.opensource.jp/tsudoi/2001/)
 
 On June 9-10th, 2001, several Bof about open source community in japan
 were held.100+150 persons attended in person.
 
-#### `Jun 2001` - NetWorld+Interop Tokyo, BSD BoF ([top](#past))
+### `Jun 2001` - NetWorld+Interop Tokyo, BSD BoF
 
 *June 7 2001, Chiba, Japan*
 
@@ -4466,7 +3954,7 @@ the discussion over RealVideo transmission. Jun-ichiro itojun Hagino
 wrote up a [summary of the BSD BoF at NetWorld+Interop
 Tokyo](events/interop-tokyo-2001.html).
 
-#### `May 2001` - Wakefield 2001 ([top](#past))
+### `May 2001` - Wakefield 2001
 
 *May 19-20, 2001, Wakefield, UK*
 
@@ -4478,7 +3966,7 @@ and CD-ROMS of the NetBSD system with some additional pre-built packages
 and a copy of the NetBSD web site on them. Also at the show Chris
 Gilbert gave a talk about NetBSD.
 
-#### `Apr 2001` - Comdex Spring 2001 ([top](#past))
+### `Apr 2001` - Comdex Spring 2001
 
 *April 2-5, 2001, Chicago, IL*
 
@@ -4490,7 +3978,7 @@ Spring is available.
 
 Expenses for this event were underwritten by The NetBSD Mission.
 
-#### `Feb 2001` - Open Source Matsuri 2001 in Akihabara ([top](#past))
+### `Feb 2001` - Open Source Matsuri 2001 in Akihabara
 
 *February 10-11, 2001, Tokyo, Japan*
 
@@ -4503,7 +3991,7 @@ demo](http://utoro.imou.to/) with 7000 attendances. Held a Presentation
 & a tutorial about NetBSD by jun@NetBSD.org. [[Reports on
 jp.NetBSD.org](http://www.jp.NetBSD.org/ja/JP/JNUG/event/20010210OSF/)]
 
-#### `Jan 2001` - LinuxWorld Expo 2001 ([top](#past))
+### `Jan 2001` - LinuxWorld Expo 2001
 
 *January 30-February 2, 2001, New York City, USA*
 
@@ -4514,7 +4002,7 @@ Systems](http://www.wasabisystems.com/) at LinuxWorld Expo 2001. The
 stand had a variety of different platforms running NetBSD, 1.5 CDs, and
 other swag.
 
-#### `Dec 2000` - Internet Week 2000 ([top](#past))
+### `Dec 2000` - Internet Week 2000
 
 *December 18-21, 2000, Osaka, Japan*
 
@@ -4535,7 +4023,7 @@ little red [Daemon-kun](http://www.twin.ne.jp/~minamie/ost/) from The
 Open Source Toys Project, BSD goods present time,and more thinking about
 BSD activity in Japan.
 
-#### `Dec 2000` - NetBSD 1.5 release ([top](#past))
+### `Dec 2000` - NetBSD 1.5 release
 
 *December 6, 2000*
 
@@ -4543,13 +4031,13 @@ BSD activity in Japan.
 release](../releases/release-map.html) of NetBSD, was announced to the
 public.
 
-#### `Dec 2000` - Usenix Systems Administration Conference (LISA) ([top](#past))
+### `Dec 2000` - Usenix Systems Administration Conference (LISA)
 
 *December 3-8, 2000, New Orleans, LA*
 
 [http://www.usenix.org/events/lisa2000/](http://www.usenix.org/events/lisa2000/)
 
-#### `Nov 2000` - NetBSD 1.4.3 release ([top](#past))
+### `Nov 2000` - NetBSD 1.4.3 release
 
 *November 25, 2000*
 
@@ -4557,7 +4045,7 @@ NetBSD 1.4.3, a [patch release](../releases/release-map.html) improving
 stability and fixing bugs in [NetBSD-1.4](../releases/formal-1.4/), was
 announced to the public.
 
-#### `Nov 2000` - Comdex Fall 2000 ([top](#past))
+### `Nov 2000` - Comdex Fall 2000
 
 *November 13-17 2000, Las Vegas, NV*
 
@@ -4570,7 +4058,7 @@ sundry bits. The cube also appeared on German 3Sat Neues.
 Expenses for this event were underwritten by LinuxMall and The NetBSD
 Mission.
 
-#### `Oct 2000` - Linux Expo Toronto 2000 ([top](#past))
+### `Oct 2000` - Linux Expo Toronto 2000
 
 *October 30-November 1 2000, Toronto, Ontario, Canada*
 
@@ -4583,7 +4071,7 @@ automated demo which will soon be available in pkgsrc.
 Expenses for this event were underwritten by The NetBSD Mission and
 David Maxwell.
 
-#### `Oct 2000` - RISC OS 2000 ([top](#past))
+### `Oct 2000` - RISC OS 2000
 
 *October 21-22 2000, Epsom, England*
 
@@ -4594,7 +4082,7 @@ A group of NetBSD enthusiasts were one of the exhibitors at RISC OS
 on display. David Brownlee wrote up a report about the [NetBSD stand at
 RISC OS 2000](events/riscos-2000.html).
 
-#### `Oct 2000` - BSDCon 2000 ([top](#past))
+### `Oct 2000` - BSDCon 2000
 
 *October 14-20 2000, Monterey, CA*
 
@@ -4603,16 +4091,15 @@ RISC OS 2000](events/riscos-2000.html).
 NetBSD had a table at this event, and there were a couple of talks
 spotlighting NetBSD.
 
-Erik Berls `<cyber@NetBSD.org>`{.email} and Luke Mewburn
-`<lukem@NetBSD.org>`{.email} gave a talk entitled "NetBSD: Platform for
-the Future". Slides are available at
-[http://www.mewburn.net/luke/talks/bsdcon-2000/](http://www.mewburn.net/luke/talks/bsdcon-2000/).
+Erik Berls <cyber@NetBSD.org> and Luke Mewburn <lukem@NetBSD.org> gave a
+talk entitled "NetBSD: Platform for the Future". Slides are available at
+[](http://www.mewburn.net/luke/talks/bsdcon-2000/).
 
 Also, Jun-ichiro itojun Hagino gave a talk on NetBSD 1.5. A transcript
 is available at
-[ftp://ftp.itojun.org/pub/paper/itojun-bsdcon2000-netbsd15.ps.gz](ftp://ftp.itojun.org/pub/paper/itojun-bsdcon2000-netbsd15.ps.gz).
+[](ftp://ftp.itojun.org/pub/paper/itojun-bsdcon2000-netbsd15.ps.gz).
 
-#### `Oct 2000` - Atlanta Linux Showcase ([top](#past))
+### `Oct 2000` - Atlanta Linux Showcase
 
 *October 12-14 2000, Atlanta, GA*
 
@@ -4624,7 +4111,7 @@ fixed onsite.
 
 Expenses for this event were underwritten by The NetBSD Mission.
 
-#### `Aug 2000` - LinuxWorld Conference & Expo ([top](#past))
+### `Aug 2000` - LinuxWorld Conference & Expo
 
 *August 14-17 2000, San Jose, CA*
 
@@ -4635,7 +4122,7 @@ There was a BSD BoF session on Wednesday August 16th. In the September
 [article](http://ezine.daemonnews.org/200009/linuxworld-2000.html) on
 the BSD presence at LinuxWorld 2000.
 
-#### `Jul 2000` - O'Reilly Open Source Software Convention 2000 ([top](#past))
+### `Jul 2000` - O'Reilly Open Source Software Convention 2000
 
 *July 17-20, 2000, Monterey, CA*
 
@@ -4647,7 +4134,7 @@ a group that included Charles Hannum from NetBSD.
 
 Expenses for this event were underwritten by The NetBSD Mission.
 
-#### `Jul 2000` - Comdex Canada 2000 ([top](#past))
+### `Jul 2000` - Comdex Canada 2000
 
 *July 12-14 2000, Toronto, Ontario, Canada*
 
@@ -4662,7 +4149,7 @@ of another [User Friendly visitor](../images/events/booth_puppy.jpg).
 Expenses for this event were underwritten by LinuxMall, The NetBSD
 Mission and David Maxwell.
 
-#### `Jul 2000` - Japan NetBSD Users' Group meeting ([top](#past))
+### `Jul 2000` - Japan NetBSD Users' Group meeting
 
 *July 1 2000, Tokyo Japan*
 
@@ -4671,7 +4158,7 @@ Mission and David Maxwell.
 The Japan NetBSD Users' Group had their annual meeting, and a NetBSD BoF
 followed.
 
-#### `Jun 2000` - LinuxTag 2000 ([top](#past))
+### `Jun 2000` - LinuxTag 2000
 
 *June 29-July 2 2000, Stuttgart, Germany*
 
@@ -4684,7 +4171,7 @@ Weisgerber has written a [summary](events/linuxtag-2000.html) about his
 experiences at LinuxTag 2000, as one both manning the \*BSD booth and
 giving a talk.
 
-#### `Jun 2000` - Usenix Annual Technical Conference ([top](#past))
+### `Jun 2000` - Usenix Annual Technical Conference
 
 *June 21-22 2000, San Diego, CA*
 
@@ -4710,7 +4197,7 @@ Systems](http://www.wasabisystems.com/).
 Expenses for this event were underwritten by The Usenix Association and
 The NetBSD Mission.
 
-#### `Jun 2000` - German Unix User Group spring '00 meeting ([top](#past))
+### `Jun 2000` - German Unix User Group spring '00 meeting
 
 *June 14-16 2000, Cologne, Germany*
 
@@ -4720,7 +4207,7 @@ NetBSD was represented at the spring meeting of the [German Unix User
 Group](http://www.guug.de/). Ignatios Souvatzis gave a presentation
 about experiences with IPv6 using NetBSD.
 
-#### `Jun 2000` - NetWorld+Interop Tokyo ([top](#past))
+### `Jun 2000` - NetWorld+Interop Tokyo
 
 *June 8 2000, Chiba, Japan*
 
@@ -4730,7 +4217,7 @@ A joint \*BSD users group BOF was held. Jordan Hubbard and Warner Losh
 (of FreeBSD) joined and gave us a talk. BOF session covering various
 \*BSD followed.
 
-#### `Apr 2000` - Comdex Spring 2000 ([top](#past))
+### `Apr 2000` - Comdex Spring 2000
 
 *April 17-20 2000, Chicago, IL*
 
@@ -4739,7 +4226,7 @@ A joint \*BSD users group BOF was held. Jordan Hubbard and Warner Losh
 Expenses for this event were underwritten by LinuxMall and The NetBSD
 Mission.
 
-#### `Apr 2000` - Linux Expo ([top](#past))
+### `Apr 2000` - Linux Expo
 
 *April 10-12 2000, Montreal, Quebec, Canada*
 
@@ -4751,7 +4238,7 @@ snapshot CDs were available.
 
 Expenses for this event were underwritten by The NetBSD Mission.
 
-#### `Mar 2000` - DECUS Munich ([top](#past))
+### `Mar 2000` - DECUS Munich
 
 *March 29, 2000, Munich, Germany*
 
@@ -4760,7 +4247,7 @@ Expenses for this event were underwritten by The NetBSD Mission.
 Ignatios Souvatzis talked about NetBSD news and experiences with IPv6 on
 NetBSD at the DECUS Munich Symposium in Bonn.
 
-#### `Mar 2000` - NetBSD 1.4.2 release ([top](#past))
+### `Mar 2000` - NetBSD 1.4.2 release
 
 *March 19, 2000*
 
@@ -4768,7 +4255,7 @@ NetBSD 1.4.2, a [patch release](../releases/release-map.html) improving
 stability and fixing bugs in [NetBSD-1.4](../releases/formal-1.4/), was
 announced to the public.
 
-#### `Feb 2000` - Linux Expo ([top](#past))
+### `Feb 2000` - Linux Expo
 
 *February 1-3 2000, Paris, France*
 
@@ -4779,7 +4266,7 @@ There was a BSD BoF at the New York Linuxworld on Thursday, February
 
 Expenses for this event were underwritten by The NetBSD Mission.
 
-#### `Dec 1999` - Internet Week 1999 ([top](#past))
+### `Dec 1999` - Internet Week 1999
 
 *December 18 1999, Yokohama, Japan*
 
@@ -4788,7 +4275,7 @@ Expenses for this event were underwritten by The NetBSD Mission.
 There was a [BSD BoF session](http://www.jp.freebsd.org/event/iw99/) on
 Dec 18.
 
-#### `Dec 1999` - The Bazaar ([top](#past))
+### `Dec 1999` - The Bazaar
 
 *December 14-16 1999, New York City, NY*
 
@@ -4799,7 +4286,7 @@ server](http://www.brains.co.jp/).
 
 Expenses for this event were underwritten by The NetBSD Mission.
 
-#### `Nov 1999` - Comdex Fall 1999 ([top](#past))
+### `Nov 1999` - Comdex Fall 1999
 
 *November 15-19 1999, Las Vegas, NV*
 
@@ -4811,7 +4298,7 @@ sets, sample CDs, demo machines, and a few surprises.
 Expenses for this event were underwritten by LinuxMall and The NetBSD
 Mission.
 
-#### `Nov 1999` - Open Source Matsuri99 in Akihabara ([top](#past))
+### `Nov 1999` - Open Source Matsuri99 in Akihabara
 
 *November 12-13, 1999, Akihabara, Tokyo*
 
@@ -4819,7 +4306,7 @@ Japan NetBSD Users' Group ran a booth at Open Source Matsuri'99 in
 Akihabara ("Matsuri" is Japanese word for "Festival"). We had demo
 machines and short Presentation with NetBSD/hpcmips.
 
-#### `Oct 1999` - Atlanta Linux Showcase 1999 ([top](#past))
+### `Oct 1999` - Atlanta Linux Showcase 1999
 
 *October 14-16, 1999, Atlanta, GA*
 
@@ -4830,11 +4317,11 @@ sets and T-shirts were on sale.
 
 Expenses for this event were underwritten by The NetBSD Mission.
 
-#### `Oct 1999` - BSD Social Event in Berlin ([top](#past))
+### `Oct 1999` - BSD Social Event in Berlin
 
 *October 9-10, 1999*
 
-#### `Aug 1999` - NetBSD 1.4.1 release ([top](#past))
+### `Aug 1999` - NetBSD 1.4.1 release
 
 *August 26, 1999*
 
@@ -4842,14 +4329,14 @@ NetBSD 1.4.1, a [patch release](../releases/release-map.html) improving
 stability and fixing bugs in [NetBSD-1.4](../releases/formal-1.4/), was
 announced to the public.
 
-#### `Jul 1999` - Wizards of OS \#1 ([top](#past))
+### `Jul 1999` - Wizards of OS \#1
 
 *July 16-17, 1999, Berlin, Germany*
 
 Patrick M. Hausen talked about FreeBSD, NetBSD, OpenBSD at the Free
 Software Projects panel of the Wizards of OS conference.
 
-#### `Jun 1999` - LinuxTag '99 ([top](#past))
+### `Jun 1999` - LinuxTag '99
 
 *June 26-27, 1999, Kaiserslautern, Germany*
 
@@ -4859,7 +4346,7 @@ The NetBSD Project attended LinuxTag '99 in Kaiserslautern, Germany. We
 exhibited a NetBSD/arm32 system running on a DNARD, and demonstrated the
 package system.
 
-#### `Jun 1999` - Usenix '99 ([top](#past))
+### `Jun 1999` - Usenix '99
 
 *June 6-11, 1999, Monterey, CA*
 
@@ -4870,7 +4357,7 @@ Monterey, CA. There was a Birds of a Feather session on Tuesday 8, 8pm -
 10pm, and an exhibition booth featuring many different platforms. There
 is also a [full report](events/usenix1999.html) available.
 
-#### `Mar 1999` - German Unix User Group spring '99 meeting ([top](#past))
+### `Mar 1999` - German Unix User Group spring '99 meeting
 
 *March 16-19, 1999, Germany*
 
@@ -4887,7 +4374,7 @@ At the \*BSD BoF, Hubert Feyrer explained the changes made in the
 Packages System to what was taken from FreeBSD, Christoph Badura
 answered general NetBSD questions.
 
-#### `May 1999` - NetBSD 1.4 release ([top](#past))
+### `May 1999` - NetBSD 1.4 release
 
 *May 12, 1999*
 
@@ -4895,7 +4382,7 @@ answered general NetBSD questions.
 release](../releases/release-map.html) of NetBSD, was announced to the
 public.
 
-#### `Dec 1998` - NetBSD 1.3.3 release ([top](#past))
+### `Dec 1998` - NetBSD 1.3.3 release
 
 *December 23, 1998*
 
@@ -4903,7 +4390,7 @@ NetBSD 1.3.3, a [patch release](../releases/release-map.html) improving
 stability and fixing bugs in [NetBSD-1.3](../releases/formal-1.3/), was
 announced to the public.
 
-#### `Aug 1998` - Open Source Developer Day ([top](#past))
+### `Aug 1998` - Open Source Developer Day
 
 *August 21, 1998, San Jose, CA*
 
@@ -4911,7 +4398,7 @@ The NetBSD Project was proud to be a partner with O'Reilly and
 Associates for its Open Source Developer Day, held at the Fairmont Hotel
 in San Jose, CA.
 
-#### `Jun 1998` - Usenix freenix track ([top](#past))
+### `Jun 1998` - Usenix freenix track
 
 *June 15-19, 1998, New Orleans, LA*
 
@@ -4922,7 +4409,7 @@ FREENIX was intended to be a showcase for the latest developments and
 interesting applications in freely redistributable software including
 NetBSD, FreeBSD, Linux, OpenBSD, GNU and Samba.
 
-#### `May 1998` - NetBSD 1.3.2 release ([top](#past))
+### `May 1998` - NetBSD 1.3.2 release
 
 *May 29, 1998*
 
@@ -4930,13 +4417,13 @@ NetBSD 1.3.2, a [patch release](../releases/release-map.html) improving
 stability and fixing bugs in [NetBSD-1.3](../releases/formal-1.3/), was
 announced to the public.
 
-#### `Apr 1998` - MTT '98 "Magic Days Trier" ([top](#past))
+### `Apr 1998` - MTT '98 "Magic Days Trier"
 
 *April 25-26, 1998, Germany*
 
 The Amiga1 user group held another MTT.
 
-#### `Mar 1998` - NetBSD 1.3.1 release ([top](#past))
+### `Mar 1998` - NetBSD 1.3.1 release
 
 *March 9, 1998*
 
@@ -4944,7 +4431,7 @@ NetBSD 1.3.1, a [patch release](../releases/release-map.html) improving
 stability and fixing bugs in [NetBSD-1.3](../releases/formal-1.3/), was
 released.
 
-#### `Jan 1998` - NetBSD 1.3 release ([top](#past))
+### `Jan 1998` - NetBSD 1.3 release
 
 *January 4, 1998*
 
@@ -4952,7 +4439,7 @@ released.
 release](../releases/release-map.html) of NetBSD, was announced to the
 public.
 
-#### `May 1997` - NetBSD 1.2.1 release ([top](#past))
+### `May 1997` - NetBSD 1.2.1 release
 
 *May 20, 1997*
 
@@ -4960,22 +4447,22 @@ NetBSD 1.2.1, a [patch release](../releases/release-map.html) improving
 stability and fixing bugs in [NetBSD-1.2](../releases/formal-1.2/), was
 announced to the public.
 
-#### `Apr 1997` - MTT '97 "Magic Days Trier" ([top](#past))
+### `Apr 1997` - MTT '97 "Magic Days Trier"
 
 *April 19-20, 1997, Germany*
 
 A NetBSD-1.2.1/Amiga preview, running on a DraCo and (after installing
-it live over ARCnet) on an Amiga 3000, was presented by J�rgen Schmitz
+it live over ARCnet) on an Amiga 3000, was presented by Jürgen Schmitz
 and Ignatios Souvatzis at the MTT '97.
 
-#### `Apr 1997` - DECUS Munich ([top](#past))
+### `Apr 1997` - DECUS Munich
 
 *April 17, 1997, Bonn, Germany*
 
 Ignatios Souvatzis presented a talk about *NetBSD on Digital Hardware*
 at the [DECUS Munich](http://www.decus.de/) Symposium in Bonn.
 
-#### `Jan 1997` - Anaheim Usenix Birds of a Feather ([top](#past))
+### `Jan 1997` - Anaheim Usenix Birds of a Feather
 
 *January 14, 1997, Anaheim, CA*
 
@@ -4984,4 +4471,3 @@ held in Anaheim California. Christos Zoulas spoke about the current
 state, goals and future directions of the project, while Paul
 Kranenburg, Aaron Brown and Chris Demetriou answered questions about the
 sparc and the alpha ports respectively.
-
