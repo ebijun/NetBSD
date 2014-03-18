@@ -45,46 +45,36 @@ OSC浜松まとめ
  :widths: 25 15 60
 
  松屋,会場近く,松屋フーズではない
- さわやか,各地,ハンバーグ
+ さわやか,高塚が行きやすい？,ハンバーグでごじゃるよ
  飛行場,高塚,喫茶店だけど飛行機と飛行機書籍充実
- ティルナノーグ,第一通り,ベアードビールあり。土日祝15:00-
+ ティルナノーグ,第一通り駅,ベアードビールあり。土日祝15:00-
  オーディオウィンズ,西ヶ崎, 自作真空管アンプ支援店
  テクソル,和田町,浜ホト開発者から真空管輸入業へ。
- マルツ発祥地,,
- マルツ,,マルツのある街は安心できる。
- サントス,,
- ヤサカ,,
- 三太,,
- アールクラフト,,
- 第一無線,,
- むらたのたこやき,,
- シンタロウ,,
+ マルツ発祥地,会場近く,看板がある
+ マルツ,高林,ハードオフとマルツがある完全地帯
+ サントス,ターミナルから第一通り,朝はサイフォン珈琲
+ ヤサカ,領家,ポークカレー 白い鉄塔そば
+ 三太,モール街,学生ラーメンとは何か
+ アールクラフト,鍛冶町,溢るる鉄道ミニカーレジンキット
+ むつぎく,砂山町,餃子。改装してます
+ 浜松市楽器博物館,浜松駅前,電子楽器コーナーができた
+ トゥルネ・ラ・パージュ,板屋町,アヴァンギャルドフルセットが鳴る喫茶店
+ クロスオーディオ,磐田,東新町行きバスで西貝塚下車
+ Choupana(ショウパーナ),住吉,シュハスコ食べ放題
+ マイン・シュロス,中央,はままつ地ビール
+ 天神蔵,天神町,天神。家康くんビールとは何か
+ 加茂花菖蒲園,原田,氷菓の千反田邸モデル。 4/26-6/30開園
+ マムゼル,袋井,ライブがあるジャズ喫茶
+ ダダリ,焼津,晩年リヒテルが気に入ってよく来ていた。「リヒテル」のサインがある。
+ そば屋 案山棒,西焼津,舞踊演劇ライブあり。大駱駝艦→大豆鼓ファーム→そ。
+ 第一無線,豊橋,オーディオ老舗の二階を見よ
+ むらたのたこやき,豊橋駅ビル地下,みんなこのたこやきでNetBSD開発者になった
+ Shinnosuke.O,豊橋駅前大通り,クラフトビールと古本。名古屋Keg出身。
  まつや,豊橋,松屋フーズではない。豊橋カレーうどん。
- ほしの珈琲,豊橋
- チューブアンプクラブ豊橋,,http://www.geocities.jp/tactoyohashi/concert2.htm　
+ ほしの珈琲,豊橋,愛大前珈琲
+ チューブアンプクラブ豊橋,豊橋,http://www.geocities.jp/tactoyohashi/concert2.htm　
  トーチカ,二川,http://www.k4.dion.ne.jp/~entaigou/toyohashi.html
- タケウチ電子,,
- むつぎく,,
- （株）マルツ電波 高林店パーツ,,
- 株式会社テクソル,,
- 喫茶　飛行場,,
- 浜松市楽器博物館,,
- トゥルネ・ラ・パージュ,,
- クロスオーディオ,,
- さわやか東伊場店,,
- Choupana(ショウパーナ),,
- マイン・シュロス,,
- 天神蔵,,
- ハードオフ オフハウス浜松高林店,,
- ハードオフ浜松有玉店,,
- ハードオフ浜松芳川店,,
- カレー処ヤサカ,,
- 加茂花菖蒲園,,
- ハードオフ・オフハウス掛川店,,
- マムゼル,,
- ベストバイ,,
- ダダリ,,
- そば屋 案山棒,,
+ タケウチ電子,豊橋駅前,みんなこの無線屋に通ってNetBSD開発者になった
 
 OSC浜名湖主な展示物
 ~~~~~~~~~~~~~~~~~
@@ -92,46 +82,46 @@ OSC浜名湖主な展示物
 .. csv-table::
  :widths: 15 15 60
 
- 2013/2/9,浜松,RPI
+ 2013/2/9,浜松,RPI WZero3
 
-.. image:: ../Picture.org/2013/04/21/DSC_1981.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1982.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1983.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1984.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1985.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1986.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1987.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1988.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1989.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1990.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1991.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1992.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1993.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1994.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1995.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1996.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1997.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1998.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_1999.jpg
-.. image:: ../Picture.org/2013/04/21/DSC_2000.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02393.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02394.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02395.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02396.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02397.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02398.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02399.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02400.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02401.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02402.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02404.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02405.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02406.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02407.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02408.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02409.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02410.jpg
-.. image:: ../Picture.org/2013/04/21/dsc02411.jpg
+.. image:: ../Picture/2013/04/21/DSC_1981.jpg
+.. image:: ../Picture/2013/04/21/DSC_1982.jpg
+.. image:: ../Picture/2013/04/21/DSC_1983.jpg
+.. image:: ../Picture/2013/04/21/DSC_1984.jpg
+.. image:: ../Picture/2013/04/21/DSC_1985.jpg
+.. image:: ../Picture/2013/04/21/DSC_1986.jpg
+.. image:: ../Picture/2013/04/21/DSC_1987.jpg
+.. image:: ../Picture/2013/04/21/DSC_1988.jpg
+.. image:: ../Picture/2013/04/21/DSC_1989.jpg
+.. image:: ../Picture/2013/04/21/DSC_1990.jpg
+.. image:: ../Picture/2013/04/21/DSC_1991.jpg
+.. image:: ../Picture/2013/04/21/DSC_1992.jpg
+.. image:: ../Picture/2013/04/21/DSC_1993.jpg
+.. image:: ../Picture/2013/04/21/DSC_1994.jpg
+.. image:: ../Picture/2013/04/21/DSC_1995.jpg
+.. image:: ../Picture/2013/04/21/DSC_1996.jpg
+.. image:: ../Picture/2013/04/21/DSC_1997.jpg
+.. image:: ../Picture/2013/04/21/DSC_1998.jpg
+.. image:: ../Picture/2013/04/21/DSC_1999.jpg
+.. image:: ../Picture/2013/04/21/DSC_2000.jpg
+.. image:: ../Picture/2013/04/21/dsc02393.jpg
+.. image:: ../Picture/2013/04/21/dsc02394.jpg
+.. image:: ../Picture/2013/04/21/dsc02395.jpg
+.. image:: ../Picture/2013/04/21/dsc02396.jpg
+.. image:: ../Picture/2013/04/21/dsc02397.jpg
+.. image:: ../Picture/2013/04/21/dsc02398.jpg
+.. image:: ../Picture/2013/04/21/dsc02399.jpg
+.. image:: ../Picture/2013/04/21/dsc02400.jpg
+.. image:: ../Picture/2013/04/21/dsc02401.jpg
+.. image:: ../Picture/2013/04/21/dsc02402.jpg
+.. image:: ../Picture/2013/04/21/dsc02404.jpg
+.. image:: ../Picture/2013/04/21/dsc02405.jpg
+.. image:: ../Picture/2013/04/21/dsc02406.jpg
+.. image:: ../Picture/2013/04/21/dsc02407.jpg
+.. image:: ../Picture/2013/04/21/dsc02408.jpg
+.. image:: ../Picture/2013/04/21/dsc02409.jpg
+.. image:: ../Picture/2013/04/21/dsc02410.jpg
+.. image:: ../Picture/2013/04/21/dsc02411.jpg
 .. image:: ../Picture/2013/02/09/DSC_1605.jpg
 .. image:: ../Picture/2013/02/09/DSC_1606.jpg
 .. image:: ../Picture/2013/02/09/DSC_1607.jpg

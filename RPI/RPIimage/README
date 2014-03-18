@@ -1,47 +1,75 @@
-VERSION: :1,$s/2014-02-28/2014-02-28/g
-ISO:     :1,$s/201402240520Z/201402240520Z/g
-PKGSRC:  :1,$s/2014-02-22/2014-02-22/g
-NetBSD:  :1,$s/6.99.32/6.99.32/g
+VERSION: :1,$s/2014-03-22/2014-03-22/g
+ISO:     :1,$s/201403161940Z/201403161940Z/g
+PKGSRC:  :1,$s/2014-03-15/2014-03-15/g
+NetBSD:  :1,$s/6.99.36/6.99.36/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-02-28-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-03-22-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-02-28-netbsd-raspi.img.gz for RPI.
+I've updated 2014-03-22-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-02-28-earmhf/2014-02-28-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-03-22-earmhf/2014-03-22-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.32 evbarm-earmhf 201402240520Z from nyftp
-- pkgsrc-current         2014-02-22 tarball from ftp.NetBSD
+- NetBSD-current 6.99.36 evbarm-earmhf 201403161940Z from nyftp
+- pkgsrc-current         2014-03-15 tarball from ftp.NetBSD
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-02-28-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-03-22-netbsd-raspi.img.gz      earmhf
+
+[NEW] Pre-compiled packages:
+- Pre-compiled packages path setting: see /etc/pkg_install.conf 
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-03-22/
+ To install application.
+ # pkg_add some_application_name
+
+- Web Browser on pre-compiled packages
+   http://movapic.com/ebijun/pic/5113907
+  deforaos-surfer
+  dillo
+  epiphany
+  midori
+- deforaos packages : (Thanx khorben@ in AsiaBSDCon2014 !)
+  deforaos-browser
+  deforaos-camera
+  deforaos-coder
+  deforaos-editor
+  deforaos-keyboard
+  deforaos-locker
+  deforaos-mailer
+  deforaos-mixer
+  deforaos-panel
+  deforaos-pdfviewer
+  deforaos-phone
+  deforaos-player
+  deforaos-surfer
+
+[NEW] Sharp NetWalker special kernel (Thanx h_kenken@ in AsiaBSDCon2014!)
+  /boot/netbsd.netwalker.touchpad.zImage is a special kernel by h_kenken.
+
+  1. Make backup image on NetWalker ubuntu.
+  2. cp /boot/netbsd.netwalker.touchpad.zImage [BackupImage]/boot/zImage
+  3. Fix this RPI image:/etc/fstab :1,$s/ld0/sd0/g
+  4. Set [BackupImage] MicroSD to NetWalker MicroSD port
+  5. Set RPI image to USB port via SD to USB dongle.
+  6. With pushing [L Mouse][R Mouse],push Power button in 5 seconds.
+  7. Pray for success in 5 seconds.
+  8. Typical NetBSD Boot message appears on your console.
+  9. startx and mouse can control with small touchpad.
 
 Todo:
-- More Migration test for hardfloat: userland and pkgsrc 
-  Check your favorite pkgsrc on RPI.
-  This image is a sample NetBSD workbench for you.
-  Once you make NetBSD environment,It should run on every hardware you have.
-- ByteBenchmarking between softfloat vs hardfloat:
-  earmhf:  https://twitter.com/oshimyja/status/400306733035184129
-  evbarm:  https://twitter.com/oshimyja/status/400303304573341696
-- ByteBenchmarking between 6.1 vs current
-  NODEBUG: https://twitter.com/oshimyja/status/402105186128121858
-       6.1: 24.3  6.99.32: 22.5  smells like PenIII 300MHz spirit.
-- Still need more good web browser. (seamonkey,midori,deforaos)
-- test deforaos,need icon packages and setting (adviced by obache)
 - Need GPIO & bus controll document and implimentation (via lua?)
 - comment out kernel DEBUG/DIAGNOSTIC option
-- use pkgchk.conf
+- DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 
 =====================
 
-For OpenSourceConference 2014Tokyo/Spring NetBSD booth
- (https://www.facebook.com/events/396197103843177/)
+For OpenSourceConference 2014 Hamanako NetBSD booth
+ (https://www.facebook.com/events/219229504913284/)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.32 earmhf rpi.img.gz base
+- NetBSD 6.99.36 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -63,9 +91,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-02-22 tree inside.
+  - pkgsrc: 2014-03-15 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-02-28-earmhf/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-03-22-earmhf/packages
 
 Installed Packages:
 kterm
@@ -86,7 +114,8 @@ mlterm
 pkg_chk
 lintpkgsrc
 
-To set HDMI output,add "console=fb" on cmdline.txt.
+To control HDMI output,add/delete "console=fb" on cmdline.txt.
+If delete console=fb definition,you can get serial console instead.
  rpi$ more /boot/cmdline.txt
  root=ld0a console=fb
 
@@ -105,14 +134,6 @@ Build sample script:
 Guide:
  https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
 
-Fixed:
-1. icewm icon color problem
- Update:pkgsrc/wm/icewm: icewm-1.2.38pre2
-
-2. bpf problem on 2013-11-08.
-cd /dev/;sh MAKEDEV all
-http://www.raspberrypi.org/phpBB3/viewtopic.php?p=455709#p455709
-
 Need Fix:
 1. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch. (sample binary replaced in this image)
  xsrc/48347: still open,anybody cares? 
@@ -123,31 +144,6 @@ patch: xsrc/external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c
 
  bluetooth keyboard: add configration
   include "dev/bluetooth/bluetoothdevices.config"
-
-Wishlist from RPI user: please notify @ebijun
-1. USB multifunction dongle.
- Bluetooth and urtwn : need multifunction support codes.
- http://www.raspberrypi.org/phpBB3/viewtopic.php?f=82&t=58873
- https://github.com/ebijun/NetBSD/blob/master/Guide/Device/BT-Micro3H2X/index.rst
-
-2. pkgsrc status:
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/{evbarm,earmhf}
-
-                    evbarm earmhf
-devel/gmp             x      o
-emulators/xnp2        o
-games/onscripter      o
-lang/squeak           o
-lang/ocaml            x
-print/evince
-www/epiphany          x      o
-www/midori            x      o
-www/seamonkey         x      x
-www/php-ja-wordpress  o
-
-
-NetBSD/evbarm under QEMU
- http://wiki.netbsd.org/ports/evbarm/qemu_arm/
 
 One more time: (we're gonna celebrate
 
