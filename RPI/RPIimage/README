@@ -58,6 +58,17 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-03-22
   8. Typical NetBSD Boot message appears on your console.
   9. startx and mouse can control with small touchpad.
 
+[NEW] musica - DLNA/UPnP music server (Thanx @cvsync in AsiaBSDCon2014!)
+ MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
+ 
+  1. Check http://www.m-systems.co.jp/musica/
+  2. Download musica-0.1.7-netbsd6-evbarm.tar.xz for evaluation.
+  3. Extract tar file and read documents.
+  4. ./musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
+  5. Find from DLNA/UPnP AV equipment.
+  6. With a little luck,you'll find musica and enjoy music via musica.
+  7. If you feel slow,Try {NetBSD/amd64,OSX,Ubuntu} Version or improve NetBSD.
+
 Todo:
 - Need GPIO & bus controll document and implimentation (via lua?)
 - comment out kernel DEBUG/DIAGNOSTIC option
