@@ -113,7 +113,6 @@ OSC浜名湖主な展示物
 .. image:: ../Picture/2013/02/09/dsc02125.jpg
 .. image:: ../Picture/2013/02/09/dsc02126.jpg
 .. image:: ../Picture/2013/02/09/dsc02128.jpg
-.. image:: ../Picture/2013/01/20/DSC_1549.JPG
 .. image:: ../Picture/2013/01/20/DSC_1550.jpg
 .. image:: ../Picture/2013/01/20/DSC_1554.jpg
 .. image:: ../Picture/2013/01/20/DSC_1556.jpg
