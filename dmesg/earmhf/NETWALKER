@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.36 (NETWALKER) #144: Mon Mar 17 02:17:52 UTC 2014
+NetBSD 6.99.36 (NETWALKER) #167: Wed Mar 19 04:48:27 UTC 2014
 	kenichi@mainecoon.zoo-lan:/home/kenichi/netbsd/tnf/obj/sys/arch/evbarm/compile/NETWALKER
 total memory = 512 MB
 avail memory = 497 MB
@@ -26,7 +26,8 @@ tzic0 at axi0 addr 0xe0000000-0xe0003fff irqbase 0: TrustZone Interrupt Controll
 tzic0: interrupts 0..128  register VA:0xca05c000
 imxccm0 at axi0 addr 0x73fd4000: Clock control module
 imxccm0: CPU clock=800000000, UART clock=66500000
-imxccm0: mainbus clock=332500000, ahb clock=66500000 ipg clock=33250000 perclk=24000000
+imxccm0: PLL1 clock=800000000, PLL2 clock=665000000, PLL3 clock=216000000
+imxccm0: mainbus clock=665000000, ahb clock=133000000 ipg clock=66500000 perclk=24000000
 imxgpio0 at axi0 addr 0x73f84000 intr 50 irqbase 128: interrupts 128..159
 imxgpio1 at axi0 addr 0x73f88000 intr 52 irqbase 160: interrupts 160..191
 imxgpio2 at axi0 addr 0x73f8c000 intr 54 irqbase 192: interrupts 192..223
@@ -37,6 +38,7 @@ sdhc0: SD Host Specification 1.0, rev.0
 sdmmc0 at sdhc0 slot 0
 imxclock0 at axi0 addr 0x73fac000-0x73faffff intr 40
 imxclock1 at axi0 addr 0x73fb0000-0x73fb3fff intr 41
+imxwdog0 at axi0 addr 0x73f98000 intr 58: i.MX Watchdog Timer, default period is 10 seconds (armed)
 imxiomux0 at axi0 addr 0x73fa8000
 ipu0 at axi0: i.MX51 IPUV3 controller
 ipu0: console
@@ -64,8 +66,8 @@ spi0 at imxspi0: SPI bus
 oj6sh0 at spi0 slave 2: OJ6SH-T25 Optical Joystick
 wsmouse0 at oj6sh0 mux 0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-timecounter: Timecounter "epit" frequency 33250000 Hz quality 100
-imxclock0: timer clock frequency 33250000
+timecounter: Timecounter "epit" frequency 66500000 Hz quality 100
+imxclock0: timer clock frequency 66500000
 clock: hz=100 stathz = 0
 gpio0 at imxgpio0: 32 pins
 gpio1 at imxgpio1: 32 pins
@@ -114,3 +116,4 @@ WARNING: CHECK AND RESET THE DATE!
 init path (default /sbin/init): 
 init: trying /sbin/init
 wsdisplay0: screen 4 added (std, vt100 emulation)
+WARNING: negative runtime; monotonic clock has gone backwards
