@@ -61,7 +61,7 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-03-22
 [NEW] musica - DLNA/UPnP music server (Thanx @cvsync in AsiaBSDCon2014!)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
-  1. Check http://www.m-systems.co.jp/musica/
+  1. Check http://www.m-systems.co.jp/musica/index_en.html .
   2. Download musica-0.1.8-netbsd6-evbarm.tar.xz for evaluation.
   3. Extract tar file and read documents.
   4. ./musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
@@ -159,10 +159,12 @@ patch: xsrc/external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c
 One more time: (we're gonna celebrate
 
  1. login root
- 2. start mlterm-fb 
-   # mlterm-fb
+ 2. mlterm-fb 
  3. ftp http://mlterm.sf.net/vimperator.six
  4. cat vimperator.six
+ 5. exit 
+ 6. mlterm-fb --rotate=left
+ 7. cat vimperator.six
 
 One more legal notice:
  run mikutter on Apr.1.
