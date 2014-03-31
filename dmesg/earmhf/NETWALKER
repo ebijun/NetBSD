@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.36 (NETWALKER) #167: Wed Mar 19 04:48:27 UTC 2014
-	kenichi@mainecoon.zoo-lan:/home/kenichi/netbsd/tnf/obj/sys/arch/evbarm/compile/NETWALKER
+NetBSD 6.99.39 (NETWALKER) #0: Sun Mar 30 17:12:31 UTC 2014
+	builds@b6.netbsd.org:/home/builds/ab/HEAD/evbarm-earmhf/201403301510Z-obj/home/builds/ab/HEAD/src/sys/arch/evbarm/compile/NETWALKER
 total memory = 512 MB
 avail memory = 497 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -23,10 +23,9 @@ vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propogation, denormals
 vfp0: mvfr: [0]=0x11110222 [1]=0x11110222
 axi0 at mainbus0: Advanced eXtensible Interface
 tzic0 at axi0 addr 0xe0000000-0xe0003fff irqbase 0: TrustZone Interrupt Controller
-tzic0: interrupts 0..128  register VA:0xca05c000
+tzic0: interrupts 0..128  register VA:0xca058000
 imxccm0 at axi0 addr 0x73fd4000: Clock control module
 imxccm0: CPU clock=800000000, UART clock=66500000
-imxccm0: PLL1 clock=800000000, PLL2 clock=665000000, PLL3 clock=216000000
 imxccm0: mainbus clock=665000000, ahb clock=133000000 ipg clock=66500000 perclk=24000000
 imxgpio0 at axi0 addr 0x73f84000 intr 50 irqbase 128: interrupts 128..159
 imxgpio1 at axi0 addr 0x73f88000 intr 52 irqbase 160: interrupts 160..191
@@ -38,7 +37,7 @@ sdhc0: SD Host Specification 1.0, rev.0
 sdmmc0 at sdhc0 slot 0
 imxclock0 at axi0 addr 0x73fac000-0x73faffff intr 40
 imxclock1 at axi0 addr 0x73fb0000-0x73fb3fff intr 41
-imxwdog0 at axi0 addr 0x73f98000 intr 58: i.MX Watchdog Timer, default period is 10 seconds (armed)
+imxwdog0 at axi0 addr 0x73f98000 intr 58: i.MX Watchdog Timer, default period is 10 seconds
 imxiomux0 at axi0 addr 0x73fa8000
 ipu0 at axi0: i.MX51 IPUV3 controller
 ipu0: console
@@ -46,21 +45,17 @@ wsdisplay0 at ipu0 kbdmux 1: console (std, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (std, vt100 emulation)
 imxusbc_match
-imxusbc0 at axi0 addr 0x73f80000ehci0 at imxusbc0 unit 0 irq 18
+imxusbc0 at axi0 addr 0x73f80000ehci0 at imxusbc0
 ehci0: i.MX USB Controller id=5 revision=65 HCI revision=0x100
 ehci0: 1 host port, device capable, 8 endpoints
 ehci0: EHCI version 1.0
 usb0 at ehci0: USB revision 2.0
-ehci1 at imxusbc0 unit 1 irq 14
+ehci1 at imxusbc0
 ehci1: i.MX USB Controller id=5 revision=65 HCI revision=0x100
 ehci1: 1 host port
-ehci1: ULPI phy VID 0x0400 PID 0x0006
+ehci1: ULPI phy VID 0x0418 PID 0x0006
 ehci1: EHCI version 1.0
 usb1 at ehci1: USB revision 2.0
-imxi2c0 at axi0 addr 0x83fc8000 intr 62: i.MX IIC bus controller
-iic0 at imxi2c0: I2C bus
-imxi2c1 at axi0 addr 0x83fc4000 intr 63: i.MX IIC bus controller
-iic1 at imxi2c1: I2C bus
 imxspi0 at axi0 addr 0x70010000 intr 36: i.MX eCSPI Controller (clock 54000000 Hz)
 spi0 at imxspi0: SPI bus
 oj6sh0 at spi0 slave 2: OJ6SH-T25 Optical Joystick
@@ -71,7 +66,7 @@ imxclock0: timer clock frequency 66500000
 clock: hz=100 stathz = 0
 gpio0 at imxgpio0: 32 pins
 gpio1 at imxgpio1: 32 pins
-mousebtn0 at gpio1 pins 22 23: NETWALKER mouse button
+mousebtn0 at gpio1 pins 22 23: NetWalker mouse button
 wsmouse1 at mousebtn0 mux 0
 gpio2 at imxgpio2: 32 pins
 gpio3 at imxgpio3: 32 pins
@@ -79,6 +74,13 @@ uhub0 at usb0: i.MX EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 uhub1 at usb1: i.MX EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub1: 1 port with 1 removable, self powered
+oj6sh0: id 0x0d, revision 0x02
+WARNING: module error: can't find builtin dependency `iic'
+WARNING: module error: can't find builtin dependency `au8522'
+WARNING: module error: can't find builtin dependency `iic'
+WARNING: module error: can't find builtin dependency `iic'
+WARNING: module error: can't find builtin dependency `iic'
+WARNING: module error: can't find builtin dependency `iic'
 ld0 at sdmmc0: <0x02:0x544d:SA02G:0x09:0x28427115:0x0c1>
 ld0: 1898 MB, 964 cyl, 64 head, 63 sec, 512 bytes/sect x 3887104 sectors
 ld0: 4-bit width, bus clock 50.000 MHz
@@ -96,24 +98,26 @@ uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=1, output=0, feature=0
 uhid2 at uhidev1 reportid 3: input=2, output=0, feature=0
 umass0 at uhub2 port 1 configuration 1 interface 0
-umass0: SanDisk Corp. SDDR-113, rev 2.00/1.27, addr 3
+umass0: SanDisk Cruzer Fit, rev 2.00/1.27, addr 3
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <SanDisk, SDDR-113, 1.00> disk removable
-sd0: fabricating a geometry
-sd0: 15079 MB, 15079 cyl, 64 head, 32 sec, 512 bytes/sect x 30881792 sectors
-oj6sh0: id 0x0d, revision 0x02
+sd0 at scsibus0 target 0 lun 0: <SanDisk, Cruzer Fit, 1.27> disk removable
+sd0: 15267 MB, 31018 cyl, 16 head, 63 sec, 512 bytes/sect x 31266816 sectors
 boot device: <unknown>
 root device: sd0
 dump device (default sd0b): 
 file system (default generic): 
 root on sd0a dumps on sd0b
-sd0: fabricating a geometry
 root file system type: ffs
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 init path (default /sbin/init): 
 init: trying /sbin/init
-wsdisplay0: screen 4 added (std, vt100 emulation)
 WARNING: negative runtime; monotonic clock has gone backwards
+wsdisplay0: screen 4 added (std, vt100 emulation)
+rum0 at uhub2 port 2
+rum0: Abocom 802.11 bg WLAN, rev 2.00/0.01, addr 4
+rum0: MAC/BBP RT2573 (rev 0x2573a), RF RT2528, address 00:90:cc:f7:da:eb
+rum0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+rum0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
