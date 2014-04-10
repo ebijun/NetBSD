@@ -1,55 +1,34 @@
-VERSION: :1,$s/2014-03-22/2014-03-22/g
+VERSION: :1,$s/2014-04-12/2014-04-12/g
 ISO:     :1,$s/201403161940Z/201403161940Z/g
-PKGSRC:  :1,$s/2014-03-15/2014-03-15/g
-NetBSD:  :1,$s/6.99.36/6.99.36/g
+PKGSRC:  :1,$s/2014-04-07/2014-04-07/g
+NetBSD:  :1,$s/6.99.40/6.99.40/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-03-22-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-04-12-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-03-22-netbsd-raspi.img.gz for RPI.
+I've updated 2014-04-12-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-03-22-earmhf/2014-03-22-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-04-12-earmhf/2014-04-12-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.36 evbarm-earmhf 201403161940Z from nyftp
-- pkgsrc-current         2014-03-15 tarball from ftp.NetBSD
+- NetBSD-current 6.99.40 evbarm-earmhf 201403161940Z from nyftp
+- pkgsrc-current         2014-04-07 tarball from ftp.NetBSD
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-03-22-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-04-12-netbsd-raspi.img.gz      earmhf
 
-[NEW] Pre-compiled packages:
+Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-03-22/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-04-12/
  To install application.
  # pkg_add some_application_name
 
-- Web Browser on pre-compiled packages
-   http://movapic.com/ebijun/pic/5113907
-  deforaos-surfer
-  dillo
-  epiphany
-  midori
-- deforaos packages : (Thanx khorben@ in AsiaBSDCon2014!)
-  deforaos-browser
-  deforaos-camera
-  deforaos-coder
-  deforaos-editor
-  deforaos-keyboard
-  deforaos-locker
-  deforaos-mailer
-  deforaos-mixer
-  deforaos-panel
-  deforaos-pdfviewer
-  deforaos-phone
-  deforaos-player
-  deforaos-surfer
-
-[NEW] Sharp NetWalker special kernel (Thanx h_kenken@ in AsiaBSDCon2014!)
-  /boot/netbsd.netwalker.touchpad.zImage is a special kernel by h_kenken.
+Sharp NetWalker special kernel: (Thanx h_kenken@)
+  /boot/netbsd-NETWALKER.bin.gz is a kernel for Sharp NetWalker.
 
   1. Make backup image on NetWalker ubuntu.
-  2. cp /boot/netbsd.netwalker.touchpad.zImage [BackupImage]/boot/zImage
+  2. cp /boot/netbsd-netwalker.bin.gz [BackupImage]/boot/zImage
   3. Fix this RPI image:/etc/fstab :1,$s/ld0/sd0/g
   4. Set [BackupImage] MicroSD to NetWalker MicroSD port
   5. Set RPI image to USB port via SD to USB dongle.
@@ -58,11 +37,11 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-03-22
   8. Typical NetBSD Boot message appears on your console.
   9. startx and mouse can control with small touchpad.
 
-[NEW] musica - DLNA/UPnP music server (Thanx @cvsync in AsiaBSDCon2014!)
+musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.1.8-netbsd6-evbarm.tar.xz for evaluation.
+  2. Download musica-0.1.11-netbsd6-evbarm-earmhf.tar.xz for evaluation.
   3. Extract tar file and read documents.
   4. ./musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
@@ -76,11 +55,11 @@ Todo:
 
 =====================
 
-For OpenSourceConference 2014 Hamanako NetBSD booth
- (https://www.facebook.com/events/219229504913284/)
+For OpenSourceUnConference 2014 Kagawa NetBSD booth
+XXX (https://www.facebook.com/events//)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.36 earmhf rpi.img.gz base
+- NetBSD 6.99.40 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -102,9 +81,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-03-15 tree inside.
+  - pkgsrc: 2014-04-07 tree inside.
   - pre-build packages
-   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-03-22-earmhf/packages
+   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-04-12-earmhf/packages
 
 Installed Packages:
 kterm
@@ -145,9 +124,9 @@ Build sample script:
 Guide:
  https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
 
-Fixed: (thanx christos!)
+Fixed: 
 1. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch. (sample binary replaced in this image)
- xsrc/48347: still open,anybody cares? 
+ xsrc/48347: (thanx christos!)
  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48347
 
 One more time: (we're gonna celebrate

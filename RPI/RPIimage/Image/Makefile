@@ -9,11 +9,13 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 IMAGE=/usr/release/earmhf/images/NetBSD-6.99.40-evbarm-earmhf.iso 
 
 
-PKGSRC=pkgsrc-2014-03-29.tar.gz
+PKGSRC=pkgsrc-2014-04-07.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
 RPI=${MNT_CDROM}/evbarm/binary/gzimg/rpi.img
+NETWALKER=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.gz
+NETWALKERBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.bin.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules text xbase xcomp xetc xfont xserver
@@ -34,6 +36,10 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
+	mount /dev/${VND}e ${MNT}/boot
+	cp ${NETWALKER} ${MNT}/boot
+	cp ${NETWALKERBIN} ${MNT}/boot
+	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
 

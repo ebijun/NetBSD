@@ -39,12 +39,13 @@ Maps:
  http://www.jp.netbsd.org/ja/JP/ml/admin-ja/200107/msg00006.html
  http://www.yagoto-urayama.jp/~oshimaya/nbug/oss2001/index.html
 
-四国でのオープンソースカンファレンス
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..
+ 四国でのオープンソースカンファレンス
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. csv-table::
+.. 
+ csv-table::
  :widths: 20 15 20 20 20
-
  開催年,場所,開催日,参加者,参加グループ
  2009, Kochi    ,  11/14,   90  ,    17
  2011, Kagawa   ,  2/5  ,   150 ,    28
