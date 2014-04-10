@@ -46,7 +46,7 @@
  :maxdepth: 2
  :numbered:
 
- Place/hamamatsu
+ Place/kagawa
  Place/intro
  RPI
 
