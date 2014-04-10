@@ -1,6 +1,7 @@
 
-for i in `grep -hv \# List List_compile`
+for i in `grep -hv \# List `
 do
 	echo $i
-	(cd /usr/pkgsrc/*/$i;make package-install)
+	#(cd /usr/pkgsrc/*/$i;make package-install)
+	pkg_add $i
 done

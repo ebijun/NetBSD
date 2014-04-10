@@ -65,7 +65,7 @@ RaspberryPIでNetBSDを使ってみる
 
  earmhf (EARM：ハードフロート 通常はこちらを利用してください)
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2014-03-22-earmhf/2014-03-22-netbsd-raspi.img.gz
+ 2014-04-12-earmhf/2014-04-12-netbsd-raspi.img.gz
  
  evbarm (ソフトフロート：hpcarm/zaurus互換)
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
@@ -77,7 +77,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2014-03-22-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2014-04-12-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
 
 RaspberryPIの起動
 ------------------
@@ -173,7 +173,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 ::
 
  % cat /etc/pkg_install.conf
-　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-03-22-earmhf/packages
+　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-04-12
 
 * パッケージのインストール
 
@@ -200,7 +200,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- 2014/03/15時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
+ 2014/04/07時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
@@ -253,7 +253,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2014-03-22-netbsd-raspi.img
+ # vnconfig vnd0 2014-04-12-netbsd-raspi.img
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
