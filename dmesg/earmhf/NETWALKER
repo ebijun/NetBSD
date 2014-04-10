@@ -4,10 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.39 (NETWALKER) #0: Sun Mar 30 17:12:31 UTC 2014
-	builds@b6.netbsd.org:/home/builds/ab/HEAD/evbarm-earmhf/201403301510Z-obj/home/builds/ab/HEAD/src/sys/arch/evbarm/compile/NETWALKER
+NetBSD 6.99.40 (NETWALKER) #0: Thu Apr 10 07:24:48 UTC 2014
+	builds@b7.netbsd.org:/home/builds/ab/HEAD/evbarm-earmhf/201404100520Z-obj/home/builds/ab/HEAD/src/sys/arch/evbarm/compile/NETWALKER
 total memory = 512 MB
-avail memory = 497 MB
+avail memory = 503 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
@@ -19,11 +19,11 @@ cpu0: pfr: [0]=0x1131 [1]=0x11
 cpu0: 32KB/64B 4-way L1 VIPT Instruction cache
 cpu0: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu0: 256KB/64B 8-way write-through L2 PIPT Unified cache
-vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propogation, denormals
+vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 vfp0: mvfr: [0]=0x11110222 [1]=0x11110222
 axi0 at mainbus0: Advanced eXtensible Interface
 tzic0 at axi0 addr 0xe0000000-0xe0003fff irqbase 0: TrustZone Interrupt Controller
-tzic0: interrupts 0..128  register VA:0xca058000
+tzic0: interrupts 0..128  register VA:0xc8bdc000
 imxccm0 at axi0 addr 0x73fd4000: Clock control module
 imxccm0: CPU clock=800000000, UART clock=66500000
 imxccm0: mainbus clock=665000000, ahb clock=133000000 ipg clock=66500000 perclk=24000000
@@ -53,7 +53,7 @@ usb0 at ehci0: USB revision 2.0
 ehci1 at imxusbc0
 ehci1: i.MX USB Controller id=5 revision=65 HCI revision=0x100
 ehci1: 1 host port
-ehci1: ULPI phy VID 0x0418 PID 0x0006
+ehci1: ULPI phy VID 0x0424 PID 0x0006
 ehci1: EHCI version 1.0
 usb1 at ehci1: USB revision 2.0
 imxspi0 at axi0 addr 0x70010000 intr 36: i.MX eCSPI Controller (clock 54000000 Hz)
@@ -81,9 +81,11 @@ WARNING: module error: can't find builtin dependency `iic'
 WARNING: module error: can't find builtin dependency `iic'
 WARNING: module error: can't find builtin dependency `iic'
 WARNING: module error: can't find builtin dependency `iic'
+sdmmc0: SD_SEND_SCR send failed.
+sdmmc0: mem init failed
 ld0 at sdmmc0: <0x02:0x544d:SA02G:0x09:0x28427115:0x0c1>
 ld0: 1898 MB, 964 cyl, 64 head, 63 sec, 512 bytes/sect x 3887104 sectors
-ld0: 4-bit width, bus clock 50.000 MHz
+ld0: 1-bit width, bus clock 166.250 MHz
 uhub2 at uhub1 port 1: SMSC product 0x2514, class 9/0, rev 2.00/0.00, addr 2
 uhub2: multiple transaction translators
 uhub2: 4 ports with 4 removable, self powered
@@ -114,10 +116,5 @@ WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 init path (default /sbin/init): 
 init: trying /sbin/init
-WARNING: negative runtime; monotonic clock has gone backwards
 wsdisplay0: screen 4 added (std, vt100 emulation)
-rum0 at uhub2 port 2
-rum0: Abocom 802.11 bg WLAN, rev 2.00/0.01, addr 4
-rum0: MAC/BBP RT2573 (rev 0x2573a), RF RT2528, address 00:90:cc:f7:da:eb
-rum0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-rum0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+WARNING: negative runtime; monotonic clock has gone backwards
