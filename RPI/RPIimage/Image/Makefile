@@ -77,7 +77,7 @@ release:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
-	(cd ..; tar cpf - etc root ) |(cd ${MNT};tar xvpf -)
+	(cd ..; tar cpf - etc root usr) |(cd ${MNT};tar xvpf -)
 	(cd ..; tar cpf - Oshimaya) |(cd ${MNT}/root;tar xvpf -)
 	(cd ../boot;cp * ${MNT}/boot)
 	umount ${MNT}/boot
