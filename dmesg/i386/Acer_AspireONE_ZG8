@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.30 (GENERIC) #7: Mon Jan 27 17:45:07 JST 2014
+NetBSD 6.99.40 (GENERIC) #0: Mon Apr 14 13:58:47 JST 2014
 	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1987 MB
@@ -119,7 +119,7 @@ ppb1 at pci0 dev 28 function 2: vendor 0x8086 product 0x27d4 (rev. 0x02)
 ppb1: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
 pci2 at ppb1 bus 2
 pci2: i/o space, memory space enabled
-athn0 at pci2 dev 0 function 0: Atheros AR9285
+athn0 at pci2 dev 0 function 0athn0: Atheros AR9285
 athn0: rev 2 (1T1R), ROM rev 13, address 00:26:5e:6f:ac:d0
 athn0: interrupting at ioapic0 pin 18
 athn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
@@ -214,4 +214,3 @@ wsdisplay0: screen 2 added (80x25, vt100 emulation)
 wsdisplay0: screen 3 added (80x25, vt100 emulation)
 wsdisplay0: screen 4 added (80x25, vt100 emulation)
 acpibat0: normal capacity on 'charge state'
-i915drm0: interrupting at ioapic0 pin 16
