@@ -3,5 +3,6 @@ for i in `grep -hv \# List `
 do
 	echo $i
 	#(cd /usr/pkgsrc/*/$i;make package-install)
+	#(cd /mnt/usr/pkgsrc/packages/All;pkg_add $i)
 	pkg_add $i
 done

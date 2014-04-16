@@ -6,9 +6,9 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 # iso file information
 #IMAGE=/usr/release/earmhf/NetBSD-6.99.36-evbarm-earmhf-201403161940Z.iso
 #IMAGE=/usr/release/earmhf/images/NetBSD-6.99.40-evbarm-earmhf.iso 
-IMAGE=/usr/release/images/NetBSD-6.99.40-evbarm-earmhf-201404100520Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.40-evbarm-earmhf-201404101250Z.iso
 
-PKGSRC=pkgsrc-2014-04-07.tar.gz
+PKGSRC=pkgsrc-2014-04-12.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -77,8 +77,8 @@ release:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
-	(cd ..; tar cpf - etc root usr) |(cd ${MNT};tar xvpf -)
-	(cd ..; tar cpf - Oshimaya) |(cd ${MNT}/root;tar xvpf -)
+	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
+	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 	(cd ../boot;cp * ${MNT}/boot)
 	umount ${MNT}/boot
 	umount ${MNT}
