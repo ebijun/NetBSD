@@ -1,0 +1,200 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 6.99.40 (GENERIC) #0: Mon Apr 14 13:58:47 JST 2014
+	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/GENERIC
+total memory = 2039 MB
+avail memory = 1990 MB
+timecounter: Timecounters tick every 10.000 msec
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+Dell Inc. ME051                           
+mainbus0 (root)
+ACPI: RSDP 0xfc970 000014 (v00 DELL  )
+ACPI: RSDT 0x7f7d3fd3 00003C (v01 DELL    D05     27D50C16 ASL  00000061)
+ACPI: FACP 0x7f7d4c00 000074 (v01 DELL    D05     27D50C16 ASL  00000061)
+ACPI: DSDT 0x7f7d5800 00324F (v01 INT430 SYSFexxx 00001001 MSFT 0100000E)
+ACPI: FACS 0x7f7e4000 000040
+ACPI: APIC 0x7f7d5400 000068 (v01 DELL    D05     27D50C16 ASL  00000047)
+ACPI: MCFG 0x7f7d53c0 00003E (v16 DELL    D05     27D50C16 ASL  00000061)
+ACPI: SSDT 0x7f7d43e2 0002C2 (v01  PmRef  Cpu0Ist 00003000 INTL 20030522)
+ACPI: SSDT 0x7f7d420a 0001D8 (v01  PmRef  Cpu0Cst 00003001 INTL 20030522)
+ACPI: SSDT 0x7f7d400f 0001FB (v01  PmRef    CpuPm 00003000 INTL 20030522)
+ACPI: All ACPI Tables successfully acquired
+cpu0 at mainbus0 apid 0: Intel(R) Pentium(R) M processor 1.60GHz, id 0x6d8
+ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 24 pins
+acpi0 at mainbus0: Intel ACPICA 20131218
+acpi0: X/RSDT: OemId <DELL  , D05    ,27d50c16>, AslId <ASL ,00000061>
+acpi0: SCI interrupting at int 9
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
+acpiacad0 at acpi0 (AC, ACPI0003): ACPI AC Adapter
+acpibat0 at acpi0 (BAT0, PNP0C0A-1): ACPI Battery
+acpibat0: SMP LION rechargeable battery
+acpibat0: granularity: low->warn 0.020 Ah, warn->full 0.020 Ah
+acpilid0 at acpi0 (LID, PNP0C0D): ACPI Lid Switch
+acpibut0 at acpi0 (PBTN, PNP0C0C): ACPI Power Button
+acpibut1 at acpi0 (SBTN, PNP0C0E): ACPI Sleep Button
+MB1 (PNP0C01) at acpi0 not configured
+MB2 (PNP0C01) at acpi0 not configured
+MB3 (PNP0C01) at acpi0 not configured
+pckbc1 at acpi0 (PS2M, PNP0F13) (aux port): irq 12
+pckbc2 at acpi0 (KBC, PNP0303) (kbd port): io 0x60,0x64,0x62,0x66 irq 1
+attimer1 at acpi0 (TMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 2
+pcppi1 at acpi0 (SPKR, PNP0800): io 0x61,0x63,0x65,0x67
+midi0 at pcppi1: PC speaker
+sysbeep0 at pcppi1
+MB4 (PNP0C01) at acpi0 not configured
+COPR (PNP0C04) at acpi0 not configured
+acpivga0 at acpi0 (VID): ACPI Display Adapter
+acpiout0 at acpivga0 (TV, 0x0200): ACPI Display Output Device
+acpiout1 at acpivga0 (CRT, 0x0100): ACPI Display Output Device
+acpiout2 at acpivga0 (LCD, 0x0400): ACPI Display Output Device
+acpiout3 at acpivga0 (DVI, 0x0300): ACPI Display Output Device
+acpivga0: connected output devices:
+acpivga0:   0x0100 (acpiout1): Ext. Monitor, head 0, bios detect
+acpivga0:   0x0200 (acpiout0): TV, head 0, bios detect
+acpivga0:   0x0400 (acpiout2): Unknown Output Device, head 0, bios detect
+acpivga0:   0x0300 (acpiout3): Unknown Output Device, head 0, bios detect
+acpivga1 at acpi0 (VID2): ACPI Display Adapter
+acpivga1: failed to evaluate \_SB_.PCI0.VID2._DOD: AE_BAD_DATA
+acpitz0 at acpi0 (THM)
+acpitz0: levels: critical 90.0 C, passive cooling
+apm0 at acpi0: Power Management spec V1.2
+ACPI: Enabled 3 GPEs in block 00 to 1F
+ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20131218/hwxface-646)
+ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20131218/hwxface-646)
+pckbd0 at pckbc2 (kbd slot)
+pckbc2: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc2 (aux slot)
+pms0: Synaptics touchpad version 6.2
+pms0: Palm detect, Multi-finger
+pckbc2: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+attimer1: attached to pcppi1
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: vendor 0x8086 product 0x2590 (rev. 0x03)
+agp0 at pchb0: detected 7932k stolen memory
+agp0: aperture at 0xc0000000, size 0x10000000
+vga1 at pci0 dev 2 function 0: vendor 0x8086 product 0x2592 (rev. 0x03)
+wsdisplay0 at vga1 kbdmux 1: console (80x25, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+i915drm0 at vga1: Intel i915GM
+i915drm0: AGP at 0xc0000000 256MB
+i915drm0: Initialized i915 1.6.0 20080730
+vendor 0x8086 product 0x2792 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
+hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
+hdaudio0: interrupting at ioapic0 pin 16
+hdafg0 at hdaudio0: Sigmatel STAC9200
+hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
+hdafg0: ADC01 2ch: Line In [Jack], Mic In [Jack]
+hdafg0: 2ch/2ch 44100Hz 48000Hz 88200Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: full duplex, playback, capture, independent
+hdvsmfg at hdaudio0 not configured
+ppb0 at pci0 dev 28 function 0: vendor 0x8086 product 0x2660 (rev. 0x03)
+ppb0: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
+pci1 at ppb0 bus 11
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb1 at pci0 dev 28 function 3: vendor 0x8086 product 0x2666 (rev. 0x03)
+ppb1: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
+pci2 at ppb1 bus 12
+pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+uhci0 at pci0 dev 29 function 0: vendor 0x8086 product 0x2658 (rev. 0x03)
+uhci0: interrupting at ioapic0 pin 16
+usb0 at uhci0: USB revision 1.0
+uhci1 at pci0 dev 29 function 1: vendor 0x8086 product 0x2659 (rev. 0x03)
+uhci1: interrupting at ioapic0 pin 17
+usb1 at uhci1: USB revision 1.0
+uhci2 at pci0 dev 29 function 2: vendor 0x8086 product 0x265a (rev. 0x03)
+uhci2: interrupting at ioapic0 pin 18
+usb2 at uhci2: USB revision 1.0
+uhci3 at pci0 dev 29 function 3: vendor 0x8086 product 0x265b (rev. 0x03)
+uhci3: interrupting at ioapic0 pin 19
+usb3 at uhci3: USB revision 1.0
+ehci0 at pci0 dev 29 function 7: vendor 0x8086 product 0x265c (rev. 0x03)
+ehci0: interrupting at ioapic0 pin 16
+ehci0: EHCI version 1.0
+ehci0: companion controllers, 2 ports each: uhci0 uhci1 uhci2 uhci3
+usb4 at ehci0: USB revision 2.0
+ppb2 at pci0 dev 30 function 0: vendor 0x8086 product 0x2448 (rev. 0xd3)
+pci3 at ppb2 bus 2
+pci3: i/o space, memory space enabled
+bce0 at pci3 dev 0 function 0: Broadcom BCM4401-B0 10/100 Ethernet
+bce0: interrupting at ioapic0 pin 18
+bmtphy0 at bce0 phy 1: BCM4401 10/100 media interface, rev. 0
+bmtphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+bce0: Ethernet address 00:14:22:9a:fc:41
+iwi0 at pci3 dev 3 function 0: vendor 0x8086 product 0x4223 (rev. 0x05)
+iwi0: interrupting at ioapic0 pin 17
+iwi0: 802.11 address 00:16:6f:4a:55:7c
+iwi0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+iwi0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+iwi0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ichlpcib0 at pci0 dev 31 function 0: vendor 0x8086 product 0x2641 (rev. 0x03)
+timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
+ichlpcib0: 24-bit timer
+ichlpcib0: TCO (watchdog) timer configured.
+gpio0 at ichlpcib0: 64 pins
+piixide0 at pci0 dev 31 function 1: Intel 82801FB IDE Controller (ICH6) (rev. 0x03)
+piixide0: bus-master DMA support present
+piixide0: primary channel configured to compatibility mode
+piixide0: primary channel interrupting at ioapic0 pin 14
+atabus0 at piixide0 channel 0
+piixide0: secondary channel configured to compatibility mode
+piixide0: secondary channel ignored (disabled)
+isa0 at ichlpcib0
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: HLT, lat   0 us, pow     0 mW
+acpicpu0: C2: I/O, lat  50 us, pow     0 mW
+acpicpu0: C3: I/O, lat  50 us, pow     0 mW
+acpicpu0: P0: FFH, lat  10 us, pow 21000 mW, 1600 MHz
+acpicpu0: P1: FFH, lat  10 us, pow 18500 mW, 1400 MHz
+acpicpu0: P2: FFH, lat  10 us, pow 15500 mW, 1200 MHz
+acpicpu0: P3: FFH, lat  10 us, pow 13000 mW, 1000 MHz
+acpicpu0: P4: FFH, lat  10 us, pow 10000 mW,  800 MHz
+acpicpu0: P5: FFH, lat  10 us, pow  7500 mW,  600 MHz
+acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
+acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
+acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
+acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
+acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
+acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
+acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
+acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+acpiacad0: AC adapter online.
+uhub0 at usb0: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhub1 at usb1: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+uhub2 at usb2: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+uhub3 at usb3: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub3: 2 ports with 2 removable, self powered
+uhub4 at usb4: vendor 0x8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub4: 8 ports with 8 removable, self powered
+atapibus0 at atabus0: 2 targets
+cd0 at atapibus0 drive 1: <_NEC DVD+/-RW ND-6650A, , 102C> cdrom removable
+cd0: 32-bit data port
+cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 2 (Ultra/33)
+wd0 at atabus0 drive 0
+wd0: <FUJITSU MHV2060AH>
+wd0: drive supports 16-sector PIO transfers, LBA addressing
+wd0: 57231 MB, 116280 cyl, 16 head, 63 sec, 512 bytes/sect x 117210240 sectors
+wd0: 32-bit data port
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+wd0(piixide0:0:0): using PIO mode 4, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+cd0(piixide0:0:1): using PIO mode 4, Ultra-DMA mode 2 (Ultra/33) (using DMA)
+Kernelized RAIDframe activated
+boot device: wd0
+root on wd0a dumps on wd0b
+root file system type: ffs
+wsdisplay0: screen 1 added (80x25, vt100 emulation)
+wsdisplay0: screen 2 added (80x25, vt100 emulation)
+wsdisplay0: screen 3 added (80x25, vt100 emulation)
+wsdisplay0: screen 4 added (80x25, vt100 emulation)
+i915drm0: interrupting at ioapic0 pin 16
+i915drm0: interrupting at ioapic0 pin 16
