@@ -4,9 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-#IMAGE=/usr/release/earmhf/NetBSD-6.99.36-evbarm-earmhf-201403161940Z.iso
-IMAGE=/usr/release/earmhf/images/NetBSD-6.99.40-evbarm-earmhf.iso 
-#IMAGE=/usr/release/images/NetBSD-6.99.40-evbarm-earmhf-201404101250Z.iso
+#IMAGE=/usr/release/earmhf/images/NetBSD-6.99.40-evbarm-earmhf.iso 
+IMAGE=/usr/release/images/NetBSD-6.99.40-evbarm-earmhf-201404201800Z.iso
 
 PKGSRC=pkgsrc-2014-04-12.tar.gz
 
@@ -34,8 +33,10 @@ extract:
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
+	echo extract pkgsrc.
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
-	mount /dev/${VND}e ${MNT}/boot
+	echo extract netwalker kernel.
+	mount_msdos /dev/${VND}e ${MNT}/boot
 	cp ${NETWALKER} ${MNT}/boot
 	cp ${NETWALKERBIN} ${MNT}/boot
 	umount ${MNT}/boot
