@@ -128,6 +128,10 @@ Build sample script:
 Guide:
  https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
 
+BUGS:
+1. dillo crashes at startup
+ http://mail-index.netbsd.org/port-arm/2014/04/22/msg002386.html
+
 Fixed: 
 1. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch. (sample binary replaced in this image)
  xsrc/48347: (thanx christos!)
