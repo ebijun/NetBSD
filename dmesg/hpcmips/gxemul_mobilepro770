@@ -1,0 +1,85 @@
+pmap_steal_memory: seg 0: 0x434 0x434 0x2000 0x2000
+pmap_steal_memory: seg 0: 0x47c 0x47c 0x2000 0x2000
+pmap_steal_memory: seg 0: 0x47e 0x47e 0x2000 0x2000
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 6.99.40 (GENERIC) #0: Thu Apr 24 13:40:34 JST 2014
+	jun@amivb.soum.co.jp:/usr/obj/hpcmips.hpcmips/sys/arch/hpcmips/compile/GENERIC
+NEC MobilePro 770 (NEC VR4121 rev2.12 98.304MHz)
+total memory = 128 MB
+avail memory = 121 MB
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0: NEC VR4100 CPU (0xc60) Rev. 6.0 with software emulated floating point
+cpu0: 32 TLB entries, 256MB max page size
+cpu0: 16KB/16B direct-mapped L1 instruction cache
+cpu0: 8KB/16B direct-mapped write-back L1 data cache
+vr4102ip0 at mainbus0
+vrbcu0 at vr4102ip0 addr 0x0b000000-001f
+vrbcu0: CPU 98.304MHz, bus 32.768MHz, ram 49.152MHz
+vrcmu0 at vr4102ip0 addr 0x0b000060-007f
+vrgiu0 at vr4102ip0 addr 0x0b000100-011f
+vrdmaau0 at vr4102ip0 addr 0x0b000020-0037
+vrdcu0 at vr4102ip0 addr 0x0b000040-004b
+com0 at vr4102ip0 addr 0x0c000000-0007: ns16550a, working fifo
+com0: console
+vrrtc0 at vr4102ip0 addr 0x0b0000c0-00df
+vrkiu0 at vr4102ip0 addr 0x0b000180-019f
+hpckbd0 at vrkiu0
+wskbd0 at hpckbd0 mux 1
+vrpmu0 at vr4102ip0 addr 0x0b0000a0-00bf
+vrdsu0 at vr4102ip0 addr 0x0b0000e0-00e7
+vrled0 at vr4102ip0 addr 0x0b000240-024f
+vrpiu0 at vr4102ip0 addr 0x0b000120-013f, 0x0b0002a0-02bf
+wsmouse0 at vrpiu0 mux 0
+vrpiu0: WARNING: powerhook_establish is deprecated
+vrc4172pwm0 at vr4102ip0 addr 0x15003880-3885
+vraiu0 at vr4102ip0 addr 0x0b000160-017f
+audio0 at vraiu0: half duplex, playback, capture
+vrisab0 at vrgiu0: ISA port 0x14000000-0x18000000 mem 0x10000000-0x14000000
+isa0 at vrisab0
+pcic0 at isa0 port 0x3e0-0x3e1 iomem 0x70000-0x73fff irq 589827
+pcic0: controller 0 (Intel 82365SL Revision 1) has sockets A and B
+pcic0: controller 1 (Intel 82365SL Revision 1) has socket A only
+pcmcia0 at pcic0 controller 0 socket 0
+pcmcia1 at pcic0 controller 0 socket 1
+pcmcia at pcic0 controller 1 socket 0 not configured
+bivideo0 at mainbus0: pseudo video controller
+bivideo0: framebuffer address: 0x8a000000
+hpcfb0 at bivideo0
+wsdisplay0 at hpcfb0 kbdmux 1
+wsmux1: connecting to wsdisplay0
+wskbd0: connecting to wsdisplay0
+btnmgr0 at mainbus0
+wskbd1 at btnmgr0 mux 1
+wskbd1: connecting to wsdisplay0
+hpcapm0 at mainbus0: pseudo power management module
+apmdev0 at hpcapm0: Power Management spec V1.2
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "vrrtc" frequency 32768 Hz quality 100
+pcic0: using irq 589827 for socket events
+pcic0: WARNING: powerhook_establish is deprecated
+pcic0: WARNING: powerhook_establish is deprecated
+wdc1 at pcmcia0 function 0: < , NinjaATA-, V1.0, AP00 >
+pcic0: port 0x180-0x187
+pcic0: port 0x386-0x387
+wdc1: i/o mapped mode
+pcmcia0: card irq 3
+atabus0 at wdc1 channel 0
+wd0 at atabus0 drive 0
+wd0: <8G.img>
+wd0: drive supports 128-sector PIO transfers, chs addressing
+wd0: 7647 MB, 15538 cyl, 16 head, 63 sec, 512 bytes/sect x 15662304 sectors
+wd0: 32-bit data port
+wd0: drive supports PIO mode 4
+boot device: wd0
+pcmcia0: card irq 3
+root on wd0a dumps on wd0b
+pcmcia0: card irq 3
+pcmcia0: card irq 3
+root file system type: ffs
+pid 1(init): ABI set to O32 (e_flags=0x1007)
