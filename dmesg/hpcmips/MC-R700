@@ -1,0 +1,110 @@
+pmap_steal_memory: seg 0: 0x4b8 0x4b8 0x1ffe 0x1ffe
+pmap_steal_memory: seg 0: 0x4f7 0x4f7 0x1ffe 0x1ffe
+pmap_steal_memory: seg 0: 0x4f9 0x4f9 0x1ffe 0x1ffe
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 6.99.40 (GENERIC) #0: Thu Apr 24 13:40:34 JST 2014
+	jun@amivb.soum.co.jp:/usr/obj/hpcmips.hpcmips/sys/arch/hpcmips/compile/GENERIC
+NEC MC-R700 (NEC VR4121 rev0.0 131.072MHz)
+total memory = 32768 KB
+avail memory = 27088 KB
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0: NEC VR4100 CPU (0xc60) Rev. 6.0 with software emulated floating point
+cpu0: 32 TLB entries, 256KB max page size
+cpu0: 16KB/16B direct-mapped L1 instruction cache
+cpu0: 8KB/16B direct-mapped write-back L1 data cache
+vr4102ip0 at mainbus0
+vrbcu0 at vr4102ip0 addr 0x0b000000-001f
+vrbcu0: CPU 131.072MHz, bus 32.768MHz, ram 65.536MHz
+vrcmu0 at vr4102ip0 addr 0x0b000060-007f
+vrgiu0 at vr4102ip0 addr 0x0b000100-011f
+hpcioman9 at vrgiu0
+hpcin0 at hpcioman9 iochip vrgiu0, port 13, type 5, id 256, interrupt level low
+button1 at vrgiu0 port=3 id=13 active=high sense=edge
+pwctl0 at vrgiu0 port=46 id=0 on=1
+vrdmaau0 at vr4102ip0 addr 0x0b000020-0037
+vrdcu0 at vr4102ip0 addr 0x0b000040-004b
+com0 at vr4102ip0 addr 0x0c000000-0007: ns16550a, working fifo
+vrrtc0 at vr4102ip0 addr 0x0b0000c0-00df
+vrkiu0 at vr4102ip0 addr 0x0b000180-019f
+hpckbd0 at vrkiu0
+wskbd0 at hpckbd0: console keyboard
+vrpmu0 at vr4102ip0 addr 0x0b0000a0-00bf
+vrpmu: Deadman's switch detected
+vrdsu0 at vr4102ip0 addr 0x0b0000e0-00e7
+vrled0 at vr4102ip0 addr 0x0b000240-024f
+vrpiu0 at vr4102ip0 addr 0x0b000120-013f, 0x0b0002a0-02bf
+wsmouse0 at vrpiu0 mux 0
+vrpiu0: WARNING: powerhook_establish is deprecated
+vrc4172pci0 at vr4102ip0 addr 0x0aff0cf8-0cff
+pci0 at vrc4172pci0 bus 0
+pci0: i/o space, memory space enabled, rd/line ok
+NEC product 0x0000 (miscellaneous prehistoric, interface 0x06) at pci0 dev 0 function 0 not configured
+ohci0 at pci0 dev 0 function 1: NEC product 0x0000 (rev. 0x00)
+ohci0: interrupting at pciintr 0:0:1
+ohci0: OHCI version 1.0
+usb0 at ohci0: USB revision 1.0
+vrc4172pwm0 at vr4102ip0 addr 0x15003880-3885
+vraiu0 at vr4102ip0 addr 0x0b000160-017f
+audio0 at vraiu0: half duplex, playback, capture
+vrisab0 at vrgiu0: ISA port 0x14000000-0x18000000 mem 0x10000000-0x14000000
+isa0 at vrisab0
+pcic0 at isa0 port 0x3e0-0x3e1 iomem 0x70000-0x73fff irq 589827
+pcic0: controller 0 (Ricoh RF5C396) has sockets A and B
+pcmcia0 at pcic0 controller 0 socket 0
+pcmcia1 at pcic0 controller 0 socket 1
+bivideo0 at mainbus0: pseudo video controller, console
+bivideo0: framebuffer address: 0xaa000000
+hpcfb0 at bivideo0: 800x600 pixels, 65536 colors, 100x60 chars
+wsdisplay0 at hpcfb0 kbdmux 1: console (std, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+btnmgr0 at mainbus0
+wskbd1 at btnmgr0 mux 1
+wskbd1: connecting to wsdisplay0
+hpcapm0 at mainbus0: pseudo power management module
+apmdev0 at hpcapm0: Power Management spec V1.2
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "vrrtc" frequency 32768 Hz quality 100
+pcic0: using irq 589827 for socket events
+pcic0: WARNING: powerhook_establish is deprecated
+pcic0: WARNING: powerhook_establish is deprecated
+uhub0 at usb0: NEC OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+wdc1 at pcmcia0 function 0: <, , >
+pcic0: port 0x14000400-0x1400040f
+wdc1: i/o mapped mode
+pcmcia0: card irq 3
+atabus0 at wdc1 channel 0
+wd0 at atabus0 drive 0
+wd0: <SILICON POWER>
+wd0: drive supports 1-sector PIO transfers, LBA addressing
+wd0: 7647 MB, 15538 cyl, 16 head, 63 sec, 512 bytes/sect x 15662304 sectors
+wd0: drive supports PIO mode 4
+axe0 at uhub0 port 1
+axe0: vendor 0x0411 product 0x006e, rev 2.00/0.01, addr 2
+axe0: Ethernet address 00:1d:73:68:51:10
+ukphy0 at axe0 phy 24: OUI 0x000ac2, model 0x000c, rev. 2
+ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+boot device: wd0
+pcmcia0: card irq 3
+root on wd0a dumps on wd0b
+pcmcia0: card irq 3
+pcmcia0: card irq 3
+root file system type: ffs
+WARNING: clock lost 5593 days
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+pid 1(init): ABI set to O32 (e_flags=0x1007)
+hpcfb: 800x600 pixels, 65536 colors, 100x60 chars
+wsdisplay0: screen 1 added (std, vt100 emulation)
+hpcfb: 800x600 pixels, 65536 colors, 100x60 chars
+wsdisplay0: screen 2 added (std, vt100 emulation)
+hpcfb: 800x600 pixels, 65536 colors, 100x60 chars
+wsdisplay0: screen 3 added (std, vt100 emulation)
+hpcfb: 800x600 pixels, 65536 colors, 100x60 chars
+wsdisplay0: screen 4 added (std, vt100 emulation)
