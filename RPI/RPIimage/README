@@ -4,12 +4,12 @@ PKGSRC:  :1,$s/2014-04-07/2014-04-07/g
 NetBSD:  :1,$s/6.99.40/6.99.40/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-04-12-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-04-12-2-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-04-12-netbsd-raspi.img.gz for RPI.
+I've updated 2014-04-12-2-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-04-12-earmhf/2014-04-12-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-04-12-earmhf/2014-04-12-2-netbsd-raspi.img.gz
 
 Update:
 - NetBSD-current 6.99.40 evbarm-earmhf 201404100520Z from nyftp
@@ -33,19 +33,21 @@ Sharp NetWalker special kernel: (Thanx h_kenken@)
 
   1. Make backup image on NetWalker ubuntu.
   2. cp /boot/netbsd-netwalker.bin.gz [BackupImage]/boot/zImage
-  3. Fix this RPI image:/etc/fstab :1,$s/ld0/sd0/g
-  4. Set [BackupImage] MicroSD to NetWalker MicroSD port
-  5. Set RPI image to USB port via SD to USB dongle.
-  6. With pushing [L Mouse][R Mouse],push Power button in 5 seconds.
-  7. Pray for success in 5 seconds.
-  8. Typical NetBSD Boot message appears on your console.
-  9. startx and mouse can control with small touchpad.
+  3. Set [BackupImage] MicroSD to NetWalker MicroSD port
+  4. Set RPI image to USB port via SD to USB dongle.
+  5. With pushing [L Mouse][R Mouse],push Power button in 5 seconds.
+  6. Pray for success in 5 seconds.
+  7. Typical NetBSD Boot message appears on your console.
+  8. Fail on single user mode,"mount /"
+  9. vi /etc/fstab and type :1,$s/ld0/sd0/g w q
+  10. reboot and login again.
+  11. startx and mouse can control with small touchpad.
 
 musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.1.11-netbsd6-evbarm-earmhf.tar.xz for evaluation.
+  2. Download musica-0.1.13-netbsd6-evbarm-earmhf.tar.xz for evaluation.
   3. Extract tar file and read documents.
   4. ./musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
@@ -131,6 +133,9 @@ Guide:
 BUGS:
 1. dillo crashes at startup
  http://mail-index.netbsd.org/port-arm/2014/04/22/msg002386.html
+
+workaround: revert these changes. (thanx h_kenken)
+ http://cvsweb.netbsd.org/cgi-bin/cvsweb.cgi/src/sys/arch/arm/include/arm32/param.h.diff?r1=1.20&r2=1.21&f=hi
 
 Fixed: 
 1. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch. (sample binary replaced in this image)
