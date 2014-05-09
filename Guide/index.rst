@@ -46,9 +46,7 @@
  :maxdepth: 2
  :numbered:
 
- Place/kagawa
- Place/intro
- RPI
+ Place/kawagoe
 
 .. 
  Place/intro

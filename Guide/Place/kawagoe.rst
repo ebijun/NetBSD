@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -21,7 +21,7 @@
 
 .. イメージファイルは圧縮すること
 
-OSC後半戦への展望
+川越よ私は帰ってきたOSC後半戦への展望
 ----------------------------------------------
 | 日本NetBSDユーザーグループ
 | 蛯原　純
@@ -29,7 +29,7 @@ OSC後半戦への展望
 
 NetBSD
 ~~~~~~~~
- NetBSDは１個のソースツリーをコンパイルすることで実行イメージを作ることができます。
+ NetBSDは１個のソースツリーをコンパイルすることで実行イメージを作ることができます。目についたハードウェアの情報をCVSに記録してBSD系UNIX上で動かしてみる。
 
 ソースコードから作る
 """"""""""""""""""""
@@ -39,119 +39,128 @@ NetBSD
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/tar_files/src.tar.gz
  # tar xzvf src.tar.gz
  # ./build.sh -U -m i386 release     .... -U:root以外で作成,i386向け
+ # ./build.sh -U -m i386 iso-image
 
 pkgsrc - ソースコードからソフトウェアを作る
 """"""""""""""""""""""""""""""""""""""""""""
+　目についたソフトウェアのコンパイル手順をCVSに記録していろんなOS上で動かしてみる。
 
 ::
 
  # cd /usr
  # ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/tar_files/pkgsrc.tar.gz
  # tar xzvf pkgsrc.tar.gz
+ # cd /usr/pkgsrc/net/mikutter
+ # make install
 
 
-
-今年これまでのテーマ
+今年これまで
 ~~~~~~~~~~~~~~~~~~~~~
-* 「ワークステーション及びUNIX文化が導入された時代」
-* 何ができて何ができていなかったのか
-* 今年まとめないともう間に合わない
-* mikutter/mlterm...
+* NetBSD7.0に向けて
+* 国内のソフトウェアをpkgsrcで紹介
+* X11 drmkms
 * RPI & ARM .. OSCごとにイメージファイルリリース
  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
+
+togetterのview数でみるNetBSDブースこの一年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+
+ AsiaBSDCon 2014の記録,http://togetter.com/li/641519,1826,参考記録
+ オープンソースカンファレンス2013広島　NetBSDブース展示の記録,http://togetter.com/li/573243,1497,X68K&LUNA
+ オープンソースカンファレンス2013島根 NetBSDブース展示の記録,http://togetter.com/li/553529,1334,LUNA&NEWS&JavaStation
+ オープンソースカンファレンス2014浜名湖　NetBSDブース展示の記録,http://togetter.com/li/645455,1299,Netwalker
+ オープンソースカンファレンス2013北海道　NetBSDブース展示の記録,http://togetter.com/li/563719,1280,クリプトンの方から差し入れが！
+ 関西オープンソース2013 NetBSDブース展示の記録,http://togetter.com/li/587422,1103,LUNA
+ オープンソースカンファレンス2013東京秋　NetBSDブース展示の記録,http://togetter.com/li/578893,1028,Netwinder
+ オープンソースアンカンファレンス2014香川　NetBSDブース展示の記録,http://togetter.com/li/654135,720,HP9000/425e
+ オープンソースカンファレンス2014東京春　NetBSDブース展示の記録,http://togetter.com/li/635747,687,OSC第1回アワード！
+ オープンソースカンファレンス2013福岡　NetBSDブース展示の記録,http://togetter.com/li/590835,654,らこらこシールwith本体 
+ オープンソースカンファレンス2013大分　NetBSDブース展示の記録,http://togetter.com/li/593833,616,baserCMS
+ 関東LibreOfficeオフラインミーティング(#10) の記録,http://togetter.com/li/591904,588,小野寺さん
 
 今後のOSC参加予定
 ~~~~~~~~~~~~~~~~~~
 #. *http://www.jp.NetBSD.org/* を見る
 #. イベントページをクリックするとFacebookページへ。
 
-2013/8
-~~~~~~~
-島根
- Rubyの郷:発表15分/サンライズ/飛行機/岡山経由か鳥取経由か
-鳥取
- Sony NEWSがたくさんある大学がある
-展示/特集
- NEWS特集?:Ruby:RPI:発表されるものをNetBSDで動かす
-
-#.    2013年8月17日 - Open Source UN-Conference 川越
-#.    2013年8月24日 - オープンソースカンファレンス2013 Shimane
-#.    2013年8月31日 - 名古屋*BSDユーザグループ(NBUG)2013/8月例会
-
-2013/9
-~~~~~~~~
-北海道
- LOCAL:ジャンク屋:写真展：深町さん:FML:さいとさん
-展示/特集
- 深町さん：NetBSDと教育/RPI+α
-
-#.    2013年9月14日 - オープンソースカンファレンス2013Hokkaido
-#.    2013年9月21日 - 名古屋*BSDユーザグループ(NBUG)2013/9月例会
-
-2013/10
-~~~~~~~~~~
-広島
- 年間最重要イベント：X68K＆mlterm特集
-東京
- BSDなひととき：ARM組み込みボード：発表ネタ募集
-
-#.    2013年10月6日 - オープンソースカンファレンス2013Hiroshima
-#.    2013年10月19日 - オープンソースカンファレンス2013 Tokyo/Fall
-#.    2013年10月26日 - 名古屋*BSDユーザグループ(NBUG)2013/10月例会
-
-2013/11
-~~~~~~~~~
-KOF
- BSDなひととき：シャープ特集　X68K,ZAURUS,Netwalker
-福岡
- CMS特集：NetBSDでCMSを全部動かす
-大分
- 組み込みボード：評価ボード特集(K!O!B!O!)
-
-#.    2013年11月8日 - 関西オープンフォーラム2013（KOF2013）
-#.    2013年11月16日 - オープンソースカンファレンス2013 Fukuoka
-#.    2013年11月23日 - オープンソースカンファレンス2013 Oita
-
-
-オープンソースカンファレンスこの一年
-----------------------------------
-
 .. csv-table::
 
- OSC2013京都 NetBSDブース展示の記録 ,1381 view , Luna+mlterm-fb+mikutter
- 名古屋*BSDユーザグループ(NBUG)2013/7月例会の記録 ,255 view,
- 日本NetBSDユーザーグループ第十五回定期総会,546 view,NetBSD BOF
- OSC2013沖縄 NetBSDブース展示の記録 , 546 view,深町さん ちゃんおぷ
- OSC2013名古屋NBUG&NetBSDブース展示の記録 ,1290 view,Luna88K&Luna68K
- 名古屋*BSDユーザグループ(NBUG)2013/5月例会の記録 ,277 view,XM6i 画面スクロールでもNetBSD/x68kスライドショー
- NetBSDでuARM, 846 view, uARM
- 名古屋*BSDユーザグループ(NBUG)2013/4月例会の記録 ,395 view,send-prしてみた
- 名古屋*BSDユーザグループ(NBUG)2013 花見の記録 ,338 view ,BSD鍋
- 名古屋*BSDユーザグループ(NBUG)2013/3月例会の記録, 441 view,JAIST合格記念発表
- NetBSD/sparcをQEMUで動かす会の記録, 766 view,QEMU/sparc
- AsiaBSDCon 2013の記録 ,1353 view,KOBO全部くれ攻撃
- OSC2013徳島 NetBSDブース展示の記録 ,837 view,丹下桜様にNetBSDブース&mikutterご紹介
- OSC2013 東京春 NetBSDブース展示の記録 ,804 view,ubootする黄旗ZAURUS
- 名古屋*BSDユーザグループ(NBUG)2013/2月例会の記録,393 view,luna68kと88kとbigNEWSが
- OSC2013 浜松 NetBSDブース展示の記録,525 view,NetBSD/RPI
- 名古屋*BSDユーザグループ(NBUG)2013/1月例会の記録,474 view,ておくれ6.0.1+mikutter 0.2.1
- 名古屋*BSDユーザグループ(NBUG)2012/12月例会の記録,503 view,薩摩で焼肉忘年会
- OSC2012 福岡 NetBSDブース展示の記録,729 view,Doc-Ja&NetWalker+mikutter
- 名古屋*BSDユーザグループ(NBUG)2012/11月例会の記録,896 view,NetWalker+mikutter
- 関西オープンソース2012 NetBSDブース展示の記録,945 view,XM6i
- OSC2012 会津 NetBSDブース展示の記録,1772 view,mikutterシール評議会開催
- OSC2012 大分秋 NetBSDブース展示の記録,613 view,KOBO&OpenBlocks
- OSC2012 広島 NetBSDブース展示の記録,3076 view,all that X68000!
- 名古屋*BSDユーザグループ(NBUG)2012/10月例会の記録,435 view,RPI来る
- 名古屋*BSDユーザグループ(NBUG)2012/9 例会の記録,474 view,納屋橋夜イチ
- OSC2012沖縄 NetBSDブース展示の記録,411 view,NetBSD/i386 6.0_RC2ておくれ,XM6iシンセ
- OSC2012 東京秋 NetBSDブース展示の記録,1742 view,OpenBlocksA6&KOBO
- OSC2012 島根 NetBSDブース展示の記録,926 view,ておくれへようこそ 6.0_RC1
- 名古屋*BSDユーザグループ(NBUG)2012/8 例会の記録,669 view,XCAST rubyライブラリ
- OSC2012 京都 NetBSDブース展示の記録,2501 view,NetBSD/luna68k LUNAII
- 名古屋*BSDユーザグループ(NBUG)2012/7 例会の記録,1369 view,FreeBSD XCAST
- OSC2012 仙台 NetBSDブース展示の記録,634 view,NetBSD/RPI
- 日本NetBSDユーザーグループ第十四回定期総会 および NetBSD BoF 2012,951 view,epoc32
+ 2014年5月10日,Open Source UN-Conference 2014 川越
+ 2014年5月24日,オープンソースカンファレンス2014 Okinawa
+ 2014年6月13日,オープンソースカンファレンス2014 Hokkaido
+ 2014年7月4日,オープンソースカンファレンス2014 Nagoya
+ 2014年7月12日,日本NetBSDユーザーグループ第十六回定期総会 および NetBSD BoF 2014（仮
+ 2014年8月1日,オープンソースカンファレンス2014 Kansai@Kyoto
+ 2014年8月23日,オープンソースカンファレンス2014Shimane
+ 2014年9月20日,オープンソースカンファレンス2014Hiroshima
+ 2014年11月8日,関西オープンフォーラム2014（KOF2014）
 
+
+2014/5 沖縄
+~~~~~~~~~~~~~~
+沖縄
+ 海水浴場脇
+ 新しいネタを入れるときは沖縄から
+ 琉球大学枠&FreeBSD&Contao神戸さん&PCBSD
+ アメリカンNo.1
+
+
+2014/6 北海道
+~~~~~~~~~~~~~~
+LOCALに訊いとけ
+ YK無線
+ NoBUGガジェット群
+ LOCAL:ジャンク屋:写真店：
+ FML深町さん
+ さいとさんの店
+ さくら石狩データセンター
+ クリプトン
+
+2014/7 名古屋＆定期総会
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NBUG本拠地近くで開催
+ Luna68K&88K
+
+日本NetBSDユーザーグループ第十六回定期総会 および NetBSD BoF 2014（仮
+ 東大本郷で今日は一日NetBSDって感じ
+
+2014/8 京都&島根
+~~~~~~~~~~~~~~~~~~
+京都
+ よしだともこ先生を大いに盛り上げるLuna68Kの会
+ mikutterの本場
+
+島根
+ SONY NEWS祭り
+ Rubyの郷:発表15分/サンライズ/飛行機/岡山経由か鳥取経由か
+ Sony NEWSがたくさんある大学が鳥取にある
+ ゼネラルプロダクツ
+
+2014/9 広島
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+X68K&XM6i祭り
+ 年間最重要イベント：X68K＆mlterm特集
+ X68K祭り
+ X68K祭り
+ X68K祭り
+
+2014/11 KOF
+~~~~~~~~~~~~~~~~~~~~
+未定
+ BSDなひととき(発表者募集
+ 「そんな先のことはわからない」(CV:銀河万丈)
+ 図書販売コーナー推薦本募集
+
+NetBSD関連情報
+~~~~~~~~~~~~~~~~~
+URL 
+ http://www.NetBSD.org/
+ http://www.jp.NetBSD.org/
+ http://www.facebook.com/NetBSD.jp/
+
+詳しくは
+ 「なぜNetBSD」で検索
 
 
