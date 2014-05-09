@@ -102,6 +102,8 @@ togetterのview数でみるNetBSDブースこの一年
 2014/5 沖縄
 ~~~~~~~~~~~~~~
 
+* 参加イベント通算150回目! 
+* https://github.com/ebijun/NetBSD/blob/master/Guide/allevents.rst
 * 海水浴場脇
 * 新しいネタを入れるときは沖縄から
 * 琉球大学枠&FreeBSD&Contao神戸さん&PCBSD
