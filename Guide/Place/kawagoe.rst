@@ -48,7 +48,7 @@ pkgsrc - ソースコードからソフトウェアを作る
 ::
 
  # cd /usr
- # ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/tar_files/pkgsrc.tar.gz
+ # ftp ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/tar_files/pkgsrc.tar.gz
  # tar xzvf pkgsrc.tar.gz
  # cd /usr/pkgsrc/net/mikutter
  # make install
