@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -25,6 +25,12 @@
 
 .. csv-table::
 
+ 153,2014/8,Open Source Conference 2014 Kansai@Kyoto,
+ 152,2014/7,Open Source Conference 2014 Nagoya,
+ 151,2014/6,Open Source Conference 2014 Hokkaido,
+ 150,2014/5,Open Source Conference 2014 Okinawa,
+ 149,2014/4,Open Source UnConference 2014 Kawagoe,
+ 148,2014/4,Open Source UnConference 2014 Kagawa,
  147,2014/3,Open Source Conference 2014 Hamanako,
  146,2014/3,AsiaBSDCon 2014,
  145,2014/2,Open Source Conference 2014 Tokyo/Spring,
