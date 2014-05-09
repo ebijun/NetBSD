@@ -132,10 +132,8 @@ Guide:
 
 BUGS:
 1. dillo crashes at startup
+ this image contains dillo with patch by Michael van Elst
  http://mail-index.netbsd.org/port-arm/2014/04/22/msg002386.html
-
-workaround: revert these changes. (thanx h_kenken)
- http://cvsweb.netbsd.org/cgi-bin/cvsweb.cgi/src/sys/arch/arm/include/arm32/param.h.diff?r1=1.20&r2=1.21&f=hi
 
 Fixed: 
 1. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch. (sample binary replaced in this image)
