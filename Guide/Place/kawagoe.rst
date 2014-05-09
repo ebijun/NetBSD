@@ -61,7 +61,8 @@ pkgsrc - ソースコードからソフトウェアを作る
 * 国内のソフトウェアをpkgsrcで紹介
 * X11 drmkms
 * RPI & ARM .. OSCごとにイメージファイルリリース
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-05-10-earmhf
+ http://mail-index.netbsd.org/port-arm/2014/05/09/msg002407.html 
 
 togetterのview数でみるNetBSDブースこの一年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -107,8 +108,10 @@ togetterのview数でみるNetBSDブースこの一年
 * 海水浴場脇
 * 新しいネタを入れるときは沖縄から
 * 琉球大学枠&FreeBSD勉強会&Contao神戸さん&PCBSD
+* 五十嵐さん＆りえしょんのDVDをとらのあなに買いにいかんと
 * アメリカンNo.1
 * 麦 baku
+
 
 2014/6 北海道
 ~~~~~~~~~~~~~~
