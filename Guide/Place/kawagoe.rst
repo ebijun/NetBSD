@@ -21,7 +21,7 @@
 
 .. イメージファイルは圧縮すること
 
-川越よ私は帰ってきたOSC後半戦への展望
+川越よNetBSDは帰ってきたOSC後半戦への展望
 ----------------------------------------------
 | 日本NetBSDユーザーグループ
 | 蛯原　純
@@ -71,7 +71,7 @@ togetterのview数でみるNetBSDブースこの一年
  AsiaBSDCon 2014の記録,http://togetter.com/li/641519,1826,参考記録
  オープンソースカンファレンス2013広島　NetBSDブース展示の記録,http://togetter.com/li/573243,1497,X68K&LUNA
  オープンソースカンファレンス2013島根 NetBSDブース展示の記録,http://togetter.com/li/553529,1334,LUNA&NEWS&JavaStation
- オープンソースカンファレンス2014浜名湖　NetBSDブース展示の記録,http://togetter.com/li/645455,1299,Netwalker
+ オープンソースカンファレンス2014浜名湖　NetBSDブース展示の記録,http://togetter.com/li/645455,1299,Netwalker実験所 
  オープンソースカンファレンス2013北海道　NetBSDブース展示の記録,http://togetter.com/li/563719,1280,クリプトンの方から差し入れが！
  関西オープンソース2013 NetBSDブース展示の記録,http://togetter.com/li/587422,1103,LUNA
  オープンソースカンファレンス2013東京秋　NetBSDブース展示の記録,http://togetter.com/li/578893,1028,Netwinder
@@ -106,14 +106,13 @@ togetterのview数でみるNetBSDブースこの一年
 * https://github.com/ebijun/NetBSD/blob/master/Guide/allevents.rst
 * 海水浴場脇
 * 新しいネタを入れるときは沖縄から
-* 琉球大学枠&FreeBSD&Contao神戸さん&PCBSD
+* 琉球大学枠&FreeBSD勉強会&Contao神戸さん&PCBSD
 * アメリカンNo.1
-
 
 2014/6 北海道
 ~~~~~~~~~~~~~~
 
-* LOCALに訊いとけ
+* LOCALに訊け!
 * YK無線
 * NoBUGガジェット群
 * LOCAL:ジャンク屋:写真店：
@@ -127,19 +126,24 @@ togetterのview数でみるNetBSDブースこの一年
 
 * NBUG本拠地近くで開催
 * Luna68K&88K
+* Netwalker実験所 
+* 小江戸、尾張に立つ
 
 
 2014/7 定期総会
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * 日本NetBSDユーザーグループ第十六回定期総会 および NetBSD BoF 2014（仮
-* 東大本郷で今日は一日NetBSDって感じ
+* 東大本郷で今日は一日NetBSD三昧
 
-2014/8 京都&島根
+2014/8 京都
 ~~~~~~~~~~~~~~~~~~
 
 * よしだともこ先生を大いに盛り上げるLuna68Kの会
 * mikutterの本場
+* 今日現在の参加グループが特濃
+* eclipscopeとは何か
+* だいこん
 
 2014/8 島根
 ~~~~~~~~~~~~~~~~~~
@@ -153,15 +157,15 @@ togetterのview数でみるNetBSDブースこの一年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * 年間最重要イベント：X68K＆mlterm特集
-* X68K祭り
-* X68K祭り
-* X68K祭り
+* XM6i祭り
+* X68060祭り
+* ビールスタンド重富で重富注ぎ！
 
 2014/11 KOF
 ~~~~~~~~~~~~~~~~~~~~
 
 * BSDなひととき(発表者募集
-* 「そんな先のことはわからない」(CV:銀河万丈)
+* 「そんな先のことはわからない」(CV:銀河万丈/9話予告)
 * 図書販売コーナー推薦本募集
 
 NetBSD関連情報
