@@ -1,27 +1,27 @@
-VERSION: :1,$s/2014-04-12/2014-04-12/g
-ISO:     :1,$s/201404100520Z/201404100520Z/g
-PKGSRC:  :1,$s/2014-04-07/2014-04-07/g
-NetBSD:  :1,$s/6.99.40/6.99.40/g
+VERSION: :1,$s/2014-05-10/2014-05-10/g
+ISO:     :1,$s/201405081300Z/201405081300Z/g
+PKGSRC:  :1,$s/2014-05-03/2014-05-03/g
+NetBSD:  :1,$s/6.99.41/6.99.41/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-04-12-2-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-05-10-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-04-12-2-netbsd-raspi.img.gz for RPI.
+I've updated 2014-05-10-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-04-12-earmhf/2014-04-12-2-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-05-10-earmhf/2014-05-10-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.40 evbarm-earmhf 201404100520Z from nyftp
-- pkgsrc-current         2014-04-07 tarball from ftp.NetBSD
-- openssl-1.0.1g support,fixed OpenSSL Bug on NetBSD and pkgsrc.
+- NetBSD-current 6.99.41 evbarm-earmhf 201405081300Z from nyftp
+- pkgsrc-current         2014-05-03 tarball from ftp.NetBSD
+- openssl-1.0.1g support,fixed OpenSSL NetBSD-SA2014-004 on NetBSD and pkgsrc.
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-04-12-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-05-10-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-04-12/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-05-10/
  To install application.
  # pkg_add some_application_name
 
@@ -47,7 +47,7 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.1.13-netbsd6-evbarm-earmhf.tar.xz for evaluation.
+  2. Download musica-0.1.14-netbsd6-evbarm-earmhf.tar.xz for evaluation.
   3. Extract tar file and read documents.
   4. ./musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
@@ -61,11 +61,11 @@ Todo:
 
 =====================
 
-For OpenSourceUnConference 2014 Kagawa NetBSD booth
-(https://www.facebook.com/events/253783751467757/)
+For OpenSourceUnConference 2014 Kawagoe NetBSD booth
+(https://www.facebook.com/events/1465786260321905/)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.40 earmhf rpi.img.gz base
+- NetBSD 6.99.41 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -87,14 +87,14 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-04-07 tree inside.
+  - pkgsrc: 2014-05-03 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-04-12/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-05-10/
 
 Installed Packages:
 kterm
 tcsh
-vlgothic-ttf
+koruri-ttf
 icewm
 xli
 mikutter

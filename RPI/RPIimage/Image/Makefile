@@ -5,7 +5,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
 #IMAGE=/usr/release/earmhf/images/NetBSD-6.99.40-evbarm-earmhf.iso 
-IMAGE=/usr/release/images/NetBSD-6.99.40-evbarm-earmhf-201405061530Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.41-evbarm-earmhf-201405081300Z.iso
 
 PKGSRC=pkgsrc-2014-05-03.tar.gz
 
@@ -97,7 +97,7 @@ cdunmount:
 	umount ${MNT_CDROM}
 	vnconfig -u ${VND_CDROM}
 
-# copy newer firmware
+# copy newer firmware :XXX copy to /boot on MSDOS
 firm:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
@@ -108,6 +108,15 @@ firm:
 	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/start.elf /mnt
 	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/start_cd.elf /mnt
 	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/LICENCE.broadcom /mnt
+	umount ${MNT}
+	vnconfig -u ${VND}
+
+# update pkgsrc
+pkgsrc-update:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	(cd ${MNT}/usr/pkgsrc;cvs update -PAd)
 	umount ${MNT}
 	vnconfig -u ${VND}
 
