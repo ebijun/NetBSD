@@ -4,10 +4,11 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.41 (GENERIC) #0: Fri May  9 16:41:06 JST 2014
-	nonaka@koharu.myhome.local:/usr/obj.i386/sys/arch/i386/compile/GENERIC
+NetBSD 6.99.41 (DRMKMS) #6: Sat May 10 09:40:24 JST 2014
+	nonaka@koharu.myhome.local:/usr/obj.i386/sys/arch/i386/compile/DRMKMS
 total memory = 2035 MB
 avail memory = 1986 MB
+rnd: bad seed checksum
 timecounter: Timecounters tick every 10.000 msec
 RTC BIOS diagnostic error 0x80<clock_battery>
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
@@ -49,10 +50,13 @@ acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
 acpibut1 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
 acpibat0 at acpi0 (BAT1, PNP0C0A-0): ACPI Battery
 acpiacad0 at acpi0 (ACAD, ACPI0003): ACPI AC Adapter
-SYSR (PNP0C02) at acpi0 not configured
-FPU (PNP0C04) at acpi0 not configured
+SYSR (PNP0C02) WARNING: module error: vfs load failed for `acpiverbose', error 45
+at acpi0 not configured
+FPU (PNP0C04) WARNING: module error: vfs load failed for `acpiverbose', error 45
+at acpi0 not configured
 attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53
-FWHD (INT0800) at acpi0 not configured
+FWHD (INT0800) WARNING: module error: vfs load failed for `acpiverbose', error 45
+at acpi0 not configured
 pckbc1 at acpi0 (KBC, PNP0303) (kbd port): io 0x60,0x64 irq 1
 pckbc2 at acpi0 (MOUE, SYN1B20) (aux port): irq 12
 acpivga0 at acpi0 (OVGA): ACPI Display Adapter
@@ -78,6 +82,7 @@ apm0 at acpi0: Power Management spec V1.2
 ACPI: Enabled 1 GPEs in block 00 to 1F
 ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20131218/hwxface-646)
 ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20131218/hwxface-646)
+WARNING: module error: vfs load failed for `acpiverbose', error 45
 pckbd0 at pckbc1 (kbd slot)
 pckbc1: using irq 1 for kbd slot
 wskbd0 at pckbd0: console keyboard
@@ -91,12 +96,18 @@ pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
 pchb0 at pci0 dev 0 function 0: Intel 82945GME Host Bridge (rev. 0x03)
 agp0 at pchb0: detected 7932k stolen memory
 agp0: aperture at 0x80000000, size 0x10000000
-vga1 at pci0 dev 2 function 0: Intel 82945GME Integrated Graphics Device (rev. 0x03)
-wsdisplay0 at vga1 kbdmux 1: console (80x25, vt100 emulation), using wskbd0
+i915drmkms0 at pci0 dev 2 function 0: Intel 82945GME Integrated Graphics Device (rev. 0x03)
+drmkms0 at i915drmkms0
+drm: MTRR allocation failed.  Graphics performance may suffer.
+i915drmkms0: unable to map ROM
+drm: failed to find VBIOS tables
+drm: initialized overlay support
+drmkms0: interrupting at ioapic0 pin 16 (i915)
+i915drmkms0: framebuffer at 0xdb1fc000, size 1024x600, depth 32, stride 4096
+wsdisplay0 at i915drmkms0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
-i915drm0 at vga1: Intel i945GME
-i915drm0: AGP at 0x80000000 256MB
-i915drm0: Initialized i915 1.6.0 20080730
+fixme: max PWM is zero
+drmkms0: info: registered panic notifier
 Intel 82945GM/PM/GMS Integrated Graphics Device (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
 hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
 hdaudio0: interrupting at ioapic0 pin 16
@@ -105,7 +116,7 @@ hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
 hdafg0: ADC01 2ch: Mic In [Jack]
 hdafg0: ADC02 2ch: Mic In [Built-In]
 hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
-audio0 at hdafg0: full duplex, playback, capture, independent
+audio0 at hdafg0: full duplex, playback, capture, mmap, independent
 ppb0 at pci0 dev 28 function 0: Intel 82801GB/GR PCI Express Port #1 (rev. 0x02)
 ppb0: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
 pci1 at ppb0 bus 1
@@ -162,6 +173,9 @@ ichsmb0 at pci0 dev 31 function 3: Intel 82801GB/GR SMBus Controller (rev. 0x02)
 ichsmb0: interrupting at ioapic0 pin 17
 iic0 at ichsmb0: I2C bus
 isa0 at ichlpcib0
+vga0 at isa0 port 0x3b0-0x3df iomem 0xa0000-0xbffff
+wsdisplay1 at vga0 kbdmux 1
+wsmux1: connecting to wsdisplay1
 pcppi0 at isa0 port 0x61
 midi0 at pcppi0: PC speaker
 sysbeep0 at pcppi0
@@ -184,11 +198,18 @@ acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
 acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
 coretemp0 at cpu0: thermal sensor, 1 C resolution
 acpicpu1 at cpu1: ACPI CPU
+render error detected, EIR: 0x00000010
+page table error
+  PGTBL_ER: 0x00000110
+DRM error in i915_report_and_clear_eir: EIR stuck: 0x00000010, masking
+render error detected, EIR: 0x00000010
+page table error
+  PGTBL_ER: 0x00000110
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
-uhub0 at usb1: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb0: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb0: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb1: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
 uhub2 at usb2: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
@@ -214,9 +235,17 @@ sd0: 3861 MB, 7872 cyl, 16 head, 63 sec, 512 bytes/sect x 7907328 sectors
 Kernelized RAIDframe activated
 boot device: sd0
 root on sd0a dumps on sd0b
+mountroot: trying smbfs...
+mountroot: trying ntfs...
+mountroot: trying nfs...
+mountroot: trying msdos...
+mountroot: trying lfs...
+mountroot: trying ext2fs...
+mountroot: trying ffs...
 root file system type: ffs
-WARNING: clock gained 2 days
-wsdisplay0: screen 1 added (80x25, vt100 emulation)
-wsdisplay0: screen 2 added (80x25, vt100 emulation)
-wsdisplay0: screen 3 added (80x25, vt100 emulation)
-wsdisplay0: screen 4 added (80x25, vt100 emulation)
+init: copying out path `/sbin/init' 11
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)
+pid 678 (Xorg), uid 0: exited on signal 6 (core dumped)
