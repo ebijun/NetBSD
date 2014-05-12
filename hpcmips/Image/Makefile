@@ -2,14 +2,10 @@
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
-#FILE=`date +%Y-%m-%d`-netbsd-hpcmips-6.1.1.img
-#FILE=`date +%Y-%m-%d`-netbsd-hpcmips-5.2.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.28-hpcmips-201312011300Z.iso
-#IMAGE=/usr/release/6.1/NetBSD-6.1.1-hpcmips.iso
-#IMAGE=/usr/release/5/hpcmipscd-5.2.iso
-PKGSRC=../../pkgsrc/pkgsrc-2013-11-30.tgz
+IMAGE=/usr/release/images/NetBSD-6.99.41-hpcmips-201405101920Z.iso
+PKGSRC=../../pkgsrc/pkgsrc-2014-05-10.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
 INSTALLATION=/mnt1/hpcmips/installation
