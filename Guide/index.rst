@@ -46,8 +46,8 @@
  :maxdepth: 2
  :numbered:
 
- Place/intro
  Place/okinawa
+ Place/intro
  RPI
 
 .. 
