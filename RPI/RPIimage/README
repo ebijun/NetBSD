@@ -61,7 +61,7 @@ Todo:
 
 =====================
 
-For OpenSourceUnConference 2014 Kawagoe NetBSD booth
+For OpenSourceConference 2014 Okinawa NetBSD booth
 (https://www.facebook.com/events/1465786260321905/)
 demonstration use, I've updated raspberry-pi image.
 
@@ -134,11 +134,8 @@ BUGS:
 1. dillo crashes at startup
  this image contains dillo with patch by Michael van Elst
  http://mail-index.netbsd.org/port-arm/2014/04/22/msg002386.html
-
-Fixed: 
-1. Cannot input Japanese special keys of JP106 keyboard with NetBSD/evbarm(RPI) or some arch. (sample binary replaced in this image)
- xsrc/48347: (thanx christos!)
- http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48347
+2. audioplay hungs
+ Can not play wav file with audioplay.
 
 One more time: (we're gonna celebrate
 
