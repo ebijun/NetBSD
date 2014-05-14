@@ -1,0 +1,293 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 6.99.41 (DRMKMS) #44: Sat May 10 09:42:34 JST 2014
+	nonaka@koharu.myhome.local:/usr/obj.amd64/sys/arch/amd64/compile/DRMKMS
+total memory = 3046 MB
+avail memory = 2941 MB
+timecounter: Timecounters tick every 10.000 msec
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+LENOVO 7675A31 (ThinkPad X61)
+mainbus0 (root)
+ACPI: RSDP 0xf6950 000024 (v02 LENOVO)
+ACPI: XSDT 0xbe6bd368 000094 (v01 LENOVO TP-7N    00002190  LTP 00000000)
+ACPI: FACP 0xbe6bd500 0000F4 (v03 LENOVO TP-7N    00002190 LNVO 00000001)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 64/32 (20131218/tbfadt-634)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe1Block: 0/32 (20131218/tbfadt-634)
+ACPI BIOS Warning (bug): Optional FADT field Gpe1Block has zero address or length: 0x000000000000102C/0x0 (20131218/tbfadt-664)
+ACPI: DSDT 0xbe6bd8db 00E32A (v01 LENOVO TP-7N    00002190 MSFT 03000000)
+ACPI: FACS 0xbe6e4000 000040
+ACPI: SSDT 0xbe6bd6b4 000227 (v01 LENOVO TP-7N    00002190 MSFT 03000000)
+ACPI: ECDT 0xbe6cbc05 000052 (v01 LENOVO TP-7N    00002190 LNVO 00000001)
+ACPI: TCPA 0xbe6cbc57 000032 (v02 LENOVO TP-7N    00002190 LNVO 00000001)
+ACPI: APIC 0xbe6cbc89 000068 (v01 LENOVO TP-7N    00002190 LNVO 00000001)
+ACPI: MCFG 0xbe6cbcf1 00003C (v01 LENOVO TP-7N    00002190 LNVO 00000001)
+ACPI: HPET 0xbe6cbd2d 000038 (v01 LENOVO TP-7N    00002190 LNVO 00000001)
+ACPI: SLIC 0xbe6cbdf0 000176 (v01 LENOVO TP-7N    00002190  LTP 00000000)
+ACPI: BOOT 0xbe6cbf66 000028 (v01 LENOVO TP-7N    00002190  LTP 00000001)
+ACPI: ASF! 0xbe6cbf8e 000072 (v16 LENOVO TP-7N    00002190 PTL  00000001)
+ACPI: SSDT 0xbe6e26d9 00025F (v01 LENOVO TP-7N    00002190 INTL 20050513)
+ACPI: SSDT 0xbe6e2938 0000A6 (v01 LENOVO TP-7N    00002190 INTL 20050513)
+ACPI: SSDT 0xbe6e29de 0004F7 (v01 LENOVO TP-7N    00002190 INTL 20050513)
+ACPI: SSDT 0xbe6e2ed5 0001D8 (v01 LENOVO TP-7N    00002190 INTL 20050513)
+ACPI: All ACPI Tables successfully acquired
+cpu0 at mainbus0 apid 0: Intel(R) Core(TM)2 Duo CPU     T7500  @ 2.20GHz, id 0x6fb
+cpu1 at mainbus0 apid 1: Intel(R) Core(TM)2 Duo CPU     T7500  @ 2.20GHz, id 0x6fb
+ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 24 pins
+acpi0 at mainbus0: Intel ACPICA 20131218
+acpi0: X/RSDT: OemId <LENOVO,TP-7N   ,00002190>, AslId < LTP,00000000>
+acpiecdt0 at acpi0: ACPI Embedded Controller via ECDT
+ACPI: SSDT 0xbe6e1b32 0002C4 (v01  PmRef  Cpu0Ist 00000100 INTL 20050513)
+ACPI: SSDT 0x0 0002C4 (v01  PmRef  Cpu0Ist 00000100 INTL 20050513)
+ACPI: SSDT 0xbe6e1e7b 00085E (v01  PmRef  Cpu0Cst 00000100 INTL 20050513)
+ACPI: SSDT 0x0 00085E (v01  PmRef  Cpu0Cst 00000100 INTL 20050513)
+ACPI: SSDT 0xbe6e1a6a 0000C8 (v01  PmRef  Cpu1Ist 00000100 INTL 20050513)
+ACPI: SSDT 0x0 0000C8 (v01  PmRef  Cpu1Ist 00000100 INTL 20050513)
+ACPI: SSDT 0xbe6e1df6 000085 (v01  PmRef  Cpu1Cst 00000100 INTL 20050513)
+ACPI: SSDT 0x0 000085 (v01  PmRef  Cpu1Cst 00000100 INTL 20050513)
+acpi0: SCI interrupting at int 9
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+acpiec0 at acpi0 (EC, PNP0C09-0): using acpiecdt0
+MEM (PNP0C01) WARNING: module error: vfs load failed for `acpiverbose', error 45
+at acpi0 not configured
+acpilid0 at acpi0 (LID, PNP0C0D): ACPI Lid Switch
+acpibut0 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
+SIO (PNP0C02) WARNING: module error: vfs load failed for `acpiverbose', error 45
+at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43 irq 0
+pcppi1 at acpi0 (SPKR, PNP0800): io 0x61
+midi0 at pcppi1: PC speaker
+sysbeep0 at pcppi1
+pckbc1 at acpi0 (KBD, PNP0303) (kbd port): io 0x60,0x64 irq 1
+pckbc2 at acpi0 (MOU, IBM3780) (aux port): irq 12
+TPM (ATM1200) WARNING: module error: vfs load failed for `acpiverbose', error 45
+at acpi0 not configured
+acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
+acpibat0: SANYO LION rechargeable battery
+acpibat0: granularity: low->warn 0.001 Wh, warn->full 0.001 Wh
+acpibat1 at acpi0 (BAT1, PNP0C0A-2): ACPI Battery
+acpibat2 at acpi0 (BAT2, PNP0C0A-1): ACPI Battery
+acpiacad0 at acpi0 (AC, ACPI0003-0): ACPI AC Adapter
+thinkpad0 at acpi0 (HKEY, IBM0068)
+acpivga0 at acpi0 (VID): ACPI Display Adapter
+acpiout0 at acpivga0 (LCD0, 0x0400): ACPI Display Output Device
+acpiout0: brightness levels: 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 100
+acpiout1 at acpivga0 (CRT0, 0x0100): ACPI Display Output Device
+acpiout2 at acpivga0 (DVI0, 0x0300): ACPI Display Output Device
+acpivga0: connected output devices:
+acpivga0:   0x0100 (acpiout1): Ext. Monitor, head 0
+acpivga0:   0x0300 (acpiout2): Unknown Output Device, head 0
+acpivga0:   0x0400 (acpiout0): Unknown Output Device, head 0
+acpitz0 at acpi0 (THM0)
+acpitz0: levels: critical 127.0 C, passive cooling
+acpitz1 at acpi0 (THM1): cpu0 cpu1
+acpitz1: levels: critical 100.0 C, passive 95.5 C, passive cooling
+ACPI: Enabled 3 GPEs in block 00 to 1F
+ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20131218/hwxface-646)
+ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20131218/hwxface-646)
+WARNING: module error: vfs load failed for `acpiverbose', error 45
+attimer1: attached to pcppi1
+pckbd0 at pckbc1 (kbd slot)
+pckbc1: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc1 (aux slot)
+pckbc1: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: Intel 82965PM Host Bridge (rev. 0x0c)
+agp0 at pchb0: detected 7676k stolen memory
+agp0: aperture at 0xe0000000, size 0x20000000
+i915drmkms0 at pci0 dev 2 function 0: Intel 82965PM Integrated Graphics Device (rev. 0x0c)
+drmkms0 at i915drmkms0
+drm: not enough stolen space for compressed buffer, disabling
+drm: hint: you may be able to increase stolen memory size in the BIOS to avoid this
+drm: initialized overlay support
+drmkms0: interrupting at ioapic0 pin 16 (i915)
+i915drmkms0: framebuffer at 0xffff800036750000, size 1024x768, depth 32, stride 4096
+wsdisplay0 at i915drmkms0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+drmkms0: info: registered panic notifier
+Intel 82965PM Integrated Graphics Device (miscellaneous display, revision 0x0c) at pci0 dev 2 function 1 not configured
+wm0 at pci0 dev 25 function 0: Intel i82801H (M_AMT) LAN Controller (rev. 0x03)
+wm0: interrupting at ioapic0 pin 20
+wm0: PCI-Express bus
+wm0: FLASH
+wm0: Ethernet address 00:1d:72:9a:36:d4
+igphy0 at wm0 phy 1: i82566 10/100/1000 media interface, rev. 0
+igphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+uhci0 at pci0 dev 26 function 0: Intel 82801H USB UHCI Controller (rev. 0x03)
+uhci0: interrupting at ioapic0 pin 20
+usb0 at uhci0: USB revision 1.0
+uhci1 at pci0 dev 26 function 1: Intel 82801H USB UHCI Controller (rev. 0x03)
+uhci1: interrupting at ioapic0 pin 21
+usb1 at uhci1: USB revision 1.0
+ehci0 at pci0 dev 26 function 7: Intel 82801H USB EHCI Controller (rev. 0x03)
+ehci0: interrupting at ioapic0 pin 22
+ehci0: EHCI version 1.0
+ehci0: companion controllers, 2 ports each: uhci0 uhci1
+usb2 at ehci0: USB revision 2.0
+hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
+hdaudio0: interrupting at ioapic0 pin 17
+hdafg0 at hdaudio0: ADI AD1984
+hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
+hdafg0: ADC01 2ch: Mic In [Jack] [Built-In]
+hdafg0: 2ch/2ch 8000Hz 11025Hz 16000Hz 22050Hz 32000Hz 44100Hz 48000Hz 88200Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: full duplex, playback, capture, mmap, independent
+hdvsmfg at hdaudio0 not configured
+ppb0 at pci0 dev 28 function 0: Intel 82801H PCI Express Port #1 (rev. 0x03)
+ppb0: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
+pci1 at ppb0 bus 2
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb1 at pci0 dev 28 function 1: Intel 82801H PCI Express Port #2 (rev. 0x03)
+ppb1: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
+pci2 at ppb1 bus 3
+pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+iwn0 at pci2 dev 0 function 0: Intel Wireless WiFi Link 4965 (rev. 0x61)
+iwn0: interrupting at ioapic0 pin 17
+iwn0: MIMO 2T3R, JPN, address 00:1f:3b:c7:26:fd
+iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+iwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+uhci2 at pci0 dev 29 function 0: Intel 82801H USB UHCI Controller (rev. 0x03)
+uhci2: interrupting at ioapic0 pin 16
+usb3 at uhci2: USB revision 1.0
+uhci3 at pci0 dev 29 function 1: Intel 82801H USB UHCI Controller (rev. 0x03)
+uhci3: interrupting at ioapic0 pin 17
+usb4 at uhci3: USB revision 1.0
+ehci1 at pci0 dev 29 function 7: Intel 82801H USB EHCI Controller (rev. 0x03)
+ehci1: interrupting at ioapic0 pin 19
+ehci1: EHCI version 1.0
+ehci1: companion controllers, 2 ports each: uhci2 uhci3
+usb5 at ehci1: USB revision 2.0
+ppb2 at pci0 dev 30 function 0: Intel 82801BAM Hub-PCI Bridge (rev. 0xf3)
+pci3 at ppb2 bus 5
+pci3: i/o space, memory space enabled
+cbb0 at pci3 dev 0 function 0: Ricoh 5C476 PCI-CardBus Bridge (rev. 0xba)
+fwohci0 at pci3 dev 0 function 1: Ricoh 5C832 PCI-SD/MMC/MMC+/MS/xD/Firewire (rev. 0x04)
+fwohci0: interrupting at ioapic0 pin 17
+fwohci0: OHCI version 1.10 (ROM=0)
+fwohci0: No. of Isochronous channels is 4.
+fwohci0: EUI64 00:1d:72:ff:9a:36:d4:ff
+fwohci0: Phy 1394a available S400, 1 ports.
+fwohci0: Link S400, max_rec 2048 bytes.
+ieee1394if0 at fwohci0: IEEE1394 bus
+fwip0 at ieee1394if0: IP over IEEE1394
+fwohci0: Initiate bus reset
+sdhc0 at pci3 dev 0 function 2: Ricoh 5C822 PCI-CardBus Bridge/MS/SD/MMC/SC (rev. 0x21)
+sdhc0: interrupting at ioapic0 pin 18
+sdhc0: SD Host Specification 1.0, rev.4
+sdhc0: using DMA transfer
+sdmmc0 at sdhc0 slot 0
+cbb0: cacheline 0x8 lattimer 0x20
+cbb0: bhlc 0x822008
+cbb0: interrupting at ioapic0 pin 16
+cardslot0 at cbb0
+cardbus0 at cardslot0: bus 6
+pcmcia0 at cardslot0
+ichlpcib0 at pci0 dev 31 function 0: Intel 82801HEM LPC Interface Bridge (rev. 0x03)
+timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
+ichlpcib0: 24-bit timer
+ichlpcib0: TCO (watchdog) timer configured.
+piixide0 at pci0 dev 31 function 1: Intel 82801HBM IDE Controller (ICH8M) (rev. 0x03)
+piixide0: bus-master DMA support present
+piixide0: primary channel configured to compatibility mode
+piixide0: primary channel interrupting at ioapic0 pin 14
+atabus0 at piixide0 channel 0
+piixide0: secondary channel configured to compatibility mode
+piixide0: secondary channel ignored (disabled)
+ahcisata0 at pci0 dev 31 function 2: Intel 82801HBM SATA Controller (rev. 0x03)
+ahcisata0: interrupting at ioapic0 pin 16
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.10, 3 ports, 32 slots, CAP 0xe710ff82<CCCS,PSC,SSC,PMD,ISS=0x1=Gen1,SCLO,SAL,SALP,SSNTF,SNCQ,S64A>
+atabus1 at ahcisata0 channel 0
+ichsmb0 at pci0 dev 31 function 3: Intel 82801H SMBus Controller (rev. 0x03)
+ichsmb0: interrupting at ioapic0 pin 23
+iic0 at ichsmb0: I2C bus
+isa0 at ichlpcib0
+tpm0 at isa0 iomem 0xfed40000-0xfed44fff irq 7: device 0x32031114 rev 0x9
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+acpicpu0: C2: FFH, lat   1 us, pow   500 mW
+acpicpu0: C3: FFH, lat  17 us, pow   250 mW, bus master check
+acpicpu0: P0: FFH, lat  10 us, pow 35000 mW, 2201 MHz, turbo boost
+acpicpu0: P1: FFH, lat  10 us, pow 35000 mW, 2200 MHz
+acpicpu0: P2: FFH, lat  10 us, pow 23000 mW, 1600 MHz
+acpicpu0: P3: FFH, lat  10 us, pow 16000 mW, 1200 MHz
+acpicpu0: P4: FFH, lat  10 us, pow 14000 mW,  800 MHz
+acpicpu0: T0: FFH, lat   1 us, pow 14000 mW, 100 %
+acpicpu0: T1: FFH, lat   1 us, pow 12250 mW,  88 %
+acpicpu0: T2: FFH, lat   1 us, pow 10500 mW,  75 %
+acpicpu0: T3: FFH, lat   1 us, pow  8750 mW,  63 %
+acpicpu0: T4: FFH, lat   1 us, pow  7000 mW,  50 %
+acpicpu0: T5: FFH, lat   1 us, pow  5250 mW,  38 %
+acpicpu0: T6: FFH, lat   1 us, pow  3500 mW,  25 %
+acpicpu0: T7: FFH, lat   1 us, pow  1750 mW,  13 %
+coretemp0 at cpu0: thermal sensor, 1 C resolution
+acpicpu1 at cpu1: ACPI CPU
+coretemp1 at cpu1: thermal sensor, 1 C resolution
+fwohci0: BUS reset
+fwohci0: node_id=0xc800ffc0, gen=1, CYCLEMASTER mode
+ieee1394if0: 1 nodes, maxhop <= 0 cable IRM irm(0) (me)
+ieee1394if0: bus manager 0
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+acpiacad0: AC adapter online.
+uhub0 at usb0: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhub1 at usb1: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+uhub2 at usb2: Intel EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub2: 4 ports with 4 removable, self powered
+uhub3 at usb3: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub3: 2 ports with 2 removable, self powered
+uhub4 at usb4: Intel UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub4: 2 ports with 2 removable, self powered
+uhub5 at usb5: Intel EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub5: 4 ports with 4 removable, self powered
+ahcisata0 port 0: device present, speed: 1.5Gb/s
+ehci0: handing over full speed device on port 1 to uhci0
+wd0 at atabus1 drive 0
+wd0: <SAMSUNG HM500LI>
+wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+wd0: 465 GB, 969021 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
+render error detected, EIR: 0x00000010
+page table error
+  PGTBL_ER: 0x00000010
+DRM error in i915_report_and_clear_eir: EIR stuck: 0x00000010, masking
+ehci0: handing over full speed device on port 2 to uhci0
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 7
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
+ubt0 at uhub0 port 1
+ubt0: Broadcom Corp BCM2045B, rev 2.00/1.00, addr 2
+umass0 at uhub2 port 3 configuration 1 interface 0
+umass0: PQI PQI USB Flash Drive, rev 2.00/11.00, addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <Generic, USB Flash Disk, 1100> disk removable
+sd0: 3861 MB, 7872 cyl, 16 head, 63 sec, 512 bytes/sect x 7907328 sectors
+Kernelized RAIDframe activated
+pad0: outputs: 44100Hz, 16-bit, stereo
+audio1 at pad0: half duplex, playback, capture
+boot device: sd0
+root on sd0a dumps on sd0b
+dump_misc_init: max_paddr = 0xbe6b0000
+mountroot: trying smbfs...
+mountroot: trying ntfs...
+mountroot: trying nfs...
+mountroot: trying msdos...
+mountroot: trying lfs...
+mountroot: trying ext2fs...
+mountroot: trying ffs...
+root file system type: ffs
+init: copying out path `/sbin/init' 11
+ugen0 at uhub0 port 2
+ugen0: STMicroelectronics Biometric Coprocessor, rev 1.00/0.01, addr 3
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)
