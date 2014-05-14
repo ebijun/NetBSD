@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.41-hpcmips-201405101920Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.41-hpcmips-201405131830Z.iso
 PKGSRC=../../pkgsrc/pkgsrc-2014-05-10.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
@@ -86,15 +86,13 @@ pkg:
 	vnconfig -u ${VND}
 
 # copy default setupfile
-setup:
+release:
 	echo copy default files and make device nodes.
 	vnconfig ${VND} ${FILE}
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	mkdir ${MNT}/msdos
 	tar cvpf - etc root  |(cd /mnt;tar xvpf -)
 	(cd /mnt/dev;./MAKEDEV all)
-	#(cd ..; tar cvpf - Oshimaya) |(cd /mnt/root;tar xvpf -)
 	umount ${MNT}
 	vnconfig -u ${VND}
 
