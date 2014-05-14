@@ -1,0 +1,334 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 6.99.41 (GENERIC) #0: Fri May  9 15:38:37 JST 2014
+	nonaka@koharu.myhome.local:/usr/obj.amd64/sys/arch/amd64/compile/GENERIC
+total memory = 8142 MB
+avail memory = 7889 MB
+timecounter: Timecounters tick every 10.000 msec
+RTC BIOS diagnostic error 0xa0<clock_battery,config_unit>
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+Hewlett-Packard HP EliteBook 8560w (A0001D02)
+mainbus0 (root)
+ACPI: RSDP 0xf2f60 000024 (v02 HPQOEM)
+ACPI: XSDT 0xbf7fe120 00008C (v01 HPQOEM SLIC-MPC 0000000F      01000013)
+ACPI: FACP 0xbf7fc000 0000F4 (v03 HPQOEM 1631     0000000F HP   00000001)
+ACPI: DSDT 0xbf7d4000 0221B8 (v02 HPQOEM 1631     00000001 INTL 20060912)
+ACPI: FACS 0xbf7a5000 000040
+ACPI: HPET 0xbf7fb000 000038 (v01 HPQOEM 1631     00000001 HP   00000001)
+ACPI: APIC 0xbf7fa000 0000BC (v01 HPQOEM 1631     00000001 HP   00000001)
+ACPI: MCFG 0xbf7f9000 00003C (v01 HPQOEM 1631     00000001 HP   00000001)
+ACPI: TCPA 0xbf7f7000 000032 (v02 HPQOEM 1631     00000000 HP   00000001)
+ACPI: SSDT 0xbf7d1000 000266 (v01 HPQOEM SataAhci 00001000 INTL 20060912)
+ACPI: SSDT 0xbf7d0000 0004FC (v01 HPQOEM PtidDevc 00001000 INTL 20060912)
+ACPI: SLIC 0xbf7cf000 000176 (v01 HPQOEM SLIC-MPC 00000001 HP   00000001)
+ACPI: SSDT 0xbf7cc000 0017E7 (v01 HPQOEM NVIDIAGF 00000001 INTL 20060912)
+ACPI: SSDT 0xbf7cb000 0007CE (v01  PmRef  Cpu0Ist 00003000 INTL 20060912)
+ACPI: SSDT 0xbf7ca000 0009B1 (v01  PmRef    CpuPm 00003000 INTL 20060912)
+ACPI: DMAR 0xbf7c9000 0000B0 (v01 INTEL      SNB  00000001 INTL 00000001)
+ACPI: ASF! 0xbf7f8000 0000A5 (v32 HPQOEM 1631     00000001 HP   00000001)
+ACPI: All ACPI Tables successfully acquired
+cpu0 at mainbus0 apid 0: Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz, id 0x206a7
+cpu1 at mainbus0 apid 1: Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz, id 0x206a7
+cpu2 at mainbus0 apid 2: Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz, id 0x206a7
+cpu3 at mainbus0 apid 3: Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz, id 0x206a7
+cpu4 at mainbus0 apid 4: Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz, id 0x206a7
+cpu5 at mainbus0 apid 5: Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz, id 0x206a7
+cpu6 at mainbus0 apid 6: Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz, id 0x206a7
+cpu7 at mainbus0 apid 7: Intel(R) Core(TM) i7-2760QM CPU @ 2.40GHz, id 0x206a7
+ioapic0 at mainbus0 apid 0: pa 0xfec00000, version 0x20, 24 pins
+acpi0 at mainbus0: Intel ACPICA 20131218
+acpi0: X/RSDT: OemId <HPQOEM,SLIC-MPC,0000000f>, AslId <    ,01000013>
+ACPI: SSDT 0xbf625718 00069C (v01  PmRef  Cpu0Cst 00003001 INTL 20060912)
+ACPI: SSDT 0x0 00069C (v01  PmRef  Cpu0Cst 00003001 INTL 20060912)
+ACPI: SSDT 0xbf626a98 000303 (v01  PmRef    ApIst 00003000 INTL 20060912)
+ACPI: SSDT 0x0 000303 (v01  PmRef    ApIst 00003000 INTL 20060912)
+ACPI: SSDT 0xbf624d98 000119 (v01  PmRef    ApCst 00003000 INTL 20060912)
+ACPI: SSDT 0x0 000119 (v01  PmRef    ApCst 00003000 INTL 20060912)
+acpi0: SCI interrupting at int 9
+timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+acpiec0 at acpi0 (EC0, PNP0C09-1): io 0x62,0x66
+PDRC (PNP0C02) at acpi0 not configured
+acpivga0 at acpi0 (DGFX): ACPI Display Adapter
+acpiout0 at acpivga0 (LCD, 0x0110): ACPI Display Output Device
+acpiout0: brightness levels: 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100
+acpiout1 at acpivga0 (CRT, 0x80000100): ACPI Display Output Device
+acpiout2 at acpivga0 (TV, 0x80004210): ACPI Display Output Device
+acpiout3 at acpivga0 (DVI, 0x80006330): ACPI Display Output Device
+acpiout4 at acpivga0 (DD04, 0x80006320): ACPI Display Output Device
+acpiout5 at acpivga0 (DD05, 0x80006340): ACPI Display Output Device
+acpiout6 at acpivga0 (DD06, 0x80002330): ACPI Display Output Device
+acpiout7 at acpivga0 (DD07, 0x80002320): ACPI Display Output Device
+acpiout8 at acpivga0 (DD08, 0x80002340): ACPI Display Output Device
+WMI1 at acpivga0 not configured
+acpivga0: unknown output device acpiout2
+acpivga0: connected output devices:
+acpivga0:   0x0110 (acpiout0): LCD Panel, head 0
+acpivga0:   0x6330 (acpiout3): Ext. Digital Monitor, index 0, port 3, head 0
+acpivga0:   0x6320 (acpiout4): Ext. Digital Monitor, index 0, port 2, head 0
+acpivga0:   0x6340 (acpiout5): Ext. Digital Monitor, index 0, port 4, head 0
+acpivga0:   0x2330 (acpiout6): Ext. Digital Monitor, index 0, port 3, head 0
+acpivga0:   0x2320 (acpiout7): Ext. Digital Monitor, index 0, port 2, head 0
+acpivga0:   0x2340 (acpiout8): Ext. Digital Monitor, index 0, port 4, head 0
+acpivga0:   0x0100 (acpiout1): VGA Analog Monitor, index 0, port 0, head 0
+acpiwmi0 at acpi0 (WMI1, PNP0C14-MXM2): ACPI WMI Interface
+acpiwmibus at acpiwmi0 not configured
+FWHD (INT0800) at acpi0 not configured
+GTPM (IFX0102) at acpi0 not configured
+LDRC (PNP0C02) at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
+COM1 (PNP0501) at acpi0 not configured
+LPT0 (PNP0401) at acpi0 not configured
+pckbc1 at acpi0 (PS2K, PNP0303) (kbd port): io 0x60,0x64 irq 1
+pckbc2 at acpi0 (PS2M, SYN0183) (aux port): irq 12
+ACEL (HPQ0004) at acpi0 not configured
+acpibat0 at acpi0 (BAT0, PNP0C0A-1): ACPI Battery
+acpibat0: Hewlett-Packard LIon rechargeable battery
+acpibat0: granularity: low->warn 0.100 Ah, warn->full 0.100 Ah
+acpibat1 at acpi0 (BAT1, PNP0C0A-2): ACPI Battery
+acpiacad0 at acpi0 (AC, ACPI0003): ACPI AC Adapter
+acpibut0 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
+acpilid0 at acpi0 (LID, PNP0C0D): ACPI Lid Switch
+acpidalb0 at acpi0 (HST1, PNP0C32-1): Direct Application Launch Button
+acpiwmi1 at acpi0 (WMID, PNP0C14-0): ACPI WMI Interface
+wmihp0 at acpiwmi1: HP WMI mappings
+acpitz0 at acpi0 (CPUZ)
+acpitz0: levels: critical 128.0 C, hot 99.0 C, passive cooling
+acpitz1 at acpi0 (GFXZ): cpu0
+acpitz1: levels: critical 128.0 C, passive 108.0 C, passive cooling
+acpitz2 at acpi0 (EXTZ)
+acpitz2: levels: critical 128.0 C, passive cooling
+acpitz3 at acpi0 (LOCZ)
+acpitz3: levels: critical 128.0 C, passive cooling
+acpitz4 at acpi0 (BATZ): cpu0
+acpitz4: levels: critical 128.0 C, passive 55.0 C, passive cooling
+acpitz5 at acpi0 (PCHZ)
+acpitz5: levels: critical 128.0 C, passive cooling
+acpitz6 at acpi0 (DM1Z)
+acpitz6: levels: critical 128.0 C, passive cooling
+acpitz7 at acpi0 (DM2Z)
+acpitz7: levels: critical 128.0 C, passive cooling
+acpitz8 at acpi0 (DM3Z)
+acpitz8: levels: critical 128.0 C, passive cooling
+acpitz9 at acpi0 (DM4Z)
+acpitz9: levels: critical 128.0 C, passive cooling
+PTID (INT340E) at acpi0 not configured
+ACPI: Enabled 4 GPEs in block 00 to 3F
+ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20131218/hwxface-646)
+ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20131218/hwxface-646)
+pckbd0 at pckbc1 (kbd slot)
+pckbc1: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc1 (aux slot)
+pckbc1: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: Intel Sandy Bridge Host Bridge (rev. 0x09)
+ppb0 at pci0 dev 1 function 0: Intel product 0x0101 (rev. 0x09)
+ppb0: PCI Express 2.0 <Root Port of PCI-E Root Complex> x16 @ 5.0Gb/s
+pci1 at ppb0 bus 1
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+vga0 at pci1 dev 0 function 0: NVIDIA product 0x0dda (rev. 0xa1)
+wsdisplay0 at vga0 kbdmux 1: console (80x25, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+drm at vga0 not configured
+hdaudio0 at pci1 dev 0 function 1: HD Audio Controller
+hdaudio0: interrupting at ioapic0 pin 17
+hdafg0 at hdaudio0: NVIDIA product 0x0011
+hdafg0: DP00 8ch: Digital Out [Jack]
+hdafg0: 8ch/0ch 48000Hz PCM16*
+hdafg1 at hdaudio0: NVIDIA product 0x0011
+hdafg1: DP00 8ch: Digital Out [Jack]
+hdafg1: 8ch/0ch 48000Hz PCM16*
+hdafg2 at hdaudio0: NVIDIA product 0x0011
+hdafg2: DP00 8ch: Digital Out [Jack]
+hdafg2: 8ch/0ch 48000Hz PCM16*
+hdafg3 at hdaudio0: NVIDIA product 0x0011
+hdafg3: DP00 8ch: Digital Out [Jack]
+hdafg3: 8ch/0ch 48000Hz PCM16*
+Intel 6 Series MEI (miscellaneous communications, revision 0x04) at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3: Intel 6 Series KT (com)
+com2 at puc0 port 0: ioaddr 0x5050, interrupting at ioapic0 pin 17
+com2: ns16550a, working fifo
+wm0 at pci0 dev 25 function 0: PCH2 LAN (82579LM) Controller (rev. 0x04)
+wm0: interrupting at ioapic0 pin 20
+wm0: PCI-Express bus
+wm0: FLASH
+wm0: Ethernet address e4:11:5b:f9:36:75
+ihphy0 at wm0 phy 2: i82579 10/100/1000 media interface, rev. 3
+ihphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+ehci0 at pci0 dev 26 function 0: Intel 6 Series USB (rev. 0x04)
+ehci0: interrupting at ioapic0 pin 16
+ehci0: EHCI version 1.0
+usb0 at ehci0: USB revision 2.0
+hdaudio1 at pci0 dev 27 function 0: HD Audio Controller
+hdaudio1: interrupting at ioapic0 pin 22
+hdafg4 at hdaudio1: Sigmatel 92HD81B1X5
+hdafg4: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
+hdafg4: ADC01 2ch: Mic In [Jack]
+hdafg4: ADC02 2ch: Mic In [Built-In]
+hdafg4: 2ch/2ch 44100Hz 48000Hz 88200Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg4: full duplex, playback, capture, independent
+ppb1 at pci0 dev 28 function 0: Intel 6 Series PCIE (rev. 0xb4)
+ppb1: PCI Express 2.0 <Root Port of PCI-E Root Complex> x1 @ 5.0Gb/s
+pci2 at ppb1 bus 2
+pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb2 at pci0 dev 28 function 1: Intel 6 Series PCIE (rev. 0xb4)
+ppb2: PCI Express 2.0 <Root Port of PCI-E Root Complex> x1 @ 5.0Gb/s
+pci3 at ppb2 bus 3
+pci3: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb3 at pci0 dev 28 function 2: Intel 6 Series PCIE (rev. 0xb4)
+ppb3: PCI Express 2.0 <Root Port of PCI-E Root Complex> x1 @ 5.0Gb/s
+ppb3: link is x1 @ 2.5Gb/s
+pci4 at ppb3 bus 36
+pci4: i/o space, memory space enabled, rd/line, wr/inv ok
+fwohci0 at pci4 dev 0 function 0: JMicron Technology product 0x2380 (rev. 0x30)
+fwohci0: interrupting at ioapic0 pin 18
+fwohci0: OHCI version 1.10 (ROM=0)
+fwohci0: No. of Isochronous channels is 4.
+fwohci0: EUI64 ff:e4:73:ff:ff:ff:ff:fe
+fwohci0: Phy 1394a available S400, 2 ports.
+fwohci0: fwphy_rddata: 0x5 loop=100, retry=100
+fwohci0: fwphy_rddata: 0x2 loop=100, retry=100
+fwohci0: Link S400, max_rec 2048 bytes.
+ieee1394if0 at fwohci0: IEEE1394 bus
+fwip0 at ieee1394if0: IP over IEEE1394
+fwohci0: Initiate bus reset
+fwohci0: fwphy_rddata: 0x1 loop=100, retry=100
+fwohci0: fwphy_rddata: 0x1 loop=100, retry=100
+JMicron Technology JMB388 SD/MMC Host Controller (miscellaneous system, revision 0x30) at pci4 dev 0 function 1 not configured
+sdhc0 at pci4 dev 0 function 2: JMicron Technology JMB388 SD Host Controller (rev. 0x30)
+sdhc0: interrupting at ioapic0 pin 18
+sdhc0: SD Host Specification 2.0, rev.173
+sdhc0: using DMA transfer
+sdmmc0 at sdhc0 slot 0
+ppb4 at pci0 dev 28 function 3: Intel 6 Series PCIE (rev. 0xb4)
+ppb4: PCI Express 2.0 <Root Port of PCI-E Root Complex> x1 @ 5.0Gb/s
+ppb4: link is x1 @ 2.5Gb/s
+pci5 at ppb4 bus 37
+pci5: i/o space, memory space enabled, rd/line, wr/inv ok
+iwn0 at pci5 dev 0 function 0: Intel Centrino Advanced-N 6205 (rev. 0x34)
+iwn0: interrupting at ioapic0 pin 19
+iwn0: MIMO 2T2R, MoW, address 08:11:96:4d:d2:14
+iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+iwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ppb5 at pci0 dev 28 function 7: Intel 6 Series PCIE (rev. 0xb4)
+ppb5: PCI Express 2.0 <Root Port of PCI-E Root Complex> x1 @ 5.0Gb/s
+pci6 at ppb5 bus 38
+pci6: i/o space, memory space enabled, rd/line, wr/inv ok
+xhci0 at pci6 dev 0 function 0: NEC USB3 Host Controller (rev. 0x04)
+xhci0: interrupting at ioapic0 pin 19
+xhci0: xHCI version 0.96
+usb1 at xhci0: USB revision 2.0
+ehci1 at pci0 dev 29 function 0: Intel 6 Series USB (rev. 0x04)
+ehci1: interrupting at ioapic0 pin 16
+ehci1: EHCI version 1.0
+usb2 at ehci1: USB revision 2.0
+ichlpcib0 at pci0 dev 31 function 0: Intel QM67 LPC (rev. 0x04)
+timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
+ichlpcib0: 24-bit timer
+ichlpcib0: TCO (watchdog) timer configured.
+ahcisata0 at pci0 dev 31 function 2: Intel 6 Series AHCI (rev. 0x04)
+ahcisata0: interrupting at ioapic0 pin 19
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.30, 6 ports, 32 slots, CAP 0xef30ff65<SXS,EMS,PSC,SSC,PMD,ISS=0x3=Gen3,SCLO,SAL,SALP,SSS,SSNTF,SNCQ,S64A>
+atabus0 at ahcisata0 channel 0
+atabus1 at ahcisata0 channel 1
+atabus2 at ahcisata0 channel 3
+atabus3 at ahcisata0 channel 4
+atabus4 at ahcisata0 channel 5
+isa0 at ichlpcib0
+lpt0 at isa0 port 0x378-0x37b irq 7
+tpm0 at isa0 iomem 0xfed40000-0xfed44fff irq 7: IFX SLB 9635 TT 1.2 rev 0x10
+com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, working fifo
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+acpicpu0: C3: FFH, lat 104 us, pow   350 mW
+acpicpu0: P0: FFH, lat  10 us, pow 45000 mW, 2401 MHz, turbo boost
+acpicpu0: P1: FFH, lat  10 us, pow 45000 mW, 2400 MHz
+acpicpu0: P2: FFH, lat  10 us, pow 35666 mW, 2000 MHz
+acpicpu0: P3: FFH, lat  10 us, pow 31487 mW, 1800 MHz
+acpicpu0: P4: FFH, lat  10 us, pow 27058 mW, 1600 MHz
+acpicpu0: P5: FFH, lat  10 us, pow 23214 mW, 1400 MHz
+acpicpu0: P6: FFH, lat  10 us, pow 19535 mW, 1200 MHz
+acpicpu0: P7: FFH, lat  10 us, pow 15629 mW, 1000 MHz
+acpicpu0: P8: FFH, lat  10 us, pow 12270 mW,  800 MHz
+acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
+acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
+acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
+acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
+acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
+acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
+acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
+acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
+coretemp0 at cpu0: thermal sensor, 1 C resolution
+acpicpu1 at cpu1: ACPI CPU
+acpicpu2 at cpu2: ACPI CPU
+coretemp1 at cpu2: thermal sensor, 1 C resolution
+acpicpu3 at cpu3: ACPI CPU
+acpicpu4 at cpu4: ACPI CPU
+coretemp2 at cpu4: thermal sensor, 1 C resolution
+acpicpu5 at cpu5: ACPI CPU
+acpicpu6 at cpu6: ACPI CPU
+coretemp3 at cpu6: thermal sensor, 1 C resolution
+acpicpu7 at cpu7: ACPI CPU
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "TSC" frequency 2394663680 Hz quality 3000
+acpiacad0: AC adapter online.
+uhub0 at usb1: NetBSD xHCI Root Hub, class 9/0, rev 2.00/1.00, addr 0
+uhub0: 2 ports with 2 removable, self powered
+uhub1 at usb0: Intel EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub1: 3 ports with 3 removable, self powered
+uhub2 at usb2: Intel EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub2: 3 ports with 3 removable, self powered
+ahcisata0 port 0: device present, speed: 3.0Gb/s
+ahcisata0 port 1: device present, speed: 1.5Gb/s
+wd0 at atabus0 drive 0
+wd0: <ST9500420AS>
+wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+wd0: 465 GB, 969021 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+atapibus0 at atabus1: 1 targets
+cd0 at atapibus0 drive 0: <hp       DVDRAM GT50N, KZ9BAME5905, MP00> cdrom removable
+cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+uhub3 at uhub2 port 1: vendor 0x8087 product 0x0024, class 9/0, rev 2.00/0.00, addr 2
+uhub3: single transaction translator
+uhub4 at uhub1 port 1: vendor 0x8087 product 0x0024, class 9/0, rev 2.00/0.00, addr 2
+uhub4: single transaction translator
+uhub3: 8 ports with 8 removable, self powered
+uhub4: 6 ports with 6 removable, self powered
+ugen0 at uhub4 port 1
+ugen0: vendor 0x138a product 0x003c, rev 1.10/0.86, addr 3
+umass0 at uhub3 port 2 configuration 1 interface 0
+umass0: PQI PQI USB Flash Drive, rev 2.00/11.00, addr 3
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <Generic, USB Flash Disk, 1100> disk removable
+sd0: 3861 MB, 7872 cyl, 16 head, 63 sec, 512 bytes/sect x 7907328 sectors
+uhub5 at uhub4 port 4: SMSC product 0x2514, class 9/0, rev 2.00/b.b3, addr 4
+uhub5: multiple transaction translators
+uhub5: 4 ports with 4 removable, self powered
+Kernelized RAIDframe activated
+pad0: outputs: 44100Hz, 16-bit, stereo
+audio1 at pad0: half duplex, playback, capture
+boot device: sd0
+root on sd0a dumps on sd0b
+root file system type: ffs
+WARNING: clock gained 3 days
+wsdisplay0: screen 1 added (80x25, vt100 emulation)
+wsdisplay0: screen 2 added (80x25, vt100 emulation)
+wsdisplay0: screen 3 added (80x25, vt100 emulation)
+wsdisplay0: screen 4 added (80x25, vt100 emulation)
