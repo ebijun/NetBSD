@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.41 (GENERIC) #1: Wed May 14 12:26:45 JST 2014
-	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/GENERIC
+NetBSD 6.99.41 (ASPIREONE) #2: Wed May 14 14:58:55 JST 2014
+	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/ASPIREONE
 total memory = 2035 MB
 avail memory = 1987 MB
 timecounter: Timecounters tick every 10.000 msec
@@ -94,9 +94,7 @@ agp0: aperture at 0x80000000, size 0x10000000
 vga1 at pci0 dev 2 function 0: vendor 0x8086 product 0x27ae (rev. 0x03)
 wsdisplay0 at vga1 kbdmux 1: console (80x25, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
-i915drm0 at vga1: Intel i945GME
-i915drm0: AGP at 0x80000000 256MB
-i915drm0: Initialized i915 1.6.0 20080730
+drm at vga1 not configured
 vendor 0x8086 product 0x27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
 hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
 hdaudio0: interrupting at ioapic0 pin 16
@@ -119,11 +117,11 @@ ppb1 at pci0 dev 28 function 2: vendor 0x8086 product 0x27d4 (rev. 0x02)
 ppb1: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
 pci2 at ppb1 bus 2
 pci2: i/o space, memory space enabled
-athn0 at pci2 dev 0 function 0athn0: Atheros AR9285
-athn0: rev 2 (1T1R), ROM rev 13, address 00:26:5e:6f:ac:d0
-athn0: interrupting at ioapic0 pin 18
-athn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-athn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ath0 at pci2 dev 0 function 0: Atheros 9285
+ath0: interrupting at ioapic0 pin 18
+ath0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+ath0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ath0: mac 192.2 phy 14.0 radio 12.0
 ppb2 at pci0 dev 28 function 3: vendor 0x8086 product 0x27d6 (rev. 0x02)
 ppb2: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
 pci3 at ppb2 bus 3
@@ -213,3 +211,43 @@ wsdisplay0: screen 1 added (80x25, vt100 emulation)
 wsdisplay0: screen 2 added (80x25, vt100 emulation)
 wsdisplay0: screen 3 added (80x25, vt100 emulation)
 wsdisplay0: screen 4 added (80x25, vt100 emulation)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+WARNING: module error: incompatible module class for `drm' (3 != 1)
+nd6_dad_timer: called with non-tentative address 2001:200:180:305:226:5eff:fe6f:acd0(ath0)
+ath0: device timeout (txq 1, txintrperiod 5)
+in6_ifadd: 2001:200:180:305:226:5eff:fe6f:acd0 is already configured
+ath0: device timeout (txq 1, txintrperiod 4)
+ath0: device timeout (txq 1, txintrperiod 3)
+ath0: device timeout (txq 1, txintrperiod 2)
