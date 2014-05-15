@@ -4,10 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.41 (ASPIREONE) #2: Wed May 14 14:58:55 JST 2014
-	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/ASPIREONE
+NetBSD 6.99.41 (DRMKMS) #0: Thu May 15 12:10:57 JST 2014
+	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/DRMKMS
 total memory = 2035 MB
-avail memory = 1987 MB
+avail memory = 1986 MB
 timecounter: Timecounters tick every 10.000 msec
 RTC BIOS diagnostic error 0x80<clock_battery>
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
@@ -49,10 +49,13 @@ acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
 acpibut1 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
 acpibat0 at acpi0 (BAT1, PNP0C0A-0): ACPI Battery
 acpiacad0 at acpi0 (ACAD, ACPI0003): ACPI AC Adapter
-SYSR (PNP0C02) at acpi0 not configured
-FPU (PNP0C04) at acpi0 not configured
+SYSR (PNP0C02) WARNING: module error: vfs load failed for `acpiverbose', error 45
+at acpi0 not configured
+FPU (PNP0C04) WARNING: module error: vfs load failed for `acpiverbose', error 45
+at acpi0 not configured
 attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53
-FWHD (INT0800) at acpi0 not configured
+FWHD (INT0800) WARNING: module error: vfs load failed for `acpiverbose', error 45
+at acpi0 not configured
 pckbc1 at acpi0 (KBC, PNP0303) (kbd port): io 0x60,0x64 irq 1
 pckbc2 at acpi0 (MOUE, SYN1B20) (aux port): irq 12
 acpivga0 at acpi0 (OVGA): ACPI Display Adapter
@@ -78,6 +81,7 @@ apm0 at acpi0: Power Management spec V1.2
 ACPI: Enabled 1 GPEs in block 00 to 1F
 ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20131218/hwxface-646)
 ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20131218/hwxface-646)
+WARNING: module error: vfs load failed for `acpiverbose', error 45
 pckbd0 at pckbc1 (kbd slot)
 pckbc1: using irq 1 for kbd slot
 wskbd0 at pckbd0: console keyboard
@@ -88,13 +92,30 @@ pckbc1: using irq 12 for aux slot
 wsmouse0 at pms0 mux 0
 pci0 at mainbus0 bus 0: configuration mode 1
 pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
-pchb0 at pci0 dev 0 function 0: vendor 0x8086 product 0x27ac (rev. 0x03)
+pchb0 at pci0 dev 0 function 0WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27ac (rev. 0x03)
 agp0 at pchb0: detected 7932k stolen memory
 agp0: aperture at 0x80000000, size 0x10000000
-vga1 at pci0 dev 2 function 0: vendor 0x8086 product 0x27ae (rev. 0x03)
-wsdisplay0 at vga1 kbdmux 1: console (80x25, vt100 emulation), using wskbd0
+i915drmkms0 at pci0 dev 2 function 0WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27ae (rev. 0x03)
+drmkms0 at i915drmkms0
+drm: Memory usable by graphics device = 256M
+drm: MTRR allocation failed.  Graphics performance may suffer.
+drm: Supports vblank timestamp caching Rev 1 (10.10.2010).
+drm: Driver supports precise vblank timestamp query.
+i915drmkms0: unable to map ROM
+drm: failed to find VBIOS tables
+drm: initialized overlay support
+drmkms0: interrupting at ioapic0 pin 16 (i915)
+i915drmkms0: framebuffer at 0xdaf51000, size 1024x600, depth 32, stride 4096
+wsdisplay0 at i915drmkms0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
-drm at vga1 not configured
+fixme: max PWM is zero
+drmkms0: info: registered panic notifier
+WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
 vendor 0x8086 product 0x27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
 hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
 hdaudio0: interrupting at ioapic0 pin 16
@@ -104,7 +125,9 @@ hdafg0: ADC01 2ch: Mic In [Jack]
 hdafg0: ADC02 2ch: Mic In [Built-In]
 hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
 audio0 at hdafg0: full duplex, playback, capture, mmap, independent
-ppb0 at pci0 dev 28 function 0: vendor 0x8086 product 0x27d0 (rev. 0x02)
+ppb0 at pci0 dev 28 function 0WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27d0 (rev. 0x02)
 ppb0: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
 pci1 at ppb0 bus 1
 pci1: i/o space, memory space enabled
@@ -113,53 +136,83 @@ ale0: AR8113 (L2E RevA), ioapic0 pin 16
 ale0: Ethernet address 00:26:9e:f4:2f:7b
 atphy0 at ale0 phy 0: L1 10/100/1000 PHY, rev. 9
 atphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-ppb1 at pci0 dev 28 function 2: vendor 0x8086 product 0x27d4 (rev. 0x02)
+ppb1 at pci0 dev 28 function 2WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27d4 (rev. 0x02)
 ppb1: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
 pci2 at ppb1 bus 2
 pci2: i/o space, memory space enabled
-ath0 at pci2 dev 0 function 0: Atheros 9285
-ath0: interrupting at ioapic0 pin 18
-ath0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-ath0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-ath0: mac 192.2 phy 14.0 radio 12.0
-ppb2 at pci0 dev 28 function 3: vendor 0x8086 product 0x27d6 (rev. 0x02)
+athn0 at pci2 dev 0 function 0athn0: Atheros AR9285
+athn0: rev 2 (1T1R), ROM rev 13, address 00:26:5e:6f:ac:d0
+athn0: interrupting at ioapic0 pin 18
+athn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+athn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ppb2 at pci0 dev 28 function 3WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27d6 (rev. 0x02)
 ppb2: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
 pci3 at ppb2 bus 3
 pci3: i/o space, memory space enabled
-uhci0 at pci0 dev 29 function 0: vendor 0x8086 product 0x27c8 (rev. 0x02)
+uhci0 at pci0 dev 29 function 0WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27c8 (rev. 0x02)
 uhci0: interrupting at ioapic0 pin 16
+WARNING: module error: vfs load failed for `pciverbose', error 45
 usb0 at uhci0: USB revision 1.0
-uhci1 at pci0 dev 29 function 1: vendor 0x8086 product 0x27c9 (rev. 0x02)
+uhci1 at pci0 dev 29 function 1WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27c9 (rev. 0x02)
 uhci1: interrupting at ioapic0 pin 17
+WARNING: module error: vfs load failed for `pciverbose', error 45
 usb1 at uhci1: USB revision 1.0
-uhci2 at pci0 dev 29 function 2: vendor 0x8086 product 0x27ca (rev. 0x02)
+uhci2 at pci0 dev 29 function 2WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27ca (rev. 0x02)
 uhci2: interrupting at ioapic0 pin 18
+WARNING: module error: vfs load failed for `pciverbose', error 45
 usb2 at uhci2: USB revision 1.0
-uhci3 at pci0 dev 29 function 3: vendor 0x8086 product 0x27cb (rev. 0x02)
+uhci3 at pci0 dev 29 function 3WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27cb (rev. 0x02)
 uhci3: interrupting at ioapic0 pin 19
+WARNING: module error: vfs load failed for `pciverbose', error 45
 usb3 at uhci3: USB revision 1.0
-ehci0 at pci0 dev 29 function 7: vendor 0x8086 product 0x27cc (rev. 0x02)
+ehci0 at pci0 dev 29 function 7WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27cc (rev. 0x02)
 ehci0: interrupting at ioapic0 pin 16
+WARNING: module error: vfs load failed for `pciverbose', error 45
 ehci0: EHCI version 1.0
 ehci0: companion controllers, 2 ports each: uhci0 uhci1 uhci2 uhci3
 usb4 at ehci0: USB revision 2.0
-ppb3 at pci0 dev 30 function 0: vendor 0x8086 product 0x2448 (rev. 0xe2)
+ppb3 at pci0 dev 30 function 0WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x2448 (rev. 0xe2)
 pci4 at ppb3 bus 4
 pci4: i/o space, memory space enabled
-ichlpcib0 at pci0 dev 31 function 0: vendor 0x8086 product 0x27b9 (rev. 0x02)
+ichlpcib0 at pci0 dev 31 function 0WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27b9 (rev. 0x02)
 timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
 ichlpcib0: 24-bit timer
 ichlpcib0: TCO (watchdog) timer configured.
 gpio0 at ichlpcib0: 64 pins
-ahcisata0 at pci0 dev 31 function 2: vendor 0x8086 product 0x27c5 (rev. 0x02)
+ahcisata0 at pci0 dev 31 function 2WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27c5 (rev. 0x02)
 ahcisata0: interrupting at ioapic0 pin 17
 ahcisata0: AHCI revision 1.10, 4 ports, 32 slots, CAP 0xdf10ff03<PSC,SSC,PMD,ISS=0x1=Gen1,SCLO,SAL,SALP,SSS,SMPS,SNCQ,S64A>
 atabus0 at ahcisata0 channel 0
 atabus1 at ahcisata0 channel 2
-ichsmb0 at pci0 dev 31 function 3: vendor 0x8086 product 0x27da (rev. 0x02)
+ichsmb0 at pci0 dev 31 function 3WARNING: module error: vfs load failed for `pciverbose', error 45
+WARNING: module error: vfs load failed for `pciverbose', error 45
+: vendor 0x8086 product 0x27da (rev. 0x02)
 ichsmb0: interrupting at ioapic0 pin 17
 iic0 at ichsmb0: I2C bus
 isa0 at ichlpcib0
+vga0 at isa0 port 0x3b0-0x3df iomem 0xa0000-0xbffff
+wsdisplay1 at vga0 kbdmux 1
+wsmux1: connecting to wsdisplay1
 pcppi0 at isa0 port 0x61
 midi0 at pcppi0: PC speaker
 sysbeep0 at pcppi0
@@ -182,6 +235,13 @@ acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
 acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
 coretemp0 at cpu0: thermal sensor, 1 C resolution
 acpicpu1 at cpu1: ACPI CPU
+render error detected, EIR: 0x00000010
+page table error
+  PGTBL_ER: 0x00000110
+DRM error in i915_report_and_clear_eir: EIR stuck: 0x00000010, masking
+render error detected, EIR: 0x00000010
+page table error
+  PGTBL_ER: 0x00000110
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
 uhub0 at usb0: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
@@ -206,10 +266,16 @@ wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (
 Kernelized RAIDframe activated
 boot device: wd0
 root on wd0a dumps on wd0b
+mountroot: trying smbfs...
+mountroot: trying ntfs...
+mountroot: trying nfs...
+mountroot: trying msdos...
+mountroot: trying lfs...
+mountroot: trying ext2fs...
+mountroot: trying ffs...
 root file system type: ffs
-wsdisplay0: screen 1 added (80x25, vt100 emulation)
-wsdisplay0: screen 2 added (80x25, vt100 emulation)
-wsdisplay0: screen 3 added (80x25, vt100 emulation)
-wsdisplay0: screen 4 added (80x25, vt100 emulation)
-WARNING: module error: incompatible module class for `drm' (3 != 1)
-WARNING: module error: incompatible module class for `drm' (3 != 1)
+init: copying out path `/sbin/init' 11
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)
