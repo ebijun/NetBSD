@@ -33,7 +33,7 @@ Maps:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. csv-table::
- :widths: 20 15 20 20 20
+ :widths: 20 15 20 20
 
  開催年,開催日,参加者,参加グループ
  2005 Okinawa ,11/19,200,12
@@ -45,7 +45,6 @@ Maps:
  2011 Okinawa,9/10,120,9
  2012 Okinawa,9/22,120,16
  2013 Okinawa,7/6,170,16
-
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -68,8 +67,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2012沖縄 NetBSDブース展示の記録,http://togetter.com/li/377549
  OSC2013沖縄 NetBSDブース展示の記録,http://togetter.com/li/529669
+ OSC2012沖縄 NetBSDブース展示の記録,http://togetter.com/li/377549
 
 よく行く店
 ~~~~~~~~~~~~~~
