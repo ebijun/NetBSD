@@ -45,6 +45,17 @@ Maps:
  2012 Okinawa,9/22,120,16
  2013 Okinawa,7/6,170,16
 
+観光ガイドバックナンバー https://github.com/ebijun/osc-demo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+ :widths: 20 30 80
+ No.,イベント,URL
+ 57.   OSC2014沖縄 http://www.soum.co.jp/~jun/OSC2014okinawa.pdf
+ 43.   OSC2013沖縄 http://www.soum.co.jp/~jun/OSC2013okinawa.pdf
+ 32.   OSC2012沖縄 http://www.soum.co.jp/~jun/OSC2012okinawa.pdf
+ 15.   OSC2011沖縄 http://www.soum.co.jp/~jun/OSC2011okinawa.pdf
+
 togetterまとめ
 ~~~~~~~~~~~~~~~
 
@@ -53,6 +64,8 @@ togetterまとめ
 
  OSC2012沖縄 NetBSDブース展示の記録,http://togetter.com/li/377549
  OSC2013沖縄 NetBSDブース展示の記録,http://togetter.com/li/529669
+
+
 
 よく行く店
 ~~~~~~~~~~~~~~
