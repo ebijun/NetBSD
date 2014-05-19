@@ -34,6 +34,7 @@ Maps:
 
 .. csv-table::
  :widths: 20 15 20 20 20
+
  開催年,開催日,参加者,参加グループ
  2005 Okinawa ,11/19,200,12
  2006 Okinawa ,12/2,150,15
@@ -48,12 +49,14 @@ Maps:
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 これまですべてのバックナンバーは 
 https://github.com/ebijun/osc-demo　にあります。
 
 .. csv-table::
  :widths: 20 30 80
- No.,イベント,URL
+
+ No,イベント,URL
  57,OSC2014沖縄,http://www.soum.co.jp/~jun/OSC2014okinawa.pdf
  43,OSC2013沖縄,http://www.soum.co.jp/~jun/OSC2013okinawa.pdf
  32,OSC2012沖縄,http://www.soum.co.jp/~jun/OSC2012okinawa.pdf
