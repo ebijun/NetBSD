@@ -4,15 +4,18 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.41-hpcmips-201405131830Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.41-hpcmips-201405151620Z.iso
 PKGSRC=../../pkgsrc/pkgsrc-2014-05-10.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
+KERNELPATH=/mnt1/hpcmips/binary/kernel
 INSTALLATION=/mnt1/hpcmips/installation
-KERNEL=/mnt1/hpcmips/binary/kernel
+
+KERNEL=netbsd-GENERIC.gz
+KERNEL-TX=netbsd-TX3912.gz
+INSTALLKERNEL=netbsd-install.gz
 
 # extract sets.
-#LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=base etc comp man modules text xbase xcomp xetc xfont xserver kern-GENERIC
 
 # mount point
@@ -23,7 +26,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file newfs cdmount extract bootarea setup cdunmount
+all: file newfs cdmount extract bootarea cdunmount
 
 # make image file. 512*3813376=2GB
 file: 
@@ -67,8 +70,10 @@ bootarea:
 	cp ${INSTALLATION}/hpcboot.exe ${MNT}
 	cp ${INSTALLATION}/pbsdboot.exe ${MNT}
 	cp ${INSTALLATION}/pbsdboot1.exe ${MNT}
-	cp ${KERNEL}/netbsd-GENERIC.gz ${MNT}
-	cp ${KERNEL}/netbsd-TX3912.gz ${MNT}
+	cp ${KERNELPATH}/${KERNEL} ${MNT}
+	cp ${KERNELPATH}/${KERNEL-TX} ${MNT}
+	cp ${KERNELPATH}/${KERNEL} .
+	cp ${KERNELPATH}/${KERNEL-TX} .
 	
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -101,4 +106,11 @@ fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch
+
+# Setup via gxemul
+boot:
+	gxemul -e mobilepro770 -M 256 -I 800000000  -d ${FILE} ${KERNEL}
+
+bootinstall:
+        gxemul -e mobilepro770 -d ${FILE} -d c:${IMAGE} ${INSTALLKERNEL}
 
