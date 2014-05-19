@@ -65,7 +65,7 @@ RaspberryPIでNetBSDを使ってみる
 
  earmhf (EARM：ハードフロート 通常はこちらを利用してください)
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2014-05-10-earmhf/2014-05-10-netbsd-raspi.img.gz
+ 2014-05-24-earmhf/2014-05-24-netbsd-raspi.img.gz
  
  evbarm (ソフトフロート：hpcarm/zaurus互換)
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
@@ -77,7 +77,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2014-05-10-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2014-05-24-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
 
 RaspberryPIの起動
 ------------------
@@ -173,7 +173,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 ::
 
  % cat /etc/pkg_install.conf
-　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-05-10
+　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-05-24
 
 * パッケージのインストール
 
@@ -200,12 +200,12 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- 2014/05/03時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
+ 2014/05/17時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
 
-	# cd /usr/pkgsrc/www/wordpress
+	# cd /usr/pkgsrc/www/php-ja-wordpress
 	# make package-install
 
 を実行すると、wordpressに関連したソフトウェアをコンパイル／インストールします。
@@ -253,7 +253,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2014-05-10-netbsd-raspi.img
+ # vnconfig vnd0 2014-05-24-netbsd-raspi.img
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
@@ -392,36 +392,16 @@ bytebench
 関連バグ
 --------
 
-PR 47798
- 今回、mikutterのアイコンがでなくて落ちるバグに悩みました。つついさんに感謝します。
-	http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=47798
-
-pkg/48128: icewm build broken on 6.99.23
- 直っています。
-
-port-evbarm/48132: devel/tradcpp build broken on evbearmv6hf-el 6.99.23
- 直っています。
-
-port-evbarm/48288:Update firmware from today 2013-10-15. 
- 直っています。MSDOS領域に書かれたファームウェアが古い場合、512MBモデルで起動しません。
-
-DMA support and (initial) isoc transfer support.
-  http://mail-index.netbsd.org/source-changes/2013/10/15/msg048238.html
-  これでUSBカメラが使えるはずですが、、
-
-port-arm/48215: pkg_add fails on recent NetBSD/evbearmv6hf-el current
-port-arm/48267: pkg_add thinks it's running on earm even though it's running on earmhf
-  http://mail-index.netbsd.org/source-changes/2013/10/26/msg048721.html
-
-harfbuzzからicuが呼ばれているけどicuがコンパイルできない。
-  http://mail-index.netbsd.org/pkgsrc-changes/2013/11/05/msg097227.html
-
-pkgsrc/devel/bison
-  http://mail-index.netbsd.org/pkgsrc-changes/2013/11/09/msg097366.html
-
-pkgsrc/multimedia/libvpx
-  http://mail-index.netbsd.org/pkgsrc-changes/2013/11/09/msg097365.html
-
+#. dillo crashes at startup
+  http://lists.dillo.org/pipermail/dillo-dev/2014-May/010161.html
+  this image contains dillo with patch by Michael van Elst
+  http://mail-index.netbsd.org/port-arm/2014/04/22/msg002386.html
+#. port-arm/48805
+  Audio Driver issues on Pi running NetBSD (2014-05-10) image 
+  - hangs audio applications like audioplay
+#. port-arm/48817
+  pkgsrc/devel/ruby-delayer build failed: 
+  Floating point exception (core dumped)
 
 --
 
