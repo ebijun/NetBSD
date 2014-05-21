@@ -26,14 +26,18 @@ fi
 
 # start some nice programs
 xset b off
+
+#set keyboard layout
 #setxkbmap -layout jp -option ctrl:swapcaps
 setxkbmap -model jp106 jp
 
 #uim
 export GTK_IM_MODULE=uim
 export LANG=ja_JP.UTF-8
+#export LANG=en_US.UTF-8
+
 uim-xim &
-#select input method via uim-pref-gtk userinterface.
+# To select input method via uim-pref-gtk userinterface.
 # uim-pref-gtk 
 export XMODIFIERS=@im=uim
 
@@ -41,7 +45,7 @@ xsetroot -bg black -grey
 #kterm -geometry 80x25+0+0 -fk k14 -fn a14 -fr r14 -km euc&
 xsetbg NetBSD.png
 
-#for mikutter 
+#for mikutter , click and start browser.
 export BROWSER=dillo
 
 xterm  -geometry 80x25+0+0 &

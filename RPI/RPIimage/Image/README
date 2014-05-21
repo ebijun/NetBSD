@@ -47,7 +47,7 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.1.16-netbsd6-evbarm-earmhf.tar.gz for evaluation.
+  2. Download musica-0.1.17-netbsd6-evbarm-earmhf.tar.gz for evaluation.
   3. Extract tar file and read documents.
   4. ./musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
@@ -62,33 +62,38 @@ Todo:
 =====================
 
 For OpenSourceConference 2014 Okinawa NetBSD booth
-(https://www.facebook.com/events/1465786260321905/)
+(https://www.facebook.com/events/280532625435360/)
 demonstration use, I've updated raspberry-pi image.
 
 - NetBSD 6.99.42 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
-  twitter client (net/mikutter) on 40inch home TV.
 - running mikutter.
+  twitter client (net/mikutter) on 40inch home TV.
   http://movapic.com/pic/20140520210816537b45b0105ed
 
   # startx
   # mikutter &
+  or
+  # LANG=en_US.UTF-8 mikutter &
+       English menu support. LANG environment setting on .xinitrc .
 
   ==== one or two or threee moment =====
 
-Appear mikutter window.and mikutter-chan said,
+Appear mikutter window. and mikutter-chan tell you,
 
-"Installing done! good work!" [Next]
+"Well done on the installation!" [Next]
 "Hi! This is mikutter-chan speaking to you,join the twitter with me!" [Next]
-"1. Click http:...... access URL,and start dillo web browser.
- 2. login your twitter account via dillo web browser.
- 3. get the 7-digits code and put into input form."
- 
+ 1. "Click the link https:......" click the URL, 
+    and start dillo browser automaticaly. 
+ 2. "login with the Twitter account you wish to use."
+ 3. "Go along until you see a 7-digit code and type it in at the top."
   -> get pin number.
   -> paste pin number to mikutter
-  Get your twitter timeline with your family!
+ 4. "Congratulations! You have attained achievement register_account!"
+
+  Share your twitter timeline with your family!
 
 Features:
   - fit size for 2GB SD Card
@@ -142,7 +147,7 @@ Guide:
 BUGS:
 1. dillo crashes at startup
   http://lists.dillo.org/pipermail/dillo-dev/2014-May/010161.html
-  this image contains dillo with patch by Michael van Elst
+  This image contains dillo with patch by Michael van Elst.
   http://mail-index.netbsd.org/port-arm/2014/04/22/msg002386.html
 
 2. port-arm/48805
@@ -152,6 +157,8 @@ BUGS:
 3. port-arm/48817
   pkgsrc/devel/ruby-delayer build failed: 
   Floating point exception (core dumped)
+
+4. medit dumping core when write text.
 
 One more time: (we're gonna celebrate
 
