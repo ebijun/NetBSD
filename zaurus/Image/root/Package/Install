@@ -1,0 +1,5 @@
+for i in `grep -v \# List`
+do
+	echo $i
+echo	pkg_add ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-21-evbearmv6hf-el/packages/All/$i
+done
