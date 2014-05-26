@@ -5,9 +5,9 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
 #IMAGE=/usr/release/earmhf/images/NetBSD-6.99.40-evbarm-earmhf.iso 
-IMAGE=/usr/release/images/NetBSD-6.99.42-evbarm-earmhf-201405181900Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.43-evbarm-earmhf-201405251620Z.iso
 
-PKGSRC=pkgsrc-2014-05-17.tar.gz
+PKGSRC=pkgsrc-2014-05-24.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -16,7 +16,8 @@ NETWALKER=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.gz
 NETWALKERBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.bin.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-LIST=man modules text xbase xcomp xetc xfont xserver
+#LIST=man modules text xbase xcomp xetc xfont xserver
+LIST=man modules test text xbase xcomp xetc xfont xserver #add test
 
 # mount point
 MNT=/mnt
