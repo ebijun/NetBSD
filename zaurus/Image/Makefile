@@ -10,6 +10,8 @@ PKGSRC=../../pkgsrc/pkgsrc-2014-05-17.tar.gz
 SETS=/mnt1/zaurus/binary/sets
 INSTALLATION=/mnt1/zaurus/installation
 KERNEL=/mnt1/zaurus/binary/kernel
+GENERIC=netbsd-GENERIC.gz
+C700=netbsd-C700.gz
 
 # extract sets.
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
@@ -23,7 +25,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file newfs cdmount extract bootarea setup cdunmount
+all: file newfs cdmount extract bootarea cdunmount
 
 # make image file. 512*3813376=2GB
 file: 
@@ -64,7 +66,14 @@ bootarea:
 	fsck_msdos -fy /dev/r${VND}e
 	mount /dev/${VND}e ${MNT}
 	
-#	cp ${KERNEL}/netbsd-GENERIC.gz ${MNT}
+	cp ${KERNEL}/${GENERIC} ${MNT}
+	gunzip < ${MNT}/${GENERIC} > ${MNT}/netbsd
+	cp ${KERNEL}/${C700} ${MNT}
+	cp ${INSTALLATION}/zboot ${MNT}
+	cp ${INSTALLATION}/zbsdmod.o ${MNT}
+	echo "insmod -f ./zbsdmod.o" >  ${MNT}/Boot
+	echo "./zboot"               >> ${MNT}/Boot
+	chmod +x ${MNT}/Boot
 	
 	umount ${MNT}
 	vnconfig -u ${VND}
