@@ -45,6 +45,7 @@ Maps:
  2011 Okinawa,9/10,120,9,沖縄コンベンションセンター
  2012 Okinawa,9/22,120,16,沖縄コンベンションセンター
  2013 Okinawa,7/6,170,16,沖縄コンベンションセンター
+ 2014 Okinawa,5/24,,,沖縄コンベンションセンター
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,6 +68,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2014沖縄 NetBSDブース展示の記録,http://togetter.com/li/671580
  OSC2013沖縄 NetBSDブース展示の記録,http://togetter.com/li/529669
  OSC2012沖縄 NetBSDブース展示の記録,http://togetter.com/li/377549
 
@@ -104,6 +106,8 @@ togetterまとめ
  沖縄ブルーイング,読谷TORII,ビール醸造所
  三河屋,宜野湾,ハンバーガー&名古屋メシ
  エンジェルシェア,おもろまち,角打ちできる酒屋。貸しスペースあり。
+ まんが倉庫,浦添他,浦添がでかい
+ PCリサイクル倉庫,豊見城,pcmix.jp 11:00-19:00 日祝日休
 
 写真
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -121,7 +125,6 @@ togetterまとめ
 .. image:: ../Picture/2012/09/22/DSC_0855.JPG
 .. image:: ../Picture/2012/09/22/DSC_0856.JPG
 .. image:: ../Picture/2012/09/22/DSC_0859.JPG
-.. image:: ../Picture/2012/09/22/DSC_0860.JPG
 .. image:: ../Picture/2012/09/22/DSC_0861.JPG
 .. image:: ../Picture/2012/09/22/DSC_0862.JPG
 .. image:: ../Picture/2012/09/22/dsc01721.jpg
