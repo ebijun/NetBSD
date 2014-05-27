@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -31,19 +31,82 @@
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/hokkaido.rst
 
+北海道でのオープンソースカンファレンス
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Github/NetBSD/Guide/OSC/OSC100.csv 更新
+
+.. csv-table::
+ :widths: 20 15 20 20 40
+
+ 開催年,開催日,参加者,参加グループ,会場
+ 2005 in Hokkaido ,7/9,250,17,
+ 2006 Hokkaido ,7/14,300,24,
+ 2007 Hokkaido ,6/30,300,22,
+ 2008 Hokkaido ,6/28,250,21,
+ 2009 Hokkaido ,6/20,370,29,
+ 2010 Hokkaido ,6/26,450,42,
+ 2011 Hokkaido,6/11,600,27,
+ 2012 Hokkaido,6/16,650,48,
+ 2013 Hokkaido,9/14,600,56,
+ 2014 Hokkaido,6/13-14,,53,
+
+観光ガイドバックナンバー 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+これまですべてのバックナンバーは 
+https://github.com/ebijun/osc-demo　にあります。
+
+.. csv-table::
+ :widths: 20 30 80
+
+ No,イベント,URL
+ 58.   OSC2014北海道 http://www.soum.co.jp/~jun/OSC2013hokkaido.pdf
+ 47.   OSC2013北海道 http://www.soum.co.jp/~jun/OSC2013hokkaido.pdf
+ 26.   OSC2012北海道 http://www.soum.co.jp/~jun/OSC2012hokkaido.pdf
+
+togetterまとめ
+~~~~~~~~~~~~~~~
+
+.. csv-table::
+ :widths: 80 80
+
+ OSC2014北海道 NetBSDブース展示の記録,
+ OSC2013北海道 NetBSDブース展示の記録,http://togetter.com/li/563719
+ OSC2012北海道 NetBSDブース展示の記録,http://togetter.com/li/318806
+
+
 よく行く店
 ~~~~~~~~~~~~~~
 
 .. csv-table::
  :widths: 30 20 60
 
- ハードオフ札幌伏古店,伏古2条3,テレフンケンのスピーカーがある
+ 西島無線,北11条,最初にここに行く。トリオのコイル。2SB56。
+ YK無線,新川3条1,西島の次に行く店。5インチMOメディアと6AN8。
+ 梅沢無線,南2西7,仙台店もある。隣の中古レコード店も必見。
+ MK,ガード下,PC98/X68000ソフトの聖地だったが店頭販売をやめてしまった。
+ MK近くのジャンクPC屋,ガード下,北大で使われていたというXmintとか。
+ Do-夢,北6東1,札幌のアイドル。展示物はここで買いたい。
+ サッポロジンギスカン,南5西6,ジンギスカン鍋自動掃除ロボットは必見。
+ ヴィサージュ,南5西6,80年代ロックバーだけど日本酒充実
+ ホールステアーズ,南3西3,いつも一番最後に行く宮越屋。
+ ブラウンブックスカフェ,南3西1,2013/9/20 4プラ自由市場店
  イエロー,スガイビル裏,ラムカレーとかピリカワッカのスタウト
+ 丸大ビル,南2西1,ニャル子さん本拠地のアニメイトとメロンブックス。
+ ノースアイランド,南2東1,ノースアイランドビール。コースターかわいい。
+ Weird-meddle records,南2西1,2014/7閉店。日本で一番好きなレコードショップ
+ アダノンキ,東急ハンズ横,古本屋とマニアックな地ビール。
+ モルトヘッズ,南3西8,ビール＋モルトウィスキー
+ 麦酒亭,中島公園,壁一面にビール缶が。Rogueとかmikkelerとかある。
+ 米酒亭,ブラウンブックスカフェの下,改装中
+ 森彦,円山公園,2階席から眺める
+ HIGURASHI,すすきの,アウトサイダーブルーイングとか。
+ ハードオフ札幌伏古店,伏古2条3,テレフンケンのスピーカーがある
  ハードオフ札幌川沿店,南区川沿1,8インチフロッピー
  ハードオフ札幌,宮の沢,Lux豊富。Aシリーズとかチャンデバまである。
  ハードオフ札幌,宮古,スピーカー。LUX多数。
  すみだ川,すすき野,財界さっぽろを読みながら優雅にロースカツ。
- 越山企画,さっぽろ,中古レコード屋と同じビル。白い壁のロフトっぽい。
+ 越山企画,さっぽろ,ライブ等。中古レコード屋と同じビル。白い壁のロフトっぽい。
  オーム模型,南平岸,ラジコン屋
  北へ。に出てきたマンション,平岸→南平岸,歩道橋わたってすぐ。移住するならここしかない
  10cc,北26条,トランジスタアンプを高精度で修復する
@@ -51,41 +114,20 @@
  模型のヨッちゃん,北26西2,店長さんがリアルマリオカート。札幌市内を走る。
  セカンズ澄川店,澄川,聖凡人伝がある古本店
  ばぁるひらら,澄川,さいとさんの店。ふらっといって「満員です」といわれたい。
- ヴィサージュ,南5西6,80年代ロックバーだけど日本酒充実
- サッポロジンギスカン,南5西6,ジンギスカン鍋自動掃除ロボットは必見。
  スリランカ狂我国,北11条,なぜか行ってしまうスープカレー。
- 西島無線,北11条,最初にここに行く。トリオのコイル。2SB56。
- YK無線,新川3条1,西島の次に行く店。5インチMOメディアと6AN8。
- 梅沢無線,南2西7,仙台店もある。隣の中古レコード店も必見。
- 丸大ビル,南2西1,ニャル子さん本拠地のアニメイトとメロンブックス。
- アダノンキ,東急ハンズ横,古本屋とマニアックな地ビール。
- モルトヘッズ,南3西8,ビール＋モルトウィスキー
- 森彦,円山公園,2階席から眺める
- HIGURASHI,すすきの,アウトサイダーブルーイングとか。
- MK,ガード下,PC98/X68000ソフトの聖地だったが店頭販売をやめてしまった。
- MK近くのジャンクPC屋,ガード下,北大で使われていたというXmintとか。
- Do-夢,北6東1,札幌のアイドル。展示物はここで買いたい。
  根室市場,ガード下,さしみとかほっけとかさしみとかほっけとか。
- ノースアイランド,南2東1,ノースアイランドビール。コースターかわいい。
- Weird-meddle records,南2西1,日本で一番好きなレコードショップ
  キコキコ商店,南12西6,渋さのCDと珈琲。
- ホールステアーズ,南3西3,いつも一番最後に行く宮越屋。
  てっちゃん,南3西4,あの日見た舟盛りの名前を僕達はまだ知らない
  くすみ書房,厚別大谷知,クラウドファンディング中
  モスコミュール,宮の杜4条,カレーと夜景とモスコ
  シアターキノ,狸小路6南3,第8回札幌国際短篇映画祭期間中
  蠍座,北9西3,燃える仏像人間
- 札幌変態アニメーションナイト,狸小路5 札幌プラザ2.5,2013/10/4
- ブラウンブックスカフェ,南3西1,2013/9/20 4プラ自由市場店
- 米酒亭,ブラウンブックスカフェの下,改装中
  赤星,南3西7,500円ラーメン
  こふじ,北2西3,昼ランチ
  モエレ沼公園,東区,香川のイサムノグチ庭園美術館とセットで回ろう
  大夕張ダム,夕張,水没する橋。トンネルだけ残る。
  新橋,帯広,豚丼特盛。肉をフランベするのだ。
  坂ビスケット,,記念館には2階もある。となりはつぼ八1号店。
- 麦酒亭,中島公園,壁一面にビール缶が。Rogueとかmikkelerとかある。
- 米風亭,すすきの,現在改装中。
  Table,すすきの,ワインの店。アントニオ猪木さんが吸った葉巻がある地下室
  宮の沢のラーメン,, みそ
  亜珈里,豊平公園,ザンギ定食大盛900円。
@@ -138,3 +180,245 @@ OSC北海道展示物
 #. mikutter on NetBSD/WZERO3
 #. NetBSD/Zaurus
 #. Making install-image Presentation by つついさん
+  http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html
+
+写真
+~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture.org/2013/09/16/DSC_2581.jpg
+.. image::  ../Picture.org/2013/09/16/DSC_2582.jpg
+.. image::  ../Picture.org/2013/09/16/DSC_2583.jpg
+.. image::  ../Picture.org/2013/09/16/DSC_2584.JPG
+.. image::  ../Picture.org/2013/09/16/DSC_2585.JPG
+.. image::  ../Picture.org/2013/09/16/DSC_2586.jpg
+.. image::  ../Picture.org/2013/09/16/DSC_2587.jpg
+.. image::  ../Picture.org/2013/09/16/DSC_2588.jpg
+.. image::  ../Picture.org/2013/09/16/DSC_2589.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02941.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02942.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02943.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02944.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02945.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02946.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02947.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02948.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02949.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02950.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02951.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02952.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02953.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02954.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02955.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02956.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02957.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02958.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02959.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02960.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02961.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02962.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02963.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02964.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02965.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02966.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02967.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02968.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02969.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02970.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02971.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02972.jpg
+.. image::  ../Picture.org/2013/09/16/dsc02973.jpg
+.. image::  ../Picture.org/2013/09/15/DSC_2571.jpg
+.. image::  ../Picture.org/2013/09/15/DSC_2572.jpg
+.. image::  ../Picture.org/2013/09/15/DSC_2573.jpg
+.. image::  ../Picture.org/2013/09/15/DSC_2574.jpg
+.. image::  ../Picture.org/2013/09/15/DSC_2575.jpg
+.. image::  ../Picture.org/2013/09/15/DSC_2576.jpg
+.. image::  ../Picture.org/2013/09/15/DSC_2577.jpg
+.. image::  ../Picture.org/2013/09/15/DSC_2578.JPG
+.. image::  ../Picture.org/2013/09/15/DSC_2579.JPG
+.. image::  ../Picture.org/2013/09/15/DSC_2580.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02912.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02913.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02914.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02915.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02916.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02917.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02918.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02919.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02920.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02921.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02922.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02923.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02924.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02925.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02926.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02927.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02928.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02929.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02930.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02931.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02932.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02933.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02934.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02935.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02936.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02937.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02938.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02939.jpg
+.. image::  ../Picture.org/2013/09/15/dsc02940.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2546.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2547.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2548.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2549.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2550.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2551.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2552.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2553.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2554.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2555.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2556.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2557.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2558.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2559.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2560.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2561.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2562.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2563.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2564.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2565.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2566.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2567.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2568.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2569.jpg
+.. image::  ../Picture.org/2013/09/14/DSC_2570.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02894.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02895.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02896.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02897.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02898.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02899.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02900.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02901.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02902.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02903.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02904.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02905.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02906.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02907.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02908.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02909.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02910.jpg
+.. image::  ../Picture.org/2013/09/14/dsc02911.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2527.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2528.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2529.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2530.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2531.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2532.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2533.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2534.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2535.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2536.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2537.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2538.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2539.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2540.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2541.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2542.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2543.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2544.jpg
+.. image::  ../Picture.org/2013/09/13/DSC_2545.JPG
+.. image::  ../Picture.org/2013/09/13/dsc02852.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02853.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02854.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02855.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02856.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02857.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02858.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02859.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02860.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02861.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02862.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02863.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02864.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02865.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02866.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02867.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02868.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02869.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02870.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02871.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02872.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02873.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02874.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02875.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02876.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02877.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02878.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02879.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02880.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02881.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02882.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02883.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02884.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02885.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02886.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02887.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02888.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02889.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02890.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02891.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02892.jpg
+.. image::  ../Picture.org/2013/09/13/dsc02893.jpg
+.. image::  ../Picture.org/2012/06/16/DSC_0464.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0465.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0466.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0467.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0468.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0469.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0470.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0471.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0472.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0473.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0474.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0475.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0476.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0477.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0478.JPG
+.. image::  ../Picture.org/2012/06/16/DSC_0479.JPG
+.. image::  ../Picture.org/2012/06/16/dsc01245.jpg
+.. image::  ../Picture.org/2012/06/16/dsc01246.jpg
+.. image::  ../Picture.org/2012/06/16/dsc01247.jpg
+.. image::  ../Picture.org/2012/06/16/dsc01248.jpg
+.. image::  ../Picture.org/2012/06/16/dsc01249.jpg
+.. image::  ../Picture.org/2012/06/16/dsc01250.jpg
+.. image::  ../Picture.org/2012/06/16/dsc01251.jpg
+.. image::  ../Picture.org/2012/06/16/dsc01252.jpg
+.. image::  ../Picture.org/2012/06/16/dsc01253.jpg
+.. image::  ../Picture.org/2012/06/15/DSC_0457.JPG
+.. image::  ../Picture.org/2012/06/15/DSC_0458.JPG
+.. image::  ../Picture.org/2012/06/15/DSC_0459.JPG
+.. image::  ../Picture.org/2012/06/15/DSC_0460.JPG
+.. image::  ../Picture.org/2012/06/15/DSC_0461.JPG
+.. image::  ../Picture.org/2012/06/15/DSC_0462.JPG
+.. image::  ../Picture.org/2012/06/15/DSC_0463.JPG
+.. image::  ../Picture.org/2012/06/15/dsc01225.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01226.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01227.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01228.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01229.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01230.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01231.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01232.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01233.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01234.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01235.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01236.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01237.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01238.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01239.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01240.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01241.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01242.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01243.jpg
+.. image::  ../Picture.org/2012/06/15/dsc01244.jpg
+

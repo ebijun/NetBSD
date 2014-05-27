@@ -28,7 +28,7 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-05-24
  If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
 
-Sharp NetWalker special kernel: (Thanx h_kenken@)
+SHARP NetWalker special kernel: (Thanx h_kenken@)
   /boot/netbsd-NETWALKER.bin.gz is a kernel for Sharp NetWalker.
 
   1. Make backup image on NetWalker ubuntu.
@@ -53,6 +53,9 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
   7. If you feel slow,Try {NetBSD/amd64 i386,OSX,Ubuntu} Version or improve NetBSD.
+
+XM6i - SHARP X68030 Emulator for NetBSD/x68k
+  Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
 
 Todo:
 - Need GPIO & bus controll document and implimentation (via lua?)
