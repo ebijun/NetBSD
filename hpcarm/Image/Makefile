@@ -4,8 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.30-hpcarm.iso
-PKGSRC=../../pkgsrc/pkgsrc-2014-02-01.tar.gz
+IMAGE=/usr/release/images/NetBSD-6.99.43-hpcarm-201405251620Z.iso
+PKGSRC=../../pkgsrc/pkgsrc-2014-05-31.tar.gz
 
 SETS=/mnt1/hpcarm/binary/sets
 INSTALLATION=/mnt1/hpcarm/installation
@@ -23,7 +23,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file newfs cdmount extract bootarea setup cdunmount
+all: file newfs cdmount extract bootarea cdunmount
 
 # make image file. 512*3813376=2GB
 file: 
@@ -84,15 +84,13 @@ pkg:
 	vnconfig -u ${VND}
 
 # copy default setupfile
-setup:
+release:
 	echo copy default files and make device nodes.
 	vnconfig ${VND} ${FILE}
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	mkdir ${MNT}/msdos
 	tar cvpf - etc root  |(cd /mnt;tar xvpf -)
 	(cd /mnt/dev;./MAKEDEV all)
-	#(cd ..; tar cvpf - Oshimaya) |(cd /mnt/root;tar xvpf -)
 	umount ${MNT}
 	vnconfig -u ${VND}
 

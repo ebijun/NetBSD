@@ -163,6 +163,13 @@ BUGS:
 
 4. medit dumping core when write text.
 
+5. port-arm/48855
+  i2cscan on RPi NetBSD build finds device for all addresses
+
+6. i2c problem reported from "its sead".
+  /usr/sbin/i2scan on iic0 or iic1 often crashes the device (also with the -r 
+  (use writes) option)
+
 One more time: (we're gonna celebrate
 
  1. login root
