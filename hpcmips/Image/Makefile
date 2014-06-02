@@ -4,8 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.41-hpcmips-201405151620Z.iso
-PKGSRC=../../pkgsrc/pkgsrc-2014-05-10.tar.gz
+IMAGE=/usr/release/images/NetBSD-6.99.42-hpcmips-201405231330Z.iso
+PKGSRC=../../pkgsrc/pkgsrc-2014-05-31.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
 KERNELPATH=/mnt1/hpcmips/binary/kernel
