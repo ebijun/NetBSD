@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.42-hpcmips-201405231330Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.43-hpcmips.iso
 PKGSRC=../../pkgsrc/pkgsrc-2014-05-31.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
@@ -58,6 +58,9 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
+	mkdir ${MNT}/kern
+	mkdir ${MNT}/proc
+	mkdir ${MNT}/msdos
 	umount ${MNT}
 	vnconfig -u ${VND}
 
