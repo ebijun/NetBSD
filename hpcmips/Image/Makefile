@@ -4,7 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.43-hpcmips.iso
+#IMAGE=/usr/release/images/NetBSD-6.99.43-hpcmips.iso
+IMAGE=/usr/release/images/NetBSD-5.2-hpcmips-201405201250Z.iso
 PKGSRC=../../pkgsrc/pkgsrc-2014-05-31.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
@@ -40,6 +41,7 @@ newfs:
 	newfs_msdos /dev/r${VND}e
 	newfs -n 600000 /dev/r${VND}a
 	vnconfig -u ${VND}
+	fdisk -ufF -0 -s 6/32/122848 ${FILE} #DOS partition:DISKLABEL.proto
 
 cdmount:
 	echo mount cdrom image.
