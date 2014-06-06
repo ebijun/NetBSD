@@ -1,27 +1,29 @@
-VERSION: :1,$s/2014-05-24/2014-05-24/g
-ISO:     :1,$s/201405181900Z/201405181900Z/g
-PKGSRC:  :1,$s/2014-05-17/2014-05-17/g
-NetBSD:  :1,$s/6.99.42/6.99.42/g
+VERSION: :1,$s/2014-06-14/2014-06-14/g
+ISO:     :1,$s/201400606/201400606/g
+PKGSRC:  :1,$s/2014-05-31/2014-05-31/g
+NetBSD:  :1,$s/6.99.43/6.99.43/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-05-24-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-06-14-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-05-24-netbsd-raspi.img.gz for RPI.
+I've updated 2014-06-14-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-05-24-earmhf/2014-05-24-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-06-14-earmhf/2014-06-14-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.42 evbarm-earmhf 201405181900Z from nyftp
-- pkgsrc-current         2014-05-17 tarball from ftp.NetBSD
+- NetBSD-current 6.99.43 evbarm-earmhf 201400606 from mine.(nyftp is down)
+- OpenSSL Update to 1.0.1h.
+  http://mail-index.netbsd.org/source-changes/2014/06/05/msg055340.html
+- pkgsrc-current         2014-05-31 tarball from ftp.NetBSD
 - Update mikutter to 3.0.0alpha3.
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-05-24-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-06-14-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-05-24/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-06-14/
  To install application.
  # pkg_add some_application_name
 
@@ -64,11 +66,11 @@ Todo:
 
 =====================
 
-For OpenSourceConference 2014 Okinawa NetBSD booth
-(https://www.facebook.com/events/280532625435360/)
+For OpenSourceConference 2014 Hokkaido NetBSD booth
+(https://www.facebook.com/events/272512199577948/)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.42 earmhf rpi.img.gz base
+- NetBSD 6.99.43 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -104,9 +106,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-05-17 tree inside.
+  - pkgsrc: 2014-05-31 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-05-24/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-06-14/
 
 Installed Packages:
 kterm
