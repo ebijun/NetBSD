@@ -1,6 +1,6 @@
 VERSION: :1,$s/2014-06-14/2014-06-14/g
-ISO:     :1,$s/201400606/201400606/g
-PKGSRC:  :1,$s/2014-05-31/2014-05-31/g
+ISO:     :1,$s/201400609/201400609/g
+PKGSRC:  :1,$s/2014-06-07/2014-06-07/g
 NetBSD:  :1,$s/6.99.43/6.99.43/g
 
 To: port-armNetBSD.org@localhost
@@ -12,11 +12,11 @@ I've updated 2014-06-14-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-06-14-earmhf/2014-06-14-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.43 evbarm-earmhf 201400606 from mine.(nyftp is down)
+- NetBSD-current 6.99.43 evbarm-earmhf 201400609 from mine.(nyftp is down)
 - OpenSSL Update to 1.0.1h.
   http://mail-index.netbsd.org/source-changes/2014/06/05/msg055340.html
-- pkgsrc-current         2014-05-31 tarball from ftp.NetBSD
-- Update mikutter to 3.0.0alpha3.
+- pkgsrc-current         2014-06-07 tarball from ftp.NetBSD
+- Update mikutter to 3.0.0
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
 >> hardfloat: 2014-06-14-netbsd-raspi.img.gz      earmhf
@@ -49,7 +49,7 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.1.17-netbsd6-evbarm-earmhf.tar.gz for evaluation.
+  2. Download musica-0.1.18-netbsd6-evbarm-earmhf.tar.gz for evaluation.
   3. Extract tar file and read documents.
   4. ./musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
@@ -106,7 +106,7 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-05-31 tree inside.
+  - pkgsrc: 2014-06-07 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-06-14/
 
