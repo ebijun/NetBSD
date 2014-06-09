@@ -7,7 +7,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 IMAGE=/usr/release/images/NetBSD-6.99.43-evbarm-earmhf.iso 
 #IMAGE=/usr/release/images/NetBSD-6.99.43-evbarm-earmhf-201405251620Z.iso
 
-PKGSRC=pkgsrc-2014-05-31.tar.gz
+PKGSRC=pkgsrc-2014-06-07.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -17,7 +17,7 @@ NETWALKERBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.bin.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 #LIST=man modules text xbase xcomp xetc xfont xserver
-LIST=man modules test text xbase xcomp xetc xfont xserver #add test
+LIST=man modules tests text xbase xcomp xetc xfont xserver #add test
 
 # mount point
 MNT=/mnt
@@ -68,8 +68,8 @@ pkg-setup:
 	mount /dev/${VND}a ${MNT}
 	echo rc_configured=YES >> ${MNT}/etc/rc.conf
 	echo sshd=NO           >> ${MNT}/etc/rc.conf
-	echo syslogd=NO           >> ${MNT}/etc/rc.conf
-	echo dhcpcd=NO           >> ${MNT}/etc/rc.conf
+	echo syslogd=NO        >> ${MNT}/etc/rc.conf
+#	echo dhcpcd=NO         >> ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
