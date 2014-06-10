@@ -13,13 +13,20 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-06-14-earmhf/2014-06-
 
 Update:
 - NetBSD-current 6.99.43 evbarm-earmhf 201400610 from mine.(nyftp is down)
+- pkgsrc-current         2014-06-07 tarball from ftp.NetBSD
+
 - OpenSSL Update to 1.0.1h.
   http://mail-index.netbsd.org/source-changes/2014/06/05/msg055340.html
 - Update if_smsc.c by mlelstv@: 
   "The Raspberry PI now copies at 2MByte/s with scp and 4MByte/s with NFS."
   http://mail-index.netbsd.org/source-changes/2014/06/09/msg055434.html
-- pkgsrc-current         2014-06-07 tarball from ftp.NetBSD
-- Update mikutter to 3.0.0
+- Update mikutter to 3.0.0 by obache@
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/06/08/msg107175.html
+- Update mlterm 3.3.6nb2 by tsutsui@
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/06/08/msg107195.html
+- add tests: try Automated Testing Framework with "atf-run | atf-report".
+  http://blog.netbsd.org/tnf/entry/testing_netbsd_easy_does_it
+
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
 >> hardfloat: 2014-06-14-netbsd-raspi.img.gz      earmhf
