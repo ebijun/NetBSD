@@ -82,6 +82,8 @@ release:
 	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
 	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 	(cd ../boot;cp * ${MNT}/boot)
+	# rm ${MNT}/var/run/dmesg.boot
+	# rm ${MNT}/var/log/lastlogx ${MNT}/var/log/wtmpx
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
