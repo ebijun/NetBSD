@@ -12,9 +12,12 @@ I've updated 2014-06-14-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-06-14-earmhf/2014-06-14-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.43 evbarm-earmhf 201400609 from mine.(nyftp is down)
+- NetBSD-current 6.99.43 evbarm-earmhf 201400610 from mine.(nyftp is down)
 - OpenSSL Update to 1.0.1h.
   http://mail-index.netbsd.org/source-changes/2014/06/05/msg055340.html
+- Update if_smsc.c by mlelstv@: 
+  "The Raspberry PI now copies at 2MByte/s with scp and 4MByte/s with NFS."
+  http://mail-index.netbsd.org/source-changes/2014/06/09/msg055434.html
 - pkgsrc-current         2014-06-07 tarball from ftp.NetBSD
 - Update mikutter to 3.0.0
 - This is hardfloat image: build with earmhf
