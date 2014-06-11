@@ -17,9 +17,6 @@ Update:
 
 - OpenSSL Update to 1.0.1h.
   http://mail-index.netbsd.org/source-changes/2014/06/05/msg055340.html
-- Update if_smsc.c by mlelstv@: 
-  "The Raspberry PI now copies at 2MByte/s with scp and 4MByte/s with NFS."
-  http://mail-index.netbsd.org/source-changes/2014/06/09/msg055434.html
 - Update mikutter to 3.0.0 by obache@
   http://mail-index.netbsd.org/pkgsrc-changes/2014/06/08/msg107175.html
 - Update mlterm 3.3.6nb2 by tsutsui@
@@ -164,23 +161,22 @@ BUGS:
   http://lists.dillo.org/pipermail/dillo-dev/2014-May/010161.html
   This image contains dillo with patch by Michael van Elst.
   http://mail-index.netbsd.org/port-arm/2014/04/22/msg002386.html
-
 2. port-arm/48805
   Audio Driver issues on Pi running NetBSD (2014-05-10) image 
   - hangs audio applications like audioplay
-
 3. port-arm/48817
   pkgsrc/devel/ruby-delayer build failed: 
   Floating point exception (core dumped)
-
 4. medit dumping core when write text.
-
 5. port-arm/48855
   i2cscan on RPi NetBSD build finds device for all addresses
-
 6. i2c problem reported from "its sead".
   /usr/sbin/i2scan on iic0 or iic1 often crashes the device (also with the -r 
   (use writes) option)
+7. Update if_smsc.c by mlelstv@: 
+  "The Raspberry PI now copies at 2MByte/s with scp and 4MByte/s with NFS."
+  http://mail-index.netbsd.org/source-changes/2014/06/09/msg055434.html
+  On various packages pkg_add,sometimes system crushes.
 
 One more time: (we're gonna celebrate
 
