@@ -4,8 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-zaurus.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.43-zaurus-201405251620Z.iso
-PKGSRC=../../pkgsrc/pkgsrc-2014-05-31.tar.gz
+IMAGE=/usr/release/images/NetBSD-6.99.43-zaurus.iso
+PKGSRC=../../pkgsrc/pkgsrc-2014-06-07.tar.gz
 
 SETS=/mnt1/zaurus/binary/sets
 INSTALLATION=/mnt1/zaurus/installation
@@ -38,6 +38,7 @@ newfs:
 	disklabel -R ${VND} DISKLABEL.proto
 	newfs_msdos /dev/r${VND}e
 	newfs -n 600000 /dev/r${VND}a
+	fdisk -ufF -0 -s 6/32/122848 ${FILE} #DOS partition:DISKLABEL.proto
 	vnconfig -u ${VND}
 
 cdmount:
@@ -106,4 +107,3 @@ fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch
-

@@ -4,9 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-#IMAGE=/usr/release/images/NetBSD-6.99.43-hpcmips.iso
-IMAGE=/usr/release/images/NetBSD-5.2-hpcmips-201405201250Z.iso
-PKGSRC=../../pkgsrc/pkgsrc-2014-05-31.tar.gz
+IMAGE=/usr/release/images/NetBSD-6.99.43-hpcmips.iso
+PKGSRC=../../pkgsrc/pkgsrc-2014-06-07.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
 KERNELPATH=/mnt1/hpcmips/binary/kernel
@@ -17,7 +16,7 @@ KERNEL-TX=netbsd-TX3912.gz
 INSTALLKERNEL=netbsd-install.gz
 
 # extract sets.
-LIST=base etc comp man modules text xbase xcomp xetc xfont xserver kern-GENERIC
+LIST=base etc comp man modules tests text xbase xcomp xetc xfont xserver kern-GENERIC
 
 # mount point
 MNT=/mnt
