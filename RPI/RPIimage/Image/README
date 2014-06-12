@@ -12,7 +12,7 @@ I've updated 2014-06-14-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-06-14-earmhf/2014-06-14-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.43 evbarm-earmhf 201400610 from mine.(nyftp is down)
+- NetBSD-current 6.99.43 evbarm-earmhf 201400609 from mine.(nyftp is down)
 - pkgsrc-current 2014-06-07 tarball from ftp.NetBSD
 
 - OpenSSL Update to 1.0.1h.
@@ -173,10 +173,6 @@ BUGS:
 6. i2c problem reported from "its sead".
   /usr/sbin/i2scan on iic0 or iic1 often crashes the device (also with the -r 
   (use writes) option)
-7. Update if_smsc.c by mlelstv@: 
-  "The Raspberry PI now copies at 2MByte/s with scp and 4MByte/s with NFS."
-  http://mail-index.netbsd.org/source-changes/2014/06/09/msg055434.html
-  On various packages pkg_add,sometimes system crushes.
 
 One more time: (we're gonna celebrate
 
