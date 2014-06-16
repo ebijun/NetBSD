@@ -1,36 +1,30 @@
-VERSION: :1,$s/2014-06-14/2014-06-14/g
+VERSION: :1,$s/2014-07-05/2014-07-05/g
 ISO:     :1,$s/201400609/201400609/g
 PKGSRC:  :1,$s/2014-06-07/2014-06-07/g
-NetBSD:  :1,$s/6.99.43/6.99.43/g
+NetBSD:  :1,$s/6.99.44/6.99.44/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-06-14-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-07-05-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-06-14-netbsd-raspi.img.gz for RPI.
+I've updated 2014-07-05-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-06-14-earmhf/2014-06-14-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-07-05-earmhf/2014-07-05-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.43 evbarm-earmhf 201400609 from mine.(nyftp is down)
+- NetBSD-current 6.99.44 evbarm-earmhf 201400609 from mine.(nyftp is down)
 - pkgsrc-current 2014-06-07 tarball from ftp.NetBSD
 
-- OpenSSL Update to 1.0.1h.
-  http://mail-index.netbsd.org/source-changes/2014/06/05/msg055340.html
-- Update mikutter to 3.0.0 by obache@
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/06/08/msg107175.html
-- Update mlterm 3.3.6nb2 by tsutsui@
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/06/08/msg107195.html
-- add tests: try Automated Testing Framework with "atf-run | atf-report".
-  http://blog.netbsd.org/tnf/entry/testing_netbsd_easy_does_it
+- Update mikutter to 3.0.1 by obache@
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/06/15/msg107672.html
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-06-14-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-07-05-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-06-14/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-07-05/
  To install application.
  # pkg_add some_application_name
 
@@ -67,17 +61,18 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k
   Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
 
 Todo:
+- Summarize /usr/tests result on each version.
 - Need GPIO & bus controll document and implimentation (via lua?)
 - comment out kernel DEBUG/DIAGNOSTIC option
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 
 =====================
 
-For OpenSourceConference 2014 Hokkaido NetBSD booth
-(https://www.facebook.com/events/272512199577948/)
+For OpenSourceConference 2014 Nagoya NetBSD & NBUG booth
+(https://www.facebook.com/events/190790414420986/)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.43 earmhf rpi.img.gz base
+- NetBSD 6.99.44 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -115,7 +110,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2014-06-07 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-06-14/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-07-05/
 
 Installed Packages:
 kterm
@@ -173,7 +168,9 @@ BUGS:
 6. i2c problem reported from "its sead".
   /usr/sbin/i2scan on iic0 or iic1 often crashes the device (also with the -r 
   (use writes) option)
-7. uvm_fault on pkgadd. 20140609:OK,20140611:NG.
+
+FIXED:
+1. uvm_fault on pkgadd. 20140609:OK,20140611:NG.
    http://mail-index.netbsd.org/port-arm/2014/06/10/msg002433.html
 
 One more time: (we're gonna celebrate
