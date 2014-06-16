@@ -46,7 +46,7 @@
  :maxdepth: 2
  :numbered:
 
- Place/hokkaido
+ Place/nagoya
  Place/intro
  RPI
 
