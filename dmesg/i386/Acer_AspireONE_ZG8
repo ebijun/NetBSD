@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.43 (GENERIC) #2: Tue May 27 09:09:40 JST 2014
+NetBSD 6.99.44 (GENERIC) #5: Mon Jun 16 11:19:31 JST 2014
 	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1987 MB
@@ -89,8 +89,9 @@ wsmouse0 at pms0 mux 0
 pci0 at mainbus0 bus 0: configuration mode 1
 pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
 pchb0 at pci0 dev 0 function 0: vendor 0x8086 product 0x27ac (rev. 0x03)
-agp0 at pchb0: detected 7932k stolen memory
-agp0: aperture at 0x80000000, size 0x8000000
+agp0 at pchb0: i915-family chipset
+agp0: detected 7932k stolen memory
+agp0: aperture at 0x80000000, size 0x10000000
 vga1 at pci0 dev 2 function 0: vendor 0x8086 product 0x27ae (rev. 0x03)
 wsdisplay0 at vga1 kbdmux 1: console (80x25, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
@@ -186,9 +187,10 @@ coretemp0 at cpu0: thermal sensor, 1 C resolution
 acpicpu1 at cpu1: ACPI CPU
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
-uhub0 at usb0: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+IPsec: Initialized Security Association Processing.
+uhub0 at usb1: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb1: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb0: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
 uhub2 at usb2: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
