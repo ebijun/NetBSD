@@ -1,7 +1,7 @@
 # Makefile for NetBSD/hpcmips image.
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
+FILE=`date +%Y-%m-%d`-netbsd5-hpcmips.img
 
 # iso file information
 #IMAGE=/usr/release/images/NetBSD-6.99.43-hpcmips.iso
