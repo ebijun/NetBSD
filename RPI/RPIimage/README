@@ -168,10 +168,9 @@ BUGS:
 6. i2c problem reported from "its sead".
   /usr/sbin/i2scan on iic0 or iic1 often crashes the device (also with the -r 
   (use writes) option)
-
-FIXED:
-1. uvm_fault on pkgadd. 20140609:OK,20140611:NG.
-   http://mail-index.netbsd.org/port-arm/2014/06/10/msg002433.html
+7. port-arm/48948
+  pkgsrc/security/ruby-hmac build failed:
+  Floating point exception (core dumped)
 
 One more time: (we're gonna celebrate
 
