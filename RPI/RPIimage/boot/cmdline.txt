@@ -1,7 +1,14 @@
 root=ld0a console=fb
+#
+#fb=1280x1024		# to select a mode, otherwise try EDID 
+#fb=disable		# to disable fb completely
+
+#http://elinux.org/RPiconfig
 #for 1024x768 Display,uncomment hdmi_group and hdmi_mode line.
 #hdmi_group=2 
 #hdmi_mode=16
 #
-#fb=1280x1024		# to select a mode, otherwise try EDID 
-#fb=disable		# to disable fb completely
+#aitendo 7inch disp : 800x600 60Hz
+#hdmi_group=2
+#hdmi_mode=9
+#hdmi_ignore_edid=0xa5000080
