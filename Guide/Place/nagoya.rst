@@ -146,7 +146,6 @@ OSC名古屋展示物
 .. image::  ../Picture/2013/06/22/DSC_2125.jpg
 .. image::  ../Picture/2013/06/22/DSC_2128.jpg
 .. image::  ../Picture/2013/06/22/DSC_2129.jpg
-.. image::  ../Picture/2013/06/22/DSC_2130.jpg
 .. image::  ../Picture/2013/06/22/DSC_2131.jpg
 .. image::  ../Picture/2013/06/22/DSC_2132.jpg
 .. image::  ../Picture/2013/06/22/DSC_2133.jpg
@@ -173,16 +172,12 @@ OSC名古屋展示物
 .. image::  ../Picture/2012/05/12/DSC_0377.JPG
 .. image::  ../Picture/2012/05/12/DSC_0378.JPG
 .. image::  ../Picture/2012/05/12/DSC_0379.JPG
-.. image::  ../Picture/2012/05/12/DSC_0381.JPG
-.. image::  ../Picture/2012/05/12/DSC_0382.JPG
 .. image::  ../Picture/2012/05/12/DSC_0383.JPG
 .. image::  ../Picture/2012/05/12/DSC_0385.JPG
 .. image::  ../Picture/2012/05/12/DSC_0386.JPG
 .. image::  ../Picture/2012/05/12/DSC_0390.JPG
 .. image::  ../Picture/2012/05/12/dsc01046.jpg
 .. image::  ../Picture/2012/05/12/dsc01047.jpg
-.. image::  ../Picture/2012/05/12/dsc01049.jpg
-.. image::  ../Picture/2012/05/12/dsc01050.jpg
 .. image::  ../Picture/2012/05/12/dsc01052.jpg
 .. image::  ../Picture/2012/05/12/dsc01053.jpg
 .. image::  ../Picture/2012/05/12/dsc01054.jpg
