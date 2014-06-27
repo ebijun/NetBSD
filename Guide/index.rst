@@ -48,7 +48,7 @@
 
  Place/nagoya
  Place/intro
- RPI
+ Luna
 
 .. 
  Place/intro
