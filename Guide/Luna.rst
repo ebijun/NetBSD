@@ -482,6 +482,7 @@ LUNA年表　- 月の刃
  2013/08/24,筒, OSC2013島根でLunaII+mlterm-fb+mikutterd展示
  2013/09/21,青, OpenBSD/luna88k近況報告 無印/4bpp/リリース [109]_
  2013/12/21,青, OpenBSD/luna88k近況報告 PC98バス 音源ボード [110]_
+ 2014/03/05,,いけない！ルナ先生 DVD全6巻発売開始 [114]_ [115]_
 
 最近のLUNA
 ----------------
@@ -649,6 +650,8 @@ LUNA88K謎ボード
 .. [111] test tweet from OpenBSD/luna88k https://twitter.com/ao_kenji/status/482151248502591488
 .. [112] OMRONワークステーションLUNA 工作日記 http://togetter.com/li/535307
 .. [113] OMRONワークステーション LUNA-II 電源ユニット修理記 その3 http://togetter.com/li/548989
+.. [114] 「いけない！ルナ先生」実写化！6人のアイドルが先生に http://natalie.mu/comic/news/105048
+.. [115]  http://www.cinemart.co.jp/ikenai-runa/
 
 このページ
 ~~~~~~~~~~~
