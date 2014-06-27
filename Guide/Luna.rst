@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -316,6 +316,11 @@ OSC2013 Kansai@Kyoto
 ~~~~~~~~~~~~~~~~~~~~~~~~~
  非力なマシンで最新のOSを動かすためには、大変な努力と工夫が必要です。その展示を実現させた方は、その努力と工夫を楽しんでおられたというわけです。 [100]_
 
+NBUG 2013/9
+~~~~~~~~~~~~~~~~~~~~~~~~~
+* OpenBSD/luna88k 近況報告
+
+
 LUNAグッズ
 ~~~~~~~~~~~
 * LUNAグッズ持参でブースに遊びに来てくれる元関係者の方が！
@@ -473,7 +478,10 @@ LUNA年表　- 月の刃
  2013/03/19,筒,筒井さんから江富さんにLuna68k起動ディスクが送られる
  2013/04/13,青, Monochrome X serverが動作
  2013/06/22,青, Luna88K OSC 2013 Nagoyaで初展示。江富さんのLuna68kも初展示。
+ 2013/08/2,筒, OSC2013京都でLuna/LunaII tw/mikutter展示。
  2013/08/24,筒, OSC2013島根でLunaII+mlterm-fb+mikutterd展示
+ 2013/09/21,青, OpenBSD/luna88k近況報告 無印/4bpp/リリース [109]_
+ 2013/12/21,青, OpenBSD/luna88k近況報告 PC98バス 音源ボード [110]_
 
 最近のLUNA
 ----------------
@@ -484,7 +492,7 @@ LUNA年表　- 月の刃
 
 mlterm-fb & tw
 ~~~~~~~~~~~~~~~~~
- ツイッタークライアント！ [39]_ [40]_ [41]_ [42]_ [43]_ [44]_
+ ツイッタークライアント！ [39]_ [40]_ [41]_ [42]_ [43]_ [44]_ [111]_
 
 mlterm-fb + mikutterd
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -636,6 +644,11 @@ LUNA88K謎ボード
 .. [106] Luna88k FaceBook ページ　https://www.facebook.com/Luna88k
 .. [107] OpenBSD/luna88k standalone bootloader by @MiodVallat works fine on my LUNA-88K2! https://twitter.com/ao_kenji/status/395551245563219969
 .. [108] LUNA-88KのPC-98拡張バス(Cバス)についてのメモ https://gist.github.com/ao-kenji/7843096
+.. [109] OpenBSD/luna88k近況報告 NBUG 2013/9  http://www.slideshare.net/ao_kenji/openbsdluna88k-news-at-nbug-meeting-2013
+.. [110] OpenBSD/luna88k近況報告 NBUG 2013/12 http://www.slideshare.net/ao_kenji/nbug201312
+.. [111] test tweet from OpenBSD/luna88k https://twitter.com/ao_kenji/status/482151248502591488
+.. [112] OMRONワークステーションLUNA 工作日記 http://togetter.com/li/535307
+.. [113] OMRONワークステーション LUNA-II 電源ユニット修理記 その3 http://togetter.com/li/548989
 
 このページ
 ~~~~~~~~~~~
