@@ -25,8 +25,11 @@
 .. BSDの略称説明
 
 BSDライセンス
--------------
-
+--------------
+BSDは、Berkeley Software Distibutionの略称です。
+#. http://ja.wikipedia.org/wiki/BSD
+#. /usr/src/share/misc/bsd-family-tree
+ 
 BSDライセンスとNetBSD
 ~~~~~~~~~~~~~~~~~~~~~~
  NetBSDのソースコードは、自由に配布したり売ることができます。 NetBSDのソースコードから作ったバイナリを売ることもできます。バイナリのソースコードを公開する義務はありません。
@@ -229,7 +232,7 @@ pkgsrcでは、pkgsrcに含まれるソフトウェアのライセンスを収�
 
  % cd /usr/pkgsrc/licenses  ... ライセンス条項が集まっている
  % ls |wc -l
- 206 
+ 214 
  % ls |head
  2-clause-bsd
  3proxy-0.5-license
@@ -311,6 +314,7 @@ pkgchkを使う方法
 
  # cd /usr/pkgsrc/pkgtools/pkg_chk
  # make package-install
+ # cd /usr/pkgsrc
  # cvs update -PAd
  # pkg_chk -u         .... 古いパッケージをコンパイルして更新する
 
@@ -320,6 +324,7 @@ pkg_rolling-replaceを使う方法:依存関係に従って更新する
 
  # cd /usr/pkgsrc/pkgtools/pkg_rolling-replace
  # make package-install
+ # cd /usr/pkgsrc
  # cvs update -PAd
  # pkg_rolling-replace -u
 
@@ -331,19 +336,19 @@ pkg_rolling-replaceを使う方法:依存関係に従って更新する
  http://cvsweb.NetBSD.org/
  # cd src
  # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r netbsd-6-1-3-RELEASE  ... NetBSD6.1.3
+ # cvs update -Pd -r netbsd-6-1-4-RELEASE  ... NetBSD6.1.4
  # cd pkgsrc
  # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r pkgsrc-2013Q4 ... 2013Q4に更新
+ # cvs update -Pd -r pkgsrc-2014Q2 ... 2014Q2に更新
 
 
 バグレポート・追加差分
 ~~~~~~~~~~~~~~~~~~~~~~~~
- www.NetBSD.org から"send-pr"
+ http://www.NetBSD.org → Support →Report a bug / Query bug database.
 
 NetBSDとブース展示
 -------------------------
- 日本NetBSDユーザーグループは、日本各地のオープンソースイベントに参加して、ブース出展とセミナー枠でNetBSD関連の情報をまとめています。
+ 日本NetBSDユーザーグループは、日本各地のオープンソースイベントに参加し、ブース出展とセミナー枠を利用して、NetBSD関連の情報をまとめています。オープンソースカンファレンスへの積極的な参加が認められ、2014年2月に「第1回OSCアワード」を受賞しています。
 
 ブース出展
 ~~~~~~~~~~~
