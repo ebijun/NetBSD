@@ -320,6 +320,9 @@ NBUG 2013/9
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 * OpenBSD/luna88k 近況報告
 
+KOF2013
+~~~~~~~~~~
+* 関西オープンソース2013NetBSDブースの記録 [117]_
 
 LUNAグッズ
 ~~~~~~~~~~~
@@ -327,7 +330,7 @@ LUNAグッズ
 * シールとフロッピー [59]_
 * たれまく
 * ペンセット [60]_
-* ペンケースとバンダナ [76]_
+* ペンケースとバンダナ [76]_ 
 * dpNote - 図形グッズ：シール・定規
 
 LUNA関連書籍
@@ -375,6 +378,7 @@ LUNA68Kのブートローダー
 ~~~~~~~~~~~~~~~~~~~~~~~
 #. NetBSD/luna68k の起動ディスクの作り方メモ [28]_
 #. なんか出た。これでデバッグできる [8]_
+#. native bootloader update for NetBSD/luna68k [116]_
 
 LUNA88Kのブートローダー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -477,10 +481,11 @@ LUNA年表　- 月の刃
  2013/03/09,筒,OSC2013徳島でLuna68K展示 [33]_
  2013/03/19,筒,筒井さんから江富さんにLuna68k起動ディスクが送られる
  2013/04/13,青, Monochrome X serverが動作
- 2013/06/22,青, Luna88K OSC 2013 Nagoyaで初展示。江富さんのLuna68kも初展示。
- 2013/08/2,筒, OSC2013京都でLuna/LunaII tw/mikutter展示。
- 2013/08/24,筒, OSC2013島根でLunaII+mlterm-fb+mikutterd展示
+ 2013/06/22,青, Luna88K OSC 2013 Nagoyaで初展示。江富さんのLuna68kも初展示。 [119]_
+ 2013/08/2,筒, OSC2013京都でLuna/LunaII tw/mikutter展示。 [120]_
+ 2013/08/24,筒, OSC2013島根でLunaII+mlterm-fb+mikutterd展示 [118]_
  2013/09/21,青, OpenBSD/luna88k近況報告 無印/4bpp/リリース [109]_
+ 2013/11/8-9,筒, KOF2013 NetBSDブースでLuna+mikutter展示 [117]_
  2013/12/21,青, OpenBSD/luna88k近況報告 PC98バス 音源ボード [110]_
  2014/03/05,,いけない！ルナ先生 DVD全6巻発売開始 [114]_ [115]_
 
@@ -652,6 +657,11 @@ LUNA88K謎ボード
 .. [113] OMRONワークステーション LUNA-II 電源ユニット修理記 その3 http://togetter.com/li/548989
 .. [114] 「いけない！ルナ先生」実写化！6人のアイドルが先生に http://natalie.mu/comic/news/105048
 .. [115]  http://www.cinemart.co.jp/ikenai-runa/
+.. [116]  native bootloader update for NetBSD/luna68k http://mail-index.netbsd.org/port-luna68k/2014/01/11/msg000038.html
+.. [117] 関西オープンソース2013NetBSDブース展示の記録  http://togetter.com/li/587422
+.. [118] オープンソースカンファレンス2013島根 NetBSDブース展示の記録 http://togetter.com/li/553529
+.. [119] OSC2013名古屋 NBUG&NetBSDブース展示の記録 http://togetter.com/li/522396
+.. [120] オープンソースカンファレンス2013関西＠京都　NetBSDブース展示記録 http://togetter.com/li/542885
 
 このページ
 ~~~~~~~~~~~
