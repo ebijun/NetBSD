@@ -1,6 +1,6 @@
 VERSION: :1,$s/2014-07-05/2014-07-05/g
-ISO:     :1,$s/201406150810Z/201406150810Z/g
-PKGSRC:  :1,$s/2014-06-07/2014-06-07/g
+ISO:     :1,$s/201406251830Z/201406251830Z/g
+PKGSRC:  :1,$s/2014-06-28/2014-06-28/g
 NetBSD:  :1,$s/6.99.44/6.99.44/g
 
 To: port-armNetBSD.org@localhost
@@ -12,11 +12,13 @@ I've updated 2014-07-05-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-07-05-earmhf/2014-07-05-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.44 evbarm-earmhf 201406150810Z from nyftp.
-- pkgsrc-current 2014-06-07 tarball from ftp.NetBSD
+- NetBSD-current 6.99.44 evbarm-earmhf 201406251830Z from nyftp.
+- pkgsrc-current 2014-06-28 tarball from ftp.NetBSD
+- USB speed improvement by mlelstv@
+  http://mail-index.netbsd.org/source-changes/2014/06/09/msg055434.html
 
-- Update mikutter to 3.0.1 by obache@
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/06/15/msg107672.html
+- Update mikutter to 3.0.2 by obache@
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/06/28/msg107951.html
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
@@ -62,6 +64,8 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k
 
 Todo:
 - Summarize /usr/tests result on each version.
+- test COPTS:-fno-reorder-blocks/-fno-tree-vrp/-fno-tree-pre optimization.
+- ruby version: 200 -> 21?
 - Need GPIO & bus controll document and implimentation (via lua?)
 - comment out kernel DEBUG/DIAGNOSTIC option
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
@@ -108,7 +112,7 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-06-07 tree inside.
+  - pkgsrc: 2014-06-28 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-07-05/
 
