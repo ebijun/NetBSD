@@ -46,9 +46,9 @@
  :maxdepth: 2
  :numbered:
 
- Place/nagoya
- Place/intro
- Luna
+ events
+ Place/2013
+ allevents
 
 .. 
  Place/intro
