@@ -26,16 +26,16 @@
 .. csv-table::
 
  153,2014/8,Open Source Conference 2014 Kansai@Kyoto,
- 152,2014/7,Open Source Conference 2014 Nagoya,
- 151,2014/6,Open Source Conference 2014 Hokkaido,
+ 152,2014/7,Open Source Conference 2014 Nagoya, Luna88k&Alpha
+ 151,2014/6,Open Source Conference 2014 Hokkaido,Teokureimg Sun
  150,2014/5,Open Source Conference 2014 Okinawa,
  149,2014/4,Open Source UnConference 2014 Kawagoe,
- 148,2014/4,Open Source UnConference 2014 Kagawa,
- 147,2014/3,Open Source Conference 2014 Hamanako,
- 146,2014/3,AsiaBSDCon 2014,
+ 148,2014/4,Open Source UnConference 2014 Kagawa,HP
+ 147,2014/3,Open Source Conference 2014 Hamanako,Netwalker
+ 146,2014/3,AsiaBSDCon 2014,RPI
  145,2014/2,Open Source Conference 2014 Tokyo/Spring,
- 144,2013/11,Open Source Conference 2013 Oita,
- 143,2013/11,Open Source Conference 2013 Fukuoka,
+ 144,2013/11,Open Source Conference 2013 Oita,Netwalker
+ 143,2013/11,Open Source Conference 2013 Fukuoka,Netwalker laco
  142,2013/11,Kansai Open Source 2012,Osaka,RPI
  141,2013/10,Open Source Conference 2013 Tokyo/Fall,Netwinder
  140,2013/10,Open Source Conference 2013 Hiroshima,X68060 X68030 XM6i LunaII

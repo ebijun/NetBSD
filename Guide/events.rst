@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -30,7 +30,7 @@ Japan NetBSD Users’ Group
 * 回線提供：IIJ
 *  http://www.jp.NetBSD.org/
 * 年一度定期総会・BoFを実施
-* 2013/7/13
+* 2014/7/12
 * 東京 根津　東大武田先端知ビル
 
 メーリングリスト
@@ -73,7 +73,7 @@ FaceBook
 """"""""""
 
 http://www.facebook.com/NetBSD.jp/
-  223いいね: www.jp.NetBSD.orgと連携
+  268いいね: イベント欄: www.jp.NetBSD.orgと連携
 
 netbsd@re.soum.co.jp
 """"""""""""""""""""""
@@ -83,23 +83,23 @@ netbsd@re.soum.co.jp
 アーカイブ：
   http://www.re.soum.co.jp/~fukaumi/ 
 1994/11/25-:
-  437人
+  416人
 
 国内BSDユーザグループ
 ----------------------
 .. 
 * http://www.netbsd.org/gallery/groups.html
-* BBQ
-* BSD Users Group,Shinshu
-* Chofu *BSD Users’ Group
-* Chiba *BSD Users’ Group
-* Daibou East *BSD Users Group
-* Echigo BSD Users Group
-* Kansai *BSD Users Group
-* Nagoya *BSD Users Group
-* Northern land BSD Users Group
-* Shikoku *BSD Users Group
-* Tohoku BSD Users Group
+* BBQ: ?
+* BSD Users Group,Shinshu: ?
+* Chofu *BSD Users’ Grou: ?
+* Chiba *BSD Users’ Grou: ?
+* Daibou East *BSD Users Group: ?
+* Echigo BSD Users Group: 活動中
+* Kansai *BSD Users Group: 活動中
+* Nagoya *BSD Users Group: 活動中
+* Northern land BSD Users Group: 活動中
+* Shikoku *BSD Users Group: 活動中
+* Tohoku BSD Users Group: ?
 
 オープンソースカンファレンスこの一年
 ----------------------------------
