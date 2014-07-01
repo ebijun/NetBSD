@@ -16,7 +16,7 @@ Update:
 - pkgsrc-current 2014-06-28 tarball from ftp.NetBSD
 - USB speed improvement by mlelstv@
   http://mail-index.netbsd.org/source-changes/2014/06/09/msg055434.html
-- pkgsrc/security/mozilla-rootcerts install
+- for https: pkgsrc/security/mozilla-rootcerts install
 
 - Update mikutter to 3.0.2 by obache@
   http://mail-index.netbsd.org/pkgsrc-changes/2014/06/28/msg107951.html
@@ -135,6 +135,7 @@ dillo
 mlterm
 pkg_chk
 lintpkgsrc
+mozilla-rootcerts
 
 To control HDMI output,add/delete "console=fb" on cmdline.txt.
 If delete console=fb definition,you can get serial console instead.
