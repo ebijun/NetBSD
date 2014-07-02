@@ -80,9 +80,23 @@ release:
 	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
 	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 	(cd ../boot;cp * ${MNT}/boot)
-	# rm ${MNT}/var/run/dmesg.boot
-	# rm ${MNT}/var/log/lastlogx ${MNT}/var/log/wtmpx
 	umount ${MNT}/boot
+	umount ${MNT}
+	vnconfig -u ${VND}
+
+# clean logfiles
+logclean:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	rm -f ${MNT}/var/run/dmesg.boot
+	rm -f ${MNT}/var/log/lastlogx 
+	rm -f ${MNT}/var/log/maillog 
+	rm -f ${MNT}/var/log/wtmpx
+	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease
+	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease6
+	rm -rf ${MNT}/var/run/dhcpcd
+	rm -rf ${MNT}/var/run/resolvconf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
