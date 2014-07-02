@@ -4,11 +4,13 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.43 (RPI) #3: Mon Jun  9 10:07:14 JST 2014
-	jun@amivb.soum.co.jp:/usr/obj/earmhf.evbarm/sys/arch/evbarm/compile/RPI
+NetBSD 6.99.44 (RPI.201406251830Z) #0: Wed Jun 25 20:10:53 UTC 2014
+	builds@b42.netbsd.org:/home/builds/ab/HEAD/evbarm-earmhf/201406251830Z-obj/home/builds/ab/HEAD/src/sys/arch/evbarm/compile/RPI
 total memory = 448 MB
 avail memory = 437 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
+sysctl_createv: sysctl_locate(multicast) returned 2
+sysctl_createv: sysctl_locate(multicast_kludge) returned 2
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0 core 0: 700 MHz ARM1176JZ-S r0p7 (ARM11J V6ZK core)
