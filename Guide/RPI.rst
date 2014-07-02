@@ -19,8 +19,8 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: :s/2014-05-24/2014-06-14/g
- .. todo:: :s?2014/06/07?2014/06/07?g
+ .. todo:: :s/2014-07-05/2014-07-05/g
+ .. todo:: :1,$s?2014/06/28?2014/06/28?g
  .. todo:: apache+php+mysql設定
  .. todo:: uim-pref-gtk
  .. todo:: webkit-gtk
@@ -67,7 +67,7 @@ RaspberryPIでNetBSDを使ってみる
 
  earmhf (EARM：ハードフロート 通常はこちらを利用してください)
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2014-06-14-earmhf/2014-06-14-netbsd-raspi.img.gz
+ 2014-07-05-earmhf/2014-07-05-netbsd-raspi.img.gz
  
  evbarm (ソフトフロート：hpcarm/zaurus互換)
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
@@ -79,7 +79,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2014-06-14-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2014-07-05-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
 
 RaspberryPIの起動
 ------------------
@@ -175,7 +175,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 ::
 
  % cat /etc/pkg_install.conf
-　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-06-14
+　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-07-05
 
 * パッケージのインストール
 
@@ -202,7 +202,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- 2014/06/07時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
+ 2014/06/28時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
@@ -255,7 +255,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2014-06-14-netbsd-raspi.img
+ # vnconfig vnd0 2014-07-05-netbsd-raspi.img
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
