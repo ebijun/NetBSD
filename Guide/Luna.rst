@@ -488,6 +488,8 @@ LUNA年表　- 月の刃
  2013/11/8-9,筒, KOF2013 NetBSDブースでLuna+mikutter展示 [117]_
  2013/12/21,青, OpenBSD/luna88k近況報告 PC98バス 音源ボード [110]_
  2014/03/05,,いけない！ルナ先生 DVD全6巻発売開始 [114]_ [115]_
+ 2014/04/19,青,NBUG2014/4例会 OpenBSD/luna88k 2014/4近況報告 [125]_
+ 2014/07/05,青,OSC 2014 NagoyaでLuna88K展示 [122]_ [123]_ [124]_
 
 最近のLUNA
 ----------------
@@ -525,6 +527,7 @@ LUNA88K謎ボード
 * 電源修理
 * SCSI HDD確保
 * ブラウン管を知らない子どもたち
+* 3ボタンマウスを知らない子どもたち
 * 液晶接続問題 [63]_
 * ハード保守
 * 詳しい人がいなくなる
@@ -663,10 +666,12 @@ LUNA88K謎ボード
 .. [119] OSC2013名古屋 NBUG&NetBSDブース展示の記録 http://togetter.com/li/522396
 .. [120] オープンソースカンファレンス2013関西＠京都　NetBSDブース展示記録 http://togetter.com/li/542885
 .. [121] 泣いて喜びそうなもの発掘 https://twitter.com/goinkyo_hacker/status/482528142930620416
+.. [122] OpenBSD/luna88kのご紹介 http://www.slideshare.net/ao_kenji/osc2014-nagoya
+.. [123] OpenBSD/luna88kのご紹介 パンフレット http://www.nk-home.net/~aoyama/osc2014nagoya/obsd-luna88k-leaflet.pdf
+.. [124] オープンソースカンファレンス2014 Nagoya&NBUG7月例会 の記録 http://togetter.com/li/688742
+.. [125] OpenBSD/luna88k 2014/4近況報告 http://www.slideshare.net/ao_kenji/nbug201404
 
 このページ
 ~~~~~~~~~~~
 * https://github.com/ebijun/NetBSD/blob/master/Guide/Luna.rst にあります。
 * /usr/pkgsrc/textproc/py-sphinx をインストールして、make htmlとか。
-
-
