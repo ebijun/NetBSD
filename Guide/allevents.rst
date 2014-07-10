@@ -24,8 +24,15 @@
 ---------------------------
 
 .. csv-table::
+ :widths: 7 10 80 60
 
- 153,2014/8,Open Source Conference 2014 Kansai@Kyoto,
+ 159,2014/11,Open Source Conference 2014 Fukuoka,
+ 158,2014/11,Kansai Open Source 2014 ,
+ 157,2014/10,Open Source Conference 2014 Tokyo/Fall,
+ 156,2014/9,Open Source Conference 2014 Hiroshima,
+ 155,2014/8,Open Source Conference 2014 Shimane,
+ 154,2014/8,Open Source Conference 2014 Kansai@Kyoto,
+ 153,2012/7,Japan NetBSD Users' Group meeting & NetBSD BOF,
  152,2014/7,Open Source Conference 2014 Nagoya, Luna88k&Alpha
  151,2014/6,Open Source Conference 2014 Hokkaido,Teokureimg Sun
  150,2014/5,Open Source Conference 2014 Okinawa,
@@ -36,7 +43,7 @@
  145,2014/2,Open Source Conference 2014 Tokyo/Spring,
  144,2013/11,Open Source Conference 2013 Oita,Netwalker
  143,2013/11,Open Source Conference 2013 Fukuoka,Netwalker laco
- 142,2013/11,Kansai Open Source 2012,Osaka,RPI
+ 142,2013/11,Kansai Open Source 2013 ,RPI
  141,2013/10,Open Source Conference 2013 Tokyo/Fall,Netwinder
  140,2013/10,Open Source Conference 2013 Hiroshima,X68060 X68030 XM6i LunaII
  139,2013/9,Open Source Conference 2013 Hokkaido,
@@ -51,7 +58,7 @@
  130,2013/2,Open Source Conference 2013 Tokyo/Spring,RPI KOBO NetWalker WZero3
  129,2013/2,Open Source Conference 2013 Hamamatsu,RPI KOBO NetWalker WZero3
  128,2012/12,Open Source Conference 2012 Fukuoka,NetWalker XM6i WZero3
- 127,2012/11,Kansai Open Source 2012,Osaka,RPI
+ 127,2012/11,Kansai Open Source 2012,RPI
  126,2012/11,Open Source Conference 2012 Aizu,NetWalker XM6i WZero3
  125,2012/10,Open Source Conference 2012 Oita/Fall,NetWalker XM6i WZero3
  124,2012/10,Open Source Conference 2012 Hiroshima,x68k Nereid Xellent30 X68060 Neptune-X XM6i

@@ -26,7 +26,8 @@
 
 BSDライセンス
 --------------
-BSDは、Berkeley Software Distibutionの略称です。
+ BSDは、Berkeley Software Distibutionの略称です。
+
 #. http://ja.wikipedia.org/wiki/BSD
 #. /usr/src/share/misc/bsd-family-tree
  
