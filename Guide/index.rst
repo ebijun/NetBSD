@@ -46,9 +46,9 @@
  :maxdepth: 2
  :numbered:
 
- events
- Place/2013
- allevents
+ Place/kyoto
+ Place/intro
+ Luna
 
 .. 
  Place/intro
