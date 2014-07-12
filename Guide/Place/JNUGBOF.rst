@@ -6,3 +6,5 @@
 #. NetBSD on ConoHa VPS
 #. 組み込み機材紹介と貸し出し
 #. pkgsrc 2014
+#. マイナーBSD友の会
+
