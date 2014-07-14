@@ -490,6 +490,7 @@ LUNA年表　- 月の刃
  2014/03/05,,いけない！ルナ先生 DVD全6巻発売開始 [114]_ [115]_
  2014/04/19,青,NBUG2014/4例会 OpenBSD/luna88k 2014/4近況報告 [125]_
  2014/07/05,青,OSC 2014 NagoyaでLuna88K展示 [122]_ [123]_ [124]_
+ 2014/07/13,筒,LunaII+8bpp ボードでカラー表示 [126]_
 
 最近のLUNA
 ----------------
@@ -670,6 +671,7 @@ LUNA88K謎ボード
 .. [123] OpenBSD/luna88kのご紹介 パンフレット http://www.nk-home.net/~aoyama/osc2014nagoya/obsd-luna88k-leaflet.pdf
 .. [124] オープンソースカンファレンス2014 Nagoya&NBUG7月例会 の記録 http://togetter.com/li/688742
 .. [125] OpenBSD/luna88k 2014/4近況報告 http://www.slideshare.net/ao_kenji/nbug201404
+.. [126] Setup Bt458 color palette to support ANSI color text on 8bpp framebuffer. http://mail-index.netbsd.org/source-changes/2014/07/13/msg056309.html
 
 このページ
 ~~~~~~~~~~~
