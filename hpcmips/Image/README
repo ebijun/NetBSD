@@ -1,13 +1,13 @@
 To: port-hpcmipsNetBSD.org@localhost
-Subject: 2013-08-30-netbsd-hpcmips.img
+Subject: 2014-06-21-netbsd5-hpcmips.img
 
-I've updated 2013-08-23-netbsd-hpcmips.img.gz for hpcmips.
+I've updated 2014-06-21-netbsd5-hpcmips.img for hpcmips.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcmips/2013-08-30-hpcmips/2013-08-30-netbsd-netbsd.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcmips/2014-06-21-hpcmips/2013-06-21-netbsd5-hpcmips.img.gz
 
 Purpose:
-- NetBSD-current 6.99.23+pkgsrc-current 
-- For mips port testing. all the mips ports are drawning now,and I lived by the river.
+- NetBSD-5.2+pkgsrc-current 
+- For mips port testing. NetBSD-5 is working fine.
 
 Todo:
 - send-pr for fix mips port.
@@ -39,6 +39,192 @@ Build sample script:
 
 Guide:
  https://github.com/ebijun/NetBSD/blob/master/Guide/hpcmips.rst
+
+
+VERSION: :1,$s/2014-07-05/2014-07-05/g
+ISO:     :1,$s/201406150810Z/201406150810Z/g
+PKGSRC:  :1,$s/2014-06-07/2014-06-07/g
+NetBSD:  :1,$s/6.99.44/6.99.44/g
+
+To: port-hpcmipsNetBSD.org@localhost
+Subject: 2014-07-05-netbsd-raspi.img
+From: Jun Ebihara <jun@soum.co.jp>
+
+I've updated 2014-07-05-netbsd-raspi.img.gz for RPI.
+
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-07-05-hpcmips/2014-07-05-netbsd-raspi.img.gz
+
+Update:
+- NetBSD-current 6.99.44 evbarm-hpcmips 201406150810Z from nyftp.
+- pkgsrc-current 2014-06-07 tarball from ftp.NetBSD
+
+- Update mikutter to 3.0.1 by obache@
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/06/15/msg107672.html
+
+- This is hardfloat image: build with hpcmips
+   softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
+>> hardfloat: 2014-07-05-netbsd-raspi.img.gz      hpcmips
+
+Pre-compiled packages:
+- Pre-compiled packages path setting: see /etc/pkg_install.conf 
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/hpcmips/2014-07-05/
+ To install application.
+ # pkg_add some_application_name
+
+ If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
+ /etc/mk.conf.
+
+SHARP NetWalker special kernel: (Thanx h_kenken@)
+  /boot/netbsd-NETWALKER.bin.gz is a kernel for Sharp NetWalker.
+
+  1. Make backup image on NetWalker ubuntu.
+  2. cp /boot/netbsd-netwalker.bin.gz [BackupImage]/boot/zImage
+  3. Set [BackupImage] MicroSD to NetWalker MicroSD port
+  4. Set RPI image to USB port via SD to USB dongle.
+  5. With pushing [L Mouse][R Mouse],push Power button in 5 seconds.
+  6. Pray for success in 5 seconds.
+  7. Typical NetBSD Boot message appears on your console.
+  8. Fail on single user mode,"mount /"
+  9. vi /etc/fstab and type :1,$s/ld0/sd0/g w q
+  10. reboot and login again.
+  11. startx and mouse can control with small touchpad.
+
+musica - DLNA/UPnP music server: (Thanx @cvsync)
+ MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
+ 
+  1. Check http://www.m-systems.co.jp/musica/index_en.html .
+  2. Download musica-0.1.18-netbsd6-evbarm-hpcmips.tar.gz for evaluation.
+  3. Extract tar file and read documents.
+  4. ./musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
+  5. Find from DLNA/UPnP AV equipment.
+  6. With a little luck,you'll find musica and enjoy music via musica.
+  7. If you feel slow,Try {NetBSD/amd64 i386,OSX,Ubuntu} Version or improve NetBSD.
+
+XM6i - SHARP X68030 Emulator for NetBSD/x68k
+  Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
+
+Todo:
+- Summarize /usr/tests result on each version.
+- Need GPIO & bus controll document and implimentation (via lua?)
+- comment out kernel DEBUG/DIAGNOSTIC option
+- DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
+
+=====================
+
+For OpenSourceConference 2014 Nagoya NetBSD & NBUG booth
+(https://www.facebook.com/events/190790414420986/)
+demonstration use, I've updated raspberry-pi image.
+
+- NetBSD 6.99.44 hpcmips rpi.img.gz base
+- Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
+- login root (no passwd)
+- startx ,and icewm running.
+- running mikutter.
+  twitter client (net/mikutter) on 40inch home TV.
+  http://movapic.com/pic/20140520210816537b45b0105ed
+
+  # startx
+  # mikutter &
+  or
+  # LANG=en_US.UTF-8 mikutter &
+       English menu support. LANG environment setting on .xinitrc .
+
+  ==== one or two or threee moment =====
+
+Appear mikutter window. and mikutter-chan tell you,
+
+"Well done on the installation!" [Next]
+"Hi! This is mikutter-chan speaking to you,join the twitter with me!" [Next]
+ 1. "Click the link https:......" click the URL, 
+    and start dillo browser automaticaly. 
+ 2. "login with the Twitter account you wish to use."
+ 3. "Go along until you see a 7-digit code and type it in at the top."
+  -> get pin number.
+  -> paste pin number to mikutter
+ 4. "Congratulations! You have attained achievement register_account!"
+
+  Share your twitter timeline with your family!
+
+Features:
+  - fit size for 2GB SD Card
+  - with X11
+  - increase more inodes on /dev/ld0a
+  - Recent current RPI kernel
+  - USB/video support: as -current (video needs more tests)
+  - pkgsrc: 2014-06-07 tree inside.
+  - pre-build packages
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/hpcmips/2014-07-05/
+
+Installed Packages:
+kterm
+tcsh
+vlgothic-ttf
+icewm
+xli
+mikutter
+medit
+uim
+fossil
+raspberrypi-userland
+sudo
+git-base
+zsh
+dillo
+mlterm
+pkg_chk
+lintpkgsrc
+
+To control HDMI output,add/delete "console=fb" on cmdline.txt.
+If delete console=fb definition,you can get serial console instead.
+ rpi$ more /boot/cmdline.txt
+ root=ld0a console=fb
+
+Keyboard layout checkpoint:
+/etc/wscons.conf
+ #encoding sv
+ #encoding us.swapctrlcaps
+ encoding jp
+
+/root/.xinitrc
+ setxkbmap -model jp106 jp
+
+Build sample script:
+ https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image
+
+Guide:
+ https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
+
+BUGS:
+1. dillo crashes at startup
+  http://lists.dillo.org/pipermail/dillo-dev/2014-May/010161.html
+  This image contains dillo with patch by Michael van Elst.
+  http://mail-index.netbsd.org/port-arm/2014/04/22/msg002386.html
+2. port-arm/48805
+  Audio Driver issues on Pi running NetBSD (2014-05-10) image 
+  - hangs audio applications like audioplay
+3. port-arm/48817
+  pkgsrc/devel/ruby-delayer build failed: 
+  Floating point exception (core dumped)
+4. medit dumping core when write text.
+5. port-arm/48855
+  i2cscan on RPi NetBSD build finds device for all addresses
+6. i2c problem reported from "its sead".
+  /usr/sbin/i2scan on iic0 or iic1 often crashes the device (also with the -r 
+  (use writes) option)
+
+FIXED:
+1. uvm_fault on pkgadd. 20140609:OK,20140611:NG.
+   http://mail-index.netbsd.org/port-arm/2014/06/10/msg002433.html
+
+One more time: (we're gonna celebrate
+
+ 1. login root
+ 2. mlterm-fb 
+ 3. ftp http://mlterm.sf.net/vimperator.six
+ 4. cat vimperator.six
+ 5. exit 
+ 6. mlterm-fb --rotate=left
+ 7. cat vimperator.six
 
 --
 Jun Ebihara
