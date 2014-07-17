@@ -70,6 +70,8 @@ Todo:
 - Need GPIO & bus controll document and implimentation (via lua?)
 - comment out kernel DEBUG/DIAGNOSTIC option
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
+- yaft (yet another framebuffer terminal):
+  https://github.com/uobikiemukot/yaft
 
 =====================
 
@@ -177,6 +179,8 @@ BUGS:
 7. port-arm/48948
   pkgsrc/security/ruby-hmac build failed:
   Floating point exception (core dumped)
+8. cap_mkdb failed, on update terminfo db.
+  https://twitter.com/uobikiemukot/status/487977340949893121
 
 One more time: (we're gonna celebrate
 
