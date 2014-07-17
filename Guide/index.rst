@@ -47,7 +47,6 @@
  :numbered:
 
  Place/kyoto
- Place/intro
  Luna
 
 .. 

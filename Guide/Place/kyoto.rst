@@ -23,7 +23,7 @@
 -------
 
 マップ：
-
+ https://maps.google.co.jp/maps/ms?msa=0&msid=208676479199435389545.0004beed034f01b1af81c
 
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/kyoto.rst
@@ -33,14 +33,19 @@
 .. Github/NetBSD/Guide/OSC/OSC100.csv 更新
 
 .. csv-table::
- :widths: 20 15 20 20 40
+ :widths: 25 15 10 15 40
 
  開催年,開催日,参加者,参加グループ,会場
- 2010 Kansai@Kyoto,7/9-7/10,1200,51,
- 2011 Kansai/Kyoto,7/15-7/16,1100,56,1,
- 2012 Kansai/Kyoto,8/3-8/4,1200,67,1
- 2013 Kansai＠Kyoto,8/2-8/3,1300,54,1
- 2014 Kansai＠Kyoto,8/1-2,,,
+ 2007 Kansai ,7/20-7/21,1200,35,京都コンピュータ学院 京都駅前校
+ 2008 Kansai ,7/18-7/19,1150,37,京都コンピュータ学院 京都駅前校
+ 2009 Kansai ,7/10-7/11,1100,41,京都コンピュータ学院 京都駅前校
+ 2010 Kansai@Kobe ,3/13,500,39,神戸市産業振興センター
+ 2010 Kansai@Kyoto,7/9-7/10,1200,51,京都コンピュータ学院 京都駅前校
+ 2011 Kobe,4/16,600,41,神戸市産業振興センター
+ 2011 Kansai/Kyoto,7/15-7/16,1100,56,京都リサーチパーク
+ 2012 Kansai/Kyoto,8/3-8/4,1200,67,京都リサーチパーク
+ 2013 Kansai＠Kyoto,8/2-8/3,1300,54,京都リサーチパーク
+ 2014 Kansai＠Kyoto,8/1-2,,51,京都リサーチパーク
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -49,16 +54,29 @@
  :widths: 30 20 60
 
  店名,エリア,コメント
- ルナ,あのへん,
- 温泉,丹波口,
- うなぎ,,
- 和知,,
- 市役所のとこ,,
- ハイファイ堂,,
- 沖縄のとこ,,
- メトロ,,
- 2F喫茶,,
- 鉄板鍋,,
+ だいこんのはな,壬生,俺のビフカツがこんなにかわいい
+ 喫茶ルナ,東向日,http://www.openstreetmap.org/way/203043949
+ ルナ美容院,東向日,http://www.openstreetmap.org/way/203450773
+ 島原温泉,丹波口,恵那のラジウム温泉
+ ととや,丹波口,寿司&うなぎ 10:00-15:00
+ メトロ,丸太町,8/2はSNOOZER
+ ソワレ,祇園,テレビ付き京阪で着いたら2階でケーキセット
+ バンガロー,,
+ 町屋麦酒館,,
+ efish,,
+ GASTRO PUB Tadg's,京都市役所,8タップガストロ
+ 和知,烏丸,京都最強の地ビール居酒屋
+ 幸福堂,,きんつばをおみやげに
+ ハイファイ堂,京都市役所,オーディオ機器中心
+ てぃんがーら,一乗寺,一乗寺ブルワリー4種類
+ アセルボク,,喫茶
+ ガケ書房,北白川,車もめりこむ本屋
+ 一心,白川今出川,一心鍋で雑炊
+ 田毎,,京都のたぬきうどんとは何か。みうらじゅんさんのサイン。
+ のらくろ,,トルコライス
+ 喫茶陣,,モーニング
+ キートス,,フィンランドパン
+
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -129,235 +147,43 @@ OSC京都展示物
 2013年
 ~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2013/08/02/DSC_2265.jpg
-.. image::  ../Picture/2013/08/02/DSC_2266.jpg
-.. image::  ../Picture/2013/08/02/DSC_2267.jpg
-.. image::  ../Picture/2013/08/02/DSC_2268.jpg
-.. image::  ../Picture/2013/08/02/DSC_2269.jpg
-.. image::  ../Picture/2013/08/02/DSC_2270.jpg
 .. image::  ../Picture/2013/08/02/DSC_2271.jpg
-.. image::  ../Picture/2013/08/02/DSC_2272.jpg
-.. image::  ../Picture/2013/08/02/DSC_2273.jpg
-.. image::  ../Picture/2013/08/02/DSC_2274.jpg
-.. image::  ../Picture/2013/08/02/DSC_2275.jpg
-.. image::  ../Picture/2013/08/02/DSC_2276.jpg
-.. image::  ../Picture/2013/08/02/DSC_2277.jpg
-.. image::  ../Picture/2013/08/02/DSC_2278.jpg
-.. image::  ../Picture/2013/08/02/DSC_2279.jpg
-.. image::  ../Picture/2013/08/02/DSC_2280.jpg
 .. image::  ../Picture/2013/08/02/DSC_2281.jpg
 .. image::  ../Picture/2013/08/02/DSC_2282.jpg
 .. image::  ../Picture/2013/08/02/DSC_2283.jpg
-.. image::  ../Picture/2013/08/02/DSC_2284.jpg
-.. image::  ../Picture/2013/08/02/DSC_2285.jpg
-.. image::  ../Picture/2013/08/02/DSC_2286.jpg
-.. image::  ../Picture/2013/08/02/DSC_2287.jpg
-.. image::  ../Picture/2013/08/02/DSC_2288.jpg
-.. image::  ../Picture/2013/08/02/DSC_2289.jpg
-.. image::  ../Picture/2013/08/02/DSC_2290.jpg
-.. image::  ../Picture/2013/08/02/DSC_2291.jpg
-.. image::  ../Picture/2013/08/02/DSC_2292.jpg
-.. image::  ../Picture/2013/08/02/DSC_2293.jpg
-.. image::  ../Picture/2013/08/02/DSC_2294.jpg
 .. image::  ../Picture/2013/08/02/DSC_2295.jpg
 .. image::  ../Picture/2013/08/02/DSC_2296.jpg
-.. image::  ../Picture/2013/08/02/DSC_2297.jpg
-.. image::  ../Picture/2013/08/02/DSC_2298.jpg
-.. image::  ../Picture/2013/08/02/DSC_2299.jpg
-.. image::  ../Picture/2013/08/02/DSC_2300.jpg
-.. image::  ../Picture/2013/08/02/DSC_2301.jpg
 .. image::  ../Picture/2013/08/02/DSC_2302.jpg
-.. image::  ../Picture/2013/08/02/DSC_2303.jpg
-.. image::  ../Picture/2013/08/02/DSC_2304.jpg
 .. image::  ../Picture/2013/08/02/DSC_2305.jpg
-.. image::  ../Picture/2013/08/02/DSC_2306.jpg
-.. image::  ../Picture/2013/08/02/DSC_2307.jpg
-.. image::  ../Picture/2013/08/02/DSC_2308.jpg
-.. image::  ../Picture/2013/08/02/DSC_2309.jpg
-.. image::  ../Picture/2013/08/02/DSC_2310.jpg
-.. image::  ../Picture/2013/08/02/DSC_2311.jpg
-.. image::  ../Picture/2013/08/02/DSC_2312.jpg
-.. image::  ../Picture/2013/08/02/DSC_2313.jpg
-.. image::  ../Picture/2013/08/02/DSC_2314.jpg
-.. image::  ../Picture/2013/08/02/DSC_2315.jpg
-.. image::  ../Picture/2013/08/02/DSC_2316.jpg
-.. image::  ../Picture/2013/08/02/dsc02796.jpg
 .. image::  ../Picture/2013/08/02/dsc02797.jpg
-.. image::  ../Picture/2013/08/02/dsc02798.jpg
-.. image::  ../Picture/2013/08/02/dsc02799.jpg
-.. image::  ../Picture/2013/08/02/dsc02800.jpg
 .. image::  ../Picture/2013/08/02/dsc02801.jpg
-.. image::  ../Picture/2013/08/02/dsc02802.jpg
-.. image::  ../Picture/2013/08/02/dsc02803.jpg
-.. image::  ../Picture/2013/08/02/dsc02804.jpg
-.. image::  ../Picture/2013/08/03/DSC_2317.jpg
-.. image::  ../Picture/2013/08/03/DSC_2318.jpg
-.. image::  ../Picture/2013/08/03/DSC_2319.jpg
 .. image::  ../Picture/2013/08/03/DSC_2320.jpg
-.. image::  ../Picture/2013/08/03/DSC_2321.jpg
-.. image::  ../Picture/2013/08/03/DSC_2322.jpg
-.. image::  ../Picture/2013/08/03/DSC_2323.jpg
-.. image::  ../Picture/2013/08/03/DSC_2324.jpg
-.. image::  ../Picture/2013/08/03/DSC_2325.jpg
-.. image::  ../Picture/2013/08/03/DSC_2326.jpg
-.. image::  ../Picture/2013/08/03/DSC_2327.jpg
-.. image::  ../Picture/2013/08/03/DSC_2328.jpg
 .. image::  ../Picture/2013/08/03/DSC_2329.jpg
-.. image::  ../Picture/2013/08/03/DSC_2330.jpg
 .. image::  ../Picture/2013/08/03/DSC_2331.jpg
-.. image::  ../Picture/2013/08/03/DSC_2332.jpg
-.. image::  ../Picture/2013/08/03/DSC_2333.jpg
-.. image::  ../Picture/2013/08/03/DSC_2334.jpg
-.. image::  ../Picture/2013/08/03/DSC_2335.jpg
-.. image::  ../Picture/2013/08/03/DSC_2336.jpg
-.. image::  ../Picture/2013/08/03/DSC_2337.jpg
-.. image::  ../Picture/2013/08/03/DSC_2338.jpg
-.. image::  ../Picture/2013/08/03/DSC_2339.jpg
-.. image::  ../Picture/2013/08/03/DSC_2340.jpg
-.. image::  ../Picture/2013/08/03/DSC_2341.jpg
-.. image::  ../Picture/2013/08/03/DSC_2342.jpg
 .. image::  ../Picture/2013/08/03/DSC_2343.jpg
-.. image::  ../Picture/2013/08/03/DSC_2344.jpg
-.. image::  ../Picture/2013/08/03/DSC_2345.jpg
-.. image::  ../Picture/2013/08/03/DSC_2346.jpg
-.. image::  ../Picture/2013/08/03/DSC_2347.jpg
-.. image::  ../Picture/2013/08/03/DSC_2348.jpg
-.. image::  ../Picture/2013/08/03/DSC_2349.jpg
-.. image::  ../Picture/2013/08/03/DSC_2350.jpg
-.. image::  ../Picture/2013/08/03/DSC_2351.jpg
-.. image::  ../Picture/2013/08/03/DSC_2352.jpg
-.. image::  ../Picture/2013/08/03/DSC_2353.jpg
-.. image::  ../Picture/2013/08/03/DSC_2354.jpg
-.. image::  ../Picture/2013/08/03/DSC_2355.jpg
-.. image::  ../Picture/2013/08/03/dsc02805.jpg
-.. image::  ../Picture/2013/08/03/dsc02806.jpg
 
 2012年
 ~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2012/08/03/DSC_0647.JPG
-.. image::  ../Picture/2012/08/03/DSC_0648.JPG
-.. image::  ../Picture/2012/08/03/DSC_0649.JPG
-.. image::  ../Picture/2012/08/03/DSC_0650.JPG
-.. image::  ../Picture/2012/08/03/DSC_0651.JPG
-.. image::  ../Picture/2012/08/03/DSC_0652.JPG
-.. image::  ../Picture/2012/08/03/DSC_0653.JPG
-.. image::  ../Picture/2012/08/03/DSC_0654.JPG
-.. image::  ../Picture/2012/08/03/DSC_0655.JPG
-.. image::  ../Picture/2012/08/03/DSC_0656.JPG
-.. image::  ../Picture/2012/08/03/DSC_0657.JPG
-.. image::  ../Picture/2012/08/03/DSC_0658.JPG
-.. image::  ../Picture/2012/08/03/DSC_0659.JPG
 .. image::  ../Picture/2012/08/03/DSC_0660.JPG
-.. image::  ../Picture/2012/08/03/DSC_0661.JPG
-.. image::  ../Picture/2012/08/03/DSC_0662.JPG
-.. image::  ../Picture/2012/08/03/DSC_0663.JPG
-.. image::  ../Picture/2012/08/03/DSC_0664.JPG
 .. image::  ../Picture/2012/08/03/DSC_0665.JPG
-.. image::  ../Picture/2012/08/03/DSC_0666.JPG
 .. image::  ../Picture/2012/08/03/DSC_0667.JPG
-.. image::  ../Picture/2012/08/03/DSC_0668.JPG
 .. image::  ../Picture/2012/08/03/DSC_0669.JPG
-.. image::  ../Picture/2012/08/03/DSC_0670.JPG
-.. image::  ../Picture/2012/08/03/DSC_0671.JPG
 .. image::  ../Picture/2012/08/03/DSC_0672.JPG
-.. image::  ../Picture/2012/08/03/DSC_0673.JPG
-.. image::  ../Picture/2012/08/03/DSC_0674.JPG
-.. image::  ../Picture/2012/08/03/DSC_0675.JPG
-.. image::  ../Picture/2012/08/03/DSC_0676.JPG
-.. image::  ../Picture/2012/08/03/DSC_0677.JPG
-.. image::  ../Picture/2012/08/03/dsc01517.jpg
-.. image::  ../Picture/2012/08/03/dsc01518.jpg
-.. image::  ../Picture/2012/08/03/dsc01519.jpg
-.. image::  ../Picture/2012/08/03/dsc01520.jpg
-.. image::  ../Picture/2012/08/03/dsc01521.jpg
-.. image::  ../Picture/2012/08/03/dsc01522.jpg
-.. image::  ../Picture/2012/08/03/dsc01523.jpg
-.. image::  ../Picture/2012/08/03/dsc01524.jpg
-.. image::  ../Picture/2012/08/03/dsc01525.jpg
-.. image::  ../Picture/2012/08/03/dsc01526.jpg
-.. image::  ../Picture/2012/08/03/dsc01527.jpg
-.. image::  ../Picture/2012/08/03/dsc01528.jpg
-.. image::  ../Picture/2012/08/03/dsc01529.jpg
-.. image::  ../Picture/2012/08/03/dsc01530.jpg
-.. image::  ../Picture/2012/08/03/dsc01532.jpg
-.. image::  ../Picture/2012/08/04/DSC_0678.JPG
-.. image::  ../Picture/2012/08/04/DSC_0679.JPG
-.. image::  ../Picture/2012/08/04/DSC_0680.JPG
-.. image::  ../Picture/2012/08/04/DSC_0681.JPG
-.. image::  ../Picture/2012/08/04/DSC_0682.JPG
-.. image::  ../Picture/2012/08/04/DSC_0683.JPG
 .. image::  ../Picture/2012/08/04/DSC_0684.JPG
-.. image::  ../Picture/2012/08/04/DSC_0685.JPG
-.. image::  ../Picture/2012/08/04/DSC_0686.JPG
-.. image::  ../Picture/2012/08/04/DSC_0687.JPG
 .. image::  ../Picture/2012/08/04/DSC_0688.JPG
 .. image::  ../Picture/2012/08/04/DSC_0689.JPG
-.. image::  ../Picture/2012/08/04/DSC_0690.JPG
-.. image::  ../Picture/2012/08/04/DSC_0691.JPG
-.. image::  ../Picture/2012/08/04/DSC_0692.JPG
-.. image::  ../Picture/2012/08/04/DSC_0693.JPG
-.. image::  ../Picture/2012/08/04/DSC_0694.JPG
-.. image::  ../Picture/2012/08/04/DSC_0695.JPG
-.. image::  ../Picture/2012/08/04/DSC_0696.JPG
-.. image::  ../Picture/2012/08/04/DSC_0697.JPG
-.. image::  ../Picture/2012/08/04/dsc01533.jpg
-.. image::  ../Picture/2012/08/04/dsc01534.jpg
-.. image::  ../Picture/2012/08/04/dsc01535.jpg
-.. image::  ../Picture/2012/08/04/dsc01536.jpg
-.. image::  ../Picture/2012/08/04/dsc01537.jpg
-.. image::  ../Picture/2012/08/04/dsc01538.jpg
-.. image::  ../Picture/2012/08/04/dsc01539.jpg
-.. image::  ../Picture/2012/08/04/dsc01540.jpg
-.. image::  ../Picture/2012/08/04/dsc01541.jpg
-.. image::  ../Picture/2012/08/04/dsc01542.jpg
-.. image::  ../Picture/2012/08/04/dsc01543.jpg
-.. image::  ../Picture/2012/08/04/dsc01544.jpg
-.. image::  ../Picture/2012/08/04/dsc01545.jpg
-.. image::  ../Picture/2012/08/04/dsc01546.jpg
-.. image::  ../Picture/2012/08/04/dsc01547.jpg
-.. image::  ../Picture/2012/08/04/dsc01548.jpg
-.. image::  ../Picture/2012/08/04/dsc01549.jpg
-.. image::  ../Picture/2012/08/04/dsc01550.jpg
-.. image::  ../Picture/2012/08/04/dsc01551.jpg
-.. image::  ../Picture/2012/08/04/dsc01552.jpg
-.. image::  ../Picture/2012/08/04/dsc01554.jpg
-.. image::  ../Picture/2012/08/04/dsc01555.jpg
-.. image::  ../Picture/2012/08/04/dsc01556.jpg
 
 2011年
 ~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2011/07/15/P1000557.JPG
-.. image::  ../Picture/2011/07/15/P1000558.JPG
-.. image::  ../Picture/2011/07/15/P1000559.JPG
-.. image::  ../Picture/2011/07/15/P1000560.JPG
-.. image::  ../Picture/2011/07/15/P1000561.JPG
-.. image::  ../Picture/2011/07/15/P1000562.JPG
-.. image::  ../Picture/2011/07/15/P1000563.JPG
-.. image::  ../Picture/2011/07/15/P1000564.JPG
-.. image::  ../Picture/2011/07/15/P1000565.JPG
 .. image::  ../Picture/2011/07/15/P1000566.JPG
-.. image::  ../Picture/2011/07/15/P1000567.JPG
-.. image::  ../Picture/2011/07/15/P1000568.JPG
 .. image::  ../Picture/2011/07/15/P1000569.JPG
 .. image::  ../Picture/2011/07/15/P1000570.JPG
 .. image::  ../Picture/2011/07/15/P1000571.JPG
-.. image::  ../Picture/2011/07/15/P1000572.JPG
 .. image::  ../Picture/2011/07/15/P1000573.JPG
-.. image::  ../Picture/2011/07/15/P1000574.JPG
-.. image::  ../Picture/2011/07/15/P1000575.JPG
-.. image::  ../Picture/2011/07/15/P1000576.JPG
-.. image::  ../Picture/2011/07/15/P1000577.JPG
-.. image::  ../Picture/2011/07/16/P1000578.JPG
-.. image::  ../Picture/2011/07/16/P1000579.JPG
 .. image::  ../Picture/2011/07/16/P1000580.JPG
 .. image::  ../Picture/2011/07/16/P1000581.JPG
-.. image::  ../Picture/2011/07/16/P1000582.JPG
 .. image::  ../Picture/2011/07/16/P1000583.JPG
 .. image::  ../Picture/2011/07/16/P1000584.JPG
 .. image::  ../Picture/2011/07/16/P1000585.JPG
-.. image::  ../Picture/2011/07/16/P1000586.JPG
-.. image::  ../Picture/2011/07/16/P1000587.JPG
-.. image::  ../Picture/2011/07/16/P1000588.JPG
-.. image::  ../Picture/2011/07/16/P1000589.JPG
