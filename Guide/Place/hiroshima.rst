@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -94,6 +94,7 @@ OSC広島発表
  陸軍被服支厰倉庫,出汐,峠三吉「倉庫の記録」
  広島市郷土資料館,宇品,曲がった鉄骨と、かもじづくり。かもじって何？
  旧広島港湾事務所,宇品,広島唯一の明治時代の公共建築かつ被曝建物。
-
+ ハングアウト,,9タップあるビアバー。
+ 重富,,重富注ぎ
 
 
