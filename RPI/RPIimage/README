@@ -1,33 +1,36 @@
-VERSION: :1,$s/2014-07-05/2014-07-05/g
+VERSION: :1,$s/2014-08-01/2014-08-01/g
 ISO:     :1,$s/201406251830Z/201406251830Z/g
 PKGSRC:  :1,$s/2014-06-28/2014-06-28/g
-NetBSD:  :1,$s/6.99.44/6.99.44/g
+NetBSD:  :1,$s/6.99.47/6.99.47/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-07-05-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-08-01-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-07-05-netbsd-raspi.img.gz for RPI.
+I've updated 2014-08-01-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-07-05-earmhf/2014-07-05-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-01-earmhf/2014-08-01-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.44 evbarm-earmhf 201406251830Z from nyftp.
+- NetBSD-current 6.99.47 evbarm-earmhf 201406251830Z from nyftp.
 - pkgsrc-current 2014-06-28 tarball from ftp.NetBSD
-- USB speed improvement by mlelstv@
-  http://mail-index.netbsd.org/source-changes/2014/06/09/msg055434.html
-- for https: pkgsrc/security/mozilla-rootcerts install
-
-- Update mikutter to 3.0.2 by obache@
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/06/28/msg107951.html
+- Fix Problems
+  port-arm/48817
+    pkgsrc/devel/ruby-delayer build failed: 
+    Floating point exception (core dumped)
+  port-arm/48948
+    pkgsrc/security/ruby-hmac build failed:
+    Floating point exception (core dumped)
+- Update mikutter to 3.0.3 by obache@
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/07/06/msg108234.html
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-07-05-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-08-01-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-07-05/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-01/
  To install application.
  # pkg_add some_application_name
 
@@ -75,11 +78,11 @@ Todo:
 
 =====================
 
-For OpenSourceConference 2014 Nagoya NetBSD & NBUG booth
-(https://www.facebook.com/events/190790414420986/)
+For OpenSourceConference 2014 Kyoto NetBSD booth
+(https://www.facebook.com/events/597175150370536/)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.44 earmhf rpi.img.gz base
+- NetBSD 6.99.47 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -117,7 +120,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2014-06-28 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-07-05/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-01/
 
 Installed Packages:
 kterm
@@ -167,23 +170,13 @@ BUGS:
 2. port-arm/48805
   Audio Driver issues on Pi running NetBSD (2014-05-10) image 
   - hangs audio applications like audioplay
-3. port-arm/48817
-  pkgsrc/devel/ruby-delayer build failed: 
-  Floating point exception (core dumped)
-4. medit dumping core when write text.
-5. port-arm/48855
+3. medit dumping core when write text.
+4. port-arm/48855
   i2cscan on RPi NetBSD build finds device for all addresses
-6. i2c problem reported from "its sead".
+5. i2c problem reported from "its sead".
   /usr/sbin/i2scan on iic0 or iic1 often crashes the device (also with the -r 
   (use writes) option)
-7. port-arm/48948
-  pkgsrc/security/ruby-hmac build failed:
-  Floating point exception (core dumped)
-  http://gnats.netbsd.org/48948 ,test patch by Takahiro HAYASHI
-  src/sys/arch/arm/vfp/vfp_init.c:+331
-    -		uint32_t f1 = armreg_mvfr0_read();
-    +		uint32_t f1 = armreg_mvfr1_read();
-8. cap_mkdb failed, on update terminfo db.
+6. cap_mkdb failed, on update terminfo db.
   https://twitter.com/uobikiemukot/status/487977340949893121
 
 One more time: (we're gonna celebrate
