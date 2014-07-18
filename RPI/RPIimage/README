@@ -179,6 +179,10 @@ BUGS:
 7. port-arm/48948
   pkgsrc/security/ruby-hmac build failed:
   Floating point exception (core dumped)
+  http://gnats.netbsd.org/48948 ,test patch by Takahiro HAYASHI
+  src/sys/arch/arm/vfp/vfp_init.c:+331
+    -		uint32_t f1 = armreg_mvfr0_read();
+    +		uint32_t f1 = armreg_mvfr1_read();
 8. cap_mkdb failed, on update terminfo db.
   https://twitter.com/uobikiemukot/status/487977340949893121
 
