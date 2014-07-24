@@ -330,7 +330,7 @@ LUNAグッズ
 * シールとフロッピー [59]_
 * たれまく
 * ペンセット [60]_
-* ペンケースとバンダナ [76]_　[121]_
+* ペンケースとバンダナ  [76]_  [121]_  [130]_
 * dpNote - 図形グッズ：シール・定規
 
 LUNA関連書籍
@@ -382,7 +382,7 @@ LUNA68Kのブートローダー
 
 LUNA88Kのブートローダー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-#.. OpenBSD/luna88k standalone bootloader by @MiodVallat works fine on my LUNA-88K2! [107]_
+#. OpenBSD/luna88k standalone bootloader by @MiodVallat works fine on my LUNA-88K2! [107]_
 
 
 BSD広告条項
@@ -395,6 +395,8 @@ BSD広告条項
 #. 「KOF本番週の日曜日に電源が不調になり急遽部品手配して展示直前に修理していた」
 #. OSC2012京都前に再度補修 [26]_
 #. LUNA-II, LUNA-88K 電源ユニット(PTD573-51) 四級塩電解コンデンサ一覧 [88]_
+#. 88K2は88Kより分解しやすいような気がする。 [127]_
+
 
 LUNAII
 ~~~~~~~
@@ -487,10 +489,13 @@ LUNA年表　- 月の刃
  2013/09/21,青, OpenBSD/luna88k近況報告 無印/4bpp/リリース [109]_
  2013/11/8-9,筒, KOF2013 NetBSDブースでLuna+mikutter展示 [117]_
  2013/12/21,青, OpenBSD/luna88k近況報告 PC98バス 音源ボード [110]_
- 2014/03/05,,いけない！ルナ先生 DVD全6巻発売開始 [114]_ [115]_
+ 2014/01/11,筒, native bootloader update for NetBSD/luna68k [129]_
+ 2014/03/05,,いけない！ルナ先生 DVD全6巻発売開始 [114]_  [115]_
  2014/04/19,青,NBUG2014/4例会 OpenBSD/luna88k 2014/4近況報告 [125]_
- 2014/07/05,青,OSC 2014 NagoyaでLuna88K+PC98 86音源ボード展示 [122]_ [123]_ [124]_
+ 2014/07/05,青,OSC 2014 NagoyaでLuna88K+PC98 86音源ボード展示 [122]_  [123]_  [124]_
  2014/07/13,筒,LunaII+8bpp ボードでカラー表示 [126]_
+ 2014/07/20,筒,LUNA's keyboard driver changes from OpenBSD/luna88k [131]_
+ 2014/07/21,筒,luna68k 4/8bpp framebuffers as a monochrome server [132]_
 
 最近のLUNA
 ----------------
@@ -528,7 +533,7 @@ LUNA88K謎ボード
 * 電源修理
 * SCSI HDD確保
 * ブラウン管を知らない子どもたち
-* 3ボタンマウスを知らない子どもたち
+* 3ボタンマウスを知らない子どもたち [128]_
 * 液晶接続問題 [63]_
 * ハード保守
 * 詳しい人がいなくなる
@@ -672,6 +677,12 @@ LUNA88K謎ボード
 .. [124] オープンソースカンファレンス2014 Nagoya&NBUG7月例会 の記録 http://togetter.com/li/688742
 .. [125] OpenBSD/luna88k 2014/4近況報告 http://www.slideshare.net/ao_kenji/nbug201404
 .. [126] Setup Bt458 color palette to support ANSI color text on 8bpp framebuffer. http://mail-index.netbsd.org/source-changes/2014/07/13/msg056309.html
+.. [127] 88K2電源交換 https://twitter.com/ao_kenji/status/485393846314872832 
+.. [128] どうしてこのマウスにはボタンが３つもあるのか https://twitter.com/ao_kenji/status/485275421768814592
+.. [129] native bootloader update for NetBSD/luna68k http://mail-index.netbsd.org/port-luna68k/2014/01/11/msg000038.html
+.. [130] 泣いて喜びそうなバンダナ https://twitter.com/goinkyo_hacker/status/482528142930620416/photo/1
+.. [131] LUNA's keyboard driver changes from OpenBSD/luna88k http://mail-index.netbsd.org/source-changes/2014/07/20/msg056548.html
+.. [132] luna68k 4/8bpp framebuffers as a monochrome server http://mail-index.netbsd.org/source-changes/2014/07/21/msg056590.html
 
 このページ
 ~~~~~~~~~~~
