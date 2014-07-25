@@ -14,6 +14,8 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-01-earmhf/2014-08-
 Update:
 - NetBSD-current 6.99.47 evbarm-earmhf 201406251830Z from nyftp.
 - pkgsrc-current 2014-06-28 tarball from ftp.NetBSD
+- New RPI B+ boot. 
+  notice: http://mail-index.netbsd.org/port-arm/2014/07/24/msg002527.html 
 - Fix Problems
   port-arm/48817
     pkgsrc/devel/ruby-delayer build failed: 
@@ -163,7 +165,6 @@ Guide:
  https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
 
 BUGS:
-0. New RPI B+ boot failed.
 1. dillo crashes at startup
   http://lists.dillo.org/pipermail/dillo-dev/2014-May/010161.html
   This image contains dillo with patch by Michael van Elst.
