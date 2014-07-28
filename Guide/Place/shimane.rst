@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -20,320 +20,64 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 .. todo:: 津山のあたりの移動方法をまとめる
-.. todo:: 典型的なwebサーバ構築方法を移動する
 
+島根
+-------
 
-OSC2013島根の発表全部をNetBSDで動かしてみる
-----------------------------------------------
+マップ：
+ https://maps.google.co.jp/maps/ms?msa=0&msid=208676479199435389545.0004c80bc1e7b01be7383
 
- 次に、OSとしてできることを考えます。この場所である発表をどこまでサポートできるか、サポートできないのはどこに問題があるのか考えてみます。
+このドキュメント：
+ https://github.com/ebijun/NetBSD/blob/master/Guide/Place/shimane.rst
 
-Ruby+4DDAM
-"""""""""""""""
+島根でのオープンソースカンファレンス
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Github/NetBSD/Guide/OSC/OSC100.csv 更新
 
-4DDAM
- 商用。
-Ruby
- Rubyのインストール
+.. csv-table::
+ :widths: 20 15 20 20 40
 
-::
+ 開催年,開催日,参加者,参加グループ,会場
+ 2008,Shimane,9/12-9/13,500,27,松江テルサ
+ 2009,Shimane,5/16,250,19,松江テルサ
+ 2010,Shimane,11/27,210,16,松江テルサ
+ 2011,Shimane,11/12,130,12,松江テルサ
+ 2012,Shimane,9/1,120,15,松江テルサ
+ 2013,Shimane,8/24,120,19,松江テルサ
+ 2014,Shimane,8/24,,11,松江テルサ
 
- # cd /usr/pkgsrc/lang/ruby
- # make install
- # which ruby
- /usr/pkg/bin/ruby
+観光ガイドバックナンバー 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-nanoc+github
-""""""""""""""""
+これまですべてのバックナンバーは 
+https://github.com/ebijun/osc-demo　にあります。
 
-nanoc
-~~~~~~~
+.. csv-table::
+ :widths: 20 30 80
 
-::
+ No,イベント,URL
+ 46,OSC2013島根,http://www.soum.co.jp/~jun/OSC2013shimane.pdf
+ 30,OSC2012島根,http://www.soum.co.jp/~jun/OSC2012shimane.pdf
+ 18,OSC2011島根,http://www.soum.co.jp/~jun/OSC2011shimane.pdf
+  3,OSC2010島根,http://www.soum.co.jp/~jun/OSC2010shimane.pdf
 
- # cd /usr/pkgsrc/lang/ruby;make install
- # gem install nanoc 
+togetterまとめ
+~~~~~~~~~~~~~~~
 
-github
-"""""""""""
+.. csv-table::
+ :widths: 80 80
 
-::
+ OSC2013島根 NetBSDブース展示の記録,http://togetter.com/li/553529
+ OSC2012島根 NetBSDブース展示の記録,http://togetter.com/li/365753
 
- # cd /usr/pkgsrc/devel/scmgit-base
- # make install
- # which git
- /usr/pkg/bin/git
-
-redmine
-""""""""""
-
-::
-
- # /usr/pkgsrc/lang/ruby;make package-install
- # gem install bundler
- ソースコードダウンロード
- # ftp http://rubyforge.org/frs/download.php/77023/redmine-2.3.2.tar.gz
- # tar xzvf redmine-2.3.2.tar.gz
- # cd redmine-2.3.2
- # bundle install --without development test
- sqlite3:最近のNetBSDにはデフォルトで入ってます。
- # man sqlite3
-
-net commons
-"""""""""""""""
-
-::
-
- http://www.netcommons.org/
- NetCommons-2.4.1.0.tar.gz をダウンロード
- 「推奨の組み合わせ: Linux, PHP 5.1.6, MySQL 5.0.22, Apache 2.2.3」
- 
- # cd /usr/pkgsrc/lang/php53  ... netcommonsはphp54以降未サポート(2013/8/1)
- # cd /usr/pkgsrc/databases/php-mysql  ... php53+mysqlインストール
- # vi /usr/pkg/etc/php.ini
- extension=mysql.so
- 
- # cd /usr/pkgsrc/www/ap-php   ... php53+apacheインストール
- # make package-install
- # vi /usr/pkg/etc/httpd/httpd.conf
- LoadModule php5_module lib/httpd/mod_php5.so
- AddHandler application/x-httpd-php .php
- 
- # cd /usr/pkgsrc/converters/php-mbstring
- # make package-install
- 
- # vi /usr/pkg/etc/php.ini
- extension=mbstring.so
- 
- # vi /usr/pkg/etc/httpd/httpd.conf
- DirectoryIndex index.php index.html
- 
- # vi /etc/rc.conf
- apache=YES
- # cp /usr/pkg/share/examples/rc.d/apache/etc/rc.d/apache
- # /etc/rc.d/apache start
- 
- # cp -r NetCommons-2.4.1.0/html/html /usr/pkg/share/httpd/htdocs/
- # cd /usr/pkg/share/httpd/htdocs
- # chown -R www.www html
- # mv html/* .
-
- 2013/8/1現在php5.4未対応
- [Unknown_Condition_2048 ]:Non-static method LogFactory::getLog() should not be called statically,assuming $this from incompatible context in file /usr/pkg/share/httpd/htdocs/netcommons/maple/core/Controller.class.php line 122
- /usr/pkgsrc/lang/php53
- make package-install
-
-SSL設定
-""""""""""
-
-::
-
- /usr/pkg/etc/httpd/httpd-ssl.conf
- SSLCertificateFile
- SSLCertificateKeyFile
- SSLCertificateChainFile
- 
- /usr/pkg/etc/httpd/httpd.conf
- Include etc/httpd/httpd-ssl.conf  ... コメントはずす
- 
-AmazonEC2
-""""""""""""""
-
-::
-
- http://wiki.netbsd.org/amazon_ec2/
- http://wiki.netbsd.org/amazon_ec2/amis/
- ami-1b3fb11a
-
-ADempiere
-""""""""""""""
-
- これは何ができていればいいんでしょ？
-::
-
- http://sourceforge.jp/projects/adempiere/
- # java+postgresql
- # openjdk
- # postgresql
-
-OpenOffice.org/LibreOffice
-""""""""""""""""""""""""""""""""
-
-::
-
- # cd /usr/pkgsrc/misc/openoffice
- # make package-install
- # cd /usr/pkgsrc/misc/libreoffice
- # make package-install
-
-問題
- openofficeが古い/
- libreofficeで漢字が入力できない 
-
-sphinx
-"""""""""
-
-::
-
- # cd /usr/pkgsrc/textproc/py-sphinx
- # make package-install
- # which sphinx-quickstart
- /usr/pkg/bin/sphinx-quickstart
- # sphinx-quickstart
- # make html
- # ln -s _build/html /var/www/html
- # /etc/rc.d/httpd onestart
-
-firefox
-""""""""""
-
-::
-
- # cd /usr/pkgsrc/www/firefox
- # make package-install
- # cd /usr/pkgsrc/www/firefox-l10n
- # make package-install
- # cd /usr/pkgsrc/multimedia/adobe-flash-plugin11
- # make package-install
-
-gedit
-""""""""
-
-::
-
- # cd /usr/pkgsrc/editors/gedit
- # make package-install
-
-icewm
-"""""""""
-
-::
-
- # cd /usr/pkgsrc/wm/icewm
- # make package-install
-
-漢字入力
-""""""""""
-
-::
-
- # cd /usr/pkgsrc/inputmethod/mozc-server
- # make package-install
- # cd /usr/pkgsrc/inputmethod/ibus-mozc
- # make package-install
- 
- % ls -l ~/.xinitrc
- .xinitrcが存在しない場合はコピーする  !! 上書きしないよう注意！ 
- % cp /etc/X11/xinit/xinitrc ~/.xinitrc
- % vi .xinitrc                     ... 以下の行を追加
- export LANG=ja_JP.UTF-8
- ibus-daemon --xim &
- export GTK_IM_MODULE="ibus"
- export XMODIFIERS="@im=ibus"
- export QT_IM_MODULE="ibus"
-
-emacs
-"""""""""
-
-::
-
- # cd /usr/pkgsrc/editors/emacs
- # make package-install
- # cd /usr/pkgsrc/inputmethod/mozc-elisp/
- # make package-install
- # emacs ~/.emacs
- (set-language-environment "Japanese")
- (require 'mozc)
- (setq default-input-method "japanese-mozc")
-
-gnome/xfce
-""""""""""""
-
-::
-
- # cd /usr/pkgsrc/meta-pkgs/gnome
- # make package-install
- # cd /usr/pkgsrc/meta-pkgs/xfce4
- # make package-install
-
-ライセンスを許可する
-"""""""""""""""""""
-
- pkgsrcに含まれるソフトウェアのライセンスを見てみましょう。
-
-::
-
- % cd /usr/pkgsrc/licenses
- % ls |wc -l
- 205 
- % ls |head
- % ls |head
- 2-clause-bsd
- 3proxy-0.5-license
- CVS
- acm-license
- adobe-acrobat-license
- adobe-flashsupport-license
- amap-license
- amaya-license
- amazon-software-license
- amiwm-license
-    :
-
- 特定のライセンスを持つソフトウェアのインストールを許可する・許可しないよう、/etc/mk.confファイルで定義できます。
-
-::
-
- % grep ACCEPTABLE /etc/mk.conf |head
- ACCEPTABLE_LICENSES+= ruby-license
- ACCEPTABLE_LICENSES+= xv-license
- ACCEPTABLE_LICENSES+= mplayer-codec-license
- ACCEPTABLE_LICENSES+= flash-license
- ACCEPTABLE_LICENSES+= adobe-acrobat-license
- ACCEPTABLE_LICENSES+= adobe-flashsupport-license
- ACCEPTABLE_LICENSES+= skype-license
- ACCEPTABLE_LICENSES+= lha-license
- ACCEPTABLE_LICENSES+= opera-eula
- ACCEPTABLE_LICENSES+= lame-license
-
-pkgsrc/packages
-""""""""""""""""""
- コンパイルしたパッケージは、pkgsrc/packages以下に生成されます。
-
-::
-
- % cd /usr/pkgsrc/packages/All/
- % ls *.tgz |head
- GConf-2.32.4nb7.tgz
- GConf-ui-2.32.4nb11.tgz
- ORBit2-2.14.19nb4.tgz
- SDL-1.2.15nb7.tgz
- SDL_mixer-1.2.12nb5.tgz
- acroread9-jpnfont-9.1.tgz
-    :
- # pkg_add gedit-2.30.4nb17.tgz  ... インストール
- # pkg_info                      ... 一覧表示
- # pkg_del gedit                 ... 削除
-
-pkgsrcに何か追加したい
-"""""""""""""""""""""""
-
-::
-
- # cd /usr/pkgsrc/pkgtools/url2pkg
- # make package-install
- # cd /usr/pkgsrc/ジャンル/名前
- # url2pkg ダウンロードURL
- Makefileとかができる
-
-バグレポート・追加差分
-"""""""""""""""""""""
- www.NetBSD.org から"send-pr"
+よく行く店
+~~~~~~~~~~~~~~
 
 松江
 ----
 
 .. csv-table::
+ :widths: 30 20 60
 
  ベニヤ模型,京町商店街の老舗模型店,http://www5e.biglobe.ne.jp/~beniya-m/
  EAD,松江大橋たもと、地下はDJ BAR MIX カフェバーEAD屋上にもバーがある。リニューアル前は、とりあえずを頼むととりあえずが出て来た。,http://www.ead5.com/
@@ -356,8 +100,10 @@ pkgsrcに何か追加したい
  赤べこ,たぬき書店に入る道,上寿司、煮物、大将がX68の偉い人に面影が
 
 鳥取
+----
 
 .. csv-table::
+ :widths: 30 20 60
 
  ガンバリウス,大山ゴールドとガンバセット
  鬼っ子ランド,鬼スライダーとは何か。
@@ -379,6 +125,7 @@ pkgsrcに何か追加したい
 
 OSC松江展示物
 --------------
+
 #. sigmarion
 #. persona
 #. HP712/
@@ -393,4 +140,118 @@ OSC松江展示物
 #. OMRON LUNAII
 #. Sun Java Station
 
+2013年
+~~~~~~~~~~~~~~~~~~
 
+.. image::  ../Picture/2013/08/24/DSC_2416.jpg
+.. image::  ../Picture/2013/08/24/DSC_2417.jpg
+.. image::  ../Picture/2013/08/24/DSC_2418.jpg
+.. image::  ../Picture/2013/08/24/DSC_2419.jpg
+.. image::  ../Picture/2013/08/24/DSC_2420.jpg
+.. image::  ../Picture/2013/08/24/DSC_2421.jpg
+.. image::  ../Picture/2013/08/24/DSC_2422.jpg
+.. image::  ../Picture/2013/08/24/DSC_2423.jpg
+.. image::  ../Picture/2013/08/24/DSC_2424.jpg
+.. image::  ../Picture/2013/08/24/DSC_2425.jpg
+.. image::  ../Picture/2013/08/24/DSC_2426.jpg
+.. image::  ../Picture/2013/08/24/DSC_2427.jpg
+.. image::  ../Picture/2013/08/24/DSC_2428.jpg
+.. image::  ../Picture/2013/08/24/DSC_2429.jpg
+.. image::  ../Picture/2013/08/24/DSC_2430.jpg
+.. image::  ../Picture/2013/08/24/DSC_2431.jpg
+.. image::  ../Picture/2013/08/24/DSC_2432.jpg
+.. image::  ../Picture/2013/08/24/DSC_2433.jpg
+.. image::  ../Picture/2013/08/24/DSC_2434.jpg
+.. image::  ../Picture/2013/08/24/DSC_2435.jpg
+.. image::  ../Picture/2013/08/24/DSC_2436.jpg
+.. image::  ../Picture/2013/08/24/DSC_2437.jpg
+.. image::  ../Picture/2013/08/24/DSC_2438.jpg
+.. image::  ../Picture/2013/08/24/DSC_2439.jpg
+.. image::  ../Picture/2013/08/24/DSC_2440.jpg
+.. image::  ../Picture/2013/08/24/DSC_2441.jpg
+.. image::  ../Picture/2013/08/24/DSC_2442.jpg
+.. image::  ../Picture/2013/08/24/DSC_2443.jpg
+.. image::  ../Picture/2013/08/24/DSC_2444.jpg
+.. image::  ../Picture/2013/08/24/DSC_2445.jpg
+.. image::  ../Picture/2013/08/24/DSC_2446.jpg
+.. image::  ../Picture/2013/08/24/DSC_2447.jpg
+.. image::  ../Picture/2013/08/24/DSC_2448.jpg
+.. image::  ../Picture/2013/08/24/DSC_2449.jpg
+.. image::  ../Picture/2013/08/24/DSC_2450.jpg
+.. image::  ../Picture/2013/08/24/DSC_2451.jpg
+.. image::  ../Picture/2013/08/24/DSC_2452.jpg
+.. image::  ../Picture/2013/08/24/DSC_2453.jpg
+
+2012年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2012/09/01/DSC_0744.JPG
+.. image::  ../Picture/2012/09/01/DSC_0745.JPG
+.. image::  ../Picture/2012/09/01/DSC_0746.JPG
+.. image::  ../Picture/2012/09/01/DSC_0747.JPG
+.. image::  ../Picture/2012/09/01/DSC_0748.JPG
+.. image::  ../Picture/2012/09/01/DSC_0749.JPG
+.. image::  ../Picture/2012/09/01/DSC_0750.JPG
+.. image::  ../Picture/2012/09/01/DSC_0751.JPG
+.. image::  ../Picture/2012/09/01/DSC_0752.JPG
+.. image::  ../Picture/2012/09/01/DSC_0753.JPG
+.. image::  ../Picture/2012/09/01/DSC_0754.JPG
+.. image::  ../Picture/2012/09/01/DSC_0755.JPG
+.. image::  ../Picture/2012/09/01/DSC_0756.JPG
+.. image::  ../Picture/2012/09/01/DSC_0757.JPG
+.. image::  ../Picture/2012/09/01/DSC_0758.JPG
+.. image::  ../Picture/2012/09/01/DSC_0759.JPG
+.. image::  ../Picture/2012/09/01/DSC_0760.JPG
+.. image::  ../Picture/2012/09/01/DSC_0761.JPG
+.. image::  ../Picture/2012/09/01/DSC_0762.JPG
+.. image::  ../Picture/2012/09/01/DSC_0763.JPG
+.. image::  ../Picture/2012/09/01/DSC_0764.JPG
+.. image::  ../Picture/2012/09/01/dsc01631.jpg
+.. image::  ../Picture/2012/09/01/dsc01632.jpg
+.. image::  ../Picture/2012/09/01/dsc01633.jpg
+.. image::  ../Picture/2012/09/01/dsc01634.jpg
+.. image::  ../Picture/2012/09/01/dsc01635.jpg
+.. image::  ../Picture/2012/09/01/dsc01636.jpg
+.. image::  ../Picture/2012/09/01/dsc01637.jpg
+.. image::  ../Picture/2012/09/01/dsc01638.jpg
+.. image::  ../Picture/2012/09/01/dsc01639.jpg
+.. image::  ../Picture/2012/09/01/dsc01640.jpg
+.. image::  ../Picture/2012/09/01/dsc01641.jpg
+.. image::  ../Picture/2012/09/01/dsc01642.jpg
+.. image::  ../Picture/2012/09/01/dsc01643.jpg
+.. image::  ../Picture/2012/09/01/dsc01644.jpg
+.. image::  ../Picture/2012/09/01/dsc01645.jpg
+.. image::  ../Picture/2012/09/01/dsc01646.jpg
+.. image::  ../Picture/2012/09/01/dsc01647.jpg
+.. image::  ../Picture/2012/09/01/dsc01648.jpg
+.. image::  ../Picture/2012/09/01/dsc01649.jpg
+
+2011年
+~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2011/11/12/P1001225.JPG
+.. image::  ../Picture/2011/11/12/P1001226.JPG
+.. image::  ../Picture/2011/11/12/P1001227.JPG
+.. image::  ../Picture/2011/11/12/P1001228.JPG
+.. image::  ../Picture/2011/11/12/P1001229.JPG
+.. image::  ../Picture/2011/11/12/P1001230.JPG
+.. image::  ../Picture/2011/11/12/P1001231.JPG
+.. image::  ../Picture/2011/11/12/P1001232.JPG
+.. image::  ../Picture/2011/11/12/P1001233.JPG
+.. image::  ../Picture/2011/11/12/P1001234.JPG
+.. image::  ../Picture/2011/11/12/P1001235.JPG
+
+2010年
+~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2010/11/27/P1000074.JPG
+.. image::  ../Picture/2010/11/27/P1000075.JPG
+.. image::  ../Picture/2010/11/27/P1000076.JPG
+.. image::  ../Picture/2010/11/27/P1000077.JPG
+.. image::  ../Picture/2010/11/27/P1000078.JPG
+.. image::  ../Picture/2010/11/27/P1000079.JPG
+.. image::  ../Picture/2010/11/27/P1000080.JPG
+.. image::  ../Picture/2010/11/27/P1000081.JPG
+.. image::  ../Picture/2010/11/27/P1000082.JPG
+.. image::  ../Picture/2010/11/27/P1000083.JPG
+.. image::  ../Picture/2010/11/27/P1000084.JPG
