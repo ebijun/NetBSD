@@ -46,8 +46,8 @@
  :maxdepth: 2
  :numbered:
 
- Place/kyoto
- Luna
+ Place/shimane
+ RPI
 
 .. 
  Place/intro
