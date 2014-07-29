@@ -43,7 +43,7 @@
    x68k,-,
 
 .. toctree::
- :maxdepth: 2
+ :maxdepth: 3
  :numbered:
 
  Place/shimane

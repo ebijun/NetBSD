@@ -143,41 +143,19 @@ OSC松江展示物
 2013年
 ~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2013/08/24/DSC_2416.jpg
-.. image::  ../Picture/2013/08/24/DSC_2417.jpg
 .. image::  ../Picture/2013/08/24/DSC_2418.jpg
 .. image::  ../Picture/2013/08/24/DSC_2419.jpg
-.. image::  ../Picture/2013/08/24/DSC_2420.jpg
-.. image::  ../Picture/2013/08/24/DSC_2421.jpg
-.. image::  ../Picture/2013/08/24/DSC_2422.jpg
-.. image::  ../Picture/2013/08/24/DSC_2423.jpg
-.. image::  ../Picture/2013/08/24/DSC_2424.jpg
-.. image::  ../Picture/2013/08/24/DSC_2425.jpg
 .. image::  ../Picture/2013/08/24/DSC_2426.jpg
-.. image::  ../Picture/2013/08/24/DSC_2427.jpg
-.. image::  ../Picture/2013/08/24/DSC_2428.jpg
 .. image::  ../Picture/2013/08/24/DSC_2429.jpg
-.. image::  ../Picture/2013/08/24/DSC_2430.jpg
-.. image::  ../Picture/2013/08/24/DSC_2431.jpg
 .. image::  ../Picture/2013/08/24/DSC_2432.jpg
-.. image::  ../Picture/2013/08/24/DSC_2433.jpg
-.. image::  ../Picture/2013/08/24/DSC_2434.jpg
 .. image::  ../Picture/2013/08/24/DSC_2435.jpg
-.. image::  ../Picture/2013/08/24/DSC_2436.jpg
 .. image::  ../Picture/2013/08/24/DSC_2437.jpg
-.. image::  ../Picture/2013/08/24/DSC_2438.jpg
-.. image::  ../Picture/2013/08/24/DSC_2439.jpg
 .. image::  ../Picture/2013/08/24/DSC_2440.jpg
-.. image::  ../Picture/2013/08/24/DSC_2441.jpg
 .. image::  ../Picture/2013/08/24/DSC_2442.jpg
 .. image::  ../Picture/2013/08/24/DSC_2443.jpg
-.. image::  ../Picture/2013/08/24/DSC_2444.jpg
-.. image::  ../Picture/2013/08/24/DSC_2445.jpg
 .. image::  ../Picture/2013/08/24/DSC_2446.jpg
 .. image::  ../Picture/2013/08/24/DSC_2447.jpg
-.. image::  ../Picture/2013/08/24/DSC_2448.jpg
 .. image::  ../Picture/2013/08/24/DSC_2449.jpg
-.. image::  ../Picture/2013/08/24/DSC_2450.jpg
 .. image::  ../Picture/2013/08/24/DSC_2451.jpg
 .. image::  ../Picture/2013/08/24/DSC_2452.jpg
 .. image::  ../Picture/2013/08/24/DSC_2453.jpg
@@ -185,60 +163,29 @@ OSC松江展示物
 2012年
 ~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2012/09/01/DSC_0744.JPG
-.. image::  ../Picture/2012/09/01/DSC_0745.JPG
 .. image::  ../Picture/2012/09/01/DSC_0746.JPG
-.. image::  ../Picture/2012/09/01/DSC_0747.JPG
 .. image::  ../Picture/2012/09/01/DSC_0748.JPG
-.. image::  ../Picture/2012/09/01/DSC_0749.JPG
-.. image::  ../Picture/2012/09/01/DSC_0750.JPG
 .. image::  ../Picture/2012/09/01/DSC_0751.JPG
-.. image::  ../Picture/2012/09/01/DSC_0752.JPG
 .. image::  ../Picture/2012/09/01/DSC_0753.JPG
-.. image::  ../Picture/2012/09/01/DSC_0754.JPG
 .. image::  ../Picture/2012/09/01/DSC_0755.JPG
-.. image::  ../Picture/2012/09/01/DSC_0756.JPG
 .. image::  ../Picture/2012/09/01/DSC_0757.JPG
-.. image::  ../Picture/2012/09/01/DSC_0758.JPG
-.. image::  ../Picture/2012/09/01/DSC_0759.JPG
-.. image::  ../Picture/2012/09/01/DSC_0760.JPG
-.. image::  ../Picture/2012/09/01/DSC_0761.JPG
-.. image::  ../Picture/2012/09/01/DSC_0762.JPG
-.. image::  ../Picture/2012/09/01/DSC_0763.JPG
-.. image::  ../Picture/2012/09/01/DSC_0764.JPG
-.. image::  ../Picture/2012/09/01/dsc01631.jpg
-.. image::  ../Picture/2012/09/01/dsc01632.jpg
 .. image::  ../Picture/2012/09/01/dsc01633.jpg
 .. image::  ../Picture/2012/09/01/dsc01634.jpg
-.. image::  ../Picture/2012/09/01/dsc01635.jpg
-.. image::  ../Picture/2012/09/01/dsc01636.jpg
 .. image::  ../Picture/2012/09/01/dsc01637.jpg
 .. image::  ../Picture/2012/09/01/dsc01638.jpg
-.. image::  ../Picture/2012/09/01/dsc01639.jpg
 .. image::  ../Picture/2012/09/01/dsc01640.jpg
-.. image::  ../Picture/2012/09/01/dsc01641.jpg
 .. image::  ../Picture/2012/09/01/dsc01642.jpg
-.. image::  ../Picture/2012/09/01/dsc01643.jpg
-.. image::  ../Picture/2012/09/01/dsc01644.jpg
-.. image::  ../Picture/2012/09/01/dsc01645.jpg
-.. image::  ../Picture/2012/09/01/dsc01646.jpg
-.. image::  ../Picture/2012/09/01/dsc01647.jpg
-.. image::  ../Picture/2012/09/01/dsc01648.jpg
-.. image::  ../Picture/2012/09/01/dsc01649.jpg
 
 2011年
 ~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2011/11/12/P1001225.JPG
 .. image::  ../Picture/2011/11/12/P1001226.JPG
 .. image::  ../Picture/2011/11/12/P1001227.JPG
 .. image::  ../Picture/2011/11/12/P1001228.JPG
-.. image::  ../Picture/2011/11/12/P1001229.JPG
 .. image::  ../Picture/2011/11/12/P1001230.JPG
 .. image::  ../Picture/2011/11/12/P1001231.JPG
 .. image::  ../Picture/2011/11/12/P1001232.JPG
 .. image::  ../Picture/2011/11/12/P1001233.JPG
-.. image::  ../Picture/2011/11/12/P1001234.JPG
 .. image::  ../Picture/2011/11/12/P1001235.JPG
 
 2010年
@@ -247,11 +194,8 @@ OSC松江展示物
 .. image::  ../Picture/2010/11/27/P1000074.JPG
 .. image::  ../Picture/2010/11/27/P1000075.JPG
 .. image::  ../Picture/2010/11/27/P1000076.JPG
-.. image::  ../Picture/2010/11/27/P1000077.JPG
-.. image::  ../Picture/2010/11/27/P1000078.JPG
 .. image::  ../Picture/2010/11/27/P1000079.JPG
 .. image::  ../Picture/2010/11/27/P1000080.JPG
-.. image::  ../Picture/2010/11/27/P1000081.JPG
 .. image::  ../Picture/2010/11/27/P1000082.JPG
 .. image::  ../Picture/2010/11/27/P1000083.JPG
 .. image::  ../Picture/2010/11/27/P1000084.JPG
