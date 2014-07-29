@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.99.47-evbarm-earmhf-201407231600Z.iso
-#IMAGE=/usr/release/images/NetBSD-6.99.47-evbarm-earmhf.iso
-PKGSRC=pkgsrc-2014-07-19.tar.gz
+#IMAGE=/usr/release/images/NetBSD-6.99.49-evbarm-earmhf-201407251820Z.iso
+IMAGE=/usr/release/images/NetBSD-6.99.49-evbarm-earmhf.iso
+PKGSRC=pkgsrc-2014-07-26.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -113,17 +113,16 @@ cdunmount:
 	umount ${MNT_CDROM}
 	vnconfig -u ${VND_CDROM}
 
-# copy newer firmware :XXX copy to /boot on MSDOS
+# copy newer firmware to /boot on MSDOS partition
+# https://github.com/raspberrypi/firmware
 firm:
 	vnconfig ${VND} ${FILE}
-	fsck -fy /dev/r${VND}a
-	mount /dev/${VND}a ${MNT}
-	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/bootcode.bin /mnt
-	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/fixup.dat /mnt
-	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/fixup_cd.dat /mnt
-	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/start.elf /mnt
-	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/start_cd.elf /mnt
+	mount_msdos /dev/${VND}e ${MNT}
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/COPYING.linux /mnt
 	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/LICENCE.broadcom /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/*.bin /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/*.dat /mnt
+	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/*.elf /mnt
 	umount ${MNT}
 	vnconfig -u ${VND}
 

@@ -1,7 +1,7 @@
 VERSION: :1,$s/2014-08-01/2014-08-01/g
-ISO:     :1,$s/201406251830Z/201406251830Z/g
-PKGSRC:  :1,$s/2014-06-28/2014-06-28/g
-NetBSD:  :1,$s/6.99.47/6.99.47/g
+ISO:     :1,$s/20140728/20140728/g
+PKGSRC:  :1,$s/2014-07-26/2014-07-26/g
+NetBSD:  :1,$s/6.99.49/6.99.49/g
 
 To: port-armNetBSD.org@localhost
 Subject: 2014-08-01-netbsd-raspi.img (Re: Raspberry Pi update please.)
@@ -12,8 +12,8 @@ I've updated 2014-08-01-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-01-earmhf/2014-08-01-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.47 evbarm-earmhf 201406251830Z from nyftp.
-- pkgsrc-current 2014-06-28 tarball from ftp.NetBSD
+- NetBSD-current 6.99.49 evbarm-earmhf 20140728 source (sorry,nyftp is down).
+- pkgsrc-current 2014-07-26 tarball from ftp.NetBSD
 - New RPI B+ boot. 
   notice: http://mail-index.netbsd.org/port-arm/2014/07/24/msg002527.html 
 - Fix Problems
@@ -39,7 +39,7 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-01
  If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
 
-SHARP NetWalker special kernel: (Thanx h_kenken@)
+SHARP NetWalker kernel: (Thanx h_kenken@)
   /boot/netbsd-NETWALKER.bin.gz is a kernel for Sharp NetWalker.
 
   1. Make backup image on NetWalker ubuntu.
@@ -58,7 +58,7 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.1.18-netbsd6-evbarm-earmhf.tar.gz for evaluation.
+  2. Download musica-0.2.0-netbsd6-evbarm-earmhf.tgz for evaluation.
   3. Extract tar file and read documents.
   4. ./musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
@@ -77,6 +77,8 @@ Todo:
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
+- KOBO: kernel: (Thanx h_kenken@)
+  merged:
 
 =====================
 
@@ -84,7 +86,7 @@ For OpenSourceConference 2014 Kyoto NetBSD booth
 (https://www.facebook.com/events/597175150370536/)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.47 earmhf rpi.img.gz base
+- NetBSD 6.99.49 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -120,7 +122,7 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-06-28 tree inside.
+  - pkgsrc: 2014-07-26 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-01/
 
