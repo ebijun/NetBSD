@@ -12,7 +12,7 @@ I've updated 2014-08-01-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-01-earmhf/2014-08-01-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.49 evbarm-earmhf 20140728 source (sorry,nyftp is down).
+- NetBSD-current 6.99.49 evbarm-earmhf 20140728 source (nyftp build failed)
 - pkgsrc-current 2014-07-26 tarball from ftp.NetBSD
 - New RPI B+ boot. 
   notice: http://mail-index.netbsd.org/port-arm/2014/07/24/msg002527.html 
@@ -68,6 +68,9 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
 XM6i - SHARP X68030 Emulator for NetBSD/x68k
   Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
 
+KOBO: kernel: (Thanx h_kenken@)
+  merged: kobo-kernels on /boot:
+
 Todo:
 - Summarize /usr/tests result on each version.
 - test COPTS:-fno-reorder-blocks/-fno-tree-vrp/-fno-tree-pre optimization.
@@ -77,8 +80,6 @@ Todo:
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
-- KOBO: kernel: (Thanx h_kenken@)
-  merged:
 
 =====================
 

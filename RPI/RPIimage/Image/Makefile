@@ -11,12 +11,15 @@ PKGSRC=pkgsrc-2014-07-26.tar.gz
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
 RPI=${MNT_CDROM}/evbarm/binary/gzimg/rpi.img
+
+# kernels
 NETWALKER=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.gz
 NETWALKERBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.bin.gz
+KOBO=/usr/release/images/netbsd.kobo-ld0
+KOBOBIN=/usr/release/images/netbsd.kobo-ld0.bin
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-#LIST=man modules text xbase xcomp xetc xfont xserver
-LIST=man modules tests text xbase xcomp xetc xfont xserver #add test
+LIST=man modules tests text xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
@@ -37,8 +40,10 @@ extract:
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	echo extract netwalker kernel.
 	mount_msdos /dev/${VND}e ${MNT}/boot
-	cp ${NETWALKER} ${MNT}/boot
+	cp ${NETWALKER}    ${MNT}/boot
 	cp ${NETWALKERBIN} ${MNT}/boot
+	cp ${KOBO}         ${MNT}/boot
+	cp ${KOBOBIN}      ${MNT}/boot
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -63,7 +68,7 @@ file:
 # stop sshd for package install
 pkg-setup:
 	vnconfig ${VND} ${FILE}
-	fsck -fy /dev/r${VND}a
+	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	echo rc_configured=YES >> ${MNT}/etc/rc.conf
 	echo sshd=NO           >> ${MNT}/etc/rc.conf
