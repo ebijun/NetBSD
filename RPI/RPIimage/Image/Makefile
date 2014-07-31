@@ -104,6 +104,8 @@ logclean:
 	rm -f ${MNT}/var/log/wtmpx
 	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease
 	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease6
+	rm -f ${MNT}/root/dmesg
+	rm -f ${MNT}/root/pkginfo
 	rm -rf ${MNT}/var/run/dhcpcd
 	rm -rf ${MNT}/var/run/resolvconf
 	umount ${MNT}
