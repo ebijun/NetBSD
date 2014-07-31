@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -66,61 +66,9 @@ PDFビューワとしても便利です。
  まず裏蓋を開けます。右下の部分にTX,RXと書いた基盤の穴があります。
 ここにシリアルポートを接続します。
 
-ソースコードからコンパイルする場合
-----------------------------------
- まずKOBOパッチをあてていない状態でコンパイルができるか確認します。
-
-* NetBSDを普通にインストールする
-* cd /usr
-* ftp ftp.jp.netbsd.org:/pub/NetBSD/NetBSD-current/tar_files/
-
-::
-
-  > bin
-  > mget src.tar.gz xsrc.tar.gz
-
-* tar xzvf src.tar.gz
-* tar xzvf xsrc.tar.gz
-
-コンパイル
------------
-* mkdir /usr/obj.evbarm
-* cd /usr/src
-* 以下のスクリプトを実行します。
-
-::
-
- USR_OBJMACHINE=YES
- OBJMACHINE=YES
- MKX11=YES
- BSDOBJDIR=/usr/obj/evbarm
- DESTDIR=/usr/builds/evbarm
- RELEASEDIR=/usr/release
- ./build.sh -U -u -j 8 -m evbarm release
- ./build.sh -U -u -j 8 -m evbarm iso-image
-
-KOBO用パッチ
--------------
-
-::
-
- # cd /usr/src
- # ftp https://gist.github.com/hkenichi/6363751/download 
- # tar xzvf download
- # mv gist6363751-*/kobo.diff .
- # script
- # patch -p1 < kobo.diff
- # exit
-
-::
-
- #  ./build.sh -U -u -j 8 -m evbarm kernel=KOBO
- #  cd /usr/src/sys/arch/evbarm/compile/KOBO
- #  tar czvf /usr/release/images/kernel-kobo.tgz netbsd*
-
 uboot
 -----
- KOBO用ubootイメージは以下の場所にあります。
+ KOBO用ubootイメージは以下の場所にもあります。
 
 ::
 

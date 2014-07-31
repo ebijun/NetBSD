@@ -69,7 +69,10 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
 
 KOBO: kernel: (Thanx h_kenken@)
-  kobo-kernels on /boot:
+  kobo-kernels and uboot on /boot:
+    mmcinfo 1
+    fatload mmc 1 0x70800000 kobo.bin
+    go 0x70800000
 
 Todo:
 - Summarize /usr/tests result on each version.
