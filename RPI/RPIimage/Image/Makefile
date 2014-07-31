@@ -4,8 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-#IMAGE=/usr/release/images/NetBSD-6.99.49-evbarm-earmhf-201407251820Z.iso
-IMAGE=/usr/release/images/NetBSD-6.99.49-evbarm-earmhf.iso
+IMAGE=/usr/release/images/NetBSD-6.99.49-evbarm-earmhf-201407301800Z.iso
+#IMAGE=/usr/release/images/NetBSD-6.99.49-evbarm-earmhf.iso
 PKGSRC=pkgsrc-2014-07-26.tar.gz
 
 # extract sets.
@@ -15,8 +15,10 @@ RPI=${MNT_CDROM}/evbarm/binary/gzimg/rpi.img
 # kernels
 NETWALKER=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.gz
 NETWALKERBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.bin.gz
-KOBO=/usr/release/images/netbsd.kobo-ld0
-KOBOBIN=/usr/release/images/netbsd.kobo-ld0.bin
+
+KOBO=${MNT_CDROM}/evbarm/binary/kernel/netbsd-ld0-KOBO.gz
+KOBOBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-ld0-KOBO.bin.gz
+KOBOUBOOT=${MNT_CDROM}/evbarm/binary/kernel/netbsd-ld0-KOBO.ub.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules tests text xbase xcomp xetc xfont xserver 
@@ -44,6 +46,7 @@ extract:
 	cp ${NETWALKERBIN} ${MNT}/boot
 	cp ${KOBO}         ${MNT}/boot
 	cp ${KOBOBIN}      ${MNT}/boot
+	cp ${KOBOUBOOT}    ${MNT}/boot
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}

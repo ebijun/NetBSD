@@ -1,5 +1,5 @@
 VERSION: :1,$s/2014-08-01/2014-08-01/g
-ISO:     :1,$s/20140728/20140728/g
+ISO:     :1,$s/201407301800Z/201407301800Z/g
 PKGSRC:  :1,$s/2014-07-26/2014-07-26/g
 NetBSD:  :1,$s/6.99.49/6.99.49/g
 
@@ -12,9 +12,9 @@ I've updated 2014-08-01-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-01-earmhf/2014-08-01-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.49 evbarm-earmhf 20140728 source (nyftp build failed)
-- pkgsrc-current 2014-07-26 tarball from ftp.NetBSD
-- New RPI B+ boot. 
+- NetBSD-current 6.99.49 evbarm-earmhf 201407301800Z from nyftp.
+- pkgsrc-current 2014-07-26 tarball from ftp.NetBSD.
+- Brand New RPI B+ support.
   notice: http://mail-index.netbsd.org/port-arm/2014/07/24/msg002527.html 
 - Fix Problems
   port-arm/48817
@@ -59,17 +59,17 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
   2. Download musica-0.2.0-netbsd6-evbarm-earmhf.tgz for evaluation.
-  3. Extract tar file and read documents.
-  4. ./musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
+  3. pkg_add musica-0.2.0-netbsd6-evbarm-earmhf.tgz
+  4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
   7. If you feel slow,Try {NetBSD/amd64 i386,OSX,Ubuntu} Version or improve NetBSD.
 
-XM6i - SHARP X68030 Emulator for NetBSD/x68k
+XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
 
 KOBO: kernel: (Thanx h_kenken@)
-  merged: kobo-kernels on /boot:
+  kobo-kernels on /boot:
 
 Todo:
 - Summarize /usr/tests result on each version.
