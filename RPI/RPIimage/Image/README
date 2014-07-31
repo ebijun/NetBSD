@@ -41,7 +41,6 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-01
 
 SHARP NetWalker kernel: (Thanx h_kenken@)
   /boot/netbsd-NETWALKER.bin.gz is a kernel for Sharp NetWalker.
-  http://movapic.com/ebijun/pic/5125897
 
   1. Make backup image on NetWalker ubuntu.
   2. cp /boot/netbsd-netwalker.bin.gz [BackupImage]/boot/zImage
@@ -68,15 +67,12 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
 
 XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
-  http://movapic.com/ebijun/pic/5125927
 
 KOBO: kernel: (Thanx h_kenken@)
   kobo-kernels and uboot on /boot:
     mmcinfo 1
     fatload mmc 1 0x70800000 kobo.bin
     go 0x70800000
-  Sample dmesg: http://www.soum.co.jp/~jun/KOBO.PDF
-  https://github.com/ebijun/NetBSD/blob/master/Guide/kobo.rst
 
 Todo:
 - Summarize /usr/tests result on each version.
