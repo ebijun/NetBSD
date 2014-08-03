@@ -31,10 +31,8 @@
 .. distcc環境の作り方
 .. 印刷プリンタ：
 .. tex関連 
-.. 2013Q4用イメージをつくるか？
+.. 
    RPI,RPIsf,Zaurus,Netwalker,hpcmips,hpcarm,hpcsh,(dreamcast) あたり
-   RPI,2013-11-23,そのままアップデート,アップデート中
-   evbarm,2013-09-09,そのままアップデート,make release
    hpcarm,-,イメージ作成スクリプトテスト,make imageして起動してみる
    zaurus,-,イメージ作成スクリプトテスト,スクリプトを作る
    hpcmips,-,イメージ作成スクリプトテスト,スクリプトを作る
@@ -47,53 +45,8 @@
  :numbered:
 
  Place/shimane
- RPI
-
-.. 
  Place/intro
- Device/BT-Micro3H2X/index
- Luna
- NEWS
- Pkgsrc/cms
- Pkgsrc/darktable
- Pkgsrc/distcc
- Pkgsrc/ekiga
- Pkgsrc/gnome
- Pkgsrc/groonga
- Pkgsrc/jp
- Pkgsrc/makeguide
- Pkgsrc/mlterm
- Pkgsrc/slurm
- Pkgsrc/sphinx
- Pkgsrc/tex
- Pkgsrc/xfce4
- Place/2013
- Place/asiabsdcon
- Place/fukuoka
- Place/hiroshima
- Place/hokkaido
- Place/intro
- Place/kawagoe
- Place/oita
- Place/osaka
- Place/shimane
- Place/tokyo
- Ports/ThinkpadX41
- Ports/amd64
  RPI
- WZERO3
- X68K
- ZAURUS
- allevents
- books
- events
- guide
- hpcmips
- kobo
- pkgsrc
- printer
- wlan
- xev
 
 * :ref:`genindex`
 * :ref:`modindex`
