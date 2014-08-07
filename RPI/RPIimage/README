@@ -1,38 +1,29 @@
-VERSION: :1,$s/2014-08-01/2014-08-01/g
-ISO:     :1,$s/201407301800Z/201407301800Z/g
-PKGSRC:  :1,$s/2014-07-26/2014-07-26/g
+VERSION: :1,$s/2014-08-23/2014-08-23/g
+ISO:     :1,$s/201408052120Z/201408052120Z/g
+PKGSRC:  :1,$s/2014-08-02/2014-08-02/g
 NetBSD:  :1,$s/6.99.49/6.99.49/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-08-01-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-08-23-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-08-01-netbsd-raspi.img.gz for RPI.
+I've updated 2014-08-23-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-01-earmhf/2014-08-01-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-23-earmhf/2014-08-23-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.49 evbarm-earmhf 201407301800Z from nyftp.
-- pkgsrc-current 2014-07-26 tarball from ftp.NetBSD.
-- Brand New RPI B+ support.
-  notice: http://mail-index.netbsd.org/port-arm/2014/07/24/msg002527.html 
+- NetBSD-current 6.99.49 evbarm-earmhf 201408052120Z from nyftp.
+- pkgsrc-current 2014-08-02 tarball from ftp.NetBSD.
 - Fix Problems
-  port-arm/48817
-    pkgsrc/devel/ruby-delayer build failed: 
-    Floating point exception (core dumped)
-  port-arm/48948
-    pkgsrc/security/ruby-hmac build failed:
-    Floating point exception (core dumped)
-- Update mikutter to 3.0.3 by obache@
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/07/06/msg108234.html
+  PR/49020: Writing to tap device may cause panic on RPI
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-08-01-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-08-23-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-01/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-23/
  To install application.
  # pkg_add some_application_name
 
@@ -83,11 +74,12 @@ Todo:
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
+- wip/ruby-therubyracer to support RoR,such as https://github.com/shirasagi/.
 
 =====================
 
-For OpenSourceConference 2014 Kyoto NetBSD booth
-(https://www.facebook.com/events/597175150370536/)
+For OpenSourceConference 2014 Shimane NetBSD booth
+(https://www.facebook.com/events/1475184532697066/)
 demonstration use, I've updated raspberry-pi image.
 
 - NetBSD 6.99.49 earmhf rpi.img.gz base
@@ -126,9 +118,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-07-26 tree inside.
+  - pkgsrc: 2014-08-02 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-01/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-23/
 
 Installed Packages:
 kterm

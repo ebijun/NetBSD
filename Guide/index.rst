@@ -47,6 +47,7 @@
  Place/shimane
  Place/intro
  RPI
+ NEWS
 
 * :ref:`genindex`
 * :ref:`modindex`
