@@ -327,6 +327,12 @@ KOF2013
 ~~~~~~~~~~
 * 関西オープンソース2013NetBSDブースの記録 [117]_
 
+OSC2014 Kansai@kyoto
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* OSC2014京都 NetBSDブース展示への道 [134]_
+* OSC2014京都 NetBSDブースの記録 [135]_
+
+
 LUNAグッズ
 ~~~~~~~~~~~
 * LUNAグッズ持参でブースに遊びに来てくれる元関係者の方が！
@@ -335,6 +341,7 @@ LUNAグッズ
 * ペンセット [60]_
 * ペンケースとバンダナ  [76]_  [121]_  [130]_
 * dpNote - 図形グッズ：シール・定規
+* ホッチキス [133]_
 
 LUNA関連書籍
 ~~~~~~~~~~~~~
@@ -499,6 +506,7 @@ LUNA年表　- 月の刃
  2014/07/13,筒,LunaII+8bpp ボードでカラー表示 [126]_
  2014/07/20,筒,LUNA's keyboard driver changes from OpenBSD/luna88k [131]_
  2014/07/21,筒,luna68k 4/8bpp framebuffers as a monochrome server [132]_
+ 2014/08/01,筒,lunaII+mikutterd今年はカラーだ展示 [134]_
 
 最近のLUNA
 ----------------
@@ -686,6 +694,9 @@ LUNA88K謎ボード
 .. [130] 泣いて喜びそうなバンダナ https://twitter.com/goinkyo_hacker/status/482528142930620416/photo/1
 .. [131] LUNA's keyboard driver changes from OpenBSD/luna88k http://mail-index.netbsd.org/source-changes/2014/07/20/msg056548.html
 .. [132] luna68k 4/8bpp framebuffers as a monochrome server http://mail-index.netbsd.org/source-changes/2014/07/21/msg056590.html
+.. [133] LUNAホッチキス https://twitter.com/goinkyo_hacker/status/497392417478156288/photo/1
+.. [134] OSC2014京都NetBSDブース展示への道 http://togetter.com/li/703494
+.. [135] OSC2014 Kansai@Kyoto NetBSDブース展示の記録 http://togetter.com/li/700617
 
 このページ
 ~~~~~~~~~~~
