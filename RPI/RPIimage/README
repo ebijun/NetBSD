@@ -1,7 +1,7 @@
 VERSION: :1,$s/2014-08-23/2014-08-23/g
-ISO:     :1,$s/201408052120Z/201408052120Z/g
-PKGSRC:  :1,$s/2014-08-02/2014-08-02/g
-NetBSD:  :1,$s/6.99.49/6.99.49/g
+ISO:     :1,$s/201408111550Z/201408111550Z/g
+PKGSRC:  :1,$s/2014-08-02/2014-08-09/
+NetBSD:  :1,$s/7.99.1/7.99.1/g
 
 To: port-armNetBSD.org@localhost
 Subject: 2014-08-23-netbsd-raspi.img (Re: Raspberry Pi update please.)
@@ -12,10 +12,10 @@ I've updated 2014-08-23-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-23-earmhf/2014-08-23-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 6.99.49 evbarm-earmhf 201408052120Z from nyftp.
+- NetBSD-current 7.99.1 evbarm-earmhf 201408111550Z from nyftp.
 - pkgsrc-current 2014-08-02 tarball from ftp.NetBSD.
-- Fix Problems
-  PR/49020: Writing to tap device may cause panic on RPI
+- net/mikutter : 3.0.4
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/08/10/msg109675.html
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
@@ -82,7 +82,7 @@ For OpenSourceConference 2014 Shimane NetBSD booth
 (https://www.facebook.com/events/1475184532697066/)
 demonstration use, I've updated raspberry-pi image.
 
-- NetBSD 6.99.49 earmhf rpi.img.gz base
+- NetBSD 7.99.1 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
