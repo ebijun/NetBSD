@@ -4,10 +4,11 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.44 (GENERIC) #5: Mon Jun 16 11:19:31 JST 2014
-	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/GENERIC
+NetBSD 7.99.1 (ASPIREONE) #0: Tue Aug 12 15:40:55 JST 2014
+	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/ASPIREONE
 total memory = 2035 MB
-avail memory = 1987 MB
+avail memory = 1986 MB
+kern.module.path=/stand/i386/7.99.1/modules
 timecounter: Timecounters tick every 10.000 msec
 RTC BIOS diagnostic error 0x80<clock_battery>
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
@@ -120,11 +121,11 @@ ppb1 at pci0 dev 28 function 2: vendor 0x8086 product 0x27d4 (rev. 0x02)
 ppb1: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
 pci2 at ppb1 bus 2
 pci2: i/o space, memory space enabled
-athn0 at pci2 dev 0 function 0athn0: Atheros AR9285
-athn0: rev 2 (1T1R), ROM rev 13, address 00:26:5e:6f:ac:d0
-athn0: interrupting at ioapic0 pin 18
-athn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-athn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ath0 at pci2 dev 0 function 0: Atheros 9285
+ath0: interrupting at ioapic0 pin 18
+ath0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+ath0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ath0: mac 192.2 phy 14.0 radio 12.0
 ppb2 at pci0 dev 28 function 3: vendor 0x8086 product 0x27d6 (rev. 0x02)
 ppb2: PCI Express 1.0 <Root Port of PCI-E Root Complex> x1 @ 2.5Gb/s
 pci3 at ppb2 bus 3
@@ -187,10 +188,9 @@ coretemp0 at cpu0: thermal sensor, 1 C resolution
 acpicpu1 at cpu1: ACPI CPU
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
-IPsec: Initialized Security Association Processing.
-uhub0 at usb1: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb0: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb0: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb1: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
 uhub2 at usb2: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
@@ -198,8 +198,9 @@ uhub3 at usb3: vendor 0x8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub3: 2 ports with 2 removable, self powered
 uhub4 at usb4: vendor 0x8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub4: 8 ports with 8 removable, self powered
+IPsec: Initialized Security Association Processing.
 ahcisata0 port 0: device present, speed: 1.5Gb/s
-acpibat0: SANYO LION rechargeable battery
+acpibat0: SONY LION rechargeable battery
 acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
 wd0 at atabus0 drive 0
 wd0: <TOSHIBA MK6476GSX>
@@ -215,5 +216,7 @@ wsdisplay0: screen 1 added (80x25, vt100 emulation)
 wsdisplay0: screen 2 added (80x25, vt100 emulation)
 wsdisplay0: screen 3 added (80x25, vt100 emulation)
 wsdisplay0: screen 4 added (80x25, vt100 emulation)
-acpibat0: normal capacity on 'charge state'
 i915drm0: interrupting at ioapic0 pin 16
+ath0: device timeout (txq 1, txintrperiod 5)
+ath0: device timeout (txq 1, txintrperiod 4)
+ath0: device timeout (txq 1, txintrperiod 3)
