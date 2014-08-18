@@ -148,9 +148,7 @@ OSC松江展示物
 .. image::  ../Picture/2013/08/24/DSC_2429.jpg
 .. image::  ../Picture/2013/08/24/DSC_2432.jpg
 .. image::  ../Picture/2013/08/24/DSC_2435.jpg
-.. image::  ../Picture/2013/08/24/DSC_2437.jpg
 .. image::  ../Picture/2013/08/24/DSC_2440.jpg
-.. image::  ../Picture/2013/08/24/DSC_2442.jpg
 .. image::  ../Picture/2013/08/24/DSC_2443.jpg
 .. image::  ../Picture/2013/08/24/DSC_2446.jpg
 .. image::  ../Picture/2013/08/24/DSC_2447.jpg
@@ -162,9 +160,7 @@ OSC松江展示物
 2012年
 ~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2012/09/01/DSC_0746.JPG
 .. image::  ../Picture/2012/09/01/DSC_0748.JPG
-.. image::  ../Picture/2012/09/01/DSC_0751.JPG
 .. image::  ../Picture/2012/09/01/DSC_0753.JPG
 .. image::  ../Picture/2012/09/01/DSC_0755.JPG
 .. image::  ../Picture/2012/09/01/DSC_0757.JPG
@@ -180,8 +176,6 @@ OSC松江展示物
 
 .. image::  ../Picture/2011/11/12/P1001226.JPG
 .. image::  ../Picture/2011/11/12/P1001227.JPG
-.. image::  ../Picture/2011/11/12/P1001228.JPG
-.. image::  ../Picture/2011/11/12/P1001230.JPG
 .. image::  ../Picture/2011/11/12/P1001231.JPG
 .. image::  ../Picture/2011/11/12/P1001232.JPG
 .. image::  ../Picture/2011/11/12/P1001233.JPG
@@ -190,8 +184,6 @@ OSC松江展示物
 2010年
 ~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2010/11/27/P1000074.JPG
-.. image::  ../Picture/2010/11/27/P1000075.JPG
 .. image::  ../Picture/2010/11/27/P1000076.JPG
 .. image::  ../Picture/2010/11/27/P1000079.JPG
 .. image::  ../Picture/2010/11/27/P1000080.JPG
