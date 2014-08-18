@@ -1,27 +1,30 @@
-    To: port-hpcmipsNetBSD.org@localhost
-    Subject: 2013-08-30-netbsd-hpcmips.img
+:1,$s/7.99.1/7.99.1/g
+:1,$s/2014-08-23/2014-08-23/g
+:1,$s/2014-08-16/2014-08-16/g
 
-I've updated 2013-08-23-netbsd-hpcmips.img.gz for hpcmips.
+To: port-hpcarmNetBSD.org@localhost
+Subject: 2014-08-23-netbsd-hpcarm.img
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcmips/2013-08-30-hpcmips/2013-08-30-netbsd-netbsd.img.gz
+I've updated 2014-08-23-netbsd-hpcarm.img.gz for hpcarm.
+
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-08-23-hpcarm/2014-08-23-netbsd-netbsd.img.gz
 
 Purpose:
-- NetBSD-current 6.99.23+pkgsrc-current 
-- For mips port testing. all the mips ports are drawning now,and I lived by the river.
+- NetBSD-current 7.99.1+pkgsrc-current 
 
 Todo:
-- send-pr for fix mips port.
+- send-pr for fix hpcarm port.
 
 =====================
 
-- NetBSD 6.99.23 base
+- NetBSD 7.99.1 base
 - login root (no passwd)
 - startx ,and icewm running.
 
 Features:
   - fit size for 2GB SD Card
   - with X11
-  - pkgsrc: 2013-08-21 tree inside.
+  - pkgsrc: 2014-08-16 tree inside.
 
 
 Keyboard layout checkpoint:
@@ -35,10 +38,10 @@ Keyboard layout checkpoint:
 
 
 Build sample script:
- https://github.com/ebijun/NetBSD/tree/master/hpcmips/Image
+ https://github.com/ebijun/NetBSD/tree/master/hpcarm/Image
 
 Guide:
- https://github.com/ebijun/NetBSD/blob/master/Guide/hpcmips.rst
+ https://github.com/ebijun/NetBSD/blob/master/Guide/hpcarm.rst
 
 --
 Jun Ebihara

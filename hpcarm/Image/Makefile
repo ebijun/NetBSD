@@ -4,8 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-hpcarm-201408111550Z.iso
-PKGSRC=../../pkgsrc/pkgsrc-2014-08-09.tar.gz
+IMAGE=/usr/release/images/NetBSD-7.99.1-hpcarm-201408171810Z.iso
+PKGSRC=../../pkgsrc/pkgsrc-2014-08-16.tar.gz
 
 SETS=/mnt1/hpcarm/binary/sets
 INSTALLATION=/mnt1/hpcarm/installation
