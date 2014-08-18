@@ -12,6 +12,11 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-08-23-hpcarm/2014-08-23-net
 Purpose:
 - NetBSD-current 7.99.1+pkgsrc-current 
 
+FIXED:
+  PR/49107: cant mount root file system.
+
+BUGS:
+
 Todo:
 - send-pr for fix hpcarm port.
 
