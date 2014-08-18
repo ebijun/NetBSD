@@ -1,6 +1,6 @@
 VERSION: :1,$s/2014-08-23/2014-08-23/g
-ISO:     :1,$s/201408111550Z/201408111550Z/g
-PKGSRC:  :1,$s/2014-08-02/2014-08-09/
+ISO:     :1,$s/201408171810Z/201408171810Z/g
+PKGSRC:  :1,$s/2014-08-16/2014-08-16/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
 To: port-armNetBSD.org@localhost
@@ -12,8 +12,8 @@ I've updated 2014-08-23-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-23-earmhf/2014-08-23-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 7.99.1 evbarm-earmhf 201408111550Z from nyftp.
-- pkgsrc-current 2014-08-02 tarball from ftp.NetBSD.
+- NetBSD-current 7.99.1 evbarm-earmhf 201408171810Z from nyftp.
+- pkgsrc-current 2014-08-16 tarball from ftp.NetBSD.
 - net/mikutter : 3.0.4
   http://mail-index.netbsd.org/pkgsrc-changes/2014/08/10/msg109675.html
 - openssl 1.0.1i
@@ -120,7 +120,7 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-08-02 tree inside.
+  - pkgsrc: 2014-08-16 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-23/
 
