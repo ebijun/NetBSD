@@ -6,3 +6,7 @@ do
 	#(cd /mnt/usr/pkgsrc/packages/All;pkg_add $i)
 	pkg_add $i
 done
+
+# install rootcerts for https 
+# /usr/pkgsrc/security/mozilla-rootcerts/MESSAGE
+mozilla-rootcerts install

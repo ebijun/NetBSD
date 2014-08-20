@@ -1,5 +1,5 @@
 VERSION: :1,$s/2014-08-23/2014-08-23/g
-ISO:     :1,$s/201408182200Z/201408182200Z/g
+ISO:     :1,$s/201408192000Z/201408192000Z/g
 PKGSRC:  :1,$s/2014-08-16/2014-08-16/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
@@ -12,7 +12,7 @@ I've updated 2014-08-23-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-23-earmhf/2014-08-23-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 7.99.1 evbarm-earmhf 201408182200Z from nyftp.
+- NetBSD-current 7.99.1 evbarm-earmhf 201408192000Z from nyftp.
 - pkgsrc-current 2014-08-16 tarball from ftp.NetBSD.
 - openssl 1.0.1i
   http://mail-index.netbsd.org/source-changes/2014/08/10/msg057510.html
@@ -20,6 +20,8 @@ Update:
   http://mail-index.netbsd.org/pkgsrc-changes/2014/08/10/msg109675.html
 - x11/mlterm   : 3.3.8
   http://mail-index.netbsd.org/pkgsrc-changes/2014/08/16/msg109955.html
+- ~/.dillo/cookiesrc : 
+  DEFAULT ACCEPT_SESSION for twitter account activation.
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
@@ -79,6 +81,7 @@ Todo:
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
 - wip/ruby-therubyracer to support RoR,such as https://github.com/shirasagi/.
+- RPI.rst in english.
 
 =====================
 
