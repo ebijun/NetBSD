@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201408192000Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201408201950Z.iso
 #IMAGE=/usr/release/images/NetBSD-6.99.49-evbarm-earmhf.iso
 PKGSRC=pkgsrc-2014-08-16.tar.gz
 
@@ -57,6 +57,7 @@ rpi:
 	vnconfig ${VND} ${FILE}
 	gunzip < ${RPI}.gz |dd of=/dev/r${VND}d bs=1m 
 	disklabel -R ${VND} DISKLABEL.proto
+	fdisk -uf -0 -s 6/8192/114688 ${VND} #DOS id6 partition:DISKLABEL.proto
 	fsck -fy /dev/r${VND}a
 	resize_ffs -y /dev/r${VND}a
 	fsck -fy /dev/r${VND}a
