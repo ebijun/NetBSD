@@ -1,35 +1,32 @@
-VERSION: :1,$s/2014-08-23/2014-08-23/g
+VERSION: :1,$s/2014-09-20/2014-09-20/g
 ISO:     :1,$s/201408192000Z/201408192000Z/g
 PKGSRC:  :1,$s/2014-08-16/2014-08-16/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-08-23-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-09-20-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-08-23-netbsd-raspi.img.gz for RPI.
+I've updated 2014-09-20-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-08-23-earmhf/2014-08-23-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-09-20-earmhf/2014-09-20-netbsd-raspi.img.gz
 
 Update:
 - NetBSD-current 7.99.1 evbarm-earmhf 201408192000Z from nyftp.
 - pkgsrc-current 2014-08-16 tarball from ftp.NetBSD.
-- openssl 1.0.1i
-  http://mail-index.netbsd.org/source-changes/2014/08/10/msg057510.html
-- net/mikutter : 3.0.4
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/08/10/msg109675.html
-- x11/mlterm   : 3.3.8
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/08/16/msg109955.html
-- ~/.dillo/cookiesrc : 
-  DEFAULT ACCEPT_SESSION for twitter account activation.
+- net/mikutter : 3.0.5
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/08/24/msg110375.html
+- Pre-install mikutter display_requirements plugin
+  http://mikutter.blogspot.jp/2012/12/display-requirements.html
+  https://github.com/toshia/display_requirements
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-08-23-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-09-20-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-23/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-09-20/
  To install application.
  # pkg_add some_application_name
 
@@ -85,8 +82,8 @@ Todo:
 
 =====================
 
-For OpenSourceConference 2014 Shimane NetBSD booth
-(https://www.facebook.com/events/1475184532697066/)
+For OpenSourceConference 2014 Hiroshima NetBSD booth
+(https://www.facebook.com/events/285463901620247/)
 demonstration use, I've updated raspberry-pi image.
 
 - NetBSD 7.99.1 earmhf rpi.img.gz base
@@ -127,7 +124,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2014-08-16 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-08-23/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-09-20/
 
 Installed Packages:
 kterm
@@ -163,6 +160,15 @@ Keyboard layout checkpoint:
 /root/.xinitrc
  setxkbmap -model jp106 jp
 
+/root/.mikutter/plugin/ : http://yuzuki.hachune.net/wiki/Plugin
+- display_requirements.rb [Pre installed]
+  If you love Developer Display Requirements,
+  Delete this plugin, and shout "NOBODY expects the Spanish Inquisition!".
+
+- mikutter_show_mcdonalds_coupon.rb
+  If you love mcdonalds, use mcdonalds coupon via mikutter.
+  https://gist.github.com/penguin2716/5174946
+
 Build sample script:
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image
 
@@ -185,7 +191,6 @@ BUGS:
   (use writes) option)
 6. cap_mkdb failed, on update terminfo db.
   https://twitter.com/uobikiemukot/status/487977340949893121
-7. mikutter: icon_over_button failed.
 
 One more time: (we're gonna celebrate
 

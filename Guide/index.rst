@@ -44,10 +44,10 @@
  :maxdepth: 3
  :numbered:
 
- Place/shimane
+ Place/hiroshima
  Place/intro
  RPI
- NEWS
+ X68K
 
 * :ref:`genindex`
 * :ref:`modindex`
