@@ -29,7 +29,34 @@ Maps:
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/hiroshima.rst
 
-OSC広島まとめ
+
+広島でのオープンソースカンファレンス
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Github/NetBSD/Guide/OSC/OSC100.csv 更新
+
+.. csv-table::
+ :widths: 20 15 20 20 40
+
+ 開催年,開催日,参加者,参加グループ,会場
+ 2011,10/1,250,36,
+ 2012,10/20,150,23,
+ 2013,10/6,200,21,
+
+観光ガイドバックナンバー 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+これまですべてのバックナンバーは 
+https://github.com/ebijun/osc-demo　にあります。
+
+.. csv-table::
+ :widths: 20 30 80
+
+ No,イベント,URL
+ 48,OSC2013広島,http://www.soum.co.jp/~jun/OSC2013hiroshima.pdf
+ 33,OSC2012広島,http://www.soum.co.jp/~jun/OSC2012hiroshima.pdf
+ 16,OSC2011広島,http://www.soum.co.jp/~jun/OSC2011hiroshima.pdf
+
+togetterまとめ
 ~~~~~~~~~~~~~
 
 .. csv-table::
@@ -37,7 +64,8 @@ OSC広島まとめ
 
  OSC2011神戸,開催募集,http://twitpic.com/4ls711
  OSC2011広島,21世紀のX68000まとめ, http://togetter.com/li/195551
- OSC2012広島, OSC2012 広島 NetBSDブース展示の記録,http://togetter.com/li/392778
+ OSC2012広島,OSC2012 広島 NetBSDブース展示の記録,http://togetter.com/li/392778
+ OSC2013広島,OSC2013 広島 NetBSDブース展示の記録, 
 
 OSC広島発表
 ~~~~~~~~~~~~~
@@ -97,4 +125,46 @@ OSC広島発表
  ハングアウト,,9タップあるビアバー。
  重富,,重富注ぎ
 
+2013年
+~~~~~~~~~~~~~~
+.. image::  ../Picture/2013/10/06/dsc03149.jpg
+.. image::  ../Picture/2013/10/06/dsc03152.jpg
+.. image::  ../Picture/2013/10/06/dsc03154.jpg
+.. image::  ../Picture/2013/10/06/dsc03156.jpg
+.. image::  ../Picture/2013/10/06/dsc03157.jpg
+.. image::  ../Picture/2013/10/05/dsc03139.jpg
+.. image::  ../Picture/2013/10/05/DSC_2658.jpg
+.. image::  ../Picture/2013/10/05/DSC_2645.jpg
+.. image::  ../Picture/2013/10/05/dsc03123.jpg
+.. image::  ../Picture/2013/10/05/DSC_2657.jpg
+.. image::  ../Picture/2013/10/05/dsc03128.jpg
+.. image::  ../Picture/2013/10/06/dsc03158.jpg
+.. image::  ../Picture/2013/10/05/dsc03135.jpg
+.. image::  ../Picture/2013/10/05/dsc03105.jpg
+.. image::  ../Picture/2013/10/05/dsc03126.jpg
+.. image::  ../Picture/2013/10/05/dsc03125_1.jpg
+.. image::  ../Picture/2013/10/05/dsc03102.jpg
+.. image::  ../Picture/2013/10/05/dsc03121.jpg
+.. image::  ../Picture/2013/10/05/dsc03078.jpg
+.. image::  ../Picture/2013/10/06/DSC_2695.jpg
+.. image::  ../Picture/2013/10/05/dsc03092.jpg
+.. image::  ../Picture/2013/10/05/dsc03085.jpg
+.. image::  ../Picture/2013/10/06/DSC_2684.jpg
+.. image::  ../Picture/2013/10/05/dsc03063.jpg
+.. image::  ../Picture/2013/10/06/DSC_2700.jpg
+.. image::  ../Picture/2013/10/06/dsc03160.jpg
+.. image::  ../Picture/2013/10/06/DSC_2690.jpg
+.. image::  ../Picture/2013/10/06/DSC_2689.jpg
+.. image::  ../Picture/2013/10/06/dsc03161.jpg
+.. image::  ../Picture/2013/10/06/DSC_2683.jpg
+.. image::  ../Picture/2013/10/06/DSC_2676.jpg
+.. image::  ../Picture/2013/10/06/dsc03162.jpg
+.. image::  ../Picture/2013/10/06/DSC_2664.jpg
+.. image::  ../Picture/2013/10/06/DSC_2673.jpg
+.. image::  ../Picture/2013/10/06/DSC_2674.jpg
+.. image::  ../Picture/2013/10/06/DSC_2675.jpg
+.. image::  ../Picture/2013/10/06/DSC_2677.jpg
+.. image::  ../Picture/2013/10/06/DSC_2680.jpg
+.. image::  ../Picture/2013/10/05/dsc03100.jpg
+.. image::  ../Picture/2013/10/05/dsc03124.jpg
 
