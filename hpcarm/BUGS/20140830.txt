@@ -3,7 +3,7 @@ Waiting for DAD completion for statically configured addresses...
 Starting dhcpcd.
 Building databases: dev,utmp,utmpx, services.
 data_about_handler: data_aborts fsr=0x13 far=0xd
-Fata kernel mode data abort: 'Alignment Fault 3'
+Fatal kernel mode data abort: 'Alignment Fault 3'
 trapframe: 0xc7825b40
 FSR=00000013, FAR=0000000d, spsr=20000013
 r0 =00000001, r1 =00000080, r2 =c163bc10, r3 =c0388f64
