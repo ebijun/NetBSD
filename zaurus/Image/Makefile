@@ -4,9 +4,10 @@
 FILE=`date +%Y-%m-%d`-netbsd-zaurus.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus-201408111550Z.iso
-#IMAGE=/usr/release/images/NetBSD-6.99.49-zaurus.iso  #ozaurus
-PKGSRC=../../pkgsrc/pkgsrc-2014-08-09.tar.gz
+#IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus-201408111550Z.iso
+# ozaurus
+IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus.iso
+PKGSRC=../../pkgsrc/pkgsrc-2014-08-23.tar.gz
 
 SETS=/mnt1/zaurus/binary/sets
 INSTALLATION=/mnt1/zaurus/installation
