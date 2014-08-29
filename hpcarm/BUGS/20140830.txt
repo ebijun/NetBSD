@@ -1,0 +1,29 @@
+Adding interface aliases:.
+Waiting for DAD completion for statically configured addresses...
+Starting dhcpcd.
+Building databases: dev,utmp,utmpx, services.
+data_about_handler: data_aborts fsr=0x13 far=0xd
+Fata kernel mode data abort: 'Alignment Fault 3'
+trapframe: 0xc7825b40
+FSR=00000013, FAR=0000000d, spsr=20000013
+r0 =00000001, r1 =00000080, r2 =c163bc10, r3 =c0388f64
+r4 =c139b610, r5 =c163bc10, r6 =00000000, r7 =c05b3638
+r8 =00000000, r9 =c139b610, r10=0000000c, r11=c7825bb4
+r12=c7825bb8, ssp=c7825b94, slr=c0388f88, pc =c049c628
+
+Stopped in pid 556.1 (wsconscfg) at     netbsd:wsfont_map_unichar+0x4:  ldr  r12,[r0, #0x00c]
+db> bt
+0xc7825bb4: netbsd:rasops_mapchar+0xc
+0xc7825bd4: netbsd:vt100_initchartables+0x34
+0xc7825c04: netbsd:wsemul_vt100_attach+0xbc
+0xc7825c3c: netbsd:wsscreen_attach+0x12c
+0xc7825c9c: netbsd:wsdisplay_addscreen.part.0+0xa4
+0xc7825cec: netbsd:wsdisplay_cfg_ioctl+0x1fc
+0xc7825d14: netbsd:cdev_ioctl+0x84
+0xc7825d3c: netbsd:spec_ioctl+0x9c
+0xc7825d6c: netbsd:VOP_IOCTL+0x40
+0xc7825e3c: netbsd:vn_ioctl+0xb0
+0xc7825f04: netbsd:sys_ioctl+0xc0
+0xc7825f74: netbsd:syscall+0x8c
+0xc7825fac: netbsd:swi_handler+0x9c
+db>

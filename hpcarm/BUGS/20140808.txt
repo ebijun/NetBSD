@@ -1,0 +1,11 @@
+init: trying /sbin/init
+panic: kernel diagnostic assertion "*ptep == opte" failed: file "./arm/arm32/pmap.h", line 575 0xa7de505b [*0xc0012004] != 0
+Stopped in pid 1,1 (init) at  netbsd:cpu_Debugger+0x4:   bx r14
+db> bt
+0xc776ed14: netbsd:vpanic+0xc
+0xc776ed2c: netbsf:kern_assert+0x40
+0xc776ed6c: netbsd:pmap_zero_page_xscale+0xcc
+0xc776edbc: netbsd:uvm_pagealloc_strat+0x458
+0xc776ee04: netbsd:uvmfault_promote+0x21c
+0xc776ef34: netbsd:uvm_fault_internal+0xa5c
+0xc776efac: netbsd:data_abort_handler+0x200
