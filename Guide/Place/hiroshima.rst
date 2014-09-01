@@ -41,6 +41,7 @@ Maps:
  2011,10/1,250,36,
  2012,10/20,150,23,
  2013,10/6,200,21,
+ 2014,,,
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,7 +61,7 @@ togetterまとめ
 ~~~~~~~~~~~~~
 
 .. csv-table::
- :widths: 70 35 70
+ :widths: 30 75 70
 
  OSC2011神戸,開催募集,http://twitpic.com/4ls711
  OSC2011広島,21世紀のX68000まとめ, http://togetter.com/li/195551
@@ -71,7 +72,7 @@ OSC広島発表
 ~~~~~~~~~~~~~
 
 .. csv-table::
- :widths: 70 35 70
+ :widths: 60 25 99
 
  ておくれライブイメージ,OSC2011広島,http://www.ceres.dti.ne.jp/tsutsui/osc11hi/Teokure-Live-Image.html
  XM6iのご紹介, OSC2011広島, http://xm6i.org/event/osc2011hi
@@ -82,7 +83,7 @@ OSC広島発表
 ~~~~~~~~~~~~~~
 
 .. csv-table::
- :widths: 35 20 60
+ :widths: 30 15 80
 
  県立広島大学,宇品,学園祭は2013/10/13-14
  広島国際学院大学,中野東, ラムー近く 今年のOSCポスターに刮目せよ
@@ -97,9 +98,9 @@ OSC広島発表
  サロンシネマ,大手町,日本一ひろいシートの映画館。
  シネツイン,新天地,隣の女、ローズマリーの赤ちゃん
  八丁座映画図書館,福屋,2013/9/19 オープン パンフポスター資料豊富
- 松本無線パーツ(株)広島店,銀山町,幻の3階ジャンクフロアの状況は
+ 松本無線パーツ,銀山町,幻の3階ジャンクフロアの状況は
  松屋　広島金座街店,金座街 ,店舗限定かつ定食とカツカレーがある(c)おかのさん
- Groovin' 広島駅前店,京橋町,中古CD/DVD
+ Groovin',京橋町,中古CD/DVD
  アーキウォーク広島,建築ガイド,http://www.oa-hiroshima.org/
  たまゆら,竹原,日の丸写真館　旧笠井邸 ほり川のほぼろ焼き 茶房ゆかり
  ひろしまバス祭り,新井口,バスピーとおにゃのことは何か http://t.co/2nNpfj0Ya0
@@ -127,44 +128,38 @@ OSC広島発表
 
 2013年
 ~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2013/10/05/DSC_2657.jpg
+.. image::  ../Picture/2013/10/05/DSC_2658.jpg
+.. image::  ../Picture/2013/10/05/dsc03063.jpg
+.. image::  ../Picture/2013/10/05/dsc03085.jpg
+.. image::  ../Picture/2013/10/05/dsc03092.jpg
+.. image::  ../Picture/2013/10/05/dsc03100.jpg
+.. image::  ../Picture/2013/10/05/dsc03102.jpg
+.. image::  ../Picture/2013/10/05/dsc03105.jpg
+.. image::  ../Picture/2013/10/05/dsc03124.jpg
+.. image::  ../Picture/2013/10/05/dsc03125_1.jpg
+.. image::  ../Picture/2013/10/05/dsc03126.jpg
+.. image::  ../Picture/2013/10/05/dsc03128.jpg
+.. image::  ../Picture/2013/10/05/dsc03135.jpg
+.. image::  ../Picture/2013/10/05/dsc03139.jpg
+.. image::  ../Picture/2013/10/06/DSC_2664.jpg
+.. image::  ../Picture/2013/10/06/DSC_2673.jpg
+.. image::  ../Picture/2013/10/06/DSC_2674.jpg
+.. image::  ../Picture/2013/10/06/DSC_2675.jpg
+.. image::  ../Picture/2013/10/06/DSC_2676.jpg
+.. image::  ../Picture/2013/10/06/DSC_2677.jpg
+.. image::  ../Picture/2013/10/06/DSC_2680.jpg
+.. image::  ../Picture/2013/10/06/DSC_2683.jpg
+.. image::  ../Picture/2013/10/06/DSC_2689.jpg
+.. image::  ../Picture/2013/10/06/DSC_2690.jpg
+.. image::  ../Picture/2013/10/06/DSC_2695.jpg
+.. image::  ../Picture/2013/10/06/DSC_2700.jpg
 .. image::  ../Picture/2013/10/06/dsc03149.jpg
 .. image::  ../Picture/2013/10/06/dsc03152.jpg
 .. image::  ../Picture/2013/10/06/dsc03154.jpg
 .. image::  ../Picture/2013/10/06/dsc03156.jpg
 .. image::  ../Picture/2013/10/06/dsc03157.jpg
-.. image::  ../Picture/2013/10/05/dsc03139.jpg
-.. image::  ../Picture/2013/10/05/DSC_2658.jpg
-.. image::  ../Picture/2013/10/05/DSC_2645.jpg
-.. image::  ../Picture/2013/10/05/dsc03123.jpg
-.. image::  ../Picture/2013/10/05/DSC_2657.jpg
-.. image::  ../Picture/2013/10/05/dsc03128.jpg
 .. image::  ../Picture/2013/10/06/dsc03158.jpg
-.. image::  ../Picture/2013/10/05/dsc03135.jpg
-.. image::  ../Picture/2013/10/05/dsc03105.jpg
-.. image::  ../Picture/2013/10/05/dsc03126.jpg
-.. image::  ../Picture/2013/10/05/dsc03125_1.jpg
-.. image::  ../Picture/2013/10/05/dsc03102.jpg
-.. image::  ../Picture/2013/10/05/dsc03121.jpg
-.. image::  ../Picture/2013/10/05/dsc03078.jpg
-.. image::  ../Picture/2013/10/06/DSC_2695.jpg
-.. image::  ../Picture/2013/10/05/dsc03092.jpg
-.. image::  ../Picture/2013/10/05/dsc03085.jpg
-.. image::  ../Picture/2013/10/06/DSC_2684.jpg
-.. image::  ../Picture/2013/10/05/dsc03063.jpg
-.. image::  ../Picture/2013/10/06/DSC_2700.jpg
 .. image::  ../Picture/2013/10/06/dsc03160.jpg
-.. image::  ../Picture/2013/10/06/DSC_2690.jpg
-.. image::  ../Picture/2013/10/06/DSC_2689.jpg
 .. image::  ../Picture/2013/10/06/dsc03161.jpg
-.. image::  ../Picture/2013/10/06/DSC_2683.jpg
-.. image::  ../Picture/2013/10/06/DSC_2676.jpg
-.. image::  ../Picture/2013/10/06/dsc03162.jpg
-.. image::  ../Picture/2013/10/06/DSC_2664.jpg
-.. image::  ../Picture/2013/10/06/DSC_2673.jpg
-.. image::  ../Picture/2013/10/06/DSC_2674.jpg
-.. image::  ../Picture/2013/10/06/DSC_2675.jpg
-.. image::  ../Picture/2013/10/06/DSC_2677.jpg
-.. image::  ../Picture/2013/10/06/DSC_2680.jpg
-.. image::  ../Picture/2013/10/05/dsc03100.jpg
-.. image::  ../Picture/2013/10/05/dsc03124.jpg
-
