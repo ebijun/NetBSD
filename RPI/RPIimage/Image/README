@@ -1,6 +1,6 @@
 VERSION: :1,$s/2014-09-20/2014-09-20/g
-ISO:     :1,$s/201408192000Z/201408192000Z/g
-PKGSRC:  :1,$s/2014-08-16/2014-08-16/
+ISO:     :1,$s/201409031940Z/201409031940Z/g
+PKGSRC:  :1,$s/2014-08-30/2014-08-30/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
 To: port-armNetBSD.org@localhost
@@ -12,8 +12,9 @@ I've updated 2014-09-20-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-09-20-earmhf/2014-09-20-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 7.99.1 evbarm-earmhf 201408192000Z from nyftp.
-- pkgsrc-current 2014-08-16 tarball from ftp.NetBSD.
+- NetBSD-current 7.99.1 evbarm-earmhf 201409031940Z from nyftp.
+- pkgsrc-current 2014-08-30 tarball from ftp.NetBSD.
+- Fix PR/49019: RPI: interrupt storm when url0 is up
 - net/mikutter : 3.0.5
   http://mail-index.netbsd.org/pkgsrc-changes/2014/08/24/msg110375.html
 - Pre-install mikutter display_requirements plugin
@@ -122,7 +123,7 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-08-16 tree inside.
+  - pkgsrc: 2014-08-30 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-09-20/
 
