@@ -33,4 +33,18 @@ sphinx
  # ln -s _build/html /var/www/html
  # /etc/rc.d/httpd onestart
 
+TeXLive
+""""""""""""""
 
+奥村先生のページを見てインストール。
+/usr/pkg/shareにリンク貼る。
+
+
+evince
+""""""""""
+
+::
+
+ # cd /usr/pkgsrc/*/evince3
+ # make package-install
+ # poppler-data
