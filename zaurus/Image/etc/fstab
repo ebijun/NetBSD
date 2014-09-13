@@ -1,8 +1,8 @@
 # NetBSD /etc/fstab
 # See /usr/share/examples/fstab/ for more examples.
-/dev/ld0a		/	ffs	rw,log		 1 1
-/dev/ld0b		none	swap	sw,dp		 0 0
-/dev/ld0e               /msdos  msdos   rw               
+/dev/sd0a		/	ffs	rw,log		 1 1
+/dev/sd0b		none	swap	sw,dp		 0 0
+/dev/sd0e               /msdos  msdos   rw               
 kernfs			/kern	kernfs	rw
 ptyfs			/dev/pts	ptyfs	rw
 procfs			/proc	procfs	rw
