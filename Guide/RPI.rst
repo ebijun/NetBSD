@@ -20,7 +20,7 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
  .. todo:: :1,$s/2014-09-20/2014-09-20/g
- .. todo:: :1,$s?2014/08/16?2014/08/16?g
+ .. todo:: :1,$s?2014/09/13?2014/09/13?g
  .. todo:: apache+php+mysql設定
  .. todo:: uim-pref-gtk
  .. todo:: webkit-gtk
@@ -202,7 +202,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- 2014/08/16時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
+ 2014/09/13時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
