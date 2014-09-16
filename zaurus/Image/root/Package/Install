@@ -1,5 +1,12 @@
-for i in `grep -v \# List`
+
+for i in `grep -hv \# List `
 do
 	echo $i
-echo	pkg_add ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2013-08-21-evbearmv6hf-el/packages/All/$i
+	#(cd /usr/pkgsrc/*/$i;make package-install)
+	#(cd /mnt/usr/pkgsrc/packages/All;pkg_add $i)
+	pkg_add $i
 done
+
+# install rootcerts for https 
+# /usr/pkgsrc/security/mozilla-rootcerts/MESSAGE
+mozilla-rootcerts install

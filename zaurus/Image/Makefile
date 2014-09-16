@@ -103,6 +103,9 @@ release:
 	mount /dev/${VND}a ${MNT}
 	tar cvpf - etc root  |(cd /mnt;tar xvpf -)
 	(cd /mnt/dev;./MAKEDEV all)
+	mkdir ${MNT}/msdos
+	mkdir ${MNT}/kern
+	mkdir ${MNT}/proc
 	umount ${MNT}
 	vnconfig -u ${VND}
 

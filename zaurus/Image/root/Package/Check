@@ -1,0 +1,6 @@
+
+for i in `grep -v \# List|awk -F- '{print $1}'`
+do
+	echo "# $i"
+	(cd /usr/pkgsrc/packages/All;ls *${i}-* )
+done

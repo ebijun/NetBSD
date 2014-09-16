@@ -1,0 +1,6 @@
+
+for i in `grep -hv \# List List.pkgonly`
+do
+	echo $i
+	(cd /usr/pkgsrc/*/$i;make package-install)
+done
