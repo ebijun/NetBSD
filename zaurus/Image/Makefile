@@ -8,7 +8,8 @@ FILE=`date +%Y-%m-%d`-netbsd6-zaurus.img
 IMAGE=/usr/release/images/NetBSD-6.1.4_PATCH-zaurus.iso #NetBSD6
 # ozaurus
 #IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus.iso
-PKGSRC=../../pkgsrc/pkgsrc-2014-09-06.tar.gz
+
+PKGSRC=../../pkgsrc/pkgsrc-2014-09-13.tar.gz
 
 SETS=/mnt1/zaurus/binary/sets
 INSTALLATION=/mnt1/zaurus/installation
