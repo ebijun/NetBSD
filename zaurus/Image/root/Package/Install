@@ -10,3 +10,6 @@ done
 # install rootcerts for https 
 # /usr/pkgsrc/security/mozilla-rootcerts/MESSAGE
 mozilla-rootcerts install
+
+dmesg > dmesg
+pkg_info > pkginfo

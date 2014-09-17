@@ -1,0 +1,70 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 6.1.4_PATCH (GENERIC)
+total memory = 65536 KB
+avail memory = 58224 KB
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0: PXA255/26x step A-0 (XScale core)
+cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
+cpu0: 32KB/32B 32-way Instruction cache
+cpu0: 32KB/32B 32-way write-back-locking Data cache
+pxaip0 at mainbus0: Onchip Peripheral Bus
+pxaip0: CPU clock = 398.100 MHz
+pxaip0: kernel is configured for PXA250 and PXA270, cpu type is PXA250
+pxaintc0 at pxaip0 addr 0x40d00000-0x40d0001f: Interrupt Controller
+pxagpio0 at pxaip0 addr 0x40e00000-0x40e0014f: GPIO Controller
+com0 at pxaip0 addr 0x40100000-0x4010001f intr 22: ns16550a, working fifo
+com1 at pxaip0 addr 0x40200000-0x4020001f intr 21: ns16550a, working fifo
+com2 at pxaip0 addr 0x40700000-0x4070001f intr 20: ns16550a, working fifo
+saost0 at pxaip0 addr 0x40a00000-0x40a0001f
+saost0: SA-11x0 OS Timer
+pxadmac0 at pxaip0 addr 0x40000000-0x400002ff intr 25: DMA Controller
+pxapcic0 at pxaip0: 1 slot
+pcmcia0 at pxapcic0
+pxartc0 at pxaip0 addr 0x40900000-0x4090000f: Real-time Clock
+pxamci0 at pxaip0 addr 0x41100000-0x41100047: MMC/SD Controller
+pxamci0: using DMA transfer
+sdmmc0 at pxamci0
+ziic0 at pxaip0 addr 0x40300000-0x403016a3: I2C controller
+iic0 at ziic0: I2C bus
+scoop0 at pxaip0: PCMCIA/GPIO controller
+zssp0 at pxaip0
+lcdctl0 at zssp0
+ztp0 at zssp0
+wsmouse0 at ztp0 mux 0
+w100lcd0 at pxaip0: ATI Imageon100 LCD controller
+w100lcd0: console
+wsdisplay0 at w100lcd0 kbdmux 1: console (std, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+zkbd0 at pxaip0
+wskbd0 at zkbd0: console keyboard, using wsdisplay0
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+clock: hz=100 stathz=64
+timecounter: Timecounter "saost_count" frequency 3686400 Hz quality 100
+wdc0 at pcmcia0 function 0: <, , >
+wdc0: i/o mapped mode
+atabus0 at wdc0 channel 0
+wd0 at atabus0 drive 0
+wd0: <SILICON POWER>
+wd0: drive supports 1-sector PIO transfers, LBA addressing
+wd0: 7647 MB, 15538 cyl, 16 head, 63 sec, 512 bytes/sect x 15662304 sectors
+wd0: drive supports PIO mode 4
+boot device: <unknown>
+root device: wd0
+dump device (default wd0b): 
+file system (default generic): 
+root on wd0a dumps on wd0b
+root file system type: ffs
+WARNING: clock lost 941 days
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+init path (default /sbin/init): 
+init: trying /sbin/init
+ld0 at sdmmc0: <SMI  >
+ld0: 30799 MB, 7821 cyl, 128 head, 63 sec, 512 bytes/sect x 63076352 sectors
+ld0: 1-bit width, bus clock 20.000 MHz
