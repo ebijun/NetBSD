@@ -1,36 +1,81 @@
-:1,$s/7.99.1/7.99.1/g
-:1,$s/2014-08-23/2014-08-23/g
-:1,$s/2014-08-16/2014-08-16/g
+:1,$s/hpcarm/hpcarm/g
+VERSION: :1,$s/2014-09-18/2014-09-18/g
+ISO:     :1,$s/201409111203/201409111203/g
+PKGSRC:  :1,$s/2014-09-13/2014-09-13/
+NetBSD:  :1,$s/6.1.4/6.1.4/g
 
-To: port-hpcarmNetBSD.org@localhost
-Subject: 2014-08-23-netbsd-hpcarm.img
+To: port-hpcarmnetbsd.org@localhost
+Subject: 2014-09-18-netbsd6-hpcarm.img 
+From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-08-23-netbsd-hpcarm.img.gz for hpcarm.
+I've updated 2014-09-18-netbsd6-hpcarm.img.gz for hpcarm.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-08-23-hpcarm/2014-08-23-netbsd-netbsd.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-09-18-netbsd6-hpcarm.img.gz
 
-Purpose:
-- NetBSD-current 7.99.1+pkgsrc-current 
+Feature:
+- NetBSD 6.1.4 hpcarm from ftp.netbsd
+- pkgsrc-current 2014-09-13 tarball from ftp.NetBSD.
+- dmesg:
+  https://github.com/ebijun/NetBSD/blob/master/hpcarm/Image/dmesg
 
-FIXED:
-  PR/49107: cant mount root file system.
+Pre-compiled packages:
+- Pre-compiled packages path setting: see /etc/pkg_install.conf 
+PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
+ To install application.
+ # pkg_add some_application_name
 
-BUGS:
+ If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
+ /etc/mk.conf.
 
 Todo:
-- send-pr for fix hpcarm port.
+- switch to earm
 
 =====================
 
-- NetBSD 7.99.1 base
+For OpenSourceConference 2014 Hiroshima NetBSD booth
+(https://www.facebook.com/events/285463901620247/)
+demonstration use, I've updated hpcarm image.
+
+- NetBSD 6.1.4 base
+- Copy image to Mini/MicroSD.
+- Set WZERO3.
+- boot hpcboot.exe
+-- select Machine
+-- select root partition
+  and comes as you are as you want to be.
 - login root (no passwd)
 - startx ,and icewm running.
+- running mikutter.
+
+  # startx
+  # mikutter &
 
 Features:
   - fit size for 2GB SD Card
   - with X11
-  - pkgsrc: 2014-08-16 tree inside.
+  - pkgsrc: 2014-09-13 tree inside.
+  - pre-build packages
+    http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
 
+Installed Packages:
+ https://github.com/ebijun/NetBSD/blob/master/hpcarm/Image/pkgsrc/pkginfo
+
+kterm
+tcsh
+vlgothic-ttf
+icewm
+xli
+mikutter
+medit
+uim
+fossil
+sudo
+git-base
+zsh
+dillo
+mlterm
+pkg_chk
+mozilla-rootcerts
 
 Keyboard layout checkpoint:
 /etc/wscons.conf
@@ -39,14 +84,26 @@ Keyboard layout checkpoint:
  encoding jp
 
 /root/.xinitrc
-  setxkbmap -model jp106 jp
-
+ setxkbmap -model jp106 jp
 
 Build sample script:
  https://github.com/ebijun/NetBSD/tree/master/hpcarm/Image
 
 Guide:
- https://github.com/ebijun/NetBSD/blob/master/Guide/hpcarm.rst
+ https://github.com/ebijun/NetBSD/blob/master/Guide/WZERO3.rst
+
+BUGS:
+ No thugs in our house.
+
+One more time: (we're gonna celebrate
+
+ 1. login root
+ 2. mlterm-fb 
+ 3. ftp http://mlterm.sf.net/vimperator.six
+ 4. cat vimperator.six
+ 5. exit 
+ 6. mlterm-fb --rotate=left
+ 7. cat vimperator.six
 
 --
 Jun Ebihara
