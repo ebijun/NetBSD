@@ -44,10 +44,10 @@
  :maxdepth: 3
  :numbered:
 
- Place/hiroshima
+ Place/tokyo
  Place/intro
  RPI
- X68K
+ Place/asiabsdcon
 
 * :ref:`genindex`
 * :ref:`modindex`
