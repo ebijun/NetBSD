@@ -1,19 +1,19 @@
-VERSION: :1,$s/2014-09-20/2014-09-20/g
+VERSION: :1,$s/2014-10-19/2014-10-19/g
 ISO:     :1,$s/201409140430Z/201409140430Z/g
-PKGSRC:  :1,$s/2014-09-13/2014-09-13/
+PKGSRC:  :1,$s/2014-09-20/2014-09-20/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-09-20-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-10-19-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-09-20-netbsd-raspi.img.gz for RPI.
+I've updated 2014-10-19-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-09-20-earmhf/2014-09-20-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-10-19-earmhf/2014-10-19-netbsd-raspi.img.gz
 
 Update:
 - NetBSD-current 7.99.1 evbarm-earmhf 201409140430Z from nyftp.
-- pkgsrc-current 2014-09-13 tarball from ftp.NetBSD.
+- pkgsrc-current 2014-09-20 tarball from ftp.NetBSD.
 - Fix PR/49019: RPI: interrupt storm when url0 is up
 - net/mikutter : 3.0.5
   http://mail-index.netbsd.org/pkgsrc-changes/2014/08/24/msg110375.html
@@ -23,11 +23,11 @@ Update:
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-09-20-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-10-19-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-09-20/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-10-19/
  To install application.
  # pkg_add some_application_name
 
@@ -84,8 +84,9 @@ Todo:
 
 =====================
 
-For OpenSourceConference 2014 Hiroshima NetBSD booth
-(https://www.facebook.com/events/285463901620247/)
+For OpenSourceConference 2014 Tokyo Fall NetBSD booth
+ https://www.facebook.com/events/291869977646993/
+ https://www.facebook.com/NetBSD.jp 
 demonstration use, I've updated raspberry-pi image.
 
 - NetBSD 7.99.1 earmhf rpi.img.gz base
@@ -124,9 +125,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-09-13 tree inside.
+  - pkgsrc: 2014-09-20 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-09-20/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-10-19/
 
 Installed Packages:
 kterm
