@@ -1,15 +1,16 @@
 # Makefile for NetBSD/zaurus image.
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd6-zaurus.img
+FILE=`date +%Y-%m-%d`-netbsd-zaurus.img
+#FILE=`date +%Y-%m-%d`-netbsd6-zaurus.img
 
 # iso file information
-#IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus-201409101620Z.iso
-IMAGE=/usr/release/images/NetBSD-6.1.4_PATCH-zaurus.iso #NetBSD6
+IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus-201409160130Z.iso
+#IMAGE=/usr/release/images/NetBSD-6.1.4_PATCH-zaurus.iso #NetBSD6
 # ozaurus
 #IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2014-09-13.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2014-09-20.tar.gz
 
 SETS=/mnt1/zaurus/binary/sets
 INSTALLATION=/mnt1/zaurus/installation

@@ -1,11 +1,12 @@
 # Makefile for NetBSD/hpcarm image.
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd6-hpcarm.img
+FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-6.1.4-hpcarm.iso
-PKGSRC=../../pkgsrc/pkgsrc-2014-09-13.tar.gz
+#IMAGE=/usr/release/images/NetBSD-6.1.4-hpcarm.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-hpcarm-201409160130Z.iso
+PKGSRC=../../pkgsrc/pkgsrc-2014-09-20.tar.gz
 
 SETS=/mnt1/hpcarm/binary/sets
 INSTALLATION=/mnt1/hpcarm/installation
@@ -68,6 +69,7 @@ bootarea:
 	cp ${INSTALLATION}/hpcboot.exe ${MNT}
 	cp ${KERNEL}/netbsd-WZERO3.gz ${MNT}
 	cp ${KERNEL}/netbsd-JORNADA720.gz ${MNT}
+	cp msdos/hpcboot.cnf ${MNT}
 	
 	umount ${MNT}
 	vnconfig -u ${VND}
