@@ -58,6 +58,9 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
+	mkdir ${MNT}/msdos
+	mkdir ${MNT}/kern
+	mkdir ${MNT}/proc
 	umount ${MNT}
 	vnconfig -u ${VND}
 
