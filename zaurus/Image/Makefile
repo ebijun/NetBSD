@@ -76,10 +76,14 @@ bootarea:
 	mount /dev/${VND}e ${MNT}
 	
 	cp ${KERNEL}/${GENERIC} ${MNT}
-	gunzip < ${MNT}/${GENERIC} > ${MNT}/netbsd
+	# kernel by myself
+	cp netbsd ${MNT}/netbsd
+	#gunzip < ${MNT}/${GENERIC} > ${MNT}/netbsd
 	cp ${KERNEL}/${C700} ${MNT}
 	cp ${INSTALLATION}/zboot ${MNT}
-	cp ${INSTALLATION}/zbsdmod.o ${MNT}
+	# cant work earm zbsdmod.o
+	#cp ${INSTALLATION}/zbsdmod.o ${MNT}
+	cp zbsdmod.o ${MNT}
 	echo "insmod -f ./zbsdmod.o" >  ${MNT}/Boot
 	echo "./zboot"               >> ${MNT}/Boot
 	chmod +x ${MNT}/Boot
