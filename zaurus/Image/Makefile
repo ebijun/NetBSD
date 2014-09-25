@@ -5,7 +5,7 @@ FILE=`date +%Y-%m-%d`-netbsd-zaurus.img
 #FILE=`date +%Y-%m-%d`-netbsd6-zaurus.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus-201409160130Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus-201409221820Z.iso
 #IMAGE=/usr/release/images/NetBSD-6.1.4_PATCH-zaurus.iso #NetBSD6
 # ozaurus
 #IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus.iso
