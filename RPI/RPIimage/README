@@ -14,12 +14,10 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-10-19-earmhf/2014-10-
 Update:
 - NetBSD-current 7.99.1 evbarm-earmhf 201409140430Z from nyftp.
 - pkgsrc-current 2014-09-20 tarball from ftp.NetBSD.
-- Fix PR/49019: RPI: interrupt storm when url0 is up
-- net/mikutter : 3.0.5
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/08/24/msg110375.html
-- Pre-install mikutter display_requirements plugin
-  http://mikutter.blogspot.jp/2012/12/display-requirements.html
-  https://github.com/toshia/display_requirements
+- bash update: XXX drop bash?
+- add hardware cursor support (by macallan@)
+- net/mikutter : 3.0.6
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/09/21/msg111607.html
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
@@ -53,8 +51,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.2.2-netbsd6-evbarm-earmhf.tgz for evaluation.
-  3. pkg_add musica-0.2.2-netbsd6-evbarm-earmhf.tgz
+  2. Download musica-0.2.3-netbsd6-evbarm-earmhf.tgz for evaluation.
+  3. pkg_add musica-0.2.3-netbsd6-evbarm-earmhf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -165,12 +163,6 @@ Keyboard layout checkpoint:
 
 /root/.mikutter/plugin/ : http://yuzuki.hachune.net/wiki/Plugin
 - display_requirements.rb [Pre installed]
-  If you love Developer Display Requirements,
-  Delete this plugin, and shout "NOBODY expects the Spanish Inquisition!".
-
-- mikutter_show_mcdonalds_coupon.rb
-  If you love mcdonalds, use mcdonalds coupon via mikutter.
-  https://gist.github.com/penguin2716/5174946
 
 Build sample script:
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image
