@@ -5,8 +5,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201409160130Z.iso
-PKGSRC=pkgsrc-2014-09-20.tar.gz
+IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201410052220Z.iso
+PKGSRC=pkgsrc-2014-10-04.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
