@@ -1,6 +1,6 @@
 VERSION: :1,$s/2014-10-19/2014-10-19/g
-ISO:     :1,$s/201409140430Z/201409140430Z/g
-PKGSRC:  :1,$s/2014-09-20/2014-09-20/
+ISO:     :1,$s/201410092010Z/201410092010Z/g
+PKGSRC:  :1,$s/2014-10-04/2014-10-04/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
 To: port-armNetBSD.org@localhost
@@ -12,10 +12,13 @@ I've updated 2014-10-19-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-10-19-earmhf/2014-10-19-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 7.99.1 evbarm-earmhf 201409140430Z from nyftp.
-- pkgsrc-current 2014-09-20 tarball from ftp.NetBSD.
-- bash update: XXX drop bash?
-- add hardware cursor support (by macallan@)
+- NetBSD-current 7.99.1 evbarm-earmhf 201410092010Z from nyftp.
+- pkgsrc-current 2014-10-04 tarball from ftp.NetBSD.
+?- bash update: XXX drop bash?
+?- RPI_HWCURSOR (default off)
+?- audio playback improvements (by skrll@)
+?- board/firmware revisions visible via sysctl (by mlelstv@)
+?- NFS root FS support in RPI 
 - net/mikutter : 3.0.6
   http://mail-index.netbsd.org/pkgsrc-changes/2014/09/21/msg111607.html
 
@@ -51,8 +54,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.2.3-netbsd6-evbarm-earmhf.tgz for evaluation.
-  3. pkg_add musica-0.2.3-netbsd6-evbarm-earmhf.tgz
+  2. Download musica-0.3.4-netbsd6-evbarm-earmhf.tgz for evaluation.
+  3. pkg_add musica-0.3.4-netbsd6-evbarm-earmhf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -123,7 +126,7 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-09-20 tree inside.
+  - pkgsrc: 2014-10-04 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-10-19/
 
