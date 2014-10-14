@@ -1,6 +1,6 @@
 VERSION: :1,$s/2014-10-19/2014-10-19/g
-ISO:     :1,$s/201410092010Z/201410092010Z/g
-PKGSRC:  :1,$s/2014-10-04/2014-10-04/
+ISO:     :1,$s/201410130720Z/201410130720Z/g
+PKGSRC:  :1,$s/2014-10-11/2014-10-11/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
 To: port-armNetBSD.org@localhost
@@ -12,8 +12,9 @@ I've updated 2014-10-19-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-10-19-earmhf/2014-10-19-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 7.99.1 evbarm-earmhf 201410092010Z from nyftp.
-- pkgsrc-current 2014-10-04 tarball from ftp.NetBSD.
+- NetBSD-current 7.99.1 evbarm-earmhf 201410130720Z from nyftp.
+- pkgsrc-current 2014-10-11 tarball from ftp.NetBSD.
+- cd /usr/X11R7/lib;ln -s libxcb.so.2 libxcb.so.1
 ?- bash update: XXX drop bash?
 ?- RPI_HWCURSOR (default off)
 ?- audio playback improvements (by skrll@)
@@ -21,6 +22,9 @@ Update:
 ?- NFS root FS support in RPI 
 - net/mikutter : 3.0.6
   http://mail-index.netbsd.org/pkgsrc-changes/2014/09/21/msg111607.html
+
+FIXED:
+- medit dumping core when write text.
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
@@ -126,7 +130,7 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-10-04 tree inside.
+  - pkgsrc: 2014-10-11 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-10-19/
 
@@ -181,13 +185,12 @@ BUGS:
 2. port-arm/48805
   Audio Driver issues on Pi running NetBSD (2014-05-10) image 
   - hangs audio applications like audioplay
-3. medit dumping core when write text.
-4. port-arm/48855
+3. port-arm/48855
   i2cscan on RPi NetBSD build finds device for all addresses
-5. i2c problem reported from "its sead".
+4. i2c problem reported from "its sead".
   /usr/sbin/i2scan on iic0 or iic1 often crashes the device (also with the -r 
   (use writes) option)
-6. cap_mkdb failed, on update terminfo db.
+5. cap_mkdb failed, on update terminfo db.
   https://twitter.com/uobikiemukot/status/487977340949893121
 
 One more time: (we're gonna celebrate

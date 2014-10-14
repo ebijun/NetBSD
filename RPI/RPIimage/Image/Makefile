@@ -5,8 +5,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201410092010Z.iso
-PKGSRC=pkgsrc-2014-10-04.tar.gz
+IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201410130720Z.iso
+PKGSRC=pkgsrc-2014-10-11.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -102,7 +102,10 @@ logclean:
 	rm -f ${MNT}/var/run/dmesg.boot
 	rm -f ${MNT}/var/log/lastlogx 
 #	rm -f ${MNT}/var/log/maillog 
+	rm -f ${MNT}/var/log/maillog.0.gz 
 	rm -f ${MNT}/var/log/wtmpx
+	rm -f ${MNT}/var/log/wtmpx.0.gz
+	rm -f ${MNT}/var/log/wtmp.0.gz
 	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease
 	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease6
 	rm -f ${MNT}/root/dmesg
