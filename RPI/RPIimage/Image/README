@@ -1,5 +1,5 @@
 VERSION: :1,$s/2014-10-19/2014-10-19/g
-ISO:     :1,$s/201410130720Z/201410130720Z/g
+ISO:     :1,$s/201410142150Z/201410142150Z/g
 PKGSRC:  :1,$s/2014-10-11/2014-10-11/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
@@ -12,8 +12,9 @@ I've updated 2014-10-19-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-10-19-earmhf/2014-10-19-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 7.99.1 evbarm-earmhf 201410130720Z from nyftp.
+- NetBSD-current 7.99.1 evbarm-earmhf 201410142150Z from nyftp.
 - pkgsrc-current 2014-10-11 tarball from ftp.NetBSD.
+- gcc updated to latest 4.8 branch snapshot (by mrg@)
 - cd /usr/X11R7/lib;ln -s libxcb.so.2 libxcb.so.1
 ?- bash update: XXX drop bash?
 ?- RPI_HWCURSOR (default off)
@@ -80,6 +81,8 @@ Todo:
 - ruby version: 200 -> 21?
 - Need GPIO & bus controll document and implimentation (via lua?)
 - comment out kernel DEBUG/DIAGNOSTIC option
+- https://github.com/isaki68k/sayaka
+- http://www.netbsd.org/~joerg/nodejs.tar.gz
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft

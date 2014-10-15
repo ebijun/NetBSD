@@ -5,7 +5,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201410130720Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201410142150Z.iso
 PKGSRC=pkgsrc-2014-10-11.tar.gz
 
 # extract sets.
@@ -29,7 +29,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file cdmount rpi extract cdunmount
+all: file cdmount rpi extract cdunmount libxcb
 
 # extract sets to image file.
 extract:
@@ -70,7 +70,7 @@ file:
 	sleep 3
 
 # stop sshd for package install
-pkg-setup:
+pkg:
 	vnconfig ${VND} ${FILE}
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
@@ -154,3 +154,13 @@ fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch
+
+libxcb:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	cp libxcb.so.1.1 ${MNT}/usr/X11R7/lib
+	cp libxcb.so.1   ${MNT}/usr/X11R7/lib
+	umount ${MNT}
+	vnconfig -u ${VND}
+
