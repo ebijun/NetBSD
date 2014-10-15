@@ -5,12 +5,12 @@ FILE=`date +%Y-%m-%d`-netbsd-zaurus.img
 #FILE=`date +%Y-%m-%d`-netbsd6-zaurus.img
 
 # iso file information
-#IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus-201409221820Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus-201410142150Z.iso
 #IMAGE=/usr/release/images/NetBSD-6.1.4_PATCH-zaurus.iso #NetBSD6
 # ozaurus
-IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus.iso
+#IMAGE=/usr/release/images/NetBSD-7.99.1-zaurus.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2014-09-20.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2014-10-11.tar.gz
 
 SETS=/mnt1/zaurus/binary/sets
 INSTALLATION=/mnt1/zaurus/installation
@@ -76,14 +76,12 @@ bootarea:
 	mount /dev/${VND}e ${MNT}
 	
 	cp ${KERNEL}/${GENERIC} ${MNT}
-	# kernel by myself
-	#cp netbsd ${MNT}/netbsd
 	gunzip < ${MNT}/${GENERIC} > ${MNT}/netbsd
 	cp ${KERNEL}/${C700} ${MNT}
 	cp ${INSTALLATION}/zboot ${MNT}
-	# cant work earm zbsdmod.o
-	#cp ${INSTALLATION}/zbsdmod.o ${MNT}
-	cp zbsdmod.o ${MNT}
+	# If cant work earm zbsdmod.o
+	# cp zbsdmod.o ${MNT}
+	cp ${INSTALLATION}/zbsdmod.o ${MNT}
 	echo "insmod -f ./zbsdmod.o" >  ${MNT}/Boot
 	echo "./zboot"               >> ${MNT}/Boot
 	chmod +x ${MNT}/Boot
