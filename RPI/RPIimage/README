@@ -15,7 +15,7 @@ Update:
 - NetBSD-current 7.99.1 evbarm-earmhf 201410142150Z from nyftp.
 - pkgsrc-current 2014-10-11 tarball from ftp.NetBSD.
 - gcc updated to latest 4.8 branch snapshot (by mrg@)
-- cd /usr/X11R7/lib;ln -s libxcb.so.2 libxcb.so.1 (backward compat)
+- Restore /usr/X11R7/lib/libxcb.so.1 (backward compat,for a while)
 - bash update: bash-4.3.030
 - board/firmware revisions visible via sysctl (by mlelstv@)
   machdep.firmware_revision = 1406149949
