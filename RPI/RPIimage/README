@@ -15,17 +15,16 @@ Update:
 - NetBSD-current 7.99.1 evbarm-earmhf 201410142150Z from nyftp.
 - pkgsrc-current 2014-10-11 tarball from ftp.NetBSD.
 - gcc updated to latest 4.8 branch snapshot (by mrg@)
-- cd /usr/X11R7/lib;ln -s libxcb.so.2 libxcb.so.1
-?- bash update: XXX drop bash?
-?- RPI_HWCURSOR (default off)
-?- audio playback improvements (by skrll@)
-?- board/firmware revisions visible via sysctl (by mlelstv@)
-?- NFS root FS support in RPI 
+- cd /usr/X11R7/lib;ln -s libxcb.so.2 libxcb.so.1 (backward compat)
+- bash update: bash-4.3.030
+- board/firmware revisions visible via sysctl (by mlelstv@)
+  machdep.firmware_revision = 1406149949
+  machdep.board_model = 0
+  machdep.board_revision = 13
+- NFS root FS support in RPI 
 - net/mikutter : 3.0.6
   http://mail-index.netbsd.org/pkgsrc-changes/2014/09/21/msg111607.html
-
-FIXED:
-- medit dumping core when write text.
+- lynx testing ,thanx Zoran Kolic.
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
@@ -59,8 +58,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.4-netbsd6-evbarm-earmhf.tgz for evaluation.
-  3. pkg_add musica-0.3.4-netbsd6-evbarm-earmhf.tgz
+  2. Download musica-0.3.6-netbsd6-evbarm-earmhf.tgz for evaluation.
+  3. pkg_add musica-0.3.6-netbsd6-evbarm-earmhf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -76,6 +75,8 @@ KOBO: kernel: (Thanx h_kenken@)
     go 0x70800000
 
 Todo:
+- medit dumping core when write text. (uim?
+- sound check and more.
 - Summarize /usr/tests result on each version.
 - test COPTS:-fno-reorder-blocks/-fno-tree-vrp/-fno-tree-pre optimization.
 - ruby version: 200 -> 21?
@@ -106,6 +107,7 @@ demonstration use, I've updated raspberry-pi image.
   http://movapic.com/ebijun/pic/5168479
 
   # startx
+  # dillo &
   # mikutter &
   or
   # LANG=en_US.UTF-8 mikutter &
@@ -118,7 +120,7 @@ Appear mikutter window. and mikutter-chan tell you,
 "Well done on the installation!" [Next]
 "Hi! This is mikutter-chan speaking to you,join the twitter with me!" [Next]
  1. "Click the link https:......" click the URL, 
-    and start dillo browser automaticaly. 
+    copy URL into dillo.
  2. "login with the Twitter account you wish to use."
  3. "Go along until you see a 7-digit code and type it in at the top."
   -> get pin number.
@@ -139,6 +141,7 @@ Features:
 
 Installed Packages:
 kterm
+bash
 tcsh
 vlgothic-ttf
 icewm
@@ -181,19 +184,15 @@ Guide:
  https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
 
 BUGS:
-1. dillo crashes at startup
-  http://lists.dillo.org/pipermail/dillo-dev/2014-May/010161.html
-  This image contains dillo with patch by Michael van Elst.
-  http://mail-index.netbsd.org/port-arm/2014/04/22/msg002386.html
-2. port-arm/48805
+1. port-arm/48805
   Audio Driver issues on Pi running NetBSD (2014-05-10) image 
   - hangs audio applications like audioplay
-3. port-arm/48855
+2. port-arm/48855
   i2cscan on RPi NetBSD build finds device for all addresses
-4. i2c problem reported from "its sead".
+3. i2c problem reported from "its sead".
   /usr/sbin/i2scan on iic0 or iic1 often crashes the device (also with the -r 
   (use writes) option)
-5. cap_mkdb failed, on update terminfo db.
+4. cap_mkdb failed, on update terminfo db.
   https://twitter.com/uobikiemukot/status/487977340949893121
 
 One more time: (we're gonna celebrate
