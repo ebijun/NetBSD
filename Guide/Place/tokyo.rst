@@ -110,136 +110,56 @@ OSC東京主な展示物
  2005/3/25-26,OSC2005,hpcmips/sh/arm
  2004/9/4,OSC2004,hpcmips/sh/arm
 
-2014春
-^^^^^^
 
 .. image:: /Picture/2014/02/28/dsc04138.jpg
-.. image:: /Picture/2014/02/28/dsc04141_1.jpg
-.. image:: /Picture/2014/02/28/DSC_3124.jpg
 .. image:: /Picture/2014/02/28/DSC_3125.jpg
-.. image:: /Picture/2014/02/28/DSC_3131.jpg
-.. image:: /Picture/2014/03/01/DSC_3151.jpg
 .. image:: /Picture/2014/03/01/DSC_3148.jpg
-.. image:: /Picture/2014/03/01/DSC_3160.jpg
 .. image:: /Picture/2014/03/01/DSC_3157.jpg
-.. image:: /Picture/2014/03/01/DSC_3144.jpg
-.. image:: /Picture/2014/03/01/DSC_3150.jpg
-.. image:: /Picture/2014/03/01/dsc04155.jpg
 .. image:: /Picture/2014/03/01/dsc04143.jpg
 .. image:: /Picture/2014/02/28/DSC_3139.jpg
-.. image:: /Picture/2014/03/01/dsc04147.jpg
 .. image:: /Picture/2014/02/28/DSC_3141.jpg
 .. image:: /Picture/2014/02/28/DSC_3142.jpg
-.. image:: /Picture/2014/02/28/DSC_3143.jpg
-
-
-2013秋
-^^^^^^
-
-.. image:: /Picture/2013/10/19/DSC_2749.jpg
-.. image:: /Picture/2013/10/19/DSC_2750.jpg
 .. image:: /Picture/2013/10/19/DSC_2752.jpg
 .. image:: /Picture/2013/10/19/DSC_2754.jpg
-.. image:: /Picture/2013/10/19/DSC_2755.jpg
 .. image:: /Picture/2013/10/19/DSC_2756.jpg
-.. image:: /Picture/2013/10/19/DSC_2758.jpg
-.. image:: /Picture/2013/10/19/DSC_2759.jpg
-.. image:: /Picture/2013/10/19/DSC_2760.jpg
-.. image:: /Picture/2013/10/19/DSC_2762.jpg
-.. image:: /Picture/2013/10/19/DSC_2763.jpg
-.. image:: /Picture/2013/10/19/DSC_2764.jpg
-.. image:: /Picture/2013/10/19/DSC_2765.jpg
-.. image:: /Picture/2013/10/19/DSC_2766.jpg
 .. image:: /Picture/2013/10/19/DSC_2767.jpg
 .. image:: /Picture/2013/10/19/DSC_2768.jpg
 .. image:: /Picture/2013/10/19/DSC_2771.jpg
-.. image:: /Picture/2013/10/19/DSC_2773.jpg
-.. image:: /Picture/2013/10/19/DSC_2774.jpg
 .. image:: /Picture/2013/10/19/DSC_2775.jpg
-.. image:: /Picture/2013/10/19/DSC_2776.jpg
-.. image:: /Picture/2013/10/19/DSC_2778.jpg
-.. image:: /Picture/2013/10/19/DSC_2779.jpg
-.. image:: /Picture/2013/10/19/DSC_2780.jpg
-.. image:: /Picture/2013/10/19/DSC_2781.jpg
 .. image:: /Picture/2013/10/19/DSC_2783.jpg
 .. image:: /Picture/2013/10/19/DSC_2784.jpg
-.. image:: /Picture/2013/10/19/DSC_2785.jpg
-.. image:: /Picture/2013/10/19/DSC_2786.jpg
-.. image:: /Picture/2013/10/19/DSC_2791.jpg
 .. image:: /Picture/2013/10/19/dsc03477.jpg
 .. image:: /Picture/2013/10/19/dsc03478.jpg
-.. image:: /Picture/2013/10/20/DSC_2793.jpg
-.. image:: /Picture/2013/10/20/DSC_2795.jpg
-.. image:: /Picture/2013/10/20/DSC_2796.jpg
 .. image:: /Picture/2013/10/20/DSC_2799.jpg
-.. image:: /Picture/2013/10/20/DSC_2801.jpg
 .. image:: /Picture/2013/10/20/DSC_2802.jpg
 .. image:: /Picture/2013/10/20/DSC_2803.jpg
 .. image:: /Picture/2013/10/20/DSC_2804.jpg
-.. image:: /Picture/2013/10/20/DSC_2806.jpg
 .. image:: /Picture/2013/10/20/dsc03486.jpg
-.. image:: /Picture/2013/10/20/dsc03487.jpg
-
-2013春
-^^^^^^
-
 .. image:: /Picture/2013/02/22/DSC_1661.jpg
-.. image:: /Picture/2013/02/22/DSC_1662.jpg
 .. image:: /Picture/2013/02/22/DSC_1671.jpg
 .. image:: /Picture/2013/02/22/DSC_1672.jpg
 .. image:: /Picture/2013/02/22/DSC_1674.jpg
-
-
-2012秋
-^^^^^^
-
-.. image:: /Picture/2012/09/08/DSC_0820.JPG
 .. image:: /Picture/2012/09/08/DSC_0826.JPG
 .. image:: /Picture/2012/09/08/DSC_0828.JPG
-.. image:: /Picture/2012/09/07/DSC_0791.JPG
 .. image:: /Picture/2012/09/07/DSC_0792.JPG
-.. image:: /Picture/2012/09/07/DSC_0796.JPG
 .. image:: /Picture/2012/09/07/DSC_0797.JPG
 .. image:: /Picture/2012/09/07/DSC_0800.JPG
 .. image:: /Picture/2012/09/07/DSC_0801.JPG
 .. image:: /Picture/2012/09/07/DSC_0803.JPG
 .. image:: /Picture/2012/09/07/DSC_0806.JPG
-.. image:: /Picture/2012/09/07/DSC_0817.JPG
-.. image:: /Picture/2012/09/07/DSC_0818.JPG
-
-2012春
-^^^^^^
-
 .. image:: /Picture/2012/03/17/DSC_0005.JPG
 .. image:: /Picture/2012/03/17/DSC_0010.JPG
 .. image:: /Picture/2012/03/17/DSC_0013.JPG
 .. image:: /Picture/2012/03/17/DSC_0016.JPG
 .. image:: /Picture/2012/03/17/DSC_0018.JPG
 .. image:: /Picture/2012/03/17/DSC_0022.JPG
-
-2011秋
-^^^^^^
-
 .. image:: /Picture/2011/11/20/P1001286.JPG
 .. image:: /Picture/2011/11/20/P1001288.JPG
 .. image:: /Picture/2011/11/20/P1001289.JPG
 .. image:: /Picture/2011/11/20/P1001291.JPG
-.. image:: /Picture/2011/11/20/P1001292.JPG
 .. image:: /Picture/2011/11/20/P1001293.JPG
 .. image:: /Picture/2011/11/20/P1001296.JPG
-.. image:: /Picture/2011/11/19/P1001270.JPG
-.. image:: /Picture/2011/11/19/P1001272.JPG
 .. image:: /Picture/2011/11/19/P1001275.JPG
-.. image:: /Picture/2011/11/19/P1001276.JPG
 .. image:: /Picture/2011/11/19/P1001279.JPG
-.. image:: /Picture/2011/11/19/P1001280.JPG
-
-2011春
-^^^^^^^
-
 .. image:: /Picture/2011/03/04/P1000301.JPG
-
-2007秋
-^^^^^^^^^
-
 .. image:: /Picture/2007/10/06/20071603.JPG
