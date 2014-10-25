@@ -1,38 +1,30 @@
-VERSION: :1,$s/2014-10-19/2014-10-19/g
+VERSION: :1,$s/2014-11-08/2014-11-08/g
 ISO:     :1,$s/201410142150Z/201410142150Z/g
 PKGSRC:  :1,$s/2014-10-11/2014-10-11/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-10-19-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-11-08-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-10-19-netbsd-raspi.img.gz for RPI.
+I've updated 2014-11-08-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-10-19-earmhf/2014-10-19-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-11-08-earmhf/2014-11-08-netbsd-raspi.img.gz
 
 Update:
 - NetBSD-current 7.99.1 evbarm-earmhf 201410142150Z from nyftp.
 - pkgsrc-current 2014-10-11 tarball from ftp.NetBSD.
-- gcc updated to latest 4.8 branch snapshot (by mrg@)
 - Restore /usr/X11R7/lib/libxcb.so.1 (backward compat,for a while)
-- bash update: bash-4.3.030
-- board/firmware revisions visible via sysctl (by mlelstv@)
-  machdep.firmware_revision = 1406149949
-  machdep.board_model = 0
-  machdep.board_revision = 13
-- NFS root FS support in RPI 
 - net/mikutter : 3.0.6
   http://mail-index.netbsd.org/pkgsrc-changes/2014/09/21/msg111607.html
-- lynx testing ,thanx Zoran Kolic.
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-10-19-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-11-08-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-10-19/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-08/
  To install application.
  # pkg_add some_application_name
 
@@ -93,12 +85,12 @@ Todo:
 
 =====================
 
-For OpenSourceConference 2014 Tokyo Fall NetBSD booth
+For KANSAI OPEN FORUM 2014 NetBSD booth
  demonstration use, I've updated raspberry-pi image.
 
- https://www.facebook.com/events/291869977646993/
+ https://www.facebook.com/events/240804052750197/
  https://www.facebook.com/NetBSD.jp 
- https://www.soum.co.jp/~jun/OSC2014tokyofall.pdf
+ https://www.soum.co.jp/~jun/kof2014.pdf
 
 - NetBSD 7.99.1 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
@@ -139,7 +131,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2014-10-11 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-10-19/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-08/
 
 Installed Packages:
 kterm
