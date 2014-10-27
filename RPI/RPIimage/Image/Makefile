@@ -1,12 +1,13 @@
 # Makefile for RPI image.
 
 # set image file name
-#FILE=`date +%Y-%m-%d`-netbsd-earm-raspi.img
-FILE=`date +%Y-%m-%d`-netbsd-raspi.img
+FILE=`date +%Y-%m-%d`-netbsd-earm-raspi.img
+#FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201410142150Z.iso
-PKGSRC=pkgsrc-2014-10-11.tar.gz
+#IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201410142150Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earm-201410261400Z.iso
+PKGSRC=pkgsrc-2014-10-25.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
