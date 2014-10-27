@@ -44,6 +44,14 @@
  :maxdepth: 3
  :numbered:
 
+ events.rst
+ allevents.rst
+ Place/intro.rst
+ Place/2013.rst
+ Place/JNUGBOF.rst
+ books.rst
+
+.. KOF
  Place/osaka
  Place/intro
  RPI
