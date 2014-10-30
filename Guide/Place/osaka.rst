@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,6 +35,8 @@ KOFまとめ
 .. csv-table::
  :widths: 70 70
 
+ 関西オープンソース2014 NetBSDブース展示の記録,
+ 関西オープンソース2013 NetBSDブース展示の記録,http://togetter.com/li/587422
  関西オープンソース2012 NetBSDブース展示の記録,http://togetter.com/li/404573
  関西オープンソース2011 NetBSDブース展示の記録,http://togetter.com/li/213724
 
@@ -75,6 +77,7 @@ KOF主な発表
 .. csv-table::
  :widths: 15 15 60
 
+ NetBSDブートローダー解説とluna68kでの実装,KOF2013,http://www.ceres.dti.ne.jp/tsutsui/kof2013/NetBSD_bootloader.html
  なぜ謎マシン,KOF2011,http://www.ceres.dti.ne.jp/tsutsui/kof2011/Why-enigmatic-machines.html
  曽田さん受賞記念,KOF2010,
  EuroBSDCon2009,KOF2009,msaitohさんの参加報告
@@ -86,6 +89,7 @@ KOF主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2013/11/8-9,南港ATC,Lunaブートローダ RPI WZero3 Zaurus XM6i
  2012/11/9-10,南港ATC,WZero3 Zaurus XM6i
  2011/11/11-12,南港ATC,LunaII DreamCast+釣りコン HP9000/700 WZero3 hpcmips
  2010/11/5-6,南港ATC,NEC Express5800(arc+amd64) NWS5000 ML115 SunUltra10
