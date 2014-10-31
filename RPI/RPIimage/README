@@ -14,9 +14,8 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-11-08-earmhf/2014-11-
 Update:
 - NetBSD-current 7.99.1 evbarm-earmhf 201410142150Z from nyftp.
 - pkgsrc-current 2014-10-11 tarball from ftp.NetBSD.
+- ftp Version 20141026, Fixes CVE-2014-8517 by lukem.
 - Restore /usr/X11R7/lib/libxcb.so.1 (backward compat,for a while)
-- net/mikutter : 3.0.6
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/09/21/msg111607.html
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
