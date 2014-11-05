@@ -1,0 +1,640 @@
+Script started on Wed Nov  5 23:50:58 2014
+rpi# mikutter --debug
+notice: {MIKUTTER_DIR}/core/configloader.rb:41:in `boot': load setting data from /root/.mikutter/settings/setting.yml
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/gui/gui.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/gui/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/plugin/gui/tab.rb:35:in `initialize': tab initialize home_timeline [:default, :default, [:home_timeline, :mentions, :activity, :directmessage, :search]] 0
+notice: {MIKUTTER_DIR}/core/plugin/gui/tab.rb:35:in `initialize': tab initialize mentions [:default, :default, [:home_timeline, :mentions, :activity, :directmessage, :search]] 1
+notice: {MIKUTTER_DIR}/core/plugin/gui/tab.rb:35:in `initialize': tab initialize activity [:default, :default, [:home_timeline, :mentions, :activity, :directmessage, :search]] 2
+notice: {MIKUTTER_DIR}/core/plugin/gui/tab.rb:35:in `initialize': tab initialize directmessage [:default, :default, [:home_timeline, :mentions, :activity, :directmessage, :search]] 3
+notice: {MIKUTTER_DIR}/core/plugin/gui/tab.rb:35:in `initialize': tab initialize search [:default, :default, [:home_timeline, :mentions, :activity, :directmessage, :search]] 4
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/gtk/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/mui/gtk_extension.rb:6:in `<top (required)>': require-if-exist: file not found: Win32API
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/settings/settings.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/settings/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/activity/activity.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/activity/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/achievement/achievement.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/achievement/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/sound/sound.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/sound/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/alsa/alsa.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/api_request_file_cache.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/bitly/bitly.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/bugreport/bugreport.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/bugreport/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/change_account/change_account.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/change_account/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/command/command.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/command/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/console/console.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/console/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/core.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/direct_message/direct_message.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/direct_message/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/extract/extract.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/extract/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/profile/profile.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/profile/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/followingcontrol/followingcontrol.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/home_timeline/home_timeline.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/home_timeline/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/image_file_cache/image_file_cache.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/libnotify/libnotify.rb
+notice: {MIKUTTER_DIR}/core/plugin/libnotify/libnotify.rb:4:in `<top (required)>': require-if-exist: file not found: RNotify
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/list/list.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/mentions/mentions.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/mentions/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/notify/notify.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/notify/po to /root/.mikutter/cache/uitranslator/locale
+/usr/pkg/share/mikutter/core/plugin/notify/notify.rb:6: warning: already initialized constant DEFINED_TIME
+/usr/pkg/share/mikutter/core/plugin/extract/extract.rb:8: warning: previous definition of DEFINED_TIME was here
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/openimg/openimg.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/openimg/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/proxy/proxy.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/proxy/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/ratelimit/ratelimit.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/ratelimit/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/rest/rest.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/saved_search/saved_search.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/saved_search/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/search/search.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/search/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/set_input/set_input.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/set_input/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/set_view/set_view.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/set_view/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/shortcutkey/shortcutkey.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/shortcutkey/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/smartthread/smartthread.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/smartthread/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/streaming/streaming.rb
+notice: {MIKUTTER_DIR}/core/plugin/uitranslator/uitranslator.rb:27:in `spec=': generate mo file: {MIKUTTER_DIR}/core/plugin/streaming/po to /root/.mikutter/cache/uitranslator/locale
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: {MIKUTTER_DIR}/core/plugin/tco/tco.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: /root/.mikutter/plugin/aspectframe/aspectframe.rb
+notice: {MIKUTTER_DIR}/core/miquire_plugin.rb:135:in `load': plugin loaded: /root/.mikutter/plugin/display_requirements.rb
+notice: {MIKUTTER_DIR}/mikutter.rb:40:in `<main>': fire boot event
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:31:in `block (2 levels) in <top (required)>': create window :default
+notice: {MIKUTTER_DIR}/core/plugin/gtk/mikutter_window.rb:54:in `create_statusbar': statusbar: context id: 1
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:276:in `block (2 levels) in <top (required)>': create postbox :"__Plugin::GUI::Postbox_1000_545a3981_14b05a44"
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:550:in `create_pane': create pane :default
+(eval): line 28
+   GLib-GObject-WARNING **:The property GtkNotebook:group-id is deprecated and shouldn't be used anymore. It will be removed in a future version.
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:235:in `block (2 levels) in <top (required)>': gui_tab_join_pane(#<Plugin::GUI::Tab(role=tab,slug=home_timeline)>, #<Plugin::GUI::Pane(role=pane,slug=default)>)
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:237:in `block (2 levels) in <top (required)>': #<Plugin::GUI::Tab(role=tab,slug=home_timeline)> children [#<Plugin::GUI::TabToolbar(role=tab_toolbar,slug=__Plugin::GUI::TabToolbar_1000_545a3981_63e35c46)>, #<Plugin::GUI::Timeline(role=timeline,slug=home_timeline)>]
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:240:in `block (2 levels) in <top (required)>': widget: 
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:164:in `block (2 levels) in <top (required)>': create tab toolbar #<Plugin::GUI::TabToolbar(role=tab_toolbar,slug=__Plugin::GUI::TabToolbar_1000_545a3981_63e35c46)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:123:in `block (2 levels) in <top (required)>': tab_created: :home_timeline
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Gtk::TabToolbar:0x40ca7c30> join #<Plugin::GUI::Tab(role=tab,slug=home_timeline)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:101:in `block (3 levels) in <top (required)>': on_pane_created: page_added: #<Plugin::GUI::Pane(role=pane,slug=default)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:235:in `block (2 levels) in <top (required)>': gui_tab_join_pane(#<Plugin::GUI::Tab(role=tab,slug=mentions)>, #<Plugin::GUI::Pane(role=pane,slug=default)>)
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:237:in `block (2 levels) in <top (required)>': #<Plugin::GUI::Tab(role=tab,slug=mentions)> children [#<Plugin::GUI::TabToolbar(role=tab_toolbar,slug=__Plugin::GUI::TabToolbar_1000_545a3981_8d6110b5)>, #<Plugin::GUI::Timeline(role=timeline,slug=mentions)>]
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:240:in `block (2 levels) in <top (required)>': widget: 
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:164:in `block (2 levels) in <top (required)>': create tab toolbar #<Plugin::GUI::TabToolbar(role=tab_toolbar,slug=__Plugin::GUI::TabToolbar_1000_545a3981_8d6110b5)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:123:in `block (2 levels) in <top (required)>': tab_created: :mentions
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Gtk::TabToolbar:0x40cc9170> join #<Plugin::GUI::Tab(role=tab,slug=mentions)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:101:in `block (3 levels) in <top (required)>': on_pane_created: page_added: #<Plugin::GUI::Pane(role=pane,slug=default)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:235:in `block (2 levels) in <top (required)>': gui_tab_join_pane(#<Plugin::GUI::Tab(role=tab,slug=activity)>, #<Plugin::GUI::Pane(role=pane,slug=default)>)
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:237:in `block (2 levels) in <top (required)>': #<Plugin::GUI::Tab(role=tab,slug=activity)> children [#<Plugin::GUI::TabToolbar(role=tab_toolbar,slug=__Plugin::GUI::TabToolbar_1000_545a3981_93831ffd)>, #<Plugin::GUI::TabChildWidget(role=tabchildwidget,slug=__Plugin::GUI::TabChildWidget_1000_545a399a_297af5ed)>]
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:240:in `block (2 levels) in <top (required)>': widget: 
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:164:in `block (2 levels) in <top (required)>': create tab toolbar #<Plugin::GUI::TabToolbar(role=tab_toolbar,slug=__Plugin::GUI::TabToolbar_1000_545a3981_93831ffd)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:123:in `block (2 levels) in <top (required)>': tab_created: :activity
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Gtk::TabToolbar:0x411ac6f8> join #<Plugin::GUI::Tab(role=tab,slug=activity)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:101:in `block (3 levels) in <top (required)>': on_pane_created: page_added: #<Plugin::GUI::Pane(role=pane,slug=default)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:235:in `block (2 levels) in <top (required)>': gui_tab_join_pane(#<Plugin::GUI::Tab(role=tab,slug=directmessage)>, #<Plugin::GUI::Pane(role=pane,slug=default)>)
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:237:in `block (2 levels) in <top (required)>': #<Plugin::GUI::Tab(role=tab,slug=directmessage)> children [#<Plugin::GUI::TabToolbar(role=tab_toolbar,slug=__Plugin::GUI::TabToolbar_1000_545a3981_9b8fa64d)>, #<Plugin::GUI::TabChildWidget(role=tabchildwidget,slug=__Plugin::GUI::TabChildWidget_1000_545a39a7_580ad22d)>]
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:240:in `block (2 levels) in <top (required)>': widget: 
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:164:in `block (2 levels) in <top (required)>': create tab toolbar #<Plugin::GUI::TabToolbar(role=tab_toolbar,slug=__Plugin::GUI::TabToolbar_1000_545a3981_9b8fa64d)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:123:in `block (2 levels) in <top (required)>': tab_created: :directmessage
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Gtk::TabToolbar:0x411d38a8> join #<Plugin::GUI::Tab(role=tab,slug=directmessage)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:101:in `block (3 levels) in <top (required)>': on_pane_created: page_added: #<Plugin::GUI::Pane(role=pane,slug=default)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:235:in `block (2 levels) in <top (required)>': gui_tab_join_pane(#<Plugin::GUI::Tab(role=tab,slug=search)>, #<Plugin::GUI::Pane(role=pane,slug=default)>)
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:237:in `block (2 levels) in <top (required)>': #<Plugin::GUI::Tab(role=tab,slug=search)> children [#<Plugin::GUI::TabToolbar(role=tab_toolbar,slug=__Plugin::GUI::TabToolbar_1000_545a3981_3b0b1eaf)>, #<Plugin::GUI::TabChildWidget(role=tabchildwidget,slug=__Plugin::GUI::TabChildWidget_1000_545a39b5_3d07ac04)>, #<Plugin::GUI::Timeline(role=timeline,slug=search)>]
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:240:in `block (2 levels) in <top (required)>': widget: 
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:164:in `block (2 levels) in <top (required)>': create tab toolbar #<Plugin::GUI::TabToolbar(role=tab_toolbar,slug=__Plugin::GUI::TabToolbar_1000_545a3981_3b0b1eaf)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:123:in `block (2 levels) in <top (required)>': tab_created: :search
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Gtk::TabToolbar:0x41413e00> join #<Plugin::GUI::Tab(role=tab,slug=search)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:101:in `block (3 levels) in <top (required)>': on_pane_created: page_added: #<Plugin::GUI::Pane(role=pane,slug=default)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:229:in `block (2 levels) in <top (required)>': pane doesn't have a parent
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:383:in `block (2 levels) in <top (required)>': nativewidget: #<Gtk::EventBox:0x40b14d90> => #<Plugin::GUI::Tab(role=tab,slug=activity)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Gtk::EventBox:0x40b14d90> join #<Plugin::GUI::Tab(role=tab,slug=activity)>
+notice: {MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:30:in `take!': [#<Plugin::Achievement::Achievement:0x436c27e0 @options={:description=>"設定画面で、mikutterをカスタマイズしましょう。", :hint=>"画面右下にあるレンチのアイコンをクリックしよう", :depends=>[:register_account, :tutorial]}, @plugin=#<Plugin:0x414101a0 @name=:achievement, @events=#<Set: {#<EventListener:0x436bd4b8 @event=#<Event:0x436bd5a8 @name=:service_registered, @options={}, @filters=[], @observer_peers={#<EventListener:0x436bd4b8 ...>=>:update, #<EventListener:0x43b5b698 @event=#<Event:0x436bd5a8 ...>, @callback=#<Proc:0x43b5b848@{MIKUTTER_DIR}/core/plugin/list/list.rb:56>>=>:update, #<EventListener:0x43c98c30 @event=#<Event:0x436bd5a8 ...>, @callback=#<Proc:0x43c98e10@{MIKUTTER_DIR}/core/plugin/streaming/streaming.rb:25>>=>:update, #<EventListener:0x43c7f238 @event=#<Event:0x436bd5a8 ...>, @callback=#<Proc:0x43c7f3e8@{MIKUTTER_DIR}/core/plugin/gtk/account_box.rb:11>>=>:update, #<EventListener:0x407f9ec8 @event=#<Event:0x436bd5a8 ...>, @callback=#<Proc:0x405ec748@{MIKUTTER_DIR}/core/plugin/gtk/mikutter_window.rb:27>>=>:update}>, @callback=#<Proc:0x436bd770@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:104>>, #<EventListener:0x436c1d30 @event=#<Event:0x43caf340 @name=:open_setting, @options={}, @filters=[], @observer_peers={#<EventListener:0x43caf2e0 @event=#<Event:0x43caf340 ...>, @callback=#<Proc:0x43caf4f0@{MIKUTTER_DIR}/core/plugin/settings/settings.rb:17>>=>:update, #<EventListener:0x436c1d30 ...>=>:update}>, @callback=#<Proc:0x436c1f10@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:112>>, #<EventListener:0x43b32e50 @event=#<Event:0x416e5168 @name=:gui_pane_join_window, @options={}, @filters=[], @observer_peers={#<EventListener:0x41821e78 @event=#<Event:0x416e5168 ...>, @callback=#<Proc:0x41822040@{MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:218>>=>:update, #<EventListener:0x43b32e50 ...>=>:update}, @observer_state=false>, @callback=#<Proc:0x43b33018@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:129>>, #<EventListener:0x43b37830 @event=#<Event:0x43b37890 @name=:after_gui_tab_reordered, @options={}, @filters=[], @observer_peers={#<EventListener:0x43b37830 ...>=>:update}>, @callback=#<Proc:0x43b37a58@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:138>>, #<EventListener:0x43b374a0 @event=#<Event:0x43b37500 @name=:after_gui_tab_reparent, @options={}, @filters=[], @observer_peers={#<EventListener:0x43b374a0 ...>=>:update}>, @callback=#<Proc:0x43b376c8@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:141>>, #<EventListener:0x43b352f8 @event=#<Event:0x43b35358 @name=:send_bugreport, @options={}, @filters=[], @observer_peers={#<EventListener:0x43b352f8 ...>=>:update}>, @callback=#<Proc:0x43b35538@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:149>>, #<EventListener:0x43b34620 @event=#<Event:0x41e29378 @name=:konami_activate, @options={}, @filters=[], @observer_peers={#<EventListener:0x41e292e8 @event=#<Event:0x41e29378 ...>, @callback=#<Proc:0x41e296a8@{MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:442>>=>:update, #<EventListener:0x43b34620 ...>=>:update}>, @callback=#<Proc:0x43b347e8@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:157>>, #<EventListener:0x43b34218 @event=#<Event:0x43b34278 @name=:achievement_took, @options={}, @filters=[], @observer_peers={#<EventListener:0x43b34218 ...>=>:update}>, @callback=#<Proc:0x43b34428@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:170>>}>, @filters=#<Set: {#<EventFilter:0x436bf8a0 @event=#<Event:0x40ca5e48 @name=:activity_kind, @options={}, @filters=[#<EventFilter:0x40ca5440 @event=#<Event:0x40ca5e48 ...>, @callback=#<Proc:0x40ca2f50@{MIKUTTER_DIR}/core/plugin/activity/activity.rb:115>>, #<EventFilter:0x4115bec0 @event=#<Event:0x40ca5e48 ...>, @callback=#<Proc:0x4113c630@{MIKUTTER_DIR}/core/plugin/activity/activity.rb:115>>, #<EventFilter:0x411b1b88 @event=#<Event:0x40ca5e48 ...>, @callback=#<Proc:0x411b23e0@{MIKUTTER_DIR}/core/plugin/activity/activity.rb:115>>, #<EventFilter:0x411c3bb8 @event=#<Event:0x40ca5e48 ...>, @callback=#<Proc:0x411bc580@{MIKUTTER_DIR}/core/plugin/activity/activity.rb:115>>, #<EventFilter:0x411c98e8 @event=#<Event:0x40ca5e48 ...>, @callback=#<Proc:0x411ca7b8@{MIKUTTER_DIR}/core/plugin/activity/activity.rb:115>>, #<EventFilter:0x411d0ab8 @event=#<Event:0x40ca5e48 ...>, @callback=#<Proc:0x411d13b8@{MIKUTTER_DIR}/core/plugin/activity/activity.rb:115>>, #<EventFilter:0x411dfe18 @event=#<Event:0x40ca5e48 ...>, @callback=#<Proc:0x411d8c48@{MIKUTTER_DIR}/core/plugin/activity/activity.rb:115>>, #<EventFilter:0x41409a38 @event=#<Event:0x40ca5e48 ...>, @callback=#<Proc:0x411f1bf0@{MIKUTTER_DIR}/core/plugin/activity/activity.rb:115>>, #<EventFilter:0x436bf8a0 ...>, #<EventFilter:0x41ee0930 @event=#<Event:0x40ca5e48 ...>, @callback=#<Proc:0x41ee1200@{MIKUTTER_DIR}/core/plugin/activity/activity.rb:115>>]>, @callback=#<Proc:0x436bfa50@{MIKUTTER_DIR}/core/plugin/activity/activity.rb:115>>, #<EventFilter:0x436bdd58 @event=#<Event:0x436bddb8 @name=:unachievements, @options={}, @filters=[#<EventFilter:0x436bdd58 ...>, #<EventFilter:0x436c2450 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436c2618@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b33558 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b33720@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b37f98 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b30198@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b35a78 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b35c40@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b34d28 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b34ef0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43de2258 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43de2420@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>]>, @callback=#<Proc:0x436bdf98@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x436bd938 @event=#<Event:0x436bd998 @name=:achievemented, @options={}, @filters=[#<EventFilter:0x436bd938 ...>, #<EventFilter:0x436c20c0 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c2270@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c6530 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c66e0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b331c8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b33378@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b37c08 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b37db8@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b356e8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b35898@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b34998 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b34b48@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43de1ec8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43de2078@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>]>, @callback=#<Proc:0x436bdb78@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c2450 @event=#<Event:0x436bddb8 @name=:unachievements, @options={}, @filters=[#<EventFilter:0x436bdd58 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436bdf98@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x436c2450 ...>, #<EventFilter:0x43b33558 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b33720@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b37f98 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b30198@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b35a78 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b35c40@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b34d28 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b34ef0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43de2258 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43de2420@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>]>, @callback=#<Proc:0x436c2618@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x436c20c0 @event=#<Event:0x436bd998 @name=:achievemented, @options={}, @filters=[#<EventFilter:0x436bd938 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436bdb78@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c20c0 ...>, #<EventFilter:0x436c6530 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c66e0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b331c8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b33378@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b37c08 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b37db8@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b356e8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b35898@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b34998 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b34b48@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43de1ec8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43de2078@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>]>, @callback=#<Proc:0x436c2270@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c6530 @event=#<Event:0x436bd998 @name=:achievemented, @options={}, @filters=[#<EventFilter:0x436bd938 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436bdb78@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c20c0 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c2270@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c6530 ...>, #<EventFilter:0x43b331c8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b33378@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b37c08 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b37db8@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b356e8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b35898@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b34998 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b34b48@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43de1ec8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43de2078@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>]>, @callback=#<Proc:0x436c66e0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b33558 @event=#<Event:0x436bddb8 @name=:unachievements, @options={}, @filters=[#<EventFilter:0x436bdd58 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436bdf98@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x436c2450 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436c2618@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b33558 ...>, #<EventFilter:0x43b37f98 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b30198@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b35a78 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b35c40@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b34d28 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b34ef0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43de2258 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43de2420@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>]>, @callback=#<Proc:0x43b33720@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b331c8 @event=#<Event:0x436bd998 @name=:achievemented, @options={}, @filters=[#<EventFilter:0x436bd938 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436bdb78@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c20c0 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c2270@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c6530 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c66e0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b331c8 ...>, #<EventFilter:0x43b37c08 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b37db8@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b356e8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b35898@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b34998 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b34b48@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43de1ec8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43de2078@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>]>, @callback=#<Proc:0x43b33378@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b37f98 @event=#<Event:0x436bddb8 @name=:unachievements, @options={}, @filters=[#<EventFilter:0x436bdd58 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436bdf98@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x436c2450 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436c2618@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b33558 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b33720@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b37f98 ...>, #<EventFilter:0x43b35a78 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b35c40@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b34d28 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b34ef0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43de2258 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43de2420@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>]>, @callback=#<Proc:0x43b30198@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b37c08 @event=#<Event:0x436bd998 @name=:achievemented, @options={}, @filters=[#<EventFilter:0x436bd938 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436bdb78@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c20c0 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c2270@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c6530 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c66e0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b331c8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b33378@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b37c08 ...>, #<EventFilter:0x43b356e8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b35898@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b34998 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b34b48@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43de1ec8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43de2078@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>]>, @callback=#<Proc:0x43b37db8@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b35a78 @event=#<Event:0x436bddb8 @name=:unachievements, @options={}, @filters=[#<EventFilter:0x436bdd58 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436bdf98@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x436c2450 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436c2618@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b33558 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b33720@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b37f98 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b30198@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b35a78 ...>, #<EventFilter:0x43b34d28 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b34ef0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43de2258 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43de2420@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>]>, @callback=#<Proc:0x43b35c40@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b356e8 @event=#<Event:0x436bd998 @name=:achievemented, @options={}, @filters=[#<EventFilter:0x436bd938 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436bdb78@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c20c0 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c2270@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c6530 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c66e0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b331c8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b33378@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b37c08 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b37db8@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b356e8 ...>, #<EventFilter:0x43b34998 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b34b48@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43de1ec8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43de2078@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>]>, @callback=#<Proc:0x43b35898@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b34d28 @event=#<Event:0x436bddb8 @name=:unachievements, @options={}, @filters=[#<EventFilter:0x436bdd58 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436bdf98@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x436c2450 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436c2618@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b33558 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b33720@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b37f98 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b30198@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b35a78 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b35c40@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b34d28 ...>, #<EventFilter:0x43de2258 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43de2420@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>]>, @callback=#<Proc:0x43b34ef0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b34998 @event=#<Event:0x436bd998 @name=:achievemented, @options={}, @filters=[#<EventFilter:0x436bd938 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436bdb78@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c20c0 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c2270@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x436c6530 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x436c66e0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b331c8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b33378@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b37c08 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b37db8@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b356e8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43b35898@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>, #<EventFilter:0x43b34998 ...>, #<EventFilter:0x43de1ec8 @event=#<Event:0x436bd998 ...>, @callback=#<Proc:0x43de2078@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>]>, @callback=#<Proc:0x43b34b48@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:90>>}>, @spec={:slug=>:achievement, :depends=>{:mikutter=>"0.2.2.1150", :plugin=>["gui", "activity", "uitranslator"]}, :version=>"1.0", :author=>"toshi_a", :name=>"実績", :description=>"mikutterに実績機能を提供します", :kind=>:bundle, :path=>"{MIKUTTER_DIR}/core/plugin/achievement", :deprecated_spec=>false}>, @slug=:open_setting, @events=#<Set: {[:unachievements, #<EventFilter:0x436c2450 @event=#<Event:0x436bddb8 @name=:unachievements, @options={}, @filters=[#<EventFilter:0x436bdd58 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x436bdf98@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x436c2450 ...>, #<EventFilter:0x43b33558 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b33720@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b37f98 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b30198@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b35a78 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b35c40@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43b34d28 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43b34ef0@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>, #<EventFilter:0x43de2258 @event=#<Event:0x436bddb8 ...>, @callback=#<Proc:0x43de2420@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>]>, @callback=#<Proc:0x436c2618@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:86>>], [:open_setting, #<EventListener:0x436c1d30 @event=#<Event:0x43caf340 @name=:open_setting, @options={}, @filters=[], @observer_peers={#<EventListener:0x43caf2e0 @event=#<Event:0x43caf340 ...>, @callback=#<Proc:0x43caf4f0@{MIKUTTER_DIR}/core/plugin/settings/settings.rb:17>>=>:update, #<EventListener:0x436c1d30 ...>=>:update}>, @callback=#<Proc:0x436c1f10@{MIKUTTER_DIR}/core/plugin/achievement/achievement.rb:112>>]}>>]
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:383:in `block (2 levels) in <top (required)>': nativewidget: #<Plugin::DirectMessage::UserList:0x43c93b18> => #<Plugin::GUI::Tab(role=tab,slug=directmessage)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Plugin::DirectMessage::UserList:0x43c93b18> join #<Plugin::GUI::Tab(role=tab,slug=directmessage)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:177:in `block (2 levels) in <top (required)>': create timeline :home_timeline
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Gtk::TimeLine:0x416ece18> join #<Plugin::GUI::Tab(role=tab,slug=home_timeline)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:177:in `block (2 levels) in <top (required)>': create timeline :mentions
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Gtk::TimeLine:0x41816ef8> join #<Plugin::GUI::Tab(role=tab,slug=mentions)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:383:in `block (2 levels) in <top (required)>': nativewidget: #<Gtk::VBox:0x435c4638> => #<Plugin::GUI::Tab(role=tab,slug=search)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Gtk::VBox:0x435c4638> join #<Plugin::GUI::Tab(role=tab,slug=search)>
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:177:in `block (2 levels) in <top (required)>': create timeline :search
+notice: {MIKUTTER_DIR}/core/plugin/gtk/gtk.rb:504:in `widget_join_tab': widget_join_tab: #<Gtk::TimeLine:0x41e450b0> join #<Plugin::GUI::Tab(role=tab,slug=search)>
+notice: {MIKUTTER_DIR}/core/plugin/streaming/filter.rb:28:in `block (2 levels) in start': filter stream: connect
+notice: {MIKUTTER_DIR}/core/plugin/streaming/filter.rb:32:in `block (2 levels) in start': followings 0 people, track keyword ''
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:328: [BUG] Segmentation fault
+ruby 2.0.0p594 (2014-10-27 revision 48167) [arm-netbsdelf]
+
+-- Control frame information -----------------------------------------------
+c:0024 p:---- s:0107 e:000106 CFUNC  :year
+c:0023 p:0026 s:0104 e:000103 METHOD /usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:328
+c:0022 p:0066 s:0100 e:000099 LAMBDA /usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22 [FINISH]
+c:0021 p:0012 s:0096 e:000095 METHOD /usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:316
+c:0020 p:0066 s:0087 e:000086 LAMBDA /usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22 [FINISH]
+c:0019 p:0058 s:0083 e:000082 BLOCK  /usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:397 [FINISH]
+c:0018 p:---- s:0076 e:000075 CFUNC  :save
+c:0017 p:0008 s:0073 e:000072 METHOD /usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:392
+c:0016 p:0066 s:0069 e:000068 LAMBDA /usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22 [FINISH]
+c:0015 p:0025 s:0065 e:000064 METHOD /usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:367
+c:0014 p:0066 s:0061 e:000060 LAMBDA /usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22 [FINISH]
+c:0013 p:0036 s:0057 e:000056 METHOD /usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:338
+c:0012 p:0066 s:0053 e:000052 LAMBDA /usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22 [FINISH]
+c:0011 p:0007 s:0049 e:000048 METHOD /usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:344
+c:0010 p:0066 s:0046 e:000045 LAMBDA /usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22 [FINISH]
+c:0009 p:0029 s:0042 e:000041 METHOD /usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:119
+c:0008 p:0066 s:0039 e:000038 LAMBDA /usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22 [FINISH]
+c:0007 p:0105 s:0035 e:000032 METHOD /usr/pkg/share/mikutter/core/mui/cairo_cell_renderer_message.rb:152
+c:0006 p:0051 s:0028 e:000027 METHOD /usr/pkg/share/mikutter/core/mui/cairo_cell_renderer_message.rb:132 [FINISH]
+c:0005 p:---- s:0022 e:000021 CFUNC  :main
+c:0004 p:0013 s:0019 e:000018 METHOD /usr/pkg/share/mikutter/core/plugin/gtk/mainloop.rb:10
+c:0003 p:0201 s:0015 e:000014 METHOD /usr/pkg/share/mikutter/mikutter.rb:63
+c:0002 p:0477 s:0007 E:002398 EVAL   /usr/pkg/share/mikutter/mikutter.rb:92 [FINISH]
+c:0001 p:0000 s:0002 E:0011c4 TOP    [FINISH]
+
+/usr/pkg/share/mikutter/mikutter.rb:92:in `<main>'
+/usr/pkg/share/mikutter/mikutter.rb:63:in `boot!'
+/usr/pkg/share/mikutter/core/plugin/gtk/mainloop.rb:10:in `mainloop'
+/usr/pkg/share/mikutter/core/plugin/gtk/mainloop.rb:10:in `main'
+/usr/pkg/share/mikutter/core/mui/cairo_cell_renderer_message.rb:132:in `message_id='
+/usr/pkg/share/mikutter/core/mui/cairo_cell_renderer_message.rb:152:in `render_message'
+/usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22:in `block (2 levels) in singleton class'
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:119:in `pixbuf'
+/usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22:in `block (2 levels) in singleton class'
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:344:in `gen_pixbuf'
+/usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22:in `block (2 levels) in singleton class'
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:338:in `gen_pixmap'
+/usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22:in `block (2 levels) in singleton class'
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:367:in `render_to_context'
+/usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22:in `block (2 levels) in singleton class'
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:392:in `render_main_text'
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:392:in `save'
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:397:in `block in render_main_text'
+/usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22:in `block (2 levels) in singleton class'
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:316:in `header_right'
+/usr/pkg/share/mikutter/core/lib/uithreadonly.rb:22:in `block (2 levels) in singleton class'
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:328:in `timestamp_label'
+/usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb:328:in `year'
+
+-- Other runtime information -----------------------------------------------
+
+* Loaded script: /usr/pkg/share/mikutter/mikutter.rb
+
+* Loaded features:
+
+    0 enumerator.so
+    1 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/enc/encdb.so
+    2 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/enc/trans/transdb.so
+    3 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/rbconfig.rb
+    4 /usr/pkg/lib/ruby/2.0.0/rubygems/compatibility.rb
+    5 /usr/pkg/lib/ruby/2.0.0/rubygems/defaults.rb
+    6 /usr/pkg/lib/ruby/2.0.0/rubygems/deprecate.rb
+    7 /usr/pkg/lib/ruby/2.0.0/rubygems/errors.rb
+    8 /usr/pkg/lib/ruby/2.0.0/rubygems/version.rb
+    9 /usr/pkg/lib/ruby/2.0.0/rubygems/requirement.rb
+   10 /usr/pkg/lib/ruby/2.0.0/rubygems/platform.rb
+   11 /usr/pkg/lib/ruby/2.0.0/rubygems/specification.rb
+   12 /usr/pkg/lib/ruby/2.0.0/rubygems/exceptions.rb
+   13 /usr/pkg/lib/ruby/2.0.0/rubygems/core_ext/kernel_gem.rb
+   14 /usr/pkg/lib/ruby/2.0.0/thread.rb
+   15 /usr/pkg/lib/ruby/2.0.0/monitor.rb
+   16 /usr/pkg/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb
+   17 /usr/pkg/lib/ruby/2.0.0/rubygems.rb
+   18 /usr/pkg/lib/ruby/2.0.0/rubygems/path_support.rb
+   19 /usr/pkg/lib/ruby/2.0.0/rubygems/dependency.rb
+   20 /usr/pkg/lib/ruby/2.0.0/benchmark.rb
+   21 /usr/pkg/lib/ruby/2.0.0/webrick/compat.rb
+   22 /usr/pkg/lib/ruby/2.0.0/webrick/version.rb
+   23 /usr/pkg/lib/ruby/2.0.0/webrick/httpversion.rb
+   24 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/socket.so
+   25 /usr/pkg/lib/ruby/2.0.0/socket.rb
+   26 /usr/pkg/lib/ruby/2.0.0/delegate.rb
+   27 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/etc.so
+   28 /usr/pkg/lib/ruby/2.0.0/fileutils.rb
+   29 /usr/pkg/lib/ruby/2.0.0/tmpdir.rb
+   30 /usr/pkg/lib/ruby/2.0.0/tempfile.rb
+   31 /usr/pkg/lib/ruby/2.0.0/webrick/httputils.rb
+   32 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/fcntl.so
+   33 /usr/pkg/lib/ruby/2.0.0/timeout.rb
+   34 /usr/pkg/lib/ruby/2.0.0/singleton.rb
+   35 /usr/pkg/lib/ruby/2.0.0/webrick/utils.rb
+   36 /usr/pkg/lib/ruby/2.0.0/webrick/log.rb
+   37 /usr/pkg/lib/ruby/2.0.0/webrick/config.rb
+   38 /usr/pkg/lib/ruby/2.0.0/webrick/server.rb
+   39 /usr/pkg/lib/ruby/2.0.0/webrick/accesslog.rb
+   40 /usr/pkg/lib/ruby/2.0.0/webrick/htmlutils.rb
+   41 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/date_core.so
+   42 /usr/pkg/lib/ruby/2.0.0/date/format.rb
+   43 /usr/pkg/lib/ruby/2.0.0/date.rb
+   44 /usr/pkg/lib/ruby/2.0.0/time.rb
+   45 /usr/pkg/lib/ruby/2.0.0/webrick/cookie.rb
+   46 /usr/pkg/lib/ruby/2.0.0/webrick/httpstatus.rb
+   47 /usr/pkg/lib/ruby/2.0.0/uri/common.rb
+   48 /usr/pkg/lib/ruby/2.0.0/uri/generic.rb
+   49 /usr/pkg/lib/ruby/2.0.0/uri/ftp.rb
+   50 /usr/pkg/lib/ruby/2.0.0/uri/http.rb
+   51 /usr/pkg/lib/ruby/2.0.0/uri/https.rb
+   52 /usr/pkg/lib/ruby/2.0.0/uri/ldap.rb
+   53 /usr/pkg/lib/ruby/2.0.0/uri/ldaps.rb
+   54 /usr/pkg/lib/ruby/2.0.0/uri/mailto.rb
+   55 /usr/pkg/lib/ruby/2.0.0/uri.rb
+   56 /usr/pkg/lib/ruby/2.0.0/webrick/httprequest.rb
+   57 /usr/pkg/lib/ruby/2.0.0/webrick/httpresponse.rb
+   58 /usr/pkg/lib/ruby/2.0.0/webrick/httpservlet/abstract.rb
+   59 /usr/pkg/lib/ruby/2.0.0/webrick/httpservlet/filehandler.rb
+   60 /usr/pkg/lib/ruby/2.0.0/webrick/httpservlet/cgihandler.rb
+   61 /usr/pkg/lib/ruby/2.0.0/cgi/util.rb
+   62 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/strscan.so
+   63 /usr/pkg/lib/ruby/2.0.0/erb.rb
+   64 /usr/pkg/lib/ruby/2.0.0/webrick/httpservlet/erbhandler.rb
+   65 /usr/pkg/lib/ruby/2.0.0/webrick/httpservlet/prochandler.rb
+   66 /usr/pkg/lib/ruby/2.0.0/webrick/httpservlet.rb
+   67 /usr/pkg/lib/ruby/2.0.0/webrick/httpserver.rb
+   68 /usr/pkg/lib/ruby/2.0.0/webrick/httpauth/authenticator.rb
+   69 /usr/pkg/lib/ruby/2.0.0/webrick/httpauth/basicauth.rb
+   70 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/digest.so
+   71 /usr/pkg/lib/ruby/2.0.0/digest.rb
+   72 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/digest/md5.so
+   73 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/digest/sha1.so
+   74 /usr/pkg/lib/ruby/2.0.0/webrick/httpauth/digestauth.rb
+   75 /usr/pkg/lib/ruby/2.0.0/webrick/httpauth/userdb.rb
+   76 /usr/pkg/lib/ruby/2.0.0/webrick/httpauth/htpasswd.rb
+   77 /usr/pkg/lib/ruby/2.0.0/webrick/httpauth/htdigest.rb
+   78 /usr/pkg/lib/ruby/2.0.0/webrick/httpauth/htgroup.rb
+   79 /usr/pkg/lib/ruby/2.0.0/webrick/httpauth.rb
+   80 /usr/pkg/lib/ruby/2.0.0/webrick.rb
+   81 /usr/pkg/lib/ruby/2.0.0/optparse.rb
+   82 /usr/pkg/share/mikutter/core/boot/option.rb
+   83 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/stringio.so
+   84 /usr/pkg/lib/ruby/2.0.0/open-uri.rb
+   85 /usr/pkg/lib/ruby/2.0.0/set.rb
+   86 /usr/pkg/share/mikutter/core/miquire.rb
+   87 /usr/pkg/share/mikutter/core/lib/lazy.rb
+   88 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/memoize.rb
+   89 /usr/pkg/share/mikutter/core/config.rb
+   90 /usr/pkg/share/mikutter/core/environment.rb
+   91 /usr/pkg/share/mikutter/core/utils.rb
+   92 /usr/pkg/share/mikutter/core/boot/check_config_permission.rb
+   93 /usr/pkg/share/mikutter/core/boot/mainloop.rb
+   94 /usr/pkg/lib/ruby/gems/2.0.0/gems/delayer-0.0.2/lib/delayer/version.rb
+   95 /usr/pkg/lib/ruby/gems/2.0.0/gems/delayer-0.0.2/lib/delayer/error.rb
+   96 /usr/pkg/lib/ruby/gems/2.0.0/gems/delayer-0.0.2/lib/delayer/extend.rb
+   97 /usr/pkg/lib/ruby/gems/2.0.0/gems/delayer-0.0.2/lib/delayer/procedure.rb
+   98 /usr/pkg/lib/ruby/gems/2.0.0/gems/delayer-0.0.2/lib/delayer/priority.rb
+   99 /usr/pkg/lib/ruby/gems/2.0.0/gems/delayer-0.0.2/lib/delayer.rb
+  100 /usr/pkg/share/mikutter/core/boot/delayer.rb
+  101 /usr/pkg/share/mikutter/core/lib/weakstorage.rb
+  102 /usr/pkg/share/mikutter/core/retriever.rb
+  103 /usr/pkg/share/mikutter/core/skin.rb
+  104 /usr/pkg/lib/ruby/gems/2.0.0/gems/typed-array-0.1.2/lib/typed-array/functions.rb
+  105 /usr/pkg/lib/ruby/gems/2.0.0/gems/typed-array-0.1.2/lib/typed-array.rb
+  106 /usr/pkg/share/mikutter/core/user.rb
+  107 /usr/pkg/share/mikutter/core/messageconverters.rb
+  108 /usr/pkg/lib/ruby/2.0.0/net/protocol.rb
+  109 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/zlib.so
+  110 /usr/pkg/lib/ruby/2.0.0/net/http/exceptions.rb
+  111 /usr/pkg/lib/ruby/2.0.0/net/http/header.rb
+  112 /usr/pkg/lib/ruby/2.0.0/net/http/generic_request.rb
+  113 /usr/pkg/lib/ruby/2.0.0/net/http/request.rb
+  114 /usr/pkg/lib/ruby/2.0.0/net/http/requests.rb
+  115 /usr/pkg/lib/ruby/2.0.0/net/http/response.rb
+  116 /usr/pkg/lib/ruby/2.0.0/net/http/responses.rb
+  117 /usr/pkg/lib/ruby/2.0.0/net/http/proxy_delta.rb
+  118 /usr/pkg/lib/ruby/2.0.0/net/http/backward.rb
+  119 /usr/pkg/lib/ruby/2.0.0/net/http.rb
+  120 /usr/pkg/share/mikutter/core/lib/timelimitedqueue/timelimitedqueue.rb
+  121 /usr/pkg/share/mikutter/core/lib/timelimitedqueue.rb
+  122 /usr/pkg/share/mikutter/core/lib/deferred/deferredable.rb
+  123 /usr/pkg/share/mikutter/core/lib/deferred/deferred.rb
+  124 /usr/pkg/share/mikutter/core/lib/deferred.rb
+  125 /usr/pkg/share/mikutter/core/serialthread.rb
+  126 /usr/pkg/share/mikutter/core/miku/node.rb
+  127 /usr/pkg/share/mikutter/core/miku/atom.rb
+  128 /usr/pkg/share/mikutter/core/miku/error.rb
+  129 /usr/pkg/share/mikutter/core/miku/macro.rb
+  130 /usr/pkg/share/mikutter/core/miku/to_ruby.rb
+  131 /usr/pkg/share/mikutter/core/miku/primitive.rb
+  132 /usr/pkg/share/mikutter/core/miku/cons.rb
+  133 /usr/pkg/share/mikutter/core/miku/list.rb
+  134 /usr/pkg/share/mikutter/core/miku/array.rb
+  135 /usr/pkg/share/mikutter/core/miku/hash.rb
+  136 /usr/pkg/share/mikutter/core/miku/symbol.rb
+  137 /usr/pkg/share/mikutter/core/miku/symboltable.rb
+  138 /usr/pkg/share/mikutter/core/miku/nil.rb
+  139 /usr/pkg/share/mikutter/core/miku/parser.rb
+  140 /usr/pkg/share/mikutter/core/miku/miku.rb
+  141 /usr/pkg/lib/ruby/2.0.0/psych/syntax_error.rb
+  142 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/psych.so
+  143 /usr/pkg/lib/ruby/2.0.0/psych/nodes/node.rb
+  144 /usr/pkg/lib/ruby/2.0.0/psych/nodes/stream.rb
+  145 /usr/pkg/lib/ruby/2.0.0/psych/nodes/document.rb
+  146 /usr/pkg/lib/ruby/2.0.0/psych/nodes/sequence.rb
+  147 /usr/pkg/lib/ruby/2.0.0/psych/nodes/scalar.rb
+  148 /usr/pkg/lib/ruby/2.0.0/psych/nodes/mapping.rb
+  149 /usr/pkg/lib/ruby/2.0.0/psych/nodes/alias.rb
+  150 /usr/pkg/lib/ruby/2.0.0/psych/nodes.rb
+  151 /usr/pkg/lib/ruby/2.0.0/psych/streaming.rb
+  152 /usr/pkg/lib/ruby/2.0.0/psych/visitors/visitor.rb
+  153 /usr/pkg/lib/ruby/2.0.0/psych/scalar_scanner.rb
+  154 /usr/pkg/lib/ruby/2.0.0/psych/visitors/to_ruby.rb
+  155 /usr/pkg/lib/ruby/2.0.0/psych/visitors/emitter.rb
+  156 /usr/pkg/lib/ruby/2.0.0/psych/visitors/yaml_tree.rb
+  157 /usr/pkg/lib/ruby/2.0.0/psych/json/ruby_events.rb
+  158 /usr/pkg/lib/ruby/2.0.0/psych/visitors/json_tree.rb
+  159 /usr/pkg/lib/ruby/2.0.0/psych/visitors/depth_first.rb
+  160 /usr/pkg/lib/ruby/2.0.0/psych/visitors.rb
+  161 /usr/pkg/lib/ruby/2.0.0/psych/handler.rb
+  162 /usr/pkg/lib/ruby/2.0.0/psych/tree_builder.rb
+  163 /usr/pkg/lib/ruby/2.0.0/psych/parser.rb
+  164 /usr/pkg/lib/ruby/2.0.0/psych/omap.rb
+  165 /usr/pkg/lib/ruby/2.0.0/psych/set.rb
+  166 /usr/pkg/lib/ruby/2.0.0/psych/coder.rb
+  167 /usr/pkg/lib/ruby/2.0.0/psych/core_ext.rb
+  168 /usr/pkg/lib/ruby/2.0.0/psych/deprecated.rb
+  169 /usr/pkg/lib/ruby/2.0.0/psych/stream.rb
+  170 /usr/pkg/lib/ruby/2.0.0/psych/json/yaml_events.rb
+  171 /usr/pkg/lib/ruby/2.0.0/psych/json/tree_builder.rb
+  172 /usr/pkg/lib/ruby/2.0.0/psych/json/stream.rb
+  173 /usr/pkg/lib/ruby/2.0.0/psych/handlers/document_stream.rb
+  174 /usr/pkg/lib/ruby/2.0.0/psych.rb
+  175 /usr/pkg/lib/ruby/2.0.0/yaml.rb
+  176 /usr/pkg/share/mikutter/core/configloader.rb
+  177 /usr/pkg/share/mikutter/core/userconfig.rb
+  178 /usr/pkg/lib/ruby/gems/2.0.0/gems/addressable-2.3.5/lib/addressable/version.rb
+  179 /usr/pkg/lib/ruby/gems/2.0.0/gems/addressable-2.3.5/lib/addressable/idna/pure.rb
+  180 /usr/pkg/lib/ruby/gems/2.0.0/gems/addressable-2.3.5/lib/addressable/idna.rb
+  181 /usr/pkg/lib/ruby/gems/2.0.0/gems/addressable-2.3.5/lib/addressable/uri.rb
+  182 /usr/pkg/share/mikutter/core/entity.rb
+  183 /usr/pkg/share/mikutter/core/message.rb
+  184 /usr/pkg/share/mikutter/core/userlist.rb
+  185 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/openssl.so
+  186 /usr/pkg/lib/ruby/2.0.0/openssl/bn.rb
+  187 /usr/pkg/lib/ruby/2.0.0/openssl/cipher.rb
+  188 /usr/pkg/lib/ruby/2.0.0/openssl/config.rb
+  189 /usr/pkg/lib/ruby/2.0.0/openssl/digest.rb
+  190 /usr/pkg/lib/ruby/2.0.0/openssl/x509.rb
+  191 /usr/pkg/lib/ruby/2.0.0/openssl/buffering.rb
+  192 /usr/pkg/lib/ruby/2.0.0/openssl/ssl.rb
+  193 /usr/pkg/lib/ruby/2.0.0/openssl.rb
+  194 /usr/pkg/lib/ruby/2.0.0/securerandom.rb
+  195 /usr/pkg/share/mikutter/core/service_keeper.rb
+  196 /usr/pkg/share/mikutter/core/lib/mikutwitter/basic.rb
+  197 /usr/pkg/lib/ruby/2.0.0/cgi/core.rb
+  198 /usr/pkg/lib/ruby/2.0.0/cgi/cookie.rb
+  199 /usr/pkg/lib/ruby/2.0.0/cgi.rb
+  200 /usr/pkg/share/mikutter/core/lib/mikutwitter/utils.rb
+  201 /usr/pkg/share/mikutter/core/lib/mikutwitter/authentication_failed_action.rb
+  202 /usr/pkg/share/mikutter/core/lib/mikutwitter/rate_limiting.rb
+  203 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/oauth.rb
+  204 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/core_ext.rb
+  205 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/client.rb
+  206 /usr/pkg/lib/ruby/2.0.0/net/https.rb
+  207 /usr/pkg/lib/ruby/2.0.0/base64.rb
+  208 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/helper.rb
+  209 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/request_proxy.rb
+  210 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/request_proxy/base.rb
+  211 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/request_proxy/net_http.rb
+  212 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/client/net_http.rb
+  213 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/errors/error.rb
+  214 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/errors/unauthorized.rb
+  215 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/errors/problem.rb
+  216 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/errors.rb
+  217 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/consumer.rb
+  218 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/tokens/token.rb
+  219 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/tokens/server_token.rb
+  220 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/tokens/consumer_token.rb
+  221 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/tokens/request_token.rb
+  222 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/tokens/access_token.rb
+  223 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/token.rb
+  224 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/signature.rb
+  225 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/signature/base.rb
+  226 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/digest/hmac.rb
+  227 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/signature/hmac/base.rb
+  228 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/signature/hmac/sha1.rb
+  229 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/client/helper.rb
+  230 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/signature/rsa/sha1.rb
+  231 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/request_proxy/mock_request.rb
+  232 /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth.rb
+  233 /usr/pkg/share/mikutter/core/lib/mikutwitter/connect.rb
+  234 /usr/pkg/share/mikutter/core/lib/mikutwitter/cache.rb
+  235 /usr/pkg/share/mikutter/core/lib/mikutwitter/error.rb
+  236 /usr/pkg/share/mikutter/core/lib/mikutwitter/query.rb
+  237 /usr/pkg/lib/ruby/2.0.0/json/version.rb
+  238 /usr/pkg/lib/ruby/2.0.0/ostruct.rb
+  239 /usr/pkg/lib/ruby/2.0.0/json/generic_object.rb
+  240 /usr/pkg/lib/ruby/2.0.0/json/common.rb
+  241 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/enc/utf_16be.so
+  242 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/enc/utf_16le.so
+  243 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/enc/utf_32be.so
+  244 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/enc/utf_32le.so
+  245 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/json/ext/parser.so
+  246 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/json/ext/generator.so
+  247 /usr/pkg/lib/ruby/2.0.0/json/ext.rb
+  248 /usr/pkg/lib/ruby/2.0.0/json.rb
+  249 /usr/pkg/share/mikutter/core/lib/mikutwitter/api_call_support.rb
+  250 /usr/pkg/share/mikutter/core/lib/mikutwitter/api_shortcuts.rb
+  251 /usr/pkg/share/mikutter/core/lib/mikutwitter/oauth_hacks.rb
+  252 /usr/pkg/share/mikutter/core/lib/mikutwitter/streaming_failed_actions.rb
+  253 /usr/pkg/share/mikutter/core/lib/mikutwitter.rb
+  254 /usr/pkg/share/mikutter/core/lib/reserver.rb
+  255 /usr/pkg/share/mikutter/core/lib/instance_storage.rb
+  256 /usr/pkg/share/mikutter/core/service.rb
+  257 /usr/pkg/lib/ruby/2.0.0/observer.rb
+  258 /usr/pkg/share/mikutter/core/event.rb
+  259 /usr/pkg/share/mikutter/core/event_listener.rb
+  260 /usr/pkg/share/mikutter/core/event_filter.rb
+  261 /usr/pkg/share/mikutter/core/plugin.rb
+  262 /usr/pkg/share/mikutter/core/miquire_plugin.rb
+  263 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/tag/simple.rb
+  264 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/tag/irregular.rb
+  265 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/tag/common.rb
+  266 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/tag/rfc.rb
+  267 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/tag/cldr.rb
+  268 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/tag/posix.rb
+  269 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/tag.rb
+  270 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/taglist.rb
+  271 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/driver.rb
+  272 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/version.rb
+  273 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale.rb
+  274 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/version.rb
+  275 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/class_info.rb
+  276 /usr/pkg/lib/ruby/2.0.0/forwardable.rb
+  277 /usr/pkg/lib/ruby/2.0.0/prime.rb
+  278 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/mo.rb
+  279 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/locale_path.rb
+  280 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/text_domain.rb
+  281 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/text_domain_group.rb
+  282 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/text_domain_manager.rb
+  283 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext.rb
+  284 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/pathname.so
+  285 /usr/pkg/lib/ruby/2.0.0/pathname.rb
+  286 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/po_format.rb
+  287 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/po_entry.rb
+  288 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/po.rb
+  289 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/tools/parser/glade.rb
+  290 /usr/pkg/lib/ruby/2.0.0/e2mmap.rb
+  291 /usr/pkg/lib/ruby/2.0.0/irb/output-method.rb
+  292 /usr/pkg/lib/ruby/2.0.0/irb/notifier.rb
+  293 /usr/pkg/lib/ruby/2.0.0/irb/slex.rb
+  294 /usr/pkg/lib/ruby/2.0.0/irb/ruby-token.rb
+  295 /usr/pkg/lib/ruby/2.0.0/irb/ruby-lex.rb
+  296 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/tools/parser/ruby.rb
+  297 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/tools/parser/erb.rb
+  298 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/tools/xgettext.rb
+  299 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/racc/cparse.so
+  300 /usr/pkg/lib/ruby/2.0.0/racc/parser.rb
+  301 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/po_parser.rb
+  302 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/tools/msgfmt.rb
+  303 /usr/pkg/lib/ruby/gems/2.0.0/gems/text-1.3.0/lib/text/double_metaphone.rb
+  304 /usr/pkg/lib/ruby/gems/2.0.0/gems/text-1.3.0/lib/text/levenshtein.rb
+  305 /usr/pkg/lib/ruby/gems/2.0.0/gems/text-1.3.0/lib/text/metaphone.rb
+  306 /usr/pkg/lib/ruby/gems/2.0.0/gems/text-1.3.0/lib/text/porter_stemming.rb
+  307 /usr/pkg/lib/ruby/gems/2.0.0/gems/text-1.3.0/lib/text/soundex.rb
+  308 /usr/pkg/lib/ruby/gems/2.0.0/gems/text-1.3.0/lib/text/version.rb
+  309 /usr/pkg/lib/ruby/gems/2.0.0/gems/text-1.3.0/lib/text/white_similarity.rb
+  310 /usr/pkg/lib/ruby/gems/2.0.0/gems/text-1.3.0/lib/text.rb
+  311 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/tools/msgmerge.rb
+  312 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/info/language.rb
+  313 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/info/region.rb
+  314 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/info.rb
+  315 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/tools/msginit.rb
+  316 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/tools/msgcat.rb
+  317 /usr/pkg/lib/ruby/gems/2.0.0/gems/gettext-3.1.4/lib/gettext/tools.rb
+  318 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/driver/env.rb
+  319 /usr/pkg/lib/ruby/gems/2.0.0/gems/locale-2.1.0/lib/locale/driver/posix.rb
+  320 /usr/pkg/share/mikutter/core/plugin/gui/dsl.rb
+  321 /usr/pkg/share/mikutter/core/plugin/gui/cuscadable.rb
+  322 /usr/pkg/share/mikutter/core/plugin/gui/hierarchy_parent.rb
+  323 /usr/pkg/share/mikutter/core/plugin/gui/widget.rb
+  324 /usr/pkg/share/mikutter/core/plugin/gui/window.rb
+  325 /usr/pkg/share/mikutter/core/plugin/gui/hierarchy_child.rb
+  326 /usr/pkg/share/mikutter/core/plugin/gui/pane.rb
+  327 /usr/pkg/share/mikutter/core/plugin/gui/tablike.rb
+  328 /usr/pkg/share/mikutter/core/plugin/gui/tab_toolbar.rb
+  329 /usr/pkg/share/mikutter/core/plugin/gui/tab.rb
+  330 /usr/pkg/share/mikutter/core/plugin/gui/profile.rb
+  331 /usr/pkg/share/mikutter/core/plugin/gui/profiletab.rb
+  332 /usr/pkg/share/mikutter/core/plugin/gui/timeline.rb
+  333 /usr/pkg/share/mikutter/core/plugin/gui/tab_child_widget.rb
+  334 /usr/pkg/share/mikutter/core/plugin/gui/postbox.rb
+  335 /usr/pkg/share/mikutter/core/plugin/gui/command.rb
+  336 /usr/pkg/lib/ruby/2.0.0/English.rb
+  337 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/glib2/deprecatable.rb
+  338 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/arm-netbsdelf/glib2.so
+  339 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/glib2.rb
+  340 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/arm-netbsdelf/atk.so
+  341 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/atk.rb
+  342 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/color.rb
+  343 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/paper.rb
+  344 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/arm-netbsdelf/cairo.so
+  345 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/constants.rb
+  346 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/point.rb
+  347 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/colors.rb
+  348 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/papers.rb
+  349 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/context/rectangle.rb
+  350 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/context/triangle.rb
+  351 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/context/circle.rb
+  352 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/context/path.rb
+  353 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/context/blur.rb
+  354 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/context/color.rb
+  355 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/context.rb
+  356 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/device.rb
+  357 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/surface.rb
+  358 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/pattern.rb
+  359 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo/path.rb
+  360 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/cairo.rb
+  361 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/arm-netbsdelf/pango.so
+  362 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/pango.rb
+  363 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/arm-netbsdelf/gdk_pixbuf2.so
+  364 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/gdk_pixbuf2.rb
+  365 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/arm-netbsdelf/gtk2.so
+  366 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/gtk2/base.rb
+  367 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/gtk2.rb
+  368 /usr/pkg/share/mikutter/core/mui/cairo_coordinate_module.rb
+  369 /usr/pkg/share/mikutter/core/mui/cairo_icon_over_button.rb
+  370 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/continuation.so
+  371 /usr/pkg/share/mikutter/core/mui/cairo_textselector.rb
+  372 /usr/pkg/share/mikutter/core/lib/uithreadonly.rb
+  373 /usr/pkg/share/mikutter/core/mui/cairo_sub_parts_helper.rb
+  374 /usr/pkg/share/mikutter/core/mui/cairo_replyviewer.rb
+  375 /usr/pkg/share/mikutter/core/mui/cairo_sub_parts_voter.rb
+  376 /usr/pkg/share/mikutter/core/mui/cairo_sub_parts_favorite.rb
+  377 /usr/pkg/share/mikutter/core/mui/cairo_sub_parts_retweet.rb
+  378 /usr/pkg/share/mikutter/core/mui/cairo_markup_generator.rb
+  379 /usr/pkg/lib/ruby/2.0.0/arm-netbsdelf/enc/trans/single_byte.so
+  380 /usr/pkg/share/mikutter/core/mui/cairo_miracle_painter.rb
+  381 /usr/pkg/share/mikutter/core/mui/cairo_cell_renderer_message.rb
+  382 /usr/pkg/share/mikutter/core/mui/gtk_extension.rb
+  383 /usr/pkg/share/mikutter/core/mui/gtk_contextmenu.rb
+  384 /usr/pkg/share/mikutter/core/mui/gtk_crud.rb
+  385 /usr/pkg/share/mikutter/core/mui/gtk_timeline_utils.rb
+  386 /usr/pkg/share/mikutter/core/mui/cairo_pseudo_message_widget.rb
+  387 /usr/pkg/share/mikutter/core/mui/gtk_intelligent_textview.rb
+  388 /usr/pkg/share/mikutter/core/mui/gtk_postbox.rb
+  389 /usr/pkg/share/mikutter/core/mui/gtk_dark_matter_prification.rb
+  390 /usr/pkg/share/mikutter/core/mui/cairo_timeline.rb
+  391 /usr/pkg/share/mikutter/core/mui/gtk_tree_view_pretty_scroll.rb
+  392 /usr/pkg/lib/ruby/vendor_ruby/2.0.0/bsearch.rb
+  393 /usr/pkg/share/mikutter/core/mui/cairo_inner_tl.rb
+  394 /usr/pkg/share/mikutter/core/mui/gtk_keyconfig.rb
+  395 /usr/pkg/share/mikutter/core/mui/gtk_listlist.rb
+  396 /usr/pkg/share/mikutter/core/mui/gtk_selectbox.rb
+  397 /usr/pkg/share/mikutter/core/mui/gtk_mtk.rb
+  398 /usr/pkg/share/mikutter/core/mui/gtk_web_image_loader_image_cache_raw.rb
+  399 /usr/pkg/share/mikutter/core/mui/gtk_web_image_loader_image_cache_pixbuf.rb
+  400 /usr/pkg/share/mikutter/core/mui/gtk_web_image_loader_image_cache.rb
+  401 /usr/pkg/share/mikutter/core/mui/gtk_web_image_loader.rb
+  402 /usr/pkg/share/mikutter/core/mui/gtk_webicon.rb
+  403 /usr/pkg/share/mikutter/core/mui/gtk_message_picker.rb
+  404 /usr/pkg/share/mikutter/core/mui/gtk_pseudo_signal_handler.rb
+  405 /usr/pkg/share/mikutter/core/mui/gtk_inneruserlist.rb
+  406 /usr/pkg/share/mikutter/core/mui/gtk_userlist.rb
+  407 /usr/pkg/share/mikutter/core/plugin/gtk/toolbar_generator.rb
+  408 /usr/pkg/share/mikutter/core/plugin/gtk/account_box.rb
+  409 /usr/pkg/share/mikutter/core/plugin/gtk/mikutter_window.rb
+  410 /usr/pkg/share/mikutter/core/plugin/gtk/tab_container.rb
+  411 /usr/pkg/share/mikutter/core/plugin/gtk/tab_toolbar.rb
+  412 /usr/pkg/share/mikutter/core/plugin/gtk/delayer.rb
+  413 /usr/pkg/share/mikutter/core/plugin/gtk/slug_dictionary.rb
+  414 /usr/pkg/share/mikutter/core/plugin/gtk/mainloop.rb
+  415 /usr/pkg/share/mikutter/core/plugin/gtk/konami_watcher.rb
+  416 /usr/pkg/share/mikutter/core/plugin/settings/select.rb
+  417 /usr/pkg/share/mikutter/core/plugin/settings/multiselect.rb
+  418 /usr/pkg/share/mikutter/core/plugin/settings/listener.rb
+  419 /usr/pkg/share/mikutter/core/plugin/settings/builder.rb
+  420 /usr/pkg/share/mikutter/core/plugin/settings/basic_settings.rb
+  421 /usr/pkg/share/mikutter/core/plugin/change_account/account_control.rb
+  422 /usr/pkg/share/mikutter/core/plugin/change_account/interactive.rb
+  423 /usr/pkg/share/mikutter/core/plugin/command/conditions.rb
+  424 /usr/pkg/share/mikutter/core/plugin/console/console_control.rb
+  425 /usr/pkg/share/mikutter/core/plugin/direct_message/userlist.rb
+  426 /usr/pkg/share/mikutter/core/plugin/direct_message/sender.rb
+  427 /usr/pkg/share/mikutter/core/plugin/direct_message/dmlistview.rb
+  428 /usr/pkg/share/mikutter/core/plugin/extract/edit_window.rb
+  429 /usr/pkg/share/mikutter/core/plugin/extract/extract_tab_list.rb
+  430 /usr/pkg/share/mikutter/core/plugin/shortcutkey/shortcutkey_listview.rb
+  431 /usr/pkg/share/mikutter/core/plugin/streaming/streamer_error.rb
+  432 /usr/pkg/share/mikutter/core/plugin/streaming/streamer.rb
+  433 /usr/pkg/share/mikutter/core/plugin/streaming/parma_streamer.rb
+  434 /usr/pkg/share/mikutter/core/plugin/streaming/filter.rb
+  435 /usr/pkg/share/mikutter/core/boot/load_plugin.rb
+
+[NOTE]
+You may have encountered a bug in the Ruby interpreter or extension libraries.
+Bug reports are welcome.
+For details: http://www.ruby-lang.org/bugreport.html
+
+[1]   Abort trap (core dumped) mikutter --debug
+rpi# exit
+
+Script done on Wed Nov  5 23:53:07 2014
