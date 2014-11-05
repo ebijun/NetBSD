@@ -48,13 +48,16 @@ KOFまとめ
  :widths: 25 15 60
 
  順記,梅田,終わった後の打ち上げはたいていここ。餃子と餃子と餃子。
+ 榮華亭梅田東通り店,東梅田,進捗を出そうと男の約束を交わす店
  ドリーム,西宮北口,15000回ループしてからKOF会場にゴー！朝8:00から。
- 松乃家なんさん通り店,近鉄難波,関西初松乃家松屋のとんかつ業態
  ホビーランド,本町,ミニタリープラモデル専門店。エッチングパーツが熱い。
  ドルフィンズ,堺筋,大阪さん業界館開催時に打ち上げをやってた
  Beer Belly,土佐堀,箕面ビール直営店。天満と江戸堀もある
+ CRAFT BEER BASE,大淀南,4タップ酒屋併設
+ 地底旅行,弁天町,大阪地底1200mから湧く地底ビール
  東京真空管商会,日本橋,関西真空管の聖地。
  電気蕎麦,天満橋,ピーという発信音の後に日本蕎麦。看板に注目
+ グリルオリエント,尼崎,1934年創業の洋食店
  ポートギャラリー,京町堀,写真と現代美術のギャラリー
  ファンダンゴ,十三,関西ロックパンク修行場
  ロケッツ,大阪球場近く,近くのローソンで卓球さんを見かける
@@ -65,10 +68,11 @@ KOFまとめ
  マルツ,日本橋,マルツのある街は安心できる。
  イオシス,日本橋,イオシスがある街は以下同文。
  Compufunk,四ツ橋,テクノのレコードよく買った。
- ソフトマシーン,西九条,サイケデリックバーだけど2013/9に閉店
  パブロピカソ,北新地,ステーキ懐石。ハヤシもあるでよ。
  フランシスベーコン,関大前,居酒屋
  トンカ書店,元町,古本雑貨など
+ む蔵,元町,トンカツとえびカツの二刀流
+ たちばな,道頓堀松竹B2,道頓堀麦酒
  nu things,阿波座,阿木譲さんその後
 
 KOF主な発表
@@ -100,74 +104,30 @@ KOF主な展示物
  2004/10-22-23,大阪産業創造館,XCAST ふきだしくん 
  2003/10/31-11/1,大阪産業創造館,XCAST トレバ
 
-.. image:: /Picture/2013/11/08/DSC_2837.jpg
-.. image:: /Picture/2013/11/08/DSC_2838.jpg
-.. image:: /Picture/2013/11/08/DSC_2839.jpg
-.. image:: /Picture/2013/11/08/DSC_2840.jpg
 .. image:: /Picture/2013/11/08/DSC_2841.jpg
-.. image:: /Picture/2013/11/08/DSC_2842.jpg
 .. image:: /Picture/2013/11/08/DSC_2843.jpg
-.. image:: /Picture/2013/11/08/DSC_2844.jpg
 .. image:: /Picture/2013/11/08/DSC_2845.jpg
-.. image:: /Picture/2013/11/08/DSC_2846.jpg
 .. image:: /Picture/2013/11/08/DSC_2847.jpg
 .. image:: /Picture/2013/11/08/DSC_2848.jpg
-.. image:: /Picture/2013/11/08/DSC_2849.jpg
-.. image:: /Picture/2013/11/08/DSC_2850.jpg
-.. image:: /Picture/2013/11/08/DSC_2851.jpg
-.. image:: /Picture/2013/11/08/DSC_2852.jpg
-.. image:: /Picture/2013/11/08/DSC_2853.jpg
 .. image:: /Picture/2013/11/08/DSC_2854.jpg
-.. image:: /Picture/2013/11/08/dsc03584.jpg
-.. image:: /Picture/2013/11/08/dsc03585.jpg
 .. image:: /Picture/2013/11/08/dsc03586.jpg
-.. image:: /Picture/2013/11/08/dsc03587.jpg
-.. image:: /Picture/2013/11/08/dsc03588.jpg
-.. image:: /Picture/2013/11/08/dsc03589.jpg
-.. image:: /Picture/2013/11/08/dsc03590.jpg
-.. image:: /Picture/2013/11/09/DSC_2855.jpg
-.. image:: /Picture/2013/11/09/DSC_2856.jpg
-.. image:: /Picture/2013/11/09/DSC_2857.jpg
 .. image:: /Picture/2013/11/09/DSC_2858.jpg
-.. image:: /Picture/2013/11/09/DSC_2859.jpg
-.. image:: /Picture/2013/11/09/DSC_2860.jpg
-.. image:: /Picture/2013/11/09/DSC_2861.jpg
-.. image:: /Picture/2013/11/09/DSC_2862.jpg
 .. image:: /Picture/2013/11/09/DSC_2863.jpg
 .. image:: /Picture/2013/11/09/DSC_2864.jpg
 .. image:: /Picture/2013/11/09/DSC_2865.jpg
 .. image:: /Picture/2013/11/09/DSC_2866.jpg
 .. image:: /Picture/2013/11/09/DSC_2867.jpg
 .. image:: /Picture/2013/11/09/DSC_2868.jpg
-.. image:: /Picture/2013/11/09/DSC_2869.jpg
 .. image:: /Picture/2013/11/09/DSC_2870.jpg
 .. image:: /Picture/2013/11/09/DSC_2871.jpg
 .. image:: /Picture/2013/11/09/DSC_2872.jpg
 .. image:: /Picture/2013/11/09/dsc03591.jpg
-.. image:: /Picture/2013/11/09/dsc03592.jpg
-.. image:: /Picture/2013/11/09/dsc03593.jpg
-.. image:: /Picture/2013/11/09/dsc03594.jpg
-.. image:: /Picture/2013/11/09/dsc03595.jpg
-.. image:: /Picture/2013/11/09/dsc03596.jpg
-.. image:: /Picture/2013/11/09/dsc03597.jpg
 .. image:: /Picture/2013/11/09/dsc03598.jpg
-.. image:: /Picture/2013/11/09/dsc03599.jpg
-.. image:: /Picture/2013/11/09/dsc03600.jpg
 .. image:: /Picture/2013/11/09/dsc03601.jpg
 .. image:: /Picture/2013/11/09/dsc03602.jpg
 .. image:: /Picture/2013/11/09/dsc03603.jpg
 .. image:: /Picture/2013/11/09/dsc03604.jpg
 .. image:: /Picture/2013/11/09/dsc03605.jpg
-.. image:: /Picture/2013/11/09/dsc03606.jpg
-.. image:: /Picture/2013/11/09/dsc03607.jpg
-.. image:: /Picture/2013/11/09/dsc03608.jpg
-.. image:: /Picture/2013/11/09/dsc03609.jpg
-.. image:: /Picture/2012/11/11/dsc01961.jpg
-.. image:: /Picture/2012/11/11/dsc01959.jpg
-.. image:: /Picture/2012/11/11/dsc01955.jpg
-.. image:: /Picture/2012/11/10/dsc01949.jpg
-.. image:: /Picture/2012/11/10/dsc01947.jpg
-.. image:: /Picture/2012/11/10/dsc01944.jpg
 .. image:: /Picture/2012/11/10/dsc01943.jpg
 .. image:: /Picture/2012/11/10/dsc01942.jpg
 .. image:: /Picture/2012/11/09/dsc01937.jpg
