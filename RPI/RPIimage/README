@@ -1,6 +1,6 @@
 VERSION: :1,$s/2014-11-08/2014-11-08/g
-ISO:     :1,$s/201410142150Z/201410142150Z/g
-PKGSRC:  :1,$s/2014-10-11/2014-10-11/
+ISO:     :1,$s/201411050530Z/201411050530Z/g
+PKGSRC:  :1,$s/2014-11-01/2014-11-01/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
 To: port-armNetBSD.org@localhost
@@ -12,10 +12,22 @@ I've updated 2014-11-08-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-11-08-earmhf/2014-11-08-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 7.99.1 evbarm-earmhf 201410142150Z from nyftp.
-- pkgsrc-current 2014-10-11 tarball from ftp.NetBSD.
-- ftp Version 20141026, Fixes CVE-2014-8517 by lukem.
+- NetBSD-current 7.99.1 evbarm-earmhf 201411050530Z from nyftp.
+- pkgsrc-current 2014-11-01 tarball from ftp.NetBSD.
+- NetBSD-SA2014-013 
+  ftp(1) can be made to execute arbitrary commands by a malicious webserver
+- NetBSD-SA2014-014 
+  Multiple vulnerabilities in the mount system call
+- NetBSD-SA2014-015 
+  OpenSSL and SSLv3 vulnerabilities
+- pkgsrc/wget 1.16
+  fix CVE-2014-4877
+
+CAUTION:
 - Restore /usr/X11R7/lib/libxcb.so.1 (backward compat,for a while)
+- backout libc/time 2014h, to avoid mikutter start up hungs.
+ http://www.nerv.org/netbsd/?q=id:20141023T184558Z.eea274c3ec3223ba3552539940fc299657f15af8
+ https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/mikutter/20141105.log
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
@@ -23,7 +35,10 @@ Update:
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-08/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-08/;ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/6.99.39
+
+ GCC4.8 can't compile all packages,so support 6.99.39 pkgsrc binaries.
+
  To install application.
  # pkg_add some_application_name
 
@@ -128,7 +143,7 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-10-11 tree inside.
+  - pkgsrc: 2014-11-01 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-08/
 
