@@ -2,12 +2,9 @@
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
-#FILE=`date +%Y-%m-%d`-netbsd-earm-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201411040040Z.iso
-#IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201410142150Z.iso
-#IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earm-201410261400Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201411050530Z.iso
 
 PKGSRC=pkgsrc-2014-11-01.tar.gz
 
@@ -32,7 +29,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file cdmount rpi extract cdunmount # libxcb
+all: file cdmount rpi extract cdunmount libxcb libc-time
 
 # extract sets to image file.
 extract:
@@ -167,3 +164,12 @@ libxcb:
 	umount ${MNT}
 	vnconfig -u ${VND}
 
+# libc/time: backout 2014i -> 2014h, http://t.co/rPORbgB5UL
+libc-time:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	cp time.20141106/libc.a  ${MNT}/lib
+	cp time.20141106/libc.so.12.196 ${MNT}/usr/lib
+	umount ${MNT}
+	vnconfig -u ${VND}
