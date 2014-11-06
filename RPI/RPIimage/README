@@ -25,8 +25,9 @@ Update:
 
 CAUTION:
 - Restore /usr/X11R7/lib/libxcb.so.1 (backward compat,for a while)
-- backout libc/time 2014h, to avoid mikutter start up hungs.
+- backout libc/time 2014h, to avoid mikutter start up hungs. thanx tsutsui@ !
  http://www.nerv.org/netbsd/?q=id:20141023T184558Z.eea274c3ec3223ba3552539940fc299657f15af8
+ hang message with libc/time 2014i:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/mikutter/20141105.log
 
 - This is hardfloat image: build with earmhf
@@ -64,8 +65,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.7-netbsd6-evbarm-earmhf.tgz for evaluation.
-  3. pkg_add musica-0.3.7-netbsd6-evbarm-earmhf.tgz
+  2. Download musica-0.3.8-netbsd6-evbarm-earmhf.tgz for evaluation.
+  3. pkg_add musica-0.3.8-netbsd6-evbarm-earmhf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
