@@ -22,6 +22,7 @@ Update:
   OpenSSL and SSLv3 vulnerabilities
 - pkgsrc/wget 1.16
   fix CVE-2014-4877
+- medit not dumping core when save the text. (FIXED)
 
 CAUTION:
 - Restore /usr/X11R7/lib/libxcb.so.1 (backward compat,for a while)
@@ -82,7 +83,6 @@ KOBO: kernel: (Thanx h_kenken@)
     go 0x70800000
 
 Todo:
-- medit dumping core when write text. (uim?
 - sound check and more.
 - Summarize /usr/tests result on each version.
 - test COPTS:-fno-reorder-blocks/-fno-tree-vrp/-fno-tree-pre optimization.
