@@ -12,14 +12,14 @@ class EventView
 			return
 		end
 		a = line.split(/ /)
-		@view = a[5]
-	end
-	def searchview2(line)
-		if @view 
-			return
+
+		s=""
+		s=a[5]
+		if s.index("view")
+			@view = a[4]
+		elsif
+			@view = a[5]
 		end
-		a = line.split(/ /)
-		@view = a[4]
 	end
 	def csv
 		if @view == nil
@@ -31,7 +31,7 @@ class EventView
 		@csv = @event + @view
 		@csv = @csv.tr("\n","")
 		@csv = @csv.tr("\\","")
-		print " ",@csv," views\n"
+		print " ",@csv,"\n"
 	end
 end
 
@@ -42,7 +42,11 @@ while line = STDIN.gets
 		line = STDIN.gets
 		line = STDIN.gets
 		line = STDIN.gets
-		a.searchview(line)
-		a.csv
+		if line.index("view")
+			a.searchview(line)
+			a.csv
+		end
+	elsif line.include?("------")
+		break
 	end
 end
