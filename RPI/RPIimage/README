@@ -1,15 +1,15 @@
-VERSION: :1,$s/2014-11-08/2014-11-08/g
+VERSION: :1,$s/2014-11-22/2014-11-22/g
 ISO:     :1,$s/201411050530Z/201411050530Z/g
 PKGSRC:  :1,$s/2014-11-01/2014-11-01/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-11-08-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2014-11-22-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-11-08-netbsd-raspi.img.gz for RPI.
+I've updated 2014-11-22-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-11-08-earmhf/2014-11-08-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-11-22-earmhf/2014-11-22-netbsd-raspi.img.gz
 
 Update:
 - NetBSD-current 7.99.1 evbarm-earmhf 201411050530Z from nyftp.
@@ -33,11 +33,11 @@ CAUTION:
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-11-08-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2014-11-22-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-08/;ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/6.99.39
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-22/;ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/6.99.39
 
  GCC4.8 can't compile all packages,so support 6.99.39 pkgsrc binaries.
 
@@ -100,12 +100,12 @@ Todo:
 
 =====================
 
-For KANSAI OPEN FORUM 2014 NetBSD booth
+For Open Source Conference 2014 Fukuoka NetBSD booth
  demonstration use, I've updated raspberry-pi image.
 
- https://www.facebook.com/events/240804052750197/
+ https://www.facebook.com/events/1610125189211812/
  https://www.facebook.com/NetBSD.jp 
- https://www.soum.co.jp/~jun/kof2014.pdf
+ https://www.soum.co.jp/~jun/OSC2014fukuoka.pdf
 
 - NetBSD 7.99.1 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
@@ -146,7 +146,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2014-11-01 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-08/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-22/
 
 Installed Packages:
 kterm

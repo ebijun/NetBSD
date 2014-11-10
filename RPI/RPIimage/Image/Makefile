@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201411050530Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201411081830Z.iso
 
-PKGSRC=pkgsrc-2014-11-01.tar.gz
+PKGSRC=pkgsrc-2014-11-08.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -29,7 +29,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file cdmount rpi extract cdunmount libxcb libc-time
+all: file cdmount rpi extract cdunmount #libxcb libc-time
 
 # extract sets to image file.
 extract:

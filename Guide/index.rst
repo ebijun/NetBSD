@@ -44,7 +44,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/osaka
+ Place/fukuoka
  Place/intro
  RPI
  Place/asiabsdcon
