@@ -14,15 +14,10 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-11-22-earmhf/2014-11-
 Update:
 - NetBSD-current 7.99.1 evbarm-earmhf 201411050530Z from nyftp.
 - pkgsrc-current 2014-11-01 tarball from ftp.NetBSD.
-- NetBSD-SA2014-013 
-  ftp(1) can be made to execute arbitrary commands by a malicious webserver
-- NetBSD-SA2014-014 
-  Multiple vulnerabilities in the mount system call
-- NetBSD-SA2014-015 
-  OpenSSL and SSLv3 vulnerabilities
-- pkgsrc/wget 1.16
-  fix CVE-2014-4877
-- medit not dumping core when save the text. (FIXED)
+- mlterm 3.4.0
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/11/02/msg113301.html
+- mikutter 3.0.9
+  http://mail-index.netbsd.org/pkgsrc-changes/2014/11/09/msg113580.html
 
 CAUTION:
 - Restore /usr/X11R7/lib/libxcb.so.1 (backward compat,for a while)
