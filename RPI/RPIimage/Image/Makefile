@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201411081830Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmhf-201411131740Z.iso
 
 PKGSRC=pkgsrc-2014-11-08.tar.gz
 
