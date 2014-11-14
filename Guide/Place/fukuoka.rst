@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -29,12 +29,47 @@ Maps:
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/fukuoka.rst
 
-OSC福岡まとめ
+福岡でのオープンソースカンファレンス
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Github/NetBSD/Guide/OSC/OSC100.csv 更新
+
+.. csv-table::
+ :widths: 20 15 20 20 40
+
+ 開催年,開催日,参加者,参加グループ,会場
+ 2007,12/8,250,23,アスクビル
+ 2008,12/13,450,28,福岡大学 文系センター棟
+ 2009,12/5,430,14,九州産業大学 情報科学部棟
+ 2010,12/11,520,30,福岡工業大学 α棟
+ 2011,12/3,420,26,筑紫女学園大学
+ 2012,12/8,550,38,KCS福岡情報専門学校
+ 2013,11/16,500,25,福岡ソフトリサーチパーク センタービル
+ 2014,11/21-22,,23,福岡ソフトリサーチパーク センタービル
+
+観光ガイドバックナンバー 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+これまですべてのバックナンバーは 
+https://github.com/ebijun/osc-demo　にあります。
+
+.. csv-table::
+ :widths: 20 30 80
+
+ No,イベント,URL
+ 66,OSC2014福岡,http://www.soum.co.jp/~jun/OSC2014fukuoka.pdf
+ 51,OSC2013福岡,http://www.soum.co.jp/~jun/OSC2013fukuoka.pdf
+ 37,OSC2012福岡,http://www.soum.co.jp/~jun/OSC2012fukuoka.pdf
+ 20,OSC2011福岡,http://www.soum.co.jp/~jun/OSC2011fukuoka.pdf
+  4,OSC2010福岡,http://www.soum.co.jp/~jun/OSC2010fukuoka.pdf
+
+togetterまとめ
 ~~~~~~~~~~~~~
 
 .. csv-table::
  :widths: 70 70
 
+ OSC2014福岡 NetBSDブース展示の記録,
+ OSC2013福岡 NetBSDブース展示の記録,http://togetter.com/li/590835
  OSC2012福岡 NetBSDブース展示の記録,http://togetter.com/li/419569
 
 
@@ -46,18 +81,18 @@ OSC福岡まとめ
 
  PADDY,渡辺通,地ビール。前日夜はたいていここにいます。
  balance,赤坂,スペースインベーダーズなマスター
- 芫,清川,とんちピクルスさん　
+ 芫,清川,「げん」。とんちピクルスさん 19:00-2:00
  一楽,九産大,NARUTOに出てくるラーメン店
  照和,天神,陽水とか甲斐バンドとか
  楽天地,春吉,もつ鍋 山本昌のサイン席
  ハムジン,小倉,九州の秋葉原 博多になくなってしまった。
  五郎山古墳,原田,横穴式石室と歴史博物館
  カホパーツセンター,天神,博多最大のパーツショップ
- ブルーマスター,別府,あまおうエール
+ ブルーマスター,別府,あまおうエール 12:00-18:00 日祝休 
  大賀酒造,二日市,玉出泉。福岡で一番古い酒蔵
  スナックなう,別府,泥酔通りにあるスナックなうなう。
  CRAIC AND THE PORTER,天神,ギネス＆ポーグスのビデオで合唱
- simoon,渡辺通,鉄鍋餃子近く。来店した細野さんのサインがある
+ simoon,渡辺通,鉄鍋餃子近く。来店した細野さんのサインがある(閉店
  CLURICAUNE,別府,注ぐのが最高にうまいマスターが
  Three kings,大名,オフブロードウェイのルイスさんがやってる
  三喜屋酒店,博多駅前,立ち飲み。刺身とかあったら頼む
@@ -69,13 +104,22 @@ OSC福岡まとめ
  art space tetra,須崎町,アーチスト共同経営のアートスペース
  Off Broadway,親不孝,ルイスさんのバー。牛丼があったりして。
 
+OSC福岡発表
+~~~~~~~~~~~~
+
+.. csv-table::
+ :widths: 30 35 99
+
+ pkgsrcとは何か,OSC2013福岡,おばたさん
+
+
 OSC福岡主な展示物
 ~~~~~~~~~~~~~~~~~
 
 .. csv-table::
- :widths: 15 15 60
+ :widths: 15 35 60
 
- 2013/11/16,福岡ソフトリサーチパーク,RPI
+ 2013/11/16,福岡ソフトリサーチパーク,RPI Netwalker XM6i
  2012/12/8,福岡情報専門学校,WZero3 Zaurus XM6i
  2011/12/3,筑紫女学院,hpcmips/hpcarm/Jornada680/WZero3/Xen4+teokure
  2010/12/11,福岡工業大学,hpcmips/hpcarm/Jornada680/WZero3
@@ -83,47 +127,51 @@ OSC福岡主な展示物
  2008/12/13,福岡大学,hpcmips/hpcarm/Jornada680/WZero3/USBカメラ
  2007/12/8,ASCビル,hpcmips/hpcarm/Jornada680
 
-
-.. image:: /Picture/2010/12/10/P1000102.JPG
-.. image:: /Picture/2010/12/10/P1000104.JPG
-.. image:: /Picture/2010/12/10/P1000107.JPG
-.. image:: /Picture/2010/12/10/P1000109.JPG
-.. image:: /Picture/2010/12/10/P1000110.JPG
-.. image:: /Picture/2010/12/10/P1000113.JPG
-.. image:: /Picture/2010/12/11/P1000115.JPG
-.. image:: /Picture/2010/12/11/P1000116.JPG
-.. image:: /Picture/2011/12/02/P1001367.JPG
-.. image:: /Picture/2011/12/02/P1001371.JPG
-.. image:: /Picture/2011/12/02/P1001372.JPG
-.. image:: /Picture/2011/12/02/P1001373.JPG
-.. image:: /Picture/2011/12/02/P1001376.JPG
-.. image:: /Picture/2011/12/02/P1001377.JPG
-.. image:: /Picture/2011/12/02/P1001379.JPG
-.. image:: /Picture/2011/12/02/P1001380.JPG
-.. image:: /Picture/2011/12/02/P1001381.JPG
-.. image:: /Picture/2011/12/03/P1001383.JPG
-.. image:: /Picture/2011/12/03/P1001384.JPG
-.. image:: /Picture/2011/12/03/P1001385.JPG
-.. image:: /Picture/2011/12/03/P1001386.JPG
-.. image:: /Picture/2011/12/03/P1001389.JPG
-.. image:: /Picture/2011/12/04/P1001390.JPG
-.. image:: /Picture/2011/12/04/P1001392.JPG
-.. image:: /Picture/2011/12/04/P1001393.JPG
-.. image:: /Picture/2011/12/04/P1001394.JPG
-.. image:: /Picture/2011/12/04/P1001395.JPG
-.. image:: /Picture/2011/12/04/P1001396.JPG
-.. image:: /Picture/2011/12/04/P1001397.JPG
-.. image:: /Picture/2011/12/04/P1001398.JPG
-.. image:: /Picture/2012/12/08/DSC_1364.jpg
-.. image:: /Picture/2012/12/08/DSC_1365.jpg
-.. image:: /Picture/2012/12/08/DSC_1367.jpg
-.. image:: /Picture/2012/12/08/DSC_1368.jpg
-.. image:: /Picture/2012/12/08/DSC_1369.jpg
-.. image:: /Picture/2012/12/08/DSC_1370.jpg
-.. image:: /Picture/2012/12/08/DSC_1371.jpg
-.. image:: /Picture/2012/12/08/DSC_1373.jpg
-.. image:: /Picture/2012/12/08/DSC_1374.jpg
-.. image:: /Picture/2012/12/08/DSC_1376.jpg
-.. image:: /Picture/2012/12/08/DSC_1377.jpg
-.. image:: /Picture/2012/12/08/DSC_1379.jpg
-
+.. image:: ../Picture/2013/11/15/DSC_2876.jpg
+.. image:: ../Picture/2013/11/15/DSC_2877.jpg
+.. image:: ../Picture/2013/11/16/DSC_2878.jpg
+.. image:: ../Picture/2013/11/16/DSC_2879.jpg
+.. image:: ../Picture/2013/11/16/DSC_2880.jpg
+.. image:: ../Picture/2013/11/16/DSC_2883.jpg
+.. image:: ../Picture/2013/11/16/DSC_2885.jpg
+.. image:: ../Picture/2013/11/16/DSC_2886.jpg
+.. image:: ../Picture/2013/11/16/DSC_2887.jpg
+.. image:: ../Picture/2013/11/16/DSC_2888.jpg
+.. image:: ../Picture/2013/11/16/dsc03631.jpg
+.. image:: ../Picture/2013/11/16/dsc03632.jpg
+.. image:: ../Picture/2013/11/16/dsc03635.jpg
+.. image:: ../Picture/2012/12/08/DSC_1364.jpg
+.. image:: ../Picture/2012/12/08/DSC_1368.jpg
+.. image:: ../Picture/2012/12/08/DSC_1369.jpg
+.. image:: ../Picture/2012/12/08/DSC_1370.jpg
+.. image:: ../Picture/2012/12/08/DSC_1371.jpg
+.. image:: ../Picture/2012/12/08/DSC_1374.jpg
+.. image:: ../Picture/2012/12/08/DSC_1376.jpg
+.. image:: ../Picture/2012/12/08/DSC_1377.jpg
+.. image:: ../Picture/2011/12/02/P1001371.JPG
+.. image:: ../Picture/2011/12/02/P1001372.JPG
+.. image:: ../Picture/2011/12/02/P1001376.JPG
+.. image:: ../Picture/2011/12/02/P1001377.JPG
+.. image:: ../Picture/2011/12/02/P1001380.JPG
+.. image:: ../Picture/2011/12/02/P1001381.JPG
+.. image:: ../Picture/2011/12/03/P1001383.JPG
+.. image:: ../Picture/2011/12/03/P1001384.JPG
+.. image:: ../Picture/2011/12/03/P1001385.JPG
+.. image:: ../Picture/2011/12/03/P1001386.JPG
+.. image:: ../Picture/2011/12/03/P1001389.JPG
+.. image:: ../Picture/2011/12/04/P1001390.JPG
+.. image:: ../Picture/2011/12/04/P1001392.JPG
+.. image:: ../Picture/2011/12/04/P1001393.JPG
+.. image:: ../Picture/2011/12/04/P1001394.JPG
+.. image:: ../Picture/2011/12/04/P1001395.JPG
+.. image:: ../Picture/2011/12/04/P1001396.JPG
+.. image:: ../Picture/2011/12/04/P1001397.JPG
+.. image:: ../Picture/2011/12/04/P1001398.JPG
+.. image:: ../Picture/2010/12/10/P1000102.JPG
+.. image:: ../Picture/2010/12/10/P1000104.JPG
+.. image:: ../Picture/2010/12/10/P1000107.JPG
+.. image:: ../Picture/2010/12/10/P1000109.JPG
+.. image:: ../Picture/2010/12/10/P1000110.JPG
+.. image:: ../Picture/2010/12/10/P1000113.JPG
+.. image:: ../Picture/2010/12/11/P1000115.JPG
+.. image:: ../Picture/2010/12/11/P1000116.JPG
