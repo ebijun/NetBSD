@@ -1,5 +1,5 @@
 VERSION: :1,$s/2014-11-22/2014-11-22/g
-ISO:     :1,$s/201411131740Z/201411131740Z/g
+ISO:     :1,$s/201411142340Z/201411142340Z/g
 PKGSRC:  :1,$s/2014-11-15/2014-11-15/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
@@ -12,7 +12,7 @@ I've updated 2014-11-22-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-11-22-earmhf/2014-11-22-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 7.99.1 evbarm-earmhf 201411131740Z from nyftp.
+- NetBSD-current 7.99.1 evbarm-earmhf 201411142340Z from nyftp.
 - pkgsrc-current 2014-11-15 tarball from ftp.NetBSD.
 - mlterm 3.4.0
   http://mail-index.netbsd.org/pkgsrc-changes/2014/11/02/msg113301.html
@@ -32,9 +32,7 @@ CAUTION:
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-22/;ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/6.99.39
-
- GCC4.8 can't compile all packages,so support 6.99.39 pkgsrc binaries.
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-22/
 
  To install application.
  # pkg_add some_application_name
@@ -61,8 +59,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.8-netbsd6-evbarm-earmhf.tgz for evaluation.
-  3. pkg_add musica-0.3.8-netbsd6-evbarm-earmhf.tgz
+  2. Download musica-0.3.9-netbsd6-evbarm-earmhf.tgz for evaluation.
+  3. pkg_add musica-0.3.9-netbsd6-evbarm-earmhf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
