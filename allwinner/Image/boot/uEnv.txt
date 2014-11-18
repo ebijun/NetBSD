@@ -1,0 +1,2 @@
+bootargs=root=ld0a sysconfig=0x43000000 console=fb
+uenvcmd=mmc dev 0; mmc rescan; fatload mmc 0:1 43000000 cubieboard2.bin; fatload mmc 0:1 82000000 netbsd.ub; bootm 82000000
