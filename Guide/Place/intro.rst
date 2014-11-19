@@ -205,15 +205,7 @@ SSL設定
 
 LibreOfficeを動かしてみる
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-LibreOfficeをインストールしてみましょう。まず、
- /etc/mk.confに、設定を追加します。
-
-::
-
- PKG_LANG=japanese
-
-
-次に、pkgsrcからLibreOfficeをインストールします。
+LibreOfficeをインストールしてみましょう。
 
 ::
 
