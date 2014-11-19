@@ -643,7 +643,7 @@ Packageとライセンスの取扱い
 バイナリ互換性を利用する
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Cobalt　Qube２でhpcmipsバイナリ作成
+* Cobalt Qube2でhpcmipsバイナリ作成
 * MIPSでendian little =mipsel同士なら動く
 * ユーザランドはほとんどそのまま動く
 * パッケージも共通化
