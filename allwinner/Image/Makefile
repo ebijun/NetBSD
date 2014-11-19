@@ -113,8 +113,8 @@ logclean:
 	rm -f ${MNT}/var/log/wtmpx
 	rm -f ${MNT}/var/log/wtmpx.0.gz
 	rm -f ${MNT}/var/log/wtmp.0.gz
-	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease
-	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease6
+	rm -f ${MNT}/var/db/dhcpcd-awge0.lease
+	rm -f ${MNT}/var/db/dhcpcd-awge0.lease6
 	rm -f ${MNT}/root/dmesg
 	rm -f ${MNT}/root/pkginfo
 	rm -rf ${MNT}/var/run/dhcpcd
@@ -160,3 +160,6 @@ uboot-copy:
 # FEX : for Board Configration, copy into /boot and set uEnv.txt
 fex-update:
 	(cd fex;ftp ${FEXURL}/${FEX})
+
+fex-copy:
+	cp fex/${FEX} boot/
