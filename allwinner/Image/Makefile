@@ -13,6 +13,10 @@ BOARD=cubieboard2
 UBOOTURL=http://dl.linux-sunxi.org/nightly/u-boot-sunxi/u-boot-sunxi/u-boot-sunxi-latest/
 UBOOTVER=u-boot-sunxi-cubieboard2-20141106T184228-30bf0a5
 
+# FEX
+FEX=cubieboard2.bin
+FEXURL=http://ftp.netbsd.org/pub/NetBSD/misc/jmcneill/allwinner/fex
+
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
 beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/beagleboard.img
@@ -20,7 +24,7 @@ beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/beagleboard.img
 # kernels
 TYPE=CUBIEBOARD
 KERNEL=${MNT_CDROM}/evbarm/binary/kernel/netbsd-${TYPE}.gz
-KERNELBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-${TYPE}.bin.gz
+KERNELBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-${TYPE}.ub.gz
 
 NETWALKER=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.gz
 NETWALKERBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.bin.gz
@@ -50,7 +54,7 @@ extract:
 	echo extract pkgsrc.
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mount_msdos /dev/${VND}e ${MNT}/boot
-#	gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
+	gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -152,3 +156,7 @@ uboot-update:
 
 uboot-copy:
 	dd if=u-boot/${UBOOTVER}/u-boot-sunxi-with-spl.bin of=${FILE} bs=1k seek=8 conv=notrunc
+
+# FEX : for Board Configration, copy into /boot and set uEnv.txt
+fex-update:
+	(cd fex;ftp ${FEXURL}/${FEX})
