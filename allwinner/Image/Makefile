@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-allwinner.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmv7hf-201411131740Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmv7hf-201411182200Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2014-11-15.tar.gz
 
@@ -13,13 +13,9 @@ BOARD=cubieboard2
 UBOOTURL=http://dl.linux-sunxi.org/nightly/u-boot-sunxi/u-boot-sunxi/u-boot-sunxi-latest/
 UBOOTVER=u-boot-sunxi-cubieboard2-20141106T184228-30bf0a5
 
-# FEX
+# FEX : for Board Configration
 FEX=cubieboard2.bin
 FEXURL=http://ftp.netbsd.org/pub/NetBSD/misc/jmcneill/allwinner/fex
-
-# extract sets.
-SETS=${MNT_CDROM}/evbarm/binary/sets
-beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/beagleboard.img
 
 # kernels
 TYPE=CUBIEBOARD
@@ -32,6 +28,10 @@ NETWALKERBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.bin.gz
 KOBO=${MNT_CDROM}/evbarm/binary/kernel/netbsd-ld0-KOBO.gz
 KOBOBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-ld0-KOBO.bin.gz
 KOBOUBOOT=${MNT_CDROM}/evbarm/binary/kernel/netbsd-ld0-KOBO.ub.gz
+
+# extract sets.
+SETS=${MNT_CDROM}/evbarm/binary/sets
+beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/beagleboard.img
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules tests text xbase xcomp xetc xfont xserver 
