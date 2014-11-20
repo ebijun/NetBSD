@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-allwinner.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmv7hf-201411182200Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.1-evbarm-earmv7hf-201411191440Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2014-11-15.tar.gz
 
