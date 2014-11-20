@@ -1,5 +1,5 @@
 VERSION: :1,$s/2014-11-22/2014-11-22/g
-ISO:     :1,$s/201411131740Z/201411131740Z/g
+ISO:     :1,$s/201411191440Z/201411191440Z/g
 PKGSRC:  :1,$s/2014-11-15/2014-11-15/
 NetBSD:  :1,$s/7.99.1/7.99.1/g
 
@@ -15,7 +15,7 @@ Overview:
   http://wiki.NetBSD.org/ports/evbarm/allwinner/
 
 Update:
-- NetBSD-current 7.99.1 evbarm-earmv7hf 201411131740Z from nyftp.
+- NetBSD-current 7.99.1 evbarm-earmv7hf 201411191440Z from nyftp.
 - pkgsrc-current 2014-11-15 tarball from ftp.NetBSD.
 - dmesg: https://github.com/ebijun/NetBSD/blob/master/allwinner/dmesg
 
@@ -44,6 +44,7 @@ For Open Source Conference 2014 Fukuoka NetBSD booth
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
+- mikutter and so on.
 
 Features:
   - fit size for 2GB SD Card
@@ -56,12 +57,25 @@ Features:
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/earmv7hf/2014-11-22/
 
 Installed Packages:
+
 kterm
 bash
 tcsh
 vlgothic-ttf
 icewm
 xli
+ruby200-mikutter
+uim
+fossil
+sudo
+git-base
+zsh
+mlterm
+pkg_chk
+lintpkgsrc
+mozilla-rootcerts
+dillo
+medit
 
 To control HDMI output,add/delete "console=fb" on uEnv.txt.
 If delete console=fb definition,you can get serial console instead.
