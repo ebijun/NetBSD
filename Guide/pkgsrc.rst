@@ -50,7 +50,7 @@ pkgsrcでソフトウェアをインストールする
 ::
 
  tcsh,icewm,kterm,anthy-elisp,ja-less
- openoffice,firefox,gimp ...
+ libreoffice4,firefox,gimp ...
 
 pkgsrcをダウンロード
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -86,14 +86,14 @@ pkgsrcをダウンロード
  chat         filesystems  mail         parallel     time
 
 ソフトウェアをコンパイルしてインストールする枠組みが、/usr/pkgsrc/ジャンル/ソフトウェア名 以下にあります。
-OpenOfficeをコンパイルして、インストールしたいときには、次のようにコマンドを実行します。
+LibreOfficeをコンパイルして、インストールしたいときには、次のようにコマンドを実行します。
 
 ::
 
- # cd /usr/pkgsrc/misc/openoffice
+ # cd /usr/pkgsrc/misc/libreoffice4
  # make package-install
 
-うまくコンパイルしてインストールできると、openofficeを実行出来ます。
+うまくコンパイルしてインストールできると、LibreOfficeを実行出来ます。
 
 ::
 
@@ -416,7 +416,6 @@ LibreOffice
 ::
 
  # grep libreoffice4 /etc/mk.conf
- # PKG_OPTIONS.libreoffice4=lang-ja
  # cd /usr/pkgsrc/misc/libreoffice4
  # make package-install
  % /usr/pkg/bin/soffice 
@@ -617,6 +616,8 @@ Package対応プラットフォーム
 #. MirBSD
 #. Minix3
 #. Cygwin
+#. GNU/kFreeBSD
+#. SCO OpenServer 5
 
 NetBSD以外でpkgsrc
 ~~~~~~~~~~~~~~~~~~
@@ -643,7 +644,7 @@ Packageとライセンスの取扱い
 バイナリ互換性を利用する
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Cobalt　Qube２でhpcmipsバイナリ作成
+* Cobalt Qube2でhpcmipsバイナリ作成
 * MIPSでendian little =mipsel同士なら動く
 * ユーザランドはほとんどそのまま動く
 * パッケージも共通化
