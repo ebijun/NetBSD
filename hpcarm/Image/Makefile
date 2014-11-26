@@ -4,8 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-hpcarm-201411191440Z.iso
-PKGSRC=../../pkgsrc/pkgsrc-2014-11-15.tar.gz
+IMAGE=/usr/release/images/NetBSD-7.99.1-hpcarm-201411260130Z.iso
+PKGSRC=../../pkgsrc/pkgsrc-2014-11-22.tar.gz
 
 SETS=/mnt1/hpcarm/binary/sets
 INSTALLATION=/mnt1/hpcarm/installation
@@ -55,6 +55,7 @@ extract:
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
+	(cd ${MNT}/dev;./MAKEDEV all)
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mkdir ${MNT}/msdos
 	mkdir ${MNT}/kern
@@ -95,7 +96,6 @@ release:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	tar cvpf - etc root  |(cd /mnt;tar xvpf -)
-	(cd /mnt/dev;./MAKEDEV all)
 	umount ${MNT}
 	vnconfig -u ${VND}
 
