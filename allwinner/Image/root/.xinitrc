@@ -50,6 +50,9 @@ export BROWSER=dillo
 
 xterm  -geometry 80x25+0+0 &
 
+# set audio to HDMI. audiocfg list 
+audiocfg default 1
+
 if [ -f /usr/pkg/bin/icewm ]; then
     icewm
 else
