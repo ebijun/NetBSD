@@ -1,20 +1,19 @@
-:1,$s/hpcarm/hpcarm/g
-VERSION: :1,$s/2014-09-18/2014-09-18/g
-ISO:     :1,$s/201409111203/201409111203/g
-PKGSRC:  :1,$s/2014-09-13/2014-09-13/
-NetBSD:  :1,$s/6.1.4/6.1.4/g
+VERSION: :1,$s/2014-11-27/2014-11-27/g
+ISO:     :1,$s/201411220850Z/201411220850Z/g
+PKGSRC:  :1,$s/2014-11-22/2014-11-22/
+NetBSD:  :1,$s/6.1.5/6.1.5/g
 
 To: port-hpcarmnetbsd.org@localhost
-Subject: 2014-09-18-netbsd6-hpcarm.img 
+Subject: 2014-11-27-netbsd6-hpcarm.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-09-18-netbsd6-hpcarm.img.gz for hpcarm.
+I've updated 2014-11-27-netbsd6-hpcarm.img.gz for hpcarm.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-09-18-netbsd6-hpcarm.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-11-27-netbsd6-hpcarm.img.gz
 
 Feature:
-- NetBSD 6.1.4 hpcarm from ftp.netbsd
-- pkgsrc-current 2014-09-13 tarball from ftp.NetBSD.
+- NetBSD 6.1.5-PATCH-201411220850Z hpcarm from nyftp.netbsd
+- pkgsrc-current 2014-11-22 tarball from ftp.NetBSD.
 - dmesg:
   https://github.com/ebijun/NetBSD/blob/master/hpcarm/Image/dmesg
 
@@ -28,15 +27,17 @@ PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
  /etc/mk.conf.
 
 Todo:
-- switch to earm
+- switch to hpcearm
+  NetBSD-7.99.1-hpcarm-201411260130Z boot fine,
+  but random hungs during pkgsrc build.
 
 =====================
 
-For OpenSourceConference 2014 Hiroshima NetBSD booth
-(https://www.facebook.com/events/285463901620247/)
+For OpenSourceConference 2015 Oita NetBSD booth
+(https://www.facebook.com/events/383442128496493/)
 demonstration use, I've updated hpcarm image.
 
-- NetBSD 6.1.4 base
+- NetBSD 6.1.5 base
 - Copy image to Mini/MicroSD.
 - Set WZERO3.
 - boot hpcboot.exe
@@ -44,6 +45,9 @@ demonstration use, I've updated hpcarm image.
 -- select root partition
   and comes as you are as you want to be.
 - login root (no passwd)
+- check symblic link:
+  default:
+  ls -l /etc/X11/xorg.conf -> xorg.conf.ws011sh
 - startx ,and icewm running.
 - running mikutter.
 
@@ -53,7 +57,7 @@ demonstration use, I've updated hpcarm image.
 Features:
   - fit size for 2GB SD Card
   - with X11
-  - pkgsrc: 2014-09-13 tree inside.
+  - pkgsrc: 2014-11-22 tree inside.
   - pre-build packages
     http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
 
