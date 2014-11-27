@@ -1,0 +1,9 @@
+from http://wiki.netbsd.org/ports/evbarm/allwinner/#index7h1
+ 
+Framebuffer console
+ 
+To use HDMI for the console device, add console=fb to bootargs in uEnv.txt.
+ 
+If the connected display does not let you disable overscan, you can add a margin
+ to the framebuffer by with the fb.margin bootargs option. For example, to set a
+ 25-pixel margin around the screen, add fb.margin=25 to uEnv.txt
