@@ -14,7 +14,8 @@ KERNEL=/mnt1/hpcmips/binary/kernel
 
 # extract sets.
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-LIST=base etc comp man modules text xbase xcomp xetc xfont xserver 
+#LIST=base etc comp man modules text xbase xcomp xetc xfont xserver 
+LIST=base etc comp man text xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
@@ -73,7 +74,7 @@ bootarea:
 	cp ${INSTALLATION}/hpcboot.exe ${MNT}
 	cp ${KERNEL}/netbsd-GENERIC.gz ${MNT}
 	cp ${KERNEL}/netbsd-TX3912.gz ${MNT}
-	cp msdos/hpcboot.cnf ${MNT}
+#	cp msdos/hpcboot.cnf ${MNT}
 	
 	umount ${MNT}
 	vnconfig -u ${VND}
