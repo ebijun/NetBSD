@@ -14,7 +14,7 @@ Feature:
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
+PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
  To install application.
  # pkg_add some_application_name
 
@@ -46,7 +46,7 @@ Features:
   - with X11
   - pkgsrc: 2014-11-22 tree inside.
   - pre-build packages
-    http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
+    http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
 
 Installed Packages:
  not yet.
