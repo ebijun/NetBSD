@@ -14,7 +14,7 @@ Feature:
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
+PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
  To install application.
  # pkg_add some_application_name
 
@@ -24,7 +24,7 @@ PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
 Todo:
 - switch to hpcearm
   NetBSD-7.99.1-hpcarm-201411260130Z boot fine,
-  but random hungs during pkgsrc build.
+  but still random hungs.
 
 - NetBSD 6.1.5 base
 - Copy image to Mini/MicroSD.
@@ -37,8 +37,7 @@ Todo:
 - check symblic link:
   default:
   ls -l /etc/X11/xorg.conf -> xorg.conf.ws011sh
-- startx ,and icewm running.
-- running mikutter.
+- startx
 
   # startx
 
@@ -47,7 +46,7 @@ Features:
   - with X11
   - pkgsrc: 2014-11-22 tree inside.
   - pre-build packages
-    http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
+    http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
 
 Installed Packages:
  not yet.
