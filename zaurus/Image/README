@@ -1,26 +1,26 @@
 :1,$s/zaurus/zaurus/g
-VERSION: :1,$s/2014-09-17/2014-09-17/g
-ISO:     :1,$s/201409111203/201409111203/g
-PKGSRC:  :1,$s/2014-09-13/2014-09-13/
-NetBSD:  :1,$s/6.1.4/6.1.4/g
+VERSION: :1,$s/2014-11-28/2014-11-28/g
+ISO:     :1,$s/201411270820Z/201411270820Z/g
+PKGSRC:  :1,$s/2014-11-22/2014-11-22/
+NetBSD:  :1,$s/6.1.5/6.1.5/g
 
 To: port-zaurusnetbsd.org@localhost
-Subject: 2014-09-17-netbsd6-zaurus.img 
+Subject: 2014-11-28-netbsd6-zaurus.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-09-17-netbsd6-zaurus.img.gz for SHARP ZAURUS.
+I've updated 2014-11-28-netbsd6-zaurus.img.gz for SHARP ZAURUS.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus/2014-09-17-netbsd6-zaurus.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus/2014-11-28-netbsd6-zaurus.img.gz
 
 Feature:
-- NetBSD 6.1.4 zaurus 201409111203 from nyftp.
-- pkgsrc-current 2014-09-13 tarball from ftp.NetBSD.
+- NetBSD 6.1.5 zaurus 201411270820Z from nyftp.
+- pkgsrc-current 2014-11-22 tarball from ftp.NetBSD.
 - dmesg:
   https://github.com/ebijun/NetBSD/blob/master/zaurus/Image/dmesg
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
+PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
  To install application.
  # pkg_add some_application_name
 
@@ -36,7 +36,7 @@ For OpenSourceConference 2014 Hiroshima NetBSD booth
 (https://www.facebook.com/events/285463901620247/)
 demonstration use, I've updated zaurus image.
 
-- NetBSD 6.1.4 base
+- NetBSD 6.1.5 base
 - Copy image to CF.
 - Boot zaurus as built in linux.
 - su;cd /mnt/cf;./Boot
@@ -51,9 +51,9 @@ demonstration use, I've updated zaurus image.
 Features:
   - fit size for 2GB SD Card
   - with X11
-  - pkgsrc: 2014-09-13 tree inside.
+  - pkgsrc: 2014-11-22 tree inside.
   - pre-build packages
-    http://teokurebsd.org/netbsd/packages/arm/6.1.4_2014Q1/All/
+    http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
 
 Installed Packages:
  https://github.com/ebijun/NetBSD/blob/master/zaurus/Image/pkgsrc/pkginfo
