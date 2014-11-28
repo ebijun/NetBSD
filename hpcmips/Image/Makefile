@@ -1,23 +1,20 @@
 # Makefile for NetBSD/hpcmips image.
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
+FILE=`date +%Y-%m-%d`-netbsd5-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.1-hpcmips-201409101620Z.iso
-#IMAGE=/usr/release/images/hpcmipscd.iso #5.0
-PKGSRC=../../pkgsrc/pkgsrc-2014-09-06.tar.gz
+#IMAGE=/usr/release/images/NetBSD-7.99.1-hpcmips-201411260130Z.iso
+IMAGE=/usr/release/images/NetBSD-5.2_STABLE-hpcmips-201411260820Z.iso
+PKGSRC=../../pkgsrc/pkgsrc-2014-11-22.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
-KERNELPATH=/mnt1/hpcmips/binary/kernel
 INSTALLATION=/mnt1/hpcmips/installation
-
-KERNEL=netbsd-GENERIC.gz
-KERNEL-TX=netbsd-TX3912.gz
-INSTALLKERNEL=netbsd-install.gz
+KERNEL=/mnt1/hpcmips/binary/kernel
 
 # extract sets.
-LIST=base etc comp man modules tests text xbase xcomp xetc xfont xserver kern-GENERIC
+#LIST=man misc modules tests text xbase xcomp xetc xfont xserver
+LIST=base etc comp man modules text xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
@@ -40,8 +37,8 @@ newfs:
 	disklabel -R ${VND} DISKLABEL.proto
 	newfs_msdos /dev/r${VND}e
 	newfs -n 600000 /dev/r${VND}a
-	vnconfig -u ${VND}
 	fdisk -ufF -0 -s 6/32/122848 ${FILE} #DOS partition:DISKLABEL.proto
+	vnconfig -u ${VND}
 
 cdmount:
 	echo mount cdrom image.
@@ -59,10 +56,11 @@ extract:
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
+	(cd ${MNT}/dev;./MAKEDEV all)
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
+	mkdir ${MNT}/msdos
 	mkdir ${MNT}/kern
 	mkdir ${MNT}/proc
-	mkdir ${MNT}/msdos
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -73,12 +71,9 @@ bootarea:
 	mount /dev/${VND}e ${MNT}
 	
 	cp ${INSTALLATION}/hpcboot.exe ${MNT}
-	cp ${INSTALLATION}/pbsdboot.exe ${MNT}
-	cp ${INSTALLATION}/pbsdboot1.exe ${MNT}
-	cp ${KERNELPATH}/${KERNEL} ${MNT}
-	cp ${KERNELPATH}/${KERNEL-TX} ${MNT}
-	cp ${KERNELPATH}/${KERNEL} .
-	cp ${KERNELPATH}/${KERNEL-TX} .
+	cp ${KERNEL}/netbsd-GENERIC.gz ${MNT}
+	cp ${KERNEL}/netbsd-TX3912.gz ${MNT}
+	cp msdos/hpcboot.cnf ${MNT}
 	
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -102,20 +97,11 @@ release:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	tar cvpf - etc root  |(cd /mnt;tar xvpf -)
-	(cd /mnt/dev;./MAKEDEV all)
 	umount ${MNT}
 	vnconfig -u ${VND}
 
 # fetch newest isofileimage
-fetch:  
+fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch
-
-# Setup via gxemul
-boot:
-	gxemul -e mobilepro770 -M 256 -I 800000000  -d ${FILE} ${KERNEL}
-
-bootinstall:
-        gxemul -e mobilepro770 -d ${FILE} -d c:${IMAGE} ${INSTALLKERNEL}
-
