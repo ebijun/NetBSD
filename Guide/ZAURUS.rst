@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -175,6 +175,42 @@ startxコマンドを実行すると、Xサーバが起動します。
       :
  #    Option  "Rotate"   "CW"   ... この行をコメントアウトしてください。
  EndSection
+
+NetBSD6.1.4用イメージ
+---------------------------
+NetBSD6.1.4用のイメージを作りました。
+ http://mail-index.netbsd.org/port-zaurus/2014/09/17/msg000055.html
+
+::
+
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus/2014-09-17-netbsd6-zaurus.img.gz
+
+このイメージを2GB以上の容量のコンパクトフラッシュにコピーします。
+
+::
+
+ # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus/2014-09-17-netbsd6-zaurus.img.gz
+ # gunzip < 2014-09-17-netbsd6-zaurus.img.gz |dd of=/dev/コンパクトフラッシュのデバイス 
+ 例)
+ # gunzip < 2014-09-17-netbsd6-zaurus.img.gz |dd of=/dev/rsd3d
+ ザウルスを起動します。
+ # cd /mnt/cf
+ # ./Boot
+ で起動します。
+ 
+ZAURUS用の動くイメージを作ってみる
+-------------------------------------
+
+ https://github.com/ebijun/NetBSD/tree/master/zaurus/Image の下にある
+ Makefileを見てみてください。
+
+::
+
+ # make
+ # make release
+
+とすると、イメージファイルができます。
+
 
 参考リンク
 ---------
