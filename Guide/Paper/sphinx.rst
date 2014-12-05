@@ -92,7 +92,7 @@ NetBSDならinkscapeが使えます。
 
 ::
 
-　# pkgsrc/textproc/py-sphinx
+　# cd /usr/pkgsrc/textproc/py-sphinx
   # make package-install
 
 
