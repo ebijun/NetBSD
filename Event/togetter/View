@@ -48,5 +48,7 @@ while line = STDIN.gets
 		end
 	elsif line.include?("------")
 		break
+	elsif line.include?(' [](')
+		print line[line.index("http")..(line.rindex(")\n")-1)],","
 	end
 end
