@@ -238,7 +238,7 @@ gmake singlehtmlを実行します。すべての文章が一つのhtmlファイ
  % ls _build/singlehtml
  _images      _static      index.html   objects.inv
 
-まとまった文章をfirefoxで開きます。全体を20ページにするなら、表紙を裏表紙を抜いた18ページ分になるよう、firefoxの表示縮尺を調整して、PDFで出力します。
+まとまった文章をfirefoxで開きます。全体を20ページにするなら、表紙と裏表紙2ページ分を抜いた18ページ分になるよう、firefoxの表示縮尺を調整して、PDFで出力します。
 
  % firefox _build/singlehtml/index.html
 
