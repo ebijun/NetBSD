@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -63,10 +63,9 @@ WS011SH/WS020SH Windows Mobile6用
 
 NetBSDディスクイメージのダウンロード
 -----------------------------------
-筒井さんによる、NetBSDインストール済みのディスクイメージファイルがあります。
+NetBSD6.1.5インストール済みのディスクイメージファイルを作りました。
 
-| http://teokurebsd.org/netbsd/liveimage/liveimage-wzero3-20120401.img.gz
-| ftp http://teokurebsd.org/netbsd/liveimage/liveimage-wzero3-20120401.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-12-06-netbsd6-hpcarm.img.gz
 
 ディスクイメージをコンパクトフラッシュにコピーする
 -----------------------------------------------
@@ -86,10 +85,7 @@ NetBSDディスクイメージのダウンロード
  d:   3987456         0     unused      0     0        # (Cyl.      0 -   1946)
  e:   3987209       247      MSDOS                     # (Cyl.      0*-   1946)
  　　　... NetBSDではdパーティションがディスク全体になります。
- # gunzip <　liveimage-wzero3-20120401.img.gz |dd of=/dev/rsd3d bs=1m
- 0+30208 records in
- 0+30208 records out
- 1979711488 bytes transferred in 263.802 secs (7504535 bytes/sec)
+ # gunzip <　2014-12-06-netbsd6-hpcarm.img.gz |dd of=/dev/rsd3d bs=1m
  USBカードリーダーを差し直します。
  # disklabel sd3
  #        size    offset     fstype  fsize bsize cpg/sgs
@@ -104,7 +100,7 @@ NetBSDの起動
 
 hpcboot起動
 ------------
-ファイルエクスプローラ→hpcboot-eVC4.. を起動すると、ブートローダhpcbootが起動します。
+ファイルエクスプローラ→hpcboot.exe を起動すると、ブートローダhpcbootが起動します。
 
 hpcboot内で機種とカーネルを指定
 ------------------------------
