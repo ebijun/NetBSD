@@ -176,27 +176,26 @@ startxコマンドを実行すると、Xサーバが起動します。
  #    Option  "Rotate"   "CW"   ... この行をコメントアウトしてください。
  EndSection
 
-NetBSD6.1.4用イメージ
+NetBSD6.1.5用イメージ
 ---------------------------
-NetBSD6.1.4用のイメージを作りました。
- http://mail-index.netbsd.org/port-zaurus/2014/09/17/msg000055.html
-
+NetBSD6.1.5用のイメージを作りました。
+ http://mail-index.netbsd.org/port-zaurus/2014/12/06/msg000056.html
 ::
 
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus/2014-09-17-netbsd6-zaurus.img.gz
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus/2014-12-06-netbsd6-zaurus.img.gz
 
 このイメージを2GB以上の容量のコンパクトフラッシュにコピーします。
 
 ::
 
- # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus/2014-09-17-netbsd6-zaurus.img.gz
- # gunzip < 2014-09-17-netbsd6-zaurus.img.gz |dd of=/dev/コンパクトフラッシュのデバイス 
+ # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus/2014-12-06-netbsd6-zaurus.img.gz
+ # gunzip < 2014-12-06-netbsd6-zaurus.img.gz |dd of=/dev/コンパクトフラッシュのデバイス 
  例)
- # gunzip < 2014-09-17-netbsd6-zaurus.img.gz |dd of=/dev/rsd3d
+ # gunzip < 2014-12-06-netbsd6-zaurus.img.gz |dd of=/dev/rsd3d
  ザウルスを起動します。
  # cd /mnt/cf
  # ./Boot
- で起動します。
+ で起動します。起動デバイスはwd0を指定してください。
  
 ZAURUS用の動くイメージを作ってみる
 -------------------------------------
