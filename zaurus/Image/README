@@ -1,20 +1,19 @@
-:1,$s/zaurus/zaurus/g
-VERSION: :1,$s/2014-11-28/2014-11-28/g
-ISO:     :1,$s/201411270820Z/201411270820Z/g
-PKGSRC:  :1,$s/2014-11-22/2014-11-22/
+VERSION: :1,$s/2014-12-06/2014-12-06/g
+ISO:     :1,$s/201412020710Z/201412020710Z/g
+PKGSRC:  :1,$s/2014-11-29/2014-11-29/
 NetBSD:  :1,$s/6.1.5/6.1.5/g
 
 To: port-zaurusnetbsd.org@localhost
-Subject: 2014-11-28-netbsd6-zaurus.img 
+Subject: 2014-12-06-netbsd6-zaurus.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-11-28-netbsd6-zaurus.img.gz for SHARP ZAURUS.
+I've updated 2014-12-06-netbsd6-zaurus.img.gz for SHARP ZAURUS.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus/2014-11-28-netbsd6-zaurus.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus/2014-12-06-netbsd6-zaurus.img.gz
 
 Feature:
-- NetBSD 6.1.5 zaurus 201411270820Z from nyftp.
-- pkgsrc-current 2014-11-22 tarball from ftp.NetBSD.
+- NetBSD 6.1.5 zaurus 201412020710Z from nyftp.
+- pkgsrc-current 2014-11-29 tarball from ftp.NetBSD.
 - dmesg:
   https://github.com/ebijun/NetBSD/blob/master/zaurus/Image/dmesg
 
@@ -32,8 +31,8 @@ Todo:
 
 =====================
 
-For OpenSourceConference 2014 Hiroshima NetBSD booth
-(https://www.facebook.com/events/285463901620247/)
+For NetBSD Advent Calendar 2014
+(http://qiita.com/advent-calendar/2014/netbsd)
 demonstration use, I've updated zaurus image.
 
 - NetBSD 6.1.5 base
@@ -41,7 +40,9 @@ demonstration use, I've updated zaurus image.
 - Boot zaurus as built in linux.
 - su;cd /mnt/cf;./Boot
   and comes as you are as you want to be.
+- root partition wd0
 - login root (no passwd)
+- check /etc/X11 and copy xorg.conf.model to xorg.conf
 - startx ,and icewm running.
 - running mikutter.
 
@@ -51,7 +52,7 @@ demonstration use, I've updated zaurus image.
 Features:
   - fit size for 2GB SD Card
   - with X11
-  - pkgsrc: 2014-11-22 tree inside.
+  - pkgsrc: 2014-11-29 tree inside.
   - pre-build packages
     http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
 

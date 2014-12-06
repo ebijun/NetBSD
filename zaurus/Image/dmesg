@@ -4,25 +4,32 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.1.4_PATCH (GENERIC)
+NetBSD 6.1.5_PATCH (GENERIC)
 total memory = 65536 KB
 avail memory = 58224 KB
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
-cpu0 at mainbus0: PXA255/26x step A-0 (XScale core)
+cpu0 at mainbus0: PXA27x step C-0 (XScale core)
 cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
 cpu0: 32KB/32B 32-way Instruction cache
 cpu0: 32KB/32B 32-way write-back-locking Data cache
 pxaip0 at mainbus0: Onchip Peripheral Bus
-pxaip0: CPU clock = 398.100 MHz
-pxaip0: kernel is configured for PXA250 and PXA270, cpu type is PXA250
+pxaip0: CPU clock = 415.992 MHz
+pxaip0: kernel is configured for PXA250 and PXA270, cpu type is PXA270
 pxaintc0 at pxaip0 addr 0x40d00000-0x40d0001f: Interrupt Controller
 pxagpio0 at pxaip0 addr 0x40e00000-0x40e0014f: GPIO Controller
 com0 at pxaip0 addr 0x40100000-0x4010001f intr 22: ns16550a, working fifo
 com1 at pxaip0 addr 0x40200000-0x4020001f intr 21: ns16550a, working fifo
 com2 at pxaip0 addr 0x40700000-0x4070001f intr 20: ns16550a, working fifo
+ohci0 at pxaip0 addr 0x4c000000-0x4c00006f intr 3
+ohci0: OHCI version 1.0
+usb0 at ohci0: USB revision 1.0
 saost0 at pxaip0 addr 0x40a00000-0x40a0001f
 saost0: SA-11x0 OS Timer
+lcd0 at pxaip0: PXA2x0 LCD controller
+lcd0: console
+wsdisplay0 at lcd0 kbdmux 1: console (std, vt100 emulation)
+wsmux1: connecting to wsdisplay0
 pxadmac0 at pxaip0 addr 0x40000000-0x400002ff intr 25: DMA Controller
 pxapcic0 at pxaip0: 1 slot
 pcmcia0 at pxapcic0
@@ -32,39 +39,51 @@ pxamci0: using DMA transfer
 sdmmc0 at pxamci0
 ziic0 at pxaip0 addr 0x40300000-0x403016a3: I2C controller
 iic0 at ziic0: I2C bus
+ioexp0 at iic0 addr 0x18: GPIO controller
+zaudio0 at iic0 addr 0x1b: I2S, WM8750 Audio
+audio0 at zaudio0: half duplex, playback, capture, mmap, independent
 scoop0 at pxaip0: PCMCIA/GPIO controller
 zssp0 at pxaip0
 lcdctl0 at zssp0
 ztp0 at zssp0
 wsmouse0 at ztp0 mux 0
-w100lcd0 at pxaip0: ATI Imageon100 LCD controller
-w100lcd0: console
-wsdisplay0 at w100lcd0 kbdmux 1: console (std, vt100 emulation)
-wsmux1: connecting to wsdisplay0
 zkbd0 at pxaip0
 wskbd0 at zkbd0: console keyboard, using wsdisplay0
+zrc0 at pxaip0: CE-RH2 remote control
+wskbd1 at zrc0 mux 1
+wskbd1: connecting to wsdisplay0
+zapm0 at pxaip0: pseudo power management module
+apmdev0 at zapm0: Power Management spec V1.2
+zusb0 at pxaip0: USB Mode detection
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 clock: hz=100 stathz=64
-timecounter: Timecounter "saost_count" frequency 3686400 Hz quality 100
+timecounter: Timecounter "saost_count" frequency 3250000 Hz quality 100
 wdc0 at pcmcia0 function 0: <, , >
 wdc0: i/o mapped mode
+uhub0 at usb0: PXA27x OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
 atabus0 at wdc0 channel 0
 wd0 at atabus0 drive 0
 wd0: <SILICON POWER>
 wd0: drive supports 1-sector PIO transfers, LBA addressing
 wd0: 7647 MB, 15538 cyl, 16 head, 63 sec, 512 bytes/sect x 15662304 sectors
 wd0: drive supports PIO mode 4
+url0 at uhub0 port 2
+url0: USBKR100 GREEN HOUSE, rev 1.10/1.00, addr 2
+url0: Ethernet address 00:10:60:cc:08:f2
+urlphy0 at url0 phy 0: Realtek RTL8150L internal media interface
+urlphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
 boot device: <unknown>
 root device: wd0
 dump device (default wd0b): 
 file system (default generic): 
 root on wd0a dumps on wd0b
 root file system type: ffs
-WARNING: clock lost 941 days
+WARNING: clock lost 48 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 init path (default /sbin/init): 
 init: trying /sbin/init
-ld0 at sdmmc0: <SMI  >
-ld0: 30799 MB, 7821 cyl, 128 head, 63 sec, 512 bytes/sect x 63076352 sectors
-ld0: 1-bit width, bus clock 20.000 MHz
+ld0 at sdmmc0: <00000>
+ld0: 3884 MB, 1972 cyl, 64 head, 63 sec, 512 bytes/sect x 7954432 sectors
+ld0: 4-bit width, bus clock 19.500 MHz
