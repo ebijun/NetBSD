@@ -85,6 +85,18 @@ Keyboard layout checkpoint:
 /root/.xinitrc
  setxkbmap -model jp106 jp
 
+Touch panel calibration:
+ /etc/tpctl.dat : touch panel calibration data.
+
+ To make/rebuild tpctl.dat for your machine.
+ delete /etc/tpctl.dat and start tpctl.
+
+ # tpctl
+ "+" point appear,click "+" points 5 times.
+
+ /etc/rc.conf:
+  tpctl = YES
+
 Build sample script:
  https://github.com/ebijun/NetBSD/tree/master/zaurus/Image
 
