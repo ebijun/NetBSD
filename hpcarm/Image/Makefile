@@ -90,6 +90,23 @@ pkg:
 	umount ${MNT}
 	vnconfig -u ${VND}
 
+# clean logfiles
+logclean:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	rm -f ${MNT}/var/run/dmesg.boot
+	rm -f ${MNT}/var/log/lastlogx 
+	rm -f ${MNT}/var/log/wtmpx
+	rm -f ${MNT}/var/db/dhcpcd-url0.lease
+	rm -f ${MNT}/var/db/dhcpcd-url0.lease6
+	rm -f ${MNT}/root/Package/dmesg
+	rm -f ${MNT}/root/Package/pkginfo
+	rm -rf ${MNT}/var/run/dhcpcd
+	rm -rf ${MNT}/var/run/resolvconf
+	umount ${MNT}
+	vnconfig -u ${VND}
+
 # copy default setupfile
 release:
 	echo copy default files and make device nodes.

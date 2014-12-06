@@ -1,14 +1,19 @@
+:1,$s/2014-12-06/2014-12-06/g
+:1,$s/201412020710Z/201412020710Z/g
+:1,$s/2014-11-29/2014-11-29/g
+
+
 To: port-hpcarmnetbsd.org@localhost
-Subject: 2014-11-27-netbsd6-hpcarm.img 
+Subject: 2014-12-06-netbsd6-hpcarm.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-11-27-netbsd6-hpcarm.img.gz for hpcarm.
+I've updated 2014-12-06-netbsd6-hpcarm.img.gz for hpcarm.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-11-27-netbsd6-hpcarm.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-12-06-netbsd6-hpcarm.img.gz
 
 Feature:
-- NetBSD 6.1.5-PATCH-201411220850Z hpcarm from nyftp.netbsd
-- pkgsrc-current 2014-11-22 tarball from ftp.NetBSD.
+- NetBSD 6.1.5-PATCH-201412020710ZZ hpcarm from nyftp.netbsd
+- pkgsrc-current 2014-11-29 tarball from ftp.NetBSD.
 - dmesg:
   https://github.com/ebijun/NetBSD/blob/master/hpcarm/Image/dmesg
 
@@ -25,6 +30,12 @@ Todo:
 - switch to hpcearm
   NetBSD-7.99.1-hpcarm-201411260130Z boot fine,
   but still random hungs.
+
+=====================
+
+For NetBSD Advent Calendar 2014
+(http://qiita.com/advent-calendar/2014/netbsd)
+demonstration use, I've updated hpcarm image.
 
 - NetBSD 6.1.5 base
 - Copy image to Mini/MicroSD.
@@ -44,7 +55,7 @@ Todo:
 Features:
   - fit size for 2GB SD Card
   - with X11
-  - pkgsrc: 2014-11-22 tree inside.
+  - pkgsrc: 2014-11-29 tree inside.
   - pre-build packages
     http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
 
