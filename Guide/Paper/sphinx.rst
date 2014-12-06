@@ -88,7 +88,7 @@ NetBSDならinkscapeが使えます。
 
 本文
 -------------
-本文部分は、scribusとgithubを組み合わせて使っています。
+本文部分は、sphinxとgithubを組み合わせて使っています。
 
 ::
 
