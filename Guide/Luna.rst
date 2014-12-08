@@ -707,7 +707,7 @@ yaft X LUNA
 .. [133] LUNAホッチキス https://twitter.com/goinkyo_hacker/status/497392417478156288/photo/1
 .. [134] OSC2014京都NetBSDブース展示への道 http://togetter.com/li/703494
 .. [135] OSC2014 Kansai@Kyoto NetBSDブース展示の記録 http://togetter.com/li/700617
-.. [136] yaft×Luan http://www.slideshare.net/ao_kenji/nbug201411-yaft-42177561
+.. [136] yaft×Laan http://www.slideshare.net/ao_kenji/nbug201411-yaft-42177561
 .. [137] KOFにおけるLUNA展示 https://speakerdeck.com/tsutsui/kof-and-luna-at-netbsd-booth
 
 このページ
