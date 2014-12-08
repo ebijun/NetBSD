@@ -564,7 +564,7 @@ LUNA88K謎ボード
 .. [1] カフカ式練習帳 http://www.bunshun.co.jp/cgi-bin/book_db/book_detail.cgi?isbn=9784163813301
 .. [2] The Angel Levine: http://www.blackmovie-jp.com/movie/angellevine.php?act=a#.Uei7I9f75z0
 .. [3] Look Back in Anger: http://en.wikipedia.org/wiki/Look_Back_in_Anger_%28song%29
-.. [4] バーナード・マラマッドに関する研究 http://www.ishikawa-nct.ac.jp/tech/guide/suzukihp.pdf
+.. [4] バーナード・マラマッドに関する研究 http://www.ishikawa-nct.ac.jp/lab/G/koguma/www/ehp/suzukihp.pdf
 .. [5] Be My Wife: http://en.wikipedia.org/wiki/Be_My_Wife
 .. [6] 高橋和巳『散華』論 -生活人としての大家- ,東口昌央,1988, http://ir.lib.osaka-kyoiku.ac.jp/dspace/handle/123456789/15270
 .. [7] https://twitter.com/ebijun/status/231983148118970368
