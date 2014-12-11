@@ -1,12 +1,13 @@
 # Makefile for RPI image.
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-raspi.img
+FILE=`date +%Y-%m-%d`-netbsd-raspi-v6.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.2-evbarm-earmhf-201411271910Z.iso
+#IMAGE=/usr/release/images/NetBSD-7.99.2-evbarm-earmhf-201412091910Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.2-evbarm-earmv6hf-201412101810Z.iso
 
-PKGSRC=pkgsrc-2014-11-29.tar.gz
+PKGSRC=pkgsrc-2014-12-06.tar.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -42,11 +43,11 @@ extract:
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	echo extract netwalker kernel.
 	mount_msdos /dev/${VND}e ${MNT}/boot
-	cp ${NETWALKER}    ${MNT}/boot
-	cp ${NETWALKERBIN} ${MNT}/boot
-	cp ${KOBO}         ${MNT}/boot
-	cp ${KOBOBIN}      ${MNT}/boot
-	cp ${KOBOUBOOT}    ${MNT}/boot
+#	cp ${NETWALKER}    ${MNT}/boot
+#	cp ${NETWALKERBIN} ${MNT}/boot
+#	cp ${KOBO}         ${MNT}/boot
+#	cp ${KOBOBIN}      ${MNT}/boot
+#	cp ${KOBOUBOOT}    ${MNT}/boot
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}

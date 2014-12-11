@@ -1,38 +1,28 @@
-VERSION: :1,$s/2014-11-22/2014-11-22/g
+VERSION: :1,$s/2015-02-07/2015-02-07/g
 ISO:     :1,$s/201411142340Z/201411142340Z/g
 PKGSRC:  :1,$s/2014-11-15/2014-11-15/
-NetBSD:  :1,$s/7.99.1/7.99.1/g
+NetBSD:  :1,$s/7.99.2/7.99.2/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2014-11-22-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2015-02-07-netbsd-raspi.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-11-22-netbsd-raspi.img.gz for RPI.
+I've updated 2015-02-07-netbsd-raspi.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2014-11-22-earmhf/2014-11-22-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-02-07-earmhf/2015-02-07-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 7.99.1 evbarm-earmhf 201411142340Z from nyftp.
+- NetBSD-current 7.99.2 evbarm-earmhf 201411142340Z from nyftp.
 - pkgsrc-current 2014-11-15 tarball from ftp.NetBSD.
-- mlterm 3.4.0
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/11/02/msg113301.html
-- mikutter 3.0.9
-  http://mail-index.netbsd.org/pkgsrc-changes/2014/11/09/msg113580.html
 
-CAUTION:
-- Restore /usr/X11R7/lib/libxcb.so.1 (backward compat,for a while)
-- backout libc/time 2014h, to avoid mikutter start up hungs. thanx tsutsui@ !
- http://www.nerv.org/netbsd/?q=id:20141023T184558Z.eea274c3ec3223ba3552539940fc299657f15af8
- hang message with libc/time 2014i:
- https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/mikutter/20141105.log
 
 - This is hardfloat image: build with earmhf
    softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2014-11-22-netbsd-raspi.img.gz      earmhf
+>> hardfloat: 2015-02-07-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-22/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2015-02-07/
 
  To install application.
  # pkg_add some_application_name
@@ -59,8 +49,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.9-netbsd6-evbarm-earmhf.tgz for evaluation.
-  3. pkg_add musica-0.3.9-netbsd6-evbarm-earmhf.tgz
+  2. Download musica-0.3.10-netbsd6-evbarm-earmhf.tgz for evaluation.
+  3. pkg_add musica-0.3.10-netbsd6-evbarm-earmhf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -76,7 +66,9 @@ KOBO: kernel: (Thanx h_kenken@)
     go 0x70800000
 
 Todo:
-- sound check and more.
+- switch to earmv6hf.
+  - kobo and netwalker move to allwinner.
+- audioplay works fine.output to analog sound jack.
 - Summarize /usr/tests result on each version.
 - test COPTS:-fno-reorder-blocks/-fno-tree-vrp/-fno-tree-pre optimization.
 - ruby version: 200 -> 21?
@@ -93,14 +85,14 @@ Todo:
 
 =====================
 
-For Open Source Conference 2014 Fukuoka NetBSD booth
+For Open Source Conference 2015 Oita NetBSD booth
  demonstration use, I've updated raspberry-pi image.
 
- https://www.facebook.com/events/1610125189211812/
+ https://www.facebook.com/events/383442128496493/
  https://www.facebook.com/NetBSD.jp 
- https://www.soum.co.jp/~jun/OSC2014fukuoka.pdf
+ https://www.soum.co.jp/~jun/OSC2015oita.pdf
 
-- NetBSD 7.99.1 earmhf rpi.img.gz base
+- NetBSD 7.99.2 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -139,7 +131,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2014-11-15 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-22/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2015-02-07/
 
 Installed Packages:
 kterm
@@ -186,7 +178,7 @@ Guide:
  https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
 
 BUGS:
-1. port-arm/48805
+1. port-arm/48805 ->> works well. this PR should be close.
   Audio Driver issues on Pi running NetBSD (2014-05-10) image 
   - hangs audio applications like audioplay
 2. port-arm/48855
