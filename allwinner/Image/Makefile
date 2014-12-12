@@ -4,10 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-allwinner.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.2-evbarm-earmv7hf-201411302220Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.2-evbarm-earmv7hf-201412111850Z.iso
 
-
-PKGSRC=../../pkgsrc/pkgsrc-2014-11-29.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2014-12-06.tar.gz
 
 # UBOOT
 BOARD=cubieboard2
@@ -56,6 +55,11 @@ extract:
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mount_msdos /dev/${VND}e ${MNT}/boot
 	gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
+	cp ${NETWALKER}    ${MNT}/boot
+	cp ${NETWALKERBIN} ${MNT}/boot
+	cp ${KOBO}         ${MNT}/boot
+	cp ${KOBOBIN}      ${MNT}/boot
+	cp ${KOBOUBOOT}    ${MNT}/boot
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
