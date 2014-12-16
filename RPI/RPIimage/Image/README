@@ -1,7 +1,7 @@
 VERSION: :1,$s/2015-02-07/2015-02-07/g
 ISO:     :1,$s/201411142340Z/201411142340Z/g
-PKGSRC:  :1,$s/2014-11-15/2014-11-15/
-NetBSD:  :1,$s/7.99.2/7.99.2/g
+PKGSRC:  :1,$s/2014-12-13/2014-12-13/
+NetBSD:  :1,$s/7.99.3/7.99.3/g
 
 To: port-armNetBSD.org@localhost
 Subject: 2015-02-07-netbsd-raspi.img (Re: Raspberry Pi update please.)
@@ -12,8 +12,10 @@ I've updated 2015-02-07-netbsd-raspi.img.gz for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-02-07-earmhf/2015-02-07-netbsd-raspi.img.gz
 
 Update:
-- NetBSD-current 7.99.2 evbarm-earmhf 201411142340Z from nyftp.
-- pkgsrc-current 2014-11-15 tarball from ftp.NetBSD.
+- NetBSD-current 7.99.3 evbarm-earmhf 201411142340Z from nyftp.
+- pkgsrc-current 2014-12-13 tarball from ftp.NetBSD.
+- mikutter-3.1.1
+- mlterm-3.4.1
 
 
 - This is hardfloat image: build with earmhf
@@ -92,7 +94,7 @@ For Open Source Conference 2015 Oita NetBSD booth
  https://www.facebook.com/NetBSD.jp 
  https://www.soum.co.jp/~jun/OSC2015oita.pdf
 
-- NetBSD 7.99.2 earmhf rpi.img.gz base
+- NetBSD 7.99.3 earmhf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -129,7 +131,7 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-11-15 tree inside.
+  - pkgsrc: 2014-12-13 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2015-02-07/
 
