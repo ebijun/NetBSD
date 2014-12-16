@@ -1,7 +1,7 @@
 # Makefile for RPI image.
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-raspi-v6.img
+FILE=`date +%Y-%m-%d`-netbsd-raspi.img
 
 # iso file information
 IMAGE=/usr/release/images/NetBSD-7.99.3-evbarm-earmhf-201412152000Z.iso
