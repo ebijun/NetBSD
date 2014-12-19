@@ -1,11 +1,12 @@
 # Makefile for NetBSD/hpcmips image.
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-hpcmips5.img
+FILE=`date +%Y-%m-%d`-netbsd6-hpcmips.img
 
 # iso file information
 #IMAGE=/usr/release/images/NetBSD-7.99.2-hpcmips-201412110100Z.iso
-IMAGE=/usr/release/images/NetBSD-5.2_STABLE-hpcmips-201412162330Z.iso
+#IMAGE=/usr/release/images/NetBSD-5.2_STABLE-hpcmips-201412162330Z.iso
+IMAGE=/usr/release/images/NetBSD-6.1.5_PATCH-hpcmips-201412160250Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2014-12-13.tar.gz
 
