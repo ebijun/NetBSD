@@ -1,0 +1,4 @@
+#pkg_add rsync
+#pkg_add pkg_chk
+(cd /usr/pkgsrc;cvs update -PAd)
+pkg_chk -auk
