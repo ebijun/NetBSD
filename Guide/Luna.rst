@@ -413,6 +413,10 @@ LUNAII
 #. 1MB SIMM/4MB SIMM切替→SIMM脇に謎ジャンパが
 #. 4bppフレームバッファのX11R5ソースは？ [85]_
 
+PC98-Cバス
+~~~~~~~~~~~
+#. 86音源ボード on LUNA [138]_
+
 UniOS-Machと西暦2000年問題
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
  でも、同じマシンでUniOS-Mach立ち上げると時刻が変になる。昔調べたとおりdate(8)コマンドでは2000年以降の日付は設定できないので、OS内部で元々Y2K対応が甘いだけかもしれない。 [82]_ [84]_
@@ -507,6 +511,8 @@ LUNA年表　- 月の刃
  2014/07/20,筒,LUNA's keyboard driver changes from OpenBSD/luna88k [131]_
  2014/07/21,筒,luna68k 4/8bpp framebuffers as a monochrome server [132]_
  2014/08/01,筒,lunaII+mikutterd今年はカラーだ展示 [134]_
+ 2014/12/20,青,86音源ボード on LUNA [138]_
+ 2014/12/29,青,86音源ボードコードコミット [139]_
 
 最近のLUNA
 ----------------
@@ -709,6 +715,8 @@ yaft X LUNA
 .. [135] OSC2014 Kansai@Kyoto NetBSDブース展示の記録 http://togetter.com/li/700617
 .. [136] yaft×Laan http://www.slideshare.net/ao_kenji/nbug201411-yaft-42177561
 .. [137] KOFにおけるLUNA展示 https://speakerdeck.com/tsutsui/kof-and-luna-at-netbsd-booth
+.. [138] PC-9801-86 sound board on LUNA http://www.slideshare.net/ao_kenji/nbug201412
+.. [139] OpenBSD/luna88k用の86音源ボードドライバを整理してcommit。 https://twitter.com/ao_kenji/status/549203137001553921
 
 このページ
 ~~~~~~~~~~~
