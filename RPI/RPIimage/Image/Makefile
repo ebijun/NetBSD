@@ -46,11 +46,11 @@ extract:
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	echo extract netwalker kernel.
 	mount_msdos /dev/${VND}e ${MNT}/boot
-#	cp ${NETWALKER}    ${MNT}/boot
-#	cp ${NETWALKERBIN} ${MNT}/boot
-#	cp ${KOBO}         ${MNT}/boot
-#	cp ${KOBOBIN}      ${MNT}/boot
-#	cp ${KOBOUBOOT}    ${MNT}/boot
+	cp ${NETWALKER}    ${MNT}/boot
+	cp ${NETWALKERBIN} ${MNT}/boot
+	cp ${KOBO}         ${MNT}/boot
+	cp ${KOBOBIN}      ${MNT}/boot
+	cp ${KOBOUBOOT}    ${MNT}/boot
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
