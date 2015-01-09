@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,7 +35,7 @@ KOFまとめ
 .. csv-table::
  :widths: 70 70
 
- 関西オープンソース2014 NetBSDブース展示の記録,
+ 関西オープンソース2014 NetBSDブース展示の記録,http://togetter.com/li/742243
  関西オープンソース2013 NetBSDブース展示の記録,http://togetter.com/li/587422
  関西オープンソース2012 NetBSDブース展示の記録,http://togetter.com/li/404573
  関西オープンソース2011 NetBSDブース展示の記録,http://togetter.com/li/213724
@@ -75,7 +75,8 @@ KOFまとめ
  たちばな,道頓堀松竹B2,道頓堀麦酒
  nu things,阿波座,阿木譲さんその後
  深化,谷町六丁目,到達不可能な潜水艦バー
-
+ ハーフェン,江坂,図書館近くのビアバー
+ 
 KOF主な発表
 ~~~~~~~~~~~~~~
 
