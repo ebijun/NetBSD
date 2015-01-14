@@ -1,11 +1,11 @@
 # Makefile for NetBSD/hpcarm image.
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
+FILE=`date +%Y-%m-%d`-netbsd-hpcarm6.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.4-hpcarm-201501100840Z.iso
-#IMAGE=/usr/release/images/NetBSD-6.1.5_PATCH-hpcarm-201412020710Z.iso
+#IMAGE=/usr/release/images/NetBSD-7.99.4-hpcarm-201501100840Z.iso
+IMAGE=/usr/release/images/NetBSD-6.1.5_PATCH-hpcarm-201501090230Z.iso
 PKGSRC=../../pkgsrc/pkgsrc-2015-01-10.tar.gz
 
 SETS=/mnt1/hpcarm/binary/sets
