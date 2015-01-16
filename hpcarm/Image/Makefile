@@ -1,11 +1,12 @@
 # Makefile for NetBSD/hpcarm image.
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-hpcarm6.img
+FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 
 # iso file information
-#IMAGE=/usr/release/images/NetBSD-7.99.4-hpcarm-201501100840Z.iso
-IMAGE=/usr/release/images/NetBSD-6.1.5_PATCH-hpcarm-201501090230Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.4-hpcarm-201501152110Z.iso
+#IMAGE=/usr/release/images/NetBSD-6.1.5_PATCH-hpcarm-201501090230Z.iso
+
 PKGSRC=../../pkgsrc/pkgsrc-2015-01-10.tar.gz
 
 SETS=/mnt1/hpcarm/binary/sets
@@ -14,7 +15,7 @@ KERNEL=/mnt1/hpcarm/binary/kernel
 
 # extract sets.
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-LIST=base etc comp man modules text xbase xcomp xetc xfont xserver 
+LIST=base etc comp man modules test xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
@@ -98,6 +99,7 @@ logclean:
 	rm -f ${MNT}/var/run/dmesg.boot
 	rm -f ${MNT}/var/log/lastlogx 
 	rm -f ${MNT}/var/log/wtmpx
+	rm -f ${MNT}/var/db/dhcpcd-cdce0.lease
 	rm -f ${MNT}/var/db/dhcpcd-url0.lease
 	rm -f ${MNT}/var/db/dhcpcd-url0.lease6
 	rm -f ${MNT}/root/Package/dmesg
