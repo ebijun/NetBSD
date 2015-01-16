@@ -17,7 +17,7 @@ C700=netbsd-C700.gz
 # extract sets.
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 #LIST=base etc comp man modules text xbase xcomp xetc xfont xserver kern-GENERIC
-LIST=base etc comp man text xbase xcomp xetc xfont xserver kern-GENERIC
+LIST=base etc comp man xbase xcomp xetc xfont xserver kern-GENERIC
 
 # mount point
 MNT=/mnt
