@@ -1,28 +1,21 @@
 # Makefile for RPI image.
 
-# set image file name
-#FILE=`date +%Y-%m-%d`-netbsd-raspi-earmv6hf.img
-FILE=`date +%Y-%m-%d`-netbsd-raspi.img
-
-# check /etc/pkg_install.conf
+ARCH=earmv6hf
+PKG_PATH=/usr/pkgsrc/packages/All;ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-02-07/
 
 # iso file information
-#IMAGE=/usr/release/images/NetBSD-7.99.4-evbarm-earmv6hf-201501071900Z.iso
-IMAGE=/usr/release/images/NetBSD-7.99.4-evbarm-earmhf-201501071900Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.4-evbarm-${ARCH}-201501071900Z.iso
 
-PKGSRC=pkgsrc-2015-01-03.tar.gz
+PKGSRC=pkgsrc-2015-01-17.tar.gz
+
+###
+
+# set image file name
+FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
 RPI=${MNT_CDROM}/evbarm/binary/gzimg/rpi.img
-
-# kernels
-NETWALKER=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.gz
-NETWALKERBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-NETWALKER.bin.gz
-
-KOBO=${MNT_CDROM}/evbarm/binary/kernel/netbsd-ld0-KOBO.gz
-KOBOBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-ld0-KOBO.bin.gz
-KOBOUBOOT=${MNT_CDROM}/evbarm/binary/kernel/netbsd-ld0-KOBO.ub.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules tests text xbase xcomp xetc xfont xserver 
@@ -46,11 +39,6 @@ extract:
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	echo extract netwalker kernel.
 	mount_msdos /dev/${VND}e ${MNT}/boot
-	cp ${NETWALKER}    ${MNT}/boot
-	cp ${NETWALKERBIN} ${MNT}/boot
-	cp ${KOBO}         ${MNT}/boot
-	cp ${KOBOBIN}      ${MNT}/boot
-	cp ${KOBOUBOOT}    ${MNT}/boot
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -94,6 +82,7 @@ release:
 	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
 	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 	(cd ../boot;cp * ${MNT}/boot)
+	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}

@@ -1,30 +1,26 @@
 VERSION: :1,$s/2015-02-07/2015-02-07/g
-ISO:     :1,$s/201411142340Z/201411142340Z/g
-PKGSRC:  :1,$s/2014-12-13/2014-12-13/
-NetBSD:  :1,$s/7.99.3/7.99.3/g
+ISO:     :1,$s/201501071900Z/201501071900Z/g
+PKGSRC:  :1,$s/2015-01-17/2015-01-17/
+NetBSD:  :1,$s/7.99.4/7.99.4/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-02-07-netbsd-raspi.img (Re: Raspberry Pi update please.)
+Subject: 2015-02-07-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-02-07-netbsd-raspi.img.gz for RPI.
+I've updated 2015-02-07-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-02-07-earmhf/2015-02-07-netbsd-raspi.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-02-07-earmv6hf/2015-02-07-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 7.99.3 evbarm-earmhf 201411142340Z from nyftp.
-- pkgsrc-current 2014-12-13 tarball from ftp.NetBSD.
-- mikutter-3.1.1
+- Switch from earmhf to earmv6hf.
+- NetBSD-current 7.99.4 evbarm-earmv6hf 201501071900Z from nyftp.
+- pkgsrc-current 2015-01-17 tarball from ftp.NetBSD.
+- mikutter-3.2.2
 - mlterm-3.4.1
-
-
-- This is hardfloat image: build with earmhf
-   softfloat: 2013-09-09-02-netbsd-evbarm.img.gz  evbarm (02:firmupdate) 
->> hardfloat: 2015-02-07-netbsd-raspi.img.gz      earmhf
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2015-02-07/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-07/
 
  To install application.
  # pkg_add some_application_name
@@ -32,27 +28,12 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2015-02-07
  If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
 
-SHARP NetWalker kernel: (Thanx h_kenken@)
-  /boot/netbsd-NETWALKER.bin.gz is a kernel for Sharp NetWalker.
-
-  1. Make backup image on NetWalker ubuntu.
-  2. cp /boot/netbsd-netwalker.bin.gz [BackupImage]/boot/zImage
-  3. Set [BackupImage] MicroSD to NetWalker MicroSD port
-  4. Set RPI image to USB port via SD to USB dongle.
-  5. With pushing [L Mouse][R Mouse],push Power button in 5 seconds.
-  6. Pray for success in 5 seconds.
-  7. Typical NetBSD Boot message appears on your console.
-  8. Fail on single user mode,"mount /"
-  9. vi /etc/fstab and type :1,$s/ld0/sd0/g w q
-  10. reboot and login again.
-  11. startx and mouse can control with small touchpad.
-
 musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.10-netbsd6-evbarm-earmhf.tgz for evaluation.
-  3. pkg_add musica-0.3.10-netbsd6-evbarm-earmhf.tgz
+  2. Download musica-0.3.10-netbsd6-evbarm-earmv6hf.tgz for evaluation.
+  3. pkg_add musica-0.3.10-netbsd6-evbarm-earmv6hf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -60,12 +41,6 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
 
 XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
-
-KOBO: kernel: (Thanx h_kenken@)
-  kobo-kernels and uboot on /boot:
-    mmcinfo 1
-    fatload mmc 1 0x70800000 kobo.bin
-    go 0x70800000
 
 Todo:
 - switch to earmv6hf.
@@ -97,7 +72,7 @@ For Open Source Conference 2015 Oita NetBSD booth
  https://www.facebook.com/NetBSD.jp 
  https://www.soum.co.jp/~jun/OSC2015oita.pdf
 
-- NetBSD 7.99.3 earmhf rpi.img.gz base
+- NetBSD 7.99.4 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -134,9 +109,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2014-12-13 tree inside.
+  - pkgsrc: 2015-01-17 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2015-02-07/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-07/
 
 Installed Packages:
 kterm
