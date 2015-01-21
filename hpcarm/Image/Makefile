@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.4-hpcarm-201501191610Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.4-hpcarm-201501201640Z.iso
 #IMAGE=/usr/release/images/NetBSD-6.1.5_PATCH-hpcarm-201501090230Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015-01-17.tar.gz
@@ -14,8 +14,7 @@ INSTALLATION=/mnt1/hpcarm/installation
 KERNEL=/mnt1/hpcarm/binary/kernel
 
 # extract sets.
-#LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-LIST=base etc comp man modules tests xbase xcomp xetc xfont xserver 
+LIST=base etc comp man modules xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
