@@ -36,7 +36,7 @@ newfs:
 	vnconfig ${VND} ${FILE}
 	disklabel -R ${VND} DISKLABEL.proto
 	newfs_msdos /dev/r${VND}e
-	newfs -n 600000 /dev/r${VND}a
+	newfs -n 500000 -b 4096 /dev/r${VND}a
 	fdisk -ufF -0 -s 6/32/122848 ${FILE} #DOS partition:DISKLABEL.proto
 	vnconfig -u ${VND}
 
@@ -85,8 +85,9 @@ pkg:
 	mount /dev/${VND}a ${MNT}
 	echo rc_configured=YES >> ${MNT}/etc/rc.conf
 	echo sshd=NO           >> ${MNT}/etc/rc.conf
-	echo syslogd=NO           >> ${MNT}/etc/rc.conf
-	echo dhcpcd=NO           >> ${MNT}/etc/rc.conf
+	echo syslogd=NO        >> ${MNT}/etc/rc.conf
+	echo dhcpcd=NO         >> ${MNT}/etc/rc.conf
+	cp NET ${MNT}/root
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -103,6 +104,7 @@ logclean:
 	rm -f ${MNT}/var/db/dhcpcd-url0.lease6
 	rm -f ${MNT}/root/Package/dmesg
 	rm -f ${MNT}/root/Package/pkginfo
+	rm -f ${MNT}/root/NET
 	rm -rf ${MNT}/var/run/dhcpcd
 	rm -rf ${MNT}/var/run/resolvconf
 	umount ${MNT}
