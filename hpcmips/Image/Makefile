@@ -41,7 +41,7 @@ newfs:
 	vnconfig ${VND} ${FILE}
 	disklabel -R ${VND} DISKLABEL.proto
 	newfs_msdos /dev/r${VND}e
-	newfs -n 600000 /dev/r${VND}a
+	newfs -n 600000 -b 4096 /dev/r${VND}a
 	fdisk -ufF -0 -s 6/32/122848 ${FILE} #DOS partition:DISKLABEL.proto
 	vnconfig -u ${VND}
 
@@ -78,7 +78,7 @@ bootarea:
 	cp ${INSTALLATION}/hpcboot.exe ${MNT}
 	cp ${KERNEL}/netbsd-GENERIC.gz ${MNT}
 	cp ${KERNEL}/netbsd-TX3912.gz ${MNT}
-#	cp msdos/hpcboot.cnf ${MNT}
+	cp msdos/hpcboot.cnf ${MNT}
 	
 	umount ${MNT}
 	vnconfig -u ${VND}

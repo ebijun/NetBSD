@@ -1,12 +1,11 @@
 # Makefile for NetBSD/zaurus image.
 
 # set image file name
-#FILE=`date +%Y-%m-%d`-netbsd-zaurus.img
-FILE=`date +%Y-%m-%d`-netbsd6-zaurus.img
+FILE=`date +%Y-%m-%d`-netbsd-zaurus.img
 
 # iso file information
 IMAGE=/usr/release/images/NetBSD-6.1.5_PATCH-zaurus-201501090230Z.iso
-PKGSRC=../../pkgsrc/pkgsrc-2015-01-10.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2015-01-17.tar.gz
 
 SETS=/mnt1/zaurus/binary/sets
 INSTALLATION=/mnt1/zaurus/installation
@@ -15,9 +14,7 @@ GENERIC=netbsd-GENERIC.gz
 C700=netbsd-C700.gz
 
 # extract sets.
-#LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-#LIST=base etc comp man modules text xbase xcomp xetc xfont xserver kern-GENERIC
-LIST=base etc comp man xbase xcomp xetc xfont xserver kern-GENERIC
+LIST=base etc comp man modules text xbase xcomp xetc xfont xserver kern-GENERIC
 
 # mount point
 MNT=/mnt
@@ -39,7 +36,7 @@ newfs:
 	vnconfig ${VND} ${FILE}
 	disklabel -R ${VND} DISKLABEL.proto
 	newfs_msdos /dev/r${VND}e
-	newfs -n 600000 /dev/r${VND}a
+	newfs -n 600000  -b 4096 /dev/r${VND}a
 	fdisk -ufF -0 -s 6/32/122848 ${FILE} #DOS partition:DISKLABEL.proto
 	vnconfig -u ${VND}
 
