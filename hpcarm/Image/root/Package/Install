@@ -4,7 +4,7 @@ do
 	echo $i
 	#(cd /usr/pkgsrc/*/$i;make package-install)
 	#(cd /mnt/usr/pkgsrc/packages/All;pkg_add $i)
-	pkg_add $i
+	pkg_add -f $i
 done
 
 # install rootcerts for https 
