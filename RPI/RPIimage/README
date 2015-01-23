@@ -17,7 +17,7 @@ Update:
 - pkgsrc-current 2015-01-17 tarball from ftp.NetBSD.
 - port-arm/48805 fixed. audio playback stable.
 - mikutter-3.2.2
-- mlterm-3.4.1
+- mlterm-3.4.2
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
@@ -28,6 +28,10 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-
 
  If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
+
+Growing the root file-system:
+  use disklabel -i and resize_ffs
+  http://wiki.netbsd.org/ports/evbarm/raspberry_pi/
 
 musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
@@ -44,13 +48,13 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
 
 Todo:
-- multimedia/omxplayer
 - bcm2708_fb.fbswap
   http://mail-index.netbsd.org/source-changes/2015/01/21/msg062550.html
+- "Raspberry Pi I2C implementation still broken?"
+  http://mail-index.netbsd.org/port-arm/2015/01/22/msg002804.html
 - Try light-desktop:
   http://wiki.netbsd.org/light-desktop/
-- Summarize /usr/tests result on each version.
-- test COPTS:-fno-reorder-blocks/-fno-tree-vrp/-fno-tree-pre optimization.
+- Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
 - ruby version: 200 -> 21?
 - Need GPIO & bus controll document and implimentation (via lua?)
 - comment out kernel DEBUG/DIAGNOSTIC option
@@ -59,9 +63,14 @@ Todo:
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
-- wip/ruby-therubyracer to support RoR,such as https://github.com/shirasagi/.
 - RPI.rst in english.
-- pkgsrc/mysqlclient?
+
+Pkgsrc news:
+- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf
+- multimedia/omxplayer
+- games/ioquake3-raspberrypi
+- www/firefox: not yet
+
 
 =====================
 
