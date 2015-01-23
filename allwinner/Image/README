@@ -14,6 +14,10 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-07-earmv7hf/2015-02-0
 Overview: 
   http://wiki.NetBSD.org/ports/evbarm/allwinner/
 
+Cubieboard 2
+  http://www.amazon.com/dp/B00KZHR83K
+  http://www.amazon.co.jp/dp/B00IK8YIA2
+
 Update:
 - NetBSD-current 7.99.4 evbarm-earmv7hf 201501071900Z from nyftp.
 - pkgsrc-current 2015-01-17 tarball from ftp.NetBSD.
@@ -62,10 +66,6 @@ KOBO: kernel: (Thanx h_kenken@)
     fatload mmc 1 0x70800000 kobo.bin
     go 0x70800000
 
-Todo:
-- Firefox
- http://mail-index.netbsd.org/port-arm/2014/11/26/msg002750.html
-
 =====================
 
 For Open Source Conference 2015 Oita NetBSD booth
@@ -73,7 +73,7 @@ For Open Source Conference 2015 Oita NetBSD booth
 
  https://www.facebook.com/events/383442128496493/
  https://www.facebook.com/NetBSD.jp 
- https://www.soum.co.jp/~jun/OSC2014fukuoka.pdf
+ https://www.soum.co.jp/~jun/OSC2015oita.pdf
 
 - NetBSD 7.99.4 earmv7hf beagleboard.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
