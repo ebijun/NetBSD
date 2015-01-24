@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.4 (WZERO3.201501100840Z) #0: Sat Jan 10 10:48:05 UTC 2015
-	builds@b48.netbsd.org:/home/builds/ab/HEAD/hpcarm/201501100840Z-obj/home/source/ab/HEAD/src/sys/arch/hpcarm/compile/WZERO3
+NetBSD 7.99.4 (WZERO3.201501222040Z) #0: Thu Jan 22 22:51:10 UTC 2015
+	builds@b41.netbsd.org:/home/builds/ab/HEAD/hpcarm/201501222040Z-obj/home/source/ab/HEAD/src/sys/arch/hpcarm/compile/WZERO3
 total memory = 128 MB
 avail memory = 118 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -16,7 +16,7 @@ cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
 cpu0: 32KB/32B 32-way L1 VIVT Instruction cache
 cpu0: 32KB/32B 32-way write-back-locking L1 VIVT Data cache
 pxaip0 at mainbus0: Onchip Peripheral Bus
-pxaip0: CPU clock = 520.003 MHz
+pxaip0: CPU clock = 520.002 MHz
 pxaip0: kernel is configured for PXA270, cpu type is PXA270
 pxaintc0 at pxaip0 addr 0x40d00000-0x40d0001f: Interrupt Controller
 pxagpio0 at pxaip0 addr 0x40e00000-0x40e0014f: GPIO Controller
@@ -51,20 +51,10 @@ clock: hz=100 stathz=64
 timecounter: Timecounter "saost_count" frequency 3250000 Hz quality 100
 uhub0 at usb0: PXA27x OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-ld0 at sdmmc0: <0x27:0x5048:SD08G:0x30:0x7c98de7d:0x0ca>
-ld0: 7600 MB, 3860 cyl, 64 head, 63 sec, 512 bytes/sect x 15564800 sectors
+ld0 at sdmmc0: <0x03:0x5344:SU08G:0x80:0x80a4d71c:0x0a2>
+ld0: 7580 MB, 3850 cyl, 64 head, 63 sec, 512 bytes/sect x 15523840 sectors
 ld0: 4-bit width, bus clock 19.500 MHz
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
 kern.module.path=/stand/hpcarm/7.99.4/modules
-WARNING: clock lost 5488 days
-WARNING: using filesystem time
-WARNING: CHECK AND RESET THE DATE!
-Kernel RNG "kernel" runs test FAILURE: too many runs of 1 0s (2715 > 2685)
-cprng kernel: failed statistical RNG test
-aue0 at uhub0 port 2
-aue0: I-O DATA DEVICE,INC. USB-ET/TX-S, rev 1.10/1.01, addr 2
-aue0: Ethernet address 00:a0:b0:28:cf:d1
-acphy0 at aue0 phy 1: ACXXX 10/100 media interface, rev. 0
-acphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto

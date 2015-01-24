@@ -1,25 +1,27 @@
-:1,$s/2014-12-06/2014-12-06/g
-:1,$s/201412020710Z/201412020710Z/g
-:1,$s/2014-11-29/2014-11-29/g
+:1,$s/2015-01-24/2015-01-24/g
+:1,$s/201501222040Z/201501222040Z/g
+:1,$s/2015-01-17/2015-01-17/g
 
 
 To: port-hpcarmnetbsd.org@localhost
-Subject: 2014-12-06-netbsd6-hpcarm.img 
+Subject: 2015-01-24-netbsd-hpcarm.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-12-06-netbsd6-hpcarm.img.gz for hpcarm.
+I've updated 2015-01-24-netbsd-hpcarm.img.gz for hpcarm.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-12-06-netbsd6-hpcarm.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2015-01-24-netbsd-hpcarm.img.gz
+
+http://movapic.com/pic/2015012400560454c2eda44b7d3
 
 Feature:
-- NetBSD 6.1.5-PATCH-201412020710ZZ hpcarm from nyftp.netbsd
-- pkgsrc-current 2014-11-29 tarball from ftp.NetBSD.
+- NetBSD 7.99.4-201501222040ZZ hpcarm from nyftp.netbsd
+- pkgsrc-current 2015-01-17 tarball from ftp.NetBSD.
 - dmesg:
   https://github.com/ebijun/NetBSD/blob/master/hpcarm/Image/dmesg
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/earm/2015-02-07/
  To install application.
  # pkg_add some_application_name
 
@@ -27,17 +29,14 @@ PKG_PATH=http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
  /etc/mk.conf.
 
 Todo:
-- switch to hpcearm
-  NetBSD-7.99.1-hpcarm-201411260130Z boot fine,
-  but still random hungs.
 
 =====================
 
-For NetBSD Advent Calendar 2014
-(http://qiita.com/advent-calendar/2014/netbsd)
+For Nagoya *BSD Users' Group 2015/1 meeting.
+(http://www.nagoya.bug.gr.jp/)
 demonstration use, I've updated hpcarm image.
 
-- NetBSD 6.1.5 base
+- NetBSD 7.99.4 base
 - Copy image to Mini/MicroSD.
 - Set WZERO3.
 - boot hpcboot.exe
@@ -55,13 +54,27 @@ demonstration use, I've updated hpcarm image.
 Features:
   - fit size for 2GB SD Card
   - with X11
-  - pkgsrc: 2014-11-29 tree inside.
+  - pkgsrc: 2015-01-17 tree inside.
   - pre-build packages
-    http://teokurebsd.org/netbsd/packages/arm/6.1.5_2014Q3/All/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/earm/2015-02-07/
 
 Installed Packages:
- not yet.
+ build by RPI+NetBSD-7.99.4-evbarm-earm-201501071900Z.iso
 
+kterm
+bash
+tcsh
+vlgothic-ttf
+icewm
+xli
+ruby200-mikutter
+uim
+sudo
+zsh
+mlterm
+pkg_chk
+mozilla-rootcerts
+dillo
 
 Keyboard layout checkpoint:
 /etc/wscons.conf
