@@ -71,9 +71,9 @@ bootarea:
 	
 	cp ${INSTALLATION}/hpcboot-sh3.exe ${MNT}
 	cp ${INSTALLATION}/hpcboot-sh4.exe ${MNT}
-	cp ${KERNEL}/netbsd-GENERIC.gz   
-	cp ${KERNEL}/netbsd-HPW650PA.gz
-	cp msdos/hpcboot.cnf ${MNT}
+	cp ${KERNEL}/netbsd-GENERIC.gz     ${MNT}
+	cp ${KERNEL}/netbsd-HPW650PA.gz    ${MNT}
+#	cp msdos/hpcboot.cnf ${MNT}
 	
 	umount ${MNT}
 	vnconfig -u ${VND}
