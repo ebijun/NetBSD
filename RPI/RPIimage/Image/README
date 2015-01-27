@@ -16,6 +16,11 @@ Update:
 - NetBSD-current 7.99.4 evbarm-earmv6hf 201501071900Z from nyftp.
 - pkgsrc-current 2015-01-17 tarball from ftp.NetBSD.
 - port-arm/48805 fixed. audio playback stable.
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48805
+- "Raspberry Pi I2C implementation still broken?"
+  http://mail-index.netbsd.org/port-arm/2015/01/22/msg002804.html
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48855
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48932
 - mikutter-3.2.2
 - mlterm-3.4.2
 
@@ -50,8 +55,6 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
 Todo:
 - bcm2708_fb.fbswap
   http://mail-index.netbsd.org/source-changes/2015/01/21/msg062550.html
-- "Raspberry Pi I2C implementation still broken?"
-  http://mail-index.netbsd.org/port-arm/2015/01/22/msg002804.html
 - Try light-desktop:
   http://wiki.netbsd.org/light-desktop/
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
