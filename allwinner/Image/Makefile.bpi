@@ -60,6 +60,8 @@ extract:
 	cp ${KOBO}         ${MNT}/boot
 	cp ${KOBOBIN}      ${MNT}/boot
 	cp ${KOBOUBOOT}    ${MNT}/boot
+	mkdir ${MNT}/kern
+	mkdir ${MNT}/proc
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
