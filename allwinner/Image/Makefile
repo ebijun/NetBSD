@@ -4,17 +4,17 @@
 FILE=`date +%Y-%m-%d`-netbsd-allwinner.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.4-evbarm-earmv7hf-201501262340Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.4-evbarm-earmv7hf-201501272130Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015-01-24.tar.gz
 
 # UBOOT
 BOARD=cubieboard2
 UBOOTURL=http://dl.linux-sunxi.org/nightly/u-boot-sunxi/u-boot-sunxi/u-boot-sunxi-latest/
-UBOOTVER=u-boot-sunxi-cubieboard2-20141106T184228-30bf0a5
+UBOOTDIR=u-boot-sunxi-${BOARD}-20141106T184228-30bf0a5
 
 # FEX : for Board Configration
-FEX=cubieboard2.bin
+FEX=cubieboard2
 FEXURL=http://ftp.netbsd.org/pub/NetBSD/misc/jmcneill/allwinner/fex
 
 # kernels
@@ -34,7 +34,7 @@ SETS=${MNT_CDROM}/evbarm/binary/sets
 beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/beagleboard.img
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-LIST=man modules tests text xbase xcomp xetc xfont xserver 
+LIST=man modules text xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
@@ -102,6 +102,7 @@ release:
 	mount /dev/${VND}e ${MNT}/boot
 	tar cf - etc root |(cd ${MNT};tar xvf -)
 	cp boot/* ${MNT}/boot
+	sed -i -e 's/cubieboard2/${FEX}/' ${MNT}/boot/uEnv.txt
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -160,11 +161,11 @@ uboot-update:
 	(cd u-boot;tar xzvf u-boot-sunxi-${BOARD}.tar.xz)
 
 uboot-copy:
-	dd if=u-boot/${UBOOTVER}/u-boot-sunxi-with-spl.bin of=${FILE} bs=1k seek=8 conv=notrunc
+	dd if=u-boot/${UBOOTDIR}/u-boot-sunxi-with-spl.bin of=${FILE} bs=1k seek=8 conv=notrunc
 
 # FEX : for Board Configration, copy into /boot and set uEnv.txt
 fex-update:
-	(cd fex;ftp ${FEXURL}/${FEX})
+	(cd fex;ftp ${FEXURL}/${FEX}.bin)
 
 fex-copy:
-	cp fex/${FEX} boot/
+	cp fex/${FEX}.bin boot/
