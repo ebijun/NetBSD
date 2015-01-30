@@ -1,0 +1,148 @@
+VERSION: :1,$s/2015-01-30/2015-01-30/g
+ISO:     :1,$s/201501272130Z/201501272130Z/g
+PKGSRC:  :1,$s/2015-01-24/2015-01-24/
+NetBSD:  :1,$s/7.99.4/7.99.4/g
+
+To: port-armNetBSD.org@localhost
+Subject: 2015-01-30-netbsd-bpi.img 
+From: Jun Ebihara <jun@soum.co.jp>
+
+I've updated 2015-01-30-netbsd-bpi.img.gz for Banana PI.
+
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-01-30-earmv7hf/2015-01-30-netbsd-bpi.img.gz
+
+Overview: 
+  http://wiki.NetBSD.org/ports/evbarm/allwinner/
+
+Banana PI:
+  http://www.bananapi.org/
+  http://www.amazon.com/dp/B00MWA5JKM/
+  http://www.amazon.co.jp/dp/B00NAXKN9W
+
+Update:
+- NetBSD-current 7.99.4 evbarm-earmv7hf 201501272130Z from nyftp.
+- pkgsrc-current 2015-01-24 tarball from ftp.NetBSD.
+  https://github.com/ebijun/NetBSD/blob/master/allwinner/pkgsrc/pkginfo
+- dmesg: 
+  https://github.com/ebijun/NetBSD/blob/master/allwinner/dmesg.bpi
+
+Pre-compiled packages:
+- Pre-compiled packages path setting: see /etc/pkg_install.conf 
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/earmv7hf/2015-02-07/
+
+ To install application.
+ # pkg_add some_application_name
+
+ If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
+ /etc/mk.conf.
+
+musica - DLNA/UPnP music server: (Thanx @cvsync)
+ MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
+
+  1. Check http://www.m-systems.co.jp/musica/index_en.html .
+  2. Download musica-0.3.12-netbsd6-evbarm-earmv7hf.tgz for evaluation.
+  3. pkg_add musica-0.3.12-netbsd6-evbarm-earmv7hf.tgz
+  4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
+  5. Find from DLNA/UPnP AV equipment.
+  6. With a little luck,you'll find musica and enjoy music via musica.
+  7. If you feel slow,Try {NetBSD/amd64 i386,OSX,Ubuntu} Version or improve NetB
+SD.
+
+SHARP NetWalker kernel: (Thanx h_kenken@)
+  /boot/netbsd-NETWALKER.bin.gz is a kernel for Sharp NetWalker.
+
+  1. Make backup image on NetWalker ubuntu.
+  2. cp /boot/netbsd-netwalker.bin.gz [BackupImage]/boot/zImage
+  3. Set [BackupImage] MicroSD to NetWalker MicroSD port
+  4. Set RPI image to USB port via SD to USB dongle.
+  5. With pushing [L Mouse][R Mouse],push Power button in 5 seconds.
+  6. Pray for success in 5 seconds.
+  7. Typical NetBSD Boot message appears on your console.
+  8. Fail on single user mode,"mount /"
+  9. vi /etc/fstab and type :1,$s/ld0/sd0/g w q
+  10. reboot and login again.
+  11. startx and mouse can control with small touchpad.
+
+KOBO: kernel: (Thanx h_kenken@)
+  kobo-kernels and uboot on /boot:
+    mmcinfo 1
+    fatload mmc 1 0x70800000 kobo.bin
+    go 0x70800000
+
+=====================
+
+For FreeBSD Workshop #4 by hrs@
+ demonstration use, I've updated BananaPI image.
+
+ http://freebsd-workshop.connpass.com/event/11547/
+ Twitter: #freebsdworkshop
+ https://www.facebook.com/events/763062893780278/
+
+- NetBSD 7.99.4 earmv7hf beagleboard.img.gz base
+- Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
+- login: root (no passwd)
+- # startx  ... icewm working
+- # mikutter   .. start twitter client.
+
+Features:
+  - fit size for 2GB SD Card
+    "Growing the root file-system" with resize_ffs command.
+    http://wiki.netbsd.org/ports/evbarm/raspberry_pi/
+  - with X11
+  - Recent current BananaPI kernel
+  - pkgsrc: 2015-01-24 tree inside.
+  - pre-build packages
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/earmv7hf/2015-02-07/
+
+Installed Packages:
+
+kterm
+bash
+tcsh
+vlgothic-ttf
+icewm
+xli
+ruby200-mikutter
+uim
+fossil
+sudo
+git-base
+zsh
+mlterm
+pkg_chk
+lintpkgsrc
+mozilla-rootcerts
+dillo
+medit
+
+To control HDMI output,add/delete "console=fb" on uEnv.txt.
+If delete console=fb definition,you can get serial console instead.
+
+ $ head -1 /boot/uEnv.txt
+ bootargs=root=ld0a sysconfig=0x43000000 console=fb
+ to
+ bootargs=root=ld0a sysconfig=0x43000000 
+
+Sound output can control with audiocfg 0/1/list.
+
+/root/.xinitrc:
+ audiocfg default 1  # 1 means HDMI audio out.
+
+Keyboard layout checkpoint:
+/etc/wscons.conf
+ #encoding sv
+ #encoding us.swapctrlcaps
+ encoding jp
+
+/root/.xinitrc
+ setxkbmap -model jp106 jp
+
+mikutter plugin:
+/root/.mikutter/plugin/ : http://yuzuki.hachune.net/wiki/Plugin
+- display_requirements.rb [Pre installed]
+
+Build sample script:
+ https://github.com/ebijun/NetBSD/blob/master/allwinner/Image/Makefile.bpi
+
+--
+Jun Ebihara
