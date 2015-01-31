@@ -15,6 +15,11 @@ Update:
 - Switch from earmhf to earmv6hf.
 - NetBSD-current 7.99.4 evbarm-earmv6hf 201501071900Z from nyftp.
 - pkgsrc-current 2015-01-17 tarball from ftp.NetBSD.
+- omxplayer and ioquake3-raspberrypi support
+  pkg_add omxplayer
+  pkg_add youtube-dl
+  youtube-dl https://www.youtube.com/watch?v=wG8ZCC8IwvM
+  omxplayer *
 - port-arm/48805 fixed. audio playback stable.
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48805
 - "Raspberry Pi I2C implementation still broken?"
