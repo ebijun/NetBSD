@@ -1,6 +1,6 @@
 VERSION: :1,$s/2015-02-07/2015-02-07/g
-ISO:     :1,$s/201501071900Z/201501071900Z/g
-PKGSRC:  :1,$s/2015-01-17/2015-01-17/
+ISO:     :1,$s/201502011550Z/201502011550Z/g
+PKGSRC:  :1,$s/2015-01-31/2015-01-31/
 NetBSD:  :1,$s/7.99.4/7.99.4/g
 
 To: port-armNetBSD.org@localhost
@@ -19,8 +19,8 @@ Cubieboard 2
   http://www.amazon.co.jp/dp/B00IK8YIA2
 
 Update:
-- NetBSD-current 7.99.4 evbarm-earmv7hf 201501071900Z from nyftp.
-- pkgsrc-current 2015-01-17 tarball from ftp.NetBSD.
+- NetBSD-current 7.99.4 evbarm-earmv7hf 201502011550Z from nyftp.
+- pkgsrc-current 2015-01-31 tarball from ftp.NetBSD.
 - dmesg: https://github.com/ebijun/NetBSD/blob/master/allwinner/dmesg
 
 Pre-compiled packages:
@@ -37,8 +37,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
 
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.11-netbsd6-evbarm-earmv7hf.tgz for evaluation.
-  3. pkg_add musica-0.3.11-netbsd6-evbarm-earmv7hf.tgz
+  2. Download musica-0.3.12-netbsd6-evbarm-earmv7hf.tgz for evaluation.
+  3. pkg_add musica-0.3.12-netbsd6-evbarm-earmv7hf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -85,7 +85,7 @@ Features:
   - fit size for 2GB SD Card
   - with X11
   - Recent current Cubieboard2 kernel
-  - pkgsrc: 2015-01-17 tree inside.
+  - pkgsrc: 2015-01-31 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/earmv7hf/2015-02-07/
 
@@ -139,7 +139,6 @@ mikutter plugin:
 Build sample script:
  https://github.com/ebijun/NetBSD/tree/master/allwinner/Image
 
-BUGS:
 
 --
 Jun Ebihara
