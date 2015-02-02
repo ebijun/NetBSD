@@ -1,12 +1,12 @@
 # Makefile for RPI image.
 
 ARCH=earmv6hf
-PKG_PATH=/usr/pkgsrc/packages/All;ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-02-07/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-02-07/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.4-evbarm-${ARCH}-201501222040Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.4-evbarm-${ARCH}-201502011550Z.iso
 
-PKGSRC=pkgsrc-2015-01-17.tar.gz
+PKGSRC=../../../pkgsrc/pkgsrc-2015-01-31.tar.gz 
 
 ###
 
@@ -18,7 +18,7 @@ SETS=${MNT_CDROM}/evbarm/binary/sets
 RPI=${MNT_CDROM}/evbarm/binary/gzimg/rpi.img
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-LIST=man modules tests text xbase xcomp xetc xfont xserver 
+LIST=man modules text xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
