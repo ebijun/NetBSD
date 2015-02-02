@@ -1,6 +1,6 @@
 VERSION: :1,$s/2015-02-07/2015-02-07/g
-ISO:     :1,$s/201501071900Z/201501071900Z/g
-PKGSRC:  :1,$s/2015-01-17/2015-01-17/
+ISO:     :1,$s/201502011550Z/201502011550Z/g
+PKGSRC:  :1,$s/2015-01-31/2015-01-31/
 NetBSD:  :1,$s/7.99.4/7.99.4/g
 
 To: port-armNetBSD.org@localhost
@@ -13,9 +13,10 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-02-07-earmv6hf/2015-0
 
 Update:
 - Switch from earmhf to earmv6hf.
-- NetBSD-current 7.99.4 evbarm-earmv6hf 201501071900Z from nyftp.
-- pkgsrc-current 2015-01-17 tarball from ftp.NetBSD.
+- NetBSD-current 7.99.4 evbarm-earmv6hf 201502011550Z from nyftp.
+- pkgsrc-current 2015-01-31 tarball from ftp.NetBSD.
 - omxplayer and ioquake3-raspberrypi support
+  After "Growing the root file-system"
   pkg_add omxplayer
   pkg_add youtube-dl
   youtube-dl https://www.youtube.com/watch?v=wG8ZCC8IwvM
@@ -47,8 +48,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.10-netbsd6-evbarm-earmv6hf.tgz for evaluation.
-  3. pkg_add musica-0.3.10-netbsd6-evbarm-earmv6hf.tgz
+  2. Download musica-0.3.12-netbsd6-evbarm-earmv6hf.tgz for evaluation.
+  3. pkg_add musica-0.3.12-netbsd6-evbarm-earmv6hf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -72,11 +73,6 @@ Todo:
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
 - RPI.rst in english.
-
-Pkgsrc news:
-- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf
-- multimedia/omxplayer
-- games/ioquake3-raspberrypi
 - www/firefox: not yet
 
 
@@ -126,7 +122,7 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2015-01-17 tree inside.
+  - pkgsrc: 2015-01-31 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-07/
 
