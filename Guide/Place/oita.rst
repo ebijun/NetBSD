@@ -29,6 +29,25 @@ Maps:
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/oita.rst
 
+大分でのオープンソースカンファレンス
+---------------------------------------
+.. Github/NetBSD/Guide/OSC/OSC100.csv 更新
+
+.. csv-table::
+ :widths: 20 15 20 20 40
+
+ 開催年,開催日,参加者,参加グループ,会場
+ 2008,2/15-16,70,10,別府杉乃井ホテル コスモス
+ 2009,3/13-3/14,140,16,ソフトパーク　ソフィアプラザ
+ 2010,1/23,150,9,アイネス
+ 2011,3/19,100,11,アイネス
+ 2012,2/11,180,13,アイネス
+ 2012,10/27,100,15,ソフィアホール
+ 2013,11/23,100,17,アイネス
+ 2015,2/7,,14,アイネス
+
+
+ 
 OSC大分まとめ
 ~~~~~~~~~~~~~
 
@@ -85,9 +104,58 @@ OSC大分主な展示物
  2012/10/27,WZero3 hpcmips hpcarm hpcsh zaurus ておくれイメージ
  2013/11/23,RPI Netwalker Zaurus
 
-.. image:: ../Picture/2011/03/18/P1000317.JPG
-.. image:: ../Picture/2011/03/18/P1000319.JPG
-.. image:: ../Picture/2011/03/19/P1000321.JPG
+.. image:: ../Picture/2013/11/23/DSC_2894.jpg
+.. image:: ../Picture/2013/11/23/DSC_2895.jpg
+.. image:: ../Picture/2013/11/23/DSC_2896.jpg
+.. image:: ../Picture/2013/11/23/DSC_2897.jpg
+.. image:: ../Picture/2013/11/23/DSC_2898.jpg
+.. image:: ../Picture/2013/11/23/DSC_2899.jpg
+.. image:: ../Picture/2013/11/23/DSC_2900.jpg
+.. image:: ../Picture/2013/11/23/DSC_2901.jpg
+.. image:: ../Picture/2013/11/23/DSC_2902.jpg
+.. image:: ../Picture/2013/11/23/DSC_2903.jpg
+.. image:: ../Picture/2013/11/23/DSC_2904.jpg
+.. image:: ../Picture/2013/11/23/DSC_2905.jpg
+.. image:: ../Picture/2013/11/23/DSC_2906.jpg
+.. image:: ../Picture/2013/11/23/DSC_2907.jpg
+.. image:: ../Picture/2013/11/23/DSC_2908.jpg
+.. image:: ../Picture/2013/11/23/DSC_2909.jpg
+.. image:: ../Picture/2013/11/23/DSC_2910.jpg
+.. image:: ../Picture/2013/11/23/DSC_2911.jpg
+.. image:: ../Picture/2013/11/23/DSC_2912.jpg
+.. image:: ../Picture/2013/11/23/DSC_2913.jpg
+.. image:: ../Picture/2013/11/23/DSC_2914.jpg
+.. image:: ../Picture/2013/11/23/DSC_2915.jpg
+.. image:: ../Picture/2013/11/23/DSC_2916.jpg
+.. image:: ../Picture/2013/11/23/DSC_2917.jpg
+.. image:: ../Picture/2013/11/23/DSC_2918.jpg
+.. image:: ../Picture/2013/11/23/DSC_2919.jpg
+.. image:: ../Picture/2013/11/23/dsc03655.jpg
+.. image:: ../Picture/2013/11/23/dsc03656.jpg
+.. image:: ../Picture/2013/11/23/dsc03657.jpg
+.. image:: ../Picture/2013/11/23/dsc03658.jpg
+.. image:: ../Picture/2013/11/23/dsc03659.jpg
+.. image:: ../Picture/2013/11/23/dsc03660.jpg
+.. image:: ../Picture/2013/11/23/dsc03661.jpg
+.. image:: ../Picture/2013/11/23/dsc03662.jpg
+.. image:: ../Picture/2013/11/23/dsc03663.jpg
+.. image:: ../Picture/2013/11/23/dsc03664.jpg
+.. image:: ../Picture/2013/11/23/dsc03665.jpg
+.. image:: ../Picture/2013/11/23/dsc03666.jpg
+.. image:: ../Picture/2013/11/23/dsc03667.jpg
+.. image:: ../Picture/2013/11/23/dsc03668.jpg
+.. image:: ../Picture/2013/11/23/dsc03669.jpg
+.. image:: ../Picture/2013/11/23/dsc03670.jpg
+.. image:: ../Picture/2013/11/23/dsc03671.jpg
+.. image:: ../Picture/2013/11/23/dsc03672.jpg
+.. image:: ../Picture/2013/11/23/dsc03673.jpg
+.. image:: ../Picture/2013/11/23/dsc03674.jpg
+.. image:: ../Picture/2013/11/23/dsc03675.jpg
+.. image:: ../Picture/2013/11/23/dsc03676.jpg
+.. image:: ../Picture/2013/11/23/dsc03677.jpg
+.. image:: ../Picture/2013/11/23/dsc03678.jpg
+.. image:: ../Picture/2013/11/23/dsc03679.jpg
+.. image:: ../Picture/2013/11/23/dsc03680.jpg
 .. image:: ../Picture/2012/02/10/P1001561.JPG
 .. image:: ../Picture/2012/02/10/P1001562.JPG
 .. image:: ../Picture/2012/02/10/P1001564.JPG
@@ -172,4 +240,6 @@ OSC大分主な展示物
 .. image:: ../Picture/2012/02/11/dsc00199.jpg
 .. image:: ../Picture/2012/10/27/dsc01876.jpg
 .. image:: ../Picture/2012/10/27/dsc01877.jpg
-
+.. image:: ../Picture/2011/03/18/P1000317.JPG
+.. image:: ../Picture/2011/03/18/P1000319.JPG
+.. image:: ../Picture/2011/03/19/P1000321.JPG
