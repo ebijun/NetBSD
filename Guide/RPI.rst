@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -19,8 +19,8 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: :1,$s/2014-11-22/2014-11-22/g
- .. todo:: :1,$s?2014/11/15?2014/11/15?g
+ .. todo:: :1,$s/2015-02-07/2015-02-07/g
+ .. todo:: :1,$s?2015/01/31?2015/01/31?g
  .. todo:: apache+php+mysql設定
  .. todo:: uim-pref-gtk
  .. todo:: webkit-gtk
@@ -37,7 +37,7 @@
  .. todo:: For I2C consult the iic(4) man page, also see the i2cscan(8) utility and its source.
  .. todo:: For GPIO see gpio(4) man page.
  .. todo:: For SPI as far as I know there are no generic user-space components provided, besides support for SPI flashes.
- .. todo:: .build.sh -j -u -U -a earmhf -m evbarm iso-image
+ .. todo:: .build.sh -j -u -U -a earmv6hf -m evbarm iso-image
 
 =================================
 RaspberryPIでNetBSDを使ってみる
@@ -65,21 +65,17 @@ RaspberryPIでNetBSDを使ってみる
 
 ::
 
- earmhf (EARM：ハードフロート 通常はこちらを利用してください)
+ earmv6hf 
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2014-11-22-earmhf/2014-11-22-netbsd-raspi.img.gz
+ 2015-02-07-earmv6hf/2015-02-07-netbsd-raspi-earmv6hf.img.gz.gz
  
- evbarm (ソフトフロート：hpcarm/zaurus互換)
- # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2013-09-09-02-netbsd-evbarm.img.gz
-
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
 
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2014-11-22-netbsd-raspi.img.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2015-02-07-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
 
 RaspberryPIの起動
 ------------------
@@ -175,7 +171,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 ::
 
  % cat /etc/pkg_install.conf
-　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmhf/2014-11-22
+　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-07
 
 * パッケージのインストール
 
@@ -202,7 +198,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- 2014/11/15時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
+ 2015/01/31時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
@@ -255,7 +251,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2014-11-22-netbsd-raspi.img
+ # vnconfig vnd0 2015-02-07-netbsd-raspi-earmv6hf.img.gz
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
@@ -307,7 +303,7 @@ https://raw.github.com/Evilpaul/RPi-config/master/config.txt
 
 ::
 
- # ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201310161210Z/evbarm-earmhf/binary/gzimg/rpi_inst.bin.gz
+ # ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201502042230Z/evbarm-earmv6hf/binary/gzimg/rpi_inst.bin.gz
  # gunzip < rpi_inst.bin.gz |dd of=/dev/rsd3d bs=1m   .... sd3にコピー。
 
   RaspberryPIにsdカードを差して、起動すると、#　プロンプトが表示されます。
@@ -317,7 +313,7 @@ X11のインストール
 ------------------
  rpi.bin.gzからインストールした場合、Xは含まれていません。追加したい場合は、
 
-　ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201310161210Z/evbarm-earmhf/binary/sets/ 以下にあるtarファイルを展開します。tarで展開するときにpオプションをつけて、必要な権限が保たれるようにしてください。
+　ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201310161210Z/evbarm-earmv6hf/binary/sets/ 以下にあるtarファイルを展開します。tarで展開するときにpオプションをつけて、必要な権限が保たれるようにしてください。
 
 ::
 
@@ -326,7 +322,7 @@ X11のインストール
 クロスビルドの方法
 ------------------
 * ソースファイル展開
-* ./build.sh -U -m evbarm -a earmhf release
+* ./build.sh -U -m evbarm -a earmv6hf release
 * earm{v[4567],}{hf,}{eb} earmv4hf
 * http://mail-index.netbsd.org/tech-kern/2013/11/12/msg015933.html
 

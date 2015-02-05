@@ -24,14 +24,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. ページ割:縮小70%:表紙3p抜いて17p:intro+RPIで11p
+   1: 表紙
+   2: 2014maps
+   3-5: 地元:場所1p,i写真は1ページ3x6-8=18-24枚
+   6-10: intro
+   11-17: RPI
+   18-19: RPI/cubieboard
+   20: 裏表紙
+   
 .. toctree::
  :maxdepth: 3
  :numbered:
 
  Place/oita
- RPI
  Place/intro
-
+ RPI
 
 * :ref:`genindex`
 * :ref:`modindex`

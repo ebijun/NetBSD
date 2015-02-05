@@ -329,10 +329,10 @@ pkg_rolling-replaceを使う方法:依存関係に従って更新する
  http://cvsweb.NetBSD.org/
  # cd src
  # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r netbsd-6-1-4-RELEASE  ... NetBSD6.1.4
+ # cvs update -Pd -r netbsd-6-1-5-RELEASE  ... NetBSD6.1.5
  # cd pkgsrc
  # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r pkgsrc-2014Q2 ... 2014Q2に更新
+ # cvs update -Pd -r pkgsrc-2014Q4 ... 2014Q4に更新
 
 
 バグレポート・追加差分
