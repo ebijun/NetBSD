@@ -132,6 +132,9 @@ OSC大分主な展示物
 2012-11年
 ~~~~~~~~~~~~~~~~~
 
+.. image:: ../Picture/2012/10/27/DSC_1143.JPG
+.. image:: ../Picture/2012/10/27/DSC_1144.JPG
+.. image:: ../Picture/2012/10/27/DSC_1145.JPG
 .. image:: ../Picture/2012/02/10/dsc00139.jpg
 .. image:: ../Picture/2012/02/10/dsc00144.jpg
 .. image:: ../Picture/2012/02/10/dsc00170.jpg
@@ -159,9 +162,6 @@ OSC大分主な展示物
 .. image:: ../Picture/2012/10/27/DSC_1139.JPG
 .. image:: ../Picture/2012/10/27/DSC_1141.JPG
 .. image:: ../Picture/2012/10/27/DSC_1142.JPG
-.. image:: ../Picture/2012/10/27/DSC_1143.JPG
-.. image:: ../Picture/2012/10/27/DSC_1144.JPG
-.. image:: ../Picture/2012/10/27/DSC_1145.JPG
 .. image:: ../Picture/2012/02/11/dsc00199.jpg
 .. image:: ../Picture/2012/10/27/dsc01877.jpg
 .. image:: ../Picture/2011/03/19/P1000321.JPG
