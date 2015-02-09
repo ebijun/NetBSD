@@ -37,9 +37,10 @@
  :maxdepth: 3
  :numbered:
 
- Place/oita
- Place/intro
+ Place/hamamatsu
  RPI
+ WZERO3
+ ZAURUS
 
 * :ref:`genindex`
 * :ref:`modindex`

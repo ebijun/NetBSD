@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -23,6 +23,12 @@
 WZERO3でNetBSDを使ってみる 
 ====================================
 
+NetBSD/hpcarm 6.1 W-ZERO3 ておくれLive Image
+---------------------------------------------
+
+筒井さんによる、ておくれイメージのページも見てください。
+ http://www.ceres.dti.ne.jp/tsutsui/netbsd/liveimage/wzero3.html
+
 用意するもの
 -----------
 #.  WZERO3本体 WS003SH/WS004SH/WS007SH/WS011SH/WS020SH
@@ -45,14 +51,6 @@ WS003SH,WS004SH,WS007SHで、2G以上のSDHCカードを利用するためには
 SDHCドライバ
  http://w-zero3.org/?%A5%B7%A5%B9%A5%C6%A5%E0%B4%D8%B7%B8#wf87e46c
 
-ダウンロード
------------
-
-WS003SH/WS004SH/WS007SH Windows Mobile5用 
-   http://rapidshare.com/files/113205759/SDHC_DRIVERS_FOR_C550_AND_N560_BY_GreateVK_AND_FreePK.cab.html
-WS011SH/WS020SH Windows Mobile6用 
-   http://w-zero3.org/uploader/src/up0823.zip
-
 インストール
 -----------
   ダウンロードしたSDHCドライバを、2GB以下のMicro/MiniSDカードにコピーします。コピーしたカードをWZEROのカードスロットに差します。
@@ -63,9 +61,9 @@ WS011SH/WS020SH Windows Mobile6用
 
 NetBSDディスクイメージのダウンロード
 -----------------------------------
-NetBSD6.1.5インストール済みのディスクイメージファイルを作りました。
+NetBSD7.99.4インストール済みのディスクイメージファイルを作りました。
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2014-12-06-netbsd6-hpcarm.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2015-01-24-netbsd-hpcarm.img.gz
 
 ディスクイメージをコンパクトフラッシュにコピーする
 -----------------------------------------------

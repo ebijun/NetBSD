@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -56,7 +56,7 @@ OSC浜松まとめ
  ヤサカ,領家,ポークカレー 白い鉄塔そば
  三太,モール街,学生ラーメンとは何か
  アールクラフト,鍛冶町,溢るる鉄道ミニカーレジンキット
- むつぎく,砂山町,餃子。改装してます
+ むつぎく,砂山町,餃子。行列しがち。
  浜松市楽器博物館,浜松駅前,電子楽器コーナーができた
  トゥルネ・ラ・パージュ,板屋町,アヴァンギャルドフルセットが鳴る喫茶店
  クロスオーディオ,磐田,東新町行きバスで西貝塚下車
@@ -64,6 +64,9 @@ OSC浜松まとめ
  マイン・シュロス,中央,はままつ地ビール
  天神蔵,天神町,天神。家康くんビールとは何か
  加茂花菖蒲園,原田,氷菓の千反田邸モデル。 4/26-6/30開園
+ Konohi,いこいの広場,ステーショナリーカフェ
+ 二の丸美術館,掛川,2015/2/15まで中村ケンゴ展
+ シロネコ,桜木,自家焙煎珈琲豆
  マムゼル,袋井,ライブがあるジャズ喫茶
  ダダリ,焼津,晩年リヒテルが気に入ってよく来ていた。「リヒテル」のサインがある。
  そば屋 案山棒,西焼津,舞踊演劇ライブあり。大駱駝艦→大豆鼓ファーム→そ。
@@ -75,68 +78,49 @@ OSC浜松まとめ
  チューブアンプクラブ豊橋,豊橋,http://www.geocities.jp/tactoyohashi/concert2.htm　
  トーチカ,二川,http://www.k4.dion.ne.jp/~entaigou/toyohashi.html
  タケウチ電子,豊橋駅前,みんなこの無線屋に通ってNetBSD開発者になった
-
+ 
+ 
 OSC浜名湖主な展示物
 ~~~~~~~~~~~~~~~~~
 
 .. csv-table::
  :widths: 15 15 60
 
+ 2014/3/22,浜松,RPI WZero3 O2 Netwalker
  2013/2/9,浜松,RPI WZero3
 
-.. image:: ../Picture/2013/04/21/DSC_1986.jpg
-.. image:: ../Picture/2013/04/21/DSC_1987.jpg
+
+2014
+-----------------
+
+.. image:: ../Picture/2014/03/22/DSC_3198.jpg
+.. image:: ../Picture/2014/03/22/DSC_3199.jpg
+.. image:: ../Picture/2014/03/22/DSC_3200.jpg
+.. image:: ../Picture/2014/03/22/DSC_3201.jpg
+.. image:: ../Picture/2014/03/22/DSC_3202.jpg
+.. image:: ../Picture/2014/03/22/DSC_3203.jpg
+.. image:: ../Picture/2014/03/22/DSC_3204.jpg
+.. image:: ../Picture/2014/03/22/DSC_3205.jpg
+.. image:: ../Picture/2014/03/22/DSC_3206.jpg
+.. image:: ../Picture/2014/03/22/DSC_3207.jpg
+.. image:: ../Picture/2014/03/22/dsc04394.jpg
+.. image:: ../Picture/2014/03/22/dsc04400.jpg
+.. image:: ../Picture/2014/03/22/dsc04409.jpg
+.. image:: ../Picture/2014/03/22/dsc04410.jpg
+.. image:: ../Picture/2014/03/22/dsc04415.jpg
+
+2013
+-----------------
+
 .. image:: ../Picture/2013/04/21/DSC_1989.jpg
-.. image:: ../Picture/2013/04/21/DSC_1999.jpg
-.. image:: ../Picture/2013/04/21/DSC_2000.jpg
-.. image:: ../Picture/2013/04/21/dsc02397.jpg
-.. image:: ../Picture/2013/04/21/dsc02399.jpg
-.. image:: ../Picture/2013/04/21/dsc02406.jpg
-.. image:: ../Picture/2013/04/21/dsc02407.jpg
-.. image:: ../Picture/2013/04/21/dsc02410.jpg
 .. image:: ../Picture/2013/02/09/DSC_1606.jpg
 .. image:: ../Picture/2013/02/09/DSC_1607.jpg
 .. image:: ../Picture/2013/02/09/DSC_1608.jpg
 .. image:: ../Picture/2013/02/09/DSC_1609.jpg
 .. image:: ../Picture/2013/02/09/DSC_1610.jpg
 .. image:: ../Picture/2013/02/09/DSC_1611.jpg
-.. image:: ../Picture/2013/02/09/DSC_1612.jpg
 .. image:: ../Picture/2013/02/09/DSC_1614.jpg
 .. image:: ../Picture/2013/02/09/DSC_1615.jpg
 .. image:: ../Picture/2013/02/09/DSC_1616.jpg
 .. image:: ../Picture/2013/02/09/DSC_1617.jpg
 .. image:: ../Picture/2013/02/09/DSC_1618.jpg
-.. image:: ../Picture/2013/02/09/DSC_1619.jpg
-.. image:: ../Picture/2013/02/09/dsc02122.jpg
-.. image:: ../Picture/2013/02/09/dsc02123.jpg
-.. image:: ../Picture/2013/02/09/dsc02124.jpg
-.. image:: ../Picture/2013/02/09/dsc02125.jpg
-.. image:: ../Picture/2013/02/09/dsc02126.jpg
-.. image:: ../Picture/2013/02/09/dsc02128.jpg
-.. image:: ../Picture/2013/01/20/DSC_1550.jpg
-.. image:: ../Picture/2013/01/20/DSC_1554.jpg
-.. image:: ../Picture/2013/01/20/DSC_1556.jpg
-.. image:: ../Picture/2013/01/20/DSC_1557.jpg
-.. image:: ../Picture/2013/01/20/DSC_1558.jpg
-.. image:: ../Picture/2013/01/20/DSC_1559.jpg
-.. image:: ../Picture/2013/01/20/DSC_1560.jpg
-.. image:: ../Picture/2013/01/20/DSC_1561.jpg
-.. image:: ../Picture/2013/01/20/DSC_1562.jpg
-.. image:: ../Picture/2013/01/20/DSC_1563.jpg
-.. image:: ../Picture/2013/01/20/dsc02076.jpg
-.. image:: ../Picture/2013/01/20/dsc02083.jpg
-.. image:: ../Picture/2013/01/20/dsc02084.jpg
-.. image:: ../Picture/2013/01/20/dsc02085.jpg
-.. image:: ../Picture/2013/01/20/dsc02086.jpg
-.. image:: ../Picture/2013/01/20/dsc02087.jpg
-.. image:: ../Picture/2013/01/20/dsc02088.jpg
-.. image:: ../Picture/2013/01/20/dsc02089.jpg
-.. image:: ../Picture/2013/01/20/dsc02090.jpg
-.. image:: ../Picture/2013/01/20/dsc02091.jpg
-.. image:: ../Picture/2013/01/20/dsc02093.jpg
-.. image:: ../Picture/2013/01/20/dsc02094.jpg
-.. image:: ../Picture/2013/01/20/dsc02095.jpg
-.. image:: ../Picture/2013/01/20/dsc02097.jpg
-.. image:: ../Picture/2013/01/20/dsc02098.jpg
-.. image:: ../Picture/2013/01/20/dsc02099.jpg
-.. image:: ../Picture/2013/01/20/dsc02100.jpg

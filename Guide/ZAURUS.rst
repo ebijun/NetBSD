@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -22,6 +22,10 @@
 =====================================
 ザウルスでNetBSDを使ってみる  
 =====================================
+
+
+
+
 
 用意するもの
 -----------
@@ -61,7 +65,7 @@ NetBSDディスクイメージのダウンロード
 
  http://ftp.netbsd.org/pub/NetBSD/misc/tsutsui/zaurus/
  ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/tsutsui/zaurus/netbsd-zaurus-20120204-1GB-SD.img.gz
-
+ 
 ディスクイメージをコンパクトフラッシュにコピーする
 -----------------------------------------------
 NetBSDをインストールするSDカードをUSBカードアダプタ経由でNetBSDマシンにつなぎます。
