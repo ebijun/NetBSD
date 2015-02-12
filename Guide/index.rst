@@ -37,10 +37,9 @@
  :maxdepth: 3
  :numbered:
 
- Place/hamamatsu
+ Place/tokyo
+ Place/intro
  RPI
- WZERO3
- ZAURUS
 
 * :ref:`genindex`
 * :ref:`modindex`

@@ -35,6 +35,8 @@ OSC浜松まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2015浜名湖 NetBSDブース展示の記録, http://togetter.com/li/781556
+ OSC2014浜名湖 NetBSDブース展示の記録, http://togetter.com/li/645455
  OSC2013浜松 NetBSDブース展示の記録, http://togetter.com/li/452856
 
 
