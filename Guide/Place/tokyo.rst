@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,7 +35,8 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2014東京秋 NetBSDブース展示の記録, 
+ OSC2015東京春 NetBSDブース展示の記録,
+ OSC2014東京秋 NetBSDブース展示の記録, http://togetter.com/li/733588 
  OSC2014東京春 NetBSDブース展示の記録, http://togetter.com/li/635747
  OSC2013東京秋 NetBSDブース展示の記録, http://togetter.com/li/578893
  OSC2013東京春 NetBSDブース展示の記録, http://togetter.com/li/460484
@@ -90,6 +91,7 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2014/10/18-19,OSC2015東京秋,Xen dom0 BSD全部 RadxaRock zaurusC700音源
  2014/2/28-3/1,OSC2014東京春,Netwinder RPI ZAURUS第六艦隊 OSCアワード受賞
  2013/10/19-20,OSC2013東京秋,Netwinder OpenblocksA6 RPI  
  2013/2/22-23,OSC2013東京春,RPI KOBO netwalker mikutter WZERO3
@@ -110,6 +112,54 @@ OSC東京主な展示物
  2005/3/25-26,OSC2005,hpcmips/sh/arm
  2004/9/4,OSC2004,hpcmips/sh/arm
 
+.. image::  ../Picture.org/2014/10/18/DSC05824.JPG
+.. image::  ../Picture.org/2014/10/18/DSC05825.JPG
+.. image::  ../Picture.org/2014/10/18/DSC05826.JPG
+.. image::  ../Picture.org/2014/10/18/DSC05827.JPG
+.. image::  ../Picture.org/2014/10/18/DSC05828.JPG
+.. image::  ../Picture.org/2014/10/18/DSC05829.JPG
+.. image::  ../Picture.org/2014/10/18/DSC05830.JPG
+.. image::  ../Picture.org/2014/10/18/DSC_0535.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0536.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0537.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0538.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0539.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0540.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0541.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0542.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0543.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0544.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0545.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0546.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0547.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0548.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0549.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0550.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0551.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0552.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0553.jpg
+.. image::  ../Picture.org/2014/10/18/DSC_0554.jpg
+.. image::  ../Picture.org/2014/10/19/DSC05831.JPG
+.. image::  ../Picture.org/2014/10/19/DSC_0555.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0556.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0557.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0558.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0559.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0560.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0561.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0562.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0563.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0564.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0565.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0566.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0567.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0568.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0569.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0570.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0571.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0572.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0573.jpg
+.. image::  ../Picture.org/2014/10/19/DSC_0574.jpg
 
 .. image:: /Picture/2014/02/28/dsc04138.jpg
 .. image:: /Picture/2014/02/28/DSC_3125.jpg
