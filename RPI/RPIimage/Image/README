@@ -1,38 +1,43 @@
-VERSION: :1,$s/2015-02-07/2015-02-07/g
+VERSION: :1,$s/2015-02-28/2015-02-28/g
 ISO:     :1,$s/201502011550Z/201502011550Z/g
-PKGSRC:  :1,$s/2015-01-31/2015-01-31/
+PKGSRC:  :1,$s/2015-02-07/2015-02-07/
 NetBSD:  :1,$s/7.99.4/7.99.4/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-02-07-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2015-02-28-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-02-07-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2015-02-28-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-02-07-earmv6hf/2015-02-07-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-02-28-earmv6hf/2015-02-28-netbsd-raspi-earmv6hf.img.gz
+
+Overview:
+  http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
 Update:
 - Switch from earmhf to earmv6hf.
 - NetBSD-current 7.99.4 evbarm-earmv6hf 201502011550Z from nyftp.
-- pkgsrc-current 2015-01-31 tarball from ftp.NetBSD.
-- omxplayer and ioquake3-raspberrypi support
+- pkgsrc-current 2015-02-07 tarball from ftp.NetBSD.
+
+GPU - omxplayer and ioquake3-raspberrypi support
   After "Growing the root file-system"
   pkg_add omxplayer
   pkg_add youtube-dl
   youtube-dl https://www.youtube.com/watch?v=wG8ZCC8IwvM
   omxplayer *
-- port-arm/48805 fixed. audio playback stable.
-  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48805
-- "Raspberry Pi I2C implementation still broken?"
-  http://mail-index.netbsd.org/port-arm/2015/01/22/msg002804.html
+
+I2C - "Raspberry Pi I2C implementation still broken?"
+  http://mail-index.netbsd.org/port-arm/2015/02/10/msg002853.html
+  "I can confirm the IOCTL is fixed, and can now successfully program I2C 
+  EEPROMs using NetBSD on the Pi."
+  NetBSD RPi i2c sample code:
+   https://gist.github.com/cr1901/76af0b3db9e9001a8d5b
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48855
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48932
-- mikutter-3.2.2
-- mlterm-3.4.2
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-07/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-28/
 
  To install application.
  # pkg_add some_application_name
@@ -59,6 +64,7 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
 
 Todo:
+- Testing RPI2
 - bcm2708_fb.fbswap
   http://mail-index.netbsd.org/source-changes/2015/01/21/msg062550.html
 - Try light-desktop:
@@ -73,17 +79,21 @@ Todo:
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
 - RPI.rst in english.
-- www/firefox: not yet
+
+pkgsrc Todo:
+- lang/go
+- www/firefox
+- www/php-concrete5
 
 
 =====================
 
-For Open Source Conference 2015 Oita NetBSD booth
+For Open Source Conference 2015 Tokyo/Spring NetBSD booth
  demonstration use, I've updated raspberry-pi image.
 
- https://www.facebook.com/events/383442128496493/
+ https://www.facebook.com/events/356995804462633/
  https://www.facebook.com/NetBSD.jp 
- https://www.soum.co.jp/~jun/OSC2015oita.pdf
+ https://www.soum.co.jp/~jun/OSC2015tokyospring.pdf
 
 - NetBSD 7.99.4 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
@@ -122,9 +132,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2015-01-31 tree inside.
+  - pkgsrc: 2015-02-07 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-07/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-28/
 
 Installed Packages:
 kterm
