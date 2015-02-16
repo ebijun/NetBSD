@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcsh.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.4-hpcsh-201501260050Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.5-hpcsh-201502151320Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2015-01-24.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2015-02-14.tar.gz
 
 SETS=/mnt1/hpcsh/binary/sets
 INSTALLATION=/mnt1/hpcsh/installation
