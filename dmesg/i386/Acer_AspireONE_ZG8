@@ -4,10 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.4 (GENERIC) #3: Tue Jan  6 15:16:39 JST 2015
+NetBSD 7.99.5 (GENERIC) #9: Mon Feb 16 15:15:37 JST 2015
 	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
-avail memory = 1984 MB
+avail memory = 1985 MB
 timecounter: Timecounters tick every 10.000 msec
 RTC BIOS diagnostic error 0x80<clock_battery>
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
@@ -34,13 +34,13 @@ ioapic0 at mainbus0 apid 4: pa 0xfec00000, version 0x20, 24 pins
 acpi0 at mainbus0: Intel ACPICA 20140926
 acpi0: X/RSDT: OemId <ACRSYS,ACRPRDCT,00000001>, AslId <    ,01000013>
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xC3A02C4C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0xC39E8C4C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xC37DFA0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0xC37C5A0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xC37AD7FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
+ACPI: SSDT 0xC37937FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xC37B9294 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
+ACPI: SSDT 0xC379F294 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -104,7 +104,7 @@ i915drmkms0: interrupting at ioapic0 pin 16 (i915)
 drm: initialized overlay support
 intelfb0 at i915drmkms0
 i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xdb12b000, size 1024x600, depth 32, stride 4096
+intelfb0: framebuffer at 0xdb111000, size 1024x600, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
@@ -162,7 +162,7 @@ ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 27b9 (rev. 0x02)
 timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
 ichlpcib0: 24-bit timer
 ichlpcib0: TCO (watchdog) timer configured.
-ichlpcib0: can't map general purpose i/o space(rv = 1)
+gpio0 at ichlpcib0: 64 pins
 ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 27c5 (rev. 0x02)
 ahcisata0: interrupting at ioapic0 pin 17
 ahcisata0: AHCI revision 1.10, 4 ports, 32 slots, CAP 0xdf10ff03<PSC,SSC,PMD,ISS=0x1=Gen1,SCLO,SAL,SALP,SSS,SMPS,SNCQ,S64A>
@@ -220,7 +220,7 @@ Kernelized RAIDframe activated
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/7.99.4/modules
+kern.module.path=/stand/i386/7.99.5/modules
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
