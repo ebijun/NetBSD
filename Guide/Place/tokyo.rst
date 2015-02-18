@@ -29,6 +29,59 @@ Maps:
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/tokyo.rst
 
+東京でのオープンソースカンファレンス
+-------------------------------------
+.. Github/NetBSD/Guide/OSC/OSC100.csv 更新
+
+.. csv-table::
+ :widths: 20 15 20 20 40
+
+ 開催年,開催日,参加者,参加グループ,会場
+ 2004,9/4,500,20,日本電子専門学校
+ 2005,3-25-26,1100,33,日本電子専門学校
+ 2005 Fall,9/17,800,35,日本電子専門学校
+ 2006 Spring, 3/17-18,1100,47,日本電子専門学校
+ 2006 Fall,10/28,800,46,日本電子専門学校
+ 2007 Spring ,3/16-3/17,1200,42,日本電子専門学校
+ 2007 Fall ,10/5-10/6,1410,45,大田区産業プラザPiO
+ 2008 Spring ,2/29,1500,46,日本電子専門学校
+ 2008 Fall ,10/3-10/4,1300,58,大田区産業プラザPiO
+ 2009 Spring ,2/20-2/21,1450,77,日本電子専門学校
+ 2009 Fall ,10/30-10/31,1600,78,日本工学院専門学校
+ 2010 Spring ,2/26-2/27,1300,76,明星大学
+ 2010 Fall,9/9-9/10,1400,77,明星大学
+ 2011 Spring,3/4-3/5,2100,84,早稲田大学
+ 2011 Fall,11月19日,1500,75,明星大学
+ 2012 Spring,3/16-3/17,1700,74,明星大学
+ 2012 Fall,9/6-9/7,1450,82,明星大学
+ 2013 Spring,2/22-2/23,1700,78,明星大学
+ 2013 Fall,10/19-20,1300,80,明星大学
+ 2014 Spring,2/28-3/1,1900,82,明星大学
+ 2014 Fall,10/18-19,1550,72,明星大学
+ 2015 Spring,2/27-28,,79,明星大学
+
+観光ガイドバックナンバー
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+これまですべてのバックナンバーは
+
+https://github.com/ebijun/osc-demo　にあります。
+
+.. csv-table::
+ :widths: 20 30 80
+
+ No,イベント,URL
+ 69, OSC2015東京春, http://www.soum.co.jp/~jun/OSC2015tokyospring.pdf
+ 64, OSC2014東京秋, http://www.soum.co.jp/~jun/OSC2014tokyofall.pdf
+ 53, OSC2014東京春, http://www.soum.co.jp/~jun/OSC2014tokyospring.pdf
+ 49, OSC2013東京秋, http://www.soum.co.jp/~jun/OSC2013tokyofall.pdf
+ 39, OSC2013東京春, http://www.soum.co.jp/~jun/OSC2013tokyospring.pdf
+ 31, OSC2012東京秋, http://www.soum.co.jp/~jun/OSC2012tokyofall.pdf
+ 22, OSC2012東京春, http://www.soum.co.jp/~jun/OSC2012tokyospring.pdf
+ 19, OSC2011東京秋, http://www.soum.co.jp/~jun/OSC2011tokyofall.pdf
+ 6,  OSC2011東京春, http://www.soum.co.jp/~jun/OSC2011tokyospring.pdf
+ 
+ 
 OSC東京まとめ
 ~~~~~~~~~~~~~
 
@@ -112,55 +165,56 @@ OSC東京主な展示物
  2005/3/25-26,OSC2005,hpcmips/sh/arm
  2004/9/4,OSC2004,hpcmips/sh/arm
 
-.. image::  ../Picture.org/2014/10/18/DSC05824.JPG
-.. image::  ../Picture.org/2014/10/18/DSC05825.JPG
-.. image::  ../Picture.org/2014/10/18/DSC05826.JPG
-.. image::  ../Picture.org/2014/10/18/DSC05827.JPG
-.. image::  ../Picture.org/2014/10/18/DSC05828.JPG
-.. image::  ../Picture.org/2014/10/18/DSC05829.JPG
-.. image::  ../Picture.org/2014/10/18/DSC05830.JPG
-.. image::  ../Picture.org/2014/10/18/DSC_0535.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0536.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0537.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0538.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0539.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0540.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0541.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0542.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0543.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0544.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0545.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0546.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0547.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0548.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0549.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0550.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0551.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0552.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0553.jpg
-.. image::  ../Picture.org/2014/10/18/DSC_0554.jpg
-.. image::  ../Picture.org/2014/10/19/DSC05831.JPG
-.. image::  ../Picture.org/2014/10/19/DSC_0555.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0556.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0557.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0558.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0559.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0560.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0561.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0562.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0563.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0564.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0565.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0566.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0567.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0568.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0569.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0570.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0571.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0572.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0573.jpg
-.. image::  ../Picture.org/2014/10/19/DSC_0574.jpg
+2014年
+~~~~~~~ 
 
+.. image:: /Picture/2014/10/18/DSC05824.JPG
+.. image:: /Picture/2014/10/18/DSC05825.JPG
+.. image:: /Picture/2014/10/18/DSC05826.JPG
+.. image:: /Picture/2014/10/18/DSC05827.JPG
+.. image:: /Picture/2014/10/18/DSC05828.JPG
+.. image:: /Picture/2014/10/18/DSC05829.JPG
+.. image:: /Picture/2014/10/18/DSC05830.JPG
+.. image:: /Picture/2014/10/18/DSC_0535.jpg
+.. image:: /Picture/2014/10/18/DSC_0536.jpg
+.. image:: /Picture/2014/10/18/DSC_0537.jpg
+.. image:: /Picture/2014/10/18/DSC_0538.jpg
+.. image:: /Picture/2014/10/18/DSC_0539.jpg
+.. image:: /Picture/2014/10/18/DSC_0540.jpg
+.. image:: /Picture/2014/10/18/DSC_0541.jpg
+.. image:: /Picture/2014/10/18/DSC_0542.jpg
+.. image:: /Picture/2014/10/18/DSC_0543.jpg
+.. image:: /Picture/2014/10/18/DSC_0544.jpg
+.. image:: /Picture/2014/10/18/DSC_0545.jpg
+.. image:: /Picture/2014/10/18/DSC_0546.jpg
+.. image:: /Picture/2014/10/18/DSC_0547.jpg
+.. image:: /Picture/2014/10/18/DSC_0548.jpg
+.. image:: /Picture/2014/10/18/DSC_0549.jpg
+.. image:: /Picture/2014/10/18/DSC_0550.jpg
+.. image:: /Picture/2014/10/18/DSC_0551.jpg
+.. image:: /Picture/2014/10/18/DSC_0552.jpg
+.. image:: /Picture/2014/10/18/DSC_0553.jpg
+.. image:: /Picture/2014/10/18/DSC_0554.jpg
+.. image:: /Picture/2014/10/19/DSC_0555.jpg
+.. image:: /Picture/2014/10/19/DSC_0556.jpg
+.. image:: /Picture/2014/10/19/DSC_0557.jpg
+.. image:: /Picture/2014/10/19/DSC_0558.jpg
+.. image:: /Picture/2014/10/19/DSC_0559.jpg
+.. image:: /Picture/2014/10/19/DSC_0560.jpg
+.. image:: /Picture/2014/10/19/DSC_0561.jpg
+.. image:: /Picture/2014/10/19/DSC_0562.jpg
+.. image:: /Picture/2014/10/19/DSC_0563.jpg
+.. image:: /Picture/2014/10/19/DSC_0564.jpg
+.. image:: /Picture/2014/10/19/DSC_0565.jpg
+.. image:: /Picture/2014/10/19/DSC_0566.jpg
+.. image:: /Picture/2014/10/19/DSC_0567.jpg
+.. image:: /Picture/2014/10/19/DSC_0568.jpg
+.. image:: /Picture/2014/10/19/DSC_0569.jpg
+.. image:: /Picture/2014/10/19/DSC_0570.jpg
+.. image:: /Picture/2014/10/19/DSC_0571.jpg
+.. image:: /Picture/2014/10/19/DSC_0572.jpg
+.. image:: /Picture/2014/10/19/DSC_0573.jpg
+.. image:: /Picture/2014/10/19/DSC_0574.jpg
 .. image:: /Picture/2014/02/28/dsc04138.jpg
 .. image:: /Picture/2014/02/28/DSC_3125.jpg
 .. image:: /Picture/2014/03/01/DSC_3148.jpg
@@ -169,6 +223,10 @@ OSC東京主な展示物
 .. image:: /Picture/2014/02/28/DSC_3139.jpg
 .. image:: /Picture/2014/02/28/DSC_3141.jpg
 .. image:: /Picture/2014/02/28/DSC_3142.jpg
+
+2013年
+~~~~~~~
+
 .. image:: /Picture/2013/10/19/DSC_2752.jpg
 .. image:: /Picture/2013/10/19/DSC_2754.jpg
 .. image:: /Picture/2013/10/19/DSC_2756.jpg
@@ -189,6 +247,10 @@ OSC東京主な展示物
 .. image:: /Picture/2013/02/22/DSC_1671.jpg
 .. image:: /Picture/2013/02/22/DSC_1672.jpg
 .. image:: /Picture/2013/02/22/DSC_1674.jpg
+
+2012年
+~~~~~~~
+	   
 .. image:: /Picture/2012/09/08/DSC_0826.JPG
 .. image:: /Picture/2012/09/08/DSC_0828.JPG
 .. image:: /Picture/2012/09/07/DSC_0792.JPG
@@ -203,6 +265,10 @@ OSC東京主な展示物
 .. image:: /Picture/2012/03/17/DSC_0016.JPG
 .. image:: /Picture/2012/03/17/DSC_0018.JPG
 .. image:: /Picture/2012/03/17/DSC_0022.JPG
+
+2011年/2007年
+~~~~~~~~~~~~~~~~
+
 .. image:: /Picture/2011/11/20/P1001286.JPG
 .. image:: /Picture/2011/11/20/P1001288.JPG
 .. image:: /Picture/2011/11/20/P1001289.JPG
@@ -213,3 +279,4 @@ OSC東京主な展示物
 .. image:: /Picture/2011/11/19/P1001279.JPG
 .. image:: /Picture/2011/03/04/P1000301.JPG
 .. image:: /Picture/2007/10/06/20071603.JPG
+
