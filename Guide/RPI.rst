@@ -77,6 +77,19 @@ RaspberryPIでNetBSDを使ってみる
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
 	gunzip < 2015-02-07-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
 
+Cubieboard2,bananaPI用イメージ
+-------------------------------
+
+ Cubieboard2,bananaPI用のイメージが、
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/ 以下にあります。
+ 同じ手順で起動できます。
+ 
+::
+
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-01-30-earmv7hf/2015-01-30-netbsd-bpi.img.gz
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-07-earmv7hf/2015-02-07-netbsd-allwinner.img.gz
+
+	
 RaspberryPIの起動
 ------------------
 #. HDMIケーブル／USBキーボード/USBマウス/有線ネットワークをRPIにさします。
