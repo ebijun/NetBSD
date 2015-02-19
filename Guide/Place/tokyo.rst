@@ -171,58 +171,36 @@ OSC東京主な展示物
 .. image:: /Picture/2014/10/18/DSC05824.JPG
 .. image:: /Picture/2014/10/18/DSC05825.JPG
 .. image:: /Picture/2014/10/18/DSC05826.JPG
-.. image:: /Picture/2014/10/18/DSC05827.JPG
-.. image:: /Picture/2014/10/18/DSC05828.JPG
-.. image:: /Picture/2014/10/18/DSC05829.JPG
-.. image:: /Picture/2014/10/18/DSC05830.JPG
-.. image:: /Picture/2014/10/18/DSC_0535.jpg
 .. image:: /Picture/2014/10/18/DSC_0536.jpg
-.. image:: /Picture/2014/10/18/DSC_0537.jpg
 .. image:: /Picture/2014/10/18/DSC_0538.jpg
-.. image:: /Picture/2014/10/18/DSC_0539.jpg
 .. image:: /Picture/2014/10/18/DSC_0540.jpg
 .. image:: /Picture/2014/10/18/DSC_0541.jpg
-.. image:: /Picture/2014/10/18/DSC_0542.jpg
 .. image:: /Picture/2014/10/18/DSC_0543.jpg
 .. image:: /Picture/2014/10/18/DSC_0544.jpg
-.. image:: /Picture/2014/10/18/DSC_0545.jpg
-.. image:: /Picture/2014/10/18/DSC_0546.jpg
-.. image:: /Picture/2014/10/18/DSC_0547.jpg
 .. image:: /Picture/2014/10/18/DSC_0548.jpg
 .. image:: /Picture/2014/10/18/DSC_0549.jpg
 .. image:: /Picture/2014/10/18/DSC_0550.jpg
 .. image:: /Picture/2014/10/18/DSC_0551.jpg
 .. image:: /Picture/2014/10/18/DSC_0552.jpg
-.. image:: /Picture/2014/10/18/DSC_0553.jpg
-.. image:: /Picture/2014/10/18/DSC_0554.jpg
 .. image:: /Picture/2014/10/19/DSC_0555.jpg
-.. image:: /Picture/2014/10/19/DSC_0556.jpg
-.. image:: /Picture/2014/10/19/DSC_0557.jpg
 .. image:: /Picture/2014/10/19/DSC_0558.jpg
 .. image:: /Picture/2014/10/19/DSC_0559.jpg
-.. image:: /Picture/2014/10/19/DSC_0560.jpg
 .. image:: /Picture/2014/10/19/DSC_0561.jpg
 .. image:: /Picture/2014/10/19/DSC_0562.jpg
-.. image:: /Picture/2014/10/19/DSC_0563.jpg
 .. image:: /Picture/2014/10/19/DSC_0564.jpg
 .. image:: /Picture/2014/10/19/DSC_0565.jpg
 .. image:: /Picture/2014/10/19/DSC_0566.jpg
 .. image:: /Picture/2014/10/19/DSC_0567.jpg
 .. image:: /Picture/2014/10/19/DSC_0568.jpg
 .. image:: /Picture/2014/10/19/DSC_0569.jpg
-.. image:: /Picture/2014/10/19/DSC_0570.jpg
 .. image:: /Picture/2014/10/19/DSC_0571.jpg
-.. image:: /Picture/2014/10/19/DSC_0572.jpg
 .. image:: /Picture/2014/10/19/DSC_0573.jpg
-.. image:: /Picture/2014/10/19/DSC_0574.jpg
 .. image:: /Picture/2014/02/28/dsc04138.jpg
-.. image:: /Picture/2014/02/28/DSC_3125.jpg
 .. image:: /Picture/2014/03/01/DSC_3148.jpg
 .. image:: /Picture/2014/03/01/DSC_3157.jpg
 .. image:: /Picture/2014/03/01/dsc04143.jpg
 .. image:: /Picture/2014/02/28/DSC_3139.jpg
 .. image:: /Picture/2014/02/28/DSC_3141.jpg
-.. image:: /Picture/2014/02/28/DSC_3142.jpg
 
 2013年
 ~~~~~~~
@@ -243,8 +221,6 @@ OSC東京主な展示物
 .. image:: /Picture/2013/10/20/DSC_2803.jpg
 .. image:: /Picture/2013/10/20/DSC_2804.jpg
 .. image:: /Picture/2013/10/20/dsc03486.jpg
-.. image:: /Picture/2013/02/22/DSC_1661.jpg
-.. image:: /Picture/2013/02/22/DSC_1671.jpg
 .. image:: /Picture/2013/02/22/DSC_1672.jpg
 .. image:: /Picture/2013/02/22/DSC_1674.jpg
 
@@ -257,8 +233,6 @@ OSC東京主な展示物
 .. image:: /Picture/2012/09/07/DSC_0797.JPG
 .. image:: /Picture/2012/09/07/DSC_0800.JPG
 .. image:: /Picture/2012/09/07/DSC_0801.JPG
-.. image:: /Picture/2012/09/07/DSC_0803.JPG
-.. image:: /Picture/2012/09/07/DSC_0806.JPG
 .. image:: /Picture/2012/03/17/DSC_0005.JPG
 .. image:: /Picture/2012/03/17/DSC_0010.JPG
 .. image:: /Picture/2012/03/17/DSC_0013.JPG
@@ -274,7 +248,6 @@ OSC東京主な展示物
 .. image:: /Picture/2011/11/20/P1001289.JPG
 .. image:: /Picture/2011/11/20/P1001291.JPG
 .. image:: /Picture/2011/11/20/P1001293.JPG
-.. image:: /Picture/2011/11/20/P1001296.JPG
 .. image:: /Picture/2011/11/19/P1001275.JPG
 .. image:: /Picture/2011/11/19/P1001279.JPG
 .. image:: /Picture/2011/03/04/P1000301.JPG
