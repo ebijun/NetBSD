@@ -1,11 +1,11 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.3 (NETWALKER.201412152000Z) #0: Mon Dec 15 21:42:41 UTC 2014
-	builds@b48.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201412152000Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/NETWALKER
+NetBSD 7.99.5 (NETWALKER.201502191840Z) #0: Thu Feb 19 20:29:32 UTC 2015
+	builds@b44.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201502191840Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/NETWALKER
 total memory = 512 MB
 avail memory = 502 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -35,7 +35,7 @@ imxgpio2 at axi0 addr 0x73f8c000 intr 54 irqbase 192: interrupts 192..223
 imxgpio3 at axi0 addr 0x73f90000 intr 56 irqbase 224: interrupts 224..255
 imxuart0 at axi0 addr 0x73fbc000 intr 31
 sdhc0 at axi0 addr 0x70004000 intr 1: SD/MMC host controller
-sdhc0: SD Host Specification 1.0, rev.0
+sdhc0: SD Host Specification 2.0, rev.18
 sdmmc0 at sdhc0 slot 0
 imxclock0 at axi0 addr 0x73fac000-0x73faffff intr 40
 imxclock1 at axi0 addr 0x73fb0000-0x73fb3fff intr 41
@@ -55,7 +55,7 @@ usb0 at ehci0: USB revision 2.0
 ehci1 at imxusbc0 unit 1 irq 14: i.MX USB Controller
 ehci1: id=5 revision=65 HCI revision=0x100
 ehci1: 1 host port
-ehci1: ULPI phy VID 0x0400 PID 0x0006
+ehci1: ULPI phy VID 0x0424 PID 0x0006
 ehci1: EHCI version 1.0
 usb1 at ehci1: USB revision 2.0
 imxspi0 at axi0 addr 0x70010000 intr 36: i.MX eCSPI Controller (clock 54000000 Hz)
@@ -89,7 +89,7 @@ WARNING: module error: can't find builtin dependency `iic'
 ld0 at sdmmc0: <0x02:0x544d:SA02G:0x09:0x28427115:0x0c1>
 ld0: 1898 MB, 964 cyl, 64 head, 63 sec, 512 bytes/sect x 3887104 sectors
 ld0: 4-bit width, bus clock 50.000 MHz
-uhub2 at uhub1 port 1: SMSC product 2514, class 9/0, rev 2.00/0.00, addr 2
+uhub2 at uhub1 port 1: SMSC USB 2.0 4-Port Hub, class 9/0, rev 2.00/0.00, addr 2
 uhub2: multiple transaction translators
 uhub2: 4 ports with 4 removable, self powered
 uhidev0 at uhub0 port 1 configuration 1 interface 0
@@ -114,11 +114,10 @@ dump device (default sd0b):
 file system (default generic): 
 root on sd0a dumps on sd0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.3/modules
+kern.module.path=/stand/evbarm/7.99.5/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 init path (default /sbin/init): 
 init: trying /sbin/init
 wsdisplay0: screen 4 added (std, vt100 emulation)
-WARNING: negative runtime; monotonic clock has gone backwards
