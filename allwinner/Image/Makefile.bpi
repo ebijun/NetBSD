@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-bpi.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.5-evbarm-earmv7hf-201502190220Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.5-evbarm-earmv7hf-201502191840Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015-02-14.tar.gz
 
@@ -60,8 +60,6 @@ extract:
 	cp ${KOBO}         ${MNT}/boot
 	cp ${KOBOBIN}      ${MNT}/boot
 	cp ${KOBOUBOOT}    ${MNT}/boot
-	mkdir ${MNT}/kern
-	mkdir ${MNT}/proc
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
