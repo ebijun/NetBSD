@@ -11,7 +11,7 @@ PKGSRC=../../pkgsrc/pkgsrc-2015-02-14.tar.gz
 # UBOOT
 BOARD=cubieboard2
 UBOOTURL=http://dl.linux-sunxi.org/nightly/u-boot-sunxi/u-boot-sunxi/u-boot-sunxi-latest/
-UBOOTDIR=u-boot-sunxi-${BOARD}-20141106T184228-30bf0a5
+UBOOTDIR=u-boot-sunxi-${BOARD}-20150127T173720-ea1ac32
 
 # FEX : for Board Configration
 FEX=cubieboard2
