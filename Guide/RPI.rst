@@ -19,8 +19,8 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: :1,$s/2015-02-07/2015-02-07/g
- .. todo:: :1,$s?2015/01/31?2015/01/31?g
+ .. todo:: :1,$s/2015-02-28/2015-02-28/g
+ .. todo:: :1,$s?2015/02/21?2015/02/21?g
  .. todo:: apache+php+mysql設定
  .. todo:: uim-pref-gtk
  .. todo:: webkit-gtk
@@ -67,7 +67,7 @@ RaspberryPIでNetBSDを使ってみる
 
  earmv6hf 
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2015-02-07-earmv6hf/2015-02-07-netbsd-raspi-earmv6hf.img.gz.gz
+ 2015-02-28-earmv6hf/2015-02-28-netbsd-raspi-earmv6hf.img.gz.gz
  
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -75,7 +75,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2015-02-07-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2015-02-28-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
 
 Cubieboard2,bananaPI用イメージ
 -------------------------------
@@ -86,8 +86,8 @@ Cubieboard2,bananaPI用イメージ
  
 ::
 
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-01-30-earmv7hf/2015-01-30-netbsd-bpi.img.gz
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-07-earmv7hf/2015-02-07-netbsd-allwinner.img.gz
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-28-earmv7hf/2015-02-28-netbsd-bpi.img.gz
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-28-earmv7hf/2015-02-28-netbsd-allwinner.img.gz
 
 	
 RaspberryPIの起動
@@ -184,7 +184,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 ::
 
  % cat /etc/pkg_install.conf
-　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-07
+　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-02-28
 
 * パッケージのインストール
 
@@ -211,7 +211,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- 2015/01/31時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
+ 2015/02/21時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
@@ -264,7 +264,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2015-02-07-netbsd-raspi-earmv6hf.img.gz
+ # vnconfig vnd0 2015-02-28-netbsd-raspi-earmv6hf.img.gz
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
