@@ -6,4 +6,5 @@
 kernfs		/kern		kernfs	rw
 ptyfs		/dev/pts	ptyfs	rw
 procfs		/proc		procfs	rw
-tmpfs           /tmp    tmpfs   rw,-m=1777,-sram%25
+tmpfs           /tmp		tmpfs   rw,-m1777,-sram%25
+tmpfs		/var/shm	tmpfs   rw,-m1777,-sram%25
