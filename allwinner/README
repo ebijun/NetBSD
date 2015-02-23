@@ -1,15 +1,15 @@
-VERSION: :1,$s/2015-02-07/2015-02-07/g
-ISO:     :1,$s/201502011550Z/201502011550Z/g
-PKGSRC:  :1,$s/2015-01-31/2015-01-31/
-NetBSD:  :1,$s/7.99.4/7.99.4/g
+VERSION: :1,$s/2015-02-28/2015-02-28/g
+ISO:     :1,$s/201502210800Z/201502210800Z/g
+PKGSRC:  :1,$s/2015-02-21/2015-02-21/
+NetBSD:  :1,$s/7.99.5/7.99.5/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-02-07-netbsd-allwinner.img 
+Subject: 2015-02-28-netbsd-allwinner.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-02-07-netbsd-allwinner.img.gz for Cubieboard 2.
+I've updated 2015-02-28-netbsd-allwinner.img.gz for Cubieboard 2.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-07-earmv7hf/2015-02-07-netbsd-allwinner.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-28-earmv7hf/2015-02-28-netbsd-allwinner.img.gz
 
 Overview: 
   http://wiki.NetBSD.org/ports/evbarm/allwinner/
@@ -19,13 +19,19 @@ Cubieboard 2
   http://www.amazon.co.jp/dp/B00IK8YIA2
 
 Update:
-- NetBSD-current 7.99.4 evbarm-earmv7hf 201502011550Z from nyftp.
-- pkgsrc-current 2015-01-31 tarball from ftp.NetBSD.
+- NetBSD-current 7.99.5 evbarm-earmv7hf 201502210800Z from nyftp.
+- pkgsrc-current 2015-02-21 tarball from ftp.NetBSD.
 - dmesg: https://github.com/ebijun/NetBSD/blob/master/allwinner/dmesg
+
+Topics:
+- Issue awge(4) on NetBSD/CubieBoard2 
+  http://mail-index.netbsd.org/port-arm/2015/02/14/msg002858.html
+- pkgsrc/lang/openjdk7&8?
+  http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/lang/openjdk8/Makefile
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/earmv7hf/2015-02-07/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/earmv7hf/2015-02-28/
 
  To install application.
  # pkg_add some_application_name
@@ -37,8 +43,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
 
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.12-netbsd6-evbarm-earmv7hf.tgz for evaluation.
-  3. pkg_add musica-0.3.12-netbsd6-evbarm-earmv7hf.tgz
+  2. Download musica-0.3.13-netbsd6-evbarm-earmv7hf.tgz for evaluation.
+  3. pkg_add musica-0.3.13-netbsd6-evbarm-earmv7hf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -68,14 +74,14 @@ KOBO: kernel: (Thanx h_kenken@)
 
 =====================
 
-For Open Source Conference 2015 Oita NetBSD booth
+For Open Source Conference 2015 Tokyo/Spring NetBSD booth
  demonstration use, I've updated allwinner image.
 
- https://www.facebook.com/events/383442128496493/
+ https://www.facebook.com/events/356995804462633/
  https://www.facebook.com/NetBSD.jp 
- https://www.soum.co.jp/~jun/OSC2015oita.pdf
+ https://www.soum.co.jp/~jun/OSC2015tokyospring.pdf
 
-- NetBSD 7.99.4 earmv7hf beagleboard.img.gz base
+- NetBSD 7.99.5 earmv7hf beagleboard.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -85,9 +91,9 @@ Features:
   - fit size for 2GB SD Card
   - with X11
   - Recent current Cubieboard2 kernel
-  - pkgsrc: 2015-01-31 tree inside.
+  - pkgsrc: 2015-02-21 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/earmv7hf/2015-02-07/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/earmv7hf/2015-02-28/
 
 Installed Packages:
 
