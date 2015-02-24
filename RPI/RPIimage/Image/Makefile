@@ -18,7 +18,7 @@ SETS=${MNT_CDROM}/evbarm/binary/sets
 RPI=${MNT_CDROM}/evbarm/binary/gzimg/rpi.img
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-LIST=man modules text xbase xcomp xetc xfont xserver 
+LIST=man modules xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
