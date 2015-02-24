@@ -1,1 +1,14 @@
 dd if=/dev/rsd3d of=back.img count=512 bs=3813376 progress=5
+
+DIR=tmp`date +%Y%m%d-%H%M`
+mkdir $DIR
+
+vnconfig vnd0 back.img
+ fsck /dev/vnd0a
+ mount /dev/vnd0a /mnt
+  for i in dmesg pkginfo
+  do
+   cp /mnt/root/${i} ${DIR}/${i} 
+  done
+ umount /mnt
+vnconfig -u vnd0
