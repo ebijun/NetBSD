@@ -34,7 +34,7 @@ SETS=${MNT_CDROM}/evbarm/binary/sets
 beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/beagleboard.img
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-LIST=man modules text xbase xcomp xetc xfont xserver 
+LIST=man modules xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
