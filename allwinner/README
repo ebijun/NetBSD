@@ -21,12 +21,13 @@ Cubieboard 2
 Update:
 - NetBSD-current 7.99.5 evbarm-earmv7hf 201502231940Z from nyftp.
 - pkgsrc-current 2015-02-21 tarball from ftp.NetBSD.
+- drop text.tgz
 - dmesg: https://github.com/ebijun/NetBSD/blob/master/allwinner/dmesg
 - Issue awge(4) on NetBSD/CubieBoard2 
   http://mail-index.netbsd.org/port-arm/2015/02/14/msg002858.html
   http://mail-index.netbsd.org/source-changes/2015/02/23/msg063368.html
   "Apply patch from FUKAUMI Naoki to fix ring buffer handling when the
-  ring fills completely."
+  ring fills completely." .. continue.
 
 Topics:
 - pkgsrc/lang/openjdk7&8?
