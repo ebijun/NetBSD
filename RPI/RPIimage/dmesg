@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.4 (RPI.201502011550Z) #0: Sun Feb  1 17:25:50 UTC 2015
-	builds@b44.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201502011550Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
+NetBSD 7.99.5 (RPI.201502231940Z) #0: Mon Feb 23 21:16:46 UTC 2015
+	builds@b46.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201502231940Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 184 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -105,14 +105,14 @@ mountroot: trying msdos...
 mountroot: trying ext2fs...
 mountroot: trying ffs...
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.4/modules
+kern.module.path=/stand/evbarm/7.99.5/modules
 vchiq: local ver 6 (min 3), remote ver 6.
 vcaudio0 at vchiq0: auds
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-audio0 at vcaudio0: half duplex, playback, capture, independent
 init: copying out path `/sbin/init' 11
+audio0 at vcaudio0: half duplex, playback, capture, independent
 WARNING: module error: vfs load failed for `com', error 2
 WARNING: module error: vfs load failed for `com', error 2
 url0: link state UP (was UNKNOWN)
