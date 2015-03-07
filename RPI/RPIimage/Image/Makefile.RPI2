@@ -4,14 +4,14 @@ ARCH=earmv7hf
 PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-03-13/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.5-evbarm-${ARCH}-201503041940Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.5-evbarm-${ARCH}-201503051840Z.iso
 
-PKGSRC=../../../pkgsrc/pkgsrc-2015-02-28.tar.gz 
+PKGSRC=../../../pkgsrc/pkgsrc-2015-03-07.tar.gz 
 
 ###
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
+FILE=`date +%Y-%m-%d`-netbsd-raspi2-${ARCH}.img
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -140,6 +140,10 @@ kernel:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
 	cp earmv7kernel/* ${MNT}
+	umount ${MNT}
+	fsck /dev/${VND}a
+	mount /dev/${VND}a ${MNT}
+	cp earmv7kernel/netbsd ${MNT}
 	umount ${MNT}
 	vnconfig -u ${VND}
 
