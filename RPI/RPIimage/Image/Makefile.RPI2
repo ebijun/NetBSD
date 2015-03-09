@@ -4,7 +4,7 @@ ARCH=earmv7hf
 PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-03-13/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.5-evbarm-${ARCH}-201503051840Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.6-evbarm-${ARCH}-201503081520Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2015-03-07.tar.gz 
 
@@ -16,6 +16,9 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi2-${ARCH}.img
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
 RPI=${MNT_CDROM}/evbarm/binary/gzimg/beagleboard.img
+
+KERNELBIN7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.bin.gz
+KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
@@ -127,11 +130,6 @@ cdunmount:
 firm:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-#	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/COPYING.linux /mnt
-#	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/LICENCE.broadcom /mnt
-#	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/*.bin /mnt
-#	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/*.dat /mnt
-#	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/*.elf /mnt
 	cp -r /usr/local/NetBSD/RPI/Firmware/firmware/boot/* /mnt
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -139,11 +137,10 @@ firm:
 kernel:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-	cp earmv7kernel/* ${MNT}
+	gunzip < ${KERNELBIN7} > ${MNT}/kernel7.img
 	umount ${MNT}
-	fsck /dev/${VND}a
 	mount /dev/${VND}a ${MNT}
-	cp earmv7kernel/netbsd ${MNT}
+	gunzip < ${KERNEL7} > ${MNT}/netbsd
 	umount ${MNT}
 	vnconfig -u ${VND}
 
