@@ -4,9 +4,9 @@ ARCH=earmv6hf
 PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-03-13/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.5-evbarm-${ARCH}-201503032000Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.5-evbarm-${ARCH}-201503061950Z.iso
 
-PKGSRC=../../../pkgsrc/pkgsrc-2015-02-28.tar.gz 
+PKGSRC=../../../pkgsrc/pkgsrc-2015-03-07.tar.gz 
 
 ###
 
@@ -16,6 +16,10 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
 RPI=${MNT_CDROM}/evbarm/binary/gzimg/rpi.img
+KERNELBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI.bin.gz
+KERNELBIN7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.bin.gz
+KERNEL=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI.gz
+KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
@@ -26,7 +30,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file cdmount rpi extract cdunmount #libxcb libc-time
+all: file cdmount rpi extract firm kernel cdunmount #libxcb libc-time
 
 # extract sets to image file.
 extract:
@@ -37,7 +41,6 @@ extract:
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	echo extract pkgsrc.
 	tar xzpf ${PKGSRC} -C ${MNT}/usr
-	echo extract netwalker kernel.
 	mount_msdos /dev/${VND}e ${MNT}/boot
 	umount ${MNT}/boot
 	umount ${MNT}
@@ -127,11 +130,19 @@ cdunmount:
 firm:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/COPYING.linux /mnt
-	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/LICENCE.broadcom /mnt
-	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/*.bin /mnt
-	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/*.dat /mnt
-	cp /usr/local/NetBSD/RPI/Firmware/firmware/boot/*.elf /mnt
+	cp -r /usr/local/NetBSD/RPI/Firmware/firmware/boot/* /mnt
+	umount ${MNT}
+	vnconfig -u ${VND}
+
+kernel:
+	vnconfig ${VND} ${FILE}
+	mount_msdos /dev/${VND}e ${MNT}
+	gunzip < ${KERNELBIN}  > ${MNT}/kernel.img
+	gunzip < ${KERNELBIN7} > ${MNT}/kernel7.img
+	umount ${MNT}
+	mount /dev/${VND}a ${MNT}
+	gunzip < ${KERNEL}  > ${MNT}/netbsd.earmv6hf
+	gunzip < ${KERNEL7} > ${MNT}/netbsd.earmv7hf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -150,21 +161,3 @@ fetch:
 	sh Fetch
 	rm Fetch
 
-libxcb:
-	vnconfig ${VND} ${FILE}
-	fsck /dev/r${VND}a
-	mount /dev/${VND}a ${MNT}
-	cp libxcb.so.1.1 ${MNT}/usr/X11R7/lib
-	cp libxcb.so.1   ${MNT}/usr/X11R7/lib
-	umount ${MNT}
-	vnconfig -u ${VND}
-
-# libc/time: backout 2014i -> 2014h, http://t.co/rPORbgB5UL
-libc-time:
-	vnconfig ${VND} ${FILE}
-	fsck /dev/r${VND}a
-	mount /dev/${VND}a ${MNT}
-	cp time.20141106/libc.a  ${MNT}/lib
-	cp time.20141106/libc.so.12.196 ${MNT}/usr/lib
-	umount ${MNT}
-	vnconfig -u ${VND}
