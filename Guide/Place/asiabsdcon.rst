@@ -24,14 +24,16 @@ NetBSD BOF http://2015.asiabsdcon.org/timetable.html.ja#M4
 
 * Day 2: Room E 2015/3/13 18:30-21:00
 
+
 .. csv-table::
- :widths: 20 70 
+ :widths: 20 70
 
  pooka, rump kernels for network driver development
  riastradh, 
  aida, Development of vxlan(4) using rumpkernel
  mef, List of packages to be updated out of 12,000
  jun, RPI/RPI2/Cubieboard2/BananaPI images.
+
 
 AsiaBSDCon 
 -------------------------
