@@ -20,7 +20,7 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 NetBSD BOF http://2015.asiabsdcon.org/timetable.html.ja#M4
-----------------------------------
+------------------------------------------------------
 
 * Day 2: Room E 2015/3/13 18:30-21:00
 
@@ -29,6 +29,16 @@ NetBSD BOF http://2015.asiabsdcon.org/timetable.html.ja#M4
 #. mef, List of packages to be updated out of 12,000
 #. jun, RPI/RPI2/Cubieboard2/BananaPI images.
 
+NetBSD BOF 2014 2014/3/14 18:30-21:00
+-------------------------------------
+
+#. Pierre Pronchery (khorben@) Touch your NetBSD and Call your NetBSD
+#. Guillaume Lasmayous (gls@) - NetBSDfr
+#. Masanobu SAITOH (msaitoh@) - headless system
+#. Ryota Ozaki & Kazuya GODA- Improving bridge(4)
+#. Masaru Oki (oki@) kernel module (for DPDK)
+#. Jun Ebihara (jun@) - NetBSDjp
+-  almost 25 people
 
 AsiaBSDCon 
 -------------------------
@@ -83,9 +93,9 @@ Open Source Conference
 
 - http://www.ospn.jp/
 - Since 2005
-- Over 100 Confrence all over Japan
+- Over 100 Conference all over Japan
 - Japan NetBSD Users' Group joins almost all Open Source Conference
-- 1st OSC award
+- 1st OSC award: http://www.ospn.jp/press/20140218osc-award.html
 - NetBSD Booth
 - NetBSD Seminar (45min)
 - NetBSD traveler's guide 
@@ -121,11 +131,11 @@ Live Images:
 - boot NetBSD-current
 - startx & mikutter
 - RPI/RPI2 (earmv6hf/earmv7hf)
-- Cubieboard2 (earmv7hf)
-- BananaPI (earmv7hf)
+- Allwinner Cubieboard2/BananaPI (earmv7hf)
 - hpcarm (earm)
 - zaurus (earm)
 - ftp://ftp.NetBSD.org/pub/NetBSD/misc/jun/
+- Teokure Images:
 
 Dig your machines
 ----------------------------
