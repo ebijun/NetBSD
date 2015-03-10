@@ -41,7 +41,7 @@ NetBSD BOF 2014 2014/3/14 18:30-21:00
 #. Ryota Ozaki & Kazuya GODA- Improving bridge(4)
 #. Masaru Oki (oki@) kernel module (for DPDK)
 #. Jun Ebihara (jun@) - NetBSDjp
--  almost 25 people
+#  almost 25 people
 
 AsiaBSDCon 
 -------------------------
@@ -76,7 +76,7 @@ AsiaBSDCon tweets on the togetter
 .. csv-table::
  :widths: 20 70
 
- AsiaBSDCon2015,http:
+ AsiaBSDCon2015,http://togetter.com/li/793444
  AsiaBSDCon2014,http://togetter.com/li/641519
  AsiaBSDCon2013,http://togetter.com/li/472002
 
