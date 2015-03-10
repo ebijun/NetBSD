@@ -19,6 +19,19 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+NetBSD BOF http://2015.asiabsdcon.org/timetable.html.ja#M4
+----------------------------------
+
+* Day 2: Room E 2015/3/13 18:30-21:00
+
+.. csv-table::
+ :widths: 20 70 
+
+ pooka, rump kernels for network driver development
+ riastradh, 
+ aida, Development of vxlan(4) using rumpkernel
+ mef, List of packages to be updated out of 12,000
+ jun, RPI/RPI2/Cubieboard2/BananaPI images.
 
 AsiaBSDCon 
 -------------------------
@@ -26,7 +39,6 @@ AsiaBSDCon
 .. csv-table::
  :widths: 20 30 70 
 
- 2016, Mar.10-13,Tokyo University of Science
  2015, Mar.12-15,Tokyo University of Science
  2014, Mar.13-16,Tokyo University of Science
  2013, Mar.14-17,Tokyo University of Science
