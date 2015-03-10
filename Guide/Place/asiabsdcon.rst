@@ -24,10 +24,13 @@ NetBSD BOF http://2015.asiabsdcon.org/timetable.html.ja#M4
 
 * Day 2: Room E 2015/3/13 18:30-21:00
 
-#. riastradh, 
+#. Taylor R Campbell (riastradh@), 
+   - State of affairs in graphics.
+   - Replacing proplib in ioctl.
+   - Random number generation, and what's changed since Sofia.
 #. Kazuya Goda, Development of vxlan(4) using rumpkernel
-#. mef, List of packages to be updated out of 12,000
-#. jun, RPI/RPI2/Cubieboard2/BananaPI images.
+#. Makoto Fujiwara (mef@), List of packages to be updated out of 12,000
+#. Jun Ebihara (jun@), RPI/RPI2/Cubieboard2/BananaPI images.
 
 NetBSD BOF 2014 2014/3/14 18:30-21:00
 -------------------------------------
