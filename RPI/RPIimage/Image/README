@@ -1,7 +1,7 @@
 VERSION: :1,$s/2015-03-13/2015-03-13/g
-ISO:     :1,$s/201503061950Z/201503061950Z/g
+ISO:     :1,$s/201503081520Z/201503081520Z/g
 PKGSRC:  :1,$s/2015-03-07/2015-03-07/
-NetBSD:  :1,$s/7.99.5/7.99.5/g
+NetBSD:  :1,$s/7.99.6/7.99.6/g
 
 To: port-armNetBSD.org@localhost
 Subject: 2015-03-13-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
@@ -19,7 +19,7 @@ Update:
   RPI and RPI2 can boot with this image.
 - For Cubieboard 2 and BananaPI users, 2015-03-13-earmv7hf for RPI2 only.
   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-03-13-earmv7hf/
-- NetBSD-current 7.99.5 evbarm-earmv6hf 201503061950Z from nyftp.
+- NetBSD-current 7.99.6 evbarm-earmv6hf 201503081520Z from nyftp.
 - pkgsrc-current 2015-03-07 tarball from ftp.NetBSD.
 
 GPU - omxplayer and ioquake3-raspberrypi support
@@ -96,7 +96,7 @@ For AsiaBSDCon2015 demonstration use, I've updated raspberry-pi image.
  https://www.facebook.com/NetBSD.jp 
  https://www.soum.co.jp/~jun/asiabsdcon2015.pdf
 
-- NetBSD 7.99.5 earmv6hf rpi.img.gz base
+- NetBSD 7.99.6 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
