@@ -38,8 +38,6 @@
  :numbered:
 
  Place/asiabsdcon
- Place/intro
- RPI
 
 * :ref:`genindex`
 * :ref:`modindex`

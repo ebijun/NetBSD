@@ -1,3 +1,149 @@
+.. 
+ Copyright (c) 2015 Jun Ebihara All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+AsiaBSDCon 
+-------------------------
+
+.. csv-table::
+ :widths: 20 30 70 
+
+ 2016, Mar.10-13,Tokyo University of Science
+ 2015, Mar.12-15,Tokyo University of Science
+ 2014, Mar.13-16,Tokyo University of Science
+ 2013, Mar.14-17,Tokyo University of Science
+ 2012, Mar.22-25,Tokyo University of Science
+ 2011, Mar.17-20,Tokyo University of Science
+ 2010, Mar.11-14,Tokyo University of Science
+ 2009, Mar.12-15,Tokyo University of Science
+ 2008, Mar.27-30,Tokyo University of Science
+ 2007, Mar.8-11,Uniersity of Tokyo
+ 2004, Mar.13-15,Academia Sinica 
+
+AsiaBSDCon Tourist Guide backnumber
+----------------------------
+
+.. csv-table::
+ :widths: 20 70
+
+ AsiaBSDCon2015,http://www.soum.co.jp/~jun/asiabsdcon2015.pdf
+ AsiaBSDCon2014,http://www.soum.co.jp/~jun/asiabsdcon2014.pdf
+ AsiaBSDCon2013,http://www.soum.co.jp/~jun/asiabsdcon2013.pdf
+
+AsiaBSDCon tweets on the togetter
+-------------------------
+
+.. csv-table::
+ :widths: 20 70
+
+ AsiaBSDCon2015,http:
+ AsiaBSDCon2014,http://togetter.com/li/641519
+ AsiaBSDCon2013,http://togetter.com/li/472002
+
+Japan NetBSD Users' Group
+--------------------------------
+
+- http://www.jp.NetBSD.org/
+- http://www.facebook.com/NetBSD.jp
+- Since Aug.21 1999 
+- Annual meeting/year on every July.
+- 44 members
+- 18 committee
+- Server space: powered by Internet Initiative Japan.
+
+Open Source Conference
+------------------------------
+
+- http://www.ospn.jp/
+- Since 2005
+- Over 100 Confrence all over Japan
+- Japan NetBSD Users' Group joins almost all Open Source Conference
+- 1st OSC award
+- NetBSD Booth
+- NetBSD Seminar (45min)
+- NetBSD traveler's guide 
+
+Togetter views : best booth in Japan
+--------------------------
+
+.. csv-table::
+ :widths: 50 15 30 20
+
+ http://togetter.com/li/788681, 2015, Tokyo/Spring,913
+ http://togetter.com/li/781556, 2015, Hamanako,474
+ http://togetter.com/li/779725, 2015, Oita,476
+ http://togetter.com/li/748237, 2014, Fukuoka　,1746
+ http://togetter.com/li/742243, 2014, Kansai,1708
+ http://togetter.com/li/733588, 2014, Tokyo/Fall　,1792
+ http://togetter.com/li/721414, 2014, Hiroshima　,1844
+ http://togetter.com/li/709947, 2014, Shimane　,1426
+ http://togetter.com/li/700617, 2014, Kansai Kyoto,3128
+ http://togetter.com/li/691775, 2014, JNUG annual meeting,2181
+ http://togetter.com/li/688742, 2014, Nagoya,1475
+ http://togetter.com/li/671580, 2014, Okinawa　,549
+ http://togetter.com/li/654135, 2014, Kagawa,1338
+ http://togetter.com/li/645455, 2014, Hamanako,2022
+ http://togetter.com/li/641519, 2014, AsiaBSDCon,2829
+
+Live Images:
+------------------------
+
+- Release for every Open Source Conference
+- Fit for 2GB
+- Copy to Memory card
+- boot NetBSD-current
+- startx & mikutter
+- RPI/RPI2 (earmv6hf/earmv7hf)
+- Cubieboard2 (earmv7hf)
+- BananaPI (earmv7hf)
+- hpcarm (earm)
+- zaurus (earm)
+- ftp://ftp.NetBSD.org/pub/NetBSD/misc/jun/
+
+Dig your machines
+----------------------------
+
+- X68K and XM6i emulator : Hiroshima
+- OMRON LUNA68K : Kyoto
+- OMRON LUNA88K (OpenBSD) : Nagoya
+- SONY NEWS : Shimane
+- Sun3 : Kyoto
+- Alpha : Nagoya
+- arm boards: Tokyo
+
+NetBSD traveler's guide 
+---------------------------------
+
+- http://github.com/ebijun/osc-demo
+- textproc/py-sphinx
+- devel/git-base + github
+- print/scribus-qt4
+- graphics/inkscape
+- print/pdfshuffler
+- 15x20pages
+- printout in 7/11:2,000yen
+
+Pictures
+-------------------
+
 .. image::  ../Picture/ABC/DSC04702.JPG
 .. image::  ../Picture/ABC/DSC04709.JPG
 .. image::  ../Picture/ABC/DSC04853.JPG
