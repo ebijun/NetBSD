@@ -40,6 +40,25 @@ NetBSD BOF 2014 2014/3/14 18:30-21:00
 #. Jun Ebihara (jun@) - NetBSDjp
 #. almost 25 people
 
+BARS
+-----------------------------------
+
+#. The Royal Scotsman : 17-25 Sat:15-25 Sun:15-23,03-6280-8852
+#. Bitter : 17-26 Closed SatHol,03-5261-3087
+#. CRAFTBEER SERVER LAND: 17-24 SatSunHol 12-24,03-6228-1891
+#. Brussels: 1730-25/24 Closed Sun,03-3235-1890
+#. La-cachette: 17-25 ,03-3513-0823
+#. Saizeriya: 11-05,03-5227-3751
+#. Ebisu bar: 11-23,050-5788-0446
+
+Coffee
+----------------------------
+
+#. GUILD COFFEE,12-19,03-3266-5995
+#. Mojo Coffee,9-20,03-6265-3286
+#. Copain,8-20,03-3267-7779
+#. Midori no Mame,11-20,03-3269-3712
+
 AsiaBSDCon 
 -------------------------
 
