@@ -164,8 +164,8 @@ Live Images:
 Digging your scene
 ----------------------------
 
-- X68K and XM6i emulator : Hiroshima : @isaki68k @moveccr 
-- SH3: @oshimyja
+- X68K and XM6i emulator : Hiroshima : @isaki68k @moveccr @oshimyja
+- SH3 @oshimyja:
 - Xen: @tisihara
 - OMRON LUNA68K : Kyoto : @tsutsuii @nullnilaki
 - OMRON LUNA88K (OpenBSD) : Nagoya @ao_kenji
@@ -185,8 +185,6 @@ Digging your scene
 - mikutter: @toshi_a
 - mlterm: @arakiken
 - musica: @cvsync
-
-
 
 
 NetBSD traveler's guide 
