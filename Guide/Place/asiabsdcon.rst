@@ -32,13 +32,13 @@ NetBSD BOF http://2015.asiabsdcon.org/timetable.html.ja#M4
 NetBSD BOF 2014 2014/3/14 18:30-21:00
 -------------------------------------
 
+*  almost 25 people
 #. Pierre Pronchery (khorben@) Touch your NetBSD and Call your NetBSD
 #. Guillaume Lasmayous (gls@) - NetBSDfr
 #. Masanobu SAITOH (msaitoh@) - headless system
 #. Ryota Ozaki & Kazuya GODA- Improving bridge(4)
 #. Masaru Oki (oki@) kernel module (for DPDK)
 #. Jun Ebihara (jun@) - NetBSDjp
-#. almost 25 people
 
 BARS
 -----------------------------------
@@ -100,6 +100,9 @@ Japan NetBSD Users' Group
 --------------------------------
 
 - http://www.jp.NetBSD.org/
+- ftp.jp.netbsd.org
+- cvs.jp.netbsd.org
+- mailinglists
 - http://www.facebook.com/NetBSD.jp
 - Since Aug.21 1999 
 - Annual meeting/year on every July.
@@ -114,6 +117,7 @@ Open Source Conference
 - Since 2005
 - Over 100 Conference all over Japan
 - Japan NetBSD Users' Group joins almost all Open Source Conference
+- https://github.com/ebijun/NetBSD/blob/master/Guide/OSC/OSC100.csv
 - 1st OSC award: http://www.ospn.jp/press/20140218osc-award.html
 - NetBSD Booth
 - NetBSD Seminar (45min)
@@ -154,18 +158,36 @@ Live Images:
 - hpcarm (earm)
 - zaurus (earm)
 - ftp://ftp.NetBSD.org/pub/NetBSD/misc/jun/
-- Teokure Images:
+- Teokure Images by @tsutsuii
+  http://www.ceres.dti.ne.jp/tsutsui/netbsd/liveimage/
 
-Dig your machines
+Digging your scene
 ----------------------------
 
-- X68K and XM6i emulator : Hiroshima
-- OMRON LUNA68K : Kyoto
-- OMRON LUNA88K (OpenBSD) : Nagoya
-- SONY NEWS : Shimane
-- Sun3 : Kyoto
-- Alpha : Nagoya
-- arm boards: Tokyo
+- X68K and XM6i emulator : Hiroshima : @isaki68k @moveccr 
+- SH3: @oshimyja
+- Xen: @tisihara
+- OMRON LUNA68K : Kyoto : @tsutsuii @nullnilaki
+- OMRON LUNA88K (OpenBSD) : Nagoya @ao_kenji
+- SONY NEWS : Shimane : @n12i
+- Sun3 : Kyoto: @tsutsuii
+- Alpha : Nagoya: @nullnilaki
+- mvme68k : Tokyo: @nullnilaki
+- arm boards: Tokyo : @h_kenken @rsh @naobsd @tokudahiroshi
+- netwinder: kiyohara
+- OpenBlocks: Tokyo Okinawa: @yamajun_ofug @yamajun_ofug
+- Zaurus: @nonakap @tristelo
+- Java Station: mochida
+- Netwalker: @rsh @h_kenken @kapper1224
+- libreoffice: @ryo_on
+- Stickers: @tsutsuii @okano_t
+- Booth: @ebijun @oshimyja @ai4432 @tisihara @tokudahiroshi 
+- mikutter: @toshi_a
+- mlterm: @arakiken
+- musica: @cvsync
+
+
+
 
 NetBSD traveler's guide 
 ---------------------------------
