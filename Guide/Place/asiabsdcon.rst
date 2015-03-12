@@ -178,7 +178,7 @@ Digging your scene
 - mvme68k : Tokyo: @nullnilaki
 - arm boards: Tokyo : @h_kenken @rsh @naobsd @tokudahiroshi
 - netwinder: kiyohara
-- OpenBlocks: Tokyo Okinawa: @yamajun_ofug @yamajun_ofug
+- OpenBlocks: Tokyo Okinawa: @tokudahiroshi @yamajun_ofug
 - Zaurus: @nonakap @tristelo
 - Java Station: mochida
 - Netwalker: @rsh @h_kenken @kapper1224
