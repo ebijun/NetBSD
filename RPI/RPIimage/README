@@ -56,8 +56,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.15-netbsd6-evbarm-earmv6hf.tgz for evaluation.
-  3. pkg_add musica-0.3.15-netbsd6-evbarm-earmv6hf.tgz
+  2. Download musica-0.3.16-netbsd6-evbarm-earmv6hf.tgz for evaluation.
+  3. pkg_add musica-0.3.16-netbsd6-evbarm-earmv6hf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -81,6 +81,21 @@ Todo:
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
 - RPI.rst in english.
+- /dev/mem: http://mail-index.netbsd.org/port-arm/2015/03/12/msg002934.html
+ "I am trying to make a FM transmitter project, compiling from source 
+  (https://github.com/Make-Magazine/PirateRadio and
+  http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/).   Compiles ok, but whenever I try to run the executable, even being root, 
+  it immediately complains: "can't open /dev/mem". 
+  Do you have an idea why do I get this, and what is the patch to apply?
+- audio control: port-arm/2015/03/12/msg002938.html 
+ let me add that it was impossible to control the volume level
+ from within mplayer (keys '9' and '0' are the default bindings for
+ reduced/increased volume). Simply no effect at all. How am I supposed to
+ control the sound volume?
+- Sound output to the jack: port-arm/2015/03/12/msg002938.html
+  I just had to add a "hdmi_ignore_edid_audio=1" line into a new (optional)
+  /boot/config.txt file. And it redirects all the audio signals to the jack
+  and not to the HDMI. Just what I wanted.
 
 pkgsrc Todo:
 - openjdk7/8
