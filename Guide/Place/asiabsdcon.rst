@@ -76,7 +76,7 @@ AsiaBSDCon
  2010, Mar.11-14,Tokyo University of Science
  2009, Mar.12-15,Tokyo University of Science
  2008, Mar.27-30,Tokyo University of Science
- 2007, Mar.8-11,Uniersity of Tokyo
+ 2007, Mar.8-11,University of Tokyo
  2004, Mar.13-15,Academia Sinica 
 
 AsiaBSDCon Traveler's Guide backnumber
