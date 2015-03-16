@@ -24,13 +24,16 @@ NetBSD BOF http://2015.asiabsdcon.org/timetable.html.ja#M4
 ------------------------------------------------------
 
 * Day 2: Room E 2015/3/13 18:30-21:00
+* almost 25 people
 * http://2015.asiabsdcon.org/streaming.html.en
 + Notify pooka: http://wiki.rumpkernel.org/Info%3A-Publications-and-Talks#talks
+* https://docs.google.com/spreadsheets/d/14q6zJK5PjlMoSeBV5HBiEik5LkqlrcrbSxPoxVKKlec/edit?usp=sharing
 
 #. Taylor R Campbell (riastradh@), A brief overview of DRM/KMS and its status in NetBSD
 #. Kazuya Goda, Development of vxlan(4) using rumpkernel
 #. Makoto Fujiwara (mef@), List of packages to be updated out of 12,000
 #. Jun Ebihara (jun@), RPI/RPI2/Cubieboard2/BananaPI images.
+#. Ryo Onodera (ryoon@),How to package github softwares
 
 NetBSD BOF 2014 2014/3/14 18:30-21:00
 -------------------------------------

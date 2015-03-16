@@ -87,7 +87,7 @@ Todo:
   http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/).   Compiles ok, but whenever I try to run the executable, even being root, 
   it immediately complains: "can't open /dev/mem". 
   Do you have an idea why do I get this, and what is the patch to apply?
-- audio control: port-arm/2015/03/12/msg002938.html 
+- port-arm/49057 audio control: port-arm/2015/03/12/msg002938.html 
  let me add that it was impossible to control the volume level
  from within mplayer (keys '9' and '0' are the default bindings for
  reduced/increased volume). Simply no effect at all. How am I supposed to
