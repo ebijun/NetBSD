@@ -21,6 +21,8 @@ Update:
   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-03-13-earmv7hf/
 - NetBSD-current 7.99.6 evbarm-earmv6hf 201503081520Z from nyftp.
 - pkgsrc-current 2015-03-07 tarball from ftp.NetBSD.
+- FIX: port-arm:49057 Raspberry Pi Audio volume control does not work
+- mlterm 3.4.5
 
 GPU - omxplayer and ioquake3-raspberrypi support
   After "Growing the root file-system"
@@ -69,6 +71,7 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
 Todo:
 - bcm2708_fb.fbswap
   http://mail-index.netbsd.org/source-changes/2015/01/21/msg062550.html
+  check mlterm-fb sixel color.
 - Try light-desktop:
   http://wiki.netbsd.org/light-desktop/
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
@@ -82,16 +85,7 @@ Todo:
   https://github.com/uobikiemukot/yaft
 - RPI.rst in english.
 - /dev/mem: http://mail-index.netbsd.org/port-arm/2015/03/12/msg002934.html
- "I am trying to make a FM transmitter project, compiling from source 
-  (https://github.com/Make-Magazine/PirateRadio and
-  http://makezine.com/projects/make-38-cameras-and-av/raspberry-pirate-radio/).   Compiles ok, but whenever I try to run the executable, even being root, 
-  it immediately complains: "can't open /dev/mem". 
-  Do you have an idea why do I get this, and what is the patch to apply?
-- port-arm/49057 audio control: port-arm/2015/03/12/msg002938.html 
- let me add that it was impossible to control the volume level
- from within mplayer (keys '9' and '0' are the default bindings for
- reduced/increased volume). Simply no effect at all. How am I supposed to
- control the sound volume?
+  "can't open /dev/mem" -> re-compile kernel with INSECURE.
 - Sound output to the jack: port-arm/2015/03/12/msg002938.html
   I just had to add a "hdmi_ignore_edid_audio=1" line into a new (optional)
   /boot/config.txt file. And it redirects all the audio signals to the jack
@@ -100,6 +94,7 @@ Todo:
 pkgsrc Todo:
 - openjdk7/8
 - lang/go
+- lang/erlang
 - www/firefox
 
 
