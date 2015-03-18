@@ -37,7 +37,9 @@
  :maxdepth: 3
  :numbered:
 
- Place/asiabsdcon
+ Place/nagoya
+ RPI
+ Luna
 
 * :ref:`genindex`
 * :ref:`modindex`
