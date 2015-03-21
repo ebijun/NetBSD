@@ -511,6 +511,8 @@ LUNA年表　- 月の刃
  2014/07/20,筒,LUNA's keyboard driver changes from OpenBSD/luna88k [131]_
  2014/07/21,筒,luna68k 4/8bpp framebuffers as a monochrome server [132]_
  2014/08/01,筒,lunaII+mikutterd今年はカラーだ展示 [134]_
+ 2014/08/13,筒,LUNA framebuffer mod for LCDs without Sync on Green support [142]_
+ 2014/11/07-08,筒,関西オープンソース2014 NetBSDブース展示の記録 [142]_
  2014/11/29,青,yaft × LUNA [140]
  2014/12/20,青,86音源ボード on LUNA [138]_
  2014/12/29,青,86音源ボードコードコミット [139]_
@@ -721,6 +723,8 @@ yaft X LUNA
 .. [139] OpenBSD/luna88k用の86音源ボードドライバを整理してcommit。 https://twitter.com/ao_kenji/status/549203137001553921
 .. [140] yaft×LUNA http://www.slideshare.net/ao_kenji/nbug201411-yaft-42177561
 .. [141] LUNA-88K2はPCカードの夢を見るか http://www.slideshare.net/ao_kenji/nbug201502
+.. [142] LUNA framebuffer mod for LCDs without Sync on Green support http://mail-index.netbsd.org/port-luna68k/2014/08/13/msg000043.html
+.. [143] 関西オープンソース2014 NetBSDブース展示の記録 http://togetter.com/li/742243
 
 このページ
 ~~~~~~~~~~~
