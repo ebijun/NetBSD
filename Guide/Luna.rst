@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-ルナ式練習帳、またはLunaの薄い本2014　[1]_
+ルナ式練習帳、またはLunaの薄い本2015　[1]_
 ===========================================
 
   「私が誰かは わかっているはずだ。」その声は天使の声だった。
