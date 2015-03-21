@@ -342,6 +342,7 @@ LUNAグッズ
 * ペンケースとバンダナ  [76]_  [121]_  [130]_
 * dpNote - 図形グッズ：シール・定規
 * ホッチキス [133]_
+* トレーナー [144]_
 
 LUNA関連書籍
 ~~~~~~~~~~~~~
@@ -725,6 +726,7 @@ yaft X LUNA
 .. [141] LUNA-88K2はPCカードの夢を見るか http://www.slideshare.net/ao_kenji/nbug201502
 .. [142] LUNA framebuffer mod for LCDs without Sync on Green support http://mail-index.netbsd.org/port-luna68k/2014/08/13/msg000043.html
 .. [143] 関西オープンソース2014 NetBSDブース展示の記録 http://togetter.com/li/742243
+.. [144] Lunaトレーナー
 
 このページ
 ~~~~~~~~~~~
