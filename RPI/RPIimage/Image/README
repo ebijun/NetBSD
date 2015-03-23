@@ -22,7 +22,10 @@ Update:
 - NetBSD-current 7.99.6 evbarm-earmv6hf 201503081520Z from nyftp.
 - pkgsrc-current 2015-03-07 tarball from ftp.NetBSD.
 - FIX: port-arm:49057 Raspberry Pi Audio volume control does not work
-- mlterm 3.4.5
+- mlterm 3.4.5nb1
+  http://mail-index.netbsd.org/pkgsrc-changes/2015/03/21/msg121484.html
+  for fix bcm2708_fb.fbswap:
+  http://mail-index.netbsd.org/source-changes/2015/01/21/msg062550.html
 
 GPU - omxplayer and ioquake3-raspberrypi support
   After "Growing the root file-system"
@@ -69,9 +72,6 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
 
 Todo:
-- bcm2708_fb.fbswap
-  http://mail-index.netbsd.org/source-changes/2015/01/21/msg062550.html
-  check mlterm-fb sixel color.
 - Try light-desktop:
   http://wiki.netbsd.org/light-desktop/
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
