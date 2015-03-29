@@ -1,0 +1,126 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.7 (ODROID-C1.201503241820Z) #0: Tue Mar 24 19:53:47 UTC 2015
+	builds@b44.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201503241820Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/ODROID-C1
+total memory = 1024 MB
+avail memory = 1008 MB
+sysctl_createv: sysctl_create(machine_arch) returned 17
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0 core 0: 1512 MHz Cortex-A5 r0p1 (Cortex V7A core)
+cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu0: isar: [0]=0x101111 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x11142, [5]=0
+cpu0: mmfr: [0]=0x100103 [1]=0x40000000 [2]=0x1230000 [3]=0x102211
+cpu0: pfr: [0]=0x1231 [1]=0x11
+cpu0: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu0: 32KB/32B 4-way write-back-locking-C L1 PIPT Data cache
+cpu0: 512KB/32B 8-way write-back L2 PIPT Unified cache
+vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+vfp0: mvfr: [0]=0x10110222 [1]=0x11111111
+cpu1 at mainbus0 core 1
+cpu2 at mainbus0 core 2
+cpu3 at mainbus0 core 3
+armperiph0 at mainbus0
+armgic0 at armperiph0: Generic Interrupt Controller, 256 sources (245 valid)
+armgic0: 32 Priorities, 224 SPIs, 5 PPIs, 16 SGIs
+a9tmr0 at armperiph0: A5 Global 64-bit Timer (378 MHz)
+a9tmr0: interrupting on irq 27
+a9wdt0 at armperiph0: A5 Watchdog Timer, default period is 12 seconds
+arml2cc0 at armperiph0: ARM PL310 r3p3 L2 Cache Controller (disabled)
+arml2cc0: cache enabled
+amlogicio0 at mainbus0
+amlogiccom0 at amlogicio0 port 0: console
+amlogiccom0: interrupting at irq 122
+genfb0 at amlogicio0: switching to framebuffer console
+genfb0: framebuffer at 0xc9e00000, size 1920x1080, depth 24, stride 5760
+wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+wsdisplay0: screen 1-3 added (default, vt100 emulation)
+amlogicrng0 at amlogicio0
+dwctwo0 at amlogicio0 port 0: USB controller
+dwctwo1 at amlogicio0 port 1: USB controller
+awge0 at amlogicio0: Gigabit Ethernet Controller
+awge0: interrupting on irq 40
+awge0: Ethernet address: 00:1e:06:c3:7e:b6
+rgephy0 at awge0 phy 0: RTL8169S/8110S/8211 1000BASE-T media interface, rev. 6
+rgephy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT-FDX, auto
+rgephy1 at awge0 phy 1: RTL8169S/8110S/8211 1000BASE-T media interface, rev. 6
+rgephy1: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT-FDX, auto
+amlogicsdhc0 at amlogicio0 port 1: SDHC controller
+amlogicsdhc0: interrupting on irq 110
+amlogicrtc0 at amlogicio0: RTC battery not present or discharged
+usb0 at dwctwo0: USB revision 2.0
+usb1 at dwctwo1: USB revision 2.0
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "a9tmr0" frequency 378000000 Hz quality 500
+cpu2: 1512 MHz Cortex-A5 r0p1 (Cortex V7A core)
+cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu2: isar: [0]=0x101111 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x11142, [5]=0
+cpu2: mmfr: [0]=0x100103 [1]=0x40000000 [2]=0x1230000 [3]=0x102211
+cpu2: pfr: [0]=0x1231 [1]=0x11
+cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/32B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/32B 8-way write-back L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+vfp2: mvfr: [0]=0x10110222 [1]=0x11111111
+cpu3: 1512 MHz Cortex-A5 r0p1 (Cortex V7A core)
+cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu3: isar: [0]=0x101111 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x11142, [5]=0
+cpu3: mmfr: [0]=0x100103 [1]=0x40000000 [2]=0x1230000 [3]=0x102211
+cpu3: pfr: [0]=0x1231 [1]=0x11
+cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu3: 32KB/32B 4-way write-back-locking-C L1 PIPT Data cache
+cpu3: 512KB/32B 8-way write-back L2 PIPT Unified cache
+vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+vfp3: mvfr: [0]=0x10110222 [1]=0x11111111
+cpu1: 1512 MHz Cortex-A5 r0p1 (Cortex V7A core)
+cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu1: isar: [0]=0x101111 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x11142, [5]=0
+cpu1: mmfr: [0]=0x100103 [1]=0x40000000 [2]=0x1230000 [3]=0x102211
+cpu1: pfr: [0]=0x1231 [1]=0x11
+cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/32B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/32B 8-way write-back L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+vfp1: mvfr: [0]=0x10110222 [1]=0x11111111
+sdmmc0 at amlogicsdhc0
+uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub0: 1 port with 1 removable, self powered
+uhub1 at usb1: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub1: 1 port with 1 removable, self powered
+ld0 at sdmmc0: <0x03:0x5344:SU16G:0x80:0x07ecf574:0x0a7>
+ld0: 15193 MB, 7717 cyl, 64 head, 63 sec, 512 bytes/sect x 31116288 sectors
+ld0: 4-bit width, bus clock 50.000 MHz
+uhub2 at uhub1 port 1: vendor 05e3 USB2.0 Hub, class 9/0, rev 2.00/32.98, addr 2
+uhub2: multiple transaction translators
+uhub2: 4 ports with 4 removable, self powered
+umass0 at uhub2 port 2 configuration 1 interface 0
+umass0: Generic USB Mass Storage Device, rev 2.00/1.00, addr 3
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+uhidev0 at uhub2 port 3 configuration 1 interface 0
+uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub2 port 3 configuration 1 interface 1
+uhidev1: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/1
+uhidev1: 1 report ids
+ums0 at uhidev1 reportid 1: 3 buttons and Z dir
+wsmouse0 at ums0 mux 0
+uhidev2 at uhub2 port 3 configuration 1 interface 2
+uhidev2: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/0
+uhid0 at uhidev2: input=3, output=0, feature=0
+sd0 at scsibus0 target 0 lun 0: <Generic, USB Flash Disk, 0.00> disk removable
+sd0: 7681 MB, 500 cyl, 8 head, 32 sec, 512 bytes/sect x 15730688 sectors
+boot device: ld0
+root on ld0f dumps on ld0b
+root file system type: ffs
+kern.module.path=/stand/evbarm/7.99.7/modules
+WARNING: no TOD clock present
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+wsdisplay0: screen 4 added (default, vt100 emulation)
