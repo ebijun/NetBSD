@@ -1,0 +1,47 @@
+Index: external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c
+===================================================================
+RCS file: /export/cvsroot/xsrc/external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c,v
+retrieving revision 1.6
+diff -u -r1.6 bsd_KbdMap.c
+--- external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c	24 Jul 2011 00:06:38 -0000	1.6
++++ external/mit/xf86-input-keyboard/dist/src/bsd_KbdMap.c	22 Oct 2013 18:00:33 -0000
+@@ -260,7 +260,7 @@
+ 	/* 47 */ KEY_LBrace,	/* [ { */
+ 	/* 48 */ KEY_RBrace,	/* ] } */
+ 	/* 49 */ KEY_BSlash,	/* \ | */
+-	/* 50 */ KEY_BSlash2,	/* \ _ # ~ on some keyboards */
++	/* 50 */ KEY_BSlash,	/* \ | */
+ 	/* 51 */ KEY_SemiColon,	/* ; : */
+ 	/* 52 */ KEY_Quote,	/* ' " */
+ 	/* 53 */ KEY_Tilde,	/* ` ~ */
+@@ -345,17 +345,23 @@
+ 	/* 132 */ KEY_NOTUSED,
+ 	/* 133 */ KEY_NOTUSED,
+ 	/* 134 */ KEY_NOTUSED,
+-	/* 135 */ KEY_NOTUSED,
+-	/* 136 */ KEY_NOTUSED,
+-	/* 137 */ KEY_NOTUSED,
+-	/* 138 */ KEY_NOTUSED,
+-	/* 139 */ KEY_NOTUSED,
++#undef KEY_HKTG
++#define KEY_HKTG	200 /* Hiragana Katakana Toggle */
++#undef KEY_BSlash2
++#define KEY_BSlash2	203 /* \_ */
++	/* 135 */ KEY_BSlash2,
++	/* 136 */ KEY_HKTG,
++	/* 137 */ KEY_Yen,
++	/* 139 */ KEY_XFER,
++	/* 139 */ KEY_NFER,
+ 	/* 140 */ KEY_NOTUSED,
+ 	/* 141 */ KEY_NOTUSED,
+ 	/* 142 */ KEY_NOTUSED,
+ 	/* 143 */ KEY_NOTUSED,
+-	/* 144 */ KEY_NOTUSED,
+-	/* 145 */ KEY_NOTUSED,
++#define KEY_Hangul            0xC9
++#define KEY_Hangul_Hanja      0xCA
++	/* 144 */ KEY_Hangul,
++	/* 145 */ KEY_Hangul_Hanja,
+ 	/* 146 */ KEY_NOTUSED,
+ 	/* 147 */ KEY_NOTUSED,
+ 	/* 148 */ KEY_NOTUSED,

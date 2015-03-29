@@ -1,0 +1,10 @@
+# NetBSD /etc/fstab
+# See /usr/share/examples/fstab/ for more examples.
+/dev/ld0f	/		ffs	rw,log,noatime	1 1
+#/dev/ld0b	none		swap	sw	0 0
+/dev/ld0e	/boot		msdos	rw	1 1
+kernfs		/kern		kernfs	rw
+ptyfs		/dev/pts	ptyfs	rw
+procfs		/proc		procfs	rw
+tmpfs           /tmp		tmpfs   rw,-m1777,-sram%25
+tmpfs		/var/shm	tmpfs   rw,-m1777,-sram%25
