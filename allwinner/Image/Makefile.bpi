@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-bpi.img
 
 # iso file information
-IMAGE=/mnt2/NetBSD-7.99.8-evbarm-earmv7hf-201504011740Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.9-evbarm-earmv7hf-201504051500Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2015-03-28.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2015-04-04.tar.gz
 
 # UBOOT
 BOARD=bananapi
