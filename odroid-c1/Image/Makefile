@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-odroid_c1.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.9-evbarm-earmv7hf-201504051500Z.iso
+IMAGE=/mnt2/NetBSD-7.99.9-evbarm-earmv7hf-201504121930Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2015-04-04.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2015-04-11.tar.gz
 
 # UBOOT
 UBOOTURL=http://ftp.netbsd.org/pub/NetBSD/misc/jmcneill/odroidc1
@@ -20,7 +20,7 @@ KERNELBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-${TYPE}.ub.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
-beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/beagleboard.img
+beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/armv7.img
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 

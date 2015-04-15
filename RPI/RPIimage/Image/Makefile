@@ -6,9 +6,9 @@ ARCH=earmv6hf
 PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-05-23/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.9-evbarm-${ARCH}-201504051500Z.iso
+IMAGE=/mnt2/NetBSD-7.99.9-evbarm-${ARCH}-201504121930Z.iso
 
-PKGSRC=../../../pkgsrc/pkgsrc-2015-04-04.tar.gz 
+PKGSRC=../../../pkgsrc/pkgsrc-2015-04-11.tar.gz 
 
 ###
 
@@ -163,3 +163,7 @@ fetch:
 	sh Fetch
 	rm Fetch
 
+newfs:
+	newfs -n 500000 -b 4096 /dev/r${VND}a
+	mount /dev/vnd0a /mnt
+	dump 0uf - /dev/rvnd1a | ( cd /mnt ; restore -xvf - )

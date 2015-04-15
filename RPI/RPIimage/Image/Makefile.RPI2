@@ -5,9 +5,9 @@ ARCH=earmv7hf
 PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-05-23/
 
 # iso file information
-IMAGE=/mnt2/NetBSD-7.99.8-evbarm-${ARCH}-201504011740Z.iso
+IMAGE=/mnt2/NetBSD-7.99.9-evbarm-${ARCH}-201504121930Z.iso
 
-PKGSRC=../../../pkgsrc/pkgsrc-2015-03-28.tar.gz 
+PKGSRC=../../../pkgsrc/pkgsrc-2015-04-11.tar.gz 
 
 ###
 
@@ -16,7 +16,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi2-${ARCH}.img
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
-RPI=${MNT_CDROM}/evbarm/binary/gzimg/beagleboard.img
+RPI=${MNT_CDROM}/evbarm/binary/gzimg/armv7.img
 
 KERNELBIN7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.bin.gz
 KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
