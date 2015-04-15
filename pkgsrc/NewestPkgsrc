@@ -1,0 +1,24 @@
+#! /usr/pkg/bin/ruby200
+# ftp fetch Newest pkgsrc.tar.gz
+
+require 'net/ftp'
+
+FTP="ftp.netbsd.org"
+#FTP="ftp.jp.netbsd.org"
+#FTP="ftp7.jp.netbsd.org"
+
+PKGSRC="pkgsrc.tar.gz"
+PKGSRCPATH="/pub/pkgsrc/current/"
+
+ftp = Net::FTP.open(FTP) do |ftp|
+	# login and set mode
+	ftp.login()
+	ftp.passive = TRUE
+	ftp.debug_mode = TRUE
+
+	# chdir to branch
+	ftp.chdir(PKGSRCPATH)
+	ftp.getbinaryfile(PKGSRC,"pkgsrc-"+(ftp.mtime(PKGSRC,true).to_s.split)[0] +".tar.gz")
+
+        ftp.quit
+end
