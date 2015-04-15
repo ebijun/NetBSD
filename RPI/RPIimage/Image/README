@@ -1,31 +1,24 @@
-VERSION: :1,$s/2015-03-13/2015-03-13/g
-ISO:     :1,$s/201503081520Z/201503081520Z/g
-PKGSRC:  :1,$s/2015-03-07/2015-03-07/
-NetBSD:  :1,$s/7.99.6/7.99.6/g
+VERSION: :1,$s/2015-04-19/2015-04-19/g
+ISO:     :1,$s/201504121930Z/201504121930Z/g
+PKGSRC:  :1,$s/2015-04-11/2015-04-11/
+NetBSD:  :1,$s/7.99.9/7.99.9/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-03-13-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2015-04-19-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-03-13-netbsd-raspi-earmv6hf.img.gz for RPI and RPI2.
+I've updated 2015-04-19-netbsd-raspi-earmv6hf.img.gz for RPI and RPI2.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-03-13-earmv6hf/2015-03-13-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-04-19-earmv6hf/2015-04-19-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
 Update:
-- RPI2 support (btw single processor enabled)
+- RPI2 support (all processor enabled)
   RPI and RPI2 can boot with this image.
-- For Cubieboard 2 and BananaPI users, 2015-03-13-earmv7hf for RPI2 only.
-  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-03-13-earmv7hf/
-- NetBSD-current 7.99.6 evbarm-earmv6hf 201503081520Z from nyftp.
-- pkgsrc-current 2015-03-07 tarball from ftp.NetBSD.
-- FIX: port-arm:49057 Raspberry Pi Audio volume control does not work
-- mlterm 3.4.5nb1
-  http://mail-index.netbsd.org/pkgsrc-changes/2015/03/21/msg121484.html
-  for fix bcm2708_fb.fbswap:
-  http://mail-index.netbsd.org/source-changes/2015/01/21/msg062550.html
+- NetBSD-current 7.99.9 evbarm-earmv6hf 201504121930Z from nyftp.
+- pkgsrc-current 2015-04-11 tarball from ftp.NetBSD.
 
 GPU - omxplayer and ioquake3-raspberrypi support
   After "Growing the root file-system"
@@ -45,7 +38,7 @@ I2C - "Raspberry Pi I2C implementation still broken?"
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-03-13/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-05-23/
 
  To install application.
  # pkg_add some_application_name
@@ -61,8 +54,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.16-netbsd6-evbarm-earmv6hf.tgz for evaluation.
-  3. pkg_add musica-0.3.16-netbsd6-evbarm-earmv6hf.tgz
+  2. Download musica-0.3.18-netbsd6-evbarm-earmv6hf.tgz for evaluation.
+  3. pkg_add musica-0.3.18-netbsd6-evbarm-earmv6hf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -75,8 +68,6 @@ Todo:
 - Try light-desktop:
   http://wiki.netbsd.org/light-desktop/
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
-- ruby version: 200 -> 21?
-- Need GPIO & bus controll document and implimentation (via lua?)
 - comment out kernel DEBUG/DIAGNOSTIC option
 - https://github.com/isaki68k/sayaka
 - http://www.netbsd.org/~joerg/nodejs.tar.gz
@@ -100,13 +91,13 @@ pkgsrc Todo:
 
 =====================
 
-For AsiaBSDCon2015 demonstration use, I've updated raspberry-pi image.
+For FreeBSD Workshop demonstration use, I've updated raspberry-pi image.
 
- https://www.facebook.com/events/919788151384409/
+ http://freebsd-workshop.connpass.com/
+ https://www.facebook.com/events/772783982817617/
  https://www.facebook.com/NetBSD.jp 
- https://www.soum.co.jp/~jun/asiabsdcon2015.pdf
 
-- NetBSD 7.99.6 earmv6hf rpi.img.gz base
+- NetBSD 7.99.9 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -143,9 +134,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2015-03-07 tree inside.
+  - pkgsrc: 2015-04-11 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-03-13/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-04-19/
 
 Installed Packages:
 kterm
