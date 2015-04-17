@@ -74,11 +74,15 @@ pkg:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	echo rc_configured=YES  >> ${MNT}/etc/rc.conf
-	echo resize_diskabel=NO >> ${MNT}/etc/rc.conf
-	echo resize_root=NO     >> ${MNT}/etc/rc.conf
 	echo sshd=NO            >> ${MNT}/etc/rc.conf
 	echo syslogd=NO         >> ${MNT}/etc/rc.conf
 #	echo dhcpcd=NO          >> ${MNT}/etc/rc.conf
+	echo resize_disklabel=NO 	>> ${MNT}/etc/rc.conf
+	echo resize_disklabel_disk=""	>> ${MNT}/etc/rc.conf
+	echo resize_disklabel_part=""	>> ${MNT}/etc/rc.conf
+	echo resize_root=NO		>> ${MNT}/etc/rc.conf
+	echo resize_root_flags=""	>> ${MNT}/etc/rc.conf
+	echo resize_root_postcmd=""	>> ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
