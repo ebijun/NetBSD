@@ -13,6 +13,7 @@ PKGSRC=../../../pkgsrc/pkgsrc-2015-04-11.tar.gz
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi2-${ARCH}.img
+FILE_TMP=a.img
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -29,8 +30,9 @@ MNT=/mnt
 VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
+VND_TMP=vnd2
 
-all: file cdmount rpi extract firm kernel cdunmount 
+all: file cdmount rpi extract firm kernel cdunmount fit
 
 # extract sets to image file.
 extract:
@@ -47,9 +49,9 @@ extract:
 	umount ${MNT}
 	vnconfig -u ${VND}
 
-# copy rpi.img.gz to image file and resize partition.
+# copy armv7.img.gz to image file and resize partition.
 rpi:
-	echo Copy rpi.img.gz
+	echo Copy armv7.img.gz
 	vnconfig ${VND} ${FILE}
 	gunzip < ${RPI}.gz |dd of=/dev/r${VND}d bs=1m 
 	disklabel -R ${VND} DISKLABEL.proto
@@ -70,10 +72,12 @@ pkg:
 	vnconfig ${VND} ${FILE}
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	echo rc_configured=YES >> ${MNT}/etc/rc.conf
-	echo sshd=NO           >> ${MNT}/etc/rc.conf
-	echo syslogd=NO        >> ${MNT}/etc/rc.conf
-#	echo dhcpcd=NO         >> ${MNT}/etc/rc.conf
+	echo rc_configured=YES  >> ${MNT}/etc/rc.conf
+	echo resize_diskabel=NO >> ${MNT}/etc/rc.conf
+	echo resize_root=NO     >> ${MNT}/etc/rc.conf
+	echo sshd=NO            >> ${MNT}/etc/rc.conf
+	echo syslogd=NO         >> ${MNT}/etc/rc.conf
+#	echo dhcpcd=NO          >> ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -103,6 +107,7 @@ logclean:
 	rm -f ${MNT}/var/log/wtmpx
 	rm -f ${MNT}/var/log/wtmpx.0.gz
 	rm -f ${MNT}/var/log/wtmp.0.gz
+	rm -f ${MNT}/var/mail/root
 	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease
 	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease6
 	rm -f ${MNT}/var/db/dhcpcd-url0.lease
@@ -160,3 +165,15 @@ fetch:
 	sh Fetch
 	rm Fetch
 
+# more space with newfs -b 4096
+fit:
+	cp ${FILE} ${FILE_TMP}
+	vnconfig ${VND_TMP} ${FILE_TMP}
+	newfs -n 500000 -b 4096 /dev/r${VND_TMP}a
+	mount /dev/${VND_TMP}a ${MNT}
+	vnconfig ${VND} ${FILE}
+	dump 0uf - /dev/r${VND}a | ( cd ${MNT} ; restore -xf - )
+	umount ${MNT}
+	vnconfig -u ${VND}
+	vnconfig -u ${VND_TMP}
+	cp ${FILE_TMP} ${FILE}

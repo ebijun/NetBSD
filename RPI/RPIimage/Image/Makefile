@@ -108,6 +108,7 @@ logclean:
 	rm -f ${MNT}/var/log/wtmpx
 	rm -f ${MNT}/var/log/wtmpx.0.gz
 	rm -f ${MNT}/var/log/wtmp.0.gz
+	rm -f ${MNT}/var/mail/root
 	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease
 	rm -f ${MNT}/var/db/dhcpcd-usmsc0.lease6
 	rm -f ${MNT}/var/db/dhcpcd-url0.lease
