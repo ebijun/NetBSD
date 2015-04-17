@@ -1,5 +1,5 @@
 VERSION: :1,$s/2015-04-19/2015-04-19/g
-ISO:     :1,$s/201504121930Z/201504121930Z/g
+ISO:     :1,$s/201504161830Z/201504161830Z/g
 PKGSRC:  :1,$s/2015-04-11/2015-04-11/
 NetBSD:  :1,$s/7.99.9/7.99.9/g
 
@@ -13,11 +13,11 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-04-19-earmv6hf/2015-0
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
-h
+
 Update:
 - RPI2 support (all 4 processor enabled!)
   RPI and RPI2 can boot with this image.
-- NetBSD-current 7.99.9 evbarm-earmv6hf 201504121930Z from nyftp.
+- NetBSD-current 7.99.9 evbarm-earmv6hf 201504161830Z from nyftp.
 - pkgsrc-current 2015-04-11 tarball from ftp.NetBSD.
 - automatic resize partition : see /etc/rc.conf
   1. copy image to SD/MicroSD
