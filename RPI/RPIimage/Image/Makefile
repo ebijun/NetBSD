@@ -6,7 +6,7 @@ ARCH=earmv6hf
 PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-05-23/
 
 # iso file information
-IMAGE=/mnt2/NetBSD-7.99.9-evbarm-${ARCH}-201504121930Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.9-evbarm-${ARCH}-201504161830Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2015-04-11.tar.gz 
 
@@ -14,6 +14,7 @@ PKGSRC=../../../pkgsrc/pkgsrc-2015-04-11.tar.gz
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
+FILE_TMP=a.img
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
@@ -31,8 +32,9 @@ MNT=/mnt
 VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
+VND_TMP=vnd2
 
-all: file cdmount rpi extract firm kernel cdunmount #libxcb libc-time
+all: file cdmount rpi extract firm kernel cdunmount fit
 
 # extract sets to image file.
 extract:
@@ -71,10 +73,12 @@ pkg:
 	vnconfig ${VND} ${FILE}
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	echo rc_configured=YES >> ${MNT}/etc/rc.conf
-	echo sshd=NO           >> ${MNT}/etc/rc.conf
-	echo syslogd=NO        >> ${MNT}/etc/rc.conf
-#	echo dhcpcd=NO         >> ${MNT}/etc/rc.conf
+	echo rc_configured=YES  >> ${MNT}/etc/rc.conf
+	echo resize_diskabel=NO >> ${MNT}/etc/rc.conf
+	echo resize_root=NO     >> ${MNT}/etc/rc.conf
+	echo sshd=NO            >> ${MNT}/etc/rc.conf
+	echo syslogd=NO         >> ${MNT}/etc/rc.conf
+#	echo dhcpcd=NO          >> ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -163,7 +167,14 @@ fetch:
 	sh Fetch
 	rm Fetch
 
-newfs:
-	newfs -n 500000 -b 4096 /dev/r${VND}a
-	mount /dev/vnd0a /mnt
-	dump 0uf - /dev/rvnd1a | ( cd /mnt ; restore -xvf - )
+fit:
+	cp ${FILE} ${FILE_TMP}
+	vnconfig ${VND_TMP} ${FILE_TMP}
+	newfs -n 500000 -b 4096 /dev/r${VND_TMP}a
+	mount /dev/${VND_TMP}a ${MNT}
+	vnconfig ${VND} ${FILE}
+	dump 0uf - /dev/r${VND}a | ( cd ${MNT} ; restore -xf - )
+	umount ${MNT}
+	vnconfig -u ${VND}
+	vnconfig -u ${VND_TMP}
+	cp ${FILE_TMP} ${FILE}
