@@ -13,12 +13,18 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-04-19-earmv6hf/2015-0
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
-
+h
 Update:
-- RPI2 support (all processor enabled)
+- RPI2 support (all 4 processor enabled!)
   RPI and RPI2 can boot with this image.
 - NetBSD-current 7.99.9 evbarm-earmv6hf 201504121930Z from nyftp.
 - pkgsrc-current 2015-04-11 tarball from ftp.NetBSD.
+- automatic resize partition : see /etc/rc.conf
+  1. copy image to SD/MicroSD
+  2. Boot 
+  3. Calculate and resize ld0 partition and automatic reboot
+  4. after the reboot,root partition fit for your card.
+    http://movapic.com/pic/20150416115108552fa22c4f225
 
 GPU - omxplayer and ioquake3-raspberrypi support
   After "Growing the root file-system"
@@ -46,7 +52,7 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-05-
  If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
 
-Growing the root file-system:
+Growing the root file-system by hand:
   use disklabel -i and resize_ffs
   http://wiki.netbsd.org/ports/evbarm/raspberry_pi/
 
