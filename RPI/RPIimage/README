@@ -84,9 +84,8 @@ Todo:
 - /dev/mem: http://mail-index.netbsd.org/port-arm/2015/03/12/msg002934.html
   "can't open /dev/mem" -> re-compile kernel with INSECURE.
 - Sound output to the jack: port-arm/2015/03/12/msg002938.html
-  I just had to add a "hdmi_ignore_edid_audio=1" line into a new (optional)
-  /boot/config.txt file. And it redirects all the audio signals to the jack
-  and not to the HDMI. Just what I wanted.
+   $ mixerctl -v outputs.select
+   outputs.select=auto  [ auto headphones hdmi ]
 
 pkgsrc Todo:
 - openjdk7/8
