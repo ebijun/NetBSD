@@ -4,10 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.9 (NETWALKER.201504051500Z) #0: Sun Apr  5 16:40:48 UTC 2015
-	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201504051500Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/NETWALKER
+NetBSD 7.99.10 (NETWALKER.201504211820Z) #0: Tue Apr 21 20:00:06 UTC 2015
+	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201504211820Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/NETWALKER
 total memory = 512 MB
-avail memory = 502 MB
+avail memory = 501 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
@@ -23,7 +23,7 @@ vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 vfp0: mvfr: [0]=0x11110222 [1]=0x11111
 axi0 at mainbus0: Advanced eXtensible Interface
 tzic0 at axi0 addr 0xe0000000-0xe0003fff irqbase 0: TrustZone Interrupt Controller
-tzic0: interrupts 0..128  register VA:0xc97da000
+tzic0: interrupts 0..128  register VA:0xc97d6000
 imxccm0 at axi0 addr 0x73fd4000: Clock control module
 imxccm0: CPU clock=800000000, UART clock=66500000
 imxccm0: PLL1 clock=800000000, PLL2 clock=665000000, PLL3 clock=216000000
@@ -58,6 +58,10 @@ ehci1: 1 host port
 ehci1: ULPI phy VID 0x0400 PID 0x0006
 ehci1: EHCI version 1.0
 usb1 at ehci1: USB revision 2.0
+imxi2c0 at axi0 addr 0x83fc8000 intr 62
+iic0 at imxi2c0: I2C bus
+imxi2c1 at axi0 addr 0x83fc4000 intr 63
+iic1 at imxi2c1: I2C bus
 imxspi0 at axi0 addr 0x70010000 intr 36: i.MX eCSPI Controller (clock 54000000 Hz)
 spi0 at imxspi0: SPI bus
 oj6sh0 at spi0 slave 2: OJ6SH-T25 Optical Joystick
@@ -83,12 +87,12 @@ oj6sh0: id 0x0d, revision 0x02
 ld0 at sdmmc0: <0x02:0x544d:SA02G:0x09:0x28427115:0x0c1>
 ld0: 1898 MB, 964 cyl, 64 head, 63 sec, 512 bytes/sect x 3887104 sectors
 ld0: 4-bit width, bus clock 50.000 MHz
-uhub2 at uhub1 port 1: SMSC USB 2.0 4-Port Hub, class 9/0, rev 2.00/0.00, addr 2
+uhub2 at uhub1 port 1: vendor 0424 product 2514, class 9/0, rev 2.00/0.00, addr 2
 uhub2: multiple transaction translators
 uhub2: 4 ports with 4 removable, self powered
 uhidev0 at uhub0 port 1 configuration 1 interface 0
 uhidev0: SHARP USB Keyboard, rev 1.10/1.22, addr 2, iclass 3/1
-ukbd0 at uhidev0
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
 uhidev1 at uhub0 port 1 configuration 1 interface 1
 uhidev1: SHARP USB Keyboard, rev 1.10/1.22, addr 2, iclass 3/0
@@ -108,11 +112,10 @@ dump device (default sd0b):
 file system (default generic): 
 root on sd0a dumps on sd0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.9/modules
+kern.module.path=/stand/evbarm/7.99.10/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 init path (default /sbin/init): 
 init: trying /sbin/init
 wsdisplay0: screen 4 added (std, vt100 emulation)
-WARNING: negative runtime; monotonic clock has gone backwards
