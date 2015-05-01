@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.10 (NETWALKER.201504211820Z) #0: Tue Apr 21 20:00:06 UTC 2015
-	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201504211820Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/NETWALKER
+NetBSD 7.99.13 (NETWALKER.201504280500Z) #0: Tue Apr 28 06:45:50 UTC 2015
+	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201504280500Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/NETWALKER
 total memory = 512 MB
 avail memory = 501 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -55,7 +55,7 @@ usb0 at ehci0: USB revision 2.0
 ehci1 at imxusbc0 unit 1 irq 14: i.MX USB Controller
 ehci1: id=5 revision=65 HCI revision=0x100
 ehci1: 1 host port
-ehci1: ULPI phy VID 0x0400 PID 0x0006
+ehci1: ULPI phy VID 0x0424 PID 0x0006
 ehci1: EHCI version 1.0
 usb1 at ehci1: USB revision 2.0
 imxi2c0 at axi0 addr 0x83fc8000 intr 62
@@ -112,7 +112,7 @@ dump device (default sd0b):
 file system (default generic): 
 root on sd0a dumps on sd0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.10/modules
+kern.module.path=/stand/evbarm/7.99.13/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
