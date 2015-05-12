@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.9 (GENERIC) #21: Tue Apr  7 10:43:40 JST 2015
+NetBSD 7.99.16 (GENERIC) #4: Mon May 11 12:56:29 JST 2015
 	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1985 MB
@@ -13,34 +13,34 @@ RTC BIOS diagnostic error 0x80<clock_battery>
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
 Acer ZG8             (1)
 mainbus0 (root)
-ACPI: RSDP 0x000FE020 000024 (v02 ACRSYS)
-ACPI: XSDT 0x7F4FE120 000064 (v01 ACRSYS ACRPRDCT 00000001      01000013)
-ACPI: FACP 0x7F4FC000 0000F4 (v04 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: DSDT 0x7F4F1000 0064DB (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: FACS 0x7F488000 000040
-ACPI: SSDT 0x7F4FD000 0004C4 (v02 PmRef  CpuPm    00003000 INTL 20051117)
-ACPI: HPET 0x7F4FB000 000038 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: APIC 0x7F4FA000 000068 (v02 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: MCFG 0x7F4F9000 00003C (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: ASF! 0x7F4F8000 0000A5 (v32 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: SLIC 0x7F4F0000 000176 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: BOOT 0x7F4EF000 000028 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
+ACPI: RSDP 0x00000000000FE020 000024 (v02 ACRSYS)
+ACPI: XSDT 0x000000007F4FE120 000064 (v01 ACRSYS ACRPRDCT 00000001      01000013)
+ACPI: FACP 0x000000007F4FC000 0000F4 (v04 ACRSYS ACRPRDCT 00000001 1025 01000013)
+ACPI: DSDT 0x000000007F4F1000 0064DB (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
+ACPI: FACS 0x000000007F488000 000040
+ACPI: SSDT 0x000000007F4FD000 0004C4 (v02 PmRef  CpuPm    00003000 INTL 20051117)
+ACPI: HPET 0x000000007F4FB000 000038 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
+ACPI: APIC 0x000000007F4FA000 000068 (v02 ACRSYS ACRPRDCT 00000001 1025 01000013)
+ACPI: MCFG 0x000000007F4F9000 00003C (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
+ACPI: ASF! 0x000000007F4F8000 0000A5 (v32 ACRSYS ACRPRDCT 00000001 1025 01000013)
+ACPI: SLIC 0x000000007F4F0000 000176 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
+ACPI: BOOT 0x000000007F4EF000 000028 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
 ACPI: All ACPI Tables successfully acquired
 cpu0 at mainbus0 apid 0
 cpu0: Intel(R) Atom(TM) CPU N270   @ 1.60GHz, id 0x106c2
 cpu1 at mainbus0 apid 1
 cpu1: Intel(R) Atom(TM) CPU N270   @ 1.60GHz, id 0x106c2
 ioapic0 at mainbus0 apid 4: pa 0xfec00000, version 0x20, 24 pins
-acpi0 at mainbus0: Intel ACPICA 20140926
+acpi0 at mainbus0: Intel ACPICA 20150410
 acpi0: X/RSDT: OemId <ACRSYS,ACRPRDCT,00000001>, AslId <    ,01000013>
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xC39F8C4C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C39F8C4C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xC37D5A0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0x00000000C3853A0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xC37A37FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3852B84 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xC37AF294 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C382C1F4 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -79,8 +79,8 @@ acpitz0 at acpi0 (THRM)
 acpitz0: levels: critical 95.0 C, passive cooling
 apm0 at acpi0: Power Management spec V1.2
 ACPI: Enabled 1 GPEs in block 00 to 1F
-ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20140926/hwxface-646)
-ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20140926/hwxface-646)
+ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20150410/hwxface-646)
+ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20150410/hwxface-646)
 pckbd0 at pckbc1 (kbd slot)
 pckbc1: using irq 1 for kbd slot
 wskbd0 at pckbd0: console keyboard
@@ -103,7 +103,7 @@ i915drmkms0: interrupting at ioapic0 pin 16 (i915)
 drm: initialized overlay support
 intelfb0 at i915drmkms0
 i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xdb122000, size 1024x600, depth 32, stride 4096
+intelfb0: framebuffer at 0xdb121000, size 1024x600, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
@@ -160,7 +160,8 @@ pci4: i/o space, memory space enabled
 ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 27b9 (rev. 0x02)
 timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
 ichlpcib0: 24-bit timer
-ichlpcib0: TCO (watchdog) timer configured.
+tco0 at ichlpcib0: TCO (watchdog) timer configured.
+tco0: Min/Max interval 1/367 seconds
 gpio0 at ichlpcib0: 64 pins
 ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 27c5 (rev. 0x02)
 ahcisata0: interrupting at ioapic0 pin 17
@@ -196,9 +197,9 @@ acpicpu1 at cpu1: ACPI CPU
 DRM error in i915_irq_handler: pipe A underrun
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
-uhub0 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
 uhub2 at usb2: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
@@ -220,7 +221,7 @@ Kernelized RAIDframe activated
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/7.99.9/modules
+kern.module.path=/stand/i386/7.99.16/modules
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
