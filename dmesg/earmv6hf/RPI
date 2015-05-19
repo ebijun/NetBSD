@@ -1,5 +1,11 @@
-NetBSD 7.99.11 (RPI.201504241310Z) #0: Fri Apr 24 14:40:29 UTC 2015
-	builds@b48.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201504241310Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.16 (RPI.201505171840Z) #0: Sun May 17 20:05:33 UTC 2015
+	builds@b48.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201505171840Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
 total memory = 448 MB
 avail memory = 437 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -18,7 +24,6 @@ obio0 at mainbus0
 bcmicu0 at obio0
 bcmmbox0 at obio0 intr 65: VC mailbox
 vcmbox0 at bcmmbox0
-vcmbox0: unable to register with sysmon
 bcmtmr0 at obio0 intr 3: VC System Timer
 vchiq0 at obio0 intr 66: BCM2835 VCHIQ
 bcmpm0 at obio0: Power management, Reset and Watchdog controller
@@ -48,8 +53,7 @@ gpio1 at bcmgpio1: 22 pins
 usb0 at dwctwo0: USB revision 2.0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 timecounter: Timecounter "bcmtmr0" frequency 1000000 Hz quality 100
-sdhc0: SD Host Specification 3.0, rev.153
-sdhc0: using DMA transfer
+sdhc0: SDHC 3.0, rev 153, DMA, 250000 kHz, 3.3V, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
@@ -79,29 +83,17 @@ uhid0 at uhidev2: input=3, output=0, feature=0
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.11/modules
+kern.module.path=/stand/evbarm/7.99.16/modules
 vchiq: local ver 6 (min 3), remote ver 6.
 vcaudio0 at vchiq0: auds
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 audio0 at vcaudio0: half duplex, playback, capture, independent
-umass0 at uhub1 port 4 configuration 1 interface 0
+umass0 at uhub1 port 5 configuration 1 interface 0
 umass0: JMicron USB to ATA/ATAPI Bridge, rev 2.00/1.00, addr 5
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <SanDisk, SD6SB1M064G1022I, 600> disk fixed
 sd0: 61057 MB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 125045424 sectors
 wsdisplay0: screen 4 added (default, vt100 emulation)
-ukbd0: was console keyboard
-wskbd0: detached
-ukbd0: detached
-uhidev0: detached
-uhidev0: at uhub1 port 2 (addr 4) disconnected
-wsmouse0: detached
-ums0: detached
-uhidev1: detached
-uhidev1: at uhub1 port 2 (addr 4) disconnected
-uhid0: detached
-uhidev2: detached
-uhidev2: at uhub1 port 2 (addr 4) disconnected

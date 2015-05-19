@@ -1,15 +1,15 @@
-VERSION: :1,$s/2015-04-19/2015-04-19/g
-ISO:     :1,$s/201504161830Z/201504161830Z/g
-PKGSRC:  :1,$s/2015-04-11/2015-04-11/
-NetBSD:  :1,$s/7.99.9/7.99.9/g
+VERSION: :1,$s/2015-05-23/2015-05-23/g
+ISO:     :1,$s/201505171840Z/201505171840Z/g
+PKGSRC:  :1,$s/2015-05-16/2015-05-16/
+NetBSD:  :1,$s/7.99.16/7.99.16/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-04-19-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2015-05-23-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-04-19-netbsd-raspi-earmv6hf.img.gz for RPI and RPI2.
+I've updated 2015-05-23-netbsd-raspi-earmv6hf.img.gz for RPI and RPI2.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-04-19-earmv6hf/2015-04-19-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-05-23-earmv6hf/2015-05-23-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -17,8 +17,8 @@ Overview:
 Update:
 - RPI2 support (all 4 processor enabled!)
   RPI and RPI2 can boot with this image.
-- NetBSD-current 7.99.9 evbarm-earmv6hf 201504161830Z from nyftp.
-- pkgsrc-current 2015-04-11 tarball from ftp.NetBSD.
+- NetBSD-current 7.99.16 evbarm-earmv6hf 201505171840Z from nyftp.
+- pkgsrc-current 2015-05-16 tarball from ftp.NetBSD.
 - automatic resize partition : see /etc/rc.conf
   1. copy image to SD/MicroSD
   2. Boot 
@@ -102,7 +102,7 @@ For FreeBSD Workshop demonstration use, I've updated raspberry-pi image.
  https://www.facebook.com/events/772783982817617/
  https://www.facebook.com/NetBSD.jp 
 
-- NetBSD 7.99.9 earmv6hf rpi.img.gz base
+- NetBSD 7.99.16 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -139,9 +139,9 @@ Features:
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as -current (video needs more tests)
-  - pkgsrc: 2015-04-11 tree inside.
+  - pkgsrc: 2015-05-16 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-04-19/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-05-23/
 
 Installed Packages:
 kterm
