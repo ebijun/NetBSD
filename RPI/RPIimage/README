@@ -7,7 +7,7 @@ To: port-armNetBSD.org@localhost
 Subject: 2015-05-23-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-05-23-netbsd-raspi-earmv6hf.img.gz for RPI and RPI2.
+I've updated 2015-05-23-netbsd-raspi-earmv6hf.img.gz for RPI.
 
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-05-23-earmv6hf/2015-05-23-netbsd-raspi-earmv6hf.img.gz
 
@@ -15,11 +15,14 @@ Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
 Update:
-- RPI2 support (all 4 processor enabled!)
-  RPI and RPI2 can boot with this image.
-- NetBSD-current 7.99.16 evbarm-earmv6hf 201505171840Z from nyftp.
+- DEGRADE: RPI2 boot failed!
+  RPI2 cannot boot with this image.
+  If you use RPI2,use 2015-04-19-earmv6hf.
+   (has multi processor problem for heavy load.)
+- NetBSD-current 7.99.16 evbarm-earmv6hf 201505171840Z rpi.img from nyftp.
 - pkgsrc-current 2015-05-16 tarball from ftp.NetBSD.
-- automatic resize partition : see /etc/rc.conf
+
+automatic resize partition: see /etc/rc.conf
   1. copy image to SD/MicroSD
   2. Boot 
   3. Calculate and resize ld0 partition and automatic reboot
@@ -96,11 +99,13 @@ pkgsrc Todo:
 
 =====================
 
-For FreeBSD Workshop demonstration use, I've updated raspberry-pi image.
+For Open Source Conference 2015 Nagoya demonstration use, 
+I've updated raspberry-pi image.
 
- http://freebsd-workshop.connpass.com/
- https://www.facebook.com/events/772783982817617/
+ http://www.ospn.jp/osc2015-nagoya/
+ https://www.facebook.com/events/344210502418490/
  https://www.facebook.com/NetBSD.jp 
+ http://www.soum.co.jp/~jun/OSC2015nagoya.pdf
 
 - NetBSD 7.99.16 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)

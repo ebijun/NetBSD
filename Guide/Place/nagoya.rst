@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -42,7 +42,8 @@
  2011 Nagoya,8/20,600,46,名古屋国際センター
  2012 Nagoya,5/11-5/12,650,50,名古屋国際センター
  2013 Nagoya,6/21-22,750,42,名古屋国際センター
- 2014 Nagoya,7/4-5,,30,名古屋国際センター
+ 2014 Nagoya,7/4-5,620,30,名古屋国際センター
+ 2015 Nagoya,5/22-23,,39,名古屋国際センター
 
 オープンソースカンファレンス以前
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,11 +66,10 @@
  円頓寺商店街,国際センター,会場近く。堀川から丸の内まで続く商店街
  ふれあい館,円頓寺商店街,NBUG例会会場。東海道らぐも。
  まつば,円頓寺商店街,NBUG例会会場脇。コーヒーを注文できます。
- 菊井かつ,円頓寺商店街,かつ10本豚かつ10本青いやつ。
+ 菊井かつ,円頓寺商店街,かつ10本豚かつ10本青いやつ。円頓寺は休業中。黒川へいこう。
  フルット,円頓寺商店街,スパゲティ。トッピングに目玉焼きを載せよう。
  はね海老,円頓寺商店街,ランチがおいしい。
  テラゾ,円頓寺商店街,ロックバー。元オックスの人が。
- ブルーデルヤマト,桜山,100年前からドイツパン。例会会場近くに2014/6/30まで。
  上野屋,円頓寺商店街,とんちゃん。
  薩摩,名古屋駅,忘年会は焼肉。
  KDS,第一アメ横1F,昔は車道にあった。小坂井ブランドの300Bとか。
@@ -97,6 +97,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 71,OSC2015名古屋,http://www.soum.co.jp/~jun/OSC2015nagoya.pdf
  59,OSC2014名古屋,http://www.soum.co.jp/~jun/OSC2014nagoya.pdf
  42,OSC2013名古屋,http://www.soum.co.jp/~jun/OSC2013nagoya.pdf
  25,OSC2012名古屋,http://www.soum.co.jp/~jun/OSC2012nagoya.pdf
@@ -108,7 +109,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2014名古屋 NetBSDブース展示の記録,
+ OSC2015名古屋 NetBSDブース展示の記録,
+ OSC2014名古屋 NetBSDブース展示の記録,http://togetter.com/li/688742
  OSC2013名古屋 NetBSDブース展示の記録,http://togetter.com/li/522396
  OSC2012名古屋 NetBSDブース展示の記録,http://togetter.com/li/302311
 
@@ -116,6 +118,7 @@ togetterまとめ
 OSC名古屋展示物
 ~~~~~~~~~~~~~~~~~~
 #. OpenBSD/LUNA88K & NetBSD/LUNA68K
+#. DEC Alphaと俺
 #. ドリームキャストのコントローラでTwitterタイムライン
 #. XM6i
 #. RPI
@@ -127,35 +130,45 @@ OSC名古屋展示物
 #. Speecys
 #. samtk
 
+2014年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2014/07/05/DSC05103.JPG
+.. image::  ../Picture/2014/07/05/DSC05104.JPG
+.. image::  ../Picture/2014/07/05/DSC05105.JPG
+.. image::  ../Picture/2014/07/05/DSC05106.JPG
+.. image::  ../Picture/2014/07/05/DSC05108.JPG
+.. image::  ../Picture/2014/07/05/DSC_0210.jpg
+.. image::  ../Picture/2014/07/05/DSC_0212.jpg
+.. image::  ../Picture/2014/07/05/DSC_0213.jpg
+.. image::  ../Picture/2014/07/05/DSC_0216.jpg
+.. image::  ../Picture/2014/07/05/DSC_0218.jpg
+.. image::  ../Picture/2014/07/05/DSC_0219.jpg
+.. image::  ../Picture/2014/07/05/DSC_0220.jpg
+.. image::  ../Picture/2014/07/05/DSC_0226.jpg
+.. image::  ../Picture/2014/07/05/DSC_0227.jpg
+.. image::  ../Picture/2014/07/05/DSC_0230.jpg
+.. image::  ../Picture/2014/07/05/DSC_0231.jpg
+.. image::  ../Picture/2014/07/05/DSC_0233.jpg
+.. image::  ../Picture/2014/07/05/DSC_0235.jpg
 
 2013年
 ~~~~~~~~~~~~~~~~~~
 .. image::  ../Picture/2013/06/22/DSC_2113.jpg
-.. image::  ../Picture/2013/06/22/DSC_2114.jpg
 .. image::  ../Picture/2013/06/22/DSC_2115.jpg
 .. image::  ../Picture/2013/06/22/DSC_2116.jpg
 .. image::  ../Picture/2013/06/22/DSC_2118.jpg
 .. image::  ../Picture/2013/06/22/DSC_2119.jpg
-.. image::  ../Picture/2013/06/22/DSC_2120.jpg
 .. image::  ../Picture/2013/06/22/DSC_2121.jpg
-.. image::  ../Picture/2013/06/22/DSC_2123.jpg
 .. image::  ../Picture/2013/06/22/DSC_2124.jpg
 .. image::  ../Picture/2013/06/22/DSC_2125.jpg
-.. image::  ../Picture/2013/06/22/DSC_2128.jpg
 .. image::  ../Picture/2013/06/22/DSC_2129.jpg
 .. image::  ../Picture/2013/06/22/DSC_2131.jpg
 .. image::  ../Picture/2013/06/22/DSC_2132.jpg
 .. image::  ../Picture/2013/06/22/DSC_2133.jpg
-.. image::  ../Picture/2013/06/22/DSC_2134.jpg
-.. image::  ../Picture/2013/06/22/DSC_2136.jpg
-.. image::  ../Picture/2013/06/22/DSC_2137.jpg
-.. image::  ../Picture/2013/06/22/DSC_2138.jpg
 .. image::  ../Picture/2013/06/22/dsc02697.jpg
-.. image::  ../Picture/2013/06/22/dsc02698.jpg
 .. image::  ../Picture/2013/06/22/dsc02699.jpg
 .. image::  ../Picture/2013/06/22/dsc02700.jpg
-.. image::  ../Picture/2013/06/22/dsc02701.jpg
-.. image::  ../Picture/2013/06/22/dsc02702.jpg
 
 2012年
 ~~~~~~~~~~~~~~~~~~
@@ -164,9 +177,7 @@ OSC名古屋展示物
 .. image::  ../Picture/2012/05/12/DSC_0372.JPG
 .. image::  ../Picture/2012/05/12/DSC_0373.JPG
 .. image::  ../Picture/2012/05/12/DSC_0374.JPG
-.. image::  ../Picture/2012/05/12/DSC_0375.JPG
 .. image::  ../Picture/2012/05/12/DSC_0376.JPG
-.. image::  ../Picture/2012/05/12/DSC_0377.JPG
 .. image::  ../Picture/2012/05/12/DSC_0378.JPG
 .. image::  ../Picture/2012/05/12/DSC_0379.JPG
 .. image::  ../Picture/2012/05/12/DSC_0383.JPG
@@ -174,15 +185,11 @@ OSC名古屋展示物
 .. image::  ../Picture/2012/05/12/DSC_0386.JPG
 .. image::  ../Picture/2012/05/12/DSC_0390.JPG
 .. image::  ../Picture/2012/05/12/dsc01046.jpg
-.. image::  ../Picture/2012/05/12/dsc01047.jpg
 .. image::  ../Picture/2012/05/12/dsc01052.jpg
 .. image::  ../Picture/2012/05/12/dsc01053.jpg
-.. image::  ../Picture/2012/05/12/dsc01054.jpg
-.. image::  ../Picture/2012/05/12/dsc01055.jpg
 
 2011年
 ~~~~~~~~~~~~~~~~~
-.. image::  ../Picture/2011/08/20/P1000719.JPG
 .. image::  ../Picture/2011/08/20/P1000721.JPG
 .. image::  ../Picture/2011/08/20/P1000722.JPG
 .. image::  ../Picture/2011/08/20/P1000723.JPG
@@ -190,11 +197,6 @@ OSC名古屋展示物
 .. image::  ../Picture/2011/08/20/P1000725.JPG
 .. image::  ../Picture/2011/08/20/P1000726.JPG
 .. image::  ../Picture/2011/08/20/P1000727.JPG
-.. image::  ../Picture/2011/08/20/P1000728.JPG
-.. image::  ../Picture/2011/08/20/P1000729.JPG
-.. image::  ../Picture/2011/08/20/P1000730.JPG
 .. image::  ../Picture/2011/08/20/P1000731.JPG
-.. image::  ../Picture/2011/08/20/P1000732.JPG
-.. image::  ../Picture/2011/08/20/P1000733.JPG
 .. image::  ../Picture/2011/08/20/P1000734.JPG
-.. image::  ../Picture/2011/08/20/P1000735.JPG
+
