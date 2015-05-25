@@ -37,9 +37,8 @@
  :maxdepth: 3
  :numbered:
 
- Place/nagoya
+ Place/hokkaido
  RPI
- Luna
 
 * :ref:`genindex`
 * :ref:`modindex`
