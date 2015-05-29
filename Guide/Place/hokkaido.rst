@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -52,12 +52,11 @@
  イエロー,スガイビル裏,ラムカレーとかピリカワッカのスタウト
  丸大ビル,南2西1,ニャル子さん本拠地のアニメイトとメロンブックス。
  ノースアイランド,南2東1,ノースアイランドビール。コースターかわいい。
- Weird-meddle records,南2西1,2014/7閉店。日本で一番好きなレコードショップ
  青春☆こんぶ,襟裳岬,襟裳の春はこんぶがある春です。
  アダノンキ,東急ハンズ横,古本屋とマニアックな地ビール。
  モルトヘッズ,南3西8,ビール＋モルトウィスキー
  麦酒亭,中島公園,壁一面にビール缶が。Rogueとかmikkelerとかある。
- 米酒亭,ブラウンブックスカフェの下,改装中
+ 米酒亭,ブラウンブックスカフェの下,改装中だったけど復活してるはず。
  森彦,円山公園,2階席から眺める
  HIGURASHI,すすきの,アウトサイダーブルーイングとか。
  ハードオフ札幌伏古店,伏古2条3,テレフンケンのスピーカーがある
@@ -81,7 +80,7 @@
  くすみ書房,厚別大谷知,クラウドファンディング中
  モスコミュール,宮の杜4条,カレーと夜景とモスコ
  シアターキノ,狸小路6南3,第8回札幌国際短篇映画祭期間中
- 蠍座,北9西3,燃える仏像人間
+ 蠍座,北9西3,燃える仏像人間。2014/12/31に閉館。
  赤星,南3西7,500円ラーメン
  こふじ,北2西3,昼ランチ
  亜珈里,豊平公園,ザンギ定食大盛900円。
@@ -122,16 +121,18 @@
  :widths: 20 15 20 20 40
 
  開催年,開催日,参加者,参加グループ,会場
- 2005 in Hokkaido ,7/9,250,17,
- 2006 Hokkaido ,7/14,300,24,
- 2007 Hokkaido ,6/30,300,22,
- 2008 Hokkaido ,6/28,250,21,
- 2009 Hokkaido ,6/20,370,29,
- 2010 Hokkaido ,6/26,450,42,
- 2011 Hokkaido,6/11,600,27,
- 2012 Hokkaido,6/16,650,48,
- 2013 Hokkaido,9/14,600,56,
- 2014 Hokkaido,6/13-14,,53,
+ 2004 (GODo2004),7/24,,,札幌市産業振興センター
+ 2005 in Hokkaido ,7/9,250,17,北海道大学　クラーク会館
+ 2006 Hokkaido ,7/14,300,24,北海道大学情報科学研究科棟
+ 2007 Hokkaido ,6/30,300,22,北海道大学 学術交流会館
+ 2008 Hokkaido ,6/28,250,21,札幌産業振興センター
+ 2009 Hokkaido ,6/20,370,29,札幌市産業振興センター
+ 2010 Hokkaido ,6/26,450,42,札幌市産業振興センター
+ 2011 Hokkaido,6/11,600,27,札幌市産業振興センター
+ 2012 Hokkaido,6/16,650,48,札幌市産業振興センター
+ 2013 Hokkaido,9/14,600,56,札幌コンベンションセンター
+ 2014 Hokkaido,6/13-14,820,53,札幌市産業振興センター
+ 2015 Hokkaido,6/12-13,,55,札幌コンベンションセンター
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -143,6 +144,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 72.,OSC2015北海道,http://www.soum.co.jp/~jun/OSC2015hokkaido.pdf
  58.,OSC2014北海道,http://www.soum.co.jp/~jun/OSC2014hokkaido.pdf
  47.,OSC2013北海道,http://www.soum.co.jp/~jun/OSC2013hokkaido.pdf
  26.,OSC2012北海道,http://www.soum.co.jp/~jun/OSC2012hokkaido.pdf
@@ -153,7 +155,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2014北海道 NetBSDブース展示の記録,
+ OSC2015北海道 NetBSDブース展示の記録,
+ OSC2014北海道 NetBSDブース展示の記録,http://togetter.com/li/680053
  OSC2013北海道 NetBSDブース展示の記録,http://togetter.com/li/563719
  OSC2012北海道 NetBSDブース展示の記録,http://togetter.com/li/318806
 
@@ -187,51 +190,48 @@ OSC北海道展示物
 #. Making install-image Presentation by つついさん
   http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html
 
-写真
-~~~~~~~~~~~~~~~~~~
-.. image::  ../Picture/2013/09/16/DSC_2589.jpg
-.. image::  ../Picture/2013/09/15/DSC_2576.jpg
-.. image::  ../Picture/2013/09/16/dsc02949.jpg
-.. image::  ../Picture/2013/09/16/dsc02955.jpg
+2014年
+^^^^^^^^^^^^^^^^
+.. image::  ../Picture/2014/06/13/DSC04977.JPG
+.. image::  ../Picture/2014/06/13/DSC04980.JPG
+.. image::  ../Picture/2014/06/13/DSC04981.JPG
+.. image::  ../Picture/2014/06/13/DSC04982.JPG
+.. image::  ../Picture/2014/06/13/DSC04983.JPG
+.. image::  ../Picture/2014/06/13/DSC04984.JPG
+.. image::  ../Picture/2014/06/13/DSC04985.JPG
+.. image::  ../Picture/2014/06/13/DSC04987.JPG
+.. image::  ../Picture/2014/06/13/DSC_0138.jpg
+.. image::  ../Picture/2014/06/13/DSC_0142.jpg
+.. image::  ../Picture/2014/06/14/DSC04993.JPG
+.. image::  ../Picture/2014/06/14/DSC_0144.jpg
+.. image::  ../Picture/2014/06/14/DSC_0145.jpg
+.. image::  ../Picture/2014/06/14/DSC_0148.jpg
+.. image::  ../Picture/2014/06/14/DSC_0151.jpg
+.. image::  ../Picture/2014/06/14/DSC_0152.jpg
+.. image::  ../Picture/2014/06/14/DSC_0153.jpg
+.. image::  ../Picture/2014/06/14/DSC_0154.jpg
+.. image::  ../Picture/2014/06/14/DSC_0155.jpg
+.. image::  ../Picture/2014/06/14/DSC_0157.jpg
+.. image::  ../Picture/2014/06/14/DSC_0158.jpg
+.. image::  ../Picture/2014/06/14/DSC_0159.jpg
+.. image::  ../Picture/2014/06/14/DSC_0161.jpg
+.. image::  ../Picture/2014/06/14/DSC_0164.jpg
+
+2013年
+^^^^^^^^^^^^^^^
 .. image::  ../Picture/2013/09/16/dsc02970.jpg
-.. image::  ../Picture/2013/09/15/dsc02918.jpg
 .. image::  ../Picture/2013/09/15/dsc02934.jpg
 .. image::  ../Picture/2013/09/15/dsc02937.jpg
 .. image::  ../Picture/2013/09/15/dsc02938.jpg
 .. image::  ../Picture/2013/09/15/dsc02939.jpg
-.. image::  ../Picture/2013/09/14/DSC_2551.jpg
-.. image::  ../Picture/2013/09/14/DSC_2559.jpg
-.. image::  ../Picture/2013/09/14/DSC_2563.jpg
-.. image::  ../Picture/2013/09/14/DSC_2565.jpg
-.. image::  ../Picture/2013/09/14/DSC_2566.jpg
-.. image::  ../Picture/2013/09/14/DSC_2567.jpg
 .. image::  ../Picture/2013/09/14/dsc02895.jpg
 .. image::  ../Picture/2013/09/14/dsc02896.jpg
 .. image::  ../Picture/2013/09/14/dsc02897.jpg
 .. image::  ../Picture/2013/09/14/dsc02899.jpg
-.. image::  ../Picture/2013/09/14/dsc02900.jpg
 .. image::  ../Picture/2013/09/14/dsc02901.jpg
-.. image::  ../Picture/2013/09/14/dsc02902.jpg
 .. image::  ../Picture/2013/09/14/dsc02908.jpg
-.. image::  ../Picture/2013/09/13/DSC_2544.jpg
-.. image::  ../Picture/2013/09/13/DSC_2527.jpg
-.. image::  ../Picture/2013/09/13/DSC_2528.jpg
-.. image::  ../Picture/2013/09/13/DSC_2531.jpg
-.. image::  ../Picture/2013/09/13/DSC_2533.jpg
-.. image::  ../Picture/2013/09/13/DSC_2534.jpg
-.. image::  ../Picture/2013/09/13/DSC_2535.jpg
-.. image::  ../Picture/2013/09/13/DSC_2536.jpg
-.. image::  ../Picture/2013/09/13/DSC_2537.jpg
-.. image::  ../Picture/2013/09/13/DSC_2538.jpg
-.. image::  ../Picture/2013/09/13/DSC_2542.jpg
-.. image::  ../Picture/2013/09/13/DSC_2543.jpg
 .. image::  ../Picture/2013/09/14/dsc02910.jpg
 .. image::  ../Picture/2013/09/13/dsc02856.jpg
-.. image::  ../Picture/2013/09/13/dsc02857.jpg
-.. image::  ../Picture/2013/09/13/dsc02858.jpg
-.. image::  ../Picture/2013/09/13/dsc02859.jpg
-.. image::  ../Picture/2013/09/13/dsc02861.jpg
-.. image::  ../Picture/2013/09/13/dsc02862.jpg
 .. image::  ../Picture/2013/09/13/dsc02864.jpg
 .. image::  ../Picture/2013/09/13/dsc02865.jpg
 .. image::  ../Picture/2013/09/13/dsc02866.jpg
@@ -245,10 +245,22 @@ OSC北海道展示物
 .. image::  ../Picture/2013/09/13/dsc02874.jpg
 .. image::  ../Picture/2013/09/13/dsc02875.jpg
 .. image::  ../Picture/2013/09/13/dsc02877.jpg
-.. image::  ../Picture/2013/09/13/dsc02879.jpg
 .. image::  ../Picture/2013/09/13/dsc02886.jpg
-.. image::  ../Picture/2013/09/13/dsc02887.jpg
-.. image::  ../Picture/2013/09/13/dsc02892.jpg
+.. image::  ../Picture/2013/09/16/DSC_2589.jpg
+.. image::  ../Picture/2013/09/15/DSC_2576.jpg
+.. image::  ../Picture/2013/09/14/DSC_2551.jpg
+.. image::  ../Picture/2013/09/14/DSC_2559.jpg
+.. image::  ../Picture/2013/09/14/DSC_2565.jpg
+.. image::  ../Picture/2013/09/14/DSC_2566.jpg
+.. image::  ../Picture/2013/09/13/DSC_2527.jpg
+.. image::  ../Picture/2013/09/13/DSC_2534.jpg
+.. image::  ../Picture/2013/09/13/DSC_2535.jpg
+.. image::  ../Picture/2013/09/13/DSC_2538.jpg
+.. image::  ../Picture/2013/09/13/DSC_2542.jpg
+.. image::  ../Picture/2013/09/13/DSC_2543.jpg
+
+2012年
+^^^^^^^^^^^^^
 .. image::  ../Picture/2012/06/16/DSC_0464.JPG
 .. image::  ../Picture/2012/06/16/DSC_0465.JPG
 .. image::  ../Picture/2012/06/16/DSC_0466.JPG
@@ -258,19 +270,10 @@ OSC北海道展示物
 .. image::  ../Picture/2012/06/16/DSC_0471.JPG
 .. image::  ../Picture/2012/06/16/DSC_0472.JPG
 .. image::  ../Picture/2012/06/16/DSC_0473.JPG
-.. image::  ../Picture/2012/06/16/DSC_0474.JPG
-.. image::  ../Picture/2012/06/15/dsc01244.jpg
-.. image::  ../Picture/2012/06/16/dsc01245.jpg
-.. image::  ../Picture/2012/06/16/dsc01249.jpg
-.. image::  ../Picture/2012/06/16/dsc01250.jpg
 .. image::  ../Picture/2012/06/15/DSC_0458.JPG
-.. image::  ../Picture/2012/06/15/DSC_0459.JPG
 .. image::  ../Picture/2012/06/15/DSC_0460.JPG
 .. image::  ../Picture/2012/06/15/DSC_0463.JPG
-.. image::  ../Picture/2012/06/15/dsc01231.jpg
-.. image::  ../Picture/2012/06/15/dsc01232.jpg
-.. image::  ../Picture/2012/06/15/dsc01233.jpg
-.. image::  ../Picture/2012/06/15/dsc01234.jpg
-.. image::  ../Picture/2012/06/15/dsc01237.jpg
-.. image::  ../Picture/2012/06/15/dsc01243.jpg
+.. image::  ../Picture/2012/06/15/dsc01244.jpg
+.. image::  ../Picture/2012/06/16/dsc01245.jpg
+.. image::  ../Picture/2012/06/16/dsc01250.jpg
 
