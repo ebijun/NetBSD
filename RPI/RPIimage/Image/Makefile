@@ -3,12 +3,12 @@
 ARCH=earmv6hf
 #ARCH=earmhf
 #ARCH=earm
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-05-23/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-06-13/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.17-evbarm-${ARCH}-201505191720Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.13-evbarm-${ARCH}-201504292340Z.iso
 
-PKGSRC=../../../pkgsrc/pkgsrc-2015-05-16.tar.gz 
+PKGSRC=../../../pkgsrc/pkgsrc-2015-05-23.tar.gz 
 
 ###
 
@@ -157,6 +157,14 @@ kernel:
 	umount ${MNT}
 	vnconfig -u ${VND}
 
+kernel-update:
+	vnconfig ${VND} ${FILE}
+	mount /dev/${VND}e ${MNT}
+	cp /usr/obj/kernel/earmv6hf/RPI/netbsd.bin ${MNT}/kernel.img
+	cp /usr/obj/kernel/earmv6hf/RPI2/netbsd.bin ${MNT}/kernel7.img
+	umount ${MNT}
+	vnconfig -u ${VND} 
+
 # update pkgsrc
 pkgsrc-update:
 	vnconfig ${VND} ${FILE}
@@ -183,3 +191,4 @@ fit:
 	vnconfig -u ${VND}
 	vnconfig -u ${VND_TMP}
 	cp ${FILE_TMP} ${FILE}
+
