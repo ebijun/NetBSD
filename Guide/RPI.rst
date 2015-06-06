@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: :1,$s/2015-05-23/2015-05-23/g
+ .. todo:: :1,$s/2015-06-13/2015-06-13/g
  .. todo:: :1,$s?2015/05/16?2015/05/16?g
  .. todo:: apache+php+mysql設定
  .. todo:: uim-pref-gtk
@@ -67,7 +67,7 @@ RaspberryPIでNetBSDを使ってみる
 
  earmv6hf 
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2015-05-23-earmv6hf/2015-05-23-netbsd-raspi-earmv6hf.img.gz.gz
+ 2015-06-13-earmv6hf/2015-06-13-netbsd-raspi-earmv6hf.img.gz.gz
  
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -75,7 +75,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2015-05-23-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2015-06-13-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
 
 Cubieboard2,BananaPI用イメージ
 -------------------------------
@@ -88,14 +88,14 @@ Cubieboard2,BananaPI用イメージ
 
  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-28-earmv7hf/2015-02-28-netbsd-allwinner.img.gz
  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-28-earmv7hf/2015-02-28-netbsd-bpi.img.gz
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-05-23-earmv7hf/2015-05-23-netbsd-raspi2-earmv7hf.img.gz
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-06-13-earmv7hf/2015-06-13-netbsd-raspi2-earmv7hf.img.gz
 	
 RaspberryPIの起動
 ------------------
 #. HDMIケーブル／USBキーボード/USBマウス/有線ネットワークをRPIにさします。
 #. 電源を入れてRPIを起動します。
 #. 少し待つと、HDMIからNetBSDの起動メッセージが表示されます。
-#. メモリカードの容量にあわせたサイズまでルートパーティションを自動調整します。
+#. メモリカードの容量にあわせたサイズまでルートパーティションを自動調整します。(現在、RPI2では自動調整プログラムの起動が失敗します)
 #. 容量調整後に再起動します。再起動した後は、起動プロセスが最後まで進み、ログインできる状態になります。
 #. 起動しない場合、まず基板上のLEDを確認してください。
 
@@ -195,7 +195,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 ::
 
  % cat /etc/pkg_install.conf
-　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-05-23
+　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-06-13
 
 * パッケージのインストール
 
@@ -222,15 +222,35 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
 /usr/pkgsrcを使ってみよう
 --------------------------
- 2015/05/16時点のpkgsrc-currentが/usr/pkgsrcに展開してあります。
+
  たとえばwordpressをコンパイル／インストールする時には、
 
 ::
 
+       # cd /usr/
+       # ls /usr/pkgsrc               ... 上書きしてしまわないか確認
+       # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
+       # tar tzvf pkgsrc.tar.gz |head ... アーカイブの内容確認
+　　　　　　　drwxrwxr-x  2 600      125            0 Jun  6 10:23 pkgsrc
+　　　　　　　drwxrwxr-x  2 600      125            0 Jun  6 10:23 pkgsrc/CVS
+　　　　　　　-rw-rw-r--  1 600      125            7 Dec 31  2005 pkgsrc/CVS/Repository
+　　　　　　　-rw-rw-r--  1 600      125          795 Jun  6 10:23 pkgsrc/CVS/Entries
+　　　　　　　-rw-rw-r--  1 600      125           36 Dec 31  2005 pkgsrc/CVS/Root
+　　　　　　　drwxrwxr-x  2 600      125            0 Jun  6 10:23 pkgsrc/archivers
+　　　　　　　　　　　:
+       # tar xzvf pkgsrc.tar.gz　　　　　　　
+       # ls /usr/pkgsrc
 	# cd /usr/pkgsrc/www/php-ja-wordpress
 	# make package-install
 
 を実行すると、wordpressに関連したソフトウェアをコンパイル／インストールします。
+
+pkgsrcの内容を更新するには、cvsを利用します。
+
+::
+
+  　　　　 # cd /usr/pkgsrc
+       # cvs update -PAd
 
 ユーザー作成
 --------------
@@ -275,7 +295,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2015-05-23-netbsd-raspi-earmv6hf.img.gz
+ # vnconfig vnd0 2015-06-13-netbsd-raspi-earmv6hf.img.gz
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
@@ -361,11 +381,6 @@ X11のインストール
  evbarm,armv5/6/7
 
 
-pkgsrcを最新にしてみる
-----------------------
-* cd /usr/pkgsrc
-* cvs update -PAd
-
 外付けUSB端子
 --------------
   NetBSDで利用できるUSBデバイスは利用できる（はずです)。電源の制約があるので、十分に電源を供給できる外付けUSBハブ経由で接続したほうが良いです。動作しているRPIにUSBデバイスを挿すと、電源の関係でRPIが再起動してしまう場合があります。その場合、電源を増強する基板を利用する方法もあります。
@@ -390,7 +405,7 @@ HDMI-VGA変換ケーブルを利用する場合、MSDOS領域にある設定フ�
 
 inode
 -------
-  inodeが足りない場合は、ファイルシステムを作り直してください。このイメージでは、inodeを増やして、ブロックサイズを小さくしたファイルシステムを使っています。
+  inodeが足りない場合は、ファイルシステムを作り直してください。
 
 	# newfs -n 500000 -b 4096 /dev/rvnd0a
 
@@ -411,20 +426,6 @@ bytebench
   http://www.yagoto-urayama.jp/~oshimaya/netbsd/Proudly/2013/
 
 
-関連バグ
---------
-
-#. dillo crashes at startup
-  http://lists.dillo.org/pipermail/dillo-dev/2014-May/010161.html
-  this image contains dillo with patch by Michael van Elst
-  http://mail-index.netbsd.org/port-arm/2014/04/22/msg002386.html
-#. port-arm/48805
-  Audio Driver issues on Pi running NetBSD (2014-05-10) image 
-  - hangs audio applications like audioplay
-#. port-arm/48817
-  pkgsrc/devel/ruby-delayer build failed: 
-  Floating point exception (core dumped)
-
 --
 
 パーティションサイズをSDカードに合わせる
@@ -432,26 +433,10 @@ bytebench
 　2GB以上のSDカードを利用している場合、パーティションサイズをSDカードに合わせることができます。この手順はカードの内容が消えてしまう可能性もあるため、重要なデータはバックアップをとるようにしてください。
   手順は、http://wiki.netbsd.org/ports/evbarm/raspberry_pi/ のGrowing the root file-systemにあります。
 
- このイメージのために、つついさんにスクリプトを作っていただきました。（まだテスト中です）
-
-#. vi /etc/rc.confでrc_configured=NOに書き換え
-#. reboot　.... シングルユーザで起動
-#.  Enter pathname of shell or RETURN for /bin/sh: でリターン
-#. cd /root/Extract/
-#. sh expand-image-fssize-rpi.sh ... しばらくかかります
-#.  リターンを押すと再起動します
-
-::
-
- Untested sh script that will expand NetBSD partition and BSD FFS partition in the RPI image prepared 
- by Jun Ebihara: http://mail-index.netbsd.org/port-arm/2013/06/19/msg001882.html
- https://gist.github.com/tsutsui/5814498
-
 シングルユーザでの起動
 """""""""""""""""""""
 #. /etc/rc.confのrc_configured=YESをNOにして起動します。
 #.  戻すときはmount / ;vi /etc/rc.conf　でNOをYESに変更してrebootします。
-
 
 参考URL
 --------

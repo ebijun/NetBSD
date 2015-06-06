@@ -1,26 +1,37 @@
-VERSION: :1,$s/2015-05-23/2015-05-23/g
-ISO:     :1,$s/201505171840Z/201505171840Z/g
+VERSION: :1,$s/2015-06-13/2015-06-13/g
+ISO:     :1,$s/201506032030Z/201506032030Z/g
 PKGSRC:  :1,$s/2015-05-16/2015-05-16/
-NetBSD:  :1,$s/7.99.16/7.99.16/g
+NetBSD:  :1,$s/7.99.18/7.99.18/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-05-23-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2015-06-13-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-05-23-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2015-06-13-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-05-23-earmv6hf/2015-05-23-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-06-13-earmv6hf/2015-06-13-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
 Update:
-- DEGRADE: RPI2 boot failed!
-  RPI2 cannot boot with this image.
-  If you use RPI2,use 2015-04-19-earmv6hf.
-   (has multi processor problem for heavy load.)
-- NetBSD-current 7.99.16 evbarm-earmv6hf 201505171840Z rpi.img from nyftp.
-- pkgsrc-current 2015-05-16 tarball from ftp.NetBSD.
+- RPI2 boot on single processor: (CPU1-3 still disabled)
+  dmesg:
+   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
+   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
+  BUG:
+   resize_disklabel failed on RPI2.
+
+- NetBSD-current 7.99.18 evbarm-earmv6hf 201506032030Z rpi.img from nyftp.
+- Set pkgsrc after resize partition: for this image size fit in 2GB.
+  # cd /usr
+  # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
+  # ls /usr/pkgsrc                ... check if exists.
+  # tar tzvf pkgsrc.tar.gz |head  ... check the archive
+  # tar xzvf pkgsrc.tar.gz        ... extract
+  # ls /usr/pkgsrc                ... check what extracted
+
+  I use /usr/pkgsrc with USB SSD disk.
 
 automatic resize partition: see /etc/rc.conf
   1. copy image to SD/MicroSD
@@ -47,7 +58,7 @@ I2C - "Raspberry Pi I2C implementation still broken?"
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-05-23/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-06-13/
 
  To install application.
  # pkg_add some_application_name
@@ -92,22 +103,24 @@ Todo:
 
 pkgsrc Todo:
 - openjdk7/8
-- lang/go
+- lang/go : go-netbsd-arm put oarm binary
+  https://twitter.com/oshimyja/status/604871730125864960
 - lang/erlang
 - www/firefox
+  firefox-37.0.2nb1.tgz can compile on earmv7hf, 38 failed.
 
 
 =====================
 
-For Open Source Conference 2015 Nagoya demonstration use, 
+For Open Source Conference 2015 Hokkaido demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2015-nagoya/
- https://www.facebook.com/events/344210502418490/
+ http://www.ospn.jp/osc2015-do/
+ https://www.facebook.com/events/804630856260992/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2015nagoya.pdf
+ http://www.soum.co.jp/~jun/OSC2015hokkaido.pdf
 
-- NetBSD 7.99.16 earmv6hf rpi.img.gz base
+- NetBSD 7.99.18 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -146,7 +159,7 @@ Features:
   - USB/video support: as -current (video needs more tests)
   - pkgsrc: 2015-05-16 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-05-23/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-06-13/
 
 Installed Packages:
 kterm
