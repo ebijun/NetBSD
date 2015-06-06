@@ -41,6 +41,9 @@ uim-xim &
 # uim-pref-gtk 
 export XMODIFIERS=@im=uim
 
+#to install: pkg_add xfce4
+#startxfce4
+
 xsetroot -bg black -grey
 #kterm -geometry 80x25+0+0 -fk k14 -fn a14 -fr r14 -km euc&
 xsetbg NetBSD.png
