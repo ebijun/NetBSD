@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -79,7 +79,9 @@
  坊主バー,大宮,Sun3/60ユーザ＆僧侶とは何か。
  BAMI gallery,丹波口,下京区二人司町21に移転
  Bazaar Cafe,今出川,上京区岡松町258 元ダムタイプの小山田さんから聞いたカフェ
-
+ 喫茶ナス,丹波口,下京区裏畑町32 11:30-18:30(17:30) カツカレー
+ エレファントファクトリー,河原町,蛸薬師通木屋町 13:00-25:00
+ テクノパン,淀,7:00-18:00
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
