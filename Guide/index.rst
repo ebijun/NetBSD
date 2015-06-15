@@ -37,8 +37,9 @@
  :maxdepth: 3
  :numbered:
 
- Place/hokkaido
+ Place/okinawa
  RPI
+ intro
 
 * :ref:`genindex`
 * :ref:`modindex`
