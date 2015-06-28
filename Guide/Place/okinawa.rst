@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -46,6 +46,7 @@ Maps:
  2012 Okinawa,9/22,120,16,沖縄コンベンションセンター
  2013 Okinawa,7/6,170,16,沖縄コンベンションセンター
  2014 Okinawa,5/24,150,21,沖縄コンベンションセンター
+ 2015 Okinawa,7/4,,16,沖縄コンベンションセンター
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,6 +58,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 73,OSC2015沖縄,http://www.soum.co.jp/~jun/OSC2015okinawa.pdf
  57,OSC2014沖縄,http://www.soum.co.jp/~jun/OSC2014okinawa.pdf
  43,OSC2013沖縄,http://www.soum.co.jp/~jun/OSC2013okinawa.pdf
  32,OSC2012沖縄,http://www.soum.co.jp/~jun/OSC2012okinawa.pdf
@@ -68,6 +70,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2015沖縄 NetBSDブース展示の記録,
  OSC2014沖縄 NetBSDブース展示の記録,http://togetter.com/li/671580
  OSC2013沖縄 NetBSDブース展示の記録,http://togetter.com/li/529669
  OSC2012沖縄 NetBSDブース展示の記録,http://togetter.com/li/377549
@@ -110,30 +113,36 @@ togetterまとめ
  エンジェルシェア,おもろまち,角打ちできる酒屋。貸しスペースあり。
  まんが倉庫,浦添他,浦添がでかい
  PCリサイクル倉庫,豊見城,pcmix.jp 11:00-19:00 日祝日休
- 
 
-写真
-~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image:: ../Picture/2011/09/10/P1000825.JPG
-.. image:: ../Picture/2011/09/10/P1000826.JPG
-.. image:: ../Picture/2011/09/10/P1000827.JPG
-.. image:: ../Picture/2011/09/10/P1000828.JPG
-.. image:: ../Picture/2011/09/10/P1000829.JPG
-.. image:: ../Picture/2011/09/10/P1000830.JPG
-.. image:: ../Picture/2012/09/22/DSC_0845.JPG
-.. image:: ../Picture/2012/09/22/DSC_0851.JPG
-.. image:: ../Picture/2012/09/22/DSC_0852.JPG
-.. image:: ../Picture/2012/09/22/DSC_0853.JPG
-.. image:: ../Picture/2012/09/22/DSC_0854.JPG
-.. image:: ../Picture/2012/09/22/DSC_0855.JPG
-.. image:: ../Picture/2012/09/22/DSC_0856.JPG
-.. image:: ../Picture/2012/09/22/DSC_0859.JPG
-.. image:: ../Picture/2012/09/22/DSC_0861.JPG
-.. image:: ../Picture/2012/09/22/DSC_0862.JPG
-.. image:: ../Picture/2012/09/22/dsc01721.jpg
-.. image:: ../Picture/2012/09/22/dsc01722.jpg
-.. image:: ../Picture/2012/09/22/dsc01724.jpg
-.. image:: ../Picture/2012/09/22/dsc01725.jpg
+2014年
+---------------
+.. image::  ../Picture/2014/05/23/DSC04807.JPG
+.. image::  ../Picture/2014/05/23/DSC04826.JPG
+.. image::  ../Picture/2014/05/23/DSC_0083.jpg
+.. image::  ../Picture/2014/05/23/DSC_0085.jpg
+.. image::  ../Picture/2014/05/24/DSC04843.JPG
+.. image::  ../Picture/2014/05/24/DSC04844.JPG
+.. image::  ../Picture/2014/05/24/DSC04851.JPG
+.. image::  ../Picture/2014/05/24/DSC04852.JPG
+.. image::  ../Picture/2014/05/24/DSC04853.JPG
+.. image::  ../Picture/2014/05/24/DSC04854.JPG
+.. image::  ../Picture/2014/05/24/DSC04859.JPG
+.. image::  ../Picture/2014/05/24/DSC04862.JPG
+.. image::  ../Picture/2014/05/24/DSC04863.JPG
+.. image::  ../Picture/2014/05/24/DSC_0086.jpg
+.. image::  ../Picture/2014/05/24/DSC_0088.jpg
+.. image::  ../Picture/2014/05/24/DSC_0091.jpg
+.. image::  ../Picture/2014/05/24/DSC_0092.jpg
+.. image::  ../Picture/2014/05/24/DSC_0094.jpg
+.. image::  ../Picture/2014/05/24/DSC_0096.jpg
+.. image::  ../Picture/2014/05/24/DSC_0097.jpg
+.. image::  ../Picture/2014/05/24/DSC_0099.jpg
+.. image::  ../Picture/2014/05/24/DSC_0101.jpg
+.. image::  ../Picture/2014/05/24/DSC_0102.jpg
+.. image::  ../Picture/2014/05/24/DSC_0103.jpg
+
+2013年
+-------------
 .. image:: ../Picture/2013/07/06/DSC_2166.jpg
 .. image:: ../Picture/2013/07/06/DSC_2169.jpg
 .. image:: ../Picture/2013/07/06/DSC_2170.jpg
@@ -143,9 +152,27 @@ togetterまとめ
 .. image:: ../Picture/2013/07/06/DSC_2175.jpg
 .. image:: ../Picture/2013/07/06/DSC_2176.jpg
 .. image:: ../Picture/2013/07/06/DSC_2177.jpg
-.. image:: ../Picture/2013/07/06/DSC_2179.jpg
 .. image:: ../Picture/2013/07/06/dsc02733.jpg
 .. image:: ../Picture/2013/07/06/dsc02735.jpg
-.. image:: ../Picture/2013/07/06/dsc02736.jpg
 .. image:: ../Picture/2013/07/06/dsc02738.jpg
+
+2012年
+-----------
+.. image:: ../Picture/2012/09/22/DSC_0851.JPG
+.. image:: ../Picture/2012/09/22/DSC_0852.JPG
+.. image:: ../Picture/2012/09/22/DSC_0853.JPG
+.. image:: ../Picture/2012/09/22/DSC_0855.JPG
+.. image:: ../Picture/2012/09/22/DSC_0859.JPG
+.. image:: ../Picture/2012/09/22/DSC_0861.JPG
+.. image:: ../Picture/2012/09/22/dsc01721.jpg
+.. image:: ../Picture/2012/09/22/dsc01722.jpg
+
+2011年
+-------------
+.. image:: ../Picture/2011/09/10/P1000825.JPG
+.. image:: ../Picture/2011/09/10/P1000826.JPG
+.. image:: ../Picture/2011/09/10/P1000827.JPG
+.. image:: ../Picture/2011/09/10/P1000828.JPG
+.. image:: ../Picture/2011/09/10/P1000829.JPG
+.. image:: ../Picture/2011/09/10/P1000830.JPG
 

@@ -39,7 +39,7 @@
 
  Place/okinawa
  RPI
- intro
+ Place/intro
 
 * :ref:`genindex`
 * :ref:`modindex`
