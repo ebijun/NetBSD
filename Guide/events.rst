@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -30,7 +30,7 @@ Japan NetBSD Users’ Group
 * 回線提供：IIJ
 *  http://www.jp.NetBSD.org/
 * 年一度定期総会・BoFを実施
-* 2014/7/12
+* 2015/7/11
 * 東京 根津　東大武田先端知ビル
 * ハッシュタグ: #JNUG
 

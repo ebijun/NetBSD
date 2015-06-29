@@ -37,9 +37,9 @@
  :maxdepth: 3
  :numbered:
 
- Place/okinawa
- RPI
- Place/intro
+ events
+ Place/2014
+ allevents
 
 * :ref:`genindex`
 * :ref:`modindex`
