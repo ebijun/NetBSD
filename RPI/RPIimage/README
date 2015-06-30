@@ -1,15 +1,15 @@
-VERSION: :1,$s/2015-06-13/2015-06-13/g
-ISO:     :1,$s/201506032030Z/201506032030Z/g
-PKGSRC:  :1,$s/2015-05-16/2015-05-16/
-NetBSD:  :1,$s/7.99.18/7.99.18/g
+VERSION: :1,$s/2015-07-04/2015-07-04/g
+ISO:     :1,$s/201506281320Z/201506281320Z/g
+PKGSRC:  :1,$s/2015-06-27/2015-06-27/
+NetBSD:  :1,$s/7.99.19/7.99.19/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-06-13-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2015-07-04-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-06-13-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2015-07-04-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-06-13-earmv6hf/2015-06-13-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-07-04-earmv6hf/2015-07-04-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -22,7 +22,7 @@ Update:
   BUG:
    resize_disklabel failed on RPI2.
 
-- NetBSD-current 7.99.18 evbarm-earmv6hf 201506032030Z rpi.img from nyftp.
+- NetBSD-current 7.99.19 evbarm-earmv6hf 201506281320Z rpi.img from nyftp.
 - Set pkgsrc after resize partition: for this image size fit in 2GB.
   # cd /usr
   # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
@@ -58,7 +58,7 @@ I2C - "Raspberry Pi I2C implementation still broken?"
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-06-13/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-07-04/
 
  To install application.
  # pkg_add some_application_name
@@ -121,7 +121,7 @@ I've updated raspberry-pi image.
  https://www.facebook.com/NetBSD.jp 
  http://www.soum.co.jp/~jun/OSC2015hokkaido.pdf
 
-- NetBSD 7.99.18 earmv6hf rpi.img.gz base
+- NetBSD 7.99.19 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -159,7 +159,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-06-13/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-07-04/
 
 Installed Packages:
 kterm
