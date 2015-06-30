@@ -1,0 +1,74 @@
+VERSION: :1,$s/2015-06-13/2015-06-13/g
+ISO:     :1,$s/201506032030Z/201506032030Z/g
+PKGSRC:  :1,$s/2015-05-16/2015-05-16/
+NetBSD:  :1,$s/7.99.18/7.99.18/g
+
+To: port-armNetBSD.org@localhost
+Subject: NetBSD7.0RC1: 2015-06-30-netbsd7-raspi-earmv6hf.img 
+From: Jun Ebihara <jun@soum.co.jp>
+
+I've updated 2015-06-30-netbsd7-raspi-earmv6hf.img.gz for RPI.
+
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-7.0_RC1/2015-06-30-netbsd7-raspi-earmv6hf.img.gz
+
+Overview:
+  http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
+
+- NetBSD-7.0_RC1 evbarm-earmv6hf rpi.img from nyftp.
+- pkgsrc-current: 2015-06-20 pre-installed on /usr/pkgsrc.
+
+Pre-compiled packages:
+- Pre-compiled packages path setting: see /etc/pkg_install.conf 
+PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_2015Q1/All
+
+ To install application.
+ # pkg_add some_application_name
+
+ If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
+ /etc/mk.conf.
+
+Growing the root file-system by hand:
+  http://wiki.netbsd.org/ports/evbarm/raspberry_pi/
+
+=====================
+
+For FreeBSD Workshop Vol.8 demonstration use, 
+I've updated raspberry-pi image.
+
+ http://freebsd-workshop.connpass.com/event/15334/
+ https://www.facebook.com/NetBSD.jp 
+ https://www.facebook.com/events/420759744773218/
+
+- NetBSD 7.0RC1 earmv6hf rpi.img.gz base
+- Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
+- login root (no passwd)
+
+Features:
+  - fit size for 2GB SD Card
+  - with X11
+
+Installed Packages:
+  none
+
+To control HDMI output,add/delete "console=fb" on cmdline.txt.
+If delete console=fb definition,you can get serial console instead.
+ rpi$ more /boot/cmdline.txt
+ root=ld0a console=fb
+
+Keyboard layout checkpoint:
+/etc/wscons.conf
+ #encoding sv
+ #encoding us.swapctrlcaps
+ encoding jp
+
+/root/.xinitrc
+ setxkbmap -model jp106 jp
+
+Build sample script:
+ https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image
+
+Guide:
+ https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
+
+--
+Jun Ebihara
