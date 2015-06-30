@@ -110,7 +110,7 @@ netbsd@re.soum.co.jp
 2015/6/30時点のtogetterアクセス数です。
 
 .. csv-table::
- :widths: 90 30
+ :widths: 90 90 30
 
  URL,イベント名,Togetter View数
  http://togetter.com/li/834148, オープンソースカンファレンス2015 Hokkaido　NetBSDブース展示の記録,666
