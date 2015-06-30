@@ -74,7 +74,7 @@ FaceBook
 """"""""""
 
 http://www.facebook.com/NetBSD.jp/
-  269いいね: イベント欄: www.jp.NetBSD.orgと連携
+  309いいね: イベント欄: www.jp.NetBSD.orgと連携
 
 netbsd@re.soum.co.jp
 """"""""""""""""""""""
@@ -83,9 +83,11 @@ netbsd@re.soum.co.jp
   netbsd-request@re.soum.co.jp にメールください
 アーカイブ：
   http://www.re.soum.co.jp/~fukaumi/ 
-1994/11/25-:
-  416人
+1994/11/25-: 10422通/7523日(2015/6/30まで:20年218日)
+  メールアドレス登録数　872
+  有効メールアドレス    402 
 
+  
 国内BSDユーザグループ
 ----------------------
 .. 
@@ -105,28 +107,24 @@ netbsd@re.soum.co.jp
 オープンソースカンファレンスこの一年
 ----------------------------------
 
+2015/6/30時点のtogetterアクセス数です。
+
 .. csv-table::
  :widths: 90 30
 
- イベント名,Togetter View数
- オープンソースカンファレンス2014 Nagoya&NBUG7月例会 の記録,834 views
- オープンソースカンファレンス2014北海道　NetBSDブース展示の記録,1503 views
- LibreOffice mini Conference 2014 Tokyo/Japan の記録 - pkgsrc..,570 views
- オープンソースカンファレンス2014沖縄　NetBSDブース展示の記録,320 views
- オープンソースアンカンファレンス2014香川　NetBSDブース展示の記録,897 views
- オープンソースカンファレンス2014浜名湖　NetBSDブース展示の記録,1453 views
- AsiaBSDCon 2014の記録,2046 views
- オープンソースカンファレンス2014東京春　NetBSDブース展示の記録,848 views
- オープンソースカンファレンス2013大分　NetBSDブース展示の記録,658 views
- 関東LibreOfficeオフラインミーティング(#10) の記録,638 views
- オープンソースカンファレンス2013福岡　NetBSDブース展示の記録,673 views
- 関西オープンソース2013 NetBSDブース展示の記録,1193 views
- オープンソースカンファレンス2013東京秋　NetBSDブース展示の記録,1087 views
- オープンソースカンファレンス2013広島　NetBSDブース展示の記録,1618 views
- オープンソースカンファレンス2013北海道　NetBSDブース展示の記録,1376 views
- オープンソースカンファレンス2013島根 NetBSDブース展示の記録,1423 views
- オープンソースカンファレンス2013関西＠京都　NetBSDブース展示記録,2643 views
- 日本NetBSDユーザーグループ第十五回定期総会 および NetBSD BoF 2013,1094 views
-
-
+ URL,イベント名,Togetter View数
+ http://togetter.com/li/834148, オープンソースカンファレンス2015 Hokkaido　NetBSDブース展示の記録,666
+ http://togetter.com/li/824817, オープンソースカンファレンス2015 Nagoya&NBUG5月例会 の記録,1388
+ http://togetter.com/li/798599, NetBSD博物館,2393
+ http://togetter.com/li/793444, AsiaBSDCon 2015の記録,2998
+ http://togetter.com/li/788681, オープンソースカンファレンス2015 Tokyo/Spring　NetBSDブース展示の記録,1259
+ http://togetter.com/li/781556, オープンソースカンファレンス2015 Hamanako　NetBSDブース展示の記録,665
+ http://togetter.com/li/779725, オープンソースカンファレンス2015 Oita　NetBSDブース展示の記録,682
+ http://togetter.com/li/748237, オープンソースカンファレンス2014 Fukuoka　NetBSDブース展示の記録,1851
+ http://togetter.com/li/742243, 関西オープンソース2014 NetBSDブース展示の記録,1998
+ http://togetter.com/li/733588, オープンソースカンファレンス2014 Tokyo/Fall　NetBSDブース展示の記録,1966
+ http://togetter.com/li/721414, オープンソースカンファレンス2014 Hiroshima　NetBSDブース展示の記録,2216
+ http://togetter.com/li/709947, オープンソースカンファレンス2014 Shimane　NetBSDブース展示の記録,1753
+ http://togetter.com/li/700617, オープンソースカンファレンス2014 Kansai＠Kyoto　NetBSDブース展示の記録,3257
+ http://togetter.com/li/691775, 日本NetBSDユーザーグループ第十六回定期総会 および NetBSD BoF 2014,2476
 
