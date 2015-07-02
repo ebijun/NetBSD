@@ -74,8 +74,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.18-netbsd6-evbarm-earmv6hf.tgz for evaluation.
-  3. pkg_add musica-0.3.18-netbsd6-evbarm-earmv6hf.tgz
+  2. Download musica-0.3.19-netbsd6-evbarm-earmv6hf.tgz for evaluation.
+  3. pkg_add musica-0.3.19-netbsd6-evbarm-earmv6hf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
@@ -113,13 +113,13 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2015 Hokkaido demonstration use, 
+For Open Source Conference 2015 Okinawa demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2015-do/
- https://www.facebook.com/events/804630856260992/
+ http://www.ospn.jp/osc2015-okinawa/
+ https://www.facebook.com/events/884051744940071/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2015hokkaido.pdf
+ http://www.soum.co.jp/~jun/OSC2015okinawa.pdf
 
 - NetBSD 7.99.19 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
