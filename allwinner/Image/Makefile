@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-allwinner.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.13-evbarm-earmv7hf-201504292340Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.19-evbarm-earmv7hf-201507060730Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015-05-23.tar.gz
 
@@ -44,7 +44,7 @@ VND_CDROM=vnd1
 FILE_TMP=a.img
 VND_TMP=vnd2
 
-all: file cdmount beagleboard extract cdunmount uboot-copy fit
+all: file cdmount beagleboard extract cdunmount uboot-copy
 
 # extract sets to image file.
 extract:
@@ -53,8 +53,8 @@ extract:
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
-	echo extract pkgsrc.
-	tar xzpf ${PKGSRC} -C ${MNT}/usr
+#	echo extract pkgsrc.
+#	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mount_msdos /dev/${VND}e ${MNT}/boot
 	gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
 #	cp ${NETWALKER}    ${MNT}/boot

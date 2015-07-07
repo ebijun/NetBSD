@@ -2,10 +2,10 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-06-13/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-08-08/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.18-evbarm-${ARCH}-201505282020Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.19-evbarm-${ARCH}-201507060730Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2015-05-30.tar.gz 
 
@@ -41,8 +41,8 @@ extract:
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
-	echo extract pkgsrc.
-	tar xzpf ${PKGSRC} -C ${MNT}/usr
+#	echo extract pkgsrc.
+#	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	echo extract netwalker kernel.
 	mount_msdos /dev/${VND}e ${MNT}/boot
 	umount ${MNT}/boot
