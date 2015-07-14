@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-allwinner.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.19-evbarm-earmv7hf-201507060730Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.20-evbarm-earmv7hf-201507131850Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015-05-23.tar.gz
 
@@ -105,6 +105,7 @@ pkg:
 # copy default setupfile
 release:
 	vnconfig ${VND} ${FILE}
+	sleep 5
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
@@ -118,6 +119,7 @@ release:
 # clean logfiles
 logclean:
 	vnconfig ${VND} ${FILE}
+	sleep 5
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	rm -f ${MNT}/var/run/dmesg.boot
