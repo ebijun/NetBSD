@@ -37,9 +37,9 @@
  :maxdepth: 3
  :numbered:
 
- events
- Place/2014
- allevents
+ Place/kyoto
+ Luna
+ RPI
 
 * :ref:`genindex`
 * :ref:`modindex`

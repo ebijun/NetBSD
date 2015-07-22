@@ -43,7 +43,8 @@
  2011 Kansai/Kyoto,7/15-7/16,1100,56,京都リサーチパーク
  2012 Kansai/Kyoto,8/3-8/4,1200,67,京都リサーチパーク
  2013 Kansai＠Kyoto,8/2-8/3,1300,54,京都リサーチパーク
- 2014 Kansai＠Kyoto,8/1-2,,51,京都リサーチパーク
+ 2014 Kansai＠Kyoto,8/1-2,1200,51,京都リサーチパーク
+ 2015 Kansai＠Kyoto,8/7-8,,59,京都リサーチパーク
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -53,11 +54,14 @@
 
  店名,エリア,コメント
  だいこんのはな,壬生車庫,俺のビフカツがこんなにかわいい
- ととや,丹波口,寿司&うなぎ 10:00-15:00
- バンガロー,四条堀川東,10タップ 10oz 600円 15oz 900円
- CRAFT MAN,烏丸綾小路下,20タップ K家系列 2:00くらいまで
- 和知,烏丸,京都最強の地ビール居酒屋
  幸福堂,壬生,アイスモナカ&きんつばをおみやげに新選組
+ ととや,丹波口,寿司&うなぎ 10:00-15:00
+ 喫茶ナス,丹波口,下京区裏畑町32 11:30-18:30(17:30) カツカレー
+ バンガロー,四条堀川東,10タップ 10oz 600円 15oz 900円
+ てぃんがーら,一乗寺,一乗寺ブルワリー4種類
+ のらくろ,出町柳,トルコライス＝チキンライス+オムレツ+ビフカツ
+ 和知,烏丸,京都最強の地ビール居酒屋
+ CRAFT MAN,烏丸綾小路下,20タップ K家系列 2:00くらいまで
  アセルボク,高辻烏丸西,喫茶。深夜2時まで。
  珈琲陣,大宮松原,ハムモーニング。マッチとコースター。
  キートス,壬生坊城,フィンランドパン
@@ -69,20 +73,18 @@
  奥満笑屋,丸太町,京都町家麦酒。キンシ正宗堀野記念館併設　
  efish,五条大橋,アップルのデザイナーだった西堀晋さんのカフェ
  ハイファイ堂,京都市役所,オーディオ機器中心
- てぃんがーら,一乗寺,一乗寺ブルワリー4種類
  ガケ書房,北白川,車もめりこむ本屋
  一心,白川今出川,Streams-JP御用達。一心鍋で雑炊まで。
  田毎,三条,京都のたぬきうどんとは何か。みうらじゅんさんのサイン。
- のらくろ,出町柳,トルコライス＝チキンライス+オムレツ+ビフカツ
  カフェ・ラ・シエスタ,木屋町,レトロゲーム カフェ。2014/7/27はPublic Address。
  ジャンボ,等持院,巨大焼きそば＆直径30cmのお好み焼き。電話注文できる。
  坊主バー,大宮,Sun3/60ユーザ＆僧侶とは何か。
  BAMI gallery,丹波口,下京区二人司町21に移転
  Bazaar Cafe,今出川,上京区岡松町258 元ダムタイプの小山田さんから聞いたカフェ
- 喫茶ナス,丹波口,下京区裏畑町32 11:30-18:30(17:30) カツカレー
  エレファントファクトリー,河原町,蛸薬師通木屋町 13:00-25:00
  テクノパン,淀,7:00-18:00
-
+ 京アニショップ,木幡,1658丹波口-17:07奈良線-1728木幡
+ 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -93,6 +95,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 75,OSC2015京都,http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
+ 61,OSC2014京都,http://www.soum.co.jp/~jun/OSC2014kyoto.pdf
  45,OSC2013京都,http://www.soum.co.jp/~jun/OSC2013kyoto.pdf
  29,OSC2012京都,http://www.soum.co.jp/~jun/OSC2012kyoto.pdf
  12,OSC2011京都,http://www.soum.co.jp/~jun/OSC2011kyoto.pdf
@@ -104,6 +108,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2015京都 NetBSDブース展示の記録,
  OSC2014京都 NetBSDブース展示の記録,http://togetter.com/li/700617
  OSC2013京都 NetBSDブース展示の記録,http://togetter.com/li/542885
  OSC2012京都 NetBSDブース展示の記録,http://togetter.com/li/350035
@@ -148,6 +153,32 @@ OSC京都展示物
 #. OneSeg TV recording with hpcmips,
 #. bc benchmark time x electricity consumption 
 
+2014年
+~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture/2014/08/01/DSC05235.JPG
+.. image::  ../Picture/2014/08/01/DSC05247.JPG
+.. image::  ../Picture/2014/08/01/DSC05250.JPG
+.. image::  ../Picture/2014/08/01/DSC_0271.jpg
+.. image::  ../Picture/2014/08/01/DSC_0280.jpg
+.. image::  ../Picture/2014/08/01/DSC_0281.jpg
+.. image::  ../Picture/2014/08/01/DSC_0282.jpg
+.. image::  ../Picture/2014/08/01/DSC_0283.jpg
+.. image::  ../Picture/2014/08/01/DSC_0284.jpg
+.. image::  ../Picture/2014/08/01/DSC_0294.jpg
+.. image::  ../Picture/2014/08/01/DSC_0296.jpg
+.. image::  ../Picture/2014/08/02/DSC05265.JPG
+.. image::  ../Picture/2014/08/02/DSC05266.JPG
+.. image::  ../Picture/2014/08/02/DSC05267.JPG
+.. image::  ../Picture/2014/08/02/DSC05270.JPG
+.. image::  ../Picture/2014/08/02/DSC05274.JPG
+.. image::  ../Picture/2014/08/02/DSC05279.JPG
+.. image::  ../Picture/2014/08/02/DSC05281.JPG
+.. image::  ../Picture/2014/08/02/DSC05282.JPG
+.. image::  ../Picture/2014/08/02/DSC05283.JPG
+.. image::  ../Picture/2014/08/02/DSC05284.JPG
+.. image::  ../Picture/2014/08/02/DSC05289.JPG
+.. image::  ../Picture/2014/08/02/DSC_0301.jpg
+.. image::  ../Picture/2014/08/02/DSC_0310.jpg
 
 2013年
 ~~~~~~~~~~~~~~~~~~
