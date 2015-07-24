@@ -194,8 +194,6 @@ OSC京都展示物
 .. image::  ../Picture/2013/08/02/DSC_2296.jpg
 .. image::  ../Picture/2013/08/02/DSC_2302.jpg
 .. image::  ../Picture/2013/08/02/DSC_2305.jpg
-.. image::  ../Picture/2013/08/02/dsc02797.jpg
-.. image::  ../Picture/2013/08/02/dsc02801.jpg
 .. image::  ../Picture/2013/08/03/DSC_2320.jpg
 .. image::  ../Picture/2013/08/03/DSC_2329.jpg
 .. image::  ../Picture/2013/08/03/DSC_2331.jpg
@@ -207,10 +205,8 @@ OSC京都展示物
 .. image::  ../Picture/2012/08/03/DSC_0660.JPG
 .. image::  ../Picture/2012/08/03/DSC_0665.JPG
 .. image::  ../Picture/2012/08/03/DSC_0667.JPG
-.. image::  ../Picture/2012/08/03/DSC_0669.JPG
 .. image::  ../Picture/2012/08/03/DSC_0672.JPG
 .. image::  ../Picture/2012/08/04/DSC_0684.JPG
-.. image::  ../Picture/2012/08/04/DSC_0688.JPG
 .. image::  ../Picture/2012/08/04/DSC_0689.JPG
 
 2011年
@@ -225,4 +221,3 @@ OSC京都展示物
 .. image::  ../Picture/2011/07/16/P1000581.JPG
 .. image::  ../Picture/2011/07/16/P1000583.JPG
 .. image::  ../Picture/2011/07/16/P1000584.JPG
-.. image::  ../Picture/2011/07/16/P1000585.JPG
