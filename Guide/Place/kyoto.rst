@@ -158,7 +158,6 @@ OSC京都展示物
 
 2014年
 ~~~~~~~~~~~~~~~~~~
-.. image::  ../Picture/2014/08/01/DSC05235.JPG
 .. image::  ../Picture/2014/08/01/DSC05247.JPG
 .. image::  ../Picture/2014/08/01/DSC05250.JPG
 .. image::  ../Picture/2014/08/01/DSC_0271.jpg
@@ -170,18 +169,13 @@ OSC京都展示物
 .. image::  ../Picture/2014/08/01/DSC_0294.jpg
 .. image::  ../Picture/2014/08/01/DSC_0296.jpg
 .. image::  ../Picture/2014/08/02/DSC05265.JPG
-.. image::  ../Picture/2014/08/02/DSC05266.JPG
 .. image::  ../Picture/2014/08/02/DSC05267.JPG
 .. image::  ../Picture/2014/08/02/DSC05270.JPG
 .. image::  ../Picture/2014/08/02/DSC05274.JPG
 .. image::  ../Picture/2014/08/02/DSC05279.JPG
 .. image::  ../Picture/2014/08/02/DSC05281.JPG
-.. image::  ../Picture/2014/08/02/DSC05282.JPG
-.. image::  ../Picture/2014/08/02/DSC05283.JPG
-.. image::  ../Picture/2014/08/02/DSC05284.JPG
 .. image::  ../Picture/2014/08/02/DSC05289.JPG
 .. image::  ../Picture/2014/08/02/DSC_0301.jpg
-.. image::  ../Picture/2014/08/02/DSC_0310.jpg
 
 2013年
 ~~~~~~~~~~~~~~~~~~
