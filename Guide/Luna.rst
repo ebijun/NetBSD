@@ -513,12 +513,17 @@ LUNA年表　- 月の刃
  2014/07/21,筒,luna68k 4/8bpp framebuffers as a monochrome server [132]_
  2014/08/01,筒,lunaII+mikutterd今年はカラーだ展示 [134]_
  2014/08/13,筒,LUNA framebuffer mod for LCDs without Sync on Green support [142]_
- 2014/11/07-08,筒,関西オープンソース2014 NetBSDブース展示の記録 [142]_
+ 2014/11/07-08,筒,関西オープンソース2014 NetBSDブース展示の記録 [143]_
  2014/11/29,青,yaft × LUNA [140]_
  2014/12/20,青,86音源ボード on LUNA [138]_
  2014/12/29,青,86音源ボードコードコミット [139]_
- 2015/02/21,青,LUNA-88K2はPCカードの夢を見るか？　[141]_
-
+ 2015/02/21,青,LUNA-88K2はPCカードの夢を見るか？ [141]_
+ 2015/03/21,青,LUNA-88K2はPCカードの夢を見るか？ <補遺> [145]_
+ 2015/05/01,青,OpenBSD 5.7リリース  [148]_
+ 2015/05/22,青,C-bus拡張ボード on LUNA-88K2 [146]_
+ 2015/07/06,,「いけない！ルナ先生」コラボ読切で復活  [147]_
+ 
+ 
 最近のLUNA
 ----------------
 
@@ -727,7 +732,10 @@ yaft X LUNA
 .. [142] LUNA framebuffer mod for LCDs without Sync on Green support http://mail-index.netbsd.org/port-luna68k/2014/08/13/msg000043.html
 .. [143] 関西オープンソース2014 NetBSDブース展示の記録 http://togetter.com/li/742243
 .. [144] Lunaトレーナー http://movapic.com/ebijun/pic/5232493
-
+.. [145] LUNA-88K2はPCカードの夢を見るか <補遺> http://www.slideshare.net/ao_kenji/nbug201503
+.. [146] C-bus拡張ボード on LUNA-88K2 http://www.slideshare.net/ao_kenji/osc2015-nagoya/
+.. [147] 伝説のHコメディ「Oh！透明人間」×「いけない！ルナ先生」コラボ読切で復活 http://natalie.mu/comic/news/152961
+.. [148] INSTALLATION NOTES for OpenBSD 5.7 http://ftp.openbsd.org/pub/OpenBSD/5.7/luna88k/INSTALL.luna88k
 このページ
 ~~~~~~~~~~~
 * https://github.com/ebijun/NetBSD/blob/master/Guide/Luna.rst にあります。
