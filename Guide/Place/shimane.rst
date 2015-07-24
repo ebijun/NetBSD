@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -44,7 +44,8 @@
  2011,11/12,130,12,松江テルサ
  2012,9/1,120,15,松江テルサ
  2013,8/24,120,19,松江テルサ
- 2014,8/24,,11,松江テルサ
+ 2014,8/24,120,15,松江テルサ
+ 2015,8/22, , ,松江テルサ
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,6 +57,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 76,OSC2013島根,http://www.soum.co.jp/~jun/OSC2015shimane.pdf
+ 62,OSC2013島根,http://www.soum.co.jp/~jun/OSC2014shimane.pdf
  46,OSC2013島根,http://www.soum.co.jp/~jun/OSC2013shimane.pdf
  30,OSC2012島根,http://www.soum.co.jp/~jun/OSC2012shimane.pdf
  18,OSC2011島根,http://www.soum.co.jp/~jun/OSC2011shimane.pdf
@@ -67,7 +70,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2014島根 NetBSDブース展示の記録,
+ OSC2015島根 NetBSDブース展示の記録,
+ OSC2014島根 NetBSDブース展示の記録,http://togetter.com/li/709947
  OSC2013島根 NetBSDブース展示の記録,http://togetter.com/li/553529
  OSC2012島根 NetBSDブース展示の記録,http://togetter.com/li/365753
 
@@ -138,6 +142,31 @@ OSC松江展示物
 #. SONY NEWS
 #. OMRON LUNAII
 #. Sun Java Station
+
+2014年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2014/08/23/DSC05428.JPG
+.. image::  ../Picture/2014/08/23/DSC05432.JPG
+.. image::  ../Picture/2014/08/23/DSC05433.JPG
+.. image::  ../Picture/2014/08/23/DSC05434.JPG
+.. image::  ../Picture/2014/08/23/DSC05435.JPG
+.. image::  ../Picture/2014/08/23/DSC05436.JPG
+.. image::  ../Picture/2014/08/23/DSC05437.JPG
+.. image::  ../Picture/2014/08/23/DSC05438.JPG
+.. image::  ../Picture/2014/08/23/DSC05439.JPG
+.. image::  ../Picture/2014/08/23/DSC_0364.jpg
+.. image::  ../Picture/2014/08/23/DSC_0365.jpg
+.. image::  ../Picture/2014/08/23/DSC_0369.jpg
+.. image::  ../Picture/2014/08/23/DSC_0373.jpg
+.. image::  ../Picture/2014/08/23/DSC_0374.jpg
+.. image::  ../Picture/2014/08/23/DSC_0375.jpg
+.. image::  ../Picture/2014/08/23/DSC_0376.jpg
+.. image::  ../Picture/2014/08/23/DSC_0378.jpg
+.. image::  ../Picture/2014/08/23/DSC_0384.jpg
+.. image::  ../Picture/2014/08/23/DSC_0386.jpg
+.. image::  ../Picture/2014/08/23/DSC_0387.jpg
+.. image::  ../Picture/2014/08/23/DSC_0388.jpg
 
 2013年
 ~~~~~~~~~~~~~~~~~~
