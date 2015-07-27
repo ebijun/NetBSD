@@ -737,7 +737,6 @@ yaft X LUNA
 .. [146] C-bus拡張ボード on LUNA-88K2 http://www.slideshare.net/ao_kenji/osc2015-nagoya/
 .. [147] 伝説のHコメディ「Oh！透明人間」×「いけない！ルナ先生」コラボ読切で復活 http://natalie.mu/comic/news/152961
 .. [148] INSTALLATION NOTES for OpenBSD 5.7 http://ftp.openbsd.org/pub/OpenBSD/5.7/luna88k/INSTALL.luna88k
-
 	 
 ~~~~~~~~~~~
 * https://github.com/ebijun/NetBSD/blob/master/Guide/Luna.rst にあります。
