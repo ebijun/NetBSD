@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.19 (NETWALKER.201507060730Z) #0: Mon Jul  6 09:23:59 UTC 2015
-	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201507060730Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/NETWALKER
+NetBSD 7.99.20 (NETWALKER_SD) #2: Thu Jul 30 20:31:05 JST 2015
+	jun@amiasp1.soum.co.jp:/usr/obj/kernel/earmv7hf/NETWALKER_SD
 total memory = 512 MB
 avail memory = 501 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -13,6 +13,8 @@ timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0 core 0: 800 MHz Cortex-A8 r2p1 (Cortex V7A core)
 cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu0: sctlr: 0x10c5187d
+cpu0: actlr: 0x22
 cpu0: revidr: 0x412fc081
 cpu0: isar: [0]=0x101111 [1]=0x13112111 [2]=0x21232031 [3]=0x11112131, [4]=0x11142, [5]=0
 cpu0: mmfr: [0]=0x1100003 [1]=0x20000000 [2]=0x1202000 [3]=0x211
@@ -36,7 +38,7 @@ imxgpio2 at axi0 addr 0x73f8c000 intr 54 irqbase 192: interrupts 192..223
 imxgpio3 at axi0 addr 0x73f90000 intr 56 irqbase 224: interrupts 224..255
 imxuart0 at axi0 addr 0x73fbc000 intr 31
 sdhc0 at axi0 addr 0x70004000 intr 1: SD/MMC host controller
-sdhc0: SDHC 2.0, rev 18, DMA, 54000 kHz, 1.8V 3.0V 3.3V, 4096 byte blocks
+sdhc0: SDHC 2.0, rev 18, SDMA, 54000 kHz, 1.8V 3.0V 3.3V, 4096 byte blocks
 sdmmc0 at sdhc0 slot 0
 imxclock0 at axi0 addr 0x73fac000-0x73faffff intr 40
 imxclock1 at axi0 addr 0x73fb0000-0x73fb3fff intr 41
@@ -108,15 +110,9 @@ scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <SanDisk, Cruzer Fit, 1.27> disk removable
 sd0: 15267 MB, 31018 cyl, 16 head, 63 sec, 512 bytes/sect x 31266816 sectors
 boot device: <unknown>
-root device: sd0
-dump device (default sd0b): 
-file system (default generic): 
 root on sd0a dumps on sd0b
-root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.19/modules
+kern.module.path=/stand/evbarm/7.99.20/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-init path (default /sbin/init): 
-init: trying /sbin/init
 wsdisplay0: screen 4 added (std, vt100 emulation)
