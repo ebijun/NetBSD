@@ -1,0 +1,134 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.0_RC2 (RPI2.201508010300Z)
+total memory = 944 MB
+avail memory = 928 MB
+sysctl_createv: sysctl_create(machine_arch) returned 17
+kern.module.path=/stand/evbarm/7.0/modules
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0 core 0: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu0: isar: [0]=0x2101110 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x10011142, [5]=0
+cpu0: mmfr: [0]=0x10101105 [1]=0x40000000 [2]=0x1240000 [3]=0x2102211
+cpu0: pfr: [0]=0x1131 [1]=0x11011
+cpu0: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu0: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu0: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+vfp0: mvfr: [0]=0x10110222 [1]=0x11111111
+cpu1 at mainbus0 core 1
+cpu2 at mainbus0 core 2
+cpu3 at mainbus0 core 3
+obio0 at mainbus0
+bcmicu0 at obio0: Multiprocessor
+armgtmr0 at obio0: ARMv7 Generic 64-bit Timer (19200 kHz)
+armgtmr0: interrupting on irq 3
+timecounter: Timecounter "armgtmr0" frequency 19200000 Hz quality 500
+bcmmbox0 at obio0: VC mailbox
+vcmbox0 at bcmmbox0
+vchiq0 at obio0 intr 194: BCM2835 VCHIQ
+bcmpm0 at obio0: Power management, Reset and Watchdog controller
+bcmdmac0 at obio0: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10
+bcmrng0 at obio0: RNG
+plcom0 at obio0 intr 185
+plcom0: txfifo disabled
+plcom0: console
+genfb0 at obio0: switching to framebuffer console
+genfb0: framebuffer at 0x3d402000, size 1920x1080, depth 32, stride 7680
+wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+wsdisplay0: screen 1-3 added (default, vt100 emulation)
+sdhc0 at obio0 intr 190: SDHC controller
+sdhc0: interrupting on intr 190
+dwctwo0 at obio0 intr 137: USB controller
+bcmspi0 at obio0 intr 182: SPI
+spi0 at bcmspi0: SPI bus
+bsciic0 at obio0 intr 181: BSC0
+iic0 at bsciic0: I2C bus
+bsciic1 at obio0 intr 181: BSC1
+iic1 at bsciic1: I2C bus
+bcmgpio0 at obio0: GPIO [0...31]
+gpio0 at bcmgpio0: 32 pins
+bcmgpio1 at obio0: GPIO [32...53]
+gpio1 at bcmgpio1: 22 pins
+usb0 at dwctwo0: USB revision 2.0
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu1: isar: [0]=0x2101110 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x10011142, [5]=0
+cpu1: mmfr: [0]=0x10101105 [1]=0x40000000 [2]=0x1240000 [3]=0x2102211
+cpu1: pfr: [0]=0x1131 [1]=0x11011
+cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+vfp1: mvfr: [0]=0x10110222 [1]=0x11111111
+cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu2: isar: [0]=0x2101110 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x10011142, [5]=0
+cpu2: mmfr: [0]=0x10101105 [1]=0x40000000 [2]=0x1240000 [3]=0x2102211
+cpu2: pfr: [0]=0x1131 [1]=0x11011
+cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+vfp2: mvfr: [0]=0x10110222 [1]=0x11111111
+cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu3: isar: [0]=0x2101110 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x10011142, [5]=0
+cpu3: mmfr: [0]=0x10101105 [1]=0x40000000 [2]=0x1240000 [3]=0x2102211
+cpu3: pfr: [0]=0x1131 [1]=0x11011
+cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+vfp3: mvfr: [0]=0x10110222 [1]=0x11111111
+sdhc0: SD Host Specification 3.0, rev.153
+sdhc0: using DMA transfer
+sdmmc0 at sdhc0 slot 0
+uhub0 at usb0: vendor 0x0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub0: 1 port with 1 removable, self powered
+ld0 at sdmmc0: <0x74:0x4a60:USD  :0x02:0x56aa21be:0x0f2>
+ld0: 7695 MB, 3908 cyl, 64 head, 63 sec, 512 bytes/sect x 15759360 sectors
+ld0: 4-bit width, bus clock 50.000 MHz
+uhub1 at uhub0 port 1: vendor 0x0424 product 0x9514, class 9/0, rev 2.00/2.00, addr 2
+uhub1: multiple transaction translators
+uhub1: 5 ports with 4 removable, self powered
+usmsc0 at uhub1 port 1
+usmsc0: vendor 0x0424 product 0xec00, rev 2.00/2.00, addr 3
+usmsc0:  Ethernet address b8:27:eb:1f:7a:14
+ukphy0 at usmsc0 phy 1: OUI 0x00800f, model 0x000c, rev. 3
+ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+umidi_search_quirk: v=1455, p=2310, i=0
+uhidev0 at uhub1 port 3 configuration 1 interface 0
+uhidev0: vendor 0x05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+umidi_search_quirk: v=1455, p=2310, i=1
+uhidev1 at uhub1 port 3 configuration 1 interface 1
+uhidev1: vendor 0x05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/1
+uhidev1: 1 report ids
+ums0 at uhidev1 reportid 1: 3 buttons and Z dir
+wsmouse0 at ums0 mux 0
+umidi_search_quirk: v=1455, p=2310, i=2
+uhidev2 at uhub1 port 3 configuration 1 interface 2
+uhidev2: vendor 0x05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/0
+uhid0 at uhidev2: input=3, output=0, feature=0
+boot device: ld0
+root on ld0a dumps on ld0b
+root file system type: ffs
+vchiq: local ver 6 (min 3), remote ver 6.
+vcaudio0 at vchiq0: auds
+vchiq_get_state: g_state.remote->initialised != 1 (0)
+vchiq: vchiq_initialise: videocore initialized after 1 retries
+
+WARNING: no TOD clock present
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+audio0 at vcaudio0: half duplex, playback, capture, independent
+wsdisplay0: screen 4 added (default, vt100 emulation)
