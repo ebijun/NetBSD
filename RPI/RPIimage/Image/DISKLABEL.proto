@@ -19,8 +19,8 @@ drivedata: 0
 
 8 partitions:
 #        size    offset     fstype [fsize bsize cpg/sgs]
- a:   3428352    385024     4.2BSD      0     0     0  # (Cyl.    188 -   1861)
- b:    262144    122880       swap                     # (Cyl.     60 -    187)
- c:   3690496    122880     unused      0     0        # (Cyl.     60 -   1861)
+ a:   3420160    393216     4.2BSD      0     0     0  # (Cyl.    192 -   1861)
+ b:    262144    131072       swap                     # (Cyl.     64 -    191)
+ c:   3682304    131072     unused      0     0        # (Cyl.     64 -   1861)
  d:   3813376         0     unused      0     0        # (Cyl.      0 -   1861)
- e:    114688      8192      MSDOS                     # (Cyl.      4 -     59)
+ e:    122880      8192      MSDOS                     # (Cyl.      4 -     63)

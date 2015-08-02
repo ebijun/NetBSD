@@ -6,7 +6,7 @@ ARCH=earmv6hf
 PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-08-08/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.20-evbarm-${ARCH}-201507292020Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.20-evbarm-${ARCH}-201508020530Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2015-06-27.tar.gz 
 

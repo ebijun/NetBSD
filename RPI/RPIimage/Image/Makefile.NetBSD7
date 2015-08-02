@@ -55,7 +55,7 @@ rpi:
 	echo Copy rpi.img.gz
 	vnconfig ${VND} ${FILE}
 	gunzip < ${RPI}.gz |dd of=/dev/r${VND}d bs=1m 
-	disklabel -R ${VND} DISKLABEL.proto
+	disklabel -R ${VND} DISKLABEL.proto.NetBSD7
 	fdisk -uf -0 -s 6/8192/114688 ${VND} #DOS id6 partition:DISKLABEL.proto
 	fsck -fy /dev/r${VND}a
 	resize_ffs -y /dev/r${VND}a
