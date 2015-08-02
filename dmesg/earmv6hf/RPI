@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.19 (RPI.201506281320Z) #0: Sun Jun 28 14:59:08 UTC 2015
-	builds@b43.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201506281320Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
+NetBSD 7.99.20 (RPI.201508020530Z) #0: Sun Aug  2 07:11:55 UTC 2015
+	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201508020530Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 181 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -13,6 +13,8 @@ timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0 core 0: 700 MHz ARM1176JZ-S r0p7 (ARM11J V6ZK core)
 cpu0: DC enabled IC enabled WB enabled LABT
+cpu0: sctlr: 0x65117d
+cpu0: actlr: 0x90000007
 cpu0: revidr: 0x410fb767
 cpu0: isar: [0]=0x140011 [1]=0x12002111 [2]=0x11231121 [3]=0x1102131, [4]=0x1141, [5]=0
 cpu0: mmfr: [0]=0x1130003 [1]=0x10030302 [2]=0x1222100 [3]=0
@@ -54,25 +56,29 @@ gpio1 at bcmgpio1: 22 pins
 usb0 at dwctwo0: USB revision 2.0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 timecounter: Timecounter "bcmtmr0" frequency 1000000 Hz quality 100
-sdhc0: SDHC 3.0, rev 153, DMA, 250000 kHz, 3.3V, 1024 byte blocks
+sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, High-Speed 3.3V, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-ld0 at sdmmc0: <0x74:0x4a60:USD  :0x02:0x56a92194:0x0f2>
-ld0: 7695 MB, 3908 cyl, 64 head, 63 sec, 512 bytes/sect x 15759360 sectors
+ld0 at sdmmc0: <0x41:0x3432:SD16G:0x30:0x00591b84:0x0e7>
+ld0: 14832 MB, 7533 cyl, 64 head, 63 sec, 512 bytes/sect x 30375936 sectors
 ld0: 4-bit width, bus clock 50.000 MHz
-uhub1 at uhub0 port 1: vendor 0424 product 9512, class 9/0, rev 2.00/2.00, addr 2
-uhub1: multiple transaction translators
-uhub1: 3 ports with 2 removable, self powered
-usmsc0 at uhub1 port 1
-usmsc0: vendor 0424 product ec00, rev 2.00/2.00, addr 3
-usmsc0: Ethernet address b8:27:eb:93:86:99
-ukphy0 at usmsc0 phy 1: OUI 0x00800f, model 0x000c, rev. 3
-ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+uhidev0 at uhub0 port 1 configuration 1 interface 0
+uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
+ukbd0 at uhidev0
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub0 port 1 configuration 1 interface 1
+uhidev1: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
+uhidev1: 1 report ids
+ums0 at uhidev1 reportid 1: 3 buttons and Z dir
+wsmouse0 at ums0 mux 0
+uhidev2 at uhub0 port 1 configuration 1 interface 2
+uhidev2: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/0
+uhid0 at uhidev2: input=3, output=0, feature=0
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.19/modules
+kern.module.path=/stand/evbarm/7.99.20/modules
 vchiq: local ver 6 (min 3), remote ver 6.
 vcaudio0 at vchiq0: auds
 WARNING: no TOD clock present
@@ -80,15 +86,3 @@ WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 audio0 at vcaudio0: half duplex, playback, capture, independent
 wsdisplay0: screen 4 added (default, vt100 emulation)
-uhidev0 at uhub1 port 3 configuration 1 interface 0
-uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/1
-ukbd0 at uhidev0
-wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub1 port 3 configuration 1 interface 1
-uhidev1: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/1
-uhidev1: 1 report ids
-ums0 at uhidev1 reportid 1: 3 buttons and Z dir
-wsmouse0 at ums0 mux 0
-uhidev2 at uhub1 port 3 configuration 1 interface 2
-uhidev2: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/0
-uhid0 at uhidev2: input=3, output=0, feature=0
