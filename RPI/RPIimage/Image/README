@@ -19,8 +19,6 @@ Update:
   dmesg:
    https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
    https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
-  BUG:
-   resize_disklabel failed on RPI2.
 
 - NetBSD-current 7.99.20 evbarm-earmv6hf 201508020530Z rpi.img from nyftp.
 - Set pkgsrc after resize partition: for this image size fit in 2GB.
@@ -82,13 +80,16 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
   7. If you feel slow,Try {NetBSD/amd64 i386,OSX,Ubuntu} Version or improve NetBSD.
 
 XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
-  Need more testing: http://t.co/dpOaxtHZRe . wxGTK28 package required.
+  http://xm6i.org/download.html
+  XM6i-0.51-netbsd7.99-earmv6hf-2015Q2.tar.gz
+  pkg_add wxGTK30 
+
+  https://twitter.com/isaki68k/status/625138538271502337
 
 Todo:
 - Try light-desktop:
-  http://wiki.netbsd.org/light-desktop/
+  -> pkg_add xfce4 work. Thanx @YouriMouton.
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
-- comment out kernel DEBUG/DIAGNOSTIC option
 - https://github.com/isaki68k/sayaka
 - http://www.netbsd.org/~joerg/nodejs.tar.gz
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
@@ -102,24 +103,25 @@ Todo:
    outputs.select=auto  [ auto headphones hdmi ]
 
 pkgsrc Todo:
-- openjdk7/8
 - lang/go : go-netbsd-arm put oarm binary
+  Golang for NetBSD/arm problem summarized by @oshimyja
+  http://mail-index.netbsd.org/port-arm/2015/08/02/msg003361.html
   https://twitter.com/oshimyja/status/604871730125864960
   https://github.com/golang/go/commit/30d60936d97423af0403f2d5395c604ac0ff3757
-- lang/erlang
 - www/firefox
   firefox-37.0.2nb1.tgz can compile on earmv7hf, 38 failed.
+- www/midori,epiphany
 
 
 =====================
 
-For Open Source Conference 2015 Okinawa demonstration use, 
+For Open Source Conference 2015 Kansai@Kyoto demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2015-okinawa/
- https://www.facebook.com/events/884051744940071/
+ http://www.ospn.jp/osc2015-kyoto/
+ https://www.facebook.com/events/1062729970410808/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2015okinawa.pdf
+ http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
 
 - NetBSD 7.99.20 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
