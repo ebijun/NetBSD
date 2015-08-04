@@ -34,7 +34,7 @@ MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 VND_TMP=vnd2
 
-all: file cdmount rpi extract cdunmount 
+all: file cdmount rpi extract cdunmount fit
 
 # extract sets to image file.
 extract:
