@@ -37,8 +37,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/kyoto
- Luna
+ Place/shimane
  RPI
 
 * :ref:`genindex`
