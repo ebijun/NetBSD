@@ -1,5 +1,5 @@
 VERSION: :1,$s/2015-08-08/2015-08-08/g
-ISO:     :1,$s/201508020530Z/201508020530Z/g
+ISO:     :1,$s/201508041420Z/201508041420Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 NetBSD:  :1,$s/7.99.20/7.99.20/g
 
@@ -15,12 +15,14 @@ Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
 Update:
-- RPI2 boot on multi processor: (CPU1-3 enabled!)
+- RPI2 boot on multi processor: (CPU1-3 enabled!) by  Nick Hudson
+  http://mail-index.netbsd.org/port-arm/2015/08/01/msg003359.html
   dmesg:
    https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
    https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
-
-- NetBSD-current 7.99.20 evbarm-earmv6hf 201508020530Z rpi.img from nyftp.
+- UHS-I support by Jared McNeill
+  http://mail-index.netbsd.org/port-arm/2015/08/04/msg003373.html
+- NetBSD-current 7.99.20 evbarm-earmv6hf 201508041420Z rpi.img from nyftp.
 - Set pkgsrc after resize partition: for this image size fit in 2GB.
   # cd /usr
   # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
