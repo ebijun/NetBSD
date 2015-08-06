@@ -112,7 +112,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2015京都 NetBSDブース展示の記録,
+ OSC2015京都 NetBSDブース展示の記録,http://togetter.com/li/857157
  OSC2014京都 NetBSDブース展示の記録,http://togetter.com/li/700617
  OSC2013京都 NetBSDブース展示の記録,http://togetter.com/li/542885
  OSC2012京都 NetBSDブース展示の記録,http://togetter.com/li/350035
