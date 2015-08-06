@@ -23,6 +23,10 @@ Update:
 - UHS-I support by Jared McNeill
   http://mail-index.netbsd.org/port-arm/2015/08/04/msg003373.html
 - NetBSD-current 7.99.20 evbarm-earmv6hf 201508041420Z rpi.img from nyftp.
+- libfreetype.so updated 
+  /usr/X11R7/lib/libfreetype.so.17 updated to libfreetype.so.18
+  copy libfreetype.so.17.4.11 as /usr/X11R7/lib/libfreetype.so.17 if you need.
+  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-08-08-earmv6hf/libfreetype.so.17.4.11 
 - Set pkgsrc after resize partition: for this image size fit in 2GB.
   # cd /usr
   # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
@@ -90,7 +94,7 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
 
 Todo:
 - Try light-desktop:
-  -> pkg_add xfce4 work. Thanx @YouriMouton.
+  -> pkg_add xfce4 works. Thanx @YouriMouton.
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
 - https://github.com/isaki68k/sayaka
 - http://www.netbsd.org/~joerg/nodejs.tar.gz
@@ -185,6 +189,9 @@ mlterm
 pkg_chk
 lintpkgsrc
 mozilla-rootcerts
+
+pkg_info output version history:
+ https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 To control HDMI output,add/delete "console=fb" on cmdline.txt.
 If delete console=fb definition,you can get serial console instead.

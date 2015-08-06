@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.20 (RPI.201508020530Z) #0: Sun Aug  2 07:11:55 UTC 2015
-	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201508020530Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
+NetBSD 7.99.20 (RPI.201508041420Z) #0: Tue Aug  4 15:58:25 UTC 2015
+	builds@b48.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201508041420Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 181 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -56,13 +56,13 @@ gpio1 at bcmgpio1: 22 pins
 usb0 at dwctwo0: USB revision 2.0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 timecounter: Timecounter "bcmtmr0" frequency 1000000 Hz quality 100
-sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, High-Speed 3.3V, 1024 byte blocks
+sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, HS SDR50 3.3V, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-ld0 at sdmmc0: <0x41:0x3432:SD16G:0x30:0x00591b84:0x0e7>
-ld0: 14832 MB, 7533 cyl, 64 head, 63 sec, 512 bytes/sect x 30375936 sectors
-ld0: 4-bit width, bus clock 50.000 MHz
+ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x02:0x06512dff:0x0f6>
+ld0: 30735 MB, 7805 cyl, 128 head, 63 sec, 512 bytes/sect x 62945280 sectors
+ld0: 4-bit width, SDR50, 100.000 MHz
 uhidev0 at uhub0 port 1 configuration 1 interface 0
 uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
 ukbd0 at uhidev0
