@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.20 (CUBIEBOARD.201507162000Z) #0: Thu Jul 16 21:54:43 UTC 2015
-	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201507162000Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/CUBIEBOARD
+NetBSD 7.99.20 (CUBIEBOARD.201508082350Z) #0: Sun Aug  9 01:40:54 UTC 2015
+	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201508082350Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/CUBIEBOARD
 total memory = 1024 MB
 avail memory = 1005 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -128,7 +128,7 @@ uhub4 at usb4: Mentor Graphics MOTG root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub4: 1 port with 1 removable, self powered
 ld0 at sdmmc0: <0x74:0x4a45:USD  :0x20:0xc4a00247:0x0eb>
 ld0: 30191 MB, 7667 cyl, 128 head, 63 sec, 512 bytes/sect x 61831168 sectors
-ld0: 4-bit width, bus clock 50.000 MHz
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 ahcisata0 port 0: device present, speed: 3.0Gb/s
 wd0 at atabus0 drive 0
 wd0: <TS64GSSD370>
