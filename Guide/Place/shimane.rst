@@ -186,8 +186,6 @@ OSC松江展示物
 .. image::  ../Picture/2013/08/24/DSC_2447.jpg
 .. image::  ../Picture/2013/08/24/DSC_2449.jpg
 .. image::  ../Picture/2013/08/24/DSC_2451.jpg
-.. image::  ../Picture/2013/08/24/DSC_2452.jpg
-.. image::  ../Picture/2013/08/24/DSC_2453.jpg
 
 2012年
 ~~~~~~~~~~~~~~~~~~
