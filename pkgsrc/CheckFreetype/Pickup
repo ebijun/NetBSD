@@ -1,0 +1,23 @@
+
+LIBNAME=ARGV[0]
+FILENAME="list"
+
+class LINKlist
+	def initialize(line)
+		@filename = line
+	end
+	def print
+		@filename
+	end
+end
+
+f = open(FILENAME)
+libname = ""
+
+f.each{|line|
+	if line.index(":")
+		libname = (line.sub(":","")).chomp
+	elsif line.index(LIBNAME)
+		print "pkg_info -LF ",libname ,"\n"
+	end
+}
