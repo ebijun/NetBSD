@@ -1,8 +1,8 @@
-LIBNAME="libfreetype.so.7"
-#LIBNAME="libfreetype.so.17"
+#LIBNAME="libfreetype.so.7"
+LIBNAME="libfreetype.so.17"
 
 pkg: files
-	sh files |grep "Information for " |sort |uniq |awk '{print $$3}' |sed -e 's/-.*://'  > pkg
+	sh files |grep "Information for " |sort |uniq |awk '{print $$3}' |sed -e 's/-[0-9nb\.]*://'  > pkg
 files: list
 	ruby200 Pickup ${LIBNAME} > files
 list:

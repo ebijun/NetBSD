@@ -1,0 +1,4 @@
+for i in `cat pkg`
+do
+	(cd /usr/pkgsrc/*/$i;make package;make replace)
+done
