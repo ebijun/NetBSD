@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-odroid_c1.img
 
 # iso file information
-IMAGE=/mnt2/NetBSD-7.99.9-evbarm-earmv7hf-201504121930Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.20-evbarm-earmv7hf-201508082350Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2015-04-11.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2015-04-25.tar.gz
 
 # UBOOT
 UBOOTURL=http://ftp.netbsd.org/pub/NetBSD/misc/jmcneill/odroidc1
@@ -40,8 +40,8 @@ extract:
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
-	echo extract pkgsrc.
-	tar xzpf ${PKGSRC} -C ${MNT}/usr
+	#echo extract pkgsrc.
+	#tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mount_msdos /dev/${VND}e ${MNT}/boot
 	gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
 	umount ${MNT}/boot
@@ -149,4 +149,4 @@ uboot-copy:
 	dd if=u-boot/u-boot.bin of=${FILE} bs=512 seek=64 conv=notrunc
 
 resetfdisk:
-	fdisk -ufF -1 -s 169/385024/3428352 ${FILE}
+	fdisk -ufF -1 -s 169/393216/3420160 ${FILE}
