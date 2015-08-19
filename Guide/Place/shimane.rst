@@ -196,26 +196,4 @@ OSC松江展示物
 .. image::  ../Picture/2012/09/01/dsc01633.jpg
 .. image::  ../Picture/2012/09/01/dsc01634.jpg
 .. image::  ../Picture/2012/09/01/dsc01637.jpg
-.. image::  ../Picture/2012/09/01/dsc01638.jpg
-.. image::  ../Picture/2012/09/01/dsc01640.jpg
-.. image::  ../Picture/2012/09/01/dsc01642.jpg
 
-2011年
-~~~~~~~~~~~~~~~~~
-
-.. image::  ../Picture/2011/11/12/P1001226.JPG
-.. image::  ../Picture/2011/11/12/P1001227.JPG
-.. image::  ../Picture/2011/11/12/P1001231.JPG
-.. image::  ../Picture/2011/11/12/P1001232.JPG
-.. image::  ../Picture/2011/11/12/P1001233.JPG
-.. image::  ../Picture/2011/11/12/P1001235.JPG
-
-2010年
-~~~~~~~~~~~~~~~~~
-
-.. image::  ../Picture/2010/11/27/P1000076.JPG
-.. image::  ../Picture/2010/11/27/P1000079.JPG
-.. image::  ../Picture/2010/11/27/P1000080.JPG
-.. image::  ../Picture/2010/11/27/P1000082.JPG
-.. image::  ../Picture/2010/11/27/P1000083.JPG
-.. image::  ../Picture/2010/11/27/P1000084.JPG

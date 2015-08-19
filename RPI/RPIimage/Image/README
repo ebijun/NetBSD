@@ -1,32 +1,26 @@
-VERSION: :1,$s/2015-08-08/2015-08-08/g
-ISO:     :1,$s/201508041420Z/201508041420Z/g
+VERSION: :1,$s/2015-08-22/2015-08-22/g
+ISO:     :1,$s/201508181510Z/201508181510Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
-NetBSD:  :1,$s/7.99.20/7.99.20/g
+NetBSD:  :1,$s/7.99.21/7.99.21/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-08-08-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2015-08-22-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-08-08-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2015-08-22-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-08-08-earmv6hf/2015-08-08-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-08-22-earmv6hf/2015-08-22-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
 Update:
-- RPI2 boot on multi processor: (CPU1-3 enabled!) by  Nick Hudson
-  http://mail-index.netbsd.org/port-arm/2015/08/01/msg003359.html
-  dmesg:
-   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
-   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
-- UHS-I support by Jared McNeill
-  http://mail-index.netbsd.org/port-arm/2015/08/04/msg003373.html
-- NetBSD-current 7.99.20 evbarm-earmv6hf 201508041420Z rpi.img from nyftp.
+- NetBSD-current 7.99.21 evbarm-earmv6hf 201508181510Z rpi.img from nyftp.
 - libfreetype.so updated 
   /usr/X11R7/lib/libfreetype.so.17 updated to libfreetype.so.18
   copy libfreetype.so.17.4.11 as /usr/X11R7/lib/libfreetype.so.17 if you need.
-  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-08-08-earmv6hf/libfreetype.so.17.4.11 
+  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-08-22-earmv6hf/libfreetype.so.17.4.11 
+- Notice for benchmarker: In this image, ld0a re-created with newfs -b 4096.
 - Set pkgsrc after resize partition: for this image size fit in 2GB.
   # cd /usr
   # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
@@ -62,7 +56,7 @@ I2C - "Raspberry Pi I2C implementation still broken?"
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-08-08/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-08-22/
 
  To install application.
  # pkg_add some_application_name
@@ -121,15 +115,15 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2015 Kansai@Kyoto demonstration use, 
+For Open Source Conference 2015 Shimane demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2015-kyoto/
- https://www.facebook.com/events/1062729970410808/
+ http://www.ospn.jp/osc2015-shimane/
+ https://www.facebook.com/events/1415445248776489/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
+ http://www.soum.co.jp/~jun/OSC2015shimane.pdf
 
-- NetBSD 7.99.20 earmv6hf rpi.img.gz base
+- NetBSD 7.99.21 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -167,7 +161,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-08-08/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-08-22/
 
 Installed Packages:
 kterm

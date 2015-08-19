@@ -82,14 +82,15 @@ Cubieboard2,BananaPI用イメージ
 
  Cubieboard2,BananaPI用のイメージが、
  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/ 以下にあります。
- 同じ手順で起動できます。また、RPI2専用でearmv7hf環境で動作するイメージも用意しています。
- 
-::
+ 同じ手順で起動できます。
 
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-28-earmv7hf/2015-02-28-netbsd-allwinner.img.gz
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/2015-02-28-earmv7hf/2015-02-28-netbsd-bpi.img.gz
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-08-22-earmv7hf/2015-08-22-netbsd-raspi2-earmv7hf.img.gz
-	
+ODROID-C1用イメージ
+-------------------------------
+
+ ODROID-C1用のイメージが、
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/odroid_c1/ 以下にあります。
+ 同じ手順で起動できます。
+
 RaspberryPIの起動
 ------------------
 #. HDMIケーブル／USBキーボード/USBマウス/有線ネットワークをRPIにさします。
