@@ -12,7 +12,12 @@ I've updated 2015-08-19-netbsd7.0_RC3-raspi-earmv6hf.img for RPI.
 ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-7.0_RC3/2015-08-19-netbsd7.0_RC3-raspi-earmv6hf.img.gz
 
 Update:
-RC3:
+automatic resize partition: see /etc/rc.conf
+  1. copy image to SD/MicroSD
+  2. Boot 
+  3. Calculate and resize ld0 partition and automatic reboot
+  4. after the reboot,root partition fit for your card.
+    http://movapic.com/pic/20150416115108552fa22c4f225
 
 dmesg:
  RPI:
