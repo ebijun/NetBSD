@@ -1,18 +1,18 @@
-VERSION: :1,$s/2015-08-02/2015-08-02/g
-ISO:     :1,$s/201508010300Z/201508010300Z/g
+VERSION: :1,$s/2015-08-19/2015-08-19/g
+ISO:     :1,$s/201508182000Z/201508182000Z/g
 PKGSRC:  :1,$s/2015Q2/2015Q2/
-NetBSD:  :1,$s/7.0_RC2/7.0_RC2/g
+NetBSD:  :1,$s/7.0_RC3/7.0_RC3/g
 
 To: port-armNetBSD.org@localhost
-Subject: NetBSD7.0RC1: 2015-06-30-netbsd7-raspi-earmv6hf.img 
+Subject: NetBSD7.0RC3: 2015-08-19-netbsd7.0_RC3-raspi-earmv6hf.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-08-02-netbsd7.0_RC2-raspi-earmv6hf.img for RPI.
+I've updated 2015-08-19-netbsd7.0_RC3-raspi-earmv6hf.img for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-7.0_RC2/2015-08-02-netbsd7.0_RC2-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-7.0_RC3/2015-08-19-netbsd7.0_RC3-raspi-earmv6hf.img.gz
 
 Update:
-RPI2 all CPU enabled! Thanx nick!
+RC3:
 
 dmesg:
  RPI:
@@ -24,15 +24,15 @@ dmesg:
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
-- NetBSD-7.0_RC2 evbarm-earmv6hf rpi.img from nyftp.
-- pkgsrc-current: 2015Q2 pre-installed on /usr/pkgsrc.
+- NetBSD-7.0_RC3-201508182000Z evbarm-earmv6hf rpi.img from nyftp.
+- pkgsrc: 2015Q2 pre-installed on /usr/pkgsrc.
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_2015Q1/All
+PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_2015Q2/All
 
 I'll make test packages with this image:
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-7.0_RC2/earmv6hf/
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-7.0_RC3/earmv6hf/
 
  To install application.
  # pkg_add some_application_name
@@ -45,7 +45,7 @@ Growing the root file-system by hand:
 
 =====================
 
-- NetBSD 7.0RC2 earmv6hf rpi.img.gz base
+- NetBSD 7.0RC3 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 
