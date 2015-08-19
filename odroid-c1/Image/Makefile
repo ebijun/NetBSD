@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-odroid_c1.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.20-evbarm-earmv7hf-201508082350Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.20-evbarm-earmv7hf-201508160850Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015-04-25.tar.gz
 
