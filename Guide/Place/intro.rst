@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -329,10 +329,10 @@ pkg_rolling-replaceを使う方法:依存関係に従って更新する
  http://cvsweb.NetBSD.org/
  # cd src
  # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r netbsd-6-1-5-RELEASE  ... NetBSD6.1.5
+ # cvs update -Pd -r netbsd-7-0-RC3  ... NetBSD7.0RC3
  # cd pkgsrc
  # cvs update -PAd                 ... 最新に更新
- # cvs update -Pd -r pkgsrc-2014Q4 ... 2014Q4に更新
+ # cvs update -Pd -r pkgsrc-2015Q2 ... 2015Q2に更新
 
 
 バグレポート・追加差分

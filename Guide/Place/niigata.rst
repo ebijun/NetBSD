@@ -40,7 +40,7 @@ Maps:
  2008 Nagaoka ,4/12,130,11,
  2009 Niigata ,8/1,130,11,
  2010 Niigata,10/23,130,14,
- 2015 Niigata,9/5,,
+ 2015 Niigata,9/5,,17
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,24 +69,116 @@ togetterまとめ
 .. csv-table::
  :widths: 60 30 60
 
- 河竹鮨,新潟駅,
- とんかつかねこ,,
- Cafe Quest,,
- bullet,,
- 清水酒店,,
- セルロイドカフェ,,
+ 河竹鮨,新潟駅,地魚おまかせ握り
+ とんかつかねこ,新潟大五十嵐キャンパス,タレかつ丼　チャレンジ丼ポカリスエット付き
+ Joestar,新潟駅,15タップ
+ bullet,東掘通x鍛治小路交差点,奇盤多数の輸入レコード店
+ 清水酒店,万代橋,地酒地ビール充実
  駅ビルの本屋の高橋留美子イラスト,,
  中華カトウ,,
  三吉屋,,
- 河竹鮨,,
  DELTAF,,
  にいがたレンタサイクル,,
  Robin,,
- かねこ,,
  太郎,,
 
 
-2014年
+2006年
 ---------------
-.. image::  ../Picture/2014/05/23/DSC04807.JPG
+
+.. image::  ../Picture/2006/06/17/2006-756.JPG
+.. image::  ../Picture/2006/06/17/2006-757.JPG
+.. image::  ../Picture/2006/06/17/2006-758.JPG
+.. image::  ../Picture/2006/06/17/2006-759.JPG
+.. image::  ../Picture/2006/06/17/2006-760.JPG
+.. image::  ../Picture/2006/06/17/2006-761.JPG
+.. image::  ../Picture/2006/06/17/2006-762.JPG
+.. image::  ../Picture/2006/06/17/2006-763.JPG
+.. image::  ../Picture/2006/06/17/2006-764.JPG
+.. image::  ../Picture/2006/06/17/2006-765.JPG
+.. image::  ../Picture/2006/06/17/2006-766.JPG
+.. image::  ../Picture/2006/06/17/2006-767.JPG
+
+
+2007年
+---------------
+
+.. image::  ../Picture/2007/10/27/2007-1745.jpg
+.. image::  ../Picture/2007/10/27/2007-1746.jpg
+.. image::  ../Picture/2007/10/27/2007-1747.jpg
+.. image::  ../Picture/2007/10/27/2007-1748.jpg
+.. image::  ../Picture/2007/10/27/2007-1749.jpg
+.. image::  ../Picture/2007/10/27/2007-1750.jpg
+.. image::  ../Picture/2007/10/27/2007-1751.jpg
+.. image::  ../Picture/2007/10/27/2007-1752.jpg
+.. image::  ../Picture/2007/10/27/2007-1753.jpg
+.. image::  ../Picture/2007/10/27/2007-1754.jpg
+.. image::  ../Picture/2007/10/27/2007-1755.jpg
+.. image::  ../Picture/2007/10/27/2007-1756.jpg
+
+2008年
+---------------
+
+.. image::  ../Picture/2008/04/12/2008-574.JPG
+.. image::  ../Picture/2008/04/12/2008-575.JPG
+.. image::  ../Picture/2008/04/12/2008-576.JPG
+.. image::  ../Picture/2008/04/12/2008-577.JPG
+.. image::  ../Picture/2008/04/12/2008-578.JPG
+.. image::  ../Picture/2008/04/12/2008-579.JPG
+.. image::  ../Picture/2008/04/12/2008-580.JPG
+.. image::  ../Picture/2008/04/12/2008-581.JPG
+.. image::  ../Picture/2008/04/12/2008-582.JPG
+.. image::  ../Picture/2008/04/12/2008-583.JPG
+.. image::  ../Picture/2008/04/12/2008-584.JPG
+.. image::  ../Picture/2008/04/12/2008-585.JPG
+.. image::  ../Picture/2008/04/12/2008-586.JPG
+.. image::  ../Picture/2008/04/12/2008-587.JPG
+.. image::  ../Picture/2008/04/12/2008-588.JPG
+
+2009年
+---------------
+
+.. image::  ../Picture/2009/08/01/001.JPG
+.. image::  ../Picture/2009/08/01/002.JPG
+.. image::  ../Picture/2009/08/01/003.JPG
+.. image::  ../Picture/2009/08/01/004.JPG
+.. image::  ../Picture/2009/08/01/005.JPG
+.. image::  ../Picture/2009/08/01/006.JPG
+.. image::  ../Picture/2009/08/01/007.JPG
+.. image::  ../Picture/2009/08/01/008.JPG
+.. image::  ../Picture/2009/08/01/009.JPG
+.. image::  ../Picture/2009/08/01/010.JPG
+.. image::  ../Picture/2009/08/01/011.JPG
+.. image::  ../Picture/2009/08/01/012.JPG
+.. image::  ../Picture/2009/08/01/013.JPG
+.. image::  ../Picture/2009/08/01/014.JPG
+.. image::  ../Picture/2009/08/01/015.JPG
+.. image::  ../Picture/2009/08/01/016.JPG
+.. image::  ../Picture/2009/08/01/017.JPG
+.. image::  ../Picture/2009/08/01/018.JPG
+.. image::  ../Picture/2009/08/01/019.JPG
+
+2010年
+---------------
+
+.. image::  ../Picture/2010/10/23/001.JPG
+.. image::  ../Picture/2010/10/23/002.JPG
+.. image::  ../Picture/2010/10/23/003.JPG
+.. image::  ../Picture/2010/10/23/004.JPG
+.. image::  ../Picture/2010/10/23/005.JPG
+.. image::  ../Picture/2010/10/23/006.JPG
+.. image::  ../Picture/2010/10/23/007.JPG
+.. image::  ../Picture/2010/10/23/008.JPG
+.. image::  ../Picture/2010/10/23/009.JPG
+.. image::  ../Picture/2010/10/23/010.JPG
+.. image::  ../Picture/2010/10/23/011.JPG
+.. image::  ../Picture/2010/10/23/012.JPG
+.. image::  ../Picture/2010/10/23/013.JPG
+.. image::  ../Picture/2010/10/23/014.JPG
+.. image::  ../Picture/2010/10/23/015.JPG
+.. image::  ../Picture/2010/10/23/016.JPG
+.. image::  ../Picture/2010/10/23/017.JPG
+.. image::  ../Picture/2010/10/23/018.JPG
+.. image::  ../Picture/2010/10/23/019.JPG
+.. image::  ../Picture/2010/10/23/020.JPG
 
