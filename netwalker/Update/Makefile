@@ -10,7 +10,7 @@ FILE=`date +%Y%m%d`.img
 VND_FILE=vnd0
 MNT=/mnt
 
-ISO=/usr/release/images/NetBSD-7.99.13-evbarm-earmv7hf-201504280500Z.iso
+ISO=/usr/release/images/NetBSD-7.99.21-evbarm-earmv7hf-201508181510Z.iso
 VND_CD=vnd2
 MNT_CD=/mnt2
 
