@@ -14,6 +14,13 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-08-22-earmv6hf/2015-0
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
+dmesg:
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
+
+pkg_info output version history:
+ https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
+
 Update:
 - NetBSD-current 7.99.21 evbarm-earmv6hf 201508181510Z rpi.img from nyftp.
 - libfreetype.so updated 
@@ -185,8 +192,6 @@ pkg_chk
 lintpkgsrc
 mozilla-rootcerts
 
-pkg_info output version history:
- https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 To control HDMI output,add/delete "console=fb" on cmdline.txt.
 If delete console=fb definition,you can get serial console instead.
