@@ -20,7 +20,7 @@ Update:
   /usr/X11R7/lib/libfreetype.so.17 updated to libfreetype.so.18
   copy libfreetype.so.17.4.11 as /usr/X11R7/lib/libfreetype.so.17 if you need.
   ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-08-22-earmv6hf/libfreetype.so.17.4.11 
-- Notice for benchmarker: In this image, ld0a re-created with newfs -b 4096.
+- In this image, ld0a re-created with newfs -b 4096.
 - Set pkgsrc after resize partition: for this image size fit in 2GB.
   # cd /usr
   # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
@@ -111,6 +111,7 @@ pkgsrc Todo:
 - www/firefox
   firefox-37.0.2nb1.tgz can compile on earmv7hf, 38 failed.
 - www/midori,epiphany
+- gnuradio: g77 failed.
 
 
 =====================
