@@ -12,3 +12,5 @@ vnconfig vnd0 back.img
   done
  umount /mnt
 vnconfig -u vnd0
+
+diff -u ../pkgsrc/pkginfo  ${DIR}/pkginfo |more
