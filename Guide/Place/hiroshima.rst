@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -42,6 +42,7 @@ Maps:
  2012,10/20,150,23,広島国際学院大学中野キャンパス
  2013,10/6,200,21,サテライトキャンパスひろしま
  2014,9/20,200,26,サテライトキャンパスひろしま
+ 2015,9/19,,22,サテライトキャンパスひろしま
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,6 +54,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 78,OSC2015広島,http://www.soum.co.jp/~jun/OSC2015hiroshima.pdf
  63,OSC2014広島,http://www.soum.co.jp/~jun/OSC2014hiroshima.pdf
  48,OSC2013広島,http://www.soum.co.jp/~jun/OSC2013hiroshima.pdf
  33,OSC2012広島,http://www.soum.co.jp/~jun/OSC2012hiroshima.pdf
@@ -69,6 +71,7 @@ togetterまとめ
  OSC2012広島,OSC2012 広島 NetBSDブース展示の記録,http://togetter.com/li/392778
  OSC2013広島,OSC2013 広島 NetBSDブース展示の記録,http://togetter.com/li/573243
  OSC2014広島,OSC2014 広島 NetBSDブース展示の記録,http://togetter.com/li/721414
+ OSC2015広島,OSC2015 広島 NetBSDブース展示の記録,
 
 OSC広島発表
 ~~~~~~~~~~~~~
@@ -142,6 +145,31 @@ OSC広島発表
  陸軍被服支厰倉庫,出汐,峠三吉「倉庫の記録」
  広島市郷土資料館,宇品,曲がった鉄骨と、かもじづくり。かもじって何？
  旧広島港湾事務所,宇品,広島唯一の明治時代の公共建築かつ被曝建物。
+
+2014年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2014/09/20/DSC05616.JPG
+.. image::  ../Picture/2014/09/20/DSC05619.JPG
+.. image::  ../Picture/2014/09/20/DSC05622.JPG
+.. image::  ../Picture/2014/09/20/DSC05623.JPG
+.. image::  ../Picture/2014/09/20/DSC05624.JPG
+.. image::  ../Picture/2014/09/20/DSC05625.JPG
+.. image::  ../Picture/2014/09/20/DSC05626.JPG
+.. image::  ../Picture/2014/09/20/DSC05627.JPG
+.. image::  ../Picture/2014/09/20/DSC05628.JPG
+.. image::  ../Picture/2014/09/20/DSC_0477.jpg
+.. image::  ../Picture/2014/09/20/DSC_0478.jpg
+.. image::  ../Picture/2014/09/20/DSC_0479.jpg
+.. image::  ../Picture/2014/09/20/DSC_0480.jpg
+.. image::  ../Picture/2014/09/20/DSC_0481.jpg
+.. image::  ../Picture/2014/09/20/DSC_0482.jpg
+.. image::  ../Picture/2014/09/20/DSC_0488.jpg
+.. image::  ../Picture/2014/09/20/DSC_0489.jpg
+.. image::  ../Picture/2014/09/20/DSC_0490.jpg
+.. image::  ../Picture/2014/09/20/DSC_0491.jpg
+.. image::  ../Picture/2014/09/20/DSC_0496.jpg
+.. image::  ../Picture/2014/09/20/DSC_0497.jpg
 
 
 2013年
