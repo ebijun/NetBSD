@@ -24,6 +24,8 @@
 -------
 
 Maps:
+ JANOG25　会場周辺の食べ物やさんマップ[EBUG-talk 478]
+ https://www.google.com/maps/d/viewer?mid=z7jg5yiZbnQU.kK1h53SqFwaE&hl=ja&gl=jp&ie=UTF8&oe=UTF8&msa=0
 
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/niigata.rst
@@ -88,22 +90,23 @@ togetterまとめ
  玉庭電気商会,南区白根,印鑑と真空管アンプ
  チューブオーディオラボ,南魚沼,真空管アンプ&メンテナンス
  ハードオフ,紫竹山,ハードオフの本場
+ おもだかや女池店,女池インター,支那そば系[EBUG-talk:478]
+ 白寿,古町,うまにそば [EBUG-talk:478]
+ 喜ぐち,古町,朝4:00まで。新潟呑兵衛のlast resort [EBUG-talk 478]
+ 酔い処,万代口東大通,新潟のNW業界人が多く集う居酒屋、お酒は〆張鶴がデフォ [EBUG-talk 478]
+ Jazz FLASH,東堀通5,地元で愛されているジャズバー [EBUG-talk 478]
+ スワン,西堀通4,JBL4341-6230。ＮＰＯ法人新潟ジャズストリート実行委員会」事務局
+ 須坂屋そば,新潟駅前,へぎそば [EBUG-talk 479] 渋谷から三軒茶屋に移動
 
 2006年
 ---------------
 
 .. image::  ../Picture/2006/06/17/2006-756.JPG
-.. image::  ../Picture/2006/06/17/2006-757.JPG
 .. image::  ../Picture/2006/06/17/2006-758.JPG
-.. image::  ../Picture/2006/06/17/2006-759.JPG
 .. image::  ../Picture/2006/06/17/2006-760.JPG
-.. image::  ../Picture/2006/06/17/2006-761.JPG
 .. image::  ../Picture/2006/06/17/2006-762.JPG
 .. image::  ../Picture/2006/06/17/2006-763.JPG
-.. image::  ../Picture/2006/06/17/2006-764.JPG
-.. image::  ../Picture/2006/06/17/2006-765.JPG
 .. image::  ../Picture/2006/06/17/2006-766.JPG
-.. image::  ../Picture/2006/06/17/2006-767.JPG
 
 
 2007年
@@ -111,7 +114,6 @@ togetterまとめ
 
 .. image::  ../Picture/2007/10/27/2007-1745.jpg
 .. image::  ../Picture/2007/10/27/2007-1746.jpg
-.. image::  ../Picture/2007/10/27/2007-1747.jpg
 .. image::  ../Picture/2007/10/27/2007-1748.jpg
 .. image::  ../Picture/2007/10/27/2007-1749.jpg
 .. image::  ../Picture/2007/10/27/2007-1750.jpg
@@ -119,8 +121,6 @@ togetterまとめ
 .. image::  ../Picture/2007/10/27/2007-1752.jpg
 .. image::  ../Picture/2007/10/27/2007-1753.jpg
 .. image::  ../Picture/2007/10/27/2007-1754.jpg
-.. image::  ../Picture/2007/10/27/2007-1755.jpg
-.. image::  ../Picture/2007/10/27/2007-1756.jpg
 
 2008年
 ---------------
@@ -128,10 +128,8 @@ togetterまとめ
 .. image::  ../Picture/2008/04/12/2008-574.JPG
 .. image::  ../Picture/2008/04/12/2008-575.JPG
 .. image::  ../Picture/2008/04/12/2008-576.JPG
-.. image::  ../Picture/2008/04/12/2008-577.JPG
 .. image::  ../Picture/2008/04/12/2008-578.JPG
 .. image::  ../Picture/2008/04/12/2008-579.JPG
-.. image::  ../Picture/2008/04/12/2008-580.JPG
 .. image::  ../Picture/2008/04/12/2008-581.JPG
 .. image::  ../Picture/2008/04/12/2008-582.JPG
 .. image::  ../Picture/2008/04/12/2008-583.JPG
@@ -139,11 +137,11 @@ togetterまとめ
 .. image::  ../Picture/2008/04/12/2008-585.JPG
 .. image::  ../Picture/2008/04/12/2008-586.JPG
 .. image::  ../Picture/2008/04/12/2008-587.JPG
-.. image::  ../Picture/2008/04/12/2008-588.JPG
 
 2009年
 ---------------
 
+.. image::  ../Picture/2009/08/01/009.JPG
 .. image::  ../Picture/2009/08/01/001.JPG
 .. image::  ../Picture/2009/08/01/002.JPG
 .. image::  ../Picture/2009/08/01/003.JPG
@@ -152,23 +150,17 @@ togetterまとめ
 .. image::  ../Picture/2009/08/01/006.JPG
 .. image::  ../Picture/2009/08/01/007.JPG
 .. image::  ../Picture/2009/08/01/008.JPG
-.. image::  ../Picture/2009/08/01/009.JPG
 .. image::  ../Picture/2009/08/01/010.JPG
 .. image::  ../Picture/2009/08/01/011.JPG
 .. image::  ../Picture/2009/08/01/012.JPG
 .. image::  ../Picture/2009/08/01/013.JPG
 .. image::  ../Picture/2009/08/01/014.JPG
-.. image::  ../Picture/2009/08/01/015.JPG
 .. image::  ../Picture/2009/08/01/016.JPG
-.. image::  ../Picture/2009/08/01/017.JPG
-.. image::  ../Picture/2009/08/01/018.JPG
-.. image::  ../Picture/2009/08/01/019.JPG
 
 2010年
 ---------------
 
-.. image::  ../Picture/2010/10/23/001.JPG
-.. image::  ../Picture/2010/10/23/002.JPG
+.. image::  ../Picture/2010/10/23/019.JPG
 .. image::  ../Picture/2010/10/23/003.JPG
 .. image::  ../Picture/2010/10/23/004.JPG
 .. image::  ../Picture/2010/10/23/005.JPG
@@ -179,12 +171,7 @@ togetterまとめ
 .. image::  ../Picture/2010/10/23/010.JPG
 .. image::  ../Picture/2010/10/23/011.JPG
 .. image::  ../Picture/2010/10/23/012.JPG
+.. image::  ../Picture/2010/10/23/002.JPG
 .. image::  ../Picture/2010/10/23/013.JPG
 .. image::  ../Picture/2010/10/23/014.JPG
 .. image::  ../Picture/2010/10/23/015.JPG
-.. image::  ../Picture/2010/10/23/016.JPG
-.. image::  ../Picture/2010/10/23/017.JPG
-.. image::  ../Picture/2010/10/23/018.JPG
-.. image::  ../Picture/2010/10/23/019.JPG
-.. image::  ../Picture/2010/10/23/020.JPG
-
