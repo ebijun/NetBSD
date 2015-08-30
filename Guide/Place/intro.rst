@@ -205,11 +205,11 @@ SSL設定
 
 LibreOfficeを動かしてみる
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-LibreOfficeをインストールしてみましょう。
+LibreOffice5をインストールしてみましょう。
 
 ::
 
- # cd /usr/pkgsrc/misc/libreoffice4
+ # cd /usr/pkgsrc/misc/libreoffice
  # make package-install
      : 9時間くらいかかります。
  # which soffice
