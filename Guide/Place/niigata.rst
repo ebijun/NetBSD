@@ -25,7 +25,8 @@
 
 Maps:
  JANOG25　会場周辺の食べ物やさんマップ[EBUG-talk 478]
- https://www.google.com/maps/d/viewer?mid=z7jg5yiZbnQU.kK1h53SqFwaE&hl=ja&gl=jp&ie=UTF8&oe=UTF8&msa=0
+
+ https://www.google.com/maps/d/viewer?mid=z7jg5yiZbnQU.kK1h53SqFwaE
 
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/niigata.rst

@@ -1,15 +1,15 @@
-VERSION: :1,$s/2015-08-22/2015-08-22/g
-ISO:     :1,$s/201508181510Z/201508181510Z/g
+VERSION: :1,$s/2015-09-05/2015-09-05/g
+ISO:     :1,$s/201508181510Z/201509012200Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 NetBSD:  :1,$s/7.99.21/7.99.21/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-08-22-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2015-09-05-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-08-22-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2015-09-05-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-08-22-earmv6hf/2015-08-22-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-09-05-earmv6hf/2015-09-05-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -23,12 +23,17 @@ pkg_info output version history:
 
 Update:
 - NetBSD-current 7.99.21 evbarm-earmv6hf 201508181510Z rpi.img from nyftp.
-- libfreetype.so updated 
+- Fixed bug in gpioiic_bb_set_bits(), which was introduced with the SDA/SCL-
+  reverse feature. by Frank Wille
+- mikutter 3.2.6
+- mlterm 3.5.1
+
+libfreetype.so updated:
   /usr/X11R7/lib/libfreetype.so.17 updated to libfreetype.so.18
   copy libfreetype.so.17.4.11 as /usr/X11R7/lib/libfreetype.so.17 if you need.
-  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-08-22-earmv6hf/libfreetype.so.17.4.11 
-- In this image, ld0a re-created with newfs -b 4096.
-- Set pkgsrc after resize partition: for this image size fit in 2GB.
+  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-09-05-earmv6hf/libfreetype.so.17.4.11 
+
+Set pkgsrc after resize partition: for this image size fit in 2GB.
   # cd /usr
   # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
   # ls /usr/pkgsrc                ... check if exists.
@@ -44,6 +49,7 @@ automatic resize partition: see /etc/rc.conf
   3. Calculate and resize ld0 partition and automatic reboot
   4. after the reboot,root partition fit for your card.
     http://movapic.com/pic/20150416115108552fa22c4f225
+  notice: In this image, ld0a re-created with newfs -b 4096.
 
 GPU - omxplayer and ioquake3-raspberrypi support
   After "Growing the root file-system"
@@ -63,7 +69,7 @@ I2C - "Raspberry Pi I2C implementation still broken?"
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-08-22/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-09-05/
 
  To install application.
  # pkg_add some_application_name
@@ -123,13 +129,13 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2015 Shimane demonstration use, 
+For Open Source Conference 2015 Niigata demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2015-shimane/
- https://www.facebook.com/events/1415445248776489/
+ http://www.ospn.jp/osc2015-niigata/
+ https://www.facebook.com/events/373949016133899/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2015shimane.pdf
+ http://www.soum.co.jp/~jun/OSC2015niigata.pdf
 
 - NetBSD 7.99.21 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
@@ -169,7 +175,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-08-22/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-09-05/
 
 Installed Packages:
 kterm
