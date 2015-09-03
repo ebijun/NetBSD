@@ -1,5 +1,5 @@
 VERSION: :1,$s/2015-09-05/2015-09-05/g
-ISO:     :1,$s/201508181510Z/201509012200Z/g
+ISO:     :1,$s/201509012200Z/201509012200Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 NetBSD:  :1,$s/7.99.21/7.99.21/g
 
@@ -22,7 +22,7 @@ pkg_info output version history:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.21 evbarm-earmv6hf 201508181510Z rpi.img from nyftp.
+- NetBSD-current 7.99.21 evbarm-earmv6hf 201509012200Z rpi.img from nyftp.
 - Fixed bug in gpioiic_bb_set_bits(), which was introduced with the SDA/SCL-
   reverse feature. by Frank Wille
 - mikutter 3.2.6
