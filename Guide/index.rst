@@ -37,10 +37,11 @@
  :maxdepth: 3
  :numbered:
 
- Place/niigata
+ Place/hiroshima
  Place/intro
  RPI
-
+ X68K
+ 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`

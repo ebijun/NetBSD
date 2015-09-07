@@ -85,7 +85,6 @@ OSC広島発表
  OSC展示に見るNetBSD6.0新機能,OSC2012広島, http://www.slideshare.net/tsutsuii/osc-netbsd-60
  (XM6iによる?)NetBSD/m68k FPE の実装,OSC2013広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc13hi/
  NetBSD/x68k 近況,OSC2013広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc13hi/
-
  X680x0 でもユーザストリームがしたい!,OSC2014広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc14hi/
  NetBSD/x68k 近況,OSC2014広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc14hi/
 
@@ -175,8 +174,6 @@ OSC広島発表
 2013年
 ~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2013/10/05/DSC_2657.jpg
-.. image::  ../Picture/2013/10/05/DSC_2658.jpg
 .. image::  ../Picture/2013/10/05/dsc03063.jpg
 .. image::  ../Picture/2013/10/05/dsc03085.jpg
 .. image::  ../Picture/2013/10/05/dsc03092.jpg
@@ -189,6 +186,14 @@ OSC広島発表
 .. image::  ../Picture/2013/10/05/dsc03128.jpg
 .. image::  ../Picture/2013/10/05/dsc03135.jpg
 .. image::  ../Picture/2013/10/05/dsc03139.jpg
+.. image::  ../Picture/2013/10/06/dsc03149.jpg
+.. image::  ../Picture/2013/10/06/dsc03152.jpg
+.. image::  ../Picture/2013/10/06/dsc03154.jpg
+.. image::  ../Picture/2013/10/06/dsc03156.jpg
+.. image::  ../Picture/2013/10/06/dsc03157.jpg
+.. image::  ../Picture/2013/10/06/dsc03158.jpg
+.. image::  ../Picture/2013/10/05/DSC_2657.jpg
+.. image::  ../Picture/2013/10/05/DSC_2658.jpg
 .. image::  ../Picture/2013/10/06/DSC_2664.jpg
 .. image::  ../Picture/2013/10/06/DSC_2673.jpg
 .. image::  ../Picture/2013/10/06/DSC_2674.jpg
@@ -199,13 +204,4 @@ OSC広島発表
 .. image::  ../Picture/2013/10/06/DSC_2683.jpg
 .. image::  ../Picture/2013/10/06/DSC_2689.jpg
 .. image::  ../Picture/2013/10/06/DSC_2690.jpg
-.. image::  ../Picture/2013/10/06/DSC_2695.jpg
-.. image::  ../Picture/2013/10/06/DSC_2700.jpg
-.. image::  ../Picture/2013/10/06/dsc03149.jpg
-.. image::  ../Picture/2013/10/06/dsc03152.jpg
-.. image::  ../Picture/2013/10/06/dsc03154.jpg
-.. image::  ../Picture/2013/10/06/dsc03156.jpg
-.. image::  ../Picture/2013/10/06/dsc03157.jpg
-.. image::  ../Picture/2013/10/06/dsc03158.jpg
-.. image::  ../Picture/2013/10/06/dsc03160.jpg
-.. image::  ../Picture/2013/10/06/dsc03161.jpg
+
