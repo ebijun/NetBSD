@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,7 +35,11 @@ X68K関連発表
 .. csv-table::
  :widths: 35 10 50
 
- NetBSD/x68kとXM6i 追いかけっこ開発,OSC2012広島,http://xm6i.org/event/osc2012hi
+ X680x0 でもユーザストリームがしたい!,OSC2014広島, http://www.pastel-flower.jp/~isaki/NetBSD/osc14hi/
+ NetBSD/x68k 近況 ,OSC2014広島, http://www.pastel-flower.jp/~isaki/NetBSD/osc14hi/	  
+ NetBSD/x68k 近況,OSC2013広島, http://www.pastel-flower.jp/~isaki/NetBSD/osc13hi/
+ (XM6iによる?)NetBSD/m68k FPE の実装,OSC2013広島, http://www.pastel-flower.jp/~isaki/NetBSD/osc13hi/
+ NetBSD/x68kとXM6i 追いかけっこ開発,OSC2012広島, http://xm6i.org/event/osc2012hi
  OSC展示に見るNetBSD6.0新機能,OSC2012広島, http://www.slideshare.net/tsutsuii/osc-netbsd-60
  NetBSD/x68k近況,OSC2012愛媛, http://xm6i.org/event/osc2012eh/page1.html
  XM6iのご紹介, OSC2011広島, http://xm6i.org/event/osc2011hi
@@ -53,89 +57,43 @@ OSCとX68K展示
  XM6i on MacOSX,NetBSD/x68k
 
 .. image:: Picture/2012/10/20/DSC_1045.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1051.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1053.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1060.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1061.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1062.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1066.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1074.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1078.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1079.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1080.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1081.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1082.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1085.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1090.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/DSC_1091.JPG
- :width: 400
-
 .. image:: Picture/2012/10/20/dsc01856.jpg
- :width: 400
-
 .. image:: Picture/2012/10/20/dsc01859.jpg
- :width: 400
-
 .. image:: Picture/2012/10/20/dsc01860.jpg
- :width: 400
-
 .. image:: Picture.org/2011/04/16/P1000372.JPG
- :width: 400
-
 
 .. csv-table::
  :widths: 20 3 60
 
- OSC2014島根,2014/8/22,XM6i
- OSC2013島根,2013/8/24,XM6i
- OSC2013名古屋,2013/6/21-22,XM6i
+ OSC2015京都,2012/10/20,XM6i-earmv6hf初展示
+ OSC2014広島,2012/10/20,Neptune-X Nereid 060turbo Xellent30 XM6i
+ OSC2013広島,2012/10/20,Neptune-X Nereid 060turbo Xellent30 XM6i
  OSC2012広島,2012/10/20,Neptune-X Nereid 060turbo Xellent30 XM6i
- KOF2012,2012/11/9-10,XM6i
- OSC2012京都,2012/8/3-4,XM6i
- OSC2012北海道,2012/6/16,XM6i
- OSC2012愛媛,2012/3/24,XM6i
- OSC2012大分,2012/2/11,XM6i
- OSC2011東京秋,2011/11/19-20,XM6i
  OSC2011広島,2011/10/1,Neptune-X Nereid 060turbo XM6i
- OSC2011神戸,2011/4/16,TT030 X68
- OSC2010東京秋,2010/9/10-11,XM6i
+ OSC2011神戸,2011/4/16,TT030 X68K
+ OSC2010東京秋,2010/9/10-11,XM6i 初展示
  OSC2007東京秋,2007/10/5-6,Nereid
  オープンソース祭り2001,2001/2/10-11,X68030 みのうらさんの？ [6]_
 
 NetBSD/i386でXM6iを動かしてみる。
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-NetBSD/i386を用意し、その上でXM6iを動かしてみます。
+NetBSD/amd64を用意し、その上でXM6iを動かしてみます。
 
 必要なパッケージのインストール
 """""""""""""""""""""""""""""""""""""
@@ -143,19 +101,19 @@ XM6iを動かすために必要なパッケージをインストールしてお�
 
 ::
 
- # cd /usr/pkgsrc/x11/wxGTK28
+ # cd /usr/pkgsrc/x11/wxGTK30
  # make package-install
 
 XM6iのダウンロード
 """"""""""""""""""""""
- NetBSD/i386用XM6iを以下のディレクトリからダウンロードして、展開します。
+ XM6iをダウンロードして、展開します。
 
 ::
 
  # mkdir -p /usr/local/XM6i
  # cd /usr/local/XM6i
- # ftp http://xm6i.org/archive/XM6i-0.42-netbsd6.1-i386-2013Q1.tar.gz 
- # tar xzvf XM6i-0.42-netbsd6.1-i386-2013Q1.tar.gz 
+ # http://xm6i.org/download.html
+ # tar xzvf XM6i-0.51-netbsd7.0-i386-amd64-2015Q2.tar.gz 
 
 参考資料
 ~~~~~~~~
