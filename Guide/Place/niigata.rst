@@ -67,7 +67,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2015新潟 NetBSDブース展示の記録,
+ OSC2015新潟 NetBSDブース展示の記録,http://togetter.com/li/869752
 
 よく行く店
 ~~~~~~~~~~~~~~
