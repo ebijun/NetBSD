@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.20 (NETWALKER_SD) #2: Thu Jul 30 20:31:05 JST 2015
-	jun@amiasp1.soum.co.jp:/usr/obj/kernel/earmv7hf/NETWALKER_SD
+NetBSD 7.99.21 (NETWALKER) #4: Thu Sep 10 11:30:23 JST 2015
+	jun@amiasp1.soum.co.jp:/usr/obj/kernel/earmv7hf/NETWALKER
 total memory = 512 MB
 avail memory = 501 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -38,7 +38,7 @@ imxgpio2 at axi0 addr 0x73f8c000 intr 54 irqbase 192: interrupts 192..223
 imxgpio3 at axi0 addr 0x73f90000 intr 56 irqbase 224: interrupts 224..255
 imxuart0 at axi0 addr 0x73fbc000 intr 31
 sdhc0 at axi0 addr 0x70004000 intr 1: SD/MMC host controller
-sdhc0: SDHC 2.0, rev 18, SDMA, 54000 kHz, 1.8V 3.0V 3.3V, 4096 byte blocks
+sdhc0: SDHC 2.0, rev 18, SDMA, 54000 kHz, HS 1.8V 3.0V 3.3V, 4096 byte blocks
 sdmmc0 at sdhc0 slot 0
 imxclock0 at axi0 addr 0x73fac000-0x73faffff intr 40
 imxclock1 at axi0 addr 0x73fb0000-0x73fb3fff intr 41
@@ -84,12 +84,15 @@ gpio3 at imxgpio3: 32 pins
 lidsw0 at gpio3 pins 12: NETWALKER lid switch
 uhub0 at usb0: i.MX EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
+sdhc0: cmd timeout error
 uhub1 at usb1: i.MX EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub1: 1 port with 1 removable, self powered
 oj6sh0: id 0x0d, revision 0x02
+IPsec: Initialized Security Association Processing.
+sdhc0: cmd timeout error
 ld0 at sdmmc0: <0x02:0x544d:SA02G:0x09:0x28427115:0x0c1>
 ld0: 1898 MB, 964 cyl, 64 head, 63 sec, 512 bytes/sect x 3887104 sectors
-ld0: 4-bit width, bus clock 50.000 MHz
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 uhub2 at uhub1 port 1: vendor 0424 product 2514, class 9/0, rev 2.00/0.00, addr 2
 uhub2: multiple transaction translators
 uhub2: 4 ports with 4 removable, self powered
@@ -110,9 +113,16 @@ scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <SanDisk, Cruzer Fit, 1.27> disk removable
 sd0: 15267 MB, 31018 cyl, 16 head, 63 sec, 512 bytes/sect x 31266816 sectors
 boot device: <unknown>
+root device: sd0
+dump device (default sd0b): 
+file system (default generic): 
 root on sd0a dumps on sd0b
-kern.module.path=/stand/evbarm/7.99.20/modules
+root file system type: ffs
+kern.module.path=/stand/evbarm/7.99.21/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
+init path (default /sbin/init): 
+init: trying /sbin/init
 wsdisplay0: screen 4 added (std, vt100 emulation)
+WARNING: negative runtime; monotonic clock has gone backwards
