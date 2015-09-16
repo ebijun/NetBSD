@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -44,7 +44,8 @@ Maps:
  2011,12/3,420,26,筑紫女学園大学
  2012,12/8,550,38,KCS福岡情報専門学校
  2013,11/16,500,25,福岡ソフトリサーチパーク センタービル
- 2014,11/21-22,,23,福岡ソフトリサーチパーク センタービル
+ 2014,11/21-22,500,23,福岡ソフトリサーチパーク センタービル
+ 2015,10/3,,30,九州産業大学 2号館
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,6 +57,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+
+ 79,OSC2015福岡,http://www.soum.co.jp/~jun/OSC2015fukuoka.pdf
  66,OSC2014福岡,http://www.soum.co.jp/~jun/OSC2014fukuoka.pdf
  51,OSC2013福岡,http://www.soum.co.jp/~jun/OSC2013fukuoka.pdf
  37,OSC2012福岡,http://www.soum.co.jp/~jun/OSC2012fukuoka.pdf
@@ -68,7 +71,8 @@ togetterまとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2014福岡 NetBSDブース展示の記録,
+ OSC2015福岡 NetBSDブース展示の記録,
+ OSC2014福岡 NetBSDブース展示の記録,http://togetter.com/li/748237
  OSC2013福岡 NetBSDブース展示の記録,http://togetter.com/li/590835
  OSC2012福岡 NetBSDブース展示の記録,http://togetter.com/li/419569
 
@@ -129,6 +133,7 @@ OSC福岡主な展示物
 .. csv-table::
  :widths: 15 35 60
 
+ 2014/11/21,福岡ソフトリサーチパーク,RPI Netwalker XM6i Cubieboard2 
  2013/11/16,福岡ソフトリサーチパーク,RPI Netwalker XM6i
  2012/12/8,福岡情報専門学校,WZero3 Zaurus XM6i
  2011/12/3,筑紫女学院,hpcmips/hpcarm/Jornada680/WZero3/Xen4+teokure
@@ -136,6 +141,25 @@ OSC福岡主な展示物
  2009/12/5,九州産業大学,hpcmips/hpcarm/Jornada680/WZero3
  2008/12/13,福岡大学,hpcmips/hpcarm/Jornada680/WZero3/USBカメラ
  2007/12/8,ASCビル,hpcmips/hpcarm/Jornada680
+
+2014年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2014/11/22/DSC06142.JPG
+.. image::  ../Picture/2014/11/22/DSC06147.JPG
+.. image::  ../Picture/2014/11/22/DSC06148.JPG
+.. image::  ../Picture/2014/11/22/DSC06152.JPG
+.. image::  ../Picture/2014/11/22/DSC06153.JPG
+.. image::  ../Picture/2014/11/22/DSC06156.JPG
+.. image::  ../Picture/2014/11/22/DSC_0683.jpg
+.. image::  ../Picture/2014/11/22/DSC_0684.jpg
+.. image::  ../Picture/2014/11/22/DSC_0686.jpg
+.. image::  ../Picture/2014/11/22/DSC_0687.jpg
+.. image::  ../Picture/2014/11/22/DSC_0688.jpg
+.. image::  ../Picture/2014/11/22/DSC_0692.jpg
+
+2013年
+----------------------
 
 .. image:: ../Picture/2013/11/15/DSC_2876.jpg
 .. image:: ../Picture/2013/11/15/DSC_2877.jpg
@@ -150,6 +174,10 @@ OSC福岡主な展示物
 .. image:: ../Picture/2013/11/16/dsc03631.jpg
 .. image:: ../Picture/2013/11/16/dsc03632.jpg
 .. image:: ../Picture/2013/11/16/dsc03635.jpg
+
+2012年
+----------------------
+
 .. image:: ../Picture/2012/12/08/DSC_1364.jpg
 .. image:: ../Picture/2012/12/08/DSC_1368.jpg
 .. image:: ../Picture/2012/12/08/DSC_1369.jpg
@@ -158,6 +186,10 @@ OSC福岡主な展示物
 .. image:: ../Picture/2012/12/08/DSC_1374.jpg
 .. image:: ../Picture/2012/12/08/DSC_1376.jpg
 .. image:: ../Picture/2012/12/08/DSC_1377.jpg
+
+2011年
+----------------------
+
 .. image:: ../Picture/2011/12/02/P1001371.JPG
 .. image:: ../Picture/2011/12/02/P1001372.JPG
 .. image:: ../Picture/2011/12/02/P1001376.JPG
@@ -177,6 +209,10 @@ OSC福岡主な展示物
 .. image:: ../Picture/2011/12/04/P1001396.JPG
 .. image:: ../Picture/2011/12/04/P1001397.JPG
 .. image:: ../Picture/2011/12/04/P1001398.JPG
+
+2010年
+----------------------
+	   
 .. image:: ../Picture/2010/12/10/P1000102.JPG
 .. image:: ../Picture/2010/12/10/P1000104.JPG
 .. image:: ../Picture/2010/12/10/P1000107.JPG

@@ -37,10 +37,9 @@
  :maxdepth: 3
  :numbered:
 
- Place/hiroshima
+ Place/fukuoka
  Place/intro
  RPI
- X68K
  
 * :ref:`genindex`
 * :ref:`modindex`
