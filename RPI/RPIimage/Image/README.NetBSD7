@@ -1,17 +1,16 @@
-VERSION: :1,$s/2015-08-19/2015-08-19/g
-ISO:     :1,$s/201508182000Z/201508182000Z/g
+VERSION: :1,$s/2015-09-28/2015-09-28/g
+ISO:     :1,$s/201509271650Z/201509271650Z/g
 PKGSRC:  :1,$s/2015Q2/2015Q2/
-NetBSD:  :1,$s/7.0_RC3/7.0_RC3/g
+NetBSD:  :1,$s/7.0/7.0/g
 
 To: port-armNetBSD.org@localhost
-Subject: NetBSD7.0RC3: 2015-08-19-netbsd7.0_RC3-raspi-earmv6hf.img 
+Subject: NetBSD7.0RC3: 2015-09-28-netbsd7.0-raspi-earmv6hf.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-08-19-netbsd7.0_RC3-raspi-earmv6hf.img for RPI.
+I've updated 2015-09-28-netbsd7.0-raspi-earmv6hf.img for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-7.0_RC3/2015-08-19-netbsd7.0_RC3-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-7.0/2015-09-28-netbsd7.0-raspi-earmv6hf.img.gz
 
-Update:
 automatic resize partition: see /etc/rc.conf
   1. copy image to SD/MicroSD
   2. Boot 
@@ -29,15 +28,15 @@ dmesg:
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
-- NetBSD-7.0_RC3-201508182000Z evbarm-earmv6hf rpi.img from nyftp.
-- pkgsrc: 2015Q2 pre-installed on /usr/pkgsrc.
+- NetBSD-7.0-201509271650Z evbarm-earmv6hf rpi.img from nyftp.
+- pkgsrc: 2015Q3 pre-installed on /usr/pkgsrc.
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
 PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_2015Q2/All
 
 I'll make test packages with this image:
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-7.0_RC3/earmv6hf/
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-7.0/earmv6hf/
 
  To install application.
  # pkg_add some_application_name

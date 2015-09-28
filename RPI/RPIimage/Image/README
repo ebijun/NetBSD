@@ -1,15 +1,15 @@
-VERSION: :1,$s/2015-09-19/2015-09-19/g
-ISO:     :1,$s/201509130420Z/201509130420Z/g
+VERSION: :1,$s/2015-10-03/2015-10-03/g
+ISO:     :1,$s/201509271300Z/201509271300Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 NetBSD:  :1,$s/7.99.21/7.99.21/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-09-19-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2015-10-03-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-09-19-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2015-10-03-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-09-19-earmv6hf/2015-09-19-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-10-03-earmv6hf/2015-10-03-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -22,15 +22,13 @@ pkg_info output version history:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.21 evbarm-earmv6hf 201509130420Z rpi.img from nyftp.
-- bind 9.10.2-P4
-- Postfix 2.11.6
-- mikutter 3.2.7
+- NetBSD-current 7.99.21 evbarm-earmv6hf 201509271300Z rpi.img from nyftp.
+- mikutter 3.2.9
 
 libfreetype.so updated:
   /usr/X11R7/lib/libfreetype.so.17 updated to libfreetype.so.18
   copy libfreetype.so.17.4.11 as /usr/X11R7/lib/libfreetype.so.17 if you need.
-  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-09-19-earmv6hf/libfreetype.so.17.4.11 
+  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-10-03-earmv6hf/libfreetype.so.17.4.11 
 
 Set pkgsrc after resize partition: for this image size fit in 2GB.
   # cd /usr
@@ -68,7 +66,7 @@ I2C - "Raspberry Pi I2C implementation still broken?"
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-09-19/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-10-03/
 
  To install application.
  # pkg_add some_application_name
@@ -123,19 +121,18 @@ pkgsrc Todo:
   https://github.com/golang/go/commit/30d60936d97423af0403f2d5395c604ac0ff3757
 - www/firefox
   firefox-37.0.2nb1.tgz can compile on earmv7hf, 38 failed.
-- www/midori,epiphany
 - gnuradio: g77 failed. need RTL2832U master.
 
 
 =====================
 
-For Open Source Conference 2015 Hiroshima demonstration use, 
+For Open Source Conference 2015 Fukuoka demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2015-hiroshima/
- https://www.facebook.com/events/416415658540535/
+ http://www.ospn.jp/osc2015-fukuoka/
+ https://www.facebook.com/events/1117597451600020/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2015hiroshima.pdf
+ http://www.soum.co.jp/~jun/OSC2015fukuoka.pdf
 
 - NetBSD 7.99.21 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
@@ -175,7 +172,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-09-19/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-10-03/
 
 Installed Packages:
 kterm

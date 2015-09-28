@@ -57,7 +57,6 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
-
  79,OSC2015福岡,http://www.soum.co.jp/~jun/OSC2015fukuoka.pdf
  66,OSC2014福岡,http://www.soum.co.jp/~jun/OSC2014fukuoka.pdf
  51,OSC2013福岡,http://www.soum.co.jp/~jun/OSC2013fukuoka.pdf
@@ -84,7 +83,7 @@ togetterまとめ
  :widths: 25 15 60
 
  PADDY,渡辺通,地ビール。前日夜はたいていここにいます。
- 能古島,能古島,会場から意外と近い。ノコリータを飲もう。
+ 能古島,能古島,意外と近い。ノコリータを飲もう。
  楽天地,春吉,もつ鍋 山本昌のサイン席
  ブルーマスター,別府,あまおうエール 12:00-18:00 日祝休 
  スナックなう,別府,泥酔通りにあるスナックなうなう。
@@ -109,10 +108,9 @@ togetterまとめ
  Off Broadway,親不孝,ルイスさんのバー。牛丼があったりして。
  メルシー博多,井尻,大橋の赤木酒店のビストロ的角打でやってたレミさんの店
  バイエルン福岡,今川,ドイツパン&ドイツビール。クロワッサンふっかふか。
- 別府のビール,別府,世界の瓶ビール
- 別府のコーヒー,別府,スタンド＋座席形式のコーヒー。
- 洋菓子,別府からバイエルン,
- 酒屋,別府からバイエルン,
+ ルポン デ ビエール,別府,世界の瓶ビール
+ ALACOFFEE,別府,スタンド＋座席形式のコーヒー。
+ ダムドゥキャロー,鳥飼,洋菓子ケーキ
  Bon Vinvant,大橋,赤木酒店奥に広がるバール 17:00-23:00 日祝休
  信長本家,筑紫口,やきとりもつなべ大人数可
  旭軒駅前本店,博多駅,ハードコア餃子
@@ -161,7 +159,6 @@ OSC福岡主な展示物
 2013年
 ----------------------
 
-.. image:: ../Picture/2013/11/15/DSC_2876.jpg
 .. image:: ../Picture/2013/11/15/DSC_2877.jpg
 .. image:: ../Picture/2013/11/16/DSC_2878.jpg
 .. image:: ../Picture/2013/11/16/DSC_2879.jpg
@@ -178,46 +175,22 @@ OSC福岡主な展示物
 2012年
 ----------------------
 
-.. image:: ../Picture/2012/12/08/DSC_1364.jpg
 .. image:: ../Picture/2012/12/08/DSC_1368.jpg
 .. image:: ../Picture/2012/12/08/DSC_1369.jpg
 .. image:: ../Picture/2012/12/08/DSC_1370.jpg
 .. image:: ../Picture/2012/12/08/DSC_1371.jpg
 .. image:: ../Picture/2012/12/08/DSC_1374.jpg
 .. image:: ../Picture/2012/12/08/DSC_1376.jpg
-.. image:: ../Picture/2012/12/08/DSC_1377.jpg
 
 2011年
 ----------------------
 
-.. image:: ../Picture/2011/12/02/P1001371.JPG
-.. image:: ../Picture/2011/12/02/P1001372.JPG
 .. image:: ../Picture/2011/12/02/P1001376.JPG
-.. image:: ../Picture/2011/12/02/P1001377.JPG
 .. image:: ../Picture/2011/12/02/P1001380.JPG
 .. image:: ../Picture/2011/12/02/P1001381.JPG
 .. image:: ../Picture/2011/12/03/P1001383.JPG
 .. image:: ../Picture/2011/12/03/P1001384.JPG
-.. image:: ../Picture/2011/12/03/P1001385.JPG
-.. image:: ../Picture/2011/12/03/P1001386.JPG
 .. image:: ../Picture/2011/12/03/P1001389.JPG
-.. image:: ../Picture/2011/12/04/P1001390.JPG
-.. image:: ../Picture/2011/12/04/P1001392.JPG
 .. image:: ../Picture/2011/12/04/P1001393.JPG
-.. image:: ../Picture/2011/12/04/P1001394.JPG
-.. image:: ../Picture/2011/12/04/P1001395.JPG
 .. image:: ../Picture/2011/12/04/P1001396.JPG
 .. image:: ../Picture/2011/12/04/P1001397.JPG
-.. image:: ../Picture/2011/12/04/P1001398.JPG
-
-2010年
-----------------------
-	   
-.. image:: ../Picture/2010/12/10/P1000102.JPG
-.. image:: ../Picture/2010/12/10/P1000104.JPG
-.. image:: ../Picture/2010/12/10/P1000107.JPG
-.. image:: ../Picture/2010/12/10/P1000109.JPG
-.. image:: ../Picture/2010/12/10/P1000110.JPG
-.. image:: ../Picture/2010/12/10/P1000113.JPG
-.. image:: ../Picture/2010/12/11/P1000115.JPG
-.. image:: ../Picture/2010/12/11/P1000116.JPG

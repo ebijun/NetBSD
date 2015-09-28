@@ -6,14 +6,15 @@ ARCH=earmv6hf
 PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_2015Q2/All
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.0_RC3-evbarm-earmv6hf-201508182000Z.iso
+IMAGE=/usr/release/images/NetBSD-7.0-evbarm-earmv6hf-201509271650Z.iso
 
-PKGSRC=../../../pkgsrc/pkgsrc-2015Q2.tar.gz
+
+PKGSRC=../../../pkgsrc/pkgsrc-2015Q3.tar.gz
 
 ###
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd7.0_RC3-raspi-${ARCH}.img
+FILE=`date +%Y-%m-%d`-netbsd7.0-raspi-${ARCH}.img
 FILE_TMP=a.img
 
 # extract sets.
