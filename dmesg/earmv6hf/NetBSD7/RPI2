@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.0_RC3 (RPI2.201508182000Z)
+NetBSD 7.0 (RPI2.201509271650Z)
 total memory = 944 MB
 avail memory = 928 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -58,16 +58,6 @@ bcmgpio1 at obio0: GPIO [32...53]
 gpio1 at bcmgpio1: 22 pins
 usb0 at dwctwo0: USB revision 2.0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
-cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu2: isar: [0]=0x2101110 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x10011142, [5]=0
-cpu2: mmfr: [0]=0x10101105 [1]=0x40000000 [2]=0x1240000 [3]=0x2102211
-cpu2: pfr: [0]=0x1131 [1]=0x11011
-cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
-cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
-vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-vfp2: mvfr: [0]=0x10110222 [1]=0x11111111
 cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
 cpu1: isar: [0]=0x2101110 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x10011142, [5]=0
@@ -78,6 +68,16 @@ cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
 vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 vfp1: mvfr: [0]=0x10110222 [1]=0x11111111
+cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu2: isar: [0]=0x2101110 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x10011142, [5]=0
+cpu2: mmfr: [0]=0x10101105 [1]=0x40000000 [2]=0x1240000 [3]=0x2102211
+cpu2: pfr: [0]=0x1131 [1]=0x11011
+cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+vfp2: mvfr: [0]=0x10110222 [1]=0x11111111
 cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
 cpu3: isar: [0]=0x2101110 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x10011142, [5]=0
