@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<!DOCTYPE webpage
+  PUBLIC "-//NetBSD//DTD Website-based NetBSD Extension//EN"
+         "http://www.NetBSD.org/XML/htdocs/lang/share/xml/website-netbsd.dtd">
+
+<webpage id="releases-formal-7-NetBSD-7.0" release="7.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<config param="desc" value="NetBSD 7.0 Release Announcement"/>
+<config param="cvstag" value="$NetBSD: NetBSD-7.0.xml,v 1.4 2015/10/07 01:31:40 snj Exp $"/>
+<config param="rcsdate" value="$Date: 2015/10/07 01:31:40 $"/>
+<head>
+<title>Announcing NetBSD 7.0</title>
+</head>
+
+<sect1 id="announcing">
+<title>Introduction</title>
+
+<para>
+  The NetBSD Project is pleased to announce NetBSD 7.0, the
+  fifteenth major release of the NetBSD operating system.
+</para>
+
+<para>
+  Some highlights of the NetBSD 7.0 release are: 
+  <itemizedlist>
+    <listitem><simpara>DRM/KMS support brings accelerated graphics to x86
+      systems using Intel and Radeon devices</simpara></listitem>
+    <listitem><simpara>Multiprocessor ARM support</simpara></listitem>
+    <listitem><simpara>Support for many new ARM boards:
+      <itemizedlist>
+        <listitem><simpara>Raspberry Pi 2</simpara></listitem>
+        <listitem><simpara>ODROID-C1</simpara></listitem>
+        <listitem><simpara>BeagleBoard, BeagleBone, BeagleBone Black
+          </simpara></listitem>
+        <listitem><simpara>MiraBox</simpara></listitem>
+        <listitem><simpara>Allwinner A20, A31: Cubieboard2, Cubietruck, Banana
+          Pi, etc.</simpara></listitem>
+        <listitem><simpara>Freescale i.MX50, i.MX51: Kobo Touch,
+          Netwalker</simpara></listitem>
+        <listitem><simpara>Xilinx Zynq: Parallela, ZedBoard</simpara></listitem>
+      </itemizedlist>
+    </simpara></listitem>
+    <listitem><simpara>Major NPF improvements: switched to BPF with just-in-time
+      (JIT) compilation by default, support for dynamic rules, support for
+      static (stateless) NAT, support for IPv6-to-IPv6 Network Prefix
+      Translation (NPTv6) as per RFC 6296, support for CDB based tables (uses
+      perfect hashing and guarantees lock-free O(1) lookups), syntax changes,
+      many bug fixes and performance improvements.</simpara></listitem>
+    <listitem><simpara>Added multiprocessor support to the USB subsystem
+      </simpara></listitem>
+    <listitem><simpara>Numerous improvements in the handling of disk wedges
+      </simpara></listitem>
+    <listitem><simpara>GPT support in sysinst via the extended partitioning menu
+      </simpara></listitem>
+    <listitem><simpara>Lua kernel scripting</simpara></listitem>
+    <listitem><simpara>Added a new port, epoc32, supporting Psion EPOC PDAs
+      </simpara></listitem>
+    <listitem><simpara>GCC updated to 4.8</simpara></listitem>
+    <listitem><simpara>Optional fully BSD-licensed C/C++ runtime env: compiler_rt, libc++, libcxxrt</simpara></listitem>
+</itemizedlist>
+
+  <ulink url="#major-changes">Please read below</ulink> for a full
+  list of changes in NetBSD 7.0.
+
+</para>
+
+<para>
+  Complete source and binaries for NetBSD 7.0 are available for download
+  at many sites around the world. A list of download sites providing FTP,
+  AnonCVS, SUP, and other services may be found at
+  <ulink url="http://www.NetBSD.org/mirrors/" />. 
+  We encourage users who wish to install via ISO or USB disk images to
+  download via BitTorrent by using the <ulink
+  url="../../mirrors/torrents/">torrent files</ulink> supplied in
+  the images area.
+  A list of hashes for the NetBSD 7.0 distribution has been signed with
+  the well-connected PGP key for the NetBSD Security Officer:
+  <ulink url="http://ftp.NetBSD.org/pub/NetBSD/security/hashes/NetBSD-7.0_hashes.asc"/>
+</para>
+
+<para>
+    NetBSD is free. All of the code is under non-restrictive licenses,
+    and may be used without paying royalties to anyone. Free support
+    services are available via our mailing lists and website.  Commercial
+    support is available from a variety of sources.  More extensive
+    information on NetBSD is available from our website:
+</para>
+
+<blockquote>
+  <para>
+    <ulink url="http://www.NetBSD.org/">http://www.NetBSD.org/</ulink>
+  </para>
+</blockquote>
+
+</sect1>
+
+<xi:include href="changes.xml"/>
+
+<sect1 id="mirrors">
+<title>NetBSD mirror sites</title>
+
+<para>
+    Please use a mirror site close to you.
+</para>
+    <itemizedlist>
+        <listitem><ulink url="../../mirrors/#ftp">FTP</ulink></listitem>
+        <listitem><ulink url="../../mirrors/#iso">ISO images</ulink></listitem>
+        <listitem><ulink url="../../mirrors/#anoncvs">Anonymous CVS</ulink></listitem>
+        <listitem><ulink url="../../mirrors/#bittorrent">BitTorrent</ulink></listitem>
+        <listitem><ulink url="../../mirrors/#sup">SUP</ulink></listitem>
+        <listitem><ulink url="../../mirrors/#cvsup">CVSup</ulink></listitem>
+        <listitem><ulink url="../../mirrors/#rsync">rsync</ulink></listitem>
+        <listitem><ulink url="../../mirrors/#afs">AFS</ulink></listitem>
+    </itemizedlist>
+
+</sect1>
+ 
+<sect1 id="system-families">
+<title>System families supported by NetBSD 7.0</title>
+
+<para>
+    The NetBSD 7.0 release provides supported binary distributions for
+    the following systems:
+</para>
+
+<para>
+<table border="0" cellspacing="0" cellpadding="3" id="system-families-table">
+<tr><td><ulink url="../../ports/acorn26/">NetBSD/acorn26</ulink></td>
+    <td>Acorn Archimedes, A-series and R-series systems</td></tr>
+<tr><td><ulink url="../../ports/acorn32/">NetBSD/acorn32</ulink></td>
+    <td>Acorn RiscPC/A7000, VLSI RC7500</td></tr>
+<tr><td><ulink url="../../ports/algor/">NetBSD/algor</ulink></td>
+    <td>Algorithmics, Ltd. MIPS evaluation boards</td></tr>
+<tr><td><ulink url="../../ports/alpha/">NetBSD/alpha</ulink></td>
+    <td>Digital/Compaq Alpha (64-bit)</td></tr>
+<tr><td><ulink url="../../ports/amd64/">NetBSD/amd64</ulink></td>
+    <td>AMD family processors like Opteron, Athlon64, and Intel CPUs with EM64T extension</td></tr>
+<tr><td><ulink url="../../ports/amiga/">NetBSD/amiga</ulink></td>
+    <td>Commodore Amiga and MacroSystem DraCo</td></tr>
+<tr><td><ulink url="../../ports/amigappc/">NetBSD/amigappc</ulink></td>
+    <td>PowerPC-based Amiga boards.</td></tr>
+<tr><td><ulink url="../../ports/arc/">NetBSD/arc</ulink></td>
+    <td>MIPS-based machines following the Advanced RISC Computing spec</td></tr>
+<tr><td><ulink url="../../ports/atari/">NetBSD/atari</ulink></td>
+    <td>Atari TT030, Falcon, Hades</td></tr>
+<tr><td><ulink url="../../ports/bebox/">NetBSD/bebox</ulink></td>
+    <td>Be Inc's BeBox</td></tr>
+<tr><td><ulink url="../../ports/cats/">NetBSD/cats</ulink></td>
+    <td>Chalice Technology's CATS and Intel's EBSA-285 evaluation boards</td></tr>
+<tr><td><ulink url="../../ports/cesfic/">NetBSD/cesfic</ulink></td>
+    <td>CES FIC8234 VME processor board</td></tr>
+<tr><td><ulink url="../../ports/cobalt/">NetBSD/cobalt</ulink></td>
+    <td>Cobalt Networks' MIPS-based Microservers</td></tr>
+<tr><td><ulink url="../../ports/dreamcast/">NetBSD/dreamcast</ulink></td>
+    <td>Sega Dreamcast game console</td></tr>
+<tr><td><ulink url="../../ports/emips/">NetBSD/emips</ulink></td>
+    <td>The Extensible MIPS architecture from Microsoft Research</td></tr>
+<tr><td><ulink url="../../ports/epoc32/">NetBSD/epoc32</ulink></td>
+    <td>Psion EPOC PDAs</td></tr>
+<tr><td><ulink url="../../ports/evbarm/">NetBSD/evbarm</ulink></td>
+    <td>Various ARM-based evaluation boards and appliances</td></tr>
+<tr><td><ulink url="../../ports/evbmips/">NetBSD/evbmips</ulink></td>
+    <td>Various MIPS-based evaluation boards and appliances</td></tr>
+<tr><td><ulink url="../../ports/evbppc/">NetBSD/evbppc</ulink></td>
+    <td>Various PowerPC-based evaluation boards and appliances</td></tr>
+<tr><td><ulink url="../../ports/evbsh3/">NetBSD/evbsh3</ulink></td>
+    <td>Various Hitachi Super-H SH3 and SH4-based evaluation boards and appliances</td></tr>
+<tr><td><ulink url="../../ports/ews4800mips/">NetBSD/ews4800mips</ulink></td>
+    <td>NEC's MIPS-based EWS4800 workstation</td></tr>
+<tr><td><ulink url="../../ports/hp300/">NetBSD/hp300</ulink></td>
+    <td>Hewlett-Packard 9000/300 and 400 series</td></tr>
+<tr><td><ulink url="../../ports/hp700/">NetBSD/hp700</ulink></td>
+    <td>Hewlett-Packard 9000 Series 700 workstations</td></tr>
+<tr><td><ulink url="../../ports/hpcarm/">NetBSD/hpcarm</ulink></td>
+    <td>StrongARM based Windows CE PDA machines</td></tr>
+<tr><td><ulink url="../../ports/hpcmips/">NetBSD/hpcmips</ulink></td>
+    <td>MIPS-based Windows CE PDA machines</td></tr>
+<tr><td><ulink url="../../ports/hpcsh/">NetBSD/hpcsh</ulink></td>
+    <td>Hitachi Super-H based Windows CE PDA machines</td></tr>
+<tr><td><ulink url="../../ports/i386/">NetBSD/i386</ulink></td>
+    <td>IBM PCs and PC clones with i486-family processors and up</td></tr>
+<tr><td><ulink url="../../ports/ibmnws/">NetBSD/ibmnws</ulink></td>
+    <td>IBM Network Station 1000</td></tr>
+<tr><td><ulink url="../../ports/iyonix/">NetBSD/iyonix</ulink></td>
+    <td>Castle Technology's Iyonix ARM based PCs</td></tr>
+<tr><td><ulink url="../../ports/landisk/">NetBSD/landisk</ulink></td>
+    <td>SH4 processor based NAS appliances</td></tr>
+<tr><td><ulink url="../../ports/luna68k/">NetBSD/luna68k</ulink></td>
+    <td>OMRON Tateisi Electric's LUNA series</td></tr>
+<tr><td><ulink url="../../ports/mac68k/">NetBSD/mac68k</ulink></td>
+    <td>Apple Macintosh with Motorola 68k CPU</td></tr>
+<tr><td><ulink url="../../ports/macppc/">NetBSD/macppc</ulink></td>
+    <td>Apple PowerPC-based Macintosh and clones</td></tr>
+<tr><td><ulink url="../../ports/mipsco/">NetBSD/mipsco</ulink></td>
+    <td>MIPS Computer Systems Inc. family of workstations and servers</td></tr>
+<tr><td><ulink url="../../ports/mmeye/">NetBSD/mmeye</ulink></td>
+    <td>Brains mmEye multimedia server</td></tr>
+<tr><td><ulink url="../../ports/mvme68k/">NetBSD/mvme68k</ulink></td>
+    <td>Motorola MVME 68k Single Board Computers</td></tr>
+<tr><td><ulink url="../../ports/mvmeppc/">NetBSD/mvmeppc</ulink></td>
+    <td>Motorola PowerPC VME Single Board Computers</td></tr>
+<tr><td><ulink url="../../ports/netwinder/">NetBSD/netwinder</ulink></td>
+    <td>StrongARM based NetWinder machines</td></tr>
+<tr><td><ulink url="../../ports/news68k/">NetBSD/news68k</ulink></td>
+    <td>Sony's 68k-based <quote>NET WORK STATION</quote> series</td></tr>
+<tr><td><ulink url="../../ports/newsmips/">NetBSD/newsmips</ulink></td>
+    <td>Sony's MIPS-based <quote>NET WORK STATION</quote> series</td></tr>
+<tr><td><ulink url="../../ports/next68k/">NetBSD/next68k</ulink></td>
+    <td>NeXT 68k <quote>black</quote> hardware</td></tr>
+<tr><td><ulink url="../../ports/ofppc/">NetBSD/ofppc</ulink></td>
+    <td>OpenFirmware PowerPC machines</td></tr>
+<tr><td><ulink url="../../ports/pmax/">NetBSD/pmax</ulink></td>
+    <td>Digital MIPS-based DECstations and DECsystems</td></tr>
+<tr><td><ulink url="../../ports/prep/">NetBSD/prep</ulink></td>
+    <td>PReP (PowerPC Reference Platform) and CHRP machines</td></tr>
+<tr><td><ulink url="../../ports/rs6000/">NetBSD/rs6000</ulink></td>
+    <td>IBM RS/6000 MCA-based PowerPC machines.</td></tr>
+<tr><td><ulink url="../../ports/sandpoint/">NetBSD/sandpoint</ulink></td>
+    <td>Motorola Sandpoint reference platform, including many PPC-based NAS
+boxes</td></tr>
+<tr><td><ulink url="../../ports/sbmips/">NetBSD/sbmips</ulink></td>
+    <td>Broadcom SiByte evaluation boards</td></tr>
+<tr><td><ulink url="../../ports/sgimips/">NetBSD/sgimips</ulink></td>
+    <td>Silicon Graphics' MIPS-based workstations</td></tr>
+<tr><td><ulink url="../../ports/shark/">NetBSD/shark</ulink></td>
+    <td>Digital DNARD (<quote>shark</quote>)</td></tr>
+<tr><td><ulink url="../../ports/sparc/">NetBSD/sparc</ulink></td>
+    <td>Sun SPARC (32-bit) and UltraSPARC (in 32-bit mode)</td></tr>
+<tr><td><ulink url="../../ports/sparc64/">NetBSD/sparc64</ulink></td>
+    <td>Sun UltraSPARC (in native 64-bit mode)</td></tr>
+<tr><td><ulink url="../../ports/sun2/">NetBSD/sun2</ulink></td>
+    <td>Sun Microsystems Sun 2 machines with Motorola 68010 CPU</td></tr>
+<tr><td><ulink url="../../ports/sun3/">NetBSD/sun3</ulink></td>
+    <td>Motorola 68020 and 030 based Sun 3 and 3x machines</td></tr>
+<tr><td><ulink url="../../ports/vax/">NetBSD/vax</ulink></td>
+    <td>Digital VAX</td></tr>
+<tr><td><ulink url="../../ports/x68k/">NetBSD/x68k</ulink></td>
+    <td>Sharp X680x0 series</td></tr>
+<tr><td><ulink url="../../ports/xen/">NetBSD/xen</ulink></td>
+    <td>The Xen virtual machine monitor</td></tr>
+<tr><td><ulink url="../../ports/zaurus/">NetBSD/zaurus</ulink></td>
+    <td>Sharp ARM PDAs</td></tr>
+</table>
+</para>
+
+<para>
+    Ports available in source form only for this release include the
+    following:
+</para>
+
+<para>
+<table border="0" cellspacing="0" cellpadding="3" id="system-families-table2">
+<tr><td><ulink url="../../ports/ia64/">NetBSD/ia64</ulink></td>
+    <td>Itanium family of processors</td></tr>
+</table>
+</para>
+</sect1>
+
+<sect1 id="acknowledgements">
+<title>Acknowledgments</title>
+
+<para>
+    The NetBSD Foundation would like to thank all those who have
+    contributed code, hardware, documentation, funds, colocation for
+    our servers, web pages and other documentation, release engineering,
+    and other resources over the years. More information on the people who
+    make NetBSD happen is available at:
+</para>
+
+    <blockquote>
+    <para>
+    <ulink url="../../people/">http://www.NetBSD.org/people/</ulink>
+    </para>
+    </blockquote>
+
+<para>
+    We would like to especially thank the University of California at
+    Berkeley and the GNU Project for particularly large subsets of code
+    that we use. We would also like to thank
+    the Internet Systems Consortium Inc. and the Network Security Lab at
+    Columbia University's Computer Science Department
+    for current colocation services.
+</para>
+</sect1>
+
+
+<sect1 id="about-netbsd">
+<title>About NetBSD</title>
+
+<para>NetBSD is a free, fast, secure, and highly portable Unix-like
+  Open Source operating system. It is available for a wide range
+  of platforms, from large-scale servers and powerful desktop
+  systems to handheld and embedded devices. Its clean design
+  and advanced features make it excellent for use in both
+  production and research environments, and the source code is
+  freely available under a business-friendly license. NetBSD is
+  developed and supported by a large and vibrant international
+  community.  Many applications are readily available through
+  <ulink url="http://pkgsrc.org">pkgsrc,
+  the NetBSD Packages Collection.</ulink>
+</para>
+
+</sect1>
+
+<sect1 id="about-foundation">
+<title>About the NetBSD Foundation</title>
+
+<para>
+    The <ulink url="../../foundation/">NetBSD Foundation</ulink> was
+    chartered in 1995, with the task of overseeing core NetBSD project
+    services, promoting the project within industry and the open
+    source community, and holding intellectual property rights on much
+    of the NetBSD code base. Day-to-day operations of the project are
+    handled by volunteers.
+</para>
+
+<para>
+    As a non-profit organization with no commercial backing, the NetBSD
+    Foundation depends on donations from its users, and we would like to ask
+    you to consider <ulink url="../../donations/">making a donation</ulink>
+    to the NetBSD Foundation in support of continuing production of our
+    fine operating system. Your generous donation would be particularly
+    welcome to help with ongoing upgrades and maintenance, as well as
+    with operating expenses for the NetBSD Foundation.
+</para>
+
+<para>
+    Donations can be done via PayPal to
+    <email>paypal@NetBSD.org</email>, or via Google Checkout and are fully
+    tax-deductible in the US.  See <ulink
+    url="http://www.NetBSD.org/donations/#how-to-donate">
+    http://www.NetBSD.org/donations/</ulink> for more information, or
+    contact <email>finance-exec@NetBSD.org</email> directly.
+</para>
+</sect1>
+
+<parentsec url="./" text="NetBSD 7.x formal releases"/>
+</webpage>
