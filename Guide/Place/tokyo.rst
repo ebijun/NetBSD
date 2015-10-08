@@ -59,6 +59,8 @@ Maps:
  2014 Spring,2/28-3/1,1900,82,明星大学
  2014 Fall,10/18-19,1550,72,明星大学
  2015 Spring,2/27-28,,79,明星大学
+ 2015 Fall,10/24-25,,77,明星大学
+
 
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -71,6 +73,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 80, OSC2015東京秋,http://www.soum.co.jp/~jun/OSC2015tokyofall.pdf
  69, OSC2015東京春, http://www.soum.co.jp/~jun/OSC2015tokyospring.pdf
  64, OSC2014東京秋, http://www.soum.co.jp/~jun/OSC2014tokyofall.pdf
  53, OSC2014東京春, http://www.soum.co.jp/~jun/OSC2014tokyospring.pdf
@@ -88,7 +91,8 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2015東京春 NetBSDブース展示の記録,
+ OSC2015東京秋 NetBSDブース展示の記録,
+ OSC2015東京春 NetBSDブース展示の記録,http://togetter.com/li/788681
  OSC2014東京秋 NetBSDブース展示の記録, http://togetter.com/li/733588 
  OSC2014東京春 NetBSDブース展示の記録, http://togetter.com/li/635747
  OSC2013東京秋 NetBSDブース展示の記録, http://togetter.com/li/578893
@@ -164,6 +168,19 @@ OSC東京主な展示物
  2006/3/17-18,OSC2006東京春,hpcmips/sh/arm
  2005/3/25-26,OSC2005,hpcmips/sh/arm
  2004/9/4,OSC2004,hpcmips/sh/arm
+
+2015年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2015/02/27/DSC_0877.jpg
+.. image::  ../Picture/2015/02/28/DSC_0887.jpg
+.. image::  ../Picture/2015/02/28/DSC_0888.jpg
+.. image::  ../Picture/2015/02/28/DSC_0890.jpg
+.. image::  ../Picture/2015/02/28/DSC_0891.jpg
+.. image::  ../Picture/2015/02/28/DSC_0892.jpg
+.. image::  ../Picture/2015/02/28/DSC06660.JPG
+.. image::  ../Picture/2015/02/28/DSC_0893.jpg
+.. image::  ../Picture/2015/02/28/DSC_0894.jpg
 
 2014年
 ~~~~~~~ 
