@@ -1,27 +1,29 @@
-:1,$s/2015-01-24/2015-01-24/g
-:1,$s/201501222040Z/201501222040Z/g
-:1,$s/2015-01-17/2015-01-17/g
+:1,$s/2015-10-09/2015-10-09/g
+:1,$s/201510052020Z/201510052020Z/g
+:1,$s/2015Q3/2015Q3/g
+:1,$s/7.99.21/7.99.21/g
+
 
 
 To: port-hpcarmnetbsd.org@localhost
-Subject: 2015-01-24-netbsd-hpcarm.img 
+Subject: 2015-10-09-netbsd-hpcarm.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-01-24-netbsd-hpcarm.img.gz for hpcarm.
+I've updated 2015-10-09-netbsd-hpcarm.img.gz for hpcarm.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2015-01-24-netbsd-hpcarm.img.gz
+ftp://ftp.jp.netbsd.org/pub/NetBSD-jp/misc/jun/hpcarm/2015-10-09-netbsd-hpcarm.img.gz
 
 http://movapic.com/pic/2015012400560454c2eda44b7d3
 
 Feature:
-- NetBSD 7.99.4-201501222040ZZ hpcarm from nyftp.netbsd
-- pkgsrc-current 2015-01-17 tarball from ftp.NetBSD.
+- NetBSD 7.99.21-201510052020ZZ hpcarm from nyftp.netbsd
+- pkgsrc-current 2015Q3 tarball from ftp.NetBSD.
 - dmesg:
-  https://github.com/ebijun/NetBSD/blob/master/hpcarm/Image/dmesg
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earm/WS011SH
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/earm/2015-02-07/
+PKG_PATH=ftp://ftp.jp.netbsd.org/pub/NetBSD-jp/misc/jun/NetBSD7/2015Q3/earm/
  To install application.
  # pkg_add some_application_name
 
@@ -29,15 +31,13 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/earm/2015-02-07/
  /etc/mk.conf.
 
 Todo:
+- NetBSD7 crushed during boot: need some pullup.
 - wscons=YES : boot hangs.
 
 =====================
 
-For Nagoya *BSD Users' Group 2015/1 meeting.
-(http://www.nagoya.bug.gr.jp/)
-demonstration use, I've updated hpcarm image.
 
-- NetBSD 7.99.4 base
+- NetBSD 7.99.21 base
 - Copy image to Mini/MicroSD.
 - Set WZERO3.
 - boot hpcboot.exe
@@ -55,27 +55,13 @@ demonstration use, I've updated hpcarm image.
 Features:
   - fit size for 2GB SD Card
   - with X11
-  - pkgsrc: 2015-01-17 tree inside.
+  - pkgsrc: 2015Q3 tree inside.
   - pre-build packages
     ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/earm/2015-02-07/
 
 Installed Packages:
- build by RPI+NetBSD-7.99.4-evbarm-earm-201501071900Z.iso
+ none
 
-kterm
-bash
-tcsh
-vlgothic-ttf
-icewm
-xli
-ruby200-mikutter
-uim
-sudo
-zsh
-mlterm
-pkg_chk
-mozilla-rootcerts
-dillo
 
 Keyboard layout checkpoint:
 /etc/wscons.conf
