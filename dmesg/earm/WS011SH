@@ -1,0 +1,60 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.4 (WZERO3.201501222040Z) #0: Thu Jan 22 22:51:10 UTC 2015
+	builds@b41.netbsd.org:/home/builds/ab/HEAD/hpcarm/201501222040Z-obj/home/source/ab/HEAD/src/sys/arch/hpcarm/compile/WZERO3
+total memory = 128 MB
+avail memory = 118 MB
+sysctl_createv: sysctl_create(machine_arch) returned 17
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0 core 0: PXA27x rev 7 (XScale V5TE core)
+cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
+cpu0: 32KB/32B 32-way L1 VIVT Instruction cache
+cpu0: 32KB/32B 32-way write-back-locking L1 VIVT Data cache
+pxaip0 at mainbus0: Onchip Peripheral Bus
+pxaip0: CPU clock = 520.002 MHz
+pxaip0: kernel is configured for PXA270, cpu type is PXA270
+pxaintc0 at pxaip0 addr 0x40d00000-0x40d0001f: Interrupt Controller
+pxagpio0 at pxaip0 addr 0x40e00000-0x40e0014f: GPIO Controller
+com0 at pxaip0 addr 0x40100000-0x4010001f intr 22: ns16550a, working fifo
+ohci0 at pxaip0 addr 0x4c000000-0x4c00006f intr 3
+ohci0: OHCI version 1.0
+usb0 at ohci0: USB revision 1.0
+saost0 at pxaip0 addr 0x40a00000-0x40a0001f
+saost0: SA-11x0 OS Timer
+lcd0 at pxaip0: PXA2x0 LCD controller
+lcd0: console
+wsdisplay0 at lcd0 kbdmux 1: console (std, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+pxadmac0 at pxaip0 addr 0x40000000-0x400002ff intr 25: DMA Controller
+pxartc0 at pxaip0 addr 0x40900000-0x4090003b: Real-time Clock
+pxartc0: using wristwatch register
+pxamci0 at pxaip0 addr 0x41100000-0x41100047: MMC/SD Controller
+pxamci0: using DMA transfer
+sdmmc0 at pxamci0
+wzero3ssp0 at pxaip0
+wzero3kbd0 at pxaip0: keyboard
+hpckbd0 at wzero3kbd0
+wskbd0 at hpckbd0: console keyboard, using wsdisplay0
+wzero3keypad0 at pxaip0: keypad
+wskbd1 at wzero3keypad0 mux 1
+wskbd1: connecting to wsdisplay0
+wzero3tp0 at pxaip0: touch panel
+wsmouse0 at wzero3tp0 mux 0
+wzero3usb0 at pxaip0: USB Mode detection
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+clock: hz=100 stathz=64
+timecounter: Timecounter "saost_count" frequency 3250000 Hz quality 100
+uhub0 at usb0: PXA27x OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+ld0 at sdmmc0: <0x03:0x5344:SU08G:0x80:0x80a4d71c:0x0a2>
+ld0: 7580 MB, 3850 cyl, 64 head, 63 sec, 512 bytes/sect x 15523840 sectors
+ld0: 4-bit width, bus clock 19.500 MHz
+boot device: ld0
+root on ld0a dumps on ld0b
+root file system type: ffs
+kern.module.path=/stand/hpcarm/7.99.4/modules
