@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.4 (WZERO3.201501222040Z) #0: Thu Jan 22 22:51:10 UTC 2015
-	builds@b41.netbsd.org:/home/builds/ab/HEAD/hpcarm/201501222040Z-obj/home/source/ab/HEAD/src/sys/arch/hpcarm/compile/WZERO3
+NetBSD 7.99.21 (WZERO3.201510052020Z) #0: Mon Oct  5 22:50:38 UTC 2015
+	builds@b41.netbsd.org:/home/builds/ab/HEAD/hpcarm/201510052020Z-obj/home/source/ab/HEAD/src/sys/arch/hpcarm/compile/WZERO3
 total memory = 128 MB
 avail memory = 118 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -51,10 +51,10 @@ clock: hz=100 stathz=64
 timecounter: Timecounter "saost_count" frequency 3250000 Hz quality 100
 uhub0 at usb0: PXA27x OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-ld0 at sdmmc0: <0x03:0x5344:SU08G:0x80:0x80a4d71c:0x0a2>
-ld0: 7580 MB, 3850 cyl, 64 head, 63 sec, 512 bytes/sect x 15523840 sectors
-ld0: 4-bit width, bus clock 19.500 MHz
+ld0 at sdmmc0: <0x41:0x3432:SD16G:0x30:0x00591b84:0x0e7>
+ld0: 14832 MB, 7533 cyl, 64 head, 63 sec, 512 bytes/sect x 30375936 sectors
+ld0: 4-bit width, 19.500 MHz
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/hpcarm/7.99.4/modules
+kern.module.path=/stand/hpcarm/7.99.21/modules
