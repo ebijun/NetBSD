@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-allwinner.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.21-evbarm-earmv7hf-201509072050Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.21-evbarm-earmv7hf-201510170920Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2015-05-23.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
 
 # UBOOT
 BOARD=cubieboard2
