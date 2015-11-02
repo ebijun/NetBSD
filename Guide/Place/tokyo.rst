@@ -148,7 +148,8 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
- 2014/10/18-19,OSC2015東京秋,Xen dom0 BSD全部 RadxaRock zaurusC700音源
+ 2015/2/27-8,OSC2015東京春,Radxa RocK APC8750 RPI OpenBlockS sandpoint
+ 2014/10/18-19,OSC2014東京秋,Xen dom0 BSD全部 RadxaRock zaurusC700音源
  2014/2/28-3/1,OSC2014東京春,Netwinder RPI ZAURUS第六艦隊 OSCアワード受賞
  2013/10/19-20,OSC2013東京秋,Netwinder OpenblocksA6 RPI  
  2013/2/22-23,OSC2013東京春,RPI KOBO netwalker mikutter WZERO3

@@ -35,6 +35,7 @@ KOFまとめ
 .. csv-table::
  :widths: 70 70
 
+ 関西オープンソース2015 NetBSDブース展示の記録,
  関西オープンソース2014 NetBSDブース展示の記録,http://togetter.com/li/742243
  関西オープンソース2013 NetBSDブース展示の記録,http://togetter.com/li/587422
  関西オープンソース2012 NetBSDブース展示の記録,http://togetter.com/li/404573
@@ -83,6 +84,7 @@ KOF主な発表
 .. csv-table::
  :widths: 15 15 60
 
+ KOFにおけるLUNA展示,KOF2014,https://speakerdeck.com/tsutsui/kof-and-luna-at-netbsd-booth
  NetBSDブートローダー解説とluna68kでの実装,KOF2013,http://www.ceres.dti.ne.jp/tsutsui/kof2013/NetBSD_bootloader.html
  なぜ謎マシン,KOF2011,http://www.ceres.dti.ne.jp/tsutsui/kof2011/Why-enigmatic-machines.html
  曽田さん受賞記念,KOF2010,
@@ -95,6 +97,8 @@ KOF主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2015/11
+ 2014/11/7-8,南港ATC,NetBSD/luna68k with mlterm-fb/libsixel/mikutter
  2013/11/8-9,南港ATC,Lunaブートローダ RPI WZero3 Zaurus XM6i
  2012/11/9-10,南港ATC,WZero3 Zaurus XM6i
  2011/11/11-12,南港ATC,LunaII DreamCast+釣りコン HP9000/700 WZero3 hpcmips

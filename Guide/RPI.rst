@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: :1,$s/2015-10-03/2015-10-03/g
+ .. todo:: :1,$s/2015-10-25/2015-10-25/g
  .. todo:: :1,$s?2015/06/27?2015/06/27?g
  .. todo:: apache+php+mysql設定
  .. todo:: uim-pref-gtk
@@ -67,7 +67,7 @@ RaspberryPIでNetBSDを使ってみる
 
  earmv6hf 
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2015-10-03-earmv6hf/2015-10-03-netbsd-raspi-earmv6hf.img.gz.gz
+ 2015-10-25-earmv6hf/2015-10-25-netbsd-raspi-earmv6hf.img.gz.gz
  
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -75,7 +75,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2015-10-03-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2015-10-25-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
 
 Cubieboard2,BananaPI用イメージ
 -------------------------------
@@ -196,7 +196,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 ::
 
  % cat /etc/pkg_install.conf
-　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-10-03
+　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-10-25
 
 * パッケージのインストール
 
@@ -224,34 +224,25 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 /usr/pkgsrcを使ってみよう
 --------------------------
 
- たとえばwordpressをコンパイル／インストールする時には、
+ たとえばwordpressをコンパイル／インストールする時には、以下の手順で行います。
 
 ::
 
-       # cd /usr/
-       # ls /usr/pkgsrc               ... 上書きしてしまわないか確認
-       # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
-       # tar tzvf pkgsrc.tar.gz |head ... アーカイブの内容確認
-　　　　　　　drwxrwxr-x  2 600      125            0 Jun  6 10:23 pkgsrc
-　　　　　　　drwxrwxr-x  2 600      125            0 Jun  6 10:23 pkgsrc/CVS
-　　　　　　　-rw-rw-r--  1 600      125            7 Dec 31  2005 pkgsrc/CVS/Repository
-　　　　　　　-rw-rw-r--  1 600      125          795 Jun  6 10:23 pkgsrc/CVS/Entries
-　　　　　　　-rw-rw-r--  1 600      125           36 Dec 31  2005 pkgsrc/CVS/Root
-　　　　　　　drwxrwxr-x  2 600      125            0 Jun  6 10:23 pkgsrc/archivers
-　　　　　　　　　　　:
-       # tar xzvf pkgsrc.tar.gz　　　　　　　
-       # ls /usr/pkgsrc
-	# cd /usr/pkgsrc/www/php-ja-wordpress
-	# make package-install
-
-を実行すると、wordpressに関連したソフトウェアをコンパイル／インストールします。
+ # cd /usr/
+ # ls /usr/pkgsrc               ... 上書きしてしまわないか確認
+ # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
+ # tar tzvf pkgsrc.tar.gz |head ... アーカイブの内容確認
+ # tar xzvf pkgsrc.tar.gz　　　　　　　
+ # ls /usr/pkgsrc
+ # cd /usr/pkgsrc/www/php-ja-wordpress
+ # make package-install
 
 pkgsrcの内容を更新するには、cvsを利用します。
 
 ::
 
-  　　　　 # cd /usr/pkgsrc
-       # cvs update -PAd
+ # cd /usr/pkgsrc
+ # cvs update -PAd
 
 ユーザー作成
 --------------
@@ -296,7 +287,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2015-10-03-netbsd-raspi-earmv6hf.img.gz
+ # vnconfig vnd0 2015-10-25-netbsd-raspi-earmv6hf.img.gz
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
