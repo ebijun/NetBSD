@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.21 (RPI.201510182130Z) #0: Sun Oct 18 23:08:24 UTC 2015
-	builds@b43.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201510182130Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
+NetBSD 7.99.21 (RPI.201510310800Z) #0: Sat Oct 31 09:16:57 UTC 2015
+	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201510310800Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 181 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -62,9 +62,9 @@ uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 IPsec: Initialized Security Association Processing.
 WARNING: module error: can't find builtin dependency `nfsserver'
-ld0 at sdmmc0: <0x89:0x0303:NCard:0x10:0x15901a98:0x0ac>
-ld0: 7659 MB, 3890 cyl, 64 head, 63 sec, 512 bytes/sect x 15685632 sectors
-ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x02:0x06512dff:0x0f6>
+ld0: 30735 MB, 7805 cyl, 128 head, 63 sec, 512 bytes/sect x 62945280 sectors
+ld0: 4-bit width, SDR50, 100.000 MHz
 uhidev0 at uhub0 port 1 configuration 1 interface 0
 uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
 ukbd0 at uhidev0
