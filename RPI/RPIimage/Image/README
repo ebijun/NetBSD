@@ -1,15 +1,15 @@
-VERSION: :1,$s/2015-10-25/2015-10-25/g
-ISO:     :1,$s/201510182130Z/201510182130Z/g
+VERSION: :1,$s/2015-11-07/2015-11-07/g
+ISO:     :1,$s/201510310800Z/201510310800Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 NetBSD:  :1,$s/7.99.21/7.99.21/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-10-25-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2015-11-07-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-10-25-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2015-11-07-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-10-25-earmv6hf/2015-10-25-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-11-07-earmv6hf/2015-11-07-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -22,15 +22,15 @@ pkg_info output version history:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.21 evbarm-earmv6hf 201510182130Z rpi.img from nyftp.
-- www/firefox
-  Testing firefox-41.0.2.tgz and firefox-l10n-41.0.2.tgz (thanx jmcneill)
-  http://mail-index.netbsd.org/port-arm/2015/10/19/msg003532.html
+- NetBSD-current 7.99.21 evbarm-earmv6hf 201510310800Z rpi.img from nyftp.
+- git-base-2.6.2
+- kterm-6.2.0nb24
+- mlterm-3.6.0
 
 libfreetype.so updated:
   /usr/X11R7/lib/libfreetype.so.17 updated to libfreetype.so.18
   copy libfreetype.so.17.4.11 as /usr/X11R7/lib/libfreetype.so.17 if you need.
-  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-10-25-earmv6hf/libfreetype.so.17.4.11 
+  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-11-07-earmv6hf/libfreetype.so.17.4.11 
 
 Set pkgsrc after resize partition: for this image size fit in 2GB.
   # cd /usr
@@ -68,7 +68,7 @@ I2C - "Raspberry Pi I2C implementation still broken?"
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-10-25/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-11-07/
 
  To install application.
  # pkg_add some_application_name
@@ -126,13 +126,13 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2015 Tokyo/Fall demonstration use, 
+For KANSAI OPEN FORUM 2015 demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2015-fall/
- https://www.facebook.com/events/697289803709375/
+ https://k-of.jp/2015/
+ https://www.facebook.com/events/1482497835366342/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2015tokyofall.pdf
+ http://www.soum.co.jp/~jun/KOF2015.pdf
 
 - NetBSD 7.99.21 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
@@ -172,7 +172,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-10-25/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-11-07/
 
 Installed Packages:
 kterm

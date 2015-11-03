@@ -49,6 +49,7 @@ KOFまとめ
  :widths: 25 15 60
 
  順記,梅田,終わった後の打ち上げはたいていここ。餃子と餃子と餃子。
+ 一芳亭 本店,南海なんば,しゅうまいとしゅうまい
  榮華亭梅田東通り店,東梅田,進捗を出そうと男の約束を交わす店
  ドリーム,西宮北口,15000回ループしてからKOF会場にゴー！朝8:00から。
  ホビーランド,本町,ミニタリープラモデル専門店。エッチングパーツが熱い。
@@ -74,7 +75,7 @@ KOFまとめ
  トンカ書店,元町,古本雑貨など
  む蔵,元町,トンカツとえびカツの二刀流
  たちばな,道頓堀松竹B2,道頓堀麦酒
- nu things,阿波座,阿木譲さんその後
+ environment 0g,桜川,イベントスペース。阿木譲さんその後
  深化,谷町六丁目,到達不可能な潜水艦バー
  ハーフェン,江坂,図書館近くのビアバー
  
@@ -97,7 +98,7 @@ KOF主な展示物
 .. csv-table::
  :widths: 15 15 60
 
- 2015/11
+ 2015/11/6-7,南港ATC,
  2014/11/7-8,南港ATC,NetBSD/luna68k with mlterm-fb/libsixel/mikutter
  2013/11/8-9,南港ATC,Lunaブートローダ RPI WZero3 Zaurus XM6i
  2012/11/9-10,南港ATC,WZero3 Zaurus XM6i
@@ -109,6 +110,25 @@ KOF主な展示物
  2005/10/28-29,大阪産業創造館,EWS4800/360AD ドリキャス+ISAバス　USL-5P
  2004/10-22-23,大阪産業創造館,XCAST ふきだしくん 
  2003/10/31-11/1,大阪産業創造館,XCAST トレバ
+
+2014
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2014/11/07/DSC05964.JPG
+.. image::  ../Picture/2014/11/07/DSC_0641.jpg
+.. image::  ../Picture/2014/11/07/DSC_0643.jpg
+.. image::  ../Picture/2014/11/07/DSC_0644.jpg
+.. image::  ../Picture/2014/11/07/DSC_0645.jpg
+.. image::  ../Picture/2014/11/07/DSC_0646.jpg
+.. image::  ../Picture/2014/11/08/DSC05982.JPG
+.. image::  ../Picture/2014/11/08/DSC05983.JPG
+.. image::  ../Picture/2014/11/08/DSC_0653.jpg
+.. image::  ../Picture/2014/11/08/DSC_0656.jpg
+.. image::  ../Picture/2014/11/08/DSC_0657.jpg
+.. image::  ../Picture/2014/11/08/DSC_0658.jpg
+
+2013
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /Picture/2013/11/08/DSC_2841.jpg
 .. image:: /Picture/2013/11/08/DSC_2843.jpg
@@ -134,10 +154,18 @@ KOF主な展示物
 .. image:: /Picture/2013/11/09/dsc03603.jpg
 .. image:: /Picture/2013/11/09/dsc03604.jpg
 .. image:: /Picture/2013/11/09/dsc03605.jpg
+
+2012
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. image:: /Picture/2012/11/10/dsc01943.jpg
 .. image:: /Picture/2012/11/10/dsc01942.jpg
 .. image:: /Picture/2012/11/09/dsc01937.jpg
 .. image:: /Picture/2012/11/09/dsc01934.jpg
+
+2011
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. image:: /Picture/2011/11/11/P1001218.JPG
 .. image:: /Picture/2011/11/11/P1001217.JPG
 .. image:: /Picture/2011/11/11/P1001215.JPG
@@ -150,6 +178,11 @@ KOF主な展示物
 .. image:: /Picture/2011/11/11/P1001208.JPG
 .. image:: /Picture/2011/11/11/P1001207.JPG
 .. image:: /Picture/2011/11/11/P1001204.JPG
+
+
+2010
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. image:: /Picture/2010/11/06/P1000030.JPG
 .. image:: /Picture/2010/11/06/P1000029.JPG
 .. image:: /Picture/2010/11/06/P1000028.JPG
