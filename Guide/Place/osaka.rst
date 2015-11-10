@@ -158,7 +158,6 @@ KOF主な展示物
 2012
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /Picture/2012/11/10/dsc01943.jpg
 .. image:: /Picture/2012/11/10/dsc01942.jpg
 .. image:: /Picture/2012/11/09/dsc01937.jpg
 .. image:: /Picture/2012/11/09/dsc01934.jpg
@@ -183,8 +182,6 @@ KOF主な展示物
 2010
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /Picture/2010/11/06/P1000030.JPG
-.. image:: /Picture/2010/11/06/P1000029.JPG
 .. image:: /Picture/2010/11/06/P1000028.JPG
 .. image:: /Picture/2010/11/06/P1000027.JPG
 .. image:: /Picture/2010/11/06/P1000025.JPG

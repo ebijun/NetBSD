@@ -37,7 +37,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/osaka
+ Place/shikoku
  Place/intro
  RPI
  
