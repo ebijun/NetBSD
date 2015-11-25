@@ -5,21 +5,18 @@ class EventView
 		@event = line
 		@event = @event.gsub("    ### ","")
 		@event = @event.gsub("\\","")
-		@event = @event.gsub("\n",",")
+ 		@event = @event.slice(0,@event.index("title=")-2)
 	end
 	def searchview(line)
 		if @view 
 			return
 		end
 		a = line.split(/ /)
-
 		s=""
 		s=a[5]
-		if s.index("view")
-			@view = a[4]
-		elsif
-			@view = a[5]
-		end
+		s=s.slice(0,s.index("</span>"))
+		s[0,s.index("span>")+5] = ""
+		@view = s
 	end
 	def csv
 		if @view == nil
@@ -28,16 +25,18 @@ class EventView
 		if @view == "new"
 			exit 
 		end
-		@csv = @event + @view
-		@csv = @csv.tr("\n","")
-		@csv = @csv.tr("\\","")
+		@csv = @event + ',' + @view
 		print " ",@csv,"\n"
 	end
 end
 
 while line = STDIN.gets
-	if line.include?("### ")
+	if line.include?("pagenation")
+		break
+	elsif line.include?("title=")
 		a = EventView.new(line)
+		line = STDIN.gets
+		line = STDIN.gets
 		line = STDIN.gets
 		line = STDIN.gets
 		line = STDIN.gets
@@ -46,8 +45,6 @@ while line = STDIN.gets
 			a.searchview(line)
 			a.csv
 		end
-	elsif line.include?("------")
-		break
 	elsif line.include?(' [](')
 		if line.index("http")
 			print line[line.index("http")..(line.rindex(")\n")-1)],","
