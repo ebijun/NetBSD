@@ -59,7 +59,7 @@ NetBSDのISOイメージをダウンロードします。
 ::
 
   $ ./NewestISO 
-  wget ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201511241720Z/images/NetBSD-7.99.21-evbarm-earmv6hf.iso
+  ftp ftp://nyftp.netbsd.org/pub/NetBSD-daily/HEAD/201511241720Z/images/NetBSD-7.99.21-evbarm-earmv6hf.iso
   mv NetBSD-7.99.21-evbarm-earmv6hf.iso ./NetBSD-7.99.21-evbarm-earmv6hf-201511241720Z.iso
 
 コマンドの出力結果をshに渡すとダウンロードを実行します。
@@ -69,7 +69,10 @@ NetBSDのISOイメージをダウンロードします。
   $ ./NewestISO |sh
 
 ダウンロードがうまくいくと、以下のようなisoイメージをダウンロードできます。
-NetBSD-7.99.21-evbarm-earmv6hf-201511241720Z.iso
+
+::
+
+  NetBSD-7.99.21-evbarm-earmv6hf-201511241720Z.iso
 
 
 イメージ作成用Makefile
@@ -107,11 +110,14 @@ make pkgを実行すると、パッケージをインストールするための
 ./Copy を実行して、パッケージをSDカードにコピーします。
 
 ::
+
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/Copy より：
   DEVICE=rsd2d
+  
   #BOARD=raspi-earm
   BOARD=raspi-earmv6hf
   #BOARD=raspi-earmv7hf
+  
   COMPRESS=-z
   SUFFIX=.gz
   #COMPRESS=
@@ -127,6 +133,7 @@ RPIでパッケージのインストール
 RPI2にSDカードをさして、ブートするか確認します。rootでログインして、必要なパッケージをインストールします。
 
 ::
+
   cd Package 
   edit Install
   ./Install
@@ -135,6 +142,7 @@ RPI2にSDカードをさして、ブートするか確認します。rootでロ�
 RPIに差し替えて起動して、dmesgを出力しておきます。
 
 ::
+
   # dmesg > dmesg  ...RPIの場合
   # dmesg > dmesg7 ...RPI2の場合
 
@@ -187,25 +195,27 @@ RPIのフォーラムにも投げます。
 
   https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-..csv-table:: 2015年に作ったRPIイメージ一覧(19個)
 
-2015/2/7.http://mail-index.netbsd.org/port-arm/2015/02/04/msg002833.html
-2015/2/28,http://mail-index.netbsd.org/port-arm/2015/02/26/msg002883.html
-2015/3/13,http://mail-index.netbsd.org/port-arm/2015/03/10/msg002918.html
-2015/4/19,http://mail-index.netbsd.org/port-arm/2015/04/19/msg003100.html
-2015/5/23,http://mail-index.netbsd.org/port-arm/2015/05/21/msg003185.html
-2015/6/13,http://mail-index.netbsd.org/port-arm/2015/06/06/msg003243.html
-2015/6/30,http://mail-index.netbsd.org/port-arm/2015/06/30/msg003266.html (7.0RC1)
-2015/7/4,http://mail-index.netbsd.org/port-arm/2015/07/02/msg003268.html
-2015/7/30,http://mail-index.netbsd.org/port-arm/2015/07/31/msg003351.html (7.0RC2)
-2015/8/8,http://mail-index.netbsd.org/port-arm/2015/08/06/msg003389.html
-2015/8/19,http://mail-index.netbsd.org/port-arm/2015/08/19/msg003428.html
-2015/8/22,http://mail-index.netbsd.org/port-arm/2015/08/20/msg003430.html
-2015/9/5,http://mail-index.netbsd.org/port-arm/2015/09/03/msg003439.html
-2015/9/19,http://mail-index.netbsd.org/port-arm/2015/09/14/msg003467.html
-2015/9/28,http://mail-index.netbsd.org/port-arm/2015/09/29/msg003496.html (7.0)
-2015/10/3,http://mail-index.netbsd.org/port-arm/2015/09/30/msg003497.html
-2015/10/25,http://mail-index.netbsd.org/port-arm/2015/10/20/msg003534.html
-2015/11/7,http://mail-index.netbsd.org/port-arm/2015/11/04/msg003546.html
-2015/11/14,http://mail-index.netbsd.org/port-arm/2015/11/11/msg003550.html
+.. csv-table:: 2015年に作ったRPIイメージ一覧
+ :widths: 20 130
+
+ 2015/2/7,http://mail-index.netbsd.org/port-arm/2015/02/04/msg002833.html
+ 2015/2/28,http://mail-index.netbsd.org/port-arm/2015/02/26/msg002883.html
+ 2015/3/13,http://mail-index.netbsd.org/port-arm/2015/03/10/msg002918.html
+ 2015/4/19,http://mail-index.netbsd.org/port-arm/2015/04/19/msg003100.html
+ 2015/5/23,http://mail-index.netbsd.org/port-arm/2015/05/21/msg003185.html
+ 2015/6/13,http://mail-index.netbsd.org/port-arm/2015/06/06/msg003243.html
+ 2015/6/30,http://mail-index.netbsd.org/port-arm/2015/06/30/msg003266.html (7.0RC1)
+ 2015/7/4,http://mail-index.netbsd.org/port-arm/2015/07/02/msg003268.html
+ 2015/7/30,http://mail-index.netbsd.org/port-arm/2015/07/31/msg003351.html (7.0RC2)
+ 2015/8/8,http://mail-index.netbsd.org/port-arm/2015/08/06/msg003389.html
+ 2015/8/19,http://mail-index.netbsd.org/port-arm/2015/08/19/msg003428.html
+ 2015/8/22,http://mail-index.netbsd.org/port-arm/2015/08/20/msg003430.html
+ 2015/9/5,http://mail-index.netbsd.org/port-arm/2015/09/03/msg003439.html
+ 2015/9/19,http://mail-index.netbsd.org/port-arm/2015/09/14/msg003467.html
+ 2015/9/28,http://mail-index.netbsd.org/port-arm/2015/09/29/msg003496.html (7.0)
+ 2015/10/3,http://mail-index.netbsd.org/port-arm/2015/09/30/msg003497.html
+ 2015/10/25,http://mail-index.netbsd.org/port-arm/2015/10/20/msg003534.html
+ 2015/11/7,http://mail-index.netbsd.org/port-arm/2015/11/04/msg003546.html
+ 2015/11/14,http://mail-index.netbsd.org/port-arm/2015/11/11/msg003550.html
 
