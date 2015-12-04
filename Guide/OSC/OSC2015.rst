@@ -1,55 +1,161 @@
-http://www.soum.co.jp/~jun/2015maps.pdf
+.. 
+ Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+===========================================
+オープンソースカンファレンスNetBSDブースこの一年
+===========================================
+
+日本NetBSDユーザーグループは2015年も日本各地で開催されたオープンソースカンファレンスを中心とするイベントに参加しました。各イベントではブース運営・セミナー開催等を行いました。
+ブースに展示機材を持ち込んで頂いたみなさま、セミナー時間に参加・発表していただいたみなさまのご協力に感謝します。
+
+参加した場所の地図
+
+  http://www.soum.co.jp/~jun/2015maps.pdf
 
 これまでに参加した一覧は以下のとおりです。
-https://github.com/ebijun/NetBSD/blob/master/Guide/OSC/OSC100.csv
+
+  https://github.com/ebijun/NetBSD/blob/master/Guide/OSC/OSC100.csv
+
 
 このファイルはオープンソースカンファレンス過去来場者数一覧 http://www.ospn.jp/visitors/ を元に作成しています。
+
+
+どのくらい参加しているか
+-------------------------
 
 - 2015/12/31までにOSCは125回開催されています。
 - JNUGは113回参加しています。90.4%
 
-- 今年のOSC
+今年のOSC
+--------------
 - 日本全国各地で14回開催
 - 参加者7005人　(徳島まで)
 - 参加団体(465グループ　(徳島まで
 
-112	2015	2015 Oita	2/7	100	14	1
-113		2015 Hamanako	2/11	130	24	1
-114		2015 Tokyo/Spring	2/27-28	1700	79	1
-115		2015 Nagoya	2/27-28	550	39	1
-116		2015 Hokkaido	2/27-28	710	55	1
-117		2015 Okinawa	2/27-28	100	17	1
-118		2015 Kansai@kyoto	2/27-28	1150	59	1
-119		2015 Shimane	8/22	115	17	1
-120		2015 Niigata	9/5	130	17	1
-121		2015 Hiroshima	9/19	170	17	1
-122		2015 Fukuoka	10/3	400	30	1
-123		2015 Tokyo/Fall	10/24-25	1550	77	1
-124		2015 Tokushima	11/14	200	24	1
-125		2015 .Enterprise	12/9			
+.. csv-table::
+
+ 回数,イベント,日付,参加者,参加グループ,参加したら1
+ 112,	2015 Oita	,2/7	,100	,14	,1
+ 113,	2015 Hamanako	,2/11	,130	,24	,1
+ 114,	2015 Tokyo/Spring	,2/27-28	,1700	,79	,1
+ 115,	2015 Nagoya	,2/27-28	,550	,39	,1
+ 116,	2015 Hokkaido	,2/27-28	,710	,55	,1
+ 117,	2015 Okinawa	,2/27-28	,100	,17	,1
+ 118,	2015 Kansai@kyoto	,2/27-28	,1150	,59	,1
+ 119,	2015 Shimane	,8/22	,115	,17	,1
+ 120,	2015 Niigata	,9/5	,130	,17	,1
+ 121,	2015 Hiroshima	,9/19	,170	,17	,1
+ 122,	2015 Fukuoka	,10/3	,400	,30	,1
+ 123,	2015 Tokyo/Fall	,10/24-25	,1550	,77	,1
+ 124,	2015 Tokushima	,11/14	,200	,24	,1
+ 125,	2015 .Enterprise	,12/9	,	,	,,
+
 
 togetterアクセスで見たNetBSDブース
 -----------------------------------
 togetterのアクセスログは以下の場所にあります。
 
-https://github.com/ebijun/NetBSD/blob/master/Event/togetter/view.csv
+::
 
-2015年度のアクセス数集計は以下の通りです。
+  https://github.com/ebijun/NetBSD/blob/master/Event/togetter/view.csv
 
-http://togetter.com/li/857157	 オープンソースカンファレンス2015 Kansai@Kyoto NetBSDブース展示の記録	3415
-http://togetter.com/li/793444	 AsiaBSDCon 2015の記録	3309
-http://togetter.com/li/824817	 オープンソースカンファレンス2015 Nagoya&NBUG5月例会 の記録	1704
-http://togetter.com/li/788681	 オープンソースカンファレンス2015 Tokyo/Spring　NetBSDブース展示の記録	1520
-http://togetter.com/li/896456	 関西オープンソース2015 NetBSDブース展示の記録	1317
-http://togetter.com/li/875487	 オープンソースカンファレンス2015 Hiroshima NetBSDブース展示の記録	1317
-http://togetter.com/li/845730	 日本NetBSDユーザーグループ第十七回定期総会 および NetBSD BoF 2015 の記録	1300
-http://togetter.com/li/863726	 オープンソースカンファレンス2015 Shimane NetBSDブース展示の記録	880
-http://togetter.com/li/891107	 オープンソースカンファレンス2015 Tokyo/Fall NetBSDブース展示の記録	875
-http://togetter.com/li/779725	 オープンソースカンファレンス2015 Oita　NetBSDブース展示の記録	859
-http://togetter.com/li/842624	 オープンソースカンファレンス2015 Okinawa　NetBSDブース展示の記録	850
-http://togetter.com/li/834148	 オープンソースカンファレンス2015 Hokkaido　NetBSDブース展示の記録	837
-http://togetter.com/li/781556	 オープンソースカンファレンス2015 Hamanako　NetBSDブース展示の記録	815
-http://togetter.com/li/881732	 オープンソースカンファレンス2015 Fukuoka NetBSDブース展示の記録	809
-http://togetter.com/li/869752	 オープンソースカンファレンス2015 Niigata NetBSDブース展示の記録	785
-http://togetter.com/li/899923	 オープンソースカンファレンス2015 Tokushima NetBSDブース展示の記録	735
+2015年度のアクセス数順の集計は以下の通りです。
+
+.. csv-table::
+ :widths: 10 100 10
+
+ http://togetter.com/li/857157,	 オープンソースカンファレンス2015 Kansai@Kyoto NetBSDブース展示の記録	,3415
+ http://togetter.com/li/793444,	 AsiaBSDCon 2015の記録	,3309
+ http://togetter.com/li/824817,	 オープンソースカンファレンス2015 Nagoya&NBUG5月例会 の記録	,1704
+ http://togetter.com/li/788681,	 オープンソースカンファレンス2015 Tokyo/Spring　NetBSDブース展示の記録	,1520
+ http://togetter.com/li/896456,	 関西オープンソース2015 NetBSDブース展示の記録	,1317
+ http://togetter.com/li/875487,	 オープンソースカンファレンス2015 Hiroshima NetBSDブース展示の記録	,1317
+ http://togetter.com/li/845730,	 日本NetBSDユーザーグループ第十七回定期総会 および NetBSD BoF 2015 の記録	,1300
+ http://togetter.com/li/863726,	 オープンソースカンファレンス2015 Shimane NetBSDブース展示の記録	,880
+ http://togetter.com/li/891107,	 オープンソースカンファレンス2015 Tokyo/Fall NetBSDブース展示の記録	,875
+ http://togetter.com/li/779725,	 オープンソースカンファレンス2015 Oita　NetBSDブース展示の記録	,859
+ http://togetter.com/li/842624,	 オープンソースカンファレンス2015 Okinawa　NetBSDブース展示の記録	,850
+ http://togetter.com/li/834148,	 オープンソースカンファレンス2015 Hokkaido　NetBSDブース展示の記録	,837
+ http://togetter.com/li/781556,	 オープンソースカンファレンス2015 Hamanako　NetBSDブース展示の記録	,815
+ http://togetter.com/li/881732,	 オープンソースカンファレンス2015 Fukuoka NetBSDブース展示の記録	,809
+ http://togetter.com/li/869752,	 オープンソースカンファレンス2015 Niigata NetBSDブース展示の記録	,785
+ http://togetter.com/li/899923,	 オープンソースカンファレンス2015 Tokushima NetBSDブース展示の記録	,735
+
+
+netbsd-advocacyメーリングリストへの報告
+--------------------------------------------
+
+netbsd-advocacyメーリングリストへの参加報告をしてみました。
+
+.. csv-table::
+
+ NetBSD machines at Open Source Conference 2015 Oita,http://mail-index.netbsd.org/netbsd-advocacy/2015/02/08/msg000678.html
+ NetBSD machines at Open Source Conference 2015 Hamanako,http://mail-index.netbsd.org/netbsd-advocacy/2015/02/11/msg000679.html
+ NetBSD machines at Open Source Conference 2015 Tokyo/Spring,http://mail-index.netbsd.org/netbsd-advocacy/2015/02/28/msg000680.html
+ NetBSD machines at AsiaBSDCon 2015,http://mail-index.netbsd.org/netbsd-advocacy/2015/03/15/msg000682.html
+ OpenBSD and NetBSD machines at Open Source Conference 2015 Nagoya,http://mail-index.netbsd.org/netbsd-advocacy/2015/05/23/msg000686.html
+ NetBSD machines at Open Source Conference 2015 Hokkaido,http://mail-index.netbsd.org/netbsd-advocacy/2015/06/13/msg000687.html
+ NetBSD machines at Open Source Conference 2015 Okinawa,http://mail-index.netbsd.org/netbsd-advocacy/2015/07/04/msg000688.html
+ Japan NetBSD Users Group 17th annual Meeting and BoF 2015,http://mail-index.netbsd.org/netbsd-advocacy/2015/07/11/msg000689.html
+ OpenBSD and NetBSD machines at Open Source Conference 2015 Kansai@Kyoto,http://mail-index.netbsd.org/netbsd-advocacy/2015/08/10/msg000691.html
+ NetBSD machines at Open Source Conference 2015 Shimane,http://mail-index.netbsd.org/netbsd-advocacy/2015/08/22/msg000692.html
+ OpenBSD and NetBSD machines at Open Source Conference 2015 Niigata,http://mail-index.netbsd.org/netbsd-advocacy/2015/09/05/msg000695.html
+ NetBSD machines at Open Source Conference 2015 Hiroshima,http://mail-index.netbsd.org/netbsd-advocacy/2015/09/24/msg000696.html
+ NetBSD machines at Open Source Conference 2015 Fukuoka,http://mail-index.netbsd.org/netbsd-advocacy/2015/10/05/msg000697.html
+ NetBSD machines at Open Source Conference 2015 Tokyo/Fall,http://mail-index.netbsd.org/netbsd-advocacy/2015/10/25/msg000698.html
+ NetBSD machines at KANSAI OPEN FORUM 2015,http://mail-index.netbsd.org/netbsd-advocacy/2015/11/09/msg000699.html
+ NetBSD machines at Open Source Conference 2015 Tokushima,http://mail-index.netbsd.org/netbsd-advocacy/2015/11/15/msg000700.html
+
+NetBSD観光ガイド作成
+------------------------
+
+イベント毎に観光ガイドをカラー1部白黒15部づつ作成し、セミナー参加者に配布しました。
+
+一覧：
+
+ https://raw.githubusercontent.com/ebijun/osc-demo/master/README.md
+
+作成方法： 
+
+ https://github.com/ebijun/NetBSD/blob/master/Guide/Paper/sphinx.rst
+
+.. csv-table::
+ :widths: 10 20 100
+
+ 82.,OSC2015徳島,http://www.soum.co.jp/~jun/OSC2015tokushima.pdf
+ 81.,   KOF2015   ,     http://www.soum.co.jp/~jun/KOF2015.pdf
+ 80.,   OSC2015東京秋,  http://www.soum.co.jp/~jun/OSC2015tokyofall.pdf
+ 79.,   OSC2015福岡,    http://www.soum.co.jp/~jun/OSC2015fukuoka.pdf
+ 78.,   OSC2015広島,    http://www.soum.co.jp/~jun/OSC2015hiroshima.pdf
+ 77.,   OSC2015新潟,    http://www.soum.co.jp/~jun/OSC2015niigata.pdf
+ 76.,   OSC2015島根,    http://www.soum.co.jp/~jun/OSC2015shimane.pdf
+ 75.,   OSC2015京都,    http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
+ 74.,   JNUG2014,       http://www.soum.co.jp/~jun/JNUG2015.pdf
+ 73.,   OSC2015沖縄,    http://www.soum.co.jp/~jun/OSC2015okinawa.pdf
+ 72.,   OSC2015北海道,  http://www.soum.co.jp/~jun/OSC2015hokkaido.pdf
+ 71.,   OSC2015名古屋,  http://www.soum.co.jp/~jun/OSC2015nagoya.pdf
+ 70.,   AsiaBSDCon2015, http://www.soum.co.jp/~jun/asiabsdcon2015.pdf
+ 69.,   OSC2015東京春,  http://www.soum.co.jp/~jun/OSC2015tokyospring.pdf
+ 68.,   OSC2015浜名湖,  http://www.soum.co.jp/~jun/OSC2015hamanako.pdf
+ 67.,   OSC2015大分,    http://www.soum.co.jp/~jun/OSC2015oita.pdf
+
+
 
