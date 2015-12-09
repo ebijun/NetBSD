@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.21-hpcarm-201510052020Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.23-hpcarm-201512061930Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
 
@@ -56,7 +56,7 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	(cd ${MNT}/dev;./MAKEDEV all)
-	tar xzpf ${PKGSRC} -C ${MNT}/usr
+	#tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mkdir ${MNT}/msdos
 	mkdir ${MNT}/kern
 	mkdir ${MNT}/proc
