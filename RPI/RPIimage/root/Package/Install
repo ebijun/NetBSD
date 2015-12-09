@@ -12,3 +12,5 @@ done
 mozilla-rootcerts install
 dmesg    > /root/dmesg
 pkg_info |sort  > /root/pkginfo
+# make entropy-file
+/etc/rc.d/random_seed stop
