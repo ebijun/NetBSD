@@ -3,10 +3,10 @@
 ARCH=earmv6hf
 #ARCH=earmhf
 #ARCH=earm
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-11-26/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-12-112/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.21-evbarm-${ARCH}-201511241720Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.23-evbarm-${ARCH}-201512061930Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2015Q3.tar.gz 
 
