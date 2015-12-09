@@ -1,11 +1,19 @@
 # Makefile for BananaPI image.
 
+ARCH=earmv7hf
+GZIMG=armv7.img
+
+#ARCH=earm
+#GZIMG=rpi.img
+
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2015-12-12
+
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-bpi.img
+#FILE=`date +%Y-%m-%d`-netbsd-bpi.img
+FILE=`date +%Y-%m-%d`-netbsd-bpi-${ARCH}.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.21-evbarm-earmv7hf-201509101940Z.iso
-
+IMAGE=/usr/release/images/NetBSD-7.99.23-evbarm-${ARCH}-201512061930Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
 
@@ -32,7 +40,7 @@ KOBOUBOOT=${MNT_CDROM}/evbarm/binary/kernel/netbsd-ld0-KOBO.ub.gz
 
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
-beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/armv7.img
+beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/${GZIMG}
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules text xbase xcomp xetc xfont xserver 
@@ -113,6 +121,7 @@ release:
 	tar cf - etc root |(cd ${MNT};tar xvf -)
 	cp boot/* ${MNT}/boot
 	sed -i -e 's/cubieboard2/${FEX}/' ${MNT}/boot/uEnv.txt
+	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}

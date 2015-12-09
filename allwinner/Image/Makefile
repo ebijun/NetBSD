@@ -1,10 +1,17 @@
 # Makefile for Allwinner image.
 
+ARCH=earmv7hf
+#ARCH=earm
+
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2015-12-12
+ 
+   
+# iso file information
+IMAGE=/usr/release/images/NetBSD-7.99.23-evbarm-${ARCH}-201512061930Z.iso
+
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-allwinner.img
 
-# iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.21-evbarm-earmv7hf-201510170920Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
 
@@ -44,7 +51,7 @@ VND_CDROM=vnd1
 FILE_TMP=a.img
 VND_TMP=vnd2
 
-all: file cdmount beagleboard extract cdunmount uboot-copy
+all: file cdmount beagleboard extract cdunmount fit uboot-copy
 
 # extract sets to image file.
 extract:
@@ -112,6 +119,7 @@ release:
 	tar cf - etc root |(cd ${MNT};tar xvf -)
 	cp boot/* ${MNT}/boot
 	sed -i -e 's/cubieboard2/${FEX}/' ${MNT}/boot/uEnv.txt
+	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -133,6 +141,7 @@ logclean:
 	rm -f ${MNT}/var/db/dhcpcd-awge0.lease6
 	rm -f ${MNT}/root/dmesg
 	rm -f ${MNT}/root/pkginfo
+	rm -f ${MNT}/root/Package/typescript
 	rm -rf ${MNT}/var/run/dhcpcd
 	rm -rf ${MNT}/var/run/resolvconf
 	umount ${MNT}
