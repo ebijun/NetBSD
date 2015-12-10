@@ -10,7 +10,7 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2015-12-12
 IMAGE=/usr/release/images/NetBSD-7.99.23-evbarm-${ARCH}-201512061930Z.iso
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-allwinner.img
+FILE=`date +%Y-%m-%d`-netbsd-cubieboard2.img
 
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
