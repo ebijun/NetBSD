@@ -53,7 +53,7 @@ VND_CDROM=vnd1
 FILE_TMP=a.img
 VND_TMP=vnd2
 
-all: file cdmount beagleboard extract cdunmount uboot-copy 
+all: file cdmount beagleboard extract cdunmount fit uboot-copy 
 
 # extract sets to image file.
 extract:
