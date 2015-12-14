@@ -10,3 +10,5 @@ view:
 	soffice view.csv
 tar:
 	tar czvf pandoc.tgz Pandoc View view.csv Makefile
+copy:
+	scp pandoc.tgz jun@soumgw.soum.co.jp:
