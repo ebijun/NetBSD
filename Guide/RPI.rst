@@ -318,10 +318,8 @@ https://raw.github.com/Evilpaul/RPi-config/master/config.txt
 
 ::
 
- ↓console=fbを消します。
- root=ld0a 
- #fb=1280x1024           # to select a mode, otherwise try EDID 
- #fb=disable             # to disable fb completely
+ fb=1280x1024           # to select a mode, otherwise try EDID 
+ fb=disable             # to disable fb completely
 
 起動ディスクを変えるには
 ------------------------
@@ -330,8 +328,6 @@ https://raw.github.com/Evilpaul/RPi-config/master/config.txt
 ::
 
  root=sd0a console=fb ←ld0をsd0にするとUSB接続したディスクから起動します
- #fb=1280x1024           # to select a mode, otherwise try EDID 
- #fb=disable             # to disable fb completely
 
 最小構成のディスクイメージ
 --------------------------
