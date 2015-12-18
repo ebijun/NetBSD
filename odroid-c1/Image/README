@@ -1,0 +1,44 @@
+:1,$s/2015-12-18/2015-12-18/g
+:1,$s/7.99.24/7.99.24/g
+:1,$s/201508082350Z/201512162110Z/g
+
+
+Subject: 2015-12-18-netbsd-odroid_c1.img.gz (Re: NetBSD on ODROID-C1
+To: port-armNetBSD.org@localhost
+From: Jun Ebihara <jun@soum.co.jp>
+
+I've put ODROID-C1 2GB test snapshot image to
+
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/odroid_c1/2015-12-18-netbsd-odroid_c1.img.gz
+
+Overview:
+  http://wiki.netbsd.org/ports/evbarm/odroid-c1/
+
+Using:
+ nyftp:  201512162110Z NetBSD 7.99.24
+
+dmesg:
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/ODROID-C1
+
+1. dd to 2GB microSD
+2. connect HDMI,Keyboard,mouse,Network
+3. connect power on and NetBSD boot messeage on HDMI display
+
+Sample build script:
+https://github.com/ebijun/NetBSD/tree/master/odroid-c1/Image
+
+resize:
+ read http://wiki.netbsd.org/ports/evbarm/raspberry_pi/
+ "Growing the root file-system "
+
+eMMC 
+1. dd this image to eMMC card via microSD adapter.
+2. resize partition.
+2. put eMMC(as ld0) and microSD(as ld1) card togeter.
+3. system boot from eMMC.
+
+pre-compiled package:
+ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/odroid_c1/earmv7hf/
+
+--
+Jun Ebihara
