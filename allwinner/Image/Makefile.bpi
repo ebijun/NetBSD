@@ -6,14 +6,14 @@ GZIMG=armv7.img
 #ARCH=earm
 #GZIMG=rpi.img
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2015-12-12
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-01-23
 
 # set image file name
 #FILE=`date +%Y-%m-%d`-netbsd-bpi.img
 FILE=`date +%Y-%m-%d`-netbsd-bpi-${ARCH}.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.23-evbarm-${ARCH}-201512061930Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.24-evbarm-${ARCH}-201512162110Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
 
@@ -65,7 +65,7 @@ extract:
 #	echo extract pkgsrc.
 #	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mount_msdos /dev/${VND}e ${MNT}/boot
-	gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
+	mv ${MNT}/boot/netbsd-BPI.ub  ${MNT}/boot/netbsd.ub
 #	cp ${NETWALKER}    ${MNT}/boot
 #	cp ${NETWALKERBIN} ${MNT}/boot
 #	cp ${KOBO}         ${MNT}/boot

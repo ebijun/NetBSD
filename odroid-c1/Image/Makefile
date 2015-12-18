@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-odroid_c1.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.23-evbarm-earmv7hf-201512061930Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.24-evbarm-earmv7hf-201512162110Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
 
@@ -43,7 +43,8 @@ extract:
 	#echo extract pkgsrc.
 	#tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mount_msdos /dev/${VND}e ${MNT}/boot
-	gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
+	#gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
+	mv ${MNT}/boot/netbsd-ODROID-C1.ub ${MNT}/boot/netbsd.ub
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
