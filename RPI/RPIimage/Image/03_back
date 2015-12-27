@@ -6,7 +6,7 @@ mkdir $DIR
 vnconfig vnd0 back.img
  fsck /dev/vnd0a
  mount /dev/vnd0a /mnt
-  for i in dmesg pkginfo dmesg7
+  for i in dmesg pkginfo dmesg7 dmesg0
   do
    cp /mnt/root/${i} ${DIR}/${i} 
   done

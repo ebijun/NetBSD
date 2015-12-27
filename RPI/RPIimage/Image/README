@@ -1,33 +1,36 @@
-VERSION: :1,$s/2015-11-14/2015-11-14/g
-ISO:     :1,$s/201511091610Z/201511091610Z/g
+VERSION: :1,$s/2015-12-27/2015-12-27/g
+ISO:     :1,$s/201512241350Z/201512241350Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
-NetBSD:  :1,$s/7.99.21/7.99.21/g
+NetBSD:  :1,$s/7.99.25/7.99.25/g
 
 To: port-armNetBSD.org@localhost
-Subject: 2015-11-14-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2015-12-27-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-11-14-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2015-12-27-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-11-14-earmv6hf/2015-11-14-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-12-27-earmv6hf/2015-12-27-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
 dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI0
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
 
 pkg_info output version history:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.21 evbarm-earmv6hf 201511091610Z rpi.img from nyftp.
+- NetBSD-current 7.99.25 evbarm-earmv6hf 201512241350Z rpi.img from nyftp.
+- RPI zero support
+- bind-9.10.3-P2
 
 libfreetype.so updated:
   /usr/X11R7/lib/libfreetype.so.17 updated to libfreetype.so.18
   copy libfreetype.so.17.4.11 as /usr/X11R7/lib/libfreetype.so.17 if you need.
-  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-11-14-earmv6hf/libfreetype.so.17.4.11 
+  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2015-12-27-earmv6hf/libfreetype.so.17.4.11 
 
 Set pkgsrc after resize partition: for this image size fit in 2GB.
   # cd /usr
@@ -65,11 +68,12 @@ I2C - "Raspberry Pi I2C implementation still broken?"
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-11-14/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-01-23/
 
  To install application.
  # pkg_add some_application_name
 
+- bind-9.10.3-P2
  If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
 
@@ -115,23 +119,23 @@ Todo:
 pkgsrc Todo:
 - lang/go : go-netbsd-arm put oarm binary
   Golang for NetBSD/arm problem summarized by @oshimyja
+  http://www.yagoto-urayama.jp/~oshimaya/netbsd/netbsd_goarm.html
   http://mail-index.netbsd.org/port-arm/2015/08/02/msg003361.html
   https://twitter.com/oshimyja/status/604871730125864960
   https://github.com/golang/go/commit/30d60936d97423af0403f2d5395c604ac0ff3757
 - gnuradio: g77 failed. need RTL2832U master.
-
+- kodi: boot failed on my environment.
+- www/otter-browser: compiling.
+- omxplayer: sometimes core dumps.
+- omxplayer: need /proc/cpuinfo to buy MPEG-2 license key.
 
 =====================
 
-For Open Source Conference 2015 Tokushima demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2015-niigata/
- https://www.facebook.com/events/718261744970079/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2015tokushima.pdf
 
-- NetBSD 7.99.21 earmv6hf rpi.img.gz base
+- NetBSD 7.99.25 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -169,7 +173,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-11-14/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-12-27/
 
 Installed Packages:
 kterm
