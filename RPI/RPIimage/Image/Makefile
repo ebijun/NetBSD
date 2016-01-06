@@ -36,6 +36,8 @@ VND_TMP=vnd2
 
 all: file cdmount rpi extract cdunmount fit
 
+#update: cdmount update-extract cdunmount
+
 # extract sets to image file.
 extract:
 	echo extract sets.
