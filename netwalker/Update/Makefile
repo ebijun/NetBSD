@@ -10,7 +10,7 @@ FILE=`date +%Y%m%d`.img
 VND_FILE=vnd0
 MNT=/mnt
 
-ISO=/usr/release/images/NetBSD-7.99.21-evbarm-earmv7hf-201509072050Z.iso
+ISO=/usr/release/images/NetBSD-7.99.25-evbarm-earmv7hf-201601042150Z.iso
 VND_CD=vnd2
 MNT_CD=/mnt2
 
@@ -50,7 +50,7 @@ pkgupdate:
 	(cd ${MNT}/usr/pkgsrc; cvs update -PAd)
 
 backup:
-	dd if=/dev/rsd0d of=${FILE} bs=4m progress=10
+	dd if=/dev/rsd0d of=${FILE} bs=4m progress=50
 
 restore:
 	progress -f ${FILE} dd of=/dev/rsd0d bs=4m
