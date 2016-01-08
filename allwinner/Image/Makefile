@@ -7,13 +7,13 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-01-23
  
    
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.24-evbarm-${ARCH}-201512131650Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.25-evbarm-${ARCH}-201601071500Z.iso
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-cubieboard2-${ARCH}.img
 
 
-PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2015Q4.tar.gz
 
 # UBOOT
 BOARD=cubieboard2
@@ -63,7 +63,8 @@ extract:
 #	echo extract pkgsrc.
 #	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mount_msdos /dev/${VND}e ${MNT}/boot
-	gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
+#	gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
+	mv ${MNT}/boot/netbsd-CUBIEBOARD.ub ${MNT}/boot/netbsd.ub
 #	cp ${NETWALKER}    ${MNT}/boot
 #	cp ${NETWALKERBIN} ${MNT}/boot
 #	cp ${KOBO}         ${MNT}/boot

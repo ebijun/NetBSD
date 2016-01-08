@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-odroid_c1.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.24-evbarm-earmv7hf-201512162110Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.25-evbarm-earmv7hf-201601071500Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2015Q4.tar.gz
 
 # UBOOT
 UBOOTURL=http://ftp.netbsd.org/pub/NetBSD/misc/jmcneill/odroidc1

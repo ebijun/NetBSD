@@ -13,9 +13,9 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-01-23
 FILE=`date +%Y-%m-%d`-netbsd-bpi-${ARCH}.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.24-evbarm-${ARCH}-201512162110Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.25-evbarm-${ARCH}-201601071500Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2015Q4.tar.gz
 
 # UBOOT
 BOARD=bananapi
