@@ -59,6 +59,7 @@ OSC浜松まとめ
  三太,モール街,学生ラーメンとは何か
  アールクラフト,鍛冶町,溢るる鉄道ミニカーレジンキット
  むつぎく,砂山町,餃子。行列しがち。
+ 地酒かたやま,砂山町,静岡地酒多数。sake-jazz.com
  浜松市楽器博物館,浜松駅前,電子楽器コーナーができた
  トゥルネ・ラ・パージュ,板屋町,アヴァンギャルドフルセットが鳴る喫茶店
  クロスオーディオ,磐田,東新町行きバスで西貝塚下車
@@ -74,7 +75,7 @@ OSC浜松まとめ
  そば屋 案山棒,西焼津,舞踊演劇ライブあり。大駱駝艦→大豆鼓ファーム→そ。
  第一無線,豊橋,オーディオ老舗の二階を見よ
  むらたのたこやき,豊橋駅ビル地下,みんなこのたこやきでNetBSD開発者になった
- Shinnosuke.O,豊橋駅前大通り,クラフトビールと古本。名古屋Keg出身。
+ Shinnosuke.O,豊橋駅前大通り,クラフトビールと古本。鍛冶町1-43 2Fに2016/3浜松店オープン
  まつや,豊橋,松屋フーズではない。豊橋カレーうどん。
  ほしの珈琲,豊橋,愛大前珈琲
  チューブアンプクラブ豊橋,豊橋,http://www.geocities.jp/tactoyohashi/concert2.htm　
@@ -88,8 +89,22 @@ OSC浜名湖主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2015/2/11,浜松,CubieBoard2 RPI+omxplayer BPI Netwalker WZero3 Zaurus
  2014/3/22,浜松,RPI WZero3 O2 Netwalker
  2013/2/9,浜松,RPI WZero3
+
+2015
+-----------------
+
+.. image::  ../Picture/2015/02/11/DSC_0834.jpg
+.. image::  ../Picture/2015/02/11/DSC_0835.jpg
+.. image::  ../Picture/2015/02/11/DSC_0836.jpg
+.. image::  ../Picture/2015/02/11/DSC_0838.jpg
+.. image::  ../Picture/2015/02/11/DSC_0839.jpg
+.. image::  ../Picture/2015/02/11/DSC_0841.jpg
+.. image::  ../Picture/2015/02/11/DSC_0844.jpg
+.. image::  ../Picture/2015/02/11/DSC_0845.jpg
+.. image::  ../Picture/2015/02/11/DSC_0846.jpg
 
 
 2014
