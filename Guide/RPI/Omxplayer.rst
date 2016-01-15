@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -23,18 +23,19 @@
 RaspberryPIでNetBSDを使ってみる(omxplayerとか)
 ===========================================
 
-RaspberryPI向けNetBSDイメージ
--------------------------------
-RaspberryPI上で動くNetBSDイメージを配布しています。SDにイメージをコピーして、
-HDMIケーブルとUSBキーボード/マウス/有線ネットワークをつないで、
-電源をつなぐと起動します。一度、SDカードのサイズまでパーティション領域を自動的に
-ひろげて、勝手にリブートします。
-そのあと、rootでログインできます。パスワードはつけていません。
-rootアカウントにログインできるのはコンソールからだけです。
-もうちょっと詳しい説明はこちらにあります。
-
-::
-
+..
+ RaspberryPI向けNetBSDイメージ
+ -------------------------------
+ RaspberryPI上で動くNetBSDイメージを配布しています。SDにイメージをコピーして、
+ HDMIケーブルとUSBキーボード/マウス/有線ネットワークをつないで、
+ 電源をつなぐと起動します。一度、SDカードのサイズまでパーティション領域を自動的に
+ ひろげて、勝手にリブートします。
+ そのあと、rootでログインできます。パスワードはつけていません。
+ rootアカウントにログインできるのはコンソールからだけです。
+ もうちょっと詳しい説明はこちらにあります。
+ 
+ ::
+ 
   https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
 
 

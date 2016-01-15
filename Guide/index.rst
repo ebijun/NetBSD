@@ -42,8 +42,6 @@
  RPI
  RPI/Xfce4
  RPI/Omxplayer
- RPI/RPIImage
- OSC/OSC2015
  
 * :ref:`genindex`
 * :ref:`modindex`

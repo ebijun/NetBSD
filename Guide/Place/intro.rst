@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -225,7 +225,7 @@ pkgsrcでは、pkgsrcに含まれるソフトウェアのライセンスを収�
 
  % cd /usr/pkgsrc/licenses  ... ライセンス条項が集まっている
  % ls |wc -l
- 214 
+ 228 
  % ls |head
  2-clause-bsd
  3proxy-0.5-license
