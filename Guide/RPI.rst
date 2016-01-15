@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: :1,$s/2015-11-14/2015-11-14/g
+ .. todo:: :1,$s/2016-01-23/2016-01-23/g
  .. todo:: :1,$s?2015/06/27?2015/06/27?g
  .. todo:: apache+php+mysql設定
  .. todo:: uim-pref-gtk
@@ -67,7 +67,7 @@ RaspberryPIでNetBSDを使ってみる
 
  earmv6hf 
  # ftp ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2015-11-14-earmv6hf/2015-11-14-netbsd-raspi-earmv6hf.img.gz.gz
+ 2016-01-23-earmv6hf/2016-01-23-netbsd-raspi-earmv6hf.img.gz.gz
  
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -75,7 +75,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2015-11-14-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2016-01-23-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
 
 Cubieboard2,BananaPI用イメージ
 -------------------------------
@@ -196,7 +196,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 ::
 
  % cat /etc/pkg_install.conf
-　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2015-11-14
+　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-01-23
 
 * パッケージのインストール
 
@@ -287,7 +287,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2015-11-14-netbsd-raspi-earmv6hf.img.gz
+ # vnconfig vnd0 2016-01-23-netbsd-raspi-earmv6hf.img.gz
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
