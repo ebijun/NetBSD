@@ -1,11 +1,11 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.25 (RPI.201512241350Z) #0: Thu Dec 24 16:11:47 UTC 2015
-	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201512241350Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
+NetBSD 7.99.25 (RPI.201601131430Z) #0: Wed Jan 13 16:12:24 UTC 2016
+	builds@b48.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201601131430Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 180 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -55,11 +55,11 @@ sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, HS SDR50 3.3V, re-tuning mod
 sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
+sdhc0: cmd timeout error
 IPsec: Initialized Security Association Processing.
-ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x024041b7:0x0fb>
-ld0: 30735 MB, 7805 cyl, 128 head, 63 sec, 512 bytes/sect x 62945280 sectors
-WARNING: ld0: total sector size in disklabel (3813376) != the size of ld0 (62945280)
-ld0: 4-bit width, SDR50, 100.000 MHz
+ld0 at sdmmc0: <0x03:0x5344:SU02G:0x80:0x014feae2:0x06b>
+ld0: 1938 MB, 984 cyl, 64 head, 63 sec, 512 bytes/sect x 3970048 sectors
+ld0: 4-bit width, 25.000 MHz
 uhidev0 at uhub0 port 1 configuration 1 interface 0
 uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
 ukbd0 at uhidev0: 8 modifier keys, 6 key codes
@@ -73,10 +73,7 @@ uhidev2 at uhub0 port 1 configuration 1 interface 2
 uhidev2: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/0
 uhid0 at uhidev2: input=3, output=0, feature=0
 boot device: ld0
-WARNING: ld0: total sector size in disklabel (3813376) != the size of ld0 (62945280)
 root on ld0a dumps on ld0b
-WARNING: ld0: total sector size in disklabel (3813376) != the size of ld0 (62945280)
-WARNING: ld0: total sector size in disklabel (3813376) != the size of ld0 (62945280)
 root file system type: ffs
 kern.module.path=/stand/evbarm/7.99.25/modules
 vchiq: local ver 6 (min 3), remote ver 6.
