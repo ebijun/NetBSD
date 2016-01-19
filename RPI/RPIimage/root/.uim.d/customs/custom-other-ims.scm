@@ -1,0 +1,6 @@
+(define generic-use-candidate-window? #t)
+(define generic-candidate-op-count 1)
+(define generic-nr-candidate-max 10)
+(define generic-commit-candidate-by-numeral-key? #t)
+(define generic-show-candidate-implicitly? #t)
+(define generic-show-prediction-candidates? #t)
