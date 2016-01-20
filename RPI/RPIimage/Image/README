@@ -1,5 +1,5 @@
 VERSION: :1,$s/2016-01-23/2016-01-23/g
-ISO:     :1,$s/201601131430Z/201601131430Z/g
+ISO:     :1,$s/201601131430Z/201601181250Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 NetBSD:  :1,$s/7.99.25/7.99.25/g
 
@@ -24,7 +24,8 @@ pkg_info output version history:
 
 Update:
 - NetBSD-current 7.99.25 evbarm-earmv6hf 201601131430Z rpi.img from nyftp.
-- CVE??
+- CVE-2016-0777: get rid of roaming.
+- mikutter-3.3.3
 
 libfreetype.so updated:
   /usr/X11R7/lib/libfreetype.so.17 updated to libfreetype.so.18
