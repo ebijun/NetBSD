@@ -1,5 +1,5 @@
 VERSION: :1,$s/2016-01-23/2016-01-23/g
-ISO:     :1,$s/201601131430Z/201601181250Z/g
+ISO:     :1,$s/201601181250Z/201601181250Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 NetBSD:  :1,$s/7.99.25/7.99.25/g
 
@@ -23,7 +23,7 @@ pkg_info output version history:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.25 evbarm-earmv6hf 201601131430Z rpi.img from nyftp.
+- NetBSD-current 7.99.25 evbarm-earmv6hf 201601181250Z rpi.img from nyftp.
 - CVE-2016-0777: get rid of roaming.
 - mikutter-3.3.3
 
@@ -84,8 +84,8 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
  
   1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.19-netbsd6-evbarm-earmv6hf.tgz for evaluation.
-  3. pkg_add musica-0.3.19-netbsd6-evbarm-earmv6hf.tgz
+  2. Download musica-0.3.22-netbsd6-evbarm-earmv6hf.tgz for evaluation.
+  3. pkg_add musica-0.3.22-netbsd6-evbarm-earmv6hf.tgz
   4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
   5. Find from DLNA/UPnP AV equipment.
   6. With a little luck,you'll find musica and enjoy music via musica.
