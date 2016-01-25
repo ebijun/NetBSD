@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.25 (GENERIC.201601032050Z) #0: Sun Jan  3 23:27:24 UTC 2016
-	builds@b42.netbsd.org:/home/builds/ab/HEAD/i386/201601032050Z-obj/home/source/ab/HEAD/src/sys/arch/i386/compile/GENERIC
+NetBSD 7.99.25 (GENERIC.201601241850Z) #0: Sun Jan 24 20:45:20 UTC 2016
+	builds@b41.netbsd.org:/home/builds/ab/HEAD/i386/201601241850Z-obj/home/source/ab/HEAD/src/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1984 MB
 timecounter: Timecounters tick every 10.000 msec
@@ -27,23 +27,24 @@ ACPI: MCFG 0x000000007F4F9000 00003C (v01 ACRSYS ACRPRDCT 00000001 1025 01000013
 ACPI: ASF! 0x000000007F4F8000 0000A5 (v32 ACRSYS ACRPRDCT 00000001 1025 01000013)
 ACPI: SLIC 0x000000007F4F0000 000176 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
 ACPI: BOOT 0x000000007F4EF000 000028 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: All ACPI Tables successfully acquired
+ACPI: 2 ACPI AML tables successfully acquired and loaded
+
 ioapic0 at mainbus0 apid 4: pa 0xfec00000, version 0x20, 24 pins
 cpu0 at mainbus0 apid 0
 cpu0: Intel(R) Atom(TM) CPU N270   @ 1.60GHz, id 0x106c2
 cpu1 at mainbus0 apid 1
 cpu1: Intel(R) Atom(TM) CPU N270   @ 1.60GHz, id 0x106c2
-acpi0 at mainbus0: Intel ACPICA 20150717
+acpi0 at mainbus0: Intel ACPICA 20160108
 acpi0: X/RSDT: OemId <ACRSYS,ACRPRDCT,00000001>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C39B294C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3A0A94C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C39A6C0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0x00000000C3A00C0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C37DA7FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C37437FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C39AE97C 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3757014 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -82,8 +83,6 @@ acpitz0 at acpi0 (THRM)
 acpitz0: levels: critical 95.0 C, passive cooling
 apm0 at acpi0: Power Management spec V1.2
 ACPI: Enabled 1 GPEs in block 00 to 1F
-ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20150717/hwxface-646)
-ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20150717/hwxface-646)
 pckbd0 at pckbc1 (kbd slot)
 pckbc1: using irq 1 for kbd slot
 wskbd0 at pckbd0: console keyboard
@@ -106,7 +105,7 @@ i915drmkms0: interrupting at ioapic0 pin 16 (i915)
 drm: initialized overlay support
 intelfb0 at i915drmkms0
 i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xdb166000, size 1024x600, depth 32, stride 4096
+intelfb0: framebuffer at 0xdb1cd000, size 1024x600, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
@@ -200,9 +199,10 @@ acpicpu1 at cpu1: ACPI CPU
 DRM error in i915_irq_handler: pipe A underrun
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
-uhub0 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+IPsec: Initialized Security Association Processing.
+uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
 uhub2 at usb2: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
@@ -210,7 +210,6 @@ uhub3 at usb3: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub3: 2 ports with 2 removable, self powered
 uhub4 at usb4: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub4: 8 ports with 8 removable, self powered
-IPsec: Initialized Security Association Processing.
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 acpibat0: SONY LION rechargeable battery
 acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
