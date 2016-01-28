@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.25 (GENERIC.201601241850Z) #0: Sun Jan 24 20:45:20 UTC 2016
-	builds@b41.netbsd.org:/home/builds/ab/HEAD/i386/201601241850Z-obj/home/source/ab/HEAD/src/sys/arch/i386/compile/GENERIC
+NetBSD 7.99.26 (GENERIC.201601271840Z) #0: Wed Jan 27 21:29:55 UTC 2016
+	builds@b42.netbsd.org:/home/builds/ab/HEAD/i386/201601271840Z-obj/home/source/ab/HEAD/src/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1984 MB
 timecounter: Timecounters tick every 10.000 msec
@@ -199,17 +199,17 @@ acpicpu1 at cpu1: ACPI CPU
 DRM error in i915_irq_handler: pipe A underrun
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
-IPsec: Initialized Security Association Processing.
-uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb2: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb2: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
 uhub3 at usb3: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub3: 2 ports with 2 removable, self powered
 uhub4 at usb4: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub4: 8 ports with 8 removable, self powered
+IPsec: Initialized Security Association Processing.
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 acpibat0: SONY LION rechargeable battery
 acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
@@ -222,7 +222,7 @@ wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/7.99.25/modules
+kern.module.path=/stand/i386/7.99.26/modules
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
