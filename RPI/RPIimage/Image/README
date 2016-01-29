@@ -19,43 +19,99 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI0
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
 
-pkg_info output version history:
+Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
 - NetBSD-current 7.99.25 evbarm-earmv6hf 201601181250Z rpi.img from nyftp.
-- CVE-2016-0777: get rid of roaming.
 - mikutter-3.3.3
+- bind
 
-libfreetype.so updated:
-  /usr/X11R7/lib/libfreetype.so.17 updated to libfreetype.so.18
-  copy libfreetype.so.17.4.11 as /usr/X11R7/lib/libfreetype.so.17 if you need.
-  ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-01-23-earmv6hf/libfreetype.so.17.4.11 
+Automatic resize partition: see /etc/rc.conf and /etc/fstab
+  1. copy image to SD/MicroSD
+  2. Boot 
+  3. Calculate and resize ld0 partition and automatic reboot
+  4. after the reboot,root partition fit for your card.
+    http://movapic.com/pic/20150416115108552fa22c4f225
+    In this image, ld0a re-created with newfs -b 4096.
 
-Set pkgsrc after resize partition: for this image size fit in 2GB.
+pkgsrc: 
   # cd /usr
   # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
   # ls /usr/pkgsrc                ... check if exists.
   # tar tzvf pkgsrc.tar.gz |head  ... check the archive
   # tar xzvf pkgsrc.tar.gz        ... extract
   # ls /usr/pkgsrc                ... check what extracted
+  # pkg_chk -g                    ... List to/usr/pkgsrc/pkgchk.conf
+  # (cd /usr/pkgsrc;cvs update -PAd) ... update
+  # pkg_chk -un                   ... Update (listup)
+  # pkg_chk -u                    ... Update
 
   I use /usr/pkgsrc with USB SSD disk.
 
-automatic resize partition: see /etc/rc.conf
-  1. copy image to SD/MicroSD
-  2. Boot 
-  3. Calculate and resize ld0 partition and automatic reboot
-  4. after the reboot,root partition fit for your card.
-    http://movapic.com/pic/20150416115108552fa22c4f225
-  notice: In this image, ld0a re-created with newfs -b 4096.
+Pre-compiled packages:
+- Pre-compiled packages path setting: see /etc/pkg_install.conf 
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-01-23/
+ If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
+ /etc/mk.conf.
 
-GPU - omxplayer and ioquake3-raspberrypi support
-  After "Growing the root file-system"
-  pkg_add omxplayer
-  pkg_add youtube-dl
-  youtube-dl https://www.youtube.com/watch?v=wG8ZCC8IwvM
-  omxplayer *
+Install application.
+  # pkg_add some_application_name
+
+- omxplayer
+  # pkg_add omxplayer
+  # pkg_add youtube-dl
+  # youtube-dl https://www.youtube.com/watch?v=wG8ZCC8IwvM
+  # omxplayer *.mp4
+
+- Xfce4
+  # pkg_add xfce4
+  # startxfce4 
+   or edit .xinitrc and comment out startxfce4
+
+- firefox
+  # pkg_add firefox
+  # pkg_add firefox-l10n
+
+- midori 
+  # pkg_add midori
+
+- nodejs
+  # pkg_add nodejs
+
+  omxfinder (https://www.npmjs.com/package/omxfinder)
+  # npm install -g omxfinder
+  cd video archive directory,
+  # omxfinder
+  can start video viewing via file finder.
+
+- openjdk
+  # pkg_add openjdk8
+
+- scribus
+  # pkg_add scribus-1.4.3  
+
+- (inkscape)
+
+- gimp
+  # pkg_add gimp
+
+- emacs
+  # pkg_add emacs
+
+- evince
+  # pkg_add evince
+
+- wordpress
+  # pkg_add wordpress
+
+- typical apache+php environment
+  # pkg_add ap22-php55
+
+- sphinx
+  # pkg_add py27-sphinx
+
+- (shotwell)
 
 I2C - "Raspberry Pi I2C implementation still broken?"
   http://mail-index.netbsd.org/port-arm/2015/02/10/msg002853.html
@@ -65,20 +121,6 @@ I2C - "Raspberry Pi I2C implementation still broken?"
    https://gist.github.com/cr1901/76af0b3db9e9001a8d5b
    http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48855
    http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48932
-
-Pre-compiled packages:
-- Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-01-23/
-
- To install application.
- # pkg_add some_application_name
-
- If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
- /etc/mk.conf.
-
-Growing the root file-system by hand:
-  use disklabel -i and resize_ffs
-  http://wiki.netbsd.org/ports/evbarm/raspberry_pi/
 
 musica - DLNA/UPnP music server: (Thanx @cvsync)
  MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
@@ -99,12 +141,9 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   https://twitter.com/isaki68k/status/625138538271502337
 
 Todo:
-- Try light-desktop:
-  -> pkg_add xfce4 works. Thanx @YouriMouton.
 - pkg_in/pkg_summary
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
 - https://github.com/isaki68k/sayaka
-- http://www.netbsd.org/~joerg/nodejs.tar.gz
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
