@@ -1,30 +1,21 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.20 (CUBIEBOARD.201508082350Z) #0: Sun Aug  9 01:40:54 UTC 2015
-	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv7hf/201508082350Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/CUBIEBOARD
+NetBSD 7.99.26 (CUBIEBOARD.201602040320Z)
 total memory = 1024 MB
-avail memory = 1005 MB
+avail memory = 1004 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0 core 0: 960 MHz Cortex-A7 r0p4 (Cortex V7A core)
 cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu0: sctlr: 0xc5187d
-cpu0: actlr: 0x6040
-cpu0: revidr: 0
-cpu0: mpidr: 0x80000000
-cpu0: isar: [0]=0x2101110 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x10011142, [5]=0
-cpu0: mmfr: [0]=0x10101105 [1]=0x40000000 [2]=0x1240000 [3]=0x2102211
-cpu0: pfr: [0]=0x1131 [1]=0x11011
 cpu0: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu0: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu0: 256KB/64B 8-way write-through L2 PIPT Unified cache
 vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-vfp0: mvfr: [0]=0x10110222 [1]=0x11111111
 cpu1 at mainbus0 core 1
 armperiph0 at mainbus0
 armgic0 at armperiph0: Generic Interrupt Controller, 160 sources (151 valid)
@@ -33,7 +24,7 @@ armgtmr0 at armperiph0: ARMv7 Generic 64-bit Timer (24000 kHz)
 armgtmr0: interrupting on irq 27
 timecounter: Timecounter "armgtmr0" frequency 24000000 Hz quality 500
 awinio0 at mainbus0: A20 (0x1651)
-awingpio0 at awinio0: [satapwren >PB8] [usb0drv >PB9] [usb0iddet <PH4] [usb0vbusdet <PH5] [usb1drv >PH6] [usb2drv >PH3] [status-led1 >PH20] [status-led2 >PH21] [mmc0detect <PH1] [audiopactrl >PH15]
+awingpio0 at awinio0: [satapwren >PB8] [usb0drv >PB9] [usb0iddet <PH4] [usb0vbusdet <PH5] [usb1drv >PH6] [usb2drv >PH3] [status-led1 >PH20] [status-led2 >PH21] [mmc0detect <PH1] [audiopactrl >PH15] [lcd0_power_en >PH8] [lcd0_bl_en >PH7]
 awindma0 at awinio0: DMA
 awindma0: interrupting on irq 59
 awincnt0 at awinio0
@@ -42,7 +33,16 @@ com0 at awinio0 port 0: ns16550a, working fifo
 com0: console
 awindebe0 at awinio0 port 0: Display Engine Backend (BE0)
 awintcon0 at awinio0 port 0: LCD/TV timing controller (TCON0)
+awintcon0: : using DEBE0, pll3
 awinhdmi0 at awinio0: HDMI 1.3
+awinhdmi0: : using TCON0, pll3
+awinhdmi0: display connected
+awinhdmi0: HDMI mode (auto-detected)
+genfb0 at awindebe0: switching to framebuffer console
+genfb0: framebuffer at 0xca000000, size 1920x1080, depth 32, stride 7680
+wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+wsdisplay0: screen 1-3 added (default, vt100 emulation)
 awinwdt0 at awinio0: default period is 10 seconds
 awinrtc0 at awinio0: RTC
 awinusb0 at awinio0 port 0
@@ -80,6 +80,11 @@ atabus0 at ahcisata0 channel 0
 awiniic0 at awinio0 port 0: Marvell TWSI controller
 awiniic0: interrupting on irq 39
 iic0 at awiniic0: I2C bus
+axp20x0 at iic0 addr 0x34: AC used
+axp20x0: : DCDC2 1400mV
+axp20x0: : DCDC3 1300mV
+axp20x0: : LDO2 3000mV, LDO4 2800mV
+axp20x0: : LDO3 2275mV
 awge0 at awinio0: Gigabit Ethernet Controller
 awge0: interrupting on irq 117
 awge0: Ethernet address: 02:8d:07:02:e4:6e
@@ -93,28 +98,20 @@ awinnand0 at awinio0
 awinir0 at awinio0 port 0: IR
 awinir0: interrupting on irq 37
 cir0 at awinir0
-gpio0 at awingpio0: 18 pins
-gpio1 at awingpio0: 25 pins
-gpio2 at awingpio0: 28 pins
-gpio3 at awingpio0: 12 pins
-gpio4 at awingpio0: 12 pins
-gpio5 at awingpio0: 28 pins
-gpio6 at awingpio0: 22 pins
+gpio0 at awingpio0 port B: 18 pins
+gpio1 at awingpio0 port C: 25 pins
+gpio2 at awingpio0 port D: 28 pins
+gpio3 at awingpio0 port E: 12 pins
+gpio4 at awingpio0 port G: 12 pins
+gpio5 at awingpio0 port H: 28 pins
+gpio6 at awingpio0 port I: 22 pins
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu1: 960 MHz Cortex-A7 r0p4 (Cortex V7A core)
 cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu1: sctlr: 0xc5187d
-cpu1: actlr: 0x6040
-cpu1: revidr: 0
-cpu1: mpidr: 0x80000001
-cpu1: isar: [0]=0x2101110 [1]=0x13112111 [2]=0x21232041 [3]=0x11112131, [4]=0x10011142, [5]=0
-cpu1: mmfr: [0]=0x10101105 [1]=0x40000000 [2]=0x1240000 [3]=0x2102211
-cpu1: pfr: [0]=0x1131 [1]=0x11011
 cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu1: 256KB/64B 8-way write-through L2 PIPT Unified cache
 vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-vfp1: mvfr: [0]=0x10110222 [1]=0x11111111
 sdmmc0 at awinmmc0
 uhub0 at usb0: Allwinner OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
@@ -126,20 +123,35 @@ uhub3 at usb3: Allwinner EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub3: 1 port with 1 removable, self powered
 uhub4 at usb4: Mentor Graphics MOTG root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub4: 1 port with 1 removable, self powered
-ld0 at sdmmc0: <0x74:0x4a45:USD  :0x20:0xc4a00247:0x0eb>
-ld0: 30191 MB, 7667 cyl, 128 head, 63 sec, 512 bytes/sect x 61831168 sectors
-ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+IPsec: Initialized Security Association Processing.
 ahcisata0 port 0: device present, speed: 3.0Gb/s
+ld0 at sdmmc0: <0x03:0x5344:SL32G:0x80:0x93ee87d6:0x0fb>
+ld0: 30436 MB, 7729 cyl, 128 head, 63 sec, 512 bytes/sect x 62333952 sectors
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+ehci0: handing over full speed device on port 1 to ohci0
 wd0 at atabus0 drive 0
-wd0: <TS64GSSD370>
+wd0: <TS128GSSD370S>
 wd0: drive supports 2-sector PIO transfers, LBA48 addressing
-wd0: 61057 MB, 124053 cyl, 16 head, 63 sec, 512 bytes/sect x 125045424 sectors
+wd0: 119 GB, 248085 cyl, 16 head, 63 sec, 512 bytes/sect x 250069680 sectors
 wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
 wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.20/modules
+kern.module.path=/stand/evbarm/7.99.26/modules
 WARNING: preposterous TOD clock time
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
+uhidev0 at uhub0 port 1 configuration 1 interface 0
+uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub0 port 1 configuration 1 interface 1
+uhidev1: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
+uhidev1: 1 report ids
+ums0 at uhidev1 reportid 1: 3 buttons and Z dir
+wsmouse0 at ums0 mux 0
+uhidev2 at uhub0 port 1 configuration 1 interface 2
+uhidev2: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/0
+uhid0 at uhidev2: input=3, output=0, feature=0
+wsdisplay0: screen 4 added (default, vt100 emulation)
