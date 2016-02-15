@@ -65,6 +65,11 @@ Coffee
 #. Copain,8-20,03-3267-7779
 #. Midori no Mame,11-20,03-3269-3712
 
+Gigs
+---------------
+
+#. tokyo gig guide www.tokyogigguide.com/en/
+
 AsiaBSDCon 
 -------------------------
 
