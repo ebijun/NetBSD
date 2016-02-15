@@ -24,8 +24,9 @@ Pre-installed packages:
 
 Update:
 - NetBSD-current 7.99.25 evbarm-earmv6hf 201601181250Z rpi.img from nyftp.
-- mikutter-3.3.3
-- bind
+- mikutter-3.3.5
+- bind 9.10.3-P3
+- OpenSSL 1.0.1r
 
 Automatic resize partition: see /etc/rc.conf and /etc/fstab
   1. copy image to SD/MicroSD

@@ -14,3 +14,7 @@ dmesg    > /root/dmesg
 pkg_info |sort  > /root/pkginfo
 # make entropy-file
 /etc/rc.d/random_seed stop
+#
+uname -a        >  /root/version
+openssl version >> /root/version
+named -v        >> /root/version
