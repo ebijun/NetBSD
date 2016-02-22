@@ -4,9 +4,9 @@ DEVICE=rsd3d
 BOARD=raspi-earmv6hf
 #BOARD=raspi-earmv7hf
 
-#COMPRESS=-z
-#SUFFIX=.gz
-COMPRESS=
+COMPRESS=-z
+SUFFIX=.gz
+#COMPRESS=
 
 DATE=`date +%Y-%m-%d`
 #DATE=2015-11-10

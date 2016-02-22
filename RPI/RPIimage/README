@@ -25,6 +25,7 @@ Pre-installed packages:
 Update:
 - NetBSD-current 7.99.26 evbarm-earmv6hf 201602172150Z rpi.img from nyftp.
 - mikutter-3.3.6
+- mlterm-3.6.3
 - bind 9.10.3-P3
 - OpenSSL 1.0.1r
 
@@ -51,12 +52,24 @@ pkgsrc:
   I use /usr/pkgsrc with USB SSD disk.
 
 Pre-compiled packages:
-- Pre-compiled packages path setting: see /etc/pkg_install.conf 
+- Pre-compiled packages path setting: man 5 pkg_install.conf
+
+See /etc/pkg_install.conf
+
 PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-02-27/
- If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
+
+- If you use Official Package for NetBSD7.0:
+
+set /etc/pkg_install.conf: 
+PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
+
+- I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-02-27-earmv6hf/libfreetype.so.17.4.11
+
+- If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
 
-Install application.
+Install application: man 1 pkg_add
   # pkg_add some_application_name
 
 - omxplayer
@@ -68,7 +81,7 @@ Install application.
 - Xfce4
   # pkg_add xfce4
   # startxfce4 
-   or edit .xinitrc and comment out startxfce4
+   or edit /root/.xinitrc and comment out startxfce4
 
 - firefox
   # pkg_add firefox
@@ -85,6 +98,14 @@ Install application.
   cd video archive directory,
   # omxfinder
   can start video viewing via file finder.
+
+- mcomix .. Book scanning data viewer
+  # pkg_add py27-mcomix
+
+Testing:: tell me your favorite application.
+
+- mpv
+  # pkg_add mpv
 
 - openjdk
   # pkg_add openjdk8
@@ -113,6 +134,9 @@ Install application.
   # pkg_add py27-sphinx
 
 - (shotwell)
+
+NetBSD GPIO DOC by Marina Brown
+  https://github.com/catskillmarina/netbsd-gpio-doc/blob/master/README.md
 
 I2C - "Raspberry Pi I2C implementation still broken?"
   http://mail-index.netbsd.org/port-arm/2015/02/10/msg002853.html
@@ -144,7 +168,8 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
 Todo:
 - pkg_in/pkg_summary
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
-- https://github.com/isaki68k/sayaka
+- https://github.com/isaki68k/sayaka: PHP/vala based twitter client.
+  https://twitter.com/tsutsuii/status/700963911630065664
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft

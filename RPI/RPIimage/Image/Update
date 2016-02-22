@@ -8,7 +8,7 @@ KERNEL_SETS=${MNT_CDROM}/evbarm/binary/kernel
 
 fsck /dev/${DEV}a
 mount /dev/${DEV}a /${MNT}
-#make cdmount
+make cdmount
 
 for i in base comp games man misc modules tests text xbase xcomp xetc xfont xserver
 do
@@ -23,3 +23,7 @@ gunzip < ${KERNEL_SETS}/netbsd-RPI2.bin.gz > $MNT_MSDOS/kernel7.img
 umount_msdos $MNT_MSDOS
 
 make cdunmount
+# umount /mnt
+# umount /mnt2
+# vnconfig -l
+
