@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -94,7 +94,8 @@
  開拓屋,,三角市場近く
  ギャラリー犬飼,,豊平川近く
  かんろ,札幌駅,本店:北8西1 北口:北6西6 北一条:北1西8 発寒:5条3 17:00-
- 
+ ななせ,琴似,半身揚げ　毎日自販機の写真が。
+
 山西さんのカメラ情報
 ~~~~~~~~~~~~~~~~~~~~~
  nobugの山西さんに、札幌おすすめカメラ店を教えていただきました。

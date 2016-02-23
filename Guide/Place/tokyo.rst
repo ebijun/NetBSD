@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -59,7 +59,8 @@ Maps:
  2014 Spring,2/28-3/1,1900,82,明星大学
  2014 Fall,10/18-19,1550,72,明星大学
  2015 Spring,2/27-28,1700,79,明星大学
- 2015 Fall,10/24-25,,77,明星大学
+ 2015 Fall,10/24-25,1550,77,明星大学
+ 2016 Spring,2/26-27,,71,明星大学
 
 
 観光ガイドバックナンバー
@@ -73,7 +74,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 80, OSC2015東京秋,http://www.soum.co.jp/~jun/OSC2015tokyofall.pdf
+ 85, OSC2016東京春, http://www.soum.co.jp/~jun/OSC2016tokyospring.pdf
+ 80, OSC2015東京秋, http://www.soum.co.jp/~jun/OSC2015tokyofall.pdf
  69, OSC2015東京春, http://www.soum.co.jp/~jun/OSC2015tokyospring.pdf
  64, OSC2014東京秋, http://www.soum.co.jp/~jun/OSC2014tokyofall.pdf
  53, OSC2014東京春, http://www.soum.co.jp/~jun/OSC2014tokyospring.pdf
@@ -91,8 +93,9 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2015東京秋 NetBSDブース展示の記録,
- OSC2015東京春 NetBSDブース展示の記録,http://togetter.com/li/788681
+ OSC2016東京春 NetBSDブース展示の記録, 
+ OSC2015東京秋 NetBSDブース展示の記録, http://togetter.com/li/891197
+ OSC2015東京春 NetBSDブース展示の記録, http://togetter.com/li/788681
  OSC2014東京秋 NetBSDブース展示の記録, http://togetter.com/li/733588 
  OSC2014東京春 NetBSDブース展示の記録, http://togetter.com/li/635747
  OSC2013東京秋 NetBSDブース展示の記録, http://togetter.com/li/578893
@@ -148,6 +151,7 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2015/10/24-5,OSC2015東京秋,RK3188 WM8750 EP9315 AM3358 Allwinner A20 405GP BCM2836 AR9331
  2015/2/27-8,OSC2015東京春,Radxa RocK APC8750 RPI OpenBlockS sandpoint
  2014/10/18-19,OSC2014東京秋,Xen dom0 BSD全部 RadxaRock zaurusC700音源
  2014/2/28-3/1,OSC2014東京春,Netwinder RPI ZAURUS第六艦隊 OSCアワード受賞
@@ -173,6 +177,27 @@ OSC東京主な展示物
 2015年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. image::  ../Picture/2015/10/25/DSC08207.JPG
+.. image::  ../Picture/2015/10/25/DSC08208.JPG
+.. image::  ../Picture/2015/10/25/DSC_1443.jpg
+.. image::  ../Picture/2015/10/24/DSC08182.JPG
+.. image::  ../Picture/2015/10/24/DSC08184.JPG
+.. image::  ../Picture/2015/10/24/DSC08187.JPG
+.. image::  ../Picture/2015/10/24/DSC08189.JPG
+.. image::  ../Picture/2015/10/24/DSC08190.JPG
+.. image::  ../Picture/2015/10/24/DSC08192.JPG
+.. image::  ../Picture/2015/10/24/DSC08193.JPG
+.. image::  ../Picture/2015/10/24/DSC08195.JPG
+.. image::  ../Picture/2015/10/24/DSC08197.JPG
+.. image::  ../Picture/2015/10/24/DSC08198.JPG
+.. image::  ../Picture/2015/10/24/DSC08199.JPG
+.. image::  ../Picture/2015/10/24/DSC08200.JPG
+.. image::  ../Picture/2015/10/24/DSC08202.JPG
+.. image::  ../Picture/2015/10/24/DSC08203.JPG
+.. image::  ../Picture/2015/10/24/DSC_1439.jpg
+.. image::  ../Picture/2015/10/24/DSC_1440.jpg
+.. image::  ../Picture/2015/10/24/DSC_1441.jpg
+.. image::  ../Picture/2015/10/24/DSC_1442.jpg
 .. image::  ../Picture/2015/02/27/DSC_0877.jpg
 .. image::  ../Picture/2015/02/28/DSC_0887.jpg
 .. image::  ../Picture/2015/02/28/DSC_0888.jpg

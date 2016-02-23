@@ -37,7 +37,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/hamamatsu
+ Place/tokyo
  Place/intro
  RPI
  RPI/Xfce4
