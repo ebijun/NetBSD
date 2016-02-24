@@ -4,8 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.25 (RPI.201601181250Z) #0: Mon Jan 18 14:35:10 UTC 2016
-	builds@b47.netbsd.org:/home/builds/ab/HEAD/evbarm-earmv6hf/201601181250Z-obj/home/source/ab/HEAD/src/sys/arch/evbarm/compile/RPI
+NetBSD 7.99.26 (RPI.201602172150Z)
 total memory = 448 MB
 avail memory = 434 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -60,24 +59,29 @@ IPsec: Initialized Security Association Processing.
 ld0 at sdmmc0: <0x03:0x5344:SU02G:0x80:0x014feae2:0x06b>
 ld0: 1938 MB, 984 cyl, 64 head, 63 sec, 512 bytes/sect x 3970048 sectors
 ld0: 4-bit width, 25.000 MHz
-uhidev0 at uhub0 port 1 configuration 1 interface 0
-uhidev0: FCL RF Receiver, rev 1.10/1.00, addr 2, iclass 3/1
-ukbd0 at uhidev0: 8 modifier keys, 6 key codes
-wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub0 port 1 configuration 1 interface 1
-uhidev1: FCL RF Receiver, rev 1.10/1.00, addr 2, iclass 3/1
-uhidev1: 6 report ids
-ums0 at uhidev1 reportid 5: 3 buttons and Z dir
-wsmouse0 at ums0 mux 0
-uhid0 at uhidev1 reportid 6: input=0, output=0, feature=6
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.25/modules
+kern.module.path=/stand/evbarm/7.99.26/modules
 vchiq: local ver 6 (min 3), remote ver 6.
 vcaudio0 at vchiq0: auds
+vchiq_get_state: g_state.remote->initialised != 1 (0)
+vchiq: vchiq_initialise: videocore initialized after 1 retries
+
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 audio0 at vcaudio0: half duplex, playback, capture, independent
+uhidev0 at uhub0 port 1 configuration 1 interface 0
+uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub0 port 1 configuration 1 interface 1
+uhidev1: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
+uhidev1: 1 report ids
+ums0 at uhidev1 reportid 1: 3 buttons and Z dir
+wsmouse0 at ums0 mux 0
+uhidev2 at uhub0 port 1 configuration 1 interface 2
+uhidev2: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/0
+uhid0 at uhidev2: input=3, output=0, feature=0
 wsdisplay0: screen 4 added (default, vt100 emulation)
