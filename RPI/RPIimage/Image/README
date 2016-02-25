@@ -167,6 +167,9 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   https://twitter.com/isaki68k/status/625138538271502337
 
 Todo:
+- HDMI Display failure on X
+  - On-Lap 2501M (reported from @matoken) 
+    https://twitter.com/matoken/status/702656906251210753
 - pkg_in/pkg_summary
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
 - https://github.com/isaki68k/sayaka: PHP/vala based twitter client.
@@ -192,7 +195,9 @@ pkgsrc Todo:
 - kodi: boot failed on my environment.
 - www/otter-browser: compiling.
 - omxplayer: sometimes core dumps.
+  -> add "gpu=256" to /boot/cmdline.txt, advice from Brandon Wickelhaus.
 - omxplayer: need /proc/cpuinfo to buy MPEG-2 license key.
+
 
 =====================
 
