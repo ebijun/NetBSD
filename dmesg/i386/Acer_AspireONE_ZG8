@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.26 (GENERIC.201602141920Z)
+NetBSD 7.99.26 (GENERIC.201603021330Z)
 total memory = 2035 MB
 avail memory = 1983 MB
 timecounter: Timecounters tick every 10.000 msec
@@ -27,7 +27,6 @@ ACPI: ASF! 0x000000007F4F8000 0000A5 (v32 ACRSYS ACRPRDCT 00000001 1025 01000013
 ACPI: SLIC 0x000000007F4F0000 000176 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
 ACPI: BOOT 0x000000007F4EF000 000028 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
 ACPI: 2 ACPI AML tables successfully acquired and loaded
-
 ioapic0 at mainbus0 apid 4: pa 0xfec00000, version 0x20, 24 pins
 cpu0 at mainbus0 apid 0
 cpu0: Intel(R) Atom(TM) CPU N270   @ 1.60GHz, id 0x106c2
@@ -37,15 +36,15 @@ acpi0 at mainbus0: Intel ACPICA 20160108
 acpi0: X/RSDT: OemId <ACRSYS,ACRPRDCT,00000001>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3B7C94C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3B7B94C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3822C0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0x00000000C3821C0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C37EA7FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C37E97FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C37FC014 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C37FB014 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
-timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
 timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
 acpiec0 at acpi0 (EC0, PNP0C09)
@@ -66,7 +65,7 @@ acpiout0 at acpivga0 (CRT1, 0x0100): ACPI Display Output Device
 acpiout1 at acpivga0 (DTV1, 0x0200): ACPI Display Output Device
 acpiout2 at acpivga0 (DFP1, 0x0300): ACPI Display Output Device
 acpiout3 at acpivga0 (LCD, 0x0400): ACPI Display Output Device
-acpiout3: brightness levels: [10,20,30,40,50,60,70,80,90,100-101]
+acpiout3: brightness levels: [10,20,30,40,50,60,70,80,90,100]
 acpiout4 at acpivga0 (DTV2, 0x0500): ACPI Display Output Device
 acpiout5 at acpivga0 (DFP2, 0x0600): ACPI Display Output Device
 acpivga0: connected output devices:
@@ -104,7 +103,7 @@ i915drmkms0: interrupting at ioapic0 pin 16 (i915)
 drm: initialized overlay support
 intelfb0 at i915drmkms0
 i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xdb2f3000, size 1024x600, depth 32, stride 4096
+intelfb0: framebuffer at 0xdb2f2000, size 1024x600, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
@@ -198,7 +197,6 @@ acpicpu1 at cpu1: ACPI CPU
 DRM error in i915_irq_handler: pipe A underrun
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
-IPsec: Initialized Security Association Processing.
 uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
 uhub1 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
@@ -209,6 +207,7 @@ uhub3 at usb3: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub3: 2 ports with 2 removable, self powered
 uhub4 at usb4: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub4: 8 ports with 8 removable, self powered
+IPsec: Initialized Security Association Processing.
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 acpibat0: SONY LION rechargeable battery
 acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
@@ -226,3 +225,4 @@ wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+acpibat0: normal capacity on 'charge state'
