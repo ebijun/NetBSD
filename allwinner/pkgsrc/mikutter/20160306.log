@@ -1,0 +1,46 @@
+Script started on Sun Mar  6 12:16:04 2016
+allwinner$ mikutter
+/usr/pkg/lib/ruby/2.0.0/net/http.rb:921:in `connect': SSL_connect returned=1 errno=0 state=SSLv3 read server session ticket A: sslv3 alert bad record mac (OpenSSL::SSL::SSLError)
+        from /usr/pkg/lib/ruby/2.0.0/net/http.rb:921:in `block in connect'
+        from /usr/pkg/lib/ruby/2.0.0/timeout.rb:66:in `timeout'
+        from /usr/pkg/lib/ruby/2.0.0/net/http.rb:921:in `connect'
+        from /usr/pkg/lib/ruby/2.0.0/net/http.rb:862:in `do_start'
+        from /usr/pkg/lib/ruby/2.0.0/net/http.rb:851:in `start'
+        from /usr/pkg/lib/ruby/2.0.0/net/http.rb:1373:in `request'
+        from /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/consumer.rb:161:in `request'
+        from /usr/pkg/share/mikutter/core/lib/mikutwitter/oauth_hacks.rb:37:in `request'
+        from /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/consumer.rb:194:in `token_request'
+        from /usr/pkg/lib/ruby/gems/2.0.0/gems/oauth-0.4.7/lib/oauth/consumer.rb:136:in `get_request_token'
+        from /usr/pkg/share/mikutter/core/lib/mikutwitter/connect.rb:43:in `request_oauth_token'
+        from /usr/pkg/share/mikutter/core/plugin/change_account/change_account.rb:93:in `request_token'
+        from /usr/pkg/share/mikutter/core/plugin/achievement/achievement.rb:54:in `method_missing'
+        from /usr/pkg/share/mikutter/core/plugin/change_account/change_account.rb:194:in `block (2 levels) in <top (required)>'
+        from /usr/pkg/share/mikutter/core/plugin/achievement/achievement.rb:93:in `instance_eval'
+        from /usr/pkg/share/mikutter/core/plugin/achievement/achievement.rb:93:in `block (2 levels) in <top (required)>'
+        from /usr/pkg/share/mikutter/core/plugin/change_account/change_account.rb:185:in `block in <top (required)>'
+        from /usr/pkg/lib/ruby/gems/2.0.0/gems/pluggaloid-1.0.2/lib/pluggaloid/plugin.rb:34:in `instance_eval'
+        from /usr/pkg/lib/ruby/gems/2.0.0/gems/pluggaloid-1.0.2/lib/pluggaloid/plugin.rb:34:in `create'
+        from /usr/pkg/share/mikutter/core/plugin/change_account/change_account.rb:5:in `<top (required)>'
+        from /usr/pkg/share/mikutter/core/miquire_plugin.rb:138:in `load'
+        from /usr/pkg/share/mikutter/core/miquire_plugin.rb:138:in `load'
+        from /usr/pkg/share/mikutter/core/miquire_plugin.rb:97:in `block in load_all'
+        from /usr/pkg/share/mikutter/core/miquire_plugin.rb:37:in `block in each_spec'
+        from /usr/pkg/share/mikutter/core/miquire_plugin.rb:32:in `each'
+        from /usr/pkg/share/mikutter/core/miquire_plugin.rb:32:in `each'
+        from /usr/pkg/share/mikutter/core/miquire_plugin.rb:35:in `each_spec'
+        from /usr/pkg/share/mikutter/core/miquire_plugin.rb:95:in `load_all'
+        from /usr/pkg/share/mikutter/core/boot/load_plugin.rb:10:in `<top (required)>'
+        from /usr/pkg/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from /usr/pkg/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from /usr/pkg/share/mikutter/core/miquire.rb:98:in `miquire_original_require'
+        from /usr/pkg/share/mikutter/core/miquire.rb:95:in `file_or_directory_require'
+        from /usr/pkg/share/mikutter/core/miquire.rb:76:in `block in miquire'
+        from /usr/pkg/share/mikutter/core/miquire.rb:75:in `each'
+        from /usr/pkg/share/mikutter/core/miquire.rb:75:in `miquire'
+        from /usr/pkg/share/mikutter/core/miquire.rb:18:in `miquire'
+        from /usr/pkg/share/mikutter/mikutter.rb:37:in `<main>'
+allwinner$ exit
+
+Script done on Sun Mar  6 12:18:27 2016
+
+Script done on Sun Mar  6 12:18:27 2016

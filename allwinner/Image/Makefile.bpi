@@ -6,14 +6,14 @@ GZIMG=armv7.img
 #ARCH=earm
 #GZIMG=rpi.img
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-01-23
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-03-11
 
 # set image file name
 #FILE=`date +%Y-%m-%d`-netbsd-bpi.img
 FILE=`date +%Y-%m-%d`-netbsd-bpi-${ARCH}.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.25-evbarm-${ARCH}-201601071500Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.26-evbarm-${ARCH}-201603032130Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q4.tar.gz
 
