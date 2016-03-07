@@ -37,11 +37,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
- Place/intro
- RPI
- RPI/Xfce4
- RPI/Omxplayer
+ Place/asiabsdcon
  
 * :ref:`genindex`
 * :ref:`modindex`

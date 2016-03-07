@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015 Jun Ebihara All rights reserved.
+ Copyright (c) 2015-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -19,6 +19,16 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+NetBSD BOF https://2016.asiabsdcon.org/program.html.en
+------------------------------------------------------
+
+* Day 2:M5 Room E 2016/3/11 18:00-21:00, 09:00-12:00(UTC)
+* http://wiki.netbsd.org/summits/AsiaBSDCon_2016_NetBSD_BOF/
+
+#. Jun Ebihara(jun@) 	OpenSourceConference Activity and NetBSD RPI image 	
+#. Ryota Ozaki(ozaki-r@), Kengo Nakahara(knakahara@) 	Current status of NetBSD MP-safe network stack project 	(30minutes) 	
+#. Masanobu SAITOH(msaitoh@), Naoya Kaneko 	(TBD) 	20minutes 	
+#. Joerg Sonnenberger(joerg@) 	Clang on SPARC 	(30minutes) 	
 
 NetBSD BOF http://2015.asiabsdcon.org/timetable.html.ja#M4
 ------------------------------------------------------
@@ -49,9 +59,9 @@ NetBSD BOF 2014 2014/3/14 18:30-21:00
 BARS
 -----------------------------------
 
+#. CRAFTBEER SERVER LAND: 17-24 SatSunHol 12-24,03-6228-1891
 #. The Royal Scotsman : 17-25 Sat:15-25 Sun:15-23,03-6280-8852
 #. Bitter : 17-26 Closed SatHol,03-5261-3087
-#. CRAFTBEER SERVER LAND: 17-24 SatSunHol 12-24,03-6228-1891
 #. Brussels: 1730-25/24 Closed Sun,03-3235-1890
 #. La-cachette: 17-25 ,03-3513-0823
 #. Saizeriya: 11-05,03-5227-3751
@@ -76,6 +86,7 @@ AsiaBSDCon
 .. csv-table::
  :widths: 20 30 70 
 
+ 2016, Mar.10-13,Tokyo University of Science
  2015, Mar.12-15,Tokyo University of Science
  2014, Mar.13-16,Tokyo University of Science
  2013, Mar.14-17,Tokyo University of Science
@@ -93,6 +104,7 @@ AsiaBSDCon Traveler's Guide backnumber
 .. csv-table::
  :widths: 20 70
 
+ AsiaBSDCon2016,http://www.soum.co.jp/~jun/asiabsdcon2016.pdf
  AsiaBSDCon2015,http://www.soum.co.jp/~jun/asiabsdcon2015.pdf
  AsiaBSDCon2014,http://www.soum.co.jp/~jun/asiabsdcon2014.pdf
  AsiaBSDCon2013,http://www.soum.co.jp/~jun/asiabsdcon2013.pdf
@@ -103,6 +115,7 @@ AsiaBSDCon tweets on the togetter
 .. csv-table::
  :widths: 20 70
 
+ AsiaBSDCon2016,http://togetter.com/li/947029
  AsiaBSDCon2015,http://togetter.com/li/793444
  AsiaBSDCon2014,http://togetter.com/li/641519
  AsiaBSDCon2013,http://togetter.com/li/472002
@@ -138,23 +151,25 @@ Togetter views : best booth in Japan
 --------------------------
 
 .. csv-table::
- :widths: 50 15 30 20
+ :widths: 50 30 20
 
- http://togetter.com/li/788681, 2015, Tokyo/Spring,913
- http://togetter.com/li/781556, 2015, Hamanako,474
- http://togetter.com/li/779725, 2015, Oita,476
- http://togetter.com/li/748237, 2014, Fukuoka　,1746
- http://togetter.com/li/742243, 2014, Kansai,1708
- http://togetter.com/li/733588, 2014, Tokyo/Fall　,1792
- http://togetter.com/li/721414, 2014, Hiroshima　,1844
- http://togetter.com/li/709947, 2014, Shimane　,1426
- http://togetter.com/li/700617, 2014, Kansai Kyoto,3128
- http://togetter.com/li/691775, 2014, JNUG annual meeting,2181
- http://togetter.com/li/688742, 2014, Nagoya,1475
- http://togetter.com/li/671580, 2014, Okinawa　,549
- http://togetter.com/li/654135, 2014, Kagawa,1338
- http://togetter.com/li/645455, 2014, Hamanako,2022
- http://togetter.com/li/641519, 2014, AsiaBSDCon,2829
+ 2016 Tokyo/Spring ,http://togetter.com/li/943037,1099
+ 2016 Hamanako ,http://togetter.com/li/929091,662
+ NetBSD Advent Calendar 2015,http://togetter.com/li/916444,926
+ 2015 Tokushima ,http://togetter.com/li/899923,1025
+ Kansai Open Forum 2015 ,http://togetter.com/li/896456,1617
+ 2015 Tokyo/Fall ,http://togetter.com/li/891107,1070
+ 2015 Fukuoka ,http://togetter.com/li/881732,896
+ 2015 Hiroshima ,http://togetter.com/li/875487,1547
+ 2015 Niigata ,http://togetter.com/li/869752,905
+ 2015 Shimane ,http://togetter.com/li/863726,986
+ 2015 Kansai@Kyoto ,http://togetter.com/li/857157,3738
+ Japan NetBSD Users Group 17th annual meeting,http://togetter.com/li/845730,1388
+ 2015 Okinawa,http://togetter.com/li/842624,928
+ Hokkaido,http://togetter.com/li/834148,924
+ 2015 Nagoya,http://togetter.com/li/824817,1943
+ NetBSD Museum,http://togetter.com/li/798599,4569
+ AsiaBSDCon 2015,http://togetter.com/li/793444,3655
 
 Live Images:
 ------------------------
@@ -191,7 +206,7 @@ Digging your scene
 - Java Station: mochida
 - Netwalker: @rsh @h_kenken @kapper1224
 - libreoffice: @ryo_on
-- Stickers: @tsutsuii @okano_t
+- Stickers: @tsutsuii @okano_t @nullnilaki
 - Booth: @ebijun @oshimyja @ai4432 @tisihara @tokudahiroshi 
 - mikutter: @toshi_a
 - mlterm: @arakiken
@@ -209,6 +224,66 @@ NetBSD Traveler's Guide
 - print/pdfshuffler
 - 15x20pages
 - printout in 7/11:2,000yen
+
+2015
+--------------------
+.. image::  ../Picture/2015/03/13/DSC06714.JPG
+.. image::  ../Picture/2015/03/13/DSC06715.JPG
+.. image::  ../Picture/2015/03/13/DSC06716.JPG
+.. image::  ../Picture/2015/03/13/DSC06717.JPG
+.. image::  ../Picture/2015/03/13/DSC06718.JPG
+.. image::  ../Picture/2015/03/13/DSC06719.JPG
+.. image::  ../Picture/2015/03/13/DSC06720.JPG
+.. image::  ../Picture/2015/03/13/DSC06721.JPG
+.. image::  ../Picture/2015/03/13/DSC06722.JPG
+.. image::  ../Picture/2015/03/13/DSC06723.JPG
+.. image::  ../Picture/2015/03/13/DSC06724.JPG
+.. image::  ../Picture/2015/03/13/DSC06725.JPG
+.. image::  ../Picture/2015/03/13/DSC06726.JPG
+.. image::  ../Picture/2015/03/13/DSC06727.JPG
+.. image::  ../Picture/2015/03/13/DSC06728.JPG
+.. image::  ../Picture/2015/03/13/DSC06729.JPG
+.. image::  ../Picture/2015/03/13/DSC06730.JPG
+.. image::  ../Picture/2015/03/13/DSC06731.JPG
+.. image::  ../Picture/2015/03/13/DSC06732.JPG
+.. image::  ../Picture/2015/03/13/DSC06733.JPG
+.. image::  ../Picture/2015/03/13/DSC06734.JPG
+.. image::  ../Picture/2015/03/13/DSC06735.JPG
+.. image::  ../Picture/2015/03/13/DSC06736.JPG
+.. image::  ../Picture/2015/03/13/DSC06737.JPG
+.. image::  ../Picture/2015/03/13/DSC06738.JPG
+.. image::  ../Picture/2015/03/13/DSC06739.JPG
+.. image::  ../Picture/2015/03/13/DSC06740.JPG
+.. image::  ../Picture/2015/03/13/DSC06741.JPG
+.. image::  ../Picture/2015/03/13/DSC06742.JPG
+.. image::  ../Picture/2015/03/13/DSC_0903.jpg
+.. image::  ../Picture/2015/03/13/DSC_0904.jpg
+.. image::  ../Picture/2015/03/13/DSC_0905.jpg
+.. image::  ../Picture/2015/03/13/DSC_0906.jpg
+.. image::  ../Picture/2015/03/13/DSC_0907.jpg
+.. image::  ../Picture/2015/03/13/DSC_0908.jpg
+.. image::  ../Picture/2015/03/14/DSC06743.JPG
+.. image::  ../Picture/2015/03/14/DSC06744.JPG
+.. image::  ../Picture/2015/03/14/DSC06745.JPG
+.. image::  ../Picture/2015/03/14/DSC06746.JPG
+.. image::  ../Picture/2015/03/14/DSC06747.JPG
+.. image::  ../Picture/2015/03/14/DSC06748.JPG
+.. image::  ../Picture/2015/03/14/DSC06749.JPG
+.. image::  ../Picture/2015/03/14/DSC06750.JPG
+.. image::  ../Picture/2015/03/14/DSC06751.JPG
+.. image::  ../Picture/2015/03/14/DSC06752.JPG
+.. image::  ../Picture/2015/03/14/DSC06753.JPG
+.. image::  ../Picture/2015/03/14/DSC06754.JPG
+.. image::  ../Picture/2015/03/14/DSC_0909.jpg
+.. image::  ../Picture/2015/03/14/DSC_0910.jpg
+.. image::  ../Picture/2015/03/14/DSC_0911.jpg
+.. image::  ../Picture/2015/03/14/DSC_0912.jpg
+.. image::  ../Picture/2015/03/14/DSC_0913.jpg
+.. image::  ../Picture/2015/03/14/DSC_0914.jpg
+.. image::  ../Picture/2015/03/14/DSC_0915.jpg
+.. image::  ../Picture/2015/03/14/DSC_0916.jpg
+.. image::  ../Picture/2015/03/14/DSC_0917.jpg
+.. image::  ../Picture/2015/03/14/DSC_0918.jpg
 
 2014
 -----------------
