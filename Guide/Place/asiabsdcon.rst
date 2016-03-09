@@ -23,12 +23,14 @@ NetBSD BOF https://2016.asiabsdcon.org/program.html.en
 ------------------------------------------------------
 
 * Day 2:M5 Room E 2016/3/11 18:00-21:00, 09:00-12:00(UTC)
-* http://wiki.netbsd.org/summits/AsiaBSDCon_2016_NetBSD_BOF/
+* http://wiki.netbsd.org/summits/AsiaBSDCon_2016_NetBSD_BoF/
 
-#. Jun Ebihara(jun@) 	OpenSourceConference Activity and NetBSD RPI image 	
-#. Ryota Ozaki(ozaki-r@), Kengo Nakahara(knakahara@) 	Current status of NetBSD MP-safe network stack project 	(30minutes) 	
-#. Masanobu SAITOH(msaitoh@), Naoya Kaneko 	(TBD) 	20minutes 	
-#. Joerg Sonnenberger(joerg@) 	Clang on SPARC 	(30minutes) 	
+#. Jun Ebihara (jun@) 	OpenSourceConference Activity and NetBSD RPI image 	15 minutes
+#. Ryota Ozaki (ozaki-r@) 	Current status of NetBSD MP-safe network stack project 	25 minutes
+#. Kengo Nakahara (knakahara@) 	Introduction of passive reference 	15 minutes
+#. Masanobu SAITOH (msaitoh@), Naoya Kaneko 	Wireless LAN service in AsiaBSDCon 2016 and SA-W2 	20 minutes
+#. Joerg Sonnenberger (joerg@) 	Clang on SPARC 	(30 minutes)
+#. Ryo ONODERA (ryoon@) 	Secure communication using pkgsrc 	15 minutes
 
 NetBSD BOF http://2015.asiabsdcon.org/timetable.html.ja#M4
 ------------------------------------------------------
@@ -229,56 +231,23 @@ NetBSD Traveler's Guide
 --------------------
 .. image::  ../Picture/2015/03/13/DSC06714.JPG
 .. image::  ../Picture/2015/03/13/DSC06715.JPG
-.. image::  ../Picture/2015/03/13/DSC06716.JPG
-.. image::  ../Picture/2015/03/13/DSC06717.JPG
-.. image::  ../Picture/2015/03/13/DSC06718.JPG
 .. image::  ../Picture/2015/03/13/DSC06719.JPG
-.. image::  ../Picture/2015/03/13/DSC06720.JPG
 .. image::  ../Picture/2015/03/13/DSC06721.JPG
 .. image::  ../Picture/2015/03/13/DSC06722.JPG
 .. image::  ../Picture/2015/03/13/DSC06723.JPG
 .. image::  ../Picture/2015/03/13/DSC06724.JPG
-.. image::  ../Picture/2015/03/13/DSC06725.JPG
-.. image::  ../Picture/2015/03/13/DSC06726.JPG
-.. image::  ../Picture/2015/03/13/DSC06727.JPG
-.. image::  ../Picture/2015/03/13/DSC06728.JPG
-.. image::  ../Picture/2015/03/13/DSC06729.JPG
-.. image::  ../Picture/2015/03/13/DSC06730.JPG
-.. image::  ../Picture/2015/03/13/DSC06731.JPG
-.. image::  ../Picture/2015/03/13/DSC06732.JPG
-.. image::  ../Picture/2015/03/13/DSC06733.JPG
-.. image::  ../Picture/2015/03/13/DSC06734.JPG
-.. image::  ../Picture/2015/03/13/DSC06735.JPG
-.. image::  ../Picture/2015/03/13/DSC06736.JPG
-.. image::  ../Picture/2015/03/13/DSC06737.JPG
-.. image::  ../Picture/2015/03/13/DSC06738.JPG
 .. image::  ../Picture/2015/03/13/DSC06739.JPG
-.. image::  ../Picture/2015/03/13/DSC06740.JPG
 .. image::  ../Picture/2015/03/13/DSC06741.JPG
 .. image::  ../Picture/2015/03/13/DSC06742.JPG
-.. image::  ../Picture/2015/03/13/DSC_0903.jpg
-.. image::  ../Picture/2015/03/13/DSC_0904.jpg
-.. image::  ../Picture/2015/03/13/DSC_0905.jpg
 .. image::  ../Picture/2015/03/13/DSC_0906.jpg
-.. image::  ../Picture/2015/03/13/DSC_0907.jpg
-.. image::  ../Picture/2015/03/13/DSC_0908.jpg
-.. image::  ../Picture/2015/03/14/DSC06743.JPG
-.. image::  ../Picture/2015/03/14/DSC06744.JPG
 .. image::  ../Picture/2015/03/14/DSC06745.JPG
 .. image::  ../Picture/2015/03/14/DSC06746.JPG
 .. image::  ../Picture/2015/03/14/DSC06747.JPG
 .. image::  ../Picture/2015/03/14/DSC06748.JPG
 .. image::  ../Picture/2015/03/14/DSC06749.JPG
-.. image::  ../Picture/2015/03/14/DSC06750.JPG
-.. image::  ../Picture/2015/03/14/DSC06751.JPG
 .. image::  ../Picture/2015/03/14/DSC06752.JPG
 .. image::  ../Picture/2015/03/14/DSC06753.JPG
-.. image::  ../Picture/2015/03/14/DSC06754.JPG
-.. image::  ../Picture/2015/03/14/DSC_0909.jpg
-.. image::  ../Picture/2015/03/14/DSC_0910.jpg
 .. image::  ../Picture/2015/03/14/DSC_0911.jpg
-.. image::  ../Picture/2015/03/14/DSC_0912.jpg
-.. image::  ../Picture/2015/03/14/DSC_0913.jpg
 .. image::  ../Picture/2015/03/14/DSC_0914.jpg
 .. image::  ../Picture/2015/03/14/DSC_0915.jpg
 .. image::  ../Picture/2015/03/14/DSC_0916.jpg
@@ -309,28 +278,18 @@ NetBSD Traveler's Guide
 .. image::  ../Picture/2014/03/15/DSC_3173.jpg
 .. image::  ../Picture/2014/03/15/DSC_3174.jpg
 .. image::  ../Picture/2014/03/15/DSC_3175.jpg
-.. image::  ../Picture/2014/03/15/dsc04286.jpg
-.. image::  ../Picture/2014/03/15/dsc04287.jpg
-.. image::  ../Picture/2014/03/15/dsc04288.jpg
-.. image::  ../Picture/2014/03/15/dsc04291.jpg
 .. image::  ../Picture/2014/03/15/dsc04295.jpg
 .. image::  ../Picture/2014/03/15/dsc04296.jpg
 .. image::  ../Picture/2014/03/16/DSC_3176.jpg
 .. image::  ../Picture/2014/03/16/DSC_3177.jpg
-.. image::  ../Picture/2014/03/16/DSC_3179.jpg
 .. image::  ../Picture/2014/03/16/DSC_3180.jpg
-.. image::  ../Picture/2014/03/16/DSC_3181.jpg
 .. image::  ../Picture/2014/03/16/dsc04300.jpg
-.. image::  ../Picture/2014/03/16/dsc04301.jpg
 .. image::  ../Picture/2014/03/16/dsc04302.jpg
-.. image::  ../Picture/2014/03/16/dsc04303.jpg
 .. image::  ../Picture/2014/03/16/dsc04304.jpg
 .. image::  ../Picture/2014/03/16/dsc04305.jpg
 .. image::  ../Picture/2014/03/16/dsc04306.jpg
 .. image::  ../Picture/2014/03/16/dsc04307.jpg
 .. image::  ../Picture/2014/03/16/dsc04308.jpg
-.. image::  ../Picture/2014/03/16/dsc04309.jpg
-.. image::  ../Picture/2014/03/16/dsc04312.jpg
 .. image::  ../Picture/2014/03/16/dsc04315.jpg
 .. image::  ../Picture/2014/03/16/dsc04319.jpg
 .. image::  ../Picture/2014/03/16/dsc04320.jpg
@@ -347,23 +306,16 @@ NetBSD Traveler's Guide
 .. image::  ../Picture/2014/03/16/dsc04333.jpg
 .. image::  ../Picture/2014/03/16/dsc04334.jpg
 .. image::  ../Picture/2014/03/16/dsc04335.jpg
-.. image::  ../Picture/2014/03/16/dsc04336.jpg
 .. image::  ../Picture/2014/03/16/dsc04337.jpg
 .. image::  ../Picture/2014/03/16/dsc04338.jpg
-.. image::  ../Picture/2014/03/16/dsc04339.jpg
 .. image::  ../Picture/2014/03/16/dsc04340.jpg
 .. image::  ../Picture/2014/03/16/dsc04341.jpg
 .. image::  ../Picture/2014/03/16/dsc04342.jpg
-.. image::  ../Picture/2014/03/16/dsc04343.jpg
 .. image::  ../Picture/2014/03/16/dsc04344.jpg
-.. image::  ../Picture/2014/03/16/dsc04345.jpg
-.. image::  ../Picture/2014/03/16/dsc04347.jpg
 .. image::  ../Picture/2014/03/16/dsc04348.jpg
 2013
 -----------------
-.. image::  ../Picture/2013/03/14/DSC_1795.jpg
 .. image::  ../Picture/2013/03/14/DSC_1798.jpg
-.. image::  ../Picture/2013/03/15/DSC_1804.jpg
 .. image::  ../Picture/2013/03/16/DSC_1806.jpg
 .. image::  ../Picture/2013/03/16/DSC_1808.jpg
 .. image::  ../Picture/2013/03/16/DSC_1809.jpg
@@ -371,34 +323,28 @@ NetBSD Traveler's Guide
 .. image::  ../Picture/2013/03/16/DSC_1811.jpg
 .. image::  ../Picture/2013/03/16/DSC_1812.jpg
 .. image::  ../Picture/2013/03/16/DSC_1813.jpg
-.. image::  ../Picture/2013/03/16/DSC_1814.jpg
 .. image::  ../Picture/2013/03/16/DSC_1815.jpg
-.. image::  ../Picture/2013/03/16/DSC_1817.jpg
 .. image::  ../Picture/2013/03/16/DSC_1818.jpg
 .. image::  ../Picture/2013/03/16/DSC_1819.jpg
 .. image::  ../Picture/2013/03/16/DSC_1820.jpg
+.. image::  ../Picture/2013/03/17/DSC_1822.jpg
+.. image::  ../Picture/2013/03/17/DSC_1824.jpg
+.. image::  ../Picture/2013/03/17/DSC_1825.jpg
 .. image::  ../Picture/2013/03/16/dsc02241.jpg
 .. image::  ../Picture/2013/03/16/dsc02242.jpg
 .. image::  ../Picture/2013/03/16/dsc02243.jpg
 .. image::  ../Picture/2013/03/16/dsc02245.jpg
 .. image::  ../Picture/2013/03/16/dsc02246.jpg
-.. image::  ../Picture/2013/03/17/DSC_1822.jpg
-.. image::  ../Picture/2013/03/17/DSC_1824.jpg
-.. image::  ../Picture/2013/03/17/DSC_1825.jpg
 .. image::  ../Picture/2013/03/17/dsc02252.jpg
-.. image::  ../Picture/2013/03/17/dsc02253.jpg
-.. image::  ../Picture/2013/03/17/dsc02255.jpg
+
 2012
 -----------------
 .. image::  ../Picture/2012/03/25/DSC_0120.JPG
 .. image::  ../Picture/2012/03/25/DSC_0122.JPG
 .. image::  ../Picture/2012/03/25/DSC_0124.JPG
-.. image::  ../Picture/2012/03/25/DSC_0127.JPG
-.. image::  ../Picture/2012/03/25/DSC_0128.JPG
 .. image::  ../Picture/2012/03/25/DSC_0129.JPG
 .. image::  ../Picture/2012/03/25/DSC_0130.JPG
 .. image::  ../Picture/2012/03/25/DSC_0131.JPG
-.. image::  ../Picture/2012/03/25/DSC_0133.JPG
 .. image::  ../Picture/2012/03/25/dsc00541.jpg
 .. image::  ../Picture/2012/03/25/dsc00542.jpg
 .. image::  ../Picture/2012/03/25/dsc00544.jpg
