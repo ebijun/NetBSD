@@ -1,16 +1,16 @@
-VERSION: :1,$s/2016-02-27/2016-02-27/g
-ISO:     :1,$s/201602172150Z/201602172150Z/g
+VERSION: :1,$s/2016-03-11/2016-03-11/g
+ISO:     :1,$s/201603090310Z/201603090310Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 NetBSD:  :1,$s/7.99.26/7.99.26/g
 # Check MD5 filename before post this mail.
 
 To: port-armNetBSD.org@localhost
-Subject: 2016-02-27-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2016-03-11-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2016-02-27-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2016-03-11-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-02-27-earmv6hf/2016-02-27-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-03-11-earmv6hf/2016-03-11-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -19,16 +19,15 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI0
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
+  not tested on RPI3
 
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.26 evbarm-earmv6hf 201602172150Z rpi.img from nyftp.
-- mikutter-3.3.7
-- mlterm-3.6.3
-- bind 9.10.3-P3
-- OpenSSL 1.0.1r
+- NetBSD-current 7.99.26 evbarm-earmv6hf 201603090310Z rpi.img from nyftp.
+- mikutter-3.3.8
+- OpenSSL 1.0.1s
 
 Automatic resize partition: see /etc/rc.conf and /etc/fstab
   1. copy image to SD/MicroSD
@@ -57,7 +56,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-02-27/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-03-11/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -65,7 +64,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-02-27-earmv6hf/libfreetype.so.17.4.11
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-03-11-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -161,7 +160,7 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
 
 XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   http://xm6i.org/download.html
-  XM6i-0.52-netbsd7.0-earmv6hf-2015Q2.tar.gz
+  XM6i-0.53-netbsd7.0-earmv6hf-2015Q2.tar.gz
   pkg_add wxGTK30 
 
   https://twitter.com/isaki68k/status/625138538271502337
@@ -201,11 +200,12 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2016 Tokyo/Spring demonstration use, 
+For AsiaBSDCon2016 demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2016-spring/
- https://www.facebook.com/events/448461512004539/
+ https://2016.asiabsdcon.org/
+ http://wiki.netbsd.org/summits/AsiaBSDCon_2016_NetBSD_BoF/
+ https://www.facebook.com/events/833115380143767/
  https://www.facebook.com/NetBSD.jp 
  http://www.soum.co.jp/~jun/OSC2016tokyospring.pdf
 
@@ -247,7 +247,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-02-27/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-03-11/
 
 Installed Packages:
 kterm
@@ -304,6 +304,7 @@ BUGS:
   https://twitter.com/uobikiemukot/status/487977340949893121
 
 One more time: (we're gonna celebrate
+- Everything you always wanted to know about six but were afraid to ask.
 
  1. login root
  2. mlterm-fb 
@@ -317,6 +318,10 @@ One more time: (we're gonna celebrate
  9. cc mandel5.c
 10. ./a.out 1024 728 -2 -1.5 4.0 |tee f
 11. cat f
+12. pkg_add sayaka
+13. sayaka
+    copy URL into dillo,and get twitter PIN.
+    Share your twitter timeline with your family with mlterm-fb!
 
 --
 Jun Ebihara
