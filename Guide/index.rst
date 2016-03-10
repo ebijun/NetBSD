@@ -39,7 +39,3 @@
 
  Place/asiabsdcon
  
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-

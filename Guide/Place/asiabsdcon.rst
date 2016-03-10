@@ -19,6 +19,58 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+Recent Events in Japan
+------------------------------------------------------
+
+maps: http://www.soum.co.jp/~jun/2015maps.pdf
+
+.. image::  ../Picture/2015/05/23/DSC_1014.jpg
+.. image::  ../Picture/2015/06/13/DSC_1042.jpg
+.. image::  ../Picture/2015/05/23/DSC_1003.jpg
+.. image::  ../Picture/2015/07/11/DSC07459.JPG
+.. image::  ../Picture/2015/09/19/DSC_1330.jpg
+.. image::  ../Picture/2015/05/23/DSC_1009.jpg
+.. image::  ../Picture/2015/10/24/DSC08200.JPG
+.. image::  ../Picture/2015/11/06/DSC_1463.jpg
+.. image::  ../Picture/2015/06/13/DSC07315.JPG
+.. image::  ../Picture/2015/08/22/DSC_1269.jpg
+.. image::  ../Picture/2015/10/03/DSC_1401.jpg
+.. image::  ../Picture/2015/09/19/DSC_1352.jpg
+.. image::  ../Picture/2016/02/27/DSC_1527.JPG
+.. image::  ../Picture/2015/11/14/DSC08316.JPG
+.. image::  ../Picture/2015/11/14/DSC08318.JPG
+.. image::  ../Picture/2015/11/06/DSC08269.JPG
+.. image::  ../Picture/2015/11/06/DSC08270.JPG
+.. image::  ../Picture/2015/11/06/DSC_1467.jpg
+.. image::  ../Picture/2015/11/07/DSC08284.JPG
+.. image::  ../Picture/2015/11/07/DSC08288.JPG
+.. image::  ../Picture/2015/11/07/DSC08292.JPG
+.. image::  ../Picture/2015/11/07/DSC_1477.jpg
+.. image::  ../Picture/2015/10/24/DSC08187.JPG
+.. image::  ../Picture/2015/10/25/DSC08208.JPG
+.. image::  ../Picture/2015/10/03/DSC_1402.jpg
+.. image::  ../Picture/2015/10/03/DSC_1403.jpg
+.. image::  ../Picture/2015/09/19/DSC07910.JPG
+.. image::  ../Picture/2015/09/19/DSC07918.JPG
+.. image::  ../Picture/2015/09/19/DSC07919.JPG
+.. image::  ../Picture/2015/09/19/DSC07923.JPG
+.. image::  ../Picture/2015/09/19/DSC_1332.jpg
+.. image::  ../Picture/2015/09/19/DSC_1334.jpg
+.. image::  ../Picture/2015/09/19/DSC_1364.jpg
+.. image::  ../Picture/2015/08/22/DSC07672.JPG
+.. image::  ../Picture/2015/08/22/DSC_1264.jpg
+.. image::  ../Picture/2015/08/07/DSC07551.JPG
+.. image::  ../Picture/2015/08/07/DSC_1179.jpg
+.. image::  ../Picture/2015/08/08/DSC07591.JPG
+.. image::  ../Picture/2015/08/08/DSC_1203.jpg
+.. image::  ../Picture/2015/07/11/DSC07462.JPG
+.. image::  ../Picture/2015/07/11/DSC07463.JPG
+.. image::  ../Picture/2015/06/13/DSC_1054.jpg
+.. image::  ../Picture/2015/06/13/DSC_1055.jpg
+.. image::  ../Picture/2015/06/13/DSC_1056.jpg
+.. image::  ../Picture/2015/05/23/DSC_1005.jpg
+
+
 NetBSD BOF https://2016.asiabsdcon.org/program.html.en
 ------------------------------------------------------
 
