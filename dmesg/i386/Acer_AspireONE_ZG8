@@ -4,28 +4,28 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.26 (GENERIC.201603021330Z)
+NetBSD 7.99.26 (GENERIC.201603131530Z)
 total memory = 2035 MB
-avail memory = 1983 MB
+avail memory = 1984 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 RTC BIOS diagnostic error 0x80<clock_battery>
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
-Acer ZG8             (1)
+Acer AO531h (1)
 mainbus0 (root)
-ACPI: RSDP 0x00000000000FE020 000024 (v02 ACRSYS)
-ACPI: XSDT 0x000000007F4FE120 000064 (v01 ACRSYS ACRPRDCT 00000001      01000013)
-ACPI: FACP 0x000000007F4FC000 0000F4 (v04 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: DSDT 0x000000007F4F1000 0064DB (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
+ACPI: RSDP 0x00000000000FE020 000024 (v02 ACER  )
+ACPI: XSDT 0x000000007F4FE120 000064 (v01 ACER   ACER     00000001      01000013)
+ACPI: FACP 0x000000007F4FC000 0000F4 (v04 ACER   ACER     00000001 1025 01000013)
+ACPI: DSDT 0x000000007F4F1000 0063CC (v01 ACER   ACER     00000001 1025 01000013)
 ACPI: FACS 0x000000007F488000 000040
 ACPI: FACS 0x000000007F488000 000040
 ACPI: SSDT 0x000000007F4FD000 0004C4 (v02 PmRef  CpuPm    00003000 INTL 20051117)
-ACPI: HPET 0x000000007F4FB000 000038 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: APIC 0x000000007F4FA000 000068 (v02 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: MCFG 0x000000007F4F9000 00003C (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: ASF! 0x000000007F4F8000 0000A5 (v32 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: SLIC 0x000000007F4F0000 000176 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
-ACPI: BOOT 0x000000007F4EF000 000028 (v01 ACRSYS ACRPRDCT 00000001 1025 01000013)
+ACPI: HPET 0x000000007F4FB000 000038 (v01 ACER   ACER     00000001 1025 01000013)
+ACPI: APIC 0x000000007F4FA000 000068 (v02 ACER   ACER     00000001 1025 01000013)
+ACPI: MCFG 0x000000007F4F9000 00003C (v01 ACER   ACER     00000001 1025 01000013)
+ACPI: ASF! 0x000000007F4F8000 0000A5 (v32 ACER   ACER     00000001 1025 01000013)
+ACPI: SLIC 0x000000007F4F0000 000176 (v01 ACER   ACER     00000001 1025 01000013)
+ACPI: BOOT 0x000000007F4EF000 000028 (v01 ACER   ACER     00000001 1025 01000013)
 ACPI: 2 ACPI AML tables successfully acquired and loaded
 ioapic0 at mainbus0 apid 4: pa 0xfec00000, version 0x20, 24 pins
 cpu0 at mainbus0 apid 0
@@ -33,18 +33,18 @@ cpu0: Intel(R) Atom(TM) CPU N270   @ 1.60GHz, id 0x106c2
 cpu1 at mainbus0 apid 1
 cpu1: Intel(R) Atom(TM) CPU N270   @ 1.60GHz, id 0x106c2
 acpi0 at mainbus0: Intel ACPICA 20160108
-acpi0: X/RSDT: OemId <ACRSYS,ACRPRDCT,00000001>, AslId <    ,01000013>
+acpi0: X/RSDT: OemId <ACER  ,ACER    ,00000001>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3B7B94C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3A2C94C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3821C0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0x00000000C3A0CC0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C37E97FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C373F7FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C37FB014 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3753014 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
-timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
+timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
 timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
 acpiec0 at acpi0 (EC0, PNP0C09)
@@ -103,7 +103,7 @@ i915drmkms0: interrupting at ioapic0 pin 16 (i915)
 drm: initialized overlay support
 intelfb0 at i915drmkms0
 i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xdb2f2000, size 1024x600, depth 32, stride 4096
+intelfb0: framebuffer at 0xdb1c9000, size 1024x600, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
@@ -121,7 +121,7 @@ pci1 at ppb0 bus 1
 pci1: i/o space, memory space enabled
 ale0 at pci1 dev 0 function 0: Attansic/Atheros L1E Ethernet
 ale0: AR8113 (L2E RevA), ioapic0 pin 16
-ale0: Ethernet address 00:26:9e:f4:2f:7b
+ale0: Ethernet address 00:26:9e:2c:86:5c
 atphy0 at ale0 phy 0: L1 10/100/1000 PHY, rev. 9
 atphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
 ppb1 at pci0 dev 28 function 2: vendor 8086 product 27d4 (rev. 0x02)
@@ -129,7 +129,7 @@ ppb1: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.
 pci2 at ppb1 bus 2
 pci2: i/o space, memory space enabled
 athn0 at pci2 dev 0 function 0: Atheros AR9285
-athn0: rev 2 (1T1R), ROM rev 13, address 00:26:5e:6f:ac:d0
+athn0: rev 2 (1T1R), ROM rev 13, address 0c:60:76:49:d9:39
 athn0: interrupting at ioapic0 pin 18
 athn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
 athn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
@@ -163,6 +163,12 @@ ichlpcib0: 24-bit timer
 tco0 at ichlpcib0: TCO (watchdog) timer configured.
 tco0: Min/Max interval 1/367 seconds
 gpio0 at ichlpcib0: 64 pins
+piixide0 at pci0 dev 31 function 1: Intel 82801GB/GR IDE Controller (ICH7) (rev. 0x02)
+piixide0: bus-master DMA support present
+piixide0: primary channel configured to compatibility mode
+piixide0: primary channel ignored (disabled)
+piixide0: secondary channel configured to compatibility mode
+piixide0: secondary channel ignored (disabled)
 ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 27c5 (rev. 0x02)
 ahcisata0: interrupting at ioapic0 pin 17
 ahcisata0: AHCI revision 1.10, 4 ports, 32 slots, CAP 0xdf10ff03<PSC,SSC,PMD,ISS=0x1=Gen1,SCLO,SAL,SALP,SSS,SMPS,SNCQ,S64A>
@@ -199,6 +205,7 @@ timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
 uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
+IPsec: Initialized Security Association Processing.
 uhub1 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
 uhub2 at usb2: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
@@ -207,9 +214,8 @@ uhub3 at usb3: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub3: 2 ports with 2 removable, self powered
 uhub4 at usb4: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub4: 8 ports with 8 removable, self powered
-IPsec: Initialized Security Association Processing.
 ahcisata0 port 0: device present, speed: 1.5Gb/s
-acpibat0: SONY LION rechargeable battery
+acpibat0: SANYO LION rechargeable battery
 acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
 wd0 at atabus0 drive 0
 wd0: <TOSHIBA MK6476GSX>
@@ -217,6 +223,8 @@ wd0: drive supports 16-sector PIO transfers, LBA48 addressing
 wd0: 596 GB, 1240341 cyl, 16 head, 63 sec, 512 bytes/sect x 1250263728 sectors
 wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
 wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+uvideo0 at uhub4 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. WebCam, rev 2.00/1.00, addr 2
+video0 at uvideo0: Sonix Technology Co., Ltd. WebCam, rev 2.00/1.00, addr 2
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
@@ -225,4 +233,4 @@ wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
-acpibat0: normal capacity on 'charge state'
+acpibat0: state changed on 'charge state' to 'WARNING'
