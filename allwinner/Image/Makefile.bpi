@@ -1,19 +1,19 @@
 # Makefile for BananaPI image.
 
-ARCH=earmv7hf
-GZIMG=armv7.img
+#ARCH=earmv7hf
+#GZIMG=armv7.img
 
-#ARCH=earm
-#GZIMG=rpi.img
+ARCH=earm
+GZIMG=rpi.img
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-03-11
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-05-14
 
 # set image file name
 #FILE=`date +%Y-%m-%d`-netbsd-bpi.img
 FILE=`date +%Y-%m-%d`-netbsd-bpi-${ARCH}.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.26-evbarm-${ARCH}-201603032130Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.26-evbarm-${ARCH}-201603140150Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q4.tar.gz
 
@@ -65,7 +65,8 @@ extract:
 #	echo extract pkgsrc.
 #	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mount_msdos /dev/${VND}e ${MNT}/boot
-	mv ${MNT}/boot/netbsd-BPI.ub  ${MNT}/boot/netbsd.ub
+#	mv ${MNT}/boot/netbsd-BPI.ub  ${MNT}/boot/netbsd.ub
+	gunzip < ${KERNELBIN} > ${MNT}/boot/netbsd.ub
 #	cp ${NETWALKER}    ${MNT}/boot
 #	cp ${NETWALKERBIN} ${MNT}/boot
 #	cp ${KOBO}         ${MNT}/boot
