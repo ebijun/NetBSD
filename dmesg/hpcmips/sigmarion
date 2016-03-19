@@ -1,17 +1,19 @@
-pmap_steal_memory: seg 0: 0x4cf 0x4cf 0x1ffe 0x1ffe
-pmap_steal_memory: seg 0: 0x50e 0x50e 0x1ffe 0x1ffe
-pmap_steal_memory: seg 0: 0x510 0x510 0x1ffe 0x1ffe
+pmap_steal_memory: seg 0: 0x4e8 0x4e8 0x1ffe 0x1ffe
+pmap_steal_memory: seg 0: 0x527 0x527 0x1ffe 0x1ffe
+pmap_steal_memory: seg 0: 0x529 0x529 0x1ffe 0x1ffe
+total memory banks = 2
+memory bank 0 = 00000000 5024KB(0x4e8000)
+memory bank 1 = 0x4e8000 27744KB(0x1b18000)
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.0 (GENERIC.201510071630Z)
+NetBSD 7.99.26 (GENERIC.201603031620Z)
 DoCoMo sigmarion (NEC VR4121 rev1.2 168.521MHz)
 total memory = 32768 KB
-avail memory = 26996 KB
-kern.module.path=/stand/hpcmips/7.0/modules
+avail memory = 26900 KB
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0: NEC VR4100 CPU (0xc60) Rev. 6.0 with software emulated floating point
@@ -32,6 +34,7 @@ vrkiu0 at vr4102ip0 addr 0x0b000180-019f
 hpckbd0 at vrkiu0
 wskbd0 at hpckbd0: console keyboard
 vrpmu0 at vr4102ip0 addr 0x0b0000a0-00bf
+vrpmu: GPIO[3] activation
 vrdsu0 at vr4102ip0 addr 0x0b0000e0-00e7
 vrled0 at vr4102ip0 addr 0x0b000240-024f
 vrpiu0 at vr4102ip0 addr 0x0b000120-013f, 0x0b0002a0-02bf
@@ -67,15 +70,15 @@ timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 timecounter: Timecounter "vrrtc" frequency 32768 Hz quality 100
 pcic0: using irq 589827 for socket events
 pcic0: WARNING: powerhook_establish is deprecated
-wdc1 at pcmcia0 function 0: <TRANSCEND, TS8GCF133, >
+wdc1 at pcmcia0 function 0: <, , >
 pcic0: port 0x14000400-0x1400040f
 wdc1: i/o mapped mode
 pcmcia0: card irq 3
 atabus0 at wdc1 channel 0
 wd0 at atabus0 drive 0
-wd0: <TRANSCEND>
+wd0: <>
 wd0: drive supports 1-sector PIO transfers, LBA addressing
-wd0: 7647 MB, 15538 cyl, 16 head, 63 sec, 512 bytes/sect x 15662304 sectors
+wd0: 991 MB, 2014 cyl, 16 head, 63 sec, 512 bytes/sect x 2030112 sectors
 wd0: drive supports PIO mode 4
 boot device: wd0
 pcmcia0: card irq 3
@@ -83,7 +86,16 @@ root on wd0a dumps on wd0b
 pcmcia0: card irq 3
 pcmcia0: card irq 3
 root file system type: ffs
-WARNING: clock lost 5768 days
+kern.module.path=/stand/hpcmips/7.99.26/modules
+WARNING: clock lost 5921 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 pid 1(init): ABI set to O32 (e_flags=0x1007)
+hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
+wsdisplay0: screen 1 added (std, vt100 emulation)
+hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
+wsdisplay0: screen 2 added (std, vt100 emulation)
+hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
+wsdisplay0: screen 3 added (std, vt100 emulation)
+hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
+wsdisplay0: screen 4 added (std, vt100 emulation)

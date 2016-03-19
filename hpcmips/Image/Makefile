@@ -1,7 +1,8 @@
 # Makefile for NetBSD/hpcmips image.
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
+FILE=1G.img
+#FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
 IMAGE=/usr/release/images/NetBSD-7.99.26-hpcmips-201603031620Z.iso
@@ -56,7 +57,7 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	(cd ${MNT}/dev;./MAKEDEV all)
-	tar xzpf ${PKGSRC} -C ${MNT}/usr
+#	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mkdir ${MNT}/msdos
 	mkdir ${MNT}/kern
 	mkdir ${MNT}/proc
