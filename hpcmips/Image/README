@@ -1,32 +1,18 @@
-:1,$s/5.2_STABLE-hpcmips-201411260820Z/5.2_STABLE-hpcmips-201411260820Z/g
+:1,$s/2016-03-20/2016-03-20/g
 
 To: port-hpcmipsnetbsd.org@localhost
-Subject: 2014-11-27-netbsd5-hpcmips.img 
+Subject: 2016-03-20-netbsd-hpcmips.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2014-11-27-netbsd5-hpcmips.img.gz for hpcmips.
+I've updated 2016-03-20-netbsd-hpcmips.img.gz for hpcmips.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcmips/2014-11-27-netbsd5-hpcmips.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcmips/2016-03-20/2016-03-20-netbsd-hpcmips.img.gz
 
 Feature:
-- NetBSD 5.2_STABLE-hpcmips-201411260820Z hpcmips from nyftp.netbsd
-- pkgsrc-current 2014-11-22 tarball from ftp.NetBSD.
+- NetBSD 7.99.26 201603031620Z hpcmips from nyftp.netbsd
 - dmesg:
-  https://github.com/ebijun/NetBSD/blob/master/hpcmips/Image/dmesg
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcmips/sigmarion
 
-Pre-compiled packages:
-- Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=
- To install application.
- # pkg_add some_application_name
-
- If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
- /etc/mk.conf.
-
-Todo:
-- switch to NetBSD-current
-
-- NetBSD 5.2 base
 - Copy image to Mini/MicroSD.
 - Set hpcmips machine.
 - boot hpcboot.exe
@@ -34,22 +20,19 @@ Todo:
 -- select root partition
   and comes as you are as you want to be.
 - login root (no passwd)
-- check symblic link:
-  default:
-  ls -l /etc/X11/xorg.conf -> xorg.conf.
-- startx
-
-  # startx
 
 Features:
-  - fit size for 2GB SD Card
-  - with X11
-  - pkgsrc: 2014-11-22 tree inside.
-  - pre-build packages
+  - fit size for 1GB SD Card
 
 Installed Packages:
  not yet.
 
+BUGS:
+- fc-cache stopped at pmap_update
+  http://p.twipple.jp/cXp1W
+- makemandb stopped at pmap_update
+  http://p.twipple.jp/rrn3k
+and more.
 
 Keyboard layout checkpoint:
 /etc/wscons.conf
