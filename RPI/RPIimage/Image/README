@@ -1,16 +1,16 @@
-VERSION: :1,$s/2016-03-11/2016-03-11/g
-ISO:     :1,$s/201603090310Z/201603090310Z/g
+VERSION: :1,$s/2016-03-24/2016-03-24/g
+ISO:     :1,$s/201603211520Z/201603211520Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 NetBSD:  :1,$s/7.99.26/7.99.26/g
 # Check MD5 filename before post this mail.
 
 To: port-armNetBSD.org@localhost
-Subject: 2016-03-11-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2016-03-24-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2016-03-11-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2016-03-24-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-03-11-earmv6hf/2016-03-11-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-03-24-earmv6hf/2016-03-24-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -19,15 +19,15 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI0
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
-  not tested on RPI3
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
 
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.26 evbarm-earmv6hf 201603090310Z rpi.img from nyftp.
-- mikutter-3.3.8
-- OpenSSL 1.0.1s
+- NetBSD-current 7.99.26 evbarm-earmv6hf 201603211520Z rpi.img from nyftp.
+- ruby22
+- mlterm-3.7.0
 
 Automatic resize partition: see /etc/rc.conf and /etc/fstab
   1. copy image to SD/MicroSD
@@ -56,7 +56,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-03-11/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-05-14/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -64,7 +64,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-03-11-earmv6hf/libfreetype.so.17.4.11
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-03-24-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -200,14 +200,13 @@ pkgsrc Todo:
 
 =====================
 
-For AsiaBSDCon2016 demonstration use, 
+For Happy 23rd Birthday, src!
 I've updated raspberry-pi image.
 
- https://2016.asiabsdcon.org/
- http://wiki.netbsd.org/summits/AsiaBSDCon_2016_NetBSD_BoF/
- https://www.facebook.com/events/833115380143767/
+ http://blog.netbsd.org/tnf/entry/happy_23rd_birthday_src
+ http://www.NetBSD.org/
+ http://www.jp.NetBSD.org/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/asiabsdcon2016.pdf
 
 - NetBSD 7.99.26 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
@@ -247,7 +246,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-03-11/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-03-24/
 
 Installed Packages:
 kterm

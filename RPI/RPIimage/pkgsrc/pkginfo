@@ -7,14 +7,15 @@ curl-7.47.1nb1      Client that groks URLs
 desktop-file-utils-0.22 Utilities to manage desktop entries
 digest-20160304     Message digest wrapper utility
 dillo-3.0.5nb1      Very small and fast graphical web-browser
+expat-2.1.1         XML parser library written in C
 fltk-1.3.3nb2       Fast Light Tool Kit for graphical user interfaces
 fossil-1.34nb1      High-reliability, distributed software configuration management
 fribidi-0.19.7      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.1.1nb2         Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.32.1  Image loaders for gtk2
-git-base-2.7.2nb1   GIT Tree History Storage Tool (base package)
+git-base-2.7.3nb1   GIT Tree History Storage Tool (base package)
 glib2-2.44.1nb1     Some useful routines for C programming (glib2)
-gtk2+-2.24.29nb2    GIMP Toolkit v2 - libraries for building X11 user interfaces
+gtk2+-2.24.30       GIMP Toolkit v2 - libraries for building X11 user interfaces
 harfbuzz-1.2.3      OpenType text shaping engine
 hicolor-icon-theme-0.13 Standard icon theme called hicolor
 icewm-1.2.38pre2    Small, fast and light-weight window manager
@@ -33,12 +34,12 @@ libvpx-1.5.0nb1     On2 VP8 library from Google
 libxml2-2.9.3       XML parser library from the GNOME project
 libxslt-1.1.28nb5   XSLT parser library from the GNOME project
 libyaml-0.1.6nb1    YAML 1.1 parser and emitter written in C
-lintpkgsrc-4.91     Sanity checks on the complete pkgsrc tree
+lintpkgsrc-4.92     Sanity checks on the complete pkgsrc tree
 lzo-2.09            Portable lossless data compression library
 m17n-db-1.7.0       The m17n database used by the m17n library
 m17n-lib-1.7.0nb3   Multilingualization library
 medit-1.2.0nb2      Programming and around-programming text editor
-mlterm-3.6.3        Multilingual terminal emulator
+mlterm-3.7.0        Multilingual terminal emulator
 mozilla-rootcerts-1.0.20150804nb1 Root CA certificates from the Mozilla Project
 ncurses-6.0nb1      CRT screen handling and optimization package
 p5-Authen-SASL-2.16nb3 Perl module to handle SASL authentication
@@ -51,7 +52,7 @@ p5-IO-Socket-INET6-2.72nb1 Perl object interface for AF_INET|AF_INET6 domain soc
 p5-IO-Socket-SSL-2.024 Perl5 SSL socket interface class
 p5-MailTools-2.14nb1 Perl5 modules related to mail applications
 p5-Mozilla-CA-20160104 Mozilla's CA cert bundle for Perl
-p5-Net-DNS-1.04     Perl5 module for DNS resolution
+p5-Net-DNS-1.05     Perl5 module for DNS resolution
 p5-Net-Domain-TLD-1.74 Work with TLD names
 p5-Net-IP-1.26nb3   Perl extension for manipulating IPv4/IPv6 addresses
 p5-Net-LibIDN-0.12nb7 Perl bindings for GNU Libidn
@@ -60,42 +61,41 @@ p5-Net-SSLeay-1.72nb1 Perl5 module for using OpenSSL
 p5-Socket6-0.25nb1  Perl5 module to support getaddrinfo() and getnameinfo()
 p5-TimeDate-2.30nb2 Perl5 TimeDate distribution
 pango-1.37.1        Library for layout and rendering of text
-pcre-8.38           Perl Compatible Regular Expressions library
+pcre-8.38nb1        Perl Compatible Regular Expressions library
 perl-5.22.1         Practical Extraction and Report Language
 pkg_chk-2.0.8       Check installed package versions against pkgsrc
 png-1.6.21          Library for manipulating PNG images
 py27-expat-2.7.11   Python interface to expat
 python27-2.7.11nb2  Interpreted, interactive, object-oriented programming language
 raspberrypi-userland-20150118nb1 Various libraries for the Raspberry Pi
-ruby200-addressable-2.4.0 Replacement for the URI Implementation of standard librrary
-ruby200-base-2.0.0p648nb1 Ruby 2.0.0 release minimum base package
-ruby200-cairo-1.14.3 Ruby bindings for cairo
-ruby200-delayer-0.0.2 Ruby module to delay the processing
-ruby200-delayer-deferred-1.0.3 Deferred for Delayer
-ruby200-gettext-3.2.1 Ruby localization library like as GNU gettext
-ruby200-gnome2-atk-3.0.7nb1 Ruby binding of ATK-1.0.x or later
-ruby200-gnome2-gdkpixbuf-3.0.7nb1 Ruby binding of GdkPixbuf-2.x
-ruby200-gnome2-glib-3.0.7nb1 Ruby binding of GLib-2.x
-ruby200-gnome2-gtk-3.0.7nb1 Ruby binding of GTK+-2.x
-ruby200-gnome2-pango-3.0.7nb1 Ruby binding of pango-1.x
-ruby200-hmac-0.4.0  Common interface to HMAC functionality
-ruby200-httpclient-2.7.1 HTTP accessing library for Ruby
-ruby200-instance_storage-1.0.0 Manage class instances with dictionary
-ruby200-json-pure-1.8.3 Pure Ruby implementation of JSON
-ruby200-locale-2.1.2 Pure ruby library which provides basic APIs for localization
-ruby200-memoist-0.14.0 Replacement of memoizable, memoize methods invocation
-ruby200-mikutter-3.3.8 Simple, powerful, and moeful twitter client
-ruby200-mini_portile2-2.1.0 Simple autoconf builder for developers
-ruby200-moneta-0.8.0 Unified interface to key/value stores
-ruby200-nokogiri-1.6.7.1 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
-ruby200-oauth-0.4.7 OAuth Core Ruby implementation
-ruby200-pkg-config-1.1.7nb1 Pure Ruby implementation of pkg-config
-ruby200-pluggaloid-1.0.2 Extensible plugin system for mikutter
-ruby200-text-1.3.1  Collection of text algorithms for Ruby
-ruby200-twitter-text-1.13.0 Library that provides text handling for Twitter
-ruby200-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
-ruby200-unf-0.1.4   Wrapper library to bring Unicode Normalization Form support
-ruby200-unf_ext-0.0.7.2 Unicode Normalization Form support library for CRuby
+ruby22-addressable-2.4.0 Replacement for the URI Implementation of standard librrary
+ruby22-base-2.2.4nb3 Ruby 2.2.4 release minimum base package
+ruby22-cairo-1.14.3 Ruby bindings for cairo
+ruby22-delayer-0.0.2 Ruby module to delay the processing
+ruby22-delayer-deferred-1.0.3 Deferred for Delayer
+ruby22-gettext-3.2.1 Ruby localization library like as GNU gettext
+ruby22-gnome2-atk-3.0.7nb1 Ruby binding of ATK-1.0.x or later
+ruby22-gnome2-gdkpixbuf-3.0.7nb1 Ruby binding of GdkPixbuf-2.x
+ruby22-gnome2-glib-3.0.7nb1 Ruby binding of GLib-2.x
+ruby22-gnome2-gtk-3.0.7nb1 Ruby binding of GTK+-2.x
+ruby22-gnome2-pango-3.0.7nb1 Ruby binding of pango-1.x
+ruby22-hmac-0.4.0   Common interface to HMAC functionality
+ruby22-httpclient-2.7.1 HTTP accessing library for Ruby
+ruby22-instance_storage-1.0.0 Manage class instances with dictionary
+ruby22-locale-2.1.2 Pure ruby library which provides basic APIs for localization
+ruby22-memoist-0.14.0 Replacement of memoizable, memoize methods invocation
+ruby22-mikutter-3.3.8nb1 Simple, powerful, and moeful twitter client
+ruby22-mini_portile2-2.1.0 Simple autoconf builder for developers
+ruby22-moneta-0.8.0 Unified interface to key/value stores
+ruby22-nokogiri-1.6.7.2 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby22-oauth-0.5.1  OAuth Core Ruby implementation
+ruby22-pkg-config-1.1.7nb1 Pure Ruby implementation of pkg-config
+ruby22-pluggaloid-1.0.2 Extensible plugin system for mikutter
+ruby22-text-1.3.1   Collection of text algorithms for Ruby
+ruby22-twitter-text-1.13.4 Library that provides text handling for Twitter
+ruby22-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
+ruby22-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
+ruby22-unf_ext-0.0.7.2 Unicode Normalization Form support library for CRuby
 shared-mime-info-1.6 Core database of common types
 sudo-1.8.15nb1      Allow others to run commands as root
 tcsh-6.19.00nb1     Extended C-shell with many useful features
