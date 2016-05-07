@@ -37,5 +37,8 @@
  :maxdepth: 3
  :numbered:
 
- Place/asiabsdcon
- 
+ Place/gunma
+ RPI
+ Omxplayer
+ Xfce4
+ RPIImage
