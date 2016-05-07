@@ -1,16 +1,16 @@
-VERSION: :1,$s/2016-03-24/2016-03-24/g
-ISO:     :1,$s/201603211520Z/201603211520Z/g
+VERSION: :1,$s/2016-05-14/2016-05-14/g
+ISO:     :1,$s/201605051730Z/201605051730Z/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
-NetBSD:  :1,$s/7.99.26/7.99.26/g
+NetBSD:  :1,$s/7.99.29/7.99.29/g
 # Check MD5 filename before post this mail.
 
 To: port-armNetBSD.org@localhost
-Subject: 2016-03-24-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2016-05-14-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2016-03-24-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2016-05-14-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-03-24-earmv6hf/2016-03-24-netbsd-raspi-earmv6hf.img.gz
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-05-14-earmv6hf/2016-05-14-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -25,9 +25,9 @@ Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.26 evbarm-earmv6hf 201603211520Z rpi.img from nyftp.
-- ruby22
-- mlterm-3.7.0
+- NetBSD-current 7.99.29 evbarm-earmv6hf 201605051730Z rpi.img from nyftp.
+- merge nick-nhusb tree
+- openssl 1.0.1t 3 May 2016
 
 Automatic resize partition: see /etc/rc.conf and /etc/fstab
   1. copy image to SD/MicroSD
@@ -64,7 +64,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-03-24-earmv6hf/libfreetype.so.17.4.11
+ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-05-14-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -98,6 +98,13 @@ Install application: man 1 pkg_add
   cd video archive directory,
   # omxfinder
   can start video viewing via file finder.
+
+  SHARP MZ700 emulator
+  # npm install -g mz700-js
+  # cd /usr/pkg/lib/node_modules/mz700-js
+  # npm start
+  # mz700-js@0.0.0 start  /usr/pkg/lib/node_modules/mz700-js
+  # access http://localhost:3000/MZ-700/client.html
 
 - mcomix .. Book scanning data viewer
   # pkg_add py27-mcomix
@@ -200,15 +207,15 @@ pkgsrc Todo:
 
 =====================
 
-For Happy 23rd Birthday, src!
+For Open Source Confernce 2016 Gunma demonstration use, 
 I've updated raspberry-pi image.
 
- http://blog.netbsd.org/tnf/entry/happy_23rd_birthday_src
- http://www.NetBSD.org/
- http://www.jp.NetBSD.org/
+ http://www.ospn.jp/osc2016-gunma/
+ https://www.facebook.com/events/202028143468758/
  https://www.facebook.com/NetBSD.jp 
+ http://www.soum.co.jp/~jun/OSC2016gunma.pdf
 
-- NetBSD 7.99.26 earmv6hf rpi.img.gz base
+- NetBSD 7.99.29 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -246,7 +253,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-03-24/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-05-14/
 
 Installed Packages:
 kterm
