@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -63,16 +63,21 @@
 .. csv-table::
  :widths: 30 20 60
 
- 円頓寺商店街,国際センター,会場近く。堀川から丸の内まで続く商店街
+ 円頓寺商店街,国際センター,堀川から丸の内まで続く商店街
  ふれあい館,円頓寺商店街,NBUG例会会場。東海道らぐも。
  まつば,円頓寺商店街,NBUG例会会場脇。コーヒーを注文できます。
+ 美濃路,国際センター,最近の裏例会定番。御殿場高原ビールがある。
+ 五條,円頓寺商店街,酒場放浪記で取り上げられる。とり天もおいしい。
  菊井かつ,円頓寺商店街,かつ10本豚かつ10本青いやつ。円頓寺は休業中。黒川へいこう。
  フルット,円頓寺商店街,スパゲティ。トッピングに目玉焼きを載せよう。
  はね海老,円頓寺商店街,ランチがおいしい。
  テラゾ,円頓寺商店街,ロックバー。元オックスの人が。
  上野屋,円頓寺商店街,とんちゃん。
- 薩摩,名古屋駅,忘年会は焼肉。
+ ばつぐんや,国際センター,焼肉
+ 炭焼小屋,国際センター,焼肉
  KDS,第一アメ横1F,昔は車道にあった。小坂井ブランドの300Bとか。
+ ツゲ電機,雪見町,テクトロントランス。
+ エイトリック,上小田井,マルツ近く。手巻きトランス。
  ボントン,第一アメ横2F,昔は横浜石川町にもあった。
  ショップインバース,メガタウン,第一アメ横隣のツクモの奥。
  タケイ電子,第二アメ横,トランジスタ類はこちらへ。
@@ -81,11 +86,12 @@
  マルツ,上小田井,マルツは鶴舞線終点にあります。例会会場から意外と近い。
  丸八寿司,国際センター,OSC名古屋は丸八寿司近傍でしか開催されていない。
  三八屋,一宮,地ビール醸造。例会前日金曜午後2100くらい。
- 23 Craft Beerz Nagoya,丸の内,23種類の生ビール常備。
+ 23 Craft Beerz Nagoya,千種,23種類の生ビール常備。
  ワイズマーケット,国際センター,地ビール醸造。まるはちめいよん。
  7days brewing,名古屋駅,駅前。10タップ。
  グリルマン,伏見,犬山キワマリ荘五つ葉書店の分店あり。
  KEG,栄,クラフトビール専門店。lovelyの隣。
+ サンタルヌー,国際センター,クラフトビール。
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,6 +103,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 88,OSC2016名古屋,http://www.soum.co.jp/~jun/OSC2016nagoya.pdf
  71,OSC2015名古屋,http://www.soum.co.jp/~jun/OSC2015nagoya.pdf
  59,OSC2014名古屋,http://www.soum.co.jp/~jun/OSC2014nagoya.pdf
  42,OSC2013名古屋,http://www.soum.co.jp/~jun/OSC2013nagoya.pdf
@@ -110,6 +117,7 @@ togetterまとめ
  :widths: 80 80
 
  OSC2015名古屋 NetBSDブース展示の記録,
+ OSC2015名古屋 NetBSDブース展示の記録,http://togetter.com/li/824817
  OSC2014名古屋 NetBSDブース展示の記録,http://togetter.com/li/688742
  OSC2013名古屋 NetBSDブース展示の記録,http://togetter.com/li/522396
  OSC2012名古屋 NetBSDブース展示の記録,http://togetter.com/li/302311
@@ -129,6 +137,34 @@ OSC名古屋展示物
 #. HP712/80
 #. Speecys
 #. samtk
+
+オープンソースカンファレンス2015 Nagoya&NBUG5月例会
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2015/05/23/DSC07164.JPG
+.. image::  ../Picture/2015/05/23/DSC07165.JPG
+.. image::  ../Picture/2015/05/23/DSC07166.JPG
+.. image::  ../Picture/2015/05/23/DSC07167.JPG
+.. image::  ../Picture/2015/05/23/DSC07168.JPG
+.. image::  ../Picture/2015/05/23/DSC07169.JPG
+.. image::  ../Picture/2015/05/23/DSC07170.JPG
+.. image::  ../Picture/2015/05/23/DSC07172.JPG
+.. image::  ../Picture/2015/05/23/DSC07174.JPG
+.. image::  ../Picture/2015/05/23/DSC_0999.jpg
+.. image::  ../Picture/2015/05/23/DSC_1000.jpg
+.. image::  ../Picture/2015/05/23/DSC_1002.jpg
+.. image::  ../Picture/2015/05/23/DSC_1003.jpg
+.. image::  ../Picture/2015/05/23/DSC_1006.jpg
+.. image::  ../Picture/2015/05/23/DSC_1009.jpg
+.. image::  ../Picture/2015/05/23/DSC_1010.jpg
+.. image::  ../Picture/2015/05/23/DSC_1011.jpg
+.. image::  ../Picture/2015/05/23/DSC_1012.jpg
+.. image::  ../Picture/2015/05/23/DSC_1013.jpg
+.. image::  ../Picture/2015/05/23/DSC_1014.jpg
+.. image::  ../Picture/2015/05/23/DSC_1017.jpg
+.. image::  ../Picture/2015/05/23/DSC_1021.jpg
+.. image::  ../Picture/2015/05/23/DSC_1022.jpg
+.. image::  ../Picture/2015/05/23/DSC_1024.jpg
 
 2014年
 ~~~~~~~~~~~~~~~~~~

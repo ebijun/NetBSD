@@ -37,8 +37,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/gunma
+ Place/nagoya
  RPI
- Omxplayer
- Xfce4
- RPIImage
+ Luna
