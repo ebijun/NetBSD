@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: :1,$s/2016-05-14/2016-05-14/g
+ .. todo:: :1,$s/2016-05-14/2016-05-28/g
  .. todo:: :1,$s?2015/06/27?2015/06/27?g
  .. todo:: apache+php+mysql設定
  .. todo:: uim-pref-gtk

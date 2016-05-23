@@ -1,14 +1,14 @@
 # Makefile for RPI image.
 
 ARCH=earmv6hf
-#ARCH=earmhf
 #ARCH=earm
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2016-05-14/
+
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2016-05-28/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.29-evbarm-${ARCH}-201605051730Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.29-evbarm-${ARCH}-201605191830Z.iso
 
-PKGSRC=../../../pkgsrc/pkgsrc-2015Q4.tar.gz 
+PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 ###
 

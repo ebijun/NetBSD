@@ -43,7 +43,8 @@
  2012 Nagoya,5/11-5/12,650,50,名古屋国際センター
  2013 Nagoya,6/21-22,750,42,名古屋国際センター
  2014 Nagoya,7/4-5,620,30,名古屋国際センター
- 2015 Nagoya,5/22-23,,39,名古屋国際センター
+ 2015 Nagoya,5/22-23,550,39,名古屋国際センター
+ 2016 Nagoya,5/28,,35,吹上ホール
 
 オープンソースカンファレンス以前
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,7 +86,10 @@
  PC-NET,大須赤門通,謎PCと謎パーツあふるる約束の地。
  マルツ,上小田井,マルツは鶴舞線終点にあります。例会会場から意外と近い。
  丸八寿司,国際センター,OSC名古屋は丸八寿司近傍でしか開催されていない。
+ 松楽,吹上,中華。かにチャーハンの鍋振り。
+ 好来道場,吹上,総本家。桜山の好陽軒が昔の好来軒の味なので食べくらべよう。
  三八屋,一宮,地ビール醸造。例会前日金曜午後2100くらい。
+ ヒンメル,今池,クラフトビアバー。アプリにスタンプ。
  23 Craft Beerz Nagoya,千種,23種類の生ビール常備。
  ワイズマーケット,国際センター,地ビール醸造。まるはちめいよん。
  7days brewing,名古屋駅,駅前。10タップ。
@@ -116,7 +120,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2015名古屋 NetBSDブース展示の記録,
+ OSC2016名古屋 NetBSDブース展示の記録,
  OSC2015名古屋 NetBSDブース展示の記録,http://togetter.com/li/824817
  OSC2014名古屋 NetBSDブース展示の記録,http://togetter.com/li/688742
  OSC2013名古屋 NetBSDブース展示の記録,http://togetter.com/li/522396
@@ -150,21 +154,12 @@ OSC名古屋展示物
 .. image::  ../Picture/2015/05/23/DSC07170.JPG
 .. image::  ../Picture/2015/05/23/DSC07172.JPG
 .. image::  ../Picture/2015/05/23/DSC07174.JPG
-.. image::  ../Picture/2015/05/23/DSC_0999.jpg
-.. image::  ../Picture/2015/05/23/DSC_1000.jpg
-.. image::  ../Picture/2015/05/23/DSC_1002.jpg
-.. image::  ../Picture/2015/05/23/DSC_1003.jpg
-.. image::  ../Picture/2015/05/23/DSC_1006.jpg
-.. image::  ../Picture/2015/05/23/DSC_1009.jpg
 .. image::  ../Picture/2015/05/23/DSC_1010.jpg
 .. image::  ../Picture/2015/05/23/DSC_1011.jpg
 .. image::  ../Picture/2015/05/23/DSC_1012.jpg
 .. image::  ../Picture/2015/05/23/DSC_1013.jpg
 .. image::  ../Picture/2015/05/23/DSC_1014.jpg
 .. image::  ../Picture/2015/05/23/DSC_1017.jpg
-.. image::  ../Picture/2015/05/23/DSC_1021.jpg
-.. image::  ../Picture/2015/05/23/DSC_1022.jpg
-.. image::  ../Picture/2015/05/23/DSC_1024.jpg
 
 2014年
 ~~~~~~~~~~~~~~~~~~
@@ -178,15 +173,6 @@ OSC名古屋展示物
 .. image::  ../Picture/2014/07/05/DSC_0212.jpg
 .. image::  ../Picture/2014/07/05/DSC_0213.jpg
 .. image::  ../Picture/2014/07/05/DSC_0216.jpg
-.. image::  ../Picture/2014/07/05/DSC_0218.jpg
-.. image::  ../Picture/2014/07/05/DSC_0219.jpg
-.. image::  ../Picture/2014/07/05/DSC_0220.jpg
-.. image::  ../Picture/2014/07/05/DSC_0226.jpg
-.. image::  ../Picture/2014/07/05/DSC_0227.jpg
-.. image::  ../Picture/2014/07/05/DSC_0230.jpg
-.. image::  ../Picture/2014/07/05/DSC_0231.jpg
-.. image::  ../Picture/2014/07/05/DSC_0233.jpg
-.. image::  ../Picture/2014/07/05/DSC_0235.jpg
 
 2013年
 ~~~~~~~~~~~~~~~~~~
@@ -199,12 +185,6 @@ OSC名古屋展示物
 .. image::  ../Picture/2013/06/22/DSC_2124.jpg
 .. image::  ../Picture/2013/06/22/DSC_2125.jpg
 .. image::  ../Picture/2013/06/22/DSC_2129.jpg
-.. image::  ../Picture/2013/06/22/DSC_2131.jpg
-.. image::  ../Picture/2013/06/22/DSC_2132.jpg
-.. image::  ../Picture/2013/06/22/DSC_2133.jpg
-.. image::  ../Picture/2013/06/22/dsc02697.jpg
-.. image::  ../Picture/2013/06/22/dsc02699.jpg
-.. image::  ../Picture/2013/06/22/dsc02700.jpg
 
 2012年
 ~~~~~~~~~~~~~~~~~~
@@ -217,12 +197,6 @@ OSC名古屋展示物
 .. image::  ../Picture/2012/05/12/DSC_0378.JPG
 .. image::  ../Picture/2012/05/12/DSC_0379.JPG
 .. image::  ../Picture/2012/05/12/DSC_0383.JPG
-.. image::  ../Picture/2012/05/12/DSC_0385.JPG
-.. image::  ../Picture/2012/05/12/DSC_0386.JPG
-.. image::  ../Picture/2012/05/12/DSC_0390.JPG
-.. image::  ../Picture/2012/05/12/dsc01046.jpg
-.. image::  ../Picture/2012/05/12/dsc01052.jpg
-.. image::  ../Picture/2012/05/12/dsc01053.jpg
 
 2011年
 ~~~~~~~~~~~~~~~~~
