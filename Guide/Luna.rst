@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-ルナ式練習帳、またはLunaの薄い本2015　[1]_
+ルナ式練習帳、またはLunaの薄い本2016　[1]_
 ===========================================
 
   「私が誰かは わかっているはずだ。」その声は天使の声だった。
@@ -748,7 +748,9 @@ yaft X LUNA
 .. [148] INSTALLATION NOTES for OpenBSD 5.7 http://ftp.openbsd.org/pub/OpenBSD/5.7/luna88k/INSTALL.luna88k
 .. [149] LUNAは、SX-9100以降の愛称なんですが、その前のSX-8700 の時代は、スーパーメイトという愛称でした。 https://www.facebook.com/events/1062729970410808/permalink/1153405211343283/
 .. [150] このマシンがスーパーメイトという商品名で http://www.tomo.gr.jp/root/new/root82.html
-		  
+.. [151] LUNA88Kに付属しているxzoomというデモの画像です。 http://moon.hanya-n.org/comp/luna/luna88k.html
+.. [152] OpenBSD/luna88k移植物語 http://www.slideshare.net/ao_kenji/a-story-of-porting-openbsdluna88k
+.. [153] FM音源の調べ on LUNA http://www.slideshare.net/ao_kenji/nbug201510
 
 このページ
 ~~~~~~~~~~~
