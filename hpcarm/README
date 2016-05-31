@@ -1,29 +1,29 @@
-:1,$s/2015-10-09/2015-10-09/g
-:1,$s/201510052020Z/201510052020Z/g
+:1,$s/2016-05-31/2016-05-31/g
+:1,$s/201605300010Z/201605300010Z/g
 :1,$s/2015Q3/2015Q3/g
-:1,$s/7.99.21/7.99.21/g
-
+:1,$s/7.99.30/7.99.30/g
 
 
 To: port-hpcarmnetbsd.org@localhost
-Subject: 2015-10-09-netbsd-hpcarm.img 
+Subject: 2016-05-31-netbsd-hpcarm.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-10-09-netbsd-hpcarm.img.gz for hpcarm.
+I've updated 2016-05-31-netbsd-hpcarm.img.gz for hpcarm.
 
-ftp://ftp.jp.netbsd.org/pub/NetBSD-jp/misc/jun/hpcarm/2015-10-09-netbsd-hpcarm.img.gz
+ftp://ftp.jp.netbsd.org/pub/NetBSD-jp/misc/jun/hpcarm/2016-05-31-netbsd-hpcarm.img.gz
 
 http://movapic.com/pic/2015012400560454c2eda44b7d3
 
 Feature:
-- NetBSD 7.99.21-201510052020ZZ hpcarm from nyftp.netbsd
-- pkgsrc-current 2015Q3 tarball from ftp.NetBSD.
+- NetBSD 7.99.30-201605300010Z hpcarm from nyftp.netbsd
 - dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earm/WS011SH
 
 Pre-compiled packages:
 - Pre-compiled packages path setting: see /etc/pkg_install.conf 
-PKG_PATH=ftp://ftp.jp.netbsd.org/pub/NetBSD-jp/misc/jun/NetBSD7/2015Q3/earm/
+
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/earm/2016-06-18/
+
  To install application.
  # pkg_add some_application_name
 
@@ -31,13 +31,12 @@ PKG_PATH=ftp://ftp.jp.netbsd.org/pub/NetBSD-jp/misc/jun/NetBSD7/2015Q3/earm/
  /etc/mk.conf.
 
 Todo:
-- NetBSD7 crushed during boot: need some pullup.
 - wscons=YES : boot hangs.
 
 =====================
 
 
-- NetBSD 7.99.21 base
+- NetBSD 7.99.30 base
 - Copy image to Mini/MicroSD.
 - Set WZERO3.
 - boot hpcboot.exe
@@ -55,9 +54,8 @@ Todo:
 Features:
   - fit size for 2GB SD Card
   - with X11
-  - pkgsrc: 2015Q3 tree inside.
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/earm/2015-02-07/
+    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/earm/2016-06-18/
 
 Installed Packages:
  none

@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.26-hpcarm-201603292240Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.30-hpcarm-201605300010Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
 
