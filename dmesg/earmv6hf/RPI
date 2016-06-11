@@ -4,11 +4,12 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.29 (RPI.201605191830Z)
+NetBSD 7.99.30 (RPI.201606090220Z)
 total memory = 192 MB
 avail memory = 180 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
 timecounter: Timecounters tick every 10.000 msec
+WARNING: module error: can't find builtin dependency `i2c_bitbang'
 mainbus0 (root)
 cpu0 at mainbus0 core 0: 700 MHz ARM1176JZ-S r0p7 (ARM11J V6ZK core)
 cpu0: DC enabled IC enabled WB enabled LABT
@@ -55,6 +56,7 @@ sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 IPsec: Initialized Security Association Processing.
+WARNING: module error: can't find builtin dependency `i2c_bitbang'
 ld0 at sdmmc0: <0x03:0x5344:SU02G:0x80:0x020856e5:0x084>
 ld0: 1938 MB, 984 cyl, 64 head, 63 sec, 512 bytes/sect x 3970048 sectors
 ld0: 4-bit width, 25.000 MHz
@@ -74,7 +76,7 @@ uhub0: illegal enable change, port 1
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.29/modules
+kern.module.path=/stand/evbarm/7.99.30/modules
 vchiq: local ver 6 (min 3), remote ver 6.
 vcaudio0 at vchiq0: auds
 WARNING: no TOD clock present

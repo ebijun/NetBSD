@@ -18,3 +18,4 @@ pkg_info |sort  > /root/pkginfo
 uname -a        >  /root/version
 openssl version >> /root/version
 named -v        >> /root/version
+gcc -v          >> /root/version

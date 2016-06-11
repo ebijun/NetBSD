@@ -37,6 +37,8 @@
  :maxdepth: 3
  :numbered:
 
- Place/nagoya
+ Place/hokkaido
  RPI
- Luna
+ RPI/Omxplayer
+ RPI/Xfce4
+ RPI/RPIImage
