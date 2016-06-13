@@ -200,6 +200,28 @@ OSC北海道展示物
 #. Making install-image Presentation by つついさん
   http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html
 
+2015年
+^^^^^^^^^^^^^^^^
+.. image::  ../Picture/2015/06/13/DSC07315.JPG
+.. image::  ../Picture/2015/06/13/DSC07316.JPG
+.. image::  ../Picture/2015/06/13/DSC07319.JPG
+.. image::  ../Picture/2015/06/13/DSC_1042.jpg
+.. image::  ../Picture/2015/06/13/DSC_1043.jpg
+.. image::  ../Picture/2015/06/13/DSC_1044.jpg
+.. image::  ../Picture/2015/06/13/DSC_1046.jpg
+.. image::  ../Picture/2015/06/13/DSC_1047.jpg
+.. image::  ../Picture/2015/06/13/DSC_1048.jpg
+.. image::  ../Picture/2015/06/13/DSC_1049.jpg
+.. image::  ../Picture/2015/06/13/DSC_1051.jpg
+.. image::  ../Picture/2015/06/13/DSC_1052.jpg
+.. image::  ../Picture/2015/06/13/DSC_1053.jpg
+.. image::  ../Picture/2015/06/13/DSC_1054.jpg
+.. image::  ../Picture/2015/06/13/DSC_1055.jpg
+.. image::  ../Picture/2015/06/13/DSC_1056.jpg
+.. image::  ../Picture/2015/06/13/DSC_1060.jpg
+.. image::  ../Picture/2015/06/13/DSC_1061.jpg
+
+
 2014年
 ^^^^^^^^^^^^^^^^
 .. image::  ../Picture/2014/06/13/DSC04977.JPG
