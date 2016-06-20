@@ -37,7 +37,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/hokkaido
+ Place/okinawa
  RPI
  RPI/Omxplayer
  RPI/Xfce4
