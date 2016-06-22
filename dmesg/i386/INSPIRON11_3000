@@ -1,0 +1,223 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.31 (GENERIC.201606192300Z)
+total memory = 1946 MB
+avail memory = 1894 MB
+cpu_rng: RDRAND
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+Dell Inc. Inspiron 11-3162 (1.0.8)
+mainbus0 (root)
+ACPI: RSDP 0x00000000000F05B0 000024 (v02 DELL  )
+ACPI: XSDT 0x000000007A66E098 0000B4 (v01 DELL   WN09     01072009 AMI  00010013)
+ACPI: FACP 0x000000007A678948 00010C (v05 DELL   WN09     01072009 AMI  00010013)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 128/32 (20160422/tbfadt-652)
+ACPI: DSDT 0x000000007A66E1E0 00A764 (v02 DELL   WN09     01072009 INTL 20120913)
+ACPI: FACS 0x000000007B549E80 000040
+ACPI: APIC 0x000000007A678A58 000068 (v03 DELL   WN09     01072009 AMI  00010013)
+ACPI: FPDT 0x000000007A678AC0 000044 (v01 DELL   WN09     01072009 AMI  00010013)
+ACPI: FIDT 0x000000007A678B08 00009C (v01 DELL   WN09     01072009 AMI  00010013)
+ACPI: MCFG 0x000000007A678BA8 00003C (v01 DELL   WN09     01072009 MSFT 00000097)
+ACPI: BOOT 0x000000007A678BE8 000028 (v01 DELL   WN09     01072009 AMI  00010013)
+ACPI: SLIC 0x000000007A678C10 000176 (v01 DELL   WN09     01072009 AMI  00010013)
+ACPI: HPET 0x000000007A678D88 000038 (v01 DELL   WN09     01072009 AMI. 00000000)
+ACPI: SSDT 0x000000007A678DC0 000763 (v01 PmRef  CpuPm    00003000 INTL 20061109)
+ACPI: SSDT 0x000000007A679528 000290 (v01 PmRef  Cpu0Tst  00003000 INTL 20061109)
+ACPI: SSDT 0x000000007A6797B8 00017A (v01 PmRef  ApTst    00003000 INTL 20061109)
+ACPI: UEFI 0x000000007A679938 000042 (v01 DELL   WN09     00000000      00000000)
+ACPI: MSDM 0x000000007A679980 000055 (v03 DELL   WN09     01072009 AMI  00010013)
+ACPI: LPIT 0x000000007A6799D8 000104 (v01 DELL   WN09     00000005 MSFT 0100000D)
+ACPI: TPM2 0x000000007A679AE0 000034 (v03        Tpm2Tabl 00000001 AMI  00000000)
+ACPI: CSRT 0x000000007A679B18 00014C (v00 INTEL  LANFORDC 00000005 MSFT 0100000D)
+ACPI: SSDT 0x000000007A679C68 000544 (v01 CpuDpf CpuDptf  00001000 INTL 20061109)
+ACPI: SSDT 0x000000007A67A1B0 002230 (v01 DptfTb DptfTab  00001000 INTL 20061109)
+ACPI: 6 ACPI AML tables successfully acquired and loaded
+
+ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 115 pins
+cpu0 at mainbus0 apid 0
+cpu0: Intel(R) Celeron(R) CPU  N3050  @ 1.60GHz, id 0x406c3
+cpu1 at mainbus0 apid 4
+cpu1: Intel(R) Celeron(R) CPU  N3050  @ 1.60GHz, id 0x406c3
+acpi0 at mainbus0: Intel ACPICA 20160422
+acpi0: X/RSDT: OemId <DELL  , WN09   ,01072009>, AslId <AMI ,00010013>
+acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0x00000000C3A6F00C 00056E (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0x00000000C36CF00C 0003A5 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0x00000000C36D348C 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0x00000000C3A7583C 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
+acpi0: SCI interrupting at int 9
+timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+acpiec0 at acpi0 (EC, PNP0C09-1)
+acpiec0: unable to evaluate _GPE: AE_NOT_FOUND
+acpivga0 at acpi0 (GFX0): ACPI Display Adapter
+acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
+acpiout1 at acpivga0 (DD02, 0x0002): ACPI Display Output Device
+acpiout2 at acpivga0 (DD03, 0x0200): ACPI Display Output Device
+acpiout3 at acpivga0 (DD04, 0x0004): ACPI Display Output Device
+acpiout4 at acpivga0 (DD05, 0x0005): ACPI Display Output Device
+acpiout5 at acpivga0 (DD06, 0x0006): ACPI Display Output Device
+acpiout6 at acpivga0 (DD07, 0x0007): ACPI Display Output Device
+acpiout7 at acpivga0 (DD08, 0x0008): ACPI Display Output Device
+acpiout8 at acpivga0 (DD1F, 0x0400): ACPI Display Output Device
+acpiout8: brightness levels: [1-100]
+acpiout9 at acpivga0 (ISP0, 0x22b8): ACPI Display Output Device
+acpivga0: unknown output device acpiout0
+acpivga0: unknown output device acpiout1
+acpivga0: unknown output device acpiout2
+acpivga0: unknown output device acpiout3
+acpivga0: unknown output device acpiout4
+acpivga0: unknown output device acpiout5
+acpivga0: unknown output device acpiout6
+acpivga0: unknown output device acpiout7
+acpivga0: connected output devices:
+acpivga0:   0x0400 (acpiout8): Unknown Output Device, head 0
+acpivga0:   0x22b8 (acpiout9): Unknown Output Device, head 0, non vga
+FWHD (INT0800) at acpi0 not configured
+LDRC (PNP0C02) at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
+pckbc1 at acpi0 (PS2K, DLLK0725) (kbd port): io 0x60,0x64 irq 1
+pckbc2 at acpi0 (PS2M, DLL0725) (aux port): irq 12
+RMSC (PNP0C02) at acpi0 not configured
+TPD1 (DLL0725) at acpi0 not configured
+SPRC (PNP0C02) at acpi0 not configured
+PDRC (PNP0C02) at acpi0 not configured
+acpibat0 at acpi0 (BAT0, PNP0C0A-1): ACPI Battery
+acpiacad0 at acpi0 (AC, ACPI0003): ACPI AC Adapter
+acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
+acpibut0 at acpi0 (PWRB, PNP0C0C-170): ACPI Power Button
+acpiwmi0 at acpi0 (AMW0, PNP0C14-0): ACPI WMI Interface
+wmidell0 at acpiwmi0: Dell WMI mappings
+RBTN (DELLABCE) at acpi0 not configured
+acpibut1 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
+GPO3 (INT33FF) at acpi0 not configured
+TPM (MSFT0101) at acpi0 not configured
+DPTF (INT3400) at acpi0 not configured
+STR3 (INT3403) at acpi0 not configured
+STR1 (INT3403) at acpi0 not configured
+STR6 (INT3403) at acpi0 not configured
+acpitz0 at acpi0 (THM)
+acpitz0: levels: critical 89.0 C, passive cooling
+apm0 at acpi0: Power Management spec V1.2
+ACPI: Enabled 6 GPEs in block 00 to 3F
+pckbd0 at pckbc1 (kbd slot)
+pckbc1: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc1 (aux slot)
+pms0: Synaptics touchpad version 8.2
+pms0: Extended W mode, Palm detect, One button click pad, Multi-finger Report, Multi-finger
+pckbc1: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: vendor 8086 product 2280 (rev. 0x21)
+vga0 at pci0 dev 2 function 0: vendor 8086 product 22b1 (rev. 0x21)
+vga0: WARNING: ignoring 64-bit BAR @ 0x10
+vga0: WARNING: ignoring 64-bit BAR @ 0x18
+wsdisplay0 at vga0 kbdmux 1: console (80x25, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+drm at vga0 not configured
+vendor 8086 product 22dc (miscellaneous DASP, revision 0x21) at pci0 dev 11 function 0 not configured
+sdhc0 at pci0 dev 16 function 0: vendor 8086 product 2294 (rev. 0x21)
+sdhc0: interrupting at ioapic0 pin 16
+sdhc0: SDHC 3.0, rev 16, SDMA, 200000 kHz, embedded slot, HS SDR50 DDR50 SDR104 HS200 1.8V, re-tuning mode 1 (128s timer), 512 byte blocks
+sdmmc0 at sdhc0 slot 0
+xhci0 at pci0 dev 20 function 0: vendor 8086 product 22b5 (rev. 0x21)
+xhci0: interrupting at msi0 vec 0
+xhci0: xHCI version 1.0
+usb0 at xhci0: USB revision 3.0
+vendor 8086 product 2298 (miscellaneous crypto, revision 0x21) at pci0 dev 26 function 0 not configured
+hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
+hdaudio0: interrupting at ioapic0 pin 22
+hdafg0 at hdaudio0: vendor 10ec product 0255
+hdafg0: DAC00 2ch: Speaker [Built-In]
+hdafg0: DAC01 2ch: HP Out [Jack]
+hdafg0: ADC02 2ch: Mic In [Built-In]
+hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: full duplex, playback, capture, mmap, independent
+hdafg1 at hdaudio0: vendor 8086 product 2883
+hdafg1: DP00 8ch: Digital Out [Jack]
+hdafg1: 8ch/0ch 48000Hz PCM16*
+ppb0 at pci0 dev 28 function 0: vendor 8086 product 22c8 (rev. 0x21)
+ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+pci1 at ppb0 bus 1
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+iwm0 at pci1 dev 0 function 0: vendor 8086 product 08b3 (rev. 0x83)
+iwm0: interrupting at msi1 vec 0
+pcib0 at pci0 dev 31 function 0: vendor 8086 product 229c (rev. 0x21)
+ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 2292 (rev. 0x21)
+ichsmb0: interrupting at ioapic0 pin 18
+iic0 at ichsmb0: I2C bus
+isa0 at pcib0
+com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, working fifo
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+acpicpu0: C2: FFH, lat 500 us, pow    10 mW
+acpicpu0: C3: FFH, lat 1000 us, pow    10 mW
+acpicpu0: P0: FFH, lat  10 us, pow  2000 mW, 1601 MHz, turbo boost
+acpicpu0: P1: FFH, lat  10 us, pow  2000 mW, 1600 MHz
+acpicpu0: P2: FFH, lat  10 us, pow  1900 mW, 1520 MHz
+acpicpu0: P3: FFH, lat  10 us, pow  1800 mW, 1440 MHz
+acpicpu0: P4: FFH, lat  10 us, pow  1700 mW, 1360 MHz
+acpicpu0: P5: FFH, lat  10 us, pow  1600 mW, 1280 MHz
+acpicpu0: P6: FFH, lat  10 us, pow  1500 mW, 1200 MHz
+acpicpu0: P7: FFH, lat  10 us, pow  1400 mW, 1120 MHz
+acpicpu0: P8: FFH, lat  10 us, pow  1300 mW, 1040 MHz
+acpicpu0: P9: FFH, lat  10 us, pow  1200 mW,  960 MHz
+acpicpu0: P10: FFH, lat  10 us, pow  1100 mW,  880 MHz
+acpicpu0: P11: FFH, lat  10 us, pow  1000 mW,  800 MHz
+acpicpu0: P12: FFH, lat  10 us, pow   900 mW,  720 MHz
+acpicpu0: T0: FFH, lat   1 us, pow   900 mW, 100 %
+acpicpu0: T1: FFH, lat   1 us, pow   787 mW,  88 %
+acpicpu0: T2: FFH, lat   1 us, pow   675 mW,  75 %
+acpicpu0: T3: FFH, lat   1 us, pow   562 mW,  63 %
+acpicpu0: T4: FFH, lat   1 us, pow   450 mW,  50 %
+acpicpu0: T5: FFH, lat   1 us, pow   337 mW,  38 %
+acpicpu0: T6: FFH, lat   1 us, pow   225 mW,  25 %
+acpicpu0: T7: FFH, lat   1 us, pow   112 mW,  13 %
+coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=90
+acpicpu1 at cpu1: ACPI CPU
+coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=90
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+ERROR: 500 cycle TSC drift observed
+uhub0 at usb0: vendor 8086 xHCI Root Hub, class 9/0, rev 1.00/1.00, addr 0
+uhub0: 13 ports with 13 removable, self powered
+sdmmc0: sdmmc_mem_enable failed with error 1
+acpiacad0: AC adapter online.
+sdmmc0: couldn't enable card: 1
+IPsec: Initialized Security Association Processing.
+sdmmc0: sdmmc_mem_enable failed with error 1
+sdmmc0: couldn't enable card: 1
+umass0 at uhub0 port 2 configuration 1 interface 0
+umass0: PQI PQI USB Flash Drive, rev 2.00/11.00, addr 1
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <Generic, USB Flash Disk, 1100> disk removable
+sd0: 3861 MB, 7872 cyl, 16 head, 63 sec, 512 bytes/sect x 7907328 sectors
+ubt0 at uhub0 port 3
+ubt0: vendor 8087 product 07dc, rev 2.00/0.01, addr 2
+uvideo0 at uhub0 port 5 configuration 1 interface 0: SY20160126202751 Integrated Webcam, rev 2.00/52.67, addr 3
+video0 at uvideo0: SY20160126202751 Integrated Webcam, rev 2.00/52.67, addr 3
+boot device: sd0
+root on sd0a dumps on sd0b
+root file system type: ffs
+kern.module.path=/stand/i386/7.99.31/modules
+iwm0: hw rev: 0x160, fw ver 25.228 (API ver 9), address XX:XX:XX:XX:XX:XX
+iwm0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+iwm0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+iwm0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+acpibat0: normal capacity on 'charge state'
