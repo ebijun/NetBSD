@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -46,7 +46,8 @@ Maps:
  2012 Okinawa,9/22,120,16,沖縄コンベンションセンター
  2013 Okinawa,7/6,170,16,沖縄コンベンションセンター
  2014 Okinawa,5/24,150,21,沖縄コンベンションセンター
- 2015 Okinawa,7/4,,16,沖縄コンベンションセンター
+ 2015 Okinawa,7/4,100,16,沖縄コンベンションセンター
+ 2016 Okinawa,7/2,,20,沖縄コンベンションセンター
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,6 +59,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 90,OSC2016沖縄,http://www.soum.co.jp/~jun/OSC2016okinawa.pdf
  73,OSC2015沖縄,http://www.soum.co.jp/~jun/OSC2015okinawa.pdf
  57,OSC2014沖縄,http://www.soum.co.jp/~jun/OSC2014okinawa.pdf
  43,OSC2013沖縄,http://www.soum.co.jp/~jun/OSC2013okinawa.pdf
@@ -70,7 +72,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2015沖縄 NetBSDブース展示の記録,
+ OSC2016沖縄 NetBSDブース展示の記録,
+ OSC2015沖縄 NetBSDブース展示の記録,http://togetter.com/li/842624
  OSC2014沖縄 NetBSDブース展示の記録,http://togetter.com/li/671580
  OSC2013沖縄 NetBSDブース展示の記録,http://togetter.com/li/529669
  OSC2012沖縄 NetBSDブース展示の記録,http://togetter.com/li/377549
@@ -103,7 +106,7 @@ togetterまとめ
  沖縄熱血社交場,国際通り,ライブハウス。アラケモ本拠地
  市場の古本屋ウララ,牧志公設市場,『那覇の市場で古本屋』
  BOOKSじのん,宜野湾,金城哲夫研究を買いたい
- 我楽多文庫,奥武山公園,ねこのいる古本
+ 我楽多文庫,奥武山公園,ねこのいる古本屋
  DEEokinawa,www.dee-okinawa.com,スク情報(水揚げ/定食/のぼり)
  ピッツァＴＯＧＯ,宜野湾,石窯ピザ
  アメリカンNo.1倉庫,宜野湾,営業しているのだろうか
@@ -115,11 +118,26 @@ togetterまとめ
  リユースネットスッキリ,糸満,兼城369-1 11:30-
  リサイクルショップエース,大謝名,10:00-
  沖縄ブルーイング,アメリカンビレッジ,16:00- ビール醸造所
+ 北谷ハーバーブルワリー,北谷,北谷町字美浜53-1 17:30-23:00
  I's Public Ale House,北谷,17:00-1:00
  Dojo Bar Naha,安里１丁目交差点,19:00-
  ポストマン,読谷,プラモデル 13:00-19:00
- ひばり屋,国際通り,理容たかまつ裏 
-	  
+ ひばり屋,美栄橋,那覇市牧志１－１９－１１に移転。
+ やっぱりステーキ2nd,美栄橋,AM11:00-AM7:00まで営業
+ 
+2015 年
+---------------
+
+.. image::  ../Picture/2015/07/04/DSC07431.JPG
+.. image::  ../Picture/2015/07/04/DSC07432.JPG
+.. image::  ../Picture/2015/07/04/DSC_1098.jpg
+.. image::  ../Picture/2015/07/04/DSC_1100.jpg
+.. image::  ../Picture/2015/07/04/DSC_1101.jpg
+.. image::  ../Picture/2015/07/04/DSC_1102.jpg
+.. image::  ../Picture/2015/07/04/DSC_1103.jpg
+.. image::  ../Picture/2015/07/04/DSC_1105.jpg
+.. image::  ../Picture/2015/07/04/DSC_1106.jpg
+
  2014年
 ---------------
 .. image::  ../Picture/2014/05/23/DSC04807.JPG
