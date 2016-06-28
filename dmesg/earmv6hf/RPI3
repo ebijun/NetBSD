@@ -4,7 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.32 (RPI2.201606230230Z)
+NetBSD 7.99.32 (RPI2) #13: Mon Jun 27 10:33:57 JST 2016
+	jun@amiasp1.soum.co.jp:/usr/obj/kernel/earmv7hf/RPI2
 total memory = 944 MB
 avail memory = 925 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -43,10 +44,9 @@ sdhc0: interrupting on intr 190
 dwctwo0 at obio0 intr 137: USB controller
 bcmspi0 at obio0 intr 182: SPI
 spi0 at bcmspi0: SPI bus
-bsciic0 at obio0 intr 181: BSC0
+bcmbsc at obio0 not configured
+bsciic0 at obio0 intr 181: BSC1
 iic0 at bsciic0: I2C bus
-bsciic1 at obio0 intr 181: BSC1
-iic1 at bsciic1: I2C bus
 bcmgpio0 at obio0: GPIO [0...31]
 gpio0 at bcmgpio0: 32 pins
 bcmgpio1 at obio0: GPIO [32...53]
@@ -77,9 +77,9 @@ sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, HS SDR50 3.3V, re-tuning mod
 sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
+IPsec: Initialized Security Association Processing.
 ld0 at sdmmc0: <0x89:0x0303:NCard:0x10:0x15901a98:0x0ac>
 ld0: 7659 MB, 3890 cyl, 64 head, 63 sec, 512 bytes/sect x 15685632 sectors
-IPsec: Initialized Security Association Processing.
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 uhub1 at uhub0 port 1: vendor 0424 product 9514, class 9/0, rev 2.00/2.00, addr 2
 uhub1: multiple transaction translators
