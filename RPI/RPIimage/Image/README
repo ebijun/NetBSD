@@ -1,16 +1,20 @@
-VERSION: :1,$s/2016-06-18/2016-06-18/g
-ISO:     :1,$s/201606090220Z/201606090220Z/g
+VERSION: :1,$s/2016-07-02/2016-07-02/g
+ISO:     :1,$s/201606230230Z/201606230230Z/g
+NetBSD:  :1,$s/7.99.32/7.99.32/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
-NetBSD:  :1,$s/7.99.30/7.99.30/g
 # Check MD5 filename before post this mail.
 
 To: port-armNetBSD.org@localhost
-Subject: 2016-06-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2016-07-02-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2016-06-18-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2016-07-02-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-06-18-earmv6hf/2016-06-18-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-02-earmv6hf/2016-07-02-netbsd-raspi-earmv6hf.img.gz
+
+Kernel for RPI3:
+http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-02-earmv6hf/RPI3/
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -25,9 +29,11 @@ Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.30 evbarm-earmv6hf 201606090220Z rpi.img from nyftp.
-- GCC 5.4.0
-- mikutter 3.4
+- NetBSD-current 7.99.32 evbarm-earmv6hf 201606230230Z rpi.img from nyftp.
+- git-base-2.9.0
+- mlterm-3.7.1
+- perl-5.24.0
+- mikutter 3.4.1
 - security.pax.mprotect.enabled
   man security
   man paxctl
@@ -46,7 +52,7 @@ Automatic resize partition: see /etc/rc.conf and /etc/fstab
 
 pkgsrc: 
   # cd /usr
-  # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
+  # ftp http://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
   # ls /usr/pkgsrc                ... check if exists.
   # tar tzvf pkgsrc.tar.gz |head  ... check the archive
   # tar xzvf pkgsrc.tar.gz        ... extract
@@ -63,15 +69,15 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-06-18/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-07-02/
 
 - If you use Official Package for NetBSD7.0:
 
 set /etc/pkg_install.conf: 
-PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
+PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-06-18-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-02-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -174,7 +180,7 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
 
 XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   http://xm6i.org/download.html
-  XM6i-0.53-netbsd7.0-earmv6hf-2015Q2.tar.gz
+  XM6i-0.54-netbsd7.0-earmv6hf-2015Q2.tar.gz
   pkg_add wxGTK30 
 
   https://twitter.com/isaki68k/status/625138538271502337
@@ -215,15 +221,15 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Confernce 2016 Hokkaido demonstration use, 
+For Open Source Confernce 2016 Okinawa demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2016-do/
- https://www.facebook.com/events/1730597043836543/
+ http://www.ospn.jp/osc2016-okinawa/
+ https://www.facebook.com/events/1589647504618848/
  https://www.facebook.com/NetBSD.jp 
  http://www.soum.co.jp/~jun/OSC2016hokkaido.pdf
 
-- NetBSD 7.99.30 earmv6hf rpi.img.gz base
+- NetBSD 7.99.32 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -261,7 +267,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-06-18/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-07-02/
 
 Installed Packages:
 kterm
