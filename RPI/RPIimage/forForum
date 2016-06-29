@@ -1,14 +1,14 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2016-06-18/2016-06-18/g
+:1,$s/2016-07-02/2016-07-02/g
 
 
-2016-06-18-netbsd-raspi-earmv6hf.img
+2016-07-02-netbsd-raspi-earmv6hf.img
 
-I've updated 2016-06-18-netbsd-raspi-earmv6hf.img.gz for RPI.
-http://mail-index.netbsd.org/port-arm/2016/06/13/msg003821.html
+I've updated 2016-07-02-netbsd-raspi-earmv6hf.img.gz for RPI.
+http://mail-index.netbsd.org/port-arm/2016/06/29/msg003846.html
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-06-18-earmv6hf/2016-06-18-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-02-earmv6hf/2016-07-02-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -23,9 +23,11 @@ Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.30 evbarm-earmv6hf 201606090220Z rpi.img from nyftp.
-- GCC 5.4.0
-- mikutter 3.4
+- NetBSD-current 7.99.32 evbarm-earmv6hf 201606230230Z rpi.img from nyftp.
+- git-base-2.9.0
+- mlterm-3.7.1
+- perl-5.24.0
+- mikutter 3.4.1
 - security.pax.mprotect.enabled
   man security
   man paxctl
