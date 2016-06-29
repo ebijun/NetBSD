@@ -66,7 +66,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
  earmv6hf 
- # ftp ftp://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
+ # ftp http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
  2016-07-02-earmv6hf/2016-07-02-netbsd-raspi-earmv6hf.img.gz
  
 * 2GB以上のSDカードを準備します。
