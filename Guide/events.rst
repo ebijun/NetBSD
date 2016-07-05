@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -30,7 +30,7 @@ Japan NetBSD Users’ Group
 * 回線提供：IIJ
 *  http://www.jp.NetBSD.org/
 * 年一度定期総会・BoFを実施
-* 2015/7/11
+* 2016/7/9
 * 東京 根津　東大武田先端知ビル
 * ハッシュタグ: #JNUG
 
@@ -74,7 +74,7 @@ FaceBook
 """"""""""
 
 http://www.facebook.com/NetBSD.jp/
-  309いいね: イベント欄: www.jp.NetBSD.orgと連携
+  366いいね: イベント欄: www.jp.NetBSD.orgと連携
 
 netbsd@re.soum.co.jp
 """"""""""""""""""""""
@@ -83,8 +83,8 @@ netbsd@re.soum.co.jp
   netbsd-request@re.soum.co.jp にメールください
 アーカイブ：
   http://www.re.soum.co.jp/~fukaumi/ 
-1994/11/25-: 10422通/7523日(2015/6/30まで:20年218日)
-  メールアドレス登録数　872
+1994/11/25-: 10446通/7897日(2016/7/9まで:21年227日)
+  メールアドレス登録数　873
   有効メールアドレス    402 
 
   
@@ -121,42 +121,29 @@ netbsd@re.soum.co.jp
 * pkgsrc: mikutter,mlterm,contao,libreoffice,basercms...
 
   
-2015/7/9時点のtogetterアクセス数です。
+2016/7/5時点のtogetterアクセス数です。
 
 .. csv-table::
- :widths: 65 160 10
+ :widths: 165 60 10
 
- URL,イベント名,View
- http://togetter.com/li/842624, オープンソースカンファレンス2015 Okinawa　NetBSDブース展示の記録,584
- http://togetter.com/li/834148, オープンソースカンファレンス2015 Hokkaido　NetBSDブース展示の記録,692
- http://togetter.com/li/824817, オープンソースカンファレンス2015 Nagoya&NBUG5月例会 の記録,1444
- http://togetter.com/li/798599, NetBSD博物館,2427
- http://togetter.com/li/793444, AsiaBSDCon 2015の記録,3008
- http://togetter.com/li/788681, オープンソースカンファレンス2015 Tokyo/Spring　NetBSDブース展示の記録,1268
- http://togetter.com/li/781556, オープンソースカンファレンス2015 Hamanako　NetBSDブース展示の記録,674
- http://togetter.com/li/779725, オープンソースカンファレンス2015 Oita　NetBSDブース展示の記録,694
- http://togetter.com/li/762067, NetBSD Advent Calendar 2014の記録,880
- http://togetter.com/li/748237, オープンソースカンファレンス2014 Fukuoka　NetBSDブース展示の記録,1856
- http://togetter.com/li/742243, 関西オープンソース2014 NetBSDブース展示の記録,2006
- http://togetter.com/li/733588, オープンソースカンファレンス2014 Tokyo/Fall　NetBSDブース展示の記録,2000
- http://togetter.com/li/721414, オープンソースカンファレンス2014 Hiroshima　NetBSDブース展示の記録,2234
- http://togetter.com/li/709947, オープンソースカンファレンス2014 Shimane　NetBSDブース展示の記録,1766
- http://togetter.com/li/700617, オープンソースカンファレンス2014 Kansai＠Kyoto　NetBSDブース展示の記録,3269
- http://togetter.com/li/691775, 日本NetBSDユーザーグループ第十六回定期総会 および NetBSD BoF 2014,2485
+ イベント名,URL,View
+ オープンソースカンファレンス2016 Okinawa NetBSDブース展示の記録,http://togetter.com/li/995155,551
+ オープンソースカンファレンス2016 Hokkaido NetBSDブース展示の記録,http://togetter.com/li/988853,598
+ オープンソースカンファレンス2016 Nagoya NBUG & NetBSDブース展示の記録,http://togetter.com/li/980383,1050
+ オープンソースカンファレンス2016 Gunma NetBSDブース展示の記録,http://togetter.com/li/975036,739
+ AsiaBSDCon 2016の記録,http://togetter.com/li/947029,2737
+ オープンソースカンファレンス2016 Tokyo/Spring NetBSDブース展示の記録,http://togetter.com/li/943037,1749
+ オープンソースカンファレンス2016 Hamanako NetBSDブース展示の記録,http://togetter.com/li/929091,1098
+ NetBSD Advent Calendar 2015の記録,http://togetter.com/li/916444,1003
+ オープンソースカンファレンス2015 Tokushima NetBSDブース展示の記録,http://togetter.com/li/899923,1160
+ 関西オープンソース2015 NetBSDブース展示の記録,http://togetter.com/li/896456,1855
+ オープンソースカンファレンス2015 Tokyo/Fall NetBSDブース展示の記録,http://togetter.com/li/891107,1233
+ オープンソースカンファレンス2015 Fukuoka NetBSDブース展示の記録,http://togetter.com/li/881732,977
+ オープンソースカンファレンス2015 Hiroshima NetBSDブース展示の記録,http://togetter.com/li/875487,1675
+ オープンソースカンファレンス2015 Niigata NetBSDブース展示の記録,http://togetter.com/li/869752,984
+ オープンソースカンファレンス2015 Shimane NetBSDブース展示の記録,http://togetter.com/li/863726,1062
+ オープンソースカンファレンス2015 Kansai@Kyoto NetBSDブース展示の記録,http://togetter.com/li/857157,4008
+ 日本NetBSDユーザーグループ第十七回定期総会 および NetBSD BoF 2015 の記録,http://togetter.com/li/845730,1499
 
-AsiaBSDCon 2015 NetBSD BOF 
-------------------------------------------------------
 
-* http://2015.asiabsdcon.org/timetable.html.ja#M4
-* Day 2: Room E 2015/3/13 18:30-21:00
-* almost 25 people
-* http://2015.asiabsdcon.org/streaming.html.en
-+ Notify pooka: http://wiki.rumpkernel.org/Info%3A-Publications-and-Talks#talks
-* https://docs.google.com/spreadsheets/d/14q6zJK5PjlMoSeBV5HBiEik5LkqlrcrbSxPoxVKKlec/edit?usp=sharing
-
-#. Taylor R Campbell (riastradh@), A brief overview of DRM/KMS and its status in NetBSD
-#. Kazuya Goda, Development of vxlan(4) using rumpkernel
-#. Makoto Fujiwara (mef@), List of packages to be updated out of 12,000
-#. Jun Ebihara (jun@), RPI/RPI2/Cubieboard2/BananaPI images.
-#. Ryo Onodera (ryoon@),How to package github softwares
 

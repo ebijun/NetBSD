@@ -32,13 +32,15 @@
    11-17: RPI
    18-19: RPI/cubieboard
    20: ??????
-   
-.. toctree::
- :maxdepth: 3
- :numbered:
-
  Place/okinawa
  RPI
  RPI/Omxplayer
  RPI/Xfce4
  RPI/RPIImage
+   
+.. toctree::
+ :maxdepth: 3
+ :numbered:
+
+ events
+ Place/2015
