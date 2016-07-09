@@ -1,21 +1,21 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.7 (WZERO3) #0: Fri May 11 06:18:56 UTC 2012
-	builds@b7.netbsd.org:/home/builds/ab/HEAD/hpcarm/201205102350Z-obj/home/builds/ab/HEAD/src/sys/arch/hpcarm/compile/WZERO3
+NetBSD 7.99.33 (WZERO3.201607080210Z)
 total memory = 65536 KB
-avail memory = 57664 KB
+avail memory = 56732 KB
+sysctl_createv: sysctl_create(machine_arch) returned 17
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
-cpu0 at mainbus0: PXA27x rev 7 (XScale core)
+cpu0 at mainbus0 core 0: PXA27x rev 7 (XScale V5TE core)
 cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
-cpu0: 32KB/32B 32-way Instruction cache
-cpu0: 32KB/32B 32-way write-back-locking Data cache
+cpu0: 32KB/32B 32-way L1 VIVT Instruction cache
+cpu0: 32KB/32B 32-way write-back-locking L1 VIVT Data cache
 pxaip0 at mainbus0: Onchip Peripheral Bus
-pxaip0: CPU clock = 415.999 MHz
+pxaip0: CPU clock = 415.997 MHz
 pxaip0: kernel is configured for PXA270, cpu type is PXA270
 pxaintc0 at pxaip0 addr 0x40d00000-0x40d0001f: Interrupt Controller
 pxagpio0 at pxaip0 addr 0x40e00000-0x40e0014f: GPIO Controller
@@ -47,14 +47,16 @@ clock: hz=100 stathz=64
 timecounter: Timecounter "saost_count" frequency 3250000 Hz quality 100
 uhub0 at usb0: PXA27x OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-ld0 at sdmmc0: <00000>
-ld0: 1947 MB, 988 cyl, 64 head, 63 sec, 512 bytes/sect x 3987456 sectors
-ld0: 4-bit width, bus clock 19.500 MHz
-upgt0 at uhub0 port 1
-upgt0: Sharp RUITZ1016YCZZ, rev 2.00/1.00, addr 2
+ld0 at sdmmc0: <0x03:0x5344:SU02G:0x80:0x014feae2:0x06b>
+ld0: 1938 MB, 984 cyl, 64 head, 63 sec, 512 bytes/sect x 3970048 sectors
+ld0: 4-bit width, 19.500 MHz
 boot device: ld0
+WARNING: ld0: total sector size in disklabel (3813376) != the size of ld0 (3970048)
 root on ld0a dumps on ld0b
+WARNING: ld0: total sector size in disklabel (3813376) != the size of ld0 (3970048)
+WARNING: ld0: total sector size in disklabel (3813376) != the size of ld0 (3970048)
 root file system type: ffs
-upgt0: address 08:00:1f:df:5f:be
-upgt0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-upgt0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+kern.module.path=/stand/hpcarm/7.99.33/modules
+WARNING: clock lost 3837 days
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
