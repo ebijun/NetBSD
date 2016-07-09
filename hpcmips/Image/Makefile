@@ -1,11 +1,10 @@
 # Makefile for NetBSD/hpcmips image.
 
 # set image file name
-FILE=1G.img
-#FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
+FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.26-hpcmips-201603031620Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.33-hpcmips-201607080210Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q4.tar.gz
 
@@ -29,7 +28,8 @@ all: file newfs cdmount extract bootarea cdunmount
 # make image file. 512*3813376=2GB
 file: 
 	echo Create ${FILE}.
-	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
+#	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
+	dd if=/dev/zero of=${FILE} bs=512 count=1906688 progress=50000
 	sleep 3
 
 newfs:
