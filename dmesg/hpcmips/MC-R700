@@ -1,17 +1,19 @@
-pmap_steal_memory: seg 0: 0x4b8 0x4b8 0x1ffe 0x1ffe
-pmap_steal_memory: seg 0: 0x4f7 0x4f7 0x1ffe 0x1ffe
-pmap_steal_memory: seg 0: 0x4f9 0x4f9 0x1ffe 0x1ffe
+pmap_steal_memory: seg 0: 0x4ee 0x4ee 0x1ffe 0x1ffe
+pmap_steal_memory: seg 0: 0x52d 0x52d 0x1ffe 0x1ffe
+pmap_steal_memory: seg 0: 0x52f 0x52f 0x1ffe 0x1ffe
+total memory banks = 2
+memory bank 0 = 00000000 5048KB(0x4ee000)
+memory bank 1 = 0x4ee000 27720KB(0x1b12000)
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 6.99.40 (GENERIC) #0: Thu Apr 24 13:40:34 JST 2014
-	jun@amivb.soum.co.jp:/usr/obj/hpcmips.hpcmips/sys/arch/hpcmips/compile/GENERIC
+NetBSD 7.99.33 (GENERIC.201607080210Z)
 NEC MC-R700 (NEC VR4121 rev0.0 131.072MHz)
 total memory = 32768 KB
-avail memory = 27088 KB
+avail memory = 26876 KB
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0: NEC VR4100 CPU (0xc60) Rev. 6.0 with software emulated floating point
@@ -35,7 +37,6 @@ vrkiu0 at vr4102ip0 addr 0x0b000180-019f
 hpckbd0 at vrkiu0
 wskbd0 at hpckbd0: console keyboard
 vrpmu0 at vr4102ip0 addr 0x0b0000a0-00bf
-vrpmu: Deadman's switch detected
 vrdsu0 at vr4102ip0 addr 0x0b0000e0-00e7
 vrled0 at vr4102ip0 addr 0x0b000240-024f
 vrpiu0 at vr4102ip0 addr 0x0b000120-013f, 0x0b0002a0-02bf
@@ -44,8 +45,8 @@ vrpiu0: WARNING: powerhook_establish is deprecated
 vrc4172pci0 at vr4102ip0 addr 0x0aff0cf8-0cff
 pci0 at vrc4172pci0 bus 0
 pci0: i/o space, memory space enabled, rd/line ok
-NEC product 0x0000 (miscellaneous prehistoric, interface 0x06) at pci0 dev 0 function 0 not configured
-ohci0 at pci0 dev 0 function 1: NEC product 0x0000 (rev. 0x00)
+vendor 1033 product 0000 (miscellaneous prehistoric, interface 0x06) at pci0 dev 0 function 0 not configured
+ohci0 at pci0 dev 0 function 1: vendor 1033 product 0000 (rev. 0x00)
 ohci0: interrupting at pciintr 0:0:1
 ohci0: OHCI version 1.0
 usb0 at ohci0: USB revision 1.0
@@ -73,30 +74,26 @@ timecounter: Timecounter "vrrtc" frequency 32768 Hz quality 100
 pcic0: using irq 589827 for socket events
 pcic0: WARNING: powerhook_establish is deprecated
 pcic0: WARNING: powerhook_establish is deprecated
-uhub0 at usb0: NEC OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb0: vendor 1033 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-wdc1 at pcmcia0 function 0: <, , >
+wdc1 at pcmcia0 function 0: <TRANSCEND, TS8GCF133, >
 pcic0: port 0x14000400-0x1400040f
 wdc1: i/o mapped mode
 pcmcia0: card irq 3
 atabus0 at wdc1 channel 0
 wd0 at atabus0 drive 0
-wd0: <SILICON POWER>
+wd0: <TS8GCF133>
 wd0: drive supports 1-sector PIO transfers, LBA addressing
 wd0: 7647 MB, 15538 cyl, 16 head, 63 sec, 512 bytes/sect x 15662304 sectors
 wd0: drive supports PIO mode 4
-axe0 at uhub0 port 1
-axe0: vendor 0x0411 product 0x006e, rev 2.00/0.01, addr 2
-axe0: Ethernet address 00:1d:73:68:51:10
-ukphy0 at axe0 phy 24: OUI 0x000ac2, model 0x000c, rev. 2
-ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
 boot device: wd0
 pcmcia0: card irq 3
 root on wd0a dumps on wd0b
 pcmcia0: card irq 3
 pcmcia0: card irq 3
 root file system type: ffs
-WARNING: clock lost 5593 days
+kern.module.path=/stand/hpcmips/7.99.33/modules
+WARNING: clock lost 6399 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 pid 1(init): ABI set to O32 (e_flags=0x1007)
