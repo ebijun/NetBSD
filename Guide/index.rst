@@ -7,7 +7,7 @@
     notice, this list of conditions and the following disclaimer.
  2. Redistributions in binary form must reproduce the above copyright
     notice, this list of conditions and the following disclaimer in the
-    documentation and/or other materials provided with the distribution.
+    documentation anor other materials provided with the distribution.
  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
@@ -19,28 +19,11 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-.. NetBSD kanko guide documentation master file, created by
-   sphinx-quickstart on Mon Jun 24 16:36:44 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-.. ????????:????70%:????3p??????17p:intro+RPI??11p
-   1: ????
-   2: 2014maps
-   3-5: ????:????1p,i??????1??????3x6-8=18-24??
-   6-10: intro
-   11-17: RPI
-   18-19: RPI/cubieboard
-   20: ??????
- Place/okinawa
- RPI
- RPI/Omxplayer
- RPI/Xfce4
- RPI/RPIImage
-   
 .. toctree::
  :maxdepth: 3
  :numbered:
 
- events
- Place/2015
+ Place/kyoto
+ RPI
+ Luna
+
