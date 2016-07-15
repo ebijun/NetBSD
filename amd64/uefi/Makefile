@@ -26,4 +26,3 @@ fetchsrc:
 fetch:
 	ftp http://cdn.netbsd.org/pub/NetBSD/misc/nonaka/tmp/uefi/nbsd-uefi-installimage.tar.bz2
 	ftp http://cdn.netbsd.org/pub/NetBSD/misc/nonaka/tmp/uefi/nbsd-install_image.diff
-	ftp http://cdn.netbsd.org/pub/NetBSD/misc/nonaka/tmp/uefi/nbsd-msdosfs-fix-filename-lookup.diff
