@@ -13,7 +13,6 @@ tools:
 
 patch:
 	patch -p1 -d /usr/src < nbsd-install_image.diff
-	patch -p1 -d /usr/src < nbsd-msdosfs-fix-filename-lookup.diff
 
 extractsrc:
 	tar xzvf src.tar.gz -C /usr
