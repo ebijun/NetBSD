@@ -1,3 +1,7 @@
+# /usr/obj/distrib/amd64/uefi-installimage/NetBSD-7.99.32-amd64-uefi-install.img.gz
+# ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/amd64/NetBSD-7.99.32-amd64-uefi-install.img.gz
+
+
 nbmake:
 	(cd /usr/src/distrib/amd64;/usr/obj/tooldir.NetBSD-7.99.32-amd64/bin/nbmake-amd64 install_image)
 
