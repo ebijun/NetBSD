@@ -85,6 +85,7 @@ pkgsrc/wip/livestreamerにもありますが、Pythonのpip経由をつかって
 
 livestreamer経由のストリーム再生
 ---------------------------
+
 youtubeのビデオを、livestreamer経由でストリーム再生してみましょう。コマンドラインでプレーヤーと再生品質を指定して、livestreamerを起動します。crontabで起動するようにすると、定期的にビデオ再生をするシステムを簡単に作ることができます。
 
 ::

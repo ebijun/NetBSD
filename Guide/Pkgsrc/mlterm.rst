@@ -1,5 +1,28 @@
+.. 
+ Copyright (c) 2016 Jun Ebihara All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+=========================
 mlterm-fbを使ってみる
----------------------
+=========================
+
 リソースの限られたマシンでは、Xを起動させるだけでリソースを使いきってしまう場合があります。
 mlterm (pkgsrc/x11/mlterm) [mlterm]_ は、X上で動作する多言語ターミナルエミュレータですが、mlterm-fbを有効にしてコンパイルすると、フレームバッファ上で動作する多言語ターミナルエミュレータとして利用できます。
 
@@ -7,7 +30,8 @@ mlterm (pkgsrc/x11/mlterm) [mlterm]_ は、X上で動作する多言語ターミ
  :width: 800
 
 mlterm-fb向けオプション設定
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
+
 /etc/mk.confに、mltermに与えるオプションを指定しておきます。pkgsrc/x11/mlterm以下を利用して、mltermをインストールします。
 
 ::
@@ -20,7 +44,8 @@ mlterm-fb向けオプション設定
  /usr/pkg/bin/mlterm-fb
 
 起動
-~~~~
+-----------
+
  コンソール画面からmlterm-fbを起動します。
 
 ::
@@ -28,7 +53,8 @@ mlterm-fb向けオプション設定
  % mlterm-fb
 
 PCでのmlterm-fb起動
-""""""""""""""""""""""
+-----------------------
+
 NetBSD/i386,amd64でmlterm-fbを利用する場合、起動時にVESAを指定します。 [はよーん]_
 
 #. 起動オプションで5を選択
@@ -39,7 +65,8 @@ NetBSD/i386,amd64でmlterm-fbを利用する場合、起動時にVESAを指定�
 #. mlterm-fb起動
 
 テスト画像表示
-~~~~~~~~~~~~~~
+---------------
+
  mlterm-fbを起動した状態で、catを利用して、画像イメージを表示します。
 
 ::
@@ -48,7 +75,7 @@ NetBSD/i386,amd64でmlterm-fbを利用する場合、起動時にVESAを指定�
  % cat vimperator.six
 
 画像変換方法
-~~~~~~~~~~~~
+--------------
 
  netpbmをインストールして、以下のコマンドを実行するとsixel形式に変換できます。
 
@@ -59,7 +86,7 @@ NetBSD/i386,amd64でmlterm-fbを利用する場合、起動時にVESAを指定�
  % pngtopnm  aaa.png |pnmquant 256 |ppmtosixel > aaa.sixel
 
 mltermソースからmlterm-fbをコンパイルする
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------
 
 ::
 
@@ -67,7 +94,7 @@ mltermソースからmlterm-fbをコンパイルする
  # make install
 
 回転させて表示
-~~~~~~~~~~~~~~
+-----------------
 
 NetBSD/zaurus C1000以降および、NetBSD/hpcarm WS011SHでは、そのまま起動すると、
 mltermが縦画面で起動してしまいます。この場合、mltermに--rotateオプションをつけて起動するか、起動後に$ mlcc rotate_display trueすると回転します。
@@ -77,16 +104,18 @@ mltermが縦画面で起動してしまいます。この場合、mltermに--rot
 
 
 mltermについて
-~~~~~~~~~~~~~~~
+-----------------
+
  *http://mlterm.sourceforge.net/* に、より詳しい情報があります。
 
 mlterm-fb上でtwを動かしてみる
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 mlterm-fb上で日本語が表示できたら、tw [tw]_ を利用してツイッターのタイムラインを表示してみましょう。
 
 twのインストール
-""""""""""""""""
+-------------------
+
 pkgsrcからtwをインストールします。
 
 ::

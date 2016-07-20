@@ -21,9 +21,23 @@
 
 .. toctree::
  :maxdepth: 3
- :numbered:
 
- Place/kyoto
  RPI
- Luna
+ guide
+ RPI/Omxplayer
+ RPI/Xfce4
+ RPI/RPIImage
+ ZAURUS
+ WZERO3
+ X68K
+ hpcmips
+ dreamcast
+ kobo
+ Pkgsrc/mlterm
+ Pkgsrc/cms
+ Paper/sphinx
+ pkgsrc
+ events
+ printer
+ wlan
 

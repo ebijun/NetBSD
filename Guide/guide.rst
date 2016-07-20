@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2016 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -546,7 +546,7 @@ daily-snapshot
 
 ftp://nyftp.netbsd.org/pub/NetBSD-daily/ 以下には、
 毎日コンパイルされているNetBSDの動作イメージがあります。
-ミラーサイトは、ftp://ftp7.jp.netbsd.org/pub/NetBSD-daily/ にあります。
+ミラーサイトは、http://nycdn.netbsd.org/pub/NetBSD-daily/ にあります。
 
 .. csv-table:: ftp://nyftp.netbsd.org/pub/NetBSD-daily/ の一覧
 

@@ -24,28 +24,29 @@
 .. 拡張ボードの見分け方
 .. XM6i
 
+================
 NetBSD/x68k
-------------------
+==================
 
 「動かしたいアプリが自分の持ってるコンピュータで動かない場合、たとえばAndroid用出てるけどiOS用はない、みたいのは今でも理解してもらえると思うけど、どうしても動かしたい+ソースはある→移植するぜ、ってやっちゃったのがNetBSD/x68kでした。」 [18]_
 
 X68K関連発表
-~~~~~~~~~~~~~
+-------------
 
 .. csv-table::
  :widths: 35 10 50
 
- X680x0 でもユーザストリームがしたい!,OSC2014広島, http://www.pastel-flower.jp/~isaki/NetBSD/osc14hi/
- NetBSD/x68k 近況 ,OSC2014広島, http://www.pastel-flower.jp/~isaki/NetBSD/osc14hi/	  
- NetBSD/x68k 近況,OSC2013広島, http://www.pastel-flower.jp/~isaki/NetBSD/osc13hi/
- (XM6iによる?)NetBSD/m68k FPE の実装,OSC2013広島, http://www.pastel-flower.jp/~isaki/NetBSD/osc13hi/
+ X680x0 でもユーザストリームがしたい!,OSC2014広島, http://www.pastel-flower.jp/-isaki/NetBSD/osc14hi/
+ NetBSD/x68k 近況 ,OSC2014広島, http://www.pastel-flower.jp/-isaki/NetBSD/osc14hi/	  
+ NetBSD/x68k 近況,OSC2013広島, http://www.pastel-flower.jp/-isaki/NetBSD/osc13hi/
+ (XM6iによる?)NetBSD/m68k FPE の実装,OSC2013広島, http://www.pastel-flower.jp/-isaki/NetBSD/osc13hi/
  NetBSD/x68kとXM6i 追いかけっこ開発,OSC2012広島, http://xm6i.org/event/osc2012hi
  OSC展示に見るNetBSD6.0新機能,OSC2012広島, http://www.slideshare.net/tsutsuii/osc-netbsd-60
  NetBSD/x68k近況,OSC2012愛媛, http://xm6i.org/event/osc2012eh/page1.html
  XM6iのご紹介, OSC2011広島, http://xm6i.org/event/osc2011hi
 
 OSCとX68K展示
-~~~~~~~~~~~~~~
+--------------
 
 .. csv-table::
  :widths: 7 3 60
@@ -89,7 +90,7 @@ OSCとX68K展示
  オープンソース祭り2001,2001/2/10-11,X68030 みのうらさんの？ [6]_
 
 NetBSDでXM6iを動かしてみる。
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
 
 NetBSD/amd64を用意し、その上でXM6iを動かしてみます。
 
@@ -114,7 +115,7 @@ XM6iのダウンロード
  # tar xzvf XM6i-0.51-netbsd7.0-i386-amd64-2015Q2.tar.gz 
 
 参考資料
-~~~~~~~~
+--------
 
 .. rubic::
 
@@ -125,7 +126,7 @@ XM6iのダウンロード
 .. [5] X68000 LIBRARY http://retropc.net/x68000/
 .. [6] オープンソースまつり2001 in 秋葉原 http://www.cqpub.co.jp/interface/column/ShowandNews/010211/010211.htm
 .. [7] XM6i http://xm6i.org/
-.. [8] xkeropi http://www.asahi-net.or.jp/~aw9k-nnk/keropi/
+.. [8] xkeropi http://www.asahi-net.or.jp/-aw9k-nnk/keropi/
 .. [9] XM6i/TypeG勉強会 http://xm6i.org/event/meeting1/
 .. [10] NetBSD/x68k開発用 X68030 ブートストラップ起動動作仕様 http://togetter.com/li/410617
 .. [11] 21世紀のX68000まとめ http://togetter.com/li/195551

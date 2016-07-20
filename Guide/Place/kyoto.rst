@@ -44,7 +44,8 @@
  2012 Kansai＠Kyoto,8/3-8/4,1200,67,京都リサーチパーク
  2013 Kansai＠Kyoto,8/2-8/3,1300,54,京都リサーチパーク
  2014 Kansai＠Kyoto,8/1-2,1200,51,京都リサーチパーク
- 2015 Kansai＠Kyoto,8/7-8,,59,京都リサーチパーク
+ 2015 Kansai＠Kyoto,8/7-8,1150,59,京都リサーチパーク
+ 2016 Kyoto,7/29-30,,59,京都リサーチパーク
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -63,14 +64,16 @@
  のらくろ,出町柳,トルコライス＝チキンライス+オムレツ+ビフカツ
  和知,烏丸,京都最強の地ビール居酒屋
  CRAFT MAN,烏丸綾小路下,20タップ K家系列 2:00くらいまで
+ BEER PUB Takumiya,船谷町400-1
+ BEFORE9,二条殿町545
  珈琲陣,大宮松原,ハムモーニング。マッチとコースター。
  キートス,壬生坊城,フィンランドパン
  喫茶ルナ,東向日,http://www.openstreetmap.org/way/203043949
  ルナ美容院,西向日,http://www.openstreetmap.org/way/203450773
  島原温泉,丹波口,恵那のラジウム温泉
- メトロ,丸太町,2015/8/7はLONDON CALLING X CLUB SNOOZER
+ メトロ,丸太町,2016/7/29はシモーヌ深雪様 30日がMYTH
  ソワレ,祇園,テレビカーで着いたら2階でケーキセット
- 磔磔,筋屋町,2015/8/7-9三宅伸治バンド 2015/8/6 梅津さん
+ 磔磔,筋屋町,2016/7/29 EBBY(じゃがたら) 30 マークフリス
  奥満笑屋,丸太町,京都町家麦酒。キンシ正宗堀野記念館併設　
  efish,五条大橋,アップルのデザイナーだった西堀晋さんのカフェ
  ハイファイ堂,京都市役所,オーディオ機器中心
@@ -98,6 +101,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 92,OSC2016京都,http://www.soum.co.jp/~jun/OSC2016kyoto.pdf
  75,OSC2015京都,http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
  61,OSC2014京都,http://www.soum.co.jp/~jun/OSC2014kyoto.pdf
  45,OSC2013京都,http://www.soum.co.jp/~jun/OSC2013kyoto.pdf
@@ -120,8 +124,9 @@ togetterまとめ
 OSC京都展示物
 ~~~~~~~~~~~~~~~~~~
 #. sparc64 Genial 737s
-#. OMRON LUNA and LUNAII
+#. OMRON LUNA and LUNAII and LUNA88K
 #. LUNAII and mikutter
+#. LUNA88K+PC98 CBUS ディスプレイ
 #. RaspberryPI
 #. http://www.ceres.dti.ne.jp/tsutsui/osc2013kyoto/NetBSD-luna68k_mlterm-fb_Twitter.html
 #. NetBSD/hpcarm (SHARP WZERO3)

@@ -196,7 +196,9 @@ RPIのフォーラムにも投げます。
   https://www.raspberrypi.org/forums/viewforum.php?f=86
 
 
-.. csv-table:: 2015年に作ったRPIイメージ一覧
+..
+
+ .. csv-table:: 2015年に作ったRPIイメージ一覧
  :widths: 20 130
 
  2015/2/7,http://mail-index.netbsd.org/port-arm/2015/02/04/msg002833.html
@@ -219,4 +221,6 @@ RPIのフォーラムにも投げます。
  2015/11/7,http://mail-index.netbsd.org/port-arm/2015/11/04/msg003546.html
  2015/11/14,http://mail-index.netbsd.org/port-arm/2015/11/11/msg003550.html
  2015/12/27,http://mail-index.netbsd.org/port-arm/2015/12/27/msg003586.html
+
+
 

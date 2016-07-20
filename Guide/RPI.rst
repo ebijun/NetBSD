@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: :1,$s/2016-07-02/2016-07-02/g
+ .. todo:: :1,$s/2016-07-29/2016-07-29/g
  .. todo:: :1,$s?2015/06/27?2015/06/27?g
  .. todo:: apache+php+mysql設定
  .. todo:: uim-pref-gtk
@@ -67,7 +67,7 @@ RaspberryPIでNetBSDを使ってみる
 
  earmv6hf 
  # ftp http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2016-07-02-earmv6hf/2016-07-02-netbsd-raspi-earmv6hf.img.gz
+ 2016-07-29-earmv6hf/2016-07-29-netbsd-raspi-earmv6hf.img.gz
  
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -75,20 +75,20 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2016-07-02-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2016-07-29-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
 
 Cubieboard2,BananaPI用イメージ
 -------------------------------
 
  Cubieboard2,BananaPI用のイメージが、
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/ 以下にあります。
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/allwinner/ 以下にあります。
  同じ手順で起動できます。
 
 ODROID-C1用イメージ
 -------------------------------
 
  ODROID-C1用のイメージが、
- ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/odroid_c1/ 以下にあります。
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/odroid_c1/ 以下にあります。
  同じ手順で起動できます。
 
 RaspberryPIの起動
@@ -196,7 +196,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 ::
 
  % cat /etc/pkg_install.conf
-　PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-07-02
+　PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-07-29
 
 * パッケージのインストール
 
@@ -230,7 +230,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 
  # cd /usr/
  # ls /usr/pkgsrc               ... 上書きしてしまわないか確認
- # ftp ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
+ # ftp http://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
  # tar tzvf pkgsrc.tar.gz |head ... アーカイブの内容確認
  # tar xzvf pkgsrc.tar.gz　　　　　　　
  # ls /usr/pkgsrc
@@ -297,7 +297,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
 
 ::
 
- # vnconfig vnd0 2016-07-02-netbsd-raspi-earmv6hf.img.gz
+ # vnconfig vnd0 2016-07-29-netbsd-raspi-earmv6hf.img.gz
  # vnconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
@@ -443,4 +443,5 @@ bytebench
 * NetBSD/RPiで遊ぶ(SDカードへの書き込み回数を気にしつつ)  http://hachulog.blogspot.jp/2013/03/netbsdrpisd.html
 * http://www.raspberrypi.org/phpBB3/viewforum.php?f=86 NetBSDフォーラム
 * http://www.raspberrypi.org/phpBB3/viewforum.php?f=82 日本語フォーラム
+
 
