@@ -19,6 +19,10 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+===================================
+日本NetBSDユーザーグループのご紹介
+===================================
+
 Japan NetBSD Users’ Group
 -----------------------------
 * 1999年8月21日成立

@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -24,9 +24,10 @@
 .. 拡張ボードの見分け方
 .. XM6i
 
+
 ================
 NetBSD/x68k
-==================
+================
 
 「動かしたいアプリが自分の持ってるコンピュータで動かない場合、たとえばAndroid用出てるけどiOS用はない、みたいのは今でも理解してもらえると思うけど、どうしても動かしたい+ソースはある→移植するぜ、ってやっちゃったのがNetBSD/x68kでした。」 [18]_
 
@@ -95,7 +96,8 @@ NetBSDでXM6iを動かしてみる。
 NetBSD/amd64を用意し、その上でXM6iを動かしてみます。
 
 必要なパッケージのインストール
-"""""""""""""""""""""""""""""""""""""
+-----------------------------
+
 XM6iを動かすために必要なパッケージをインストールしておきます。
 
 ::
@@ -104,8 +106,9 @@ XM6iを動かすために必要なパッケージをインストールしてお�
  # make package-install
 
 XM6iのダウンロード
-""""""""""""""""""""""
- XM6iをダウンロードして、展開します。
+-----------------
+
+XM6iをダウンロードして、展開します。
 
 ::
 
@@ -137,3 +140,4 @@ XM6iのダウンロード
 .. [16] X68000テクニカルデータブック,アスキー,1987
 .. [17] Outside X68000,ソフトバンククリエィティブ,1993
 .. [18] https://twitter.com/masaru0714/status/506653219687120896
+

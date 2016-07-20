@@ -20,24 +20,21 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 .. toctree::
- :maxdepth: 3
 
  RPI
- guide
  RPI/Omxplayer
  RPI/Xfce4
  RPI/RPIImage
+ guide
+ X68K
  ZAURUS
  WZERO3
- X68K
  hpcmips
  dreamcast
  kobo
+ pkgsrc
  Pkgsrc/mlterm
  Pkgsrc/cms
  Paper/sphinx
- pkgsrc
  events
- printer
- wlan
 

@@ -19,9 +19,13 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
 =========================
 mlterm-fbを使ってみる
 =========================
+
+mlterm
+------------
 
 リソースの限られたマシンでは、Xを起動させるだけでリソースを使いきってしまう場合があります。
 mlterm (pkgsrc/x11/mlterm) [mlterm]_ は、X上で動作する多言語ターミナルエミュレータですが、mlterm-fbを有効にしてコンパイルすると、フレームバッファ上で動作する多言語ターミナルエミュレータとして利用できます。
@@ -128,4 +132,5 @@ pkgsrcからtwをインストールします。
 .. [mlterm] mlterm http://mlterm.sourceforge.net/
 .. [tw] tw http://shokai.github.io/tw/
 .. [はよーん] http://jnug.net/msg012914ja.html
+
 

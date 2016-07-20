@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -24,7 +24,7 @@ KOBOでNetBSDを動かしてみる
 =================================
 
 目標
-----
+------
 
 * KOBOでNetBSDを動かしてみます。
 * KOBOにシリアルポート経由で接続します。
@@ -40,6 +40,7 @@ KOBOでNetBSDを動かしてみる
 
 準備するもの
 -------------
+
 * KOBO
 * 2GB 以上のmicro SDカード2枚
 * シリアル接続ケーブル
@@ -54,6 +55,7 @@ KOBOでNetBSDを動かしてみる
 
 microSDカードの設定
 --------------------
+
  kobo touchには、内蔵microSDスロットと、脇部分にあるmicroSDスロットがあります。内蔵microSDスロットにubootイメージを書き込んだmicroSDを挿します。
 脇部分にあるmicroSDスロットには、RPI用に作ったイメージを挿します。
 元から刺さっていたmicroSDは大事に保管しておきます。
@@ -63,6 +65,7 @@ PDFビューワとしても便利です。
 
 シリアルケーブル
 ------------------
+
  まず裏蓋を開けます。右下の部分にTX,RXと書いた基盤の穴があります。
 ここにシリアルポートを接続します。
 
@@ -91,4 +94,5 @@ uboot
  BR-1A # setenv bootcmd_netbsd 'mmcinfo 1;fatload mmc 1 0x70100000 kobo.bin; go 0x70100000'
  BR-1A # setenv bootcmd 'run bootcmd_netbsd'
  BR-1A # saveenv
+
 

@@ -33,6 +33,7 @@ NetBSD/hpcmipsを使ってみる
 
 準備するもの
 -------------
+
 * NetBSD/hpcmipsをサポートしているマシン (NEC mobilegear,sigmarion)
 * 2GB コンパクトフラッシュ
 * SigmarionII：FOMA接続ケーブル+USB ネットワークアダプタ
@@ -40,6 +41,7 @@ NetBSD/hpcmipsを使ってみる
 
 起動ディスクの作成
 -------------------
+
 * ディスクイメージのダウンロード
 
 ::
@@ -57,6 +59,7 @@ NetBSD/hpcmipsを使ってみる
 
 NetBSD/hpcmipsの起動
 ------------------
+
 #. コンパクトフラッシュをWindowsCE機に挿して起動します。
 #. CF上に見えるhpcboot.exeを実行します。
 #. メニューでカーネルを指定して起動します。

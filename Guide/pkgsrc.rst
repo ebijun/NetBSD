@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2016 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -38,8 +38,9 @@
 .. todo:: html→pdf→epub→bccksできるか
 .. todo:: FuelPHPの例
 
+=======================================
 pkgsrcでソフトウェアをインストールする
---------------------------------------
+=======================================
 
  pkgsrcを利用すると、さまざまなソフトウェアをコンパイル、インストールすることができます。
 
@@ -53,7 +54,7 @@ pkgsrcでソフトウェアをインストールする
  libreoffice4,firefox,gimp ...
 
 pkgsrcをダウンロード
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
  pkgsrcのWebサイトはhttp://www.pkgsrc.org/です。pkgsrcは、一年に4回定期的にリリースされます。
 
 ::
@@ -100,7 +101,8 @@ LibreOfficeをコンパイルして、インストールしたいときには、
  % soffice
 
 pkgsrcを使ってみる
-~~~~~~~~~~~~~~~~~~
+------------------
+
 「RaspberryPIでmikutterというtwitterクライアントを使いたい」場合を考えてみます。
 インストールできそうなソフトウェアは、/usr/pkgsrc/ジャンル名/ 以下にディレクトリがあります。
 ここに使いたいソフトウェアがあれば、コンパイルしてインストールできるかもしれません。
@@ -165,6 +167,7 @@ mikutterと、mikutterをインストールするために必要なソフトウ�
 
 RaspberryPIで使いそうなソフトを一気にインストールする
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 /usr/pkgsrc/ジャンル名を眺めて、使いそうなソフトウェアをリストアップします。
 
 ::
@@ -199,7 +202,7 @@ RaspberryPIで使いそうなソフトを一気にインストールする
 
 
 デスクトップ環境を作ってみる
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 デスクトップ環境の設定:Xfceの場合
 """""""""""""""""""""""""""""""""
@@ -248,7 +251,7 @@ RaspberryPIで使いそうなソフトを一気にインストールする
  % cd 
  % ls .xinitrc     ..... .xinitrcがあるかどうか確認します。
  もし.xinitrcがない場合、以下の手順でコピーします。
- cp /etc/X11/xinit/xinitrc ~/.xinitrc  ... XXX:上書きしないよう気をつけて！
+ cp /etc/X11/xinit/xinitrc -/.xinitrc  ... XXX:上書きしないよう気をつけて！
  % vi .xinitrc     ..... 最後の5行を書き換えます。
  twm &
  xclock -geometry 50x50-1+1 &
@@ -262,8 +265,8 @@ RaspberryPIで使いそうなソフトを一気にインストールする
  /usr/X11R7/bin/xterm -geometry 80x66+0+0 &
  icewm
  % startx    ..... icewmが起動します。
- % cp -r /usr/pkg/share/icewm ~/.icewm  .... メニューをカスタマイズ
- % vi ~/.icewm/menu
+ % cp -r /usr/pkg/share/icewm -/.icewm  .... メニューをカスタマイズ
+ % vi -/.icewm/menu
  prog Kterm Kterm kterm -fk k14 -fn a14 -fr r14 -km euc
  prog SeaMonkey seamonkey seamonkey
  prog Mikutter mikutter miutter
@@ -280,7 +283,7 @@ RaspberryPIで使いそうなソフトを一気にインストールする
  menuprog KDE folder icewm-menu-gnome --list 
  menufile Emulators folder programs          ... 階層構造
  menufile Games folder games
- % vi ~/.icewm/programs          ... .icewmで指定した階層構造
+ % vi -/.icewm/programs          ... .icewmで指定した階層構造
  # This is an example for IceWM's toolbar definition file.
  #
  # Place your variants in /usr/pkg/etc/icewm or in $HOME/.icewm
@@ -290,7 +293,7 @@ RaspberryPIで使いそうなソフトを一気にインストールする
  prog Xnp2 xnp2 xnp2
  prog XM6i xm6i xm6i
  prog Minux Minux Minux
- % vi ~/.icewm/preferences
+ % vi -/.icewm/preferences
          :
  #  Desktop background image
  # DesktopBackgroundImage=""    .... 壁紙のイメージをここで設定できます。
@@ -304,7 +307,7 @@ RaspberryPIで使いそうなソフトを一気にインストールする
  # make package-install
 
 漢字変換&emacs
-~~~~~~~~~~~~~~
+--------------
 
 mozcを利用する場合
 """"""""""""""""""
@@ -372,7 +375,7 @@ emacsを利用する場合は、anthy-elispパッケージをインストール�
 
 
 壁紙
-~~~~
+----
 
 ::
 
@@ -384,10 +387,10 @@ emacsを利用する場合は、anthy-elispパッケージをインストール�
 ::
 
  例）
- xsetbg ~/Desktop/penguindrum_wp1_1s.jpg
+ xsetbg -/Desktop/penguindrum_wp1_1s.jpg
 
 ソフトウェアのコンパイル／インストール
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------
 
 gedit
 """"""
@@ -430,7 +433,7 @@ LaTeX
  # make package-install
 
 CMSを使ってみる
-~~~~~~~~~~~~~~~
+---------------
 
 drupal
 """"""""
@@ -451,7 +454,7 @@ wordpress
 
 
 fossilを使ってみる
-~~~~~~~~~~~~~~~~~~
+------------------
 
 ::
 
@@ -478,7 +481,7 @@ fossilを使ってみる
   .... ブラウザでポート8080にアクセスするとGUI画面が表示されます。
 
 Gitのインストール
-~~~~~~~~~~~~~~~~~
+-----------------
 
 ::
 
@@ -488,7 +491,7 @@ Gitのインストール
 
 
 エミュレータでNetBSD
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 Qemu
 """""
@@ -524,7 +527,7 @@ Package - /usr/pkgsrc
 * Make installでソフトウェアのインストール
 
 各CPUアーキテクチャ間で共通
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 * mipsel –mips endian little
 * arc – MIPSで動くNTマシン
 * cobalt – Cobalt Qube1/2
@@ -532,7 +535,7 @@ Package - /usr/pkgsrc
 * hpcmips – MIPS搭載WinCE
 
 /usr/pkgsrc/emulators
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 * gxemul
 * mips (pmax,hpcmips)
 * dreamcast
@@ -545,7 +548,7 @@ Package - /usr/pkgsrc
 * USBデバッグ
 
 Packagesジャンル一覧
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 .. csv-table:: The NetBSD Packages Collection
 
@@ -592,13 +595,13 @@ Packagesジャンル一覧
    www, Packages related to the World Wide Web
 
 目的別
-~~~~~~
+------
 * デスクトップ向け
 * 組み込み向け
 * pkgsrc/meta-pkgにいくつかある
 
 Package対応プラットフォーム
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 #. NetBSD
 #. Solaris / SmartOS / illumos
@@ -620,7 +623,7 @@ Package対応プラットフォーム
 #. SCO OpenServer 5
 
 NetBSD以外でpkgsrc
-~~~~~~~~~~~~~~~~~~
+------------------
 
 ::
 
@@ -629,7 +632,7 @@ NetBSD以外でpkgsrc
  # ./bootstrap
 
 Packageとライセンスの取扱い
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 * 個々のパッケージごとにLICENSE定義
 * 受け入れられるライセンスを制御したい
@@ -642,7 +645,7 @@ Packageとライセンスの取扱い
   http://d.hatena.ne.jp/obache/20090922/
 
 バイナリ互換性を利用する
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 * Cobalt Qube2でhpcmipsバイナリ作成
 * MIPSでendian little =mipsel同士なら動く
@@ -652,7 +655,7 @@ Packageとライセンスの取扱い
 * 数GBある各種アプリケーション群を共通にする
 
 pkgsrcを更新する
-~~~~~~~~~~~~~~~~
+----------------
 まず/usr/pkgsrcを更新し、次に、必要なソフトウェアを再コンパイルします。cvsで、/usr/pkgsrcを更新します。
 
 ::
@@ -674,7 +677,7 @@ pkgsrcを更新する
  # /usr/pkg/bin/pkg_rolling-replace
 
 このドキュメント
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 以下のURLからこのドキュメントのソースコードをダウンロードできます。
 ドキュメントはpy-sphinxを利用しています。
