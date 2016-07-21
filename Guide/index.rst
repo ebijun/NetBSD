@@ -20,24 +20,10 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 .. toctree::
-  :numbered:
+ :maxdepth: 3
+ :numbered:
 
+ Place/kyoto
  RPI
- RPI/Omxplayer
- RPI/Xfce4
- RPI/RPIImage
- guide
- X68K
- ZAURUS
- WZERO3
- hpcmips
- dreamcast
- kobo
- pkgsrc
- Pkgsrc/mlterm
- Pkgsrc/cms
- printer
- wlan
- Paper/sphinx
- events
+ Luna
 
