@@ -20,6 +20,7 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 .. toctree::
+  :numbered:
 
  RPI
  RPI/Omxplayer
@@ -35,6 +36,8 @@
  pkgsrc
  Pkgsrc/mlterm
  Pkgsrc/cms
+ printer
+ wlan
  Paper/sphinx
  events
 

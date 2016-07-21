@@ -31,7 +31,7 @@ import os
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinxjp.themecore'
+#    'sphinxjp.themecore'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -172,6 +172,7 @@ html_static_path = ['_static']
 
 # If true, the index is split into individual pages for each letter.
 #html_split_index = False
+html_split_index = True
 
 # If true, links to the reST sources are added to the pages.
 #html_show_sourcelink = True
