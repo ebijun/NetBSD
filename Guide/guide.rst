@@ -436,7 +436,7 @@ httpdの起動方法
  # /etc/rc.d/httpd start
  # /etc/rc.d/httpd stop
 
-TireI/II/III
+Tier I/II/III
 ------------
 
 Tier I
