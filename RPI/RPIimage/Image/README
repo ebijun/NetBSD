@@ -1,6 +1,6 @@
 VERSION: :1,$s/2016-07-02/2016-07-02/g
-ISO:     :1,$s/201606230230Z/201606230230Z/g
-NetBSD:  :1,$s/7.99.32/7.99.32/g
+ISO:     :1,$s/201607220120Z/201607220120Z/g
+NetBSD:  :1,$s/7.99.34/7.99.34/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 
@@ -29,7 +29,10 @@ Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.32 evbarm-earmv6hf 201606230230Z rpi.img from nyftp.
+- NetBSD-current 7.99.34 evbarm-earmv6hf 201607220120Z rpi.img from nyftp.
+- NetBSD Security Advisory 2016-006: Race condition in mail.local(8)
+
+XXX
 - git-base-2.9.0
 - mlterm-3.7.1
 - perl-5.24.0
@@ -227,9 +230,9 @@ I've updated raspberry-pi image.
  http://www.ospn.jp/osc2016-okinawa/
  https://www.facebook.com/events/1589647504618848/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2016hokkaido.pdf
+ http://www.soum.co.jp/~jun/OSC2016okinawa.pdf
 
-- NetBSD 7.99.32 earmv6hf rpi.img.gz base
+- NetBSD 7.99.34 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
