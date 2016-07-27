@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.32 (RPI2) #13: Mon Jun 27 10:33:57 JST 2016
-	jun@amiasp1.soum.co.jp:/usr/obj/kernel/earmv7hf/RPI2
+NetBSD 7.99.34 (RPI2) #0: Sun Jul 24 16:54:56 JST 2016
+	jun@amiasp1.soum.co.jp:/usr/obj/kernel/earmv6hf/RPI2
 total memory = 944 MB
 avail memory = 925 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -55,32 +55,32 @@ bcmcm at obio0 not configured
 bcmpwm at obio0 not configured
 usb0 at dwctwo0: USB revision 2.0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
-cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
-cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
-vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
-cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
-cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
-vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
 cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
 vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, HS SDR50 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-ld0 at sdmmc0: <0x89:0x0303:NCard:0x10:0x15901a98:0x0ac>
-ld0: 7659 MB, 3890 cyl, 64 head, 63 sec, 512 bytes/sect x 15685632 sectors
 IPsec: Initialized Security Association Processing.
-ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+ld0 at sdmmc0: <0x03:0x5344:SL08G:0x80:0x0bde13ee:0x0e2>
+ld0: 7580 MB, 3850 cyl, 64 head, 63 sec, 512 bytes/sect x 15523840 sectors
+ld0: 4-bit width, SDR50, 100.000 MHz
 uhub1 at uhub0 port 1: vendor 0424 product 9514, class 9/0, rev 2.00/2.00, addr 2
 uhub1: multiple transaction translators
 uhub1: 5 ports with 4 removable, self powered
@@ -89,23 +89,24 @@ usmsc0: vendor 0424 product ec00, rev 2.00/2.00, addr 3
 usmsc0: Ethernet address b8:27:eb:1f:7a:14
 ukphy0 at usmsc0 phy 1: OUI 0x00800f, model 0x000c, rev. 3
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-uhidev0 at uhub1 port 5 configuration 1 interface 0
+uhidev0 at uhub1 port 3 configuration 1 interface 0
 uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/1
 ukbd0 at uhidev0: 8 modifier keys, 6 key codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub1 port 5 configuration 1 interface 1
+uhidev1 at uhub1 port 3 configuration 1 interface 1
 uhidev1: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/1
 uhidev1: 1 report ids
 ums0 at uhidev1 reportid 1: 3 buttons and Z dir
 wsmouse0 at ums0 mux 0
-uhidev2 at uhub1 port 5 configuration 1 interface 2
+uhidev2 at uhub1 port 3 configuration 1 interface 2
 uhidev2: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 4, iclass 3/0
 uhid0 at uhidev2: input=3, output=0, feature=0
 uhub0: illegal enable change, port 1
+WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.32/modules
+kern.module.path=/stand/evbarm/7.99.34/modules
 vchiq: local ver 6 (min 3), remote ver 6.
 vcaudio0 at vchiq0: auds
 vchiq_get_state: g_state.remote->initialised != 1 (0)
