@@ -1,20 +1,20 @@
-VERSION: :1,$s/2016-07-02/2016-07-02/g
+VERSION: :1,$s/2016-07-29/2016-07-29/g
 ISO:     :1,$s/201607220120Z/201607220120Z/g
 NetBSD:  :1,$s/7.99.34/7.99.34/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 
 To: port-armNetBSD.org@localhost
-Subject: 2016-07-02-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2016-07-29-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2016-07-02-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2016-07-29-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-02-earmv6hf/2016-07-02-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-29-earmv6hf/2016-07-29-netbsd-raspi-earmv6hf.img.gz
 
 Kernel for RPI3:
 http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-02-earmv6hf/RPI3/
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-29-earmv6hf/RPI3/
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -31,13 +31,10 @@ Pre-installed packages:
 Update:
 - NetBSD-current 7.99.34 evbarm-earmv6hf 201607220120Z rpi.img from nyftp.
 - NetBSD Security Advisory 2016-006: Race condition in mail.local(8)
-
-XXX
-- git-base-2.9.0
-- mlterm-3.7.1
-- perl-5.24.0
-- mikutter 3.4.1
+- XXX: dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1.
+- XXX: after 7.99.34,RPI2/3 still suddenly panic,such as 64GB SD resizing.
 - security.pax.mprotect.enabled
+  http://netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
   man security
   man paxctl
   sysctl -a |grep pax
@@ -72,7 +69,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-07-02/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-07-29/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -80,7 +77,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-02-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-29-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -224,13 +221,13 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Confernce 2016 Okinawa demonstration use, 
+For Open Source Confernce 2016 Kyoto demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2016-okinawa/
- https://www.facebook.com/events/1589647504618848/
+ http://www.ospn.jp/osc2016-kyoto/
+ https://www.facebook.com/events/1697459470491891/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2016okinawa.pdf
+ http://www.soum.co.jp/~jun/OSC2016kyoto.pdf
 
 - NetBSD 7.99.34 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
@@ -270,7 +267,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-07-02/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-07-29/
 
 Installed Packages:
 kterm
