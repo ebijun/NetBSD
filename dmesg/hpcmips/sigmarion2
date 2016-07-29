@@ -1,0 +1,114 @@
+pmap_steal_memory: seg 0: 0x4ee 0x4ee 0x1ffe 0x1ffe
+pmap_steal_memory: seg 0: 0x52d 0x52d 0x1ffe 0x1ffe
+pmap_steal_memory: seg 0: 0x52f 0x52f 0x1ffe 0x1ffe
+total memory banks = 2
+memory bank 0 = 00000000 5048KB(0x4ee000)
+memory bank 1 = 0x4ee000 27720KB(0x1b12000)
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.33 (GENERIC.201607080210Z)
+DoCoMo sigmarionII (NEC VR4131 rev0.2 180.633MHz)
+total memory = 32768 KB
+avail memory = 26876 KB
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0: NEC VR4100 CPU (0xc80) Rev. 8.0 with software emulated floating point
+cpu0: 32 TLB entries, 256KB max page size
+cpu0: 16KB/32B 2-way set-associative L1 instruction cache
+cpu0: 16KB/16B 2-way set-associative write-back L1 data cache
+vr4122ip0 at mainbus0
+vrbcu0 at vr4122ip0 addr 0x0f000000-001f
+vrbcu0: CPU 180.633MHz, bus 22.579MHz, ram 90.316MHz
+vrcmu0 at vr4122ip0 addr 0x0f000060-007f
+vrgiu0 at vr4122ip0 addr 0x0f000140-015f
+hpcioman6 at vrgiu0
+hpcin0 at hpcioman6 iochip vrgiu0, port 0, type 5, id 24576, interrupt level high
+com0 at vrgiu0 addr b600000, half word aligned: ns16550a, working fifo
+com1 at vr4122ip0 addr 0x0f000800-0807: ns16550a, working fifo
+vrrtc0 at vr4122ip0 addr 0x0f000100-011f
+vrpmu0 at vr4122ip0 addr 0x0f0000c0-00df
+vrled0 at vr4122ip0 addr 0x0f000180-018f
+vrpciu0 at vr4122ip0 addr 0x0f000c00-0dff
+pci0 at vrpciu0 bus 0
+pci0: i/o space, memory space enabled, rd/line ok
+vrc4173bcu0 at pci0 dev 12 function 0: vendor 1033 product 00a5 (rev. 0x00)
+vrc4173bcu0: default clock mask is 1d23
+vrc4173bcu0: interrupting at pciintr 0:12:0
+vrkiu0 at vrc4173bcu0 addr 0x0100-011f
+hpckbd0 at vrkiu0
+wskbd0 at hpckbd0 mux 1
+vrc4173piu0 at vrc4173bcu0 addr 0x00a0-00bf, 0x00c0-00df
+wsmouse0 at vrc4173piu0 mux 0
+vrc4173piu0: WARNING: powerhook_establish is deprecated
+vendor 1033 product 00a6 (audio multimedia, revision 0x01) at pci0 dev 12 function 1 not configured
+ohci0 at pci0 dev 12 function 2: vendor 1033 product 0035 (rev. 0x01)
+ohci0: interrupting at pciintr 0:12:2
+ohci0: OHCI version 1.0
+usb0 at ohci0: USB revision 1.0
+mqvideo0 at pci0 dev 13 function 0: MQ200 Rev.02 video controller, console
+mqvideo0: framebuffer address: 0xb0800000
+  PLL1: 53.452MHz(0x0e56242a, 12.288MHzx 87/ 20)
+  PLL2: 30.021MHz(0x00d60a30, 12.288MHzx215/ 88)
+  PLL3: disable
+   MEM: 30.021MHz(PLL2)
+    GE: 30.021MHz(PLL2)
+   GC1: disable
+   GC2: 21.380MHz(PLL1/2.5/1), FP
+mqvideo0: WARNING: powerhook_establish is deprecated
+hpcfb0 at mqvideo0: 640x240 pixels, 65536 colors, 80x24 chars
+wsdisplay0 at hpcfb0 kbdmux 1: console (std, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+wskbd0: connecting to wsdisplay0
+vrisab6 at vrgiu0: ISA port 0xb800000-0x18000000 mem 0xa000000-0x14000000
+isa6 at vrisab6
+pcic0 at isa6 port 0x3e0-0x3e1 iomem 0x10000-0x13fff irq 589827
+pcic0: controller 0 (Cirrus PD6710/2X) has sockets A and B
+pcmcia0 at pcic0 controller 0 socket 0
+pcmcia1 at pcic0 controller 0 socket 1
+btnmgr0 at mainbus0
+wskbd1 at btnmgr0 mux 1
+wskbd1: connecting to wsdisplay0
+hpcapm0 at mainbus0: pseudo power management module
+apmdev0 at hpcapm0: Power Management spec V1.2
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "vrrtc" frequency 32768 Hz quality 100
+pcic0: using irq 589827 for socket events
+pcic0: WARNING: powerhook_establish is deprecated
+pcic0: WARNING: powerhook_establish is deprecated
+uhub0 at usb0: vendor 1033 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+wdc1 at pcmcia0 function 0: <TRANSCEND, TS8GCF133, >
+pcic0: port 0xb800400-0xb80040f
+wdc1: i/o mapped mode
+pcmcia0: card irq 3
+atabus0 at wdc1 channel 0
+wd0 at atabus0 drive 0
+wd0: <TRANSCEND>
+wd0: drive supports 1-sector PIO transfers, LBA addressing
+wd0: 7647 MB, 15538 cyl, 16 head, 63 sec, 512 bytes/sect x 15662304 sectors
+wd0: drive supports PIO mode 4
+boot device: wd0
+pcmcia0: card irq 3
+root on wd0a dumps on wd0b
+pcmcia0: card irq 3
+pcmcia0: card irq 3
+/: replaying log to memory
+root file system type: ffs
+kern.module.path=/stand/hpcmips/7.99.33/modules
+WARNING: clock lost 5668 days
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+pid 1(init): ABI set to O32 (e_flags=0x1007)
+/: replaying log to disk
+hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
+wsdisplay0: screen 1 added (std, vt100 emulation)
+hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
+wsdisplay0: screen 2 added (std, vt100 emulation)
+hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
+wsdisplay0: screen 3 added (std, vt100 emulation)
+hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
+wsdisplay0: screen 4 added (std, vt100 emulation)
