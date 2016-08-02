@@ -753,6 +753,11 @@ yaft X LUNA
 .. [151] LUNA88Kに付属しているxzoomというデモの画像です。 http://moon.hanya-n.org/comp/luna/luna88k.html
 .. [152] OpenBSD/luna88k移植物語 http://www.slideshare.net/ao_kenji/a-story-of-porting-openbsdluna88k
 .. [153] FM音源の調べ on LUNA http://www.slideshare.net/ao_kenji/nbug201510
+.. [154] PSG音源の調べ  https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
+.. [155] LUNAのPSGというか647180実装  https://twitter.com/tsutsuii/status/759793635898515456
+.. [156] 「できません」と云うな―オムロン創業者 立石一真　https://www.amazon.co.jp/dp/4478006334/
+.. [157] http://www.ustream.tv/recorded/90107872
+
 
 このページ
 ~~~~~~~~~~~
