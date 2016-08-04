@@ -290,15 +290,15 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
  再起動：
   /etc/rc.d/dhcpcd restart
 
-vnconfigでイメージ編集
+vndconfigでイメージ編集
 ------------------------
 
-NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参照できます。
+NetBSDの場合、vndconfigコマンドでイメージファイルの内容を参照できます。
 
 ::
 
- # vnconfig vnd0 2016-07-29-netbsd-raspi-earmv6hf.img.gz
- # vnconfig -l
+ # vndconfig vnd0 2016-07-29-netbsd-raspi-earmv6hf.img.gz
+ # vndconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0
  　　 :
@@ -319,7 +319,7 @@ NetBSDの場合、vnconfigコマンドでイメージファイルの内容を参
  #fb=disable             # to disable fb completely
 
  # umount /mnt
- # vnconfig -u vnd0
+ # vndconfig -u vnd0
 
 HDMIじゃなくシリアルコンソールで使うには
 ----------------------------------------
