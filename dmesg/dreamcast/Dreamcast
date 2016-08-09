@@ -1,0 +1,64 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.0 (GENERIC.201509250726Z)
+SEGA Dreamcasttotal memory = 16384 KB
+avail memory = 13668 KB
+kern.module.path=/stand/dreamcast/7.0/modules
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0: SH4 199.599 MHz PCLOCK 49.900 MHz
+cpu0: 8KB/32B direct-mapped Instruction cache.
+cpu0: 16KB/32B direct-mapped Data cache.
+cpu0: U0, P0, P3 write-through; P1 write-through
+cpu0: full-associative 4 ITLB, 64 UTLB entries
+cpu0: multiple virtual storage mode, SQ access: kernel, wired 3
+shb0 at mainbus0
+scif0 at shb0
+maple0 at shb0: SH4 IRL 9
+mapleA at maple0 port 0: Dreamcast Controller
+mapleA1 at maple0 port 0 subunit 1: Visual Memory
+mmem0 at mapleA1 function 1: Memory card
+mmem0: 1 part, 512 bytes/block, 4 acc/write, 1 acc/read
+mlcd0 at mapleA1 function 2: LCD display
+mlcd0: 1 LCD, 192 bytes/block, 1 acc/write, horiz, norm white, upside-down
+mmem0.0: 128 KB, blk 255 0, inf 255, fat 254 1, dir 253 13, icon 0, data 200
+mlcd0.0: 48x32 display, 192 bytes
+mapleB at maple0 port 1: Keyboard
+mkbd0 at mapleB function 6: Japanese keyboard
+wskbd0 at mkbd0: console keyboard
+pvr0 at shb0: 640 x 480, 16bpp, VGA, RGB
+wsdisplay0 at pvr0 kbdmux 1: console (80x30, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+gdrom0 at shb0: SH4 IRL 9
+g2bus0 at shb0
+g2rtc0 at g2bus0: time-of-day clock
+gapspci0 at g2bus0: SEGA GAPS PCI Bridge
+pci0 at gapspci0 bus 0
+pci0: memory space enabled
+rtk0 at pci0 dev 0 function 0: SEGA Broadband Adapter (rev. 0x10)
+rtk0: interrupting at SH4 IRL 11
+rtk0: Ethernet address 00:d0:f1:02:63:af
+rlphy0 at rtk0 phy 7: Realtek internal PHY
+rlphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+aica0 at g2bus0: ARM7 Sound Processing Unit
+aica0: interrupting at SH4 IRL 9
+audio0 at aica0: half duplex, playback, capture
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "tmu_pclock_4" frequency 12475000 Hz quality 0
+root device: rtk0
+dump device: 
+file system (default generic): 
+root on rtk0
+nfs_boot: trying DHCP/BOOTP
+nfs_boot: DHCP next-server: 10.0.0.254
+nfs_boot: my_addr=10.0.0.1
+nfs_boot: my_mask=255.0.0.0
+nfs_boot: gateway=10.0.0.254
+root on 10.0.0.254:/nfsroot
+root file system type: nfs
+init path (default /sbin/init): 
+init: trying /sbin/init
