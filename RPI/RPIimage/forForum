@@ -1,14 +1,14 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2016-07-29/2016-07-29/g
+:1,$s/2016-08-27/2016-08-27/g
 
 
-2016-07-29-netbsd-raspi-earmv6hf.img
+2016-08-27-netbsd-raspi-earmv6hf.img
 
-I've updated 2016-07-29-netbsd-raspi-earmv6hf.img.gz for RPI.
-http://mail-index.netbsd.org/port-arm/2016/07/27/msg003884.html
+I've updated 2016-08-27-netbsd-raspi-earmv6hf.img.gz for RPI.
+http://mail-index.netbsd.org/port-arm/2016/08/23/msg003918.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-29-earmv6hf/2016-07-29-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-08-27-earmv6hf/2016-08-27-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -23,10 +23,8 @@ Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.34 evbarm-earmv6hf 201607220120Z rpi.img from nyftp.
-- NetBSD Security Advisory 2016-006: Race condition in mail.local(8)
+- NetBSD-current 7.99.36 evbarm-earmv6hf 201608220040Z rpi.img from nyftp.
 - XXX: dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1.
-- XXX: after 7.99.34,RPI2/3 still suddenly panic,such as 64GB SD resizing.
 - security.pax.mprotect.enabled
   http://netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
   man security
