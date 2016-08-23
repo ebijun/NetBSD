@@ -3,10 +3,10 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2016-07-29/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2016-08-27/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.34-evbarm-${ARCH}-201607220120Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.36-evbarm-${ARCH}-201608220040Z.iso
 
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
@@ -122,6 +122,7 @@ logclean:
 	rm -f ${MNT}/var/db/dhcpcd-url0.lease6
 	rm -f ${MNT}/root/dmesg
 	rm -f ${MNT}/root/pkginfo
+	rm -f ${MNT}/root/Package/typescript
 	rm -rf ${MNT}/var/run/dhcpcd
 	rm -rf ${MNT}/var/run/resolvconf
 	umount ${MNT}
