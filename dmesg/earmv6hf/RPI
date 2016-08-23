@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.34 (RPI.201607220120Z)
+NetBSD 7.99.36 (RPI.201608220040Z)
 total memory = 192 MB
 avail memory = 180 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -55,8 +55,8 @@ sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 IPsec: Initialized Security Association Processing.
-ld0 at sdmmc0: <0x03:0x5344:SL08G:0x80:0x0bde13ee:0x0e2>
-ld0: 7580 MB, 3850 cyl, 64 head, 63 sec, 512 bytes/sect x 15523840 sectors
+ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x41835aef:0x106>
+ld0: 15343 MB, 7793 cyl, 64 head, 63 sec, 512 bytes/sect x 31422464 sectors
 ld0: 4-bit width, SDR50, 100.000 MHz
 uhidev0 at uhub0 port 1 configuration 1 interface 0
 uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
@@ -75,7 +75,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.34/modules
+kern.module.path=/stand/evbarm/7.99.36/modules
 vchiq: local ver 6 (min 3), remote ver 6.
 vcaudio0 at vchiq0: auds
 WARNING: no TOD clock present
