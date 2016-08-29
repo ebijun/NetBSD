@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -129,6 +129,19 @@ togetterまとめ
  道の駅,琴浦町,琴浦さんグッズあり
  よしだ,米子,牛骨ラーメン
  浜下水産,鳥取駅前サンロード,自家製一夜干し
+
+倉敷
+------------
+ 蔵びあ亭,本町,吉備土手下&津山
+ 倉敷屋,本町,
+
+岡山
+------------
+ シュレンケルラ,,
+ SKIPPER'S,,
+ 独歩,イオンモール4F,
+ 吉備土手下普段呑み場,北方,日曜休み
+ たのたの庵,藤崎,
 
 OSC松江展示物
 --------------
