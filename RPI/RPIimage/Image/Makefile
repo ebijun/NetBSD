@@ -6,7 +6,7 @@ ARCH=earmv6hf
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2016-08-27/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.36-evbarm-${ARCH}-201608220040Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.38-evbarm-${ARCH}-201609161520Z.iso
 
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
@@ -164,7 +164,8 @@ kernel:
 kernel-update:
 	vnconfig ${VND} ${FILE}
 	mount /dev/${VND}e ${MNT}
-	cp /usr/obj/kernel/earmv6hf/RPI/netbsd.bin ${MNT}/kernel.img
+#	cp /usr/obj/kernel/earmv6hf/RPI/netbsd.bin ${MNT}/kernel.img
+	mv  ${MNT}/kernel7.img ${MNT}/kernel7.img.original
 	cp /usr/obj/kernel/earmv6hf/RPI2/netbsd.bin ${MNT}/kernel7.img
 	umount ${MNT}
 	vnconfig -u ${VND} 

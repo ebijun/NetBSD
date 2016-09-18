@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- .. todo:: :1,$s/2016-07-29/2016-07-29/g
+ .. todo:: :1,$s/2016-08-27/2016-08-27/g
  .. todo:: :1,$s?2015/06/27?2015/06/27?g
  .. todo:: apache+php+mysql設定
  .. todo:: uim-pref-gtk
@@ -67,7 +67,7 @@ RaspberryPIでNetBSDを使ってみる
 
  earmv6hf 
  # ftp http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
- 2016-07-29-earmv6hf/2016-07-29-netbsd-raspi-earmv6hf.img.gz
+ 2016-08-27-earmv6hf/2016-08-27-netbsd-raspi-earmv6hf.img.gz
  
 * 2GB以上のSDカードを準備します。
 * ダウンロードしたディスクイメージを、SDカード上で展開します。
@@ -75,7 +75,7 @@ RaspberryPIでNetBSDを使ってみる
 ::
 
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
-	gunzip < 2016-07-29-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
+	gunzip < 2016-08-27-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
 
 Cubieboard2,BananaPI用イメージ
 -------------------------------
@@ -196,7 +196,7 @@ fossilは、Wiki/チケット管理システム/HTTPサーバ機能を持つ、�
 ::
 
  % cat /etc/pkg_install.conf
-　PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-07-29
+　PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-08-27
 
 * パッケージのインストール
 
@@ -297,7 +297,7 @@ NetBSDの場合、vndconfigコマンドでイメージファイルの内容を�
 
 ::
 
- # vndconfig vnd0 2016-07-29-netbsd-raspi-earmv6hf.img.gz
+ # vndconfig vnd0 2016-08-27-netbsd-raspi-earmv6hf.img.gz
  # vndconfig -l
  vnd0: /usr (/dev/wd0e) inode 53375639
  # disklabel vnd0

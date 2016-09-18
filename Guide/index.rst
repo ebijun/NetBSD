@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/kyoto
+ Place/kanazawa
  RPI
- Luna
+
 
