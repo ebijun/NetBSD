@@ -94,19 +94,16 @@ Install application: man 1 pkg_add
   # pkg_add omxplayer
   # pkg_add youtube-dl
   # youtube-dl https://www.youtube.com/watch?v=wG8ZCC8IwvM
-  # omxplayer *.mp4
+  # omxplayer *.mkv
 
 - Xfce4
   # pkg_add xfce4
   # startxfce4 
    or edit /root/.xinitrc and comment out startxfce4
 
-- firefox
-  # pkg_add firefox
-  # pkg_add firefox-l10n
-
-- midori 
-  # pkg_add midori
+- seamonkey
+  # pkg_add seamonkey
+  # pkg_add seamonkey-l10n
 
 - nodejs
   # pkg_add nodejs
@@ -124,41 +121,63 @@ Install application: man 1 pkg_add
   # mz700-js@0.0.0 start  /usr/pkg/lib/node_modules/mz700-js
   # access http://localhost:3000/MZ-700/client.html
 
-- mcomix .. Book scanning data viewer
-  # pkg_add py27-mcomix
-
-Testing:: 
-
-- mpv
-  # pkg_add mpv
-
 - openjdk
   # pkg_add openjdk8
-
-- scribus
-  # pkg_add scribus-1.4.3  
-
-- (inkscape)
 
 - gimp
   # pkg_add gimp
 
+- mpv
+  # pkg_add mpv
+
 - emacs
   # pkg_add emacs
+  # pkg_add anthy-elisp # for inputmethod/anthy
 
 - evince
   # pkg_add evince
 
-- wordpress
-  # pkg_add wordpress
-
 - typical apache+php environment
-  # pkg_add ap22-php55
+  # pkg_add ap22-php56
+
+- gedit
+  # pkg_add gedit
 
 - sphinx
   # pkg_add py27-sphinx
 
+Testing:: 
+
+- dillo
+  # pkg_add dillo
+  XXX: dillo-3.0.5nb2 start failed.
+
+- firefox
+  # pkg_add firefox
+  # pkg_add firefox-l10n
+  XXX: libicu:need re-compile
+
+- midori 
+  # pkg_add midori
+  XXX: start failed
+
+- mcomix .. Book scanning data viewer
+  # pkg_add py27-mcomix
+  XXX:ImportError: cannot import name _getexif
+
+- scribus
+  # pkg_add scribus-1.4.3  
+  XXX: libpodofo.so.0.9.3 not found:need re-compile
+
+- inkscape
+  XXX: libboost_system.so.1.60 not found:need re-compile
+
+- wordpress
+  # pkg_add wordpress
+  XXX: need php56-gd
+
 - (shotwell)
+  # pkg_add shotwell
 
 CrossCompiling:
   http://www.slideshare.net/junebihara18/netbsdworkshop
