@@ -23,7 +23,8 @@
  :maxdepth: 3
  :numbered:
 
- Place/kanazawa
+ Place/shimane
  RPI
+ RPI/RPIImage
 
 
