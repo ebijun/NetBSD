@@ -146,6 +146,12 @@ Install application: man 1 pkg_add
 - sphinx
   # pkg_add py27-sphinx
 
+- mcomix .. Book scanning data viewer
+  # pkg_add py27-mcomix
+  to avoid ImportError: cannot import name _getexif,
+  use py27-Pillow package instead of py27-imaging.
+
+
 Testing:: 
 
 - dillo
@@ -160,10 +166,6 @@ Testing::
 - midori 
   # pkg_add midori
   XXX: start failed
-
-- mcomix .. Book scanning data viewer
-  # pkg_add py27-mcomix
-  XXX:ImportError: cannot import name _getexif
 
 - scribus
   # pkg_add scribus-1.4.3  
