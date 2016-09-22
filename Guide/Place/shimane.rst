@@ -181,94 +181,42 @@ OSC松江展示物
 2015年
 ~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2015/08/22/DSC07648.JPG
-.. image::  ../Picture/2015/08/22/DSC07649.JPG
-.. image::  ../Picture/2015/08/22/DSC07650.JPG
 .. image::  ../Picture/2015/08/22/DSC07651.JPG
 .. image::  ../Picture/2015/08/22/DSC07652.JPG
-.. image::  ../Picture/2015/08/22/DSC07653.JPG
-.. image::  ../Picture/2015/08/22/DSC07654.JPG
-.. image::  ../Picture/2015/08/22/DSC07655.JPG
-.. image::  ../Picture/2015/08/22/DSC07656.JPG
 .. image::  ../Picture/2015/08/22/DSC07657.JPG
 .. image::  ../Picture/2015/08/22/DSC07658.JPG
 .. image::  ../Picture/2015/08/22/DSC07659.JPG
 .. image::  ../Picture/2015/08/22/DSC07660.JPG
-.. image::  ../Picture/2015/08/22/DSC07661.JPG
-.. image::  ../Picture/2015/08/22/DSC07662.JPG
-.. image::  ../Picture/2015/08/22/DSC07663.JPG
-.. image::  ../Picture/2015/08/22/DSC07664.JPG
-.. image::  ../Picture/2015/08/22/DSC07665.JPG
 .. image::  ../Picture/2015/08/22/DSC07666.JPG
 .. image::  ../Picture/2015/08/22/DSC07667.JPG
-.. image::  ../Picture/2015/08/22/DSC07668.JPG
-.. image::  ../Picture/2015/08/22/DSC07669.JPG
-.. image::  ../Picture/2015/08/22/DSC07670.JPG
 .. image::  ../Picture/2015/08/22/DSC07671.JPG
-.. image::  ../Picture/2015/08/22/DSC07672.JPG
 .. image::  ../Picture/2015/08/22/DSC07673.JPG
-.. image::  ../Picture/2015/08/22/DSC07674.JPG
 .. image::  ../Picture/2015/08/22/DSC07675.JPG
-.. image::  ../Picture/2015/08/22/DSC07676.JPG
-.. image::  ../Picture/2015/08/22/DSC07677.JPG
-.. image::  ../Picture/2015/08/22/DSC07678.JPG
-.. image::  ../Picture/2015/08/22/DSC07679.JPG
-.. image::  ../Picture/2015/08/22/DSC07680.JPG
-.. image::  ../Picture/2015/08/22/DSC07681.JPG
-.. image::  ../Picture/2015/08/22/DSC07682.JPG
-.. image::  ../Picture/2015/08/22/DSC07683.JPG
-.. image::  ../Picture/2015/08/22/DSC07684.JPG
-.. image::  ../Picture/2015/08/22/DSC07685.JPG
-.. image::  ../Picture/2015/08/22/DSC07686.JPG
-.. image::  ../Picture/2015/08/22/DSC07687.JPG
-.. image::  ../Picture/2015/08/22/DSC07688.JPG
-.. image::  ../Picture/2015/08/22/DSC_1242.jpg
-.. image::  ../Picture/2015/08/22/DSC_1243.jpg
-.. image::  ../Picture/2015/08/22/DSC_1244.jpg
-.. image::  ../Picture/2015/08/22/DSC_1245.jpg
-.. image::  ../Picture/2015/08/22/DSC_1246.jpg
-.. image::  ../Picture/2015/08/22/DSC_1247.jpg
-.. image::  ../Picture/2015/08/22/DSC_1248.jpg
 .. image::  ../Picture/2015/08/22/DSC_1249.jpg
 .. image::  ../Picture/2015/08/22/DSC_1250.jpg
 .. image::  ../Picture/2015/08/22/DSC_1251.jpg
-.. image::  ../Picture/2015/08/22/DSC_1252.jpg
 .. image::  ../Picture/2015/08/22/DSC_1253.jpg
-.. image::  ../Picture/2015/08/22/DSC_1254.jpg
-.. image::  ../Picture/2015/08/22/DSC_1255.jpg
 .. image::  ../Picture/2015/08/22/DSC_1256.jpg
 .. image::  ../Picture/2015/08/22/DSC_1257.jpg
-.. image::  ../Picture/2015/08/22/DSC_1258.jpg
 .. image::  ../Picture/2015/08/22/DSC_1259.jpg
 .. image::  ../Picture/2015/08/22/DSC_1260.jpg
-.. image::  ../Picture/2015/08/22/DSC_1261.jpg
-.. image::  ../Picture/2015/08/22/DSC_1262.jpg
 .. image::  ../Picture/2015/08/22/DSC_1263.jpg
 .. image::  ../Picture/2015/08/22/DSC_1264.jpg
-.. image::  ../Picture/2015/08/22/DSC_1265.jpg
 .. image::  ../Picture/2015/08/22/DSC_1266.jpg
 .. image::  ../Picture/2015/08/22/DSC_1267.jpg
 .. image::  ../Picture/2015/08/22/DSC_1268.jpg
 .. image::  ../Picture/2015/08/22/DSC_1269.jpg
 .. image::  ../Picture/2015/08/22/DSC_1270.jpg
 .. image::  ../Picture/2015/08/22/DSC_1271.jpg
-.. image::  ../Picture/2015/08/22/DSC_1272.jpg
-.. image::  ../Picture/2015/08/22/DSC_1273.jpg
 
 2014年
 ~~~~~~~~~~~~~~~~~~
 
 .. image::  ../Picture/2014/08/23/DSC05428.JPG
-.. image::  ../Picture/2014/08/23/DSC05432.JPG
-.. image::  ../Picture/2014/08/23/DSC05433.JPG
-.. image::  ../Picture/2014/08/23/DSC05434.JPG
 .. image::  ../Picture/2014/08/23/DSC05435.JPG
 .. image::  ../Picture/2014/08/23/DSC05436.JPG
 .. image::  ../Picture/2014/08/23/DSC05437.JPG
-.. image::  ../Picture/2014/08/23/DSC05438.JPG
-.. image::  ../Picture/2014/08/23/DSC05439.JPG
 .. image::  ../Picture/2014/08/23/DSC_0364.jpg
-.. image::  ../Picture/2014/08/23/DSC_0365.jpg
 .. image::  ../Picture/2014/08/23/DSC_0369.jpg
 .. image::  ../Picture/2014/08/23/DSC_0373.jpg
 .. image::  ../Picture/2014/08/23/DSC_0374.jpg
@@ -285,16 +233,10 @@ OSC松江展示物
 
 .. image::  ../Picture/2013/08/24/DSC_2418.jpg
 .. image::  ../Picture/2013/08/24/DSC_2419.jpg
-.. image::  ../Picture/2013/08/24/DSC_2426.jpg
 .. image::  ../Picture/2013/08/24/DSC_2429.jpg
 .. image::  ../Picture/2013/08/24/DSC_2432.jpg
 .. image::  ../Picture/2013/08/24/DSC_2435.jpg
 .. image::  ../Picture/2013/08/24/DSC_2440.jpg
-.. image::  ../Picture/2013/08/24/DSC_2443.jpg
-.. image::  ../Picture/2013/08/24/DSC_2446.jpg
-.. image::  ../Picture/2013/08/24/DSC_2447.jpg
-.. image::  ../Picture/2013/08/24/DSC_2449.jpg
-.. image::  ../Picture/2013/08/24/DSC_2451.jpg
 
 2012年
 ~~~~~~~~~~~~~~~~~~

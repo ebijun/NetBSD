@@ -25,6 +25,4 @@
 
  Place/shimane
  RPI
- RPI/RPIImage
-
 
