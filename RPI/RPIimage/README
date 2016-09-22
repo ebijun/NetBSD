@@ -161,7 +161,8 @@ Testing::
 - firefox
   # pkg_add firefox
   # pkg_add firefox-l10n
-  XXX: libicu:need re-compile
+  XXX: firefox: libmozavcodec.so: No such file or directory
+  XXX: firefox45: Segfault
 
 - midori 
   # pkg_add midori
