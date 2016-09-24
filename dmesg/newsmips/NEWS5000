@@ -1,0 +1,66 @@
+pmap_steal_memory: seg 0: 0x40c 0x40c 0x7eff 0x7eff
+pmap_steal_memory: seg 0: 0x434 0x434 0x7eff 0x7eff
+pmap_steal_memory: seg 0: 0x436 0x436 0x7eff 0x7eff
+SONY NET WORK STATION, Model NWS-5000, Machine ID #10668
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.32 (GENERIC) #0: Thu Jun 30 07:12:47 JST 2016
+	root@kanako.4407.kankyo-u.ac.jp:/home/nakaji/current/obj/sys/arch/newsmips/compile/GENERIC
+news5000
+total memory = 127 MB
+avail memory = 120 MB
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0: MIPS R4000 CPU (0x430) Rev. 3.0 with MIPS R4010 FPC Rev. 0.0
+cpu0: 48 TLB entries, 16MB max page size
+cpu0: 8KB/16B direct-mapped L1 instruction cache
+cpu0: 8KB/16B direct-mapped write-back L1 data cache
+cpu0: 1024KB/64B direct-mapped write-back L2 unified cache
+ap0 at mainbus0
+mkclock0 at ap0 slot0 addr 0xbf881fe0: mk48t02
+dmac0 at ap0 slot0 addr 0xbe200000: ctlnum = 0, map = 0xb4c20000, va = 0
+dmac1 at ap0 slot0 addr 0xbe300000: ctlnum = 1, map = 0xb4c21000, va = 0x200000
+zsc0 at ap0 slot0 addr 0xbe900000
+zstty0 at zsc0 channel 0 (console i/o)
+zstty1 at zsc0 channel 1
+fd at ap0 slot0 addr 0xbed20000 not configured
+kb0 at ap0 slot0 addr 0xbf900000
+wskbd0 at kb0 (mux ignored)
+lp at ap0 slot0 addr 0xbed30000 not configured
+ms0 at ap0 slot0 addr 0xbf900014
+wsmouse0 at ms0 (mux ignored)
+sb at ap0 slot0 addr 0xbed00000 not configured
+sn0 at ap0 slot0 addr 0xbe600000
+sn0: Ethernet address 08:00:46:00:e7:ed
+spifi0 at ap0 slot0 addr 0xbe280000: SCSI ID = 7, using dmac0
+scsibus0 at spifi0: 8 targets, 8 luns per target
+spifi1 at ap0 slot0 addr 0xbe380000: SCSI ID = 7, using dmac1
+scsibus1 at spifi1: 8 targets, 8 luns per target
+xafb0 at ap0: 1280 x 1024, 8bpp
+wsdisplay0 at xafb0 (kbdmux ignored)
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "news5000_freerun" frequency 1000000 Hz quality 100
+scsibus0: waiting 2 seconds for devices to settle...
+scsibus1: waiting 2 seconds for devices to settle...
+sd0 at scsibus0 target 0 lun 0: <IBM, DCAS-34330, S65A> disk fixed
+sd0: 4134 MB, 8205 cyl, 6 head, 171 sec, 512 bytes/sect x 8467200 sectors
+cd0 at scsibus0 target 6 lun 0: <SONY, CD-ROM CDU-541, 4.3a> cdrom removable
+sd1 at scsibus1 target 1 lun 0: <ST340810, A, 3.39> disk fixed
+sd1: 38166 MB, 38166 cyl, 16 head, 128 sec, 512 bytes/sect x 78165360 sectors
+boot device: <unknown>
+root device: sd1
+dump device (default sd1b): 
+file system (default generic): 
+root on sd1a dumps on sd1b
+root file system type: ffs
+kern.module.path=/stand/newsmips/7.99.32/modules
+WARNING: preposterous TOD clock time
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+init path (default /sbin/init): 
+init: trying /sbin/init
+pid 1(init): ABI set to O32 (e_flags=0x1007)
