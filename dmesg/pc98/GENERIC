@@ -1,0 +1,108 @@
+NetBSD 1.4.3A (GENERIC) #1: Thu Oct 11 17:10:06 JST 2001
+    honda@kururu:/home/src/sys/arch/i386/compile/GENERIC
+Copyright (c) 1994, 1995, 1996, 1997, 1998, 1999, 2000 NetBSD/pc98 core team
+NetBSD/pc98: base version = NetBSD 1.4.3A patch level = 035
+cpu0: family 5 model 7 step 0
+cpu0: Intel Pentium (P54C) (586-class)
+real mem  = 40501248(0x26a0000)
+physical memory fragment(0): 0x0 - 0xa0000
+physical memory fragment(1): 0x100000 - 0xf00000
+physical memory fragment(2): 0x1000000 - 0x2800000
+avail mem = 33783808
+using 520 buffers containing 2129920 bytes of memory
+clock: use Pentium cpu: 75000 Khz (a clk 13.333289 ns) rat 57266042
+mainbus0 (root)
+config_devices: hit space key if you want, wait(2 sec).
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o enabled, memory enabled
+Intel 82437MX Mobile System Controller (MTSC) (host bridge, revision 0x01) at pci0 dev 0 function 0 not configured
+NEC PC-98 PCI to Core Graph Bridge (miscellaneous display, revision 0x01) at pci0 dev 2 function 0 not configured
+Cirrus Logic CL-GD7543 (VGA display) at pci0 dev 3 function 0 not configured
+NEC PC-98 PCI to C98 Bridge (miscellaneous bridge, revision 0x02) at pci0 dev 5 function 0 not configured
+isa0 at mainbus0
+ser0 at isa0 port 0x30-0x35 irq 4 dvcfg 0x0
+serf0 at ser0 slave 0
+sertty0 at serf0: I8251F fifo enable(16) max 115200 bps
+ttycom0 at sertty0: tty line (id 0:0xc35c8000)
+ttycua0 at sertty0: tty line (id 1:0xc35c80e4)
+ser1 at isa0 port 0x238-0x23f irq 5 dvcfg 0x120000
+sern0 at ser1 slave 0
+sertty1 at sern0: ns16550a, working fifo
+ttycom1 at sertty1: tty line (id 0:0xc35c81c8)
+ttycua1 at sertty1: tty line (id 1:0xc35c82ac)
+lpt0 at isa0 port 0x40-0x4f irq 14 dvcfg 0x20000: fifo mode
+wdc0 at isa0 port 0x640-0x64f irq 9 dvcfg 0x0: access (Cbus)(has bank)
+atabus0 at wdc0 channel 0 bank 0
+wd0 at atabus0 channel 0 drive 0
+wd0: 1295MB, 2633 cyl, 16 head, 63 sec, 512 bytes/sec <TOSHIBA MK1301MAV>
+wd0: PIO mode 4, DMA mode 2
+wd0: using 16-sector lba addressing multi secs mode(-1) 16 bits pio transfer
+atapibus0 at atabus0
+atabus1 at wdc0 channel 0 bank 1
+atapibus1 at atabus1
+mbe_isa_match: mbe_hw_find failed
+fes_isa_match: fes_hw_find failed
+cnle: MAC address mismatch
+npx0 at isa0 port 0xf8 dvcfg 0x0: using exception 16
+kbdc0 at isa0 port 0x41 irq 1 dvcfg 0x0: software control support
+vsc0 at kbdc0
+vc0 at vsc0 win id 0 (size 80x30+195) attached. <console> flags 20005<graph,awm> EUC(e).
+vc1 at vsc0 win id 1 (size 80x30+195) attached. flags 20001<awm> EUC(e).
+vc2 at vsc0 win id 2 (size 80x30+195) attached. flags 20001<awm> EUC(e).
+vc3 at vsc0 win id 3 (size 80x30+195) attached. flags 20001<awm> EUC(e).
+vc4 at vsc0 win id 4 (size 80x30+195) attached. flags 20001<awm> EUC(e).
+vsc0: graphic mode(pegc). loading fonts(jis83+jis90). screen saver(180 sec). 
+olms0 at isa0 port 0x7fd9-0x7fdf irq 13 dvcfg 0x0
+fdc0 at isa0 port 0x90-0x97 irq 11 drq 2 dvcfg 0x0
+fd0 at fdc0 drive 0: 1.44MB 80 cyl, 2 head, 18 sec
+fd1 at fdc0 drive 1: 1.2MB 2HC 80 cyl, 2 head, 15 sec
+fd2 at fdc0 drive 2: 1.2MB 2HC 80 cyl, 2 head, 15 sec
+fd3 at fdc0 drive 3: 1.2MB 2HC 80 cyl, 2 head, 15 sec
+systm0 at mainbus0
+systm0: intr routing: global 0x3e68(0x3e68) pccs 0x1428 ippi 0x1628
+necss0 at systm0 dvcfg 0x0 io0 0xf40 io1 0x188 pin0 12(shared)
+wss0 at necss0 drq 1: CS4231A(dma) sndtm (vers 4)
+audio0 at wss0: half duplex
+apm0 at systm0 dvcfg 0x0: waiting for the connection.
+vpdsrv0 at systm0 dvcfg 0x10000
+vpd0 at vpdsrv0
+vpd1 at vpdsrv0
+vpd2 at vpdsrv0
+vpd3 at vpdsrv0
+ippi0 at systm0 dvcfg 0x0
+pisa0 at ippi0
+ippi0: read port 0xf0(0x403).
+ippi0: kernel found 0 pnp device(s).
+gipc0 at systm0 dvcfg 0x0: mem0 0xc0000-0xc1fff polling
+gipc0: chipset <Cirrus PD672x>
+pccs0 at gipc0
+slot0 at pccs0 drive 0
+slot0: support services: pccs16 
+pisa1 at slot0
+slot1 at pccs0 drive 1
+slot1: support services: pccs16 
+pisa2 at slot1
+biomask a00 netmask a00 ttymask 6a02
+bootinfo_disk_geometry: dev 0x3, tracks 0x8, heads 0x11
+bootdisk_slice: dev 0x3 slno 0 sector 0x88
+vpd0: connecting wd0s0
+boot device: wd0
+root on wd0a dumps on wd0b
+WARNING: clock time much less than file system time
+WARNING: using file system time
+WARNING: CHECK AND RESET THE DATE!
+root file system type: ffs
+vpdsrv0: thread server starting (4)
+systm_kthread_dispatch: starting /sbin/vm86biosd args=none
+systm_kthread_dispatch: starting /sbin/pcsd args=-F
+systm_kthread_dispatch: starting /sbin/ippctrl args=-a
+apm0: version 0x111 funcs 0x7
+apm0: code 0xfd80:0x209 data 0xd800:0
+apm0: [A/C] on [1st pack] 15/100 [2nd pack] none 
+slot1: function 0: CONTEC Co.,Ltd. C-NET(PC)C\M-<\M-X\M-0\M-=\M-^ (0xc0010000)
+slot1: NO device configuration in kernel
+mbe0 at pisa2
+mbe0: TDK/CONTEC (PCMCIA) Ethernet
+mbe0: 16-bit, half duplex
+mbe0: Ethernet address 00:80:4c:07:cd:aa
+mbe0: io0 0x4200-0x420f pin0 3 dvcfg 30000
