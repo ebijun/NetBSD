@@ -1,0 +1,116 @@
+[    45.125] 
+X.Org X Server 1.18.4
+Release Date: 2016-07-19
+[    45.126] X Protocol Version 11, Revision 0
+[    45.127] Build Operating System: NetBSD/i386  - 
+[    45.128] Current Operating System: NetBSD amivb.soum.co.jp 7.99.39 NetBSD 7.99.39 (GENERIC.201609261740Z) i386
+[    45.128] Build Date: 14 August 2016  01:29:29AM
+[    45.128]  
+[    45.129] Current version of pixman: 0.32.6
+[    45.130] 	Before reporting problems, check http://wiki.X.Org
+	to make sure that you have the latest version.
+[    45.130] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    45.132] (==) Log file: "/var/log/Xorg.0.log", Time: Tue Sep 27 08:41:26 2016
+[    45.147] (==) Using config file: "/etc/X11/xorg.conf"
+[    45.148] (==) ServerLayout "X.org Configured"
+[    45.148] (**) |-->Screen "Screen0" (0)
+[    45.148] (**) |   |-->Monitor "Monitor0"
+[    45.149] (**) |   |-->Device "Card0"
+[    45.149] (**) |-->Input Device "Mouse0"
+[    45.149] (**) |-->Input Device "Keyboard0"
+[    45.149] (==) Not automatically adding devices
+[    45.149] (==) Not automatically enabling devices
+[    45.149] (==) Not automatically adding GPU devices
+[    45.150] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    45.171] (WW) The directory "/usr/X11R7/share/fonts/X11/misc" does not exist.
+[    45.171] 	Entry deleted from font path.
+[    45.171] (WW) The directory "/usr/X11R7/share/fonts/X11/TTF" does not exist.
+[    45.171] 	Entry deleted from font path.
+[    45.171] (WW) The directory "/usr/X11R7/share/fonts/X11/OTF" does not exist.
+[    45.171] 	Entry deleted from font path.
+[    45.171] (WW) The directory "/usr/X11R7/share/fonts/X11/Type1" does not exist.
+[    45.171] 	Entry deleted from font path.
+[    45.171] (WW) The directory "/usr/X11R7/share/fonts/X11/100dpi" does not exist.
+[    45.171] 	Entry deleted from font path.
+[    45.171] (WW) The directory "/usr/X11R7/share/fonts/X11/75dpi" does not exist.
+[    45.171] 	Entry deleted from font path.
+[    45.171] (WW) The directory "/usr/X11R7/share/fonts/X11/cyrillic" does not exist.
+[    45.171] 	Entry deleted from font path.
+[    45.171] (WW) The directory "/usr/X11R7/lib/X11/fonts/OTF" does not exist.
+[    45.171] 	Entry deleted from font path.
+[    45.172] (WW) `fonts.dir' not found (or not valid) in "/usr/X11R7/lib/X11/fonts/cyrillic".
+[    45.172] 	Entry deleted from font path.
+[    45.172] 	(Run 'mkfontdir' on "/usr/X11R7/lib/X11/fonts/cyrillic").
+[    45.172] (**) FontPath set to:
+	/usr/X11R7/lib/X11/fonts/misc/,
+	/usr/X11R7/lib/X11/fonts/TTF/,
+	/usr/X11R7/lib/X11/fonts/Type1/,
+	/usr/X11R7/lib/X11/fonts/75dpi/,
+	/usr/X11R7/lib/X11/fonts/100dpi/,
+	/usr/pkg/share/fonts/X11/TTF/,
+	/usr/X11R7/lib/X11/fonts/misc,
+	/usr/X11R7/lib/X11/fonts/TTF,
+	/usr/X11R7/lib/X11/fonts/Type1,
+	/usr/X11R7/lib/X11/fonts/100dpi,
+	/usr/X11R7/lib/X11/fonts/75dpi
+[    45.172] (**) ModulePath set to "/usr/X11R7/lib/modules"
+[    45.172] (II) Loader magic: 0x2a3a80
+[    45.172] (II) Module ABI versions:
+[    45.172] 	X.Org ANSI C Emulation: 0.4
+[    45.172] 	X.Org Video Driver: 20.0
+[    45.172] 	X.Org XInput driver : 22.1
+[    45.172] 	X.Org Server Extension : 9.0
+[    45.180] (--) PCI:*(0:0:2:0) 80ee:beef:0000:0000 rev 0, Mem @ 0xe0000000/16777216
+[    45.181] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[    45.181] (II) LoadModule: "dbe"
+[    45.181] (II) Module "dbe" already built-in
+[    45.181] (II) LoadModule: "dri"
+[    45.181] (II) Module "dri" already built-in
+[    45.181] (II) LoadModule: "dri2"
+[    45.181] (II) Module "dri2" already built-in
+[    45.181] (II) LoadModule: "extmod"
+[    45.181] (II) Module "extmod" already built-in
+[    45.181] (II) LoadModule: "glx"
+[    45.184] (II) Loading /usr/X11R7/lib/modules/extensions/libglx.so
+[    45.185] (II) Module glx: vendor="X.Org Foundation"
+[    45.185] 	compiled for 1.18.4, module version = 1.0.0
+[    45.185] 	ABI class: X.Org Server Extension, version 9.0
+[    45.185] (==) AIGLX enabled
+[    45.185] (II) LoadModule: "record"
+[    45.185] (II) Module "record" already built-in
+[    45.185] (II) LoadModule: "shadow"
+[    45.186] (II) Loading /usr/X11R7/lib/modules/extensions/libshadow.so
+[    45.186] (II) Module shadow: vendor="X.Org Foundation"
+[    45.186] 	compiled for 1.18.4, module version = 1.1.0
+[    45.186] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    45.186] (II) LoadModule: "vesa"
+[    45.187] (II) Loading /usr/X11R7/lib/modules/drivers/vesa_drv.so
+[    45.187] (EE) LoadModule: Module vesa does not have a vesaModuleData data object.
+[    45.187] (II) UnloadModule: "vesa"
+[    45.187] (II) Unloading vesa
+[    45.187] (EE) Failed to load module "vesa" (invalid module, 0)
+[    45.187] (II) LoadModule: "mouse"
+[    45.188] (II) Loading /usr/X11R7/lib/modules/drivers/mouse_drv.so
+[    45.188] (II) Module mouse: vendor="X.Org Foundation"
+[    45.188] 	compiled for 1.18.4, module version = 1.9.1
+[    45.188] 	Module class: X.Org XInput Driver
+[    45.188] 	ABI class: X.Org XInput driver, version 22.1
+[    45.188] (II) LoadModule: "kbd"
+[    45.188] (II) Loading /usr/X11R7/lib/modules/drivers/kbd_drv.so
+[    45.189] (II) Module kbd: vendor="X.Org Foundation"
+[    45.189] 	compiled for 1.18.4, module version = 1.8.1
+[    45.189] 	Module class: X.Org XInput Driver
+[    45.189] 	ABI class: X.Org XInput driver, version 22.1
+[    45.189] (EE) No drivers available.
+[    45.189] (EE) 
+Fatal server error:
+[    45.189] (EE) no screens found(EE) 
+[    45.190] (EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.X.Org
+ for help. 
+[    45.191] (EE) Please also check the log file at "/var/log/Xorg.0.log" for additional information.
+[    45.203] (EE) 
+[    45.203] (EE) Server terminated with error (1). Closing log file.
