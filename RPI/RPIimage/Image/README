@@ -1,20 +1,20 @@
-VERSION: :1,$s/2016-09-24/2016-09-24/g
-ISO:     :1,$s/201609161520Z/201609161520Z/g
-NetBSD:  :1,$s/7.99.38/7.99.38/g
+VERSION: :1,$s/2016-10-01/2016-10-01/g
+ISO:     :1,$s/201609281420Z/201609281420Z/g
+NetBSD:  :1,$s/7.99.39/7.99.39/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 
 To: port-armNetBSD.org@localhost
-Subject: 2016-09-24-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2016-10-01-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2016-09-24-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2016-10-01-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-09-24-earmv6hf/2016-09-24-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-10-01-earmv6hf/2016-10-01-netbsd-raspi-earmv6hf.img.gz
 
 Kernel for RPI3:
 http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-09-24-earmv6hf/RPI3/
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-10-01-earmv6hf/RPI3/
 If you use un-patched-original kernel.
  mv /boot/kernel7.img.orignal /boot/kernel7.img
 
@@ -31,12 +31,9 @@ Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.38 evbarm-earmv6hf 201609161520Z rpi.img from nyftp.
+- NetBSD-current 7.99.39 evbarm-earmv6hf 201609281420Z rpi.img from nyftp.
 - XXX: dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1.
 - XXX: I've got error report on using Sandisk/TOSHIBA microSD.
-- git-base-2.10.0
-- mlterm-3.7.2
-- mikutter-3.4.3
 
 security.pax.mprotect.enabled
   http://netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
@@ -74,7 +71,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-09-24/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-10-01/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -82,7 +79,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-09-24-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-10-01-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -253,15 +250,15 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Confernce 2016 Shimane demonstration use, 
+For Open Source Confernce 2016 Nagaoka demonstration use, 
 I've updated raspberry-pi image.
 
- http://www.ospn.jp/osc2016-shimane/
- https://www.facebook.com/events/1719665944982026/
+ http://www.ospn.jp/osc2016-nagaoka/
+ https://www.facebook.com/events/894132747364440/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSuC2016shimane.pdf
+ http://www.soum.co.jp/~jun/OSuC2016nagaoka.pdf
 
-- NetBSD 7.99.38 earmv6hf rpi.img.gz base
+- NetBSD 7.99.39 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -299,7 +296,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-09-24/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-10-01/
 
 Installed Packages:
 kterm
