@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015 Jun Ebihara All rights reserved.
+ Copyright (c) 2015-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -31,7 +31,7 @@ Maps:
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/niigata.rst
 
-新潟でのオープンソースカンファレンス
+新潟/長岡でのオープンソースカンファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. csv-table::
@@ -46,7 +46,8 @@ Maps:
  2008 Nagaoka ,4/12,130,11,長岡技術科学大学
  2009 Niigata ,8/1,130,11,新潟国際情報大学
  2010 Niigata,10/23,130,14,新潟大学
- 2015 Niigata,9/5,,17,ほんぽーと新潟市立中央図書館
+ 2015 Niigata,9/5,130,17,ほんぽーと新潟市立中央図書館
+ 2016 Nagaoka,10/1,,13,まちなかキャンパス長岡
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,6 +59,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 
+ 96,OSC2016長岡,http://www.soum.co.jp/~jun/OSC2016nagaoka.pdf
  77,OSC2015新潟,http://www.soum.co.jp/~jun/OSC2015niigata.pdf
  1,OSC2010新潟,http://www.soum.co.jp/~jun/OSC2010niigata.pdf
 
@@ -67,6 +70,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2016長岡 NetBSDブース展示の記録,
  OSC2015新潟 NetBSDブース展示の記録,http://togetter.com/li/869752
 
 よく行く店
@@ -107,47 +111,32 @@ togetterまとめ
  水と土の芸術祭,全域,万代島緑地 新潟織夢－Dream of Niigata
  SWANLAKE Pub Edo,代々木上原,東京代々木上原駅にあるスワンレイクのビアバー
  須坂屋そば三軒茶屋,三軒茶屋,渋谷から三軒茶屋に移転
+ 小島屋,,
+ 金子屋,,
+ 龍文堂,,
+ かおす書房,東坂之上町,長岡市東坂之上町１丁目
+ ユウピット電子,本町,電子部品
+ パラダイスガラッジ,関原町,懐かしおもちゃ
+ ミヤウチショウガカレー研究所,,
 
-
-2006年
+2010年
 ---------------
 
-.. image::  ../Picture/2006/06/17/2006-756.JPG
-.. image::  ../Picture/2006/06/17/2006-758.JPG
-.. image::  ../Picture/2006/06/17/2006-760.JPG
-.. image::  ../Picture/2006/06/17/2006-762.JPG
-.. image::  ../Picture/2006/06/17/2006-763.JPG
-.. image::  ../Picture/2006/06/17/2006-766.JPG
-
-
-2007年
----------------
-
-.. image::  ../Picture/2007/10/27/2007-1745.jpg
-.. image::  ../Picture/2007/10/27/2007-1746.jpg
-.. image::  ../Picture/2007/10/27/2007-1748.jpg
-.. image::  ../Picture/2007/10/27/2007-1749.jpg
-.. image::  ../Picture/2007/10/27/2007-1750.jpg
-.. image::  ../Picture/2007/10/27/2007-1751.jpg
-.. image::  ../Picture/2007/10/27/2007-1752.jpg
-.. image::  ../Picture/2007/10/27/2007-1753.jpg
-.. image::  ../Picture/2007/10/27/2007-1754.jpg
-
-2008年
----------------
-
-.. image::  ../Picture/2008/04/12/2008-574.JPG
-.. image::  ../Picture/2008/04/12/2008-575.JPG
-.. image::  ../Picture/2008/04/12/2008-576.JPG
-.. image::  ../Picture/2008/04/12/2008-578.JPG
-.. image::  ../Picture/2008/04/12/2008-579.JPG
-.. image::  ../Picture/2008/04/12/2008-581.JPG
-.. image::  ../Picture/2008/04/12/2008-582.JPG
-.. image::  ../Picture/2008/04/12/2008-583.JPG
-.. image::  ../Picture/2008/04/12/2008-584.JPG
-.. image::  ../Picture/2008/04/12/2008-585.JPG
-.. image::  ../Picture/2008/04/12/2008-586.JPG
-.. image::  ../Picture/2008/04/12/2008-587.JPG
+.. image::  ../Picture/2010/10/23/019.JPG
+.. image::  ../Picture/2010/10/23/003.JPG
+.. image::  ../Picture/2010/10/23/004.JPG
+.. image::  ../Picture/2010/10/23/005.JPG
+.. image::  ../Picture/2010/10/23/006.JPG
+.. image::  ../Picture/2010/10/23/007.JPG
+.. image::  ../Picture/2010/10/23/008.JPG
+.. image::  ../Picture/2010/10/23/009.JPG
+.. image::  ../Picture/2010/10/23/010.JPG
+.. image::  ../Picture/2010/10/23/011.JPG
+.. image::  ../Picture/2010/10/23/012.JPG
+.. image::  ../Picture/2010/10/23/002.JPG
+.. image::  ../Picture/2010/10/23/013.JPG
+.. image::  ../Picture/2010/10/23/014.JPG
+.. image::  ../Picture/2010/10/23/015.JPG
 
 2009年
 ---------------
@@ -168,21 +157,43 @@ togetterまとめ
 .. image::  ../Picture/2009/08/01/014.JPG
 .. image::  ../Picture/2009/08/01/016.JPG
 
-2010年
+
+2008年
 ---------------
 
-.. image::  ../Picture/2010/10/23/019.JPG
-.. image::  ../Picture/2010/10/23/003.JPG
-.. image::  ../Picture/2010/10/23/004.JPG
-.. image::  ../Picture/2010/10/23/005.JPG
-.. image::  ../Picture/2010/10/23/006.JPG
-.. image::  ../Picture/2010/10/23/007.JPG
-.. image::  ../Picture/2010/10/23/008.JPG
-.. image::  ../Picture/2010/10/23/009.JPG
-.. image::  ../Picture/2010/10/23/010.JPG
-.. image::  ../Picture/2010/10/23/011.JPG
-.. image::  ../Picture/2010/10/23/012.JPG
-.. image::  ../Picture/2010/10/23/002.JPG
-.. image::  ../Picture/2010/10/23/013.JPG
-.. image::  ../Picture/2010/10/23/014.JPG
-.. image::  ../Picture/2010/10/23/015.JPG
+.. image::  ../Picture/2008/04/12/2008-574.JPG
+.. image::  ../Picture/2008/04/12/2008-575.JPG
+.. image::  ../Picture/2008/04/12/2008-576.JPG
+.. image::  ../Picture/2008/04/12/2008-578.JPG
+.. image::  ../Picture/2008/04/12/2008-579.JPG
+.. image::  ../Picture/2008/04/12/2008-581.JPG
+.. image::  ../Picture/2008/04/12/2008-582.JPG
+.. image::  ../Picture/2008/04/12/2008-583.JPG
+.. image::  ../Picture/2008/04/12/2008-584.JPG
+.. image::  ../Picture/2008/04/12/2008-585.JPG
+.. image::  ../Picture/2008/04/12/2008-586.JPG
+.. image::  ../Picture/2008/04/12/2008-587.JPG
+
+2007年
+---------------
+
+.. image::  ../Picture/2007/10/27/2007-1745.jpg
+.. image::  ../Picture/2007/10/27/2007-1746.jpg
+.. image::  ../Picture/2007/10/27/2007-1748.jpg
+.. image::  ../Picture/2007/10/27/2007-1749.jpg
+.. image::  ../Picture/2007/10/27/2007-1750.jpg
+.. image::  ../Picture/2007/10/27/2007-1751.jpg
+.. image::  ../Picture/2007/10/27/2007-1752.jpg
+.. image::  ../Picture/2007/10/27/2007-1753.jpg
+.. image::  ../Picture/2007/10/27/2007-1754.jpg
+
+2006年
+---------------
+
+.. image::  ../Picture/2006/06/17/2006-756.JPG
+.. image::  ../Picture/2006/06/17/2006-758.JPG
+.. image::  ../Picture/2006/06/17/2006-760.JPG
+.. image::  ../Picture/2006/06/17/2006-762.JPG
+.. image::  ../Picture/2006/06/17/2006-763.JPG
+.. image::  ../Picture/2006/06/17/2006-766.JPG
+
