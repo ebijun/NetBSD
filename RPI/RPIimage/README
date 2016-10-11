@@ -1,20 +1,21 @@
-VERSION: :1,$s/2016-10-01/2016-10-01/g
+VERSION: :1,$s/2016-10-10/2016-10-10/g
 ISO:     :1,$s/201609281420Z/201609281420Z/g
 NetBSD:  :1,$s/7.99.39/7.99.39/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 
 To: port-armNetBSD.org@localhost
-Subject: 2016-10-01-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2016-10-10-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2016-10-01-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2016-10-10-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-10-01-earmv6hf/2016-10-01-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-10-10-earmv6hf/2016-10-10-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/MD5
 
 Kernel for RPI3:
 http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-10-01-earmv6hf/RPI3/
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-10-10-earmv6hf/RPI3/
 If you use un-patched-original kernel.
  mv /boot/kernel7.img.orignal /boot/kernel7.img
 
@@ -34,6 +35,8 @@ Update:
 - NetBSD-current 7.99.39 evbarm-earmv6hf 201609281420Z rpi.img from nyftp.
 - XXX: dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1.
 - XXX: I've got error report on using Sandisk/TOSHIBA microSD.
+- bind 9.10.4-P3 CVE-2016-2776
+- fix bug: vfs_wapbl.c 1.84 
 
 security.pax.mprotect.enabled
   http://netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
@@ -71,7 +74,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-10-01/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-10-10/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -79,7 +82,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-10-01-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-10-10-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -297,7 +300,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-10-01/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-10-10/
 
 Installed Packages:
 kterm
