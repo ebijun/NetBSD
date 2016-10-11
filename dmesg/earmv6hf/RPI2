@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.39 (RPI2) #7: Thu Sep 29 20:10:24 JST 2016
+NetBSD 7.99.39 (RPI2) #10: Mon Oct 10 07:28:27 JST 2016
 	jun@amiasp1.soum.co.jp:/usr/obj/kernel/earmv6hf/RPI2
 total memory = 944 MB
 avail memory = 925 MB
@@ -55,18 +55,18 @@ bcmcm at obio0 not configured
 bcmpwm at obio0 not configured
 usb0 at dwctwo0: USB revision 2.0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
-cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
-cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
-vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
 cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
 vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
 cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
