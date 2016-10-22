@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.39-hpcmips-201610080620Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.40-hpcmips-201610210240Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2016-08-20.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2016-10-15.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
 INSTALLATION=/mnt1/hpcmips/installation
@@ -57,7 +57,7 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	(cd ${MNT}/dev;./MAKEDEV all)
-#	tar xzpf ${PKGSRC} -C ${MNT}/usr
+	#tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mkdir ${MNT}/msdos
 	mkdir ${MNT}/kern
 	mkdir ${MNT}/proc
@@ -73,6 +73,7 @@ bootarea:
 	cp ${INSTALLATION}/hpcboot.exe ${MNT}
 	cp ${KERNEL}/netbsd-GENERIC.gz ${MNT}
 	cp ${KERNEL}/netbsd-TX3912.gz ${MNT}
+	cp kernel/netbsd ${MNT}
 	cp msdos/hpcboot.cnf ${MNT}
 	
 	umount ${MNT}
