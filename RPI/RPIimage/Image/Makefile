@@ -3,10 +3,10 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2016-10-10/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2016-11-06/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.39-evbarm-${ARCH}-201610091320Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.40-evbarm-${ARCH}-201610251920Z.iso
 
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
@@ -27,6 +27,10 @@ KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
+
+#Firmware
+FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
+FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
 # mount point
 MNT=/mnt
@@ -145,7 +149,7 @@ cdunmount:
 firm:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-	cp -r /usr/local/NetBSD/RPI/Firmware/firmware/boot/* /mnt
+	for i in ${FIRM} ; do (cp ${FIRMPATH}/$$i /mnt); done
 	umount ${MNT}
 	vnconfig -u ${VND}
 
