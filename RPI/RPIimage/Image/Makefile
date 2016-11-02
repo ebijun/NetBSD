@@ -201,3 +201,11 @@ fit:
 	vnconfig -u ${VND_TMP}
 	cp ${FILE_TMP} ${FILE}
 
+libssls:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	(cd ${MNT}/usr/lib;ln -s libssl.so.12 libssl.so.11)
+	(cd ${MNT}/usr/lib;ln -s libcrypto.so.12  libcrypto.so.11)
+	umount ${MNT}
+	vnconfig -u ${VND}

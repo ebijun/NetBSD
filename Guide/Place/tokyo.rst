@@ -60,7 +60,8 @@ Maps:
  2014 Fall,10/18-19,1550,72,明星大学
  2015 Spring,2/27-28,1700,79,明星大学
  2015 Fall,10/24-25,1550,77,明星大学
- 2016 Spring,2/26-27,,71,明星大学
+ 2016 Spring,2/26-27,1550,71,明星大学
+ 2016 Fall,11/5-6,,77,明星大学
 
 
 観光ガイドバックナンバー
@@ -74,6 +75,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 97, OSC2016東京秋, http://www.soum.co.jp/~jun/OSC2016tokyofall.pdf
  85, OSC2016東京春, http://www.soum.co.jp/~jun/OSC2016tokyospring.pdf
  80, OSC2015東京秋, http://www.soum.co.jp/~jun/OSC2015tokyofall.pdf
  69, OSC2015東京春, http://www.soum.co.jp/~jun/OSC2015tokyospring.pdf
@@ -93,7 +95,8 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2016東京春 NetBSDブース展示の記録, 
+ OSC2016東京秋 NetBSDブース展示の記録,
+ OSC2016東京春 NetBSDブース展示の記録, http://togetter.com/li/943037
  OSC2015東京秋 NetBSDブース展示の記録, http://togetter.com/li/891197
  OSC2015東京春 NetBSDブース展示の記録, http://togetter.com/li/788681
  OSC2014東京秋 NetBSDブース展示の記録, http://togetter.com/li/733588 
@@ -152,6 +155,7 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2016/2/26-7,OSC2016東京春,fdgw2 RK3188 WM8750 USL-5P RouterBoard AR9331 pcDuino
  2015/10/24-5,OSC2015東京秋,RK3188 WM8750 EP9315 AM3358 Allwinner A20 405GP BCM2836 AR9331
  2015/2/27-8,OSC2015東京春,Radxa RocK APC8750 RPI OpenBlockS sandpoint
  2014/10/18-19,OSC2014東京秋,Xen dom0 BSD全部 RadxaRock zaurusC700音源
@@ -174,6 +178,33 @@ OSC東京主な展示物
  2006/3/17-18,OSC2006東京春,hpcmips/sh/arm
  2005/3/25-26,OSC2005,hpcmips/sh/arm
  2004/9/4,OSC2004,hpcmips/sh/arm
+
+2016年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture/2016/02/26/DSC08635.JPG
+.. image::  ../Picture/2016/02/26/DSC08639.JPG
+.. image::  ../Picture/2016/02/26/DSC08641.JPG
+.. image::  ../Picture/2016/02/26/DSC08642.JPG
+.. image::  ../Picture/2016/02/26/DSC08643.JPG
+.. image::  ../Picture/2016/02/26/DSC08644.JPG
+.. image::  ../Picture/2016/02/26/DSC08645.JPG
+.. image::  ../Picture/2016/02/26/DSC_1514.JPG
+.. image::  ../Picture/2016/02/26/DSC_1517.JPG
+.. image::  ../Picture/2016/02/26/DSC_1518.JPG
+.. image::  ../Picture/2016/02/26/DSC_1519.JPG
+.. image::  ../Picture/2016/02/26/DSC_1520.JPG
+.. image::  ../Picture/2016/02/26/DSC_1522.JPG
+.. image::  ../Picture/2016/02/26/DSC_1525.JPG
+.. image::  ../Picture/2016/02/26/DSC_1526.JPG
+.. image::  ../Picture/2016/02/27/DSC08647.JPG
+.. image::  ../Picture/2016/02/27/DSC08648.JPG
+.. image::  ../Picture/2016/02/27/DSC08651.JPG
+.. image::  ../Picture/2016/02/27/DSC_1527.JPG
+.. image::  ../Picture/2016/02/27/DSC_1533.JPG
+.. image::  ../Picture/2016/02/27/DSC_1534.JPG
+.. image::  ../Picture/2016/02/27/DSC_1535.JPG
+.. image::  ../Picture/2016/02/27/DSC_1536.JPG
+.. image::  ../Picture/2016/02/27/DSC_1538.JPG
 
 2015年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -23,6 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/niigata
+ Place/tokyo
  RPI
 
