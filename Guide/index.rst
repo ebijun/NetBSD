@@ -23,6 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
+ Place/osaka
  RPI
+ Luna
 
