@@ -114,6 +114,32 @@ KOF主な展示物
  2004/10-22-23,大阪産業創造館,XCAST ふきだしくん 
  2003/10/31-11/1,大阪産業創造館,XCAST トレバ
 
+2015
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2015/11/06/DSC08271.JPG
+.. image::  ../Picture/2015/11/06/DSC_1454.jpg
+.. image::  ../Picture/2015/11/06/DSC_1457.jpg
+.. image::  ../Picture/2015/11/06/DSC_1460.jpg
+.. image::  ../Picture/2015/11/06/DSC_1461.jpg
+.. image::  ../Picture/2015/11/06/DSC_1463.jpg
+.. image::  ../Picture/2015/11/06/DSC_1467.jpg
+.. image::  ../Picture/2015/11/06/DSC_1469.jpg
+.. image::  ../Picture/2015/11/07/DSC08279.JPG
+.. image::  ../Picture/2015/11/07/DSC08280.JPG
+.. image::  ../Picture/2015/11/07/DSC08282.JPG
+.. image::  ../Picture/2015/11/07/DSC08284.JPG
+.. image::  ../Picture/2015/11/07/DSC08286.JPG
+.. image::  ../Picture/2015/11/07/DSC08287.JPG
+.. image::  ../Picture/2015/11/07/DSC08288.JPG
+.. image::  ../Picture/2015/11/07/DSC08289.JPG
+.. image::  ../Picture/2015/11/07/DSC08290.JPG
+.. image::  ../Picture/2015/11/07/DSC_1472.jpg
+.. image::  ../Picture/2015/11/07/DSC_1474.jpg
+.. image::  ../Picture/2015/11/07/DSC_1476.jpg
+.. image::  ../Picture/2015/11/07/DSC_1483.jpg
+
+
 2014
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -133,29 +159,17 @@ KOF主な展示物
 2013
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /Picture/2013/11/08/DSC_2841.jpg
-.. image:: /Picture/2013/11/08/DSC_2843.jpg
-.. image:: /Picture/2013/11/08/DSC_2845.jpg
-.. image:: /Picture/2013/11/08/DSC_2847.jpg
-.. image:: /Picture/2013/11/08/DSC_2848.jpg
 .. image:: /Picture/2013/11/08/DSC_2854.jpg
 .. image:: /Picture/2013/11/08/dsc03586.jpg
 .. image:: /Picture/2013/11/09/DSC_2858.jpg
 .. image:: /Picture/2013/11/09/DSC_2863.jpg
-.. image:: /Picture/2013/11/09/DSC_2864.jpg
 .. image:: /Picture/2013/11/09/DSC_2865.jpg
 .. image:: /Picture/2013/11/09/DSC_2866.jpg
 .. image:: /Picture/2013/11/09/DSC_2867.jpg
 .. image:: /Picture/2013/11/09/DSC_2868.jpg
-.. image:: /Picture/2013/11/09/DSC_2870.jpg
 .. image:: /Picture/2013/11/09/DSC_2871.jpg
-.. image:: /Picture/2013/11/09/DSC_2872.jpg
-.. image:: /Picture/2013/11/09/dsc03591.jpg
-.. image:: /Picture/2013/11/09/dsc03598.jpg
-.. image:: /Picture/2013/11/09/dsc03601.jpg
 .. image:: /Picture/2013/11/09/dsc03602.jpg
 .. image:: /Picture/2013/11/09/dsc03603.jpg
-.. image:: /Picture/2013/11/09/dsc03604.jpg
 .. image:: /Picture/2013/11/09/dsc03605.jpg
 
 2012
@@ -185,20 +199,14 @@ KOF主な展示物
 2010
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /Picture/2010/11/06/P1000028.JPG
 .. image:: /Picture/2010/11/06/P1000027.JPG
 .. image:: /Picture/2010/11/06/P1000025.JPG
-.. image:: /Picture/2010/11/06/P1000024.JPG
-.. image:: /Picture/2010/11/06/P1000023.JPG
-.. image:: /Picture/2010/11/06/P1000022.JPG
 .. image:: /Picture/2010/11/06/P1000021.JPG
 .. image:: /Picture/2010/11/06/P1000020.JPG
 .. image:: /Picture/2010/11/06/P1000019.JPG
 .. image:: /Picture/2010/11/05/P1000017.JPG
-.. image:: /Picture/2010/11/05/P1000016.JPG
 .. image:: /Picture/2010/11/05/P1000014.JPG
 .. image:: /Picture/2010/11/05/P1000013.JPG
-.. image:: /Picture/2010/11/05/P1000012.JPG
 .. image:: /Picture/2010/11/05/P1000010.JPG
 .. image:: /Picture/2010/11/05/P1000009.JPG
 .. image:: /Picture/2010/11/05/P1000008.JPG
