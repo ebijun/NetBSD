@@ -1,17 +1,17 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2016-11-06/2016-11-06/g
-:1,$s/7.99.41/7.99.41/g
-:1,$s/201610272000Z/201610272000Z/g
-:1,$s?2016/11/02/msg003954.html?2016/11/02/msg003954.html?
+:1,$s/2016-11-12/2016-11-12/g
+:1,$s/7.99.42/7.99.42/g
+:1,$s/201611081750Z/201611081750Z/g
+:1,$s?2016/11/10/msg003958.html?2016/11/10/msg003958.html?
 
 
-2016-11-06-netbsd-raspi-earmv6hf.img
+2016-11-12-netbsd-raspi-earmv6hf.img
 
-I've updated 2016-11-06-netbsd-raspi-earmv6hf.img.gz for RPI.
-http://mail-index.netbsd.org/port-arm/2016/11/02/msg003954.html
+I've updated 2016-11-12-netbsd-raspi-earmv6hf.img.gz for RPI.
+http://mail-index.netbsd.org/port-arm/2016/11/10/msg003958.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-11-06-earmv6hf/2016-11-06-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-11-12-earmv6hf/2016-11-12-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -27,12 +27,9 @@ Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.41 evbarm-earmv6hf 201610272000Z rpi.img from nyftp.
-- RPI2 Ver1.2 support 
-- OpenSSL 1.0.2j  26 Sep 2016
-  libssl.12
-  libcrypto.12
-- mikutter-3.4.6
+- NetBSD-current 7.99.42 evbarm-earmv6hf 201611081750Z rpi.img from nyftp.
+- BIND 9.10.4-P4
+- raspberrypi-userland-20161101
 - XXX: dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1.
 - XXX: I've got error report on using Sandisk/TOSHIBA microSD.
 
