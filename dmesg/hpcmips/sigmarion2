@@ -1,19 +1,16 @@
-pmap_steal_memory: seg 0: 0x4ee 0x4ee 0x1ffe 0x1ffe
-pmap_steal_memory: seg 0: 0x52d 0x52d 0x1ffe 0x1ffe
-pmap_steal_memory: seg 0: 0x52f 0x52f 0x1ffe 0x1ffe
 total memory banks = 2
-memory bank 0 = 00000000 5048KB(0x4ee000)
-memory bank 1 = 0x4ee000 27720KB(0x1b12000)
+memory bank 0 = 00000000 5064KB(0x4f2000)
+memory bank 1 = 0x4f2000 27704KB(0x1b0e000)
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.33 (GENERIC.201607080210Z)
+NetBSD 7.99.42 (GENERIC.201611081750Z)
 DoCoMo sigmarionII (NEC VR4131 rev0.2 180.633MHz)
 total memory = 32768 KB
-avail memory = 26876 KB
+avail memory = 26860 KB
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0: NEC VR4100 CPU (0xc80) Rev. 8.0 with software emulated floating point
@@ -81,29 +78,28 @@ pcic0: WARNING: powerhook_establish is deprecated
 pcic0: WARNING: powerhook_establish is deprecated
 uhub0 at usb0: vendor 1033 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-wdc1 at pcmcia0 function 0: <TRANSCEND, TS8GCF133, >
+wdc1 at pcmcia0 function 0: <, , >
 pcic0: port 0xb800400-0xb80040f
 wdc1: i/o mapped mode
 pcmcia0: card irq 3
 atabus0 at wdc1 channel 0
 wd0 at atabus0 drive 0
-wd0: <TRANSCEND>
+wd0: <>
 wd0: drive supports 1-sector PIO transfers, LBA addressing
-wd0: 7647 MB, 15538 cyl, 16 head, 63 sec, 512 bytes/sect x 15662304 sectors
+wd0: 991 MB, 2014 cyl, 16 head, 63 sec, 512 bytes/sect x 2030112 sectors
 wd0: drive supports PIO mode 4
+WARNING: 4 errors while detecting hardware; check system log.
 boot device: wd0
 pcmcia0: card irq 3
 root on wd0a dumps on wd0b
 pcmcia0: card irq 3
 pcmcia0: card irq 3
-/: replaying log to memory
 root file system type: ffs
-kern.module.path=/stand/hpcmips/7.99.33/modules
-WARNING: clock lost 5668 days
+kern.module.path=/stand/hpcmips/7.99.42/modules
+WARNING: clock lost 5792 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 pid 1(init): ABI set to O32 (e_flags=0x1007)
-/: replaying log to disk
 hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
 wsdisplay0: screen 1 added (std, vt100 emulation)
 hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
