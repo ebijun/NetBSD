@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.40-hpcmips-201610231550Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.42-hpcmips-201611081750Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2016-10-22.tar.gz
 
@@ -23,7 +23,8 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file newfs cdmount extract bootarea cdunmount
+#all: file newfs cdmount extract bootarea cdunmount
+all: cdmount extract bootarea cdunmount
 
 # make image file. 512*3813376=2GB
 file: 
@@ -57,7 +58,7 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	(cd ${MNT}/dev;./MAKEDEV all)
-	tar xzpf ${PKGSRC} -C ${MNT}/usr
+#	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mkdir ${MNT}/msdos
 	mkdir ${MNT}/kern
 	mkdir ${MNT}/proc
@@ -73,7 +74,7 @@ bootarea:
 	cp ${INSTALLATION}/hpcboot.exe ${MNT}
 	cp ${KERNEL}/netbsd-GENERIC.gz ${MNT}
 	cp ${KERNEL}/netbsd-TX3912.gz ${MNT}
-	cp kernel/netbsd ${MNT}
+	gunzip < ${KERNEL}/netbsd-GENERIC.gz > ${MNT}/netbsd
 	cp msdos/hpcboot.cnf ${MNT}
 	
 	umount ${MNT}
