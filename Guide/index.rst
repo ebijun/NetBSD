@@ -23,7 +23,8 @@
  :maxdepth: 3
  :numbered:
 
- Place/osaka
+ Place/fukuoka
  RPI
- Luna
-
+ RPI/Omxplayer.rst      
+ RPI/Xfce4.rst
+ RPI/RPIImage.rst          

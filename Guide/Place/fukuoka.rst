@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -45,7 +45,8 @@ Maps:
  2012,12/8,550,38,KCS福岡情報専門学校
  2013,11/16,500,25,福岡ソフトリサーチパーク センタービル
  2014,11/21-22,500,23,福岡ソフトリサーチパーク センタービル
- 2015,10/3,,30,九州産業大学 2号館
+ 2015,10/3,400,30,九州産業大学 2号館
+ 2016,11,19,,,福岡ソフトリサーチパーク センタービル
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,6 +58,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 99,OSC2016福岡,http://www.soum.co.jp/~jun/OSC2016fukuoka.pdf
  79,OSC2015福岡,http://www.soum.co.jp/~jun/OSC2015fukuoka.pdf
  66,OSC2014福岡,http://www.soum.co.jp/~jun/OSC2014fukuoka.pdf
  51,OSC2013福岡,http://www.soum.co.jp/~jun/OSC2013fukuoka.pdf
@@ -70,7 +72,8 @@ togetterまとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2015福岡 NetBSDブース展示の記録,
+ OSC2016福岡 NetBSDブース展示の記録,
+ OSC2015福岡 NetBSDブース展示の記録,http://togetter.com/li/881732
  OSC2014福岡 NetBSDブース展示の記録,http://togetter.com/li/748237
  OSC2013福岡 NetBSDブース展示の記録,http://togetter.com/li/590835
  OSC2012福岡 NetBSDブース展示の記録,http://togetter.com/li/419569
@@ -132,6 +135,7 @@ OSC福岡主な展示物
 .. csv-table::
  :widths: 15 35 60
 
+ 2015/10/3,九州産業大学,Raspberry PI2 mikutter NetWalker ZAURUS WZero3
  2014/11/21,福岡ソフトリサーチパーク,RPI Netwalker XM6i Cubieboard2 
  2013/11/16,福岡ソフトリサーチパーク,RPI Netwalker XM6i
  2012/12/8,福岡情報専門学校,WZero3 Zaurus XM6i
@@ -140,6 +144,22 @@ OSC福岡主な展示物
  2009/12/5,九州産業大学,hpcmips/hpcarm/Jornada680/WZero3
  2008/12/13,福岡大学,hpcmips/hpcarm/Jornada680/WZero3/USBカメラ
  2007/12/8,ASCビル,hpcmips/hpcarm/Jornada680
+
+2015年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2015/10/03/DSC08099.JPG
+.. image::  ../Picture/2015/10/03/DSC08103.JPG
+.. image::  ../Picture/2015/10/03/DSC08108.JPG
+.. image::  ../Picture/2015/10/03/DSC08111.JPG
+.. image::  ../Picture/2015/10/03/DSC08113.JPG
+.. image::  ../Picture/2015/10/03/DSC_1397.jpg
+.. image::  ../Picture/2015/10/03/DSC_1400.jpg
+.. image::  ../Picture/2015/10/03/DSC_1401.jpg
+.. image::  ../Picture/2015/10/03/DSC_1402.jpg
+.. image::  ../Picture/2015/10/03/DSC_1403.jpg
+.. image::  ../Picture/2015/10/03/DSC_1404.jpg
+.. image::  ../Picture/2015/10/03/DSC_1405.jpg
 
 2014年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
