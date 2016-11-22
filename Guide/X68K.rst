@@ -80,9 +80,10 @@ OSCとX68K展示
 .. csv-table::
  :widths: 20 3 60
 
- OSC2015京都,2012/10/20,XM6i-earmv6hf初展示
- OSC2014広島,2012/10/20,Neptune-X Nereid 060turbo Xellent30 XM6i
- OSC2013広島,2012/10/20,Neptune-X Nereid 060turbo Xellent30 XM6i
+ OSC2015広島,2015/9/19,X68030/X68060/XM6i(Win10/RPI2/Win7)
+ OSC2015京都,2015/8/7,XM6i-earmv6hf初展示
+ OSC2014広島,2014/9/20,Neptune-X Nereid 060turbo Xellent30 XM6i
+ OSC2013広島,2013/10/6,Neptune-X Nereid 060turbo Xellent30 XM6i
  OSC2012広島,2012/10/20,Neptune-X Nereid 060turbo Xellent30 XM6i
  OSC2011広島,2011/10/1,Neptune-X Nereid 060turbo XM6i
  OSC2011神戸,2011/4/16,TT030 X68K
@@ -99,6 +100,7 @@ NetBSD/amd64を用意し、その上でXM6iを動かしてみます。
 -----------------------------
 
 XM6iを動かすために必要なパッケージをインストールしておきます。
+wxGTK30-3.0.2nb6が必要です。(nb8では起動しません)
 
 ::
 
@@ -115,7 +117,7 @@ XM6iをダウンロードして、展開します。
  # mkdir -p /usr/local/XM6i
  # cd /usr/local/XM6i
  # http://xm6i.org/download.html
- # tar xzvf XM6i-0.51-netbsd7.0-i386-amd64-2015Q2.tar.gz 
+ # tar xzvf XM6i-0.55-netbsd7.0-i386-amd64-2016Q2.tar.gz 
 
 参考資料
 --------

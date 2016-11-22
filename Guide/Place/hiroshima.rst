@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -42,7 +42,8 @@ Maps:
  2012,10/20,150,23,広島国際学院大学中野キャンパス
  2013,10/6,200,21,サテライトキャンパスひろしま
  2014,9/20,200,26,サテライトキャンパスひろしま
- 2015,9/19,,22,サテライトキャンパスひろしま
+ 2015,9/19,170,23,サテライトキャンパスひろしま
+ 2016,11/27,,27,サテライトキャンパスひろしま
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,6 +55,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 100,OSC2016広島,http://www.soum.co.jp/~jun/OSC2016hiroshima.pdf
  78,OSC2015広島,http://www.soum.co.jp/~jun/OSC2015hiroshima.pdf
  63,OSC2014広島,http://www.soum.co.jp/~jun/OSC2014hiroshima.pdf
  48,OSC2013広島,http://www.soum.co.jp/~jun/OSC2013hiroshima.pdf
@@ -71,13 +73,14 @@ togetterまとめ
  OSC2012広島,OSC2012 広島 NetBSDブース展示の記録,http://togetter.com/li/392778
  OSC2013広島,OSC2013 広島 NetBSDブース展示の記録,http://togetter.com/li/573243
  OSC2014広島,OSC2014 広島 NetBSDブース展示の記録,http://togetter.com/li/721414
- OSC2015広島,OSC2015 広島 NetBSDブース展示の記録,
+ OSC2015広島,OSC2015 広島 NetBSDブース展示の記録,http://togetter.com/li/875487
+ OSC2016広島,OSC2016 広島 NetBSDブース展示の記録,
 
 OSC広島発表
 ~~~~~~~~~~~~~
 
 .. csv-table::
- :widths: 60 25 99
+ :widths: 70 25 99
 
  ておくれライブイメージ,OSC2011広島,http://www.ceres.dti.ne.jp/tsutsui/osc11hi/Teokure-Live-Image.html
  XM6iのご紹介, OSC2011広島, http://xm6i.org/event/osc2011hi
@@ -87,6 +90,8 @@ OSC広島発表
  NetBSD/x68k 近況,OSC2013広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc13hi/
  X680x0 でもユーザストリームがしたい!,OSC2014広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc14hi/
  NetBSD/x68k 近況,OSC2014広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc14hi/
+ 今年は X68030 でもユーザストリームがしたい!,OSC2015広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc15hi/
+ 20年前のコードをNetBSDでメンテするということ,OSC2015広島,https://speakerdeck.com/tsutsui/osc2015kyoto-netbsd-and-old-machines
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -112,14 +117,13 @@ OSC広島発表
  ロペス,広島,2002年の目標：打率3割5分56本塁打160打点
  さんちぇ,白島東口,サンフレッチェ/お好み焼き/クラフトビール
  獅魂,胡町,賀茂金秀/龍勢
- 広島市現代美術館,比治山公園,2014/10/4- 戦後日本住宅伝説
- 純喫茶パール,広島駅前,2012/11/25閉店しちゃった。3階。
- ヲルガン座,十日市町,音楽喫茶。ふらんす座2014/9/20は藤井一彦ソロ
- 横川シネマ,横川,2014/9/30まで改装中
- サロンシネマ,大手町,日本一ひろいシートの映画館。プロミストランド
- シネツイン,新天地,イブ・サンローラン
- 八丁座映画図書館,福屋,2013/9/19 オープン 2014/9/20-天井桟敷の人々
- 松本無線パーツ,銀山町,3階ジャンクフロアクローズ
+ 広島市現代美術館,比治山公園,「世界が妙だ！ 立石大河亞＋横山裕一の漫画と絵画」
+ ヲルガン座,十日市町,音楽喫茶。
+ 横川シネマ,横川,キンザザ/地獄に堕ちた野郎ども/人間爆弾「桜花」/広島発ヒロインアクションまつり
+ サロンシネマ,大手町,日本一ひろいシートの映画館。この世界の片隅に/言の葉の庭
+ シネツイン,新天地,2016/10末に閉館
+ 八丁座映画図書館,福屋,2013/9/19 オープン 2016/2/21で閉設
+ 松本無線パーツ,商工センター,日曜休み
  松屋　広島金座街店,金座街 ,店舗限定かつ定食とカツカレーがある(c)おかのさん
  Groovin',京橋町,中古CD/DVD
  アーキウォーク広島,建築ガイド,http://www.oa-hiroshima.org/
@@ -137,16 +141,49 @@ OSC広島発表
  毒ガス貯蔵庫跡,大久野島,火炎放射器跡が残っている
  横川駅前広場,横川,日本で最初に国産乗合バスを運行した「バス発祥の地」
  市営基町高層アパート,基町,原爆スラム解消目的に建築。
- ひろしま美術館,基町,イサムノグチ展 2013/10/14まで
+ ひろしま美術館,基町,安野光雅のものがたり絵本展
  旧日本銀行広島支店,袋町,爆心地から380m
  陸軍墓地,比治山公園,陸軍病院で亡くなった方は広島で土葬された
  放射線影響研究所,比治山公園,ウッドベリー報告書 内部被曝と黒い雨
  陸軍被服支厰倉庫,出汐,峠三吉「倉庫の記録」
  広島市郷土資料館,宇品,曲がった鉄骨と、かもじづくり。かもじって何？
  旧広島港湾事務所,宇品,広島唯一の明治時代の公共建築かつ被曝建物。
- おかやま秋の酒祭り2015,下石井公園,2015/9/18-20 岡山駅徒歩10分
  
- 
+
+2015年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture/2015/09/19/DSC07909.JPG
+.. image::  ../Picture/2015/09/19/DSC07910.JPG
+.. image::  ../Picture/2015/09/19/DSC07911.JPG
+.. image::  ../Picture/2015/09/19/DSC07912.JPG
+.. image::  ../Picture/2015/09/19/DSC07916.JPG
+.. image::  ../Picture/2015/09/19/DSC07917.JPG
+.. image::  ../Picture/2015/09/19/DSC07918.JPG
+.. image::  ../Picture/2015/09/19/DSC07919.JPG
+.. image::  ../Picture/2015/09/19/DSC07920.JPG
+.. image::  ../Picture/2015/09/19/DSC07922.JPG
+.. image::  ../Picture/2015/09/19/DSC07923.JPG
+.. image::  ../Picture/2015/09/19/DSC07924.JPG
+.. image::  ../Picture/2015/09/19/DSC07925.JPG
+.. image::  ../Picture/2015/09/19/DSC_1330.jpg
+.. image::  ../Picture/2015/09/19/DSC_1332.jpg
+.. image::  ../Picture/2015/09/19/DSC_1333.jpg
+.. image::  ../Picture/2015/09/19/DSC_1334.jpg
+.. image::  ../Picture/2015/09/19/DSC_1338.jpg
+.. image::  ../Picture/2015/09/19/DSC_1339.jpg
+.. image::  ../Picture/2015/09/19/DSC_1340.jpg
+.. image::  ../Picture/2015/09/19/DSC_1342.jpg
+.. image::  ../Picture/2015/09/19/DSC_1343.jpg
+.. image::  ../Picture/2015/09/19/DSC_1344.jpg
+.. image::  ../Picture/2015/09/19/DSC_1345.jpg
+.. image::  ../Picture/2015/09/19/DSC_1357.jpg
+.. image::  ../Picture/2015/09/19/DSC_1360.jpg
+.. image::  ../Picture/2015/09/19/DSC_1362.jpg
+.. image::  ../Picture/2015/09/19/DSC_1363.jpg
+.. image::  ../Picture/2015/09/19/DSC_1364.jpg
+.. image::  ../Picture/2015/09/19/DSC_1366.jpg
+
+
 2014年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

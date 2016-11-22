@@ -23,8 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/fukuoka
+ Place/hiroshima
  RPI
- RPI/Omxplayer.rst      
- RPI/Xfce4.rst
- RPI/RPIImage.rst          
+ X68K.rst      
+
