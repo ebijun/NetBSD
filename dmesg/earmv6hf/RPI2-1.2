@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.42 (RPI2) #14: Wed Nov  9 13:17:20 JST 2016
+NetBSD 7.99.42 (RPI2) #18: Wed Nov 23 06:38:55 JST 2016
 	jun@amiasp1.soum.co.jp:/usr/obj/kernel/earmv6hf/RPI2
 total memory = 944 MB
 avail memory = 925 MB
@@ -55,6 +55,12 @@ bcmcm at obio0 not configured
 bcmpwm at obio0 not configured
 usb0 at dwctwo0: USB revision 2.0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
 cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
@@ -67,22 +73,14 @@ cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, HS SDR50 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-ld0 at sdmmc0: <0x74:0x4a60:USD  :0x02:0x56a92194:0x0f2>
-ld0: 7695 MB, 3908 cyl, 64 head, 63 sec, 512 bytes/sect x 15759360 sectors
 IPsec: Initialized Security Association Processing.
-ld0c: error reading fsbn 0 of 0-2 (ld0 bn 0; cn 0 tn 0 sn 0)
-ld0: disk label read failed
-ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+ld0 at sdmmc0: <0x03:0x5344:SU02G:0x80:0x020856e5:0x084>
+ld0: 1938 MB, 984 cyl, 64 head, 63 sec, 512 bytes/sect x 3970048 sectors
+ld0: 4-bit width, 25.000 MHz
 uhub1 at uhub0 port 1: vendor 0424 product 9514, class 9/0, rev 2.00/2.00, addr 2
 uhub1: multiple transaction translators
 uhub1: 5 ports with 4 removable, self powered

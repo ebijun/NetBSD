@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.42 (RPI.201611081750Z)
+NetBSD 7.99.42 (RPI.201611220640Z)
 total memory = 192 MB
 avail memory = 180 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -55,9 +55,9 @@ sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 DWC2 root hub, class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 IPsec: Initialized Security Association Processing.
-ld0 at sdmmc0: <0x74:0x4a60:USD  :0x02:0x56a92194:0x0f2>
-ld0: 7695 MB, 3908 cyl, 64 head, 63 sec, 512 bytes/sect x 15759360 sectors
-ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+ld0 at sdmmc0: <0x03:0x5344:SU02G:0x80:0x020856e5:0x084>
+ld0: 1938 MB, 984 cyl, 64 head, 63 sec, 512 bytes/sect x 3970048 sectors
+ld0: 4-bit width, 25.000 MHz
 uhidev0 at uhub0 port 1 configuration 1 interface 0
 uhidev0: vendor 05af 2.4G Dongle, rev 2.00/3.03, addr 2, iclass 3/1
 ukbd0 at uhidev0: 8 modifier keys, 6 key codes
