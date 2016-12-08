@@ -23,7 +23,7 @@
  :widths: 10 40 10 20 30 30 30 90 180 
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
- 2016/1,7.99.25,3.3.3,3.6.1,,,CVE-2016-0777: get rid of roaming,OSC浜名湖,http://mail-index.netbsd.org/port-arm/2016/01/22/msg003635.html
+ 2016/1,7.99.25,3.3.3,3.6.1,,CVE-2016-0777: get rid of roaming,OSC浜名湖,http://mail-index.netbsd.org/port-arm/2016/01/22/msg003635.html
  2016/2,7.99.26,3.3.7,3.6.3,1.0.1r,BIND-9.10.3-P3,OSC東京春,http://mail-index.netbsd.org/port-arm/2016/02/24/msg003689.html
  2016/3,7.99.26,3.3.8,,1.0.1s,,AsiaBSDCon,http://mail-index.netbsd.org/port-arm/2016/03/10/msg003709.html
  2016/5,7.99.29,3.7.0,,1.0.1t,RPI3サポート/merge nick-nhusb tree,OSC群馬,http://mail-index.netbsd.org/port-arm/2016/05/07/msg003771.html
@@ -36,7 +36,7 @@
  ,7.99.38,3.4.3,3.7.2,,,OSC島根,http://mail-index.netbsd.org/port-arm/2016/09/22/msg003920.html
  ,7.99.39,,,,,OSC長岡,http://mail-index.netbsd.org/port-arm/2016/09/29/msg003921.html
  2016/11,7.99.41,3.4.6,,1.0.2j,RPI2 Ver1.2サポート/libssl.12/libcrypt.12,OSC東京秋,http://mail-index.netbsd.org/port-arm/2016/11/02/msg003954.html
- ,7.99.42,,,,,BIND-9.10.4-P4/Raspberrypi-userland-2016-1101,KOF2016,http://mail-index.netbsd.org/port-arm/2016/11/10/msg003958.html
+ ,7.99.42,,,,BIND-9.10.4-P4/Raspberrypi-userland-2016-1101,KOF2016,http://mail-index.netbsd.org/port-arm/2016/11/10/msg003958.html
  ,7.99.42,3.4.7,,,NTP-4.2.8p9,OSC広島,http://mail-index.netbsd.org/port-arm/2016/11/23/msg003970.html
 
 
