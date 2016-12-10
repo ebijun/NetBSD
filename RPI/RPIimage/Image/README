@@ -1,21 +1,22 @@
-VERSION: :1,$s/2016-11-27/2016-11-27/g
-ISO:     :1,$s/201611220640Z/201611220640Z/g
-NetBSD:  :1,$s/7.99.42/7.99.42/g
+VERSION: :1,$s/2016-12-11/2016-12-11/g
+ISO:     :1,$s/201612090750Z/201612090750Z/g
+NetBSD:  :1,$s/7.99.44/7.99.44/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
+# why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2016-11-27-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2016-12-11-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2016-11-27-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2016-12-11-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-11-27-earmv6hf/2016-11-27-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-11-27-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-12-11-earmv6hf/2016-12-11-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-12-11-earmv6hf/MD5
 
 Kernel for RPI3:
 http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-11-27-earmv6hf/RPI3/
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-12-11-earmv6hf/RPI3/
 
 If you use un-patched-original kernel.
  mv /boot/kernel7.img.orignal /boot/kernel7.img
@@ -34,10 +35,15 @@ Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.42 evbarm-earmv6hf 201611220640Z rpi.img from nyftp.
-- NTP-4.2.8p9 
-  http://support.ntp.org/bin/view/Main/SecurityNotice#November_2016_ntp_4_2_8p9_NTP_Se
-- ruby22-mikutter-3.4.7 and ruby22-gnome2-gtk-3.1.0
+- NetBSD-current 7.99.44 evbarm-earmv6hf 201612090750Z rpi.img from nyftp.
+- Fix CWE-120/CVE-2016-6559: 
+   BSD libc contains a buffer overflow vulnerability in link_ntoa()
+   https://cwe.mitre.org/data/definitions/120.html
+   https://www.kb.cert.org/vuls/id/548487
+   http://jvn.jp/vu/JVNVU91242711/
+   http://cvsweb.netbsd.org/bsdweb.cgi/src/lib/libc/net/linkaddr.c
+- spkr0 at audio0
+- ruby22-mikutter-3.4.8
 - XXX: dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1.
 - XXX: I've got error report on using Sandisk/TOSHIBA microSD.
 
@@ -77,7 +83,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-11-27/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-12-11/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -85,7 +91,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-11-27-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-12-11-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -257,15 +263,14 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Confierence 2016 Hiroshima demonstration use, 
+For BIG Raspberry JAM Tokyo 2016 demonstration use, 
 I've updated raspberry-pi image.
 
- https://www.ospn.jp/osc2016-hiroshima/
- https://www.facebook.com/events/181902205545763/
+ https://raspberrypi.connpass.com/event/44902/
+ https://www.facebook.com/events/1873355159564632/
  https://www.facebook.com/NetBSD.jp 
- http://www.soum.co.jp/~jun/OSC2016hiroshima.pdf
 
-- NetBSD 7.99.42 earmv6hf rpi.img.gz base
+- NetBSD 7.99.44 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -303,7 +308,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-11-27/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2016-12-11/
 
 Installed Packages:
 kterm
