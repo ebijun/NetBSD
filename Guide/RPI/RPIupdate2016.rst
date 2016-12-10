@@ -48,7 +48,7 @@ RaspberryPIのNetBSDイメージについて
  2016/11,7.99.41,3.4.6,,1.0.2j,RPI2 Ver1.2サポート/libssl.12/libcrypt.12,OSC東京秋,http://mail-index.netbsd.org/port-arm/2016/11/02/msg003954.html
  ,7.99.42,,,,BIND-9.10.4-P4 Raspberrypi-userland-2016-1101,KOF2016,http://mail-index.netbsd.org/port-arm/2016/11/10/msg003958.html
  ,7.99.42,3.4.7,,,NTP-4.2.8p9,OSC広島,http://mail-index.netbsd.org/port-arm/2016/11/23/msg003970.html
- ,7.99.44,3.4.8,,,CWE-120 libc,BIG RPI Jam,http://mail-index.netbsd.org/port-arm/2016/12/10/msg004002.html
+ 2016/12,7.99.44,3.4.8,,,CWE-120 libc,BIG RPI Jam,http://mail-index.netbsd.org/port-arm/2016/12/10/msg004002.html
 
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。
