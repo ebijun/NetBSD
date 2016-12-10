@@ -1,17 +1,20 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2016-11-27/2016-11-27/g
-:1,$s/7.99.42/7.99.42/g
-:1,$s/201611220640Z/201611220640Z/g
-:1,$s?2016/11/23/msg003970.html?2016/11/23/msg003970.html?
+:1,$s/2016-12-11/2016-12-11/g
+:1,$s/7.99.44/7.99.44/g
+:1,$s/201612090750Z/201612090750Z/g
+:1,$s?2016/12/10/msg004002.html?2016/12/10/msg004002.html?
 
 
-2016-11-27-netbsd-raspi-earmv6hf.img
+2016-12-11-netbsd-raspi-earmv6hf.img
 
-I've updated 2016-11-27-netbsd-raspi-earmv6hf.img.gz for RPI.
-http://mail-index.netbsd.org/port-arm/2016/11/23/msg003970.html
+For BIG Raspberry JAM Tokyo 2016 
+ https://raspberrypi.connpass.com/event/44902/
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-11-27-earmv6hf/2016-11-27-netbsd-raspi-earmv6hf.img.gz
+I've updated 2016-12-11-netbsd-raspi-earmv6hf.img.gz for RPI.
+http://mail-index.netbsd.org/port-arm/2016/12/10/msg004002.html
+
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-12-11-earmv6hf/2016-12-11-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -27,10 +30,14 @@ Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.42 evbarm-earmv6hf 201611220640Z rpi.img from nyftp.
-- NTP-4.2.8p9
-  http://support.ntp.org/bin/view/Main/SecurityNotice#November_2016_ntp_4_2_8p9_NTP_Se
-- ruby22-mikutter-3.4.7 and ruby22-gnome2-gtk-3.1.0
+- NetBSD-current 7.99.44 evbarm-earmv6hf 201612090750Z rpi.img from nyftp.
+- Fix CWE-120/CVE-2016-6559:
+   BSD libc contains a buffer overflow vulnerability in link_ntoa()
+   https://cwe.mitre.org/data/definitions/120.html
+   https://www.kb.cert.org/vuls/id/548487
+   http://jvn.jp/vu/JVNVU91242711/
+   http://cvsweb.netbsd.org/bsdweb.cgi/src/lib/libc/net/linkaddr.c
+- spkr0 at audio0
 - XXX: dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1.
 - XXX: I've got error report on using Sandisk/TOSHIBA microSD.
 
