@@ -23,7 +23,10 @@
  :maxdepth: 3
  :numbered:
 
- Place/hiroshima
+ RPI/RPIupdate2016.rst
  RPI
- X68K.rst      
+ RPI/Omxplayer.rst
+ RPI/Xfce4.rst
+ RPI/RPIImage.rst
+
 
