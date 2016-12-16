@@ -2,7 +2,7 @@ AnonymousPro-1.002  Fixed width Sans designed especially for Coders
 GConf-2.32.4nb11    Configuration database system used by GNOME
 GConf-ui-2.32.4nb16 Configuration database system used by GNOME
 GraphicsMagick-1.3.25 X application for displaying and manipulating images
-ImageMagick-7.0.3.8 Package for display and interactive manipulation of images
+ImageMagick-7.0.3.10 Package for display and interactive manipulation of images
 ORBit2-2.14.19nb4   High-performance CORBA ORB with C language support
 OmegaT-3.5.01       The translation memory (TM) application written in Java
 R-3.3.2             Statistical language for data analysis and graphics
@@ -34,11 +34,11 @@ blas-3.6.1          Basic Linear Algebra Subprograms (Fortran)
 boehm-gc-7.6.0nb2   Garbage collection and memory leak detection for C and C++
 boost-headers-1.62.0 Free, peer-reviewed portable C++ source libraries (build-time headers)
 boost-jam-1.60.0    Free, peer-reviewed portable C++ source libraries (Boost.Jam utility)
-boost-libs-1.62.0   Free, peer-reviewed portable C++ source libraries (binary libraries)
+boost-libs-1.62.0nb1 Free, peer-reviewed portable C++ source libraries (binary libraries)
 brasero-2.32.1nb35  Disc-burning software for the GNOME desktop
 bsdtar-3.2.1        Fast multi-format tape archiver
-cairo-1.14.6        Vector graphics library with cross-device output support
-cairo-gobject-1.14.6 Vector graphics library with cross-device output support
+cairo-1.14.8        Vector graphics library with cross-device output support
+cairo-gobject-1.14.8 Vector graphics library with cross-device output support
 cairomm-1.12.2      C++ API for cairo
 cdparanoia-3.0.10.2nb3 CDDA reading utility with extra data verification features
 clutter-1.22.2nb1   Open GL based interactive canvas library
@@ -49,11 +49,10 @@ coinmp-1.8.3        CoinMP is a C-API library that supports CLP, CBC, and CGL
 compface-1.5.2nb6   48x48x1 image compression and decompression (X-face utility)
 consolekit-1.0.2nb1 Framework for defining and tracking users, login sessions, and seats
 cppunit-1.13.2      C++ unit testing framework
-cups-2.2.1          Common UNIX Printing System
 curl-7.51.0         Client that groks URLs
 cwrappers-20161125  pkgsrc compiler wrappers
 db4-4.8.30          Berkeley DB version 4 from Oracle
-dbus-1.10.12nb1     Message bus system
+dbus-1.10.14        Message bus system
 dbus-glib-0.108     GLib bindings for the D-BUS message bus system
 deforaos-libdesktop-0.2.1nb2 DeforaOS desktop library
 deforaos-libsystem-0.3.0 DeforaOS core system library
@@ -62,7 +61,6 @@ desktop-file-utils-0.23 Utilities to manage desktop entries
 digest-20160304     Message digest wrapper utility
 dillo-3.0.5nb2      Very small and fast graphical web-browser
 dirmngr-1.1.1nb2    X509 certificate and CRL downloader
-djview4-4.10.6      Portable DjVu viewer and browser plugin
 djvulibre-lib-3.5.27 Compression library for scanned documents
 docbook-xml-4.5     XML DTD designed for computer documentation
 docbook-xsl-1.79.1nb1 Docbook XSL modular stylesheet
@@ -78,16 +76,14 @@ fam-2.7.0nb9        File Alteration Monitor
 fbreader-0.99.4nb11 Ebook reader software
 ffmpeg010-20150312.0.10.16nb4 Decoding, encoding and streaming software (v0.10)
 ffmpeg1-1.2.12nb4   Decoding, encoding and streaming software (v1.x)
-ffmpeg2-2.8.8       Decoding, encoding and streaming software (v2.x)
-ffmpeg3-3.2         Decoding, encoding and streaming software (v3.x)
+ffmpeg3-3.2.2       Decoding, encoding and streaming software (v3.x)
 ffmpegthumbnailer-2.0.8nb6 Lightweight video thumbnailer that can be used by file managers
 fftw-3.3.5          Collection of fast C routines to compute DFTs
 findutils-4.6.0     The GNU find, locate, updatedb, and xargs utilities
-firefox-50.0.2nb2   Web browser with support for extensions (version 50)
+firefox-50.0.2nb3   Web browser with support for extensions (version 50)
 firefox-l10n-50.0.2 Language packs for www/firefox (version 50)
 flac-1.3.1          Free lossless audio codec
 flex-2.6.0          Fast clone of lex(1), the lexical scanner generator
-flickcurl-1.26nb2   Flickr API library
 fltk-1.3.3nb2       Fast Light Tool Kit for graphical user interfaces
 fluidsynth-1.1.6nb2 Software synthesizer based on SoundFont2
 fontconfig-2.11.1nb1 Library for configuring and customizing font access
@@ -102,7 +98,7 @@ gdbus-codegen-2.50.2 Generate code and/or documentation for one or more D-Bus in
 gdk-pixbuf2-2.36.0  Image loaders for gtk2
 gdk-pixbuf2-xlib-2.36.0 Image loaders for gtk2
 gedit-2.30.4nb25    Lightweight GNOME2 text editor
-geeqie-1.3nb1       Image viewer
+geeqie-1.3nb2       Image viewer
 gegl-0.2.0nb20      Graph based image processing framework (0.2 version)
 getopt-1.1.6        Program to help shell scripts parse command-line parameters
 gettext-lib-0.19.8.1 Internationalized Message Handling Library (libintl)
@@ -112,7 +108,7 @@ ghostscript-fonts-8.11nb3 Postscript fonts for Aladdin Ghostscript
 ghostscript-gpl-9.06nb9 Postscript interpreter
 giflib-5.1.4        GIF image format library
 gimp-2.8.18nb1      The GNU image manipulation program
-git-base-2.10.2     GIT Tree History Storage Tool (base package)
+git-base-2.11.0     GIT Tree History Storage Tool (base package)
 glew-1.13.0         OpenGL Extension Wrangler Library
 glib-1.2.10nb11     Some useful routines for C programming (glib1)
 glib-networking-2.48.0nb1 Network-related giomodules for glib
@@ -122,12 +118,11 @@ glm-0.9.7.0         C++ mathematics library for graphics programming
 gmake-4.1nb2        GNU version of 'make' utility
 gmime-2.6.20        Library for the creation and parsing of MIME messages
 gmp-6.1.1           Library for arbitrary precision arithmetic
-gmpc-11.8.16nb12    GNOME client for the Music Player Daemon
+gmpc-11.8.16nb13    GNOME client for the Music Player Daemon
 gnome-doc-utils-0.20.10nb2 Documentation utilities for the GNOME project
 gnome-icon-theme-3.12.0nb1 Theme consisting of a set of icons for GNOME
 gnome-icon-theme-symbolic-3.12.0nb2 Symbolic icons for the GNOME icon sets
 gnome-media-2.28.5nb38 Set of audio/multimedia applications for GNOME2
-gnome-sharp-2.24.2nb38 C# bindings for the GNOME platform
 gnome-vfs-2.24.4nb29 GNOME Virtual File System (v2)
 gnupg-1.4.21nb1     GNU Privacy Guard, public-Key encryption and digital signatures
 gnupg2-2.0.30nb1    GnuPG with OpenPGP and S/MIME capabilities
@@ -137,10 +132,10 @@ gobject-introspection-1.50.0 GObject Introspection
 gperf-3.0.4         GNU perfect hash function generator
 gpgme-1.6.0nb1      GnuPG Made Easy
 graphite2-1.3.7     Cross-platform rendering for complex writing systems
-grilo-0.2.7nb6      Media browser framework
+grilo-0.2.7nb7      Media browser framework
 gsed-4.2.2nb4       GNU implementation of sed, the POSIX stream editor
 gsettings-desktop-schemas-3.20.0 Collection of GSettings schemas for the GNOME desktop
-gsl-2.2.1           The GNU Scientific Library
+gsl-2.3             The GNU Scientific Library
 gst-ffmpeg-0.10.13nb14 GStreamer ffmpeg plugin
 gst-plugins0.10-a52-0.10.19nb3 Open source multimedia framework - a52 plugin
 gst-plugins0.10-bad-0.10.23nb6 Open source multimedia framework - Bad plugins
@@ -171,12 +166,12 @@ gtkpod-1.0.0nb23    GUI for iPod using GTK2
 gtksourceview2-2.10.5nb26 Text widget that extends GTK2's GtkTextView widget
 gtkspell-2.0.16nb22 Spell checking GtkTextView widget
 guile20-2.0.12nb2   Official extension language for the GNU operating system
-gvfs-1.6.7nb23      Userspace virtual filesystem
+gvfs-1.6.7nb24      Userspace virtual filesystem
 gxemul-0.6.0.1nb1   Framework for full-system computer architecture emulation
 hal-0.5.14nb18      FreeDesktop hardware abstraction layer
 hal-info-20091130nb5 FreeDesktop hardware abstraction layer (info subpackage)
 handbrake-0.9.3nb28 Multiplatform, multithreaded video transcoder
-harfbuzz-1.3.3nb1   OpenType text shaping engine
+harfbuzz-1.3.4      OpenType text shaping engine
 help2man-1.47.4     Generate simple manual pages from program output
 hicolor-icon-theme-0.13 Standard icon theme called hicolor
 hsqldb18-1.8.0.10   Relational database management system witten in pure Java
@@ -185,13 +180,13 @@ hunspell-en_US-20060207 US American English dictionaries for hunspell
 hyena-0.5nb5        Hyena is a C# library used to make awesome applications
 hyphen-2.8.6nb3     Library for high quality hyphenation and justification
 icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
-icu-58.1            Robust and full-featured Unicode services
+icu-58.2            Robust and full-featured Unicode services
 ilmbase-2.2.0nb1    High dynamic-range (HDR) image file format library and tools
 inkscape-0.91nb21   Scalable Vector Graphics (SVG) editor
 intel-microcode-netbsd-20140913 Firmware updates for Intel x86 processors
 intltool-0.51.0nb2  Internationalization Tool Collection
 ipafont-00303nb1    IPA JIS X 0213 fonts (Gothic, P Gothic, Mincho, and P Mincho)
-iso-codes-3.71      List of country, language and currency names
+iso-codes-3.72      List of country, language and currency names
 ja-sazanami-ttf-20040629nb2 Truly free Japanese TrueType font
 jasper-1.900.1nb12  Software-based reference implementation of the JPEG-2000 codec
 jbigkit-2.1         JBIG-KIT lossless image compression library
@@ -222,14 +217,13 @@ libassuan-2.4.3     IPC library used by some of the other GnuPG related packages
 libatomic_ops-7.4.4 Multi-platform library of atomic operations by Hans Boehm
 libaudiofile-0.3.6nb1 Sound library for SGI audio file
 libbonobo-2.32.0nb11 GNOME2 Object activation framework library
-libbonoboui-2.24.4nb27 GNOME2 Object activation framework library (graphical version)
 libcanberra-0.27nb6 Desktop event sound library
 libcddb-1.3.2nb1    Library to access data on a CDDB server
 libcdio-0.93nb4     CD-ROM access library
 libcdio-paranoia-0.93nb2 CD-ROM access library: CDDA support
 libcdr-0.1.3nb2     Corel Draw file format importer library
 libcfg+-0.7.0       Command line and configuration file parsing library
-libchamplain04-0.4.7nb31 Map widget
+libchamplain04-0.4.7nb32 Map widget
 libclucene-2.3.3.4nb6 Text search engine written in C++
 libcroco-0.6.8      Toolkit to parse and manipulate CSS (Cascading Style Sheets)
 libcuefile-0rc475   CUE File library for the musepack decoder
@@ -252,7 +246,7 @@ libexttextcat-3.4.4nb1 Text categorization library
 libffi-3.2.1nb2     Foreign function interface
 libflashsupport-4.2.2011 Additional Interface Support for Linux Flash Player
 libgcroots-0.2.3    Garbage collector supporting library
-libgcrypt-1.7.3nb1  GNU cryptographic library
+libgcrypt-1.7.4     GNU cryptographic library
 libgdata-0.6.6nb20  Google Data API based Glib client library
 libgee-0.18.0nb2    Library providing GObject-based interfaces and classes
 libglade-2.6.4nb23  Runtime interpreter for GLADE GUI files
@@ -260,10 +254,9 @@ libgnome-2.32.1nb25 Core GNOME2 library (non-graphical)
 libgnome-keyring-3.12.0 GNOME password and secret manager
 libgnomecanvas-2.30.3nb18 GNOME Canvas library
 libgnomecanvasmm-2.26.0nb23 C++ bindings for libgnomecanvas
-libgnomeui-2.24.5nb32 Core GNOME2 graphical libraries
 libgpg-error-1.25   Definitions of common error values for all GnuPG components
 libgphoto2-2.5.8nb1 Digital camera access library
-libgpod-0.8.2nb26   Library for accessing iPod onboard databases, playlists, etc
+libgpod-0.8.2nb27   Library for accessing iPod onboard databases, playlists, etc
 libgsf-1.14.34nb1   GNOME2 structured file library
 libical-1.0nb3      Reference implementation of the iCalendar data type and format
 libiconv-1.14nb2    Character set conversion library
@@ -314,7 +307,7 @@ libtheora-1.1.1nb2  Video codec for Ogg multimedia streaming
 libtool-base-2.4.2nb13 Generic shared library support script (the script itself)
 libunique-1.1.6nb22 Library for writing single instance applications
 libunique3-3.0.2nb16 Library for writing single instance applications
-libunistring-0.9.6  Unicode string library
+libunistring-0.9.7  Unicode string library
 libupnp-1.6.19      Portable Universal Plug and Play (UPnP) SDK
 libusb-0.1.12nb4    USB access library (version 0)
 libusb1-1.0.20      USB Access Library (version 1)
@@ -360,7 +353,7 @@ netpbm-10.68.02nb5  Toolkit for conversion of images between different formats
 nettle-3.3          Cryptographic library
 nicovideo-dl-0.0.20120212nb1 Download videos from www.nicovideo.jp
 nkf-2.13nb3         Convert between various Japanese character encodings
-nodejs-7.0.0        V8 JavaScript for clients and servers
+nodejs-7.2.1        V8 JavaScript for clients and servers
 nspluginwrapper-1.4.4nb5 Use Netscape compatible plugins from other platforms
 nspr-4.13.1         Platform-neutral API for system level and libc like functions
 nss-3.27.2nb1       Libraries to support development of security-enabled applications
@@ -371,7 +364,7 @@ openjpeg-2.1.2      JPEG 2000 library
 openslp-1.2.1nb9    Open-source implementation of the Service Location Protocol
 openssl-1.0.2jnb1   Secure Socket Layer and cryptographic library
 orc-0.4.26          Compiler for vector operations
-osabi-NetBSD-7.99.42 Operating System version dummy-package
+osabi-NetBSD-7.99.48 Operating System version dummy-package
 p5-Archive-Zip-1.59 Perl5 module interface to manipulate zip files
 p5-Authen-SASL-2.16nb4 Perl module to handle SASL authentication
 p5-Business-ISBN-3.003 Perl5 module to work with International Standard Book Numbers (ISBNs)
@@ -406,7 +399,6 @@ pangomm-2.40.1      C++ bindings for pango
 password-store-1.6.5 Standard UNIX password manager
 pciids-20150907     Repository of PCI IDs (pci.ids database)
 pcre-8.39           Perl Compatible Regular Expressions library
-pdfmod-0.9.1nb7     PDF Mod is a simple tool for modifying PDF documents
 pdfshuffler-0.6.0   Simple PDF editor
 perl-5.24.0         Practical Extraction and Report Language
 pinentry-1.0.0      Applications for entering PINs or Passphrases
@@ -416,7 +408,7 @@ pkg_rolling-replace-0.24.2 Replace/upgrade packages in-place
 pkg_tarup-1.9.1     Generates binary package(s) from installed pkg(s)
 pkgclean-20051116   Quickly clean up all work directories in pkgsrc
 pkgconf-1.0.1       API-driven pkg-config replacement
-pkglint-5.4.12nb1   Verifier for NetBSD packages
+pkglint-5.4.13      Verifier for NetBSD packages
 png-1.6.26          Library for manipulating PNG images
 podcastdl-0.3.0nb5  Podcastdl is a CLI podcast client
 podofo-0.9.4        Library to work with the PDF file format
@@ -455,7 +447,7 @@ py27-imaging-1.1.7nb10 PIL, the Python Imaging Library
 py27-jinja2-2.7.3   Small but fast and easy to use stand-alone template engine
 py27-libxml2-2.9.2  Python wrapper for libxml2
 py27-libxslt-1.1.28nb2 Python wrapper for libxslt
-py27-lxml-3.6.4     Python binding for libxml2 and libxslt
+py27-lxml-3.7.0     Python binding for libxml2 and libxslt
 py27-markupsafe-0.23 Implements a XML/HTML/XHTML Markup safe string for Python
 py27-mcomix-1.2.1nb3 GTK2 comic book viewer
 py27-newt-0.52.16nb1 Windowing toolkit based on libslang2
@@ -466,14 +458,14 @@ py27-pytz-2016.7    World timezone definitions, modern and historical
 py27-qt4-4.11.4nb3  Python binding for Qt4
 py27-reportlab-3.3.0 Powerful PDF-generating toolkit for Python
 py27-roman-2.0.0    Integer to Roman numerals converter for Python
-py27-setuptools-29.0.1 New Python packaging system
+py27-setuptools-30.4.0 New Python packaging system
 py27-sip-4.17       Tool to create Python bindings for C++ libraries
 py27-six-1.10.0     Python 2 and 3 compatibility utilities
 py27-snowballstemmer-1.2.1 Python module with stemmer algorithms for multiple natural languages
 py27-sphinx-1.4.1   Python documentation generator
 py27-sphinx-rtd-theme-0.1.9 Sphinx readthedocs.org theme
 py27-sqlite2-2.6.3nb12 SQLite database adapter for Python
-py27-sqlite3-2.7.12nb7 Built-in sqlite support for Python 2.5 and up
+py27-sqlite3-2.7.12nb8 Built-in sqlite support for Python 2.5 and up
 py27-subprocess32-3.2.7 Backport of the subprocess module from Python 3.2/3.3 for use on 2.x
 py27-xml-0.8.4nb5   Collection of libraries to process XML with Python
 py35-expat-3.5.1    Python interface to expat
@@ -520,7 +512,7 @@ ruby200-unf_ext-0.0.7.2 Unicode Normalization Form support library for CRuby
 ruby22-addressable-2.4.0 Replacement for the URI Implementation of standard librrary
 ruby22-base-2.2.6   Ruby 2.2.6 release minimum base package
 ruby22-bsearch-1.5nb2 Binary search library for Ruby
-ruby22-cairo-1.15.2 Ruby bindings for cairo
+ruby22-cairo-1.15.3 Ruby bindings for cairo
 ruby22-childprocess-0.5.9 Simple and reliable solution for controlling external programs
 ruby22-delayer-0.0.2 Ruby module to delay the processing
 ruby22-delayer-deferred-1.0.4 Deferred for Delayer
@@ -538,7 +530,7 @@ ruby22-httpclient-2.8.2.4 HTTP accessing library for Ruby
 ruby22-instance_storage-1.0.0 Manage class instances with dictionary
 ruby22-locale-2.1.2 Pure ruby library which provides basic APIs for localization
 ruby22-memoist-0.15.0 Replacement of memoizable, memoize methods invocation
-ruby22-mikutter-3.4.8 Simple, powerful, and moeful twitter client
+ruby22-mikutter-3.5.0alpha1 Simple, powerful, and moeful twitter client
 ruby22-mini_portile-0.6.2 Simplistic port-like solution for developers
 ruby22-mini_portile2-2.1.0 Simple autoconf builder for developers
 ruby22-moneta-0.8.0 Unified interface to key/value stores
@@ -559,19 +551,18 @@ samba-3.6.25nb4     SMB/CIFS protocol server suite
 sane-backends-1.0.25nb4 API for access to scanners, digital cameras, frame grabbers, etc
 sayaka-3.3.0nb1     Terminal specific Twitter client
 schroedinger-1.0.11 Dirac video compression library
-scribus-1.4.3nb8    Publishing layout with graphical interface
-seamonkey-2.40nb6   Full-featured gecko-based browser
+seamonkey-2.40nb7   Full-featured gecko-based browser
 seamonkey-l10n-2.40 Language packs for www/seamonkey
-shared-mime-info-1.7 Core database of common types
+shared-mime-info-1.8 Core database of common types
 shotwell-0.22.0nb8  Shotwell is a photo organizer for the GNOME desktop
 smartmontools-6.5   Control and monitor storage systems using SMART
 smpeg-0.4.4nb16     SDL MPEG Player Library
 sound-juicer-2.32.0nb5 CD ripping tool
 sourcehansans-fonts-1.000 Set of Pan-CJK fonts from Adobe
-speex-1.2rc2        Open-source, patent-free voice codec
+speex-1.2.0         Open-source, patent-free voice codec
 speexdsp-1.2rc3     Open-source, patent-free voice codec DSP library
 spidermonkey17-17.0.0nb1 Standalone JavaScript implementation in C
-sqlite3-3.15.2nb1   SQL Database Engine in a C Library
+sqlite3-3.15.2nb2   SQL Database Engine in a C Library
 startup-notification-0.12nb3 X11 application startup notification library
 suse_alsa-13.1nb2   Linux compatibility package for ALSA
 suse_base-13.1nb13  Linux compatibility package
@@ -628,7 +619,6 @@ url2pkg-2.28        Tool to automate initial steps in building a package
 urw-fonts-2.0       Standard postscript fonts (cyrillicized)
 usbids-20081118     Repository of USB IDs (usb.ids database)
 vala-0.32.0         Compiler for the GObject type system
-vlc-2.2.4nb1        VLC media player and streaming server
 vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
 webkit24-gtk3-2.4.11nb4 GTK3 port of the WebKit browser engine
 wget-1.18nb3        Retrieve files from the 'net via HTTP and FTP
@@ -654,6 +644,6 @@ xnp2-0.86nb1        Neko Project II PC-9801 emulator
 xv-3.10anb23        X11 program that displays images of various formats
 xvidcore-1.3.3      ISO MPEG-4 compliant video codec
 yasm-1.3.0          Complete rewrite of the NASM assembler with BSD license
-youtube-dl-20161118 Download videos from youtube.com
+youtube-dl-20161209 Download videos from youtube.com
 zip-3.0nb3          Create/update ZIP files compatible with pkzip
 zonetab-0           NetBSD zone.tab file
