@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-odroid_c1.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.42-evbarm-earmv7hf-201611121350Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.51-evbarm-earmv7hf-201612180110Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q4.tar.gz
 
@@ -22,8 +22,8 @@ KERNELBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-${TYPE}.ub.gz
 SETS=${MNT_CDROM}/evbarm/binary/sets
 beagleboard=${MNT_CDROM}/evbarm/binary/gzimg/armv7.img
 
-#LIST=man misc modules tests text xbase xcomp xetc xfont xserver
-LIST=man modules xbase xcomp xetc xfont xserver 
+LIST=man misc modules tests text xbase xcomp xetc xfont xserver
+#LIST=man modules xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
