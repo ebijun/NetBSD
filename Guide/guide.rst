@@ -886,10 +886,10 @@ developer
 ~~~~~~~~~~~
 * 直接ソースを変更できる
 * CVS/FTP/WWWサーバの内容
-* 世界中で256人
+* 世界中で160人
 * GNATSでバグ管理
 * cvsweb.netbsd.org
-* 日本人40人
+* 日本人22人
 * http://www.NetBSD.org/people/developers.html
 
 NetBSD開発者世界分布図
@@ -951,7 +951,7 @@ Port-maintainer
 * CardBusサポート
 * MIPS/SH/m68K
 * NetBSD書籍が世界一多く出版される
-* developer53人
+* developer22人
 
 クロス開発環境
 -------------
