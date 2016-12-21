@@ -872,7 +872,7 @@ http://www-soc.lip6.fr/~bouyer/NetBSD-tests/xen/ に、i386/amd64に関する自
   各実装に関する担当者
 * Developer
   CVS/WWW/FTP等開発資産に書き込みできる
-* アクティブなのは188人
+* アクティブなのは160人
 
 NetBSD Foundation,Inc
 ~~~~~~~~~~~~~~~~~~~~~~~~
