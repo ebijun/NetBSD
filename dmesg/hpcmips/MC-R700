@@ -1,19 +1,16 @@
-pmap_steal_memory: seg 0: 0x4ee 0x4ee 0x1ffe 0x1ffe
-pmap_steal_memory: seg 0: 0x52d 0x52d 0x1ffe 0x1ffe
-pmap_steal_memory: seg 0: 0x52f 0x52f 0x1ffe 0x1ffe
 total memory banks = 2
-memory bank 0 = 00000000 5048KB(0x4ee000)
-memory bank 1 = 0x4ee000 27720KB(0x1b12000)
+memory bank 0 = 00000000 5108KB(0x4fd000)
+memory bank 1 = 0x4fd000 27660KB(0x1b03000)
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.33 (GENERIC.201607080210Z)
+NetBSD 7.99.52 (GENERIC.201612231300Z)
 NEC MC-R700 (NEC VR4121 rev0.0 131.072MHz)
 total memory = 32768 KB
-avail memory = 26876 KB
+avail memory = 26816 KB
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0: NEC VR4100 CPU (0xc60) Rev. 6.0 with software emulated floating point
@@ -37,6 +34,7 @@ vrkiu0 at vr4102ip0 addr 0x0b000180-019f
 hpckbd0 at vrkiu0
 wskbd0 at hpckbd0: console keyboard
 vrpmu0 at vr4102ip0 addr 0x0b0000a0-00bf
+vrpmu: GPIO[3] activation
 vrdsu0 at vr4102ip0 addr 0x0b0000e0-00e7
 vrled0 at vr4102ip0 addr 0x0b000240-024f
 vrpiu0 at vr4102ip0 addr 0x0b000120-013f, 0x0b0002a0-02bf
@@ -53,6 +51,7 @@ usb0 at ohci0: USB revision 1.0
 vrc4172pwm0 at vr4102ip0 addr 0x15003880-3885
 vraiu0 at vr4102ip0 addr 0x0b000160-017f
 audio0 at vraiu0: half duplex, playback, capture
+spkr0 at audio0: PC Speaker (synthesized)
 vrisab0 at vrgiu0: ISA port 0x14000000-0x18000000 mem 0x10000000-0x14000000
 isa0 at vrisab0
 pcic0 at isa0 port 0x3e0-0x3e1 iomem 0x70000-0x73fff irq 589827
@@ -86,22 +85,15 @@ wd0: <TS8GCF133>
 wd0: drive supports 1-sector PIO transfers, LBA addressing
 wd0: 7647 MB, 15538 cyl, 16 head, 63 sec, 512 bytes/sect x 15662304 sectors
 wd0: drive supports PIO mode 4
+WARNING: 3 errors while detecting hardware; check system log.
 boot device: wd0
 pcmcia0: card irq 3
 root on wd0a dumps on wd0b
 pcmcia0: card irq 3
 pcmcia0: card irq 3
 root file system type: ffs
-kern.module.path=/stand/hpcmips/7.99.33/modules
-WARNING: clock lost 6399 days
+kern.module.path=/stand/hpcmips/7.99.52/modules
+WARNING: clock lost 6566 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 pid 1(init): ABI set to O32 (e_flags=0x1007)
-hpcfb: 800x600 pixels, 65536 colors, 100x60 chars
-wsdisplay0: screen 1 added (std, vt100 emulation)
-hpcfb: 800x600 pixels, 65536 colors, 100x60 chars
-wsdisplay0: screen 2 added (std, vt100 emulation)
-hpcfb: 800x600 pixels, 65536 colors, 100x60 chars
-wsdisplay0: screen 3 added (std, vt100 emulation)
-hpcfb: 800x600 pixels, 65536 colors, 100x60 chars
-wsdisplay0: screen 4 added (std, vt100 emulation)
