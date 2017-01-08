@@ -3,10 +3,10 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2016-12-11/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-01-28/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.44-evbarm-${ARCH}-201612090750Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.55-evbarm-${ARCH}-201701060020Z.iso
 
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
@@ -28,7 +28,7 @@ KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
 
-#Firmware
+#Firmware: 2017/01/08
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 

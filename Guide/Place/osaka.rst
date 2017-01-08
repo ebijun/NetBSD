@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -78,9 +78,10 @@ KOFまとめ
  environment 0g,桜川,イベントスペース。阿木譲さんその後
  深化,谷町六丁目,到達不可能な潜水艦バー
  ハーフェン,江坂,図書館近くのビアバー
- ドフロワー,梅田,Hardfloorも来たテクノバー。 
+ dfloor,梅田,Hardfloorも来たテクノバー。 
  IN THA DOOR Brewing,二宮,自家醸造
  神戸湊ビール,新開地,わんぱくサンドとは何か
+ カレイヤー,,メタルなカレー屋
 
 KOF主な発表
 ~~~~~~~~~~~~~~
