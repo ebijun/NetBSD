@@ -1,0 +1,62 @@
+00000000-00000fff : reserved
+00001000-0009fbff : System RAM
+0009fc00-0009ffff : reserved
+000a0000-000bffff : PCI Bus 0000:00
+  000a0000-000bffff : Video RAM area
+000c0000-000c7fff : Video ROM
+000cf000-000cffff : Adapter ROM
+000e0000-000fffff : reserved
+  000f0000-000fffff : System ROM
+00100000-7f375fff : System RAM
+  01000000-014846fb : Kernel code
+  014846fc-01673c7f : Kernel data
+  0171f000-01791fff : Kernel bss
+7f376000-7f3befff : reserved
+7f3bf000-7f46dfff : System RAM
+7f46e000-7f4befff : ACPI Non-volatile Storage
+7f4bf000-7f4eefff : System RAM
+7f4ef000-7f4fefff : ACPI Tables
+7f4ff000-7f4fffff : System RAM
+7f500000-7fffffff : reserved
+  7f800000-7ffbffff : Graphics Stolen Memory
+80000000-febfffff : PCI Bus 0000:00
+  80000000-8fffffff : 0000:00:02.0
+  90000000-90ffffff : PCI Bus 0000:01
+  91000000-91ffffff : PCI Bus 0000:02
+  92000000-92ffffff : PCI Bus 0000:03
+  93000000-940fffff : PCI Bus 0000:03
+  94100000-951fffff : PCI Bus 0000:02
+    94100000-94101fff : 0000:02:00.0
+  95200000-962fffff : PCI Bus 0000:01
+    95200000-9523ffff : 0000:01:00.0
+      95200000-9523ffff : ATL1E
+  96300000-9637ffff : 0000:00:02.1
+  96380000-963fffff : 0000:00:02.0
+  96400000-9643ffff : 0000:00:02.0
+  96440000-96443fff : 0000:00:1b.0
+    96440000-96443fff : ICH HD audio
+  96444000-964443ff : 0000:00:1f.2
+    96444000-964443ff : ahci
+  96444400-964447ff : 0000:00:1d.7
+    96444400-964447ff : ehci_hcd
+  96445000-96445fff : Intel Flush Page
+  e0000000-efffffff : PCI MMCONFIG 0000 [bus 00-ff]
+    e0000000-efffffff : reserved
+      e0000000-efffffff : pnp 00:00
+fec00000-fec00fff : reserved
+  fec00000-fec003ff : IOAPIC 0
+fed00000-fed003ff : HPET 0
+  fed00000-fed003ff : PNP0103:00
+fed14000-fed19fff : reserved
+  fed14000-fed17fff : pnp 00:00
+  fed18000-fed18fff : pnp 00:00
+  fed19000-fed19fff : pnp 00:00
+fed1c000-fed1ffff : reserved
+  fed1c000-fed1ffff : pnp 00:00
+    fed1f410-fed1f414 : iTCO_wdt
+      fed1f410-fed1f414 : iTCO_wdt
+fee00000-fee00fff : Local APIC
+  fee00000-fee00fff : reserved
+    fee00000-fee00fff : pnp 00:00
+ff800000-ffffffff : INT0800:00
+  fff00000-ffffffff : reserved
