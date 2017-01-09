@@ -1,21 +1,21 @@
-:1,$s/2016-10-08/2016-10-08/g
-:1,$s/7.99.33/7.99.39/g
-:1,$s/201610080620Z/201610080620Z/g
+:1,$s/2017-01-09/2017-01-09/g
+:1,$s/7.1_RC1/7.1_RC1/g
+:1,$s/201701071950Z/201701071950Z/g
 
 
 To: port-hpcmipsnetbsd.org@localhost
-Subject: 2016-10-08-netbsd-hpcmips.img 
+Subject: 2017-01-09-netbsd-hpcmips.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2016-10-08-netbsd-hpcmips.img.gz for hpcmips.
+I've updated 2017-01-09-netbsd-hpcmips.img.gz for hpcmips.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/hpcmips/2016-10-08/2016-10-08-netbsd-hpcmips.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/hpcmips/7.1_RC1/2017-01-09-netbsd-hpcmips.img.gz
 
 Feature:
-- NetBSD 7.99.39 201610080620Z hpcmips from nyftp.netbsd
-- boot with multiuser again!!!!!
+- NetBSD 7.1_RC1 201701071950Z hpcmips from nyftp.netbsd
+- pkgsrc: /usr/pkgsrc: 2017-01-07
 - dmesg:
-  https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcmips/sigmarion
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcmips/7.1/MC-R700
 
 - Copy image to CompactFlash
 - Set hpcmips machine.
@@ -23,6 +23,8 @@ Feature:
 -- select Machine
 -- select root partition
   and comes as you are as you want to be.
+- tpctl: touch panel calibration:
+  click + 5 times
 - login root (no passwd)
 
 Features:
@@ -31,9 +33,6 @@ Features:
 Installed Packages:
  not yet.
 
-BUGS:
-  ntpd failed??
-  halt -> init failed with pid -?????
 
 Keyboard layout checkpoint:
 /etc/wscons.conf
