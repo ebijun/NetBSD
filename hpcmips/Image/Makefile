@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.51-hpcmips-201612181740Z.iso
+IMAGE=/usr/release/images/NetBSD-7.1_RC1-hpcmips-201701071950Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2016-12-17.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2017-01-07.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
 INSTALLATION=/mnt1/hpcmips/installation
