@@ -5,8 +5,10 @@ GraphicsMagick-1.3.25 X application for displaying and manipulating images
 ImageMagick-7.0.3.10 Package for display and interactive manipulation of images
 ORBit2-2.14.19nb4   High-performance CORBA ORB with C language support
 OmegaT-3.5.01       The translation memory (TM) application written in Java
+PC6001VX-2.30.0     Cross platform PC-6001 emulator
 R-3.3.2             Statistical language for data analysis and graphics
 SDL-1.2.15nb19      Simple DirectMedia Layer, a cross-platform multimedia library
+SDL2-2.0.5nb2       Simple DirectMedia Layer is a cross-platform multimedia library
 SDL_mixer-1.2.12nb6 Multi-channel audio mixer library
 acroread9-9.5.5nb3  View, distribute and print PDF documents
 acroread9-font-share-9.1 Asian Font Packs for Acrobat Reader 9 (common base)
@@ -182,6 +184,7 @@ hyphen-2.8.6nb3     Library for high quality hyphenation and justification
 icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
 icu-58.2            Robust and full-featured Unicode services
 ilmbase-2.2.0nb1    High dynamic-range (HDR) image file format library and tools
+imake-1.0.7nb3      Imake and other utilities from modular X.org
 inkscape-0.91nb21   Scalable Vector Graphics (SVG) editor
 intel-microcode-netbsd-20140913 Firmware updates for Intel x86 processors
 intltool-0.51.0nb2  Internationalization Tool Collection
@@ -321,6 +324,8 @@ libwmf-0.2.8.4nb16  Library for reading and converting WMF (Windows Meta Files)
 libwnck-2.30.6nb19  Library to write pagers and tasklists
 libwpd-0.10.1nb1    Library for importing and exporting WordPerfect(tm) documents
 libwpg-0.3.1nb2     Library for importing and converting Corel WordPerfect Graphics images
+libxcb-1.12         X protocol C-language Binding
+libxkbcommon-0.7.0  Library to handle keyboard descriptions
 libxml2-2.9.4nb1    XML parser library from the GNOME project
 libxslt-1.1.29nb1   XSLT parser library from the GNOME project
 libyaml-0.1.7       YAML 1.1 parser and emitter written in C
@@ -357,6 +362,7 @@ nodejs-7.2.1        V8 JavaScript for clients and servers
 nspluginwrapper-1.4.4nb5 Use Netscape compatible plugins from other platforms
 nspr-4.13.1         Platform-neutral API for system level and libc like functions
 nss-3.27.2nb2       Libraries to support development of security-enabled applications
+openal-soft-1.17.2  Alternative OpenAL implementation
 openexr-2.2.0nb3    High dynamic-range (HDR) image file format library and tools
 openjdk7-1.7.80nb4  Open-source implementation of the Java Platform, Standard Edition
 openjdk8-1.8.74nb1  Open-source implementation of the Java Platform, Standard Edition
@@ -467,6 +473,7 @@ py27-sphinx-rtd-theme-0.1.9 Sphinx readthedocs.org theme
 py27-sqlite2-2.6.3nb12 SQLite database adapter for Python
 py27-sqlite3-2.7.12nb8 Built-in sqlite support for Python 2.5 and up
 py27-subprocess32-3.2.7 Backport of the subprocess module from Python 3.2/3.3 for use on 2.x
+py27-xcbgen-1.12    XCB protocol descriptions (in XML)
 py27-xml-0.8.4nb5   Collection of libraries to process XML with Python
 py35-expat-3.5.1    Python interface to expat
 python27-2.7.12nb4  Interpreted, interactive, object-oriented programming language
@@ -475,6 +482,11 @@ qemu-2.7.0nb1       CPU emulator using dynamic translation
 qt3-libs-3.3.8nb30  C++ X GUI toolkit
 qt4-libs-4.8.7nb4   C++ X GUI toolkit
 qt4-tools-4.8.7nb2  QT GUI (WYSIWYG) builder and other tools
+qt5-qtbase-5.5.1nb9 C++ X GUI toolkit
+qt5-qtdeclarative-5.5.1nb4 Qt5 module for declarative framework
+qt5-qtmultimedia-5.5.1nb6 Qt5 module for multimedia
+qt5-qtx11extras-5.5.1nb4 Qt5 module for X11 extras
+qt5-qtxmlpatterns-5.5.1nb4 Qt5 module for XML Patterns
 raptor2-2.0.15nb2   RDF Parser Toolkit written in C
 rarian-0.8.1nb4     Documentation metadata library
 rasqal-0.9.33nb2    Library that handles RDF query syntaxes
@@ -610,6 +622,7 @@ tex-japanese-1.3pl30855 Substitute for a babel package for japanese
 tiff-4.0.7nb1       Library and tools for reading and writing TIFF data files
 tk-8.6.6            Graphical toolkit for TCL
 totem-pl-parser-3.4.5nb5 Totem playlist parser
+tradcpp-0.5.2nb2    Traditional (K&R-style) C preprocessor
 tree-1.7.0          Print a text or HTML tree diagram of a directory structure
 ttmkfdir2-20021109nb6 Tool that creates a fonts.scale file
 uim-1.8.6nb33       Multilingual input method library
@@ -630,8 +643,12 @@ wv-1.2.9nb12        Library and executables to access Microsoft Word files
 wxGTK30-3.0.2nb8    wxWidgets GUI library
 x11-links-1.02      Shadow tree of links to native X11 headers and libraries
 x264-devel-20161023nb1 GPL licensed H.264 encoder
+xcb-2.4nb1          Extensible, multiple cut buffers for X
+xcb-proto-1.12      XCB protocol descriptions (in XML)
 xcb-util-0.4.0      XCB Utilities
+xcb-util-image-0.4.0 XCB port of Xlib's XImage and XShmImage
 xcb-util-keysyms-0.4.0 XCB Utilities
+xcb-util-wm-0.4.1   Client and window-manager helpers for ICCCM and EWMH
 xcb-util036-0.3.6nb1 XCB Utilities (old 0.3.6 release)
 xdg-utils-1.1.1nb1  Tools to assist applications with various desktop integration tasks
 xgalaga-2.0.34nb4   Very fast true-to-the-original port of galaga for X11
@@ -642,6 +659,7 @@ xmlcatmgr-2.2nb1    XML and SGML catalog manager
 xmlto-0.0.28nb1     Tool to help transform XML documents into other formats
 xmms-1.2.11nb5      X Multimedia System - an audio player with a Winamp GUI
 xnp2-0.86nb1        Neko Project II PC-9801 emulator
+xorg-cf-files-1.0.6nb2 Xorg imake rules
 xv-3.10anb23        X11 program that displays images of various formats
 xvidcore-1.3.3      ISO MPEG-4 compliant video codec
 yasm-1.3.0          Complete rewrite of the NASM assembler with BSD license
