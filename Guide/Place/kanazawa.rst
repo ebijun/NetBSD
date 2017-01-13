@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2016 Jun Ebihara All rights reserved.
+ Copyright (c) 2016-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -82,3 +82,4 @@ togetterまとめ
  オヨヨ書林,せせらぎ通り,根津にあって通っていた。青山から金沢に移転。
  スズヤ電子パーツセンター,せせらぎ通り,串揚げいやさかになってる
  カナザワ映画祭,ロキシー劇場,オープニングがマッドマックス野外上映。狂い咲きサンダーロード
+ 柳宗理記念デザイン研究所,橋場町,金沢美術工芸大学で教鞭をとっておられた。
