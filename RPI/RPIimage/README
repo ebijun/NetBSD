@@ -43,6 +43,9 @@ Update:
   http://mail-index.netbsd.org/source-changes/2017/01/12/msg080887.html
 - pkgsrc/misc/raspberrypi-userland:
   http://mail-index.netbsd.org/pkgsrc-changes/2017/01/12/msg151413.html
+- hardware RNG driver
+  http://mail-index.netbsd.org/port-arm/2016/12/16/msg004011.html
+  http://mail-index.netbsd.org/source-changes/2016/12/17/msg079956.html
 - bind-9.10.4-P5
   http://mail-index.netbsd.org/source-changes/2017/01/12/msg080889.html
 - ruby22-mikutter-3.5.1
@@ -232,8 +235,6 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   https://twitter.com/isaki68k/status/625138538271502337
 
 Todo:
-- testers wanted -- hardware RNG driver patches by Taylor R Campbell
-  http://mail-index.netbsd.org/port-arm/2016/12/16/msg004011.html
 - set2pkg: update via pkgsrc.
 - HDMI Display failure on X
   - On-Lap 2501M (reported from @matoken) 
