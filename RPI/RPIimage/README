@@ -36,15 +36,17 @@ Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Update:
-- NetBSD-current 7.99.44 evbarm-earmv6hf 201612090750Z rpi.img from nyftp.
-- Fix CWE-120/CVE-2016-6559: 
-   BSD libc contains a buffer overflow vulnerability in link_ntoa()
-   https://cwe.mitre.org/data/definitions/120.html
-   https://www.kb.cert.org/vuls/id/548487
-   http://jvn.jp/vu/JVNVU91242711/
-   http://cvsweb.netbsd.org/bsdweb.cgi/src/lib/libc/net/linkaddr.c
-- spkr0 at audio0
-- ruby22-mikutter-3.4.8
+- NetBSD-current 7.99.58 evbarm-earmv6hf 201612090750Z rpi.img from nyftp.
+- firmware and vchiq updates:
+  http://mail-index.netbsd.org/port-arm/2017/01/12/msg004077.html
+  http://mail-index.netbsd.org/source-changes/2017/01/12/msg080883.html
+  http://mail-index.netbsd.org/source-changes/2017/01/12/msg080887.html
+- pkgsrc/misc/raspberrypi-userland:
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/01/12/msg151413.html
+- bind-9.10.4-P5
+  http://mail-index.netbsd.org/source-changes/2017/01/12/msg080889.html
+- ruby22-mikutter-3.5.1
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/01/08/msg151276.html
 - XXX: dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1.
 - XXX: I've got error report on using Sandisk/TOSHIBA microSD.
 
