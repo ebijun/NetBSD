@@ -11,3 +11,13 @@ tar xzvf syssrc.tgz -C /
 tar xzvf xsrc.tgz -C /
 mkdir /usr/obj
 (cd /usr/src;./build.sh -m hpcmips tools)
+
+
+#Bootstrapping nbmake
+#         MAKECONF file:       /etc/mk.conf (File not found)
+#         TOOLDIR path:        /usr/src/obj/tooldir.NetBSD-7.1_RC1-i386
+#         DESTDIR path:        /usr/src/obj/destdir.hpcmips
+#         RELEASEDIR path:     /usr/src/obj/releasedir
+#         Created /usr/src/obj/tooldir.NetBSD-7.1_RC1-i386/bin/nbmake
+#         Updated makewrapper: /usr/src/obj/tooldir.NetBSD-7.1_RC1-i386/bin/nbmake-hpcmips
+#         Tools built to /usr/src/obj/tooldir.NetBSD-7.1_RC1-i386
