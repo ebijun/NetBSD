@@ -9,4 +9,5 @@ tar xzvf sharesrc.tgz -C /
 tar xzvf src.tgz -C /
 tar xzvf syssrc.tgz -C /
 tar xzvf xsrc.tgz -C /
+mkdir /usr/obj
 (cd /usr/src;./build.sh -m hpcmips tools)
