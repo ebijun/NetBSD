@@ -1,0 +1,12 @@
+cd /usr
+ftp http://cdn.netbsd.org/pub/NetBSD/NetBSD-7.1_RC1/source/sets/gnusrc.tgz
+ftp http://cdn.netbsd.org/pub/NetBSD/NetBSD-7.1_RC1/source/sets/sharesrc.tgz
+ftp http://cdn.netbsd.org/pub/NetBSD/NetBSD-7.1_RC1/source/sets/src.tgz
+ftp http://cdn.netbsd.org/pub/NetBSD/NetBSD-7.1_RC1/source/sets/xsrc.tgz
+ftp http://cdn.netbsd.org/pub/NetBSD/NetBSD-7.1_RC1/source/sets/syssrc.tgz
+tar xzvf gnusrc.tgz -C /
+tar xzvf sharesrc.tgz -C /
+tar xzvf src.tgz -C /
+tar xzvf syssrc.tgz -C /
+tar xzvf xsrc.tgz -C /
+(cd /usr/src;./build.sh -m hpcmips tools)
