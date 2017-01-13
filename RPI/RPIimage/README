@@ -1,4 +1,4 @@
-VERSION: :1,$s/2016-12-11/2016-12-11/g
+VERSION: :1,$s/2016-12-11/2017-01-27/g
 ISO:     :1,$s/201612090750Z/201612090750Z/g
 NetBSD:  :1,$s/7.99.44/7.99.44/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
@@ -47,8 +47,11 @@ Update:
   http://mail-index.netbsd.org/source-changes/2017/01/12/msg080889.html
 - ruby22-mikutter-3.5.1
   http://mail-index.netbsd.org/pkgsrc-changes/2017/01/08/msg151276.html
-- XXX: dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1.
-- XXX: I've got error report on using Sandisk/TOSHIBA microSD.
+
+Problem:
+- sdhc(4) can't recognize some kind of microSD card
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=51732
+- dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1
 
 security.pax.mprotect.enabled
   http://netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
