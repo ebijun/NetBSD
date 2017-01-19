@@ -1,9 +1,9 @@
-#! /usr/pkg/bin/ruby200
+#! /usr/pkg/bin/ruby22
 
 require 'open-uri'
 require 'nokogiri'
 
-url = 'http://togetter.com/id/ebijun?page='+ARGV[0]
+url = 'https://togetter.com/id/ebijun?page='+ARGV[0]
 
 charset = nil
 
