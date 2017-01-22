@@ -24,6 +24,15 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2-1.2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
 
+Kernel for RPI3:
+Include re-compiled kernel to RPI3 work well. 
+- http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
+- http://mail-index.netbsd.org/port-arm/2016/12/06/msg003995.html
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-27-earmv6hf/RPI3/
+
+If you use un-patched-original kernel.
+ mv /boot/kernel7.img.orignal /boot/kernel7.img
+
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
@@ -33,7 +42,6 @@ Update:
   http://mail-index.netbsd.org/port-arm/2017/01/12/msg004077.html
   http://mail-index.netbsd.org/source-changes/2017/01/12/msg080883.html
   http://mail-index.netbsd.org/source-changes/2017/01/12/msg080887.html
-  still need update boot area
 - pkgsrc/misc/raspberrypi-userland:
   http://mail-index.netbsd.org/pkgsrc-changes/2017/01/12/msg151413.html
 - hardware RNG driver
@@ -43,7 +51,6 @@ Update:
   http://mail-index.netbsd.org/source-changes/2017/01/12/msg080889.html
 - ruby22-mikutter-3.5.1
   http://mail-index.netbsd.org/pkgsrc-changes/2017/01/08/msg151276.html
-- XXX:no need re-compile RPI3 on 1200MHz clockup
 
 Problem:
 - sdhc(4) can't recognize some kind of microSD card
