@@ -1,4 +1,4 @@
-VERSION: :1,$s/2017-01-27/2017-01-27/g
+VERSION: :1,$s/2017-01-28/2017-01-28/g
 ISO:     :1,$s/201701112040Z/201701112040Z/g
 NetBSD:  :1,$s/7.99.58/7.99.58/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
@@ -6,13 +6,13 @@ PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-01-27-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2017-01-28-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-01-27-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-01-28-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-27-earmv6hf/2017-01-27-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-27-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/2017-01-28-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/MD5
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -28,7 +28,7 @@ Kernel for RPI3:
 Include re-compiled kernel to RPI3 work well. 
 - http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
 - http://mail-index.netbsd.org/port-arm/2016/12/06/msg003995.html
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-27-earmv6hf/RPI3/
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/RPI3/
 
 If you use un-patched-original kernel.
  mv /boot/kernel7.img.orignal /boot/kernel7.img
@@ -93,7 +93,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-01-27/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-01-28/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -101,7 +101,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-27-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -318,7 +318,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-01-27/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-01-28/
 
 Installed Packages:
 kterm
