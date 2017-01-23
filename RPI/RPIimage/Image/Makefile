@@ -158,10 +158,10 @@ kernel:
 	gunzip < ${KERNELBIN}  > ${MNT}/kernel.img
 	gunzip < ${KERNELBIN7} > ${MNT}/kernel7.img
 	umount ${MNT}
-	mount /dev/${VND}a ${MNT}
-	gunzip < ${KERNEL}  > ${MNT}/netbsd.earmv6hf
-	gunzip < ${KERNEL7} > ${MNT}/netbsd.earmv7hf
-	umount ${MNT}
+#	mount /dev/${VND}a ${MNT}
+#	gunzip < ${KERNEL}  > ${MNT}/netbsd.earmv6hf
+#	gunzip < ${KERNEL7} > ${MNT}/netbsd.earmv7hf
+#	umount ${MNT}
 	vnconfig -u ${VND}
 
 kernel-update:
