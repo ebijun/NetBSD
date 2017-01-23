@@ -167,7 +167,8 @@ kernel:
 kernel-update:
 	vnconfig ${VND} ${FILE}
 	mount /dev/${VND}e ${MNT}
-#	cp /usr/obj/kernel/earmv6hf/RPI/netbsd.bin ${MNT}/kernel.img
+	mv  ${MNT}/kernel.img ${MNT}/kernel.img.original
+	cp /usr/obj/kernel/earmv6hf/RPI/netbsd.bin ${MNT}/kernel.img
 	mv  ${MNT}/kernel7.img ${MNT}/kernel7.img.original
 	cp /usr/obj/kernel/earmv6hf/RPI2/netbsd.bin ${MNT}/kernel7.img
 	umount ${MNT}
