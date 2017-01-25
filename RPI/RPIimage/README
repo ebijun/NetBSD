@@ -1,6 +1,6 @@
 VERSION: :1,$s/2017-01-28/2017-01-28/g
-ISO:     :1,$s/201701112040Z/201701112040Z/g
-NetBSD:  :1,$s/7.99.58/7.99.58/g
+ISO:     :1,$s/201701190410Z/201701190410Z/g
+NetBSD:  :1,$s/7.99.59/7.99.59/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
@@ -24,20 +24,29 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2-1.2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
 
-Kernel for RPI3:
-Include re-compiled kernel to RPI3 work well. 
+Kernel update
+Include re-compiled kernel to RPI work well. 
+1. RPI3: still need aaa->aaa_addr == BCM2835_BSC0_BASE patch.
 - http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
 - http://mail-index.netbsd.org/port-arm/2016/12/06/msg003995.html
+
+2. update to dwc_gmac.c fix :  Mon Jan 23 08:36:23 UTC 2017
+- http://mail-index.netbsd.org/source-changes/2017/01/23/msg081272.html
+
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/RPI/
 http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/RPI3/
 
 If you use un-patched-original kernel.
  mv /boot/kernel7.img.orignal /boot/kernel7.img
+ mv /boot/kernel.img.orignal /boot/kernel.img
 
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
+ updates:
+ https://github.com/ebijun/NetBSD/commit/a023a59b9ba2ed72e6e5c2a3541f5897a4e6f29e#diff-4a755d73dbba5da21bbf783139f086dc
 
 Update:
-- NetBSD-current 7.99.58 evbarm-earmv6hf 201701112040Z rpi.img from nyftp.
+- NetBSD-current 7.99.59 evbarm-earmv6hf 201701190410Z rpi.img from nyftp.
 - firmware and vchiq updates:
   http://mail-index.netbsd.org/port-arm/2017/01/12/msg004077.html
   http://mail-index.netbsd.org/source-changes/2017/01/12/msg080883.html
@@ -273,14 +282,14 @@ pkgsrc Todo:
 
 =====================
 
-For BIG Raspberry JAM Tokyo 2016 demonstration use, 
+For Open Source Conference Osaka 2017 demonstration use, 
 I've updated raspberry-pi image.
 
- https://raspberrypi.connpass.com/event/44902/
- https://www.facebook.com/events/1873355159564632/
+ https://www.ospn.jp/osc2017-osaka/
+ https://www.facebook.com/events/1789923797907417/
  https://www.facebook.com/NetBSD.jp 
 
-- NetBSD 7.99.58 earmv6hf rpi.img.gz base
+- NetBSD 7.99.59 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
