@@ -1,20 +1,19 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2016-12-11/2016-12-11/g
-:1,$s/7.99.44/7.99.44/g
-:1,$s/201612090750Z/201612090750Z/g
-:1,$s?2016/12/10/msg004002.html?2016/12/10/msg004002.html?
+:1,$s/2017-01-28/2017-01-28/g
+:1,$s/7.99.59/7.99.59/g
+:1,$s/201701190410Z/201701190410Z/g
+:1,$s?2017/01/25/msg004087.html?2017/01/25/msg004087.html?
 
 
-2016-12-11-netbsd-raspi-earmv6hf.img
+2017-01-28-netbsd-raspi-earmv6hf.img
 
-For BIG Raspberry JAM Tokyo 2016 
- https://raspberrypi.connpass.com/event/44902/
+For Open Source Conference Osaka 2017 demonstration use, 
+I've updated 2017-01-28-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-I've updated 2016-12-11-netbsd-raspi-earmv6hf.img.gz for RPI.
-http://mail-index.netbsd.org/port-arm/2016/12/10/msg004002.html
+http://mail-index.netbsd.org/port-arm/2017/01/25/msg004087.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-12-11-earmv6hf/2016-12-11-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/2017-01-28-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -29,18 +28,29 @@ dmesg:
 Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
-Update:
-- NetBSD-current 7.99.44 evbarm-earmv6hf 201612090750Z rpi.img from nyftp.
-- Fix CWE-120/CVE-2016-6559:
-   BSD libc contains a buffer overflow vulnerability in link_ntoa()
-   https://cwe.mitre.org/data/definitions/120.html
-   https://www.kb.cert.org/vuls/id/548487
-   http://jvn.jp/vu/JVNVU91242711/
-   http://cvsweb.netbsd.org/bsdweb.cgi/src/lib/libc/net/linkaddr.c
-- spkr0 at audio0
-- XXX: dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1.
-- XXX: I've got error report on using Sandisk/TOSHIBA microSD.
 
+Update:
+- NetBSD-current 7.99.59 evbarm-earmv6hf 201701190410Z rpi.img from nyftp.
+- firmware and vchiq updates:
+  http://mail-index.netbsd.org/port-arm/2017/01/12/msg004077.html
+  http://mail-index.netbsd.org/source-changes/2017/01/12/msg080883.html
+  http://mail-index.netbsd.org/source-changes/2017/01/12/msg080887.html
+- pkgsrc/misc/raspberrypi-userland:
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/01/12/msg151413.html
+- hardware RNG driver
+  http://mail-index.netbsd.org/port-arm/2016/12/16/msg004011.html
+  http://mail-index.netbsd.org/source-changes/2016/12/17/msg079956.html
+- bind-9.10.4-P5
+  http://mail-index.netbsd.org/source-changes/2017/01/12/msg080889.html
+- ruby22-mikutter-3.5.1
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/01/08/msg151276.html
+
+Problem:
+- sdhc(4) can't recognize some kind of microSD card
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=51732
+- dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1
+
+Security:
 - security.pax.mprotect.enabled
   http://netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
   man security
