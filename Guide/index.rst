@@ -24,7 +24,6 @@
  :numbered:
 
  Place/osaka
- RPI/RPIupdate2016.rst
+ OSC/OSC2016
+ RPI/RPIupdate2017.rst
  RPI
- RPI/Omxplayer.rst
- RPI/Xfce4.rst
