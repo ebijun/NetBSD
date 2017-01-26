@@ -29,13 +29,15 @@ Maps:
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/osaka.rst
 
-KOFまとめ
+大阪まとめ
 ~~~~~~~~~~~~~
 
 .. csv-table::
  :widths: 70 70
 
- 関西オープンソース2015 NetBSDブース展示の記録,
+ オープンソースカンファレンス2017大阪展示の記録,
+ 関西オープンソース2016 NetBSDブース展示の記録,https://togetter.com/li/1047263
+ 関西オープンソース2015 NetBSDブース展示の記録,https://togetter.com/li/896456
  関西オープンソース2014 NetBSDブース展示の記録,http://togetter.com/li/742243
  関西オープンソース2013 NetBSDブース展示の記録,http://togetter.com/li/587422
  関西オープンソース2012 NetBSDブース展示の記録,http://togetter.com/li/404573
@@ -62,7 +64,6 @@ KOFまとめ
  グリルオリエント,尼崎,1934年創業の洋食店
  ポートギャラリー,京町堀,写真と現代美術のギャラリー
  ファンダンゴ,十三,関西ロックパンク修行場
- ロケッツ,大阪球場近く,近くのローソンで卓球さんを見かける
  タイムボム,アメ村,中古レコード。タイムボムレコーズというのがありましてな。
  デジット,日本橋,秋葉で小売してないパーツもある。
  テクニカルサンヨー,日本橋,DCアンプ部品をおばちゃんから買いに行きたい。
@@ -70,25 +71,27 @@ KOFまとめ
  マルツ,日本橋,マルツのある街は安心できる。
  イオシス,日本橋,イオシスがある街は以下同文。
  Compufunk,四ツ橋,テクノのレコードよく買った。
- パブロピカソ,北新地,ステーキ懐石。ハヤシもあるでよ。
- フランシスベーコン,関大前,居酒屋
  トンカ書店,元町,古本雑貨など
  む蔵,元町,トンカツとえびカツの二刀流
  たちばな,道頓堀松竹B2,道頓堀麦酒
- environment 0g,桜川,イベントスペース。阿木譲さんその後
+ environment 0g,桜川,イベントスペース。阿木譲さんその後 マジカルパワーマコ
  深化,谷町六丁目,到達不可能な潜水艦バー
  ハーフェン,江坂,図書館近くのビアバー
- dfloor,梅田,Hardfloorも来たテクノバー。 
+ dfloor,梅田,Hardfloorも来たテクノバー(商標)。 
  IN THA DOOR Brewing,二宮,自家醸造
  神戸湊ビール,新開地,わんぱくサンドとは何か
- カレイヤー,,メタルなカレー屋
+ カレイヤー,心斎橋,メタルなカレー屋
+ だまれトリ,梅田,あひる焼き方面御用達
 
-KOF主な発表
+主な発表
 ~~~~~~~~~~~~~~
 
 .. csv-table::
  :widths: 15 15 60
-
+ 
+ NetBSD/dreamcast IDE HDD,KOF2016,https://speakerdeck.com/tsutsui/kof2016-netbsd-dreamcast-ide-hdd
+ emacs18.59&mule1.1,KOF2015,https://speakerdeck.com/tsutsui/kof2015-emacs-18-dot-59-and-mule-1-dot-1-on-netbsd-7-dot-0
+ fdgw2,KOF2015,http://e-yuuki.org/events/fdgw2/assets/player/KeynoteDHTMLPlayer.html#0
  KOFにおけるLUNA展示,KOF2014,https://speakerdeck.com/tsutsui/kof-and-luna-at-netbsd-booth
  NetBSDブートローダー解説とluna68kでの実装,KOF2013,http://www.ceres.dti.ne.jp/tsutsui/kof2013/NetBSD_bootloader.html
  なぜ謎マシン,KOF2011,http://www.ceres.dti.ne.jp/tsutsui/kof2011/Why-enigmatic-machines.html
@@ -96,13 +99,14 @@ KOF主な発表
  EuroBSDCon2009,KOF2009,msaitohさんの参加報告
  2004,NBUGみずのさんUSBsnoopy,
 
-KOF主な展示物
+主な展示物
 ~~~~~~~~~~~~~~~~~
 
 .. csv-table::
  :widths: 15 15 60
 
- 2015/11/6-7,南港ATC,
+ 2016/11/11-12,南港ATC,DreamCast with CF and SD RPI3+XM6i+NetBSD/x68k
+ 2015/11/6-7,南港ATC,Sun Ultra-5 RPI2+Xfce4
  2014/11/7-8,南港ATC,NetBSD/luna68k with mlterm-fb/libsixel/mikutter
  2013/11/8-9,南港ATC,Lunaブートローダ RPI WZero3 Zaurus XM6i
  2012/11/9-10,南港ATC,WZero3 Zaurus XM6i
