@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -20,15 +20,15 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ===========================================
-RaspberryPIのNetBSDイメージ2016進捗どうですか
+RaspberryPIのNetBSDイメージ2017進捗どうですか
 ===========================================
 
 
 RaspberryPIのNetBSDイメージについて
 ---------------------------------
 
-今年もオープンソースカンファレンスごとにRaspberryPI用のNetBSDイメージを作って配布してみました。
-ことし一年、どんなことがあったのか表にしてまとめてみました。
+今年もオープンソースカンファレンスごとにRaspberryPI用のNetBSDイメージを作って配布しています。
+この一年、どんなことがあったのか表にしてまとめてみました。
 
 .. csv-table::
 
@@ -49,7 +49,8 @@ RaspberryPIのNetBSDイメージについて
  ,7.99.42,,,,BIND-9.10.4-P4 Raspberrypi-userland-2016-1101,KOF2016,http://mail-index.netbsd.org/port-arm/2016/11/10/msg003958.html
  ,7.99.42,3.4.7,,,NTP-4.2.8p9,OSC広島,http://mail-index.netbsd.org/port-arm/2016/11/23/msg003970.html
  2016/12,7.99.44,3.4.8,,,CWE-120 libc,BIG RPI Jam,http://mail-index.netbsd.org/port-arm/2016/12/10/msg004002.html
-
+ 2017/1,7.99.59,3.5.1,,,RNG,OSC大阪,http://mail-index.netbsd.org/port-arm/2017/01/25/msg004087.html
+ 
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。
 2週間くらいごとかなと答えてくれて、ああだいたいそんなものなのかと思っていました。
@@ -68,18 +69,6 @@ NetBSDのイメージを配るとしたとき、どのくらいの周期でア�
  https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIImage.rst
 みたいに作って、あらかじめ作っておいたパッケージを組み込んで動作テストをします。mikutterで「あひる焼き」とつぶやいて返事が帰ってくれば
 ネットワーク認証と画面表示とRubyまわりと漢字入力がうまくいっています。
-
-mikutter
---------------------
-mikutterは3.3.3から3.4.7になっています。詳しいことはmikutterの薄い本でぐぐるとなんかでてくると思います。
-
-mlterm
------------------
-mltermは3.6.1から3.7.2になっています。こちらも特に問題なく追従できています。
-
-dillo
---------------
-最近更新すると起動直後におちちゃいます。ワシんとこじゃ大丈夫じゃけんねとも言われていますが更新していません。
 
 新しいハードウェア対応
 ----------------------
@@ -100,7 +89,6 @@ NetBSD/x68kを動かすデモをやっていました。
 
 security.pax.mprotect.enabled
 ------------------------------------
-PAXという機能が入りました。
 
 ::
 
@@ -111,40 +99,11 @@ PAXという機能が入りました。
   try to test 
   sysctl -w security.pax.mprotect.enabled=0 
  
-
-Freetype
----------------------
-Freetypeのディレクトリがかわりました
-
-- freetype2:  /usr/X11R7/include/freetype2/freetype
-  https://github.com/IIJ-NetBSD/netbsd-src/commit/c792b960afd10ac6a34511f09f7c3b0aa59c8390#diff-e4a2dac7a0572d4d146feafd47940d71
-  update x11-links package,if compilation fails depend on freetype.
- 
-
-SHARP MZ700 emulator
-------------------------------
-nodejsが動くようになったのでMZ700のエミュレータが動くようになりました。
-
-::
-
-  # npm install -g mz700-js
-  # cd /usr/pkg/lib/node_modules/mz700-js
-  # npm start
-  # mz700-js@0.0.0 start  /usr/pkg/lib/node_modules/mz700-js
-  # access http://localhost:3000/MZ-700/client.html
-
-
-sayaka 
-------------------------------
-いさきさんが作ったtwitterクライアントsayakaもpkgsrcに入りました。
-これとmltermを使ったデモは、もう少し遅いマシンに任せると、より感動が深まります。
-
 On-Lapディスプレイ問題
 ---------------------
 On-LapのディスプレイでうまくXが表示できていません。
 - HDMI Display failure on X ,On-Lap 2501M (reported from @matoken) 
     https://twitter.com/matoken/status/702656906251210753
-
 
 GPIOのドキュメント
 ----------------------
@@ -152,9 +111,6 @@ GPIOの使い方をまとめてくれた方が。
 - NetBSD GPIO DOC by Marina Brown
 -  https://github.com/catskillmarina/netbsd-gpio-doc/blob/master/README.md
 
-ディレクトリの自動リサイズ
----------------------------
-2GB以上のSDカードを使った時でもリサイズするようになりました。時間はそれなりにかかります。
 
 ご注文はなんとかですか（弱点）
 -----------------------------
