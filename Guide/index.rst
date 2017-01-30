@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/osaka
+ Place/hamanako
  OSC/OSC2016
  RPI/RPIupdate2017.rst
  RPI
