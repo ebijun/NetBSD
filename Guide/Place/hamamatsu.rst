@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,6 +35,8 @@ OSC浜松まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2017浜名湖 NetBSDブース展示の記録,
+ OSC2016浜名湖 NetBSDブース展示の記録, https://togetter.com/li/929091
  OSC2015浜名湖 NetBSDブース展示の記録, http://togetter.com/li/781556
  OSC2014浜名湖 NetBSDブース展示の記録, http://togetter.com/li/645455
  OSC2013浜松 NetBSDブース展示の記録, http://togetter.com/li/452856
@@ -72,7 +74,7 @@ OSC浜松まとめ
  シロネコ,桜木,自家焙煎珈琲豆
  マムゼル,袋井,ライブがあるジャズ喫茶
  ダダリ,焼津,晩年リヒテルが気に入ってよく来ていた。「リヒテル」のサインがある。
- そば屋 案山棒,西焼津,舞踊演劇ライブあり。大駱駝艦→大豆鼓ファーム→そ。
+ そば屋 案山棒,西焼津,舞踊演劇ライブあり。大駱駝艦→大豆鼓ファーム→そば。
  第一無線,豊橋,オーディオ老舗の二階を見よ
  むらたのたこやき,豊橋駅ビル地下,みんなこのたこやきでNetBSD開発者になった
  Shinnosuke.O,豊橋駅前大通り,クラフトビールと古本。鍛冶町1-43 2Fに2016/3浜松店オープン
@@ -89,6 +91,7 @@ OSC浜名湖主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2016/1/23,浜松,RPI2+omxplayer RPI0 Zaurus WZero3
  2015/2/11,浜松,CubieBoard2 RPI+omxplayer BPI Netwalker WZero3 Zaurus
  2014/3/22,浜松,RPI WZero3 O2 Netwalker
  2013/2/9,浜松,RPI WZero3
