@@ -1,4 +1,4 @@
-VERSION: :1,$s/2017-01-28/2017-01-28/g
+VERSION: :1,$s/2017-01-28/2017-02-12/g
 ISO:     :1,$s/201701190410Z/201701190410Z/g
 NetBSD:  :1,$s/7.99.59/7.99.59/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
@@ -47,19 +47,10 @@ Pre-installed packages:
 
 Update:
 - NetBSD-current 7.99.59 evbarm-earmv6hf 201701190410Z rpi.img from nyftp.
-- firmware and vchiq updates:
-  http://mail-index.netbsd.org/port-arm/2017/01/12/msg004077.html
-  http://mail-index.netbsd.org/source-changes/2017/01/12/msg080883.html
-  http://mail-index.netbsd.org/source-changes/2017/01/12/msg080887.html
-- pkgsrc/misc/raspberrypi-userland:
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/01/12/msg151413.html
-- hardware RNG driver
-  http://mail-index.netbsd.org/port-arm/2016/12/16/msg004011.html
-  http://mail-index.netbsd.org/source-changes/2016/12/17/msg079956.html
-- bind-9.10.4-P5
-  http://mail-index.netbsd.org/source-changes/2017/01/12/msg080889.html
-- ruby22-mikutter-3.5.1
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/01/08/msg151276.html
+- openssl 1.0.2k
+  http://mail-index.netbsd.org/source-changes/2017/01/27/msg081402.html
+- ruby22-mikutter-3.5.2
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/01/29/msg152198.html
 
 Problem:
 - sdhc(4) can't recognize some kind of microSD card
