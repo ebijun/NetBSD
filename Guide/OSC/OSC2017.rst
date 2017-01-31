@@ -1,0 +1,187 @@
+.. 
+ Copyright (c) 2013-7 Jun Ebihara All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+===========================================
+オープンソースカンファレンスNetBSDブースこの一年
+===========================================
+
+日本NetBSDユーザーグループは2016年も日本各地で開催されたオープンソースカンファレンスを中心とするイベントに参加しました。各イベントではブース運営・セミナー開催等を行いました。
+ブースに展示機材を持ち込んで頂いたみなさま、セミナー時間に参加・発表していただいたみなさまのご協力に感謝します。
+
+参加した場所の地図
+
+  http://www.soum.co.jp/~jun/2016maps.pdf
+
+これまでに参加した一覧は以下のとおりです。
+
+  https://github.com/ebijun/NetBSD/blob/master/Guide/OSC/OSC100.csv
+
+
+このファイルはオープンソースカンファレンス過去来場者数一覧 http://www.ospn.jp/visitors/ を元に作成しています。
+
+
+どのくらい参加しているか
+-------------------------
+
+- 2016/12/31までにOSCは139回開催されています。
+- JNUGは125回参加しています。89.9%
+
+2016年のOSC
+--------------
+- 日本全国各地で14回開催
+- 参加者6915人　
+- 参加団体470グループ
+
+.. csv-table::
+ :widths: 10 40 10 20 30 30
+
+ 回数,イベント,日付,参加者,参加グループ,参加したら1
+ 126,2016 Hamanako,1/23,130,24,1
+ 127,2016 .Enterprise@Osaka,1/29,200,3,	
+ 128,2016 Tokyo/Spring,2/26-27,1550,71,1
+ 129,2016 Gunma,5/14,185,26,1
+ 130,2016 Nagoya,5/28,500,35,1
+ 131,2016 Hokkaido,6/17-18,710,56,1
+ 132,2016 Okinawa,7/2,130,20,1
+ 133,2016 Kyoto,7/29-30,1000,59,1
+ 134,2016 .Enterprise,9/1,370,6,
+ 135,2016 Shimane,9/24,180,24,1
+ 136,2016 Nagaoka,10/1,100,13,1
+ 137,2016 Tokyo/Fall,11/5-6,1350,77,1
+ 138,2016 Fukuoka,11/19,300,29,1
+ 139,2016 Hiroshima,11/27,210,27,1
+
+
+togetterアクセスで見たNetBSDブース
+-----------------------------------
+togetterのアクセスログは以下の場所にあります。
+
+  https://github.com/ebijun/NetBSD/blob/master/Event/togetter/togetterview/view.csv
+
+2016年度のアクセス数集計は以下の通りです。
+
+.. csv-table::
+ :widths: 120 60 10
+
+ BIG Raspberry JAM Tokyo 2016 NetBSDブース展示の記録,https://togetter.com/li/1058231,836
+ オープンソースカンファレンス2016 Hiroshima NetBSDブース展示の記録,https://togetter.com/li/1053125,1176
+ オープンソースカンファレンス2016 Fukuoka NetBSDブース展示の記録,https://togetter.com/li/1050258,355
+ 関西オープンソース2016 NetBSDブース展示の記録,https://togetter.com/li/1047263,1092
+ オープンソースカンファレンス2016 Tokyo/Fall NetBSDブース展示の記録,https://togetter.com/li/1044981,1371
+ オープンソースカンファレンス2016 Nagaoka NetBSDブース展示の記録,https://togetter.com/li/1031383,443
+ オープンソースカンファレンス2016 Shimane NetBSDブース展示の記録,https://togetter.com/li/1028314,874
+ オープンソースアンカンファレンス2016 Kanazawa NetBSDブース展示の記録,https://togetter.com/li/1017308,680
+ セキュリティ・キャンプ全国大会2016「謎マシンでNetBSDのクロス開発体験」の記録,https://togetter.com/li/1013466,1479
+ オープンソースカンファレンス2016 Kyoto NetBSDブース展示の記録,https://togetter.com/li/1005828,2740
+ 日本NetBSDユーザーグループ第十八回定期総会 および NetBSD BoF 2016 の記録,https://togetter.com/li/997708,1018
+ オープンソースカンファレンス2016 Okinawa NetBSDブース展示の記録,https://togetter.com/li/995155,871
+ オープンソースカンファレンス2016 Hokkaido NetBSDブース展示の記録,https://togetter.com/li/988853,936
+ オープンソースカンファレンス2016 Nagoya NBUG & NetBSDブース展示の記録,https://togetter.com/li/980383,1235
+ オープンソースカンファレンス2016 Gunma NetBSDブース展示の記録,https://togetter.com/li/975036,995
+ AsiaBSDCon 2016の記録,https://togetter.com/li/947029,3098
+ オープンソースカンファレンス2016 Tokyo/Spring NetBSDブース展示の記録,https://togetter.com/li/943037,1947
+ オープンソースカンファレンス2016 Hamanako NetBSDブース展示の記録,https://togetter.com/li/929091,1215
+
+netbsd-advocacyメーリングリストへの報告
+--------------------------------------------
+
+netbsd-advocacyメーリングリストへの参加報告をしてみました。
+
+.. csv-table::
+
+ NetBSD machines at Open Source Conference 2016 Hamanako,http://mail-index.netbsd.org/netbsd-advocacy/2016/01/23/msg000701.html
+ NetBSD machines at Open Source Conference 2016 Tokyo/Spring,http://mail-index.netbsd.org/netbsd-advocacy/2016/02/29/msg000703.html
+ NetBSD machines at AsiaBSDCon 2016,http://mail-index.netbsd.org/netbsd-advocacy/2016/04/13/msg000704.html
+ OpenBSD and NetBSD machines at Open Source Conference 2016 Nagoya,http://mail-index.netbsd.org/netbsd-advocacy/2016/05/30/msg000707.html
+ NetBSD machines at Open Source Conference 2016 Gunma,http://mail-index.netbsd.org/netbsd-advocacy/2016/05/16/msg000706.html
+ NetBSD machines at Open Source Conference 2016 Hokkaido,http://mail-index.netbsd.org/netbsd-advocacy/2016/06/20/msg000709.html
+ Japan NetBSD Users Group 18th annual Meeting and BoF 2016,http://mail-index.netbsd.org/netbsd-advocacy/2016/06/08/msg000708.html
+ NetBSD machines at Open Source Conference 2016 Okinawa,http://mail-index.netbsd.org/netbsd-advocacy/2016/07/04/msg000710.html
+ NetBSD machines at Open Source UnConference 2016 Kanazawa,http://mail-index.netbsd.org/netbsd-advocacy/2016/08/29/msg000714.html
+ NetBSD workshop at SecurityCamp 2016,http://mail-index.netbsd.org/netbsd-advocacy/2016/08/17/msg000713.html
+ NetBSD machines at Open Source Conference 2016 Kyoto,http://mail-index.netbsd.org/netbsd-advocacy/2016/08/01/msg000712.html
+ NetBSD machines at Open Source Conference 2016 Shimane,http://mail-index.netbsd.org/netbsd-advocacy/2016/09/24/msg000716.html
+ OpenBSD and NetBSD machines at Open Source Conference 2016 Nagaoka,http://mail-index.netbsd.org/netbsd-advocacy/2016/10/03/msg000717.html
+ NetBSD machines at Open Source Conference 2016 Tokyo/Fall,http://mail-index.netbsd.org/netbsd-advocacy/2016/11/09/msg000721.html
+ NetBSD machines at KANSAI OPEN FORUM 2016,http://mail-index.netbsd.org/netbsd-advocacy/2016/11/16/msg000722.html
+ NetBSD machines at Open Source Conference 2016 Fukuoka,http://mail-index.netbsd.org/netbsd-advocacy/2016/11/23/msg000723.html
+ NetBSD machines at Open Source Conference 2016 Hiroshima,http://mail-index.netbsd.org/netbsd-advocacy/2016/11/29/msg000724.html
+
+NetBSD観光ガイド作成
+------------------------
+
+イベント毎に観光ガイドをカラー1部白黒15部づつ作成し、セミナー参加者に配布しました。
+
+一覧：
+
+ https://github.com/ebijun/osc-demo/blob/master/README.md
+
+
+作成方法： 
+
+ https://github.com/ebijun/NetBSD/blob/master/Guide/Paper/sphinx.rst
+
+.. csv-table::
+ :widths: 10 20 100
+
+ 100.,  OSC2016広島,   http://www.soum.co.jp/~jun/OSC2016hiroshima.pdf
+ 99.,   OSC2016福岡,    http://www.soum.co.jp/~jun/OSC2016fukuoka.pdf
+ 98.,   KOF2016,        http://www.soum.co.jp/~jun/KOF2016.pdf
+ 97.,   OSC2016東京秋,  http://www.soum.co.jp/~jun/OSC2016tokyofall.pdf
+ 96.,   OSC2016長岡,   http://www.soum.co.jp/~jun/OSC2016nagaoka.pdf
+ 95.,    OSC2016島根,   http://www.soum.co.jp/~jun/OSC2016shimane.pdf
+ 94.,   OSuC2016金沢,　http://www.soum.co.jp/~jun/OSuC2016kanazawa.pdf
+ 93.,   SecCamp2016,  http://www.soum.co.jp/~jun/SecCamp2016.pdf
+ 92.,   OSC2016京都 ,  http://www.soum.co.jp/~jun/OSC2016kyoto.pdf
+ 91.,   JNUG2016,     http://www.soum.co.jp/~jun/JNUG2016.pdf
+ 90.,   OSC2016沖縄,   http://www.soum.co.jp/~jun/OSC2016okinawa.pdf
+ 89.,   OSC2016北海道, http://www.soum.co.jp/~jun/OSC2016hokkaido.pdf
+ 88.,    OSC2016名古屋,    http://www.soum.co.jp/~jun/OSC2016nagoya.pdf
+ 87.,    OSC2016群馬,   http://www.soum.co.jp/~jun/OSC2016gunma.pdf
+ 86.,   AsiaBSDCon2016, http://www.soum.co.jp/~jun/asiabsdcon2016.pdf
+ 85.,    OSC2016東京春,    http://www.soum.co.jp/~jun/OSC2016tokyospring.pdf
+ 84.,   OSC2016浜名湖,  http://www.soum.co.jp/~jun/OSC2016hamanako.pdf
+
+旅費
+--------
+2016/4〜2017/3までの期間で横浜からの旅費＋宿泊費実費です。
+
+.. csv-table::
+ :widths: 10 50 30
+
+ 2016/4,OSC沖縄,39800
+ 2016/5,OSC北海道,43100
+ 2016/5,OSC名古屋,19230
+ 2016/7,OSC京都,29816
+ 2016/8,OSuC金沢,32890
+ 2016/8,OSC島根,48540
+ 2016/10,OSC長岡,17500
+ 2016/11,OSC福岡,37500
+ 2016/11,KOF,33056
+ 2016/11,OSC広島,38770
+ 2017/1,OSC大阪,26410
+ 2017/2,OSC浜名湖,17250
+ 
+ 
+2017年
+-------------
+
+2017年は2016/1/27のOSC大阪(http://www.ospn.jp/osc2017-osaka/)からはじまります。ブースへの展示機材もちこみ＆セミナー時間での発表を歓迎します。
