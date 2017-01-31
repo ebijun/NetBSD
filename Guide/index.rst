@@ -24,6 +24,6 @@
  :numbered:
 
  Place/hamanako
- OSC/OSC2016
+ OSC/OSC2017
  RPI/RPIupdate2017.rst
  RPI
