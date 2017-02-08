@@ -5,7 +5,6 @@ GraphicsMagick-1.3.25 X application for displaying and manipulating images
 ImageMagick-7.0.4.5 Package for display and interactive manipulation of images
 ORBit2-2.14.19nb4   High-performance CORBA ORB with C language support
 OmegaT-3.5.01       The translation memory (TM) application written in Java
-PC6001VX-2.30.0nb2  Cross platform PC-6001 emulator
 R-3.3.2nb1          Statistical language for data analysis and graphics
 SDL-1.2.15nb20      Simple DirectMedia Layer, a cross-platform multimedia library
 SDL2-2.0.5nb2       Simple DirectMedia Layer is a cross-platform multimedia library
@@ -52,7 +51,7 @@ coinmp-1.8.3        CoinMP is a C-API library that supports CLP, CBC, and CGL
 compface-1.5.2nb6   48x48x1 image compression and decompression (X-face utility)
 consolekit-1.0.2nb1 Framework for defining and tracking users, login sessions, and seats
 cppunit-1.13.2      C++ unit testing framework
-cups-1.5.4nb16      Common UNIX Printing System (1.5 branch)
+cups-2.2.2          Common UNIX Printing System
 curl-7.52.1nb1      Client that groks URLs
 cwrappers-20170112  pkgsrc compiler wrappers
 db4-4.8.30          Berkeley DB version 4 from Oracle
@@ -71,7 +70,6 @@ emacs25-25.1nb2     GNU editing macros (editor)
 enca-1.15           Extremely Naive Charset Analyser
 enchant-1.6.0nb5    Generic spell checking library
 esound-0.2.41nb3    The Enlightened sound daemon
-evince-3.22.1nb1    Document viewer
 exiv2-0.25          Image metadata manipulation
 expat-2.2.0         XML parser library written in C
 faad2-2.7nb2        AAC decoding library
@@ -208,6 +206,7 @@ lensfun-0.3.2       Library for rectifying defects introduced by photographic eq
 lftp-4.7.2nb2       Powerful command line file transfer client
 lha-114.9nb4        Archive files using LZW compression (.lzh files)
 libIDL-0.8.14nb4    CORBA Interface Definition Language parser
+libXp-1.0.3         X Print Service Extension Library
 liba52-0.7.4nb3     Free ATSC A/52 stream decoder library
 libao-1.2.0         Cross-platform audio library
 libao-oss-1.2.0     Cross-platform audio library (OSS plugin)
@@ -425,6 +424,7 @@ poppler-utils-0.50.0 PDF utilities (from poppler)
 popt-1.16nb1        Command line option parsing library
 port2pkg-1.15nb3    Convert from a FreeBSD port to a NetBSD package
 postgresql93-client-9.3.15 PostgreSQL database client programs
+printproto-1.0.5    Print extension headers from X.org
 pth-2.0.7nb4        GNU Portable Thread library
 pulseaudio-10.0     Sound server for POSIX and Win32 systems
 pwgen-2.07          Generate pronounceable passwords
@@ -448,6 +448,7 @@ py27-imaging-1.1.7nb10 PIL, the Python Imaging Library
 py27-jinja2-2.8     Small but fast and easy to use stand-alone template engine
 py27-lxml-3.7.2     Python binding for libxml2 and libxslt
 py27-markupsafe-0.23 Implements a XML/HTML/XHTML Markup safe string for Python
+py27-newt-0.52.16nb1 Windowing toolkit based on libslang2
 py27-notify-0.2.1nb4 Python package providing tool for observer programming pattern
 py27-poppler-0.12.1nb18 Python bindings for the Poppler PDF rendering library
 py27-pygments-2.1.3 Python syntax highlighter
@@ -470,7 +471,6 @@ qt4-libs-4.8.7nb4   C++ X GUI toolkit
 qt4-tools-4.8.7nb2  QT GUI (WYSIWYG) builder and other tools
 qt5-qtbase-5.5.1nb9 C++ X GUI toolkit
 qt5-qtdeclarative-5.5.1nb4 Qt5 module for declarative framework
-qt5-qtmultimedia-5.5.1nb7 Qt5 module for multimedia
 qt5-qtx11extras-5.5.1nb4 Qt5 module for X11 extras
 qt5-qtxmlpatterns-5.5.1nb4 Qt5 module for XML Patterns
 raptor2-2.0.15nb3   RDF Parser Toolkit written in C
@@ -640,5 +640,6 @@ xorg-cf-files-1.0.6nb2 Xorg imake rules
 xv-3.10anb23        X11 program that displays images of various formats
 xvidcore-1.3.3      ISO MPEG-4 compliant video codec
 yasm-1.3.0          Complete rewrite of the NASM assembler with BSD license
+youtube-dl-20170114 Download videos from youtube.com
 zip-3.0nb3          Create/update ZIP files compatible with pkzip
 zonetab-0           NetBSD zone.tab file
