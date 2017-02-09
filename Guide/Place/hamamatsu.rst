@@ -98,33 +98,15 @@ OSC浜名湖主な展示物
 
 2016
 -----------------
-.. image::  ../Picture/2016/01/23/1453512286008.jpg
-.. image::  ../Picture/2016/01/23/1453516284432.jpg
-.. image::  ../Picture/2016/01/23/1453516814031.jpg
-.. image::  ../Picture/2016/01/23/1453516850357.jpg
-.. image::  ../Picture/2016/01/23/1453516981752.jpg
-.. image::  ../Picture/2016/01/23/1453517510611.jpg
-.. image::  ../Picture/2016/01/23/1453518486567.jpg
-.. image::  ../Picture/2016/01/23/1453521499500.jpg
-.. image::  ../Picture/2016/01/23/1453521954399.jpg
-.. image::  ../Picture/2016/01/23/1453522689973.jpg
-.. image::  ../Picture/2016/01/23/1453522807765.jpg
-.. image::  ../Picture/2016/01/23/1453527581523.jpg
-.. image::  ../Picture/2016/01/23/DSC08518.JPG
-.. image::  ../Picture/2016/01/23/DSC08519.JPG
-.. image::  ../Picture/2016/01/23/DSC08520.JPG
 .. image::  ../Picture/2016/01/23/DSC08521.JPG
 .. image::  ../Picture/2016/01/23/DSC08522.JPG
 .. image::  ../Picture/2016/01/23/DSC08523.JPG
 .. image::  ../Picture/2016/01/23/DSC08524.JPG
 .. image::  ../Picture/2016/01/23/DSC08525.JPG
-.. image::  ../Picture/2016/01/23/DSC08526.JPG
 .. image::  ../Picture/2016/01/23/DSC08527.JPG
 .. image::  ../Picture/2016/01/23/DSC08528.JPG
 .. image::  ../Picture/2016/01/23/DSC08529.JPG
 .. image::  ../Picture/2016/01/23/DSC08530.JPG
-.. image::  ../Picture/2016/01/23/DSC08531.JPG
-.. image::  ../Picture/2016/01/23/DSC08532.JPG
 
 2015
 -----------------

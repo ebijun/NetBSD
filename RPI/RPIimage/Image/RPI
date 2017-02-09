@@ -6,15 +6,15 @@
 #make -f Makefile firm
 #make -f Makefile libssls
 #
+# cp back.img `date +%Y-%m-%d`-netbsd-raspi-earmv6hf.img
 # 
 # adding packages.
 #
-#make -f Makefile logclean
-#make -f Makefile release
+make -f Makefile logclean
+make -f Makefile release
 #
 # update kernel
-#
-make cdmount
-make kernel
-make cdunmount
-make kernel-update
+#make cdmount
+#make kernel
+#make cdunmount
+#make kernel-update

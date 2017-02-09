@@ -3,10 +3,10 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-01-28/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-02-12/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.59-evbarm-${ARCH}-201701190410Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.59-evbarm-${ARCH}-201702031610Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -155,7 +155,7 @@ firm:
 kernel:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-	gunzip < ${KERNELBIN}  > ${MNT}/kernel.img
+#	gunzip < ${KERNELBIN}  > ${MNT}/kernel.img
 	gunzip < ${KERNELBIN7} > ${MNT}/kernel7.img
 	umount ${MNT}
 #	mount /dev/${VND}a ${MNT}
@@ -167,8 +167,8 @@ kernel:
 kernel-update:
 	vnconfig ${VND} ${FILE}
 	mount /dev/${VND}e ${MNT}
-	mv  ${MNT}/kernel.img ${MNT}/kernel.img.original
-	cp /usr/obj/kernel/earmv6hf/RPI/netbsd.bin ${MNT}/kernel.img
+#	mv  ${MNT}/kernel.img ${MNT}/kernel.img.original
+#	cp /usr/obj/kernel/earmv6hf/RPI/netbsd.bin ${MNT}/kernel.img
 	mv  ${MNT}/kernel7.img ${MNT}/kernel7.img.original
 	cp /usr/obj/kernel/earmv6hf/RPI2/netbsd.bin ${MNT}/kernel7.img
 	umount ${MNT}
