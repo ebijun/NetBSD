@@ -1,18 +1,18 @@
-VERSION: :1,$s/2017-01-28/2017-02-12/g
-ISO:     :1,$s/201701190410Z/201701190410Z/g
+VERSION: :1,$s/2017-02-12/2017-02-12/g
+ISO:     :1,$s/201702031610Z/201702031610Z/g
 NetBSD:  :1,$s/7.99.59/7.99.59/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-01-28-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2017-02-12-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-01-28-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-02-12-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/2017-01-28-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-02-12-earmv6hf/2017-02-12-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-02-12-earmv6hf/MD5
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -25,28 +25,23 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
 
 Kernel update
-Include re-compiled kernel to RPI work well. 
-1. RPI3: still need aaa->aaa_addr == BCM2835_BSC0_BASE patch.
+
+ RPI3: still needs aaa->aaa_addr == BCM2835_BSC0_BASE patch.
 - http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
 - http://mail-index.netbsd.org/port-arm/2016/12/06/msg003995.html
 
-2. update to dwc_gmac.c fix :  Mon Jan 23 08:36:23 UTC 2017
-- http://mail-index.netbsd.org/source-changes/2017/01/23/msg081272.html
-
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/RPI/
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/RPI3/
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-02-12-earmv6hf/RPI3/
 
 If you use un-patched-original kernel.
  mv /boot/kernel7.img.orignal /boot/kernel7.img
- mv /boot/kernel.img.orignal /boot/kernel.img
 
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  updates:
- https://github.com/ebijun/NetBSD/commit/a023a59b9ba2ed72e6e5c2a3541f5897a4e6f29e#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/b2fb02e1da27400342c0bd791ceb635a791bc149#diff-4a755d73dbba5da21bbf783139f086dc
 
 Update:
-- NetBSD-current 7.99.59 evbarm-earmv6hf 201701190410Z rpi.img from nyftp.
+- NetBSD-current 7.99.59 evbarm-earmv6hf 201702031610Z rpi.img from nyftp.
 - openssl 1.0.2k
   http://mail-index.netbsd.org/source-changes/2017/01/27/msg081402.html
 - ruby22-mikutter-3.5.2
@@ -93,7 +88,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-01-28/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-02-12/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -101,7 +96,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-01-28-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-02-12-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -274,11 +269,11 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference Osaka 2017 demonstration use, 
+For Open Source Conference Hamanako 2017 demonstration use, 
 I've updated raspberry-pi image.
 
- https://www.ospn.jp/osc2017-osaka/
- https://www.facebook.com/events/1789923797907417/
+ https://www.ospn.jp/osc2017-hamanako/
+ https://www.facebook.com/events/1440270795987946/
  https://www.facebook.com/NetBSD.jp 
 
 - NetBSD 7.99.59 earmv6hf rpi.img.gz base
@@ -319,7 +314,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-01-28/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-02-12/
 
 Installed Packages:
 kterm
