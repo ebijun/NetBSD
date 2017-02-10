@@ -1,6 +1,6 @@
 anthy-9100h         Kana Kanji conversion system
 atk-2.22.0          Set of interfaces for accessibility
-bash-4.4.005        The GNU Bourne Again Shell
+bash-4.4.012        The GNU Bourne Again Shell
 cairo-1.14.8        Vector graphics library with cross-device output support
 cairo-gobject-1.14.8 Vector graphics library with cross-device output support
 curl-7.52.1nb1      Client that groks URLs
@@ -11,7 +11,7 @@ fltk-1.3.3nb3       Fast Light Tool Kit for graphical user interfaces
 fossil-1.36         High-reliability, distributed software configuration management
 fribidi-0.19.7      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.2.3nb1         Graphics library for the dynamic creation of images
-gdk-pixbuf2-2.36.0  Image loaders for gtk2
+gdk-pixbuf2-2.36.4  Image loaders for gtk2
 giflib-5.1.4        GIF image format library
 git-base-2.11.0nb1  GIT Tree History Storage Tool (base package)
 glib2-2.50.2        Some useful routines for C programming (glib2)
@@ -27,7 +27,7 @@ kterm-6.2.0nb24     Multi-lingual terminal emulator for X
 libelf-0.8.13nb1    ELF object file access library
 libffi-3.2.1nb2     Foreign function interface
 libgcroots-0.2.3    Garbage collector supporting library
-libgcrypt-1.7.5     GNU cryptographic library
+libgcrypt-1.7.6     GNU cryptographic library
 libgpg-error-1.26   Definitions of common error values for all GnuPG components
 libidn-1.33         Internationalized Domain Names command line tool
 libotf-0.9.13nb3    Library for handling OpenType fonts (OTF)
@@ -40,7 +40,7 @@ lzo-2.09            Portable lossless data compression library
 m17n-db-1.7.0       The m17n database used by the m17n library
 m17n-lib-1.7.0nb4   Multilingualization library
 medit-1.2.0nb3      Programming and around-programming text editor
-mlterm-3.7.2        Multilingual terminal emulator
+mlterm-3.8.0        Multilingual terminal emulator
 mozilla-rootcerts-1.0.20160610 Root CA certificates from the Mozilla Project
 ncurses-6.0nb3      CRT screen handling and optimization package
 p5-Authen-SASL-2.16nb4 Perl module to handle SASL authentication
@@ -49,7 +49,7 @@ p5-Email-Valid-1.202 Perl5 module for testing validity of an email address
 p5-Error-0.17024nb2 Perl extension module for try/throw/catch exception handling
 p5-GSSAPI-0.28nb7   Perl extension providing access to the GSSAPIv2 library
 p5-IO-CaptureOutput-1.11.04nb2 Capture STDOUT and STDERR from Perl code, subprocesses, or XS
-p5-IO-Socket-INET6-2.72nb2 Perl object interface for AF_INET|AF_INET6 domain sockets
+p5-IO-Socket-INET6-2.72nb2 Perl object interface for AF_INET/AF_INET6 domain sockets
 p5-IO-Socket-SSL-2.043 Perl5 SSL socket interface class
 p5-MailTools-2.18nb1 Perl5 modules related to mail applications
 p5-Mozilla-CA-20160104nb1 Mozilla's CA cert bundle for Perl
@@ -63,12 +63,12 @@ p5-Socket6-0.28     Perl5 module to support getaddrinfo() and getnameinfo()
 p5-TimeDate-2.30nb3 Perl5 TimeDate distribution
 pango-1.40.3        Library for layout and rendering of text
 pcre-8.40           Perl Compatible Regular Expressions library
-perl-5.24.0         Practical Extraction and Report Language
+perl-5.24.1         Practical Extraction and Report Language
 pkg_chk-2.0.8       Check installed package versions against pkgsrc
 png-1.6.28          Library for manipulating PNG images
 py27-cElementTree-2.7.13 C implementation of Python ElementTree API
 py27-expat-2.7.13   Python interface to expat
-python27-2.7.13     Interpreted, interactive, object-oriented programming language
+python27-2.7.13nb1  Interpreted, interactive, object-oriented programming language
 raspberrypi-userland-20170109 Various libraries for the Raspberry Pi
 ruby22-addressable-2.5.0 Replacement for the URI Implementation of standard librrary
 ruby22-base-2.2.6   Ruby 2.2.6 release minimum base package
@@ -76,19 +76,19 @@ ruby22-cairo-1.15.3 Ruby bindings for cairo
 ruby22-delayer-0.0.2 Ruby module to delay the processing
 ruby22-delayer-deferred-1.0.4 Deferred for Delayer
 ruby22-gettext-3.2.2 Ruby localization library like as GNU gettext
-ruby22-gnome2-atk-3.1.0 Ruby binding of ATK-1.0.x or later
-ruby22-gnome2-gdkpixbuf-3.1.0 Ruby binding of GdkPixbuf-2.x
-ruby22-gnome2-gio-3.1.0nb1 Ruby binding of gio-2.0.x
-ruby22-gnome2-glib-3.1.0 Ruby binding of GLib-2.x
-ruby22-gnome2-gobject-introspection-3.1.0 Ruby binding of Gobject Introspection
-ruby22-gnome2-gtk-3.1.0 Ruby binding of GTK+-2.x
-ruby22-gnome2-pango-3.1.0 Ruby binding of pango-1.x
+ruby22-gnome2-atk-3.1.1 Ruby binding of ATK-1.0.x or later
+ruby22-gnome2-gdkpixbuf-3.1.1 Ruby binding of GdkPixbuf-2.x
+ruby22-gnome2-gio-3.1.1 Ruby binding of gio-2.0.x
+ruby22-gnome2-glib-3.1.1 Ruby binding of GLib-2.x
+ruby22-gnome2-gobject-introspection-3.1.1 Ruby binding of Gobject Introspection
+ruby22-gnome2-gtk-3.1.1 Ruby binding of GTK+-2.x
+ruby22-gnome2-pango-3.1.1 Ruby binding of pango-1.x
 ruby22-hmac-0.4.0   Common interface to HMAC functionality
 ruby22-httpclient-2.8.2.4 HTTP accessing library for Ruby
 ruby22-instance_storage-1.0.0 Manage class instances with dictionary
 ruby22-locale-2.1.2 Pure ruby library which provides basic APIs for localization
 ruby22-memoist-0.15.0 Replacement of memoizable, memoize methods invocation
-ruby22-mikutter-3.5.1 Simple, powerful, and moeful twitter client
+ruby22-mikutter-3.5.2 Simple, powerful, and moeful twitter client
 ruby22-mini_portile2-2.1.0 Simple autoconf builder for developers
 ruby22-moneta-0.8.1 Unified interface to key/value stores
 ruby22-nokogiri-1.7.0.1nb1 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
@@ -111,4 +111,4 @@ vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
 wget-1.18nb3        Retrieve files from the 'net via HTTP and FTP
 xli-1.17.0nb13      X11 Image Loading Utility
 xmlcatmgr-2.2nb1    XML and SGML catalog manager
-zsh-5.3             The Z shell
+zsh-5.3.1           The Z shell
