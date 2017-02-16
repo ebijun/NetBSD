@@ -1,0 +1,54 @@
+    
+    /etc/rc.conf
+
+    hostname=rpi_red
+
+    useradd -m -G wheel jun
+    passwd jun
+    ssh-keygen
+    echo printf '\033]2;'"`uname -r` `uname -p`"'\033' > Rsync
+    echo "rsync -4 -av -e ssh /usr/pkgsrc/packages/All/ jun@soumgw.soum.co.jp:/work/jun/`uname -p`/next/" >> Rsync
+    fsck /dev/sd0a ;mount -o log,noatime /dev/sd0a /mnt
+    mv /usr/pkgsrc /usr/pkgsrc.1
+    cd /usr;ftp http://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
+    cd /usr/;ln -s /mnt/`uname -p`/pkgsrc
+    vi /etc/pkg_install.conf;add /usr/pkgsrc/packages/All
+    pkg_add rsync
+    pkg_add pkg_chk
+    cd /root/Package;./Install
+    cd /usr/pkgsrc/*/osabi;make update
+    cd /usr/pkgsrc/*/lzmalib;make package-install
+    cp pkgchk.conf /usr/pkgsrc;pkg_chk -auk 
+
+    /etc/mk.conf追加
+
+    NO_PACKAGE+= RESTRICTED NO_BIN_ON_FTP
+    ACCEPTABLE_LICENSES+= erlang-public-license
+    ACCEPTABLE_LICENSES+= esdl-license
+    ACCEPTABLE_LICENSES+= gnu-agpl-v3
+    ACCEPTABLE_LICENSES+= lame-license
+
+    PaX
+
+    cat << EOF >> /etc/sysctl.conf
+    security.pax.mprotect.enabled=0
+    security.pax.mprotect.global=0
+    security.pax.mprotect.ptrace=0
+    security.pax.segvguard.enabled=0
+    security.pax.aslr.enabled=0
+    security.pax.aslr.global=0
+    EOF
+    sysctl -f /etc/sysctl.conf
+
+    Clean
+
+    cat > Package/Clean << EOF
+    export PKGSRCDIR=/usr/pkgsrc
+    pkgclean work.`uname -p`
+    lintpkgsrc -mr
+    EOF
+
+    webkitコンパイル 
+
+    MAKE_JOBSコメントアウト
+    ulimit 値確認 (ulimit -d unlimited )?
