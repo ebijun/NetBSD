@@ -1,0 +1,277 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.59 (GENERIC.201702170310Z)
+total memory = 3935 MB
+avail memory = 3799 MB
+rnd: seeded with 128 bits
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+running cgd selftest aes-xts-256 aes-xts-512 done
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+Sony Corporation VGN-NW50JB (C601JRZY)
+mainbus0 (root)
+ACPI: RSDP 0x00000000000F03B0 000024 (v02 Sony  )
+ACPI: XSDT 0x00000000B5F12F10 00005C (v01 Sony   VAIO     20090522 MSFT 00010013)
+ACPI: FACP 0x00000000B5F07A90 0000F4 (v04 Sony   VAIO     20090522 MSFT 00010013)
+ACPI: DSDT 0x00000000B5F09010 007B23 (v01 Sony   VAIO     20090522 INTL 20051117)
+ACPI: FACS 0x00000000B5F19E40 000040
+ACPI: FACS 0x00000000B5F19D40 000040
+ACPI: APIC 0x00000000B5F11F10 00006C (v02 Sony   VAIO     20090522 MSFT 00010013)
+ACPI: MCFG 0x00000000B5F18C90 00003C (v01 Sony   VAIO     20090522 MSFT 00000097)
+ACPI: HPET 0x00000000B5F18C10 000038 (v01 Sony   VAIO     20090522 MSFT 00010013)
+ACPI: SLIC 0x00000000B5F14C10 000176 (v01 Sony   VAIO     20090522 Sony 01000000)
+ACPI: SSDT 0x00000000B5EDF590 000505 (v01 Sony   VAIO     20090522 INTL 20051117)
+ACPI: SSDT 0x00000000B5EC8C10 0002E4 (v01 Sony   VAIO     20090522 INTL 20051117)
+ACPI: Executed 1 blocks of module-level executable AML code
+ACPI: 3 ACPI AML tables successfully acquired and loaded
+ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x20, 24 pins
+cpu0 at mainbus0 apid 0
+cpu0: Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz, id 0x1067a
+cpu1 at mainbus0 apid 1
+cpu1: Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz, id 0x1067a
+acpi0 at mainbus0: Intel ACPICA 20170119
+acpi0: X/RSDT: OemId <  Sony,    VAIO,20090522>, AslId <MSFT,00010013>
+acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFE813EE99090 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFE8106FF4010 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFE8106FB2610 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFFE810712BFA8 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
+acpi0: SCI interrupting at int 9
+timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+acpiec0 at acpi0 (EC, PNP0C09)
+: io 0x62,0x66
+FWHD (INT0800) at acpi0 not configured
+LDRC (PNP0C02) at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
+pckbc1 at acpi0 (PS2K, PNP0303) (kbd port): io 0x60,0x64 irq 1
+pckbc2 at acpi0 (PS2M, SNY9001) (aux port): irq 12
+sony0 at acpi0 (SNC, SNY5001): Sony Miscellaneous Controller
+ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20170119/nsarguments-264)
+ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20170119/nsarguments-264)
+ACPI Error: Method parse/execution failed [\PHS0] (Node 0xfffffe813eed1b50), AE_AML_INFINITE_LOOP (20170119/psparse-560)
+ACPI Error: Method parse/execution failed [\PHS] (Node 0xfffffe813eed1b10), AE_AML_INFINITE_LOOP (20170119/psparse-560)
+ACPI Error: Method parse/execution failed [\_SB.PCI0.LPCB.SNC.GDDI] (Node 0xfffffe813eebc1d0), AE_AML_INFINITE_LOOP (20170119/psparse-560)
+acpivga0 at acpi0 (GFX0): ACPI Display Adapter
+acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
+acpiout1 at acpivga0 (DD02, 0x0410): ACPI Display Output Device
+acpiout1: brightness levels: [4,16,28,40,52,64,76,88,100]
+acpiout2 at acpivga0 (DD03, 0x0200): ACPI Display Output Device
+acpiout3 at acpivga0 (DD04, 0x0004): ACPI Display Output Device
+acpiout4 at acpivga0 (DD05, 0x0005): ACPI Display Output Device
+acpivga0: unknown output device acpiout0
+acpivga0: unknown output device acpiout1
+acpivga0: unknown output device acpiout2
+acpivga0: unknown output device acpiout3
+acpivga0: unknown output device acpiout4
+acpivga0: connected output devices:
+acpivga0:   0x0400: Unknown Output Device, head 0
+PDRC (PNP0C02) at acpi0 not configured
+acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
+acpiacad0 at acpi0 (ADP1, ACPI0003): ACPI AC Adapter
+acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
+acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
+acpitz0 at acpi0 (TZ00)
+acpitz0: levels: critical 127.0 C, passive cooling
+acpitz1 at acpi0 (TZ01): cpu0 cpu1
+acpitz1: levels: critical 110.0 C, passive 104.0 C, passive cooling
+ACPI: Enabled 2 GPEs in block 00 to 3F
+pckbd0 at pckbc1 (kbd slot)
+pckbc1: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc1 (aux slot)
+pckbc1: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: vendor 8086 product 2a40 (rev. 0x07)
+agp0 at pchb0: G4X-family chipset
+agp0: detected 130556k stolen memory
+agp0: aperture at 0xc0000000, size 0x10000000
+i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 2a42 (rev. 0x07)
+drm: Memory usable by graphics device = 512M
+drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
+drm: Driver supports precise vblank timestamp query.
+i915drmkms0: interrupting at ioapic0 pin 16 (i915)
+intelfb0 at i915drmkms0
+i915drmkms0: info: registered panic notifier
+intelfb0: framebuffer at 0xffff800045e90000, size 1366x768, depth 32, stride 5504
+wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+vendor 8086 product 2a43 (miscellaneous display, revision 0x07) at pci0 dev 2 function 1 not configured
+uhci0 at pci0 dev 26 function 0: vendor 8086 product 2937 (rev. 0x03)
+uhci0: interrupting at ioapic0 pin 16
+usb0 at uhci0: USB revision 1.0
+uhci1 at pci0 dev 26 function 1: vendor 8086 product 2938 (rev. 0x03)
+uhci1: interrupting at ioapic0 pin 21
+usb1 at uhci1: USB revision 1.0
+uhci2 at pci0 dev 26 function 2: vendor 8086 product 2939 (rev. 0x03)
+uhci2: interrupting at ioapic0 pin 19
+usb2 at uhci2: USB revision 1.0
+ehci0 at pci0 dev 26 function 7: vendor 8086 product 293c (rev. 0x03)
+ehci0: interrupting at ioapic0 pin 19
+ehci0: EHCI version 1.0
+ehci0: companion controllers, 2 ports each: uhci0 uhci1 uhci2
+usb3 at ehci0: USB revision 2.0
+hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
+hdaudio0: interrupting at msi0 vec 0
+hdafg0 at hdaudio0: vendor 10ec product 0262
+hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
+hdafg0: ADC01 2ch: Mic In [Jack] [Built-In]
+hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: full duplex, playback, capture, mmap, independent
+hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+spkr0 at audio0: PC Speaker (synthesized)
+hdafg1 at hdaudio0: vendor 8086 product 2802
+hdafg1: HDMI00 8ch: Digital Out [Jack]
+hdafg1: 8ch/0ch 48000Hz PCM16*
+ppb0 at pci0 dev 28 function 0: vendor 8086 product 2940 (rev. 0x03)
+ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+pci1 at ppb0 bus 1
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+vendor 11ab product 4380 (ethernet network, revision 0x10) at pci1 dev 0 function 0 not configured
+ppb1 at pci0 dev 28 function 1: vendor 8086 product 2942 (rev. 0x03)
+ppb1: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+pci2 at ppb1 bus 2
+pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+iwn0 at pci2 dev 0 function 0: vendor 8086 product 4232 (rev. 0x00)
+iwn0: interrupting at msi1 vec 0
+iwn0: MIMO 1T2R, MoW, address 00:22:fb:68:6a:8c
+iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+iwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ppb2 at pci0 dev 28 function 2: vendor 8086 product 2944 (rev. 0x03)
+ppb2: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+pci3 at ppb2 bus 3
+pci3: i/o space, memory space enabled, rd/line, wr/inv ok
+uhci3 at pci0 dev 29 function 0: vendor 8086 product 2934 (rev. 0x03)
+uhci3: interrupting at ioapic0 pin 23
+usb4 at uhci3: USB revision 1.0
+uhci4 at pci0 dev 29 function 1: vendor 8086 product 2935 (rev. 0x03)
+uhci4: interrupting at ioapic0 pin 19
+usb5 at uhci4: USB revision 1.0
+uhci5 at pci0 dev 29 function 2: vendor 8086 product 2936 (rev. 0x03)
+uhci5: interrupting at ioapic0 pin 18
+usb6 at uhci5: USB revision 1.0
+ehci1 at pci0 dev 29 function 7: vendor 8086 product 293a (rev. 0x03)
+ehci1: interrupting at ioapic0 pin 23
+ehci1: EHCI version 1.0
+ehci1: companion controllers, 2 ports each: uhci3 uhci4 uhci5
+usb7 at ehci1: USB revision 2.0
+ppb3 at pci0 dev 30 function 0: vendor 8086 product 2448 (rev. 0x93)
+pci4 at ppb3 bus 11
+pci4: i/o space, memory space enabled
+fwohci0 at pci4 dev 3 function 0: vendor 1180 product 0832 (rev. 0x05)
+fwohci0: interrupting at ioapic0 pin 16
+fwohci0: OHCI version 1.0 (ROM=1)
+fwohci0: No. of Isochronous channels is 4.
+fwohci0: EUI64 08:00:46:03:03:05:42:dc
+fwohci0: Phy 1394a available S400, 1 ports.
+fwohci0: Link S400, max_rec 2048 bytes.
+ieee1394if0 at fwohci0: IEEE1394 bus
+fwip0 at ieee1394if0: IP over IEEE1394
+fwohci0: Initiate bus reset
+sdhc0 at pci4 dev 3 function 1: vendor 1180 product 0822 (rev. 0x22)
+sdhc0: interrupting at ioapic0 pin 17
+sdhc0: SDHC 1.0, rev 4, SDMA, 33000 kHz, HS 3.3V, 512 byte blocks
+sdmmc0 at sdhc0 slot 0
+vendor 1180 product 0592 (miscellaneous system, revision 0x12) at pci4 dev 3 function 2 not configured
+ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 2919 (rev. 0x03)
+timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
+ichlpcib0: 24-bit timer
+tco0 at ichlpcib0: TCO (watchdog) timer configured.
+tco0: Min/Max interval 1/367 seconds
+ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 2929 (rev. 0x03)
+ahcisata0: interrupting at ioapic0 pin 19
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.20, 4 ports, 32 slots, CAP 0xe720ffc3<EMS,CCCS,PSC,SSC,PMD,ISS=0x2=Gen2,SCLO,SAL,SALP,SSNTF,SNCQ,S64A>
+atabus0 at ahcisata0 channel 0
+atabus1 at ahcisata0 channel 1
+ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 2930 (rev. 0x03)
+ichsmb0: interrupting at ioapic0 pin 19
+iic0 at ichsmb0: I2C bus
+isa0 at ichlpcib0
+pcppi0 at isa0 port 0x61
+spkr1 at pcppi0: PC Speaker
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+acpicpu0: C2: FFH, lat  57 us, pow   100 mW
+acpicpu0: P0: FFH, lat  10 us, pow 35000 mW, 2534 MHz, turbo boost
+acpicpu0: P1: FFH, lat  10 us, pow 35000 mW, 2533 MHz
+acpicpu0: P2: FFH, lat  10 us, pow 15000 mW, 1600 MHz
+acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
+acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
+acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
+acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
+acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
+acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
+acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
+acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
+coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
+acpicpu1 at cpu1: ACPI CPU
+coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=100
+fwohci0: BUS reset
+fwohci0: node_id=0xc800ffc0, gen=1, CYCLEMASTER mode
+ieee1394if0: 1 nodes, maxhop <= 0 cable IRM irm(0) (me)
+ieee1394if0: bus manager 0
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+acpiacad0: AC adapter online.
+IPsec: Initialized Security Association Processing.
+uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhub1 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+uhub2 at usb2: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+uhub3 at usb3: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub3: 6 ports with 6 removable, self powered
+uhub4 at usb4: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub4: 2 ports with 2 removable, self powered
+uhub5 at usb5: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub5: 2 ports with 2 removable, self powered
+uhub6 at usb6: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub6: 2 ports with 2 removable, self powered
+uhub7 at usb7: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub7: 6 ports with 6 removable, self powered
+ahcisata0 port 0: device present, speed: 1.5Gb/s
+ahcisata0 port 1: device present, speed: 1.5Gb/s
+wd0 at atabus0 drive 0
+wd0: <TOSHIBA MK5055GSX>
+wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+wd0: 465 GB, 969021 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+atapibus0 at atabus1: 1 targets
+cd0 at atapibus0 drive 0: <HL-DT-ST DVDRAM GT20N, 905HN033373, CS07> cdrom removable
+cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
+cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
+uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. product b14e, rev 2.00/41.12, addr 2
+video0 at uvideo0: Chicony Electronics Co., Ltd. product b14e, rev 2.00/41.12, addr 2
+ehci0: handing over low speed device on port 3 to uhci1
+pad0: outputs: 44100Hz, 16-bit, stereo
+audio1 at pad0: half duplex, playback, capture
+pad0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 44100
+spkr2 at audio1: PC Speaker (synthesized)
+WARNING: 5 errors while detecting hardware; check system log.
+boot device: wd0
+root on wd0a dumps on wd0b
+root file system type: ffs
+kern.module.path=/stand/amd64/7.99.59/modules
+ugen0 at uhub1 port 1
+ugen0: Sony product 01bb, rev 2.00/1.28, addr 2
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)
