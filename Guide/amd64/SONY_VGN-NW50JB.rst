@@ -61,4 +61,19 @@ function 2 not configured
 
 https://www.amazon.co.jp/PowerSmart-VGN-NW50JB-VAIO-VGN-NW70JB-VAIO-VGN-NW91FS-VAIO-VGN-NW91GS-VAIO/dp/B00HTZXU10/ref=sr_1_1ie=UTF8&qid=1487336118&sr=8-1&keywords=VGN-NW50JB
 
+pkgsrcをダウンロード&展開
+-----------------------
+
+
+pkgsrc/meta-package/xfce4 インストール
+-----------------------------
+
+::
+
+ cd /usr/pkgsrc/meta-packages/xfce4
+ make package-install
+
+ソースコードをダウンロード&展開
+----------------------------
+
 
