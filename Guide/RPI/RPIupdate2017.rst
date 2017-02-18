@@ -45,7 +45,7 @@ RaspberryPIのNetBSDイメージについて
  2016/9,7.99.36,3.4.2,,,,OSuC金沢,http://mail-index.netbsd.org/port-arm/2016/08/23/msg003918.html
  ,7.99.38,3.4.3,3.7.2,,,OSC島根,http://mail-index.netbsd.org/port-arm/2016/09/22/msg003920.html
  ,7.99.39,,,,,OSC長岡,http://mail-index.netbsd.org/port-arm/2016/09/29/msg003921.html
- 2016/11,7.99.41,3.4.6,,1.0.2j,RPI2 Ver1.2サポート/libssl.12/libcrypt.12,OSC東京秋,http://mail-index.netbsd.org/port-arm/2016/11/02/msg003954.html
+ 2016/11,7.99.41,3.4.6,,1.0.2j,RPI2 Ver1.2サポート/libssl.12/libcrypt.12 NetBSD2017-SA01,OSC東京秋,http://mail-index.netbsd.org/port-arm/2016/11/02/msg003954.html
  ,7.99.42,,,,BIND-9.10.4-P4 Raspberrypi-userland-2016-1101,KOF2016,http://mail-index.netbsd.org/port-arm/2016/11/10/msg003958.html
  ,7.99.42,3.4.7,,,NTP-4.2.8p9,OSC広島,http://mail-index.netbsd.org/port-arm/2016/11/23/msg003970.html
  2016/12,7.99.44,3.4.8,,,CWE-120 libc,BIG RPI Jam,http://mail-index.netbsd.org/port-arm/2016/12/10/msg004002.html
