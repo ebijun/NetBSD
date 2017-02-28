@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.59 (GENERIC.201702071330Z)
+NetBSD 7.99.62 (GENERIC.201702261520Z)
 total memory = 2035 MB
 avail memory = 1982 MB
 timecounter: Timecounters tick every 10.000 msec
@@ -38,13 +38,13 @@ acpi0 at mainbus0: Intel ACPICA 20170119
 acpi0: X/RSDT: OemId <ACER  ,ACER    ,00000001>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3C2C98C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3B4898C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3C0FC0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0x00000000C3B2BC0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C388B71C 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C37A871C 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3C2ADDC 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3B45DDC 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -101,16 +101,16 @@ i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 27ae (rev. 0x03)
 drm: Memory usable by graphics device = 256M
 drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
 drm: Driver supports precise vblank timestamp query.
-i915drmkms0: interrupting at ioapic0 pin 16 (i915)
+i915drmkms0: interrupting at msi0 vec 0 (i915)
 drm: initialized overlay support
 intelfb0 at i915drmkms0
 i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xdb38e000, size 1024x600, depth 32, stride 4096
+intelfb0: framebuffer at 0xdb2bb000, size 1024x600, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
 hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
-hdaudio0: interrupting at msi0 vec 0
+hdaudio0: interrupting at msi1 vec 0
 hdafg0 at hdaudio0: vendor 10ec product 0272
 hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
 hdafg0: ADC01 2ch: Mic In [Jack]
@@ -132,7 +132,7 @@ ppb1: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.
 pci2 at ppb1 bus 2
 pci2: i/o space, memory space enabled
 iwn0 at pci2 dev 0 function 0: vendor 8086 product 4232 (rev. 0x00)
-iwn0: interrupting at msi1 vec 0
+iwn0: interrupting at msi2 vec 0
 iwn0: MIMO 1T2R, MoW, address 00:22:fb:3a:b2:fa
 iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
 iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
@@ -203,7 +203,6 @@ acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
 acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
 coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
 acpicpu1 at cpu1: ACPI CPU
-DRM error in i915_irq_handler: pipe A underrun
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
 uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
@@ -230,10 +229,24 @@ uvideo0 at uhub4 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. 
 video0 at uvideo0: Sonix Technology Co., Ltd. WebCam, rev 2.00/1.00, addr 2
 boot device: wd0
 root on wd0a dumps on wd0b
+/: replaying log to memory
 root file system type: ffs
-kern.module.path=/stand/i386/7.99.59/modules
+kern.module.path=/stand/i386/7.99.62/modules
+/: replaying log to disk
+/var: replaying log to disk
+/usr: replaying log to disk
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
-acpibat0: normal capacity on 'charge state'
+/home: replaying log to disk
+DRM error in i915_irq_handler: pipe A underrun
+DRM error in i915_hangcheck_elapsed: Hangcheck timer elapsed... render ring idle
+drm: no progress on render ring
+drm: GPU HANG: ecode -1:0x00000000, reason: Ring hung, action: reset
+drm: GPU hangs can indicate a bug anywhere in the entire gfx stack, including userspace.
+drm: Please file a _new_ bug report on bugs.freedesktop.org against DRI -> DRM/Intel
+drm: drm/i915 developers can then reassign to the right component if it's not a kernel issue.
+drm: The gpu crash dump is required to analyze gpu hangs, so please always attach it.
+drm: GPU crash dump saved to /sys/class/drm/card0/error
+DRM error in i915_reset: Failed to reset chip: -19
