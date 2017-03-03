@@ -83,6 +83,7 @@ glib2-2.50.2        Some useful routines for C programming (glib2)
 glibmm-2.50.0       C++ bindings for glib
 glm-0.9.7.0         C++ mathematics library for graphics programming
 gmake-4.1nb3        GNU version of 'make' utility
+gmime-2.6.23        Library for the creation and parsing of MIME messages
 gmp-6.1.2           Library for arbitrary precision arithmetic
 gnome-doc-utils-0.20.10nb2 Documentation utilities for the GNOME project
 gnome-icon-theme-3.12.0nb1 Theme consisting of a set of icons for GNOME
@@ -93,6 +94,9 @@ gperf-3.1           GNU perfect hash function generator
 graphite2-1.3.7     Cross-platform rendering for complex writing systems
 gsed-4.4            GNU implementation of sed, the POSIX stream editor
 gsl-2.3             The GNU Scientific Library
+gst-plugins0.10-base-0.10.36nb10 Open source multimedia framework - Base plugins
+gst-plugins0.10-good-0.10.31nb4 Open source multimedia framework - Good plugins
+gst-plugins0.10-soup-0.10.31nb15 Open source multimedia framework - soup plugin
 gst-plugins1-base-1.10.3 Open source multimedia framework - Base plugins
 gstreamer0.10-0.10.36nb9 Open source multimedia framework
 gstreamer1-1.10.3   Open source multimedia framework
@@ -167,6 +171,7 @@ libflashsupport-4.2.2011 Additional Interface Support for Linux Flash Player
 libfreehand-0.1.1nb7 Library for Adobe/Macromedia drawings
 libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.7.6     GNU cryptographic library
+libgdata-0.6.6nb20  Google Data API based Glib client library
 libgee-0.18.0nb2    Library providing GObject-based interfaces and classes
 libglade-2.6.4nb25  Runtime interpreter for GLADE GUI files
 libgltf-0.0.2nb6    Rendering library for glTF
@@ -215,6 +220,7 @@ libtasn1-4.9        ASN.1 structure parser library
 libtheora-1.1.1nb2  Video codec for Ogg multimedia streaming
 libtool-base-2.4.2nb13 Generic shared library support script (the script itself)
 libtool-fortran-2.4.2nb9 Generic shared library support script (the script itself, incl. Fortran)
+libunique-1.1.6nb24 Library for writing single instance applications
 libunique3-3.0.2nb18 Library for writing single instance applications
 libunistring-0.9.7  Unicode string library
 libupnp-1.6.19      Portable Universal Plug and Play (UPnP) SDK
@@ -324,6 +330,7 @@ pkg_chk-2.0.8       Check installed package versions against pkgsrc
 pkgclean-20051116   Quickly clean up all work directories in pkgsrc
 pkgconf-1.0.1       API-driven pkg-config replacement
 png-1.6.28          Library for manipulating PNG images
+podofo-0.9.5        Library to work with the PDF file format
 policykit-0.9nb20   Framework for managing admin policies and privileges
 polkit-0.113nb3     Authorization Manager
 poppler-0.52.0      PDF rendering library
@@ -342,8 +349,11 @@ py27-appdirs-1.4.0  Module for determining appropriate, platform-specific dirs
 py27-babel-2.3.4    Collection of tools for internationalizing Python applications
 py27-cElementTree-2.7.13 C implementation of Python ElementTree API
 py27-cairo-1.10.0nb4 Python bindings for cairo (python-2.x version)
+py27-cython-0.25.2  C-Extensions for Python
+py27-czipfile-1.0.0 Replacement for builtin zipfile, with fast, C-based zipfile decryption
 py27-docutils-0.13.1 Python tool to generate documents
 py27-expat-2.7.13   Python interface to expat
+py27-gdata-2.0.18   Google Data API Python client library
 py27-gobject-2.28.6nb12 Python bindings for glib2 gobject
 py27-gtk2-2.24.0nb22 Python bindings for GTK+2
 py27-hypothesis-3.6.1 Python library for property based testing
@@ -354,6 +364,7 @@ py27-libxml2-2.9.4nb2 Python wrapper for libxml2
 py27-libxslt-1.1.29 Python wrapper for libxslt
 py27-lxml-3.7.2     Python binding for libxml2 and libxslt
 py27-markupsafe-0.23 Implements a XML/HTML/XHTML Markup safe string for Python
+py27-mcomix-1.2.1nb3 GTK2 comic book viewer
 py27-nose-1.3.7     Unittest-based testing framework for python
 py27-packaging-16.8 Core utilities for Python packages
 py27-poppler-0.12.1nb20 Python bindings for the Poppler PDF rendering library
@@ -420,7 +431,7 @@ ruby22-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
 ruby22-unf_ext-0.0.7.2 Unicode Normalization Form support library for CRuby
 samba-3.6.25nb4     SMB/CIFS protocol server suite
 schroedinger-1.0.11 Dirac video compression library
-scribus-1.3.3.14nb27 Publishing layout with graphical interface
+scribus-1.4.3nb8    Publishing layout with graphical interface
 seamonkey-2.46nb5   Full-featured gecko-based browser
 seamonkey-l10n-2.46 Language packs for www/seamonkey
 serf-1.3.9          High-performance asynchronous HTTP client library
@@ -460,9 +471,12 @@ suse_openssl-13.1nb14 Linux compatibility package for OpenSSL
 suse_pulseaudio-13.1nb3 Linux compatibility package for Pulseaudio
 suse_x11-13.1nb7    Linux compatibility package for X11
 taglib-1.11.1       Library for accessing id tags in various media files
+tcsh-6.20.00nb2     Extended C-shell with many useful features
 tdb-1.3.8           Small database system which uses files to store data
 texi2html-5.0nb6    Texinfo-to-HTML direct translator
 tiff-4.0.7nb1       Library and tools for reading and writing TIFF data files
+totem-2.32.0nb39    Movie player for the GNOME Desktop (using GStreamer)
+totem-pl-parser-3.4.5nb5 Totem playlist parser
 tradcpp-0.5.2nb2    Traditional (K&R-style) C preprocessor
 ttmkfdir2-20021109nb6 Tool that creates a fonts.scale file
 uim-1.8.6nb36       Multilingual input method library
