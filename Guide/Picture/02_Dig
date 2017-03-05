@@ -1,0 +1,6 @@
+for i in `./Pick`
+do
+	echo $i |awk -F/ '{printf("mkdir -p ../Picture/%s/%s/%s\n",$1,$2,$3)}'
+	echo $i |awk -F/ '{printf("resize_image --down -it JPG -ot JPG ../Picture.org/%s/%s/%s/%s -w 280 -o ../Picture/%s/%s/%s/%s\n",$1,$2,$3,$4,$1,$2,$3,$4)}'
+#	echo $i |awk -F/ '{printf("resize_image --down -it JPG -ot JPG ../Picture.org/%s/%s/%s/%s -w 280 -o ../Picture/%s/%s/%s/%s\n",$3,$4,$5,$6,$3,$4,$5,$6)}'
+done

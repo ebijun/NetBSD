@@ -1,0 +1,4 @@
+for i in `cat Days`
+do
+	echo '.. image:: ' $i |egrep -iv "[[0-9]_[0-9]*.JPG" 
+done
