@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -61,8 +61,8 @@ Maps:
  2015 Spring,2/27-28,1700,79,明星大学
  2015 Fall,10/24-25,1550,77,明星大学
  2016 Spring,2/26-27,1550,71,明星大学
- 2016 Fall,11/5-6,,77,明星大学
-
+ 2016 Fall,11/5-6,1350,77,明星大学
+ 2017 Spring,3/10-11,,72,明星大学
 
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,6 +75,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 104,OSC2017東京春, http://www.soum.co.jp/~jun/OSC2017tokyospring.pdf
  97, OSC2016東京秋, http://www.soum.co.jp/~jun/OSC2016tokyofall.pdf
  85, OSC2016東京春, http://www.soum.co.jp/~jun/OSC2016tokyospring.pdf
  80, OSC2015東京秋, http://www.soum.co.jp/~jun/OSC2015tokyofall.pdf
@@ -95,7 +96,8 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2016東京秋 NetBSDブース展示の記録,
+ OSC2017東京春 NetBSDブース展示の記録,
+ OSC2016東京秋 NetBSDブース展示の記録, https://togetter.com/li/1044981
  OSC2016東京春 NetBSDブース展示の記録, http://togetter.com/li/943037
  OSC2015東京秋 NetBSDブース展示の記録, http://togetter.com/li/891197
  OSC2015東京春 NetBSDブース展示の記録, http://togetter.com/li/788681
@@ -155,6 +157,7 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2016/11/5-6,OSC2016東京秋,DreamCast+IDE HDD
  2016/2/26-7,OSC2016東京春,fdgw2 RK3188 WM8750 USL-5P RouterBoard AR9331 pcDuino
  2015/10/24-5,OSC2015東京秋,RK3188 WM8750 EP9315 AM3358 Allwinner A20 405GP BCM2836 AR9331
  2015/2/27-8,OSC2015東京春,Radxa RocK APC8750 RPI OpenBlockS sandpoint
