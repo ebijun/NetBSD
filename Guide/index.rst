@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/hamamatsu
+ Place/tokyo
  OSC/OSC2017
  RPI/RPIupdate2017.rst
  RPI

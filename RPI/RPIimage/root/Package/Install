@@ -19,3 +19,4 @@ uname -a        >  /root/version
 openssl version >> /root/version
 named -v        >> /root/version
 gcc -v          >> /root/version
+postconf | grep mail_version |grep -v milter >> /root/version
