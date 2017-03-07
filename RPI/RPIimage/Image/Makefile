@@ -102,7 +102,7 @@ release:
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
 	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
-	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
+#	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 	(cd ../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	umount ${MNT}/boot
