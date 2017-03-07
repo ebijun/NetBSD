@@ -6,9 +6,9 @@
 #make -f Makefile firm
 #make -f Makefile libssls
 #
-# cp back.img `date +%Y-%m-%d`-netbsd-raspi-earmv6hf.img
+#cp back.img `date +%Y-%m-%d`-netbsd-raspi-earmv6hf.img
 # 
-# adding packages.
+#adding packages.
 #
 make -f Makefile logclean
 make -f Makefile release
