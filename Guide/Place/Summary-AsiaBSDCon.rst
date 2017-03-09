@@ -1,8 +1,8 @@
 Our Likeness
 --------------------------
 
-* Open Source Conference 2017 Hamanako on Feb. 12 2017:
- http://www.ospn.jp/osc2017-hamanako/
+Open Source Conference 2017 Hamanako on Feb. 12 2017:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - RaspberryPI 3 NetBSD/earmv6hf
    NetBSD/x68k on XM6i X68030 emulator http://xm6i.org/
@@ -13,8 +13,8 @@ Our Likeness
    PC9801 Emulator and pkgsrc/net/mikutter
 - mikutter stickers:
 
-* Open Source Conference 2017 Osaka on Jan.28 2017:
- http://www.ospn.jp/osc2017-osaka/
+Open Source Conference 2017 Osaka on Jan.28 2017:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PC6001 emulator PC6001VX on NetBSD + pkgsrc by tsutsui@
    https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
@@ -24,8 +24,8 @@ PC6001 emulator PC6001VX on NetBSD + pkgsrc by tsutsui@
 - NetBSD/x68k on RaspberryPI 3 NetBSD/earmv7hf
 - omxplayer+Xfce4 Raspberry PI2
 
-* BIG Raspberry JAM Tokyo 2016 on Dec. 11 2016:
- https://raspberrypi.connpass.com/event/44902/
+BIG Raspberry JAM Tokyo 2016 on Dec. 11 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - @s_mitu RaspberryPI on FreeBSD: FreeBSD tank 32bit version:
 - espeak can FreeBSD talk via USB audio.
@@ -34,8 +34,8 @@ PC6001 emulator PC6001VX on NetBSD + pkgsrc by tsutsui@
 - NetWalker:
 - WZERO3:
 
-* Open Source Conference 2016 Hiroshima on Nov.27 2016:
- http://www.ospn.jp/osc2016-hiroshima/
+Open Source Conference 2016 Hiroshima on Nov.27 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Twitter client on X68030(68030 25MHz/12MB) by isaki@
    http://www.pastel-flower.jp/~isaki/NetBSD/osc16hi/
@@ -52,11 +52,13 @@ PC6001 emulator PC6001VX on NetBSD + pkgsrc by tsutsui@
 1. NetBSD/x68k on MacOSX 
 2. NetBSD/x68k on Raspberry 3 NetBSD/earmv7hf
  
-* NetBSD Advent Calendar 2016:
- http://qiita.com/advent-calendar/2016/netbsd
+NetBSD Advent Calendar 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Open Source Conference 2016 Fukuoka on Nov. 19 2016:
- http://www.ospn.jp/osc2016-fukuoka/
+http://qiita.com/advent-calendar/2016/netbsd
+
+Open Source Conference 2016 Fukuoka on Nov. 19 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - NetBSD/x68k on XM6i with Raspberry PI3 NetBSD/earmv6hf
 - Raspberry Pi2 Xfce4+omxplayer
@@ -64,8 +66,8 @@ PC6001 emulator PC6001VX on NetBSD + pkgsrc by tsutsui@
 - DoComo SigmarionII NetBSD/hpcmips
 - WZERO3 NetBSD/hpcarm
 
-* KANSAI OPEN FORUM 2016 on Nov. 11-12 2016:
- http://k-of.jp/
+KANSAI OPEN FORUM 2016 on Nov. 11-12 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - BSD BOF
 - NetBSD/dreamcast IDE HDD again (more update from OSC2016Tokyo/Fall) by tsutsui@
@@ -90,8 +92,8 @@ PC6001 emulator PC6001VX on NetBSD + pkgsrc by tsutsui@
 -- The Go Programming Language
 -- NEW GAME! 4
 
-* Open Source Conference 2016 Tokyo/Fall on Nov. 5-6 2016:
- http://www.ospn.jp/osc2016-fall/
+Open Source Conference 2016 Tokyo/Fall on Nov. 5-6 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 BSD BOF Presentation: 
 - @yamori813 ZRouter: 
@@ -110,8 +112,8 @@ CBUG Meeting:
 - WZERO3:
 - BSD Cookies: http://p.twipple.jp/2Brum
  
-* Open Source Conference 2016 Nagaoka on Oct.1 2016:
- http://www.ospn.jp/osc2016-nagaoka/
+Open Source Conference 2016 Nagaoka on Oct.1 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Fuguita: OpenBSD LiveCD by Yoshihiro Kawamata
 - Echigo BSD Users Group, since Nov.2001
@@ -122,8 +124,8 @@ CBUG Meeting:
 - SHARP NetWalker (NetBSD/earmv7hf) Xfce4.12+xnp21 PC9801emulator
 - SHARP WZERO3 ades (NetBSD/hpcarm)
  
-* Open Source Conference 2016 Shimane on Sep.24 2016:
- http://www.ospn.jp/osc2016-shimane/
+Open Source Conference 2016 Shimane on Sep.24 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - SONY NEWS NWS-5000SB NetBSD/newsmips 
 - NEC PC-9821Nb7/5 NetBSD/pc98 1.4.3 by @shimadah
@@ -133,16 +135,18 @@ CBUG Meeting:
 - Raspberry PI with omxplayer and Xfce4
 - Sharp Netwalker 
 
-* Open Source UnConference 2016 Kanazawa on Aug. 27 2016:
- http://connpass.com/event/30813/
+Open Source UnConference 2016 Kanazawa on Aug. 27 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Raspberry Pi 0/1/2/3
 - Sharp Netwalker NetBSD/earmv7hf
 - Sharp WZero3
 - routerboard hAP lite by  @den_debiantokyo
 
-* NetBSD workshop at SecurityCamp 2016 Aug. 10 2016 13:30-17:30
- http://www.slideshare.net/junebihara18/netbsdworkshop
+NetBSD workshop at SecurityCamp 2016 Aug. 10 2016 13:30-17:30
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+http://www.slideshare.net/junebihara18/netbsdworkshop
  https://www.soum.co.jp/~jun/SecCamp2016.pdf
  https://www.ipa.go.jp/jinzai/camp/2016/zenkoku2016_jikanwari.html
 
@@ -215,8 +219,8 @@ Time UP!
 
 Thanx for all 11 participants younger than dreamcast,
 
-* Open Source Conference 2016 Kyoto on Jul. 29-30 2016:
- http://www.ospn.jp/osc2016-kyoto/
+Open Source Conference 2016 Kyoto on Jul. 29-30 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - NetBSD/luna68k 7.0.1 by tsutsui@
 - https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
@@ -253,7 +257,8 @@ Thanx for all 11 participants younger than dreamcast,
 KBUG Flyer
  http://sacraya.610t.org/kbug/flyer/flyer-OSC2016Kyoto.pdf
 
-* Japan NetBSD Users' Group 18th annual Meeting on Jul. 9 2016:
+Japan NetBSD Users' Group 18th annual Meeting on Jul. 9 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 NetBSD BOF:
   http://www.jp.netbsd.org/ja/JP/JNUG/event/20160709BOF/
@@ -287,22 +292,24 @@ NetBSD BOF:
 * Open Source Conference 2016 Gunma on May. 14 2016:
  http://www.ospn.jp/osc2016-gunma/
 
-machine		company	model	CPU
-NetBSD/evbarm	Sharp	NetWalker PC-Z1	Freescale i.MX515
-NetBSD/zaurus	Sharp	Zaurus SL-C1000	Intel PXA270
-NetBSD/evbarm	Raspberyy Pi Foundation	Raspberry PI Zero	Broadcom BCM2835
-NetBSD/evbarm	Raspberyy Pi Foundation	Raspberry PI	Broadcom BCM2835
-NetBSD/evbarm	Raspberyy Pi Foundation	Raspberry PI 2	Broadcom BCM2836
-NetBSD/evbarm	Raspberyy Pi Foundation	Raspberry PI 3	Broadcom BCM2837
-NetBSD/hpcarm	Sharp	WZero3	Intel PXA270
-NetBSD/hpcarm	Sharp	WZero3 Ad ES	Intel PXA270
-NetBSD/evbarm	BananaPi	Banana Pi	AllWinner A20
-NetBSD/evbarm	CubieTech	Cubieboard2	AllWinner A20
-NetBSD/evbmips  ELECOM WRH-300CR Mediatek MT7620
+::
+
+ machine		company	model	CPU
+ NetBSD/evbarm	Sharp	NetWalker PC-Z1	Freescale i.MX515
+ NetBSD/zaurus	Sharp	Zaurus SL-C1000	Intel PXA270
+ NetBSD/evbarm	Raspberyy Pi Foundation	Raspberry PI Zero	Broadcom BCM2835
+ NetBSD/evbarm	Raspberyy Pi Foundation	Raspberry PI	Broadcom BCM2835
+ NetBSD/evbarm	Raspberyy Pi Foundation	Raspberry PI 2	Broadcom BCM2836
+ NetBSD/evbarm	Raspberyy Pi Foundation	Raspberry PI 3	Broadcom BCM2837
+ NetBSD/hpcarm	Sharp	WZero3	Intel PXA270
+ NetBSD/hpcarm	Sharp	WZero3 Ad ES	Intel PXA270
+ NetBSD/evbarm	BananaPi	Banana Pi	AllWinner A20
+ NetBSD/evbarm	CubieTech	Cubieboard2	AllWinner A20
+ NetBSD/evbmips  ELECOM WRH-300CR Mediatek MT7620
  | http://pastebin.com/n05jnhjs
 
-* Open Source Conference 2016 Okinawa on Jul. 2 2016:
- http://www.ospn.jp/osc2016-okinawa/
+Open Source Conference 2016 Okinawa on Jul. 2 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - RPI0+RPI3+RPI2
 - Netwalker+mikutter+xnp2+Xfce4
@@ -312,8 +319,8 @@ NetBSD/evbmips  ELECOM WRH-300CR Mediatek MT7620
 - XM6i Cross plathome X68000/X68030 emulator.
 - XEiJ X68000 Emulator in Java
 
-* Open Source Conference 2016 Hokkaido on Jun. 18 2016:
- http://www.ospn.jp/osc2016-do/
+Open Source Conference 2016 Hokkaido on Jun. 18 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - VT220 and NetBSD7 on SPARC station IPX
 - NetBSD 2.5MB image: 
@@ -325,8 +332,8 @@ NetBSD/evbmips  ELECOM WRH-300CR Mediatek MT7620
 - Presentation: Making enbeded NetBSD by Yuuki Enomoto 
 - Short Talk: by Kenichi Fukamachi
 
-* Open Source Conference 2016 Nagoya on May. 28 2016:
- http://www.ospn.jp/osc2016-nagoya/
+Open Source Conference 2016 Nagoya on May. 28 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - OMRON LUNA88k on OpenBSD 5.9 by Kenji Aoyama.
  + PC98 C-bus Graphic card PC9801-96 
@@ -343,8 +350,8 @@ NetBSD/evbmips  ELECOM WRH-300CR Mediatek MT7620
 - XEiJ (X68000 Emulator in Java)
 - Stickers
 
-* AsiaBSDCon 2016  on Mar. 10-13 2016:
- http://2016.asiabsdcon.org/
+*AsiaBSDCon 2016  on Mar. 10-13 2016:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Keynote K01: Early days of Unix and Lessons Learned
   Steve  Bourne (srb@acm.org)
@@ -364,7 +371,7 @@ NetBSD Related Talk&Event in AsiaBSDCon2016
 - X68/040turbo :msaitoh@
 - OMRON Luna68K: @nullnilaki
 - AsiaBSDCon2016 Sticker by @nullnilaki , Designed by @kozatomiho
--NetBSD rounded special Sticker by wiz@
+- NetBSD rounded special Sticker by wiz@
 - NetBSD cutting seat by ryo@
 - FreeBSD+Raspberry PI+GPIO/I2C demonstration by @s_mitu
 - NetBSD/evbarm	VIA	APC8750	WonderMedia WM8750
