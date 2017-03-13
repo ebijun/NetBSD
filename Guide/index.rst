@@ -23,7 +23,5 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
- OSC/OSC2017
- RPI/RPIupdate2017.rst
- RPI
+ Place/Summary-AsiaBSDCon
+ Place/asiabsdcon
