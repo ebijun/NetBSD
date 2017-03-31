@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.64 (GENERIC.201703021640Z)
+NetBSD 7.99.66 (GENERIC.201703250540Z)
 total memory = 3935 MB
 avail memory = 3799 MB
 rnd: seeded with 128 bits
@@ -45,11 +45,10 @@ ACPI: SSDT 0xFFFFFE8106FB2610 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117
 ACPI: Dynamic OEM Table Load:
 ACPI: SSDT 0xFFFFFE810712BFA8 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
-timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
 timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
-acpiec0 at acpi0 (EC, PNP0C09)
-: io 0x62,0x66
+acpiec0 at acpi0 (EC, PNP0C09): io 0x62,0x66
 FWHD (INT0800) at acpi0 not configured
 LDRC (PNP0C02) at acpi0 not configured
 attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
@@ -229,21 +228,21 @@ ieee1394if0: bus manager 0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
 IPsec: Initialized Security Association Processing.
-uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb0: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb1: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb2: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb2: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
-uhub3 at usb3: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub3 at usb3: vendor 8086 (0x8086) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub3: 6 ports with 6 removable, self powered
-uhub4 at usb4: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub4 at usb4: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub4: 2 ports with 2 removable, self powered
-uhub5 at usb5: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub5 at usb5: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub5: 2 ports with 2 removable, self powered
-uhub6 at usb6: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub6 at usb6: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub6: 2 ports with 2 removable, self powered
-uhub7 at usb7: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub7 at usb7: vendor 8086 (0x8086) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub7: 6 ports with 6 removable, self powered
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 ahcisata0 port 1: device present, speed: 1.5Gb/s
@@ -257,8 +256,8 @@ atapibus0 at atabus1: 1 targets
 cd0 at atapibus0 drive 0: <HL-DT-ST DVDRAM GT20N, 905HN033373, CS07> cdrom removable
 cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
 cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
-uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. product b14e, rev 2.00/41.12, addr 2
-video0 at uvideo0: Chicony Electronics Co., Ltd. product b14e, rev 2.00/41.12, addr 2
+uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x4f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
+video0 at uvideo0: Chicony Electronics Co., Ltd. (0x4f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
 ehci0: handing over low speed device on port 3 to uhci1
 pad0: outputs: 44100Hz, 16-bit, stereo
 audio1 at pad0: half duplex, playback, capture
@@ -268,10 +267,12 @@ WARNING: 5 errors while detecting hardware; check system log.
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/7.99.64/modules
+kern.module.path=/stand/amd64/7.99.66/modules
 ugen0 at uhub1 port 1
-ugen0: Sony product 01bb, rev 2.00/1.28, addr 2
+ugen0: Sony (0x54c) product 01bb (0x1bb), rev 2.00/1.28, addr 2
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+acpibat0: normal capacity on 'charge state'
+set{u,g}id pid 753 (gnome-pty-helper) was invoked by uid 1000 ppid 927 (xfce4-terminal) with fd 2 closed

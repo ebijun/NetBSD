@@ -1,19 +1,21 @@
-:1,$s/2017-03-18/2017-03-18/g
+:1,$s/2017-03-25/2017-03-25/g
 :1,$s/7.1/7.1/g
-:1,$s/201703111743Z/201703111743Z/g
+:1,$s/201703240150Z/201703240150Z/g
 
 
 To: port-hpcmipsnetbsd.org@localhost
-Subject: 2017-03-18-netbsd-hpcmips.img 
+Subject: 2017-03-25-netbsd-hpcmips.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-03-18-netbsd-hpcmips.img.gz for hpcmips.
+I've updated 2017-03-25-netbsd-hpcmips.img.gz for hpcmips.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/hpcmips/7.1/2017-03-18-netbsd-hpcmips.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/hpcmips/7.1/2017-03-25-netbsd-hpcmips.img.gz
 
 Feature:
-- NetBSD 7.1 201703111743Z hpcmips from nyftp.netbsd
-- pkgsrc: /usr/pkgsrc: 2017-03-11
+- NetBSD 7.1 201703240150Z hpcmips from nyftp.netbsd
+- pkgsrc: /usr/pkgsrc: 2017-03-18
+- new build of hpcboot.exe: mips-hpcboot.exe by Sevan Janiyan
+  http://mail-index.netbsd.org/port-hpcmips/2017/03/30/msg000303.html
 - dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcmips/7.1/sigmarion
 
