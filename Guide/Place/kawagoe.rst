@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -21,7 +21,7 @@
 
 .. イメージファイルは圧縮すること
 
-川越よ私は帰ってきたOSC2016NetBSDブースの展望
+川越よ私は帰ってきたOSC2017NetBSDブースの展望
 ----------------------------------------------
 | 日本NetBSDユーザーグループ
 | 蛯原　純
@@ -57,15 +57,14 @@ pkgsrc - ソースコードからソフトウェアを作る
 今年これまで
 ~~~~~~~~~~~~~~~~~~~~~
 
-* NetBSD8.0に向けて
-* gcc version 5.3.0
+* NetBSD8.0に向けて ... NetBSD7.1
+* 好きとか嫌いとか最初にUEFIを言い出したのは誰なのかしら
+* gcc version 5.4.0
 * 国内のソフトウェアをpkgsrcで紹介(mikutter/mlterm/..
 * RPI & ARM .. OSCごとにイメージファイルリリース
 * ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/
-* ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/
-* ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/odroid_c1
-* ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm
-* ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/zaurus
+* ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcmips
+   ニューヨークでなぜかNetBSD/hpcmips on IBM Z50が
 
 イメージファイル
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,65 +83,85 @@ togetterのview数でみるNetBSDブースこの一年
 
 .. csv-table::
 
- AsiaBSDCon 2016の記録,http://togetter.com/li/947029,2417
- オープンソースカンファレンス2016 Tokyo/Spring NetBSDブース展示の記録,http://togetter.com/li/943037,1375
- オープンソースカンファレンス2016 Hamanako NetBSDブース展示の記録,http://togetter.com/li/929091,719
- NetBSD Advent Calendar 2015の記録,http://togetter.com/li/916444,951
- オープンソースカンファレンス2015 Tokushima NetBSDブース展示の記録,http://togetter.com/li/899923,1076
- 関西オープンソース2015 NetBSDブース展示の記録,http://togetter.com/li/896456,1689
- オープンソースカンファレンス2015 Tokyo/Fall NetBSDブース展示の記録,http://togetter.com/li/891107,1137
- オープンソースカンファレンス2015 Fukuoka NetBSDブース展示の記録,http://togetter.com/li/881732,923
- オープンソースカンファレンス2015 Hiroshima NetBSDブース展示の記録,http://togetter.com/li/875487,1593
- オープンソースカンファレンス2015 Niigata NetBSDブース展示の記録,http://togetter.com/li/869752,936
- オープンソースカンファレンス2015 Shimane NetBSDブース展示の記録,http://togetter.com/li/863726,1020
- オープンソースカンファレンス2015 Kansai@Kyoto NetBSDブース展示の記録,http://togetter.com/li/857157,3860
- 日本NetBSDユーザーグループ第十七回定期総会 および NetBSD BoF 2015 の記録,http://togetter.com/li/845730,1427
- オープンソースカンファレンス2015 Okinawa　NetBSDブース展示の記録,http://togetter.com/li/842624,953
- オープンソースカンファレンス2015 Hokkaido　NetBSDブース展示の記録,http://togetter.com/li/834148,945
- オープンソースカンファレンス2015 Nagoya&NBUG5月例会 の記録,http://togetter.com/li/824817,2034
- NetBSD博物館,http://togetter.com/li/798599,4794
- AsiaBSDCon 2015の記録,http://togetter.com/li/793444,3930
-
+ オープンソースカンファレンス2017 Tokyo/Spring NetBSDブース展示の記録,https://togetter.com/li/1089005,823
+ AsiaBSDCon 2017の記録,https://togetter.com/li/1084357,2582
+ オープンソースカンファレンス2017 Hamanako NetBSDブース展示の記録,https://togetter.com/li/1080372,660
+ オープンソースカンファレンス2017 Osaka NetBSDブース展示の記録,https://togetter.com/li/1075115,832
+ BIG Raspberry JAM Tokyo 2016 NetBSDブース展示の記録,https://togetter.com/li/1058231,915
+ オープンソースカンファレンス2016 Hiroshima NetBSDブース展示の記録,https://togetter.com/li/1053125,1331
+ オープンソースカンファレンス2016 Fukuoka NetBSDブース展示の記録,https://togetter.com/li/1050258,397
+ 関西オープンソース2016 NetBSDブース展示の記録,https://togetter.com/li/1047263,1395
+ オープンソースカンファレンス2016 Tokyo/Fall NetBSDブース展示の記録,https://togetter.com/li/1044981,1488
+ オープンソースカンファレンス2016 Nagaoka NetBSDブース展示の記録,https://togetter.com/li/1031383,475
+ オープンソースカンファレンス2016 Shimane NetBSDブース展示の記録,https://togetter.com/li/1028314,934
+ オープンソースアンカンファレンス2016 Kanazawa NetBSDブース展示の記録,https://togetter.com/li/1017308,792
+ セキュリティ・キャンプ全国大会2016「謎マシンでNetBSDのクロス開発体験」の記録,https://togetter.com/li/1013466,1572
+ オープンソースカンファレンス2016 Kyoto NetBSDブース展示の記録,https://togetter.com/li/1005828,2968
+ 日本NetBSDユーザーグループ第十八回定期総会 および NetBSD BoF 2016 の記録,https://togetter.com/li/997708,1091
+ オープンソースカンファレンス2016 Okinawa NetBSDブース展示の記録,https://togetter.com/li/995155,927
+ オープンソースカンファレンス2016 Hokkaido NetBSDブース展示の記録,https://togetter.com/li/988853,1023
+ オープンソースカンファレンス2016 Nagoya NBUG & NetBSDブース展示の記録,https://togetter.com/li/980383,1296
+ オープンソースカンファレンス2016 Gunma NetBSDブース展示の記録,https://togetter.com/li/975036,1034
+ AsiaBSDCon 2016の記録,https://togetter.com/li/947029,3403
+ オープンソースカンファレンス2016 Tokyo/Spring NetBSDブース展示の記録,https://togetter.com/li/943037,2069
+ オープンソースカンファレンス2016 Hamanako NetBSDブース展示の記録,https://togetter.com/li/929091,1270
 
 今後のOSC参加予定
 ~~~~~~~~~~~~~~~~~~
-#. OSCの参加者総数63,230人→70,585人 (+7355人)
-#. 延べ参加グループ数3,592グループ→4,044グループ (+452グループ)
-#. OSC2015東京春までで通算115/128参加  = 89.8%
+#. OSCの参加者総数70,585人→77,550人 (+6965人)
+#. 延べ参加グループ数4,044グループ→4,540グループ (+496グループ)
+#. OSC2017東京春までで通算128/142参加  = 90.1%
 #. *http://www.jp.NetBSD.org/* を見る
 #. イベントページをクリックするとFacebookページへ。
 
 .. csv-table::
 
-    2016年4月24日 - Open Source UN-Conference 2016 Kawagoe
-    2016年4月27日 - 第16回FreeBSDワークショップ（＋懇親会）
-    2016年5月14日 - オープンソースカンファレンス2016 Gunma
-    2016年5月28日 - オープンソースカンファレンス2016 Nagoya & 名古屋*BSDユーザグループ(NBUG)2016/5月例会
-    2016年6月17日 - オープンソースカンファレンス2016 Hokkaido
-    2016年7月2日 - オープンソースカンファレンス2016 Okinawa
-    2016年7月29日 - オープンソースカンファレンス2016 Kyoto
-    2016年11月11日 - 関西オープンフォーラム2016(KOF2016)
+    2017年4月15日 - オープンソースアンカンファレンス2017 川越
+    2017年5月27日 - オープンソースカンファレンス2017 Nagoya & Nbug2017/5例会
+    2017年6月17日 - オープンソースカンファレンス 2017 Okinawa
+    2017年7月8日 - 日本NetBSDユーザーグループ第十九回定期総会およびNetBSD BOF 2017
+    2017年7月14日 - オープンソースカンファレンス2017 Hokkaido
+    2017年8月4日 - オープンソースカンファレンス2017 Kyoto
 
-2016/5/14 群馬
+2017/4/15 川越
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* 高崎駅ヤマダ電気
-* 10分プレゼン大会
-* スポンサーたくさんついてる！
-* ハードオフ天国
+* OSCのプロが集う何か
+* ハードオフ
+* coedo: 香麦(しゃんまい）バス停福田
+* coedo: エレバート 埼玉県川越市仲町6-4
+* ホワイト餃子
+* 小川町：麦雑穀工房 小川町 水～土15:00～19:30　日11:00～18:30
 
-2016/5/28 名古屋
+2017/5/27 名古屋
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* 今年は吹上ホール
+* 今年も吹上ホール
 * OpenBSD/Luna88K+CBUS PC98グラフィックカード2画面
 * ワイマーケット＆三八屋＆23tap&ヒンメル
 
-2016/6/17-18 北海道
+2017/6/17 沖縄
+~~~~~~~~~~~~~~
+
+* 場所は旭橋：AKB総選挙とかぶっている
+* 新しいネタを入れるときは沖縄から
+* 琉球大学枠&やまじゅんさんPCBSD
+* 五十嵐さん＆りえしょんのDVDをとらのあなに買いにいかんと
+* 麦 baku
+
+2017/7/8 定期総会
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* 日本NetBSDユーザーグループ第十九回定期総会 および NetBSD BoF 2017
+* 東大本郷で今日は一日NetBSD三昧
+* ねこがいなくなったんです。
+
+
+2017/7/14 北海道
 ~~~~~~~~~~~~~~
 
 * LOCALに訊け!
-* YK無線
+* さらばYK無線 - 2017/2月に閉店
 * NoBUGガジェット群
 * ジャンク屋:写真店：ハードオフ
 * FML深町さん
@@ -151,43 +170,22 @@ togetterのview数でみるNetBSDブースこの一年
 * クリプトン
 * モルトヘッズ(オリジナルラブML元管理人
 
-2016/7/2 沖縄
-~~~~~~~~~~~~~~
 
-* 海水浴場脇
-* 新しいネタを入れるときは沖縄から
-* 琉球大学枠&やまじゅんさんPCBSD
-* 五十嵐さん＆りえしょんのDVDをとらのあなに買いにいかんと
-* アメリカンNo.1
-* 麦 baku
-
-2016/7/9 定期総会
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-* 日本NetBSDユーザーグループ第十八回定期総会 および NetBSD BoF 2016
-* 東大本郷で今日は一日NetBSD三昧
-* ねこがいなくなったんです。
-
-2016/7/29-30 京都
+2017/8/4-5 京都
 ~~~~~~~~~~~~~~~~~~
 
-* よしだともこ先生を大いに盛り上げるLuna68Kの会
+* よしだともこ先生を大いに盛り上げるLunaの会
 * mikutterの本場
 * だいこん→バンガロー→和知→京都醸造
+* グフこそ男のお好み焼きだ！フラウボウ募集中
 
-2016/8/9-13 セキュリティキャンプ
+2017/8/14-18 セキュリティキャンプ
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* 8.10 午後幕張某所
+* 8.16 午後府中某所
 
 
-2016/8/27 金沢
-~~~~~~~~~~~~~~~~~~~~~~~
-
-* アンカンファレンス
-
-
-2016/9/24 島根
+2017/9 島根？
 ~~~~~~~~~~~~~~~~~~
 
 * SONY NEWS祭り
@@ -196,13 +194,8 @@ togetterのview数でみるNetBSDブースこの一年
 * ゼネラルプロダクツ
 * 国際宇宙生物研究所＆エスパーク
 
-2016/10/1 新潟
-~~~~~~~~~~~~~~~~~~~~~~~
 
-* 長岡らしい
-* ひさしぶり
-
-2016/10　東京秋
+2017/10　東京秋
 ~~~~~~~~~~~~~~~~~
 
 * 東京
@@ -210,16 +203,15 @@ togetterのview数でみるNetBSDブースこの一年
 * BSDなひととき
 
 
-
-2016/11/11-12 KOF
+2017/11/10-11 KOF
 ~~~~~~~~~~~~~~~~~~~~
 
 * BSDなひととき(発表者募集
 * 「そんな先のことはわからない」(CV:銀河万丈/9話予告)
 * 図書販売コーナー推薦本募集：UNIXUser 藤田さん本
-* 順記で餃子
+* 順記で餃子/だまれトリ！/marca/僕とイヌ/カミカゼ
 
-2016/11/19か26 広島
+2017/? 広島?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * 年間最重要イベント：X68K＆mlterm特集
@@ -227,15 +219,16 @@ togetterのview数でみるNetBSDブースこの一年
 * X68060祭り
 * ビールスタンド重富で重富注ぎ！
 
-2016/12/3か10 福岡
+2017/? 福岡
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * 一年の終わり
 * PADDY
 
-2017/3 AsiaBSDCon
+2018/3 AsiaBSDCon
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+* たぶん2018/3/7-10
 * BSD関連の国際会議 150人規模
 * sendmail作った人とかにシールを渡してみる
 * BSD作った人とかにシールを渡してみる
@@ -243,6 +236,7 @@ togetterのview数でみるNetBSDブースこの一年
 * イベント運営を手伝ってくれそうな実直な企業募集
 * www.bsdresearch.org
 * FreeBSDワークショップ　のとき打ち合わせしてます
+* https://www.ospn.jp/press/20170327jnbdug_column.html
 
 観光ガイド
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -270,10 +264,10 @@ NetBSD関連情報
 セキュリティキャンプ
 ~~~~~~~~~~~~~~~~~
 
-* 2016/8 幕張
-* NetBSDで4時間もなんかやります
+* 2017/8 幕張
+* NetBSDで4時間もなんかやるかも。
 * 枠30人：対象:友利奈緒
 * RPI 20台
 * のこり10人は謎マシン枠
-* どうせそんなに申込ないだろう
+* 「信じて送り出した家電製品がNetBSDのプロンプトを出すわけがない。」
 
