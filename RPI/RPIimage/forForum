@@ -1,20 +1,20 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2017-03-10/2017-03-10/g
-:1,$s/7.99.64/7.99.64/g
-:1,$s/201703032010Z/201703032010Z/g
-:1,$s?2017/03/08/msg004111.html?2017/03/08/msg004111.html?
+:1,$s/2017-04-15/2017-04-15/g
+:1,$s/7.99.68/7.99.68/g
+:1,$s/201704111220Z/201704111220Z/g
+:1,$s?2017/04/14/msg004130.html?2017/04/14/msg004130.html?
 
 
-2017-03-10-netbsd-raspi-earmv6hf.img
+2017-04-15-netbsd-raspi-earmv6hf.img
 
 For Open Source Conference 2017 Tokyo/Spring
  and AsiaBSDCon2017 demonstration use, 
-I've updated 2017-03-10-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-04-15-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2017/03/08/msg004111.html
+http://mail-index.netbsd.org/port-arm/2017/04/14/msg004130.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-03-10-earmv6hf/2017-03-10-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/2017-04-15-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -31,21 +31,11 @@ Pre-installed packages:
 
 
 Update:
-- NetBSD-current 7.99.64 evbarm-earmv6hf 201703032010Z rpi.img from nyftp.
-- Firmware update: 
-  https://github.com/raspberrypi/firmware.git
-  commit 78c4983379de0537f49a97fb37ceaaf42632b28c
-- tcpdump-4.9.0
-  http://mail-index.netbsd.org/source-changes/2017/02/05/msg081676.html
-- BIND-9.10.4-P6
-  http://mail-index.netbsd.org/source-changes/2017/02/09/msg081828.html
-- postfix 3.1.4
-  http://mail-index.netbsd.org/source-changes/2017/02/14/msg082003.html
-- NetBSD-SA 02
-  http://mail-index.netbsd.org/security-announce/2017/02/18/msg000115.html
-- mikutter 3.5.3
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/03/04/msg153681.html
-- drop kterm,tcsh,bash,zsh for disk space
+- NetBSD-current 7.99.68 evbarm-earmv6hf 201704111220Z rpi.img from nyftp.
+- Ruby2.3
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/03/20/msg154351.html
+- mikutter 3.5.7
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/04/08/msg155056.html
 
 
 Problem:
