@@ -1,18 +1,18 @@
-VERSION: :1,$s/2017-03-10/2017-03-10/g
-ISO:     :1,$s/201703032010Z/201703032010Z/g
-NetBSD:  :1,$s/7.99.64/7.99.64/g
+VERSION: :1,$s/2017-04-15/2017-04-15/g
+ISO:     :1,$s/201704111220Z/201704111220Z/g
+NetBSD:  :1,$s/7.99.68/7.99.68/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-03-10-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2017-04-15-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-03-10-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-04-15-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-03-10-earmv6hf/2017-03-10-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-03-10-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/2017-04-15-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/MD5
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -30,7 +30,7 @@ Kernel update
 - http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
 - http://mail-index.netbsd.org/port-arm/2016/12/06/msg003995.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-03-10-earmv6hf/RPI3/
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/RPI3/
 
 If you use un-patched-original kernel.
  mv /boot/kernel7.img.orignal /boot/kernel7.img
@@ -41,7 +41,7 @@ Pre-installed packages:
  https://github.com/ebijun/NetBSD/commit/b2fb02e1da27400342c0bd791ceb635a791bc149#diff-4a755d73dbba5da21bbf783139f086dc
 
 Update:
-- NetBSD-current 7.99.64 evbarm-earmv6hf 201703032010Z rpi.img from nyftp.
+- NetBSD-current 7.99.68 evbarm-earmv6hf 201704111220Z rpi.img from nyftp.
 - Firmware update: 
   https://github.com/raspberrypi/firmware.git
   commit 78c4983379de0537f49a97fb37ceaaf42632b28c
@@ -98,7 +98,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-03-10/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-04-15/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -106,7 +106,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-03-10-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -290,7 +290,7 @@ I've updated raspberry-pi image.
 
 https://www.facebook.com/NetBSD.jp 
 
-- NetBSD 7.99.64 earmv6hf rpi.img.gz base
+- NetBSD 7.99.68 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -328,7 +328,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-03-10/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-04-15/
 
 Installed Packages:
 kterm
