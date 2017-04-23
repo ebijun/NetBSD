@@ -1,18 +1,18 @@
-VERSION: :1,$s/2017-03-10/2017-03-10/g
-ISO:     :1,$s/201703032010Z/201703032010Z/g
-NetBSD:  :1,$s/7.99.64/7.99.64/g
+VERSION: :1,$s/2017-04-15/2017-04-15/g
+ISO:     :1,$s/201704111220Z/201704111220Z/g
+NetBSD:  :1,$s/7.99.68/7.99.68/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-03-10-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2017-04-15-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-03-10-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-04-15-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-03-10-earmv6hf/2017-03-10-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-03-10-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/2017-04-15-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/MD5
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -30,7 +30,7 @@ Kernel update
 - http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
 - http://mail-index.netbsd.org/port-arm/2016/12/06/msg003995.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-03-10-earmv6hf/RPI3/
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/RPI3/
 
 If you use un-patched-original kernel.
  mv /boot/kernel7.img.orignal /boot/kernel7.img
@@ -38,24 +38,14 @@ If you use un-patched-original kernel.
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  updates:
- https://github.com/ebijun/NetBSD/commit/b2fb02e1da27400342c0bd791ceb635a791bc149#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/6017d1ffe4138955a6a4709871f579f7ad1ebbe9#diff-4a755d73dbba5da21bbf783139f086dc
 
 Update:
-- NetBSD-current 7.99.64 evbarm-earmv6hf 201703032010Z rpi.img from nyftp.
-- Firmware update: 
-  https://github.com/raspberrypi/firmware.git
-  commit 78c4983379de0537f49a97fb37ceaaf42632b28c
-- tcpdump-4.9.0
-  http://mail-index.netbsd.org/source-changes/2017/02/05/msg081676.html
-- BIND-9.10.4-P6
-  http://mail-index.netbsd.org/source-changes/2017/02/09/msg081828.html
-- postfix 3.1.4
-  http://mail-index.netbsd.org/source-changes/2017/02/14/msg082003.html
-- NetBSD-SA 02
-  http://mail-index.netbsd.org/security-announce/2017/02/18/msg000115.html
-- mikutter 3.5.3
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/03/04/msg153681.html
-- drop kterm,tcsh,bash,zsh for disk space
+- NetBSD-current 7.99.68 evbarm-earmv6hf 201704111220Z rpi.img from nyftp.
+- Ruby2.3
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/03/20/msg154351.html
+- mikutter 3.5.7
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/04/08/msg155056.html
 
 Problem:
 - sdhc(4) can't recognize some kind of microSD card
@@ -98,7 +88,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-03-10/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-04-15/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -106,7 +96,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-03-10-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -234,9 +224,9 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
 
 XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   http://xm6i.org/download.html
-  XM6i-0.54-netbsd7.0-earmv6hf-2015Q2.tar.gz
+  XM6i-0.55-netbsd7.0-earmv6hf-2015Q2.tar.gz
   pkg_add wxGTK30-3.0.2nb6
-  XXX: use wxGTK30-3.0.2nb6 for XM6i-0.54
+  XXX: use wxGTK30-3.0.2nb6 for XM6i-0.55
 
   https://twitter.com/isaki68k/status/625138538271502337
 
@@ -265,6 +255,7 @@ pkgsrc Todo:
   http://www.yagoto-urayama.jp/~oshimaya/netbsd/netbsd_goarm.html
   http://mail-index.netbsd.org/port-arm/2015/08/02/msg003361.html
   https://twitter.com/oshimyja/status/604871730125864960
+  https://twitter.com/oshimyja/status/840750347022876672
   https://github.com/golang/go/commit/30d60936d97423af0403f2d5395c604ac0ff3757
   runtime: fetch physical page size from the OS 
    https://github.com/golang/go/commit/276a52de55fb48c4e56a778f1f7cac9292d8fad7
@@ -279,18 +270,14 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference Tokyo/Spring 2017 
-ans AsiaBSDCon2017 demonstration use, 
+For Open Source UN-Conference 2017 Kawagoe demonstration use, 
 I've updated raspberry-pi image.
 
- https://www.ospn.jp/osc2017-spring
-   https://www.facebook.com/events/1337061592993172/
- http://www.asiabsdcon.org/
-   https://www.facebook.com/events/1718621151740857/
-
+https://koedolug.connpass.com/event/47569/
+https://www.ospn.jp/
 https://www.facebook.com/NetBSD.jp 
 
-- NetBSD 7.99.64 earmv6hf rpi.img.gz base
+- NetBSD 7.99.68 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -328,29 +315,24 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-03-10/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-04-15/
 
 Installed Packages:
-kterm
-bash
-tcsh
-vlgothic-ttf
-icewm
-xli
-mikutter
-medit
-uim
-fossil
-raspberrypi-userland
-sudo
-git-base
-zsh
-dillo
-mlterm
-pkg_chk
-lintpkgsrc
-mozilla-rootcerts
-
+ vlgothic-ttf
+ icewm
+ xli
+ ruby23-mikutter
+ uim
+ fossil
+ raspberrypi-userland
+ sudo
+ git-base
+ mlterm
+ pkg_chk
+ lintpkgsrc
+ mozilla-rootcerts
+ dillo-3.0.5nb1
+ medit
 
 To control HDMI output,add/delete "console=fb" on cmdline.txt.
 If delete console=fb definition,you can get serial console instead.
