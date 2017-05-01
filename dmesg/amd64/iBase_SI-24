@@ -1,12 +1,13 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.52 (GENERIC.201612230540Z)
+NetBSD 7.99.66 (GENERIC.201703250540Z)
 total memory = 2047 MB
-avail memory = 1968 MB
+avail memory = 1966 MB
+rnd: seeded with 128 bits
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 running cgd selftest aes-xts-256 aes-xts-512 done
@@ -16,13 +17,13 @@ mainbus0 (root)
 ACPI: RSDP 0x00000000000F7BA0 000024 (v02 RS690 )
 ACPI: XSDT 0x000000007FFE3080 00004C (v01 RS690  AWRDACPI 42302E31 AWRD 00000000)
 ACPI: FACP 0x000000007FFE8180 0000F4 (v03 RS690  AWRDACPI 42302E31 AWRD 00000000)
-ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Pm1aEventBlock: 32/8 (20160930/tbfadt-643)
-ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Pm1aControlBlock: 16/8 (20160930/tbfadt-643)
-ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/PmTimerBlock: 32/8 (20160930/tbfadt-643)
-ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 64/8 (20160930/tbfadt-643)
-ACPI BIOS Warning (bug): Invalid length for FADT/Pm1aEventBlock: 8, using default 32 (20160930/tbfadt-746)
-ACPI BIOS Warning (bug): Invalid length for FADT/Pm1aControlBlock: 8, using default 16 (20160930/tbfadt-746)
-ACPI BIOS Warning (bug): Invalid length for FADT/PmTimerBlock: 8, using default 32 (20160930/tbfadt-746)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Pm1aEventBlock: 32/8 (20170119/tbfadt-642)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Pm1aControlBlock: 16/8 (20170119/tbfadt-642)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/PmTimerBlock: 32/8 (20170119/tbfadt-642)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 64/8 (20170119/tbfadt-642)
+ACPI BIOS Warning (bug): Invalid length for FADT/Pm1aEventBlock: 8, using default 32 (20170119/tbfadt-745)
+ACPI BIOS Warning (bug): Invalid length for FADT/Pm1aControlBlock: 8, using default 16 (20170119/tbfadt-745)
+ACPI BIOS Warning (bug): Invalid length for FADT/PmTimerBlock: 8, using default 32 (20170119/tbfadt-745)
 ACPI: DSDT 0x000000007FFE3200 004F49 (v01 RS690  AWRDACPI 00001000 MSFT 03000000)
 ACPI: FACS 0x000000007FFE0000 000040
 ACPI: FACS 0x000000007FFE0000 000040
@@ -37,7 +38,7 @@ cpu0 at mainbus0 apid 0
 cpu0: AMD Processor, id 0x60fb2
 cpu1 at mainbus0 apid 1
 cpu1: AMD Processor, id 0x60fb2
-acpi0 at mainbus0: Intel ACPICA 20160930
+acpi0 at mainbus0: Intel ACPICA 20170119
 acpi0: X/RSDT: OemId <RS690 ,AWRDACPI,42302e31>, AslId <AWRD,00000000>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 acpi0: SCI interrupting at int 9
@@ -88,14 +89,14 @@ re0: Ethernet address 00:03:2d:17:30:b6
 re0: using 256 tx descriptors
 rgephy0 at re0 phy 7: RTL8169S/8110S/8211 1000BASE-T media interface, rev. 2
 rgephy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
-ahcisata0 at pci0 dev 18 function 0: vendor 1002 product 4380 (rev. 0x00)
-ahcisata0: interrupting at ioapic0 pin 22
-ahcisata0: 64-bit DMA unavailable
-ahcisata0: AHCI revision 1.10, 4 ports, 32 slots, CAP 0xf3229f83<CCCS,PMD,SPM,ISS=0x2=Gen2,SCLO,SAL,SMPS,SSNTF,SNCQ,S64A>
-atabus0 at ahcisata0 channel 0
-atabus1 at ahcisata0 channel 1
-atabus2 at ahcisata0 channel 2
-atabus3 at ahcisata0 channel 3
+ixpide0 at pci0 dev 18 function 0: ATI Technologies IXP IDE Controller (rev. 0x00)
+ixpide0: bus-master DMA support present
+ixpide0: primary channel configured to compatibility mode
+ixpide0: primary channel interrupting at ioapic0 pin 14
+atabus0 at ixpide0 channel 0
+ixpide0: secondary channel configured to compatibility mode
+ixpide0: secondary channel interrupting at ioapic0 pin 15
+atabus1 at ixpide0 channel 1
 ohci0 at pci0 dev 19 function 0: vendor 1002 product 4387 (rev. 0x00)
 ohci0: interrupting at ioapic0 pin 16
 ohci0: OHCI version 1.0, legacy support
@@ -126,14 +127,22 @@ usb5 at ehci0: USB revision 2.0
 piixpm0 at pci0 dev 20 function 0: vendor 1002 product 4385 (rev. 0x14)
 piixpm0: interrupting at SMI, polling
 iic0 at piixpm0: I2C bus
-ixpide0 at pci0 dev 20 function 1: ATI Technologies IXP IDE Controller (rev. 0x00)
-ixpide0: bus-master DMA support present
-ixpide0: primary channel configured to compatibility mode
-ixpide0: primary channel interrupting at ioapic0 pin 14
-atabus4 at ixpide0 channel 0
-ixpide0: secondary channel configured to compatibility mode
-ixpide0: secondary channel interrupting at ioapic0 pin 15
-atabus5 at ixpide0 channel 1
+ixpide1 at pci0 dev 20 function 1: ATI Technologies IXP IDE Controller (rev. 0x00)
+ixpide1: bus-master DMA support present
+ixpide1: primary channel configured to native-PCI mode
+ixpide1: using ioapic0 pin 16 for native-PCI interrupt
+atabus2 at ixpide1 channel 0
+ixpide1: secondary channel configured to native-PCI mode
+atabus3 at ixpide1 channel 1
+hdaudio0 at pci0 dev 20 function 2: HD Audio Controller
+hdaudio0: interrupting at ioapic0 pin 16
+hdafg0 at hdaudio0: vendor 10ec product 0662
+hdafg0: DAC00 2ch: Speaker [Jack], HP Out [Jack]
+hdafg0: ADC01 2ch: Line In [Jack], Mic In [Jack]
+hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: full duplex, playback, capture, mmap, independent
+hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+spkr1 at audio0: PC Speaker (synthesized)
 pcib0 at pci0 dev 20 function 3: vendor 1002 product 438d (rev. 0x00)
 ppb2 at pci0 dev 20 function 4: vendor 1002 product 4384 (rev. 0x00)
 pci3 at ppb2 bus 3
@@ -152,49 +161,53 @@ acpicpu0: P0: FFH, lat 100 us, pow 100000 mW, 1500 MHz
 acpicpu1 at cpu1: ACPI CPU
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 IPsec: Initialized Security Association Processing.
-uhub0 at usb1: vendor 1002 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb1: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb0: vendor 1002 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb2: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb3: vendor 1002 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb4: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
-uhub3 at usb2: vendor 1002 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub3 at usb0: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub3: 2 ports with 2 removable, self powered
-uhub4 at usb5: vendor 1002 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
-uhub4: 10 ports with 10 removable, self powered
-uhub5 at usb4: vendor 1002 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
-uhub5: 2 ports with 2 removable, self powered
-ahcisata0 port 0: device present, speed: 3.0Gb/s
-ehci0: handing over low speed device on port 3 to ohci1
+uhub4 at usb3: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub4: 2 ports with 2 removable, self powered
+uhub5 at usb5: vendor 1002 (0x1002) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub5: 10 ports with 10 removable, self powered
+ehci0: handing over full speed device on port 1 to ohci0
 wd0 at atabus0 drive 0
 wd0: <TOSHIBA MK1665GSX>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
 wd0: 149 GB, 310101 cyl, 16 head, 63 sec, 512 bytes/sect x 312581808 sectors
+wd0: 32-bit data port
 wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
-wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+wd0(ixpide0:0:0): using PIO mode 4, Ultra-DMA mode 5 (Ultra/100) (using DMA)
 pad0: outputs: 44100Hz, 16-bit, stereo
-audio0 at pad0: half duplex, playback, capture
-spkr1 at audio0: PC Speaker (synthesized)
+audio1 at pad0: half duplex, playback, capture
+pad0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 44100
+spkr2 at audio1: PC Speaker (synthesized)
+uhidev0 at uhub3 port 1 configuration 1 interface 0
+uhidev0: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
+ukbd0 at uhidev0: 8 modifier keys, 6 key codes
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/7.99.52/modules
+kern.module.path=/stand/amd64/7.99.66/modules
 drm: initializing kernel modesetting (RV610 0x1002:0x94CB 0x1002:0x94CB).
-drm: register mmio base: 0xfdef0000
+drm: register mmio base: 0xfddf0000
 drm: register mmio size: 65536
 drm kern info: ATOM BIOS: BR35739
 radeon0: info: VRAM: 128M 0x0000000000000000 - 0x0000000007FFFFFF (128M used)
 radeon0: info: GTT: 512M 0x0000000008000000 - 0x0000000027FFFFFF
 drm: Detected VRAM RAM=80M, BAR=256M
 drm: RAM width 64bits DDR
-Zone  kernel: Available graphics memory: 702786 kiB
+Zone  kernel: Available graphics memory: 701906 kiB
 drm: radeon: 128M of VRAM memory ready
 drm: radeon: 512M of GTT memory ready.
 drm: Loading RV610 Microcode
 drm: GART: num cpu pages 131072, num gpu pages 131072
 drm: PCIE GART of 512M enabled (table at 0x0000000000040000).
 radeon0: info: WB enabled
-radeon0: info: fence driver on ring 0 use gpu addr 0x0000000008000c00 and cpu addr 0x0xffff8000254dac00
+radeon0: info: fence driver on ring 0 use gpu addr 0x0000000008000c00 and cpu addr 0x0xffff8000254e4c00
 drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
 drm: Driver supports precise vblank timestamp query.
 radeon0: interrupting at ioapic0 pin 18 (radeon)
@@ -222,19 +235,20 @@ drm:   Encoders:
 drm:     TV1: INTERNAL_KLDSCP_DAC2
 radeondrmkmsfb0 at radeon0
 radeon0: info: registered panic notifier
-radeondrmkmsfb0: framebuffer at 0xffff800025800000, size 800x600, depth 32, stride 3328
+radeondrmkmsfb0: framebuffer at 0xffff800025810000, size 1280x1024, depth 32, stride 5120
 wsdisplay0 at radeondrmkmsfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
-uhidev0 at uhub0 port 1 configuration 1 interface 0
-uhidev0: Elecom TK-FCP027 Series, rev 1.10/1.03, addr 2, iclass 3/1
-ukbd0 at uhidev0: 8 modifier keys, 6 key codes
 wskbd1 at ukbd0 mux 1
 wskbd1: connecting to wsdisplay0
-uhidev1 at uhub0 port 1 configuration 1 interface 1
-uhidev1: Elecom TK-FCP027 Series, rev 1.10/1.03, addr 2, iclass 3/0
-uhidev1: 2 report ids
-uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
-uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhidev1 at uhub3 port 1 configuration 1 interface 1
+uhidev1: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
+uhidev1: 17 report ids
+ums0 at uhidev1 reportid 2: 16 buttons, W and Z dirs
+wsmouse1 at ums0 mux 0
+uhid0 at uhidev1 reportid 3: input=4, output=0, feature=0
+uhid1 at uhidev1 reportid 4: input=1, output=0, feature=0
+uhid2 at uhidev1 reportid 16: input=6, output=6, feature=0
+uhid3 at uhidev1 reportid 17: input=19, output=19, feature=0
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
