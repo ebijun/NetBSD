@@ -4,7 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.66 (GENERIC.201703250540Z)
+NetBSD 7.99.71 (GENERIC) #0: Sun Apr 30 09:00:49 UTC 2017
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 2047 MB
 avail memory = 1966 MB
 rnd: seeded with 128 bits
@@ -191,7 +192,7 @@ ukbd0 at uhidev0: 8 modifier keys, 6 key codes
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/7.99.66/modules
+kern.module.path=/stand/amd64/7.99.71/modules
 drm: initializing kernel modesetting (RV610 0x1002:0x94CB 0x1002:0x94CB).
 drm: register mmio base: 0xfddf0000
 drm: register mmio size: 65536
@@ -200,7 +201,7 @@ radeon0: info: VRAM: 128M 0x0000000000000000 - 0x0000000007FFFFFF (128M used)
 radeon0: info: GTT: 512M 0x0000000008000000 - 0x0000000027FFFFFF
 drm: Detected VRAM RAM=80M, BAR=256M
 drm: RAM width 64bits DDR
-Zone  kernel: Available graphics memory: 701906 kiB
+Zone  kernel: Available graphics memory: 701902 kiB
 drm: radeon: 128M of VRAM memory ready
 drm: radeon: 512M of GTT memory ready.
 drm: Loading RV610 Microcode
