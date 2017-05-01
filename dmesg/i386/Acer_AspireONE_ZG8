@@ -4,7 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.65 (GENERIC.201703121550Z)
+NetBSD 7.99.71 (GENERIC) #0: Sun Apr 30 09:00:49 UTC 2017
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1982 MB
 timecounter: Timecounters tick every 10.000 msec
@@ -38,13 +39,13 @@ acpi0 at mainbus0: Intel ACPICA 20170119
 acpi0: X/RSDT: OemId <ACER  ,ACER    ,00000001>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3B4898C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3B5498C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3B2BC0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0x00000000C3B37C0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C37A871C 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C39B571C 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3B45DDC 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3B51DDC 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -104,7 +105,7 @@ i915drmkms0: interrupting at ioapic0 pin 16 (i915)
 drm: initialized overlay support
 intelfb0 at i915drmkms0
 i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xdb2bb000, size 1024x600, depth 32, stride 4096
+intelfb0: framebuffer at 0xdb2ca000, size 1024x600, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
@@ -205,17 +206,17 @@ acpicpu1 at cpu1: ACPI CPU
 DRM error in i915_irq_handler: pipe A underrun
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
-uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb0: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb1: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb2: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb2: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
-uhub3 at usb3: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
-uhub3: 2 ports with 2 removable, self powered
-uhub4 at usb4: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
-uhub4: 8 ports with 8 removable, self powered
 IPsec: Initialized Security Association Processing.
+uhub3 at usb3: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub3: 2 ports with 2 removable, self powered
+uhub4 at usb4: vendor 8086 (0x8086) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub4: 8 ports with 8 removable, self powered
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 acpibat0: SONY LION rechargeable battery
 acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
@@ -225,13 +226,14 @@ wd0: drive supports 16-sector PIO transfers, LBA48 addressing
 wd0: 596 GB, 1240341 cyl, 16 head, 63 sec, 512 bytes/sect x 1250263728 sectors
 wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
 wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
-uvideo0 at uhub4 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. WebCam, rev 2.00/1.00, addr 2
-video0 at uvideo0: Sonix Technology Co., Ltd. WebCam, rev 2.00/1.00, addr 2
+uvideo0 at uhub4 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
+video0 at uvideo0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/7.99.65/modules
+kern.module.path=/stand/i386/7.99.71/modules
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+acpibat0: normal capacity on 'charge state'
