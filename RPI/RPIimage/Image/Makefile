@@ -6,7 +6,7 @@ ARCH=earmv6hf
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-04-15/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.68-evbarm-${ARCH}-201704111220Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.71-evbarm-${ARCH}-201705031410Z.iso
 
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
@@ -66,7 +66,7 @@ rpi:
 	vnconfig ${VND} ${FILE}
 	gunzip < ${RPI}.gz |dd of=/dev/r${VND}d bs=1m 
 	disklabel -R ${VND} DISKLABEL.proto
-	fdisk -uf -0 -s 6/8192/114688 ${VND} #DOS id6 partition:DISKLABEL.proto
+	fdisk -uf -0 -s 6/8192/180224 ${VND} #DOS id6 partition:DISKLABEL.proto
 	fsck -fy /dev/r${VND}a
 	resize_ffs -y /dev/r${VND}a
 	fsck -fy /dev/r${VND}a
