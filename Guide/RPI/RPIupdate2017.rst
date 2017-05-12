@@ -53,6 +53,7 @@ RaspberryPIのNetBSDイメージについて
  2017/2,7.99.59,3.5.2,3.8.0,1.0.2k,,OSC浜名湖,https://github.com/ebijun/osc-demo/blob/master/2017/OSC2017hamanako.txt
  2017/3,7.99.64,3.5.3,,,tcpdump-4.9.0 BIND-9.10.4-P6 postfix-3.1.4 NetBSD-SA02,OSC東京春,http://mail-index.netbsd.org/netbsd-advocacy/2017/03/13/msg000728.html
  2017/4,7.99.69,3.5.7,,,NetBSD7.1 ruby-2.3 (BIND-9.10.4-P8),OSuC川越,http://mail-index.netbsd.org/port-arm/2017/04/14/msg004130.html
+ 2017/5,7.99.71,,3.8.1,,,OSC名古屋,
  
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。
