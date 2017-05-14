@@ -6,8 +6,8 @@ require 'net/ftp'
 FTP="nyftp.netbsd.org"
 CDN="nycdn.netbsd.org"
 
-#BRANCH="/pub/NetBSD-daily/HEAD/"
-BRANCH="/pub/NetBSD-daily/netbsd-7/"
+BRANCH="/pub/NetBSD-daily/HEAD/"
+#BRANCH="/pub/NetBSD-daily/netbsd-7/"
 IMAGES="/usr/release/images/"
 ARCH="hpcmips"
 
