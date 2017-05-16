@@ -42,6 +42,10 @@ Pre-installed packages:
 
 Update:
 - NetBSD-current 7.99.68 evbarm-earmv6hf 201704111220Z rpi.img from nyftp.
+- drop git-base for disk space.
+  to add git,
+  # pkg_add git-base
+
 - Ruby2.3
   http://mail-index.netbsd.org/pkgsrc-changes/2017/03/20/msg154351.html
 - mikutter 3.5.7

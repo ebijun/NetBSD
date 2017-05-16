@@ -1,5 +1,5 @@
-make -f Makefile 
-make -f Makefile release
+#make -f Makefile 
+#make -f Makefile release
 #make -f Makefile pkg
 #
 #make -f Makefile kernel-update
@@ -10,8 +10,8 @@ make -f Makefile release
 # 
 #adding packages.
 #
-#make -f Makefile logclean
-#make -f Makefile release
+make -f Makefile logclean
+make -f Makefile release
 #
 # update kernel
 #make cdmount
