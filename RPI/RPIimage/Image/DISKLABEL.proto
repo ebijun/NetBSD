@@ -1,4 +1,4 @@
-# /dev/rvnd0d:
+# /dev/rvnd0:
 type: SCSI
 disk: STORAGE DEVICE
 label: fictitious
@@ -19,8 +19,8 @@ drivedata: 0
 
 8 partitions:
 #        size    offset     fstype [fsize bsize cpg/sgs]
- a:   3354624    458752     4.2BSD      0     0     0  # (Cyl.    224 -   1861)
- b:    262144    196608       swap                     # (Cyl.     96 -    223)
- c:   3354624    458752     unused      0     0        # (Cyl.    224 -   1861)
+ a:   3481600    331776     4.2BSD      0     0     0  # (Cyl.    162 -   1861)
+ b:    262144     69632       swap                     # (Cyl.     34 -    161)
+ c:   3481600    331776     unused      0     0        # (Cyl.    162 -   1861)
  d:   3813376         0     unused      0     0        # (Cyl.      0 -   1861)
- e:    188416      8192      MSDOS                     # (Cyl.      4 -     95)
+ e:     61440      8192      MSDOS                     # (Cyl.      4 -     33)

@@ -6,7 +6,7 @@ ARCH=earmv6hf
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-04-15/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.71-evbarm-${ARCH}-201705160910Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.71-evbarm-${ARCH}-201705170540Z.iso
 
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
@@ -38,11 +38,15 @@ FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 # mount point
 MNT=/mnt
 VND=vnd0
+
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
+
+MNT_TMP=/mnt2
 VND_TMP=vnd2
 
-all: file cdmount rpi extract cdunmount fit
+
+all: file cdmount rpi extract cdunmount
 
 #update: cdmount update-extract cdunmount
 
@@ -62,15 +66,30 @@ extract:
 
 # copy rpi.img.gz to image file and resize partition.
 rpi:
-	echo Copy rpi.img.gz
+	# set disklabel
 	vnconfig ${VND} ${FILE}
-	gunzip < ${RPI}.gz |dd of=/dev/r${VND}d bs=1m 
-	disklabel -R ${VND} DISKLABEL.proto
-	fdisk -uf -0 -s 6/8192/180224 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fsck -fy /dev/r${VND}a
-	resize_ffs -y /dev/r${VND}a
-	fsck -fy /dev/r${VND}a
+	fdisk -uf -0 -s 6/8192/61440 ${VND} #DOS id6 partition:DISKLABEL.proto
+	fdisk -uf -1 -s 169/262144/3481600 ${VND} 
+	disklabel -DR ${VND} DISKLABEL.proto
+	# newfs dos and ffs
+	newfs -n 500000 -b 4096 /dev/r${VND}a
+	newfs_msdos  /dev/r${VND}e
+	# unzip original image
+	gunzip < ${RPI}.gz > ${FILE_TMP}
+	vnconfig ${VND_TMP} ${FILE_TMP}
+	# restore ffs
+	mount /dev/${VND}a ${MNT}
+	dump 0uf - /dev/r${VND_TMP}a | ( cd ${MNT} ; restore -xf - )
+	umount ${MNT}
+	# restore msdos
+	mount_msdos /dev/${VND}e ${MNT}
+	mount_msdos /dev/${VND_TMP}e ${MNT_TMP}
+	(cd ${MNT_TMP}; cp -pr . ${MNT})
+
+	umount ${MNT}
+	umount ${MNT_TMP}
 	vnconfig -u ${VND}
+	vnconfig -u ${VND_TMP}
 
 # make image file. 512*3813376=2GB
 file: 
@@ -102,10 +121,10 @@ release:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
+	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
 #	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 	(cd ../boot;cp * ${MNT}/boot)
-	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -192,18 +211,6 @@ fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch
-
-fit:
-	cp ${FILE} ${FILE_TMP}
-	vnconfig ${VND_TMP} ${FILE_TMP}
-	newfs -n 500000 -b 4096 /dev/r${VND_TMP}a
-	mount /dev/${VND_TMP}a ${MNT}
-	vnconfig ${VND} ${FILE}
-	dump 0uf - /dev/r${VND}a | ( cd ${MNT} ; restore -xf - )
-	umount ${MNT}
-	vnconfig -u ${VND}
-	vnconfig -u ${VND_TMP}
-	cp ${FILE_TMP} ${FILE}
 
 libssls:
 	vnconfig ${VND} ${FILE}
