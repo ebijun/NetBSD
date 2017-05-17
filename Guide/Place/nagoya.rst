@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -91,6 +91,7 @@
  三八屋,一宮,地ビール醸造。例会前日金曜午後2100くらい。
  ヒンメル,今池,クラフトビアバー。アプリにスタンプ。
  23 Craft Beerz Nagoya,千種,23種類の生ビール常備。
+ Brick Lane,名駅,湘南京都アメリカ
  ワイズマーケット,国際センター,地ビール醸造。まるはちめいよん。
  7days brewing,名古屋駅,駅前。10タップ。
  グリルマン,伏見,犬山キワマリ荘五つ葉書店の分店あり。

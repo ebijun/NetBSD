@@ -23,5 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/Summary-AsiaBSDCon
- Place/asiabsdcon
+ Place/nagoya
+ RPI/RPIupdate2017.rst
+ Luna
