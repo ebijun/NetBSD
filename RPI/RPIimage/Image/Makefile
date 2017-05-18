@@ -68,8 +68,8 @@ extract:
 rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
-	fdisk -uf -0 -s 6/8192/61440 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fdisk -uf -1 -s 169/262144/3481600 ${VND} 
+	fdisk -uf -0 -s 6/8192/47104 ${VND} #DOS id6 partition:DISKLABEL.proto
+	fdisk -uf -1 -s 169/260096/3553280 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
