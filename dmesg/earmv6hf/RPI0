@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.68 (RPI) #0: Tue Apr 11 11:32:51 UTC 2017
+NetBSD 7.99.72 (RPI) #0: Sun May 21 16:47:26 UTC 2017
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 448 MB
 avail memory = 433 MB
@@ -76,7 +76,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/7.99.68/modules
+kern.module.path=/stand/evbarm/7.99.72/modules
 vchiq: vchiq_init_state: slot_zero = 0xc9220000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
@@ -84,7 +84,7 @@ vchiq_get_state: g_state.remote->initialised != 1 (0)
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-audio0 at vcaudio0: half duplex, playback, capture, independent
+audio0 at vcaudio0: half duplex, playback, capture, mmap, independent
 vcaudio0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
 spkr0 at audio0: PC Speaker (synthesized)
 wsdisplay0: screen 4 added (default, vt100 emulation)
