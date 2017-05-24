@@ -1,19 +1,19 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2017-04-15/2017-04-15/g
-:1,$s/7.99.68/7.99.68/g
-:1,$s/201704111220Z/201704111220Z/g
-:1,$s?2017/04/14/msg004130.html?2017/04/14/msg004130.html?
+:1,$s/2017-05-27/2017-05-27/g
+:1,$s/7.99.72/7.99.72/g
+:1,$s/201705211800Z/201705211800Z/g
+:1,$s?2017/05/24/msg004150.html?2017/05/24/msg004150.html?
 
 
-2017-04-15-netbsd-raspi-earmv6hf.img
+2017-05-27-netbsd-raspi-earmv6hf.img
 
-For Open Source UnConference 2017 Kawagoe demonstration use, 
-I've updated 2017-04-15-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2017 Nagoya demonstration use, 
+I've updated 2017-05-27-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2017/04/14/msg004130.html
+http://mail-index.netbsd.org/port-arm/2017/05/24/msg004150.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/2017-04-15-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-05-27-earmv6hf/2017-05-27-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -30,11 +30,10 @@ Pre-installed packages:
 
 
 Update:
-- NetBSD-current 7.99.68 evbarm-earmv6hf 201704111220Z rpi.img from nyftp.
-- Ruby2.3
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/03/20/msg154351.html
-- mikutter 3.5.7
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/04/08/msg155056.html
+- NetBSD-current 7.99.72 evbarm-earmv6hf 201705211800Z rpi.img from nyftp.
+- for the lack of diskspace, enlarge this image file over 2GB.
+
+ 2306867200 May 24 08:08 2017-05-27-netbsd-raspi-earmv6hf.img
 
 
 Problem:
