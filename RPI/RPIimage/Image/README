@@ -1,18 +1,18 @@
-VERSION: :1,$s/2017-04-15/2017-04-15/g
-ISO:     :1,$s/201704111220Z/201704111220Z/g
-NetBSD:  :1,$s/7.99.68/7.99.68/g
+VERSION: :1,$s/2017-05-27/2017-05-27/g
+ISO:     :1,$s/201705211800Z/201705211800Z/g
+NetBSD:  :1,$s/7.99.72/7.99.72/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-04-15-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2017-05-27-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-04-15-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-05-27-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/2017-04-15-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-05-27-earmv6hf/2017-05-27-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-05-27-earmv6hf/MD5
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -30,7 +30,7 @@ Kernel update
 - http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
 - http://mail-index.netbsd.org/port-arm/2016/12/06/msg003995.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/RPI3/
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-05-27-earmv6hf/RPI3/
 
 If you use un-patched-original kernel.
  mv /boot/kernel7.img.orignal /boot/kernel7.img
@@ -38,23 +38,19 @@ If you use un-patched-original kernel.
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  updates:
- https://github.com/ebijun/NetBSD/commit/6017d1ffe4138955a6a4709871f579f7ad1ebbe9#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/222eed6290b97423df5e024c122fc5b6955a6e38#diff-4a755d73dbba5da21bbf783139f086dc
 
 Update:
-- NetBSD-current 7.99.68 evbarm-earmv6hf 201704111220Z rpi.img from nyftp.
-- drop git-base for disk space.
-  to add git,
-  # pkg_add git-base
+- NetBSD-current 7.99.72 evbarm-earmv6hf 201705211800Z rpi.img from nyftp.
+- for the lack of diskspace, enlarge this image file over 2GB.
 
-- Ruby2.3
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/03/20/msg154351.html
-- mikutter 3.5.7
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/04/08/msg155056.html
+ 2306867200 May 24 08:08 2017-05-27-netbsd-raspi-earmv6hf.img
 
 Problem:
 - sdhc(4) can't recognize some kind of microSD card
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=51732
 - dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1
+  # build gcc version issue?
 
 security.pax.mprotect.enabled
   http://netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
@@ -92,7 +88,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-04-15/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-05-27/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -100,7 +96,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-04-15-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-05-27-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -274,14 +270,13 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source UN-Conference 2017 Kawagoe demonstration use, 
+For Open Source Conference 2017 Nagoya demonstration use, 
 I've updated raspberry-pi image.
 
-https://koedolug.connpass.com/event/47569/
 https://www.ospn.jp/
 https://www.facebook.com/NetBSD.jp 
 
-- NetBSD 7.99.68 earmv6hf rpi.img.gz base
+- NetBSD 7.99.72 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -313,30 +308,33 @@ Appear mikutter window. and mikutter-chan tell you,
   Share your twitter timeline with your family!
 
 Features:
-  - fit size for 2GB SD Card
+  - fit size for 4GB SD Card
   - with X11
   - increase more inodes on /dev/ld0a
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-04-15/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-05-27/
 
 Installed Packages:
- vlgothic-ttf
- icewm
- xli
- ruby23-mikutter
- uim
- fossil
- raspberrypi-userland
- sudo
- git-base
- mlterm
- pkg_chk
- lintpkgsrc
- mozilla-rootcerts
- dillo-3.0.5nb1
- medit
+  bash
+  tcsh
+  vlgothic-ttf
+  icewm
+  xli
+  ruby23-mikutter
+  uim
+  fossil
+  raspberrypi-userland
+  sudo
+  git-base
+  zsh
+  mlterm
+  pkg_chk
+  lintpkgsrc
+  mozilla-rootcerts
+  dillo-3.0.5nb1
+  medit
 
 To control HDMI output,add/delete "console=fb" on cmdline.txt.
 If delete console=fb definition,you can get serial console instead.

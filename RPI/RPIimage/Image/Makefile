@@ -6,7 +6,7 @@ ARCH=earmv6hf
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-04-15/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.71-evbarm-${ARCH}-201705170540Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.72-evbarm-${ARCH}-201705211800Z.iso
 
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
@@ -68,8 +68,8 @@ extract:
 rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
-	fdisk -uf -0 -s 6/8192/47104 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fdisk -uf -1 -s 169/260096/3553280 ${VND} 
+	fdisk -uf -0 -s 6/8192/188416 ${VND} #DOS id6 partition:DISKLABEL.proto
+	fdisk -uf -1 -s 169/458752/4046848 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
@@ -94,7 +94,9 @@ rpi:
 # make image file. 512*3813376=2GB
 file: 
 	echo Create ${FILE}.
-	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
+#	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
+#	2048*2200
+	dd if=/dev/zero of=${FILE} bs=512 count=4505600 progress=50000
 	sleep 3
 
 # stop sshd for package install
@@ -112,6 +114,14 @@ pkg:
 	echo resize_root=NO		>> ${MNT}/etc/rc.conf
 	echo resize_root_flags=""	>> ${MNT}/etc/rc.conf
 	echo resize_root_postcmd=""	>> ${MNT}/etc/rc.conf
+	umount ${MNT}
+	vnconfig -u ${VND}
+
+pkg-back:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	cp ../etc/rc.conf ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 

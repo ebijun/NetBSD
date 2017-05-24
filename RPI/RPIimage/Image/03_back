@@ -1,4 +1,4 @@
-dd if=/dev/rsd2d of=back.img count=512 bs=3813376 progress=5
+dd if=/dev/rsd2d of=back.img count=512 bs=4505600 progress=5
 
 DIR=tmp`date +%Y%m%d-%H%M`
 mkdir $DIR
