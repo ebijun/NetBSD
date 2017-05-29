@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.71 (GENERIC) #0: Sun Apr 30 09:00:49 UTC 2017
+NetBSD 7.99.73 (GENERIC) #0: Thu May 25 10:02:15 UTC 2017
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 2047 MB
 avail memory = 1966 MB
@@ -18,13 +18,13 @@ mainbus0 (root)
 ACPI: RSDP 0x00000000000F7BA0 000024 (v02 RS690 )
 ACPI: XSDT 0x000000007FFE3080 00004C (v01 RS690  AWRDACPI 42302E31 AWRD 00000000)
 ACPI: FACP 0x000000007FFE8180 0000F4 (v03 RS690  AWRDACPI 42302E31 AWRD 00000000)
-ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Pm1aEventBlock: 32/8 (20170119/tbfadt-642)
-ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Pm1aControlBlock: 16/8 (20170119/tbfadt-642)
-ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/PmTimerBlock: 32/8 (20170119/tbfadt-642)
-ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 64/8 (20170119/tbfadt-642)
-ACPI BIOS Warning (bug): Invalid length for FADT/Pm1aEventBlock: 8, using default 32 (20170119/tbfadt-745)
-ACPI BIOS Warning (bug): Invalid length for FADT/Pm1aControlBlock: 8, using default 16 (20170119/tbfadt-745)
-ACPI BIOS Warning (bug): Invalid length for FADT/PmTimerBlock: 8, using default 32 (20170119/tbfadt-745)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Pm1aEventBlock: 32/8 (20170303/tbfadt-642)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Pm1aControlBlock: 16/8 (20170303/tbfadt-642)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/PmTimerBlock: 32/8 (20170303/tbfadt-642)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 64/8 (20170303/tbfadt-642)
+ACPI BIOS Warning (bug): Invalid length for FADT/Pm1aEventBlock: 8, using default 32 (20170303/tbfadt-745)
+ACPI BIOS Warning (bug): Invalid length for FADT/Pm1aControlBlock: 8, using default 16 (20170303/tbfadt-745)
+ACPI BIOS Warning (bug): Invalid length for FADT/PmTimerBlock: 8, using default 32 (20170303/tbfadt-745)
 ACPI: DSDT 0x000000007FFE3200 004F49 (v01 RS690  AWRDACPI 00001000 MSFT 03000000)
 ACPI: FACS 0x000000007FFE0000 000040
 ACPI: FACS 0x000000007FFE0000 000040
@@ -37,9 +37,11 @@ ACPI: 2 ACPI AML tables successfully acquired and loaded
 ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x21, 24 pins
 cpu0 at mainbus0 apid 0
 cpu0: AMD Processor, id 0x60fb2
+cpu0: package 0, core 0, smt 0
 cpu1 at mainbus0 apid 1
 cpu1: AMD Processor, id 0x60fb2
-acpi0 at mainbus0: Intel ACPICA 20170119
+cpu1: package 0, core 1, smt 0
+acpi0 at mainbus0: Intel ACPICA 20170303
 acpi0: X/RSDT: OemId <RS690 ,AWRDACPI,42302e31>, AslId <AWRD,00000000>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 acpi0: SCI interrupting at int 9
@@ -176,14 +178,14 @@ uhub5 at usb5: vendor 1002 (0x1002) EHCI root hub (0000), class 9/0, rev 2.00/1.
 uhub5: 10 ports with 10 removable, self powered
 ehci0: handing over full speed device on port 1 to ohci0
 wd0 at atabus0 drive 0
-wd0: <TOSHIBA MK1665GSX>
+wd0: <WDC WD3200BEKT-08PVMT1>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
-wd0: 149 GB, 310101 cyl, 16 head, 63 sec, 512 bytes/sect x 312581808 sectors
+wd0: 298 GB, 620181 cyl, 16 head, 63 sec, 512 bytes/sect x 625142448 sectors
 wd0: 32-bit data port
-wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
-wd0(ixpide0:0:0): using PIO mode 4, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
+wd0(ixpide0:0:0): using PIO mode 4, Ultra-DMA mode 6 (Ultra/133) (using DMA)
 pad0: outputs: 44100Hz, 16-bit, stereo
-audio1 at pad0: half duplex, playback, capture
+audio1 at pad0: half duplex, playback, capture, mmap
 pad0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 44100
 spkr2 at audio1: PC Speaker (synthesized)
 uhidev0 at uhub3 port 1 configuration 1 interface 0
@@ -192,7 +194,7 @@ ukbd0 at uhidev0: 8 modifier keys, 6 key codes
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/7.99.71/modules
+kern.module.path=/stand/amd64/7.99.73/modules
 drm: initializing kernel modesetting (RV610 0x1002:0x94CB 0x1002:0x94CB).
 drm: register mmio base: 0xfddf0000
 drm: register mmio size: 65536
@@ -201,14 +203,14 @@ radeon0: info: VRAM: 128M 0x0000000000000000 - 0x0000000007FFFFFF (128M used)
 radeon0: info: GTT: 512M 0x0000000008000000 - 0x0000000027FFFFFF
 drm: Detected VRAM RAM=80M, BAR=256M
 drm: RAM width 64bits DDR
-Zone  kernel: Available graphics memory: 701902 kiB
+Zone  kernel: Available graphics memory: 701702 kiB
 drm: radeon: 128M of VRAM memory ready
 drm: radeon: 512M of GTT memory ready.
 drm: Loading RV610 Microcode
 drm: GART: num cpu pages 131072, num gpu pages 131072
 drm: PCIE GART of 512M enabled (table at 0x0000000000040000).
 radeon0: info: WB enabled
-radeon0: info: fence driver on ring 0 use gpu addr 0x0000000008000c00 and cpu addr 0x0xffff8000254e4c00
+radeon0: info: fence driver on ring 0 use gpu addr 0x0000000008000c00 and cpu addr 0x0xffff800025544c00
 drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
 drm: Driver supports precise vblank timestamp query.
 radeon0: interrupting at ioapic0 pin 18 (radeon)
@@ -236,7 +238,7 @@ drm:   Encoders:
 drm:     TV1: INTERNAL_KLDSCP_DAC2
 radeondrmkmsfb0 at radeon0
 radeon0: info: registered panic notifier
-radeondrmkmsfb0: framebuffer at 0xffff800025810000, size 1280x1024, depth 32, stride 5120
+radeondrmkmsfb0: framebuffer at 0xffff800025870000, size 1280x1024, depth 32, stride 5120
 wsdisplay0 at radeondrmkmsfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wskbd1 at ukbd0 mux 1
