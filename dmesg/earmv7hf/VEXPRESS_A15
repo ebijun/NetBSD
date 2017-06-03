@@ -1,0 +1,101 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.75 (VEXPRESS_A15) #0: Sat Jun  3 08:16:17 JST 2017
+	jun@amikuro.soum.co.jp:/usr/obj/kernel/earmv7hf/VEXPRESS_A15
+total memory = 128 MB
+avail memory = 121 MB
+sysctl_createv: sysctl_create(machine_arch) returned 17
+timecounter: Timecounters tick every 10.000 msec
+armfdt0 (root)
+fdt0 at armfdt0: V2P-CA15
+fdt1 at fdt0
+fdt2 at fdt1: V2M-P1
+fdt3 at fdt2
+fdt4 at fdt0
+cpus0 at fdt0
+cpu0 at cpus0: Cortex-A15 r2p1 (Cortex V7A core)
+cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu0: 32KB/64B 2-way L1 PIPT Instruction cache
+cpu0: 32KB/64B 2-way write-back-locking-C L1 PIPT Data cache
+cpu0: 2304KB/64B 16-way write-through L2 PIPT Unified cache
+vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu1 at cpus0: disabled (unresponsive)
+gic0 at fdt0: GIC
+armgic0 at gic0: Generic Interrupt Controller, 160 sources (160 valid)
+armgic0: 256 Priorities, 128 SPIs, 16 PPIs, 16 SGIs
+gtmr0 at fdt0: Generic Timer
+armgtmr0 at gtmr0: ARMv7 Generic 64-bit Timer (62500 kHz)
+armgtmr0: interrupting on irq 27
+timecounter: Timecounter "armgtmr0" frequency 62500000 Hz quality 500
+fregulator0 at fdt2: 3V3
+fclock0 at fdt2: 32768 Hz fixed clock
+fclock1 at fdt2: 1000000 Hz fixed clock
+fclock2 at fdt2: 24000000 Hz fixed clock
+/dcc at fdt0 not configured
+vxsysreg0 at fdt3
+/smb@08000000/motherboard/iofpga@3,00000000/sysctl@020000 at fdt3 not configured
+/smb@08000000/motherboard/mcc at fdt2 not configured
+/smb@08000000/motherboard/vram@2,00000000 at fdt2 not configured
+/smb@08000000/motherboard/iofpga@3,00000000/clcd@1f0000 at fdt3 not configured
+/virtio_mmio@1c130000 at fdt0 not configured
+/virtio_mmio@1c130200 at fdt0 not configured
+/virtio_mmio@1c130400 at fdt0 not configured
+/virtio_mmio@1c130600 at fdt0 not configured
+/hdlcd@2b000000 at fdt0 not configured
+/memory-controller@2b0a0000 at fdt0 not configured
+/memory-controller@7ffd0000 at fdt0 not configured
+/dma@7ffb0000 at fdt0 not configured
+/pmu at fdt0 not configured
+/smb@08000000/motherboard/flash@0,00000000 at fdt2 not configured
+/smb@08000000/motherboard/psram@1,00000000 at fdt2 not configured
+smsh0 at fdt2: SMSC LAN9118 Rev 1
+smsh0: MAC address 52:54:00:12:34:56
+ukphy0 at smsh0 phy 1: OUI 0x00800f, model 0x000d, rev. 1
+ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+smsh0: interrupting on GIC irq 47
+/smb@08000000/motherboard/usb@2,03000000 at fdt2 not configured
+/smb@08000000/motherboard/leds at fdt2 not configured
+/smb@08000000/motherboard/iofpga@3,00000000/i2c@030000 at fdt3 not configured
+/smb@08000000/motherboard/iofpga@3,00000000/aaci@040000 at fdt3 not configured
+plmmc0 at fdt3
+sdmmc0 at plmmc0
+/smb@08000000/motherboard/iofpga@3,00000000/kmi@060000 at fdt3 not configured
+/smb@08000000/motherboard/iofpga@3,00000000/kmi@070000 at fdt3 not configured
+plcom0 at fdt3
+plcom0: txfifo disabled
+plcom0: console
+plcom1 at fdt3
+plcom1: txfifo disabled
+plcom2 at fdt3
+plcom2: txfifo disabled
+plcom3 at fdt3
+plcom3: txfifo disabled
+/smb@08000000/motherboard/iofpga@3,00000000/wdt@0f0000 at fdt3 not configured
+/smb@08000000/motherboard/iofpga@3,00000000/timer@110000 at fdt3 not configured
+/smb@08000000/motherboard/iofpga@3,00000000/timer@120000 at fdt3 not configured
+/smb@08000000/motherboard/iofpga@3,00000000/i2c@160000 at fdt3 not configured
+/smb@08000000/motherboard/iofpga@3,00000000/rtc@170000 at fdt3 not configured
+/smb@08000000/motherboard/iofpga@3,00000000/compact-flash@1a0000 at fdt3 not configured
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+ld0 at sdmmc0: <0xaa:0x5859:QEMU!:0x01:0xdeadbeef:0x062>
+ld0: 2048 MB, 1040 cyl, 64 head, 63 sec, 512 bytes/sect x 4194304 sectors
+ld0: 4-bit width, 12.000 MHz
+IPsec: Initialized Security Association Processing.
+boot device: ld0
+root on ld0a dumps on ld0b
+root file system type: ffs
+kern.module.path=/stand/evbarm/7.99.75/modules
+WARNING: no TOD clock present
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+smsh0: watchdog timeout
+smsh0: watchdog timeout
+smsh0: watchdog timeout
+smsh0: watchdog timeout
+smsh0: watchdog timeout
+smsh0: watchdog timeout
+smsh0: watchdog timeout
