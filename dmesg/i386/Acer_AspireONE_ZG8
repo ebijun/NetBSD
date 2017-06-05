@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.75 (GENERIC) #0: Sun May 28 16:39:42 UTC 2017
+NetBSD 8.99.1 (GENERIC) #0: Sun Jun  4 09:08:06 UTC 2017
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1982 MB
@@ -208,14 +208,14 @@ acpicpu1 at cpu1: ACPI CPU
 DRM error in i915_irq_handler: pipe A underrun
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
-IPsec: Initialized Security Association Processing.
 uhub0 at usb0: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
+IPsec: Initialized Security Association Processing.
 uhub1 at usb1: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb3: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb2: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
-uhub3 at usb2: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub3 at usb3: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub3: 2 ports with 2 removable, self powered
 uhub4 at usb4: vendor 8086 (0x8086) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub4: 8 ports with 8 removable, self powered
@@ -233,7 +233,7 @@ video0 at uvideo0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/7.99.75/modules
+kern.module.path=/stand/i386/8.99.1/modules
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
