@@ -1,1 +1,2 @@
-qemu-system-arm -M vexpress-a15 -kernel netbsd.ub -dtb vexpress-v2p-ca15-tc1.dtb -nographic -sd sdcard.img -append 'root=ld0a'
+#qemu-system-arm -M vexpress-a15 -kernel netbsd.ub -dtb vexpress-v2p-ca15-tc1.dtb -nographic -sd sdcard.img -append 'root=ld0a' 
+qemu-system-arm -M vexpress-a15 -kernel netbsd.ub -dtb vexpress-v2p-ca15-tc1.dtb  -sd sdcard.img -append 'root=ld0a' -append 'console=fb' -m 1024m
