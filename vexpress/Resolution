@@ -1,0 +1,2 @@
+#fdtput -t i vexpress-v2p-ca15-tc1.dtb /smb@08000000/motherboard/iofpga@3,00000000/clcd@1f0000/panel/panel-timing hactive 1024
+fdtput -t i vexpress-v2p-ca15-tc1.dtb /smb@08000000/motherboard/iofpga@3,00000000/clcd@1f0000/panel/panel-timing vactive 600
