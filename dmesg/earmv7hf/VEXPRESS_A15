@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.1 (VEXPRESS_A15) #3: Tue Jun  6 19:11:01 JST 2017
+NetBSD 8.99.1 (VEXPRESS_A15) #5: Thu Jun  8 20:58:36 JST 2017
 	jun@amikuro.soum.co.jp:/usr/obj/kernel/earmv7hf/VEXPRESS_A15
 total memory = 1024 MB
 avail memory = 1008 MB
@@ -41,10 +41,10 @@ vxsysreg0 at fdt3
 /smb@08000000/motherboard/mcc at fdt2 not configured
 /smb@08000000/motherboard/vram@2,00000000 at fdt2 not configured
 genfb0 at fdt3
-genfb0: framebuffer at 0x18000000, size 640x480, depth 32, stride 2560
-wsdisplay0 at genfb0 kbdmux 1
+genfb0: framebuffer at 0x18000000, size 1024x600, depth 32, stride 4096
+wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
-wsdisplay0: screen 0-3 added (default, vt100 emulation)
+wsdisplay0: screen 1-3 added (default, vt100 emulation)
 /virtio_mmio@1c130000 at fdt0 not configured
 /virtio_mmio@1c130200 at fdt0 not configured
 /virtio_mmio@1c130400 at fdt0 not configured
@@ -64,7 +64,13 @@ smsh0: interrupting on GIC irq 47
 /smb@08000000/motherboard/usb@2,03000000 at fdt2 not configured
 /smb@08000000/motherboard/leds at fdt2 not configured
 /smb@08000000/motherboard/iofpga@3,00000000/i2c@030000 at fdt3 not configured
-/smb@08000000/motherboard/iofpga@3,00000000/aaci@040000 at fdt3 not configured
+aaci0 at fdt3: Advanced Audio CODEC
+aaci0: ac97: National Semiconductor LM4549 codec; headphone, 18 bit DAC, 18 bit ADC, National Semi 3D
+aaci0: ac97: ext id 0x1<VRA>
+audio0 at aaci0: half duplex, playback, mmap
+aaci0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+spkr0 at audio0: PC Speaker (synthesized)
+aaci0: interrupting on GIC irq 43
 plmmc0 at fdt3
 sdmmc0 at plmmc0
 plkmi0 at fdt3: PS2 controller
@@ -78,7 +84,6 @@ wsmouse0 at pms0 mux 0
 plkmi1: interrupting on GIC irq 45
 plcom0 at fdt3
 plcom0: txfifo disabled
-plcom0: console
 plcom1 at fdt3
 plcom1: txfifo disabled
 plcom2 at fdt3
@@ -93,14 +98,19 @@ plcom3: txfifo disabled
 /smb@08000000/motherboard/iofpga@3,00000000/compact-flash@1a0000 at fdt3 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 ld0 at sdmmc0: <0xaa:0x5859:QEMU!:0x01:0xdeadbeef:0x062>
-ld0: 2048 MB, 1040 cyl, 64 head, 63 sec, 512 bytes/sect x 4194304 sectors
+ld0: 2200 MB, 1117 cyl, 64 head, 63 sec, 512 bytes/sect x 4505600 sectors
 ld0: 4-bit width, 12.000 MHz
 IPsec: Initialized Security Association Processing.
-boot device: ld0
+boot device: <unknown>
+root device: ld0
+dump device (default ld0b): 
+file system (default generic): 
 root on ld0a dumps on ld0b
 root file system type: ffs
 kern.module.path=/stand/evbarm/8.99.1/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
+init path (default /sbin/init): 
+init: trying /sbin/init
 wsdisplay0: screen 4 added (default, vt100 emulation)
