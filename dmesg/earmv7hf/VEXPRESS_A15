@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.1 (VEXPRESS_A15) #5: Thu Jun  8 20:58:36 JST 2017
+NetBSD 8.99.1 (VEXPRESS_A15) #6: Fri Jun  9 20:16:56 JST 2017
 	jun@amikuro.soum.co.jp:/usr/obj/kernel/earmv7hf/VEXPRESS_A15
 total memory = 1024 MB
 avail memory = 1008 MB
@@ -94,7 +94,7 @@ plcom3: txfifo disabled
 /smb@08000000/motherboard/iofpga@3,00000000/timer@110000 at fdt3 not configured
 /smb@08000000/motherboard/iofpga@3,00000000/timer@120000 at fdt3 not configured
 /smb@08000000/motherboard/iofpga@3,00000000/i2c@160000 at fdt3 not configured
-/smb@08000000/motherboard/iofpga@3,00000000/rtc@170000 at fdt3 not configured
+plrtc0 at fdt3: RTC
 /smb@08000000/motherboard/iofpga@3,00000000/compact-flash@1a0000 at fdt3 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 ld0 at sdmmc0: <0xaa:0x5859:QEMU!:0x01:0xdeadbeef:0x062>
@@ -108,9 +108,6 @@ file system (default generic):
 root on ld0a dumps on ld0b
 root file system type: ffs
 kern.module.path=/stand/evbarm/8.99.1/modules
-WARNING: no TOD clock present
-WARNING: using filesystem time
-WARNING: CHECK AND RESET THE DATE!
 init path (default /sbin/init): 
 init: trying /sbin/init
 wsdisplay0: screen 4 added (default, vt100 emulation)
