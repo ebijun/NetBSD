@@ -44,7 +44,9 @@
  2013 Nagoya,6/21-22,750,42,名古屋国際センター
  2014 Nagoya,7/4-5,620,30,名古屋国際センター
  2015 Nagoya,5/22-23,550,39,名古屋国際センター
- 2016 Nagoya,5/28,,35,吹上ホール
+ 2016 Nagoya,5/28,500,35,吹上ホール
+ 2017 Nagoya,5/27,,37,吹上ホール
+
 
 オープンソースカンファレンス以前
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -108,6 +110,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 106,OSC2017名古屋,http://www.soum.co.jp/~jun/OSC2017nagoya.pdf
  88,OSC2016名古屋,http://www.soum.co.jp/~jun/OSC2016nagoya.pdf
  71,OSC2015名古屋,http://www.soum.co.jp/~jun/OSC2015nagoya.pdf
  59,OSC2014名古屋,http://www.soum.co.jp/~jun/OSC2014nagoya.pdf
@@ -121,7 +124,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2016名古屋 NetBSDブース展示の記録,
+ OSC2017名古屋 NetBSDブース展示の記録,
+ OSC2016名古屋 NetBSDブース展示の記録,https://togetter.com/li/980383
  OSC2015名古屋 NetBSDブース展示の記録,http://togetter.com/li/824817
  OSC2014名古屋 NetBSDブース展示の記録,http://togetter.com/li/688742
  OSC2013名古屋 NetBSDブース展示の記録,http://togetter.com/li/522396
@@ -130,7 +134,9 @@ togetterまとめ
 
 OSC名古屋展示物
 ~~~~~~~~~~~~~~~~~~
+#. SGI Indigo2 R8000
 #. OpenBSD/LUNA88K & NetBSD/LUNA68K
+#. PANIX on PC98
 #. DEC Alphaと俺
 #. ドリームキャストのコントローラでTwitterタイムライン
 #. XM6i
@@ -142,6 +148,31 @@ OSC名古屋展示物
 #. HP712/80
 #. Speecys
 #. samtk
+
+オープンソースカンファレンス2016 Nagoya&NBUG5月例会
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2016/05/28/DSC08913.JPG
+.. image::  ../Picture/2016/05/28/DSC08914.JPG
+.. image::  ../Picture/2016/05/28/DSC_1804.JPG
+.. image::  ../Picture/2016/05/28/DSC_1805.JPG
+.. image::  ../Picture/2016/05/28/DSC_1806.JPG
+.. image::  ../Picture/2016/05/28/DSC_1807.JPG
+.. image::  ../Picture/2016/05/28/DSC_1808.JPG
+.. image::  ../Picture/2016/05/28/DSC_1809.JPG
+.. image::  ../Picture/2016/05/28/DSC_1810.JPG
+.. image::  ../Picture/2016/05/28/DSC_1811.JPG
+.. image::  ../Picture/2016/05/28/DSC_1812.JPG
+.. image::  ../Picture/2016/05/28/DSC_1813.JPG
+.. image::  ../Picture/2016/05/28/DSC_1814.JPG
+.. image::  ../Picture/2016/05/28/DSC_1815.JPG
+.. image::  ../Picture/2016/05/28/DSC_1816.JPG
+.. image::  ../Picture/2016/05/28/DSC_1817.JPG
+.. image::  ../Picture/2016/05/28/DSC_1818.JPG
+.. image::  ../Picture/2016/05/28/DSC_1831.JPG
+.. image::  ../Picture/2016/05/28/DSC_1832.JPG
+.. image::  ../Picture/2016/05/28/DSC_1833.JPG
+.. image::  ../Picture/2016/05/28/DSC_1834.JPG
 
 オープンソースカンファレンス2015 Nagoya&NBUG5月例会
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
