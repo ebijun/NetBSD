@@ -3,10 +3,10 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-04-15/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-06-17/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.72-evbarm-${ARCH}-201705211800Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.1-evbarm-${ARCH}-201706101200Z.iso
 
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
@@ -69,7 +69,7 @@ rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
 	fdisk -uf -0 -s 6/8192/188416 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fdisk -uf -1 -s 169/458752/4046848 ${VND} 
+	fdisk -uf -1 -s 169/458752/4251648 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
@@ -95,8 +95,8 @@ rpi:
 file: 
 	echo Create ${FILE}.
 #	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
-#	2048*2200
-	dd if=/dev/zero of=${FILE} bs=512 count=4505600 progress=50000
+#	2048*2300
+	dd if=/dev/zero of=${FILE} bs=512 count=4710400 progress=60000
 	sleep 3
 
 # stop sshd for package install
