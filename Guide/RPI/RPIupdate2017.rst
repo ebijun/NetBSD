@@ -38,17 +38,17 @@ RaspberryPIのNetBSDイメージについて
  2016/3,7.99.26,3.3.8,,1.0.1s,,AsiaBSDCon,http://mail-index.netbsd.org/port-arm/2016/03/10/msg003709.html
  2016/5,7.99.29,,3.7.0,1.0.1t,RPI3サポート/merge nick-nhusb tree,OSC群馬,http://mail-index.netbsd.org/port-arm/2016/05/07/msg003771.html
  2016/6,7.99.29,3.3.9,,,freetype2ディレクトリ変更,OSC名古屋,http://mail-index.netbsd.org/port-arm/2016/05/25/msg003797.html
- ,7.99.30,3.4.0,,,GCC5.4.0/security.pax.mprotect,OSC北海道,http://mail-index.netbsd.org/port-arm/2016/06/13/msg003821.html
+ ,7.99.30,3.4.0,,,GCC5.4.0 security.pax.mprotect,OSC北海道,http://mail-index.netbsd.org/port-arm/2016/06/13/msg003821.html
  ,7.99.31,,,,RPI3 machdep.cpu.frequency.current = 1200,,http://mail-index.netbsd.org/port-arm/2016/06/17/msg003833.html
- 2016/7,7.99.32,3.4.1,3.7.1,,git-base-2.9.0/perl-5.24,OSC沖縄,http://mail-index.netbsd.org/port-arm/2016/06/29/msg003846.html
+ 2016/7,7.99.32,3.4.1,3.7.1,,git-base-2.9.0 perl-5.24,OSC沖縄,http://mail-index.netbsd.org/port-arm/2016/06/29/msg003846.html
  2016/8,7.99.34,,,,SA 2016-006: Race condition in mail.local(8),OSC京都,http://mail-index.netbsd.org/port-arm/2016/07/27/msg003884.html
  2016/9,7.99.36,3.4.2,,,,OSuC金沢,http://mail-index.netbsd.org/port-arm/2016/08/23/msg003918.html
  ,7.99.38,3.4.3,3.7.2,,git-base-2.10.0,OSC島根,http://mail-index.netbsd.org/port-arm/2016/09/22/msg003920.html
  ,7.99.39,,,,,OSC長岡,http://mail-index.netbsd.org/port-arm/2016/09/29/msg003921.html
- 2016/11,7.99.41,3.4.6,,1.0.2j,RPI2 Ver1.2サポート/libssl.12/libcrypt.12 NetBSD2017-SA01,OSC東京秋,http://mail-index.netbsd.org/port-arm/2016/11/02/msg003954.html
+ 2016/11,7.99.41,3.4.6,,1.0.2j,RPI2 Ver1.2サポート libssl.12/libcrypt.12 NetBSD2017-SA01,OSC東京秋,http://mail-index.netbsd.org/port-arm/2016/11/02/msg003954.html
  ,7.99.42,,,,BIND-9.10.4-P4 Raspberrypi-userland-2016-1101,KOF2016,http://mail-index.netbsd.org/port-arm/2016/11/10/msg003958.html
  ,7.99.42,3.4.7,,,NTP-4.2.8p9,OSC広島,http://mail-index.netbsd.org/port-arm/2016/11/23/msg003970.html
- 2016/12,7.99.44,3.4.8,,,CWE-120 libc/git-base-2.11.0,BIG RPI Jam,http://mail-index.netbsd.org/port-arm/2016/12/10/msg004002.html
+ 2016/12,7.99.44,3.4.8,,,CWE-120 libc git-base-2.11.0,BIG RPI Jam,http://mail-index.netbsd.org/port-arm/2016/12/10/msg004002.html
  2017/1,7.99.59,3.5.1,,,HardwareRNG BIND-9.10.4-P5 Raspberrypi-userland,OSC大阪,http://mail-index.netbsd.org/port-arm/2017/01/25/msg004087.html
  2017/2,7.99.59,3.5.2,3.8.0,1.0.2k,,OSC浜名湖,https://github.com/ebijun/osc-demo/blob/master/2017/OSC2017hamanako.txt
  2017/3,7.99.64,3.5.3,,,tcpdump-4.9.0 BIND-9.10.4-P6 postfix-3.1.4 NetBSD-SA02 git-base-2.12.0,OSC東京春,http://mail-index.netbsd.org/netbsd-advocacy/2017/03/13/msg000728.html
