@@ -54,7 +54,7 @@ RaspberryPIのNetBSDイメージについて
  2017/3,7.99.64,3.5.3,,,tcpdump-4.9.0 BIND-9.10.4-P6 postfix-3.1.4 NetBSD-SA02 git-base-2.12.0,OSC東京春,http://mail-index.netbsd.org/netbsd-advocacy/2017/03/13/msg000728.html
  2017/4,7.99.69,3.5.7,,,NetBSD7.1 ruby-2.3,OSuC川越,http://mail-index.netbsd.org/port-arm/2017/04/14/msg004130.html
  2017/5,7.99.72,,3.8.1,,BIND-9.10.4-P8 fossil-2.2 git-base-2.13.0,OSC名古屋,http://mail-index.netbsd.org/port-arm/2017/05/24/msg004150.html
- 2017/6/17,8.99.1,3.5.8,,,perl-5.26,OSC沖縄,
+ 2017/6/17,8.99.1,3.5.8,,,perl-5.26 qemu/VEXPRESS_A15カーネルからの起動,OSC沖縄,
  
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。
