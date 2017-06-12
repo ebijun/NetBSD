@@ -1,19 +1,19 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2017-05-27/2017-05-27/g
-:1,$s/7.99.72/7.99.72/g
-:1,$s/201705211800Z/201705211800Z/g
-:1,$s?2017/05/24/msg004150.html?2017/05/24/msg004150.html?
+:1,$s/2017-06-17/2017-06-17/g
+:1,$s/8.99.1/8.99.1/g
+:1,$s/201706101200Z/201706101200Z/g
+:1,$s?2017/06/17/msg004179.html?2017/06/17/msg004179.html?
 
 
-2017-05-27-netbsd-raspi-earmv6hf.img
+2017-06-17-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2017 Nagoya demonstration use, 
-I've updated 2017-05-27-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2017 Okinawa demonstration use, 
+I've updated 2017-06-17-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2017/05/24/msg004150.html
+http://mail-index.netbsd.org/port-arm/2017/06/17/msg004179.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-05-27-earmv6hf/2017-05-27-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-17-earmv6hf/2017-06-17-netbsd-raspi-earmv6hf.img.gz
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -30,11 +30,10 @@ Pre-installed packages:
 
 
 Update:
-- NetBSD-current 7.99.72 evbarm-earmv6hf 201705211800Z rpi.img from nyftp.
-- for the lack of diskspace, enlarge this image file over 2GB.
-
- 2306867200 May 24 08:08 2017-05-27-netbsd-raspi-earmv6hf.img
-
+- NetBSD-current 8.99.1 evbarm-earmv6hf 201706101200Z rpi.img from nyftp.
+- mikutter 3.5.8
+- perl 5.26
+- Boot with qemu/VEXPRESS_A15 kernel support.
 
 Problem:
 - sdhc(4) can't recognize some kind of microSD card
