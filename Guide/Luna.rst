@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-ルナ式練習帳、またはLunaの薄い本2016　[1]_
+ルナ式練習帳、またはLunaの薄い本2017　[1]_
 ===========================================
 
   「私が誰かは わかっているはずだ。」その声は天使の声だった。
@@ -538,6 +538,7 @@ LUNA年表　- 月の刃
  2015/07/06,,「いけない！ルナ先生」コラボ読切で復活  [147]_
  2015,青,OpenBSD/luna88k移植物語 [152]_
  2015/10,青, FM音源の調べ on LUNA http://www.slideshare.net/ao_kenji/nbug201510
+ 2017/3,青江,Luna88K&Luna68K AsiaBSDCon2017ブース展示
 
  
 最近のLUNA

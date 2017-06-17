@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -47,7 +47,8 @@ Maps:
  2013 Okinawa,7/6,170,16,沖縄コンベンションセンター
  2014 Okinawa,5/24,150,21,沖縄コンベンションセンター
  2015 Okinawa,7/4,100,16,沖縄コンベンションセンター
- 2016 Okinawa,7/2,,20,沖縄コンベンションセンター
+ 2016 Okinawa,7/2,130,20,沖縄コンベンションセンター
+ 2017 Okinawa,6/17,,14,沖縄県市町村自治会館
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,6 +60,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 107,OSC2017沖縄,http://www.soum.co.jp/~jun/OSC2017okinawa.pdf
  90,OSC2016沖縄,http://www.soum.co.jp/~jun/OSC2016okinawa.pdf
  73,OSC2015沖縄,http://www.soum.co.jp/~jun/OSC2015okinawa.pdf
  57,OSC2014沖縄,http://www.soum.co.jp/~jun/OSC2014okinawa.pdf
@@ -72,7 +74,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2016沖縄 NetBSDブース展示の記録,
+ OSC2017沖縄 NetBSDブース展示の記録,http://togetter.com/li/
+ OSC2016沖縄 NetBSDブース展示の記録,http://togetter.com/li/995155
  OSC2015沖縄 NetBSDブース展示の記録,http://togetter.com/li/842624
  OSC2014沖縄 NetBSDブース展示の記録,http://togetter.com/li/671580
  OSC2013沖縄 NetBSDブース展示の記録,http://togetter.com/li/529669
@@ -84,9 +87,9 @@ togetterまとめ
 .. csv-table::
  :widths: 60 30 60
 
- 沖縄コンベンションセンター,宜野湾,トロピカルかつビーチ
- ロイテ,伊祖,ベルギービール販売
- 沖縄電子,宜野湾,電子部品店
+ スクの水揚げの季節,旧暦の7月1日,2017年は8月22日
+ コザ麦酒工房,沖縄市,火～土 17:00-23:30 (金土は0:00まで)
+ 沖縄電子,宜野湾,電子部品店 9:00-18:00
  座喜味城跡,読谷,沖縄最古のアーチ門
  鶴亀堂ぜんざい,座喜味城そば,ぜんざいマップが欲しい
  読谷村役場歴史民俗資料館,座喜味城そば,沖縄関係専門書等
@@ -94,18 +97,20 @@ togetterまとめ
  COFFEEpotohoto,栄町市場,珈琲豆焙煎販売。毎年1個スタンプを押す。
  クラフトビアハウス 麦,県庁前,沖縄でクラフトビールを飲める。
  グッドウィル 那覇新都心店,おもろまち,機材が足りないときは直行。
- ヘリオスパブ,国際通り,ヘリオスビール各種。昼間もやってる。
+ ヘリオスパブ,国際通り,ヘリオスビール各種。12:30-23:00/24:00
  ギャラリー小禄,奥武山公園,沖縄であんみつ。
  沖縄県立博物館・美術館,おもろまち,喫茶店で豆焙煎
  ジャッキーステーキハウス,旭橋,打ち上げに使う
- PCガレージ,北谷,X31 3000円
+ PCガレージ,北谷,X61 4000円
+ ハードオフ,泡瀬/宜野湾/小禄,小禄が増えてる！マンタ公園とは何か。
  ステーキハウス８８, 辻,国際通りにもあるけど辻。
+ エビスチキン,宜野湾,あひる焼き持ち帰り専門店
  スマグラーズアイリッシュパブ,県庁脇,フィッシュ&チップス
  コックTAIL,県庁前,ダイニングバー
  松風苑,南風原,金城哲夫資料館は必見
  沖縄熱血社交場,国際通り,ライブハウス。アラケモ本拠地
  市場の古本屋ウララ,牧志公設市場,『那覇の市場で古本屋』
- BOOKSじのん,宜野湾,金城哲夫研究を買いたい
+ BOOKSじのん,宜野湾,金城哲夫研究を買いたい。9:00-20:00
  我楽多文庫,奥武山公園,ねこのいる古本屋
  DEEokinawa,www.dee-okinawa.com,スク情報(水揚げ/定食/のぼり)
  ピッツァＴＯＧＯ,宜野湾,石窯ピザ
@@ -122,29 +127,46 @@ togetterまとめ
  I's Public Ale House,北谷,17:00-1:00
  Dojo Bar Naha,安里１丁目交差点,19:00-
  ポストマン,読谷,プラモデル 13:00-19:00
- ひばり屋,美栄橋,那覇市牧志１－１９－１１に移転。
+ キングタコス,金武,タコチキンフライライスチーズ。
+ 珈琲屋台ひばり屋,牧志,那覇市牧志3-9-26に移転。10:30-19:00
  やっぱりステーキ2nd,美栄橋,AM11:00-AM7:00まで営業
+
+2016年
+----------
+
+.. image::  ../Picture/2016/07/01/DSC_1958.JPG
+.. image::  ../Picture/2016/07/01/DSC_1959.JPG
+.. image::  ../Picture/2016/07/01/DSC_1960.JPG
+.. image::  ../Picture/2016/07/01/DSC_1965.JPG
+.. image::  ../Picture/2016/07/01/DSC_1971.JPG
+.. image::  ../Picture/2016/07/01/DSC_1974.JPG
+.. image::  ../Picture/2016/07/02/1467427444271.jpg
+.. image::  ../Picture/2016/07/02/1467427462767.jpg
+.. image::  ../Picture/2016/07/02/1467427492890.jpg
+.. image::  ../Picture/2016/07/02/1467427587575.jpg
+.. image::  ../Picture/2016/07/02/1467427653581.jpg
+.. image::  ../Picture/2016/07/02/1467427687733.jpg
+.. image::  ../Picture/2016/07/02/1467428019501.jpg
+.. image::  ../Picture/2016/07/02/1467428153865.jpg
+.. image::  ../Picture/2016/07/02/1467435720136.jpg
+.. image::  ../Picture/2016/07/02/DSC_1978.JPG
+.. image::  ../Picture/2016/07/02/DSC_1980.JPG
+.. image::  ../Picture/2016/07/02/DSC_1985.JPG
+
  
 2015 年
 ---------------
 
-.. image::  ../Picture/2015/07/04/DSC07431.JPG
 .. image::  ../Picture/2015/07/04/DSC07432.JPG
-.. image::  ../Picture/2015/07/04/DSC_1098.jpg
 .. image::  ../Picture/2015/07/04/DSC_1100.jpg
-.. image::  ../Picture/2015/07/04/DSC_1101.jpg
 .. image::  ../Picture/2015/07/04/DSC_1102.jpg
 .. image::  ../Picture/2015/07/04/DSC_1103.jpg
 .. image::  ../Picture/2015/07/04/DSC_1105.jpg
 .. image::  ../Picture/2015/07/04/DSC_1106.jpg
 
- 2014年
+2014年
 ---------------
-.. image::  ../Picture/2014/05/23/DSC04807.JPG
-.. image::  ../Picture/2014/05/23/DSC04826.JPG
-.. image::  ../Picture/2014/05/23/DSC_0083.jpg
-.. image::  ../Picture/2014/05/23/DSC_0085.jpg
-.. image::  ../Picture/2014/05/24/DSC04843.JPG
+
 .. image::  ../Picture/2014/05/24/DSC04844.JPG
 .. image::  ../Picture/2014/05/24/DSC04851.JPG
 .. image::  ../Picture/2014/05/24/DSC04852.JPG
@@ -158,37 +180,28 @@ togetterまとめ
 .. image::  ../Picture/2014/05/24/DSC_0091.jpg
 .. image::  ../Picture/2014/05/24/DSC_0092.jpg
 .. image::  ../Picture/2014/05/24/DSC_0094.jpg
-.. image::  ../Picture/2014/05/24/DSC_0096.jpg
-.. image::  ../Picture/2014/05/24/DSC_0097.jpg
-.. image::  ../Picture/2014/05/24/DSC_0099.jpg
 .. image::  ../Picture/2014/05/24/DSC_0101.jpg
-.. image::  ../Picture/2014/05/24/DSC_0102.jpg
 .. image::  ../Picture/2014/05/24/DSC_0103.jpg
 
 2013年
 -------------
-.. image:: ../Picture/2013/07/06/DSC_2166.jpg
 .. image:: ../Picture/2013/07/06/DSC_2169.jpg
 .. image:: ../Picture/2013/07/06/DSC_2170.jpg
 .. image:: ../Picture/2013/07/06/DSC_2171.jpg
 .. image:: ../Picture/2013/07/06/DSC_2173.jpg
 .. image:: ../Picture/2013/07/06/DSC_2174.jpg
-.. image:: ../Picture/2013/07/06/DSC_2175.jpg
 .. image:: ../Picture/2013/07/06/DSC_2176.jpg
 .. image:: ../Picture/2013/07/06/DSC_2177.jpg
 .. image:: ../Picture/2013/07/06/dsc02733.jpg
-.. image:: ../Picture/2013/07/06/dsc02735.jpg
 .. image:: ../Picture/2013/07/06/dsc02738.jpg
 
 2012年
 -----------
 .. image:: ../Picture/2012/09/22/DSC_0851.JPG
 .. image:: ../Picture/2012/09/22/DSC_0852.JPG
-.. image:: ../Picture/2012/09/22/DSC_0853.JPG
 .. image:: ../Picture/2012/09/22/DSC_0855.JPG
 .. image:: ../Picture/2012/09/22/DSC_0859.JPG
 .. image:: ../Picture/2012/09/22/DSC_0861.JPG
-.. image:: ../Picture/2012/09/22/dsc01721.jpg
 .. image:: ../Picture/2012/09/22/dsc01722.jpg
 
 2011年

@@ -23,6 +23,8 @@
  :maxdepth: 3
  :numbered:
 
- Place/nagoya
+ Place/okinawa
  RPI/RPIupdate2017.rst
- Luna
+ RPI
+ Place/intro
+ RPI/Qemu
