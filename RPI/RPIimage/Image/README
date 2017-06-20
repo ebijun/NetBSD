@@ -1,21 +1,36 @@
-VERSION: :1,$s/2017-06-17/2017-06-17/g
-ISO:     :1,$s/201706101200Z/201706101200Z/g
+VERSION: :1,$s/2017-06-20/2017-06-20/g
+ISO:     :1,$s/201706190250Z/201706190250Z/g
 NetBSD:  :1,$s/8.99.1/8.99.1/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-06-17-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2017-06-20-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-06-17-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-06-20-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-17-earmv6hf/2017-06-17-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-17-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-20-earmv6hf/2017-06-20-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-20-earmv6hf/MD5
+
+Update:
+- NetBSD-current 8.99.1 evbarm-earmv6hf 201706190250Z rpi.img from nyftp.
+- Improve RPI3 support and merged 8.0 during OSC2017okinawa weekend.
+  - fix boot problem on some RPI3. 
+    thanx to jmcneill@ and Benjamin Lorenz.
+    http://mail-index.netbsd.org/port-arm/2017/06/16/msg004185.html
+- BIND 9.10.5-P1
+- mlterm 3.8.1
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
+
+QEMU,with VEPRESS_A15 kernel
+ https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
+ https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-20-earmv6hf/VEXPRESS_A15/netbsd.ub
+ http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
@@ -24,34 +39,10 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2-1.2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
 
-Kernel update
-
-- RPI3: still needs aaa->aaa_addr == BCM2835_BSC0_BASE patch.
- http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
- http://mail-index.netbsd.org/port-arm/2016/12/06/msg003995.html
-
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-17-earmv6hf/RPI3/
-
-If you use un-patched-original kernel.
- mv /boot/kernel7.img.orignal /boot/kernel7.img
-
-- QEMU,with VEPRESS_A15 kernel
- https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
- https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-17-earmv6hf/VEXPRESS_A15/netbsd.ub
- http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
-
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  updates:
-  https://github.com/ebijun/NetBSD/commit/04b1c95ed140b5e33f8757238311dbdeecfcca90#diff-4a755d73dbba5da21bbf783139f086dc
-
-Update:
-- NetBSD-current 8.99.1 evbarm-earmv6hf 201706101200Z rpi.img from nyftp.
-- mikutter 3.5.8
-- perl 5.26
-- Boot with qemu/VEPRESS_A15 kernel support
-
+  https://github.com/ebijun/NetBSD/commit/0ea0606d936f88cadd77646d4f288baccb838d3a#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
 - sdhc(4) can't recognize some kind of microSD card
@@ -103,7 +94,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-17-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-20-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -240,7 +231,7 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
 Todo:
 - set2pkg: update via pkgsrc.
 - HDMI Display failure on X
-  - On-Lap 2501M (reported from @matoken) 
+  - On-Lap 2501M (reported from @matoken) -> Checking On-Lap Displays.
     https://twitter.com/matoken/status/702656906251210753
 - pkg_in/pkg_summary
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
@@ -322,7 +313,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-06-17/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-06-20/
 
 Installed Packages:
   bash
