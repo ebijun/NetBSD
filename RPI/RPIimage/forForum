@@ -1,19 +1,28 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2017-06-17/2017-06-17/g
+:1,$s/2017-06-20/2017-06-20/g
 :1,$s/8.99.1/8.99.1/g
-:1,$s/201706101200Z/201706101200Z/g
-:1,$s?2017/06/17/msg004179.html?2017/06/17/msg004179.html?
+:1,$s/201706190250Z/201706190250Z/g
+:1,$s?2017/06/20/msg004210.html?2017/06/20/msg004210.html?
 
 
-2017-06-17-netbsd-raspi-earmv6hf.img
+2017-06-20-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2017 Okinawa demonstration use, 
-I've updated 2017-06-17-netbsd-raspi-earmv6hf.img.gz for RPI.
+After Open Source Conference 2017 Okinawa weekend.
+I've updated 2017-06-20-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2017/06/17/msg004179.html
+http://mail-index.netbsd.org/port-arm/2017/06/20/msg004210.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-17-earmv6hf/2017-06-17-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-20-earmv6hf/2017-06-20-netbsd-raspi-earmv6hf.img.gz
+
+Update:
+- NetBSD-current 8.99.1 evbarm-earmv6hf 201706190250Z rpi.img from nyftp.
+- Improve RPI3 support and merged 8.0 during OSC2017okinawa weekend.
+  - fix boot problem on some RPI3. 
+    thanx to jmcneill@ and Benjamin Lorenz.
+    http://mail-index.netbsd.org/port-arm/2017/06/16/msg004185.html
+- BIND 9.10.5-P1
+- mlterm 3.8.1
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -27,13 +36,6 @@ dmesg:
 
 Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
-
-
-Update:
-- NetBSD-current 8.99.1 evbarm-earmv6hf 201706101200Z rpi.img from nyftp.
-- mikutter 3.5.8
-- perl 5.26
-- Boot with qemu/VEXPRESS_A15 kernel support.
 
 Problem:
 - sdhc(4) can't recognize some kind of microSD card
