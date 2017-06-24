@@ -762,6 +762,13 @@ yaft X LUNA
 .. [155] LUNAのPSGというか647180実装  https://twitter.com/tsutsuii/status/759793635898515456
 .. [156] 「できません」と云うな―オムロン創業者 立石一真　https://www.amazon.co.jp/dp/4478006334/
 .. [157] http://www.ustream.tv/recorded/90107872
+.. [158] https://speakerdeck.com/tsutsui/osc2016-hiroshima-psg-tunes-on-netbsd-luna68k-again
+.. [159] https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
+.. [160] https://speakerdeck.com/tsutsui/osc2014-kansai-at-kyoto-netbsd-luna68k-report
+.. [161] http://www.ceres.dti.ne.jp/tsutsui/kof2013/NetBSD_bootloader.html
+.. [162] http://www.ceres.dti.ne.jp/tsutsui/osc2013kyoto/NetBSD-luna68k_mlterm-fb_Twitter.html
+
+
 
 このページ
 ~~~~~~~~~~~
