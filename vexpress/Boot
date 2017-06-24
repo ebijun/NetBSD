@@ -1,1 +1,1 @@
-qemu-system-arm -M vexpress-a15 -kernel netbsd.ub -dtb vexpress-v2p-ca15-tc1.dtb  -sd 2017-06-17-netbsd-raspi-earmv6hf.img -append 'root=ld0a' -append 'console=fb' # -m 1024M # -smp cpus=2
+qemu-system-arm -M vexpress-a15 -kernel netbsd.ub -dtb vexpress-v2p-ca15-tc1.dtb  -sd 2017-06-11-netbsd-raspi-earmv6hf.img -append 'root=ld0a' -append 'console=fb' # -m 1024M # -smp cpus=2
