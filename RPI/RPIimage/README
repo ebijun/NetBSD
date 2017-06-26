@@ -16,6 +16,7 @@ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-20-earmv6hf/MD5
 
 Update:
 - NetBSD-current 8.99.1 evbarm-earmv6hf 201706190250Z rpi.img from nyftp.
+- /etc/fstab: add comment,discard option.see man 8 mount. 
 - Improve RPI3 support and merged 8.0 during OSC2017okinawa weekend.
   - fix boot problem on some RPI3. 
     thanx to jmcneill@ and Benjamin Lorenz.
