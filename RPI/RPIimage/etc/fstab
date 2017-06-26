@@ -1,6 +1,7 @@
 # NetBSD /etc/fstab
 # See /usr/share/examples/fstab/ for more examples.
 #/dev/ld0a	/		ffs	rw,log,noatime	1 1
+#/dev/ld0a	/		ffs	rw,discard	1 1
 /dev/ld0a	/		ffs	rw	1 1
 /dev/ld0b	none		swap	sw	0 0
 /dev/ld0e	/boot		msdos	rw	1 1
