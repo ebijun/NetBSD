@@ -1,0 +1,1098 @@
+.. 
+ Copyright (c) 2017 Jun Ebihara All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Japan NetBSD Users Group 17th annual Meeting and BoF 2016
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group members held 18th annual Meeting 
+  on Jul. 9 2016:
+
+::
+
+ http://www.jp.netbsd.org/ja/JP/JNUG/announce/meeting18.html.en
+ https://www.facebook.com/events/1012439098842302/
+ https://www.facebook.com/NetBSD.jp/
+ http://www.jp.NetBSD.org/
+
+NetBSD BOF:
+  http://www.jp.netbsd.org/ja/JP/JNUG/event/20160709BOF/
+
+::
+
+ 14:00- 
+   - Makoto Fujiwara: pkgsrc freshness
+     http://www.ki.nu/~makoto/pkgsrc/check-update
+   - Tamotsu Kanoh: IoT on NetBSD
+     ftp://ftp.kanoh.org/pub/NetBSD/kanoh/
+   - Ryo ONODERA: pkgsrc issue for myself
+   - Masaru OKI:  Do You Know Whitebox Switch?
+     Cubieboard2 / Open Web Board /Zodiac FX / RPI0 
+ 15:30-
+   - Rin Okuyama: Endian independent disklabel support for NetBSD
+     kern/51208
+   - Ryo Shimizu: Twitter bot reports snapshot build result
+     @netbsd_builder show profile
+   - Jun Ebihara: RPI Image Update 2015-2016
+     https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2016.rst
+   - Masanobu SAITOH: NetBSD 2016
+     http://www.netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
+   - Hiroshi Tokuda: Machines on AsiaBSDCon 
+     LINKIT SMART 7688 DUO / Omega
+ 17:00
+   - SODA Noriyuki: Toward NetBSD 8.0
+   - Masanobu SAITOH: Current status of NetBSD MP-safe network stack project
+   
+ 18:30
+   　post meeting party: 
+   　  https://www.facebook.com/12souko/
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/JNUG2016.pdf
+
+More pictures are available on Togetter page:
+ http://togetter.com/li/997708
+
+Video Archive:
+ http://www.ustream.tv/channel/japan-netbsd-users-group-meeting
+
+NetBSD machines at Open Source Conference 2016 Kyoto
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group and  Kansai *BSD Users' Group 
+members held booth
+at the Open Source Conference 2016 Kyoto on Jul. 29-30 2016:
+
+::
+
+ http://www.ospn.jp/osc2016-kyoto/
+ https://www.facebook.com/events/1062729970410808/
+ https://www.facebook.com/NetBSD.jp/
+
+NetBSD/luna68k 7.0.1 by tsutsui@
+- https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
+- LUNA has Z80 sub-processor and YM2149 sound chip
+- porting PSG Z80 sound driver for PC6001 to NetBSD/luna68k
+  LUNA PSG support code http://twitter.com/tsutsuii/status/759793635898515456 
+- play PC6001 music data on LUNA
+
+NEC PC6001+PC6082 DataRecorder by tsutsui@
+- play PC6001 music data
+
+RetroBSD & LiteBSD by Takeshi Mutoh
+- http://qml.610t.org/FreeBSD/OSC2016Kyoto_JNUG.html
+- https://github.com/610t/kbug/blob/226d695792503635b6e35c5fb107f95cbbcad17e/demo/network.png
+- LiteBSD at chipKIT Wi-FIRE 4.4BSD PIC32MZ
+- RetroBSD at PIC32-RetroBSD 2.11BSD PIC32MX
+- FreeBSD at Raspberry Pi B FreeBSD LCD loadavg 
+- NetBSD at Banana Pi NetBSD7
+- RaspBSD at BeagleBone Black FreeBSD11 LED loadavg USB Ether 
+- NetBSD at Raspberry Pi 2B NetBSD 7 LanAP distcc 
+- NetBSD at Raspberry Pi 0 NetBSD7 GPIO LED loadavg
+
+Astronomical instruments control by NAKAMURA Kazushi
+- ASCOM project
+  http://www.ascom-standards.org/
+- INDI project
+  http://www.indilib.org/
+
+Others by Jun Ebihara
+- Raspberry Pi 0/1/2/3
+-  http://mail-index.netbsd.org/port-arm/2016/07/27/msg003884.html
+
+::
+
+  RPI0: https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI0
+  RPI : https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
+  RPI2: https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
+  RPI3: https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
+
+- Sharp Netwalker NetBSD/earmv7hf
+  NetBSD 7.99.21
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/NETWALKER
+- Sharp ZAURUS NetBSD/zaurus
+  -current boot failed.
+  NetBSD 6.99.29
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/zaurus/SL-C1000
+- Sharp WZero3
+  NetBSD 7.99.30
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcarm/WS011SH
+- NEC SigmarionII
+  NetBSD 7.99.33 201607080210Z works well, 7.99.34 boot failed.
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcmips/sigmarion2
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSC2016kyoto.pdf
+
+KBUG Flyer
+ http://sacraya.610t.org/kbug/flyer/flyer-OSC2016Kyoto.pdf
+
+More pictures are available on Togetter page:
+ http://togetter.com/li/1005828
+
+NetBSD workshop at SecurityCamp 2016
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I make a NetBSD workshop 4 hours timeslot in SecurityCamp 2016.
+Aug. 10 2016 13:30-17:30 ,Makuhari , Chiba, Japan:
+
+::
+
+ http://www.slideshare.net/junebihara18/netbsdworkshop
+ https://www.soum.co.jp/~jun/SecCamp2016.pdf
+ https://www.ipa.go.jp/jinzai/camp/2016/zenkoku2016_jikanwari.html
+ https://www.facebook.com/events/979623888786680/
+ https://www.facebook.com/NetBSD.jp/
+
+1. SEGA DreamCast demonstration
+- Phantasy Star Online as GameConsole
+- NetBSD 1.6A 2002 NBUG Demo CD-R 
+- NetBSD 7.0.1 2016 with dcserv & dcburn
+  http://ftp.netbsd.org/pub/NetBSD/arch/dreamcast/dcburn/
+  http://ftp.netbsd.org/pub/NetBSD/arch/dreamcast/dcserv/
+
+2. Show Hardwares - we all live in a one source tree.
+- hpcmips: IBM Z50,NEC MobileGear MC700,Sigmarion I/II
+- hpcarm: HP Jornada 720,WZERO3
+- hpcsh:  HP Jornada 690
+- zaurus: SL700/1000
+- dreamcast
+- RPI and more
+   RPI0/1/2/3 & CubieBoard2 & BananaPi & 4CPU
+  https://github.com/ebijun/NetBSD/tree/master/dmesg
+
+3. Install NetBSD/i386 7.0.1 on VirtualBox 
+- Windows 10 on HP Probook 450 
+-- XXX try to boot up with UEFI USB install media.
+   http://ftp.netbsd.org/pub/NetBSD/misc/nonaka/tmp/uefi/
+-- XXX I'm lost in BIOS menu tree, so can't find 
+   how to boot via USB Stick in 5min.
+
+- Step by Step install NetBSD7.0.1 on VirtualBox
+-- and boot NetBSD 
+
+4. Extract NetBSD-current src.tar.gz
+- cd /usr
+- tar xzvf src.tar.gz
+
+5. Build Cross Compiling toolchain
+- ./build.sh -j 6 -u -U -m evbarm -a earmv6hf tools
+
+6. Install NetBSD/earmv6hf on RPI
+- RPI image for OSC2016kyoto
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2016-07-29-earmv6hf/
+- Use rawrite32.exe to write microSD Card.
+  https://www.netbsd.org/~martin/rawrite32/download.html
+- boot
+- resize partition: wait 21min for fit 16GB sdcard.
+-- I should use 8GB or 4GB card instead.
+
+- Raspberry Pi 0/1/2/3
+  http://mail-index.netbsd.org/port-arm/2016/07/27/msg003884.html
+
+::
+
+  RPI0: https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI0
+  RPI : https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
+  RPI2: https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
+  RPI3: https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
+
+7. Build RPI kernel on NetBSD/i386
+- ./build.sh -j 6 -u -U -m evbarm -a earmv6hf kernel=RPI
+
+8. Play RPI as you are
+- startx
+- mikutter
+--  mikutter start failed!
+
+know your rights:
+Everything You Always Wanted to Know About Pax
+  http://www.netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
+
+9. Play again
+- mikutter
+cf.
+ https://twitter.com/akkkix/status/763285526124257280
+ https://twitter.com/akkkix/status/763285339372826624
+ https://twitter.com/taiyoslime/status/763283213137477633
+ https://twitter.com/K_atc/status/763280659993407488
+
+10. Copy own-build kernel to RPI
+- netbsd.bin to /boot/kernel.img and boot
+- with a little luck,-current kernel boot with no problem!
+
+11. (Optional) add one line kernel option for RPI3
+- http://mail-index.netbsd.org/port-arm/2016/06/16/msg003830.html
+- ./build.sh -j 6 -u -U -m evbarm -a earmv6hf kernel=RPI2
+- cp netbsd.bin /boot/kernel7.img
+ 
+Time UP!
+
+Thanx for all 11 participants younger than dreamcast,
+and supported great tutor @K_atc,
+   https://twitter.com/ebijun/status/763292302093619200
+and Toshifumi Nishinaga (http://tatsu-zine.com/books/raspi-bm).
+
+NetBSD machines at Open Source UnConference 2016 Kanazawa
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group members held booth 
+at the Open Source UnConference 2016 Kanazawa on Aug. 27 2016:
+
+::
+
+ http://connpass.com/event/30813/
+ https://www.facebook.com/events/1120439247976109
+ https://www.facebook.com/NetBSD.jp/
+ http://www.jp.NetBSD.org/
+
+- Raspberry Pi 0/1/2/3
+  http://mail-index.netbsd.org/port-arm/2016/08/23/msg003918.html
+
+::
+
+  RPI0: https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI0
+  RPI : https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
+  RPI2: https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
+  RPI3: https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
+
+- Sharp Netwalker NetBSD/earmv7hf
+  NetBSD 7.99.21
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/NETWALKER
+- Sharp WZero3
+  NetBSD 7.99.30
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcarm/WS011SH
+
+- routerboard hAP lite by  @den_debiantokyo
+-- https://routerboard.com/RB941-2nD-TC
+-- how can I boot NetBSD?
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSuC2016kanazawa.pdf
+
+More pictures are available on Togetter page:
+ http://togetter.com/li/1017308
+
+NetBSD machines at Open Source Conference 2016 Shimane
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group held booth
+at the Open Source Conference 2016 Shimane on Sep.24 2016:
+
+::
+
+ http://www.ospn.jp/osc2016-shimane/
+ https://www.facebook.com/events/1719665944982026/
+ https://www.facebook.com/NetBSD.jp/
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSC2016shimane.pdf
+
+Booth:
+ https://twitter.com/ebijun/status/779514521958293505
+
+The NetBSD booth exhibited the following machines:
+
+SONY NEWS NWS-5000SB NetBSD/newsmips 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/newsmips/NEWS5000
+ 7.99.32 boot.
+ 7.99.38 boot failed.
+
+NEC PC-9821Nb7/5 NetBSD/pc98 1.4.3 by @shimadah
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/pc98/GENERIC
+
+Raspberry PI running SunView+JLE,OpenWindows and NeWS with tme by Mochida.
+ https://twitter.com/ebijun/status/779514988880809984
+ 
+XM6i on MacOSX by isaki@
+ https://twitter.com/ebijun/status/779514521958293505
+
+Raspberry PI3 running NetBSD/x68k with XM6i emulator.
+ https://twitter.com/ebijun/status/779506768707629056
+
+Raspberry PI with omxplayer and Xfce4
+ https://twitter.com/ebijun/status/779514303137263616
+
+Sharp Netwalker 
+ https://twitter.com/ebijun/status/779515340220801024
+
+many thanx to Hiroyuki Nakaji,Shuji Mochida,https://opencocon.org/
+
+Demo Images:
+ RPI:
+  http://mail-index.netbsd.org/port-arm/2016/09/22/msg003920.html
+
+ XM6i
+  http://xm6i.org/download.html
+
+More pictures are available on Togetter page:
+  http://togetter.com/li/1028314
+
+OpenBSD and NetBSD machines at Open Source Conference 2016 Nagaoka
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group and 
+Echigo BSD Users Group members held booth
+at the Open Source Conference 2016 Nagaoka on Oct.1 2016:
+
+::
+
+ http://www.ospn.jp/osc2016-nagaoka/
+ https://www.facebook.com/events/894132747364440/
+ http://www.ebug.jp/
+ http://www.jp.NetBSD.org/
+ https://www.facebook.com/NetBSD.jp/
+
+Fuguita: OpenBSD LiveCD by Yoshihiro Kawamata
+   http://fuguita.org/?FuguIta
+   http://fuguita.org/index.php?%B2%CF%C6%DA%C8%C4
+
+ Fuguita-6.0: based on OpenBSD 6.0
+   http://fuguita.org/index.php?LiveCD%2F6.0
+
+Echigo BSD Users Group, since Nov.2001
+   http://www.ebug.jp/
+   http://p.twipple.jp/nPXeW
+
+ stellarium on OpenBSD by Yoshihiro Kawamata
+     http://p.twipple.jp/Wsu4D
+     
+Echigo BSD Users Group activities:
+
+ OpenBSD wiki:
+  http://fuguita.org/
+
+ Scale httpd on OpenBSD:
+   http://fuguita.org/index.php?EBUG%CA%D9%B6%AF%B2%F1%2F20141115_httpd%A4%F2%A5%B9%A5%B1%A1%BC%A5%EB%A4%B5%A4%BB%A4%EB
+
+ CARP and OpenBSD Web/MailingList Server:
+ http://fuguita.org/index.php?EBUG%CA%D9%B6%AF%B2%F1%2F20110903_%A5%ED%A1%BC%A5%C9%A5%D0%A5%E9%A5%F3%A5%B5%A4%CA%A4%B7%A4%C7%C9%E9%B2%D9%CA%AC%BB%B6%A4%B7%A4%C6%A4%DF%A4%BF
+
+NetBSD Booth:
+ http://p.twipple.jp/pOzt3
+
+XM6i: NetBSD/x68k on X68030 emulators
+   http://xm6i.org/ 
+   XM6i (NetBSD/x68k) on RPI3 (NetBSD/earmv6hf) 
+   http://p.twipple.jp/ccOMY
+
+Raspberry PI2 plays omxplayer (NetBSD/earmv6hf)
+   http://p.twipple.jp/R1LNs
+
+Raspberry PI Zero and mikutter (NetBSD/earmv6hf)
+   http://p.twipple.jp/FCks7  
+
+SHARP NetWalker (NetBSD/earmv7hf) Xfce4.12+xnp21 PC9801emulator
+  http://p.twipple.jp/S9U6x
+
+SHARP WZERO3 ades (NetBSD/hpcarm)
+  http://p.twipple.jp/tzGKA
+ 
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSC2016nagaoka.pdf
+
+Demo Images:
+ Fuguita: OpenBSD LiveCD
+   http://fuguita.org/?FuguIta
+ RPI:
+   http://mail-index.netbsd.org/port-arm/2016/09/29/msg003921.html
+
+More pictures are available on Togetter page:
+  http://togetter.com/li/1031383
+
+NetBSD machines at Open Source Conference 2016 Tokyo/Fall
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group members held booth
+at the Open Source Conference 2016 Tokyo/Fall on Nov. 5-6 2016:
+
+::
+
+ http://www.ospn.jp/osc2016-fall/
+ https://www.facebook.com/events/606794986162192/
+ https://www.facebook.com/NetBSD.jp/
+
+BSD BOF Presentation: 
+
+@yamori813
+ZRouter: 
+ http://qiita.com/yamori813/items/2fc5b14648029bb4730f
+
+@s_mitu
+RaspberryPI on FreeBSD:
+ https://github.com/s-mitu/RaspberryPi/blob/master/FreeBSD/Documents/FreeBSD_OSC.md
+ http://p.twipple.jp/VIkZl
+ http://p.twipple.jp/wOZzC
+
+tsutsui@
+NetBSD/dreamcast IDE HDD strikes back
+ https://speakerdeck.com/tsutsui/osc2016-tokyo-fall-netbsd-dreamcast-ide-hdd
+
+CBUG Meeting:
+ http://www.cbug.bug.gr.jp/event/20161105/index.html
+ Send Happy birthday greetings to Warner Losh.
+  https://twitter.com/ebijun/status/796144585734897664
+
+Booth:
+ http://p.twipple.jp/ZDaWS
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSC2016tokyofall.pdf
+
+The NetBSD booth exhibited the following machines:
+
+SEGA DreamCast with CF and SD expansion  
+ NetBSD Dreamcast 7.0 G1IDE+SCI SDMMC mplayer demo 
+ http://p.twipple.jp/O3lWT
+
+RPI2 Ver1.2+XM6i+NetBSD/x68k:
+ http://p.twipple.jp/8YfuA
+
+RPI2+omxplayer:
+ http://p.twipple.jp/g3ApQ
+
+NetWalker:
+ http://p.twipple.jp/1xxU7
+
+WZERO3:
+ http://p.twipple.jp/4KzUX
+
+BSD Cookies:
+ http://p.twipple.jp/2Brum
+ http://p.twipple.jp/I3UYF
+
+Demo Images:
+ RPI:
+ http://mail-index.netbsd.org/port-arm/2016/11/02/msg003954.html
+
+Donation:
+ WZERO3es WS011SH: from Tetsuko Komma (Geeklog Japan https://www.geeklog.jp/)
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcarm/WS011SH
+
+More pictures are available on Togetter page:
+  http://togetter.com/li/1044981
+
+NetBSD machines at KANSAI OPEN FORUM 2016
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group members held booth
+at the KANSAI OPEN FORUM 2016 on Nov. 11-12 2016:
+
+::
+
+ http://k-of.jp/
+ http://www.jp.NetBSD.org/
+ https://www.facebook.com/events/453144668203052/
+ https://www.facebook.com/NetBSD.jp/
+
+Booth:
+  http://p.twipple.jp/cPXcp
+
+BSD BOF
+- NetBSD/dreamcast IDE HDD again (more update from OSC2016Tokyo/Fall) by tsutsui@
+ https://speakerdeck.com/tsutsui/kof2016-netbsd-dreamcast-ide-hdd
+ http://mail-index.netbsd.org/port-dreamcast/2014/10/30/msg000265.html
+
+ G1IDE-SCIsdmmc.diff:
+ https://gist.github.com/tsutsui/57eb6c9d1c1bfc2cf7d99f98d14e1da0
+
+The NetBSD booth exhibited the following machines:
+
+- SEGA DreamCast with CF and SD expansion  
+   NetBSD Dreamcast 7.0 G1IDE+SCI SDMMC mplayer demo 
+ mplayer on X11:
+  http://p.twipple.jp/AqzlM  
+ Twitter Timeline with pkgsrc/net/sayaka + pkgsrc/x11/mlterm:mlterm-fb
+   http://p.twipple.jp/8WWtn
+
+- Running NetBSD/x68k on XM6i with Raspberry PI3 NetBSD/earmv6hf
+   http://p.twipple.jp/nCwQK
+
+- Raspberry Pi2 Xfce4+omxplayer
+    http://p.twipple.jp/Ls1Vk
+
+- SHARP Netwalker (NetBSD/earmv7hf) + Xfce4 + mikutter
+  http://p.twipple.jp/dBwjS
+
+- DoComo SigmarionII NetBSD/hpcmips
+  http://p.twipple.jp/ioyFG
+  http://p.twipple.jp/FBqUn uvm_pglistallloc failed! 
+
+- WZERO3 NetBSD/hpcarm
+  https://twitter.com/tsutsuii/status/797002143911669760/photo/1
+
+- stickers (NetBSD,mikutter,and various characters)
+  http://p.twipple.jp/KKv5B
+
+- Special Session: Implimentation of 4.4BSD luna68k by Akito Fujita
+  http://p.twipple.jp/rOoH0
+
+- Junk-Do book store NetBSD booth recomendation:
+  https://twitter.com/ebijun/status/796927073793150976
+-- UNIX Archeology by Akito Fujita
+   http://honto.jp/netstore/pd-book_27798744.html
+-- The Go Programming Language
+   http://honto.jp/netstore/pd-book_27776918.html
+-- NEW GAME! 4
+   http://honto.jp/netstore/pd-book_27852889.html
+
+Raspberry Pi running updated 2016-11-12-netbsd-raspi.img image:
+ http://mail-index.netbsd.org/port-arm/2016/11/10/msg003958.html
+
+More pictures are available on Togetter page:
+ http://togetter.com/li/1047263
+ 
+NetBSD machines at Open Source Conference 2016 Fukuoka
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group members held booth
+at the Open Source Conference 2016 Fukuoka on Nov. 19 2016:
+
+::
+
+ http://www.ospn.jp/osc2016-fukuoka/
+ http://www.jp.NetBSD.org/
+ https://www.facebook.com/NetBSD.jp/
+ https://www.facebook.com/events/637124113105108/
+
+
+Booth:
+ http://p.twipple.jp/Hv9Gi
+  
+NetBSD Fukuoka travel guide:
+ http://www.soum.co.jp/~jun/OSC2016fukuoka.pdf
+ https://github.com/ebijun/osc-demo
+ http://p.twipple.jp/ejHvV
+
+The NetBSD booth exhibited the following machines:
+- Running NetBSD/x68k on XM6i with Raspberry PI3 NetBSD/earmv6hf
+  http://p.twipple.jp/1Dw6l
+
+- Raspberry Pi2 Xfce4+omxplayer
+  http://p.twipple.jp/Q0sX7
+
+- SHARP Netwalker (NetBSD/earmv7hf) + Xfce4 + mikutter
+  http://p.twipple.jp/oxMOS
+
+- DoComo SigmarionII NetBSD/hpcmips
+  NetBSD hpcmips 201611081750Z  multiuser boot 
+           but panic with cpu_uarea_alloc: uvm_pglistalloc failed
+             http://p.twipple.jp/fkiHh
+  NetBSD hpcmips 201611210910Z  TLB miss : boot failed again
+             http://p.twipple.jp/68Ey0
+
+- WZERO3 NetBSD/hpcarm
+  http://p.twipple.jp/oxMOS
+
+
+Raspberry Pi running updated 2015-11-12-netbsd-raspi.img image:
+  http://mail-index.netbsd.org/port-arm/2016/11/10/msg003958.html
+  45min Install tutorial: http://p.twipple.jp/FwwEr
+
+More pictures are available on Togetter page:
+ http://togetter.com/li/1050258
+ 
+NetBSD machines at Open Source Conference 2016 Hiroshima
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group and XM6i Team members held booth
+at the Open Source Conference 2016 Hiroshima on Nov.27 2016:
+
+::
+
+ http://www.ospn.jp/osc2016-hiroshima/
+ https://www.facebook.com/events/181902205545763/
+ http://www.jp.NetBSD.org/
+ https://www.facebook.com/NetBSD.jp/
+
+Presentation:
+ Twitter client on X68030(68030 25MHz/12MB) by isaki@
+   http://www.pastel-flower.jp/~isaki/NetBSD/osc16hi/
+  
+PSG&PCM tunes on NetBSD/luna68k  by tsutsui@
+   https://speakerdeck.com/tsutsui/osc2016-hiroshima-psg-tunes-on-netbsd-luna68k-again
+
+Booth:
+  http://p.twipple.jp/BD6sz 
+
+NetBSD/luna68k 7.0.2 by tsutsui@
+- https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
+- LUNA has Z80 sub-processor and YM2149 sound chip
+- porting PSG Z80 sound driver for PC6001 to NetBSD/luna68k
+  LUNA PSG support code http://twitter.com/tsutsuii/status/759793635898515456
+  - play PC6001 music data on LUNA
+  - play PCG voice data via LUNA Z80+PSG
+ http://p.twipple.jp/BA9P6
+
+NetBSD/x68k
+1: X68030 (68030/25MHz,12MB)
+ twitter client: pkgsrc/net/sayaka
+ Use vala+mBedTLS to decode twitter handshake on x68k.
+ http://p.twipple.jp/lmlx0
+
+2: X68060 (68060/50MHz,128MB)
+  http://p.twipple.jp/9EhgF
+
+XM6i X68030 emulator http://xm6i.org/ by isaki@
+1. NetBSD/x68k on MacOSX 
+  http://p.twipple.jp/8BTqm
+2. NetBSD/x68k on Raspberry 3 NetBSD/earmv7hf
+  http://p.twipple.jp/s5ICg
+
+ 
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSC2016hiroshima.pdf
+
+
+Demo Images:
+ RPI:
+ http://mail-index.netbsd.org/port-arm/2016/11/23/msg003970.html
+
+More pictures are available on Togetter page:
+ http://togetter.com/li/1053125
+
+Thanx for support NetBSD booth 2016:
+ http://www.soum.co.jp/~jun/2016maps.pdf
+
+and I hope you enjoy NetBSD Advent Calendar 2016:
+ http://qiita.com/advent-calendar/2016/netbsd
+
+NetBSD machines at BIG Raspberry JAM Tokyo 2016
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group members held booth
+at the BIG Raspberry JAM Tokyo 2016 on Dec. 11 2016:
+
+::
+
+ https://raspberrypi.connpass.com/event/44902/
+ https://www.facebook.com/events/1873355159564632/
+ https://www.facebook.com/NetBSD.jp/
+
+Booth:
+ http://p.twipple.jp/ZFC3F
+
+The booth exhibited the following machines:
+
+@s_mitu
+RaspberryPI on FreeBSD:
+ https://github.com/s-mitu/RaspberryPi/blob/master/FreeBSD/Documents/FreeBSD_OSC.md
+
+FreeBSD tank 32bit version:
+ http://p.twipple.jp/os51a
+
+FreeBSD 64bit dmesg:
+ espeak can FreeBSD talk via USB audio.
+ https://github.com/s-mitu/RaspberryPi/blob/master/FreeBSD/dmesg/rpi3-smp/dmesg.txt
+
+RPI3+XM6i+
+NetBSD/x68k on XM6i on NetBSD/earmv6hf on RPI3:
+ http://p.twipple.jp/4sj2G
+
+RPI2+omxplayer:
+ http://p.twipple.jp/zsNZJ
+
+NetWalker:
+ http://p.twipple.jp/3TcXs 
+
+WZERO3:
+ http://p.twipple.jp/fEdKh
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/BIGRPI2016.pdf
+
+Demo Images:
+ http://mail-index.netbsd.org/port-arm/2016/12/10/msg004002.html
+ https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2016.rst
+
+More pictures are available on Togetter page:
+ http://togetter.com/li/1058231
+
+NetBSD machines at Open Source Conference 2017 Osaka
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group held booth
+at the Open Source Conference 2017 Osaka on Jan.28 2017:
+
+::
+
+ http://www.ospn.jp/osc2017-osaka/
+ https://www.facebook.com/events/1789923797907417/
+ http://www.jp.NetBSD.org/
+ https://www.facebook.com/NetBSD.jp/
+
+Presentation:
+
+PC6001 emulator PC6001VX on NetBSD + pkgsrc by tsutsui@
+   https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
+   http://p.twipple.jp/Y1iJu
+
+Booth:
+ http://p.twipple.jp/8ervd
+
+PC6001 PSG Play demonstration
+ http://ch.nicovideo.jp/tsutsui/blomaga/ar1165341
+
+- NEC PC6001+PC6082:
+  http://p.twipple.jp/uLJ8m
+- PC6001VX NetBSD7/i386 pkgsrc/emulators/PC6001VX
+  http://p.twipple.jp/EQtkl
+
+XM6i X68030 emulator http://xm6i.org/ 
+- NetBSD/x68k on RaspberryPI 3 NetBSD/earmv7hf
+ http://p.twipple.jp/ca3kW
+
+omxplayer+Xfce4 Raspberry PI2
+ http://p.twipple.jp/i5qyW 
+
+mikutter stickers:
+ http://p.twipple.jp/dxIun
+ 
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSC2017osaka.pdf
+
+
+Demo Images:
+RPI:
+ http://mail-index.netbsd.org/port-arm/2017/01/25/msg004087.html
+
+More pictures are available on Togetter page:
+ https://togetter.com/li/1075115
+
+NetBSD machines at Open Source Conference 2017 Hamanako
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group members held booth
+at the Open Source Conference 2017 Hamanako on Feb. 12 2017:
+
+::
+
+ http://www.ospn.jp/osc2017-hamanako/
+ https://www.facebook.com/events/1440270795987946/
+ https://www.facebook.com/NetBSD.jp/
+
+Booth:
+ http://p.twipple.jp/pEmmh
+
+The NetBSD booth exhibited the following machines:
+ - RaspberryPI 3 NetBSD/earmv6hf
+   NetBSD/x68k on XM6i X68030 emulator http://xm6i.org/
+   http://p.twipple.jp/nt0di
+   http://p.twipple.jp/IFUjB
+
+ - RaspberryPI 2 NetBSD/earmv6hf
+   Xfce4 and crontab omxplayer video output to HDMI 
+   http://p.twipple.jp/Mm9fB
+   
+ - Sharp W-ZERO3 NetBSD/hpcarm
+   http://p.twipple.jp/NxRYO
+
+ - Sharp NetWalker NetBSD/earmv7hf
+   PC9801 Emulator
+   pkgsrc/net/mikutter
+   http://p.twipple.jp/kajdg
+ 
+ - mikutter stickers:
+   http://p.twipple.jp/2TBwo
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSC2017hamanako.pdf
+
+Demo Images:
+RPI:
+ http://mail-index.netbsd.org/port-arm/2017/02/10/msg004100.html
+
+More pictures are available on Togetter page:
+ https://togetter.com/li/1080372
+
+NetBSD machines at AsiaBSDCon 2017
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+BSD Research and Japan NetBSD Users' Group members held booth
+at the AsiaBSDCon 2017  on Mar. 10-13 2017:
+
+::
+
+ http://2017.asiabsdcon.org/
+ https://www.facebook.com/events/1718621151740857/
+ https://www.bsdresearch.org/index.html.en
+ http://www.jp.NetBSD.org/
+ https://www.facebook.com/NetBSD.jp/
+
+Keynote K01: Software Stacks to enable Software-Defined Networking 
+ and Network Functions Virtualization
+Yoshihiro NAKAJIMA
+
+NetBSD Related Talk&Event in AsiaBSDCon2017
+- NetBSD Developer Summit (invited only)
+  http://wiki.netbsd.org/summits/asiabsdcon_2017_netbsd_summit/
+- NetBSD BoF
+  http://wiki.netbsd.org/summits/AsiaBSDCon_2017_NetBSD_BoF/
+
+- P01B: Bulk building in the many core era
+Joerg Sonnenberger
+
+- P02B: Addition of Ext4 Extent and Ext3 HTree DIR Read-Only Support
+  in NetBSD
+Hrishikesh
+
+- P03B: Hardening pkgsrc
+Pierre Pronchery
+
+- P08B: Portable hotplugging: NetBSD's uvm hotplug(9) API development
+Santhosh Narayanan Raju
+
+- P10B: Holding onto things in a multiprocessor world
+Taylor R Campbell
+
+See http://www.netbsd.org/gallery/presentations/ for paper and slides.
+
+Booth:
+Japan NetBSD Users' Group +
+Nagoya *BSD Users' Group +
+Kansai *BSD User Group +
+FreeBSD Workshop
+
+OMRON Luna88K/OpenBSD: @ao_kenji
+  https://www.slideshare.net/ao_kenji/
+OMRON Luna68K/NetBSD: @nullnilaki
+  http://nullnilaki.hatenablog.com/
+Go animation demonstration on RPI2 NetBSD/earmv7hf by @oshmyja
+ http://www.yagoto-urayama.jp/~oshimaya/netbsd/netbsd_goarm2.html
+
+FreeBSD+Raspberry PI+GPIO/I2C demonstration by @s_mitu
+ RPI3+GameController+English/Japanese speaking
+ FreeBSD tank :RPI0
+  https://github.com/s-mitu/RaspberryPi
+
+Demonstration BoX: by @610t
+  http://sacraya.610t.org/kbug/book/booth/singlehtml/
+RetroBSD
+Squeak+Gainer
+RPI0 + RPI0 GPIO LED load average
+Scratch x ESP8266 
+Scratch x micro:bit
+Coldfire+OpenGL
+PocketCHIP with LiteBSD 
+distcc : cluster
+ RPI + FreeBSD
+ RPI2 + NetBSD
+ RPI + NetBSD
+ BeagleBoneblackRaspBSD 
+
+SHARP X68030 by msaitoh
+NetWalker NetBSD/earmv7hf
+ZAURUS SL-C750 NetBSD/zaurus
+WZero3 NetBSD/hpcarm
+NetBSD/x68k on XM6i on NetBSD/earmv6hf on RPI3 with X68000 beep case
+RPI0
+Buffelo LinkStation + NetBSD/sandpoint
+OpenBlocks+ NetBSD/evbarm
+SHARP W-ZERO3 WS004SH
+CASIO CASSIOPEIA E-65
+HITACHI PERSONA HPW-50PAD
+Atmark Techno Armadillo-9
+Plathome OpenBlockS 266
+Cubieboard2, Allwinner A20 
+OrangePi PC, Allwinner H3
+Radxa Rock Pro, Rockchip RK3188 
+Firefly, Rockchip RK3288
+
+- AsiaBSDCon2017 Sticker by @nullnilaki 
+  https://twitter.com/nullnilaki/status/834391718321545216
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/asiabsdcon2017.pdf
+
+Demo Images:
+ RPI:
+  http://mail-index.netbsd.org/port-arm/2017/03/08/msg004111.html
+
+More pictures are available on Togetter page:
+  https://togetter.com/li/1084357
+
+NetBSD machines at Open Source Conference 2017 Tokyo/Spring
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group members held booth
+at the Open Source Conference 2017 Tokyo/Spring on Mar. 10-11 2017:
+
+::
+
+ https://www.ospn.jp/osc2017-spring/
+ https://www.facebook.com/events/1337061592993172/
+ https://www.facebook.com/NetBSD.jp/
+
+Booth:
+ http://p.twipple.jp/UshnU
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSC2017tokyospring.pdf
+
+The NetBSD booth exhibited the following machines:
+
+RPI3+XM6i+NetBSD/x68k:
+ http://p.twipple.jp/JE8XI
+ 
+RPI2+omxplayer:
+ http://p.twipple.jp/N0pWY
+
+NetWalker:
+ http://p.twipple.jp/yqbXx
+
+WZERO3:
+ http://p.twipple.jp/w2wLg
+
+GPDWIN:
+ http://p.twipple.jp/QiXVi
+
+BSD Cookies:
+ http://p.twipple.jp/y1UZP
+
+Demo Images:
+   http://mail-index.netbsd.org/port-arm/2017/03/08/msg004111.html
+
+More pictures are available on Togetter page:
+  https://togetter.com/li/1089005
+
+Continuing story: AsiaBSDCon2017 
+
+Thanx NetBSD developers, I hope you enjoy OSC2017Tokyo/spring.
+ http://p.twipple.jp/C6S7q
+
+Thanx Nagoya *BSD Users' Group staff (Noda-san/Iwase-san),
+ to support the booth.
+
+OpenBSD and NetBSD machines at Open Source Conference 2017 Nagoya
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group and 
+Nagoya *BSD Users' Group members held booth
+at the Open Source Conference 2017 Nagoya on May 27 2017:
+
+::
+
+ http://www.ospn.jp/osc2017-nagoya/
+ http://www.nagoya.bug.gr.jp/
+ http://www.jp.NetBSD.org/
+ https://www.facebook.com/events/638354339654922/
+ https://www.facebook.com/NetBSD.jp/
+
+Booth:
+ http://p.twipple.jp/q2ax3
+
+OMRON LUNA88K on OpenBSD 6.1 by Kenji Aoyama.
+  http://www.nk-home.net/~aoyama/OSC/OSC2017Nagoya-leaflet.pdf
+  https://www.slideshare.net/ao_kenji/osc2017-nagoya-76418169
+
+  Play PSG music on LUNA-88K - Utilization of I/O prosessor 
+  - HD641780, Z80 compatible I/O processor (man 4 xp)
+  - Play Music YM2149 with NEC PC6001 Z80 music driver.
+  - CP/M on HD641780
+
+PANIX: SVR4 on PC98 by Hiroyuki Nakaji
+ http://www.slideshare.net/hiroyukinakaji/panix-on-pc98
+ http://p.twipple.jp/h9A8m
+
+SHARP NetWalker (NetBSD/earmv7hf) Xfce4.12+Firefox
+ http://p.twipple.jp/0ymYm
+
+Raspberry PI 
+ NetBSD/x68k on XM6i on NetBSD/earmv6hf on RaspberryPI3
+ https://twitter.com/ebijun/status/868267993771290624
+
+@kapper1224's tons of tablets report
+ https://www.slideshare.net/kapper1224/gpdwinwindows10linux2017
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSC2017nagoya.pdf
+
+
+Demo Images:
+ Luna88K :
+  OpenBSD 6.1
+ RPI:
+  http://mail-index.netbsd.org/port-arm/2017/05/24/msg004150.html
+
+More pictures are available on Togetter page:
+  http://togetter.com/li/1114389
+
+NetBSD machines at Open Source Conference 2017 Okinawa
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Japan NetBSD Users' Group members held booth 
+at the Open Source Conference 2017 Okinawa 
+  on Jun. 18 2017:
+
+::
+
+ http://www.ospn.jp/osc2017-okinawa/
+ https://www.facebook.com/events/1821156841463423/
+ https://www.facebook.com/NetBSD.jp/
+ http://www.jp.NetBSD.org/
+
+Booth:
+ https://twitter.com/ebijun/status/875951100846788608
+
+NetBSD/x68k on XM6i on NetBSD/earmv6hf on RaspberryPI3
+ https://twitter.com/ebijun/status/875886892889235457
+ http://xm6i.org/
+
+NetBSD/earmv6hf RPI image on QEMU VEXPRESS A15 on NetBSD/i386
+ https://twitter.com/ebijun/status/875961401348546561
+ 
+WZERO3 as NetBSD/hpcarm 
+ https://twitter.com/ebijun/status/875956372428406785
+
+Testing RPI3,RPI2,RPI2-V1.2,RPI0
+ https://twitter.com/ebijun/status/875953797381537797
+ http://mail-index.netbsd.org/port-arm/2017/06/thread1.html#004185
+
+Openblocks A6
+ https://twitter.com/ebijun/status/875923622514221056
+
+NetBSD Tourist Guide:
+ https://www.soum.co.jp/~jun/OSC2017okinawa.pdf
+ 
+NetBSD BoF: 45min
+ https://twitter.com/kapper1224/status/875897698917928960
+
+Demo Images:
+ RPI:
+   http://mail-index.netbsd.org/port-arm/2017/06/12/msg004179.html
+     ... RPI3 fixes
+   http://mail-index.netbsd.org/port-arm/2017/06/20/msg004210.html
+
+More pictures are available on Togetter page:
+  https://togetter.com/li/1120958
+
+NEXT:
+ Japan NetBSD Users Group 19th annual Meeting and BoF 2017
+  http://www.jp.NetBSD.org/
+  http://www.jp.netbsd.org/ja/JP/JNUG/announce/meeting19.html
+  https://www.facebook.com/events/266188503837926/
+
+TUNE IN NEXT NetBSD,Same NetBSD-time,Same NetBSD-channel.
+ thanx to Adam West as batman, and Nicolas Joly as njoly@.
+ may rest in peace.
+
+and respects.
+---
+Jun Ebihara
