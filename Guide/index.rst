@@ -23,8 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/okinawa
+ events
+ Place/2016
  RPI/RPIupdate2017.rst
- RPI
- Place/intro
- RPI/Qemu

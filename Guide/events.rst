@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -34,7 +34,7 @@ Japan NetBSD Users’ Group
 * 回線提供：IIJ
 *  http://www.jp.NetBSD.org/
 * 年一度定期総会・BoFを実施
-* 2016/7/9
+* 2017/7/8
 * 東京 根津　東大武田先端知ビル
 * ハッシュタグ: #JNUG
 
@@ -78,7 +78,7 @@ FaceBook
 """"""""""
 
 http://www.facebook.com/NetBSD.jp/
-  366いいね: イベント欄: www.jp.NetBSD.orgと連携
+  382いいね: イベント欄: www.jp.NetBSD.orgと連携
 
 netbsd@re.soum.co.jp
 """"""""""""""""""""""
@@ -87,9 +87,9 @@ netbsd@re.soum.co.jp
   netbsd-request@re.soum.co.jp にメールください
 アーカイブ：
   http://www.re.soum.co.jp/~fukaumi/ 
-1994/11/25-: 10446通/7897日(2016/7/9まで:21年227日)
-  メールアドレス登録数　873
-  有効メールアドレス    402 
+1994/11/25-: 10495通/8262日(2017/7/8まで:22年226日)
+  メールアドレス登録数　874
+  有効メールアドレス    392 
 
   
 国内BSDユーザグループ
@@ -125,29 +125,27 @@ netbsd@re.soum.co.jp
 * pkgsrc: mikutter,mlterm,contao,libreoffice,basercms...
 
   
-2016/7/5時点のtogetterアクセス数です。
+2017/7/6時点のtogetterアクセス数です。
 
 .. csv-table::
  :widths: 165 60 10
 
  イベント名,URL,View
- オープンソースカンファレンス2016 Okinawa NetBSDブース展示の記録,http://togetter.com/li/995155,551
- オープンソースカンファレンス2016 Hokkaido NetBSDブース展示の記録,http://togetter.com/li/988853,598
- オープンソースカンファレンス2016 Nagoya NBUG & NetBSDブース展示の記録,http://togetter.com/li/980383,1050
- オープンソースカンファレンス2016 Gunma NetBSDブース展示の記録,http://togetter.com/li/975036,739
- AsiaBSDCon 2016の記録,http://togetter.com/li/947029,2737
- オープンソースカンファレンス2016 Tokyo/Spring NetBSDブース展示の記録,http://togetter.com/li/943037,1749
- オープンソースカンファレンス2016 Hamanako NetBSDブース展示の記録,http://togetter.com/li/929091,1098
- NetBSD Advent Calendar 2015の記録,http://togetter.com/li/916444,1003
- オープンソースカンファレンス2015 Tokushima NetBSDブース展示の記録,http://togetter.com/li/899923,1160
- 関西オープンソース2015 NetBSDブース展示の記録,http://togetter.com/li/896456,1855
- オープンソースカンファレンス2015 Tokyo/Fall NetBSDブース展示の記録,http://togetter.com/li/891107,1233
- オープンソースカンファレンス2015 Fukuoka NetBSDブース展示の記録,http://togetter.com/li/881732,977
- オープンソースカンファレンス2015 Hiroshima NetBSDブース展示の記録,http://togetter.com/li/875487,1675
- オープンソースカンファレンス2015 Niigata NetBSDブース展示の記録,http://togetter.com/li/869752,984
- オープンソースカンファレンス2015 Shimane NetBSDブース展示の記録,http://togetter.com/li/863726,1062
- オープンソースカンファレンス2015 Kansai@Kyoto NetBSDブース展示の記録,http://togetter.com/li/857157,4008
- 日本NetBSDユーザーグループ第十七回定期総会 および NetBSD BoF 2015 の記録,http://togetter.com/li/845730,1499
-
-
+ オープンソースカンファレンス2017 Okinawa NetBSDブース展示の記録,https://togetter.com/li/1120958,680
+ オープンソースカンファレンス2017 Nagoya NBUG & NetBSDブース展示の記録,https://togetter.com/li/1114389,1042
+ オープンソースカンファレンス2017 Tokyo/Spring NetBSDブース展示の記録,https://togetter.com/li/1089005,1235
+ AsiaBSDCon 2017の記録,https://togetter.com/li/1084357,3230
+ オープンソースカンファレンス2017 Hamanako NetBSDブース展示の記録,https://togetter.com/li/1080372,860
+ オープンソースカンファレンス2017 Osaka NetBSDブース展示の記録,https://togetter.com/li/1075115,994
+ BIG Raspberry JAM Tokyo 2016 NetBSDブース展示の記録,https://togetter.com/li/1058231,991
+ オープンソースカンファレンス2016 Hiroshima NetBSDブース展示の記録,https://togetter.com/li/1053125,1457
+ オープンソースカンファレンス2016 Fukuoka NetBSDブース展示の記録,https://togetter.com/li/1050258,442
+ 関西オープンソース2016 NetBSDブース展示の記録,https://togetter.com/li/1047263,1796
+ オープンソースカンファレンス2016 Tokyo/Fall NetBSDブース展示の記録,https://togetter.com/li/1044981,1581
+ オープンソースカンファレンス2016 Nagaoka NetBSDブース展示の記録,https://togetter.com/li/1031383,494
+ オープンソースカンファレンス2016 Shimane NetBSDブース展示の記録,https://togetter.com/li/1028314,998
+ オープンソースアンカンファレンス2016 Kanazawa NetBSDブース展示の記録,https://togetter.com/li/1017308,862
+ セキュリティ・キャンプ全国大会2016「謎マシンでNetBSDのクロス開発体験」の記録,https://togetter.com/li/1013466,1848
+ オープンソースカンファレンス2016 Kyoto NetBSDブース展示の記録,https://togetter.com/li/1005828,3320
+ 日本NetBSDユーザーグループ第十八回定期総会 および NetBSD BoF 2016 の記録,https://togetter.com/li/997708,1138
 
