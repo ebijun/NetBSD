@@ -55,7 +55,8 @@ RaspberryPIのNetBSDイメージについて
  2017/4,7.99.69,3.5.7,,,NetBSD7.1 ruby-2.3,OSuC川越,http://mail-index.netbsd.org/port-arm/2017/04/14/msg004130.html
  2017/5,7.99.72(→7.99.75),,3.8.1,,BIND-9.10.4-P8 fossil-2.2 git-base-2.13.0,OSC名古屋,http://mail-index.netbsd.org/port-arm/2017/05/24/msg004150.html
  2017/6/17,8.99.1,3.5.8,,,perl-5.26 qemu/VEXPRESS_A15カーネルからの起動 (BIND-9.10.5-P1),OSC沖縄,http://mail-index.netbsd.org/port-arm/2017/06/12/msg004179.html
- 
+ 2017/7/08,8.99.1,,,,RPI3起動タイミング修正 microSD認識エラー修正 BIND-9.10.5-P2,JNUG2017,http://mail-index.netbsd.org/port-arm/2017/06/12/msg004179.html
+
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。
 2週間くらいごとかなと答えてくれて、ああだいたいそんなものなのかと思っていました。
@@ -107,7 +108,7 @@ security.pax.mprotect.enabled
  
 On-Lapディスプレイ問題
 ---------------------
-On-LapのディスプレイでうまくXが表示できていません。
+On-LapのディスプレイでうまくXが表示できていません。→これなおってるかも。
 - HDMI Display failure on X ,On-Lap 2501M (reported from @matoken) 
     https://twitter.com/matoken/status/702656906251210753
 
