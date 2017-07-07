@@ -26,7 +26,7 @@
 Japan NetBSD Users’ Group
 -----------------------------
 * 1999年8月21日成立
-* members-ja:45人 committee:18人
+* members-ja:56人 committee:16人 admin-ja:56人
 * 日本のNetBSDユーザに便宜を図る
 * FTP/CVS/WWWサーバの管理
 * ドキュメント・WWWページ翻訳
