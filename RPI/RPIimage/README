@@ -20,7 +20,8 @@ Update:
 - Fix boot problem on some kind of microSD. 
   Disable SDR50 support
   http://mail-index.netbsd.org/source-changes/2017/06/22/msg085621.html
-  Related PR: [pullup-8 #108]
+
+  Related PR: [pullup-8 #59] -> closed.
    http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=51732
 - Enable UART0 (PL011) on GPIO header for Raspberry Pi 3 / Zero W
   http://mail-index.netbsd.org/source-changes/2017/06/17/msg085467.html
