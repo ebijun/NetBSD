@@ -1,28 +1,32 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2017-06-20/2017-06-20/g
+:1,$s/2017-07-08/2017-07-08/g
 :1,$s/8.99.1/8.99.1/g
-:1,$s/201706190250Z/201706190250Z/g
-:1,$s?2017/06/20/msg004210.html?2017/06/20/msg004210.html?
+:1,$s/201707040220Z/201707040220Z/g
+:1,$s?2017/07/07/msg004286.html?2017/07/07/msg004286.html?
 
+2017-07-08-netbsd-raspi-earmv6hf.img
 
-2017-06-20-netbsd-raspi-earmv6hf.img
+For Japan NetBSD Users Group 19th annual Meeting and BoF 2017 demonstration use,
+I've updated 2017-07-08-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-After Open Source Conference 2017 Okinawa weekend.
-I've updated 2017-06-20-netbsd-raspi-earmv6hf.img.gz for RPI.
+http://mail-index.netbsd.org/port-arm/2017/07/07/msg004286.html
 
-http://mail-index.netbsd.org/port-arm/2017/06/20/msg004210.html
-
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-06-20-earmv6hf/2017-06-20-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-07-08-earmv6hf/2017-07-08-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.1 evbarm-earmv6hf 201706190250Z rpi.img from nyftp.
-- Improve RPI3 support and merged 8.0 during OSC2017okinawa weekend.
-  - fix boot problem on some RPI3. 
-    thanx to jmcneill@ and Benjamin Lorenz.
-    http://mail-index.netbsd.org/port-arm/2017/06/16/msg004185.html
-- BIND 9.10.5-P1
-- mlterm 3.8.1
+- NetBSD-current 8.99.1 evbarm-earmv6hf 201707040220Z rpi.img from nyftp.
+- /etc/fstab: add comment,discard option.see man 8 mount.
+- Fix boot problem on some kind of microSD.
+  Disable SDR50 support
+  http://mail-index.netbsd.org/source-changes/2017/06/22/msg085621.html
+
+  Related PR: [pullup-8 #59] -> closed.
+   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=51732
+- Enable UART0 (PL011) on GPIO header for Raspberry Pi 3 / Zero W
+  http://mail-index.netbsd.org/source-changes/2017/06/17/msg085467.html
+- BIND 9.10.5-P2
+- RPI0W support.(Wi-Fi and Bluetooth still not works)
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -30,6 +34,7 @@ http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI0
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI0W
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2-1.2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
@@ -38,9 +43,12 @@ Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Problem:
-- sdhc(4) can't recognize some kind of microSD card
-  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=51732
 - dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1
+  # build gcc version issue? compiled gcc4 seems works fine.
+- pkgsrc/devel/boost-libs compile failed.
+  # compile option issue.
+- Xfce4 4.13:
+  # hang with xfce4-sessions,4.12 works fine.
 
 Security:
 - security.pax.mprotect.enabled
