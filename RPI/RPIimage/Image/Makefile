@@ -3,10 +3,10 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-07-08/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-07-15/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-8.99.1-evbarm-${ARCH}-201707040220Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.1-evbarm-${ARCH}-201707130130Z.iso
 
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
@@ -131,10 +131,10 @@ release:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
-	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
 #	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 	(cd ../boot;cp * ${MNT}/boot)
+	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}

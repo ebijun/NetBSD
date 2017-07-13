@@ -23,6 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- events
- Place/2016
+ Place/hokkaido
  RPI/RPIupdate2017.rst
+ Place/intro
