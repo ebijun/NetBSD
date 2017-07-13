@@ -38,7 +38,7 @@ dmesg:
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  updates:
- https://github.com/ebijun/NetBSD/commit/0a84bbea888b781765ef7a587be2d8e2611967cf#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/f32588988e176bb8d3dfe6ee26dc0775db7c74d3#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
 - dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1
@@ -84,7 +84,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-06-17/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-07-15/
 
 - If you use Official Package for NetBSD7.0:
 
