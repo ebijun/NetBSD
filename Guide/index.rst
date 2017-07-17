@@ -23,6 +23,15 @@
  :maxdepth: 3
  :numbered:
 
- Place/hokkaido
- RPI/RPIupdate2017.rst
+ RPI
+ RPI/RPIupdate2017
+ RPI/RPIImage
+ RPI/Omxplayer       
+ RPI/Xfce4
  Place/intro
+ guide
+ pkgsrc
+ kobo
+ WZERO3
+ hpcmips
+ X68K

@@ -47,7 +47,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'NetBSD観光ガイド'
+#project = u'NetBSD観光ガイド'
+project = u'セキュリティキャンプ2016'
 copyright = '2013-2017, Jun Ebihara'
 
 # The version info for the project you're documenting, acts as replacement for
