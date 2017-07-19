@@ -105,6 +105,8 @@ Install application: man 1 pkg_add
   # pkg_add youtube-dl
   # youtube-dl https://www.youtube.com/watch?v=wG8ZCC8IwvM
   # omxplayer *.mkv
+  MPEG-2 license key: 
+   sysctl machdep.serial and convert to hex.
 
 - Xfce4
   # pkg_add xfce4
@@ -257,7 +259,6 @@ pkgsrc Todo:
 - www/otter-browser: compiling.
 - omxplayer: sometimes core dumps.
   -> add "gpu=256" to /boot/cmdline.txt, advice from Brandon Wickelhaus.
-- omxplayer: need /proc/cpuinfo to buy MPEG-2 license key.
 
 
 =====================

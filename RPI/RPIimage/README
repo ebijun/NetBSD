@@ -41,8 +41,8 @@ Pre-installed packages:
  https://github.com/ebijun/NetBSD/commit/f32588988e176bb8d3dfe6ee26dc0775db7c74d3#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
-- dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1
-  # build gcc version issue? compiled gcc4 seems works fine.
+- dillo-3.0.5nb2 works with -O0
+  thanx Jared McNeill.
 - pkgsrc/devel/boost-libs compile failed.
   # compile option issue.
 - Xfce4 4.13: 
@@ -105,6 +105,8 @@ Install application: man 1 pkg_add
   # pkg_add youtube-dl
   # youtube-dl https://www.youtube.com/watch?v=wG8ZCC8IwvM
   # omxplayer *.mkv
+  MPEG-2 license key: 
+   sysctl machdep.serial and convert to hex.
 
 - Xfce4
   # pkg_add xfce4
@@ -161,18 +163,13 @@ Install application: man 1 pkg_add
   to avoid ImportError: cannot import name _getexif,
   use py27-Pillow package instead of py27-imaging.
 
+- firefox52
+  # pkg_add firefox52
+  # pkg_add firefox52-l10n
+  firefox52: fixed by Jared McNeill.
+   http://mail-index.netbsd.org/pkgsrc-changes/2017/07/16/msg160171.html
 
 Testing:: 
-
-- dillo
-  # pkg_add dillo
-  XXX: dillo-3.0.5nb2 start failed.
-
-- firefox
-  # pkg_add firefox
-  # pkg_add firefox-l10n
-  XXX: firefox: libmozavcodec.so: No such file or directory
-  XXX: firefox45: Segfault
 
 - midori 
   # pkg_add midori
@@ -228,9 +225,10 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
 
 Todo:
 - set2pkg: update via pkgsrc.
-- HDMI Display failure on X -- recently, works fine?
+- HDMI Display failure on X -- Fixed.
   - On-Lap 2501M (reported from @matoken) -> Checking On-Lap Displays.
     https://twitter.com/matoken/status/702656906251210753
+    https://twitter.com/matoken/status/886348730328260608
 - pkg_in/pkg_summary
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
 - https://github.com/isaki68k/sayaka: PHP/vala based twitter client.
@@ -261,7 +259,6 @@ pkgsrc Todo:
 - www/otter-browser: compiling.
 - omxplayer: sometimes core dumps.
   -> add "gpu=256" to /boot/cmdline.txt, advice from Brandon Wickelhaus.
-- omxplayer: need /proc/cpuinfo to buy MPEG-2 license key.
 
 
 =====================
