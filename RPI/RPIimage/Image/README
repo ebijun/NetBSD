@@ -1,22 +1,21 @@
-VERSION: :1,$s/2017-07-15/2017-07-15/g
-ISO:     :1,$s/201707130130Z/201707130130Z/g
+VERSION: :1,$s/2017-08-04/2017-08-04/g
+ISO:     :1,$s/201707301430Z/201707301430Z/g
 NetBSD:  :1,$s/8.99.1/8.99.1/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-07-15-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2017-08-04-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-07-15-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-08-04-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-07-15-earmv6hf/2017-07-15-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-07-15-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-04-earmv6hf/2017-08-04-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-04-earmv6hf/MD5
 
 Update:
-- NetBSD-current 8.99.1 evbarm-earmv6hf 201707130130Z rpi.img from nyftp.
-- mikutter-3.5.9
+- NetBSD-current 8.99.1 evbarm-earmv6hf 201707301430Z rpi.img from nyftp.
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -24,7 +23,7 @@ Overview:
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-07-15-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-04-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -41,6 +40,8 @@ Pre-installed packages:
  https://github.com/ebijun/NetBSD/commit/f32588988e176bb8d3dfe6ee26dc0775db7c74d3#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
+- sdhost: 
+  with 201708010210Z,only RPI3 can mount sdcard,others failed.
 - dillo-3.0.5nb2 works with -O0
   thanx Jared McNeill.
 - pkgsrc/devel/boost-libs compile failed.
@@ -84,7 +85,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-07-15/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-08-04/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -92,7 +93,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-07-15-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-04-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -263,12 +264,12 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2017 Hokkaido demonstration use, 
+For Open Source Conference 2017 Kyoto demonstration use, 
 I've updated raspberry-pi image.
 
-https://www.ospn.jp/osc2017-do/
-https://www.ospn.jp/osc2017-do/modules/eguide/event.php?eid=7
-http://www.soum.co.jp/~jun/OSC2017hokkaido.pdf
+https://www.ospn.jp/osc2017-kyoto/
+https://www.ospn.jp/osc2017-kyoto/modules/eguide/event.php?eid=6
+http://www.soum.co.jp/~jun/OSC2017kyoto.pdf
 https://www.facebook.com/NetBSD.jp 
 
 - NetBSD 8.99.1 earmv6hf rpi.img.gz base
@@ -309,7 +310,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-07-15/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-08-04/
 
 Installed Packages:
   bash
