@@ -1,22 +1,21 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2017-07-15/2017-07-15/g
+:1,$s/2017-08-04/2017-08-04/g
 :1,$s/8.99.1/8.99.1/g
-:1,$s/201707040220Z/201707130130Z/g
-:1,$s?2017/07/07/msg004286.html?2017/07/13/msg004307.html?
+:1,$s/201707301430Z/201707301430Z/g
+:1,$s?2017/08/02/msg004344.html?2017/08/02/msg004344.html?
 
-2017-07-15-netbsd-raspi-earmv6hf.img
+2017-08-04-netbsd-raspi-earmv6hf.img
 
 For OpenSourceConference 2017 demonstration use,
-I've updated 2017-07-15-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-08-04-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2017/07/07/msg004286.html
+http://mail-index.netbsd.org/port-arm/2017/08/02/msg004344.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-07-15-earmv6hf/2017-07-15-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-04-earmv6hf/2017-08-04-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.1 evbarm-earmv6hf 201707040220Z rpi.img from nyftp.
-- mikutter-3.5.9
+- NetBSD-current 8.99.1 evbarm-earmv6hf 201707301430Z rpi.img from nyftp.
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -33,11 +32,15 @@ Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Problem:
-- dillo-3.0.5nb2 boot fails on earmv6hf,backout dillo-3.0.5nb1
-  # build gcc version issue? compiled gcc4 seems works fine.
+- sdhost: 
+  with 201708010210Z,only RPI3 can mount sdcard,others failed.
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-04-earmv6hf/sdhost/
 - pkgsrc/devel/boost-libs compile failed.
   # compile option issue.
-- Xfce4 4.13:
+- webkit24-gtk-2.4.11nb9 compile failed.
+- dillo-3.0.5nb2 works with -O0
+  thanx Jared McNeill.
+- Xfce4 4.13: 
   # hang with xfce4-sessions,4.12 works fine.
 
 Security:
