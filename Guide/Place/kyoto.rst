@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -45,7 +45,9 @@
  2013 Kansai＠Kyoto,8/2-8/3,1300,54,京都リサーチパーク
  2014 Kansai＠Kyoto,8/1-2,1200,51,京都リサーチパーク
  2015 Kansai＠Kyoto,8/7-8,1150,59,京都リサーチパーク
- 2016 Kyoto,7/29-30,,59,京都リサーチパーク
+ 2016 Kyoto,7/29-30,1000,59,京都リサーチパーク
+ 2017 Kyoto,8/4-5,,49,京都リサーチパーク
+
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -72,9 +74,9 @@
  喫茶ルナ,東向日,http://www.openstreetmap.org/way/203043949
  ルナ美容院,西向日,http://www.openstreetmap.org/way/203450773
  島原温泉,丹波口,恵那のラジウム温泉
- メトロ,丸太町,2016/7/29はシモーヌ深雪様 30日がMYTH
+ メトロ,丸太町,2017/8/4はContaKt 5日がBORN FREE
  ソワレ,祇園,テレビカーで着いたら2階でケーキセット
- 磔磔,筋屋町,2016/7/29 EBBY(じゃがたら) 30 マークフリス
+ 磔磔,筋屋町,2017/8/4　木村充揮 近藤房之助 金子マリ 8/5 木村充揮 奇妙礼太郎 ヨモギ
  奥満笑屋,丸太町,京都町家麦酒。キンシ正宗堀野記念館併設　
  efish,五条大橋,アップルのデザイナーだった西堀晋さんのカフェ
  ハイファイ堂,京都市役所,オーディオ機器中心
@@ -92,7 +94,7 @@
  京アニショップ,木幡,1658丹波口-17:07奈良線-1728木幡
  きんせ旅館,島原,築250年 カフェ&サロン 
  エンゲルスガール,中堂寺,櫛笥町５−２４ 14:00くらい-22:00くらい
- 
+ 慈恩弘国,東寺,金土　18:00-22:30 慈愛と恩恵に満ち満ちた弘法さまのお国（原文ママ 
 	  
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,6 +106,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 111,OSC2017京都,http://www.soum.co.jp/~jun/OSC2017kyoto.pdf
  92,OSC2016京都,http://www.soum.co.jp/~jun/OSC2016kyoto.pdf
  75,OSC2015京都,http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
  61,OSC2014京都,http://www.soum.co.jp/~jun/OSC2014kyoto.pdf
@@ -118,7 +121,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2016京都 NetBSDブース展示の記録,http://togetter.com/li/
+ OSC2017京都 NetBSDブース展示の記録,http://togetter.com/li/
+ OSC2016京都 NetBSDブース展示の記録,http://togetter.com/li/1005828
  OSC2015京都 NetBSDブース展示の記録,http://togetter.com/li/857157
  OSC2014京都 NetBSDブース展示の記録,http://togetter.com/li/700617
  OSC2013京都 NetBSDブース展示の記録,http://togetter.com/li/542885
@@ -164,6 +168,32 @@ OSC京都展示物
 #. Squeak on hpcmips 
 #. OneSeg TV recording with hpcmips,
 #. bc benchmark time x electricity consumption 
+
+
+2016年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2016/07/29/1469756522001.jpg
+.. image::  ../Picture/2016/07/29/1469759878054.jpg
+.. image::  ../Picture/2016/07/29/DSC_2050.JPG
+.. image::  ../Picture/2016/07/29/DSC_2055.JPG
+.. image::  ../Picture/2016/07/29/DSC_2058.JPG
+.. image::  ../Picture/2016/07/29/DSC_2059.JPG
+.. image::  ../Picture/2016/07/29/DSC_2061.JPG
+.. image::  ../Picture/2016/07/29/DSC_2063.JPG
+.. image::  ../Picture/2016/07/29/DSC_2076.JPG
+.. image::  ../Picture/2016/07/29/DSC_2079.JPG
+.. image::  ../Picture/2016/07/29/DSC_2081.JPG
+.. image::  ../Picture/2016/07/30/DSC_2105.JPG
+.. image::  ../Picture/2016/07/30/DSC_2110.JPG
+.. image::  ../Picture/2016/07/30/DSC_2111.JPG
+.. image::  ../Picture/2016/07/30/DSC_2112.JPG
+.. image::  ../Picture/2016/07/30/DSC_2114.JPG
+.. image::  ../Picture/2016/07/30/DSC_2115.JPG
+.. image::  ../Picture/2016/07/30/DSC_2119.JPG
+.. image::  ../Picture/2016/07/30/DSC_2121.JPG
+.. image::  ../Picture/2016/07/30/DSC_2122.JPG
+.. image::  ../Picture/2016/07/30/DSC_2126.JPG
 
 2015年
 ~~~~~~~~~~~~~~~~~~

@@ -47,8 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-#project = u'NetBSD観光ガイド'
-project = u'セキュリティキャンプ'
+project = u'NetBSD観光ガイド'
 copyright = '2013-2017, Jun Ebihara'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -283,7 +282,7 @@ texinfo_documents = [
 epub_title = 'NetBSD Kanko Guide'
 epub_author = 'Jun Ebihara'
 epub_publisher = 'Jun Ebihara'
-epub_copyright = '2016, Jun Ebihara'
+epub_copyright = '2017, Jun Ebihara'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = 'NetBSD Kanko Guide'
