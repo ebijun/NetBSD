@@ -1,0 +1,17 @@
+
+for i in `grep -hv \# List `
+do
+	echo $i
+	#(cd /usr/pkgsrc/*/$i;make package-install)
+	#(cd /mnt/usr/pkgsrc/packages/All;pkg_add $i)
+	pkg_add -f $i
+done
+
+# install rootcerts for https 
+# /usr/pkgsrc/security/mozilla-rootcerts/MESSAGE
+mozilla-rootcerts install
+dmesg    > /root/dmesg
+pkg_info |sort  > /root/pkginfo
+
+# make entropy-file
+/etc/rc.d/random_seed stop

@@ -1,0 +1,2 @@
+
+(cd /usr/tests; atf-run | atf-report -o csv:/root/atf-`uname -p`-`uname -r`-`date +%Y%m%d`.csv)
