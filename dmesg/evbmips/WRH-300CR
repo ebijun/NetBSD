@@ -1,93 +1,113 @@
-# cu -57600 -l /dev/dtyU0
-Connected
-U-Boot 1.1.3 (Mar 13 2014 - 20:21:36)
-Board: Ralink APSoC DRAM:  64 MB
-relocate_code Pointer at: 83fb8000
-enable ephy clock...done. rf reg 29 = 5
-SSC disabled.
-spi_wait_nsec: 29 
-spi device id: c2 20 18 c2 20 (2018c220)
-find flash: MX25L12805D
-raspi_read: from:30000 len:1000 
-raspi_read: from:30000 len:1000 
-############################################# 
-WiFi-DAS UBoot Version: 339_u4.0.1
---------------------------------------------- 
-============================================ 
-Ralink UBoot Version: 4.2.S.1
--------------------------------------------- 
-ASIC 7620_MP (Port5<->None)
-DRAM component: 512 Mbits DDR, width 16
-DRAM bus: 16 bit
-Total memory: 64 MBytes
-Flash component: SPI Flash
-Date:Mar 13 2014  Time:20:21:36
-============================================ 
-icache: sets:512, ways:4, linesz:32 ,total:65536
-dcache: sets:256, ways:4, linesz:32 ,total:32768 
- ##### The CPU freq = 580 MHZ #### 
- estimate memory size =64 Mbytes
-Please choose the operation: 
-   1: Load system code to SDRAM via TFTP. 
-   2: Load system code then write to Flash via TFTP. 
-   3: Boot system code via Flash (default).
-   4: Entr boot command line interface.
-   5: Load recover system code then write to Flash via TFTP. 
-   6: Boot recover system code via Flash.
-   7: Load Boot Loader code then write to Flash via Serial. 
-   9: Load Boot Loader code then write to Flash via TFTP. 
-You choosed 4
-raspi_read: from:40028 len:6 
-4: System Enter Boot Command Line Interface.
-U-Boot 1.1.3 (Mar 13 2014 - 20:21:36)
-MT7620 # 44
-ftpboot 
- netboot_common, argc= 1 
- NetTxPacket = 0x83FE4880 
- KSEG1ADDR(NetTxPacket) = 0xA3FE4880 
- NetLoop,call eth_halt ! 
- NetLoop,call eth_init ! 
-Trying Eth0 (10/100-M)
- Waitting for RX_DMA_BUSY status Start... done
- ETH_STATE_ACTIVE!! 
-*** Warning: no boot file name; using 'test.bin'
-TFTP from server 10.10.10.3; our IP address is 10.10.10.123
-Filename 'test.bin'.
- TIMEOUT_COUNT=10,Load address: 0x80100000
-Loading: *
-T Got ARP REPLY, set server/gtwy eth addr (f0:de:f1:5a:a9:8c)
-Got it
-#################################################################
-	 #################################################################
-	 #################################################################
-	 #################################################################
-	 #################################################################
-	 #################################################################
-	 #################################################################
-	 #################################################################
-	 #################################################################
-	 #################################################################
-	 #################################################################
-	 #############################
-done
-Bytes transferred = 3808336 (3a1c50 hex)
-NetBootFileXferSize= 003a1c50
+U-Boot 1.1.3 (Mar 13 2014 - 20:21:36
+
+Board: Ralink APSoC DRAM:  64 M
+relocate_code Pointer at: 83fb800
+enable ephy clock...done. rf reg 29 =
+SSC disabled
+*****************************
+Software System Reset Occurre
+*****************************
+spi_wait_nsec: 29
+spi device id: c2 20 18 c2 20 (2018c220
+find flash: MX25L12805
+raspi_read: from:30000 len:1000
+raspi_read: from:30000 len:1000
+#############################################
+WiFi-DAS UBoot Version: 339_u4.0.
+---------------------------------------------
+============================================
+Ralink UBoot Version: 4.2.S.
+--------------------------------------------
+ASIC 7620_MP (Port5<->None
+DRAM component: 512 Mbits DDR, width 1
+DRAM bus: 16 bi
+Total memory: 64 MByte
+Flash component: SPI Flas
+Date:Mar 13 2014  Time:20:21:3
+============================================
+icache: sets:512, ways:4, linesz:32 ,total:6553
+dcache: sets:256, ways:4, linesz:32 ,total:32768
+
+ ##### The CPU freq = 580 MHZ ####
+ estimate memory size =64 Mbyte
+
+Please choose the operation:
+   1: Load system code to SDRAM via TFTP.
+   2: Load system code then write to Flash via TFTP.
+   3: Boot system code via Flash (default)
+   4: Entr boot command line interface
+   5: Load recover system code then write to Flash via TFTP.
+   6: Boot recover system code via Flash
+   7: Load Boot Loader code then write to Flash via Serial.
+   9: Load Boot Loader code then write to Flash via TFTP.
+
+You choosed
+
+ 0
+raspi_read: from:40028 len:6
+
+
+4: System Enter Boot Command Line Interface
+
+U-Boot 1.1.3 (Mar 13 2014 - 20:21:36
+MT7620 # 4tftpboot
+
+ netboot_common, argc= 1
+
+ NetTxPacket = 0x83FE4880
+
+ KSEG1ADDR(NetTxPacket) = 0xA3FE4880
+
+ NetLoop,call eth_halt !
+
+ NetLoop,call eth_init !
+Trying Eth0 (10/100-M
+
+ Waitting for RX_DMA_BUSY status Start... don
+
+
+ ETH_STATE_ACTIVE!!
+*** Warning: no boot file name; using 'test.bin
+TFTP from server 10.10.10.3; our IP address is 10.10.10.12
+Filename 'test.bin'
+
+ TIMEOUT_COUNT=10,Load address: 0x8010000
+Loading: *T Got ARP REPLY, set server/gtwy eth addr (f0:de:f1:5a:a9:8c
+Got i
+################################################################
+	 ################################################################
+	 ################################################################
+	 ################################################################
+	 ################################################################
+	 ################################################################
+	 ################################################################
+	 ################################################################
+	 ################################################################
+	 ################################################################
+	 ################################################################
+	 ############################
+don
+Bytes transferred = 3808336 (3a1c50 hex
+NetBootFileXferSize= 003a1c5
 MT7620 # boot
-## Booting image at 80100000 ...
-   Image Name:   evbmips 8.99.1 (ZYXELKX)
-   Image Type:   MIPS NetBSD Kernel Image (uncompressed)
-   Data Size:    3808272 Bytes =  3.6 MB
-   Load Address: 80010000
-   Entry Point:  80010000
-   Verifying Checksum ... OK
-No initrd
-## Transferring control to Linux (at address 80010000) ...
-## Giving linux memsize in MB, 64
-Starting kernel ...
+## Booting image at 80100000 ..
+   Image Name:	 evbmips 8.99.1 (ZYXELKX
+   Image Type:	 MIPS NetBSD Kernel Image (uncompressed
+   Data Size:	 3808272 Bytes =  3.6 M
+   Load Address: 8001000
+   Entry Point:	 8001000
+   Verifying Checksum ... O
+O
+No initr
+## Transferring control to Linux (at address 80010000) ..
+## Giving linux memsize in MB, 6
+
+Starting kernel ..
+
 MIPS32/64 params: cpu arch: 128
-MIPS32/64 params: TLB entries: 32
-MIPS32/64 params: Icache: line=32, total=65536, ways=4, sets=512, colors=2
-MIPS32/64 params: Dcache: line=32, total=32768, ways=4, sets=256, colors=1
+IPS32/64 params: TLB entries: 32
+IPS32/64 params: Icache: line=32, total=65536, ways=4, sets=512, colors=2
+IPS32/64 params: Dcache: line=32, total=32768, ways=4, sets=256, colors=1
 mips_fixup_stubs: 6227 fixups done in 7130268 cycles
 phys segment: 0x4000000 @ 0
 adding 0xe000 @ 0x2000 to freelist 0
@@ -96,12 +116,13 @@ Enabled early console
 Loaded initial symtab at 0x803549bc, strtab at 0x80382f4c, # entries 11286
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
-    The NetBSD Foundation, Inc.  All rights reserved.
+    The NetBSD Foundation, Inc.	 All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
+
 NetBSD 8.99.1 (ZYXELKX) #1: Mon Aug 14 15:09:35 JST 2017
 	jun@amix201.soum.co.jp:/usr/obj/sys/arch/evbmips/compile/ZYXELKX
-MT7620
+T7620
 total memory = 65536 KB
 avail memory = 60880 KB
 mainbus0 (root): Mediatek MT7620 System Bus
@@ -136,11 +157,65 @@ umass0 at uhub2 port 1 configuration 1 interface 0
 umass0: Generic (0x58f) Flash Card Reader/Writer (0x6459), rev 2.00/1.00, addr 3
 scsibus0 at umass0: 2 targets, 2 luns per target
 sd0 at scsibus0 target 0 lun 0: <Generic-, Multiple Reader, 1.07> disk removable
-sd0: drive offline
+sd0: fabricating a geometry
+sd0: 7580 MB, 7580 cyl, 64 head, 32 sec, 512 bytes/sect x 15523840 sectors
 sd1 at scsibus0 target 0 lun 1: <Generic-, MicroSD/M2, 1.08> disk removable
 sd1: drive offline
 uhub0: device problem, disabling port 1
 WARNING: 1 error while detecting hardware; check system log.
-root device: 
-use one of: reth0 sd0[a-p] sd1[a-p] ddb halt reboot
-root device: 
+root device: sd0
+dump device (default sd0b):
+file system (default generic):
+root on sd0a dumps on sd0b
+sd0: fabricating a geometry
+sd0: 11710464 trailing sectors not covered by disklabel
+sd0: 11710464 trailing sectors not covered by disklabel
+mountroot: trying ffs...
+root file system type: ffs
+kern.module.path=/stand/evbmips/8.99.1/modules
+WARNING: no TOD clock present
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+init path (default /sbin/init):
+init: copying out path `/sbin/init' 11
+pid 1(init): ABI set to O32 (e_flags=0x1007)
+Tue Aug 15 04:22:21 JST 2017
+Starting root file system check:
+/dev/rsd0a: file system is clean; not checking
+swapctl: setting dump device to /dev/sd0b
+swapctl: adding /dev/sd0b as swap device at priority 0
+Starting file system checks:
+Setting tty flags.
+Setting sysctl variables:
+ddb.onpanic: 1 -> 0
+Starting network.
+Hostname: evbmips
+Configuring network interfaces:.
+Adding interface aliases:.
+Waiting for DAD to complete for statically configured addresses...
+ounting all file systems...
+mount_ptyfs: ptyfs on /dev/pts: Operation not supported by device
+/etc/rc.d/mountall exited with code 1
+swapctl: setting dump device to /dev/sd0b
+Starting local daemons:.
+^C/etc/rc.d/postfix terminated with signal 2
+The following components reported failures:
+    /etc/rc.d/mountall /etc/rc.d/postfix
+See /var/run/rc.log for more information.
+Tue Aug 15 04:22:31 JST 2017
+
+NetBSD/evbmips (evbmips) (console)
+
+login: root
+Last login: Tue Aug 15 04:11:10 2017 on console
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
+    The NetBSD Foundation, Inc.	 All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 8.99.1 (ZYXELKX) #1: Mon Aug 14 15:09:35 JST 2017
+rs is not properly set up,
+use the web interface at: http
+We recommend that you create a non-root account and use su(1) for root access.
+#
