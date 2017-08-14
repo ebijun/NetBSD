@@ -1,0 +1,146 @@
+# cu -57600 -l /dev/dtyU0
+Connected
+U-Boot 1.1.3 (Mar 13 2014 - 20:21:36)
+Board: Ralink APSoC DRAM:  64 MB
+relocate_code Pointer at: 83fb8000
+enable ephy clock...done. rf reg 29 = 5
+SSC disabled.
+spi_wait_nsec: 29 
+spi device id: c2 20 18 c2 20 (2018c220)
+find flash: MX25L12805D
+raspi_read: from:30000 len:1000 
+raspi_read: from:30000 len:1000 
+############################################# 
+WiFi-DAS UBoot Version: 339_u4.0.1
+--------------------------------------------- 
+============================================ 
+Ralink UBoot Version: 4.2.S.1
+-------------------------------------------- 
+ASIC 7620_MP (Port5<->None)
+DRAM component: 512 Mbits DDR, width 16
+DRAM bus: 16 bit
+Total memory: 64 MBytes
+Flash component: SPI Flash
+Date:Mar 13 2014  Time:20:21:36
+============================================ 
+icache: sets:512, ways:4, linesz:32 ,total:65536
+dcache: sets:256, ways:4, linesz:32 ,total:32768 
+ ##### The CPU freq = 580 MHZ #### 
+ estimate memory size =64 Mbytes
+Please choose the operation: 
+   1: Load system code to SDRAM via TFTP. 
+   2: Load system code then write to Flash via TFTP. 
+   3: Boot system code via Flash (default).
+   4: Entr boot command line interface.
+   5: Load recover system code then write to Flash via TFTP. 
+   6: Boot recover system code via Flash.
+   7: Load Boot Loader code then write to Flash via Serial. 
+   9: Load Boot Loader code then write to Flash via TFTP. 
+You choosed 4
+raspi_read: from:40028 len:6 
+4: System Enter Boot Command Line Interface.
+U-Boot 1.1.3 (Mar 13 2014 - 20:21:36)
+MT7620 # 44
+ftpboot 
+ netboot_common, argc= 1 
+ NetTxPacket = 0x83FE4880 
+ KSEG1ADDR(NetTxPacket) = 0xA3FE4880 
+ NetLoop,call eth_halt ! 
+ NetLoop,call eth_init ! 
+Trying Eth0 (10/100-M)
+ Waitting for RX_DMA_BUSY status Start... done
+ ETH_STATE_ACTIVE!! 
+*** Warning: no boot file name; using 'test.bin'
+TFTP from server 10.10.10.3; our IP address is 10.10.10.123
+Filename 'test.bin'.
+ TIMEOUT_COUNT=10,Load address: 0x80100000
+Loading: *
+T Got ARP REPLY, set server/gtwy eth addr (f0:de:f1:5a:a9:8c)
+Got it
+#################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #############################
+done
+Bytes transferred = 3808336 (3a1c50 hex)
+NetBootFileXferSize= 003a1c50
+MT7620 # boot
+## Booting image at 80100000 ...
+   Image Name:   evbmips 8.99.1 (ZYXELKX)
+   Image Type:   MIPS NetBSD Kernel Image (uncompressed)
+   Data Size:    3808272 Bytes =  3.6 MB
+   Load Address: 80010000
+   Entry Point:  80010000
+   Verifying Checksum ... OK
+No initrd
+## Transferring control to Linux (at address 80010000) ...
+## Giving linux memsize in MB, 64
+Starting kernel ...
+MIPS32/64 params: cpu arch: 128
+MIPS32/64 params: TLB entries: 32
+MIPS32/64 params: Icache: line=32, total=65536, ways=4, sets=512, colors=2
+MIPS32/64 params: Dcache: line=32, total=32768, ways=4, sets=256, colors=1
+mips_fixup_stubs: 6227 fixups done in 7130268 cycles
+phys segment: 0x4000000 @ 0
+adding 0xe000 @ 0x2000 to freelist 0
+adding 0x3c30000 @ 0x3d0000 to freelist 0
+Enabled early console
+Loaded initial symtab at 0x803549bc, strtab at 0x80382f4c, # entries 11286
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+NetBSD 8.99.1 (ZYXELKX) #1: Mon Aug 14 15:09:35 JST 2017
+	jun@amix201.soum.co.jp:/usr/obj/sys/arch/evbmips/compile/ZYXELKX
+MT7620
+total memory = 65536 KB
+avail memory = 60880 KB
+mainbus0 (root): Mediatek MT7620 System Bus
+cpu0 at mainbus0: 580.00MHz (hz cycles = 2900000, delay divisor = 290)
+cpu0: MIPS 24KE (0x19650) Rev. 80 with software emulated floating point
+cpu0: 32 TLB entries, 256MB max page size
+cpu0: 64KB/32B 4-way set-associative L1 instruction cache
+cpu0: 32KB/32B 4-way set-associative write-back L1 data cache
+rwdog0 at mainbus0: Ralink watchdog controller
+rwdog0: max period 22 sec.
+rwdog0: KTICKLE mode, period 10 sec.
+rgpio0 at mainbus0: Ralink GPIO controller
+gpio0 at rgpio0: 98 pins
+ri2c0 at mainbus0: Ralink I2C controller
+iic0 at ri2c0: I2C bus
+com0 at mainbus0: Au1X00 UART, working fifo
+com0: console
+ohci0 at mainbus0: OHCI USB controller
+ohci0: OHCI version 1.0, legacy support
+usb0 at ohci0: USB revision 1.0
+ehci0 at mainbus0: EHCI USB controller
+ehci0: companion ohci0
+ehci0: 1 companion controller, 1 port: ohci0
+usb1 at ehci0: USB revision 2.0
+reth0 at mainbus0: Ralink Ethernet
+rpci0 at mainbus0: Ralink PCIe Controller
+uhub0 at usb0: Ralink (0x1814) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb1: Ralink (0x1814) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub2 at uhub1 port 1: vendor 058f (0x58f) product 6254 (0x6254), class 9/0, rev 2.00/1.00, addr 2
+uhub2: single transaction translator
+umass0 at uhub2 port 1 configuration 1 interface 0
+umass0: Generic (0x58f) Flash Card Reader/Writer (0x6459), rev 2.00/1.00, addr 3
+scsibus0 at umass0: 2 targets, 2 luns per target
+sd0 at scsibus0 target 0 lun 0: <Generic-, Multiple Reader, 1.07> disk removable
+sd0: drive offline
+sd1 at scsibus0 target 0 lun 1: <Generic-, MicroSD/M2, 1.08> disk removable
+sd1: drive offline
+uhub0: device problem, disabling port 1
+WARNING: 1 error while detecting hardware; check system log.
+root device: 
+use one of: reth0 sd0[a-p] sd1[a-p] ddb halt reboot
+root device: 
