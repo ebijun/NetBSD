@@ -1,0 +1,253 @@
+Connected
+
+U-Boot SPL 2017.07 (Aug 15 2017 - 11:54:39)
+DRAM: 512 MiB
+Trying to boot from MMC1
+
+
+U-Boot 2017.07 (Aug 15 2017 - 11:54:39 +0000) Allwinner Technology
+
+CPU:   Allwinner H3 (SUN8I 1680)
+Model: Xunlong Orange Pi One
+DRAM:  512 MiB
+MMC:   SUNXI SD/MMC: 0
+In:    serial
+Out:   serial
+Err:   serial
+Net:   phy interface0
+eth0: ethernet@1c30000
+starting USB...
+USB0:	USB EHCI 1.00
+USB1:	USB OHCI 1.0
+scanning bus 0 for devices... 1 USB Device(s) found
+scanning bus 1 for devices... 2 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+Hit any key to stop autoboot:  210
+reading netbsd-SUNXI.ub
+6685140 bytes read in 321 ms (19.9 MiB/s)
+reading sun8i-h3-orangepi-one.dtb
+15460 bytes read in 44 ms (342.8 KiB/s)
+## Booting kernel from Legacy Image at 42000000 ...
+   Image Name:	 NetBSD/sunxi 8.99.1
+   Image Type:	 ARM Linux Kernel Image (uncompressed)
+   Data Size:	 6685076 Bytes = 6.4 MiB
+   Load Address: 40008000
+   Entry Point:	 40008000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 43000000
+   Booting using the fdt blob at 0x43000000
+   Loading Kernel Image ... OK
+   Loading Device Tree to 49ff9000, end 49fffc63 ... OK
+
+Starting kernel ...
+
+[ Kernel symbol table missing! ]
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
+    The NetBSD Foundation, Inc.	 All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 8.99.1 (SUNXI) #0: Mon Aug 14 12:51:11 UTC 2017
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/SUNXI
+total memory = 512 MB
+avail memory = 499 MB
+sysctl_createv: sysctl_create(machine_arch) returned 17
+armfdt0 (root)
+fdt0 at armfdt0: Xunlong Orange Pi One
+fdt1 at fdt0
+fdt2 at fdt0
+cpus0 at fdt0
+cpu0 at cpus0: Cortex-A7 r0p5 (Cortex V7A core)
+cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu0: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu0: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu0: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu1 at cpus0
+cpu2 at cpus0
+cpu3 at cpus0
+gic0 at fdt1: GIC
+armgic0 at gic0: Generic Interrupt Controller, 160 sources (150 valid)
+armgic0: 16 Priorities, 128 SPIs, 7 PPIs, 15 SGIs
+fclock0 at fdt2: 24000000 Hz fixed clock
+fclock1 at fdt2: 32768 Hz fixed clock
+fclock2 at fdt2: 16000000 Hz fixed clock
+gtmr0 at fdt0: Generic Timer
+armgtmr0 at gtmr0: ARMv7 Generic 64-bit Timer (24000 kHz)
+armgtmr0: interrupting on irq 27
+sunxigpio0 at fdt1: PIO
+sunxigpio0: unknown pin name 'PB9'
+gpio0 at sunxigpio0: 94 pins
+sunxigpio1 at fdt1: PIO
+sunxigpio0: unknown pin name 'PB9'
+gpio1 at sunxigpio1: 12 pins
+sun8ih3ccu0 at fdt1: H3 CCU
+fregulator0 at fdt0: vcc3v3
+fregulator1 at fdt0: usb0-vbus
+fregulator2 at fdt0: vcc3v0
+fregulator3 at fdt0: vcc5v0
+sunxiusbphy0 at fdt1: USB PHY
+sun6idma0 at fdt1: DMA controller (12 channels)
+sun6idma0: interrupting on GIC irq 82
+h3codec0 at fdt1: H3 Audio Codec (analog part)
+/soc/clock@1f01400 at fdt1 not configured
+psci0 at fdt0: PSCI 0.1
+gpioleds0 at fdt0: orangepi:green:pwr orangepi:red:status
+gpiokeys0 at fdt0: sw4
+sunximmc0 at fdt1: SD/MMC controller
+sunximmc0: interrupting on GIC irq 92
+/soc/usb@01c19000 at fdt1 not configured
+ehci0 at fdt1: EHCI
+ehci0: interrupting on GIC irq 104
+ehci0: 1 companion controller, 1 port
+usb0 at ehci0: USB revision 2.0
+ohci0 at fdt1: OHCI
+ohci0: interrupting on GIC irq 105
+ohci0: OHCI version 1.0
+usb1 at ohci0: USB revision 1.0
+ehci1 at fdt1: EHCI
+ehci1: interrupting on GIC irq 106
+ehci1: 1 companion controller, 1 port
+usb2 at ehci1: USB revision 2.0
+ohci1 at fdt1: OHCI
+ohci1: interrupting on GIC irq 107
+ohci1: OHCI version 1.0
+usb3 at ohci1: USB revision 1.0
+/soc/timer@01c20c00 at fdt1 not configured
+sunxiwdt0 at fdt1: Watchdog
+sunxiwdt0: default watchdog period is 16 seconds
+com0 at fdt1: ns16550a, working fifo
+com0: console
+com0: interrupting on GIC irq 32
+sunxirtc0 at fdt1: RTC
+cpu1: Cortex-A7 r0p5 (Cortex V7A core)
+cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu3: Cortex-A7 r0p5 (Cortex V7A core)
+cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu2: Cortex-A7 r0p5 (Cortex V7A core)
+cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+sdmmc0 at sunximmc0
+uhub0 at usb0: Generic (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub1 at usb1: Generic (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb2: Generic (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub3 at usb3: Generic (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+sdmmc0: SD card status: 4-bit, C6
+ld0 at sdmmc0: <0x89:0x0303:NCard:0x10:0x15901a98:0x0ac>
+ld0: 7659 MB, 3890 cyl, 64 head, 63 sec, 512 bytes/sect x 15685632 sectors
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+ehci1: handing over full speed device on port 1 to companion controller
+WARNING: 2 errors while detecting hardware; check system log.
+boot device: ld0
+root on ld0a dumps on ld0b
+root file system type: ffs
+kern.module.path=/stand/evbarm/8.99.1/modules
+WARNING: clock lost 6436 days
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+Tue Aug 15 06:58:59 UTC 2017
+Starting root file system check:
+/dev/rld0a: file system is clean; not checking
+Not resizing /: already correct size
+swapctl: adding /dev/ld0b as swap device at priority 0
+Starting file system checks:
+/dev/rld0e: 46 files, 30320 free (7580 clusters)
+uhidev0 at uhub3 port 1 configuration 1 interface 0
+uhidev0: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 2, iclass 3/1
+ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+random_seed: /var/db/entropy-file: Not present
+Setting tty flags.
+Setting sysctl variables:
+ddb.onpanic: 1 -> 0
+Starting network.
+Hostname: armv7
+IPv6 mode: host
+Configuring network interfaces:.
+Adding interface aliases:.
+Waiting for DAD to complete for statically configured addresses...
+Starting dhcpcd.
+no valid interfaces found
+wskbd0 at ukbd0 (mux ignored)
+uhidev1 at uhub3 port 1 configuration 1 interface 1
+uhidev1: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 2, iclass 3/1
+uhidev1: 1 report ids
+ums0 at uhidev1 reportid 1: 3 buttons and Z dir
+wsmouse0 at ums0 (mux ignored)
+uhidev2 at uhub3 port 1 configuration 1 interface 2
+uhidev2: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 2, iclass 3/0
+uhid0 at uhidev2: input=3, output=0, feature=0
+Starting mdnsd.
+mdnsd: Unable to parse DNS server list. Unicast DNS-SD unavailable
+Building databases: dev, utmp, utmpx.
+wsconscfg: Cannot open `/dev/ttyEcfg': Device not configured
+wsconscfg: Cannot open `/dev/ttyEcfg': Device not configured
+wsconscfg: Cannot open `/dev/ttyEcfg': Device not configured
+wsconscfg: Cannot open `/dev/ttyEcfg': Device not configured
+Starting syslogd.
+Mounting all file systems...
+Clearing temporary files.
+Updating fontconfig cache: done.
+Creating a.out runtime link editor directory cache.
+Checking quotas: done.
+Setting securelevel: kern.securelevel: 0 -> 1
+Starting virecover.
+Checking for core dump...
+savecore: no core dump
+Starting devpubd.
+Starting local daemons:.
+Updating motd.
+Starting ntpd.
+Aug 15 06:59:06 armv7 ntpd[434]: ntp_rlimit: Cannot set RLIMIT_STACK: Invalid argument
+Starting sshd.
+Starting inetd.
+Starting cron.
+Tue Aug 15 06:59:11 UTC 2017
+
+NetBSD/evbarm (armv7) (console)
+
+login: root
+Aug 15 06:59:43 armv7 login: ROOT LOGIN (root) on tty console
+Last login: Tue Aug 15 06:58:41 2017 on console
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
+    The NetBSD Foundation, Inc.	 All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 8.99.1 (SUNXI) #0: Mon Aug 14 12:51:11 UTC 2017
+
+Welcome to NetBSD!
+
+This system is running a development snapshot of the NetBSD operating system,
+also known as NetBSD-current.  It is very possible that it has serious bugs,
+regressions, broken features or other problems.	 Please bear this in mind
+and use the system with care.
+
+You are encouraged to test this version as thoroughly as possible.  Should you
+encounter any problem, please report it back to the development team using the
+send-pr(1) utility (requires a working MTA).  If yours is not properly set up,
+use the web interface at: http://www.NetBSD.org/support/send-pr.html
+
+Thank you for helping us test and improve NetBSD.
+
+We recommend that you create a non-root account and use su(1) for root access.
+armv7# df
+Filesystem    1K-blocks	      Used	Avail %Cap Mounted on
+/dev/ld0a	7475128	   1378160    5723216  19% /
+/dev/ld0e	  94096	     63776	30320  67% /boot
+kernfs		      1		 1	    0 100% /kern
+ptyfs		      1		 1	    0 100% /dev/pts
+procfs		      8		 8	    0 100% /proc
+tmpfs		 131072		 8     131064	0% /var/shm
