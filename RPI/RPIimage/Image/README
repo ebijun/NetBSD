@@ -16,8 +16,11 @@ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-19-earmv6hf/MD5
 
 Update:
 - NetBSD-current 8.99.1 evbarm-earmv6hf 201708171830 rpi.img from nyftp.
-- Bluetooth 
+- Bluetooth support: plcom0
+  http://mail-index.netbsd.org/source-changes/2017/08/12/msg087296.html
   https://www.netbsd.org/docs/guide/en/chap-bluetooth.html
+- git-base-2.14.1
+- mlterm-3.8.2 
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -39,7 +42,7 @@ dmesg:
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  updates:
- https://github.com/ebijun/NetBSD/commit/2428004bc0f1e856f8cbe4c24b9540e6bbb46da5#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/b88cf6370d0d6047ffac08e63213923cd590c964#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
 - pkgsrc/devel/boost-libs compile failed.
