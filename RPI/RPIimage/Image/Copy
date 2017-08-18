@@ -1,11 +1,11 @@
-DEVICE=rsd2d
+DEVICE=rsd0d
 
 #BOARD=raspi-earm
 BOARD=raspi-earmv6hf
 #BOARD=raspi-earmv7hf
 
-#COMPRESS=-z
-#SUFFIX=.gz
+COMPRESS=-z
+SUFFIX=.gz
 
 #DATE=`date +%Y-%m-%d`
 DATE=2017-08-01

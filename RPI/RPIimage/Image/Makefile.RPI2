@@ -5,14 +5,14 @@ ARCH=earmv7hf
 PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-08-22/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.21-evbarm-${ARCH}-201508181510Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.1-evbarm-${ARCH}-201708161650Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2015-05-30.tar.gz 
 
 ###
 
 # set image file name
-FILE=`date +%Y-%m-%d`-netbsd-raspi2-${ARCH}.img
+FILE=`date +%Y-%m-%d`-netbsd-armv7-${ARCH}.img
 FILE_TMP=a.img
 
 # extract sets.

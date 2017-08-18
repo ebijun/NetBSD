@@ -1,6 +1,19 @@
 make -f Makefile.RPI2 
-make -f Makefile.RPI2 release
-make -f Makefile.RPI2 pkg
-#make -f Makefile.RPI2 logclean
-#make -f Makefile.RPI2 release
-#make -f Makefile.RPI2 fetch
+#make -f Makeifile.RPI2 release
+#make -f Makeifile.RPI2 pkg
+#
+#make -f Makeifile.RPI2 firm     #XXX
+#make -f Makeifile.RPI2 libssls  #XXX
+#
+#adding packages.
+#
+#./03_back
+#mv back.img `date +%Y-%m-%d`-netbsd-raspi-earmv6hf.img
+#make -f Makeifile.RPI2 logclean
+#make -f Makeifile.RPI2 pkg-back
+#
+# update kernel
+#make cdmount
+#make kernel
+#make cdunmount
+#make kernel-update

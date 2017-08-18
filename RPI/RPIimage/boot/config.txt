@@ -1,0 +1,13 @@
+# UART settings, see https://www.raspberrypi.org/documentation/configuration/uart.md
+enable_uart=1            
+force_turbo=0
+#
+#bcm2708_fb.fbswap=0
+# http://mail-index.netbsd.org/port-arm/2014/07/24/msg002527.html
+# http://elinux.org/RPiconfig
+#for 1024x768 
+#hdmi_group=2 
+#hdmi_mode=16
+#
+# for omxplayer
+#gpu_mem=16,64,128,256
