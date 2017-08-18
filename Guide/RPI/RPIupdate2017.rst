@@ -58,7 +58,7 @@ RaspberryPIのNetBSDイメージについて
  2017/7,8.99.1,,,,RPI3起動タイミング修正 microSD認識エラー修正 BIND-9.10.5-P2,JNUG2017,http://mail-index.netbsd.org/port-arm/2017/07/07/msg004286.html
  2017/7,8.99.1,3.5.9,,,,OSC北海道,http://mail-index.netbsd.org/port-arm/2017/07/13/msg004307.html
  2017/8,8.99.1,,,,,OSC京都,http://mail-index.netbsd.org/port-arm/2017/07/13/msg004307.html
- ,8.99.1,,3.8.2,,git-base-2.14.1,ODC,http://mail-index.netbsd.org/port-arm/2017/07/13/msg004307.html
+ ,8.99.1,,3.8.2,,git-base-2.14.1,ODC,http://mail-index.netbsd.org/port-arm/2017/08/18/msg004375.html
 
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。
