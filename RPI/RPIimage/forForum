@@ -1,21 +1,26 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2017-08-04/2017-08-04/g
+:1,$s/2017-08-19/2017-08-19/g
 :1,$s/8.99.1/8.99.1/g
-:1,$s/201707301430Z/201707301430Z/g
-:1,$s?2017/08/02/msg004344.html?2017/08/02/msg004344.html?
+:1,$s/201708171830/201708171830/g
+:1,$s?2017/08/18/msg004375.html?2017/08/18/msg004375.html?
 
-2017-08-04-netbsd-raspi-earmv6hf.img
+2017-08-19-netbsd-raspi-earmv6hf.img
 
-For OpenSourceConference 2017 demonstration use,
-I've updated 2017-08-04-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Developers Conference 2017 Tokyo demonstration use,
+I've updated 2017-08-19-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2017/08/02/msg004344.html
+http://mail-index.netbsd.org/port-arm/2017/08/18/msg004375.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-04-earmv6hf/2017-08-04-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-19-earmv6hf/2017-08-19-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.1 evbarm-earmv6hf 201707301430Z rpi.img from nyftp.
+- NetBSD-current 8.99.1 evbarm-earmv6hf 201708171830 rpi.img from nyftp.
+- Bluetooth support: plcom0
+  http://mail-index.netbsd.org/source-changes/2017/08/12/msg087296.html
+  https://www.netbsd.org/docs/guide/en/chap-bluetooth.html
+- git-base-2.14.1
+- mlterm-3.8.2 
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -32,9 +37,6 @@ Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Problem:
-- sdhost: 
-  with 201708010210Z,only RPI3 can mount sdcard,others failed.
-  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-04-earmv6hf/sdhost/
 - pkgsrc/devel/boost-libs compile failed.
   # compile option issue.
 - webkit24-gtk-2.4.11nb9 compile failed.
