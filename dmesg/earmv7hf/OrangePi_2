@@ -11,7 +11,7 @@ avail memory = 1006 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
 timecounter: Timecounters tick every 10.000 msec
 armfdt0 (root)
-fdt0 at armfdt0: Xunlong Orange Pi One
+fdt0 at armfdt0: Xunlong Orange Pi 2
 fdt1 at fdt0
 fdt2 at fdt0
 cpus0 at fdt0
@@ -35,45 +35,32 @@ armgtmr0 at gtmr0: ARMv7 Generic 64-bit Timer (24000 kHz)
 armgtmr0: interrupting on irq 27
 timecounter: Timecounter "armgtmr0" frequency 24000000 Hz quality 500
 sunxigpio0 at fdt1: PIO
-sunxigpio0: unknown pin name 'PB9'
 gpio0 at sunxigpio0: 94 pins
 sunxigpio1 at fdt1: PIO
-sunxigpio0: unknown pin name 'PB9'
 gpio1 at sunxigpio1: 12 pins
 sun8ih3ccu0 at fdt1: H3 CCU
 fregulator0 at fdt0: vcc3v3
-fregulator1 at fdt0: usb0-vbus
+fregulator1 at fdt0: usb1-vbus
 fregulator2 at fdt0: vcc3v0
 fregulator3 at fdt0: vcc5v0
 sunxiusbphy0 at fdt1: USB PHY
+/wifi_pwrseq at fdt0 not configured
 sun6idma0 at fdt1: DMA controller (12 channels)
 sun6idma0: interrupting on GIC irq 82
 h3codec0 at fdt1: H3 Audio Codec (analog part)
 /soc/clock@1f01400 at fdt1 not configured
 psci0 at fdt0: PSCI 0.1
-gpioleds0 at fdt0: orangepi:green:pwr orangepi:red:status
-gpiokeys0 at fdt0: sw4
+gpioleds0 at fdt0: orangepi:red:status orangepi:green:pwr
+gpiokeys0 at fdt0: sw2, sw4
 sunximmc0 at fdt1: SD/MMC controller
 sunximmc0: interrupting on GIC irq 92
-/soc/usb@01c19000 at fdt1 not configured
+sunximmc1 at fdt1: SD/MMC controller
+sunximmc1: interrupting on GIC irq 93
 ehci0 at fdt1: EHCI
-ehci0: interrupting on GIC irq 104
+ehci0: interrupting on GIC irq 106
 ehci0: EHCI version 1.0
 ehci0: 1 companion controller, 1 port
 usb0 at ehci0: USB revision 2.0
-ohci0 at fdt1: OHCI
-ohci0: interrupting on GIC irq 105
-ohci0: OHCI version 1.0
-usb1 at ohci0: USB revision 1.0
-ehci1 at fdt1: EHCI
-ehci1: interrupting on GIC irq 106
-ehci1: EHCI version 1.0
-ehci1: 1 companion controller, 1 port
-usb2 at ehci1: USB revision 2.0
-ohci1 at fdt1: OHCI
-ohci1: interrupting on GIC irq 107
-ohci1: OHCI version 1.0
-usb3 at ohci1: USB revision 1.0
 /soc/timer@01c20c00 at fdt1 not configured
 sunxiwdt0 at fdt1: Watchdog
 sunxiwdt0: default watchdog period is 16 seconds
@@ -81,44 +68,42 @@ com0 at fdt1: ns16550a, working fifo
 com0: console
 com0: interrupting on GIC irq 32
 sunxirtc0 at fdt1: RTC
+/soc/ir@01f02000 at fdt1 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu1: Cortex-A7 r0p5 (Cortex V7A core)
-cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
-cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
-vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu2: Cortex-A7 r0p5 (Cortex V7A core)
-cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
-cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
-vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu3: Cortex-A7 r0p5 (Cortex V7A core)
 cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
 cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
 vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu2: Cortex-A7 r0p5 (Cortex V7A core)
+cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu1: Cortex-A7 r0p5 (Cortex V7A core)
+cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdmmc0 at sunximmc0
+sdmmc1 at sunximmc1
 uhub0 at usb0: Generic (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-uhub1 at usb3: Generic (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub1: 1 port with 1 removable, self powered
-uhub2 at usb1: Generic (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub2: 1 port with 1 removable, self powered
-uhub3 at usb2: Generic (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-uhub3: 1 port with 1 removable, self powered
-IPsec: Initialized Security Association Processing.
+sdmmc1: sdmmc_mem_enable failed with error 60
+sdmmc1: couldn't enable card: 60
 sdmmc0: SD card status: 4-bit, C6
 ld0 at sdmmc0: <0x89:0x0303:NCard:0x10:0x15901a98:0x0ac>
 ld0: 7659 MB, 3890 cyl, 64 head, 63 sec, 512 bytes/sect x 15685632 sectors
+IPsec: Initialized Security Association Processing.
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
-WARNING: 2 errors while detecting hardware; check system log.
+uhub1 at uhub0 port 1: vendor 1a40 (0x1a40) USB 2.0 Hub (0x101), class 9/0, rev 2.00/1.11, addr 2
+uhub1: single transaction translator
+uhub1: 4 ports with 4 removable, self powered
+WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
 kern.module.path=/stand/evbarm/8.99.1/modules
-WARNING: clock lost 6436 days
-WARNING: using filesystem time
-WARNING: CHECK AND RESET THE DATE!
