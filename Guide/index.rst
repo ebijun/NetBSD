@@ -23,6 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/kyoto
+ Place/chiba
  RPI/RPIupdate2017
- Luna
+ RPI
