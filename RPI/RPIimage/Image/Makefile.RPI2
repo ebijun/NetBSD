@@ -2,10 +2,10 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2015-08-22/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-09-02/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-8.99.1-evbarm-${ARCH}-201708161650Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.2-evbarm-${ARCH}-201708290440Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2015-05-30.tar.gz 
 
@@ -88,7 +88,6 @@ release:
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
 	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
-	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 	(cd ../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	umount ${MNT}/boot
@@ -176,4 +175,4 @@ fit:
 	umount ${MNT}
 	vnconfig -u ${VND}
 	vnconfig -u ${VND_TMP}
-	cp ${FILE_TMP} ${FILE}
+	mv ${FILE_TMP} ${FILE}
