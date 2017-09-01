@@ -21,3 +21,6 @@ extract:
 
 fetch:
 	wget ftp://ftp.denx.de/pub/u-boot/${UBOOT}.tar.bz2
+
+copy:
+	dd if=${BOARD}/u-boot-sunxi-with-spl.bin of=/dev/rsd2d bs=1024 seek=8 conv=sync
