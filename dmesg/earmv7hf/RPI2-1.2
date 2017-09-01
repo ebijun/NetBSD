@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.1 (RPI3-jmcneill) #0: Sun Jun 18 00:47:55 JST 2017
-	jun@amikuro.soum.co.jp:/usr/obj/kernel/earmv7hf/RPI3-jmcneill
+NetBSD 8.99.2 (RPI2) #0: Tue Aug 29 04:37:06 UTC 2017
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 944 MB
 avail memory = 924 MB
 sysctl_createv: sysctl_create(machine_arch) returned 17
@@ -34,11 +34,15 @@ bcmrng0 at obio0: RNG
 plcom0 at obio0 intr 185
 plcom0: txfifo disabled
 plcom0: console
+com0 at obio0 intr 157: BCM AUX UART, working fifo
+com0: interrupting on intr 157
 genfb0 at obio0: switching to framebuffer console
 genfb0: framebuffer at 0xfda1e000, size 800x600, depth 32, stride 3200
 wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
+sdhost0 at obio0 intr 184: SD HOST controller
+: disabled
 sdhc0 at obio0 intr 190: SDHC controller
 sdhc0: interrupting on intr 190
 dwctwo0 at obio0 intr 137: USB controller
@@ -56,6 +60,12 @@ bcmcm at obio0 not configured
 bcmpwm at obio0 not configured
 usb0 at dwctwo0: USB revision 2.0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
 cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
@@ -68,20 +78,15 @@ cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, HS SDR50 3.3V, re-tuning mode 1, 1024 byte blocks
+sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 uhub0 at usb0: vendor 0000 (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0xa970471f:0x114>
-ld0: 30543 MB, 7756 cyl, 128 head, 63 sec, 512 bytes/sect x 62552064 sectors
 IPsec: Initialized Security Association Processing.
-ld0: 4-bit width, SDR50, 100.000 MHz
+sdmmc0: SD card status: 4-bit, C10, U1
+ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x02504cf9:0x106>
+ld0: 30735 MB, 7805 cyl, 128 head, 63 sec, 512 bytes/sect x 62945280 sectors
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 uhub1 at uhub0 port 1: vendor 0424 (0x424) product 9514 (0x9514), class 9/0, rev 2.00/2.00, addr 2
 uhub1: multiple transaction translators
 uhub1: 5 ports with 4 removable, self powered
@@ -91,30 +96,21 @@ usmsc0: Ethernet address b8:27:eb:03:f5:9d
 ukphy0 at usmsc0 phy 1: OUI 0x00800f, model 0x000c, rev. 3
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
 uhidev0 at uhub1 port 3 configuration 1 interface 0
-uhidev0: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 4, iclass 3/1
-ukbd0 at uhidev0: 8 modifier keys, 6 key codes
+uhidev0: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
+ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
 uhidev1 at uhub1 port 3 configuration 1 interface 1
-uhidev1: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 4, iclass 3/1
-uhidev1: 1 report ids
-ums0 at uhidev1 reportid 1: 3 buttons and Z dir
-wsmouse0 at ums0 mux 0
-uhidev2 at uhub1 port 3 configuration 1 interface 2
-uhidev2: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 4, iclass 3/0
-uhid0 at uhidev2: input=3, output=0, feature=0
-umass0 at uhub1 port 5 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 5
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
+uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
+uhidev1: 2 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
 uhub0: illegal enable change, port 1
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 61057 MB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 125045424 sectors
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/8.99.1/modules
-vchiq: vchiq_init_state: slot_zero = 0xca6e0000, is_master = 0
+kern.module.path=/stand/evbarm/8.99.2/modules
+vchiq: vchiq_init_state: slot_zero = 0xca6c0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 vchiq_get_state: g_state.remote->initialised != 1 (0)
