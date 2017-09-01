@@ -1,26 +1,26 @@
-VERSION: :1,$s/2017-08-19/2017-08-19/g
-ISO:     :1,$s/201708171830/201708171830/g
-NetBSD:  :1,$s/8.99.1/8.99.1/g
+VERSION: :1,$s/2017-09-02/2017-09-02/g
+ISO:     :1,$s/201708290440Z/201708290440Z/g
+NetBSD:  :1,$s/8.99.2/8.99.2/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-08-19-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2017-09-02-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-08-19-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-09-02-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-19-earmv6hf/2017-08-19-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-19-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-09-02-earmv6hf/2017-09-02-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-09-02-earmv6hf/MD5
 
 Update:
-- NetBSD-current 8.99.1 evbarm-earmv6hf 201708171830 rpi.img from nyftp.
-- Bluetooth support: plcom0
-  http://mail-index.netbsd.org/source-changes/2017/08/12/msg087296.html
-  https://www.netbsd.org/docs/guide/en/chap-bluetooth.html
-- git-base-2.14.1
-- mlterm-3.8.2 
+- NetBSD-current 8.99.2 evbarm-earmv6hf 201708290440Z rpi.img from nyftp.
+- ruby23-base-2.3.4nb1
+ "Add patch to fix vulnerabilities of rubygems."
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/08/30/msg162219.html
+- mikutter-3.5.10
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/08/26/msg162098.html
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -28,7 +28,7 @@ Overview:
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-19-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-09-02-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -46,7 +46,9 @@ Pre-installed packages:
 
 Problem:
 - pkgsrc/devel/boost-libs compile failed.
-  # compile option issue.
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=52425
+  "Maybe we should default to a vfp3 FPU when configuring the compiler for
+   earmv6hf or earmv7hf targets ?"
 - webkit24-gtk-2.4.11nb9 compile failed.
 - dillo-3.0.5nb2 works with -O0
   thanx Jared McNeill.
@@ -89,7 +91,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-08-19/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-09-02/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -97,7 +99,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-08-19-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-09-02-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -268,16 +270,16 @@ pkgsrc Todo:
 
 =====================
 
-For Open Developers Conference 2017 Tokyo demonstration use, 
+For Open Source Conference 2017 Chiba demonstration use, 
 I've updated raspberry-pi image.
 
-https://www.ospn.jp/odc2017/
-https://www.ospn.jp/odc2017/modules/eguide/event.php?eid=5
+https://www.ospn.jp/osc2017-chiba/
+https://www.ospn.jp/osc2017-chiba/modules/eguide/event.php?eid=4
 https://www.slideshare.net/junebihara18/netbsd-workshop
 https://www.facebook.com/NetBSD.jp 
-https://www.facebook.com/events/1970719779814048/
+https://www.facebook.com/events/817081148458593/
 
-- NetBSD 8.99.1 earmv6hf rpi.img.gz base
+- NetBSD 8.99.2 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -315,7 +317,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-08-19/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-09-02/
 
 Installed Packages:
   bash
