@@ -28,8 +28,11 @@ LIST=man modules xbase xcomp xetc xfont xserver
 # mount point
 MNT=/mnt
 VND=vnd0
+
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
+
+MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 all: file cdmount rpi extract cdunmount fit
@@ -53,18 +56,34 @@ extract:
 rpi:
 	echo Copy armv7.img.gz
 	vnconfig ${VND} ${FILE}
-	gunzip < ${RPI}.gz |dd of=/dev/r${VND}d bs=1m 
-	disklabel -R ${VND} DISKLABEL.proto
-	fdisk -uf -0 -s 6/8192/114688 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fsck -fy /dev/r${VND}a
-	resize_ffs -y /dev/r${VND}a
-	fsck -fy /dev/r${VND}a
+	fdisk -uf -0 -s 6/8192/188416 ${VND} #DOS id6 partition:DISKLABEL.proto
+	fdisk -uf -1 -s 169/458752/4251648 ${VND}
+	disklabel -DR ${VND} DISKLABEL.proto
+	# newfs dos and ffs
+	newfs -n 500000 -b 4096 /dev/r${VND}a
+	newfs_msdos  /dev/r${VND}e
+	# unzip original image
+	gunzip < ${RPI}.gz > ${FILE_TMP}
+	vnconfig ${VND_TMP} ${FILE_TMP}
+	# restore ffs
+	mount /dev/${VND}a ${MNT}
+	dump 0uf - /dev/r${VND_TMP}a | ( cd ${MNT} ; restore -xf - )
+	umount ${MNT}
+	# restore msdos
+	mount_msdos /dev/${VND}e ${MNT}
+	mount_msdos /dev/${VND_TMP}e ${MNT_TMP}
+	(cd ${MNT_TMP}; cp -pr . ${MNT})
+
+	umount ${MNT_TMP}
+	vnconfig -u ${VND_TMP}
+
+	umount ${MNT}
 	vnconfig -u ${VND}
 
 # make image file. 512*3813376=2GB
 file: 
 	echo Create ${FILE}.
-	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
+	dd if=/dev/zero of=${FILE} bs=512 count=4710400 progress=60000
 	sleep 3
 
 # stop sshd for package install
@@ -73,11 +92,24 @@ pkg:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	echo rc_configured=YES  >> ${MNT}/etc/rc.conf
-	echo resize_diskabel=NO >> ${MNT}/etc/rc.conf
-	echo resize_root=NO     >> ${MNT}/etc/rc.conf
 	echo sshd=NO            >> ${MNT}/etc/rc.conf
 	echo syslogd=NO         >> ${MNT}/etc/rc.conf
 #	echo dhcpcd=NO          >> ${MNT}/etc/rc.conf
+	echo resize_disklabel=NO        >> ${MNT}/etc/rc.conf
+	echo resize_disklabel_disk=""   >> ${MNT}/etc/rc.conf
+	echo resize_disklabel_part=""   >> ${MNT}/etc/rc.conf
+	echo resize_root=NO             >> ${MNT}/etc/rc.conf
+	echo resize_root_flags=""       >> ${MNT}/etc/rc.conf
+	echo resize_root_postcmd=""     >> ${MNT}/etc/rc.conf
+	umount ${MNT}
+	vnconfig -u ${VND}
+
+
+pkg-back:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	cp ../etc/rc.conf ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
