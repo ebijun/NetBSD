@@ -1,0 +1,59 @@
+VERSION: :1,$s/2017-09-02/2017-09-02/g
+ISO:     :1,$s/201708290440Z/201708290440Z/g
+NetBSD:  :1,$s/8.99.2/8.99.2/g
+PKGSRC:  :1,$s/2015-06-27/2015-06-27/
+# Check MD5 filename before post this mail.
+# why dont we take off alone.
+
+To: port-armNetBSD.org@localhost
+Subject: 2017-09-02-netbsd-armv7-earmv7hf.img 
+From: Jun Ebihara <jun@soum.co.jp>
+
+I make 2017-09-02-netbsd-armv7-earmv7hf.img.gz for RPI2/3 and NanoPi NEO.
+
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2017-09-02-earmv7hf/2017-09-02-netbsd-armv7-earmv7hf.img.gz
+
+Feature:
+- NetBSD-current 8.99.2 evbarm-earmv7hf 201708290440Z armv7.img from nyftp.
+- RapberryPI2/3 and NanoPi NEO can boot in one image.
+  http://wiki.friendlyarm.com/wiki/index.php/NanoPi_NEO
+  http://akizukidenshi.com/catalog/g/gM-12301/
+- https://github.com/jaredmcneill/netbsd-arm-docs/wiki/Allwinner
+
+dmesg:
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI2
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI2-1.2
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI3
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/NanoPi_NEO
+
+Features:
+  - fit size for 4GB SD Card
+  - with X11
+  - increase more inodes on /dev/ld0a
+  - Recent current armv7 kernel
+  - USB/video support: as NetBSD-current 
+  - pre-build packages
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2017-09-02/
+
+Installed Packages:
+  bash
+  tcsh
+  vlgothic-ttf
+  icewm
+  xli
+  ruby23-mikutter
+  uim
+  fossil
+  raspberrypi-userland
+  sudo
+  git-base
+  zsh
+  mlterm
+  pkg_chk
+  lintpkgsrc
+  mozilla-rootcerts
+  dillo
+  medit
+
+--
+Jun Ebihara
