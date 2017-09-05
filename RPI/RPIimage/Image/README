@@ -16,11 +16,8 @@ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-09-02-earmv6hf/MD5
 
 Update:
 - NetBSD-current 8.99.2 evbarm-earmv6hf 201708290440Z rpi.img from nyftp.
-- ruby23-base-2.3.4nb1
- "Add patch to fix vulnerabilities of rubygems."
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/08/30/msg162219.html
-- mikutter-3.5.10
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/08/26/msg162098.html
+- mikutter-3.5.11
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/09/03/msg162384.html
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -46,9 +43,11 @@ Pre-installed packages:
 
 Problem:
 - pkgsrc/devel/boost-libs compile failed.
-  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=52425
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=52425 -> Fixed
   "Maybe we should default to a vfp3 FPU when configuring the compiler for
    earmv6hf or earmv7hf targets ?"
+- CPUFLAGS=-mfpu=neon-vfpv4 breaks some programs
+  http://gnats.netbsd.org/52528
 - webkit24-gtk-2.4.11nb9 compile failed.
 - dillo-3.0.5nb2 works with -O0
   thanx Jared McNeill.
