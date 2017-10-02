@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -46,7 +46,8 @@ Maps:
  2013,11/16,500,25,福岡ソフトリサーチパーク センタービル
  2014,11/21-22,500,23,福岡ソフトリサーチパーク センタービル
  2015,10/3,400,30,九州産業大学 2号館
- 2016,11,19,,,福岡ソフトリサーチパーク センタービル
+ 2016,11/19,300,29,福岡ソフトリサーチパーク センタービル
+ 2017,10/7,,22,福岡大学 18号館
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -58,6 +59,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 114,OSC2017福岡,http://www.soum.co.jp/~jun/OSC2017fukuoka.pdf
  99,OSC2016福岡,http://www.soum.co.jp/~jun/OSC2016fukuoka.pdf
  79,OSC2015福岡,http://www.soum.co.jp/~jun/OSC2015fukuoka.pdf
  66,OSC2014福岡,http://www.soum.co.jp/~jun/OSC2014fukuoka.pdf
@@ -72,7 +74,8 @@ togetterまとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2016福岡 NetBSDブース展示の記録,
+ OSC2017福岡 NetBSDブース展示の記録,
+ OSC2016福岡 NetBSDブース展示の記録,https://togetter.com/li/1050258
  OSC2015福岡 NetBSDブース展示の記録,http://togetter.com/li/881732
  OSC2014福岡 NetBSDブース展示の記録,http://togetter.com/li/748237
  OSC2013福岡 NetBSDブース展示の記録,http://togetter.com/li/590835
@@ -135,6 +138,7 @@ OSC福岡主な展示物
 .. csv-table::
  :widths: 15 35 60
 
+ 2016/11/19,福岡ソフトリサーチパーク,RPI3+XM6i NetWalker WZero3
  2015/10/3,九州産業大学,Raspberry PI2 mikutter NetWalker ZAURUS WZero3
  2014/11/21,福岡ソフトリサーチパーク,RPI Netwalker XM6i Cubieboard2 
  2013/11/16,福岡ソフトリサーチパーク,RPI Netwalker XM6i
@@ -144,6 +148,19 @@ OSC福岡主な展示物
  2009/12/5,九州産業大学,hpcmips/hpcarm/Jornada680/WZero3
  2008/12/13,福岡大学,hpcmips/hpcarm/Jornada680/WZero3/USBカメラ
  2007/12/8,ASCビル,hpcmips/hpcarm/Jornada680
+
+2016年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2016/11/19/DSC_2724.JPG
+.. image::  ../Picture/2016/11/19/DSC_2725.JPG
+.. image::  ../Picture/2016/11/19/DSC_2726.JPG
+.. image::  ../Picture/2016/11/19/DSC_2728.JPG
+.. image::  ../Picture/2016/11/19/DSC_2729.JPG
+.. image::  ../Picture/2016/11/19/DSC_2730.JPG
+.. image::  ../Picture/2016/11/19/DSC_2731.JPG
+.. image::  ../Picture/2016/11/19/DSC_2732.JPG
+.. image::  ../Picture/2016/11/19/DSC_2733.JPG
 
 2015年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

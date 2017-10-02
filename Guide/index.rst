@@ -23,6 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
+ Place/fukuoka
  RPI/RPIupdate2017
  Place/intro
