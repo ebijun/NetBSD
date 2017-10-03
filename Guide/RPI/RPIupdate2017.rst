@@ -61,6 +61,8 @@ RaspberryPIのNetBSDイメージについて
  ,8.99.1,,3.8.2,,git-base-2.14.1 Bluetoothサポート,ODC2017Tokyo,http://mail-index.netbsd.org/port-arm/2017/08/18/msg004375.html
  2017/9,8.99.2,3.5.10,,,ruby23-base-2.3.4nb1,OSC千葉 NanoPi,http://mail-index.netbsd.org/port-arm/2017/09/01/msg004383.html
  ,8.99.2,3.5.11,,,,OSC東京秋,
+ 2017/10,8.99.3,,,,ruby23-base-2.3.5,OSC福岡,http://mail-index.netbsd.org/port-arm/2017/10/03/msg004402.html
+
 
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。
