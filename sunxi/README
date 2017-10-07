@@ -3,7 +3,7 @@ https://github.com/jaredmcneill/netbsd-arm-docs/wiki/Allwinner
 Install U-Boot to the SD card: sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/sdd bs=1024 seek=8 conv=sync
 Attach serial console. The default serial settings are 115200 8n1.
 Interrupt U-Boot (3 second countdown) and at the prompt, enter the following commands:
-setenv bootargs root=ld0a
+setenv bootargs root=ld0a console=fb
 setenv kernel netbsd-SUNXI.ub
 setenv bootcmd 'fatload mmc 0:1 ${kernel_addr_r} ${kernel}; fatload mmc 0:1 ${fdt_addr_r} ${fdtfile}; fdt addr ${fdt_addr_r}; bootm ${kernel_addr_r} - ${fdt_addr_r}'
 saveenv 
