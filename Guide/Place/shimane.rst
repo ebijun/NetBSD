@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -46,7 +46,8 @@
  2013,8/24,120,19,松江テルサ
  2014,8/24,120,15,松江テルサ
  2015,8/22,115,17,松江テルサ
- 2016,9/24, ,24,松江テルサ
+ 2016,9/24,180,24,松江テルサ
+ 2017,10/14,,19,松江テルサ
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,13 +60,14 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
  
- 95,OSC2016島根,http://www.soum.co.jp/~jun/OSC2016shimane.pdf
- 76,OSC2015島根,http://www.soum.co.jp/~jun/OSC2015shimane.pdf
- 62,OSC2014島根,http://www.soum.co.jp/~jun/OSC2014shimane.pdf
- 46,OSC2013島根,http://www.soum.co.jp/~jun/OSC2013shimane.pdf
- 30,OSC2012島根,http://www.soum.co.jp/~jun/OSC2012shimane.pdf
- 18,OSC2011島根,http://www.soum.co.jp/~jun/OSC2011shimane.pdf
-  3,OSC2010島根,http://www.soum.co.jp/~jun/OSC2010shimane.pdf
+ 115,OSC2017島根,http://www.re.soum.co.jp/~jun/OSC2017shimane.pdf
+ 95,OSC2016島根,http://www.re.soum.co.jp/~jun/OSC2016shimane.pdf
+ 76,OSC2015島根,http://www.re.soum.co.jp/~jun/OSC2015shimane.pdf
+ 62,OSC2014島根,http://www.re.soum.co.jp/~jun/OSC2014shimane.pdf
+ 46,OSC2013島根,http://www.re.soum.co.jp/~jun/OSC2013shimane.pdf
+ 30,OSC2012島根,http://www.re.soum.co.jp/~jun/OSC2012shimane.pdf
+ 18,OSC2011島根,http://www.re.soum.co.jp/~jun/OSC2011shimane.pdf
+  3,OSC2010島根,http://www.re.soum.co.jp/~jun/OSC2010shimane.pdf
 
 togetterまとめ
 ~~~~~~~~~~~~~~~
@@ -73,7 +75,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2016島根 NetBSDブース展示の記録,
+ OSC2016島根 NetBSDブース展示の記録,https://togetter.com/li/1028314
  OSC2015島根 NetBSDブース展示の記録,http://togetter.com/li/863726
  OSC2014島根 NetBSDブース展示の記録,http://togetter.com/li/709947
  OSC2013島根 NetBSDブース展示の記録,http://togetter.com/li/553529
@@ -95,6 +97,7 @@ togetterまとめ
  デンゲンパーツ,くにびきメッセ隣,電子部品・無線機屋
  たぬき堂書店,伊勢宮,昭和初期地元書籍多数
  松江地ビール館,遊覧船発着場,ビアへるん。夕方18時までだから終わったらすぐ行く。
+ 石見麦酒,江津市,地ビールブルワリー。東京水天宮前永代ブルーイング。
  S-PARK,松江駅,ビアへるん+島根日本酒全種類　十旭日(じゅうじあさひ)
  國暉酒造,東茶街,蔵しっく館
  島根県立美術館,宍道湖畔,ベルギー近代美術の精華展
@@ -131,7 +134,7 @@ togetterまとめ
  桜丸,米子,大山ヴァイツェンとピヨ
  道の駅,琴浦町,琴浦さんグッズあり
  よしだ,米子,牛骨ラーメン
- 浜下水産,鳥取駅前サンロード,自家製一夜干し
+ 浜下水産,鳥取駅前,自家製一夜干し
  タルマーリー,智頭,石釜パンとクラフトビール
 
 倉敷
@@ -177,6 +180,22 @@ OSC松江展示物
 #. SONY NEWS
 #. OMRON LUNAII
 #. Sun Java Station
+
+2016年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2016/09/24/DSC_2392.JPG
+.. image::  ../Picture/2016/09/24/DSC_2393.JPG
+.. image::  ../Picture/2016/09/24/DSC_2394.JPG
+.. image::  ../Picture/2016/09/24/DSC_2395.JPG
+.. image::  ../Picture/2016/09/24/DSC_2396.JPG
+.. image::  ../Picture/2016/09/24/DSC_2397.JPG
+.. image::  ../Picture/2016/09/24/DSC_2398.JPG
+.. image::  ../Picture/2016/09/24/DSC_2399.JPG
+.. image::  ../Picture/2016/09/24/DSC_2405.JPG
+.. image::  ../Picture/2016/09/24/DSC_2406.JPG
+.. image::  ../Picture/2016/09/24/DSC_2407.JPG
+.. image::  ../Picture/2016/09/24/DSC_2408.JPG
 
 2015年
 ~~~~~~~~~~~~~~~~~~

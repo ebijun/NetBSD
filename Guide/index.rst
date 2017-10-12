@@ -23,6 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/fukuoka
+ Place/shimane
  RPI/RPIupdate2017
  Place/intro
