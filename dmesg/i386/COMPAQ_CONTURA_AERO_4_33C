@@ -1,0 +1,72 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.1 (LEGACY) #3: Fri Oct 13 05:52:14 JST 2017
+	root@:/usr/src/sys/arch/i386/compile/LEGACY
+total memory = 11900 KB
+avail memory = 5376 KB
+kern.module.path=/stand/i386/7.1/modules
+timecounter: Timecounters tick every 10.000 msec
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+Generic PC
+mainbus0 (root)
+ACPI BIOS Error (bug): A valid RSDP was not found (20131218/tbxfroot-223)
+acpi_probe: failed to initialize tables
+ACPI Error: Could not remove SCI handler (20131218/evmisc-311)
+cpu0 at mainbus0: Intel 486-class, id 0x42b
+cpu0: no fpu
+isa0 at mainbus0
+lpt0 at isa0 port 0x378-0x37b irq 7
+com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, working fifo
+pckbc0 at isa0 port 0x60-0x64
+pckbd0 at pckbc0 (kbd slot)
+pckbc0: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+pckbc0: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+attimer0 at isa0 port 0x40-0x43
+wdc0 at isa0 port 0x1f0-0x1f7 irq 14
+atabus0 at wdc0 channel 0
+vga0 at isa0 port 0x3b0-0x3df iomem 0xa0000-0xbffff
+wsdisplay0 at vga0 kbdmux 1: console (80x25, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+pcppi0 at isa0 port 0x61
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+isapnp0 at isa0 port 0x279
+pcic0 at isa0 port 0x3e0-0x3e1 iomem 0xd0000-0xdffff irq 
+pcic0: controller 0 (Intel 82365SL-DF) has socket A only
+pcmcia0 at pcic0 controller 0 socket 0
+attimer0: attached to pcppi0
+isapnp0: no ISA Plug 'n Play devices found
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+pcic0: controller 0 detecting irqs with mask 0xdeb8:..3..5..9..10..11..15
+pcic0: using irq 3 for socket events
+pcic0: WARNING: powerhook_establish is deprecated
+IPsec: Initialized Security Association Processing.
+ne0 at pcmcia0 function 0: <corega K.K., corega EtherII PCC-TD, , >
+pcic0: port 0x300-0x31f
+pcmcia0: card irq 5
+ne0: Ethernet address 00:09:41:01:bf:b4
+wd0 at atabus0 drive 0
+wd0: <TS2GCF133>
+wd0: drive supports 1-sector PIO transfers, LBA addressing
+wd0: 1911 MB, 3884 cyl, 16 head, 63 sec, 512 bytes/sect x 3915072 sectors
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 4 (Ultra/66)
+Kernelized RAIDframe activated
+boot device: wd0
+root on wd0a dumps on wd0b
+root file system type: ffs
+WARNING: NVRAM century is 165 but RTC year is 2000
+WARNING: preposterous TOD clock time
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+wsdisplay0: screen 1 added (80x25, vt100 emulation)
+wsdisplay0: screen 2 added (80x25, vt100 emulation)
+wsdisplay0: screen 3 added (80x25, vt100 emulation)
+wsdisplay0: screen 4 added (80x25, vt100 emulation)
+pcmcia0: card irq 5
