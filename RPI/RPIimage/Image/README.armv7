@@ -7,20 +7,30 @@ MACHINE  :1,$s/BananaPi/BananaPi/g
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-10-14-netbsd-armv7-earmv7hf.img 
+Subject: 2017-10-14-netbsd-armv7-earmv7hf-bpi.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I make 2017-10-14-netbsd-armv7-earmv7hf-bpi.img.gz for RPI2/3 and BananaPi.
+related: sunxi: Allwinner A20 now supported by SUNXI kernel
+http://mail-index.netbsd.org/port-arm/2017/10/07/msg004405.html
+
+I make 2017-10-14-netbsd-armv7-earmv7hf-bpi.img.gz for RPI2/3 and BananaPi for testing.
 
 http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2017-10-14-earmv7hf/2017-10-14-netbsd-armv7-earmv7hf-bpi.img.gz
 
 Feature:
 - NetBSD-current 8.99.4 evbarm-earmv7hf 201710121310Z armv7.img from nyftp.
-- RapberryPI2/3 and OrangePi One can boot in one image.
+- RapberryPI2/3 and BananaPi can boot in one image.
 - https://github.com/jaredmcneill/netbsd-arm-docs/wiki/Allwinner
+
+Failure:
+- X11 screen seems wrong.
+ https://twitter.com/ebijun/status/919079162026921984
 
 dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/BPI
+  
+  diffs from BPI to SUNXI.
+  https://github.com/ebijun/NetBSD/commit/4504b8393dede29107c519257c135f9789b4438e#diff-07a49b6237dc31c356cf630f36443ceb
 
 Features:
   - fit size for 4GB SD Card
@@ -29,7 +39,7 @@ Features:
   - Recent current armv7 kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2017-09-02/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2017-10-07/
 
 Installed Packages:
   none
