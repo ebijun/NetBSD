@@ -1,0 +1,775 @@
+[  1098.276] 
+X.Org X Server 1.18.4
+Release Date: 2016-07-19
+[  1098.277] X Protocol Version 11, Revision 0
+[  1098.277] Build Operating System: NetBSD/evbarm 8.99.4 - The NetBSD Foundation, Inc.
+[  1098.277] Current Operating System: NetBSD rpi 8.99.4 NetBSD 8.99.4 (SUNXI) #0: Thu Oct 12 09:53:55 UTC 2017  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/SUNXI evbarm
+[  1098.278] Build Date: 14 August 2016  01:29:29AM
+[  1098.278]  
+[  1098.278] Current version of pixman: 0.34.0
+[  1098.278] 	Before reporting problems, check http://wiki.X.Org
+	to make sure that you have the latest version.
+[  1098.279] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  1098.279] (==) Log file: "/var/log/Xorg.0.log", Time: Tue Oct 17 22:21:29 2017
+[  1098.281] (II) Loader magic: 0x73ca94
+[  1098.281] (II) Module ABI versions:
+[  1098.281] 	X.Org ANSI C Emulation: 0.4
+[  1098.281] 	X.Org Video Driver: 20.0
+[  1098.281] 	X.Org XInput driver : 22.1
+[  1098.281] 	X.Org Server Extension : 9.0
+[  1098.283] (==) Using default built-in configuration (21 lines)
+[  1098.283] (==) --- Start of built-in configuration ---
+[  1098.283] 	Section "Device"
+[  1098.283] 		Identifier	"Builtin Default fbdev Device 0"
+[  1098.283] 		Driver	"fbdev"
+[  1098.283] 	EndSection
+[  1098.283] 	Section "Screen"
+[  1098.283] 		Identifier	"Builtin Default fbdev Screen 0"
+[  1098.283] 		Device	"Builtin Default fbdev Device 0"
+[  1098.283] 	EndSection
+[  1098.283] 	Section "Device"
+[  1098.283] 		Identifier	"Builtin Default wsfb Device 0"
+[  1098.283] 		Driver	"wsfb"
+[  1098.284] 	EndSection
+[  1098.284] 	Section "Screen"
+[  1098.284] 		Identifier	"Builtin Default wsfb Screen 0"
+[  1098.284] 		Device	"Builtin Default wsfb Device 0"
+[  1098.284] 	EndSection
+[  1098.284] 	Section "ServerLayout"
+[  1098.284] 		Identifier	"Builtin Default Layout"
+[  1098.284] 		Screen	"Builtin Default fbdev Screen 0"
+[  1098.284] 		Screen	"Builtin Default wsfb Screen 0"
+[  1098.284] 	EndSection
+[  1098.284] (==) --- End of built-in configuration ---
+[  1098.284] (==) ServerLayout "Builtin Default Layout"
+[  1098.285] (**) |-->Screen "Builtin Default fbdev Screen 0" (0)
+[  1098.285] (**) |   |-->Monitor "<default monitor>"
+[  1098.286] (**) |   |-->Device "Builtin Default fbdev Device 0"
+[  1098.286] (==) No monitor specified for screen "Builtin Default fbdev Screen 0".
+	Using a default monitor configuration.
+[  1098.286] (**) |-->Screen "Builtin Default wsfb Screen 0" (1)
+[  1098.286] (**) |   |-->Monitor "<default monitor>"
+[  1098.286] (**) |   |-->Device "Builtin Default wsfb Device 0"
+[  1098.287] (==) No monitor specified for screen "Builtin Default wsfb Screen 0".
+	Using a default monitor configuration.
+[  1098.287] (==) Not automatically adding devices
+[  1098.287] (==) Not automatically enabling devices
+[  1098.287] (==) Not automatically adding GPU devices
+[  1098.287] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  1098.289] (==) FontPath set to:
+	/usr/X11R7/lib/X11/fonts/misc/,
+	/usr/X11R7/lib/X11/fonts/TTF/,
+	/usr/X11R7/lib/X11/fonts/Type1/,
+	/usr/X11R7/lib/X11/fonts/75dpi/,
+	/usr/X11R7/lib/X11/fonts/100dpi/
+[  1098.289] (==) ModulePath set to "/usr/X11R7/lib/modules"
+[  1098.289] (==) |-->Input Device "<default pointer>"
+[  1098.289] (==) |-->Input Device "<default keyboard>"
+[  1098.289] (==) The core pointer device wasn't specified explicitly in the layout.
+	Using the default mouse configuration.
+[  1098.289] (==) The core keyboard device wasn't specified explicitly in the layout.
+	Using the default keyboard configuration.
+[  1098.289] (II) LoadModule: "glx"
+[  1098.293] (II) Loading /usr/X11R7/lib/modules/extensions/libglx.so
+[  1098.295] (II) Module glx: vendor="X.Org Foundation"
+[  1098.295] 	compiled for 1.18.4, module version = 1.0.0
+[  1098.295] 	ABI class: X.Org Server Extension, version 9.0
+[  1098.295] (==) AIGLX enabled
+[  1098.296] (II) LoadModule: "fbdev"
+[  1098.306] (WW) Warning, couldn't open module fbdev
+[  1098.306] (II) UnloadModule: "fbdev"
+[  1098.306] (II) Unloading fbdev
+[  1098.306] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[  1098.306] (II) LoadModule: "wsfb"
+[  1098.309] (II) Loading /usr/X11R7/lib/modules/drivers/wsfb_drv.so
+[  1098.310] (II) Module wsfb: vendor="X.Org Foundation"
+[  1098.310] 	compiled for 1.18.4, module version = 0.4.0
+[  1098.310] 	ABI class: X.Org Video Driver, version 20.0
+[  1098.310] (II) LoadModule: "mouse"
+[  1098.313] (II) Loading /usr/X11R7/lib/modules/drivers/mouse_drv.so
+[  1098.314] (II) Module mouse: vendor="X.Org Foundation"
+[  1098.314] 	compiled for 1.18.4, module version = 1.9.2
+[  1098.314] 	Module class: X.Org XInput Driver
+[  1098.314] 	ABI class: X.Org XInput driver, version 22.1
+[  1098.314] (II) LoadModule: "kbd"
+[  1098.316] (II) Loading /usr/X11R7/lib/modules/drivers/kbd_drv.so
+[  1098.317] (II) Module kbd: vendor="X.Org Foundation"
+[  1098.317] 	compiled for 1.18.4, module version = 1.9.0
+[  1098.318] 	Module class: X.Org XInput Driver
+[  1098.318] 	ABI class: X.Org XInput driver, version 22.1
+[  1098.318] (II) wsfb: driver for wsdisplay framebuffer: wsfb
+[  1098.319] (--) Using wscons driver on /dev/ttyE1 in pcvt compatibility mode (version 3.32)
+[  1098.319] (--) using VT number 2
+[  1098.334] (WW) Falling back to old probe method for wsfb
+[  1098.335] (II) wsfb(0): using default device
+[  1098.335] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  1098.335] (II) wsfb(0): Creating default Display subsection in Screen section
+	"Builtin Default wsfb Screen 0" for depth/fbbpp 24/32
+[  1098.335] (==) wsfb(0): Depth 24, (==) framebuffer bpp 32
+[  1098.335] (II) fbi_flags: 1
+[  1098.335] (II) masks generated: 00ff0000 0000ff00 000000ff
+[  1098.336] (==) wsfb(0): RGB weight 888
+[  1098.336] (==) wsfb(0): Default visual is TrueColor
+[  1098.336] (==) wsfb(0): Using gamma correction (1.0, 1.0, 1.0)
+[  1098.336] (II) wsfb(0): Vidmem: 1875k
+[  1098.336] (==) wsfb(0): DPI set to (96, 96)
+[  1098.336] (==) wsfb(0): Using HW cursor
+[  1098.336] (II) Loading sub module "fb"
+[  1098.336] (II) LoadModule: "fb"
+[  1098.341] (II) Loading /usr/X11R7/lib/modules/libfb.so
+[  1098.342] (II) Module fb: vendor="X.Org Foundation"
+[  1098.342] 	compiled for 1.18.4, module version = 1.0.0
+[  1098.343] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  1098.343] (II) Loading sub module "ramdac"
+[  1098.343] (II) LoadModule: "ramdac"
+[  1098.343] (II) Module "ramdac" already built-in
+[  1098.343] (--) Depth 24 pixmap format is 32 bpp
+[  1098.346] (==) wsfb(0): Backing store enabled
+[  1098.347] (WW) No HW cursor support found
+[  1098.347] (==) RandR enabled
+[  1098.398] (II) AIGLX: Screen 0 is not DRI2 capable
+[  1098.398] (EE) AIGLX: reverting to software rendering
+[  1098.415] (II) AIGLX: enabled GLX_MESA_copy_sub_buffer
+[  1098.418] (II) AIGLX: Loaded and initialized swrast
+[  1098.418] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[  1099.532] (II) XKB: Reusing cached keymap
+[  1099.545] (II) Using input driver 'mouse' for '<default pointer>'
+[  1099.545] 	Option "CorePointer" "on"
+[  1099.545] 	Option "driver" "mouse"
+[  1099.545] 	Option "identifier" "<default pointer>"
+[  1099.545] (**) Option "CorePointer" "on"
+[  1099.545] (**) <default pointer>: always reports core events
+[  1099.546] (WW) <default pointer>: No Device specified, looking for one...
+[  1099.546] (II) <default pointer>: found Device "/dev/wsmouse"
+[  1099.576] (--) <default pointer>: Device: "/dev/wsmouse"
+[  1099.577] (==) <default pointer>: Protocol: "WSMouse"
+[  1099.577] (**) Option "CorePointer" "on"
+[  1099.577] (**) <default pointer>: always reports core events
+[  1099.577] (**) Option "Device" "/dev/wsmouse"
+[  1099.606] (==) <default pointer>: Emulate3Buttons, Emulate3Timeout: 50
+[  1099.607] (**) <default pointer>: ZAxisMapping: buttons 4 and 5
+[  1099.607] (**) <default pointer>: Buttons: 9
+[  1099.607] (II) XINPUT: Adding extended input device "<default pointer>" (type: MOUSE, id 6)
+[  1099.608] (**) <default pointer>: (accel) keeping acceleration scheme 1
+[  1099.608] (**) <default pointer>: (accel) acceleration profile 0
+[  1099.608] (**) <default pointer>: (accel) acceleration factor: 2.000
+[  1099.608] (**) <default pointer>: (accel) acceleration threshold: 4
+[  1099.608] (**) Option "Device" "/dev/wsmouse"
+[  1099.609] (II) Using input driver 'kbd' for '<default keyboard>'
+[  1099.609] 	Option "CoreKeyboard" "on"
+[  1099.609] 	Option "driver" "kbd"
+[  1099.609] 	Option "identifier" "<default keyboard>"
+[  1099.610] (**) Option "CoreKeyboard" "on"
+[  1099.610] (**) <default keyboard>: always reports core events
+[  1099.610] (**) Option "CoreKeyboard" "on"
+[  1099.610] (**) <default keyboard>: always reports core events
+[  1099.610] (**) Option "Protocol" "wskbd"
+[  1099.611] (--) <default keyboard>: Keyboard type: USB
+[  1099.611] (**) Option "XkbRules" "base"
+[  1099.611] (**) Option "XkbModel" "pc105"
+[  1099.611] (**) Option "XkbLayout" "us"
+[  1099.611] (II) XINPUT: Adding extended input device "<default keyboard>" (type: KEYBOARD, id 7)
+[  1099.612] (II) XKB: Reusing cached keymap
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+select returned 0
+[  1122.114] (II) closing /dev/wskbd
+[  1122.117] (II) UnloadModule: "kbd"
+[  1122.118] (II) UnloadModule: "mouse"
+[  1122.376] (II) Server terminated successfully (0). Closing log file.
