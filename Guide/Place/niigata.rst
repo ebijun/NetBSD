@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2015-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -20,7 +20,7 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-新潟
+新潟/長岡
 -------
 
 Maps:
@@ -47,7 +47,8 @@ Maps:
  2009 Niigata ,8/1,130,11,新潟国際情報大学
  2010 Niigata,10/23,130,14,新潟大学
  2015 Niigata,9/5,130,17,ほんぽーと新潟市立中央図書館
- 2016 Nagaoka,10/1,,13,まちなかキャンパス長岡
+ 2016 Nagaoka,10/1,100,13,まちなかキャンパス長岡
+ 2017 Nagaoka,10/28,,12,長岡技術科学大学
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,9 +61,10 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
  
- 96,OSC2016長岡,http://www.soum.co.jp/~jun/OSC2016nagaoka.pdf
- 77,OSC2015新潟,http://www.soum.co.jp/~jun/OSC2015niigata.pdf
- 1,OSC2010新潟,http://www.soum.co.jp/~jun/OSC2010niigata.pdf
+ 116,OSC2017長岡,http://www.re.soum.co.jp/~jun/OSC2017nagaoka.pdf
+ 96,OSC2016長岡,http://www.re.soum.co.jp/~jun/OSC2016nagaoka.pdf
+ 77,OSC2015新潟,http://www.re.soum.co.jp/~jun/OSC2015niigata.pdf
+ 1,OSC2010新潟,http://www.re.soum.co.jp/~jun/OSC2010niigata.pdf
 
 togetterまとめ
 ~~~~~~~~~~~~~~~
@@ -70,7 +72,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2016長岡 NetBSDブース展示の記録,
+ OSC2017長岡 NetBSDブース展示の記録,
+ OSC2016長岡 NetBSDブース展示の記録,https://togetter.com/li/1031383
  OSC2015新潟 NetBSDブース展示の記録,http://togetter.com/li/869752
 
 よく行く店
@@ -117,6 +120,35 @@ togetterまとめ
  ユウピット電子,本町,電子部品
  パラダイスガラッジ,関原町,懐かしおもちゃ
  ミヤウチショウガカレー研究所,宮内,なぜかテクノ。なぜか生姜。
+
+2016年
+---------------
+
+.. image::  ../Picture/2016/09/30/DSC_2427.JPG
+.. image::  ../Picture/2016/09/30/DSC_2428.JPG
+.. image::  ../Picture/2016/10/01/1475289921786.jpg
+.. image::  ../Picture/2016/10/01/1475290318138.jpg
+.. image::  ../Picture/2016/10/01/1475290356132.jpg
+.. image::  ../Picture/2016/10/01/DSC09118.JPG
+.. image::  ../Picture/2016/10/01/DSC09119.JPG
+.. image::  ../Picture/2016/10/01/DSC_2430.JPG
+.. image::  ../Picture/2016/10/01/DSC_2431.JPG
+.. image::  ../Picture/2016/10/01/DSC_2432.JPG
+.. image::  ../Picture/2016/10/01/DSC_2433.JPG
+.. image::  ../Picture/2016/10/01/DSC_2434.JPG
+.. image::  ../Picture/2016/10/01/DSC_2439.JPG
+.. image::  ../Picture/2016/10/01/DSC_2440.JPG
+.. image::  ../Picture/2016/10/01/DSC_2441.JPG
+.. image::  ../Picture/2016/10/01/DSC_2442.JPG
+.. image::  ../Picture/2016/10/01/DSC_2443.JPG
+.. image::  ../Picture/2016/10/01/DSC_2444.JPG
+.. image::  ../Picture/2016/10/01/DSC_2446.JPG
+.. image::  ../Picture/2016/10/01/DSC_2447.JPG
+.. image::  ../Picture/2016/10/01/DSC_2448.JPG
+.. image::  ../Picture/2016/10/01/DSC_2449.JPG
+.. image::  ../Picture/2016/10/01/DSC_2453.JPG
+.. image::  ../Picture/2016/10/01/DSC_2454.JPG
+
 
 2015年
 ---------------
