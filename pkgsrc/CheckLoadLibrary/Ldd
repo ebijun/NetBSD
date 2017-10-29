@@ -1,0 +1,7 @@
+for i in /usr/pkg/bin/* 
+do
+	if CHECK=`ldd -f "%a:-l%o.%m => %p\n" $i |grep found`
+	then
+		echo $i $CHECK
+	fi
+done
