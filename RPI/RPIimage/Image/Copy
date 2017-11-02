@@ -4,11 +4,11 @@ DEVICE=rsd0d
 BOARD=raspi-earmv6hf
 #BOARD=armv7-earmv7hf
 
-#COMPRESS=-z
-#SUFFIX=.gz
+COMPRESS=-z
+SUFFIX=.gz
 
-DATE=`date +%Y-%m-%d`
-#DATE=2017-09-12
+#DATE=`date +%Y-%m-%d`
+DATE=2017-10-28
 
 progress $COMPRESS -f ${DATE}-netbsd-${BOARD}.img${SUFFIX} dd of=/dev/${DEVICE} bs=4m
 
