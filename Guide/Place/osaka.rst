@@ -35,7 +35,8 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
- オープンソースカンファレンス2017大阪展示の記録,
+ 関西オープンソース2017 NetBSDブース展示の記録,
+ オープンソースカンファレンス2017大阪展示の記録,https://togetter.com/li/1075115
  関西オープンソース2016 NetBSDブース展示の記録,https://togetter.com/li/1047263
  関西オープンソース2015 NetBSDブース展示の記録,https://togetter.com/li/896456
  関西オープンソース2014 NetBSDブース展示の記録,http://togetter.com/li/742243
@@ -102,7 +103,7 @@ Maps:
  なぜ謎マシン,KOF2011,http://www.ceres.dti.ne.jp/tsutsui/kof2011/Why-enigmatic-machines.html
  曽田さん受賞記念,KOF2010,
  EuroBSDCon2009,KOF2009,msaitohさんの参加報告
- 2004,NBUGみずのさんUSBsnoopy,
+ USBsnoopy,2004,NBUGみずのさん
 
 主な展示物
 ~~~~~~~~~~~~~~~~~
@@ -110,6 +111,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2017/1/17-18,大阪産業創造館,PC6001+PC6001VX
  2016/11/11-12,南港ATC,DreamCast with CF and SD RPI3+XM6i+NetBSD/x68k
  2015/11/6-7,南港ATC,Sun Ultra-5 RPI2+Xfce4
  2014/11/7-8,南港ATC,NetBSD/luna68k with mlterm-fb/libsixel/mikutter
