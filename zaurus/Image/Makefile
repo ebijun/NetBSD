@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-zaurus.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.13-zaurus-201504292340Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.34-zaurus-201607220120Z.iso
 PKGSRC=../../pkgsrc/pkgsrc-2015-05-23.tar.gz
 
 SETS=/mnt1/zaurus/binary/sets
@@ -57,7 +57,7 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	(cd ${MNT}/dev;./MAKEDEV all)
-	tar xzpf ${PKGSRC} -C ${MNT}/usr
+#	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mkdir ${MNT}/msdos
 	mkdir ${MNT}/kern
 	mkdir ${MNT}/proc
