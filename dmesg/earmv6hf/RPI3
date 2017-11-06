@@ -4,10 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.5 (RPI2) #0: Sun Nov  5 02:36:00 UTC 2017
+NetBSD 8.99.5 (RPI2) #0: Sun Nov  5 17:44:28 UTC 2017
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 944 MB
-avail memory = 923 MB
+avail memory = 927 MB
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0 core 0: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
@@ -58,6 +58,12 @@ bcmcm at obio0 not configured
 bcmpwm at obio0 not configured
 usb0 at dwctwo0: USB revision 2.0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
 cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
@@ -70,12 +76,6 @@ cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdmmc0 at sdhost0
 sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc1 at sdhc0 slot 0
@@ -87,10 +87,10 @@ ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x0b8001da:0x113>
 ld0: 29423 MB, 7472 cyl, 128 head, 63 sec, 512 bytes/sect x 60258304 sectors
 sdmmc1: unknown tuple code 0x80, length 2
 sdmmc1: unknown tuple code 0x80, length 3
-ld0: 55547904 trailing sectors not covered by disklabel
 sdmmc1: unknown tuple code 0x80, length 3
-ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 sdmmc1: unknown tuple code 0x80, length 7
+ld0: 55547904 trailing sectors not covered by disklabel
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 IPsec: Initialized Security Association Processing.
 (manufacturer 0x2d0, product 0xa9a6)at sdmmc1 function 1 not configured
 (manufacturer 0x2d0, product 0xa9a6)at sdmmc1 function 2 not configured
@@ -130,7 +130,7 @@ ld0: 55547904 trailing sectors not covered by disklabel
 ld0: 55547904 trailing sectors not covered by disklabel
 root file system type: ffs
 kern.module.path=/stand/evbarm/8.99.5/modules
-vchiq: vchiq_init_state: slot_zero = 0xcaae0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xcaaf0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 vchiq_get_state: g_state.remote->initialised != 1 (0)
