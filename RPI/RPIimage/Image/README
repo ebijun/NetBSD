@@ -21,6 +21,10 @@ Update:
 - Firmware after May 8, 2017 places APs in WFE state at boot. Add a "sev"
   after writing the start vector, otherwise secondary CPUs will not boot.
   http://mail-index.netbsd.org/source-changes/2017/11/04/msg089400.html
+- Disable USB_DEBUG by default
+  http://mail-index.netbsd.org/source-changes/2017/11/05/msg089416.html
+- Use IPL_VM and IST_MPSAFE instead of IPL_SCHED
+  http://mail-index.netbsd.org/source-changes/2017/11/05/msg089417.html
 - libc-12.208 -> libc-12.209
 - git-base-2.15.0
 - tzdata-2017c
