@@ -1,0 +1,12 @@
+DIR=`ls -t tmp* |head -1|sed -e 's/://'`
+ARCH=earmv6hf
+MACHINE=RPI3
+
+#COMMAND=ls
+#COMMAND=diff
+COMMAND=cp
+
+
+echo ${COMMAND} ${DIR}/dmesg    ../../../dmesg/${ARCH}/${MACHINE}
+echo ${COMMAND} ${DIR}/pkginfo  ../pkgsrc/pkginfo
+echo ${COMMAND} ${DIR}/sysinfo  sysinfo

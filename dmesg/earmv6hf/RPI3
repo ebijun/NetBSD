@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.5 (RPI2) #1: Sat Nov  4 22:09:09 JST 2017
-	jun@amiasp1.soum.co.jp:/usr/obj/kernel/earmv6hf/RPI2
+NetBSD 8.99.5 (RPI2) #0: Sun Nov  5 02:36:00 UTC 2017
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 944 MB
 avail memory = 923 MB
 timecounter: Timecounters tick every 10.000 msec
@@ -64,18 +64,18 @@ cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
 cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdmmc0 at sdhost0
 sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc1 at sdhc0 slot 0
@@ -87,6 +87,7 @@ ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x0b8001da:0x113>
 ld0: 29423 MB, 7472 cyl, 128 head, 63 sec, 512 bytes/sect x 60258304 sectors
 sdmmc1: unknown tuple code 0x80, length 2
 sdmmc1: unknown tuple code 0x80, length 3
+ld0: 55547904 trailing sectors not covered by disklabel
 sdmmc1: unknown tuple code 0x80, length 3
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 sdmmc1: unknown tuple code 0x80, length 7
@@ -123,7 +124,10 @@ uhid1 at uhidev2 reportid 2: input=3, output=0, feature=0
 uhub0: illegal enable change, port 1
 WARNING: 5 errors while detecting hardware; check system log.
 boot device: ld0
+ld0: 55547904 trailing sectors not covered by disklabel
 root on ld0a dumps on ld0b
+ld0: 55547904 trailing sectors not covered by disklabel
+ld0: 55547904 trailing sectors not covered by disklabel
 root file system type: ffs
 kern.module.path=/stand/evbarm/8.99.5/modules
 vchiq: vchiq_init_state: slot_zero = 0xcaae0000, is_master = 0
