@@ -6,16 +6,16 @@
 ARCH=earm
 GZIMG=rpi.img
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-05-14
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-06-18
 
 # set image file name
 #FILE=`date +%Y-%m-%d`-netbsd-bpi.img
 FILE=`date +%Y-%m-%d`-netbsd-bpi-${ARCH}.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.26-evbarm-${ARCH}-201603281740Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.30-evbarm-${ARCH}-201606132020Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2015Q4.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2016Q1.tar.gz
 
 # UBOOT
 BOARD=bananapi

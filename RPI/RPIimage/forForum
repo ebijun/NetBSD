@@ -1,29 +1,35 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2017-10-28/2017-10-28/g
-:1,$s/8.99.4/8.99.4/g
-:1,$s/201710202210Z/201710202210Z/g
-:1,$s?2017/10/22/msg004416.html?2017/10/22/msg004416.html?
+:1,$s/2017-11-10/2017-11-10/g
+:1,$s/8.99.5/8.99.5/g
+:1,$s/201711051750Z/201711051750Z/g
+:1,$s?2017/11/06/msg004432.html?2017/11/06/msg004432.html?
 
-2017-10-28-netbsd-raspi-earmv6hf.img
+2017-11-10-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2017 Nagaoka demonstration use,
-I've updated 2017-10-28-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Kansai Open Forum 2017 demonstration use,
+I've updated 2017-11-10-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2017/10/22/msg004416.html
+http://mail-index.netbsd.org/port-arm/2017/11/06/msg004432.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-10-28-earmv6hf/2017-10-28-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-10-earmv6hf/2017-11-10-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.4 evbarm-earmv6hf 201710202210Z rpi.img from nyftp.
-- https://w1.fi/security/2017-1/wpa-packet-number-reuse-with-replayed-messages.txt
-  http://mail-index.netbsd.org/source-changes/2017/10/16/msg088877.html
-- mikutter-3.5.12
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/10/17/msg165498.html
-- mlterm-3.8.3
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/10/20/msg165629.html
-- libstdc++.so.7 -> libstdc++.so.8
-  recompile icewm,fltk13,ttmkfdir,dillo
+- NetBSD-current 8.99.5 evbarm-earmv6hf 201711051750Z rpi.img from nyftp.
+- Ensure CNTVOFF is 0 before dropping out of Hyp mode
+  http://mail-index.netbsd.org/source-changes/2017/11/04/msg089406.html
+- Firmware after May 8, 2017 places APs in WFE state at boot. Add a "sev"
+  after writing the start vector, otherwise secondary CPUs will not boot.
+  http://mail-index.netbsd.org/source-changes/2017/11/04/msg089400.html
+- Disable USB_DEBUG by default
+  http://mail-index.netbsd.org/source-changes/2017/11/05/msg089416.html
+- Use IPL_VM and IST_MPSAFE instead of IPL_SCHED
+  http://mail-index.netbsd.org/source-changes/2017/11/05/msg089417.html
+- libc-12.208 -> libc-12.209
+- git-base-2.15.0
+- tzdata-2017c
+- mikutter-3.5.13
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/10/28/msg165991.html
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -38,6 +44,8 @@ dmesg:
 
 Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
+ changes:
+  https://github.com/ebijun/NetBSD/commit/b63fac3c92108db46aef2a71d4817dd6d83e61b9#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
 - webkit24-gtk-2.4.11nb9 compile failed.

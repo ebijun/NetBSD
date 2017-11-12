@@ -1,29 +1,35 @@
-VERSION: :1,$s/2017-10-28/2017-10-28/g
-ISO:     :1,$s/201710202210Z/201710202210Z/g
-NetBSD:  :1,$s/8.99.4/8.99.4/g
+VERSION: :1,$s/2017-11-10/2017-11-10/g
+ISO:     :1,$s/201711050240Z/201711050240Z/g
+NetBSD:  :1,$s/8.99.5/8.99.5/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-10-28-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2017-11-10-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-10-28-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2017-11-10-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-10-28-earmv6hf/2017-10-28-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-10-28-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-10-earmv6hf/2017-11-10-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-10-earmv6hf/MD5
 
 Update:
-- NetBSD-current 8.99.4 evbarm-earmv6hf 201710202210Z rpi.img from nyftp.
-- https://w1.fi/security/2017-1/wpa-packet-number-reuse-with-replayed-messages.txt
-  http://mail-index.netbsd.org/source-changes/2017/10/16/msg088877.html
-- mikutter-3.5.12
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/10/17/msg165498.html
-- mlterm-3.8.3
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/10/20/msg165629.html
-- libstdc++.so.7 -> libstdc++.so.8
-  recompile icewm,fltk13,ttmkfdir,dillo
+- NetBSD-current 8.99.5 evbarm-earmv6hf 201711050240Z rpi.img from nyftp.
+- Ensure CNTVOFF is 0 before dropping out of Hyp mode
+  http://mail-index.netbsd.org/source-changes/2017/11/04/msg089406.html
+- Firmware after May 8, 2017 places APs in WFE state at boot. Add a "sev"
+  after writing the start vector, otherwise secondary CPUs will not boot.
+  http://mail-index.netbsd.org/source-changes/2017/11/04/msg089400.html
+- Disable USB_DEBUG by default
+  http://mail-index.netbsd.org/source-changes/2017/11/05/msg089416.html
+- Use IPL_VM and IST_MPSAFE instead of IPL_SCHED
+  http://mail-index.netbsd.org/source-changes/2017/11/05/msg089417.html
+- libc-12.208 -> libc-12.209
+- git-base-2.15.0
+- tzdata-2017c
+- mikutter-3.5.13
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/10/28/msg165991.html
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -31,7 +37,7 @@ Overview:
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-10-28-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-10-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -45,7 +51,7 @@ dmesg:
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  updates:
- https://github.com/ebijun/NetBSD/commit/19a98a869aa5fbe436b0b87566d26a0485113f71#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/b63fac3c92108db46aef2a71d4817dd6d83e61b9#diff-d4129976a450502c6997b00f13b99222
 
 Problem:
 - CPUFLAGS=-mfpu=neon-vfpv4 breaks some programs
@@ -92,7 +98,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-10-28/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-11-10/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -100,7 +106,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-10-28-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-10-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -224,7 +230,7 @@ musica - DLNA/UPnP music server: (Thanx @cvsync)
   7. If you feel slow,Try {NetBSD/amd64 i386,OSX,Ubuntu} Version or improve NetBSD.
 
 XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
-  http://xm6i.org/download.html
+  http://www.pastel-flower.jp/~isaki/XM6i/
   XM6i-0.55-netbsd7.0-earmv6hf-2015Q2.tar.gz
   pkg_add wxGTK30-3.0.2nb6
   XXX: use wxGTK30-3.0.2nb6 for XM6i-0.55
@@ -233,10 +239,6 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
 
 Todo:
 - set2pkg: update via pkgsrc.
-- HDMI Display failure on X -- Fixed.
-  - On-Lap 2501M (reported from @matoken) -> Checking On-Lap Displays.
-    https://twitter.com/matoken/status/702656906251210753
-    https://twitter.com/matoken/status/886348730328260608
 - pkg_in/pkg_summary
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
 - https://github.com/isaki68k/sayaka: PHP/vala based twitter client.
@@ -271,16 +273,28 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2017 Nagaoka demonstration use, 
+For Kansai Open Forum 2017 demonstration use, 
 I've updated raspberry-pi image.
 
-https://www.ospn.jp/osc2017-nagaoka/
-https://www.ospn.jp/osc2017-nagaoka/modules/eguide/event.php?eid=3
+https://k-of.jp/2017/
+
+Book Recommendations:
+ https://k-of.jp/2017/session/1067
+  https://honto.jp/netstore/pd-book_28654677.html
+  https://honto.jp/netstore/pd-book_28488706.html
+  https://honto.jp/netstore/pd-book_28429933.html
+
+BSD BOF: Nov.11 16:00-16:50
+ https://k-of.jp/2017/session/984 
+
+Booth:
+ https://k-of.jp/2017/session/983
+
 https://www.slideshare.net/junebihara18/netbsd-workshop
 https://www.facebook.com/NetBSD.jp 
-https://www.facebook.com/events/304865093311472/
+https://www.facebook.com/events/1639249286137922/
 
-- NetBSD 8.99.4 earmv6hf rpi.img.gz base
+- NetBSD 8.99.5 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -318,7 +332,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-10-28/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-11-10/
 
 Installed Packages:
   bash

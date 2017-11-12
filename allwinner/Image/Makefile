@@ -3,11 +3,11 @@
 ARCH=earmv7hf
 #ARCH=earm
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-05-14
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/allwinner/${ARCH}/2016-11-19
 #;ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv7hf/7.0/All
  
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.30-evbarm-${ARCH}-201606081850Z.iso
+IMAGE=/usr/release/images/NetBSD-7.99.42-evbarm-${ARCH}-201611121350Z.iso
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-cubieboard2-${ARCH}.img
