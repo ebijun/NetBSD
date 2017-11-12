@@ -111,7 +111,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
- 2017/1/17-18,大阪産業創造館,PC6001+PC6001VX
+ 2017/1/27-28,大阪産業創造館,PC6001+PC6001VX
  2016/11/11-12,南港ATC,DreamCast with CF and SD RPI3+XM6i+NetBSD/x68k
  2015/11/6-7,南港ATC,Sun Ultra-5 RPI2+Xfce4
  2014/11/7-8,南港ATC,NetBSD/luna68k with mlterm-fb/libsixel/mikutter
