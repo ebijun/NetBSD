@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.1 (GENERIC) #0: Sun Jun  4 09:08:06 UTC 2017
+NetBSD 8.99.7 (GENERIC) #0: Sat Nov 18 00:25:43 UTC 2017
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1982 MB
@@ -19,7 +19,6 @@ ACPI: RSDP 0x00000000000FE020 000024 (v02 ACER  )
 ACPI: XSDT 0x000000007F4FE120 000064 (v01 ACER   ACER     00000001      01000013)
 ACPI: FACP 0x000000007F4FC000 0000F4 (v04 ACER   ACER     00000001 1025 01000013)
 ACPI: DSDT 0x000000007F4F1000 0063CC (v01 ACER   ACER     00000001 1025 01000013)
-ACPI: FACS 0x000000007F488000 000040
 ACPI: FACS 0x000000007F488000 000040
 ACPI: SSDT 0x000000007F4FD000 0004C4 (v02 PmRef  CpuPm    00003000 INTL 20051117)
 ACPI: HPET 0x000000007F4FB000 000038 (v01 ACER   ACER     00000001 1025 01000013)
@@ -37,17 +36,17 @@ cpu0: package 0, core 0, smt 0
 cpu1 at mainbus0 apid 1
 cpu1: Intel(R) Atom(TM) CPU N270   @ 1.60GHz, id 0x106c2
 cpu1: package 0, core 0, smt 1
-acpi0 at mainbus0: Intel ACPICA 20170303
+acpi0 at mainbus0: Intel ACPICA 20171110
 acpi0: X/RSDT: OemId <ACER  ,ACER    ,00000001>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C39FE68C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3A0A64C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3B49C0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0x00000000C3B55C0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C39C571C 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C39D571C 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3B63DDC 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3B6FDDC 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -107,7 +106,7 @@ i915drmkms0: interrupting at ioapic0 pin 16 (i915)
 drm: initialized overlay support
 intelfb0 at i915drmkms0
 i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xdb2da000, size 1024x600, depth 32, stride 4096
+intelfb0: framebuffer at 0xdb2e7000, size 1024x600, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
@@ -120,6 +119,7 @@ hdafg0: ADC02 2ch: Mic In [Built-In]
 hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
 audio0 at hdafg0: full duplex, playback, capture, mmap, independent
 hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+hdafg0: Latency: 128 milliseconds
 ppb0 at pci0 dev 28 function 0: vendor 8086 product 27d0 (rev. 0x02)
 ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
 pci1 at ppb0 bus 1
@@ -158,7 +158,7 @@ usb3 at uhci3: USB revision 1.0
 ehci0 at pci0 dev 29 function 7: vendor 8086 product 27cc (rev. 0x02)
 ehci0: interrupting at ioapic0 pin 16
 ehci0: EHCI version 1.0
-ehci0: companion controllers, 2 ports each: uhci0 uhci1 uhci2 uhci3
+ehci0: 4 companion controllers, 2 ports each: uhci0 uhci1 uhci2 uhci3
 usb4 at ehci0: USB revision 2.0
 ppb3 at pci0 dev 30 function 0: vendor 8086 product 2448 (rev. 0xe2)
 pci4 at ppb3 bus 4
@@ -210,7 +210,6 @@ timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
 uhub0 at usb0: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-IPsec: Initialized Security Association Processing.
 uhub1 at usb1: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
 uhub2 at usb2: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
@@ -219,23 +218,24 @@ uhub3 at usb3: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.
 uhub3: 2 ports with 2 removable, self powered
 uhub4 at usb4: vendor 8086 (0x8086) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub4: 8 ports with 8 removable, self powered
+IPsec: Initialized Security Association Processing.
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 acpibat0: SONY LION rechargeable battery
 acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
+ehci0: handing over full speed device on port 1 to uhci0
 wd0 at atabus0 drive 0
 wd0: <TOSHIBA MK6476GSX>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
 wd0: 596 GB, 1240341 cyl, 16 head, 63 sec, 512 bytes/sect x 1250263728 sectors
-wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
-wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
-uvideo0 at uhub4 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
-video0 at uvideo0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100), WRITE DMA FUA, NCQ (32 tags)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA), NCQ (31 tags)
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/8.99.1/modules
+kern.module.path=/stand/i386/8.99.7/modules
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+uhub0: device problem, disabling port 1
 acpibat0: normal capacity on 'charge state'
