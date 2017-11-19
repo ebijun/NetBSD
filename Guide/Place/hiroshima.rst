@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-7 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -43,7 +43,8 @@ Maps:
  2013,10/6,200,21,サテライトキャンパスひろしま
  2014,9/20,200,26,サテライトキャンパスひろしま
  2015,9/19,170,23,サテライトキャンパスひろしま
- 2016,11/27,,27,サテライトキャンパスひろしま
+ 2016,11/27,210,27,サテライトキャンパスひろしま
+ 2017,11/26,,32,サテライトキャンパスひろしま
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -55,12 +56,13 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 100,OSC2016広島,http://www.soum.co.jp/~jun/OSC2016hiroshima.pdf
- 78,OSC2015広島,http://www.soum.co.jp/~jun/OSC2015hiroshima.pdf
- 63,OSC2014広島,http://www.soum.co.jp/~jun/OSC2014hiroshima.pdf
- 48,OSC2013広島,http://www.soum.co.jp/~jun/OSC2013hiroshima.pdf
- 33,OSC2012広島,http://www.soum.co.jp/~jun/OSC2012hiroshima.pdf
- 16,OSC2011広島,http://www.soum.co.jp/~jun/OSC2011hiroshima.pdf
+ 118,OSC2017広島,http://www.re.soum.co.jp/~jun/OSC2017hiroshima.pdf 
+ 100,OSC2016広島,http://www.re.soum.co.jp/~jun/OSC2016hiroshima.pdf
+ 78,OSC2015広島,http://www.re.soum.co.jp/~jun/OSC2015hiroshima.pdf
+ 63,OSC2014広島,http://www.re.soum.co.jp/~jun/OSC2014hiroshima.pdf
+ 48,OSC2013広島,http://www.re.soum.co.jp/~jun/OSC2013hiroshima.pdf
+ 33,OSC2012広島,http://www.re.soum.co.jp/~jun/OSC2012hiroshima.pdf
+ 16,OSC2011広島,http://www.re.soum.co.jp/~jun/OSC2011hiroshima.pdf
 
 togetterまとめ
 ~~~~~~~~~~~~~
@@ -74,7 +76,8 @@ togetterまとめ
  OSC2013広島,OSC2013 広島 NetBSDブース展示の記録,http://togetter.com/li/573243
  OSC2014広島,OSC2014 広島 NetBSDブース展示の記録,http://togetter.com/li/721414
  OSC2015広島,OSC2015 広島 NetBSDブース展示の記録,http://togetter.com/li/875487
- OSC2016広島,OSC2016 広島 NetBSDブース展示の記録,
+ OSC2016広島,OSC2016 広島 NetBSDブース展示の記録,https://togetter.com/li/1053125
+ OSC2017広島,OSC2017 広島 NetBSDブース展示の記録,
 
 OSC広島発表
 ~~~~~~~~~~~~~
@@ -92,6 +95,8 @@ OSC広島発表
  NetBSD/x68k 近況,OSC2014広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc14hi/
  今年は X68030 でもユーザストリームがしたい!,OSC2015広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc15hi/
  20年前のコードをNetBSDでメンテするということ,OSC2015広島,https://speakerdeck.com/tsutsui/osc2015kyoto-netbsd-and-old-machines
+ Re:X68030/25MHzから始めるユーザストリーム生活,OSC2016広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc16hi/
+ NetBSD/luna68kで「PSG音源の調べ」ふたたび,OSC2016広島,https://speakerdeck.com/tsutsui/osc2016-hiroshima-psg-tunes-on-netbsd-luna68k-again
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -149,6 +154,45 @@ OSC広島発表
  広島市郷土資料館,宇品,曲がった鉄骨と、かもじづくり。かもじって何？
  旧広島港湾事務所,宇品,広島唯一の明治時代の公共建築かつ被曝建物。
  
+2016年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2016/11/27/1480207136670.jpg
+.. image::  ../Picture/2016/11/27/1480207831332.jpg
+.. image::  ../Picture/2016/11/27/1480208018531.jpg
+.. image::  ../Picture/2016/11/27/1480208118150.jpg
+.. image::  ../Picture/2016/11/27/1480209015503.jpg
+.. image::  ../Picture/2016/11/27/1480209095654.jpg
+.. image::  ../Picture/2016/11/27/1480209316491.jpg
+.. image::  ../Picture/2016/11/27/1480224804622.jpg
+.. image::  ../Picture/2016/11/27/DSC_2760.JPG
+.. image::  ../Picture/2016/11/27/DSC_2769.JPG
+.. image::  ../Picture/2016/11/27/DSC_2770.JPG
+.. image::  ../Picture/2016/11/27/DSC_2771.JPG
+.. image::  ../Picture/2016/11/27/DSC_2772.JPG
+.. image::  ../Picture/2016/11/27/DSC_2773.JPG
+.. image::  ../Picture/2016/11/27/DSC_2778.JPG
+.. image::  ../Picture/2016/11/27/DSC_2779.JPG
+.. image::  ../Picture/2016/11/27/DSC_2780.JPG
+.. image::  ../Picture/2016/11/27/DSC_2781.JPG
+.. image::  ../Picture/2016/11/27/DSC_2782.JPG
+.. image::  ../Picture/2016/11/27/DSC_2783.JPG
+.. image::  ../Picture/2016/11/27/DSC_2784.JPG
+.. image::  ../Picture/2016/11/27/DSC_2785.JPG
+.. image::  ../Picture/2016/11/27/DSC_2786.JPG
+.. image::  ../Picture/2016/11/27/DSC_2787.JPG
+.. image::  ../Picture/2016/11/27/DSC_2788.JPG
+.. image::  ../Picture/2016/11/27/DSC_2789.JPG
+.. image::  ../Picture/2016/11/27/DSC_2791.JPG
+.. image::  ../Picture/2016/11/27/DSC_2797.JPG
+.. image::  ../Picture/2016/11/27/DSC_2798.JPG
+.. image::  ../Picture/2016/11/27/DSC_2799.JPG
+.. image::  ../Picture/2016/11/27/DSC_2800.JPG
+.. image::  ../Picture/2016/11/27/DSC_2801.JPG
+.. image::  ../Picture/2016/11/27/DSC_2802.JPG
+.. image::  ../Picture/2016/11/27/DSC_2803.JPG
+.. image::  ../Picture/2016/11/27/DSC_2807.JPG
+.. image::  ../Picture/2016/11/27/DSC_2809.JPG
 
 2015年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

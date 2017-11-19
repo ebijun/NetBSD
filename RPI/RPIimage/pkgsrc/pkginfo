@@ -17,14 +17,14 @@ gd-2.2.5            Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.36.11 Image loaders for gtk2
 giflib-5.1.4        GIF image format library
 git-base-2.15.0     GIT Tree History Storage Tool (base package)
-glib2-2.54.1        Some useful routines for C programming (glib2)
+glib2-2.54.2        Some useful routines for C programming (glib2)
 gobject-introspection-1.54.1 GObject Introspection
-gtk2+-2.24.31nb4    GIMP Toolkit v2 - libraries for building X11 user interfaces
-gtk3+-3.22.24       GIMP Toolkit v3 - libraries for building X11 user interfaces
+gtk2+-2.24.31nb5    GIMP Toolkit v2 - libraries for building X11 user interfaces
+gtk3+-3.22.25nb1    GIMP Toolkit v3 - libraries for building X11 user interfaces
 harfbuzz-1.5.1nb1   OpenType text shaping engine
 hicolor-icon-theme-0.17 Standard icon theme called hicolor
 icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
-icu-59.1nb2         Robust and full-featured Unicode services
+icu-59.1nb3         Robust and full-featured Unicode services
 jbigkit-2.1         JBIG-KIT lossless image compression library
 jpeg-9b             IJG's jpeg compression utilities
 libelf-0.8.13nb1    ELF object file access library
@@ -35,12 +35,12 @@ libgcrypt-1.8.1     GNU cryptographic library
 libgpg-error-1.27   Definitions of common error values for all GnuPG components
 libidn-1.33         Internationalized Domain Names command line tool
 libidn2-2.0.4       Convert internationalized domain names to/from ASCII Encoding
-libimagequant-2.11.0 High-quality conversion of RGBA images to 8-bit indexed-color
+libimagequant-2.11.3 High-quality conversion of RGBA images to 8-bit indexed-color
 libotf-0.9.13nb3    Library for handling OpenType fonts (OTF)
 libunistring-0.9.7  Unicode string library
 libwebp-0.6.0nb2    WebP image format library and tools
 libxkbcommon-0.7.2  Library to handle keyboard descriptions
-libxml2-2.9.6       XML parser library from the GNOME project
+libxml2-2.9.7       XML parser library from the GNOME project
 libxslt-1.1.30      XSLT parser library from the GNOME project
 libyaml-0.1.7       YAML 1.1 parser and emitter written in C
 lintpkgsrc-4.92nb2  Sanity checks on the complete pkgsrc tree
@@ -58,7 +58,7 @@ p5-Error-0.17025    Perl extension module for try/throw/catch exception handling
 p5-GSSAPI-0.28nb8   Perl extension providing access to the GSSAPIv2 library
 p5-IO-CaptureOutput-1.11.04nb3 Capture STDOUT and STDERR from Perl code, subprocesses, or XS
 p5-IO-Socket-INET6-2.72nb3 Perl object interface for AF_INET/AF_INET6 domain sockets
-p5-IO-Socket-SSL-2.051 Perl5 SSL socket interface class
+p5-IO-Socket-SSL-2.052 Perl5 SSL socket interface class
 p5-MailTools-2.19   Perl5 modules related to mail applications
 p5-Mozilla-CA-20160104nb2 Mozilla's CA cert bundle for Perl
 p5-Net-DNS-1.13     Perl5 module for DNS resolution
@@ -66,13 +66,13 @@ p5-Net-Domain-TLD-1.75nb1 Work with TLD names
 p5-Net-IP-1.26nb5   Perl extension for manipulating IPv4/IPv6 addresses
 p5-Net-LibIDN-0.12nb9 Perl bindings for GNU Libidn
 p5-Net-SMTP-SSL-1.04nb1 Perl5 module providing SSL support for Net::SMTP
-p5-Net-SSLeay-1.81nb1 Perl5 module for using OpenSSL
+p5-Net-SSLeay-1.82  Perl5 module for using OpenSSL
 p5-Socket6-0.28nb1  Perl5 module to support getaddrinfo() and getnameinfo()
 p5-TimeDate-2.30nb4 Perl5 TimeDate distribution
 pango-1.40.12       Library for layout and rendering of text
 pcre-8.41           Perl Compatible Regular Expressions library
 pcre2-10.30nb1      Perl Compatible Regular Expressions library (major version 2)
-perl-5.26.1         Practical Extraction and Report Language
+perl-5.26.1nb1      Practical Extraction and Report Language
 pkg_chk-2.0.8       Check installed package versions against pkgsrc
 png-1.6.34          Library for manipulating PNG images
 py27-cElementTree-2.7.14 C implementation of Python ElementTree API
@@ -98,7 +98,7 @@ ruby23-httpclient-2.8.3 HTTP accessing library for Ruby
 ruby23-instance_storage-1.0.0 Manage class instances with dictionary
 ruby23-locale-2.1.2 Pure ruby library which provides basic APIs for localization
 ruby23-memoist-0.16.0 Replacement of memoizable, memoize methods invocation
-ruby23-mikutter-3.5.13 Simple, powerful, and moeful twitter client
+ruby23-mikutter-3.5.14 Simple, powerful, and moeful twitter client
 ruby23-mini_portile2-2.3.0 Simple autoconf builder for developers
 ruby23-moneta-0.8.1 Unified interface to key/value stores
 ruby23-native-package-installer-1.0.4 Helper to install native packages on "gem install"
@@ -119,7 +119,7 @@ tiff-4.0.8nb1       Library and tools for reading and writing TIFF data files
 ttmkfdir2-20021109nb6 Tool that creates a fonts.scale file
 uim-1.8.6nb42       Multilingual input method library
 vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
-wget-1.19.1nb2      Retrieve files from the 'net via HTTP and FTP
+wget-1.19.1nb3      Retrieve files from the 'net via HTTP and FTP
 xli-1.17.0nb13      X11 Image Loading Utility
 xmlcatmgr-2.2nb1    XML and SGML catalog manager
 zsh-5.4.2           The Z shell
