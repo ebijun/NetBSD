@@ -1,815 +1,730 @@
-libtool-base-2.4.6  Generic shared library support script (the script itself)
-digest-20160304     Message digest wrapper utility
-gmake-4.1nb3        GNU version of 'make' utility
-mozilla-rootcerts-1.0.20170121nb6 Root CA certificates from the Mozilla Project
-libffi-3.2.1nb4     Foreign function interface
-python27-2.7.14     Interpreted, interactive, object-oriented programming language
-perl-5.26.0nb3      Practical Extraction and Report Language
-libxml2-2.9.4nb4    XML parser library from the GNOME project
-libelf-0.8.13nb1    ELF object file access library
-py27-expat-2.7.14   Python interface to expat
-pcre-8.41           Perl Compatible Regular Expressions library
-xmlcatmgr-2.2nb1    XML and SGML catalog manager
-glib2-2.52.3nb1     Some useful routines for C programming (glib2)
-shared-mime-info-1.8 Core database of common types
-jbigkit-2.1         JBIG-KIT lossless image compression library
-jpeg-9b             IJG's jpeg compression utilities
+GConf-2.32.4nb11    Configuration database system used by GNOME
+ORBit2-2.14.19nb4   High-performance CORBA ORB with C language support
+TECkit-2.5.3        Low-level toolkit to perform encoding conversions
+adwaita-icon-theme-3.24.0 Standard GNOME icons
+ansible-1.9.4nb2    SSH-based configuration management, deployment, and task execution
+anthy-9100h         Kana Kanji conversion system
+anthy-elisp-9100hnb5 Emacs lisp files for inputmethod/anthy
+apr-1.6.2           Apache Portable Runtime
+apr-util-1.6.0nb1   Apache Portable Runtime utilities
+aspell-0.60.6.1nb7  Spell checker with good multi-language support
+at-spi2-atk-2.25.1  Assistive Technology Service Provider Interface A11y Toolkit
+at-spi2-core-2.25.91 Assistive Technology Service Provider Interface Core
 atk-2.24.0          Set of interfaces for accessibility
-png-1.6.32          Library for manipulating PNG images
-icu-59.1nb1         Robust and full-featured Unicode services
-gdk-pixbuf2-2.36.9  Image loaders for gtk2
-harfbuzz-1.5.1nb1   OpenType text shaping engine
-lzo-2.10            Portable lossless data compression library
-tiff-4.0.8nb1       Library and tools for reading and writing TIFF data files
+atkmm-2.24.2nb4     C++ bindings for atk
+autoconf213-2.13nb6 Generates automatic source code configuration scripts (old version)
+autogen-5.18.10nb2  The Automated Text and Program Generation Tool
+avahi-0.6.32nb7     Facilitate service discovery on a local network
+babl-0.1.14         Dynamic pixel conversion library
+bash-4.4.012        The GNU Bourne Again Shell
+boehm-gc-7.6.0nb2   Garbage collection and memory leak detection for C and C++
+boost-libs-1.65.1nb1 Free, peer-reviewed portable C++ source libraries (binary libraries)
+cabextract-1.6      Microsoft cabinet (.CAB) file extractor
 cairo-1.14.10       Vector graphics library with cross-device output support
 cairo-gobject-1.14.10 Vector graphics library with cross-device output support
-pango-1.40.8        Library for layout and rendering of text
-fribidi-0.19.7      Free Implementation of the Unicode Bidirectional Algorithm
-enca-1.15           Extremely Naive Charset Analyser
-gtk2+-2.24.31nb4    GIMP Toolkit v2 - libraries for building X11 user interfaces
-libogg-1.3.2        Ogg project codecs library
-libvorbis-1.3.5     Library for the Ogg Vorbis audio encoding format
-libtheora-1.1.1nb2  Video codec for Ogg multimedia streaming
-lame-3.99.5nb3      Fast, high quality MP3 encoder
-xvidcore-1.3.3      ISO MPEG-4 compliant video codec
-dbus-glib-0.108     GLib bindings for the D-BUS message bus system
-libvdpau-1.1.1nb1   Video Decode and Presentation API for Unix
-avahi-0.6.32nb7     Facilitate service discovery on a local network
-nspr-4.16           Platform-neutral API for system level and libc like functions
-polkit-0.113nb3     Authorization Manager
-gdbm-1.13nb1        The GNU database manager
-pkgconf-1.3.5       API-driven pkg-config replacement
-spidermonkey17-17.0.0nb1 Standalone JavaScript implementation in C
-consolekit-1.0.2nb1 Framework for defining and tracking users, login sessions, and seats
-pulseaudio-11.0     Sound server for POSIX and Win32 systems
-nss-3.32nb1         Libraries to support development of security-enabled applications
-libidn-1.33         Internationalized Domain Names command line tool
-libIDL-0.8.14nb4    CORBA Interface Definition Language parser
-libass-0.13.7       Portable subtitle renderer for the ASS/SSA subtitle format
-libepoxy-1.4.3      Library for OpenGL function pointer management
-x264-devel-20170912 GPL licensed H.264 encoder
-libva-1.8.3         Video Acceleration API
-g95-0.93nb9         Fortran 95 compiler from g95.org
-ffmpeg3-3.3.4       Decoding, encoding and streaming software (v3.x)
-tex-tetex-3.0.44331 Supplementary files for updmap
-tex-texlive.infra-2017 Basic TeX Live infrastructure
-libproxy-0.4.15     Library that provides automatic proxy configuration management
-mpfr-3.1.6          GMP-based library for multiple-precision floating-point computations
-gettext-tools-0.19.8.1nb1 Tools for providing messages in different languages
-openjpeg-2.2.0      JPEG 2000 library
-xcb-util-0.4.0      XCB Utilities
-startup-notification-0.12nb3 X11 application startup notification library
-npth-1.5            New Portable Threads Library (nPth)
-tex-amsfonts-3.04   TeX fonts from the American Mathematical Society
-poppler-0.59.0      PDF rendering library
-web2c-2017          TeX implementation translating WEB to C
-tex-bibtex-0.99dnb2 Reference management software for LaTeX
-tdb-1.3.8           Small database system which uses files to store data
-popt-1.16nb1        Command line option parsing library
-readline-7.0        GNU library that can recall and edit previous input
-tex-cm-2014         Computer Modern fonts
-libcddb-1.3.2nb1    Library to access data on a CDDB server
-tex-graphics-def-2017.44697 Colour and graphics option files
-tex-pdftex-2016     TeX extension for direct creation of PDF
-pciids-20150907     Repository of PCI IDs (pci.ids database)
-zziplib-0.13.67     Library for ZIP archive handling
-dbus-1.10.20        Message bus system
-libvolume_id-0.81.1nb1 Library to provide file system type information
-luatex-1.0.4        Extended version of pdfTeX using Lua
-cppunit-1.14.0      C++ unit testing framework
-tex-etex-2.1.31600  TeX implementation filling the gap between TeX3 and NTS
-usbids-20081118     Repository of USB IDs (usb.ids database)
-tex-etex-pkg-2.7    E-TeX support package
-hal-info-20091130nb5 FreeDesktop hardware abstraction layer (info subpackage)
-tex-dvipdfmx-2016.41623 Supplementary files for dvipdfmx
-tex-plain-3.141592653.43076 The Plain TeX format
-bash-4.4.012        The GNU Bourne Again Shell
-gmp-6.1.2           Library for arbitrary precision arithmetic
-libltdl-2.4.6       Generic shared library support (libltdl abstraction library)
-libunistring-0.9.7  Unicode string library
-ghostscript-gpl-9.06nb13 Postscript interpreter
-tex-ae-1.4          Virtual fonts for T1 encoded CMR-fonts
-libcfg+-0.7.0       Command line and configuration file parsing library
-libsndfile-1.0.28nb2 Library for reading and writing audio files
-hicolor-icon-theme-0.13nb1 Standard icon theme called hicolor
-libtasn1-4.10       ASN.1 structure parser library
-nettle-3.3          Cryptographic library
-tex-mfware-2014     Supporting tools for use with MetaFont
-libgpg-error-1.27   Definitions of common error values for all GnuPG components
-ghostscript-9.05nb8 Meta-package for installing the preferred ghostscript version
-gsftopkk-1.19.2nb8  Tool to convert bitmaps to .pk format
-tex-knuth-local-2016 Knuth's local information
-tex-luatex-1.0.4    LuaTeX basic definition package
-libexif-0.6.21      EXIF file library
-tex-metafont-2014   METAFONT system for specifying fonts
-tex-tex-3.14159265  Plain TeX format
-tex-texlive-scripts-2017 TeX Live infrastructure programs
-xdvik-22.87.03nb1   Previewer for DVI files
-texlive-collection-basic-2017 Essential programs and files for TeX
-tex-latex-20170101.1 TeX macro package that defines LaTeX
-tex-latex-bin-2016  LaTeX executables
-tex-amsmath-2.16a   AMS mathematical facilities for LaTeX
-tex-amscls-2015     AMS document classes for LaTeX
-tex-graphics-1.2a   Standard LaTeX graphics
-tex-tools-2017      The LaTeX standard tools bundle
-tex-carlisle-2010   LaTeX packages created by David Carlisle
-zonetab-0           NetBSD zone.tab file
-libical-1.0nb3      Reference implementation of the iCalendar data type and format
-libatomic_ops-7.6.0 Multi-platform library of atomic operations by Hans Boehm
-boehm-gc-7.6.0nb2   Garbage collection and memory leak detection for C and C++
-tex-babel-3.10      Multilingual support for Plain TeX or LaTeX
-tex-babel-english-3.3q Babel support for English
-tex-colortbl-1.0a   Add colour to LaTeX tables
-tex-fancyhdr-3.9    Extensive control of page headers and footers in LaTeX2e
-pkgclean-20051116   Quickly clean up all work directories in pkgsrc
-tex-oberdiek-2017   Bundle of packages submitted by Heiko Oberdiek
-tex-geometry-5.6    Flexible and complete interface to document dimensions
-tex-hyperref-6.85a  Extensive support for hypertext in LaTeX
-tex-beton-2010      Use Concrete fonts
-tex-euler-2.5       Use AMS Euler fonts for math
-gsed-4.4            GNU implementation of sed, the POSIX stream editor
-tex-ms-2014         Various LaTeX packages by Martin Schroeder
-tex-minitoc-61      Produce a table of contents for each chapter, part or section
-tex-natbib-8.31b    Flexible bibliography support for BibTeX
-tex-avantgar-2014   Avantgarde font
-tex-bookman-2014    Bookman font
-tex-courier-2014    Adobe Type 1 "free" copies of Courier
-gnome-common-3.18.0 Generic M4 macros for GNOME development
-tex-url-3.4         Verbatim with URL-sensitive line breaks
-lcms2-2.8           Little Color Management System - a color management library
-tex-helvetic-2014   Adobe Helvetica fonts
-tex-symbol-2014     Symbol fonts for TeX
-zip-3.0nb3          Create/update ZIP files compatible with pkzip
-tex-ncntrsbk-2014   New Century Schoolbook fonts
-yasm-1.3.0          Complete rewrite of the NASM assembler with BSD license
-tex-palatino-2014   Palatino font family for TeX
-tex-times-2014      Select Adobe Times Roman (or equivalent) as default font
-tex-zapfchan-2014   Zapf Chancery fonts
-pkg_chk-2.0.8       Check installed package versions against pkgsrc
-tex-zapfding-2014   Dingbat typeface designed by Hermann Zapf
-tex-mptopdf-2016    Script to convert mpost to PDF
-tex-psnfss-9.2a.33946 Font support for common PostScript fonts
-tex-ltxmisc-2010.21927 Miscellaneous LaTeX packages
-iso-codes-3.75      List of country, language and currency names
-texlive-collection-latex-2017 Basic LaTeX packages
-tex-koma-script-3.23 Bundle of versatile classes and packages
-libusb-0.1.12nb4    USB access library (version 0)
-tex-xkeyval-2.7a    Macros for setting keys and class or package options
-tex-pgf-3.0.1a      PostScript and PDF graphics systems for TeX
-tex-beamer-3.42     LaTeX class for producing presentations and slides
-gnome-icon-theme-3.12.0nb2 Theme consisting of a set of icons for GNOME
-printproto-1.0.5    Print extension headers from X.org
-libXp-1.0.3         X Print Service Extension Library
-libusb1-1.0.20      USB Access Library (version 1)
-libpaper-1.1.24     Paper size handling library
-tex-crop-1.5        Support for cropmarks
-ttmkfdir2-20021109nb6 Tool that creates a fonts.scale file
-dejavu-ttf-2.37     DejaVu family of TrueType fonts
-unzip-6.0nb8        List, test and extract compressed files in a ZIP archive
-tex-booktabs-1.618033 Publication quality tables in LaTeX
-mng-2.0.3           Multiple-image Network Graphics (MNG) reference library
-apr-1.6.2           Apache Portable Runtime
-tex-caption-20160522 Customising captions in floating environments
-tex-eso-pic-2.0g    Add picture commands (or backgrounds) to every page
-tex-extsizes-1.4a   Extend the standard LaTeX classes' size options
-mm-common-0.9.10    Provides build infrastructure utilities for GNOME C++ libraries
-libsigc++-2.10.0    Type-safe callback system for C++ programs
-tex-fancyvrb-2.8    Sophisticated verbatim text
-libdaemon-0.14nb1   C library that eases the writing of UNIX daemons
-tex-lm-2.004nb2     Latin modern fonts in outline formats
-babl-0.1.14         Dynamic pixel conversion library
-tex-filehook-0.5d   Hooks for input files
-tex-etoolbox-2.4    e-TeX tools for LaTeX
-tex-csquotes-5.2b   Context sensitive quotation facilities
-tex-enumitem-3.5.2  Control layout of itemize, enumerate, and description
-tex-l3kernel-2017   LaTeX3 programming conventions
-tex-l3packages-2017 High-level LaTeX3 concepts
-tex-lualibs-2.5     Additional Lua functions for LuaTeX macro programmers
-gtar-base-1.29      The GNU tape archiver with remote magnetic tape support
-tex-luatexbase-1.3nb1 Basic resource management for LuaTeX code
-tex-luaotfload-2.8.2 OpenType layout system for Plain TeX and LaTeX
-tex-fontspec-2.6a   Advanced font selection in XeLaTeX and LuaLaTeX
-tex-fp-2010         Fixed point arithmetic
-tex-latexbug-1.0b   Bug-classification for LaTeX related bugs
-db4-4.8.30          Berkeley DB version 4 from Oracle
-getopt-1.1.6        Program to help shell scripts parse command-line parameters
-docbook-xml-4.5     XML DTD designed for computer documentation
-tex-l3experimental-2017.44864 Experimental LaTeX3 concepts
-tex-algorithms-0.1  Suite of tools for typesetting algorithms in pseudo-code
-xdg-utils-1.1.2     Tools to assist applications with various desktop integration tasks
-tex-listings-1.6    Typeset source code listings using LaTeX
-poppler-utils-0.59.0 PDF utilities (from poppler)
-libassuan-2.4.3     IPC library used by some of the other GnuPG related packages
-exiv2-0.25          Image metadata manipulation
-tex-mathspec-0.2b   Specify arbitrary fonts for mathematics in XeTeX
-hunspell-en_US-20060207 US American English dictionaries for hunspell
-tex-mathtools-1.19  Mathematical tools to use with amsmath
-fam-2.7.0nb9        File Alteration Monitor
-tex-mdwtools-1.05.4 Miscellaneous LaTeX tools by Mark Wooding
-tex-memoir-3.7f     Typeset fiction, non-fiction and mathematical books
-tex-metalogo-0.12   Extended TeX logo macros
-tex-microtype-2.7   Interface to the micro-typographic features of pdfTeX
-xetex-0.99997       TeX system with Unicode and modern font technologies
-findutils-4.6.0nb1  The GNU find, locate, updatedb, and xargs utilities
-flac-1.3.2          Free lossless audio codec
-tex-ntgclass-2010   European versions of standard classes
-tex-polytable-0.8.5 Tabular-like environments with named columns
-dvipdfmx-20170318   DVI to PDF converter with CID-keyed font support
-tex-psfrag-3.04     Replace strings in encapsulated PostScript figures
-giflib-5.1.4        GIF image format library
-tex-polyglossia-1.42.4nb1 An alternative to babel for XeLaTeX and LuaLaTeX
-swig-1.3.38nb1      Simplified Wrapper and Interface Generator (version 1)
-tex-powerdot-1.5a   A presentation class
-tex-ifplatform-0.3a Conditionals to test which platform is being used
-tex-auto-pst-pdf-0.6 Wrapper for pst-pdf (with some psfrag features)
-tex-pstricks-2.73a  PostScript macros for TeX
-tex-seminar-1.61    Make overhead slides
-jasper-2.0.12       Software-based reference implementation of the JPEG-2000 codec
-tex-subfig-1.3      Figures broken into subfigures
-tex-textcase-0.07   Case conversion ignoring mathematics, etc
-tex-thumbpdf-3.16nb2 Thumbnails for pdfTeX and dvips/ps2pdf
-gettext-lib-0.19.8.1 Internationalized Message Handling Library (libintl)
-tex-unicode-math-0.8d Unicode mathematics support for XeTeX and LuaTeX
-tex-realscripts-0.3d Access OpenType subscript and superscript glyphs
-tex-xltxtra-0.6     Extras files for LaTeX users of XeTeX
-monafonts-ttf-2.90nb1 Japanese TrueType fonts for "Mona" seen at 2ch.net
-ghostscript-fonts-8.11nb3 Postscript fonts for Aladdin Ghostscript
-tex-xetex-2016nb2   Unicode and OpenType-enabled TeX engine
-tex-circuitikz-0.8.3 Draw electrical networks with TikZ
-tex-blindtext-2.0   Producing 'blind' text for testing
-tex-ucs-2.2         Extended UTF-8 input encoding for LaTeX
-tex-pgfgantt-4.0    Draw Gantt charts with TikZ
-tex-pgfopts-2.1a    LaTeX package options with pgfkeys
-tex-pgfplots-1.13   LaTeX package to create normal/logarithmic plots
-tex-tikz-3dplot-2015 Coordinate transformation styles for 3d plotting in TikZ
-tex-tikz-cd-0.9e    Create commutative diagrams with TikZ
-tex-tikzinclude-1.0 Import TikZ images from colletions
-tex-tikzmark-1.3    Use TikZ's method of remembering a position on a page
-tex-tikzorbital-2015 Atomic and molecular orbitals using TiKZ
-tex-tikzpagenodes-1.1 A single TikZ node for the whole page
-glew-1.13.0         OpenGL Extension Wrangler Library
+cairomm-1.12.2      C++ API for cairo
 coinmp-1.8.3        Linear Programming solver library
-tex-tikzpfeile-1.0  Draw arrows using PGF/TikZ
-tex-tikzposter-2.0  Create scientific posters using TikZ
-tex-tikzscale-0.2.6 Resize pictures while respecting text size
-tex-tikzsymbols-4.02 Some symbols created using TikZ
-vte-0.38.4          Terminal widget with improved accessibility and I18N support
-tex-bera-2010nb1    Bera fonts
-tex-sauerj-2013     Bundle of utilities by Jonathan Sauer
-tex-soul-2.4        Hyphenation for letterspacing, underlining, and more
-tex-titlesec-2.10.2 Select alternative section titles
+consolekit-1.0.2nb1 Framework for defining and tracking users, login sessions, and seats
+cppunit-1.14.0      C++ unit testing framework
+cups-1.5.4nb16      Common UNIX Printing System (1.5 branch)
+curl-7.55.1nb1      Client that groks URLs
+cwrappers-20170611  pkgsrc compiler wrappers
+db4-4.8.30          Berkeley DB version 4 from Oracle
+dbus-1.10.20        Message bus system
+dbus-glib-0.108     GLib bindings for the D-BUS message bus system
+dejavu-ttf-2.37     DejaVu family of TrueType fonts
+desktop-file-utils-0.23 Utilities to manage desktop entries
+dialog-1.3.20170509 Display dialog boxes from shell scripts
+digest-20160304     Message digest wrapper utility
+docbook-xml-4.5     XML DTD designed for computer documentation
+dos2unix-7.3.4nb1   DOS/Mac to Unix and vice versa text file format converter
+dvipdfmx-20170318   DVI to PDF converter with CID-keyed font support
+dvipsk-5.997        DVI-to-PostScript translator
+elementary-xfce-icon-theme-0.8 Elementary icons forked, extended and maintained for Xfce
+emacs25-25.2nb1     GNU editing macros (editor)
+enca-1.15           Extremely Naive Charset Analyser
+enchant-1.6.0nb5    Generic spell checking library
+evince-2.32.0nb59   Document viewer
+exiv2-0.25          Image metadata manipulation
+fam-2.7.0nb9        File Alteration Monitor
+ffmpeg1-1.2.12nb7   Decoding, encoding and streaming software (v1.x)
+ffmpeg3-3.3.4       Decoding, encoding and streaming software (v3.x)
+ffmpegthumbnailer-2.0.8nb7 Lightweight video thumbnailer that can be used by file managers
+fftw-3.3.6pl1       Collection of fast C routines to compute DFTs
+findutils-4.6.0nb1  The GNU find, locate, updatedb, and xargs utilities
+firefox-54.0.1nb1   Web browser with support for extensions (version 54)
+flac-1.3.2          Free lossless audio codec
+fossil-2.2          High-reliability, distributed software configuration management
+fribidi-0.19.7      Free Implementation of the Unicode Bidirectional Algorithm
+g95-0.93nb9         Fortran 95 compiler from g95.org
+gd-2.2.5            Graphics library for the dynamic creation of images
+gdbm-1.13nb1        The GNU database manager
+gdbus-codegen-2.52.3 Generate code and/or documentation for one or more D-Bus interfaces
+gdk-pixbuf2-2.36.9  Image loaders for gtk2
+gdk-pixbuf2-xlib-2.36.9 Image loaders for gtk2
+gedit-2.30.4nb27    Lightweight GNOME2 text editor
+getopt-1.1.6        Program to help shell scripts parse command-line parameters
+gettext-lib-0.19.8.1 Internationalized Message Handling Library (libintl)
+gettext-tools-0.19.8.1nb1 Tools for providing messages in different languages
+ghostscript-9.05nb8 Meta-package for installing the preferred ghostscript version
+ghostscript-fonts-8.11nb3 Postscript fonts for Aladdin Ghostscript
+ghostscript-gpl-9.06nb13 Postscript interpreter
+giflib-5.1.4        GIF image format library
+git-base-2.14.1nb2  GIT Tree History Storage Tool (base package)
+gle-3.1.0nb4        GL subroutines for drawing tubing and extrusions
+glew-1.13.0         OpenGL Extension Wrangler Library
 glib-1.2.10nb11     Some useful routines for C programming (glib1)
+glib-networking-2.50.0 Network-related giomodules for glib
+glib2-2.52.3nb1     Some useful routines for C programming (glib2)
+glibmm-2.50.1       C++ bindings for glib
 glm-0.9.7.0         C++ mathematics library for graphics programming
-tex-xifthen-1.4.0   Extended conditional commands
-py27-setuptools-36.5.0 New Python packaging system
-tex-venndiagram-1.1 Creating Venn diagrams with TikZ
-tex-xypic-3.8.9     Flexible diagramming macros
-tex-a4wide-2010nb1  Wide a4 layout for LaTeX
-tex-everypage-1.1   LaTeX package for hooks to run on every page
+gmake-4.1nb3        GNU version of 'make' utility
+gmp-6.1.2           Library for arbitrary precision arithmetic
+gnome-common-3.18.0 Generic M4 macros for GNOME development
+gnome-icon-theme-3.12.0nb2 Theme consisting of a set of icons for GNOME
+gnome-vfs-2.24.4nb31 GNOME Virtual File System (v2)
+gnupg2-2.2.0nb1     GnuPG with OpenPGP and S/MIME capabilities
+gnutls-3.6.0        GNU Transport Layer Security library
+gobject-introspection-1.52.1 GObject Introspection
 gperf-3.1           GNU perfect hash function generator
-tex-background-2.1  Placement of background material on pages of a document
-tex-cellspace-1.6   Ensure minimal spacing of table cells
-tex-changebar-3.5c  Generate changebars in LaTeX documents
-tex-continue-0.1    Prints 'continuation' marks on recto pages of multipage documents
-tex-cooking-0.9bnb1 Typeset recipes
-tex-fmtcount-3.03   Display the value of a LaTeX counter in a variety of formats
-tex-datetime-2.60   Change format of \today with commands for current time
-tex-draftwatermark-1.2 Textual watermark package for LaTeX
-tex-tocloft-2.3f    Control table of contents, figures, etc. for LaTeX
-tex-easy-todo-20140101 To-do notes in a document
-tex-endfloat-2.5d   Move floats to the end with markers where they belong
-tex-europasscv-2017 Unofficial class for the new version of the Europass curriculum vitae
-p5-URI-1.72         Perl5 Uniform Resource Identifiers class (URI, RFC 2396)
+gpgme-1.9.0         GnuPG Made Easy
+graphite2-1.3.10    Cross-platform rendering for complex writing systems
+graphviz-2.40.1nb3  Graph Drawing Programs from AT&T Research and Lucent Bell Labs
+gsed-4.4            GNU implementation of sed, the POSIX stream editor
+gsftopkk-1.19.2nb8  Tool to convert bitmaps to .pk format
+gsl-2.4             The GNU Scientific Library
+gst-plugins1-base-1.12.2 Open source multimedia framework - Base plugins
+gstreamer0.10-0.10.36nb9 Open source multimedia framework
+gstreamer1-1.12.2   Open source multimedia framework
+gtar-base-1.29      The GNU tape archiver with remote magnetic tape support
+gtk2+-2.24.31nb4    GIMP Toolkit v2 - libraries for building X11 user interfaces
+gtk3+-3.22.20       GIMP Toolkit v3 - libraries for building X11 user interfaces
+gtkmm-2.24.5nb2     C++ interface to Gtk+ v2
+gtksourceview2-2.10.5nb28 Text widget that extends GTK2's GtkTextView widget
+gtksourceview3-3.24.3 Text widget that extends GTK3's GtkTextView widget
+gtkspell-2.0.16nb24 Spell checking GtkTextView widget
+gts-0.7.6           GNU Triangulated Surface Library
+guile20-2.0.14nb2   Official extension language for the GNU operating system (2.0 branch)
+gvfs-1.6.7nb29      Userspace virtual filesystem
+hal-0.5.14nb18      FreeDesktop hardware abstraction layer
+hal-info-20091130nb5 FreeDesktop hardware abstraction layer (info subpackage)
+harfbuzz-1.5.1nb1   OpenType text shaping engine
+hicolor-icon-theme-0.13nb1 Standard icon theme called hicolor
+hsqldb18-1.8.0.10   Relational database management system witten in pure Java
+hunspell-1.3.3nb5   Improved spellchecker
+hunspell-en_US-20060207 US American English dictionaries for hunspell
 hyphen-2.8.6nb3     Library for high quality hyphenation and justification
 icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
-tradcpp-0.5.2nb2    Traditional (K&R-style) C preprocessor
-xorg-cf-files-1.0.6nb3 Xorg imake rules
+icu-59.1nb1         Robust and full-featured Unicode services
+ilmbase-2.2.0nb2    High dynamic-range (HDR) image file format library and tools
 imake-1.0.7nb3      Imake and other utilities from modular X.org
-tex-exam-2.5        Package for typesetting exam scripts
-graphite2-1.3.10    Cross-platform rendering for complex writing systems
-tex-europecv-2014   Unofficial class for European curricula vitae
-libvpx-1.6.1nb1     On2 VP8 library from Google
-dialog-1.3.20170509 Display dialog boxes from shell scripts
-libao-1.2.0         Cross-platform audio library
-tex-pdfcomment-2.4  User-friendly interface to pdf annotations
-tex-lipsum-1.3      Easy access to the Lorem Ipsum dummy text
-tex-fixmetodonotes-0.2.2 Add notes on document development
-tex-flowfram-1.17   Create text frames for posters, brochures or magazines
-tex-supertabular-4.1a Multi-page tables package
-tex-glossaries-4.30 Create glossaries and lists of acronyms
-orc-0.4.27          Compiler for vector operations
-libart-2.3.21       High-performance 2D graphics library
-potrace-1.14        Utility for transforming bitmaps into vector graphics
-tex-hyphenat-2.3c   Disable/enable hypenation in LaTeX
-tex-options-1.0     Provides convenient key-value options for LaTeX package writers
+inkscape-0.92.1nb10 Scalable Vector Graphics (SVG) editor
+ipafont-00303nb1    IPA JIS X 0213 fonts (Gothic, P Gothic, Mincho, and P Mincho)
+iso-codes-3.75      List of country, language and currency names
+jasper-2.0.12       Software-based reference implementation of the JPEG-2000 codec
+jbigkit-2.1         JBIG-KIT lossless image compression library
+jpeg-9b             IJG's jpeg compression utilities
+jq-1.5nb1           Command-line JSON processor
+koruri-ttf-20161105 Koruri Japanese TrueType fonts
+kpathsea-6.2.3      Path searching library for TeX-related files
+lame-3.99.5nb3      Fast, high quality MP3 encoder
+lcms-1.19nb3        Little Color Management System -- a color management library
+lcms2-2.8           Little Color Management System - a color management library
+libIDL-0.8.14nb4    CORBA Interface Definition Language parser
+libXp-1.0.3         X Print Service Extension Library
 liba52-0.7.4nb3     Free ATSC A/52 stream decoder library
-tex-envlab-1.2      Addresses on envelopes or mailing labels
+libabw-0.1.1nb8     Library for AbiWord documents
+libao-1.2.0         Cross-platform audio library
 libao-oss-1.2.0     Cross-platform audio library (OSS plugin)
-nasm-2.13.01        General-purpose x86 assembler
-tex-newlfm-9.4      Write letters, facsimiles, and memos
+libart-2.3.21       High-performance 2D graphics library
+libass-0.13.7       Portable subtitle renderer for the ASS/SSA subtitle format
+libassuan-2.4.3     IPC library used by some of the other GnuPG related packages
+libatomic_ops-7.6.0 Multi-platform library of atomic operations by Hans Boehm
+libcanberra-0.27nb8 Desktop event sound library
+libcddb-1.3.2nb1    Library to access data on a CDDB server
+libcdio-0.93nb4     CD-ROM access library
+libcdio-paranoia-0.93nb2 CD-ROM access library: CDDA support
+libcdr-0.1.3nb7     Corel Draw file format importer library
+libcfg+-0.7.0       Command line and configuration file parsing library
+libclucene-2.3.3.4nb9 Text search engine written in C++
+libcmis-0.5.1nb4    Client library for the CMIS interface
+libcroco-0.6.8      Toolkit to parse and manipulate CSS (Cascading Style Sheets)
+libcuefile-0rc475   CUE File library for the musepack decoder
+libdaemon-0.14nb1   C library that eases the writing of UNIX daemons
+libdiscid-0.6.2     Library for creating MusicBrainz DiscIDs
 libdvbpsi-1.3.1     PSI decoder and generator library for MPEG2 and DVB streams
 libdvdcss-1.4.0     Simple library designed for accessing DVDs
-ptexenc-1.3.5       Library for Japanese pTeX and its tools
-libdvdread-5.0.2    DVD access library
 libdvdnav-5.0.3     Library to navigate DVDs
 libdvdplay-1.0.1nb3 Simple API library designed for DVD navigation
-tex-lastpage-1.2m   Reference last page for Page N of M type footers
-tex-prosper-1.5     LaTeX class for high quality slides
-xorg-util-macros-1.19.1 Xorg autotool macros
-tex-leaflet-1.1b    Create small handouts (flyers)
-tex-longfbox-1.0    Draw framed boxes with standard CSS attributes that can break over multiple pages
+libdvdread-5.0.2    DVD access library
+libe-book-0.1.2nb12 Library for importing non-HTML reflowable e-book formats
+libelf-0.8.13nb1    ELF object file access library
+libepoxy-1.4.3      Library for OpenGL function pointer management
+libetonyek-0.1.6nb4 Library for Apple Office suite files
+libexif-0.6.21      EXIF file library
 libexttextcat-3.4.4nb1 Text categorization library
-tex-mdframed-1.9b   Framed environments that can split at page boundaries
+libffi-3.2.1nb4     Foreign function interface
+libfreehand-0.1.1nb11 Library for Adobe/Macromedia drawings
 libgcroots-0.2.3    Garbage collector supporting library
-py27-pygments-2.2.0 Python syntax highlighter
-tex-fontawesome-4.6.3.2 Font containing web-related icons
-tex-marvosym-2.2a   Martin Vogel's Symbols font
-tex-moderncv-2.0.0  Modern CV latex class
-tex-rotating-2.16b  Rotation tools including rotated full-page floats
-tex-undolabl-1.0l   Overriding of existing labels
-tex-pageslts-1.2f   Provide labels for the last page in each page numbering group
+libgcrypt-1.8.1     GNU cryptographic library
+libglade-2.6.4nb25  Runtime interpreter for GLADE GUI files
+libgltf-0.1.0nb1    Rendering library for glTF
+libgnome-keyring-3.12.0 GNOME password and secret manager
+libgpg-error-1.27   Definitions of common error values for all GnuPG components
+libgphoto2-2.5.8nb1 Digital camera access library
+libgsf-1.14.34nb1   GNOME2 structured file library
+libical-1.0nb3      Reference implementation of the iCalendar data type and format
 libid3tag-0.15.1bnb2 ID3 tag library, part of MAD (MPEG Audio Decoder)
-ilmbase-2.2.0nb2    High dynamic-range (HDR) image file format library and tools
-speex-1.2.0         Open-source, patent-free voice codec
-openexr-2.2.0nb3    High dynamic-range (HDR) image file format library and tools
-liboggz-1.1.1nb1    Inspects, edits, and validates Ogg files
-tex-secdot-1.0      Section numbers with trailing dots
+libidn-1.33         Internationalized Domain Names command line tool
+libidn2-2.0.4       Convert internationalized domain names to/from ASCII Encoding
+libimagequant-2.10.2 High-quality conversion of RGBA images to 8-bit indexed-color
+libixion-0.12.2nb2  General purpose formula parser & interpreter
+libksba-1.3.5nb1    X.509 library
+liblangtag-0.6.2    RFC 5646 language tag interface library
 liblive-20141211    Set of C++ libraries for multimedia streaming
+libltdl-2.4.6       Generic shared library support (libltdl abstraction library)
 libmad-0.15.1bnb1   High-quality MPEG audio decoder
-tex-svninfo-0.7.4   Typeset Subversion keywords
 libmodplug-0.8.8.5  Library for decoding mod-like music formats
 libmpeg2-0.5.1      Library for decoding mpeg-2 and mpeg-1 video streams
-tex-shadethm-20120818 Theorem environments that are shaded
-tex-incgraph-1.12   Sophisticated graphics inclusion in a PDF document
-tex-minted-2.5      Highlighted source code for LaTeX
-tex-tocbibind-1.5k  Add bibliography/index/contents to Table of Contents
-gpgme-1.9.0         GnuPG Made Easy
-libotf-0.9.13nb3    Library for handling OpenType fonts (OTF)
-tex-todonotes-1.0.5 Marking things to do in a LaTeX document
-fossil-2.2          High-reliability, distributed software configuration management
-tex-tufte-latex-3.5.2 Document classes inspired by the work of Edward Tufte
-tex-verbasef-1.1    VERBatim Automatic Splitting of External Files
-serf-1.3.9          High-performance asynchronous HTTP client library
-libshout-2.4.1      Connects and sends data to icecast servers
-tex-wallpaper-1.10nb1 Easy addition of wallpapers (background images) to LaTeX documents
-tex-xargs-1.1       Define commands with many optional arguments
-tex-pdfcrop-1.37nb2 Crop PDF graphics
-tex-xindy-2.5.1     General-purpose index processor
-at-spi2-atk-2.25.1  Assistive Technology Service Provider Interface A11y Toolkit
-libupnp-1.6.19      Portable Universal Plug and Play (UPnP) SDK
-neon-0.30.2         HTTP and WebDAV client library
-py27-cElementTree-2.7.14 C implementation of Python ElementTree API
-libxkbcommon-0.7.1  Library to handle keyboard descriptions
-libyaml-0.1.7       YAML 1.1 parser and emitter written in C
-lp_solve-5.5.2.3    Mixed Integer Linear Programming (MILP) solver
-m17n-db-1.7.0       The m17n database used by the m17n library
-at-spi2-core-2.25.91 Assistive Technology Service Provider Interface Core
-jq-1.5nb1           Command-line JSON processor
-gsl-2.4             The GNU Scientific Library
-gobject-introspection-1.52.1 GObject Introspection
-desktop-file-utils-0.23 Utilities to manage desktop entries
-gtk3+-3.22.20       GIMP Toolkit v3 - libraries for building X11 user interfaces
-gdbus-codegen-2.52.3 Generate code and/or documentation for one or more D-Bus interfaces
-libxfce4util-4.13.0 Xfce basic library
-xfce4-conf-4.12.1   Xfce client-server configuration storage and query system
-libxfce4ui-4.13.1   Xfce widget library
-xfce4-exo-0.11.3    Xfce extension library
-xfce4-terminal-0.8.5.1 Xfce terminal emulator
-ncurses-6.0nb4      CRT screen handling and optimization package
-uim-1.8.6nb42       Multilingual input method library
-ffmpeg1-1.2.12nb7   Decoding, encoding and streaming software (v1.x)
-ffmpegthumbnailer-2.0.8nb7 Lightweight video thumbnailer that can be used by file managers
-poppler-glib-0.59.0 PDF rendering library (GLib wrapper)
-libgsf-1.14.34nb1   GNOME2 structured file library
+libmspub-0.1.2nb12  Library for importing Microsoft Publisher content
 libmtp-1.1.13       Implementation of Media Transfer Protocol (MTP)
-curl-7.55.1nb1      Client that groks URLs
-tex-ifxetex-0.6     TeX package to determine if running under XeTeX
-libidn2-2.0.4       Convert internationalized domain names to/from ASCII Encoding
-openslp-1.2.1nb9    Open-source implementation of the Service Location Protocol
-xfce4-tumbler-0.1.32nb4 D-Bus thumbnailing service
-xfce4-garcon-0.6.1  Xfce menu library
-xfce4-appfinder-4.12.0nb4 Xfce application finder
-libglade-2.6.4nb25  Runtime interpreter for GLADE GUI files
-libwnck3-3.24.1     Library to write pagers and tasklists
-samba-3.6.25nb6     SMB/CIFS protocol server suite
-libcdio-0.93nb4     CD-ROM access library
-pwgen-2.07          Generate pronounceable passwords
-libcdio-paranoia-0.93nb2 CD-ROM access library: CDDA support
-ORBit2-2.14.19nb4   High-performance CORBA ORB with C language support
-GConf-2.32.4nb11    Configuration database system used by GNOME
-policykit-0.9nb20   Framework for managing admin policies and privileges
-tree-1.7.0          Print a text or HTML tree diagram of a directory structure
-hal-0.5.14nb18      FreeDesktop hardware abstraction layer
-guile20-2.0.14nb2   Official extension language for the GNU operating system (2.0 branch)
-autogen-5.18.10nb2  The Automated Text and Program Generation Tool
-gnutls-3.6.0        GNU Transport Layer Security library
-libgcrypt-1.8.1     GNU cryptographic library
-glib-networking-2.50.0 Network-related giomodules for glib
-libsoup-2.58.2nb1   HTTP library implementation in C
-libgnome-keyring-3.12.0 GNOME password and secret manager
-gvfs-1.6.7nb29      Userspace virtual filesystem
+libmusicbrainz-3.0.3nb5 MusicBrainz (user-maintained community music metadatabase) library v3
+libmwaw-0.3.7nb4    Import library for pre-OSX Mac text formats
 libnotify-0.7.6nb6  Desktop notification framework
-speexdsp-1.2rc3     Open-source, patent-free voice codec DSP library
-xfce4-panel-4.13.0  Xfce panel
-xfce4-thunar-1.6.11 Xfce file manager
-xfce4-desktop-4.13.1 Xfce desktop background manager
-xfce4-gtk2-engine-3.2.0nb4 Xfce GTK2 themes
-gtksourceview3-3.24.3 Text widget that extends GTK3's GtkTextView widget
-xfce4-mousepad-0.4.0nb5 Xfce text editor
-xcb-util-image-0.4.0 XCB port of Xlib's XImage and XShmImage
-xcb-util-keysyms-0.4.0 XCB Utilities
+liboauth-1.0.3nb4   Embeddable oauth 1.0 implementation
+libodfgen-0.1.6nb4  Library to generate ODF documents through libwpd and libwps
+libogg-1.3.2        Ogg project codecs library
+liboggz-1.1.1nb1    Inspects, edits, and validates Ogg files
+libotf-0.9.13nb3    Library for handling OpenType fonts (OTF)
+libpagemaker-0.0.3nb4 Library and utilities for Adobe PageMaker files
+libpaper-1.1.24     Paper size handling library
+libproxy-0.4.15     Library that provides automatic proxy configuration management
+libraw-0.17.2       Raw decoding/processing library
+libreoffice-5.4.1.2nb3 Office productivity suite from The Document Foundation
+libreplaygain-0rc475 ReplayGain library for the musepack decoder
+librevenge-0.0.4nb4 Base library for writing document import filters
+librsvg-2.40.15nb5  SVG library for GNOME
+libshout-2.4.1      Connects and sends data to icecast servers
+libsigc++-2.10.0    Type-safe callback system for C++ programs
+libsndfile-1.0.28nb2 Library for reading and writing audio files
+libsoup-2.58.2nb1   HTTP library implementation in C
+libspectre-0.2.8    Small library for rendering Postscript documents
+libstaroffice-0.0.2nb2 Library to import StarOffice documents
+libtasn1-4.10       ASN.1 structure parser library
+libtheora-1.1.1nb2  Video codec for Ogg multimedia streaming
+libtool-base-2.4.6  Generic shared library support script (the script itself)
+libtool-fortran-2.4.6 Generic shared library support script (the script itself, incl. Fortran)
+libunistring-0.9.7  Unicode string library
+libupnp-1.6.19      Portable Universal Plug and Play (UPnP) SDK
+libusb-0.1.12nb4    USB access library (version 0)
+libusb1-1.0.20      USB Access Library (version 1)
+libva-1.8.3         Video Acceleration API
+libvdpau-1.1.1nb1   Video Decode and Presentation API for Unix
+libvisio-0.1.5nb9   Library and tools for parsing the visio file format
+libvolume_id-0.81.1nb1 Library to provide file system type information
+libvorbis-1.3.5     Library for the Ogg Vorbis audio encoding format
+libvpx-1.6.1nb1     On2 VP8 library from Google
+libwebp-0.6.0nb2    WebP image format library and tools
+libwnck-2.30.6nb21  Library to write pagers and tasklists
+libwnck3-3.24.1     Library to write pagers and tasklists
+libwpd-0.10.1nb4    Library for importing and exporting WordPerfect(tm) documents
+libwpg-0.3.1nb5     Library for importing and converting Corel WordPerfect Graphics images
+libwps-0.4.3nb4     Library for importing Microsoft Works documents
+libxfce4ui-4.13.1   Xfce widget library
+libxfce4util-4.13.0 Xfce basic library
+libxkbcommon-0.7.1  Library to handle keyboard descriptions
+libxklavier-5.4nb2  High-level API for the X Keyboard Extension (XKB)
+libxml2-2.9.4nb4    XML parser library from the GNOME project
+libxslt-1.1.30      XSLT parser library from the GNOME project
+libyaml-0.1.7       YAML 1.1 parser and emitter written in C
+libzmf-0.0.1nb4     Library to parse Zoner Callisto/Draw documents
+lp_solve-5.5.2.3    Mixed Integer Linear Programming (MILP) solver
+lua52-5.2.4nb1      Powerful light-weight language for extending applications
+lua52-alt-getopt-0.7.0nb3 Lua API for getopt similar to getopt_long(3)
+luatex-1.0.4        Extended version of pdfTeX using Lua
+lzo-2.10            Portable lossless data compression library
+m17n-db-1.7.0       The m17n database used by the m17n library
+m17n-lib-1.7.0nb5   Multilingualization library
+m4-1.4.18           GNU version of UNIX m4 macro language processor
+makeindexk-2.15nb9  General purpose hierarchical index generator
+mm-common-0.9.10    Provides build infrastructure utilities for GNOME C++ libraries
+mng-2.0.3           Multiple-image Network Graphics (MNG) reference library
+monafonts-ttf-2.90nb1 Japanese TrueType fonts for "Mona" seen at 2ch.net
+mozilla-rootcerts-1.0.20170121nb6 Root CA certificates from the Mozilla Project
+mpfr-3.1.6          GMP-based library for multiple-precision floating-point computations
+ms-ttf-20020306nb6  TrueType fonts from Microsoft
+musepack-0rc475     MPEG-Plus and MusePack decoder (V8)
+mythes-1.2.3nb3     Simple thesaurus library
+nasm-2.13.01        General-purpose x86 assembler
+ncurses-6.0nb4      CRT screen handling and optimization package
+neon-0.30.2         HTTP and WebDAV client library
+netpbm-10.77.02     Toolkit for conversion of images between different formats
+nettle-3.3          Cryptographic library
+nkf-2.13nb3         Convert between various Japanese character encodings
+noto-ttf-20170410   Noto fonts for all languages
+npth-1.5            New Portable Threads Library (nPth)
+nspr-4.16           Platform-neutral API for system level and libc like functions
+nss-3.32nb1         Libraries to support development of security-enabled applications
+ohruri-ttf-20150606 Ohruri Japanese TrueType fonts
+openexr-2.2.0nb3    High dynamic-range (HDR) image file format library and tools
+openjdk8-1.8.144    Open-source implementation of the Java Platform, Standard Edition
+openjpeg-2.2.0      JPEG 2000 library
+openslp-1.2.1nb9    Open-source implementation of the Service Location Protocol
+orc-0.4.27          Compiler for vector operations
+orcus0.12-0.12.1nb2 Import filter library for spreadsheet documents (0.12 branch)
+osabi-NetBSD-8.99.2 Operating System version dummy-package
+p5-Authen-SASL-2.16nb5 Perl module to handle SASL authentication
+p5-Digest-HMAC-1.03nb7 Perl5 module for HMAC
+p5-Email-Valid-1.202nb1 Perl5 module for testing validity of an email address
+p5-Error-0.17025    Perl extension module for try/throw/catch exception handling
+p5-GSSAPI-0.28nb8   Perl extension providing access to the GSSAPIv2 library
+p5-IO-CaptureOutput-1.11.04nb3 Capture STDOUT and STDERR from Perl code, subprocesses, or XS
+p5-IO-Socket-INET6-2.72nb3 Perl object interface for AF_INET/AF_INET6 domain sockets
+p5-IO-Socket-SSL-2.051 Perl5 SSL socket interface class
+p5-MailTools-2.19   Perl5 modules related to mail applications
+p5-Mozilla-CA-20160104nb2 Mozilla's CA cert bundle for Perl
+p5-Net-DNS-1.12     Perl5 module for DNS resolution
+p5-Net-Domain-TLD-1.75nb1 Work with TLD names
+p5-Net-IP-1.26nb5   Perl extension for manipulating IPv4/IPv6 addresses
+p5-Net-LibIDN-0.12nb9 Perl bindings for GNU Libidn
+p5-Net-SMTP-SSL-1.04nb1 Perl5 module providing SSL support for Net::SMTP
+p5-Net-SSLeay-1.81nb1 Perl5 module for using OpenSSL
+p5-Socket6-0.28nb1  Perl5 module to support getaddrinfo() and getnameinfo()
+p5-TimeDate-2.30nb4 Perl5 TimeDate distribution
+p5-URI-1.72         Perl5 Uniform Resource Identifiers class (URI, RFC 2396)
+p7zip-16.02nb1      File archiver with high compression
+pango-1.40.8        Library for layout and rendering of text
+pangomm-2.40.1nb2   C++ bindings for pango
+pciids-20150907     Repository of PCI IDs (pci.ids database)
+pcre-8.41           Perl Compatible Regular Expressions library
+pcre2-10.30nb1      Perl Compatible Regular Expressions library (major version 2)
+perl-5.26.0nb3      Practical Extraction and Report Language
+pinentry-1.0.0      Applications for entering PINs or Passphrases
+pkg_chk-2.0.8       Check installed package versions against pkgsrc
+pkgclean-20051116   Quickly clean up all work directories in pkgsrc
+pkgconf-1.3.5       API-driven pkg-config replacement
+png-1.6.32          Library for manipulating PNG images
+podofo-0.9.5        Library to work with the PDF file format
+policykit-0.9nb20   Framework for managing admin policies and privileges
+polkit-0.113nb3     Authorization Manager
+poppler-0.59.0      PDF rendering library
+poppler-cpp-0.59.0  PDF rendering library (cpp wrapper)
+poppler-glib-0.59.0 PDF rendering library (GLib wrapper)
+poppler-utils-0.59.0 PDF utilities (from poppler)
+popt-1.16nb1        Command line option parsing library
+potrace-1.14        Utility for transforming bitmaps into vector graphics
+printproto-1.0.5    Print extension headers from X.org
+ptexenc-1.3.5       Library for Japanese pTeX and its tools
+pulseaudio-11.0     Sound server for POSIX and Win32 systems
+pwgen-2.07          Generate pronounceable passwords
+py27-OpenSSL-17.3.0 Python interface to the OpenSSL library
+py27-Socks-1.6.7    Python Socks module
+py27-alabaster-0.7.9 Configurable sidebar-enabled Sphinx theme
+py27-asn1-0.3.2     ITU Abstract Syntax Notification for Python
+py27-asn1crypto-0.22.0 Fast, pure Python library for parsing and serializing ASN.1 structures
+py27-awscli-1.11.129 Universal Command Line Interface for Amazon Web Services
+py27-babel-2.5.1    Collection of tools for internationalizing Python applications
+py27-boto-2.48.0    Python interface to Amazon web services
+py27-botocore-1.5.92 Low-level interface to a growing number of Amazon Web Services
+py27-cElementTree-2.7.14 C implementation of Python ElementTree API
+py27-certifi-2017.7.27.1 Python package for providing Mozilla's CA Bundle
+py27-cffi-1.10.0nb1 Foreign Function Interface for Python calling C code
+py27-chardet-3.0.4  Character encoding auto-detection in Python
+py27-colorama-0.3.9 Cross-platform coloured terminal text
+py27-cparser-2.18   C parser in Python
+py27-crypto-2.6.1nb3 Cryptographic and hash functions for Python
+py27-cryptography-2.0.3 Cryptographic recipes and primitives for Python
+py27-cython-0.26.1  C-Extensions for Python
+py27-dateutil-2.6.1 Extensions to the standard datetime module
+py27-docutils-0.14  Python tool to generate documents
+py27-ecdsa-0.13     Easy-to-use implementation of ECDSA cryptography
+py27-enum34-1.1.6   Python module for enums like in python-3.4
+py27-expat-2.7.14   Python interface to expat
+py27-filechunkio-1.8 Chunck files for input/output
+py27-futures-3.1.1  Library brings asynchronous computations from Python 3.x
+py27-idna-2.6       Python module for Internationalized Domain Names in Applications (IDNA)
+py27-imagesize-0.7.1 Parses image files' header and returns image size
+py27-ipaddress-1.0.18 Port of the python 3.3+ ipaddress module to 2.6 and 2.7
+py27-jinja2-2.9.6   Small but fast and easy to use stand-alone template engine
+py27-jmespath-0.9.3 JMESPath is a query language for JSON
+py27-lxml-4.0.0     Python binding for libxml2 and libxslt
+py27-markupsafe-1.0 Implements a unicode subclass that supports HTML strings
+py27-paramiko-1.18.2 SSH2 protocol library
+py27-pip-9.0.1      Installs Python packages as an easy_install replacement
+py27-pygments-2.2.0 Python syntax highlighter
+py27-pytz-2017.2    World timezone definitions, modern and historical
+py27-requests-2.18.4 HTTP library, written in Python, for human beings
+py27-roman-2.0.0    Integer to Roman numerals converter for Python
+py27-rsa-3.4.2      Pure-Python RSA implementation
+py27-s3transfer-0.1.10 Amazon S3 Transfer Manager
+py27-setuptools-36.5.0 New Python packaging system
+py27-six-1.11.0     Python 2 and 3 compatibility utilities
+py27-snowballstemmer-1.2.1 Python module with stemmer algorithms for multiple natural languages
+py27-sphinx-1.6.3   Python documentation generator
+py27-sphinx-rtd-theme-0.2.4 Sphinx readthedocs.org theme
+py27-sphinxcontrib-websupport-1.0.1 Sphinx API for Web Apps
+py27-typing-3.6.2   Type Hints for Python
+py27-urllib3-1.22   HTTP library with thread-safe connection pooling
+py27-yaml-3.12      Collection of libraries to process YAML with Python
+py36-expat-3.6.2    Python interface to expat
+python27-2.7.14     Interpreted, interactive, object-oriented programming language
 python36-3.6.2      Interpreted, interactive, object-oriented programming language
-xcb-util-wm-0.4.1   Client and window-manager helpers for ICCCM and EWMH
-xfce4-orage-4.12.1nb4 Xfce time managing application
-gstreamer0.10-0.10.36nb9 Open source multimedia framework
+qt4-libs-4.8.7nb7   C++ X GUI toolkit
+raptor2-2.0.15nb5   RDF Parser Toolkit written in C
+rarian-0.8.1nb4     Documentation metadata library
+rasqal-0.9.33nb5    Library that handles RDF query syntaxes
+readline-7.0        GNU library that can recall and edit previous input
+redland-1.0.17nb8   Libraries supporting the Resource Description Framework (RDF)
 resize_image-0.6nb5 Fast image resizing tool
 rpm2pkg-3.2.3       Convert RPM archives to NetBSD packages
 rsync-3.1.2         Network file distribution/synchronisation utility
-libcanberra-0.27nb8 Desktop event sound library
-libwnck-2.30.6nb21  Library to write pagers and tasklists
-libxklavier-5.4nb2  High-level API for the X Keyboard Extension (XKB)
-xfce4-settings-4.13.0 Xfce settings manager
-xfce4-session-4.13.0 Xfce session manager
-xfce4-wm-themes-4.10.0nb4 Xfce window manager themes
-cwrappers-20170611  pkgsrc compiler wrappers
-xfce4-xarchiver-0.5.4nb4 Xfce archiver handler
-taglib-1.11.1       Library for accessing id tags in various media files
-tcsh-6.20.00nb2     Extended C-shell with many useful features
-anthy-9100h         Kana Kanji conversion system
-xfce4-4.12.0nb7     Xfce
-firefox-54.0.1nb1   Web browser with support for extensions (version 54)
-py27-cython-0.26.1  C-Extensions for Python
-libxslt-1.1.30      XSLT parser library from the GNOME project
-py27-lxml-4.0.0     Python binding for libxml2 and libxslt
-gnome-vfs-2.24.4nb31 GNOME Virtual File System (v2)
-librevenge-0.0.4nb4 Base library for writing document import filters
-unixodbc-2.3.4      ODBC 2.x/3.x driver manager
-xmix-2.1nb3         Mixer for X Window System
-libcuefile-0rc475   CUE File library for the musepack decoder
-libreplaygain-0rc475 ReplayGain library for the musepack decoder
-musepack-0rc475     MPEG-Plus and MusePack decoder (V8)
-vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
-boost-libs-1.65.1nb1 Free, peer-reviewed portable C++ source libraries (binary libraries)
-libwpd-0.10.1nb4    Library for importing and exporting WordPerfect(tm) documents
-libwpg-0.3.1nb5     Library for importing and converting Corel WordPerfect Graphics images
-libcdr-0.1.3nb7     Corel Draw file format importer library
-libvisio-0.1.5nb9   Library and tools for parsing the visio file format
-aspell-0.60.6.1nb7  Spell checker with good multi-language support
-hunspell-1.3.3nb5   Improved spellchecker
-enchant-1.6.0nb5    Generic spell checking library
-gtkspell-2.0.16nb24 Spell checking GtkTextView widget
-glibmm-2.50.1       C++ bindings for glib
-atkmm-2.24.2nb4     C++ bindings for atk
-cairomm-1.12.2      C++ API for cairo
-pangomm-2.40.1nb2   C++ bindings for pango
-gtkmm-2.24.5nb2     C++ interface to Gtk+ v2
-inkscape-0.92.1nb10 Scalable Vector Graphics (SVG) editor
-cups-1.5.4nb16      Common UNIX Printing System (1.5 branch)
-podofo-0.9.5        Library to work with the PDF file format
-qt4-libs-4.8.7nb7   C++ X GUI toolkit
+samba-3.6.25nb6     SMB/CIFS protocol server suite
 scribus-1.4.3nb8    Publishing layout with graphical interface
-xfce4-wm-4.12.3nb3  Xfce window manager
-openjdk8-1.8.144    Open-source implementation of the Java Platform, Standard Edition
-hsqldb18-1.8.0.10   Relational database management system witten in pure Java
-py36-expat-3.6.2    Python interface to expat
-libksba-1.3.5nb1    X.509 library
-pinentry-1.0.0      Applications for entering PINs or Passphrases
-gnupg2-2.2.0nb1     GnuPG with OpenPGP and S/MIME capabilities
-libabw-0.1.1nb8     Library for AbiWord documents
-libe-book-0.1.2nb12 Library for importing non-HTML reflowable e-book formats
-liblangtag-0.6.2    RFC 5646 language tag interface library
-libetonyek-0.1.6nb4 Library for Apple Office suite files
-libfreehand-0.1.1nb11 Library for Adobe/Macromedia drawings
-libmspub-0.1.2nb12  Library for importing Microsoft Publisher content
-libpagemaker-0.0.3nb4 Library and utilities for Adobe PageMaker files
-libstaroffice-0.0.2nb2 Library to import StarOffice documents
-libwps-0.4.3nb4     Library for importing Microsoft Works documents
-libmwaw-0.3.7nb4    Import library for pre-OSX Mac text formats
-libzmf-0.0.1nb4     Library to parse Zoner Callisto/Draw documents
-libixion-0.12.2nb2  General purpose formula parser & interpreter
-libcroco-0.6.8      Toolkit to parse and manipulate CSS (Cascading Style Sheets)
-tex-2up-1.3         TeX package to print a document two-up
-xscreensaver-5.36   Screen saver and locker for the X window system
-orcus0.12-0.12.1nb2 Import filter library for spreadsheet documents (0.12 branch)
-apr-util-1.6.0nb1   Apache Portable Runtime utilities
-mythes-1.2.3nb3     Simple thesaurus library
-gle-3.1.0nb4        GL subroutines for drawing tubing and extrusions
-libgltf-0.1.0nb1    Rendering library for glTF
-fftw-3.3.6pl1       Collection of fast C routines to compute DFTs
-gdk-pixbuf2-xlib-2.36.9 Image loaders for gtk2
-librsvg-2.40.15nb5  SVG library for GNOME
-rarian-0.8.1nb4     Documentation metadata library
-koruri-ttf-20161105 Koruri Japanese TrueType fonts
-gstreamer1-1.12.2   Open source multimedia framework
-gst-plugins1-base-1.12.2 Open source multimedia framework - Base plugins
-libgphoto2-2.5.8nb1 Digital camera access library
-libcmis-0.5.1nb4    Client library for the CMIS interface
-poppler-cpp-0.59.0  PDF rendering library (cpp wrapper)
-libclucene-2.3.3.4nb9 Text search engine written in C++
-libodfgen-0.1.6nb4  Library to generate ODF documents through libwpd and libwps
-raptor2-2.0.15nb5   RDF Parser Toolkit written in C
-rasqal-0.9.33nb5    Library that handles RDF query syntaxes
-redland-1.0.17nb8   Libraries supporting the Resource Description Framework (RDF)
-libspectre-0.2.8    Small library for rendering Postscript documents
-libreoffice-5.4.1.2nb3 Office productivity suite from The Document Foundation
-evince-2.32.0nb59   Document viewer
-gtksourceview2-2.10.5nb28 Text widget that extends GTK2's GtkTextView widget
-cabextract-1.6      Microsoft cabinet (.CAB) file extractor
-ms-ttf-20020306nb6  TrueType fonts from Microsoft
-gedit-2.30.4nb27    Lightweight GNOME2 text editor
-ohruri-ttf-20150606 Ohruri Japanese TrueType fonts
-noto-ttf-20170410   Noto fonts for all languages
-elementary-xfce-icon-theme-0.8 Elementary icons forked, extended and maintained for Xfce
-py27-six-1.11.0     Python 2 and 3 compatibility utilities
-py27-dateutil-2.6.1 Extensions to the standard datetime module
-py27-roman-2.0.0    Integer to Roman numerals converter for Python
-py27-docutils-0.14  Python tool to generate documents
-py27-jmespath-0.9.3 JMESPath is a query language for JSON
-py27-botocore-1.5.92 Low-level interface to a growing number of Amazon Web Services
-dvipsk-5.997        DVI-to-PostScript translator
-py27-colorama-0.3.9 Cross-platform coloured terminal text
-py27-asn1-0.3.2     ITU Abstract Syntax Notification for Python
-py27-rsa-3.4.2      Pure-Python RSA implementation
-py27-futures-3.1.1  Library brings asynchronous computations from Python 3.x
-py27-s3transfer-0.1.10 Amazon S3 Transfer Manager
-libdiscid-0.6.2     Library for creating MusicBrainz DiscIDs
-libmusicbrainz-3.0.3nb5 MusicBrainz (user-maintained community music metadatabase) library v3
-py27-yaml-3.12      Collection of libraries to process YAML with Python
-py27-awscli-1.11.129 Universal Command Line Interface for Amazon Web Services
-m4-1.4.18           GNU version of UNIX m4 macro language processor
-autoconf213-2.13nb6 Generates automatic source code configuration scripts (old version)
-osabi-NetBSD-8.99.2 Operating System version dummy-package
-x11-links-1.06      Shadow tree of links to native X11 headers and libraries
-p5-Error-0.17025    Perl extension module for try/throw/catch exception handling
-tex-kpathsea-2016   Translation tables for TeX
-p5-TimeDate-2.30nb4 Perl5 TimeDate distribution
-p5-MailTools-2.19   Perl5 modules related to mail applications
-p5-Digest-HMAC-1.03nb7 Perl5 module for HMAC
-p5-Net-IP-1.26nb5   Perl extension for manipulating IPv4/IPv6 addresses
-p5-Socket6-0.28nb1  Perl5 module to support getaddrinfo() and getnameinfo()
-p5-IO-Socket-INET6-2.72nb3 Perl object interface for AF_INET/AF_INET6 domain sockets
-p5-Net-DNS-1.12     Perl5 module for DNS resolution
-p5-Net-Domain-TLD-1.75nb1 Work with TLD names
-p5-IO-CaptureOutput-1.11.04nb3 Capture STDOUT and STDERR from Perl code, subprocesses, or XS
-p5-Email-Valid-1.202nb1 Perl5 module for testing validity of an email address
-p5-Net-LibIDN-0.12nb9 Perl bindings for GNU Libidn
-liboauth-1.0.3nb4   Embeddable oauth 1.0 implementation
-p5-Net-SSLeay-1.81nb1 Perl5 module for using OpenSSL
-p5-Mozilla-CA-20160104nb2 Mozilla's CA cert bundle for Perl
-p5-IO-Socket-SSL-2.051 Perl5 SSL socket interface class
-p5-Net-SMTP-SSL-1.04nb1 Perl5 module providing SSL support for Net::SMTP
-p5-GSSAPI-0.28nb8   Perl extension providing access to the GSSAPIv2 library
-p5-Authen-SASL-2.16nb5 Perl module to handle SASL authentication
-pcre2-10.30nb1      Perl Compatible Regular Expressions library (major version 2)
-smartmontools-6.5   Control and monitor storage systems using SMART
-git-base-2.14.1nb2  GIT Tree History Storage Tool (base package)
-py27-alabaster-0.7.9 Configurable sidebar-enabled Sphinx theme
-py27-pytz-2017.2    World timezone definitions, modern and historical
-py27-babel-2.5.1    Collection of tools for internationalizing Python applications
-gd-2.2.5            Graphics library for the dynamic creation of images
-tex-babelbib-1.31   Multilingual bibliographies
-py27-markupsafe-1.0 Implements a unicode subclass that supports HTML strings
-tex-fix2col-2016    Fix miscellaneous two column mode features
-py27-imagesize-0.7.1 Parses image files' header and returns image size
-py27-jinja2-2.9.6   Small but fast and easy to use stand-alone template engine
-ipafont-00303nb1    IPA JIS X 0213 fonts (Gothic, P Gothic, Mincho, and P Mincho)
-py27-certifi-2017.7.27.1 Python package for providing Mozilla's CA Bundle
-tex-cmsd-2010       Interfaces to the CM Sans Serif Bold fonts
-py27-chardet-3.0.4  Character encoding auto-detection in Python
-tex-notoccite-2009  Prevent trouble from citations in table of contents, etc
-tex-texconfig-2017nb1 Configuration utility for TeX
-py27-cparser-2.18   C parser in Python
-tex-placeins-2.2    TeX command to control float placement
-lcms-1.19nb3        Little Color Management System -- a color management library
-py27-asn1crypto-0.22.0 Fast, pure Python library for parsing and serializing ASN.1 structures
-py27-cffi-1.10.0nb1 Foreign Function Interface for Python calling C code
-py27-idna-2.6       Python module for Internationalized Domain Names in Applications (IDNA)
-py27-enum34-1.1.6   Python module for enums like in python-3.4
-tcl-8.6.6nb2        Tool Command Language, a dynamic language
-tex-mfnfss-2009     Packages to typeset oldgerman and pandora fonts in LaTeX
-py27-ipaddress-1.0.18 Port of the python 3.3+ ipaddress module to 2.6 and 2.7
-py27-cryptography-2.0.3 Cryptographic recipes and primitives for Python
-py27-OpenSSL-17.3.0 Python interface to the OpenSSL library
-py27-Socks-1.6.7    Python Socks module
-tex-pslatex-2009    Use PostScript fonts by default
-py27-urllib3-1.22   HTTP library with thread-safe connection pooling
-tex-pspicture-2009  PostScript picture support
-libtool-fortran-2.4.6 Generic shared library support script (the script itself, incl. Fortran)
-tk-8.6.6            Graphical toolkit for TCL
-py27-typing-3.6.2   Type Hints for Python
-tex-anysize-15878   A simple package to set up document margins
-tex-footmisc-5.5b   Range of footnote options
-py27-requests-2.18.4 HTTP library, written in Python, for human beings
-tex-xcolor-2.12nb1  Driver-independent color extensions for LaTeX and pdfLaTeX
-libraw-0.17.2       Raw decoding/processing library
-py27-snowballstemmer-1.2.1 Python module with stemmer algorithms for multiple natural languages
-tex-xetexconfig-2016 Configuration files for XeTeX
-kpathsea-6.2.3      Path searching library for TeX-related files
-tex-breqn-0.98e     Automatic line breaking of displayed equations
-py27-sphinx-rtd-theme-0.2.4 Sphinx readthedocs.org theme
-py27-sphinxcontrib-websupport-1.0.1 Sphinx API for Web Apps
-py27-sphinx-1.6.3   Python documentation generator
-gts-0.7.6           GNU Triangulated Surface Library
-tex-cite-5.5        Improved citation handling in LaTeX
-libimagequant-2.10.2 High-quality conversion of RGBA images to 8-bit indexed-color
-libwebp-0.6.0nb2    WebP image format library and tools
-netpbm-10.77.02     Toolkit for conversion of images between different formats
-emacs25-25.2nb1     GNU editing macros (editor)
-tex-glyphlist-2016  Adobe glyph list
-graphviz-2.40.1nb3  Graph Drawing Programs from AT&T Research and Lucent Bell Labs
-m17n-lib-1.7.0nb5   Multilingualization library
-tex-dvips-2017      Files for a DVI to PostScript driver
-tex-enctex-2014     TeX extension for flexible input/output reencoding
-tex-hyphen-base-2017 TeX hyphenation patterns for English
-tex-misc-2012nb1    Miscellaneous files for TeX
-adwaita-icon-theme-3.24.0 Standard GNOME icons
-dos2unix-7.3.4nb1   DOS/Mac to Unix and vice versa text file format converter
-tex-tex-ini-files-2016 Model TeX format creation files
-tex-updmap-map-2017 tex font maps
-anthy-elisp-9100hnb5 Emacs lisp files for inputmethod/anthy
-tex-ctable-1.31     Flexible typesetting of table and figure floats using key/value directives
-tex-float-1.3d      Improved interface for floating objects
-tex-hyph-utf8-2016  Hyphenation patterns expressed in UTF-8
-tex-ifluatex-1.4    The \ifluatex switch for TeX
-tex-knuth-lib-2014  Small library of MetaFont sources
-py27-crypto-2.6.1nb3 Cryptographic and hash functions for Python
-lua52-5.2.4nb1      Powerful light-weight language for extending applications
-lua52-alt-getopt-0.7.0nb3 Lua API for getopt similar to getopt_long(3)
-py27-ecdsa-0.13     Easy-to-use implementation of ECDSA cryptography
-tex-lineno-4.41     Line numbers on paragraphs
-tex-unicode-data-1.5 Unicode data and loaders for TeX
-ansible-1.9.4nb2    SSH-based configuration management, deployment, and task execution
-makeindexk-2.15nb9  General purpose hierarchical index generator
-tex-makeindex-2.15nb1 Style files for makeindex
-tex-fancybox-1.4    Variants of \fbox and other games with boxes
-tex-mflogo-2016     LaTeX support for MetaFont logo fonts
-tex-fancyref-0.9c   A LaTeX package for fancy cross-referencing
-py27-pip-9.0.1      Installs Python packages as an easy_install replacement
-tex-texlive-docindex-2014 Top-level TeX Live doc.html, etc
-py27-paramiko-1.18.2 SSH2 protocol library
-tex-xdvi-22.87.03   Configuration file for xdvik
-tex-ec-1.0          Computer modern fonts in T1 and TS1 encodings
-py27-boto-2.48.0    Python interface to Amazon web services
-tex-index-4.1beta   Reimplementation of LaTeX's indexing macros
-py27-filechunkio-1.8 Chunck files for input/output
-tex-c90-2015        C90 encoding for Thai
 seamonkey-2.49.1    Full-featured gecko-based browser
 seamonkey-l10n-2.49.1 Language packs for www/seamonkey
-tex-euenc-0.1h      Unicode font encoding definitions for XeTeX
-tex-latexconfig-2016 Files used to generate LaTeX formats
-tex-latex-fonts-2013 Collection of fonts used in LaTeX distributions
-tex-jknapltx-2014   Miscellaneous packages by Joerg Knappen
-tex-graphics-cfg-2016.41448 Sample configuration files for LaTeX color and graphics
-tex-relsize-4.1     Set the font size relative to the current font size
-tex-charter-2010    Charter fonts
-tex-fpl-1.002       SC and OsF fonts for URW Palladio L
-tex-mathpazo-1.003  Fonts to typeset mathematics to match Palatino
-tex-iftex-0.2       TeX package to determine if running under pdfTeX, XeTeX or LuaTeX
-tex-underscore-2010 Control the behaviour of "_" in text
-tex-ctablestack-1.0 Catcode table stable support
-tex-parskip-2.0     Layout with zero \parindent, non-zero \parskip
-tex-xunicode-0.981  Generate Unicode characters from accented glyphs
-tex-ulem-2013       Package for underlining
-tex-cjkpunct-4.8.4  Adjust locations and kerning of CJK punctuation marks
-tex-cjkutils-4.8.3  Configuration files for cjktuils
-tex-dnp-2014        Relationship between JIS X 0208 and wadalab's DNP encodings
-tex-xcjk2uni-0.6    Convert CJK characters to Unicode, in pdfTeX
-tex-zxjafont-0.3    Set up Japanese font families for XeLaTeX
-tex-makecmds-1.0a   The new \makecommand command always (re)defines a command
-tex-ipaex-2014      IPA and IPAex fonts for Kana and Kanji
-tex-japanese-1.3pl30855 Substitute for a babel package for japanese
-tex-pbibtex-base-0.0.2016 Bibliography styles and miscellaneous files for pBibTeX
-tex-ptex-base-2017  Plain TeX format and documents for pTeX and e-pTeX
-TECkit-2.5.3        Low-level toolkit to perform encoding conversions
-tex-rcs-2.10        Use RCS (revision control system) tags in LaTeX documents
-tex-sansmath-1.1    Maths in a sans font
-tex-section-2011    Modifying section commands in LaTeX
-tex-cmap-1.0h       Make PDF files searchable and copyable
-tex-xcomment-1.3    Allows selected environments to be included/excluded
-tex-sepnum-2.0      Print numbers in a "friendly" format
-tex-setspace-6.7a   Set space between lines
-tex-typehtml-2009   Typeset HTML directly from LaTeX
-tex-asyfig-0.1c     Commands for using Asymptote figures
-tex-curves-1.53     Curves for LaTeX picture environment
-tex-eepic-1.1e      Extensions to epic and the LaTeX drawing tools
-tex-pict2e-0.3b     New implementation of picture commands
-tex-ellipse-1.0     Draw ellipses and elliptical arcs using the standard LaTeX2e picture environment
-tex-here-2010       Emulation of obsolete package for "here" floats
-tex-pb-diagram-5.0  A commutative diagram package using LAMSTeX or Xy-pic fonts
-tex-picinpar-1.2a   Insert pictures into paragraphs
-tex-pictex-1.1      Picture drawing macros for TeX and LaTeX
-tex-texdraw-2.0     Graphical macros, using embedded PostScript
+serf-1.3.9          High-performance asynchronous HTTP client library
+shared-mime-info-1.8 Core database of common types
+smartmontools-6.5   Control and monitor storage systems using SMART
+speex-1.2.0         Open-source, patent-free voice codec
+speexdsp-1.2rc3     Open-source, patent-free voice codec DSP library
+spidermonkey17-17.0.0nb1 Standalone JavaScript implementation in C
+startup-notification-0.12nb3 X11 application startup notification library
+swig-1.3.38nb1      Simplified Wrapper and Interface Generator (version 1)
+taglib-1.11.1       Library for accessing id tags in various media files
+tcl-8.6.6nb2        Tool Command Language, a dynamic language
+tcsh-6.20.00nb2     Extended C-shell with many useful features
+tdb-1.3.8           Small database system which uses files to store data
+tex-2up-1.3         TeX package to print a document two-up
 tex-a0poster-1.22b  Support for designing posters on large paper
-tex-xstring-1.7c    String manipulation for (La)TeX
-tex-changepage-1.0c Margin adjustment and detection of odd/even pages
-tex-paralist-2.7    Enumerate and itemize within paragraphs
-tex-ifmtarg-1.2anb1 If-then-else command for processing potentially empty arguments
+tex-a4wide-2010nb1  Wide a4 layout for LaTeX
 tex-a5comb-4        A5 paper sizes support for LaTeX
 tex-abstract-1.2a   Control the typesetting of the abstract environment.
 tex-acronym-1.41    Expand acronyms at least once
-tex-collectbox-0.4bnb1 Collect and process macro arguments as boxes
 tex-adjustbox-1.0nb3 Graphics package-alike macros for general boxes
 tex-adrconv-1.3     BibTeX styles to implement an address database
 tex-advdate-2010    LaTeX package to print a date relative to "today"
+tex-ae-1.4          Virtual fonts for T1 encoded CMR-fonts
+tex-ae-doc-1.4      Documentation for tex-ae
+tex-algorithms-0.1  Suite of tools for typesetting algorithms in pseudo-code
+tex-amscls-2015     AMS document classes for LaTeX
+tex-amscls-doc-2015 Documentation for tex-amscls
+tex-amsfonts-3.04   TeX fonts from the American Mathematical Society
+tex-amsfonts-doc-3.04 Documentation for tex-amsfonts
+tex-amsmath-2.16a   AMS mathematical facilities for LaTeX
+tex-amsmath-doc-2.16a Documentation for tex-amsmath
 tex-animate-20170518 Create PDF animations from graphics files and inline graphics
 tex-anonchap-1.1a   LaTeX style to make chapters be typeset like sections
 tex-answers-2.16    Setting questions (or exercises) and answers
+tex-anysize-15878   A simple package to set up document margins
 tex-appendix-1.2b   Extra control of appendices
+tex-asyfig-0.1c     Commands for using Asymptote figures
+tex-auto-pst-pdf-0.6 Wrapper for pst-pdf (with some psfrag features)
+tex-avantgar-2014   Avantgarde font
+tex-babel-3.10      Multilingual support for Plain TeX or LaTeX
+tex-babel-english-3.3q Babel support for English
+tex-babelbib-1.31   Multilingual bibliographies
+tex-babelbib-doc-1.31 Documentation for tex-babelbib
+tex-background-2.1  Placement of background material on pages of a document
+tex-beamer-3.42     LaTeX class for producing presentations and slides
+tex-bera-2010nb1    Bera fonts
+tex-beton-2010      Use Concrete fonts
+tex-bibtex-0.99dnb2 Reference management software for LaTeX
+tex-bibtex-doc-0.99dnb1 Documentation for tex-bibtex
+tex-blindtext-2.0   Producing 'blind' text for testing
 tex-blkarray-0.07   Extended array and tabular
 tex-block-2009      LaTeX block letter style for the letter class
 tex-bold-extra-0.1  LaTeX package to use bold small caps and typewriter fonts
+tex-bookman-2014    Bookman font
+tex-booktabs-1.618033 Publication quality tables in LaTeX
 tex-boxedminipage-2009 LaTeX package for producing framed minipages
 tex-braket-2009     Dirac bra-ket and set notations for LaTeX
+tex-breqn-0.98e     Automatic line breaking of displayed equations
 tex-bussproofs-1.1  Proof trees in the style of the sequent calculus
+tex-c90-2015        C90 encoding for Thai
 tex-calrsfs-2014    Copperplate calligraphic letters in LaTeX
 tex-cancel-2.2      LaTeX package to place lines through maths formulae
 tex-capt-of-2009    Captions on more than floats
 tex-captdef-2009    Declare free-standing \caption commands
+tex-caption-20160522 Customising captions in floating environments
+tex-carlisle-2010   LaTeX packages created by David Carlisle
+tex-carlisle-doc-2010 Documentation for tex-carlisle
 tex-cases-2.5       Numbered cases environment for LaTeX
 tex-ccaption-3.2c   Continuation headings and legends for floats
+tex-cellspace-1.6   Ensure minimal spacing of table cells
+tex-changebar-3.5c  Generate changebars in LaTeX documents
+tex-changepage-1.0c Margin adjustment and detection of odd/even pages
 tex-chappg-2.1b     Page numbering by chapter
+tex-charter-2010    Charter fonts
 tex-chngcntr-1.0a   LaTeX package to change the resetting of counters
+tex-circuitikz-0.8.3 Draw electrical networks with TikZ
+tex-cite-5.5        Improved citation handling in LaTeX
+tex-cjkpunct-4.8.4  Adjust locations and kerning of CJK punctuation marks
+tex-cjkutils-4.8.3  Configuration files for cjktuils
 tex-classpack-0.77  XML mastering for LaTeX classes and packages
 tex-cleveref-0.19   Intelligent cross-referencing
+tex-cm-2014         Computer Modern fonts
+tex-cm-doc-2014     Documentation for tex-cm
+tex-cmap-1.0h       Make PDF files searchable and copyable
+tex-cmsd-2010       Interfaces to the CM Sans Serif Bold fonts
+tex-collectbox-0.4bnb1 Collect and process macro arguments as boxes
+tex-colortbl-1.0a   Add colour to LaTeX tables
+tex-colortbl-doc-1.0a Documentation for tex-colortbl
 tex-comment-3.8     Allows selected environments to be included/excluded
 tex-concprog-2014   Concert programmes
-tex-units-0.9b      Typeset units
+tex-continue-0.1    Prints 'continuation' marks on recto pages of multipage documents
+tex-cooking-0.9bnb1 Typeset recipes
+tex-courier-2014    Adobe Type 1 "free" copies of Courier
+tex-crop-1.5        Support for cropmarks
+tex-csquotes-5.2b   Context sensitive quotation facilities
+tex-ctable-1.31     Flexible typesetting of table and figure floats using key/value directives
+tex-ctablestack-1.0 Catcode table stable support
 tex-cuisine-0.7     Typeset recipes in LaTeX
 tex-currvita-2016   Typeset a curriculum vitae
+tex-curves-1.53     Curves for LaTeX picture environment
 tex-cutwin-0.1      Cut a window in a paragraph, typeset material in it
 tex-dashbox-1.14    Draw dashed boxes
 tex-datatool-2.27   Tools to load and manipulate data
+tex-datetime-2.60   Change format of \today with commands for current time
 tex-dblfloatfix-1.0a Fixes for twocolumn floats
 tex-diagbox-2.2     Table heads with diagonal lines
 tex-dinbrief-2014   German letter DIN style
+tex-dnp-2014        Relationship between JIS X 0208 and wadalab's DNP encodings
 tex-draftcopy-2.16  Identify draft copies
+tex-draftwatermark-1.2 Textual watermark package for LaTeX
+tex-dvipdfmx-2016.41623 Supplementary files for dvipdfmx
+tex-dvipdfmx-doc-2016.41623 Documentation for tex-dvipdfmx
+tex-dvips-2017      Files for a DVI to PostScript driver
+tex-dvips-doc-2017  Documentation for tex-dvips
+tex-easy-todo-20140101 To-do notes in a document
+tex-ec-1.0          Computer modern fonts in T1 and TS1 encodings
+tex-eepic-1.1e      Extensions to epic and the LaTeX drawing tools
+tex-ellipse-1.0     Draw ellipses and elliptical arcs using the standard LaTeX2e picture environment
+tex-enctex-2014     TeX extension for flexible input/output reencoding
+tex-enctex-doc-2014 Documentation for tex-enctex
+tex-endfloat-2.5d   Move floats to the end with markers where they belong
 tex-endnotes-2009   LaTeX package to place footnotes at the end
+tex-enumitem-3.5.2  Control layout of itemize, enumerate, and description
 tex-environ-0.3     New interface for environments in LaTeX
-tex-varwidth-0.92nb1 A variable-width minipage
-tex-tabu-2.8nb1     Flexible LaTeX tabulars
-tex-totpages-2.00   Count pages in a document, and report last page number
+tex-envlab-1.2      Addresses on envelopes or mailing labels
+tex-eso-pic-2.0g    Add picture commands (or backgrounds) to every page
+tex-etex-2.1.31600  TeX implementation filling the gap between TeX3 and NTS
+tex-etex-doc-2.1.31600 Documentation for tex-etex
+tex-etex-pkg-2.7    E-TeX support package
+tex-etex-pkg-doc-2.7 Documentation for tex-etex-pkg
+tex-etoolbox-2.4    e-TeX tools for LaTeX
+tex-euenc-0.1h      Unicode font encoding definitions for XeTeX
+tex-euler-2.5       Use AMS Euler fonts for math
+tex-europasscv-2017 Unofficial class for the new version of the Europass curriculum vitae
+tex-europecv-2014   Unofficial class for European curricula vitae
+tex-everypage-1.1   LaTeX package for hooks to run on every page
+tex-exam-2.5        Package for typesetting exam scripts
 tex-excludeonly-1.0 LaTeX package to prevent files being \include-ed
+tex-extsizes-1.4a   Extend the standard LaTeX classes' size options
+tex-fancybox-1.4    Variants of \fbox and other games with boxes
+tex-fancyhdr-3.9    Extensive control of page headers and footers in LaTeX2e
+tex-fancyref-0.9c   A LaTeX package for fancy cross-referencing
+tex-fancyvrb-2.8    Sophisticated verbatim text
 tex-filecontents-1.3 Extended filecontents and filecontents* environments
-tex-marginnote-1.2b Notes in the margin, even where \marginpar fails
+tex-filehook-0.5d   Hooks for input files
+tex-fix2col-2016    Fix miscellaneous two column mode features
+tex-fix2col-doc-2016 Documentation for tex-fix2col
+tex-fixmetodonotes-0.2.2 Add notes on document development
+tex-float-1.3d      Improved interface for floating objects
 tex-floatflt-1.31   Wrap text around floats
-tex-xfor-1.05       Reimplimentation of the LaTeX for-loop macro
+tex-flowfram-1.17   Create text frames for posters, brochures or magazines
+tex-fmtcount-3.03   Display the value of a LaTeX counter in a variety of formats
 tex-fncylab-1.0     LaTeX package to alter the format of \label references
 tex-fnpara-2012     LaTeX package to typeset footnotes in paragraphs
+tex-fontawesome-4.6.3.2 Font containing web-related icons
 tex-fontaxes-1.0d   Additional font axes for LaTeX
+tex-fontspec-2.6a   Advanced font selection in XeLaTeX and LuaLaTeX
+tex-footmisc-5.5b   Range of footnote options
 tex-footnpag-2014   Per-page numbering of footnotes
 tex-forloop-3.0     Provide the LaTeX command \forloop
+tex-fp-2010         Fixed point arithmetic
+tex-fpl-1.002       SC and OsF fonts for URW Palladio L
 tex-framed-0.96     Framed or shaded regions that can break across pages
 tex-ftcap-1.4       Allows \caption at the beginning of a table-environment
 tex-fwlw-2010       Get first and last words of a page
 tex-g-brief-4.0.2   Letter document class
+tex-geometry-5.6    Flexible and complete interface to document dimensions
+tex-geometry-doc-5.6 Documentation for tex-geometry
+tex-glossaries-4.30 Create glossaries and lists of acronyms
+tex-glyphlist-2016  Adobe glyph list
+tex-graphics-1.2a   Standard LaTeX graphics
+tex-graphics-cfg-2016.41448 Sample configuration files for LaTeX color and graphics
+tex-graphics-def-2017.44697 Colour and graphics option files
 tex-hang-2.1        Environments for hanging paragraphs and list items
 tex-hanging-1.2b    Hanging paragraphs
+tex-helvetic-2014   Adobe Helvetica fonts
+tex-here-2010       Emulation of obsolete package for "here" floats
 tex-hyper-4.2d      Hypertext cross referencing
 tex-hypernat-1.0b   Allow hyperref and natbib to work together
+tex-hyperref-6.85a  Extensive support for hypertext in LaTeX
+tex-hyperref-doc-6.85a Documentation for tex-hyperref
+tex-hyph-utf8-2016  Hyphenation patterns expressed in UTF-8
+tex-hyph-utf8-doc-2016 Documentation for tex-hyph-utf8
+tex-hyphen-base-2017 TeX hyphenation patterns for English
+tex-hyphenat-2.3c   Disable/enable hypenation in LaTeX
+tex-ifluatex-1.4    The \ifluatex switch for TeX
+tex-ifluatex-doc-1.4 Documentation for tex-ifluatex
+tex-ifmtarg-1.2anb1 If-then-else command for processing potentially empty arguments
 tex-ifnextok-0.3nb1 Utility macro: peek ahead without ignoring spaces
 tex-ifoddpage-1.1   Determine if the current page is odd or even
+tex-ifplatform-0.3a Conditionals to test which platform is being used
+tex-iftex-0.2       TeX package to determine if running under pdfTeX, XeTeX or LuaTeX
+tex-ifxetex-0.6     TeX package to determine if running under XeTeX
+tex-ifxetex-doc-0.6 Documentation for tex-ifxetex
 tex-import-5.1      Establish input relative to a directory
+tex-incgraph-1.12   Sophisticated graphics inclusion in a PDF document
+tex-index-4.1beta   Reimplementation of LaTeX's indexing macros
+tex-ipaex-2014      IPA and IPAex fonts for Kana and Kanji
+tex-japanese-1.3pl30855 Substitute for a babel package for japanese
+tex-jknapltx-2014   Miscellaneous packages by Joerg Knappen
 tex-kix-2010        Typeset KIX codes
+tex-knuth-lib-2014  Small library of MetaFont sources
+tex-knuth-local-2016 Knuth's local information
+tex-koma-script-3.23 Bundle of versatile classes and packages
+tex-kpathsea-2016   Translation tables for TeX
+tex-kpathsea-doc-2016 Documentation for tex-kpathsea
+tex-l3experimental-2017.44864 Experimental LaTeX3 concepts
+tex-l3kernel-2017   LaTeX3 programming conventions
+tex-l3packages-2017 High-level LaTeX3 concepts
 tex-labels-0.13     Print sheets of sticky labels
+tex-lastpage-1.2m   Reference last page for Page N of M type footers
+tex-latex-20170101.1 TeX macro package that defines LaTeX
+tex-latex-bin-2016  LaTeX executables
+tex-latex-bin-doc-2013 Documentation for tex-latex-bin
+tex-latex-doc-20170101.1 Documentation for tex-latex
+tex-latex-fonts-2013 Collection of fonts used in LaTeX distributions
+tex-latexbug-1.0b   Bug-classification for LaTeX related bugs
+tex-latexconfig-2016 Files used to generate LaTeX formats
 tex-layouts-2.6d    Display various elements of a document's layout
 tex-lazylist-1.0a   Lists in TeX's "mouth"
+tex-leaflet-1.1b    Create small handouts (flyers)
 tex-leftidx-2014    Left and right subscripts and superscripts in math mode
 tex-lettrine-1.9    Typeset dropped capitals
+tex-lineno-4.41     Line numbers on paragraphs
+tex-lipsum-1.3      Easy access to the Lorem Ipsum dummy text
 tex-listing-1.2     Produce formatted program listings
+tex-listings-1.6    Typeset source code listings using LaTeX
 tex-lkproof-3.1     LK Proof figure macros
+tex-lm-2.004nb2     Latin modern fonts in outline formats
 tex-localloc-1.1b   Macros for localizing TeX register allocations
+tex-longfbox-1.0    Draw framed boxes with standard CSS attributes that can break over multiple pages
 tex-ltabptch-1.74d  Bug fix for longtable
+tex-ltxmisc-2010.21927 Miscellaneous LaTeX packages
+tex-lualibs-2.5     Additional Lua functions for LuaTeX macro programmers
+tex-luaotfload-2.8.2 OpenType layout system for Plain TeX and LaTeX
+tex-luatex-1.0.4    LuaTeX basic definition package
+tex-luatex-doc-1.0.4 Documentation for tex-luatex
+tex-luatexbase-1.3nb1 Basic resource management for LuaTeX code
 tex-magaz-0.4       Magazine layout
+tex-makecmds-1.0a   The new \makecommand command always (re)defines a command
+tex-makeindex-2.15nb1 Style files for makeindex
+tex-makeindex-doc-2.15 Documentation for tex-makeindex
 tex-manfnt-2014     LaTeX support for the TeX book symbols
-tex-needspace-1.3d  Insert pagebreak if not enough space
+tex-marginnote-1.2b Notes in the margin, even where \marginpar fails
+tex-marvosym-2.2a   Martin Vogel's Symbols font
+tex-mathpazo-1.003  Fonts to typeset mathematics to match Palatino
+tex-mathspec-0.2b   Specify arbitrary fonts for mathematics in XeTeX
+tex-mathtools-1.19  Mathematical tools to use with amsmath
+tex-mdframed-1.9b   Framed environments that can split at page boundaries
+tex-mdwtools-1.05.4 Miscellaneous LaTeX tools by Mark Wooding
+tex-memoir-3.7f     Typeset fiction, non-fiction and mathematical books
+tex-metafont-2014   METAFONT system for specifying fonts
+tex-metalogo-0.12   Extended TeX logo macros
 tex-mfirstuc-2.04   Uppercase the first letter of a word
+tex-mflogo-2016     LaTeX support for MetaFont logo fonts
+tex-mflogo-doc-2016 Documentation for tex-mflogo
+tex-mfnfss-2009     Packages to typeset oldgerman and pandora fonts in LaTeX
+tex-mfnfss-doc-2009 Documentation for tex-mfnfss
+tex-mfware-2014     Supporting tools for use with MetaFont
+tex-microtype-2.7   Interface to the micro-typographic features of pdfTeX
 tex-midpage-1.1a    Environment for vertical centring
+tex-minitoc-61      Produce a table of contents for each chapter, part or section
+tex-minted-2.5      Highlighted source code for LaTeX
+tex-misc-2012nb1    Miscellaneous files for TeX
+tex-moderncv-2.0.0  Modern CV latex class
 tex-mparhack-1.4    Work around a LaTeX bug in marginpars
+tex-mptopdf-2016    Script to convert mpost to PDF
+tex-ms-2014         Various LaTeX packages by Martin Schroeder
+tex-multido-1.42    Loop facility for Generic TeX
 tex-multirow-2.2    Create tabular cells spanning multiple rows
+tex-natbib-8.31b    Flexible bibliography support for BibTeX
+tex-natbib-doc-8.31b Documentation for tex-natbib
 tex-ncctools-3.5    Collection of general packages for LaTeX
+tex-ncntrsbk-2014   New Century Schoolbook fonts
+tex-needspace-1.3d  Insert pagebreak if not enough space
+tex-newlfm-9.4      Write letters, facsimiles, and memos
 tex-nextpage-1.1a   Generalisations of the page advance commands
 tex-nolbreaks-1.2   No line breaks in text
 tex-nomencl-3.1a    Produce lists of symbols as in nomenclature
 tex-nopageno-2009   No page numbers in LaTeX documents
+tex-notoccite-2009  Prevent trouble from citations in table of contents, etc
+tex-ntgclass-2010   European versions of standard classes
 tex-ntheorem-1.31   Enhanced theorem environment for LaTeX
+tex-oberdiek-2017   Bundle of packages submitted by Heiko Oberdiek
+tex-oberdiek-doc-2017 Documentation for tex-oberdiek
 tex-octavo-1.2      Typeset books following classical design and layout
 tex-onlyamsmath-0.20 Inhibit use of non-amsmath mathematics markup when using amsmath
 tex-optional-2.2b   Facilitate optional printing of parts of a document
-p7zip-16.02nb1      File archiver with high compression
+tex-options-1.0     Provides convenient key-value options for LaTeX package writers
+tex-pageslts-1.2f   Provide labels for the last page in each page numbering group
+tex-palatino-2014   Palatino font family for TeX
+tex-paralist-2.7    Enumerate and itemize within paragraphs
+tex-parskip-2.0     Layout with zero \parindent, non-zero \parskip
+tex-pb-diagram-5.0  A commutative diagram package using LAMSTeX or Xy-pic fonts
+tex-pbibtex-base-0.0.2016 Bibliography styles and miscellaneous files for pBibTeX
 tex-pbox-1.2        A variable-width \parbox command
+tex-pdfcomment-2.4  User-friendly interface to pdf annotations
+tex-pdfcrop-1.37nb2 Crop PDF graphics
+tex-pdftex-2016     TeX extension for direct creation of PDF
+tex-pgf-3.0.1a      PostScript and PDF graphics systems for TeX
+tex-pgfgantt-4.0    Draw Gantt charts with TikZ
+tex-pgfopts-2.1a    LaTeX package options with pgfkeys
+tex-pgfplots-1.13   LaTeX package to create normal/logarithmic plots
+tex-picinpar-1.2a   Insert pictures into paragraphs
+tex-pict2e-0.3b     New implementation of picture commands
+tex-pictex-1.1      Picture drawing macros for TeX and LaTeX
+tex-placeins-2.2    TeX command to control float placement
+tex-plain-3.141592653.43076 The Plain TeX format
+tex-polyglossia-1.42.4nb1 An alternative to babel for XeLaTeX and LuaLaTeX
+tex-polytable-0.8.5 Tabular-like environments with named columns
+tex-powerdot-1.5a   A presentation class
 tex-preprint-2011   Bundle of LaTeX packages provided as-is
 tex-printlen-1.1a   Print lengths using specified units
 tex-program-3.3.14  Typesetting programs and algorithms
-tex-multido-1.42    Loop facility for Generic TeX
+tex-prosper-1.5     LaTeX class for high quality slides
+tex-psfrag-3.04     Replace strings in encapsulated PostScript figures
+tex-pslatex-2009    Use PostScript fonts by default
+tex-psnfss-9.2a.33946 Font support for common PostScript fonts
+tex-psnfss-doc-9.2a.33946 Documentation for tex-psnfss
+tex-pspicture-2009  PostScript picture support
+tex-pspicture-doc-2009 Documentation for tex-pspicture
+tex-pstricks-2.73a  PostScript macros for TeX
+tex-ptex-base-2017  Plain TeX format and documents for pTeX and e-pTeX
+tex-rcs-2.10        Use RCS (revision control system) tags in LaTeX documents
 tex-rcsinfo-1.11    Support for the revision control system
 tex-readarray-2.0   Read, store and recall array-formatted data
 tex-realboxes-0.2   Variants of common box-commands
+tex-realscripts-0.3d Access OpenType subscript and superscript glyphs
+tex-relsize-4.1     Set the font size relative to the current font size
 tex-romanneg-2011   LaTeX package to make negative page numbers
+tex-rotating-2.16b  Rotation tools including rotated full-page floats
 tex-rotfloat-1.2    Rotate floats
+tex-sansmath-1.1    Maths in a sans font
+tex-sauerj-2013     Bundle of utilities by Jonathan Sauer
 tex-scale-1.1.2     Scale document by sqrt(2) or magstep(2)
+tex-secdot-1.0      Section numbers with trailing dots
+tex-section-2011    Modifying section commands in LaTeX
 tex-sectsty-2.0.2   Control sectional headers
 tex-selectp-1.0     Select pages to be output
+tex-seminar-1.61    Make overhead slides
+tex-sepnum-2.0      Print numbers in a "friendly" format
+tex-setspace-6.7a   Set space between lines
 tex-sfmath-0.8      Sans-serif mathematics
+tex-shadethm-20120818 Theorem environments that are shaded
 tex-shadow-1.3      Shadow boxes
 tex-shadowtext-0.3  Produce text with a shadow behind it
 tex-shapepar-2.2    A macro to typeset paragraphs in specific shapes
@@ -817,76 +732,161 @@ tex-showdim-1.2     Variants on printing dimensions
 tex-showlabels-1.8  Show label commands in the margin
 tex-sidecap-1.6f    Typeset captions sideways
 tex-snapshot-1.14   List the external dependencies of a LaTeX document
+tex-soul-2.4        Hyphenation for letterspacing, underlining, and more
 tex-sphack-1.0      Patch LaTeX kernel spacing macros
 tex-srcltx-1.6      Jump between DVI and TeX files
 tex-standalone-1.2  Compile TeX pictures stand-alone or as part of a document
 tex-stdclsdv-1.1a   Provide sectioning information for package writers
 tex-stringstrings-1.23 String manipulation for cosmetic and programming application
 tex-sttools-2.0     Various LaTeX tools and macros
+tex-subfig-1.3      Figures broken into subfigures
 tex-subfigmat-1.0   Automates layout when using the subfigure package
 tex-subfigure-2.1.5 Figures divided into subfigures (obsoleted by tex-subfig)
 tex-subfiles-1.1    Individual typesetting of subfiles of a "main" document
 tex-substr-1.2      Deal with substrings in strings
+tex-supertabular-4.1a Multi-page tables package
+tex-svninfo-0.7.4   Typeset Subversion keywords
+tex-symbol-2014     Symbol fonts for TeX
 tex-tabls-3.5       Better vertical spacing in tables and arrays
-tex-tpslifonts-0.6d LaTeX package for configuring presentation fonts
+tex-tabu-2.8nb1     Flexible LaTeX tabulars
+tex-tetex-3.0.44331 Supplementary files for updmap
+tex-tetex-doc-3.0.44331 Documentation for tex-tetex
+tex-tex-3.14159265  Plain TeX format
+tex-tex-ini-files-2016 Model TeX format creation files
+tex-texconfig-2017nb1 Configuration utility for TeX
+tex-texconfig-doc-2017 Documentation for tex-texconfig
+tex-texdraw-2.0     Graphical macros, using embedded PostScript
+tex-texlive-common-doc-2014 TeX Live manual (common elements)
+tex-texlive-docindex-2014 Top-level TeX Live doc.html, etc
+tex-texlive-docindex-doc-2014 Documentation for tex-texlive-docindex
+tex-texlive-en-doc-2014 TeX Live manual (English)
+tex-texlive-scripts-2017 TeX Live infrastructure programs
+tex-texlive.infra-2017 Basic TeX Live infrastructure
 tex-texpower-0.2    Create dynamic online presentations with LaTeX
+tex-textcase-0.07   Case conversion ignoring mathematics, etc
 tex-textfit-5       Fit text to a desired size
 tex-textmerg-2.01   Merge text in TeX and LaTeX
 tex-textpos-1.8     Place boxes at arbitrary positions on the LaTeX page
 tex-threeparttable-2009 LaTeX tables with captions and notes all the same width
+tex-thumbpdf-3.16nb2 Thumbnails for pdfTeX and dvips/ps2pdf
+tex-tikz-3dplot-2015 Coordinate transformation styles for 3d plotting in TikZ
+tex-tikz-cd-0.9e    Create commutative diagrams with TikZ
+tex-tikzinclude-1.0 Import TikZ images from colletions
+tex-tikzmark-1.3    Use TikZ's method of remembering a position on a page
+tex-tikzorbital-2015 Atomic and molecular orbitals using TiKZ
+tex-tikzpagenodes-1.1 A single TikZ node for the whole page
+tex-tikzpfeile-1.0  Draw arrows using PGF/TikZ
+tex-tikzposter-2.0  Create scientific posters using TikZ
+tex-tikzscale-0.2.6 Resize pictures while respecting text size
+tex-tikzsymbols-4.02 Some symbols created using TikZ
+tex-times-2014      Select Adobe Times Roman (or equivalent) as default font
 tex-titleref-2.0    \\titleref command to cross-reference section titles
+tex-titlesec-2.10.2 Select alternative section titles
 tex-titling-2.1d    Control over the typesetting of the \maketitle command
+tex-tocbibind-1.5k  Add bibliography/index/contents to Table of Contents
+tex-tocloft-2.3f    Control table of contents, figures, etc. for LaTeX
 tex-todo-2.142      Make a to-do list for a document
+tex-todonotes-1.0.5 Marking things to do in a LaTeX document
+tex-tools-2017      The LaTeX standard tools bundle
+tex-tools-doc-2017  Documentation for tex-tools
+tex-totpages-2.00   Count pages in a document, and report last page number
+tex-tpslifonts-0.6d LaTeX package for configuring presentation fonts
 tex-trimspaces-1.1  Trim spaces around an argument or within a macro
 tex-truncate-3.6    Truncate text to a specified width
+tex-tufte-latex-3.5.2 Document classes inspired by the work of Edward Tufte
 tex-twoinone-2009   LaTeX style to print two pages on a single page
 tex-type1cm-0.03    Arbitrary size font selection in LaTeX
+tex-typehtml-2009   Typeset HTML directly from LaTeX
+tex-ucs-2.2         Extended UTF-8 input encoding for LaTeX
+tex-ulem-2013       Package for underlining
+tex-underscore-2010 Control the behaviour of "_" in text
+tex-undolabl-1.0l   Overriding of existing labels
+tex-unicode-data-1.5 Unicode data and loaders for TeX
+tex-unicode-math-0.8d Unicode mathematics support for XeTeX and LuaTeX
+tex-units-0.9b      Typeset units
+tex-updmap-map-2017 tex font maps
 tex-upquote-1.3     Show "realistic" quotes in verbatim
+tex-url-3.4         Verbatim with URL-sensitive line breaks
+tex-varwidth-0.92nb1 A variable-width minipage
+tex-venndiagram-1.1 Creating Venn diagrams with TikZ
+tex-verbasef-1.1    VERBatim Automatic Splitting of External Files
 tex-verbatimbox-3.13nb1 Deposit verbatim text in a box
 tex-verbdef-0.2     Define commands which expand to verbatim text
 tex-version-2.0     Conditionally include text
 tex-vertbars-1.0b   Mark vertical rules in margin of text
 tex-vmargin-2.5     Set various page dimensions
 tex-vruler-2.3nb1   Numbering text
+tex-wallpaper-1.10nb1 Easy addition of wallpapers (background images) to LaTeX documents
 tex-was-2014        A collection of small packages by Walter Schmidt
 tex-wrapfig-3.6nb1  LaTeX package to produce figures which text can flow around
+tex-xargs-1.1       Define commands with many optional arguments
+tex-xcjk2uni-0.6    Convert CJK characters to Unicode, in pdfTeX
+tex-xcolor-2.12nb1  Driver-independent color extensions for LaTeX and pdfLaTeX
+tex-xcomment-1.3    Allows selected environments to be included/excluded
+tex-xdvi-22.87.03   Configuration file for xdvik
+tex-xetex-2016nb2   Unicode and OpenType-enabled TeX engine
+tex-xetexconfig-2016 Configuration files for XeTeX
+tex-xfor-1.05       Reimplimentation of the LaTeX for-loop macro
+tex-xifthen-1.4.0   Extended conditional commands
+tex-xindy-2.5.1     General-purpose index processor
+tex-xkeyval-2.7a    Macros for setting keys and class or package options
+tex-xltxtra-0.6     Extras files for LaTeX users of XeTeX
+tex-xstring-1.7c    String manipulation for (La)TeX
 tex-xtab-2.3f       Break tables across pages
+tex-xunicode-0.981  Generate Unicode characters from accented glyphs
+tex-xypic-3.8.9     Flexible diagramming macros
 tex-ydoc-0.6alphanb1 Macros for documentation of LaTeX classes and packages
-tex-amsfonts-doc-3.04 Documentation for tex-amsfonts
-tex-bibtex-doc-0.99dnb1 Documentation for tex-bibtex
-tex-cm-doc-2014     Documentation for tex-cm
-tex-dvipdfmx-doc-2016.41623 Documentation for tex-dvipdfmx
-tex-dvips-doc-2017  Documentation for tex-dvips
-tex-enctex-doc-2014 Documentation for tex-enctex
-tex-etex-doc-2.1.31600 Documentation for tex-etex
-tex-etex-pkg-doc-2.7 Documentation for tex-etex-pkg
-tex-hyph-utf8-doc-2016 Documentation for tex-hyph-utf8
-tex-ifluatex-doc-1.4 Documentation for tex-ifluatex
-tex-ifxetex-doc-0.6 Documentation for tex-ifxetex
-tex-kpathsea-doc-2016 Documentation for tex-kpathsea
-tex-ae-doc-1.4      Documentation for tex-ae
-tex-luatex-doc-1.0.4 Documentation for tex-luatex
-tex-makeindex-doc-2.15 Documentation for tex-makeindex
-tex-mflogo-doc-2016 Documentation for tex-mflogo
-tex-tetex-doc-3.0.44331 Documentation for tex-tetex
-tex-texconfig-doc-2017 Documentation for tex-texconfig
-tex-texlive-common-doc-2014 TeX Live manual (common elements)
-tex-texlive-docindex-doc-2014 Documentation for tex-texlive-docindex
-tex-texlive-en-doc-2014 TeX Live manual (English)
-tex-amscls-doc-2015 Documentation for tex-amscls
-tex-amsmath-doc-2.16a Documentation for tex-amsmath
-tex-babelbib-doc-1.31 Documentation for tex-babelbib
-tex-carlisle-doc-2010 Documentation for tex-carlisle
-tex-colortbl-doc-1.0a Documentation for tex-colortbl
-tex-fix2col-doc-2016 Documentation for tex-fix2col
-tex-geometry-doc-5.6 Documentation for tex-geometry
-tex-hyperref-doc-6.85a Documentation for tex-hyperref
-tex-latex-doc-20170101.1 Documentation for tex-latex
-tex-latex-bin-doc-2013 Documentation for tex-latex-bin
-tex-mfnfss-doc-2009 Documentation for tex-mfnfss
-tex-natbib-doc-8.31b Documentation for tex-natbib
-tex-oberdiek-doc-2017 Documentation for tex-oberdiek
-tex-psnfss-doc-9.2a.33946 Documentation for tex-psnfss
-tex-pspicture-doc-2009 Documentation for tex-pspicture
-tex-tools-doc-2017  Documentation for tex-tools
-nkf-2.13nb3         Convert between various Japanese character encodings
+tex-zapfchan-2014   Zapf Chancery fonts
+tex-zapfding-2014   Dingbat typeface designed by Hermann Zapf
+tex-zxjafont-0.3    Set up Japanese font families for XeLaTeX
+texlive-collection-basic-2017 Essential programs and files for TeX
+texlive-collection-latex-2017 Basic LaTeX packages
+tiff-4.0.8nb1       Library and tools for reading and writing TIFF data files
+tk-8.6.6            Graphical toolkit for TCL
+tradcpp-0.5.2nb2    Traditional (K&R-style) C preprocessor
+tree-1.7.0          Print a text or HTML tree diagram of a directory structure
+ttmkfdir2-20021109nb6 Tool that creates a fonts.scale file
+uim-1.8.6nb42       Multilingual input method library
+unixodbc-2.3.4      ODBC 2.x/3.x driver manager
+unzip-6.0nb8        List, test and extract compressed files in a ZIP archive
+usbids-20081118     Repository of USB IDs (usb.ids database)
+vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
+vte-0.38.4          Terminal widget with improved accessibility and I18N support
+web2c-2017          TeX implementation translating WEB to C
+x11-links-1.06      Shadow tree of links to native X11 headers and libraries
+x264-devel-20170912 GPL licensed H.264 encoder
+xcb-util-0.4.0      XCB Utilities
+xcb-util-image-0.4.0 XCB port of Xlib's XImage and XShmImage
+xcb-util-keysyms-0.4.0 XCB Utilities
+xcb-util-wm-0.4.1   Client and window-manager helpers for ICCCM and EWMH
+xdg-utils-1.1.2     Tools to assist applications with various desktop integration tasks
+xdvik-22.87.03nb1   Previewer for DVI files
+xetex-0.99997       TeX system with Unicode and modern font technologies
+xfce4-4.12.0nb7     Xfce
+xfce4-appfinder-4.12.0nb4 Xfce application finder
+xfce4-conf-4.12.1   Xfce client-server configuration storage and query system
+xfce4-desktop-4.13.1 Xfce desktop background manager
+xfce4-exo-0.11.3    Xfce extension library
+xfce4-garcon-0.6.1  Xfce menu library
+xfce4-gtk2-engine-3.2.0nb4 Xfce GTK2 themes
+xfce4-mousepad-0.4.0nb5 Xfce text editor
+xfce4-orage-4.12.1nb4 Xfce time managing application
+xfce4-panel-4.13.0  Xfce panel
+xfce4-session-4.13.0 Xfce session manager
+xfce4-settings-4.13.0 Xfce settings manager
+xfce4-terminal-0.8.5.1 Xfce terminal emulator
+xfce4-thunar-1.6.11 Xfce file manager
+xfce4-tumbler-0.1.32nb4 D-Bus thumbnailing service
+xfce4-wm-4.12.3nb3  Xfce window manager
+xfce4-wm-themes-4.10.0nb4 Xfce window manager themes
+xfce4-xarchiver-0.5.4nb4 Xfce archiver handler
+xmix-2.1nb3         Mixer for X Window System
+xmlcatmgr-2.2nb1    XML and SGML catalog manager
+xorg-cf-files-1.0.6nb3 Xorg imake rules
+xorg-util-macros-1.19.1 Xorg autotool macros
+xscreensaver-5.36   Screen saver and locker for the X window system
+xvidcore-1.3.3      ISO MPEG-4 compliant video codec
+yasm-1.3.0          Complete rewrite of the NASM assembler with BSD license
+zip-3.0nb3          Create/update ZIP files compatible with pkzip
+zonetab-0           NetBSD zone.tab file
+zziplib-0.13.67     Library for ZIP archive handling
