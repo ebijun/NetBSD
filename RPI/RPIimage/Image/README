@@ -17,7 +17,7 @@ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-26-earmv6hf/MD5
 Update:
 - NetBSD-current 8.99.7 evbarm-earmv6hf 201711180030Z rpi.img from nyftp.
 - gcc 5.5
-- mikutter-3.5.14
+- mikutter-3.5.15
   http://mail-index.netbsd.org/pkgsrc-changes/2017/11/12/msg166562.html
 
 Overview:
@@ -40,7 +40,8 @@ dmesg:
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  updates:
- https://github.com/ebijun/NetBSD/commit/b63fac3c92108db46aef2a71d4817dd6d83e61b9#diff-d4129976a450502c6997b00f13b99222
+ https://github.com/ebijun/NetBSD/commit/8196519502822286845bdba8ac37d3b432135ed5#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/60e409acb9153c6460774bb03cb3b7a52a08bcd0#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
 - CPUFLAGS=-mfpu=neon-vfpv4 breaks some programs
