@@ -2,10 +2,10 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-11-26/
+PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-01-27/
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-8.99.7-evbarm-${ARCH}-201711180030Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.9-evbarm-${ARCH}-201712130310Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2015-05-30.tar.gz 
 
@@ -19,7 +19,7 @@ FILE_TMP=a.img
 SETS=${MNT_CDROM}/evbarm/binary/sets
 RPI=${MNT_CDROM}/evbarm/binary/gzimg/armv7.img
 
-KERNELBIN7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.bin.gz
+KERNELBIN7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.img.gz
 KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
