@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.7 (GENERIC) #0: Sat Nov 18 00:25:43 UTC 2017
+NetBSD 8.99.9 (GENERIC) #0: Sun Dec 24 01:22:16 UTC 2017
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 2047 MB
 avail memory = 1965 MB
@@ -207,9 +207,8 @@ uhub4 at usb5: vendor 1002 (0x1002) EHCI root hub (0000), class 9/0, rev 2.00/1.
 uhub4: 10 ports with 10 removable, self powered
 uhub5 at usb4: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub5: 2 ports with 2 removable, self powered
-ehci0: handing over full speed device on port 3 to ohci1
-ehci0: handing over full speed device on port 4 to ohci1
-uhidev0 at uhub0 port 1 configuration 1 interface 0
+ehci0: handing over full speed device on port 1 to ohci0
+uhidev0 at uhub1 port 1 configuration 1 interface 0
 uhidev0: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
 ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wd0 at atabus0 drive 0
@@ -223,7 +222,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: wd0
 root on wd0a dumps on wd0b
 wskbd1 at ukbd0 mux 1
-uhidev1 at uhub0 port 1 configuration 1 interface 1
+uhidev1 at uhub1 port 1 configuration 1 interface 1
 uhidev1: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
 uhidev1: 17 report ids
 ums0 at uhidev1 reportid 2: 16 buttons, W and Z dirs
@@ -233,7 +232,7 @@ uhid1 at uhidev1 reportid 4: input=1, output=0, feature=0
 uhid2 at uhidev1 reportid 16: input=6, output=6, feature=0
 uhid3 at uhidev1 reportid 17: input=19, output=19, feature=0
 root file system type: ffs
-kern.module.path=/stand/amd64/8.99.7/modules
+kern.module.path=/stand/amd64/8.99.9/modules
 drm: initializing kernel modesetting (RV610 0x1002:0x94CB 0x1002:0x94CB).
 drm: register mmio base: 0xfddf0000
 drm: register mmio size: 65536
@@ -242,14 +241,14 @@ radeon0: info: VRAM: 128M 0x0000000000000000 - 0x0000000007FFFFFF (128M used)
 radeon0: info: GTT: 512M 0x0000000008000000 - 0x0000000027FFFFFF
 drm: Detected VRAM RAM=80M, BAR=256M
 drm: RAM width 64bits DDR
-Zone  kernel: Available graphics memory: 445692 kiB
+Zone  kernel: Available graphics memory: 445668 kiB
 drm: radeon: 128M of VRAM memory ready
 drm: radeon: 512M of GTT memory ready.
 drm: Loading RV610 Microcode
 drm: GART: num cpu pages 131072, num gpu pages 131072
 drm: PCIE GART of 512M enabled (table at 0x0000000000040000).
 radeon0: info: WB enabled
-radeon0: info: fence driver on ring 0 use gpu addr 0x0000000008000c00 and cpu addr 0x0xffff800044903c00
+radeon0: info: fence driver on ring 0 use gpu addr 0x0000000008000c00 and cpu addr 0x0xffff80004490fc00
 drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
 drm: Driver supports precise vblank timestamp query.
 radeon0: interrupting at ioapic0 pin 18 (radeon)
@@ -281,17 +280,6 @@ radeondrmkmsfb0: framebuffer at 0xffff800044c30000, size 1280x1024, depth 32, st
 wsdisplay0 at radeondrmkmsfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wskbd1: connecting to wsdisplay0
-uaudio0 at uhub0 port 2 configuration 1 interface 0
-uaudio0: LUXMAN LXU-OT2 (0x8bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 3
-uaudio0: audio rev 1.00
-audio1 at uaudio0: full duplex, playback, capture, mmap, independent
-uaudio0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-uaudio0: Latency: 180 milliseconds
-spkr2 at audio1: PC Speaker (synthesized)
-wsbell at spkr2 not configured
-uhidev2 at uhub0 port 2 configuration 1 interface 2
-uhidev2: LUXMAN LXU-OT2 (0x8bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 3, iclass 3/0
-uhid4 at uhidev2: input=1, output=0, feature=0
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
