@@ -8,6 +8,7 @@ NetBSD 8.99.9 (GENERIC) #0: Sun Dec 24 01:22:16 UTC 2017
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1982 MB
+rnd: seeded with 128 bits
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 running cgd selftest aes-xts-256 aes-xts-512 done
@@ -207,7 +208,7 @@ coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
 acpicpu1 at cpu1: ACPI CPU
 DRM error in i915_irq_handler: pipe A underrun
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-acpiacad0: AC adapter online.
+acpiacad0: AC adapter offline.
 uhub0 at usb0: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
 uhub1 at usb1: vendor 8086 (0x8086) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
@@ -222,21 +223,19 @@ IPsec: Initialized Security Association Processing.
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 acpibat0: SONY LION rechargeable battery
 acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
-ehci0: handing over full speed device on port 1 to uhci0
 wd0 at atabus0 drive 0
-wd0: <TOSHIBA MK6476GSX>
+wd0: <HGST HTS721010A9E630>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
-wd0: 596 GB, 1240341 cyl, 16 head, 63 sec, 512 bytes/sect x 1250263728 sectors
-wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100), WRITE DMA FUA, NCQ (32 tags)
-wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA), NCQ (31 tags)
+wd0: 931 GB, 1938021 cyl, 16 head, 63 sec, 512 bytes/sect x 1953525168 sectors
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags) w/PRIO
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags) w/PRIO
+uvideo0 at uhub4 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
+video0 at uvideo0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
 kern.module.path=/stand/i386/8.99.9/modules
-uvideo0 at uhub0 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
-video0 at uvideo0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
-acpibat0: normal capacity on 'charge state'
