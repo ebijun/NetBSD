@@ -1,24 +1,34 @@
-VERSION: :1,$s/2017-11-27/2017-11-27/g
-ISO:     :1,$s/201711180030Z/201711180030Z/g
-NetBSD:  :1,$s/8.99.7/8.99.7/g
+VERSION: :1,$s/2018-01-04/2018-01-04/g
+ISO:     :1,$s/201801030030Z/201801030030Z/g
+NetBSD:  :1,$s/8.99.10/8.99.10/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2017-11-27-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2018-01-04-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-11-27-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2018-01-04-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-27-earmv6hf/2017-11-27-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-27-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-01-04-earmv6hf/2018-01-04-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-01-04-earmv6hf/MD5
 
 Update:
-- NetBSD-current 8.99.7 evbarm-earmv6hf 201711180030Z rpi.img from nyftp.
-- gcc 5.5
-- mikutter-3.5.15
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/11/12/msg166562.html
+- NetBSD-current 8.99.10 evbarm-earmv6hf 201801030030Z rpi.img from nyftp.
+- Heads-up: RPI FDTisation committed
+  http://mail-index.netbsd.org/port-arm/2017/12/10/msg004460.html
+- support RPI2-1.2,include BCM2837
+  cp /boot/bcm2836-rpi-2-b.dtb /boot/bcm2837-rpi-2-b.dtb
+
+- fossil-2.4
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/23/msg168194.html
+- mikutter-3.6.0
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/30/msg168307.html
+- mlterm-3.8.4
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/08/msg167637.html
+- ruby23-base-2.3.6
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/15/msg167927.html
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -26,7 +36,7 @@ Overview:
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-27-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-01-04-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -40,8 +50,7 @@ dmesg:
 Pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  updates:
- https://github.com/ebijun/NetBSD/commit/8196519502822286845bdba8ac37d3b432135ed5#diff-4a755d73dbba5da21bbf783139f086dc
- https://github.com/ebijun/NetBSD/commit/60e409acb9153c6460774bb03cb3b7a52a08bcd0#diff-4a755d73dbba5da21bbf783139f086dc
+
 
 Problem:
 - CPUFLAGS=-mfpu=neon-vfpv4 breaks some programs
@@ -88,7 +97,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-11-27/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-01-04/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -96,7 +105,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-27-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-01-04-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -263,18 +272,19 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2017 hiroshima demonstration use, 
+For Open Source Conference 2018 osaka demonstration use, 
 I've updated raspberry-pi image.
 
-https://www.ospn.jp/osc2017-hiroshima/
-https://www.facebook.com/events/1294007417314704/
-https://www.ospn.jp/osc2017-hiroshima/modules/eguide/event.php?eid=11
-https://www.ospn.jp/osc2017-hiroshima/modules/article/article.php?articleid=1
+https://www.ospn.jp/osc2018-osaka/
+https://www.ospn.jp/osc2018-osaka/modules/eventrsv/?id=2&noform=1
+https://www.ospn.jp/osc2018-osaka/modules/article/article.php?articleid=1
+https://www.facebook.com/events/398913583842597/
 
 https://www.slideshare.net/junebihara18/netbsd-workshop
+http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 
-- NetBSD 8.99.7 earmv6hf rpi.img.gz base
+- NetBSD 8.99.10 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -312,7 +322,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2017-11-27/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-01-04/
 
 Installed Packages:
   bash
