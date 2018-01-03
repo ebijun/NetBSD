@@ -1,35 +1,37 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2017-11-10/2017-11-10/g
-:1,$s/8.99.5/8.99.5/g
-:1,$s/201711051750Z/201711051750Z/g
-:1,$s?2017/11/06/msg004432.html?2017/11/06/msg004432.html?
+:1,$s/2018-01-27/2018-01-27/g
+:1,$s/8.99.10/8.99.10/g
+:1,$s/201711051750Z/201801030030Z/g
+:1,$s?2018/01/03/msg004520.html?2018/01/03/msg004520.html?
 
-2017-11-10-netbsd-raspi-earmv6hf.img
+2018-01-27-netbsd-raspi-earmv6hf.img
 
-For Kansai Open Forum 2017 demonstration use,
-I've updated 2017-11-10-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2018 osaka demonstration use,
+I've updated 2018-01-27-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2017/11/06/msg004432.html
+http://mail-index.netbsd.org/port-arm/2018/01/03/msg004520.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2017-11-10-earmv6hf/2017-11-10-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-01-27-earmv6hf/2018-01-27-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.5 evbarm-earmv6hf 201711051750Z rpi.img from nyftp.
-- Ensure CNTVOFF is 0 before dropping out of Hyp mode
-  http://mail-index.netbsd.org/source-changes/2017/11/04/msg089406.html
-- Firmware after May 8, 2017 places APs in WFE state at boot. Add a "sev"
-  after writing the start vector, otherwise secondary CPUs will not boot.
-  http://mail-index.netbsd.org/source-changes/2017/11/04/msg089400.html
-- Disable USB_DEBUG by default
-  http://mail-index.netbsd.org/source-changes/2017/11/05/msg089416.html
-- Use IPL_VM and IST_MPSAFE instead of IPL_SCHED
-  http://mail-index.netbsd.org/source-changes/2017/11/05/msg089417.html
-- libc-12.208 -> libc-12.209
-- git-base-2.15.0
-- tzdata-2017c
-- mikutter-3.5.13
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/10/28/msg165991.html
+- NetBSD-current 8.99.10 evbarm-earmv6hf 201801030030Z rpi.img from nyftp.
+- Heads-up: RPI FDTisation committed
+  http://mail-index.netbsd.org/port-arm/2017/12/10/msg004460.html
+- support RPI2-1.2,include BCM2837
+  cp /boot/bcm2836-rpi-2-b.dtb /boot/bcm2837-rpi-2-b.dtb
+- NetBSD Security Advisory 2018-001: Several vulnerabilities in context handling
+  http://mail-index.netbsd.org/security-announce/2018/01/02/msg000120.html
+- NetBSD Security Advisory 2018-002: Local DoS in virecover
+  http://mail-index.netbsd.org/security-announce/2018/01/02/msg000121.html
+- fossil-2.4
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/23/msg168194.html
+- mikutter-3.6.0
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/30/msg168307.html
+- mlterm-3.8.4
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/08/msg167637.html
+- ruby23-base-2.3.6
+  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/15/msg167927.html
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -45,7 +47,7 @@ dmesg:
 Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  changes:
-  https://github.com/ebijun/NetBSD/commit/b63fac3c92108db46aef2a71d4817dd6d83e61b9#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/e8550e0ff637be076e91e2369983826f5b72da7b#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
 - webkit24-gtk-2.4.11nb9 compile failed.
