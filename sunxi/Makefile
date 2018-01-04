@@ -1,17 +1,36 @@
-#UBOOT=/usr/pkg/share/u-boot/nanopi-neo/u-boot-sunxi-with-spl.bin
-#DTB=sun8i-h3-nanopi-neo.dtb
+#pkgsrc/sysutils/* are:
+#BOARD=a10-olinuxino-lime
+#BOARD=bananapi
+#BOARD=bananapi-m3
+#BOARD=beagleboard
+#BOARD=beagleboneblack
+#BOARD=beaglebonewhite
+#BOARD=chip
+#BOARD=chip-pro
+#BOARD=cubieboard2
+#BOARD=cubieboard4
+#BOARD=cubietruck
+#BOARD=hummingbird-a31
+#BOARD=jetson-tk1
+#BOARD=jetson-tx1
+#BOARD=nanopi-m1
+#BOARD=nanopi-neo
+#BOARD=nanopi-neo2
+#BOARD=orangepi-2
+BOARD=orangepi-one
+#BOARD=orangepi-plus2e
+#BOARD=pine64
+#BOARD=pinebook
+#BOARD=pocketchip
 
-UBOOT=/usr/pkg/share/u-boot/pocketchip/u-boot-sunxi-with-spl.bin
-#DTB=sun50i-h5-nanopi-neo2.dts
-DTB=DTB/sun5i-r8-pocketchip.dtb
-
-#KERNEL=netbsd-SUNXI.ub
-KERNEL=netbsd.ub
-
-DOSPARTITION=sd0e
+PKG=/usr/pkg
+DEVICE=sd0
 MOUNT=/mnt
 
-set: mount setconsole mkubootimage umount
+all: spl mount setconsole mkubootimage umount
+
+spl:
+	dd if=${PKG}/share/u-boot/${BOARD}/u-boot-sunxi-with-spl.bin of=/dev/r${DEVICE}d bs=1k seek=8 conv=sync
 
 mkubootimage:
 	mkubootimage -A arm -C none -O linux -T script -a 0 -n "NetBSD sunxi boot" ${MOUNT}/boot.cmd ${MOUNT}/boot.scr
@@ -20,18 +39,7 @@ setconsole:
 	ed ${MOUNT}/boot.cmd < Command
 
 mount:
-	mount_msdos /dev/${DOSPARTITION} ${MOUNT}
+	mount_msdos /dev/${DEVICE}e ${MOUNT}
 
 umount:
 	umount ${MOUNT}
-
-write:
-	@echo sunxi-fel -p -v uboot ${UBOOT} write 0x42000000 ${KERNEL} write 0x43000000 ${DTB} write 0x43100000 boot.scr
-
-boot.scr:
-	mkubootimage -A arm -C none -O linux -T script -a 0 -n "NetBSD sunxi boot" boot.cmd boot.scr
-
-copy:
-	mount_msdos /dev/sd0e /mnt
-	cp /mnt/${KERNEL} .
-	umount /mnt
