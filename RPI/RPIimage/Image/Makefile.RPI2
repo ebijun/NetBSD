@@ -2,7 +2,7 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-01-27/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-01-27/
 
 # iso file information
 IMAGE=/usr/release/images/NetBSD-8.99.10-evbarm-${ARCH}-201801030950Z.iso
