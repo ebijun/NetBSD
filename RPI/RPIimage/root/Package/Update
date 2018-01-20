@@ -1,3 +1,5 @@
+#ftp http://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
+#tar xzvf pkgsrc.tar.gz -C /usr
 #pkg_add rsync
 #pkg_add pkg_chk
 (cd /usr/pkgsrc;cvs update -PAd)

@@ -2,9 +2,10 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-01-27/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-01-27/
 
 # iso file information
+
 IMAGE=/usr/release/images/NetBSD-8.99.12-evbarm-${ARCH}-201801191630Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2015-05-30.tar.gz 
@@ -35,7 +36,7 @@ VND_CDROM=vnd1
 MNT_TMP=/mnt2
 VND_TMP=vnd2
 
-all: file cdmount rpi extract cdunmount fit
+all: file cdmount rpi extract cdunmount fit kernel
 
 # extract sets to image file.
 extract:
@@ -174,10 +175,8 @@ firm:
 kernel:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-	gunzip < ${KERNELBIN7} > ${MNT}/kernel7.img
-	umount ${MNT}
-	mount /dev/${VND}a ${MNT}
-	gunzip < ${KERNEL7} > ${MNT}/netbsd
+	# copy dtb for RPI2-1.2
+	cp ${MNT}/bcm2836-rpi-2-b.dtb ${MNT}/bcm2837-rpi-2-b.dtb
 	umount ${MNT}
 	vnconfig -u ${VND}
 

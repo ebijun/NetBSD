@@ -15,4 +15,4 @@ BOARD=orangepi-one
 #gunzip < /mnt1/evbarm/binary/gzimg/armv7.img.gz > armv7.img
 #make cdunmount
 
-dd if=u-boot/${BOARD}/u-boot-sunxi-with-spl.bin of=/dev/rsd0d bs=1k seek=8 conv=sync
+dd if=/usr/pkg/share/u-boot/${BOARD}/u-boot-sunxi-with-spl.bin of=/dev/rsd0d bs=1k seek=8 conv=sync

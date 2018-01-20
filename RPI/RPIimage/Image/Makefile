@@ -7,7 +7,7 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-01-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.9-evbarm-${ARCH}-201712150740Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.10-evbarm-${ARCH}-201801030030Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -46,7 +46,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount
+all: file cdmount rpi extract cdunmount kernel
 
 #update: cdmount update-extract cdunmount
 
@@ -188,13 +188,9 @@ firm:
 kernel:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-#	gunzip < ${KERNELBIN}  > ${MNT}/kernel.img
-	gunzip < ${KERNELBIN7} > ${MNT}/kernel7.img
+	# copy dtb for RPI2-1.2
+	cp ${MNT}/bcm2836-rpi-2-b.dtb ${MNT}/bcm2837-rpi-2-b.dtb
 	umount ${MNT}
-#	mount /dev/${VND}a ${MNT}
-#	gunzip < ${KERNEL}  > ${MNT}/netbsd.earmv6hf
-#	gunzip < ${KERNEL7} > ${MNT}/netbsd.earmv7hf
-#	umount ${MNT}
 	vnconfig -u ${VND}
 
 kernel-update:
