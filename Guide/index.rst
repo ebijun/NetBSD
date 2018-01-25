@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2017 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2018 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -23,7 +23,8 @@
  :maxdepth: 3
  :numbered:
 
- Place/hiroshima
- RPI/RPIupdate2017
- X68K
+ OSC/OSC2017
+ Place/osaka
+ RPI/RPIupdate2018
  Place/intro
+

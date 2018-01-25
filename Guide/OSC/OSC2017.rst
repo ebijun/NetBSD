@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-7 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -26,10 +26,6 @@
 日本NetBSDユーザーグループは2017年も日本各地で開催されるオープンソースカンファレンスを中心とするイベントに参加しました。各イベントではブース運営・セミナー開催等を行います。
 ブースへの展示機材を持ち込み＆差し入れ、セミナー時間での参加・発表を歓迎します。
 
-参加した場所の地図
-
-  http://www.re.soum.co.jp/~jun/2016maps.pdf
-
 これまでに参加した一覧は以下のとおりです。
 
   https://github.com/ebijun/NetBSD/blob/master/Guide/OSC/OSC100.csv
@@ -41,14 +37,14 @@
 どのくらい参加しているか
 -------------------------
 
-- 2017/3/10までにOSCは142回開催されています。
-- JNUGは128回参加しています。90.1%
+- 2018/1/25までにOSCは153回開催されています。
+- JNUGは138回参加しています。90.1%
 
 2017年のOSC
 --------------
-- 日本全国各地で4回開催/名古屋・北海道・沖縄・京都開催日決定
-- 参加者:1930人　
-- 参加団体:124グループ
+- 日本全国各地で14回開催
+- 参加者:6643人　
+- 参加団体:455グループ
 
 .. csv-table::
  :widths: 10 40 10 20 30 30
@@ -68,32 +64,7 @@
  150,"2017 Shimane","10/14",113,19,1
  151,"2017 Nagaoka","10/28",120,12,1
  152,"2017 Hiroshima","11/26",200,32,1
- 153,"2017 .Enterprise","12/8",,,		
-
-2016年のOSC
---------------
-- 日本全国各地で14回開催
-- 参加者6915人　
-- 参加団体470グループ
-
-.. csv-table::
- :widths: 10 40 10 20 30 30
-
- 回数,イベント,日付,参加者,参加グループ,参加したら1
- 126,2016 Hamanako,1/23,130,24,1
- 127,2016 .Enterprise@Osaka,1/29,200,3,	
- 128,2016 Tokyo/Spring,2/26-27,1550,71,1
- 129,2016 Gunma,5/14,185,26,1
- 130,2016 Nagoya,5/28,500,35,1
- 131,2016 Hokkaido,6/17-18,710,56,1
- 132,2016 Okinawa,7/2,130,20,1
- 133,2016 Kyoto,7/29-30,1000,59,1
- 134,2016 .Enterprise,9/1,370,6,
- 135,2016 Shimane,9/24,180,24,1
- 136,2016 Nagaoka,10/1,100,13,1
- 137,2016 Tokyo/Fall,11/5-6,1350,77,1
- 138,2016 Fukuoka,11/19,300,29,1
- 139,2016 Hiroshima,11/27,210,27,1
+ 153,"2017 .Enterprise","12/8",350,6,		
 
 
 togetterアクセスで見たNetBSDブース
@@ -107,24 +78,23 @@ togetterのアクセスログは以下の場所にあります。
 .. csv-table::
  :widths: 120 60 10
 
- オープンソースカンファレンス2017 Hiroshima NetBSDブース展示の記録,https://togetter.com/li/1175260,617
- 関西オープンソース2017 NetBSDブース展示の記録,https://togetter.com/li/1170068,553
- オープンソースカンファレンス2017 Nagaoka NetBSDブース展示の記録,https://togetter.com/li/1165451,217
- オープンソースカンファレンス2017 Shimane NetBSDブース展示の記録,https://togetter.com/li/1160781,491
- オープンソースカンファレンス2017 Fukuoka NetBSDブース展示の記録,https://togetter.com/li/1158733,352
- オープンソースカンファレンス2017 Tokyo/Fall NetBSDブース展示の記録,https://togetter.com/li/1148810,1012
- オープンソースカンファレンス2017 Chiba NetBSDブース展示の記録,https://togetter.com/li/1146818,444
- セキュリティ・キャンプ全国大会2017「信じて送り出した家庭用ルータがNetBSDにドハマリしてloginプロンプト..,https://togetter.com/li/1140652,2723
- オープンソースカンファレンス2017 Kyoto NetBSDブース展示の記録,https://togetter.com/li/1136708,1941
- オープンソースカンファレンス2017 Hokkaido NetBSDブース展示の記録,https://togetter.com/li/1130009,854
- 日本NetBSDユーザーグループ第十九回定期総会 および NetBSD BoF 2017 の記録,https://togetter.com/li/1127726,757
- オープンソースカンファレンス2017 Okinawa NetBSDブース展示の記録,https://togetter.com/li/1120958,900
- オープンソースカンファレンス2017 Nagoya NBUG & NetBSDブース展示の記録,https://togetter.com/li/1114389,1303
- オープンソースカンファレンス2017 Tokyo/Spring NetBSDブース展示の記録,https://togetter.com/li/1089005,1388
- AsiaBSDCon 2017の記録,https://togetter.com/li/1084357,3772
- オープンソースカンファレンス2017 Hamanako NetBSDブース展示の記録,https://togetter.com/li/1080372,1014
- オープンソースカンファレンス2017 Osaka NetBSDブース展示の記録,https://togetter.com/li/1075115,1221
-
+ オープンソースカンファレンス2017 Hiroshima NetBSDブース展示の記録,https://togetter.com/li/1175260,821
+ 関西オープンソース2017 NetBSDブース展示の記録,https://togetter.com/li/1170068,683
+ オープンソースカンファレンス2017 Nagaoka NetBSDブース展示の記録,https://togetter.com/li/1165451,271
+ オープンソースカンファレンス2017 Shimane NetBSDブース展示の記録,https://togetter.com/li/1160781,546
+ オープンソースカンファレンス2017 Fukuoka NetBSDブース展示の記録,https://togetter.com/li/1158733,392
+ オープンソースカンファレンス2017 Tokyo/Fall NetBSDブース展示の記録,https://togetter.com/li/1148810,1129
+ オープンソースカンファレンス2017 Chiba NetBSDブース展示の記録,https://togetter.com/li/1146818,472
+ セキュリティ・キャンプ全国大会2017「信じて送り出した家庭用ルータがNetBSDにドハマリしてloginプロンプト..,https://togetter.com/li/1140652,2817
+ オープンソースカンファレンス2017 Kyoto NetBSDブース展示の記録,https://togetter.com/li/1136708,2021
+ オープンソースカンファレンス2017 Hokkaido NetBSDブース展示の記録,https://togetter.com/li/1130009,904
+ 日本NetBSDユーザーグループ第十九回定期総会 および NetBSD BoF 2017 の記録,https://togetter.com/li/1127726,796
+ オープンソースカンファレンス2017 Okinawa NetBSDブース展示の記録,https://togetter.com/li/1120958,942
+ オープンソースカンファレンス2017 Nagoya NBUG & NetBSDブース展示の記録,https://togetter.com/li/1114389,1373
+ オープンソースカンファレンス2017 Tokyo/Spring NetBSDブース展示の記録,https://togetter.com/li/1089005,1424
+ AsiaBSDCon 2017の記録,https://togetter.com/li/1084357,3922
+ オープンソースカンファレンス2017 Hamanako NetBSDブース展示の記録,https://togetter.com/li/1080372,1063
+ オープンソースカンファレンス2017 Osaka NetBSDブース展示の記録,https://togetter.com/li/1075115,1298
 
 netbsd-advocacyメーリングリストへの報告
 --------------------------------------------
@@ -133,28 +103,26 @@ netbsd-advocacyメーリングリストへの参加報告をしてみました�
 
 .. csv-table::
 
- NetBSD machines at Open Source Conference 2016 Hamanako,http://mail-index.netbsd.org/netbsd-advocacy/2016/01/23/msg000701.html
- NetBSD machines at Open Source Conference 2016 Tokyo/Spring,http://mail-index.netbsd.org/netbsd-advocacy/2016/02/29/msg000703.html
- NetBSD machines at AsiaBSDCon 2016,http://mail-index.netbsd.org/netbsd-advocacy/2016/04/13/msg000704.html
- OpenBSD and NetBSD machines at Open Source Conference 2016 Nagoya,http://mail-index.netbsd.org/netbsd-advocacy/2016/05/30/msg000707.html
- NetBSD machines at Open Source Conference 2016 Gunma,http://mail-index.netbsd.org/netbsd-advocacy/2016/05/16/msg000706.html
- NetBSD machines at Open Source Conference 2016 Hokkaido,http://mail-index.netbsd.org/netbsd-advocacy/2016/06/20/msg000709.html
- Japan NetBSD Users Group 18th annual Meeting and BoF 2016,http://mail-index.netbsd.org/netbsd-advocacy/2016/06/08/msg000708.html
- NetBSD machines at Open Source Conference 2016 Okinawa,http://mail-index.netbsd.org/netbsd-advocacy/2016/07/04/msg000710.html
- NetBSD machines at Open Source UnConference 2016 Kanazawa,http://mail-index.netbsd.org/netbsd-advocacy/2016/08/29/msg000714.html
- NetBSD workshop at SecurityCamp 2016,http://mail-index.netbsd.org/netbsd-advocacy/2016/08/17/msg000713.html
- NetBSD machines at Open Source Conference 2016 Kyoto,http://mail-index.netbsd.org/netbsd-advocacy/2016/08/01/msg000712.html
- NetBSD machines at Open Source Conference 2016 Shimane,http://mail-index.netbsd.org/netbsd-advocacy/2016/09/24/msg000716.html
- OpenBSD and NetBSD machines at Open Source Conference 2016 Nagaoka,http://mail-index.netbsd.org/netbsd-advocacy/2016/10/03/msg000717.html
- NetBSD machines at Open Source Conference 2016 Tokyo/Fall,http://mail-index.netbsd.org/netbsd-advocacy/2016/11/09/msg000721.html
- NetBSD machines at KANSAI OPEN FORUM 2016,http://mail-index.netbsd.org/netbsd-advocacy/2016/11/16/msg000722.html
- NetBSD machines at Open Source Conference 2016 Fukuoka,http://mail-index.netbsd.org/netbsd-advocacy/2016/11/23/msg000723.html
- NetBSD machines at Open Source Conference 2016 Hiroshima,http://mail-index.netbsd.org/netbsd-advocacy/2016/11/29/msg000724.html　
- NetBSD machines at BIG Raspberry JAM Tokyo 2016,http://mail-index.netbsd.org/netbsd-advocacy/2016/12/11/msg000726.html
  NetBSD machines at Open Source Conference 2017 Osaka,http://mail-index.netbsd.org/netbsd-advocacy/2017/01/28/msg000727.html
  NetBSD machines at Open Source Conference 2017 Hamanako,http://mail-index.netbsd.org/netbsd-advocacy/2017/03/17/msg000732.html
  NetBSD machines at Open Source Conference 2017 Tokyo/Spring,http://mail-index.netbsd.org/netbsd-advocacy/2017/03/13/msg000728.html
  OpenBSD and NetBSD machines at AsiaBSDCon 2017,http://mail-index.netbsd.org/netbsd-advocacy/2017/03/13/msg000729.html
+ OpenBSD and NetBSD machines at Open Source Conference 2017 Nagoya,http://mail-index.netbsd.org/netbsd-advocacy/2017/05/29/msg000736.html
+ NetBSD machines at Open Source Conference 2017 Okinawa,http://mail-index.netbsd.org/netbsd-advocacy/2017/06/20/msg000738.html
+ Japan NetBSD Users Group 19th annual Meeting and BoF 2017,http://mail-index.netbsd.org/netbsd-advocacy/2017/07/12/msg000741.html
+ NetBSD machines at Open Source Conference 2017 Hokkaido,http://mail-index.netbsd.org/netbsd-advocacy/2017/07/19/msg000743.html
+ NetBSD machines at Open Source Conference 2017 Kyoto,http://mail-index.netbsd.org/netbsd-advocacy/2017/08/10/msg000744.html
+ NetBSD workshop at SecurityCamp 2017,http://mail-index.netbsd.org/netbsd-advocacy/2017/08/18/msg000745.html
+ NetBSD machines at Open Source Conference 2017 Chiba,http://mail-index.netbsd.org/netbsd-advocacy/2017/09/03/msg000746.html
+ NetBSD machines at Open Source Conference 2017 Tokyo/Fall,http://mail-index.netbsd.org/netbsd-advocacy/2017/09/13/msg000747.html
+ NetBSD machines at Open Source Conference 2017 Fukuoka,http://mail-index.netbsd.org/netbsd-advocacy/2017/10/11/msg000748.html
+ NetBSD machines at Open Source Conference 2017 Shimane,http://mail-index.netbsd.org/netbsd-advocacy/2017/10/16/msg000749.html
+ OpenBSD and NetBSD machines at Open Source Conference 2017 Nagaoka,http://mail-index.netbsd.org/netbsd-advocacy/2017/10/28/msg000750.html
+ NetBSD machines at KANSAI OPEN FORUM 2017,http://mail-index.netbsd.org/netbsd-advocacy/2017/11/12/msg000751.html
+ NetBSD machines at Open Source Conference 2017 Hiroshima,http://mail-index.netbsd.org/netbsd-advocacy/2017/11/27/msg000752.html
+ Reporting the current status of world wide IPv6 deployment and progress to itojun,http://mail-index.netbsd.org/netbsd-advocacy/2017/11/28/msg000753.html
+ NetBSD Advent Calendar 2017,http://mail-index.netbsd.org/netbsd-advocacy/2017/11/30/msg000754.html
+
 
 NetBSD観光ガイド作成
 ------------------------
@@ -199,16 +167,6 @@ NetBSD観光ガイド作成
  :widths: 10 50 30 20 20
  
  月,イベント,旅費,機材配送,印刷費
- 2016/4,OSC沖縄,39800,,
- 2016/5,OSC北海道,43100,,
- 2016/5,OSC名古屋,19230,,
- 2016/7,OSC京都,29816,,
- 2016/8,OSuC金沢,32890,,
- 2016/8,OSC島根,48540,,
- 2016/10,OSC長岡,17500,,
- 2016/11,OSC福岡,37500,,
- 2016/11,KOF,33056,,
- 2016/11,OSC広島,38770,,
  2017/1,OSC大阪,32258,,
  2017/2,OSC浜名湖,17250,2808,1600
  2017/3,OSC東京/AsiaBSDCon,0,0,4400
@@ -220,9 +178,10 @@ NetBSD観光ガイド作成
  2017/10,OSC島根,43010,,1600
  2017/11,OSC長岡,20600,,1600
  2017/11,KOF,35339,,2500
- 2017/11,OSC広島,,,
+ 2017/11,OSC広島,46436,,
  
-2017年
+2018年
 -------------
 
-2017年は2016/1/27のOSC大阪(http://www.ospn.jp/osc2017-osaka/)からはじまっています。ブースへの展示機材もちこみ＆セミナー時間での発表を歓迎します。
+2018年は2018/1/26のOSC大阪(http://www.ospn.jp/osc2018-osaka/)からはじまっています。ブースへの展示機材もちこみ＆セミナー時間での発表を歓迎します。
+
