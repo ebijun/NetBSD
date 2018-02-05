@@ -1,6 +1,6 @@
-#make -f Makefile.RPI2 
-#make -f Makefile.RPI2 release
-#make -f Makefile.RPI2 pkg
+make -f Makefile.RPI2 
+make -f Makefile.RPI2 release
+make -f Makefile.RPI2 pkg
 #
 # set sdcard to /dev/sd0
 # ./Copy
@@ -8,8 +8,8 @@
 #
 #adding packages.
 #
-./03_back
-mv back.img `date +%Y-%m-%d`-netbsd-armv7-earmv7hf.img
-make -f Makefile.RPI2 logclean
-make -f Makefile.RPI2 pkg-back
+#./03_back
+#mv back.img `date +%Y-%m-%d`-netbsd-armv7-earmv7hf.img
+#make -f Makefile.RPI2 logclean
+#make -f Makefile.RPI2 pkg-back
 #
