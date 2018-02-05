@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-7 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,7 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
- 関西オープンソース2017 NetBSDブース展示の記録,
+ 関西オープンソース2017 NetBSDブース展示の記録,https://togetter.com/li/1170068
  オープンソースカンファレンス2017大阪展示の記録,https://togetter.com/li/1075115
  関西オープンソース2016 NetBSDブース展示の記録,https://togetter.com/li/1047263
  関西オープンソース2015 NetBSDブース展示の記録,https://togetter.com/li/896456
@@ -95,7 +95,9 @@ Maps:
 
 .. csv-table::
  :widths: 15 15 60
- 
+
+ NetBSD 'Teokure" LiveImage Updates and NetBSD 8.0,https://speakerdeck.com/tsutsui/kof2017
+ PC6001 emulator PC6001VX on NetBSD + pkgsrc,https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
  NetBSD/dreamcast IDE HDD,KOF2016,https://speakerdeck.com/tsutsui/kof2016-netbsd-dreamcast-ide-hdd
  emacs18.59&mule1.1,KOF2015,https://speakerdeck.com/tsutsui/kof2015-emacs-18-dot-59-and-mule-1-dot-1-on-netbsd-7-dot-0
  fdgw2,KOF2015,http://e-yuuki.org/events/fdgw2/assets/player/KeynoteDHTMLPlayer.html#0
@@ -112,6 +114,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2017/11/10-11,南港,LUNA68K&YM2194
  2017/1/27-28,大阪産業創造館,PC6001+PC6001VX
  2016/11/11-12,南港ATC,DreamCast with CF and SD RPI3+XM6i+NetBSD/x68k
  2015/11/6-7,南港ATC,Sun Ultra-5 RPI2+Xfce4
@@ -129,6 +132,21 @@ Maps:
 
 2017
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture/2017/11/10/DSC_4469.JPG
+.. image::  ../Picture/2017/11/10/DSC_4476.JPG
+.. image::  ../Picture/2017/11/10/DSC_4480.JPG
+.. image::  ../Picture/2017/11/10/DSC_4485.JPG
+.. image::  ../Picture/2017/11/10/DSC_4486.JPG
+.. image::  ../Picture/2017/11/10/DSC_4487.JPG
+.. image::  ../Picture/2017/11/10/DSC_4488.JPG
+.. image::  ../Picture/2017/11/10/DSC_4489.JPG
+.. image::  ../Picture/2017/11/10/DSC_4490.JPG
+.. image::  ../Picture/2017/11/10/DSC_4491.JPG
+.. image::  ../Picture/2017/11/10/DSC_4492.JPG
+.. image::  ../Picture/2017/11/10/DSC_4493.JPG
+.. image::  ../Picture/2017/11/10/DSC_4494.JPG
+.. image::  ../Picture/2017/11/11/DSC_4513.JPG
+.. image::  ../Picture/2017/11/11/DSC_4515.JPG
 .. image::  ../Picture/2017/01/28/1485566785347.jpg
 .. image::  ../Picture/2017/01/28/1485566869394.jpg
 .. image::  ../Picture/2017/01/28/1485576501116.jpg
