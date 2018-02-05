@@ -23,8 +23,8 @@
  :maxdepth: 3
  :numbered:
 
- OSC/OSC2017
- Place/osaka
+ OSC/OSC2018
+ Place/hamamatsu
  RPI/RPIupdate2018
  Place/intro
 

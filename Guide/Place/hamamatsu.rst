@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-7 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -29,13 +29,14 @@ Maps:
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/hamamatsu.rst
 
-OSC浜松まとめ
+OSC浜名湖まとめ
 ~~~~~~~~~~~~~
 
 .. csv-table::
  :widths: 70 70
 
- OSC2017浜名湖 NetBSDブース展示の記録,
+ OSC2018浜名湖 NetBSDブース展示の記録,
+ OSC2017浜名湖 NetBSDブース展示の記録, https://togetter.com/li/1080372
  OSC2016浜名湖 NetBSDブース展示の記録, https://togetter.com/li/929091
  OSC2015浜名湖 NetBSDブース展示の記録, http://togetter.com/li/781556
  OSC2014浜名湖 NetBSDブース展示の記録, http://togetter.com/li/645455
@@ -91,22 +92,32 @@ OSC浜名湖主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2017/2/12,浜松,RPI3+NetBSD/68k on XM6i WZERO3 NetWalker
  2016/1/23,浜松,RPI2+omxplayer RPI0 Zaurus WZero3
  2015/2/11,浜松,CubieBoard2 RPI+omxplayer BPI Netwalker WZero3 Zaurus
  2014/3/22,浜松,RPI WZero3 O2 Netwalker
  2013/2/9,浜松,RPI WZero3
 
+2017
+-----------------
+.. image::  ../Picture/2017/02/12/DSC09350.JPG
+.. image::  ../Picture/2017/02/12/DSC09351.JPG
+.. image::  ../Picture/2017/02/12/DSC_3040.JPG
+.. image::  ../Picture/2017/02/12/DSC_3044.JPG
+.. image::  ../Picture/2017/02/12/DSC_3045.JPG
+.. image::  ../Picture/2017/02/12/DSC_3047.JPG
+.. image::  ../Picture/2017/02/12/DSC_3052.JPG
+.. image::  ../Picture/2017/02/12/DSC_3053.JPG
+.. image::  ../Picture/2017/02/12/DSC_3054.JPG
+
 2016
 -----------------
 .. image::  ../Picture/2016/01/23/DSC08521.JPG
 .. image::  ../Picture/2016/01/23/DSC08522.JPG
-.. image::  ../Picture/2016/01/23/DSC08523.JPG
 .. image::  ../Picture/2016/01/23/DSC08524.JPG
 .. image::  ../Picture/2016/01/23/DSC08525.JPG
-.. image::  ../Picture/2016/01/23/DSC08527.JPG
 .. image::  ../Picture/2016/01/23/DSC08528.JPG
 .. image::  ../Picture/2016/01/23/DSC08529.JPG
-.. image::  ../Picture/2016/01/23/DSC08530.JPG
 
 2015
 -----------------
@@ -115,44 +126,26 @@ OSC浜名湖主な展示物
 .. image::  ../Picture/2015/02/11/DSC_0835.jpg
 .. image::  ../Picture/2015/02/11/DSC_0836.jpg
 .. image::  ../Picture/2015/02/11/DSC_0838.jpg
-.. image::  ../Picture/2015/02/11/DSC_0839.jpg
 .. image::  ../Picture/2015/02/11/DSC_0841.jpg
 .. image::  ../Picture/2015/02/11/DSC_0844.jpg
-.. image::  ../Picture/2015/02/11/DSC_0845.jpg
-.. image::  ../Picture/2015/02/11/DSC_0846.jpg
 
 
 2014
 -----------------
 
-.. image:: ../Picture/2014/03/22/DSC_3198.jpg
 .. image:: ../Picture/2014/03/22/DSC_3199.jpg
 .. image:: ../Picture/2014/03/22/DSC_3200.jpg
 .. image:: ../Picture/2014/03/22/DSC_3201.jpg
-.. image:: ../Picture/2014/03/22/DSC_3202.jpg
-.. image:: ../Picture/2014/03/22/DSC_3203.jpg
-.. image:: ../Picture/2014/03/22/DSC_3204.jpg
-.. image:: ../Picture/2014/03/22/DSC_3205.jpg
-.. image:: ../Picture/2014/03/22/DSC_3206.jpg
 .. image:: ../Picture/2014/03/22/DSC_3207.jpg
 .. image:: ../Picture/2014/03/22/dsc04394.jpg
-.. image:: ../Picture/2014/03/22/dsc04400.jpg
-.. image:: ../Picture/2014/03/22/dsc04409.jpg
 .. image:: ../Picture/2014/03/22/dsc04410.jpg
-.. image:: ../Picture/2014/03/22/dsc04415.jpg
 
 2013
 -----------------
 
-.. image:: ../Picture/2013/04/21/DSC_1989.jpg
 .. image:: ../Picture/2013/02/09/DSC_1606.jpg
 .. image:: ../Picture/2013/02/09/DSC_1607.jpg
 .. image:: ../Picture/2013/02/09/DSC_1608.jpg
-.. image:: ../Picture/2013/02/09/DSC_1609.jpg
 .. image:: ../Picture/2013/02/09/DSC_1610.jpg
 .. image:: ../Picture/2013/02/09/DSC_1611.jpg
 .. image:: ../Picture/2013/02/09/DSC_1614.jpg
-.. image:: ../Picture/2013/02/09/DSC_1615.jpg
-.. image:: ../Picture/2013/02/09/DSC_1616.jpg
-.. image:: ../Picture/2013/02/09/DSC_1617.jpg
-.. image:: ../Picture/2013/02/09/DSC_1618.jpg
