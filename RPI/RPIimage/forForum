@@ -1,37 +1,36 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2018-01-27/2018-01-27/g
-:1,$s/8.99.10/8.99.10/g
-:1,$s/201711051750Z/201801030030Z/g
+:1,$s/2018-02-11/2018-02-11/g
+:1,$s/8.99.12/8.99.12/g
+:1,$s/201802022000Z/201802022000Z/g
 :1,$s?2018/01/03/msg004520.html?2018/01/03/msg004520.html?
 
-2018-01-27-netbsd-raspi-earmv6hf.img
+2018-02-11-netbsd-raspi-earmv6hf.img
 
 For Open Source Conference 2018 osaka demonstration use,
-I've updated 2018-01-27-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2018-02-11-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2018/01/03/msg004520.html
+http://mail-index.netbsd.org/port-arm/2018/02/06/msg004579.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-01-27-earmv6hf/2018-01-27-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-02-11-earmv6hf/2018-02-11-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.10 evbarm-earmv6hf 201801030030Z rpi.img from nyftp.
-- Heads-up: RPI FDTisation committed
-  http://mail-index.netbsd.org/port-arm/2017/12/10/msg004460.html
-- support RPI2-1.2,include BCM2837
-  cp /boot/bcm2836-rpi-2-b.dtb /boot/bcm2837-rpi-2-b.dtb
-- NetBSD Security Advisory 2018-001: Several vulnerabilities in context handling
-  http://mail-index.netbsd.org/security-announce/2018/01/02/msg000120.html
-- NetBSD Security Advisory 2018-002: Local DoS in virecover
-  http://mail-index.netbsd.org/security-announce/2018/01/02/msg000121.html
-- fossil-2.4
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/23/msg168194.html
-- mikutter-3.6.0
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/30/msg168307.html
-- mlterm-3.8.4
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/08/msg167637.html
-- ruby23-base-2.3.6
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/15/msg167927.html
+- NetBSD-current 8.99.12 evbarm-earmv6hf 201802022000Z rpi.img from nyftp.
+- PR/52934: Yasushi Oshima: Apply the erratum fix that was applied
+  to wbinv_range to isync_range so that we don't hang
+  when we try to sync from execcmd_readvn().
+  http://mail-index.netbsd.org/source-changes/2018/01/20/msg091313.html
+- Pass PMAP_WRITE_COMBINE as appropriate in bcm283x_bs_map.
+  RPI2 FB console now updates properly again
+  http://mail-index.netbsd.org/source-changes/2018/01/22/msg091375.html
+- mikutter-3.6.1
+  http://mail-index.netbsd.org/pkgsrc-changes/2018/01/14/msg169191.html
+- git-base-2.16.1
+  http://mail-index.netbsd.org/pkgsrc-changes/2018/01/22/msg169638.html
+
+Problem:
+- omxplayer:
+  Abort Trap. (after FDTisation?)
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -47,7 +46,7 @@ dmesg:
 Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  changes:
- https://github.com/ebijun/NetBSD/commit/e8550e0ff637be076e91e2369983826f5b72da7b#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/ea1316ead8e166366e6742d52d98d9155823b4db#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
 - webkit24-gtk-2.4.11nb9 compile failed.
