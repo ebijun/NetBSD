@@ -1,37 +1,35 @@
-VERSION: :1,$s/2018-01-04/2018-01-04/g
-ISO:     :1,$s/201801030030Z/201801030030Z/g
-NetBSD:  :1,$s/8.99.10/8.99.10/g
+VERSION: :1,$s/2018-02-11/2018-02-11/g
+ISO:     :1,$s/201802022000Z/201802022000Z/g
+NetBSD:  :1,$s/8.99.12/8.99.12/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2018-01-04-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2018-02-11-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2018-01-04-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2018-02-11-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-01-04-earmv6hf/2018-01-04-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-01-04-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-02-11-earmv6hf/2018-02-11-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-02-11-earmv6hf/MD5
 
 Update:
-- NetBSD-current 8.99.10 evbarm-earmv6hf 201801030030Z rpi.img from nyftp.
-- Heads-up: RPI FDTisation committed
-  http://mail-index.netbsd.org/port-arm/2017/12/10/msg004460.html
-- support RPI2-1.2,include BCM2837
-  cp /boot/bcm2836-rpi-2-b.dtb /boot/bcm2837-rpi-2-b.dtb
-- NetBSD Security Advisory 2018-001: Several vulnerabilities in context handling
-  http://mail-index.netbsd.org/security-announce/2018/01/02/msg000120.html
-- NetBSD Security Advisory 2018-002: Local DoS in virecover
-  http://mail-index.netbsd.org/security-announce/2018/01/02/msg000121.html
-- fossil-2.4
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/23/msg168194.html
-- mikutter-3.6.0
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/30/msg168307.html
-- mlterm-3.8.4
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/08/msg167637.html
-- ruby23-base-2.3.6
-  http://mail-index.netbsd.org/pkgsrc-changes/2017/12/15/msg167927.html
+- NetBSD-current 8.99.12 evbarm-earmv6hf 201802022000Z rpi.img from nyftp.
+- PR/52934: Yasushi Oshima: Apply the erratum fix that was applied 
+  to wbinv_range to isync_range so that we don't hang 
+  when we try to sync from execcmd_readvn().
+  http://mail-index.netbsd.org/source-changes/2018/01/20/msg091313.html
+- Pass PMAP_WRITE_COMBINE as appropriate in bcm283x_bs_map.
+  RPI2 FB console now updates properly again
+  http://mail-index.netbsd.org/source-changes/2018/01/22/msg091375.html
+- mikutter-3.6.1
+  http://mail-index.netbsd.org/pkgsrc-changes/2018/01/14/msg169191.html
+- git-base-2.16.1
+
+Problem:
+- omxplayer:
+  Abort Trap. (after FDTisation?)
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -39,7 +37,7 @@ Overview:
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-01-04-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-02-11-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -100,7 +98,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-01-04/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-02-11/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -108,7 +106,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-01-04-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-02-11-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -256,7 +254,10 @@ Todo:
    outputs.select=auto  [ auto headphones hdmi ]
 
 pkgsrc Todo:
-- lang/go : go-netbsd-arm put oarm binary
+- lang/go : 
+  earmv7hf: pkgsrc: go-1.9.3.tgz go14-1.4.3nb6.tgz or later.
+  earmv6hf: pkgsrc: go14-1.4.3nb6.tgz
+
   Golang for NetBSD/arm problem summarized by @oshimyja
   http://www.yagoto-urayama.jp/~oshimaya/netbsd/netbsd_goarm.html
   http://mail-index.netbsd.org/port-arm/2015/08/02/msg003361.html
@@ -275,19 +276,19 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2018 osaka demonstration use, 
+For Open Source Conference 2018 Hamanako demonstration use, 
 I've updated raspberry-pi image.
 
-https://www.ospn.jp/osc2018-osaka/
-https://www.ospn.jp/osc2018-osaka/modules/eventrsv/?id=2&noform=1
-https://www.ospn.jp/osc2018-osaka/modules/article/article.php?articleid=1
-https://www.facebook.com/events/398913583842597/
+https://www.ospn.jp/osc2018-hamanako/
+https://www.ospn.jp/osc2018-hamanako/modules/eventrsv/?id=1&noform=1
+https://www.ospn.jp/osc2018-hamanako/modules/article/article.php?articleid=1
+https://www.facebook.com/events/1909317742619593/
 
 https://www.slideshare.net/junebihara18/netbsd-workshop
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 
-- NetBSD 8.99.10 earmv6hf rpi.img.gz base
+- NetBSD 8.99.12 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -325,7 +326,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-01-04/
+    Http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-02-11/
 
 Installed Packages:
   bash

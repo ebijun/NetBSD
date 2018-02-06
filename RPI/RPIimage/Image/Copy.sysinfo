@@ -1,9 +1,11 @@
-DIR=`ls -t tmp* |head -1|sed -e 's/://'`
+
+DIR=`ls -t|grep tmp20  |head -1|sed -e 's/://'`
+
 ARCH=earmv6hf
 MACHINE=RPI3
 
 #COMMAND=ls
-#COMMAND=diff
+#COMMAND=diff 
 COMMAND=cp
 
 
