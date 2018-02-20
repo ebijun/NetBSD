@@ -114,6 +114,21 @@ GPIOの使い方をまとめてくれた方が。
 * NetBSD GPIO DOC by Marina Brown
   https://github.com/catskillmarina/netbsd-gpio-doc/blob/master/README.md
 
+64bit対応
+---------------------
+
+ryo@netbsd さんによる rpi64wip実装が進んでいます。
+
+* https://github.com/ryo/netbsd-src
+* http://mail-index.netbsd.org/port-arm/2018/02/20/msg004631.html
+
+armv7のいろいろ
+--------------------
+
+Jared McNeillさんによるNetBSD ARM Bootable Imagesがあります。
+
+* http://www.invisible.ca/arm/
+
 
 ご注文はなんとかですか（弱点）
 -----------------------------
