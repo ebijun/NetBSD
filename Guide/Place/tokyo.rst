@@ -77,7 +77,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 121,OSC2018東京春, http://www.re.soum.co.jp/~jun/OSC2018tokyofall.pdf
+ 121,OSC2018東京春, http://www.re.soum.co.jp/~jun/OSC2018tokyospring.pdf
  113,OSC2017東京秋, http://www.re.soum.co.jp/~jun/OSC2017tokyofall.pdf
  104,OSC2017東京春, http://www.re.soum.co.jp/~jun/OSC2017tokyospring.pdf
  97, OSC2016東京秋, http://www.re.soum.co.jp/~jun/OSC2016tokyofall.pdf
