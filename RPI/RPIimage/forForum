@@ -1,36 +1,31 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2018-02-11/2018-02-11/g
+:1,$s/2018-02-23/2018-02-23/g
 :1,$s/8.99.12/8.99.12/g
-:1,$s/201802022000Z/201802022000Z/g
-:1,$s?2018/01/03/msg004520.html?2018/01/03/msg004520.html?
+:1,$s/201802202100Z/201802202100Z/g
+:1,$s?2018/02/22/msg004646.html?2018/02/22/msg004646.html?
 
-2018-02-11-netbsd-raspi-earmv6hf.img
+2018-02-23-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2018 Hamanako demonstration use,
-I've updated 2018-02-11-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2018 Tokyo/Spring demonstration use,
+I've updated 2018-02-23-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2018/02/06/msg004579.html
+http://mail-index.netbsd.org/port-arm/2018/02/22/msg004649.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-02-11-earmv6hf/2018-02-11-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-02-23-earmv6hf/2018-02-23-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.12 evbarm-earmv6hf 201802022000Z rpi.img from nyftp.
-- PR/52934: Yasushi Oshima: Apply the erratum fix that was applied
-  to wbinv_range to isync_range so that we don't hang
-  when we try to sync from execcmd_readvn().
-  http://mail-index.netbsd.org/source-changes/2018/01/20/msg091313.html
-- Pass PMAP_WRITE_COMBINE as appropriate in bcm283x_bs_map.
-  RPI2 FB console now updates properly again
-  http://mail-index.netbsd.org/source-changes/2018/01/22/msg091375.html
-- mikutter-3.6.1
-  http://mail-index.netbsd.org/pkgsrc-changes/2018/01/14/msg169191.html
-- git-base-2.16.1
-  http://mail-index.netbsd.org/pkgsrc-changes/2018/01/22/msg169638.html
+- NetBSD-current 8.99.12 evbarm-earmv6hf 201802202100Z rpi.img from nyftp.
+- mikutter-3.6.3
+  http://mail-index.netbsd.org/pkgsrc-changes/2018/02/10/msg170623.html
+- git-base-2.16.2
+  http://mail-index.netbsd.org/pkgsrc-changes/2018/02/20/msg170993.html
 
 Problem:
 - omxplayer:
   Abort Trap. (after FDTisation?)
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=52984
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=53042
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -46,7 +41,7 @@ dmesg:
 Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  changes:
- https://github.com/ebijun/NetBSD/commit/ea1316ead8e166366e6742d52d98d9155823b4db#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/201aca101b6e7dbe37669f7fc2906d4b3032b656#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
 - webkit24-gtk-2.4.11nb9 compile failed.
