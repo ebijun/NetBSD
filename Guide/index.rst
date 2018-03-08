@@ -23,8 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
  RPI/RPIupdate2018
  RPI
  Place/intro
-
