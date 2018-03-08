@@ -1,7 +1,8 @@
 Our Likeness
 --------------------------
 
-* NetBSD machines at Open Source Conference 2017 Osaka
+NetBSD machines at Open Source Conference 2017 Osaka
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group held booth
 at the Open Source Conference 2017 Osaka on Jan.28 2017:
@@ -49,7 +50,9 @@ RPI:
 More pictures are available on Togetter page:
  https://togetter.com/li/1075115
 
-* NetBSD machines at Open Source Conference 2017 Hamanako
+NetBSD machines at Open Source Conference 2017 Hamanako
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 The Japan NetBSD Users' Group members held booth
 at the Open Source Conference 2017 Hamanako on Feb. 12 2017:
@@ -92,7 +95,8 @@ RPI:
 More pictures are available on Togetter page:
  https://togetter.com/li/1080372
 
-* NetBSD machines at AsiaBSDCon 2017
+NetBSD machines at AsiaBSDCon 2017
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 BSD Research and Japan NetBSD Users' Group members held booth
 at the AsiaBSDCon 2017  on Mar. 10-13 2017:
@@ -195,7 +199,8 @@ Demo Images:
 More pictures are available on Togetter page:
   https://togetter.com/li/1084357
 
-* NetBSD machines at Open Source Conference 2017 Tokyo/Spring
+NetBSD machines at Open Source Conference 2017 Tokyo/Spring
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held booth
 at the Open Source Conference 2017 Tokyo/Spring on Mar. 10-11 2017:
@@ -244,7 +249,8 @@ Thanx NetBSD developers, I hope you enjoy OSC2017Tokyo/spring.
 Thanx Nagoya *BSD Users' Group staff (Noda-san/Iwase-san),
  to support the booth.
 
-* OpenBSD and NetBSD machines at Open Source Conference 2017 Nagoya
+OpenBSD and NetBSD machines at Open Source Conference 2017 Nagoya
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group and 
 Nagoya *BSD Users' Group members held booth
@@ -295,7 +301,8 @@ Demo Images:
 More pictures are available on Togetter page:
   http://togetter.com/li/1114389
 
-* NetBSD machines at Open Source Conference 2017 Okinawa
+NetBSD machines at Open Source Conference 2017 Okinawa
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held booth 
 at the Open Source Conference 2017 Okinawa 
@@ -344,7 +351,8 @@ More pictures are available on Togetter page:
  thanx Nicolas Joly as njoly@.
  may rest in peace.
 
-* Japan NetBSD Users Group 19th annual Meeting and BoF 2017
+Japan NetBSD Users Group 19th annual Meeting and BoF 2017
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held 19th annual Meeting 
   on Jul. 8 2017:
@@ -421,7 +429,8 @@ Thanx for special meeting space:
  and VDEC: VLSI Desion and Education Center,University of Tokyo.
  http://www.vdec.u-tokyo.ac.jp/English/index.html
 
-* NetBSD machines at Open Source Conference 2017 Hokkaido
+NetBSD machines at Open Source Conference 2017 Hokkaido
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group and Northern land BSD Users Group
  members held booth at the Open Source Conference 2017 Hokkaido 
@@ -483,7 +492,8 @@ Demo Images:
 More pictures are available on Togetter page:
  http://togetter.com/li/1130009
 
-* NetBSD machines at Open Source Conference 2017 Kyoto
+NetBSD machines at Open Source Conference 2017 Kyoto
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held booth
 at the Open Source Conference 2017 Kyoto on Aug. 4-5 2017:
@@ -550,7 +560,8 @@ Booth Donation:
   https://twitter.com/ebijun/status/893278280471719936
   https://twitter.com/ebijun/status/893262860536524800
 
-* NetBSD workshop at SecurityCamp 2017
+NetBSD workshop at SecurityCamp 2017
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I make a NetBSD workshop 4 hours timeslot in SecurityCamp 2017.
 Aug. 16 2017 13:30-17:30 ,Fuchu , Tokyo, Japan:
@@ -649,14 +660,17 @@ and Toshifumi Nishinaga http://tatsu-zine.com/books/raspi-bm
 and Mitsuyuki Komata
  http://blogs.itmedia.co.jp/komata/2017/08/ipa2017.html
 
-* Open Developers Conference 2017 Tokyo:  Aug.19 2017 Tokyo,JAPAN
+Open Developers Conference 2017 Tokyo:  Aug.19 2017 Tokyo,JAPAN
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
    https://www.ospn.jp/odc2017/
    https://www.ospn.jp/odc2017/modules/eventrsv/?id=1&noform=1
    NetBSD BOF Aug 19 2017 16:00-16:45
     https://www.ospn.jp/odc2017/modules/eguide/event.php?eid=5
    https://www.facebook.com/events/1970719779814048/
 
-* NetBSD machines at Open Source Conference 2017 Chiba
+NetBSD machines at Open Source Conference 2017 Chiba
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held booth
 at the Open Source Conference 2017 Chiba on Sep. 2 2017:
@@ -697,7 +711,8 @@ NetBSD Tourist Guide:
 More pictures are available on Togetter page:
  https://togetter.com/li/1146818
 
-* NetBSD machines at Open Source Conference 2017 Tokyo/Fall
+NetBSD machines at Open Source Conference 2017 Tokyo/Fall
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held booth
 at the Open Source Conference 2017 Tokyo/Fall on Sep. 9-10 2017:
@@ -771,7 +786,8 @@ Stecker
 More pictures are available on Togetter page:
  https://togetter.com/li/1148810
 
-* NetBSD machines at Open Source Conference 2017 Fukuoka
+NetBSD machines at Open Source Conference 2017 Fukuoka
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held booth
 at the Open Source Conference 2017 Fukuoka on Oct. 7 2017:
@@ -808,7 +824,8 @@ The NetBSD booth exhibited the following machines:
 More pictures are available on Togetter page:
   https://togetter.com/li/1158733
  
-* NetBSD machines at Open Source Conference 2017 Shimane
+NetBSD machines at Open Source Conference 2017 Shimane
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group held booth
 at the Open Source Conference 2017 Shimane on Oct.14 2017:
@@ -861,7 +878,8 @@ Demo Images:
 More pictures are available on Togetter page:
   https://togetter.com/li/1160781
 
-* OpenBSD and NetBSD machines at Open Source Conference 2017 Nagaoka
+OpenBSD and NetBSD machines at Open Source Conference 2017 Nagaoka
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group and 
 Echigo BSD Users Group members held booth
@@ -924,7 +942,8 @@ Demo Images:
 More pictures are available on Togetter page:
   https://togetter.com/li/1165451
 
-* NetBSD machines at KANSAI OPEN FORUM 2017
+NetBSD machines at KANSAI OPEN FORUM 2017
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held booth
 at the KANSAI OPEN FORUM 2017 on Nov. 10-11 2017:
@@ -977,7 +996,8 @@ Raspberry Pi running updated 2017-11-12-netbsd-raspi.img image:
 More pictures are available on Togetter page:
  https://togetter.com/li/1170068
  
-* NetBSD machines at Open Source Conference 2017 Hiroshima
+NetBSD machines at Open Source Conference 2017 Hiroshima
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group and XM6i Team members held booth
 at the Open Source Conference 2017 Hiroshima on Nov.26 2017:
@@ -1029,7 +1049,8 @@ Demo Images:
 More pictures are available on Togetter page:
  https://togetter.com/li/1175260
 
-* NetBSD Advent Calendar 2017
+NetBSD Advent Calendar 2017
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I hope you enjoy the NetBSD Advent Calendar 2017:
  http://qiita.com/advent-calendar/2017/netbsd
@@ -1040,7 +1061,8 @@ Thanx @frandon_pig to manage NetBSD Advent Calendar:
  http://qiita.com/advent-calendar/2015/netbsd
  http://qiita.com/advent-calendar/2014/netbsd
 
-* Reporting the current status of world wide IPv6 deployment and progress to itojun
+Reporting the current status of world wide IPv6 deployment and progress to itojun
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 After "IPv6 Summit in TOKYO 2017" http://www.jp.ipv6forum.com/timetable/ ,
 related a social gathering held called
@@ -1142,7 +1164,8 @@ On Linux, it seems to avoid the resolver lookup."
 - Kame no ko sen (Kame child) - present from itojun's mother.
   https://twitter.com/ebijun/status/935105180063764480
 
-* NetBSD machines at Open Source Conference 2018 Osaka
+NetBSD machines at Open Source Conference 2018 Osaka
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group held booth
 at the Open Source Conference 2018 Osaka on Jan.27 2018:
@@ -1204,7 +1227,8 @@ RPI2/3 and OrangePi One: earmv7hf
 More pictures are available on Togetter page:
  https://togetter.com/li/1193730
 
-* NetBSD machines at Open Source Conference 2018 Hamanako
+NetBSD machines at Open Source Conference 2018 Hamanako
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held booth
 at the Open Source Conference 2018 Hamanako on Feb. 11 2018:
@@ -1243,7 +1267,8 @@ RPI2/3 and OrangePi One
 More pictures are available on Togetter page:
  https://togetter.com/li/1198246
 
-* NetBSD machines at Open Source Conference 2018 Tokyo/Spring
+NetBSD machines at Open Source Conference 2018 Tokyo/Spring
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held booth
 at the Open Source Conference 2018 Tokyo/Spring on Feb. 23-24 2018:
@@ -1323,7 +1348,8 @@ mikutter badges from toshi_a:
 More pictures are available on Togetter page:
  https://togetter.com/li/1202581
 
-* NetBSD machines at Raspberry jam Big Birthday Weekend 2018 in TOKYO
+NetBSD machines at Raspberry jam Big Birthday Weekend 2018 in TOKYO
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Japan NetBSD Users' Group members held booth
  at the Raspberry jam Big Birthday Weekend 2018 in TOKYO 
