@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015-7Jun Ebihara All rights reserved.
+ Copyright (c) 2015-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -19,6 +19,23 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+BSD BOF  https://2018.asiabsdcon.org/program.html.en
+-------------------------------------------------------
+* Mar.9 2018,19:00-21:30
+* TOKYO UNIVERSITY OF SCIENCE: Building No.11: Room 11-7
+* http://wiki.netbsd.org/summits/AsiaBSDCon_2018_BSD_BoF/
+
+NetBSD BOF  https://2017.asiabsdcon.org/program.html.en
+-------------------------------------------------------
+
+* IIJ meeting room on 13th floor. Iidabashi Grand Bloom
+* http://wiki.netbsd.org/summits/AsiaBSDCon_2017_NetBSD_BoF/
+
+#. Makoto Fujiwara(mef@n.o) 	check-update -- pkgsrc freshness -- 	10-15 minutes
+#. Makoto Fujiwara(mef@n.o) 	How-To-Update pkg of my machine -- my peculiar way -- 	10-15 minutes
+#. Kazuya Goda 	What's the best practice for implementation of rumpclient? 	20 minutes
+#. Abhinav Upadhyay 	TBD (Updates on man-k.org) 	10-15 minutes
+#. Abhinav Upadhyay 	TBD (new implementation for spell(1)) 	15-20 minutes
 
 
 NetBSD BOF https://2016.asiabsdcon.org/program.html.en
@@ -90,6 +107,7 @@ AsiaBSDCon
 .. csv-table::
  :widths: 20 30 70 
 
+ 2018, Mar.8-11,Tokyo University of Science
  2017, Mar.9-12,Tokyo University of Science
  2016, Mar.10-13,Tokyo University of Science
  2015, Mar.12-15,Tokyo University of Science
@@ -109,11 +127,12 @@ AsiaBSDCon Traveler's Guide backnumber
 .. csv-table::
  :widths: 20 70
 
- AsiaBSDCon2017,http://www.soum.co.jp/~jun/asiabsdcon2017.pdf
- AsiaBSDCon2016,http://www.soum.co.jp/~jun/asiabsdcon2016.pdf
- AsiaBSDCon2015,http://www.soum.co.jp/~jun/asiabsdcon2015.pdf
- AsiaBSDCon2014,http://www.soum.co.jp/~jun/asiabsdcon2014.pdf
- AsiaBSDCon2013,http://www.soum.co.jp/~jun/asiabsdcon2013.pdf
+ AsiaBSDCon2018,http://www.re.soum.co.jp/~jun/asiabsdcon2018.pdf
+ AsiaBSDCon2017,http://www.re.soum.co.jp/~jun/asiabsdcon2017.pdf
+ AsiaBSDCon2016,http://www.re.soum.co.jp/~jun/asiabsdcon2016.pdf
+ AsiaBSDCon2015,http://www.re.soum.co.jp/~jun/asiabsdcon2015.pdf
+ AsiaBSDCon2014,http://www.re.soum.co.jp/~jun/asiabsdcon2014.pdf
+ AsiaBSDCon2013,http://www.re.soum.co.jp/~jun/asiabsdcon2013.pdf
 
 AsiaBSDCon tweets on the togetter
 -------------------------
@@ -121,6 +140,7 @@ AsiaBSDCon tweets on the togetter
 .. csv-table::
  :widths: 20 70
 
+ AsiaBSDCon2018,https://togetter.com/li/1206515
  AsiaBSDCon2017,https://togetter.com/li/1084357
  AsiaBSDCon2016,http://togetter.com/li/947029
  AsiaBSDCon2015,http://togetter.com/li/793444
@@ -160,25 +180,28 @@ Togetter views : best booth in Japan
 .. csv-table::
  :widths: 50 30 20
  
- AsiaBSDCon 2017,https://togetter.com/li/1084357,398
- OpenSourceConference2017 Hamanako NetBSD booth,https://togetter.com/li/1080372,589
- OpenSourceConference2017 Osaka NetBSD booth,https://togetter.com/li/1075115,735
- BIG Raspberry JAM Tokyo 2016 NetBSD booth,https://togetter.com/li/1058231,896
- OpenSourceConference2016 Hiroshima NetBSD booth,https://togetter.com/li/1053125,1286
- OpenSourceConference2016 Fukuoka NetBSD booth,https://togetter.com/li/1050258,380
- KANSAI OPEN SOURCE 2016 NetBSD booth,https://togetter.com/li/1047263,1187
- OpenSourceConference2016 Tokyo/Fall NetBSD booth,https://togetter.com/li/1044981,1458
- OpenSourceConference2016 Nagaoka NetBSD booth,https://togetter.com/li/1031383,464
- OpenSourceConference2016 Shimane NetBSD booth,https://togetter.com/li/1028314,911
- OpenSourceUnConference2016 Kanazawa NetBSD booth,https://togetter.com/li/1017308,708
- Security Camp2016 Crossbuild with NetBSD,https://togetter.com/li/1013466,1537
- OpenSourceConference2016 Kyoto NetBSD booth,https://togetter.com/li/1005828,2910
- Japan NetBSD Users' Group annual meeting 2016 ,https://togetter.com/li/997708,1068
- OpenSourceConference2016 Okinawa NetBSD booth,https://togetter.com/li/995155,905
- OpenSourceConference2016 Hokkaido NetBSD booth,https://togetter.com/li/988853,996
- OpenSourceConference2016 Nagoya NBUG & NetBSD booth,https://togetter.com/li/980383,1274
- OpenSourceConference2016 Gunma NetBSD booth,https://togetter.com/li/975036,1022
- AsiaBSDCon 2016,https://togetter.com/li/947029,3338
+ AsiaBSDCon 2018,https://togetter.com/li/1206515,7
+ Raspberry Jam Big Birthday Weekend 2018 in TOKYO NetBSD booth,https://togetter.com/li/1204795,320
+ OpenSourceConference2018 Tokyo/Spring NetBSD booth,https://togetter.com/li/1202581,571
+ OpenSourceConference2018 Hamanako NetBSD booth,https://togetter.com/li/1198246,499
+ OpenSourceConference2018 Osaka NetBSD booth,https://togetter.com/li/1193730,803
+ OpenSourceConference2017 Hiroshima NetBSD booth,https://togetter.com/li/1175260,883
+ Kansai Open Forum 2017 NetBSD booth,https://togetter.com/li/1170068,796
+ OpenSourceConference2017 Nagaoka NetBSD booth,https://togetter.com/li/1165451,325
+ OpenSourceConference2017 Shimane NetBSD booth,https://togetter.com/li/1160781,575
+ OpenSourceConference2017 Fukuoka NetBSD booth,https://togetter.com/li/1158733,412
+ OpenSourceConference2017 Tokyo/Fall NetBSD booth,https://togetter.com/li/1148810,1205
+ OpenSourceConference2017 Chiba NetBSD booth,https://togetter.com/li/1146818,493
+ SecurityCamp2017,https://togetter.com/li/1140652,2889
+ OpenSourceConference2017 Kyoto NetBSD booth,https://togetter.com/li/1136708,2186
+ OpenSourceConference2017 Hokkaido NetBSD booth,https://togetter.com/li/1130009,950
+ Japan NetBSD Users' Group annual meeting 2017 の記録,https://togetter.com/li/1127726,821
+ OpenSourceConference2017 Okinawa NetBSD booth,https://togetter.com/li/1120958,968
+ OpenSourceConference2017 Nagoya NBUG & NetBSD booth,https://togetter.com/li/1114389,1423
+ OpenSourceConference2017 Tokyo/Spring NetBSD booth,https://togetter.com/li/1089005,1480
+ AsiaBSDCon 2017,https://togetter.com/li/1084357,4058
+ OpenSourceConference2017 Hamanako NetBSD booth,https://togetter.com/li/1080372,1108
+ OpenSourceConference2017 Osaka NetBSD booth,https://togetter.com/li/1075115,1364
 
 Live Images:
 ------------------------
