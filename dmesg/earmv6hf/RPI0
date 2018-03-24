@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.12 (RPI) #0: Fri Feb  2 10:49:01 UTC 2018
+NetBSD 8.99.14 (RPI) #0: Wed Mar 21 17:03:09 UTC 2018
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 448 MB
 avail memory = 435 MB
@@ -13,6 +13,7 @@ armfdt0 (root)
 fdt0 at armfdt0: Raspberry Pi Zero Rev 1.2
 fdt1 at fdt0
 fdt2 at fdt0
+fdt3 at fdt0
 fclock0 at fdt2: 19200000 Hz fixed clock
 fclock1 at fdt2: 480000000 Hz fixed clock
 cpus0 at fdt0
@@ -40,8 +41,7 @@ bcmmbox0 at fdt1: VC mailbox
 bcmmbox0: interrupting on icu irq 65
 vcmbox0 at bcmmbox0
 /soc/firmware at fdt1 not configured
-/chosen at fdt0 not configured
-gpioleds0 at fdt0: ACT PWR
+gpioleds0 at fdt0: ACT
 watchdog0 at fdt1: Power management, Reset and Watchdog controller
 bcmrng0 at fdt1: RNG
 plcom0 at fdt1
@@ -73,7 +73,7 @@ vchiq0 at fdt1: BCM2835 VCHIQ
 /soc/arm-pmu at fdt1 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 timecounter: Timecounter "bcmtmr0" frequency 1000000 Hz quality 100
-sdhc0: SDHC 3.0, rev 153, platform DMA, 250000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
+sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 usb0 at dwctwo0: USB revision 2.0
 sdhc0: cmd timeout error
@@ -98,7 +98,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/8.99.12/modules
+kern.module.path=/stand/evbarm/8.99.14/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xc95e0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
