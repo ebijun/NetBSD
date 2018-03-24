@@ -1,31 +1,44 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2018-02-23/2018-02-23/g
-:1,$s/8.99.12/8.99.12/g
-:1,$s/201802202100Z/201802202100Z/g
-:1,$s?2018/02/22/msg004646.html?2018/02/22/msg004646.html?
+:1,$s/2018-03-24/2018-03-24/g
+:1,$s/8.99.14/8.99.14/g
+:1,$s/201803211740Z/201803211740Z/g
+:1,$s?2018/03/24/msg004692.html?2018/03/24/msg004692.html?
 
-2018-02-23-netbsd-raspi-earmv6hf.img
+2018-03-24-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2018 Tokyo/Spring demonstration use,
-I've updated 2018-02-23-netbsd-raspi-earmv6hf.img.gz for RPI.
+After AsiaBSDCon2018,
+I've updated 2018-03-24-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2018/02/22/msg004646.html
+http://mail-index.netbsd.org/port-arm/2018/03/24/msg004692.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-02-23-earmv6hf/2018-02-23-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-03-24-earmv6hf/2018-03-24-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.12 evbarm-earmv6hf 201802202100Z rpi.img from nyftp.
-- mikutter-3.6.3
-  http://mail-index.netbsd.org/pkgsrc-changes/2018/02/10/msg170623.html
-- git-base-2.16.2
-  http://mail-index.netbsd.org/pkgsrc-changes/2018/02/20/msg170993.html
+- NetBSD-current 8.99.14 evbarm-earmv6hf 201803211740Z rpi.img from nyftp.
+- Firmware update 20180324 on /boot
+- RPI3B+ initial support 
+  cp /boot/bcm2837-rpi-3-b.dtb /boot/bcm2837-rpi-3-b-plus.dtb
+  Ethernet interface not works.
+- RPI0W initial support 
+  cp /boot/bcm2835-rpi-zero.dtb  /boot/bcm2835-rpi-zero-w.dtb 
+- RPI2-1.2 initial support
+  cp /boot/bcm2836-rpi-2-b.dtb /boot/bcm2837-rpi-2-b.dtb
+- gcc 6.4
+- openssl 1.1.0g
+- mlterm3.8.5
+- ruby2.4
+- mikutter3.6.5
+
 
 Problem:
 - omxplayer:
   Abort Trap. (after FDTisation?)
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=52984
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=53042
+- diilo SSL support not works
+  pkg/53094: dillo: undefined reference to `SSL_library_init' with OpenSSL
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=53094
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -37,11 +50,12 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2-1.2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3B+
 
 Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  changes:
- https://github.com/ebijun/NetBSD/commit/201aca101b6e7dbe37669f7fc2906d4b3032b656#diff-4a755d73dbba5da21bbf783139f086dc
+  https://github.com/ebijun/NetBSD/commit/9b9313309e9b4e188a34a51482b5b8306e3417bd#diff-4a755d73dbba5da21bbf783139f086dc
 
 Problem:
 - webkit24-gtk-2.4.11nb9 compile failed.
