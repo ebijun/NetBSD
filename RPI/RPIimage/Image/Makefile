@@ -3,11 +3,11 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-03-13/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-04-14/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.14-evbarm-${ARCH}-201803211740Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.14-evbarm-${ARCH}-201804051310Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -188,8 +188,14 @@ firm:
 kernel:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-	# copy dtb for RPI2-1.2
-	cp ${MNT}/bcm2836-rpi-2-b.dtb ${MNT}/bcm2837-rpi-2-b.dtb
+
+	# RPI3B+
+	cp ${MNT}/bcm2837-rpi-3-b.dtb  ${MNT}/bcm2837-rpi-3-b-plus.dtb
+	# RPI0W
+	cp ${MNT}/bcm2835-rpi-zero.dtb ${MNT}/bcm2835-rpi-zero-w.dtb
+	# RPI2-1.2
+	cp ${MNT}/bcm2836-rpi-2-b.dtb  ${MNT}/bcm2837-rpi-2-b.dtb
+
 	umount ${MNT}
 	vnconfig -u ${VND}
 
