@@ -196,6 +196,13 @@ kernel:
 	# RPI2-1.2
 	cp ${MNT}/bcm2836-rpi-2-b.dtb  ${MNT}/bcm2837-rpi-2-b.dtb
 
+	# for startx
+	mv ${MNT}/kernel.img ${MNT}/kernel.img.org
+	mv ${MNT}/kernel7.img ${MNT}/kernel7.img.org
+
+	gunzip < 201803211740Z/earmv6hf/netbsd-RPI.img.gz  > ${MNT}/kernel.img
+	gunzip < 201803211740Z/earmv6hf/netbsd-RPI2.img.gz > ${MNT}/kernel7.img
+
 	umount ${MNT}
 	vnconfig -u ${VND}
 
