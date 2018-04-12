@@ -1,8 +1,8 @@
 # build img file
 #
-make -f Makefile 
-make -f Makefile release
-make -f Makefile pkg
+#make -f Makefile 
+#make -f Makefile release
+#make -f Makefile pkg
 #
 #
 # add packages.
@@ -13,4 +13,4 @@ make -f Makefile pkg
 #make -f Makefile pkg-back
 #
 # Copy logfile
-#./Copy.sysinfo
+./Copy.sysinfo
