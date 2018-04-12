@@ -7,7 +7,7 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-04-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.14-evbarm-${ARCH}-201804051310Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.14-evbarm-${ARCH}-201804100550Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
