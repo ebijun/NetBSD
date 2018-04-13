@@ -7,7 +7,7 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-04-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.14-evbarm-${ARCH}-201804100550Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.14-evbarm-${ARCH}-201804121000Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -29,9 +29,10 @@ KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
 LIST=man modules xbase xcomp xetc xfont xserver 
 
 #Firmware: 
-#git show HEAD |grep commit
-# Date:   Fri Mar 3 13:50:35 2017 +0000
-# commit 78c4983379de0537f49a97fb37ceaaf42632b28c
+#git show HEAD |head 
+#commit ae9a493932e47e08cabb25a2728037298075fd00
+#Date:   Tue Apr 10 18:34:46 2018 +0100
+
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
@@ -46,7 +47,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount kernel
+all: file cdmount rpi extract cdunmount kernel firm
 
 #update: cdmount update-extract cdunmount
 
