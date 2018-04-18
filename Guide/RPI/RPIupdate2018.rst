@@ -31,19 +31,20 @@ RaspberryPIのNetBSDイメージについて
 この一年、どんなことがあったのか表にしてまとめてみました。
 
 .. csv-table::
+ :widths: 20 20 20 20 20 80 20 50
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
  2017/1,7.99.59,3.5.1,,,HardwareRNG BIND-9.10.4-P5 raspberrypi-userland-20170109,OSC大阪,http://mail-index.netbsd.org/port-arm/2017/01/25/msg004087.html
  2017/2,7.99.59,3.5.2,3.8.0,1.0.2k,,OSC浜名湖,https://github.com/ebijun/osc-demo/blob/master/2017/OSC2017hamanako.txt
  2017/3,7.99.64,3.5.3,,,tcpdump-4.9.0 BIND-9.10.4-P6 postfix-3.1.4 NetBSD-SA02 git-base-2.12.0,OSC東京春,http://mail-index.netbsd.org/netbsd-advocacy/2017/03/13/msg000728.html
  2017/4,7.99.69,3.5.7,,,NetBSD7.1 ruby-2.3,OSuC川越,http://mail-index.netbsd.org/port-arm/2017/04/14/msg004130.html
- 2017/5,7.99.72(→7.99.75),,3.8.1,,BIND-9.10.4-P8 fossil-2.2 git-base-2.13.0,OSC名古屋,http://mail-index.netbsd.org/port-arm/2017/05/24/msg004150.html
+ 2017/5,7.99.72 →7.99.75,,3.8.1,,BIND-9.10.4-P8 fossil-2.2 git-base-2.13.0,OSC名古屋,http://mail-index.netbsd.org/port-arm/2017/05/24/msg004150.html
  2017/6,8.99.1,3.5.8,,,perl-5.26 qemu/VEXPRESS_A15カーネルからの起動 (BIND-9.10.5-P1),OSC沖縄,http://mail-index.netbsd.org/port-arm/2017/06/12/msg004179.html
  2017/7,8.99.1,,,,RPI3起動タイミング修正 microSD認識エラー修正 BIND-9.10.5-P2,JNUG2017,http://mail-index.netbsd.org/port-arm/2017/07/07/msg004286.html
  2017/7,8.99.1,3.5.9,,,,OSC北海道,http://mail-index.netbsd.org/port-arm/2017/07/13/msg004307.html
  2017/8,8.99.1,,,,,OSC京都,http://mail-index.netbsd.org/port-arm/2017/07/13/msg004307.html
- ,8.99.1,,3.8.2,,git-base-2.14.1 Bluetoothサポート,ODC2017Tokyo,http://mail-index.netbsd.org/port-arm/2017/08/18/msg004375.html
- 2017/9,8.99.2,3.5.10,,,ruby23-base-2.3.4nb1,OSC千葉 NanoPi,http://mail-index.netbsd.org/port-arm/2017/09/01/msg004383.html
+ ,8.99.1,,3.8.2,,git-base-2.14.1 Bluetoothサポート,ODC,http://mail-index.netbsd.org/port-arm/2017/08/18/msg004375.html
+ 2017/9,8.99.2,3.5.10,,,ruby23-base-2.3.4nb1 NanoPi,OSC千葉,http://mail-index.netbsd.org/port-arm/2017/09/01/msg004383.html
  ,8.99.2,3.5.11,,,,OSC東京秋,
  2017/10,8.99.3,,,,ruby23-base-2.3.5,OSC福岡,http://mail-index.netbsd.org/port-arm/2017/10/03/msg004402.html
  ,8.99.4,,,,,OSC島根,
@@ -53,6 +54,10 @@ RaspberryPIのNetBSDイメージについて
  2018/1,8.99.10,3.6.0,3.8.4,,FDTisation fossil-2.4 ruby23-base-2.3.6 NetBSD-SA01/02,OSC大阪,http://mail-index.netbsd.org/port-arm/2018/01/03/msg004520.html
  2018/2,8.99.12,3.6.1,,,PR/52934 go14,OSC浜名湖,http://mail-index.netbsd.org/port-arm/2018/02/06/msg004579.html
  ,8.99.12,3.6.3,,,,OSC東京春, http://mail-index.netbsd.org/port-arm/2018/02/22/msg004646.html
+ 2018/3,8.99.14,3.6.5,3.8.5,1.1.0g,gcc6.4 ruby2.4,AsiaBSDCon, http://mail-index.netbsd.org/port-arm/2018/03/24/msg004692.html
+ 2018/4,8.99.14,,,1.1.0h,BIND9.10.7 dhcpcd7.0.3 openssh7.7 git-base-2.16.3 ruby24-base -2.4.4,OSuC川越, http://mail-index.netbsd.org/port-arm/2018/04/15/msg004757.html
+ 年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
+
 
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。
