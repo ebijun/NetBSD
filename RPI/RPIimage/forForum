@@ -1,37 +1,44 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2018-03-24/2018-03-24/g
+:1,$s/2018-04-14/2018-04-14/g
 :1,$s/8.99.14/8.99.14/g
-:1,$s/201803211740Z/201803211740Z/g
-:1,$s?2018/03/24/msg004692.html?2018/03/24/msg004692.html?
+:1,$s/201804121000Z/201804121000Z/g
+:1,$s?2018/04/15/msg004757.html?2018/04/15/msg004757.html?
 
-2018-03-24-netbsd-raspi-earmv6hf.img
+2018-04-14-netbsd-raspi-earmv6hf.img
 
-After AsiaBSDCon2018,
-I've updated 2018-03-24-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source UN-Conference 2018 kawagoe
+I've updated 2018-04-14-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2018/03/24/msg004692.html
+http://mail-index.netbsd.org/port-arm/2018/04/15/msg004757.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-03-24-earmv6hf/2018-03-24-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-04-14-earmv6hf/2018-04-14-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.14 evbarm-earmv6hf 201803211740Z rpi.img from nyftp.
-- Firmware update 20180324 on /boot
-- RPI3B+ initial support 
+- NetBSD-current 8.99.14 evbarm-earmv6hf 201804121000Z rpi.img from nyftp.
+- Firmware update 20180410 on /boot
+- Bind 9.10.7
+- dhcpcd 7.0.3
+- openssh 7.7
+- openssl 1.1.0h
+- git-base 2.16.3
+- ruby24-base 2.4.4
+
+Tweaks:
+- startx hangs on kernel version 201804121000Z
+    /boot/kernel.img.org /boot/kernel7.img.org
+  use kernel version 201803211740Z
+    /boot/kernel.img /boot/kernel7.img
+- RPI3B+ initial support
   cp /boot/bcm2837-rpi-3-b.dtb /boot/bcm2837-rpi-3-b-plus.dtb
   Ethernet interface not works.
-- RPI0W initial support 
-  cp /boot/bcm2835-rpi-zero.dtb  /boot/bcm2835-rpi-zero-w.dtb 
+- RPI0W initial support
+  cp /boot/bcm2835-rpi-zero.dtb  /boot/bcm2835-rpi-zero-w.dtb
 - RPI2-1.2 initial support
   cp /boot/bcm2836-rpi-2-b.dtb /boot/bcm2837-rpi-2-b.dtb
-- gcc 6.4
-- openssl 1.1.0g
-- mlterm3.8.5
-- ruby2.4
-- mikutter3.6.5
-
 
 Problem:
+- startx causes hang
 - omxplayer:
   Abort Trap. (after FDTisation?)
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=52984
@@ -39,6 +46,8 @@ Problem:
 - diilo SSL support not works
   pkg/53094: dillo: undefined reference to `SSL_library_init' with OpenSSL
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=53094
+  -> pkgsrc fixed,thanx ryoon@.
+  -> report upstream and merged.
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -55,7 +64,8 @@ dmesg:
 Pre-installed packages:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
  changes:
-  https://github.com/ebijun/NetBSD/commit/9b9313309e9b4e188a34a51482b5b8306e3417bd#diff-4a755d73dbba5da21bbf783139f086dc
+  https://github.com/ebijun/NetBSD/commit/ce378ddc49bc241b8ba8268c56cde8739fd01efc#diff-4a755d73dbba5da21bbf783139f086dc
+
 
 Problem:
 - webkit24-gtk-2.4.11nb9 compile failed.
