@@ -2,12 +2,12 @@ pmap_steal_memory: seg 0: 0x4d2 0x4d2 0x1ffe 0x1ffe
 pmap_steal_memory: seg 0: 0x511 0x511 0x1ffe 0x1ffe
 pmap_steal_memory: seg 0: 0x513 0x513 0x1ffe 0x1ffe
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
-    The NetBSD Foundation, Inc.  All rights reserved.
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+    2018 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.1 (GENERIC.201703111743Z)
+NetBSD 7.1.2_PATCH (GENERIC.201804201740Z)
 DoCoMo sigmarion (NEC VR4121 rev1.2 168.521MHz)
 total memory = 32768 KB
 avail memory = 26984 KB
@@ -33,6 +33,7 @@ hpckbd0 at vrkiu0
 wskbd0 at hpckbd0: console keyboard
 vrpmu0 at vr4102ip0 addr 0x0b0000a0-00bf
 vrpmu: GPIO[3] activation
+vrpmu: Battery low during activation
 vrdsu0 at vr4102ip0 addr 0x0b0000e0-00e7
 vrled0 at vr4102ip0 addr 0x0b000240-024f
 vrpiu0 at vr4102ip0 addr 0x0b000120-013f, 0x0b0002a0-02bf
@@ -84,7 +85,7 @@ root on wd0a dumps on wd0b
 pcmcia0: card irq 3
 pcmcia0: card irq 3
 root file system type: ffs
-WARNING: clock lost 6285 days
+WARNING: clock lost 6685 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 pid 1(init): ABI set to O32 (e_flags=0x1007)
