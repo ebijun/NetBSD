@@ -6,7 +6,9 @@ FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 # iso file information
 #IMAGE=/usr/release/images/NetBSD-7.99.71-hpcmips-201705130540Z.iso
 #IMAGE=/usr/release/images/NetBSD-8.99.12-hpcmips-201803141830Z.iso
-IMAGE=/usr/release/images/NetBSD-8.99.9-hpcmips-201712150740Z.iso
+#IMAGE=/usr/release/images/NetBSD-8.99.9-hpcmips-201712150740Z.iso
+#IMAGE=/usr/release/images/NetBSD-8.0_RC1-hpcmips-201804201240Z.iso
+IMAGE=/usr/release/images/NetBSD-7.1.2_PATCH-hpcmips-201804201740Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2017-05-13.tar.gz
 
@@ -60,7 +62,7 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	(cd ${MNT}/dev;./MAKEDEV all)
-	tar xzpf ${PKGSRC} -C ${MNT}/usr
+#	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mkdir ${MNT}/msdos
 	mkdir ${MNT}/kern
 	mkdir ${MNT}/proc
