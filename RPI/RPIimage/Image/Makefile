@@ -3,11 +3,11 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-04-14/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-05-19/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.14-evbarm-${ARCH}-201804121000Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.14-evbarm-${ARCH}-201804282140Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -47,7 +47,8 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount kernel firm
+#all: file cdmount rpi extract cdunmount kernel firm
+all: file cdmount rpi extract cdunmount 
 
 #update: cdmount update-extract cdunmount
 
