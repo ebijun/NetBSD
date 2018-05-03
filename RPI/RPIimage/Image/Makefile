@@ -47,8 +47,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-#all: file cdmount rpi extract cdunmount kernel firm
-all: file cdmount rpi extract cdunmount 
+all: file cdmount rpi extract cdunmount kernel firm
 
 #update: cdmount update-extract cdunmount
 
