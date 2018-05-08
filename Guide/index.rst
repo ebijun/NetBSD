@@ -23,6 +23,5 @@
  :maxdepth: 3
  :numbered:
 
- Place/asiabsdcon.rst 
- Place/Summary-AsiaBSDCon.rst  
+ Place/nagoya
  RPI/RPIupdate2018
