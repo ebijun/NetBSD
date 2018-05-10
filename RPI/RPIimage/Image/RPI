@@ -9,8 +9,8 @@ make -f Makefile pkg
 # 
 #./03_back
 #mv back.img `date +%Y-%m-%d`-netbsd-raspi-earmv6hf.img
-#mmake -f Makefile logclean
-#mmake -f Makefile pkg-back
+#make -f Makefile logclean
+#make -f Makefile pkg-back
 #
 # Copy logfile
 #./Copy.sysinfo

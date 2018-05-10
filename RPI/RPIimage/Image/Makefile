@@ -7,7 +7,7 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-05-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.14-evbarm-${ARCH}-201804282140Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.17-evbarm-${ARCH}-201805100230Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -197,12 +197,12 @@ kernel:
 	# RPI2-1.2
 	cp ${MNT}/bcm2836-rpi-2-b.dtb  ${MNT}/bcm2837-rpi-2-b.dtb
 
-	# for startx
-	mv ${MNT}/kernel.img ${MNT}/kernel.img.org
-	mv ${MNT}/kernel7.img ${MNT}/kernel7.img.org
+#	# for startx
+#	mv ${MNT}/kernel.img ${MNT}/kernel.img.org
+#	mv ${MNT}/kernel7.img ${MNT}/kernel7.img.org
 
-	gunzip < 201803211740Z/earmv6hf/netbsd-RPI.img.gz  > ${MNT}/kernel.img
-	gunzip < 201803211740Z/earmv6hf/netbsd-RPI2.img.gz > ${MNT}/kernel7.img
+#	gunzip < 201803211740Z/earmv6hf/netbsd-RPI.img.gz  > ${MNT}/kernel.img
+#	gunzip < 201803211740Z/earmv6hf/netbsd-RPI2.img.gz > ${MNT}/kernel7.img
 
 	umount ${MNT}
 	vnconfig -u ${VND}
