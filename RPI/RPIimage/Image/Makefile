@@ -47,7 +47,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount kernel firm
+all: file cdmount rpi extract cdunmount kernel firm mikutter-key
 
 #update: cdmount update-extract cdunmount
 
@@ -238,5 +238,14 @@ libssls:
 	mount /dev/${VND}a ${MNT}
 	(cd ${MNT}/usr/lib;ln -s libssl.so.12 libssl.so.11)
 	(cd ${MNT}/usr/lib;ln -s libcrypto.so.12  libcrypto.so.11)
+	umount ${MNT}
+	vnconfig -u ${VND}
+
+mikutter-key:
+	echo mikutter key
+	vnconfig ${VND} ${FILE}
+	fsck -fy /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	patch -d ${MNT}/usr/pkg/share/mikutter/core/ < mikutter/mikutter-key.patch
 	umount ${MNT}
 	vnconfig -u ${VND}
