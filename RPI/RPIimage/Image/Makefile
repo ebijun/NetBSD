@@ -70,7 +70,7 @@ rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
 	fdisk -uf -0 -s 6/8192/188416 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fdisk -uf -1 -s 169/458752/4251648 ${VND} 
+	fdisk -uf -1 -s 169/458752/4456448 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
@@ -96,8 +96,8 @@ rpi:
 file: 
 	echo Create ${FILE}.
 #	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
-#	2048*2300
-	dd if=/dev/zero of=${FILE} bs=512 count=4710400 progress=60000
+	dd if=/dev/zero of=${FILE} bs=512 count=4915200 progress=62000
+#	 2048*2400
 	sleep 3
 
 # stop sshd for package install

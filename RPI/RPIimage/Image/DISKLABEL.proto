@@ -8,7 +8,7 @@ sectors/track: 32
 tracks/cylinder: 64
 sectors/cylinder: 2048
 cylinders: 587
-total sectors: 4710400
+total sectors: 4915200
 rpm: 3600
 interleave: 1
 trackskew: 0
@@ -19,8 +19,8 @@ drivedata: 0
 
 8 partitions:
 #        size    offset     fstype [fsize bsize cpg/sgs]
- a:   4251648    458752     4.2BSD      0     0     0  # (Cyl.    224 -   2010)
+ a:   4456448    458752     4.2BSD      0     0     0  # (Cyl.    224 -   2010)
  b:    262144    196608       swap                     # (Cyl.     96 -    223)
- c:   4251648    458752     unused      0     0        # (Cyl.    224 -   2010)
- d:   4710400         0     unused      0     0        # (Cyl.      0 -   2010)
+ c:   4456448    458752     unused      0     0        # (Cyl.    224 -   2010)
+ d:   4915200         0     unused      0     0        # (Cyl.      0 -   2010)
  e:    188416      8192      MSDOS                     # (Cyl.      4 -     95)
