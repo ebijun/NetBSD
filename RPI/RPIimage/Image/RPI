@@ -11,6 +11,7 @@ make -f Makefile pkg
 #mv back.img `date +%Y-%m-%d`-netbsd-raspi-earmv6hf.img
 #make -f Makefile logclean
 #make -f Makefile pkg-back
+#make -f Makefile mikutter-key
 #
 # Copy logfile
 #./Copy.sysinfo

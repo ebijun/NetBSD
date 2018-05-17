@@ -47,7 +47,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount kernel firm mikutter-key
+all: file cdmount rpi extract cdunmount kernel firm #mikutter-key
 
 #update: cdmount update-extract cdunmount
 
