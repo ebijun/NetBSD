@@ -1,31 +1,25 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2018-04-14/2018-04-14/g
+:1,$s/2018-05-19/2018-05-19/g
 :1,$s/8.99.14/8.99.14/g
-:1,$s/201804121000Z/201804121000Z/g
-:1,$s?2018/04/15/msg004757.html?2018/04/15/msg004757.html?
+:1,$s/201805162300Z/201805162300Z/g
+:1,$s?2018/05/18/msg004789.html?2018/05/18/msg004789.html?
 
-2018-04-14-netbsd-raspi-earmv6hf.img
+2018-05-19-netbsd-raspi-earmv6hf.img
 
-For Open Source UN-Conference 2018 kawagoe
-I've updated 2018-04-14-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2018 Nagoya
+I've updated 2018-05-19-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2018/04/15/msg004757.html
+http://mail-index.netbsd.org/port-arm/2018/05/18/msg004789.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-04-14-earmv6hf/2018-04-14-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-05-19-earmv6hf/2018-05-19-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.14 evbarm-earmv6hf 201804121000Z rpi.img from nyftp.
+- NetBSD-current 8.99.14 evbarm-earmv6hf 201805162300Z rpi.img from nyftp.
 - Firmware update 20180410 on /boot
-- Bind 9.10.7
-- dhcpcd 7.0.3
-- openssh 7.7
-- openssl 1.1.0h
-- git-base 2.16.3
-- ruby24-base 2.4.4
 
 Tweaks:
-- startx hangs on kernel version 201804121000Z
+- startx hangs on kernel version 201805162300Z
     /boot/kernel.img.org /boot/kernel7.img.org
   use kernel version 201803211740Z
     /boot/kernel.img /boot/kernel7.img
