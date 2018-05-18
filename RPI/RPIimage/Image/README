@@ -1,34 +1,37 @@
-VERSION: :1,$s/2018-04-14/2018-04-14/g
-ISO:     :1,$s/201804121000Z/201804121000Z/g
+VERSION: :1,$s/2018-05-19/2018-05-19/g
+ISO:     :1,$s/201805162300Z/201805162300Z/g
 NetBSD:  :1,$s/8.99.14/8.99.14/g
 PKGSRC:  :1,$s/2015-06-27/2015-06-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2018-04-14-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2018-05-19-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2018-04-14-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2018-05-19-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-04-14-earmv6hf/2018-04-14-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-04-14-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-05-19-earmv6hf/2018-05-19-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-05-19-earmv6hf/MD5
 
 Update:
-- NetBSD-current 8.99.14 evbarm-earmv6hf 201804121000Z rpi.img from nyftp.
-- Firmware update 20180410 on /boot
-- Bind 9.10.7
-- dhcpcd 7.0.3
-- openssh 7.7
-- openssl 1.1.0h
-- git-base 2.16.3
-- ruby24-base 2.4.4
+- NetBSD-current 8.99.14 evbarm-earmv6hf 201805162300Z rpi.img from nyftp.
+- pre-installed packages:
+ https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
+- Firmware update 
+ 20180410 on /boot for support newer RPI.
+- sysinfo and pkgsrc update 
+ https://github.com/ebijun/NetBSD/commit/b2bf723b7a6e18ddfbcfdf2453238e65ec123172#diff-d1cc5f555741f8510556b9937a64378c
+- mikutter 3.6.7
+ I make sample API key,pre-installed.
 
-Tweaks:
-- startx hangs on kernel version 201804121000Z 
+port-arm/53283: RPI earmv6hf earmv7hf: startx system hangs after 2018-03-30 14:00:00 UTC
+  201805162300Z kernels move to .org
     /boot/kernel.img.org /boot/kernel7.img.org
-  use kernel version 201803211740Z 
+  use kernel version 201803211740Z to avoid startx hang
     /boot/kernel.img /boot/kernel7.img
+
+port-arm/53284: Support RPI3B+,RPI0W,RPI2-1.2
 - RPI3B+ initial support 
   cp /boot/bcm2837-rpi-3-b.dtb /boot/bcm2837-rpi-3-b-plus.dtb
   Ethernet interface not works.
@@ -37,13 +40,11 @@ Tweaks:
 - RPI2-1.2 initial support
   cp /boot/bcm2836-rpi-2-b.dtb /boot/bcm2837-rpi-2-b.dtb
 
-Problem:
-- startx causes hang
-- omxplayer:
-  Abort Trap. (after FDTisation?)
+omxplayer: Abort Trap. (after FDTisation?)
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=52984
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=53042
-- diilo SSL support not works
+
+diilo SSL support not works
   pkg/53094: dillo: undefined reference to `SSL_library_init' with OpenSSL
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=53094
   -> pkgsrc fixed,thanx ryoon@. 
@@ -55,7 +56,7 @@ Overview:
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-04-14-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-05-19-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -67,11 +68,6 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3B+
 
-Pre-installed packages:
- https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
- updates:
-  https://github.com/ebijun/NetBSD/commit/ce378ddc49bc241b8ba8268c56cde8739fd01efc#diff-4a755d73dbba5da21bbf783139f086dc
-
 Problem:
 - CPUFLAGS=-mfpu=neon-vfpv4 breaks some programs
   http://gnats.netbsd.org/52528
@@ -80,6 +76,7 @@ Problem:
   thanx Jared McNeill.
 - Xfce4 4.13: 
   # hang with xfce4-sessions,4.12 works fine.
+  XXX: need check recent downgrade fix.
 
 security.pax.mprotect.enabled
   http://netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
@@ -125,7 +122,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-04-14-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-05-19-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -300,11 +297,11 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source UN-Conference 2018 Kawagoe,
+For Open Source Conference 2018 Nagoya NetBSD booth.
 I've updated raspberry-pi image.
 
-https://koedolug.connpass.com/event/77065/
-https://www.slideshare.net/junebihara18/netbsd-workshop
+https://www.ospn.jp/osc2018-nagoya/
+http://www.re.soum.co.jp/~jun/OSC2018nagoya.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 
@@ -346,7 +343,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-04-14/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-05-19/
 
 Installed Packages:
   bash

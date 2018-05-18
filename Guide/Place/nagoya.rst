@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-7 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -44,9 +44,9 @@
  2013 Nagoya,6/21-22,750,42,名古屋国際センター
  2014 Nagoya,7/4-5,620,30,名古屋国際センター
  2015 Nagoya,5/22-23,550,39,名古屋国際センター
- 2016 Nagoya,5/28,500,35,吹上ホール
- 2017 Nagoya,5/27,,37,吹上ホール
-
+ 2016 Nagoya,5/28,500,35,名古屋市中小企業振興会館 
+ 2017 Nagoya,5/27,500,37,名古屋市中小企業振興会館 
+ 2018 Nagoya,5/19,,37,名古屋市中小企業振興会館 
 
 オープンソースカンファレンス以前
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,9 +67,9 @@
  :widths: 30 20 60
 
  円頓寺商店街,国際センター,堀川から丸の内まで続く商店街
- ふれあい館,円頓寺商店街,NBUG例会会場。東海道らぐも。
- まつば,円頓寺商店街,NBUG例会会場脇。コーヒーを注文できます。
- 美濃路,国際センター,最近の裏例会定番。御殿場高原ビールがある。
+ ふれあい館,円頓寺商店街,NBUG例会会場。
+ まつば,円頓寺商店街,NBUG例会会場脇。新装開店。名古屋で数番目に自家焙煎をはじめた店。
+ 美濃路,国際センター,最近の裏例会定番。
  五條,円頓寺商店街,酒場放浪記で取り上げられる。とり天もおいしい。
  菊井かつ,円頓寺商店街,かつ10本豚かつ10本青いやつ。円頓寺は休業中。黒川へいこう。
  フルット,円頓寺商店街,スパゲティ。トッピングに目玉焼きを載せよう。
@@ -85,20 +85,23 @@
  ショップインバース,メガタウン,第一アメ横隣のツクモの奥。
  タケイ電子,第二アメ横,トランジスタ類はこちらへ。
  ハイファイ堂,大須赤門通,真空管/レコードの在庫豊富。
- PC-NET,大須赤門通,謎PCと謎パーツあふるる約束の地。
+ PC-NET,大須赤門通,2018/5/13閉店。
  マルツ,上小田井,マルツは鶴舞線終点にあります。例会会場から意外と近い。
- 丸八寿司,国際センター,OSC名古屋は丸八寿司近傍でしか開催されていない。
+ 丸八寿司,国際センター,薬師丸ひろこ巻の秘密を漏らしてはならない。
  松楽,吹上,中華。かにチャーハンの鍋振り。
  好来道場,吹上,総本家。桜山の好陽軒が昔の好来軒の味なので食べくらべよう。
- 三八屋,一宮,地ビール醸造。例会前日金曜午後2100くらい。
- ヒンメル,今池,クラフトビアバー。アプリにスタンプ。
- 23 Craft Beerz Nagoya,千種,23種類の生ビール常備。
- Brick Lane,名駅,湘南京都アメリカ
+ Brick Lane,名駅,クラフトビール＋ハンバーガー。湘南京都アメリカ。
+ Used like new beer,名駅,菊井2-17-5 クラフトビール+サンドイッチ。民家改造。
  ワイズマーケット,国際センター,地ビール醸造。まるはちめいよん。
- 7days brewing,名古屋駅,駅前。10タップ。
+ 三八屋,一宮,地ビール醸造。例会前日金曜午後2100くらい。
+ ヒンメル,竹越,クラフトビアバーからハンバーガー屋にジョブチェンジ。
+ Kitchen Lotus,千種,クラフトビア＋1ディッシュプレート。
+ 7days brewing,名古屋駅,駅前。クラフトビール。JBL43+DJブースもあるでよ。
  グリルマン,伏見,犬山キワマリ荘五つ葉書店の分店あり。
  KEG,栄,クラフトビール専門店。lovelyの隣。
- サンタルヌー,国際センター,クラフトビール。
+ 木屋,久屋大通,ベルギービールインポーター。店内まるごと冷蔵庫。試飲OK。
+ TRUNK,上前津,コールドブリューとクラフトビール京都志賀。
+ AOI BREWING,ささしまライブ,静岡アオイブリューイング名古屋店。
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -110,13 +113,14 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 106,OSC2017名古屋,http://www.soum.co.jp/~jun/OSC2017nagoya.pdf
- 88,OSC2016名古屋,http://www.soum.co.jp/~jun/OSC2016nagoya.pdf
- 71,OSC2015名古屋,http://www.soum.co.jp/~jun/OSC2015nagoya.pdf
- 59,OSC2014名古屋,http://www.soum.co.jp/~jun/OSC2014nagoya.pdf
- 42,OSC2013名古屋,http://www.soum.co.jp/~jun/OSC2013nagoya.pdf
- 25,OSC2012名古屋,http://www.soum.co.jp/~jun/OSC2012nagoya.pdf
- 13,OSC2011名古屋,http://www.soum.co.jp/~jun/OSC2011nagoya.pdf
+ 128,OSC2018名古屋,http://www.re.soum.co.jp/~jun/OSC2018nagoya.pdf
+ 106,OSC2017名古屋,http://www.re.soum.co.jp/~jun/OSC2017nagoya.pdf
+ 88,OSC2016名古屋,http://www.re.soum.co.jp/~jun/OSC2016nagoya.pdf
+ 71,OSC2015名古屋,http://www.re.soum.co.jp/~jun/OSC2015nagoya.pdf
+ 59,OSC2014名古屋,http://www.re.soum.co.jp/~jun/OSC2014nagoya.pdf
+ 42,OSC2013名古屋,http://www.re.soum.co.jp/~jun/OSC2013nagoya.pdf
+ 25,OSC2012名古屋,http://www.re.soum.co.jp/~jun/OSC2012nagoya.pdf
+ 13,OSC2011名古屋,http://www.re.soum.co.jp/~jun/OSC2011nagoya.pdf
 
 togetterまとめ
 ~~~~~~~~~~~~~~~
@@ -124,7 +128,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2017名古屋 NetBSDブース展示の記録,
+ OSC2018名古屋 NetBSDブース展示の記録,
+ OSC2017名古屋 NetBSDブース展示の記録,https://togetter.com/li/1114389
  OSC2016名古屋 NetBSDブース展示の記録,https://togetter.com/li/980383
  OSC2015名古屋 NetBSDブース展示の記録,http://togetter.com/li/824817
  OSC2014名古屋 NetBSDブース展示の記録,http://togetter.com/li/688742
@@ -149,28 +154,29 @@ OSC名古屋展示物
 #. Speecys
 #. samtk
 
+オープンソースカンファレンス2017 Nagoya&NBUG5月例会
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2017/05/27/1495847439150.jpg
+.. image::  ../Picture/2017/05/27/DSC_3514.JPG
+.. image::  ../Picture/2017/05/27/DSC_3519.JPG
+.. image::  ../Picture/2017/05/27/DSC_3520.JPG
+.. image::  ../Picture/2017/05/27/DSC_3525.JPG
+.. image::  ../Picture/2017/05/27/DSC_3526.JPG
+.. image::  ../Picture/2017/05/27/DSC_3527.JPG
+.. image::  ../Picture/2017/05/27/DSC_3529.JPG
+.. image::  ../Picture/2017/05/27/DSC_3534.JPG
+
 オープンソースカンファレンス2016 Nagoya&NBUG5月例会
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2016/05/28/DSC08913.JPG
-.. image::  ../Picture/2016/05/28/DSC08914.JPG
-.. image::  ../Picture/2016/05/28/DSC_1804.JPG
-.. image::  ../Picture/2016/05/28/DSC_1805.JPG
-.. image::  ../Picture/2016/05/28/DSC_1806.JPG
-.. image::  ../Picture/2016/05/28/DSC_1807.JPG
-.. image::  ../Picture/2016/05/28/DSC_1808.JPG
-.. image::  ../Picture/2016/05/28/DSC_1809.JPG
 .. image::  ../Picture/2016/05/28/DSC_1810.JPG
 .. image::  ../Picture/2016/05/28/DSC_1811.JPG
 .. image::  ../Picture/2016/05/28/DSC_1812.JPG
-.. image::  ../Picture/2016/05/28/DSC_1813.JPG
-.. image::  ../Picture/2016/05/28/DSC_1814.JPG
 .. image::  ../Picture/2016/05/28/DSC_1815.JPG
-.. image::  ../Picture/2016/05/28/DSC_1816.JPG
 .. image::  ../Picture/2016/05/28/DSC_1817.JPG
 .. image::  ../Picture/2016/05/28/DSC_1818.JPG
 .. image::  ../Picture/2016/05/28/DSC_1831.JPG
-.. image::  ../Picture/2016/05/28/DSC_1832.JPG
 .. image::  ../Picture/2016/05/28/DSC_1833.JPG
 .. image::  ../Picture/2016/05/28/DSC_1834.JPG
 
@@ -179,19 +185,13 @@ OSC名古屋展示物
 
 .. image::  ../Picture/2015/05/23/DSC07164.JPG
 .. image::  ../Picture/2015/05/23/DSC07165.JPG
-.. image::  ../Picture/2015/05/23/DSC07166.JPG
-.. image::  ../Picture/2015/05/23/DSC07167.JPG
 .. image::  ../Picture/2015/05/23/DSC07168.JPG
 .. image::  ../Picture/2015/05/23/DSC07169.JPG
 .. image::  ../Picture/2015/05/23/DSC07170.JPG
 .. image::  ../Picture/2015/05/23/DSC07172.JPG
-.. image::  ../Picture/2015/05/23/DSC07174.JPG
 .. image::  ../Picture/2015/05/23/DSC_1010.jpg
 .. image::  ../Picture/2015/05/23/DSC_1011.jpg
-.. image::  ../Picture/2015/05/23/DSC_1012.jpg
-.. image::  ../Picture/2015/05/23/DSC_1013.jpg
 .. image::  ../Picture/2015/05/23/DSC_1014.jpg
-.. image::  ../Picture/2015/05/23/DSC_1017.jpg
 
 2014年
 ~~~~~~~~~~~~~~~~~~
