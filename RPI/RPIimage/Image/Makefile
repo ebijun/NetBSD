@@ -7,7 +7,7 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-06-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.19-evbarm-${ARCH}-201806011030Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.19-evbarm-${ARCH}-201806090120Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -47,7 +47,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount kernel firm #mikutter-key
+all: file cdmount rpi extract cdunmount kernel firm 
 
 #update: cdmount update-extract cdunmount
 
@@ -198,11 +198,11 @@ kernel:
 	cp ${MNT}/bcm2836-rpi-2-b.dtb  ${MNT}/bcm2837-rpi-2-b.dtb
 
 #	# for startx
-	mv ${MNT}/kernel.img ${MNT}/kernel.img.org
-	mv ${MNT}/kernel7.img ${MNT}/kernel7.img.org
+#	mv ${MNT}/kernel.img ${MNT}/kernel.img.org
+#	mv ${MNT}/kernel7.img ${MNT}/kernel7.img.org
 
-	gunzip < 201803211740Z/earmv6hf/netbsd-RPI.img.gz  > ${MNT}/kernel.img
-	gunzip < 201803211740Z/earmv6hf/netbsd-RPI2.img.gz > ${MNT}/kernel7.img
+#	gunzip < 201803211740Z/earmv6hf/netbsd-RPI.img.gz  > ${MNT}/kernel.img
+#	gunzip < 201803211740Z/earmv6hf/netbsd-RPI2.img.gz > ${MNT}/kernel7.img
 
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -246,6 +246,6 @@ mikutter-key:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	patch -d ${MNT}/usr/pkg/share/mikutter/core/ < mikutter/mikutter-key.patch
+	patch -d ${MNT}/root/.mikutter/plugin/twitter_api_keys < mikutter/twitter_api_keys.rb.patch
 	umount ${MNT}
 	vnconfig -u ${VND}
