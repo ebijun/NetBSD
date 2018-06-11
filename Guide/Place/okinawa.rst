@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-7 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -48,7 +48,8 @@ Maps:
  2014 Okinawa,5/24,150,21,沖縄コンベンションセンター
  2015 Okinawa,7/4,100,16,沖縄コンベンションセンター
  2016 Okinawa,7/2,130,20,沖縄コンベンションセンター
- 2017 Okinawa,6/17,,14,沖縄県市町村自治会館
+ 2017 Okinawa,6/17,100,14,沖縄県市町村自治会館
+ 2017 Okinawa,6/16,,12,沖縄コンベンションセンター
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,13 +61,14 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 107,OSC2017沖縄,http://www.soum.co.jp/~jun/OSC2017okinawa.pdf
- 90,OSC2016沖縄,http://www.soum.co.jp/~jun/OSC2016okinawa.pdf
- 73,OSC2015沖縄,http://www.soum.co.jp/~jun/OSC2015okinawa.pdf
- 57,OSC2014沖縄,http://www.soum.co.jp/~jun/OSC2014okinawa.pdf
- 43,OSC2013沖縄,http://www.soum.co.jp/~jun/OSC2013okinawa.pdf
- 32,OSC2012沖縄,http://www.soum.co.jp/~jun/OSC2012okinawa.pdf
- 15,OSC2011沖縄,http://www.soum.co.jp/~jun/OSC2011okinawa.pdf
+ 125,OSC2018沖縄,http://www.re.soum.co.jp/~jun/OSC2018okinawa.pdf
+ 107,OSC2017沖縄,http://www.re.soum.co.jp/~jun/OSC2017okinawa.pdf
+ 90,OSC2016沖縄,http://www.re.soum.co.jp/~jun/OSC2016okinawa.pdf
+ 73,OSC2015沖縄,http://www.re.soum.co.jp/~jun/OSC2015okinawa.pdf
+ 57,OSC2014沖縄,http://www.re.soum.co.jp/~jun/OSC2014okinawa.pdf
+ 43,OSC2013沖縄,http://www.re.soum.co.jp/~jun/OSC2013okinawa.pdf
+ 32,OSC2012沖縄,http://www.re.soum.co.jp/~jun/OSC2012okinawa.pdf
+ 15,OSC2011沖縄,http://www.re.soum.co.jp/~jun/OSC2011okinawa.pdf
 
 togetterまとめ
 ~~~~~~~~~~~~~~~
@@ -74,7 +76,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2017沖縄 NetBSDブース展示の記録,http://togetter.com/li/
+ OSC2018沖縄 NetBSDブース展示の記録,
+ OSC2017沖縄 NetBSDブース展示の記録,http://togetter.com/li/1120958
  OSC2016沖縄 NetBSDブース展示の記録,http://togetter.com/li/995155
  OSC2015沖縄 NetBSDブース展示の記録,http://togetter.com/li/842624
  OSC2014沖縄 NetBSDブース展示の記録,http://togetter.com/li/671580
@@ -101,22 +104,21 @@ togetterまとめ
  ギャラリー小禄,奥武山公園,沖縄であんみつ。
  沖縄県立博物館・美術館,おもろまち,喫茶店で豆焙煎
  ジャッキーステーキハウス,旭橋,打ち上げに使う
- PCガレージ,北谷,X61 4000円
  ハードオフ,泡瀬/宜野湾/小禄,小禄が増えてる！マンタ公園とは何か。
  ステーキハウス８８, 辻,国際通りにもあるけど辻。
  エビスチキン,宜野湾,あひる焼き持ち帰り専門店
  スマグラーズアイリッシュパブ,県庁脇,フィッシュ&チップス
- コックTAIL,県庁前,ダイニングバー
  松風苑,南風原,金城哲夫資料館は必見
  沖縄熱血社交場,国際通り,ライブハウス。アラケモ本拠地
- 市場の古本屋ウララ,牧志公設市場,『那覇の市場で古本屋』
+ 市場の古本屋ウララ,牧志公設市場,『市場のことば、本の声』
  BOOKSじのん,宜野湾,金城哲夫研究を買いたい。9:00-20:00
+ 宮里小書店,栄町市場,日祝定休
+ くじらブックス,八重瀬,11:00-20:00 屋宣原135-2
  我楽多文庫,奥武山公園,ねこのいる古本屋
  DEEokinawa,www.dee-okinawa.com,スク情報(水揚げ/定食/のぼり)
  ピッツァＴＯＧＯ,宜野湾,石窯ピザ
  アメリカンNo.1倉庫,宜野湾,営業しているのだろうか
  まぐろ食堂,泊港,まぐろ丼
- 三河屋,宜野湾,ハンバーガー&名古屋メシ
  エンジェルシェア,おもろまち,角打ちできる酒屋。貸しスペースあり。
  まんが倉庫,浦添他,浦添がでかい
  PCリサイクル倉庫,豊見城,pcmix.jp 11:00-19:00 日祝日休
@@ -128,18 +130,29 @@ togetterまとめ
  Dojo Bar Naha,安里１丁目交差点,19:00-
  ポストマン,読谷,プラモデル 13:00-19:00
  キングタコス,金武,タコチキンフライライスチーズ。
- 珈琲屋台ひばり屋,牧志,那覇市牧志3-9-26に移転。10:30-19:00
+ 珈琲屋台ひばり屋,牧志,那覇市牧志3-9-26。10:30-19:00
  やっぱりステーキ2nd,美栄橋,AM11:00-AM7:00まで営業
+ 伊豆味ドライブイン,伊豆味,11:00-20:00 うなぎと蝮の謎　
+ CONTE,首里城,11:00-17:00 県産豚のロースト
+
+2017年
+------------
+
+.. image::  ../Picture/2017/06/16/DSC_3592.JPG
+.. image::  ../Picture/2017/06/16/DSC_3597.JPG
+.. image::  ../Picture/2017/06/16/DSC_3603.JPG
+.. image::  ../Picture/2017/06/17/DSC_3614.JPG
+.. image::  ../Picture/2017/06/17/DSC_3615.JPG
+.. image::  ../Picture/2017/06/17/DSC_3617.JPG
+.. image::  ../Picture/2017/06/17/DSC_3621.JPG
+.. image::  ../Picture/2017/06/17/DSC_3622.JPG
+.. image::  ../Picture/2017/06/17/DSC_3629.JPG
 
 2016年
 ----------
 
 .. image::  ../Picture/2016/07/01/DSC_1958.JPG
 .. image::  ../Picture/2016/07/01/DSC_1959.JPG
-.. image::  ../Picture/2016/07/01/DSC_1960.JPG
-.. image::  ../Picture/2016/07/01/DSC_1965.JPG
-.. image::  ../Picture/2016/07/01/DSC_1971.JPG
-.. image::  ../Picture/2016/07/01/DSC_1974.JPG
 .. image::  ../Picture/2016/07/02/1467427444271.jpg
 .. image::  ../Picture/2016/07/02/1467427462767.jpg
 .. image::  ../Picture/2016/07/02/1467427492890.jpg
@@ -150,8 +163,6 @@ togetterまとめ
 .. image::  ../Picture/2016/07/02/1467428153865.jpg
 .. image::  ../Picture/2016/07/02/1467435720136.jpg
 .. image::  ../Picture/2016/07/02/DSC_1978.JPG
-.. image::  ../Picture/2016/07/02/DSC_1980.JPG
-.. image::  ../Picture/2016/07/02/DSC_1985.JPG
 
  
 2015 年
@@ -167,18 +178,12 @@ togetterまとめ
 2014年
 ---------------
 
-.. image::  ../Picture/2014/05/24/DSC04844.JPG
-.. image::  ../Picture/2014/05/24/DSC04851.JPG
 .. image::  ../Picture/2014/05/24/DSC04852.JPG
 .. image::  ../Picture/2014/05/24/DSC04853.JPG
 .. image::  ../Picture/2014/05/24/DSC04854.JPG
 .. image::  ../Picture/2014/05/24/DSC04859.JPG
 .. image::  ../Picture/2014/05/24/DSC04862.JPG
 .. image::  ../Picture/2014/05/24/DSC04863.JPG
-.. image::  ../Picture/2014/05/24/DSC_0086.jpg
-.. image::  ../Picture/2014/05/24/DSC_0088.jpg
-.. image::  ../Picture/2014/05/24/DSC_0091.jpg
-.. image::  ../Picture/2014/05/24/DSC_0092.jpg
 .. image::  ../Picture/2014/05/24/DSC_0094.jpg
 .. image::  ../Picture/2014/05/24/DSC_0101.jpg
 .. image::  ../Picture/2014/05/24/DSC_0103.jpg
