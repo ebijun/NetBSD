@@ -76,7 +76,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2018沖縄 NetBSDブース展示の記録,
+ OSC2018沖縄 NetBSDブース展示の記録,https://togetter.com/li/1237675
  OSC2017沖縄 NetBSDブース展示の記録,http://togetter.com/li/1120958
  OSC2016沖縄 NetBSDブース展示の記録,http://togetter.com/li/995155
  OSC2015沖縄 NetBSDブース展示の記録,http://togetter.com/li/842624
