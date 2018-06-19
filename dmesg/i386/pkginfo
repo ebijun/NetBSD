@@ -9,12 +9,15 @@ SDL2-2.0.5nb4       Simple DirectMedia Layer is a cross-platform multimedia libr
 acroread9-9.5.5nb3  View, distribute and print PDF documents
 acroread9-font-share-9.1 Asian Font Packs for Acrobat Reader 9 (common base)
 acroread9-jpnfont-9.1 Asian Font Packs for Acrobat Reader 9 (Japanese)
+adobe-flash-plugin-11.2.202.644nb1 Adobe Flash Player Browser plugin
 adwaita-icon-theme-3.22.0 Standard GNOME icons
 alsa-lib-1.1.1      Advanced Linux Sound Architecture (ALSA)
 anthy-9100h         Kana Kanji conversion system
+anthy-elisp-9100hnb5 Emacs lisp files for inputmethod/anthy
 apache-ant-1.9.7    "Apache Project's Java-Based make(1) replacement"
 apr-1.5.2           Apache Portable Runtime
 apr-util-1.5.4nb7   Apache Portable Runtime utilities
+arandr-0.1.9nb2     Designed to provide a simple visual front end for XRandR
 arm-trusted-firmware-sun50iw1p1-20170831 ARM Trusted Firmware for Allwinner sun50iw1p1 SoCs
 at-spi2-atk-2.22.0  Assistive Technology Service Provider Interface A11y Toolkit
 at-spi2-core-2.22.0 Assistive Technology Service Provider Interface Core
@@ -60,7 +63,9 @@ dillo-3.0.5nb2      Very small and fast graphical web-browser
 djvulibre-lib-3.5.27 Compression library for scanned documents
 docbook-xml-4.5     XML DTD designed for computer documentation
 docbook-xsl-1.79.1nb2 Docbook XSL modular stylesheet
+dtb-arm-vexpress-4.11.3 DTB files for arm vexpress based boards
 dtc-1.4.2nb1        Device Tree Compiler (dtc)
+emacs25-25.1nb2     GNU editing macros (editor)
 enca-1.15           Extremely Naive Charset Analyser
 enchant-1.6.0nb5    Generic spell checking library
 esound-0.2.41nb3    The Enlightened sound daemon
@@ -110,7 +115,7 @@ gmime24-2.4.33      Library for the creation and parsing of MIME messages
 gmp-6.1.2           Library for arbitrary precision arithmetic
 gnome-doc-utils-0.20.10nb2 Documentation utilities for the GNOME project
 gnome-icon-theme-3.12.0nb1 Theme consisting of a set of icons for GNOME
-gnome-vfs-2.24.4nb31 GNOME Virtual File System (v2)
+gnome-vfs-2.24.4nb32 GNOME Virtual File System (v2)
 gnupg-1.4.21nb1     GNU Privacy Guard, public-Key encryption and digital signatures
 gnupg2-2.2.1        GnuPG with OpenPGP and S/MIME capabilities
 gnutls-3.5.8        GNU Transport Layer Security library
@@ -145,7 +150,9 @@ gtexinfo-6.3nb1     GNU info documentation utilities
 gtk+-1.2.10nb16     GIMP Toolkit v1 - libraries for building X11 user interfaces
 gtk2+-2.24.31nb4    GIMP Toolkit v2 - libraries for building X11 user interfaces
 gtk3+-3.22.7        GIMP Toolkit v3 - libraries for building X11 user interfaces
+gtkmm-2.24.5nb1     C++ interface to Gtk+ v2
 gtksourceview2-2.10.5nb28 Text widget that extends GTK2's GtkTextView widget
+gtkspell-2.0.16nb23 Spell checking GtkTextView widget
 guile20-2.0.12nb2   Official extension language for the GNU operating system
 gvfs-1.6.7nb24      Userspace virtual filesystem
 gxemul-0.6.0.1nb1   Framework for full-system computer architecture emulation
@@ -162,6 +169,7 @@ icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
 icu-59.1nb2         Robust and full-featured Unicode services
 ilmbase-2.2.0nb1    High dynamic-range (HDR) image file format library and tools
 imake-1.0.7nb3      Imake and other utilities from modular X.org
+inkscape-0.91nb24   Scalable Vector Graphics (SVG) editor
 intel-microcode-netbsd-20140913 Firmware updates for Intel x86 processors
 intltool-0.51.0nb2  Internationalization Tool Collection
 ipafont-00303nb1    IPA JIS X 0213 fonts (Gothic, P Gothic, Mincho, and P Mincho)
@@ -290,6 +298,7 @@ libstaroffice-0.0.2nb2 Library to import StarOffice documents
 libtasn1-4.9        ASN.1 structure parser library
 libtheora-1.1.1nb2  Video codec for Ogg multimedia streaming
 libtool-base-2.4.2nb13 Generic shared library support script (the script itself)
+libunique3-3.0.2nb16 Library for writing single instance applications
 libunistring-0.9.7  Unicode string library
 libupnp-1.6.19      Portable Universal Plug and Play (UPnP) SDK
 libusb-0.1.12nb4    USB access library (version 0)
@@ -313,6 +322,7 @@ libyaml-0.1.7       YAML 1.1 parser and emitter written in C
 libzip-1.1.3nb1     C library to manipulate zip archives
 libzmf-0.0.2        Library to parse Zoner Callisto/Draw documents
 lintpkgsrc-4.92nb1  Sanity checks on the complete pkgsrc tree
+llvm-4.0.1nb1       Low Level Virtual Machine compiler infrastructure
 lockf-1             FreeBSD's lockf
 lp_solve-5.5.2.3    Mixed Integer Linear Programming (MILP) solver
 lua52-5.2.4nb1      Powerful light-weight language for extending applications
@@ -342,8 +352,9 @@ nettle-3.3          Cryptographic library
 nkf-2.13nb3         Convert between various Japanese character encodings
 nodejs-8.7.0        V8 JavaScript for clients and servers
 npth-1.5            New Portable Threads Library (nPth)
-nspr-4.13.1         Platform-neutral API for system level and libc like functions
-nss-3.28.1nb1       Libraries to support development of security-enabled applications
+nspluginwrapper-1.4.4nb10 Use Netscape compatible plugins from other platforms
+nspr-4.17nb1        Platform-neutral API for system level and libc like functions
+nss-3.34.1          Libraries to support development of security-enabled applications
 openal-soft-1.17.2  Alternative OpenAL implementation
 openexr-2.2.0nb3    High dynamic-range (HDR) image file format library and tools
 openjdk7-1.7.80nb4  Open-source implementation of the Java Platform, Standard Edition
@@ -399,6 +410,7 @@ p5-inc-latest-0.500nb1 Use modules bundled in inc/ if they are newer than instal
 p5-pkgsrc-Dewey-1.1nb7 Perl module to compare pkgsrc Dewey numbers
 p7zip-16.02nb1      File archiver with high compression
 pango-1.40.12       Library for layout and rendering of text
+pangomm-2.40.1nb2   C++ bindings for pango
 password-store-1.6.5 Standard UNIX password manager
 pciids-20150907     Repository of PCI IDs (pci.ids database)
 pcre-8.40           Perl Compatible Regular Expressions library
@@ -436,11 +448,14 @@ py27-alabaster-0.7.9 Configurable sidebar-enabled Sphinx theme
 py27-argparse-1.4.0 Easy, declarative interface for creating command line tools
 py27-attrs-17.2.0   Attributes without boilerplate
 py27-babel-2.3.4    Collection of tools for internationalizing Python applications
+py27-botocore-1.8.2 Low-level interface to a growing number of Amazon Web Services
 py27-cElementTree-2.7.13 C implementation of Python ElementTree API
 py27-cairo-1.10.0nb4 Python bindings for cairo (python-2.x version)
+py27-colorama-0.3.9 Cross-platform coloured terminal text
 py27-coverage-4.4.1 Python module that measures code coverage for Python
 py27-cython-0.25.2  C-Extensions for Python
 py27-czipfile-1.0.0 Replacement for builtin zipfile, with fast, C-based zipfile decryption
+py27-dateutil-2.6.1 Extensions to the standard datetime module
 py27-dbus-1.2.4     Python bindings for the D-BUS message bus system
 py27-docutils-0.13.1 Python tool to generate documents
 py27-elementtree-1.2.6nb4 Read XML and HTML files into trees of Element objects
@@ -458,6 +473,7 @@ py27-hypothesis-3.31.2 Python library for property based testing
 py27-imagesize-0.7.1 Parses image files' header and returns image size
 py27-imaging-1.1.7nb10 PIL, the Python Imaging Library
 py27-jinja2-2.8     Small but fast and easy to use stand-alone template engine
+py27-jmespath-0.9.3 JMESPath is a query language for JSON
 py27-libxml2-2.9.4nb2 Python wrapper for libxml2
 py27-libxslt-1.1.28nb2 Python wrapper for libxslt
 py27-linecache2-1.0.0nb1 Backport of the linecache module to older Python versions
@@ -607,10 +623,11 @@ samba-3.6.25nb6     SMB/CIFS protocol server suite
 sane-backends-1.0.25nb4 API for access to scanners, digital cameras, frame grabbers, etc
 sayaka-3.3.1        Terminal specific Twitter client
 schroedinger-1.0.11 Dirac video compression library
-seamonkey-2.48nb3   Full-featured gecko-based browser
-seamonkey-l10n-2.48 Language packs for www/seamonkey
+seamonkey-2.49.1nb1 Full-featured gecko-based browser
+seamonkey-l10n-2.49.1 Language packs for www/seamonkey
 serf-1.3.9          High-performance asynchronous HTTP client library
 shared-mime-info-1.8 Core database of common types
+shotwell-0.22.0nb8  Shotwell is a photo organizer for the GNOME desktop
 smartmontools-6.5   Control and monitor storage systems using SMART
 sourcehansans-fonts-1.000 Set of Pan-CJK fonts from Adobe
 speex-1.2.0         Open-source, patent-free voice codec
@@ -674,10 +691,10 @@ u-boot-beaglebonewhite-2017.07 Das U-Boot, the Universal Boot Loader (am335x_evm
 u-boot-chip-2017.07 Das U-Boot, the Universal Boot Loader (CHIP_defconfig)
 u-boot-cubieboard4-2017.07 Das U-Boot, the Universal Boot Loader (Cubieboard4_defconfig)
 u-boot-jetson-tx1-2017.07 Das U-Boot, the Universal Boot Loader (p2371-2180_defconfig)
-u-boot-nanopi-neo-2017.07 Das U-Boot, the Universal Boot Loader (nanopi_neo_defconfig)
-u-boot-nanopi-neo2-2017.09 Das U-Boot, the Universal Boot Loader (nanopi_neo2_defconfig)
+u-boot-nanopi-neo-2017.11nb1 Das U-Boot, the Universal Boot Loader (nanopi_neo_defconfig)
+u-boot-nanopi-neo2-2017.11nb1 Das U-Boot, the Universal Boot Loader (nanopi_neo2_defconfig)
 u-boot-orangepi-2-2017.07nb1 Das U-Boot, the Universal Boot Loader (orangepi_2_defconfig)
-u-boot-orangepi-one-2017.09 Das U-Boot, the Universal Boot Loader (orangepi_one_defconfig)
+u-boot-orangepi-one-2017.11nb1 Das U-Boot, the Universal Boot Loader (orangepi_one_defconfig)
 u-boot-orangepi-plus2e-2017.07nb1 Das U-Boot, the Universal Boot Loader (orangepi_plus2e_defconfig)
 u-boot-pine64-2017.07 Das U-Boot, the Universal Boot Loader (pine64_plus_defconfig)
 u-boot-pocketchip-2017.07 Das U-Boot, the Universal Boot Loader (PocketCHIP_defconfig)
@@ -691,6 +708,7 @@ urw-fonts-2.0       Standard postscript fonts (cyrillicized)
 usbids-20081118     Repository of USB IDs (usb.ids database)
 vala-0.32.0         Compiler for the GObject type system
 vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
+webkit24-gtk3-2.4.11nb4 GTK3 port of the WebKit browser engine
 wget-1.18nb3        Retrieve files from the 'net via HTTP and FTP
 wine-1.9.18nb5      Free implementation of Windows on Unix
 wmsmixer-0.5.1nb1   Another mixer designed for WindowMaker (dockapp)
