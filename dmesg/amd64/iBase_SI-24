@@ -1,287 +1,285 @@
-Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018 The NetBSD Foundation, Inc.  All rights reserved.
-Copyright (c) 1982, 1986, 1989, 1991, 1993
-    The Regents of the University of California.  All rights reserved.
+[    1.000000] Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+[    1.000000] 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+[    1.000000] 2018 The NetBSD Foundation, Inc.  All rights reserved.
+[    1.000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
+[    1.000000] The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.12 (GENERIC) #0: Sun Jan 14 11:55:33 UTC 2018
-	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
-total memory = 2047 MB
-avail memory = 1965 MB
-timecounter: Timecounters tick every 10.000 msec
-Kernelized RAIDframe activated
-running cgd selftest aes-xts-256 aes-xts-512 done
-timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
-Unknow Unknow (Unknow)
-mainbus0 (root)
-ACPI: RSDP 0x00000000000F7BA0 000024 (v02 RS690 )
-ACPI: XSDT 0x000000007FFE3080 00004C (v01 RS690  AWRDACPI 42302E31 AWRD 00000000)
-ACPI: FACP 0x000000007FFE8180 0000F4 (v03 RS690  AWRDACPI 42302E31 AWRD 00000000)
-Firmware Warning (ACPI): 32/64X length mismatch in FADT/Pm1aEventBlock: 32/8 (20171110/tbfadt-642)
-Firmware Warning (ACPI): 32/64X length mismatch in FADT/Pm1aControlBlock: 16/8 (20171110/tbfadt-642)
-Firmware Warning (ACPI): 32/64X length mismatch in FADT/PmTimerBlock: 32/8 (20171110/tbfadt-642)
-Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 64/8 (20171110/tbfadt-642)
-Firmware Warning (ACPI): Invalid length for FADT/Pm1aEventBlock: 8, using default 32 (20171110/tbfadt-745)
-Firmware Warning (ACPI): Invalid length for FADT/Pm1aControlBlock: 8, using default 16 (20171110/tbfadt-745)
-Firmware Warning (ACPI): Invalid length for FADT/PmTimerBlock: 8, using default 32 (20171110/tbfadt-745)
-ACPI: DSDT 0x000000007FFE3200 004F49 (v01 RS690  AWRDACPI 00001000 MSFT 03000000)
-ACPI: FACS 0x000000007FFE0000 000040
-ACPI: SSDT 0x000000007FFE8300 000140 (v01 PTLTD  POWERNOW 00000001  LTP 00000001)
-ACPI: HPET 0x000000007FFE8440 000038 (v01 RS690  AWRDACPI 42302E31 AWRD 00000098)
-ACPI: MCFG 0x000000007FFE8480 00003C (v01 RS690  AWRDACPI 42302E31 AWRD 00000000)
-ACPI: APIC 0x000000007FFE8280 000068 (v01 RS690  AWRDACPI 42302E31 AWRD 00000000)
-ACPI: Executed 1 blocks of module-level executable AML code
-ACPI: 2 ACPI AML tables successfully acquired and loaded
-ACPI Error: Could not find/resolve named package element: LNKC (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKD (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKA (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKB (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKD (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKA (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKB (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKC (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKA (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKB (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKC (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKD (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKB (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKC (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKD (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKA (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKC (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKD (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKA (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKB (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKD (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKA (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKB (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKC (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKA (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKB (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKC (20171110/dspkginit-406)
-ACPI Error: Could not find/resolve named package element: LNKD (20171110/dspkginit-406)
-ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x21, 24 pins
-cpu0 at mainbus0 apid 0
-cpu0: AMD Processor, id 0x60fb2
-cpu0: package 0, core 0, smt 0
-cpu1 at mainbus0 apid 1
-cpu1: AMD Processor, id 0x60fb2
-cpu1: package 0, core 1, smt 0
-acpi0 at mainbus0: Intel ACPICA 20171110
-acpi0: X/RSDT: OemId <RS690 ,AWRDACPI,42302e31>, AslId <AWRD,00000000>
-acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
-acpi0: SCI interrupting at int 9
-timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
-hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
-timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
-acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
-PMIO (PNP0C02) at acpi0 not configured
-attimer1 at acpi0 (TMR, PNP0100): io 0x40-0x43
-pcppi1 at acpi0 (SPKR, PNP0800): io 0x61
-spkr0 at pcppi1: PC Speaker
-wsbell at spkr0 not configured
-midi0 at pcppi1: PC speaker
-sysbeep0 at pcppi1
-SYSR (PNP0C02) at acpi0 not configured
-UAR1 (PNP0501) at acpi0 not configured
-UAR2 (PNP0501) at acpi0 not configured
-pckbc1 at acpi0 (PS2M, PNP0F13) (aux port): irq 12
-pckbc2 at acpi0 (PS2K, PNP0303) (kbd port): io 0x60,0x64 irq 1
-MEM (PNP0C01) at acpi0 not configured
-acpifan0 at acpi0 (FAN, PNP0C0B): ACPI Fan
-acpitz0 at acpi0 (THRM): cpu0
-acpitz0: active cooling level 0: 50.0C
-acpitz0: levels: critical 60.0 C, passive 50.0 C
-ACPI: Enabled 1 GPEs in block 00 to 1F
-attimer1: attached to pcppi1
-pckbd0 at pckbc2 (kbd slot)
-pckbc2: using irq 1 for kbd slot
-wskbd0 at pckbd0: console keyboard
-pms0 at pckbc2 (aux slot)
-pms0: Failed to initialize an ALPS device.
-pckbc2: using irq 12 for aux slot
-wsmouse0 at pms0 mux 0
-pci0 at mainbus0 bus 0: configuration mode 1
-pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
-pchb0 at pci0 dev 0 function 0: vendor 1002 product 7910 (rev. 0x00)
-ppb0 at pci0 dev 2 function 0: vendor 1002 product 7913 (rev. 0x00)
-ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x16 @ 2.5GT/s
-ppb0: link is x8 @ 2.5GT/s
-pci1 at ppb0 bus 1
-pci1: i/o space, memory space enabled, rd/line, wr/inv ok
-radeon0 at pci1 dev 0 function 0: vendor 1002 product 94cb (rev. 0x00)
-ppb1 at pci0 dev 6 function 0: vendor 1002 product 7916 (rev. 0x00)
-ppb1: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
-pci2 at ppb1 bus 2
-pci2: i/o space, memory space enabled, rd/line, wr/inv ok
-re0 at pci2 dev 0 function 0: RealTek 8168/8111 PCIe Gigabit Ethernet (rev. 0x02)
-re0: interrupting at ioapic0 pin 18
-re0: Ethernet address 00:03:2d:17:30:b6
-re0: using 256 tx descriptors
-rgephy0 at re0 phy 7: RTL8169S/8110S/8211 1000BASE-T media interface, rev. 2
-rgephy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
-ixpide0 at pci0 dev 18 function 0: ATI Technologies IXP IDE Controller (rev. 0x00)
-ixpide0: bus-master DMA support present
-ixpide0: primary channel configured to compatibility mode
-ixpide0: primary channel interrupting at ioapic0 pin 14
-atabus0 at ixpide0 channel 0
-ixpide0: secondary channel configured to compatibility mode
-ixpide0: secondary channel interrupting at ioapic0 pin 15
-atabus1 at ixpide0 channel 1
-ohci0 at pci0 dev 19 function 0: vendor 1002 product 4387 (rev. 0x00)
-ohci0: interrupting at ioapic0 pin 16
-ohci0: OHCI version 1.0, legacy support
-usb0 at ohci0: USB revision 1.0
-ohci1 at pci0 dev 19 function 1: vendor 1002 product 4388 (rev. 0x00)
-ohci1: interrupting at ioapic0 pin 17
-ohci1: OHCI version 1.0, legacy support
-usb1 at ohci1: USB revision 1.0
-ohci2 at pci0 dev 19 function 2: vendor 1002 product 4389 (rev. 0x00)
-ohci2: interrupting at ioapic0 pin 18
-ohci2: OHCI version 1.0, legacy support
-usb2 at ohci2: USB revision 1.0
-ohci3 at pci0 dev 19 function 3: vendor 1002 product 438a (rev. 0x00)
-ohci3: interrupting at ioapic0 pin 17
-ohci3: OHCI version 1.0, legacy support
-usb3 at ohci3: USB revision 1.0
-ohci4 at pci0 dev 19 function 4: vendor 1002 product 438b (rev. 0x00)
-ohci4: interrupting at ioapic0 pin 18
-ohci4: OHCI version 1.0, legacy support
-usb4 at ohci4: USB revision 1.0
-ehci0 at pci0 dev 19 function 5: vendor 1002 product 4386 (rev. 0x00)
-ehci0: applying AMD SB600/SB700 USB freeze workaround
-ehci0: interrupting at ioapic0 pin 19
-ehci0: dropped intr workaround enabled
-ehci0: EHCI version 1.0
-ehci0: 5 companion controllers, 2 ports each: ohci0 ohci1 ohci2 ohci3 ohci4
-usb5 at ehci0: USB revision 2.0
-piixpm0 at pci0 dev 20 function 0: vendor 1002 product 4385 (rev. 0x14)
-piixpm0: interrupting at SMI, polling
-iic0 at piixpm0: I2C bus
-ixpide1 at pci0 dev 20 function 1: ATI Technologies IXP IDE Controller (rev. 0x00)
-ixpide1: bus-master DMA support present
-ixpide1: primary channel configured to native-PCI mode
-ixpide1: using ioapic0 pin 16 for native-PCI interrupt
-atabus2 at ixpide1 channel 0
-ixpide1: secondary channel configured to native-PCI mode
-atabus3 at ixpide1 channel 1
-hdaudio0 at pci0 dev 20 function 2: HD Audio Controller
-hdaudio0: interrupting at ioapic0 pin 16
-hdafg0 at hdaudio0: vendor 10ec product 0662
-hdafg0: DAC00 2ch: Speaker [Jack], HP Out [Jack]
-hdafg0: ADC01 2ch: Line In [Jack], Mic In [Jack]
-hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz PCM16 PCM20 PCM24 AC3
-audio0 at hdafg0: full duplex, playback, capture, mmap, independent
-hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-hdafg0: Latency: 128 milliseconds
-spkr1 at audio0: PC Speaker (synthesized)
-wsbell at spkr1 not configured
-pcib0 at pci0 dev 20 function 3: vendor 1002 product 438d (rev. 0x00)
-ppb2 at pci0 dev 20 function 4: vendor 1002 product 4384 (rev. 0x00)
-pci3 at ppb2 bus 3
-pci3: i/o space, memory space enabled
-pchb1 at pci0 dev 24 function 0: vendor 1022 product 1100 (rev. 0x00)
-pchb2 at pci0 dev 24 function 1: vendor 1022 product 1101 (rev. 0x00)
-pchb3 at pci0 dev 24 function 2: vendor 1022 product 1102 (rev. 0x00)
-amdnb_misc0 at pci0 dev 24 function 3: AMD NB Misc Configuration
-amdtemp0 at amdnb_misc0: AMD CPU Temperature Sensors (K8: core rev BH-G2, socket AM2)
-isa0 at pcib0
-com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, working fifo
-com1 at isa0 port 0x2f8-0x2ff irq 3: ns16550a, working fifo
-acpicpu0 at cpu0: ACPI CPU
-acpicpu0: C1: HLT, lat   0 us, pow     0 mW
-acpicpu0: P0: FFH, lat 100 us, pow 100000 mW, 1500 MHz
-acpicpu1 at cpu1: ACPI CPU
-timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-IPsec: Initialized Security Association Processing.
-Kernel RNG "kernel" runs test FAILURE: too many runs of 1 0s (2686 >= 2685)
-cprng kernel: failed statistical RNG test
-uhub0 at usb1: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb3: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb5: vendor 1002 (0x1002) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-uhub2: 10 ports with 10 removable, self powered
-uhub3 at usb0: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub3: 2 ports with 2 removable, self powered
-uhub4 at usb2: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub4: 2 ports with 2 removable, self powered
-uhub5 at usb4: vendor 1002 (0x1002) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub5: 2 ports with 2 removable, self powered
-ehci0: handing over full speed device on port 2 to ohci0
-wd0 at atabus0 drive 0
-wd0: <WDC WD3200BEKT-08PVMT1>
-wd0: drive supports 16-sector PIO transfers, LBA48 addressing
-wd0: 298 GB, 620181 cyl, 16 head, 63 sec, 512 bytes/sect x 625142448 sectors
-wd0: 32-bit data port
-wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags) w/PRIO
-wd0(ixpide0:0:0): using PIO mode 4, Ultra-DMA mode 6 (Ultra/133) (using DMA), WRITE DMA FUA EXT
-WARNING: 1 error while detecting hardware; check system log.
-boot device: wd0
-root on wd0a dumps on wd0b
-uhidev0 at uhub3 port 2 configuration 1 interface 0
-uhidev0: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
-ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
-root file system type: ffs
-kern.module.path=/stand/amd64/8.99.12/modules
-drm: initializing kernel modesetting (RV610 0x1002:0x94CB 0x1002:0x94CB).
-drm: register mmio base: 0xfddf0000
-drm: register mmio size: 65536
-drm kern info: ATOM BIOS: BR35739
-radeon0: info: VRAM: 128M 0x0000000000000000 - 0x0000000007FFFFFF (128M used)
-radeon0: info: GTT: 512M 0x0000000008000000 - 0x0000000027FFFFFF
-drm: Detected VRAM RAM=80M, BAR=256M
-drm: RAM width 64bits DDR
-Zone  kernel: Available graphics memory: 445298 kiB
-drm: radeon: 128M of VRAM memory ready
-drm: radeon: 512M of GTT memory ready.
-drm: Loading RV610 Microcode
-drm: GART: num cpu pages 131072, num gpu pages 131072
-drm: PCIE GART of 512M enabled (table at 0x0000000000040000).
-radeon0: info: WB enabled
-radeon0: info: fence driver on ring 0 use gpu addr 0x0000000008000c00 and cpu addr 0x0xffff8000449c8c00
-drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
-drm: Driver supports precise vblank timestamp query.
-radeon0: interrupting at ioapic0 pin 18 (radeon)
-drm: radeon: irq initialized.
-drm: ring test on 0 succeeded in 1 usecs
-drm: ib test on ring 0 succeeded in 0 usecs
-drm: Radeon Display Connectors
-drm: Connector 0:
-drm:   DVI-I-1
-drm:   HPD1
-drm:   DDC: 0x7e40 0x7e40 0x7e44 0x7e44 0x7e48 0x7e48 0x7e4c 0x7e4c
-drm:   Encoders:
-drm:     CRT1: INTERNAL_KLDSCP_DAC1
-drm:     DFP1: INTERNAL_KLDSCP_TMDS1
-drm: Connector 1:
-drm:   DVI-I-2
-drm:   HPD3
-drm:   DDC: 0x7e50 0x7e50 0x7e54 0x7e54 0x7e58 0x7e58 0x7e5c 0x7e5c
-drm:   Encoders:
-drm:     CRT2: INTERNAL_KLDSCP_DAC2
-drm:     DFP2: INTERNAL_LVTM1
-drm: Connector 2:
-drm:   DIN-1
-drm:   Encoders:
-drm:     TV1: INTERNAL_KLDSCP_DAC2
-radeondrmkmsfb0 at radeon0
-radeon0: info: registered panic notifier
-radeondrmkmsfb0: framebuffer at 0xffff800044cf0000, size 1280x1024, depth 32, stride 5120
-wsdisplay0 at radeondrmkmsfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
-wsmux1: connecting to wsdisplay0
-wskbd1 at ukbd0 mux 1
-wskbd1: connecting to wsdisplay0
-uhidev1 at uhub3 port 2 configuration 1 interface 1
-uhidev1: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
-uhidev1: 17 report ids
-ums0 at uhidev1 reportid 2: 16 buttons, W and Z dirs
-wsmouse1 at ums0 mux 0
-uhid0 at uhidev1 reportid 3: input=4, output=0, feature=0
-uhid1 at uhidev1 reportid 4: input=1, output=0, feature=0
-uhid2 at uhidev1 reportid 16: input=6, output=6, feature=0
-uhid3 at uhidev1 reportid 17: input=19, output=19, feature=0
-wsdisplay0: screen 1 added (default, vt100 emulation)
-wsdisplay0: screen 2 added (default, vt100 emulation)
-wsdisplay0: screen 3 added (default, vt100 emulation)
-wsdisplay0: screen 4 added (default, vt100 emulation)
+[    1.000000] NetBSD 8.99.19 (GENERIC) #0: Mon Jun 18 17:07:07 UTC 2018
+[    1.000000] 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+[    1.000000] total memory = 4095 MB
+[    1.000000] avail memory = 3953 MB
+[    1.000000] rnd: seeded with 128 bits
+[    1.000000] timecounter: Timecounters tick every 10.000 msec
+[    1.000000] Kernelized RAIDframe activated
+[    1.000000] running cgd selftest aes-xts-256 aes-xts-512 done
+[    1.000000] timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+[    1.000003] Unknow Unknow (Unknow)
+[    1.000003] mainbus0 (root)
+[    1.000003] ACPI: RSDP 0x00000000000F7BA0 000024 (v02 RS690 )
+[    1.000003] ACPI: XSDT 0x00000000CFFE3080 00004C (v01 RS690  AWRDACPI 42302E31 AWRD 00000000)
+[    1.000003] ACPI: FACP 0x00000000CFFE8180 0000F4 (v03 RS690  AWRDACPI 42302E31 AWRD 00000000)
+[    1.000003] Firmware Warning (ACPI): 32/64X length mismatch in FADT/Pm1aEventBlock: 32/8 (20180427/tbfadt-642)
+[    1.000003] Firmware Warning (ACPI): 32/64X length mismatch in FADT/Pm1aControlBlock: 16/8 (20180427/tbfadt-642)
+[    1.000003] Firmware Warning (ACPI): 32/64X length mismatch in FADT/PmTimerBlock: 32/8 (20180427/tbfadt-642)
+[    1.000003] Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 64/8 (20180427/tbfadt-642)
+[    1.000003] Firmware Warning (ACPI): Invalid length for FADT/Pm1aEventBlock: 8, using default 32 (20180427/tbfadt-745)
+[    1.000003] Firmware Warning (ACPI): Invalid length for FADT/Pm1aControlBlock: 8, using default 16 (20180427/tbfadt-745)
+[    1.000003] Firmware Warning (ACPI): Invalid length for FADT/PmTimerBlock: 8, using default 32 (20180427/tbfadt-745)
+[    1.000003] ACPI: DSDT 0x00000000CFFE3200 004F49 (v01 RS690  AWRDACPI 00001000 MSFT 03000000)
+[    1.000003] ACPI: FACS 0x00000000CFFE0000 000040
+[    1.000003] ACPI: SSDT 0x00000000CFFE8300 000140 (v01 PTLTD  POWERNOW 00000001  LTP 00000001)
+[    1.000003] ACPI: HPET 0x00000000CFFE8440 000038 (v01 RS690  AWRDACPI 42302E31 AWRD 00000098)
+[    1.000003] ACPI: MCFG 0x00000000CFFE8480 00003C (v01 RS690  AWRDACPI 42302E31 AWRD 00000000)
+[    1.000003] ACPI: APIC 0x00000000CFFE8280 000068 (v01 RS690  AWRDACPI 42302E31 AWRD 00000000)
+[    1.000003] ACPI: 2 ACPI AML tables successfully acquired and loaded
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKC (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKD (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKA (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKB (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKD (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKA (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKB (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKC (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKA (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKB (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKC (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKD (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKB (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKC (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKD (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKA (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKC (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKD (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKA (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKB (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKD (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKA (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKB (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKC (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKA (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKB (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKC (20180427/dspkginit-473)
+[    1.000003] ACPI Error: AE_NOT_FOUND, While resolving a named reference package element - LNKD (20180427/dspkginit-473)
+[    1.000003] ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x21, 24 pins
+[    1.000003] cpu0 at mainbus0 apid 0
+[    1.000003] cpu0: AMD Processor, id 0x60fb2
+[    1.000003] cpu0: package 0, core 0, smt 0
+[    1.000003] cpu1 at mainbus0 apid 1
+[    1.000003] cpu1: AMD Processor, id 0x60fb2
+[    1.000003] cpu1: package 0, core 1, smt 0
+[    1.000003] acpi0 at mainbus0: Intel ACPICA 20180427
+[    1.000003] acpi0: X/RSDT: OemId <RS690 ,AWRDACPI,42302e31>, AslId <AWRD,00000000>
+[    1.000003] acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
+[    1.000003] acpi0: SCI interrupting at int 9
+[    1.000003] acpi0: fixed power button present
+[    1.000003] timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+[    1.000730] hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+[    1.000730] timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+[    1.000982] acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
+[    1.000982] PMIO (PNP0C02) at acpi0 not configured
+[    1.000982] attimer1 at acpi0 (TMR, PNP0100): io 0x40-0x43
+[    1.000982] pcppi1 at acpi0 (SPKR, PNP0800): io 0x61
+[    1.000982] spkr0 at pcppi1: PC Speaker
+[    1.000982] wsbell at spkr0 not configured
+[    1.000982] midi0 at pcppi1: PC speaker
+[    1.000982] sysbeep0 at pcppi1
+[    1.000982] SYSR (PNP0C02) at acpi0 not configured
+[    1.000982] UAR1 (PNP0501) at acpi0 not configured
+[    1.000982] UAR2 (PNP0501) at acpi0 not configured
+[    1.000982] pckbc1 at acpi0 (PS2M, PNP0F13) (aux port): irq 12
+[    1.000982] pckbc2 at acpi0 (PS2K, PNP0303) (kbd port): io 0x60,0x64 irq 1
+[    1.000982] MEM (PNP0C01) at acpi0 not configured
+[    1.000982] acpifan0 at acpi0 (FAN, PNP0C0B): ACPI Fan
+[    1.000982] acpitz0 at acpi0 (THRM): cpu0
+[    1.000982] acpitz0: active cooling level 0: 50.0C
+[    1.000982] acpitz0: levels: critical 60.0 C, passive 50.0 C
+[    1.000982] ACPI: Enabled 1 GPEs in block 00 to 1F
+[    1.000982] attimer1: attached to pcppi1
+[    1.000982] pckbd0 at pckbc2 (kbd slot)
+[    1.000982] pckbc2: using irq 1 for kbd slot
+[    1.000982] wskbd0 at pckbd0: console keyboard
+[    1.000982] pms0 at pckbc2 (aux slot)
+[    1.000982] pms0: Failed to initialize an ALPS device.
+[    1.000982] pckbc2: using irq 12 for aux slot
+[    1.000982] wsmouse0 at pms0 mux 0
+[    1.000982] pci0 at mainbus0 bus 0: configuration mode 1
+[    1.000982] pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+[    1.000982] pchb0 at pci0 dev 0 function 0: vendor 1002 product 7910 (rev. 0x00)
+[    1.000982] ppb0 at pci0 dev 2 function 0: vendor 1002 product 7913 (rev. 0x00)
+[    1.000982] ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x16 @ 2.5GT/s
+[    1.000982] ppb0: link is x8 @ 2.5GT/s
+[    1.000982] pci1 at ppb0 bus 1
+[    1.000982] pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+[    1.000982] radeon0 at pci1 dev 0 function 0: vendor 1002 product 94cb (rev. 0x00)
+[    1.000982] ppb1 at pci0 dev 6 function 0: vendor 1002 product 7916 (rev. 0x00)
+[    1.000982] ppb1: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+[    1.000982] pci2 at ppb1 bus 2
+[    1.000982] pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+[    1.000982] re0 at pci2 dev 0 function 0: RealTek 8168/8111 PCIe Gigabit Ethernet (rev. 0x02)
+[    1.000982] re0: interrupting at ioapic0 pin 18
+[    1.000982] re0: Ethernet address 00:03:2d:17:30:b6
+[    1.000982] re0: using 256 tx descriptors
+[    1.000982] rgephy0 at re0 phy 7: RTL8169S/8110S/8211 1000BASE-T media interface, rev. 2
+[    1.000982] rgephy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+[    1.000982] ixpide0 at pci0 dev 18 function 0: ATI Technologies IXP IDE Controller (rev. 0x00)
+[    1.000982] ixpide0: bus-master DMA support present
+[    1.000982] ixpide0: primary channel configured to compatibility mode
+[    1.000982] ixpide0: primary channel interrupting at ioapic0 pin 14
+[    1.000982] atabus0 at ixpide0 channel 0
+[    1.000982] ixpide0: secondary channel configured to compatibility mode
+[    1.000982] ixpide0: secondary channel interrupting at ioapic0 pin 15
+[    1.000982] atabus1 at ixpide0 channel 1
+[    1.000982] ohci0 at pci0 dev 19 function 0: vendor 1002 product 4387 (rev. 0x00)
+[    1.000982] ohci0: interrupting at ioapic0 pin 16
+[    1.000982] ohci0: OHCI version 1.0, legacy support
+[    1.000982] usb0 at ohci0: USB revision 1.0
+[    1.000982] ohci1 at pci0 dev 19 function 1: vendor 1002 product 4388 (rev. 0x00)
+[    1.000982] ohci1: interrupting at ioapic0 pin 17
+[    1.000982] ohci1: OHCI version 1.0, legacy support
+[    1.000982] usb1 at ohci1: USB revision 1.0
+[    1.000982] ohci2 at pci0 dev 19 function 2: vendor 1002 product 4389 (rev. 0x00)
+[    1.000982] ohci2: interrupting at ioapic0 pin 18
+[    1.000982] ohci2: OHCI version 1.0, legacy support
+[    1.000982] usb2 at ohci2: USB revision 1.0
+[    1.000982] ohci3 at pci0 dev 19 function 3: vendor 1002 product 438a (rev. 0x00)
+[    1.000982] ohci3: interrupting at ioapic0 pin 17
+[    1.000982] ohci3: OHCI version 1.0, legacy support
+[    1.000982] usb3 at ohci3: USB revision 1.0
+[    1.000982] ohci4 at pci0 dev 19 function 4: vendor 1002 product 438b (rev. 0x00)
+[    1.000982] ohci4: interrupting at ioapic0 pin 18
+[    1.000982] ohci4: OHCI version 1.0, legacy support
+[    1.000982] usb4 at ohci4: USB revision 1.0
+[    1.000982] ehci0 at pci0 dev 19 function 5: vendor 1002 product 4386 (rev. 0x00)
+[    1.000982] ehci0: applying AMD SB600/SB700 USB freeze workaround
+[    1.000982] ehci0: interrupting at ioapic0 pin 19
+[    1.000982] ehci0: dropped intr workaround enabled
+[    1.000982] ehci0: EHCI version 1.0
+[    1.000982] ehci0: 5 companion controllers, 2 ports each: ohci0 ohci1 ohci2 ohci3 ohci4
+[    1.000982] usb5 at ehci0: USB revision 2.0
+[    1.000982] piixpm0 at pci0 dev 20 function 0: vendor 1002 product 4385 (rev. 0x14)
+[    1.000982] piixpm0: interrupting at SMI, polling
+[    1.000982] iic0 at piixpm0: I2C bus
+[    1.000982] ixpide1 at pci0 dev 20 function 1: ATI Technologies IXP IDE Controller (rev. 0x00)
+[    1.000982] ixpide1: bus-master DMA support present
+[    1.000982] ixpide1: primary channel configured to native-PCI mode
+[    1.000982] ixpide1: using ioapic0 pin 16 for native-PCI interrupt
+[    1.000982] atabus2 at ixpide1 channel 0
+[    1.000982] ixpide1: secondary channel configured to native-PCI mode
+[    1.000982] atabus3 at ixpide1 channel 1
+[    1.000982] hdaudio0 at pci0 dev 20 function 2: HD Audio Controller
+[    1.000982] hdaudio0: interrupting at ioapic0 pin 16
+[    1.000982] hdafg0 at hdaudio0: vendor 10ec product 0662
+[    1.000982] hdafg0: DAC00 2ch: Speaker [Jack], HP Out [Jack]
+[    1.000982] hdafg0: ADC01 2ch: Line In [Jack], Mic In [Jack]
+[    1.000982] hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz PCM16 PCM20 PCM24 AC3
+[    1.000982] audio0 at hdafg0: full duplex, playback, capture, mmap, independent
+[    1.000982] hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+[    1.000982] hdafg0: Latency: 128 milliseconds
+[    1.000982] spkr1 at audio0: PC Speaker (synthesized)
+[    1.000982] wsbell at spkr1 not configured
+[    1.000982] pcib0 at pci0 dev 20 function 3: vendor 1002 product 438d (rev. 0x00)
+[    1.000982] ppb2 at pci0 dev 20 function 4: vendor 1002 product 4384 (rev. 0x00)
+[    1.000982] pci3 at ppb2 bus 3
+[    1.000982] pci3: i/o space, memory space enabled
+[    1.000982] pchb1 at pci0 dev 24 function 0: vendor 1022 product 1100 (rev. 0x00)
+[    1.000982] pchb2 at pci0 dev 24 function 1: vendor 1022 product 1101 (rev. 0x00)
+[    1.000982] pchb3 at pci0 dev 24 function 2: vendor 1022 product 1102 (rev. 0x00)
+[    1.000982] amdnb_misc0 at pci0 dev 24 function 3: AMD NB Misc Configuration
+[    1.000982] amdtemp0 at amdnb_misc0: AMD CPU Temperature Sensors (K8: core rev BH-G2, socket AM2)
+[    1.000982] isa0 at pcib0
+[    1.000982] com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, working fifo
+[    1.000982] com1 at isa0 port 0x2f8-0x2ff irq 3: ns16550a, working fifo
+[    1.000982] acpicpu0 at cpu0: ACPI CPU
+[    1.000982] acpicpu0: C1: HLT, lat   0 us, pow     0 mW
+[    1.000982] acpicpu0: P0: FFH, lat 100 us, pow 100000 mW, 1500 MHz
+[    1.000982] acpicpu1 at cpu1: ACPI CPU
+[    1.000982] timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+[    2.020314] IPsec: Initialized Security Association Processing.
+[    2.030320] uhub0 at usb1: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[    2.030320] uhub0: 2 ports with 2 removable, self powered
+[    2.030320] uhub1 at usb3: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[    2.030320] uhub1: 2 ports with 2 removable, self powered
+[    2.030320] uhub2 at usb5: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+[    2.030320] uhub2: 10 ports with 10 removable, self powered
+[    2.030320] uhub3 at usb0: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[    2.030320] uhub3: 2 ports with 2 removable, self powered
+[    2.030320] uhub4 at usb2: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[    2.030320] uhub4: 2 ports with 2 removable, self powered
+[    2.030320] uhub5 at usb4: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[    2.030320] uhub5: 2 ports with 2 removable, self powered
+[    3.330965] ehci0: handing over full speed device on port 1 to ohci0
+[    5.101843] wd0 at atabus0 drive 0
+[    5.101843] wd0: <WDC WD3200BEKT-08PVMT1>
+[    5.101843] wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+[    5.101843] wd0: 298 GB, 620181 cyl, 16 head, 63 sec, 512 bytes/sect x 625142448 sectors
+[    5.191888] wd0: 32-bit data port
+[    5.191888] wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags) w/PRIO
+[    5.191888] wd0(ixpide0:0:0): using PIO mode 4, Ultra-DMA mode 6 (Ultra/133) (using DMA), WRITE DMA FUA EXT
+[    5.261922] boot device: wd0
+[    5.261922] root on wd0a dumps on wd0b
+[    5.281932] uhidev0 at uhub3 port 1 configuration 1 interface 0
+[    5.291938] uhidev0: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
+[    5.291938] ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+[    5.301943] root file system type: ffs
+[    5.301943] kern.module.path=/stand/amd64/8.99.19/modules
+[    5.301943] drm: initializing kernel modesetting (RV610 0x1002:0x94CB 0x1002:0x94CB).
+[    5.301943] drm: register mmio base: 0xfddf0000
+[    5.301943] drm: register mmio size: 65536
+[    5.311952] drm kern info: ATOM BIOS: BR35739
+[    5.311952] radeon0: info: VRAM: 128M 0x0000000000000000 - 0x0000000007FFFFFF (128M used)
+[    5.311952] radeon0: info: GTT: 512M 0x0000000008000000 - 0x0000000027FFFFFF
+[    5.311952] drm: Detected VRAM RAM=80M, BAR=256M
+[    5.311952] drm: RAM width 64bits DDR
+[    5.311952] Zone  kernel: Available graphics memory: 1171558 kiB
+[    5.311952] drm: radeon: 128M of VRAM memory ready
+[    5.311952] drm: radeon: 512M of GTT memory ready.
+[    5.311952] drm: Loading RV610 Microcode
+[    5.361972] drm: GART: num cpu pages 131072, num gpu pages 131072
+[    5.381983] drm: PCIE GART of 512M enabled (table at 0x0000000000040000).
+[    5.381983] radeon0: info: WB enabled
+[    5.381983] radeon0: info: fence driver on ring 0 use gpu addr 0x0000000008000c00 and cpu addr 0x0xffff8000684bec00
+[    5.381983] drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    5.381983] drm: Driver supports precise vblank timestamp query.
+[    5.381983] radeon0: interrupting at ioapic0 pin 18 (radeon)
+[    5.381983] drm: radeon: irq initialized.
+[    5.422002] drm: ring test on 0 succeeded in 1 usecs
+[    5.422002] drm: ib test on ring 0 succeeded in 0 usecs
+[    5.422002] drm: Radeon Display Connectors
+[    5.422002] drm: Connector 0:
+[    5.422002] drm:   DVI-I-1
+[    5.422002] drm:   HPD1
+[    5.422002] drm:   DDC: 0x7e40 0x7e40 0x7e44 0x7e44 0x7e48 0x7e48 0x7e4c 0x7e4c
+[    5.422002] drm:   Encoders:
+[    5.422002] drm:     CRT1: INTERNAL_KLDSCP_DAC1
+[    5.422002] drm:     DFP1: INTERNAL_KLDSCP_TMDS1
+[    5.422002] drm: Connector 1:
+[    5.422002] drm:   DVI-I-2
+[    5.422002] drm:   HPD3
+[    5.422002] drm:   DDC: 0x7e50 0x7e50 0x7e54 0x7e54 0x7e58 0x7e58 0x7e5c 0x7e5c
+[    5.422002] drm:   Encoders:
+[    5.422002] drm:     CRT2: INTERNAL_KLDSCP_DAC2
+[    5.422002] drm:     DFP2: INTERNAL_LVTM1
+[    5.422002] drm: Connector 2:
+[    5.422002] drm:   DIN-1
+[    5.422002] drm:   Encoders:
+[    5.422002] drm:     TV1: INTERNAL_KLDSCP_DAC2
+[    5.452017] radeondrmkmsfb0 at radeon0
+[    5.452017] radeon0: info: registered panic notifier
+[    5.452017] radeondrmkmsfb0: framebuffer at 0xffff8000687e0000, size 1280x1024, depth 32, stride 5120
+[    5.522051] wsdisplay0 at radeondrmkmsfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+[    5.522051] wsmux1: connecting to wsdisplay0
+[    5.702141] wskbd1 at ukbd0 mux 1
+[    5.702141] wskbd1: connecting to wsdisplay0
+[    5.702141] uhidev1 at uhub3 port 1 configuration 1 interface 1
+[    5.702141] uhidev1: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
+[    5.702141] uhidev1: 17 report ids
+[    5.702141] ums0 at uhidev1 reportid 2: 16 buttons, W and Z dirs
+[    5.702141] wsmouse1 at ums0 mux 0
+[    5.702141] uhid0 at uhidev1 reportid 3: input=4, output=0, feature=0
+[    5.702141] uhid1 at uhidev1 reportid 4: input=1, output=0, feature=0
+[    5.702141] uhid2 at uhidev1 reportid 16: input=6, output=6, feature=0
+[    5.702141] uhid3 at uhidev1 reportid 17: input=19, output=19, feature=0
+[   16.687592] wsdisplay0: screen 1 added (default, vt100 emulation)
+[   16.687592] wsdisplay0: screen 2 added (default, vt100 emulation)
+[   16.687592] wsdisplay0: screen 3 added (default, vt100 emulation)
+[   16.687592] wsdisplay0: screen 4 added (default, vt100 emulation)
