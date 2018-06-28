@@ -4,7 +4,7 @@
 [    1.000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
 [    1.000000] The Regents of the University of California.  All rights reserved.
 
-[    1.000000] NetBSD 8.99.19 (GENERIC) #0: Mon Jun 18 17:07:07 UTC 2018
+[    1.000000] NetBSD 8.99.21 (GENERIC) #0: Wed Jun 27 16:44:38 UTC 2018
 [    1.000000] 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC
 [    1.000000] total memory = 2035 MB
 [    1.000000] avail memory = 1982 MB
@@ -50,192 +50,193 @@
 [    1.000003] acpi0: SCI interrupting at int 9
 [    1.000003] acpi0: fixed power button present
 [    1.000003] timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
-[    1.023781] hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
-[    1.023781] timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
-[    1.024128] acpiec0 at acpi0 (EC0, PNP0C09): io 0x62,0x66
-[    1.024128] acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
-[    1.024128] acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
-[    1.024128] acpibut1 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
-[    1.024128] acpibat0 at acpi0 (BAT1, PNP0C0A-0): ACPI Battery
-[    1.024128] acpiacad0 at acpi0 (ACAD, ACPI0003): ACPI AC Adapter
-[    1.024128] SYSR (PNP0C02) at acpi0 not configured
-[    1.024128] FPU (PNP0C04) at acpi0 not configured
-[    1.024128] attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53
-[    1.024128] FWHD (INT0800) at acpi0 not configured
-[    1.024128] pckbc1 at acpi0 (KBC, PNP0303) (kbd port): io 0x60,0x64 irq 1
-[    1.024128] pckbc2 at acpi0 (MOUE, SYN1B20) (aux port): irq 12
-[    1.024128] acpivga0 at acpi0 (OVGA): ACPI Display Adapter
-[    1.024128] acpiout0 at acpivga0 (CRT1, 0x0100): ACPI Display Output Device
-[    1.024128] acpiout1 at acpivga0 (DTV1, 0x0200): ACPI Display Output Device
-[    1.024128] acpiout2 at acpivga0 (DFP1, 0x0300): ACPI Display Output Device
-[    1.024128] acpiout3 at acpivga0 (LCD, 0x0400): ACPI Display Output Device
-[    1.024128] acpiout3: brightness levels: [10,20,30,40,50,60,70,80,90,100]
-[    1.024128] acpiout4 at acpivga0 (DTV2, 0x0500): ACPI Display Output Device
-[    1.024128] acpiout5 at acpivga0 (DFP2, 0x0600): ACPI Display Output Device
-[    1.024128] acpivga0: connected output devices:
-[    1.024128] acpivga0:   0x0100 (acpiout0): Ext. Monitor, head 0, bios detect
-[    1.024128] acpivga0:   0x0200 (acpiout1): TV, head 0, bios detect
-[    1.024128] acpivga0:   0x0300 (acpiout2): Unknown Output Device, head 0, bios detect
-[    1.024128] acpivga0:   0x0400 (acpiout3): Unknown Output Device, head 0, bios detect
-[    1.024128] acpivga0:   0x0500 (acpiout4): Unknown Output Device, head 0, bios detect
-[    1.024128] acpivga0:   0x0600 (acpiout5): Unknown Output Device, head 0, bios detect
-[    1.024128] acpiwmi0 at acpi0 (WMID, PNP0C14-0): ACPI WMI Interface
-[    1.024128] acpiwmibus at acpiwmi0 not configured
-[    1.024128] acpitz0 at acpi0 (THRM)
-[    1.024128] acpitz0: levels: critical 95.0 C, passive cooling
-[    1.024128] apm0 at acpi0: Power Management spec V1.2
-[    1.024128] ACPI: Enabled 1 GPEs in block 00 to 1F
-[    1.024128] pckbd0 at pckbc1 (kbd slot)
-[    1.024128] pckbc1: using irq 1 for kbd slot
-[    1.024128] wskbd0 at pckbd0: console keyboard
-[    1.024128] pms0 at pckbc1 (aux slot)
-[    1.024128] pms0: Synaptics touchpad version 7.2
-[    1.024128] pms0: Extended W mode, Palm detect, Multi-finger Report
-[    1.024128] pckbc1: using irq 12 for aux slot
-[    1.024128] wsmouse0 at pms0 mux 0
-[    1.024128] pci0 at mainbus0 bus 0: configuration mode 1
-[    1.024128] pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
-[    1.024128] pchb0 at pci0 dev 0 function 0: vendor 8086 product 27ac (rev. 0x03)
-[    1.024128] agp0 at pchb0: i915-family chipset
-[    1.024128] agp0: detected 7932k stolen memory
-[    1.024128] agp0: aperture at 0x80000000, size 0x10000000
-[    1.024128] i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 27ae (rev. 0x03)
-[    1.024128] drm: Memory usable by graphics device = 256M
-[    1.024128] drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
-[    1.024128] drm: Driver supports precise vblank timestamp query.
-[    1.024128] i915drmkms0: interrupting at ioapic0 pin 16 (i915)
-[    1.024128] drm: initialized overlay support
-[    1.024128] intelfb0 at i915drmkms0
-[    1.024128] i915drmkms0: info: registered panic notifier
-[    1.024128] intelfb0: framebuffer at 0xdb31d000, size 1024x600, depth 32, stride 4096
-[    1.024128] wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
-[    1.024128] wsmux1: connecting to wsdisplay0
-[    1.024128] vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
-[    1.024128] hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
-[    1.024128] hdaudio0: interrupting at msi0 vec 0
-[    1.024128] hdafg0 at hdaudio0: vendor 10ec product 0272
-[    1.024128] hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
-[    1.024128] hdafg0: ADC01 2ch: Mic In [Jack]
-[    1.024128] hdafg0: ADC02 2ch: Mic In [Built-In]
-[    1.024128] hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
-[    1.024128] audio0 at hdafg0: full duplex, playback, capture, mmap, independent
-[    1.024128] hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-[    1.024128] hdafg0: Latency: 128 milliseconds
-[    1.024128] ppb0 at pci0 dev 28 function 0: vendor 8086 product 27d0 (rev. 0x02)
-[    1.024128] ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
-[    1.024128] pci1 at ppb0 bus 1
-[    1.024128] pci1: i/o space, memory space enabled
-[    1.024128] ale0 at pci1 dev 0 function 0: Attansic/Atheros L1E Ethernet
-[    1.024128] ale0: AR8113 (L2E RevA), ioapic0 pin 16
-[    1.024128] ale0: Ethernet address 00:26:9e:2c:86:5c
-[    1.024128] atphy0 at ale0 phy 0: L1 10/100/1000 PHY, rev. 9
-[    1.024128] atphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-[    1.024128] ppb1 at pci0 dev 28 function 2: vendor 8086 product 27d4 (rev. 0x02)
-[    1.024128] ppb1: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
-[    1.024128] pci2 at ppb1 bus 2
-[    1.024128] pci2: i/o space, memory space enabled
-[    1.024128] iwn0 at pci2 dev 0 function 0: vendor 8086 product 4232 (rev. 0x00)
-[    1.024128] iwn0: interrupting at msi1 vec 0
-[    1.024128] iwn0: MIMO 1T2R, MoW, address 00:22:fb:3a:b2:fa
-[    1.024128] iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-[    1.024128] iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-[    1.024128] iwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-[    1.024128] ppb2 at pci0 dev 28 function 3: vendor 8086 product 27d6 (rev. 0x02)
-[    1.024128] ppb2: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
-[    1.024128] pci3 at ppb2 bus 3
-[    1.024128] pci3: i/o space, memory space enabled
-[    1.024128] uhci0 at pci0 dev 29 function 0: vendor 8086 product 27c8 (rev. 0x02)
-[    1.024128] uhci0: interrupting at ioapic0 pin 16
-[    1.024128] usb0 at uhci0: USB revision 1.0
-[    1.024128] uhci1 at pci0 dev 29 function 1: vendor 8086 product 27c9 (rev. 0x02)
-[    1.024128] uhci1: interrupting at ioapic0 pin 17
-[    1.024128] usb1 at uhci1: USB revision 1.0
-[    1.024128] uhci2 at pci0 dev 29 function 2: vendor 8086 product 27ca (rev. 0x02)
-[    1.024128] uhci2: interrupting at ioapic0 pin 18
-[    1.024128] usb2 at uhci2: USB revision 1.0
-[    1.024128] uhci3 at pci0 dev 29 function 3: vendor 8086 product 27cb (rev. 0x02)
-[    1.024128] uhci3: interrupting at ioapic0 pin 19
-[    1.024128] usb3 at uhci3: USB revision 1.0
-[    1.024128] ehci0 at pci0 dev 29 function 7: vendor 8086 product 27cc (rev. 0x02)
-[    1.024128] ehci0: interrupting at ioapic0 pin 16
-[    1.024128] ehci0: EHCI version 1.0
-[    1.024128] ehci0: 4 companion controllers, 2 ports each: uhci0 uhci1 uhci2 uhci3
-[    1.024128] usb4 at ehci0: USB revision 2.0
-[    1.024128] ppb3 at pci0 dev 30 function 0: vendor 8086 product 2448 (rev. 0xe2)
-[    1.024128] pci4 at ppb3 bus 4
-[    1.024128] pci4: i/o space, memory space enabled
-[    1.024128] ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 27b9 (rev. 0x02)
-[    1.024128] timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
-[    1.024128] ichlpcib0: 24-bit timer
-[    1.024128] tco0 at ichlpcib0: TCO (watchdog) timer configured.
-[    1.024128] tco0: Min/Max interval 1/367 seconds
-[    1.024128] piixide0 at pci0 dev 31 function 1: Intel 82801GB/GR IDE Controller (ICH7) (rev. 0x02)
-[    1.024128] piixide0: bus-master DMA support present
-[    1.024128] piixide0: primary channel configured to compatibility mode
-[    1.024128] piixide0: primary channel ignored (disabled)
-[    1.024128] piixide0: secondary channel configured to compatibility mode
-[    1.024128] piixide0: secondary channel ignored (disabled)
-[    1.024128] ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 27c5 (rev. 0x02)
-[    1.024128] ahcisata0: interrupting at ioapic0 pin 17
-[    1.024128] ahcisata0: AHCI revision 1.10, 4 ports, 32 slots, CAP 0xdf10ff03<PSC,SSC,PMD,ISS=0x1=Gen1,SCLO,SAL,SALP,SSS,SMPS,SNCQ,S64A>
-[    1.024128] atabus0 at ahcisata0 channel 0
-[    1.024128] atabus1 at ahcisata0 channel 2
-[    1.024128] ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 27da (rev. 0x02)
-[    1.024128] ichsmb0: interrupting at ioapic0 pin 17
-[    1.024128] iic0 at ichsmb0: I2C bus
-[    1.024128] isa0 at ichlpcib0
-[    1.024128] pcppi0 at isa0 port 0x61
-[    1.024128] midi0 at pcppi0: PC speaker
-[    1.024128] sysbeep0 at pcppi0
-[    1.024128] attimer1: attached to pcppi0
-[    1.024128] acpicpu0 at cpu0: ACPI CPU
-[    1.024128] acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
-[    1.024128] acpicpu0: C2: I/O, lat   1 us, pow   500 mW
-[    1.024128] acpicpu0: C3: I/O, lat  57 us, pow   100 mW
-[    1.024128] acpicpu0: P0: FFH, lat  10 us, pow  2000 mW, 1600 MHz
-[    1.024128] acpicpu0: P1: FFH, lat  10 us, pow  1533 mW, 1333 MHz
-[    1.024128] acpicpu0: P2: FFH, lat  10 us, pow  1066 mW, 1066 MHz
-[    1.024128] acpicpu0: P3: FFH, lat  10 us, pow   600 mW,  800 MHz
-[    1.024128] acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
-[    1.024128] acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
-[    1.024128] acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
-[    1.024128] acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
-[    1.024128] acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
-[    1.024128] acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
-[    1.024128] acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
-[    1.024128] acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
-[    1.024128] coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
-[    1.024128] acpicpu1 at cpu1: ACPI CPU
-[    1.024128] DRM error in i915_irq_handler: pipe A underrun
-[    1.024128] timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-[    1.928125] acpiacad0: AC adapter online.
-[    1.938219] IPsec: Initialized Security Association Processing.
-[    1.948318] uhub0 at usb0: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-[    1.948318] uhub0: 2 ports with 2 removable, self powered
-[    1.948318] uhub1 at usb1: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-[    1.948318] uhub1: 2 ports with 2 removable, self powered
-[    1.948318] uhub2 at usb2: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-[    1.948318] uhub2: 2 ports with 2 removable, self powered
-[    1.948318] uhub3 at usb3: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-[    1.948318] uhub3: 2 ports with 2 removable, self powered
-[    1.948318] uhub4 at usb4: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-[    1.948318] uhub4: 8 ports with 8 removable, self powered
-[    2.028467] ahcisata0 port 0: device present, speed: 1.5Gb/s
-[    2.428776] acpibat0: SONY LION rechargeable battery
-[    2.428776] acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
-[    3.559649] wd0 at atabus0 drive 0
-[    3.559649] wd0: <HGST HTS721010A9E630>
-[    3.559649] wd0: drive supports 16-sector PIO transfers, LBA48 addressing
-[    3.559649] wd0: 931 GB, 1938021 cyl, 16 head, 63 sec, 512 bytes/sect x 1953525168 sectors
-[    3.629703] wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags) w/PRIO
-[    3.629703] wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags) w/PRIO
-[    4.230166] uvideo0 at uhub4 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
-[    4.230166] video0 at uvideo0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
-[    4.280205] boot device: wd0
-[    4.280205] root on wd0a dumps on wd0b
-[    4.310231] root file system type: ffs
-[    4.310231] kern.module.path=/stand/i386/8.99.19/modules
-[    6.301765] wsdisplay0: screen 1 added (default, vt100 emulation)
-[    6.301765] wsdisplay0: screen 2 added (default, vt100 emulation)
-[    6.301765] wsdisplay0: screen 3 added (default, vt100 emulation)
-[    6.311776] wsdisplay0: screen 4 added (default, vt100 emulation)
+[    1.021593] hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+[    1.021593] timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+[    1.021938] acpiec0 at acpi0 (EC0, PNP0C09): io 0x62,0x66
+[    1.021938] acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
+[    1.021938] acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
+[    1.021938] acpibut1 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
+[    1.021938] acpibat0 at acpi0 (BAT1, PNP0C0A-0): ACPI Battery
+[    1.021938] acpiacad0 at acpi0 (ACAD, ACPI0003): ACPI AC Adapter
+[    1.021938] SYSR (PNP0C02) at acpi0 not configured
+[    1.021938] FPU (PNP0C04) at acpi0 not configured
+[    1.021938] attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53
+[    1.021938] FWHD (INT0800) at acpi0 not configured
+[    1.021938] pckbc1 at acpi0 (KBC, PNP0303) (kbd port): io 0x60,0x64 irq 1
+[    1.021938] pckbc2 at acpi0 (MOUE, SYN1B20) (aux port): irq 12
+[    1.021938] acpivga0 at acpi0 (OVGA): ACPI Display Adapter
+[    1.021938] acpiout0 at acpivga0 (CRT1, 0x0100): ACPI Display Output Device
+[    1.021938] acpiout1 at acpivga0 (DTV1, 0x0200): ACPI Display Output Device
+[    1.021938] acpiout2 at acpivga0 (DFP1, 0x0300): ACPI Display Output Device
+[    1.021938] acpiout3 at acpivga0 (LCD, 0x0400): ACPI Display Output Device
+[    1.021938] acpiout3: brightness levels: [10,20,30,40,50,60,70,80,90,100]
+[    1.021938] acpiout4 at acpivga0 (DTV2, 0x0500): ACPI Display Output Device
+[    1.021938] acpiout5 at acpivga0 (DFP2, 0x0600): ACPI Display Output Device
+[    1.021938] acpivga0: connected output devices:
+[    1.021938] acpivga0:   0x0100 (acpiout0): Ext. Monitor, head 0, bios detect
+[    1.021938] acpivga0:   0x0200 (acpiout1): TV, head 0, bios detect
+[    1.021938] acpivga0:   0x0300 (acpiout2): Unknown Output Device, head 0, bios detect
+[    1.021938] acpivga0:   0x0400 (acpiout3): Unknown Output Device, head 0, bios detect
+[    1.021938] acpivga0:   0x0500 (acpiout4): Unknown Output Device, head 0, bios detect
+[    1.021938] acpivga0:   0x0600 (acpiout5): Unknown Output Device, head 0, bios detect
+[    1.021938] acpiwmi0 at acpi0 (WMID, PNP0C14-0): ACPI WMI Interface
+[    1.021938] acpiwmibus at acpiwmi0 not configured
+[    1.021938] acpitz0 at acpi0 (THRM)
+[    1.021938] acpitz0: levels: critical 95.0 C, passive cooling
+[    1.021938] apm0 at acpi0: Power Management spec V1.2
+[    1.021938] ACPI: Enabled 1 GPEs in block 00 to 1F
+[    1.021938] pckbd0 at pckbc1 (kbd slot)
+[    1.021938] pckbc1: using irq 1 for kbd slot
+[    1.021938] wskbd0 at pckbd0: console keyboard
+[    1.021938] pms0 at pckbc1 (aux slot)
+[    1.021938] pms0: Synaptics touchpad version 7.2
+[    1.021938] pms0: Extended W mode, Palm detect, Multi-finger Report
+[    1.021938] pckbc1: using irq 12 for aux slot
+[    1.021938] wsmouse0 at pms0 mux 0
+[    1.021938] pci0 at mainbus0 bus 0: configuration mode 1
+[    1.021938] pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+[    1.021938] pchb0 at pci0 dev 0 function 0: vendor 8086 product 27ac (rev. 0x03)
+[    1.021938] agp0 at pchb0: i915-family chipset
+[    1.021938] agp0: detected 7932k stolen memory
+[    1.021938] agp0: aperture at 0x80000000, size 0x10000000
+[    1.021938] i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 27ae (rev. 0x03)
+[    1.021938] drm: Memory usable by graphics device = 256M
+[    1.021938] drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    1.021938] drm: Driver supports precise vblank timestamp query.
+[    1.021938] i915drmkms0: interrupting at ioapic0 pin 16 (i915)
+[    1.021938] drm: initialized overlay support
+[    1.021938] intelfb0 at i915drmkms0
+[    1.021938] i915drmkms0: info: registered panic notifier
+[    1.021938] intelfb0: framebuffer at 0xdb31d000, size 1024x600, depth 32, stride 4096
+[    1.021938] wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+[    1.021938] wsmux1: connecting to wsdisplay0
+[    1.021938] vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
+[    1.021938] hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
+[    1.021938] hdaudio0: interrupting at msi0 vec 0
+[    1.021938] hdafg0 at hdaudio0: vendor 10ec product 0272
+[    1.021938] hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
+[    1.021938] hdafg0: ADC01 2ch: Mic In [Jack]
+[    1.021938] hdafg0: ADC02 2ch: Mic In [Built-In]
+[    1.021938] hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+[    1.021938] audio0 at hdafg0: full duplex, playback, capture, mmap, independent
+[    1.021938] hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+[    1.021938] hdafg0: Latency: 128 milliseconds
+[    1.021938] ppb0 at pci0 dev 28 function 0: vendor 8086 product 27d0 (rev. 0x02)
+[    1.021938] ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+[    1.021938] pci1 at ppb0 bus 1
+[    1.021938] pci1: i/o space, memory space enabled
+[    1.021938] ale0 at pci1 dev 0 function 0: Attansic/Atheros L1E Ethernet
+[    1.021938] ale0: AR8113 (L2E RevA), ioapic0 pin 16
+[    1.021938] ale0: Ethernet address 00:26:9e:2c:86:5c
+[    1.021938] atphy0 at ale0 phy 0: L1 10/100/1000 PHY, rev. 9
+[    1.021938] atphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+[    1.021938] ppb1 at pci0 dev 28 function 2: vendor 8086 product 27d4 (rev. 0x02)
+[    1.021938] ppb1: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+[    1.021938] pci2 at ppb1 bus 2
+[    1.021938] pci2: i/o space, memory space enabled
+[    1.021938] iwn0 at pci2 dev 0 function 0: vendor 8086 product 4232 (rev. 0x00)
+[    1.021938] iwn0: interrupting at msi1 vec 0
+[    1.021938] iwn0: MIMO 1T2R, MoW, address 00:22:fb:3a:b2:fa
+[    1.021938] iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+[    1.021938] iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+[    1.021938] iwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+[    1.021938] ppb2 at pci0 dev 28 function 3: vendor 8086 product 27d6 (rev. 0x02)
+[    1.021938] ppb2: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
+[    1.021938] pci3 at ppb2 bus 3
+[    1.021938] pci3: i/o space, memory space enabled
+[    1.021938] uhci0 at pci0 dev 29 function 0: vendor 8086 product 27c8 (rev. 0x02)
+[    1.021938] uhci0: interrupting at ioapic0 pin 16
+[    1.021938] usb0 at uhci0: USB revision 1.0
+[    1.021938] uhci1 at pci0 dev 29 function 1: vendor 8086 product 27c9 (rev. 0x02)
+[    1.021938] uhci1: interrupting at ioapic0 pin 17
+[    1.021938] usb1 at uhci1: USB revision 1.0
+[    1.021938] uhci2 at pci0 dev 29 function 2: vendor 8086 product 27ca (rev. 0x02)
+[    1.021938] uhci2: interrupting at ioapic0 pin 18
+[    1.021938] usb2 at uhci2: USB revision 1.0
+[    1.021938] uhci3 at pci0 dev 29 function 3: vendor 8086 product 27cb (rev. 0x02)
+[    1.021938] uhci3: interrupting at ioapic0 pin 19
+[    1.021938] usb3 at uhci3: USB revision 1.0
+[    1.021938] ehci0 at pci0 dev 29 function 7: vendor 8086 product 27cc (rev. 0x02)
+[    1.021938] ehci0: interrupting at ioapic0 pin 16
+[    1.021938] ehci0: EHCI version 1.0
+[    1.021938] ehci0: 4 companion controllers, 2 ports each: uhci0 uhci1 uhci2 uhci3
+[    1.021938] usb4 at ehci0: USB revision 2.0
+[    1.021938] ppb3 at pci0 dev 30 function 0: vendor 8086 product 2448 (rev. 0xe2)
+[    1.021938] pci4 at ppb3 bus 4
+[    1.021938] pci4: i/o space, memory space enabled
+[    1.021938] ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 27b9 (rev. 0x02)
+[    1.021938] timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
+[    1.021938] ichlpcib0: 24-bit timer
+[    1.021938] tco0 at ichlpcib0: TCO (watchdog) timer configured.
+[    1.021938] tco0: Min/Max interval 1/367 seconds
+[    1.021938] piixide0 at pci0 dev 31 function 1: Intel 82801GB/GR IDE Controller (ICH7) (rev. 0x02)
+[    1.021938] piixide0: bus-master DMA support present
+[    1.021938] piixide0: primary channel configured to compatibility mode
+[    1.021938] piixide0: primary channel ignored (disabled)
+[    1.021938] piixide0: secondary channel configured to compatibility mode
+[    1.021938] piixide0: secondary channel ignored (disabled)
+[    1.021938] ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 27c5 (rev. 0x02)
+[    1.021938] ahcisata0: interrupting at ioapic0 pin 17
+[    1.021938] ahcisata0: AHCI revision 1.10, 4 ports, 32 slots, CAP 0xdf10ff03<PSC,SSC,PMD,ISS=0x1=Gen1,SCLO,SAL,SALP,SSS,SMPS,SNCQ,S64A>
+[    1.021938] atabus0 at ahcisata0 channel 0
+[    1.021938] atabus1 at ahcisata0 channel 2
+[    1.021938] ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 27da (rev. 0x02)
+[    1.021938] ichsmb0: interrupting at ioapic0 pin 17
+[    1.021938] iic0 at ichsmb0: I2C bus
+[    1.021938] isa0 at ichlpcib0
+[    1.021938] pcppi0 at isa0 port 0x61
+[    1.021938] midi0 at pcppi0: PC speaker
+[    1.021938] sysbeep0 at pcppi0
+[    1.021938] attimer1: attached to pcppi0
+[    1.021938] acpicpu0 at cpu0: ACPI CPU
+[    1.021938] acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+[    1.021938] acpicpu0: C2: I/O, lat   1 us, pow   500 mW
+[    1.021938] acpicpu0: C3: I/O, lat  57 us, pow   100 mW
+[    1.021938] acpicpu0: P0: FFH, lat  10 us, pow  2000 mW, 1600 MHz
+[    1.021938] acpicpu0: P1: FFH, lat  10 us, pow  1533 mW, 1333 MHz
+[    1.021938] acpicpu0: P2: FFH, lat  10 us, pow  1066 mW, 1066 MHz
+[    1.021938] acpicpu0: P3: FFH, lat  10 us, pow   600 mW,  800 MHz
+[    1.021938] acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
+[    1.021938] acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
+[    1.021938] acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
+[    1.021938] acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
+[    1.021938] acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
+[    1.021938] acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
+[    1.021938] acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
+[    1.021938] acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
+[    1.021938] coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
+[    1.021938] acpicpu1 at cpu1: ACPI CPU
+[    1.021938] DRM error in i915_irq_handler: pipe A underrun
+[    1.021938] timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+[    1.914761] acpiacad0: AC adapter online.
+[    1.934838] uhub0 at usb0: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[    1.934838] uhub0: 2 ports with 2 removable, self powered
+[    1.934838] uhub1 at usb1: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[    1.934838] uhub1: 2 ports with 2 removable, self powered
+[    1.934838] uhub2 at usb2: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[    1.934838] uhub2: 2 ports with 2 removable, self powered
+[    1.934838] uhub3 at usb3: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+[    1.934838] uhub3: 2 ports with 2 removable, self powered
+[    1.934838] uhub4 at usb4: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+[    1.934838] uhub4: 8 ports with 8 removable, self powered
+[    1.934838] IPsec: Initialized Security Association Processing.
+[    2.015021] ahcisata0 port 0: device present, speed: 1.5Gb/s
+[    2.425276] acpibat0: SONY LION rechargeable battery
+[    2.425276] acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
+[    3.245783] ehci0: handing over full speed device on port 1 to uhci0
+[    3.545970] wd0 at atabus0 drive 0
+[    3.545970] wd0: <HGST HTS721010A9E630>
+[    3.545970] wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+[    3.545970] wd0: 931 GB, 1938021 cyl, 16 head, 63 sec, 512 bytes/sect x 1953525168 sectors
+[    3.616014] wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags) w/PRIO
+[    3.616014] wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags) w/PRIO
+[    3.676051] boot device: wd0
+[    3.676051] root on wd0a dumps on wd0b
+[    3.696064] root file system type: ffs
+[    3.706071] kern.module.path=/stand/i386/8.99.21/modules
+[    5.227019] uvideo0 at uhub0 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
+[    5.237027] video0 at uvideo0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
+[    5.777360] wsdisplay0: screen 1 added (default, vt100 emulation)
+[    5.777360] wsdisplay0: screen 2 added (default, vt100 emulation)
+[    5.787370] wsdisplay0: screen 3 added (default, vt100 emulation)
+[    5.787370] wsdisplay0: screen 4 added (default, vt100 emulation)
