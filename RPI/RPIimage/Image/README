@@ -1,39 +1,40 @@
-VERSION: :1,$s/2018-06-16/2018-06-16/g
-ISO:     :1,$s/201806090120Z/201806090120Z/g
-NetBSD:  :1,$s/8.99.19/8.99.19/g
-PKGSRC:  :1,$s/2018-06-16/2018-06-16/
+VERSION: :1,$s/2018-07-07/2018-07-07/g
+ISO:     :1,$s/201806281810Z/201806281810Z/g
+NetBSD:  :1,$s/8.99.21/8.99.21/g
+PKGSRC:  :1,$s/2018-07-07/2018-07-07/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2018-06-16-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2018-07-07-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2018-06-16-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2018-07-07-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-06-16-earmv6hf/2018-06-16-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-06-16-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-07-07-earmv6hf/2018-07-07-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-07-07-earmv6hf/MD5
 
 Update:
-- NetBSD-current 8.99.19 evbarm-earmv6hf 201806090120Z rpi.img from nyftp.
+- NetBSD-current 8.99.21 evbarm-earmv6hf 201806281810Z rpi.img from nyftp.
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - Firmware update 
  20180410 on /boot for support newer RPI.
 - sysinfo and pkgsrc update 
  https://github.com/ebijun/NetBSD/commit/b082f2b79de0d22f83ee179ccb5456987b987edb 
-- mikutter 3.7.1
+- dhcpcd-7.0.6
+- cups-base-2.2.8
+- git-base-2.18.0
+- mlterm-3.8.6
+- mikutter 3.7.2
  I make sample API key,pre-installed.
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/root/.mikutter/plugin
  https://github.com/Akkiesoft/how-to-make-mikutter-work-again
 
 NetBSD Problem Report Summary:
 
-port-arm/53283: RPI earmv6hf earmv7hf: startx system hangs after 2018-03-30 14:00:00 UTC
- Fixed,thanx jmcneill@ 
- http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=53283
-
 port-arm/53284: Support RPI3B+,RPI0W,RPI2-1.2
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=53284
  Open
 - RPI3B+ initial support 
   cp /boot/bcm2837-rpi-3-b.dtb /boot/bcm2837-rpi-3-b-plus.dtb
@@ -60,7 +61,7 @@ Overview:
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-06-16-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-07-07-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -118,7 +119,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-06-16/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-07-07/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -126,7 +127,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-06-16-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-07-07-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -314,7 +315,7 @@ http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2018.rst
 
-- NetBSD 8.99.19 earmv6hf rpi.img.gz base
+- NetBSD 8.99.21 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -352,7 +353,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-06-16/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-07-07/
 
 Installed Packages:
   bash

@@ -5,6 +5,7 @@ atk-2.26.1          Set of interfaces for accessibility
 bash-4.4.019        The GNU Bourne Again Shell
 cairo-1.14.12nb1    Vector graphics library with cross-device output support
 cairo-gobject-1.14.12nb1 Vector graphics library with cross-device output support
+cups-base-2.2.8nb1  Common UNIX Printing System
 curl-7.60.0         Client that groks URLs
 dbus-1.12.8         Message bus system
 desktop-file-utils-0.23nb1 Utilities to manage desktop entries
@@ -18,32 +19,38 @@ fribidi-0.19.7      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.2.5nb2         Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.36.12 Image loaders for gtk2
 giflib-5.1.4        GIF image format library
-git-base-2.17.1     GIT Tree History Storage Tool (base package)
+git-base-2.18.0     GIT Tree History Storage Tool (base package)
 glib2-2.56.1nb1     Some useful routines for C programming (glib2)
+gmp-6.1.2           Library for arbitrary precision arithmetic
+gnutls-3.6.0nb3     GNU Transport Layer Security library
 gobject-introspection-1.56.1 GObject Introspection
 gtk2+-2.24.32nb4    GIMP Toolkit v2 - libraries for building X11 user interfaces
-gtk3+-3.22.30       GIMP Toolkit v3 - libraries for building X11 user interfaces
-harfbuzz-1.7.6nb1   OpenType text shaping engine
+gtk3+-3.22.30nb1    GIMP Toolkit v3 - libraries for building X11 user interfaces
+harfbuzz-1.8.1      OpenType text shaping engine
 hicolor-icon-theme-0.17 Standard icon theme called hicolor
 icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
 icu-61.1            Robust and full-featured Unicode services
 jbigkit-2.1         JBIG-KIT lossless image compression library
 jpeg-9c             IJG's jpeg compression utilities
 libXft-2.3.2nb2     Library for configuring and customizing font access
+libcfg+-0.7.0       Command line and configuration file parsing library
 libelf-0.8.13nb1    ELF object file access library
 libepoxy-1.4.3      Library for OpenGL function pointer management
 libffi-3.2.1nb4     Foreign function interface
 libgcroots-0.2.3    Garbage collector supporting library
-libgcrypt-1.8.2     GNU cryptographic library
+libgcrypt-1.8.3     GNU cryptographic library
 libgpg-error-1.31   Definitions of common error values for all GnuPG components
 libidn-1.33         Internationalized Domain Names command line tool
 libidn2-2.0.4       Convert internationalized domain names to/from ASCII Encoding
-libimagequant-2.11.10 High-quality conversion of RGBA images to 8-bit indexed-color
+libimagequant-2.12.1 High-quality conversion of RGBA images to 8-bit indexed-color
 libotf-0.9.16       Library for handling OpenType fonts (OTF)
+libpaper-1.1.24     Paper size handling library
+libtasn1-4.12nb1    ASN.1 structure parser library
 libunistring-0.9.10 Unicode string library
+libusb1-1.0.21      USB Access Library (version 1)
 libuuid-2.31        Generate unique identifiers for objects
 libwebp-1.0.0       WebP image format library and tools
-libxml2-2.9.8       XML parser library from the GNOME project
+libxml2-2.9.8nb1    XML parser library from the GNOME project
 libxslt-1.1.32      XSLT parser library from the GNOME project
 libyaml-0.1.7       YAML 1.1 parser and emitter written in C
 lintpkgsrc-4.94     Sanity checks on the complete pkgsrc tree
@@ -51,9 +58,11 @@ lzo-2.10            Portable lossless data compression library
 m17n-db-1.8.0       The m17n database used by the m17n library
 m17n-lib-1.8.0nb1   Multilingualization library
 medit-1.2.0nb7      Programming and around-programming text editor
-mlterm-3.8.5nb2     Multilingual terminal emulator
+mlterm-3.8.6        Multilingual terminal emulator
 mozilla-rootcerts-1.0.20180111 Root CA certificates from the Mozilla Project
 ncurses-6.1         CRT screen handling and optimization package
+nettle-3.4          Cryptographic library
+p11-kit-0.23.10     PKCS#11 module manager
 p5-Authen-SASL-2.16nb5 Perl module to handle SASL authentication
 p5-Digest-HMAC-1.03nb7 Perl5 module for HMAC
 p5-Email-Valid-1.202nb1 Perl5 module for testing validity of an email address
@@ -80,7 +89,7 @@ pkg_chk-2.0.9       Check installed package versions against pkgsrc
 png-1.6.34          Library for manipulating PNG images
 py27-cElementTree-2.7.15 C implementation of Python ElementTree API
 py27-expat-2.7.15   Python interface to expat
-python27-2.7.15     Interpreted, interactive, object-oriented programming language
+python27-2.7.15nb1  Interpreted, interactive, object-oriented programming language
 raspberrypi-userland-20170109nb1 Various libraries for the Raspberry Pi
 ruby24-addressable-2.5.2 Replacement for the URI Implementation of standard librrary
 ruby24-base-2.4.4   Ruby 2.4.4 release minimum base package
@@ -101,14 +110,13 @@ ruby24-hmac-0.4.0   Common interface to HMAC functionality
 ruby24-httpclient-2.8.3 HTTP accessing library for Ruby
 ruby24-idn-0.1.0    Ruby Bindings for the GNU LibIDN library
 ruby24-instance_storage-1.0.0 Manage class instances with dictionary
-ruby24-json-pure-2.1.0 Pure Ruby implementation of JSON
 ruby24-locale-2.1.2 Pure ruby library which provides basic APIs for localization
 ruby24-memoist-0.16.0 Replacement of memoizable, memoize methods invocation
-ruby24-mikutter-3.7.1 Simple, powerful, and moeful twitter client
+ruby24-mikutter-3.7.2 Simple, powerful, and moeful twitter client
 ruby24-mini_portile2-2.3.0 Simple autoconf builder for developers
 ruby24-moneta-1.0.0 Unified interface to key/value stores
 ruby24-native-package-installer-1.0.6 Helper to install native packages on "gem install"
-ruby24-nokogiri-1.8.2 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby24-nokogiri-1.8.3 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby24-oauth-0.5.4  OAuth Core Ruby implementation
 ruby24-pkg-config-1.3.1 Pure Ruby implementation of pkg-config
 ruby24-pluggaloid-1.1.1 Extensible plugin system for mikutter
@@ -121,7 +129,7 @@ ruby24-unf_ext-0.0.7.5 Unicode Normalization Form support library for CRuby
 shared-mime-info-1.9 Core database of common types
 sudo-1.8.22nb1      Allow others to run commands as root
 tcsh-6.20.00nb2     Extended C-shell with many useful features
-tiff-4.0.9nb2       Library and tools for reading and writing TIFF data files
+tiff-4.0.9nb3       Library and tools for reading and writing TIFF data files
 ttmkfdir2-20021109nb6 Tool that creates a fonts.scale file
 uim-1.8.6nb50       Multilingual input method library
 vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
