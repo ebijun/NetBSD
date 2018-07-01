@@ -58,7 +58,7 @@ RaspberryPIのNetBSDイメージについて
  2018/4,8.99.14,,,1.1.0h,RPI3B+ BIND9.10.7 openssh7.7 git-base-2.16.3,OSuC川越, http://mail-index.netbsd.org/port-arm/2018/04/15/msg004757.html
  2018/5/19,8.99.15,3.6.7 APIKey,,,git-base-2.17.0 NetBSD SA 2018-007,OSC名古屋,http://mail-index.netbsd.org/port-arm/2018/05/18/msg004789.html
  2018/6/16,8.99.19,3.7.1,,,PR53283 git-base-2.17.1,OSC沖縄,http://mail-index.netbsd.org/port-arm/2018/06/11/msg004851.html
- 2018/7/07,8.99.21,3.7.2,3.8.6,,git-base-2.18,OSC北海道,http://mail-index.netbsd.org/port-arm/2018/
+ 2018/7/07,8.99.21,3.7.2,3.8.6,,git-base-2.18,OSC北海道,http://mail-index.netbsd.org/port-arm/2018/07/01/msg004913.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 
