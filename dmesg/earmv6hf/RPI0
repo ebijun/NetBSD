@@ -4,7 +4,7 @@
 [    1.000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
 [    1.000000] The Regents of the University of California.  All rights reserved.
 
-[    1.000000] NetBSD 8.99.19 (RPI) #0: Sat Jun  9 01:17:35 UTC 2018
+[    1.000000] NetBSD 8.99.21 (RPI) #0: Thu Jun 28 17:22:09 UTC 2018
 [    1.000000] 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 [    1.000000] total memory = 448 MB
 [    1.000000] avail memory = 435 MB
@@ -15,8 +15,8 @@
 [    1.000000] fdt2 at fdt1
 [    1.000000] fdt3 at fdt0
 [    1.000000] fdt4 at fdt0
-[    1.000000] fclock0 at fdt3: 19200000 Hz fixed clock
-[    1.000000] fclock1 at fdt3: 480000000 Hz fixed clock
+[    1.000000] fclock0 at fdt3: 19200000 Hz fixed clock (osc)
+[    1.000000] fclock1 at fdt3: 480000000 Hz fixed clock (otg)
 [    1.000000] cpus0 at fdt0
 [    1.000000] cpu0 at cpus0: 700 MHz ARM1176JZ-S r0p7 (ARM11J V6ZK core)
 [    1.000000] cpu0: DC enabled IC enabled WB enabled LABT
@@ -47,7 +47,6 @@
 [    1.000000] plcom0: console
 [    1.000000] bsciic1 at fdt1: Broadcom Serial Controller
 [    1.000000] iic1 at bsciic1: I2C bus
-[    1.000000] /soc/pwm@7e20c000 at fdt1 not configured
 [    1.000000] sdhc0 at fdt1: SDHC controller
 [    1.000000] sdhc0: interrupting on icu irq 62
 [    1.000000] bsciic2 at fdt1: Broadcom Serial Controller
@@ -76,42 +75,45 @@
 [    1.000000] timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 [    1.000003] timecounter: Timecounter "bcmtmr0" frequency 1000000 Hz quality 100
 [    1.000003] sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
-[    1.012701] sdmmc0 at sdhc0 slot 0
-[    1.030818] usb0 at dwctwo0: USB revision 2.0
-[    1.151971] sdhc0: cmd timeout error
-[    1.163129] uhub0 at usb0: NetBSD (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-[    1.163129] uhub0: 1 port with 1 removable, self powered
-[    1.273381] IPsec: Initialized Security Association Processing.
-[    1.303445] sdmmc0: SD card status: 4-bit, C10, U3, V30
-[    1.303445] ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x0b8001da:0x113>
-[    1.303445] ld0: 29423 MB, 7472 cyl, 128 head, 63 sec, 512 bytes/sect x 60258304 sectors
-[    1.313467] ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
-[    2.994587] uhidev0 at uhub0 port 1 configuration 1 interface 0
-[    3.004612] uhidev0: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/1
-[    3.014662] ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
-[    3.424990] wskbd0 at ukbd0: console keyboard, using wsdisplay0
-[    3.424990] uhidev1 at uhub0 port 1 configuration 1 interface 1
-[    3.424990] uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/0
-[    3.424990] uhidev1: 2 report ids
-[    3.424990] uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
-[    3.445074] uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
-[    3.445074] uhub0: autoconfiguration error: illegal enable change, port 1
-[    3.445074] WARNING: 1 error while detecting hardware; check system log.
-[    3.445074] boot device: ld0
-[    3.445074] root on ld0a dumps on ld0b
-[    3.465112] root file system type: ffs
-[    3.465112] kern.module.path=/stand/evbarm/8.99.19/modules
-[    3.485153] vchiq0: interrupting on icu irq 66
-[    3.485153] vchiq: vchiq_init_state: slot_zero = 0xc95e0000, is_master = 0
-[    3.485153] vchiq: local ver 8 (min 3), remote ver 8.
-[    3.485153] vcaudio0 at vchiq0: auds
-[    3.485153] vchiq_get_state: g_state.remote->initialised != 1 (0)
-[    3.485153] WARNING: no TOD clock present
-[    3.485153] WARNING: using filesystem time
-[    3.493190] WARNING: CHECK AND RESET THE DATE!
-[    4.055594] audio0 at vcaudio0: half duplex, playback, capture, mmap, independent
-[    4.075641] vcaudio0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-[    4.075641] vcaudio0: Latency: 100 milliseconds
-[    4.075641] spkr0 at audio0: PC Speaker (synthesized)
-[    4.075641] wsbell at spkr0 not configured
-[   12.471910] wsdisplay0: screen 4 added (default, vt100 emulation)
+[    1.012668] sdmmc0 at sdhc0 slot 0
+[    1.030747] usb0 at dwctwo0: USB revision 2.0
+[    1.151972] sdhc0: cmd timeout error
+[    1.163154] uhub0 at usb0: NetBSD (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+[    1.163154] uhub0: 1 port with 1 removable, self powered
+[    1.273403] IPsec: Initialized Security Association Processing.
+[    1.303466] sdmmc0: SD card status: 4-bit, C10, U3, V30
+[    1.303466] ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x0b8001da:0x113>
+[    1.303466] ld0: 29423 MB, 7472 cyl, 128 head, 63 sec, 512 bytes/sect x 60258304 sectors
+[    1.313483] ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+[    3.004612] uhidev0 at uhub0 port 1 configuration 1 interface 0
+[    3.004612] uhidev0: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 2, iclass 3/1
+[    3.004612] ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+[    3.414938] wskbd0 at ukbd0: console keyboard, using wsdisplay0
+[    3.414938] uhidev1 at uhub0 port 1 configuration 1 interface 1
+[    3.414938] uhidev1: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 2, iclass 3/1
+[    3.414938] uhidev1: 1 report ids
+[    3.414938] ums0 at uhidev1 reportid 1: 3 buttons and Z dir
+[    3.414938] wsmouse0 at ums0 mux 0
+[    3.414938] uhidev2 at uhub0 port 1 configuration 1 interface 2
+[    3.414938] uhidev2: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 2, iclass 3/0
+[    3.424955] uhid0 at uhidev2: input=3, output=0, feature=0
+[    3.424955] uhub0: autoconfiguration error: illegal enable change, port 1
+[    3.424955] WARNING: 1 error while detecting hardware; check system log.
+[    3.424955] boot device: ld0
+[    3.424955] root on ld0a dumps on ld0b
+[    3.455010] root file system type: ffs
+[    3.465030] kern.module.path=/stand/evbarm/8.99.21/modules
+[    3.465030] vchiq0: interrupting on icu irq 66
+[    3.465030] vchiq: vchiq_init_state: slot_zero = 0xc95e0000, is_master = 0
+[    3.465030] vchiq: local ver 8 (min 3), remote ver 8.
+[    3.465030] vcaudio0 at vchiq0: auds
+[    3.465030] vchiq_get_state: g_state.remote->initialised != 1 (0)
+[    3.465030] WARNING: no TOD clock present
+[    3.465030] WARNING: using filesystem time
+[    3.474824] WARNING: CHECK AND RESET THE DATE!
+[    4.065514] audio0 at vcaudio0: half duplex, playback, capture, mmap, independent
+[    4.065514] vcaudio0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+[    4.065514] vcaudio0: Latency: 100 milliseconds
+[    4.075536] spkr0 at audio0: PC Speaker (synthesized)
+[    4.075536] wsbell at spkr0 not configured
+[   12.622432] wsdisplay0: screen 4 added (default, vt100 emulation)

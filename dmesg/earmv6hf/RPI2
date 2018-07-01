@@ -4,7 +4,7 @@
 [    1.000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
 [    1.000000] The Regents of the University of California.  All rights reserved.
 
-[    1.000000] NetBSD 8.99.19 (RPI2) #0: Sat Jun  9 01:17:35 UTC 2018
+[    1.000000] NetBSD 8.99.21 (RPI2) #0: Thu Jun 28 17:22:09 UTC 2018
 [    1.000000] 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 [    1.000000] total memory = 948 MB
 [    1.000000] avail memory = 930 MB
@@ -15,8 +15,8 @@
 [    1.000000] fdt2 at fdt1
 [    1.000000] fdt3 at fdt0
 [    1.000000] fdt4 at fdt0
-[    1.000000] fclock0 at fdt3: 19200000 Hz fixed clock
-[    1.000000] fclock1 at fdt3: 480000000 Hz fixed clock
+[    1.000000] fclock0 at fdt3: 19200000 Hz fixed clock (osc)
+[    1.000000] fclock1 at fdt3: 480000000 Hz fixed clock (otg)
 [    1.000000] cpus0 at fdt0
 [    1.000000] cpu0 at cpus0: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 [    1.000000] cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
@@ -84,69 +84,73 @@
 [    1.000003] timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 [    1.000003] cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 [    1.000003] cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
-[    1.332828] cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
-[    1.342803] cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-[    1.352806] cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
-[    1.362805] vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-[    1.372808] cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
-[    1.382808] cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
-[    1.392812] cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
-[    1.392812] cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-[    1.402811] cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
-[    1.412813] vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-[    1.422813] cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
-[    1.432817] cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
-[    1.442816] cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
-[    1.452822] cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-[    1.462821] cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
-[    1.472823] vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-[    1.482823] sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
-[    1.503588] sdmmc0 at sdhc0 slot 0
-[    1.518932] usb0 at dwctwo0: USB revision 2.0
-[    1.638793] uhub0 at usb0: NetBSD (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-[    1.638793] uhub0: 1 port with 1 removable, self powered
-[    1.638793] sdhc0: cmd timeout error
-[    1.708804] sdmmc0: SD card status: 4-bit, C10, U3, V30
-[    1.708804] ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x0b8001da:0x113>
-[    1.708804] ld0: 29423 MB, 7472 cyl, 128 head, 63 sec, 512 bytes/sect x 60258304 sectors
-[    1.708804] IPsec: Initialized Security Association Processing.
-[    1.708804] ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
-[    3.459045] uhub1 at uhub0 port 1: vendor 0424 (0x424) product 9514 (0x9514), class 9/0, rev 2.00/2.00, addr 2
-[    3.459045] uhub1: multiple transaction translators
-[    3.459045] uhub1: 5 ports with 4 removable, self powered
-[    4.769224] usmsc0 at uhub1 port 1
-[    4.769224] usmsc0: vendor 0424 (0x424) product ec00 (0xec00), rev 2.00/2.00, addr 3
-[    4.769224] usmsc0: Ethernet address b8:27:eb:1f:7a:14
-[    4.779229] ukphy0 at usmsc0 phy 1: OUI 0x00800f, model 0x000c, rev. 3
-[    4.779229] ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-[    5.789367] uhidev0 at uhub1 port 3 configuration 1 interface 0
-[    5.789367] uhidev0: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
-[    5.799370] ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
-[    6.209426] wskbd0 at ukbd0: console keyboard, using wsdisplay0
-[    6.209426] uhidev1 at uhub1 port 3 configuration 1 interface 1
-[    6.209426] uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
-[    6.219431] uhidev1: 2 report ids
-[    6.219431] uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
-[    6.219431] uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
-[    6.219431] uhub0: autoconfiguration error: illegal enable change, port 1
-[    6.229431] WARNING: 1 error while detecting hardware; check system log.
-[    6.229431] boot device: ld0
-[    6.239435] root on ld0a dumps on ld0b
-[    6.249434] root file system type: ffs
-[    6.249434] kern.module.path=/stand/evbarm/8.99.19/modules
-[    6.259437] WARNING: no TOD clock present
-[    6.259437] WARNING: using filesystem time
-[    6.261689] WARNING: CHECK AND RESET THE DATE!
-[    6.261689] vchiq0: interrupting on icu irq 194
-[    6.261689] vchiq: vchiq_init_state: slot_zero = 0xcaaa0000, is_master = 0
-[    6.261689] vchiq: local ver 8 (min 3), remote ver 8.
-[    6.261689] vcaudio0 at vchiq0: auds
-[    6.261689] vchiq_get_state: g_state.remote->initialised != 1 (0)
-[    6.261689] vchiq: vchiq_initialise: videocore initialized after 1 retries
+[    1.337853] cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
+[    1.347828] cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+[    1.357831] cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
+[    1.367830] vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+[    1.377833] cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+[    1.387833] cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
+[    1.397837] cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
+[    1.397837] cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+[    1.407836] cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
+[    1.417839] vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+[    1.427839] cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+[    1.437842] cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+[    1.447842] cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
+[    1.457845] cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+[    1.467846] cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
+[    1.477848] vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+[    1.487848] sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
+[    1.508769] sdmmc0 at sdhc0 slot 0
+[    1.524108] usb0 at dwctwo0: USB revision 2.0
+[    1.643969] uhub0 at usb0: NetBSD (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+[    1.643969] uhub0: 1 port with 1 removable, self powered
+[    1.643969] sdhc0: cmd timeout error
+[    1.713982] sdmmc0: SD card status: 4-bit, C10, U3, V30
+[    1.713982] ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x0b8001da:0x113>
+[    1.713982] ld0: 29423 MB, 7472 cyl, 128 head, 63 sec, 512 bytes/sect x 60258304 sectors
+[    1.713982] IPsec: Initialized Security Association Processing.
+[    2.714124] ld0c: error reading fsbn 458752 of 458752-458754 (ld0 bn 458752; cn 56 tn 113 sn 49), retrying
+[    3.214196] ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+[    3.474233] uhub1 at uhub0 port 1: vendor 0424 (0x424) product 9514 (0x9514), class 9/0, rev 2.00/2.00, addr 2
+[    3.474233] uhub1: multiple transaction translators
+[    3.474233] uhub1: 5 ports with 4 removable, self powered
+[    4.784418] usmsc0 at uhub1 port 1
+[    4.784418] usmsc0: vendor 0424 (0x424) product ec00 (0xec00), rev 2.00/2.00, addr 3
+[    4.784418] usmsc0: Ethernet address b8:27:eb:1f:7a:14
+[    4.784418] ukphy0 at usmsc0 phy 1: OUI 0x00800f, model 0x000c, rev. 3
+[    4.784418] ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+[    5.784559] uhidev0 at uhub1 port 2 configuration 1 interface 0
+[    5.794564] uhidev0: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 4, iclass 3/1
+[    5.794564] ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+[    6.204618] wskbd0 at ukbd0: console keyboard, using wsdisplay0
+[    6.204618] uhidev1 at uhub1 port 2 configuration 1 interface 1
+[    6.204618] uhidev1: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 4, iclass 3/1
+[    6.204618] uhidev1: 1 report ids
+[    6.204618] ums0 at uhidev1 reportid 1: 3 buttons and Z dir
+[    6.204618] wsmouse0 at ums0 mux 0
+[    6.204618] uhidev2 at uhub1 port 2 configuration 1 interface 2
+[    6.204618] uhidev2: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 4, iclass 3/0
+[    6.214623] uhid0 at uhidev2: input=3, output=0, feature=0
+[    6.214623] uhub0: autoconfiguration error: illegal enable change, port 1
+[    6.214623] WARNING: 1 error while detecting hardware; check system log.
+[    6.214623] boot device: ld0
+[    6.214623] root on ld0a dumps on ld0b
+[    6.244627] root file system type: ffs
+[    6.244627] kern.module.path=/stand/evbarm/8.99.21/modules
+[    6.244627] vchiq0: interrupting on icu irq 194
+[    6.244627] vchiq: vchiq_init_state: slot_zero = 0xcaaa0000, is_master = 0
+[    6.244627] vchiq: local ver 8 (min 3), remote ver 8.
+[    6.244627] vcaudio0 at vchiq0: auds
+[    6.244627] vchiq_get_state: g_state.remote->initialised != 1 (0)
+[    6.244627] vchiq: vchiq_initialise: videocore initialized after 1 retries
 
-[    7.419601] audio0 at vcaudio0: half duplex, playback, capture, mmap, independent
-[    7.419601] vcaudio0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-[    7.419601] vcaudio0: Latency: 100 milliseconds
-[    7.419601] spkr0 at audio0: PC Speaker (synthesized)
-[    7.419601] wsbell at spkr0 not configured
-[   14.671082] wsdisplay0: screen 4 added (default, vt100 emulation)
+[    6.244627] WARNING: no TOD clock present
+[    6.244627] WARNING: using filesystem time
+[    6.254347] WARNING: CHECK AND RESET THE DATE!
+[    7.414792] audio0 at vcaudio0: half duplex, playback, capture, mmap, independent
+[    7.414792] vcaudio0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+[    7.414792] vcaudio0: Latency: 100 milliseconds
+[    7.424797] spkr0 at audio0: PC Speaker (synthesized)
+[    7.424797] wsbell at spkr0 not configured
+[   14.626250] wsdisplay0: screen 4 added (default, vt100 emulation)
