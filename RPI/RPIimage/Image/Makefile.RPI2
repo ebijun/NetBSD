@@ -1,15 +1,15 @@
-# Makefile for RPI2 image.
+# Makefile for RPI image.
 
 ARCH=earmv7hf
+#ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-05-19/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-07-07/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.17-evbarm-${ARCH}-201805100230Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.21-evbarm-${ARCH}-201807061330Z.iso
 
-
-PKGSRC=../../../pkgsrc/pkgsrc-2015-05-30.tar.gz 
+PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 ###
 
@@ -20,12 +20,18 @@ FILE_TMP=a.img
 # extract sets.
 SETS=${MNT_CDROM}/evbarm/binary/sets
 RPI=${MNT_CDROM}/evbarm/binary/gzimg/armv7.img
-
-KERNELBIN7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.img.gz
 KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
+
+#Firmware: 
+#git show HEAD |head 
+#commit ae9a493932e47e08cabb25a2728037298075fd00
+#Date:   Tue Apr 10 18:34:46 2018 +0100
+
+FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
+FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
 # mount point
 MNT=/mnt
@@ -37,7 +43,10 @@ VND_CDROM=vnd1
 MNT_TMP=/mnt2
 VND_TMP=vnd2
 
-all: file cdmount rpi extract cdunmount fit kernel
+
+all: file cdmount rpi extract cdunmount firm 
+
+#update: cdmount update-extract cdunmount
 
 # extract sets to image file.
 extract:
@@ -48,18 +57,17 @@ extract:
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 #	echo extract pkgsrc.
 #	tar xzpf ${PKGSRC} -C ${MNT}/usr
-	echo extract netwalker kernel.
 	mount_msdos /dev/${VND}e ${MNT}/boot
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
 
-# copy armv7.img.gz to image file and resize partition.
+# copy rpi.img.gz to image file and resize partition.
 rpi:
-	echo Copy armv7.img.gz
+	# set disklabel
 	vnconfig ${VND} ${FILE}
 	fdisk -uf -0 -s 6/8192/188416 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fdisk -uf -1 -s 169/458752/4251648 ${VND}
+	fdisk -uf -1 -s 169/458752/4456448 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
@@ -76,16 +84,17 @@ rpi:
 	mount_msdos /dev/${VND_TMP}e ${MNT_TMP}
 	(cd ${MNT_TMP}; cp -pr . ${MNT})
 
-	umount ${MNT_TMP}
-	vnconfig -u ${VND_TMP}
-
 	umount ${MNT}
+	umount ${MNT_TMP}
 	vnconfig -u ${VND}
+	vnconfig -u ${VND_TMP}
 
 # make image file. 512*3813376=2GB
 file: 
 	echo Create ${FILE}.
-	dd if=/dev/zero of=${FILE} bs=512 count=4710400 progress=60000
+#	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
+	dd if=/dev/zero of=${FILE} bs=512 count=4915200 progress=62000
+#	 2048*2400
 	sleep 3
 
 # stop sshd for package install
@@ -97,15 +106,14 @@ pkg:
 	echo sshd=NO            >> ${MNT}/etc/rc.conf
 	echo syslogd=NO         >> ${MNT}/etc/rc.conf
 #	echo dhcpcd=NO          >> ${MNT}/etc/rc.conf
-	echo resize_disklabel=NO        >> ${MNT}/etc/rc.conf
-	echo resize_disklabel_disk=""   >> ${MNT}/etc/rc.conf
-	echo resize_disklabel_part=""   >> ${MNT}/etc/rc.conf
-	echo resize_root=NO             >> ${MNT}/etc/rc.conf
-	echo resize_root_flags=""       >> ${MNT}/etc/rc.conf
-	echo resize_root_postcmd=""     >> ${MNT}/etc/rc.conf
+	echo resize_disklabel=NO 	>> ${MNT}/etc/rc.conf
+	echo resize_disklabel_disk=""	>> ${MNT}/etc/rc.conf
+	echo resize_disklabel_part=""	>> ${MNT}/etc/rc.conf
+	echo resize_root=NO		>> ${MNT}/etc/rc.conf
+	echo resize_root_flags=""	>> ${MNT}/etc/rc.conf
+	echo resize_root_postcmd=""	>> ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
-
 
 pkg-back:
 	vnconfig ${VND} ${FILE}
@@ -122,6 +130,7 @@ release:
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
 	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
+#	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 	(cd ../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	umount ${MNT}/boot
@@ -147,6 +156,7 @@ logclean:
 	rm -f ${MNT}/var/db/dhcpcd-url0.lease6
 	rm -f ${MNT}/root/dmesg
 	rm -f ${MNT}/root/pkginfo
+	rm -f ${MNT}/root/Package/typescript
 	rm -rf ${MNT}/var/run/dhcpcd
 	rm -rf ${MNT}/var/run/resolvconf
 	umount ${MNT}
@@ -169,17 +179,40 @@ cdunmount:
 firm:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-	cp -r /usr/local/NetBSD/RPI/Firmware/firmware/boot/* /mnt
+	for i in ${FIRM} ; do (cp ${FIRMPATH}/$$i /mnt); done
 	umount ${MNT}
 	vnconfig -u ${VND}
 
 kernel:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-	# copy dtb for RPI2-1.2
-	cp ${MNT}/bcm2836-rpi-2-b.dtb ${MNT}/bcm2837-rpi-2-b.dtb
+
+	# RPI3B+
+	cp ${MNT}/bcm2837-rpi-3-b.dtb  ${MNT}/bcm2837-rpi-3-b-plus.dtb
+	# RPI0W
+	cp ${MNT}/bcm2835-rpi-zero.dtb ${MNT}/bcm2835-rpi-zero-w.dtb
+	# RPI2-1.2
+	cp ${MNT}/bcm2836-rpi-2-b.dtb  ${MNT}/bcm2837-rpi-2-b.dtb
+
+#	# for startx
+#	mv ${MNT}/kernel.img ${MNT}/kernel.img.org
+#	mv ${MNT}/kernel7.img ${MNT}/kernel7.img.org
+
+#	gunzip < 201803211740Z/earmv6hf/netbsd-RPI.img.gz  > ${MNT}/kernel.img
+#	gunzip < 201803211740Z/earmv6hf/netbsd-RPI2.img.gz > ${MNT}/kernel7.img
+
 	umount ${MNT}
 	vnconfig -u ${VND}
+
+kernel-update:
+	vnconfig ${VND} ${FILE}
+	mount /dev/${VND}e ${MNT}
+#	mv  ${MNT}/kernel.img ${MNT}/kernel.img.original
+#	cp /usr/obj/kernel/earmv6hf/RPI/netbsd.bin ${MNT}/kernel.img
+	mv  ${MNT}/kernel7.img ${MNT}/kernel7.img.original
+	cp /usr/obj/kernel/earmv6hf/RPI2/netbsd.bin ${MNT}/kernel7.img
+	umount ${MNT}
+	vnconfig -u ${VND} 
 
 # update pkgsrc
 pkgsrc-update:
@@ -196,15 +229,20 @@ fetch:
 	sh Fetch
 	rm Fetch
 
-# more space with newfs -b 4096
-fit:
-	cp ${FILE} ${FILE_TMP}
-	vnconfig ${VND_TMP} ${FILE_TMP}
-	newfs -n 500000 -b 4096 /dev/r${VND_TMP}a
-	mount /dev/${VND_TMP}a ${MNT}
+libssls:
 	vnconfig ${VND} ${FILE}
-	dump 0uf - /dev/r${VND}a | ( cd ${MNT} ; restore -xf - )
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	(cd ${MNT}/usr/lib;ln -s libssl.so.12 libssl.so.11)
+	(cd ${MNT}/usr/lib;ln -s libcrypto.so.12  libcrypto.so.11)
 	umount ${MNT}
 	vnconfig -u ${VND}
-	vnconfig -u ${VND_TMP}
-	mv ${FILE_TMP} ${FILE}
+
+mikutter-key:
+	echo mikutter key
+	vnconfig ${VND} ${FILE}
+	fsck -fy /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	patch -d ${MNT}/root/.mikutter/plugin/twitter_api_keys < mikutter/twitter_api_keys.rb.patch
+	umount ${MNT}
+	vnconfig -u ${VND}
