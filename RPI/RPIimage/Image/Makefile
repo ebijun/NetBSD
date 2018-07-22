@@ -7,7 +7,7 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-07-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.21-evbarm-${ARCH}-201806281810Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.21-evbarm-${ARCH}-201807012030Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -47,7 +47,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount kernel firm 
+all: file cdmount rpi extract cdunmount firm 
 
 #update: cdmount update-extract cdunmount
 
