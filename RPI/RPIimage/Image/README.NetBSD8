@@ -19,10 +19,20 @@ automatic resize partition: see /etc/rc.conf
     http://movapic.com/pic/20150416115108552fa22c4f225
 
 dmesg:
- RPI:
-  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD8/RPI
- RPI2:
-  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD8/RPI2
+RPI: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD8/RPI
+RPI0: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD8/RPI0
+RPI0W: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD8/RPI0W
+RPI2: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD8/RPI2
+RPI2-1.2: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD8/RPI2-1.2
+RPI3: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD8/RPI3
+RPI3B+: Ethernet Interface not available
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD8/RPI3B%2B
 
 
 Overview:
@@ -51,7 +61,8 @@ ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-8.0/earmv6hf/
 - login root (no passwd)
 
 Features:
-  - fit size for 2GB SD Card
+  - fit size for 4GB SD Card
+  - Newer firmware for RPI3B+
   - with X11
 
 Installed Packages:
