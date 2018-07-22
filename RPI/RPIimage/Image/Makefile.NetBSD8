@@ -3,7 +3,7 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2017-11-27/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-8.0/${ARCH}/
 
 # iso file information
 
@@ -59,8 +59,8 @@ extract:
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
-#	echo extract pkgsrc.
-#	tar xzpf ${PKGSRC} -C ${MNT}/usr
+	echo extract pkgsrc.
+	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mount_msdos /dev/${VND}e ${MNT}/boot
 	umount ${MNT}/boot
 	umount ${MNT}
