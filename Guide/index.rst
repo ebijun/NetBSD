@@ -23,7 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/hokkaido
+ OSC/OSC2018
  RPI/RPIupdate2018
- RPI
- Place/intro
+ Place/2017
