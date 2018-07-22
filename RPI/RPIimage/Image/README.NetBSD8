@@ -9,7 +9,7 @@ From: Jun Ebihara <jun@soum.co.jp>
 
 I've updated 2018-07-22-netbsd8.0-raspi-earmv6hf.img for RPI.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-8.0/2018-07-22-netbsd8.0-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-8.0/2018-07-22-netbsd8.0-raspi-earmv6hf.img.gz
 
 automatic resize partition: see /etc/rc.conf
   1. copy image to SD/MicroSD
@@ -46,7 +46,7 @@ Pre-compiled packages:
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-8.0/earmv6hf
 
 I'll make test packages with this image:
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-8.0/earmv6hf/
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-8.0/earmv6hf/
 
  To install application.
  # pkg_add some_application_name
