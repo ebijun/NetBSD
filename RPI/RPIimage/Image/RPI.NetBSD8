@@ -2,16 +2,16 @@
 #
 make -f Makefile.NetBSD8 
 make -f Makefile.NetBSD8 release
-make -f Makefile.NetBSD8 pkg
+#make -f Makefile.NetBSD8 pkg
 #
 #./Copy
 ## add packages.
 # 
 #./03_back
 #mv back.img `date +%Y-%m-%d`-netbsd-raspi-earmv6hf.img
-#make -f Makefile logclean
-#make -f Makefile pkg-back
-#make -f Makefile mikutter-key
+#make -f Makefile.NetBSD8 logclean
+#make -f Makefile.NetBSD8 pkg-back
+#make -f Makefile.NetBSD8 mikutter-key
 #
 #./Copy
 ###test tweet
