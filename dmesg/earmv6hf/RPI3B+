@@ -1,167 +1,162 @@
-[    1.000000] Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-[    1.000000] 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-[    1.000000] 2018 The NetBSD Foundation, Inc.  All rights reserved.
-[    1.000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
-[    1.000000] The Regents of the University of California.  All rights reserved.
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+2018 The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+The Regents of the University of California.  All rights reserved.
 
-[    1.000000] NetBSD 8.99.21 (RPI2) #0: Thu Jun 28 17:22:09 UTC 2018
-[    1.000000] 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
-[    1.000000] total memory = 948 MB
-[    1.000000] avail memory = 930 MB
-[    1.000000] timecounter: Timecounters tick every 10.000 msec
-[    1.000000] Kernel RNG "entropy pool" monobit test FAILURE: 10300 ones
-[    1.000000] rnd: WARNING, ENTROPY POOL FAILED STATISTICAL TEST!
-[    1.000000] armfdt0 (root)
-[    1.000000] fdt0 at armfdt0: Raspberry Pi 3 Model B Plus Rev 1.3
-[    1.000000] fdt1 at fdt0
-[    1.000000] fdt2 at fdt1
-[    1.000000] fdt3 at fdt0
-[    1.000000] fdt4 at fdt0
-[    1.000000] fclock0 at fdt3: 19200000 Hz fixed clock (osc)
-[    1.000000] fclock1 at fdt3: 480000000 Hz fixed clock (otg)
-[    1.000000] cpus0 at fdt0
-[    1.000000] cpu0 at cpus0: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-[    1.000000] cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
-[    1.000000] cpu0: 32KB/64B 2-way L1 VIPT Instruction cache
-[    1.000000] cpu0: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-[    1.000000] cpu0: 512KB/64B 16-way write-through L2 PIPT Unified cache
-[    1.000000] vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-[    1.000000] cpu1 at cpus0
-[    1.000000] cpu2 at cpus0
-[    1.000000] cpu3 at cpus0
-[    1.000000] bcmicu0 at fdt1
-[    1.000000] bcmicu1 at fdt1: Multiprocessor
-[    1.000000] bcmcprman0 at fdt1: BCM283x Clock Controller
-[    1.000000] gtmr0 at fdt0: Generic Timer
-[    1.000000] gtmr0: interrupting on local_intc irq 3
-[    1.000000] armgtmr0 at gtmr0: ARMv7 Generic 64-bit Timer (19200 kHz)
-[    1.000000] timecounter: Timecounter "armgtmr0" frequency 19200000 Hz quality 500
-[    1.000003] bcmaux0 at fdt1
-[    1.000003] /soc/thermal@7e212000 at fdt1 not configured
-[    1.000003] /soc/dsi@7e209000 at fdt1 not configured
-[    1.000003] bcmgpio0 at fdt1: GPIO controller
-[    1.000003] bcmgpio0: pins 0..31 interrupting on icu irq 177
-[    1.000003] bcmgpio0: pins 32..54 interrupting on icu irq 178
-[    1.000003] gpio0 at bcmgpio0: 54 pins
-[    1.000003] /soc/firmware/gpio at fdt2 not configured
-[    1.000003] bcmdmac0 at fdt1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10
-[    1.000003] /soc/power at fdt1 not configured
-[    1.000003] /wifi-pwrseq at fdt0 not configured
-[    1.000003] bsciic0 at fdt1: Broadcom Serial Controller
-[    1.000003] iic0 at bsciic0: I2C bus
-[    1.000003] /phy at fdt0 not configured
-[    1.000003] bcmmbox0 at fdt1: VC mailbox
-[    1.000003] bcmmbox0: interrupting on icu irq 193
-[    1.000003] vcmbox0 at bcmmbox0
-[    1.000003] plcom0 at fdt1
-[    1.000003] plcom0: txfifo disabled
-[    1.000003] sdhost0 at fdt1: SD HOST controller
-[    1.000003] sdhost0: interrupting on icu irq 184
-[    1.000003] bsciic1 at fdt1: Broadcom Serial Controller
-[    1.000003] iic1 at bsciic1: I2C bus
-[    1.000003] com0 at fdt1: BCM AUX UART, working fifo
-[    1.000003] com0: console
-[    1.000003] com0: interrupting on icu irq 157
-[    1.000003] /soc/pwm@7e20c000 at fdt1 not configured
-[    1.000003] sdhc0 at fdt1: SDHC controller
-[    1.000003] sdhc0: interrupting on icu irq 190
-[    1.000003] bsciic2 at fdt1: Broadcom Serial Controller
-[    1.000003] iic2 at bsciic2: I2C bus
-[    1.000003] /soc/vec@7e806000 at fdt1 not configured
-[    1.000003] /soc/hdmi@7e902000 at fdt1 not configured
-[    1.000003] dwctwo0 at fdt1: USB controller
-[    1.000003] dwctwo0: interrupting on icu irq 137
-[    1.000003] /soc/v3d@7ec00000 at fdt1 not configured
-[    1.000003] /soc/gpu at fdt1 not configured
-[    1.000003] genfb0 at fdt1: switching to framebuffer console
-[    1.000003] genfb0: framebuffer at 0xfea1e000, size 800x600, depth 32, stride 3200
-[    1.000003] wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
-[    1.000003] wsmux1: connecting to wsdisplay0
-[    1.000003] wsdisplay0: screen 1-3 added (default, vt100 emulation)
-[    1.000003] vchiq0 at fdt1: BCM2835 VCHIQ
-[    1.000003] gpioleds0 at fdt0:
-[    1.000003] /soc/timer@7e003000 at fdt1 not configured
-[    1.000003] watchdog0 at fdt1: Power management, Reset and Watchdog controller
-[    1.000003] bcmrng0 at fdt1: RNG
-[    1.000003] /soc/pixelvalve@7e206000 at fdt1 not configured
-[    1.000003] /soc/pixelvalve@7e207000 at fdt1 not configured
-[    1.000003] /soc/hvs@7e400000 at fdt1 not configured
-[    1.000003] /soc/pixelvalve@7e807000 at fdt1 not configured
-[    1.000003] /soc/mailbox@7e00b840 at fdt1 not configured
-[    1.000003] timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-[    1.000003] cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-[    1.000003] cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
-[    1.407129] cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
-[    1.417115] cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-[    1.427117] cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
-[    1.437117] vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-[    1.447119] cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-[    1.457119] cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
-[    1.467122] cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
-[    1.477121] cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-[    1.477121] cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
-[    1.487123] vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-[    1.497124] cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-[    1.507126] cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
-[    1.517126] cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
-[    1.527129] cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-[    1.537128] cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
-[    1.547130] vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-[    1.607138] sdmmc0 at sdhost0
-[    1.617422] sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
-[    1.629966] sdmmc1 at sdhc0 slot 0
-[    1.638122] usb0 at dwctwo0: USB revision 2.0
-[    1.888153] uhub0 at usb0: NetBSD (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-[    1.888153] uhub0: 1 port with 1 removable, self powered
-[    1.888153] sdhc0: cmd timeout error
-[    1.918156] sdmmc0: SD card status: 4-bit, C10, U3, V30
-[    1.918156] ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x0b8001da:0x113>
-[    1.928158] ld0: 29423 MB, 7472 cyl, 128 head, 63 sec, 512 bytes/sect x 60258304 sectors
-[    1.928158] ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
-[    1.948164] IPsec: Initialized Security Association Processing.
-[    1.988164] sdmmc1: autoconfiguration error: unknown tuple code 0x91, length 3
-[    1.988164] (manufacturer 0x2d0, product 0xa9a6) at sdmmc1 function 1 not configured
-[    1.988164] (manufacturer 0x2d0, product 0xa9a6) at sdmmc1 function 2 not configured
-[    1.988164] (manufacturer 0x2d0, product 0xa9a6, standard function interface code 0x2) at sdmmc1 function 3 not configured
-[    3.708347] uhub1 at uhub0 port 1: vendor 0424 (0x424) product 2514 (0x2514), class 9/0, rev 2.00/b.b3, addr 2
-[    3.708347] uhub1: multiple transaction translators
-[    3.718350] uhub1: 4 ports with 3 removable, self powered
-[    5.018515] uhub2 at uhub1 port 1: vendor 0424 (0x424) product 2514 (0x2514), class 9/0, rev 2.00/b.b3, addr 3
-[    5.018515] uhub2: multiple transaction translators
-[    5.028517] uhub2: 3 ports with 2 removable, self powered
-[    6.348693] uhidev0 at uhub2 port 3 configuration 1 interface 0
-[    6.348693] uhidev0: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 4, iclass 3/1
-[    6.348693] ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
-[    6.758747] wskbd0 at ukbd0: console keyboard, using wsdisplay0
-[    6.758747] uhidev1 at uhub2 port 3 configuration 1 interface 1
-[    6.758747] uhidev1: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 4, iclass 3/1
-[    6.768749] uhidev1: 1 report ids
-[    6.768749] ums0 at uhidev1 reportid 1: 3 buttons and Z dir
-[    6.768749] wsmouse0 at ums0 mux 0
-[    6.768749] uhidev2 at uhub2 port 3 configuration 1 interface 2
-[    6.768749] uhidev2: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 4, iclass 3/0
-[    6.768749] uhid0 at uhidev2: input=3, output=0, feature=0
-[    6.778750] uhub0: autoconfiguration error: illegal enable change, port 1
-[    7.738878] ugen0 at uhub2 port 1
-[    7.738878] ugen0: vendor 0424 (0x424) product 7800 (0x7800), rev 2.10/3.00, addr 5
-[    7.748879] WARNING: 2 errors while detecting hardware; check system log.
-[    7.748879] boot device: ld0
-[    7.758881] root on ld0a dumps on ld0b
-[    7.768882] root file system type: ffs
-[    7.768882] kern.module.path=/stand/evbarm/8.99.21/modules
-[    7.778883] vchiq0: interrupting on icu irq 194
-[    7.778883] vchiq: vchiq_init_state: slot_zero = 0xcaaa0000, is_master = 0
-[    7.778883] vchiq: local ver 8 (min 3), remote ver 8.
-[    7.778883] vcaudio0 at vchiq0: auds
-[    7.778883] vchiq_get_state: g_state.remote->initialised != 1 (0)
-[    7.778883] vchiq: vchiq_initialise: videocore initialized after 1 retries
+NetBSD 8.99.22 (RPI2) #0: Thu Jul 26 12:36:29 EDT 2018
+	william@xubuntu-dtrain:/home/william/Projects/net-dbg/Net-dbg-2018-07-24-04-32-01/src/sys/arch/evbarm/compile/obj/RPI2
+total memory = 948 MB
+avail memory = 930 MB
+timecounter: Timecounters tick every 10.000 msec
+armfdt0 (root)
+simplebus0 at armfdt0: Raspberry Pi 3 Model B Plus Rev 1.3
+simplebus1 at simplebus0
+simplebus2 at simplebus0
+fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
+simplebus3 at simplebus1
+fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
+cpus0 at simplebus0
+cpu0 at cpus0: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu0: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu0: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu0: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu1 at cpus0
+cpu2 at cpus0
+cpu3 at cpus0
+simplebus4 at simplebus0
+bcmicu0 at simplebus1
+bcmicu1 at simplebus1: Multiprocessor
+bcmcprman0 at simplebus1: BCM283x Clock Controller
+gtmr0 at simplebus0: Generic Timer
+gtmr0: interrupting on local_intc irq 3
+armgtmr0 at gtmr0: ARM Generic Timer (19200 kHz)
+timecounter: Timecounter "armgtmr0" frequency 19200000 Hz quality 500
+bcmaux0 at simplebus1
+/soc/thermal@7e212000 at simplebus1 not configured
+/soc/dsi@7e209000 at simplebus1 not configured
+bcmgpio0 at simplebus1: GPIO controller
+bcmgpio0: pins 0..31 interrupting on icu irq 177
+bcmgpio0: pins 32..54 interrupting on icu irq 178
+gpio0 at bcmgpio0: 54 pins
+/soc/firmware/gpio at simplebus3 not configured
+bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10
+/soc/power at simplebus1 not configured
+/wifi-pwrseq at simplebus0 not configured
+bsciic0 at simplebus1: Broadcom Serial Controller
+iic0 at bsciic0: I2C bus
+/phy at simplebus0 not configured
+bcmmbox0 at simplebus1: VC mailbox
+bcmmbox0: interrupting on icu irq 193
+vcmbox0 at bcmmbox0
+plcom0 at simplebus1
+plcom0: txfifo disabled
+sdhost0 at simplebus1: SD HOST controller
+sdhost0: interrupting on icu irq 184
+bsciic1 at simplebus1: Broadcom Serial Controller
+iic1 at bsciic1: I2C bus
+com0 at simplebus1: BCM AUX UART, working fifo
+com0: console
+com0: interrupting on icu irq 157
+/soc/pwm@7e20c000 at simplebus1 not configured
+sdhc0 at simplebus1: SDHC controller
+sdhc0: interrupting on icu irq 190
+bsciic2 at simplebus1: Broadcom Serial Controller
+iic2 at bsciic2: I2C bus
+/soc/vec@7e806000 at simplebus1 not configured
+/soc/hdmi@7e902000 at simplebus1 not configured
+dwctwo0 at simplebus1: USB controller
+dwctwo0: interrupting on icu irq 137
+/soc/v3d@7ec00000 at simplebus1 not configured
+/soc/gpu at simplebus1 not configured
+genfb0 at simplebus1: switching to framebuffer console
+genfb0: framebuffer at 0xfea1e000, size 800x600, depth 32, stride 3200
+wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+wsdisplay0: screen 1-3 added (default, vt100 emulation)
+vchiq0 at simplebus1: BCM2835 VCHIQ
+gpioleds0 at simplebus0:
+/soc/timer@7e003000 at simplebus1 not configured
+watchdog0 at simplebus1: Power management, Reset and Watchdog controller
+bcmrng0 at simplebus1: RNG
+/soc/pixelvalve@7e206000 at simplebus1 not configured
+/soc/pixelvalve@7e207000 at simplebus1 not configured
+/soc/hvs@7e400000 at simplebus1 not configured
+/soc/pixelvalve@7e807000 at simplebus1 not configured
+/soc/mailbox@7e00b840 at simplebus1 not configured
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+sdmmc0 at sdhost0
+sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
+sdmmc1 at sdhc0 slot 0
+usb0 at dwctwo0: USB revision 2.0
+uhub0 at usb0: NetBSD (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub0: 1 port with 1 removable, self powered
+sdhc0: cmd timeout error
+sdmmc0: SD card status: 4-bit, C10, U3, V30
+ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x0b8001da:0x113>
+ld0: 29423 MB, 7472 cyl, 128 head, 63 sec, 512 bytes/sect x 60258304 sectors
+IPsec: Initialized Security Association Processing.
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+sdmmc1: autoconfiguration error: unknown tuple code 0x91, length 3
+(manufacturer 0x2d0, product 0xa9a6) at sdmmc1 function 1 not configured
+(manufacturer 0x2d0, product 0xa9a6) at sdmmc1 function 2 not configured
+(manufacturer 0x2d0, product 0xa9a6, standard function interface code 0x2) at sdmmc1 function 3 not configured
+uhub1 at uhub0 port 1: vendor 0424 (0x424) product 2514 (0x2514), class 9/0, rev 2.00/b.b3, addr 2
+uhub1: multiple transaction translators
+uhub1: 4 ports with 3 removable, self powered
+uhub2 at uhub1 port 1: vendor 0424 (0x424) product 2514 (0x2514), class 9/0, rev 2.00/b.b3, addr 3
+uhub2: multiple transaction translators
+uhub2: 3 ports with 2 removable, self powered
+uhidev0 at uhub2 port 3 configuration 1 interface 0
+uhidev0: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
+ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub2 port 3 configuration 1 interface 1
+uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
+uhidev1: 2 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhub0: autoconfiguration error: illegal enable change, port 1
+ugen0 at uhub2 port 1
+ugen0: vendor 0424 (0x424) product 7800 (0x7800), rev 2.10/3.00, addr 5
+WARNING: 2 errors while detecting hardware; check system log.
+boot device: ld0
+root on ld0a dumps on ld0b
+root file system type: ffs
+kern.module.path=/stand/evbarm/8.99.22/modules
+vchiq0: interrupting on icu irq 194
+vchiq: vchiq_init_state: slot_zero = 0xcaaa0000, is_master = 0
+vchiq: local ver 8 (min 3), remote ver 8.
+vcaudio0 at vchiq0: auds
+vchiq_get_state: g_state.remote->initialised != 1 (0)
+vchiq: vchiq_initialise: videocore initialized after 1 retries
 
-[    7.778883] WARNING: no TOD clock present
-[    7.778883] WARNING: using filesystem time
-[    7.783505] WARNING: CHECK AND RESET THE DATE!
-[    8.869028] audio0 at vcaudio0: half duplex, playback, capture, mmap, independent
-[    8.869028] vcaudio0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-[    8.869028] vcaudio0: Latency: 100 milliseconds
-[    8.869028] spkr0 at audio0: PC Speaker (synthesized)
-[    8.869028] wsbell at spkr0 not configured
-[   15.389902] wsdisplay0: screen 4 added (default, vt100 emulation)
+WARNING: no TOD clock present
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+audio0 at vcaudio0: half duplex, playback, capture, mmap, independent
+vcaudio0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+vcaudio0: Latency: 100 milliseconds
+spkr0 at audio0: PC Speaker (synthesized)
+wsbell at spkr0 not configured
+wsdisplay0: screen 4 added (default, vt100 emulation)
