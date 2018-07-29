@@ -174,6 +174,18 @@ OSC京都展示物
 2017年
 ~~~~~~~~~~~~~~~~~~
 
+.. image::  ../Picture/2017/08/04/DSC_3918.JPG
+.. image::  ../Picture/2017/08/04/DSC_3897.JPG
+.. image::  ../Picture/2017/08/04/DSC_3917.JPG
+.. image::  ../Picture/2017/08/04/DSC_3898.JPG
+.. image::  ../Picture/2017/08/05/DSC_3947.JPG
+.. image::  ../Picture/2017/08/04/DSC_3909.JPG
+.. image::  ../Picture/2017/08/04/DSC_3919.JPG
+.. image::  ../Picture/2017/08/04/DSC_3901.JPG
+.. image::  ../Picture/2017/08/04/DSC_3920.JPG
+.. image::  ../Picture/2017/08/04/DSC_3908.JPG
+.. image::  ../Picture/2017/08/04/DSC_3925.JPG
+.. image::  ../Picture/2017/08/04/DSC_3906.JPG
 
 2016年
 ~~~~~~~~~~~~~~~~~~
@@ -181,19 +193,10 @@ OSC京都展示物
 .. image::  ../Picture/2016/07/29/1469756522001.jpg
 .. image::  ../Picture/2016/07/29/1469759878054.jpg
 .. image::  ../Picture/2016/07/29/DSC_2050.JPG
-.. image::  ../Picture/2016/07/29/DSC_2055.JPG
-.. image::  ../Picture/2016/07/29/DSC_2058.JPG
 .. image::  ../Picture/2016/07/29/DSC_2059.JPG
 .. image::  ../Picture/2016/07/29/DSC_2061.JPG
-.. image::  ../Picture/2016/07/29/DSC_2063.JPG
 .. image::  ../Picture/2016/07/29/DSC_2076.JPG
 .. image::  ../Picture/2016/07/29/DSC_2079.JPG
-.. image::  ../Picture/2016/07/29/DSC_2081.JPG
-.. image::  ../Picture/2016/07/30/DSC_2105.JPG
-.. image::  ../Picture/2016/07/30/DSC_2110.JPG
-.. image::  ../Picture/2016/07/30/DSC_2111.JPG
-.. image::  ../Picture/2016/07/30/DSC_2112.JPG
-.. image::  ../Picture/2016/07/30/DSC_2114.JPG
 .. image::  ../Picture/2016/07/30/DSC_2115.JPG
 .. image::  ../Picture/2016/07/30/DSC_2119.JPG
 .. image::  ../Picture/2016/07/30/DSC_2121.JPG
@@ -204,15 +207,12 @@ OSC京都展示物
 ~~~~~~~~~~~~~~~~~~
 
 .. image::  ../Picture/2015/08/08/DSC_1205.jpg
-.. image::  ../Picture/2015/08/07/DSC07552.JPG
 .. image::  ../Picture/2015/08/07/DSC07553.JPG
 .. image::  ../Picture/2015/08/07/DSC07557.JPG
 .. image::  ../Picture/2015/08/07/DSC07559.JPG
 .. image::  ../Picture/2015/08/07/DSC07560.JPG
 .. image::  ../Picture/2015/08/07/DSC_1169.jpg
-.. image::  ../Picture/2015/08/07/DSC_1189.jpg
 .. image::  ../Picture/2015/08/08/DSC07572.JPG
-.. image::  ../Picture/2015/08/08/DSC07581.JPG
 .. image::  ../Picture/2015/08/08/DSC07593.JPG
 .. image::  ../Picture/2015/08/08/DSC_1203.jpg
 
@@ -223,35 +223,26 @@ OSC京都展示物
 .. image::  ../Picture/2014/08/01/DSC_0271.jpg
 .. image::  ../Picture/2014/08/01/DSC_0280.jpg
 .. image::  ../Picture/2014/08/01/DSC_0281.jpg
-.. image::  ../Picture/2014/08/01/DSC_0282.jpg
-.. image::  ../Picture/2014/08/01/DSC_0283.jpg
-.. image::  ../Picture/2014/08/01/DSC_0284.jpg
 .. image::  ../Picture/2014/08/01/DSC_0294.jpg
 .. image::  ../Picture/2014/08/01/DSC_0296.jpg
 .. image::  ../Picture/2014/08/02/DSC05265.JPG
 .. image::  ../Picture/2014/08/02/DSC05267.JPG
 .. image::  ../Picture/2014/08/02/DSC05270.JPG
-.. image::  ../Picture/2014/08/02/DSC05274.JPG
 .. image::  ../Picture/2014/08/02/DSC05279.JPG
-.. image::  ../Picture/2014/08/02/DSC05281.JPG
 .. image::  ../Picture/2014/08/02/DSC05289.JPG
-.. image::  ../Picture/2014/08/02/DSC_0301.jpg
 
 2013年
 ~~~~~~~~~~~~~~~~~~
 
 .. image::  ../Picture/2013/08/02/DSC_2271.jpg
-.. image::  ../Picture/2013/08/02/DSC_2281.jpg
 .. image::  ../Picture/2013/08/02/DSC_2282.jpg
 .. image::  ../Picture/2013/08/02/DSC_2283.jpg
 .. image::  ../Picture/2013/08/02/DSC_2295.jpg
 .. image::  ../Picture/2013/08/02/DSC_2296.jpg
 .. image::  ../Picture/2013/08/02/DSC_2302.jpg
 .. image::  ../Picture/2013/08/02/DSC_2305.jpg
-.. image::  ../Picture/2013/08/03/DSC_2320.jpg
 .. image::  ../Picture/2013/08/03/DSC_2329.jpg
 .. image::  ../Picture/2013/08/03/DSC_2331.jpg
-.. image::  ../Picture/2013/08/03/DSC_2343.jpg
 
 2012年
 ~~~~~~~~~~~~~~~~~~
