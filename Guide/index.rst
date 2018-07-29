@@ -23,6 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- OSC/OSC2018
+ Place/kyoto
  RPI/RPIupdate2018
- Place/2017
+ Place/intro

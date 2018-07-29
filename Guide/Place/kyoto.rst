@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-7 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -46,8 +46,8 @@
  2014 Kansai＠Kyoto,8/1-2,1200,51,京都リサーチパーク
  2015 Kansai＠Kyoto,8/7-8,1150,59,京都リサーチパーク
  2016 Kyoto,7/29-30,1000,59,京都リサーチパーク
- 2017 Kyoto,8/4-5,,49,京都リサーチパーク
-
+ 2017 Kyoto,8/4-5,750,49,京都リサーチパーク
+ 2018 Kyoto,8/3-4,,48,京都リサーチパーク
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -106,13 +106,14 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 111,OSC2017京都,http://www.soum.co.jp/~jun/OSC2017kyoto.pdf
- 92,OSC2016京都,http://www.soum.co.jp/~jun/OSC2016kyoto.pdf
- 75,OSC2015京都,http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
- 61,OSC2014京都,http://www.soum.co.jp/~jun/OSC2014kyoto.pdf
- 45,OSC2013京都,http://www.soum.co.jp/~jun/OSC2013kyoto.pdf
- 29,OSC2012京都,http://www.soum.co.jp/~jun/OSC2012kyoto.pdf
- 12,OSC2011京都,http://www.soum.co.jp/~jun/OSC2011kyoto.pdf
+ 128,OSC2018京都,http://www.re.soum.co.jp/~jun/OSC2018kyoto.pdf
+ 111,OSC2017京都,http://www.re.soum.co.jp/~jun/OSC2017kyoto.pdf
+ 92,OSC2016京都,http://www.re.soum.co.jp/~jun/OSC2016kyoto.pdf
+ 75,OSC2015京都,http://www.re.soum.co.jp/~jun/OSC2015kyoto.pdf
+ 61,OSC2014京都,http://www.re.soum.co.jp/~jun/OSC2014kyoto.pdf
+ 45,OSC2013京都,http://www.re.soum.co.jp/~jun/OSC2013kyoto.pdf
+ 29,OSC2012京都,http://www.re.soum.co.jp/~jun/OSC2012kyoto.pdf
+ 12,OSC2011京都,http://www.re.soum.co.jp/~jun/OSC2011kyoto.pdf
 
 
 togetterまとめ
@@ -121,7 +122,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2017京都 NetBSDブース展示の記録,http://togetter.com/li/
+ OSC2018京都 NetBSDブース展示の記録,http://togetter.com/li/
+ OSC2017京都 NetBSDブース展示の記録,https://togetter.com/li/1136708
  OSC2016京都 NetBSDブース展示の記録,http://togetter.com/li/1005828
  OSC2015京都 NetBSDブース展示の記録,http://togetter.com/li/857157
  OSC2014京都 NetBSDブース展示の記録,http://togetter.com/li/700617
@@ -168,6 +170,9 @@ OSC京都展示物
 #. Squeak on hpcmips 
 #. OneSeg TV recording with hpcmips,
 #. bc benchmark time x electricity consumption 
+
+2017年
+~~~~~~~~~~~~~~~~~~
 
 
 2016年
