@@ -4,8 +4,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.22 (RPI2) #0: Thu Jul 26 12:36:29 EDT 2018
-	william@xubuntu-dtrain:/home/william/Projects/net-dbg/Net-dbg-2018-07-24-04-32-01/src/sys/arch/evbarm/compile/obj/RPI2
+NetBSD 8.99.22 (RPI2) #0: Sat Jul 28 14:13:13 UTC 2018
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 930 MB
 timecounter: Timecounters tick every 10.000 msec
@@ -134,18 +134,14 @@ scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 sd0: 61057 MB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 125045424 sectors
 uhidev0 at uhub1 port 4 configuration 1 interface 0
-uhidev0: vendor 0461 (0x461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 5, iclass 3/1
-ums0 at uhidev0: 3 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
-uhidev1 at uhub1 port 5 configuration 1 interface 0
-uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 6, iclass 3/1
-ukbd0 at uhidev1: 8 Variable keys, 6 Array codes
+uhidev0: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, iclass 3/1
+ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev2 at uhub1 port 5 configuration 1 interface 1
-uhidev2: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 6, iclass 3/0
-uhidev2: 2 report ids
-uhid0 at uhidev2 reportid 1: input=1, output=0, feature=0
-uhid1 at uhidev2 reportid 2: input=3, output=0, feature=0
+uhidev1 at uhub1 port 4 configuration 1 interface 1
+uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, iclass 3/0
+uhidev1: 2 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
 uhub0: autoconfiguration error: illegal enable change, port 1
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
