@@ -1,22 +1,35 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2018-06-16/2018-06-16/g
-:1,$s/8.99.19/8.99.19/g
-:1,$s/201806090120Z/201806090120Z/g
-:1,$s?2018/06/11/msg004851.html?2018/06/11/msg004851.html?
+:1,$s/2018-08-04/2018-08-04/g
+:1,$s/8.99.22/8.99.22/g
+:1,$s/201807281710Z/201807281710Z/g
+:1,$s?2018/07/29/msg004969.html?2018/07/29/msg004969.html?
 
-2018-06-16-netbsd-raspi-earmv6hf.img
+2018-08-04-netbsd-raspi-earmv6hf.img
 
 For Open Source Conference 2018 Okinawa
-I've updated 2018-06-16-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2018-08-04-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2018/06/11/msg004851.html
+http://mail-index.netbsd.org/port-arm/2018/07/29/msg004969.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-06-16-earmv6hf/2018-06-16-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-08-04-earmv6hf/2018-08-04-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.19 evbarm-earmv6hf 201806090120Z rpi.img from nyftp.
-- Firmware update 20180410 on /boot
+- NetBSD-current 8.99.22 evbarm-earmv6hf 201807281710Z rpi.img from nyftp.
+- pre-installed packages:
+ https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
+- Firmware update
+ 20180410 on /boot for support newer RPI.
+- sysinfo and pkgsrc update
+ https://github.com/ebijun/NetBSD/commit/789388391429c0c396e2c35771155b0fddae22f
+9#diff-4a755d73dbba5da21bbf783139f086dc
+- dhcpcd-7.0.7
+- git-base-2.18.0
+- icu-62.1
+- mikutter 3.7.4
+ I make sample API key,pre-installed.
+ https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/root/.mikutter/plugin
+ https://github.com/Akkiesoft/how-to-make-mikutter-work-again
 
 Problem:
 - omxplayer:
