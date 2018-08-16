@@ -1,0 +1,209 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 7.99.35 (GENERIC.201608012230Z)
+total memory = 1014 MB
+avail memory = 978 MB
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+IBM 23717VJ (ThinkPad X40)
+mainbus0 (root)
+ACPI: RSDP 0x00000000000F6D10 000024 (v02 IBM   )
+ACPI: XSDT 0x000000003F6E7E57 000054 (v01 IBM    TP-1U    00002080  LTP 00000000)
+ACPI: FACP 0x000000003F6E7F00 0000F4 (v03 IBM    TP-1U    00002080 IBM  00000001)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 64/32 (20160527/tbfadt-652)
+ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe1Block: 0/32 (20160527/tbfadt-652)
+ACPI BIOS Warning (bug): Optional FADT field Gpe1Block has valid Address but zero Length: 0x000000000000102C/0x0 (20160527/tbfadt-684)
+ACPI: DSDT 0x000000003F6E80E7 00ECE9 (v01 IBM    TP-1U    00002080 MSFT 0100000E)
+ACPI: FACS 0x000000003F6F8000 000040
+ACPI: FACS 0x000000003F6F8000 000040
+ACPI: SSDT 0x000000003F6E80B4 000033 (v01 IBM    TP-1U    00002080 MSFT 0100000E)
+ACPI: ECDT 0x000000003F6F6DD0 000052 (v01 IBM    TP-1U    00002080 IBM  00000001)
+ACPI: TCPA 0x000000003F6F6E22 000032 (v01 IBM    TP-1U    00002080 PTL  00000001)
+ACPI: APIC 0x000000003F6F6E54 00005A (v01 IBM    TP-1U    00002080 IBM  00000001)
+ACPI: BOOT 0x000000003F6F6FD8 000028 (v01 IBM    TP-1U    00002080  LTP 00000001)
+ACPI: 2 ACPI AML tables successfully acquired and loaded
+
+ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 24 pins
+cpu0 at mainbus0 apid 0
+cpu0: Intel(R) Pentium(R) M processor 1200MHz, id 0x695
+acpi0 at mainbus0: Intel ACPICA 20160527
+acpi0: X/RSDT: OemId <IBM   ,TP-1U   ,00002080>, AslId < LTP,00000000>
+acpiecdt0 at acpi0: ACPI Embedded Controller via ECDT
+acpi0: SCI interrupting at int 9
+timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+acpiec0 at acpi0 (EC, PNP0C09-0): using acpiecdt0
+MEM (PNP0C01) at acpi0 not configured
+acpilid0 at acpi0 (LID, PNP0C0D): ACPI Lid Switch
+acpibut0 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
+SIO (PNP0C02) at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43 irq 0
+pcppi1 at acpi0 (SPKR, PNP0800): io 0x61
+midi0 at pcppi1: PC speaker
+sysbeep0 at pcppi1
+FPU (PNP0C04) at acpi0 not configured
+pckbc1 at acpi0 (KBD, PNP0303) (kbd port): io 0x60,0x64 irq 1
+pckbc2 at acpi0 (MOU, IBM3780) (aux port): irq 12
+LPT (PNP0400) at acpi0 not configured
+acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
+acpibat0: SANYO LION rechargeable battery
+acpibat0: granularity: low->warn 0.001 Wh, warn->full 0.001 Wh
+acpiacad0 at acpi0 (AC, ACPI0003-0): ACPI AC Adapter
+thinkpad0 at acpi0 (HKEY, IBM0068)
+acpivga0 at acpi0 (VID): ACPI Display Adapter
+acpiout0 at acpivga0 (LCD0, 0x0400): ACPI Display Output Device
+acpiout1 at acpivga0 (CRT0, 0x0100): ACPI Display Output Device
+acpivga0: connected output devices:
+acpivga0:   0x0400 (acpiout0): Unknown Output Device, head 0
+acpivga0:   0x0100 (acpiout1): Ext. Monitor, head 0
+GDCK (IBM007A) at acpi0 not configured
+acpitz0 at acpi0 (THM0): cpu0
+acpitz0: levels: critical 95.0 C, passive 90.5 C, passive cooling
+apm0 at acpi0: Power Management spec V1.2
+attimer1: attached to pcppi1
+pckbd0 at pckbc1 (kbd slot)
+pckbc1: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc1 (aux slot)
+pckbc1: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: vendor 8086 product 3580 (rev. 0x02)
+agp0 at pchb0: i855-family chipset
+agp0: detected 8060k stolen memory
+agp0: aperture at 0xe0000000, size 0x8000000
+vendor 8086 product 3584 (miscellaneous system, revision 0x02) at pci0 dev 0 function 1 not configured
+vendor 8086 product 3585 (miscellaneous system, revision 0x02) at pci0 dev 0 function 3 not configured
+i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 3582 (rev. 0x02)
+drm: Memory usable by graphics device = 128M
+drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
+drm: Driver supports precise vblank timestamp query.
+i915drmkms0: interrupting at ioapic0 pin 16 (i915)
+drm: initialized overlay support
+intelfb0 at i915drmkms0
+i915drmkms0: info: registered panic notifier
+intelfb0: framebuffer at 0xda250000, size 1024x768, depth 32, stride 4096
+wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+vendor 8086 product 3582 (miscellaneous display, revision 0x02) at pci0 dev 2 function 1 not configured
+uhci0 at pci0 dev 29 function 0: vendor 8086 product 24c2 (rev. 0x01)
+uhci0: interrupting at ioapic0 pin 16
+usb0 at uhci0: USB revision 1.0
+uhci1 at pci0 dev 29 function 1: vendor 8086 product 24c4 (rev. 0x01)
+uhci1: interrupting at ioapic0 pin 19
+usb1 at uhci1: USB revision 1.0
+uhci2 at pci0 dev 29 function 2: vendor 8086 product 24c7 (rev. 0x01)
+uhci2: interrupting at ioapic0 pin 18
+usb2 at uhci2: USB revision 1.0
+ehci0 at pci0 dev 29 function 7: vendor 8086 product 24cd (rev. 0x01)
+ehci0: interrupting at ioapic0 pin 23
+ehci0: EHCI version 1.0
+ehci0: companion controllers, 2 ports each: uhci0 uhci1 uhci2
+usb3 at ehci0: USB revision 2.0
+ppb0 at pci0 dev 30 function 0: vendor 8086 product 2448 (rev. 0x81)
+pci1 at ppb0 bus 2
+pci1: i/o space, memory space enabled
+cbb0 at pci1 dev 0 function 0: vendor 1180 product 0476 (rev. 0x8d)
+sdhc0 at pci1 dev 0 function 1: vendor 1180 product 0822 (rev. 0x13)
+sdhc0: interrupting at ioapic0 pin 17
+sdhc0: SDHC 1.0, rev 2, SDMA, 33000 kHz, 3.3V, 512 byte blocks
+sdmmc0 at sdhc0 slot 0
+wm0 at pci1 dev 1 function 0: Intel i82541GI Mobile 1000BASE-T Ethernet (rev. 0x00)
+wm0: interrupting at ioapic0 pin 20
+wm0: 32-bit 33MHz PCI bus
+wm0: 64 words (6 address bits) MicroWire EEPROM
+wm0: Ethernet address 00:0a:e4:23:72:22
+igphy0 at wm0 phy 1: Intel IGP01E1000 Gigabit PHY, rev. 0
+igphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+ath0 at pci1 dev 2 function 0: Atheros 5212
+ath0: interrupting at ioapic0 pin 21
+ath0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ath0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+ath0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+ath0: mac 5.6 phy 4.1 5 GHz radio 1.7 2 GHz radio 2.3
+cbb0: cacheline 0x0 lattimer 0x40
+cbb0: bhlc 0x824000
+cbb0: interrupting at ioapic0 pin 16
+cardslot0 at cbb0
+cardbus0 at cardslot0: bus 3
+pcmcia0 at cardslot0
+ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 24cc (rev. 0x01)
+timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
+ichlpcib0: 24-bit timer
+tco0 at ichlpcib0: TCO (watchdog) timer configured.
+tco0: Min/Max interval 2/37 seconds
+ichlpcib0: SpeedStep enabled
+gpio0 at ichlpcib0: 64 pins
+piixide0 at pci0 dev 31 function 1: Intel 82801DBM IDE Controller (ICH4-M) (rev. 0x01)
+piixide0: bus-master DMA support present
+piixide0: primary channel configured to compatibility mode
+piixide0: primary channel interrupting at ioapic0 pin 14
+atabus0 at piixide0 channel 0
+piixide0: secondary channel configured to compatibility mode
+piixide0: secondary channel interrupting at ioapic0 pin 15
+atabus1 at piixide0 channel 1
+ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 24c3 (rev. 0x01)
+ichsmb0: interrupting at ioapic0 pin 17
+iic0 at ichsmb0: I2C bus
+auich0 at pci0 dev 31 function 5: i82801DB/DBM (ICH4/ICH4M) AC-97 Audio
+auich0: interrupting at ioapic0 pin 17
+auich0: ac97: Analog Devices AD1981B codec; headphone, 20 bit DAC, no 3D stereo
+auich0: ac97: ext id 0x601<AC97_22,AMAP,VRA>
+vendor 8086 product 24c6 (modem communications, revision 0x01) at pci0 dev 31 function 6 not configured
+isa0 at ichlpcib0
+lpt2 at isa0 port 0x3bc-0x3bf irq : polled
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: HLT, lat   1 us, pow  1000 mW
+acpicpu0: C2: I/O, lat   1 us, pow   500 mW
+acpicpu0: C3: I/O, lat  85 us, pow   250 mW
+acpicpu0: P0: FFH, lat 500 us, pow 12000 mW, 1200 MHz
+acpicpu0: P1: FFH, lat 500 us, pow 11000 mW, 1100 MHz
+acpicpu0: P2: FFH, lat 500 us, pow 10000 mW, 1000 MHz
+acpicpu0: P3: FFH, lat 500 us, pow  9000 mW,  900 MHz
+acpicpu0: P4: FFH, lat 500 us, pow  8000 mW,  800 MHz
+acpicpu0: P5: FFH, lat 500 us, pow  6000 mW,  600 MHz
+acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
+acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
+acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
+acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
+acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
+acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
+acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
+acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+auich0: measured ac97 link rate at 47999 Hz, will use 48000 Hz
+audio0 at auich0: full duplex, playback, capture, mmap, independent
+acpiacad0: AC adapter online.
+uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0: 2 ports with 2 removable, self powered
+uhub1 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1: 2 ports with 2 removable, self powered
+uhub2 at usb2: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+uhub3 at usb3: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub3: 6 ports with 6 removable, self powered
+IPsec: Initialized Security Association Processing.
+uhub4 at uhub3 port 1: vendor 04b3 product 4484, class 9/0, rev 2.00/0.01, addr 2
+uhub4: multiple transaction translators
+uhub4: 3 ports with 3 removable, self powered
+wd0 at atabus0 drive 0
+wd0: <HITACHI_DK13FA-40B>
+wd0: drive supports 16-sector PIO transfers, LBA addressing
+wd0: 38154 MB, 77520 cyl, 16 head, 63 sec, 512 bytes/sect x 78140160 sectors
+wd0: 32-bit data port
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+wd0(piixide0:0:0): using PIO mode 4, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+boot device: wd0
+root on wd0a dumps on wd0b
+root file system type: ffs
+kern.module.path=/stand/i386/7.99.35/modules
+WARNING: clock gained 739 days
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)
