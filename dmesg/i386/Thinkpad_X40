@@ -1,25 +1,26 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
-    The NetBSD Foundation, Inc.  All rights reserved.
+2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+2018 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
-    The Regents of the University of California.  All rights reserved.
+The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.35 (GENERIC.201608012230Z)
+NetBSD 8.99.23 (GENERIC) #0: Sun Aug  5 06:48:50 UTC 2018
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC
 total memory = 1014 MB
-avail memory = 978 MB
+avail memory = 977 MB
+rnd: seeded with 128 bits
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
+running cgd selftest aes-xts-256 aes-xts-512 done
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
 IBM 23717VJ (ThinkPad X40)
 mainbus0 (root)
 ACPI: RSDP 0x00000000000F6D10 000024 (v02 IBM   )
 ACPI: XSDT 0x000000003F6E7E57 000054 (v01 IBM    TP-1U    00002080  LTP 00000000)
 ACPI: FACP 0x000000003F6E7F00 0000F4 (v03 IBM    TP-1U    00002080 IBM  00000001)
-ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe0Block: 64/32 (20160527/tbfadt-652)
-ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Gpe1Block: 0/32 (20160527/tbfadt-652)
-ACPI BIOS Warning (bug): Optional FADT field Gpe1Block has valid Address but zero Length: 0x000000000000102C/0x0 (20160527/tbfadt-684)
+Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 64/32 (20180427/tbfadt-642)
+Firmware Warning (ACPI): Optional FADT field Gpe1Block has valid Address but zero Length: 0x000000000000102C/0x0 (20180427/tbfadt-693)
 ACPI: DSDT 0x000000003F6E80E7 00ECE9 (v01 IBM    TP-1U    00002080 MSFT 0100000E)
-ACPI: FACS 0x000000003F6F8000 000040
 ACPI: FACS 0x000000003F6F8000 000040
 ACPI: SSDT 0x000000003F6E80B4 000033 (v01 IBM    TP-1U    00002080 MSFT 0100000E)
 ACPI: ECDT 0x000000003F6F6DD0 000052 (v01 IBM    TP-1U    00002080 IBM  00000001)
@@ -27,14 +28,15 @@ ACPI: TCPA 0x000000003F6F6E22 000032 (v01 IBM    TP-1U    00002080 PTL  00000001
 ACPI: APIC 0x000000003F6F6E54 00005A (v01 IBM    TP-1U    00002080 IBM  00000001)
 ACPI: BOOT 0x000000003F6F6FD8 000028 (v01 IBM    TP-1U    00002080  LTP 00000001)
 ACPI: 2 ACPI AML tables successfully acquired and loaded
-
 ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 24 pins
 cpu0 at mainbus0 apid 0
 cpu0: Intel(R) Pentium(R) M processor 1200MHz, id 0x695
-acpi0 at mainbus0: Intel ACPICA 20160527
+cpu0: package 0, core 0, smt 0
+acpi0 at mainbus0: Intel ACPICA 20180427
 acpi0: X/RSDT: OemId <IBM   ,TP-1U   ,00002080>, AslId < LTP,00000000>
 acpiecdt0 at acpi0: ACPI Embedded Controller via ECDT
 acpi0: SCI interrupting at int 9
+acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 acpiec0 at acpi0 (EC, PNP0C09-0): using acpiecdt0
 MEM (PNP0C01) at acpi0 not configured
@@ -87,7 +89,7 @@ i915drmkms0: interrupting at ioapic0 pin 16 (i915)
 drm: initialized overlay support
 intelfb0 at i915drmkms0
 i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xda250000, size 1024x768, depth 32, stride 4096
+intelfb0: framebuffer at 0xda1d0000, size 1024x768, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vendor 8086 product 3582 (miscellaneous display, revision 0x02) at pci0 dev 2 function 1 not configured
@@ -103,7 +105,7 @@ usb2 at uhci2: USB revision 1.0
 ehci0 at pci0 dev 29 function 7: vendor 8086 product 24cd (rev. 0x01)
 ehci0: interrupting at ioapic0 pin 23
 ehci0: EHCI version 1.0
-ehci0: companion controllers, 2 ports each: uhci0 uhci1 uhci2
+ehci0: 3 companion controllers, 2 ports each: uhci0 uhci1 uhci2
 usb3 at ehci0: USB revision 2.0
 ppb0 at pci0 dev 30 function 0: vendor 8086 product 2448 (rev. 0x81)
 pci1 at ppb0 bus 2
@@ -118,6 +120,7 @@ wm0: interrupting at ioapic0 pin 20
 wm0: 32-bit 33MHz PCI bus
 wm0: 64 words (6 address bits) MicroWire EEPROM
 wm0: Ethernet address 00:0a:e4:23:72:22
+wm0: 0x220402<LOCK_EECD,IOH_VALID,ASF_FIRM,WOL>
 igphy0 at wm0 phy 1: Intel IGP01E1000 Gigabit PHY, rev. 0
 igphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
 ath0 at pci1 dev 2 function 0: Atheros 5212
@@ -138,7 +141,6 @@ ichlpcib0: 24-bit timer
 tco0 at ichlpcib0: TCO (watchdog) timer configured.
 tco0: Min/Max interval 2/37 seconds
 ichlpcib0: SpeedStep enabled
-gpio0 at ichlpcib0: 64 pins
 piixide0 at pci0 dev 31 function 1: Intel 82801DBM IDE Controller (ICH4-M) (rev. 0x01)
 piixide0: bus-master DMA support present
 piixide0: primary channel configured to compatibility mode
@@ -176,19 +178,21 @@ acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
 acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
 acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-auich0: measured ac97 link rate at 47999 Hz, will use 48000 Hz
+auich0: measured ac97 link rate at 48001 Hz, will use 48000 Hz
 audio0 at auich0: full duplex, playback, capture, mmap, independent
+auich0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+auich0: Latency: 256 milliseconds
 acpiacad0: AC adapter online.
-uhub0 at usb0: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb0: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb1: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb1: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb2: vendor 8086 UHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb2: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
-uhub3 at usb3: vendor 8086 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub3 at usb3: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub3: 6 ports with 6 removable, self powered
 IPsec: Initialized Security Association Processing.
-uhub4 at uhub3 port 1: vendor 04b3 product 4484, class 9/0, rev 2.00/0.01, addr 2
+uhub4 at uhub3 port 1: vendor 04b3 (0x4b3) product 4484 (0x4484), class 9/0, rev 2.00/0.01, addr 2
 uhub4: multiple transaction translators
 uhub4: 3 ports with 3 removable, self powered
 wd0 at atabus0 drive 0
@@ -201,9 +205,9 @@ wd0(piixide0:0:0): using PIO mode 4, Ultra-DMA mode 5 (Ultra/100) (using DMA)
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/7.99.35/modules
-WARNING: clock gained 739 days
+kern.module.path=/stand/i386/8.99.23/modules
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+acpibat0: normal capacity on 'charge state'
