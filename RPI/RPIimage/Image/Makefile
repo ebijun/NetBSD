@@ -48,7 +48,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount firm 
+all: file cdmount rpi extract cdunmount firm kernel
 
 #update: cdmount update-extract cdunmount
 
@@ -191,19 +191,8 @@ kernel:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
 
-	# RPI3B+
-	cp ${MNT}/bcm2837-rpi-3-b.dtb  ${MNT}/bcm2837-rpi-3-b-plus.dtb
 	# RPI0W
 	cp ${MNT}/bcm2835-rpi-zero.dtb ${MNT}/bcm2835-rpi-zero-w.dtb
-	# RPI2-1.2
-	cp ${MNT}/bcm2836-rpi-2-b.dtb  ${MNT}/bcm2837-rpi-2-b.dtb
-
-#	# for startx
-#	mv ${MNT}/kernel.img ${MNT}/kernel.img.org
-#	mv ${MNT}/kernel7.img ${MNT}/kernel7.img.org
-
-#	gunzip < 201803211740Z/earmv6hf/netbsd-RPI.img.gz  > ${MNT}/kernel.img
-#	gunzip < 201803211740Z/earmv6hf/netbsd-RPI2.img.gz > ${MNT}/kernel7.img
 
 	umount ${MNT}
 	vnconfig -u ${VND}

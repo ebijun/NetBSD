@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.22 (RPI) #0: Sat Jul 28 14:13:13 UTC 2018
+NetBSD 8.99.24 (RPI) #0: Wed Aug 22 13:16:41 UTC 2018
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 448 MB
 avail memory = 435 MB
@@ -55,7 +55,6 @@ iic2 at bsciic2: I2C bus
 /soc/hdmi@7e902000 at simplebus1 not configured
 dwctwo0 at simplebus1: USB controller
 dwctwo0: interrupting on icu irq 9
-/soc/v3d@7ec00000 at simplebus1 not configured
 /soc/gpu at simplebus1 not configured
 genfb0 at simplebus1: switching to framebuffer console
 genfb0: framebuffer at 0x5ea1e000, size 800x600, depth 32, stride 3200
@@ -67,15 +66,12 @@ vchiq0 at simplebus1: BCM2835 VCHIQ
 gpioleds0 at simplebus0: ACT
 watchdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmrng0 at simplebus1: RNG
-/soc/pixelvalve@7e206000 at simplebus1 not configured
-/soc/pixelvalve@7e207000 at simplebus1 not configured
-/soc/hvs@7e400000 at simplebus1 not configured
-/soc/pixelvalve@7e807000 at simplebus1 not configured
 /soc/mailbox@7e00b840 at simplebus1 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 timecounter: Timecounter "bcmtmr0" frequency 1000000 Hz quality 100
 sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
+dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
 usb0 at dwctwo0: USB revision 2.0
 sdhc0: cmd timeout error
 uhub0 at usb0: NetBSD (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
@@ -99,7 +95,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/8.99.22/modules
+kern.module.path=/stand/evbarm/8.99.24/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xc95e0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
