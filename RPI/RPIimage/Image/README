@@ -23,7 +23,12 @@ Update:
  20180410 on /boot for support newer RPI.
 - sysinfo and pkgsrc update 
  https://github.com/ebijun/NetBSD/commit/580b3719bf26e7175c94a56169de2a8149659910
+- RPI3B+: mue0: Ethernet port support:
+  ftp http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-08-25-earmv6hf/kernel7.img-RPI3
+  mv /boot/kernel7.img /boot/kernel7.img.org
+  cp kernel7.img-RPI3 /boot/kernel7.img
 
+System Update:
  sysinfo: bind-9.12.2pl1 dhcpcd-7.0.8 libc-12.211 openssl-1.1.0i sh-20160401-20180822131641Z
  pkgsrc: curl-7.61.0nb3 dillo-3.0.5nb4 git-base-2.18.0nb2 perl-5.28.0 
 - mikutter support 
