@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.23 (GENERIC) #0: Sun Aug  5 06:48:50 UTC 2018
+NetBSD 8.99.24 (GENERIC) #0: Sun Aug 26 11:53:28 UTC 2018
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC
 total memory = 1014 MB
 avail memory = 977 MB
@@ -18,8 +18,8 @@ mainbus0 (root)
 ACPI: RSDP 0x00000000000F6D10 000024 (v02 IBM   )
 ACPI: XSDT 0x000000003F6E7E57 000054 (v01 IBM    TP-1U    00002080  LTP 00000000)
 ACPI: FACP 0x000000003F6E7F00 0000F4 (v03 IBM    TP-1U    00002080 IBM  00000001)
-Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 64/32 (20180427/tbfadt-642)
-Firmware Warning (ACPI): Optional FADT field Gpe1Block has valid Address but zero Length: 0x000000000000102C/0x0 (20180427/tbfadt-693)
+Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 64/32 (20180810/tbfadt-642)
+Firmware Warning (ACPI): Optional FADT field Gpe1Block has valid Address but zero Length: 0x000000000000102C/0x0 (20180810/tbfadt-693)
 ACPI: DSDT 0x000000003F6E80E7 00ECE9 (v01 IBM    TP-1U    00002080 MSFT 0100000E)
 ACPI: FACS 0x000000003F6F8000 000040
 ACPI: SSDT 0x000000003F6E80B4 000033 (v01 IBM    TP-1U    00002080 MSFT 0100000E)
@@ -32,7 +32,7 @@ ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 24 pins
 cpu0 at mainbus0 apid 0
 cpu0: Intel(R) Pentium(R) M processor 1200MHz, id 0x695
 cpu0: package 0, core 0, smt 0
-acpi0 at mainbus0: Intel ACPICA 20180427
+acpi0 at mainbus0: Intel ACPICA 20180810
 acpi0: X/RSDT: OemId <IBM   ,TP-1U   ,00002080>, AslId < LTP,00000000>
 acpiecdt0 at acpi0: ACPI Embedded Controller via ECDT
 acpi0: SCI interrupting at int 9
@@ -52,8 +52,6 @@ pckbc1 at acpi0 (KBD, PNP0303) (kbd port): io 0x60,0x64 irq 1
 pckbc2 at acpi0 (MOU, IBM3780) (aux port): irq 12
 LPT (PNP0400) at acpi0 not configured
 acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
-acpibat0: SANYO LION rechargeable battery
-acpibat0: granularity: low->warn 0.001 Wh, warn->full 0.001 Wh
 acpiacad0 at acpi0 (AC, ACPI0003-0): ACPI AC Adapter
 thinkpad0 at acpi0 (HKEY, IBM0068)
 acpivga0 at acpi0 (VID): ACPI Display Adapter
@@ -89,7 +87,7 @@ i915drmkms0: interrupting at ioapic0 pin 16 (i915)
 drm: initialized overlay support
 intelfb0 at i915drmkms0
 i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xda1d0000, size 1024x768, depth 32, stride 4096
+intelfb0: framebuffer at 0xda1da000, size 1024x768, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vendor 8086 product 3582 (miscellaneous display, revision 0x02) at pci0 dev 2 function 1 not configured
@@ -178,7 +176,7 @@ acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
 acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
 acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-auich0: measured ac97 link rate at 48001 Hz, will use 48000 Hz
+auich0: measured ac97 link rate at 47998 Hz, will use 48000 Hz
 audio0 at auich0: full duplex, playback, capture, mmap, independent
 auich0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
 auich0: Latency: 256 milliseconds
@@ -191,6 +189,8 @@ uhub2 at usb2: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, add
 uhub2: 2 ports with 2 removable, self powered
 uhub3 at usb3: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub3: 6 ports with 6 removable, self powered
+acpibat0: SANYO LION rechargeable battery
+acpibat0: granularity: low->warn 0.001 Wh, warn->full 0.001 Wh
 IPsec: Initialized Security Association Processing.
 uhub4 at uhub3 port 1: vendor 04b3 (0x4b3) product 4484 (0x4484), class 9/0, rev 2.00/0.01, addr 2
 uhub4: multiple transaction translators
@@ -205,7 +205,7 @@ wd0(piixide0:0:0): using PIO mode 4, Ultra-DMA mode 5 (Ultra/100) (using DMA)
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/8.99.23/modules
+kern.module.path=/stand/i386/8.99.24/modules
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
