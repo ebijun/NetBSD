@@ -1,14 +1,13 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
-    The NetBSD Foundation, Inc.  All rights reserved.
+2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+2018 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
-    The Regents of the University of California.  All rights reserved.
+The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.9 (GENERIC) #0: Sun Dec 24 01:22:16 UTC 2017
+NetBSD 8.99.24 (GENERIC) #0: Mon Aug 27 17:47:48 UTC 2018
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 7987 MB
-avail memory = 7733 MB
-rnd: seeded with 128 bits
+avail memory = 7730 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 running cgd selftest aes-xts-256 aes-xts-512 done
@@ -18,8 +17,8 @@ mainbus0 (root)
 ACPI: RSDP 0x00000000000F68E0 000024 (v02 LENOVO)
 ACPI: XSDT 0x00000000BB7F08BC 00009C (v01 LENOVO TP-6Q    00001320  LTP 00000000)
 ACPI: FACP 0x00000000BB7F0A00 0000F4 (v04 LENOVO TP-6Q    00001320 LNVO 00000001)
-Firmware Warning (ACPI): 32/64X length mismatch in FADT/Pm1aControlBlock: 16/32 (20171110/tbfadt-642)
-Firmware Warning (ACPI): Invalid length for FADT/Pm1aControlBlock: 32, using default 16 (20171110/tbfadt-745)
+Firmware Warning (ACPI): 32/64X length mismatch in FADT/Pm1aControlBlock: 16/32 (20180810/tbfadt-642)
+Firmware Warning (ACPI): Invalid length for FADT/Pm1aControlBlock: 32, using default 16 (20180810/tbfadt-745)
 ACPI: DSDT 0x00000000BB7F0D6B 00DDDA (v01 LENOVO TP-6Q    00001320 MSFT 03000001)
 ACPI: FACS 0x00000000BB6E7000 000040
 ACPI: SSDT 0x00000000BB7F0BB4 0001B7 (v01 LENOVO TP-6Q    00001320 MSFT 03000001)
@@ -50,20 +49,21 @@ cpu2: package 0, core 2, smt 0
 cpu3 at mainbus0 apid 5
 cpu3: Intel(R) Core(TM) i5 CPU       M 560  @ 2.67GHz, id 0x20655
 cpu3: package 0, core 2, smt 1
-acpi0 at mainbus0: Intel ACPICA 20171110
+acpi0 at mainbus0: Intel ACPICA 20180810
 acpi0: X/RSDT: OemId <LENOVO,TP-6Q   ,00001320>, AslId < LTP,00000000>
 acpiecdt0 at acpi0: ACPI Embedded Controller via ECDT
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE401001D2810 0004F3 (v01 PmRef  Cpu0Ist  00003000 INTL 20050513)
+ACPI: SSDT 0xFFFFB8064CD03010 0004F3 (v01 PmRef  Cpu0Ist  00003000 INTL 20050513)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE401001D2010 0006B2 (v01 PmRef  Cpu0Cst  00003001 INTL 20050513)
+ACPI: SSDT 0xFFFFB8064CDCC810 0006B2 (v01 PmRef  Cpu0Cst  00003001 INTL 20050513)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE40100108010 000303 (v01 PmRef  ApIst    00003000 INTL 20050513)
+ACPI: SSDT 0xFFFFB8064CD0B810 000303 (v01 PmRef  ApIst    00003000 INTL 20050513)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE40100107A50 000119 (v01 PmRef  ApCst    00003000 INTL 20050513)
+ACPI: SSDT 0xFFFFB8064CD11690 000119 (v01 PmRef  ApCst    00003000 INTL 20050513)
 acpi0: SCI interrupting at int 9
-timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+acpi0: fixed power button present
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
 timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
 acpiec0 at acpi0 (EC, PNP0C09-0): using acpiecdt0
@@ -80,13 +80,13 @@ acpiout4 at acpivga0 (DVI2, 0x0302): ACPI Display Output Device
 acpiout5 at acpivga0 (DVI3, 0x0303): ACPI Display Output Device
 acpiout6 at acpivga0 (DVI4, 0x0304): ACPI Display Output Device
 acpiout7 at acpivga0 (DVI5, 0x0305): ACPI Display Output Device
-acpivga0: unknown output device acpiout1
-acpivga0: unknown output device acpiout2
-acpivga0: unknown output device acpiout3
-acpivga0: unknown output device acpiout4
-acpivga0: unknown output device acpiout5
-acpivga0: unknown output device acpiout6
-acpivga0: unknown output device acpiout7
+acpivga0: autoconfiguration error: unknown output device acpiout1
+acpivga0: autoconfiguration error: unknown output device acpiout2
+acpivga0: autoconfiguration error: unknown output device acpiout3
+acpivga0: autoconfiguration error: unknown output device acpiout4
+acpivga0: autoconfiguration error: unknown output device acpiout5
+acpivga0: autoconfiguration error: unknown output device acpiout6
+acpivga0: autoconfiguration error: unknown output device acpiout7
 acpivga0: connected output devices:
 acpivga0:   0x0400 (acpiout0): Unknown Output Device, head 0
 SIO (PNP0C02) at acpi0 not configured
@@ -100,8 +100,6 @@ pckbc1 at acpi0 (KBD, PNP0303) (kbd port): io 0x60,0x64 irq 1
 pckbc2 at acpi0 (MOU, LEN0018) (aux port): irq 12
 TPM (SMO1200) at acpi0 not configured
 acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
-acpibat0: SANYO LION rechargeable battery
-acpibat0: granularity: low->warn 0.001 Ah, warn->full 0.001 Ah
 acpiacad0 at acpi0 (AC, ACPI0003-0): ACPI AC Adapter
 thinkpad0 at acpi0 (HKEY, IBM0068)
 acpiwmi0 at acpi0 (WMI1, PNP0C14-1): ACPI WMI Interface
@@ -125,16 +123,10 @@ agp0 at pchb0: G4X-family chipset
 agp0: detected 32252k stolen memory
 agp0: aperture at 0xd0000000, size 0x10000000
 i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 0046 (rev. 0x02)
-drm: Memory usable by graphics device = 512M
-drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
-drm: Driver supports precise vblank timestamp query.
-i915drmkms0: interrupting at ioapic0 pin 16 (i915)
-intelfb0 at i915drmkms0
-i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xffff8000ab716000, size 1280x800, depth 32, stride 5120
-wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
-wsmux1: connecting to wsdisplay0
 vendor 8086 product 3b64 (miscellaneous communications, revision 0x06) at pci0 dev 22 function 0 not configured
+puc0 at pci0 dev 22 function 3: Intel 5 Series KT (com)
+com2 at puc0 port 0 (16550-compatible): ioaddr 0x1808, interrupting at ioapic0 pin 17
+com2: ns16550a, working fifo
 wm0 at pci0 dev 25 function 0: PCH LAN (82577LM) Controller (rev. 0x06)
 wm0: interrupting at msi0 vec 0
 wm0: PCI-Express bus
@@ -247,12 +239,14 @@ acpicpu2 at cpu2: ACPI CPU
 coretemp1 at cpu2: thermal sensor, 1 C resolution, Tjmax=105
 acpicpu3 at cpu3: ACPI CPU
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-timecounter: Timecounter "TSC" frequency 2660282710 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2660209600 Hz quality 3000
 acpiacad0: AC adapter online.
 IPsec: Initialized Security Association Processing.
-uhub0 at usb0: vendor 8086 (0x8086) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+acpibat0: SANYO LION rechargeable battery
+acpibat0: granularity: low->warn 0.001 Ah, warn->full 0.001 Ah
+uhub0 at usb0: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 3 ports with 3 removable, self powered
-uhub1 at usb1: vendor 8086 (0x8086) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub1 at usb1: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub1: 3 ports with 3 removable, self powered
 ahcisata0 port 0: device present, speed: 3.0Gb/s
 wd0 at atabus0 drive 0
@@ -265,21 +259,334 @@ uhub2 at uhub1 port 1: vendor 8087 (0x8087) product 0020 (0x20), class 9/0, rev 
 uhub2: single transaction translator
 uhub3 at uhub0 port 1: vendor 8087 (0x8087) product 0020 (0x20), class 9/0, rev 2.00/0.00, addr 2
 uhub3: single transaction translator
-uhub3: 6 ports with 6 removable, self powered
 uhub2: 8 ports with 8 removable, self powered
-ugen0 at uhub2 port 3
-ugen0: Intel(R) Corporation (0x8086) Intel(R) Centrino(R) Advanced-N + WiMAX 6250 (0x187), rev 2.00/0.00, addr 3
-ugen1 at uhub3 port 3
-ugen1: UPEK (0x147e) Biometric Coprocessor (0x2016), rev 1.01/0.02, addr 3
-ubt0 at uhub3 port 4
-ubt0: Broadcom Corp (0xa5c) Broadcom Bluetooth Device (0x217f), rev 2.00/3.60, addr 4
-uvideo0 at uhub3 port 6 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x17ef) Integrated Camera (0x4816), rev 2.00/23.45, addr 5
-video0 at uvideo0: Chicony Electronics Co., Ltd. (0x17ef) Integrated Camera (0x4816), rev 2.00/23.45, addr 5
+uhub3: 6 ports with 6 removable, self powered
+ugen0 at uhub3 port 3
+ugen0: UPEK (0x147e) Biometric Coprocessor (0x2016), rev 1.01/0.02, addr 3
+ugen1 at uhub2 port 3
+ugen1: Intel(R) Corporation (0x8086) Intel(R) Centrino(R) Advanced-N + WiMAX 6250 (0x187), rev 2.00/0.00, addr 3
+uvideo0 at uhub3 port 6 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x17ef) Integrated Camera (0x4816), rev 2.00/23.45, addr 4
+video0 at uvideo0: Chicony Electronics Co., Ltd. (0x17ef) Integrated Camera (0x4816), rev 2.00/23.45, addr 4
 WARNING: 7 errors while detecting hardware; check system log.
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/8.99.9/modules
+kern.module.path=/stand/amd64/8.99.24/modules
+DRM debug in drm_minor_register: 
+DRM debug in drm_minor_register: new minor registered 64
+DRM debug in drm_minor_register: 
+DRM debug in drm_minor_register: new minor registered 128
+DRM debug in drm_minor_register: 
+DRM debug in drm_minor_register: new minor registered 0
+DRM debug in i915_dump_device_info: i915 device info: gen=5, pciid=0x0046 rev=0x02 flags=is_mobile,need_gfx_hws,has_fbc,has_hotplug,DRM debug in intel_detect_pch: Found Ibex Peak PCH
+drm kern info: [drm] Memory usable by graphics device = 512M
+DRM debug in i915_gem_gtt_init: GMADR size = 256M
+DRM debug in i915_gem_gtt_init: GTT stolen size = 31M
+DRM debug in i915_gem_gtt_init: ppgtt mode: 0
+DRM debug in intel_opregion_setup: graphic opregion physical addr: 0xbb77e018
+DRM debug in intel_opregion_setup: Failed to map opregion: -35
+DRM debug in intel_device_info_runtime_init: slice total: 0
+DRM debug in intel_device_info_runtime_init: subslice total: 0
+DRM debug in intel_device_info_runtime_init: subslice per slice: 0
+DRM debug in intel_device_info_runtime_init: EU total: 0
+DRM debug in intel_device_info_runtime_init: EU per subslice: 0
+DRM debug in intel_device_info_runtime_init: has slice power gating: n
+DRM debug in intel_device_info_runtime_init: has subslice power gating: n
+DRM debug in intel_device_info_runtime_init: has EU power gating: n
+drm kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+drm kern info: [drm] Driver supports precise vblank timestamp query.
+DRM debug in init_vbt_defaults: Set default to SSC at 120000 kHz
+DRM debug in validate_vbt: Using VBT from PCI ROM: $VBT IRONLAKE-MOBILEd
+DRM debug in parse_general_features: BDB_GENERAL_FEATURES int_tv_support 0 int_crt_support 1 lvds_use_ssc 1 lvds_ssc_freq 120000 display_clock_mode 0 fdi_rx_polarity_inverted 0
+DRM debug in parse_general_definitions: crt_ddc_bus_pin: 2
+DRM debug in parse_lfp_panel_data: DRRS supported mode is static
+DRM debug in parse_lfp_panel_data: Found panel mode in BIOS VBT tables:
+DRM debug in drm_mode_debug_printmodeline: Modeline 0:"1280x800" 0 68940 1280 1296 1344 1408 800 801 804 816 0x8 0xa
+DRM debug in parse_lfp_panel_data: VBT initial LVDS value 300300
+DRM debug in parse_lfp_backlight: VBT backlight PWM modulation frequency 625 Hz, active high, min brightness 4, level 21
+DRM debug in parse_sdvo_panel_data: Found SDVO panel mode in BIOS VBT tables:
+DRM debug in drm_mode_debug_printmodeline: Modeline 0:"1600x1200" 0 162000 1600 1664 1856 2160 1200 1201 1204 1250 0x8 0xa
+DRM debug in parse_sdvo_device_mapping: No SDVO device info is found in VBT
+DRM debug in parse_driver_features: DRRS State Enabled:0
+DRM debug in parse_psr: No PSR BDB found.
+DRM debug in intel_dsm_pci_probe: no _DSM method for intel device
+DRM debug in i915_gem_init_stolen: Memory reserved for graphics device: 32252K, usable: 31228K
+DRM debug in intel_power_well_enable: enabling always-on
+i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
+DRM debug in intel_print_wm_latency: Primary WM0 latency 7 (0.7 usec)
+DRM debug in intel_print_wm_latency: Primary WM1 latency 10 (5.0 usec)
+DRM debug in intel_print_wm_latency: Primary WM2 latency 34 (17.0 usec)
+DRM debug in intel_print_wm_latency: Sprite WM0 latency 13 (1.3 usec)
+DRM debug in intel_print_wm_latency: Sprite WM1 latency 10 (5.0 usec)
+DRM debug in intel_print_wm_latency: Sprite WM2 latency 34 (17.0 usec)
+DRM debug in intel_print_wm_latency: Cursor WM0 latency 13 (1.3 usec)
+DRM debug in intel_print_wm_latency: Cursor WM1 latency 10 (5.0 usec)
+DRM debug in intel_print_wm_latency: Cursor WM2 latency 34 (17.0 usec)
+DRM debug in intel_modeset_init: 2 display pipes available.
+DRM debug in intel_update_cdclk: Current CD clock rate: 450000 kHz
+DRM debug in intel_update_max_cdclk: Max CD clock rate: 450000 kHz
+DRM debug in intel_update_max_cdclk: Max dotclock rate: 405000 kHz
+DRM debug in intel_lvds_init: using preferred mode from EDID: DRM debug in drm_mode_debug_printmodeline: Modeline 30:"1280x800" 60 68940 1280 1296 1344 1408 800 801 804 816 0x48 0xa
+DRM debug in intel_lvds_init: detected single-link lvds configuration
+DRM debug in intel_panel_setup_backlight: Connector LVDS-1 backlight initialized, enabled, brightness 1421/1562
+DRM debug in intel_crt_reset: crt adpa set to 0xf40000
+DRM debug in intel_hdmi_init_connector: Adding HDMI connector on port C
+DRM debug in intel_hdmi_ddc_pin: Using DDC pin 0x4 for port C (platform default)
+DRM debug in intel_dp_init_connector: Adding DP connector on port C
+DRM debug in intel_dp_aux_init: registering DPDDC-C bus for i915drmkms0
+DRM debug in ironlake_init_pch_refclk: has_panel 1 has_lvds 1 has_ck505 0 using_ssc_source 1
+DRM debug in intel_modeset_readout_hw_state: [CRTC:21] hw state readout: enabled
+DRM debug in intel_modeset_readout_hw_state: [CRTC:25] hw state readout: disabled
+DRM debug in intel_modeset_readout_hw_state: PCH DPLL A hw state readout: crtc_mask 0x00000001, on 1
+DRM debug in intel_modeset_readout_hw_state: PCH DPLL B hw state readout: crtc_mask 0x00000000, on 0
+DRM debug in intel_modeset_readout_hw_state: [ENCODER:28:LVDS-28] hw state readout: enabled, pipe A
+DRM debug in intel_modeset_readout_hw_state: [ENCODER:35:DAC-35] hw state readout: disabled, pipe A
+DRM debug in intel_modeset_readout_hw_state: [ENCODER:36:TMDS-36] hw state readout: disabled, pipe A
+DRM debug in intel_modeset_readout_hw_state: [ENCODER:41:TMDS-41] hw state readout: disabled, pipe A
+DRM debug in intel_modeset_readout_hw_state: [CONNECTOR:27:LVDS-1] hw state readout: enabled
+DRM debug in intel_modeset_readout_hw_state: [CONNECTOR:34:VGA-1] hw state readout: disabled
+DRM debug in intel_modeset_readout_hw_state: [CONNECTOR:37:HDMI-A-1] hw state readout: disabled
+DRM debug in intel_modeset_readout_hw_state: [CONNECTOR:42:DP-1] hw state readout: disabled
+DRM debug in drm_atomic_set_mode_for_crtc: Set [MODE:1280x800] for CRTC state 0xffffb807868db810
+DRM debug in drm_calc_timestamping_constants: crtc 21: hwmode: htotal 1408, vtotal 816, vdisplay 800
+DRM debug in drm_calc_timestamping_constants: crtc 21: clock 69286 kHz framedur 16582397 linedur 20321
+DRM debug in drm_vblank_on: crtc 0, vblank enabled 0, inmodeset 1
+DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 0 : v 0x5 p(0,650)@ 6.532010 -> 6.518801 [e 0 us, 0 rep]
+DRM debug in intel_dump_pipe_config: [CRTC:21][setup_hw_state] config 0xffffb807868db810 for pipe A
+DRM debug in intel_dump_pipe_config: cpu_transcoder: A
+DRM debug in intel_dump_pipe_config: pipe bpp: 18, dithering: 0
+DRM debug in intel_dump_pipe_config: fdi/pch: 1, lanes: 4, gmch_m: 1204813, gmch_n: 8388608, link_m: 133868, link_n: 524288, tu: 64
+DRM debug in intel_dump_pipe_config: dp: 0, lanes: 0, gmch_m: 0, gmch_n: 0, link_m: 0, link_n: 0, tu: 0
+DRM debug in intel_dump_pipe_config: dp: 0, lanes: 0, gmch_m2: 0, gmch_n2: 0, link_m2: 0, link_n2: 0, tu2: 0
+DRM debug in intel_dump_pipe_config: audio: 0, infoframes: 0
+DRM debug in intel_dump_pipe_config: requested mode:
+DRM debug in drm_mode_debug_printmodeline: Modeline 0:"1280x800" 60 69286 1280 1296 1344 1408 800 801 804 816 0x40 0xa
+DRM debug in intel_dump_pipe_config: adjusted mode:
+DRM debug in drm_mode_debug_printmodeline: Modeline 0:"1280x800" 60 69286 1280 1296 1344 1408 800 801 804 816 0x40 0xa
+DRM debug in intel_dump_crtc_timings: crtc timings: 69286 1280 1296 1344 1408 800 801 804 816, type: 0x40 flags: 0xa
+DRM debug in intel_dump_pipe_config: port clock: 69286
+DRM debug in intel_dump_pipe_config: pipe src size: 640x400
+DRM debug in intel_dump_pipe_config: num_scalers: 0, scaler_users: 0x0, scaler_id: 0
+DRM debug in intel_dump_pipe_config: gmch pfit: control: 0x00000000, ratios: 0x00000000, lvds border: 0x00000000
+DRM debug in intel_dump_pipe_config: pch pfit: pos: 0x00000000, size: 0x05000320, enabled
+DRM debug in intel_dump_pipe_config: ips: 0
+DRM debug in intel_dump_pipe_config: double wide: 0
+DRM debug in intel_dump_pipe_config: dpll_hw_state: dpll: 0x88046004, dpll_md: 0x0, fp0: 0x21005, fp1: 0x30d07
+DRM debug in intel_dump_pipe_config: planes on this crtc
+DRM debug in intel_dump_pipe_config: STANDARD PLANE:18 plane: 0.0 idx: 0 disabled, scaler_id = 0
+DRM debug in intel_dump_pipe_config: CURSOR PLANE:20 plane: 0.1 idx: 1 disabled, scaler_id = 0
+DRM debug in intel_dump_pipe_config: STANDARD PLANE:22 plane: 0.1 idx: 2 disabled, scaler_id = 0
+DRM debug in intel_dump_pipe_config: [CRTC:25][setup_hw_state] config 0xffffb807868db410 for pipe B
+DRM debug in intel_dump_pipe_config: cpu_transcoder: B
+DRM debug in intel_dump_pipe_config: pipe bpp: 0, dithering: 0
+DRM debug in intel_dump_pipe_config: fdi/pch: 0, lanes: 0, gmch_m: 0, gmch_n: 0, link_m: 0, link_n: 0, tu: 0
+DRM debug in intel_dump_pipe_config: dp: 0, lanes: 0, gmch_m: 0, gmch_n: 0, link_m: 0, link_n: 0, tu: 0
+DRM debug in intel_dump_pipe_config: dp: 0, lanes: 0, gmch_m2: 0, gmch_n2: 0, link_m2: 0, link_n2: 0, tu2: 0
+DRM debug in intel_dump_pipe_config: audio: 0, infoframes: 0
+DRM debug in intel_dump_pipe_config: requested mode:
+DRM debug in drm_mode_debug_printmodeline: Modeline 0:"" 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+DRM debug in intel_dump_pipe_config: adjusted mode:
+DRM debug in drm_mode_debug_printmodeline: Modeline 0:"" 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+DRM debug in intel_dump_crtc_timings: crtc timings: 0 0 0 0 0 0 0 0 0, type: 0x0 flags: 0x0
+DRM debug in intel_dump_pipe_config: port clock: 0
+DRM debug in intel_dump_pipe_config: pipe src size: 0x0
+DRM debug in intel_dump_pipe_config: num_scalers: 0, scaler_users: 0x0, scaler_id: 0
+DRM debug in intel_dump_pipe_config: gmch pfit: control: 0x00000000, ratios: 0x00000000, lvds border: 0x00000000
+DRM debug in intel_dump_pipe_config: pch pfit: pos: 0x00000000, size: 0x00000000, disabled
+DRM debug in intel_dump_pipe_config: ips: 0
+DRM debug in intel_dump_pipe_config: double wide: 0
+DRM debug in intel_dump_pipe_config: dpll_hw_state: dpll: 0x0, dpll_md: 0x0, fp0: 0x0, fp1: 0x0
+DRM debug in intel_dump_pipe_config: planes on this crtc
+DRM debug in intel_dump_pipe_config: STANDARD PLANE:23 plane: 1.0 idx: 3 disabled, scaler_id = 0
+DRM debug in intel_dump_pipe_config: CURSOR PLANE:24 plane: 1.2 idx: 4 disabled, scaler_id = 0
+DRM debug in intel_dump_pipe_config: STANDARD PLANE:26 plane: 1.1 idx: 5 disabled, scaler_id = 0
+DRM debug in i915_gem_setup_global_gtt: clearing unused GTT space: [0, 1ffff000]
+DRM debug in i915_gem_context_init: fake context support initialized
+DRM debug in i915_gem_object_create_stolen: creating stolen object: size=20000
+DRM debug in init_status_page: render ring hws offset: 0x00001000
+DRM debug in intel_init_pipe_control: render ring pipe control offset: 0x00024000
+DRM debug in i915_gem_object_create_stolen: creating stolen object: size=20000
+DRM debug in init_status_page: bsd ring hws offset: 0x00025000
+DRM debug in intel_update_cdclk: Current CD clock rate: 450000 kHz
+DRM debug in ironlake_enable_drps: fmax: 0, fmin: 10, fstart: 8
+DRM debug in intel_fbdev_init_bios: pipe A not active or no fb, skipping
+DRM debug in intel_fbdev_init_bios: pipe B not active or no fb, skipping
+DRM debug in intel_fbdev_init_bios: no active fbs found, not using BIOS config
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:27:LVDS-1]
+DRM debug in intel_lvds_detect: [CONNECTOR:27:LVDS-1]
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:27:LVDS-1] status updated from 3 to 1
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:27:LVDS-1] probed modes :
+DRM debug in drm_mode_debug_printmodeline: Modeline 30:"1280x800" 60 68940 1280 1296 1344 1408 800 801 804 816 0x48 0xa
+DRM debug in drm_mode_debug_printmodeline: Modeline 31:"1280x800" 50 60960 1280 1328 1360 1478 800 803 809 825 0x40 0xa
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:34:VGA-1]
+DRM debug in intel_crt_detect: [CONNECTOR:34:VGA-1] force=1
+DRM debug in intel_ironlake_crt_detect_hotplug: trigger hotplug detect cycle: adpa=0xf40000
+DRM debug in intel_ironlake_crt_detect_hotplug: ironlake hotplug adpa=0xf40000, result 0
+DRM debug in intel_crt_detect: CRT not detected via hotplug
+DRM debug in gmbus_xfer: GMBUS [i915 gmbus vga] NAK for addr: 0050 w(1)
+DRM debug in gmbus_xfer: GMBUS [i915 gmbus vga] NAK on first message, retry
+DRM debug in gmbus_xfer: GMBUS [i915 gmbus vga] NAK for addr: 0050 w(1)
+DRM debug in drm_do_probe_ddc_edid: drm: skipping non-existent adapter i915 gmbus vga
+DRM debug in intel_crt_get_edid: CRT GMBUS EDID read failed, retry using GPIO bit-banging
+DRM debug in intel_gmbus_force_bit: enabling bit-banging on i915 gmbus vga. force bit now 1
+DRM debug in intel_gmbus_force_bit: disabling bit-banging on i915 gmbus vga. force bit now 0
+DRM debug in intel_crt_detect_ddc: CRT not detected via DDC:0x50 [no valid EDID found]
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:34:VGA-1] status updated from 3 to 2
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:34:VGA-1] disconnected
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:37:HDMI-A-1]
+DRM debug in intel_hdmi_detect: [CONNECTOR:37:HDMI-A-1]
+DRM debug in gmbus_xfer: GMBUS [i915 gmbus dpc] NAK for addr: 0050 w(1)
+DRM debug in gmbus_xfer: GMBUS [i915 gmbus dpc] NAK on first message, retry
+DRM debug in gmbus_xfer: GMBUS [i915 gmbus dpc] NAK for addr: 0050 w(1)
+DRM debug in drm_do_probe_ddc_edid: drm: skipping non-existent adapter i915 gmbus dpc
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:37:HDMI-A-1] status updated from 3 to 2
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:37:HDMI-A-1] disconnected
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:42:DP-1]
+DRM debug in intel_dp_detect: [CONNECTOR:42:DP-1]
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:42:DP-1] status updated from 3 to 2
+DRM debug in drm_helper_probe_single_connector_modes_merge_bits: [CONNECTOR:42:DP-1] disconnected
+DRM debug in drm_setup_crtcs: 
+DRM debug in drm_enable_connectors: connector 27 enabled? yes
+DRM debug in drm_enable_connectors: connector 34 enabled? no
+DRM debug in drm_enable_connectors: connector 37 enabled? no
+DRM debug in drm_enable_connectors: connector 42 enabled? no
+DRM debug in intel_fb_initial_config: looking for cmdline mode on connector LVDS-1
+DRM debug in intel_fb_initial_config: looking for preferred mode on connector LVDS-1 0
+DRM debug in intel_fb_initial_config: connector LVDS-1 on pipe A [CRTC:21]: 1280x800
+DRM debug in intel_fb_initial_config: connector VGA-1 not enabled, skipping
+DRM debug in intel_fb_initial_config: connector HDMI-A-1 not enabled, skipping
+DRM debug in intel_fb_initial_config: connector DP-1 not enabled, skipping
+DRM debug in drm_setup_crtcs: desired mode 1280x800 set on crtc 21 (0,0)
+DRM debug in intelfb_create: no BIOS fb, allocating a new one
+DRM debug in i915_gem_object_create_stolen: creating stolen object: size=3e8000
+intelfb0 at i915drmkms0
+DRM debug in intelfb_create: allocated 1280x800 fb: 0x00047000, bo 0xffffb807866d5000
+intelfb0: framebuffer at 0xffffbd80acd90000, size 1280x800, depth 32, stride 5120
+DRM debug in drm_atomic_state_init: Allocated atomic state 0xffffb8064d136350
+DRM debug in drm_atomic_get_plane_state: Added [PLANE:18] 0xffffb807869073d0 state to 0xffffb8064d136350
+DRM debug in drm_atomic_get_plane_state: Added [PLANE:20] 0xffffb80786907310 state to 0xffffb8064d136350
+DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffb80786907310 to [NOCRTC]
+DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffb80786907310
+DRM debug in drm_atomic_get_plane_state: Added [PLANE:22] 0xffffb80786907250 state to 0xffffb8064d136350
+DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffb80786907250 to [NOCRTC]
+DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffb80786907250
+DRM debug in drm_atomic_get_plane_state: Added [PLANE:23] 0xffffb80786907190 state to 0xffffb8064d136350
+DRM debug in drm_atomic_get_plane_state: Added [PLANE:24] 0xffffb807869070d0 state to 0xffffb8064d136350
+DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffb807869070d0 to [NOCRTC]
+DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffb807869070d0
+DRM debug in drm_atomic_get_plane_state: Added [PLANE:26] 0xffffb80786907010 state to 0xffffb8064d136350
+DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffb80786907010 to [NOCRTC]
+DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffb80786907010
+DRM debug in drm_property_reference_blob: 0xffffb807868ccde8: blob ID: 43 (1)
+DRM debug in drm_atomic_get_crtc_state: Added [CRTC:21] 0xffffb807868db010 state to 0xffffb8064d136350
+DRM debug in drm_property_unreference_blob: 0xffffb807868ccde8: blob ID: 43 (2)
+DRM debug in drm_atomic_set_mode_for_crtc: Set [MODE:1280x800] for CRTC state 0xffffb807868db010
+DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffb807869073d0 to [CRTC:21]
+DRM debug in drm_framebuffer_reference: 0xffffb80786907490: FB ID: 45 (1)
+DRM debug in drm_atomic_set_fb_for_plane: Set [FB:45] for plane state 0xffffb807869073d0
+DRM debug in drm_atomic_get_connector_state: Added [CONNECTOR:27] 0xffffb807866e3040 state to 0xffffb8064d136350
+DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:21] to 0xffffb8064d136350
+DRM debug in drm_atomic_set_crtc_for_connector: Link connector state 0xffffb807866e3040 to [NOCRTC]
+DRM debug in drm_atomic_set_crtc_for_connector: Link connector state 0xffffb807866e3040 to [CRTC:21]
+DRM debug in drm_atomic_get_crtc_state: Added [CRTC:25] 0xffffb807866e4c10 state to 0xffffb8064d136350
+DRM debug in drm_atomic_set_mode_for_crtc: Set [NOMODE] for CRTC state 0xffffb807866e4c10
+DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffb80786907190 to [NOCRTC]
+DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffb80786907190
+DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:21] to 0xffffb8064d136350
+DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:25] to 0xffffb8064d136350
+DRM debug in drm_atomic_connectors_for_crtc: State 0xffffb8064d136350 has 1 connectors for [CRTC:21]
+DRM debug in drm_atomic_check_only: checking 0xffffb8064d136350
+DRM debug in drm_atomic_helper_check_modeset: [CRTC:21] mode changed
+DRM debug in update_connector_routing: Updating routing for [CONNECTOR:27:LVDS-1]
+DRM debug in update_connector_routing: [CONNECTOR:27:LVDS-1] keeps [ENCODER:28:LVDS-28], now on [CRTC:21]
+DRM debug in drm_atomic_helper_check_modeset: [CRTC:21] needs all connectors, enable: y, active: y
+DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:21] to 0xffffb8064d136350
+DRM debug in drm_atomic_connectors_for_crtc: State 0xffffb8064d136350 has 1 connectors for [CRTC:21]
+DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:21] to 0xffffb8064d136350
+DRM debug in connected_sink_compute_bpp: [CONNECTOR:27:LVDS-1] checking for sink bpp constrains
+DRM debug in connected_sink_compute_bpp: clamping display bpp (was 36) to default limit of 24
+DRM debug in intel_lvds_compute_config: forcing display bpp (was 24) to LVDS (18)
+DRM debug in ironlake_check_fdi_lanes: checking fdi config on pipe A, lanes 1
+DRM debug in intel_modeset_pipe_config: hw max bpp: 36, pipe bpp: 18, dithering: 1
+DRM debug in intel_dump_pipe_config: [CRTC:21][modeset] config 0xffffb807868db010 for pipe A
+DRM debug in intel_dump_pipe_config: cpu_transcoder: A
+DRM debug in intel_dump_pipe_config: pipe bpp: 18, dithering: 1
+DRM debug in intel_dump_pipe_config: fdi/pch: 1, lanes: 1, gmch_m: 2409627, gmch_n: 4194304, link_m: 133868, link_n: 524288, tu: 64
+DRM debug in intel_dump_pipe_config: dp: 0, lanes: 0, gmch_m: 0, gmch_n: 0, link_m: 0, link_n: 0, tu: 0
+DRM debug in intel_dump_pipe_config: dp: 0, lanes: 0, gmch_m2: 0, gmch_n2: 0, link_m2: 0, link_n2: 0, tu2: 0
+DRM debug in intel_dump_pipe_config: audio: 0, infoframes: 0
+DRM debug in intel_dump_pipe_config: requested mode:
+DRM debug in drm_mode_debug_printmodeline: Modeline 0:"1280x800" 60 68940 1280 1296 1344 1408 800 801 804 816 0x48 0xa
+DRM debug in intel_dump_pipe_config: adjusted mode:
+DRM debug in drm_mode_debug_printmodeline: Modeline 0:"1280x800" 60 68940 1280 1296 1344 1408 800 801 804 816 0x48 0xa
+DRM debug in intel_dump_crtc_timings: crtc timings: 68940 1280 1296 1344 1408 800 801 804 816, type: 0x48 flags: 0xa
+DRM debug in intel_dump_pipe_config: port clock: 68940
+DRM debug in intel_dump_pipe_config: pipe src size: 1280x800
+DRM debug in intel_dump_pipe_config: num_scalers: 0, scaler_users: 0x0, scaler_id: 0
+DRM debug in intel_dump_pipe_config: gmch pfit: control: 0x00000000, ratios: 0x00000000, lvds border: 0x00000000
+DRM debug in intel_dump_pipe_config: pch pfit: pos: 0x00000000, size: 0x00000000, disabled
+DRM debug in intel_dump_pipe_config: ips: 0
+DRM debug in intel_dump_pipe_config: double wide: 0
+DRM debug in intel_dump_pipe_config: dpll_hw_state: dpll: 0x88046004, dpll_md: 0x0, fp0: 0x21005, fp1: 0x30d07
+DRM debug in intel_dump_pipe_config: planes on this crtc
+DRM debug in intel_dump_pipe_config: STANDARD PLANE:18 plane: 0.0 idx: 0 disabled, scaler_id = 0
+DRM debug in intel_dump_pipe_config: CURSOR PLANE:20 plane: 0.1 idx: 1 disabled, scaler_id = 0
+DRM debug in intel_dump_pipe_config: STANDARD PLANE:22 plane: 0.1 idx: 2 disabled, scaler_id = 0
+DRM debug in intel_plane_atomic_calc_changes: [CRTC:21] has [PLANE:18] with fb 45
+DRM debug in intel_plane_atomic_calc_changes: [PLANE:18] visible 0 -> 1, off 0, on 1, ms 1
+DRM debug in ironlake_get_refclk: using SSC reference clock of 120000 kHz
+DRM debug in intel_get_shared_dpll: CRTC:21 using pre-allocated PCH DPLL A
+DRM debug in intel_get_shared_dpll: using PCH DPLL A for pipe A
+DRM debug in drm_atomic_commit: commiting 0xffffb8064d136350
+DRM debug in set_no_fbc_reason: Disabling FBC: disabled per chip default
+DRM debug in intel_panel_actually_set_backlight: set backlight PWM = 0
+DRM debug in drm_vblank_off: crtc 0, vblank enabled 0, inmodeset 0
+DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 0 : v 0x5 p(0,482)@ 6.578326 -> 6.568531 [e 0 us, 0 rep]
+DRM debug in drm_update_vblank_count: updating vblank count on crtc 0: current=1, diff=3, hw=1308 hw_last=1305
+DRM debug in intel_disable_pipe: disabling pipe A
+DRM debug in intel_disable_shared_dpll: disable PCH DPLL A (active 1, on? 1) for crtc 21
+DRM debug in intel_disable_shared_dpll: disabling PCH DPLL A
+DRM debug in drm_calc_timestamping_constants: crtc 21: hwmode: htotal 1408, vtotal 816, vdisplay 800
+DRM debug in drm_calc_timestamping_constants: crtc 21: clock 68940 kHz framedur 16665622 linedur 20423
+DRM debug in intel_prepare_shared_dpll: setting up PCH DPLL A
+DRM debug in intel_enable_pipe: enabling pipe A
+DRM debug in ironlake_fdi_link_train: FDI_RX_IIR 0x700
+DRM debug in ironlake_fdi_link_train: FDI train 1 done.
+DRM debug in ironlake_fdi_link_train: FDI_RX_IIR 0x600
+DRM debug in ironlake_fdi_link_train: FDI train 2 done.
+DRM debug in ironlake_fdi_link_train: FDI train done
+DRM debug in intel_enable_shared_dpll: enable PCH DPLL A (active 0, on? 0) for crtc 21
+DRM debug in intel_enable_shared_dpll: enabling PCH DPLL A
+DRM debug in drm_vblank_on: crtc 0, vblank enabled 0, inmodeset 1
+DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 0 : v 0x7 p(0,-16)@ 6.869993 -> 6.870319 [e 0 us, 0 rep]
+DRM debug in intel_panel_enable_backlight: pipe A
+DRM debug in intel_panel_actually_set_backlight: set backlight PWM = 1421
+DRM debug in drm_vblank_enable: enabling vblank on crtc 0, ret: 0
+DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 0 : v 0x5 p(0,154)@ 7.72423 -> 7.69278 [e 0 us, 0 rep]
+DRM debug in drm_update_vblank_count: updating vblank count on crtc 0: current=5, diff=12, hw=1321 hw_last=1309
+DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 0 : v 0x7 p(0,-16)@ 7.85552 -> 7.85878 [e 0 us, 0 rep]
+DRM debug in drm_update_vblank_count: updating vblank count on crtc 0: current=17, diff=1, hw=1322 hw_last=1321
+DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 0 : v 0x7 p(0,-16)@ 7.102133 -> 7.102460 [e 0 us, 0 rep]
+DRM debug in drm_update_vblank_count: updating vblank count on crtc 0: current=18, diff=1, hw=1323 hw_last=1322
+DRM debug in intel_connector_check_state: [CONNECTOR:27:LVDS-1]
+DRM debug in check_encoder_state: [ENCODER:28:LVDS-28]
+DRM debug in check_encoder_state: [ENCODER:35:DAC-35]
+DRM debug in check_encoder_state: [ENCODER:36:TMDS-36]
+DRM debug in check_encoder_state: [ENCODER:41:TMDS-41]
+DRM debug in drm_property_unreference_blob: 0xffffb807868ccde8: blob ID: 43 (1)
+DRM debug in check_crtc_state: [CRTC:21]
+DRM debug in check_shared_dpll_state: PCH DPLL A
+DRM debug in check_shared_dpll_state: PCH DPLL B
+DRM debug in drm_atomic_state_default_clear: Clearing atomic state 0xffffb8064d136350
+DRM debug in drm_atomic_state_free: Freeing atomic state 0xffffb8064d136350
+DRM debug in drm_framebuffer_reference: 0xffffb80786907490: FB ID: 45 (2)
+DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 0 : v 0x7 p(0,-16)@ 7.118713 -> 7.119040 [e 0 us, 0 rep]
+DRM debug in drm_update_vblank_count: updating vblank count on crtc 0: current=19, diff=1, hw=1324 hw_last=1323
+DRM debug in vblank_disable_locked: disabling vblank on crtc 0
+DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 0 : v 0x7 p(0,-11)@ 7.118810 -> 7.119034 [e 0 us, 0 rep]
+DRM debug in drm_update_vblank_count: updating vblank count on crtc 0: current=20, diff=0, hw=1324 hw_last=1324
+wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
