@@ -1,0 +1,3 @@
+echo -n '#'
+dmesg |grep sd |grep MB |tail -1
+echo "gunzip < `ls -lt /usr/release/images/*amd64*install* |head -1 |awk '{print $9}'`| dd of=/dev/rsd0d progress=40 bs=4m "
