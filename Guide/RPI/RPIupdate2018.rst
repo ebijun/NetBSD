@@ -56,8 +56,10 @@ RaspberryPIのNetBSDイメージについて
  2018/6/16,8.99.19,3.7.1,,,PR53283 git-base-2.17.1,OSC沖縄,http://mail-index.netbsd.org/port-arm/2018/06/11/msg004851.html
  2018/7/07,8.99.21,3.7.2,3.8.6,,git-base-2.18,OSC北海道,http://mail-index.netbsd.org/port-arm/2018/07/01/msg004913.html
  2018/7/21,8.0,,,,,NBUG2018/7,http://mail-index.netbsd.org/port-arm/2018/07/22/msg004963.html
+ 2018/8/4,8.99.22,3.7.4,,,omxplayer,OSC京都,http://mail-index.netbsd.org/port-arm/2018/07/29/msg004969.html
+ 2018/8/25,8.99.24,,,1.1.0i,RPI3B+Ether,ODC,http://mail-index.netbsd.org/port-arm/2018/08/24/msg004993.html
+ 2018/9/23,8.99.25,3.8.0,,,OpenSSH7.8 git-base-2.19.0 libssh33,OSC広島,
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
-
 
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。

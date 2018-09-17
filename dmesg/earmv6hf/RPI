@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.24 (RPI) #0: Wed Aug 22 13:16:41 UTC 2018
+NetBSD 8.99.25 (RPI) #0: Fri Sep 14 09:51:09 UTC 2018
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 181 MB
@@ -45,6 +45,7 @@ vcmbox0 at bcmmbox0
 plcom0 at simplebus1
 plcom0: txfifo disabled
 plcom0: console
+plcom0: interrupting on icu irq 57
 bsciic1 at simplebus1: Broadcom Serial Controller
 iic1 at bsciic1: I2C bus
 /soc/pwm@7e20c000 at simplebus1 not configured
@@ -96,12 +97,12 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/8.99.24/modules
+kern.module.path=/stand/evbarm/8.99.25/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xc5370000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
-vchiq_get_state: g_state.remote->initialised != 1 (0)
+kern notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!

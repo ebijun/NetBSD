@@ -1,36 +1,35 @@
-VERSION: :1,$s/2018-08-25/2018-08-25/g
-ISO:     :1,$s/201808221400Z/201808221400Z/g
-NetBSD:  :1,$s/8.99.24/8.99.24/g
-PKGSRC:  :1,$s/2018-08-25/2018-08-25/
+VERSION: :1,$s/2018-09-23/2018-09-23/g
+ISO:     :1,$s/201809141000Z/201809141000Z/g
+NetBSD:  :1,$s/8.99.25/8.99.25/g
+PKGSRC:  :1,$s/2018-09-23/2018-09-23/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2018-08-25-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2018-09-23-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2018-08-25-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2018-09-23-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-08-25-earmv6hf/2018-08-25-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-08-25-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-09-23-earmv6hf/2018-09-23-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-09-23-earmv6hf/MD5
 
 Update:
-- NetBSD-current 8.99.24 evbarm-earmv6hf 201808221400Z rpi.img from nyftp.
-- omxplayer works again,thanx rin@!
+- NetBSD-current 8.99.25 evbarm-earmv6hf 201809141000Z rpi.img from nyftp.
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - Firmware update 
  20180410 on /boot for support newer RPI.
 - sysinfo and pkgsrc update 
  https://github.com/ebijun/NetBSD/commit/580b3719bf26e7175c94a56169de2a8149659910
-- RPI3B+: mue0: Ethernet port support:
-  ftp http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-08-25-earmv6hf/kernel7.img-RPI3
-  mv /boot/kernel7.img /boot/kernel7.img.org
-  cp kernel7.img-RPI3 /boot/kernel7.img
 
 System Update:
- sysinfo: bind-9.12.2pl1 dhcpcd-7.0.8 libc-12.211 openssl-1.1.0i sh-20160401-20180822131641Z
- pkgsrc: curl-7.61.0nb3 dillo-3.0.5nb4 git-base-2.18.0nb2 perl-5.28.0 
+ sysinfo: bozohttpd-20180824 libssh-33.0 openssh-7.8 opensshd-7.8
+  libpcap-1.9.0-PRE-GIT sh-20160401-20180914095109Z unbound-1.7.3
+ pkgsrc: curl-7.61.1 gd-2.2.5nb4 git-base-2.19.0 libidn-1.34 libidn2-2.0.5
+  libuuid-2.32.1 pango-1.42.4 ruby24-cairo-1.15.14 ruby24-mikutter-3.8.0
+  zsh-5.6.1
+
 - mikutter support 
  I make sample API key,pre-installed.
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/root/.mikutter/plugin
@@ -48,18 +47,13 @@ port-arm/53284: Support RPI3B+,RPI0W,RPI2-1.2
 - RPI0W: can't initialize microSD.
   cp /boot/bcm2835-rpi-zero.dtb  /boot/bcm2835-rpi-zero-w.dtb 
 
-omxplayer: Abort Trap. (after FDTisation?)
- Close: fixed,thanx
-  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=52984
-  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=53042
-
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
 
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-08-25-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-09-23-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -117,7 +111,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-08-25/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-09-23/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -125,7 +119,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-08-25-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-09-23-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -304,16 +298,16 @@ pkgsrc Todo:
 
 =====================
 
-For Open Developers Conference 2018 NetBSD bof.
+For Open Source Conference 2018 Hiroshima NetBSD bof.
 I've updated raspberry-pi image.
 
-https://www.ospn.jp/odc2018/
-http://www.re.soum.co.jp/~jun/ODC2018.pdf
+https://www.ospn.jp/osc2018-hiroshima/
+http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2018.rst
 
-- NetBSD 8.99.24 earmv6hf rpi.img.gz base
+- NetBSD 8.99.25 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -351,7 +345,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-08-25/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-09-23/
 
 Installed Packages:
   bash
