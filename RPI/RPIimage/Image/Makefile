@@ -31,8 +31,9 @@ LIST=man modules xbase xcomp xetc xfont xserver
 
 #Firmware: 
 #git show HEAD |head 
-#commit ae9a493932e47e08cabb25a2728037298075fd00
-#Date:   Tue Apr 10 18:34:46 2018 +0100
+#commit 1bd0e85c3ce7f6946f5cd4e18e7b45d50767412f
+#Date:   Mon Sep 17 14:39:10 2018 +0100
+#    kernel: Bump to 4.14.70
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
