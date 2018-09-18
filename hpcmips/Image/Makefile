@@ -4,13 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-#IMAGE=/usr/release/images/NetBSD-7.99.71-hpcmips-201705130540Z.iso
-#IMAGE=/usr/release/images/NetBSD-8.99.12-hpcmips-201803141830Z.iso
-#IMAGE=/usr/release/images/NetBSD-8.99.9-hpcmips-201712150740Z.iso
-#IMAGE=/usr/release/images/NetBSD-8.0_RC1-hpcmips-201804201240Z.iso
-IMAGE=/usr/release/images/NetBSD-7.1.2_PATCH-hpcmips-201804201740Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.25-hpcmips-201809181010Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2017-05-13.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2018-09-15.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
 INSTALLATION=/mnt1/hpcmips/installation
@@ -34,7 +30,6 @@ all: file newfs cdmount extract bootarea cdunmount
 file: 
 	echo Create ${FILE}.
 	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
-#	dd if=/dev/zero of=${FILE} bs=256 count=3813376 progress=50000
 	sleep 3
 
 newfs:
