@@ -58,7 +58,7 @@ RaspberryPIのNetBSDイメージについて
  2018/7/21,8.0,,,,,NBUG2018/7,http://mail-index.netbsd.org/port-arm/2018/07/22/msg004963.html
  2018/8/4,8.99.22,3.7.4,,,omxplayer,OSC京都,http://mail-index.netbsd.org/port-arm/2018/07/29/msg004969.html
  2018/8/25,8.99.24,,,1.1.0i,RPI3B+Ether,ODC,http://mail-index.netbsd.org/port-arm/2018/08/24/msg004993.html
- 2018/9/23,8.99.25,3.8.0,,,OpenSSH7.8 git-base-2.19.0 libssh33,OSC広島,
+ 2018/9/23,8.99.25,3.8.0,,,OpenSSH7.8 git-base-2.19.0 libssh33,OSC広島,http://mail-index.netbsd.org/port-arm/2018/09/17/msg005023.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。

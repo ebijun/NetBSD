@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-7 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -44,7 +44,8 @@ Maps:
  2014,9/20,200,26,サテライトキャンパスひろしま
  2015,9/19,170,23,サテライトキャンパスひろしま
  2016,11/27,210,27,サテライトキャンパスひろしま
- 2017,11/26,,32,サテライトキャンパスひろしま
+ 2017,11/26,200,32,サテライトキャンパスひろしま
+ 2018,9/23,,18,サテライトキャンパスひろしま
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,6 +57,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 130,OSC2018広島,http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
  118,OSC2017広島,http://www.re.soum.co.jp/~jun/OSC2017hiroshima.pdf 
  100,OSC2016広島,http://www.re.soum.co.jp/~jun/OSC2016hiroshima.pdf
  78,OSC2015広島,http://www.re.soum.co.jp/~jun/OSC2015hiroshima.pdf
@@ -72,12 +74,13 @@ togetterまとめ
 
  OSC2011神戸,開催募集,http://twitpic.com/4ls711
  OSC2011広島,21世紀のX68000まとめ,http://togetter.com/li/195551
- OSC2012広島,OSC2012 広島 NetBSDブース展示の記録,http://togetter.com/li/392778
- OSC2013広島,OSC2013 広島 NetBSDブース展示の記録,http://togetter.com/li/573243
- OSC2014広島,OSC2014 広島 NetBSDブース展示の記録,http://togetter.com/li/721414
- OSC2015広島,OSC2015 広島 NetBSDブース展示の記録,http://togetter.com/li/875487
- OSC2016広島,OSC2016 広島 NetBSDブース展示の記録,https://togetter.com/li/1053125
- OSC2017広島,OSC2017 広島 NetBSDブース展示の記録,
+ OSC2012広島,OSC2012広島 NetBSDブース展示の記録,http://togetter.com/li/392778
+ OSC2013広島,OSC2013広島 NetBSDブース展示の記録,http://togetter.com/li/573243
+ OSC2014広島,OSC2014広島 NetBSDブース展示の記録,http://togetter.com/li/721414
+ OSC2015広島,OSC2015広島 NetBSDブース展示の記録,http://togetter.com/li/875487
+ OSC2016広島,OSC2016広島 NetBSDブース展示の記録,https://togetter.com/li/1053125
+ OSC2017広島,OSC2017広島 NetBSDブース展示の記録,https://togetter.com/li/1175260
+ OSC2018広島,OSC2018広島 NetBSDブース展示の記録,
 
 OSC広島発表
 ~~~~~~~~~~~~~
@@ -97,6 +100,7 @@ OSC広島発表
  20年前のコードをNetBSDでメンテするということ,OSC2015広島,https://speakerdeck.com/tsutsui/osc2015kyoto-netbsd-and-old-machines
  Re:X68030/25MHzから始めるユーザストリーム生活,OSC2016広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc16hi/
  NetBSD/luna68kで「PSG音源の調べ」ふたたび,OSC2016広島,https://speakerdeck.com/tsutsui/osc2016-hiroshima-psg-tunes-on-netbsd-luna68k-again
+ 響け!…ない NetBSD,OSC2017広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc17hi/
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -105,7 +109,7 @@ OSC広島発表
  :widths: 30 15 80
 
  県立広島大学,宇品,2011年OSC開催地
- 広島国際学院大学,中野東, ラムー近く。2012年OSC開催地
+ 広島国際学院大学,中野東, 2012年OSC開催地
  ビールスタンド重富,銀山町,壱度注ぎ/弐度注ぎ/参度注ぎ/重富注ぎ
  ハングアウト,八丁堀,17:30- 9タップ＆ハンバーガー
  RAKUBEER,三川町,国産地ビールの殿堂 12:00- 17:00-19:00ハッピーアワー
@@ -153,138 +157,73 @@ OSC広島発表
  陸軍被服支厰倉庫,出汐,峠三吉「倉庫の記録」
  広島市郷土資料館,宇品,曲がった鉄骨と、かもじづくり。かもじって何？
  旧広島港湾事務所,宇品,広島唯一の明治時代の公共建築かつ被曝建物。
- 
+
+2017年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2017/11/26/1511662538199.jpg
+.. image::  ../Picture/2017/11/26/DSC_4582.JPG
+.. image::  ../Picture/2017/11/26/DSC_4587.JPG
+.. image::  ../Picture/2017/11/26/DSC_4590.JPG
+.. image::  ../Picture/2017/11/26/DSC_4602.JPG
+.. image::  ../Picture/2017/11/26/DSC_4606.JPG
+.. image::  ../Picture/2017/11/26/DSC_4610.JPG
+.. image::  ../Picture/2017/11/26/DSC_4611.JPG
+.. image::  ../Picture/2017/11/26/DSC_4612.JPG
+
 2016年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2016/11/27/1480207136670.jpg
-.. image::  ../Picture/2016/11/27/1480207831332.jpg
 .. image::  ../Picture/2016/11/27/1480208018531.jpg
-.. image::  ../Picture/2016/11/27/1480208118150.jpg
-.. image::  ../Picture/2016/11/27/1480209015503.jpg
-.. image::  ../Picture/2016/11/27/1480209095654.jpg
 .. image::  ../Picture/2016/11/27/1480209316491.jpg
-.. image::  ../Picture/2016/11/27/1480224804622.jpg
-.. image::  ../Picture/2016/11/27/DSC_2760.JPG
-.. image::  ../Picture/2016/11/27/DSC_2769.JPG
-.. image::  ../Picture/2016/11/27/DSC_2770.JPG
-.. image::  ../Picture/2016/11/27/DSC_2771.JPG
-.. image::  ../Picture/2016/11/27/DSC_2772.JPG
-.. image::  ../Picture/2016/11/27/DSC_2773.JPG
-.. image::  ../Picture/2016/11/27/DSC_2778.JPG
-.. image::  ../Picture/2016/11/27/DSC_2779.JPG
-.. image::  ../Picture/2016/11/27/DSC_2780.JPG
-.. image::  ../Picture/2016/11/27/DSC_2781.JPG
-.. image::  ../Picture/2016/11/27/DSC_2782.JPG
 .. image::  ../Picture/2016/11/27/DSC_2783.JPG
-.. image::  ../Picture/2016/11/27/DSC_2784.JPG
-.. image::  ../Picture/2016/11/27/DSC_2785.JPG
-.. image::  ../Picture/2016/11/27/DSC_2786.JPG
-.. image::  ../Picture/2016/11/27/DSC_2787.JPG
 .. image::  ../Picture/2016/11/27/DSC_2788.JPG
-.. image::  ../Picture/2016/11/27/DSC_2789.JPG
-.. image::  ../Picture/2016/11/27/DSC_2791.JPG
-.. image::  ../Picture/2016/11/27/DSC_2797.JPG
 .. image::  ../Picture/2016/11/27/DSC_2798.JPG
 .. image::  ../Picture/2016/11/27/DSC_2799.JPG
 .. image::  ../Picture/2016/11/27/DSC_2800.JPG
 .. image::  ../Picture/2016/11/27/DSC_2801.JPG
 .. image::  ../Picture/2016/11/27/DSC_2802.JPG
-.. image::  ../Picture/2016/11/27/DSC_2803.JPG
-.. image::  ../Picture/2016/11/27/DSC_2807.JPG
-.. image::  ../Picture/2016/11/27/DSC_2809.JPG
 
 2015年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image::  ../Picture/2015/09/19/DSC07909.JPG
-.. image::  ../Picture/2015/09/19/DSC07910.JPG
-.. image::  ../Picture/2015/09/19/DSC07911.JPG
-.. image::  ../Picture/2015/09/19/DSC07912.JPG
 .. image::  ../Picture/2015/09/19/DSC07916.JPG
-.. image::  ../Picture/2015/09/19/DSC07917.JPG
-.. image::  ../Picture/2015/09/19/DSC07918.JPG
 .. image::  ../Picture/2015/09/19/DSC07919.JPG
-.. image::  ../Picture/2015/09/19/DSC07920.JPG
 .. image::  ../Picture/2015/09/19/DSC07922.JPG
-.. image::  ../Picture/2015/09/19/DSC07923.JPG
-.. image::  ../Picture/2015/09/19/DSC07924.JPG
-.. image::  ../Picture/2015/09/19/DSC07925.JPG
-.. image::  ../Picture/2015/09/19/DSC_1330.jpg
 .. image::  ../Picture/2015/09/19/DSC_1332.jpg
 .. image::  ../Picture/2015/09/19/DSC_1333.jpg
 .. image::  ../Picture/2015/09/19/DSC_1334.jpg
-.. image::  ../Picture/2015/09/19/DSC_1338.jpg
-.. image::  ../Picture/2015/09/19/DSC_1339.jpg
-.. image::  ../Picture/2015/09/19/DSC_1340.jpg
-.. image::  ../Picture/2015/09/19/DSC_1342.jpg
-.. image::  ../Picture/2015/09/19/DSC_1343.jpg
-.. image::  ../Picture/2015/09/19/DSC_1344.jpg
-.. image::  ../Picture/2015/09/19/DSC_1345.jpg
 .. image::  ../Picture/2015/09/19/DSC_1357.jpg
-.. image::  ../Picture/2015/09/19/DSC_1360.jpg
-.. image::  ../Picture/2015/09/19/DSC_1362.jpg
 .. image::  ../Picture/2015/09/19/DSC_1363.jpg
 .. image::  ../Picture/2015/09/19/DSC_1364.jpg
-.. image::  ../Picture/2015/09/19/DSC_1366.jpg
 
 
 2014年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2014/09/20/DSC05616.JPG
-.. image::  ../Picture/2014/09/20/DSC05619.JPG
-.. image::  ../Picture/2014/09/20/DSC05622.JPG
-.. image::  ../Picture/2014/09/20/DSC05623.JPG
 .. image::  ../Picture/2014/09/20/DSC05624.JPG
-.. image::  ../Picture/2014/09/20/DSC05625.JPG
 .. image::  ../Picture/2014/09/20/DSC05626.JPG
-.. image::  ../Picture/2014/09/20/DSC05627.JPG
 .. image::  ../Picture/2014/09/20/DSC05628.JPG
 .. image::  ../Picture/2014/09/20/DSC_0477.jpg
-.. image::  ../Picture/2014/09/20/DSC_0478.jpg
 .. image::  ../Picture/2014/09/20/DSC_0479.jpg
-.. image::  ../Picture/2014/09/20/DSC_0480.jpg
-.. image::  ../Picture/2014/09/20/DSC_0481.jpg
 .. image::  ../Picture/2014/09/20/DSC_0482.jpg
 .. image::  ../Picture/2014/09/20/DSC_0488.jpg
-.. image::  ../Picture/2014/09/20/DSC_0489.jpg
-.. image::  ../Picture/2014/09/20/DSC_0490.jpg
 .. image::  ../Picture/2014/09/20/DSC_0491.jpg
 .. image::  ../Picture/2014/09/20/DSC_0496.jpg
-.. image::  ../Picture/2014/09/20/DSC_0497.jpg
 
 
 2013年
 ~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2013/10/05/dsc03063.jpg
-.. image::  ../Picture/2013/10/05/dsc03085.jpg
-.. image::  ../Picture/2013/10/05/dsc03092.jpg
-.. image::  ../Picture/2013/10/05/dsc03100.jpg
-.. image::  ../Picture/2013/10/05/dsc03102.jpg
-.. image::  ../Picture/2013/10/05/dsc03105.jpg
 .. image::  ../Picture/2013/10/05/dsc03124.jpg
 .. image::  ../Picture/2013/10/05/dsc03125_1.jpg
 .. image::  ../Picture/2013/10/05/dsc03126.jpg
-.. image::  ../Picture/2013/10/05/dsc03128.jpg
-.. image::  ../Picture/2013/10/05/dsc03135.jpg
-.. image::  ../Picture/2013/10/05/dsc03139.jpg
-.. image::  ../Picture/2013/10/06/dsc03149.jpg
 .. image::  ../Picture/2013/10/06/dsc03152.jpg
-.. image::  ../Picture/2013/10/06/dsc03154.jpg
 .. image::  ../Picture/2013/10/06/dsc03156.jpg
 .. image::  ../Picture/2013/10/06/dsc03157.jpg
-.. image::  ../Picture/2013/10/06/dsc03158.jpg
 .. image::  ../Picture/2013/10/05/DSC_2657.jpg
 .. image::  ../Picture/2013/10/05/DSC_2658.jpg
-.. image::  ../Picture/2013/10/06/DSC_2664.jpg
 .. image::  ../Picture/2013/10/06/DSC_2673.jpg
 .. image::  ../Picture/2013/10/06/DSC_2674.jpg
-.. image::  ../Picture/2013/10/06/DSC_2675.jpg
-.. image::  ../Picture/2013/10/06/DSC_2676.jpg
-.. image::  ../Picture/2013/10/06/DSC_2677.jpg
-.. image::  ../Picture/2013/10/06/DSC_2680.jpg
 .. image::  ../Picture/2013/10/06/DSC_2683.jpg
 .. image::  ../Picture/2013/10/06/DSC_2689.jpg
-.. image::  ../Picture/2013/10/06/DSC_2690.jpg
 
