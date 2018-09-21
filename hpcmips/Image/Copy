@@ -1,10 +1,10 @@
 DEVICE=rsd0d
 
-#COMPRESS=-z
-#SUFFIX=.gz
+COMPRESS=-z
+SUFFIX=.gz
 
-DATE=`date +%Y-%m-%d`
-#DATE=2017-05-14
+#DATE=`date +%Y-%m-%d`
+DATE=2018-09-19
 
 progress $COMPRESS -f ${DATE}-netbsd-hpcmips.img${SUFFIX} dd of=/dev/${DEVICE} bs=4m
 
