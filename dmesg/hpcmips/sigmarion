@@ -1,17 +1,17 @@
-pmap_steal_memory: seg 0: 0x4d2 0x4d2 0x1ffe 0x1ffe
-pmap_steal_memory: seg 0: 0x511 0x511 0x1ffe 0x1ffe
-pmap_steal_memory: seg 0: 0x513 0x513 0x1ffe 0x1ffe
+total memory banks = 2
+memory bank 0 = 00000000 5020KB(0x4e7000)
+memory bank 1 = 0x4e7000 27748KB(0x1b19000)
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018 The NetBSD Foundation, Inc.  All rights reserved.
+2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+2018 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
-    The Regents of the University of California.  All rights reserved.
+The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.1.2_PATCH (GENERIC.201804201740Z)
+NetBSD 8.99.25 (GENERIC) #0: Tue Sep 18 09:27:35 UTC 2018
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/hpcmips/compile/GENERIC
 DoCoMo sigmarion (NEC VR4121 rev1.2 168.521MHz)
 total memory = 32768 KB
-avail memory = 26984 KB
-kern.module.path=/stand/hpcmips/7.1/modules
+avail memory = 26904 KB
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0: NEC VR4100 CPU (0xc60) Rev. 6.0 with software emulated floating point
@@ -32,29 +32,31 @@ vrkiu0 at vr4102ip0 addr 0x0b000180-019f
 hpckbd0 at vrkiu0
 wskbd0 at hpckbd0: console keyboard
 vrpmu0 at vr4102ip0 addr 0x0b0000a0-00bf
-vrpmu: GPIO[3] activation
-vrpmu: Battery low during activation
 vrdsu0 at vr4102ip0 addr 0x0b0000e0-00e7
 vrled0 at vr4102ip0 addr 0x0b000240-024f
 vrpiu0 at vr4102ip0 addr 0x0b000120-013f, 0x0b0002a0-02bf
 wsmouse0 at vrpiu0 mux 0
-vrpiu0: WARNING: powerhook_establish is deprecated
+autoconfiguration error: vrpiu0: WARNING: powerhook_establish is deprecated
 mqvideo0 at vr4102ip0 addr 0x0a000000-7fffff: MQ200 Rev.00 video controller, console
 mqvideo0: framebuffer address: 0xaa000000
-  PLL1: 48.713MHz(0x0edd263a, 12.288MHzx222/ 56)
-  PLL2: 30.021MHz(0x00d60a30, 12.288MHzx215/ 88)
-  PLL3: disable
-   MEM: 30.021MHz(PLL2)
-    GE: 30.021MHz(PLL2)
-   GC1: disable
-   GC2: 19.485MHz(PLL1/2.5/1), FP
-mqvideo0: WARNING: powerhook_establish is deprecated
+PLL1: 48.713MHz(0x0edd263a, 12.288MHzx222/ 56)
+PLL2: 30.021MHz(0x00d60a30, 12.288MHzx215/ 88)
+PLL3: disable
+MEM: 30.021MHz(PLL2)
+GE: 30.021MHz(PLL2)
+GC1: disable
+GC2: 19.485MHz(PLL1/2.5/1), FP
+autoconfiguration error: mqvideo0: WARNING: powerhook_establish is deprecated
 hpcfb0 at mqvideo0: 640x240 pixels, 65536 colors, 80x24 chars
 wsdisplay0 at hpcfb0 kbdmux 1: console (std, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vrc4172pwm0 at vr4102ip0 addr 0x15003880-3885
 vraiu0 at vr4102ip0 addr 0x0b000160-017f
-audio0 at vraiu0: half duplex, playback, capture
+audio0 at vraiu0: half duplex, playback, capture, mmap
+vraiu0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 44100
+vraiu0: Latency: 69 milliseconds
+spkr0 at audio0: PC Speaker (synthesized)
+wsbell at spkr0 not configured
 vrisab0 at vrgiu0: ISA port 0x14000000-0x18000000 mem 0x10000000-0x14000000
 isa0 at vrisab0
 pcic0 at isa0 port 0x3e0-0x3e1 iomem 0x70000-0x73fff irq 589827
@@ -68,7 +70,7 @@ apmdev0 at hpcapm0: Power Management spec V1.2
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 timecounter: Timecounter "vrrtc" frequency 32768 Hz quality 100
 pcic0: using irq 589827 for socket events
-pcic0: WARNING: powerhook_establish is deprecated
+autoconfiguration error: pcic0: WARNING: powerhook_establish is deprecated
 wdc1 at pcmcia0 function 0: <SANDISK, SDCFHS-016G, >
 pcic0: port 0x14000400-0x1400040f
 wdc1: i/o mapped mode
@@ -78,17 +80,17 @@ wd0 at atabus0 drive 0
 wd0: <SDCFHS-016G>
 wd0: drive supports 1-sector PIO transfers, LBA48 addressing
 wd0: 15279 MB, 31045 cyl, 16 head, 63 sec, 512 bytes/sect x 31293360 sectors
-wd0: drive supports PIO mode 4
+wd0: drive supports PIO mode 4WARNING: 3 errors while detecting hardware; check system log.
 boot device: wd0
 pcmcia0: card irq 3
 root on wd0a dumps on wd0b
 pcmcia0: card irq 3
 pcmcia0: card irq 3
 root file system type: ffs
-WARNING: clock lost 6685 days
+kern.module.path=/stand/hpcmips/8.99.25/modules
+WARNING: clock lost 6835 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-pid 1(init): ABI set to O32 (e_flags=0x1007)
 hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
 wsdisplay0: screen 1 added (std, vt100 emulation)
 hpcfb: 640x240 pixels, 65536 colors, 80x24 chars
