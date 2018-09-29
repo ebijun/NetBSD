@@ -23,7 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/hiroshima
+ Place/kagawa
  RPI/RPIupdate2018
- X68K
  Place/intro

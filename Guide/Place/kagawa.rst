@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -51,6 +51,8 @@ Maps:
  2011, Kagawa   ,  2/5  ,   150 ,    28
  2012, Ehime    ,  3/24 ,   220 ,    34
  2013, Tokushima,  3/9  ,   300 ,    24
+ 2015, Tokushima, 11/14 , 200, 24
+ 2018, Kagawa, 10/6,,14
 
 togetterまとめ
 ~~~~~~~~~~~~~~~
@@ -60,6 +62,8 @@ togetterまとめ
 
  OSC2012愛媛 NetBSDブース展示の記録,http://togetter.com/li/275497
  OSC2013徳島 NetBSDブース展示の記録,http://togetter.com/li/468577
+ OSC2015徳島 NetBSDブース展示の記録,https://togetter.com/li/899923
+ OSC2018香川 NetBSDブース展示の記録,
 
 四国での発表
 ~~~~~~~~~~~~
@@ -97,11 +101,15 @@ NetBSD/x68k近況　isaki68k@ さん
 .. csv-table::
  :widths: 25 15 60
 
+ 麺之介,瓦町,KAOS (KAgawa Open Source)から十余年。
  iL,常磐町,ノイズ喫茶
+ Maison De Biere,百間町,毎月第3土曜にClub Biere
+ Hopheads,大工町,17:00-3:00
+ タビ式,瓦町,アブサン 階段 18:57-04:07
+ melobar,古新町,2018/10/20 DJ Lord Sassafras
  beer pub station,高松築港,駅構内にある。クラックが出してる
  オーディオサミット,高松町,オーディオ屋。古高松下車
  イサムノグチ庭園美術館,牟礼町,はがきで予約
- 麺之介,瓦町,KAOS (KAgawa Open Source)から十余年。
  麦蔵,福岡町,かしわざる
  山鹿,片原町,うどんの館とは何か。
  犬島精錬所美術館,犬島,わたしゃ５５年前からこうしてるんだよ
