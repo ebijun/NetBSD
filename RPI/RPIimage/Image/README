@@ -1,34 +1,32 @@
-VERSION: :1,$s/2018-09-23/2018-09-23/g
-ISO:     :1,$s/201809141000Z/201809141000Z/g
+VERSION: :1,$s/2018-10-06/2018-10-06/g
+ISO:     :1,$s/201809281150Z/201809281150Z/g
 NetBSD:  :1,$s/8.99.25/8.99.25/g
-PKGSRC:  :1,$s/2018-09-23/2018-09-23/
+PKGSRC:  :1,$s/2018-10-06/2018-10-06/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2018-09-23-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2018-10-06-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2018-09-23-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2018-10-06-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-09-23-earmv6hf/2018-09-23-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-09-23-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-10-06-earmv6hf/2018-10-06-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-10-06-earmv6hf/MD5
 
 Update:
-- NetBSD-current 8.99.25 evbarm-earmv6hf 201809141000Z rpi.img from nyftp.
+- NetBSD-current 8.99.25 evbarm-earmv6hf 201809281150Z rpi.img from nyftp.
+- Firmware update - fixed
+  http://mail-index.netbsd.org/port-arm/2018/09/18/msg005027.html
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
-- Firmware update 
- 20180410 on /boot for support newer RPI.
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/fc6064964712e2dc4f4d19e19847b0ae2b0b8676
+ https://github.com/ebijun/NetBSD/commit/fbfef69723059649fb727e3030db32ed488974da
 
 System Update:
- sysinfo: bozohttpd-20180824 libssh-33.0 openssh-7.8 opensshd-7.8
-  libpcap-1.9.0-PRE-GIT sh-20160401-20180914095109Z unbound-1.7.3
- pkgsrc: curl-7.61.1 gd-2.2.5nb4 git-base-2.19.0 libidn-1.34 libidn2-2.0.5
-  libuuid-2.32.1 pango-1.42.4 ruby24-cairo-1.15.14 ruby24-mikutter-3.8.0
-  zsh-5.6.1
+ sysinfo: openssl-1.1.1 sh-20160401-20180928081134Z xz-5.2.4 
+ pkgsrc:  fontconfig-2.13.1 ncurses-6.1nb2 perl-5.28.0nb1 ruby24-public_suffix-3.0.3 
+          zsh-5.6.2 
 
 - mikutter support 
  I make sample API key,pre-installed.
@@ -53,7 +51,7 @@ Overview:
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-09-23-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-10-06-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -111,7 +109,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-09-23/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-10-06/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -119,7 +117,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-09-23-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-10-06-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -298,11 +296,11 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2018 Hiroshima NetBSD bof.
+For Open Source Conference 2018 Kagawa NetBSD bof.
 I've updated raspberry-pi image.
 
-https://www.ospn.jp/osc2018-hiroshima/
-http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
+https://www.ospn.jp/osc2018-kagawa/
+http://www.re.soum.co.jp/~jun/OSC2018kagawa.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2018.rst
@@ -345,7 +343,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-09-23/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-10-06/
 
 Installed Packages:
   bash
