@@ -44,7 +44,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount kernel
+all: file cdmount rpi extract cdunmount 
 
 #update: cdmount update-extract cdunmount
 
@@ -180,16 +180,6 @@ firm:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
 	for i in ${FIRM} ; do (cp ${FIRMPATH}/$$i /mnt); done
-	umount ${MNT}
-	vnconfig -u ${VND}
-
-kernel:
-	vnconfig ${VND} ${FILE}
-	mount_msdos /dev/${VND}e ${MNT}
-
-	# RPI0W
-	cp ${MNT}/bcm2835-rpi-zero.dtb ${MNT}/bcm2835-rpi-zero-w.dtb
-
 	umount ${MNT}
 	vnconfig -u ${VND}
 
