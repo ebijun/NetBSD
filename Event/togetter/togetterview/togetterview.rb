@@ -1,4 +1,4 @@
-#! /usr/pkg/bin/ruby23
+#! /usr/pkg/bin/ruby24
 
 require 'open-uri'
 require 'nokogiri'
@@ -19,11 +19,8 @@ doc.xpath("//div[@class='inner']").each do |item|
 	url   = item.css('a').attribute('href').value
 	c     = item.css('span').children
 
-	if c.size < 3 
-		break
+	if c[0].children.size == 0
+		next
 	end
-
-	if c[1].inner_text.index("view") 
-		puts title+","+url+","+c[0].inner_text
-	end
+	puts title+","+url+","+c[0].inner_text
 end
