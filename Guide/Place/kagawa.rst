@@ -121,40 +121,35 @@ NetBSD/x68k近況　isaki68k@ さん
  珈琲倶楽部欅,片原町,コーヒー　10:00-19:00
  ノーマcafe,瓦町,コーヒー 19:00-24:00
 
+2014年
+~~~~~~~~~~
+
+.. image::  ../Picture/2014/04/11/DSC_3238.jpg
+.. image::  ../Picture/2014/04/11/dsc04583.jpg
+.. image::  ../Picture/2014/04/12/DSC_3241.jpg
+.. image::  ../Picture/2014/04/12/DSC_3243.jpg
+.. image::  ../Picture/2014/04/12/DSC_3245.jpg
+.. image::  ../Picture/2014/04/12/DSC_3247.jpg
+.. image::  ../Picture/2014/04/12/DSC_3248.jpg
+.. image::  ../Picture/2014/04/12/DSC_3250.jpg
+.. image::  ../Picture/2014/04/12/DSC_3251.jpg
+.. image::  ../Picture/2014/04/12/DSC_3252.jpg
+.. image::  ../Picture/2014/04/12/DSC_3257.jpg
+.. image::  ../Picture/2014/04/12/DSC_3259.jpg
+
+2013年
+~~~~~~~~~~
+
 .. image:: ../Picture/2013/11/30/DSC_2941.jpg
 .. image:: ../Picture/2013/11/30/DSC_2942.jpg
-.. image:: ../Picture/2013/11/30/DSC_2944.jpg
-.. image:: ../Picture/2013/11/30/dsc03708.jpg
-.. image:: ../Picture/2013/12/01/DSC_2946.jpg
 .. image:: ../Picture/2013/12/01/DSC_2952.jpg
-.. image:: ../Picture/2013/12/01/DSC_2953.jpg
-.. image:: ../Picture/2013/12/01/DSC_2956.jpg
 .. image:: ../Picture/2013/12/01/DSC_2957.jpg
-.. image:: ../Picture/2013/12/01/DSC_2960.jpg
-.. image:: ../Picture/2013/12/01/DSC_2961.jpg
-.. image:: ../Picture/2013/12/01/DSC_2962.jpg
-.. image:: ../Picture/2013/12/01/DSC_2963.jpg
-.. image:: ../Picture/2013/12/01/DSC_2964.jpg
-.. image:: ../Picture/2013/12/01/dsc03709.jpg
 .. image:: ../Picture/2013/12/01/dsc03710.jpg
-.. image:: ../Picture/2013/12/01/dsc03711.jpg
 .. image:: ../Picture/2013/12/01/dsc03719.jpg
 .. image:: ../Picture/2013/12/01/dsc03722.jpg
 .. image:: ../Picture/2013/12/01/dsc03723.jpg
-.. image:: ../Picture/2013/12/01/dsc03733.jpg
-.. image:: ../Picture/2013/12/01/dsc03736.jpg
-.. image:: ../Picture/2013/12/01/dsc03738.jpg
-.. image:: ../Picture/2013/12/01/dsc03739.jpg
-.. image:: ../Picture/2013/12/01/dsc03745.jpg
 .. image:: ../Picture/2013/12/01/dsc03746.jpg
-.. image:: ../Picture/2013/12/01/dsc03750.jpg
-.. image:: ../Picture/2013/12/01/dsc03768.jpg
 .. image:: ../Picture/2013/12/01/dsc03770.jpg
-.. image:: ../Picture/2013/12/01/dsc03771.jpg
-.. image:: ../Picture/2013/12/01/dsc03772.jpg
 .. image:: ../Picture/2013/12/01/dsc03774.jpg
 .. image:: ../Picture/2013/12/01/dsc03777.jpg
-.. image:: ../Picture/2013/12/01/dsc03782.jpg
-.. image:: ../Picture/2013/12/01/dsc03784.jpg
-.. image:: ../Picture/2013/12/01/dsc03786.jpg
 

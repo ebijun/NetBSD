@@ -25,4 +25,5 @@
 
  Place/kagawa
  RPI/RPIupdate2018
+ RPI
  Place/intro
