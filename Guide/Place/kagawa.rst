@@ -51,7 +51,9 @@ Maps:
  2011, Kagawa   ,  2/5  ,   150 ,    28
  2012, Ehime    ,  3/24 ,   220 ,    34
  2013, Tokushima,  3/9  ,   300 ,    24
+ 2014,OSuCkagawa,4/12, , 
  2015, Tokushima, 11/14 , 200, 24
+ 2016, OSuCehime,10/8, ,
  2018, Kagawa, 10/6,,14
 
 togetterまとめ
@@ -62,6 +64,7 @@ togetterまとめ
 
  OSC2012愛媛 NetBSDブース展示の記録,http://togetter.com/li/275497
  OSC2013徳島 NetBSDブース展示の記録,http://togetter.com/li/468577
+ OSuC2014香川 NetBSDブース展示の記録,https://togetter.com/li/654135
  OSC2015徳島 NetBSDブース展示の記録,https://togetter.com/li/899923
  OSC2018香川 NetBSDブース展示の記録,
 
@@ -91,7 +94,7 @@ NetBSD/x68k近況　isaki68k@ さん
 
  2001,macppc mac68K amiga hpcmips dreamcast playstation2 i386 トロハブ
  2011,hp300 hpcmips hpcsh hpcarm
- 2014,RPI zaurus hpcarm
+ 2014,hp300 RPI zaurus hpcarm
 
 
 
