@@ -4,9 +4,9 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcmips.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-8.99.25-hpcmips-201809181010Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.25-hpcmips-201810181500Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2018-09-15.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2018-10-13.tar.gz
 
 SETS=/mnt1/hpcmips/binary/sets
 INSTALLATION=/mnt1/hpcmips/installation
@@ -57,7 +57,7 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	(cd ${MNT}/dev;./MAKEDEV all)
-#	tar xzpf ${PKGSRC} -C ${MNT}/usr
+	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mkdir ${MNT}/msdos
 	mkdir ${MNT}/kern
 	mkdir ${MNT}/proc
