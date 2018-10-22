@@ -1,0 +1,101 @@
+total memory banks = 2
+memory bank 0 = 00000000 5056KB(0x4f0000)
+memory bank 1 = 0x4f0000 11328KB(0xb10000)
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+2018 The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+The Regents of the University of California.  All rights reserved.
+
+NetBSD 8.99.25 (GENERIC) #0: Thu Oct 18 14:30:54 UTC 2018
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/hpcmips/compile/GENERIC
+Fujitsu INTERTOP IT300 (NEC VR4121 rev1.0 131.072MHz)
+total memory = 16384 KB
+avail memory = 10800 KB
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+cpu0 at mainbus0: NEC VR4100 CPU (0xc60) Rev. 6.0 with software emulated floating point
+cpu0: 32 TLB entries, 256KB max page size
+cpu0: 16KB/16B direct-mapped L1 instruction cache
+cpu0: 8KB/16B direct-mapped write-back L1 data cache
+vr4102ip0 at mainbus0
+vrbcu0 at vr4102ip0 addr 0x0b000000-001f
+vrbcu0: CPU 131.072MHz, bus 32.768MHz, ram 32.768MHz
+vrcmu0 at vr4102ip0 addr 0x0b000060-007f
+vrgiu0 at vr4102ip0 addr 0x0b000100-011f
+pwctl0 at vrgiu0 port=15 id=0 on=1
+vrdmaau0 at vr4102ip0 addr 0x0b000020-0037
+vrdcu0 at vr4102ip0 addr 0x0b000040-004b
+com0 at vr4102ip0 addr 0x0c000000-0007: ns16550a, working fifo
+vrrtc0 at vr4102ip0 addr 0x0b0000c0-00df
+vrkiu0 at vr4102ip0 addr 0x0b000180-019f
+hpckbd0 at vrkiu0
+wskbd0 at hpckbd0: console keyboard
+vrpmu0 at vr4102ip0 addr 0x0b0000a0-00bf
+vrdsu0 at vr4102ip0 addr 0x0b0000e0-00e7
+vrled0 at vr4102ip0 addr 0x0b000240-024f
+vrpiu0 at vr4102ip0 addr 0x0b000120-013f, 0x0b0002a0-02bf
+wsmouse0 at vrpiu0 mux 0
+autoconfiguration error: vrpiu0: WARNING: powerhook_establish is deprecated
+ite8181video0 at vr4102ip0 addr 0x0a000000-7fffff: ITE8181 Rev.04, console
+ite8181video0: framebuffer address: 0xaa000000
+ite8181video0: ite8181 lcd control is DISABLED.
+autoconfiguration error: ite8181video0: WARNING: powerhook_establish is deprecated
+hpcfb0 at ite8181video0: 640x480 pixels, 256 colors, 80x48 chars
+wsdisplay0 at hpcfb0 kbdmux 1: console (std, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+vraiu0 at vr4102ip0 addr 0x0b000160-017f
+audio0 at vraiu0: half duplex, playback, capture, mmap
+vraiu0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 44100
+vraiu0: Latency: 69 milliseconds
+spkr0 at audio0: PC Speaker (synthesized)
+wsbell at spkr0 not configured
+vrisab2 at vrgiu0: ISA port 0x15000000-0x18000000 mem 0x10000000-0x14000000
+isa2 at vrisab2
+pcic0 at isa2 port 0x3e0-0x3e1 iomem 0x70000-0x73fff irq 393219
+pcic0: controller 0 (Intel 82365SL Revision 1) has sockets A and B
+pcic0: controller 1 (Intel 82365SL Revision 1) has sockets A and B
+pcmcia0 at pcic0 controller 0 socket 0
+pcmcia1 at pcic0 controller 0 socket 1
+pcmcia at pcic0 controller 1 socket 0 not configured
+pcmcia at pcic0 controller 1 socket 1 not configured
+btnmgr0 at mainbus0
+wskbd1 at btnmgr0 mux 1
+wskbd1: connecting to wsdisplay0
+hpcapm0 at mainbus0: pseudo power management module
+apmdev0 at hpcapm0: Power Management spec V1.2
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "vrrtc" frequency 32768 Hz quality 100
+pcic0: using irq 393219 for socket events
+autoconfiguration error: pcic0: WARNING: powerhook_establish is deprecated
+autoconfiguration error: pcic0: WARNING: powerhook_establish is deprecated
+wdc1 at pcmcia1 function 0: <SanDisk, SDCFXPS-064G, >
+pcic0: port 0x15000400-0x1500040f
+wdc1: i/o mapped mode
+pcmcia1: card irq 3
+atabus0 at wdc1 channel 0
+wd0 at atabus0 drive 0
+wd0: <SDCFXPS-064G>
+wd0: drive supports 1-sector PIO transfers, LBA48 addressing
+wd0: 61064 MB, 124066 cyl, 16 head, 63 sec, 512 bytes/sect x 125059072 sectors
+wd0: drive supports PIO mode 4WARNING: 4 errors while detecting hardware; check system log.
+boot device: wd0
+pcmcia1: card irq 3
+root on wd0a dumps on wd0b
+pcmcia1: card irq 3
+pcmcia1: card irq 3
+/: replaying log to memory
+root file system type: ffs
+kern.module.path=/stand/hpcmips/8.99.25/modules
+WARNING: clock lost 7232 days
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
+/: replaying log to disk
+hpcfb: 640x480 pixels, 256 colors, 80x48 chars
+wsdisplay0: screen 1 added (std, vt100 emulation)
+hpcfb: 640x480 pixels, 256 colors, 80x48 chars
+wsdisplay0: screen 2 added (std, vt100 emulation)
+hpcfb: 640x480 pixels, 256 colors, 80x48 chars
+wsdisplay0: screen 3 added (std, vt100 emulation)
+hpcfb: 640x480 pixels, 256 colors, 80x48 chars
+wsdisplay0: screen 4 added (std, vt100 emulation)
