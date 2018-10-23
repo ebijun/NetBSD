@@ -1,0 +1,321 @@
+Content-Type: application/X-atf-tps; version="3"
+
+info: atf.version, Automated Testing Framework 0.20 (atf-0.20)
+info: tests.root, /usr/tests
+info: time.start, Tue Oct 23 14:01:44 JST 2018
+info: uname.sysname, NetBSD
+info: uname.nodename, hpcmips
+info: uname.release, 8.99.25
+info: uname.version, NetBSD 8.99.25 (GENERIC) #0: Thu Oct 18 14:30:54 UTC 2018 mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/hpcmips/compile/GENERIC
+info: uname.machine, hpcmips
+info: env, ENV=/root/.shrc
+info: env, BLOCKSIZE=1k
+info: env, PWD=/usr/tests
+info: env, HOME=/root
+info: env, PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/pkg/sbin:/usr/pkg/bin:/usr/X11R7/bin:/usr/local/sbin:/usr/local/bin
+info: env, HOST=hpcmips
+info: env, TERM=vt100
+info: env, OLDPWD=/root
+info: env, USER=root
+info: env, LOGNAME=root
+info: env, SHELL=/bin/sh
+tps-count: 759
+tp-start: 1540270931.60180, bin/cat/t_cat, 3
+tc-start: 1540270931.156494, align
+tc-so:Executing command [ /bin/sh -c cat -be /usr/tests/bin/cat/d_align.in ]
+tc-end: 1540270940.205230, align, passed
+tc-start: 1540270940.348236, nonexistent
+tc-so:Executing command [ /bin/sh -c cat /some/name/that/does/not/exist ]
+tc-end: 1540270947.768646, nonexistent, passed
+tc-start: 1540270947.905059, se_output
+tc-so:Executing command [ /bin/sh -c cat -se /usr/tests/bin/cat/d_se_output.in ]
+tc-end: 1540270956.842803, se_output, passed
+tp-end: 1540270956.992218, bin/cat/t_cat
+tp-start: 1540270970.405700, bin/cp/t_cp, 10
+tc-start: 1540270970.470611, dir_to_dir
+tc-so:Executing command [ cp dir dir2 ]
+tc-so:Executing command [ cp -R dir dir2 ]
+tc-se:Fail: program did not exit cleanly
+tc-se:stdout:
+tc-se:
+tc-se:stderr:
+tc-se:
+tc-end: 1540270980.537689, dir_to_dir, failed, atf-check failed; see the output of the test for details
+tc-start: 1540270980.771636, dir_to_file
+tc-se:sh: 3: Syntax error: "if" unexpected
+tc-end: 1540270983.388336, dir_to_file, failed, Test case exited normally but failed to create the results file: Failed to open /tmp/atf-run.uZeWZ5/tcr
+tc-start: 1540270983.541656, file_over_link
+tc-so:Executing command [ cp -P file link ]
+tc-se:Fail: program did not exit cleanly
+tc-se:stdout:
+tc-se:
+tc-se:stderr:
+tc-se:
+tc-end: 1540270990.455688, file_over_link, failed, atf-check failed; see the output of the test for details
+tc-start: 1540270990.621704, file_to_file
+tc-so:Executing command [ cp file file2 ]
+tc-so:Ensuring that file and file2 are identical
+tc-so:Ensuring that file and file2 are identical
+tc-so:Executing command [ cp -p file file3 ]
+tc-so:Executing command [ cp -p -N file file3 ]
+tc-end: 1540271006.943603, file_to_file, passed
+tc-start: 1540271007.112884, file_to_link
+tc-so:Executing command [ cp file2 link ]
+tc-so:Ensuring that file and file2 are identical
+tc-end: 1540271014.909851, file_to_link, passed
+tc-start: 1540271015.68969, file_to_linkdir
+tc-so:Executing command [ cp file dirlink ]
+tc-se:Fail: program did not exit cleanly
+tc-se:stdout:
+tc-se:
+tc-se:stderr:
+tc-se:
+tc-end: 1540271022.378723, file_to_linkdir, failed, atf-check failed; see the output of the test for details
+tc-start: 1540271022.557037, files_to_dir
+tc-so:Executing command [ cp file file2 file3 ]
+tc-so:Executing command [ cp file file2 link dir ]
+tc-so:Ensuring that file and dir/file are identical
+tc-end: 1540271032.611633, files_to_dir, passed
+tc-start: 1540271032.775970, link_over_file
+tc-so:Executing command [ cp -P link file ]
+tc-end: 1540271040.573516, link_over_file, passed
+tc-start: 1540271040.735351, link_to_file
+tc-so:Executing command [ cp link file ]
+tc-so:Executing command [ cp link file2 ]
+tc-so:Ensuring that file and file2 are identical
+tc-end: 1540271050.986877, link_to_file, passed
+tc-start: 1540271051.142547, linkdir_to_file
+tc-so:Executing command [ cp dirlink file ]
+tc-so:Executing command [ cp -P dirlink file ]
+tc-end: 1540271061.772064, linkdir_to_file, passed
+tp-end: 1540271061.940673, bin/cp/t_cp
+tp-start: 1540271069.494323, bin/dd/t_dd, 3
+tc-start: 1540271069.543670, io
+tc-end: 1540271082.47668, io, passed
+tc-start: 1540271082.217041, length
+tc-se:[1]   Segmentation fault (core dumped) dd if=/dev/zero of=/dev/fd/5 count=1 5>&1 >&- ...
+tc-end: 1540271088.936920, length, passed
+tc-start: 1540271089.77789, seek
+tc-so:Executing command [ dd if=/dev/zero of=testfile seek=1 bs=8k count=1 ]
+tc-so:Executing command [ dd if=testfile ]
+tc-so:Executing command [ /bin/sh -c dd bs=4 if=/dev/zero count=1 | tr \\0 \\n | dd of=tf2 bs=4 seek=1 ]
+tc-so:Executing command [ dd if=tf2 ]
+tc-end: 1540271108.544921, seek, passed
+tp-end: 1540271108.691284, bin/dd/t_dd
+tp-start: 1540271114.94512, bin/df/t_df, 2
+tc-start: 1540271114.141082, hflag
+tc-so:Executing command [ /bin/sh -c BLOCKSIZE=1k /usr/tests/bin/df/h_df -hn ]
+tc-end: 1540271122.891784, hflag, passed
+tc-start: 1540271123.33508, normal
+tc-so:Executing command [ /bin/sh -c BLOCKSIZE=1k /usr/tests/bin/df/h_df -n ]
+tc-end: 1540271130.748626, normal, passed
+tp-end: 1540271130.885101, bin/df/t_df
+tp-start: 1540271146.377624, bin/expr/t_expr, 14
+tc-start: 1540271146.430877, arithmetic_ops
+tc-so:Expression '.java_wrapper : /', expecting '0'
+tc-so:Expression '4 : \*', expecting '0'
+tc-so:Expression '4 : +', expecting '0'
+tc-so:Expression '4 : -', expecting '0'
+tc-so:Expression '4 : /', expecting '0'
+tc-so:Expression '4 : %', expecting '0'
+tc-end: 1540271151.309143, arithmetic_ops, passed
+tc-start: 1540271151.422210, basic_functional
+tc-so:Expression '2', expecting '2'
+tc-so:Expression '-4', expecting '-4'
+tc-so:Expression 'hello', expecting 'hello'
+tc-end: 1540271155.923065, basic_functional, passed
+tc-start: 1540271156.46264, basic_math
+tc-so:Expression '2 + 4 \* 5', expecting '22'
+tc-end: 1540271159.830413, basic_math, passed
+tc-start: 1540271159.950256, colon_vs_math
+tc-so:Expression '2 : 4 / 2', expecting '0'
+tc-so:Expression '4 : 4 % 3', expecting '1'
+tc-end: 1540271164.596923, colon_vs_math, passed
+tc-start: 1540271164.711547, compare_ops
+tc-so:Expression '2 \!= 5', expecting '1'
+tc-so:Expression '2 \!= 2', expecting '0'
+tc-so:Expression '2 \<= 3', expecting '1'
+tc-so:Expression '2 \<= 2', expecting '1'
+tc-so:Expression '2 \<= 1', expecting '0'
+tc-so:Expression '2 \< 3', expecting '1'
+tc-so:Expression '2 \< 2', expecting '0'
+tc-so:Expression '2 = 2', expecting '1'
+tc-so:Expression '2 = 4', expecting '0'
+tc-so:Expression '2 \>= 1', expecting '1'
+tc-so:Expression '2 \>= 2', expecting '1'
+tc-so:Expression '2 \>= 3', expecting '0'
+tc-so:Expression '2 \> 1', expecting '1'
+tc-so:Expression '2 \> 2', expecting '0'
+tc-end: 1540271170.596771, compare_ops, passed
+tc-start: 1540271170.703826, compare_ops_precedence
+tc-so:Expression '2 \> 1 \* 17', expecting '0'
+tc-end: 1540271174.788421, compare_ops_precedence, passed
+tc-start: 1540271174.901885, gtkmm
+tc-so:Expression '3 \> 3 \| 3 = 3 \& 4 \> 4 \| 3 = 3 \& 4 = 4 \& 5 \>= 5', expecting '1'
+tc-so:Expression '3 \> 3 \| 3 = 3 \& 4 \> 4 \| 3 = 3 \& 4 = 4 \& 5 \>= 6', expecting '0'
+tc-so:Expression '3 \> 3 \| 3 = 3 \& 4 \> 4 \| 3 = 3 \& 4 = 3 \& 5 \>= 5', expecting '0'
+tc-so:Expression '3 \> 3 \| 3 = 3 \& 4 \> 4 \| 3 = 2 \& 4 = 4 \& 5 \>= 5', expecting '0'
+tc-so:Expression '3 \> 2 \| 3 = 3 \& 4 \> 4 \| 3 = 3 \& 4 = 4 \& 5 \>= 6', expecting '1'
+tc-so:Expression '3 \> 3 \| 3 = 3 \& 4 \> 3 \| 3 = 3 \& 4 = 4 \& 5 \>= 5', expecting '1'
+tc-end: 1540271179.663787, gtkmm, passed
+tc-start: 1540271179.779235, lang
+tc-so:Executing command [ /bin/sh -c expr 10 + 11 ]
+tc-so:Executing command [ /bin/sh -c expr 10 + 11 ]
+tc-end: 1540271191.341186, lang, passed
+tc-start: 1540271191.480438, math_precedence
+tc-so:Expression '-3 + -1 \* 4 + 3 / -6', expecting '-7'
+tc-end: 1540271195.773101, math_precedence, passed
+tc-start: 1540271195.895019, multiply
+tc-so:Expression '1 \* -1', expecting '-1'
+tc-so:Expression '2 \> 1 \* 17', expecting '0'
+tc-end: 1540271200.91308, multiply, passed
+tc-start: 1540271200.207977, negative
+tc-so:Expression '-1 + 5', expecting '4'
+tc-so:Expression '- 1 + 5', expecting 'expr: syntax error'
+tc-so:Expression '5 + -1', expecting '4'
+tc-so:Expression '5 + - 1', expecting 'expr: syntax error'
+tc-so:Expression '1 - -5', expecting '6'
+tc-end: 1540271205.238586, negative, passed
+tc-start: 1540271205.355041, overflow
+tc-so:Expression '4611686018427387904 + 4611686018427387903', expecting '9223372036854775807'
+tc-so:Expression '4611686018427387904 + 4611686018427387904', expecting 'expr: integer overflow or underflow occurred for operation '4611686018427387904 + 4611686018427387904''
+tc-so:Expression '4611686018427387904 - -4611686018427387904', expecting 'expr: integer overflow or underflow occurred for operation '4611686018427387904 - -4611686018427387904''
+tc-so:Expression '-4611686018427387904 - 4611686018427387903', expecting '-9223372036854775807'
+tc-so:Expression '-4611686018427387904 - 4611686018427387905', expecting 'expr: integer overflow or underflow occurred for operation '-4611686018427387904 - 4611686018427387905''
+tc-so:Expression '-4611686018427387904 \* 1', expecting '-4611686018427387904'
+tc-so:Expression '-4611686018427387904 \* -1', expecting '4611686018427387904'
+tc-so:Expression '-4611686018427387904 \* 2', expecting '-9223372036854775808'
+tc-so:Expression '-4611686018427387904 \* 3', expecting 'expr: integer overflow or underflow occurred for operation '-4611686018427387904 * 3''
+tc-so:Expression '-4611686018427387904 \* -2', expecting 'expr: integer overflow or underflow occurred for operation '-4611686018427387904 * -2''
+tc-so:Expression '4611686018427387904 \* 1', expecting '4611686018427387904'
+tc-so:Expression '4611686018427387904 \* 2', expecting 'expr: integer overflow or underflow occurred for operation '4611686018427387904 * 2''
+tc-so:Expression '4611686018427387904 \* 3', expecting 'expr: integer overflow or underflow occurred for operation '4611686018427387904 * 3''
+tc-so:Expression '-9223372036854775808 % -1', expecting 'expr: integer overflow or underflow occurred for operation '-9223372036854775808 % -1''
+tc-so:Expression '-9223372036854775808 / -1', expecting 'expr: integer overflow or underflow occurred for operation '-9223372036854775808 / -1''
+tc-so:Expression '0 + -9223372036854775808', expecting '-9223372036854775808'
+tc-so:Expression '0 + -1', expecting '-1'
+tc-so:Expression '0 + 0', expecting '0'
+tc-so:Expression '0 + 1', expecting '1'
+tc-so:Expression '0 + 9223372036854775807', expecting '9223372036854775807'
+tc-so:Expression '-9223372036854775808 + 0', expecting '-9223372036854775808'
+tc-so:Expression '9223372036854775807 + 0', expecting '9223372036854775807'
+tc-so:Expression '4611686018427387904 \* -1', expecting '-4611686018427387904'
+tc-so:Expression '4611686018427387904 \* -2', expecting '-9223372036854775808'
+tc-so:Expression '4611686018427387904 \* -3', expecting 'expr: integer overflow or underflow occurred for operation '4611686018427387904 * -3''
+tc-so:Expression '-4611686018427387904 \* -1', expecting '4611686018427387904'
+tc-so:Expression '-4611686018427387904 \* -2', expecting 'expr: integer overflow or underflow occurred for operation '-4611686018427387904 * -2''
+tc-so:Expression '-4611686018427387904 \* -3', expecting 'expr: integer overflow or underflow occurred for operation '-4611686018427387904 * -3''
+tc-so:Expression '0 \* -1', expecting '0'
+tc-so:Expression '0 \* 0', expecting '0'
+tc-so:Expression '0 \* 1', expecting '0'
+tc-end: 1540271215.514587, overflow, passed
+tc-start: 1540271215.638824, precedence
+tc-so:Expression 'X1/2/3 : X\\\(.\*[^/]\\\)//\*[^/][^/]\*/\*$ \| . : \\\(.\\\)', expecting '1/2'
+tc-end: 1540271219.897521, precedence, passed
+tc-start: 1540271220.18920, regex
+tc-so:Expression '1/2 : .\*/\\\(.\*\\\)', expecting '2'
+tc-end: 1540271224.681060, regex, passed
+tp-end: 1540271224.804077, bin/expr/t_expr
+tp-start: 1540271229.506774, bin/pax/t_pax, 0
+tp-end: 1540271229.556610, bin/pax/t_pax, Invalid format for test case list: Test program returned failure exit status terminated(11/core) for test case list
+tp-start: 1540271241.467773, bin/ps/t_ps, 8
+tc-start: 1540271241.534576, default_columns
+tc-end: 1540271271.640, default_columns, passed
+tc-start: 1540271271.153381, duplicate_column
+tc-end: 1540271278.880218, duplicate_column, passed
+tc-start: 1540271279.22155, minus_O
+tc-end: 1540271290.145812, minus_O, passed
+tc-start: 1540271290.305206, minus_o
+tc-end: 1540271303.163574, minus_o, passed
+tc-start: 1540271303.306274, override_heading_all_null
+tc-end: 1540271310.796722, override_heading_all_null, passed
+tc-start: 1540271310.928070, override_heading_embedded_specials
+tc-end: 1540271321.28045, override_heading_embedded_specials, passed
+tc-start: 1540271321.170654, override_heading_simple
+tc-end: 1540271331.932159, override_heading_simple, passed
+tc-start: 1540271332.77148, override_heading_some_null
+tc-end: 1540271345.162811, override_heading_some_null, passed
+tp-end: 1540271345.312133, bin/ps/t_ps
+tp-start: 1540271534.526306, bin/sh/dotcmd/t_dotcmd, 192
+tc-start: 1540271534.623016, case_break_case
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_break_case ]
+tc-end: 1540271546.149627, case_break_case, passed
+tc-start: 1540271546.339904, case_break_compound
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_break_compound ]
+tc-end: 1540271557.453369, case_break_compound, passed
+tc-start: 1540271557.605499, case_break_file
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_break_file ]
+tc-end: 1540271568.563354, case_break_file, passed
+tc-start: 1540271568.715393, case_break_for
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_break_for ]
+tc-end: 1540271579.678375, case_break_for, passed
+tc-start: 1540271579.828704, case_break_func
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_break_func ]
+tc-end: 1540271591.67840, case_break_func, passed
+tc-start: 1540271591.232299, case_break_subshell
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_break_subshell ]
+tc-end: 1540271602.435028, case_break_subshell, passed
+tc-start: 1540271602.615112, case_break_until
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_break_until ]
+tc-end: 1540271614.495697, case_break_until, passed
+tc-start: 1540271614.686553, case_break_while
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_break_while ]
+tc-end: 1540271625.53894, case_break_while, passed
+tc-start: 1540271625.215362, case_continue_case
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_continue_case ]
+tc-end: 1540271633.626556, case_continue_case, passed
+tc-start: 1540271634.132446, case_continue_compound
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_continue_compound ]
+tc-end: 1540271643.671844, case_continue_compound, passed
+tc-start: 1540271643.795562, case_continue_file
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_continue_file ]
+tc-end: 1540271653.658081, case_continue_file, passed
+tc-start: 1540271653.787872, case_continue_for
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_continue_for ]
+tc-end: 1540271662.768096, case_continue_for, passed
+tc-start: 1540271662.903930, case_continue_func
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_continue_func ]
+tc-end: 1540271672.590270, case_continue_func, passed
+tc-start: 1540271672.727081, case_continue_subshell
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_continue_subshell ]
+tc-end: 1540271682.446136, case_continue_subshell, passed
+tc-start: 1540271682.585266, case_continue_until
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_continue_until ]
+tc-end: 1540271692.252563, case_continue_until, passed
+tc-start: 1540271692.383666, case_continue_while
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_continue_while ]
+tc-end: 1540271702.67962, case_continue_while, passed
+tc-start: 1540271702.199127, case_return_case
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_return_case ]
+tc-end: 1540271711.880462, case_return_case, passed
+tc-start: 1540271712.14129, case_return_compound
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_return_compound ]
+tc-end: 1540271721.817413, case_return_compound, passed
+tc-start: 1540271721.954376, case_return_file
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_return_file ]
+tc-end: 1540271731.720855, case_return_file, passed
+tc-start: 1540271731.857879, case_return_for
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_return_for ]
+tc-end: 1540271741.644195, case_return_for, passed
+tc-start: 1540271741.776428, case_return_func
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_return_func ]
+tc-end: 1540271751.747863, case_return_func, passed
+tc-start: 1540271751.886596, case_return_subshell
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_return_subshell ]
+tc-end: 1540271762.129821, case_return_subshell, passed
+tc-start: 1540271762.278289, case_return_until
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_return_until ]
+tc-end: 1540271772.271942, case_return_until, passed
+tc-start: 1540271772.409545, case_return_while
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/case_return_while ]
+tc-end: 1540271782.426391, case_return_while, passed
+tc-start: 1540271782.566467, compound_break_case
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/compound_break_case ]
+tc-end: 1540271792.541076, compound_break_case, passed
+tc-start: 1540271792.677978, compound_break_compound
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/compound_break_compound ]
+tc-end: 1540271802.879241, compound_break_compound, passed
+tc-start: 1540271803.12695, compound_break_file
+tc-so:Executing command [ /usr/tests/bin/sh/dotcmd/compound_break_file ]
+tc-end: 1540271813.353942, compound_break_file, passed
+tc-start: 1540271813.498291, compound_break_for
