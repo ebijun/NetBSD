@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.25 (RPI2) #0: Fri Sep 28 08:11:34 UTC 2018
+NetBSD 8.99.25 (RPI2) #0: Mon Oct 22 13:19:42 UTC 2018
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 930 MB
@@ -18,7 +18,7 @@ simplebus3 at simplebus1
 fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
 cpus0 at simplebus0
 cpu0 at cpus0: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu0: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu0: DC enabled IC enabled WB enabled EABT branch prediction enabled
 cpu0: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu0: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu0: 512KB/64B 16-way write-through L2 PIPT Unified cache
@@ -83,20 +83,20 @@ watchdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmrng0 at simplebus1: RNG
 /soc/mailbox@7e00b840 at simplebus1 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu2: DC enabled IC enabled WB disabled EABT branch prediction enabled
-cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu1: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu1: DC enabled IC enabled WB enabled EABT branch prediction enabled
 cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu2: DC enabled IC enabled WB enabled EABT branch prediction enabled
+cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu3: DC enabled IC enabled WB disabled EABT branch prediction enabled
+cpu3: DC enabled IC enabled WB enabled EABT branch prediction enabled
 cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
@@ -132,18 +132,17 @@ scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 sd0: 61057 MB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 125045424 sectors
 uhidev0 at uhub1 port 4 configuration 1 interface 0
-uhidev0: vendor 0461 (0x461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 5, iclass 3/1
-ums0 at uhidev0: 3 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
-uhidev1 at uhub1 port 5 configuration 1 interface 0
-uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 6, iclass 3/1
-ukbd0 at uhidev1: 8 Variable keys, 6 Array codes
+uhidev0: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 5, iclass 3/1
+ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev2 at uhub1 port 5 configuration 1 interface 1
-uhidev2: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 6, iclass 3/0
-uhidev2: 2 report ids
-uhid0 at uhidev2 reportid 1: input=1, output=0, feature=0
-uhid1 at uhidev2 reportid 2: input=3, output=0, feature=0
+uhidev1 at uhub1 port 4 configuration 1 interface 1
+uhidev1: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 5, iclass 3/1
+uhidev1: 1 report ids
+ums0 at uhidev1 reportid 1: 3 buttons and Z dir
+wsmouse0 at ums0 mux 0
+uhidev2 at uhub1 port 4 configuration 1 interface 2
+uhidev2: vendor 05af (0x5af) 2.4G Dongle (0x906), rev 2.00/3.03, addr 5, iclass 3/0
+uhid0 at uhidev2: input=3, output=0, feature=0
 uhub0: autoconfiguration error: illegal enable change, port 1
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
