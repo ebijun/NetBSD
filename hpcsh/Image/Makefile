@@ -4,16 +4,16 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcsh.img
 
 # iso file information
-IMAGE=/mnt2/NetBSD-7.99.8-hpcsh-201504011740Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.25-hpcsh-201810250900Z.iso
 
-PKGSRC=../../pkgsrc/pkgsrc-2015-03-28.tar.gz
+PKGSRC=../../pkgsrc/pkgsrc-2018-10-13.tar.gz
 
 SETS=/mnt1/hpcsh/binary/sets
 INSTALLATION=/mnt1/hpcsh/installation
 KERNEL=/mnt1/hpcsh/binary/kernel
 
 # extract sets.
-LIST=base etc comp man modules xbase xcomp xetc xfont xserver 
+LIST=base etc comp man modules tests xbase xcomp xetc xfont xserver 
 
 # mount point
 MNT=/mnt
