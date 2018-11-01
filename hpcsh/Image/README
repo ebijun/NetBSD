@@ -1,83 +1,30 @@
-:1,$s/2015-01-26/2015-01-26/g
+:1,$s/2018-11-01/2018-11-01/g
 :1,$s/201501222040Z/201501260050Z/g
 :1,$s/2015-01-24/2015-01-24/g
 
 
 To: port-hpcshnetbsd.org@localhost
-Subject: 2015-01-26-netbsd-hpcsh.img 
+Subject: 2018-11-01-netbsd-hpcsh.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2015-01-26-netbsd-hpcsh.img.gz for hpcsh.
+I've updated 2018-11-01-netbsd-hpcsh.img.gz for hpcsh.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcsh/2015-01-26-netbsd-hpcsh.img.gz
-
-XXX:
-http://movapic.com/pic/2015012400560454c2eda44b7d3
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/hpcsh/2018-11-01-netbsd-hpcsh.img.gz
 
 Feature:
-- NetBSD 7.99.4-201501222040ZZ hpcsh from nyftp.netbsd
-- pkgsrc-current 2015-01-24 tarball from ftp.NetBSD.
+- NetBSD 8.0_STABLE hpcsh from nyftp.netbsd
 - dmesg:
-XXX:
-  https://github.com/ebijun/NetBSD/blob/master/hpcsh/Image/dmesg
-
-Pre-compiled packages:
-- Pre-compiled packages path setting: see /etc/pkg_install.conf 
-XXX:
-PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcsh/hpcsh/2015-02-07/
- To install application.
- # pkg_add some_application_name
-
- If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
- /etc/mk.conf.
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcsh/HPW-50PA
 
 Todo:
-
-=====================
-
-For Nagoya *BSD Users' Group 2015/1 meeting.
-(http://www.nagoya.bug.gr.jp/)
-demonstration use, I've updated hpcsh image.
-
-- NetBSD 7.99.4 base
-- Copy image to Mini/MicroSD.
-- Set Jornada680/690.
-- boot hpcboot.exe
--- select Machine
--- select root partition
-  and comes as you are as you want to be.
-- login root (no passwd)
-- check symblic link:
-  default:
-  ls -l /etc/X11/xorg.conf -> xorg.conf.ws011sh
-- startx
-
-  # startx
+8.99.25: / mount failed
+ stopped: on
+ root on wd0a dumps on wd0b 
 
 Features:
   - fit size for 2GB SD Card
   - with X11
-  - pkgsrc: 2015-01-24 tree inside.
-  - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcsh/hpcsh/2015-02-07/
 
-Installed Packages:
-XXX:
-
-kterm
-bash
-tcsh
-vlgothic-ttf
-icewm
-xli
-ruby200-mikutter
-uim
-sudo
-zsh
-mlterm
-pkg_chk
-mozilla-rootcerts
-dillo
 
 Keyboard layout checkpoint:
 /etc/wscons.conf
@@ -90,10 +37,6 @@ Keyboard layout checkpoint:
 
 Build sample script:
  https://github.com/ebijun/NetBSD/tree/master/hpcsh/Image
-
-Guide:
-XXX:
- https://github.com/ebijun/NetBSD/blob/master/Guide/WZERO3.rst
 
 --
 Jun Ebihara

@@ -5,7 +5,8 @@ FILE=`date +%Y-%m-%d`-netbsd-hpcsh.img
 
 # iso file information
 #IMAGE=/usr/release/images/NetBSD-8.99.25-hpcsh-201810250900Z.iso
-IMAGE=/usr/release/images/NetBSD-7.1.2_PATCH-hpcsh.iso
+#IMAGE=/usr/release/images/NetBSD-7.1.2_PATCH-hpcsh.iso
+IMAGE=/usr/release/images/NetBSD-8.0_STABLE-hpcsh.iso 
 
 PKGSRC=../../pkgsrc/pkgsrc-2018-10-13.tar.gz
 
