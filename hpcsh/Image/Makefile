@@ -4,7 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcsh.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-8.99.25-hpcsh-201810250900Z.iso
+#IMAGE=/usr/release/images/NetBSD-8.99.25-hpcsh-201810250900Z.iso
+IMAGE=/usr/release/images/NetBSD-7.1.2_PATCH-hpcsh.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2018-10-13.tar.gz
 
@@ -56,7 +57,7 @@ extract:
 	mount /dev/${VND}a ${MNT}
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	(cd ${MNT}/dev;./MAKEDEV all)
-	tar xzpf ${PKGSRC} -C ${MNT}/usr
+#	tar xzpf ${PKGSRC} -C ${MNT}/usr
 	mkdir ${MNT}/msdos
 	mkdir ${MNT}/kern
 	mkdir ${MNT}/proc
