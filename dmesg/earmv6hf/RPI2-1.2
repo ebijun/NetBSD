@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.25 (RPI2) #0: Mon Oct 22 13:19:42 UTC 2018
+NetBSD 8.99.25 (RPI2) #0: Fri Nov  2 21:27:30 UTC 2018
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 930 MB
@@ -49,7 +49,7 @@ iic0 at bsciic0: I2C bus
 bcmmbox0 at simplebus1: VC mailbox
 bcmmbox0: interrupting on icu irq 193
 vcmbox0 at bcmmbox0
-plcom0 at simplebus1
+plcom0 at simplebus1: ARM PL011 UART
 plcom0: txfifo disabled
 plcom0: console
 plcom0: interrupting on icu irq 185
@@ -78,6 +78,12 @@ watchdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmrng0 at simplebus1: RNG
 /soc/mailbox@7e00b840 at simplebus1 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu1: DC enabled IC enabled WB enabled EABT branch prediction enabled
+cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu3: DC enabled IC enabled WB enabled EABT branch prediction enabled
 cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
@@ -90,12 +96,6 @@ cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu1: DC enabled IC enabled WB enabled EABT branch prediction enabled
-cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
@@ -103,10 +103,10 @@ usb0 at dwctwo0: USB revision 2.0
 uhub0 at usb0: NetBSD (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 sdhc0: cmd timeout error
-IPsec: Initialized Security Association Processing.
 sdmmc0: SD card status: 4-bit, C10, U3, V30
 ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x0b8001da:0x113>
 ld0: 29423 MB, 7472 cyl, 128 head, 63 sec, 512 bytes/sect x 60258304 sectors
+IPsec: Initialized Security Association Processing.
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 uhub1 at uhub0 port 1: vendor 0424 (0x424) product 9514 (0x9514), class 9/0, rev 2.00/2.00, addr 2
 uhub1: multiple transaction translators
@@ -116,12 +116,18 @@ usmsc0: vendor 0424 (0x424) product ec00 (0xec00), rev 2.00/2.00, addr 3
 usmsc0: Ethernet address b8:27:eb:03:f5:9d
 ukphy0 at usmsc0 phy 1: OUI 0x00800f, model 0x000c, rev. 3
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+umass0 at uhub1 port 3 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 4
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 uhidev0 at uhub1 port 5 configuration 1 interface 0
-uhidev0: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
+uhidev0: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, iclass 3/1
 ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
 uhidev1 at uhub1 port 5 configuration 1 interface 1
-uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
+uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
@@ -132,7 +138,7 @@ root on ld0a dumps on ld0b
 root file system type: ffs
 kern.module.path=/stand/evbarm/8.99.25/modules
 vchiq0: interrupting on icu irq 194
-vchiq: vchiq_init_state: slot_zero = 0xcaaa0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xcaac0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 kern notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
@@ -145,10 +151,4 @@ vcaudio0: Virtual format configured - Format SLINEAR, precision 16, channels 2, 
 vcaudio0: Latency: 100 milliseconds
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
-umass0 at uhub1 port 3 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 5
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 wsdisplay0: screen 4 added (default, vt100 emulation)
