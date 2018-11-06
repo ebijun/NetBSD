@@ -4,11 +4,11 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.1.2_PATCH (GENERIC.201810300620Z)
+NetBSD 8.0_STABLE (GENERIC) #0: Tue Oct 30 09:32:48 UTC 2018
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/hpcsh/compile/GENERIC
 HITACHI PERSONA HPW50PAD
 total memory = 32768 KB
-avail memory = 29420 KB
-kern.module.path=/stand/hpcsh/7.1/modules
+avail memory = 29328 KB
 timecounter: Timecounters tick every 15.625 msec
 mainbus0 (root)
 cpu0 at mainbus0: SH3 95.998 MHz PCLOCK 24.00 MHz
@@ -59,6 +59,7 @@ wd0: drive supports PIO mode 4
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-WARNING: clock lost 7608 days
+kern.module.path=/stand/hpcsh/8.0/modules
+WARNING: clock lost 7612 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
