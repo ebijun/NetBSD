@@ -1,34 +1,38 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2018-10-28/2018-10-28/g
+:1,$s/2018-11-10/2018-11-10/g
 :1,$s/8.99.25/8.99.25/g
-:1,$s/201810221410Z/201810221410Z/g
-:1,$s?2018/10/25/msg005097.html?2018/10/25/msg005097.html?
+:1,$s/201811030820Z/201811030820Z/g
+:1,$s?2018/11/06/msg005153.html?2018/11/06/msg005153.html?
 
-2018-10-28-netbsd-raspi-earmv6hf.img
+2018-11-10-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2018 Tokyo/Fall
-I've updated 2018-10-28-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Kansai Open Forum 2018 and
+    Open Source Conference 2018 Niigata NetBSD bof.
+I've updated 2018-11-10-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2018/10/25/msg005097.html
+http://mail-index.netbsd.org/port-arm/2018/11/06/msg005153.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-10-28-earmv6hf/2018-10-28-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-10-earmv6hf/2018-11-10-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.25 evbarm-earmv6hf 201810221410Z rpi.img from nyftp.
-- Firmware update - fixed
-  http://mail-index.netbsd.org/port-arm/2018/09/18/msg005027.html
+- NetBSD-current 8.99.25 evbarm-earmv6hf 201811030820Z rpi.img from nyftp.
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/013fedf2d186b01339779546567d5bb18a82ec2b
+ https://github.com/ebijun/NetBSD/commit/3c53dbaad73e2737e5ac1aa1d68ec625988a06da#diff-4a755d73dbba5da21bbf783139f086dc
 
 System Update:
- sysinfo: sh-20160401-20181022131942Z tzdata-2018f
- pkgsrc:  digest-20180917 git-base-2.19.1 glib2-2.56.2nb3 libxml2-2.9.8nb3 
-	  ncurses-6.1nb3 p5-IO-Socket-SSL-2.060 p5-Net-DNS-1.18 
-	  p5-Socket6-0.29 perl-5.28.0nb2 pkg_chk-2.0.10 ruby24-base-2.4.5 
-	  ruby24-mikutter-3.8.1 sudo-1.8.25p1 
+ sysinfo: sh-20160401-20181102212730Z tzdata-2018g
+ pkgsrc:  curl-7.62.0 gtk3+-3.24.1 harfbuzz-1.8.8nb1 libgcrypt-1.8.4 
+	  libimagequant-2.12.2 mlterm-3.8.7 p5-Error-0.17027
+	  ruby24-cairo-1.16.2 ruby24-gnome2-atk-3.3.0 
+	  ruby24-gnome2-cairo-gobject-3.3.0 ruby24-gnome2-gdkpixbuf-3.3.0 
+	  ruby24-gnome2-gio-3.3.0 ruby24-gnome2-glib-3.3.0 
+	  ruby24-gnome2-gobject-introspection-3.3.0 
+	  ruby24-gnome2-gtk-3.3.0 ruby24-gnome2-pango-3.3.0 
+	  ruby24-mikutter-3.8.2 ruby24-nokogiri-1.8.5
+	  tiff-4.0.9nb5 uim-1.8.6nb53  
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
