@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015-7 Jun Ebihara All rights reserved.
+ Copyright (c) 2015-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -48,7 +48,8 @@ Maps:
  2010 Niigata,10/23,130,14,新潟大学
  2015 Niigata,9/5,130,17,ほんぽーと新潟市立中央図書館
  2016 Nagaoka,10/1,100,13,まちなかキャンパス長岡
- 2017 Nagaoka,10/28,,12,長岡技術科学大学
+ 2017 Nagaoka,10/28,120,12,長岡技術科学大学
+ 2018 Niigata,11/10,,14,ほんぽーと新潟市立中央図書館
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,7 +61,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 
+ 134,OSC2018新潟,http://www.re.soum.co.jp/~jun/OSC2018niigata.pdf
  116,OSC2017長岡,http://www.re.soum.co.jp/~jun/OSC2017nagaoka.pdf
  96,OSC2016長岡,http://www.re.soum.co.jp/~jun/OSC2016nagaoka.pdf
  77,OSC2015新潟,http://www.re.soum.co.jp/~jun/OSC2015niigata.pdf
@@ -72,7 +73,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2017長岡 NetBSDブース展示の記録,
+ OSC2018新潟 NetBSDブース展示の記録,
+ OSC2017長岡 NetBSDブース展示の記録,https://togetter.com/li/1165451
  OSC2016長岡 NetBSDブース展示の記録,https://togetter.com/li/1031383
  OSC2015新潟 NetBSDブース展示の記録,http://togetter.com/li/869752
 
@@ -123,7 +125,46 @@ togetterまとめ
  音色,東坂之上町,ジャズ喫茶/ライブ
  中華大吉,殿町,24:00-4:00 日曜休
  雑本堂,東坂之上町,古書 映画関連
- 
+
+2017年
+---------------
+
+.. image::  ../Picture/2017/10/28/1509156205323.jpg
+.. image::  ../Picture/2017/10/28/DSC_4411.JPG
+.. image::  ../Picture/2017/10/28/DSC_4412.JPG
+.. image::  ../Picture/2017/10/28/DSC_4413.JPG
+.. image::  ../Picture/2017/10/28/DSC_4414.JPG
+.. image::  ../Picture/2017/10/28/DSC_4415.JPG
+.. image::  ../Picture/2017/10/28/DSC_4416.JPG
+.. image::  ../Picture/2017/10/28/DSC_4417.JPG
+.. image::  ../Picture/2017/10/28/DSC_4418.JPG
+.. image::  ../Picture/2017/10/28/DSC_4419.JPG
+.. image::  ../Picture/2017/10/28/DSC_4420.JPG
+.. image::  ../Picture/2017/10/28/DSC_4421.JPG
+.. image::  ../Picture/2017/10/28/DSC_4422.JPG
+.. image::  ../Picture/2017/10/28/DSC_4423.JPG
+.. image::  ../Picture/2017/10/28/DSC_4424.JPG
+.. image::  ../Picture/2017/10/28/DSC_4425.JPG
+.. image::  ../Picture/2017/10/28/DSC_4426.JPG
+.. image::  ../Picture/2017/10/28/DSC_4427.JPG
+.. image::  ../Picture/2017/10/28/DSC_4428.JPG
+.. image::  ../Picture/2017/10/28/DSC_4429.JPG
+.. image::  ../Picture/2017/10/28/DSC_4430.JPG
+.. image::  ../Picture/2017/10/28/DSC_4431.JPG
+.. image::  ../Picture/2017/10/28/DSC_4432.JPG
+.. image::  ../Picture/2017/10/28/DSC_4433.JPG
+.. image::  ../Picture/2017/10/28/DSC_4434.JPG
+.. image::  ../Picture/2017/10/28/DSC_4435.JPG
+.. image::  ../Picture/2017/10/28/DSC_4436.JPG
+.. image::  ../Picture/2017/10/28/DSC_4437.JPG
+.. image::  ../Picture/2017/10/28/DSC_4438.JPG
+.. image::  ../Picture/2017/10/28/DSC_4439.JPG
+.. image::  ../Picture/2017/10/28/DSC_4440.JPG
+.. image::  ../Picture/2017/10/28/DSC_4441.JPG
+.. image::  ../Picture/2017/10/28/DSC_4442.JPG
+.. image::  ../Picture/2017/10/28/DSC_4443.JPG
+.. image::  ../Picture/2017/10/28/DSC_4444.JPG
+.. image::  ../Picture/2017/10/28/DSC_4445.JPG
 
 2016年
 ---------------

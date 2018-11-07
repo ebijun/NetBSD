@@ -35,6 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
+ オープンソースカンファレンス2018大阪展示の記録,https://togetter.com/li/1193730
  関西オープンソース2017 NetBSDブース展示の記録,https://togetter.com/li/1170068
  オープンソースカンファレンス2017大阪展示の記録,https://togetter.com/li/1075115
  関西オープンソース2016 NetBSDブース展示の記録,https://togetter.com/li/1047263
@@ -88,7 +89,7 @@ Maps:
  marca,西長堀,クラフトビール
  僕とイヌ,西長堀,ビアバー
  kamikaze,西大橋,ビアバー
- すみのえアートビート,北加賀屋,逆襲のあひる焼き(リアルモード)
+ モリムラ＠ミュージアム,北加賀屋,2018/11/3-2019/1/27 金土日12:00-18:00
 
 主な発表
 ~~~~~~~~~~~~~~
@@ -96,8 +97,9 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
- NetBSD 'Teokure" LiveImage Updates and NetBSD 8.0,https://speakerdeck.com/tsutsui/kof2017
- PC6001 emulator PC6001VX on NetBSD + pkgsrc,https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
+ NetBSD/atari "Millan" board support,OSC2018大阪,https://speakerdeck.com/tsutsui/osc2018osaka
+ NetBSD 'Teokure" LiveImage Updates and NetBSD 8.0,KOF2017,https://speakerdeck.com/tsutsui/kof2017
+ PC6001 emulator PC6001VX on NetBSD + pkgsrc,OSC大阪2017,https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
  NetBSD/dreamcast IDE HDD,KOF2016,https://speakerdeck.com/tsutsui/kof2016-netbsd-dreamcast-ide-hdd
  emacs18.59&mule1.1,KOF2015,https://speakerdeck.com/tsutsui/kof2015-emacs-18-dot-59-and-mule-1-dot-1-on-netbsd-7-dot-0
  fdgw2,KOF2015,http://e-yuuki.org/events/fdgw2/assets/player/KeynoteDHTMLPlayer.html#0
@@ -114,6 +116,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2018/1/17,大阪産業創造館,Milan
  2017/11/10-11,南港,LUNA68K&YM2194
  2017/1/27-28,大阪産業創造館,PC6001+PC6001VX
  2016/11/11-12,南港ATC,DreamCast with CF and SD RPI3+XM6i+NetBSD/x68k
@@ -130,38 +133,38 @@ Maps:
  2004/10-22-23,大阪産業創造館,XCAST ふきだしくん 
  2003/10/31-11/1,大阪産業創造館,XCAST トレバ
 
+2018
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture/2018/01/27/DSC_4832.JPG
+.. image::  ../Picture/2018/01/27/DSC_4840.JPG
+.. image::  ../Picture/2018/01/27/DSC_4841.JPG
+.. image::  ../Picture/2018/01/27/DSC_4842.JPG
+.. image::  ../Picture/2018/01/27/DSC_4844.JPG
+.. image::  ../Picture/2018/01/27/DSC_4845.JPG
+.. image::  ../Picture/2018/01/27/DSC_4846.JPG
+.. image::  ../Picture/2018/01/27/DSC_4857.JPG
+.. image::  ../Picture/2018/01/27/DSC_4862.JPG
+
 2017
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image::  ../Picture/2017/11/10/DSC_4469.JPG
-.. image::  ../Picture/2017/11/10/DSC_4476.JPG
 .. image::  ../Picture/2017/11/10/DSC_4480.JPG
 .. image::  ../Picture/2017/11/10/DSC_4485.JPG
 .. image::  ../Picture/2017/11/10/DSC_4486.JPG
 .. image::  ../Picture/2017/11/10/DSC_4487.JPG
 .. image::  ../Picture/2017/11/10/DSC_4488.JPG
-.. image::  ../Picture/2017/11/10/DSC_4489.JPG
 .. image::  ../Picture/2017/11/10/DSC_4490.JPG
-.. image::  ../Picture/2017/11/10/DSC_4491.JPG
-.. image::  ../Picture/2017/11/10/DSC_4492.JPG
 .. image::  ../Picture/2017/11/10/DSC_4493.JPG
-.. image::  ../Picture/2017/11/10/DSC_4494.JPG
 .. image::  ../Picture/2017/11/11/DSC_4513.JPG
 .. image::  ../Picture/2017/11/11/DSC_4515.JPG
-.. image::  ../Picture/2017/01/28/1485566785347.jpg
 .. image::  ../Picture/2017/01/28/1485566869394.jpg
-.. image::  ../Picture/2017/01/28/1485576501116.jpg
-.. image::  ../Picture/2017/01/28/1485576535614.jpg
-.. image::  ../Picture/2017/01/28/1485576891338.jpg
 .. image::  ../Picture/2017/01/28/DSC_2975.JPG
 .. image::  ../Picture/2017/01/28/DSC_2976.JPG
-.. image::  ../Picture/2017/01/28/DSC_2977.JPG
 .. image::  ../Picture/2017/01/28/DSC_2978.JPG
 .. image::  ../Picture/2017/01/28/DSC_2979.JPG
 .. image::  ../Picture/2017/01/28/DSC_2980.JPG
 .. image::  ../Picture/2017/01/28/DSC_2981.JPG
 .. image::  ../Picture/2017/01/28/DSC_2982.JPG
 .. image::  ../Picture/2017/01/28/DSC_2983.JPG
-.. image::  ../Picture/2017/01/28/DSC_2985.JPG
 
 2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -174,13 +177,10 @@ Maps:
 .. image::  ../Picture/2016/11/11/DSC_2655.JPG
 .. image::  ../Picture/2016/11/11/DSC_2660.JPG
 .. image::  ../Picture/2016/11/11/DSC_2668.JPG
-.. image::  ../Picture/2016/11/12/DSC_2680.JPG
 .. image::  ../Picture/2016/11/12/DSC_2683.JPG
 .. image::  ../Picture/2016/11/12/DSC_2684.JPG
 .. image::  ../Picture/2016/11/12/DSC_2686.JPG
 .. image::  ../Picture/2016/11/12/DSC_2687.JPG
-.. image::  ../Picture/2016/11/12/DSC_2688.JPG
-.. image::  ../Picture/2016/11/12/DSC_2689.JPG
 .. image::  ../Picture/2016/11/12/DSC_2697.JPG
 .. image::  ../Picture/2016/11/12/DSC_2698.JPG
 .. image::  ../Picture/2016/11/12/DSC_2699.JPG

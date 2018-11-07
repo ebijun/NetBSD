@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
+ Place/niigata
  RPI/RPIupdate2018
  RPI
  Place/intro
