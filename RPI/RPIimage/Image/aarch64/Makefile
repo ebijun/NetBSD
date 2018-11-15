@@ -47,7 +47,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount firm 
+all: file cdmount rpi extract cdunmount 
 
 #update: cdmount update-extract cdunmount
 
@@ -133,7 +133,7 @@ release:
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
 	(cd ../..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
-	(cd ../../boot;cp * ${MNT}/boot)
+#	(cd ../../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	umount ${MNT}/boot
 	umount ${MNT}
