@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-7 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -47,7 +47,8 @@
  2014,8/24,120,15,松江テルサ
  2015,8/22,115,17,松江テルサ
  2016,9/24,180,24,松江テルサ
- 2017,10/14,,19,松江テルサ
+ 2017,10/14,113,19,松江テルサ
+ 2018,11/23,,19,松江テルサ
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,7 +60,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 
+ 135,OSC2018島根,http://www.re.soum.co.jp/~jun/OSC2018shimane.pdf
  115,OSC2017島根,http://www.re.soum.co.jp/~jun/OSC2017shimane.pdf
  95,OSC2016島根,http://www.re.soum.co.jp/~jun/OSC2016shimane.pdf
  76,OSC2015島根,http://www.re.soum.co.jp/~jun/OSC2015shimane.pdf
@@ -75,6 +76,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2018島根 NetBSDブース展示の記録,
+ OSC2017島根 NetBSDブース展示の記録,https://togetter.com/li/1160781
  OSC2016島根 NetBSDブース展示の記録,https://togetter.com/li/1028314
  OSC2015島根 NetBSDブース展示の記録,http://togetter.com/li/863726
  OSC2014島根 NetBSDブース展示の記録,http://togetter.com/li/709947
@@ -113,6 +116,10 @@ togetterまとめ
  川京,末次本町,みんきぃさんおすすめ。しじみと鰻。
  東風,雑賀町,そば こちと読みます。ランチあり。日月休
  麺屋 ひばり,松江城,あごだし白湯らぁめん
+ 西洋軒,,
+ 田中屋,出雲大社,
+ よびこ,,
+ やまいち,,
 
 鳥取
 ~~~~~~
@@ -124,7 +131,7 @@ togetterまとめ
  植田正治美術館,大山,イメージの力
  シュビドゥバー,鳥取駅,バー。ファミコン部屋あり。
  鳥取環境大学,若葉台,鳥取名産NEWSとヤギ。
- 焼きそば樫 ,河原町,俺の愛を焼きそばに込めてFor you。
+ 焼きそば樫 ,河原町,復活！！俺の愛を焼きそばに込めてFor you。
  風味堂,職人町,何屋か気になる喫茶店。
  ハードオフ,鳥取駅,スペンドールのスピーカを見る。
  太平記,明治町,米子の居酒屋。米子駅近地酒1杯300円から
@@ -136,6 +143,9 @@ togetterまとめ
  よしだ,米子,牛骨ラーメン
  浜下水産,鳥取駅前,自家製一夜干し
  タルマーリー,智頭,石釜パンとクラフトビール
+ 桔梗屋,米子,
+ さとう,郡家,手打ちうどん
+ 大江ノ郷製麺所,八頭,うどん
 
 倉敷
 ------------
@@ -180,6 +190,22 @@ OSC松江展示物
 #. SONY NEWS
 #. OMRON LUNAII
 #. Sun Java Station
+
+2017年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2017/10/14/DSC_4315.JPG
+.. image::  ../Picture/2017/10/14/DSC_4316.JPG
+.. image::  ../Picture/2017/10/14/DSC_4317.JPG
+.. image::  ../Picture/2017/10/14/DSC_4318.JPG
+.. image::  ../Picture/2017/10/14/DSC_4321.JPG
+.. image::  ../Picture/2017/10/14/DSC_4322.JPG
+.. image::  ../Picture/2017/10/14/DSC_4323.JPG
+.. image::  ../Picture/2017/10/14/DSC_4325.JPG
+.. image::  ../Picture/2017/10/14/DSC_4326.JPG
+.. image::  ../Picture/2017/10/14/DSC_4327.JPG
+.. image::  ../Picture/2017/10/14/DSC_4328.JPG
+.. image::  ../Picture/2017/10/14/DSC_4330.JPG
 
 2016年
 ~~~~~~~~~~~~~~~~~~
