@@ -7,7 +7,7 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-11-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.26-evbarm-${ARCH}-201811172150Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.26-evbarm-${ARCH}-201811241900Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -30,9 +30,10 @@ LIST=man modules xbase xcomp xetc xfont xserver
 
 #Firmware: 
 #git show HEAD |head 
-#commit 1bd0e85c3ce7f6946f5cd4e18e7b45d50767412f
-#Date:   Mon Sep 17 14:39:10 2018 +0100
-#    kernel: Bump to 4.14.70
+#commit 66be1927eafd2feed468efd36ec083b208f0a9c3
+#Author: popcornmix <popcornmix@gmail.com>
+#Date:   Wed Nov 21 19:01:22 2018 +0000
+#    kernel: Bump to 4.14.82
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
