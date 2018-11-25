@@ -3,7 +3,7 @@
 ARCH=aarch64
 RPI_IMG=arm64.img
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-08-04/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-11-23/
 
 # iso file information
 

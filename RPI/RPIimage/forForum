@@ -1,38 +1,51 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2018-11-10/2018-11-10/g
-:1,$s/8.99.25/8.99.25/g
+:1,$s/2018-11-23/2018-11-23/g
+:1,$s/8.99.26/8.99.26/g
 :1,$s/201811030820Z/201811030820Z/g
-:1,$s?2018/11/06/msg005153.html?2018/11/06/msg005153.html?
+:1,$s?2018/11/06/msg005153.html?2018/11/21/msg005237.html?
 
-2018-11-10-netbsd-raspi-earmv6hf.img
+2018-11-23-netbsd-raspi-earmv6hf.img
 
-For Kansai Open Forum 2018 and
-    Open Source Conference 2018 Niigata NetBSD bof.
-I've updated 2018-11-10-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2018 Shimane NetBSD bof.
+I've updated 2018-11-23-netbsd-raspi-earmv6hf.img.gz for RPI.
 
+http://mail-index.netbsd.org/port-arm/2018/11/21/msg005237.html
+
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-23-earmv6hf/2018-11-23-netbsd-raspi-earmv6hf.img.gz
+
+!!!!!CAUTION!!!!!
+RPI0/OW/1 boot failed based on nyftp:201711172150Z.
+http://mail-index.netbsd.org/port-arm/2018/11/19/msg005230.html
+
+RPI0/0W/1 boot fine on nyftp:201811030820Z.use this image.
 http://mail-index.netbsd.org/port-arm/2018/11/06/msg005153.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-10-earmv6hf/2018-11-10-netbsd-raspi-earmv6hf.img.gz
+Changes between 201811030820Z to 201711172150Z make RPI0/0W/1 boot failed.
+
+Topics:
+- NetBSD/aarch64 image testing: System Clock Stops with JOBS=3 pkgbuild.
+ Fix: apply ryo@'s patch,thanx
+ https://gist.github.com/ryo/89faf74852c20a84af17a12704fe3e16
+- icewm hangs with newer gcc
+ Fix: apply ryo@'s patch,thanx again!
+ https://gist.github.com/ryo/8fe6df6dc9c17ab950cbc2a07302bbd0
+- waiting for RPI3A+ from pimoroni,check if newer firmware.
 
 Update:
-- NetBSD-current 8.99.25 evbarm-earmv6hf 201811030820Z rpi.img from nyftp.
+- NetBSD-current 8.99.26 evbarm-earmv6hf 201811172150Z rpi.img from nyftp.
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/3c53dbaad73e2737e5ac1aa1d68ec625988a06da#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/795f05aafcbaf9b149e8f8d865b4a122f28edb3e#diff-4a755d73dbba5da21bbf783139f086dc
 
 System Update:
- sysinfo: sh-20160401-20181102212730Z tzdata-2018g
- pkgsrc:  curl-7.62.0 gtk3+-3.24.1 harfbuzz-1.8.8nb1 libgcrypt-1.8.4 
-	  libimagequant-2.12.2 mlterm-3.8.7 p5-Error-0.17027
-	  ruby24-cairo-1.16.2 ruby24-gnome2-atk-3.3.0 
-	  ruby24-gnome2-cairo-gobject-3.3.0 ruby24-gnome2-gdkpixbuf-3.3.0 
-	  ruby24-gnome2-gio-3.3.0 ruby24-gnome2-glib-3.3.0 
-	  ruby24-gnome2-gobject-introspection-3.3.0 
-	  ruby24-gnome2-gtk-3.3.0 ruby24-gnome2-pango-3.3.0 
-	  ruby24-mikutter-3.8.2 ruby24-nokogiri-1.8.5
-	  tiff-4.0.9nb5 uim-1.8.6nb53  
+ sysinfo: g++-6.5.0 gcc-6.5.0 libcurses-7.2 sh-20160401-20181117205335Z
+ pkgsrc:  cairo-1.16.0 cairo-gobject-1.16.0 gtk2+-2.24.32nb7 gtk3+-3.24.1nb2
+	  harfbuzz-2.1.1 libxml2-2.9.8nb4 medit-1.2.0nb8 mlterm-3.8.7nb2 
+	  pango-1.42.4nb2 ruby24-cairo-1.16.2nb1 
+	  ruby24-gnome2-cairo-gobject-3.3.0nb1 ruby24-gnome2-pango-3.3.0nb1
+	  ruby24-mikutter-3.8.3 sudo-1.8.26 tiff-4.0.10 uim-1.8.6nb54
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/

@@ -1,37 +1,50 @@
-VERSION: :1,$s/2018-11-10/2018-11-10/g
-ISO:     :1,$s/201811030820Z/201811030820Z/g
-NetBSD:  :1,$s/8.99.25/8.99.25/g
-PKGSRC:  :1,$s/2018-11-10/2018-11-10/
+VERSION: :1,$s/2018-11-23/2018-11-23/g
+ISO:     :1,$s/201811172150Z/201811172150Z/g
+NetBSD:  :1,$s/8.99.26/8.99.26/g
+PKGSRC:  :1,$s/2018-11-23/2018-11-23/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2018-11-10-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2018-11-23-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2018-11-10-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2018-11-23-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-10-earmv6hf/2018-11-10-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-10-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-23-earmv6hf/2018-11-23-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-23-earmv6hf/MD5
+
+!!!!!CAUTION!!!!!
+RPI0/OW/1 boot failed based on nyftp:201711172150Z.
+http://mail-index.netbsd.org/port-arm/2018/11/19/msg005230.html
+
+RPI0/0W/1 boot fine on nyftp:201811030820Z.use this image.
+http://mail-index.netbsd.org/port-arm/2018/11/06/msg005153.html
+
+Changes between 201811030820Z to 201711172150Z make RPI0/0W/1 boot failed.
+
+Topics:
+- NetBSD/aarch64 image testing: System Clock Stops with JOBS=3 pkgbuild.
+ Fix: apply ryo@'s patch,thanx
+ https://gist.github.com/ryo/89faf74852c20a84af17a12704fe3e16
+- icewm hangs with newer gcc
+ Fix: apply ryo@'s patch,thanx again!
+ https://gist.github.com/ryo/8fe6df6dc9c17ab950cbc2a07302bbd0
 
 Update:
-- NetBSD-current 8.99.25 evbarm-earmv6hf 201811030820Z rpi.img from nyftp.
+- NetBSD-current 8.99.26 evbarm-earmv6hf 201811172150Z rpi.img from nyftp.
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/3c53dbaad73e2737e5ac1aa1d68ec625988a06da#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/795f05aafcbaf9b149e8f8d865b4a122f28edb3e#diff-4a755d73dbba5da21bbf783139f086dc
 
 System Update:
- sysinfo: sh-20160401-20181102212730Z tzdata-2018g
- pkgsrc:  curl-7.62.0 gtk3+-3.24.1 harfbuzz-1.8.8nb1 libgcrypt-1.8.4 
-	  libimagequant-2.12.2 mlterm-3.8.7 p5-Error-0.17027
-	  ruby24-cairo-1.16.2 ruby24-gnome2-atk-3.3.0 
-	  ruby24-gnome2-cairo-gobject-3.3.0 ruby24-gnome2-gdkpixbuf-3.3.0 
-	  ruby24-gnome2-gio-3.3.0 ruby24-gnome2-glib-3.3.0 
-	  ruby24-gnome2-gobject-introspection-3.3.0 
-	  ruby24-gnome2-gtk-3.3.0 ruby24-gnome2-pango-3.3.0 
-	  ruby24-mikutter-3.8.2 ruby24-nokogiri-1.8.5
-	  tiff-4.0.9nb5 uim-1.8.6nb53  
+ sysinfo: g++-6.5.0 gcc-6.5.0 libcurses-7.2 sh-20160401-20181117205335Z
+ pkgsrc:  cairo-1.16.0 cairo-gobject-1.16.0 gtk2+-2.24.32nb7 gtk3+-3.24.1nb2
+	  harfbuzz-2.1.1 libxml2-2.9.8nb4 medit-1.2.0nb8 mlterm-3.8.7nb2 
+	  pango-1.42.4nb2 ruby24-cairo-1.16.2nb1 
+	  ruby24-gnome2-cairo-gobject-3.3.0nb1 ruby24-gnome2-pango-3.3.0nb1
+	  ruby24-mikutter-3.8.3 sudo-1.8.26 tiff-4.0.10 uim-1.8.6nb54
 
 - mikutter support : 
  I make sample API key,pre-installed.
@@ -56,7 +69,7 @@ Overview:
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-10-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-23-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -114,7 +127,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-11-10/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-11-23/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -122,7 +135,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-10-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-23-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -301,39 +314,23 @@ pkgsrc Todo:
 
 =====================
 
-For Kansai Open Forum 2018 and
-    Open Source Conference 2018 Niigata NetBSD bof.
+For Open Source Conference 2018 Shimane NetBSD bof.
 I've updated raspberry-pi image.
 
- Nov.9-10 2018:Fri-Sat
- Kansai Open Forum 2018 (KOF2018)
- https://www.k-of.jp/2018/
-
-  Book recommendation: Nov.9 14:05-14:20
-   https://k-of.jp/backend/session/1196 
-  BSD BOF: Nov.9 15:00-15:50
-   https://k-of.jp/backend/session/1126
-  Kansai *BSD Users Group: http://www.kbug.gr.jp/
-   BOF: Nov.9 13:00-13:50
-    https://k-of.jp/backend/session/1128
-   Stage: Nov.10 14:35-14:50
-    https://k-of.jp/backend/session/1217
-
- Nov.10 2018 Sat:
- Open Source Conference 2018 niigata ,Niigata,Japan
- https://www.ospn.jp/osc2018-niigata/
-  Presentation: 15:30-15:45
-   https://www.ospn.jp/osc2018-niigata/modules/eguide/event.php?eid=5
+ Nov.23 2018 Sat:
+ Open Source Conference 2018 Shimane ,Niigata,Japan
+ https://www.ospn.jp/osc2018-shimane/
+  Presentation: NetBSD 10:40-10:55
+   https://www.ospn.jp/osc2018-shimane/modules/article/article.php?articleid=2
   Booth:
-   Echigo BSD Users Group: http://www.ebug.jp/
+   https://www.ospn.jp/osc2018-shimane/modules/article/article.php?articleid=1
 
-http://www.re.soum.co.jp/~jun/KOF2018.pdf
-http://www.re.soum.co.jp/~jun/OSC2018niigata.pdf
+http://www.re.soum.co.jp/~jun/OSC2018shimane.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2018.rst
 
-- NetBSD 8.99.25 earmv6hf rpi.img.gz base
+- NetBSD 8.99.26 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -371,7 +368,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-11-10/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-11-23/
 
 Installed Packages:
   bash
