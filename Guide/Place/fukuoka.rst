@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-7 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-8 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -47,7 +47,8 @@ Maps:
  2014,11/21-22,500,23,福岡ソフトリサーチパーク センタービル
  2015,10/3,400,30,九州産業大学 2号館
  2016,11/19,300,29,福岡ソフトリサーチパーク センタービル
- 2017,10/7,,22,福岡大学 18号館
+ 2017,10/7,400,21,福岡大学 18号館
+ 2018,12/8,,24,福岡ソフトリサーチパーク センタービル
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,14 +60,15 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 114,OSC2017福岡,http://www.soum.co.jp/~jun/OSC2017fukuoka.pdf
- 99,OSC2016福岡,http://www.soum.co.jp/~jun/OSC2016fukuoka.pdf
- 79,OSC2015福岡,http://www.soum.co.jp/~jun/OSC2015fukuoka.pdf
- 66,OSC2014福岡,http://www.soum.co.jp/~jun/OSC2014fukuoka.pdf
- 51,OSC2013福岡,http://www.soum.co.jp/~jun/OSC2013fukuoka.pdf
- 37,OSC2012福岡,http://www.soum.co.jp/~jun/OSC2012fukuoka.pdf
- 20,OSC2011福岡,http://www.soum.co.jp/~jun/OSC2011fukuoka.pdf
-  4,OSC2010福岡,http://www.soum.co.jp/~jun/OSC2010fukuoka.pdf
+ 136,OSC2018福岡,http://www.re.soum.co.jp/~jun/OSC2018fukuoka.pdf
+ 114,OSC2017福岡,http://www.re.soum.co.jp/~jun/OSC2017fukuoka.pdf
+ 99,OSC2016福岡,http://www.re.soum.co.jp/~jun/OSC2016fukuoka.pdf
+ 79,OSC2015福岡,http://www.re.soum.co.jp/~jun/OSC2015fukuoka.pdf
+ 66,OSC2014福岡,http://www.re.soum.co.jp/~jun/OSC2014fukuoka.pdf
+ 51,OSC2013福岡,http://www.re.soum.co.jp/~jun/OSC2013fukuoka.pdf
+ 37,OSC2012福岡,http://www.re.soum.co.jp/~jun/OSC2012fukuoka.pdf
+ 20,OSC2011福岡,http://www.re.soum.co.jp/~jun/OSC2011fukuoka.pdf
+  4,OSC2010福岡,http://www.re.soum.co.jp/~jun/OSC2010fukuoka.pdf
 
 togetterまとめ
 ~~~~~~~~~~~~~
@@ -74,7 +76,8 @@ togetterまとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2017福岡 NetBSDブース展示の記録,
+ OSC2018福岡 NetBSDブース展示の記録,
+ OSC2017福岡 NetBSDブース展示の記録,https://togetter.com/li/1158733
  OSC2016福岡 NetBSDブース展示の記録,https://togetter.com/li/1050258
  OSC2015福岡 NetBSDブース展示の記録,http://togetter.com/li/881732
  OSC2014福岡 NetBSDブース展示の記録,http://togetter.com/li/748237
@@ -94,7 +97,7 @@ togetterまとめ
  ブルーマスター,別府,あまおうエール 12:00-18:00 日祝休 
  スナックなう,別府,泥酔通りにあるスナックなうなう。
  CLURICAUNE,別府,注ぐのが最高にうまいマスターが
- balance,赤坂,スペースインベーダーズなマスター
+ balance,赤坂,閉店 スペースインベーダーズのコミックさん2018/1逝去
  芫,清川,「げん」。とんちピクルスさん 19:00-2:00
  一楽,九産大,NARUTOに出てくるラーメン店。オリジナル店消失。
  照和,天神,陽水とか甲斐バンドとか
@@ -122,7 +125,13 @@ togetterまとめ
  信長本家,筑紫口,やきとりもつなべ大人数可
  旭軒駅前本店,博多駅,ハードコア餃子
  海風土,博多駅,寒北斗には、たにぃさんのおじさんが作った米が
- 
+ ドライブイン鳥,伊万里,マークイズ福岡ももち店とは何か。
+ 北九州市漫画ミュージアム,北九州,マカロニほうれん荘展 in 福岡 2019/1/17まで
+ JAB,渡辺通,ジャズ喫茶 12:00-24:00 日曜休
+ 珈琲美美,赤坂,11:00-19:30
+ 珈琲花坂,赤坂,10:00-17:30
+ 門司港地ビール工房,門司港,11:00-22:00
+
 OSC福岡発表
 ~~~~~~~~~~~~
 
@@ -138,6 +147,7 @@ OSC福岡主な展示物
 .. csv-table::
  :widths: 15 35 60
 
+ 2017/10/7,福岡大学 18号館,RPI3+XM6i OrangePi One
  2016/11/19,福岡ソフトリサーチパーク,RPI3+XM6i NetWalker WZero3
  2015/10/3,九州産業大学,Raspberry PI2 mikutter NetWalker ZAURUS WZero3
  2014/11/21,福岡ソフトリサーチパーク,RPI Netwalker XM6i Cubieboard2 
@@ -148,6 +158,20 @@ OSC福岡主な展示物
  2009/12/5,九州産業大学,hpcmips/hpcarm/Jornada680/WZero3
  2008/12/13,福岡大学,hpcmips/hpcarm/Jornada680/WZero3/USBカメラ
  2007/12/8,ASCビル,hpcmips/hpcarm/Jornada680
+
+2017年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2017/10/07/DSC_4239.JPG
+.. image::  ../Picture/2017/10/07/DSC_4242.JPG
+.. image::  ../Picture/2017/10/07/DSC_4243.JPG
+.. image::  ../Picture/2017/10/07/DSC_4244.JPG
+.. image::  ../Picture/2017/10/07/DSC_4245.JPG
+.. image::  ../Picture/2017/10/07/DSC_4246.JPG
+.. image::  ../Picture/2017/10/07/DSC_4247.JPG
+.. image::  ../Picture/2017/10/07/DSC_4249.JPG
+.. image::  ../Picture/2017/10/07/DSC_4251.JPG
+
 
 2016年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -165,10 +189,8 @@ OSC福岡主な展示物
 2015年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2015/10/03/DSC08099.JPG
 .. image::  ../Picture/2015/10/03/DSC08103.JPG
 .. image::  ../Picture/2015/10/03/DSC08108.JPG
-.. image::  ../Picture/2015/10/03/DSC08111.JPG
 .. image::  ../Picture/2015/10/03/DSC08113.JPG
 .. image::  ../Picture/2015/10/03/DSC_1397.jpg
 .. image::  ../Picture/2015/10/03/DSC_1400.jpg
@@ -176,7 +198,6 @@ OSC福岡主な展示物
 .. image::  ../Picture/2015/10/03/DSC_1402.jpg
 .. image::  ../Picture/2015/10/03/DSC_1403.jpg
 .. image::  ../Picture/2015/10/03/DSC_1404.jpg
-.. image::  ../Picture/2015/10/03/DSC_1405.jpg
 
 2014年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -189,10 +210,7 @@ OSC福岡主な展示物
 .. image::  ../Picture/2014/11/22/DSC06156.JPG
 .. image::  ../Picture/2014/11/22/DSC_0683.jpg
 .. image::  ../Picture/2014/11/22/DSC_0684.jpg
-.. image::  ../Picture/2014/11/22/DSC_0686.jpg
 .. image::  ../Picture/2014/11/22/DSC_0687.jpg
-.. image::  ../Picture/2014/11/22/DSC_0688.jpg
-.. image::  ../Picture/2014/11/22/DSC_0692.jpg
 
 2013年
 ----------------------
@@ -200,15 +218,12 @@ OSC福岡主な展示物
 .. image:: ../Picture/2013/11/15/DSC_2877.jpg
 .. image:: ../Picture/2013/11/16/DSC_2878.jpg
 .. image:: ../Picture/2013/11/16/DSC_2879.jpg
-.. image:: ../Picture/2013/11/16/DSC_2880.jpg
 .. image:: ../Picture/2013/11/16/DSC_2883.jpg
 .. image:: ../Picture/2013/11/16/DSC_2885.jpg
 .. image:: ../Picture/2013/11/16/DSC_2886.jpg
 .. image:: ../Picture/2013/11/16/DSC_2887.jpg
 .. image:: ../Picture/2013/11/16/DSC_2888.jpg
-.. image:: ../Picture/2013/11/16/dsc03631.jpg
 .. image:: ../Picture/2013/11/16/dsc03632.jpg
-.. image:: ../Picture/2013/11/16/dsc03635.jpg
 
 2012年
 ----------------------
