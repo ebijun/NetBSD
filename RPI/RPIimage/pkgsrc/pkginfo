@@ -4,7 +4,7 @@ at-spi2-core-2.26.2nb1 Assistive Technology Service Provider Interface Core
 atk-2.26.1          Set of interfaces for accessibility
 bash-4.4.019        The GNU Bourne Again Shell
 cairo-1.16.0        Vector graphics library with cross-device output support
-cairo-gobject-1.16.0 Vector graphics library with cross-device output support
+cairo-gobject-1.16.0nb3 Vector graphics library with cross-device output support
 curl-7.62.0         Client that groks URLs
 dbus-1.12.10        Message bus system
 desktop-file-utils-0.23nb1 Utilities to manage desktop entries
@@ -17,12 +17,12 @@ fribidi-0.19.7      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.2.5nb4         Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.36.12 Image loaders for gtk2
 giflib-5.1.4        GIF image format library
-git-base-2.19.1     GIT Tree History Storage Tool (base package)
+git-base-2.19.2     GIT Tree History Storage Tool (base package)
 glib2-2.56.2nb3     Some useful routines for C programming (glib2)
 gobject-introspection-1.56.1 GObject Introspection
 gtk2+-2.24.32nb7    GIMP Toolkit v2 - libraries for building X11 user interfaces
-gtk3+-3.24.1nb2     GIMP Toolkit v3 - libraries for building X11 user interfaces
-harfbuzz-2.1.1      OpenType text shaping engine
+gtk3+-3.24.1nb3     GIMP Toolkit v3 - libraries for building X11 user interfaces
+harfbuzz-2.1.3      OpenType text shaping engine
 hicolor-icon-theme-0.17 Standard icon theme called hicolor
 icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
 icu-62.1            Robust and full-featured Unicode services
@@ -41,7 +41,7 @@ libimagequant-2.12.2 High-quality conversion of RGBA images to 8-bit indexed-col
 libotf-0.9.16       Library for handling OpenType fonts (OTF)
 libunistring-0.9.10 Unicode string library
 libuuid-2.32.1      Generate unique identifiers for objects
-libwebp-1.0.0       WebP image format library and tools
+libwebp-1.0.1       WebP image format library and tools
 libxml2-2.9.8nb4    XML parser library from the GNOME project
 libxslt-1.1.32nb1   XSLT parser library from the GNOME project
 libyaml-0.2.1       YAML 1.1 parser and emitter written in C
@@ -49,7 +49,7 @@ lintpkgsrc-4.94nb1  Sanity checks on the complete pkgsrc tree
 lzo-2.10            Portable lossless data compression library
 m17n-db-1.8.0       The m17n database used by the m17n library
 m17n-lib-1.8.0nb1   Multilingualization library
-medit-1.2.0nb8      Programming and around-programming text editor
+medit-1.2.0nb9      Programming and around-programming text editor
 mlterm-3.8.7nb2     Multilingual terminal emulator
 mozilla-rootcerts-1.0.20180111 Root CA certificates from the Mozilla Project
 ncurses-6.1nb3      CRT screen handling and optimization package
@@ -71,11 +71,11 @@ p5-Net-SMTP-SSL-1.04nb2 Perl5 module providing SSL support for Net::SMTP
 p5-Net-SSLeay-1.85nb1 Perl5 module for using OpenSSL
 p5-Socket6-0.29     Perl5 module to support getaddrinfo() and getnameinfo()
 p5-TimeDate-2.30nb5 Perl5 TimeDate distribution
-pango-1.42.4nb2     Library for layout and rendering of text
+pango-1.42.4nb3     Library for layout and rendering of text
 pcre-8.42           Perl Compatible Regular Expressions library
 pcre2-10.31         Perl Compatible Regular Expressions library (major version 2)
 perl-5.28.0nb2      Practical Extraction and Report Language
-pkg_chk-2.0.10      Check installed package versions against pkgsrc
+pkg_chk-2.0.11      Check installed package versions against pkgsrc
 png-1.6.35          Library for manipulating PNG images
 py27-cElementTree-2.7.15 C implementation of Python ElementTree API
 py27-expat-2.7.15   Python interface to expat
@@ -94,8 +94,8 @@ ruby24-gnome2-gdkpixbuf-3.3.0 Ruby binding of GdkPixbuf-2.x
 ruby24-gnome2-gio-3.3.0 Ruby binding of gio-2.0.x
 ruby24-gnome2-glib-3.3.0 Ruby binding of GLib-2.x
 ruby24-gnome2-gobject-introspection-3.3.0 Ruby binding of Gobject Introspection
-ruby24-gnome2-gtk-3.3.0 Ruby binding of GTK+-2.x
-ruby24-gnome2-pango-3.3.0nb1 Ruby binding of pango-1.x
+ruby24-gnome2-gtk-3.3.0nb2 Ruby binding of GTK+-2.x
+ruby24-gnome2-pango-3.3.0nb2 Ruby binding of pango-1.x
 ruby24-hmac-0.4.0   Common interface to HMAC functionality
 ruby24-httpclient-2.8.3 HTTP accessing library for Ruby
 ruby24-idn-0.1.0    Ruby Bindings for the GNU LibIDN library
@@ -121,7 +121,7 @@ sudo-1.8.26         Allow others to run commands as root
 tcsh-6.20.00nb2     Extended C-shell with many useful features
 tiff-4.0.10         Library and tools for reading and writing TIFF data files
 ttmkfdir2-20021109nb6 Tool that creates a fonts.scale file
-uim-1.8.6nb54       Multilingual input method library
+uim-1.8.6nb56       Multilingual input method library
 vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
 wget-1.19.5nb1      Retrieve files from the 'net via HTTP and FTP
 xli-1.17.0nb13      X11 Image Loading Utility
