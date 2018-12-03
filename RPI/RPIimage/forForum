@@ -1,51 +1,47 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2018-11-23/2018-11-23/g
+:1,$s/2018-12-08/2018-12-08/g
 :1,$s/8.99.26/8.99.26/g
 :1,$s/201811030820Z/201811030820Z/g
 :1,$s?2018/11/06/msg005153.html?2018/11/21/msg005237.html?
 
-2018-11-23-netbsd-raspi-earmv6hf.img
+2018-12-08-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2018 Shimane NetBSD bof.
-I've updated 2018-11-23-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2018 Fukuoka NetBSD booth.
+I've updated 2018-12-08-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2018/11/21/msg005237.html
+http://mail-index.netbsd.org/port-arm/2018/12/03/msg005294.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-11-23-earmv6hf/2018-11-23-netbsd-raspi-earmv6hf.img.gz
-
-!!!!!CAUTION!!!!!
-RPI0/OW/1 boot failed based on nyftp:201711172150Z.
-http://mail-index.netbsd.org/port-arm/2018/11/19/msg005230.html
-
-RPI0/0W/1 boot fine on nyftp:201811030820Z.use this image.
-http://mail-index.netbsd.org/port-arm/2018/11/06/msg005153.html
-
-Changes between 201811030820Z to 201711172150Z make RPI0/0W/1 boot failed.
-
-Topics:
-- NetBSD/aarch64 image testing: System Clock Stops with JOBS=3 pkgbuild.
- Fix: apply ryo@'s patch,thanx
- https://gist.github.com/ryo/89faf74852c20a84af17a12704fe3e16
-- icewm hangs with newer gcc
- Fix: apply ryo@'s patch,thanx again!
- https://gist.github.com/ryo/8fe6df6dc9c17ab950cbc2a07302bbd0
-- waiting for RPI3A+ from pimoroni,check if newer firmware.
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-12-08-earmv6hf/2018-12-08-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.26 evbarm-earmv6hf 201811172150Z rpi.img from nyftp.
+- RaspberryPi 3A+ support
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3A+
+- NetBSD-current 8.99.26 evbarm-earmv6hf 201811271510Z rpi.img from nyftp.
+  RPI2 boot failed with 201811271510Z kernel.
+  Changes between 201811241900Z to 201811271510Z makes RPI2 boot failed.
+
+  /boot/kernel7.img: RPI2 boot fine,same as kernel7.img.20181125
+    NetBSD 8.99.26 (RPI2) #0: Sat Nov 24 18:48:08 UTC 2018
+      mkrepro%mkrepro.NetBSD.org@localhost:/usr/src/sys/arch/evbarm/compile/RPI2
+  /boot/kernel7.img.20181125: same as kernel7.img 
+    NetBSD 8.99.26 (RPI2) #0: Sat Nov 24 18:48:08 UTC 2018
+      mkrepro%mkrepro.NetBSD.org@localhost:/usr/src/sys/arch/evbarm/compile/RPI2
+  /boot/kernel7.img.org 201811271510Z
+    NetBSD 8.99.26 (RPI2) #0: Sat Nov 27 14:55:56 UTC 2018
+      mkrepro%mkrepro.NetBSD.org@localhost:/usr/src/sys/arch/evbarm/compile/RPI2
+
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/795f05aafcbaf9b149e8f8d865b4a122f28edb3e#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/91315a69c53e09eeb7d0c0d65754dcbcb3c35830#diff-4a755d73dbba5da21bbf783139f086dc
 
 System Update:
- sysinfo: g++-6.5.0 gcc-6.5.0 libcurses-7.2 sh-20160401-20181117205335Z
- pkgsrc:  cairo-1.16.0 cairo-gobject-1.16.0 gtk2+-2.24.32nb7 gtk3+-3.24.1nb2
-	  harfbuzz-2.1.1 libxml2-2.9.8nb4 medit-1.2.0nb8 mlterm-3.8.7nb2 
-	  pango-1.42.4nb2 ruby24-cairo-1.16.2nb1 
-	  ruby24-gnome2-cairo-gobject-3.3.0nb1 ruby24-gnome2-pango-3.3.0nb1
-	  ruby24-mikutter-3.8.3 sudo-1.8.26 tiff-4.0.10 uim-1.8.6nb54
+ sysinfo: bozohttpd-20181125 sh-20160401-20181127145556Z 
+ pkgsrc:  cairo-gobject-1.16.0nb3 git-base-2.19.2 gtk3+-3.24.1nb3 harfbuzz-2.1.3
+	  libwebp-1.0.1 medit-1.2.0nb9 pango-1.42.4nb3 pkg_chk-2.0.11
+	  ruby24-gnome2-gtk-3.3.0nb2 ruby24-gnome2-pango-3.3.0nb2 uim-1.8.6nb56 
+
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
@@ -57,10 +53,8 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI2-1.2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3A+
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3B+
-
-Pre-installed packages:
-  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Security:
 - security.pax.mprotect.enabled
