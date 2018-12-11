@@ -129,10 +129,11 @@ GPIOの使い方をまとめてくれた方が。
 64bit対応
 ---------------------
 
-ryo@netbsd さんによる rpi64wip実装が進んでいます。
+ryo@netbsd さんによる rpi64wip実装が進み、NetBSD/aarch64としてRPI3で利用できます。
 
 * https://github.com/ryo/netbsd-src
 * http://mail-index.netbsd.org/port-arm/2018/02/20/msg004631.html
+* http://mail-index.netbsd.org/port-arm/2018/12/03/msg005297.html
 
 armv7のいろいろ
 --------------------
