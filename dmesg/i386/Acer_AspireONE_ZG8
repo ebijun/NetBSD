@@ -4,10 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.24 (GENERIC) #0: Sun Aug 26 11:53:28 UTC 2018
+NetBSD 8.99.27 (GENERIC) #0: Mon Dec 10 00:31:45 UTC 2018
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
-avail memory = 1982 MB
+avail memory = 1981 MB
 rnd: seeded with 128 bits
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
@@ -40,13 +40,13 @@ acpi0 at mainbus0: Intel ACPICA 20180810
 acpi0: X/RSDT: OemId <ACER  ,ACER    ,00000001>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3B7C94C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3C9894C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C39F6A0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0x00000000C3B12A0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C39D57FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3AF08DC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C39E8014 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3C96DDC 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
@@ -100,16 +100,6 @@ agp0 at pchb0: i915-family chipset
 agp0: detected 7932k stolen memory
 agp0: aperture at 0x80000000, size 0x10000000
 i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 27ae (rev. 0x03)
-drm: Memory usable by graphics device = 256M
-drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
-drm: Driver supports precise vblank timestamp query.
-i915drmkms0: interrupting at ioapic0 pin 16 (i915)
-drm: initialized overlay support
-intelfb0 at i915drmkms0
-i915drmkms0: info: registered panic notifier
-intelfb0: framebuffer at 0xdb2fe000, size 1024x600, depth 32, stride 4096
-wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
-wsmux1: connecting to wsdisplay0
 vendor 8086 product 27a6 (miscellaneous display, revision 0x03) at pci0 dev 2 function 1 not configured
 hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
 hdaudio0: interrupting at msi0 vec 0
@@ -176,8 +166,8 @@ piixide0: primary channel ignored (disabled)
 piixide0: secondary channel configured to compatibility mode
 piixide0: secondary channel ignored (disabled)
 ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 27c5 (rev. 0x02)
-ahcisata0: interrupting at ioapic0 pin 17
 ahcisata0: AHCI revision 1.10, 4 ports, 32 slots, CAP 0xdf10ff03<PSC,SSC,PMD,ISS=0x1=Gen1,SCLO,SAL,SALP,SSS,SMPS,SNCQ,S64A>
+ahcisata0: interrupting at msi2 vec 0
 atabus0 at ahcisata0 channel 0
 atabus1 at ahcisata0 channel 2
 ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 27da (rev. 0x02)
@@ -206,7 +196,6 @@ acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
 acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
 coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=90
 acpicpu1 at cpu1: ACPI CPU
-DRM error in i915_irq_handler: pipe A underrun
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 acpiacad0: AC adapter online.
 uhub0 at usb0: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
@@ -233,7 +222,16 @@ wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/8.99.24/modules
+kern.module.path=/stand/i386/8.99.27/modules
+kern info: [drm] Memory usable by graphics device = 256M
+kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+kern info: [drm] Driver supports precise vblank timestamp query.
+i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
+kern info: [drm] initialized overlay support
+intelfb0 at i915drmkms0
+intelfb0: framebuffer at 0xdc35b000, size 1024x600, depth 32, stride 4096
+wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
 uvideo0 at uhub0 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
 video0 at uvideo0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
 wsdisplay0: screen 1 added (default, vt100 emulation)

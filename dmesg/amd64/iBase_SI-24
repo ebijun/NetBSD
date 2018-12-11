@@ -4,10 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.24 (GENERIC) #0: Sun Aug 26 11:53:28 UTC 2018
+NetBSD 8.99.27 (GENERIC) #0: Mon Dec 10 16:28:52 UTC 2018
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 4095 MB
-avail memory = 3953 MB
+avail memory = 3951 MB
 rnd: seeded with 128 bits
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
@@ -196,20 +196,17 @@ timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 IPsec: Initialized Security Association Processing.
 uhub0 at usb1: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb0: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb3: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb3: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub2: 2 ports with 2 removable, self powered
-uhub3 at usb2: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb5: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub2: 10 ports with 10 removable, self powered
+uhub3 at usb0: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub3: 2 ports with 2 removable, self powered
-uhub4 at usb5: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-uhub4: 10 ports with 10 removable, self powered
+uhub4 at usb2: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub4: 2 ports with 2 removable, self powered
 uhub5 at usb4: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub5: 2 ports with 2 removable, self powered
 ehci0: handing over full speed device on port 1 to ohci0
-uhidev0 at uhub1 port 1 configuration 1 interface 0
-uhidev0: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
-ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wd0 at atabus0 drive 0
 wd0: <WDC WD3200BEKT-08PVMT1>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
@@ -219,8 +216,61 @@ wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE 
 wd0(ixpide0:0:0): using PIO mode 4, Ultra-DMA mode 6 (Ultra/133) (using DMA), WRITE DMA FUA EXT
 boot device: wd0
 root on wd0a dumps on wd0b
+uhidev0 at uhub3 port 1 configuration 1 interface 0
+uhidev0: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
+ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+root file system type: ffs
+kern.module.path=/stand/amd64/8.99.27/modules
+kern info: [drm] initializing kernel modesetting (RV610 0x1002:0x94CB 0x1002:0x94CB).
+kern info: [drm] register mmio base: 0xfddf0000
+kern info: [drm] register mmio size: 65536
+kern info: ATOM BIOS: BR35739
+radeon0: info: VRAM: 128M 0x0000000000000000 - 0x0000000007FFFFFF (128M used)
+radeon0: info: GTT: 512M 0x0000000008000000 - 0x0000000027FFFFFF
+kern info: [drm] Detected VRAM RAM=80M, BAR=256M
+kern info: [drm] RAM width 64bits DDR
+Zone  kernel: Available graphics memory: 1170516 kiB
+kern info: [drm] radeon: 128M of VRAM memory ready
+kern info: [drm] radeon: 512M of GTT memory ready.
+kern info: [drm] Loading RV610 Microcode
+radeon0: autoconfiguration error: error: radeon_uvd: Can't load firmware "radeon/R600_uvd.bin"
+kern info: [drm] GART: num cpu pages 131072, num gpu pages 131072
+kern info: [drm] PCIE GART of 512M enabled (table at 0x0000000000040000).
+radeon0: info: WB enabled
+radeon0: info: fence driver on ring 0 use gpu addr 0x0000000008000c00 and cpu addr 0x0xfffffcd461e31c00
+kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+kern info: [drm] Driver supports precise vblank timestamp query.
+radeon0: info: radeon: MSI limited to 32-bit
+radeon0: interrupting at ioapic0 pin 18 (radeon0)
+kern info: [drm] radeon: irq initialized.
+kern info: [drm] ring test on 0 succeeded in 1 usecs
+kern info: [drm] ib test on ring 0 succeeded in 0 usecs
+kern info: [drm] Radeon Display Connectors
+kern info: [drm] Connector 0:
+kern info: [drm]   DVI-I-1
+kern info: [drm]   HPD1
+kern info: [drm]   DDC: 0x7e40 0x7e40 0x7e44 0x7e44 0x7e48 0x7e48 0x7e4c 0x7e4c
+kern info: [drm]   Encoders:
+kern info: [drm]     CRT1: INTERNAL_KLDSCP_DAC1
+kern info: [drm]     DFP1: INTERNAL_KLDSCP_TMDS1
+kern info: [drm] Connector 1:
+kern info: [drm]   DVI-I-2
+kern info: [drm]   HPD3
+kern info: [drm]   DDC: 0x7e50 0x7e50 0x7e54 0x7e54 0x7e58 0x7e58 0x7e5c 0x7e5c
+kern info: [drm]   Encoders:
+kern info: [drm]     CRT2: INTERNAL_KLDSCP_DAC2
+kern info: [drm]     DFP2: INTERNAL_LVTM1
+kern info: [drm] Connector 2:
+kern info: [drm]   DIN-1
+kern info: [drm]   Encoders:
+kern info: [drm]     TV1: INTERNAL_KLDSCP_DAC2
+radeondrmkmsfb0 at radeon0
+radeondrmkmsfb0: framebuffer at 0xffffdc80687f5000, size 1280x1024, depth 32, stride 5120
+wsdisplay0 at radeondrmkmsfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
 wskbd1 at ukbd0 mux 1
-uhidev1 at uhub1 port 1 configuration 1 interface 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub3 port 1 configuration 1 interface 1
 uhidev1: Logitech (0x46d) USB Receiver (0xc534), rev 2.00/29.00, addr 2, iclass 3/1
 uhidev1: 17 report ids
 ums0 at uhidev1 reportid 2: 16 buttons, W and Z dirs
@@ -229,55 +279,6 @@ uhid0 at uhidev1 reportid 3: input=4, output=0, feature=0
 uhid1 at uhidev1 reportid 4: input=1, output=0, feature=0
 uhid2 at uhidev1 reportid 16: input=6, output=6, feature=0
 uhid3 at uhidev1 reportid 17: input=19, output=19, feature=0
-root file system type: ffs
-kern.module.path=/stand/amd64/8.99.24/modules
-drm: initializing kernel modesetting (RV610 0x1002:0x94CB 0x1002:0x94CB).
-drm: register mmio base: 0xfddf0000
-drm: register mmio size: 65536
-drm kern info: ATOM BIOS: BR35739
-radeon0: info: VRAM: 128M 0x0000000000000000 - 0x0000000007FFFFFF (128M used)
-radeon0: info: GTT: 512M 0x0000000008000000 - 0x0000000027FFFFFF
-drm: Detected VRAM RAM=80M, BAR=256M
-drm: RAM width 64bits DDR
-Zone  kernel: Available graphics memory: 1171542 kiB
-drm: radeon: 128M of VRAM memory ready
-drm: radeon: 512M of GTT memory ready.
-drm: Loading RV610 Microcode
-drm: GART: num cpu pages 131072, num gpu pages 131072
-drm: PCIE GART of 512M enabled (table at 0x0000000000040000).
-radeon0: info: WB enabled
-radeon0: info: fence driver on ring 0 use gpu addr 0x0000000008000c00 and cpu addr 0x0xffff8b00684c5c00
-drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
-drm: Driver supports precise vblank timestamp query.
-radeon0: interrupting at ioapic0 pin 18 (radeon)
-drm: radeon: irq initialized.
-drm: ring test on 0 succeeded in 1 usecs
-drm: ib test on ring 0 succeeded in 0 usecs
-drm: Radeon Display Connectors
-drm: Connector 0:
-drm:   DVI-I-1
-drm:   HPD1
-drm:   DDC: 0x7e40 0x7e40 0x7e44 0x7e44 0x7e48 0x7e48 0x7e4c 0x7e4c
-drm:   Encoders:
-drm:     CRT1: INTERNAL_KLDSCP_DAC1
-drm:     DFP1: INTERNAL_KLDSCP_TMDS1
-drm: Connector 1:
-drm:   DVI-I-2
-drm:   HPD3
-drm:   DDC: 0x7e50 0x7e50 0x7e54 0x7e54 0x7e58 0x7e58 0x7e5c 0x7e5c
-drm:   Encoders:
-drm:     CRT2: INTERNAL_KLDSCP_DAC2
-drm:     DFP2: INTERNAL_LVTM1
-drm: Connector 2:
-drm:   DIN-1
-drm:   Encoders:
-drm:     TV1: INTERNAL_KLDSCP_DAC2
-radeondrmkmsfb0 at radeon0
-radeon0: info: registered panic notifier
-radeondrmkmsfb0: framebuffer at 0xffff8b00687f0000, size 1280x1024, depth 32, stride 5120
-wsdisplay0 at radeondrmkmsfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
-wsmux1: connecting to wsdisplay0
-wskbd1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
