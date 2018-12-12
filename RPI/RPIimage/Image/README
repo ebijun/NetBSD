@@ -20,7 +20,16 @@ Update:
 - NetBSD-current 8.99.26 evbarm-earmv6hf 201811271510Z rpi.img from nyftp.
   RPI2 boot failed with 201811271510Z kernel.
   Changes between 201811241900Z to 201811271510Z makes RPI2 boot failed.
+- NetBSD Security Advisory 2018-009: bozohttpd can allow access to .htpasswd 
+  http://mail-index.netbsd.org/current-users/2018/12/11/msg034798.html
+  affects NetBSD-current: prior to 2018-11-22
+  this image uses 201811271510Z kernel and it fixed.
 
+WaitingList for OSC2019osaka version:
+#Next: RPI3: mue(4) checksum offloading 
+# http://mail-index.netbsd.org/source-changes/2018/12/11/msg101345.html
+
+#seems ok 
   /boot/kernel7.img: RPI2 boot fine,same as kernel7.img.20181125
     NetBSD 8.99.26 (RPI2) #0: Sat Nov 24 18:48:08 UTC 2018
       mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
