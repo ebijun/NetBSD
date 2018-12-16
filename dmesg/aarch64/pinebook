@@ -1,863 +1,271 @@
-DRM debug in drm_framebuffer_unreference: 0xffffa72bd9075d10: FB ID: 40 (4)
-DRM debug in drm_framebuffer_reference: 0xffffa72bd9075d10: FB ID: 40 (3)
-DRM debug in drm_atomic_set_fb_for_plane: Set [FB:40] for plane state 0xffffa72bd3f3dd90
-DRM debug in drm_atomic_check_only: checking 0xffffa72bd481e610
-DRM debug in intel_plane_atomic_calc_changes: [CRTC:24] has [PLANE:23] with fb 40
-DRM debug in intel_plane_atomic_calc_changes: [PLANE:23] visible 1 -> 1, off 0, on 0, ms 0
-DRM debug in drm_atomic_commit: commiting 0xffffa72bd481e610
-DRM debug in drm_atomic_state_default_clear: Clearing atomic state 0xffffa72bd481e610
-DRM debug in drm_property_unreference_blob: 0xffffa72bae142420: blob ID: 45 (2)
-DRM debug in drm_framebuffer_unreference: 0xffffa72bd9075d10: FB ID: 40 (4)
-DRM debug in drm_atomic_state_free: Freeing atomic state 0xffffa72bd481e610
-DRM debug in drm_framebuffer_unreference: 0xffffa72bd9075d10: FB ID: 40 (3)
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-12)@ 314989.163426 -> 314989.163683 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164804, diff=1, hw=3166844 hw_last=3166843
-DRM debug in vblank_disable_locked: disabling vblank on crtc 1
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-1)@ 314989.163673 -> 314989.163694 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164805, diff=0, hw=3166844 hw_last=3166844
-DRM debug in drm_framebuffer_reference: 0xffffa72bd9075d10: FB ID: 40 (2)
-DRM debug in drm_atomic_state_init: Allocated atomic state 0xffffa72be4bb2510
-DRM debug in drm_framebuffer_reference: 0xffffa72bd9075d10: FB ID: 40 (3)
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:23] 0xffffa72be5ac1250 state to 0xffffa72be4bb2510
-DRM debug in drm_property_reference_blob: 0xffffa72bae142420: blob ID: 45 (1)
-DRM debug in drm_atomic_get_crtc_state: Added [CRTC:24] 0xffffa72bd4e45c10 state to 0xffffa72be4bb2510
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72be5ac1250 to [CRTC:24]
-DRM debug in drm_framebuffer_unreference: 0xffffa72bd9075d10: FB ID: 40 (4)
-DRM debug in drm_framebuffer_reference: 0xffffa72bd9075d10: FB ID: 40 (3)
-DRM debug in drm_atomic_set_fb_for_plane: Set [FB:40] for plane state 0xffffa72be5ac1250
-DRM debug in drm_atomic_check_only: checking 0xffffa72be4bb2510
-DRM debug in intel_plane_atomic_calc_changes: [CRTC:24] has [PLANE:23] with fb 40
-DRM debug in intel_plane_atomic_calc_changes: [PLANE:23] visible 1 -> 1, off 0, on 0, ms 0
-DRM debug in drm_atomic_commit: commiting 0xffffa72be4bb2510
-DRM debug in drm_vblank_enable: enabling vblank on crtc 1, ret: 0
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x5 p(0,596)@ 314989.910546 -> 314989.897798 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164805, diff=44, hw=3166888 hw_last=3166844
-DRM debug in drm_atomic_state_default_clear: Clearing atomic state 0xffffa72be4bb2510
-DRM debug in drm_property_unreference_blob: 0xffffa72bae142420: blob ID: 45 (2)
-DRM debug in drm_framebuffer_unreference: 0xffffa72bd9075d10: FB ID: 40 (4)
-DRM debug in drm_atomic_state_free: Freeing atomic state 0xffffa72be4bb2510
-DRM debug in drm_framebuffer_unreference: 0xffffa72bd9075d10: FB ID: 40 (3)
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-12)@ 314989.914215 -> 314989.914472 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164849, diff=1, hw=3166889 hw_last=3166888
-DRM debug in vblank_disable_locked: disabling vblank on crtc 1
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x5 p(0,0)@ 314989.914469 -> 314989.914469 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164850, diff=0, hw=3166889 hw_last=3166889
-DRM debug in drm_atomic_state_init: Allocated atomic state 0xffffa72bdbcd8b50
-DRM debug in drm_framebuffer_reference: 0xffffa72bd9075d10: FB ID: 40 (2)
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:23] 0xffffa72be5ac1790 state to 0xffffa72bdbcd8b50
-DRM debug in drm_property_reference_blob: 0xffffa72bae142420: blob ID: 45 (1)
-DRM debug in drm_atomic_get_crtc_state: Added [CRTC:24] 0xffffa72bd5ac9810 state to 0xffffa72bdbcd8b50
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72be5ac1790 to [NOCRTC]
-DRM debug in drm_framebuffer_unreference: 0xffffa72bd9075d10: FB ID: 40 (3)
-DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffa72be5ac1790
-DRM debug in drm_atomic_check_only: checking 0xffffa72bdbcd8b50
-DRM debug in intel_plane_atomic_calc_changes: [CRTC:24] has [PLANE:23] with fb -1
-DRM debug in intel_plane_atomic_calc_changes: [PLANE:23] visible 1 -> 0, off 1, on 0, ms 0
-DRM debug in drm_atomic_commit: commiting 0xffffa72bdbcd8b50
-DRM debug in drm_vblank_enable: enabling vblank on crtc 1, ret: 0
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x5 p(0,613)@ 314990.861887 -> 314990.848776 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164850, diff=56, hw=3166945 hw_last=3166889
-DRM debug in g4x_check_srwm: SR watermark: display plane 56, cursor 2
-DRM debug in g4x_update_wm: Setting FIFO watermarks - A: plane=2, cursor=2, B: plane=25, cursor=2, SR: plane=56, cursor=2
-DRM debug in intel_set_memory_cxsr: memory self-refresh is enabled
-DRM debug in drm_atomic_state_default_clear: Clearing atomic state 0xffffa72bdbcd8b50
-DRM debug in drm_property_unreference_blob: 0xffffa72bae142420: blob ID: 45 (2)
-DRM debug in drm_framebuffer_unreference: 0xffffa72bd9075d10: FB ID: 40 (2)
-DRM debug in drm_atomic_state_free: Freeing atomic state 0xffffa72bdbcd8b50
-DRM debug in drm_framebuffer_unreference: 0xffffa72bd9075d10: FB ID: 40 (1)
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-12)@ 314990.865209 -> 314990.865465 [e 0 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164906, diff=1, hw=3166946 hw_last=3166945
-DRM debug in vblank_disable_locked: disabling vblank on crtc 1
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-4)@ 314990.865382 -> 314990.865468 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164907, diff=0, hw=3166946 hw_last=3166946
-DRM debug in drm_atomic_state_init: Allocated atomic state 0xffffa72bdbcd8b50
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:18] 0xffffa72bd9075d10 state to 0xffffa72bdbcd8b50
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72bd9075d10 to [NOCRTC]
-DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffa72bd9075d10
-DRM debug in drm_atomic_check_only: checking 0xffffa72bdbcd8b50
-DRM debug in drm_atomic_commit: commiting 0xffffa72bdbcd8b50
-DRM debug in drm_atomic_state_default_clear: Clearing atomic state 0xffffa72bdbcd8b50
-DRM debug in drm_atomic_state_free: Freeing atomic state 0xffffa72bdbcd8b50
-DRM debug in drm_mode_setplane: Unknown plane ID 0
-DRM debug in drm_atomic_state_init: Allocated atomic state 0xffffa72bdbcd8b50
-DRM debug in drm_framebuffer_reference: 0xffffa72bed09acd0: FB ID: 44 (3)
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:22] 0xffffa72bdf1b8e50 state to 0xffffa72bdbcd8b50
-DRM debug in drm_property_reference_blob: 0xffffa72bae142420: blob ID: 45 (1)
-DRM debug in drm_atomic_get_crtc_state: Added [CRTC:24] 0xffffa72b9c600c10 state to 0xffffa72bdbcd8b50
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72bdf1b8e50 to [NOCRTC]
-DRM debug in drm_framebuffer_unreference: 0xffffa72bed09acd0: FB ID: 44 (4)
-DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffa72bdf1b8e50
-DRM debug in drm_atomic_check_only: checking 0xffffa72bdbcd8b50
-DRM debug in intel_plane_atomic_calc_changes: [CRTC:24] has [PLANE:22] with fb -1
-DRM debug in intel_plane_atomic_calc_changes: [PLANE:22] visible 1 -> 0, off 1, on 0, ms 0
-DRM debug in drm_atomic_commit: commiting 0xffffa72bdbcd8b50
-DRM debug in intel_set_memory_cxsr: memory self-refresh is disabled
-DRM debug in drm_vblank_enable: enabling vblank on crtc 1, ret: 0
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x5 p(0,443)@ 314991.358786 -> 314991.349311 [e 0 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164907, diff=29, hw=3166975 hw_last=3166946
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-12)@ 314991.365741 -> 314991.365997 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164936, diff=1, hw=3166976 hw_last=3166975
-DRM debug in intel_set_memory_cxsr: memory self-refresh is disabled
-DRM debug in intel_set_memory_cxsr: memory self-refresh is disabled
-DRM debug in g4x_update_wm: Setting FIFO watermarks - A: plane=2, cursor=2, B: plane=2, cursor=2, SR: plane=0, cursor=0
-DRM debug in drm_atomic_state_default_clear: Clearing atomic state 0xffffa72bdbcd8b50
-DRM debug in drm_property_unreference_blob: 0xffffa72bae142420: blob ID: 45 (2)
-DRM debug in drm_framebuffer_unreference: 0xffffa72bed09acd0: FB ID: 44 (3)
-DRM debug in drm_atomic_state_free: Freeing atomic state 0xffffa72bdbcd8b50
-DRM debug in drm_framebuffer_unreference: 0xffffa72bed09acd0: FB ID: 44 (2)
-DRM debug in drm_mode_setplane: Unknown plane ID 0
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-12)@ 314991.382422 -> 314991.382678 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164937, diff=1, hw=3166977 hw_last=3166976
-DRM debug in vblank_disable_locked: disabling vblank on crtc 1
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x5 p(0,0)@ 314991.382683 -> 314991.382683 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164938, diff=0, hw=3166977 hw_last=3166977
-DRM debug in drm_framebuffer_unreference: 0xffffa72bed09acd0: FB ID: 44 (1)
-DRM debug in drm_atomic_state_init: Allocated atomic state 0xffffa72b4e15e690
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:18] 0xffffa72b30ed5f10 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:20] 0xffffa72b30ed53d0 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72b30ed53d0 to [NOCRTC]
-DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffa72b30ed53d0
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:22] 0xffffa72bcfea4650 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:23] 0xffffa72ba2e7b190 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72ba2e7b190 to [NOCRTC]
-DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffa72ba2e7b190
-DRM debug in drm_atomic_get_crtc_state: Added [CRTC:21] 0xffffa72bebe50410 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_set_mode_for_crtc: Set [NOMODE] for CRTC state 0xffffa72bebe50410
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72b30ed5f10 to [NOCRTC]
-DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffa72b30ed5f10
-DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:21] to 0xffffa72b4e15e690
-DRM debug in drm_property_reference_blob: 0xffffa72bae142420: blob ID: 45 (1)
-DRM debug in drm_atomic_get_crtc_state: Added [CRTC:24] 0xffffa72bebe50810 state to 0xffffa72b4e15e690
-DRM debug in drm_property_unreference_blob: 0xffffa72bae142420: blob ID: 45 (2)
-DRM debug in drm_atomic_set_mode_for_crtc: Set [MODE:1366x768] for CRTC state 0xffffa72bebe50810
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72bcfea4650 to [CRTC:24]
-DRM debug in drm_framebuffer_reference: 0xffffa72bed09ae50: FB ID: 43 (1)
-DRM debug in drm_atomic_set_fb_for_plane: Set [FB:43] for plane state 0xffffa72bcfea4650
-DRM debug in drm_atomic_get_connector_state: Added [CONNECTOR:25] 0xffffa72b01180888 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:21] to 0xffffa72b4e15e690
-DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:24] to 0xffffa72b4e15e690
-DRM debug in drm_atomic_set_crtc_for_connector: Link connector state 0xffffa72b01180888 to [NOCRTC]
-DRM debug in drm_atomic_set_crtc_for_connector: Link connector state 0xffffa72b01180888 to [CRTC:24]
-DRM debug in drm_atomic_connectors_for_crtc: State 0xffffa72b4e15e690 has 0 connectors for [CRTC:21]
-DRM debug in drm_atomic_check_only: checking 0xffffa72b4e15e690
-DRM debug in update_connector_routing: Updating routing for [CONNECTOR:25:LVDS-1]
-DRM debug in update_connector_routing: [CONNECTOR:25:LVDS-1] keeps [ENCODER:26:LVDS-26], now on [CRTC:24]
-DRM debug in intel_plane_atomic_calc_changes: [CRTC:24] has [PLANE:22] with fb 43
-DRM debug in intel_plane_atomic_calc_changes: [PLANE:22] visible 0 -> 1, off 0, on 1, ms 0
-DRM debug in drm_atomic_commit: commiting 0xffffa72b4e15e690
-DRM debug in intel_set_memory_cxsr: memory self-refresh is disabled
-DRM debug in g4x_check_srwm: SR watermark: display plane 56, cursor 2
-DRM debug in g4x_update_wm: Setting FIFO watermarks - A: plane=2, cursor=2, B: plane=25, cursor=2, SR: plane=56, cursor=2
-DRM debug in intel_set_memory_cxsr: memory self-refresh is enabled
-DRM debug in drm_vblank_enable: enabling vblank on crtc 1, ret: 0
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x5 p(0,113)@ 314992.519620 -> 314992.517203 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3164938, diff=68, hw=3167045 hw_last=3166977
-DRM debug in g4x_check_srwm: SR watermark: display plane 56, cursor 2
-DRM debug in g4x_update_wm: Setting FIFO watermarks - A: plane=2, cursor=2, B: plane=25, cursor=2, SR: plane=56, cursor=2
-DRM debug in intel_set_memory_cxsr: memory self-refresh is enabled
-DRM debug in drm_atomic_state_default_clear: Clearing atomic state 0xffffa72b4e15e690
-DRM debug in drm_property_unreference_blob: DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-12)@ 314992.533633 -> 314992.533889 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3165006, diff=1, hw=3167046 hw_last=3167045
-DRM debug in vblank_disable_locked: disabling vblank on crtc 1
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-3)@ 314992.533832 -> 314992.533896 [e 0 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3165007, diff=0, hw=3167046 hw_last=3167046
-0xffffa72bae142420: blob ID: 45 (1)
-DRM debug in drm_atomic_state_free: Freeing atomic state 0xffffa72b4e15e690
-DRM debug in drm_framebuffer_reference: 0xffffa72bed09ae50: FB ID: 43 (2)
-DRM debug in drm_atomic_state_init: Allocated atomic state 0xffffa72b4e15e690
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:18] 0xffffa72bed09ad90 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:20] 0xffffa72bec820850 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72bec820850 to [NOCRTC]
-DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffa72bec820850
-DRM debug in drm_framebuffer_reference: 0xffffa72bed09ae50: FB ID: 43 (3)
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:22] 0xffffa72bdf1b8910 state to 0xffffa72b4e15e690
-DRM debug in drm_property_reference_blob: 0xffffa72be3199ba0: blob ID: 40 (1)
-DRM debug in drm_atomic_get_crtc_state: Added [CRTC:24] 0xffffa72b7815bc10 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_get_plane_state: Added [PLANE:23] 0xffffa72be5ac1790 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72be5ac1790 to [NOCRTC]
-DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffa72be5ac1790
-DRM debug in drm_atomic_get_crtc_state: Added [CRTC:21] 0xffffa72b91cfe810 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_set_mode_for_crtc: Set [NOMODE] for CRTC state 0xffffa72b91cfe810
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72bed09ad90 to [NOCRTC]
-DRM debug in drm_atomic_set_fb_for_plane: Set [NOFB] for plane state 0xffffa72bed09ad90
-DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:21] to 0xffffa72b4e15e690
-DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:24] to 0xffffa72b4e15e690
-DRM debug in drm_atomic_get_connector_state: Added [CONNECTOR:25] 0xffffa72ba4423d60 state to 0xffffa72b4e15e690
-DRM debug in drm_atomic_connectors_for_crtc: State 0xffffa72b4e15e690 has 1 connectors for [CRTC:24]
-DRM debug in drm_property_unreference_blob: 0xffffa72be3199ba0: blob ID: 40 (2)
-DRM debug in drm_atomic_set_mode_for_crtc: Set [MODE:1366x768] for CRTC state 0xffffa72b7815bc10
-DRM debug in drm_atomic_set_crtc_for_plane: Link plane state 0xffffa72bdf1b8910 to [CRTC:24]
-DRM debug in drm_framebuffer_unreference: 0xffffa72bed09ae50: FB ID: 43 (4)
-DRM debug in drm_framebuffer_reference: 0xffffa72bed09ae50: FB ID: 43 (3)
-DRM debug in drm_atomic_set_fb_for_plane: Set [FB:43] for plane state 0xffffa72bdf1b8910
-DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:21] to 0xffffa72b4e15e690
-DRM debug in drm_atomic_add_affected_connectors: Adding all current connectors for [CRTC:24] to 0xffffa72b4e15e690
-DRM debug in drm_atomic_set_crtc_for_connector: Link connector state 0xffffa72ba4423d60 to [NOCRTC]
-DRM debug in drm_atomic_set_crtc_for_connector: Link connector state 0xffffa72ba4423d60 to [CRTC:24]
-DRM debug in drm_atomic_connectors_for_crtc: State 0xffffa72b4e15e690 has 0 connectors for [CRTC:21]
-DRM debug in drm_atomic_check_only: checking 0xffffa72b4e15e690
-DRM debug in update_connector_routing: Updating routing for [CONNECTOR:25:LVDS-1]
-DRM debug in update_connector_routing: [CONNECTOR:25:LVDS-1] keeps [ENCODER:26:LVDS-26], now on [CRTC:24]
-DRM debug in intel_plane_atomic_calc_changes: [CRTC:24] has [PLANE:22] with fb 43
-DRM debug in intel_plane_atomic_calc_changes: [PLANE:22] visible 1 -> 1, off 0, on 0, ms 0
-DRM debug in drm_atomic_commit: commiting 0xffffa72b4e15e690
-DRM debug in drm_vblank_enable: enabling vblank on crtc 1, ret: 0
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x5 p(0,676)@ 314992.731868 -> 314992.717409 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3165007, diff=11, hw=3167057 hw_last=3167046
-DRM debug in drm_atomic_state_default_clear: Clearing atomic state 0xffffa72b4e15e690
-DRM debug in drm_property_unreference_blob: 0xffffa72be3199ba0: blob ID: 40 (1)
-DRM debug in drm_framebuffer_unreference: 0xffffa72bed09ae50: FB ID: 43 (4)
-DRM debug in drm_atomic_state_free: Freeing atomic state 0xffffa72b4e15e690
-DRM debug in drm_framebuffer_reference: 0xffffa72bed09ae50: FB ID: 43 (3)
-DRM debug in drm_framebuffer_unreference: 0xffffa72bed09ae50: FB ID: 43 (4)
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-12)@ 314992.733839 -> 314992.734096 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3165018, diff=1, hw=3167058 hw_last=3167057
-DRM debug in vblank_disable_locked: disabling vblank on crtc 1
-DRM debug in drm_calc_vbltimestamp_from_scanoutpos: crtc 1 : v 0x7 p(0,-2)@ 314992.734045 -> 314992.734088 [e 1 us, 0 rep]
-DRM debug in drm_update_vblank_count: updating vblank count on crtc 1: current=3165019, diff=0, hw=3167058 hw_last=3167058
-syncing disks... done
-unmounted tmpfs on /var/shm type tmpfs
-unmounted procfs on /proc type procfs
-unmounted ptyfs on /dev/pts type ptyfs
-unmounted kernfs on /kern type kernfs
-sd0: detached
-scsibus0: detached
-cd0: detached
-sysbeep0: detached
-midi0: detached
-makphy0: detached
-msk0: detached
-atapibus0: detached
-uhub6: detached
-uhub5: detached
-uhub4: detached
-uhub2: detached
-uhub0: detached
-mskc0: detached
-spkr0: detached
-audio0: detached
-atabus1: detached
-usb6: detached
-usb5: detached
-usb4: detached
-pci3: detached
-pci1: detached
-usb2: detached
-usb0: detached
-uhci5: detached
-uhci4: detached
-uhci3: detached
-ppb2: detached
-ppb0: detached
-uhci2: detached
-uhci0: detached
-attimer1: detached
-forcefully unmounted /dev/wd0a on / type ffs
-rebooting...
+fffffc000000000
+kernel_end            = 0xffffffc000d40000
+pagetables            = 0xffffffc000d40000
+pagetables_end        = 0xffffffc000d4b000
+kernel_end_l2         = 0xffffffc000e00000
+module_start          = 0xffffffc000e00000
+module_end            = 0xffffffc002e00000
+(kernel va area)
+(devmap va area)      = 0xfffffffff0000000
+VM_MAX_KERNEL_ADDRESS = 0xffffffffffe00000
+------------------------------------------
+mpstart
+ksyms: checking .text
+ksyms: checking .rodata
+ksyms: checking link_set_evcnts
+ksyms: checking .eh_frame
+ksyms: checking link_set_arm_platforms
+ksyms: checking link_set_sysctl_funcs
+ksyms: checking link_set_fdt_consoles
+ksyms: checking link_set_modules
+ksyms: checking link_set_ieee80211_funcs
+ksyms: checking link_set_domains
+ksyms: checking link_set_sdt_argtypes_set
+ksyms: checking link_set_sdt_probes_set
+ksyms: checking link_set_sdt_providers_set
+ksyms: checking link_set_dkwedge_methods
+ksyms: checking link_set_prop_linkpools
+ksyms: checking .data
+ksyms: checking .data.cacheline_aligned
+ksyms: checking .data.read_mostly
+ksyms: checking .bss
+ksyms: checking .ident
+ksyms: checking .comment
+ksyms: checking .note.netbsd.ident
+ksyms: checking .debug_info
+ksyms: checking .debug_abbrev
+ksyms: checking .debug_loc
+ksyms: checking .debug_aranges
+ksyms: checking .debug_line
+ksyms: checking .debug_str
+ksyms: checking .shstrtab
+ksyms: checking .symtab
+ksyms: checking .strtab
+Loaded initial symtab at 0xffffffc000a6afc8, strtab at 0xffffffc000b0e7f8, # entries 27906
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
 2018 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.24 (GENERIC) #0: Fri Aug 31 18:44:04 UTC 2018
-	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
-total memory = 8031 MB
-avail memory = 7773 MB
+NetBSD 8.99.27 (GENERIC64) #0: Sat Dec 15 13:39:43 UTC 2018
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+total memory = 2026 MB
+avail memory = 1961 MB
 timecounter: Timecounters tick every 10.000 msec
-Kernelized RAIDframe activated
-running cgd selftest aes-xts-256 aes-xts-512 done
-timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
-Sony Corporation VGN-NW50JB (C601JRZY)
-mainbus0 (root)
-ACPI: RSDP 0x00000000000F03B0 000024 (v02 Sony  )
-ACPI: XSDT 0x00000000B5F12F10 00005C (v01 Sony   VAIO     20090522 MSFT 00010013)
-ACPI: FACP 0x00000000B5F07A90 0000F4 (v04 Sony   VAIO     20090522 MSFT 00010013)
-ACPI: DSDT 0x00000000B5F09010 007B23 (v01 Sony   VAIO     20090522 INTL 20051117)
-ACPI: FACS 0x00000000B5F19E40 000040
-ACPI: FACS 0x00000000B5F19D40 000040
-ACPI: APIC 0x00000000B5F11F10 00006C (v02 Sony   VAIO     20090522 MSFT 00010013)
-ACPI: MCFG 0x00000000B5F18C90 00003C (v01 Sony   VAIO     20090522 MSFT 00000097)
-ACPI: HPET 0x00000000B5F18C10 000038 (v01 Sony   VAIO     20090522 MSFT 00010013)
-ACPI: SLIC 0x00000000B5F14C10 000176 (v01 Sony   VAIO     20090522 Sony 01000000)
-ACPI: SSDT 0x00000000B5EDF590 000505 (v01 Sony   VAIO     20090522 INTL 20051117)
-ACPI: SSDT 0x00000000B5EC8C10 0002E4 (v01 Sony   VAIO     20090522 INTL 20051117)
-ACPI: 3 ACPI AML tables successfully acquired and loaded
-ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x20, 24 pins
-cpu0 at mainbus0 apid 0
-cpu0: Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz, id 0x1067a
+armfdt0 (root)
+simplebus0 at armfdt0: Pine64 Pinebook
+simplebus1 at simplebus0
+simplebus2 at simplebus0
+cpus0 at simplebus0
+cpu0 at cpus0: Cortex-A53 r0p4 (Cortex V8-A core)
 cpu0: package 0, core 0, smt 0
-cpu1 at mainbus0 apid 1
-cpu1: Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz, id 0x1067a
+cpu0: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu0: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu0: Dcache line 64, Icache line 64
+cpu0: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
+cpu0: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
+cpu0: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu0: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu0: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpufreqdt0 at cpu0
+cpu1 at cpus0: Cortex-A53 r0p4 (Cortex V8-A core)
 cpu1: package 0, core 1, smt 0
-acpi0 at mainbus0: Intel ACPICA 20180810
-acpi0: X/RSDT: OemId <  Sony,    VAIO,20090522>, AslId <MSFT,00010013>
-acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
-ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF907886B29050 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
-ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF9077572A6010 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
-ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF907757279390 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
-ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF9077573EBCB0 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
-acpi0: SCI interrupting at int 9
-timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
-hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
-timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
-acpiec0 at acpi0 (EC, PNP0C09): io 0x62,0x66
-FWHD (INT0800) at acpi0 not configured
-LDRC (PNP0C02) at acpi0 not configured
-attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
-pckbc1 at acpi0 (PS2K, PNP0303) (kbd port): io 0x60,0x64 irq 1
-pckbc2 at acpi0 (PS2M, SNY9001) (aux port): irq 12
-sony0 at acpi0 (SNC, SNY5001): Sony Miscellaneous Controller
-ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20180810/nsarguments-278)
-ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20180810/nsarguments-278)
-ACPI Error: Method parse/execution failed \PHS0, AE_AML_LOOP_TIMEOUT (20180810/psparse-569)
-ACPI Error: Method parse/execution failed \PHS, AE_AML_LOOP_TIMEOUT (20180810/psparse-569)
-ACPI Error: Method parse/execution failed \_SB.PCI0.LPCB.SNC.GDDI, AE_AML_LOOP_TIMEOUT (20180810/psparse-569)
-acpivga0 at acpi0 (GFX0): ACPI Display Adapter
-acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
-acpiout1 at acpivga0 (DD02, 0x0410): ACPI Display Output Device
-acpiout1: brightness levels: [4,16,28,40,52,64,76,88,100]
-acpiout2 at acpivga0 (DD03, 0x0200): ACPI Display Output Device
-acpiout3 at acpivga0 (DD04, 0x0004): ACPI Display Output Device
-acpiout4 at acpivga0 (DD05, 0x0005): ACPI Display Output Device
-acpivga0: autoconfiguration error: unknown output device acpiout0
-acpivga0: autoconfiguration error: unknown output device acpiout1
-acpivga0: autoconfiguration error: unknown output device acpiout2
-acpivga0: autoconfiguration error: unknown output device acpiout3
-acpivga0: autoconfiguration error: unknown output device acpiout4
-acpivga0: connected output devices:
-acpivga0:   0x0400: Unknown Output Device, head 0
-PDRC (PNP0C02) at acpi0 not configured
-acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
-acpiacad0 at acpi0 (ADP1, ACPI0003): ACPI AC Adapter
-acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
-acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
-acpitz0 at acpi0 (TZ00)
-acpitz0: levels: critical 127.0 C, passive cooling
-acpitz1 at acpi0 (TZ01): cpu0 cpu1
-acpitz1: levels: critical 110.0 C, passive 104.0 C, passive cooling
-ACPI: Enabled 2 GPEs in block 00 to 3F
-pckbd0 at pckbc1 (kbd slot)
-pckbc1: using irq 1 for kbd slot
-wskbd0 at pckbd0: console keyboard
-pms0 at pckbc1 (aux slot)
-pms0: autoconfiguration error: Failed to initialize an ALPS device.
-pckbc1: using irq 12 for aux slot
-wsmouse0 at pms0 mux 0
-pci0 at mainbus0 bus 0: configuration mode 1
-pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
-pchb0 at pci0 dev 0 function 0: vendor 8086 product 2a40 (rev. 0x07)
-agp0 at pchb0: G4X-family chipset
-agp0: detected 130556k stolen memory
-agp0: aperture at 0xc0000000, size 0x10000000
-i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 2a42 (rev. 0x07)
-vendor 8086 product 2a43 (miscellaneous display, revision 0x07) at pci0 dev 2 function 1 not configured
-uhci0 at pci0 dev 26 function 0: vendor 8086 product 2937 (rev. 0x03)
-uhci0: interrupting at ioapic0 pin 16
-usb0 at uhci0: USB revision 1.0
-uhci1 at pci0 dev 26 function 1: vendor 8086 product 2938 (rev. 0x03)
-uhci1: interrupting at ioapic0 pin 21
-usb1 at uhci1: USB revision 1.0
-uhci2 at pci0 dev 26 function 2: vendor 8086 product 2939 (rev. 0x03)
-uhci2: interrupting at ioapic0 pin 19
-usb2 at uhci2: USB revision 1.0
-ehci0 at pci0 dev 26 function 7: vendor 8086 product 293c (rev. 0x03)
-ehci0: interrupting at ioapic0 pin 19
+cpu2 at cpus0: Cortex-A53 r0p4 (Cortex V8-A core)
+cpu2: package 0, core 2, smt 0
+cpu3 at cpus0: Cortex-A53 r0p4 (Cortex V8-A core)
+cpu3: package 0, core 3, smt 0
+gic0 at simplebus1: GIC
+armgic0 at gic0: Generic Interrupt Controller, 224 sources (215 valid)
+armgic0: 16 Priorities, 192 SPIs, 7 PPIs, 16 SGIs
+fclock0 at simplebus0: 24000000 Hz fixed clock (osc24M)
+fclock1 at simplebus0: 32768 Hz fixed clock (osc32k)
+syscon0 at simplebus1: System Controller Registers
+fclock2 at simplebus0: 16000000 Hz fixed clock (iosc)
+gtmr0 at simplebus0: Generic Timer
+gtmr0: interrupting on GIC irq 27
+armgtmr0 at gtmr0: ARM Generic Timer (24000 kHz)
+timecounter: Timecounter "armgtmr0" frequency 24000000 Hz quality 500
+sun50ia64ccu0 at simplebus1: A64 CCU
+sun50ia64rccu0 at simplebus1: A64 PRCM CCU
+sunxinmi0 at simplebus1: R_INTC
+sunxigpio0 at simplebus1: PIO
+gpio0 at sunxigpio0: 103 pins
+sunxigpio0: interrupting on GIC irq 43
+sunxigpio1 at simplebus1: PIO
+gpio1 at sunxigpio1: 13 pins
+sunxigpio1: interrupting on GIC irq 77
+sunxipwm0 at simplebus1: PWM
+com0 at simplebus1: ns16550a, working fifo
+com0: console
+com0: interrupting on GIC irq 32
+com1 at simplebus1: ns16550a, working fifo
+com1: interrupting on GIC irq 33
+sunxiusbphy0 at simplebus1: USB PHY
+sunxirsb0 at simplebus1: RSB
+sunxirsb0: interrupting on GIC irq 71
+iic0 at sunxirsb0: I2C bus
+axppmic0 at iic0 addr 0x3a3: AXP803
+axpreg0 at axppmic0: dldo1
+axpreg1 at axppmic0: dldo2
+axpreg2 at axppmic0: dldo3
+axpreg3 at axppmic0: dldo4
+axpreg4 at axppmic0: eldo1
+axpreg5 at axppmic0: eldo2
+axpreg6 at axppmic0: eldo3
+axpreg7 at axppmic0: fldo1
+axpreg8 at axppmic0: fldo2
+axpreg9 at axppmic0: dcdc1
+axpreg10 at axppmic0: dcdc2
+axpreg11 at axppmic0: dcdc3
+axpreg12 at axppmic0: dcdc4
+axpreg13 at axppmic0: dcdc5
+axpreg14 at axppmic0: dcdc6
+axpreg15 at axppmic0: aldo1
+axpreg16 at axppmic0: aldo2
+axpreg17 at axppmic0: aldo3
+sun6idma0 at simplebus1: DMA controller (8 channels)
+sun6idma0: interrupting on GIC irq 82
+ausoc0 at simplebus0: SUN50I Audio Card
+a64acodec0 at simplebus1: A64 Audio Codec (analog part)
+sunxii2s0 at simplebus1: Audio Codec (digital part)
+sun8icodec0 at simplebus1: Audio Codec
+sun8icodec0: interrupting on GIC irq 60
+genfb0 at simplebus2: Simple Framebuffer (1920x1080 32-bpp @ 0xbe000000)
+genfb0: framebuffer at 0xbe000000, size 1920x1080, depth 32, stride 7680
+wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
+wsmux1: connecting to wsdisplay0
+wsdisplay0: screen 1-3 added (default, vt100 emulation)
+sunximmc0 at simplebus1: SD/MMC controller
+sunximmc0: interrupting on GIC irq 92
+sunximmc1 at simplebus1: SD/MMC controller
+sunximmc1: interrupting on GIC irq 93
+sunximmc2 at simplebus1: SD/MMC controller
+sunximmc2: interrupting on GIC irq 94
+motg0 at simplebus1: USB OTG
+motg0: interrupting on GIC irq 103
+usb0 at motg0: USB revision 2.0
+ehci0 at simplebus1: EHCI
+ehci0: interrupting on GIC irq 104
 ehci0: EHCI version 1.0
-ehci0: 3 companion controllers, 2 ports each: uhci0 uhci1 uhci2
-usb3 at ehci0: USB revision 2.0
-hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
-hdaudio0: interrupting at msi0 vec 0
-hdafg0 at hdaudio0: vendor 10ec product 0262
-hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
-hdafg0: ADC01 2ch: Mic In [Jack] [Built-In]
-hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
-audio0 at hdafg0: full duplex, playback, capture, mmap, independent
-hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-hdafg0: Latency: 128 milliseconds
+ehci0: 1 companion controller, 1 port
+usb1 at ehci0: USB revision 2.0
+ohci0 at simplebus1: OHCI
+ohci0: interrupting on GIC irq 105
+ohci0: OHCI version 1.0
+usb2 at ohci0: USB revision 1.0
+ehci1 at simplebus1: EHCI
+ehci1: interrupting on GIC irq 106
+ehci1: EHCI version 1.0
+ehci1: 1 companion controller, 1 port
+usb3 at ehci1: USB revision 2.0
+ohci1 at simplebus1: OHCI
+ohci1: interrupting on GIC irq 107
+ohci1: OHCI version 1.0
+usb4 at ohci1: USB revision 1.0
+sunxirtc0 at simplebus1: RTC
+sunxiwdt0 at simplebus1: Watchdog
+sunxiwdt0: default watchdog period is 16 seconds
+sunxithermal0 at simplebus1: Thermal sensor controller
+sunxithermal0: interrupting on GIC irq 63
+sunxithermal0: cpu: alarm 85C hyst 58C shut 106C
+sunxithermal0: gpu1: alarm 85C hyst 58C shut 106C
+sunxithermal0: gpu2: alarm 85C hyst 58C shut 106C
+pwmbacklight0 at simplebus0: PWM Backlight <0 10 20 30 40 50 60 70 80 90 100>
+psci0 at simplebus0: PSCI 0.2
+gpiokeys0 at simplebus0: Lid Switch
+ausoc0: codec: sun8icodec0, cpu: sunxii2s0, aux: a64acodec0
+audio0 at ausoc0: full duplex, playback, capture, mmap, independent
+ausoc0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
+ausoc0: Latency: 256 milliseconds
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
-hdafg1 at hdaudio0: vendor 8086 product 2802
-hdafg1: HDMI00 8ch: Digital Out [Jack]
-hdafg1: 8ch/0ch 48000Hz PCM16*
-ppb0 at pci0 dev 28 function 0: vendor 8086 product 2940 (rev. 0x03)
-ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
-pci1 at ppb0 bus 1
-pci1: i/o space, memory space enabled, rd/line, wr/inv ok
-mskc0 at pci1 dev 0 function 0, Yukon-2 Ultra 2 (0x0): ioapic0 pin 16
-msk0 at mskc0 port A: Ethernet address 00:24:be:38:e1:3c
-makphy0 at msk0 phy 0: Marvell 88E1149 Gigabit PHY, rev. 1
-makphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
-ppb1 at pci0 dev 28 function 1: vendor 8086 product 2942 (rev. 0x03)
-ppb1: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
-pci2 at ppb1 bus 2
-pci2: i/o space, memory space enabled, rd/line, wr/inv ok
-iwn0 at pci2 dev 0 function 0: vendor 8086 product 4232 (rev. 0x00)
-iwn0: interrupting at msi1 vec 0
-iwn0: MIMO 1T2R, MoW, address 00:22:fb:68:6a:8c
-iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-iwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-ppb2 at pci0 dev 28 function 2: vendor 8086 product 2944 (rev. 0x03)
-ppb2: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
-pci3 at ppb2 bus 3
-pci3: i/o space, memory space enabled, rd/line, wr/inv ok
-uhci3 at pci0 dev 29 function 0: vendor 8086 product 2934 (rev. 0x03)
-uhci3: interrupting at ioapic0 pin 23
-usb4 at uhci3: USB revision 1.0
-uhci4 at pci0 dev 29 function 1: vendor 8086 product 2935 (rev. 0x03)
-uhci4: interrupting at ioapic0 pin 19
-usb5 at uhci4: USB revision 1.0
-uhci5 at pci0 dev 29 function 2: vendor 8086 product 2936 (rev. 0x03)
-uhci5: interrupting at ioapic0 pin 18
-usb6 at uhci5: USB revision 1.0
-ehci1 at pci0 dev 29 function 7: vendor 8086 product 293a (rev. 0x03)
-ehci1: interrupting at ioapic0 pin 23
-ehci1: EHCI version 1.0
-ehci1: 3 companion controllers, 2 ports each: uhci3 uhci4 uhci5
-usb7 at ehci1: USB revision 2.0
-ppb3 at pci0 dev 30 function 0: vendor 8086 product 2448 (rev. 0x93)
-pci4 at ppb3 bus 11
-pci4: i/o space, memory space enabled
-fwohci0 at pci4 dev 3 function 0: vendor 1180 product 0832 (rev. 0x05)
-fwohci0: interrupting at ioapic0 pin 16
-fwohci0: OHCI version 1.0 (ROM=1)
-fwohci0: No. of Isochronous channels is 4.
-fwohci0: EUI64 08:00:46:03:03:05:42:dc
-fwohci0: Phy 1394a available S400, 1 ports.
-fwohci0: Link S400, max_rec 2048 bytes.
-ieee1394if0 at fwohci0: IEEE1394 bus
-fwip0 at ieee1394if0: IP over IEEE1394
-fwohci0: Initiate bus reset
-sdhc0 at pci4 dev 3 function 1: vendor 1180 product 0822 (rev. 0x22)
-sdhc0: interrupting at ioapic0 pin 17
-sdhc0: SDHC 1.0, rev 4, SDMA, 33000 kHz, HS 3.3V, 512 byte blocks
-sdmmc0 at sdhc0 slot 0
-vendor 1180 product 0592 (miscellaneous system, revision 0x12) at pci4 dev 3 function 2 not configured
-ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 2919 (rev. 0x03)
-timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
-ichlpcib0: 24-bit timer
-tco0 at ichlpcib0: TCO (watchdog) timer configured.
-tco0: Min/Max interval 1/367 seconds
-ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 2929 (rev. 0x03)
-ahcisata0: interrupting at ioapic0 pin 19
-ahcisata0: 64-bit DMA
-ahcisata0: AHCI revision 1.20, 4 ports, 32 slots, CAP 0xe720ffc3<EMS,CCCS,PSC,SSC,PMD,ISS=0x2=Gen2,SCLO,SAL,SALP,SSNTF,SNCQ,S64A>
-atabus0 at ahcisata0 channel 0
-atabus1 at ahcisata0 channel 1
-ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 2930 (rev. 0x03)
-ichsmb0: interrupting at ioapic0 pin 19
-iic0 at ichsmb0: I2C bus
-isa0 at ichlpcib0
-pcppi0 at isa0 port 0x61
-spkr1 at pcppi0: PC Speaker
-wsbell at spkr1 not configured
-midi0 at pcppi0: PC speaker
-sysbeep0 at pcppi0
-attimer1: attached to pcppi0
-acpicpu0 at cpu0: ACPI CPU
-acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
-acpicpu0: C2: FFH, lat  57 us, pow   100 mW
-acpicpu0: P0: FFH, lat  10 us, pow 35000 mW, 2534 MHz, turbo boost
-acpicpu0: P1: FFH, lat  10 us, pow 35000 mW, 2533 MHz
-acpicpu0: P2: FFH, lat  10 us, pow 15000 mW, 1600 MHz
-acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
-acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
-acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
-acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
-acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
-acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
-acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
-acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
-coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
-acpicpu1 at cpu1: ACPI CPU
-coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=100
-fwohci0: BUS reset
-fwohci0: node_id=0xc800ffc0, gen=1, CYCLEMASTER mode
-ieee1394if0: 1 nodes, maxhop <= 0 cable IRM irm(0) (me)
-ieee1394if0: bus manager 0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-IPsec: Initialized Security Association Processing.
-acpiacad0: AC adapter online.
-uhub0 at usb0: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb1: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb2: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub2: 2 ports with 2 removable, self powered
+cpu_boot_secondary_processors: writing mbox with 0xe
+cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu3: Dcache line 64, Icache line 64
+cpu3: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
+cpu3: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
+cpu3: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu3: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu3: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu2: Dcache line 64, Icache line 64
+cpu2: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
+cpu2: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
+cpu2: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu1: Dcache line 64, Icache line 64
+cpu1: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
+cpu1: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
+cpu1: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu_boot_secondary_processors: secondary processors hatched
+cpufreqdt0: 1152.000 MHz, 1300000 uV
+cpufreqdt0: 1104.000 MHz, 1260000 uV
+cpufreqdt0: 1008.000 MHz, 1200000 uV
+cpufreqdt0: 816.000 MHz, 1080000 uV
+cpufreqdt0: 648.000 MHz, 1040000 uV
+cpufreqdt0: 408.000 MHz, 1000000 uV
+sdmmc0 at sunximmc0
+sdmmc1 at sunximmc1
+sdmmc2 at sunximmc2
+uhub0 at usb0: NetBSD (0000) MOTG root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub0: 1 port with 1 removable, self powered
+uhub1 at usb2: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub1: 1 port with 1 removable, self powered
+uhub2 at usb1: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub2: 1 port with 1 removable, self powered
 uhub3 at usb3: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-uhub3: 6 ports with 6 removable, self powered
-uhub4 at usb4: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub4: 2 ports with 2 removable, self powered
-uhub5 at usb5: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub5: 2 ports with 2 removable, self powered
-uhub6 at usb6: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub6: 2 ports with 2 removable, self powered
-uhub7 at usb7: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-uhub7: 6 ports with 6 removable, self powered
-ahcisata0 port 0: device present, speed: 1.5Gb/s
-ahcisata0 port 1: device present, speed: 1.5Gb/s
-wd0 at atabus0 drive 0
-wd0: <TOSHIBA MK5055GSX>
-wd0: drive supports 16-sector PIO transfers, LBA48 addressing
-wd0: 465 GB, 969021 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
-wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100), WRITE DMA FUA, NCQ (32 tags)
-wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA), NCQ (31 tags)
-atapibus0 at atabus1: 1 targets
-cd0 at atapibus0 drive 0: <HL-DT-ST DVDRAM GT20N, 905HN033373, CS07> cdrom removable
-cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
-cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
-uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x4f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
-video0 at uvideo0: Chicony Electronics Co., Ltd. (0x4f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
-umass0 at uhub7 port 1 configuration 1 interface 0
-umass0: BUFFALO (0x411) USB Flash Disk (0x111), rev 2.00/1.00, addr 2
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <BUFFALO, USB Flash Disk, 3.10> disk removable
-sd0: 1912 MB, 479 cyl, 255 head, 32 sec, 512 bytes/sect x 3915776 sectors
-sd0: 946176 trailing sectors not covered by disklabel
-ehci0: handing over low speed device on port 3 to uhci1
-sd0: 946176 trailing sectors not covered by disklabel
-sd0: 946176 trailing sectors not covered by disklabel
-sd0: 946176 trailing sectors not covered by disklabel
-sd0: 946176 trailing sectors not covered by disklabel
-WARNING: 6 errors while detecting hardware; check system log.
-boot device: sd0
-root on sd0a dumps on sd0b
-sd0: 946176 trailing sectors not covered by disklabel
-root file system type: ffs
-kern.module.path=/stand/amd64/8.99.24/modules
-kern info: [drm] Memory usable by graphics device = 512M
-kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
-kern info: [drm] Driver supports precise vblank timestamp query.
-i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
-intelfb0 at i915drmkms0
-intelfb0: framebuffer at 0xffff9b00aebe3000, size 1366x768, depth 32, stride 5504
-wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
-wsmux1: connecting to wsdisplay0
-ugen0 at uhub1 port 1
-ugen0: Sony (0x54c) product 01bb (0x1bb), rev 2.00/1.28, addr 2
-acpibat0: normal capacity on 'charge state'
-syncing disks... 15 13 1 done
-unmounted tmpfs on /tmp type tmpfs
-cd0: detached
-sysbeep0: detached
-midi0: detached
-makphy0: detached
-msk0: detached
-atapibus0: detached
-wd0: detached
-uhub6: detached
-uhub5: detached
-uhub4: detached
-uhub2: detached
-uhub0: detached
-mskc0: detached
-spkr0: detached
-audio0: detached
-atabus1: detached
-atabus0: detached
-usb6: detached
-usb5: detached
-usb4: detached
-pci3: detached
-pci1: detached
-usb2: detached
-usb0: detached
-uhci5: detached
-uhci4: detached
-uhci3: detached
-ppb2: detached
-ppb0: detached
-uhci2: detached
-uhci0: detached
-attimer1: detached
-forcefully unmounted /dev/sd0a on / type ffs
-sd0: detached
-scsibus0: detached
-rebooting...
-Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-2018 The NetBSD Foundation, Inc.  All rights reserved.
-Copyright (c) 1982, 1986, 1989, 1991, 1993
-The Regents of the University of California.  All rights reserved.
-
-NetBSD 8.99.24 (GENERIC) #0: Fri Aug 31 18:44:04 UTC 2018
-	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
-total memory = 8031 MB
-avail memory = 7773 MB
-rnd: seeded with 128 bits
-timecounter: Timecounters tick every 10.000 msec
-Kernelized RAIDframe activated
-running cgd selftest aes-xts-256 aes-xts-512 done
-timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
-Sony Corporation VGN-NW50JB (C601JRZY)
-mainbus0 (root)
-ACPI: RSDP 0x00000000000F03B0 000024 (v02 Sony  )
-ACPI: XSDT 0x00000000B5F12F10 00005C (v01 Sony   VAIO     20090522 MSFT 00010013)
-ACPI: FACP 0x00000000B5F07A90 0000F4 (v04 Sony   VAIO     20090522 MSFT 00010013)
-ACPI: DSDT 0x00000000B5F09010 007B23 (v01 Sony   VAIO     20090522 INTL 20051117)
-ACPI: FACS 0x00000000B5F19E40 000040
-ACPI: FACS 0x00000000B5F19D40 000040
-ACPI: APIC 0x00000000B5F11F10 00006C (v02 Sony   VAIO     20090522 MSFT 00010013)
-ACPI: MCFG 0x00000000B5F18C90 00003C (v01 Sony   VAIO     20090522 MSFT 00000097)
-ACPI: HPET 0x00000000B5F18C10 000038 (v01 Sony   VAIO     20090522 MSFT 00010013)
-ACPI: SLIC 0x00000000B5F14C10 000176 (v01 Sony   VAIO     20090522 Sony 01000000)
-ACPI: SSDT 0x00000000B5EDF590 000505 (v01 Sony   VAIO     20090522 INTL 20051117)
-ACPI: SSDT 0x00000000B5EC8C10 0002E4 (v01 Sony   VAIO     20090522 INTL 20051117)
-ACPI: 3 ACPI AML tables successfully acquired and loaded
-ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x20, 24 pins
-cpu0 at mainbus0 apid 0
-cpu0: Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz, id 0x1067a
-cpu0: package 0, core 0, smt 0
-cpu1 at mainbus0 apid 1
-cpu1: Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz, id 0x1067a
-cpu1: package 0, core 1, smt 0
-acpi0 at mainbus0: Intel ACPICA 20180810
-acpi0: X/RSDT: OemId <  Sony,    VAIO,20090522>, AslId <MSFT,00010013>
-acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
-ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8BCB87129050 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
-ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8BCA578A6010 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
-ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8BCA57879390 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
-ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8BCA579EBCB0 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
-acpi0: SCI interrupting at int 9
-timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
-hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
-timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
-acpiec0 at acpi0 (EC, PNP0C09): io 0x62,0x66
-FWHD (INT0800) at acpi0 not configured
-LDRC (PNP0C02) at acpi0 not configured
-attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
-pckbc1 at acpi0 (PS2K, PNP0303) (kbd port): io 0x60,0x64 irq 1
-pckbc2 at acpi0 (PS2M, SNY9001) (aux port): irq 12
-sony0 at acpi0 (SNC, SNY5001): Sony Miscellaneous Controller
-ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20180810/nsarguments-278)
-ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20180810/nsarguments-278)
-ACPI Error: Method parse/execution failed \PHS0, AE_AML_LOOP_TIMEOUT (20180810/psparse-569)
-ACPI Error: Method parse/execution failed \PHS, AE_AML_LOOP_TIMEOUT (20180810/psparse-569)
-ACPI Error: Method parse/execution failed \_SB.PCI0.LPCB.SNC.GDDI, AE_AML_LOOP_TIMEOUT (20180810/psparse-569)
-acpivga0 at acpi0 (GFX0): ACPI Display Adapter
-acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
-acpiout1 at acpivga0 (DD02, 0x0410): ACPI Display Output Device
-acpiout1: brightness levels: [4,16,28,40,52,64,76,88,100]
-acpiout2 at acpivga0 (DD03, 0x0200): ACPI Display Output Device
-acpiout3 at acpivga0 (DD04, 0x0004): ACPI Display Output Device
-acpiout4 at acpivga0 (DD05, 0x0005): ACPI Display Output Device
-acpivga0: autoconfiguration error: unknown output device acpiout0
-acpivga0: autoconfiguration error: unknown output device acpiout1
-acpivga0: autoconfiguration error: unknown output device acpiout2
-acpivga0: autoconfiguration error: unknown output device acpiout3
-acpivga0: autoconfiguration error: unknown output device acpiout4
-acpivga0: connected output devices:
-acpivga0:   0x0400: Unknown Output Device, head 0
-PDRC (PNP0C02) at acpi0 not configured
-acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
-acpiacad0 at acpi0 (ADP1, ACPI0003): ACPI AC Adapter
-acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
-acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
-acpitz0 at acpi0 (TZ00)
-acpitz0: levels: critical 127.0 C, passive cooling
-acpitz1 at acpi0 (TZ01): cpu0 cpu1
-acpitz1: levels: critical 110.0 C, passive 104.0 C, passive cooling
-ACPI: Enabled 2 GPEs in block 00 to 3F
-pckbd0 at pckbc1 (kbd slot)
-pckbc1: using irq 1 for kbd slot
-wskbd0 at pckbd0: console keyboard
-pms0 at pckbc1 (aux slot)
-pms0: autoconfiguration error: Failed to initialize an ALPS device.
-pckbc1: using irq 12 for aux slot
-wsmouse0 at pms0 mux 0
-pci0 at mainbus0 bus 0: configuration mode 1
-pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
-pchb0 at pci0 dev 0 function 0: vendor 8086 product 2a40 (rev. 0x07)
-agp0 at pchb0: G4X-family chipset
-agp0: detected 130556k stolen memory
-agp0: aperture at 0xc0000000, size 0x10000000
-i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 2a42 (rev. 0x07)
-vendor 8086 product 2a43 (miscellaneous display, revision 0x07) at pci0 dev 2 function 1 not configured
-uhci0 at pci0 dev 26 function 0: vendor 8086 product 2937 (rev. 0x03)
-uhci0: interrupting at ioapic0 pin 16
-usb0 at uhci0: USB revision 1.0
-uhci1 at pci0 dev 26 function 1: vendor 8086 product 2938 (rev. 0x03)
-uhci1: interrupting at ioapic0 pin 21
-usb1 at uhci1: USB revision 1.0
-uhci2 at pci0 dev 26 function 2: vendor 8086 product 2939 (rev. 0x03)
-uhci2: interrupting at ioapic0 pin 19
-usb2 at uhci2: USB revision 1.0
-ehci0 at pci0 dev 26 function 7: vendor 8086 product 293c (rev. 0x03)
-ehci0: interrupting at ioapic0 pin 19
-ehci0: EHCI version 1.0
-ehci0: 3 companion controllers, 2 ports each: uhci0 uhci1 uhci2
-usb3 at ehci0: USB revision 2.0
-hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
-hdaudio0: interrupting at msi0 vec 0
-hdafg0 at hdaudio0: vendor 10ec product 0262
-hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
-hdafg0: ADC01 2ch: Mic In [Jack] [Built-In]
-hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
-audio0 at hdafg0: full duplex, playback, capture, mmap, independent
-hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-hdafg0: Latency: 128 milliseconds
-spkr0 at audio0: PC Speaker (synthesized)
-wsbell at spkr0 not configured
-hdafg1 at hdaudio0: vendor 8086 product 2802
-hdafg1: HDMI00 8ch: Digital Out [Jack]
-hdafg1: 8ch/0ch 48000Hz PCM16*
-ppb0 at pci0 dev 28 function 0: vendor 8086 product 2940 (rev. 0x03)
-ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
-pci1 at ppb0 bus 1
-pci1: i/o space, memory space enabled, rd/line, wr/inv ok
-mskc0 at pci1 dev 0 function 0, Yukon-2 Ultra 2 (0x0): ioapic0 pin 16
-msk0 at mskc0 port A: Ethernet address 00:24:be:38:e1:3c
-makphy0 at msk0 phy 0: Marvell 88E1149 Gigabit PHY, rev. 1
-makphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
-ppb1 at pci0 dev 28 function 1: vendor 8086 product 2942 (rev. 0x03)
-ppb1: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
-pci2 at ppb1 bus 2
-pci2: i/o space, memory space enabled, rd/line, wr/inv ok
-iwn0 at pci2 dev 0 function 0: vendor 8086 product 4232 (rev. 0x00)
-iwn0: interrupting at msi1 vec 0
-iwn0: MIMO 1T2R, MoW, address 00:22:fb:68:6a:8c
-iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-iwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-ppb2 at pci0 dev 28 function 2: vendor 8086 product 2944 (rev. 0x03)
-ppb2: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
-pci3 at ppb2 bus 3
-pci3: i/o space, memory space enabled, rd/line, wr/inv ok
-uhci3 at pci0 dev 29 function 0: vendor 8086 product 2934 (rev. 0x03)
-uhci3: interrupting at ioapic0 pin 23
-usb4 at uhci3: USB revision 1.0
-uhci4 at pci0 dev 29 function 1: vendor 8086 product 2935 (rev. 0x03)
-uhci4: interrupting at ioapic0 pin 19
-usb5 at uhci4: USB revision 1.0
-uhci5 at pci0 dev 29 function 2: vendor 8086 product 2936 (rev. 0x03)
-uhci5: interrupting at ioapic0 pin 18
-usb6 at uhci5: USB revision 1.0
-ehci1 at pci0 dev 29 function 7: vendor 8086 product 293a (rev. 0x03)
-ehci1: interrupting at ioapic0 pin 23
-ehci1: EHCI version 1.0
-ehci1: 3 companion controllers, 2 ports each: uhci3 uhci4 uhci5
-usb7 at ehci1: USB revision 2.0
-ppb3 at pci0 dev 30 function 0: vendor 8086 product 2448 (rev. 0x93)
-pci4 at ppb3 bus 11
-pci4: i/o space, memory space enabled
-fwohci0 at pci4 dev 3 function 0: vendor 1180 product 0832 (rev. 0x05)
-fwohci0: interrupting at ioapic0 pin 16
-fwohci0: OHCI version 1.0 (ROM=1)
-fwohci0: No. of Isochronous channels is 4.
-fwohci0: EUI64 08:00:46:03:03:05:42:dc
-fwohci0: Phy 1394a available S400, 1 ports.
-fwohci0: Link S400, max_rec 2048 bytes.
-ieee1394if0 at fwohci0: IEEE1394 bus
-fwip0 at ieee1394if0: IP over IEEE1394
-fwohci0: Initiate bus reset
-sdhc0 at pci4 dev 3 function 1: vendor 1180 product 0822 (rev. 0x22)
-sdhc0: interrupting at ioapic0 pin 17
-sdhc0: SDHC 1.0, rev 4, SDMA, 33000 kHz, HS 3.3V, 512 byte blocks
-sdmmc0 at sdhc0 slot 0
-vendor 1180 product 0592 (miscellaneous system, revision 0x12) at pci4 dev 3 function 2 not configured
-ichlpcib0 at pci0 dev 31 function 0: vendor 8086 product 2919 (rev. 0x03)
-timecounter: Timecounter "ichlpcib0" frequency 3579545 Hz quality 1000
-ichlpcib0: 24-bit timer
-tco0 at ichlpcib0: TCO (watchdog) timer configured.
-tco0: Min/Max interval 1/367 seconds
-ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 2929 (rev. 0x03)
-ahcisata0: interrupting at ioapic0 pin 19
-ahcisata0: 64-bit DMA
-ahcisata0: AHCI revision 1.20, 4 ports, 32 slots, CAP 0xe720ffc3<EMS,CCCS,PSC,SSC,PMD,ISS=0x2=Gen2,SCLO,SAL,SALP,SSNTF,SNCQ,S64A>
-atabus0 at ahcisata0 channel 0
-atabus1 at ahcisata0 channel 1
-ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 2930 (rev. 0x03)
-ichsmb0: interrupting at ioapic0 pin 19
-iic0 at ichsmb0: I2C bus
-isa0 at ichlpcib0
-pcppi0 at isa0 port 0x61
-spkr1 at pcppi0: PC Speaker
-wsbell at spkr1 not configured
-midi0 at pcppi0: PC speaker
-sysbeep0 at pcppi0
-attimer1: attached to pcppi0
-acpicpu0 at cpu0: ACPI CPU
-acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
-acpicpu0: C2: FFH, lat  57 us, pow   100 mW
-acpicpu0: P0: FFH, lat  10 us, pow 35000 mW, 2534 MHz, turbo boost
-acpicpu0: P1: FFH, lat  10 us, pow 35000 mW, 2533 MHz
-acpicpu0: P2: FFH, lat  10 us, pow 15000 mW, 1600 MHz
-acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
-acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
-acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
-acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
-acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
-acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
-acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
-acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
-coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
-acpicpu1 at cpu1: ACPI CPU
-coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=100
-fwohci0: BUS reset
-fwohci0: node_id=0xc800ffc0, gen=1, CYCLEMASTER mode
-ieee1394if0: 1 nodes, maxhop <= 0 cable IRM irm(0) (me)
-ieee1394if0: bus manager 0
-timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+uhub3: 1 port with 1 removable, self powered
+uhub4 at usb4: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub4: 1 port with 1 removable, self powered
+ld2 at sdmmc2: <0x15:0x0100:AJTD4R:0x00:0x5340fabd:0x000>
+ld2: 14910 MB, 7573 cyl, 64 head, 63 sec, 512 bytes/sect x 30535680 sectors
+ld2: 8-bit width, HS200, 64 MB cache, 200.000 MHz
+(manufacturer 0x24c, product 0xb703, standard function interface code 0x7) at sdmmc1 function 1 not configured
+Lid Switch: lid opened.
+Kernel RNG "kernel" long run test FAILURE: Run of 26 0s found
+cprng kernel: failed statistical RNG test
 IPsec: Initialized Security Association Processing.
-acpiacad0: AC adapter online.
-uhub0 at usb0: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb1: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb2: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub2: 2 ports with 2 removable, self powered
-uhub3 at usb3: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-uhub3: 6 ports with 6 removable, self powered
-uhub4 at usb4: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub4: 2 ports with 2 removable, self powered
-uhub5 at usb5: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub5: 2 ports with 2 removable, self powered
-uhub6 at usb6: NetBSD (0000) UHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
-uhub6: 2 ports with 2 removable, self powered
-uhub7 at usb7: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-uhub7: 6 ports with 6 removable, self powered
-ahcisata0 port 0: device present, speed: 1.5Gb/s
-ahcisata0 port 1: device present, speed: 1.5Gb/s
-wd0 at atabus0 drive 0
-wd0: <TOSHIBA MK5055GSX>
-wd0: drive supports 16-sector PIO transfers, LBA48 addressing
-wd0: 465 GB, 969021 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
-wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100), WRITE DMA FUA, NCQ (32 tags)
-wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA), NCQ (31 tags)
-atapibus0 at atabus1: 1 targets
-cd0 at atapibus0 drive 0: <HL-DT-ST DVDRAM GT20N, 905HN033373, CS07> cdrom removable
-cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
-cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
-uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x4f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
-video0 at uvideo0: Chicony Electronics Co., Ltd. (0x4f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
-ehci0: handing over low speed device on port 3 to uhci1
-WARNING: 6 errors while detecting hardware; check system log.
-boot device: wd0
-root on wd0a dumps on wd0b
+uhub5 at uhub3 port 1: vendor 05e3 (0x5e3) USB2.0 Hub (0x608), class 9/0, rev 2.00/88.32, addr 2
+uhub5: single transaction translator
+uhub5: 4 ports with 1 removable, self powered
+uhidev0 at uhub5 port 1 configuration 1 interface 0
+uhidev0: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x0c), rev 1.10/1.00, addr 3, iclass 3/1
+ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub5 port 1 configuration 1 interface 1
+uhidev1: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x0c), rev 1.10/1.00, addr 3, iclass 3/0
+uhidev1: 9 report ids
+ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
+uhid0 at uhidev1 reportid 2: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 3: input=3, output=0, feature=0
+uhid2 at uhidev1 reportid 5: input=0, output=0, feature=5
+uhid3 at uhidev1 reportid 6: input=0, output=0, feature=1039
+uhid4 at uhidev1 reportid 9: input=1, output=0, feature=0
+axe0 at uhub5 port 2
+axe0: vendor 0b95 (0xb95) product 7720 (0x7720), rev 2.00/0.01, addr 4
+axe0: Ethernet address 00:90:cc:e8:0d:06
+ukphy0 at axe0 phy 16: OUI 0x007063, model 0x0001, rev. 1
+ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+uvideo0 at uhub5 port 3 configuration 1 interface 0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 5
+video0 at uvideo0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 5
+boot device: ld2
+root on ld2a dumps on ld2b
+mountroot: trying ext2fs...
+mountroot: trying ffs...
 root file system type: ffs
-kern.module.path=/stand/amd64/8.99.24/modules
-kern info: [drm] Memory usable by graphics device = 512M
-kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
-kern info: [drm] Driver supports precise vblank timestamp query.
-i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
-intelfb0 at i915drmkms0
-intelfb0: framebuffer at 0xffff9f00aebdc000, size 1366x768, depth 32, stride 5504
-wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
-wsmux1: connecting to wsdisplay0
-ugen0 at uhub1 port 1
-ugen0: Sony (0x54c) product 01bb (0x1bb), rev 2.00/1.28, addr 2
-wsdisplay0: screen 1 added (default, vt100 emulation)
-wsdisplay0: screen 2 added (default, vt100 emulation)
-wsdisplay0: screen 3 added (default, vt100 emulation)
+kern.module.path=/stand/evbarm/8.99.27/modules
+init: copying out path `/sbin/init' 11
+axe0: link state UP (was UNKNOWN)
 wsdisplay0: screen 4 added (default, vt100 emulation)
-acpibat0: normal capacity on 'charge state'
+axppmic0: state changed on 'charge state' to 'WARNING'
+axppmic0: normal capacity on 'charge state'
