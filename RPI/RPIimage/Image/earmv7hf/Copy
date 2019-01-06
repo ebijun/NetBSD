@@ -1,0 +1,22 @@
+DEVICE=rsd0d
+
+BOARD=armv7-earmv7hf
+
+#COMPRESS=-z
+#SUFFIX=.gz
+
+DATE=`date +%Y-%m-%d`
+#DATE=2018-12-02
+
+#as usual
+progress $COMPRESS -f ${DATE}-netbsd-${BOARD}.img${SUFFIX} dd of=/dev/${DEVICE} bs=4m
+
+#rpi.img.gz
+#make cdmount
+#progress -z -f /mnt1/evbarm/binary/gzimg/rpi.img.gz dd of=/dev/${DEVICE} bs=4m
+#make cdunmount
+
+#armv7.img.gz
+#make -f Makefile.RPI2 cdmount
+#progress -z -f /mnt1/evbarm/binary/gzimg/armv7.img.gz dd of=/dev/${DEVICE} bs=4m
+#make -f Makefile.RPI2 cdunmount

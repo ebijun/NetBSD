@@ -1,15 +1,14 @@
 # Makefile for RPI image.
 
 ARCH=earmv7hf
-#ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2018-10-06/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-01-26/
 
 # iso file information
 
 IMAGE=/usr/release/images/NetBSD-8.99.28-evbarm-${ARCH}-201812231320Z.iso
 
-PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
+PKGSRC=../../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 ###
 
@@ -119,7 +118,7 @@ pkg-back:
 	vnconfig ${VND} ${FILE}
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	cp ../etc/rc.conf ${MNT}/etc/rc.conf
+	cp ../../etc/rc.conf ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -129,9 +128,8 @@ release:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
-	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
-#	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
-	(cd ../boot;cp * ${MNT}/boot)
+	(cd ../..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
+	(cd ../../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	umount ${MNT}/boot
 	umount ${MNT}
@@ -222,6 +220,6 @@ mikutter-key:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	patch -d ${MNT}/root/.mikutter/plugin/twitter_api_keys < mikutter/twitter_api_keys.rb.patch
+	patch -d ${MNT}/root/.mikutter/plugin/twitter_api_keys < ../mikutter/twitter_api_keys.rb.patch
 	umount ${MNT}
 	vnconfig -u ${VND}
