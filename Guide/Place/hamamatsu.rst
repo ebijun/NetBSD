@@ -85,7 +85,9 @@ OSC浜名湖まとめ
  チューブアンプクラブ豊橋,豊橋,http://www.geocities.jp/tactoyohashi/concert2.htm　
  トーチカ,二川,http://www.k4.dion.ne.jp/~entaigou/toyohashi.html
  タケウチ電子,豊橋駅前,みんなこの無線屋に通ってNetBSD開発者になった
- 
+ ままごとキッチンtonton,安松町,ヤマダネコグッズとは何か。
+ 麦酒屋,板屋町,7タップ
+ オクタゴンブルーイング, 田町,10タップ。18:00-
  
 OSC浜名湖主な展示物
 ~~~~~~~~~~~~~~~~~
