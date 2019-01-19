@@ -1,0 +1,32 @@
+./Status
+To: port-arm%netbsd.org@localhost
+Subject: pinebook status update (20190120)
+
+ToDo:
+- USB Wifi: check wpa_supplicant
+- xfwm4: "could not find screen to manage".in startxfce4
+  check xfce4-session again
+- firefox52: unstable 
+ https://twitter.com/ebijun/status/1086487791104450563
+- mikutter: crush in startup tutorial
+ https://twitter.com/ebijun/status/1086488794583392257
+- deforaos-camera: camera capture,and reboot
+- mate uim inkscape scribus gedit sphinx seamonkey evince
+
+Version: 
+ NetBSD 8.99.30 (GENERIC64) #0: Sat Jan 12 10:44:36 UTC 2019  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+
+System image: dd to eMMC.
+ http://www.invisible.ca/arm/
+
+sysinfo:
+ https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/sysinfo
+
+pkginfo:
+ https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkginfo
+
+packages:
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2018-12-08/
+
+--
+Jun Ebihara
