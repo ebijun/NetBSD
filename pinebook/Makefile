@@ -3,7 +3,7 @@ DIR=tmp`date +%Y%m%d`
 all: check diff
 
 status:
-	./Status 
+	@./Status 
 
 check:
 	echo ${DIR}
