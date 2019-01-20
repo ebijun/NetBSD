@@ -1,0 +1,54 @@
+DATE=`date +%Y%m%d`
+
+cat << EOF
+To: port-arm%netbsd.org@localhost
+Subject: pinebook status update (${DATE})
+
+Update:
+- mate: almost works pkgsrc/meta-pkgs/mate
+ https://twitter.com/ebijun/status/1086814579647102976
+ pkg_add mate
+ echo "mate-session" >> .xinitrc
+ startx
+- uim:
+ pkgsrc/devel/libgcroots needs aarch64 ifdefs
+
+ToDo:
+- USB Wifi: check wpa_supplicant
+- xfwm4: "could not find screen to manage".in startxfce4
+  check xfce4-session again
+- firefox52: unstable 
+ https://twitter.com/ebijun/status/1086487791104450563
+ PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
+ "Go to about:config and make sure 
+    browser.tabs.remote.autostart=false
+and browser.tabs.remote.autostart.2=false"
+ 
+- mikutter: crush in startup tutorial
+ https://twitter.com/ebijun/status/1086488794583392257
+- deforaos-camera: camera capture,and reboot
+- gimp: causes system reboot in startup
+- inkscape:
+- scribus gedit sphinx seamonkey evince
+
+Version: 
+ `uname -v`
+
+dmesg:
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
+
+System image: dd to eMMC.
+ http://www.invisible.ca/arm/
+
+sysinfo:
+ https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/sysinfo
+
+pkginfo:
+ https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkginfo
+
+packages:
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2018-12-08/
+
+--
+Jun Ebihara
+EOF
