@@ -1,6 +1,15 @@
-./Status
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190120)
+Subject: pinebook status update (20190121)
+
+Update:
+- mate: almost works pkgsrc/meta-pkgs/mate
+ https://twitter.com/ebijun/status/1086814579647102976
+ pkg_add mate
+ echo "mate-session" >> .xinitrc
+ startx
+- uim:
+ pkgsrc/devel/libgcroots needs aarch64 ifdefs
+- inkscape:works well
 
 ToDo:
 - USB Wifi: check wpa_supplicant
@@ -8,13 +17,24 @@ ToDo:
   check xfce4-session again
 - firefox52: unstable 
  https://twitter.com/ebijun/status/1086487791104450563
+ PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
+ "Go to about:config and make sure 
+    browser.tabs.remote.autostart=false
+and browser.tabs.remote.autostart.2=false"
+    general.useragent.local=ja if you want it.
+ 
 - mikutter: crush in startup tutorial
  https://twitter.com/ebijun/status/1086488794583392257
 - deforaos-camera: camera capture,and reboot
-- mate uim inkscape scribus gedit sphinx seamonkey evince
+- gimp: causes system reboot in startup
+- inkscape:
+- scribus gedit sphinx seamonkey evince
 
 Version: 
  NetBSD 8.99.30 (GENERIC64) #0: Sat Jan 12 10:44:36 UTC 2019  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+
+dmesg:
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
 
 System image: dd to eMMC.
  http://www.invisible.ca/arm/
