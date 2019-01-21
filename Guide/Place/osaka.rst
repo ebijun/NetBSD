@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,6 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
+ 関西オープンソース2018 NetBSDブース展示の記録,https://togetter.com/li/
  オープンソースカンファレンス2018大阪展示の記録,https://togetter.com/li/1193730
  関西オープンソース2017 NetBSDブース展示の記録,https://togetter.com/li/1170068
  オープンソースカンファレンス2017大阪展示の記録,https://togetter.com/li/1075115
