@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190121)
+Subject: pinebook status update (20190122)
 
 Update:
 - mate: almost works pkgsrc/meta-pkgs/mate
@@ -7,31 +7,33 @@ Update:
  pkg_add mate
  echo "mate-session" >> .xinitrc
  startx
-- uim:
- pkgsrc/devel/libgcroots needs aarch64 ifdefs
 - inkscape:works well
-
-ToDo:
-- USB Wifi: check wpa_supplicant
-- xfwm4: "could not find screen to manage".in startxfce4
-  check xfce4-session again
 - firefox52: unstable 
  https://twitter.com/ebijun/status/1086487791104450563
  PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
- "Go to about:config and make sure 
+ "Go to about:config and make sure disable Multi Process 
     browser.tabs.remote.autostart=false
 and browser.tabs.remote.autostart.2=false"
+    check about:support .
     general.useragent.local=ja if you want it.
- 
+- deforaos-camera: camera capture,and reboot
+ apply: http://mail-index.netbsd.org/port-arm/2019/01/21/msg005392.html
+ https://twitter.com/ebijun/status/1087694456936001536
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/pinebook/netbsd
+
+ToDo:
+- USB Wifi: check wpa_supplicant
+- uim:
+ pkgsrc/devel/libgcroots needs aarch64 ifdefs
+- xfwm4: "could not find screen to manage".in startxfce4
+  check xfce4-session again
 - mikutter: crush in startup tutorial
  https://twitter.com/ebijun/status/1086488794583392257
-- deforaos-camera: camera capture,and reboot
 - gimp: causes system reboot in startup
-- inkscape:
 - scribus gedit sphinx seamonkey evince
 
 Version: 
- NetBSD 8.99.30 (GENERIC64) #0: Sat Jan 12 10:44:36 UTC 2019  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 8.99.30 (GENERIC64.2019-01-21 20:00 JST) #6: Tue Jan 22 21:38:33 JST 2019  jun@force.soum.co.jp:/prj/prj09/NetBSD/Build/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook

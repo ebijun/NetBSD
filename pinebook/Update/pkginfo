@@ -7,15 +7,18 @@ SDL_mixer-1.2.12nb6 Multi-channel audio mixer library
 SDL_ttf-2.0.11nb4   Use TrueType fonts in your SDL applications
 a2ps-4.14nb11       Formats an ascii file for printing on a postscript printer
 anthy-9100h         Kana Kanji conversion system
+anthy-elisp-9100hnb5 Emacs lisp files for inputmethod/anthy
 ap24-php71-7.1.26nb2 Apache (apache24) module for PHP7.1
 apache-2.4.37nb1    Apache HTTP (Web) server, version 2.4
 apr-1.6.5           Apache Portable Runtime
 apr-util-1.6.1nb4   Apache Portable Runtime utilities
 arandr-0.1.9nb6     Designed to provide a simple visual front end for XRandR
 asciidoc-8.6.10     ASCII to formatted document converter
+aspell-0.60.6.1nb8  Spell checker with good multi-language support
 at-spi2-atk-2.26.1nb1 Assistive Technology Service Provider Interface A11y Toolkit
 at-spi2-core-2.26.2nb1 Assistive Technology Service Provider Interface Core
 atk-2.26.1          Set of interfaces for accessibility
+atkmm-2.24.2nb5     C++ bindings for atk
 atril-1.21.1        Simple multi-page document viewer for the MATE environment
 autoconf-2.69nb8    Generates automatic source code configuration scripts
 autoconf213-2.13nb7 Generates automatic source code configuration scripts (old version)
@@ -31,6 +34,7 @@ boost-libs-1.69.0   Free, peer-reviewed portable C++ source libraries (binary li
 bsdtar-3.3.2        Fast multi-format tape archiver
 cairo-1.16.0        Vector graphics library with cross-device output support
 cairo-gobject-1.16.0nb3 Vector graphics library with cross-device output support
+cairomm-1.12.2nb3   C++ API for cairo
 caja-1.21.3         File manager for the MATE desktop
 caja-dropbox-1.20.0 Dropbox Caja extension
 caja-extensions-1.21.0 Set of extensions for Caja
@@ -38,6 +42,7 @@ cdparanoia-3.0.10.2nb4 CDDA reading utility with extra data verification feature
 cmake-3.13.3        Cross platform make
 compface-1.5.2nb7   48x48x1 image compression and decompression (X-face utility)
 consolekit-1.2.1nb2 Framework for defining and tracking users, login sessions, and seats
+cppunit-1.14.0      C++ unit testing framework
 curl-7.63.0nb1      Client that groks URLs
 cwrappers-20180325  pkgsrc compiler wrappers
 dbus-1.12.12        Message bus system
@@ -126,6 +131,7 @@ gpgme-1.12.0        GnuPG Made Easy
 graphviz-2.40.1nb30 Graph Drawing Programs from AT&T Research and Lucent Bell Labs
 gsed-4.6            GNU implementation of sed, the POSIX stream editor
 gsettings-desktop-schemas-3.24.0 Collection of GSettings schemas for the GNOME desktop
+gsl-2.5             The GNU Scientific Library
 gssdp-1.0.2nb9      Simple Service Discovery Protocol library and device sniffer
 gst-plugins0.10-base-0.10.36nb11 Open source multimedia framework - Base plugins
 gst-plugins0.10-good-0.10.31nb4 Open source multimedia framework - Good plugins
@@ -139,7 +145,10 @@ gstreamer0.10-0.10.36nb10 Open source multimedia framework
 gstreamer1-1.14.4   Open source multimedia framework
 gtar-base-1.31      The GNU tape archiver with remote magnetic tape support
 gtk2+-2.24.32nb7    GIMP Toolkit v2 - libraries for building X11 user interfaces
+gtk2-engines-2.20.2nb25 Theme engines for GTK+ version 2
+gtk2-engines-murrine-0.98.2nb8 GTK2+ engine featuring a modern glassy look
 gtk3+-3.24.3        GIMP Toolkit v3 - libraries for building X11 user interfaces
+gtkmm-2.24.5nb7     C++ interface to Gtk+ v2
 gtksourceview3-3.24.9 Text widget that extends GTK3's GtkTextView widget (v3)
 gtkspell-2.0.16nb29 Spell checking GtkTextView widget (v2)
 gts-0.7.6           GNU Triangulated Surface Library
@@ -161,6 +170,7 @@ icu-63.1nb1         Robust and full-featured Unicode services
 ilmbase-2.3.0       High dynamic-range (HDR) image file format library and tools
 imake-1.0.7nb4      Imake and other utilities from modular X.org
 imlib2-1.5.1        Image manipulation library
+inkscape-0.92.3     Scalable Vector Graphics (SVG) editor
 intltool-0.51.0nb3  Internationalization Tool Collection
 iso-codes-3.77      List of country, language and currency names
 itstool-2.0.5       ITS Tool allows you to translate XML documents with PO files
@@ -188,6 +198,7 @@ libaudiofile-0.3.6nb1 Sound library for SGI audio file
 libbluray-1.0.2nb1  Library for Blu-Ray Discs playback for media players
 libcanberra-0.30    Desktop event sound library
 libcares-1.15.0     Asynchronous resolver library, c-ares
+libcdr-0.1.4nb8     Corel Draw file format importer library
 libcfg+-0.7.0       Command line and configuration file parsing library
 libcroco-0.6.8      Toolkit to parse and manipulate CSS (Cascading Style Sheets)
 libdaemon-0.14nb1   C library that eases the writing of UNIX daemons
@@ -234,6 +245,7 @@ libpeas-1.20.0nb5   GObject-based plugins engine
 libproxy-0.4.15     Library that provides automatic proxy configuration management
 libpsl-0.20.2nb2    Library to handle the Public Suffix List
 libpurple-2.13.0nb4 Multi-protocol Instant Messaging client backend
+librevenge-0.0.4nb8 Base library for writing document import filters
 librsvg-2.40.20nb4  SVG library for GNOME
 libsamplerate-0.1.9 Sample rate converter library
 libsecret-0.18.6    GObject based library for accessing the Secret Service API
@@ -252,6 +264,7 @@ libuuid-2.32.1      Generate unique identifiers for objects
 libuv-1.24.1        Cross-platform asychronous I/O
 libv4l-0.4.3nb3     Video4Linux userspace library
 libva-2.3.0         Video Acceleration API
+libvisio-0.1.6nb9   Library and tools for parsing the visio file format
 libvolume_id-0.81.1nb1 Library to provide file system type information
 libvorbis-1.3.6nb1  Library for the Ogg Vorbis audio encoding format
 libvpx-1.7.0nb1     On2 VP8 library from Google
@@ -259,6 +272,8 @@ libwebp-1.0.1       WebP image format library and tools
 libwmf-0.2.8.4nb16  Library for reading and converting WMF (Windows Meta Files)
 libwnck-2.30.6nb25  Library to write pagers and tasklists
 libwnck3-3.24.1nb5  Library to write pagers and tasklists
+libwpd-0.10.1nb8    Library for importing and exporting WordPerfect(tm) documents
+libwpg-0.3.1nb10    Library for importing and converting Corel WordPerfect Graphics images
 libxdg-basedir-1.1.1nb1 XDG Base Directory library
 libxfce4gui-4.10.0nb10 Xfce widget library
 libxfce4ui-4.13.4nb3 Xfce widget library
@@ -299,8 +314,11 @@ mate-screensaver-1.21.0 Screen saver and locker for the MATE desktop
 mate-sensors-applet-1.21.1 MATE Sensors applets
 mate-session-manager-1.21.0 MATE session manager
 mate-settings-daemon-1.21.2 MATE settings daemon
+mate-terminal-1.21.1 MATE terminal emulator application
+mate-themes-3.22.18 Icons and themes for MATE desktop
 medit-1.2.0nb9      Programming and around-programming text editor
 mlterm-3.8.7nb2     Multilingual terminal emulator
+mm-common-0.9.12    Provides build infrastructure utilities for GNOME C++ libraries
 mng-2.0.3           Multiple-image Network Graphics (MNG) reference library
 mozilla-rootcerts-1.0.20180111 Root CA certificates from the Mozilla Project
 mpfr-4.0.1          GMP-based library for multiple-precision floating-point computations
@@ -366,6 +384,7 @@ p5-gettext-1.07nb3  Perl5 module interface to C I18N functions
 p5-glib2-1.328      Perl bindings for Glib 2
 pam-pwauth_suid-1.2nb1 PAM authentication module for unprivileged users
 pango-1.42.4nb3     Library for layout and rendering of text
+pangomm-2.42.0      C++ bindings for pango
 pciids-20150907     Repository of PCI IDs (pci.ids database)
 pcre-8.42           Perl Compatible Regular Expressions library
 pcre2-10.32         Perl Compatible Regular Expressions library (major version 2)
@@ -396,8 +415,10 @@ polkit-0.115nb2     Authorization Manager
 poppler-0.72.0      PDF rendering library
 poppler-data-0.4.9  Support files for poppler
 poppler-glib-0.72.0 PDF rendering library (GLib wrapper)
+poppler-includes-0.72.0 Poppler Xpdf includes (unsupported)
 popt-1.16nb1        Command line option parsing library
 postgresql95-client-9.5.15 PostgreSQL database client programs
+potrace-1.15        Utility for transforming bitmaps into vector graphics
 psutils-1.17nb8     Utilities for manipulating PostScript documents
 pth-2.0.7nb5        GNU Portable Thread library
 pulseaudio-12.2nb2  Sound server for POSIX and Win32 systems
