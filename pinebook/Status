@@ -10,14 +10,7 @@ Update:
  pkg_add mate
  echo "mate-session" >> .xinitrc
  startx
-- uim:
- pkgsrc/devel/libgcroots needs aarch64 ifdefs
 - inkscape:works well
-
-ToDo:
-- USB Wifi: check wpa_supplicant
-- xfwm4: "could not find screen to manage".in startxfce4
-  check xfce4-session again
 - firefox52: unstable 
  https://twitter.com/ebijun/status/1086487791104450563
  PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
@@ -26,12 +19,20 @@ ToDo:
 and browser.tabs.remote.autostart.2=false"
     check about:support .
     general.useragent.local=ja if you want it.
- 
+- deforaos-camera: camera capture,and reboot
+ apply: http://mail-index.netbsd.org/port-arm/2019/01/21/msg005392.html
+ https://twitter.com/ebijun/status/1087694456936001536
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/pinebook/netbsd
+
+ToDo:
+- USB Wifi: check wpa_supplicant
+- uim:
+ pkgsrc/devel/libgcroots needs aarch64 ifdefs
+- xfwm4: "could not find screen to manage".in startxfce4
+  check xfce4-session again
 - mikutter: crush in startup tutorial
  https://twitter.com/ebijun/status/1086488794583392257
-- deforaos-camera: camera capture,and reboot
 - gimp: causes system reboot in startup
-- inkscape:
 - scribus gedit sphinx seamonkey evince
 
 Version: 
