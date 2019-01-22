@@ -22,7 +22,10 @@ and browser.tabs.remote.autostart.2=false"
 - deforaos-camera: camera capture,and reboot
  apply: http://mail-index.netbsd.org/port-arm/2019/01/21/msg005392.html
  https://twitter.com/ebijun/status/1087694456936001536
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/pinebook/netbsd
+ patched kernel I use:
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/pinebook/netbsd 
+- keymapping: [Shift][<>] on 11inch
+ https://wiki.netbsd.org/ports/evbarm/allwinner/#index3h2
 
 ToDo:
 - USB Wifi: check wpa_supplicant
