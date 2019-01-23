@@ -35,7 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
- 関西オープンソース2018 NetBSDブース展示の記録,https://togetter.com/li/
+ 関西オープンソース2018 NetBSDブース展示の記録,https://togetter.com/li/1286691
  オープンソースカンファレンス2018大阪展示の記録,https://togetter.com/li/1193730
  関西オープンソース2017 NetBSDブース展示の記録,https://togetter.com/li/1170068
  オープンソースカンファレンス2017大阪展示の記録,https://togetter.com/li/1075115
@@ -53,6 +53,9 @@ Maps:
 .. csv-table::
  :widths: 25 15 60
 
+ marca,西長堀,クラフトビール
+ テタールヴァレ,谷四,ビアバー
+ 旧ヤム邸,谷六,カレー。二階にねこがいる。
  順記,梅田,終わった後の打ち上げはたいていここ。餃子と餃子と餃子。
  一芳亭 本店,南海なんば,しゅうまいとしゅうまい
  榮華亭梅田東通り店,東梅田,進捗を出そうと男の約束を交わす店
@@ -87,8 +90,6 @@ Maps:
  カレイヤー,心斎橋,メタルなカレー屋
  だまれトリ,梅田,あひる焼き方面御用達
  初音,新梅田食道街,くしかつ おでん
- marca,西長堀,クラフトビール
- 僕とイヌ,西長堀,ビアバー
  kamikaze,西大橋,ビアバー
  モリムラ＠ミュージアム,北加賀屋,2018/11/3-2019/1/27 金土日12:00-18:00
 
@@ -98,6 +99,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ NetBSD8.0 and keep posting dmesg,KOF2018,https://speakerdeck.com/tsutsui/kof2018-netbsd
  NetBSD/atari "Millan" board support,OSC2018大阪,https://speakerdeck.com/tsutsui/osc2018osaka
  NetBSD 'Teokure" LiveImage Updates and NetBSD 8.0,KOF2017,https://speakerdeck.com/tsutsui/kof2017
  PC6001 emulator PC6001VX on NetBSD + pkgsrc,OSC大阪2017,https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
@@ -117,6 +119,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2018/11/9-10,南港,LUNA68K&YM2194
  2018/1/17,大阪産業創造館,Milan
  2017/11/10-11,南港,LUNA68K&YM2194
  2017/1/27-28,大阪産業創造館,PC6001+PC6001VX
@@ -136,6 +139,27 @@ Maps:
 
 2018
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture/2018/11/09/DSC_6222.JPG
+.. image::  ../Picture/2018/11/09/DSC_6225.JPG
+.. image::  ../Picture/2018/11/09/DSC_6226.JPG
+.. image::  ../Picture/2018/11/09/DSC_6230.JPG
+.. image::  ../Picture/2018/11/09/DSC_6232.JPG
+.. image::  ../Picture/2018/11/09/DSC_6233.JPG
+.. image::  ../Picture/2018/11/09/DSC_6234.JPG
+.. image::  ../Picture/2018/11/09/DSC_6235.JPG
+.. image::  ../Picture/2018/11/09/DSC_6236.JPG
+.. image::  ../Picture/2018/11/09/DSC_6237.JPG
+.. image::  ../Picture/2018/11/09/DSC_6241.JPG
+.. image::  ../Picture/2018/11/09/DSC_6242.JPG
+.. image::  ../Picture/2018/11/09/DSC_6244.JPG
+.. image::  ../Picture/2018/11/09/DSC_6245.JPG
+.. image::  ../Picture/2018/11/09/DSC_6246.JPG
+.. image::  ../Picture/2018/11/09/DSC_6247.JPG
+.. image::  ../Picture/2018/11/09/DSC_6250.JPG
+.. image::  ../Picture/2018/11/09/DSC_6251.JPG
+.. image::  ../Picture/2018/11/09/DSC_6252.JPG
+.. image::  ../Picture/2018/11/09/DSC_6253.JPG
+.. image::  ../Picture/2018/11/09/DSC_6257.JPG
 .. image::  ../Picture/2018/01/27/DSC_4832.JPG
 .. image::  ../Picture/2018/01/27/DSC_4840.JPG
 .. image::  ../Picture/2018/01/27/DSC_4841.JPG
