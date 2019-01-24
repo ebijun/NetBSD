@@ -1,13 +1,7 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190122)
+Subject: pinebook status update (20190125)
 
 Update:
-- mate: almost works pkgsrc/meta-pkgs/mate
- https://twitter.com/ebijun/status/1086814579647102976
- pkg_add mate
- echo "mate-session" >> .xinitrc
- startx
-- inkscape:works well
 - firefox52: unstable 
  https://twitter.com/ebijun/status/1086487791104450563
  PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
@@ -23,6 +17,15 @@ and browser.tabs.remote.autostart.2=false"
  http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/pinebook/netbsd 
 - keymapping: [Shift][<>] on 11inch
  https://wiki.netbsd.org/ports/evbarm/allwinner/#index3h2
+- gedit:
+- evince:
+
+works well: inkscape medit py-sphinx
+- mate: pkgsrc/meta-pkgs/mate
+ https://twitter.com/ebijun/status/1086814579647102976
+ pkg_add mate
+ echo "mate-session" >> .xinitrc
+ startx
 
 ToDo:
 - USB Wifi: check wpa_supplicant
@@ -33,7 +36,7 @@ ToDo:
 - mikutter: crush in startup tutorial
  https://twitter.com/ebijun/status/1086488794583392257
 - gimp: causes system reboot in startup
-- scribus gedit sphinx seamonkey evince
+- scribus seamonkey 
 
 Version: 
  NetBSD 8.99.30 (GENERIC64.2019-01-21 20:00 JST) #6: Tue Jan 22 21:38:33 JST 2019  jun@force.soum.co.jp:/prj/prj09/NetBSD/Build/src/sys/arch/evbarm/compile/GENERIC64
@@ -49,6 +52,10 @@ sysinfo:
 
 pkginfo:
  https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkginfo
+
+pkgchk.conf:
+ https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkgchk.conf
+  cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
  http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2018-12-08/
