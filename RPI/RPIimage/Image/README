@@ -1,55 +1,40 @@
-VERSION: :1,$s/2018-12-08/2018-12-08/g
-ISO:     :1,$s/201811271510Z/201811271510Z/g
-NetBSD:  :1,$s/8.99.26/8.99.26/g
-PKGSRC:  :1,$s/2018-12-08/2018-12-08/
+VERSION: :1,$s/2019-01-26/2019-01-26/g
+ISO:     :1,$s/201901200200Z/201901200200Z/g
+NetBSD:  :1,$s/8.99.30/8.99.30/g
+PKGSRC:  :1,$s/2019-01-26/2019-01-26/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2018-12-08-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2019-01-26-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2018-12-08-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2019-01-26-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-12-08-earmv6hf/2018-12-08-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-12-08-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-01-26-earmv6hf/2019-01-26-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-01-26-earmv6hf/MD5
 
 Update:
-- RaspberryPi 3A+ support
-  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3A+
-- NetBSD-current 8.99.26 evbarm-earmv6hf 201811271510Z rpi.img from nyftp.
-  RPI2 boot failed with 201811271510Z kernel.
-  Changes between 201811241900Z to 201811271510Z makes RPI2 boot failed.
-- NetBSD Security Advisory 2018-009: bozohttpd can allow access to .htpasswd 
-  http://mail-index.netbsd.org/current-users/2018/12/11/msg034798.html
-  affects NetBSD-current: prior to 2018-11-22
-  this image uses 201811271510Z kernel and it fixed.
-
-WaitingList for OSC2019osaka version:
-#Next: RPI3: mue(4) checksum offloading 
-# http://mail-index.netbsd.org/source-changes/2018/12/11/msg101345.html
-
-#seems ok 
-  /boot/kernel7.img: RPI2 boot fine,same as kernel7.img.20181125
-    NetBSD 8.99.26 (RPI2) #0: Sat Nov 24 18:48:08 UTC 2018
-      mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
-  /boot/kernel7.img.20181125: same as kernel7.img 
-    NetBSD 8.99.26 (RPI2) #0: Sat Nov 24 18:48:08 UTC 2018
-      mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
-  /boot/kernel7.img.org 201811271510Z
-    NetBSD 8.99.26 (RPI2) #0: Sat Nov 27 14:55:56 UTC 2018
-      mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
+- NetBSD-current 8.99.30 evbarm-earmv6hf 201901200200Z rpi.img from nyftp.
+- RPI3: mue(4) checksum offloading 
+ http://mail-index.netbsd.org/source-changes/2018/12/11/msg101345.html
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/91315a69c53e09eeb7d0c0d65754dcbcb3c35830#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/f35024c779e30a2d9fe92575797f3727c713a671#diff-4a755d73dbba5da21bbf783139f086dc
 
 System Update:
- sysinfo: bozohttpd-20181125 sh-20160401-20181127145556Z 
- pkgsrc:  cairo-gobject-1.16.0nb3 git-base-2.19.2 gtk3+-3.24.1nb3 harfbuzz-2.1.3
-	  libwebp-1.0.1 medit-1.2.0nb9 pango-1.42.4nb3 pkg_chk-2.0.11
-	  ruby24-gnome2-gtk-3.3.0nb2 ruby24-gnome2-pango-3.3.0nb2 uim-1.8.6nb56 
+ sysinfo: 
+  bind-9.13.5W1 bozohttpd-20190116 openssl-1.1.1a sh-20181212-20190120004417Z 
+  sqlite3-3.26.0 tzdata-2018i userland-NetBSD-8.99.30/evbarm wpa_supplicant-2.7
+ pkgsrc:  
+  bash-5.0 curl-7.63.0nb1 dbus-1.12.12 fossil-2.7 git-base-2.20.1 gtk3+-3.24.3
+  harfbuzz-2.2.0nb1 icu-63.1nb1 libgpg-error-1.34 libpsl-0.20.2nb2 
+  libxml2-2.9.9  libxslt-1.1.33  p5-Net-DNS-1.19 pcre2-10.32 perl-5.28.1
+  png-1.6.36  raspberrypi-userland-20170109nb3 ruby24-mikutter-3.8.4 
+  ruby24-mini_portile2-2.4.0 ruby24-nokogiri-1.10.0 
+  ruby24-pkg-config-1.3.2 sudo-1.8.27 uim-1.8.6nb58 wget-1.19.5nb3
 
 - mikutter support : 
  I make sample API key,pre-installed.
@@ -74,7 +59,7 @@ Overview:
 QEMU,with VEPRESS_A15 kernel
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-12-08-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-01-26-earmv6hf/VEXPRESS_A15/netbsd-VEXPRESS_A15.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -133,7 +118,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-12-08/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-01-26/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -141,7 +126,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-12-08-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-01-26-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -320,23 +305,27 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2018 Fukuoka NetBSD booth.
+For Open Source Conference 2019 Osaka NetBSD booth.
 I've updated raspberry-pi image.
 
- Dec.8 2018 Sat:
- Open Source Conference 2018 Fukuoka ,Fukuoka,Japan
- https://www.ospn.jp/osc2018-fukuoka/
-  Presentation: NetBSD 11:00-11:45
-   https://www.ospn.jp/osc2018-fukuoka/modules/eventrsv/?id=1&noform=1
-  Booth:
-   https://www.ospn.jp/osc2018-fukuoka/modules/article/article.php?articleid=1
+ Jan.25-26 2018 Fri-Sat:
+ Open Source Conference 2019 Osaka ,Osaka,Japan
+ https://www.ospn.jp/osc2019-osaka/
+  Presentation: Jan.26 Sat:
+   10:00-10:45 Kansai *BSD Users Group http://www.kbug.gr.jp/
+   https://www.ospn.jp/osc2019-osaka/modules/eguide/event.php?eid=10
+   11:00-11:45 Japan NetBSD Users' Group http://www.jp.NetBSD.org
+   https://www.ospn.jp/osc2019-osaka/modules/eguide/event.php?eid=6
 
-http://www.re.soum.co.jp/~jun/OSC2018fukuoka.pdf
+  Booth: Jan.26 Sat 10:30-16:00
+   https://www.ospn.jp/osc2019-osaka/modules/article/article.php?articleid=1
+
+http://www.re.soum.co.jp/~jun/OSC2019osaka.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
-https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2018.rst
+https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2019.rst
 
-- NetBSD 8.99.26 earmv6hf rpi.img.gz base
+- NetBSD 8.99.30 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -374,7 +363,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2018-12-08/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-01-26/
 
 Installed Packages:
   bash

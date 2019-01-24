@@ -8,6 +8,8 @@ make -f Makefile pkg
 ## add packages.
 # 
 #./03_back
+# check diff: all packages exists
+#
 #mv back.img `date +%Y-%m-%d`-netbsd-raspi-earmv6hf.img
 #make -f Makefile logclean
 #make -f Makefile pkg-back
