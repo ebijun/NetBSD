@@ -1,47 +1,40 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2018-12-08/2018-12-08/g
-:1,$s/8.99.26/8.99.26/g
-:1,$s/201811030820Z/201811030820Z/g
-:1,$s?2018/11/06/msg005153.html?2018/11/21/msg005237.html?
+:1,$s/2019-01-26/2019-01-26/g
+:1,$s/8.99.30/8.99.30/g
+:1,$s/201901200200Z/201901200200Z/g
+:1,$s?2019/01/24/msg005415.html?2019/01/24/msg005415.html?
 
-2018-12-08-netbsd-raspi-earmv6hf.img
+2019-01-26-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2018 Fukuoka NetBSD booth.
-I've updated 2018-12-08-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2019 Osaka NetBSD booth.
+I've updated 2019-01-26-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2018/12/03/msg005294.html
+http://mail-index.netbsd.org/port-arm/2019/01/24/msg005415.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2018-12-08-earmv6hf/2018-12-08-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-01-26-earmv6hf/2019-01-26-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- RaspberryPi 3A+ support
-  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3A+
-- NetBSD-current 8.99.26 evbarm-earmv6hf 201811271510Z rpi.img from nyftp.
-  RPI2 boot failed with 201811271510Z kernel.
-  Changes between 201811241900Z to 201811271510Z makes RPI2 boot failed.
-
-  /boot/kernel7.img: RPI2 boot fine,same as kernel7.img.20181125
-    NetBSD 8.99.26 (RPI2) #0: Sat Nov 24 18:48:08 UTC 2018
-      mkrepro%mkrepro.NetBSD.org@localhost:/usr/src/sys/arch/evbarm/compile/RPI2
-  /boot/kernel7.img.20181125: same as kernel7.img 
-    NetBSD 8.99.26 (RPI2) #0: Sat Nov 24 18:48:08 UTC 2018
-      mkrepro%mkrepro.NetBSD.org@localhost:/usr/src/sys/arch/evbarm/compile/RPI2
-  /boot/kernel7.img.org 201811271510Z
-    NetBSD 8.99.26 (RPI2) #0: Sat Nov 27 14:55:56 UTC 2018
-      mkrepro%mkrepro.NetBSD.org@localhost:/usr/src/sys/arch/evbarm/compile/RPI2
+- NetBSD-current 8.99.30 evbarm-earmv6hf 201901200200Z rpi.img from nyftp.
+- RPI3: mue(4) checksum offloading 
+ http://mail-index.netbsd.org/source-changes/2018/12/11/msg101345.html
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/91315a69c53e09eeb7d0c0d65754dcbcb3c35830#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/f35024c779e30a2d9fe92575797f3727c713a671#diff-4a755d73dbba5da21bbf783139f086dc
 
 System Update:
- sysinfo: bozohttpd-20181125 sh-20160401-20181127145556Z 
- pkgsrc:  cairo-gobject-1.16.0nb3 git-base-2.19.2 gtk3+-3.24.1nb3 harfbuzz-2.1.3
-	  libwebp-1.0.1 medit-1.2.0nb9 pango-1.42.4nb3 pkg_chk-2.0.11
-	  ruby24-gnome2-gtk-3.3.0nb2 ruby24-gnome2-pango-3.3.0nb2 uim-1.8.6nb56 
-
+ sysinfo: 
+  bind-9.13.5W1 bozohttpd-20190116 openssl-1.1.1a sh-20181212-20190120004417Z 
+  sqlite3-3.26.0 tzdata-2018i userland-NetBSD-8.99.30/evbarm wpa_supplicant-2.7
+ pkgsrc:  
+  bash-5.0 curl-7.63.0nb1 dbus-1.12.12 fossil-2.7 git-base-2.20.1 gtk3+-3.24.3
+  harfbuzz-2.2.0nb1 icu-63.1nb1 libgpg-error-1.34 libpsl-0.20.2nb2 
+  libxml2-2.9.9  libxslt-1.1.33  p5-Net-DNS-1.19 pcre2-10.32 perl-5.28.1
+  png-1.6.36  raspberrypi-userland-20170109nb3 ruby24-mikutter-3.8.4 
+  ruby24-mini_portile2-2.4.0 ruby24-nokogiri-1.10.0 
+  ruby24-pkg-config-1.3.2 sudo-1.8.27 uim-1.8.6nb58 wget-1.19.5nb3
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/

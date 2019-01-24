@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -20,7 +20,7 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ===========================================
-RaspberryPIのNetBSDイメージ2018進捗どうですか
+RaspberryPIのNetBSDイメージ2019進捗どうですか
 ===========================================
 
 
@@ -34,19 +34,6 @@ RaspberryPIのNetBSDイメージについて
  :widths: 20 20 20 20 20 80 20 50
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
- 2017/5,7.99.72 →7.99.75,,3.8.1,,BIND-9.10.4-P8 fossil-2.2 git-base-2.13.0,OSC名古屋,http://mail-index.netbsd.org/port-arm/2017/05/24/msg004150.html
- 2017/6,8.99.1,3.5.8,,,perl-5.26 qemu/VEXPRESS_A15カーネルからの起動 (BIND-9.10.5-P1),OSC沖縄,http://mail-index.netbsd.org/port-arm/2017/06/12/msg004179.html
- 2017/7,8.99.1,,,,RPI3起動タイミング修正 microSD認識エラー修正 BIND-9.10.5-P2,JNUG2017,http://mail-index.netbsd.org/port-arm/2017/07/07/msg004286.html
- 2017/7,8.99.1,3.5.9,,,,OSC北海道,http://mail-index.netbsd.org/port-arm/2017/07/13/msg004307.html
- 2017/8,8.99.1,,,,,OSC京都,http://mail-index.netbsd.org/port-arm/2017/07/13/msg004307.html
- ,8.99.1,,3.8.2,,git-base-2.14.1 Bluetoothサポート,ODC,http://mail-index.netbsd.org/port-arm/2017/08/18/msg004375.html
- 2017/9,8.99.2,3.5.10,,,ruby23-base-2.3.4nb1 NanoPi,OSC千葉,http://mail-index.netbsd.org/port-arm/2017/09/01/msg004383.html
- ,8.99.2,3.5.11,,,,OSC東京秋,
- 2017/10,8.99.3,,,,ruby23-base-2.3.5,OSC福岡,http://mail-index.netbsd.org/port-arm/2017/10/03/msg004402.html
- ,8.99.4,,,,,OSC島根,
- ,8.99.5,3.5.12,3.8.3,,https://w1.fi/security/2017-1/ B.ROOT-SERVERS.NET,OSC長岡,http://mail-index.netbsd.org/port-arm/2017/10/22/msg004416.html
- 2017/11,8.99.6,3.5.13,,,git-base-2.15.0,KOF2017,http://mail-index.netbsd.org/port-arm/2017/11/06/msg004432.html
- ,8.99.7,3.5.15,,,gcc 5.5.0,OSC広島,http://mail-index.netbsd.org/port-arm/2017/11/21/msg004455.html
  2018/1,8.99.10,3.6.0,3.8.4,,FDTisation fossil-2.4 ruby23-base-2.3.6 NetBSD-SA01/02,OSC大阪,http://mail-index.netbsd.org/port-arm/2018/01/03/msg004520.html
  2018/2,8.99.12,3.6.1,,,PR/52934 go14,OSC浜名湖,http://mail-index.netbsd.org/port-arm/2018/02/06/msg004579.html
  ,8.99.12,3.6.3,,,,OSC東京春, http://mail-index.netbsd.org/port-arm/2018/02/22/msg004646.html
@@ -64,6 +51,7 @@ RaspberryPIのNetBSDイメージについて
  2018/11/10,8.99.25,3.8.2,3.8.7,,gtk3+3.24.1,KOF&OSC新潟,http://mail-index.netbsd.org/port-arm/2018/11/06/msg005153.html
  2018/11/23,8.99.26,3.8.3,3.8.7nb2,,gcc-6.5 RPI0/0W/1ブート不可,OSC島根,http://mail-index.netbsd.org/port-arm/2018/11/19/msg005230.html
  2018/12/8,8.99.26,,,,git-base-2.19.2 RPI3A+ NetBSD SA 2018-009,OSC福岡,http://mail-index.netbsd.org/port-arm/2018/12/03/msg005294.html
+ 2019/1/26,8.99.30,3.8.4,,1.1.1a,bind-9.13.5W1 sqlite3-3.26 bash-5.0 git-base-2.20.1,OSC大阪,http://mail-index.netbsd.org/port-arm/2019/01/24/msg005415.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
