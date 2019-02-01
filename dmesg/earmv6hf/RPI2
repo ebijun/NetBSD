@@ -1,13 +1,13 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-2018 The NetBSD Foundation, Inc.  All rights reserved.
+2018, 2019 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.26 (RPI2) #0: Sat Nov 24 18:48:08 UTC 2018
+NetBSD 8.99.30 (RPI2) #0: Sun Jan 20 00:44:17 UTC 2019
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
-avail memory = 930 MB
+avail memory = 929 MB
 timecounter: Timecounters tick every 10.000 msec
 armfdt0 (root)
 simplebus0 at armfdt0: Raspberry Pi 2 Model B Rev 1.1
@@ -17,6 +17,7 @@ fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
 fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
 simplebus3 at simplebus1
 cpus0 at simplebus0
+simplebus4 at simplebus0
 cpu0 at cpus0: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
 cpu0: 32KB/32B 2-way L1 VIPT Instruction cache
@@ -26,7 +27,6 @@ vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu1 at cpus0
 cpu2 at cpus0
 cpu3 at cpus0
-simplebus4 at simplebus0
 bcmicu0 at simplebus1
 bcmicu1 at simplebus1: Multiprocessor
 bcmcprman0 at simplebus1: BCM283x Clock Controller
@@ -66,7 +66,7 @@ dwctwo0 at simplebus1: USB controller
 dwctwo0: interrupting on icu irq 137
 /soc/gpu at simplebus1 not configured
 genfb0 at simplebus1: switching to framebuffer console
-genfb0: framebuffer at 0xfea1e000, size 800x600, depth 32, stride 3200
+genfb0: framebuffer at 0xfdc5a000, size 1920x1280, depth 32, stride 10240
 wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
@@ -84,18 +84,18 @@ cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
 vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
-cpu3: DC enabled IC enabled WB enabled LABT branch prediction enabled
-cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
-cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
-vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 cpu2: DC enabled IC enabled WB enabled LABT branch prediction enabled
 cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
 vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu3: DC enabled IC enabled WB enabled LABT branch prediction enabled
+cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
@@ -103,11 +103,11 @@ usb0 at dwctwo0: USB revision 2.0
 uhub0 at usb0: NetBSD (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 sdhc0: cmd timeout error
-sdmmc0: SD card status: 4-bit, C10, U1, V10
+sdmmc0: SD card status:IPsec: Initialized Security Association Processing.
+4-bit, C10, U1, V10
 ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x4010773e:0x125>
 ld0: 61023 MB, 7779 cyl, 255 head, 63 sec, 512 bytes/sect x 124975104 sectors
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
-IPsec: Initialized Security Association Processing.
 uhub1 at uhub0 port 1: vendor 0424 (0x424) product 9514 (0x9514), class 9/0, rev 2.00/2.00, addr 2
 uhub1: multiple transaction translators
 uhub1: 5 ports with 4 removable, self powered
@@ -116,11 +116,11 @@ usmsc0: vendor 0424 (0x424) product ec00 (0xec00), rev 2.00/2.00, addr 3
 usmsc0: Ethernet address b8:27:eb:1f:7a:14
 ukphy0 at usmsc0 phy 1: OUI 0x00800f, model 0x000c, rev. 3
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-uhidev0 at uhub1 port 5 configuration 1 interface 0
+uhidev0 at uhub1 port 3 configuration 1 interface 0
 uhidev0: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
 ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub1 port 5 configuration 1 interface 1
+uhidev1 at uhub1 port 3 configuration 1 interface 1
 uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
@@ -130,13 +130,12 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/8.99.26/modules
+kern.module.path=/stand/evbarm/8.99.30/modules
 vchiq0: interrupting on icu irq 194
-vchiq: vchiq_init_state: slot_zero = 0xcaaa0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xcb540000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 kern notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
-vchiq: vchiq_initialise: videocore initialized after 1 retries
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
