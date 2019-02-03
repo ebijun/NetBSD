@@ -77,7 +77,7 @@ ftp = Net::FTP.open(FTP) do |ftp|
 	end
 	puts "ftp http://"+CDN+isofile.path
 	puts "mv "+isofile.body+".iso "+IMAGES+isofile.body+"-"+isofile.date+".iso"
-	puts "ftp http://www.invisible.ca/arm/"+isofile.date+"/NetBSD-evbarm-aarch64-"+isofile.date+"-pinebook.img.gz"
-	puts "mv NetBSD-evbarm-aarch64-"+isofile.date+"-pinebook.img.gz "+IMAGES
+#	puts "ftp http://www.invisible.ca/arm/"+isofile.date+"/NetBSD-evbarm-aarch64-"+isofile.date+"-pinebook.img.gz"
+#	puts "mv NetBSD-evbarm-aarch64-"+isofile.date+"-pinebook.img.gz "+IMAGES
 	ftp.quit
 end
