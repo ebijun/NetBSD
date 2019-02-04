@@ -5,6 +5,8 @@ To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
 Update:
+- pkgsrc/databases/db4
+ CONFIGURE_ARGS+= --disable-mutexsupport
 - firefox52: unstable 
  https://twitter.com/ebijun/status/1086487791104450563
  PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
