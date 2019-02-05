@@ -21,6 +21,7 @@ diff:
 copy:
 	cp ${DIR}/sysinfo Update/sysinfo
 	cp ${DIR}/pkginfo Update/pkginfo
+	cp ${DIR}/dmesg ../dmesg/aarch64/pinebook
 
 clean:
 	rm -r tmp20*
