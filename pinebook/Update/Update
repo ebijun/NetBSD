@@ -1,10 +1,10 @@
 # backup current system
-#make backup
+make backup
 
 # mount iso
-#make mount
+make mount
 
 # kernel update
-#make kernel-update
-#make update
-make etcupdate
+make kernel-update
+make update
+#make etcupdate
