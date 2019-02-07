@@ -34,7 +34,6 @@ RaspberryPIのNetBSDイメージについて
  :widths: 20 20 20 20 20 80 20 50
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
- 2018/1,8.99.10,3.6.0,3.8.4,,FDTisation fossil-2.4 ruby23-base-2.3.6 NetBSD-SA01/02,OSC大阪,http://mail-index.netbsd.org/port-arm/2018/01/03/msg004520.html
  2018/2,8.99.12,3.6.1,,,PR/52934 go14,OSC浜名湖,http://mail-index.netbsd.org/port-arm/2018/02/06/msg004579.html
  ,8.99.12,3.6.3,,,,OSC東京春, http://mail-index.netbsd.org/port-arm/2018/02/22/msg004646.html
  2018/3,8.99.14,3.6.5,3.8.5,1.1.0g,gcc6.4 ruby2.4,AsiaBSDCon, http://mail-index.netbsd.org/port-arm/2018/03/24/msg004692.html
@@ -52,6 +51,7 @@ RaspberryPIのNetBSDイメージについて
  2018/11/23,8.99.26,3.8.3,3.8.7nb2,,gcc-6.5 RPI0/0W/1ブート不可,OSC島根,http://mail-index.netbsd.org/port-arm/2018/11/19/msg005230.html
  2018/12/8,8.99.26,,,,git-base-2.19.2 RPI3A+ NetBSD SA 2018-009,OSC福岡,http://mail-index.netbsd.org/port-arm/2018/12/03/msg005294.html
  2019/1/26,8.99.30,3.8.4,,1.1.1a,bind-9.13.5W1 sqlite3-3.26 bash-5.0 git-base-2.20.1,OSC大阪,http://mail-index.netbsd.org/port-arm/2019/01/24/msg005415.html
+ 2019/2/10,8.99.33,,,,gtk3+-3.24.4 NetBSD-SA2019-001,OSC浜名湖,http://mail-index.netbsd.org/port-arm/2019/02/07/msg005450.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
