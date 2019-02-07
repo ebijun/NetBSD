@@ -5,6 +5,13 @@ To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
 Update:
+- Add eDP transmitter and enable display pipeline
+ http://mail-index.netbsd.org/source-changes/2019/02/03/msg103047.html
+ arandr works well: display up-side down
+ https://twitter.com/ebijun/status/1092885154127724544
+- mpv: enable support for DRM on NetBSD
+ http://mail-index.netbsd.org/pkgsrc-changes/2019/02/05/msg187140.html
+ mpv -vo drm ?
 - pkgsrc/databases/db4
  CONFIGURE_ARGS+= --disable-mutexsupport
 - firefox52: unstable 
@@ -34,6 +41,7 @@ ToDo:
 - USB Wifi: check wpa_supplicant
 - uim:
  pkgsrc/devel/libgcroots needs aarch64 ifdefs
+ http://openbsd-archive.7691.n7.nabble.com/fix-inputmethods-uim-on-aarch64-td357966.html
 - xfwm4: "could not find screen to manage".in startxfce4
   check xfce4-session again
 - mikutter: crush in startup tutorial
