@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/osaka
+ Place/hamamatsu
  RPI/RPIupdate2019
  RPI
  Place/intro

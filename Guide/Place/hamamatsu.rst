@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,6 +35,7 @@ OSC浜名湖まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2019浜名湖 NetBSDブース展示の記録,
  OSC2018浜名湖 NetBSDブース展示の記録, https://togetter.com/li/1198246
  OSC2017浜名湖 NetBSDブース展示の記録, https://togetter.com/li/1080372
  OSC2016浜名湖 NetBSDブース展示の記録, https://togetter.com/li/929091
@@ -49,13 +50,13 @@ OSC浜名湖まとめ
 .. csv-table::
  :widths: 25 15 60
 
+ Shinnosuke.O,豊橋駅前大通り,クラフトビールと古本。鍛冶町1-43 2Fに2016/3浜松店オープン
+ ティルナノーグ,第一通り駅,ベアードビールあり。土日祝15:00-
+ オクタゴン ブリューイング,田町,醸造所併設ビアパブ 2018/2オープン
+ マイン・シュロス,中央,はままつ地ビール
  松屋,会場近く,松屋フーズではない
  さわやか,高塚が行きやすい？,ハンバーグでごじゃるよ
  飛行場,高塚,喫茶店だけど飛行機と飛行機書籍充実
- ティルナノーグ,第一通り駅,ベアードビールあり。土日祝15:00-
- Shinnosuke.O,豊橋駅前大通り,クラフトビールと古本。鍛冶町1-43 2Fに2016/3浜松店オープン
- マイン・シュロス,中央,はままつ地ビール
- オクタゴン ブリューイング,田町,醸造所併設ビアパブ 2018/2オープン
  オーディオウィンズ,西ヶ崎, 自作真空管アンプ支援店
  テクソル,和田町,浜ホト開発者から真空管輸入業へ。
  マルツ発祥地,会場近く,看板がある
@@ -87,7 +88,6 @@ OSC浜名湖まとめ
  タケウチ電子,豊橋駅前,みんなこの無線屋に通ってNetBSD開発者になった
  ままごとキッチンtonton,安松町,ヤマダネコグッズとは何か。
  麦酒屋,板屋町,7タップ
- オクタゴンブルーイング, 田町,10タップ。18:00-
  
 OSC浜名湖主な展示物
 ~~~~~~~~~~~~~~~~~
@@ -95,14 +95,30 @@ OSC浜名湖主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2018/2/11,浜松,RPI3+NetBSD/68k on XM6i 
  2017/2/12,浜松,RPI3+NetBSD/68k on XM6i WZERO3 NetWalker
  2016/1/23,浜松,RPI2+omxplayer RPI0 Zaurus WZero3
  2015/2/11,浜松,CubieBoard2 RPI+omxplayer BPI Netwalker WZero3 Zaurus
  2014/3/22,浜松,RPI WZero3 O2 Netwalker
  2013/2/9,浜松,RPI WZero3
 
+
+2018
+-----------------
+
+.. image::  ../Picture/2018/02/11/DSC_4938.JPG
+.. image::  ../Picture/2018/02/11/DSC_4939.JPG
+.. image::  ../Picture/2018/02/11/DSC_4940.JPG
+.. image::  ../Picture/2018/02/11/DSC_4942.JPG
+.. image::  ../Picture/2018/02/11/DSC_4943.JPG
+.. image::  ../Picture/2018/02/11/DSC_4945.JPG
+.. image::  ../Picture/2018/02/11/DSC_4947.JPG
+.. image::  ../Picture/2018/02/11/DSC_4951.JPG
+.. image::  ../Picture/2018/02/11/DSC_4958.JPG
+
 2017
 -----------------
+
 .. image::  ../Picture/2017/02/12/DSC09350.JPG
 .. image::  ../Picture/2017/02/12/DSC09351.JPG
 .. image::  ../Picture/2017/02/12/DSC_3040.JPG
