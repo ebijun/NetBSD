@@ -17,10 +17,6 @@ Update:
 - firefox52: unstable 
  https://twitter.com/ebijun/status/1086487791104450563
  PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
- "Go to about:config and make sure disable Multi Process 
-    browser.tabs.remote.autostart=false
-and browser.tabs.remote.autostart.2=false"
-    check about:support .
     general.useragent.local=ja if you want it.
 - deforaos-camera: camera capture,and reboot
  apply: http://mail-index.netbsd.org/port-arm/2019/01/21/msg005392.html
