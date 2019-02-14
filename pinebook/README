@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190210)
+Subject: pinebook status update (20190214)
 
 Update:
 - Add eDP transmitter and enable display pipeline
@@ -11,6 +11,10 @@ Update:
  mpv -vo drm ?
 - pkgsrc/databases/db4
  CONFIGURE_ARGS+= --disable-mutexsupport
+ or apply jason's patch
+  http://mail-index.netbsd.org/pkgsrc-users/2019/02/14/msg028056.html
+  https://github.com/ebijun/NetBSD/blob/master/pinebook/pkgsrc/databases/db4/compile.log
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-02-10/db4-4.8.30.tgz
 - firefox52: unstable 
  https://twitter.com/ebijun/status/1086487791104450563
  PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
