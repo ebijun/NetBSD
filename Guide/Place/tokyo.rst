@@ -104,7 +104,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2019東京春 NetBSDブース展示の記録,
+ OSC2019東京春 NetBSDブース展示の記録, https://togetter.com/li/1321833
  OSC2018東京秋 NetBSDブース展示の記録, https://togetter.com/li/1281694
  OSC2018東京春 NetBSDブース展示の記録, https://togetter.com/li/1202581
  OSC2017東京秋 NetBSDブース展示の記録, https://togetter.com/li/1148810
