@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/hamamatsu
+ Place/tokyo
  RPI/RPIupdate2019
  RPI
  Place/intro

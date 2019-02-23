@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -65,7 +65,8 @@ Maps:
  2017 Spring,3/10-11,1300,72,明星大学
  2017 Fall,9/9-10,1100,57,明星大学
  2018 Spring,2/23-24,1200,62,明星大学
- 2018 Fall,10/27-28,,62,明星大学
+ 2018 Fall,10/27-28,1050,62,明星大学
+ 2019 Spring,2/22-23,,68,明星大学
 
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,6 +79,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 139,OSC2019東京春, http://www.re.soum.co.jp/~jun/OSC2019tokyospring.pdf
  132,OSC2018東京秋, http://www.re.soum.co.jp/~jun/OSC2018tokyofall.pdf
  121,OSC2018東京春, http://www.re.soum.co.jp/~jun/OSC2018tokyospring.pdf
  113,OSC2017東京秋, http://www.re.soum.co.jp/~jun/OSC2017tokyofall.pdf
@@ -102,7 +104,8 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2018東京秋 NetBSDブース展示の記録, 
+ OSC2019東京春 NetBSDブース展示の記録,
+ OSC2018東京秋 NetBSDブース展示の記録, https://togetter.com/li/1281694
  OSC2018東京春 NetBSDブース展示の記録, https://togetter.com/li/1202581
  OSC2017東京秋 NetBSDブース展示の記録, https://togetter.com/li/1148810
  OSC2017東京春 NetBSDブース展示の記録, https://togetter.com/li/1089005
@@ -166,6 +169,7 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2019/10/27-28,OSC2018東京秋,Linux on Nintendo64
  2018/2/23-24,OSC2018東京春,RPI3+XM6i GPD Sparcbook BananaPis 
  2017/09/9-10,OSC2017東京秋,OrangePi One NanoPi RPI3+XM6i+NetBSD/x68k
  2017/03/10-11,OSC2017東京春,RPI3+XM6i+NetBSD/x68k RPI2+omxplayer NetWalker WZERO3 GPDWIN
@@ -196,16 +200,17 @@ OSC東京主な展示物
 
 2018年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. image::  ../Picture/2018/02/23/DSC_5012.JPG
+
+.. image::  ../Picture/2018/10/27/DSC_6121.JPG
+.. image::  ../Picture/2018/10/27/DSC_6126.JPG
+.. image::  ../Picture/2018/10/27/DSC_6132.JPG
+.. image::  ../Picture/2018/10/27/DSC_6145.JPG
+.. image::  ../Picture/2018/10/28/DSC_6158.JPG
+.. image::  ../Picture/2018/10/28/DSC_6169.JPG
+.. image::  ../Picture/2018/10/28/DSC_6175.JPG
 .. image::  ../Picture/2018/02/23/DSC_5016.JPG
-.. image::  ../Picture/2018/02/23/DSC_5029.JPG
 .. image::  ../Picture/2018/02/24/DSC_5034.JPG
-.. image::  ../Picture/2018/02/24/DSC_5040.JPG
-.. image::  ../Picture/2018/02/24/DSC_5041.JPG
 .. image::  ../Picture/2018/02/24/DSC_5042.JPG
-.. image::  ../Picture/2018/02/24/DSC_5050.JPG
-.. image::  ../Picture/2018/02/24/DSC_5051.JPG
-.. image::  ../Picture/2018/02/24/DSC_5052.JPG
 .. image::  ../Picture/2018/02/24/DSC_5053.JPG
 .. image::  ../Picture/2018/02/24/DSC_5054.JPG
 
