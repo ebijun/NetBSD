@@ -17,11 +17,16 @@ diff:
 	diff Update/sysinfo ${DIR}/sysinfo |more
 	diff Update/pkginfo ${DIR}/pkginfo|more
 	diff ../dmesg/aarch64/pinebook ${DIR}/dmesg|more
+	diff Update/pkgchk.conf /usr/pkgsrc/pkgchk.conf
 
 copy:
 	cp ${DIR}/sysinfo Update/sysinfo
 	cp ${DIR}/pkginfo Update/pkginfo
 	cp ${DIR}/dmesg ../dmesg/aarch64/pinebook
+
+pkgchk:
+#	pkg_chk -g
+	cp /usr/pkgsrc/pkgchk.conf Update/pkgchk.conf
 
 clean:
 	rm -r tmp20*
