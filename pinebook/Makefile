@@ -1,6 +1,7 @@
 DIR=tmp`date +%Y%m%d`
 
-all: check diff
+all: check diff copy status
+	echo git diff
 # make all;make copy; make status;git diff
 
 status:

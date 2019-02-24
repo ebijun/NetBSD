@@ -1,7 +1,9 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190221)
+Subject: pinebook status update (20190224)
 
 Update:
+- inkscape: build failed
+ http://mail-index.netbsd.org/port-arm/2019/02/22/msg005510.html
 - gcc-7.4.0 libstdc++-8.2
 - pkgsrc/databases/db4
  Add support for mutexes on aarch64 with GCC. 
@@ -66,7 +68,6 @@ pkgsrc:
  xfce4-tumbler-0.2.3nb1 xterm-344
 
 ToDo:
-- inkscape: build failed
 - USB Wifi: can't use USB wi-fi dongle
 - uim:
  pkgsrc/devel/libgcroots needs aarch64 ifdefs
@@ -97,7 +98,7 @@ pkgchk.conf:
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-02-10/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-02-24/
 
 --
 Jun Ebihara
