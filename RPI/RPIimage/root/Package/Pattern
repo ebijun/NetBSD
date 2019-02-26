@@ -1,0 +1,5 @@
+/Failed:/d
+s/-[0-9]*$//
+s/py27/py/
+s?^?(cd /usr/pkgsrc/*/?
+s?$?;make package-install)?

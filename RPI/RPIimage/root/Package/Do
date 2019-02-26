@@ -1,0 +1,4 @@
+for i in $(cat ToDo)
+do
+	echo $i |awk -F. '{print $1}'|sed -f Pattern
+done
