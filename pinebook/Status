@@ -7,6 +7,7 @@ Subject: pinebook status update (${DATE})
 Update:
 - jemalloc deadlock?
  http://gnats.netbsd.org/54017
+ env LD_PRELOAD=/usr/pkg/lib/libjemalloc.so.2 make configure
 - www/firefox
  http://mail-index.netbsd.org/pkgsrc-changes/2019/02/26/msg188126.html
 - lang/nodejs
