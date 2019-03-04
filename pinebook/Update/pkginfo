@@ -1,5 +1,5 @@
 GConf-3.2.3nb1      Configuration database system used by GNOME
-ImageMagick-7.0.8.27 Package for display and interactive manipulation of images
+ImageMagick-7.0.8.29 Package for display and interactive manipulation of images
 ORBit2-2.14.19nb4   High-performance CORBA ORB with C language support
 SDL-1.2.15nb25      Simple DirectMedia Layer, a cross-platform multimedia library
 SDL_image-1.2.12nb8 Load images as SDL surfaces
@@ -39,8 +39,10 @@ cairomm-1.12.2nb3   C++ API for cairo
 caja-1.21.4         File manager for the MATE desktop
 caja-dropbox-1.20.0 Dropbox Caja extension
 caja-extensions-1.21.0 Set of extensions for Caja
+cbindgen-0.8.0      Generating C bindings from Rust code
 cdparanoia-3.0.10.2nb4 CDDA reading utility with extra data verification features
-cldr-emoji-annotation-33.1.0.0 Emoji annotation files in CLDR
+clang-7.0.1nb1      C language family frontend for LLVM
+cldr-emoji-annotation-34.0.0.0 Emoji annotation files in CLDR
 cmake-3.13.4        Cross platform make
 compface-1.5.2nb7   48x48x1 image compression and decompression (X-face utility)
 consolekit-1.2.1nb2 Framework for defining and tracking users, login sessions, and seats
@@ -121,7 +123,7 @@ ghostscript-fonts-8.11nb3 Postscript fonts for Aladdin Ghostscript
 ghostscript-gpl-9.06nb27 Postscript interpreter
 giflib-5.1.4        GIF image format library
 gimp-2.10.8nb3      The GNU image manipulation program
-git-base-2.20.1     GIT Tree History Storage Tool (base package)
+git-base-2.21.0     GIT Tree History Storage Tool (base package)
 gle-3.1.0nb4        GL subroutines for drawing tubing and extrusions
 glew-1.13.0         OpenGL Extension Wrangler Library
 glib-networking-2.56.1 Network-related giomodules for glib
@@ -159,7 +161,7 @@ gst-plugins0.10-vorbis-0.10.36nb2 Open source multimedia framework - vorbis plug
 gst-plugins1-base-1.14.4 Open source multimedia framework - Base plugins
 gstreamer0.10-0.10.36nb10 Open source multimedia framework
 gstreamer1-1.14.4   Open source multimedia framework
-gtar-base-1.31      The GNU tape archiver with remote magnetic tape support
+gtar-base-1.32      The GNU tape archiver with remote magnetic tape support
 gtk-doc-1.29nb1     Tools for authors of the GTK+ reference documentation
 gtk2+-2.24.32nb7    GIMP Toolkit v2 - libraries for building X11 user interfaces
 gtk2-engines-2.20.2nb25 Theme engines for GTK+ version 2
@@ -183,7 +185,7 @@ hsqldb18-1.8.0.10   Relational database management system witten in pure Java
 http-parser-2.9.0   Parser for HTTP messages written in C
 hunspell-1.7.0      Improved spellchecker
 hunspell-en_US-20060207 US American English dictionaries for hunspell
-ibus-1.5.19nb3      Intelligent Input Bus
+ibus-1.5.20         Intelligent Input Bus
 ibus-anthy-1.5.6    Anthy engine for IBus input platform
 ibus-mozc-2.20.2673.102nb12 Japanese inputmethod Mozc engine
 icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
@@ -221,7 +223,7 @@ libarchive-3.3.2    Library to read/create different archive formats
 libart-2.3.21       High-performance 2D graphics library
 libass-0.14.0nb2    Portable subtitle renderer for the ASS/SSA subtitle format
 libassuan-2.5.3     IPC library used by some of the other GnuPG related packages
-libatomic_ops-7.6.8 Multi-platform library of atomic operations by Hans Boehm
+libatomic_ops-7.6.10 Multi-platform library of atomic operations by Hans Boehm
 libaudiofile-0.3.6nb1 Sound library for SGI audio file
 libbluray-1.1.0     Library for Blu-Ray Discs playback for media players
 libcanberra-0.30    Desktop event sound library
@@ -321,7 +323,7 @@ libxdg-basedir-1.1.1nb1 XDG Base Directory library
 libxfce4gui-4.10.0nb10 Xfce widget library
 libxfce4ui-4.13.4nb3 Xfce widget library
 libxfce4util-4.13.2 Xfce basic library
-libxkbcommon-0.8.3  Library to handle keyboard descriptions
+libxkbcommon-0.8.4  Library to handle keyboard descriptions
 libxklavier-5.4nb3  High-level API for the X Keyboard Extension (XKB)
 libxml2-2.9.9       XML parser library from the GNOME project
 libxslt-1.1.33      XSLT parser library from the GNOME project
@@ -329,6 +331,7 @@ libyaml-0.2.1       YAML 1.1 parser and emitter written in C
 libzip-1.5.1nb2     C library to manipulate zip archives
 libzmf-0.0.2nb8     Library to parse Zoner Callisto/Draw documents
 lintpkgsrc-4.94nb1  Sanity checks on the complete pkgsrc tree
+llvm-7.0.1nb1       Low Level Virtual Machine compiler infrastructure
 lockf-1             FreeBSD's lockf
 lua52-5.2.4nb1      Powerful light-weight language for extending applications
 lua52-gi-0.9.1      Gobject-introspection based dynamic Lua binding
@@ -377,12 +380,13 @@ mpv-0.29.1nb5       Video player based on MPlayer and mplayer2
 mypaint-brushes-1.3.0 Default MyPaint brushes
 nas-1.9.4           Network Audio System
 nasm-2.14.02        General-purpose x86 assembler
-ncurses-6.1nb4      CRT screen handling and optimization package
+ncurses-6.1nb5      CRT screen handling and optimization package
 netpbm-10.79.04nb1  Toolkit for conversion of images between different formats
 nettle-3.4.1        Cryptographic library
 nghttp2-1.36.0      Implementation of HTTP/2 in C
 nginx-1.14.2        Lightweight HTTP server and mail proxy server
 ninja-build-1.9.0   Small build system with a focus on speed
+nodejs-10.15.2      V8 JavaScript for clients and servers
 npapi-sdk-0.27.2    Reusable, released NPAPI-SDK
 npth-1.6            New Portable Threads Library (nPth)
 nspr-4.20           Platform-neutral API for system level and libc like functions
@@ -393,7 +397,7 @@ openjdk8-1.8.202    Open-source implementation of the Java Platform, Standard Ed
 openjpeg-2.3.0      JPEG 2000 library
 orc-0.4.28          Compiler for vector operations
 orcus-0.14.1        Import filter library for spreadsheet documents (0.13 branch)
-osabi-NetBSD-8.99.34 Operating System version dummy-package
+osabi-NetBSD-8.99.35 Operating System version dummy-package
 p11-kit-0.23.14     PKCS#11 module manager
 p5-Archive-Zip-1.64 Perl5 module interface to manipulate zip files
 p5-Authen-SASL-2.16nb6 Perl module to handle SASL authentication
@@ -449,7 +453,7 @@ pam-pwauth_suid-1.2nb1 PAM authentication module for unprivileged users
 pango-1.42.4nb3     Library for layout and rendering of text
 pangomm-2.42.0      C++ bindings for pango
 pciids-20150907     Repository of PCI IDs (pci.ids database)
-pcre-8.42           Perl Compatible Regular Expressions library
+pcre-8.43           Perl Compatible Regular Expressions library
 pcre2-10.32         Perl Compatible Regular Expressions library (major version 2)
 perl-5.28.1         Practical Extraction and Report Language
 php-7.1.26          PHP Hypertext Preprocessor version 7.1
@@ -497,16 +501,16 @@ py27-anytree-2.6.0  Powerful and Lightweight Python Tree Data Structure
 py27-argparse-1.4.0 Easy, declarative interface for creating command line tools
 py27-asn1crypto-0.24.0 Fast, pure Python library for parsing and serializing ASN.1 structures
 py27-atomicwrites-1.3.0 Python module for atomic file writes on POSIX
-py27-attrs-18.2.0   Attributes without boilerplate
+py27-attrs-19.1.0   Attributes without boilerplate
 py27-babel-2.6.0    Collection of tools for internationalizing Python applications
 py27-cElementTree-2.7.15 C implementation of Python ElementTree API
 py27-cairo-1.18.0   Python bindings for cairo
 py27-certifi-2018.11.29 Python package for providing Mozilla's CA Bundle
-py27-cffi-1.12.1    Foreign Function Interface for Python calling C code
+py27-cffi-1.12.2    Foreign Function Interface for Python calling C code
 py27-chardet-3.0.4  Character encoding auto-detection in Python
 py27-cparser-2.19   C parser in Python
-py27-cryptography-2.5 Cryptographic recipes and primitives for Python
-py27-cython-0.29.5  C-Extensions for Python
+py27-cryptography-2.6.1 Cryptographic recipes and primitives for Python
+py27-cython-0.29.6  C-Extensions for Python
 py27-dbus-1.2.8     Python bindings for the D-BUS message bus system
 py27-docutils-0.14  Python tool to generate documents
 py27-enum34-1.1.6   Python module for enums like in python-3.4
@@ -524,14 +528,14 @@ py27-jinja2-2.10    Small but fast and easy to use stand-alone template engine
 py27-libxml2-2.9.9  Python wrapper for libxml2
 py27-libxslt-1.1.33 Python wrapper for libxslt
 py27-linecache2-1.0.0nb1 Backport of the linecache module to older Python versions
-py27-lxml-4.3.1     Python binding for libxml2 and libxslt
-py27-markupsafe-1.1.0 Implements a unicode subclass that supports HTML strings
+py27-lxml-4.3.2     Python binding for libxml2 and libxslt
+py27-markupsafe-1.1.1 Implements a unicode subclass that supports HTML strings
 py27-more-itertools-5.0.0 More routines for operating on iterables, beyond itertools
 py27-packaging-19.0 Core utilities for Python packages
 py27-pathlib2-2.3.3 Object-oriented filesystem paths
 py27-pbr-5.1.2      Python Build Reasonableness
 py27-pip-19.0.3     Installs Python packages as an easy_install replacement
-py27-pluggy-0.8.1   Plugin and hook calling mechanisms for python
+py27-pluggy-0.9.0   Plugin and hook calling mechanisms for python
 py27-py-1.7.0       Library with cross-python path, ini-parsing, io, code, log facilities
 py27-pygments-2.3.1 Python syntax highlighter
 py27-pyparsing-2.3.1 Parsing module for Python
@@ -550,20 +554,19 @@ py27-traceback2-1.4.0 Backport of the traceback module to older Python versions
 py27-typing-3.6.6   Type Hints for Python
 py27-unittest2-1.1.0 New features in unittest backported to Python 2.4+
 py27-urllib3-1.24.1 HTTP library with thread-safe connection pooling
-py36-expat-3.6.8    Python interface to expat
-py37-anytree-2.4.3  Powerful and Lightweight Python Tree Data Structure
+py37-anytree-2.6.0  Powerful and Lightweight Python Tree Data Structure
 py37-cairo-1.18.0   Python bindings for cairo
 py37-expat-3.7.2    Python interface to expat
 py37-gobject3-3.28.3nb1 Python bindings for glib2 gobject
 py37-libxml2-2.9.9  Python wrapper for libxml2
-py37-lxml-4.3.0     Python binding for libxml2 and libxslt
+py37-lxml-4.3.2     Python binding for libxml2 and libxslt
 py37-meson-0.47.2   Open source build system meant to be fast and user friendly
 py37-pygments-2.3.1 Python syntax highlighter
-py37-setuptools-40.6.3 New Python packaging system
+py37-setuptools-40.8.0 New Python packaging system
 py37-six-1.12.0     Python 2 and 3 compatibility utilities
 python27-2.7.15nb1  Interpreted, interactive, object-oriented programming language
-python36-3.6.8      Interpreted, interactive, object-oriented programming language
-python37-3.7.2      Interpreted, interactive, object-oriented programming language
+python36-3.6.8nb1   Interpreted, interactive, object-oriented programming language
+python37-3.7.2nb1   Interpreted, interactive, object-oriented programming language
 qt5-qtbase-5.12.0   C++ X GUI toolkit
 rarian-0.8.1nb4     Documentation metadata library
 re2c-1.1.1          Deterministic Finite State Automaton generator
@@ -597,7 +600,7 @@ ruby24-moneta-1.0.0 Unified interface to key/value stores
 ruby24-native-package-installer-1.0.6 Helper to install native packages on "gem install"
 ruby24-nokogiri-1.10.0 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby24-oauth-0.5.4  OAuth Core Ruby implementation
-ruby24-pkg-config-1.3.2 Pure Ruby implementation of pkg-config
+ruby24-pkg-config-1.3.4 Pure Ruby implementation of pkg-config
 ruby24-pluggaloid-1.1.1 Extensible plugin system for mikutter
 ruby24-public_suffix-3.0.3 Domain name parser based on the Public Suffix List
 ruby24-text-1.3.1   Collection of text algorithms for Ruby
@@ -606,6 +609,7 @@ ruby24-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 ruby24-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
 ruby24-unf_ext-0.0.7.5 Unicode Normalization Form support library for CRuby
 ruby25-base-2.5.3nb1 Ruby 2.5.3 release minimum base package
+rust-1.32.0         Safe, concurrent, practical language
 samba-3.6.25nb15    SMB/CIFS protocol server suite
 shared-mime-info-1.10 Core database of common types
 smpeg-0.4.4nb17     SDL MPEG Player Library
@@ -615,7 +619,7 @@ speex-1.2.0         Open-source, patent-free voice codec
 speexdsp-1.2rc3     Open-source, patent-free voice codec DSP library
 spidermonkey52-52.7.4nb6 Standalone JavaScript implementation in C (major version 52)
 sqlite-2.8.17nb1    SQL Database Engine in a C Library
-sqlite3-3.27.1      SQL Database Engine in a C Library
+sqlite3-3.27.2      SQL Database Engine in a C Library
 startup-notification-0.12nb3 X11 application startup notification library
 sudo-1.8.27         Allow others to run commands as root
 swig-1.3.38nb1      Simplified Wrapper and Interface Generator (version 1)
@@ -624,7 +628,7 @@ t1lib-5.1.2nb6      Library for generating bitmaps from Adobe Type 1 fonts
 taglib-1.11.1       Library for accessing id tags in various media files
 tcl-8.6.9           Tool Command Language, a dynamic language
 tcsh-6.20.00nb2     Extended C-shell with many useful features
-tdb-1.3.17          Small database system which uses files to store data
+tdb-1.3.18          Small database system which uses files to store data
 texi2html-5.0nb7    Texinfo-to-HTML direct translator
 tiff-4.0.10         Library and tools for reading and writing TIFF data files
 tk-8.6.9            Graphical toolkit for TCL
@@ -643,7 +647,8 @@ vte3-0.52.2nb3      Terminal widget with improved accessibility and I18N support
 w3m-0.5.3.0.20180125nb1 Multilingualized version of a pager/text-based browser w3m
 waf-2.0.14          Framework for configuring, compiling, and installing applications
 wget-1.20.1         Retrieve files from the 'net via HTTP and FTP
-x11-links-1.13      Shadow tree of links to native X11 headers and libraries
+wxGTK30-3.0.4nb2    Cross-platform wxWidgets GUI library
+x11-links-1.14      Shadow tree of links to native X11 headers and libraries
 x264-devel-20181022 GPL licensed H.264 encoder
 xcb-util-0.4.0      XCB Utilities
 xcb-util-cursor-0.1.3 XCB port of Xlib's libXcursor

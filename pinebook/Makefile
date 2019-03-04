@@ -26,7 +26,7 @@ copy:
 	cp ${DIR}/dmesg ../dmesg/aarch64/pinebook
 
 pkgchk:
-#	pkg_chk -g
+	pkg_chk -g
 	cp /usr/pkgsrc/pkgchk.conf Update/pkgchk.conf
 
 clean:

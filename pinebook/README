@@ -1,15 +1,20 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190224)
+Subject: pinebook status update (20190305)
 
 Update:
-- src/sys/compat/netbsd32: netbsd32_exec_elf32.c
- http://mail-index.netbsd.org/source-changes/2019/02/26/msg103784.html
-- inkscape: build failed
+- jemalloc deadlock?
+ http://gnats.netbsd.org/54017
+ env LD_PRELOAD=/usr/pkg/lib/libjemalloc.so.2 make configure
+- lang/rust
+ http://mail-index.netbsd.org/pkgsrc-changes/2019/02/14/msg187597.html
+ rust-1.33:
+ RuntimeError: failed to run: /mnt/aarch64/pkgsrc/lang/rust/work.aarch64/rust-bootstrap/bin/cargo build --manifest-path /mnt/aarch64/pkgsrc/lang/rust/work.aarch64/rustc-1.33.0-src/src/bootstrap/Cargo.toml --frozen
+- www/firefox
+ http://mail-index.netbsd.org/pkgsrc-changes/2019/02/26/msg188126.html
+- lang/nodejs
+ http://mail-index.netbsd.org/pkgsrc-changes/2019/02/24/msg187991.html
+- inkscape: 
  http://mail-index.netbsd.org/port-arm/2019/02/22/msg005510.html
-- gcc-7.4.0 libstdc++-8.2
-- pkgsrc/databases/db4
- Add support for mutexes on aarch64 with GCC. 
- http://mail-index.netbsd.org/pkgsrc-changes/2019/02/14/msg187596.html
 - mpv: enable support for DRM on NetBSD
  http://mail-index.netbsd.org/pkgsrc-changes/2019/02/05/msg187140.html
  mpv -vo drm ?
@@ -40,36 +45,41 @@ works well:
  https://wiki.netbsd.org/ports/evbarm/allwinner/#index3h2
 
 sysinfo:
- dhcpcd-7.1.1 g++-7.4.0 gcc-7.4.0 libstdc++-8.2 sh-20181212-20190220012016Z
+ bind-9.13.7 bozohttpd-20190228 g++-7.4.0 gcc-7.4.0 libstdc++-8.2 NetBSD-8.99.35
+ sh-20181212-20190302111555Z userland-NetBSD-8.99.35/evbarm
 pkgsrc:
- ImageMagick-7.0.8.27 arandr-0.1.9nb7 atril-1.21.1nb1 bison-3.2.4
- boehm-gc-8.0.2 caja-1.21.4 cmake-3.13.4 curl-7.64.0 db4-4.8.30nb1
- deforaos-pdfviewer-0.0.2nb27 dos2unix-7.4.0nb2 evince-2.32.0nb77
- ffmpeg4-4.1.1 gimp-2.10.8nb3 gnupg2-2.2.13 gobject-introspection-1.56.1nb1
- graphviz-2.40.1nb31 gsed-4.7 gssdp-1.0.3 gtk3+-3.24.5 harfbuzz-2.3.1
- icu-63.1nb2 libaom-1.0.0nb1 libassuan-2.5.3 libbluray-1.1.0
- libcdr-0.1.5 libdvdread-6.0.1 libgcroots-0.2.3 libgsf-1.14.45
+ ImageMagick-7.0.8.29 arandr-0.1.9nb7 atril-1.21.1nb1 bison-3.2.4 boehm-gc-8.0.2
+ caja-1.21.4 cbindgen-0.8.0 clang-7.0.1nb1 cldr-emoji-annotation-34.0.0.0
+ cmake-3.13.4 curl-7.64.0 db4-4.8.30nb1 deforaos-pdfviewer-0.0.2nb27
+ dos2unix-7.4.0nb2 evince-2.32.0nb77 ffmpeg4-4.1.1 gimp-2.10.8nb3
+ git-base-2.21.0 gnupg2-2.2.13 gobject-introspection-1.56.1nb1
+ graphviz-2.40.1nb31 gsed-4.7 gssdp-1.0.3 gtar-base-1.32 gtk3+-3.24.5
+ harfbuzz-2.3.1 ibus-1.5.20 icu-63.1nb2 inkscape-0.92.3nb1
+ libassuan-2.5.3 libatomic_ops-7.6.10 libbluray-1.1.0 libcdr-0.1.5
+ libdvdread-6.0.1 libetonyek-0.1.9 libgsf-1.14.45 libixion-0.14.1
  libnice-0.1.15 libpaper-1.1.26 libqxp-0.0.2 libsecret-0.18.7
- libuv-1.26.0 libvpx-1.8.0 libxkbcommon-0.8.3 luit-2.0.20190106
- lzip-1.21 mate-backgrounds-1.21.0 mate-common-1.21.0
- mate-indicator-applet-1.21.0 mate-netbook-1.21.0
- mlterm-3.8.7nb3 mpfr-4.0.2 mpv-0.29.1nb5 nasm-2.14.02
- ncurses-6.1nb4 ninja-build-1.9.0 osabi-NetBSD-8.99.34
- p5-glib2-1.329 poppler-0.74.0 poppler-glib-0.74.0 poppler-includes-0.74.0
- postgresql95-client-9.5.16 py27-anytree-2.6.0
- py27-atomicwrites-1.3.0 py27-cffi-1.12.1 py27-cython-0.29.5
- py27-lxml-4.3.1 py27-pip-19.0.2 py27-setuptools-40.8.0
- py27-sphinx-1.8.4 py27-test-4.3.0 readline-8.0 rhash-1.3.8
- ruby24-gnome2-atk-3.3.2 ruby24-gnome2-cairo-gobject-3.3.2
- ruby24-gnome2-gdkpixbuf-3.3.2 ruby24-gnome2-gio-3.3.2
- ruby24-gnome2-glib-3.3.2 ruby24-gnome2-gobject-introspection-3.3.2
- ruby24-gnome2-gtk-3.3.2 ruby24-gnome2-pango-3.3.2
- ruby24-mikutter-3.8.5 ruby25-base-2.5.3nb1
- sqlite3-3.27.1 waf-2.0.14 wget-1.20.1 xfce4-conf-4.13.6nb1
- xfce4-exo-0.12.4 xfce4-thunar-1.8.4
- xfce4-tumbler-0.2.3nb1 xterm-344
+ libuv-1.26.0 libvpx-1.8.0 libxkbcommon-0.8.4 llvm-7.0.1nb1
+ luit-2.0.20190106 lzip-1.21 mate-backgrounds-1.21.0 mate-common-1.21.0 
+ mate-indicator-applet-1.21.0 mate-netbook-1.21.0 mdds-1.4.3 mlterm-3.8.7nb3
+ mpfr-4.0.2 ncurses-6.1nb5 ninja-build-1.9.0 nodejs-10.15.2 openjdk8-1.8.202
+ orcus-0.14.1 osabi-NetBSD-8.99.35 p5-glib2-1.329 pcre-8.43 pkgdiff-1.8nb3
+ poppler-0.74.0 poppler-glib-0.74.0 poppler-includes-0.74.0
+ postgresql95-client-9.5.16 py27-anytree-2.6.0 py27-atomicwrites-1.3.0
+ py27-attrs-19.1.0 py27-cffi-1.12.2 py27-cryptography-2.6.1 py27-cython-0.29.6
+ py27-lxml-4.3.2 py27-markupsafe-1.1.1 py27-pbr-5.1.2 py27-pip-19.0.3
+ py27-pluggy-0.9.0 py27-setuptools-40.8.0 py27-sphinx-1.8.4 py27-test-4.3.0
+ py37-anytree-2.6.0 py37-lxml-4.3.2 py37-setuptools-40.8.0 python36-3.6.8nb1
+ python37-3.7.2nb1 readline-8.0 rhash-1.3.8 ruby24-gnome2-atk-3.3.2
+ ruby24-gnome2-cairo-gobject-3.3.2 ruby24-gnome2-gdkpixbuf-3.3.2
+ ruby24-gnome2-gio-3.3.2 ruby24-gnome2-glib-3.3.2
+ ruby24-gnome2-gobject-introspection-3.3.2 ruby24-gnome2-gtk-3.3.2
+ ruby24-gnome2-pango-3.3.2 ruby24-mikutter-3.8.6 ruby24-pkg-config-1.3.4
+ ruby25-base-2.5.3nb1 rust-1.32.0 sqlite3-3.27.2 tdb-1.3.18 wget-1.20.1
+ wxGTK30-3.0.4nb2 x11-links-1.14 xfce4-conf-4.13.6nb1 xfce4-exo-0.12.4
+ xfce4-thunar-1.8.4 xfce4-tumbler-0.2.3nb1 xterm-344
 
 ToDo:
+- HDMI output
 - USB Wifi: can't use USB wi-fi dongle
 - uim:
  pkgsrc/devel/libgcroots needs aarch64 ifdefs
@@ -81,7 +91,7 @@ ToDo:
 - scribus seamonkey 
 
 Version: 
- NetBSD 8.99.34 (GENERIC64.2019-02-20 01:30 UTC) #11: Thu Feb 21 05:24:06 JST 2019  jun@force.soum.co.jp:/prj/prj09/NetBSD/Build/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 8.99.35 (GENERIC64.2019-03-02 12:10 UTC) #12: Sun Mar  3 07:14:31 JST 2019  jun@force.soum.co.jp:/prj/prj09/NetBSD/Build/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
