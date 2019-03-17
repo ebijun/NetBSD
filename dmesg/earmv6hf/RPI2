@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.33 (RPI2) #0: Thu Jan 31 22:07:46 UTC 2019
+NetBSD 8.99.34 (RPI2) #0: Sun Feb 17 06:22:58 UTC 2019
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 929 MB
@@ -79,12 +79,6 @@ watchdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmrng0 at simplebus1: RNG
 /soc/mailbox@7e00b840 at simplebus1 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
-cpu2: DC enabled IC enabled WB enabled LABT branch prediction enabled
-cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
-cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
-vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu3: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 cpu3: DC enabled IC enabled WB enabled LABT branch prediction enabled
 cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
@@ -97,6 +91,12 @@ cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
 vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu2: DC enabled IC enabled WB enabled LABT branch prediction enabled
+cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
@@ -131,7 +131,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/8.99.33/modules
+kern.module.path=/stand/evbarm/8.99.34/modules
 vchiq0: interrupting on icu irq 194
 vchiq: vchiq_init_state: slot_zero = 0xcb580000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
