@@ -2,15 +2,15 @@
 kern_vtopdiff         = 0xffffffbf48c00000
 physical_start        = 0x0000000040000000
 kernel_start_phys     = 0x00000000b7400000
-kernel_end_phys       = 0x00000000b8189000
+kernel_end_phys       = 0x00000000b8195000
 msgbuf                = 0x0000000047ee3000
 physical_end          = 0x00000000c0000000
 VM_MIN_KERNEL_ADDRESS = 0xffffffc000000000
 kernel_start_l2       = 0xffffffc000000000
 kernel_start          = 0xffffffc000000000
-kernel_end            = 0xffffffc000d89000
-pagetables            = 0xffffffc000d89000
-pagetables_end        = 0xffffffc000d94000
+kernel_end            = 0xffffffc000d95000
+pagetables            = 0xffffffc000d95000
+pagetables_end        = 0xffffffc000da0000
 kernel_end_l2         = 0xffffffc000e00000
 module_start          = 0xffffffc000e00000
 module_end            = 0xffffffc002e00000
@@ -25,7 +25,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.34 (GENERIC64.2019-02-20 01:30 UTC) #11: Thu Feb 21 05:24:06 JST 2019
+NetBSD 8.99.35 (GENERIC64.2019-03-15 02:40 UTC) #17: Fri Mar 15 23:04:49 JST 2019
 	jun@force.soum.co.jp:/prj/prj09/NetBSD/Build/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 2026 MB
 avail memory = 1961 MB
@@ -121,7 +121,7 @@ sunxitwi0: interrupting on GIC irq 76
 iic1 at sunxitwi0: I2C bus
 anxedp0 at iic1 addr 0x38: eDP TX
 anxedp0 port 0 endpoint 0 connected to sunxilcdc0 port 1 endpoint 0
-mmcpwrseq0 at simplebus0
+mmcpwrseq0 at simplebus0: Simple MMC power sequence provider
 sun6idma0 at simplebus1: DMA controller (8 channels)
 sun6idma0: interrupting on GIC irq 82
 ausoc0 at simplebus0: SUN50I Audio Card
@@ -187,6 +187,14 @@ spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu_boot_secondary_processors: writing mbox with 0xe
+cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu2: Dcache line 64, Icache line 64
+cpu2: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
+cpu2: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
+cpu2: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu3: Dcache line 64, Icache line 64
@@ -203,14 +211,6 @@ cpu1: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
 cpu1: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
 cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
 cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu2: Dcache line 64, Icache line 64
-cpu2: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
-cpu2: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
-cpu2: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
-cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
-cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu_boot_secondary_processors: secondary processors hatched
 cpufreqdt0: 1152.000 MHz, 1300000 uV
 cpufreqdt0: 1104.000 MHz, 1260000 uV
@@ -223,11 +223,11 @@ sdmmc1 at sunximmc1
 sdmmc2 at sunximmc2
 uhub0 at usb0: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-uhub1 at usb3: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb1: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub1: 1 port with 1 removable, self powered
 uhub2 at usb2: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub2: 1 port with 1 removable, self powered
-uhub3 at usb1: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub3 at usb3: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
 uhub3: 1 port with 1 removable, self powered
 ld2 at sdmmc2: <0x15:0x0100:AJTD4R:0x00:0x5340fabd:0x000>
 ld2: 14910 MB, 7573 cyl, 64 head, 63 sec, 512 bytes/sect x 30535680 sectors
@@ -272,9 +272,6 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld2
 root on ld2a dumps on ld2b
 root file system type: ffs
-kern.module.path=/stand/evbarm/8.99.34/modules
+kern.module.path=/stand/evbarm/8.99.35/modules
 wsdisplay0: screen 4 added (default, vt100 emulation)
-axppmic0: state changed on 'charge state' to 'CRITICAL'
-axppmic0: state changed on 'charge state' to 'WARNING'
-Lid Switch: lid closed.
 axppmic0: normal capacity on 'charge state'
