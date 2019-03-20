@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.33 (RPI2) #0: Thu Jan 31 22:07:46 UTC 2019
+NetBSD 8.99.34 (RPI2) #0: Sun Feb 17 06:22:58 UTC 2019
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 929 MB
@@ -120,7 +120,7 @@ uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
 uhub0: autoconfiguration error: illegal enable change, port 1
 mue0 at uhub2 port 1
 mue0: vendor 0424 (0x424) product 7800 (0x7800), rev 2.10/3.00, addr 5
-mue0: LAN7800
+mue0: LAN7800 id 0x7800 rev 0x2
 mue0: Ethernet address b8:27:eb:3d:70:4f
 ukphy0 at mue0 phy 1: OUI 0x00800f, model 0x0013, rev. 2
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
@@ -128,7 +128,7 @@ WARNING: 8 errors while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/8.99.33/modules
+kern.module.path=/stand/evbarm/8.99.34/modules
 vchiq0: interrupting on icu irq 194
 vchiq: vchiq_init_state: slot_zero = 0xcb570000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.

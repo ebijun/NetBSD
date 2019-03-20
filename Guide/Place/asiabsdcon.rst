@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2015-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -19,11 +19,21 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+NetBSD BOF  https://2018.asiabsdcon.org/program.html.en
+-------------------------------------------------------
+* Mar.21 2019 (Thursday) 11:00-18:00
+* IIJ meeting room on 13th floor Opera2. Iidabashi Grand Bloom,
+
 BSD BOF  https://2018.asiabsdcon.org/program.html.en
 -------------------------------------------------------
 * Mar.9 2018,19:00-21:30
 * TOKYO UNIVERSITY OF SCIENCE: Building No.11: Room 11-7
 * http://wiki.netbsd.org/summits/AsiaBSDCon_2018_BSD_BoF/
+
+#. ryo@ 	logbook of netbsd/aarch64 (30minutes)
+#. Ken'ichi Fukamachi 	Toward an apt/yum-like NetBSD maintainance
+#. ozaki-r@ 	Concurency bugs in the Network stack of NetBSD
+#. jun@ 	Japan NetBSD Users Group booth reports
 
 NetBSD BOF  https://2017.asiabsdcon.org/program.html.en
 -------------------------------------------------------
@@ -107,6 +117,7 @@ AsiaBSDCon
 .. csv-table::
  :widths: 20 30 70 
 
+ 2019, Mar.21-24,Tokyo University of Science
  2018, Mar.8-11,Tokyo University of Science
  2017, Mar.9-12,Tokyo University of Science
  2016, Mar.10-13,Tokyo University of Science
@@ -127,6 +138,7 @@ AsiaBSDCon Traveler's Guide backnumber
 .. csv-table::
  :widths: 20 70
 
+ AsiaBSDCon2018,http://www.re.soum.co.jp/~jun/asiabsdcon2019.pdf
  AsiaBSDCon2018,http://www.re.soum.co.jp/~jun/asiabsdcon2018.pdf
  AsiaBSDCon2017,http://www.re.soum.co.jp/~jun/asiabsdcon2017.pdf
  AsiaBSDCon2016,http://www.re.soum.co.jp/~jun/asiabsdcon2016.pdf
@@ -140,6 +152,7 @@ AsiaBSDCon tweets on the togetter
 .. csv-table::
  :widths: 20 70
 
+ AsiaBSDCon2019,https://togetter.com/li/1330031
  AsiaBSDCon2018,https://togetter.com/li/1206515
  AsiaBSDCon2017,https://togetter.com/li/1084357
  AsiaBSDCon2016,http://togetter.com/li/947029
@@ -180,34 +193,30 @@ Togetter views : best booth in Japan
 .. csv-table::
  :widths: 50 30 20
  
- AsiaBSDCon 2018,https://togetter.com/li/1206515,7
- Raspberry Jam Big Birthday Weekend 2018 in TOKYO NetBSD booth,https://togetter.com/li/1204795,320
- OpenSourceConference2018 Tokyo/Spring NetBSD booth,https://togetter.com/li/1202581,571
- OpenSourceConference2018 Hamanako NetBSD booth,https://togetter.com/li/1198246,499
- OpenSourceConference2018 Osaka NetBSD booth,https://togetter.com/li/1193730,803
- OpenSourceConference2017 Hiroshima NetBSD booth,https://togetter.com/li/1175260,883
- Kansai Open Forum 2017 NetBSD booth,https://togetter.com/li/1170068,796
- OpenSourceConference2017 Nagaoka NetBSD booth,https://togetter.com/li/1165451,325
- OpenSourceConference2017 Shimane NetBSD booth,https://togetter.com/li/1160781,575
- OpenSourceConference2017 Fukuoka NetBSD booth,https://togetter.com/li/1158733,412
- OpenSourceConference2017 Tokyo/Fall NetBSD booth,https://togetter.com/li/1148810,1205
- OpenSourceConference2017 Chiba NetBSD booth,https://togetter.com/li/1146818,493
- SecurityCamp2017,https://togetter.com/li/1140652,2889
- OpenSourceConference2017 Kyoto NetBSD booth,https://togetter.com/li/1136708,2186
- OpenSourceConference2017 Hokkaido NetBSD booth,https://togetter.com/li/1130009,950
- Japan NetBSD Users' Group annual meeting 2017 の記録,https://togetter.com/li/1127726,821
- OpenSourceConference2017 Okinawa NetBSD booth,https://togetter.com/li/1120958,968
- OpenSourceConference2017 Nagoya NBUG & NetBSD booth,https://togetter.com/li/1114389,1423
- OpenSourceConference2017 Tokyo/Spring NetBSD booth,https://togetter.com/li/1089005,1480
- AsiaBSDCon 2017,https://togetter.com/li/1084357,4058
- OpenSourceConference2017 Hamanako NetBSD booth,https://togetter.com/li/1080372,1108
- OpenSourceConference2017 Osaka NetBSD booth,https://togetter.com/li/1075115,1364
+ AsiaBSDCon 2019,https://togetter.com/li/1330031,15
+ Open Source Conference 2019 Tokyo/Spring NetBSD booth,https://togetter.com/li/1321833,658
+ Open Source Conference 2019 Hamanako NetBSD booth,https://togetter.com/li/1317717,360
+ Open Source Conference 2019 Osaka NetBSD booth,https://togetter.com/li/1312855,541
+ Open Source Conference 2018 Fukuoka NetBSD booth,https://togetter.com/li/1296258,497
+ Open Source Conference 2018 Shimane NetBSD booth,https://togetter.com/li/1291113,394
+ Open Source Conference 2018 Niigata NetBSD booth,https://togetter.com/li/1286767,254
+ KANSAI OPEN FORUM 2018 NetBSD booth,https://togetter.com/li/1286691,497
+ Open Source Conference 2018 Tokyo/Fall NetBSD booth,https://togetter.com/li/1281694,845
+ Open Source UnConference 2018 Sendai,https://togetter.com/li/1276307,885
+ Open Source Conference 2018 Kagawa NetBSD booth,https://togetter.com/li/1273756,731
+ Open Source Conference 2018 Hiroshima NetBSD booth,https://togetter.com/li/1269545,955
+ Open Source Conference 2018 Kyoto NetBSD booth,https://togetter.com/li/1252935,2198
+ Japan NetBSD Users’ Group 20th NetBSD BoF 2018 ,https://togetter.com/li/1246626,1264
+ Open Source Conference 2018 Hokkaido NetBSD booth,https://togetter.com/li/1244344,764
+ Open Source Conference 2018 Okinawa NetBSD booth,https://togetter.com/li/1237675,623
+ Open Source Conference 2018 Nagoya NBUG & NetBSD booth,https://togetter.com/li/1228817,1153
+ AsiaBSDCon 2018,https://togetter.com/li/1206515,3049
 
 Live Images:
 ------------------------
 
 - Release for every Open Source Conference
-- Fit for 2GB
+- Fit for 4GB
 - Copy to Memory card
 - boot NetBSD-current
 - startx & mikutter

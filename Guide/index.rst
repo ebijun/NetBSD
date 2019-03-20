@@ -23,7 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
+ Place/asiabsdcon
+ Place/Summary-AsiaBSDCon.rst
  RPI/RPIupdate2019
- RPI
- Place/intro
