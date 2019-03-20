@@ -1,39 +1,48 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2019-02-10/2019-02-10/g
-:1,$s/8.99.33/8.99.33/g
-:1,$s/201901200200Z/201902010010Z/g
-:1,$s?2019/02/07/msg005450.html?2019/02/07/msg005450.html?
+:1,$s/2019-03-21/2019-03-21/g
+:1,$s/8.99.36/8.99.36/g
+:1,$s/201903190900Z/201903190900Z/g
+:1,$s?2019/03/20/msg005584.html?2019/03/20/msg005584.html?
 
-2019-02-10-netbsd-raspi-earmv6hf.img
+2019-03-21-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2019 Hamanako NetBSD booth.
-I've updated 2019-02-10-netbsd-raspi-earmv6hf.img.gz for RPI.
+For AsiaBSDCon 2019 NetBSD booth.
+I've updated 2019-03-21-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2019/02/07/msg005450.html
+http://mail-index.netbsd.org/port-arm/2019/03/20/msg005584.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-02-10-earmv6hf/2019-02-10-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-03-21-earmv6hf/2019-03-21-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.33 evbarm-earmv6hf 201902010010Z rpi.img from nyftp.
-- NetBSD Security Advisory 2019-001: Several kernel memory disclosure bugs
- http://mail-index.netbsd.org/current-users/2019/02/06/msg035047.html
+- NetBSD-current 8.99.36 evbarm-earmv6hf 201902010010Z rpi.img from nyftp.
+- openssl-1.1.1b libc-12.212 bind-9.13.7 libstdc++-8.2 gcc-7.4.0
+- mikutter-3.8.6 mlterm-3.8.7nb3
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/9e894f60ab40bbb436c479ebc58e8f3f0eb5f402#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/4f4389f9f7e33e2bf0555a017928c2988ddfb6d0#diff-d1cc5f555741f8510556b9937a64378c
 
 System Update:
- sysinfo: 
-  bozohttpd-20190121 dhcpcd-7.1.0 ftpd-20180428 sh-20181212-20190131220746Z
-  userland-NetBSD-8.99.33/evbarm
- pkgsrc:  
-  digest-20190127 gtk3+-3.24.4 harfbuzz-2.3.0 libgpg-error-1.35
-  libwebp-1.0.2 ruby24-gnome2-atk-3.3.1 ruby24-gnome2-cairo-gobject-3.3.1 
-  ruby24-gnome2-gdkpixbuf-3.3.1 ruby24-gnome2-gio-3.3.1
-  ruby24-gnome2-glib-3.3.1 ruby24-gnome2-gobject-introspection-3.3.1 
-  ruby24-gnome2-gtk-3.3.1 ruby24-gnome2-pango-3.3.1 zsh-5.7
+
+sysinfo:
+ bind-9.13.7 bozohttpd-20190228 dhcpcd-7.1.1 g++-7.4.0
+ gcc-7.4.0 libc-12.212 libstdc++-8.2 NetBSD-8.99.36
+ openssl-1.1.1b sh-20181212-20190319081746Z
+ userland-NetBSD-8.99.36/evbarm
+
+pkgsrc:
+ curl-7.64.0 fossil-2.8 git-base-2.21.0 gobject-introspection-1.56.1nb1
+ gtk3+-3.24.5 harfbuzz-2.3.1 icu-63.1nb2 jpeg-9cnb1 mlterm-3.8.7nb3
+ ncurses-6.1nb5 pcre-8.43 py27-cElementTree-2.7.16 py27-expat-2.7.16
+ python27-2.7.16 ruby24-base-2.4.5nb1 ruby24-cairo-1.16.4
+ ruby24-gnome2-atk-3.3.5 ruby24-gnome2-cairo-gobject-3.3.5
+ ruby24-gnome2-gdkpixbuf-3.3.5 ruby24-gnome2-gio-3.3.5
+ ruby24-gnome2-glib-3.3.5 ruby24-gnome2-gobject-introspection-3.3.5
+ ruby24-gnome2-gtk-3.3.5 ruby24-gnome2-pango-3.3.5
+ ruby24-mikutter-3.8.6 ruby24-nokogiri-1.10.1 ruby24-pkg-config-1.3.6
+ wget-1.20.1
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
