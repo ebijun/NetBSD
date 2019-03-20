@@ -25,10 +25,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.35 (GENERIC64.2019-03-15 02:40 UTC) #17: Fri Mar 15 23:04:49 JST 2019
+NetBSD 8.99.36 (GENERIC64.2019-03-19 22:00 UTC) #18: Wed Mar 20 18:29:54 JST 2019
 	jun@force.soum.co.jp:/prj/prj09/NetBSD/Build/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 2026 MB
-avail memory = 1961 MB
+avail memory = 1953 MB
 timecounter: Timecounters tick every 10.000 msec
 armfdt0 (root)
 simplebus0 at armfdt0: Pinebook
@@ -187,14 +187,6 @@ spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu_boot_secondary_processors: writing mbox with 0xe
-cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu2: Dcache line 64, Icache line 64
-cpu2: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
-cpu2: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
-cpu2: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
-cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
-cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu3: Dcache line 64, Icache line 64
@@ -211,6 +203,14 @@ cpu1: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
 cpu1: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
 cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
 cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu2: Dcache line 64, Icache line 64
+cpu2: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
+cpu2: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
+cpu2: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu_boot_secondary_processors: secondary processors hatched
 cpufreqdt0: 1152.000 MHz, 1300000 uV
 cpufreqdt0: 1104.000 MHz, 1260000 uV
@@ -262,7 +262,7 @@ makphy0 at axe0 phy 24: Marvell 88E1111 Gigabit PHY, rev. 2
 makphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
 uvideo0 at uhub5 port 3 configuration 1 interface 0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 4
 video0 at uvideo0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 4
-umass0 at uhub4 port 4 configuration 1 interface 0
+umass0 at uhub4 port 3 configuration 1 interface 0
 umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 4
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
@@ -272,6 +272,6 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld2
 root on ld2a dumps on ld2b
 root file system type: ffs
-kern.module.path=/stand/evbarm/8.99.35/modules
+kern.module.path=/stand/evbarm/8.99.36/modules
 wsdisplay0: screen 4 added (default, vt100 emulation)
 axppmic0: normal capacity on 'charge state'

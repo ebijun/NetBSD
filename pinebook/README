@@ -1,16 +1,14 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190316)
+Subject: pinebook status update (20190320)
 
 Update:
-- bind-9.13.7 libc-12.212 NetBSD-8.99.35 openssl-1.1.1b
-  jemalloc updates
-- lang/rust updates
+- "These changes improves the stability when we use a huge virtual memory 
+  spaces with mmap."
+ http://mail-index.netbsd.org/source-changes/2019/03/19/msg104424.html
 - www/firefox
  http://mail-index.netbsd.org/pkgsrc-changes/2019/02/26/msg188126.html
  thread '<unnamed>' panicked at 'Unable to find libclang: 
 
-- lang/nodejs
- http://mail-index.netbsd.org/pkgsrc-changes/2019/02/24/msg187991.html
 - replace AC Adapter for heavy load
  Anker PowerPort10 A2133+USB DC Cable with 3.5mm/1.35mm connecter
 - mpv: enable support for DRM on NetBSD
@@ -43,48 +41,39 @@ works well:
  https://wiki.netbsd.org/ports/evbarm/allwinner/#index3h2
 
 sysinfo:
- bind-9.13.7 bozohttpd-20190228 libc-12.212 NetBSD-8.99.35
- openssl-1.1.1b sh-20181212-20190315023820Z userland-NetBSD-8.99.35/evbarm
+ libc-12.212 NetBSD-8.99.36 openssl-1.1.1b sh-20181212-20190319203005Z
+ userland-NetBSD-8.99.36/evbarm
 pkgsrc:
- ImageMagick-7.0.8.29 ap24-php71-7.1.27nb2 atril-1.22.0 caja-1.22.0
- caja-dropbox-1.22.0 caja-extensions-1.22.0 clang-7.0.1nb1
- cldr-emoji-annotation-34.0.0.0 engrampa-1.22.0 eom-1.22.0
- fossil-2.8 git-base-2.21.0 gtar-base-1.32 ibus-1.5.20
- inkscape-0.92.3nb1 jemalloc-5.1.0nb1 jpeg-9cnb1
- libatomic_ops-7.6.10 libetonyek-0.1.9 libixion-0.14.1
+ ImageMagick-7.0.8.29nb1 ap24-php71-7.1.27nb2 atril-1.22.0nb1
+ caja-1.22.0 caja-dropbox-1.22.0 caja-extensions-1.22.0
+ cbindgen-0.8.2 cmake-3.14.0 emacs26-26.1nb7 engrampa-1.22.0
+ eom-1.22.0 evince-2.32.0nb78 fossil-2.8 ghostscript-9.05nb17
+ ghostscript-agpl-9.26nb2 graphviz-2.40.1nb32 imake-1.0.8
+ jbig2dec-0.15 jemalloc-5.1.0nb2 jpeg-9cnb1 libXft-2.3.3
  libmatekbd-1.22.0 libmatemixer-1.22.0 libmateweather-1.22.0
- libxkbcommon-0.8.4 libzip-1.5.2 llvm-7.0.1nb1 marco-1.22.0
+ libspectre-0.2.8nb8 libuv-1.27.0 libzip-1.5.2 marco-1.22.0
  mate-applets-1.22.0 mate-backgrounds-1.22.0 mate-calc-1.22.0
  mate-common-1.22.0 mate-control-center-1.22.0 mate-desktop-1.22.0
  mate-icon-theme-1.22.0 mate-indicator-applet-1.22.0 mate-media-1.22.0
  mate-menus-1.22.0 mate-netbook-1.22.0 mate-notification-daemon-1.22.0
  mate-panel-1.22.0 mate-polkit-1.22.0 mate-power-manager-1.22.0
- mate-screensaver-1.22.0 mate-sensors-applet-1.22.0
- mate-session-manager-1.22.0 mate-settings-daemon-1.22.0
- mate-terminal-1.22.0 mate-themes-3.22.19 mdds-1.4.3 ncurses-6.1nb5
- nghttp2-1.37.0 nodejs-10.15.3 nspr-4.21 openjdk8-1.8.202
- orcus-0.14.1 osabi-NetBSD-8.99.35 pcre-8.43 php-7.1.27
- php71-curl-7.1.27nb1 php71-fpm-7.1.27nb2 php71-gd-7.1.27
- php71-iconv-7.1.27 php71-intl-7.1.27nb1 php71-json-7.1.27
- php71-mbstring-7.1.27 php71-pdo-7.1.27 php71-pdo_sqlite-7.1.27nb1
- php71-posix-7.1.27 php71-zip-7.1.27 php71-zlib-7.1.27
- pkgconf-1.6.0 pkgdiff-1.8nb3 py27-attrs-19.1.0 py27-cElementTree-2.7.16
- py27-cffi-1.12.2 py27-cryptography-2.6.1 py27-cython-0.29.6
- py27-expat-2.7.16 py27-lxml-4.3.2 py27-markupsafe-1.1.1
- py27-pbr-5.1.2 py27-pip-19.0.3 py27-pluggy-0.9.0
- py27-py-1.8.0 py27-sphinx-1.8.5 py27-test-4.3.1
- py37-anytree-2.6.0 py37-docutils-0.14 py37-lxml-4.3.2
- py37-meson-0.50.0 py37-roman-3.1 py37-setuptools-40.8.0
- python27-2.7.16 python36-3.6.8nb1 python37-3.7.2nb1
- ruby24-base-2.4.5nb1 ruby24-cairo-1.16.4 ruby24-gnome2-atk-3.3.5
- ruby24-gnome2-cairo-gobject-3.3.5 ruby24-gnome2-gdkpixbuf-3.3.5
- ruby24-gnome2-gio-3.3.5 ruby24-gnome2-glib-3.3.5
+ mate-screensaver-1.22.0 mate-sensors-applet-1.22.0 mate-session-manager-1.22.0
+ mate-settings-daemon-1.22.0 mate-terminal-1.22.0 mate-themes-3.22.19
+ nghttp2-1.37.0 nodejs-10.15.3 nspr-4.21 php-7.1.27 php71-curl-7.1.27nb1
+ php71-fpm-7.1.27nb2 php71-gd-7.1.27 php71-iconv-7.1.27 php71-intl-7.1.27nb1
+ php71-json-7.1.27 php71-mbstring-7.1.27 php71-pdo-7.1.27
+ php71-pdo_sqlite-7.1.27nb1 php71-posix-7.1.27 php71-zip-7.1.27
+ php71-zlib-7.1.27 pkgconf-1.6.0 py27-cElementTree-2.7.16
+ py27-expat-2.7.16 py27-py-1.8.0 py27-sphinx-1.8.5
+ py27-test-4.3.1 py37-docutils-0.14 py37-meson-0.50.0
+ py37-roman-3.1 python27-2.7.16 ruby24-base-2.4.5nb1
+ ruby24-cairo-1.16.4 ruby24-gnome2-atk-3.3.5 ruby24-gnome2-cairo-gobject-3.3.5
+ ruby24-gnome2-gdkpixbuf-3.3.5 ruby24-gnome2-gio-3.3.5 ruby24-gnome2-glib-3.3.5
  ruby24-gnome2-gobject-introspection-3.3.5 ruby24-gnome2-gtk-3.3.5
- ruby24-gnome2-pango-3.3.5 ruby24-mikutter-3.8.6 ruby24-nokogiri-1.10.1
- ruby24-pkg-config-1.3.6 ruby25-base-2.5.3nb2 rust-1.33.0
- seamonkey-2.49.4nb5 seamonkey-l10n-2.49.4 sqlite3-3.27.2
- tdb-1.3.18 vte3-0.54.3 wxGTK30-3.0.4nb2
- x11-links-1.15 x264-devel-20190312 xfce4-desktop-4.13.3
+ ruby24-gnome2-pango-3.3.5 ruby24-nokogiri-1.10.1 ruby24-pkg-config-1.3.6
+ ruby25-base-2.5.5 rust-1.33.0 seamonkey-2.49.4nb5 seamonkey-l10n-2.49.4
+ vte3-0.54.3 x11-links-1.15 x264-devel-20190312 xfce4-desktop-4.13.3
+ zsh-5.7.1nb1
 
 ToDo:
 - HDMI output
@@ -99,7 +88,7 @@ ToDo:
 - scribus
 
 Version: 
- NetBSD 8.99.35 (GENERIC64.2019-03-15 02:40 UTC) #17: Fri Mar 15 23:04:49 JST 2019  jun@force.soum.co.jp:/prj/prj09/NetBSD/Build/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 8.99.36 (GENERIC64.2019-03-19 22:00 UTC) #18: Wed Mar 20 18:29:54 JST 2019  jun@force.soum.co.jp:/prj/prj09/NetBSD/Build/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook

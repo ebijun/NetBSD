@@ -1,5 +1,5 @@
 GConf-3.2.3nb1      Configuration database system used by GNOME
-ImageMagick-7.0.8.29 Package for display and interactive manipulation of images
+ImageMagick-7.0.8.29nb1 Package for display and interactive manipulation of images
 ORBit2-2.14.19nb4   High-performance CORBA ORB with C language support
 SDL-1.2.15nb25      Simple DirectMedia Layer, a cross-platform multimedia library
 SDL_image-1.2.12nb8 Load images as SDL surfaces
@@ -20,7 +20,7 @@ at-spi2-atk-2.26.1nb1 Assistive Technology Service Provider Interface A11y Toolk
 at-spi2-core-2.26.2nb1 Assistive Technology Service Provider Interface Core
 atk-2.26.1          Set of interfaces for accessibility
 atkmm-2.24.2nb5     C++ bindings for atk
-atril-1.22.0        Simple multi-page document viewer for the MATE environment
+atril-1.22.0nb1     Simple multi-page document viewer for the MATE environment
 autoconf-2.69nb8    Generates automatic source code configuration scripts
 autoconf213-2.13nb7 Generates automatic source code configuration scripts (old version)
 automake-1.16.1     GNU Standards-compliant Makefile generator
@@ -39,10 +39,11 @@ cairomm-1.12.2nb3   C++ API for cairo
 caja-1.22.0         File manager for the MATE desktop
 caja-dropbox-1.22.0 Dropbox Caja extension
 caja-extensions-1.22.0 Set of extensions for Caja
+cbindgen-0.8.2      Generating C bindings from Rust code
 cdparanoia-3.0.10.2nb4 CDDA reading utility with extra data verification features
 clang-7.0.1nb1      C language family frontend for LLVM
 cldr-emoji-annotation-34.0.0.0 Emoji annotation files in CLDR
-cmake-3.13.4        Cross platform make
+cmake-3.14.0        Cross platform make
 compface-1.5.2nb7   48x48x1 image compression and decompression (X-face utility)
 consolekit-1.2.1nb2 Framework for defining and tracking users, login sessions, and seats
 cppunit-1.14.0      C++ unit testing framework
@@ -76,14 +77,13 @@ docbook-xsl-1.79.1nb3 Docbook XSL modular stylesheet
 dos2unix-7.4.0nb2   DOS/Mac to Unix and vice versa text file format converter
 editline-3.1.20150325 NetBSD Editline library (libedit) for generic line editing
 elementary-xfce-icon-theme-0.11 Elementary icons forked, extended and maintained for Xfce
-emacs-26.1          Meta-package for installing the preferred Emacs version
-emacs26-26.1nb6     GNU editing macros (editor)
+emacs26-26.1nb7     GNU editing macros (editor)
 enca-1.15           Extremely Naive Charset Analyser
 enchant-1.6.0nb8    Generic spell checking library
 engrampa-1.22.0     Archive manager utility for the MATE Environment
 eom-1.22.0          Eye of MATE: an image viewing and cataloging program
 esound-0.2.41nb3    The Enlightened sound daemon
-evince-2.32.0nb77   Document viewer
+evince-2.32.0nb78   Document viewer
 exctags-5.8nb2      Exuberant (feature-filled) tagfile generator for vi, emacs and clones
 exempi-2.3.0nb8     XMP (Extensible Metadata Platform) library
 exiv2-0.26          Image metadata manipulation
@@ -117,9 +117,9 @@ gettext-lib-0.19.8.1 Internationalized Message Handling Library (libintl)
 gettext-m4-0.19.8.1nb1 Autoconf/automake m4 files for GNU NLS library
 gettext-tools-0.19.8.1nb1 Tools for providing messages in different languages
 gexiv2-0.10.8       GObject-based wrapper around the Exiv2 library
-ghostscript-9.05nb15 Meta-package for installing the preferred ghostscript version
+ghostscript-9.05nb17 Meta-package for installing the preferred ghostscript version
+ghostscript-agpl-9.26nb2 Postscript interpreter
 ghostscript-fonts-8.11nb3 Postscript fonts for Aladdin Ghostscript
-ghostscript-gpl-9.06nb27 Postscript interpreter
 giflib-5.1.4        GIF image format library
 gimp-2.10.8nb3      The GNU image manipulation program
 git-base-2.21.0     GIT Tree History Storage Tool (base package)
@@ -145,7 +145,7 @@ googletest-1.8.1    Google's C++ testing framework
 gperf-3.1           GNU perfect hash function generator
 gpgme-1.12.0        GnuPG Made Easy
 graphite2-1.3.11nb1 Cross-platform rendering for complex writing systems
-graphviz-2.40.1nb31 Graph Drawing Programs from AT&T Research and Lucent Bell Labs
+graphviz-2.40.1nb32 Graph Drawing Programs from AT&T Research and Lucent Bell Labs
 gsed-4.7            GNU implementation of sed, the POSIX stream editor
 gsettings-desktop-schemas-3.24.0 Collection of GSettings schemas for the GNOME desktop
 gsl-2.5             The GNU Scientific Library
@@ -191,15 +191,16 @@ icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
 icon-naming-utils-0.8.90nb6 Adapts GNOME and KDE icon names to the Icon Naming Specification
 icu-63.1nb2         Robust and full-featured Unicode services
 ilmbase-2.3.0       High dynamic-range (HDR) image file format library and tools
-imake-1.0.7nb4      Imake and other utilities from modular X.org
+imake-1.0.8         Imake and other utilities from modular X.org
 imlib2-1.5.1        Image manipulation library
 inkscape-0.92.3nb1  Scalable Vector Graphics (SVG) editor
 intltool-0.51.0nb3  Internationalization Tool Collection
 iso-codes-3.77      List of country, language and currency names
 itstool-2.0.5       ITS Tool allows you to translate XML documents with PO files
 jasper-2.0.14       Software-based reference implementation of the JPEG-2000 codec
+jbig2dec-0.15       JBIG2 decoder library
 jbigkit-2.1         JBIG-KIT lossless image compression library
-jemalloc-5.1.0nb1   General purpose malloc(3) implementation
+jemalloc-5.1.0nb2   General purpose malloc(3) implementation
 jpeg-9cnb1          IJG's jpeg compression utilities
 json-c-0.13.1       JSON library in C
 json-glib-1.2.8     JSON parser for GLib-based libraries and applications
@@ -212,7 +213,7 @@ lcms-1.19nb3        Little Color Management System -- a color management library
 lcms2-2.9           Little Color Management System - a color management library
 libIDL-0.8.14nb4    CORBA Interface Definition Language parser
 libXaw3d-1.6.3      X 3D Athena Widget Set
-libXft-2.3.2nb2     Library for configuring and customizing font access
+libXft-2.3.3        Library for configuring and customizing font access
 libXp-1.0.3         X Print Service Extension Library
 libabw-0.1.1nb13    Library for AbiWord documents
 libao-1.2.0         Cross-platform audio library
@@ -286,7 +287,6 @@ libpaper-1.1.26     Paper size handling library
 libpeas-1.20.0nb5   GObject-based plugins engine
 libproxy-0.4.15     Library that provides automatic proxy configuration management
 libpsl-0.20.2nb2    Library to handle the Public Suffix List
-libpurple-2.13.0nb4 Multi-protocol Instant Messaging client backend
 libqxp-0.0.2        Library that parses the file format of QuarkXPress documents
 librevenge-0.0.4nb8 Base library for writing document import filters
 librsvg-2.40.20nb4  SVG library for GNOME
@@ -296,7 +296,7 @@ libsexy-0.1.11nb29  Collection of GTK+ widgets that beautify standard widgets
 libsigc++-2.10.1    Type-safe callback system for C++ programs
 libsndfile-1.0.28nb2 Library for reading and writing audio files
 libsoup-2.64.2nb2   HTTP library implementation in C
-libspectre-0.2.8nb7 Small library for rendering Postscript documents
+libspectre-0.2.8nb8 Small library for rendering Postscript documents
 libstaroffice-0.0.2nb6 Library to import StarOffice documents
 libtasn1-4.13       ASN.1 structure parser library
 libtheora-1.1.1nb2  Video codec for Ogg multimedia streaming
@@ -305,7 +305,7 @@ libunique-1.1.6nb28 Library for writing single instance applications (deprecated
 libunistring-0.9.10 Unicode string library
 libusb1-1.0.22      USB Access Library (version 1)
 libuuid-2.32.1      Generate unique identifiers for objects
-libuv-1.26.0        Cross-platform asychronous I/O
+libuv-1.27.0        Cross-platform asychronous I/O
 libv4l-0.4.3nb3     Video4Linux userspace library
 libva-2.3.0         Video Acceleration API
 libvisio-0.1.6nb9   Library and tools for parsing the visio file format
@@ -610,7 +610,7 @@ ruby24-twitter-text-2.1.0 Library that provides text handling for Twitter
 ruby24-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 ruby24-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
 ruby24-unf_ext-0.0.7.5 Unicode Normalization Form support library for CRuby
-ruby25-base-2.5.3nb2 Ruby 2.5.3 release minimum base package
+ruby25-base-2.5.5   Ruby 2.5.5 release minimum base package
 rust-1.33.0         Safe, concurrent, practical language
 samba-3.6.25nb15    SMB/CIFS protocol server suite
 seamonkey-2.49.4nb5 Full-featured gecko-based browser
@@ -695,3 +695,4 @@ zenity-2.32.1nb26   Display GNOME dialogs from the command line
 zinnia-0.06         Online hand writing recognition system with machine learning
 zip-3.0nb3          Create/update ZIP files compatible with pkzip
 zonetab-0           NetBSD zone.tab file
+zsh-5.7.1nb1        The Z shell
