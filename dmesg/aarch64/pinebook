@@ -25,8 +25,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.36 (GENERIC64.2019-03-19 22:00 UTC) #18: Wed Mar 20 18:29:54 JST 2019
-	jun@force.soum.co.jp:/prj/prj09/NetBSD/Build/src/sys/arch/evbarm/compile/GENERIC64
+NetBSD 8.99.36 (GENERIC64_AUDIO2.2019-04-02 03:30 UTC) #2: Tue Apr  2 21:04:45 JST 2019
+	jun@force.soum.co.jp:/prj/prj09/NetBSD/AUDIO2/src/sys/arch/evbarm/compile/GENERIC64_AUDIO2
 total memory = 2026 MB
 avail memory = 1953 MB
 timecounter: Timecounters tick every 10.000 msec
@@ -181,28 +181,18 @@ kern info: [drm] No driver support for vblank timestamp query.
 sunxidrm0: initialized sunxi 1.0.0 20190123 on minor 0
 ausoc0: codec: sun8icodec0, cpu: sunxii2s0, aux: a64acodec0
 audio0 at ausoc0: full duplex, playback, capture, mmap, independent
-ausoc0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-ausoc0: Latency: 256 milliseconds
+audio0: use old set_param method
+NOTICE: auconv_set_converter is obsoleted in AUDIO2
+audio0: use old set_param method
+NOTICE: auconv_set_converter is obsoleted in AUDIO2
+NOTICE: auconv_set_converter is obsoleted in AUDIO2
+NOTICE: auconv_set_converter is obsoleted in AUDIO2
+audio0: slinear_le:16 2ch 48000Hz, blk 40ms for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 40ms for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu_boot_secondary_processors: writing mbox with 0xe
-cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu3: Dcache line 64, Icache line 64
-cpu3: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
-cpu3: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
-cpu3: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
-cpu3: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
-cpu3: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu1: Dcache line 64, Icache line 64
-cpu1: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
-cpu1: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
-cpu1: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
-cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
-cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu2: Dcache line 64, Icache line 64
@@ -211,6 +201,22 @@ cpu2: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
 cpu2: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
 cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
 cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu1: Dcache line 64, Icache line 64
+cpu1: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
+cpu1: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
+cpu1: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu3: Dcache line 64, Icache line 64
+cpu3: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
+cpu3: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
+cpu3: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu3: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu3: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu_boot_secondary_processors: secondary processors hatched
 cpufreqdt0: 1152.000 MHz, 1300000 uV
 cpufreqdt0: 1104.000 MHz, 1260000 uV
@@ -235,19 +241,20 @@ ld2: 8-bit width, HS200, 64 MB cache, 200.000 MHz
 (manufacturer 0x24c, product 0xb703, standard function interface code 0x7) at sdmmc1 function 1 not configured
 Lid Switch: lid opened.
 IPsec: Initialized Security Association Processing.
-uhub4 at uhub0 port 1: vendor 1a40 (0x1a40) USB 2.0 Hub (0x101), class 9/0, rev 2.00/1.11, addr 2
+umass0 at uhub0 port 1 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
+uhub4 at uhub2 port 1: vendor 05e3 (0x5e3) USB2.0 Hub (0x608), class 9/0, rev 2.00/88.32, addr 2
 uhub4: single transaction translator
-uhub4: 4 ports with 4 removable, self powered
-uhub5 at uhub2 port 1: vendor 05e3 (0x5e3) USB2.0 Hub (0x608), class 9/0, rev 2.00/88.32, addr 2
-uhub5: single transaction translator
-uhub5: 4 ports with 1 removable, self powered
-axe0 at uhub4 port 1
-axe0: vendor 0411 (0x411) product 006e (0x6e), rev 2.00/0.01, addr 3
-uhidev0 at uhub5 port 1 configuration 1 interface 0
+uhub4: 4 ports with 1 removable, self powered
+uhidev0 at uhub4 port 1 configuration 1 interface 0
 uhidev0: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x0c), rev 1.10/1.00, addr 3, iclass 3/1
 ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub5 port 1 configuration 1 interface 1
+uhidev1 at uhub4 port 1 configuration 1 interface 1
 uhidev1: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x0c), rev 1.10/1.00, addr 3, iclass 3/0
 uhidev1: 9 report ids
 ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
@@ -257,17 +264,14 @@ uhid1 at uhidev1 reportid 3: input=3, output=0, feature=0
 uhid2 at uhidev1 reportid 5: input=0, output=0, feature=5
 uhid3 at uhidev1 reportid 6: input=0, output=0, feature=1039
 uhid4 at uhidev1 reportid 9: input=1, output=0, feature=0
-axe0: Ethernet address 00:1d:73:68:51:10
-makphy0 at axe0 phy 24: Marvell 88E1111 Gigabit PHY, rev. 2
-makphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
-uvideo0 at uhub5 port 3 configuration 1 interface 0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 4
-video0 at uvideo0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 4
-umass0 at uhub4 port 3 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 4
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
+urtwn0 at uhub4 port 2
+urtwn0: I-O DATA DEVICE, INC. (0x4bb) WN-G150UM (0x94c), rev 2.00/2.00, addr 4
+urtwn0: MAC/BB RTL8188CUS, RF 6052 1T1R, address 34:76:c5:b3:9c:b6
+urtwn0: 1 rx pipe, 2 tx pipes
+urtwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+urtwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+uvideo0 at uhub4 port 3 configuration 1 interface 0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 5
+video0 at uvideo0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 5
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld2
 root on ld2a dumps on ld2b
@@ -275,3 +279,4 @@ root file system type: ffs
 kern.module.path=/stand/evbarm/8.99.36/modules
 wsdisplay0: screen 4 added (default, vt100 emulation)
 axppmic0: normal capacity on 'charge state'
+sunxilcdc0: no CH0 PLL configured

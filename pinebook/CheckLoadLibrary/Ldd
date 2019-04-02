@@ -1,6 +1,6 @@
 for i in /usr/pkg/bin/* /usr/pkg/sbin/* /usr/pkg/lib/* /usr/pkg/lib/ruby/2*/*/*/*.so
 do
-	if CHECK=`ldd -f "%a:-l%o.%m => %p\n" $i |grep found`
+	if CHECK=`ldd -f "%a:-l%o.%m => %p\n" $i |fgrep -f Pattern`
 	then
 		echo $i $CHECK
 	fi
