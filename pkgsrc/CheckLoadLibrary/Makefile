@@ -3,10 +3,10 @@ all:
 	make packages
 
 script:
-	awk -F- '{print "(cd /usr/pkgsrc/*/"$$1";make replace)"}' packages
+	sed -e 's/-[0-9].*$$//' packages | awk '{print "(cd /usr/pkgsrc/*/"$$1";make replace)"}'
 
 packages:
-	awk '{print "pkg_info -Fe " $$1}' notfound.list |sh |sort |uniq > packages
+	awk '{print "pkg_info -Fe " $$1}' notfound.list |sh |sort |uniq | packages
 
 scan:
 	./Ldd |awk '{print $$1}' > notfound.list
