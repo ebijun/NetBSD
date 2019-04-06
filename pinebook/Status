@@ -5,6 +5,12 @@ To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
 Update:
+- NetBSD 8.99.37:  
+  Overhaul the API used to fetch and store individual memory cells in
+  userspace.
+ http://mail-index.netbsd.org/source-changes/2019/04/06/msg104813.html
+- Fix race conditions about pmap_page_protect() and pmap_enter(). 
+ http://mail-index.netbsd.org/source-changes/2019/04/06/msg104838.html
 - www/firefox
  http://mail-index.netbsd.org/pkgsrc-changes/2019/02/26/msg188126.html
  thread '<unnamed>' panicked at 'Unable to find libclang: 
