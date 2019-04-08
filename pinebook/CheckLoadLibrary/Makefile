@@ -1,5 +1,5 @@
-#ACTION=replace
-ACTION=install
+ACTION=replace
+#ACTION=install
 
 all:
 	make scan
