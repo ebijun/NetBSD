@@ -23,6 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/asiabsdcon
- Place/Summary-AsiaBSDCon.rst
+ Place/okinawa
  RPI/RPIupdate2019
+ Place/intro
