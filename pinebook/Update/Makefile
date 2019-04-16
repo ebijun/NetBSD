@@ -1,10 +1,14 @@
 RELEASE=/usr/release/images
-ISO=${RELEASE}/NetBSD-8.99.36-evbarm-aarch64-201904020330Z.iso
+ISO=${RELEASE}/NetBSD-8.99.37-evbarm-aarch64-201904121250Z.iso
 
 ##
 
 DATE=`date +%Y%m%d%H%M`
 LIST=`ls -P /mnt/evbarm/binary/sets |fgrep -vf Pattern`
+
+all:
+	./Update
+	echo make etcupdate
 
 etcupdate:
 	etcupdate -a -s /mnt/evbarm/binary/sets/etc.tgz
