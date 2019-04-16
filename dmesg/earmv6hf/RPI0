@@ -4,10 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.36 (RPI) #0: Tue Mar 19 08:17:46 UTC 2019
-	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
+NetBSD 8.99.37 (RPI_AUDIO2.201904142230UTC) #3: Tue Apr 16 10:58:51 JST 2019
+	jun@force.soum.co.jp:/prj/prj09/NetBSD/AUDIO2/src/sys/arch/evbarm/compile/RPI_AUDIO2
 total memory = 448 MB
-avail memory = 434 MB
+avail memory = 433 MB
 timecounter: Timecounters tick every 10.000 msec
 armfdt0 (root)
 simplebus0 at armfdt0: Raspberry Pi Zero Rev 1.2
@@ -97,7 +97,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/8.99.36/modules
+kern.module.path=/stand/evbarm/8.99.37/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xca0d0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
@@ -106,8 +106,10 @@ WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 audio0 at vcaudio0: half duplex, playback, capture, mmap, independent
-vcaudio0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-vcaudio0: Latency: 100 milliseconds
+audio0: use new query_format method
+audio0: use new query_format method
+audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 40ms for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 40ms for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 wsdisplay0: screen 4 added (default, vt100 emulation)
