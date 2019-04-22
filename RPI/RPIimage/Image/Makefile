@@ -7,7 +7,7 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-04-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.36-evbarm-${ARCH}-201904020330Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.37-evbarm-${ARCH}-201904142230Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -201,10 +201,10 @@ kernel:
 kernel-update:
 	vnconfig ${VND} ${FILE}
 	mount /dev/${VND}e ${MNT}
-#	mv  ${MNT}/kernel.img ${MNT}/kernel.img.original
-#	cp /usr/obj/kernel/earmv6hf/RPI/netbsd.bin ${MNT}/kernel.img
+	mv  ${MNT}/kernel.img ${MNT}/kernel.img.original
 	mv  ${MNT}/kernel7.img ${MNT}/kernel7.img.original
-	cp /usr/obj/kernel/earmv6hf/RPI2/netbsd.bin ${MNT}/kernel7.img
+	cp kernel/20190416/kernel.img  ${MNT}/kernel.img
+	cp kernel/20190416/kernel7.img ${MNT}/kernel7.img
 	umount ${MNT}
 	vnconfig -u ${VND} 
 

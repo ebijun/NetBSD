@@ -1,48 +1,52 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2019-03-21/2019-03-21/g
-:1,$s/8.99.36/8.99.36/g
-:1,$s/201903190900Z/201903190900Z/g
-:1,$s?2019/03/20/msg005584.html?2019/03/20/msg005584.html?
+:1,$s/2019-04-20/2019-04-20/g
+:1,$s/8.99.37/8.99.37/g
+:1,$s/201904142230Z/201904142230Z/g
+:1,$s?2019/04/16/msg005599.html?2019/04/16/msg005599.html?
 
-2019-03-21-netbsd-raspi-earmv6hf.img
+2019-04-20-netbsd-raspi-earmv6hf.img
 
-For AsiaBSDCon 2019 NetBSD booth.
-I've updated 2019-03-21-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2019 Okinawa NetBSD booth demonstration,
+I've updated 2019-04-20-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2019/03/20/msg005584.html
+http://mail-index.netbsd.org/port-arm/2019/04/16/msg005599.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-03-21-earmv6hf/2019-03-21-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-04-20-earmv6hf/2019-04-20-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.36 evbarm-earmv6hf 201902010010Z rpi.img from nyftp.
-- openssl-1.1.1b libc-12.212 bind-9.13.7 libstdc++-8.2 gcc-7.4.0
-- mikutter-3.8.6 mlterm-3.8.7nb3
+- NetBSD-current 8.99.37 evbarm-earmv6hf 201904142230Z rpi.img from nyftp.
+- libstdc++-9.0
+- mlterm-3.8.8
+- ruby24-base-2.4.6
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/4f4389f9f7e33e2bf0555a017928c2988ddfb6d0#diff-d1cc5f555741f8510556b9937a64378c
+ https://github.com/ebijun/NetBSD/commit/77c74f56ec35710b68a2afca8fcfc1fb76904aa0
+
+TEST kernel:
+- AUDIO2
+ apply: http://mail-index.netbsd.org/tech-kern/2019/04/01/msg024944.html
+  compiled kernel:
+   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-04-20-earmv6hf/AUDIO2/
 
 System Update:
 
 sysinfo:
- bind-9.13.7 bozohttpd-20190228 dhcpcd-7.1.1 g++-7.4.0
- gcc-7.4.0 libc-12.212 libstdc++-8.2 NetBSD-8.99.36
- openssl-1.1.1b sh-20181212-20190319081746Z
- userland-NetBSD-8.99.36/evbarm
+ libstdc++-9.0 NetBSD-8.99.37 pkg_install-20190405
+ sh-20181212-20190414220950Z tzdata-2019a
+ userland-NetBSD-8.99.37/evbarm
 
 pkgsrc:
- curl-7.64.0 fossil-2.8 git-base-2.21.0 gobject-introspection-1.56.1nb1
- gtk3+-3.24.5 harfbuzz-2.3.1 icu-63.1nb2 jpeg-9cnb1 mlterm-3.8.7nb3
- ncurses-6.1nb5 pcre-8.43 py27-cElementTree-2.7.16 py27-expat-2.7.16
- python27-2.7.16 ruby24-base-2.4.5nb1 ruby24-cairo-1.16.4
- ruby24-gnome2-atk-3.3.5 ruby24-gnome2-cairo-gobject-3.3.5
- ruby24-gnome2-gdkpixbuf-3.3.5 ruby24-gnome2-gio-3.3.5
- ruby24-gnome2-glib-3.3.5 ruby24-gnome2-gobject-introspection-3.3.5
- ruby24-gnome2-gtk-3.3.5 ruby24-gnome2-pango-3.3.5
- ruby24-mikutter-3.8.6 ruby24-nokogiri-1.10.1 ruby24-pkg-config-1.3.6
- wget-1.20.1
+ curl-7.64.1 fossil-2.8nb1 harfbuzz-2.4.0nb2 icu-64.1
+ libXft-2.3.3 libgpg-error-1.36 libpsl-0.20.2nb3
+ libyaml-0.2.2nb1 mlterm-3.8.8 ruby24-base-2.4.6
+ ruby24-gnome2-atk-3.3.6 ruby24-gnome2-cairo-gobject-3.3.6
+ ruby24-gnome2-gdkpixbuf-3.3.6 ruby24-gnome2-gio-3.3.6
+ ruby24-gnome2-glib-3.3.6 ruby24-gnome2-gobject-introspection-3.3.6
+ ruby24-gnome2-gtk-3.3.6 ruby24-gnome2-pango-3.3.6
+ uim-1.8.6nb59 wget-1.20.3 zsh-5.7.1nb1
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
