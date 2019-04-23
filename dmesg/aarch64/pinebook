@@ -2,15 +2,15 @@
 kern_vtopdiff         = 0xffffffbf48c00000
 physical_start        = 0x0000000040000000
 kernel_start_phys     = 0x00000000b7400000
-kernel_end_phys       = 0x00000000b8199000
+kernel_end_phys       = 0x00000000b819a000
 msgbuf                = 0x0000000047ee3000
 physical_end          = 0x00000000c0000000
 VM_MIN_KERNEL_ADDRESS = 0xffffffc000000000
 kernel_start_l2       = 0xffffffc000000000
 kernel_start          = 0xffffffc000000000
-kernel_end            = 0xffffffc000d99000
-pagetables            = 0xffffffc000d99000
-pagetables_end        = 0xffffffc000da4000
+kernel_end            = 0xffffffc000d9a000
+pagetables            = 0xffffffc000d9a000
+pagetables_end        = 0xffffffc000da5000
 kernel_end_l2         = 0xffffffc000e00000
 module_start          = 0xffffffc000e00000
 module_end            = 0xffffffc002e00000
@@ -25,7 +25,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.37 (GENERIC64_AUDIO2.201904121250UTC) #4: Sat Apr 13 14:34:40 JST 2019
+NetBSD 8.99.37 (GENERIC64_AUDIO2.201904210420UTC) #5: Tue Apr 23 11:40:37 JST 2019
 	jun@force.soum.co.jp:/prj/prj09/NetBSD/AUDIO2/src/sys/arch/evbarm/compile/GENERIC64_AUDIO2
 total memory = 2026 MB
 avail memory = 1953 MB
@@ -193,14 +193,6 @@ spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu_boot_secondary_processors: writing mbox with 0xe
-cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu3: Dcache line 64, Icache line 64
-cpu3: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
-cpu3: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
-cpu3: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
-cpu3: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
-cpu3: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu2: Dcache line 64, Icache line 64
@@ -217,6 +209,14 @@ cpu1: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
 cpu1: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
 cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
 cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu3: Dcache line 64, Icache line 64
+cpu3: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
+cpu3: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
+cpu3: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu3: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu3: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu_boot_secondary_processors: secondary processors hatched
 cpufreqdt0: 1152.000 MHz, 1300000 uV
 cpufreqdt0: 1104.000 MHz, 1260000 uV
@@ -239,7 +239,7 @@ ld2 at sdmmc2: <0x15:0x0100:AJTD4R:0x00:0x5340fabd:0x000>
 ld2: 14910 MB, 7573 cyl, 64 head, 63 sec, 512 bytes/sect x 30535680 sectors
 ld2: 8-bit width, HS200, 64 MB cache, 200.000 MHz
 (manufacturer 0x24c, product 0xb703, standard function interface code 0x7) at sdmmc1 function 1 not configured
-Lid Switch: lid opened.
+Lid Switch: lid closed.
 IPsec: Initialized Security Association Processing.
 uhub4 at uhub1 port 1: vendor 05e3 (0x5e3) USB2.0 Hub (0x608), class 9/0, rev 2.00/88.32, addr 2
 uhub4: single transaction translator

@@ -1,5 +1,5 @@
 GConf-3.2.3nb1      Configuration database system used by GNOME
-ImageMagick-7.0.8.38 Package for display and interactive manipulation of images
+ImageMagick-7.0.8.40 Package for display and interactive manipulation of images
 ORBit2-2.14.19nb4   High-performance CORBA ORB with C language support
 SDL-1.2.15nb25      Simple DirectMedia Layer, a cross-platform multimedia library
 SDL_image-1.2.12nb8 Load images as SDL surfaces
@@ -11,9 +11,9 @@ anthy-elisp-9100hnb5 Emacs lisp files for inputmethod/anthy
 ap24-php71-7.1.28nb2 Apache (apache24) module for PHP7.1
 apache-2.4.39nb1    Apache HTTP (Web) server, version 2.4
 apache-ant-1.10.5   Apache Project's Java-Based make(1) replacement
-apr-1.6.5           Apache Portable Runtime
+apr-1.7.0           Apache Portable Runtime
 apr-util-1.6.1nb5   Apache Portable Runtime utilities
-arandr-0.1.9nb7     Designed to provide a simple visual front end for XRandR
+arandr-0.1.10       Designed to provide a simple visual front end for XRandR
 asciidoc-8.6.10     ASCII to formatted document converter
 aspell-0.60.6.1nb8  Spell checker with good multi-language support
 at-spi2-atk-2.26.1nb1 Assistive Technology Service Provider Interface A11y Toolkit
@@ -46,11 +46,11 @@ cbindgen-0.8.2      Generating C bindings from Rust code
 cdparanoia-3.0.10.2nb4 CDDA reading utility with extra data verification features
 clang-7.0.1nb1      C language family frontend for LLVM
 cldr-emoji-annotation-34.0.0.0 Emoji annotation files in CLDR
-cmake-3.14.1        Cross platform make
+cmake-3.14.2        Cross platform make
 compface-1.5.2nb7   48x48x1 image compression and decompression (X-face utility)
 consolekit-1.2.1nb2 Framework for defining and tracking users, login sessions, and seats
 cppunit-1.14.0      C++ unit testing framework
-cups-base-2.2.10    Common UNIX Printing System
+cups-base-2.2.11    Common UNIX Printing System
 curl-7.64.1         Client that groks URLs
 cwrappers-20180325  pkgsrc compiler wrappers
 db4-4.8.30nb1       Berkeley DB version 4 from Oracle
@@ -80,8 +80,8 @@ docbook-xsl-1.79.1nb3 Docbook XSL modular stylesheet
 dos2unix-7.4.0nb2   DOS/Mac to Unix and vice versa text file format converter
 editline-3.1.20150325 NetBSD Editline library (libedit) for generic line editing
 elementary-xfce-icon-theme-0.11 Elementary icons forked, extended and maintained for Xfce
-emacs-26.1          Meta-package for installing the preferred Emacs version
-emacs26-26.1nb8     GNU editing macros (editor)
+emacs-26.2          Meta-package for installing the preferred Emacs version
+emacs26-26.2        GNU editing macros (editor)
 enca-1.15           Extremely Naive Charset Analyser
 enchant-1.6.0nb8    Generic spell checking library
 engrampa-1.22.0     Archive manager utility for the MATE Environment
@@ -107,7 +107,7 @@ fltk-1.3.4          Fast Light Tool Kit for graphical user interfaces
 fontconfig-2.13.1   Library for configuring and customizing font access
 fossil-2.8nb1       High-reliability, distributed software configuration management
 fribidi-0.19.7      Free Implementation of the Unicode Bidirectional Algorithm
-gawk-4.2.1          GNU awk
+gawk-5.0.0          GNU awk
 gconfmm-2.28.3nb19  C++ bindings for gconf
 gd-2.2.5nb4         Graphics library for the dynamic creation of images
 gdbm-1.14.1         The GNU database manager
@@ -122,7 +122,7 @@ gettext-m4-0.19.8.1nb1 Autoconf/automake m4 files for GNU NLS library
 gettext-tools-0.19.8.1nb1 Tools for providing messages in different languages
 gexiv2-0.10.8       GObject-based wrapper around the Exiv2 library
 ghostscript-9.05nb17 Meta-package for installing the preferred ghostscript version
-ghostscript-agpl-9.26nb3 Postscript interpreter
+ghostscript-agpl-9.27 Postscript interpreter
 ghostscript-fonts-8.11nb3 Postscript fonts for Aladdin Ghostscript
 giflib-5.1.4        GIF image format library
 gimp-2.10.10        The GNU image manipulation program
@@ -169,7 +169,7 @@ gtk-doc-1.29nb1     Tools for authors of the GTK+ reference documentation
 gtk2+-2.24.32nb7    GIMP Toolkit v2 - libraries for building X11 user interfaces
 gtk2-engines-2.20.2nb25 Theme engines for GTK+ version 2
 gtk2-engines-murrine-0.98.2nb8 GTK2+ engine featuring a modern glassy look
-gtk3+-3.24.5        GIMP Toolkit v3 - libraries for building X11 user interfaces
+gtk3+-3.24.8        GIMP Toolkit v3 - libraries for building X11 user interfaces
 gtkmm-2.24.5nb7     C++ interface to Gtk+ v2
 gtksourceview2-2.10.5nb33 Text widget that extends GTK2's GtkTextView widget (v2)
 gtksourceview3-3.24.9 Text widget that extends GTK3's GtkTextView widget (v3)
@@ -185,7 +185,7 @@ harfbuzz-2.4.0nb2   OpenType text shaping engine
 help2man-1.47.10    Generate simple manual pages from program output
 hicolor-icon-theme-0.17 Standard icon theme called hicolor
 hsqldb18-1.8.0.10   Relational database management system witten in pure Java
-http-parser-2.9.0   Parser for HTTP messages written in C
+http-parser-2.9.2   Parser for HTTP messages written in C
 hunspell-1.7.0      Improved spellchecker
 hunspell-en_US-20060207 US American English dictionaries for hunspell
 hwloc-1.11.12       Portable Hardware Locality
@@ -203,7 +203,7 @@ intltool-0.51.0nb3  Internationalization Tool Collection
 iso-codes-3.77      List of country, language and currency names
 itstool-2.0.6       ITS Tool allows you to translate XML documents with PO files
 jasper-2.0.14       Software-based reference implementation of the JPEG-2000 codec
-jbig2dec-0.15       JBIG2 decoder library
+jbig2dec-0.16       JBIG2 decoder library
 jbigkit-2.1         JBIG-KIT lossless image compression library
 jemalloc-5.1.0nb2   General purpose malloc(3) implementation
 jpeg-9cnb1          IJG's jpeg compression utilities
@@ -311,7 +311,7 @@ libunique-1.1.6nb28 Library for writing single instance applications (deprecated
 libunistring-0.9.10 Unicode string library
 libusb1-1.0.22      USB Access Library (version 1)
 libuuid-2.32.1      Generate unique identifiers for objects
-libuv-1.27.0        Cross-platform asychronous I/O
+libuv-1.28.0        Cross-platform asychronous I/O
 libv4l-0.4.3nb3     Video4Linux userspace library
 libva-2.3.0         Video Acceleration API
 libvisio-0.1.6nb10  Library and tools for parsing the visio file format
@@ -390,7 +390,7 @@ nasm-2.14.02        General-purpose x86 assembler
 ncurses-6.1nb5      CRT screen handling and optimization package
 netpbm-10.79.04nb1  Toolkit for conversion of images between different formats
 nettle-3.4.1        Cryptographic library
-nghttp2-1.37.0      Implementation of HTTP/2 in C
+nghttp2-1.38.0      Implementation of HTTP/2 in C
 nginx-1.14.2nb1     Lightweight HTTP server and mail proxy server
 ninja-build-1.9.0   Small build system with a focus on speed
 nodejs-10.15.3nb2   V8 JavaScript for clients and servers
@@ -431,7 +431,7 @@ p5-MailTools-2.20nb1 Perl5 modules related to mail applications
 p5-Module-Build-0.42240nb1 Build and install Perl modules
 p5-Mozilla-CA-20180117nb1 Mozilla's CA cert bundle for Perl
 p5-Net-3.11nb1      Perl5 modules to access and use network protocols
-p5-Net-DNS-1.19     Perl5 module for DNS resolution
+p5-Net-DNS-1.20     Perl5 module for DNS resolution
 p5-Net-Domain-TLD-1.75nb2 Work with TLD names
 p5-Net-IP-1.26nb6   Perl extension for manipulating IPv4/IPv6 addresses
 p5-Net-LibIDN-0.12nb10 Perl bindings for GNU Libidn
@@ -443,7 +443,7 @@ p5-Socket6-0.29     Perl5 module to support getaddrinfo() and getnameinfo()
 p5-Sub-Identify-0.14nb2 Perl 5 module to retrieve names of code references
 p5-Sub-Uplevel-0.2800nb2 Apparently run a function in a higher stack frame
 p5-Test-Exception-0.43nb3 Test exception based code
-p5-Test-Needs-0.002005nb2 Skip tests when modules not available
+p5-Test-Needs-0.002006 Skip tests when modules not available
 p5-Test-Warn-0.36nb1 Perl extension to test methods for warnings
 p5-TimeDate-2.30nb5 Perl5 TimeDate distribution
 p5-Tree-DAG_Node-1.31nb1 Class for representing nodes in a tree
@@ -485,7 +485,7 @@ pkg_tarup-1.9.1     Generates binary package(s) from installed pkg(s)
 pkgclean-20051116   Quickly clean up all work directories in pkgsrc
 pkgconf-1.6.0       API-driven pkg-config replacement
 pkgdiff-1.8nb3      Tools to create, maintain, and send back patches for pkgsrc
-png-1.6.36          Library for manipulating PNG images
+png-1.6.37          Library for manipulating PNG images
 policykit-0.9nb21   Framework for managing admin policies and privileges
 polkit-0.115nb2     Authorization Manager
 poppler-0.74.0      PDF rendering library
@@ -518,7 +518,7 @@ py27-cffi-1.12.2    Foreign Function Interface for Python calling C code
 py27-chardet-3.0.4  Character encoding auto-detection in Python
 py27-cparser-2.19   C parser in Python
 py27-cryptography-2.6.1 Cryptographic recipes and primitives for Python
-py27-cython-0.29.6  C-Extensions for Python
+py27-cython-0.29.7  C-Extensions for Python
 py27-dbus-1.2.8     Python bindings for the D-BUS message bus system
 py27-docutils-0.14  Python tool to generate documents
 py27-enum34-1.1.6   Python module for enums like in python-3.4
@@ -551,17 +551,17 @@ py27-pytz-2019.1    World timezone definitions, modern and historical
 py27-requests-2.21.0 HTTP library, written in Python, for human beings
 py27-roman-3.1      Integer to Roman numerals converter for Python
 py27-scandir-1.10.0 Better directory iterator and faster os.walk()
-py27-setuptools-40.9.0 New Python packaging system
+py27-setuptools-41.0.0 New Python packaging system
 py27-setuptools_scm-3.2.0 Manage your versions by scm tags
 py27-six-1.12.0     Python 2 and 3 compatibility utilities
 py27-snowballstemmer-1.2.1 Python module with stemmer algorithms for multiple natural languages
 py27-sphinx-1.8.5   Python documentation generator
 py27-sphinxcontrib-websupport-1.1.0 Sphinx API for Web Apps
-py27-test-4.4.0     Python testing tool
+py27-test-4.4.1     Python testing tool
 py27-traceback2-1.4.0 Backport of the traceback module to older Python versions
 py27-typing-3.6.6   Type Hints for Python
 py27-unittest2-1.1.0 New features in unittest backported to Python 2.4+
-py27-urllib3-1.24.1 HTTP library with thread-safe connection pooling
+py27-urllib3-1.24.2 HTTP library with thread-safe connection pooling
 py37-anytree-2.6.0  Powerful and Lightweight Python Tree Data Structure
 py37-cairo-1.18.0   Python bindings for cairo
 py37-docutils-0.14  Python tool to generate documents
@@ -619,8 +619,8 @@ ruby24-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 ruby24-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
 ruby24-unf_ext-0.0.7.5 Unicode Normalization Form support library for CRuby
 ruby25-base-2.5.5   Ruby 2.5.5 release minimum base package
-rust-1.33.0         Safe, concurrent, practical language
-samba-3.6.25nb15    SMB/CIFS protocol server suite
+rust-1.34.0         Safe, concurrent, practical language
+samba-3.6.25nb16    SMB/CIFS protocol server suite
 seamonkey-2.49.4nb6 Full-featured gecko-based browser
 seamonkey-l10n-2.49.4 Language packs for www/seamonkey
 shared-mime-info-1.10 Core database of common types
@@ -631,7 +631,7 @@ speex-1.2.0         Open-source, patent-free voice codec
 speexdsp-1.2rc3     Open-source, patent-free voice codec DSP library
 spidermonkey52-52.7.4nb7 Standalone JavaScript implementation in C (major version 52)
 sqlite-2.8.17nb1    SQL Database Engine in a C Library
-sqlite3-3.27.2nb1   SQL Database Engine in a C Library
+sqlite3-3.28.0      SQL Database Engine in a C Library
 startup-notification-0.12nb3 X11 application startup notification library
 sudo-1.8.27         Allow others to run commands as root
 swig-1.3.38nb1      Simplified Wrapper and Interface Generator (version 1)
@@ -652,7 +652,7 @@ unixodbc-2.3.7      ODBC 2.x/3.x driver manager
 unzip-6.0nb8        List, test and extract compressed files in a ZIP archive
 upower-0.99.4nb4    Power management system message bus service
 usbids-20081118     Repository of USB IDs (usb.ids database)
-vala-0.44.2         Compiler for the GObject type system
+vala-0.44.3         Compiler for the GObject type system
 vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
 vte-0.28.1nb23      Terminal widget with improved accessibility and I18N support
 vte3-0.54.3         Terminal widget with improved accessibility and I18N support
