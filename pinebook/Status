@@ -4,43 +4,12 @@ cat << EOF
 To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
-My Question:
-- cant get mouse middle click button 
+Fixed:
 - timezone behavior changes between 8.99.36->37
- % ls -l /etc/localtime 
-lrwxr-xr-x  1 root  wheel  25 Dec 16 20:54 /etc/localtime -> /usr/share/zoneinfo/Japan
- % date
- Sat Apr 13 14:44:47 LMT 2019 <<<<<< timezone changes JST to LMT
+ http://mail-index.netbsd.org/source-changes/2019/04/17/msg105201.html
 
 Update:
-- NetBSD 8.99.37:  
-  Overhaul the API used to fetch and store individual memory cells in
-  userspace.
- http://mail-index.netbsd.org/source-changes/2019/04/06/msg104813.html
-
-- Fix race conditions about pmap_page_protect() and pmap_enter(). 
- http://mail-index.netbsd.org/source-changes/2019/04/06/msg104838.html
-
-- Explicitly include bold8x16 and bold16x32 fonts
- http://mail-index.netbsd.org/source-changes/2019/04/07/msg104865.html
-
-- free empty page tables pages if reach a certain usage.
-- need to lock at removing an old pg (_pmap_remove_pv) in _pmap_enter()
- http://mail-index.netbsd.org/source-changes/2019/04/08/msg104914.html
-
--  add missing userret() at the end of md_child_return().
- http://mail-index.netbsd.org/source-changes/2019/04/10/msg104954.html
-
-- ?CVE-2019-9498,9494,9495
- http://mail-index.netbsd.org/source-changes/2019/04/10/msg104971.html
- http://mail-index.netbsd.org/source-changes/2019/04/10/msg104972.html
-
-- COMPAT_NETBSD32 to work on also thumbmode 
- http://mail-index.netbsd.org/source-changes/2019/04/12/msg105042.html
-
-- mpv: enable support for DRM on NetBSD
- http://mail-index.netbsd.org/pkgsrc-changes/2019/02/05/msg187140.html
- mpv -vo drm ?
+- dhcpcd-7.2.0 libssh-34.0 openssh-8.0 opensshd-8.0
 
 TEST kernel:
 - deforaos-camera: camera capture,and reboot
@@ -72,47 +41,26 @@ works well:
  https://wiki.netbsd.org/ports/evbarm/allwinner/#index3h2
 - replace AC Adapter for heavy load
  Anker PowerPort10 A2133+USB DC Cable with 3.5mm/1.35mm connecter
+- mpv: enable support for DRM on NetBSD
+ http://mail-index.netbsd.org/pkgsrc-changes/2019/02/05/msg187140.html
+ mpv -vo drm ?
 
 System Updates:
 
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 sysinfo:
- NetBSD-8.99.37 pkg_install-20190405
- sh-20181212-20190412110222Z userland-NetBSD-8.99.37/evbarm
+ dhcpcd-7.2.0 libssh-34.0 openssh-8.0 opensshd-8.0
+ sh-20181212-20190421024035Z
 
 pkgsrc:
- ImageMagick-7.0.8.38 ap24-php71-7.1.28nb2 apache-2.4.39nb1
- apr-util-1.6.1nb5 avahi-0.6.32nb18 babl-0.1.62
- boehm-gc-8.0.4 boost-libs-1.69.0nb1 bsdtar-3.3.3
- caja-extensions-1.22.0nb1 cmake-3.14.1 curl-7.64.1
- deforaos-libdatabase-0.0.1nb12 emacs26-26.1nb8
- farstream-0.2.8nb12 ffmpeg4-4.1.3 firefox52-52.9.0nb13
- fltk-1.3.4 fossil-2.8nb1 gegl-0.4.14 gimp-2.10.10
- gnupg2-2.2.15nb1 gpgme-1.13.0 gssdp-1.0.3nb2
- gupnp-1.0.3nb3 gupnp-igd-0.2.5nb5 gvfs-1.6.7nb42
- harfbuzz-2.4.0nb2 ibus-mozc-2.20.2673.102nb13
- icu-64.1 inkscape-0.92.3nb4 itstool-2.0.6
- libarchive-3.3.3 libbluray-1.1.1 libcdr-0.1.5nb1
- libe-book-0.1.3nb7 libfreehand-0.1.1nb21 libgweather-2.30.3nb48
- libical-3.0.3nb4 libmateweather-1.22.0nb1 libmspub-0.1.4nb7
- libnice-0.1.15nb1 libpsl-0.20.2nb3 libqxp-0.0.2nb1
- libsoup-2.64.2nb3 libvisio-0.1.6nb10 libyaml-0.2.2nb1
- libzmf-0.0.2nb9 mate-applets-1.22.0nb1 mate-icon-theme-1.22.1
- mate-media-1.22.1 mate-panel-1.22.0nb1 mlterm-3.8.8
- mozc-renderer-2.20.2673.102nb13 mozc-server-2.20.2673.102nb13
- mozc-tool-2.20.2673.102nb13 nodejs-10.15.3nb2
- nss-3.43nb1 openjpeg-2.3.1 osabi-NetBSD-8.99.37
- php-7.1.28 php71-curl-7.1.28nb1 php71-fpm-7.1.28nb2
- php71-gd-7.1.28 php71-iconv-7.1.28 php71-intl-7.1.28nb2
- php71-json-7.1.28 php71-mbstring-7.1.28 php71-pdo-7.1.28
- php71-pdo_sqlite-7.1.28nb2 php71-posix-7.1.28 php71-zip-7.1.28
- php71-zlib-7.1.28 poppler-0.74.0 poppler-glib-0.74.0
- poppler-includes-0.74.0 protobuf-3.7.1 py27-jinja2-2.10.1
- py27-pyparsing-2.4.0 py27-pytz-2019.1 py27-setuptools-40.9.0
- py27-test-4.4.0 qt5-qtbase-5.12.2nb2 ruby24-base-2.4.6
- seamonkey-2.49.4nb6 spidermonkey52-52.7.4nb7 sqlite3-3.27.2nb1
- tcl-8.6.9nb1 vala-0.44.2 wget-1.20.3 xfce4-orage-4.12.1nb14
+ ImageMagick-7.0.8.40 apr-1.7.0 arandr-0.1.10 cmake-3.14.2
+ cups-base-2.2.11 emacs-26.2 emacs26-26.2 gawk-5.0.0
+ ghostscript-agpl-9.27 gtk3+-3.24.8 http-parser-2.9.2
+ jbig2dec-0.16 libuv-1.28.0 nghttp2-1.38.0 p5-Net-DNS-1.20
+ p5-Test-Needs-0.002006 png-1.6.37 py27-cython-0.29.7
+ py27-setuptools-41.0.0 py27-test-4.4.1 py27-urllib3-1.24.2
+ rust-1.34.0 samba-3.6.25nb16 sqlite3-3.28.0 vala-0.44.3
 
 ToDo:
 - HDMI output
