@@ -3,11 +3,12 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-04-20/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-06-01/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.37-evbarm-${ARCH}-201904142230Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.39-evbarm-${ARCH}-201905090330Z.iso
+
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
