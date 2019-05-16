@@ -1,12 +1,21 @@
 # Makefile for RPI image.
+#Filesystem   512-blocks       Used      Avail %Cap Mounted on
+#/dev/ld0a     119457060    4428267  109055940   3% /
+#/dev/ld0e        188192      75432     112760  40% /boot
+#kernfs                2          2          0 100% /kern
+#ptyfs                 2          2          0 100% /dev/pts
+#procfs               16         16          0 100% /proc
+#tmpfs            485376         16     485360   0% /tmp
+#tmpfs            485376         16     485360   0% /var/shm
+#/dev/sd0a     465183712   93936240  347988288  21% /mnt
 
 ARCH=earmv7hf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-02-10/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-06-01/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.36-evbarm-${ARCH}-201903201940Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.39-evbarm-${ARCH}-201905101150Z.iso
 
 PKGSRC=../../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 

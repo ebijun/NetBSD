@@ -1,4 +1,10 @@
 # Makefile for RPI image.
+#
+#5160960=
+#8192+188416+262144+4702208
+#
+#Filesystem   512-blocks       Used      Avail %Cap Mounted on
+#/dev/ld0a     120895282    4408554  110441964   3% /
 
 ARCH=earmv6hf
 #ARCH=earm
@@ -7,8 +13,7 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-06-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.39-evbarm-${ARCH}-201905090330Z.iso
-
+IMAGE=/usr/release/images/NetBSD-8.99.40-evbarm-${ARCH}-201905150450Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -99,8 +104,8 @@ rpi:
 file: 
 	echo Create ${FILE}.
 #	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
-	dd if=/dev/zero of=${FILE} bs=512 count=4915200 progress=62000
-#	 2048*2400
+	dd if=/dev/zero of=${FILE} bs=512 count=5160960 progress=62000
+#	 2048*2520
 	sleep 3
 
 # stop sshd for package install
