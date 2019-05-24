@@ -32,6 +32,14 @@ Update:
 - sysinfo and pkgsrc update 
  https://github.com/ebijun/NetBSD/commit/406fd38fbf6ff8b046c36127b8122ee87640c963#diff-4a755d73dbba5da21bbf783139f086dc
 
+Keyboard layout checkpoint:
+ http://www.netbsd.org/docs/guide/en/chap-cons.html
+
+/etc/wscons.conf
+ #encoding sv
+ #encoding us.swapctrlcaps
+ encoding jp
+
 System Update:
 
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
@@ -400,11 +408,6 @@ If delete console=fb definition,you can get serial console instead.
  rpi$ more /boot/cmdline.txt
  root=ld0a console=fb
 
-Keyboard layout checkpoint:
-/etc/wscons.conf
- #encoding sv
- #encoding us.swapctrlcaps
- encoding jp
 
 /root/.xinitrc
  setxkbmap -model jp106 jp
