@@ -1,52 +1,54 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2019-04-20/2019-04-20/g
-:1,$s/8.99.37/8.99.37/g
+:1,$s/2019-05-31/2019-05-31/g
+:1,$s/8.99.41/8.99.41/g
 :1,$s/201904142230Z/201904142230Z/g
-:1,$s?2019/04/16/msg005599.html?2019/04/16/msg005599.html?
+:1,$s?2019/05/23/msg005736.html?2019/05/23/msg005736.html?
 
-2019-04-20-netbsd-raspi-earmv6hf.img
+2019-05-31-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2019 Okinawa NetBSD booth demonstration,
-I've updated 2019-04-20-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2019 Hokkaido NetBSD booth demonstration,
+I've updated 2019-05-31-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2019/04/16/msg005599.html
+http://mail-index.netbsd.org/port-arm/2019/05/23/msg005736.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-04-20-earmv6hf/2019-04-20-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-05-31-earmv6hf/2019-05-31-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD-current 8.99.37 evbarm-earmv6hf 201904142230Z rpi.img from nyftp.
-- libstdc++-9.0
-- mlterm-3.8.8
-- ruby24-base-2.4.6
+- AUDIO2 merged,thanx isaki@!
+ http://mail-index.netbsd.org/source-changes/2019/05/08/msg105808.html
+ http://mail-index.netbsd.org/tech-kern/2019/04/01/msg024944.html
+
+- NetBSD-current 8.99.41 evbarm-earmv6hf 201905220030Z rpi.img from nyftp.
+- add python37 and more image size to fit.
+- bind-9.14.1 dhcpcd-7.2.2 libssh-34.0 openssh-8.0
+- mikutter-3.8.7
+- NetBSD Security Advisory 2019-002,2019-003
+ http://mail-index.netbsd.org/security-announce/2019/05/03/msg000134.html
+ http://mail-index.netbsd.org/security-announce/2019/05/03/msg000133.html
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/77c74f56ec35710b68a2afca8fcfc1fb76904aa0
-
-TEST kernel:
-- AUDIO2
- apply: http://mail-index.netbsd.org/tech-kern/2019/04/01/msg024944.html
-  compiled kernel:
-   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-04-20-earmv6hf/AUDIO2/
+ https://github.com/ebijun/NetBSD/commit/406fd38fbf6ff8b046c36127b8122ee87640c963#diff-4a755d73dbba5da21bbf783139f086dc
 
 System Update:
 
 sysinfo:
- libstdc++-9.0 NetBSD-8.99.37 pkg_install-20190405
- sh-20181212-20190414220950Z tzdata-2019a
- userland-NetBSD-8.99.37/evbarm
+ bind-9.14.1 dhcpcd-7.2.2 libssh-34.0 NetBSD-8.99.41 openssh-8.0
+ opensshd-8.0 sh-20181212-20190521223413Z tcsh-6.21.00
+ userland-NetBSD-8.99.41/evbarm
 
 pkgsrc:
- curl-7.64.1 fossil-2.8nb1 harfbuzz-2.4.0nb2 icu-64.1
- libXft-2.3.3 libgpg-error-1.36 libpsl-0.20.2nb3
- libyaml-0.2.2nb1 mlterm-3.8.8 ruby24-base-2.4.6
- ruby24-gnome2-atk-3.3.6 ruby24-gnome2-cairo-gobject-3.3.6
- ruby24-gnome2-gdkpixbuf-3.3.6 ruby24-gnome2-gio-3.3.6
- ruby24-gnome2-glib-3.3.6 ruby24-gnome2-gobject-introspection-3.3.6
- ruby24-gnome2-gtk-3.3.6 ruby24-gnome2-pango-3.3.6
- uim-1.8.6nb59 wget-1.20.3 zsh-5.7.1nb1
+ bash-5.0.7 dbus-1.12.14 glib2-2.56.2nb4
+ gobject-introspection-1.56.1nb2 gtk2+-2.24.32nb8 gtk3+-3.24.8
+ icu-64.2nb1 libepoxy-1.4.3nb1 libpsl-0.20.2nb4
+ medit-1.2.0nb10 mozilla-rootcerts-1.0.20190306
+ p5-Net-DNS-1.20 pcre2-10.33 perl-5.28.2 png-1.6.37
+ py37-cElementTree-3.7.3 py37-expat-3.7.3 python37-3.7.3nb1
+ ruby24-mikutter-3.8.7 ruby24-moneta-1.1.1
+ ruby24-pkg-config-1.3.7 ruby24-pluggaloid-1.1.2
+ tcsh-6.21.00 uim-1.8.6nb60
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
