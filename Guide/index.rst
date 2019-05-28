@@ -23,6 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/okinawa
+ Place/hokkaido
  RPI/RPIupdate2019
  Place/intro
