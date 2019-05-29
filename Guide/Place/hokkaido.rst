@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -84,13 +84,13 @@
  国稀酒造,増毛,日本最北の酒蔵
  カラハナ,南2条西7,クラフトビール
  COOL BEER CRAFT,豊水すすきの1番出口,クラフトビール
- 月と太陽,三角市場,Crunchy Nuts Roomはパルコ地下2階
+ 月と太陽,三角市場,クラフトビール 17:30-24:00
  MANDA,狸小路6,世界のビールとピザ 11:30-02:00
  IKEMU,南2西5,9時からカフェ/16:00からワインバー。JBLDD66000エベレスト
  ギャラリー犬飼,豊平三条一丁目,豊平川近く。粒々研究所とは何か。
  かんろ,札幌駅,本店:北8西1 北口:北6西6 北一条:北1西8 発寒:5条3 17:00-
  ミンガス,大通32番出口,9:00-24:00
- CRAFTBEERFOREST,ばんけいスキー場,2018/7/6-7 12:00-18:00
+ CRAFTBEERFOREST,ばんけいスキー場,2019/7/6-7 12:00-18:00
  北天道書店,北18条西3,日曜定休
  六花亭,駅前本店,バター
  BUND CAFE,南1条西5,2018/6に移転
@@ -204,6 +204,23 @@ OSC北海道展示物
 #. Making install-image Presentation by つついさん
   http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html
 
+2018年
+^^^^^^^^^^^^^^^^^^
+
+.. image::  ../Picture/2018/07/07/DSC_5659.JPG
+.. image::  ../Picture/2018/07/07/DSC_5660.JPG
+.. image::  ../Picture/2018/07/07/DSC_5661.JPG
+.. image::  ../Picture/2018/07/07/DSC_5662.JPG
+.. image::  ../Picture/2018/07/07/DSC_5666.JPG
+.. image::  ../Picture/2018/07/07/DSC_5668.JPG
+.. image::  ../Picture/2018/07/07/DSC_5675.JPG
+.. image::  ../Picture/2018/07/07/DSC_5676.JPG
+.. image::  ../Picture/2018/07/07/DSC_5679.JPG
+.. image::  ../Picture/2018/07/07/DSC_5684.JPG
+.. image::  ../Picture/2018/07/07/DSC_5686.JPG
+.. image::  ../Picture/2018/07/07/DSC_5687.JPG
+
+
 2017年
 ^^^^^^^^^^^^^^^^^
 .. image::  ../Picture/2017/07/15/DSC_3784.JPG
@@ -212,14 +229,11 @@ OSC北海道展示物
 .. image::  ../Picture/2017/07/15/DSC_3794.JPG
 .. image::  ../Picture/2017/07/15/DSC_3795.JPG
 .. image::  ../Picture/2017/07/15/DSC_3796.JPG
-.. image::  ../Picture/2017/07/15/DSC_3797.JPG
 .. image::  ../Picture/2017/07/15/DSC_3799.JPG
 .. image::  ../Picture/2017/07/15/DSC_3800.JPG
 .. image::  ../Picture/2017/07/15/DSC_3802.JPG
 .. image::  ../Picture/2017/07/15/DSC_3803.JPG
 .. image::  ../Picture/2017/07/15/DSC_3804.JPG
-.. image::  ../Picture/2017/07/15/DSC_3808.JPG
-.. image::  ../Picture/2017/07/15/DSC_3809.JPG
 .. image::  ../Picture/2017/07/15/DSC_3810.JPG
 
 2016年
