@@ -11,11 +11,12 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-06-01/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-07-13/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.39-evbarm-${ARCH}-201905101150Z.iso
+IMAGE=/usr/release/images/NetBSD-8.99.43-evbarm-${ARCH}-201906110720Z.iso
+
 
 PKGSRC=../../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -138,7 +139,8 @@ release:
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
 	(cd ../..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
-	(cd ../../boot;cp * ${MNT}/boot)
+# earmv7hf: config.txt should contain start address
+#	(cd ../../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	umount ${MNT}/boot
 	umount ${MNT}
