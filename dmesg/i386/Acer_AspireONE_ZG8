@@ -4,11 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.30 (GENERIC) #0: Tue Jan 15 07:11:23 UTC 2019
+NetBSD 8.99.43 (GENERIC) #0: Sun Jun  9 07:54:55 UTC 2019
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC
 total memory = 2035 MB
 avail memory = 1981 MB
-rnd: seeded with 128 bits
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 running cgd selftest aes-xts-256 aes-xts-512 done
@@ -36,17 +35,17 @@ cpu0: package 0, core 0, smt 0
 cpu1 at mainbus0 apid 1
 cpu1: Intel(R) Atom(TM) CPU N270   @ 1.60GHz, id 0x106c2
 cpu1: package 0, core 0, smt 1
-acpi0 at mainbus0: Intel ACPICA 20181213
+acpi0 at mainbus0: Intel ACPICA 20190405
 acpi0: X/RSDT: OemId <ACER  ,ACER    ,00000001>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3C9994C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3CC938C 000239 (v02 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3A92A0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0x00000000C3AD2A0C 0001C7 (v02 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3A708DC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3AB08FC 0000D0 (v02 PmRef  Cpu1Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0x00000000C3C97E7C 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
+ACPI: SSDT 0x00000000C3CC703C 000083 (v02 PmRef  Cpu1Cst  00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
@@ -108,9 +107,9 @@ hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
 hdafg0: ADC01 2ch: Mic In [Jack]
 hdafg0: ADC02 2ch: Mic In [Built-In]
 hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
-audio0 at hdafg0: full duplex, playback, capture, mmap, independent
-hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-hdafg0: Latency: 128 milliseconds
+audio0 at hdafg0: playback, capture, full duplex, independent
+audio0: slinear_le:16 2ch 48000Hz, blk 40ms for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 40ms for recording
 ppb0 at pci0 dev 28 function 0: vendor 8086 product 27d0 (rev. 0x02)
 ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
 pci1 at ppb0 bus 1
@@ -212,28 +211,38 @@ IPsec: Initialized Security Association Processing.
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 acpibat0: SONY LION rechargeable battery
 acpibat0: granularity: low->warn 0.032 Ah, warn->full 0.032 Ah
+ehci0: handing over full speed device on port 1 to uhci0
 wd0 at atabus0 drive 0
 wd0: <HGST HTS721010A9E630>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
 wd0: 931 GB, 1938021 cyl, 16 head, 63 sec, 512 bytes/sect x 1953525168 sectors
 wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags) w/PRIO
 wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags) w/PRIO
-uvideo0 at uhub4 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
-video0 at uvideo0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/8.99.30/modules
+kern.module.path=/stand/i386/8.99.43/modules
 kern info: [drm] Memory usable by graphics device = 256M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
 kern info: [drm] initialized overlay support
 intelfb0 at i915drmkms0
-intelfb0: framebuffer at 0xdc35d000, size 1024x600, depth 32, stride 4096
+intelfb0: framebuffer at 0xdc36f000, size 1024x600, depth 32, stride 4096
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
+uvideo0 at uhub0 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
+video0 at uvideo0: Sonix Technology Co., Ltd. (0xc45) WebCam (0x62c0), rev 2.00/1.00, addr 2
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+video0: detached
+uvideo0: detached
+uvideo0: at uhub0 port 1 (addr 2) disconnected
+ehci0: handing over full speed device on port 1 to uhci0
+uhub0: autoconfiguration error: device problem, disabling port 1
+ehci0: handing over full speed device on port 1 to uhci0
+uhub4: autoconfiguration error: port 1 reset failed
+ehci0: handing over full speed device on port 1 to uhci0
+uhub0: autoconfiguration error: device problem, disabling port 1
