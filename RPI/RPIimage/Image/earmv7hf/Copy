@@ -17,6 +17,6 @@ progress $COMPRESS -f ${DATE}-netbsd-${BOARD}.img${SUFFIX} dd of=/dev/${DEVICE} 
 #make cdunmount
 
 #armv7.img.gz
-#make -f Makefile.RPI2 cdmount
+#make -f Makefile cdmount
 #progress -z -f /mnt1/evbarm/binary/gzimg/armv7.img.gz dd of=/dev/${DEVICE} bs=4m
-#make -f Makefile.RPI2 cdunmount
+#make -f Makefile cdunmount

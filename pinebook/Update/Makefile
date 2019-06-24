@@ -1,5 +1,5 @@
 RELEASE=/usr/release/images
-ISO=${RELEASE}/NetBSD-8.99.40-evbarm-aarch64-201905141530Z.iso
+ISO=${RELEASE}/NetBSD-8.99.47-evbarm-aarch64-201906211140Z.iso
 
 ##
 
@@ -17,8 +17,8 @@ update:
 	for i in ${LIST} ;do tar xzpf $$i -C / ;  done
 
 kernel-update:
-	cp /mnt/evbarm/binary/kernel/sun50i-a64-pinebook.dtb.gz /boot/dtb/
-	gunzip /boot/dtb/sun50i-a64-pinebook.dtb.gz
+	cp /mnt/evbarm/binary/kernel/sun50i-a64-pinebook.dtb.gz /boot/dtb/allwinner
+	gunzip /boot/dtb/allwinner/sun50i-a64-pinebook.dtb.gz
 	cp /mnt/evbarm/binary/kernel/netbsd-GENERIC64.gz /
 	gunzip /netbsd-GENERIC64.gz
 	mv /netbsd-GENERIC64 /netbsd
