@@ -1,0 +1,33 @@
+RPI4
+Cortex-A72
+BCM2711
+VIA VL805
+BCM54213PE
+Hardware : BCM2835
+bcm2711-rpi-4-b.dtb
+https://qiita.com/eggman/items/402d8ba20fa021cc4531
+
+https://github.com/raspberrypi/firmware.git/
+cd /usr/local/NetBSD/RPI
+git pull
+
+COPYING.linux             bcm2710-rpi-3-b.dtb       kernel.img
+Copy                      bcm2710-rpi-cm3.dtb       kernel7.img
+Do                        bcm2711-rpi-4-b.dtb       kernel7l.img
+LICENCE.broadcom          bootcode.bin              overlays
+List                      fixup.dat                 start.elf
+bcm2708-rpi-b-plus.dtb    fixup4.dat                start4.elf
+bcm2708-rpi-b.dtb         fixup4cd.dat              start4cd.elf
+bcm2708-rpi-cm.dtb        fixup4db.dat              start4db.elf
+bcm2708-rpi-zero-w.dtb    fixup4x.dat               start4x.elf
+bcm2708-rpi-zero.dtb      fixup_cd.dat              start_cd.elf
+bcm2709-rpi-2-b.dtb       fixup_db.dat              start_db.elf
+bcm2710-rpi-3-b-plus.dtb  fixup_x.dat               start_x.elf
+
+cp boot/* 
+cp boot/overlays/*
+mv kernel7l.img kernel7l.img.org
+
+src/sys/external/gpl2/dts/dist/arch/arm/boot/dts
+
+https://raw.githubusercontent.com/raspberrypi/linux/rpi-5.1.y/arch/arm/boot/dts/bcm2711-rpi-4-b.dts
