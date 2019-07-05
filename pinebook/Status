@@ -10,6 +10,11 @@ Update:
 - openssl-1.1.1c
 - bind-9.14.1
 
+PR:
+ port-arm/54342 
+  Pinebook screen glitches/offsets on top and extreme right of the 
+  screen with modeset enabled.
+
 TEST kernel:
 - deforaos-camera: camera capture,and reboot
  apply: http://mail-index.netbsd.org/port-arm/2019/01/21/msg005392.html
