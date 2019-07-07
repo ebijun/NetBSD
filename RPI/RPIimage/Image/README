@@ -1,36 +1,30 @@
-VERSION: :1,$s/2019-06-01/2019-06-01/g
-ISO:     :1,$s/201905220030Z/201905220030Z/g
-NetBSD:  :1,$s/8.99.41/8.99.41/g
-PKGSRC:  :1,$s/2019-06-01/2019-06-01/
+VERSION: :1,$s/2019-07-13/2019-07-13/g
+ISO:     :1,$s/201907060350Z/201907060350Z/g
+NetBSD:  :1,$s/8.99.50/8.99.50/g
+PKGSRC:  :1,$s/2019-07-13/2019-07-13/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2019-05-31-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2019-07-13-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2019-05-31-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2019-07-13-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-05-31-earmv6hf/2019-05-31-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-05-31-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-07-13-earmv6hf/2019-07-13-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-07-13-earmv6hf/MD5
 
 Update:
-- AUDIO2 merged,thanx isaki@!
- http://mail-index.netbsd.org/source-changes/2019/05/08/msg105808.html
- http://mail-index.netbsd.org/tech-kern/2019/04/01/msg024944.html
-
-- NetBSD-current 8.99.41 evbarm-earmv6hf 201905220030Z rpi.img from nyftp.
-- add python37 and more image size to fit.
-- bind-9.14.1 dhcpcd-7.2.2 libssh-34.0 openssh-8.0
-- mikutter-3.8.7
-- NetBSD Security Advisory 2019-002,2019-003
- http://mail-index.netbsd.org/security-announce/2019/05/03/msg000134.html
- http://mail-index.netbsd.org/security-announce/2019/05/03/msg000133.html
+- NetBSD-current 8.99.50 evbarm-earmv6hf 201907060350Z rpi.img from nyftp.
+- dhcpcd-7.2.3 libc-12.213 openssl-1.1.1c
+- git-base-2.22.0nb1 mlterm-3.8.8nb1 ruby24-mikutter-3.9.0
+- RPI4: not supported
+  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/README.RPI4
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/406fd38fbf6ff8b046c36127b8122ee87640c963#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/92304e0114b4b6deb3a8a4b1f35a6160e4c54fa7
 
 Keyboard layout checkpoint:
  http://www.netbsd.org/docs/guide/en/chap-cons.html
@@ -45,20 +39,18 @@ System Update:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 sysinfo:
- bind-9.14.1 dhcpcd-7.2.2 libssh-34.0 NetBSD-8.99.41 openssh-8.0
- opensshd-8.0 sh-20181212-20190521223413Z tcsh-6.21.00
- userland-NetBSD-8.99.41/evbarm
+ dhcpcd-7.2.3 libc-12.213 libcurses-8.2 NetBSD-8.99.50 openssl-1.1.1c
+ sh-20181212-20190706004502Z unbound-1.9.1
+ userland-NetBSD-8.99.50/evbarm
 
 pkgsrc:
- bash-5.0.7 dbus-1.12.14 glib2-2.56.2nb4
- gobject-introspection-1.56.1nb2 gtk2+-2.24.32nb8 gtk3+-3.24.8
- icu-64.2nb1 libepoxy-1.4.3nb1 libpsl-0.20.2nb4
- medit-1.2.0nb10 mozilla-rootcerts-1.0.20190306
- p5-Net-DNS-1.20 pcre2-10.33 perl-5.28.2 png-1.6.37
- py37-cElementTree-3.7.3 py37-expat-3.7.3 python37-3.7.3nb1
- ruby24-mikutter-3.8.7 ruby24-moneta-1.1.1
- ruby24-pkg-config-1.3.7 ruby24-pluggaloid-1.1.2
- tcsh-6.21.00 uim-1.8.6nb60
+ curl-7.65.1nb1 dbus-1.12.16 git-base-2.22.0nb1 glib2-2.60.4nb5
+ gobject-introspection-1.60.1nb1 harfbuzz-2.5.3 libepoxy-1.4.3nb2
+ libimagequant-2.12.3 libotf-0.9.16nb2 mlterm-3.8.8nb1
+ pango-1.42.4nb4 ruby24-addressable-2.6.0 ruby24-delayer-1.0.0
+ ruby24-delayer-deferred-2.1.1 ruby24-diva-1.0.0
+ ruby24-mikutter-3.9.0 ruby24-nokogiri-1.10.3 ruby24-pluggaloid-1.2.0
+ ruby24-twitter-text-3.0.0 uim-1.8.6nb61 wget-1.20.3nb1
 
 - mikutter support : 
  I make sample API key,pre-installed.
@@ -83,7 +75,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-06-01-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-07-13-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -142,7 +134,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-06-01/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-07-13/
 
 - If you use Official Package for NetBSD7.0:
 
@@ -150,7 +142,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/7.0_HEAD/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-06-01-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-07-13-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -329,21 +321,22 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2019 Hokkaido NetBSD booth.
+For Open Source Conference 2019 Nagoya NetBSD booth.
 I've updated raspberry-pi image.
 
- Mar.31-Jun.1 2019 Sat:
- https://www.ospn.jp/osc2019-do/
+ Jul.13 2019 Sat:
+ https://www.ospn.jp/osc2019-nagoya/
 
- NetBSD BoF Jun.1 16:10-16:55 JST
+ Nagoya *BSD Users' Group Meeting Jul.13. 16:15-17:00 JST
  https://www.ospn.jp/osc2019-do/modules/eguide/event.php?eid=7
 
-http://www.re.soum.co.jp/~jun/OSC2019hokkaido.pdf
+http://www.re.soum.co.jp/~jun/OSC2019nagoya.pdf
 http://www.jp.NetBSD.org/
+http://nagoya.bug.gr.jp/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2019.rst
 
-- NetBSD 8.99.41 earmv6hf rpi.img.gz base
+- NetBSD 8.99.50 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -381,7 +374,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-06-01/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-07-13/
 
 Installed Packages:
   bash
