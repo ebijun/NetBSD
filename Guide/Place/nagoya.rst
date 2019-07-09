@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -28,6 +28,27 @@
 このドキュメント：
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/nagoya.rst
 
+NBUG例会この一年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+ :widths: 10 15 20 40
+
+ 2019/6,黒川,菊井かつ,https://togetter.com/li/1368948
+ 2019/5,神宮西,あたりや,https://togetter.com/li/1356522
+ 2019/4,浄水,Kiya,https://togetter.com/li/1338485
+ 2019/3,神宮西,あたりや,https://togetter.com/li/1329539
+ 2019/2,池下,Shanties,https://togetter.com/li/1317714
+ 2019/1,池下,チャオチャオ餃子,https://togetter.com/li/1311472
+ 2018/12,御器所,OkiDoki,https://togetter.com/li/1298705
+ 2018/11,池下,Shanties,https://togetter.com/li/1289627
+ 2018/10,円頓寺,Yマーケット,https://togetter.com/li/1278815
+ 2018/9,円頓寺,OSC広島,https://togetter.com/li/1269541
+ 2018/8,円頓寺,美濃路,https://togetter.com/li/1258229
+ 2018/7,御器所,KEG,https://togetter.com/li/1249049
+ 2018/6,円頓寺,なやばし夜イチ,https://togetter.com/li/1240586
+ 2018/5,OSC名古屋,OkiDoki,https://togetter.com/li/1228817
+
 名古屋でのオープンソースカンファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. Github/NetBSD/Guide/OSC/OSC100.csv 更新
@@ -46,7 +67,8 @@
  2015 Nagoya,5/22-23,550,39,名古屋国際センター
  2016 Nagoya,5/28,500,35,名古屋市中小企業振興会館 
  2017 Nagoya,5/27,500,37,名古屋市中小企業振興会館 
- 2018 Nagoya,5/19,,37,名古屋市中小企業振興会館 
+ 2018 Nagoya,5/19,500,37,名古屋市中小企業振興会館 
+ 2019 Nagoya,7/13,,29,名古屋市中小企業振興会館 
 
 オープンソースカンファレンス以前
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,7 +89,7 @@
  :widths: 30 20 60
 
  円頓寺商店街,国際センター,堀川から丸の内まで続く商店街
- ふれあい館,円頓寺商店街,NBUG例会会場。
+ ふれあい館,円頓寺商店街,NBUG例会会場だった。トクサツガガガ最終回でビデオ屋。
  まつば,円頓寺商店街,NBUG例会会場脇。新装開店。名古屋で数番目に自家焙煎をはじめた店。
  美濃路,国際センター,最近の裏例会定番。
  五條,円頓寺商店街,酒場放浪記で取り上げられる。とり天もおいしい。
@@ -113,6 +135,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 144,OSC2019名古屋,http://www.re.soum.co.jp/~jun/OSC2019nagoya.pdf
  128,OSC2018名古屋,http://www.re.soum.co.jp/~jun/OSC2018nagoya.pdf
  106,OSC2017名古屋,http://www.re.soum.co.jp/~jun/OSC2017nagoya.pdf
  88,OSC2016名古屋,http://www.re.soum.co.jp/~jun/OSC2016nagoya.pdf
@@ -128,7 +151,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2018名古屋 NetBSDブース展示の記録,
+ OSC2019名古屋 NetBSDブース展示の記録,
+ OSC2018名古屋 NetBSDブース展示の記録,https://togetter.com/li/1228817
  OSC2017名古屋 NetBSDブース展示の記録,https://togetter.com/li/1114389
  OSC2016名古屋 NetBSDブース展示の記録,https://togetter.com/li/980383
  OSC2015名古屋 NetBSDブース展示の記録,http://togetter.com/li/824817
@@ -153,6 +177,19 @@ OSC名古屋展示物
 #. HP712/80
 #. Speecys
 #. samtk
+
+オープンソースカンファレンス2018 Nagoya&NBUG5月例会
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2018/05/19/DSC_5463.JPG
+.. image::  ../Picture/2018/05/19/DSC_5469.JPG
+.. image::  ../Picture/2018/05/19/DSC_5478.JPG
+.. image::  ../Picture/2018/05/19/DSC_5484.JPG
+.. image::  ../Picture/2018/05/19/DSC_5485.JPG
+.. image::  ../Picture/2018/05/19/DSC_5491.JPG
+.. image::  ../Picture/2018/05/19/DSC_5494.JPG
+.. image::  ../Picture/2018/05/19/DSC_5499.JPG
+.. image::  ../Picture/2018/05/19/DSC_5507.JPG
 
 オープンソースカンファレンス2017 Nagoya&NBUG5月例会
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

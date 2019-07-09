@@ -23,7 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- events
- OSC/OSC2019
+ Place/nagoya
  RPI/RPIupdate2019
- Place/2018
+ Place/intro
