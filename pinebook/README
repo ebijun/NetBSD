@@ -1,11 +1,17 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190622)
+Subject: pinebook status update (20190709)
 
 Update:
-- NetBSD-8.99.47
-- libc-12.213
-- openssl-1.1.1c
-- bind-9.14.1
+ libc-12.213
+ openssl-1.1.1c
+ boost-1.70.0
+ mlterm-3.8.8nb1
+ rust-1.36
+
+PR:
+ port-arm/54342 
+  Pinebook screen glitches/offsets on top and extreme right of the 
+  screen with modeset enabled.
 
 TEST kernel:
 - deforaos-camera: camera capture,and reboot
@@ -19,84 +25,70 @@ System Updates:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 sysinfo:
- bind-9.14.1 dhcpcd-7.2.2 libc-12.213 NetBSD-8.99.47 openssl-1.1.1c
- sh-20181212-20190621105950Z tcsh-6.21.00 unbound-1.9.1
- userland-NetBSD-8.99.47/evbarm
+ dhcpcd-7.2.3 libc-12.213 libcurses-8.2 NetBSD-8.99.50
+ openssl-1.1.1c sh-20181212-20190705082918Z unbound-1.9.1
+ userland-NetBSD-8.99.50/evbarm
 
 pkgsrc:
- GConf-3.2.3nb2 ImageMagick-7.0.8.49 SDL2-2.0.9nb4 apache-2.4.39nb2
- apache-ant-1.10.6 asciidoc-8.6.10nb1 atkmm-2.24.3 atril-1.22.1nb1
- aumix-2.9.1nb1 babl-0.1.66 bash-5.0.7 brotli-1.0.7nb1
- caja-1.22.1 caja-dropbox-1.22.1 caja-extensions-1.22.0nb2
- cbindgen-0.8.7 clang-8.0.0 cmake-3.14.5 curl-7.65.1
- dbus-1.12.16 dbus-python-common-1.2.8nb1 dconf-0.30.1nb2
- deforaos-pdfviewer-0.0.2nb30 enchant2-2.2.3nb1 engrampa-1.22.1
- eom-1.22.1 evince-2.32.0nb81 exempi-2.5.0 faad2-2.8.8
- fd-3.01b ffmpeg3-3.4.6nb1 gdbus-codegen-2.60.4 gettext-lib-0.20.1
- gettext-m4-0.20.1 gettext-tools-0.20.1 git-base-2.22.0
- glew-2.1.0 glib-networking-2.60.3 glib2-2.60.4nb1
- glib2-tools-2.60.4 glibmm-2.60.0 gnome-doc-utils-0.20.10nb3
- gnupg2-2.2.16 gobject-introspection-1.60.1nb1 graphite2-1.3.11nb2
- graphviz-2.40.1nb35 gst-plugins1-base-1.16.0 gstreamer1-1.16.0
- gtar-base-1.32nb1 gtk-doc-1.29nb2 gtk2+-2.24.32nb8 gupnp-1.0.3nb4
- harfbuzz-2.4.0nb3 ibus-1.5.20nb2 ibus-anthy-1.5.6nb1 icu-64.2nb1
- inkscape-0.92.4 iso-codes-3.77nb1 itstool-2.0.6nb1
- jbig2dec-0.16nb1 jemalloc-5.2.0 json-glib-1.4.4 kpathsea-6.3.1
- libbluray-1.1.2 libcares-1.15.0nb1 libepoxy-1.4.3nb2 libimagequant-2.12.3
- libmatekbd-1.22.0nb1 libmatemixer-1.22.0nb1 libmateweather-1.22.0nb2
- libnice-0.1.16 libotf-0.9.16nb1 libpeas-1.20.0nb6 libpsl-0.20.2nb4
- libpurple-2.13.0nb6 libusb-compat-0.1.7 libuv-1.29.1 libxfce4ui-4.13.5
- libxfce4util-4.13.3 llvm-8.0.0 lz4-1.9.1 marco-1.22.1 mate-1.22.0
- mate-applets-1.22.1 mate-backgrounds-1.22.0nb1 mate-calc-1.22.1
- mate-common-1.22.0nb1 mate-control-center-1.22.1 mate-desktop-1.22.1nb2
- mate-icon-theme-1.22.1nb1 mate-icon-theme-faenza-1.20.0nb3
- mate-indicator-applet-1.22.0nb1 mate-media-1.22.1nb1 mate-menus-1.22.0nb1
- mate-netbook-1.22.1 mate-notification-daemon-1.22.0nb1 mate-panel-1.22.1
- mate-polkit-1.22.0nb1 mate-power-manager-1.22.1 mate-screensaver-1.22.1
- mate-sensors-applet-1.22.1 mate-session-manager-1.22.1
- mate-settings-daemon-1.22.0nb2 mate-terminal-1.22.1 mate-themes-3.22.19nb1
- mate-utils-1.22.1 medit-1.2.0nb10 mozilla-rootcerts-1.0.20190306
- mozo-1.22.1 mpv-0.29.1nb8 nghttp2-1.39.1 nginx-1.16.0
- ninja-build-1.9.0nb1 nodejs-10.16.0 nss-3.44 orc-0.4.29
- osabi-NetBSD-8.99.45 pango-1.42.4nb4 pcre2-10.33 perl-5.28.2
- php-7.1.30 php71-curl-7.1.30nb1 php71-fpm-7.1.30nb2 php71-gd-7.1.30
- php71-iconv-7.1.30 php71-intl-7.1.30nb2 php71-json-7.1.30
- php71-mbstring-7.1.30 php71-owncloud-10.1.0nb1 php71-pdo-7.1.30
- php71-pdo_sqlite-7.1.30nb2 php71-posix-7.1.30 php71-zip-7.1.30
- php71-zlib-7.1.30 pluma-1.22.1 poppler-0.76.1 poppler-glib-0.76.1
- poppler-includes-0.76.1 popt-1.16nb2 postgresql95-client-9.5.17
- protobuf-3.8.0 pulseaudio-12.2nb3 py-gobject-shared-2.28.7nb3
- py37-OpenSSL-19.0.0 py37-Socks-1.7.0 py37-alabaster-0.7.12
- py37-argparse-1.4.0 py37-asn1crypto-0.24.0 py37-atomicwrites-1.3.0
- py37-attrs-19.1.0 py37-babel-2.7.0 py37-cElementTree-3.7.3
- py37-cairo-1.18.1 py37-certifi-2019.3.9 py37-cffi-1.12.3
- py37-chardet-3.0.4 py37-cparser-2.19 py37-cryptography-2.7
- py37-cython-0.29.10 py37-dbus-1.2.8 py37-idna-2.8 py37-imagesize-1.1.0
- py37-importlib-metadata-0.15 py37-jinja2-2.10.1
- py37-linecache2-1.0.0nb1 py37-lxml-4.3.4 py37-markupsafe-1.1.1
- py37-meson-0.50.1 py37-more-itertools-5.0.0 py37-packaging-19.0
- py37-pathlib2-2.3.3 py37-pbr-5.2.1 py37-pip-19.1.1
- py37-pluggy-0.12.0 py37-py-1.8.0 py37-pyparsing-2.4.0
- py37-pytz-2019.1 py37-requests-2.22.0 py37-roman-3.2
- py37-setuptools-41.0.1 py37-setuptools_scm-3.3.3
- py37-snowballstemmer-1.2.1 py37-sphinx-1.8.5
- py37-sphinxcontrib-websupport-1.1.0 py37-test-4.6.3nb1
- py37-traceback2-1.4.0 py37-unittest2-1.1.0 py37-urllib3-1.25.3
- py37-wcwidth-0.1.7 py37-zipp-0.5.1 python37-3.7.3nb1
- ruby24-addressable-2.6.0 ruby24-delayer-1.0.0
- ruby24-delayer-deferred-2.1.0 ruby24-diva-1.0.0
- ruby24-mikutter-3.9.0alpha1 ruby24-moneta-1.1.1
- ruby24-pkg-config-1.3.7 ruby24-pluggaloid-1.2.0
- ruby24-twitter-text-3.0.0 rust-1.35.0nb1
+ ImageMagick-7.0.8.49 SDL2-2.0.9nb4 ap24-php71-7.1.30nb2
+ apache-2.4.39nb3 apache-ant-1.10.6 atkmm-2.24.3
+ atril-1.22.1nb1 babl-0.1.66 boost-build-1.70.0
+ boost-docs-1.70.0 boost-headers-1.70.0 boost-jam-1.70.0
+ boost-libs-1.70.0 boost-mpi-1.70.0 brotli-1.0.7nb1
+ caja-dropbox-1.22.1 caja-extensions-1.22.0nb2
+ cbindgen-0.9.0 clang-8.0.0 cmake-3.14.5nb1
+ curl-7.65.1nb1 dbus-1.12.16 dhcpcd-7.2.3
+ dhcpcd-gtk-0.7.5nb8 dhcpcd-icons-0.7.5 enchant2-2.2.4
+ exempi-2.5.0nb1 faad2-2.8.8 fd-3.01b
+ ffmpeg3-3.4.6nb1 ffmpeg4-4.1.3nb1 firefox52-52.9.0nb16
+ freetype2-2.10.0 gdbus-codegen-2.60.4
+ gettext-lib-0.20.1 gettext-m4-0.20.1 gettext-tools-0.20.1
+ git-base-2.22.0nb1 glew-2.1.0 glib-networking-2.60.3
+ glib2-2.60.4nb5 glib2-tools-2.60.4 glibmm-2.60.0
+ gnupg2-2.2.16 gobject-introspection-1.60.1nb1
+ gpgme-1.13.1 gst-plugins1-base-1.16.0 gstreamer1-1.16.0
+ gtk-doc-1.29nb3 harfbuzz-2.5.3 ibus-mozc-2.20.2673.102nb14
+ inkscape-0.92.4nb1 json-glib-1.4.4 libabw-0.1.1nb14
+ libbluray-1.1.2 libcares-1.15.0nb1 libcdr-0.1.5nb2
+ libe-book-0.1.3nb8 libepoxy-1.4.3nb2 libepubgen-0.1.0nb4
+ libetonyek-0.1.9nb1 libevent-2.1.8nb1 libfreehand-0.1.1nb22
+ libimagequant-2.12.3 libixion-0.14.1nb1 libmspub-0.1.4nb8
+ libmwaw-0.3.7nb9 libnice-0.1.16 libotf-0.9.16nb2
+ libpagemaker-0.0.4nb4 libpaper-1.1.28 libpurple-2.13.0nb6
+ libqxp-0.0.2nb2 librevenge-0.0.4nb9 librsvg-2.40.20nb4
+ libstaroffice-0.0.2nb7 libusb-compat-0.1.7 libuv-1.30.1
+ libvisio-0.1.6nb11 libwpd-0.10.1nb9 libwpg-0.3.1nb11
+ libwps-0.4.3nb9 libxfce4ui-4.13.5 libxfce4util-4.13.3
+ libzmf-0.0.2nb10 llvm-8.0.0 mate-1.22.0nb1 mate-applets-1.22.1
+ mate-control-center-1.22.1 mate-desktop-1.22.1nb2
+ mate-media-1.22.1nb1 mate-netbook-1.22.1 mate-power-manager-1.22.1
+ mate-sensors-applet-1.22.1 mate-utils-1.22.1 mdds-1.4.3nb1
+ mdds1.2-1.3.1nb4 mlterm-3.8.8nb1 mozc-renderer-2.20.2673.102nb14
+ mozc-server-2.20.2673.102nb14 mozc-tool-2.20.2673.102nb14
+ mozo-1.22.1 mpv-0.29.1nb8 mysql-client-5.7.26nb3
+ nghttp2-1.39.1nb1 nodejs-10.16.0 nss-3.44.1 orcus-0.14.1nb1
+ osabi-NetBSD-8.99.50 pango-1.42.4nb4 php-7.1.30 php71-curl-7.1.30nb2
+ php71-fpm-7.1.30nb2 php71-gd-7.1.30 php71-iconv-7.1.30
+ php71-intl-7.1.30nb2 php71-json-7.1.30 php71-mbstring-7.1.30
+ php71-pdo-7.1.30 php71-pdo_sqlite-7.1.30nb2 php71-posix-7.1.30
+ php71-zip-7.1.30 php71-zlib-7.1.30 pluma-1.22.1nb1
+ postgresql95-client-9.5.18 protobuf-3.8.0 pulseaudio-12.2nb5
+ py37-Socks-1.7.0 py37-babel-2.7.0 py37-cryptography-2.7
+ py37-cython-0.29.11 py37-importlib-metadata-0.15
+ py37-lxml-4.3.4 py37-pathlib2-2.3.4 py37-pbr-5.2.1
+ py37-pluggy-0.12.0 py37-setuptools_scm-3.3.3 py37-test-4.6.3nb1
+ py37-urllib3-1.25.3 py37-wcwidth-0.1.7 py37-zipp-0.5.1
+ python36-3.6.9 ruby24-addressable-2.6.0 ruby24-delayer-1.0.0
+ ruby24-delayer-deferred-2.1.1 ruby24-diva-1.0.0
+ ruby24-mikutter-3.9.0 ruby24-nokogiri-1.10.3
+ ruby24-pluggaloid-1.2.0 ruby24-twitter-text-3.0.0
+ rust-1.36 seamonkey-2.49.4nb11 source-highlight-3.1.8nb9
  speexdsp-1.2.0 spidermonkey52-52.7.4nb9
- tcsh-6.21.00 tdb-1.4.0nb1 waf-2.0.17
- wget-1.20.3nb1 xfce4-appfinder-4.13.3 xfce4-conf-4.13.7
- xfce4-desktop-4.13.4 xfce4-exo-0.12.6
- xfce4-panel-4.13.5 xfce4-power-manager-1.6.2
- xfce4-session-4.13.2 xfce4-settings-4.13.6
- xfce4-thunar-1.8.6 xfce4-tumbler-0.2.4 xfce4-wm-4.13.2
- xscreensaver-5.40nb1
-
+ tk-8.6.9.1 unittest-cpp-2.0.0 waf-2.0.17 wget-1.20.3nb1
+ xfce4-appfinder-4.13.3 xfce4-conf-4.13.7 xfce4-desktop-4.13.4
+ xfce4-exo-0.12.6 xfce4-panel-4.13.5 xfce4-power-manager-1.6.2
+ xfce4-session-4.13.2 xfce4-settings-4.13.6 xfce4-thunar-1.8.6
+ xfce4-tumbler-0.2.4nb1 xfce4-wm-4.13.2 youtube-dl-20190702
 
 works well: 
  evince gedit mate medit py-sphinx gimp seamonkey inkscape
@@ -138,7 +130,7 @@ ToDo:
  thread '<unnamed>' panicked at 'Unable to find libclang: 
 
 Version: 
- NetBSD 8.99.47 (GENERIC64.201906211140UTC) #7: Sat Jun 22 11:09:16 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 8.99.50 (GENERIC64.201907051230UTC) #8: Sat Jul  6 15:06:05 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
