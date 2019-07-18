@@ -1,21 +1,21 @@
-:1,$s/2017-05-14/2017-05-14/g
-:1,$s/2017-05-14-hpcmips/2017-05-14-hpcmips/g
-:1,$s/201705130540Z/201705130540Z/g
+:1,$s/2019-07-18/2019-07-18/g
+:1,$s/2019-07-18-hpcmips/2019-07-18-hpcmips/g
+:1,$s/201907170720Z/201907170720Z/g
 
 
 To: port-hpcmipsnetbsd.org@localhost
-Subject: 2017-05-14-netbsd-hpcmips.img 
+Subject: 2019-07-18-netbsd-hpcmips.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2017-05-14-netbsd-hpcmips.img.gz for hpcmips.
+I've updated 2019-07-18-netbsd-hpcmips.img.gz for hpcmips.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/hpcmips/2017-05-14-hpcmips/2017-05-14-netbsd-hpcmips.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/hpcmips/2019-07-18-hpcmips/2019-07-18-netbsd-hpcmips.img.gz
 
 Feature:
-- NetBSD 2017-05-14-hpcmips 201705130540Z hpcmips from nyftp.netbsd
-- pkgsrc: /usr/pkgsrc: 2017-05-13
+- NetBSD 2019-07-18-hpcmips 201907170720Z hpcmips from nyftp.netbsd
+- pkgsrc: /usr/pkgsrc: 2019Q2
 - dmesg:
-  https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcmips/MC-R700
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/hpcmips/INTERTOP_CX300
 
 - Copy image to CompactFlash
 - Set hpcmips machine.
