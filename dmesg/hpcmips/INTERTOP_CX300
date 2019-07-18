@@ -1,17 +1,17 @@
 total memory banks = 2
-memory bank 0 = 00000000 5056KB(0x4f0000)
-memory bank 1 = 0x4f0000 11328KB(0xb10000)
+memory bank 0 = 00000000 5156KB(0x509000)
+memory bank 1 = 0x509000 11228KB(0xaf7000)
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-2018 The NetBSD Foundation, Inc.  All rights reserved.
+2018, 2019 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 8.99.25 (GENERIC) #0: Thu Oct 18 14:30:54 UTC 2018
+NetBSD 8.99.51 (GENERIC) #0: Wed Jul 17 07:07:59 UTC 2019
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/hpcmips/compile/GENERIC
 Fujitsu INTERTOP IT300 (NEC VR4121 rev1.0 131.072MHz)
 total memory = 16384 KB
-avail memory = 10800 KB
+avail memory = 10704 KB
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0: NEC VR4100 CPU (0xc60) Rev. 6.0 with software emulated floating point
@@ -45,9 +45,9 @@ hpcfb0 at ite8181video0: 640x480 pixels, 256 colors, 80x48 chars
 wsdisplay0 at hpcfb0 kbdmux 1: console (std, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 vraiu0 at vr4102ip0 addr 0x0b000160-017f
-audio0 at vraiu0: half duplex, playback, capture, mmap
-vraiu0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 44100
-vraiu0: Latency: 69 milliseconds
+audio0 at vraiu0: playback, capture, half duplex
+audio0: slinear_le:16 1ch 44100Hz, blk 23ms for playback
+audio0: slinear_le:16 1ch 44100Hz, blk 23ms for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 vrisab2 at vrgiu0: ISA port 0x15000000-0x18000000 mem 0x10000000-0x14000000
@@ -84,18 +84,8 @@ pcmcia1: card irq 3
 root on wd0a dumps on wd0b
 pcmcia1: card irq 3
 pcmcia1: card irq 3
-/: replaying log to memory
 root file system type: ffs
-kern.module.path=/stand/hpcmips/8.99.25/modules
-WARNING: clock lost 7232 days
+kern.module.path=/stand/hpcmips/8.99.51/modules
+WARNING: clock lost 7503 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-/: replaying log to disk
-hpcfb: 640x480 pixels, 256 colors, 80x48 chars
-wsdisplay0: screen 1 added (std, vt100 emulation)
-hpcfb: 640x480 pixels, 256 colors, 80x48 chars
-wsdisplay0: screen 2 added (std, vt100 emulation)
-hpcfb: 640x480 pixels, 256 colors, 80x48 chars
-wsdisplay0: screen 3 added (std, vt100 emulation)
-hpcfb: 640x480 pixels, 256 colors, 80x48 chars
-wsdisplay0: screen 4 added (std, vt100 emulation)
