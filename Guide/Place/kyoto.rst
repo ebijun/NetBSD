@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -47,7 +47,8 @@
  2015 Kansai＠Kyoto,8/7-8,1150,59,京都リサーチパーク
  2016 Kyoto,7/29-30,1000,59,京都リサーチパーク
  2017 Kyoto,8/4-5,750,49,京都リサーチパーク
- 2018 Kyoto,8/3-4,,48,京都リサーチパーク
+ 2018 Kyoto,8/3-4,800,48,京都リサーチパーク
+ 2019 Kyoto,8/2-3,,50,京都リサーチパーク
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -56,20 +57,22 @@
  :widths: 30 20 60
 
  店名,エリア,コメント
+ バンガロー,四条堀川東,10タップ 10oz 600円 15oz 900円
+ 坊主バー,大宮,Sun3/60ユーザ＆僧侶とは何か。
+ BEFORE9,二条殿町545,
+ 珈琲陣,大宮松原,ハムモーニング。マッチとコースター。
  だいこんのはな,壬生車庫,俺のビフカツがこんなにかわいい
  幸福堂,壬生,アイスモナカ&きんつばをおみやげに新選組
+ 宇治橋通り商店街,宇治,2019/8/3　クラフトビール夜市。
  宮武,丹波口,10:30-14:00 17:00-23:00
  ととや,丹波口,寿司&うなぎ 10:00-15:00
  喫茶ナス,丹波口,下京区裏畑町32 11:30-18:30(17:30) カツカレー
- バンガロー,四条堀川東,10タップ 10oz 600円 15oz 900円
  一乗寺ブルワリー,一乗寺,2016/8に直営店オープン
  のらくろ,出町柳,トルコライス＝チキンライス+オムレツ+ビフカツ
  和知,烏丸,京都最強の地ビール居酒屋
  CRAFT MAN,烏丸綾小路下,20タップ K家系列 2:00くらいまで
  BEER PUB Takumiya,船谷町400-1
- BEFORE9,二条殿町545
  麦潤,河原町,六角通富小路大黒町77 河村ビル 2F
- 珈琲陣,大宮松原,ハムモーニング。マッチとコースター。
  キートス,壬生坊城,フィンランドパン
  喫茶ルナ,東向日,http://www.openstreetmap.org/way/203043949
  ルナ美容院,西向日,http://www.openstreetmap.org/way/203450773
@@ -85,7 +88,6 @@
  田毎,三条,京都のたぬきうどんとは何か。みうらじゅんさんのサイン。
  カフェ・ラ・シエスタ,木屋町,レトロゲーム カフェ。
  ジャンボ,等持院,巨大焼きそば＆直径30cmのお好み焼き。電話注文できる。
- 坊主バー,大宮,Sun3/60ユーザ＆僧侶とは何か。
  BAMI gallery,丹波口,下京区二人司町21に移転
  Bazaar Cafe,今出川,上京区岡松町258 元ダムタイプの小山田さんから聞いたカフェ
  エレファントファクトリー,河原町,蛸薬師通木屋町 13:00-25:00
@@ -108,6 +110,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 145,OSC2019京都,http://www.re.soum.co.jp/~jun/OSC2018kyoto.pdf
  128,OSC2018京都,http://www.re.soum.co.jp/~jun/OSC2018kyoto.pdf
  111,OSC2017京都,http://www.re.soum.co.jp/~jun/OSC2017kyoto.pdf
  92,OSC2016京都,http://www.re.soum.co.jp/~jun/OSC2016kyoto.pdf
@@ -124,7 +127,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2018京都 NetBSDブース展示の記録,http://togetter.com/li/
+ OSC2019京都 NetBSDブース展示の記録,
+ OSC2018京都 NetBSDブース展示の記録,http://togetter.com/li/1252935
  OSC2017京都 NetBSDブース展示の記録,https://togetter.com/li/1136708
  OSC2016京都 NetBSDブース展示の記録,http://togetter.com/li/1005828
  OSC2015京都 NetBSDブース展示の記録,http://togetter.com/li/857157
@@ -172,6 +176,9 @@ OSC京都展示物
 #. Squeak on hpcmips 
 #. OneSeg TV recording with hpcmips,
 #. bc benchmark time x electricity consumption 
+
+2018年
+~~~~~~~~~~~~~~~~~~
 
 2017年
 ~~~~~~~~~~~~~~~~~~
