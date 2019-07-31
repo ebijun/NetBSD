@@ -23,6 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/nagoya
+ Place/kyoto
  RPI/RPIupdate2019
  Place/intro
+ Luna

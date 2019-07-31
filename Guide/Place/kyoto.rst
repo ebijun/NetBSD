@@ -180,6 +180,16 @@ OSC京都展示物
 2018年
 ~~~~~~~~~~~~~~~~~~
 
+.. image::  ../Picture/2018/08/03/DSC_5777.JPG
+.. image::  ../Picture/2018/08/03/DSC_5797.JPG
+.. image::  ../Picture/2018/08/03/DSC_5798.JPG
+.. image::  ../Picture/2018/08/03/DSC_5805.JPG
+.. image::  ../Picture/2018/08/04/DSC00197.JPG
+.. image::  ../Picture/2018/08/04/DSC_5815.JPG
+.. image::  ../Picture/2018/08/04/DSC_5816.JPG
+.. image::  ../Picture/2018/08/04/DSC_5817.JPG
+.. image::  ../Picture/2018/08/04/DSC_5818.JPG
+
 2017年
 ~~~~~~~~~~~~~~~~~~
 

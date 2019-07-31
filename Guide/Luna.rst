@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-ルナ式練習帳、またはLunaの薄い本2018　[1]_
+ルナ式練習帳、またはLunaの薄い本2019　[1]_
 ===========================================
 
   「私が誰かは わかっているはずだ。」その声は天使の声だった。
@@ -538,12 +538,16 @@ LUNA年表　- 月の刃
  2015/07/06,,「いけない！ルナ先生」コラボ読切で復活  [147]_
  2015,青,OpenBSD/luna88k移植物語 [152]_
  2015/10,青, FM音源の調べ on LUNA http://www.slideshare.net/ao_kenji/nbug201510
+ 2016/3,江,Luna68K AsiaBSDCon2016ブース展示
+ 2016/7,筒,Luna68K PSG Z80 sound driver for PC6001 to NetBSD/luna68k OSC京都 [164]_
+ 2016/11,藤, Implimentation of 4.4BSD luna68k by Akito Fujita KOF
+ 2016/11,筒,Luna68K PSG Z80 sound driver for PC6001 to NetBSD/luna68k OSC広島
  2017/3,青江,Luna88K&Luna68K AsiaBSDCon2017ブース展示
  2018/5,筒,RaSCSI + OMROM 初代LUNA 起動
  2018/5,青,LUNA-88K2 OSC2018Nagoya ブース展示
  2018/8,菅,LUNA68K OSC2018Kyoto ブース展示 LUNAのPSG音源でPCM再生
  2018/8,筒,LUNA68K OSC2018Kyoto ブース展示 sayaka+mlterm-fb
-
+ 2018/7,青,LUNA-88K2 OSC2018Nagoya ブース展示 [165]_
  
 最近のLUNA
 ----------------
@@ -772,7 +776,8 @@ yaft X LUNA
 .. [161] http://www.ceres.dti.ne.jp/tsutsui/kof2013/NetBSD_bootloader.html
 .. [162] http://www.ceres.dti.ne.jp/tsutsui/osc2013kyoto/NetBSD-luna68k_mlterm-fb_Twitter.html
 .. [163] https://twitter.com/tsutsuii/status/991191717050118144
-
+.. [164] https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
+.. [165] https://www.slideshare.net/ao_kenji/osc2019-nagoya
 
 
 このページ
