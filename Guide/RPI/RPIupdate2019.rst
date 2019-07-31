@@ -53,6 +53,7 @@ RaspberryPIのNetBSDイメージについて
  2019/4/20,8.99.37,,3.8.8,,libstdc++-9.0 ruby-2.4.6,OSC沖縄,http://mail-index.netbsd.org/port-arm/2019/04/16/msg005599.html
  2019/6/1,8.99.41,3.8.7,,,python37 NetBSD SA 2019-002 2019-003,OSC北海道,http://mail-index.netbsd.org/port-arm/2019/05/23/msg005736.html
  2019/7/13,8.99.50,3.9.0,3.8.8,1.1.1c,libc-12.213 RPI4発売,OSC名古屋,http://mail-index.netbsd.org/port-arm/2019/07/07/msg005875.html
+ 2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
