@@ -1,587 +1,290 @@
-[    1.000000] Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-[    1.000000] 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-[    1.000000] 2018 The NetBSD Foundation, Inc.  All rights reserved.
-[    1.000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
-[    1.000000] The Regents of the University of California.  All rights reserved.
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+2018, 2019 The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+The Regents of the University of California.  All rights reserved.
 
-[    1.000000] NetBSD 8.99.19 (GENERIC) #0: Mon Jun 18 17:07:07 UTC 2018
-[    1.000000] 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
-[    1.000000] total memory = 4000 MB
-[    1.000000] avail memory = 3859 MB
-[    1.000000] cpu_rng: RDRAND
-[    1.000000] timecounter: Timecounters tick every 10.000 msec
-[    1.000000] Kernelized RAIDframe activated
-[    1.000000] running cgd selftest aes-xts-256 aes-xts-512 done
-[    1.000000] timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
-[    1.000003] efi: systbl at pa dbf6ff18
-[    1.000003] Dell Inc. Inspiron 3442 (Not Specified)
-[    1.000003] mainbus0 (root)
-[    1.000003] ACPI: RSDP 0x00000000DABE0000 000024 (v02 DELL  )
-[    1.000003] ACPI: XSDT 0x00000000DABE00A0 0000BC (v01 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: FACP 0x00000000DABF07D0 00010C (v05 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: DSDT 0x00000000DABE01E8 0105E4 (v02 DELL   WN09     00000000 INTL 20120711)
-[    1.000003] ACPI: FACS 0x00000000DB56EF80 000040
-[    1.000003] ACPI: APIC 0x00000000DABF08E0 000072 (v03 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: FPDT 0x00000000DABF0958 000044 (v01 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: ASF! 0x00000000DABF09A0 0000A5 (v32 INTEL   HCG     00000001 TFSM 000F4240)
-[    1.000003] ACPI: LPIT 0x00000000DABF0A48 000094 (v01 ALASKA          00000000 AMI. 00000005)
-[    1.000003] ACPI: SSDT 0x00000000DABF0AE0 000228 (v01 INTEL  sensrhub 00000000 INTL 20120711)
-[    1.000003] ACPI: SLIC 0x00000000DABF0D08 000176 (v01 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: SSDT 0x00000000DABF0E80 0004D6 (v01 PmRef  Cpu0Ist  00003000 INTL 20120711)
-[    1.000003] ACPI: SSDT 0x00000000DABF1358 000AD8 (v01 PmRef  CpuPm    00003000 INTL 20120711)
-[    1.000003] ACPI: MCFG 0x00000000DABF1E30 00003C (v01 DELL   WN09     01072009 MSFT 00000097)
-[    1.000003] ACPI: HPET 0x00000000DABF1E70 000038 (v01 DELL   WN09     01072009 AMI. 00000005)
-[    1.000003] ACPI: SSDT 0x00000000DABF1EA8 000315 (v01 SataRe SataTabl 00001000 INTL 20120711)
-[    1.000003] ACPI: SSDT 0x00000000DABF21C0 0035A5 (v01 SaSsdt SaSsdt   00003000 INTL 20091112)
-[    1.000003] ACPI: MSDM 0x00000000DABF5768 000055 (v03 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: SSDT 0x00000000DABF57C0 00004B (v01 MeSsdt MeSsdt   00003000 INTL 20120711)
-[    1.000003] ACPI: TPM2 0x00000000DABF5810 000034 (v03                 00000000      00000000)
-[    1.000003] ACPI: BGRT 0x00000000DABF5848 000038 (v00 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: DMAR 0x00000000DABF5880 000164 (v01 INTEL  HSW      00000001 INTL 00000001)
-[    1.000003] ACPI: CSRT 0x00000000DABF59E8 0000C4 (v01 INTL   HSWULT-R 00000001 INTL 20100528)
-[    1.000003] ACPI: 7 ACPI AML tables successfully acquired and loaded
-[    1.000003] ioapic0 at mainbus0 apid 8: pa 0xfec00000, version 0x20, 40 pins
-[    1.000003] cpu0 at mainbus0 apid 0
-[    1.000003] cpu0: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
-[    1.000003] cpu0: package 0, core 0, smt 0
-[    1.000003] cpu1 at mainbus0 apid 2
-[    1.000003] cpu1: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
-[    1.000003] cpu1: package 0, core 1, smt 0
-[    1.000003] cpu2 at mainbus0 apid 1
-[    1.000003] cpu2: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
-[    1.000003] cpu2: package 0, core 0, smt 1
-[    1.000003] cpu3 at mainbus0 apid 3
-[    1.000003] cpu3: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
-[    1.000003] cpu3: package 0, core 1, smt 1
-[    1.000003] acpi0 at mainbus0: Intel ACPICA 20180427
-[    1.000003] acpi0: X/RSDT: OemId <DELL  , WN09   ,01072009>, AslId <AMI ,00010013>
-[    1.000003] acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
-[    1.000003] ACPI: Dynamic OEM Table Load:
-[    1.000003] ACPI: SSDT 0xFFFFE4011E99E010 0003D3 (v01 PmRef  Cpu0Cst  00003001 INTL 20120711)
-[    1.000003] ACPI: Dynamic OEM Table Load:
-[    1.000003] ACPI: SSDT 0xFFFFE4010731A810 0005AA (v01 PmRef  ApIst    00003000 INTL 20120711)
-[    1.000003] ACPI: Dynamic OEM Table Load:
-[    1.000003] ACPI: SSDT 0xFFFFE40107275910 000119 (v01 PmRef  ApCst    00003000 INTL 20120711)
-[    1.000003] acpi0: SCI interrupting at int 9
-[    1.000003] acpi0: fixed power button present
-[    1.000003] timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
-[    1.043065] hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
-[    1.043065] timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
-[    1.093162] acpiec0 at acpi0 (EC, PNP0C09-1)acpiec0: autoconfiguration error: unable to evaluate _GPE: AE_NOT_FOUND
-[    1.093162] TPMX (PNP0C01) at acpi0 not configured
-[    1.093162] FWHD (INT0800) at acpi0 not configured
-[    1.093162] LDRC (PNP0C02) at acpi0 not configured
-[    1.093162] attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
-[    1.093162] CWDT (INT3F0D) at acpi0 not configured
-[    1.093162] RMSC (PNP0C02) at acpi0 not configured
-[    1.093162] pckbc1 at acpi0 (PS2K, DLLK0651) (kbd port): io 0x60,0x64,0x62,0x66 irq 1
-[    1.093162] SIRC (PNP0C02) at acpi0 not configured
-[    1.093162] GPI0 (INT33C7) at acpi0 not configured
-[    1.093162] SDMA (INTL9C60) at acpi0 not configured
-[    1.093162] I2C0 (INT33C2) at acpi0 not configured
-[    1.093162] I2C1 (INT33C3) at acpi0 not configured
-[    1.093162] TPD1 (DLL0651) at acpi0 not configured
-[    1.093162] PDRC (PNP0C02) at acpi0 not configured
-[    1.093162] acpivga0 at acpi0 (GFX0): ACPI Display Adapter
-[    1.093162] acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
-[    1.093162] acpiout1 at acpivga0 (DD02, 0x0002): ACPI Display Output Device
-[    1.093162] acpiout2 at acpivga0 (DD03, 0x0300): ACPI Display Output Device
-[    1.093162] acpiout3 at acpivga0 (DD04, 0x0301): ACPI Display Output Device
-[    1.093162] acpiout4 at acpivga0 (DD05, 0x0302): ACPI Display Output Device
-[    1.093162] acpiout5 at acpivga0 (DD06, 0x0303): ACPI Display Output Device
-[    1.093162] acpiout6 at acpivga0 (DD07, 0x0304): ACPI Display Output Device
-[    1.093162] acpiout7 at acpivga0 (DD08, 0x0305): ACPI Display Output Device
-[    1.093162] acpiout8 at acpivga0 (DD09, 0x0009): ACPI Display Output Device
-[    1.093162] acpiout9 at acpivga0 (DD0A, 0x000a): ACPI Display Output Device
-[    1.093162] acpiout10 at acpivga0 (DD0B, 0x000b): ACPI Display Output Device
-[    1.093162] acpiout11 at acpivga0 (DD0C, 0x000c): ACPI Display Output Device
-[    1.093162] acpiout12 at acpivga0 (DD0D, 0x000d): ACPI Display Output Device
-[    1.093162] acpiout13 at acpivga0 (DD0E, 0x000e): ACPI Display Output Device
-[    1.093162] acpiout14 at acpivga0 (DD0F, 0x000f): ACPI Display Output Device
-[    1.093162] acpiout15 at acpivga0 (DD1F, 0x0400): ACPI Display Output Device
-[    1.093162] acpiout15: brightness levels: [0-100]
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout0
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout1
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout2
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout3
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout4
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout5
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout6
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout7
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout8
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout9
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout10
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout11
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout12
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout13
-[    1.093162] acpivga0: autoconfiguration error: unknown output device acpiout14
-[    1.093162] acpivga0: connected output devices:
-[    1.093162] acpivga0:   0x0400 (acpiout15): Unknown Output Device, head 0
-[    1.093162] acpibat0 at acpi0 (BAT0, PNP0C0A-1): ACPI Battery
-[    1.093162] acpibat0: SANYO LION rechargeable battery
-[    1.093162] acpibat0: granularity: low->warn 0.028 Ah, warn->full 0.028 Ah
-[    1.093162] acpiacad0 at acpi0 (AC, ACPI0003): ACPI AC Adapter
-[    1.093162] acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
-[    1.093162] acpibut0 at acpi0 (PWRB, PNP0C0C-170): ACPI Power Button
-[    1.093162] acpibut1 at acpi0 (SBTN, PNP0C0E): ACPI Sleep Button
-[    1.093162] acpiwmi0 at acpi0 (AMW0, PNP0C14-0): ACPI WMI Interface
-[    1.093162] wmidell0 at acpiwmi0: Dell WMI mappings version 1
-[    1.093162] RBTN (DELLABCE) at acpi0 not configured
-[    1.093162] acpitz0 at acpi0 (THM)
-[    1.093162] acpitz0: levels: critical 99.0 C, passive cooling
-[    1.093162] ACPI: Enabled 4 GPEs in block 00 to 7F
-[    1.093162] pckbd0 at pckbc1 (kbd slot)
-[    1.093162] pckbc1: using irq 1 for kbd slot
-[    1.093162] wskbd0 at pckbd0: console keyboard
-[    1.093162] pms0 at pckbc1 (aux slot)
-[    1.093162] pms0: Synaptics touchpad version 8.1
-[    1.093162] pms0: Extended W mode, Middle button, Palm detect, One button click pad, Multi-finger Report, Multi-finger
-[    1.093162] pckbc1: autoconfiguration error: unable to establish interrupt for aux slot
-[    1.093162] wsmouse0 at pms0 mux 0
-[    1.093162] pci0 at mainbus0 bus 0: configuration mode 1
-[    1.093162] pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
-[    1.093162] pchb0 at pci0 dev 0 function 0: vendor 8086 product 0a04 (rev. 0x0b)
-[    1.093162] i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 0a16 (rev. 0x0b)
-[    1.093162] drm: Memory usable by graphics device = 2048M
-[    1.093162] drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
-[    1.093162] drm: Driver supports precise vblank timestamp query.
-[    1.093162] i915drmkms0: interrupting at ioapic0 pin 16 (i915)
-[    1.093162] intelfb0 at i915drmkms0
-[    1.093162] i915drmkms0: info: registered panic notifier
-[    1.093162] i915drmkms0: autoconfiguration error: More than 8 outputs detected via ACPI
-[    1.093162] intelfb0: framebuffer at 0xffff800066345000, size 1366x768, depth 32, stride 5504
-[    1.093162] wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
-[    1.093162] wsmux1: connecting to wsdisplay0
-[    1.093162] hdaudio0 at pci0 dev 3 function 0: HD Audio Controller
-[    1.093162] hdaudio0: interrupting at msi0 vec 0
-[    1.093162] hdaudio0: autoconfiguration error: timeout leaving reset state
-[    1.093162] hdaudio0: autoconfiguration error: device driver failed to attach
-[    1.093162] xhci0 at pci0 dev 20 function 0: vendor 8086 product 9c31 (rev. 0x04)
-[    1.093162] xhci0: interrupting at msi0 vec 0
-[    1.093162] xhci0: xHCI version 1.0
-[    1.093162] usb0 at xhci0: USB revision 3.0
-[    1.093162] usb1 at xhci0: USB revision 2.0
-[    1.093162] vendor 8086 product 9c3a (miscellaneous communications, revision 0x04) at pci0 dev 22 function 0 not configured
-[    1.093162] hdaudio1 at pci0 dev 27 function 0: HD Audio Controller
-[    1.093162] hdaudio1: interrupting at msi1 vec 0
-[    1.093162] hdafg0 at hdaudio1: vendor 10ec product 0255
-[    1.093162] hdafg0: DAC00 2ch: Speaker [Built-In]
-[    1.093162] hdafg0: DAC01 2ch: HP Out [Jack]
-[    1.093162] hdafg0: ADC02 2ch: Mic In [Built-In]
-[    1.093162] hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
-[    1.093162] audio0 at hdafg0: full duplex, playback, capture, mmap, independent
-[    1.093162] hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-[    1.093162] hdafg0: Latency: 128 milliseconds
-[    1.093162] spkr0 at audio0: PC Speaker (synthesized)
-[    1.093162] wsbell at spkr0 not configured
-[    1.093162] ppb0 at pci0 dev 28 function 0: vendor 8086 product 9c10 (rev. 0xe4)
-[    1.093162] ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
-[    1.093162] pci1 at ppb0 bus 4
-[    1.093162] pci1: i/o space, memory space enabled, rd/line, wr/inv ok
-[    1.093162] ppb1 at pci0 dev 28 function 2: vendor 8086 product 9c14 (rev. 0xe4)
-[    1.093162] ppb1: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
-[    1.093162] ppb1: link is x1 @ 2.5GT/s
-[    1.093162] pci2 at ppb1 bus 6
-[    1.093162] pci2: i/o space, memory space enabled, rd/line, wr/inv ok
-[    1.093162] iwm0 at pci2 dev 0 function 0: vendor 8086 product 08b1 (rev. 0xbb)
-[    1.093162] iwm0: interrupting at msi2 vec 0
-[    1.093162] ppb2 at pci0 dev 28 function 3: vendor 8086 product 9c16 (rev. 0xe4)
-[    1.093162] ppb2: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
-[    1.093162] ppb2: link is x1 @ 2.5GT/s
-[    1.093162] pci3 at ppb2 bus 7
-[    1.093162] pci3: i/o space, memory space enabled, rd/line, wr/inv ok
-[    1.093162] re0 at pci3 dev 0 function 0: RealTek 8100E/8101E/8102E/8102EL PCIe 10/100BaseTX (rev. 0x07)
-[    1.093162] re0: interrupting at msi3 vec 0
-[    1.093162] re0: Unknown revision (0x44800000)
-[    1.093162] re0: Ethernet address b8:2a:72:cd:b7:17
-[    1.093162] re0: using 256 tx descriptors
-[    1.093162] ukphy0 at re0 phy 7: OUI 0x00e04c, model 0x0008, rev. 2
-[    1.093162] ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-[    1.093162] ehci0 at pci0 dev 29 function 0: vendor 8086 product 9c26 (rev. 0x04)
-[    1.093162] ehci0: interrupting at ioapic0 pin 23
-[    1.093162] ehci0: BIOS has given up ownership
-[    1.093162] ehci0: EHCI version 1.0
-[    1.093162] usb2 at ehci0: USB revision 2.0
-[    1.093162] pcib0 at pci0 dev 31 function 0: vendor 8086 product 9c43 (rev. 0x04)
-[    1.093162] ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 9c03 (rev. 0x04)
-[    1.093162] ahcisata0: interrupting at ioapic0 pin 19
-[    1.093162] ahcisata0: 64-bit DMA
-[    1.093162] ahcisata0: AHCI revision 1.30, 4 ports, 32 slots, CAP 0xc734ff03<PSC,SSC,PMD,SAM,ISS=0x3=Gen3,SCLO,SAL,SALP,SNCQ,S64A>
-[    1.093162] atabus0 at ahcisata0 channel 0
-[    1.093162] atabus1 at ahcisata0 channel 1
-[    1.093162] ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 9c22 (rev. 0x04)
-[    1.093162] ichsmb0: interrupting at ioapic0 pin 18
-[    1.093162] iic0 at ichsmb0: I2C bus
-[    1.093162] isa0 at pcib0
-[    1.093162] pcppi0 at isa0 port 0x61
-[    1.093162] spkr1 at pcppi0: PC Speaker
-[    1.093162] wsbell at spkr1 not configured
-[    1.093162] midi0 at pcppi0: PC speaker
-[    1.093162] sysbeep0 at pcppi0
-[    1.093162] attimer1: attached to pcppi0
-[    1.093162] acpicpu0 at cpu0: ACPI CPU
-[    1.093162] acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
-[    1.093162] acpicpu0: C2: FFH, lat 148 us, pow   200 mW
-[    1.093162] acpicpu0: C3: FFH, lat 506 us, pow   200 mW
-[    1.093162] acpicpu0: P0: FFH, lat  10 us, pow 15000 mW, 1900 MHz
-[    1.093162] acpicpu0: P1: FFH, lat  10 us, pow 13939 mW, 1800 MHz
-[    1.093162] acpicpu0: P2: FFH, lat  10 us, pow 13047 mW, 1700 MHz
-[    1.093162] acpicpu0: P3: FFH, lat  10 us, pow 12172 mW, 1600 MHz
-[    1.093162] acpicpu0: P4: FFH, lat  10 us, pow 11172 mW, 1500 MHz
-[    1.093162] acpicpu0: P5: FFH, lat  10 us, pow 10334 mW, 1400 MHz
-[    1.093162] acpicpu0: P6: FFH, lat  10 us, pow  9516 mW, 1300 MHz
-[    1.093162] acpicpu0: P7: FFH, lat  10 us, pow  8712 mW, 1200 MHz
-[    1.093162] acpicpu0: P8: FFH, lat  10 us, pow  7789 mW, 1100 MHz
-[    1.093162] acpicpu0: P9: FFH, lat  10 us, pow  7021 mW, 1000 MHz
-[    1.093162] acpicpu0: P10: FFH, lat  10 us, pow  6270 mW,  900 MHz
-[    1.093162] acpicpu0: P11: FFH, lat  10 us, pow  5537 mW,  800 MHz
-[    1.093162] acpicpu0: P12: FFH, lat  10 us, pow  4688 mW,  779 MHz
-[    1.093162] coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
-[    1.093162] acpicpu1 at cpu1: ACPI CPU
-[    1.093162] coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=100
-[    1.093162] acpicpu2 at cpu2: ACPI CPU
-[    1.093162] acpicpu3 at cpu3: ACPI CPU
-[    1.093162] DRM error in intel_uncore_check_errors: Unclaimed register before interrupt
-[    1.093162] timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-[    2.176204] timecounter: Timecounter "TSC" frequency 1895732080 Hz quality 3000
-[    2.178692] acpiacad0: AC adapter online.
-[    2.178692] uhub0 at usb0: NetBSD (0000) xHCI root hub (0000), class 9/0, rev 3.00/1.00, addr 0
-[    2.178692] uhub0: 4 ports with 4 removable, self powered
-[    2.178692] uhub1 at usb1: NetBSD (0000) xHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 0
-[    2.178692] uhub1: 9 ports with 9 removable, self powered
-[    2.186208] IPsec: Initialized Security Association Processing.
-[    2.196214] uhub2 at usb2: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-[    2.196214] uhub2: 2 ports with 2 removable, self powered
-[    2.276251] ahcisata0 port 0: device present, speed: 6.0Gb/s
-[    2.276251] ahcisata0 port 1: device present, speed: 1.5Gb/s
-[    3.036602] drm: Enabling RC6 states: RC6 on, RC6p off, RC6pp off
-[    3.796953] ubt0 at uhub1 port 6
-[    3.796953] ubt0: vendor 8087 (0x8087) product 07dc (0x7dc), rev 2.00/0.01, addr 1
-[    3.806958] wd0 at atabus0 drive 0
-[    3.806958] wd0: <ST1000LM024 HN-M101MBB>
-[    3.806958] wd0: drive supports 16-sector PIO transfers, LBA48 addressing
-[    3.806958] wd0: 931 GB, 1938021 cyl, 16 head, 63 sec, 512 bytes/sect x 1953525168 sectors
-[    4.147114] wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), NCQ (32 tags) w/PRIO
-[    4.147114] wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags) w/PRIO
-[    4.147114] atapibus0 at atabus1: 1 targets
-[    4.147114] cd0 at atapibus0 drive 0: <HL-DT-ST DVD+/-RW GU90N, KMIZ7192647, A101> cdrom removable
-[    4.157120] cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
-[    4.157120] cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
-[    4.437248] uhub3 at uhub2 port 1: vendor 8087 (0x8087) product 8000 (0x8000), class 9/0, rev 2.00/0.04, addr 2
-[    4.437248] uhub3: single transaction translator
-[    4.437248] uhub3: 8 ports with 8 removable, self powered
-[    5.647809] umass0 at uhub3 port 3 configuration 1 interface 0
-[    5.647809] umass0: BUFFALO (0x411) USB Flash Disk (0x111), rev 2.00/1.00, addr 3
-[    5.647809] umass0: using SCSI over Bulk-Only
-[    5.647809] scsibus0 at umass0: 2 targets, 1 lun per target
-[    5.657812] sd0 at scsibus0 target 0 lun 0: <BUFFALO, USB Flash Disk, 3.10> disk removable
-[    5.657812] sd0: 1912 MB, 479 cyl, 255 head, 32 sec, 512 bytes/sect x 3915776 sectors
-[    5.667817] sd0: GPT GUID: 2b44eb52-071f-44b9-a9e8-75ec59553b38
-[    5.667817] dk0 at sd0: "EFI system", 262144 blocks at 2048, type: msdos
-[    5.667817] dk1 at sd0: "fd3a929c-4550-41ed-8326-f236df07ef23", 2908160 blocks at 264192, type: ffs
-[    6.718303] uvideo0 at uhub3 port 5 configuration 1 interface 0: CN0VFVY97248744EB0JWA00 (0xc45) Integrated_Webcam_HD (0x670b), rev 2.00/32.62, addr 4
-[    6.728308] video0 at uvideo0: CN0VFVY97248744EB0JWA00 (0xc45) Integrated_Webcam_HD (0x670b), rev 2.00/32.62, addr 4
-[    7.698756] ugen0 at uhub3 port 8
-[    7.698756] ugen0: Generic (0xbda) USB2.0-CRW (0x129), rev 2.00/39.60, addr 5
-[    7.758783] WARNING: 20 errors while detecting hardware; check system log.
-[    7.758783] boot device: sd0
-[    7.758783] root on dk1
-[    7.768788] root file system type: ffs
-[    7.768788] kern.module.path=/stand/amd64/8.99.19/modules
-[    7.848825] iwm0: hw rev 0x140, fw ver 17.352738.0, address f0:42:1c:e2:cb:29
-[    7.848825] iwm0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-[    7.848825] iwm0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-[    7.848825] iwm0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-[   32.200078] acpibat0: normal capacity on 'charge state'
-[  331.648452] syncing disks... 11 9 done
-[  331.698476] unmounted tmpfs on /tmp type tmpfs
-[    1.000000] Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-[    1.000000] 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-[    1.000000] 2018 The NetBSD Foundation, Inc.  All rights reserved.
-[    1.000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
-[    1.000000] The Regents of the University of California.  All rights reserved.
-
-[    1.000000] NetBSD 8.99.19 (GENERIC) #0: Mon Jun 18 17:07:07 UTC 2018
-[    1.000000] 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
-[    1.000000] total memory = 4000 MB
-[    1.000000] avail memory = 3861 MB
-[    1.000000] cpu_rng: RDRAND
-[    1.000000] rnd: seeded with 128 bits
-[    1.000000] timecounter: Timecounters tick every 10.000 msec
-[    1.000000] Kernelized RAIDframe activated
-[    1.000000] running cgd selftest aes-xts-256 aes-xts-512 done
-[    1.000000] timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
-[    1.000003] Dell Inc. Inspiron 3442 (Not Specified)
-[    1.000003] mainbus0 (root)
-[    1.000003] ACPI: RSDP 0x00000000000F0490 000024 (v02 DELL  )
-[    1.000003] ACPI: XSDT 0x00000000DABE0098 0000B4 (v01 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: FACP 0x00000000DABF07C8 00010C (v05 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: DSDT 0x00000000DABE01E0 0105E4 (v02 DELL   WN09     00000000 INTL 20120711)
-[    1.000003] ACPI: FACS 0x00000000DB56EF80 000040
-[    1.000003] ACPI: APIC 0x00000000DABF08D8 000072 (v03 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: FPDT 0x00000000DABF0950 000044 (v01 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: ASF! 0x00000000DABF0998 0000A5 (v32 INTEL   HCG     00000001 TFSM 000F4240)
-[    1.000003] ACPI: LPIT 0x00000000DABF0A40 000094 (v01 ALASKA          00000000 AMI. 00000005)
-[    1.000003] ACPI: SSDT 0x00000000DABF0AD8 000228 (v01 INTEL  sensrhub 00000000 INTL 20120711)
-[    1.000003] ACPI: SLIC 0x00000000DABF0D00 000176 (v01 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: SSDT 0x00000000DABF0E78 0004D6 (v01 PmRef  Cpu0Ist  00003000 INTL 20120711)
-[    1.000003] ACPI: SSDT 0x00000000DABF1350 000AD8 (v01 PmRef  CpuPm    00003000 INTL 20120711)
-[    1.000003] ACPI: MCFG 0x00000000DABF1E28 00003C (v01 DELL   WN09     01072009 MSFT 00000097)
-[    1.000003] ACPI: HPET 0x00000000DABF1E68 000038 (v01 DELL   WN09     01072009 AMI. 00000005)
-[    1.000003] ACPI: SSDT 0x00000000DABF1EA0 000315 (v01 SataRe SataTabl 00001000 INTL 20120711)
-[    1.000003] ACPI: SSDT 0x00000000DABF21B8 0035A5 (v01 SaSsdt SaSsdt   00003000 INTL 20091112)
-[    1.000003] ACPI: MSDM 0x00000000DABF5760 000055 (v03 DELL   WN09     01072009 AMI  00010013)
-[    1.000003] ACPI: SSDT 0x00000000DABF57B8 00004B (v01 MeSsdt MeSsdt   00003000 INTL 20120711)
-[    1.000003] ACPI: TPM2 0x00000000DABF5808 000034 (v03                 00000000      00000000)
-[    1.000003] ACPI: DMAR 0x00000000DABF5840 000164 (v01 INTEL  HSW      00000001 INTL 00000001)
-[    1.000003] ACPI: CSRT 0x00000000DABF59A8 0000C4 (v01 INTL   HSWULT-R 00000001 INTL 20100528)
-[    1.000003] ACPI: 7 ACPI AML tables successfully acquired and loaded
-[    1.000003] ioapic0 at mainbus0 apid 8: pa 0xfec00000, version 0x20, 40 pins
-[    1.000003] cpu0 at mainbus0 apid 0
-[    1.000003] cpu0: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
-[    1.000003] cpu0: package 0, core 0, smt 0
-[    1.000003] cpu1 at mainbus0 apid 2
-[    1.000003] cpu1: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
-[    1.000003] cpu1: package 0, core 1, smt 0
-[    1.000003] cpu2 at mainbus0 apid 1
-[    1.000003] cpu2: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
-[    1.000003] cpu2: package 0, core 0, smt 1
-[    1.000003] cpu3 at mainbus0 apid 3
-[    1.000003] cpu3: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
-[    1.000003] cpu3: package 0, core 1, smt 1
-[    1.000003] acpi0 at mainbus0: Intel ACPICA 20180427
-[    1.000003] acpi0: X/RSDT: OemId <DELL  , WN09   ,01072009>, AslId <AMI ,00010013>
-[    1.000003] acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
-[    1.000003] ACPI: Dynamic OEM Table Load:
-[    1.000003] ACPI: SSDT 0xFFFFE4011EB75410 0003D3 (v01 PmRef  Cpu0Cst  00003001 INTL 20120711)
-[    1.000003] ACPI: Dynamic OEM Table Load:
-[    1.000003] ACPI: SSDT 0xFFFFE4010730D810 0005AA (v01 PmRef  ApIst    00003000 INTL 20120711)
-[    1.000003] ACPI: Dynamic OEM Table Load:
-[    1.000003] ACPI: SSDT 0xFFFFE40107278A50 000119 (v01 PmRef  ApCst    00003000 INTL 20120711)
-[    1.000003] acpi0: SCI interrupting at int 9
-[    1.000003] acpi0: fixed power button present
-[    1.000003] timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
-[    1.048864] hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
-[    1.048864] timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
-[    1.049010] acpiec0 at acpi0 (EC, PNP0C09-1)acpiec0: autoconfiguration error: unable to evaluate _GPE: AE_NOT_FOUND
-[    1.049010] TPMX (PNP0C01) at acpi0 not configured
-[    1.049010] FWHD (INT0800) at acpi0 not configured
-[    1.049010] LDRC (PNP0C02) at acpi0 not configured
-[    1.049010] attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
-[    1.049010] CWDT (INT3F0D) at acpi0 not configured
-[    1.049010] RMSC (PNP0C02) at acpi0 not configured
-[    1.049010] pckbc1 at acpi0 (PS2K, DLLK0651) (kbd port): io 0x60,0x64,0x62,0x66 irq 1
-[    1.049010] SIRC (PNP0C02) at acpi0 not configured
-[    1.049010] GPI0 (INT33C7) at acpi0 not configured
-[    1.049010] SDMA (INTL9C60) at acpi0 not configured
-[    1.049010] I2C0 (INT33C2) at acpi0 not configured
-[    1.049010] I2C1 (INT33C3) at acpi0 not configured
-[    1.049010] TPD1 (DLL0651) at acpi0 not configured
-[    1.049010] PDRC (PNP0C02) at acpi0 not configured
-[    1.049010] acpivga0 at acpi0 (GFX0): ACPI Display Adapter
-[    1.049010] acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
-[    1.049010] acpiout1 at acpivga0 (DD02, 0x0002): ACPI Display Output Device
-[    1.049010] acpiout2 at acpivga0 (DD03, 0x0300): ACPI Display Output Device
-[    1.049010] acpiout3 at acpivga0 (DD04, 0x0301): ACPI Display Output Device
-[    1.049010] acpiout4 at acpivga0 (DD05, 0x0302): ACPI Display Output Device
-[    1.049010] acpiout5 at acpivga0 (DD06, 0x0303): ACPI Display Output Device
-[    1.049010] acpiout6 at acpivga0 (DD07, 0x0304): ACPI Display Output Device
-[    1.049010] acpiout7 at acpivga0 (DD08, 0x0305): ACPI Display Output Device
-[    1.049010] acpiout8 at acpivga0 (DD09, 0x0009): ACPI Display Output Device
-[    1.049010] acpiout9 at acpivga0 (DD0A, 0x000a): ACPI Display Output Device
-[    1.049010] acpiout10 at acpivga0 (DD0B, 0x000b): ACPI Display Output Device
-[    1.049010] acpiout11 at acpivga0 (DD0C, 0x000c): ACPI Display Output Device
-[    1.049010] acpiout12 at acpivga0 (DD0D, 0x000d): ACPI Display Output Device
-[    1.049010] acpiout13 at acpivga0 (DD0E, 0x000e): ACPI Display Output Device
-[    1.049010] acpiout14 at acpivga0 (DD0F, 0x000f): ACPI Display Output Device
-[    1.049010] acpiout15 at acpivga0 (DD1F, 0x0400): ACPI Display Output Device
-[    1.049010] acpiout15: brightness levels: [0-100]
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout0
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout1
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout2
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout3
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout4
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout5
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout6
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout7
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout8
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout9
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout10
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout11
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout12
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout13
-[    1.049010] acpivga0: autoconfiguration error: unknown output device acpiout14
-[    1.049010] acpivga0: connected output devices:
-[    1.049010] acpivga0:   0x0400 (acpiout15): Unknown Output Device, head 0
-[    1.049010] acpibat0 at acpi0 (BAT0, PNP0C0A-1): ACPI Battery
-[    1.049010] acpibat0: SANYO LION rechargeable battery
-[    1.049010] acpibat0: granularity: low->warn 0.028 Ah, warn->full 0.028 Ah
-[    1.049010] acpiacad0 at acpi0 (AC, ACPI0003): ACPI AC Adapter
-[    1.049010] acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
-[    1.049010] acpibut0 at acpi0 (PWRB, PNP0C0C-170): ACPI Power Button
-[    1.049010] acpibut1 at acpi0 (SBTN, PNP0C0E): ACPI Sleep Button
-[    1.049010] acpiwmi0 at acpi0 (AMW0, PNP0C14-0): ACPI WMI Interface
-[    1.049010] wmidell0 at acpiwmi0: Dell WMI mappings version 1
-[    1.049010] RBTN (DELLABCE) at acpi0 not configured
-[    1.049010] acpitz0 at acpi0 (THM)
-[    1.049010] acpitz0: levels: critical 99.0 C, passive cooling
-[    1.049010] ACPI: Enabled 4 GPEs in block 00 to 7F
-[    1.049010] pckbd0 at pckbc1 (kbd slot)
-[    1.049010] pckbc1: using irq 1 for kbd slot
-[    1.049010] wskbd0 at pckbd0: console keyboard
-[    1.049010] pms0 at pckbc1 (aux slot)
-[    1.049010] pms0: Synaptics touchpad version 8.1
-[    1.049010] pms0: Extended W mode, Middle button, Palm detect, One button click pad, Multi-finger Report, Multi-finger
-[    1.049010] pckbc1: autoconfiguration error: unable to establish interrupt for aux slot
-[    1.049010] wsmouse0 at pms0 mux 0
-[    1.049010] pci0 at mainbus0 bus 0: configuration mode 1
-[    1.049010] pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
-[    1.049010] pchb0 at pci0 dev 0 function 0: vendor 8086 product 0a04 (rev. 0x0b)
-[    1.049010] i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 0a16 (rev. 0x0b)
-[    1.049010] drm: Memory usable by graphics device = 2048M
-[    1.049010] drm: Supports vblank timestamp caching Rev 2 (21.10.2013).
-[    1.049010] drm: Driver supports precise vblank timestamp query.
-[    1.049010] i915drmkms0: interrupting at ioapic0 pin 16 (i915)
-[    1.049010] intelfb0 at i915drmkms0
-[    1.049010] i915drmkms0: info: registered panic notifier
-[    1.049010] i915drmkms0: autoconfiguration error: More than 8 outputs detected via ACPI
-[    1.049010] intelfb0: framebuffer at 0xffff800066170000, size 1366x768, depth 32, stride 5504
-[    1.049010] wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
-[    1.049010] wsmux1: connecting to wsdisplay0
-[    1.049010] hdaudio0 at pci0 dev 3 function 0: HD Audio Controller
-[    1.049010] hdaudio0: interrupting at msi0 vec 0
-[    1.049010] hdaudio0: autoconfiguration error: timeout leaving reset state
-[    1.049010] hdaudio0: autoconfiguration error: device driver failed to attach
-[    1.049010] xhci0 at pci0 dev 20 function 0: vendor 8086 product 9c31 (rev. 0x04)
-[    1.049010] xhci0: interrupting at msi0 vec 0
-[    1.049010] xhci0: xHCI version 1.0
-[    1.049010] usb0 at xhci0: USB revision 3.0
-[    1.049010] usb1 at xhci0: USB revision 2.0
-[    1.049010] vendor 8086 product 9c3a (miscellaneous communications, revision 0x04) at pci0 dev 22 function 0 not configured
-[    1.049010] hdaudio1 at pci0 dev 27 function 0: HD Audio Controller
-[    1.049010] hdaudio1: interrupting at msi1 vec 0
-[    1.049010] hdafg0 at hdaudio1: vendor 10ec product 0255
-[    1.049010] hdafg0: DAC00 2ch: Speaker [Built-In]
-[    1.049010] hdafg0: DAC01 2ch: HP Out [Jack]
-[    1.049010] hdafg0: ADC02 2ch: Mic In [Built-In]
-[    1.049010] hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
-[    1.049010] audio0 at hdafg0: full duplex, playback, capture, mmap, independent
-[    1.049010] hdafg0: Virtual format configured - Format SLINEAR, precision 16, channels 2, frequency 48000
-[    1.049010] hdafg0: Latency: 128 milliseconds
-[    1.049010] spkr0 at audio0: PC Speaker (synthesized)
-[    1.049010] wsbell at spkr0 not configured
-[    1.049010] ppb0 at pci0 dev 28 function 0: vendor 8086 product 9c10 (rev. 0xe4)
-[    1.049010] ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
-[    1.049010] pci1 at ppb0 bus 4
-[    1.049010] pci1: i/o space, memory space enabled, rd/line, wr/inv ok
-[    1.049010] ppb1 at pci0 dev 28 function 2: vendor 8086 product 9c14 (rev. 0xe4)
-[    1.049010] ppb1: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
-[    1.049010] ppb1: link is x1 @ 2.5GT/s
-[    1.049010] pci2 at ppb1 bus 6
-[    1.049010] pci2: i/o space, memory space enabled, rd/line, wr/inv ok
-[    1.049010] iwm0 at pci2 dev 0 function 0: vendor 8086 product 08b1 (rev. 0xbb)
-[    1.049010] iwm0: interrupting at msi2 vec 0
-[    1.049010] ppb2 at pci0 dev 28 function 3: vendor 8086 product 9c16 (rev. 0xe4)
-[    1.049010] ppb2: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
-[    1.049010] ppb2: link is x1 @ 2.5GT/s
-[    1.049010] pci3 at ppb2 bus 7
-[    1.049010] pci3: i/o space, memory space enabled, rd/line, wr/inv ok
-[    1.049010] re0 at pci3 dev 0 function 0: RealTek 8100E/8101E/8102E/8102EL PCIe 10/100BaseTX (rev. 0x07)
-[    1.049010] re0: interrupting at msi3 vec 0
-[    1.049010] re0: Unknown revision (0x44800000)
-[    1.049010] re0: Ethernet address b8:2a:72:cd:b7:17
-[    1.049010] re0: using 256 tx descriptors
-[    1.049010] ukphy0 at re0 phy 7: OUI 0x00e04c, model 0x0008, rev. 2
-[    1.049010] ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-[    1.049010] ehci0 at pci0 dev 29 function 0: vendor 8086 product 9c26 (rev. 0x04)
-[    1.049010] ehci0: interrupting at ioapic0 pin 23
-[    1.049010] ehci0: BIOS has given up ownership
-[    1.049010] ehci0: EHCI version 1.0
-[    1.049010] usb2 at ehci0: USB revision 2.0
-[    1.049010] pcib0 at pci0 dev 31 function 0: vendor 8086 product 9c43 (rev. 0x04)
-[    1.049010] ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 9c03 (rev. 0x04)
-[    1.049010] ahcisata0: interrupting at ioapic0 pin 19
-[    1.049010] ahcisata0: 64-bit DMA
-[    1.049010] ahcisata0: AHCI revision 1.30, 4 ports, 32 slots, CAP 0xc734ff03<PSC,SSC,PMD,SAM,ISS=0x3=Gen3,SCLO,SAL,SALP,SNCQ,S64A>
-[    1.049010] atabus0 at ahcisata0 channel 0
-[    1.049010] atabus1 at ahcisata0 channel 1
-[    1.049010] ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 9c22 (rev. 0x04)
-[    1.049010] ichsmb0: interrupting at ioapic0 pin 18
-[    1.049010] iic0 at ichsmb0: I2C bus
-[    1.049010] isa0 at pcib0
-[    1.049010] pcppi0 at isa0 port 0x61
-[    1.049010] spkr1 at pcppi0: PC Speaker
-[    1.049010] wsbell at spkr1 not configured
-[    1.049010] midi0 at pcppi0: PC speaker
-[    1.049010] sysbeep0 at pcppi0
-[    1.049010] attimer1: attached to pcppi0
-[    1.049010] acpicpu0 at cpu0: ACPI CPU
-[    1.049010] acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
-[    1.049010] acpicpu0: C2: FFH, lat 148 us, pow   200 mW
-[    1.049010] acpicpu0: C3: FFH, lat 506 us, pow   200 mW
-[    1.049010] acpicpu0: P0: FFH, lat  10 us, pow 15000 mW, 1900 MHz
-[    1.049010] acpicpu0: P1: FFH, lat  10 us, pow 13939 mW, 1800 MHz
-[    1.049010] acpicpu0: P2: FFH, lat  10 us, pow 13047 mW, 1700 MHz
-[    1.049010] acpicpu0: P3: FFH, lat  10 us, pow 12172 mW, 1600 MHz
-[    1.049010] acpicpu0: P4: FFH, lat  10 us, pow 11172 mW, 1500 MHz
-[    1.049010] acpicpu0: P5: FFH, lat  10 us, pow 10334 mW, 1400 MHz
-[    1.049010] acpicpu0: P6: FFH, lat  10 us, pow  9516 mW, 1300 MHz
-[    1.049010] acpicpu0: P7: FFH, lat  10 us, pow  8712 mW, 1200 MHz
-[    1.049010] acpicpu0: P8: FFH, lat  10 us, pow  7789 mW, 1100 MHz
-[    1.049010] acpicpu0: P9: FFH, lat  10 us, pow  7021 mW, 1000 MHz
-[    1.049010] acpicpu0: P10: FFH, lat  10 us, pow  6270 mW,  900 MHz
-[    1.049010] acpicpu0: P11: FFH, lat  10 us, pow  5537 mW,  800 MHz
-[    1.049010] acpicpu0: P12: FFH, lat  10 us, pow  4688 mW,  779 MHz
-[    1.049010] coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
-[    1.049010] acpicpu1 at cpu1: ACPI CPU
-[    1.049010] coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=100
-[    1.049010] acpicpu2 at cpu2: ACPI CPU
-[    1.049010] acpicpu3 at cpu3: ACPI CPU
-[    1.049010] DRM error in intel_uncore_check_errors: Unclaimed register before interrupt
-[    1.049010] timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-[    1.465359] timecounter: Timecounter "TSC" frequency 1895731520 Hz quality 3000
-[    1.467897] acpiacad0: AC adapter online.
-[    1.467897] uhub0 at usb0: NetBSD (0000) xHCI root hub (0000), class 9/0, rev 3.00/1.00, addr 0
-[    1.467897] uhub0: 4 ports with 4 removable, self powered
-[    1.467897] uhub1 at usb1: NetBSD (0000) xHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 0
-[    1.467897] uhub1: 9 ports with 9 removable, self powered
-[    1.475362] IPsec: Initialized Security Association Processing.
-[    1.485367] uhub2 at usb2: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
-[    1.485367] uhub2: 2 ports with 2 removable, self powered
-[    1.565398] ahcisata0 port 0: device present, speed: 6.0Gb/s
-[    1.565398] ahcisata0 port 1: device present, speed: 1.5Gb/s
-[    2.325693] drm: Enabling RC6 states: RC6 on, RC6p off, RC6pp off
-[    3.085988] ubt0 at uhub1 port 6
-[    3.085988] ubt0: vendor 8087 (0x8087) product 07dc (0x7dc), rev 2.00/0.01, addr 1
-[    3.095992] wd0 at atabus0 drive 0
-[    3.095992] wd0: <ST1000LM024 HN-M101MBB>
-[    3.095992] wd0: drive supports 16-sector PIO transfers, LBA48 addressing
-[    3.095992] wd0: 931 GB, 1938021 cyl, 16 head, 63 sec, 512 bytes/sect x 1953525168 sectors
-[    3.166019] wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), NCQ (32 tags) w/PRIO
-[    3.166019] wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags) w/PRIO
-[    3.166019] atapibus0 at atabus1: 1 targets
-[    3.176024] cd0 at atapibus0 drive 0: <HL-DT-ST DVD+/-RW GU90N, KMIZ7192647, A101> cdrom removable
-[    3.176024] cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
-[    3.176024] cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
-[    3.726237] uhub3 at uhub2 port 1: vendor 8087 (0x8087) product 8000 (0x8000), class 9/0, rev 2.00/0.04, addr 2
-[    3.726237] uhub3: single transaction translator
-[    3.726237] uhub3: 8 ports with 8 removable, self powered
-[    5.026742] uvideo0 at uhub3 port 5 configuration 1 interface 0: CN0VFVY97248744EB0JWA00 (0xc45) Integrated_Webcam_HD (0x670b), rev 2.00/32.62, addr 3
-[    5.036746] video0 at uvideo0: CN0VFVY97248744EB0JWA00 (0xc45) Integrated_Webcam_HD (0x670b), rev 2.00/32.62, addr 3
-[    6.007123] ugen0 at uhub3 port 8
-[    6.007123] ugen0: Generic (0xbda) USB2.0-CRW (0x129), rev 2.00/39.60, addr 4
-[    6.027130] WARNING: 20 errors while detecting hardware; check system log.
-[    6.027130] boot device: wd0
-[    6.027130] root on wd0a dumps on wd0b
-[    6.047138] root file system type: ffs
-[    6.047138] kern.module.path=/stand/amd64/8.99.19/modules
-[    6.177189] iwm0: hw rev 0x140, fw ver 17.352738.0, address f0:42:1c:e2:cb:29
-[    6.177189] iwm0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-[    6.177189] iwm0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-[    6.177189] iwm0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-[   10.428840] wsdisplay0: screen 1 added (default, vt100 emulation)
-[   10.428840] wsdisplay0: screen 2 added (default, vt100 emulation)
-[   10.428840] wsdisplay0: screen 3 added (default, vt100 emulation)
-[   10.428840] wsdisplay0: screen 4 added (default, vt100 emulation)
-[   31.487017] acpibat0: normal capacity on 'charge state'
-[   52.605825] acpivga0: autoconfiguration error: bad notify
+NetBSD 9.99.3 (GENERIC) #0: Tue Aug  6 15:48:18 UTC 2019
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+total memory = 4000 MB
+avail memory = 3856 MB
+cpu_rng: RDRAND
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+running cgd selftest aes-xts-256 aes-xts-512 done
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+efi: systbl at pa dbf6ff18
+Dell Inc. Inspiron 3442 (Not Specified)
+mainbus0 (root)
+ACPI: RSDP 0x00000000DABE0000 000024 (v02 DELL  )
+ACPI: XSDT 0x00000000DABE00A0 0000BC (v01 DELL   WN09     01072009 AMI  00010013)
+ACPI: FACP 0x00000000DABF07D0 00010C (v05 DELL   WN09     01072009 AMI  00010013)
+ACPI: DSDT 0x00000000DABE01E8 0105E4 (v02 DELL   WN09     00000000 INTL 20120711)
+ACPI: FACS 0x00000000DB56EF80 000040
+ACPI: APIC 0x00000000DABF08E0 000072 (v03 DELL   WN09     01072009 AMI  00010013)
+ACPI: FPDT 0x00000000DABF0958 000044 (v01 DELL   WN09     01072009 AMI  00010013)
+ACPI: ASF! 0x00000000DABF09A0 0000A5 (v32 INTEL   HCG     00000001 TFSM 000F4240)
+ACPI: LPIT 0x00000000DABF0A48 000094 (v01 ALASKA          00000000 AMI. 00000005)
+ACPI: SSDT 0x00000000DABF0AE0 000228 (v01 INTEL  sensrhub 00000000 INTL 20120711)
+ACPI: SLIC 0x00000000DABF0D08 000176 (v01 DELL   WN09     01072009 AMI  00010013)
+ACPI: SSDT 0x00000000DABF0E80 0004D6 (v01 PmRef  Cpu0Ist  00003000 INTL 20120711)
+ACPI: SSDT 0x00000000DABF1358 000AD8 (v01 PmRef  CpuPm    00003000 INTL 20120711)
+ACPI: MCFG 0x00000000DABF1E30 00003C (v01 DELL   WN09     01072009 MSFT 00000097)
+ACPI: HPET 0x00000000DABF1E70 000038 (v01 DELL   WN09     01072009 AMI. 00000005)
+ACPI: SSDT 0x00000000DABF1EA8 000315 (v01 SataRe SataTabl 00001000 INTL 20120711)
+ACPI: SSDT 0x00000000DABF21C0 0035A5 (v01 SaSsdt SaSsdt   00003000 INTL 20091112)
+ACPI: MSDM 0x00000000DABF5768 000055 (v03 DELL   WN09     01072009 AMI  00010013)
+ACPI: SSDT 0x00000000DABF57C0 00004B (v01 MeSsdt MeSsdt   00003000 INTL 20120711)
+ACPI: TPM2 0x00000000DABF5810 000034 (v03                 00000000      00000000)
+ACPI: BGRT 0x00000000DABF5848 000038 (v00 DELL   WN09     01072009 AMI  00010013)
+ACPI: DMAR 0x00000000DABF5880 000164 (v01 INTEL  HSW      00000001 INTL 00000001)
+ACPI: CSRT 0x00000000DABF59E8 0000C4 (v01 INTL   HSWULT-R 00000001 INTL 20100528)
+ACPI: 7 ACPI AML tables successfully acquired and loaded
+ioapic0 at mainbus0 apid 8: pa 0xfec00000, version 0x20, 40 pins
+cpu0 at mainbus0 apid 0
+cpu0: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
+cpu0: package 0, core 0, smt 0
+cpu1 at mainbus0 apid 2
+cpu1: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
+cpu1: package 0, core 1, smt 0
+cpu2 at mainbus0 apid 1
+cpu2: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
+cpu2: package 0, core 0, smt 1
+cpu3 at mainbus0 apid 3
+cpu3: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
+cpu3: package 0, core 1, smt 1
+acpi0 at mainbus0: Intel ACPICA 20190405
+acpi0: X/RSDT: OemId <DELL  , WN09   ,01072009>, AslId <AMI ,00010013>
+acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFF84A448F3F810 0003D3 (v01 PmRef  Cpu0Cst  00003001 INTL 20120711)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFF84A4318EF810 0005AA (v01 PmRef  ApIst    00003000 INTL 20120711)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFF84A431875AD0 000119 (v01 PmRef  ApCst    00003000 INTL 20120711)
+acpi0: SCI interrupting at int 9
+acpi0: fixed power button present
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+acpiec0 at acpi0 (EC, PNP0C09-1)acpiec0: autoconfiguration error: unable to evaluate _GPE: AE_NOT_FOUND
+TPMX (PNP0C01) at acpi0 not configured
+FWHD (INT0800) at acpi0 not configured
+LDRC (PNP0C02) at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
+CWDT (INT3F0D) at acpi0 not configured
+RMSC (PNP0C02) at acpi0 not configured
+pckbc1 at acpi0 (PS2K, DLLK0651) (kbd port): io 0x60,0x64,0x62,0x66 irq 1
+SIRC (PNP0C02) at acpi0 not configured
+GPI0 (INT33C7) at acpi0 not configured
+SDMA (INTL9C60) at acpi0 not configured
+I2C0 (INT33C2) at acpi0 not configured
+I2C1 (INT33C3) at acpi0 not configured
+TPD1 (DLL0651) at acpi0 not configured
+PDRC (PNP0C02) at acpi0 not configured
+acpivga0 at acpi0 (GFX0): ACPI Display Adapter
+acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
+acpiout1 at acpivga0 (DD02, 0x0002): ACPI Display Output Device
+acpiout2 at acpivga0 (DD03, 0x0300): ACPI Display Output Device
+acpiout3 at acpivga0 (DD04, 0x0301): ACPI Display Output Device
+acpiout4 at acpivga0 (DD05, 0x0302): ACPI Display Output Device
+acpiout5 at acpivga0 (DD06, 0x0303): ACPI Display Output Device
+acpiout6 at acpivga0 (DD07, 0x0304): ACPI Display Output Device
+acpiout7 at acpivga0 (DD08, 0x0305): ACPI Display Output Device
+acpiout8 at acpivga0 (DD09, 0x0009): ACPI Display Output Device
+acpiout9 at acpivga0 (DD0A, 0x000a): ACPI Display Output Device
+acpiout10 at acpivga0 (DD0B, 0x000b): ACPI Display Output Device
+acpiout11 at acpivga0 (DD0C, 0x000c): ACPI Display Output Device
+acpiout12 at acpivga0 (DD0D, 0x000d): ACPI Display Output Device
+acpiout13 at acpivga0 (DD0E, 0x000e): ACPI Display Output Device
+acpiout14 at acpivga0 (DD0F, 0x000f): ACPI Display Output Device
+acpiout15 at acpivga0 (DD1F, 0x0400): ACPI Display Output Device
+acpiout15: brightness levels: [0-100]
+acpivga0: autoconfiguration error: unknown output device acpiout0
+acpivga0: autoconfiguration error: unknown output device acpiout1
+acpivga0: autoconfiguration error: unknown output device acpiout2
+acpivga0: autoconfiguration error: unknown output device acpiout3
+acpivga0: autoconfiguration error: unknown output device acpiout4
+acpivga0: autoconfiguration error: unknown output device acpiout5
+acpivga0: autoconfiguration error: unknown output device acpiout6
+acpivga0: autoconfiguration error: unknown output device acpiout7
+acpivga0: autoconfiguration error: unknown output device acpiout8
+acpivga0: autoconfiguration error: unknown output device acpiout9
+acpivga0: autoconfiguration error: unknown output device acpiout10
+acpivga0: autoconfiguration error: unknown output device acpiout11
+acpivga0: autoconfiguration error: unknown output device acpiout12
+acpivga0: autoconfiguration error: unknown output device acpiout13
+acpivga0: autoconfiguration error: unknown output device acpiout14
+acpivga0: connected output devices:
+acpivga0:   0x0400 (acpiout15): Unknown Output Device, head 0
+acpibat0 at acpi0 (BAT0, PNP0C0A-1): ACPI Battery
+acpiacad0 at acpi0 (AC, ACPI0003): ACPI AC Adapter
+acpilid0 at acpi0 (LID0, PNP0C0D): ACPI Lid Switch
+acpibut0 at acpi0 (PWRB, PNP0C0C-170): ACPI Power Button
+acpibut1 at acpi0 (SBTN, PNP0C0E): ACPI Sleep Button
+acpiwmi0 at acpi0 (AMW0, PNP0C14-0): ACPI WMI Interface
+wmidell0 at acpiwmi0: Dell WMI mappings version 1
+RBTN (DELLABCE) at acpi0 not configured
+acpitz0 at acpi0 (THM)
+acpitz0: levels: critical 99.0 C, passive cooling
+ACPI: Enabled 4 GPEs in block 00 to 7F
+pckbd0 at pckbc1 (kbd slot)
+pckbc1: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc1 (aux slot)
+pms0: Synaptics touchpad version 8.1
+pms0: Extended W mode, Middle button, Palm detect, One button click pad, Multi-finger Report, Multi-finger
+pckbc1: autoconfiguration error: unable to establish interrupt for aux slot
+wsmouse0 at pms0 mux 0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: vendor 8086 product 0a04 (rev. 0x0b)
+i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 0a16 (rev. 0x0b)
+hdaudio0 at pci0 dev 3 function 0: HD Audio Controller
+hdaudio0: interrupting at msi0 vec 0
+hdaudio0: autoconfiguration error: RIRB timeout
+hdaudio0: autoconfiguration error: RIRB timeout
+xhci0 at pci0 dev 20 function 0: vendor 8086 product 9c31 (rev. 0x04)
+xhci0: interrupting at msi1 vec 0
+xhci0: xHCI version 1.0
+usb0 at xhci0: USB revision 3.0
+usb1 at xhci0: USB revision 2.0
+vendor 8086 product 9c3a (miscellaneous communications, revision 0x04) at pci0 dev 22 function 0 not configured
+hdaudio1 at pci0 dev 27 function 0: HD Audio Controller
+hdaudio1: interrupting at msi2 vec 0
+hdafg0 at hdaudio1: vendor 10ec product 0255
+hdafg0: DAC00 2ch: Speaker [Built-In]
+hdafg0: DAC01 2ch: HP Out [Jack]
+hdafg0: ADC02 2ch: Mic In [Built-In]
+hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: playback, capture, full duplex, independent
+audio0: slinear_le:16 2ch 48000Hz, blk 40ms for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 40ms for recording
+spkr0 at audio0: PC Speaker (synthesized)
+wsbell at spkr0 not configured
+ppb0 at pci0 dev 28 function 0: vendor 8086 product 9c10 (rev. 0xe4)
+ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
+pci1 at ppb0 bus 4
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb1 at pci0 dev 28 function 2: vendor 8086 product 9c14 (rev. 0xe4)
+ppb1: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
+ppb1: link is x1 @ 2.5GT/s
+pci2 at ppb1 bus 6
+pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+iwm0 at pci2 dev 0 function 0: vendor 8086 product 08b1 (rev. 0xbb)
+iwm0: interrupting at msi3 vec 0
+ppb2 at pci0 dev 28 function 3: vendor 8086 product 9c16 (rev. 0xe4)
+ppb2: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
+ppb2: link is x1 @ 2.5GT/s
+pci3 at ppb2 bus 7
+pci3: i/o space, memory space enabled, rd/line, wr/inv ok
+re0 at pci3 dev 0 function 0: RealTek 8100E/8101E/8102E/8102EL PCIe 10/100BaseTX (rev. 0x07)
+re0: interrupting at msix4 vec 0
+re0: Unknown revision (0x44800000)
+re0: Ethernet address b8:2a:72:cd:b7:17
+re0: using 256 tx descriptors
+rlphy0 at re0 phy 7: RTL8201E 10/100 media interface, rev. 2
+rlphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+ehci0 at pci0 dev 29 function 0: vendor 8086 product 9c26 (rev. 0x04)
+ehci0: interrupting at ioapic0 pin 23
+ehci0: BIOS has given up ownership
+ehci0: EHCI version 1.0
+usb2 at ehci0: USB revision 2.0
+pcib0 at pci0 dev 31 function 0: vendor 8086 product 9c43 (rev. 0x04)
+ahcisata0 at pci0 dev 31 function 2: vendor 8086 product 9c03 (rev. 0x04)
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.30, 4 ports, 32 slots, CAP 0xc734ff03<PSC,SSC,PMD,SAM,ISS=0x3=Gen3,SCLO,SAL,SALP,SNCQ,S64A>
+ahcisata0: interrupting at msi5 vec 0
+atabus0 at ahcisata0 channel 0
+atabus1 at ahcisata0 channel 1
+ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 9c22 (rev. 0x04)
+ichsmb0: interrupting at ioapic0 pin 18
+iic0 at ichsmb0: I2C bus
+isa0 at pcib0
+pcppi0 at isa0 port 0x61
+spkr1 at pcppi0: PC Speaker
+wsbell at spkr1 not configured
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+acpicpu0: C2: FFH, lat 148 us, pow   200 mW
+acpicpu0: C3: FFH, lat 506 us, pow   200 mW
+acpicpu0: P0: FFH, lat  10 us, pow 15000 mW, 1900 MHz
+acpicpu0: P1: FFH, lat  10 us, pow 13939 mW, 1800 MHz
+acpicpu0: P2: FFH, lat  10 us, pow 13047 mW, 1700 MHz
+acpicpu0: P3: FFH, lat  10 us, pow 12172 mW, 1600 MHz
+acpicpu0: P4: FFH, lat  10 us, pow 11172 mW, 1500 MHz
+acpicpu0: P5: FFH, lat  10 us, pow 10334 mW, 1400 MHz
+acpicpu0: P6: FFH, lat  10 us, pow  9516 mW, 1300 MHz
+acpicpu0: P7: FFH, lat  10 us, pow  8712 mW, 1200 MHz
+acpicpu0: P8: FFH, lat  10 us, pow  7789 mW, 1100 MHz
+acpicpu0: P9: FFH, lat  10 us, pow  7021 mW, 1000 MHz
+acpicpu0: P10: FFH, lat  10 us, pow  6270 mW,  900 MHz
+acpicpu0: P11: FFH, lat  10 us, pow  5537 mW,  800 MHz
+acpicpu0: P12: FFH, lat  10 us, pow  4688 mW,  779 MHz
+coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
+acpicpu1 at cpu1: ACPI CPU
+coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=100
+acpicpu2 at cpu2: ACPI CPU
+acpicpu3 at cpu3: ACPI CPU
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "TSC" frequency 1895757440 Hz quality 3000
+acpiacad0: AC adapter online.
+uhub0 at usb0: NetBSD (0000) xHCI root hub (0000), class 9/0, rev 3.00/1.00, addr 0
+uhub0: 4 ports with 4 removable, self powered
+uhub1 at usb1: NetBSD (0000) xHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 0
+uhub1: 9 ports with 9 removable, self powered
+acpibat0: SANYO LION rechargeable battery
+acpibat0: granularity: low->warn 0.028 Ah, warn->full 0.028 Ah
+uhub2 at usb2: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+ahcisata0 port 0: device present, speed: 6.0Gb/s
+ahcisata0 port 1: device present, speed: 1.5Gb/s
+IPsec: Initialized Security Association Processing.
+wd0 at atabus0 drive 0
+ubt0 at uhub1 port 6
+ubt0: vendor 8087 (0x8087) product 07dc (0x7dc), rev 2.00/0.01, addr 1
+wd0: <ST1000LM024 HN-M101MBB>
+wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+wd0: 931 GB, 1938021 cyl, 16 head, 63 sec, 512 bytes/sect x 1953525168 sectors
+wd0: GPT GUID: efef9802-c7fe-435f-b7fe-449139b3b616
+dk0 at wd0: "EFI system", 262144 blocks at 4096, type: msdos
+dk1 at wd0: "NetBSD", 1935671296 blocks at 266240, type: ffs
+dk2 at wd0: "swap", 17584128 blocks at 1935937536, type: swap
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), NCQ (32 tags) w/PRIO
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags) w/PRIO
+atapibus0 at atabus1: 1 targets
+cd0 at atapibus0 drive 0: <HL-DT-ST DVD+/-RW GU90N, KMIZ7192647, A101> cdrom removable
+cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+uhub3 at uhub2 port 1: vendor 8087 (0x8087) product 8000 (0x8000), class 9/0, rev 2.00/0.04, addr 2
+uhub3: single transaction translator
+uhub3: 8 ports with 8 removable, self powered
+uvideo0 at uhub3 port 5 configuration 1 interface 0: CN0VFVY97248744EB0JWA00 (0xc45) Integrated_Webcam_HD (0x670b), rev 2.00/32.62, addr 3
+video0 at uvideo0: CN0VFVY97248744EB0JWA00 (0xc45) Integrated_Webcam_HD (0x670b), rev 2.00/32.62, addr 3
+ugen0 at uhub3 port 8
+ugen0: Generic (0xbda) USB2.0-CRW (0x129), rev 2.00/39.60, addr 4
+WARNING: 19 errors while detecting hardware; check system log.
+boot device: wd0
+root on dk1 dumps on dk2
+root file system type: ffs
+kern.module.path=/stand/amd64/9.99.3/modules
+kern info: [drm] Memory usable by graphics device = 2048M
+kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+kern info: [drm] Driver supports precise vblank timestamp query.
+kern info: [drm] failed to find VBIOS tables
+i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
+intelfb0 at i915drmkms0
+intelfb0: framebuffer at 0xffff970068013000, size 1366x768, depth 32, stride 5504
+iwm0: hw rev 0x140, fw ver 17.352738.0, address f0:42:1c:e2:cb:29
+iwm0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+iwm0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
+iwm0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
+wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)
