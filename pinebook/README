@@ -1,17 +1,24 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190709)
+Subject: pinebook status update (20190824)
 
 Update:
- libc-12.213
- openssl-1.1.1c
- boost-1.70.0
- mlterm-3.8.8nb1
- rust-1.36
+ dhcpcd-8.0.2 clang-8.0.1 cmake-3.15.2 gtk2+-2.24.32nb11
+ gtk3+-3.24.10 harfbuzz-2.6.0 jemalloc-5.2.1nb1
+ libvpx-1.8.1nb1 llvm-8.0.1 mlterm-3.8.8nb4
+ nodejs-10.16.3 nspr-4.21nb1 nss-3.45nb1
+ openjdk8-1.8.222 pango-1.44.5 pangomm-2.42.0nb1
+ perl-5.30.0 php-7.1.31 poppler-0.79.0 python36-3.6.9
+ python37-3.7.4 rsync-3.1.3nb2 ruby24-mikutter-3.9.4
+ rust-1.36.0nb2 samba-3.6.25nb19 wxGTK30-3.0.4nb3
+ xfce4-4.14.0 xnp2-0.86nb8 xscreensaver-5.40nb2
+ xterm-344 youtube-dl-20190813
 
-PR:
- port-arm/54342 
-  Pinebook screen glitches/offsets on top and extreme right of the 
-  screen with modeset enabled.
+Issue
+1. Perl5.30 and libgtop -> mate failed
+Assining non-zero to $[ is no longer possible.
+http://mail-index.netbsd.org/tech-pkg/2019/08/18/msg021814.html
+
+2. libvpx-1.7 -> 1.8 -> affected seamonkey 
 
 TEST kernel:
 - deforaos-camera: camera capture,and reboot
@@ -19,77 +26,20 @@ TEST kernel:
  https://twitter.com/ebijun/status/1087694456936001536
  my compiled kernel with camera patch
  http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/pinebook/netbsd
+ see instruction by Harold Gutch:
+  http://mail-index.netbsd.org/port-arm/2019/07/09/msg005889.html
 
 System Updates:
 
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 sysinfo:
- dhcpcd-7.2.3 libc-12.213 libcurses-8.2 NetBSD-8.99.50
- openssl-1.1.1c sh-20181212-20190705082918Z unbound-1.9.1
- userland-NetBSD-8.99.50/evbarm
+ bzip2-1.0.8 dhcpcd-8.0.2 libcurses-8.2 NetBSD-9.99.10
+ sh-20181212-20190821041741Z userland-NetBSD-9.99.10/evbarm
 
 pkgsrc:
- ImageMagick-7.0.8.49 SDL2-2.0.9nb4 ap24-php71-7.1.30nb2
- apache-2.4.39nb3 apache-ant-1.10.6 atkmm-2.24.3
- atril-1.22.1nb1 babl-0.1.66 boost-build-1.70.0
- boost-docs-1.70.0 boost-headers-1.70.0 boost-jam-1.70.0
- boost-libs-1.70.0 boost-mpi-1.70.0 brotli-1.0.7nb1
- caja-dropbox-1.22.1 caja-extensions-1.22.0nb2
- cbindgen-0.9.0 clang-8.0.0 cmake-3.14.5nb1
- curl-7.65.1nb1 dbus-1.12.16 dhcpcd-7.2.3
- dhcpcd-gtk-0.7.5nb8 dhcpcd-icons-0.7.5 enchant2-2.2.4
- exempi-2.5.0nb1 faad2-2.8.8 fd-3.01b
- ffmpeg3-3.4.6nb1 ffmpeg4-4.1.3nb1 firefox52-52.9.0nb16
- freetype2-2.10.0 gdbus-codegen-2.60.4
- gettext-lib-0.20.1 gettext-m4-0.20.1 gettext-tools-0.20.1
- git-base-2.22.0nb1 glew-2.1.0 glib-networking-2.60.3
- glib2-2.60.4nb5 glib2-tools-2.60.4 glibmm-2.60.0
- gnupg2-2.2.16 gobject-introspection-1.60.1nb1
- gpgme-1.13.1 gst-plugins1-base-1.16.0 gstreamer1-1.16.0
- gtk-doc-1.29nb3 harfbuzz-2.5.3 ibus-mozc-2.20.2673.102nb14
- inkscape-0.92.4nb1 json-glib-1.4.4 libabw-0.1.1nb14
- libbluray-1.1.2 libcares-1.15.0nb1 libcdr-0.1.5nb2
- libe-book-0.1.3nb8 libepoxy-1.4.3nb2 libepubgen-0.1.0nb4
- libetonyek-0.1.9nb1 libevent-2.1.8nb1 libfreehand-0.1.1nb22
- libimagequant-2.12.3 libixion-0.14.1nb1 libmspub-0.1.4nb8
- libmwaw-0.3.7nb9 libnice-0.1.16 libotf-0.9.16nb2
- libpagemaker-0.0.4nb4 libpaper-1.1.28 libpurple-2.13.0nb6
- libqxp-0.0.2nb2 librevenge-0.0.4nb9 librsvg-2.40.20nb4
- libstaroffice-0.0.2nb7 libusb-compat-0.1.7 libuv-1.30.1
- libvisio-0.1.6nb11 libwpd-0.10.1nb9 libwpg-0.3.1nb11
- libwps-0.4.3nb9 libxfce4ui-4.13.5 libxfce4util-4.13.3
- libzmf-0.0.2nb10 llvm-8.0.0 mate-1.22.0nb1 mate-applets-1.22.1
- mate-control-center-1.22.1 mate-desktop-1.22.1nb2
- mate-media-1.22.1nb1 mate-netbook-1.22.1 mate-power-manager-1.22.1
- mate-sensors-applet-1.22.1 mate-utils-1.22.1 mdds-1.4.3nb1
- mdds1.2-1.3.1nb4 mlterm-3.8.8nb1 mozc-renderer-2.20.2673.102nb14
- mozc-server-2.20.2673.102nb14 mozc-tool-2.20.2673.102nb14
- mozo-1.22.1 mpv-0.29.1nb8 mysql-client-5.7.26nb3
- nghttp2-1.39.1nb1 nodejs-10.16.0 nss-3.44.1 orcus-0.14.1nb1
- osabi-NetBSD-8.99.50 pango-1.42.4nb4 php-7.1.30 php71-curl-7.1.30nb2
- php71-fpm-7.1.30nb2 php71-gd-7.1.30 php71-iconv-7.1.30
- php71-intl-7.1.30nb2 php71-json-7.1.30 php71-mbstring-7.1.30
- php71-pdo-7.1.30 php71-pdo_sqlite-7.1.30nb2 php71-posix-7.1.30
- php71-zip-7.1.30 php71-zlib-7.1.30 pluma-1.22.1nb1
- postgresql95-client-9.5.18 protobuf-3.8.0 pulseaudio-12.2nb5
- py37-Socks-1.7.0 py37-babel-2.7.0 py37-cryptography-2.7
- py37-cython-0.29.11 py37-importlib-metadata-0.15
- py37-lxml-4.3.4 py37-pathlib2-2.3.4 py37-pbr-5.2.1
- py37-pluggy-0.12.0 py37-setuptools_scm-3.3.3 py37-test-4.6.3nb1
- py37-urllib3-1.25.3 py37-wcwidth-0.1.7 py37-zipp-0.5.1
- python36-3.6.9 ruby24-addressable-2.6.0 ruby24-delayer-1.0.0
- ruby24-delayer-deferred-2.1.1 ruby24-diva-1.0.0
- ruby24-mikutter-3.9.0 ruby24-nokogiri-1.10.3
- ruby24-pluggaloid-1.2.0 ruby24-twitter-text-3.0.0
- rust-1.36 seamonkey-2.49.4nb11 source-highlight-3.1.8nb9
- speexdsp-1.2.0 spidermonkey52-52.7.4nb9
- tk-8.6.9.1 unittest-cpp-2.0.0 waf-2.0.17 wget-1.20.3nb1
- xfce4-appfinder-4.13.3 xfce4-conf-4.13.7 xfce4-desktop-4.13.4
- xfce4-exo-0.12.6 xfce4-panel-4.13.5 xfce4-power-manager-1.6.2
- xfce4-session-4.13.2 xfce4-settings-4.13.6 xfce4-thunar-1.8.6
- xfce4-tumbler-0.2.4nb1 xfce4-wm-4.13.2 youtube-dl-20190702
-
+ https://github.com/ebijun/NetBSD/commit/8243406bb31bd19648857faf4be650b5444f8eb8
+ 
 works well: 
  evince gedit mate medit py-sphinx gimp seamonkey inkscape
 - mate: pkgsrc/meta-pkgs/mate
@@ -130,7 +80,7 @@ ToDo:
  thread '<unnamed>' panicked at 'Unable to find libclang: 
 
 Version: 
- NetBSD 8.99.50 (GENERIC64.201907051230UTC) #8: Sat Jul  6 15:06:05 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.10 (GENERIC64.201908212330UTC) #12: Thu Aug 22 19:06:02 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
@@ -149,6 +99,6 @@ pkgchk.conf:
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-06-22/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-08-24/
 --
 Jun Ebihara
