@@ -16,13 +16,6 @@ Update:
  xfce4-4.14.0 xnp2-0.86nb8 xscreensaver-5.40nb2
  xterm-344 youtube-dl-20190813
 
-Issue
-1. Perl5.30 and libgtop -> mate failed
-Assining non-zero to $[ is no longer possible.
-http://mail-index.netbsd.org/tech-pkg/2019/08/18/msg021814.html
-
-2. libvpx-1.7 -> 1.8 -> affected seamonkey
-
 TEST kernel:
 - deforaos-camera: camera capture,and reboot
  apply: http://mail-index.netbsd.org/port-arm/2019/01/21/msg005392.html
@@ -73,14 +66,7 @@ ToDo:
 - uim:
  pkgsrc/devel/libgcroots needs aarch64 ifdefs
  http://openbsd-archive.7691.n7.nabble.com/fix-inputmethods-uim-on-aarch64-td357966.html
-- xfwm4: "could not find screen to manage".in startxfce4
-  check xfce4-session again
-- mikutter: crush in startup tutorial
-  https://twitter.com/ebijun/status/1086488794583392257
 - scribus
-- www/firefox 
- http://mail-index.netbsd.org/pkgsrc-changes/2019/02/26/msg188126.html
- thread '<unnamed>' panicked at 'Unable to find libclang: 
 
 Version: 
  `uname -v`
