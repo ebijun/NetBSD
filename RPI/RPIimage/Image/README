@@ -61,14 +61,13 @@ pkgsrc:
   cd /root/.mikutter
   git submodule add https://github.com/toshia/twitter_api_keys.git twitter_api_keys
 
-NetBSD Problem Report Summary:
+RPI Wifi:
+ http://mail-index.netbsd.org/port-arm/2019/08/31/msg006102.html
 
+NetBSD Problem Report Summary:
 port-arm/53284: Support RPI3B+,RPI0W,RPI2-1.2
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=53284
- Open
-- RPI3B+ and RPI2-1.2: fixed,thanx
-- RPI0W: can't initialize microSD.
-  cp /boot/bcm2835-rpi-zero.dtb  /boot/bcm2835-rpi-zero-w.dtb 
+ closed
 
 Overview:
   http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
