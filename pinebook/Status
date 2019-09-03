@@ -4,6 +4,9 @@ cat << EOF
 To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
+sunxi_rtc
+ http://mail-index.netbsd.org/port-arm/2019/09/03/msg006104.html
+
 Update:
  dhcpcd-8.0.2 clang-8.0.1 cmake-3.15.2 gtk2+-2.24.32nb11
  gtk3+-3.24.10 harfbuzz-2.6.0 jemalloc-5.2.1nb1
