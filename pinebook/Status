@@ -4,6 +4,9 @@ cat << EOF
 To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
+sunxi_rtc
+ http://mail-index.netbsd.org/port-arm/2019/09/03/msg006104.html
+
 Update:
  dhcpcd-8.0.2 clang-8.0.1 cmake-3.15.2 gtk2+-2.24.32nb11
  gtk3+-3.24.10 harfbuzz-2.6.0 jemalloc-5.2.1nb1
@@ -15,13 +18,6 @@ Update:
  rust-1.36.0nb2 samba-3.6.25nb19 wxGTK30-3.0.4nb3
  xfce4-4.14.0 xnp2-0.86nb8 xscreensaver-5.40nb2
  xterm-344 youtube-dl-20190813
-
-Issue
-1. Perl5.30 and libgtop -> mate failed
-Assining non-zero to $[ is no longer possible.
-http://mail-index.netbsd.org/tech-pkg/2019/08/18/msg021814.html
-
-2. libvpx-1.7 -> 1.8 -> affected seamonkey
 
 TEST kernel:
 - deforaos-camera: camera capture,and reboot
@@ -73,14 +69,7 @@ ToDo:
 - uim:
  pkgsrc/devel/libgcroots needs aarch64 ifdefs
  http://openbsd-archive.7691.n7.nabble.com/fix-inputmethods-uim-on-aarch64-td357966.html
-- xfwm4: "could not find screen to manage".in startxfce4
-  check xfce4-session again
-- mikutter: crush in startup tutorial
-  https://twitter.com/ebijun/status/1086488794583392257
 - scribus
-- www/firefox 
- http://mail-index.netbsd.org/pkgsrc-changes/2019/02/26/msg188126.html
- thread '<unnamed>' panicked at 'Unable to find libclang: 
 
 Version: 
  `uname -v`
