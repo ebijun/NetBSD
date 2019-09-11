@@ -34,8 +34,6 @@ RaspberryPIのNetBSDイメージについて
  :widths: 20 20 20 20 20 80 20 50
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
- 2018/8/4,8.99.22,3.7.4,,,omxplayer,OSC京都,http://mail-index.netbsd.org/port-arm/2018/07/29/msg004969.html
- 2018/8/25,8.99.24,,,1.1.0i,RPI3B+Ether,ODC,http://mail-index.netbsd.org/port-arm/2018/08/24/msg004993.html
  2018/9/23,8.99.25,3.8.0,,,OpenSSH7.8 git-base-2.19.0 libssh33,OSC広島,http://mail-index.netbsd.org/port-arm/2018/09/17/msg005023.html
  2018/10/06,8.99.25,,,1.1.1,,OSC香川,http://mail-index.netbsd.org/port-arm/2018/10/01/msg005059.html
  2018/10/28,8.99.25,3.8.1,,,git-base-2.19.1 ruby-2.4.5,OSC東京秋,http://mail-index.netbsd.org/port-arm/2018/10/25/msg005097.html
@@ -50,6 +48,7 @@ RaspberryPIのNetBSDイメージについて
  2019/6/1,8.99.41,3.8.7,,,python37 NetBSD SA 2019-002 2019-003,OSC北海道,http://mail-index.netbsd.org/port-arm/2019/05/23/msg005736.html
  2019/7/13,8.99.50,3.9.0,3.8.8,1.1.1c,libc-12.213 RPI4発売,OSC名古屋,http://mail-index.netbsd.org/port-arm/2019/07/07/msg005875.html
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
+ 2019/9/15,9.99.11,3.9.5,,,bwfm,OSC広島,http://mail-index.netbsd.org/port-arm/2019/09/10/msg006129.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
@@ -75,11 +74,8 @@ NetBSDのイメージを配るとしたとき、どのくらいの周期でア�
 新しいハードウェア対応
 ----------------------
 
-RPI4/RPI3/RPI0WのBluetooth/無線LANへの対応準備をしています。
-
-::
-
- http://mail-index.netbsd.org/port-arm/2017/07/30/msg004328.html
+#. RPI4:まだでち
+#. RPI3/RPI0WのBluetooth/無線LAN:OSC2019広島版からテストをはじめました
 
 ソフトウェア配布方法
 --------------------
@@ -131,9 +127,9 @@ Jared McNeillさんによるNetBSD ARM Bootable Imagesがあります。
 
 ご注文はなんとかですか（弱点）
 -----------------------------
-- RPI3の無線はつかえませんか？
+- RPI3の無線はつかえませんか？→テスト中
 - ラズビアンでは動くんですが
-- 8.0版はないんですか→リリースしました。
+- 9.0版はないんですか→9.0BETAから。
 
 まとめ
 ----------
