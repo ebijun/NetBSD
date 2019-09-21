@@ -1,24 +1,30 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190824)
+Subject: pinebook status update (20190921)
+
+Problem on NetBSD9.99.12: 
+ Sometimes eMMC can't recognize on Boot.
+ sdmmc2:can't read EXT_CSD (error=60)
+ https://twitter.com/ebijun/status/1175277647594582016
 
 Update:
- dhcpcd-8.0.2 clang-8.0.1 cmake-3.15.2 gtk2+-2.24.32nb11
- gtk3+-3.24.10 harfbuzz-2.6.0 jemalloc-5.2.1nb1
- libvpx-1.8.1nb1 llvm-8.0.1 mlterm-3.8.8nb4
- nodejs-10.16.3 nspr-4.21nb1 nss-3.45nb1
- openjdk8-1.8.222 pango-1.44.5 pangomm-2.42.0nb1
- perl-5.30.0 php-7.1.31 poppler-0.79.0 python36-3.6.9
- python37-3.7.4 rsync-3.1.3nb2 ruby24-mikutter-3.9.4
- rust-1.36.0nb2 samba-3.6.25nb19 wxGTK30-3.0.4nb3
- xfce4-4.14.0 xnp2-0.86nb8 xscreensaver-5.40nb2
- xterm-344 youtube-dl-20190813
+ bind-9.14.5 bzip2-1.0.8 dhcpcd-8.0.6 
 
-Issue
-1. Perl5.30 and libgtop -> mate failed
-Assining non-zero to $[ is no longer possible.
-http://mail-index.netbsd.org/tech-pkg/2019/08/18/msg021814.html
-
-2. libvpx-1.7 -> 1.8 -> affected seamonkey 
+pkgsrc:
+ apache-2.4.41nb1 bison-3.2.4nb1 boost-libs-1.71.0 clang-8.0.1
+ cmake-3.15.3 cups-base-2.2.12 dhcpcd-8.0.6 emacs-26.3
+ git-base-2.23.0nb1 gtk2+-2.24.32nb11 gtk3+-3.24.10
+ harfbuzz-2.6.1 ibus-1.5.21 ibus-mozc-2.20.2673.102nb17
+ jemalloc-5.2.1nb1 mlterm-3.8.8nb4 mpv-0.29.1nb11
+ nginx-1.16.1 nodejs-10.16.3 nspr-4.21nb1 nss-3.46
+ openjdk8-1.8.222 osabi-NetBSD-9.99.12 pango-1.44.6
+ pangomm-2.42.0nb1 perl-5.30.0 php-7.1.32 poppler-0.79.0
+ poppler-glib-0.79.0 py27-gtk2-2.24.0nb29 py37-sphinx-1.8.5nb2
+ python36-3.6.9 python37-3.7.4 ruby24-base-2.4.7
+ ruby24-glib2-3.3.8 ruby24-gtk2-3.3.8 ruby24-mikutter-3.9.5nb1
+ ruby25-base-2.5.6 rust-1.37.0 samba-3.6.25nb19
+ sqlite3-3.29.0 sylpheed-3.7.0nb4 wxGTK30-3.0.4nb3
+ x11-links-1.30 xfce4-4.14.0 xnp2-0.86nb8
+ youtube-dl-20190912.1
 
 TEST kernel:
 - deforaos-camera: camera capture,and reboot
@@ -34,11 +40,12 @@ System Updates:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 sysinfo:
- bzip2-1.0.8 dhcpcd-8.0.2 libcurses-8.2 NetBSD-9.99.10
- sh-20181212-20190821041741Z userland-NetBSD-9.99.10/evbarm
+ bind-9.14.5 bzip2-1.0.8 dhcpcd-8.0.6 libcurses-8.2
+ NetBSD-9.99.12 sh-20181212-20190918153332Z
+ userland-NetBSD-9.99.12/evbarm
 
 pkgsrc:
- https://github.com/ebijun/NetBSD/commit/8243406bb31bd19648857faf4be650b5444f8eb8
+ https://github.com/ebijun/NetBSD/commit/c8087de4c3fe6c5bb82b21d4dfe07e10523eaee8
  
 works well: 
  evince gedit mate medit py-sphinx gimp seamonkey inkscape
@@ -70,17 +77,10 @@ ToDo:
 - uim:
  pkgsrc/devel/libgcroots needs aarch64 ifdefs
  http://openbsd-archive.7691.n7.nabble.com/fix-inputmethods-uim-on-aarch64-td357966.html
-- xfwm4: "could not find screen to manage".in startxfce4
-  check xfce4-session again
-- mikutter: crush in startup tutorial
-  https://twitter.com/ebijun/status/1086488794583392257
-- scribus
-- www/firefox 
- http://mail-index.netbsd.org/pkgsrc-changes/2019/02/26/msg188126.html
- thread '<unnamed>' panicked at 'Unable to find libclang: 
+- libreoffice kde
 
 Version: 
- NetBSD 9.99.10 (GENERIC64.201908212330UTC) #12: Thu Aug 22 19:06:02 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.12 (GENERIC64.201909181540UTC) #14: Fri Sep 20 23:24:24 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
@@ -99,6 +99,6 @@ pkgchk.conf:
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-08-24/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-09-21/
 --
 Jun Ebihara
