@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -45,7 +45,8 @@ Maps:
  2015,9/19,170,23,サテライトキャンパスひろしま
  2016,11/27,210,27,サテライトキャンパスひろしま
  2017,11/26,200,32,サテライトキャンパスひろしま
- 2018,9/23,,18,サテライトキャンパスひろしま
+ 2018,9/23,170,18,サテライトキャンパスひろしま
+ 2019,9/15,,19,サテライトキャンパスひろしま
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,6 +58,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+
+ 146,OSC2018広島,http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
  130,OSC2018広島,http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
  118,OSC2017広島,http://www.re.soum.co.jp/~jun/OSC2017hiroshima.pdf 
  100,OSC2016広島,http://www.re.soum.co.jp/~jun/OSC2016hiroshima.pdf
@@ -80,7 +83,8 @@ togetterまとめ
  OSC2015広島,OSC2015広島 NetBSDブース展示の記録,http://togetter.com/li/875487
  OSC2016広島,OSC2016広島 NetBSDブース展示の記録,https://togetter.com/li/1053125
  OSC2017広島,OSC2017広島 NetBSDブース展示の記録,https://togetter.com/li/1175260
- OSC2018広島,OSC2018広島 NetBSDブース展示の記録,
+ OSC2018広島,OSC2018広島 NetBSDブース展示の記録,https://togetter.com/li/1269545
+ OSC2019広島,OSC2019広島 NetBSDブース展示の記録,
 
 OSC広島発表
 ~~~~~~~~~~~~~
@@ -101,6 +105,7 @@ OSC広島発表
  Re:X68030/25MHzから始めるユーザストリーム生活,OSC2016広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc16hi/
  NetBSD/luna68kで「PSG音源の調べ」ふたたび,OSC2016広島,https://speakerdeck.com/tsutsui/osc2016-hiroshima-psg-tunes-on-netbsd-luna68k-again
  響け!…ない NetBSD,OSC2017広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc17hi/
+ 響け!…ない NetBSD 近くないフィナーレ,OSC2018広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc18hi/
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -108,20 +113,26 @@ OSC広島発表
 .. csv-table::
  :widths: 30 15 80
 
+ もり,富士見町,お好み焼き。11:00-17:30 平日中休みあり 日曜休み 
+ Fuelstore,江波,Session's Brewery 14:00-23:00
+ 広島北ビールバー,可部,17:30-23:30 日月休
+ 松本無線パーツ,商工センター,日曜休み
+ ビールスタンド重富,銀山町,17:00-壱度注ぎ/弐度注ぎ/参度注ぎ/重富注ぎ
+ RAKUBEER,三川町,国産地ビールの殿堂 12:00- 17:00-19:00ハッピーアワー
+ ちんちくりん,薬研堀,ちんちくりん焼き
+ むさし,広島駅,地下のむさしでおにぎり弁当
+ アンデルセン,紙屋町,マフィンプレートのモーニング
  県立広島大学,宇品,2011年OSC開催地
  広島国際学院大学,中野東, 2012年OSC開催地
- ビールスタンド重富,銀山町,壱度注ぎ/弐度注ぎ/参度注ぎ/重富注ぎ
  ハングアウト,八丁堀,17:30- 9タップ＆ハンバーガー
- RAKUBEER,三川町,国産地ビールの殿堂 12:00- 17:00-19:00ハッピーアワー
  GOLDEN GARDEN,新天地,RAKUBEER姉妹店　16:00- 3タップ 100種類
- 宮島ビールSprout,流川通,流川町4-18 1F奥17:30〜23:00 金、土営業
+ 宮島ブルワリー,宮島町,宮島町459-2 12:00-16:00 17:00-20:45
  海軍さんの麦酒館,呉,呉吟醸ビールとがんす天。がんすって何？
  大和ミュージアム,呉,巨大戦艦大和展 零戦62型 回天 海龍
  ヤマトギャラリー零,呉,実物大アナライザー
  自由軒,呉,戦艦大和のオムライスとカツ丼
  酒蔵通り,東広島,賀茂鶴/賀茂泉/亀齢/賀茂輝/山陽鶴/白牡丹/西条鶴/福美人/くぐり門
  大和屋酒舗,胡町,広島地酒充実
- もり,富士見町,お好み焼き。11:00-17:30 平日中休みあり 日曜休み 
  ほていや,横川,オーラが見える女将が焼くお好み焼き
  ロペズ,横川,ハラペーニョ乗せそば入り。火金ランチ営業あり土日休LO22:30
  ロペス,広島,2002年の目標：打率3割5分56本塁打160打点
@@ -131,7 +142,6 @@ OSC広島発表
  ヲルガン座,十日市町,音楽喫茶。2018/9/23 19:00- 原マスミ
  横川シネマ,横川,カメラを止めるな!/菊とギロチン
  サロンシネマ,大手町,日本一ひろいシートの映画館。スターリンの葬送狂騒曲
- 松本無線パーツ,商工センター,日曜休み
  松屋　広島金座街店,金座街 ,店舗限定かつ定食とカツカレーがある(c)おかのさん
  Groovin',京橋町,中古CD/DVD
  アーキウォーク広島,建築ガイド,http://www.oa-hiroshima.org/
@@ -156,6 +166,28 @@ OSC広島発表
  陸軍被服支厰倉庫,出汐,峠三吉「倉庫の記録」
  広島市郷土資料館,宇品,曲がった鉄骨と、かもじづくり。かもじって何？
  旧広島港湾事務所,宇品,広島唯一の明治時代の公共建築かつ被曝建物。
+
+2018年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2018/09/23/DSC_5944.JPG
+.. image::  ../Picture/2018/09/23/DSC_5946.JPG
+.. image::  ../Picture/2018/09/23/DSC_5947.JPG
+.. image::  ../Picture/2018/09/23/DSC_5949.JPG
+.. image::  ../Picture/2018/09/23/DSC_5950.JPG
+.. image::  ../Picture/2018/09/23/DSC_5952.JPG
+.. image::  ../Picture/2018/09/23/DSC_5954.JPG
+.. image::  ../Picture/2018/09/23/DSC_5963.JPG
+.. image::  ../Picture/2018/09/23/DSC_5964.JPG
+.. image::  ../Picture/2018/09/23/DSC_5966.JPG
+.. image::  ../Picture/2018/09/23/DSC_5968.JPG
+.. image::  ../Picture/2018/09/23/DSC_5969.JPG
+.. image::  ../Picture/2018/09/23/DSC_5971.JPG
+.. image::  ../Picture/2018/09/23/DSC_5972.JPG
+.. image::  ../Picture/2018/09/23/DSC_5973.JPG
+.. image::  ../Picture/2018/09/23/DSC_5974.JPG
+.. image::  ../Picture/2018/09/23/DSC_5975.JPG
+.. image::  ../Picture/2018/09/23/DSC_5976.JPG
 
 2017年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

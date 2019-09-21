@@ -37,27 +37,20 @@
 どのくらい参加しているか
 -------------------------
 
-- 2019/7/06までにOSCは172回開催されています。
-- JNUGは156回参加しています。90.6%
+- 2019/9/15までにOSCは175回開催されています。
+- JNUGは159回参加しています。90.8%
 
 2019年のOSC
 --------------
 
-- 日本全国各地で2回開催 14回程度開催予定 
-- 参加者: 91013人 2019年は8750人　(2019/7/6まで)
-- 参加団体:5496グループ 2019年は625グループ (2019/7/6まで)
+- 日本全国各地で9回開催 15回程度開催予定 
+- 参加者: 92573人 2019年は3890人　(2019/9/14まで)
+- 参加団体:5600グループ 2019年は292グループ (2019/9/15まで)
 
 .. csv-table::
  :widths: 10 40 10 20 30 30
 
  回数,イベント,日付,参加者,参加グループ,参加したら1
- 154,"2018 Osaka","1/26-27",400,28,1
- 155,"2018 Hamanako","2/11",160,23,1
- 156,"2018 Tokyo/Spring","2/23-24",1200,62,1
- 157,"2018 Nagoya","5/19",500,37,1
- 158,"2018 Okinawa","6/16",80,12,1
- 159,"2018 Hokkaido","7/6-7",730,66,1
- 160,"2018 Kyoto","8/3-4",800,48,1
  ,"2018 ODC Tokyo","8/25-26",370,7,"参加"
  161,"2018 Hiroshima","9/23",170,18,1
  162,"2018 Kagawa","10/6",110,14,1
@@ -72,7 +65,9 @@
  171,"2019 Okinawa","4/20",100,11,1
  172,"2019 Hokkaido","5/31-6/1",720,54,1
  173,"2019 Nagoya","7/13",500,29,1
- 174,"2019 Kyoto","8/2-3",,50,1
+ 174,"2019 Kyoto","8/2-3",760,50,1
+ ,"2019 ODC Tokyo","8/24",300,6,"参加"
+ 175,"2019 Hiroshima","9/15",,19,1
 
 togetterアクセスで見たNetBSDブース
 -----------------------------------
@@ -101,8 +96,6 @@ togetterのアクセスログは以下の場所にあります。
  オープンソースアンカンファレンス2018 Sendaiの記録,https://togetter.com/li/1276307,1481
  オープンソースカンファレンス2018 Kagawa NetBSDブース展示の記録,https://togetter.com/li/1273756,819
  オープンソースカンファレンス2018 Hiroshima NetBSDブース展示の記録,https://togetter.com/li/1269545,1070
- オープンソースカンファレンス2018 Kyoto NetBSDブース展示の記録,https://togetter.com/li/1252935,2534
- 日本NetBSDユーザーグループ第二十回定期総会 および NetBSD BoF 2018 の記録,https://togetter.com/li/1246626,1452
 
 netbsd-advocacyメーリングリストへの報告
 --------------------------------------------
@@ -111,8 +104,6 @@ netbsd-advocacyメーリングリストへの参加報告をしてみました�
 
 .. csv-table::
 
- Japan NetBSD Users Group 20th annual Meeting and BoF 2018,http://mail-index.netbsd.org/netbsd-advocacy/2018/07/17/msg000778.html
- NetBSD machines at Open Source Conference 2018 Kyoto,http://mail-index.netbsd.org/netbsd-advocacy/2018/08/06/msg000780.html
  NetBSD machines at Open Source Conference 2018 Hiroshima,http://mail-index.netbsd.org/netbsd-advocacy/2018/09/25/msg000783.html
  NetBSD machines at Open Source Conference 2018 Kagawa,http://mail-index.netbsd.org/netbsd-advocacy/2018/10/10/msg000786.html
  NetBSD machines at Open Source Conference 2018 Tokyo/Fall,http://mail-index.netbsd.org/netbsd-advocacy/2018/10/30/msg000788.html
@@ -129,6 +120,8 @@ netbsd-advocacyメーリングリストへの参加報告をしてみました�
  NetBSD machines at Open Source Conference 2019 Hokkaido,http://mail-index.netbsd.org/netbsd-advocacy/2019/06/04/msg000805.html
  Japan NetBSD Users Group 21th annual Meeting and BoF 2019,http://mail-index.netbsd.org/netbsd-advocacy/2019/07/11/msg000807.html
  OpenBSD and NetBSD machines at Open Source Conference 2019 Nagoya,http://mail-index.netbsd.org/netbsd-advocacy/2019/07/19/msg000808.html
+ NetBSD machines at Open Source Conference 2019 Kyoto,http://mail-index.netbsd.org/netbsd-advocacy/2019/08/08/msg000810.html
+ NetBSD machines at Open Source Conference 2019 Hiroshima,http://mail-index.netbsd.org/netbsd-advocacy/2019/09/16/msg000813.html
 
 NetBSD観光ガイド作成
 ------------------------
@@ -147,6 +140,7 @@ NetBSD観光ガイド作成
 .. csv-table::
  :widths: 10 20 100
 
+ 146,OSC2019広島,http://www.re.soum.co.jp/~jun/OSC2019hiroshima.pdf
  145,OSC2019京都,http://www.re.soum.co.jp/~jun/OSC2019kyoto.pdf
  144,OSC2019名古屋,http://www.re.soum.co.jp/~jun/OSC2019nagoya.pdf
  143,JNUG2019,http://www.re.soum.co.jp/~jun/JNUG2019.pdf
@@ -188,7 +182,13 @@ NetBSD観光ガイド作成
  2019/4,OSC沖縄,36200,4782,0
  2019/5,OSC北海道,31200,3586,
  2019/7,OSC名古屋,18710,2622,
- 2019/8,OSC京都,,+1469,
+ 2019/8,OSC京都,31400,1469,
+ 2019/9,OSC広島,38650,1577,
+ 2019/9,OSC島根,,,
+ 2019/10,OSC新潟,,,
+ 2019/10,OSC徳島,30000,,
+ 2019/11,KOF&OSC福岡,,,
+ 2019/11,OSC東京,,,
 
 2019年
 -------------

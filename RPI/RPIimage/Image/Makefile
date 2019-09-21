@@ -9,12 +9,11 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-08-03/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-09-15/
 
 # iso file information
 
-#IMAGE=/usr/release/images/NetBSD-8.99.51-evbarm-${ARCH}-201907300830Z.iso
-IMAGE=/usr/release/images/NetBSD-9.0_BETA-evbarm-earmv6hf-201907302140Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.11-evbarm-${ARCH}-201909081340Z.iso
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -56,7 +55,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount kernel
+all: file cdmount rpi extract cdunmount kernel-update bwfm-firmware
 
 #update: cdmount update-extract cdunmount
 
@@ -195,25 +194,25 @@ firm:
 	umount ${MNT}
 	vnconfig -u ${VND}
 
-kernel:
-	vnconfig ${VND} ${FILE}
-	mount_msdos /dev/${VND}e ${MNT}
-
-	# RPI0W
-	cp ${MNT}/bcm2835-rpi-zero.dtb ${MNT}/bcm2835-rpi-zero-w.dtb
-
-	umount ${MNT}
-	vnconfig -u ${VND}
-
 kernel-update:
 	vnconfig ${VND} ${FILE}
 	mount /dev/${VND}e ${MNT}
 	mv  ${MNT}/kernel.img ${MNT}/kernel.img.original
 	mv  ${MNT}/kernel7.img ${MNT}/kernel7.img.original
-	cp kernel/20190416/kernel.img  ${MNT}/kernel.img
-	cp kernel/20190416/kernel7.img ${MNT}/kernel7.img
+	cp kernel/RPI.201909081340UTC/netbsd.img  ${MNT}/kernel.img
+	cp kernel/RPI.201909081340UTC/netbsd7.img ${MNT}/kernel7.img
 	umount ${MNT}
 	vnconfig -u ${VND} 
+
+bwfm-firmware:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	mkdir -p ${MNT}/libdata/firmware/if_bwfm/
+	cp -p kernel/Firmware/brcmfmac43* ${MNT}/libdata/firmware/if_bwfm/
+	cp -p kernel/Firmware/LICENCE.broadcom_bcm43xx ${MNT}/libdata/firmware/if_bwfm/
+	umount ${MNT}
+	vnconfig -u ${VND}
 
 # update pkgsrc
 pkgsrc-update:

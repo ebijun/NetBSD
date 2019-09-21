@@ -1,54 +1,70 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2019-05-31/2019-05-31/g
-:1,$s/8.99.41/8.99.41/g
-:1,$s/201904142230Z/201904142230Z/g
-:1,$s?2019/05/23/msg005736.html?2019/05/23/msg005736.html?
+:1,$s/2019-09-15/2019-09-15/g
+:1,$s/9.99.11/9.99.11/g
+:1,$s/201904142230Z/201909081340Z/g
+:1,$s?2019/09/10/msg006129.html?2019/09/10/msg006129.html?
 
-2019-05-31-netbsd-raspi-earmv6hf.img
+2019-09-15-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2019 Hokkaido NetBSD booth demonstration,
-I've updated 2019-05-31-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2019 Hiroshima NetBSD booth demonstration,
+I've updated 2019-09-15-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2019/05/23/msg005736.html
+http://mail-index.netbsd.org/port-arm/2019/09/10/msg006129.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-05-31-earmv6hf/2019-05-31-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-09-15-earmv6hf/2019-09-15-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- AUDIO2 merged,thanx isaki@!
- http://mail-index.netbsd.org/source-changes/2019/05/08/msg105808.html
- http://mail-index.netbsd.org/tech-kern/2019/04/01/msg024944.html
+- NetBSD 9.99.11 evbarm-earmv6hf 201909081340Z rpi.img from nyftp.
+- Testing: bwfm0 Broadcom and Cypress wireless network driver
+ 1. add kernel configration
+   bwfm*   at sdmmc?
+ 2. add firmware
+   /libdata/firmware/if_bwfm/
+     LICENCE.broadcom_bcm43xx
+     brcmfmac43430-sdio.{bin|txt}
+     brcmfmac43455-sdio.{bin|txt}
 
-- NetBSD-current 8.99.41 evbarm-earmv6hf 201905220030Z rpi.img from nyftp.
-- add python37 and more image size to fit.
-- bind-9.14.1 dhcpcd-7.2.2 libssh-34.0 openssh-8.0
-- mikutter-3.8.7
-- NetBSD Security Advisory 2019-002,2019-003
- http://mail-index.netbsd.org/security-announce/2019/05/03/msg000134.html
- http://mail-index.netbsd.org/security-announce/2019/05/03/msg000133.html
+- RPI4: not supported
+  http://mail-index.netbsd.org/port-arm/2019/07/18/msg005943.html
+  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/README.RPI4
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/406fd38fbf6ff8b046c36127b8122ee87640c963#diff-4a755d73dbba5da21bbf783139f086dc
+ https://github.com/ebijun/NetBSD/commit/69f5ba6830a91c631f678cc05720cceb72f55921
 
 System Update:
 
+http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
+
 sysinfo:
- bind-9.14.1 dhcpcd-7.2.2 libssh-34.0 NetBSD-8.99.41 openssh-8.0
- opensshd-8.0 sh-20181212-20190521223413Z tcsh-6.21.00
- userland-NetBSD-8.99.41/evbarm
+ bind-9.14.5 dhcpcd-8.0.4 NetBSD-9.99.11
+ sh-20181212-20190908121723Z userland-NetBSD-9.99.11/evbarm
 
 pkgsrc:
- bash-5.0.7 dbus-1.12.14 glib2-2.56.2nb4
- gobject-introspection-1.56.1nb2 gtk2+-2.24.32nb8 gtk3+-3.24.8
- icu-64.2nb1 libepoxy-1.4.3nb1 libpsl-0.20.2nb4
- medit-1.2.0nb10 mozilla-rootcerts-1.0.20190306
- p5-Net-DNS-1.20 pcre2-10.33 perl-5.28.2 png-1.6.37
- py37-cElementTree-3.7.3 py37-expat-3.7.3 python37-3.7.3nb1
- ruby24-mikutter-3.8.7 ruby24-moneta-1.1.1
- ruby24-pkg-config-1.3.7 ruby24-pluggaloid-1.1.2
- tcsh-6.21.00 uim-1.8.6nb60
+ bash-5.0.11 curl-7.65.3nb3 desktop-file-utils-0.24 dillo-3.0.5nb5
+ fossil-2.9 gd-2.2.5nb5 git-base-2.23.0nb1 glib2-2.60.6
+ gobject-introspection-1.60.2 gtk2+-2.24.32nb11 gtk3+-3.24.10
+ harfbuzz-2.6.1 libgcrypt-1.8.5 libidn-1.34nb1
+ libidn2-2.2.0 libimagequant-2.12.5 libxslt-1.1.33nb1
+ lintpkgsrc-4.94nb2 p5-Authen-SASL-2.16nb7 p5-Digest-HMAC-1.03nb9
+ p5-Email-Valid-1.202nb3 p5-Error-0.17027nb1 p5-GSSAPI-0.28nb10
+ p5-IO-CaptureOutput-1.11.04nb5 p5-IO-Socket-INET6-2.72nb5
+ p5-IO-Socket-SSL-2.060nb1 p5-MailTools-2.20nb2
+ p5-Mozilla-CA-20180117nb2 p5-Net-DNS-1.20nb1
+ p5-Net-Domain-TLD-1.75nb3 p5-Net-IP-1.26nb7
+ p5-Net-LibIDN-0.12nb11 p5-Net-SMTP-SSL-1.04nb3
+ p5-Net-SSLeay-1.85nb2 p5-Socket6-0.29nb1
+ p5-TimeDate-2.30nb6 pango-1.44.5
+ perl-5.30.0 ruby24-base-2.4.7 ruby24-gnome2-atk-3.3.7
+ ruby24-gnome2-cairo-gobject-3.3.7 ruby24-gnome2-gdkpixbuf-3.3.7
+ ruby24-gnome2-gio-3.3.7 ruby24-gnome2-glib-3.3.7
+ ruby24-gnome2-gobject-introspection-3.3.7 ruby24-gnome2-gtk-3.3.7
+ ruby24-gnome2-pango-3.3.7 ruby24-mikutter-3.9.5
+ ruby24-nokogiri-1.10.4 ruby24-simpleidn-0.0.9
+ ruby24-twitter-text-simpleidn-3.0.0.0 tcsh-6.21.00nb1
+ uim-1.8.6nb64 wget-1.20.3nb3
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
