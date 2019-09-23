@@ -1,21 +1,21 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2019-09-15/2019-09-15/g
-:1,$s/9.99.11/9.99.11/g
-:1,$s/201904142230Z/201909081340Z/g
-:1,$s?2019/09/10/msg006129.html?2019/09/10/msg006129.html?
+:1,$s/2019-09-28/2019-09-28/g
+:1,$s/9.99.12/9.99.12/g
+:1,$s/201909211450Z/201909211450Z/g
+:1,$s?2019/09/23/msg006154.html?2019/09/23/msg006154.html?
 
-2019-09-15-netbsd-raspi-earmv6hf.img
+2019-09-28-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2019 Hiroshima NetBSD booth demonstration,
-I've updated 2019-09-15-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2019 Shimane NetBSD booth demonstration,
+I've updated 2019-09-28-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2019/09/10/msg006129.html
+http://mail-index.netbsd.org/port-arm/2019/09/23/msg006154.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-09-15-earmv6hf/2019-09-15-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-09-28-earmv6hf/2019-09-28-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD 9.99.11 evbarm-earmv6hf 201909081340Z rpi.img from nyftp.
+- NetBSD 9.99.12 evbarm-earmv6hf 201909211450Z rpi.img from nyftp.
 - Testing: bwfm0 Broadcom and Cypress wireless network driver
  1. add kernel configration
    bwfm*   at sdmmc?
@@ -32,39 +32,21 @@ Update:
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/69f5ba6830a91c631f678cc05720cceb72f55921
+ https://github.com/ebijun/NetBSD/commit/8371199adf010af146262db1541b7ea56eab20c8
 
 System Update:
 
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 sysinfo:
- bind-9.14.5 dhcpcd-8.0.4 NetBSD-9.99.11
- sh-20181212-20190908121723Z userland-NetBSD-9.99.11/evbarm
+ dhcpcd-8.0.6 NetBSD-9.99.12 sh-20181212-20190921142542Z
+ userland-NetBSD-9.99.12/evbarm
 
 pkgsrc:
- bash-5.0.11 curl-7.65.3nb3 desktop-file-utils-0.24 dillo-3.0.5nb5
- fossil-2.9 gd-2.2.5nb5 git-base-2.23.0nb1 glib2-2.60.6
- gobject-introspection-1.60.2 gtk2+-2.24.32nb11 gtk3+-3.24.10
- harfbuzz-2.6.1 libgcrypt-1.8.5 libidn-1.34nb1
- libidn2-2.2.0 libimagequant-2.12.5 libxslt-1.1.33nb1
- lintpkgsrc-4.94nb2 p5-Authen-SASL-2.16nb7 p5-Digest-HMAC-1.03nb9
- p5-Email-Valid-1.202nb3 p5-Error-0.17027nb1 p5-GSSAPI-0.28nb10
- p5-IO-CaptureOutput-1.11.04nb5 p5-IO-Socket-INET6-2.72nb5
- p5-IO-Socket-SSL-2.060nb1 p5-MailTools-2.20nb2
- p5-Mozilla-CA-20180117nb2 p5-Net-DNS-1.20nb1
- p5-Net-Domain-TLD-1.75nb3 p5-Net-IP-1.26nb7
- p5-Net-LibIDN-0.12nb11 p5-Net-SMTP-SSL-1.04nb3
- p5-Net-SSLeay-1.85nb2 p5-Socket6-0.29nb1
- p5-TimeDate-2.30nb6 pango-1.44.5
- perl-5.30.0 ruby24-base-2.4.7 ruby24-gnome2-atk-3.3.7
- ruby24-gnome2-cairo-gobject-3.3.7 ruby24-gnome2-gdkpixbuf-3.3.7
- ruby24-gnome2-gio-3.3.7 ruby24-gnome2-glib-3.3.7
- ruby24-gnome2-gobject-introspection-3.3.7 ruby24-gnome2-gtk-3.3.7
- ruby24-gnome2-pango-3.3.7 ruby24-mikutter-3.9.5
- ruby24-nokogiri-1.10.4 ruby24-simpleidn-0.0.9
- ruby24-twitter-text-simpleidn-3.0.0.0 tcsh-6.21.00nb1
- uim-1.8.6nb64 wget-1.20.3nb3
+ curl-7.66.0nb1 fribidi-1.0.5 nghttp2-1.39.2nb1 pango-1.44.6
+ ruby24-atk-3.3.8 ruby24-cairo-gobject-3.3.8 ruby24-gdk_pixbuf2-3.3.8
+ ruby24-gio2-3.3.8 ruby24-glib2-3.3.8 ruby24-gobject-introspection-3.3.8
+ ruby24-gtk2-3.3.8 ruby24-mikutter-3.9.5nb1 ruby24-pango-3.3.8
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
