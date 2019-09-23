@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -48,7 +48,8 @@
  2015,8/22,115,17,松江テルサ
  2016,9/24,180,24,松江テルサ
  2017,10/14,113,19,松江テルサ
- 2018,11/23,,19,松江テルサ
+ 2018,11/23,100,19,松江テルサ
+ 2019,9/28,,19,松江テルサ
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,6 +61,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 147,OSC2019島根,http://www.re.soum.co.jp/~jun/OSC2019shimane.pdf
  135,OSC2018島根,http://www.re.soum.co.jp/~jun/OSC2018shimane.pdf
  115,OSC2017島根,http://www.re.soum.co.jp/~jun/OSC2017shimane.pdf
  95,OSC2016島根,http://www.re.soum.co.jp/~jun/OSC2016shimane.pdf
@@ -76,6 +78,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2019島根 NetBSDブース展示の記録,https://togetter.com/li/
  OSC2018島根 NetBSDブース展示の記録,https://togetter.com/li/1291113
  OSC2017島根 NetBSDブース展示の記録,https://togetter.com/li/1160781
  OSC2016島根 NetBSDブース展示の記録,https://togetter.com/li/1028314
@@ -95,16 +98,17 @@ togetterまとめ
 .. csv-table::
  :widths: 30 25 60
 
+ LOVE YOUR NEIGHBOR,売布神社前,クラフトビールとハンバーガー。11:30-14:30 18:30-1:00
+ S-PARK,松江駅,ビアへるん+島根日本酒全種類　十旭日(じゅうじあさひ)
  松江地ビール館,遊覧船発着場,ビアへるん。1730までだからすぐ行く。
+ 石見麦酒,江津市,地ビールブルワリー。松江駅で松江茶ビール。札幌さいとさんの店。
  Imagine.coffee,伊勢宮,ひつじ製菓とのペアリングとか。
  一隆,伊勢宮町,玉鋼 八塩折酒 割子そば
- S-PARK,松江駅,ビアへるん+島根日本酒全種類　十旭日(じゅうじあさひ)
  ちくてい,,ラーメン
  ベニヤ模型,末次本町,http://www5e.biglobe.ne.jp/~beniya-m/
  EAD,松江大橋,リニューアル前は、とりあえずを頼むととりあえずが出て来た。
  デンゲンパーツ,くにびきメッセ隣,電子部品・無線機屋
  たぬき堂書店,伊勢宮,昭和初期地元書籍多数
- 石見麦酒,江津市,地ビールブルワリー。東京水天宮前永代ブルーイング。
  國暉酒造,東茶街,蔵しっく館
  島根県立美術館,宍道湖畔,ベルギー近代美術の精華展
  塩見茶屋,八雲記念館前,ぼてぼて茶の具の種類
@@ -130,11 +134,15 @@ togetterまとめ
 .. csv-table::
  :widths: 30 20 60
 
+ 475ビール,富士見町,JAPBrewery
+ 焼きそば樫 ,河原町,復活！！俺の愛を焼きそばに込めてFor you。
+ 鳥取環境大学,若葉台,鳥取名産NEWSとヤギ。
+ 道の駅,琴浦町,琴浦さんの水
+ 稲田屋,米子,稲田姫 朝日町58-11
+ エンヤキッチン,米子,大山Gビール
  ガンバリウス,大山,ゴールドとガンバセット
  植田正治美術館,大山,イメージの力
  シュビドゥバー,鳥取駅,バー。ファミコン部屋あり。
- 鳥取環境大学,若葉台,鳥取名産NEWSとヤギ。
- 焼きそば樫 ,河原町,復活！！俺の愛を焼きそばに込めてFor you。
  風味堂,職人町,何屋か気になる喫茶店。
  ハードオフ,鳥取駅,スペンドールのスピーカを見る。
  太平記,明治町,米子の居酒屋。米子駅近地酒1杯300円から
@@ -142,7 +150,6 @@ togetterまとめ
  ゼネプロα,米子角盤町,まさかのゼネプロ。
  ネギマン,米子商店街,ネギマンは環境
  桜丸,米子,大山ヴァイツェンとピヨ
- 道の駅,琴浦町,琴浦さんグッズあり
  よしだ,米子,牛骨ラーメン
  浜下水産,鳥取駅前,自家製一夜干し
  タルマーリー,智頭,石釜パンとクラフトビール

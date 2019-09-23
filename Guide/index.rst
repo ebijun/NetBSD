@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/hiroshima
+ Place/shimane
  RPI/RPIupdate2019
  RPI
  Place/intro
