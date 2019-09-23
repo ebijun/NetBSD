@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.11 (RPI2.201909081340UTC) #2: Mon Sep  9 11:28:33 JST 2019
+NetBSD 9.99.12 (RPI2.201909211450UTC) #3: Sun Sep 22 21:15:46 JST 2019
 	jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 929 MB
@@ -84,18 +84,18 @@ cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
 vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
-cpu1: DC enabled IC enabled WB enabled LABT branch prediction enabled
-cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
-cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
-vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 cpu2: DC enabled IC enabled WB enabled LABT branch prediction enabled
 cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu2: 512KB/64B 8-way write-through L2 PIPT Unified cache
 vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu1: DC enabled IC enabled WB enabled LABT branch prediction enabled
+cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdmmc0 at bcmsdhost0
 dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
 usb0 at dwctwo0: USB revision 2.0
@@ -128,7 +128,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.11/modules
+kern.module.path=/stand/evbarm/9.99.12/modules
 vchiq0: interrupting on icu irq 194
 vchiq: vchiq_init_state: slot_zero = 0xcb580000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.

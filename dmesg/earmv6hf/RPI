@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.11 (RPI.201909081340UTC) #1: Mon Sep  9 09:07:00 JST 2019
+NetBSD 9.99.12 (RPI.201909211450UTC) #2: Sun Sep 22 20:44:19 JST 2019
 	jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 180 MB
@@ -13,16 +13,16 @@ armfdt0 (root)
 simplebus0 at armfdt0: Raspberry Pi Model A Rev 2
 simplebus1 at simplebus0
 simplebus2 at simplebus0
-simplebus3 at simplebus0
+fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
+fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
+simplebus3 at simplebus1
+simplebus4 at simplebus0
 cpus0 at simplebus0
 cpu0 at cpus0: 700 MHz ARM1176JZ-S r0p7 (ARM11J V6ZK core)
 cpu0: DC enabled IC enabled WB enabled LABT
 cpu0: 16KB/32B 4-way L1 VIPT Instruction cache
 cpu0: 16KB/32B 4-way write-back-locking-C L1 VIPT Data cache
 vfp0 at cpu0: VFP11, rounding, exceptions
-fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
-fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
-simplebus4 at simplebus1
 bcmicu0 at simplebus1
 bcmcprman0 at simplebus1: BCM283x Clock Controller
 bcmtmr0 at simplebus1: VC System Timer
@@ -95,7 +95,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.11/modules
+kern.module.path=/stand/evbarm/9.99.12/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xc5e50000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.

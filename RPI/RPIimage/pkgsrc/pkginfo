@@ -5,7 +5,7 @@ atk-2.33.3          Set of interfaces for accessibility
 bash-5.0.11         The GNU Bourne Again Shell
 cairo-1.16.0        Vector graphics library with cross-device output support
 cairo-gobject-1.16.0nb3 Vector graphics library with cross-device output support
-curl-7.65.3nb3      Client that groks URLs
+curl-7.66.0nb1      Client that groks URLs
 dbus-1.12.16        Message bus system
 desktop-file-utils-0.24 Utilities to manage desktop entries
 digest-20190127     Message digest wrapper utility
@@ -13,7 +13,7 @@ dillo-3.0.5nb5      Very small and fast graphical web-browser
 fltk-1.3.5          Fast Light Tool Kit for graphical user interfaces
 fontconfig-2.13.1   Library for configuring and customizing font access
 fossil-2.9          High-reliability, distributed software configuration management
-fribidi-0.19.7      Free Implementation of the Unicode Bidirectional Algorithm
+fribidi-1.0.5       Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.2.5nb5         Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.38.1  Image loaders for gtk2
 giflib-5.1.4        GIF image format library
@@ -52,6 +52,7 @@ medit-1.2.0nb11     Programming and around-programming text editor
 mlterm-3.8.8nb4     Multilingual terminal emulator
 mozilla-rootcerts-1.0.20190306 Root CA certificates from the Mozilla Project
 ncurses-6.1nb5      CRT screen handling and optimization package
+nghttp2-1.39.2nb1   Implementation of HTTP/2 in C
 p5-Authen-SASL-2.16nb7 Perl module to handle SASL authentication
 p5-Digest-HMAC-1.03nb9 Perl5 module for HMAC
 p5-Email-Valid-1.202nb3 Perl5 module for testing validity of an email address
@@ -70,7 +71,7 @@ p5-Net-SMTP-SSL-1.04nb3 Perl5 module providing SSL support for Net::SMTP
 p5-Net-SSLeay-1.85nb2 Perl5 module for using OpenSSL
 p5-Socket6-0.29nb1  Perl5 module to support getaddrinfo() and getnameinfo()
 p5-TimeDate-2.30nb6 Perl5 TimeDate distribution
-pango-1.44.5        Library for layout and rendering of text
+pango-1.44.6        Library for layout and rendering of text
 pcre-8.43           Perl Compatible Regular Expressions library
 pcre2-10.33         Perl Compatible Regular Expressions library (major version 2)
 perl-5.30.0         Practical Extraction and Report Language
@@ -83,30 +84,30 @@ python27-2.7.16     Interpreted, interactive, object-oriented programming langua
 python37-3.7.4      Interpreted, interactive, object-oriented programming language
 raspberrypi-userland-20170109nb3 Various libraries for the Raspberry Pi
 ruby24-addressable-2.6.0 Replacement for the URI Implementation of standard librrary
+ruby24-atk-3.3.8    Ruby binding of ATK-1.0.x or later
 ruby24-base-2.4.7   Ruby 2.4.7 release minimum base package
 ruby24-cairo-1.16.4 Ruby bindings for cairo
+ruby24-cairo-gobject-3.3.8 Ruby binding of cairo-gobject
 ruby24-delayer-1.0.0 Ruby module to delay the processing
 ruby24-delayer-deferred-2.1.1 Deferred for Delayer
 ruby24-diva-1.0.0   Implementation of expression for handling things
+ruby24-gdk_pixbuf2-3.3.8 Ruby binding of GdkPixbuf-2.x
 ruby24-gettext-3.2.9 Ruby localization library like as GNU gettext
-ruby24-gnome2-atk-3.3.7 Ruby binding of ATK-1.0.x or later
-ruby24-gnome2-cairo-gobject-3.3.7 Ruby binding of cairo-gobject
-ruby24-gnome2-gdkpixbuf-3.3.7 Ruby binding of GdkPixbuf-2.x
-ruby24-gnome2-gio-3.3.7 Ruby binding of gio-2.0.x
-ruby24-gnome2-glib-3.3.7 Ruby binding of GLib-2.x
-ruby24-gnome2-gobject-introspection-3.3.7 Ruby binding of Gobject Introspection
-ruby24-gnome2-gtk-3.3.7 Ruby binding of GTK+-2.x
-ruby24-gnome2-pango-3.3.7 Ruby binding of pango-1.x
+ruby24-gio2-3.3.8   Ruby binding of gio-2.0.x
+ruby24-glib2-3.3.8  Ruby binding of GLib-2.x
+ruby24-gobject-introspection-3.3.8 Ruby binding of Gobject Introspection
+ruby24-gtk2-3.3.8   Ruby binding of GTK+-2.x
 ruby24-httpclient-2.8.3 HTTP accessing library for Ruby
 ruby24-instance_storage-1.0.0 Manage class instances with dictionary
 ruby24-locale-2.1.2 Pure ruby library which provides basic APIs for localization
 ruby24-memoist-0.16.0 Replacement of memoizable, memoize methods invocation
-ruby24-mikutter-3.9.5 Simple, powerful, and moeful twitter client
+ruby24-mikutter-3.9.5nb1 Simple, powerful, and moeful twitter client
 ruby24-mini_portile2-2.4.0 Simple autoconf builder for developers
 ruby24-moneta-1.1.1 Unified interface to key/value stores
 ruby24-native-package-installer-1.0.6 Helper to install native packages on "gem install"
 ruby24-nokogiri-1.10.4 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby24-oauth-0.5.4  OAuth Core Ruby implementation
+ruby24-pango-3.3.8  Ruby binding of pango-1.x
 ruby24-pkg-config-1.3.7 Pure Ruby implementation of pkg-config
 ruby24-pluggaloid-1.2.0 Extensible plugin system for mikutter
 ruby24-public_suffix-3.0.3 Domain name parser based on the Public Suffix List
