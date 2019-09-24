@@ -201,6 +201,19 @@ OSC松江展示物
 #. OMRON LUNAII
 #. Sun Java Station
 
+2018年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2018/11/23/DSC_6344.JPG
+.. image::  ../Picture/2018/11/23/DSC_6345.JPG
+.. image::  ../Picture/2018/11/23/DSC_6346.JPG
+.. image::  ../Picture/2018/11/23/DSC_6355.JPG
+.. image::  ../Picture/2018/11/23/DSC_6356.JPG
+.. image::  ../Picture/2018/11/23/DSC_6357.JPG
+.. image::  ../Picture/2018/11/23/DSC_6366.JPG
+.. image::  ../Picture/2018/11/23/DSC_6367.JPG
+.. image::  ../Picture/2018/11/23/DSC_6369.JPG
+
 2017年
 ~~~~~~~~~~~~~~~~~~
 
