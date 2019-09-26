@@ -3,11 +3,11 @@
 ARCH=aarch64
 RPI_IMG=arm64.img
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-02-24/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-09-21/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.34-evbarm-${ARCH}-201902222120Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.13-evbarm-${ARCH}-201909251840Z.iso
 
 PKGSRC=../../../../pkgsrc/pkgsrc-2018-08-04.tar.gz 
 
