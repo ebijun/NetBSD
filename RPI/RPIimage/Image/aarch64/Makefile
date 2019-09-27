@@ -7,7 +7,7 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-09-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-9.99.13-evbarm-${ARCH}-201909251840Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.13-evbarm-${ARCH}-201909261940Z.iso
 
 PKGSRC=../../../../pkgsrc/pkgsrc-2018-08-04.tar.gz 
 
@@ -37,7 +37,7 @@ FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
 # mount point
-MNT=/mnt
+MNT=/mnt3
 VND=vnd0
 
 MNT_CDROM=/mnt1
@@ -47,7 +47,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount 
+all: file cdmount rpi extract cdunmount bwfm-firmware #rpi4
 
 #update: cdmount update-extract cdunmount
 
@@ -122,7 +122,7 @@ pkg-back:
 	vnconfig ${VND} ${FILE}
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	cp ../etc/rc.conf ${MNT}/etc/rc.conf
+	cp ../../etc/rc.conf ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -185,23 +185,11 @@ firm:
 	umount ${MNT}
 	vnconfig -u ${VND}
 
-kernel:
+rpi4:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
 
-	# RPI3B+
-	cp ${MNT}/bcm2837-rpi-3-b.dtb  ${MNT}/bcm2837-rpi-3-b-plus.dtb
-	# RPI0W
-	cp ${MNT}/bcm2835-rpi-zero.dtb ${MNT}/bcm2835-rpi-zero-w.dtb
-	# RPI2-1.2
-	cp ${MNT}/bcm2836-rpi-2-b.dtb  ${MNT}/bcm2837-rpi-2-b.dtb
-
-#	# for startx
-#	mv ${MNT}/kernel.img ${MNT}/kernel.img.org
-#	mv ${MNT}/kernel7.img ${MNT}/kernel7.img.org
-
-#	gunzip < 201803211740Z/earmv6hf/netbsd-RPI.img.gz  > ${MNT}/kernel.img
-#	gunzip < 201803211740Z/earmv6hf/netbsd-RPI2.img.gz > ${MNT}/kernel7.img
+	tar xvf kernel/boot.tar -C ${MNT}
 
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -230,6 +218,16 @@ fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch
+
+bwfm-firmware:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	mkdir -p ${MNT}/libdata/firmware/if_bwfm/
+	cp -p ../kernel/Firmware/brcmfmac43* ${MNT}/libdata/firmware/if_bwfm/
+	cp -p ../kernel/Firmware/LICENCE.broadcom_bcm43xx ${MNT}/libdata/firmware/if_bwfm/
+	umount ${MNT}
+	vnconfig -u ${VND}
 
 libssls:
 	vnconfig ${VND} ${FILE}
