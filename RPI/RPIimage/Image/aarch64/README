@@ -1,6 +1,6 @@
-VERSION: :1,$s/2018-11-23/2018-11-23/g
+VERSION: :1,$s/2018-11-23/2019-10-05/g
 ISO:     :1,$s/201811172150Z/201811172150Z/g
-NetBSD:  :1,$s/8.99.26/8.99.26/g
+NetBSD:  :1,$s/9.99.13/9.99.13/g
 PKGSRC:  :1,$s/2018-11-23/2018-11-23/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
@@ -15,20 +15,27 @@ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/2018-12-08-aarch64/2018-12-08-
 http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/2018-12-08-aarch64/MD5
 
 Topics:
-- NetBSD/aarch64 image testing: System Clock Stops with JOBS=3 pkgbuild.
- Fix: apply ryo@'s patch,thanx
- https://gist.github.com/ryo/89faf74852c20a84af17a12704fe3e16
- this image contains patched kernel.
+- RPI3/RPI3B+/RPI4
 - build script
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
 
+RPI4 issues:
+- USB device: not work
+- bwfm0 Wireless network:work
+
 Update:
-- NetBSD-current 8.99.26 evbarm-aarch64 201811301120Z arm64.img from nyftp.
+- NetBSD-current 9.99.13 evbarm-aarch64 201811301120Z arm64.img from nyftp.
 - pre-installed packages:
   none
 - pre-build packages:
   See /etc/pkg_install.conf
   PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2018-12-08/
+
+TIPS:
+- How can I write /etc/fstab,which can boot RPI3 and RPI4?
+ There is a new magic device name "ROOT."
+ http://mail-index.netbsd.org/port-arm/2019/09/30/msg006193.html
+ https://nxr.netbsd.org/xref/src/distrib/utils/embedded/conf/evbarm.conf#87
 
 pkgsrc: 
   # cd /usr
