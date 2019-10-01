@@ -4,10 +4,12 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.12 (RPI2.201909211450UTC) #3: Sun Sep 22 21:15:46 JST 2019
+NetBSD 9.99.14 (RPI2.201909291950UTC) #4: Tue Oct  1 08:27:04 JST 2019
 	jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 929 MB
+pool redzone disabled for 'buf8k'
+pool redzone disabled for 'buf64k'
 timecounter: Timecounters tick every 10.000 msec
 armfdt0 (root)
 simplebus0 at armfdt0: Raspberry Pi 3 Model B Plus Rev 1.3
@@ -37,9 +39,20 @@ timecounter: Timecounter "armgtmr0" frequency 19200000 Hz quality 500
 bcmaux0 at simplebus1
 /soc/thermal@7e212000 at simplebus1 not configured
 /soc/dsi@7e209000 at simplebus1 not configured
-bcmgpio0 at simplebus1: GPIO controller
+bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 177
 bcmgpio0: pins 32..54 interrupting on icu irq 178
+2835: pin=30, pud=2, regid=0, mask=40000000
+2835: pin=31, pud=0, regid=0, mask=80000000
+2835: pin=32, pud=0, regid=1, mask=00000001
+2835: pin=33, pud=2, regid=1, mask=00000002
+2835: pin=43, pud=0, regid=1, mask=00000800
+2835: pin=34, pud=0, regid=1, mask=00000004
+2835: pin=35, pud=2, regid=1, mask=00000008
+2835: pin=36, pud=2, regid=1, mask=00000010
+2835: pin=37, pud=2, regid=1, mask=00000020
+2835: pin=38, pud=2, regid=1, mask=00000040
+2835: pin=39, pud=2, regid=1, mask=00000080
 gpio0 at bcmgpio0: 54 pins
 /soc/firmware/gpio at simplebus4 not configured
 bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10
@@ -79,7 +92,8 @@ wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
 vchiq0 at simplebus1: BCM2835 VCHIQ
 /arm-pmu at simplebus0 not configured
-gpioleds0 at simplebus0: ACT
+gpioleds0 at simplebus0:2835: pin=29, pud=0, regid=0, mask=20000000
+ACT
 /soc/timer@7e003000 at simplebus1 not configured
 /soc/txp@7e004000 at simplebus1 not configured
 bcmrng0 at simplebus1: RNG
@@ -116,9 +130,6 @@ ld0: 61023 MB, 7779 cyl, 255 head, 63 sec, 512 bytes/sect x 124975104 sectors
 ld0: 119814144 trailing sectors not covered by disklabel
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 IPsec: Initialized Security Association Processing.
-sdmmc1: MAX_BLK_SIZE1 = 64
-sdmmc1: MAX_BLK_SIZE2 = 512
-sdmmc1: MAX_BLK_SIZE3 = 512
 sdmmc1: SDIO function
 bwfm0 at sdmmc1 function 1
 (manufacturer 0x2d0, product 0xa9a6) at sdmmc1 function 2 not configured
@@ -129,18 +140,28 @@ uhub1: 4 ports with 3 removable, self powered
 uhub2 at uhub1 port 1: vendor 0424 (0x424) product 2514 (0x2514), class 9/0, rev 2.00/b.b3, addr 3
 uhub2: multiple transaction translators
 uhub2: 3 ports with 2 removable, self powered
+umass0 at uhub2 port 3 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 4
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 111 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 234441648 sectors
 uhidev0 at uhub1 port 2 configuration 1 interface 0
-uhidev0: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
+uhidev0: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, iclass 3/1
 ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
 uhidev1 at uhub1 port 2 configuration 1 interface 1
-uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
+uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhidev2 at uhub1 port 3 configuration 1 interface 0
+uhidev2: vendor 0461 (0x461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 6, iclass 3/1
+ums0 at uhidev2: 3 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
 uhub0: autoconfiguration error: illegal enable change, port 1
 mue0 at uhub2 port 1
-mue0: vendor 0424 (0x424) product 7800 (0x7800), rev 2.10/3.00, addr 5
+mue0: vendor 0424 (0x424) product 7800 (0x7800), rev 2.10/3.00, addr 7
 mue0: LAN7800 id 0x7800 rev 0x2
 ukphy0 at mue0 phy 1: OUI 0x00800f, model 0x0013, rev. 2
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
@@ -152,9 +173,9 @@ root on ld0a dumps on ld0b
 ld0: 119814144 trailing sectors not covered by disklabel
 ld0: 119814144 trailing sectors not covered by disklabel
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.12/modules
+kern.module.path=/stand/evbarm/9.99.14/modules
 vchiq0: interrupting on icu irq 194
-vchiq: vchiq_init_state: slot_zero = 0xcb580000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xcb5b0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 kern notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
@@ -172,10 +193,4 @@ bwfm0: address b8:27:eb:68:25:1a
 bwfm0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
 bwfm0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
 bwfm0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-umass0 at uhub2 port 3 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 6
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 111 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 234441648 sectors
 wsdisplay0: screen 4 added (default, vt100 emulation)

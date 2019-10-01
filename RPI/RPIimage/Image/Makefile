@@ -13,7 +13,8 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-09-
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-9.99.12-evbarm-${ARCH}-201909211450Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.14-evbarm-${ARCH}-201909291950Z.iso
+
 KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
 
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
