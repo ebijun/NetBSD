@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2015-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -49,7 +49,8 @@ Maps:
  2015 Niigata,9/5,130,17,ほんぽーと新潟市立中央図書館
  2016 Nagaoka,10/1,100,13,まちなかキャンパス長岡
  2017 Nagaoka,10/28,120,12,長岡技術科学大学
- 2018 Niigata,11/10,,14,ほんぽーと新潟市立中央図書館
+ 2018 Niigata,11/10,70,13,ほんぽーと新潟市立中央図書館
+ 2019 Niigata,10/5,,15,ほんぽーと新潟市立中央図書館
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,6 +62,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 148,OSC2019新潟,http://www.re.soum.co.jp/~jun/OSC2019niigata.pdf
  134,OSC2018新潟,http://www.re.soum.co.jp/~jun/OSC2018niigata.pdf
  116,OSC2017長岡,http://www.re.soum.co.jp/~jun/OSC2017nagaoka.pdf
  96,OSC2016長岡,http://www.re.soum.co.jp/~jun/OSC2016nagaoka.pdf
@@ -73,6 +75,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2019新潟 NetBSDブース展示の記録,
  OSC2018新潟 NetBSDブース展示の記録,https://togetter.com/li/1286767
  OSC2017長岡 NetBSDブース展示の記録,https://togetter.com/li/1165451
  OSC2016長岡 NetBSDブース展示の記録,https://togetter.com/li/1031383
@@ -84,13 +87,12 @@ togetterまとめ
 .. csv-table::
  :widths: 60 30 60
 
- 駅前クラフトビール館,駅南口,立ち飲みS500円　タップ多数
- オリーブ,駅前楽天地,10タップ　まさしく楽天地
- 沼垂ビール,沼垂,ぬったりビール。ほんぽーと徒歩5分。
- 衆楽,沼垂,ラーチャン＆カレー。
  Bier Bar Ferkel,古町,ドイツビール
+ 沼垂ビール,沼垂,ぬったりビール。ほんぽーと徒歩5分。
+ オリーブ,駅前楽天地,10タップ　まさしく楽天地
+ 衆楽,沼垂,ラーチャン＆カレー。
  河竹鮨,新潟駅,地魚おまかせ握り
- とんかつかねこ,新潟大五十嵐キャンパス,タレかつ丼　チャレンジ丼ポカリスエット付き
+ とんかつかねこ,中央区横七番町通,タレかつ丼　弁当　
  Joestar,新潟駅,15タップ
  bullet,東掘通x鍛治小路交差点,奇盤多数の輸入レコード店
  清水酒店,万代橋,地酒地ビール充実

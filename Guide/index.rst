@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/shimane
+ Place/niigata
  RPI/RPIupdate2019
  RPI
  Place/intro

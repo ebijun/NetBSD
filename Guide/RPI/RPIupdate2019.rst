@@ -50,6 +50,7 @@ RaspberryPIのNetBSDイメージについて
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
  2019/9/15,9.99.11,3.9.5,,,bwfm,OSC広島,http://mail-index.netbsd.org/port-arm/2019/09/10/msg006129.html
  2019/9/28,9.99.12,,,,rename ruby modules,OSC島根,http://mail-index.netbsd.org/port-arm/2019/09/23/msg006154.html
+ 2019/10/5,9.99.15,,,,RPI4,OSC新潟,
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
@@ -112,11 +113,19 @@ GPIOの使い方をまとめてくれた方が。
 64bit対応
 ---------------------
 
-ryo@netbsd さんによる rpi64wip実装が進み、NetBSD/aarch64としてRPI3で利用できます。
+ryo@netbsd さんによる rpi64wip実装が進み、NetBSD/aarch64としてRPI3/4で利用できます。
 
 * https://github.com/ryo/netbsd-src
 * http://mail-index.netbsd.org/port-arm/2018/02/20/msg004631.html
 * http://mail-index.netbsd.org/port-arm/2018/12/03/msg005297.html
+
+RPI4
+-------
+
+- テスト中です。
+- USBデバイスはまだ使えません
+- 内蔵有線LANポートは使えません
+- 無線LANポートは使えます
 
 armv7のいろいろ
 --------------------
@@ -128,7 +137,7 @@ Jared McNeillさんによるNetBSD ARM Bootable Imagesがあります。
 
 ご注文はなんとかですか（弱点）
 -----------------------------
-- RPI3の無線はつかえませんか？→テスト中
+- RPI3の無線はつかえませんか？→使えるようになりました！
 - ラズビアンでは動くんですが
 - 9.0版はないんですか→9.0BETAから。
 
