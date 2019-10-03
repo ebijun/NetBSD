@@ -1,35 +1,46 @@
-VERSION: :1,$s/2018-11-23/2019-10-05/g
-ISO:     :1,$s/201811172150Z/201811172150Z/g
+VERSION: :1,$s/2019-10-03/2019-10-03/g
+ISO:     :1,$s/201909261940Z/201909261940Z/g
 NetBSD:  :1,$s/9.99.13/9.99.13/g
 PKGSRC:  :1,$s/2018-11-23/2018-11-23/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2018-12-08-netbsd-raspi-aarch64.img
+Subject: 2019-10-03-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2018-12-08-netbsd-raspi-aarch64.img.gz for RPI3.
+I've updated 2019-10-03-netbsd-raspi-aarch64.img.gz for RPI3/3B/4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/2018-12-08-aarch64/2018-12-08-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/2018-12-08-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/2019-10-03-aarch64/2019-10-03-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/2019-10-03-aarch64/MD5
 
 Topics:
-- RPI3/RPI3B+/RPI4
+- only for RPI3/RPI3B+/RPI4
 - build script
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
+- fix fstab
+ http://mail-index.netbsd.org/port-arm/2019/09/30/msg006193.html
 
-RPI4 issues:
+RPI4 status:
+- kernel and /boot
+  http://mail-index.netbsd.org/port-arm/2019/09/26/msg006174.html
+  http://cdn.netbsd.org/pub/NetBSD/misc/mlelstv/rpi4boot.tgz
+  console=fb
+- dmesg
+  http://mail-index.netbsd.org/port-arm/2019/09/27/msg006180.html
+- HDMI: (not work?)
 - USB device: not work
 - bwfm0 Wireless network:work
+- raspberry-pi userland and omxplayer:compile failed
 
 Update:
 - NetBSD-current 9.99.13 evbarm-aarch64 201811301120Z arm64.img from nyftp.
 - pre-installed packages:
-  none
+  checking;same as earmv6hf
+  icewm need recompiling
 - pre-build packages:
   See /etc/pkg_install.conf
-  PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2018-12-08/
+  PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2019-09-21/
 
 TIPS:
 - How can I write /etc/fstab,which can boot RPI3 and RPI4?
