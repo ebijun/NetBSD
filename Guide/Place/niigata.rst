@@ -131,6 +131,19 @@ togetterまとめ
  中華大吉,殿町,24:00-4:00 日曜休
  雑本堂,東坂之上町,古書 映画関連
 
+2018年
+---------------
+
+.. image::  ../Picture/2018/11/10/DSC_6264.JPG
+.. image::  ../Picture/2018/11/10/DSC_6265.JPG
+.. image::  ../Picture/2018/11/10/DSC_6266.JPG
+.. image::  ../Picture/2018/11/10/DSC_6267.JPG
+.. image::  ../Picture/2018/11/10/DSC_6268.JPG
+.. image::  ../Picture/2018/11/10/DSC_6269.JPG
+.. image::  ../Picture/2018/11/10/DSC_6273.JPG
+.. image::  ../Picture/2018/11/10/DSC_6274.JPG
+.. image::  ../Picture/2018/11/10/DSC_6275.JPG
+
 2017年
 ---------------
 
@@ -221,22 +234,10 @@ togetterまとめ
 .. image::  ../Picture/2009/08/01/003.JPG
 .. image::  ../Picture/2009/08/01/004.JPG
 .. image::  ../Picture/2009/08/01/005.JPG
-.. image::  ../Picture/2009/08/01/006.JPG
-.. image::  ../Picture/2009/08/01/007.JPG
-.. image::  ../Picture/2009/08/01/008.JPG
-.. image::  ../Picture/2009/08/01/010.JPG
-.. image::  ../Picture/2009/08/01/011.JPG
-.. image::  ../Picture/2009/08/01/012.JPG
-.. image::  ../Picture/2009/08/01/013.JPG
-.. image::  ../Picture/2009/08/01/014.JPG
-.. image::  ../Picture/2009/08/01/016.JPG
-
 
 2008年
 ---------------
 
-.. image::  ../Picture/2008/04/12/2008-574.JPG
-.. image::  ../Picture/2008/04/12/2008-575.JPG
 .. image::  ../Picture/2008/04/12/2008-576.JPG
 .. image::  ../Picture/2008/04/12/2008-578.JPG
 .. image::  ../Picture/2008/04/12/2008-579.JPG
@@ -246,7 +247,6 @@ togetterまとめ
 .. image::  ../Picture/2008/04/12/2008-584.JPG
 .. image::  ../Picture/2008/04/12/2008-585.JPG
 .. image::  ../Picture/2008/04/12/2008-586.JPG
-.. image::  ../Picture/2008/04/12/2008-587.JPG
 
 2007年
 ---------------
