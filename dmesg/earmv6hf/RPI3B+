@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.14 (RPI2.201909291950UTC) #4: Tue Oct  1 08:27:04 JST 2019
+NetBSD 9.99.15 (RPI2.201910020950UTC) #5: Thu Oct  3 08:32:35 JST 2019
 	jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 929 MB
@@ -42,17 +42,6 @@ bcmaux0 at simplebus1
 bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 177
 bcmgpio0: pins 32..54 interrupting on icu irq 178
-2835: pin=30, pud=2, regid=0, mask=40000000
-2835: pin=31, pud=0, regid=0, mask=80000000
-2835: pin=32, pud=0, regid=1, mask=00000001
-2835: pin=33, pud=2, regid=1, mask=00000002
-2835: pin=43, pud=0, regid=1, mask=00000800
-2835: pin=34, pud=0, regid=1, mask=00000004
-2835: pin=35, pud=2, regid=1, mask=00000008
-2835: pin=36, pud=2, regid=1, mask=00000010
-2835: pin=37, pud=2, regid=1, mask=00000020
-2835: pin=38, pud=2, regid=1, mask=00000040
-2835: pin=39, pud=2, regid=1, mask=00000080
 gpio0 at bcmgpio0: 54 pins
 /soc/firmware/gpio at simplebus4 not configured
 bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10
@@ -65,6 +54,11 @@ bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmmbox0 at simplebus1: VC mailbox
 bcmmbox0: interrupting on icu irq 193
 vcmbox0 at bcmmbox0
+2835: pin=30, pud=2, regid=0, mask=40000000
+2835: pin=31, pud=0, regid=0, mask=80000000
+2835: pin=32, pud=0, regid=1, mask=00000001
+2835: pin=33, pud=2, regid=1, mask=00000002
+2835: pin=43, pud=0, regid=1, mask=00000800
 plcom0 at simplebus1: ARM PL011 UART
 plcom0: txfifo disabled
 plcom0: interrupting on icu irq 185
@@ -76,6 +70,12 @@ com0 at simplebus1: BCM AUX UART, working fifo
 com0: console
 com0: interrupting on icu irq 157
 /soc/pwm@7e20c000 at simplebus1 not configured
+2835: pin=34, pud=0, regid=1, mask=00000004
+2835: pin=35, pud=2, regid=1, mask=00000008
+2835: pin=36, pud=2, regid=1, mask=00000010
+2835: pin=37, pud=2, regid=1, mask=00000020
+2835: pin=38, pud=2, regid=1, mask=00000040
+2835: pin=39, pud=2, regid=1, mask=00000080
 sdhc0 at simplebus1: SDHC controller
 sdhc0: interrupting on icu irq 190
 bsciic2 at simplebus1: Broadcom Serial Controller
@@ -155,13 +155,9 @@ uhidev1: vendor 056e (0x56e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, i
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
-uhidev2 at uhub1 port 3 configuration 1 interface 0
-uhidev2: vendor 0461 (0x461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 6, iclass 3/1
-ums0 at uhidev2: 3 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
 uhub0: autoconfiguration error: illegal enable change, port 1
 mue0 at uhub2 port 1
-mue0: vendor 0424 (0x424) product 7800 (0x7800), rev 2.10/3.00, addr 7
+mue0: vendor 0424 (0x424) product 7800 (0x7800), rev 2.10/3.00, addr 6
 mue0: LAN7800 id 0x7800 rev 0x2
 ukphy0 at mue0 phy 1: OUI 0x00800f, model 0x0013, rev. 2
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
@@ -173,7 +169,7 @@ root on ld0a dumps on ld0b
 ld0: 119814144 trailing sectors not covered by disklabel
 ld0: 119814144 trailing sectors not covered by disklabel
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.14/modules
+kern.module.path=/stand/evbarm/9.99.15/modules
 vchiq0: interrupting on icu irq 194
 vchiq: vchiq_init_state: slot_zero = 0xcb5b0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
