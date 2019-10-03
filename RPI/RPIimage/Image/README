@@ -1,21 +1,21 @@
-VERSION: :1,$s/2019-09-28/2019-09-28/g
-ISO:     :1,$s/201909211450Z/201909211450Z/g
-NetBSD:  :1,$s/9.99.12/9.99.12/g
-PKGSRC:  :1,$s/2019-09-28/2019-09-28/
+VERSION: :1,$s/2019-10-05/2019-10-05/g
+ISO:     :1,$s/201910020950Z/201910020950Z/g
+NetBSD:  :1,$s/9.99.15/9.99.15/g
+PKGSRC:  :1,$s/2019-10-05/2019-10-05/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2019-09-28-netbsd9-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2019-10-05-netbsd9-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2019-09-28-netbsd9-raspi-earmv6hf.img.gz for RPI.
+I've updated 2019-10-05-netbsd9-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-09-28-earmv6hf/2019-09-28-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-09-28-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-10-05-earmv6hf/2019-10-05-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-10-05-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.12 evbarm-earmv6hf 201909211450Z rpi.img from nyftp.
+- NetBSD 9.99.15 evbarm-earmv6hf 201910020950Z rpi.img from nyftp.
 - Testing: bwfm0 Broadcom and Cypress wireless network driver
  1. add kernel configration
    bwfm*   at sdmmc?
@@ -30,15 +30,14 @@ Update:
   http://mail-index.netbsd.org/port-arm/2019/09/26/msg006171.html
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/README.RPI4
 
-
-- Update from OSC2019hiroshima
- https://github.com/ebijun/NetBSD/commit/8371199adf010af146262db1541b7ea56eab20c8
+- Update from OSC2019shimane
+  https://github.com/ebijun/NetBSD/commit/a3c9fec18bc6deb8ff60429d61ab610884f8ec08
 
 sysinfo:
- dhcpcd-8.0.6
+ NetBSD-9.99.15 libpcap-1.9.1 sh-20181212-20191002094724Z
+ tcpdump-4.9.3 userland-NetBSD-9.99.15/evbarm
 
 pkgsrc:
- curl-7.66.0nb1 pango-1.44.6 ruby24-mikutter-3.9.5nb1
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
@@ -54,17 +53,6 @@ Keyboard layout checkpoint:
 System Update:
 
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
-
-sysinfo:
- dhcpcd-8.0.6 NetBSD-9.99.12 sh-20181212-20190921142542Z
- userland-NetBSD-9.99.12/evbarm
-
-pkgsrc:
- curl-7.66.0nb1 fribidi-1.0.5 nghttp2-1.39.2nb1
- pango-1.44.6 ruby24-atk-3.3.8 ruby24-cairo-gobject-3.3.8
- ruby24-gdk_pixbuf2-3.3.8 ruby24-gio2-3.3.8 ruby24-glib2-3.3.8
- ruby24-gobject-introspection-3.3.8 ruby24-gtk2-3.3.8
- ruby24-mikutter-3.9.5nb1 ruby24-pango-3.3.8
 
 - mikutter support : 
  I make sample API key,pre-installed.
@@ -82,7 +70,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-09-28-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-10-05-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -138,7 +126,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-09-28/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-10-05/
 
 - If you use Official Package for NetBSD8.1:
 
@@ -146,7 +134,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/8.1/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-09-28-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-10-05-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -325,22 +313,21 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2019 Shimane NetBSD booth.
+For Open Source Conference 2019 Niigata NetBSD booth.
 I've updated raspberry-pi image.
 
- Sep.28 2019 Sat:
- https://www.ospn.jp/osc2019-shimane/
+ Oct.5 2019 Sat:
+ https://www.ospn.jp/osc2019-niigata/
 
  NetBSD BOF Sep.28. 10:40-10:55 JST
  https://www.ospn.jp/osc2019-shimane/modules/article/article.php?articleid=2
 
-http://www.re.soum.co.jp/~jun/OSC2019shimane.pdf
+http://www.re.soum.co.jp/~jun/OSC2019niigata.pdf
 http://www.jp.NetBSD.org/
-http://nagoya.bug.gr.jp/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2019.rst
 
-- NetBSD 9.99.12 earmv6hf rpi.img.gz base
+- NetBSD 9.99.15 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -378,7 +365,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-09-28/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-10-05/
 
 Installed Packages:
   bash
