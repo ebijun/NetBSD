@@ -49,8 +49,8 @@ RaspberryPIのNetBSDイメージについて
  2019/7/13,8.99.50,3.9.0,3.8.8,1.1.1c,libc-12.213 RPI4発売,OSC名古屋,http://mail-index.netbsd.org/port-arm/2019/07/07/msg005875.html
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
  2019/9/15,9.99.11,3.9.5,,,bwfm,OSC広島,http://mail-index.netbsd.org/port-arm/2019/09/10/msg006129.html
- 2019/9/28,9.99.12,,,,rename ruby modules,OSC島根,http://mail-index.netbsd.org/port-arm/2019/09/23/msg006154.html
- 2019/10/5,9.99.15,,,,RPI4,OSC新潟,
+ 2019/9/28,9.99.12,,,,RPI4,OSC島根,http://mail-index.netbsd.org/port-arm/2019/09/23/msg006154.html
+ 2019/10/5,9.99.15,,,,pkgsrc-2019Q3,OSC新潟,http://mail-index.netbsd.org/port-arm/2019/10/03/msg006209.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
@@ -76,7 +76,7 @@ NetBSDのイメージを配るとしたとき、どのくらいの周期でア�
 新しいハードウェア対応
 ----------------------
 
-#. RPI4:まだでち
+#. RPI4:OSC2019島根から：http://mail-index.netbsd.org/port-arm/2019/10/03/msg006208.html
 #. RPI3/RPI0WのBluetooth/無線LAN:OSC2019広島版からテストをはじめました
 
 ソフトウェア配布方法

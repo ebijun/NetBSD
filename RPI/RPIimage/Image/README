@@ -6,7 +6,7 @@ PKGSRC:  :1,$s/2019-10-05/2019-10-05/
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2019-10-05-netbsd9-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2019-10-05-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
 I've updated 2019-10-05-netbsd9-raspi-earmv6hf.img.gz for RPI.
@@ -24,8 +24,12 @@ Update:
      LICENCE.broadcom_bcm43xx
      brcmfmac43430-sdio.{bin|txt}
      brcmfmac43455-sdio.{bin|txt}
+- fix fstab
+  http://mail-index.netbsd.org/port-arm/2019/09/30/msg006193.html
 
-- RPI4: waiting for the testing
+- RPI4: testing
+ Image:
+  http://mail-index.netbsd.org/port-arm/2019/10/03/msg006208.html
   http://mail-index.netbsd.org/port-arm/2019/09/24/msg006162.html
   http://mail-index.netbsd.org/port-arm/2019/09/26/msg006171.html
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/README.RPI4
@@ -271,10 +275,6 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
 
 Todo:
 - RPI UEFI
-- isaki@ audio2
-- make python35 binary
-- Rust
-  https://github.com/rust-lang/rust/compare/master...jakllsch:netbsd-20171225
 - set2pkg: update via pkgsrc.
 - pkg_in/pkg_summary
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
@@ -283,7 +283,6 @@ Todo:
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
-- RPI.rst in english.
 - /dev/mem: http://mail-index.netbsd.org/port-arm/2015/03/12/msg002934.html
   "can't open /dev/mem" -> re-compile kernel with INSECURE.
 - Sound output to the jack: port-arm/2015/03/12/msg002938.html
