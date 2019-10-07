@@ -11,11 +11,11 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-08-03/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-10-19/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-8.99.51-evbarm-${ARCH}-201907222240Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.15-evbarm-${ARCH}-201910060400Z.iso
 
 PKGSRC=../../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
@@ -51,7 +51,7 @@ VND_CDROM=vnd1
 MNT_TMP=/mnt2
 VND_TMP=vnd2
 
-all: file cdmount rpi extract cdunmount 
+all: file cdmount rpi extract cdunmount bwfm-firmware
 
 #update: cdmount update-extract cdunmount
 
@@ -230,5 +230,15 @@ mikutter-key:
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	patch -d ${MNT}/root/.mikutter/plugin/twitter_api_keys < ../mikutter/twitter_api_keys.rb.patch
+	umount ${MNT}
+	vnconfig -u ${VND}
+
+bwfm-firmware:
+	vnconfig ${VND} ${FILE}
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	mkdir -p ${MNT}/libdata/firmware/if_bwfm/
+	cp -p ../kernel/Firmware/brcmfmac43* ${MNT}/libdata/firmware/if_bwfm/
+	cp -p ../kernel/Firmware/LICENCE.broadcom_bcm43xx ${MNT}/libdata/firmware/if_bwfm/
 	umount ${MNT}
 	vnconfig -u ${VND}
