@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -51,7 +51,10 @@ Maps:
  2012, Ehime    ,  3/24 ,   220 ,    34
  2013, Tokushima,  3/9  ,   300 ,    24
  2014, OSuC Kagawa, 4/12,    50 ,    11
- 2015, Tokushima,  11/14,      ,    24
+ 2015, Tokushima, 11/14 , 200, 24
+ 2016, OSuCehime,10/8, ,
+ 2018, Kagawa, 10/6,110,14
+ 2019, Tokushima,10/19,,24
 
 togetterまとめ
 ~~~~~~~~~~~~~~~
@@ -62,6 +65,8 @@ togetterまとめ
  OSC2012愛媛 NetBSDブース展示の記録,http://togetter.com/li/275497
  OSC2013徳島 NetBSDブース展示の記録,http://togetter.com/li/468577
  オープンソースアンカンファレンス2014香川　NetBSDブース展示の記録,http://togetter.com/li/654135
+ OSC2015徳島 NetBSDブース展示の記録,https://togetter.com/li/899923
+ OSC2018香川 NetBSDブース展示の記録,https://togetter.com/li/1273756
 
 四国での発表
 ~~~~~~~~~~~~
@@ -93,6 +98,7 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
  2001,macppc mac68K amiga hpcmips dreamcast playstation2 i386 トロハブ
  2011,hp300 hpcmips hpcsh hpcarm
  2014, hp300 RPI zaurus hpcarm
+ 2018, LUNA+PSG XM6i omxplayer EeePC
 
 よく行く店 徳島
 ~~~~~~~~~~~~~~~~~~~~~
@@ -100,18 +106,22 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
 .. csv-table::
  :widths: 25 15 60
 
- Awa新町川ブリュワリー,東船場,徳島地ビール
- RISE & WIN Brewing,上勝町,マイクロブルワリー。21:00まで 
+ 2nd Story ale works,八多町,ブルワリー見学の場合は予約する
+ 徳島ステーションブリュワリー,徳島駅地下,11:00-23:00
+ Awa新町川ブリュワリー,東船場,徳島地ビール 12:00-14:00 17:00-24:00 土日は通し営業
+ RISE & WIN Brewing,上勝町,マイクロブルワリー。水~金11:00-17:00　土日祝10:00-18:00 
  北島町立図書館,北島町,創世ホール通信 先鋭疾風的図書館 特撮関係資料
  クリッパー模型,佐古四番町,ラジコンボートクリッパー
- エレパーツコーワ,北島町,電子部品
- でんでんハウス佐藤電気,住吉,電子部品
+ でんでんハウス佐藤電気,住吉,電子部品 徳島エジソン工房とは何か
  荒物屋ソラリス,佐古六番町,日用品 雑貨 古本有□
+ Jaxon'sレコード,幸町,中古レコード
+ AVスポットフジ,三軒屋町,10:00-19:30
  スウィング,秋田町,ジャズライブ
  スタンダード,阿波富田,ギネスが飲めるバー
  ネギ屋,吉野本町,ボカロ専門店
  エレパーツコーワ,北島町,電子部品　10:00-18:00
- 
+ シンフォマージ,佐古一番町,オーディオ/カーオーディオ13:00-20:00
+ サイトームセン,南二軒屋町,9:00-18:00 日曜休み
 
 よく行く店 香川
 ~~~~~~~~~~~~~~
@@ -119,11 +129,15 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
 .. csv-table::
  :widths: 25 15 60
 
+ 麺之介,瓦町,KAOS (KAgawa Open Source)から十余年。
  iL,常磐町,ノイズ喫茶
+ Maison De Biere,百間町,毎月第3土曜にClub Biere
+ Hopheads,大工町,17:00-3:00
+ タビ式,瓦町,アブサン 階段 18:57-04:07
+ melobar,古新町,2018/10/20 DJ Lord Sassafras
  beer pub station,高松築港,駅構内にある。クラックが出してる
  オーディオサミット,高松町,オーディオ屋。古高松下車
  イサムノグチ庭園美術館,牟礼町,はがきで予約
- 麺之介,瓦町,KAOS (KAgawa Open Source)から十余年。
  麦蔵,福岡町,かしわざる
  山鹿,片原町,うどんの館とは何か。
  犬島精錬所美術館,犬島,わたしゃ５５年前からこうしてるんだよ
