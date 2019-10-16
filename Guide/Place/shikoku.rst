@@ -98,6 +98,7 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
  2001,macppc mac68K amiga hpcmips dreamcast playstation2 i386 トロハブ
  2011,hp300 hpcmips hpcsh hpcarm
  2014, hp300 RPI zaurus hpcarm
+ 2015, PANIX RPI zaurus hpcarm
  2018, LUNA+PSG XM6i omxplayer EeePC
 
 よく行く店 徳島
@@ -172,6 +173,47 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
  Rockカフェぽおる,はりまや町,ロックバー。近くに移転したらしい
  森山製パン所,宝永町,味付けサンド ピーナツ味
  横山隆一記念まんが館,はりまや橋,安倍夜朗展
+
+2018年 香川
+~~~~~~~~~~~~~
+
+.. image::  ../Picture/2018/10/06/DSC00264.JPG
+.. image::  ../Picture/2018/10/06/DSC00267.JPG
+.. image::  ../Picture/2018/10/06/DSC_6020.JPG
+.. image::  ../Picture/2018/10/06/DSC_6021.JPG
+.. image::  ../Picture/2018/10/06/DSC_6022.JPG
+.. image::  ../Picture/2018/10/06/DSC_6024.JPG
+.. image::  ../Picture/2018/10/06/DSC_6025.JPG
+.. image::  ../Picture/2018/10/06/DSC_6026.JPG
+.. image::  ../Picture/2018/10/06/DSC_6028.JPG
+.. image::  ../Picture/2018/10/06/DSC_6030.JPG
+.. image::  ../Picture/2018/10/06/DSC_6032.JPG
+.. image::  ../Picture/2018/10/06/DSC_6034.JPG
+
+2015年 徳島
+~~~~~~~~~~~~~
+
+.. image::  ../Picture/2015/11/14/1447468390188.jpg
+.. image::  ../Picture/2015/11/14/1447468624560.jpg
+.. image::  ../Picture/2015/11/14/1447468961409.jpg
+.. image::  ../Picture/2015/11/14/1447471126328.jpg
+.. image::  ../Picture/2015/11/14/1447473159037.jpg
+.. image::  ../Picture/2015/11/14/1447473296615.jpg
+.. image::  ../Picture/2015/11/14/1447473515286.jpg
+.. image::  ../Picture/2015/11/14/1447473555123.jpg
+.. image::  ../Picture/2015/11/14/1447478546728.jpg
+.. image::  ../Picture/2015/11/14/DSC08311.JPG
+.. image::  ../Picture/2015/11/14/DSC08312.JPG
+.. image::  ../Picture/2015/11/14/DSC08314.JPG
+.. image::  ../Picture/2015/11/14/DSC08315.JPG
+.. image::  ../Picture/2015/11/14/DSC08316.JPG
+.. image::  ../Picture/2015/11/14/DSC08317.JPG
+.. image::  ../Picture/2015/11/14/DSC08318.JPG
+.. image::  ../Picture/2015/11/14/DSC_1492.jpg
+.. image::  ../Picture/2015/11/14/DSC_1493.jpg
+.. image::  ../Picture/2015/11/14/KIMG0030.jpg
+.. image::  ../Picture/2015/11/14/KIMG0031.jpg
+.. image::  ../Picture/2015/11/14/KIMG0032.jpg
 
 オープンソースアンカンファレンス2014香川
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
