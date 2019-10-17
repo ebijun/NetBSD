@@ -9,11 +9,12 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-10-05/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-10-19/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-9.99.15-evbarm-${ARCH}-201910020950Z.iso
+# dhcpcd can't get IPv4 address
+IMAGE=/usr/release/images/NetBSD-9.99.17-evbarm-${ARCH}-201910161520Z.iso
 
 KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
 
