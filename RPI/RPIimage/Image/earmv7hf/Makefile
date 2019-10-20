@@ -11,7 +11,7 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-10-19/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-11-09/
 
 # iso file information
 
@@ -51,7 +51,7 @@ VND_CDROM=vnd1
 MNT_TMP=/mnt2
 VND_TMP=vnd2
 
-all: file cdmount rpi extract cdunmount bwfm-firmware
+all: file cdmount rpi extract cdunmount kernel-update bwfm-firmware
 
 #update: cdmount update-extract cdunmount
 
@@ -193,10 +193,8 @@ firm:
 kernel-update:
 	vnconfig ${VND} ${FILE}
 	mount /dev/${VND}e ${MNT}
-#	mv  ${MNT}/kernel.img ${MNT}/kernel.img.original
-#	cp /usr/obj/kernel/earmv6hf/RPI/netbsd.bin ${MNT}/kernel.img
 	mv  ${MNT}/kernel7.img ${MNT}/kernel7.img.original
-	cp /usr/obj/kernel/earmv6hf/RPI2/netbsd.bin ${MNT}/kernel7.img
+	cp kernel/${KERNELDIR}/netbsd7.img ${MNT}/kernel7.img
 	umount ${MNT}
 	vnconfig -u ${VND} 
 
