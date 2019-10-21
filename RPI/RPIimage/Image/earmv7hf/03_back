@@ -1,0 +1,17 @@
+dd if=/dev/rsd0d of=back.img count=512 bs=4915200 progress=5
+
+DIR=tmp`date +%Y%m%d-%H%M`
+mkdir $DIR
+
+vnconfig vnd0 back.img
+ fsck /dev/vnd0a
+ mount /dev/vnd0a /mnt
+  for i in dmesg pkginfo version sysinfo
+  do
+   cp /mnt/root/${i} ${DIR}/${i} 
+  done
+ umount /mnt
+vnconfig -u vnd0
+
+diff -u ../../pkgsrc/pkginfo  ${DIR}/pkginfo |more
+echo pkgdiff from earmv6
