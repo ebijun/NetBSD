@@ -17,6 +17,8 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-11-
 
 IMAGE=/usr/release/images/NetBSD-9.99.17-evbarm-${ARCH}-201910191240Z.iso
 
+KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
+
 PKGSRC=../../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 ###
@@ -126,7 +128,7 @@ pkg-back:
 	vnconfig ${VND} ${FILE}
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	cp ../../etc/rc.conf ${MNT}/etc/rc.conf
+	cp etc/rc.conf ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -194,7 +196,7 @@ kernel-update:
 	vnconfig ${VND} ${FILE}
 	mount /dev/${VND}e ${MNT}
 	mv  ${MNT}/kernel7.img ${MNT}/kernel7.img.original
-	cp kernel/${KERNELDIR}/netbsd7.img ${MNT}/kernel7.img
+	cp kernel/${KERNELDIR}/netbsd77.img ${MNT}/kernel7.img
 	umount ${MNT}
 	vnconfig -u ${VND} 
 
