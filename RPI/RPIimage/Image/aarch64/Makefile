@@ -243,6 +243,6 @@ mikutter-key:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
-	patch -d ${MNT}/root/.mikutter/plugin/twitter_api_keys < mikutter/twitter_api_keys.rb.patch
+	patch -d ${MNT}/root/.mikutter/plugin/twitter_api_keys < ../mikutter/twitter_api_keys.rb.patch
 	umount ${MNT}
 	vnconfig -u ${VND}
