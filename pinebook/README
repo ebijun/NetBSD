@@ -1,30 +1,28 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20190921)
+Subject: pinebook status update (20191026)
 
-Problem on NetBSD9.99.12: 
- Sometimes eMMC can't recognize on Boot.
- sdmmc2:can't read EXT_CSD (error=60)
- https://twitter.com/ebijun/status/1175277647594582016
-
-Update:
- bind-9.14.5 bzip2-1.0.8 dhcpcd-8.0.6 
+sysinfo:
+ bind-9.14.7 dhcpcd-8.1.1 g++-8.3.0 gcc-8.3.0
+ libc-12.214 libssh-35.0 NetBSD-9.99.17
+ openssh-8.1 opensshd-8.1 libpcap-1.9.1
+ pkg_install-20191008 sh-20181212-20191023023443Z
+ tcpdump-4.9.3 tzdata-2019c
+ userland-NetBSD-9.99.17/evbarm
 
 pkgsrc:
- apache-2.4.41nb1 bison-3.2.4nb1 boost-libs-1.71.0 clang-8.0.1
- cmake-3.15.3 cups-base-2.2.12 dhcpcd-8.0.6 emacs-26.3
- git-base-2.23.0nb1 gtk2+-2.24.32nb11 gtk3+-3.24.10
- harfbuzz-2.6.1 ibus-1.5.21 ibus-mozc-2.20.2673.102nb17
- jemalloc-5.2.1nb1 mlterm-3.8.8nb4 mpv-0.29.1nb11
- nginx-1.16.1 nodejs-10.16.3 nspr-4.21nb1 nss-3.46
- openjdk8-1.8.222 osabi-NetBSD-9.99.12 pango-1.44.6
- pangomm-2.42.0nb1 perl-5.30.0 php-7.1.32 poppler-0.79.0
- poppler-glib-0.79.0 py27-gtk2-2.24.0nb29 py37-sphinx-1.8.5nb2
- python36-3.6.9 python37-3.7.4 ruby24-base-2.4.7
- ruby24-glib2-3.3.8 ruby24-gtk2-3.3.8 ruby24-mikutter-3.9.5nb1
- ruby25-base-2.5.6 rust-1.37.0 samba-3.6.25nb19
- sqlite3-3.29.0 sylpheed-3.7.0nb4 wxGTK30-3.0.4nb3
- x11-links-1.30 xfce4-4.14.0 xnp2-0.86nb8
- youtube-dl-20190912.1
+ apache-2.4.41nb1 bash-5.0.11 boost-build-1.71.0
+ cmake-3.15.4 curl-7.66.0nb1 dhcpcd-8.1.1
+ emacs-26.3 gtk3+-3.24.11
+ llvm-9.0.0 mlterm-3.8.8nb5
+ mpv-0.29.1nb11 osabi-NetBSD-9.99.17
+ pango-1.44.6 perl-5.30.0nb1
+ php-7.1.32 poppler-0.81.0
+ python27-2.7.17 python37-3.7.5
+ qt5-qtbase-5.13.1
+ ruby24-base-2.4.9nb1 ruby24-mikutter-3.9.6
+ ruby25-base-2.5.7nb1
+ rust-1.38.0 sudo-1.8.28nb1
+ tcl-8.6.9nb2
 
 TEST kernel:
 - deforaos-camera: camera capture,and reboot
@@ -39,14 +37,9 @@ System Updates:
 
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
-sysinfo:
- bind-9.14.5 bzip2-1.0.8 dhcpcd-8.0.6 libcurses-8.2
- NetBSD-9.99.12 sh-20181212-20190918153332Z
- userland-NetBSD-9.99.12/evbarm
-
 pkgsrc:
- https://github.com/ebijun/NetBSD/commit/c8087de4c3fe6c5bb82b21d4dfe07e10523eaee8
- 
+ https://github.com/ebijun/NetBSD/commit/bdb68e9f5a07c21188689991199533d2ebda6c8d
+
 works well: 
  evince gedit mate medit py-sphinx gimp seamonkey inkscape
 - mate: pkgsrc/meta-pkgs/mate
@@ -80,7 +73,7 @@ ToDo:
 - libreoffice kde
 
 Version: 
- NetBSD 9.99.12 (GENERIC64.201909181540UTC) #14: Fri Sep 20 23:24:24 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.17 (GENERIC64.201910230500UTC) #17: Thu Oct 24 12:41:14 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
@@ -99,6 +92,6 @@ pkgchk.conf:
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-09-21/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-10-26/
 --
 Jun Ebihara
