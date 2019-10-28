@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-9 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -214,6 +214,15 @@ LibreOfficeをインストールしてみましょう。
      : 9時間くらいかかります。
  # which soffice
  /usr/pkg/bin/soffice
+
+依存しているパッケージを調べる
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+ cd /usr/pkgsrc/pkgtools/revbump
+ make package-install
+ finddepends lang/rust  .... rustに依存しているパッケージを調べる
 
 インストールするソフトウェアのライセンスを意識する
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
