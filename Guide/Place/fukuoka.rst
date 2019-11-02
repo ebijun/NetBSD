@@ -48,7 +48,8 @@ Maps:
  2015,10/3,400,30,九州産業大学 2号館
  2016,11/19,300,29,福岡ソフトリサーチパーク センタービル
  2017,10/7,400,21,福岡大学 18号館
- 2018,12/8,,24,福岡ソフトリサーチパーク センタービル
+ 2018,12/8,380,24,福岡ソフトリサーチパーク センタービル
+ 2019,11/9,,24,九州産業大学
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,6 +61,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 151,OSC2019福岡 http://www.re.soum.co.jp/~jun/OSC2019fukuoka.pdf
  136,OSC2018福岡,http://www.re.soum.co.jp/~jun/OSC2018fukuoka.pdf
  114,OSC2017福岡,http://www.re.soum.co.jp/~jun/OSC2017fukuoka.pdf
  99,OSC2016福岡,http://www.re.soum.co.jp/~jun/OSC2016fukuoka.pdf
@@ -76,6 +78,7 @@ togetterまとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2019福岡 NetBSDブース展示の記録,
  OSC2018福岡 NetBSDブース展示の記録,https://togetter.com/li/1296258
  OSC2017福岡 NetBSDブース展示の記録,https://togetter.com/li/1158733
  OSC2016福岡 NetBSDブース展示の記録,https://togetter.com/li/1050258
@@ -149,6 +152,7 @@ OSC福岡主な展示物
 .. csv-table::
  :widths: 15 35 60
 
+ 2018/12/8,福岡ソフトリサーチパーク,RPI3+XM6i 
  2017/10/7,福岡大学 18号館,RPI3+XM6i OrangePi One
  2016/11/19,福岡ソフトリサーチパーク,RPI3+XM6i NetWalker WZero3
  2015/10/3,九州産業大学,Raspberry PI2 mikutter NetWalker ZAURUS WZero3
