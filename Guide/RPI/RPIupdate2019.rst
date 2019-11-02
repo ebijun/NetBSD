@@ -34,8 +34,6 @@ RaspberryPIのNetBSDイメージについて
  :widths: 20 20 20 20 20 80 20 50
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
- 2018/10/06,8.99.25,,,1.1.1,,OSC香川,http://mail-index.netbsd.org/port-arm/2018/10/01/msg005059.html
- 2018/10/28,8.99.25,3.8.1,,,git-base-2.19.1 ruby-2.4.5,OSC東京秋,http://mail-index.netbsd.org/port-arm/2018/10/25/msg005097.html
  2018/11/10,8.99.25,3.8.2,3.8.7,,gtk3+3.24.1,KOF&OSC新潟,http://mail-index.netbsd.org/port-arm/2018/11/06/msg005153.html
  2018/11/23,8.99.26,3.8.3,3.8.7nb2,,gcc-6.5 RPI0/0W/1ブート不可,OSC島根,http://mail-index.netbsd.org/port-arm/2018/11/19/msg005230.html
  2018/12/8,8.99.26,,,,git-base-2.19.2 RPI3A+ NetBSD SA 2018-009,OSC福岡,http://mail-index.netbsd.org/port-arm/2018/12/03/msg005294.html
@@ -51,6 +49,7 @@ RaspberryPIのNetBSDイメージについて
  2019/9/28,9.99.12,,,,RPI4,OSC島根,http://mail-index.netbsd.org/port-arm/2019/09/23/msg006154.html
  2019/10/5,9.99.15,,,,pkgsrc-2019Q3,OSC新潟,http://mail-index.netbsd.org/port-arm/2019/10/03/msg006209.html
  2019/10/19,9.99.17,3.9.6,,,dhcpcd-8.1.1 sudo,OSC徳島,http://mail-index.netbsd.org/port-arm/2019/10/24/msg006265.html
+ 2019/11/9,9.99.17,,,,bind-9.14.7 glib2-2.6.4,OSC福岡,http://mail-index.netbsd.org/port-arm/2019/11/02/msg006291.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
