@@ -165,6 +165,20 @@ OSC福岡主な展示物
  2008/12/13,福岡大学,hpcmips/hpcarm/Jornada680/WZero3/USBカメラ
  2007/12/8,ASCビル,hpcmips/hpcarm/Jornada680
 
+
+2018年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture/2018/12/08/DSC_6422.JPG
+.. image::  ../Picture/2018/12/08/DSC_6423.JPG
+.. image::  ../Picture/2018/12/08/DSC_6424.JPG
+.. image::  ../Picture/2018/12/08/DSC_6426.JPG
+.. image::  ../Picture/2018/12/08/DSC_6427.JPG
+.. image::  ../Picture/2018/12/08/DSC_6429.JPG
+.. image::  ../Picture/2018/12/08/DSC_6431.JPG
+.. image::  ../Picture/2018/12/08/DSC_6432.JPG
+.. image::  ../Picture/2018/12/08/DSC_6435.JPG
+
+
 2017年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
