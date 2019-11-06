@@ -145,16 +145,13 @@ Maps:
 2019
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image::  ../Picture/2019/01/26/DSC_6569.JPG
-.. image::  ../Picture/2019/01/26/DSC_6571.JPG
 .. image::  ../Picture/2019/01/26/DSC_6572.JPG
-.. image::  ../Picture/2019/01/26/DSC_6574.JPG
 .. image::  ../Picture/2019/01/26/DSC_6575.JPG
 .. image::  ../Picture/2019/01/26/DSC_6578.JPG
 .. image::  ../Picture/2019/01/26/DSC_6579.JPG
 .. image::  ../Picture/2019/01/26/DSC_6580.JPG
 .. image::  ../Picture/2019/01/26/DSC_6581.JPG
 .. image::  ../Picture/2019/01/26/DSC_6582.JPG
-.. image::  ../Picture/2019/01/26/DSC_6583.JPG
 .. image::  ../Picture/2019/01/26/DSC_6590.JPG
 .. image::  ../Picture/2019/01/26/DSC_6592.JPG
 .. image::  ../Picture/2019/01/26/DSC_6593.JPG
@@ -217,18 +214,15 @@ Maps:
 2016
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. image::  ../Picture/2016/11/11/DSC_2641.JPG
-.. image::  ../Picture/2016/11/11/DSC_2643.JPG
 .. image::  ../Picture/2016/11/11/DSC_2644.JPG
 .. image::  ../Picture/2016/11/11/DSC_2647.JPG
 .. image::  ../Picture/2016/11/11/DSC_2648.JPG
 .. image::  ../Picture/2016/11/11/DSC_2649.JPG
-.. image::  ../Picture/2016/11/11/DSC_2655.JPG
 .. image::  ../Picture/2016/11/11/DSC_2660.JPG
 .. image::  ../Picture/2016/11/11/DSC_2668.JPG
 .. image::  ../Picture/2016/11/12/DSC_2683.JPG
 .. image::  ../Picture/2016/11/12/DSC_2684.JPG
 .. image::  ../Picture/2016/11/12/DSC_2686.JPG
-.. image::  ../Picture/2016/11/12/DSC_2687.JPG
 .. image::  ../Picture/2016/11/12/DSC_2697.JPG
 .. image::  ../Picture/2016/11/12/DSC_2698.JPG
 .. image::  ../Picture/2016/11/12/DSC_2699.JPG
@@ -242,7 +236,6 @@ Maps:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image::  ../Picture/2015/11/06/DSC08271.JPG
-.. image::  ../Picture/2015/11/06/DSC_1454.jpg
 .. image::  ../Picture/2015/11/06/DSC_1457.jpg
 .. image::  ../Picture/2015/11/06/DSC_1460.jpg
 .. image::  ../Picture/2015/11/06/DSC_1461.jpg
@@ -252,12 +245,10 @@ Maps:
 .. image::  ../Picture/2015/11/07/DSC08282.JPG
 .. image::  ../Picture/2015/11/07/DSC08284.JPG
 .. image::  ../Picture/2015/11/07/DSC08286.JPG
-.. image::  ../Picture/2015/11/07/DSC08287.JPG
 .. image::  ../Picture/2015/11/07/DSC08288.JPG
 .. image::  ../Picture/2015/11/07/DSC08289.JPG
 .. image::  ../Picture/2015/11/07/DSC08290.JPG
 .. image::  ../Picture/2015/11/07/DSC_1474.jpg
-.. image::  ../Picture/2015/11/07/DSC_1476.jpg
 .. image::  ../Picture/2015/11/07/DSC_1483.jpg
 
 
