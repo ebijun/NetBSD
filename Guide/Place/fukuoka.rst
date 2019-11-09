@@ -61,7 +61,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 151,OSC2019福岡 http://www.re.soum.co.jp/~jun/OSC2019fukuoka.pdf
+ 151,OSC2019福岡,http://www.re.soum.co.jp/~jun/OSC2019fukuoka.pdf
  136,OSC2018福岡,http://www.re.soum.co.jp/~jun/OSC2018fukuoka.pdf
  114,OSC2017福岡,http://www.re.soum.co.jp/~jun/OSC2017fukuoka.pdf
  99,OSC2016福岡,http://www.re.soum.co.jp/~jun/OSC2016fukuoka.pdf
@@ -78,7 +78,7 @@ togetterまとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2019福岡 NetBSDブース展示の記録,
+ OSC2019福岡 NetBSDブース展示の記録,https://togetter.com/li/1428096
  OSC2018福岡 NetBSDブース展示の記録,https://togetter.com/li/1296258
  OSC2017福岡 NetBSDブース展示の記録,https://togetter.com/li/1158733
  OSC2016福岡 NetBSDブース展示の記録,https://togetter.com/li/1050258
