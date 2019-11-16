@@ -1,28 +1,25 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20191026)
+Subject: pinebook status update (20191116)
+
 
 sysinfo:
- bind-9.14.7 dhcpcd-8.1.1 g++-8.3.0 gcc-8.3.0
- libc-12.214 libssh-35.0 NetBSD-9.99.17
- openssh-8.1 opensshd-8.1 libpcap-1.9.1
- pkg_install-20191008 sh-20181212-20191023023443Z
- tcpdump-4.9.3 tzdata-2019c
- userland-NetBSD-9.99.17/evbarm
+ bind-9.14.7 dhcpcd-8.1.1 g++-8.3.0 gcc-8.3.0 libc-12.214
+ libssh-35.0 NetBSD-9.99.17 openssh-8.1 opensshd-8.1
+ libpcap-1.9.1 pkg_install-20191008 sh-20181212-20191111180647Z
+ tcpdump-4.9.3 tzdata-2019c userland-NetBSD-9.99.17/evbarm
 
 pkgsrc:
- apache-2.4.41nb1 bash-5.0.11 boost-build-1.71.0
- cmake-3.15.4 curl-7.66.0nb1 dhcpcd-8.1.1
- emacs-26.3 gtk3+-3.24.11
- llvm-9.0.0 mlterm-3.8.8nb5
- mpv-0.29.1nb11 osabi-NetBSD-9.99.17
- pango-1.44.6 perl-5.30.0nb1
- php-7.1.32 poppler-0.81.0
- python27-2.7.17 python37-3.7.5
- qt5-qtbase-5.13.1
- ruby24-base-2.4.9nb1 ruby24-mikutter-3.9.6
- ruby25-base-2.5.7nb1
- rust-1.38.0 sudo-1.8.28nb1
- tcl-8.6.9nb2
+ ImageMagick-7.0.9.2 bash-5.0.11nb1 bison-3.4.2 boost-headers-1.71.0nb2
+ cmake-3.15.5 dhcpcd-8.1.1 firefox52-52.9.0nb19 gawk-5.0.1
+ gedit-3.22.1nb10 gexiv2-0.12.0nb1 git-base-2.24.0 glib2-2.60.7
+ harfbuzz-2.6.4 ibus-1.5.21nb1 inkscape-0.92.4nb7 llvm-9.0.0nb1
+ mate-1.22.0nb3 meson-0.52.0 mlterm-3.8.8nb5 mpv-0.30.0
+ nss-3.46.1 openjdk8-1.8.232 osabi-NetBSD-9.99.17
+ pango-1.44.7 perl-5.30.0nb1 php-7.1.33 poppler-0.82.0
+ python27-2.7.17 python37-3.7.5 ruby24-base-2.4.9nb1
+ ruby24-gtk2-3.4.1 ruby24-mikutter-3.9.6 rust-1.38.0nb1
+ seamonkey-2.49.5nb1 seamonkey-l10n-2.49.5 sudo-1.8.28nb2
+ vala-0.46.3
 
 TEST kernel:
 - deforaos-camera: camera capture,and reboot
@@ -73,7 +70,7 @@ ToDo:
 - libreoffice kde
 
 Version: 
- NetBSD 9.99.17 (GENERIC64.201910230500UTC) #17: Thu Oct 24 12:41:14 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.17 (GENERIC64.201911111850UTC) #19: Fri Nov 15 05:24:41 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
@@ -92,6 +89,6 @@ pkgchk.conf:
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-10-26/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-11-16/
 --
 Jun Ebihara
