@@ -200,6 +200,22 @@ OSC東京主な展示物
  2005/3/25-26,OSC2005,hpcmips/sh/arm
  2004/9/4,OSC2004,hpcmips/sh/arm
 
+2019年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2019/02/22/DSC_6697.JPG
+.. image::  ../Picture/2019/02/22/DSC_6698.JPG
+.. image::  ../Picture/2019/02/22/DSC_6713.JPG
+.. image::  ../Picture/2019/02/22/DSC_6715.JPG
+.. image::  ../Picture/2019/02/22/DSC_6722.JPG
+.. image::  ../Picture/2019/02/22/DSC_6724.JPG
+.. image::  ../Picture/2019/02/22/DSC_6725.JPG
+.. image::  ../Picture/2019/02/22/DSC_6726.JPG
+.. image::  ../Picture/2019/02/23/DSC_6727.JPG
+.. image::  ../Picture/2019/02/23/DSC_6733.JPG
+.. image::  ../Picture/2019/02/23/DSC_6735.JPG
+.. image::  ../Picture/2019/02/23/DSC_6738.JPG
+
 2018年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
