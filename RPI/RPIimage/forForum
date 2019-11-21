@@ -1,21 +1,21 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2019-09-28/2019-09-28/g
-:1,$s/9.99.12/9.99.12/g
-:1,$s/201909211450Z/201909211450Z/g
-:1,$s?2019/09/23/msg006154.html?2019/09/23/msg006154.html?
+:1,$s/2019-11-24/2019-11-24/g
+:1,$s/9.99.17/9.99.17/g
+:1,$s/201911170330Z/201911170330Z/g
+:1,$s?2019/11/21/msg006322.html?2019/11/21/msg006322.html?
 
-2019-09-28-netbsd-raspi-earmv6hf.img
+2019-11-24-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2019 Shimane NetBSD booth demonstration,
-I've updated 2019-09-28-netbsd-raspi-earmv6hf.img.gz for RPI.
+For Open Source Conference 2019 Tokyo/Fall NetBSD booth demonstration,
+I've updated 2019-11-24-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://mail-index.netbsd.org/port-arm/2019/09/23/msg006154.html
+http://mail-index.netbsd.org/port-arm/2019/11/21/msg006322.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-09-28-earmv6hf/2019-09-28-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-11-24-earmv6hf/2019-11-24-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD 9.99.12 evbarm-earmv6hf 201909211450Z rpi.img from nyftp.
+- NetBSD 9.99.17 evbarm-earmv6hf 201911170330Z rpi.img from nyftp.
 - Testing: bwfm0 Broadcom and Cypress wireless network driver
  1. add kernel configration
    bwfm*   at sdmmc?
@@ -25,8 +25,11 @@ Update:
      brcmfmac43430-sdio.{bin|txt}
      brcmfmac43455-sdio.{bin|txt}
 
-- RPI4: not supported
-  http://mail-index.netbsd.org/port-arm/2019/07/18/msg005943.html
+- RPI4: testing
+ Image:
+  http://mail-index.netbsd.org/port-arm/2019/10/03/msg006208.html
+  http://mail-index.netbsd.org/port-arm/2019/09/24/msg006162.html
+  http://mail-index.netbsd.org/port-arm/2019/09/26/msg006171.html
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/README.RPI4
 
 - pre-installed packages:
@@ -39,14 +42,13 @@ System Update:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 sysinfo:
- dhcpcd-8.0.6 NetBSD-9.99.12 sh-20181212-20190921142542Z
- userland-NetBSD-9.99.12/evbarm
-
+ dhcpcd-8.1.2 sh-20181212-20191117025925Z
+ 
 pkgsrc:
- curl-7.66.0nb1 fribidi-1.0.5 nghttp2-1.39.2nb1 pango-1.44.6
- ruby24-atk-3.3.8 ruby24-cairo-gobject-3.3.8 ruby24-gdk_pixbuf2-3.3.8
- ruby24-gio2-3.3.8 ruby24-glib2-3.3.8 ruby24-gobject-introspection-3.3.8
- ruby24-gtk2-3.3.8 ruby24-mikutter-3.9.5nb1 ruby24-pango-3.3.8
+ curl-7.67.0 gdk-pixbuf2-2.40.0 git-base-2.24.0 gtk3+-3.24.12
+ pango-1.44.7 perl-5.30.0nb2 qt5-qtbase-5.13.2 qt5-qtx11extras-5.13.2
+ qt5-qtxmlpatterns-5.13.2 ruby24-mikutter-3.9.7
+ tiff-4.1.0 uim-1.8.8
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
