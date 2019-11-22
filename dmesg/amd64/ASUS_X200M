@@ -4,11 +4,14 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.2 (GENERIC) #0: Sat Aug  3 15:58:14 UTC 2019
+NetBSD 9.99.17 (GENERIC) #0: Tue Oct 29 08:13:16 UTC 2019
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 3982 MB
-avail memory = 3839 MB
+avail memory = 3841 MB
+pool redzone disabled for 'buf4k'
+pool redzone disabled for 'buf64k'
 cpu_rng: RDRAND
+rnd: seeded with 256 bits
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 running cgd selftest aes-xts-256 aes-xts-512 done
@@ -18,7 +21,7 @@ mainbus0 (root)
 ACPI: RSDP 0x00000000000F04A0 000024 (v02 _ASUS_)
 ACPI: XSDT 0x00000000B9355080 00007C (v01 _ASUS_ Notebook 01072009 AMI  00010013)
 ACPI: FACP 0x00000000B93646D8 00010C (v05 _ASUS_ Notebook 01072009 AMI  00010013)
-Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 128/32 (20190405/tbfadt-642)
+Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 128/32 (20190816/tbfadt-642)
 ACPI: DSDT 0x00000000B9355190 00F543 (v02 _ASUS_ Notebook 01072009 INTL 20120913)
 ACPI: FACS 0x00000000B93B9F80 000040
 ACPI: APIC 0x00000000B93647E8 000068 (v03 _ASUS_ Notebook 01072009 AMI  00010013)
@@ -39,7 +42,7 @@ cpu0: package 0, core 0, smt 0
 cpu1 at mainbus0 apid 2
 cpu1: Intel(R) Celeron(R) CPU  N2830  @ 2.16GHz, id 0x30678
 cpu1: package 0, core 1, smt 0
-acpi0 at mainbus0: Intel ACPICA 20190405
+acpi0 at mainbus0: Intel ACPICA 20190816
 acpi0: X/RSDT: OemId <_ASUS_,Notebook,01072009>, AslId <AMI ,00010013>
 acpi0: autoconfiguration error: failed to look up EC object \_SB.PCI0.LPCB.EC0: AE_NOT_FOUND
 acpi0: autoconfiguration error: invalid PCI address for D011
@@ -47,13 +50,13 @@ acpi0: autoconfiguration error: invalid PCI address for D012
 acpi0: autoconfiguration error: invalid PCI address for D014
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF87D54098A810 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFB6645CD49410 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF87D508E23810 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
+ACPI: SSDT 0xFFFFB6645CD4B450 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF87D5409081D0 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFB664948BB210 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF87D508D5B4B8 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFB6645CD8C630 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -146,16 +149,13 @@ pci2: i/o space, memory space enabled, rd/line, wr/inv ok
 iwn0 at pci2 dev 0 function 0: vendor 8086 product 4232 (rev. 0x00)
 iwn0: interrupting at msi2 vec 0
 iwn0: MIMO 1T2R, MoW, address 00:24:d6:a3:5b:3e
-iwn0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-iwn0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-iwn0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
 ppb2 at pci0 dev 28 function 3: vendor 8086 product 0f4e (rev. 0x0e)
 ppb2: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 ppb2: link is x1 @ 2.5GT/s
 pci3 at ppb2 bus 3
 pci3: i/o space, memory space enabled, rd/line, wr/inv ok
 rtsx0 at pci3 dev 0 function 0: vendor 10ec product 5286 (rev. 0x01)
-rtsx0: interrupting at msi3 vec 0
+rtsx0: interrupting at msix3 vec 0
 sdmmc0 at rtsx0
 re0 at pci3 dev 0 function 2: RealTek 8100E/8101E/8102E/8102EL PCIe 10/100BaseTX (rev. 0x06)
 re0: interrupting at msix4 vec 0
@@ -210,7 +210,7 @@ acpicpu1 at cpu1: ACPI CPU
 coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=105
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu1: autoconfiguration error: lapic_set_lvt: WARNING: bad pin value 61
-timecounter: Timecounter "TSC" frequency 2166913580 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2166911760 Hz quality 3000
 acpiacad0: AC adapter online.
 uhub0 at usb0: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 8 ports with 8 removable, self powered
@@ -228,7 +228,8 @@ uhub1 at uhub0 port 1: vendor 8087 (0x8087) product 07e6 (0x7e6), class 9/0, rev
 uhub1: single transaction translator
 uhub1: 4 ports with 4 removable, self powered
 uvideo0 at uhub1 port 3 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x4f2) USB2.0 HD UVC WebCam (0xb424), rev 2.00/69.69, addr 3
-video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x4f2) USB2.0 HD UVC WebCam (0xb424), rev 2.00/69.69, addr 3
+video0 at uvideo0pool redzone disabled for 'video'
+: Chicony Electronics Co.,Ltd. (0x4f2) USB2.0 HD UVC WebCam (0xb424), rev 2.00/69.69, addr 3
 uhub2 at uhub1 port 4: vendor 05e3 (0x5e3) USB2.0 Hub (0x608), class 9/0, rev 2.00/85.37, addr 4
 uhub2: single transaction translator
 uhub2: 3 ports with 2 removable, self powered
@@ -236,13 +237,13 @@ WARNING: 14 errors while detecting hardware; check system log.
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.2/modules
+kern.module.path=/stand/amd64/9.99.17/modules
 kern info: [drm] Memory usable by graphics device = 2048M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
 intelfb0 at i915drmkms0
-intelfb0: framebuffer at 0xffff8a806717f000, size 1366x768, depth 32, stride 5504
+intelfb0: framebuffer at 0xffffde0067198000, size 1366x768, depth 32, stride 5504
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
