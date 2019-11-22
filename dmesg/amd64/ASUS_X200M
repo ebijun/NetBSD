@@ -4,14 +4,13 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.18 (GENERIC) #0: Thu Nov 21 09:48:57 UTC 2019
+NetBSD 9.99.17 (GENERIC) #0: Sun Nov 17 17:35:10 UTC 2019
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 3982 MB
 avail memory = 3841 MB
 pool redzone disabled for 'buf4k'
 pool redzone disabled for 'buf64k'
 cpu_rng: RDRAND
-rnd: seeded with 256 bits
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 running cgd selftest aes-xts-256 aes-xts-512 done
@@ -50,13 +49,13 @@ acpi0: autoconfiguration error: invalid PCI address for D012
 acpi0: autoconfiguration error: invalid PCI address for D014
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFACF566158410 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFBB9992558410 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFACF56617A450 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
+ACPI: SSDT 0xFFFFBB999257A450 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFACF59DCB4210 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFBB99CA0B4210 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFACF56618B6D8 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFBB999258B6D8 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -210,11 +209,11 @@ acpicpu1 at cpu1: ACPI CPU
 coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=105
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu1: autoconfiguration error: lapic_set_lvt: WARNING: bad pin value 61
-timecounter: Timecounter "TSC" frequency 2166902920 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2166910460 Hz quality 3000
 acpiacad0: AC adapter online.
-IPsec: Initialized Security Association Processing.
 uhub0 at usb0: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 8 ports with 8 removable, self powered
+IPsec: Initialized Security Association Processing.
 acpibat0: ASUSTeK LIon rechargeable battery
 acpibat0: granularity: low->warn 0.244 Wh, warn->full 0.244 Wh
 ahcisata0 port 0: device present, speed: 3.0Gb/s
@@ -237,13 +236,13 @@ WARNING: 14 errors while detecting hardware; check system log.
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.18/modules
+kern.module.path=/stand/amd64/9.99.17/modules
 kern info: [drm] Memory usable by graphics device = 2048M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
 intelfb0 at i915drmkms0
-intelfb0: framebuffer at 0xffffb3806718e000, size 1366x768, depth 32, stride 5504
+intelfb0: framebuffer at 0xffff98806718e000, size 1366x768, depth 32, stride 5504
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
