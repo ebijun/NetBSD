@@ -4,9 +4,12 @@
 require 'net/ftp'
 
 FTP="nyftp.netbsd.org"
+CDN="nycdn.netbsd.org"
+
 #BRANCH="/pub/NetBSD-daily/HEAD/"
 BRANCH="/pub/NetBSD-daily/netbsd-9/"
 IMAGES="/usr/release/images/"
+
 ARCH="zaurus"
 
 class ISO
@@ -41,7 +44,7 @@ end
 ftp = Net::FTP.open(FTP) do |ftp|
 	# login and set mode
 	ftp.login()
-	ftp.passive = TRUE
+#	ftp.passive = TRUE
 #	ftp.debug_mode = TRUE
 
 	# chdir to branch
@@ -72,7 +75,7 @@ ftp = Net::FTP.open(FTP) do |ftp|
 			next
 		end
 	end
-	puts "ftp ftp://"+FTP+isofile.path
+	puts "ftp http://"+CDN+isofile.path
 	puts "mv "+isofile.body+".iso "+IMAGES+isofile.body+"-"+isofile.date+".iso"
 
 	ftp.quit
