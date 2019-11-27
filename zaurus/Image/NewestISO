@@ -1,18 +1,13 @@
-#! /usr/pkg/bin/ruby193
+#! /usr/pkg/bin/ruby24
 # $Id: $
 
 require 'net/ftp'
 
-#FTP="ftp.jp.netbsd.org"
-#FTP="ftp7.jp.netbsd.org"
 FTP="nyftp.netbsd.org"
-BRANCH="/pub/NetBSD-daily/HEAD/"
-#BRANCH="/pub/NetBSD-daily/netbsd-6-1/"
+#BRANCH="/pub/NetBSD-daily/HEAD/"
+BRANCH="/pub/NetBSD-daily/netbsd-9/"
 IMAGES="/usr/release/images/"
-#ARCH="earmhf"
 ARCH="zaurus"
-#ARCH="i386"
-
 
 class ISO
 	def initialize(list)
