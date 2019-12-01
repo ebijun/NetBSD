@@ -4,8 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-zaurus.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-9.99.18-zaurus-201911250350Z.iso
-#NetBSD-9.99.18-zaurus-201911300410Z.iso
+IMAGE=/usr/release/images/NetBSD-9.0_RC1-zaurus-201911292110Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015-05-23.tar.gz
 
