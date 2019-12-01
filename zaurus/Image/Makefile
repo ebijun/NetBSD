@@ -4,7 +4,8 @@
 FILE=`date +%Y-%m-%d`-netbsd-zaurus.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-9.0_BETA-zaurus-201911270320Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.18-zaurus-201911250350Z.iso
+#NetBSD-9.99.18-zaurus-201911300410Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015-05-23.tar.gz
 
@@ -25,7 +26,7 @@ VND=vnd0
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
 
-all: file newfs cdmount extract bootarea cdunmount
+all: file newfs cdmount extract bootarea release cdunmount
 
 # make image file. 512*3813376=2GB
 file: 

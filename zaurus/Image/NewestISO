@@ -10,7 +10,9 @@ CDN="nycdn.netbsd.org"
 BRANCH="/pub/NetBSD-daily/netbsd-9/"
 IMAGES="/usr/release/images/"
 
-ARCH="zaurus"
+#ARCH="zaurus"
+ARCH="earm"
+
 
 class ISO
 	def initialize(list)
