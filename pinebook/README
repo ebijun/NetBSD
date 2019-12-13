@@ -1,5 +1,28 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20191116)
+Subject: pinebook status update (20191214)
+
+Update:
+
+- HDMI port works.
+ Connect display to pinebook HDMI port
+ # pkg_add arandr
+ % arandr
+
+- Fixed: NetBSD SA
+ NetBSD Security Advisory 2019-005: Sysctl RNG Key Erasure
+ http://mail-index.netbsd.org/security-announce/2019/11/27/msg000136.html
+
+- Failed: mate-terminal/xfce4-terminal dump core
+ Program terminated with signal SIGSEGV, Segmentation fault.
+ #0  vte_pty_child_setup()
+  from /usr/pkg/lib/libvte-2.91.so.0
+
+- Failed: sdiff dump core on etcupdate 
+- Failed: startxfce4 failed on 2nd start.
+ delete ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml 
+ everytime.
+
+
 
 
 sysinfo:
@@ -61,16 +84,15 @@ works well:
 - USB Wifi: works well,sometimes unseened with heavy load.
  urtwn0: I-O DATA DEVICE, INC. (0x4bb) WN-G150UM (0x94c)
 
-
 ToDo:
-- HDMI output
-- uim:
- pkgsrc/devel/libgcroots needs aarch64 ifdefs
- http://openbsd-archive.7691.n7.nabble.com/fix-inputmethods-uim-on-aarch64-td357966.html
-- libreoffice kde
+- libreoffice
+  g95 need aarch64--netbsd support
+- kde
+- Deleted from pkgsrc: pdfshuffler 
+  need replacement for editing PDF pages
 
 Version: 
- NetBSD 9.99.17 (GENERIC64.201911111850UTC) #19: Fri Nov 15 05:24:41 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.21 (GENERIC64.201912112330UTC) #23: Thu Dec 12 22:15:41 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
