@@ -5,15 +5,12 @@ To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
 Update:
+- Pinebook Pro :testing
+  my status:order: 2020 Jan.1
 
-- HDMI port works.
- Connect display to pinebook HDMI port
- # pkg_add arandr
- % arandr
-
-- Fixed: NetBSD SA
- NetBSD Security Advisory 2019-005: Sysctl RNG Key Erasure
- http://mail-index.netbsd.org/security-announce/2019/11/27/msg000136.html
+- Pinebook
+  9.99.38 can't get LCD panel information.
+  use 9.99.30
 
 - Failed: mate-terminal/xfce4-terminal dump core
  Program terminated with signal SIGSEGV, Segmentation fault.
@@ -24,24 +21,27 @@ Update:
 - Failed: startxfce4 failed 
 
 sysinfo:
- bind-9.14.8 dhcpcd-8.1.2 NetBSD-9.99.21
- sh-20181212-20191211210517Z tcsh-6.22.02
- userland-NetBSD-9.99.21/evbarm
+ bind-9.14.8 dhcpcd-8.1.4 dtc-1.5.1 NetBSD-9.99.30
+ sh-20181212-20191227004638Z tcsh-6.22.02
+ unbound-1.9.6 userland-NetBSD-9.99.30/evbarm
 
 pkgsrc:
- ImageMagick-7.0.9.5 PC6001VX-3.3.1 bash-5.0.11nb1 bison-3.4.2
- clang-9.0.0nb3 cmake-3.16.0 cups-base-2.3.0 curl-7.67.0
- dhcpcd-8.1.2 gedit-3.22.1nb10 ghostscript-agpl-9.50 gimp-2.10.14nb1
- git-base-2.24.1 glib2-2.62.3 gnupg2-2.2.19 gnutls-3.6.11.1
- graphviz-2.40.1nb42 gtk3+-3.24.12 harfbuzz-2.6.4 ibus-1.5.21nb1
- ibus-anthy-1.5.6nb1 ibus-mozc-2.20.2673.102nb17 inkscape-0.92.4nb9
- mate-1.22.0nb3 mlterm-3.8.9 mozilla-rootcerts-1.0.20191207
- mpv-0.30.0 nodejs-13.3.0 nspr-4.24 nss-3.47.1 onscripter-20191116
- openjdk8-1.8.232 osabi-NetBSD-9.99.21 pango-1.44.7
- pcre2-10.34 perl-5.30.1 php-7.1.33 poppler-0.82.0
- py37-sphinx-2.2.2 ruby24-mikutter-3.9.8 rust-1.39.0
- tcsh-6.22.02 uim-1.8.8 vala-0.46.3
- 
+ Canna-lib-3.7pl3nb1 ImageMagick-7.0.9.13 PC6001VX-3.3.1
+ php73 boost-1.72 clang-9.0.1 cmake-3.16.2nb1
+ cups-base-2.3.1 dhcpcd-8.1.5
+ ffmpeg3-3.4.7 ffmpeg4-4.2.2 
+ giflib-5.2.1nb1 gimp-2.10.14nb1 git-base-2.24.1nb1
+ glib-networking-2.62.3 glib2-2.62.4 glib2-tools-2.62.4
+ ibus-mozc-2.20.2673.102nb17 icu-64.2nb2 inkscape-0.92.4nb9
+ mlterm-3.8.9 mpv-0.31.0 nodejs-13.6.0
+ nspr-4.24 nss-3.49.1 onscripter-20191116
+ osabi-NetBSD-9.99.30 perl-5.30.1 php-7.3.13
+ poppler-0.84.0 postgresql95-client-9.5.20
+ py37-sphinx-2.3.1 python37-3.7.6
+ ruby26-base-2.6.5nb1 ruby26-mikutter-3.9.8nb1
+ rust-1.40.0 sudo-1.8.30 tcsh-6.22.02
+ tdb-1.4.3 uim-1.8.8 x11-links-1.31
+
 TEST kernel:
 - deforaos-camera: camera capture,and reboot
  apply: http://mail-index.netbsd.org/port-arm/2019/01/21/msg005392.html
@@ -60,6 +60,11 @@ pkgsrc:
 
 works well: 
  evince gedit mate medit py-sphinx gimp seamonkey inkscape
+
+- HDMI port works.
+ Connect display to pinebook HDMI port
+ # pkg_add arandr
+ % arandr
 - mate: pkgsrc/meta-pkgs/mate
  https://twitter.com/ebijun/status/1086814579647102976
  pkg_add mate
@@ -85,6 +90,7 @@ works well:
 ToDo:
 - libreoffice
   g95 need aarch64--netbsd support
+   -> --disable-coinmp
 - kde
 - Deleted from pkgsrc: pdfshuffler 
   need replacement for editing PDF pages
