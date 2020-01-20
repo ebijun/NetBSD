@@ -22,6 +22,7 @@ Update:
  1. add kernel configration and updated kernel
    bwfm*   at sdmmc?
  2. add firmware
+   https://github.com/ebijun/NetBSD/issues/125
    /libdata/firmware/if_bwfm/
      LICENCE.broadcom_bcm43xx
      brcmfmac43430-sdio.{bin|txt}
@@ -38,16 +39,21 @@ Update:
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/README.RPI4
 
 - Update from Open Source Conference 2019 Tokyo/fall 
-https://github.com/ebijun/NetBSD/commit/bb957e658b08ba8a25844b2f3add2ffd7d95ce0e
+ https://github.com/ebijun/NetBSD/commit/48a9ba734b6bcb4cfd6a3d014613e4b5253a9c39
 
 sysinfo:
- dhcpcd-8.1.2 sh-20181212-20191117025925Z
- 
+ bind-9.14.8 dhcpcd-8.1.5 dtc-1.5.1 g++-8.3.0 gcc-8.3.0
+ NetBSD-9.99.37 sh-20181212-20200115011105Z
+ tcsh-6.22.02 unbound-1.9.6 userland-NetBSD-9.99.37/evbarm
+
 pkgsrc:
- curl-7.67.0 gdk-pixbuf2-2.40.0 git-base-2.24.0 gtk3+-3.24.12
- pango-1.44.7 perl-5.30.0nb2 qt5-qtbase-5.13.2 qt5-qtx11extras-5.13.2
- qt5-qtxmlpatterns-5.13.2 ruby24-mikutter-3.9.7
- tiff-4.1.0 uim-1.8.8
+ curl-7.68.0nb1 fribidi-1.0.8 giflib-5.2.1nb1 git-base-2.24.1nb1
+ glib2-2.62.4 gtk3+-3.24.13nb1 icu-64.2nb2 libidn2-2.3.0
+ libwebp-1.1.0 mlterm-3.8.9 mozilla-rootcerts-1.0.20191207
+ nghttp2-1.40.0nb1 pcre2-10.34 perl-5.30.1 py27-expat-2.7.17
+ py37-cElementTree-3.7.6 py37-expat-3.7.6 python37-3.7.6
+ ruby24-memoist-0.16.2 ruby24-mikutter-3.9.8 ruby24-nokogiri-1.10.7
+ sudo-1.8.30 tcsh-6.22.02 wayland-1.17.0nb4 wayland-protocols-1.18
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
