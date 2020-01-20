@@ -5,7 +5,7 @@ atk-2.33.3          Set of interfaces for accessibility
 bash-5.0.11nb1      The GNU Bourne Again Shell
 cairo-1.16.0        Vector graphics library with cross-device output support
 cairo-gobject-1.16.0nb3 Vector graphics library with cross-device output support
-curl-7.67.0         Client that groks URLs
+curl-7.68.0nb1      Client that groks URLs
 dbus-1.12.16        Message bus system
 desktop-file-utils-0.24 Utilities to manage desktop entries
 digest-20190127     Message digest wrapper utility
@@ -13,19 +13,19 @@ dillo-3.0.5nb5      Very small and fast graphical web-browser
 fltk-1.3.5          Fast Light Tool Kit for graphical user interfaces
 fontconfig-2.13.1   Library for configuring and customizing font access
 fossil-2.10nb1      High-reliability, distributed software configuration management
-fribidi-1.0.7       Free Implementation of the Unicode Bidirectional Algorithm
+fribidi-1.0.8       Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.2.5nb5         Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.40.0  Library for image loading and manipulation
-giflib-5.1.4        GIF image format library
-git-base-2.24.0     GIT Tree History Storage Tool (base package)
-glib2-2.60.7        Some useful routines for C programming (glib2)
+giflib-5.2.1nb1     GIF image format library
+git-base-2.24.1nb1  GIT Tree History Storage Tool (base package)
+glib2-2.62.4        Some useful routines for C programming (glib2)
 gobject-introspection-1.62.0 GObject Introspection
 gtk2+-2.24.32nb11   GIMP Toolkit v2 - libraries for building X11 user interfaces
-gtk3+-3.24.12       GIMP Toolkit v3 - libraries for building X11 user interfaces
+gtk3+-3.24.13nb1    GIMP Toolkit v3 - libraries for building X11 user interfaces
 harfbuzz-2.6.4      OpenType text shaping engine
 hicolor-icon-theme-0.17 Standard icon theme called hicolor
 icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
-icu-64.2nb1         Robust and full-featured Unicode services
+icu-64.2nb2         Robust and full-featured Unicode services
 jbigkit-2.1         JBIG-KIT lossless image compression library
 jpeg-9cnb1          IJG's jpeg compression utilities
 libXft-2.3.3        Library for configuring and customizing font access
@@ -34,14 +34,14 @@ libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.8.5     GNU cryptographic library
 libgpg-error-1.36nb1 Definitions of common error values for all GnuPG components
 libidn-1.34nb1      Internationalized Domain Names command line tool
-libidn2-2.2.0       Convert internationalized domain names to/from ASCII Encoding
+libidn2-2.3.0       Convert internationalized domain names to/from ASCII Encoding
 libimagequant-2.12.5 High-quality conversion of RGBA images to 8-bit indexed-color
 libotf-0.9.16nb2    Library for handling OpenType fonts (OTF)
 libproxy-0.4.15     Library that provides automatic proxy configuration management
 libpsl-0.20.2nb4    Library to handle the Public Suffix List
 libunistring-0.9.10 Unicode string library
 libuuid-2.32.1      Generate unique identifiers for objects
-libwebp-1.0.3       WebP image format library and tools
+libwebp-1.1.0       WebP image format library and tools
 libxkbcommon-0.9.1  Library to handle keyboard descriptions
 libxml2-2.9.10      XML parser library from the GNOME project
 libxslt-1.1.34      XSLT parser library from the GNOME project
@@ -52,9 +52,9 @@ lzo-2.10            Portable lossless data compression library
 m17n-db-1.8.0       The m17n database used by the m17n library
 m17n-lib-1.8.0nb1   Multilingualization library
 medit-1.2.0nb11     Programming and around-programming text editor
-mlterm-3.8.8nb5     Multilingual terminal emulator
-mozilla-rootcerts-1.0.20190306 Root CA certificates from the Mozilla Project
-nghttp2-1.39.2nb1   Implementation of HTTP/2 in C
+mlterm-3.8.9        Multilingual terminal emulator
+mozilla-rootcerts-1.0.20191207 Root CA certificates from the Mozilla Project
+nghttp2-1.40.0nb1   Implementation of HTTP/2 in C
 p5-Authen-SASL-2.16nb7 Perl module to handle SASL authentication
 p5-Digest-HMAC-1.03nb9 Perl5 module for HMAC
 p5-Email-Valid-1.202nb3 Perl5 module for testing validity of an email address
@@ -75,15 +75,15 @@ p5-Socket6-0.29nb1  Perl5 module to support getaddrinfo() and getnameinfo()
 p5-TimeDate-2.30nb6 Perl5 TimeDate distribution
 pango-1.44.7        Library for layout and rendering of text
 pcre-8.43           Perl Compatible Regular Expressions library
-pcre2-10.33         Perl Compatible Regular Expressions library (major version 2)
-perl-5.30.0nb2      Practical Extraction and Report Language
+pcre2-10.34         Perl Compatible Regular Expressions library (major version 2)
+perl-5.30.1         Practical Extraction and Report Language
 pkg_chk-2.0.11      Check installed package versions against pkgsrc
 png-1.6.37          Library for manipulating PNG images
-py27-expat-2.7.16   Python interface to expat
-py37-cElementTree-3.7.5 C implementation of Python ElementTree API
-py37-expat-3.7.5    Python interface to expat
+py27-expat-2.7.17   Python interface to expat
+py37-cElementTree-3.7.6 C implementation of Python ElementTree API
+py37-expat-3.7.6    Python interface to expat
 python27-2.7.17     Interpreted, interactive, object-oriented programming language
-python37-3.7.5      Interpreted, interactive, object-oriented programming language
+python37-3.7.6      Interpreted, interactive, object-oriented programming language
 qt5-qtbase-5.13.2   C++ X GUI toolkit
 qt5-qtx11extras-5.13.2 Qt5 module for X11 extras
 qt5-qtxmlpatterns-5.13.2 Qt5 module for XML Patterns
@@ -105,12 +105,12 @@ ruby24-gtk2-3.4.1   Ruby binding of GTK+-2.x
 ruby24-httpclient-2.8.3 HTTP accessing library for Ruby
 ruby24-instance_storage-1.0.0 Manage class instances with dictionary
 ruby24-locale-2.1.2 Pure ruby library which provides basic APIs for localization
-ruby24-memoist-0.16.0 Replacement of memoizable, memoize methods invocation
-ruby24-mikutter-3.9.7 Simple, powerful, and moeful twitter client
+ruby24-memoist-0.16.2 Replacement of memoizable, memoize methods invocation
+ruby24-mikutter-3.9.8 Simple, powerful, and moeful twitter client
 ruby24-mini_portile2-2.4.0 Simple autoconf builder for developers
 ruby24-moneta-1.2.0 Unified interface to key/value stores
 ruby24-native-package-installer-1.0.6 Helper to install native packages on "gem install"
-ruby24-nokogiri-1.10.4 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby24-nokogiri-1.10.7 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby24-oauth-0.5.4  OAuth Core Ruby implementation
 ruby24-pango-3.4.1  Ruby binding of pango-1.x
 ruby24-pkg-config-1.3.7 Pure Ruby implementation of pkg-config
@@ -123,12 +123,14 @@ ruby24-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 ruby24-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
 ruby24-unf_ext-0.0.7.5 Unicode Normalization Form support library for CRuby
 shared-mime-info-1.10 Core database of common types
-sudo-1.8.28nb2      Allow others to run commands as root
-tcsh-6.21.00nb1     Extended C-shell with many useful features
+sudo-1.8.30         Allow others to run commands as root
+tcsh-6.22.02        Extended C-shell with many useful features
 tiff-4.1.0          Library and tools for reading and writing TIFF data files
 ttmkfdir2-20021109nb6 Tool that creates a fonts.scale file
 uim-1.8.8           Multilingual input method library
 vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
+wayland-1.17.0nb4   Display server protocol - development libraries
+wayland-protocols-1.18 Additional wayland functionality
 wget-1.20.3nb3      Retrieve files from the 'net via HTTP and FTP
 xcb-util-0.4.0      XCB Utilities
 xcb-util-image-0.4.0 XCB port of Xlib's XImage and XShmImage

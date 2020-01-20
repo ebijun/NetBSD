@@ -1,21 +1,23 @@
-VERSION: :1,$s/2019-11-24/2019-11-24/g
-ISO:     :1,$s/201911170330Z/201911170330Z/g
-NetBSD:  :1,$s/9.99.17/9.99.17/g
-PKGSRC:  :1,$s/2019-11-24/2019-11-24/
+VERSION: :1,$s/2020-01-25/2020-01-25/g
+ISO:     :1,$s/202001150240Z/202001150240Z/g
+NetBSD:  :1,$s/9.99.37/9.99.37/g
+PKGSRC:  :1,$s/2020-01-25/2020-01-25/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2019-11-24-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2020-01-25-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2019-11-24-netbsd9-raspi-earmv6hf.img.gz for RPI.
+I've updated 2020-01-25-netbsd9-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-11-24-earmv6hf/2019-11-24-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-11-24-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-01-25-earmv6hf/2020-01-25-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-01-25-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.17 evbarm-earmv6hf 201911170330Z rpi.img from nyftp.
+- NetBSD 9.99.37 evbarm-earmv6hf 202001150240Z rpi.img from nyftp.
+- RPI3A+: not boot.
+- no_swap=YES in /etc/rc.conf
 - NOW Testing: bwfm0 Broadcom and Cypress wireless network driver
  1. add kernel configration and updated kernel
    bwfm*   at sdmmc?
@@ -26,13 +28,16 @@ Update:
      brcmfmac43455-sdio.{bin|txt}
 
 - RPI4: testing
+ http://mail-index.netbsd.org/port-arm/2020/01/06/msg006416.html
+ http://mail-index.netbsd.org/port-arm/2020/01/07/msg006417.html
+ http://mail-index.netbsd.org/port-arm/2020/01/08/msg006419.html
  Image:
   http://mail-index.netbsd.org/port-arm/2019/10/03/msg006208.html
   http://mail-index.netbsd.org/port-arm/2019/09/24/msg006162.html
   http://mail-index.netbsd.org/port-arm/2019/09/26/msg006171.html
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/README.RPI4
 
-- Update from OSC2019fukuoka (2019 Nov.9)
+- Update from Open Source Conference 2019 Tokyo/fall 
 https://github.com/ebijun/NetBSD/commit/bb957e658b08ba8a25844b2f3add2ffd7d95ce0e
 
 sysinfo:
@@ -75,7 +80,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-11-24-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-01-25-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -131,7 +136,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-11-24/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-01-25/
 
 - If you use Official Package for NetBSD8.1:
 
@@ -139,7 +144,7 @@ set /etc/pkg_install.conf:
 PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/8.1/
 
 - I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-11-24-earmv6hf/libfreetype.so.17.4.11
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-01-25-earmv6hf/libfreetype.so.17.4.11
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -313,21 +318,21 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2019 Tokyo/fall NetBSD booth.
+For Open Source Conference 2020 Osaka NetBSD booth.
 I've updated raspberry-pi image.
 
- Nov.23-24 2019 Sat-Sun:
- https://www.ospn.jp/osc2019-fall/
+ Jan.24-25 2020 Fri-Sat:
+ https://www.ospn.jp/osc2020-osaka/
 
- BSD BOF Nov.24. 11:00-11:45 JST
- https://www.ospn.jp/osc2019-fall/modules/eguide/event.php?eid=6
+ BSD BOF Jan.25. 11:00-11:45 JST
+ https://www.ospn.jp/osc2020-osaka/modules/eventrsv/?id=2&noform=1
 
-http://www.re.soum.co.jp/~jun/OSC2019tokyofall.pdf
+http://www.re.soum.co.jp/~jun/OSC2020osaka.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2019.rst
 
-- NetBSD 9.99.17 earmv6hf rpi.img.gz base
+- NetBSD 9.99.37 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -365,7 +370,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2019-11-24/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-01-25/
 
 Installed Packages:
   bash
