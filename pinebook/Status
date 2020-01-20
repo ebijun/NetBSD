@@ -23,6 +23,14 @@ Update:
 - Failed: sdiff dump core on etcupdate 
 - Failed: startxfce4 failed 
 
+- ruby26-base
+
+CONFIGURE_ARGS+=        --enable-dtrace=NO
+
+- Pinebook Pro
+ NetBSD -current on @thepine64 Pinebook Pro running MATE desktop
+ https://twitter.com/jmcwhatever/status/1215412606351134720
+
 sysinfo:
  bind-9.14.8 dhcpcd-8.1.2 NetBSD-9.99.21
  sh-20181212-20191211210517Z tcsh-6.22.02
