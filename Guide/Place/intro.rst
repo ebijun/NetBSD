@@ -348,6 +348,12 @@ pkg_rolling-replaceを使う方法:依存関係に従って更新する
 ~~~~~~~~~~~~~~~~~~~~~~~~
  http://www.NetBSD.org → Support →Report a bug / Query bug database.
 
+The Attic Museum
+~~~~~~~~~~~~~~~~~~~~~~~~~
+ https://wiki.netbsd.org/attic_museum
+
+メンテナンスするのがつらくなってきた機能を削除します。yurexとか。
+
 NetBSDとブース展示
 -------------------------
  日本NetBSDユーザーグループは、日本各地のオープンソースイベントに参加し、ブース出展とセミナー枠を利用して、NetBSD関連の情報をまとめています。オープンソースカンファレンスへの積極的な参加が認められ、2014年2月に「第1回OSCアワード」を受賞しています。
