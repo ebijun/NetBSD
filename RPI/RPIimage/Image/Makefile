@@ -9,12 +9,11 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-11-24/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-01-25/
 
 # iso file information
 
-# dhcpcd can't get IPv4 address
-IMAGE=/usr/release/images/NetBSD-9.99.17-evbarm-${ARCH}-201911170330Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.37-evbarm-${ARCH}-202001150240Z.iso
 
 KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
 
@@ -145,7 +144,7 @@ release:
 	mount /dev/${VND}e ${MNT}/boot
 	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
 #	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
-	(cd ../boot;cp * ${MNT}/boot)
+#	(cd ../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
 	umount ${MNT}/boot
 	umount ${MNT}

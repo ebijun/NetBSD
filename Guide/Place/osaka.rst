@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,7 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
- 関西オープンソース2019 NetBSDブース展示の記録,https://togetter.com/li/
+ 関西オープンソース2019 NetBSDブース展示の記録,https://togetter.com/li/1427775
  オープンソースカンファレンス2019大阪展示の記録,https://togetter.com/li/1312855
  関西オープンソース2018 NetBSDブース展示の記録,https://togetter.com/li/1286691
  オープンソースカンファレンス2018大阪展示の記録,https://togetter.com/li/1193730
@@ -55,37 +55,36 @@ Maps:
 .. csv-table::
  :widths: 25 15 60
 
- marca,西長堀,クラフトビール
+ marca,西長堀/大正,クラフトビール。TUGBOAT TAISHOにBeer stand。　
  旧ヤム邸,谷六,カレー。二階にねこがいる。
+ テタールヴァレ,谷四,ビアバー 2020蜜柑ビール。
+ ホビーランド,本町,ミニタリープラモデル専門店。エッチングパーツが熱い。
  東京真空管商会,日本橋,関西真空管の聖地。
  デジット,日本橋,秋葉で小売してないパーツもある。
- スタンドうみねこ,心斎橋,うみねこと公会堂も近くにある。
+ スタンドうみねこ,心斎橋,うみねこはなれも近くにある。
  CRAFT BEER BASE,大淀南,4タップ酒屋併設
- モリムラ＠ミュージアム,北加賀屋,2019/10/4-2019/12/22 金土日12:00-18:00
- テタールヴァレ,谷四,ビアバー
+ モリムラ＠ミュージアム,北加賀屋,Mの肖像 金土日12:00-18:00
  順記,梅田,終わった後の打ち上げはたいていここ。餃子と餃子と餃子。
  一芳亭 本店,南海なんば,しゅうまいとしゅうまい
  榮華亭梅田東通り店,東梅田,進捗を出そうと男の約束を交わす店
  ドリーム,西宮北口,15000回ループしてからKOF会場にゴー！朝8:00から。
- ホビーランド,本町,ミニタリープラモデル専門店。エッチングパーツが熱い。
  ドルフィンズ,堺筋,大阪さん業界館開催時に打ち上げをやってた
- Beer Belly,土佐堀,箕面ビール直営店。天満と江戸堀もある
- 地底旅行,弁天町,大阪地底1200mから湧く地底ビール
+ Beer Belly,土佐堀,箕面ビール直営店。天満もある
+ 地底旅行,弁天町,大阪地底1200mから湧く地底ビールと温泉
  電気蕎麦,天満橋,ピーという発信音の後に日本蕎麦。看板に注目
  グリルオリエント,尼崎,1934年創業の洋食店
- ポートギャラリー,京町堀,写真と現代美術のギャラリー
- ファンダンゴ,堺,関西ロックパンク修行場　堺に移転。
+ アートコートギャラリー,天満宮,西野康造「空を歩く」
+ ファンダンゴ,堺,関西ロックパンク修行場　堺に移転。NEATBEATvsザ50回転ズ
  タイムボム,アメ村,中古レコード。タイムボムレコーズというのがありましてな。
- ALZAR,なんば,ニュージャパンビル8F
- テクニカルサンヨー,日本橋,DCアンプ部品をおばちゃんから買いに行きたい。
+ テクニカルサンヨー,日本橋,店舗営業終了して通販に移行。
  豊中オーディオ,日本橋,東京真空管商会と合わせて寄りたい。
  マルツ,日本橋,マルツのある街は安心できる。
  イオシス,日本橋,イオシスがある街は以下同文。
- Compufunk,四ツ橋,テクノのレコードよく買った。
+ Compufunk,北浜,テクノのレコードよく買った。
  花森書店,元町,古本。洋食ゲンジ入る
  む蔵,元町,トンカツとえびカツの二刀流
- たちばな,道頓堀松竹B2,道頓堀麦酒
- environment 0g,桜川,イベントスペース。阿木譲さんその後 マジカルパワーマコ
+ 道頓堀クラフトビア醸造所,なんばCITY,道頓堀地ビール
+ environment 0g,桜川,イベントスペース。阿木譲さんその後 ZODIAK Japan Tour
  深化,谷町六丁目,到達不可能な潜水艦バー
  ハーフェン,江坂,図書館近くのビアバー
  dfloor,梅田,Hardfloorも来たテクノバー(商標)。 
@@ -103,6 +102,9 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ Fixing NetBSD/zaurus 8.1,KOF2019,https://speakerdeck.com/tsutsui/kof2019-netbsd
+ dosbox tutorial,OSC2019大阪,@kapper1224 http://kapper1224.sblo.jp/
+ daemon.kbug.gr.jp,OSC2019大阪,taka@
  NetBSD8.0 and keep posting dmesg,KOF2018,https://speakerdeck.com/tsutsui/kof2018-netbsd
  NetBSD/atari "Millan" board support,OSC2018大阪,https://speakerdeck.com/tsutsui/osc2018osaka
  NetBSD 'Teokure" LiveImage Updates and NetBSD 8.0,KOF2017,https://speakerdeck.com/tsutsui/kof2017
@@ -123,10 +125,11 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2019/11/8-9,南港ATC,mplayer on ZAURUS/PC6001VX/X68030 with Neptune-X
  2019/1/26,大阪産業創造館,X68030+nanotodon
- 2018/11/9-10,南港,LUNA68K&YM2194
+ 2018/11/9-10,南港ATC,LUNA68K&YM2194
  2018/1/17,大阪産業創造館,Milan
- 2017/11/10-11,南港,LUNA68K&YM2194
+ 2017/11/10-11,南港ATC,LUNA68K&YM2194
  2017/1/27-28,大阪産業創造館,PC6001+PC6001VX
  2016/11/11-12,南港ATC,DreamCast with CF and SD RPI3+XM6i+NetBSD/x68k
  2015/11/6-7,南港ATC,Sun Ultra-5 RPI2+Xfce4
@@ -144,18 +147,34 @@ Maps:
 
 2019
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2019/11/08/DSC_7979.JPG
+.. image::  ../Picture/2019/11/08/DSC_7980.JPG
+.. image::  ../Picture/2019/11/08/DSC_7984.JPG
+.. image::  ../Picture/2019/11/08/DSC_7985.JPG
+.. image::  ../Picture/2019/11/08/DSC_7986.JPG
+.. image::  ../Picture/2019/11/08/DSC_7987.JPG
+.. image::  ../Picture/2019/11/08/DSC_7988.JPG
+.. image::  ../Picture/2019/11/08/DSC_7989.JPG
+.. image::  ../Picture/2019/11/08/DSC_7990.JPG
+.. image::  ../Picture/2019/11/08/DSC_7991.JPG
+.. image::  ../Picture/2019/11/08/DSC_7992.JPG
+.. image::  ../Picture/2019/11/08/DSC_7993.JPG
+.. image::  ../Picture/2019/11/08/DSC_7994.JPG
+.. image::  ../Picture/2019/11/08/DSC_7995.JPG
+.. image::  ../Picture/2019/11/08/DSC_7996.JPG
+.. image::  ../Picture/2019/11/08/DSC_7997.JPG
+.. image::  ../Picture/2019/11/08/DSC_7998.JPG
+.. image::  ../Picture/2019/11/08/DSC_8000.JPG
+.. image::  ../Picture/2019/11/08/DSC_8001.JPG
+.. image::  ../Picture/2019/11/08/DSC_8003.JPG
 .. image::  ../Picture/2019/01/26/DSC_6569.JPG
 .. image::  ../Picture/2019/01/26/DSC_6572.JPG
 .. image::  ../Picture/2019/01/26/DSC_6575.JPG
 .. image::  ../Picture/2019/01/26/DSC_6578.JPG
 .. image::  ../Picture/2019/01/26/DSC_6579.JPG
-.. image::  ../Picture/2019/01/26/DSC_6580.JPG
 .. image::  ../Picture/2019/01/26/DSC_6581.JPG
-.. image::  ../Picture/2019/01/26/DSC_6582.JPG
-.. image::  ../Picture/2019/01/26/DSC_6590.JPG
 .. image::  ../Picture/2019/01/26/DSC_6592.JPG
-.. image::  ../Picture/2019/01/26/DSC_6593.JPG
-.. image::  ../Picture/2019/01/26/DSC_6594.JPG
 
 2018
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

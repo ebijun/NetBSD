@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2019 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
- RPI/RPIupdate2019
+ Place/osaka
+ RPI/RPIupdate2020
  RPI
  Place/intro

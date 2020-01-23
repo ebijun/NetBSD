@@ -1,10 +1,10 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-2018, 2019 The NetBSD Foundation, Inc.  All rights reserved.
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+    2018, 2019, 2020 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
-The Regents of the University of California.  All rights reserved.
+    The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.17 (RPI.201911170330UTC) #11: Mon Nov 18 09:00:31 JST 2019
+NetBSD 9.99.37 (RPI.202001150240UTC) #17: Mon Jan 20 08:15:13 JST 2020
 	jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 180 MB
@@ -38,13 +38,15 @@ bcmgpio0: pins 32..54 interrupting on icu irq 50
 gpio0 at bcmgpio0: 54 pins
 bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10
 /soc/power at simplebus1 not configured
-bsciic0 at simplebus1: Broadcom Serial Controller
-iic0 at bsciic0: I2C bus
 /phy at simplebus0 not configured
+bsciic0 at simplebus1: Broadcom Serial Controller
+bsciic0: interrupting on icu irq 53
+iic0 at bsciic0: I2C bus
 bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmmbox0 at simplebus1: VC mailbox
 bcmmbox0: interrupting on icu irq 65
 vcmbox0 at bcmmbox0
+/soc/txp@7e004000 at simplebus1 not configured
 plcom0 at simplebus1: ARM PL011 UART
 plcom0: txfifo disabled
 plcom0: console
@@ -52,14 +54,16 @@ plcom0: interrupting on icu irq 57
 bcmsdhost0 at simplebus1: SD HOST controller
 bcmsdhost0: interrupting on icu irq 56
 bsciic1 at simplebus1: Broadcom Serial Controller
+bsciic1: interrupting on icu irq 53
 iic1 at bsciic1: I2C bus
 /soc/pwm@7e20c000 at simplebus1 not configured
 bsciic2 at simplebus1: Broadcom Serial Controller
+bsciic2: interrupting on icu irq 53
 iic2 at bsciic2: I2C bus
 /soc/vec@7e806000 at simplebus1 not configured
-/soc/hdmi@7e902000 at simplebus1 not configured
 dwctwo0 at simplebus1: USB controller
 dwctwo0: interrupting on icu irq 9
+/soc/hdmi@7e902000 at simplebus1 not configured
 /soc/gpu at simplebus1 not configured
 genfb0 at simplebus1: switching to framebuffer console
 genfb0: framebuffer at 0x4dc5a000, size 1920x1280, depth 32, stride 10240
@@ -69,7 +73,6 @@ wsdisplay0: screen 1-3 added (default, vt100 emulation)
 vchiq0 at simplebus1: BCM2835 VCHIQ
 /arm-pmu at simplebus0 not configured
 gpioleds0 at simplebus0: ACT
-/soc/txp@7e004000 at simplebus1 not configured
 bcmrng0 at simplebus1: RNG
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 timecounter: Timecounter "bcmtmr0" frequency 1000000 Hz quality 100
@@ -78,8 +81,8 @@ dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
 usb0 at dwctwo0: USB revision 2.0
 uhub0 at usb0: NetBSD (0000) DWC2 root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-sdmmc0: direct I/O error 5, r=6 p=0x8bd67f24 write
 IPsec: Initialized Security Association Processing.
+sdmmc0: direct I/O error 5, r=6 p=0x8bd79f24 write
 sdmmc0: SD card status: 4-bit, C10, U1
 ld0 at sdmmc0: <0x02:0x544d:SA16G:0x31:0x2850f02f:0x127>
 ld0: 14832 MB, 7533 cyl, 64 head, 63 sec, 512 bytes/sect x 30375936 sectors
@@ -98,7 +101,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.17/modules
+kern.module.path=/stand/evbarm/9.99.37/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xc5e50000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
