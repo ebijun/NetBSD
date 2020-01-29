@@ -1,13 +1,13 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-2018, 2019 The NetBSD Foundation, Inc.  All rights reserved.
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+    2018, 2019, 2020 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
-The Regents of the University of California.  All rights reserved.
+    The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.18 (GENERIC) #0: Thu Nov 21 09:48:57 UTC 2019
+NetBSD 9.99.42 (GENERIC) #0: Tue Jan 28 13:08:40 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 3982 MB
-avail memory = 3841 MB
+avail memory = 3839 MB
 pool redzone disabled for 'buf4k'
 pool redzone disabled for 'buf64k'
 cpu_rng: RDRAND
@@ -21,7 +21,7 @@ mainbus0 (root)
 ACPI: RSDP 0x00000000000F04A0 000024 (v02 _ASUS_)
 ACPI: XSDT 0x00000000B9355080 00007C (v01 _ASUS_ Notebook 01072009 AMI  00010013)
 ACPI: FACP 0x00000000B93646D8 00010C (v05 _ASUS_ Notebook 01072009 AMI  00010013)
-Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 128/32 (20190816/tbfadt-642)
+Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 128/32 (20191213/tbfadt-642)
 ACPI: DSDT 0x00000000B9355190 00F543 (v02 _ASUS_ Notebook 01072009 INTL 20120913)
 ACPI: FACS 0x00000000B93B9F80 000040
 ACPI: APIC 0x00000000B93647E8 000068 (v03 _ASUS_ Notebook 01072009 AMI  00010013)
@@ -38,11 +38,11 @@ ACPI: 4 ACPI AML tables successfully acquired and loaded
 ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 87 pins
 cpu0 at mainbus0 apid 0
 cpu0: Intel(R) Celeron(R) CPU  N2830  @ 2.16GHz, id 0x30678
-cpu0: package 0, core 0, smt 0
+cpu0: node 0, package 0, core 0, smt 0
 cpu1 at mainbus0 apid 2
 cpu1: Intel(R) Celeron(R) CPU  N2830  @ 2.16GHz, id 0x30678
-cpu1: package 0, core 1, smt 0
-acpi0 at mainbus0: Intel ACPICA 20190816
+cpu1: node 0, package 0, core 1, smt 0
+acpi0 at mainbus0: Intel ACPICA 20191213
 acpi0: X/RSDT: OemId <_ASUS_,Notebook,01072009>, AslId <AMI ,00010013>
 acpi0: autoconfiguration error: failed to look up EC object \_SB.PCI0.LPCB.EC0: AE_NOT_FOUND
 acpi0: autoconfiguration error: invalid PCI address for D011
@@ -50,13 +50,13 @@ acpi0: autoconfiguration error: invalid PCI address for D012
 acpi0: autoconfiguration error: invalid PCI address for D014
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFAC2EC8758410 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+ACPI: SSDT 0xFFFF89027354B450 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFAC2EC877A450 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
+ACPI: SSDT 0xFFFF89027353C490 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFAC2F002B4210 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFF8902AB280210 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFAC2EC878B6D8 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFF8902735A5410 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -114,14 +114,14 @@ pckbc2: using irq 12 for aux slot
 wsmouse0 at pms0 mux 0
 pci0 at mainbus0 bus 0: configuration mode 1
 pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
-pchb0 at pci0 dev 0 function 0: vendor 8086 product 0f00 (rev. 0x0e)
-i915drmkms0 at pci0 dev 2 function 0: vendor 8086 product 0f31 (rev. 0x0e)
-ahcisata0 at pci0 dev 19 function 0: vendor 8086 product 0f23 (rev. 0x0e)
+pchb0 at pci0 dev 0 function 0: Intel Bay Trail Processor Transaction Router (rev. 0x0e)
+i915drmkms0 at pci0 dev 2 function 0: Intel Bay Trail Integrated Graphics Device (rev. 0x0e)
+ahcisata0 at pci0 dev 19 function 0: Intel Bay Trail SATA (AHCI) (rev. 0x0e)
 ahcisata0: 64-bit DMA
 ahcisata0: AHCI revision 1.30, 2 ports, 32 slots, CAP 0xc720ff01<PSC,SSC,PMD,ISS=0x2=Gen2,SCLO,SAL,SALP,SNCQ,S64A>
 ahcisata0: interrupting at msi0 vec 0
 atabus0 at ahcisata0 channel 0
-vendor 8086 product 0f18 (miscellaneous crypto, revision 0x0e) at pci0 dev 26 function 0 not configured
+Intel Bay Trail Trusted Execution Engine (miscellaneous crypto, revision 0x0e) at pci0 dev 26 function 0 not configured
 hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
 hdaudio0: interrupting at msi1 vec 0
 hdafg0 at hdaudio0: vendor 10ec product 0233
@@ -130,47 +130,46 @@ hdafg0: DAC01 2ch: HP Out [Jack]
 hdafg0: ADC02 2ch: Mic In [Built-In]
 hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
 audio0 at hdafg0: playback, capture, full duplex, independent
-audio0: slinear_le:16 2ch 48000Hz, blk 40ms for playback
-audio0: slinear_le:16 2ch 48000Hz, blk 40ms for recording
+audio0: slinear_le:16 2ch 48000Hz, blk 4ms for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 4ms for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 hdafg1 at hdaudio0: vendor 8086 product 2882
 hdafg1: DP00 8ch: Digital Out [Jack]
 hdafg1: 8ch/0ch 48000Hz PCM16*
-ppb0 at pci0 dev 28 function 0: vendor 8086 product 0f48 (rev. 0x0e)
+ppb0 at pci0 dev 28 function 0: Intel Bay Trail PCIe Root Port (rev. 0x0e)
 ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 pci1 at ppb0 bus 1
 pci1: i/o space, memory space enabled, rd/line, wr/inv ok
-ppb1 at pci0 dev 28 function 1: vendor 8086 product 0f4a (rev. 0x0e)
+ppb1 at pci0 dev 28 function 1: Intel Bay Trail PCIe Root Port (rev. 0x0e)
 ppb1: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 ppb1: link is x1 @ 2.5GT/s
 pci2 at ppb1 bus 2
 pci2: i/o space, memory space enabled, rd/line, wr/inv ok
-iwn0 at pci2 dev 0 function 0: vendor 8086 product 4232 (rev. 0x00)
+iwn0 at pci2 dev 0 function 0: Intel WiFi Link 5100 (rev. 0x00)
 iwn0: interrupting at msi2 vec 0
 iwn0: MIMO 1T2R, MoW, address 00:24:d6:a3:5b:3e
-ppb2 at pci0 dev 28 function 3: vendor 8086 product 0f4e (rev. 0x0e)
+ppb2 at pci0 dev 28 function 3: Intel Bay Trail PCIe Root Port (rev. 0x0e)
 ppb2: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 ppb2: link is x1 @ 2.5GT/s
 pci3 at ppb2 bus 3
 pci3: i/o space, memory space enabled, rd/line, wr/inv ok
-rtsx0 at pci3 dev 0 function 0: vendor 10ec product 5286 (rev. 0x01)
+rtsx0 at pci3 dev 0 function 0: Realtek Semiconductor RTL8402 PCI-E Card Reader (rev. 0x01)
 rtsx0: interrupting at msix3 vec 0
 sdmmc0 at rtsx0
 re0 at pci3 dev 0 function 2: RealTek 8100E/8101E/8102E/8102EL PCIe 10/100BaseTX (rev. 0x06)
 re0: interrupting at msix4 vec 0
-re0: Unknown revision (0x44000000)
 re0: Ethernet address 10:c3:7b:b4:e6:f1
 re0: using 256 tx descriptors
 rlphy0 at re0 phy 7: RTL8201E 10/100 media interface, rev. 2
 rlphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-ehci0 at pci0 dev 29 function 0: vendor 8086 product 0f34 (rev. 0x0e)
+ehci0 at pci0 dev 29 function 0: Intel Bay Trail USB EHCI (rev. 0x0e)
 ehci0: interrupting at ioapic0 pin 23
 ehci0: BIOS has given up ownership
 ehci0: EHCI version 1.0
 usb0 at ehci0: USB revision 2.0
-pcib0 at pci0 dev 31 function 0: vendor 8086 product 0f1c (rev. 0x0e)
-ichsmb0 at pci0 dev 31 function 3: vendor 8086 product 0f12 (rev. 0x0e)
+pcib0 at pci0 dev 31 function 0: Intel Bay Trail LPC Interface Bridge (rev. 0x0e)
+ichsmb0 at pci0 dev 31 function 3: Intel Bay Trail PCU SMBus (rev. 0x0e)
 ichsmb0: interrupting at ioapic0 pin 18
 iic0 at ichsmb0: I2C bus
 isa0 at pcib0
@@ -210,13 +209,11 @@ acpicpu1 at cpu1: ACPI CPU
 coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=105
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu1: autoconfiguration error: lapic_set_lvt: WARNING: bad pin value 61
-timecounter: Timecounter "TSC" frequency 2166914880 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2166914620 Hz quality 3000
 acpiacad0: AC adapter online.
-IPsec: Initialized Security Association Processing.
 uhub0 at usb0: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 8 ports with 8 removable, self powered
-acpibat0: ASUSTeK LIon rechargeable battery
-acpibat0: granularity: low->warn 0.244 Wh, warn->full 0.244 Wh
+IPsec: Initialized Security Association Processing.
 ahcisata0 port 0: device present, speed: 3.0Gb/s
 wd0 at atabus0 drive 0
 wd0: <ST2000LM015-2E8174>
@@ -237,13 +234,13 @@ WARNING: 14 errors while detecting hardware; check system log.
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.18/modules
+kern.module.path=/stand/amd64/9.99.42/modules
 kern info: [drm] Memory usable by graphics device = 2048M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
 intelfb0 at i915drmkms0
-intelfb0: framebuffer at 0xffffd68067198000, size 1366x768, depth 32, stride 5504
+intelfb0: framebuffer at 0xffffca0076970000, size 1366x768, depth 32, stride 5504
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
