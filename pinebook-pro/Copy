@@ -1,0 +1,7 @@
+#df
+#disklabel sd0
+#echo progress -z -f arm64.img.gz dd of=/dev/rsd0c bs=4m
+echo dd if=/usr/pkg/share/u-boot/pinebook-pro/rksd_loader.img seek=64 of=/dev/rsd0c
+
+#dd if=${LOCALBASE}/share/u-boot/rockpro64/rkspi_loader.img bs=64k of=/dev/spiflash0
+

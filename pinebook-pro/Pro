@@ -1,0 +1,10 @@
+make cdmount
+cp /mnt2/evbarm/binary/gzimg/arm64.img.gz .
+make cdumount
+#progress -z -f arm64.img.gz dd of=/dev/rsd0c bs=4m
+
+#ls /usr/pkg/share/u-boot/pinebook-pro/rksd_loader.img 
+#dd if=/usr/pkg/share/u-boot/pinebook-pro/rksd_loader.img seek=64 of=/dev/rsd0c
+
+#dd if=${LOCALBASE}/share/u-boot/rockpro64/rkspi_loader.img bs=64k of=/dev/spiflash0
+
