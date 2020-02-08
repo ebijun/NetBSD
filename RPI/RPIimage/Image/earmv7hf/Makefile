@@ -11,11 +11,12 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-11-09/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-02-21/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-9.99.17-evbarm-${ARCH}-201911010850Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.45-evbarm-${ARCH}-202002051910Z.iso
+
 
 KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
 
@@ -53,7 +54,8 @@ VND_CDROM=vnd1
 MNT_TMP=/mnt2
 VND_TMP=vnd2
 
-all: file cdmount rpi extract cdunmount kernel-update bwfm-firmware
+#all: file cdmount rpi extract cdunmount kernel-update bwfm-firmware
+all: file cdmount rpi extract cdunmount bwfm-firmware
 
 #update: cdmount update-extract cdunmount
 

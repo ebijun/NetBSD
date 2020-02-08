@@ -1,7 +1,6 @@
 #df
 #disklabel sd0
-#echo progress -z -f arm64.img.gz dd of=/dev/rsd0c bs=4m
-echo dd if=/usr/pkg/share/u-boot/pinebook-pro/rksd_loader.img seek=64 of=/dev/rsd0c
+FILE=/usr/release/images/NetBSD-evbarm-aarch64-202002061010Z-pinebook-pro.img.gz
+COMPRESS=-z
 
-#dd if=${LOCALBASE}/share/u-boot/rockpro64/rkspi_loader.img bs=64k of=/dev/spiflash0
-
+echo progress ${COMPRESS} -f ${FILE} dd of=/dev/rsd2d bs=4m

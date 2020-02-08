@@ -1,13 +1,23 @@
 RELEASE=/usr/release/images
 ISO=${RELEASE}/NetBSD-9.99.44-evbarm-aarch64-202001291610Z.iso
-
+IMAGE=arm64.img
+VND0=/dev/sd2
+SD0=/dev/sd2
+MNT=/mnt
 
 ##
 
 DATE=`date +%Y%m%d%H%M`
 LIST=`ls -P /mnt/evbarm/binary/sets |fgrep -vf Pattern`
 
+dtbcopy:
+	mount_msdos ${SD0}e ${MNT}
+	cp ${MNT}/dtb/rockchip/rk3399-pinebook-pro.dtb ${MNT}
+	ls ${MNT}
+	umount ${MNT}
 
+unzip:
+	gunzip ${IMAGE}.gz
 
 all:
 	./Update
@@ -52,3 +62,6 @@ cdumount:
 
 fetch:
 	./NewestISO |sh
+
+pine:
+	scp pinebook:/usr/pkg/share/u-boot/pinebook-pro/rksd_loader.img .
