@@ -65,3 +65,9 @@ fetch:
 
 pine:
 	scp pinebook:/usr/pkg/share/u-boot/pinebook-pro/rksd_loader.img .
+
+brcm-firmware:
+#@ebijun For Wi-Fi, copy the files from this URL https://t.co/7Yw7FbDOa5 into /libdata/firmware/if_bwfm/ then reboot -&gt; bwfm0 will appear in ifconfig :)
+#https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
+	echo https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
+
