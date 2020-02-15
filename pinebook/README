@@ -1,45 +1,47 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20200118)
+Subject: pinebook status update (20200215)
 
 Update:
-- Pinebook Pro :testing
-  my status:order: 2020 Jan.1
+- Pinebook Pro 
+ NetBSD/aarch64 9.99.46 
+ mate desktop/camera/WiFi
+ ToDo:  
+ - HDMI output via USB-C 
+ - Wi-Fi seems unstable 
+ - sometimes stopped,with make -j 6 load.
 
 - Pinebook
-  9.99.38 can't get LCD panel information.
-  use 9.99.30
-
-- Failed: mate-terminal/xfce4-terminal dump core
- Program terminated with signal SIGSEGV, Segmentation fault.
- #0  vte_pty_child_setup()
-  from /usr/pkg/lib/libvte-2.91.so.0
-
-- Failed: sdiff dump core on etcupdate 
-- Failed: startxfce4 failed 
+  NetBSD/aarch64 9.99.30
+  9.99.46 not work startx,mpv -vo,
+  backout 9.99.30
 
 sysinfo:
- bind-9.14.8 dhcpcd-8.1.4 dtc-1.5.1 NetBSD-9.99.30
- sh-20181212-20191227004638Z tcsh-6.22.02
- unbound-1.9.6 userland-NetBSD-9.99.30/evbarm
+ dhcpcd-8.1.6 dtc-1.5.1 openssl-1.1.1d sh-20181212-20200213074024Z
+ unbound-1.9.6 userland-NetBSD-9.99.46/evbarm
 
 pkgsrc:
- Canna-lib-3.7pl3nb1 ImageMagick-7.0.9.13 PC6001VX-3.3.1
- php73 boost-1.72 clang-9.0.1 cmake-3.16.2nb1
- cups-base-2.3.1 dhcpcd-8.1.5
- ffmpeg3-3.4.7 ffmpeg4-4.2.2 
- giflib-5.2.1nb1 gimp-2.10.14nb1 git-base-2.24.1nb1
- glib-networking-2.62.3 glib2-2.62.4 glib2-tools-2.62.4
- ibus-mozc-2.20.2673.102nb17 icu-64.2nb2 inkscape-0.92.4nb9
- mlterm-3.8.9 mpv-0.31.0 nodejs-13.6.0
- nspr-4.24 nss-3.49.1 onscripter-20191116
- osabi-NetBSD-9.99.30 perl-5.30.1 php-7.3.13
- poppler-0.84.0 postgresql95-client-9.5.20
- py37-sphinx-2.3.1 python37-3.7.6
- ruby26-base-2.6.5nb1 ruby26-mikutter-3.9.8nb1
- rust-1.40.0 sudo-1.8.30 tcsh-6.22.02
- tdb-1.4.3 uim-1.8.8 x11-links-1.31
+ Canna-lib-3.7pl3nb1 ImageMagick-7.0.9.22 SDL2-2.0.10nb2
+ apache-2.4.41nb3 arm-trusted-firmware-rk3399-2.2
+ boost-build-1.72.0 boost-docs-1.72.0 boost-headers-1.72.0
+ boost-jam-1.72.0 boost-libs-1.72.0 boost-mpi-1.72.0
+ clang-9.0.1 cmake-3.16.4 cross-aarch64-none-elf-binutils-2.31.1
+ cross-aarch64-none-elf-gcc-8.2.0nb1 cross-arm-none-eabi-binutils-2.32
+ cross-arm-none-eabi-gcc-8.3.0nb1 cups-base-2.3.1nb1
+ curl-7.68.0nb2 dhcpcd-8.1.6 dillo-3.0.5nb6 ffmpeg2-2.8.14nb11
+ ffmpeg3-3.4.7nb1 ffmpeg4-4.2.2nb1 firefox52-52.9.0nb20
+ fossil-2.10nb2 ghostscript-agpl-9.50nb3 git-base-2.25.0
+ glib2-2.62.4nb1 glib2-tools-2.62.4 gnupg2-2.2.19nb1
+ gstreamer1-1.16.2 gtk3+-3.24.13nb1 icu-64.2nb2
+ inkscape-0.92.4nb11 jpeg-9d llvm-9.0.1
+ mate-1.22.2 mpv-0.32.0 nginx-1.16.1nb2
+ nspr-4.25 nss-3.49.2 php-7.3.14 poppler-0.84.0
+ py37-sphinx-2.3.1 python27-2.7.17nb1 python36-3.6.10nb1
+ python37-3.7.6nb1 qt5-qtbase-5.14.1 ruby26-mikutter-3.9.8nb1
+ rust-1.40.0nb2 samba-3.6.25nb20 sudo-1.8.31
+ sylpheed-3.7.0nb5 u-boot-pinebook-pro-2020.01.rc5nb3
+ youtube-dl-20200124
 
-TEST kernel:
+TEST kernel: on pinebook
 - deforaos-camera: camera capture,and reboot
  apply: http://mail-index.netbsd.org/port-arm/2019/01/21/msg005392.html
  https://twitter.com/ebijun/status/1087694456936001536
@@ -100,6 +102,8 @@ dmesg:
 
 System image: dd to eMMC.
  http://www.invisible.ca/arm/
+ on pinebook pro,with bundled Linux image, first disable eMMC with 
+ switch inside,and boot MicroSD.
 
 sysinfo:
  https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/sysinfo
@@ -112,6 +116,8 @@ pkgchk.conf:
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2019-12-14/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-01-18/
+    (older one, will remove)
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-02-15/
 --
 Jun Ebihara
