@@ -1,5 +1,5 @@
 RELEASE=/usr/release/images
-ISO=${RELEASE}/NetBSD-9.99.30-evbarm-aarch64-201912270110Z.iso
+ISO=${RELEASE}/NetBSD-9.99.46-evbarm-aarch64-202002130840Z.iso
 
 ##
 
