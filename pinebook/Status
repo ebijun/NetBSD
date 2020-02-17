@@ -11,12 +11,15 @@ Update:
  ToDo:  
  - HDMI output via USB-C 
  - Wi-Fi seems unstable 
+   copy the files from
+   https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
+   into /libdata/firmware/if_bwfm/ then reboot
+   bwfm0 will appear in ifconfig :)
  - sometimes stopped,with make -j 6 load.
 
 - Pinebook
-  NetBSD/aarch64 9.99.30
-  9.99.46 not work startx,mpv -vo,
-  backout 9.99.30
+  NetBSD/aarch64 9.99.47
+XXX:  mpv -vo=drm hardware accelaration disabled?
 
 sysinfo:
  dhcpcd-8.1.6 dtc-1.5.1 openssl-1.1.1d sh-20181212-20200213074024Z
@@ -43,15 +46,6 @@ pkgsrc:
  rust-1.40.0nb2 samba-3.6.25nb20 sudo-1.8.31
  sylpheed-3.7.0nb5 u-boot-pinebook-pro-2020.01.rc5nb3
  youtube-dl-20200124
-
-TEST kernel: on pinebook
-- deforaos-camera: camera capture,and reboot
- apply: http://mail-index.netbsd.org/port-arm/2019/01/21/msg005392.html
- https://twitter.com/ebijun/status/1087694456936001536
- my compiled kernel with camera patch
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/pinebook/netbsd
- see instruction by Harold Gutch:
-  http://mail-index.netbsd.org/port-arm/2019/07/09/msg005889.html
 
 System Updates:
 
