@@ -5,15 +5,22 @@ Update:
 - Pinebook Pro 
  NetBSD/aarch64 9.99.46 
  mate desktop/camera/WiFi
+ - bwfm0
+   copy the files from
+   https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
+   into /libdata/firmware/if_bwfm/ then reboot
+   bwfm0 will appear in ifconfig
  ToDo:  
  - HDMI output via USB-C 
- - Wi-Fi seems unstable 
+   http://mail-index.netbsd.org/port-arm/2020/02/08/msg006494.html
  - sometimes stopped,with make -j 6 load.
 
 - Pinebook
   NetBSD/aarch64 9.99.30
   9.99.46 not work startx,mpv -vo,
-  backout 9.99.30
+  9.99.47 failed with mpv -vo=drm display accelaration.X works well.
+  XXX: rollback test with 9.0 dtb/gstreamer YUV->RGB
+   https://twitter.com/ebijun/status/1229506896542892032
 
 sysinfo:
  dhcpcd-8.1.6 dtc-1.5.1 openssl-1.1.1d sh-20181212-20200213074024Z
@@ -40,15 +47,6 @@ pkgsrc:
  rust-1.40.0nb2 samba-3.6.25nb20 sudo-1.8.31
  sylpheed-3.7.0nb5 u-boot-pinebook-pro-2020.01.rc5nb3
  youtube-dl-20200124
-
-TEST kernel: on pinebook
-- deforaos-camera: camera capture,and reboot
- apply: http://mail-index.netbsd.org/port-arm/2019/01/21/msg005392.html
- https://twitter.com/ebijun/status/1087694456936001536
- my compiled kernel with camera patch
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/pinebook/netbsd
- see instruction by Harold Gutch:
-  http://mail-index.netbsd.org/port-arm/2019/07/09/msg005889.html
 
 System Updates:
 
@@ -87,6 +85,9 @@ works well:
  urtwn0: I-O DATA DEVICE, INC. (0x4bb) WN-G150UM (0x94c)
 
 ToDo:
+- pkgsrc/inputmethod/uim
+  only on aarch64,fill alloca to package it.
+  #define alloca(x)  __builtin_alloca(x)
 - libreoffice
   g95 need aarch64--netbsd support
    -> --disable-coinmp
@@ -95,10 +96,11 @@ ToDo:
   need replacement for editing PDF pages
 
 Version: 
- NetBSD 9.99.30 (GENERIC64.201912270110UTC) #24: Sat Dec 28 18:04:26 JST 2019  jun@amix200m.soum.co.jp:/usr/local/Build/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.47 (GENERIC64) #0: Sun Feb 16 23:14:19 UTC 2020	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook-pro
 
 System image: dd to eMMC.
  http://www.invisible.ca/arm/
