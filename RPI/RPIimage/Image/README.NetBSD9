@@ -1,0 +1,113 @@
+VERSION: :1,$s/2020-02-28/2020-02-28/g
+ISO:     :1,$s/202002151720Z/202002151720Z/g
+PKGSRC:  :1,$s/2019Q4/2019Q4/
+NetBSD:  :1,$s/9.0/9.0/g
+
+To: port-armNetBSD.org@localhost
+Subject: NetBSD9.0: 2020-02-28-netbsd9.0-raspi-earmv6hf.img 
+From: Jun Ebihara <jun@soum.co.jp>
+
+I've updated 2020-02-28-netbsd9.0-raspi-earmv6hf.img for RPI.
+
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-9.0/2020-02-28-netbsd9.0-raspi-earmv6hf.img.gz
+
+automatic resize partition: see /etc/rc.conf
+  1. copy image to SD/MicroSD
+  2. Boot 
+  3. Calculate and resize ld0 partition and automatic reboot
+  4. after the reboot,root partition fit for your card.
+    http://movapic.com/pic/20150416115108552fa22c4f225
+
+RPI3A+: copy dtb from -current
+ copy /boot/bcm2837-rpi-3-a-plus.dtb 
+
+dmesg:
+RPI: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD9/RPI
+RPI0: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD9/RPI0
+RPI0W: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD9/RPI0W
+RPI2: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD9/RPI2
+RPI2-1.2: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD9/RPI2-1.2
+RPI3: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD9/RPI3
+RPI3A+: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD9/RPI3A%2B
+RPI3B+: 
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/NetBSD9/RPI3B%2B
+
+Overview:
+  http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
+
+- NetBSD-9.0-202002151720Z evbarm-earmv6hf rpi.img from nyftp.
+- pkgsrc: 2019Q4 pre-installed on /usr/pkgsrc.
+
+Pre-compiled packages:
+- Pre-compiled packages path setting: see /etc/pkg_install.conf 
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-9.0/earmv6hf
+
+I'll make test packages with this image:
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-9.0/earmv6hf/
+
+ To install application.
+ # pkg_add some_application_name
+
+ If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
+ /etc/mk.conf.
+
+=====================
+
+- NetBSD 9.0 earmv6hf rpi.img.gz base
+- Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
+- login root (no passwd)
+
+Features:
+  - fit size for 4GB SD Card
+  - with X11
+
+Installed Packages:
+ bash
+ tcsh
+ vlgothic-ttf
+ icewm
+ xli
+ ruby26-mikutter
+ uim
+ fossil
+ raspberrypi-userland
+ sudo
+ git-base
+ zsh
+ mlterm
+ pkg_chk
+ lintpkgsrc
+ mozilla-rootcerts
+ dillo
+ medit
+ lrzsz
+
+To control HDMI output,add/delete "console=fb" on cmdline.txt.
+If delete console=fb definition,you can get serial console instead.
+ rpi$ more /boot/cmdline.txt
+ root=ld0a console=fb
+
+Keyboard layout checkpoint:
+/etc/wscons.conf
+ #encoding sv
+ #encoding us.swapctrlcaps
+ encoding jp
+
+/root/.xinitrc
+ setxkbmap -model jp106 jp
+
+Build sample script:
+ https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image
+
+Guide:
+ https://github.com/ebijun/NetBSD/blob/master/Guide/RPI.rst
+
+--
+Jun Ebihara

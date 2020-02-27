@@ -1,0 +1,19 @@
+## build img file
+#
+#make -f Makefile.NetBSD9 
+#make -f Makefile.NetBSD9 release
+#make -f Makefile.NetBSD9 pkg
+#
+#./Copy
+## add packages.
+# 
+#./03_back
+#mv back.img `date +%Y-%m-%d`-netbsd-raspi-earmv6hf.img
+#make -f Makefile.NetBSD9 logclean
+#make -f Makefile.NetBSD9 pkg-back
+#make -f Makefile.NetBSD9 mikutter-key
+#
+./Copy
+###test tweet
+# Copy logfile
+#./Copy.sysinfo
