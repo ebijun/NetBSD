@@ -1,54 +1,25 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2019-11-24/2019-11-24/g
-:1,$s/9.99.17/9.99.17/g
-:1,$s/201911170330Z/201911170330Z/g
-:1,$s?2019/11/21/msg006322.html?2019/11/21/msg006322.html?
+:1,$s/2020-02-28/2020-02-28/g
+:1,$s/9.0/9.0/g
+:1,$s/202002151720Z/202002151720Z/g
+:1,$s?2020/02/27/msg006569.html?2020/02/27/msg006569.html?
 
-2019-11-24-netbsd-raspi-earmv6hf.img
+2020-02-28-netbsd-raspi-earmv6hf.img
 
-For Open Source Conference 2019 Tokyo/Fall NetBSD booth demonstration,
-I've updated 2019-11-24-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2020-02-28-netbsd9.0-raspi-earmv6hf.img.gz for RPI0/1/2/3.
 
-http://mail-index.netbsd.org/port-arm/2019/11/21/msg006322.html
+http://mail-index.netbsd.org/port-arm/2020/02/27/msg006569.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-11-24-earmv6hf/2019-11-24-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-9.0/2020-02-28-netbsd9.0-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD 9.99.17 evbarm-earmv6hf 201911170330Z rpi.img from nyftp.
-- Testing: bwfm0 Broadcom and Cypress wireless network driver
- 1. add kernel configration
-   bwfm*   at sdmmc?
- 2. add firmware
-   /libdata/firmware/if_bwfm/
-     LICENCE.broadcom_bcm43xx
-     brcmfmac43430-sdio.{bin|txt}
-     brcmfmac43455-sdio.{bin|txt}
-
-- RPI4: testing
- Image:
-  http://mail-index.netbsd.org/port-arm/2019/10/03/msg006208.html
-  http://mail-index.netbsd.org/port-arm/2019/09/24/msg006162.html
-  http://mail-index.netbsd.org/port-arm/2019/09/26/msg006171.html
-  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/README.RPI4
+- NetBSD 9.0 evbarm-earmv6hf 202002151720Z rpi.img from nyftp.
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/8371199adf010af146262db1541b7ea56eab20c8
-
-System Update:
-
-http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
-
-sysinfo:
- dhcpcd-8.1.2 sh-20181212-20191117025925Z
- 
-pkgsrc:
- curl-7.67.0 gdk-pixbuf2-2.40.0 git-base-2.24.0 gtk3+-3.24.12
- pango-1.44.7 perl-5.30.0nb2 qt5-qtbase-5.13.2 qt5-qtx11extras-5.13.2
- qt5-qtxmlpatterns-5.13.2 ruby24-mikutter-3.9.7
- tiff-4.1.0 uim-1.8.8
+ https://github.com/ebijun/NetBSD/commit/22f574b0f97fb65e6d89ce8786c437b482ad8931
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
