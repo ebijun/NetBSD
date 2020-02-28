@@ -30,8 +30,8 @@ LIST=man modules xbase xcomp xetc xfont xserver
 
 #Firmware: 
 #git show HEAD |head 
-#commit ae9a493932e47e08cabb25a2728037298075fd00
-#Date:   Tue Apr 10 18:34:46 2018 +0100
+#commit bcf40b5c2b94178c7564fb451098d44968e44af5
+#Date:   Wed Jun 26 23:01:32 2019 +0100
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -48,7 +48,7 @@ VND_TMP=vnd2
 
 
 #all: file cdmount rpi extract cdunmount kernel firm 
-all: file cdmount rpi extract cdunmount firm 
+all: file cdmount rpi extract cdunmount
 
 #update: cdmount update-extract cdunmount
 
