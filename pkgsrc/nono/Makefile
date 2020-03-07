@@ -1,10 +1,16 @@
-# https://twitter.com/isaki68k/status/1235934418042159108
-# http://www.pastel-flower.jp/~isaki/nono/
+# $NetBSD$
 
-FILE=nono-0.0.1.tar.gz	
+DISTNAME=	nono-0.0.1
+CATEGORIES=	emulators
+MASTER_SITES=	http://www.pastel-flower.jp/~isaki/nono/archive/
 
-extract:
-	tar xzvf ${FILE}
+MAINTAINER=	isaki@netbsd.org
+HOMEPAGE=	http://www.pastel-flower.jp/~isaki/nono/archive/
+COMMENT=	LUNA-I emulator
+#LICENSE=	# TODO: (see mk/license.mk)
 
-fetch:
-	ftp http://www.pastel-flower.jp/~isaki/nono/archive/${FILE}
+GNU_CONFIGURE=	yes
+USE_LANGUAGES=	c c++
+
+.include "../../mk/bsd.pkg.mk"
+.include "../../x11/wxGTK30/buildlink3.mk"
