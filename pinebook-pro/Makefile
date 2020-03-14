@@ -71,3 +71,6 @@ brcm-firmware:
 #https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
 	echo https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
 
+update-info:
+	sys_info > sysinfo
+	pkg_info > pkginfo
