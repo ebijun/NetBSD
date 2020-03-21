@@ -1,13 +1,15 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016
-    The NetBSD Foundation, Inc.  All rights reserved.
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+    2018, 2019, 2020 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.33 (WZERO3.201607080210Z)
+NetBSD 9.99.50 (WZERO3) #0: Fri Mar 20 16:35:41 UTC 2020
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/hpcarm/compile/WZERO3
 total memory = 65536 KB
-avail memory = 56732 KB
-sysctl_createv: sysctl_create(machine_arch) returned 17
+avail memory = 56448 KB
+sysctl_createv: sysctl_locate(maxtypenum) returned 2
+pool redzone disabled for 'buf64k'
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root)
 cpu0 at mainbus0 core 0: PXA27x rev 7 (XScale V5TE core)
@@ -15,10 +17,11 @@ cpu0: DC enabled IC enabled WB enabled LABT branch prediction enabled
 cpu0: 32KB/32B 32-way L1 VIVT Instruction cache
 cpu0: 32KB/32B 32-way write-back-locking L1 VIVT Data cache
 pxaip0 at mainbus0: Onchip Peripheral Bus
-pxaip0: CPU clock = 415.997 MHz
+pxaip0: CPU clock = 415.998 MHz
 pxaip0: kernel is configured for PXA270, cpu type is PXA270
 pxaintc0 at pxaip0 addr 0x40d00000-0x40d0001f: Interrupt Controller
 pxagpio0 at pxaip0 addr 0x40e00000-0x40e0014f: GPIO Controller
+pxagpio0: no GPIO configured in kernel
 com0 at pxaip0 addr 0x40100000-0x4010001f intr 22: ns16550a, working fifo
 ohci0 at pxaip0 addr 0x4c000000-0x4c00006f intr 3
 ohci0: OHCI version 1.0
@@ -45,18 +48,19 @@ wzero3usb0 at pxaip0: USB Mode detection
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 clock: hz=100 stathz=64
 timecounter: Timecounter "saost_count" frequency 3250000 Hz quality 100
-uhub0 at usb0: PXA27x OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb0: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-ld0 at sdmmc0: <0x03:0x5344:SU02G:0x80:0x014feae2:0x06b>
-ld0: 1938 MB, 984 cyl, 64 head, 63 sec, 512 bytes/sect x 3970048 sectors
+sdmmc0: direct I/O error 8, r=6 p=0xc5730f4c write
+ld0 at sdmmc0: <0x02:0x544d:SA32G:0x50:0x00434f06:0x12b>
+ld0: 29544 MB, 7503 cyl, 128 head, 63 sec, 512 bytes/sect x 60506112 sectors
 ld0: 4-bit width, 19.500 MHz
 boot device: ld0
-WARNING: ld0: total sector size in disklabel (3813376) != the size of ld0 (3970048)
+ld0: 56692736 trailing sectors not covered by disklabel
 root on ld0a dumps on ld0b
-WARNING: ld0: total sector size in disklabel (3813376) != the size of ld0 (3970048)
-WARNING: ld0: total sector size in disklabel (3813376) != the size of ld0 (3970048)
+ld0: 56692736 trailing sectors not covered by disklabel
+ld0: 56692736 trailing sectors not covered by disklabel
 root file system type: ffs
-kern.module.path=/stand/hpcarm/7.99.33/modules
-WARNING: clock lost 3837 days
+kern.module.path=/stand/hpcarm/9.99.50/modules
+WARNING: clock lost 5193 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!

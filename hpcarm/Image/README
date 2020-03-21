@@ -1,21 +1,21 @@
-:1,$s/2016-05-31/2016-05-31/g
-:1,$s/201605300010Z/201605300010Z/g
+:1,$s/2020-03-21/2020-03-21/g
+:1,$s/202003201640Z/202003201640Z/g
 :1,$s/2015Q3/2015Q3/g
-:1,$s/7.99.30/7.99.30/g
+:1,$s/9.99.50/9.99.50/g
 
 
 To: port-hpcarmnetbsd.org@localhost
-Subject: 2016-05-31-netbsd-hpcarm.img 
+Subject: 2020-03-21-netbsd-hpcarm.img 
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2016-05-31-netbsd-hpcarm.img.gz for hpcarm.
+I've updated 2020-03-21-netbsd-hpcarm.img.gz for hpcarm.
 
-ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2016-05-31-netbsd-hpcarm.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/hpcarm/2020-03-21-netbsd-hpcarm.img.gz
 
-http://movapic.com/pic/2015012400560454c2eda44b7d3
+https://twitter.com/ebijun/status/1241359153718644736
 
 Feature:
-- NetBSD 7.99.30-201605300010Z hpcarm from nyftp.netbsd
+- NetBSD 9.99.50-202003201640Z hpcarm from nyftp.netbsd
 - dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earm/WS011SH
 
@@ -30,13 +30,11 @@ PKG_PATH=ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/earm/2016-06-18/
  If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
 
-Todo:
-- wscons=YES : boot hangs.
 
 =====================
 
 
-- NetBSD 7.99.30 base
+- NetBSD 9.99.50 base
 - Copy image to Mini/MicroSD.
 - Set WZERO3.
 - boot hpcboot.exe
@@ -55,7 +53,7 @@ Features:
   - fit size for 2GB SD Card
   - with X11
   - pre-build packages
-    ftp://ftp.netbsd.org/pub/NetBSD/misc/jun/hpcarm/earm/2016-06-18/
+    none
 
 Installed Packages:
  none
