@@ -3,17 +3,18 @@ Subject: pinebook status update (20200215)
 
 Update:
 - Pinebook Pro 
- NetBSD/aarch64 9.99.46 
+ NetBSD/aarch64 9.99.50 
  mate desktop/camera/WiFi
  - bwfm0
    copy the files from
    https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
    into /libdata/firmware/if_bwfm/ then reboot
    bwfm0 will appear in ifconfig
+   Trouble: once "bwfm0 checksum error" occurs,kernel hangs.
+
  ToDo:  
  - HDMI output via USB-C 
    http://mail-index.netbsd.org/port-arm/2020/02/08/msg006494.html
- - sometimes stopped,with make -j 6 load.
 
 - Pinebook
   NetBSD/aarch64 9.99.30
