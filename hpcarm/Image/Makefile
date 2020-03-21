@@ -124,3 +124,9 @@ fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch
+
+firmware:
+	ftp http://www.nazgul.ch/upgt/upgt-firmware-1.1.tar.gz
+#WS003SH/WS004SH: man upgt(4)
+#Start->Settei->System->Utility->Musen On/Off->Wifi Stop
+#       cp /libdata/firmware/upgt/upgt-gw3887

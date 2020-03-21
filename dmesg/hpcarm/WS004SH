@@ -54,6 +54,8 @@ sdmmc0: direct I/O error 8, r=6 p=0xc5730f4c write
 ld0 at sdmmc0: <0x02:0x544d:SA32G:0x50:0x00434f06:0x12b>
 ld0: 29544 MB, 7503 cyl, 128 head, 63 sec, 512 bytes/sect x 60506112 sectors
 ld0: 4-bit width, 19.500 MHz
+upgt0 at uhub0 port 1
+upgt0: Sharp (0x04dd) RUITZ1016YCZZ (0x90fd), rev 2.00/1.00, addr 2
 boot device: ld0
 ld0: 56692736 trailing sectors not covered by disklabel
 root on ld0a dumps on ld0b
@@ -61,6 +63,4 @@ ld0: 56692736 trailing sectors not covered by disklabel
 ld0: 56692736 trailing sectors not covered by disklabel
 root file system type: ffs
 kern.module.path=/stand/hpcarm/9.99.50/modules
-WARNING: clock lost 5193 days
-WARNING: using filesystem time
-WARNING: CHECK AND RESET THE DATE!
+upgt0: address 08:00:1f:df:5f:be
