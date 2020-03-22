@@ -6,11 +6,11 @@ Subject: pinebook status update (${DATE})
 
 Update:
 - Pinebook Pro 
- NetBSD/aarch64 9.99.46 
+ NetBSD/aarch64 9.99.50 
  mate desktop/camera/WiFi
  ToDo:  
  - HDMI output via USB-C 
- - Wi-Fi seems unstable 
+ - Wi-Fi: checksum error makes system hung
    copy the files from
    https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
    into /libdata/firmware/if_bwfm/ then reboot
@@ -18,41 +18,41 @@ Update:
  - sometimes stopped,with make -j 6 load.
 
 - Pinebook
-  NetBSD/aarch64 9.99.47
-XXX:  mpv -vo=drm hardware accelaration disabled?
+  NetBSD/aarch64 9.99.50
+XXX:  mpv -vo=drm hardware accelaration disabled? 
+XXX:  checking: with 9.0 DTB
 
 sysinfo:
- dhcpcd-8.1.6 dtc-1.5.1 openssl-1.1.1d sh-20181212-20200213074024Z
- unbound-1.9.6 userland-NetBSD-9.99.46/evbarm
+ awk-20200218 dhcpcd-8.1.6 dtc-1.5.1 g++-8.4.0
+ gcc-8.4.0 libc-12.215 libcurses-9.0 libssh-36.0
+ libterminfo-2.0 NetBSD-9.99.50 openssh-8.2 opensshd-8.2
+ openssl-1.1.1d sh-20181212-20200319111925Z
+ unbound-1.9.6 userland-NetBSD-9.99.50/evbarm
 
 pkgsrc:
- Canna-lib-3.7pl3nb1 ImageMagick-7.0.9.22 SDL2-2.0.10nb2
- apache-2.4.41nb3 arm-trusted-firmware-rk3399-2.2
- boost-build-1.72.0 boost-docs-1.72.0 boost-headers-1.72.0
- boost-jam-1.72.0 boost-libs-1.72.0 boost-mpi-1.72.0
- clang-9.0.1 cmake-3.16.4 cross-aarch64-none-elf-binutils-2.31.1
- cross-aarch64-none-elf-gcc-8.2.0nb1 cross-arm-none-eabi-binutils-2.32
- cross-arm-none-eabi-gcc-8.3.0nb1 cups-base-2.3.1nb1
- curl-7.68.0nb2 dhcpcd-8.1.6 dillo-3.0.5nb6 ffmpeg2-2.8.14nb11
- ffmpeg3-3.4.7nb1 ffmpeg4-4.2.2nb1 firefox52-52.9.0nb20
- fossil-2.10nb2 ghostscript-agpl-9.50nb3 git-base-2.25.0
- glib2-2.62.4nb1 glib2-tools-2.62.4 gnupg2-2.2.19nb1
- gstreamer1-1.16.2 gtk3+-3.24.13nb1 icu-64.2nb2
- inkscape-0.92.4nb11 jpeg-9d llvm-9.0.1
- mate-1.22.2 mpv-0.32.0 nginx-1.16.1nb2
- nspr-4.25 nss-3.49.2 php-7.3.14 poppler-0.84.0
- py37-sphinx-2.3.1 python27-2.7.17nb1 python36-3.6.10nb1
- python37-3.7.6nb1 qt5-qtbase-5.14.1 ruby26-mikutter-3.9.8nb1
- rust-1.40.0nb2 samba-3.6.25nb20 sudo-1.8.31
- sylpheed-3.7.0nb5 u-boot-pinebook-pro-2020.01.rc5nb3
- youtube-dl-20200124
+ GConf-3.2.3nb4 SDL-1.2.15nb30 SDL2-2.0.12 apache-2.4.41nb3
+ arm-trusted-firmware-rk3399-2.2nb2 audacious-3.10.1nb4
+ boost-libs-1.72.0 clang-9.0.1 cmake-3.16.5nb1 cups-base-2.3.1nb3
+ curl-7.69.1 dhcpcd-8.1.6 ffmpeg3-3.4.7nb3 ffmpeg4-4.2.2nb1
+ fossil-2.10nb2 git-base-2.25.1nb1 glib-networking-2.64.0
+ gnupg2-2.2.19nb2 gnutls-3.6.12nb1 gsed-4.8 gspell-1.8.3nb3
+ gtk2+-2.24.32nb13 gtk3+-3.24.14nb2 harfbuzz-2.6.4nb2
+ ibus-1.5.22nb2 icu-64.2nb2 jpeg-9d json-glib-1.4.4nb1
+ libass-0.14.0nb4 libffi-3.3nb1 librsvg-2.48.0nb1 mate-1.22.2nb2
+ mpv-0.32.0nb3 ncurses-6.2 nginx-1.16.1nb2 nspr-4.25
+ nss-3.50 openjdk8-1.8.242nb3 osabi-NetBSD-9.99.50
+ p11-kit-0.23.15nb1 pango-1.44.7nb2 php-7.3.15 poppler-0.86.1
+ py37-sphinx-2.4.4 python27-2.7.17nb2 python37-3.7.7
+ ruby26-base-2.6.5nb2 ruby26-mikutter-4.0.4 rust-1.42.0
+ u-boot-pinebook-pro-2020.01.rc5nb5 vala-0.48.1
+ xnp2-0.86nb10 youtube-dl-20200306 zsh-5.8
 
 System Updates:
 
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 pkgsrc:
- https://github.com/ebijun/NetBSD/commit/5ac3245125050c0ccd4294e0c13b2b2a21fc3a2d
+ https://github.com/ebijun/NetBSD/commit/69a27a51dacb9607170a16a38130f3c402ab3650
 
 works well: 
  evince gedit mate medit py-sphinx gimp seamonkey inkscape
@@ -96,6 +96,7 @@ Version:
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook-pro
 
 System image: dd to eMMC.
  http://www.invisible.ca/arm/
@@ -113,9 +114,8 @@ pkgchk.conf:
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-01-18/
-    (older one, will remove)
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-02-15/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-03-22/
+
 --
 Jun Ebihara
 EOF
