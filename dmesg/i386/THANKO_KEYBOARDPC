@@ -1,51 +1,58 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
-    The NetBSD Foundation, Inc.  All rights reserved.
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+    2018, 2019, 2020 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 7.99.9 (GENERIC) #21: Tue Apr  7 10:43:40 JST 2015
-	jun@amivb.soum.co.jp:/usr/obj/i386.i386/sys/arch/i386/compile/GENERIC
+NetBSD 9.99.55 (GENERIC) #0: Wed Apr  8 10:57:16 UTC 2020
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/i386/compile/GENERIC
 total memory = 511 MB
-avail memory = 485 MB
+avail memory = 480 MB
+pool redzone disabled for 'buf64k'
+rnd: seeded with 256 bits
 timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+running cgd selftest aes-xts-256 aes-xts-512 done
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
 Generic PC
 mainbus0 (root)
-ACPI BIOS Error (bug): A valid RSDP was not found (20140926/tbxfroot-260)
-acpi_probe: failed to initialize tables
-ACPI Error: Could not remove SCI handler (20140926/evmisc-311)
+Firmware Error (ACPI): A valid RSDP was not found (20200326/tbxfroot-261)
+autoconfiguration error: acpi_probe: failed to initialize tables
+ACPI Error: Could not remove SCI handler (20200326/evmisc-317)
 cpu0 at mainbus0
+ACPI Error: AE_BAD_PARAMETER, Thread 3242129664 could not acquire Mutex [ACPI_MTX_Tables] (0x2) (20200326/utmutex-328)
+ACPI Error: Mutex [ACPI_MTX_Tables] (0x2) is not acquired, cannot release (20200326/utmutex-369)
 cpu0: Vortex86MX, id 0x586
+cpu0: node 0, package 0, core 0, smt 0
 pci0 at mainbus0 bus 0: configuration mode 1
 pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
-pchb0 at pci0 dev 0 function 0: vendor 17f3 product 6021 (rev. 0x02)
-rdcpcib0 at pci0 dev 7 function 0: vendor 17f3 product 6036 (rev. 0x00)
+pchb0 at pci0 dev 0 function 0: RDC Semiconductor R6021 Host (rev. 0x02)
+rdcpcib0 at pci0 dev 7 function 0: RDC Semiconductor R6036 PCI-ISA bridge (rev. 0x00)
 rdcpcib0: watchdog timer configured.
-vte0 at pci0 dev 8 function 0: vendor 17f3 product 6040 (rev. 0x00)
+vte0 at pci0 dev 8 function 0: RDC Semiconductor R6040 10/100 Ethernet (rev. 0x00)
 vte0: Ethernet address 00:1b:eb:40:59:35
 vte0: interrupting at irq 15
 rdcphy0 at vte0 phy 1: R6040 10/100 media interface, rev. 1
 rdcphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-ohci0 at pci0 dev 10 function 0: vendor 17f3 product 6060 (rev. 0x12)
+ohci0 at pci0 dev 10 function 0: RDC Semiconductor R6060 USB OHCI (rev. 0x12)
 ohci0: interrupting at irq 9
 ohci0: OHCI version 1.0, legacy support
 usb0 at ohci0: USB revision 1.0
-ehci0 at pci0 dev 10 function 1: vendor 17f3 product 6061 (rev. 0x03)
+ehci0 at pci0 dev 10 function 1: RDC Semiconductor R6061 USB EHCI (rev. 0x03)
 ehci0: interrupting at irq 9
 ehci0: BIOS has given up ownership
 ehci0: EHCI version 1.0
-ehci0: companion controller, 2 ports each: ohci0
+ehci0: 1 companion controller, 2 ports: ohci0
 usb1 at ehci0: USB revision 2.0
-ohci1 at pci0 dev 11 function 0: vendor 17f3 product 6060 (rev. 0x12)
+ohci1 at pci0 dev 11 function 0: RDC Semiconductor R6060 USB OHCI (rev. 0x12)
 ohci1: interrupting at irq 9
 ohci1: OHCI version 1.0, legacy support
 usb2 at ohci1: USB revision 1.0
-ehci1 at pci0 dev 11 function 1: vendor 17f3 product 6061 (rev. 0x03)
+ehci1 at pci0 dev 11 function 1: RDC Semiconductor R6061 USB EHCI (rev. 0x03)
 ehci1: interrupting at irq 9
 ehci1: BIOS has given up ownership
 ehci1: EHCI version 1.0
-ehci1: companion controller, 2 ports each: ohci1
+ehci1: 1 companion controller, 2 ports: ohci1
 usb3 at ehci1: USB revision 2.0
 piixide0 at pci0 dev 12 function 0: Intel 82801EB IDE Controller (ICH5) (rev. 0x01)
 piixide0: bus-master DMA support present
@@ -54,17 +61,20 @@ piixide0: using irq 11 for native-PCI interrupt
 atabus0 at piixide0 channel 0
 piixide0: secondary channel configured to native-PCI mode
 atabus1 at piixide0 channel 1
-vga0 at pci0 dev 13 function 0: vendor 17f3 product 2010 (rev. 0x00)
+vga0 at pci0 dev 13 function 0: RDC Semiconductor R2010 VGA Controller (rev. 0x00)
 wsdisplay0 at vga0 kbdmux 1: console (80x25, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 drm at vga0 not configured
 hdaudio0 at pci0 dev 14 function 0: HD Audio Controller
 hdaudio0: interrupting at irq 10
+hdaudio0: HDA ver. 1.0, OSS 4, ISS 4, BSS 0, SDO 1
 hdafg0 at hdaudio0: vendor 10ec product 0262
 hdafg0: DAC00 2ch: Speaker [Jack]
 hdafg0: ADC01 2ch: Mic In [Jack]
 hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
-audio0 at hdafg0: full duplex, playback, capture, mmap, independent
+audio0 at hdafg0: playback, capture, full duplex, independent
+audio0: slinear_le:16 2ch 48000Hz, blk 10ms for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 10ms for recording
 isa0 at rdcpcib0
 com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, working fifo
 pckbc0 at isa0 port 0x60-0x64
@@ -79,39 +89,30 @@ isapnp0 at isa0 port 0x279
 attimer0: attached to pcppi0
 isapnp0: no ISA Plug 'n Play devices found
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-uhub0 at usb0: vendor 17f3 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb0: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
-uhub1 at usb1: vendor 17f3 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub1 at usb1: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub1: 2 ports with 2 removable, self powered
-uhub2 at usb2: vendor 17f3 OHCI root hub, class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb2: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
-uhub3 at usb3: vendor 17f3 EHCI root hub, class 9/0, rev 2.00/1.00, addr 1
+uhub3 at usb3: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub3: 2 ports with 2 removable, self powered
 IPsec: Initialized Security Association Processing.
 ugen0 at uhub1 port 1
-ugen0: Manufacturer Realtek RTL8188S WLAN Adapter, rev 2.00/2.00, addr 2
+ugen0: Manufacturer Realtek (0x0bda) RTL8188S WLAN Adapter (0x8171), rev 2.00/2.00, addr 2
 wd0 at atabus1 drive 0
 wd0: <SPCC SATA DOM>
 wd0: drive supports 1-sector PIO transfers, LBA48 addressing
 wd0: 7688 MB, 15620 cyl, 16 head, 63 sec, 512 bytes/sect x 15745024 sectors
 wd0: 32-bit data port
-wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
-wd0(piixide0:1:0): using PIO mode 4, Ultra-DMA mode 2 (Ultra/33) (using DMA)
-Kernelized RAIDframe activated
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA
+wd0(piixide0:1:0): using PIO mode 4, Ultra-DMA mode 2 (Ultra/33) (using DMA), WRITE DMA FUA EXT
+WARNING: 1 error while detecting hardware; check system log.
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/i386/7.99.9/modules
+kern.module.path=/stand/i386/9.99.55/modules
 wsdisplay0: screen 1 added (80x25, vt100 emulation)
 wsdisplay0: screen 2 added (80x25, vt100 emulation)
 wsdisplay0: screen 3 added (80x25, vt100 emulation)
 wsdisplay0: screen 4 added (80x25, vt100 emulation)
-ehci1: handing over low speed device on port 2 to ohci1
-uhidev0 at uhub2 port 2 configuration 1 interface 0
-uhidev0: ELECOM ELECOM KUNAC series (RF), rev 1.10/2.30, addr 2, iclass 3/1
-ums0 at uhidev0: 3 buttons and Z dir
-wsmouse0 at ums0 mux 0
-wsmouse0: detached
-ums0: detached
-uhidev0: detached
-uhidev0: at uhub2 port 2 (addr 2) disconnected
