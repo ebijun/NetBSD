@@ -1,76 +1,64 @@
-VERSION: :1,$s/2019-11-09/2019-11-09/g
-ISO:     :1,$s/201911010850Z/201911010850Z/g
-NetBSD:  :1,$s/9.99.17/9.99.17/g
-PKGSRC:  :1,$s/2019-11-09/2019-11-09/
+VERSION: :1,$s/2020-04-18/2020-04-18/g
+ISO:     :1,$s/202004120440Z/202004120440Z/g
+NetBSD:  :1,$s/9.99.56/9.99.56/g
+PKGSRC:  :1,$s/2020-04-18/2020-04-18/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2019-11-09-netbsd-armv7-earmv7hf.img
+Subject: 2020-04-18-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2019-11-09-netbsd9-armv7-earmv7hf.img.gz for RPI2/3.
+I've updated 2020-04-18-netbsd9-armv7-earmv7hf.img.gz for RPI2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2019-11-09-earmv7hf/2019-11-09-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2019-11-09-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2020-04-18-earmv7hf/2020-04-18-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2020-04-18-earmv7hf/MD5
 
 ToDo:
-- check pkgsrc/sysutils/u-boot-* with installboot
+- nss 3.51 compile failed on earmv6hf/v7hf and aarch64
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=55158
 
 Update:
-- NetBSD 9.99.17 evbarm-armv7hf 201911010850Z armv7.img from nyftp.
-- NOW Testing: bwfm0 Broadcom and Cypress wireless network driver
- 1. add kernel configration and updated kernel
-   bwfm*   at sdmmc?
- 2. add firmware
-   /libdata/firmware/if_bwfm/
-     LICENCE.broadcom_bcm43xx
-     brcmfmac43430-sdio.{bin|txt}
-     brcmfmac43455-sdio.{bin|txt}
+- NetBSD 9.99.56 evbarm-armv7hf 202004120440Z armv7.img from nyftp.
 
 - Recent Update from 2019-01-08
  https://github.com/ebijun/NetBSD/commit/f67ec5dff6e6f36b5603d46cfa91883457bcb4d8
  
 sysinfo:
- bind-9.14.7 bozohttpd-20190228 bzip2-1.0.8 dhcpcd-8.1.1
- ftpd-20180428 g++-7.4.0 gcc-7.4.0 libc-12.214 libcurses-8.2
- libssh-35.0 libstdc++-9.0 NetBSD-9.99.17 openssh-8.1
- opensshd-8.1 openssl-1.1.1c libpcap-1.9.1 pkg_install-20191008
- sh-20181212-20191101082618Z tcpdump-4.9.3 tcsh-6.21.00
- tzdata-2019c unbound-1.9.1 userland-NetBSD-9.99.17/evbarm
+ awk-20200218 bind-9.14.8 dhcpcd-9.0.0 dtc-1.5.1 g++-8.4.0 gcc-8.4.0 libc-12.215
+ libcurses-9.0 libssh-36.0 libterminfo-2.0 NetBSD-9.99.56 openssh-8.2 opensshd-8.2
+ openssl-1.1.1f sh-20181212-20200412020412Z tcsh-6.22.02 unbound-1.9.6
+ userland-NetBSD-9.99.56/evbarm
 
 pkgsrc:
- at-spi2-atk-2.33.2 at-spi2-core-2.33.2nb1 atk-2.33.3 bash-5.0.11nb1
- curl-7.66.0nb1 dbus-1.12.16 desktop-file-utils-0.24 digest-20190127
- dillo-3.0.5nb5 fltk-1.3.5 fossil-2.10nb1 fribidi-1.0.7 gd-2.2.5nb5
- gdk-pixbuf2-2.38.2 git-base-2.23.0nb1 glib2-2.60.6
- gobject-introspection-1.62.0 gtk2+-2.24.32nb11 gtk3+-3.24.11
- harfbuzz-2.6.2 icu-64.2nb1 jpeg-9cnb1 libXft-2.3.3
- libgcrypt-1.8.5 libgpg-error-1.36nb1 libidn-1.34nb1
- libidn2-2.2.0 libimagequant-2.12.5 libotf-0.9.16nb2
- libpsl-0.20.2nb4 libwebp-1.0.3 libxml2-2.9.9
- libxslt-1.1.33nb1 libyaml-0.2.2nb1 lintpkgsrc-4.94nb2
- lrzsz-0.12.20nb1 medit-1.2.0nb11 mlterm-3.8.8nb5
- mozilla-rootcerts-1.0.20190306 ncurses-6.1nb6 nghttp2-1.39.2nb1
- p5-Authen-SASL-2.16nb7 p5-Digest-HMAC-1.03nb9 p5-Email-Valid-1.202nb3
- p5-Error-0.17028 p5-GSSAPI-0.28nb10 p5-IO-CaptureOutput-1.11.04nb5
- p5-IO-Socket-INET6-2.72nb5 p5-IO-Socket-SSL-2.060nb1 p5-MailTools-2.20nb2
- p5-Mozilla-CA-20180117nb2 p5-Net-DNS-1.20nb1 p5-Net-Domain-TLD-1.75nb3
- p5-Net-IP-1.26nb7 p5-Net-LibIDN-0.12nb11 p5-Net-SMTP-SSL-1.04nb3
- p5-Net-SSLeay-1.85nb2 p5-Socket6-0.29nb1 p5-TimeDate-2.30nb6
- pango-1.44.6 pcre-8.43 pcre2-10.33 perl-5.30.0nb1 png-1.6.37
- py27-expat-2.7.16 py37-cElementTree-3.7.5 py37-expat-3.7.5
- python27-2.7.17 python37-3.7.5 ruby24-addressable-2.7.0
- ruby24-atk-3.4.1 ruby24-base-2.4.9nb1 ruby24-cairo-1.16.4
- ruby24-cairo-gobject-3.4.1 ruby24-delayer-1.0.0
- ruby24-delayer-deferred-2.1.1 ruby24-diva-1.0.1 ruby24-gdk_pixbuf2-3.4.1
- ruby24-gio2-3.4.1 ruby24-glib2-3.4.1 ruby24-gobject-introspection-3.4.1
- ruby24-gtk2-3.4.1 ruby24-mikutter-3.9.6 ruby24-mini_portile2-2.4.0
- ruby24-moneta-1.2.0 ruby24-nokogiri-1.10.4 ruby24-pango-3.4.1
- ruby24-pkg-config-1.3.7 ruby24-pluggaloid-1.2.0 ruby24-public_suffix-4.0.1
- ruby24-simpleidn-0.0.9 ruby24-twitter-text-simpleidn-3.0.0.0 sudo-1.8.28nb1
- tcsh-6.21.00nb1 tiff-4.0.10nb1 uim-1.8.6nb64
- wget-1.20.3nb3 zsh-5.7.1nb1
+ at-spi2-atk-2.34.1nb1 at-spi2-core-2.35.1nb1 atk-2.33.3nb1 bash-5.0.16nb1
+ cairo-gobject-1.16.0nb4 curl-7.69.1 desktop-file-utils-0.24nb1 dillo-3.0.5nb6
+ fossil-2.10nb2 fribidi-1.0.9 gd-2.3.0 gdk-pixbuf2-2.40.0nb1 giflib-5.2.1nb2
+ git-base-2.26.0 glib2-2.64.1nb1 gobject-introspection-1.64.0 gtk2+-2.24.32nb13
+ gtk3+-3.24.17 harfbuzz-2.6.4nb2 icu-64.2nb2 jpeg-9d libffi-3.3nb2 libgpg-error-1.37
+ libidn-1.35 libidn2-2.3.0 libimagequant-2.12.6 libproxy-0.4.15 libpsl-0.21.0
+ libwebp-1.1.0 libxkbcommon-0.10.0 libxml2-2.9.10nb1 libxslt-1.1.34nb1 lz4-1.9.2
+ medit-1.2.0nb13 mlterm-3.8.9nb2 mozilla-rootcerts-1.0.20191207nb1 nghttp2-1.40.0nb3
+ p5-Error-0.17029 p5-IO-CaptureOutput-1.1105 p5-IO-Socket-SSL-2.067 p5-MailTools-2.21
+ p5-Net-DNS-1.23 p5-Net-SSLeay-1.88 pango-1.44.7nb2 pcre-8.44 pcre2-10.34
+ perl-5.30.2 py27-expat-2.7.17 py37-cElementTree-3.7.7 py37-expat-3.7.7
+ python27-2.7.17nb2 python37-3.7.7 qt5-qtbase-5.14.2 qt5-qtx11extras-5.14.2
+ qt5-qtxmlpatterns-5.14.2 ruby26-addressable-2.7.0 ruby26-atk-3.4.1nb1
+ ruby26-base-2.6.6 ruby26-cairo-1.16.5 ruby26-cairo-gobject-3.4.1nb1
+ ruby26-delayer-1.1.2 ruby26-delayer-deferred-2.1.3 ruby26-diva-1.0.2
+ ruby26-gdk_pixbuf2-3.4.1nb1 ruby26-gettext-3.3.5 ruby26-gio2-3.4.1nb1
+ ruby26-glib2-3.4.1nb1 ruby26-gobject-introspection-3.4.1nb1 ruby26-gtk2-3.4.1nb2
+ ruby26-httpclient-2.8.3 ruby26-instance_storage-1.0.0 ruby26-locale-2.1.3
+ ruby26-memoist-0.16.2 ruby26-mikutter-4.0.4 ruby26-mikutter-plugins-twitter-4.0nb1
+ ruby26-mini_portile2-2.5.0 ruby26-moneta-1.2.1 ruby26-native-package-installer-1.0.6
+ ruby26-nokogiri-1.10.9nb1 ruby26-oauth-0.5.4 ruby26-pango-3.4.1nb2
+ ruby26-pkg-config-1.4.1 ruby26-pluggaloid-1.2.0 ruby26-public_suffix-4.0.3
+ ruby26-simpleidn-0.0.9 ruby26-text-1.3.1 ruby26-twitter-text-simpleidn-3.0.0.0
+ ruby26-typed-array-0.1.2 ruby26-unf-0.1.4 ruby26-unf_ext-0.0.7.6
+ shared-mime-info-1.10nb1 sudo-1.8.31 tcsh-6.22.02 tiff-4.1.0 uim-1.8.8nb3
+ wayland-1.18.0 wayland-protocols-1.20 wget-1.20.3nb5 xcb-util-0.4.0
+ xcb-util-image-0.4.0 xcb-util-keysyms-0.4.0 xcb-util-renderutil-0.3.9
+ xcb-util-wm-0.4.1 zsh-5.8 zstd-1.4.4
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/earmv7hf/pkginfo
@@ -88,7 +76,11 @@ System Update:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 dmesg:
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI2-1.2
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI3
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI3A+
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI3B+
 
 --
 Jun Ebihara
