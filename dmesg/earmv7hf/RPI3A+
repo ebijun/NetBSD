@@ -6,13 +6,13 @@ Copyright (c) 1982, 1986, 1989, 1991, 1993
 
 NetBSD 9.99.56 (GENERIC) #0: Sun Apr 12 02:04:12 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC
-total memory = 948 MB
-avail memory = 918 MB
+total memory = 448 MB
+avail memory = 428 MB
 pool redzone disabled for 'buf64k'
 timecounter: Timecounters tick every 10.000 msec
 running cgd selftest aes-xts-256 aes-xts-512 done
 armfdt0 (root)
-simplebus0 at armfdt0: Raspberry Pi 3 Model B Rev 1.2
+simplebus0 at armfdt0: Raspberry Pi 3 Model A Plus Rev 1.0
 simplebus1 at simplebus0
 simplebus2 at simplebus0
 cpus0 at simplebus0
@@ -50,10 +50,8 @@ bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 49
 bcmgpio0: pins 32..54 interrupting on icu irq 50
 gpio0 at bcmgpio0: 54 pins
-/soc/firmware/gpio at simplebus4 not configured
 bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10
 /soc/power at simplebus1 not configured
-mmcpwrseq0 at simplebus0autoconfiguration error: : couldn't get reset GPIOs
 bsciic0 at simplebus1: Broadcom Serial Controller
 bsciic0: interrupting on icu irq 53
 iic0 at bsciic0: I2C bus
@@ -61,6 +59,7 @@ bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmmbox0 at simplebus1: VC mailbox
 bcmmbox0: interrupting on icu irq 65
 vcmbox0 at bcmmbox0
+/soc/firmware/gpio at simplebus4 not configured
 /soc/timer@7e003000 at simplebus1 not configured
 /soc/txp@7e004000 at simplebus1 not configured
 bcmsdhost0 at simplebus1: SD HOST controller
@@ -80,13 +79,13 @@ dwctwo0: interrupting on icu irq 9
 /soc/hdmi@7e902000 at simplebus1 not configured
 /soc/gpu at simplebus1 not configured
 genfb0 at simplebus1: switching to framebuffer console
-genfb0: framebuffer at 0xfdc5a000, size 1920x1280, depth 32, stride 10240
+genfb0: framebuffer at 0xddc5a000, size 1920x1280, depth 32, stride 10240
 wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
 vchiq0 at simplebus1: BCM2835 VCHIQ
 armpmu0 at simplebus0: Performance Monitor Unit
-gpioleds0 at simplebus0:
+gpioleds0 at simplebus0: ACT
 bcmrng0 at simplebus1: RNG
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
@@ -115,45 +114,39 @@ usb0 at dwctwo0: USB revision 2.0
 armpmu0: interrupting on local_intc irq 9
 uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-sdmmc0: direct I/O error 5, r=6 p=0xbb260f24 write
+sdmmc0: direct I/O error 5, r=6 p=0xa5b76f24 write
 sdmmc0: SD card status: 4-bit, C10, U1, A1
 ld0 at sdmmc0: <0x02:0x544d:SA32G:0x50:0x00434f06:0x12b>
 ld0: 29544 MB, 7503 cyl, 128 head, 63 sec, 512 bytes/sect x 60506112 sectors
-ld0: 4-bit width,IPsec: Initialized Security Association Processing.
- High-Speed/SDR25, 50.000 MHz
+IPsec: Initialized Security Association Processing.
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 sdmmc1: 4-bit width, 50.000 MHz
+sdmmc1: SDIO function
 bwfm0 at sdmmc1 function 1
 (manufacturer 0x2d0, product 0xa9a6) at sdmmc1 function 2 not configured
-uhub1 at uhub0 port 1: vendor 0424 (0x0424) product 9514 (0x9514), class 9/0, rev 2.00/2.00, addr 2
-uhub1: multiple transaction translators
-uhub1: 5 ports with 4 removable, self powered
-usmsc0 at uhub1 port 1
-usmsc0: vendor 0424 (0x0424) product ec00 (0xec00), rev 2.00/2.00, addr 3
-ukphy0 at usmsc0 phy 1: OUI 0x00800f, model 0x000c, rev. 3
-ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-usmsc0: Ethernet address b8:27:eb:b4:61:d5
-uhidev0 at uhub1 port 5 configuration 1 interface 0
-uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
+(manufacturer 0x2d0, product 0xa9a6, standard function interface code 0x2) at sdmmc1 function 3 not configured
+uhidev0 at uhub0 port 1 configuration 1 interface 0
+uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/1
 ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub1 port 5 configuration 1 interface 1
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
+uhidev1 at uhub0 port 1 configuration 1 interface 1
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
 uhub0: autoconfiguration error: illegal enable change, port 1
-WARNING: 2 errors while detecting hardware; check system log.
+WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
 kern.module.path=/stand/evbarm/9.99.56/modules
 WARNING: no TOD clock present
 vchiq0: interrupting on icu irq 66
-vchiq: vchiq_init_state: slot_zero = 0xbb6b0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xa5fc0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
-bwfm0: Firmware file default:    brcmfmac43430-sdio.bin
-bwfm0: Firmware file model-spec: brcmfmac43430-sdio.raspberrypi,3-model-b.bin
+bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
+bwfm0: Firmware file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-a-plus.bin
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 audio0 at vcaudio0: playback, capture, half duplex, independent
@@ -161,11 +154,11 @@ audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 40ms for playback
 audio0: slinear_le:16 2ch 48000Hz, blk 40ms for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
-bwfm0: Found Firmware file: brcmfmac43430-sdio.bin
-bwfm0: NVRAM file default:    brcmfmac43430-sdio.txt
-bwfm0: NVRAM file model-spec: brcmfmac43430-sdio.raspberrypi,3-model-b.txt
-bwfm0: Found NVRAM file: brcmfmac43430-sdio.raspberrypi,3-model-b.txt
+bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
+bwfm0: NVRAM file default:    brcmfmac43455-sdio.txt
+bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
+bwfm0: Found NVRAM file: brcmfmac43455-sdio.txt
 bwfm0: CHIPACTIVE
-bwfm0: wl0: Oct 23 2017 03:55:53 version 7.45.98.38 (r674442 CY) FWID 01-e58d219f
-bwfm0: address b8:27:eb:e1:34:80
+bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
+bwfm0: address b8:27:eb:c3:ec:9b
 wsdisplay0: screen 4 added (default, vt100 emulation)

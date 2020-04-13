@@ -3,8 +3,8 @@ for i in `grep -hv \# List `
 do
 	echo $i
 	#(cd /usr/pkgsrc/*/$i;make package-install)
-	#(cd /mnt/`uname -p`/All;pkg_add $i)
-	pkg_add $i
+	(cd /mnt/`uname -p`/All;pkg_add $i)
+	#pkg_add $i
 done
 
 # install rootcerts for https 
