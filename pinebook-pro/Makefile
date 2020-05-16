@@ -1,5 +1,6 @@
 RELEASE=/usr/release/images
-ISO=${RELEASE}/NetBSD-9.99.50-evbarm-aarch64-202003191230Z.iso
+ISO=${RELEASE}/NetBSD-9.99.61-evbarm-aarch64-202005140200Z.iso
+
 IMAGE=arm64.img
 VND0=/dev/sd2
 SD0=/dev/sd2
