@@ -1,95 +1,104 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20200322)
+Subject: pinebook status update (20200517)
 
 Update:
+ NetBSD/aarch64 9.99.61 
+
 - Pinebook Pro 
- NetBSD/aarch64 9.99.50 
- mate desktop/camera/WiFi
+ mate/xfce4/camera/WiFi
  ToDo:  
  - HDMI output via USB-C 
- - Wi-Fi: checksum error makes system hung
-   copy the files from
-   https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
-   into /libdata/firmware/if_bwfm/ then reboot
-   bwfm0 will appear in ifconfig :)
- - sometimes stopped,with make -j 6 load.
+ - Audio output: can't switch speaker & headphone out
 
 - Pinebook
-  NetBSD/aarch64 9.99.50
-XXX:  mpv -vo=drm hardware accelaration disabled? 
-XXX:  checking: with 9.0 DTB
-
-sysinfo:
- awk-20200218 dhcpcd-8.1.6 dtc-1.5.1 g++-8.4.0
- gcc-8.4.0 libc-12.215 libcurses-9.0 libssh-36.0
- libterminfo-2.0 NetBSD-9.99.50 openssh-8.2 opensshd-8.2
- openssl-1.1.1d sh-20181212-20200319111925Z
- unbound-1.9.6 userland-NetBSD-9.99.50/evbarm
-
-pkgsrc:
- GConf-3.2.3nb4 SDL-1.2.15nb30 SDL2-2.0.12 apache-2.4.41nb3
- arm-trusted-firmware-rk3399-2.2nb2 audacious-3.10.1nb4
- boost-libs-1.72.0 clang-9.0.1 cmake-3.16.5nb1 cups-base-2.3.1nb3
- curl-7.69.1 dhcpcd-8.1.6 ffmpeg3-3.4.7nb3 ffmpeg4-4.2.2nb1
- fossil-2.10nb2 git-base-2.25.1nb1 glib-networking-2.64.0
- gnupg2-2.2.19nb2 gnutls-3.6.12nb1 gsed-4.8 gspell-1.8.3nb3
- gtk2+-2.24.32nb13 gtk3+-3.24.14nb2 harfbuzz-2.6.4nb2
- ibus-1.5.22nb2 icu-64.2nb2 jpeg-9d json-glib-1.4.4nb1
- libass-0.14.0nb4 libffi-3.3nb1 librsvg-2.48.0nb1 mate-1.22.2nb2
- mpv-0.32.0nb3 ncurses-6.2 nginx-1.16.1nb2 nspr-4.25
- nss-3.50 openjdk8-1.8.242nb3 osabi-NetBSD-9.99.50
- p11-kit-0.23.15nb1 pango-1.44.7nb2 php-7.3.15 poppler-0.86.1
- py37-sphinx-2.4.4 python27-2.7.17nb2 python37-3.7.7
- ruby26-base-2.6.5nb2 ruby26-mikutter-4.0.4 rust-1.42.0
- u-boot-pinebook-pro-2020.01.rc5nb5 vala-0.48.1
- xnp2-0.86nb10 youtube-dl-20200306 zsh-5.8
+ mate/xfce4/camera/HDMI
+ ToDo:
+ - internal WiFi
 
 System Updates:
+https://github.com/ebijun/NetBSD/commit/22255484d5cef2c85df591acaa9596532faa51b5#diff-0e9bbf9b41704f5ca70364c4bad76672
 
-http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
+sysinfo:
+ awk-20200218 dhcpcd-9.0.2 g++-8.4.0 gcc-8.4.0
+ libc-12.215 libcurses-9.0 libssh-36.0
+ libterminfo-2.0 NetBSD-9.99.61 netpgpverify-20200503
+ openssh-8.2 opensshd-8.2 openssl-1.1.1g
+ sh-20181212-20200513221349Z tzdata-2020a
+ userland-NetBSD-9.99.61/evbarm
 
 pkgsrc:
- https://github.com/ebijun/NetBSD/commit/69a27a51dacb9607170a16a38130f3c402ab3650
+ GConf-3.2.3nb4 MesaLib-20.0.6 SDL-1.2.15nb31 apache-2.4.43nb2
+ apr-1.7.0nb1 arm-trusted-firmware-rk3399-2.2nb2 asunder-2.9.5
+ audacious-4.0.3 automake-1.16.2 bash-5.0.17 boehm-gc-8.0.4nb1
+ boost-libs-1.73.0 clang-10.0.0nb1 cmake-3.17.2nb1 curl-7.70.0nb1
+ dhcpcd-9.0.2 firefox52-52.9.0nb25 fossil-2.10nb3 git-base-2.26.2nb1
+ glib2-2.64.2nb1 gnupg2-2.2.20nb1 gnutls-3.6.13nb1 go-1.14.2
+ graphviz-2.40.1nb47 gtk2+-2.24.32nb13 gtk3+-3.24.18 gvfs-1.6.7nb48
+ harfbuzz-2.6.5 icu-66.1 inkscape-1.0nb1 libffi-3.3nb2
+ llvm-10.0.0 lua53-5.3.5 mate-1.24.0 mlterm-3.9.0
+ mozilla-rootcerts-1.0.20191207nb1 mozjs60-60.8.0nb4
+ nodejs-14.2.0 nss-3.52 openjdk8-1.8.252 osabi-NetBSD-9.99.61
+ pango-1.44.7nb2 perl-5.30.2 php-7.3.18 poppler-0.87.0
+ pulseaudio-13.0nb4 python27-2.7.18 python36-3.6.10nb2
+ python37-3.7.7 qt4-libs-4.8.7nb21 ruby26-base-2.6.6
+ ruby26-mikutter-4.0.5 ruby26-mikutter-plugins-twitter-4.0nb2
+ rust-1.42.0nb2 samba-4.12.2 sayaka-3.4.5 seamonkey-2.49.5nb6
+ tk-8.6.10 uim-1.8.8nb4 vala-0.48.5 wxGTK30-3.0.4nb5
+ xfce4-4.14.1 xnp2-0.86nb10 xscreensaver-5.44 xvkbd-3.5nb1
+ youtube-dl-20200508 zsh-5.8
 
-works well: 
- evince gedit mate medit py-sphinx gimp seamonkey inkscape
+pkgsrc todo:
+- seamonkey: 2.53.2 build problem
+   cannot find type c_long in this scope
+- asunder
+   cdparanoia reading failed
 
-- HDMI port works.
+System Updates:
+http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
+
+Tips:
+- HDMI port works on pinebook.
  Connect display to pinebook HDMI port
  # pkg_add arandr
  % arandr
+
 - mate: pkgsrc/meta-pkgs/mate
  https://twitter.com/ebijun/status/1086814579647102976
  pkg_add mate
  echo "mate-session" >> .xinitrc
  startx
+
 - ibus 
  export XMODIFIERS=@im=ibus
+
 - firefox52: 
  https://twitter.com/ebijun/status/1086487791104450563
  PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
     general.useragent.local=ja if you want it.
+
 - Add eDP transmitter and enable display pipeline
  http://mail-index.netbsd.org/source-changes/2019/02/03/msg103047.html
  arandr works well: display up-side down
  https://twitter.com/ebijun/status/1092885154127724544
+
 - keymapping: [Shift][<>] on 11inch
  https://wiki.netbsd.org/ports/evbarm/allwinner/#index3h2
+
 - replace AC Adapter for heavy load
  Anker PowerPort10 A2133+USB DC Cable with 3.5mm/1.35mm connecter
-- USB Wifi: works well,sometimes unseened with heavy load.
+
+- USB Wifi: urtwn0 works 
  urtwn0: I-O DATA DEVICE, INC. (0x4bb) WN-G150UM (0x94c)
 
 ToDo:
 - libreoffice
   g95 need aarch64--netbsd support
    -> --disable-coinmp
-- kde
 - Deleted from pkgsrc: pdfshuffler 
   need replacement for editing PDF pages
 
 Version: 
- NetBSD 9.99.50 (GENERIC64) #0: Thu Mar 19 11:19:25 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.61 (GENERIC64) #0: Wed May 13 22:13:49 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
@@ -111,7 +120,7 @@ pkgchk.conf:
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-03-22/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-04-18/
 
 --
 Jun Ebihara
