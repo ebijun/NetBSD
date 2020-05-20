@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/osaka
+ Place/nagoya
  RPI/RPIupdate2020
  RPI
  Place/intro
