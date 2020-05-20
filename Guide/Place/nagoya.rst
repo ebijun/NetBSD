@@ -33,17 +33,18 @@ NBUG例会この一年
 
 .. csv-table::
  :widths: 10 15 20 40
- 2020/5,OSC名古屋online,,,
- 2020/4,中止,,,
- 2020/3,中止,,,
- 2020/2,神宮西,あたりや,https://togetter.com/li/1469785,458
- 2020/1,黒川,本陣串や,https://togetter.com/li/1458375,242
- 2019/12,神宮西,好々,https://togetter.com/li/1443180,230
- 2019/11,黒川,菊井かつ,https://togetter.com/li/1431863,272
- 2019/10,池下,いしはらさん訃報,https://togetter.com/li/1421861,281
- 2019/9,黒川,本陣串や,https://togetter.com/li/1407443,253
- 2019/8,ODC→黒川,本陣串や,https://togetter.com/li/1394879,222
- 2019/7,OSC名古屋,OkiDoki,https://togetter.com/li/1375440,1860
+
+ 2020/5,OSC名古屋online,,
+ 2020/4,中止,,
+ 2020/3,中止,,
+ 2020/2,神宮西,あたりや,https://togetter.com/li/1469785
+ 2020/1,黒川,本陣串や,https://togetter.com/li/1458375
+ 2019/12,神宮西,好々,https://togetter.com/li/1443180
+ 2019/11,黒川,菊井かつ,https://togetter.com/li/1431863
+ 2019/10,池下,いしはらさん訃報,https://togetter.com/li/1421861
+ 2019/9,黒川,本陣串や,https://togetter.com/li/1407443
+ 2019/8,ODC→黒川,本陣串や,https://togetter.com/li/1394879
+ 2019/7,OSC名古屋,OkiDoki,https://togetter.com/li/1375440
  2019/6,黒川,菊井かつ,https://togetter.com/li/1368948
  2019/5,神宮西,あたりや,https://togetter.com/li/1356522
 

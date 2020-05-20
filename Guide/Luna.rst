@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -36,6 +36,49 @@
 
 .. image:: Picture/2014/07/05/DSC_0230.jpg
  :height: 230
+
+nono - LUNA-I emulator
+-------------------------------------
+
+「nono は NetBSD とかで動作する LUNA-I とかのエミュレータです。 でもまだ動きません。」 [167]_
+
+::
+
+ nono 0.0.3 (2020/05/16) 置いときますね。
+ http://pastel-flower.jp/~isaki/nono/
+ なんちゃってROM用意したので、実機ROMなくても一応起動はすると思う。けど起動しかできないのと、こっからどうしたもんかは追々…。
+
+「nonoさんが実機ROMなしでも起動するようなのでとりあえず最小インストールイメージを置きました」　[168]_
+
+::
+
+ NetBSD/luna68k 9.0 minimam liveimage 20200518版
+ http://teokurebsd.org/netbsd/liveimage/20200518-luna68k/
+
+nonoからのNetBSD/luna68k liveimage起動 [169]_ 
+
+::
+
+ 1) nono-0.0.3 をダウンロード
+ https://twitter.com/isaki68k/status/1261646479816404992
+ 2) 展開して doc/index.html を読んでビルド
+ 3) liveimage をダウンロードして gunzip
+ 4) nono.cfg を作って置く
+ https://gist.github.com/tsutsui/340546bdc064cee786ed2473fb510463
+ 5) wx/nono で実行
+ 6) Emulated ROM上で以下のコマンドを実行
+ k
+ [enter]
+ [enter]
+ d
+ boot
+ g
+ x
+
+::
+
+「設定ファイルでvmtype=luna88kにして、O/luna88kのリリースセットの中のboot を-Aオプションで指定とかまでは出来ます。」　[170]_
+「it was made from scratch.」　[171]_
 
 LUNA前夜 - 誕生と再生のためのテーマ
 -------------------------------------
@@ -548,7 +591,9 @@ LUNA年表　- 月の刃
  2018/8,菅,LUNA68K OSC2018Kyoto ブース展示 LUNAのPSG音源でPCM再生
  2018/8,筒,LUNA68K OSC2018Kyoto ブース展示 sayaka+mlterm-fb
  2018/7,青,LUNA-88K2 OSC2018Nagoya ブース展示 [165]_
- 
+ 2020/4,,オムロン元社長・立石義雄氏逝去 [172]_
+ 2020/5,井,nono-0.0.3リリース [167]_ 
+
 最近のLUNA
 ----------------
 
@@ -778,6 +823,13 @@ yaft X LUNA
 .. [163] https://twitter.com/tsutsuii/status/991191717050118144
 .. [164] https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
 .. [165] https://www.slideshare.net/ao_kenji/osc2019-nagoya
+.. [166] http://www.pastel-flower.jp/~isaki/nono/
+.. [167] https://twitter.com/isaki68k/status/1261646479816404992
+.. [168] https://twitter.com/tsutsuii/status/1262429647364427783
+.. [169] https://twitter.com/tsutsuii/status/1262430960718508033
+.. [170] https://twitter.com/isaki68k/status/1262375954883772418
+.. [171] https://twitter.com/isaki68k/status/1262949576362930180
+.. [172] https://ja.wikipedia.org/wiki/%E7%AB%8B%E7%9F%B3%E7%BE%A9%E9%9B%84
 
 
 このページ
