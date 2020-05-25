@@ -11,11 +11,11 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-04-18/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-05-30/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-9.99.56-evbarm-${ARCH}-202004120440Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.61-evbarm-${ARCH}-202005130530Z.iso
 
 KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
 

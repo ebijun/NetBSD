@@ -3,11 +3,11 @@
 ARCH=aarch64
 RPI_IMG=arm64.img
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2019-09-21/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-04-18/
 
 # iso file information
 
-IMAGE=/usr/release/images/NetBSD-9.99.13-evbarm-${ARCH}-201909261940Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.57-evbarm-${ARCH}-202004231620Z.iso
 
 PKGSRC=../../../../pkgsrc/pkgsrc-2018-08-04.tar.gz 
 
@@ -47,7 +47,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file cdmount rpi extract cdunmount bwfm-firmware #rpi4
+all: file cdmount rpi extract cdunmount rpi4
 
 #update: cdmount update-extract cdunmount
 
@@ -189,7 +189,7 @@ rpi4:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
 
-	tar xvf kernel/boot.tar -C ${MNT}
+	tar xvzf kernel/rpi4-acpi.tgz -C ${MNT}
 
 	umount ${MNT}
 	vnconfig -u ${VND}

@@ -4,19 +4,35 @@ cat << EOF
 To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
+Topics:
+- enabling WebRTC by default in firefox
+ http://mail-index.netbsd.org/tech-pkg/2020/05/23/msg023230.html
+- Fix races in sdmmc tasks and teach ld@sdmmc to abort xfers on detach.
+ http://mail-index.netbsd.org/source-changes/2020/05/24/msg117643.html 
+- bind-9.16.3
+ http://mail-index.netbsd.org/source-changes/2020/05/24/msg117660.html
+- ffmpeg4 build problems
+ http://mail-index.netbsd.org/port-arm/2020/05/05/msg006643.html
+
 Update:
  NetBSD/aarch64 9.99.61 
 
 - Pinebook Pro 
  mate/xfce4/camera/WiFi
- ToDo:  
+ToDo:  
  - HDMI output via USB-C 
  - Audio output: can't switch speaker & headphone out
+ - Power Management
+ - 3D acceleration
 
 - Pinebook
  mate/xfce4/camera/HDMI
- ToDo:
+ToDo:
  - internal WiFi
+ - Power Management
+ - 3D acceleration
+
+
 
 System Updates:
 https://github.com/ebijun/NetBSD/commit/22255484d5cef2c85df591acaa9596532faa51b5#diff-0e9bbf9b41704f5ca70364c4bad76672
