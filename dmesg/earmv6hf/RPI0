@@ -4,12 +4,13 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.56 (RPI) #0: Tue Apr 21 07:08:12 UTC 2020
+NetBSD 9.99.61 (RPI) #0: Tue May 12 23:18:52 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 448 MB
 avail memory = 429 MB
 pool redzone disabled for 'buf4k'
 pool redzone disabled for 'buf64k'
+entropy: no seed from bootloader
 timecounter: Timecounters tick every 10.000 msec
 running cgd selftest aes-xts-256 aes-xts-512 done
 armfdt0 (root)
@@ -74,6 +75,7 @@ vchiq0 at simplebus1: BCM2835 VCHIQ
 /arm-pmu at simplebus0 not configured
 gpioleds0 at simplebus0: ACT
 bcmrng0 at simplebus1: RNG
+entropy: ready
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 timecounter: Timecounter "bcmtmr0" frequency 1000000 Hz quality 100
 sdmmc0 at bcmsdhost0
@@ -101,7 +103,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.56/modules
+kern.module.path=/stand/evbarm/9.99.61/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xca420000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
