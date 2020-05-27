@@ -1,58 +1,45 @@
-VERSION: :1,$s/2020-04-18/2020-04-18/g
-ISO:     :1,$s/202004210820Z/202004210820Z/g
-NetBSD:  :1,$s/9.99.56/9.99.56/g
-PKGSRC:  :1,$s/2020-04-18/2020-04-18/
+VERSION: :1,$s/2020-05-30/2020-05-30/g
+ISO:     :1,$s/202005130530Z/202005130530Z/g
+NetBSD:  :1,$s/9.99.61/9.99.61/g
+PKGSRC:  :1,$s/2020-05-30/2020-05-30/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-04-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2020-05-30-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-04-18-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2020-05-30-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-04-18-earmv6hf/2020-04-18-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-04-18-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-05-30-earmv6hf/2020-05-30-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-05-30-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.56 evbarm-earmv6hf 202004210820Z rpi.img from nyftp.
-
+- NetBSD 9.99.61 evbarm-earmv6hf 202005130530Z rpi.img from nyftp.
 - RPI4: testing
 
-- Update from Open Source Conference 2020 Osaka
-https://github.com/ebijun/NetBSD/commit/237b4cc01dfb0246731a0a83060df04e12189eeb
+In Trouble:
+RPI/earmv6hf can't boot after 202005130530Z to 202005211100Z changes:
+ http://mail-index.netbsd.org/port-arm/2020/05/26/msg006684.html
+
+- Update from 2020-04-18
+https://github.com/ebijun/NetBSD/commit/1176e2408b04e6ff56abe04612c648490b9b80dc 
 
 sysinfo:
- awk-20200218 bind-9.14.8 dhcpcd-9.0.1 dtc-1.5.1 g++-8.4.0 gcc-8.4.0
- libc-12.215 libcurses-9.0 libssh-36.0 libterminfo-2.0 NetBSD-9.99.56
- openssh-8.2 opensshd-8.2 openssl-1.1.1f libpcap-1.9.1
- sh-20181212-20200421070812Z tcpdump-4.9.3 userland-NetBSD-9.99.56/evbarm
+ dhcpcd-9.0.2 NetBSD-9.99.61 netpgpverify-20200503 openssl-1.1.1g
+ sh-20181212-20200512231852Z tzdata-2020a userland-NetBSD-9.99.61/evbarm
 
 pkgsrc:
- at-spi2-atk-2.34.1nb1 at-spi2-core-2.35.1nb1 atk-2.33.3nb1
- bash-5.0.16nb1 cairo-gobject-1.16.0nb4 curl-7.69.1
- desktop-file-utils-0.24nb1 dillo-3.0.5nb6 fossil-2.10nb3
- fribidi-1.0.9 gd-2.3.0 gdk-pixbuf2-2.40.0nb1 giflib-5.2.1nb2
- git-base-2.26.1 glib2-2.64.2 gobject-introspection-1.64.1
- gtk2+-2.24.32nb13 gtk3+-3.24.18 harfbuzz-2.6.5 icu-66.1 jpeg-9d
- libffi-3.3nb2 libgpg-error-1.37 libidn-1.35 libimagequant-2.12.6
- libpsl-0.21.0nb1 libwebp-1.1.0 libxkbcommon-0.10.0 libxslt-1.1.34nb1
- lz4-1.9.2 medit-1.2.0nb13 mlterm-3.8.9nb2 mozilla-rootcerts-1.0.20191207nb1
- nghttp2-1.40.0nb3 p5-Error-0.17029 p5-IO-Socket-SSL-2.067
- p5-MailTools-2.21 p5-Net-DNS-1.23 p5-Net-SSLeay-1.88
- pango-1.44.7nb2 pcre-8.44 perl-5.30.2 py37-cElementTree-3.7.7
- py37-expat-3.7.7 python27-2.7.18 python37-3.7.7 qt5-qtbase-5.14.2nb1
- qt5-qtx11extras-5.14.2nb1 qt5-qtxmlpatterns-5.14.2nb1 ruby26-atk-3.4.1nb1
- ruby26-base-2.6.6 ruby26-cairo-1.16.5 ruby26-cairo-gobject-3.4.1nb1
- ruby26-delayer-1.1.2 ruby26-delayer-deferred-2.1.3 ruby26-diva-1.0.2
- ruby26-gdk_pixbuf2-3.4.1nb1 ruby26-gettext-3.3.5 ruby26-gio2-3.4.1nb1
- ruby26-glib2-3.4.1nb1 ruby26-gobject-introspection-3.4.1nb1
- ruby26-gtk2-3.4.1nb2 ruby26-locale-2.1.3 ruby26-mikutter-4.0.4
- ruby26-mikutter-plugins-twitter-4.0nb1 ruby26-mini_portile2-2.5.0
- ruby26-moneta-1.2.1 ruby26-nokogiri-1.10.9nb1 ruby26-pango-3.4.1nb2
- ruby26-pkg-config-1.4.1 ruby26-public_suffix-4.0.3 ruby26-unf_ext-0.0.7.6
- shared-mime-info-1.10nb1 ttmkfdir2-20021109nb6 uim-1.8.8nb4
- wayland-1.18.0 wayland-protocols-1.20 wget-1.20.3nb6 zsh-5.8 zstd-1.4.4
+ bash-5.0.17 curl-7.70.0nb2 git-base-2.26.2nb2 glib2-2.64.2nb1 gmp-6.2.0
+ gnutls-3.6.13nb2 gtk2+-2.24.32nb14 gtk3+-3.24.20nb1 harfbuzz-2.6.6
+ libcfg+-0.7.0 libcups-2.3.3nb2 libpaper-1.1.28 libtasn1-4.16.0
+ libyaml-0.2.4 mlterm-3.9.0 nettle-3.6 nghttp2-1.40.0nb4 p11-kit-0.23.15nb1
+ pcre2-10.35 py27-expat-2.7.18 qt5-qtbase-5.14.2nb3 ruby26-atk-3.4.2
+ ruby26-cairo-gobject-3.4.2 ruby26-gdk_pixbuf2-3.4.2 ruby26-gio2-3.4.2
+ ruby26-glib2-3.4.2 ruby26-gobject-introspection-3.4.2 ruby26-gtk2-3.4.2
+ ruby26-mikutter-4.0.5 ruby26-mikutter-plugins-twitter-4.0nb2 ruby26-moneta-1.3.0
+ ruby26-native-package-installer-1.0.9 ruby26-pango-3.4.2 sudo-1.8.31p1
+ wget-1.20.3nb7
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
@@ -85,7 +72,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-04-18-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-05-30-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -141,7 +128,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-04-18/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-05-30/
 
 - If you use Official Package for NetBSD9:
 
@@ -320,17 +307,22 @@ pkgsrc Todo:
 
 =====================
 
-For (Canceled) Open Source Conference 2020 NetBSD booth.
+For Open Source Conference Online/Nagoya 2020 NetBSD booth.
 I've updated raspberry-pi image.
 
- https://www.ospn.jp/
+ https://event.ospn.jp/osc2020-online-nagoya/
 
-http://www.re.soum.co.jp/~jun/OSC2020osaka.pdf
+Nagoya *BSD Users' Group BoF:
+May.30 2020: 10:00-10:45 JST(GMT+9) ZOOM&YoutubeLive
+https://register.ospn.jp/osc2020-online-nagoya/modules/eventrsv/index.php?id=1
+
+http://www.re.soum.co.jp/~jun/OSC2020nagoya.pdf
 http://www.jp.NetBSD.org/
+http://www.nagoya.bug.gr.jp/
 https://www.facebook.com/NetBSD.jp 
-https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2019.rst
+https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2020.rst
 
-- NetBSD 9.99.56 earmv6hf rpi.img.gz base
+- NetBSD 9.99.61 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -368,7 +360,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-04-18/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-05-30/
 
 Installed Packages:
   bash
@@ -436,6 +428,3 @@ One more time: (we're gonna celebrate
 
 --
 Jun Ebihara
-
-Feeding ducks in the park and wishing you were far away
-That's entertainment, that's entertainment (The Jam)
