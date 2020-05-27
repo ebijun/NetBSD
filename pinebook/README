@@ -1,51 +1,70 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20200517)
+Subject: pinebook status update (20200527)
+
+Topics:
+- Fix races in sdmmc tasks and teach ld@sdmmc to abort xfers on detach.
+ http://mail-index.netbsd.org/source-changes/2020/05/24/msg117643.html 
+- bind-9.16.3
+ http://mail-index.netbsd.org/source-changes/2020/05/24/msg117660.html
+- ffmpeg4 build problems
+ http://mail-index.netbsd.org/port-arm/2020/05/05/msg006643.html
+- enabling WebRTC by default in firefox
+ http://mail-index.netbsd.org/tech-pkg/2020/05/23/msg023230.html
 
 Update:
- NetBSD/aarch64 9.99.61 
+ NetBSD/aarch64 9.99.64
 
 - Pinebook Pro 
  mate/xfce4/camera/WiFi
  ToDo:  
  - HDMI output via USB-C 
  - Audio output: can't switch speaker & headphone out
+ - Power Management
+ - 3D acceleration
 
 - Pinebook
  mate/xfce4/camera/HDMI
  ToDo:
  - internal WiFi
+ - Power Management
+ - 3D acceleration
 
 System Updates:
-https://github.com/ebijun/NetBSD/commit/22255484d5cef2c85df591acaa9596532faa51b5#diff-0e9bbf9b41704f5ca70364c4bad76672
+https://github.com/ebijun/NetBSD/commit/5404a7dc8d8443d1224c0f2482931278c98c2756
 
 sysinfo:
- awk-20200218 dhcpcd-9.0.2 g++-8.4.0 gcc-8.4.0
- libc-12.215 libcurses-9.0 libssh-36.0
- libterminfo-2.0 NetBSD-9.99.61 netpgpverify-20200503
- openssh-8.2 opensshd-8.2 openssl-1.1.1g
- sh-20181212-20200513221349Z tzdata-2020a
- userland-NetBSD-9.99.61/evbarm
+ bind-9.16.3 dhcpcd-9.0.2 libc-12.217 NetBSD-9.99.64
+ netpgpverify-20200503 openssl-1.1.1g sh-20181212-20200525051705Z
+ tzdata-2020a userland-NetBSD-9.99.64/evbarm
 
 pkgsrc:
- GConf-3.2.3nb4 MesaLib-20.0.6 SDL-1.2.15nb31 apache-2.4.43nb2
- apr-1.7.0nb1 arm-trusted-firmware-rk3399-2.2nb2 asunder-2.9.5
- audacious-4.0.3 automake-1.16.2 bash-5.0.17 boehm-gc-8.0.4nb1
- boost-libs-1.73.0 clang-10.0.0nb1 cmake-3.17.2nb1 curl-7.70.0nb1
- dhcpcd-9.0.2 firefox52-52.9.0nb25 fossil-2.10nb3 git-base-2.26.2nb1
- glib2-2.64.2nb1 gnupg2-2.2.20nb1 gnutls-3.6.13nb1 go-1.14.2
- graphviz-2.40.1nb47 gtk2+-2.24.32nb13 gtk3+-3.24.18 gvfs-1.6.7nb48
- harfbuzz-2.6.5 icu-66.1 inkscape-1.0nb1 libffi-3.3nb2
- llvm-10.0.0 lua53-5.3.5 mate-1.24.0 mlterm-3.9.0
- mozilla-rootcerts-1.0.20191207nb1 mozjs60-60.8.0nb4
- nodejs-14.2.0 nss-3.52 openjdk8-1.8.252 osabi-NetBSD-9.99.61
- pango-1.44.7nb2 perl-5.30.2 php-7.3.18 poppler-0.87.0
+ ImageMagick-7.0.9.27 MesaLib-20.0.6 PC6001VX-3.4.0nb1
+ apache-2.4.43nb2 asunder-2.9.5 audacious-4.0.3
+ bash-5.0.17 boost-build-1.73.0 boost-jam-1.73.0 boost-libs-1.73.0
+ clang-10.0.0nb1 cmake-3.17.2nb3 cups-base-2.3.3nb2
+ curl-7.70.0nb2 deforaos-browser-0.5.4 deforaos-camera-0.3.0nb2
+ deforaos-editor-0.4.1nb2 deforaos-keyboard-0.4.0nb2
+ dhcpcd-9.0.2 dhcpcd-gtk-0.7.7nb12 dillo-3.0.5nb6
+ emacs-26.3 ffmpeg2-2.8.15nb1 ffmpeg3-3.4.7nb5 ffmpeg4-4.2.2nb6
+ ffmpegthumbnailer-2.2.2 firefox52-52.9.0nb25 fossil-2.10nb3
+ ghostscript-agpl-9.52 gimp-2.10.18nb6 git-base-2.26.2nb2
+ glib2-2.64.2nb1 gnupg2-2.2.20nb2 go-1.14.2
+ gtk2+-2.24.32nb14 gtk3+-3.24.20nb1 harfbuzz-2.6.6
+ icu-66.1 inkscape-1.0nb1 jwm-2.3.7nb8 libcups-2.3.3nb2
+ libffi-3.3nb2 lintpkgsrc-4.94nb2 llvm-10.0.0 lua53-5.3.5
+ marco-1.24.0 mate-1.24.0 mlterm-3.9.0
+ mozilla-rootcerts-1.0.20191207nb1 mozjs60-60.8.0nb5
+ mpv-0.32.0nb8 mupdf-1.17.0 nodejs-14.3.0 nss-3.52
+ openjdk8-1.8.252 openjpeg-2.3.1nb3 osabi-NetBSD-9.99.64
+ perl-5.30.2 php-7.3.18 polkit-0.116nb2 poppler-0.87.0
  pulseaudio-13.0nb4 python27-2.7.18 python36-3.6.10nb2
- python37-3.7.7 qt4-libs-4.8.7nb21 ruby26-base-2.6.6
- ruby26-mikutter-4.0.5 ruby26-mikutter-plugins-twitter-4.0nb2
- rust-1.42.0nb2 samba-4.12.2 sayaka-3.4.5 seamonkey-2.49.5nb6
+ qt4-libs-4.8.7nb22 qt5-qtbase-5.14.2nb1
+ ruby26-base-2.6.6 ruby26-mikutter-4.0.5
+ ruby26-mikutter-plugins-twitter-4.0nb2 rust-1.43.1
+ samba-4.12.2 sayaka-3.4.5 seamonkey-2.49.5nb6
+ spidermonkey52-52.7.4nb12 sqlite3-3.32.0 sylpheed-3.7.0nb7
  tk-8.6.10 uim-1.8.8nb4 vala-0.48.5 wxGTK30-3.0.4nb5
- xfce4-4.14.1 xnp2-0.86nb10 xscreensaver-5.44 xvkbd-3.5nb1
- youtube-dl-20200508 zsh-5.8
+ xfce4-4.14.0nb2 xnp2-0.86nb8 youtube-dl-20200508
 
 pkgsrc todo:
 - seamonkey: 2.53.2 build problem
@@ -98,7 +117,7 @@ ToDo:
   need replacement for editing PDF pages
 
 Version: 
- NetBSD 9.99.61 (GENERIC64) #0: Wed May 13 22:13:49 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.64 (GENERIC64) #0: Mon May 25 05:17:05 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
