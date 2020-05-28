@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.61 (RPI) #0: Tue May 12 23:18:52 UTC 2020
+NetBSD 9.99.64 (RPI) #0: Wed May 27 21:53:04 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 448 MB
 avail memory = 429 MB
@@ -88,7 +88,7 @@ sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1
 sdmmc1 at sdhc0 slot 0
 dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
 usb0 at dwctwo0: USB revision 2.0
-sdmmc0: direct I/O error 5, r=6 p=0xc9ff0f24 write
+sdmmc0: direct I/O error 5, r=6 p=0xc9ff0f14 write
 uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 IPsec: Initialized Security Association Processing.
@@ -113,7 +113,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.61/modules
+kern.module.path=/stand/evbarm/9.99.64/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xca420000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
