@@ -1,47 +1,45 @@
-VERSION: :1,$s/2020-05-30/2020-05-30/g
-ISO:     :1,$s/202005130530Z/202005130530Z/g
-NetBSD:  :1,$s/9.99.61/9.99.61/g
-PKGSRC:  :1,$s/2020-05-30/2020-05-30/
+VERSION: :1,$s/2020-06-01/2020-06-01/g
+ISO:     :1,$s/202005272200Z/202005272200Z/g
+NetBSD:  :1,$s/9.99.64/9.99.64/g
+PKGSRC:  :1,$s/2020-06-01/2020-06-01/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-05-30-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2020-06-01-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-05-30-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2020-06-01-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-05-30-earmv6hf/2020-05-30-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-05-30-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-06-01-earmv6hf/2020-06-01-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-06-01-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.61 evbarm-earmv6hf 202005130530Z rpi.img from nyftp.
+- NetBSD 9.99.64 evbarm-earmv6hf 202005272200Z rpi.img from nyftp.
+- bind-9.16.3 
+  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8617
+- Update dtb and config: Thanx Harold Gutch and jmcneill@
+  https://github.com/ebijun/NetBSD/commit/94b73c4067364a41cb787abc18a9f0f5c1b348de
+  http://mail-index.netbsd.org/port-arm/2020/05/26/msg006684.html
+  http://mail-index.netbsd.org/port-arm/2020/05/27/msg006688.html
+ 
 - RPI4: testing
 
-In Trouble:
-RPI/earmv6hf can't boot after 202005130530Z to 202005211100Z changes:
- http://mail-index.netbsd.org/port-arm/2020/05/26/msg006684.html
-
-- Update from 2020-04-18
-https://github.com/ebijun/NetBSD/commit/1176e2408b04e6ff56abe04612c648490b9b80dc 
+- Update from 2020-05-30 version
+ https://github.com/ebijun/NetBSD/commit/caae8ec22e3acd2bdf63dbb48083168737c6a235
 
 sysinfo:
- dhcpcd-9.0.2 NetBSD-9.99.61 netpgpverify-20200503 openssl-1.1.1g
- sh-20181212-20200512231852Z tzdata-2020a userland-NetBSD-9.99.61/evbarm
+ bind-9.16.3 libc-12.217 NetBSD-9.99.64 ntp-4.2.8pl14
+ sh-20181212-20200527215304Z userland-NetBSD-9.99.64/evbarm
 
 pkgsrc:
- bash-5.0.17 curl-7.70.0nb2 git-base-2.26.2nb2 glib2-2.64.2nb1 gmp-6.2.0
- gnutls-3.6.13nb2 gtk2+-2.24.32nb14 gtk3+-3.24.20nb1 harfbuzz-2.6.6
- libcfg+-0.7.0 libcups-2.3.3nb2 libpaper-1.1.28 libtasn1-4.16.0
- libyaml-0.2.4 mlterm-3.9.0 nettle-3.6 nghttp2-1.40.0nb4 p11-kit-0.23.15nb1
- pcre2-10.35 py27-expat-2.7.18 qt5-qtbase-5.14.2nb3 ruby26-atk-3.4.2
- ruby26-cairo-gobject-3.4.2 ruby26-gdk_pixbuf2-3.4.2 ruby26-gio2-3.4.2
- ruby26-glib2-3.4.2 ruby26-gobject-introspection-3.4.2 ruby26-gtk2-3.4.2
- ruby26-mikutter-4.0.5 ruby26-mikutter-plugins-twitter-4.0nb2 ruby26-moneta-1.3.0
- ruby26-native-package-installer-1.0.9 ruby26-pango-3.4.2 sudo-1.8.31p1
- wget-1.20.3nb7
+ fossil-2.11 libcups-2.3.3nb3 ruby26-public_suffix-4.0.5
 
-- pre-installed packages:
+Need Checking:
+- bluetooth keyboard/mouse setting
+- RPI camera module
+
+pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Keyboard layout checkpoint:
@@ -56,7 +54,7 @@ System Update:
 
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
-- mikutter support : 
+mikutter support : 
  I make sample API key,pre-installed.
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/root/.mikutter/plugin
  https://github.com/Akkiesoft/how-to-make-mikutter-work-again
@@ -72,7 +70,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-05-30-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-06-01-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -128,7 +126,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-05-30/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-06-01/
 
 - If you use Official Package for NetBSD9:
 
@@ -249,17 +247,6 @@ I2C - "Raspberry Pi I2C implementation still broken?"
    http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48855
    http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48932
 
-musica - DLNA/UPnP music server: (Thanx @cvsync)
- MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
- 
-  1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.22-netbsd6-evbarm-earmv6hf.tgz for evaluation.
-  3. pkg_add musica-0.3.22-netbsd6-evbarm-earmv6hf.tgz
-  4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
-  5. Find from DLNA/UPnP AV equipment.
-  6. With a little luck,you'll find musica and enjoy music via musica.
-  7. If you feel slow,Try {NetBSD/amd64 i386,OSX,Ubuntu} Version or improve NetBSD.
-
 XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   http://www.pastel-flower.jp/~isaki/XM6i/
   XM6i-0.55-netbsd7.0-earmv6hf-2015Q2.tar.gz
@@ -269,12 +256,9 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   https://twitter.com/isaki68k/status/625138538271502337
 
 Todo:
-- RPI UEFI
 - set2pkg: update via pkgsrc.
 - pkg_in/pkg_summary
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
-- https://github.com/isaki68k/sayaka: PHP/vala based twitter client.
-  https://twitter.com/tsutsuii/status/700963911630065664
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
@@ -323,7 +307,7 @@ http://www.nagoya.bug.gr.jp/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2020.rst
 
-- NetBSD 9.99.61 earmv6hf rpi.img.gz base
+- NetBSD 9.99.64 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
