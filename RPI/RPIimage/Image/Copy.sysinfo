@@ -2,7 +2,7 @@
 DIR=`ls -t|grep tmp20  |head -1|sed -e 's/://'`
 
 ARCH=earmv6hf
-MACHINE=RPI3
+MACHINE=RPI3B+
 
 #COMMAND=ls
 #COMMAND=diff 
