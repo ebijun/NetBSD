@@ -47,6 +47,7 @@ RaspberryPIのNetBSDイメージについて
  2019/11/25,9.99.18,,,,NetBSD-SA-2019-005,,
  2020/01/25,9.99.37,3.9.8,,,UVM NetBSD SA 2020-001,OSC大阪,http://mail-index.netbsd.org/port-arm/2020/01/21/msg006451.html
  2020/04/18,9.99.56,4.0.4,3.8.9nb2,1.1.1f,gcc8.4,OSC東京,http://mail-index.netbsd.org/port-arm/2020/04/22/msg006618.html
+ 2020/06/01,9.99.64,4.0.5,3.9.0,1.1.1g,,OSC名古屋,http://mail-index.netbsd.org/port-arm/2020/05/28/msg006699.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
