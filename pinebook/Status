@@ -5,10 +5,8 @@ To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
 Topics:
-- Fix races in sdmmc tasks and teach ld@sdmmc to abort xfers on detach.
- http://mail-index.netbsd.org/source-changes/2020/05/24/msg117643.html 
-- bind-9.16.3
- http://mail-index.netbsd.org/source-changes/2020/05/24/msg117660.html
+- Pinebook Pro, First Impressions
+ https://bentsukun.ch/posts/pinebook-pro/
 - ffmpeg4 build problems
  http://mail-index.netbsd.org/port-arm/2020/05/05/msg006643.html
 - enabling WebRTC by default in firefox
@@ -22,14 +20,12 @@ Update:
  ToDo:  
  - HDMI output via USB-C 
  - Audio output: can't switch speaker & headphone out
- - Power Management
  - 3D acceleration
 
 - Pinebook
  mate/xfce4/camera/HDMI
  ToDo:
  - internal WiFi
- - Power Management
  - 3D acceleration
 
 System Updates:
@@ -79,6 +75,23 @@ System Updates:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 Tips:
+- System Clocks
+ % sysctl -a |grep freq
+
+pinebook:
+ machdep.cpufreq.cpu0.available = 1152 1104 1008 816 648 408
+ # sysctl -w machdep.cpufreq.cpu0.target=1152
+
+pinebook-pro:
+ machdep.cpufreq.cpu0.available = 1416 1200 1008 816 600 408
+ machdep.cpufreq.cpu4.available = 2000 1800 1608 1416 1200 1008 816 600 408
+ # sysctl -w machdep.cpufreq.cpu0.target=1416
+ # sysctl -w machdep.cpufreq.cpu4.target=2000
+
+-Battery Status
+  envstat 
+XXX: link from mate-power-manager? 
+
 - HDMI port works on pinebook.
  Connect display to pinebook HDMI port
  # pkg_add arandr
@@ -118,6 +131,7 @@ ToDo:
    -> --disable-coinmp
 - Deleted from pkgsrc: pdfshuffler 
   need replacement for editing PDF pages
+- vlc
 
 Version: 
  `uname -v`
