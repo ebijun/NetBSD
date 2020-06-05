@@ -5,9 +5,6 @@ require 'net/ftp'
 
 FTP="nyftp.netbsd.org"
 CDN="nycdn.netbsd.org"
-#FTP="nycdn.netbsd.org"
-#FTP="ftp.jp.netbsd.org"
-#FTP="ftp7.jp.netbsd.org"
 
 BRANCH="/pub/NetBSD-daily/HEAD/"
 #BRANCH="/pub/NetBSD-daily/netbsd-9/"
@@ -23,7 +20,7 @@ class ISO
 	def check(path,arch)
 		l = @iso
 		while f=l.shift
-			if /#{arch}.iso/ =~ f
+			if /#{arch}-install.img.gz/ =~ f
 				@path = path+f
 				return path+f
 			end
@@ -40,7 +37,7 @@ class ISO
 		return (@path.scan(/[0-9]+Z/))[0]
 	end
 	def body
-		return (@path.scan(/NetBSD-[0-9]+.*.iso/))[0].sub(".iso","")
+		return (@path.scan(/NetBSD-[0-9]+.*-install.img.gz/))[0].sub("-install.img.gz","")
 	end
 end
 
@@ -79,7 +76,9 @@ ftp = Net::FTP.open(FTP) do |ftp|
 		end
 	end
 	puts "ftp http://"+CDN+isofile.path
-	puts "mv "+isofile.body+".iso "+IMAGES+isofile.body+"-"+isofile.date+".iso"
+	puts "gunzip "+isofile.body+"-install.img.gz"
+	puts "mv "+isofile.body+"-install.img "+IMAGES+isofile.body+"-"+isofile.date+"-install.img"
+	puts "mv "+isofile.body+"-install.img "+IMAGES+isofile.body+"-"+isofile.date+"-install.img"
 
 	ftp.quit
 end
