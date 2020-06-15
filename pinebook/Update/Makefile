@@ -1,29 +1,32 @@
 RELEASE=/usr/release/images
 IMG=${RELEASE}/NetBSD-9.99.64-aarch64-202006040350Z-install.img
+ISO=${RELEASE}/NetBSD-9.99.64-evbarm-aarch64-202005260840Z.iso
 DK=dk1
 
 ##
 
 DATE=`date +%Y%m%d%H%M`
-LIST=`ls -P /mnt1/evbarm-aarch64/binary/sets/`|fgrep -vf Pattern`
+LIST=`ls -P /mnt1/evbarm/binary/sets/ |fgrep -vf Pattern`
+
+sss:
+	echo ${LIST}
 
 all:
 	./Update
 	echo make etcupdate
 
 etcupdate:
-	etcupdate -a -s /mnt/evbarm/binary/sets/etc.tgz
+	etcupdate -a -s /mnt1/evbarm-aarch64/binary/sets/etc.tar.xz
 
 update:
 	for i in ${LIST} ;do tar xzpf $$i -C / ;  done
 
 kernel-update:
-	cp /mnt1/evbarm-aarch64/binary/kernel/sun50i-a64-pinebook.dtb.gz /boot/dtb/allwinner
-	gunzip /boot/dtb/allwinner/sun50i-a64-pinebook.dtb.gz
-	cp /mnt1/evbarm-aarch64/binary/kernel/netbsd-GENERIC64.gz /
+	cp /mnt1/evbarm/binary/kernel/netbsd-GENERIC64.gz /
 	gunzip /netbsd-GENERIC64.gz
 	mv /netbsd /netbsd.1
 	mv /netbsd-GENERIC64 /netbsd
+	what /netbsd
 
 backup:
 	mkdir ${DATE}
@@ -40,9 +43,11 @@ ls:
 	ls -l /mnt1/evbarm-aarch64/binary/kernel/netbsd-GENERIC64.img.gz
 
 mount:
-	vndconfig vnd0 ${IMG}
-	dkctl vnd0
-	mount /dev/${DK} /mnt1
+#	vndconfig vnd0 ${IMG}
+#	dkctl vnd0
+#	mount /dev/${DK} /mnt1
+	vndconfig vnd0 ${ISO}
+	mount_cd9660 /dev/vnd0a /mnt1
 
 umount:
 	umount /mnt1
