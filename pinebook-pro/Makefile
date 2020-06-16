@@ -11,6 +11,9 @@ MNT=/mnt1
 DATE=`date +%Y%m%d%H%M`
 LIST=`ls -P ${MNT}/evbarm/binary/sets |fgrep -vf Pattern`
 
+list:
+	echo ${LIST}
+
 dtbcopy:
 	mount_msdos ${SD0}e ${MNT}
 	cp ${MNT}/dtb/rockchip/rk3399-pinebook-pro.dtb ${MNT}

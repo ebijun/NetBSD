@@ -263,6 +263,14 @@ cpu5: L1 32KB/64B*256L*2W PIPT Data cache
 cpu5: L2 1024KB/64B*1024L*16W PIPT Unified cache
 cpu5: revID=0x4, PMCv3, 4k table, 64k table, 16bit ASID
 cpu5: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu3: Dcache line 64, Icache line 64
+cpu3: L1 32KB/64B*256L*2W VIPT Instruction cache
+cpu3: L1 32KB/64B*128L*4W PIPT Data cache
+cpu3: L2 512KB/64B*512L*16W PIPT Unified cache
+cpu3: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
+cpu3: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu2: Dcache line 64, Icache line 64
@@ -279,14 +287,6 @@ cpu1: L1 32KB/64B*128L*4W PIPT Data cache
 cpu1: L2 512KB/64B*512L*16W PIPT Unified cache
 cpu1: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
 cpu1: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu3: Dcache line 64, Icache line 64
-cpu3: L1 32KB/64B*256L*2W VIPT Instruction cache
-cpu3: L1 32KB/64B*128L*4W PIPT Data cache
-cpu3: L2 512KB/64B*512L*16W PIPT Unified cache
-cpu3: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
-cpu3: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt0: 1416.000 MHz, 1125000 uV
 cpufreqdt0: 1200.000 MHz, 1000000 uV
 cpufreqdt0: 1008.000 MHz, 925000 uV
@@ -302,31 +302,32 @@ cpufreqdt4: 1008.000 MHz, 875000 uV
 cpufreqdt4: 816.000 MHz, 825000 uV
 cpufreqdt4: 600.000 MHz, 800000 uV
 cpufreqdt4: 408.000 MHz, 800000 uV
-sdmmc1 at dwcmmc1
-uhub0 at usb0Lid: lid opened.
-: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+sdmmc1 at dwcmmc1Lid: lid opened.
+
+uhub0 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-uhub1 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub1: 1 port with 1 removable, self powered
-uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub2 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 1 port with 1 removable, self powered
 uhub3 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub3: 1 port with 1 removable, self powered
 uhub4 at usb4: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 uhub4: 1 port with 1 removable, self powered
+sdmmc2 at dwcmmc0
 uhub5 at usb5: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub5: 1 port with 1 removable, self powered
-sdmmc2 at dwcmmc0
 uhub6 at usb6: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 uhub6: 1 port with 1 removable, self powered
 uhub7 at usb7: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub7: 1 port with 1 removable, self powered
+IPsec: Initialized Security Association Processing.
 armpmu0: interrupting on GICv3 irq 23
 armpmu1: interrupting on GICv3 irq 23
-IPsec: Initialized Security Association Processing.
 sdhc0: autoconfiguration error: timeout waiting for mask 0x3 value 0 (state=0x1fff0a06)
 sdhc0: command or data phase inhibited
 sdhc0: autoconfiguration error: tuning did not complete, using fixed sampling clock
+ehci0: handing over low speed device on port 1 to companion controller
 ld0 at sdmmc0: <0x45:0x0100:DA4064:0x00:0x0b46130f:0x000>
 ld0: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
 ld0: 8-bit width, HS200, 4096 KB cache, 200.000 MHz
@@ -335,8 +336,7 @@ sdmmc2: SDIO function
 bwfm0 at sdmmc2 function 1
 (manufacturer 0x2d0, product 0xa9bf) at sdmmc2 function 2 not configured
 (manufacturer 0x2d0, product 0xa9bf, standard function interface code 0x2) at sdmmc2 function 3 not configured
-ehci0: handing over low speed device on port 1 to companion controller
-uhub8 at uhub2 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/85.36, addr 2
+uhub8 at uhub0 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/85.36, addr 2
 uhub8: single transaction translator
 uhub8: 4 ports with 4 removable, self powered
 uhidev0 at uhub3 port 1 configuration 1 interface 0
