@@ -78,7 +78,6 @@ ftp = Net::FTP.open(FTP) do |ftp|
 	puts "ftp http://"+CDN+isofile.path
 	puts "gunzip "+isofile.body+"-install.img.gz"
 	puts "mv "+isofile.body+"-install.img "+IMAGES+isofile.body+"-"+isofile.date+"-install.img"
-	puts "mv "+isofile.body+"-install.img "+IMAGES+isofile.body+"-"+isofile.date+"-install.img"
 
 	ftp.quit
 end
