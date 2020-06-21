@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -39,6 +39,7 @@
 .. csv-table::
  :widths: 30 20 60
 
+ はりねずみ珈琲店,,
  滝川クラフトビール工房,滝川,泉町1丁目9区。空知ピルスナー。温泉。
  おやじ中華ナリケン,狸小路,マコモダケの春巻。
  paul's cafe,紀伊國屋書店下,ベルギービールとチキンのランチ。
@@ -145,7 +146,8 @@
  2016 Hokkaido,6/17-18,710,57,札幌コンベンションセンター
  2017 Hokkaido,7/14-15,580,54,札幌コンベンションセンター
  2018 Hokkaido,7/6-7,730,66,札幌コンベンションセンター
- 2019 Hokkaido,5/31-6/1,,54,札幌コンベンションセンター
+ 2019 Hokkaido,5/31-6/1,720,54,札幌コンベンションセンター
+ 2020 Hokkaido,6/27,,,オンライン開催
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -157,6 +159,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 
+ 155.,OSC2020北海道,http://www.re.soum.co.jp/~jun/OSC2020hokkaido.pdf
  142.,OSC2019北海道,http://www.re.soum.co.jp/~jun/OSC2019hokkaido.pdf
  126.,OSC2018北海道,http://www.re.soum.co.jp/~jun/OSC2018hokkaido.pdf
  109.,OSC2017北海道,http://www.re.soum.co.jp/~jun/OSC2017hokkaido.pdf
@@ -172,7 +176,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2019北海道 NetBSDブース展示の記録,
+ OSC2019北海道 NetBSDブース展示の記録,https://togetter.com/li/1361738
  OSC2018北海道 NetBSDブース展示の記録,https://togetter.com/li/1244344
  OSC2017北海道 NetBSDブース展示の記録,http://togetter.com/li/1130009
  OSC2016北海道 NetBSDブース展示の記録,http://togetter.com/li/988853
@@ -209,6 +213,11 @@ OSC北海道展示物
 #. NetBSD/Zaurus
 #. Making install-image Presentation by つついさん
   http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html
+
+2019年
+^^^^^^^^^^
+
+
 
 2018年
 ^^^^^^^^^^^^^^^^^^
