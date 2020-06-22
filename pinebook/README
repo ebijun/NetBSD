@@ -1,71 +1,73 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20200527)
+Subject: pinebook status update (20200622)
 
 Topics:
-- Fix races in sdmmc tasks and teach ld@sdmmc to abort xfers on detach.
- http://mail-index.netbsd.org/source-changes/2020/05/24/msg117643.html 
-- bind-9.16.3
- http://mail-index.netbsd.org/source-changes/2020/05/24/msg117660.html
-- ffmpeg4 build problems
- http://mail-index.netbsd.org/port-arm/2020/05/05/msg006643.html
-- enabling WebRTC by default in firefox
- http://mail-index.netbsd.org/tech-pkg/2020/05/23/msg023230.html
+- firefox76 works,firefox77 stucked 
+- luna68k emulater on pinebook/pinebook pro
+ http://www.pastel-flower.jp/~isaki/nono/
+ https://twitter.com/tsutsuii/status/1262429647364427783
+ https://twitter.com/tsutsuii/status/1262430960718508033
+ pkgsrc skelton
+  https://github.com/ebijun/NetBSD/tree/master/pkgsrc/nono
+   copy to /usr/pkgsrc/emulators/nono
+   make
+   execute wx/nono
 
 Update:
- NetBSD/aarch64 9.99.64
+ NetBSD/aarch64 9.99.68
 
 - Pinebook Pro 
  mate/xfce4/camera/WiFi
  ToDo:  
  - HDMI output via USB-C 
  - Audio output: can't switch speaker & headphone out
- - Power Management
  - 3D acceleration
 
 - Pinebook
  mate/xfce4/camera/HDMI
  ToDo:
  - internal WiFi
- - Power Management
  - 3D acceleration
 
 System Updates:
-https://github.com/ebijun/NetBSD/commit/5404a7dc8d8443d1224c0f2482931278c98c2756
+https://github.com/ebijun/NetBSD/commit/df198985feba6e67de56bc0c7cafe95e7032e469
 
 sysinfo:
- bind-9.16.3 dhcpcd-9.0.2 libc-12.217 NetBSD-9.99.64
- netpgpverify-20200503 openssl-1.1.1g sh-20181212-20200525051705Z
- tzdata-2020a userland-NetBSD-9.99.64/evbarm
+ bind-9.16.3 dhcpcd-9.1.2 libc-12.217 libssh-37.0 NetBSD-9.99.68
+ ntp-4.2.8pl14 openssh-8.3 opensshd-8.3 sh-20181212-20200620154819Z
+ userland-NetBSD-9.99.68/evbarm
 
 pkgsrc:
- ImageMagick-7.0.9.27 MesaLib-20.0.6 PC6001VX-3.4.0nb1
- apache-2.4.43nb2 asunder-2.9.5 audacious-4.0.3
- bash-5.0.17 boost-build-1.73.0 boost-jam-1.73.0 boost-libs-1.73.0
- clang-10.0.0nb1 cmake-3.17.2nb3 cups-base-2.3.3nb2
- curl-7.70.0nb2 deforaos-browser-0.5.4 deforaos-camera-0.3.0nb2
- deforaos-editor-0.4.1nb2 deforaos-keyboard-0.4.0nb2
- dhcpcd-9.0.2 dhcpcd-gtk-0.7.7nb12 dillo-3.0.5nb6
- emacs-26.3 ffmpeg2-2.8.15nb1 ffmpeg3-3.4.7nb5 ffmpeg4-4.2.2nb6
- ffmpegthumbnailer-2.2.2 firefox52-52.9.0nb25 fossil-2.10nb3
- ghostscript-agpl-9.52 gimp-2.10.18nb6 git-base-2.26.2nb2
- glib2-2.64.2nb1 gnupg2-2.2.20nb2 go-1.14.2
- gtk2+-2.24.32nb14 gtk3+-3.24.20nb1 harfbuzz-2.6.6
- icu-66.1 inkscape-1.0nb1 jwm-2.3.7nb8 libcups-2.3.3nb2
- libffi-3.3nb2 lintpkgsrc-4.94nb2 llvm-10.0.0 lua53-5.3.5
- marco-1.24.0 mate-1.24.0 mlterm-3.9.0
- mozilla-rootcerts-1.0.20191207nb1 mozjs60-60.8.0nb5
- mpv-0.32.0nb8 mupdf-1.17.0 nodejs-14.3.0 nss-3.52
- openjdk8-1.8.252 openjpeg-2.3.1nb3 osabi-NetBSD-9.99.64
- perl-5.30.2 php-7.3.18 polkit-0.116nb2 poppler-0.87.0
- pulseaudio-13.0nb4 python27-2.7.18 python36-3.6.10nb2
- qt4-libs-4.8.7nb22 qt5-qtbase-5.14.2nb1
- ruby26-base-2.6.6 ruby26-mikutter-4.0.5
- ruby26-mikutter-plugins-twitter-4.0nb2 rust-1.43.1
- samba-4.12.2 sayaka-3.4.5 seamonkey-2.49.5nb6
- spidermonkey52-52.7.4nb12 sqlite3-3.32.0 sylpheed-3.7.0nb7
- tk-8.6.10 uim-1.8.8nb4 vala-0.48.5 wxGTK30-3.0.4nb5
- xfce4-4.14.0nb2 xnp2-0.86nb8 youtube-dl-20200508
-
+ GConf-3.2.3nb5 ImageMagick-7.0.10.19 PC6001VX-3.5.1
+ SDL2-2.0.12nb4 apache-2.4.43nb3 atril-1.24.0nb1
+ audacious-4.0.4 avahi-0.6.32nb24
+ boost-headers-1.73.0nb1 boost-libs-1.73.0nb1
+ bsdtar-3.4.3 caja-1.24.0nb1 clang-10.0.0nb2
+ cmake-3.17.3 cups-base-2.3.3nb4 curl-7.70.0nb2
+ dbus-1.12.18 dhcpcd-9.1.1 emacs-26.3
+ ffmpeg2-2.8.15nb4 ffmpeg3-3.4.7nb8 ffmpeg4-4.3
+ firefox-77.0.1nb2 firefox-l10n-77.0.1 firefox52-52.9.0nb27
+ fossil-2.11.1 freetype2-2.10.2 gedit-3.22.1nb13
+ ghostscript-9.05nb22 ghostscript-agpl-9.52nb1
+ giflib-5.2.1nb4 gimp-2.10.20 git-base-2.27.0
+ gnupg2-2.2.20nb3 gnutls-3.6.14 go-1.14.4 go114-1.14.4
+ gtk2+-2.24.32nb14 gtk3+-3.24.20nb1 gtkmm3-3.24.2nb1
+ harfbuzz-2.6.7 icu-67.1 inkscape-1.0nb4 json-c-0.14
+ jwm-2.3.7nb9 librsvg-2.48.3nb1
+ llvm-10.0.0nb1 m17n-lib-1.8.0nb2
+ medit-1.2.0nb14 meson-0.54.2 mlterm-3.9.0nb2
+ mozilla-rootcerts-1.0.20200529nb1
+ mozilla-rootcerts-openssl-2.4nb1 mozjs60-60.8.0nb6
+ mpv-0.32.0nb13 mupdf-1.17.0nb1 nanotodon-0.1.1nb4
+ netpbm-10.79.04nb4 nginx-1.18.0 nodejs-14.4.0
+ nss-3.53.1 onscripter-20191116 openjdk8-1.8.252nb2
+ osabi-NetBSD-9.99.68 perl-5.30.3 php-7.3.19
+ rust-1.43.1nb1 sylpheed-3.7.0nb7 tcl-8.6.10nb2
+ uim-1.8.8nb5 vala-0.48.6 vte3-0.60.3nb1
+ wayland-1.18.0nb1 web2c-2020nb1 wget-1.20.3nb8
+ x265-3.4 xfce4-4.14.0nb2 xfce4-wm-4.14.2
+ youtube-dl-20200616.1
+ 
 pkgsrc todo:
 - seamonkey: 2.53.2 build problem
    cannot find type c_long in this scope
@@ -76,6 +78,23 @@ System Updates:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 Tips:
+- System Clocks
+ % sysctl -a |grep freq
+
+pinebook:
+ machdep.cpufreq.cpu0.available = 1152 1104 1008 816 648 408
+ # sysctl -w machdep.cpufreq.cpu0.target=1152
+
+pinebook-pro:
+ machdep.cpufreq.cpu0.available = 1416 1200 1008 816 600 408
+ machdep.cpufreq.cpu4.available = 2000 1800 1608 1416 1200 1008 816 600 408
+ # sysctl -w machdep.cpufreq.cpu0.target=1416
+ # sysctl -w machdep.cpufreq.cpu4.target=2000
+
+-Battery Status
+  envstat 
+XXX: link from dbus or mate-power-manager? 
+
 - HDMI port works on pinebook.
  Connect display to pinebook HDMI port
  # pkg_add arandr
@@ -89,11 +108,6 @@ Tips:
 
 - ibus 
  export XMODIFIERS=@im=ibus
-
-- firefox52: 
- https://twitter.com/ebijun/status/1086487791104450563
- PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
-    general.useragent.local=ja if you want it.
 
 - Add eDP transmitter and enable display pipeline
  http://mail-index.netbsd.org/source-changes/2019/02/03/msg103047.html
@@ -115,9 +129,10 @@ ToDo:
    -> --disable-coinmp
 - Deleted from pkgsrc: pdfshuffler 
   need replacement for editing PDF pages
+- vlc
 
 Version: 
- NetBSD 9.99.64 (GENERIC64) #0: Mon May 25 05:17:05 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.68 (GENERIC64) #0: Sat Jun 20 15:48:19 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
