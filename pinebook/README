@@ -1,8 +1,8 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20200622)
+Subject: pinebook status update (20200623)
 
 Topics:
-- firefox76 works,firefox77 stucked 
+- firefox77.0.1nb1 works,77.0.1nb2 stucked.
 - luna68k emulater on pinebook/pinebook pro
  http://www.pastel-flower.jp/~isaki/nono/
  https://twitter.com/tsutsuii/status/1262429647364427783
@@ -15,6 +15,7 @@ Topics:
 
 Update:
  NetBSD/aarch64 9.99.68
+
 
 - Pinebook Pro 
  mate/xfce4/camera/WiFi
@@ -81,6 +82,9 @@ Tips:
 - System Clocks
  % sysctl -a |grep freq
 
+ Install pkgsrc/sysutils/estd from pkgsrc and start it on bootup 
+ for automatic up-/downscaling.
+
 pinebook:
  machdep.cpufreq.cpu0.available = 1152 1104 1008 816 648 408
  # sysctl -w machdep.cpufreq.cpu0.target=1152
@@ -91,7 +95,7 @@ pinebook-pro:
  # sysctl -w machdep.cpufreq.cpu0.target=1416
  # sysctl -w machdep.cpufreq.cpu4.target=2000
 
--Battery Status
+- Battery Status
   envstat 
 XXX: link from dbus or mate-power-manager? 
 
@@ -119,13 +123,17 @@ XXX: link from dbus or mate-power-manager?
 
 - replace AC Adapter for heavy load
  Anker PowerPort10 A2133+USB DC Cable with 3.5mm/1.35mm connecter
+ USB-C laptop charger from HP
 
-- USB Wifi: urtwn0 works 
+- USB Wifi: urtwn0/run0 works 
  urtwn0: I-O DATA DEVICE, INC. (0x4bb) WN-G150UM (0x94c)
+ pinebook: internal Wi-Fi not supported
+ pinebook pro: internal bwfm0 works,sometimes hangs
 
 ToDo:
 - libreoffice
   g95 need aarch64--netbsd support
+   -> PKGSRC_FORTRAN=gfortran
    -> --disable-coinmp
 - Deleted from pkgsrc: pdfshuffler 
   need replacement for editing PDF pages
@@ -140,8 +148,16 @@ dmesg:
 
 System image: dd to eMMC.
  http://www.invisible.ca/arm/
- on pinebook pro,with bundled Linux image, first disable eMMC with 
- switch inside,and boot MicroSD.
+
+ pinebook-pro:
+ 1. Insert microSD, boot (Linux from eMMC comes up), 
+ 2. hit "Restart", 
+ 3. It will boot from microSD. 
+ 4. dd'ing to eMMC for installation, the eMMC is faster
+- eMMC can disable with switch inside,and boot MicroSD.
+
+ Getting Started with NetBSD on the Pinebook Pro by Benny Siegert 
+ https://bentsukun.ch/posts/pinebook-pro-netbsd/
 
 sysinfo:
  https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/sysinfo
