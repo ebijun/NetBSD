@@ -1,5 +1,5 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.67-aarch64-202006162310Z-install.img
+IMG=${RELEASE}/NetBSD-9.99.68-aarch64-202006201730Z-install.img
 ISO=${RELEASE}/NetBSD-9.99.64-evbarm-aarch64-202005260840Z.iso
 DK=dk1
 
@@ -16,7 +16,7 @@ all:
 	echo make etcupdate
 
 etcupdate:
-	etcupdate -a -s /mnt1/evbarm-aarch64/binary/sets/etc.tgz
+	etcupdate -a -s /mnt1/evbarm-aarch64/binary/sets/etc.tar.xz
 
 update:
 	for i in ${LIST} ;do tar xzpf $$i -C / ;  done
