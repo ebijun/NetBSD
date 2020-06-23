@@ -1,8 +1,12 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20200622)
+Subject: pinebook status update (20200623)
 
 Topics:
 - firefox76 works,firefox77 stucked 
+ "Firefox blocks on reading /dev/random. Symlink /dev/urandom for now
+ until Firefox is fixed"
+ http://mail-index.netbsd.org/port-arm/2020/06/22/msg006792.html
+ https://twitter.com/ebijun/status/1275238082241982465
 - luna68k emulater on pinebook/pinebook pro
  http://www.pastel-flower.jp/~isaki/nono/
  https://twitter.com/tsutsuii/status/1262429647364427783
@@ -73,6 +77,8 @@ pkgsrc todo:
    cannot find type c_long in this scope
 - asunder
    cdparanoia reading failed
+- atril
+  hangs on startup
 
 System Updates:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
