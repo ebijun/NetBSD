@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20200623)
+Subject: pinebook status update (20200624)
 
 Topics:
 - firefox77.0.1nb1 works,77.0.1nb2 stucked.
@@ -20,19 +20,21 @@ Topics:
 Update:
  NetBSD/aarch64 9.99.68
 
+ToDo:
+- Hardware RNG drivers,hooked up to rnd(9) 
+  http://mail-index.netbsd.org/port-arm/2020/06/23/msg006796.html
+- 3D acceleration
 
 - Pinebook Pro 
  mate/xfce4/camera/WiFi
  ToDo:  
  - HDMI output via USB-C 
  - Audio output: can't switch speaker & headphone out
- - 3D acceleration
 
 - Pinebook
  mate/xfce4/camera/HDMI
  ToDo:
  - internal WiFi
- - 3D acceleration
 
 System Updates:
 https://github.com/ebijun/NetBSD/commit/df198985feba6e67de56bc0c7cafe95e7032e469
