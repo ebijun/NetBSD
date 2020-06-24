@@ -7,6 +7,8 @@ Topics:
  until Firefox is fixed"
  http://mail-index.netbsd.org/port-arm/2020/06/22/msg006792.html
  https://twitter.com/ebijun/status/1275238082241982465
+ "Avoid reading from /dev/random on NetBSD"
+ http://mail-index.netbsd.org/pkgsrc-changes/2020/06/23/msg216728.html
 - luna68k emulater on pinebook/pinebook pro
  http://www.pastel-flower.jp/~isaki/nono/
  https://twitter.com/tsutsuii/status/1262429647364427783
@@ -146,6 +148,8 @@ ToDo:
 - Deleted from pkgsrc: pdfshuffler 
   need replacement for editing PDF pages
 - vlc
+ Fix vdpau option. Should help aarch64 builds.
+ http://mail-index.netbsd.org/pkgsrc-changes/2020/06/23/msg216727.html
 
 Version: 
  NetBSD 9.99.68 (GENERIC64) #0: Sat Jun 20 15:48:19 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
