@@ -26,12 +26,13 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 FILE_TMP=a.img
 
 # extract sets.
-SETS=${MNT_CDROM}/evbarm/binary/sets
-RPI=${MNT_CDROM}/evbarm/binary/gzimg/rpi.img
-KERNELBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI.bin.gz
-KERNELBIN7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.bin.gz
-KERNEL=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI.gz
-KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202006222130Z/evbarm-earmv6hf/binary
+SETS=${BINARY}/sets
+RPI=${BINARY}/gzimg/rpi.img
+KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
+KERNELBIN7=${BINARY}/kernel/netbsd-RPI2.bin.gz
+KERNEL=${BINARY}/kernel/netbsd-RPI.gz
+KERNEL7=${BINARY}/kernel/netbsd-RPI2.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
@@ -57,8 +58,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-#all: file cdmount rpi extract cdunmount kernel-update bwfm-firmware
-all: file cdmount rpi extract cdunmount bwfm-firmware
+all: file rpi extract bwfm-firmware
 
 #update: cdmount update-extract cdunmount
 
