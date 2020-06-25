@@ -31,7 +31,21 @@ Update:
  bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
  bwfm0: address b8:27:eb:c3:ec:9b
  
+- Serial Console on bootup
+
+I got a report about serial console issue:
+ :
+Starting virecover.
+Starting devpubd.
+Starting local daemons:.
+JRQ
+"And lots of weirdness on the console continues for a while.  Then, no
+matter what I type, the console is weird, output is weird."
+"I tried guessing different baud rates, but nothing works.  The initial
+messages are fine at 115,200"
+
 - RPI4: testing
+  NetBSD/aarch64 on 8 GB Raspberry Pi 4B? threads on port-arm@
 
 - Update from 2020-06-01 version
 https://github.com/ebijun/NetBSD/commit/7092361a73b663ab30106553e7c7c89a398cddc1
