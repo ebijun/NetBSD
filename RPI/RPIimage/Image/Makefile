@@ -9,21 +9,12 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-05-30/
-
-# iso file information
-
-IMAGE=/usr/release/images/NetBSD-9.99.64-evbarm-${ARCH}-202005272200Z.iso
-
-KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
-
-PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
-
-###
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-06-27/
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 FILE_TMP=a.img
+PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
 BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202006222130Z/evbarm-earmv6hf/binary
@@ -58,7 +49,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file rpi extract bwfm-firmware
+all: file rpi extract #bwfm-firmware
 
 #update: cdmount update-extract cdunmount
 
@@ -68,11 +59,11 @@ extract:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
+	mount_msdos /dev/${VND}e ${MNT}/boot
+	umount ${MNT}/boot
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 #	echo extract pkgsrc.
 #	tar xzpf ${PKGSRC} -C ${MNT}/usr
-	mount_msdos /dev/${VND}e ${MNT}/boot
-	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
 
