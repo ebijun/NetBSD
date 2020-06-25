@@ -216,7 +216,27 @@ OSC北海道展示物
 2019年
 ^^^^^^^^^^
 
-
+.. image::  ../Picture/2019/06/01/DSC_7267.JPG
+.. image::  ../Picture/2019/06/01/DSC_7269.JPG
+.. image::  ../Picture/2019/06/01/DSC_7270.JPG
+.. image::  ../Picture/2019/06/01/DSC_7271.JPG
+.. image::  ../Picture/2019/06/01/DSC_7273.JPG
+.. image::  ../Picture/2019/06/01/DSC_7274.JPG
+.. image::  ../Picture/2019/06/01/DSC_7275.JPG
+.. image::  ../Picture/2019/06/01/DSC_7276.JPG
+.. image::  ../Picture/2019/06/01/DSC_7278.JPG
+.. image::  ../Picture/2019/06/01/DSC_7279.JPG
+.. image::  ../Picture/2019/06/01/DSC_7280.JPG
+.. image::  ../Picture/2019/06/01/DSC_7282.JPG
+.. image::  ../Picture/2019/06/01/DSC_7284.JPG
+.. image::  ../Picture/2019/06/01/DSC_7285.JPG
+.. image::  ../Picture/2019/06/01/DSC_7286.JPG
+.. image::  ../Picture/2019/06/01/DSC_7288.JPG
+.. image::  ../Picture/2019/06/01/DSC_7290.JPG
+.. image::  ../Picture/2019/06/01/DSC_7291.JPG
+.. image::  ../Picture/2019/06/01/DSC_7292.JPG
+.. image::  ../Picture/2019/06/01/DSC_7293.JPG
+.. image::  ../Picture/2019/06/01/DSC_7295.JPG
 
 2018年
 ^^^^^^^^^^^^^^^^^^

@@ -179,10 +179,21 @@ OSC名古屋展示物
 #. Speecys
 #. samtk
 
-オープンソースカンファレンス2018 Nagoya&NBUG7月例会
+オープンソースカンファレンス2019 Nagoya&NBUG7月例会
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
+.. image::  ../Picture/2019/07/13/DSC_7376.JPG
+.. image::  ../Picture/2019/07/13/DSC_7377.JPG
+.. image::  ../Picture/2019/07/13/DSC_7379.JPG
+.. image::  ../Picture/2019/07/13/DSC_7380.JPG
+.. image::  ../Picture/2019/07/13/DSC_7386.JPG
+.. image::  ../Picture/2019/07/13/DSC_7388.JPG
+.. image::  ../Picture/2019/07/13/DSC_7392.JPG
+.. image::  ../Picture/2019/07/13/DSC_7397.JPG
+.. image::  ../Picture/2019/07/13/DSC_7408.JPG
+.. image::  ../Picture/2019/07/13/DSC_7411.JPG
+.. image::  ../Picture/2019/07/13/DSC_7415.JPG
+.. image::  ../Picture/2019/07/13/DSC_7416.JPG
 
 オープンソースカンファレンス2018 Nagoya&NBUG5月例会
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -23,8 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/nagoya
+ Place/hokkaido
  RPI/RPIupdate2020
- Luna
  RPI
  Place/intro
