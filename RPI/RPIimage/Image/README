@@ -32,17 +32,10 @@ Update:
  bwfm0: address b8:27:eb:c3:ec:9b
  
 - Serial Console on bootup
-
-I got a report about serial console issue:
- :
-Starting virecover.
-Starting devpubd.
-Starting local daemons:.
-JRQ
-"And lots of weirdness on the console continues for a while.  Then, no
-matter what I type, the console is weird, output is weird."
+ http://mail-index.netbsd.org/port-arm/2020/06/25/msg006813.html
+ http://gnats.netbsd.org/54941
 "I tried guessing different baud rates, but nothing works.  The initial
-messages are fine at 115,200"
+ messages are fine at 115,200"
 
 - RPI4: testing
   NetBSD/aarch64 on 8 GB Raspberry Pi 4B? threads on port-arm@
