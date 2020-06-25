@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.64 (RPI2) #0: Wed May 27 21:53:04 UTC 2020
+NetBSD 9.99.68 (RPI2) #0: Mon Jun 22 20:15:25 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 916 MB
@@ -12,13 +12,15 @@ pool redzone disabled for 'buf4k'
 pool redzone disabled for 'buf64k'
 entropy: no seed from bootloader
 timecounter: Timecounters tick every 10.000 msec
-running cgd selftest aes-xts-256 aes-xts-512 done
 armfdt0 (root)
 simplebus0 at armfdt0: Raspberry Pi 3 Model B Plus Rev 1.3
 simplebus1 at simplebus0
 simplebus2 at simplebus0
+fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
+simplebus3 at simplebus1
+fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
 cpus0 at simplebus0
-simplebus3 at simplebus0
+simplebus4 at simplebus0
 cpu0 at cpus0: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu0: DC enabled IC enabled WB enabled EABT branch prediction enabled
 cpu0: 32KB/64B 2-way L1 VIPT Instruction cache
@@ -28,9 +30,6 @@ vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu1 at cpus0
 cpu2 at cpus0
 cpu3 at cpus0
-fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
-simplebus4 at simplebus1
-fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
 bcmicu0 at simplebus1
 bcmcprman0 at simplebus1: BCM283x Clock Controller
 bcmicu1 at simplebus1: Multiprocessor
@@ -45,7 +44,7 @@ bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 49
 bcmgpio0: pins 32..54 interrupting on icu irq 50
 gpio0 at bcmgpio0: 54 pins
-/soc/firmware/gpio at simplebus4 not configured
+/soc/firmware/gpio at simplebus3 not configured
 bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10
 /soc/power at simplebus1 not configured
 /wifi-pwrseq at simplebus0 not configured
@@ -92,6 +91,12 @@ gpioleds0 at simplebus0: ACT
 bcmrng0 at simplebus1: RNG
 entropy: ready
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu2: DC enabled IC enabled WB enabled EABT branch prediction enabled
+cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu1: DC enabled IC enabled WB enabled EABT branch prediction enabled
 cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
@@ -104,12 +109,6 @@ cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu2: DC enabled IC enabled WB enabled EABT branch prediction enabled
-cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdmmc0 at bcmsdhost0
 sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc1 at sdhc0 slot 0
@@ -122,7 +121,6 @@ sdmmc0: SD card status: 4-bit, C10, U1, V10
 ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x4010773e:0x125>
 ld0: 61023 MB, 7779 cyl, 255 head, 63 sec, 512 bytes/sect x 124975104 sectors
 IPsec: Initialized Security Association Processing.
-ld0: 119814144 trailing sectors not covered by disklabel
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 sdmmc1: 4-bit width, 50.000 MHz
 sdmmc1: SDIO function
@@ -141,11 +139,11 @@ umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 sd0: 111 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 234441648 sectors
-uhidev0 at uhub1 port 2 configuration 1 interface 0
+uhidev0 at uhub1 port 3 configuration 1 interface 0
 uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, iclass 3/1
 ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub1 port 2 configuration 1 interface 1
+uhidev1 at uhub1 port 3 configuration 1 interface 1
 uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
@@ -157,14 +155,19 @@ mue0: LAN7800 id 0x7800 rev 0x2
 ukphy0 at mue0 phy 1: OUI 0x00800f, model 0x0013, rev. 2
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
 mue0: Ethernet address b8:27:eb:3d:70:4f
+cgd: self-test aes-xts-256
+cgd: self-test aes-xts-512
+cgd: self-test aes-cbc-128
+cgd: self-test aes-cbc-256
+cgd: self-test 3des-cbc-192
+cgd: self-test blowfish-cbc-448
+cgd: self-test aes-cbc-128 (encblkno8)
+cgd: self-tests passed
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
-ld0: 119814144 trailing sectors not covered by disklabel
 root on ld0a dumps on ld0b
-ld0: 119814144 trailing sectors not covered by disklabel
-ld0: 119814144 trailing sectors not covered by disklabel
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.64/modules
+kern.module.path=/stand/evbarm/9.99.68/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
@@ -189,3 +192,7 @@ bwfm0: CHIPACTIVE
 bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
 bwfm0: address b8:27:eb:68:25:1a
 wsdisplay0: screen 4 added (default, vt100 emulation)
+uhidev2 at uhub1 port 2 configuration 1 interface 0
+uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 7, iclass 3/1
+ums0 at uhidev2: 3 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0

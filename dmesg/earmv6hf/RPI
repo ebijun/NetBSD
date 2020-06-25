@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.64 (RPI) #0: Wed May 27 21:53:04 UTC 2020
+NetBSD 9.99.68 (RPI) #0: Mon Jun 22 20:15:25 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 178 MB
@@ -12,7 +12,6 @@ pool redzone disabled for 'buf4k'
 pool redzone disabled for 'buf64k'
 entropy: no seed from bootloader
 timecounter: Timecounters tick every 10.000 msec
-running cgd selftest aes-xts-256 aes-xts-512 done
 armfdt0 (root)
 simplebus0 at armfdt0: Raspberry Pi Model A Rev 2
 simplebus1 at simplebus0
@@ -100,11 +99,19 @@ uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
 uhub0: autoconfiguration error: illegal enable change, port 1
+cgd: self-test aes-xts-256
+cgd: self-test aes-xts-512
+cgd: self-test aes-cbc-128
+cgd: self-test aes-cbc-256
+cgd: self-test 3des-cbc-192
+cgd: self-test blowfish-cbc-448
+cgd: self-test aes-cbc-128 (encblkno8)
+cgd: self-tests passed
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.64/modules
+kern.module.path=/stand/evbarm/9.99.68/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xc5f40000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
