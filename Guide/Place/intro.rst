@@ -212,8 +212,8 @@ LibreOfficeをインストールしてみましょう。
  # cd /usr/pkgsrc/misc/libreoffice
  # make package-install
      : 9時間くらいかかります。
- # which soffice
- /usr/pkg/bin/soffice
+ # which loffice
+ /usr/pkg/bin/loffice
 
 依存しているパッケージを調べる
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
