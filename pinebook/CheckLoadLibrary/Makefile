@@ -17,3 +17,6 @@ scan:
 
 clean:
 	rm notfound.list packages
+
+requires:
+	pkg_info -a -Q REQUIRES  | fgrep -v /usr/pkg | sort -u
