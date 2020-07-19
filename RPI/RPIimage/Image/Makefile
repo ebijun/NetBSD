@@ -9,7 +9,7 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-06-27/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-07-25/
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
@@ -71,8 +71,8 @@ extract:
 rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
-	fdisk -uf -0 -s 6/8192/188416 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fdisk -uf -1 -s 169/458752/4456448 ${VND} 
+	fdisk -uf -0 -s 12/32768/163840 ${VND} #32bit FAT id 12 DISKLABEL.proto
+	fdisk -uf -1 -s 169/196608/4964352 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a

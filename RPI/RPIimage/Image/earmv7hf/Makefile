@@ -11,11 +11,11 @@
 
 ARCH=earmv7hf
 
+# version information
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202007071020Z/evbarm-earmv7hf/binary
+
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-05-30/
 
-# iso file information
-
-IMAGE=/usr/release/images/NetBSD-9.99.61-evbarm-${ARCH}-202005130530Z.iso
 
 KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
 
@@ -28,9 +28,9 @@ FILE=`date +%Y-%m-%d`-netbsd-armv7-${ARCH}.img
 FILE_TMP=a.img
 
 # extract sets.
-SETS=${MNT_CDROM}/evbarm/binary/sets
-RPI=${MNT_CDROM}/evbarm/binary/gzimg/armv7.img
-KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
+SETS=${BINARY}/sets
+RPI=${BINARY}/gzimg/armv7.img
+KERNEL7=${BINARY}/kernel/netbsd-RPI2.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
@@ -53,8 +53,8 @@ VND_CDROM=vnd1
 MNT_TMP=/mnt2
 VND_TMP=vnd2
 
-#all: file cdmount rpi extract cdunmount kernel-update bwfm-firmware
-all: file cdmount rpi extract cdunmount bwfm-firmware
+#all: file rpi extract cdunmount kernel-update bwfm-firmware
+all: file rpi extract bwfm-firmware
 
 #update: cdmount update-extract cdunmount
 
@@ -67,8 +67,6 @@ extract:
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 #	echo extract pkgsrc.
 #	tar xzpf ${PKGSRC} -C ${MNT}/usr
-	mount_msdos /dev/${VND}e ${MNT}/boot
-	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -171,18 +169,6 @@ logclean:
 	rm -rf ${MNT}/var/run/resolvconf
 	umount ${MNT}
 	vnconfig -u ${VND}
-
-# mount cdrom image
-cdmount:
-	echo mount cdrom image.
-	vnconfig ${VND_CDROM} ${IMAGE}
-	mount_cd9660 /dev/${VND_CDROM}a ${MNT_CDROM}
-
-# unmount cdrom image
-cdunmount:
-	echo mount cdrom image.
-	umount ${MNT_CDROM}
-	vnconfig -u ${VND_CDROM}
 
 # copy newer firmware to /boot on MSDOS partition
 # https://github.com/raspberrypi/firmware
