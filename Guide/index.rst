@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/hokkaido
+ Place/niigata
  RPI/RPIupdate2020
  RPI
  Place/intro

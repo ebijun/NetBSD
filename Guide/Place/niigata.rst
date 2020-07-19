@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2015-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -50,7 +50,8 @@ Maps:
  2016 Nagaoka,10/1,100,13,まちなかキャンパス長岡
  2017 Nagaoka,10/28,120,12,長岡技術科学大学
  2018 Niigata,11/10,70,13,ほんぽーと新潟市立中央図書館
- 2019 Niigata,10/5,,15,ほんぽーと新潟市立中央図書館
+ 2019 Niigata,10/5,50,15,ほんぽーと新潟市立中央図書館
+ 2020 Niigata,7/25,,,オンライン開催
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,6 +63,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 156,OSC2020新潟 http://www.re.soum.co.jp/~jun/OSC2020niigata.pdf
  148,OSC2019新潟,http://www.re.soum.co.jp/~jun/OSC2019niigata.pdf
  134,OSC2018新潟,http://www.re.soum.co.jp/~jun/OSC2018niigata.pdf
  116,OSC2017長岡,http://www.re.soum.co.jp/~jun/OSC2017nagaoka.pdf
@@ -75,7 +77,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2019新潟 NetBSDブース展示の記録,
+ OSC2019新潟 NetBSDブース展示の記録,https://togetter.com/li/1413105
  OSC2018新潟 NetBSDブース展示の記録,https://togetter.com/li/1286767
  OSC2017長岡 NetBSDブース展示の記録,https://togetter.com/li/1165451
  OSC2016長岡 NetBSDブース展示の記録,https://togetter.com/li/1031383
@@ -88,7 +90,7 @@ togetterまとめ
  :widths: 60 30 60
 
  Bier Bar Ferkel,古町,ドイツビール
- 沼垂ビール,沼垂,ぬったりビール。ほんぽーと徒歩5分。
+ 沼垂ビール,沼垂,ぬったりビール。ほんぽーと徒歩5分。2020/8/1新ブルワリー
  オリーブ,駅前楽天地,10タップ　まさしく楽天地
  衆楽,沼垂,ラーチャン＆カレー。
  河竹鮨,新潟駅,地魚おまかせ握り
@@ -117,7 +119,7 @@ togetterまとめ
  越後妻有,十日町,大地の芸術祭 越後妻有アートトリエンナーレ2015 2015/9/13まで [EBUG-talk 479]
  原田屋旅館,十日町,EBUGミーティングと越後妻有トリエンナーレの宿 [EBUG-talk 479]
  The Liffey Tavern2,古町,中華カトウ近くのアイリッシュパブ
- マンガの家,古町,わたしのマーガレット展 ドカベンの銅像と一緒にまわりたい
+ マンガの家,古町,きらら展 in 新潟 ドカベンの銅像と一緒にまわりたい
  水と土の芸術祭,全域,万代島緑地 新潟織夢－Dream of Niigata
  SWANLAKE Pub Edo,代々木上原,東京代々木上原駅にあるスワンレイクのビアバー
  Rhino,坂之上,クラフトビール
@@ -131,6 +133,63 @@ togetterまとめ
  中華大吉,殿町,24:00-4:00 日曜休
  雑本堂,東坂之上町,古書 映画関連
  MLB taproom bow,見附市,12:00-14:00 19:00-24:00 
+
+2019年
+---------------
+
+.. image::  ../Picture/2019/10/05/DSC_7777.JPG
+.. image::  ../Picture/2019/10/05/DSC_7778.JPG
+.. image::  ../Picture/2019/10/05/DSC_7779.JPG
+.. image::  ../Picture/2019/10/05/DSC_7780.JPG
+.. image::  ../Picture/2019/10/05/DSC_7781.JPG
+.. image::  ../Picture/2019/10/05/DSC_7782.JPG
+.. image::  ../Picture/2019/10/05/DSC_7783.JPG
+.. image::  ../Picture/2019/10/05/DSC_7784.JPG
+.. image::  ../Picture/2019/10/05/DSC_7785.JPG
+.. image::  ../Picture/2019/10/05/DSC_7786.JPG
+.. image::  ../Picture/2019/10/05/DSC_7787.JPG
+.. image::  ../Picture/2019/10/05/DSC_7788.JPG
+.. image::  ../Picture/2019/10/05/DSC_7789.JPG
+.. image::  ../Picture/2019/10/05/DSC_7790.JPG
+.. image::  ../Picture/2019/10/05/DSC_7791.JPG
+.. image::  ../Picture/2019/10/05/DSC_7792.JPG
+.. image::  ../Picture/2019/10/05/DSC_7793.JPG
+.. image::  ../Picture/2019/10/05/DSC_7794.JPG
+.. image::  ../Picture/2019/10/05/DSC_7795.JPG
+.. image::  ../Picture/2019/10/05/DSC_7796.JPG
+.. image::  ../Picture/2019/10/05/DSC_7797.JPG
+.. image::  ../Picture/2019/10/05/DSC_7798.JPG
+.. image::  ../Picture/2019/10/05/DSC_7799.JPG
+.. image::  ../Picture/2019/10/05/DSC_7800.JPG
+.. image::  ../Picture/2019/10/05/DSC_7801.JPG
+.. image::  ../Picture/2019/10/05/DSC_7802.JPG
+.. image::  ../Picture/2019/10/05/DSC_7803.JPG
+.. image::  ../Picture/2019/10/05/DSC_7804.JPG
+.. image::  ../Picture/2019/10/05/DSC_7805.JPG
+.. image::  ../Picture/2019/10/05/DSC_7806.JPG
+.. image::  ../Picture/2019/10/05/DSC_7807.JPG
+.. image::  ../Picture/2019/10/05/DSC_7808.JPG
+.. image::  ../Picture/2019/10/05/DSC_7809.JPG
+.. image::  ../Picture/2019/10/05/DSC_7810.JPG
+.. image::  ../Picture/2019/10/05/DSC_7811.JPG
+.. image::  ../Picture/2019/10/05/DSC_7812.JPG
+.. image::  ../Picture/2019/10/05/DSC_7813.JPG
+.. image::  ../Picture/2019/10/05/DSC_7814.JPG
+.. image::  ../Picture/2019/10/05/DSC_7815.JPG
+.. image::  ../Picture/2019/10/05/DSC_7816.JPG
+.. image::  ../Picture/2019/10/05/DSC_7817.JPG
+.. image::  ../Picture/2019/10/05/DSC_7818.JPG
+.. image::  ../Picture/2019/10/05/DSC_7819.JPG
+.. image::  ../Picture/2019/10/05/DSC_7820.JPG
+.. image::  ../Picture/2019/10/05/DSC_7821.JPG
+.. image::  ../Picture/2019/10/05/DSC_7822.JPG
+.. image::  ../Picture/2019/10/05/DSC_7823.JPG
+.. image::  ../Picture/2019/10/05/DSC_7824.JPG
+.. image::  ../Picture/2019/10/05/DSC_7825.JPG
+.. image::  ../Picture/2019/10/05/DSC_7826.JPG
+.. image::  ../Picture/2019/10/05/DSC_7827.JPG
+.. image::  ../Picture/2019/10/05/DSC_7828.JPG
+.. image::  ../Picture/2019/10/05/DSC_7829.JPG
 
 2018年
 ---------------
