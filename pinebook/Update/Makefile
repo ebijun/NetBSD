@@ -1,6 +1,9 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.68-aarch64-202006201730Z-install.img
-ISO=${RELEASE}/NetBSD-9.99.64-evbarm-aarch64-202005260840Z.iso
+IMG=${RELEASE}/NetBSD-9.99.69-aarch64-202007150740Z-install.img
+# /usr/release/images/NetBSD-9.99.69-aarch64-202007150740Z-install.img
+#-rw-r--r--  1 0     wheel  1625292800 Jul  8 13:46 /usr/release/images/NetBSD-9.99.69-aarch64-202007080050Z-install.img
+#-rw-r--r--  1 0     wheel  1625292800 Jun 21 06:37 /usr/release/images/NetBSD-9.99.68-aarch64-202006201730Z-install.img
+
 DK=dk1
 
 ##
@@ -46,8 +49,6 @@ mount:
 	vndconfig vnd0 ${IMG}
 	dkctl vnd0
 	mount /dev/${DK} /mnt1
-#	vndconfig vnd0 ${ISO}
-#	mount_cd9660 /dev/vnd0a /mnt1
 
 umount:
 	umount /mnt1
