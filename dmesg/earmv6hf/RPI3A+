@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.68 (RPI2) #0: Mon Jun 22 20:15:25 UTC 2020
+NetBSD 9.99.69 (RPI2) #0: Mon Jul 20 16:55:10 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 448 MB
 avail memory = 426 MB
@@ -90,12 +90,6 @@ gpioleds0 at simplebus0: ACT
 bcmrng0 at simplebus1: RNG
 entropy: ready
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu2: DC enabled IC enabled WB enabled EABT branch prediction enabled
-cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu3: DC enabled IC enabled WB enabled EABT branch prediction enabled
 cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
@@ -108,6 +102,12 @@ cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu2: DC enabled IC enabled WB enabled EABT branch prediction enabled
+cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdmmc0 at bcmsdhost0
 sdhc0: SDHC 3.0, rev 153, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc1 at sdhc0 slot 0
@@ -115,12 +115,13 @@ dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
 usb0 at dwctwo0: USB revision 2.0
 uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-sdmmc0: direct I/O error 5, r=6 p=0xc9fc8f14 write
+sdmmc0: direct I/O error 5, r=6 p=0xc9fb9f14 write
+sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
+ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x4277de08:0x144>
+ld0: 58911 MB, 7510 cyl, 255 head, 63 sec, 512 bytes/sect x 120649728 sectors
 IPsec: Initialized Security Association Processing.
-sdmmc0: SD card status: 4-bit, C10, U1, V10
-ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x4010773e:0x125>
-ld0: 61023 MB, 7779 cyl, 255 head, 63 sec, 512 bytes/sect x 124975104 sectors
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+aes: ARM NEON vpaes
 sdmmc1: 4-bit width, 50.000 MHz
 sdmmc1: SDIO function
 bwfm0 at sdmmc1 function 1
@@ -148,25 +149,28 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.68/modules
+kern.module.path=/stand/evbarm/9.99.69/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 vchiq0: interrupting on icu irq 66
-vchiq: vchiq_init_state: slot_zero = 0xca420000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xca400000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 kern notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
 vchiq: vchiq_initialise: videocore initialized after 1 retries
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-a-plus.bin
+bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 audio0 at vcaudio0: playback, capture, half duplex, independent
 audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for playback
 audio0: slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
-bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 bwfm0: NVRAM file default:    brcmfmac43455-sdio.txt
 bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
-bwfm0: autoconfiguration error: NVRAM file not available
+bwfm0: Found NVRAM file: brcmfmac43455-sdio.txt
+bwfm0: CHIPACTIVE
+bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
+bwfm0: address b8:27:eb:c3:ec:9b
 wsdisplay0: screen 4 added (default, vt100 emulation)

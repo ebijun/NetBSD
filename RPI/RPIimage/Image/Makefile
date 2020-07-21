@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202006222130Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202007201720Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -49,7 +49,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file rpi extract #bwfm-firmware
+all: file rpi extract bwfm-firmware
 
 #update: cdmount update-extract cdunmount
 
@@ -203,8 +203,10 @@ bwfm-firmware:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mkdir -p ${MNT}/libdata/firmware/if_bwfm/
-	cp -p kernel/Firmware/brcmfmac43* ${MNT}/libdata/firmware/if_bwfm/
-	cp -p kernel/Firmware/LICENCE.broadcom_bcm43xx ${MNT}/libdata/firmware/if_bwfm/
+#	cp -p kernel/Firmware/brcmfmac43* ${MNT}/libdata/firmware/if_bwfm/
+#	cp -p kernel/Firmware/LICENCE.broadcom_bcm43xx ${MNT}/libdata/firmware/if_bwfm/
+# nit for brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
+	cp -p kernel/Firmware/brcmfmac43455-sdio.txt ${MNT}/libdata/firmware/if_bwfm/
 	umount ${MNT}
 	vnconfig -u ${VND}
 

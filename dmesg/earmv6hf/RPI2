@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.68 (RPI2) #0: Mon Jun 22 20:15:25 UTC 2020
+NetBSD 9.99.69 (RPI2) #0: Mon Jul 20 16:55:10 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 916 MB
@@ -85,12 +85,6 @@ gpioleds0 at simplebus0: ACT PWR
 bcmrng0 at simplebus1: RNG
 entropy: ready
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
-cpu1: DC enabled IC enabled WB enabled LABT branch prediction enabled
-cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
-cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
-vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu2: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
 cpu2: DC enabled IC enabled WB enabled LABT branch prediction enabled
 cpu2: 32KB/32B 2-way L1 VIPT Instruction cache
@@ -103,16 +97,23 @@ cpu3: 32KB/32B 2-way L1 VIPT Instruction cache
 cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu3: 512KB/64B 8-way write-through L2 PIPT Unified cache
 vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu1: 600 MHz Cortex-A7 r0p5 (Cortex V7A core)
+cpu1: DC enabled IC enabled WB enabled LABT branch prediction enabled
+cpu1: 32KB/32B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 8-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdmmc0 at bcmsdhost0
 dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
 usb0 at dwctwo0: USB revision 2.0
 uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 IPsec: Initialized Security Association Processing.
-sdmmc0: direct I/O error 5, r=6 p=0xd265cf14 write
-sdmmc0: SD card status: 4-bit, C10, U1, V10
-ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x4010773e:0x125>
-ld0: 61023 MB, 7779 cyl, 255 head, 63 sec, 512 bytes/sect x 124975104 sectors
+aes: ARM NEON vpaes
+sdmmc0: direct I/O error 5, r=6 p=0xd264df14 write
+sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
+ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x4277de08:0x144>
+ld0: 58911 MB, 7510 cyl, 255 head, 63 sec, 512 bytes/sect x 120649728 sectors
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 uhub1 at uhub0 port 1: vendor 0424 (0x0424) product 9514 (0x9514), class 9/0, rev 2.00/2.00, addr 2
 uhub1: multiple transaction translators
@@ -144,12 +145,12 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.68/modules
+kern.module.path=/stand/evbarm/9.99.69/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 vchiq0: interrupting on icu irq 66
-vchiq: vchiq_init_state: slot_zero = 0xd2ac0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xd2ab0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 kern notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
