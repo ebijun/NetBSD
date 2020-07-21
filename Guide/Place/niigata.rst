@@ -63,7 +63,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 156,OSC2020新潟 http://www.re.soum.co.jp/~jun/OSC2020niigata.pdf
+ 156,OSC2020新潟,http://www.re.soum.co.jp/~jun/OSC2020niigata.pdf
  148,OSC2019新潟,http://www.re.soum.co.jp/~jun/OSC2019niigata.pdf
  134,OSC2018新潟,http://www.re.soum.co.jp/~jun/OSC2018niigata.pdf
  116,OSC2017長岡,http://www.re.soum.co.jp/~jun/OSC2017nagaoka.pdf
@@ -137,41 +137,17 @@ togetterまとめ
 2019年
 ---------------
 
-.. image::  ../Picture/2019/10/05/DSC_7777.JPG
-.. image::  ../Picture/2019/10/05/DSC_7778.JPG
-.. image::  ../Picture/2019/10/05/DSC_7779.JPG
 .. image::  ../Picture/2019/10/05/DSC_7780.JPG
-.. image::  ../Picture/2019/10/05/DSC_7781.JPG
 .. image::  ../Picture/2019/10/05/DSC_7782.JPG
 .. image::  ../Picture/2019/10/05/DSC_7783.JPG
-.. image::  ../Picture/2019/10/05/DSC_7784.JPG
-.. image::  ../Picture/2019/10/05/DSC_7785.JPG
-.. image::  ../Picture/2019/10/05/DSC_7786.JPG
-.. image::  ../Picture/2019/10/05/DSC_7787.JPG
-.. image::  ../Picture/2019/10/05/DSC_7788.JPG
-.. image::  ../Picture/2019/10/05/DSC_7789.JPG
-.. image::  ../Picture/2019/10/05/DSC_7790.JPG
 .. image::  ../Picture/2019/10/05/DSC_7791.JPG
 .. image::  ../Picture/2019/10/05/DSC_7792.JPG
 .. image::  ../Picture/2019/10/05/DSC_7793.JPG
-.. image::  ../Picture/2019/10/05/DSC_7794.JPG
-.. image::  ../Picture/2019/10/05/DSC_7795.JPG
 .. image::  ../Picture/2019/10/05/DSC_7796.JPG
 .. image::  ../Picture/2019/10/05/DSC_7797.JPG
 .. image::  ../Picture/2019/10/05/DSC_7798.JPG
-.. image::  ../Picture/2019/10/05/DSC_7799.JPG
-.. image::  ../Picture/2019/10/05/DSC_7800.JPG
-.. image::  ../Picture/2019/10/05/DSC_7801.JPG
 .. image::  ../Picture/2019/10/05/DSC_7802.JPG
-.. image::  ../Picture/2019/10/05/DSC_7803.JPG
-.. image::  ../Picture/2019/10/05/DSC_7804.JPG
 .. image::  ../Picture/2019/10/05/DSC_7805.JPG
-.. image::  ../Picture/2019/10/05/DSC_7806.JPG
-.. image::  ../Picture/2019/10/05/DSC_7807.JPG
-.. image::  ../Picture/2019/10/05/DSC_7808.JPG
-.. image::  ../Picture/2019/10/05/DSC_7809.JPG
-.. image::  ../Picture/2019/10/05/DSC_7810.JPG
-.. image::  ../Picture/2019/10/05/DSC_7811.JPG
 .. image::  ../Picture/2019/10/05/DSC_7812.JPG
 .. image::  ../Picture/2019/10/05/DSC_7813.JPG
 .. image::  ../Picture/2019/10/05/DSC_7814.JPG
@@ -179,17 +155,6 @@ togetterまとめ
 .. image::  ../Picture/2019/10/05/DSC_7816.JPG
 .. image::  ../Picture/2019/10/05/DSC_7817.JPG
 .. image::  ../Picture/2019/10/05/DSC_7818.JPG
-.. image::  ../Picture/2019/10/05/DSC_7819.JPG
-.. image::  ../Picture/2019/10/05/DSC_7820.JPG
-.. image::  ../Picture/2019/10/05/DSC_7821.JPG
-.. image::  ../Picture/2019/10/05/DSC_7822.JPG
-.. image::  ../Picture/2019/10/05/DSC_7823.JPG
-.. image::  ../Picture/2019/10/05/DSC_7824.JPG
-.. image::  ../Picture/2019/10/05/DSC_7825.JPG
-.. image::  ../Picture/2019/10/05/DSC_7826.JPG
-.. image::  ../Picture/2019/10/05/DSC_7827.JPG
-.. image::  ../Picture/2019/10/05/DSC_7828.JPG
-.. image::  ../Picture/2019/10/05/DSC_7829.JPG
 
 2018年
 ---------------
