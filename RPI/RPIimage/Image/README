@@ -1,66 +1,43 @@
-VERSION: :1,$s/2020-06-27/2020-06-27/g
-ISO:     :1,$s/202006222130Z/202006222130Z/g
-NetBSD:  :1,$s/9.99.68/9.99.68/g
-PKGSRC:  :1,$s/2020-06-27/2020-06-27/
+VERSION: :1,$s/2020-07-25/2020-07-25/g
+ISO:     :1,$s/202007201720Z/202007201720Z/g
+NetBSD:  :1,$s/9.99.69/9.99.69/g
+PKGSRC:  :1,$s/2020-07-25/2020-07-25/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-06-27-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2020-07-25-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-06-27-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2020-07-25-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-06-27-earmv6hf/2020-06-27-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-06-27-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-07-25-earmv6hf/2020-07-25-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-07-25-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.68 evbarm-earmv6hf 202006222130Z rpi.img from nyftp.
-- RPI3A+: /libdata/firmware/if_bwfm spec file missing.
- need brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
+- NetBSD 9.99.69 evbarm-earmv6hf 202007201720Z rpi.img from nyftp.
+- Add support for KASAN on ARMv[67]
+ http://mail-index.netbsd.org/source-changes/2020/07/10/msg119240.html 
 
-2020-06-27
- bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
- bwfm0: NVRAM file default:    brcmfmac43455-sdio.txt
- bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
-+bwfm0: autoconfiguration error: NVRAM file not available
-
-2020-06-01
- bwfm0: Found NVRAM file: brcmfmac43455-sdio.txt <- I've add on 0601image
- bwfm0: CHIPACTIVE
- bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
- bwfm0: address b8:27:eb:c3:ec:9b
- 
-- Serial Console on bootup
- http://mail-index.netbsd.org/port-arm/2020/06/25/msg006813.html
- http://gnats.netbsd.org/54941
-"I tried guessing different baud rates, but nothing works.  The initial
- messages are fine at 115,200"
+PR
+#55505 RaspberryPi3A+ can't find Wi-Fi module
+ http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=55505
 
 - RPI4: testing
   NetBSD/aarch64 on 8 GB Raspberry Pi 4B? threads on port-arm@
 
-- Update from 2020-06-01 version
-https://github.com/ebijun/NetBSD/commit/7092361a73b663ab30106553e7c7c89a398cddc1
+- Update from 2020-06-27 version
+https://github.com/ebijun/NetBSD/commit/4bbdff3670c25111cb39d743752aeedb26b33629
 
 sysinfo:
- bind-9.16.3 dhcpcd-9.1.2 libc-12.217 libssh-37.0 NetBSD-9.99.68
- ntp-4.2.8pl14 openssh-8.3 opensshd-8.3 sh-20181212-20200622201525Z
- userland-NetBSD-9.99.68/evbarm
+ dhcpcd-9.1.4 ftpd-20200615 NetBSD-9.99.69
+ sh-20181212-20200720165510Z sys_info-20200714
+ userland-NetBSD-9.99.69/evbarm
 
 pkgsrc:
- dbus-1.12.18 fossil-2.11.1 giflib-5.2.1nb4 git-base-2.27.0
- gnutls-3.6.14 harfbuzz-2.6.7 icu-67.1 libcups-2.3.3nb3
- libgpg-error-1.38 libpsl-0.21.0nb2 libwebp-1.1.0nb1
- libxml2-2.9.10nb2 libxslt-1.1.34nb2 libyaml-0.2.5
- m17n-lib-1.8.0nb2 medit-1.2.0nb14 mlterm-3.9.0nb2
- mozilla-rootcerts-1.0.20200529nb1 nghttp2-1.41.0
- pcre2-10.35nb1 perl-5.30.3 qt5-qtbase-5.15.0
- qt5-qtx11extras-5.15.0 qt5-qtxmlpatterns-5.15.0
- ruby26-delayer-deferred-2.2.0 ruby26-nokogiri-1.10.9nb2
- ruby26-public_suffix-4.0.5 ruby26-simpleidn-0.1.1
- shared-mime-info-1.10nb2 uim-1.8.8nb5 wayland-1.18.0nb1
- wget-1.20.3nb8 zstd-1.4.5
+ bash-5.0.18 curl-7.71.1 glib2-2.64.3
+ harfbuzz-2.6.8 py37-cElementTree-3.7.8
+ py37-expat-3.7.8 python37-3.7.8
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -97,7 +74,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-06-27-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-07-25-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -153,7 +130,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-06-27/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-07-25/
 
 - If you use Official Package for NetBSD9:
 
@@ -321,24 +298,24 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference Online/Hokkaido 2020, NetBSD BOF.
+For Open Source Conference Online/Niigata 2020, NetBSD BOF.
 I've updated raspberry-pi image.
 
- https://event.ospn.jp/osc2020-online-do/
- #oscnagoya
+ https://event.ospn.jp/osc2020-online-niigata/
+ #osc20ni
 
 NetBSD BoF:
-Jun.27 2020: 10:00-10:45 JST(GMT+9) ZOOM&YoutubeLive
-https://event.ospn.jp/osc2020-online-do/session/97459
+Jul.25 2020:  ZOOM&YoutubeLive
+https://event.ospn.jp/
+https://ospn.connpass.com/event/181888/
 https://www.youtube.com/ospn-jp
 
-http://www.re.soum.co.jp/~jun/OSC2020hokkaido.pdf
+http://www.re.soum.co.jp/~jun/OSC2020niigata.pdf
 http://www.jp.NetBSD.org/
-http://www.no.bug.gr.jp/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2020.rst
 
-- NetBSD 9.99.68 earmv6hf rpi.img.gz base
+- NetBSD 9.99.69 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -376,7 +353,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-06-27/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-07-25/
 
 Installed Packages:
   bash
