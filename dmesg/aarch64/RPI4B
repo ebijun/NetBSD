@@ -7,8 +7,8 @@ Copyright (c) 1982, 1986, 1989, 1991, 1993
 
 NetBSD 9.99.69 (GENERIC64) #0: Tue Jul 28 14:49:55 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
-total memory = 2971 MB
-avail memory = 2881 MB
+total memory = 3930 MB
+avail memory = 3811 MB
 pool redzone disabled for 'buf4k'
 pool redzone disabled for 'buf64k'
 entropy: no seed from bootloader
@@ -19,7 +19,7 @@ simplebus1 at simplebus0
 acpifdt0 at simplebus0
 acpifdt0: using EFI runtime services for RTC
 ACPI: RSDP 0x0000000033AA0000 000024 (v02 RPIFDN)
-ACPI: XSDT 0x0000000033A90000 00005C (v01 RPIFDN RPI4     00000200      01000013)
+ACPI: XSDT 0x0000000033A90000 000064 (v01 RPIFDN RPI4     00000200      01000013)
 ACPI: FACP 0x00000000339E0000 000114 (v06 RPIFDN RPI4     00000200 EDK2 00000300)
 ACPI: DSDT 0x0000000033990000 002402 (v05 RPIFDN RPI      00000002 INTL 20180105)
 ACPI: CSRT 0x0000000033A00000 000169 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
@@ -28,6 +28,7 @@ ACPI: GTDT 0x00000000339D0000 000068 (v03 RPIFDN RPI4     00000200 EDK2 00000300
 ACPI: APIC 0x00000000339C0000 000184 (v05 RPIFDN RPI4     00000200 EDK2 00000300)
 ACPI: PPTT 0x00000000339B0000 000184 (v02 RPIFDN RPI4     00000200 EDK2 00000300)
 ACPI: SPCR 0x00000000339A0000 000050 (v02 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: BGRT 0x0000000033980000 000038 (v01 INTEL  EDK2     00000002      01000013)
 ACPI: 1 ACPI AML tables successfully acquired and loaded
 acpi0 at acpifdt0: Intel ACPICA 20200430
 acpi0: X/RSDT: OemId <RPIFDN,RPI4    ,00000200>, AslId <    ,01000013>
@@ -138,15 +139,19 @@ ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.20, addr 1
 uhub2: single transaction translator
 uhub2: 4 ports with 4 removable, self powered
-uhidev0 at uhub2 port 4 configuration 1 interface 0
-uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/1
-ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+uhidev0 at uhub2 port 3 configuration 1 interface 0
+uhidev0: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 2, iclass 3/1
+ums0 at uhidev0: 3 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
+uhidev1 at uhub2 port 4 configuration 1 interface 0
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/1
+ukbd0 at uhidev1: 8 Variable keys, 6 Array codes
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub2 port 4 configuration 1 interface 1
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/0
-uhidev1: 2 report ids
-uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
-uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhidev2 at uhub2 port 4 configuration 1 interface 1
+uhidev2: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/0
+uhidev2: 2 report ids
+uhid0 at uhidev2 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev2 reportid 2: input=3, output=0, feature=0
 cgd: self-test aes-xts-256
 cgd: self-test aes-xts-512
 cgd: self-test aes-cbc-128
