@@ -18,36 +18,62 @@ UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 
 PKGSRC=../../../../pkgsrc/pkgsrc-2018-08-04.tar.gz 
 
+VND=vnd0
 MNT_BOOT=/mnt1
+MNT_ROOT=/mnt2
+DK_BOOT=/dev/dk0
+DK_ROOT=/dev/dk1
 
 all: img boot_config
 
-
 boot_config:
-	vnconfig vnd0 ${FILE}
-	dkctl vnd0 listwedges
-	mount_msdos /dev/dk0 ${MNT_BOOT}
+	vnconfig ${VND} ${FILE}
+	dkctl ${VND} listwedges
+	mount_msdos ${DK_BOOT} ${MNT_BOOT}
 	(cd ${MNT_BOOT};rm  LICENCE.broadcom bootcode.bin cmdline.txt config.txt fixup.dat fixup4.dat fixup4cd.dat fixup_cd.dat start.elf start4.elf start4cd.elf start_cd.elf)
 	(cd ${MNT_BOOT};rm -r dtb)
 	unzip -d ${MNT_BOOT} ${UEFI_FIRM}
 	umount ${MNT_BOOT}
-	vnconfig -u vnd0
+	vnconfig -u ${VND}
 
 boot_mount:
-	vnconfig vnd0 ${FILE}
-	dkctl vnd0 listwedges
-	mount_msdos /dev/dk0 ${MNT_BOOT}
+	vnconfig ${VND} ${FILE}
+	dkctl ${VND} listwedges
+	mount_msdos ${DK_BOOT} ${MNT_BOOT}
 
 boot_umount:
 	umount ${MNT_BOOT}
-	vnconfig -u vnd0
+	vnconfig -u ${VND}
+
+root_mount:
+	vnconfig ${VND} ${FILE}
+	dkctl ${VND} listwedges
+	mount ${DK_ROOT} ${MNT_ROOT}
+
+root_umount:
+	umount ${MNT_ROOT}
+	vnconfig -u ${VND}
 
 img:
 	ls -l ${BINARY}/gzimg/arm64.img.gz
 	gunzip < ${BINARY}/gzimg/arm64.img.gz > ${FILE}
 
 uefi_fetch:
-	ftp  ${UEFI_URL}
+	ftp ${UEFI_URL}
+
+# copy default setupfile
+release:
+	vnconfig ${VND} ${FILE}
+	dkctl ${VND} listwedges
+	fsck /dev/r${VND}a
+	mount /dev/${VND}a ${MNT}
+	mount /dev/${VND}e ${MNT}/boot
+	(cd ../..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
+#	(cd ../../boot;cp * ${MNT}/boot)
+	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
+	umount ${MNT}/boot
+	umount ${MNT}
+	vnconfig -u ${VND}
 
 ###=====================
 
@@ -74,7 +100,6 @@ FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
 # mount point
 MNT=/mnt3
-VND=vnd0
 
 MNT_CDROM=/mnt1
 VND_CDROM=vnd1
@@ -82,8 +107,6 @@ VND_CDROM=vnd1
 MNT_TMP=/mnt2
 VND_TMP=vnd2
 
-
-all: file cdmount rpi extract cdunmount rpi4
 
 #update: cdmount update-extract cdunmount
 
@@ -162,18 +185,6 @@ pkg-back:
 	umount ${MNT}
 	vnconfig -u ${VND}
 
-# copy default setupfile
-release:
-	vnconfig ${VND} ${FILE}
-	fsck /dev/r${VND}a
-	mount /dev/${VND}a ${MNT}
-	mount /dev/${VND}e ${MNT}/boot
-	(cd ../..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
-#	(cd ../../boot;cp * ${MNT}/boot)
-	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
-	umount ${MNT}/boot
-	umount ${MNT}
-	vnconfig -u ${VND}
 
 # clean logfiles
 logclean:
