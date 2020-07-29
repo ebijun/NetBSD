@@ -7,7 +7,6 @@ FTP="nyftp.netbsd.org"
 CDN="nycdn.netbsd.org"
 
 BRANCH="/pub/NetBSD-daily/HEAD/"
-#BRANCH="/pub/NetBSD-daily/netbsd-8/"
 IMAGES="/usr/release/images/"
 
 ARCH="aarch64"
@@ -20,7 +19,7 @@ class ISO
 	def check(path,arch)
 		l = @iso
 		while f=l.shift
-			if /#{arch}.iso/ =~ f
+			if /#{arch}/ =~ f
 				@path = path+f
 				return path+f
 			end
@@ -44,7 +43,7 @@ end
 ftp = Net::FTP.open(FTP) do |ftp|
 	# login and set mode
 	ftp.login()
-	ftp.passive = TRUE
+#	ftp.passive = TRUE
 #	ftp.debug_mode = TRUE
 
 	# chdir to branch
@@ -56,14 +55,14 @@ ftp = Net::FTP.open(FTP) do |ftp|
 	# Check most recent image
 	while s=list.pop
 		# is image dir?
-		image=BRANCH+s+"/images/"
+		image=BRANCH+s+"/"
 		begin
 			path=ftp.chdir(image)
 		rescue Net::FTPPermError
 			next
 		end
 
-		# is ARCH iso?
+		# is ARCH?
 		begin
 			isofile=ISO.new(ftp.nlst())
 			if isofile.check(image,ARCH)
@@ -75,9 +74,7 @@ ftp = Net::FTP.open(FTP) do |ftp|
 			next
 		end
 	end
-	puts "ftp http://"+CDN+isofile.path
-	puts "mv "+isofile.body+".iso "+IMAGES+isofile.body+"-"+isofile.date+".iso"
-#	puts "ftp http://www.invisible.ca/arm/"+isofile.date+"/NetBSD-evbarm-aarch64-"+isofile.date+"-pinebook.img.gz"
-#	puts "mv NetBSD-evbarm-aarch64-"+isofile.date+"-pinebook.img.gz "+IMAGES
+	puts "wget --level=2 -r http://"+CDN+isofile.path+"/binary/"
+
 	ftp.quit
 end

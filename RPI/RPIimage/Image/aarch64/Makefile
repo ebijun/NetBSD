@@ -1,20 +1,56 @@
 # Makefile for RPI image.
 
 ARCH=aarch64
-RPI_IMG=arm64.img
-
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-04-18/
-
-# iso file information
-
-IMAGE=/usr/release/images/NetBSD-9.99.57-evbarm-${ARCH}-202004231620Z.iso
-
-PKGSRC=../../../../pkgsrc/pkgsrc-2018-08-04.tar.gz 
-
-###
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
+
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-04-18/
+
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202007281510Z/evbarm-aarch64/binary
+SETS=${BINARY}/sets
+RPI=${BINARY}/gzimg/arm64.img
+
+# UEFI
+UEFI_VER=v1.14
+UEFI_FIRM=RPi4_UEFI_Firmware_${UEFI_VER}.zip
+UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
+
+PKGSRC=../../../../pkgsrc/pkgsrc-2018-08-04.tar.gz 
+
+MNT_BOOT=/mnt1
+
+all: img boot_config
+
+
+boot_config:
+	vnconfig vnd0 ${FILE}
+	dkctl vnd0 listwedges
+	mount_msdos /dev/dk0 ${MNT_BOOT}
+	(cd ${MNT_BOOT};rm  LICENCE.broadcom bootcode.bin cmdline.txt config.txt fixup.dat fixup4.dat fixup4cd.dat fixup_cd.dat start.elf start4.elf start4cd.elf start_cd.elf)
+	(cd ${MNT_BOOT};rm -r dtb)
+	unzip -d ${MNT_BOOT} ${UEFI_FIRM}
+	umount ${MNT_BOOT}
+	vnconfig -u vnd0
+
+boot_mount:
+	vnconfig vnd0 ${FILE}
+	dkctl vnd0 listwedges
+	mount_msdos /dev/dk0 ${MNT_BOOT}
+
+boot_umount:
+	umount ${MNT_BOOT}
+	vnconfig -u vnd0
+
+img:
+	ls -l ${BINARY}/gzimg/arm64.img.gz
+	gunzip < ${BINARY}/gzimg/arm64.img.gz > ${FILE}
+
+uefi_fetch:
+	ftp  ${UEFI_URL}
+
+###=====================
+
 FILE_TMP=a.img
 
 # extract sets.
