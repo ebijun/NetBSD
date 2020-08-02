@@ -6,7 +6,7 @@ BOARD=raspi-aarch64
 #SUFFIX=.gz
 
 DATE=`date +%Y-%m-%d`
-#DATE=2019-01-23
+#DATE=2020-07-29
 
 #as usual
 progress $COMPRESS -f ${DATE}-netbsd-${BOARD}.img${SUFFIX} dd of=/dev/${DEVICE} bs=4m

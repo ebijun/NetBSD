@@ -10,9 +10,10 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-04-
 BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202007281510Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img
+ORD=a.img
 
 # UEFI
-UEFI_VER=v1.14
+UEFI_VER=v1.17
 UEFI_FIRM=RPi4_UEFI_Firmware_${UEFI_VER}.zip
 UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 
@@ -21,10 +22,14 @@ PKGSRC=../../../../pkgsrc/pkgsrc-2018-08-04.tar.gz
 VND=vnd0
 MNT_BOOT=/mnt1
 MNT_ROOT=/mnt2
+VND_ORG=vnd1
 DK_BOOT=/dev/dk0
 DK_ROOT=/dev/dk1
+ORG_BOOT=/mnt3
+ORG_ROOT=/mnt4
 
-all: img boot_config
+all: file gpt restore boot_config
+#all: img boot_config
 
 boot_config:
 	vnconfig ${VND} ${FILE}
@@ -35,28 +40,6 @@ boot_config:
 	unzip -d ${MNT_BOOT} ${UEFI_FIRM}
 	umount ${MNT_BOOT}
 	vnconfig -u ${VND}
-
-boot_mount:
-	vnconfig ${VND} ${FILE}
-	dkctl ${VND} listwedges
-	mount_msdos ${DK_BOOT} ${MNT_BOOT}
-
-boot_umount:
-	umount ${MNT_BOOT}
-	vnconfig -u ${VND}
-
-root_mount:
-	vnconfig ${VND} ${FILE}
-	dkctl ${VND} listwedges
-	mount ${DK_ROOT} ${MNT_ROOT}
-
-root_umount:
-	umount ${MNT_ROOT}
-	vnconfig -u ${VND}
-
-img:
-	ls -l ${BINARY}/gzimg/arm64.img.gz
-	gunzip < ${BINARY}/gzimg/arm64.img.gz > ${FILE}
 
 uefi_fetch:
 	ftp ${UEFI_URL}
@@ -75,6 +58,44 @@ release:
 	umount ${MNT}
 	vnconfig -u ${VND}
 
+restore:
+	ls -l ${BINARY}/gzimg/arm64.img.gz
+	gunzip < ${BINARY}/gzimg/arm64.img.gz > ${ORD}
+	vnconfig ${VND_ORG} ${ORD}
+	mount_msdos /dev/`dkctl ${VND_ORG} listwedges |awk -F: '{print $$1}' |head -2 |tail -1` ${ORG_BOOT}
+	### resize
+	gpt resize -i 2 ${VND_ORG}
+	resize_ffs -y /dev/`dkctl ${VND_ORG} listwedges |awk -F: '{print $$1}' |tail -1` 
+	mount /dev/`dkctl ${VND_ORG} listwedges |awk -F: '{print $$1}' |tail -1` ${ORG_ROOT}
+	vnconfig ${VND} ${FILE}
+	mount_msdos /dev/`dkctl ${VND} listwedges |awk -F: '{print $$1}' |head -2 |tail -1` ${MNT_BOOT}
+	mount /dev/`dkctl ${VND} listwedges |awk -F: '{print $$1}' |tail -1` ${MNT_ROOT}
+	(cd ${ORG_BOOT}; cp -r . ${MNT_BOOT})
+	dump 0f - ${ORG_ROOT} |(cd ${MNT_ROOT};restore -xf -)
+	umount ${ORG_BOOT}
+	umount ${ORG_ROOT}
+	umount ${MNT_BOOT}
+	umount ${MNT_ROOT}
+	vnconfig -u ${VND}
+	vnconfig -u ${VND_ORG}
+
+gpt:
+	vnconfig ${VND} ${FILE}
+	gpt create -p 2 ${VND}
+	gpt add -i 1 -l "EFI System" -s 163840 -t efi ${VND}
+	gpt add -i 2 -l "NetBSD FFSv1/FFSv2" -s 4751355 -t ffs ${VND}
+
+	newfs_msdos /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |head -2 |tail -1`
+	newfs /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |tail -1`
+	vnconfig -u ${VND}
+
+# make image file. 512*3813376=2GB
+file: 
+	echo Create ${FILE}.
+	dd if=/dev/zero of=${FILE} bs=512 count=4915200 progress=62000
+#	 2048*2400
+	sleep 3
+ 
 ###=====================
 
 FILE_TMP=a.img
@@ -151,13 +172,6 @@ rpi:
 	vnconfig -u ${VND}
 	vnconfig -u ${VND_TMP}
 
-# make image file. 512*3813376=2GB
-file: 
-	echo Create ${FILE}.
-#	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
-	dd if=/dev/zero of=${FILE} bs=512 count=4915200 progress=62000
-#	 2048*2400
-	sleep 3
 
 # stop sshd for package install
 pkg:
