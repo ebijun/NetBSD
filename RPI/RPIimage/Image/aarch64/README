@@ -49,6 +49,23 @@ pkgsrc:
   # pkg_chk -un                   ... Update (listup)
   # pkg_chk -u                    ... Update
 
+EEPROM verson:
+
+Check&update with Raspberry Pi OS (pi:raspberry)
+
+pi@raspberrypi:~ $ cat /etc/default/rpi-eeprom-update 
+FIRMWARE_RELEASE_STATUS="stable"
+
+pi@raspberrypi:~ $ sudo rpi-eeprom-update
+BCM2711 detected
+Dedicated VL805 EEPROM detected
+BOOTLOADER: up-to-date
+CURRENT: Thu 16 Jul 15:15:46 UTC 2020 (1594912546)
+ LATEST: Thu 16 Jul 15:15:46 UTC 2020 (1594912546)
+ FW DIR: /lib/firmware/raspberrypi/bootloader/stable
+VL805: up-to-date
+CURRENT: 000138a1
+ LATEST: 000138a1
 
 --
 Jun Ebihara
