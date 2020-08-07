@@ -74,7 +74,7 @@ ftp = Net::FTP.open(FTP) do |ftp|
 			next
 		end
 	end
-	puts "wget --level=2 -r http://"+CDN+isofile.path+"/binary/"
+	puts "wget --level=2 -r http://"+CDN+isofile.path+"/binary/gzimg/arm64.img.gz" 
 
 	ftp.quit
 end
