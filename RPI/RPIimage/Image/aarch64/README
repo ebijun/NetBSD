@@ -1,29 +1,30 @@
-VERSION: :1,$s/2020-07-29/2020-07-29/g
-ISO:     :1,$s/202007281510Z/202007281510Z/g
+VERSION: :1,$s/2020-08-08/2020-08-08/g
+ISO:     :1,$s/202008061230Z/202008061230Z/g
 NetBSD:  :1,$s/9.99.69/9.99.69/g
 PKGSRC:  :1,$s/2020-04-18/2020-04-18/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-07-29-netbsd-raspi-aarch64.img
+Subject: 2020-08-08-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-07-29-netbsd-raspi-aarch64.img.gz for RPI3/3B/4.
+I've updated 2020-08-08-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-07-29-aarch64/2020-07-29-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-07-29-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-08-08-aarch64/2020-08-08-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-08-08-aarch64/MD5
 
 Topics:
-- only for RPI3/RPI3B+/RPI4
+- only for RPI4 
+  (fill dtb for RPI3?)
 - build script
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
 
 RPI4 status:
-- boot via UEFI
- UEFI_VER=v1.14 (should update 1.17)
- serial ,should not set graphical
- disable 3GB -> recognize 4GB
+- boot via UEFI_VER=v1.17
+ copy pre-setted RPI_EFI.fd
+  serial ,should not set graphical
+  disable 3GB -> recognize 4GB
 - HDMI: works
 - audio: not known
 - USB device: works
@@ -33,8 +34,27 @@ RPI4 status:
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.69 evbarm-aarch64 202007281510Z arm64.img from nyftp.
+- NetBSD-current 9.99.69 evbarm-aarch64 202008061230Z arm64.img from nyftp.
 - pre-installed packages:
+  bash
+  tcsh
+  vlgothic-ttf
+  icewm
+  xli
+  ruby26-mikutter
+  uim
+  fossil
+  sudo
+  git-base
+  zsh
+  mlterm
+  pkg_chk
+  lintpkgsrc
+  mozilla-rootcerts
+  dillo
+  medit
+  lrzsz
+
 - pre-build packages:
   See /etc/pkg_install.conf
   PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2020-04-18/
@@ -52,21 +72,18 @@ pkgsrc:
   # pkg_chk -u                    ... Update
 
 EEPROM verson:
-
-Check&update with Raspberry Pi OS (pi:raspberry)
-
-pi@raspberrypi:~ $ cat /etc/default/rpi-eeprom-update 
-FIRMWARE_RELEASE_STATUS="stable"
-
-pi@raspberrypi:~ $ sudo rpi-eeprom-update
-BCM2711 detected
-Dedicated VL805 EEPROM detected
-BOOTLOADER: up-to-date
-CURRENT: Thu 16 Jul 15:15:46 UTC 2020 (1594912546)
+ Check&update with Raspberry Pi OS (pi:raspberry)
+ pi@raspberrypi:~ $ cat /etc/default/rpi-eeprom-update 
+ FIRMWARE_RELEASE_STATUS="stable"
+ pi@raspberrypi:~ $ sudo rpi-eeprom-update
+ BCM2711 detected
+ Dedicated VL805 EEPROM detected
+ BOOTLOADER: up-to-date
+ CURRENT: Thu 16 Jul 15:15:46 UTC 2020 (1594912546)
  LATEST: Thu 16 Jul 15:15:46 UTC 2020 (1594912546)
  FW DIR: /lib/firmware/raspberrypi/bootloader/stable
-VL805: up-to-date
-CURRENT: 000138a1
+ VL805: up-to-date
+ CURRENT: 000138a1
  LATEST: 000138a1
 
 --
