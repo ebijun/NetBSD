@@ -27,6 +27,7 @@ DK_BOOT=/dev/dk0
 DK_ROOT=/dev/dk1
 ORG_BOOT=/mnt3
 ORG_ROOT=/mnt4
+DK_RELEASE=`dkctl ${VND} listwedges|grep ffs |awk -F: '{print $$1}'`
 
 all: file gpt restore boot_config
 #all: img boot_config
@@ -126,10 +127,9 @@ pkg-back:
 # clean logfiles
 logclean:
 	vnconfig ${VND} ${FILE}
-	dkctl ${VND} listwedges
-	fsck ${DK_ROOT}
-	mount ${DK_ROOT} ${MNT_ROOT}
-	vnconfig ${VND} ${FILE}
+	echo ${DK_RELEASE}
+	fsck /dev/${DK_RELEASE}
+	mount /dev/${DK_RELEASE} ${MNT_ROOT}
 	rm -f ${MNT_ROOT}/var/run/dmesg.boot
 	rm -f ${MNT_ROOT}/var/log/lastlogx 
 #	rm -f ${MNT_ROOT}/var/log/maillog 
@@ -153,9 +153,9 @@ logclean:
 mikutter-key:
 	echo mikutter key
 	vnconfig ${VND} ${FILE}
-	dkctl ${VND} listwedges
-	fsck ${DK_ROOT}
-	mount ${DK_ROOT} ${MNT_ROOT}
+	echo ${DK_RELEASE}
+	fsck /dev/${DK_RELEASE}
+	mount /dev/${DK_RELEASE} ${MNT_ROOT}
 	patch -d ${MNT_ROOT}/root/.mikutter/plugin/twitter_api_keys < ../mikutter/twitter_api_keys.rb.patch
 	umount ${MNT_ROOT}
 	vnconfig -u ${VND}

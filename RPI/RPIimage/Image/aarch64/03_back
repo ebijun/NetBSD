@@ -1,16 +1,22 @@
-dd if=/dev/rsd0c of=back.img count=512 bs=5160960 progress=10
+MNT=/mnt
+dd if=/dev/rsd0d of=back.img count=512 bs=5160960 progress=10
 
 DIR=tmp`date +%Y%m%d-%H%M`
 mkdir $DIR
 
 vnconfig vnd0 back.img
- fsck /dev/vnd0a
- mount /dev/vnd0a /mnt
-  for i in dmesg pkginfo version sysinfo
-  do
-   cp /mnt/root/${i} ${DIR}/${i} 
-  done
- umount /mnt
+ROOT=`dkctl vnd0 listwedges|grep ffs |awk -F: '{print $1}'`
+echo ${ROOT}
+
+fsck /dev/${ROOT}
+mount /dev/${ROOT} ${MNT}
+
+for i in dmesg pkginfo version sysinfo
+do
+   cp ${MNT}/root/${i} ${DIR}/${i} 
+done
+
+umount ${MNT}
 vnconfig -u vnd0
 
 diff -u ../../pkgsrc/pkginfo  ${DIR}/pkginfo |more

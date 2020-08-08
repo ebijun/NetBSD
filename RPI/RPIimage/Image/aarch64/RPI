@@ -8,6 +8,8 @@ make pkg
 ## add packages.
 # 
 #./03_back
+## check packages.
+#
 #mv back.img `date +%Y-%m-%d`-netbsd-raspi-aarch64.img
 #make logclean
 #make pkg-back
