@@ -24,21 +24,21 @@ gnutls-3.6.14       Transport Layer Security library
 gobject-introspection-1.64.1 GObject Introspection
 graphite2-1.3.13    Cross-platform rendering for complex writing systems
 gtk2+-2.24.32nb14   GIMP Toolkit v2 - libraries for building X11 user interfaces
-gtk3+-3.24.21nb1    GIMP Toolkit v3 - libraries for building X11 user interfaces
-harfbuzz-2.6.8      OpenType text shaping engine
+gtk3+-3.24.22       GIMP Toolkit v3 - libraries for building X11 user interfaces
+harfbuzz-2.7.1      OpenType text shaping engine
 hicolor-icon-theme-0.17 Standard icon theme called hicolor
 icewm-1.2.38pre2nb1 Small, fast and light-weight window manager
 icu-67.1            Robust and full-featured Unicode services
-jbigkit-2.1         JBIG-KIT lossless image compression library
+jbigkit-2.1nb1      JBIG-KIT lossless image compression library
 jpeg-9d             IJG's jpeg compression utilities
 libXft-2.3.3        Library for configuring and customizing font access
 libcfg+-0.7.0       Command line and configuration file parsing library
-libcups-2.3.3nb3    Common UNIX Printing System library
+libcups-2.3.3nb4    Common UNIX Printing System library
 libffi-3.3nb3       Foreign function interface
 libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.8.6     GNU cryptographic library
 libgpg-error-1.38   Definitions of common error values for all GnuPG components
-libidn-1.35         Internationalized Domain Names command line tool
+libidn-1.36         Internationalized Domain Names command line tool
 libidn2-2.3.0       Convert internationalized domain names to/from ASCII Encoding
 libimagequant-2.12.6 High-quality conversion of RGBA images to 8-bit indexed-color
 libotf-0.9.16nb2    Library for handling OpenType fonts (OTF)
@@ -53,7 +53,7 @@ libxkbcommon-0.10.0 Library to handle keyboard descriptions
 libxml2-2.9.10nb2   XML parser library from the GNOME project
 libxslt-1.1.34nb2   XSLT parser library from the GNOME project
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
-lintpkgsrc-4.94nb2  Sanity checks on the complete pkgsrc tree
+lintpkgsrc-4.95     Sanity checks on the complete pkgsrc tree
 lrzsz-0.12.20nb1    Receive/Send files via X/Y/ZMODEM protocol.  (unrestrictive)
 lz4-1.9.2           Extremely Fast Compression algorithm
 lzo-2.10            Portable lossless data compression library
@@ -89,7 +89,7 @@ pcre2-10.35nb1      Perl Compatible Regular Expressions library (major version 2
 perl-5.30.3         Practical Extraction and Report Language
 pkg_chk-2.0.11      Check installed package versions against pkgsrc
 png-1.6.37          Library for manipulating PNG images
-py27-expat-2.7.15   Python interface to expat
+py27-expat-2.7.18   Python interface to expat
 py37-cElementTree-3.7.8 C implementation of Python ElementTree API
 py37-expat-3.7.8    Python interface to expat
 python27-2.7.18     Interpreted, interactive, object-oriented programming language
@@ -100,13 +100,13 @@ qt5-qtxmlpatterns-5.15.0 Qt5 module for XML Patterns
 ruby26-addressable-2.7.0 Replacement for the URI Implementation of standard librrary
 ruby26-atk-3.4.2    Ruby binding of ATK-1.0.x or later
 ruby26-base-2.6.6   Ruby 2.6.6 release minimum base package
-ruby26-cairo-1.16.5 Ruby bindings for cairo
+ruby26-cairo-1.16.6 Ruby bindings for cairo
 ruby26-cairo-gobject-3.4.2 Ruby binding of cairo-gobject
 ruby26-delayer-1.1.2 Ruby module to delay the processing
 ruby26-delayer-deferred-2.2.0 Deferred for Delayer
 ruby26-diva-1.0.2   Implementation of expression for handling things
 ruby26-gdk_pixbuf2-3.4.2 Ruby binding of GdkPixbuf-2.x
-ruby26-gettext-3.3.5 Ruby localization library like as GNU gettext
+ruby26-gettext-3.3.6 Ruby localization library like as GNU gettext
 ruby26-gio2-3.4.2   Ruby binding of gio-2.0.x
 ruby26-glib2-3.4.2  Ruby binding of GLib-2.x
 ruby26-gobject-introspection-3.4.2 Ruby binding of Gobject Introspection
@@ -136,7 +136,6 @@ shared-mime-info-1.10nb2 Core database of common types
 sudo-1.8.31p1       Allow others to run commands as root
 tcsh-6.22.02        Extended C-shell with many useful features
 tiff-4.1.0          Library and tools for reading and writing TIFF data files
-ttmkfdir2-20021109nb6 Tool that creates a fonts.scale file
 uim-1.8.8nb5        Multilingual input method library
 vlgothic-ttf-20141206 Free Japanese TrueType fonts named 'VLGothic'
 wayland-1.18.0nb1   Display server protocol - development libraries

@@ -37,7 +37,7 @@ boot_config:
 	dkctl ${VND} listwedges
 	mount_msdos ${DK_BOOT} ${MNT_BOOT}
 	(cd ${MNT_BOOT};rm  LICENCE.broadcom bootcode.bin cmdline.txt config.txt fixup.dat fixup4.dat fixup4cd.dat fixup_cd.dat start.elf start4.elf start4cd.elf start_cd.elf)
-	(cd ${MNT_BOOT};rm -r dtb)
+	(cd ${MNT_BOOT};rm -r dtb)	#keep for RPI3
 	unzip -d ${MNT_BOOT} ${UEFI_FIRM}
 	cp boot/RPI_EFI.fd  ${MNT_BOOT} #disable 3GB barrier
 	umount ${MNT_BOOT}
