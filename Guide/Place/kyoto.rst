@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -49,6 +49,7 @@
  2017 Kyoto,8/4-5,750,49,京都リサーチパーク
  2018 Kyoto,8/3-4,800,48,京都リサーチパーク
  2019 Kyoto,8/2-3,,50,京都リサーチパーク
+ 2020 Kyoto,8/28-29,Online
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -57,11 +58,11 @@
  :widths: 30 20 60
 
  店名,エリア,コメント
+ スタンドうみねこコト,蛸屋町１６０,最大35tap
  バンガロー,四条堀川東,10タップ 10oz 600円 15oz 900円
  坊主バー,大宮,Sun3/60ユーザ＆僧侶とは何か。
  BEFORE9,二条殿町545,
  珈琲陣,大宮松原,ハムモーニング。マッチとコースター。
- だいこんのはな,壬生車庫,俺のビフカツがこんなにかわいい
  幸福堂,壬生,アイスモナカ&きんつばをおみやげに新選組
  宇治橋通り商店街,宇治,2019/8/3　クラフトビール夜市。
  宮武,丹波口,10:30-14:00 17:00-23:00
@@ -72,7 +73,6 @@
  和知,烏丸,京都最強の地ビール居酒屋
  CRAFT MAN,烏丸綾小路下,20タップ K家系列 2:00くらいまで
  BEER PUB Takumiya,船谷町400-1
- 麦潤,河原町,六角通富小路大黒町77 河村ビル 2F
  キートス,壬生坊城,フィンランドパン
  喫茶ルナ,東向日,http://www.openstreetmap.org/way/203043949
  ルナ美容院,西向日,http://www.openstreetmap.org/way/203450773

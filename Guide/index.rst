@@ -23,7 +23,8 @@
  :maxdepth: 3
  :numbered:
 
- Place/niigata
+ Place/kyoto
  RPI/RPIupdate2020
+ Luna
  RPI
  Place/intro
