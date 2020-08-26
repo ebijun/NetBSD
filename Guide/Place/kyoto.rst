@@ -110,6 +110,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 157,OSC2020京都,http://www.re.soum.co.jp/~jun/OSC2020kyoto.pdf
  145,OSC2019京都,http://www.re.soum.co.jp/~jun/OSC2018kyoto.pdf
  128,OSC2018京都,http://www.re.soum.co.jp/~jun/OSC2018kyoto.pdf
  111,OSC2017京都,http://www.re.soum.co.jp/~jun/OSC2017kyoto.pdf
@@ -127,7 +128,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2019京都 NetBSDブース展示の記録,
+ OSC2020京都 NetBSDブース展示の記録,
+ OSC2019京都 NetBSDブース展示の記録,https://togetter.com/li/1382880
  OSC2018京都 NetBSDブース展示の記録,http://togetter.com/li/1252935
  OSC2017京都 NetBSDブース展示の記録,https://togetter.com/li/1136708
  OSC2016京都 NetBSDブース展示の記録,http://togetter.com/li/1005828
@@ -176,6 +178,9 @@ OSC京都展示物
 #. Squeak on hpcmips 
 #. OneSeg TV recording with hpcmips,
 #. bc benchmark time x electricity consumption 
+
+2019年
+~~~~~~~~~~~~~~~~~~
 
 2018年
 ~~~~~~~~~~~~~~~~~~
