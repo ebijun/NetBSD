@@ -51,6 +51,27 @@ Need Checking:
 - bluetooth keyboard/mouse setting
 - RPI camera module
 
+Got Reports:
+- HDMI output works very well however I wanted to change the resolution
+  into 800x600 both tty console and X Window graphical modes. Where should I
+  change it? As config.txt with hdmi_group=1, hdmi_mode=1 or hdmi_safe=1
+  didn't work.
+- USB input devices seem to work fine as well with my USB keyboard, mouse
+  and barcode reader. However for my USB output device such as my Xprinter
+  printer didn't work with device driver of ulpt(4). It is detected
+  and working in OpenBSD.[9.0 release also occurs same error]
+
+  [   195.114857] ulpt0 at uhub1 port 5 configuration 1 interface 0
+  [   195.114857] ulpt0: Xprinter (0x0483) USB Printer P (0x5743), rev 2.00/1.00, addr 5, iclass 7/1
+  [   195.114857] ulpt0: using bi-directional mode
+
+  rpi# cat myfile.txt > /dev/ulpt0
+  -sh: cannot create /dev/ulpt0: error 16
+- with my Raspberry Pi 3B because every time I invoked this command 
+ "shutdown -h now" a kernel panic occurs relating to usbd_transfer.
+- After shutting-down leaving the system unplugged, this will
+  turn it's processor very very hot and seems harmful to the system.
+
 pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
