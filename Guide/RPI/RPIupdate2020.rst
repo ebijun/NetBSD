@@ -34,7 +34,6 @@ RaspberryPIのNetBSDイメージについて
  :widths: 20 20 20 20 20 80 20 50
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
- 2019/7/13,8.99.50,3.9.0,3.8.8,1.1.1c,libc-12.213 RPI4発売,OSC名古屋,http://mail-index.netbsd.org/port-arm/2019/07/07/msg005875.html
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
  2019/9/15,9.99.11,3.9.5,,,bwfm,OSC広島,http://mail-index.netbsd.org/port-arm/2019/09/10/msg006129.html
  2019/9/28,9.99.12,,,,RPI4,OSC島根,http://mail-index.netbsd.org/port-arm/2019/09/23/msg006154.html
@@ -48,6 +47,7 @@ RaspberryPIのNetBSDイメージについて
  2020/06/01,9.99.64,4.0.5,3.9.0,1.1.1g,,OSC名古屋,http://mail-index.netbsd.org/port-arm/2020/05/28/msg006699.html
  2020/06/27,9.99.68,,3.9.0nb2,,icu67 bind9.16.3,OSC北海道,http://mail-index.netbsd.org/port-arm/2020/06/25/msg006812.html
  2020/07/25,9.99.69,,,,Kernel Address SANitizer,OSC新潟,http://mail-index.netbsd.org/port-arm/2020/07/21/msg006885.html
+ 2020/08/28,9.99.71,4.0.6,,,RPI4+UEFI,OSC京都,http://mail-index.netbsd.org/port-arm/2020/08/27/msg006954.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
@@ -119,9 +119,9 @@ ryo@netbsd さんによる rpi64wip実装が進み、NetBSD/aarch64としてRPI3
 RPI4
 -------
 
-- テスト中です。
-- http://mail-index.netbsd.org/port-arm/2020/01/08/msg006419.html
-- 無線LANポートは使えます
+- テスト中です。pinebookとpkgsrcを共用しています。
+  http://mail-index.netbsd.org/port-arm/2020/08/08/msg006926.html
+  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 
 armv7のいろいろ
 --------------------
