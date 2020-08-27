@@ -182,6 +182,16 @@ OSC京都展示物
 2019年
 ~~~~~~~~~~~~~~~~~~
 
+.. image::  ../Picture/2019/08/02/DSC_7442.JPG
+.. image::  ../Picture/2019/08/02/DSC_7445.JPG
+.. image::  ../Picture/2019/08/02/DSC_7451.JPG
+.. image::  ../Picture/2019/08/02/DSC_7455.JPG
+.. image::  ../Picture/2019/08/02/DSC_7463.JPG
+.. image::  ../Picture/2019/08/02/DSC_7467.JPG
+.. image::  ../Picture/2019/08/02/DSC_7468.JPG
+.. image::  ../Picture/2019/08/03/DSC_7481.JPG
+.. image::  ../Picture/2019/08/03/DSC_7492.JPG
+
 2018年
 ~~~~~~~~~~~~~~~~~~
 
