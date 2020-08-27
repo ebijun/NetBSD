@@ -109,6 +109,7 @@ pkg:
 	echo resize_disklabel=NO 	>> ${MNT_ROOT}/etc/rc.conf
 	echo resize_disklabel_disk=""	>> ${MNT_ROOT}/etc/rc.conf
 	echo resize_disklabel_part=""	>> ${MNT_ROOT}/etc/rc.conf
+	echo resize_gpt=NO             	>> ${MNT_ROOT}/etc/rc.conf
 	echo resize_root=NO		>> ${MNT_ROOT}/etc/rc.conf
 	echo resize_root_flags=""	>> ${MNT_ROOT}/etc/rc.conf
 	echo resize_root_postcmd=""	>> ${MNT_ROOT}/etc/rc.conf
