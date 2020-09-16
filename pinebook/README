@@ -1,20 +1,18 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20200912)
+Subject: pinebook status update (20200917)
 
 Topics:
+- gcc 9.3.0
 - firefox80 works fine.
  zoom meeting with firefox on NetBSD/aarch64 on pinebook pro 
   with UserAgent switcher addon. 
-
-"change the "OpenBSD" to "FreeBSD" in general.useragent.override 
- at about:config.From #NetBSD, it's the same."
- https://twitter.com/yoshi_kaw/status/1287284005415526400
-
+ Send: Share Screen,camera
+ Problem: Can"t show others screen
 - libreoffice 7.0.1.2 works fine.
 - works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp
-
 - exiv2
  cc1plus: error: '-fcf-protection=full' is not supported for this target
+- touchpad: sometimes cursor far away.
  
 ToDo:
 - 3D acceleration
@@ -30,37 +28,47 @@ ToDo:
  ToDo:
  - internal WiFi
 
-
 System Updates:
 
 sysinfo:
- bind-9.16.5 NetBSD-9.99.71
- sh-20181212-20200816164808Z
- userland-NetBSD-9.99.71/evbarm
+ NetBSD-9.99.72 bozohttpd-20200820 dhcpcd-9.2.0
+ g++-9.3.0 gcc-9.3.0
+ sh-20181212-20200912194120Z
+ userland-NetBSD-9.99.72/evbarm
 
 pkgsrc:
- ImageMagick-7.0.10.24 apache-2.4.46 apache-ant-1.10.8
- arandr-0.1.10nb1 audacious-4.0.5 clang-10.0.1
- cmake-3.18.1 cups-base-2.3.3nb5 dbus-1.12.20
- ffmpeg4-4.3.1 firefox-79.0 gedit-3.36.2 git-base-2.28.0
- gnupg2-2.2.21 go-1.14.6 graphviz-2.44.1 gtk3+-3.24.22
- harfbuzz-2.7.1 ibus-1.5.22nb2 inkscape-1.0nb5
- libreoffice-6.4.5.2 llvm-10.0.1 marco-1.24.1
- meson-0.55.0nb2 nodejs-14.8.0 nspr-4.27 nss-3.55
- osabi-NetBSD-9.99.71 php-7.3.21 pkg_install-20200701
- pkgin-20.7.0 python37-3.7.8nb1 rsync-3.2.3
- rust-1.45.2 samba-4.12.5nb2 wxGTK30-3.0.5.1
- xfce4-4.14.0nb2 xterm-358 youtube-dl-20200728
+ GConf-3.2.3nb6 ImageMagick-7.0.10.28nb1 SDL-1.2.15nb32 SDL2-2.0.12nb5
+ ap24-php73-7.3.22nb4 apache-2.4.46nb1 audacious-4.0.5nb1
+ autoconf-2.69nb10 automake-1.16.2nb1 avahi-0.6.32nb25
+ bison-3.7.1nb1 boost-headers-1.73.0nb3 cairo-1.16.0nb2 caja-1.24.0nb3
+ clang-10.0.1nb1 cmake-3.18.2 cups-base-2.3.3nb6 curl-7.72.0nb1
+ dconf-0.36.0nb1 deforaos-browser-0.5.4nb1 deforaos-camera-0.3.0nb3
+ dhcpcd-9.2.0 dillo-3.0.5nb8 emacs26-26.3nb9 ffmpeg2-2.8.17nb3
+ ffmpeg3-3.4.8nb3 ffmpeg4-4.3.1nb4 ffmpegthumbnailer-2.2.2nb1
+ firefox-80.0.1nb1 firefox-l10n-80.0.1 firefox52-52.9.0nb30
+ fluidsynth-2.1.4nb1 fontconfig-2.13.1nb2 fossil-2.12.1
+ gawk-5.1.0 gcc8-8.4.0nb1 gconfmm-2.28.3nb23 gd-2.3.0nb2
+ gedit-3.36.2nb2 gexiv2-0.12.0nb4 ghostscript-9.05nb23
+ ghostscript-agpl-9.53.0 gimp-2.10.20nb2 git-base-2.28.0nb1
+ glib2-2.64.5 glib2-tools-2.64.5 gnupg2-2.2.23 gnutls-3.6.15
+ graphviz-2.44.1nb3 gspell-1.8.3nb4 gssdp-1.0.3nb10
+ gtk2+-2.24.32nb16 gtk3+-3.24.22nb2 harfbuzz-2.7.2 ibus-1.5.22nb3
+ icewm-1.2.38pre2nb2 inkscape-1.0.1 jemalloc-5.2.1nb2 jwm-2.3.7nb10
+ libffi-3.3nb4 libgtop-2.28.4nb18 libreoffice-7.0.1.2 libv4l-1.18.1
+ marco-1.24.1nb2 mate-1.24.0nb2 mdds-1.6.0 medit-1.2.0nb15
+ minitube-3.5nb1 mlterm-3.9.0nb3 mpv-0.32.0nb16 nodejs-14.10.1
+ nspr-4.28nb1 nss-3.56nb1 openjdk8-1.8.252nb3 osabi-NetBSD-9.99.72
+ pango-1.46.1 pangomm-2.42.1nb2 perl-5.32.0nb1 php-7.3.21
+ poppler-0.87.0nb1 python27-2.7.18nb2 python37-3.7.9nb1
+ qt5-qtbase-5.15.0nb2 rust-1.45.2nb2 samba-4.12.6nb2
+ seamonkey-2.53.3 sylpheed-3.7.0nb8 uim-1.8.8nb6 vala-0.48.8
+ vlgothic-ttf-20200720 wxGTK30-3.0.5.1nb1 xnp2-0.86nb11
  
 pkgsrc todo:
-- gimp build broken.
 - mate
   x11/mate-applets needs py27-gobjects,others need py37-gobjects
 - asunder
   cdparanoia reading failed hangs on startup
-- libreoffice
-   -> PKGSRC_FORTRAN=gfortran
-  Stopped on "Application Error" 
 - pdfpc: testing failed
 - vlc
  Fix vdpau option. Should help aarch64 builds.
@@ -124,7 +132,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 9.99.71 (GENERIC64) #0: Sun Aug 16 16:48:08 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.72 (GENERIC64) #0: Sat Sep 12 19:41:20 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
@@ -154,7 +162,7 @@ pkgchk.conf:
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-04-18/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-08-22/
 
 --
 Jun Ebihara
