@@ -1,21 +1,21 @@
-VERSION: :1,$s/2020-08-28/2020-08-28/g
-ISO:     :1,$s/202008251630Z/202008251630Z/g
-NetBSD:  :1,$s/9.99.71/9.99.71/g
-PKGSRC:  :1,$s/2020-08-28/2020-08-28/
+VERSION: :1,$s/2020-09-19/2020-09-19/g
+ISO:     :1,$s/202009160110Z/202009160110Z/g
+NetBSD:  :1,$s/9.99.72/9.99.72/g
+PKGSRC:  :1,$s/2020-09-19/2020-09-19/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-08-28-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2020-09-19-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-08-28-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2020-09-19-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-08-28-earmv6hf/2020-08-28-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-08-28-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-09-19-earmv6hf/2020-09-19-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-09-19-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.71 evbarm-earmv6hf 202008251630Z rpi.img from nyftp.
+- NetBSD 9.99.72 evbarm-earmv6hf 202009160110Z rpi.img from nyftp.
 - Kernelized RAIDframe activated
 
 PR
@@ -23,29 +23,41 @@ PR
  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=55505
 
 - RPI4: testing on NetBSD/aarch64
-  http://mail-index.netbsd.org/port-arm/2020/08/08/msg006926.html
+  http://mail-index.netbsd.org/port-arm/2020/09/13/msg006970.html
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 
 Changes from 2020-07-25 version
 https://github.com/ebijun/NetBSD/commit/a656cc82c1fe6d27cf0d2ce8d69fe12d75fc608d
 
 sysinfo:
- bind-9.16.5 bozohttpd-20200820 NetBSD-9.99.71
- sh-20181212-20200825162724Z userland-NetBSD-9.99.71/evbarm
+ bind-9.16.5 bozohttpd-20200820 dhcpcd-9.2.0 g++-9.3.0 gcc-9.3.0
+ NetBSD-9.99.72 sh-20181212-20200915234003Z
+ userland-NetBSD-9.99.72/evbarm
 
 pkgsrc:
  at-spi2-atk-2.34.2 at-spi2-core-2.36.0 atk-2.36.0 cairo-1.16.0nb2
- cairo-gobject-1.16.0nb5 dbus-1.12.20 desktop-file-utils-0.26
- fontconfig-2.13.1nb2 fribidi-1.0.10 gd-2.3.0nb1 git-base-2.28.0
- glib2-2.64.4 gtk2+-2.24.32nb15 gtk3+-3.24.22nb1 harfbuzz-2.7.1
- jbigkit-2.1nb1 libXft-2.3.3nb1 libcups-2.3.3nb5 libffi-3.3nb3
- libgcrypt-1.8.6 libidn-1.36 libpsl-0.21.1 lintpkgsrc-4.95
- m17n-lib-1.8.0nb3 pango-1.44.7nb3 py37-cElementTree-3.7.9
- py37-expat-3.7.9 python37-3.7.9 qt5-qtbase-5.15.0nb1
- qt5-qtx11extras-5.15.0nb1 qt5-qtxmlpatterns-5.15.0nb1
+ cairo-gobject-1.16.0nb5 curl-7.72.0nb1 dbus-1.12.20 desktop-file-utils-0.26
+ dillo-3.0.5nb8 fltk-1.3.5nb1 fossil-2.12.1 fribidi-1.0.10
+ gd-2.3.0nb2 git-base-2.28.0nb1 glib2-2.64.5 gnutls-3.6.15
+ gtk2+-2.24.32nb16 gtk3+-3.24.22nb2 harfbuzz-2.7.2 icewm-1.2.38pre2nb2
+ jbigkit-2.1nb1 libcups-2.3.3nb5 libffi-3.3nb4 libgcrypt-1.8.6
+ libgpg-error-1.39 libidn-1.36nb1 libpsl-0.21.1 libxkbcommon-1.0.1
+ libxslt-1.1.34nb3 lintpkgsrc-4.95nb1 m17n-lib-1.8.0nb3 medit-1.2.0nb15
+ mlterm-3.9.0nb3 p11-kit-0.23.21 p5-Authen-SASL-2.16nb8
+ p5-Digest-HMAC-1.03nb10 p5-Email-Valid-1.202nb4 p5-Error-0.17029nb1
+ p5-GSSAPI-0.28nb11 p5-IO-CaptureOutput-1.1105nb1
+ p5-IO-Socket-INET6-2.72nb6 p5-IO-Socket-SSL-2.068 p5-MailTools-2.21nb1
+ p5-Mozilla-CA-20200520 p5-Net-DNS-1.27 p5-Net-Domain-TLD-1.75nb4
+ p5-Net-IP-1.26nb8 p5-Net-LibIDN-0.12nb12 p5-Net-SMTP-SSL-1.04nb4
+ p5-Net-SSLeay-1.88nb1 p5-Socket6-0.29nb2 p5-TimeDate-2.33
+ pango-1.46.1 perl-5.32.0nb1 py37-cElementTree-3.7.9
+ py37-expat-3.7.9 python27-2.7.18nb2 python37-3.7.9nb1
+ qt5-qtbase-5.15.0nb2 qt5-qtx11extras-5.15.0nb2 qt5-qtxmlpatterns-5.15.0nb2
  ruby26-cairo-1.16.6nb1 ruby26-cairo-gobject-3.4.2nb1
- ruby26-gettext-3.3.6 ruby26-mikutter-4.0.6 ruby26-pluggaloid-1.5.0
- tiff-4.1.0nb1 uim-1.8.8nb6
+ ruby26-gettext-3.3.6 ruby26-gtk2-3.4.2nb1 ruby26-mikutter-4.0.6
+ ruby26-moneta-1.4.0 ruby26-pango-3.4.2nb1 ruby26-pkg-config-1.4.2
+ ruby26-pluggaloid-1.5.0 tcsh-6.22.02nb1 tiff-4.1.0nb1
+ uim-1.8.8nb6 vlgothic-ttf-20200720 wget-1.20.3nb9
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -103,7 +115,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-08-28-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-09-19-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -159,7 +171,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-08-28/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-09-19/
 
 - If you use Official Package for NetBSD9:
 
@@ -327,24 +339,27 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference Online/Kyoto 2020, NetBSD BOF.
+For Open Source Conference Online/Hiroshima 2020, NetBSD BOF.
 I've updated raspberry-pi image.
 
- https://event.ospn.jp/osc2020-online-kyoto/
- #osckyoto
+ https://event.ospn.jp/osc2020-online-hiroshima/
+ https://event.ospn.jp/osc2020-online-hiroshima/session/155110
+ #osc20hi
 
 NetBSD BoF:
-Aug.28 2020:  ZOOM&YoutubeLive
+Sep.19 2020:  ZOOM&YoutubeLive
+11:00(UTC+9)-11:45
+
 https://event.ospn.jp/
-https://ospn.connpass.com/event/178846/
+https://ospn.connpass.com/event/181686/
 https://www.youtube.com/ospn-jp
 
-http://www.re.soum.co.jp/~jun/OSC2020kyoto.pdf
+http://www.re.soum.co.jp/~jun/OSC2020hiroshima.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2020.rst
 
-- NetBSD 9.99.71 earmv6hf rpi.img.gz base
+- NetBSD 9.99.72 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
