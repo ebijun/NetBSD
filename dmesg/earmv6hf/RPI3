@@ -4,12 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.71 (RPI2) #0: Tue Aug 25 16:27:24 UTC 2020
+NetBSD 9.99.72 (RPI2) #0: Tue Sep 15 23:40:03 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 916 MB
-pool redzone disabled for 'buf4k'
-pool redzone disabled for 'buf64k'
 entropy: no seed from bootloader
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
@@ -127,6 +125,7 @@ aes: ARM NEON vpaes
 chacha: ARM NEON ChaCha
 adiantum: self-test passed
 aes_ccm: self-test passed
+blake2s: self-test passed
 sdmmc1: 4-bit width, 50.000 MHz
 bwfm0 at sdmmc1 function 1
 (manufacturer 0x2d0, product 0xa9a6) at sdmmc1 function 2 not configured
@@ -166,7 +165,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.71/modules
+kern.module.path=/stand/evbarm/9.99.72/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
