@@ -48,6 +48,7 @@ RaspberryPIのNetBSDイメージについて
  2020/06/27,9.99.68,,3.9.0nb2,,icu67 bind9.16.3,OSC北海道,http://mail-index.netbsd.org/port-arm/2020/06/25/msg006812.html
  2020/07/25,9.99.69,,,,Kernel Address SANitizer,OSC新潟,http://mail-index.netbsd.org/port-arm/2020/07/21/msg006885.html
  2020/08/28,9.99.71,4.0.6,,,RPI4+UEFI,OSC京都,http://mail-index.netbsd.org/port-arm/2020/08/27/msg006954.html
+ 2020/09/19,9.99.72,,3.9.0nb3,,GCC9.3,OSC広島,http://mail-index.netbsd.org/port-arm/2020/09/17/msg006975.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。

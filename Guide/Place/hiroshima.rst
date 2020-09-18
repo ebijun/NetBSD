@@ -47,7 +47,7 @@ Maps:
  2017,11/26,200,32,サテライトキャンパスひろしま
  2018,9/23,170,18,サテライトキャンパスひろしま
  2019,9/15,200,19,サテライトキャンパスひろしま
- 2020,9/19,,オンライン
+ 2020,9/19,,,オンライン
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,7 +59,6 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
-
  158,OSC2020広島,http://www.re.soum.co.jp/~jun/OSC2020hiroshima.pdf
  146,OSC2018広島,http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
  130,OSC2018広島,http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
@@ -117,10 +116,10 @@ OSC広島発表
 .. csv-table::
  :widths: 30 15 80
 
- RAKUBEER,三川町,国産地ビールの殿堂 12:00- 17:00-19:00ハッピーアワー
- 広島北ビールバー,可部,17:30-23:30 日月休
- Fuelstore,江波,Session's Brewery 14:00-23:00OYSTER CITY Pale AleとStout
  松本無線パーツ,商工センター,日曜休み NHK前からバス
+ Fuelstore,江波,Session's Brewery 14:00-23:00OYSTER CITY Pale AleとStout
+ 広島北ビールバー,可部,17:30-23:30 日月休
+ RAKUBEER,三川町,国産地ビールの殿堂 12:00- 17:00-19:00ハッピーアワー
  もり,富士見町,お好み焼き。11:00-17:30 平日中休みあり 日曜休み 
  ちんちくりん,薬研堀,ちんちくりん焼き
  むさし,広島駅,地下のむさしでおにぎり弁当
@@ -174,6 +173,21 @@ OSC広島発表
 2019年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. image::  ../Picture/2019/09/15/DSC_7622.JPG
+.. image::  ../Picture/2019/09/15/DSC_7626.JPG
+.. image::  ../Picture/2019/09/15/DSC_7628.JPG
+.. image::  ../Picture/2019/09/15/DSC_7633.JPG
+.. image::  ../Picture/2019/09/15/DSC_7638.JPG
+.. image::  ../Picture/2019/09/15/DSC_7642.JPG
+.. image::  ../Picture/2019/09/15/DSC_7646.JPG
+.. image::  ../Picture/2019/09/15/DSC_7647.JPG
+.. image::  ../Picture/2019/09/15/DSC_7649.JPG
+.. image::  ../Picture/2019/09/15/DSC_7652.JPG
+.. image::  ../Picture/2019/09/15/DSC_7653.JPG
+.. image::  ../Picture/2019/09/15/DSC_7654.JPG
+.. image::  ../Picture/2019/09/15/DSC_7655.JPG
+.. image::  ../Picture/2019/09/15/DSC_7656.JPG
+.. image::  ../Picture/2019/09/15/DSC_7657.JPG
 
 2018年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
