@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -46,7 +46,8 @@ Maps:
  2016,11/27,210,27,サテライトキャンパスひろしま
  2017,11/26,200,32,サテライトキャンパスひろしま
  2018,9/23,170,18,サテライトキャンパスひろしま
- 2019,9/15,,19,サテライトキャンパスひろしま
+ 2019,9/15,200,19,サテライトキャンパスひろしま
+ 2020,9/19,,オンライン
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,6 +60,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
 
+ 158,OSC2020広島,http://www.re.soum.co.jp/~jun/OSC2020hiroshima.pdf
  146,OSC2018広島,http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
  130,OSC2018広島,http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
  118,OSC2017広島,http://www.re.soum.co.jp/~jun/OSC2017hiroshima.pdf 
@@ -84,7 +86,8 @@ togetterまとめ
  OSC2016広島,OSC2016広島 NetBSDブース展示の記録,https://togetter.com/li/1053125
  OSC2017広島,OSC2017広島 NetBSDブース展示の記録,https://togetter.com/li/1175260
  OSC2018広島,OSC2018広島 NetBSDブース展示の記録,https://togetter.com/li/1269545
- OSC2019広島,OSC2019広島 NetBSDブース展示の記録,
+ OSC2019広島,OSC2019広島 NetBSDブース展示の記録,https://togetter.com/li/1404262
+ OSC2020広島,OSC2020 Online/Hiroshima NetBSDのご紹介 の記録,https://togetter.com/li/1593951
 
 OSC広島発表
 ~~~~~~~~~~~~~
@@ -106,6 +109,7 @@ OSC広島発表
  NetBSD/luna68kで「PSG音源の調べ」ふたたび,OSC2016広島,https://speakerdeck.com/tsutsui/osc2016-hiroshima-psg-tunes-on-netbsd-luna68k-again
  響け!…ない NetBSD,OSC2017広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc17hi/
  響け!…ない NetBSD 近くないフィナーレ,OSC2018広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc18hi/
+ 響け! NetBSD 〜AUDIO2へようこそ〜,OSC2019広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc19hi/
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -113,14 +117,14 @@ OSC広島発表
 .. csv-table::
  :widths: 30 15 80
 
- もり,富士見町,お好み焼き。11:00-17:30 平日中休みあり 日曜休み 
- Fuelstore,江波,Session's Brewery 14:00-23:00
- 広島北ビールバー,可部,17:30-23:30 日月休
- 松本無線パーツ,商工センター,日曜休み
- ビールスタンド重富,銀山町,17:00-壱度注ぎ/弐度注ぎ/参度注ぎ/重富注ぎ
  RAKUBEER,三川町,国産地ビールの殿堂 12:00- 17:00-19:00ハッピーアワー
+ 広島北ビールバー,可部,17:30-23:30 日月休
+ Fuelstore,江波,Session's Brewery 14:00-23:00OYSTER CITY Pale AleとStout
+ 松本無線パーツ,商工センター,日曜休み NHK前からバス
+ もり,富士見町,お好み焼き。11:00-17:30 平日中休みあり 日曜休み 
  ちんちくりん,薬研堀,ちんちくりん焼き
  むさし,広島駅,地下のむさしでおにぎり弁当
+ ビールスタンド重富,銀山町,17:00-壱度注ぎ/弐度注ぎ/参度注ぎ/重富注ぎ
  アンデルセン,紙屋町,マフィンプレートのモーニング
  県立広島大学,宇品,2011年OSC開催地
  広島国際学院大学,中野東, 2012年OSC開催地
@@ -166,6 +170,10 @@ OSC広島発表
  陸軍被服支厰倉庫,出汐,峠三吉「倉庫の記録」
  広島市郷土資料館,宇品,曲がった鉄骨と、かもじづくり。かもじって何？
  旧広島港湾事務所,宇品,広島唯一の明治時代の公共建築かつ被曝建物。
+
+2019年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 2018年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
