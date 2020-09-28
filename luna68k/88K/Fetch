@@ -1,2 +1,7 @@
-#ftp https://cdn.openbsd.org/pub/OpenBSD/6.7/luna88k/miniroot67.fs
-ftp https://cdn.openbsd.org/pub/OpenBSD/6.7/luna88k/bsd
+
+#VER=6.7
+VER=snapshots
+
+ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/miniroot68.fs
+ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd
+ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.rd
