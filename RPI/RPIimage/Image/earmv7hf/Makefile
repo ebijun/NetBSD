@@ -12,7 +12,7 @@
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202009012130Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202009250550Z/evbarm-earmv7hf/binary
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-09-19/
 
@@ -75,7 +75,7 @@ rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
 	fdisk -uf -0 -s 6/8192/188416 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fdisk -uf -1 -s 169/458752/4456448 ${VND} 
+	fdisk -uf -1 -s 169/458752/4702208 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
@@ -101,8 +101,8 @@ rpi:
 file: 
 	echo Create ${FILE}.
 #	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
-	dd if=/dev/zero of=${FILE} bs=512 count=4915200 progress=62000
-#	 2048*2400
+	dd if=/dev/zero of=${FILE} bs=512 count=5160960 progress=62000
+#	 2048*2520
 	sleep 3
 
 # stop sshd for package install
