@@ -11,8 +11,8 @@ make pkg
 ## check packages.
 #
 #mv back.img `date +%Y-%m-%d`-netbsd-raspi-aarch64.img
-#make logclean;sleep 5
-#make pkg-back;sleep 5
+#make logclean
+#make pkg-back
 #make mikutter-key
 #
 #./Copy
