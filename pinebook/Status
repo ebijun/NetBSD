@@ -72,7 +72,7 @@ pkgsrc:
  
 pkgsrc todo:
 - mate
-  x11/mate-applets needs py27-gobjects,others need py37-gobjects
+  pkgsrc/devel/libappindicator depends on py27-gtk2
 - asunder
   cdparanoia reading failed hangs on startup
 - pdfpc: testing failed
