@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20200928)
+Subject: pinebook status update (20201002)
 
 Topics:
 - gcc 9.3.0
@@ -13,6 +13,8 @@ Topics:
 - exiv2
  cc1plus: error: '-fcf-protection=full' is not supported for this target
 - touchpad: sometimes cursor far away.
+- /dev/random issue
+ http://mail-index.netbsd.org/tech-kern/2020/10/01/msg026781.html
  
 ToDo:
 - 3D acceleration
@@ -133,7 +135,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 9.99.72 (GENERIC64) #0: Sat Sep 12 19:41:20 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.73 (GENERIC64) #0: Tue Sep 29 08:52:11 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
