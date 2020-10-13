@@ -7,7 +7,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-08-22/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202009281900Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202010111850Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img
 ORD=a.img
@@ -55,6 +55,10 @@ release:
 	(cd ../..; tar cf - root ) |(cd ${MNT_ROOT};tar xvf -)
 	tar cf - etc |(cd ${MNT_ROOT};tar xvf -)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT_ROOT}/etc/pkg_install.conf 
+	#https://mail-index.netbsd.org/current-users/2020/05/01/msg038495.html
+	rndctl -S var/db/entropy-file #running on amd64
+	cp var/db/entropy-file ${MNT_ROOT}/var/db/entropy-file
+	ls -l ${MNT_ROOT}/var/db/entropy-file
 	umount ${MNT_ROOT}
 	vnconfig -u ${VND}
 
@@ -117,10 +121,10 @@ pkg:
 	vnconfig -u ${VND}
 
 pkg-back:
+	echo ${DK_RELEASE}
 	vnconfig ${VND} ${FILE}
-	dkctl ${VND} listwedges
-	fsck ${DK_ROOT}
-	mount ${DK_ROOT} ${MNT_ROOT}
+	fsck /dev/${DK_RELEASE}
+	mount /dev/${DK_RELEASE} ${MNT_ROOT}
 	cp etc/rc.conf ${MNT_ROOT}/etc/rc.conf
 	umount ${MNT_ROOT}
 	vnconfig -u ${VND}
