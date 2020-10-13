@@ -1,28 +1,27 @@
-VERSION: :1,$s/2020-09-13/2020-09-13/g
-ISO:     :1,$s/202009122000Z/202009122000Z/g
-NetBSD:  :1,$s/9.99.72/9.99.72/g
-PKGSRC:  :1,$s/2020-04-22/2020-09-13/
+VERSION: :1,$s/2020-10-13/2020-10-13/g
+ISO:     :1,$s/202010111850Z/202010111850Z/g
+NetBSD:  :1,$s/9.99.73/9.99.73/g
+PKGSRC:  :1,$s/2020-04-22/2020-10-13/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-09-13-netbsd-raspi-aarch64.img
+Subject: 2020-10-13-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-09-13-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2020-10-13-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-09-13-aarch64/2020-09-13-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-09-13-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-10-13-aarch64/2020-10-13-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-10-13-aarch64/MD5
 
 Topics:
 - only for RPI4 
   (fill dtb for RPI3?)
-- build script
- https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
 - /dev/random issue:HEADS UP: Entropy overhaul
  https://mail-index.netbsd.org/current-users/2020/05/01/msg038495.html
  http://mail-index.netbsd.org/tech-kern/2020/10/01/msg026781.html
-
+- build script
+ https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
 
 RPI4 status:
 - boot via UEFI_VER=v1.17
@@ -39,41 +38,28 @@ RPI4 status:
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.72 evbarm-aarch64 202009122000Z arm64.img from nyftp.
+- NetBSD-current 9.99.73 evbarm-aarch64 202010111850Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/sysinfo
 
-Update from 2020-08-22:
-https://github.com/ebijun/NetBSD/commit/e8d136fd8019c489a8510568d28847c54089c756
+Update from 2020-09-13:
+https://github.com/ebijun/NetBSD/commit/d5ebdb138e5834c22b9df3d442714784c9c7af68
 
 sysinfo:
- bozohttpd-20200820 dhcpcd-9.2.0 g++-9.3.0 gcc-9.3.0
- NetBSD-9.99.72 sh-20181212-20200912194120Z
- userland-NetBSD-9.99.72/evbarm
+ dhcpcd-9.3.0 libc-12.218 NetBSD-9.99.73 sh-20181212-20201011184820Z
+ tzdata-2020b userland-NetBSD-9.99.73/evbarm
 
 pkgsrc:
- cairo-1.16.0nb2 cairo-gobject-1.16.0nb5 curl-7.72.0nb1
- dillo-3.0.5nb8 fltk-1.3.5nb1 fossil-2.12.1 gd-2.3.0nb2
- git-base-2.28.0nb1 glib2-2.64.5 gnutls-3.6.15
- gtk2+-2.24.32nb16 gtk3+-3.24.22nb2 harfbuzz-2.7.2
- icewm-1.2.38pre2nb2 libcups-2.3.3nb5 libffi-3.3nb4
- libgpg-error-1.39 libidn-1.36nb1 libxslt-1.1.34nb3
- lintpkgsrc-4.95nb1 m17n-lib-1.8.0nb3 medit-1.2.0nb15
- mlterm-3.9.0nb3 p11-kit-0.23.21 p5-Authen-SASL-2.16nb8
- p5-Digest-HMAC-1.03nb10 p5-Email-Valid-1.202nb4
- p5-Error-0.17029nb1 p5-GSSAPI-0.28nb11 p5-IO-CaptureOutput-1.1105nb1
- p5-IO-Socket-INET6-2.72nb6 p5-IO-Socket-SSL-2.068 p5-MailTools-2.21nb1
- p5-Mozilla-CA-20200520 p5-Net-DNS-1.26 p5-Net-Domain-TLD-1.75nb4
- p5-Net-IP-1.26nb8 p5-Net-LibIDN-0.12nb12 p5-Net-SMTP-SSL-1.04nb4
- p5-Net-SSLeay-1.88nb1 p5-Socket6-0.29nb2 p5-TimeDate-2.33
- pango-1.46.1 perl-5.32.0nb1 py37-cElementTree-3.7.9
- py37-expat-3.7.9 python27-2.7.18nb2 python37-3.7.9nb1
- qt5-qtbase-5.15.0nb2 qt5-qtx11extras-5.15.0nb2 qt5-qtxmlpatterns-5.15.0nb2
- ruby26-cairo-1.16.6nb1 ruby26-cairo-gobject-3.4.2nb1 ruby26-gtk2-3.4.2nb1
- ruby26-pango-3.4.2nb1 tcsh-6.22.02nb1 tiff-4.1.0nb1 uim-1.8.8nb6
- vlgothic-ttf-20200720 wget-1.20.3nb9
+ at-spi2-atk-2.38.0 at-spi2-core-2.38.0 dillo-3.0.5nb9 glib2-2.66.0
+ gobject-introspection-1.66.0 gtk3+-3.24.23 hicolor-icon-theme-0.17nb1
+ libproxy-0.4.15nb1 libxkbcommon-1.0.1 p5-Net-DNS-1.27 python27-2.7.18nb3
+ qt5-qtbase-5.15.1 qt5-qtx11extras-5.15.1 qt5-qtxmlpatterns-5.15.1
+ ruby26-base-2.6.6nb1 ruby26-mikutter-4.1.2
+ ruby26-mikutter-plugins-twitter-4.1 ruby26-moneta-1.4.0
+ ruby26-nokogiri-1.10.10 ruby26-pkg-config-1.4.3 ruby26-public_suffix-4.0.6
+ sudo-1.8.31p2 zstd-1.4.5nb1
 
 Pkgsrc issues:
 - mate/firefox/inkscape works well
