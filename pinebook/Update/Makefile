@@ -1,8 +1,7 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.72-aarch64-202009122000Z-install.img
-#-rw-r--r--  1 root  wheel  1625292800 Sep 13 09:08 /usr/release/images/NetBSD-9.99.72-aarch64-202009122000Z-install.img
-#-rw-r--r--  1 jun   wheel  1625292800 Aug 17 06:08 /usr/release/images/NetBSD-9.99.71-aarch64-202008161710Z-install.img
-
+IMG=${RELEASE}/NetBSD-9.99.73-aarch64-202010121040Z-install.img
+#-rw-r--r--  1 root  wheel  1625292800 Oct 13 00:16 /usr/release/images/NetBSD-9.99.73-aarch64-202010121040Z-install.img
+#-rw-r--r--  1 root  wheel  1625292800 Sep 29 23:58 /usr/release/images/NetBSD-9.99.73-aarch64-202009291040Z-install.img
 
 DK=dk1
 
