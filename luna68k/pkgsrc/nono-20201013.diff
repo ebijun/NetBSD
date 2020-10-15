@@ -1,0 +1,60 @@
+diff --git a/Makefile.rule b/Makefile.rule
+index 70df33b7..034dc13f 100644
+--- a/Makefile.rule
++++ b/Makefile.rule
+@@ -44,9 +44,6 @@ clean:
+ cleandir:
+ 	rm -rf .depends ${CLEANDIRFILES}
+ 
+-${BINDIR}:
+-	mkdir -p ${BINDIR}
+-
+ .PHONY: install
+ install:
+ 
+diff --git a/cli/Makefile b/cli/Makefile
+index 03eeca19..050fd21a 100644
+--- a/cli/Makefile
++++ b/cli/Makefile
+@@ -22,7 +22,8 @@ OBJS=	${CXXSRCS:.cpp=.o}
+ nono-cli:	${MYLIBS} ${OBJS}
+ 	${CXX} ${LDFLAGS} -o $@ ${OBJS} ${MYLIBS_GROUP} ${LIBS}
+ 
+-install:	nono-cli ${BINDIR}
+-	${INSTALL} -m 755 -o 0 -g 0 nono-cli ${BINDIR}
++install:	nono-cli
++	${INSTALL} -d ${DESTDIR}${BINDIR}
++	${INSTALL} -m 755 -o 0 -g 0 nono-cli ${DESTDIR}${BINDIR}
+ 
+ .include "../Makefile.rule"
+diff --git a/po/Makefile b/po/Makefile
+index c6691816..6d0dd79d 100644
+--- a/po/Makefile
++++ b/po/Makefile
+@@ -20,8 +20,8 @@ CAT=	LC_MESSAGES
+ 
+ install:	${TARGETS}
+ .for L in ${LANGUAGES}
+-	mkdir -p ${LOCALEDIR}/${L}/${CAT}
+-	${INSTALL} -m 644 -o 0 -g 0 ${L}/nono.mo ${LOCALEDIR}/${L}/${CAT}
++	${INSTALL} -d ${DESTDIR}${LOCALEDIR}/${L}/${CAT}
++	${INSTALL} -m 644 -o 0 -g 0 ${L}/nono.mo ${DESTDIR}${LOCALEDIR}/${L}/${CAT}
+ .endfor
+ 
+ depend:
+diff --git a/wx/Makefile.in b/wx/Makefile.in
+index 7f3725bb..3344d7cc 100644
+--- a/wx/Makefile.in
++++ b/wx/Makefile.in
+@@ -46,8 +46,9 @@ CLEANDIRFILES=	Makefile
+ nono:	${MYLIBS} ${OBJS}
+ 	${CXX} ${LDFLAGS} -o $@ ${OBJS} ${MYLIBS_GROUP} ${LIBS}
+ 
+-install:	nono ${BINDIR}
+-	${INSTALL} -m 755 -o 0 -g 0 nono ${BINDIR}
++install:	nono
++	${INSTALL} -d ${DESTDIR}${BINDIR}
++	${INSTALL} -m 755 -o 0 -g 0 nono ${DESTDIR}${BINDIR}
+ 
+ # make pot はトップディレクトリで行う必要がある (実行した位置からの相対パスが
+ # ファイルにコメントで残されるため、毎回違うと diff が出てしまう)。
