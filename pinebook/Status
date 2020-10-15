@@ -19,6 +19,13 @@ Topics:
 - /dev/random issue:HEADS UP: Entropy overhaul
  https://mail-index.netbsd.org/current-users/2020/05/01/msg038495.html
  http://mail-index.netbsd.org/tech-kern/2020/10/01/msg026781.html
+- nono: luna68k/luna88k emulator
+ https://twitter.com/isaki68k/status/1315996525919518724
+ http://www.pastel-flower.jp/~isaki/NetBSD/patch/pkgsrc-nono-20201013.diff
+ http://www.pastel-flower.jp/~isaki/NetBSD/patch/nono-20201013.diff
+ add /etc/mk.conf
+  ACCEPTABLE_LICENSES= nono-license
+ cd /usr/pkgsrc/emulators/nono;make ;make package-install
  
 ToDo:
 - 3D acceleration
