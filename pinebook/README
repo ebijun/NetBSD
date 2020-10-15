@@ -2,14 +2,13 @@ To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (20201015)
 
 Topics:
-- gcc 9.3.0
 - firefox80 works fine.
  zoom meeting with firefox on NetBSD/aarch64 on pinebook pro 
-  with UserAgent switcher addon. 
- Send: Share Screen,camera
- Problem: Can"t show others screen
-- libreoffice 7.0.1.2 works fine.
-- works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp
+  with UserAgent switcher addon as Linux.
+ Send: Share Screen,camera/USB Camera
+ Problem: Can"t show others screen/in-camera.
+
+- works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp,libreoffice
 - exiv2
  cc1plus: error: '-fcf-protection=full' is not supported for this target
 - touchpad: sometimes cursor far away.
@@ -41,38 +40,49 @@ ToDo:
 System Updates:
 
 sysinfo:
- NetBSD-9.99.72 bozohttpd-20200820 dhcpcd-9.2.0
- g++-9.3.0 gcc-9.3.0
- sh-20181212-20200912194120Z
- userland-NetBSD-9.99.72/evbarm
+ NetBSD-9.99.73 dhcpcd-9.3.0 libc-12.218 sh-20181212-20201012082121Z
+ tzdata-2020b userland-NetBSD-9.99.73/evbarm
 
 pkgsrc:
- GConf-3.2.3nb6 ImageMagick-7.0.10.28nb1 SDL-1.2.15nb32 SDL2-2.0.12nb5
- ap24-php73-7.3.22nb4 apache-2.4.46nb1 audacious-4.0.5nb1
- autoconf-2.69nb10 automake-1.16.2nb1 avahi-0.6.32nb25
- bison-3.7.1nb1 boost-headers-1.73.0nb3 cairo-1.16.0nb2 caja-1.24.0nb3
- clang-10.0.1nb1 cmake-3.18.2 cups-base-2.3.3nb6 curl-7.72.0nb1
- dconf-0.36.0nb1 deforaos-browser-0.5.4nb1 deforaos-camera-0.3.0nb3
- dhcpcd-9.2.0 dillo-3.0.5nb8 emacs26-26.3nb9 ffmpeg2-2.8.17nb3
- ffmpeg3-3.4.8nb3 ffmpeg4-4.3.1nb4 ffmpegthumbnailer-2.2.2nb1
- firefox-80.0.1nb1 firefox-l10n-80.0.1 firefox52-52.9.0nb30
- fluidsynth-2.1.4nb1 fontconfig-2.13.1nb2 fossil-2.12.1
- gawk-5.1.0 gcc8-8.4.0nb1 gconfmm-2.28.3nb23 gd-2.3.0nb2
- gedit-3.36.2nb2 gexiv2-0.12.0nb4 ghostscript-9.05nb23
- ghostscript-agpl-9.53.0 gimp-2.10.20nb2 git-base-2.28.0nb1
- glib2-2.64.5 glib2-tools-2.64.5 gnupg2-2.2.23 gnutls-3.6.15
- graphviz-2.44.1nb3 gspell-1.8.3nb4 gssdp-1.0.3nb10
- gtk2+-2.24.32nb16 gtk3+-3.24.22nb2 harfbuzz-2.7.2 ibus-1.5.22nb3
- icewm-1.2.38pre2nb2 inkscape-1.0.1 jemalloc-5.2.1nb2 jwm-2.3.7nb10
- libffi-3.3nb4 libgtop-2.28.4nb18 libreoffice-7.0.1.2 libv4l-1.18.1
- marco-1.24.1nb2 mate-1.24.0nb2 mdds-1.6.0 medit-1.2.0nb15
- minitube-3.5nb1 mlterm-3.9.0nb3 mpv-0.32.0nb16 nodejs-14.10.1
- nspr-4.28nb1 nss-3.56nb1 openjdk8-1.8.252nb3 osabi-NetBSD-9.99.72
- pango-1.46.1 pangomm-2.42.1nb2 perl-5.32.0nb1 php-7.3.21
- poppler-0.87.0nb1 python27-2.7.18nb2 python37-3.7.9nb1
- qt5-qtbase-5.15.0nb2 rust-1.45.2nb2 samba-4.12.6nb2
- seamonkey-2.53.3 sylpheed-3.7.0nb8 uim-1.8.8nb6 vala-0.48.8
- vlgothic-ttf-20200720 wxGTK30-3.0.5.1nb1 xnp2-0.86nb11
+ ImageMagick-7.0.10.33 ap24-php73-7.3.23nb4 apache-ant-1.10.9
+ asciidoc-9.0.2 at-spi2-atk-2.38.0 at-spi2-core-2.38.0
+ avahi-0.8 babl-0.1.82 bison-3.7.2 cldr-emoji-annotation-37.0.13.0.0.2
+ cmake-3.18.4 coreutils-8.31nb2 dconf-0.36.0nb2 dhcpcd-9.3.0
+ dillo-3.0.5nb9 firefox-81.0.2 firefox-l10n-81.0.1
+ fluidsynth-2.1.5 fontconfig-2.13.1nb3 gcc8-8.4.0nb2
+ gdbus-codegen-2.66.0 gegl-0.4.26 gexiv2-0.12.0nb5
+ ghostscript-agpl-9.53.2 gimp-2.10.22 glib2-2.66.0
+ glib2-tools-2.66.0 gobject-introspection-1.66.0 gspell-1.8.3nb5
+ gssdp-1.0.3nb11 gtk3+-3.24.23 gtksourceview4-4.8.0
+ gumbo-parser-0.10.1 hicolor-icon-theme-0.17nb1 ibus-1.5.23
+ ibus-anthy-1.5.6nb2 jasper-2.0.21 json-c-0.15
+ kasumi-2.5nb31 libappindicator-12.10.0nb6 libdbusmenu-glib-12.10.2nb11
+ libdbusmenu-gtk3-12.10.2nb20 libde265-1.0.7 libheif-1.9.1nb1
+ libproxy-0.4.15nb1 libreoffice-7.0.2.2 libshout-2.4.4
+ libsndfile-1.0.30nb1 libuv-1.40.0 libwnck3-3.36.0
+ llvm-10.0.1nb1 mate-control-center-1.24.0nb3 mate-panel-1.24.1
+ meson-0.55.3 mupdf-1.18.0 nasm-2.15.05 nginx-1.18.0nb3
+ nodejs-14.13.1 nono-0.1.1 nspr-4.29 nss-3.57 orc-0.4.32
+ osabi-NetBSD-9.99.73 php-7.3.23 php73-curl-7.3.23nb9
+ php73-fpm-7.3.23nb4 php73-gd-7.3.23nb1 php73-iconv-7.3.23
+ php73-intl-7.3.23nb4 php73-json-7.3.23 php73-mbstring-7.3.23
+ php73-pdo-7.3.23 php73-pdo_sqlite-7.3.23nb4 php73-posix-7.3.23
+ php73-zip-7.3.23nb4 php73-zlib-7.3.23nb1 pkgconf-1.7.3
+ podofo-0.9.6nb2 poppler-cpp-0.87.0nb1 py27-cairo-1.18.2nb1
+ py27-expat-2.7.15 py27-gobject3-3.36.1nb1 py27-gtk2-2.24.0nb34
+ py27-setuptools-44.1.1 py37-cffi-1.14.3 py37-ecdsa-0.16.0
+ py37-more-itertools-8.5.0 py37-zipp-3.3.0 python27-2.7.18nb3
+ qt5-qtbase-5.15.1 qt5-qtdeclarative-5.15.1 qt5-qtlocation-5.15.1
+ qt5-qtmultimedia-5.15.1 qt5-qtsensors-5.15.1 qt5-qtserialport-5.15.1
+ qt5-qtsvg-5.15.1 qt5-qttools-5.15.1 qt5-qtwebchannel-5.15.1
+ qt5-qtwebsockets-5.15.1 qt5-qtx11extras-5.15.1 qt5-qtxmlpatterns-5.15.1
+ re2c-2.0.3 ruby26-base-2.6.6nb1 ruby26-mikutter-4.1.2
+ ruby26-mikutter-plugins-twitter-4.1 ruby26-nokogiri-1.10.10
+ ruby26-pkg-config-1.4.3 samba-4.12.7 scim-1.4.15nb21
+ scim-anthy-1.2.7nb34 scribus-1.5.6pre20200611nb2
+ sudo-1.8.31p2 unicode-character-database-13.0.0
+ unicode-emoji-13.1 unixodbc-2.3.9 vala-0.50.1 vte3-0.60.3nb3
+ xbattbar-1.4.2nb10 xkanon-090830nb3 xterm-360 zstd-1.4.5nb1
  
 pkgsrc todo:
 - mate
@@ -143,7 +153,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 8.99.24 (GENERIC) #0: Fri Aug 31 18:44:04 UTC 2018  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+ NetBSD 9.99.73 (GENERIC64) #0: Tue Sep 29 08:52:11 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
