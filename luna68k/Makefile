@@ -28,3 +28,7 @@ nono.cfg:
 fetch:
 	ftp ${TEO}/${IMAGE}
 	gunzip ${IMAGE}
+
+pkgsrc:
+	ftp http://www.pastel-flower.jp/~isaki/NetBSD/patch/pkgsrc-nono-20201013.diff
+	ftp http://www.pastel-flower.jp/~isaki/NetBSD/patch/nono-20201013.diff
