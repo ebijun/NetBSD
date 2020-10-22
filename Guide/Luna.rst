@@ -37,6 +37,11 @@
 .. image:: Picture/2014/07/05/DSC_0230.jpg
  :height: 230
 
+History and Background of LUNA
+-------------------------------------
+
+The LUNA hardware had two different operating systems; a 4.3BSD derivative and a SVR3 variant. The first one, named UNIOS-B, was was a port of Integrated Solution Inc. UNIX product. ISI manufactured m68k based VME UNIX boxes. Their OS had an interesting feature of TRFS (Translucent Remote File System) as well as the popular SMI's NFS. The paper of TRFS was published at USENIX Technical Conference (late '80, details unknown in this moment). [174]_
+
 nono - LUNA-I emulator
 -------------------------------------
 
@@ -55,11 +60,22 @@ nono - LUNA-I emulator
  NetBSD/luna68k 9.0 minimam liveimage 20200518版
  http://teokurebsd.org/netbsd/liveimage/20200518-luna68k/
 
-nonoからのNetBSD/luna68k liveimage起動 [169]_ 
+* pkgsrc経由でのnonoインストール
 
 ::
 
- 1) nono-0.0.3 をダウンロード
+ https://twitter.com/isaki68k/status/1315996525919518724
+ http://www.pastel-flower.jp/~isaki/NetBSD/patch/pkgsrc-nono-20201013.diff
+ http://www.pastel-flower.jp/~isaki/NetBSD/patch/nono-20201013.diff
+ add /etc/mk.conf
+  ACCEPTABLE_LICENSES+= nono-license
+ cd /usr/pkgsrc/emulators/nono;make ;make package-install
+
+* nonoからのNetBSD/luna68k liveimage起動 [169]_ 
+
+::
+
+ 1) nono-0.1.1 をダウンロード
  https://twitter.com/isaki68k/status/1261646479816404992
  2) 展開して doc/index.html を読んでビルド
  3) liveimage をダウンロードして gunzip
@@ -77,8 +93,39 @@ nonoからのNetBSD/luna68k liveimage起動 [169]_
 
 ::
 
+ vmtype=luna
+ #ethernet-hostdriver=tap
+ prom-use-rom=0
+ spc0-id6-image=hd,liveimage-luna68k-raw-20200518.img
+
+
+* Luna88Kの起動
+
+::
+
 「設定ファイルでvmtype=luna88kにして、O/luna88kのリリースセットの中のboot を-Aオプションで指定とかまでは出来ます。」　[170]_
 「it was made from scratch.」　[171]_
+
+::
+
+ #VER=6.7
+ VER=snapshots
+ ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/miniroot68.fs
+ ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd
+ ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.rd
+ nono -A bsd.rd
+
+::
+
+ vmtype=luna88k
+ luna-dipsw1=11111111
+ #ethernet-hostdriver=tap
+ #prom-use-rom=0
+ ram-size=64
+ spc0-id6-image=hd,miniroot67.fs
+
+うぇーい、進んだーーー(゜∀゜)ーーー!! [173]_
+
 
 LUNA前夜 - 誕生と再生のためのテーマ
 -------------------------------------
@@ -830,7 +877,8 @@ yaft X LUNA
 .. [170] https://twitter.com/isaki68k/status/1262375954883772418
 .. [171] https://twitter.com/isaki68k/status/1262949576362930180
 .. [172] https://ja.wikipedia.org/wiki/%E7%AB%8B%E7%9F%B3%E7%BE%A9%E9%9B%84
-
+.. [173] https://twitter.com/isaki68k/status/1317441952107827201
+.. [174] http://wiki.netbsd.org/ports/luna68k/luna68k_info/#behindthescene
 
 このページ
 ~~~~~~~~~~~
