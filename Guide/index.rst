@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/hiroshima
+ Place/tokyo
  RPI/RPIupdate2020
  Luna
  RPI
