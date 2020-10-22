@@ -208,8 +208,26 @@ OSC東京主な展示物
 2019年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image::  ../Picture/2019/02/22/DSC_6697.JPG
-.. image::  ../Picture/2019/02/22/DSC_6698.JPG
+.. image::  ../Picture/2019/11/23/DSC_8063.JPG
+.. image::  ../Picture/2019/11/23/DSC_8065.JPG
+.. image::  ../Picture/2019/11/23/DSC_8066.JPG
+.. image::  ../Picture/2019/11/23/DSC_8067.JPG
+.. image::  ../Picture/2019/11/23/DSC_8068.JPG
+.. image::  ../Picture/2019/11/23/DSC_8069.JPG
+.. image::  ../Picture/2019/11/23/DSC_8070.JPG
+.. image::  ../Picture/2019/11/24/DSC_8085.JPG
+.. image::  ../Picture/2019/11/24/DSC_8086.JPG
+.. image::  ../Picture/2019/11/24/DSC_8087.JPG
+.. image::  ../Picture/2019/11/24/DSC_8088.JPG
+.. image::  ../Picture/2019/11/24/DSC_8089.JPG
+.. image::  ../Picture/2019/11/24/DSC_8090.JPG
+.. image::  ../Picture/2019/11/24/DSC_8091.JPG
+.. image::  ../Picture/2019/11/24/DSC_8092.JPG
+.. image::  ../Picture/2019/11/24/DSC_8093.JPG
+.. image::  ../Picture/2019/11/24/DSC_8094.JPG
+.. image::  ../Picture/2019/11/24/DSC_8095.JPG
+.. image::  ../Picture/2019/11/24/DSC_8096.JPG
+.. image::  ../Picture/2019/11/24/DSC_8097.JPG
 .. image::  ../Picture/2019/02/22/DSC_6713.JPG
 .. image::  ../Picture/2019/02/22/DSC_6715.JPG
 .. image::  ../Picture/2019/02/22/DSC_6722.JPG
