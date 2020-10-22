@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -68,6 +68,8 @@ Maps:
  2018 Fall,10/27-28,1050,62,明星大学
  2019 Spring,2/22-23,1010,68,明星大学
  2019 Fall,11/23-24,,63,明星大学
+ 2020 Spling,4/24-25,500,19,オンライン
+ 2020 Fall,10/23-24,,,オンライン
 
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -80,6 +82,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 159,OSC2020東京秋, http://www.re.soum.co.jp/~jun/OSC2020tokyofall.pdf
  152,OSC2019東京秋, http://www.re.soum.co.jp/~jun/OSC2019tokyofall.pdf
  139,OSC2019東京春, http://www.re.soum.co.jp/~jun/OSC2019tokyospring.pdf
  132,OSC2018東京秋, http://www.re.soum.co.jp/~jun/OSC2018tokyofall.pdf
@@ -106,7 +109,8 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2019東京秋 NetBSDブース展示の記録,
+ OSC2020東京秋 BSDなひととき の記録,https://togetter.com/li/1611536
+ OSC2019東京秋 NetBSDブース展示の記録,https://togetter.com/li/1433822
  OSC2019東京春 NetBSDブース展示の記録, https://togetter.com/li/1321833
  OSC2018東京秋 NetBSDブース展示の記録, https://togetter.com/li/1281694
  OSC2018東京春 NetBSDブース展示の記録, https://togetter.com/li/1202581
@@ -170,6 +174,7 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2019/11/23-24,OSC2019東京秋,NetBSD/zaurus8.1
  2019/2/22-23,OSC2018東京春,Zrouter FreeBSD/mips NetBSD/nintendo64
  2018/10/27-28,OSC2018東京秋,Linux on Nintendo64
  2018/2/23-24,OSC2018東京春,RPI3+XM6i GPD Sparcbook BananaPis 

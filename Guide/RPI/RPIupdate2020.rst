@@ -49,6 +49,8 @@ RaspberryPIのNetBSDイメージについて
  2020/07/25,9.99.69,,,,Kernel Address SANitizer,OSC新潟,http://mail-index.netbsd.org/port-arm/2020/07/21/msg006885.html
  2020/08/28,9.99.71,4.0.6,,,RPI4+UEFI,OSC京都,http://mail-index.netbsd.org/port-arm/2020/08/27/msg006954.html
  2020/09/19,9.99.72,,3.9.0nb3,,GCC9.3,OSC広島,http://mail-index.netbsd.org/port-arm/2020/09/17/msg006975.html
+ 2020/10/24,9.99.74,4.1.2,,,NetBSD9.1,OSC東京秋,http://mail-index.netbsd.org/port-arm/2020/10/18/msg007015.html
+
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
@@ -121,7 +123,7 @@ RPI4
 -------
 
 - テスト中です。pinebookとpkgsrcを共用しています。
-  http://mail-index.netbsd.org/port-arm/2020/08/08/msg006926.html
+  http://mail-index.netbsd.org/port-arm/2020/10/13/msg006996.html
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 
 armv7のいろいろ
