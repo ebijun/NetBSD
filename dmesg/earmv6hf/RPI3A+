@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.72 (RPI2) #0: Tue Sep 15 23:40:03 UTC 2020
+NetBSD 9.99.74 (RPI2) #0: Sat Oct 17 10:47:28 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 448 MB
 avail memory = 425 MB
@@ -43,7 +43,7 @@ bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 49
 bcmgpio0: pins 32..54 interrupting on icu irq 50
 gpio0 at bcmgpio0: 54 pins
-bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10
+bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10 DMA11
 /soc/power at simplebus1 not configured
 /phy at simplebus0 not configured
 bsciic0 at simplebus1: Broadcom Serial Controller
@@ -64,7 +64,7 @@ bcmsdhost0: interrupting on icu irq 56
 bsciic1 at simplebus1: Broadcom Serial Controller
 bsciic1: interrupting on icu irq 53
 iic1 at bsciic1: I2C bus
-com0 at simplebus1: BCM AUX UART, working fifo
+com0 at simplebus1: BCM AUX UART, 1-byte FIFO
 com0: console
 com0: interrupting on icu irq 29
 /soc/pwm@7e20c000 at simplebus1 not configured
@@ -89,18 +89,18 @@ gpioleds0 at simplebus0: ACT
 bcmrng0 at simplebus1: RNG
 entropy: ready
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu3: DC enabled IC enabled WB enabled EABT branch prediction enabled
-cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu1: DC enabled IC enabled WB enabled EABT branch prediction enabled
 cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu3: DC enabled IC enabled WB enabled EABT branch prediction enabled
+cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu2: DC enabled IC enabled WB enabled EABT branch prediction enabled
 cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
@@ -152,24 +152,24 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.72/modules
+kern.module.path=/stand/evbarm/9.99.74/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 vchiq0: interrupting on icu irq 66
-vchiq: vchiq_init_state: slot_zero = 0xca400000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xca410000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 kern notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
 vchiq: vchiq_initialise: videocore initialized after 1 retries
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-a-plus.bin
+bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 audio0 at vcaudio0: playback, capture, half duplex, independent
 audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for playback
 audio0: slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
-bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 bwfm0: NVRAM file default:    brcmfmac43455-sdio.txt
 bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
 bwfm0: Found NVRAM file: brcmfmac43455-sdio.txt

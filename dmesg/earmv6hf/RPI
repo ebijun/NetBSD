@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.72 (RPI) #0: Tue Sep 15 23:40:03 UTC 2020
+NetBSD 9.99.74 (RPI) #0: Sat Oct 17 10:47:28 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 178 MB
@@ -36,7 +36,7 @@ bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 49
 bcmgpio0: pins 32..54 interrupting on icu irq 50
 gpio0 at bcmgpio0: 54 pins
-bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10
+bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10 DMA11
 /soc/power at simplebus1 not configured
 /phy at simplebus0 not configured
 bsciic0 at simplebus1: Broadcom Serial Controller
@@ -75,8 +75,8 @@ vchiq0 at simplebus1: BCM2835 VCHIQ
 gpioleds0 at simplebus0: ACT
 bcmrng0 at simplebus1: RNG
 entropy: ready
-timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 timecounter: Timecounter "bcmtmr0" frequency 1000000 Hz quality 100
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 sdmmc0 at bcmsdhost0
 dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
 usb0 at dwctwo0: USB revision 2.0
@@ -115,7 +115,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.72/modules
+kern.module.path=/stand/evbarm/9.99.74/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xc5f40000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
