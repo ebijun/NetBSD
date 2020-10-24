@@ -95,7 +95,7 @@ nono - LUNA-I emulator
 
  vmtype=luna
  #ethernet-hostdriver=tap
- prom-use-rom=0
+ #prom-use-rom=0  #外部ROMを指定しなければ内蔵なんちゃってROMで上がるので指定しなくても動く
  spc0-id6-image=hd,liveimage-luna68k-raw-20200518.img
 
 
@@ -118,7 +118,7 @@ nono - LUNA-I emulator
 ::
 
  vmtype=luna88k
- luna-dipsw1=11111111
+ #luna-dipsw1=11111111  #ディップスイッチの初期値設定
  #ethernet-hostdriver=tap
  #prom-use-rom=0
  ram-size=64
