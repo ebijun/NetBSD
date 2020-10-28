@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	nono-0.1.1
+DISTNAME=	nono-0.1.2
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.pastel-flower.jp/~isaki/nono/archive/
 
