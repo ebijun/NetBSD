@@ -108,7 +108,7 @@ nono - LUNA-I emulator
 
 ::
 
- #VER=6.7
+ #VER=6.8
  VER=snapshots
  ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/miniroot68.fs
  ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd
@@ -124,8 +124,8 @@ nono - LUNA-I emulator
  ram-size=64
  spc0-id6-image=hd,miniroot67.fs
 
-うぇーい、進んだーーー(゜∀゜)ーーー!! [173]_
-
+ うぇーい、進んだーーー(゜∀゜)ーーー!! [173]_
+ MFP通過した。 [175]_
 
 LUNA前夜 - 誕生と再生のためのテーマ
 -------------------------------------
@@ -879,6 +879,7 @@ yaft X LUNA
 .. [172] https://ja.wikipedia.org/wiki/%E7%AB%8B%E7%9F%B3%E7%BE%A9%E9%9B%84
 .. [173] https://twitter.com/isaki68k/status/1317441952107827201
 .. [174] http://wiki.netbsd.org/ports/luna68k/luna68k_info/#behindthescene
+.. [175] https://twitter.com/isaki68k/status/1322807313741148160
 
 このページ
 ~~~~~~~~~~~

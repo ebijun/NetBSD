@@ -35,6 +35,8 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
+ 関西オープンソース2020 BSDなひととき の記録,https://togetter.com/li/1617531
+ オープンソースカンファレンス2020大阪展示の記録,https://togetter.com/li/1459510
  関西オープンソース2019 NetBSDブース展示の記録,https://togetter.com/li/1427775
  オープンソースカンファレンス2019大阪展示の記録,https://togetter.com/li/1312855
  関西オープンソース2018 NetBSDブース展示の記録,https://togetter.com/li/1286691
@@ -58,12 +60,15 @@ Maps:
  marca,西長堀/大正,クラフトビール。TUGBOAT TAISHOにBeer stand。　
  旧ヤム邸,谷六,カレー。二階にねこがいる。
  テタールヴァレ,谷四,ビアバー 2020蜜柑ビール。
+ YELLOW APE CRAFT,北浜,20タップ。箕面×TAIHO の1%∞スタウト。
+ BAK BREWERY,高麗橋,Fantastic Beer GrapeとFranbiere。マークロンソン。
+ BEER BELLY,土佐堀,箕面ビール各種
  ホビーランド,本町,ミニタリープラモデル専門店。エッチングパーツが熱い。
  東京真空管商会,日本橋,関西真空管の聖地。
  デジット,日本橋,秋葉で小売してないパーツもある。
  スタンドうみねこ,心斎橋,うみねこはなれも近くにある。
  CRAFT BEER BASE,大淀南,4タップ酒屋併設
- モリムラ＠ミュージアム,北加賀屋,Mの肖像 金土日12:00-18:00
+ モリムラ＠ミュージアム,北加賀屋,北加賀屋の美術館によって マスクをつけられたモナリザ、さえも 金土日12:00-18:00
  順記,梅田,終わった後の打ち上げはたいていここ。餃子と餃子と餃子。
  一芳亭 本店,南海なんば,しゅうまいとしゅうまい
  榮華亭梅田東通り店,東梅田,進捗を出そうと男の約束を交わす店
@@ -102,6 +107,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ お歳暮でSun3が送られてきたので,OSC2020大阪,https://speakerdeck.com/tsutsui/osc2020osaka
  Fixing NetBSD/zaurus 8.1,KOF2019,https://speakerdeck.com/tsutsui/kof2019-netbsd
  dosbox tutorial,OSC2019大阪,@kapper1224 http://kapper1224.sblo.jp/
  daemon.kbug.gr.jp,OSC2019大阪,taka@
@@ -125,6 +131,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2020/1/25,大阪産業創造館, NetBSD9.0 RC1/sun3 
  2019/11/8-9,南港ATC,mplayer on ZAURUS/PC6001VX/X68030 with Neptune-X
  2019/1/26,大阪産業創造館,X68030+nanotodon
  2018/11/9-10,南港ATC,LUNA68K&YM2194
