@@ -97,6 +97,7 @@ nono - LUNA-I emulator
  vmtype=luna
  #ethernet-hostdriver=tap
  #prom-use-rom=0  #外部ROMを指定しなければ内蔵なんちゃってROMで上がるので指定しなくても動く
+ #spc0-id6-writeprotect=1 #ディスクライトプロテクト。デモとかで^Cで落とす用。
  spc0-id6-image=hd,liveimage-luna68k-raw-20200518.img
 
 
@@ -249,6 +250,8 @@ LUNA88k　[10]_
 #. 起動動画 [30]_ [48]_ [49]_
 #. ユニマガ紹介記事 [74]_ と、製品仕様 [75]_ と、まとめ [71]_
 #. miod@openbsd.org さんのOpenBSD/luna88k ページ [90]_
+#. LUNA-88K2 姉妹生存報告。10月にリリースされた #OpenBSD 6.8 [176]_
+#. MC88100 バグ対応の一部 [177]_
 
 .. csv-table:: シリーズ構成 [73]_
 
@@ -256,6 +259,9 @@ LUNA88k　[10]_
  8/16MB    ,32/64MB
  250MB     ,250MB 
  270万円     ,350万円
+
+* 
+
 
 omron3
 ~~~~~~~
@@ -881,6 +887,8 @@ yaft X LUNA
 .. [173] https://twitter.com/isaki68k/status/1317441952107827201
 .. [174] http://wiki.netbsd.org/ports/luna68k/luna68k_info/#behindthescene
 .. [175] https://twitter.com/isaki68k/status/1322807313741148160
+.. [176] https://twitter.com/ao_kenji/status/1324952816884985857
+.. [177] https://twitter.com/ao_kenji/status/1324990436390268928
 
 このページ
 ~~~~~~~~~~~
