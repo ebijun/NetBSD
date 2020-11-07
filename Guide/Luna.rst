@@ -75,6 +75,7 @@ nono - LUNA-I emulator
 
 ::
 
+ 0) https://gnats.netbsd.org/55761 .. add new emulators nono
  1) nono-0.1.1 をダウンロード
  https://twitter.com/isaki68k/status/1261646479816404992
  2) 展開して doc/index.html を読んでビルド
