@@ -1,18 +1,18 @@
-VERSION: :1,$s/2020-10-13/2020-10-13/g
-ISO:     :1,$s/202010111850Z/202010111850Z/g
-NetBSD:  :1,$s/9.99.73/9.99.73/g
-PKGSRC:  :1,$s/2020-04-22/2020-10-13/
+VERSION: :1,$s/2020-11-08/2020-11-08/g
+ISO:     :1,$s/202011070200Z/202011070200Z/g
+NetBSD:  :1,$s/9.99.75/9.99.75/g
+PKGSRC:  :1,$s/2020-04-22/2020-11-08/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-10-13-netbsd-raspi-aarch64.img
+Subject: 2020-11-08-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-10-13-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2020-11-08-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-10-13-aarch64/2020-10-13-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-10-13-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-11-08-aarch64/2020-11-08-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-11-08-aarch64/MD5
 
 Topics:
 - only for RPI4 
@@ -24,7 +24,7 @@ Topics:
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
 
 RPI4 status:
-- boot via UEFI_VER=v1.17
+- boot via UEFI_VER=v1.20
  https://github.com/pftf/RPi4/releases
  copy pre-setted RPI_EFI.fd
   serial ,should not set graphical
@@ -38,7 +38,8 @@ RPI4 status:
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.73 evbarm-aarch64 202010111850Z arm64.img from nyftp.
+- NetBSD-current 9.99.75 evbarm-aarch64 202011070200Z arm64.img from nyftp.
+- boot via UEFI_VER=v1.20
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
@@ -48,18 +49,16 @@ Update from 2020-09-13:
 https://github.com/ebijun/NetBSD/commit/d5ebdb138e5834c22b9df3d442714784c9c7af68
 
 sysinfo:
- dhcpcd-9.3.0 libc-12.218 NetBSD-9.99.73 sh-20181212-20201011184820Z
- tzdata-2020b userland-NetBSD-9.99.73/evbarm
+ bozohttpd-20201014 dhcpcd-9.3.2 NetBSD-9.99.75 netpgpverify-20201101
+ sh-20181212-20201107000702Z tzdata-2020d userland-NetBSD-9.99.75/evbarm
 
 pkgsrc:
- at-spi2-atk-2.38.0 at-spi2-core-2.38.0 dillo-3.0.5nb9 glib2-2.66.0
- gobject-introspection-1.66.0 gtk3+-3.24.23 hicolor-icon-theme-0.17nb1
- libproxy-0.4.15nb1 libxkbcommon-1.0.1 p5-Net-DNS-1.27 python27-2.7.18nb3
- qt5-qtbase-5.15.1 qt5-qtx11extras-5.15.1 qt5-qtxmlpatterns-5.15.1
- ruby26-base-2.6.6nb1 ruby26-mikutter-4.1.2
- ruby26-mikutter-plugins-twitter-4.1 ruby26-moneta-1.4.0
- ruby26-nokogiri-1.10.10 ruby26-pkg-config-1.4.3 ruby26-public_suffix-4.0.6
- sudo-1.8.31p2 zstd-1.4.5nb1
+ curl-7.73.0 fossil-2.12.1nb1 git-base-2.29.2 harfbuzz-2.7.2nb1
+ icu-68.1 libgcrypt-1.8.7 libimagequant-2.13.0 libpsl-0.21.1nb1
+ libxkbcommon-1.0.1nb1 libxml2-2.9.10nb3 libxslt-1.1.34nb4
+ m17n-lib-1.8.0nb4 mlterm-3.9.0nb4 nghttp2-1.41.0nb1
+ qt5-qtbase-5.15.1nb1 qt5-qtx11extras-5.15.1nb1 qt5-qtxmlpatterns-5.15.1nb1
+ shared-mime-info-1.10nb3 wget-1.20.3nb10
 
 Pkgsrc issues:
 - mate/firefox/inkscape works well
