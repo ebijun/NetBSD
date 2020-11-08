@@ -7,13 +7,13 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-08-22/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202010111850Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202011070200Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img
 ORD=a.img
 
 # UEFI
-UEFI_VER=v1.17
+UEFI_VER=v1.20
 UEFI_FIRM=RPi4_UEFI_Firmware_${UEFI_VER}.zip
 UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 
@@ -49,9 +49,9 @@ uefi_fetch:
 # copy default setupfile
 release:
 	vnconfig ${VND} ${FILE}
-	dkctl ${VND} listwedges
-	fsck ${DK_ROOT}
-	mount ${DK_ROOT} ${MNT_ROOT}
+	echo ${DK_RELEASE}
+	fsck /dev/${DK_RELEASE}
+	mount /dev/${DK_RELEASE} ${MNT_ROOT}
 	(cd ../..; tar cf - root ) |(cd ${MNT_ROOT};tar xvf -)
 	tar cf - etc |(cd ${MNT_ROOT};tar xvf -)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT_ROOT}/etc/pkg_install.conf 
@@ -103,9 +103,9 @@ file:
 # stop sshd for package install
 pkg:
 	vnconfig ${VND} ${FILE}
-	dkctl ${VND} listwedges
-	fsck ${DK_ROOT}
-	mount ${DK_ROOT} ${MNT_ROOT}
+	echo ${DK_RELEASE}
+	fsck /dev/${DK_RELEASE}
+	mount /dev/${DK_RELEASE} ${MNT_ROOT}
 	echo rc_configured=YES  	>> ${MNT_ROOT}/etc/rc.conf
 	echo sshd=NO            	>> ${MNT_ROOT}/etc/rc.conf
 	echo syslogd=NO         	>> ${MNT_ROOT}/etc/rc.conf
