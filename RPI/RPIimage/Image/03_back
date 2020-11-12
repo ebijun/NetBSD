@@ -4,6 +4,7 @@ DIR=tmp`date +%Y%m%d-%H%M`
 mkdir $DIR
 
 vnconfig vnd0 back.img
+ sleep 3
  fsck /dev/vnd0a
  mount /dev/vnd0a /mnt
   for i in dmesg pkginfo version sysinfo
