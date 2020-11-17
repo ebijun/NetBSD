@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20201015)
+Subject: pinebook status update (20201118)
 
 Topics:
 - firefox80 works fine.
@@ -22,6 +22,7 @@ Topics:
  add /etc/mk.conf
   ACCEPTABLE_LICENSES= nono-license
  cd /usr/pkgsrc/emulators/nono;make ;make package-install
+- harfbuzz-icu
  
 ToDo:
 - 3D acceleration
@@ -40,50 +41,64 @@ ToDo:
 System Updates:
 
 sysinfo:
- NetBSD-9.99.73 dhcpcd-9.3.0 libc-12.218 sh-20181212-20201012082121Z
- tzdata-2020b userland-NetBSD-9.99.73/evbarm
+ bozohttpd-20201014 dhcpcd-9.3.2 libc-12.218 NetBSD-9.99.75 netpgpverify-20201101
+ sh-20181212-20201116141246Z tzdata-2020d userland-NetBSD-9.99.75/evbarm
 
 pkgsrc:
- ImageMagick-7.0.10.33 ap24-php73-7.3.23nb4 apache-ant-1.10.9
- asciidoc-9.0.2 at-spi2-atk-2.38.0 at-spi2-core-2.38.0
- avahi-0.8 babl-0.1.82 bison-3.7.2 cldr-emoji-annotation-37.0.13.0.0.2
- cmake-3.18.4 coreutils-8.31nb2 dconf-0.36.0nb2 dhcpcd-9.3.0
- dillo-3.0.5nb9 firefox-81.0.2 firefox-l10n-81.0.1
- fluidsynth-2.1.5 fontconfig-2.13.1nb3 gcc8-8.4.0nb2
- gdbus-codegen-2.66.0 gegl-0.4.26 gexiv2-0.12.0nb5
- ghostscript-agpl-9.53.2 gimp-2.10.22 glib2-2.66.0
- glib2-tools-2.66.0 gobject-introspection-1.66.0 gspell-1.8.3nb5
- gssdp-1.0.3nb11 gtk3+-3.24.23 gtksourceview4-4.8.0
- gumbo-parser-0.10.1 hicolor-icon-theme-0.17nb1 ibus-1.5.23
- ibus-anthy-1.5.6nb2 jasper-2.0.21 json-c-0.15
- kasumi-2.5nb31 libappindicator-12.10.0nb6 libdbusmenu-glib-12.10.2nb11
- libdbusmenu-gtk3-12.10.2nb20 libde265-1.0.7 libheif-1.9.1nb1
- libproxy-0.4.15nb1 libreoffice-7.0.2.2 libshout-2.4.4
- libsndfile-1.0.30nb1 libuv-1.40.0 libwnck3-3.36.0
- llvm-10.0.1nb1 mate-control-center-1.24.0nb3 mate-panel-1.24.1
- meson-0.55.3 mupdf-1.18.0 nasm-2.15.05 nginx-1.18.0nb3
- nodejs-14.13.1 nono-0.1.1 nspr-4.29 nss-3.57 orc-0.4.32
- osabi-NetBSD-9.99.73 php-7.3.23 php73-curl-7.3.23nb9
- php73-fpm-7.3.23nb4 php73-gd-7.3.23nb1 php73-iconv-7.3.23
- php73-intl-7.3.23nb4 php73-json-7.3.23 php73-mbstring-7.3.23
- php73-pdo-7.3.23 php73-pdo_sqlite-7.3.23nb4 php73-posix-7.3.23
- php73-zip-7.3.23nb4 php73-zlib-7.3.23nb1 pkgconf-1.7.3
- podofo-0.9.6nb2 poppler-cpp-0.87.0nb1 py27-cairo-1.18.2nb1
- py27-expat-2.7.15 py27-gobject3-3.36.1nb1 py27-gtk2-2.24.0nb34
- py27-setuptools-44.1.1 py37-cffi-1.14.3 py37-ecdsa-0.16.0
- py37-more-itertools-8.5.0 py37-zipp-3.3.0 python27-2.7.18nb3
- qt5-qtbase-5.15.1 qt5-qtdeclarative-5.15.1 qt5-qtlocation-5.15.1
- qt5-qtmultimedia-5.15.1 qt5-qtsensors-5.15.1 qt5-qtserialport-5.15.1
- qt5-qtsvg-5.15.1 qt5-qttools-5.15.1 qt5-qtwebchannel-5.15.1
- qt5-qtwebsockets-5.15.1 qt5-qtx11extras-5.15.1 qt5-qtxmlpatterns-5.15.1
- re2c-2.0.3 ruby26-base-2.6.6nb1 ruby26-mikutter-4.1.2
- ruby26-mikutter-plugins-twitter-4.1 ruby26-nokogiri-1.10.10
- ruby26-pkg-config-1.4.3 samba-4.12.7 scim-1.4.15nb21
- scim-anthy-1.2.7nb34 scribus-1.5.6pre20200611nb2
- sudo-1.8.31p2 unicode-character-database-13.0.0
- unicode-emoji-13.1 unixodbc-2.3.9 vala-0.50.1 vte3-0.60.3nb3
- xbattbar-1.4.2nb10 xkanon-090830nb3 xterm-360 zstd-1.4.5nb1
- 
+ GConf-3.2.3nb7 MesaLib-20.0.6 apache-ant-1.10.9 apr-util-1.6.1nb9
+ at-spi2-atk-2.38.0 at-spi2-core-2.38.0 atril-1.24.0nb4 avahi-0.8nb1
+ babl-0.1.82 bison-3.7.3nb1 boost-libs-1.73.0nb2 caja-1.24.0nb4
+ caja-extensions-1.24.0nb5 check-0.15.2 clang-10.0.1nb2 cldr-emoji-annotation-37.0.13.0.0.2
+ coreutils-8.31nb2 cups-base-2.3.3nb7 curl-7.73.0 dconf-0.36.0nb2
+ dhcpcd-9.3.2 dillo-3.0.5nb9 enchant2-2.2.13 eom-1.24.0nb4
+ ffmpeg4-4.3.1nb5 firefox-82.0.3nb1 firefox-l10n-82.0.3 fluidsynth-2.1.5
+ fontconfig-2.13.1nb4 fossil-2.13 freetype2-2.10.4 gcc8-8.4.0nb2
+ gdbus-codegen-2.66.0 gdl-3.34.0nb6 gegl-0.4.26nb1 gexiv2-0.12.0nb5
+ ghostscript-9.05nb23 ghostscript-agpl-9.53.3 gimp-2.10.22nb1 git-base-2.29.2
+ glib2-2.66.0 glib2-tools-2.66.0 glu-9.0.1 gmp-6.2.1 gnupg2-2.2.23nb1
+ gobject-introspection-1.66.0 graphviz-2.44.1nb4 gsettings-desktop-schemas-3.38.0
+ gssdp-1.0.3nb12 gst-plugins1-base-1.16.2nb4 gtk3+-3.24.23 gtkmm3-3.24.2nb4
+ gtksourceview3-3.24.11nb5 gucharmap-2.32.1nb32 gumbo-parser-0.10.1
+ gupnp-1.0.3nb8 gvfs-1.6.7nb52 harfbuzz-2.7.2nb1 harfbuzz-icu-2.7.2
+ hicolor-icon-theme-0.17nb1 icu-68.1 inkscape-1.0.1nb1 jasper-2.0.22
+ json-c-0.15 ldb-2.2.0 libabw-0.1.3nb4 libappindicator-12.10.0nb7
+ libass-0.15.0 libbluray-1.2.1nb1 libcdr-0.1.6nb4 libcmis-0.5.2nb10
+ libdbusmenu-glib-12.10.2nb11 libdbusmenu-gtk3-12.10.2nb20 libde265-1.0.8
+ libdrm-2.4.100 libe-book-0.1.3nb15 libetonyek-0.1.9nb7 libfreehand-0.1.2nb5
+ libgcrypt-1.8.7 libglade-2.6.4nb36 libheif-1.9.1nb1 libimagequant-2.13.0
+ liblangtag-0.6.3nb3 libmatekbd-1.24.0nb4 libmateweather-1.24.0nb5 libmspub-0.1.4nb14
+ libmtp-1.1.18 libproxy-0.4.15nb1 libpsl-0.21.1nb2 libqxp-0.0.2nb8
+ libreoffice-7.0.3.1nb4 librsvg-2.48.3nb3 libshout-2.4.4 libsndfile-1.0.30nb1
+ libsoup-2.70.0nb3 libuv-1.40.0 libvisio-0.1.7nb7 libwmf-0.2.8.4nb18
+ libwnck3-3.36.0 libxkbcommon-1.0.1nb1 libxklavier-5.4nb6 libxml2-2.9.10nb3
+ libxslt-1.1.34nb4 libzmf-0.0.2nb16 llvm-10.0.1nb3 lmdb-0.9.27nb1
+ lua53-5.3.6 m17n-lib-1.8.0nb4 mate-1.24.0nb2 mate-applets-1.24.0nb5
+ mate-calc-1.24.0nb4 mate-control-center-1.24.0nb4 mate-media-1.24.0nb4
+ mate-panel-1.24.1nb1 mate-screensaver-1.24.0nb4 mate-settings-daemon-1.24.0nb5
+ mate-terminal-1.24.1 medit-1.2.0nb16 meson-0.55.3 minitube-3.5nb1 mlterm-3.9.1
+ mozjs60-60.8.0nb8 mpv-0.32.0nb18 mysql-client-5.7.32 nasm-2.15.05
+ netpbm-10.79.04nb6 nghttp2-1.41.0nb1 nginx-1.18.0nb6 nspr-4.29
+ nss-3.58nb2 openjdk8-1.8.252nb4 osabi-NetBSD-9.99.75 pkgconf-1.7.3
+ pluma-1.24.1 podofo-0.9.6nb2 polkit-0.116nb6 poppler-cpp-0.87.0nb1
+ poppler-data-0.4.10 protobuf-3.14.0 py27-cairo-1.18.2nb1 py27-expat-2.7.15
+ py27-gobject3-3.36.1nb1 py27-gtk2-2.24.0nb36 py27-setuptools-44.1.1 py37-cairo-1.20.0
+ py37-cffi-1.14.3 py37-cryptodome-3.9.9 py37-ecdsa-0.16.0 py37-importlib-metadata-2.0.0
+ py37-lxml-4.6.1nb1 py37-more-itertools-8.5.0 py37-packaging-20.4 py37-pip-20.2.4
+ py37-requests-2.25.0 py37-setuptools-50.3.2 py37-sqlite3-3.7.9nb18
+ py37-toml-0.10.2 py37-urllib3-1.26.1 py37-zipp-3.3.1 python27-2.7.18nb3
+ qt5-qtbase-5.15.1nb1 qt5-qtdeclarative-5.15.1nb1 qt5-qtlocation-5.15.1nb1
+ qt5-qtmultimedia-5.15.1nb1 qt5-qtsensors-5.15.1nb1 qt5-qtserialport-5.15.1nb1
+ qt5-qtsvg-5.15.1nb1 qt5-qttools-5.15.1nb1 qt5-qtwebchannel-5.15.1nb1
+ qt5-qtwebsockets-5.15.1nb1 qt5-qtx11extras-5.15.1nb1 qt5-qtxmlpatterns-5.15.1nb1
+ raptor2-2.0.15nb19 rarian-0.8.1nb6 rasqal-0.9.33nb20 re2c-2.0.3
+ redland-1.0.17nb26 ruby26-base-2.6.6nb1 ruby26-nokogiri-1.10.10nb1
+ ruby26-pkg-config-1.4.3 samba-4.13.2 scribus-1.5.6pre20200611nb3
+ seamonkey-l10n-2.53.4 shared-mime-info-1.10nb3 sqlite3-3.33.0nb1
+ sudo-1.8.31p2 tcl-8.6.10nb3 uim-1.8.8nb7 unicode-character-database-13.0.0
+ unicode-emoji-13.1 unixodbc-2.3.9 vala-0.50.1 vte3-0.60.3nb5
+ waf-2.0.21 wayland-1.18.0nb2 web2c-2020nb3 wget-1.20.3nb10 x11-links-1.32
+ xkanon-090830nb3 xterm-361 zstd-1.4.5nb1
+
 pkgsrc todo:
 - mate
   pkgsrc/devel/libappindicator depends on py27-gtk2
@@ -153,7 +168,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 9.99.73 (GENERIC64) #0: Tue Sep 29 08:52:11 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.75 (GENERIC64) #0: Mon Nov 16 14:12:46 UTC 2020  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
