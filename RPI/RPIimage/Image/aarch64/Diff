@@ -1,0 +1,7 @@
+version=$(git log sysinfo |grep commit |head -2 |tail -1|awk '{print $2}')
+
+echo "sysinfo:"
+git diff $version sysinfo |grep '^+'  |sed -e 's/+/ /' 
+
+echo "pkgsrc:"
+git diff $version pkginfo |grep '^+'  |sed -e 's/+/ /' |awk '{print " "$1}'
