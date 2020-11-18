@@ -1,18 +1,18 @@
-VERSION: :1,$s/2020-11-08/2020-11-08/g
+VERSION: :1,$s/2020-11-18/2020-11-18/g
 ISO:     :1,$s/202011070200Z/202011070200Z/g
 NetBSD:  :1,$s/9.99.75/9.99.75/g
-PKGSRC:  :1,$s/2020-04-22/2020-11-08/
+PKGSRC:  :1,$s/2020-04-22/2020-11-18/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-11-08-netbsd-raspi-aarch64.img
+Subject: 2020-11-18-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-11-08-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2020-11-18-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-11-08-aarch64/2020-11-08-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-11-08-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-11-18-aarch64/2020-11-18-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-11-18-aarch64/MD5
 
 Topics:
 - only for RPI4 
@@ -46,21 +46,16 @@ Update:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/sysinfo
 
 Update from 2020-09-13:
-https://github.com/ebijun/NetBSD/commit/d5ebdb138e5834c22b9df3d442714784c9c7af68
+https://github.com/ebijun/NetBSD/commit/8aee3af826182def05a22ad4919f007fae722e1c#diff-25b048a5b5551711eed619006504d9102bf12dac51f72720ac698ebf5ad54178
 
 sysinfo:
- bozohttpd-20201014 dhcpcd-9.3.2 NetBSD-9.99.75 netpgpverify-20201101
- sh-20181212-20201107000702Z tzdata-2020d userland-NetBSD-9.99.75/evbarm
+ sh-20181212-20201116141246Z
 
 pkgsrc:
- curl-7.73.0 fossil-2.12.1nb1 git-base-2.29.2 harfbuzz-2.7.2nb1
- icu-68.1 libgcrypt-1.8.7 libimagequant-2.13.0 libpsl-0.21.1nb1
- libxkbcommon-1.0.1nb1 libxml2-2.9.10nb3 libxslt-1.1.34nb4
- m17n-lib-1.8.0nb4 mlterm-3.9.0nb4 nghttp2-1.41.0nb1
- qt5-qtbase-5.15.1nb1 qt5-qtx11extras-5.15.1nb1 qt5-qtxmlpatterns-5.15.1nb1
- shared-mime-info-1.10nb3 wget-1.20.3nb10
+ MesaLib-20.0.6 fossil-2.13 glu-9.0.1 gmp-6.2.1 libLLVM-9.0.1 libelf-0.8.13nb1
+ libepoxy-1.5.4 libpsl-0.21.1nb2 libva-2.6.1 medit-1.2.0nb16 mlterm-3.9.1
+ ruby26-nokogiri-1.10.10nb1 uim-1.8.8nb7 wayland-1.18.0nb2 Pkgsrc issues:
 
-Pkgsrc issues:
 - mate/firefox/inkscape works well
 - pkgin: upgrade failed
 - raspberry-pi userland: compile failed 
