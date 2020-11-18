@@ -1,5 +1,7 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.73-aarch64-202010121040Z-install.img
+IMG=${RELEASE}/NetBSD-9.99.75-aarch64-202011161430Z-install.img
+#-rw-r--r--  1 root  wheel  1625292800 Nov 17 03:51 /usr/release/images/NetBSD-9.99.75-aarch64-202011161430Z-install.img
+#-rw-r--r--  1 root  wheel  1625292800 Nov  7 15:15 /usr/release/images/NetBSD-9.99.75-aarch64-202011070200Z-install.img
 
 DK=dk1
 
