@@ -103,11 +103,12 @@ nono - LUNA-I emulator
 
 * Luna88Kの起動
 
-::
-
  「設定ファイルでvmtype=luna88kにして、O/luna88kのリリースセットの中のboot を-Aオプションで指定とかまでは出来ます。」　[170]_
+
  「it was made from scratch.」　[171]_
+
  #OpenBSD/luna88k 6.8-current runs on nono-0.1.4 on #OpenBSD/amd64. Now I can login to virtual luna88k machine! Great! [178]_
+
  For anyone interested in nono and luna88k, I put OpenBSD/luna88k live image. (990MB gzip'ed, 2.0G uncompressed) Set this image as spc0-id6-image in nono.cfg, and start nono with OpenBSD/luna88k bootloader, i.e. "nono (other options) -A boot" [179]_
 
 ::
@@ -128,8 +129,11 @@ nono - LUNA-I emulator
  ram-size=64
  spc0-id6-image=hd,spc0-id6-image
 
+
  うぇーい、進んだーーー(゜∀゜)ーーー!! [173]_
+
  MFP通過した。 [175]_
+
  ROMやっと動いたー( ´Д｀) [180]_
 
 LUNA前夜 - 誕生と再生のためのテーマ

@@ -62,7 +62,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 161,OSC2020福岡 http://www.re.soum.co.jp/~jun/OSC2020fukuoka.pdf
+ 161,OSC2020福岡,http://www.re.soum.co.jp/~jun/OSC2020fukuoka.pdf
  151,OSC2019福岡,http://www.re.soum.co.jp/~jun/OSC2019fukuoka.pdf
  136,OSC2018福岡,http://www.re.soum.co.jp/~jun/OSC2018fukuoka.pdf
  114,OSC2017福岡,http://www.re.soum.co.jp/~jun/OSC2017fukuoka.pdf
@@ -97,7 +97,7 @@ togetterまとめ
  :widths: 25 15 60
 
  PADDY,渡辺通,地ビール。前日夜はたいていここにいます。
- あすなろブルワリー,,ぶどうエールとちよIPA。18:00-23:00 日月休。
+ あすなろブルワリー,千代県庁口,ぶどうエールとちよIPA。18:00-23:00 日月休。
  ドライブイン鳥,伊万里,マークイズ福岡ももち店とは何か。いまりタクシー0955-23-8181。
  北九州市漫画ミュージアム,北九州,マカロニほうれん荘展 in 福岡 2019/1/17まで
  チャーリーブラウン,小倉,17タップ。二階にシナロケサイン入りギター。
@@ -171,6 +171,21 @@ OSC福岡主な展示物
 
 2019年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture/2019/11/09/DSC_8013.JPG
+.. image::  ../Picture/2019/11/09/DSC_8014.JPG
+.. image::  ../Picture/2019/11/09/DSC_8015.JPG
+.. image::  ../Picture/2019/11/09/DSC_8016.JPG
+.. image::  ../Picture/2019/11/09/DSC_8017.JPG
+.. image::  ../Picture/2019/11/09/DSC_8018.JPG
+.. image::  ../Picture/2019/11/09/DSC_8019.JPG
+.. image::  ../Picture/2019/11/09/DSC_8020.JPG
+.. image::  ../Picture/2019/11/09/DSC_8021.JPG
+.. image::  ../Picture/2019/11/09/DSC_8022.JPG
+.. image::  ../Picture/2019/11/09/DSC_8023.JPG
+.. image::  ../Picture/2019/11/09/DSC_8024.JPG
+.. image::  ../Picture/2019/11/09/DSC_8025.JPG
+.. image::  ../Picture/2019/11/09/DSC_8026.JPG
+.. image::  ../Picture/2019/11/09/DSC_8027.JPG
 
 2018年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
