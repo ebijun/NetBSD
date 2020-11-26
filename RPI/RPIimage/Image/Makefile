@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202010171500Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202011202150Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -30,10 +30,10 @@ LIST=man modules xbase xcomp xetc xfont xserver
 
 #Firmware: 
 #git show HEAD |head 
-#commit 66be1927eafd2feed468efd36ec083b208f0a9c3
 #Author: popcornmix <popcornmix@gmail.com>
-#Date:   Wed Nov 21 19:01:22 2018 +0000
-#    kernel: Bump to 4.14.82
+#Date:   Tue Nov 17 14:11:58 2020 +0000
+#    kernel: Bump to 5.4.77
+
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -117,6 +117,7 @@ pkg:
 	echo resize_root=NO		>> ${MNT}/etc/rc.conf
 	echo resize_root_flags=""	>> ${MNT}/etc/rc.conf
 	echo resize_root_postcmd=""	>> ${MNT}/etc/rc.conf
+	echo resize_gpt=NO		>> ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
