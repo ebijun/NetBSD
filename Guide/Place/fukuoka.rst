@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-8 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -49,7 +49,8 @@ Maps:
  2016,11/19,300,29,福岡ソフトリサーチパーク センタービル
  2017,10/7,400,21,福岡大学 18号館
  2018,12/8,380,24,福岡ソフトリサーチパーク センタービル
- 2019,11/9,,24,九州産業大学
+ 2019,11/9,350,24,九州産業大学
+ 2020,11/28,,,オンライン
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,6 +62,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 161,OSC2020福岡 http://www.re.soum.co.jp/~jun/OSC2020fukuoka.pdf
  151,OSC2019福岡,http://www.re.soum.co.jp/~jun/OSC2019fukuoka.pdf
  136,OSC2018福岡,http://www.re.soum.co.jp/~jun/OSC2018fukuoka.pdf
  114,OSC2017福岡,http://www.re.soum.co.jp/~jun/OSC2017fukuoka.pdf
@@ -77,7 +79,7 @@ togetterまとめ
 
 .. csv-table::
  :widths: 70 70
-
+ OSC2020 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/1627360
  OSC2019福岡 NetBSDブース展示の記録,https://togetter.com/li/1428096
  OSC2018福岡 NetBSDブース展示の記録,https://togetter.com/li/1296258
  OSC2017福岡 NetBSDブース展示の記録,https://togetter.com/li/1158733
@@ -95,6 +97,7 @@ togetterまとめ
  :widths: 25 15 60
 
  PADDY,渡辺通,地ビール。前日夜はたいていここにいます。
+ あすなろブルワリー,,ぶどうエールとちよIPA。18:00-23:00 日月休。
  ドライブイン鳥,伊万里,マークイズ福岡ももち店とは何か。いまりタクシー0955-23-8181。
  北九州市漫画ミュージアム,北九州,マカロニほうれん荘展 in 福岡 2019/1/17まで
  チャーリーブラウン,小倉,17タップ。二階にシナロケサイン入りギター。
@@ -152,6 +155,7 @@ OSC福岡主な展示物
 .. csv-table::
  :widths: 15 35 60
 
+ 2019/11/9,九州産業大学,RPI3+XM6i pinebook
  2018/12/8,福岡ソフトリサーチパーク,RPI3+XM6i 
  2017/10/7,福岡大学 18号館,RPI3+XM6i OrangePi One
  2016/11/19,福岡ソフトリサーチパーク,RPI3+XM6i NetWalker WZero3
@@ -165,6 +169,8 @@ OSC福岡主な展示物
  2008/12/13,福岡大学,hpcmips/hpcarm/Jornada680/WZero3/USBカメラ
  2007/12/8,ASCビル,hpcmips/hpcarm/Jornada680
 
+2019年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 2018年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
