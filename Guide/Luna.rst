@@ -131,10 +131,14 @@ nono - LUNA-I emulator
 
 
  うぇーい、進んだーーー(゜∀゜)ーーー!! [173]_
-
  MFP通過した。 [175]_
-
  ROMやっと動いたー( ´Д｀) [180]_
+
+* library_aslr [181]_
+
+ /etc/rc.conf.local に library_aslr=NO と書いておくと reordering libraries をスキップします。 
+ 起動後であれば、 # rcctl disable library_aslr でも良いです。
+ man.openbsd.org/rc.conf
 
 LUNA前夜 - 誕生と再生のためのテーマ
 -------------------------------------
@@ -899,6 +903,7 @@ yaft X LUNA
 .. [178] https://twitter.com/ao_kenji/status/1330473862686003202
 .. [179] https://twitter.com/ao_kenji/status/1330504720516063235
 .. [180] https://twitter.com/isaki68k/status/1330124516333412361
+.. [180] https://twitter.com/ao_kenji/status/1330019763775365120
 
 このページ
 ~~~~~~~~~~~
