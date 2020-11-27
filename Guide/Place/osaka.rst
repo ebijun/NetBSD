@@ -155,6 +155,22 @@ Maps:
 2019
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. image::  ../Picture/2020/01/25/DSC_8308.JPG
+.. image::  ../Picture/2020/01/25/DSC_8309.JPG
+.. image::  ../Picture/2020/01/25/DSC_8310.JPG
+.. image::  ../Picture/2020/01/25/DSC_8311.JPG
+.. image::  ../Picture/2020/01/25/DSC_8312.JPG
+.. image::  ../Picture/2020/01/25/DSC_8313.JPG
+.. image::  ../Picture/2020/01/25/DSC_8318.JPG
+.. image::  ../Picture/2020/01/25/DSC_8322.JPG
+.. image::  ../Picture/2020/01/25/DSC_8323.JPG
+.. image::  ../Picture/2020/01/25/DSC_8324.JPG
+.. image::  ../Picture/2020/01/25/DSC_8325.JPG
+.. image::  ../Picture/2020/01/25/DSC_8327.JPG
+.. image::  ../Picture/2020/01/25/DSC_8329.JPG
+.. image::  ../Picture/2020/01/25/DSC_8330.JPG
+.. image::  ../Picture/2020/01/25/DSC_8331.JPG
+.. image::  ../Picture/2020/01/25/DSC_8332.JPG
 .. image::  ../Picture/2019/11/08/DSC_7979.JPG
 .. image::  ../Picture/2019/11/08/DSC_7980.JPG
 .. image::  ../Picture/2019/11/08/DSC_7984.JPG
@@ -177,7 +193,6 @@ Maps:
 .. image::  ../Picture/2019/11/08/DSC_8003.JPG
 .. image::  ../Picture/2019/01/26/DSC_6569.JPG
 .. image::  ../Picture/2019/01/26/DSC_6572.JPG
-.. image::  ../Picture/2019/01/26/DSC_6575.JPG
 .. image::  ../Picture/2019/01/26/DSC_6578.JPG
 .. image::  ../Picture/2019/01/26/DSC_6579.JPG
 .. image::  ../Picture/2019/01/26/DSC_6581.JPG

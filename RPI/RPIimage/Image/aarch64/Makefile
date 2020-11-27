@@ -170,3 +170,16 @@ fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch
+
+#Firmware:
+#git show HEAD |head
+#Author: popcornmix <popcornmix@gmail.com>
+#Date:   Tue Nov 17 14:11:58 2020 +0000
+#    kernel: Bump to 5.4.77
+
+
+FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
+FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
+
+firm:
+	cp -r ${FIRMPATH}/* Firm

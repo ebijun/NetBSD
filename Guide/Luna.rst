@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-ルナ式練習帳、またはLunaの薄い本2019　[1]_
+ルナ式練習帳、またはLunaの薄い本2020　[1]_
 ===========================================
 
   「私が誰かは わかっているはずだ。」その声は天使の声だった。
@@ -76,7 +76,6 @@ nono - LUNA-I emulator
 
 ::
 
- 0) https://gnats.netbsd.org/55761 .. add new emulators nono
  1) nono-0.1.1 をダウンロード
  https://twitter.com/isaki68k/status/1261646479816404992
  2) 展開して doc/index.html を読んでビルド
@@ -104,10 +103,13 @@ nono - LUNA-I emulator
 
 * Luna88Kの起動
 
-::
+ 「設定ファイルでvmtype=luna88kにして、O/luna88kのリリースセットの中のboot を-Aオプションで指定とかまでは出来ます。」　[170]_
 
-「設定ファイルでvmtype=luna88kにして、O/luna88kのリリースセットの中のboot を-Aオプションで指定とかまでは出来ます。」　[170]_
-「it was made from scratch.」　[171]_
+ 「it was made from scratch.」　[171]_
+
+ #OpenBSD/luna88k 6.8-current runs on nono-0.1.4 on #OpenBSD/amd64. Now I can login to virtual luna88k machine! Great! [178]_
+
+ For anyone interested in nono and luna88k, I put OpenBSD/luna88k live image. (990MB gzip'ed, 2.0G uncompressed) Set this image as spc0-id6-image in nono.cfg, and start nono with OpenBSD/luna88k bootloader, i.e. "nono (other options) -A boot" [179]_
 
 ::
 
@@ -125,10 +127,18 @@ nono - LUNA-I emulator
  #ethernet-hostdriver=tap
  #prom-use-rom=0
  ram-size=64
- spc0-id6-image=hd,miniroot67.fs
+ spc0-id6-image=hd,spc0-id6-image
+
 
  うぇーい、進んだーーー(゜∀゜)ーーー!! [173]_
  MFP通過した。 [175]_
+ ROMやっと動いたー( ´Д｀) [180]_
+
+* library_aslr [181]_
+
+ /etc/rc.conf.local に library_aslr=NO と書いておくと reordering libraries をスキップします。 
+ 起動後であれば、 # rcctl disable library_aslr でも良いです。
+ man.openbsd.org/rc.conf
 
 LUNA前夜 - 誕生と再生のためのテーマ
 -------------------------------------
@@ -890,6 +900,10 @@ yaft X LUNA
 .. [175] https://twitter.com/isaki68k/status/1322807313741148160
 .. [176] https://twitter.com/ao_kenji/status/1324952816884985857
 .. [177] https://twitter.com/ao_kenji/status/1324990436390268928
+.. [178] https://twitter.com/ao_kenji/status/1330473862686003202
+.. [179] https://twitter.com/ao_kenji/status/1330504720516063235
+.. [180] https://twitter.com/isaki68k/status/1330124516333412361
+.. [180] https://twitter.com/ao_kenji/status/1330019763775365120
 
 このページ
 ~~~~~~~~~~~

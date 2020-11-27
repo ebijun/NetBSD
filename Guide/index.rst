@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/osaka
+ Place/fukuoka
  RPI/RPIupdate2020
  Luna
  RPI

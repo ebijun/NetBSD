@@ -1,8 +1,8 @@
 ## build img file
 #
-#make -f Makefile.NetBSD9 
-#make -f Makefile.NetBSD9 release
-#make -f Makefile.NetBSD9 pkg
+make -f Makefile.NetBSD9 
+make -f Makefile.NetBSD9 release
+make -f Makefile.NetBSD9 pkg
 #
 #./Copy
 ## add packages.
@@ -13,7 +13,7 @@
 #make -f Makefile.NetBSD9 pkg-back
 #make -f Makefile.NetBSD9 mikutter-key
 #
-./Copy
+#./Copy
 ###test tweet
 # Copy logfile
 #./Copy.sysinfo

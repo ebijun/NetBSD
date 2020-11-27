@@ -123,8 +123,8 @@ RPI4
 -------
 
 - テスト中です。pinebookとpkgsrcを共用しています。
-  http://mail-index.netbsd.org/port-arm/2020/10/13/msg006996.html
-  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
+* http://mail-index.netbsd.org/port-arm/2020/11/18/msg007066.html
+* https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 
 armv7のいろいろ
 --------------------
