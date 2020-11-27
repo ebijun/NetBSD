@@ -64,6 +64,7 @@ nono - LUNA-I emulator
 
 ::
 
+ https://gnats.netbsd.org/55761
  https://twitter.com/isaki68k/status/1315996525919518724
  http://www.pastel-flower.jp/~isaki/NetBSD/patch/pkgsrc-nono-20201013.diff
  http://www.pastel-flower.jp/~isaki/NetBSD/patch/nono-20201013.diff
