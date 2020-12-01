@@ -16,6 +16,8 @@ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-10-24-earmv6hf/MD5
 
 Update:
 - NetBSD 9.99.74 evbarm-earmv6hf 202010171500Z rpi.img from nyftp.
+- Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
+XXX: should test big-endian image and pkgsrc
 
 PR
 #55505 RaspberryPi3A+ can't find Wi-Fi module
