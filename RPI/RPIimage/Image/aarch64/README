@@ -15,6 +15,8 @@ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-11-18-aarch64/2020-1
 http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-11-18-aarch64/MD5
 
 Topics:
+- move default database directory from /var/db/pkg to ${PREFIX}/pkgdb
+  http://mail-index.netbsd.org/pkgsrc-changes/2020/12/02/msg224852.html
 - only for RPI4 
   (fill dtb for RPI3?)
 - /dev/random issue:HEADS UP: Entropy overhaul
