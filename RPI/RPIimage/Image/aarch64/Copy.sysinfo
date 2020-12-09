@@ -1,0 +1,14 @@
+
+DIR=`ls -t|grep tmp20  |head -1|sed -e 's/://'`
+
+ARCH=aarch64
+MACHINE=RPI4B
+
+#COMMAND=ls
+#COMMAND=diff 
+COMMAND=cp
+
+
+echo ${COMMAND} ${DIR}/dmesg    ../../../../dmesg/${ARCH}/${MACHINE}
+echo ${COMMAND} ${DIR}/pkginfo  pkginfo
+echo ${COMMAND} ${DIR}/sysinfo  sysinfo
