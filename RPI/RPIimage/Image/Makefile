@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202011290840Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202012082120Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -112,8 +112,6 @@ pkg:
 	echo syslogd=NO         >> ${MNT}/etc/rc.conf
 #	echo dhcpcd=NO          >> ${MNT}/etc/rc.conf
 	echo resize_disklabel=NO 	>> ${MNT}/etc/rc.conf
-	echo resize_disklabel_disk=""	>> ${MNT}/etc/rc.conf
-	echo resize_disklabel_part=""	>> ${MNT}/etc/rc.conf
 	echo resize_root=NO		>> ${MNT}/etc/rc.conf
 	echo resize_root_flags=""	>> ${MNT}/etc/rc.conf
 	echo resize_root_postcmd=""	>> ${MNT}/etc/rc.conf

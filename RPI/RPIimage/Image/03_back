@@ -1,12 +1,11 @@
-dd if=/dev/rsd0d of=back.img count=512 bs=5160960 progress=10
+dd if=/dev/rsd0d of=back.img bs=2048 count=1290240 progress=15500
 sync
 
 DIR=tmp`date +%Y%m%d-%H%M`
 mkdir $DIR
 
 vnconfig vnd0 back.img
- sleep 5
- disklabel vnd0
+ sync
  fsck /dev/vnd0a
  mount /dev/vnd0a /mnt
   for i in dmesg pkginfo version sysinfo
