@@ -521,7 +521,7 @@ LUNA88Kのブートローダー
 
 BSD広告条項
 ~~~~~~~~~~~
- 4.4BSD-Lite2由来のコードに含まれる3項目(All advertising materials ..)、広告条項削除OKについて、文書で許可を出してくれるOMRONの方がいらっしゃると2-cluse BSDで配布できる。
+ 4.4BSD-Lite2由来のコードに含まれる3項目(All advertising materials ..)、広告条項削除OKについて、文書で許可を出してくれるOMRONの方がいらっしゃると2-clause BSDで配布できる。
 
 電源問題
 ~~~~~~~~
