@@ -6,17 +6,20 @@ Subject: pinebook status update (${DATE})
 
 Topics:
 - python38
+- touchpad: sometimes cursor far away.
+
+pkgsrc todo:
+
+- mate: still depends on py27 ,need comment out on mate
+  mate-applets-1.24.0nb6 mate-control-center-1.24.0nb5
+
+- works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp,libreoffice
+
 - firefox83 works fine.
  zoom meeting with firefox on NetBSD/aarch64 on pinebook pro 
   with UserAgent switcher addon as Linux.
  Send: Share Screen,camera/USB Camera
  Problem: Can"t show others screen/in-camera.
-
-- works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp,libreoffice
-- touchpad: sometimes cursor far away.
-- /dev/random issue:HEADS UP: Entropy overhaul
- https://mail-index.netbsd.org/current-users/2020/05/01/msg038495.html
- http://mail-index.netbsd.org/tech-kern/2020/10/01/msg026781.html
 - nono: luna68k/luna88k emulator
  add /etc/mk.conf
   ACCEPTABLE_LICENSES= nono-license
