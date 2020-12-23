@@ -5,7 +5,7 @@ atk-2.36.0          Set of interfaces for accessibility
 bash-5.0.18         The GNU Bourne Again Shell
 cairo-1.16.0nb2     Vector graphics library with cross-device output support
 cairo-gobject-1.16.0nb5 Vector graphics library with cross-device output support
-curl-7.73.0nb1      Client that groks URLs
+curl-7.74.0         Client that groks URLs
 dbus-1.12.20        Message bus system
 desktop-file-utils-0.26 Utilities to manage desktop entries
 digest-20190127     Message digest wrapper utility
@@ -17,12 +17,12 @@ gd-2.3.0nb2         Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.40.0nb1 Library for image loading and manipulation
 giflib-5.2.1nb4     GIF image format library
 git-base-2.29.2     GIT Tree History Storage Tool (base package)
-glib2-2.66.3        Some useful routines for C programming (glib2)
+glib2-2.66.4        Some useful routines for C programming (glib2)
 gmp-6.2.1           Library for arbitrary precision arithmetic
-gnutls-3.6.15       Transport Layer Security library
-gobject-introspection-1.66.0 GObject Introspection
+gnutls-3.7.0        Transport Layer Security library
+gobject-introspection-1.66.1 GObject Introspection
 graphite2-1.3.13    Cross-platform rendering for complex writing systems
-gtk2+-2.24.32nb18   GIMP Toolkit v2 - libraries for building X11 user interfaces
+gtk2+-2.24.32nb19   GIMP Toolkit v2 - libraries for building X11 user interfaces
 gtk3+-3.24.23       GIMP Toolkit v3 - libraries for building X11 user interfaces
 harfbuzz-2.7.2nb1   OpenType text shaping engine
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
@@ -51,7 +51,7 @@ libxkbcommon-1.0.3  Library to handle keyboard descriptions
 libxml2-2.9.10nb3   XML parser library from the GNOME project
 libxslt-1.1.34nb4   XSLT parser library from the GNOME project
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
-lintpkgsrc-4.95nb1  Sanity checks on the complete pkgsrc tree
+lintpkgsrc-4.96     Sanity checks on the complete pkgsrc tree
 lrzsz-0.12.20nb1    Receive/Send files via X/Y/ZMODEM protocol.  (unrestrictive)
 lz4-1.9.3           Extremely Fast Compression algorithm
 lzo-2.10            Portable lossless data compression library
@@ -61,7 +61,7 @@ medit-1.2.0nb16     Programming and around-programming text editor
 mlterm-3.9.1        Multilingual terminal emulator
 mozilla-rootcerts-1.0.20201102 Root CA certificates from the Mozilla Project
 nettle-3.6          Cryptographic library
-nghttp2-1.42.0      Implementation of HTTP/2 in C
+nghttp2-1.42.0nb1   Implementation of HTTP/2 in C
 p11-kit-0.23.21     PKCS#11 module manager
 p5-Authen-SASL-2.16nb8 Perl module to handle SASL authentication
 p5-Digest-HMAC-1.03nb10 Perl5 module for HMAC
@@ -83,15 +83,14 @@ p5-Socket6-0.29nb2  Perl5 module to support getaddrinfo() and getnameinfo()
 p5-TimeDate-2.33    Perl5 TimeDate distribution
 pango-1.46.1        Library for layout and rendering of text
 pcre-8.44           Perl Compatible Regular Expressions library
-pcre2-10.35nb1      Perl Compatible Regular Expressions library (major version 2)
+pcre2-10.36         Perl Compatible Regular Expressions library (major version 2)
 perl-5.32.0nb1      Practical Extraction and Report Language
 pkg_chk-2.0.11      Check installed package versions against pkgsrc
 png-1.6.37          Library for manipulating PNG images
-py27-expat-2.7.18   Python interface to expat
-py37-cElementTree-3.7.9 C implementation of Python ElementTree API
-py37-expat-3.7.9    Python interface to expat
-python27-2.7.18nb3  Interpreted, interactive, object-oriented programming language
+py38-cElementTree-3.8.6 C implementation of Python ElementTree API
+py38-expat-3.8.6    Python interface to expat
 python37-3.7.9nb2   Interpreted, interactive, object-oriented programming language
+python38-3.8.6nb1   Interpreted, interactive, object-oriented programming language
 qt5-qtbase-5.15.2nb1 C++ X GUI toolkit
 qt5-qtx11extras-5.15.2nb1 Qt5 module for X11 extras
 qt5-qtxmlpatterns-5.15.2nb1 Qt5 module for XML Patterns

@@ -7,7 +7,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-08-22/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202012080500Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202012211520Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img
 ORD=a.img
@@ -111,8 +111,6 @@ pkg:
 	echo syslogd=NO         	>> ${MNT_ROOT}/etc/rc.conf
 #	echo dhcpcd=NO          	>> ${MNT_ROOT}/etc/rc.conf
 	echo resize_disklabel=NO 	>> ${MNT_ROOT}/etc/rc.conf
-	echo resize_disklabel_disk=""	>> ${MNT_ROOT}/etc/rc.conf
-	echo resize_disklabel_part=""	>> ${MNT_ROOT}/etc/rc.conf
 	echo resize_gpt=NO             	>> ${MNT_ROOT}/etc/rc.conf
 	echo resize_root=NO		>> ${MNT_ROOT}/etc/rc.conf
 	echo resize_root_flags=""	>> ${MNT_ROOT}/etc/rc.conf

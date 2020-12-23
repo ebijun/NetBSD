@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.77 (GENERIC64) #0: Tue Dec  8 04:09:38 UTC 2020
+NetBSD 9.99.77 (GENERIC64) #0: Mon Dec 21 11:30:59 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3928 MB
 avail memory = 3806 MB
@@ -55,10 +55,10 @@ xhci0: 64-bit DMA
 xhci0: xHCI version 1.0
 usb0 at xhci0: USB revision 3.0
 usb1 at xhci0: USB revision 2.0
-acpicpu0 at acpi0 (CPU0, ACPI0007-0): ACPI CPU
-acpicpu1 at acpi0 (CPU1, ACPI0007-1): ACPI CPU
-acpicpu2 at acpi0 (CPU2, ACPI0007-2): ACPI CPU
-acpicpu3 at acpi0 (CPU3, ACPI0007-3): ACPI CPU
+CPU0 (ACPI0007) at acpi0 not configured
+CPU1 (ACPI0007) at acpi0 not configured
+CPU2 (ACPI0007) at acpi0 not configured
+CPU3 (ACPI0007) at acpi0 not configured
 USB0 (BCM2848) at acpi0 not configured
 GPU0 (BCM2850) at acpi0 not configured
 bcmmbox0 at acpi0 (RPIQ, BCM2849-0): mem 0xfe00b880-0xfe00b8a3 irq 65
@@ -94,6 +94,14 @@ wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu3: L1 48KB/64B*256L*3W PIPT Instruction cache
+cpu3: L1 32KB/64B*256L*2W PIPT Data cache
+cpu3: L2 1024KB/64B*1024L*16W PIPT Unified cache
+cpu3: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
+cpu3: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -110,14 +118,6 @@ cpu1: L1 32KB/64B*256L*2W PIPT Data cache
 cpu1: L2 1024KB/64B*1024L*16W PIPT Unified cache
 cpu1: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
 cpu1: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu3: L1 48KB/64B*256L*3W PIPT Instruction cache
-cpu3: L1 32KB/64B*256L*2W PIPT Data cache
-cpu3: L2 1024KB/64B*1024L*16W PIPT Unified cache
-cpu3: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
-cpu3: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu0: PMU interrupting on irq 48
 cpu1: PMU interrupting on irq 49
 cpu2: PMU interrupting on irq 50
@@ -135,7 +135,7 @@ blake2s: self-test passed
 sdmmc0: SD card status: 4-bit, C10
 ld0 at sdmmc0: <0x03:0x5344:SB128:0x80:0xb87a232a:0x148>
 ld0: 119 GB, 15545 cyl, 255 head, 63 sec, 512 bytes/sect x 249737216 sectors
-ld0: GPT GUID: ef452ee1-f432-435a-9472-da044adfabf5
+ld0: GPT GUID: ee2cade0-0975-4f23-937a-8471ca352178
 dk0 at ld0: "EFI", 163840 blocks at 3, type: msdos
 dk1 at ld0: "netbsd-root", 4751355 blocks at 163843, type: ffs
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -170,7 +170,7 @@ boot device: dk1
 root on dk1
 root file system type: ffs
 kern.module.path=/stand/evbarm/9.99.77/modules
-WARNING: clock lost 147 days
+WARNING: clock lost 161 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 wsdisplay0: screen 4 added (default, vt100 emulation)
