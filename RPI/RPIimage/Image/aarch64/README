@@ -1,32 +1,36 @@
-VERSION: :1,$s/2020-12-09/2020-12-09/g
-ISO:     :1,$s/202012080500Z/202012080500Z/g
+VERSION: :1,$s/2020-12-23/2020-12-23/g
+ISO:     :1,$s/202012211520Z/202012211520Z/g
 NetBSD:  :1,$s/9.99.77/9.99.77/g
-PKGSRC:  :1,$s/2020-04-22/2020-12-09/
+PKGSRC:  :1,$s/2020-04-22/2020-12-23/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-12-09-netbsd-raspi-aarch64.img
+Subject: 2020-12-23-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-12-09-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2020-12-23-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-12-09-aarch64/2020-12-09-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-12-09-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-12-23-aarch64/2020-12-23-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-12-23-aarch64/MD5
 
 Topics:
-- move default database directory from /var/db/pkg to ${PREFIX}/pkgdb
-  http://pkgsrc.org/news/pkgdb-change/
+- boot via UEFI_VER=v1.21
+ https://github.com/pftf/RPi4/releases
+Raspberry Pi 4 UEFI Firmware v1.21
+    Add CM4 and Pi400 Device Tree binaries
+    Fix Device Tree corruption due to a bug in start4.elf [See raspberrypi/firmware#1445, raspberrypi/firmware#1489]
+    Add IORT ACPI table [tianocore/edk2-platforms@dac891d]
+    Fix incorrectly mapped 640x480 and 800x600 display resolutions [tianocore/edk2-platforms@38c387d]
+    Fix incorrect thermal offset [tianocore/edk2-platforms@78c884b]
+    Update JTAG pinout [tianocore/edk2-platforms@8ef23e8]
 - only for RPI4 
   (fill dtb for RPI3?)
-- /dev/random issue:HEADS UP: Entropy overhaul
- https://mail-index.netbsd.org/current-users/2020/05/01/msg038495.html
- http://mail-index.netbsd.org/tech-kern/2020/10/01/msg026781.html
 - build script
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
 
 RPI4 status:
-- boot via UEFI_VER=v1.20
+- boot via UEFI_VER=v1.21
  https://github.com/pftf/RPi4/releases
  copy pre-setted RPI_EFI.fd
   serial ,should not set graphical
@@ -40,8 +44,8 @@ RPI4 status:
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.77 evbarm-aarch64 202012080500Z arm64.img from nyftp.
-- boot via UEFI_VER=v1.20
+- NetBSD-current 9.99.77 evbarm-aarch64 202012211520Z arm64.img from nyftp.
+- boot via UEFI_VER=v1.21
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
@@ -51,14 +55,26 @@ Update from 2020-12-02:
 https://github.com/ebijun/NetBSD/commit/28823600afd923ec174a3c73b3f8d9a9f87ff79f
 
 sysinfo:
- libssh-38.0 NetBSD-9.99.77 openssh-8.4 opensshd-8.4
- pkg_install-20201205 sh-20181212-20201208040938Z
- userland-NetBSD-9.99.77/evbarm
+ openssl-1.1.1i pkg_install-20201218 sh-20181212-20201221113059Z
 
 pkgsrc:
- curl-7.73.0nb1 gtk2+-2.24.32nb18 zsh-5.8nb1
+ curl-7.74.0 glib2-2.66.4 gnutls-3.7.0 gobject-introspection-1.66.1
+ gtk2+-2.24.32nb19 lintpkgsrc-4.96 nghttp2-1.42.0nb1
+ pcre2-10.36 py38-cElementTree-3.8.6 py38-expat-3.8.6
+ python38-3.8.6nb1
 
-- mate/firefox/inkscape works well
+- mate/firefox/inkscape/libreoffice works well
+  pkg_add mate
+  pkg_add gvfs
+  pkg_add firefox
+  pkg_add firefox-l10n
+  pkg_add libreoffice
+  pkg_add inkscape
+  pkg_add gimp
+  pkg_add scribus
+  pkg_add py38-sphinx
+  pkg_add wxGTK30
+
 - pkgin: upgrade failed
 - raspberry-pi userland: compile failed 
 
