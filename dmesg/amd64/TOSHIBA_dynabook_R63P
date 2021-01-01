@@ -4,21 +4,18 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.55 (GENERIC) #0: Wed Apr  8 10:57:16 UTC 2020
+NetBSD 9.99.77 (GENERIC) #0: Sun Dec 27 20:56:14 UTC 2020
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 4007 MB
-avail memory = 3857 MB
-pool redzone disabled for 'buf4k'
-pool redzone disabled for 'buf64k'
-cpu_rng: RDSEED
+avail memory = 3856 MB
+entropy: entering seed from bootloader with 256 bits of entropy
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
-running cgd selftest aes-xts-256 aes-xts-512 done
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
 TOSHIBA dynabook R63/P (PR63PBAA647AD81)
 mainbus0 (root)
 ACPI: RSDP 0x00000000000F0030 000014 (v00 TOSHIB)
-ACPI: RSDT 0x00000000D90ED000 000064 (v01 TOSHIB A0096    00000006      01000013)
+ACPI: RSDT 0x00000000D90ED000 000068 (v01 TOSHIB A0096    00000006      01000013)
 ACPI: FACP 0x00000000D90EC000 00010C (v05 TOSHIB A0096    00000006 LOHR 0000005F)
 ACPI: DSDT 0x00000000D90CF000 0126AC (v02 TOSHIB A0096    20160316 INTL 20130927)
 ACPI: FACS 0x00000000D9099000 000040
@@ -36,10 +33,13 @@ ACPI: SSDT 0x00000000D90C8000 00060D (v02 TOSHIB MacUniq2 00001000 INTL 20130927
 ACPI: SSDT 0x00000000D90C7000 0005E6 (v02 PmRef  Cpu0Ist  00003000 INTL 20130927)
 ACPI: SSDT 0x00000000D90C6000 000B60 (v02 CpuRef CpuSsdt  00003000 INTL 20130927)
 ACPI: SSDT 0x00000000D90C4000 0012DF (v02 SaSsdt SaSsdt   00003000 INTL 20130927)
+ACPI: DMAR 0x00000000D90C3000 0000D8 (v01 INTEL  BDW      00000001 INTL 00000001)
 ACPI: FPDT 0x00000000D90E2000 000044 (v01 TOSHIB A0096    00000000 LOHR 0000005F)
 ACPI: 6 ACPI AML tables successfully acquired and loaded
 ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x20, 40 pins
+x2APIC available but disabled by DMAR table
 cpu0 at mainbus0 apid 0
+cpu0: Use lfence to serialize rdtsc
 cpu0: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, id 0x306d4
 cpu0: node 0, package 0, core 0, smt 0
 cpu1 at mainbus0 apid 1
@@ -51,15 +51,15 @@ cpu2: node 0, package 0, core 1, smt 0
 cpu3 at mainbus0 apid 3
 cpu3: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, id 0x306d4
 cpu3: node 0, package 0, core 1, smt 1
-acpi0 at mainbus0: Intel ACPICA 20200326
+acpi0 at mainbus0: Intel ACPICA 20201113
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8673BE561B48 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFA986A5433348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8673A56F9448 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFA9868BD35488 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8673A560D888 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFA9868BCCB408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -82,32 +82,18 @@ acpiout11 at acpivga0 (DDCC, 0x000c): ACPI Display Output Device
 acpiout12 at acpivga0 (DDCD, 0x000d): ACPI Display Output Device
 acpiout13 at acpivga0 (DDCE, 0x000e): ACPI Display Output Device
 acpiout14 at acpivga0 (DDCF, 0x000f): ACPI Display Output Device
-acpivga0: autoconfiguration error: unknown output device acpiout5
-acpivga0: autoconfiguration error: unknown output device acpiout6
-acpivga0: autoconfiguration error: unknown output device acpiout7
-acpivga0: autoconfiguration error: unknown output device acpiout8
-acpivga0: autoconfiguration error: unknown output device acpiout9
-acpivga0: autoconfiguration error: unknown output device acpiout10
-acpivga0: autoconfiguration error: unknown output device acpiout11
-acpivga0: autoconfiguration error: unknown output device acpiout12
-acpivga0: autoconfiguration error: unknown output device acpiout13
-acpivga0: autoconfiguration error: unknown output device acpiout14
 acpivga0: connected output devices:
 acpivga0:   0x0400 (acpiout0): Int. Digital Flat Panel, index 0, port 0, head 0
 acpivga0:   0x0300 (acpiout1): Ext. Digital Monitor, index 0, port 0, head 0, bios detect
 acpivga0:   0x0301 (acpiout2): Ext. Digital Monitor, index 1, port 0, head 0, bios detect
 acpivga0:   0x0302 (acpiout3): Ext. Digital Monitor, index 2, port 0, head 0, bios detect
 acpivga0:   0x0303 (acpiout4): Ext. Digital Monitor, index 3, port 0, head 0, bios detect
-PDRC (PNP0C02) at acpi0 not configured
 acpiwmi0 at acpi0 (AMW0, PNP0C14-0): ACPI WMI Interface
 acpiwmibus at acpiwmi0 not configured
 GTPM (IFX0102) at acpi0 not configured
-LDRC (PNP0C02) at acpi0 not configured
-GEN1 (PNP0C02) at acpi0 not configured
 attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
 pckbc1 at acpi0 (PS2K, TOS7407) (kbd port): io 0x60,0x64 irq 1
 pckbc2 at acpi0 (PS2M, TTP1000) (aux port): irq 12
-SIRC (PNP0C02) at acpi0 not configured
 valz0 at acpi0 (VALZ, TOS6208): Toshiba VALZ
 BT (TOS6205) at acpi0 not configured
 acpiacad0 at acpi0 (ADP1, ACPI0003): ACPI AC Adapter
@@ -134,6 +120,7 @@ hdaudio0: HDA ver. 1.0, OSS 3, ISS 0, BSS 0, SDO 1, 64-bit
 hdaudio0: autoconfiguration error: RIRB timeout
 hdaudio0: autoconfiguration error: RIRB timeout
 xhci0 at pci0 dev 20 function 0: Intel Core 5G (mobile) USB xHCI (rev. 0x03)
+xhci0: 64-bit DMA
 xhci0: interrupting at msi1 vec 0
 xhci0: xHCI version 1.0
 usb0 at xhci0: USB revision 3.0
@@ -156,8 +143,8 @@ hdafg0: DAC01 2ch: HP Out [Jack]
 hdafg0: ADC02 2ch: Mic In [Jack]
 hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
 audio0 at hdafg0: playback, capture, full duplex, independent
-audio0: slinear_le:16 2ch 48000Hz, blk 10ms for playback
-audio0: slinear_le:16 2ch 48000Hz, blk 10ms for recording
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 ppb0 at pci0 dev 28 function 0: Intel Core 5G (mobile) PCIe (rev. 0xe3)
@@ -180,6 +167,11 @@ ehci0: interrupting at ioapic0 pin 23
 ehci0: EHCI version 1.0
 usb2 at ehci0: USB revision 2.0
 pcib0 at pci0 dev 31 function 0: Intel Core 5G (mobile) LPC (rev. 0x03)
+ahcisata0 at pci0 dev 31 function 2: Intel Core 5G (mobile) SATA Controller (AHCI) (rev. 0x03)
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.30, 3 ports, 32 slots, CAP 0xcf34ff02<PSC,SSC,PMD,SAM,ISS=0x3=Gen3,SCLO,SAL,SALP,SSS,SNCQ,S64A>
+ahcisata0: interrupting at msi6 vec 0
+atabus0 at ahcisata0 channel 0
 isa0 at pcib0
 tpm0 at isa0 iomem 0xfed40000-0xfed44fff irq 7tpm0: device 0x001a15d1 rev 0x10
 pcppi0 at isa0 port 0x61
@@ -222,7 +214,7 @@ acpicpu2 at cpu2: ACPI CPU
 coretemp1 at cpu2: thermal sensor, 1 C resolution, Tjmax=105
 acpicpu3 at cpu3: ACPI CPU
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-timecounter: Timecounter "TSC" frequency 2294854660 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2294688000 Hz quality 3000
 uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 uhub0: 4 ports with 4 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
@@ -230,37 +222,55 @@ uhub1: 11 ports with 11 removable, self powered
 acpiacad0: AC adapter online.
 IPsec: Initialized Security Association Processing.
 uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+aes: Intel AES-NI
 uhub2: 2 ports with 2 removable, self powered
-umass0 at uhub1 port 5 configuration 1 interface 0
-umass0: BUFFALO (0x0411) USB Flash Disk (0x0111), rev 2.00/1.00, addr 1
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <BUFFALO, USB Flash Disk, 3.10> disk removable
-sd0: 1912 MB, 479 cyl, 255 head, 32 sec, 512 bytes/sect x 3915776 sectors
-sd0: GPT GUID: 3f7a75b8-5778-4166-bec1-4f91a9076da0
-dk0 at sd0: "EFI system", 262144 blocks at 2048, type: msdos
-dk1 at sd0: "7e43e302-12eb-450d-b7a1-3747fbad8a3e", 2908160 blocks at 264192, type: ffs
-uhub3 at uhub2 port 1: vendor 8087 (0x8087) product 8001 (0x8001), class 9/0, rev 2.00/0.03, addr 2
+chacha: x86 SSE2 ChaCha
+adiantum: self-test passed
+aes_ccm: self-test passed
+blake2s: self-test passed
+ahcisata0 port 0: device present, speed: 6.0Gb/s
+wd0 at atabus0 drive 0
+uhub3 at uhub1 port 6: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.10/88.31, addr 1
 uhub3: single transaction translator
-uhub3: 8 ports with 8 removable, self powered
-uhub4 at uhub1 port 6: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.10/88.31, addr 2
+uhub3: 4 ports with 0 removable, self powered
+wd0: <mSATA-512GB SSD>
+wd0: drive supports 1-sector PIO transfers, LBA48 addressing
+wd0: 476 GB, 992277 cyl, 16 head, 63 sec, 512 bytes/sect x 1000215216 sectors
+wd0: GPT GUID: 2bea82df-34b2-467e-bc78-6f75b19e3fd6
+dk0 at wd0: "b0200188-c060-47e4-abb2-6cc4c108c734", 992006765 blocks at 2048, type: ffs
+dk1 at wd0: "d6fdb5a8-8353-4831-94e6-b6ef80af8c56", 8204943 blocks at 992010240, type: swap
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags)
+uhub4 at uhub2 port 1: vendor 8087 (0x8087) product 8001 (0x8001), class 9/0, rev 2.00/0.03, addr 2
 uhub4: single transaction translator
-uhub4: 4 ports with 0 removable, self powered
-uvideo0 at uhub1 port 7 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 3
-video0 at uvideo0pool redzone disabled for 'video'
-: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 3
-WARNING: 12 errors while detecting hardware; check system log.
-boot device: sd0
-root on dk1
+uhub4: 8 ports with 8 removable, self powered
+uvideo0 at uhub1 port 7 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
+video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
+cgd: self-test aes-xts-256
+cgd: self-test aes-xts-512
+cgd: self-test aes-cbc-128
+cgd: self-test aes-cbc-256
+cgd: self-test 3des-cbc-192
+cgd: self-test blowfish-cbc-448
+cgd: self-test aes-cbc-128 (encblkno8)
+cgd: self-tests passed
+WARNING: 2 errors while detecting hardware; check system log.
+boot device: wd0
+root on dk0 dumps on dk1
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.55/modules
+kern.module.path=/stand/amd64/9.99.77/modules
 kern info: [drm] Memory usable by graphics device = 4096M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
-i915drmkms0: interrupting at msi6 vec 0 (i915drmkms0)
-intelfb0 at i915drmkms0
-intelfb0: framebuffer at 0xffffdc8078544000, size 1366x768, depth 32, stride 5504
+i915drmkms0: interrupting at msi7 vec 0 (i915drmkms0)
 iwm0: hw rev 0x210, fw ver 22.361476.0, address a4:02:b9:2f:d2:80
+intelfb0 at i915drmkms0
+intelfb0: framebuffer at 0xffffc88078648000, size 1366x768, depth 32, stride 5504
+acpiacad0: AC adapter offline.
+acpiacad0: AC adapter online.
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
-acpibat0: normal capacity on 'charge state'
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)
