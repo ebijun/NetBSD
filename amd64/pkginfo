@@ -1,10 +1,13 @@
 GConf-3.2.3nb8      Configuration database system used by GNOME
+ImageMagick6-6.9.11.7nb6 Package for display and interactive manipulation of images
 ORBit2-2.14.19nb5   High-performance CORBA ORB with C language support
 SDL-1.2.15nb32      Simple DirectMedia Layer, a cross-platform multimedia library
 SDL2-2.0.12nb5      Simple DirectMedia Layer - cross-platform multimedia library
 adwaita-icon-theme-3.36.1 Standard GNOME icons
 alsa-lib-1.1.4.1    Advanced Linux Sound Architecture (ALSA)
+amtk-5.0.2nb1       Actions, Menus and Toolbars Kit for GTK applications
 anthy-9100h         Kana Kanji conversion system
+anthy-elisp-9100hnb5 Emacs lisp files for inputmethod/anthy
 apache-ant-1.10.9   Apache Project's Java-Based make(1) replacement
 apr-1.7.0nb1        Apache Portable Runtime
 apr-util-1.6.1nb9   Apache Portable Runtime utilities
@@ -49,6 +52,8 @@ db4-4.8.30nb1       Berkeley DB version 4 from Oracle
 dbus-1.12.20        Message bus system
 dbus-glib-0.110nb1  GLib bindings for the D-BUS message bus system
 dconf-0.36.0nb3     Backend for gsettings
+deforaos-libdesktop-0.4.0nb5 DeforaOS desktop library
+deforaos-libsystem-0.4.2 DeforaOS core system library
 dejavu-ttf-2.37     DejaVu family of TrueType fonts
 desktop-file-utils-0.26 Utilities to manage desktop entries
 digest-20190127     Message digest wrapper utility
@@ -59,6 +64,7 @@ docbook-xsl-1.79.2nb4 Docbook XSL modular stylesheet
 double-conversion-3.1.5 Conversion routines for IEEE doubles
 editline-3.1.20191231nb2 NetBSD Editline library (libedit) for generic line editing
 elementary-xfce-icon-theme-0.11 Elementary icons forked, extended and maintained for Xfce
+emacs26-26.3nb12    GNU editing macros (editor)
 enca-1.15           Extremely Naive Charset Analyser
 enchant2-2.2.13     Generic spell checking library
 engrampa-1.24.0nb2  Archive manager utility for the MATE Environment
@@ -77,12 +83,14 @@ fossil-2.13         High-reliability, distributed software configuration managem
 fribidi-1.0.10      Free Implementation of the Unicode Bidirectional Algorithm
 gawk-5.1.0          GNU awk
 gcc9-9.3.0nb5       The GNU Compiler Collection (GCC) - Release 9 Series
+gconfmm-2.28.3nb24  C++ bindings for gconf
 gcr-3.38.0          Library for crypto UI and related tasks
 gd-2.3.0nb2         Graphics library for the dynamic creation of images
 gdbus-codegen-2.66.4 Generate code and/or documentation for one or more D-Bus interfaces
 gdk-pixbuf2-2.40.0nb1 Library for image loading and manipulation
 gdk-pixbuf2-xlib-2.40.0nb1 Image loaders for gtk2 (X11 support)
 gdl-3.34.0nb6       Gnome Devtool Libraries
+gedit-3.36.2nb4     Lightweight GNOME UTF-8 text editor
 gegl-0.4.26nb1      Graph based image processing framework
 getopt-1.1.6        Program to help shell scripts parse command-line parameters
 gettext-lib-0.21    Internationalized Message Handling Library (libintl)
@@ -118,6 +126,7 @@ graphviz-2.44.1nb6  Graph Drawing Programs from AT&T Research and Lucent Bell La
 gsed-4.8            GNU implementation of sed, the POSIX stream editor
 gsettings-desktop-schemas-3.38.0 Collection of GSettings schemas for the GNOME desktop
 gsl-2.5             The GNU Scientific Library
+gspell-1.8.3nb5     Spell checking API for GTK+ applications
 gssdp-1.0.3nb12     Simple Service Discovery Protocol library and device sniffer (1.0 branch)
 gst-plugins1-base-1.16.2nb4 Open source multimedia framework - Base plugins
 gstreamer1-1.16.2nb2 Open source multimedia framework
@@ -129,6 +138,7 @@ gtk2-engines-murrine-0.98.2nb12 GTK2+ engine featuring a modern glassy look
 gtk3+-3.24.23       GIMP Toolkit v3 - libraries for building X11 user interfaces
 gtkmm3-3.24.2nb4    C++ Interfaces for GTK+ and GNOME (v3)
 gtksourceview3-3.24.11nb5 Text widget that extends GTK3's GtkTextView widget (v3)
+gtksourceview4-4.8.0nb1 Text widget that extends GTK3's GtkTextView widget (v4)
 gtkspell3-3.0.10nb5 Spell checking GtkTextView widget (v3)
 gts-0.7.6nb1        GNU Triangulated Surface Library
 gucharmap-2.32.1nb32 Unicode/ISO10646 character map and font viewer
@@ -162,6 +172,7 @@ lame-3.100nb2       Fast, high quality MP3 encoder
 lcms2-2.11          Little Color Management System - a color management library
 ldb-2.2.0nb1        LDAP-like embedded database
 libIDL-0.8.14nb5    CORBA Interface Definition Language parser
+libXaw3d-1.6.3      X 3D Athena Widget Set
 libabw-0.1.3nb4     Library for AbiWord documents
 libaom-1.0.0nb3     Library for using AV1, video coding format
 libappindicator-12.10.0nb8 Allow applications to export a menu into the panel
@@ -267,6 +278,7 @@ libxklavier-5.4nb6  High-level API for the X Keyboard Extension (XKB)
 libxml2-2.9.10nb3   XML parser library from the GNOME project
 libxslt-1.1.34nb4   XSLT parser library from the GNOME project
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
+libzip-1.7.3nb1     C library to manipulate zip archives
 libzmf-0.0.2nb16    Library to parse Zoner Callisto/Draw documents
 lintpkgsrc-4.96     Sanity checks on the complete pkgsrc tree
 llvm-10.0.1nb3      Low Level Virtual Machine compiler infrastructure
@@ -276,6 +288,7 @@ lp_solve-5.5.2.3    Mixed Integer Linear Programming (MILP) solver
 lrzsz-0.12.20nb1    Receive/Send files via X/Y/ZMODEM protocol.  (unrestrictive)
 lua52-5.2.4nb1      Lightweight, embeddable scripting language (v5.2)
 lua53-5.3.6         Lightweight, embeddable scripting language (v5.3)
+luatex-1.12.0nb3    Extended version of pdfTeX using Lua
 lz4-1.9.3           Extremely Fast Compression algorithm
 lzip-1.21           Lossless data compressor based on the LZMA algorithm
 lzo-2.10            Portable lossless data compression library
@@ -395,6 +408,7 @@ poppler-data-0.4.10 Support files for poppler
 poppler-glib-20.11.0 PDF rendering library (GLib wrapper)
 poppler-includes-20.11.0 Poppler Xpdf includes (unsupported)
 popt-1.18           Command line option parsing library
+portaudio-190600.20161030nb6 Portable cross-platform audio API
 potrace-1.15        Utility for transforming bitmaps into vector graphics
 ptexenc-1.3.8       Library for Japanese pTeX and its tools
 py-gobject-shared-2.28.7nb5 Python bindings for glib2 gobject
@@ -501,6 +515,8 @@ ruby26-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
 ruby26-unf_ext-0.0.7.6 Unicode Normalization Form support library for CRuby
 rust-1.47.0         Safe, concurrent, practical language
 samba-4.13.3        SMB/CIFS protocol server suite
+seamonkey-2.53.4nb1 All-in-one Internet application suite
+seamonkey-l10n-2.53.4 Language packs for www/seamonkey
 serf-1.3.9nb1       High-performance asynchronous HTTP client library
 shared-mime-info-1.10nb3 Core database of common types
 spdlog-1.8.1        Fast C++ logging library
@@ -513,12 +529,44 @@ talloc-2.3.1nb1     Hierarchical pool based memory allocator with destructors
 tcl-8.6.10nb3       Tool Command Language, a dynamic language
 tcsh-6.22.02nb1     Extended C-shell with many useful features
 tdb-1.4.3nb1        Small database system which uses files to store data
+tepl4-4.4.0nb2      GtkSourceView-based text editors and IDE helper library
 tevent-0.10.2nb1    Event system based on the talloc
+tex-amsfonts-3.04nb1 TeX fonts from the American Mathematical Society
+tex-amsmath-2.17a.53640 AMS mathematical facilities for LaTeX
+tex-babel-3.43      Multilingual support for Plain TeX or LaTeX
+tex-carlisle-2018   LaTeX packages created by David Carlisle
+tex-cm-2018.49028nb1 Computer Modern fonts
+tex-dehyph-2018     German hyphenation patterns for traditional orthography
+tex-dvips-2020      Files for a DVI to PostScript driver
+tex-etex-2.1.31600  TeX implementation filling the gap between TeX3 and NTS
+tex-graphics-1.4a   Standard LaTeX graphics
+tex-graphics-cfg-2016.41448 Sample configuration files for LaTeX color and graphics
+tex-graphics-def-2020 Colour and graphics option files
+tex-hyph-utf8-2020  Hyphenation patterns expressed in UTF-8
+tex-hyphen-base-2020 TeX hyphenation patterns for English
+tex-knuth-lib-2014  Small library of MetaFont sources
+tex-kpathsea-2020   Translation tables for TeX
+tex-latex-20200202.5 TeX macro package that defines LaTeX
+tex-latex-bin-2016nb3 LaTeX executables
+tex-latex-fonts-2013 Collection of fonts used in LaTeX distributions
+tex-latexconfig-2020 Files used to generate LaTeX formats
+tex-luatex-1.12.0   LuaTeX basic definition package
+tex-pdftex-2020nb1  TeX extension for direct creation of PDF
+tex-plain-3.141592653.43076nb2 The Plain TeX format
+tex-standalone-1.3a Compile TeX pictures stand-alone or as part of a document
+tex-tex-ini-files-2016 Model TeX format creation files
+tex-texlive-scripts-2020nb1 TeX Live infrastructure programs
+tex-texlive-scripts-doc-2020 Documentation for tex-texlive-scripts
+tex-texlive.infra-2020nb1 Basic TeX Live infrastructure
+tex-tools-2020      The LaTeX standard tools bundle
+tex-unicode-data-1.13 Unicode data and loaders for TeX
+tex-updmap-map-2020 auto-generated tex font map files
 tiff-4.1.0nb1       Library and tools for reading and writing TIFF data files
 tk-8.6.10nb1        Graphical toolkit for TCL
 tradcpp-0.5.3       Traditional (K&R-style) C preprocessor
 tree-1.8.0          Print a text or HTML tree diagram of a directory structure
 ttmkfdir2-20021109nb6 Tool that creates a fonts.scale file
+uchardet-0.0.7      Encoding detector library ported from Mozilla
 uim-1.8.8nb7        Multilingual input method library
 unittest-cpp-2.0.0  Lightweight unit testing framework for C++
 unixodbc-2.3.9      ODBC 2.x/3.x driver manager
@@ -563,11 +611,11 @@ xfce4-wm-4.14.4     Xfce window manager
 xfce4-wm-themes-4.10.0nb16 Xfce window manager themes
 xfce4-xarchiver-0.5.4.15 Xfce archiver handler
 xli-1.17.0nb13      X11 Image Loading Utility
-xmix-2.1nb4         Mixer for X Window System
 xmlcatmgr-2.2nb1    XML and SGML catalog manager
 xmlto-0.0.28nb4     Tool to help transform XML documents into other formats
 xorg-cf-files-1.0.6nb5 Xorg imake rules
 xorg-util-macros-1.19.2 Xorg autotool macros
+xournalpp-1.0.18nb7 Take notes, sketch and annotate PDFs
 xscreensaver-5.44nb5 Screen saver and locker for the X window system
 xvidcore-1.3.7      ISO MPEG-4 compliant video codec
 yasm-1.3.0          Complete rewrite of the NASM assembler with BSD license
