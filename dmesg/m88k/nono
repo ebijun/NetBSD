@@ -1,0 +1,41 @@
+[ no symbol table formats found ]
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+	The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2020 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.8-current (GENERIC) #5: Tue Jan  5 14:44:06 JST 2021
+    aoyama@aurora.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC
+real mem = 134217728 (128MB)
+avail mem = 127315968 (121MB)
+warning: no entropy supplied by boot loader
+random: boothowto does not indicate good seed
+mainbus0 at root: OMRON LUNA-88K, 25MHz
+cpu0: M88100 rev 0x0, 2 CMMU
+cpu0: M88200 (16K) rev 0x0, full Icache
+cpu0: M88200 (16K) rev 0x0, full Dcache
+clock0 at mainbus0: MK48T02
+lcd0 at mainbus0
+le0 at mainbus0: address 02:00:01:dd:30:44
+le0: 32 receive buffers, 8 transmit buffers
+sio0 at mainbus0: 7201a
+siotty0 at sio0 channel 0
+ws0 at sio0 channel 1
+wskbd0 at ws0: console keyboard
+wsmouse0 at ws0 mux 0
+xp0 at mainbus0: HD647180X I/O processor
+fb0 at mainbus0: 1280x1024, 1bpp
+wsdisplay0 at fb0 mux 1: console (std, vt100 emulation), using wskbd0
+spc0 at mainbus0
+scsibus0 at spc0: 8 targets, initiator 7
+sd0 at scsibus0 targ 6 lun 0: <NONO, SCSIHD, 0>
+sd0: 2063MB, 512 bytes/sector, 4226725 sectors
+/dev/ksyms: Symbol table not valid.
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+boot device: <unknown>
+root device: sd0
+swap device (default sd0b): 
+root on sd0a swap on sd0b dump on sd0b
+WARNING: /mnt was not properly unmounted
