@@ -1,36 +1,46 @@
-VERSION: :1,$s/2020-12-23/2020-12-23/g
-ISO:     :1,$s/202012211520Z/202012211520Z/g
+VERSION: :1,$s/2021-01-16/2021-01-16/g
+ISO:     :1,$s/202101150750Z/202101150750Z/g
 NetBSD:  :1,$s/9.99.77/9.99.77/g
-PKGSRC:  :1,$s/2020-04-22/2020-12-23/
+PKGSRC:  :1,$s/2020-04-22/2021-01-16/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-12-23-netbsd-raspi-aarch64.img
+Subject: 2021-01-16-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-12-23-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2021-01-16-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-12-23-aarch64/2020-12-23-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-12-23-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-01-16-aarch64/2021-01-16-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-01-16-aarch64/MD5
 
 Topics:
-- boot via UEFI_VER=v1.21
+- boot via UEFI_VER=v1.22
  https://github.com/pftf/RPi4/releases
-Raspberry Pi 4 UEFI Firmware v1.21
-    Add CM4 and Pi400 Device Tree binaries
-    Fix Device Tree corruption due to a bug in start4.elf [See raspberrypi/firmware#1445, raspberrypi/firmware#1489]
-    Add IORT ACPI table [tianocore/edk2-platforms@dac891d]
-    Fix incorrectly mapped 640x480 and 800x600 display resolutions [tianocore/edk2-platforms@38c387d]
-    Fix incorrect thermal offset [tianocore/edk2-platforms@78c884b]
-    Update JTAG pinout [tianocore/edk2-platforms@8ef23e8]
+
+Raspberry Pi 4 UEFI Firmware v1.22
+    Fix settings not being stored or being corrupted on reset (#78, #82) [tianocore/edk2-platforms@94e9fba tianocore/edk2-platforms@ae6c236]
+    Add internal changes for the eventual support of CM4 & Pi400 [tianocore/edk2-platforms@100e360]
+    Fix type of PMU GSIV in GICC (#103) [tianocore/edk2-platforms@734fed7]
+    Switch back to the old coloured logo [tianocore/edk2-non-osi@3d1bb66]
+    Fix cursor appearing on top of logo (#115) [tianocore/edk2@b585238]
+
+Important Note: The start4.elf and fixup4.dat used in this release are the 2020.12.01 ones, as using newer versions broke xHCI initialization (raspberrypi/firmware#1518, raspberrypi/firmware#1495) with newer revisions of the Bcm2711 SoC. Do not be tempted to use more recent versions of start4.elf, as, unless you are using an old Pi 4 model, this will most likely break USB support.
+
 - only for RPI4 
   (fill dtb for RPI3?)
 - build script
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
+- [Issue] Can't recognize DOS partition from Windows
+
+pkgsrc Failed: 
+ MesaLib-20.0.6nb1 
+ mpv-0.33.0nb1 
+ libappindicator-12.10.0nb8 
+ mate-control-center-1.24.0nb5 
 
 RPI4 status:
-- boot via UEFI_VER=v1.21
+- boot via UEFI_VER=v1.22
  https://github.com/pftf/RPi4/releases
  copy pre-setted RPI_EFI.fd
   serial ,should not set graphical
@@ -44,7 +54,7 @@ RPI4 status:
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.77 evbarm-aarch64 202012211520Z arm64.img from nyftp.
+- NetBSD-current 9.99.77 evbarm-aarch64 202101150750Z arm64.img from nyftp.
 - boot via UEFI_VER=v1.21
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
@@ -52,16 +62,22 @@ Update:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/sysinfo
 
 Update from 2020-12-02:
-https://github.com/ebijun/NetBSD/commit/28823600afd923ec174a3c73b3f8d9a9f87ff79f
+https://github.com/ebijun/NetBSD/commit/8488402400c2156a602710cca1b9788e2cb88fbc
 
 sysinfo:
- openssl-1.1.1i pkg_install-20201218 sh-20181212-20201221113059Z
+ dhcpcd-9.4.0 sh-20181212-20210115053449Z
+ tzdata-2020f
 
 pkgsrc:
- curl-7.74.0 glib2-2.66.4 gnutls-3.7.0 gobject-introspection-1.66.1
- gtk2+-2.24.32nb19 lintpkgsrc-4.96 nghttp2-1.42.0nb1
- pcre2-10.36 py38-cElementTree-3.8.6 py38-expat-3.8.6
- python38-3.8.6nb1
+ bash-5.1.4 git-base-2.30.0 gobject-introspection-1.66.1nb1
+ graphite2-1.3.14 gtk2+-2.24.33 gtk3+-3.24.24 harfbuzz-2.7.4
+ icu-68.2 libcups-2.3.3op1 libgpg-error-1.41
+ mozilla-rootcerts-1.0.20201204 p11-kit-0.23.22nb1
+ pango-1.48.0 py38-cElementTree-3.8.7 py38-expat-3.8.7
+ python38-3.8.7 ruby26-mikutter-4.1.4 ruby26-moneta-1.4.1
+ ruby26-nokogiri-1.11.1 ruby26-pkg-config-1.4.4
+ ruby26-racc-1.5.2nb1 ruby26-unf_ext-0.0.7.7
+ tiff-4.2.0 wget-1.21.1 zsh-5.8nb2 zstd-1.4.8
 
 - mate/firefox/inkscape/libreoffice works well
   pkg_add mate
