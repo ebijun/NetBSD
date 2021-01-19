@@ -1,7 +1,5 @@
-RELEASE=/usr/release/images
+RELEASE=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202101181310Z/images/
 IMG=${RELEASE}/NetBSD-9.99.77-aarch64-install.img
-#-rw-------  1 jun   wheel  1625292800 Dec  9 13:34 /usr/release/images/NetBSD-9.99.77-aarch64-install.img
-#-rw-r--r--  1 root  wheel  1625292800 Dec  4 07:01 /usr/release/images/NetBSD-9.99.76-aarch64-202012031740Z-install.img
 
 DK=dk1
 
@@ -18,8 +16,8 @@ LIST=`ls -P ${MNT}/evbarm-aarch64/binary/sets |fgrep -vf Pattern`
 aaa:
 	echo ${LIST}
 
-unzip:
-	gunzip ${IMAGE}.gz
+gunzip:
+	gunzip ${IMG}.gz
 
 all:
 	./Update
