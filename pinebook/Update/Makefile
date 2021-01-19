@@ -1,4 +1,4 @@
-RELEASE=/usr/release/images
+RELEASE=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202101161450Z/images
 IMG=${RELEASE}/NetBSD-9.99.77-aarch64-install.img
 #nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202012080500Z/images/NetBSD-9.99.77-aarch64-install.img.gz
 
@@ -42,6 +42,9 @@ ls:
 	ls -l /boot/dtb/allwinner/sun50i-a64-pinebook.dtb
 	ls -l /boot/netbsd.img
 	ls -l /mnt1/evbarm-aarch64/binary/kernel/netbsd-GENERIC64.img.gz
+
+gunzip:
+	gunzip ${IMG}.gz
 
 mount:
 	vndconfig vnd0 ${IMG}
