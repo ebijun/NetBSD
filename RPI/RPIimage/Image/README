@@ -1,21 +1,22 @@
-VERSION: :1,$s/2020-12-10/2020-12-10/g
-ISO:     :1,$s/202012082120Z/202012082120Z/g
-NetBSD:  :1,$s/9.99.77/9.99.77/g
-PKGSRC:  :1,$s/2020-12-10/2020-12-10/
+VERSION: :1,$s/2021-01-20/2021-01-20/g
+ISO:     :1,$s/202101182220Z/202101182220Z/g
+NetBSD:  :1,$s/9.99.78/9.99.78/g
+PKGSRC:  :1,$s/2021-01-20/2021-01-20/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-12-10-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-01-20-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-12-10-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-01-20-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-12-10-earmv6hf/2020-12-10-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-12-10-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-01-20-earmv6hf/2021-01-20-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-01-20-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.77 evbarm-earmv6hf 202012082120Z rpi.img from nyftp.
+- NetBSD 9.99.78 evbarm-earmv6hf 202101182220Z rpi.img from nyftp.
+- Python 3.8
 - Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
 XXX: should test big-endian image and pkgsrc
 
@@ -26,25 +27,27 @@ PR
 - RPI4: testing on NetBSD/aarch64
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 
-Changes from 2020-10-24 version
- https://github.com/ebijun/NetBSD/commit/a0215a159bbb57e9cfefff47d962befcc1c6c393
+Changes from 2020-12-10 version
+https://github.com/ebijun/NetBSD/commit/9f2a0d7e1c0cec1657f8542d5e95b800c7ff166c
 
 sysinfo:
- dhcpcd-9.3.4 libssh-38.0 NetBSD-9.99.77 netpgpverify-20201101
- openssh-8.4 opensshd-8.4 pkg_install-20201205
- sh-20181212-20201208201718Z tzdata-2020d
- userland-NetBSD-9.99.77/evbarm
+ dhcpcd-9.4.0 NetBSD-9.99.78 openssl-1.1.1i pkg_install-20201218
+ sh-20181212-20210118200234Z tzdata-2020f userland-NetBSD-9.99.78/evbarm
 
 pkgsrc:
- curl-7.73.0 fossil-2.13 git-base-2.29.2 glib2-2.66.3
- gmp-6.2.1 gnutls-3.7.0 harfbuzz-2.7.2nb1 icu-68.1
- libgcrypt-1.8.7 libimagequant-2.13.0 libpsl-0.21.1nb2
- libxkbcommon-1.0.2 libxml2-2.9.10nb3 libxslt-1.1.34nb4
- lz4-1.9.3 m17n-lib-1.8.0nb4 mlterm-3.9.1
- mozilla-rootcerts-1.0.20201102 nghttp2-1.42.0
- python37-3.7.9nb2 qt5-qtbase-5.15.2 qt5-qtx11extras-5.15.1nb1
- qt5-qtxmlpatterns-5.15.2 shared-mime-info-1.10nb3
- wayland-1.18.0nb2
+ bash-5.1.4 curl-7.74.0 git-base-2.30.0 glib2-2.66.4
+ gobject-introspection-1.66.1nb1 gtk2+-2.24.33 gtk3+-3.24.24
+ harfbuzz-2.7.4 icu-68.2 libcups-2.3.3op1 libgpg-error-1.41
+ libxkbcommon-1.0.3 lintpkgsrc-4.96 medit-1.2.0nb16
+ mozilla-rootcerts-1.0.20201204 nghttp2-1.42.0nb1
+ p11-kit-0.23.22nb1 pango-1.48.0 pcre2-10.36
+ py38-cElementTree-3.8.7 py38-expat-3.8.7 python38-3.8.7
+ qt5-qtbase-5.15.2nb1 qt5-qtx11extras-5.15.2nb1
+ qt5-qtxmlpatterns-5.15.2nb1 ruby26-mikutter-4.1.4
+ ruby26-moneta-1.4.1 ruby26-nokogiri-1.11.1
+ ruby26-pkg-config-1.4.4 ruby26-racc-1.5.2nb1
+ ruby26-unf_ext-0.0.7.7 tiff-4.2.0 uim-1.8.8nb7
+ wget-1.21 zsh-5.8nb2 zstd-1.4.8
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -102,7 +105,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-12-10-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-01-20-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -158,7 +161,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-12-10/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-08-28/
 
 - If you use Official Package for NetBSD9:
 
@@ -346,7 +349,7 @@ http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2020.rst
 
-- NetBSD 9.99.77 earmv6hf rpi.img.gz base
+- NetBSD 9.99.78 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
