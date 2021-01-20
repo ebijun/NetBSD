@@ -9,7 +9,8 @@ PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-08-
 
 BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202101150750Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
-RPI=${BINARY}/gzimg/arm64.img
+RPI=${BINARY}/gzimg/arm64.img.gz
+#RPI=${BINARY}/gzimg/arm64mbr.img.gz
 ORD=a.img
 
 # UEFI
@@ -63,8 +64,8 @@ release:
 	vnconfig -u ${VND}
 
 restore:
-	ls -l ${BINARY}/gzimg/arm64.img.gz
-	gunzip < ${BINARY}/gzimg/arm64.img.gz > ${ORD}
+	ls -l    ${RPI}
+	gunzip < ${RPI} > ${ORD}
 	vnconfig ${VND_ORG} ${ORD}
 	mount_msdos /dev/`dkctl ${VND_ORG} listwedges |awk -F: '{print $$1}' |head -2 |tail -1` ${ORG_BOOT}
 	### resize
