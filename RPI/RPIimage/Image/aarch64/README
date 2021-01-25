@@ -47,9 +47,8 @@ RPI4 status:
   serial ,should not set graphical
   disable 3GB -> recognize 4GB
 - HDMI: works
-- audio: 
-  "This driver is not 64-bit safe and should not be enabled on aarch64 as-is."
-  http://mail-index.netbsd.org/source-changes-d/2021/01/21/msg013126.html
+- audio: vcaudio
+  http://mail-index.netbsd.org/source-changes-d/2021/01/22/msg013133.html
 - USB device: works
 - bwfm0 Wireless network:?
   (works well on RPI3,not works on RPI4?)
@@ -59,7 +58,7 @@ RPI4 status:
 
 Update:
 - NetBSD-current 9.99.77 evbarm-aarch64 202101150750Z arm64.img from nyftp.
-- boot via UEFI_VER=v1.21
+- boot via UEFI_VER=v1.22
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
