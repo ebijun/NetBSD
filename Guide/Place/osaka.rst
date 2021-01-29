@@ -155,7 +155,8 @@ Maps:
 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-2019
+
+2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image::  ../Picture/2020/01/25/DSC_8308.JPG
@@ -170,10 +171,13 @@ Maps:
 .. image::  ../Picture/2020/01/25/DSC_8324.JPG
 .. image::  ../Picture/2020/01/25/DSC_8325.JPG
 .. image::  ../Picture/2020/01/25/DSC_8327.JPG
-.. image::  ../Picture/2020/01/25/DSC_8329.JPG
 .. image::  ../Picture/2020/01/25/DSC_8330.JPG
 .. image::  ../Picture/2020/01/25/DSC_8331.JPG
 .. image::  ../Picture/2020/01/25/DSC_8332.JPG
+
+2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. image::  ../Picture/2019/11/08/DSC_7979.JPG
 .. image::  ../Picture/2019/11/08/DSC_7980.JPG
 .. image::  ../Picture/2019/11/08/DSC_7984.JPG
@@ -198,8 +202,6 @@ Maps:
 .. image::  ../Picture/2019/01/26/DSC_6572.JPG
 .. image::  ../Picture/2019/01/26/DSC_6578.JPG
 .. image::  ../Picture/2019/01/26/DSC_6579.JPG
-.. image::  ../Picture/2019/01/26/DSC_6581.JPG
-.. image::  ../Picture/2019/01/26/DSC_6592.JPG
 
 2018
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
