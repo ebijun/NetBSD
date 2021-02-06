@@ -1,10 +1,10 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020 The NetBSD Foundation, Inc.  All rights reserved.
+    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.77 (GENERIC) #0: Sun Dec 27 20:56:14 UTC 2020
+NetBSD 9.99.80 (GENERIC) #0: Fri Feb  5 19:19:17 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16295 MB
 avail memory = 15764 MB
@@ -55,11 +55,11 @@ acpi0 at mainbus0: Intel ACPICA 20201113
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFF2FE2A82C348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFF899BD162C348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFF2FB2923A488 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFF8998D0042488 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFF2FB291F8408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFF8998CFFF8408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -90,7 +90,9 @@ acpivga0:   0x0302 (acpiout3): Ext. Digital Monitor, index 2, port 0, head 0, bi
 acpivga0:   0x0303 (acpiout4): Ext. Digital Monitor, index 3, port 0, head 0, bios detect
 acpiwmi0 at acpi0 (AMW0, PNP0C14-0): ACPI WMI Interface
 acpiwmibus at acpiwmi0 not configured
-GTPM (IFX0102) at acpi0 not configured
+tpm0 at acpi0 (GTPM, IFX0102): mem 0xfed40000-0xfed44fff
+
+tpm0: device 0x001a15d1 rev 0x10
 attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
 pckbc1 at acpi0 (PS2K, TOS7407) (kbd port): io 0x60,0x64 irq 1
 pckbc2 at acpi0 (PS2M, TTP1000) (aux port): irq 12
@@ -173,7 +175,6 @@ ahcisata0: AHCI revision 1.30, 3 ports, 32 slots, CAP 0xcf34ff02<PSC,SSC,PMD,SAM
 ahcisata0: interrupting at msi6 vec 0
 atabus0 at ahcisata0 channel 0
 isa0 at pcib0
-tpm0 at isa0 iomem 0xfed40000-0xfed44fff irq 7tpm0: device 0x001a15d1 rev 0x10
 pcppi0 at isa0 port 0x61
 spkr1 at pcppi0: PC Speaker
 wsbell at spkr1 not configured
@@ -219,16 +220,16 @@ uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00,
 uhub0: 4 ports with 4 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub1: 11 ports with 11 removable, self powered
-acpiacad0: AC adapter offline.
+acpiacad0: AC adapter online.
 IPsec: Initialized Security Association Processing.
-uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
-uhub2: 2 ports with 2 removable, self powered
 aes: Intel AES-NI
 chacha: x86 SSE2 ChaCha
 adiantum: self-test passed
 aes_ccm: self-test passed
 blake2s: self-test passed
-ahcisata0 port 0: device present, speed: 6.0Gb/s
+uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub2: 2 ports with 2 removable, self powered
+tpm0: read 8 bytes, expected 10ahcisata0 port 0: device present, speed: 6.0Gb/s
 uhub3 at uhub1 port 6: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.10/88.31, addr 1
 uhub3: single transaction translator
 uhub3: 4 ports with 0 removable, self powered
@@ -258,14 +259,14 @@ WARNING: 2 errors while detecting hardware; check system log.
 boot device: wd0
 root on dk0 dumps on dk1
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.77/modules
+kern.module.path=/stand/amd64/9.99.80/modules
 kern info: [drm] Memory usable by graphics device = 4096M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at msi7 vec 0 (i915drmkms0)
 iwm0: hw rev 0x210, fw ver 22.361476.0, address a4:02:b9:2f:d2:80
 intelfb0 at i915drmkms0
-intelfb0: framebuffer at 0xffffc3014faf4000, size 1366x768, depth 32, stride 5504
+intelfb0: framebuffer at 0xe00af000, size 1366x768, depth 32, stride 5504
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
