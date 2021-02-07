@@ -4,11 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.77 (GENERIC64) #0: Sat Jan 16 12:57:37 UTC 2021
+NetBSD 9.99.80 (GENERIC64) #0: Sat Feb  6 09:45:17 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 2022 MB
-avail memory = 1959 MB
-entropy: no seed from bootloader
+avail memory = 1951 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 armfdt0 (root)
@@ -151,7 +150,7 @@ gpiokeys0 at simplebus0: Lid Switch
 /soc/video-codec@1c0e000 at simplebus1 not configured
 sunxidrm0: reserved 39 MB DRAM for CMA (7 MB reclaimed from bootloader)
 sunxifb0 at sunxidrm0
-sunxifb0: framebuffer at 0xffffc00043c00000, size 1920x1080, depth 32, stride 7680
+sunxifb0: framebuffer at 0xbe000000, size 1920x1080, depth 32, stride 7680
 wsdisplay0 at sunxifb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
@@ -179,14 +178,6 @@ cpu3: L1 32KB/64B*128L*4W PIPT Data cache
 cpu3: L2 512KB/64B*512L*16W PIPT Unified cache
 cpu3: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
 cpu3: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu2: L1 32KB/64B*256L*2W VIPT Instruction cache
-cpu2: L1 32KB/64B*128L*4W PIPT Data cache
-cpu2: L2 512KB/64B*512L*16W PIPT Unified cache
-cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
-cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -195,6 +186,14 @@ cpu1: L1 32KB/64B*128L*4W PIPT Data cache
 cpu1: L2 512KB/64B*512L*16W PIPT Unified cache
 cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
 cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu2: L1 32KB/64B*256L*2W VIPT Instruction cache
+cpu2: L1 32KB/64B*128L*4W PIPT Data cache
+cpu2: L2 512KB/64B*512L*16W PIPT Unified cache
+cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt0: rate: 1152.000 MHz, 1300000 uV
 sdmmc0 at sunximmc0
 sdmmc1 at sunximmc1
@@ -204,31 +203,37 @@ armpmu0: interrupting on GIC irq 148
 armpmu0: interrupting on GIC irq 149
 armpmu0: interrupting on GIC irq 150
 armpmu0: interrupting on GIC irq 151
-uhub0 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub0 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-uhub1 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub1 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub1: 1 port with 1 removable, self powered
-uhub2 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 1 port with 1 removable, self powered
-uhub3 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub3 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub3: 1 port with 1 removable, self powered
 sun8icrypto0: AES-128 self-test passed
 Lid Switch: lid opened.
-sdmmc1: 4-bit width, 50.000 MHz
-(manufacturer 0x24c, product 0xb703, standard function interface code 0x7) at sdmmc1 function 1 not configured
+sdmmc2: autoconfiguration error: switch error
 IPsec: Initialized Security Association Processing.
+ld2 at sdmmc2: <0x45:0x0100:DA4064:0x00:0xdb1fd106:0x000>
+ld2: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
 aes: ARMv8.0-AES
 chacha: ARM NEON ChaCha
 adiantum: self-test passed
 aes_ccm: self-test passed
 blake2s: self-test passed
-sdmmc2: autoconfiguration error: switch error
-ld2 at sdmmc2: <0x45:0x0100:DA4064:0x00:0xdb1fd106:0x000>
-ld2: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
+sdmmc1: 4-bit width, 50.000 MHz
+(manufacturer 0x24c, product 0xb703, standard function interface code 0x7) at sdmmc1 function 1 not configured
 ld2: 8-bit width, 4096 KB cache, 52.000 MHz
-uhub4 at uhub1 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/88.32, addr 2
+umass0 at uhub1 port 1 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+uhub4 at uhub3 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/88.32, addr 2
 uhub4: single transaction translator
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 uhub4: 4 ports with 1 removable, self powered
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 uhidev0 at uhub4 port 1 configuration 1 interface 0
 uhidev0: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x000c), rev 1.10/1.00, addr 3, iclass 3/1
 ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
@@ -261,7 +266,11 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld2
 root on ld2a dumps on ld2b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.77/modules
+kern.module.path=/stand/evbarm/9.99.80/modules
 entropy: WARNING: consolidating less than full entropy
 wsdisplay0: screen 4 added (default, vt100 emulation)
 axppmic0: normal capacity on 'charge state'
+sd0: detached
+scsibus0: detached
+umass0: detached
+umass0: at uhub1 port 1 (addr 2) disconnected

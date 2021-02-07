@@ -1,4 +1,4 @@
 wget -nv -r --level=1 --spider https://nycdn.netbsd.org/pub/NetBSD-daily/HEAD/ 2> nycdn.log
 awk '{print $3}' nycdn.log |grep HEAD |grep -v latest|tail -1 \
 |sed -e 's/URL:/wget --level=1 -r /
-s?$?images/NetBSD-9.99.77-aarch64-install.img.gz?'
+s?$?images/NetBSD-9.99.80-aarch64-install.img.gz?'

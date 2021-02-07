@@ -1,6 +1,6 @@
-RELEASE=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202101161450Z/images
-IMG=${RELEASE}/NetBSD-9.99.77-aarch64-install.img
-#nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202012080500Z/images/NetBSD-9.99.77-aarch64-install.img.gz
+RELEASE=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102061040Z/images
+IMG=${RELEASE}/NetBSD-9.99.80-aarch64-install.img
+#nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102061040Z/images/NetBSD-9.99.80-aarch64-install.img.gz
 
 DK=dk1
 
