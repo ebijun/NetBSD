@@ -5,9 +5,9 @@ ARCH=aarch64
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-08-22/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2021-1/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202101150750Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102162210Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img.gz
 #RPI=${BINARY}/gzimg/arm64mbr.img.gz
@@ -57,9 +57,9 @@ release:
 	tar cf - etc |(cd ${MNT_ROOT};tar xvf -)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT_ROOT}/etc/pkg_install.conf 
 	#https://mail-index.netbsd.org/current-users/2020/05/01/msg038495.html
-	rndctl -S var/db/entropy-file #running on amd64
-	cp var/db/entropy-file ${MNT_ROOT}/var/db/entropy-file
-	ls -l ${MNT_ROOT}/var/db/entropy-file
+	#rndctl -S var/db/entropy-file #running on amd64
+	#cp var/db/entropy-file ${MNT_ROOT}/var/db/entropy-file
+	#ls -l ${MNT_ROOT}/var/db/entropy-file
 	umount ${MNT_ROOT}
 	vnconfig -u ${VND}
 
