@@ -21,7 +21,7 @@ IMAGE=liveimage-luna68k-raw-20200518.img
 IMAGE_CURRENT=liveimage-luna68k-raw-`date +%Y-%m-%d`.img
 VND0=vnd0
 MNT=/mnt
-SETS=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202101100110Z/luna68k/binary/sets/
+SETS=`find nycdn.netbsd.org -name sets |tail -1`
 
 #https://gist.github.com/tsutsui/340546bdc064cee786ed2473fb510463
 CONFIG=https://gist.githubusercontent.com/tsutsui/340546bdc064cee786ed2473fb510463/raw/24f6f3312ea89509044792d3b5a915aaac971a06/nono.cfg
@@ -30,8 +30,9 @@ nono.cfg:
 	ftp ${CONFIG}
 
 fetch:
-	ftp ${TEO}/${IMAGE}.gz
-	gunzip ${IMAGE}.gz
+#	ftp ${TEO}/${IMAGE}.gz
+#	gunzip ${IMAGE}.gz
+	./NewestISO |sh
 
 pkgsrc:
 	ftp http://www.pastel-flower.jp/~isaki/NetBSD/patch/pkgsrc-nono-20201013.diff
@@ -44,9 +45,17 @@ IMAGEORG=liveimage-luna68k-raw-20200518.img
 
 update:
 	#cp ${IMAGE} ${IMAGE_CURRENT}
-#	vnconfig ${VND0} ${IMAGE_CURRENT}
-#	fsck /dev/${VND0}a
-#	mount /dev/${VND0}a ${MNT}
-	tar xzpf ${SETS}/base.tgz -C ${MNT} 
-	tar xzpf ${SETS}/kern-GENERIC.tgz -C ${MNT} 
+	vnconfig ${VND0} ${IMAGE_CURRENT}
+	fsck /dev/${VND0}a
+	mount /dev/${VND0}a ${MNT}
+	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102181830Z/luna68k/binary/sets/base.tgz -C /mnt
+	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102181830Z/luna68k/binary/sets/kern-GENERIC.tgz -C /mnt
+	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102181830Z/luna68k/binary/sets/modules.tgz -C /mnt
+	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102181830Z/luna68k/binary/sets/rescue.tgz -C /mnt
 	cp ${SETS}/etc.tgz ${MNT}
+
+last:
+	find nycdn.netbsd.org -name sets |tail -1
+
+echo:
+	for i in ${SETS}/* ; do (echo "tar xzpf $${i} -C ${MNT}") done |fgrep -f Pattern
