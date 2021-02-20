@@ -179,7 +179,7 @@ LUNAシリーズ概要
 ----------------
 SX-9100
 ~~~~~~~~~
- 1987年発表 for ∑プロジェクト [36]_ [51]_ [86]_
+ 1987年発表 for Σプロジェクト [36]_ [51]_ [86]_
  「札幌Σサブセンターに設置されて、地場企業によるΣ CAI ソフトウエアの開発に利用されていた。」 [52]_
 
 LUNA [13]_ 
@@ -218,7 +218,7 @@ UniOS-B
 UniOS-U 
     UnixAT&TSystemV R2.1をベースに4.2BSDの機能等を付加し、移植したもの。Luna、Luna-IIで稼動。
 UniOS-Σ 
-    ΣOS-VOR1準拠したもの。Luna-Σで稼動。(要出典:Luna-∑という呼び方)　[83]_
+    ΣOS-VOR1準拠したもの。Luna-Σで稼動。(要出典:Luna-Σという呼び方)　[83]_
 UniOS-Mach 
     Machをベースに移植したもの。Luna-II、Luna-88Kで稼動。 
 
@@ -278,7 +278,7 @@ LUNA88k　[10]_
 
 omron3
 ~~~~~~~
- omron3.sp.cs.cmu.edu (オムロン製 LUNA-88k) は 1990年から1997年の間 CMU の日本語コンピュータ環境を提供するべくボランティア達によって運用されてきた計算機です。1997年5月をもって komachi.sp.cs.cmu.edu (Intel Pentium 120Mhz FreeBSD) に役目を引き継ぎ引退しました。  [68]_
+ omron3.sp.cs.cmu.edu (オムロン製 LUNA88k) は 1990年から1997年の間 CMU の日本語コンピュータ環境を提供するべくボランティア達によって運用されてきた計算機です。1997年5月をもって komachi.sp.cs.cmu.edu (Intel Pentium 120Mhz FreeBSD) に役目を引き継ぎ引退しました。  [68]_
 
 OEM版
 ~~~~~
@@ -549,7 +549,7 @@ UniOS-Machと西暦2000年問題
 
 質問日時:2009/10/28 17:51:08 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 会社でワークステーション（オムロン製LUNAⅡ）を使用していますが、プリンターが不良となりました。エプソンVP-4000です。中古をさがしていますが、これと互換性のあるプリンターはないでしょうか？ [14]_
+ 会社でワークステーション（オムロン製LUNAII）を使用していますが、プリンターが不良となりました。エプソンVP-4000です。中古をさがしていますが、これと互換性のあるプリンターはないでしょうか？ [14]_
 
 ----
 
@@ -569,7 +569,7 @@ LUNA年表　- 月の刃
  :widths: 7 3 60
 
  1986/10, , いけない！ルナ先生連載開始
- 1987,∑,SX-9100 オムロンから発表 [47]_
+ 1987,Σ,SX-9100 オムロンから発表 [47]_
  1988,オ,グッドデザイン賞受賞 [15]_
  1988/7, , いけない!ルナ先生連載終了
  1989,オ,SX-9100/DT LUNA MC68030 20MHz
@@ -759,7 +759,7 @@ yaft X LUNA
 .. [33] OSC2013徳島 NetBSDブース展示の記録 http://togetter.com/li/468577
 .. [34] OMRONワークステーションLUNA 工作日記  http://togetter.com/li/535307
 .. [35] コミットメッセージ http://mail-index.netbsd.org/source-changes/2011/07/16/msg024675.html
-.. [36] ∑プロジェクト http://ja.wikipedia.org/wiki/Σプロジェクト
+.. [36] Σプロジェクト http://ja.wikipedia.org/wiki/Σプロジェクト
 .. [37] http://ja.wikipedia.org/wiki/Luna_(ワークステーション)
 .. [38] NetBSD/luna68k on OMRON LUNA - Bootstrap http://www.youtube.com/watch?v=c1_e-A9Osr0
 .. [39]  Twitter timeline on NetBSD/luna68k and mlterm-fb (final) http://www.youtube.com/watch?v=djbEw0G_LMI 2013/5/24
@@ -808,7 +808,7 @@ yaft X LUNA
 .. [81] mikutterの薄い本製作委員会 http://home1.tigers-net.com/brsywe/mikutter.html
 .. [82] https://twitter.com/ao_kenji/status/360775880198459394/photo/1
 .. [83] Wikipediaの「LUNA-Σ」という呼称は果てしなく要出典という感想。 https://twitter.com/tsutsuii/status/360430992638492672
-.. [84] "RTC" の stamp のオフセットをそれぞれ☓4してやればいいような気がします https://twitter.com/tsutsuii/status/360418015600312320
+.. [84] "RTC" の stamp のオフセットをそれぞれ x4してやればいいような気がします https://twitter.com/tsutsuii/status/360418015600312320
 .. [85] まずはDIP SW操作してみて変わるかどうか https://twitter.com/tsutsuii/status/360416804876722177
 .. [86] マンガソフトウェア革命―Σプロジェクトの全貌 http://www.amazon.co.jp/dp/4339022543
 .. [87] 仁和寺 http://randen.keifuku.co.jp/map/17.html
