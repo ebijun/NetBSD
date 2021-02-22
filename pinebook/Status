@@ -10,6 +10,12 @@ Topics:
  Encode: Exact Audio Copy -> EasyWavPack -> wavpack format on Win10
  Play: audacious-plugin with wavpack option
  PKG_OPTIONS.audacious-plugins+=wavpack
+- audio0 imput issue
+  http://mail-index.netbsd.org/port-arm/2021/02/22/msg007185.html
+  "Is audio input from the inbuilt microphone(s) working?  I get "read failed:
+  Resource temporarily unavailable" from audiorecord"
+  audio0(ausoc1): trigger_input failed: errno=5
+  audio0(audoc1): device timeout
 
 pkgsrc:
 - works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp,libreoffice
