@@ -55,11 +55,11 @@ acpi0 at mainbus0: Intel ACPICA 20201113
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8582F5C2C348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFE2847E62C348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF857FF4642488 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFE2817D042488 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF857FF45F8408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFE2817CFF8408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -220,14 +220,14 @@ uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00,
 uhub0: 4 ports with 4 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub1: 11 ports with 11 removable, self powered
-acpiacad0: AC adapter offline.
+acpiacad0: AC adapter online.
 IPsec: Initialized Security Association Processing.
 aes: Intel AES-NI
 chacha: x86 SSE2 ChaCha
 adiantum: self-test passed
 aes_ccm: self-test passed
-uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 blake2s: self-test passed
+uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
 tpm0: read 8 bytes, expected 10ahcisata0 port 0: device present, speed: 6.0Gb/s
 uhub3 at uhub1 port 6: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.10/88.31, addr 1
@@ -266,7 +266,6 @@ kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at msi7 vec 0 (i915drmkms0)
 iwm0: hw rev 0x210, fw ver 22.361476.0, address a4:02:b9:2f:d2:80
 intelfb0 at i915drmkms0
-warning: /home/source/ab/HEAD/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:647: Unclaimed register detected before writing to register 0x41000
 intelfb0: framebuffer at 0xe00af000, size 1366x768, depth 32, stride 5504
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
@@ -274,25 +273,3 @@ wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
-umass0 at uhub0 port 1 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 3
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
-sd0(umass0:0:0:0): generic HBA error
-sd0: autoconfiguration error: cache synchronization failed
-sd0: detached
-scsibus0: detached
-umass0: detached
-umass0: at uhub0 port 1 (addr 3) disconnected
-umass0 at uhub0 port 1 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 4
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
-sd0: detached
-scsibus0: detached
-umass0: detached
-umass0: at uhub0 port 1 (addr 4) disconnected
