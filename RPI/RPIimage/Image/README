@@ -1,21 +1,21 @@
-VERSION: :1,$s/2021-01-20/2021-01-20/g
-ISO:     :1,$s/202101182220Z/202101182220Z/g
-NetBSD:  :1,$s/9.99.78/9.99.78/g
-PKGSRC:  :1,$s/2021-01-20/2021-01-20/
+VERSION: :1,$s/2021-02-27/2021-02-27/g
+ISO:     :1,$s/202102261250Z/202102261250Z/g
+NetBSD:  :1,$s/9.99.80/9.99.80/g
+PKGSRC:  :1,$s/2021-02-27/2021-02-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-01-20-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-02-27-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-01-20-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-02-27-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-01-20-earmv6hf/2021-01-20-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-01-20-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-02-27-earmv6hf/2021-02-27-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-02-27-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.78 evbarm-earmv6hf 202101182220Z rpi.img from nyftp.
+- NetBSD 9.99.80 evbarm-earmv6hf 202102261250Z rpi.img from nyftp.
 - Python 3.8
 - Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
 XXX: should test big-endian image and pkgsrc
@@ -27,27 +27,21 @@ PR
 - RPI4: testing on NetBSD/aarch64
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 
-Changes from 2020-12-10 version
-https://github.com/ebijun/NetBSD/commit/9f2a0d7e1c0cec1657f8542d5e95b800c7ff166c
+Changes from 2021-01-20 version
+https://github.com/ebijun/NetBSD/commit/9dea28846796d137ebe702d81d4e96a742daae77
 
 sysinfo:
- dhcpcd-9.4.0 NetBSD-9.99.78 openssl-1.1.1i pkg_install-20201218
- sh-20181212-20210118200234Z tzdata-2020f userland-NetBSD-9.99.78/evbarm
+ bind-9.16.12 bozohttpd-20210210 NetBSD-9.99.80 openssl-1.1.1j
+ sh-20181212-20210226111245Z tzdata-2021a
+ userland-NetBSD-9.99.80/evbarm yacc-2.0
 
 pkgsrc:
- bash-5.1.4 curl-7.74.0 git-base-2.30.0 glib2-2.66.4
- gobject-introspection-1.66.1nb1 gtk2+-2.24.33 gtk3+-3.24.24
- harfbuzz-2.7.4 icu-68.2 libcups-2.3.3op1 libgpg-error-1.41
- libxkbcommon-1.0.3 lintpkgsrc-4.96 medit-1.2.0nb16
- mozilla-rootcerts-1.0.20201204 nghttp2-1.42.0nb1
- p11-kit-0.23.22nb1 pango-1.48.0 pcre2-10.36
- py38-cElementTree-3.8.7 py38-expat-3.8.7 python38-3.8.7
- qt5-qtbase-5.15.2nb1 qt5-qtx11extras-5.15.2nb1
- qt5-qtxmlpatterns-5.15.2nb1 ruby26-mikutter-4.1.4
- ruby26-moneta-1.4.1 ruby26-nokogiri-1.11.1
- ruby26-pkg-config-1.4.4 ruby26-racc-1.5.2nb1
- ruby26-unf_ext-0.0.7.7 tiff-4.2.0 uim-1.8.8nb7
- wget-1.21 zsh-5.8nb2 zstd-1.4.8
+ curl-7.75.0 fossil-2.14 gd-2.3.1 git-base-2.30.1 glib2-2.66.7
+ gtk3+-3.24.25 libgcrypt-1.9.2 libimagequant-2.13.1 libwebp-1.2.0
+ nettle-3.7.1 nghttp2-1.43.0 perl-5.32.1 py38-cElementTree-3.8.8
+ py38-expat-3.8.8 python38-3.8.8 ruby26-gettext-3.3.7
+ ruby26-oauth-0.5.5 ruby26-pkg-config-1.4.5 sudo-1.9.5p2nb1
+ wget-1.21.1
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -105,7 +99,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-01-20-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-02-27-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -329,27 +323,21 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference Online/Fall 2020, BSD BOF.
+For Open Source Conference Online/Spring 2021, NetBSD BOF.
 I've updated raspberry-pi image.
 
- https://event.ospn.jp/osc2020-online-fall/session/186868
- https://event.ospn.jp/osc2020-online-fall/
- #osc20on
+2021 Mar.6 Sat 10:00-10:45 JST (UTC+9) ROOM C
+https://register.ospn.jp/osc2021-online-spring/modules/eventrsv/2.html
+Join meeting with ZOOM/YoutubeLive https://ospn.connpass.com/event/196661/
+YoutubeLive https://www.youtube.com/c/OSPNjp
+16:00-16:45 Room E Cross BUGLUG Community Camp
 
-BSD BoF:
-Oct.19 2020:  ZOOM&YoutubeLive
-10:00(UTC+9)-10:45
-
-https://event.ospn.jp/
-https://ospn.connpass.com/event/183865/
-https://www.youtube.com/ospn-jp
-
-http://www.re.soum.co.jp/~jun/OSC2020tokyofall.pdf
+http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2020.rst
 
-- NetBSD 9.99.78 earmv6hf rpi.img.gz base
+- NetBSD 9.99.80 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
