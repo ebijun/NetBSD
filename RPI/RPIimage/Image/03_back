@@ -1,4 +1,4 @@
-dd if=/dev/rsd0d of=back.img bs=2048 count=1290240 progress=15500
+dd if=/dev/rsd0d of=back.img bs=4096 count=645120 progress=8000
 sync
 
 DIR=tmp`date +%Y%m%d-%H%M`
