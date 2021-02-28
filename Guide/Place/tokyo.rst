@@ -112,7 +112,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2021 Online/Tokyo春 NetBSDのご紹介 の記録,
+ オープンソースカンファレンス2021 Online/SpringNetBSDのご紹介 の記録,https://togetter.com/li/1675363
  OSC2020東京秋 BSDなひととき の記録,https://togetter.com/li/1611536
  OSC2019東京秋 NetBSDブース展示の記録,https://togetter.com/li/1433822
  OSC2019東京春 NetBSDブース展示の記録, https://togetter.com/li/1321833
