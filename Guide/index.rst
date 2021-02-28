@@ -23,9 +23,10 @@
  :maxdepth: 3
  :numbered:
 
- Place/osaka
+ Place/tokyo
  OSC/OSC2020
  RPI/RPIupdate2020
- Luna
  RPI
+ Luna
+ latexpdf
  Place/intro

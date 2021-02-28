@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2021 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -67,9 +67,11 @@ Maps:
  2018 Spring,2/23-24,1200,62,明星大学
  2018 Fall,10/27-28,1050,62,明星大学
  2019 Spring,2/22-23,1010,68,明星大学
- 2019 Fall,11/23-24,,63,明星大学
+ 2019 Fall,11/23-24,830,63,明星大学
  2020 Spling,4/24-25,500,19,オンライン
- 2020 Fall,10/23-24,,,オンライン
+ 2020 Fall,10/23-24,500,15,オンライン
+ 2021 Spring,3/6-7,,26,オンライン
+
 
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -82,6 +84,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 164,OSC2021東京春, http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
  159,OSC2020東京秋, http://www.re.soum.co.jp/~jun/OSC2020tokyofall.pdf
  152,OSC2019東京秋, http://www.re.soum.co.jp/~jun/OSC2019tokyofall.pdf
  139,OSC2019東京春, http://www.re.soum.co.jp/~jun/OSC2019tokyospring.pdf
@@ -109,6 +112,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2021 Online/Tokyo春 NetBSDのご紹介 の記録,
  OSC2020東京秋 BSDなひととき の記録,https://togetter.com/li/1611536
  OSC2019東京秋 NetBSDブース展示の記録,https://togetter.com/li/1433822
  OSC2019東京春 NetBSDブース展示の記録, https://togetter.com/li/1321833
