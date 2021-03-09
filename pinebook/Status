@@ -7,7 +7,10 @@ Subject: pinebook status update (${DATE})
 Topics:
 - touchpad: sometimes cursor far away.
 - audio CD with wavpack
- Encode: Exact Audio Copy -> EasyWavPack -> wavpack format on Win10
+ Encode: 
+   pkg_add abcde
+   pkg_add glyr
+   abcde -d /dev/rcd0a -B -o wv -1 -a default,cue
  Play: audacious-plugin with wavpack option
  PKG_OPTIONS.audacious-plugins+=wavpack
 - audio0 imput issue
