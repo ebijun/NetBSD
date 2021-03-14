@@ -5,24 +5,31 @@ To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
 Topics:
+- NetBSD Security Advisory 2021-001: 
+ Predictable ID disclosures in IPv4 and IPv6
+ http://mail-index.netbsd.org/current-users/2021/03/11/msg040448.html
 - touchpad: sometimes cursor far away.
 - audio CD with wavpack
  Encode: 
    pkg_add abcde
    pkg_add glyr
    abcde -d /dev/rcd0a -B -o wv -1 -a default,cue
+   XXX: can't see each tracks with player.
  Play: audacious-plugin with wavpack option
  PKG_OPTIONS.audacious-plugins+=wavpack
-- audio0 imput issue
+- audio0 input issue
   http://mail-index.netbsd.org/port-arm/2021/02/22/msg007185.html
   "Is audio input from the inbuilt microphone(s) working?  I get "read failed:
   Resource temporarily unavailable" from audiorecord"
   audio0(ausoc1): trigger_input failed: errno=5
   audio0(audoc1): device timeout
+- firefox compile option,adviced from @ryo_on.
+  PKG_OPTIONS.firefox+=pulseaudio  #enable audio input with WebRTC
+- libreoffice-7.1.1.2nb1 can detect NetBSD.
 
 pkgsrc:
 - works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp,libreoffice
-- firefox85.0.2 works fine.
+- firefox86.0.1 works fine.
  zoom meeting with firefox on NetBSD/aarch64 on pinebook pro 
   with UserAgent switcher addon as Linux.
  Send: Share Screen,camera/USB Camera
@@ -50,65 +57,47 @@ ToDo:
 System Updates:
 
 sysinfo:
- bozohttpd-20210210 NetBSD-9.99.80 sh-20181212-20210217123733Z
- tzdata-2021a userland-NetBSD-9.99.80/evbarm
+ bind-9.16.12 bozohttpd-20210227 libssh-39.0
+ NetBSD-9.99.81 openssh-8.5 opensshd-8.5
+ openssl-1.1.1j sh-20181212-20210313090612Z
+ userland-NetBSD-9.99.81/evbarm
+ wpa_supplicant-2.9 yacc-2.0
 
 pkgsrc:
- ImageMagick-7.0.10.61 SDL-1.2.15nb34 SDL2-2.0.14nb1
- ap24-php73-7.3.27nb5 asciidoc-9.0.5
- audacious-plugins-4.0.5nb6 autoconf-2.71
- bison-3.7.5 box2d-2.4.1 cmake-3.19.5 curl-7.75.0
- deforaos-pdfviewer-0.1.0nb6 dtc-1.4.7 dvipdfmx-20200315nb1
- dvipsk-2020.1nb2 ffmpeg2-2.8.17nb6 ffmpeg3-3.4.8nb7
- ffmpeg4-4.3.1nb8 firefox-85.0.2 firefox-l10n-85.0.2
- firefox52-52.9.0nb34 fluidsynth-2.1.7nb1 fossil-2.14
- gcc8-8.4.0nb4 gd-2.3.1 gexiv2-0.12.1 git-base-2.30.1
- glew-2.2.0 gnome-mime-data-2.18.0nb9 go-1.15.7
- go-bin-1.14.2nb1 go114-1.14.14 go115-1.15.7
- gpgme-1.15.1 gsftopkk-1.19.2nb11 help2man-1.48.1
- imlib2-1.7.1 jasper-2.0.25 latexmk-463bnb2
- libappindicator-12.10.0nb8 libde265-1.0.8nb1
- libgcrypt-1.9.1 libheif-1.11.0 libimagequant-2.13.1
- libixion-0.16.1 libmikmod-3.3.11.1nb6 libmysofa-1.2
- libraw-0.19.5 libsamplerate-0.2.1 libsndfile-1.0.31
- libuv-1.41.0 libv4l-1.20.0 libwebp-1.2.0
- lmdb-0.9.27nb2 lua53-alt-getopt-0.8.0 luatex-1.12.0nb3
- makeindexk-2.15nb12 mate-applets-1.24.0nb6
- mate-control-center-1.24.0nb5 mate-settings-daemon-1.24.0nb9
- minitube-3.5nb2 mozilla-rootcerts-openssl-2.6
- mozjs60-60.8.0nb8 mpv-0.33.0nb2 neon-0.31.2
- nghttp2-1.43.0 nodejs-14.15.5 nss-3.61
- openal-soft-1.20.1nb5 orcus-0.16.1 osabi-NetBSD-9.99.80
- perl-5.32.1 phonon-4.10.3nb7 php-7.3.27
- php73-curl-7.3.27nb9 php73-fpm-7.3.27nb5
- php73-gd-7.3.27nb1 php73-iconv-7.3.27
- php73-intl-7.3.27nb5 php73-json-7.3.27
- php73-mbstring-7.3.27 php73-pdo-7.3.27
- php73-pdo_sqlite-7.3.27nb5 php73-posix-7.3.27
- php73-zip-7.3.27nb4 php73-zlib-7.3.27nb1
- pinentry-1.1.1 pkgin-20.12.1 portaudio-190600.20161030nb7
- postgresql95-client-9.5.25 pulseaudio-14.2nb1
- py27-cairo-1.18.2nb1 py27-gobject-2.28.7nb2
- py27-gobject3-3.36.1nb1 py27-gtk2-2.24.0nb36
- py38-cryptography-3.3.2 py38-iso8601-0.1.14
- py38-jinja2-2.11.3 py38-more-itertools-8.7.0
- py38-packaging-20.9 py38-pytz-2021.1
- py38-setuptools-51.3.3 py38-setuptools_scm-5.0.1
- py38-snowballstemmer-2.1.0 py38-urllib3-1.26.3
- qt5-qtmultimedia-5.15.2nb3 qt5-qttools-5.15.2nb3
- ruby26-gettext-3.3.7 ruby26-oauth-0.5.5
- ruby26-pkg-config-1.4.5 rust-1.49.0
- samba-4.13.4 scribus-1.5.6pre20200611nb9
- seamonkey-2.53.6 seamonkey-l10n-2.53.6
- spidermonkey52-52.7.4nb15 sqlite3-3.34.1
- sudo-1.9.5p2nb1 talloc-2.3.2
- tcl-8.6.11 texlive-collection-langcjk-2020
- tk-8.6.11 vala-0.50.3 wavpack-5.4.0
- xdvik-22.87.04 xfce4-appfinder-4.14.0nb4
- xfce4-mousepad-0.5.1 xfce4-tumbler-0.3.0nb3
- xfce4-wm-4.14.6 xfce4-xarchiver-0.5.4.16
- xorg-util-macros-1.19.3 xterm-366
- youtube-dl-20210210
+ ImageMagick-7.0.11.0 SDL2-2.0.14nb2 asciidoc-9.1.0
+ audacious-4.1 audacious-plugins-4.1 cmake-3.19.6
+ cmark-0.29.0nb1 coreutils-8.32 dhcpcd-9.4.0
+ ffmpeg4-4.3.2 firefox-86.0.1 firefox-l10n-86.0.1
+ fmtlib-7.1.3 gd-2.3.2 gdbus-codegen-2.66.7
+ git-base-2.30.2nb1 glew-2.2.0nb1 glib2-2.66.7
+ glib2-tools-2.66.7 gnome-doc-utils-0.20.10nb8
+ graphviz-2.44.1nb7 gtar-base-1.34 gtk3+-3.24.25
+ help2man-1.48.2 jasper-2.0.26 libebml-1.4.2
+ libgcrypt-1.9.2 libimagequant-2.14.1 libmatroska-1.6.3
+ libnumbertext-1.0.7 libreoffice-7.1.1.2nb1
+ makejvf-1.1a mendexk-3.2 meson-0.57.1
+ mkvtoolnix-55.0.0 mysql-client-5.7.33
+ nettle-3.7.1 nodejs-14.16.0 nss-3.62
+ pciutils-3.7.0nb1 php73-owncloud-10.6.0
+ php73-sqlite3-7.3.27nb5 protobuf-3.15.5
+ pugixml-1.11.4 py38-cElementTree-3.8.8
+ py38-cffi-1.14.5 py38-cryptodome-3.10.1 py38-cython-0.29.22
+ py38-expat-3.8.8
+ py38-gyp-0.1pre20200512.caa60026e223fc501e8b337fd5086ece4028b1c6
+ py38-setuptools_scm-5.0.2 py38-sqlite3-3.8.8nb18
+ py38-zipp-3.4.1 python37-3.7.10 python38-3.8.8
+ rclone-1.54.1 ruby26-cairo-1.17.5
+ ruby26-native-package-installer-1.1.1
+ ruby26-red-colors-0.1.1 ruby26-simpleidn-0.2.1
+ taglib-1.12 tex-amsmath-2.17inb1 tex-baekmuk-2.2.1
+ tex-booktabs-1.61803398nb1 tex-colortbl-1.0enb1
+ tex-csquotes-5.2k tex-haranoaji-20210130 tex-japanese-otf-1.7b8.56938
+ tex-jsclasses-20201009 tex-l3kernel-2020.57669nb1
+ tex-l3packages-2020.57600nb3 tex-latex-base-dev-20210501pre1
+ tex-latex-bin-2020 tex-oberdiek-2020.56291nb1
+ tex-platex-2020.57730 tex-ptex-3.2pl55920
+ tex-ptex-base-2020.56487 tex-ptex-fontmaps-20201227.0
+ xfce4-mousepad-0.5.3 youtube-dl-20210303nb2
 
 pkgsrc todo:
 - mate
