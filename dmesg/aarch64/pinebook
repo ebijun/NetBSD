@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.80 (GENERIC64) #0: Wed Feb 17 12:37:33 UTC 2021
+NetBSD 9.99.81 (GENERIC64) #0: Sat Mar 13 09:06:12 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 2022 MB
 avail memory = 1951 MB
@@ -205,32 +205,32 @@ armpmu0: interrupting on GIC irq 150
 armpmu0: interrupting on GIC irq 151
 uhub0 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-uhub1 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub1 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub1: 1 port with 1 removable, self powered
-uhub2 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 1 port with 1 removable, self powered
-uhub3 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub3 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub3: 1 port with 1 removable, self powered
 sun8icrypto0: AES-128 self-test passed
-sdmmc1: 4-bit width, 50.000 MHz
 Lid Switch: lid opened.
-(manufacturer 0x24c, product 0xb703, standard function interface code 0x7) at sdmmc1 function 1 not configured
 IPsec: Initialized Security Association Processing.
 aes: ARMv8.0-AES
 chacha: ARM NEON ChaCha
 adiantum: self-test passed
 aes_ccm: self-test passed
 blake2s: self-test passed
+sdmmc1: 4-bit width, 50.000 MHz
 sdmmc2: autoconfiguration error: switch error
+(manufacturer 0x24c, product 0xb703, standard function interface code 0x7) at sdmmc1 function 1 not configured
 ld2 at sdmmc2: <0x45:0x0100:DA4064:0x00:0xdb1fd106:0x000>
 ld2: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
 ld2: 8-bit width, 4096 KB cache, 52.000 MHz
-uhub4 at uhub3 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/88.32, addr 2
+uhub4 at uhub1 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/88.32, addr 2
 uhub4: single transaction translator
 uhub4: 4 ports with 1 removable, self powered
 uhidev0 at uhub4 port 1 configuration 1 interface 0
 uhidev0: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x000c), rev 1.10/1.00, addr 3, iclass 3/1
-ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
 uhidev1 at uhub4 port 1 configuration 1 interface 1
 uhidev1: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x000c), rev 1.10/1.00, addr 3, iclass 3/0
@@ -260,6 +260,12 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld2
 root on ld2a dumps on ld2b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.80/modules
+kern.module.path=/stand/evbarm/9.99.81/modules
 wsdisplay0: screen 4 added (default, vt100 emulation)
 axppmic0: normal capacity on 'charge state'
+umass0 at uhub0 port 1 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors

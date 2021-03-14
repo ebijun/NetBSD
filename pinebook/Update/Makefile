@@ -1,7 +1,5 @@
 RELEASE=/usr/release/images/
-IMG=${RELEASE}/NetBSD-9.99.80-evbarm-aarch64-202102171420Z-install.img
-#nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102061040Z/images/NetBSD-9.99.80-aarch64-install.img.gz
-5292800 Feb 18 03:38 
+IMG=${RELEASE}/NetBSD-9.99.81-evbarm-aarch64-202103130920Z-install.img
 
 DK=dk1
 
