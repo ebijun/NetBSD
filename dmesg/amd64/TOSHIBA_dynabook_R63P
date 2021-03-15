@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.80 (GENERIC) #0: Fri Feb  5 19:19:17 UTC 2021
+NetBSD 9.99.81 (GENERIC) #0: Sun Mar 14 16:03:04 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16295 MB
 avail memory = 15764 MB
@@ -55,11 +55,11 @@ acpi0 at mainbus0: Intel ACPICA 20201113
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE2847E62C348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFDBD012630348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE2817D042488 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFDBCD11059808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE2817CFF8408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFDBCD10FF8408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -230,13 +230,13 @@ blake2s: self-test passed
 uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
 tpm0: read 8 bytes, expected 10ahcisata0 port 0: device present, speed: 6.0Gb/s
-uhub3 at uhub1 port 6: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.10/88.31, addr 1
-uhub3: single transaction translator
-uhub3: 4 ports with 0 removable, self powered
 wd0 at atabus0 drive 0
 wd0: <mSATA-512GB SSD>
 wd0: drive supports 1-sector PIO transfers, LBA48 addressing
 wd0: 476 GB, 992277 cyl, 16 head, 63 sec, 512 bytes/sect x 1000215216 sectors
+uhub3 at uhub1 port 6: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.10/88.31, addr 1
+uhub3: single transaction translator
+uhub3: 4 ports with 0 removable, self powered
 wd0: GPT GUID: 2bea82df-34b2-467e-bc78-6f75b19e3fd6
 dk0 at wd0: "b0200188-c060-47e4-abb2-6cc4c108c734", 992006765 blocks at 2048, type: ffs
 dk1 at wd0: "d6fdb5a8-8353-4831-94e6-b6ef80af8c56", 8204943 blocks at 992010240, type: swap
@@ -259,7 +259,7 @@ WARNING: 2 errors while detecting hardware; check system log.
 boot device: wd0
 root on dk0 dumps on dk1
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.80/modules
+kern.module.path=/stand/amd64/9.99.81/modules
 kern info: [drm] Memory usable by graphics device = 4096M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
