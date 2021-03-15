@@ -1,40 +1,34 @@
-pool redzone disabled for 'kmem-04096'
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020 The NetBSD Foundation, Inc.  All rights reserved.
+    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.47 (GENERIC64) #0: Sun Feb 16 23:14:19 UTC 2020
+NetBSD 9.99.81 (GENERIC64) #0: Sat Mar 13 09:06:12 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
-total memory = 2025 MB
-avail memory = 1960 MB
-pool redzone disabled for 'buf4k'
-pool redzone disabled for 'buf64k'
+total memory = 2022 MB
+avail memory = 1951 MB
 timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
 armfdt0 (root)
 simplebus0 at armfdt0: Pinebook
 simplebus1 at simplebus0
 cpus0 at simplebus0
 simplebus2 at simplebus0
 psci0 at simplebus0: PSCI 0.2
-cpu0 at cpus0: Cortex-A53 r0p4 (Cortex V8-A core)
-cpu0: package 0, core 0, smt 0
+cpu0 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x0
 cpu0: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu0: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu0: Dcache line 64, Icache line 64
-cpu0: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
-cpu0: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
-cpu0: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu0: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu0: L1 32KB/64B*256L*2W VIPT Instruction cache
+cpu0: L1 32KB/64B*128L*4W PIPT Data cache
+cpu0: L2 512KB/64B*512L*16W PIPT Unified cache
 cpu0: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
 cpu0: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt0 at cpu0
-cpu1 at cpus0: Cortex-A53 r0p4 (Cortex V8-A core)
-cpu1: package 0, core 1, smt 0
-cpu2 at cpus0: Cortex-A53 r0p4 (Cortex V8-A core)
-cpu2: package 0, core 2, smt 0
-cpu3 at cpus0: Cortex-A53 r0p4 (Cortex V8-A core)
-cpu3: package 0, core 3, smt 0
+cpu1 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x1
+cpu2 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x2
+cpu3 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x3
 gic0 at simplebus1: GIC
 armgic0 at gic0: Generic Interrupt Controller, 224 sources (215 valid)
 armgic0: 16 Priorities, 192 SPIs, 7 PPIs, 16 SGIs
@@ -79,14 +73,15 @@ axpreg14 at axppmic0: vdd-sys
 axpreg15 at axppmic0: vcc-csi
 axpreg16 at axppmic0: vcc-pl
 axpreg17 at axppmic0: vcc-pll-avcc
+sunxirtc0 at simplebus1: RTC
 sun6idma0 at simplebus1: DMA controller (8 channels)
 sun6idma0: interrupting on GIC irq 82
 fregulator0 at simplebus0: bl-3v3
 sunxisid0 at simplebus1: Security ID EFUSE
-com0 at simplebus1: ns16550a, working fifo
+com0 at simplebus1: DesignWare APB UART, no fifo
 com0: console
 com0: interrupting on GIC irq 32
-com1 at simplebus1: ns16550a, working fifo
+com1 at simplebus1: DesignWare APB UART, no fifo
 com1: interrupting on GIC irq 33
 fregulator1 at simplebus0: vcc3v3
 sunxide2ccu0 at sunxide2bus0: DE2 CCU
@@ -112,7 +107,6 @@ iic1 at sunxitwi0: I2C bus
 anxedp0 at iic1 addr 0x38: eDP TX
 dwhdmi0 at simplebus1: HDMI TX
 dwhdmi0: version 1.32a, phytype 0xfe
-sunxirtc0 at simplebus1: RTC
 dispcon0 at simplebus0: HDMI connector
 sunxii2s1 at simplebus0: I2S/PCM controller
 sunximmc0 at simplebus1: SD/MMC controller
@@ -156,7 +150,7 @@ gpiokeys0 at simplebus0: Lid Switch
 /soc/video-codec@1c0e000 at simplebus1 not configured
 sunxidrm0: reserved 39 MB DRAM for CMA (7 MB reclaimed from bootloader)
 sunxifb0 at sunxidrm0
-sunxifb0: framebuffer at 0xffffffc043200000, size 1920x1080, depth 32, stride 7680
+sunxifb0: framebuffer at 0xbe000000, size 1920x1080, depth 32, stride 7680
 wsdisplay0 at sunxifb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
@@ -165,46 +159,42 @@ kern info: [drm] No driver support for vblank timestamp query.
 sunxidrm0: initialized sunxi 1.0.0 20190123 on minor 0
 ausoc0: codec: sun8icodec0, cpu: sunxii2s0, aux: a64acodec0 simpleamp0
 audio0 at ausoc0: playback, capture, full duplex
-audio0: slinear_le:16 2ch 48000Hz, blk 4ms for playback
-audio0: slinear_le:16 2ch 48000Hz, blk 4ms for recording
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 ausoc1: codec: dwhdmi0, cpu: sunxii2s1
 audio1 at ausoc1: playback
-audio1: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 4ms for playback
+audio1: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
 spkr1 at audio1: PC Speaker (synthesized)
 wsbell at spkr1 not configured
+entropy: WARNING: extracting entropy too early
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu3: Dcache line 64, Icache line 64
-cpu3: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
-cpu3: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
-cpu3: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu3: L1 32KB/64B*256L*2W VIPT Instruction cache
+cpu3: L1 32KB/64B*128L*4W PIPT Data cache
+cpu3: L2 512KB/64B*512L*16W PIPT Unified cache
 cpu3: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
 cpu3: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu1: Dcache line 64, Icache line 64
-cpu1: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
-cpu1: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
-cpu1: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
-cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
-cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu2: Dcache line 64, Icache line 64
-cpu2: L1 32KB/64B 2-way read-allocate VIPT Instruction cache
-cpu2: L1 32KB/64B 4-way write-back read-allocate write-allocate PIPT Data cache
-cpu2: L2 512KB/64B 16-way write-back read-allocate write-allocate PIPT Unified cache
+cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu2: L1 32KB/64B*256L*2W VIPT Instruction cache
+cpu2: L1 32KB/64B*128L*4W PIPT Data cache
+cpu2: L2 512KB/64B*512L*16W PIPT Unified cache
 cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
 cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpufreqdt0: 1152.000 MHz, 1300000 uV
-cpufreqdt0: 1104.000 MHz, 1260000 uV
-cpufreqdt0: 1008.000 MHz, 1200000 uV
-cpufreqdt0: 816.000 MHz, 1080000 uV
-cpufreqdt0: 648.000 MHz, 1040000 uV
-cpufreqdt0: 408.000 MHz, 1000000 uV
+cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu1: L1 32KB/64B*256L*2W VIPT Instruction cache
+cpu1: L1 32KB/64B*128L*4W PIPT Data cache
+cpu1: L2 512KB/64B*512L*16W PIPT Unified cache
+cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpufreqdt0: rate: 1152.000 MHz, 1300000 uV
 sdmmc0 at sunximmc0
 sdmmc1 at sunximmc1
 sdmmc2 at sunximmc2
@@ -213,38 +203,37 @@ armpmu0: interrupting on GIC irq 148
 armpmu0: interrupting on GIC irq 149
 armpmu0: interrupting on GIC irq 150
 armpmu0: interrupting on GIC irq 151
-uhub0 at usb0: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub0 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-uhub1 at usb2: NetBSD (0000) EHCI root hub (0000), class 9/0, rev 2.00/1.00, addr 1
+uhub1 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub1: 1 port with 1 removable, self powered
-uhub2 at usb3: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 1 port with 1 removable, self powered
-uhub3 at usb1: NetBSD (0000) OHCI root hub (0000), class 9/0, rev 1.00/1.00, addr 1
+uhub3 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub3: 1 port with 1 removable, self powered
 sun8icrypto0: AES-128 self-test passed
-Lid Switch: lid closed.
+Lid Switch: lid opened.
+IPsec: Initialized Security Association Processing.
+aes: ARMv8.0-AES
+chacha: ARM NEON ChaCha
+adiantum: self-test passed
+aes_ccm: self-test passed
+blake2s: self-test passed
 sdmmc1: 4-bit width, 50.000 MHz
 sdmmc2: autoconfiguration error: switch error
-IPsec: Initialized Security Association Processing.
 (manufacturer 0x24c, product 0xb703, standard function interface code 0x7) at sdmmc1 function 1 not configured
 ld2 at sdmmc2: <0x45:0x0100:DA4064:0x00:0xdb1fd106:0x000>
 ld2: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
 ld2: 8-bit width, 4096 KB cache, 52.000 MHz
-umass0 at uhub0 port 1 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 2
-umass0: using SCSI over Bulk-Only
-uhub4 at uhub1 port 1: vendor 05e3 (0x5e3) USB2.0 Hub (0x608), class 9/0, rev 2.00/88.32, addr 2
+uhub4 at uhub1 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/88.32, addr 2
 uhub4: single transaction translator
-scsibus0 at umass0: 2 targets, 1 lun per target
 uhub4: 4 ports with 1 removable, self powered
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 uhidev0 at uhub4 port 1 configuration 1 interface 0
-uhidev0: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x0c), rev 1.10/1.00, addr 3, iclass 3/1
-ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+uhidev0: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x000c), rev 1.10/1.00, addr 3, iclass 3/1
+ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
 uhidev1 at uhub4 port 1 configuration 1 interface 1
-uhidev1: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x0c), rev 1.10/1.00, addr 3, iclass 3/0
+uhidev1: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x000c), rev 1.10/1.00, addr 3, iclass 3/0
 uhidev1: 9 report ids
 ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
 wsmouse0 at ums0 mux 0
@@ -254,18 +243,29 @@ uhid2 at uhidev1 reportid 5: input=0, output=0, feature=5
 uhid3 at uhidev1 reportid 6: input=0, output=0, feature=1039
 uhid4 at uhidev1 reportid 9: input=1, output=0, feature=0
 urtwn0 at uhub4 port 2
-urtwn0: I-O DATA DEVICE, INC. (0x4bb) WN-G150UM (0x94c), rev 2.00/2.00, addr 4
+urtwn0: I-O DATA DEVICE, INC. (0x04bb) WN-G150UM (0x094c), rev 2.00/2.00, addr 4
 urtwn0: MAC/BB RTL8188CUS, RF 6052 1T1R, address 34:76:c5:b3:9c:b6
 urtwn0: 1 rx pipe, 2 tx pipes
 uvideo0 at uhub4 port 3 configuration 1 interface 0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 5
-video0 at uvideo0pool redzone disabled for 'video'
-: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 5
+video0 at uvideo0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 5
+cgd: self-test aes-xts-256
+cgd: self-test aes-xts-512
+cgd: self-test aes-cbc-128
+cgd: self-test aes-cbc-256
+cgd: self-test 3des-cbc-192
+cgd: self-test blowfish-cbc-448
+cgd: self-test aes-cbc-128 (encblkno8)
+cgd: self-tests passed
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld2
 root on ld2a dumps on ld2b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.47/modules
+kern.module.path=/stand/evbarm/9.99.81/modules
 wsdisplay0: screen 4 added (default, vt100 emulation)
 axppmic0: normal capacity on 'charge state'
-Lid Switch: lid opened.
-Lid Switch: lid closed.
+umass0 at uhub0 port 1 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors

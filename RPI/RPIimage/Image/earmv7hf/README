@@ -1,76 +1,70 @@
-VERSION: :1,$s/2019-11-09/2019-11-09/g
-ISO:     :1,$s/201911010850Z/201911010850Z/g
-NetBSD:  :1,$s/9.99.17/9.99.17/g
-PKGSRC:  :1,$s/2019-11-09/2019-11-09/
+VERSION: :1,$s/2020-09-03/2020-09-03/g
+ISO:     :1,$s/202009012130Z/202009012130Z/g
+NetBSD:  :1,$s/9.99.72/9.99.72/g
+PKGSRC:  :1,$s/2020-09-03/2020-09-03/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2019-11-09-netbsd-armv7-earmv7hf.img
+Subject: 2020-09-03-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2019-11-09-netbsd9-armv7-earmv7hf.img.gz for RPI2/3.
+I've updated 2020-09-03-netbsd9-armv7-earmv7hf.img.gz for RPI2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2019-11-09-earmv7hf/2019-11-09-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2019-11-09-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2020-09-03-earmv7hf/2020-09-03-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2020-09-03-earmv7hf/MD5
 
 ToDo:
-- check pkgsrc/sysutils/u-boot-* with installboot
+- testing firefox compiling in earmv7hf
+  nodejs?
+- http://gnats.netbsd.org/55639
 
 Update:
-- NetBSD 9.99.17 evbarm-armv7hf 201911010850Z armv7.img from nyftp.
-- NOW Testing: bwfm0 Broadcom and Cypress wireless network driver
- 1. add kernel configration and updated kernel
-   bwfm*   at sdmmc?
- 2. add firmware
-   /libdata/firmware/if_bwfm/
-     LICENCE.broadcom_bcm43xx
-     brcmfmac43430-sdio.{bin|txt}
-     brcmfmac43455-sdio.{bin|txt}
+- NetBSD 9.99.72 evbarm-armv7hf 202009012130Z armv7.img from nyftp.
 
-- Recent Update from 2019-01-08
- https://github.com/ebijun/NetBSD/commit/f67ec5dff6e6f36b5603d46cfa91883457bcb4d8
+- Recent Update from 2020-04-18
+https://github.com/ebijun/NetBSD/commit/0f5a4fd97474d34d9bbf9355351f97488418d553
  
 sysinfo:
- bind-9.14.7 bozohttpd-20190228 bzip2-1.0.8 dhcpcd-8.1.1
- ftpd-20180428 g++-7.4.0 gcc-7.4.0 libc-12.214 libcurses-8.2
- libssh-35.0 libstdc++-9.0 NetBSD-9.99.17 openssh-8.1
- opensshd-8.1 openssl-1.1.1c libpcap-1.9.1 pkg_install-20191008
- sh-20181212-20191101082618Z tcpdump-4.9.3 tcsh-6.21.00
- tzdata-2019c unbound-1.9.1 userland-NetBSD-9.99.17/evbarm
+ bind-9.16.5 bozohttpd-20200820 dhcpcd-9.1.4 ftpd-20200615
+ libc-12.217 libssh-37.0 NetBSD-9.99.72 netpgpverify-20200503
+ ntp-4.2.8pl14 openssh-8.3 opensshd-8.3 openssl-1.1.1g
+ sh-20181212-20200901211131Z sys_info-20200714 tzdata-2020a
+ userland-NetBSD-9.99.72/evbarm
 
 pkgsrc:
- at-spi2-atk-2.33.2 at-spi2-core-2.33.2nb1 atk-2.33.3 bash-5.0.11nb1
- curl-7.66.0nb1 dbus-1.12.16 desktop-file-utils-0.24 digest-20190127
- dillo-3.0.5nb5 fltk-1.3.5 fossil-2.10nb1 fribidi-1.0.7 gd-2.2.5nb5
- gdk-pixbuf2-2.38.2 git-base-2.23.0nb1 glib2-2.60.6
- gobject-introspection-1.62.0 gtk2+-2.24.32nb11 gtk3+-3.24.11
- harfbuzz-2.6.2 icu-64.2nb1 jpeg-9cnb1 libXft-2.3.3
- libgcrypt-1.8.5 libgpg-error-1.36nb1 libidn-1.34nb1
- libidn2-2.2.0 libimagequant-2.12.5 libotf-0.9.16nb2
- libpsl-0.20.2nb4 libwebp-1.0.3 libxml2-2.9.9
- libxslt-1.1.33nb1 libyaml-0.2.2nb1 lintpkgsrc-4.94nb2
- lrzsz-0.12.20nb1 medit-1.2.0nb11 mlterm-3.8.8nb5
- mozilla-rootcerts-1.0.20190306 ncurses-6.1nb6 nghttp2-1.39.2nb1
- p5-Authen-SASL-2.16nb7 p5-Digest-HMAC-1.03nb9 p5-Email-Valid-1.202nb3
- p5-Error-0.17028 p5-GSSAPI-0.28nb10 p5-IO-CaptureOutput-1.11.04nb5
- p5-IO-Socket-INET6-2.72nb5 p5-IO-Socket-SSL-2.060nb1 p5-MailTools-2.20nb2
- p5-Mozilla-CA-20180117nb2 p5-Net-DNS-1.20nb1 p5-Net-Domain-TLD-1.75nb3
- p5-Net-IP-1.26nb7 p5-Net-LibIDN-0.12nb11 p5-Net-SMTP-SSL-1.04nb3
- p5-Net-SSLeay-1.85nb2 p5-Socket6-0.29nb1 p5-TimeDate-2.30nb6
- pango-1.44.6 pcre-8.43 pcre2-10.33 perl-5.30.0nb1 png-1.6.37
- py27-expat-2.7.16 py37-cElementTree-3.7.5 py37-expat-3.7.5
- python27-2.7.17 python37-3.7.5 ruby24-addressable-2.7.0
- ruby24-atk-3.4.1 ruby24-base-2.4.9nb1 ruby24-cairo-1.16.4
- ruby24-cairo-gobject-3.4.1 ruby24-delayer-1.0.0
- ruby24-delayer-deferred-2.1.1 ruby24-diva-1.0.1 ruby24-gdk_pixbuf2-3.4.1
- ruby24-gio2-3.4.1 ruby24-glib2-3.4.1 ruby24-gobject-introspection-3.4.1
- ruby24-gtk2-3.4.1 ruby24-mikutter-3.9.6 ruby24-mini_portile2-2.4.0
- ruby24-moneta-1.2.0 ruby24-nokogiri-1.10.4 ruby24-pango-3.4.1
- ruby24-pkg-config-1.3.7 ruby24-pluggaloid-1.2.0 ruby24-public_suffix-4.0.1
- ruby24-simpleidn-0.0.9 ruby24-twitter-text-simpleidn-3.0.0.0 sudo-1.8.28nb1
- tcsh-6.21.00nb1 tiff-4.0.10nb1 uim-1.8.6nb64
- wget-1.20.3nb3 zsh-5.7.1nb1
+ at-spi2-atk-2.34.2 at-spi2-core-2.36.0 atk-2.36.0
+ bash-5.0.18 cairo-1.16.0nb2 cairo-gobject-1.16.0nb5
+ curl-7.72.0 dbus-1.12.20 desktop-file-utils-0.26
+ dillo-3.0.5nb7 fltk-1.3.5nb1 fossil-2.12.1 fribidi-1.0.10
+ gd-2.3.0nb1 giflib-5.2.1nb4 git-base-2.28.0 glib2-2.64.5
+ gmp-6.2.0 gnutls-3.6.14nb1 gobject-introspection-1.64.1
+ gtk2+-2.24.32nb15 gtk3+-3.24.22nb1 harfbuzz-2.7.1
+ icewm-1.2.38pre2nb2 icu-67.1 jbigkit-2.1nb1
+ libcfg+-0.7.0 libcups-2.3.3nb5 libffi-3.3nb3
+ libgcrypt-1.8.6 libgpg-error-1.38 libidn-1.36
+ libpaper-1.1.28 libpsl-0.21.1 libtasn1-4.16.0 libwebp-1.1.0nb1
+ libxml2-2.9.10nb2 libxslt-1.1.34nb2 libyaml-0.2.5 lintpkgsrc-4.95
+ m17n-lib-1.8.0nb3 medit-1.2.0nb15 mlterm-3.9.0nb3
+ mozilla-rootcerts-1.0.20200529nb1 nettle-3.6 nghttp2-1.41.0
+ p11-kit-0.23.15nb1 pango-1.44.7nb3 pcre2-10.35nb1
+ perl-5.30.3 py27-expat-2.7.18 py37-cElementTree-3.7.9
+ py37-expat-3.7.9 python27-2.7.18nb1 python37-3.7.9
+ qt5-qtbase-5.15.0nb1 qt5-qtx11extras-5.15.0nb1
+ qt5-qtxmlpatterns-5.15.0nb1 ruby26-atk-3.4.2 ruby26-cairo-1.16.6nb1
+ ruby26-cairo-gobject-3.4.2nb1 ruby26-delayer-deferred-2.2.0
+ ruby26-gdk_pixbuf2-3.4.2 ruby26-gettext-3.3.6
+ ruby26-gio2-3.4.2 ruby26-glib2-3.4.2 ruby26-gobject-introspection-3.4.2
+ ruby26-gtk2-3.4.2nb1 ruby26-mikutter-4.0.6 
+ ruby26-mikutter-plugins-twitter-4.0nb2 ruby26-moneta-1.3.0
+ ruby26-native-package-installer-1.0.9 ruby26-nokogiri-1.10.9nb2
+ ruby26-pango-3.4.2nb1 ruby26-pluggaloid-1.5.0 ruby26-public_suffix-4.0.5
+ ruby26-simpleidn-0.1.1 shared-mime-info-1.10nb2 sudo-1.8.31p1
+ tiff-4.1.0nb1 uim-1.8.8nb6 wayland-1.18.0nb1
+ wget-1.20.3nb8 zstd-1.4.5
+
+- packages:
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2020-09-19/
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/earmv7hf/pkginfo
@@ -88,7 +82,11 @@ System Update:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 dmesg:
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI2-1.2
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI3
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI3A+
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI3B+
 
 --
 Jun Ebihara

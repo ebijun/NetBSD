@@ -1,0 +1,26 @@
+
+https://twitter.com/tsutsuii/status/1262429647364427783
+
+http://teokurebsd.org/netbsd/liveimage/20200518-luna68k/
+
+
+
+
+1) nono-0.0.3 をダウンロード
+https://twitter.com/isaki68k/status/1261646479816404992
+2) 展開して doc/index.html を読んでビルド
+3) liveimage をダウンロードして gunzip
+4) nono.cfg を作って置く
+https://gist.github.com/tsutsui/340546bdc064cee786ed2473fb510463
+
+5) wx/nono で実行
+6) Emulated ROM上で以下のコマンドを実行
+k
+[enter]
+[enter]
+d
+boot
+g
+x
+引用ツイート
+

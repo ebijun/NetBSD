@@ -1,0 +1,14 @@
+
+#VER=6.8
+VER=snapshots
+
+#ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/miniroot68.fs
+
+#https://twitter.com/ao_kenji/status/1330504720516063235
+#http://www.nk-home.net/~aoyama/liveimage/
+#ftp http://www.nk-home.net/~aoyama/liveimage/liveimage-luna88k-raw-20201206.img.gz
+#ftp http://www.nk-home.net/~aoyama/liveimage/boot
+
+# Snapshot Update
+ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd
+#ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.rd

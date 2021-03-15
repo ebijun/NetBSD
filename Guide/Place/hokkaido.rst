@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -39,6 +39,7 @@
 .. csv-table::
  :widths: 30 20 60
 
+ はりねずみ珈琲店,南3西8,移転しました。
  滝川クラフトビール工房,滝川,泉町1丁目9区。空知ピルスナー。温泉。
  おやじ中華ナリケン,狸小路,マコモダケの春巻。
  paul's cafe,紀伊國屋書店下,ベルギービールとチキンのランチ。
@@ -78,7 +79,6 @@
  セカンズ澄川店,澄川,聖凡人伝がある古本店
  坂ビスケット,琴似,坂会館には2階もある。隣はつぼ八1号店。
  キコキコ商店,南12西6,渋さのCDと珈琲。
- てっちゃん,南3西4,あの日見た舟盛りの名前を僕達はまだ知らない
  モスコミュール,宮の杜4条,カレーと夜景とモスコ
  シアターキノ,狸小路6南3,24周年記念
  赤星,南3西7,500円ラーメン
@@ -145,7 +145,8 @@
  2016 Hokkaido,6/17-18,710,57,札幌コンベンションセンター
  2017 Hokkaido,7/14-15,580,54,札幌コンベンションセンター
  2018 Hokkaido,7/6-7,730,66,札幌コンベンションセンター
- 2019 Hokkaido,5/31-6/1,,54,札幌コンベンションセンター
+ 2019 Hokkaido,5/31-6/1,720,54,札幌コンベンションセンター
+ 2020 Hokkaido,6/27,,,オンライン開催
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -157,6 +158,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 
+ 155.,OSC2020北海道,http://www.re.soum.co.jp/~jun/OSC2020hokkaido.pdf
  142.,OSC2019北海道,http://www.re.soum.co.jp/~jun/OSC2019hokkaido.pdf
  126.,OSC2018北海道,http://www.re.soum.co.jp/~jun/OSC2018hokkaido.pdf
  109.,OSC2017北海道,http://www.re.soum.co.jp/~jun/OSC2017hokkaido.pdf
@@ -172,7 +175,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2019北海道 NetBSDブース展示の記録,
+ OSC2019北海道 NetBSDブース展示の記録,https://togetter.com/li/1361738
  OSC2018北海道 NetBSDブース展示の記録,https://togetter.com/li/1244344
  OSC2017北海道 NetBSDブース展示の記録,http://togetter.com/li/1130009
  OSC2016北海道 NetBSDブース展示の記録,http://togetter.com/li/988853
@@ -209,6 +212,31 @@ OSC北海道展示物
 #. NetBSD/Zaurus
 #. Making install-image Presentation by つついさん
   http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html
+
+2019年
+^^^^^^^^^^
+
+.. image::  ../Picture/2019/06/01/DSC_7267.JPG
+.. image::  ../Picture/2019/06/01/DSC_7269.JPG
+.. image::  ../Picture/2019/06/01/DSC_7270.JPG
+.. image::  ../Picture/2019/06/01/DSC_7271.JPG
+.. image::  ../Picture/2019/06/01/DSC_7273.JPG
+.. image::  ../Picture/2019/06/01/DSC_7274.JPG
+.. image::  ../Picture/2019/06/01/DSC_7275.JPG
+.. image::  ../Picture/2019/06/01/DSC_7276.JPG
+.. image::  ../Picture/2019/06/01/DSC_7278.JPG
+.. image::  ../Picture/2019/06/01/DSC_7279.JPG
+.. image::  ../Picture/2019/06/01/DSC_7280.JPG
+.. image::  ../Picture/2019/06/01/DSC_7282.JPG
+.. image::  ../Picture/2019/06/01/DSC_7284.JPG
+.. image::  ../Picture/2019/06/01/DSC_7285.JPG
+.. image::  ../Picture/2019/06/01/DSC_7286.JPG
+.. image::  ../Picture/2019/06/01/DSC_7288.JPG
+.. image::  ../Picture/2019/06/01/DSC_7290.JPG
+.. image::  ../Picture/2019/06/01/DSC_7291.JPG
+.. image::  ../Picture/2019/06/01/DSC_7292.JPG
+.. image::  ../Picture/2019/06/01/DSC_7293.JPG
+.. image::  ../Picture/2019/06/01/DSC_7295.JPG
 
 2018年
 ^^^^^^^^^^^^^^^^^^

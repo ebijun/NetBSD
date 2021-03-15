@@ -1,0 +1,46 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 9.99.77 (GENERIC) #0: Sun Jan 10 00:58:56 UTC 2021
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/luna68k/compile/GENERIC
+LUNA-I (MC68030 CPU+MMU, MC68881 FPU)
+total memory = 16384 KB
+avail memory = 12316 KB
+entropy: no seed from bootloader
+timecounter: Timecounters tick every 16.666 msec
+mainbus0 (root)
+clock0 at mainbus0: mk48t02
+lcd0 at mainbus0
+le0 at mainbus0: address 02:00:01:3a:d4:99
+le0: 32 receive buffers, 8 transmit buffers
+sio0 at mainbus0: uPD7201A
+siotty0 at sio0 channel 0
+ws0 at sio0 channel 1
+wskbd0 at ws0: console keyboard
+wsmouse0 at ws0 mux 0
+xp0 at mainbus0: HD647180X I/O processor
+fb0 at mainbus0: 1280 x 1024, 1bpp
+wsdisplay0 at fb0 kbdmux 1: console (std, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+spc0 at mainbus0
+scsibus0 at spc0: 8 targets, 8 luns per target
+entropy: WARNING: extracting entropy too early
+timecounter: Timecounter "clockinterrupt" frequency 60 Hz quality 0
+scsibus0: waiting 2 seconds for devices to settle...
+aes: BearSSL aes_ct
+aes_ccm: self-test passed
+chacha: Portable C ChaCha
+blake2s: self-test passed
+sd0 at scsibus0 target 6 lun 0: <NONO, SCSIHD, 0> disk fixed
+sd0: fabricating a geometry
+sd0: 217 MB, 217 cyl, 64 head, 32 sec, 512 bytes/sect x 446325 sectors
+sd0: async, 8-bit transfers
+boot device: sd0
+sd0: fabricating a geometry
+root on sd0a dumps on sd0b
+root file system type: ffs
+kern.module.path=/stand/luna68k/9.99.77/modules
+entropy: ready

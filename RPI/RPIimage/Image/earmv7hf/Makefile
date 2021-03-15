@@ -11,11 +11,10 @@
 
 ARCH=earmv7hf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-02-21/
+# version information
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202009250550Z/evbarm-earmv7hf/binary
 
-# iso file information
-
-IMAGE=/usr/release/images/NetBSD-9.99.45-evbarm-${ARCH}-202002051910Z.iso
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-09-19/
 
 
 KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
@@ -29,9 +28,9 @@ FILE=`date +%Y-%m-%d`-netbsd-armv7-${ARCH}.img
 FILE_TMP=a.img
 
 # extract sets.
-SETS=${MNT_CDROM}/evbarm/binary/sets
-RPI=${MNT_CDROM}/evbarm/binary/gzimg/armv7.img
-KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
+SETS=${BINARY}/sets
+RPI=${BINARY}/gzimg/armv7.img
+KERNEL7=${BINARY}/kernel/netbsd-RPI2.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
@@ -54,8 +53,8 @@ VND_CDROM=vnd1
 MNT_TMP=/mnt2
 VND_TMP=vnd2
 
-#all: file cdmount rpi extract cdunmount kernel-update bwfm-firmware
-all: file cdmount rpi extract cdunmount bwfm-firmware
+#all: file rpi extract cdunmount kernel-update bwfm-firmware
+all: file rpi extract bwfm-firmware
 
 #update: cdmount update-extract cdunmount
 
@@ -68,8 +67,6 @@ extract:
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 #	echo extract pkgsrc.
 #	tar xzpf ${PKGSRC} -C ${MNT}/usr
-	mount_msdos /dev/${VND}e ${MNT}/boot
-	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -78,7 +75,7 @@ rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
 	fdisk -uf -0 -s 6/8192/188416 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fdisk -uf -1 -s 169/458752/4456448 ${VND} 
+	fdisk -uf -1 -s 169/458752/4702208 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
@@ -104,8 +101,8 @@ rpi:
 file: 
 	echo Create ${FILE}.
 #	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
-	dd if=/dev/zero of=${FILE} bs=512 count=4915200 progress=62000
-#	 2048*2400
+	dd if=/dev/zero of=${FILE} bs=512 count=5160960 progress=62000
+#	 2048*2520
 	sleep 3
 
 # stop sshd for package install
@@ -172,18 +169,6 @@ logclean:
 	rm -rf ${MNT}/var/run/resolvconf
 	umount ${MNT}
 	vnconfig -u ${VND}
-
-# mount cdrom image
-cdmount:
-	echo mount cdrom image.
-	vnconfig ${VND_CDROM} ${IMAGE}
-	mount_cd9660 /dev/${VND_CDROM}a ${MNT_CDROM}
-
-# unmount cdrom image
-cdunmount:
-	echo mount cdrom image.
-	umount ${MNT_CDROM}
-	vnconfig -u ${VND_CDROM}
 
 # copy newer firmware to /boot on MSDOS partition
 # https://github.com/raspberrypi/firmware

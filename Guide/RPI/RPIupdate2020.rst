@@ -34,22 +34,17 @@ RaspberryPIのNetBSDイメージについて
  :widths: 20 20 20 20 20 80 20 50
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
- 2019/1/26,8.99.30,3.8.4,,1.1.1a,bind-9.13.5W1 sqlite3-3.26 bash-5.0 git-base-2.20.1,OSC大阪,http://mail-index.netbsd.org/port-arm/2019/01/24/msg005415.html
- 2019/2/10,8.99.33,,,,gtk3+-3.24.4 NetBSD-SA2019-001,OSC浜名湖,http://mail-index.netbsd.org/port-arm/2019/02/07/msg005450.html
- 2019/2/22,8.99.34,3.8.5,,,icu-63.1nb2,OSC東京春,http://mail-index.netbsd.org/port-arm/2019/02/20/msg005506.html
- 2019/3/21,8.99.36,3.8.6,3.8.7nb3,1.1.1b,gcc-7.4.0 jemalloc libstdc++,AsiaBSDCon,http://mail-index.netbsd.org/port-arm/2019/03/20/msg005584.html
- 2019/4/20,8.99.37,,3.8.8,,libstdc++-9.0 ruby-2.4.6,OSC沖縄,http://mail-index.netbsd.org/port-arm/2019/04/16/msg005599.html
- 2019/6/1,8.99.41,3.8.7,,,python37 NetBSD SA 2019-002 2019-003,OSC北海道,http://mail-index.netbsd.org/port-arm/2019/05/23/msg005736.html
- 2019/7/13,8.99.50,3.9.0,3.8.8,1.1.1c,libc-12.213 RPI4発売,OSC名古屋,http://mail-index.netbsd.org/port-arm/2019/07/07/msg005875.html
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
- 2019/9/15,9.99.11,3.9.5,,,bwfm,OSC広島,http://mail-index.netbsd.org/port-arm/2019/09/10/msg006129.html
- 2019/9/28,9.99.12,,,,RPI4,OSC島根,http://mail-index.netbsd.org/port-arm/2019/09/23/msg006154.html
- 2019/10/5,9.99.15,,,,pkgsrc-2019Q3,OSC新潟,http://mail-index.netbsd.org/port-arm/2019/10/03/msg006209.html
- 2019/10/19,9.99.17,3.9.6,,,dhcpcd-8.1.1 sudo,OSC徳島,http://mail-index.netbsd.org/port-arm/2019/10/24/msg006265.html
- 2019/11/9,9.99.17,,,,bind-9.14.7 glib2-2.6.4,OSC福岡,http://mail-index.netbsd.org/port-arm/2019/11/02/msg006291.html
- 2019/11/24,9.99.17,3.9.7,3.8.9,,dhcpcd-8.1.2,OSC東京秋,http://mail-index.netbsd.org/port-arm/2019/11/21/msg006322.html
  2019/11/25,9.99.18,,,,NetBSD-SA-2019-005,,
  2020/01/25,9.99.37,3.9.8,,,UVM NetBSD SA 2020-001,OSC大阪,http://mail-index.netbsd.org/port-arm/2020/01/21/msg006451.html
+ 2020/04/18,9.99.56,4.0.4,3.8.9nb2,1.1.1f,gcc8.4,OSC東京,http://mail-index.netbsd.org/port-arm/2020/04/22/msg006618.html
+ 2020/06/01,9.99.64,4.0.5,3.9.0,1.1.1g,,OSC名古屋,http://mail-index.netbsd.org/port-arm/2020/05/28/msg006699.html
+ 2020/06/27,9.99.68,,3.9.0nb2,,icu67 bind9.16.3,OSC北海道,http://mail-index.netbsd.org/port-arm/2020/06/25/msg006812.html
+ 2020/07/25,9.99.69,,,,Kernel Address SANitizer,OSC新潟,http://mail-index.netbsd.org/port-arm/2020/07/21/msg006885.html
+ 2020/08/28,9.99.71,4.0.6,,,RPI4+UEFI,OSC京都,http://mail-index.netbsd.org/port-arm/2020/08/27/msg006954.html
+ 2020/09/19,9.99.72,,3.9.0nb3,,GCC9.3,OSC広島,http://mail-index.netbsd.org/port-arm/2020/09/17/msg006975.html
+ 2020/10/24,9.99.74,4.1.2,,,NetBSD9.1,OSC東京秋,http://mail-index.netbsd.org/port-arm/2020/10/18/msg007015.html
+ 2020/12/19,9.99.77,,3.9.1,,pkgdb,ODC,http://mail-index.netbsd.org/port-arm/2020/12/10/msg007120.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
@@ -121,9 +116,9 @@ ryo@netbsd さんによる rpi64wip実装が進み、NetBSD/aarch64としてRPI3
 RPI4
 -------
 
-- テスト中です。
-- http://mail-index.netbsd.org/port-arm/2020/01/08/msg006419.html
-- 無線LANポートは使えます
+- テスト中です。pinebookとpkgsrcを共用しています。
+* http://mail-index.netbsd.org/port-arm/2020/11/18/msg007066.html
+* https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 
 armv7のいろいろ
 --------------------
@@ -135,7 +130,7 @@ Jared McNeillさんによるNetBSD ARM Bootable Imagesがあります。
 
 ご注文はなんとかですか（弱点）
 -----------------------------
-- 9.0版はないんですか→9.0BETAから。
+- RPI4?
 
 まとめ
 ----------

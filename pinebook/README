@@ -1,102 +1,171 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20200215)
+Subject: pinebook status update (20210314)
 
-Update:
-- Pinebook Pro 
- NetBSD/aarch64 9.99.46 
- mate desktop/camera/WiFi
- - bwfm0
-   copy the files from
-   https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
-   into /libdata/firmware/if_bwfm/ then reboot
-   bwfm0 will appear in ifconfig
- ToDo:  
- - HDMI output via USB-C 
-   http://mail-index.netbsd.org/port-arm/2020/02/08/msg006494.html
- - sometimes stopped,with make -j 6 load.
-
-- Pinebook
-  NetBSD/aarch64 9.99.30
-  9.99.46 not work startx,mpv -vo,
-  9.99.47 failed with mpv -vo=drm display accelaration.X works well.
-  XXX: rollback test with 9.0 dtb/gstreamer YUV->RGB
-   https://twitter.com/ebijun/status/1229506896542892032
-
-sysinfo:
- dhcpcd-8.1.6 dtc-1.5.1 openssl-1.1.1d sh-20181212-20200213074024Z
- unbound-1.9.6 userland-NetBSD-9.99.46/evbarm
+Topics:
+- NetBSD Security Advisory 2021-001: 
+ Predictable ID disclosures in IPv4 and IPv6
+ http://mail-index.netbsd.org/current-users/2021/03/11/msg040448.html
+- touchpad: sometimes cursor far away.
+- audio CD with wavpack
+ Encode: 
+   pkg_add abcde
+   pkg_add glyr
+   abcde -d /dev/rcd0a -B -o wv -1 -a default,cue
+   XXX: can't see each tracks with player.
+ Play: audacious-plugin with wavpack option
+ PKG_OPTIONS.audacious-plugins+=wavpack
+- audio0 input issue
+  http://mail-index.netbsd.org/port-arm/2021/02/22/msg007185.html
+  "Is audio input from the inbuilt microphone(s) working?  I get "read failed:
+  Resource temporarily unavailable" from audiorecord"
+  audio0(ausoc1): trigger_input failed: errno=5
+  audio0(audoc1): device timeout
+- firefox compile option,adviced from @ryo_on.
+  PKG_OPTIONS.firefox+=pulseaudio  #enable audio input with WebRTC
+- libreoffice-7.1.1.2nb1 can detect NetBSD.
 
 pkgsrc:
- Canna-lib-3.7pl3nb1 ImageMagick-7.0.9.22 SDL2-2.0.10nb2
- apache-2.4.41nb3 arm-trusted-firmware-rk3399-2.2
- boost-build-1.72.0 boost-docs-1.72.0 boost-headers-1.72.0
- boost-jam-1.72.0 boost-libs-1.72.0 boost-mpi-1.72.0
- clang-9.0.1 cmake-3.16.4 cross-aarch64-none-elf-binutils-2.31.1
- cross-aarch64-none-elf-gcc-8.2.0nb1 cross-arm-none-eabi-binutils-2.32
- cross-arm-none-eabi-gcc-8.3.0nb1 cups-base-2.3.1nb1
- curl-7.68.0nb2 dhcpcd-8.1.6 dillo-3.0.5nb6 ffmpeg2-2.8.14nb11
- ffmpeg3-3.4.7nb1 ffmpeg4-4.2.2nb1 firefox52-52.9.0nb20
- fossil-2.10nb2 ghostscript-agpl-9.50nb3 git-base-2.25.0
- glib2-2.62.4nb1 glib2-tools-2.62.4 gnupg2-2.2.19nb1
- gstreamer1-1.16.2 gtk3+-3.24.13nb1 icu-64.2nb2
- inkscape-0.92.4nb11 jpeg-9d llvm-9.0.1
- mate-1.22.2 mpv-0.32.0 nginx-1.16.1nb2
- nspr-4.25 nss-3.49.2 php-7.3.14 poppler-0.84.0
- py37-sphinx-2.3.1 python27-2.7.17nb1 python36-3.6.10nb1
- python37-3.7.6nb1 qt5-qtbase-5.14.1 ruby26-mikutter-3.9.8nb1
- rust-1.40.0nb2 samba-3.6.25nb20 sudo-1.8.31
- sylpheed-3.7.0nb5 u-boot-pinebook-pro-2020.01.rc5nb3
- youtube-dl-20200124
+- works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp,libreoffice
+- firefox86.0.1 works fine.
+ zoom meeting with firefox on NetBSD/aarch64 on pinebook pro 
+  with UserAgent switcher addon as Linux.
+ Send: Share Screen,camera/USB Camera
+ Problem: Can"t show others screen/in-camera.
+- nono: luna68k/luna88k emulator
+ add /etc/mk.conf
+  ACCEPTABLE_LICENSES= nono-license
+ cd /usr/pkgsrc/emulators/nono;make ;make package-install
+- search soumd mixer GUI to manage mixerctl
+ 
+ToDo:
+- 3D acceleration
+
+- Pinebook Pro 
+ mate/xfce4/camera/WiFi
+ ToDo:  
+ - HDMI output via USB-C 
+ - Audio output: can't switch speaker & headphone out
+
+- Pinebook
+ mate/xfce4/camera/HDMI
+ ToDo:
+ - internal WiFi
 
 System Updates:
 
-http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
+sysinfo:
+ bind-9.16.12 bozohttpd-20210227 libssh-39.0
+ NetBSD-9.99.81 openssh-8.5 opensshd-8.5
+ openssl-1.1.1j sh-20181212-20210313090612Z
+ userland-NetBSD-9.99.81/evbarm
+ wpa_supplicant-2.9 yacc-2.0
 
 pkgsrc:
- https://github.com/ebijun/NetBSD/commit/5ac3245125050c0ccd4294e0c13b2b2a21fc3a2d
+ ImageMagick-7.0.11.0 SDL2-2.0.14nb2 asciidoc-9.1.0
+ audacious-4.1 audacious-plugins-4.1 cmake-3.19.6
+ cmark-0.29.0nb1 coreutils-8.32 dhcpcd-9.4.0
+ ffmpeg4-4.3.2 firefox-86.0.1 firefox-l10n-86.0.1
+ fmtlib-7.1.3 gd-2.3.2 gdbus-codegen-2.66.7
+ git-base-2.30.2nb1 glew-2.2.0nb1 glib2-2.66.7
+ glib2-tools-2.66.7 gnome-doc-utils-0.20.10nb8
+ graphviz-2.44.1nb7 gtar-base-1.34 gtk3+-3.24.25
+ help2man-1.48.2 jasper-2.0.26 libebml-1.4.2
+ libgcrypt-1.9.2 libimagequant-2.14.1 libmatroska-1.6.3
+ libnumbertext-1.0.7 libreoffice-7.1.1.2nb1
+ makejvf-1.1a mendexk-3.2 meson-0.57.1
+ mkvtoolnix-55.0.0 mysql-client-5.7.33
+ nettle-3.7.1 nodejs-14.16.0 nss-3.62
+ pciutils-3.7.0nb1 php73-owncloud-10.6.0
+ php73-sqlite3-7.3.27nb5 protobuf-3.15.5
+ pugixml-1.11.4 py38-cElementTree-3.8.8
+ py38-cffi-1.14.5 py38-cryptodome-3.10.1 py38-cython-0.29.22
+ py38-expat-3.8.8
+ py38-gyp-0.1pre20200512.caa60026e223fc501e8b337fd5086ece4028b1c6
+ py38-setuptools_scm-5.0.2 py38-sqlite3-3.8.8nb18
+ py38-zipp-3.4.1 python37-3.7.10 python38-3.8.8
+ rclone-1.54.1 ruby26-cairo-1.17.5
+ ruby26-native-package-installer-1.1.1
+ ruby26-red-colors-0.1.1 ruby26-simpleidn-0.2.1
+ taglib-1.12 tex-amsmath-2.17inb1 tex-baekmuk-2.2.1
+ tex-booktabs-1.61803398nb1 tex-colortbl-1.0enb1
+ tex-csquotes-5.2k tex-haranoaji-20210130 tex-japanese-otf-1.7b8.56938
+ tex-jsclasses-20201009 tex-l3kernel-2020.57669nb1
+ tex-l3packages-2020.57600nb3 tex-latex-base-dev-20210501pre1
+ tex-latex-bin-2020 tex-oberdiek-2020.56291nb1
+ tex-platex-2020.57730 tex-ptex-3.2pl55920
+ tex-ptex-base-2020.56487 tex-ptex-fontmaps-20201227.0
+ xfce4-mousepad-0.5.3 youtube-dl-20210303nb2
 
-works well: 
- evince gedit mate medit py-sphinx gimp seamonkey inkscape
+pkgsrc todo:
+- mate
+  pkgsrc/devel/libappindicator depends on py27-gtk2
+- asunder
+  cdparanoia reading failed hangs on startup
+- pdfpc: testing failed
+- vlc
+ Fix vdpau option. Should help aarch64 builds.
+ http://mail-index.netbsd.org/pkgsrc-changes/2020/06/23/msg216727.html
+ almost fixed,failed on packaging with some MMX plugins
 
-- HDMI port works.
+System Updates:
+http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
+
+Tips:
+- System Clocks
+ % sysctl -a |grep freq
+
+ Install pkgsrc/sysutils/estd from pkgsrc and start it on bootup 
+ for automatic up-/downscaling.
+
+pinebook:
+ machdep.cpufreq.cpu0.available = 1152 1104 1008 816 648 408
+ # sysctl -w machdep.cpufreq.cpu0.target=1152
+
+pinebook-pro:
+ machdep.cpufreq.cpu0.available = 1416 1200 1008 816 600 408
+ machdep.cpufreq.cpu4.available = 2000 1800 1608 1416 1200 1008 816 600 408
+ # sysctl -w machdep.cpufreq.cpu0.target=1416
+ # sysctl -w machdep.cpufreq.cpu4.target=2000
+
+- Battery Status
+  envstat 
+  xbattbar
+XXX: link from dbus or mate-power-manager? 
+
+- HDMI port works on pinebook.
  Connect display to pinebook HDMI port
  # pkg_add arandr
  % arandr
+
 - mate: pkgsrc/meta-pkgs/mate
  https://twitter.com/ebijun/status/1086814579647102976
  pkg_add mate
  echo "mate-session" >> .xinitrc
  startx
+
 - ibus 
  export XMODIFIERS=@im=ibus
-- firefox52: 
- https://twitter.com/ebijun/status/1086487791104450563
- PKG_OPTIONS.firefox = -pulseaudio -alsa -dbus gtk2 -gtk3
-    general.useragent.local=ja if you want it.
+
 - Add eDP transmitter and enable display pipeline
  http://mail-index.netbsd.org/source-changes/2019/02/03/msg103047.html
  arandr works well: display up-side down
  https://twitter.com/ebijun/status/1092885154127724544
+
 - keymapping: [Shift][<>] on 11inch
  https://wiki.netbsd.org/ports/evbarm/allwinner/#index3h2
+
 - replace AC Adapter for heavy load
  Anker PowerPort10 A2133+USB DC Cable with 3.5mm/1.35mm connecter
-- USB Wifi: works well,sometimes unseened with heavy load.
- urtwn0: I-O DATA DEVICE, INC. (0x4bb) WN-G150UM (0x94c)
+ USB-C laptop charger from HP
 
-ToDo:
-- pkgsrc/inputmethod/uim
-  only on aarch64,fill alloca to package it.
-  #define alloca(x)  __builtin_alloca(x)
-- libreoffice
-  g95 need aarch64--netbsd support
-   -> --disable-coinmp
-- kde
-- Deleted from pkgsrc: pdfshuffler 
-  need replacement for editing PDF pages
+- USB Wifi: urtwn0/run0 works 
+ urtwn0: I-O DATA DEVICE, INC. (0x4bb) WN-G150UM (0x94c)
+ pinebook: internal Wi-Fi not supported
+ pinebook pro: internal bwfm0 works,sometimes hangs
+
 
 Version: 
- NetBSD 9.99.47 (GENERIC64) #0: Sun Feb 16 23:14:19 UTC 2020	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.80 (GENERIC) #0: Sat Mar  6 08:34:58 UTC 2021  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
@@ -104,8 +173,16 @@ dmesg:
 
 System image: dd to eMMC.
  http://www.invisible.ca/arm/
- on pinebook pro,with bundled Linux image, first disable eMMC with 
- switch inside,and boot MicroSD.
+
+ pinebook-pro:
+ 1. Insert microSD, boot (Linux from eMMC comes up), 
+ 2. hit "Restart", 
+ 3. It will boot from microSD. 
+ 4. dd'ing to eMMC for installation, the eMMC is faster
+- eMMC can disable with switch inside,and boot MicroSD.
+
+ Getting Started with NetBSD on the Pinebook Pro by Benny Siegert 
+ https://bentsukun.ch/posts/pinebook-pro-netbsd/
 
 sysinfo:
  https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/sysinfo
@@ -118,8 +195,7 @@ pkgchk.conf:
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-01-18/
-    (older one, will remove)
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-02-15/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-08-22/
+
 --
 Jun Ebihara

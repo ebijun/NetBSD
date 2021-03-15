@@ -9,39 +9,31 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2020-02-21/
-
-# iso file information
-
-IMAGE=/usr/release/images/NetBSD-9.99.45-evbarm-${ARCH}-202002051910Z.iso
-
-KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
-
-PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
-
-###
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2021-1
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 FILE_TMP=a.img
+PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-SETS=${MNT_CDROM}/evbarm/binary/sets
-RPI=${MNT_CDROM}/evbarm/binary/gzimg/rpi.img
-KERNELBIN=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI.bin.gz
-KERNELBIN7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.bin.gz
-KERNEL=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI.gz
-KERNEL7=${MNT_CDROM}/evbarm/binary/kernel/netbsd-RPI2.gz
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102261250Z/evbarm-earmv6hf/binary
+SETS=${BINARY}/sets
+RPI=${BINARY}/gzimg/rpi.img
+KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
+KERNELBIN7=${BINARY}/kernel/netbsd-RPI2.bin.gz
+KERNEL=${BINARY}/kernel/netbsd-RPI.gz
+KERNEL7=${BINARY}/kernel/netbsd-RPI2.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
 
 #Firmware: 
 #git show HEAD |head 
-#commit 66be1927eafd2feed468efd36ec083b208f0a9c3
 #Author: popcornmix <popcornmix@gmail.com>
-#Date:   Wed Nov 21 19:01:22 2018 +0000
-#    kernel: Bump to 4.14.82
+#Date:   Tue Nov 17 14:11:58 2020 +0000
+#    kernel: Bump to 5.4.77
+
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -57,8 +49,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-#all: file cdmount rpi extract cdunmount kernel-update bwfm-firmware
-all: file cdmount rpi extract cdunmount bwfm-firmware
+all: file rpi extract bwfm-firmware
 
 #update: cdmount update-extract cdunmount
 
@@ -68,11 +59,11 @@ extract:
 	vnconfig ${VND} ${FILE}
 	fsck -fy /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
+	mount_msdos /dev/${VND}e ${MNT}/boot
+	umount ${MNT}/boot
 	for i in ${LIST} ; do (tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 #	echo extract pkgsrc.
 #	tar xzpf ${PKGSRC} -C ${MNT}/usr
-	mount_msdos /dev/${VND}e ${MNT}/boot
-	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -80,8 +71,8 @@ extract:
 rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
-	fdisk -uf -0 -s 6/8192/188416 ${VND} #DOS id6 partition:DISKLABEL.proto
-	fdisk -uf -1 -s 169/458752/4456448 ${VND} 
+	fdisk -uf -0 -s 12/32768/163840 ${VND} #32bit FAT id 12 DISKLABEL.proto
+	fdisk -uf -1 -s 169/196608/4964352 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
@@ -121,11 +112,10 @@ pkg:
 	echo syslogd=NO         >> ${MNT}/etc/rc.conf
 #	echo dhcpcd=NO          >> ${MNT}/etc/rc.conf
 	echo resize_disklabel=NO 	>> ${MNT}/etc/rc.conf
-	echo resize_disklabel_disk=""	>> ${MNT}/etc/rc.conf
-	echo resize_disklabel_part=""	>> ${MNT}/etc/rc.conf
 	echo resize_root=NO		>> ${MNT}/etc/rc.conf
 	echo resize_root_flags=""	>> ${MNT}/etc/rc.conf
 	echo resize_root_postcmd=""	>> ${MNT}/etc/rc.conf
+	echo resize_gpt=NO		>> ${MNT}/etc/rc.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -212,8 +202,10 @@ bwfm-firmware:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	mkdir -p ${MNT}/libdata/firmware/if_bwfm/
-	cp -p kernel/Firmware/brcmfmac43* ${MNT}/libdata/firmware/if_bwfm/
-	cp -p kernel/Firmware/LICENCE.broadcom_bcm43xx ${MNT}/libdata/firmware/if_bwfm/
+#	cp -p kernel/Firmware/brcmfmac43* ${MNT}/libdata/firmware/if_bwfm/
+#	cp -p kernel/Firmware/LICENCE.broadcom_bcm43xx ${MNT}/libdata/firmware/if_bwfm/
+# nit for brcmfmac43455-sdio.raspberrypi,3-model-a-plus.txt
+	cp -p kernel/Firmware/brcmfmac43455-sdio.txt ${MNT}/libdata/firmware/if_bwfm/
 	umount ${MNT}
 	vnconfig -u ${VND}
 

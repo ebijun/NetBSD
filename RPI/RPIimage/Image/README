@@ -1,61 +1,74 @@
-VERSION: :1,$s/2020-01-25/2020-01-25/g
-ISO:     :1,$s/202001150240Z/202001150240Z/g
-NetBSD:  :1,$s/9.99.37/9.99.37/g
-PKGSRC:  :1,$s/2020-01-25/2020-01-25/
+VERSION: :1,$s/2021-02-27/2021-02-27/g
+ISO:     :1,$s/202102261250Z/202102261250Z/g
+NetBSD:  :1,$s/9.99.80/9.99.80/g
+PKGSRC:  :1,$s/2021-02-27/2021-02-27/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2020-01-25-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-02-27-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2020-01-25-netbsd9-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-02-27-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-01-25-earmv6hf/2020-01-25-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-01-25-earmv6hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-02-27-earmv6hf/2021-02-27-netbsd-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-02-27-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.37 evbarm-earmv6hf 202001150240Z rpi.img from nyftp.
-- RPI3A+: not boot.
-- no_swap=YES in /etc/rc.conf
-- NOW Testing: bwfm0 Broadcom and Cypress wireless network driver
- 1. add kernel configration and updated kernel
-   bwfm*   at sdmmc?
- 2. add firmware
-   https://github.com/ebijun/NetBSD/issues/125
-   /libdata/firmware/if_bwfm/
-     LICENCE.broadcom_bcm43xx
-     brcmfmac43430-sdio.{bin|txt}
-     brcmfmac43455-sdio.{bin|txt}
+- NetBSD 9.99.80 evbarm-earmv6hf 202102261250Z rpi.img from nyftp.
+- Python 3.8
+- Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
+XXX: should test big-endian image and pkgsrc
 
-- RPI4: testing
- http://mail-index.netbsd.org/port-arm/2020/01/06/msg006416.html
- http://mail-index.netbsd.org/port-arm/2020/01/07/msg006417.html
- http://mail-index.netbsd.org/port-arm/2020/01/08/msg006419.html
- Image:
-  http://mail-index.netbsd.org/port-arm/2019/10/03/msg006208.html
-  http://mail-index.netbsd.org/port-arm/2019/09/24/msg006162.html
-  http://mail-index.netbsd.org/port-arm/2019/09/26/msg006171.html
-  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/README.RPI4
+PR
+#55505 RaspberryPi3A+ can't find Wi-Fi module
+ http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=55505
 
-- Update from Open Source Conference 2019 Tokyo/fall 
- https://github.com/ebijun/NetBSD/commit/48a9ba734b6bcb4cfd6a3d014613e4b5253a9c39
+- RPI4: testing on NetBSD/aarch64
+  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
+
+Changes from 2021-01-20 version
+https://github.com/ebijun/NetBSD/commit/9dea28846796d137ebe702d81d4e96a742daae77
 
 sysinfo:
- bind-9.14.8 dhcpcd-8.1.5 dtc-1.5.1 g++-8.3.0 gcc-8.3.0
- NetBSD-9.99.37 sh-20181212-20200115011105Z
- tcsh-6.22.02 unbound-1.9.6 userland-NetBSD-9.99.37/evbarm
+ bind-9.16.12 bozohttpd-20210210 NetBSD-9.99.80 openssl-1.1.1j
+ sh-20181212-20210226111245Z tzdata-2021a
+ userland-NetBSD-9.99.80/evbarm yacc-2.0
 
 pkgsrc:
- curl-7.68.0nb1 fribidi-1.0.8 giflib-5.2.1nb1 git-base-2.24.1nb1
- glib2-2.62.4 gtk3+-3.24.13nb1 icu-64.2nb2 libidn2-2.3.0
- libwebp-1.1.0 mlterm-3.8.9 mozilla-rootcerts-1.0.20191207
- nghttp2-1.40.0nb1 pcre2-10.34 perl-5.30.1 py27-expat-2.7.17
- py37-cElementTree-3.7.6 py37-expat-3.7.6 python37-3.7.6
- ruby24-memoist-0.16.2 ruby24-mikutter-3.9.8 ruby24-nokogiri-1.10.7
- sudo-1.8.30 tcsh-6.22.02 wayland-1.17.0nb4 wayland-protocols-1.18
+ curl-7.75.0 fossil-2.14 gd-2.3.1 git-base-2.30.1 glib2-2.66.7
+ gtk3+-3.24.25 libgcrypt-1.9.2 libimagequant-2.13.1 libwebp-1.2.0
+ nettle-3.7.1 nghttp2-1.43.0 perl-5.32.1 py38-cElementTree-3.8.8
+ py38-expat-3.8.8 python38-3.8.8 ruby26-gettext-3.3.7
+ ruby26-oauth-0.5.5 ruby26-pkg-config-1.4.5 sudo-1.9.5p2nb1
+ wget-1.21.1
 
-- pre-installed packages:
+Need Checking:
+- bluetooth keyboard/mouse setting
+- RPI camera module
+
+Got Reports:
+- HDMI output works very well however I wanted to change the resolution
+  into 800x600 both tty console and X Window graphical modes. Where should I
+  change it? As config.txt with hdmi_group=1, hdmi_mode=1 or hdmi_safe=1
+  didn't work.
+- USB input devices seem to work fine as well with my USB keyboard, mouse
+  and barcode reader. However for my USB output device such as my Xprinter
+  printer didn't work with device driver of ulpt(4). It is detected
+  and working in OpenBSD.[9.0 release also occurs same error]
+
+  [   195.114857] ulpt0 at uhub1 port 5 configuration 1 interface 0
+  [   195.114857] ulpt0: Xprinter (0x0483) USB Printer P (0x5743), rev 2.00/1.00, addr 5, iclass 7/1
+  [   195.114857] ulpt0: using bi-directional mode
+
+  rpi# cat myfile.txt > /dev/ulpt0
+  -sh: cannot create /dev/ulpt0: error 16
+- with my Raspberry Pi 3B because every time I invoked this command 
+ "shutdown -h now" a kernel panic occurs relating to usbd_transfer.
+- After shutting-down leaving the system unplugged, this will
+  turn it's processor very very hot and seems harmful to the system.
+
+pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 
 Keyboard layout checkpoint:
@@ -70,7 +83,7 @@ System Update:
 
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
-- mikutter support : 
+mikutter support : 
  I make sample API key,pre-installed.
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/root/.mikutter/plugin
  https://github.com/Akkiesoft/how-to-make-mikutter-work-again
@@ -86,7 +99,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-01-25-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-02-27-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -142,15 +155,12 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-01-25/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2021-1/
 
-- If you use Official Package for NetBSD8.1:
+- If you use Official Package for NetBSD9:
 
 set /etc/pkg_install.conf: 
-PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/8.1/
-
-- I keep libfreetype.so.17.4.11 for some 7.0 related binaries.
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2020-01-25-earmv6hf/libfreetype.so.17.4.11
+PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/9.0/
 
 - If you update pkgsrc by yourself,comment out /etc/pkg_install.conf and check
  /etc/mk.conf.
@@ -251,6 +261,9 @@ Testing::
 - (shotwell)
   # pkg_add shotwell
 
+USB mass storage boot
+ https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md
+
 CrossCompiling:
   http://www.slideshare.net/junebihara18/netbsdworkshop
 
@@ -266,17 +279,6 @@ I2C - "Raspberry Pi I2C implementation still broken?"
    http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48855
    http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48932
 
-musica - DLNA/UPnP music server: (Thanx @cvsync)
- MAEKAWA Masahide make a DLNA/UPnP music server called "musica".
- 
-  1. Check http://www.m-systems.co.jp/musica/index_en.html .
-  2. Download musica-0.3.22-netbsd6-evbarm-earmv6hf.tgz for evaluation.
-  3. pkg_add musica-0.3.22-netbsd6-evbarm-earmv6hf.tgz
-  4. musica -d [AAC,MP3,WMA,FLAC,DSDIFF,DSF,AIFF,WAV,Apple Lossless dir]
-  5. Find from DLNA/UPnP AV equipment.
-  6. With a little luck,you'll find musica and enjoy music via musica.
-  7. If you feel slow,Try {NetBSD/amd64 i386,OSX,Ubuntu} Version or improve NetBSD.
-
 XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   http://www.pastel-flower.jp/~isaki/XM6i/
   XM6i-0.55-netbsd7.0-earmv6hf-2015Q2.tar.gz
@@ -286,12 +288,9 @@ XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
   https://twitter.com/isaki68k/status/625138538271502337
 
 Todo:
-- RPI UEFI
 - set2pkg: update via pkgsrc.
 - pkg_in/pkg_summary
 - Summarize /usr/tests atf result on earm/earmhf/earmv6hf.
-- https://github.com/isaki68k/sayaka: PHP/vala based twitter client.
-  https://twitter.com/tsutsuii/status/700963911630065664
 - DTRACE http://wiki.netbsd.org/tutorials/how_to_enable_and_run_dtrace/
 - yaft (yet another framebuffer terminal):
   https://github.com/uobikiemukot/yaft
@@ -324,21 +323,21 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2020 Osaka NetBSD booth.
+For Open Source Conference Online/Spring 2021, NetBSD BOF.
 I've updated raspberry-pi image.
 
- Jan.24-25 2020 Fri-Sat:
- https://www.ospn.jp/osc2020-osaka/
+2021 Mar.6 Sat 10:00-10:45 JST (UTC+9) ROOM C
+https://register.ospn.jp/osc2021-online-spring/modules/eventrsv/2.html
+Join meeting with ZOOM/YoutubeLive https://ospn.connpass.com/event/196661/
+YoutubeLive https://www.youtube.com/c/OSPNjp
+16:00-16:45 Room E Cross BUGLUG Community Camp
 
- BSD BOF Jan.25. 11:00-11:45 JST
- https://www.ospn.jp/osc2020-osaka/modules/eventrsv/?id=2&noform=1
-
-http://www.re.soum.co.jp/~jun/OSC2020osaka.pdf
+http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
-https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2019.rst
+https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2020.rst
 
-- NetBSD 9.99.37 earmv6hf rpi.img.gz base
+- NetBSD 9.99.80 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -376,7 +375,7 @@ Features:
   - Recent current RPI kernel
   - USB/video support: as NetBSD-current 
   - pre-build packages
-    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-01-25/
+    http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2020-08-28/
 
 Installed Packages:
   bash
@@ -430,11 +429,11 @@ One more time: (we're gonna celebrate
 - Everything you always wanted to know about six but were afraid to ask.
 
  1. login root
- 2. mlterm-fb 
+ 2. mlterm-wscons 
  3. ftp http://mlterm.sf.net/vimperator.six
  4. cat vimperator.six
  5. exit 
- 6. mlterm-fb --rotate=left
+ 6. mlterm-wscons --rotate=left
  7. cat vimperator.six
     and @Chris_J_Baird only knows how to get to 1987.
  8. ftp http://kildall.apana.org.au/~cjb/mandel5.c

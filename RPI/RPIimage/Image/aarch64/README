@@ -1,55 +1,130 @@
-VERSION: :1,$s/2019-10-03/2019-10-03/g
-ISO:     :1,$s/201909261940Z/201909261940Z/g
-NetBSD:  :1,$s/9.99.13/9.99.13/g
-PKGSRC:  :1,$s/2018-11-23/2018-11-23/
+VERSION: :1,$s/2021-02-18/2021-02-18/g
+ISO:     :1,$s/202102162210Z/202102162210Z/g
+NetBSD:  :1,$s/9.99.80/9.99.80/g
+PKGSRC:  :1,$s/2021-1/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2019-10-03-netbsd-raspi-aarch64.img
+Subject: 2021-02-18-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2019-10-03-netbsd-raspi-aarch64.img.gz for RPI3/3B/4.
+I've updated 2021-02-18-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-10-03-aarch64/2019-10-03-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2019-10-03-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-02-18-aarch64/2021-02-18-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-02-18-aarch64/MD5
 
 Topics:
-- only for RPI3/RPI3B+/RPI4
+- boot via UEFI_VER=v1.22
+ https://github.com/pftf/RPi4/releases
+- only for RPI4 
+  (fill dtb for RPI3?)
 - build script
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
-- fix fstab
- http://mail-index.netbsd.org/port-arm/2019/09/30/msg006193.html
+- [Issue] Can't recognize DOS partition from Windows
+  Should I Use MBR version image?
+- [Test] Delete entoropy-file special initialization.
+	rndctl -S var/db/entropy-file #create on amd64 machine.
+	cp var/db/entropy-file ${MNT_ROOT}/var/db/entropy-file
+
+sysinfo:
+ bozohttpd-20210210 NetBSD-9.99.80 sh-20181212-20210216194615Z
+ tzdata-2021a userland-NetBSD-9.99.80/evbarm
+
+pkgsrc:
+ curl-7.75.0 fossil-2.14 gd-2.3.1 git-base-2.30.1
+ libgcrypt-1.9.1 libimagequant-2.13.1 libwebp-1.2.0
+ nghttp2-1.43.0 perl-5.32.1 ruby26-gettext-3.3.7
+ ruby26-oauth-0.5.5 ruby26-pkg-config-1.4.5 sudo-1.9.5p2nb1
+
+pkgsrc Failed: 
+
+- pkgsrc/databases/mysql57-client: libreoffice depends 
+
+ld: sha2_password_common.cc:(.text+0x30c): undefined reference to `alloca'
+sha2_password_common.cc:(.text+0x30c): relocation truncated to fit: R_AARCH64_CALL26 against undefined symbol `alloca'
+
+last succeeded:
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-08-22/mysql-client-5.7.32nb1.tgz
 
 RPI4 status:
-- kernel and /boot
-  http://mail-index.netbsd.org/port-arm/2019/09/26/msg006174.html
-  http://cdn.netbsd.org/pub/NetBSD/misc/mlelstv/rpi4boot.tgz
-  console=fb
-- dmesg
-  http://mail-index.netbsd.org/port-arm/2019/09/27/msg006180.html
-- HDMI: (not work?)
-- USB device: not work
-- bwfm0 Wireless network:work
+- boot via UEFI_VER=v1.22
+ https://github.com/pftf/RPi4/releases
+ copy pre-setted RPI_EFI.fd
+  serial ,should not set graphical
+  disable 3GB -> recognize 4GB
+- HDMI: works
+- audio: vcaudio
+  http://mail-index.netbsd.org/source-changes-d/2021/01/22/msg013133.html
+- USB device: works
+- bwfm0 Wireless network:?
   (works well on RPI3,not works on RPI4?)
-- MicroSD places on ld1,change /etc/rc.conf resizing defnition.
-- can't get ld1 with cold boot.
-- raspberry-pi userland and omxplayer:compile failed
+- Pi 4 Bootloader Configuration
+  https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.13 evbarm-aarch64 201909261940Z arm64.img from nyftp.
-- pre-installed packages:
-  checking;same as earmv6hf
-  icewm need recompiling
+- NetBSD-current 9.99.80 evbarm-aarch64 202102162210Z arm64.img from nyftp.
+- boot via UEFI_VER=v1.22
+- pkginfo
+ https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
+- sysinfo
+ https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/sysinfo
+
+Update from 2021-01-16:
+ https://github.com/ebijun/NetBSD/commit/4fcaa368a9f3be0a3a1a50b5f4b88f6d491b8978
+
+sysinfo:
+ bozohttpd-20210210 NetBSD-9.99.80 sh-20181212-20210216194615Z
+ tzdata-2021a userland-NetBSD-9.99.80/evbarm
+
+pkgsrc:
+ curl-7.75.0 fossil-2.14 gd-2.3.1 git-base-2.30.1 libgcrypt-1.9.1
+ libimagequant-2.13.1 libwebp-1.2.0 nghttp2-1.43.0 perl-5.32.1
+ ruby26-gettext-3.3.7 ruby26-oauth-0.5.5 ruby26-pkg-config-1.4.5
+ sudo-1.9.5p2nb1
+
+- mate/firefox/inkscape/libreoffice works well
+   pkg_add mate
+   pkg_add gvfs
+   pkg_add firefox
+   pkg_add firefox-l10n
+   pkg_add libreoffice
+   pkg_add inkscape
+   pkg_add gimp
+   pkg_add scribus
+   pkg_add py38-sphinx
+   pkg_add wxGTK30
+   pkg_add gnome-keyring
+
+- Sphinx with latexpdf
+  https://github.com/ebijun/NetBSD/blob/master/Guide/latexpdf.rst 
+
+- pkgin: upgrade failed
+- raspberry-pi userland: compile failed 
+
+Pre-installed packages:
+  bash
+  tcsh
+  vlgothic-ttf
+  icewm
+  xli
+  ruby26-mikutter
+  uim
+  fossil
+  sudo
+  git-base
+  zsh
+  mlterm
+  pkg_chk
+  lintpkgsrc
+  mozilla-rootcerts
+  dillo
+  medit
+  lrzsz
+
 - pre-build packages:
   See /etc/pkg_install.conf
-  PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2019-09-21/
-
-TIPS:
-- How can I write /etc/fstab,which can boot RPI3 and RPI4?
- There is a new magic device name "ROOT."
- http://mail-index.netbsd.org/port-arm/2019/09/30/msg006193.html
- https://nxr.netbsd.org/xref/src/distrib/utils/embedded/conf/evbarm.conf#87
+  PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2021-1/
 
 pkgsrc: 
   # cd /usr
@@ -63,6 +138,20 @@ pkgsrc:
   # pkg_chk -un                   ... Update (listup)
   # pkg_chk -u                    ... Update
 
+EEPROM verson:
+ Check&update with Raspberry Pi OS (pi:raspberry)
+ pi@raspberrypi:~ $ cat /etc/default/rpi-eeprom-update 
+ FIRMWARE_RELEASE_STATUS="stable"
+ pi@raspberrypi:~ $ sudo rpi-eeprom-update
+ BCM2711 detected
+ Dedicated VL805 EEPROM detected
+ BOOTLOADER: up-to-date
+ CURRENT: Thu 16 Jul 15:15:46 UTC 2020 (1594912546)
+ LATEST: Thu 16 Jul 15:15:46 UTC 2020 (1594912546)
+ FW DIR: /lib/firmware/raspberrypi/bootloader/stable
+ VL805: up-to-date
+ CURRENT: 000138a1
+ LATEST: 000138a1
 
 --
 Jun Ebihara

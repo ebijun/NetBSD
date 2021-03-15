@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2016 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -203,6 +203,23 @@ RaspberryPIで使いそうなソフトを一気にインストールする
 
 デスクトップ環境を作ってみる
 -----------------------------
+
+
+デスクトップ環境の設定:Mateの場合
+"""""""""""""""""""""""""""""""""
+
+::
+
+ # cd /usr/pkgsrc/meta-pkgs/mate
+ # make package-install
+ # pkg_info |wc        .... 関連パッケージがインストールされます
+ % rehash              .... ログインシェルがcshの場合に必要です
+ % echo mate-session >> .xinitrc  .... mate-sessionを.xinitrcに追加します
+ % startx              .... mate環境が起動します
+ % setenv LANG ja_JP.UTF-8   .... ログインシェルがcshの場合
+ % export LANG=ja_JP.UTF-8   .... ログインシェルがshの場合
+ % startx              .... 日本語版の環境が立ち上がります
+
 
 デスクトップ環境の設定:Xfceの場合
 """""""""""""""""""""""""""""""""
@@ -676,6 +693,42 @@ pkgsrcを更新する
  # make package-install
  # /usr/pkg/bin/pkg_rolling-replace
 
+pkgsrcの開発
+----------------
+
+http://mail-index.netbsd.org/tech-pkg/2020/05/29/msg023265.html
+
+1. pkglintをインストールする
+
+::
+
+   # cd /usr/pkgsrc/pkgtools/pkglint
+   # make install
+   # pkglint -W all -C all ...
+
+2. url2pkgをインストールする
+
+::
+
+   # cd /usr/pkgsrc/pkgtools/url2pkg
+   # make install
+   # url2pkg ダウンロードするURL
+
+3. pkgdiffをインストールする
+
+::
+
+   # cd /usr/pkgsrc/pkgtools/pkgdiff
+   # pkgvi path to pkg
+   # make install
+   # make mps
+
+4. 依存するパッケージを表示する
+
+::
+
+   make show-buildlink3
+   
 このドキュメント
 ----------------------
 

@@ -4,7 +4,7 @@
 FILE=`date +%Y-%m-%d`-netbsd-hpcarm.img
 
 # iso file information
-IMAGE=/usr/release/images/NetBSD-7.99.33-hpcarm-201607080210Z.iso
+IMAGE=/usr/release/images/NetBSD-9.99.50-hpcarm-202003201640Z.iso
 
 PKGSRC=../../pkgsrc/pkgsrc-2015Q3.tar.gz
 
@@ -124,3 +124,9 @@ fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch
+
+firmware:
+	ftp http://www.nazgul.ch/upgt/upgt-firmware-1.1.tar.gz
+#WS003SH/WS004SH: man upgt(4)
+#Start->Settei->System->Utility->Musen On/Off->Wifi Stop
+#       cp /libdata/firmware/upgt/upgt-gw3887

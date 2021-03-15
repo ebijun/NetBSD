@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-ルナ式練習帳、またはLunaの薄い本2019　[1]_
+ルナ式練習帳、またはLunaの薄い本2020　[1]_
 ===========================================
 
   「私が誰かは わかっているはずだ。」その声は天使の声だった。
@@ -36,6 +36,111 @@
 
 .. image:: Picture/2014/07/05/DSC_0230.jpg
  :height: 230
+
+History and Background of LUNA
+-------------------------------------
+
+The LUNA hardware had two different operating systems; a 4.3BSD derivative and a SVR3 variant. The first one, named UNIOS-B, was was a port of Integrated Solution Inc. UNIX product. ISI manufactured m68k based VME UNIX boxes. Their OS had an interesting feature of TRFS (Translucent Remote File System) as well as the popular SMI's NFS. The paper of TRFS was published at USENIX Technical Conference (late '80, details unknown in this moment). [174]_
+
+nono - LUNA-I emulator
+-------------------------------------
+
+「nono は NetBSD とかで動作する LUNA-I とかのエミュレータです。 でもまだ動きません。」 [167]_
+
+::
+
+ nono 0.0.3 (2020/05/16) 置いときますね。
+ http://pastel-flower.jp/~isaki/nono/
+ なんちゃってROM用意したので、実機ROMなくても一応起動はすると思う。けど起動しかできないのと、こっからどうしたもんかは追々…。
+
+「nonoさんが実機ROMなしでも起動するようなのでとりあえず最小インストールイメージを置きました」　[168]_
+
+::
+
+ NetBSD/luna68k 9.0 minimam liveimage 20200518版
+ http://teokurebsd.org/netbsd/liveimage/20200518-luna68k/
+
+* pkgsrc経由でのnonoインストール
+
+::
+
+ pkgsrc/emulators/nono
+ make package-install
+ https://gnats.netbsd.org/55761
+ https://twitter.com/isaki68k/status/1315996525919518724
+ http://www.pastel-flower.jp/~isaki/NetBSD/patch/pkgsrc-nono-20201013.diff
+ http://www.pastel-flower.jp/~isaki/NetBSD/patch/nono-20201013.diff
+ add /etc/mk.conf
+  ACCEPTABLE_LICENSES+= nono-license
+ cd /usr/pkgsrc/emulators/nono;make ;make package-install
+
+* nonoからのNetBSD/luna68k liveimage起動 [169]_ 
+
+::
+
+ 1) nono-0.1.1 をダウンロード
+ https://twitter.com/isaki68k/status/1261646479816404992
+ 2) 展開して doc/index.html を読んでビルド
+ 3) liveimage をダウンロードして gunzip
+ 4) nono.cfg を作って置く
+ https://gist.github.com/tsutsui/340546bdc064cee786ed2473fb510463
+ 5) wx/nono で実行
+ 6) Emulated ROM上で以下のコマンドを実行
+ k
+ [enter]
+ [enter]
+ d
+ boot
+ g
+ x
+
+::
+
+ vmtype=luna
+ #ethernet-hostdriver=tap
+ #prom-use-rom=0  #外部ROMを指定しなければ内蔵なんちゃってROMで上がるので指定しなくても動く
+ #spc0-id6-writeprotect=1 #ディスクライトプロテクト。デモとかで^Cで落とす用。
+ spc0-id6-image=hd,liveimage-luna68k-raw-20200518.img
+
+
+* Luna88Kの起動
+
+ 「設定ファイルでvmtype=luna88kにして、O/luna88kのリリースセットの中のboot を-Aオプションで指定とかまでは出来ます。」　[170]_
+
+ 「it was made from scratch.」　[171]_
+
+ #OpenBSD/luna88k 6.8-current runs on nono-0.1.4 on #OpenBSD/amd64. Now I can login to virtual luna88k machine! Great! [178]_
+
+ For anyone interested in nono and luna88k, I put OpenBSD/luna88k live image. (990MB gzip'ed, 2.0G uncompressed) Set this image as spc0-id6-image in nono.cfg, and start nono with OpenBSD/luna88k bootloader, i.e. "nono (other options) -A boot" [179]_
+
+::
+
+ #VER=6.8
+ VER=snapshots
+ ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/miniroot68.fs
+ ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd
+ ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.rd
+ nono -A bsd.rd
+
+::
+
+ vmtype=luna88k
+ #luna-dipsw1=11111111  #ディップスイッチの初期値設定
+ #ethernet-hostdriver=tap
+ #prom-use-rom=0
+ ram-size=64
+ spc0-id6-image=hd,spc0-id6-image
+
+
+ うぇーい、進んだーーー(゜∀゜)ーーー!! [173]_
+ MFP通過した。 [175]_
+ ROMやっと動いたー( ´Д｀) [180]_
+
+* library_aslr [181]_
+
+ /etc/rc.conf.local に library_aslr=NO と書いておくと reordering libraries をスキップします。 
+ 起動後であれば、 # rcctl disable library_aslr でも良いです。
+ man.openbsd.org/rc.conf
 
 LUNA前夜 - 誕生と再生のためのテーマ
 -------------------------------------
@@ -74,7 +179,7 @@ LUNAシリーズ概要
 ----------------
 SX-9100
 ~~~~~~~~~
- 1987年発表 for ∑プロジェクト [36]_ [51]_ [86]_
+ 1987年発表 for Σプロジェクト [36]_ [51]_ [86]_
  「札幌Σサブセンターに設置されて、地場企業によるΣ CAI ソフトウエアの開発に利用されていた。」 [52]_
 
 LUNA [13]_ 
@@ -113,7 +218,7 @@ UniOS-B
 UniOS-U 
     UnixAT&TSystemV R2.1をベースに4.2BSDの機能等を付加し、移植したもの。Luna、Luna-IIで稼動。
 UniOS-Σ 
-    ΣOS-VOR1準拠したもの。Luna-Σで稼動。(要出典:Luna-∑という呼び方)　[83]_
+    ΣOS-VOR1準拠したもの。Luna-Σで稼動。(要出典:Luna-Σという呼び方)　[83]_
 UniOS-Mach 
     Machをベースに移植したもの。Luna-II、Luna-88Kで稼動。 
 
@@ -158,6 +263,8 @@ LUNA88k　[10]_
 #. 起動動画 [30]_ [48]_ [49]_
 #. ユニマガ紹介記事 [74]_ と、製品仕様 [75]_ と、まとめ [71]_
 #. miod@openbsd.org さんのOpenBSD/luna88k ページ [90]_
+#. LUNA-88K2 姉妹生存報告。10月にリリースされた #OpenBSD 6.8 [176]_
+#. MC88100 バグ対応の一部 [177]_
 
 .. csv-table:: シリーズ構成 [73]_
 
@@ -166,9 +273,12 @@ LUNA88k　[10]_
  250MB     ,250MB 
  270万円     ,350万円
 
+* 
+
+
 omron3
 ~~~~~~~
- omron3.sp.cs.cmu.edu (オムロン製 LUNA-88k) は 1990年から1997年の間 CMU の日本語コンピュータ環境を提供するべくボランティア達によって運用されてきた計算機です。1997年5月をもって komachi.sp.cs.cmu.edu (Intel Pentium 120Mhz FreeBSD) に役目を引き継ぎ引退しました。  [68]_
+ omron3.sp.cs.cmu.edu (オムロン製 LUNA88k) は 1990年から1997年の間 CMU の日本語コンピュータ環境を提供するべくボランティア達によって運用されてきた計算機です。1997年5月をもって komachi.sp.cs.cmu.edu (Intel Pentium 120Mhz FreeBSD) に役目を引き継ぎ引退しました。  [68]_
 
 OEM版
 ~~~~~
@@ -411,7 +521,7 @@ LUNA88Kのブートローダー
 
 BSD広告条項
 ~~~~~~~~~~~
- 4.4BSD-Lite2由来のコードに含まれる3項目(All advertising materials ..)、広告条項削除OKについて、文書で許可を出してくれるOMRONの方がいらっしゃると2-cluse BSDで配布できる。
+ 4.4BSD-Lite2由来のコードに含まれる3項目(All advertising materials ..)、広告条項削除OKについて、文書で許可を出してくれるOMRONの方がいらっしゃると2-clause BSDで配布できる。
 
 電源問題
 ~~~~~~~~
@@ -439,7 +549,7 @@ UniOS-Machと西暦2000年問題
 
 質問日時:2009/10/28 17:51:08 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 会社でワークステーション（オムロン製LUNAⅡ）を使用していますが、プリンターが不良となりました。エプソンVP-4000です。中古をさがしていますが、これと互換性のあるプリンターはないでしょうか？ [14]_
+ 会社でワークステーション（オムロン製LUNAII）を使用していますが、プリンターが不良となりました。エプソンVP-4000です。中古をさがしていますが、これと互換性のあるプリンターはないでしょうか？ [14]_
 
 ----
 
@@ -459,7 +569,7 @@ LUNA年表　- 月の刃
  :widths: 7 3 60
 
  1986/10, , いけない！ルナ先生連載開始
- 1987,∑,SX-9100 オムロンから発表 [47]_
+ 1987,Σ,SX-9100 オムロンから発表 [47]_
  1988,オ,グッドデザイン賞受賞 [15]_
  1988/7, , いけない!ルナ先生連載終了
  1989,オ,SX-9100/DT LUNA MC68030 20MHz
@@ -548,7 +658,9 @@ LUNA年表　- 月の刃
  2018/8,菅,LUNA68K OSC2018Kyoto ブース展示 LUNAのPSG音源でPCM再生
  2018/8,筒,LUNA68K OSC2018Kyoto ブース展示 sayaka+mlterm-fb
  2018/7,青,LUNA-88K2 OSC2018Nagoya ブース展示 [165]_
- 
+ 2020/4,,オムロン元社長・立石義雄氏逝去 [172]_
+ 2020/5,井,nono-0.0.3リリース [167]_ 
+
 最近のLUNA
 ----------------
 
@@ -647,7 +759,7 @@ yaft X LUNA
 .. [33] OSC2013徳島 NetBSDブース展示の記録 http://togetter.com/li/468577
 .. [34] OMRONワークステーションLUNA 工作日記  http://togetter.com/li/535307
 .. [35] コミットメッセージ http://mail-index.netbsd.org/source-changes/2011/07/16/msg024675.html
-.. [36] ∑プロジェクト http://ja.wikipedia.org/wiki/Σプロジェクト
+.. [36] Σプロジェクト http://ja.wikipedia.org/wiki/Σプロジェクト
 .. [37] http://ja.wikipedia.org/wiki/Luna_(ワークステーション)
 .. [38] NetBSD/luna68k on OMRON LUNA - Bootstrap http://www.youtube.com/watch?v=c1_e-A9Osr0
 .. [39]  Twitter timeline on NetBSD/luna68k and mlterm-fb (final) http://www.youtube.com/watch?v=djbEw0G_LMI 2013/5/24
@@ -696,7 +808,7 @@ yaft X LUNA
 .. [81] mikutterの薄い本製作委員会 http://home1.tigers-net.com/brsywe/mikutter.html
 .. [82] https://twitter.com/ao_kenji/status/360775880198459394/photo/1
 .. [83] Wikipediaの「LUNA-Σ」という呼称は果てしなく要出典という感想。 https://twitter.com/tsutsuii/status/360430992638492672
-.. [84] "RTC" の stamp のオフセットをそれぞれ☓4してやればいいような気がします https://twitter.com/tsutsuii/status/360418015600312320
+.. [84] "RTC" の stamp のオフセットをそれぞれ x4してやればいいような気がします https://twitter.com/tsutsuii/status/360418015600312320
 .. [85] まずはDIP SW操作してみて変わるかどうか https://twitter.com/tsutsuii/status/360416804876722177
 .. [86] マンガソフトウェア革命―Σプロジェクトの全貌 http://www.amazon.co.jp/dp/4339022543
 .. [87] 仁和寺 http://randen.keifuku.co.jp/map/17.html
@@ -778,7 +890,22 @@ yaft X LUNA
 .. [163] https://twitter.com/tsutsuii/status/991191717050118144
 .. [164] https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
 .. [165] https://www.slideshare.net/ao_kenji/osc2019-nagoya
-
+.. [166] http://www.pastel-flower.jp/~isaki/nono/
+.. [167] https://twitter.com/isaki68k/status/1261646479816404992
+.. [168] https://twitter.com/tsutsuii/status/1262429647364427783
+.. [169] https://twitter.com/tsutsuii/status/1262430960718508033
+.. [170] https://twitter.com/isaki68k/status/1262375954883772418
+.. [171] https://twitter.com/isaki68k/status/1262949576362930180
+.. [172] https://ja.wikipedia.org/wiki/%E7%AB%8B%E7%9F%B3%E7%BE%A9%E9%9B%84
+.. [173] https://twitter.com/isaki68k/status/1317441952107827201
+.. [174] http://wiki.netbsd.org/ports/luna68k/luna68k_info/#behindthescene
+.. [175] https://twitter.com/isaki68k/status/1322807313741148160
+.. [176] https://twitter.com/ao_kenji/status/1324952816884985857
+.. [177] https://twitter.com/ao_kenji/status/1324990436390268928
+.. [178] https://twitter.com/ao_kenji/status/1330473862686003202
+.. [179] https://twitter.com/ao_kenji/status/1330504720516063235
+.. [180] https://twitter.com/isaki68k/status/1330124516333412361
+.. [180] https://twitter.com/ao_kenji/status/1330019763775365120
 
 このページ
 ~~~~~~~~~~~

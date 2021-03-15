@@ -1,41 +1,41 @@
 RELEASE=/usr/release/images
-ISO=${RELEASE}/NetBSD-9.99.44-evbarm-aarch64-202001291610Z.iso
+IMG=${RELEASE}/NetBSD-9.99.81-evbarm-aarch64-202103130920Z-install.img
+
+DK=dk1
+
 IMAGE=arm64.img
 VND0=/dev/sd2
 SD0=/dev/sd2
-MNT=/mnt
+MNT=/mnt1
 
 ##
 
 DATE=`date +%Y%m%d%H%M`
-LIST=`ls -P /mnt/evbarm/binary/sets |fgrep -vf Pattern`
+LIST=`ls -P ${MNT}/evbarm-aarch64/binary/sets |fgrep -vf Pattern`
 
-dtbcopy:
-	mount_msdos ${SD0}e ${MNT}
-	cp ${MNT}/dtb/rockchip/rk3399-pinebook-pro.dtb ${MNT}
-	ls ${MNT}
-	umount ${MNT}
+aaa:
+	echo ${LIST}
 
-unzip:
-	gunzip ${IMAGE}.gz
+gunzip:
+	gunzip ${IMG}.gz
 
 all:
 	./Update
 	echo make etcupdate
 
 etcupdate:
-	etcupdate -a -s /mnt/evbarm/binary/sets/etc.tgz
+	etcupdate -a -s ${MNT}/evbarm-aarch64/binary/sets/etc.tar.xz
 
 update:
-	for i in ${LIST} ;do tar xzpf $$i -C / ;  done
+	@for i in ${LIST} ;do echo tar xzpf $$i -C / ;  done
 
 kernel-update:
-	cp /mnt/evbarm/binary/kernel/sun50i-a64-pinebook.dtb.gz /boot/dtb/allwinner
-	gunzip /boot/dtb/allwinner/sun50i-a64-pinebook.dtb.gz
-	cp /mnt/evbarm/binary/kernel/netbsd-GENERIC64.gz /
+	cp ${MNT}/evbarm-aarch64/binary/kernel/netbsd-GENERIC64.gz /
 	gunzip /netbsd-GENERIC64.gz
 	mv /netbsd /netbsd.1
 	mv /netbsd-GENERIC64 /netbsd
+	md5 /netbsd*
+	what /netbsd
 
 backup:
 	mkdir ${DATE}
@@ -47,17 +47,16 @@ backup:
 	(cd ${DATE};md5 netbsd sun50i-a64-pinebook.dtb dmesg >MD5)
 
 ls:
-	ls -l /boot/dtb/allwinner/sun50i-a64-pinebook.dtb
 	ls -l /boot/netbsd.img
-	ls -l /mnt/evbarm/binary/kernel/sun50i-a64-pinebook.dtb.gz
-	ls -l /mnt/evbarm/binary/kernel/netbsd-GENERIC64.img.gz
+	ls -l /mnt1/evbarm-aarch64/binary/kernel/netbsd-GENERIC64.gz
 
-cdmount:
-	vndconfig vnd0 ${ISO}
-	mount_cd9660 /dev/vnd0a /mnt2
+mount:
+	vndconfig vnd0 ${IMG}
+	dkctl vnd0
+	mount /dev/${DK} ${MNT}
 
-cdumount:
-	umount /mnt2
+umount:
+	umount ${MNT}
 	vndconfig -u vnd0
 
 fetch:
@@ -71,3 +70,7 @@ brcm-firmware:
 #https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
 	echo https://gitlab.manjaro.org/tsys/pinebook-firmware/tree/master/brcm
 
+update-info:
+	sys_info |sort > sysinfo
+	pkg_info |sort > pkginfo
+	dmesg -t > ../dmesg/aarch64/pinebook-pro
