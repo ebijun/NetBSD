@@ -15,8 +15,10 @@ Topics:
    pkg_add glyr
    abcde -d /dev/rcd0a -B -o wv -1 -a default,cue
    XXX: can't see each tracks with player.
- Play: audacious-plugin with wavpack option
- PKG_OPTIONS.audacious-plugins+=wavpack
+ Play: 
+  audacious & audacious-plugins,cmus
+  qmmp: can't get audio output
+
 - audio0 input issue
   http://mail-index.netbsd.org/port-arm/2021/02/22/msg007185.html
   "Is audio input from the inbuilt microphone(s) working?  I get "read failed:
@@ -105,10 +107,6 @@ pkgsrc todo:
 - asunder
   cdparanoia reading failed hangs on startup
 - pdfpc: testing failed
-- vlc
- Fix vdpau option. Should help aarch64 builds.
- http://mail-index.netbsd.org/pkgsrc-changes/2020/06/23/msg216727.html
- almost fixed,failed on packaging with some MMX plugins
 
 System Updates:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi

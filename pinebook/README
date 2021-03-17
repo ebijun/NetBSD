@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20210314)
+Subject: pinebook status update (20210317)
 
 Topics:
 - NetBSD Security Advisory 2021-001: 
@@ -12,8 +12,10 @@ Topics:
    pkg_add glyr
    abcde -d /dev/rcd0a -B -o wv -1 -a default,cue
    XXX: can't see each tracks with player.
- Play: audacious-plugin with wavpack option
- PKG_OPTIONS.audacious-plugins+=wavpack
+ Play: 
+  audacious & audacious-plugins,cmus
+  qmmp: can't get audio output
+
 - audio0 input issue
   http://mail-index.netbsd.org/port-arm/2021/02/22/msg007185.html
   "Is audio input from the inbuilt microphone(s) working?  I get "read failed:
@@ -102,10 +104,6 @@ pkgsrc todo:
 - asunder
   cdparanoia reading failed hangs on startup
 - pdfpc: testing failed
-- vlc
- Fix vdpau option. Should help aarch64 builds.
- http://mail-index.netbsd.org/pkgsrc-changes/2020/06/23/msg216727.html
- almost fixed,failed on packaging with some MMX plugins
 
 System Updates:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
@@ -165,7 +163,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 9.99.80 (GENERIC) #0: Sat Mar  6 08:34:58 UTC 2021  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+ NetBSD 9.99.81 (GENERIC) #0: Sun Mar 14 16:03:04 UTC 2021  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
