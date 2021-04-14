@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.80 (GENERIC64) #0: Tue Feb 16 19:46:15 UTC 2021
+NetBSD 9.99.81 (GENERIC64) #0: Mon Apr 12 00:05:56 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3930 MB
 avail memory = 3793 MB
@@ -28,7 +28,7 @@ ACPI: PPTT 0x00000000339B0000 000184 (v02 RPIFDN RPI4     00000200 EDK2 00000300
 ACPI: SPCR 0x00000000339A0000 000050 (v02 RPIFDN RPI4     00000200 EDK2 00000300)
 ACPI: BGRT 0x0000000033980000 000038 (v01 INTEL  EDK2     00000002      01000013)
 ACPI: 1 ACPI AML tables successfully acquired and loaded
-acpi0 at acpifdt0: Intel ACPICA 20201113
+acpi0 at acpifdt0: Intel ACPICA 20210331
 acpi0: X/RSDT: OemId <RPIFDN,RPI4    ,00000200>, AslId <    ,01000013>
 cpu0 at acpi0: Arm Cortex-A72 r0p3 (v8-A), id 0x0
 cpu0: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
@@ -85,7 +85,7 @@ genet0: GENETv5.0
 genet0: Ethernet address dc:a6:32:03:31:c8
 brgphy0 at genet0 phy 1: BCM54213PE 1000BASE-T media interface, rev. 2
 brgphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
-sdhc0: SDHC 3.0, rev 153, PIO, 250000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
+sdhc0: SDHC 3.0, rev 153, caps <01210000/00000000>, PIO, 250000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 genfb0 at simplebus1: Simple Framebuffer (1920x1280 32-bpp @ 0x3e267000)
 genfb0: framebuffer at 0x3e267000, size 1920x1280, depth 32, stride 7680
@@ -93,22 +93,6 @@ wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu2: L1 48KB/64B*256L*3W PIPT Instruction cache
-cpu2: L1 32KB/64B*256L*2W PIPT Data cache
-cpu2: L2 1024KB/64B*1024L*16W PIPT Unified cache
-cpu2: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
-cpu2: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu1: L1 48KB/64B*256L*3W PIPT Instruction cache
-cpu1: L1 32KB/64B*256L*2W PIPT Data cache
-cpu1: L2 1024KB/64B*1024L*16W PIPT Unified cache
-cpu1: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
-cpu1: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -117,6 +101,22 @@ cpu3: L1 32KB/64B*256L*2W PIPT Data cache
 cpu3: L2 1024KB/64B*1024L*16W PIPT Unified cache
 cpu3: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
 cpu3: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu1: L1 48KB/64B*256L*3W PIPT Instruction cache
+cpu1: L1 32KB/64B*256L*2W PIPT Data cache
+cpu1: L2 1024KB/64B*1024L*16W PIPT Unified cache
+cpu1: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
+cpu1: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu2: L1 48KB/64B*256L*3W PIPT Instruction cache
+cpu2: L1 32KB/64B*256L*2W PIPT Data cache
+cpu2: L2 1024KB/64B*1024L*16W PIPT Unified cache
+cpu2: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
+cpu2: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu0: PMU interrupting on irq 48
 cpu1: PMU interrupting on irq 49
 cpu2: PMU interrupting on irq 50
@@ -131,31 +131,25 @@ chacha: ARM NEON ChaCha
 adiantum: self-test passed
 aes_ccm: self-test passed
 blake2s: self-test passed
-sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
-ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x4277de08:0x144>
-ld0: 58911 MB, 7510 cyl, 255 head, 63 sec, 512 bytes/sect x 120649728 sectors
-ld0: GPT GUID: 7c19bd39-e4aa-4a82-8607-e262d8014ab5
+ld0 at sdmmc0: <0x74:0x4a60:SD:0x00:0x6072021d:0x153>
+ld0: 15238 MB, 7739 cyl, 64 head, 63 sec, 512 bytes/sect x 31207424 sectors
+ld0: GPT GUID: ac5d95af-54e5-441c-ac23-87a0595f1214
 dk0 at ld0: "EFI", 163840 blocks at 3, type: msdos
 dk1 at ld0: "netbsd-root", 4751355 blocks at 163843, type: ffs
-ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+ld0: 4-bit width, 25.000 MHz
 uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 1
 uhub2: single transaction translator
 uhub2: 4 ports with 4 removable, self powered
 uhidev0 at uhub2 port 1 configuration 1 interface 0
 uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/1
-ukbd0 at uhidev0: 8 Variable keys, 6 Array codes
+ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
 uhidev1 at uhub2 port 1 configuration 1 interface 1
 uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
-umass0 at uhub2 port 4 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 3
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
+uhub2: autoconfiguration error: device problem, disabling port 2
 cgd: self-test aes-xts-256
 cgd: self-test aes-xts-512
 cgd: self-test aes-cbc-128
@@ -164,12 +158,18 @@ cgd: self-test 3des-cbc-192
 cgd: self-test blowfish-cbc-448
 cgd: self-test aes-cbc-128 (encblkno8)
 cgd: self-tests passed
-WARNING: 1 error while detecting hardware; check system log.
+WARNING: 2 errors while detecting hardware; check system log.
 boot device: dk1
 root on dk1
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.80/modules
-WARNING: clock lost 218 days
+kern.module.path=/stand/evbarm/9.99.81/modules
+WARNING: preposterous TOD clock time
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 wsdisplay0: screen 4 added (default, vt100 emulation)
+umass0 at uhub2 port 4 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 3
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
