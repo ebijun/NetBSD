@@ -1,21 +1,21 @@
-VERSION: :1,$s/2021-02-18/2021-02-18/g
-ISO:     :1,$s/202102162210Z/202102162210Z/g
-NetBSD:  :1,$s/9.99.80/9.99.80/g
+VERSION: :1,$s/2021-04-15/2021-04-15/g
+ISO:     :1,$s/202104120010Z/202104120010Z/g
+NetBSD:  :1,$s/9.99.81/9.99.81/g
 PKGSRC:  :1,$s/2021-1/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-02-18-netbsd-raspi-aarch64.img
+Subject: 2021-04-15-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-02-18-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2021-04-15-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-02-18-aarch64/2021-02-18-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-02-18-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-04-15-aarch64/2021-04-15-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-04-15-aarch64/MD5
 
 Topics:
-- boot via UEFI_VER=v1.22
+- boot via UEFI_VER=v1.25
  https://github.com/pftf/RPi4/releases
 - only for RPI4 
   (fill dtb for RPI3?)
@@ -23,36 +23,36 @@ Topics:
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
 - [Issue] Can't recognize DOS partition from Windows
   Should I Use MBR version image?
-- [Test] Delete entoropy-file special initialization.
-	rndctl -S var/db/entropy-file #create on amd64 machine.
-	cp var/db/entropy-file ${MNT_ROOT}/var/db/entropy-file
 
 sysinfo:
- bozohttpd-20210210 NetBSD-9.99.80 sh-20181212-20210216194615Z
- tzdata-2021a userland-NetBSD-9.99.80/evbarm
+ bind-9.16.12 bozohttpd-20210403 libssh-39.0 NetBSD-9.99.81
+ openssh-8.5 opensshd-8.5 openssl-1.1.1k pkg_install-20210410
+ sh-20181212-20210412000556Z unbound-1.13.1
+ userland-NetBSD-9.99.81/evbarm wpa_supplicant-2.9
+ yacc-2.0
 
 pkgsrc:
- curl-7.75.0 fossil-2.14 gd-2.3.1 git-base-2.30.1
- libgcrypt-1.9.1 libimagequant-2.13.1 libwebp-1.2.0
- nghttp2-1.43.0 perl-5.32.1 ruby26-gettext-3.3.7
- ruby26-oauth-0.5.5 ruby26-pkg-config-1.4.5 sudo-1.9.5p2nb1
-
-pkgsrc Failed: 
-
-- pkgsrc/databases/mysql57-client: libreoffice depends 
-
-ld: sha2_password_common.cc:(.text+0x30c): undefined reference to `alloca'
-sha2_password_common.cc:(.text+0x30c): relocation truncated to fit: R_AARCH64_CALL26 against undefined symbol `alloca'
-
-last succeeded:
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-08-22/mysql-client-5.7.32nb1.tgz
+ curl-7.76.0 dbus-1.12.20nb1 fossil-2.15.1 gd-2.3.2
+ git-base-2.31.1 glib2-2.68.0nb2 gnutls-3.7.1
+ gobject-introspection-1.68.0 gtk3+-3.24.28
+ libcups-2.3.3op2 libgcrypt-1.9.2 libgpg-error-1.42
+ libimagequant-2.14.1 libxkbcommon-1.2.0 medit-1.2.0nb17
+ nettle-3.7.2 pango-1.48.4 py38-cElementTree-3.8.9
+ py38-expat-3.8.9 python38-3.8.9 qt5-qtbase-5.15.2nb2
+ ruby26-base-2.6.7 ruby26-cairo-1.17.5
+ ruby26-native-package-installer-1.1.1
+ ruby26-nokogiri-1.11.2 ruby26-red-colors-0.1.1
+ ruby26-simpleidn-0.2.1 sudo-1.9.6p1
+ uim-1.8.9pre20210104 zstd-1.4.9
 
 RPI4 status:
-- boot via UEFI_VER=v1.22
+- boot via UEFI_VER=v1.25
  https://github.com/pftf/RPi4/releases
  copy pre-setted RPI_EFI.fd
   serial ,should not set graphical
   disable 3GB -> recognize 4GB
+XXX: update RPI_EFI.fd(1.17)->1.25
+
 - HDMI: works
 - audio: vcaudio
   http://mail-index.netbsd.org/source-changes-d/2021/01/22/msg013133.html
@@ -63,19 +63,19 @@ RPI4 status:
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.80 evbarm-aarch64 202102162210Z arm64.img from nyftp.
-- boot via UEFI_VER=v1.22
+- NetBSD-current 9.99.81 evbarm-aarch64 202104120010Z arm64.img from nyftp.
+- boot via UEFI_VER=v1.25
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/sysinfo
 
 Update from 2021-01-16:
- https://github.com/ebijun/NetBSD/commit/4fcaa368a9f3be0a3a1a50b5f4b88f6d491b8978
+https://github.com/ebijun/NetBSD/commit/9a9d7f35eac63be0379d9eae60576d11f9a25685
 
 sysinfo:
- bozohttpd-20210210 NetBSD-9.99.80 sh-20181212-20210216194615Z
- tzdata-2021a userland-NetBSD-9.99.80/evbarm
+ bozohttpd-20210210 NetBSD-9.99.81 sh-20181212-20210216194615Z
+ tzdata-2021a userland-NetBSD-9.99.81/evbarm
 
 pkgsrc:
  curl-7.75.0 fossil-2.14 gd-2.3.1 git-base-2.30.1 libgcrypt-1.9.1
