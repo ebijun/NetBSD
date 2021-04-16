@@ -16,9 +16,9 @@
 #g
 #x
 #
-VERSION=202103171400Z
+VERSION=202104142250Z
 TEO=http://teokurebsd.org/netbsd/liveimage/20200518-luna68k
-IMAGE=liveimage-luna68k-raw-20200518.img
+IMAGE=liveimage-luna68k-raw-2021-02-19.img
 IMAGE_CURRENT=liveimage-luna68k-raw-`date +%Y-%m-%d`.img
 VND0=vnd0
 MNT=/mnt
@@ -61,3 +61,11 @@ last:
 
 echo:
 	for i in ${SETS}/* ; do (echo "tar xzpf $${i} -C ${MNT}") done |fgrep -f Pattern
+
+dmesg:
+	vnconfig ${VND0} ${IMAGE_CURRENT}
+	fsck /dev/${VND0}a
+	mount /dev/${VND0}a ${MNT}
+	cp /mnt/root/dmesg ../dmesg/luna68k/nono
+	umount ${MNT}
+	vnconfig -u ${VND0}
