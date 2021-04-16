@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20210415)
+Subject: pinebook status update (20210416)
 
 Topics:
 - touchpad: sometimes cursor far away.
@@ -60,7 +60,9 @@ sysinfo:
  bozohttpd-20210403 openssl-1.1.1k pkg_install-20210410
  sh-20181212-20210413191651Z unbound-1.13.1
 
-pkgsrc:
+pkgsrc packages:
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2021-1/
+
  ImageMagick-7.0.11.6 adwaita-icon-theme-3.38.0 aiomixer-1.0.2
  atkmm-2.28.1 audacious-plugins-4.1nb2 autogen-5.18.16nb2
  babl-0.1.86 bison-3.7.6 cairomm-1.14.2 cbindgen-0.18.0
@@ -164,7 +166,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 8.99.24 (GENERIC) #0: Fri Aug 31 18:44:04 UTC 2018  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+ NetBSD 9.99.81 (GENERIC) #0: Wed Apr 14 05:43:09 UTC 2021  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
@@ -192,9 +194,6 @@ pkginfo:
 pkgchk.conf:
  https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkgchk.conf
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
-
-packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-08-22/
 
 --
 Jun Ebihara
