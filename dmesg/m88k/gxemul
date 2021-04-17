@@ -1,35 +1,33 @@
-$ gxemul -e luna-88k -d liveimage-luna88k-raw-20201206.img  bsd
-GXemul 0.6.3    Copyright (C) 2003-2021  Anders Gavare
+$ ./gxemul -e luna-88k -d liveimage-luna88k-raw-20201206.img  bsd.mp
+GXemul trunk    Copyright (C) 2003-2021  Anders Gavare
 Read the source code and/or documentation for other Copyright messages.
 
-Simple setup...
-    net:
-        simulated network: 10.0.0.0/8 (max outgoing: TCP=100, UDP=100)
-        simulated gateway+nameserver: 10.0.0.254 (60:50:40:30:20:10)
-        simulated nameserver uses real nameserver 192.168.179.1
-    machine:
-        memory: 112 MB
-        cpu0: 88100
-        machine: LUNA 88K
-        diskimage: liveimage-luna88k-raw-20201206.img
-            IDE DISK id 0, read/write, 2064 MB (4227552 512-byte blocks)
-        loading bsd
-        cpu0: starting at 0x00081004
+net: 
+    simulated network: 
+        10.0.0.0/8 (max outgoing: TCP=100, UDP=100)
+        gateway+nameserver: 10.0.0.254 (60:50:40:30:20:10)
+        nameserver uses real nameserver 192.168.179.1
+machine: 
+    model: LUNA 88K
+    cpu: 88100 (Big-endian)
+    memory: 64 MB
+    diskimage: liveimage-luna88k-raw-20201206.img
+        SCSI DISK id 6, read/write, 2064 MB (4227552 512-byte blocks)
+    file: loading bsd.mp
+    cpu0: starting at 0x00081004 <__start>
 -------------------------------------------------------------------------------
 
+[ memory READ: from non-existant paddr=0xfff05000 len=4 pc=0x002f593c <m8820x_setup_board_config+0x7c> ]
 CPU0 is associated to 2 MC88200 CMMUs
-CPU1 is associated to 2 MC88200 CMMUs
-CPU2 is associated to 2 MC88200 CMMUs
-CPU3 is associated to 2 MC88200 CMMUs
 [ no symbol table formats found ]
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 	The Regents of the University of California.  All rights reserved.
 Copyright (c) 1995-2021 OpenBSD. All rights reserved.  https://www.OpenBSD.org
 
-OpenBSD 6.9 (GENERIC) #2: Sat Apr 10 03:34:42 JST 2021
-    aoyama@aurora.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC
-real mem = 117440512 (112MB)
-avail mem = 110866432 (105MB)
+OpenBSD 6.9 (GENERIC.MP) #10: Sat Apr 10 07:04:42 JST 2021
+    aoyama@aurora.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC.MP
+real mem = 67108864 (64MB)
+avail mem = 60989440 (58MB)
 warning: no entropy supplied by boot loader
 random: boothowto does not indicate good seed
 mainbus0 at root: OMRON LUNA-88K, 25MHz
@@ -42,40 +40,59 @@ le0 at mainbus0: address 00:00:0a:10:20:30
 le0: 32 receive buffers, 8 transmit buffers
 sio0 at mainbus0: 7201a
 siotty0 at sio0 channel 0 (console)
-ws0 at sio0 channel 1[ luna88k sio write data to dev 1 (keyboard/mouse): TODO ]
-
+ws0 at sio0 channel 1
 wskbd0 at ws0 mux 1
 wsmouse0 at ws0 mux 0
 xp0 at mainbus0: HD647180X I/O processor
 fb at mainbus0 not configured
 spc0 at mainbus0
 scsibus0 at spc0: 8 targets, initiator 7
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-spc0: SCSI bus reset
-/dev/ksyms: Symbol table not valid.
+probe(spc0:0:0): Check Condition (error 0) on opcode 0x0
+probe(spc0:1:0): Check Condition (error 0) on opcode 0x0
+probe(spc0:2:0): Check Condition (error 0) on opcode 0x0
+probe(spc0:3:0): Check Condition (error 0) on opcode 0x0
+probe(spc0:4:0): Check Condition (error 0) on opcode 0x0
+probe(spc0:5:0): Check Condition (error 0) on opcode 0x0
+[ disk scsi: WARNING: INQUIRY with cmd[1]=0x01 not yet implemented ]
+d0 at scsibus0 targ 6 lun 0: <GXemul, liveimage-luna8, 0>
+sd0: 2064MB, 512 bytes/sector, 4227552 sectors
+[ disk scsi: MODE_SENSE for page 8 is not yet implemented! ]
+ disk scsi: WARNING: INQUIRY with cmd[1]=0x01 not yet implemented ]
+dev/ksyms: Symbol table not valid.
 vscsi0 at root
 scsibus1 at vscsi0: 256 targets
 softraid0 at root
 scsibus2 at softraid0: 256 targets
-boot device: <unknown>
-root device: sd0
-use one of: exit le0
-root device: 
-use one of: exit le0
-root device: exit
-syncing disks... done
-GXemul> quit
-$ gxemul -h
-GXemul 0.6.3    Copyright (C) 2003-2021  Anders Gavare
+boot device: sd0
+root on sd0a (e144fed2c61b2429.a) swap on sd0b dump on sd0b
+Automatic boot in progress: starting file system checks.
+dev/sd0a (e144fed2c61b2429.a): file system is clean; not checking
+pf enabled
+starting network
+starting early daemons: syslogd pflogd ntpd.
+starting RPC daemons:.
+savecore: can't find device 226/4915826
+checking quotas: done.
+kvm_mkdb: can't open /dev/ksyms
+clearing /tmp
+kern.securelevel: 0 -> 1
+creating runtime link editor directory cache.
+preserving editor files.
+starting network daemons: smtpd.
+starting local daemons: cron.
+Sat Apr 17 15:43:58 JST 2021
+
+OpenBSD/luna88k (nono88k.my.domain) (console)
+
+login: root
+Last login: Sat Apr 17 15:40:16 on console
+OpenBSD 6.9 (GENERIC.MP) #10: Sat Apr 10 07:04:42 JST 2021
+
+Welcome to OpenBSD: The proactively secure Unix-like operating system.
+
+Please use the sendbug(1) utility to report bugs in the system.
+Before reporting a bug, please try to reproduce it with the latest
+version of the code.  With bug reports, please try to ensure that
+enough information to reproduce the problem is enclosed, and if a
+known fix for it exists, include that as well.
+
