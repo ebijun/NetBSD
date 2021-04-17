@@ -56,9 +56,13 @@ cdrtools-3.01nb1    Software for creating ISO9660 images and writing CD/DVD/Blu-
 check-0.15.2        Unit test framework for C
 chromaprint-1.5.0nb1 Audio fingerprinting
 clang-10.0.1nb3     C language family frontend for LLVM
+clutter-1.26.2nb6   Open GL based interactive canvas library
+clutter-gst-3.0.26nb6 Clutter GStreamer integration
+clutter-gtk-1.8.4nb3 GTK+ Integration library for Clutter
 cmake-3.20.1        Cross platform make
 cmocka-1.1.5        Unit testing framework for C supporting mock objects
 cmus-2.9.1nb2       Small, fast and powerful text mode music player
+cogl-1.22.0nb11     Modern 3D graphics API
 coinmp-1.8.4        Linear Programming solver library
 consolekit-1.2.2    Framework for defining and tracking users, login sessions, and seats
 cppunit-1.15.1      C++ unit testing framework
@@ -104,6 +108,7 @@ flac-1.3.3          Free lossless audio codec
 fltk-1.3.5nb1       Fast Light Tool Kit for graphical user interfaces
 fluidsynth-2.2.0    Software synthesizer based on SoundFont2
 fossil-2.15.1       High-reliability, distributed software configuration management
+frei0r-1.7.0nb1     Collection of free and portable video plugins
 fribidi-1.0.10      Free Implementation of the Unicode Bidirectional Algorithm
 g95-0.93nb13        Fortran 95 compiler from g95.org
 game-music-emu-0.6.3 Video game music file emulation/playback library
@@ -143,6 +148,7 @@ gmp-6.2.1           Library for arbitrary precision arithmetic
 gnome-doc-utils-0.20.10nb8 Documentation utilities for the GNOME project
 gnome-icon-theme-3.12.0nb6 Theme consisting of a set of icons for GNOME
 gnome-keyring-3.36.0 GNOME password and secret manager
+gnome-video-effects-0.5.0nb1 Collection of GStreamer effects for GNOME
 gnupg2-2.2.27       GnuPG with OpenPGP and S/MIME capabilities
 gnutls-3.7.1        Transport Layer Security library
 gobject-introspection-1.68.0 GObject Introspection
@@ -159,6 +165,7 @@ gsl-2.5             The GNU Scientific Library
 gsmartcontrol-1.1.3 Hard disk drive health inspection tool
 gspell-1.8.3nb6     Spell checking API for GTK+ applications
 gssdp-1.0.3nb14     Simple Service Discovery Protocol library and device sniffer (1.0 branch)
+gst-plugins1-bad-1.16.2nb2 Open source multimedia framework - Bad plugins
 gst-plugins1-base-1.16.2nb4 Open source multimedia framework - Base plugins
 gst-plugins1-flac-1.16.2nb1 Open source multimedia framework - flac plugin
 gst-plugins1-good-1.16.2nb1 Open source multimedia framework - Good plugins
@@ -167,6 +174,7 @@ gst-plugins1-mpg123-1.16.2nb1 Open source multimedia framework - mpg123 plugin
 gst-plugins1-ogg-1.16.2 Open source multimedia framework - ogg plugin
 gst-plugins1-opus-1.16.2 Open source multimedia framework - opus plugin
 gst-plugins1-oss-1.16.2nb1 Open source multimedia framework - oss plugin
+gst-plugins1-v4l2-1.16.2nb1 Open source multimedia framework - v4l2 plugin
 gst-plugins1-vorbis-1.16.2 Open source multimedia framework - vorbis plugin
 gst-plugins1-wavpack-1.16.2nb1 Open source multimedia framework - wavpack plugin
 gstreamer1-1.16.2nb2 Open source multimedia framework
@@ -202,6 +210,7 @@ id3-1.1.2           ID3 v1.1 tag editor
 ilmbase-2.5.5       High dynamic-range (HDR) image file format library and tools
 imake-1.0.8         Imake and other utilities from modular X.org
 inkscape-1.0.2      Scalable Vector Graphics (SVG) editor
+intel-backlight-20200418nb1 Tool for controlling backlight level on certain Intel GPUs
 intltool-0.51.0nb5  Internationalization Tool Collection
 iso-codes-3.77nb1   List of country, language and currency names
 itstool-2.0.6nb2    ITS Tool allows you to translate XML documents with PO files
@@ -267,9 +276,11 @@ libfreehand-0.1.2nb6 Library for Adobe/Macromedia drawings
 libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.9.2     GNU cryptographic library
 libgdata-0.16.1nb32 Google Data API based Glib client library
+libgee-0.20.3nb3    Library providing GObject-based interfaces and classes
 libglade-2.6.4nb36  Runtime interpreter for GLADE GUI files
 libgnome-keyring-3.12.0nb1 GNOME password and secret manager
 libgpg-error-1.42   Definitions of common error values for all GnuPG components
+libgphoto2-2.5.8nb5 Digital camera access library
 libgpod-0.8.2nb47   Library for accessing iPod onboard databases, playlists, etc
 libgsf-1.14.47nb2   GNOME structured file library
 libgtop-2.28.4nb18  Library to retrieve system information, used in GNOME2
@@ -315,6 +326,7 @@ libplist-1.12nb4    Handle Apple Binary and XML Property Lists
 libproxy-0.4.15nb1  Library that provides automatic proxy configuration management
 libpsl-0.21.1nb2    Library to handle the Public Suffix List
 libqxp-0.0.2nb9     Library that parses the file format of QuarkXPress documents
+libraw-0.19.5       Raw decoding/processing library
 libreoffice-7.1.2.2nb3 Office productivity suite from The Document Foundation
 libreplaygain-0rc475 ReplayGain library for the musepack decoder
 librespot-0.1.6     Open Source Spotify client library
@@ -687,6 +699,7 @@ seamonkey-l10n-2.53.6 Language packs for www/seamonkey
 serd-0.30.10        Lightweight C library for RDF syntax
 serf-1.3.9nb1       High-performance asynchronous HTTP client library
 shared-mime-info-1.10nb3 Core database of common types
+shotwell-0.30.8nb10 Photo organizer for the GNOME desktop
 smartmontools-7.2   Control and monitor storage systems using SMART
 sord-0.16.8         Lightweight C library for storing RDF data in memory
 soundtouch-2.1.2    Library for changing the tempo, pitch, and playback rates of audio
@@ -959,7 +972,9 @@ wavpack-5.4.0       Audio codec for lossless, lossy and hybrid compression
 wayland-1.18.0nb2   Display server protocol - development libraries
 wayland-protocols-1.20 Additional wayland functionality
 web2c-2020nb6       TeX implementation translating WEB to C
+webkit-gtk-2.32.0   GTK port of the WebKit browser engine
 wget-1.21.1         Retrieve files from the 'net via HTTP and FTP
+woff2-1.0.2nb1      WOFF font file format library
 wxGTK30-3.0.5.1nb2  Cross-platform wxWidgets GUI library (3.0 branch)
 x11-links-1.32      Shadow tree of links to native X11 headers and libraries
 x264-devel-20191217nb1 GPL licensed H.264 encoder

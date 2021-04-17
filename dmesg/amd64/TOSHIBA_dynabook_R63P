@@ -55,11 +55,11 @@ acpi0 at mainbus0: Intel ACPICA 20210331
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE41B51630348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFE86D8BC30348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE41850059808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFE86A8A659808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE4184FFF0408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFE86A8A5F0408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -264,13 +264,13 @@ kern info: [drm] Memory usable by graphics device = 4096M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at msi7 vec 0 (i915drmkms0)
-iwm0: hw rev 0x210, fw ver 22.361476.0, address a4:02:b9:2f:d2:80
 intelfb0 at i915drmkms0
-warning: /home/source/ab/HEAD/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:647: Unclaimed register detected before writing to register 0x41000
 intelfb0: framebuffer at 0xe00af000, size 1366x768, depth 32, stride 5504
+iwm0: hw rev 0x210, fw ver 22.361476.0, address a4:02:b9:2f:d2:80
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+kern error: [drm:(/home/source/ab/HEAD/src/sys/external/bsd/drm2/dist/drm/i915/intel_sprite.c:131)intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A: -35
