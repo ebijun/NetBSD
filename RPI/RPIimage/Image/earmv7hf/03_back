@@ -1,10 +1,13 @@
-dd if=/dev/rsd0d of=back.img count=512 bs=5160960 progress=1
+dd if=/dev/rsd0d of=back.img bs=512 count=5160960 
 # earmv7hf: config.txt should contain start address
 
 DIR=tmp`date +%Y%m%d-%H%M`
 mkdir $DIR
 
 vnconfig vnd0 back.img
+ sync
+ sleep 5
+ disklabel vnd0
  fsck /dev/vnd0a
  mount /dev/vnd0a /mnt
   for i in dmesg pkginfo version sysinfo
