@@ -16,8 +16,9 @@
 #g
 #x
 #
+VERSION=202104142250Z
 TEO=http://teokurebsd.org/netbsd/liveimage/20200518-luna68k
-IMAGE=liveimage-luna68k-raw-20200518.img
+IMAGE=liveimage-luna68k-raw-2021-02-19.img
 IMAGE_CURRENT=liveimage-luna68k-raw-`date +%Y-%m-%d`.img
 VND0=vnd0
 MNT=/mnt
@@ -43,15 +44,16 @@ cdrom:
 
 IMAGEORG=liveimage-luna68k-raw-20200518.img
 
+
 update:
-	#cp ${IMAGE} ${IMAGE_CURRENT}
+	cp ${IMAGE} ${IMAGE_CURRENT}
 	vnconfig ${VND0} ${IMAGE_CURRENT}
 	fsck /dev/${VND0}a
 	mount /dev/${VND0}a ${MNT}
-	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102181830Z/luna68k/binary/sets/base.tgz -C /mnt
-	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102181830Z/luna68k/binary/sets/kern-GENERIC.tgz -C /mnt
-	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102181830Z/luna68k/binary/sets/modules.tgz -C /mnt
-	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202102181830Z/luna68k/binary/sets/rescue.tgz -C /mnt
+	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/${VERSION}/luna68k/binary/sets/base.tgz -C /mnt
+	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/${VERSION}/luna68k/binary/sets/kern-GENERIC.tgz -C /mnt
+	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/${VERSION}/luna68k/binary/sets/modules.tgz -C /mnt
+	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/${VERSION}/luna68k/binary/sets/rescue.tgz -C /mnt
 	cp ${SETS}/etc.tgz ${MNT}
 
 last:
@@ -59,3 +61,11 @@ last:
 
 echo:
 	for i in ${SETS}/* ; do (echo "tar xzpf $${i} -C ${MNT}") done |fgrep -f Pattern
+
+dmesg:
+	vnconfig ${VND0} ${IMAGE_CURRENT}
+	fsck /dev/${VND0}a
+	mount /dev/${VND0}a ${MNT}
+	cp /mnt/root/dmesg ../dmesg/luna68k/nono
+	umount ${MNT}
+	vnconfig -u ${VND0}

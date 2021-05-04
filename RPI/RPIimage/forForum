@@ -1,25 +1,25 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2020-02-28/2020-02-28/g
-:1,$s/9.0/9.0/g
-:1,$s/202002151720Z/202002151720Z/g
-:1,$s?2020/02/27/msg006569.html?2020/02/27/msg006569.html?
+:1,$s/2021-04-02/2021-04-02/g
+:1,$s/9.99.81/9.99.81/g
+:1,$s/202104010300Z/202104010300Z/g
+:1,$s?2021/04/02/msg007213.html?2021/04/02/msg007213.html?
 
-2020-02-28-netbsd-raspi-earmv6hf.img
+2021-04-02-netbsd-raspi-earmv6hf.img
 
-I've updated 2020-02-28-netbsd9.0-raspi-earmv6hf.img.gz for RPI0/1/2/3.
+I've updated 2021-04-02-netbsd9.99.81-raspi-earmv6hf.img.gz for RPI0/1/2/3.
 
-http://mail-index.netbsd.org/port-arm/2020/02/27/msg006569.html
+http://mail-index.netbsd.org/port-arm/2021/04/02/msg007213.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/NetBSD-9.0/2020-02-28-netbsd9.0-raspi-earmv6hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-04-02-earmv6hf/2021-04-02-netbsd-raspi-earmv6hf.img.gz
 
 Update:
-- NetBSD 9.0 evbarm-earmv6hf 202002151720Z rpi.img from nyftp.
+- NetBSD 9.99.81 evbarm-earmv6hf 202104010300Z rpi.img from nyftp.
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
 - sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/22f574b0f97fb65e6d89ce8786c437b482ad8931
+ https://github.com/ebijun/NetBSD/commit/204c7f35c89d7ff3875ae3a0b010ed9d556505e7
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/

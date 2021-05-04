@@ -5,19 +5,17 @@ To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
 Topics:
-- NetBSD Security Advisory 2021-001: 
- Predictable ID disclosures in IPv4 and IPv6
- http://mail-index.netbsd.org/current-users/2021/03/11/msg040448.html
 - touchpad: sometimes cursor far away.
 - audio CD with wavpack
  Encode: 
-   pkg_add abcde
-   pkg_add glyr
+   On Windows: Exact Audio Copy & foobar2000
+   On pkgsrc:
+   pkg_add abcde; pkg_add glyr
    abcde -d /dev/rcd0a -B -o wv -1 -a default,cue
-   XXX: can't see each tracks with player.
+   XXX: can't see each tracks with qmmp.
  Play: 
-  audacious & audacious-plugins,cmus
-  qmmp: can't get audio output
+  qmmp: can play wavpack file.
+   Setting->Output->OSS plugin(liboss.so)
 
 - audio0 input issue
   http://mail-index.netbsd.org/port-arm/2021/02/22/msg007185.html
@@ -25,17 +23,20 @@ Topics:
   Resource temporarily unavailable" from audiorecord"
   audio0(ausoc1): trigger_input failed: errno=5
   audio0(audoc1): device timeout
-- firefox compile option,adviced from @ryo_on.
-  PKG_OPTIONS.firefox+=pulseaudio  #enable audio input with WebRTC
-- libreoffice-7.1.1.2nb1 can detect NetBSD.
 
 pkgsrc:
 - works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp,libreoffice
-- firefox86.0.1 works fine.
+
+- firefox87.0 works fine.
+ https://twitter.com/ebijun/status/1382304905759584259 
+
  zoom meeting with firefox on NetBSD/aarch64 on pinebook pro 
   with UserAgent switcher addon as Linux.
  Send: Share Screen,camera/USB Camera
  Problem: Can"t show others screen/in-camera.
+- LibreOffice 7.1.2.2 works fine.
+ https://twitter.com/ebijun/status/1382306151027548161
+
 - nono: luna68k/luna88k emulator
  add /etc/mk.conf
   ACCEPTABLE_LICENSES= nono-license
@@ -59,47 +60,49 @@ ToDo:
 System Updates:
 
 sysinfo:
- bind-9.16.12 bozohttpd-20210227 libssh-39.0
- NetBSD-9.99.81 openssh-8.5 opensshd-8.5
- openssl-1.1.1j sh-20181212-20210313090612Z
- userland-NetBSD-9.99.81/evbarm
- wpa_supplicant-2.9 yacc-2.0
+ bozohttpd-20210403 openssl-1.1.1k pkg_install-20210410
+ sh-20181212-20210413191651Z unbound-1.13.1
 
-pkgsrc:
- ImageMagick-7.0.11.0 SDL2-2.0.14nb2 asciidoc-9.1.0
- audacious-4.1 audacious-plugins-4.1 cmake-3.19.6
- cmark-0.29.0nb1 coreutils-8.32 dhcpcd-9.4.0
- ffmpeg4-4.3.2 firefox-86.0.1 firefox-l10n-86.0.1
- fmtlib-7.1.3 gd-2.3.2 gdbus-codegen-2.66.7
- git-base-2.30.2nb1 glew-2.2.0nb1 glib2-2.66.7
- glib2-tools-2.66.7 gnome-doc-utils-0.20.10nb8
- graphviz-2.44.1nb7 gtar-base-1.34 gtk3+-3.24.25
- help2man-1.48.2 jasper-2.0.26 libebml-1.4.2
- libgcrypt-1.9.2 libimagequant-2.14.1 libmatroska-1.6.3
- libnumbertext-1.0.7 libreoffice-7.1.1.2nb1
- makejvf-1.1a mendexk-3.2 meson-0.57.1
- mkvtoolnix-55.0.0 mysql-client-5.7.33
- nettle-3.7.1 nodejs-14.16.0 nss-3.62
- pciutils-3.7.0nb1 php73-owncloud-10.6.0
- php73-sqlite3-7.3.27nb5 protobuf-3.15.5
- pugixml-1.11.4 py38-cElementTree-3.8.8
- py38-cffi-1.14.5 py38-cryptodome-3.10.1 py38-cython-0.29.22
- py38-expat-3.8.8
- py38-gyp-0.1pre20200512.caa60026e223fc501e8b337fd5086ece4028b1c6
- py38-setuptools_scm-5.0.2 py38-sqlite3-3.8.8nb18
- py38-zipp-3.4.1 python37-3.7.10 python38-3.8.8
- rclone-1.54.1 ruby26-cairo-1.17.5
- ruby26-native-package-installer-1.1.1
- ruby26-red-colors-0.1.1 ruby26-simpleidn-0.2.1
- taglib-1.12 tex-amsmath-2.17inb1 tex-baekmuk-2.2.1
- tex-booktabs-1.61803398nb1 tex-colortbl-1.0enb1
- tex-csquotes-5.2k tex-haranoaji-20210130 tex-japanese-otf-1.7b8.56938
- tex-jsclasses-20201009 tex-l3kernel-2020.57669nb1
- tex-l3packages-2020.57600nb3 tex-latex-base-dev-20210501pre1
- tex-latex-bin-2020 tex-oberdiek-2020.56291nb1
- tex-platex-2020.57730 tex-ptex-3.2pl55920
- tex-ptex-base-2020.56487 tex-ptex-fontmaps-20201227.0
- xfce4-mousepad-0.5.3 youtube-dl-20210303nb2
+pkgsrc packages:
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2021-1/
+
+ ImageMagick-7.0.11.6 adwaita-icon-theme-3.38.0 aiomixer-1.0.2
+ atkmm-2.28.1 audacious-plugins-4.1nb2 autogen-5.18.16nb2
+ babl-0.1.86 bison-3.7.6 cairomm-1.14.2 cbindgen-0.18.0
+ cdk-5.0.20210109 cmake-3.20.1 cmus-2.9.1nb2 cups-base-2.3.3op2
+ curl-7.76.0 dbus-1.12.20nb1 dbus-glib-0.112 deforaos-pdfviewer-0.1.0nb8
+ extra-cmake-modules-5.80.0 farstream-0.2.9nb4 ffmpeg2-2.8.17nb7
+ ffmpeg3-3.4.8nb8 ffmpeg4-4.4 file-roller-3.38.0 firefox-87.0nb1
+ firefox-l10n-87.0 firefox52-52.9.0nb35 fluidsynth-2.2.0
+ fossil-2.15.1 game-music-emu-0.6.3 gconfmm-2.28.3nb25
+ gdbus-codegen-2.68.0 gettext-0.21 gettext-asprintf-0.21
+ gexiv2-0.12.2 git-base-2.31.1 glib2-2.68.0nb2 glib2-tools-2.68.0
+ glibmm-2.66.0 gnutls-3.7.1 go-1.16.2 go115-1.15.10 go116-1.16.2
+ gobject-introspection-1.68.0 graphviz-2.44.1nb9
+ gsettings-desktop-schemas-40.0 gst-plugins0.10-vorbis-0.10.36nb2
+ gtk3+-3.24.28 gtkmm3-3.24.4 guile22-2.2.7nb3 help2man-1.48.3
+ ibus-1.5.23nb3 ilmbase-2.5.5 inkscape-1.0.2 jasper-2.0.28
+ json-glib-1.4.4nb2 ldb-2.2.1 libao-sun-1.2.2nb2 libassuan-2.5.5
+ libcdr-0.1.7 libcups-2.3.3op2 libdazzle-3.38.0 libgpg-error-1.42
+ libgweather-40.0 libhandy-0.0.13nb5 libheif-1.11.0nb1 libical-3.0.9
+ libmwaw-0.3.17 libpurple-2.14.1nb5 libreoffice-7.1.2.2nb3
+ libsigc++-2.10.6 libwildmidi-0.4.4 libxkbcommon-1.2.0
+ lmdb-0.9.29 luatex-1.12.0nb5 mate-settings-daemon-1.24.0nb10
+ medit-1.2.0nb17 meson-0.57.2 mkvtoolnix-56.1.0 mm-common-1.0.2
+ mp4v2-4.1.5nb1 mpg123-1.26.5 nettle-3.7.2 nodejs-14.16.1
+ nspr-4.30 nss-3.63nb1 openal-soft-1.21.1 openexr-2.5.5
+ opusfile-0.12 oxygen-icons-5.80.0 p5-Scalar-List-Utils-1.56
+ pango-1.48.4 pangomm-2.46.0 pkgconf-1.7.4 poppler-21.04.0nb1
+ poppler-cpp-21.04.0nb1 poppler-glib-21.04.0nb1 poppler-includes-21.04.0
+ protobuf-3.15.7 pulseaudio-14.2nb2 py38-cElementTree-3.8.9
+ py38-expat-3.8.9 py38-lxml-4.6.3 py38-mako-1.1.4 py38-pygments-2.8.1
+ py38-setuptools-54.2.0 py38-sphinx-3.5.3 py38-sqlite3-3.8.9nb18
+ py38-urllib3-1.26.4 python38-3.8.9 qt5-qtbase-5.15.2nb2 qt5-qtsvg-5.15.2nb2
+ rclone-1.54.1nb1 re2c-2.1.1 ruby26-base-2.6.7 ruby26-nokogiri-1.11.2
+ rust-1.49.0nb1 samba-4.13.7 seamonkey-2.53.6nb1 sqlite3-3.35.4
+ sudo-1.9.6p1 telepathy-glib-0.24.1nb18 uim-1.8.9pre20210104
+ vorbis-tools-1.4.2 web2c-2020nb6 x265-3.5 xfce4-tumbler-0.3.0nb5
+ xterm-367 youtube-dl-20210407 zstd-1.4.9
 
 pkgsrc todo:
 - mate
@@ -194,9 +197,6 @@ pkginfo:
 pkgchk.conf:
  https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkgchk.conf
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
-
-packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2020-08-22/
 
 --
 Jun Ebihara

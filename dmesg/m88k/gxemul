@@ -1,0 +1,48 @@
+% gxemul -Xe luna-88k -I 1000000000 -M 256 -L /dev/tap0 -d 0:liveimage-luna88k-raw-20210418.img bsd.mp
+
+[ no symbol table formats found ]
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+	The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2021 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.9 (GENERIC.MP) #10: Sat Apr 10 07:04:42 JST 2021
+    aoyama@aurora.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC.MP
+real mem = 268435456 (256MB)
+avail mem = 258408448 (246MB)
+warning: no entropy supplied by boot loader
+random: boothowto does not indicate good seed
+mainbus0 at root: OMRON LUNA-88K, 25MHz
+cpu0: M88100 rev 0x3, 2 CMMU
+cpu0: M88200 (16K) rev 0x9, full Icache
+cpu0: M88200 (16K) rev 0x9, full Dcache
+clock0 at mainbus0: MK48T02
+lcd0 at mainbus0
+le0 at mainbus0: address 00:00:0a:10:20:30
+le0: 32 receive buffers, 8 transmit buffers
+sio0 at mainbus0: 7201a
+siotty0 at sio0 channel 0
+ws0 at sio0 channel 1
+wskbd0 at ws0: console keyboard
+wsmouse0 at ws0 mux 0
+xp0 at mainbus0: HD647180X I/O processor
+fb0 at mainbus0: 1280x1024, 1bpp
+wsdisplay0 at fb0 mux 1: console (std, vt100 emulation), using wskbd0
+spc0 at mainbus0
+scsibus0 at spc0: 8 targets, initiator 7
+sd0 at scsibus0 targ 0 lun 0: <GXemul, liveimage-luna8, 0>
+sd0: 2064MB, 512 bytes/sector, 4227552 sectors
+probe(spc0:1:0): Check Condition (error 0) on opcode 0x0
+probe(spc0:2:0): Check Condition (error 0) on opcode 0x0
+probe(spc0:3:0): Check Condition (error 0) on opcode 0x0
+probe(spc0:4:0): Check Condition (error 0) on opcode 0x0
+probe(spc0:5:0): Check Condition (error 0) on opcode 0x0
+probe(spc0:6:0): Check Condition (error 0) on opcode 0x0
+/dev/ksyms: Symbol table not valid.
+vscsi0 at root
+scsibus1 at vscsi0: 256 targets
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+boot device: <unknown>
+root device: sd0
+swap device (default sd0b): 
+root on sd0a swap on sd0b dump on sd0b
