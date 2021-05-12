@@ -14,7 +14,7 @@ RPI=${BINARY}/gzimg/arm64.img.gz
 ORD=a.img
 
 # UEFI
-UEFI_VER=v1.25
+UEFI_VER=v1.26
 UEFI_FIRM=RPi4_UEFI_Firmware_${UEFI_VER}.zip
 UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 
@@ -40,8 +40,8 @@ boot_config:
 	(cd ${MNT_BOOT};rm  LICENCE.broadcom bootcode.bin cmdline.txt config.txt fixup.dat fixup4.dat fixup4cd.dat fixup_cd.dat start.elf start4.elf start4cd.elf start_cd.elf)
 	(cd ${MNT_BOOT};rm -r dtb)	#keep for RPI3
 	unzip -d ${MNT_BOOT} ${UEFI_FIRM}
-	mv ${MNT_BOOT}/RPI_EFI.fd ${MNT_BOOT}/RPI_EFI.fd.org
-	cp boot/RPI_EFI.fd  ${MNT_BOOT} #disable 3GB barrier
+#	mv ${MNT_BOOT}/RPI_EFI.fd ${MNT_BOOT}/RPI_EFI.fd.org
+#	cp boot/RPI_EFI.fd  ${MNT_BOOT} #disable 3GB barrier
 	umount ${MNT_BOOT}
 	vnconfig -u ${VND}
 

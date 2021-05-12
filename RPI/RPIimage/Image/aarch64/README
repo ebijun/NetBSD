@@ -15,8 +15,11 @@ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-04-15-aarch64/2021-0
 http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-04-15-aarch64/MD5
 
 Topics:
-- boot via UEFI_VER=v1.25
+- boot via UEFI_VER=v1.26
  https://github.com/pftf/RPi4/releases
+    Add Cypress WiFi firmware binaries to archive
+    Revert to full device discovery during init by default, and add new "Fast Boot" feature for partial discovery (#114, #117, #144) [tianocore/edk2-platforms@efdc159]
+    Fix wrong miniUART baudrate [tianocore/edk2-platforms@d2339f3]
 - only for RPI4 
   (fill dtb for RPI3?)
 - build script
