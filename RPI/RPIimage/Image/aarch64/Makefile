@@ -7,7 +7,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2021-1/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202104120010Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202105120800Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img.gz
 #RPI=${BINARY}/gzimg/arm64mbr.img.gz
@@ -40,8 +40,8 @@ boot_config:
 	(cd ${MNT_BOOT};rm  LICENCE.broadcom bootcode.bin cmdline.txt config.txt fixup.dat fixup4.dat fixup4cd.dat fixup_cd.dat start.elf start4.elf start4cd.elf start_cd.elf)
 	(cd ${MNT_BOOT};rm -r dtb)	#keep for RPI3
 	unzip -d ${MNT_BOOT} ${UEFI_FIRM}
-#	mv ${MNT_BOOT}/RPI_EFI.fd ${MNT_BOOT}/RPI_EFI.fd.org
-#	cp boot/RPI_EFI.fd  ${MNT_BOOT} #disable 3GB barrier
+	mv ${MNT_BOOT}/RPI_EFI.fd ${MNT_BOOT}/RPI_EFI.fd.org
+	cp boot/RPI_EFI.fd  ${MNT_BOOT} #disable 3GB barrier
 	umount ${MNT_BOOT}
 	vnconfig -u ${VND}
 
