@@ -1,6 +1,6 @@
 
-#VER=6.8
-VER=snapshots
+VER=6.9
+#VER=snapshots
 
 #ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/miniroot68.fs
 
@@ -10,5 +10,5 @@ VER=snapshots
 #ftp http://www.nk-home.net/~aoyama/liveimage/boot
 
 # Snapshot Update
-ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.mp
-#ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.rd
+#ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.mp
+ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.rd

@@ -1,5 +1,7 @@
-VER=snapshots
-DIR=cdn.openbsd.org/pub/OpenBSD/snapshots/luna88k/
+#VER=snapshots
+VER=6.9
+
+DIR=cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/
 VND0=/dev/vnd0
 MNT=/mnt
 DISK=snapshots.img
