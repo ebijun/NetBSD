@@ -5,7 +5,13 @@ To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
 Topics:
-- touchpad: sometimes cursor far away.
+- /usr/bin/aiomixer
+ graphical mixer for NetBSD audio.
+
+Select a mixer device:
+[*] /dev/mixer0: sun50i-a64-audi  ausoc
+[ ] /dev/mixer1: hdmi-audio  ausoc
+
 - audio CD with wavpack
  Encode: 
    On Windows: Exact Audio Copy & foobar2000
@@ -17,6 +23,7 @@ Topics:
   qmmp: can play wavpack file.
    Setting->Output->OSS plugin(liboss.so)
 
+- touchpad: sometimes cursor far away.
 - audio0 input issue
   http://mail-index.netbsd.org/port-arm/2021/02/22/msg007185.html
   "Is audio input from the inbuilt microphone(s) working?  I get "read failed:
@@ -59,52 +66,116 @@ ToDo:
 
 System Updates:
 
-sysinfo:
- bozohttpd-20210403 openssl-1.1.1k pkg_install-20210410
- sh-20181212-20210413191651Z unbound-1.13.1
-
 pkgsrc packages:
  http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2021-1/
 
- ImageMagick-7.0.11.6 adwaita-icon-theme-3.38.0 aiomixer-1.0.2
- atkmm-2.28.1 audacious-plugins-4.1nb2 autogen-5.18.16nb2
- babl-0.1.86 bison-3.7.6 cairomm-1.14.2 cbindgen-0.18.0
- cdk-5.0.20210109 cmake-3.20.1 cmus-2.9.1nb2 cups-base-2.3.3op2
- curl-7.76.0 dbus-1.12.20nb1 dbus-glib-0.112 deforaos-pdfviewer-0.1.0nb8
- extra-cmake-modules-5.80.0 farstream-0.2.9nb4 ffmpeg2-2.8.17nb7
- ffmpeg3-3.4.8nb8 ffmpeg4-4.4 file-roller-3.38.0 firefox-87.0nb1
- firefox-l10n-87.0 firefox52-52.9.0nb35 fluidsynth-2.2.0
- fossil-2.15.1 game-music-emu-0.6.3 gconfmm-2.28.3nb25
- gdbus-codegen-2.68.0 gettext-0.21 gettext-asprintf-0.21
- gexiv2-0.12.2 git-base-2.31.1 glib2-2.68.0nb2 glib2-tools-2.68.0
- glibmm-2.66.0 gnutls-3.7.1 go-1.16.2 go115-1.15.10 go116-1.16.2
- gobject-introspection-1.68.0 graphviz-2.44.1nb9
- gsettings-desktop-schemas-40.0 gst-plugins0.10-vorbis-0.10.36nb2
- gtk3+-3.24.28 gtkmm3-3.24.4 guile22-2.2.7nb3 help2man-1.48.3
- ibus-1.5.23nb3 ilmbase-2.5.5 inkscape-1.0.2 jasper-2.0.28
- json-glib-1.4.4nb2 ldb-2.2.1 libao-sun-1.2.2nb2 libassuan-2.5.5
- libcdr-0.1.7 libcups-2.3.3op2 libdazzle-3.38.0 libgpg-error-1.42
- libgweather-40.0 libhandy-0.0.13nb5 libheif-1.11.0nb1 libical-3.0.9
- libmwaw-0.3.17 libpurple-2.14.1nb5 libreoffice-7.1.2.2nb3
- libsigc++-2.10.6 libwildmidi-0.4.4 libxkbcommon-1.2.0
- lmdb-0.9.29 luatex-1.12.0nb5 mate-settings-daemon-1.24.0nb10
- medit-1.2.0nb17 meson-0.57.2 mkvtoolnix-56.1.0 mm-common-1.0.2
- mp4v2-4.1.5nb1 mpg123-1.26.5 nettle-3.7.2 nodejs-14.16.1
- nspr-4.30 nss-3.63nb1 openal-soft-1.21.1 openexr-2.5.5
- opusfile-0.12 oxygen-icons-5.80.0 p5-Scalar-List-Utils-1.56
- pango-1.48.4 pangomm-2.46.0 pkgconf-1.7.4 poppler-21.04.0nb1
- poppler-cpp-21.04.0nb1 poppler-glib-21.04.0nb1 poppler-includes-21.04.0
- protobuf-3.15.7 pulseaudio-14.2nb2 py38-cElementTree-3.8.9
- py38-expat-3.8.9 py38-lxml-4.6.3 py38-mako-1.1.4 py38-pygments-2.8.1
- py38-setuptools-54.2.0 py38-sphinx-3.5.3 py38-sqlite3-3.8.9nb18
- py38-urllib3-1.26.4 python38-3.8.9 qt5-qtbase-5.15.2nb2 qt5-qtsvg-5.15.2nb2
- rclone-1.54.1nb1 re2c-2.1.1 ruby26-base-2.6.7 ruby26-nokogiri-1.11.2
- rust-1.49.0nb1 samba-4.13.7 seamonkey-2.53.6nb1 sqlite3-3.35.4
- sudo-1.9.6p1 telepathy-glib-0.24.1nb18 uim-1.8.9pre20210104
- vorbis-tools-1.4.2 web2c-2020nb6 x265-3.5 xfce4-tumbler-0.3.0nb5
- xterm-367 youtube-dl-20210407 zstd-1.4.9
+sysinfo:
+ bind-9.16.15 bozohttpd-20210504 g++-10.3.0 gcc-10.3.0 libdrm-3.5
+ libssh-40.0 libX11-7.1 NetBSD-9.99.82 openssh-8.6 opensshd-8.6
+ sh-20181212-20210517085036Z userland-NetBSD-9.99.82/evbarm
 
-pkgsrc todo:
+pkgsrc:
+ GConf-3.2.3nb9 ImageMagick-7.0.8.16 ImageMagick6-6.9.11.7nb8
+ akonadi-1.13.0nb38 ap24-php74-7.4.19nb6 apache-2.4.46nb4
+ apr-util-1.6.1nb10 asciidoc-9.1.0nb2 atril-1.24.0nb8
+ audacious-4.1nb1 audacious-plugins-4.1nb4 autogen-5.18.16nb3
+ bash-5.1.4nb1 boost-build-1.76.0 boost-docs-1.76.0
+ boost-headers-1.76.0 boost-jam-1.76.0nb1 boost-libs-1.76.0
+ caja-extensions-1.24.0nb5 cbindgen-0.19.0 cmake-3.20.1nb1
+ cups-base-2.3.3op2nb1 curl-7.76.1nb1 dconf-0.36.0nb5
+ deforaos-pdfviewer-0.1.0nb9 ebook-tools-0.2.2nb12
+ emacs26-26.3nb14 eom-1.24.0nb6 exempi-2.5.2nb2
+ farstream-0.2.9nb7 ffmpeg2-2.8.17nb9 ffmpeg4-4.4nb2
+ firefox-88.0.1 firefox-l10n-88.0.1 firefox52-52.9.0nb37
+ fossil-2.15.1nb1 gconfmm-2.28.3nb26 gcr-3.38.0nb1
+ gdbus-codegen-2.68.1 gdk-pixbuf2-2.40.0nb2 gdl-3.34.0nb7
+ gedit-3.36.2nb5 gegl-0.4.30nb1 geocode-glib-3.26.2nb2
+ gexiv2-0.12.2nb2 ghostscript-9.05nb25 ghostscript-agpl-9.53.3nb1
+ gimp-2.10.8nb2 git-base-2.31.1nb1 glib-networking-2.64.3nb3
+ glib2-2.68.1 glib2-tools-2.68.1 glibmm-2.66.0nb1
+ gnome-desktop-2.32.1nb45 gnome-doc-utils-0.20.10nb9
+ gnome-icon-theme-symbolic-3.12.0nb8 gnupg2-2.2.27nb2
+ gnutls-3.7.1nb1 go114-1.14.7 graphviz-2.44.1nb12
+ gspell-1.8.3nb6 gssdp-1.0.3nb15 gst-plugins0.10-base-0.10.36nb17
+ gst-plugins0.10-good-0.10.31nb8 gst-plugins0.10-oss-0.10.31nb6
+ gst-plugins1-base-1.16.2nb5 gstreamer0.10-0.10.36nb16
+ gtk2+-2.24.33nb1 gtk3+-3.24.28nb1 gtkmm3-3.24.4nb1
+ gtksourceview2-2.10.5nb42 gtksourceview3-3.24.11nb6
+ gtksourceview4-4.8.0nb2 gucharmap-2.32.1nb33 gupnp-1.0.3nb11
+ gupnp-igd-0.2.5nb10 gvfs-1.6.7nb55 harfbuzz-icu-2.7.4nb1
+ hwloc-1.11.13nb3 ibus-1.5.23nb4 icu-69.1 inkscape-1.0.2nb3
+ jasper-2.0.32 json-glib-1.6.2 jwm-2.3.7nb9 kdelibs4-4.14.38nb21
+ kdepimlibs4-4.14.10nb31 kfilemetadata-4.14.3nb59 ldb-2.3.0
+ libabw-0.1.3nb7 libappindicator-12.10.0nb9 libbaloo4-4.14.3nb26
+ libbluray-1.3.0nb1 libcdr-0.1.7nb2 libclucene-2.3.3.4nb19
+ libcmis-0.5.2nb13 libcroco-0.6.8 libcups-2.3.3op2nb1 libdazzle-3.38.0nb1
+ libdbusmenu-glib-12.10.2nb12 libdbusmenu-gtk3-12.10.2nb21
+ libe-book-0.1.3nb18 libepubgen-0.1.1nb3 libetonyek-0.1.9nb10
+ libfreehand-0.1.2nb8 libgcrypt-1.9.3 libglade-2.6.4nb37
+ libgsf-1.14.47nb3 libgweather-40.0nb2 libhandy-0.0.13nb6
+ libical-3.0.10nb1 libixion-0.16.1nb1 libkactivities4-4.13.3nb23
+ liblangtag-0.6.3nb4 libmatekbd-1.24.0nb5 libmateweather-1.24.0nb6
+ libmspub-0.1.4nb17 libmwaw-0.3.17nb1 libnice-0.1.16nb8
+ libodfgen-0.1.7nb3 libpagemaker-0.0.4nb9 libpurple-2.14.4
+ libqxp-0.0.2nb11 libreoffice-7.1.3.2 librevenge-0.0.4nb14
+ librsvg-2.50.3nb1 libsecret-0.20.4nb1 libsexy-0.1.11nb36
+ libsigc++-2.10.6nb1 libsoup-2.70.0nb4 libstaroffice-0.0.7nb3
+ libvisio-0.1.7nb10 libvpx-1.10.0 libwmf-0.2.8.4nb19
+ libwpd-0.10.3nb3 libwpg-0.3.3nb4 libwps-0.4.12nb2
+ libxfce4gui-4.10.0nb19 libxkbcommon-1.2.1nb1 libxklavier-5.4nb7
+ libxml2-2.9.10nb4 libxslt-1.1.34nb5 libzip-1.7.3nb2
+ libzmf-0.0.2nb19 luatex-1.12.0nb6 m17n-lib-1.8.0nb5
+ mate-1.24.0nb2 mate-applets-1.24.0nb7 mate-control-center-1.24.0nb6
+ mate-panel-1.24.1nb2 mate-screensaver-1.24.0nb5
+ mate-session-manager-1.24.2 mate-settings-daemon-1.24.0nb12
+ mdds-1.6.0nb2 mdds1.2-1.3.1nb9 medit-1.2.0nb9 minitube-3.5nb3
+ mkvtoolnix-56.1.0nb2 mlterm-3.9.1nb1 mozjs78-78.4.0nb1
+ mp4v2-4.1.6 mpich-3.2.1nb5 mpv-0.33.1nb2 mupdf-1.18.0nb1
+ mysql-client-5.7.34 neon-0.31.2nb1 netpbm-10.79.04nb7
+ nghttp2-1.43.0nb2 nginx-1.18.0nb9 nodejs-14.9.0 nss-3.64nb1
+ oniguruma-6.9.7.1 openjdk8-1.8.252nb5 orcus-0.16.1nb1
+ osabi-NetBSD-9.99.82 php-7.4.19 php74-curl-7.4.19nb10
+ php74-fpm-7.4.19nb6 php74-gd-7.4.19nb1 php74-iconv-7.4.19
+ php74-intl-7.4.19nb6 php74-json-7.4.19 php74-mbstring-7.4.19
+ php74-owncloud-10.6.0 php74-pdo-7.4.19 php74-pdo_sqlite-7.4.19nb6
+ php74-posix-7.4.19 php74-sqlite3-7.4.19nb6 php74-zip-7.4.19nb5
+ php74-zlib-7.4.19nb1 pkg_rolling-replace-0.24.9 pkgin-20.7.0
+ pluma-1.24.1nb2 policykit-0.9nb28 polkit-0.118nb2
+ poppler-21.04.0nb2 poppler-cpp-21.04.0nb2 poppler-glib-21.04.0nb3
+ postgresql95-client-9.5.25nb1 protobuf-3.15.8 py27-gtk2-2.24.0nb37
+ py27-libxslt-1.1.34nb3 py38-cython-0.29.23 py38-libxml2-2.9.10nb3
+ py38-lxml-4.6.3nb1 py38-markdown-3.1.1 py38-sphinx-3.5.4
+ py38-sqlite3-3.8.9nb19 qmmp-1.4.4nb2 qt5-qtbase-5.15.2nb4
+ qt5-qtdeclarative-5.15.2nb3 qt5-qtlocation-5.15.2nb2
+ qt5-qtmultimedia-5.15.2nb4 qt5-qtsensors-5.15.2nb2
+ qt5-qtserialport-5.15.2nb2 qt5-qtsvg-5.15.2nb3
+ qt5-qttools-5.15.2nb4 qt5-qtwebchannel-5.15.2nb2
+ qt5-qtwebsockets-5.15.2nb2 qt5-qtx11extras-5.15.2nb2
+ qt5-qtxmlpatterns-5.15.2nb2 raptor2-2.0.15nb21
+ rarian-0.8.1nb7 rasqal-0.9.33nb22 rclone-1.55.0
+ redland-1.0.17nb28 ruby26-mikutter-4.1.5 ruby26-nokogiri-1.11.2nb1
+ rust-1.50.0nb1 samba-4.14.4 scribus-1.5.6pre20200611nb9
+ seamonkey-2.53.6nb3 shared-mime-info-1.10nb4 source-highlight-3.1.9nb2
+ spdlog-1.8.5 spidermonkey52-52.7.4nb6 sqlite3-3.35.5nb1
+ strigi-0.7.8nb41 tcl-8.6.11nb1 telepathy-glib-0.24.1nb20
+ tepl4-4.4.0nb3 tex-arphic-2.11nb2 tex-bookman-2014nb1
+ tex-cjk-4.8.4nb1 tex-courier-2014nb1 tex-csquotes-5.2k
+ tex-etoolbox-2.5k tex-fancyhdr-4.0.1 tex-fontspec-2.7i
+ tex-helvetic-2014nb1 tex-hyperref-7.00j tex-japanese-otf-1.7b8.56938
+ tex-japanese-otf-uptex-0.26 tex-l3kernel-2020.57669nb1
+ tex-l3packages-2020.57600nb3 tex-latex-bin-2020
+ tex-ncntrsbk-2014nb1 tex-platex-2020.57730 tex-psnfss-9.3nb1
+ tex-symbol-2014nb1 tex-times-2014nb1 tex-uplatex-2020
+ tex-zapfchan-2014nb1 tex-zapfding-2014nb1 tex-zxjafont-1.2
+ texlive-collection-langcjk-2020 tiff-4.3.0 uim-1.8.9pre20210104nb1
+ vala-0.52.2 vcdimager-2.0.1nb3 vorbis-tools-1.4.2nb1
+ vte3-0.60.3nb8 wayland-1.18.0nb3 web2c-2020nb7 wget-1.21.1nb1
+ wxGTK30-3.0.5.1nb2 x11-links-1.33 xfce4-appfinder-4.14.1
+ xfce4-desktop-4.14.2nb7 xfce4-mixer-4.11.0nb20 xfce4-mousepad-0.5.4
+ xfce4-orage-4.12.1nb24 xfce4-session-4.14.2nb6 xfce4-settings-4.14.3nb5
+ xfce4-terminal-0.8.9.2nb3 xfce4-tumbler-0.3.0nb8 xfce4-xarchiver-0.5.4nb10
+ xmlto-0.0.28nb5 xscreensaver-5.45nb2 youtube-dl-20210417
+
 - mate
   pkgsrc/devel/libappindicator depends on py27-gtk2
 - asunder
