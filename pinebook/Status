@@ -8,9 +8,14 @@ Topics:
 - /usr/bin/aiomixer
  graphical mixer for NetBSD audio.
 
-Select a mixer device:
-[*] /dev/mixer0: sun50i-a64-audi  ausoc
-[ ] /dev/mixer1: hdmi-audio  ausoc
+on pinebook:
+ Select a mixer device:
+ [*] /dev/mixer0: sun50i-a64-audi  ausoc
+ [ ] /dev/mixer1: hdmi-audio  ausoc
+
+on pinebook pro:
+XXX: [inputs] tab controls audio output level.
+ https://twitter.com/ebijun/status/1395184397599469568
 
 - audio CD with wavpack
  Encode: 
@@ -34,8 +39,8 @@ Select a mixer device:
 pkgsrc:
 - works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp,libreoffice
 
-- firefox87.0 works fine.
- https://twitter.com/ebijun/status/1382304905759584259 
+- firefox 88.0.1 and libreoffce 7.1.3.2 on NetBSD 9.99.82/aarch64 on pinebook.
+ https://twitter.com/ebijun/status/1394599344611807242
 
  zoom meeting with firefox on NetBSD/aarch64 on pinebook pro 
   with UserAgent switcher addon as Linux.
