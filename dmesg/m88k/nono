@@ -1,12 +1,12 @@
 [ no symbol table formats found ]
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 	The Regents of the University of California.  All rights reserved.
-Copyright (c) 1995-2020 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+Copyright (c) 1995-2021 OpenBSD. All rights reserved.  https://www.OpenBSD.org
 
-OpenBSD 6.8-current (GENERIC) #5: Tue Jan  5 14:44:06 JST 2021
-    aoyama@aurora.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC
+OpenBSD 6.9-current (GENERIC.MP) #5: Sat May 15 14:27:51 JST 2021
+    aoyama@aurora.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC.MP
 real mem = 134217728 (128MB)
-avail mem = 127315968 (121MB)
+avail mem = 126795776 (120MB)
 warning: no entropy supplied by boot loader
 random: boothowto does not indicate good seed
 mainbus0 at root: OMRON LUNA-88K, 25MHz
@@ -15,7 +15,7 @@ cpu0: M88200 (16K) rev 0x0, full Icache
 cpu0: M88200 (16K) rev 0x0, full Dcache
 clock0 at mainbus0: MK48T02
 lcd0 at mainbus0
-le0 at mainbus0: address 02:00:01:dd:30:44
+le0 at mainbus0: address 02:00:01:c5:30:97
 le0: 32 receive buffers, 8 transmit buffers
 sio0 at mainbus0: 7201a
 siotty0 at sio0 channel 0
@@ -38,4 +38,3 @@ boot device: <unknown>
 root device: sd0
 swap device (default sd0b): 
 root on sd0a swap on sd0b dump on sd0b
-WARNING: /mnt was not properly unmounted

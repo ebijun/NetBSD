@@ -1,14 +1,12 @@
-% gxemul -Xe luna-88k -I 1000000000 -M 256 -L /dev/tap0 -d 0:liveimage-luna88k-raw-20210418.img bsd.mp
-
 [ no symbol table formats found ]
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 	The Regents of the University of California.  All rights reserved.
 Copyright (c) 1995-2021 OpenBSD. All rights reserved.  https://www.OpenBSD.org
 
-OpenBSD 6.9 (GENERIC.MP) #10: Sat Apr 10 07:04:42 JST 2021
+OpenBSD 6.9-current (GENERIC.MP) #5: Sat May 15 14:27:51 JST 2021
     aoyama@aurora.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC.MP
-real mem = 268435456 (256MB)
-avail mem = 258408448 (246MB)
+real mem = 67108864 (64MB)
+avail mem = 60989440 (58MB)
 warning: no entropy supplied by boot loader
 random: boothowto does not indicate good seed
 mainbus0 at root: OMRON LUNA-88K, 25MHz
@@ -20,13 +18,12 @@ lcd0 at mainbus0
 le0 at mainbus0: address 00:00:0a:10:20:30
 le0: 32 receive buffers, 8 transmit buffers
 sio0 at mainbus0: 7201a
-siotty0 at sio0 channel 0
+siotty0 at sio0 channel 0 (console)
 ws0 at sio0 channel 1
-wskbd0 at ws0: console keyboard
+wskbd0 at ws0 mux 1
 wsmouse0 at ws0 mux 0
 xp0 at mainbus0: HD647180X I/O processor
-fb0 at mainbus0: 1280x1024, 1bpp
-wsdisplay0 at fb0 mux 1: console (std, vt100 emulation), using wskbd0
+fb at mainbus0 not configured
 spc0 at mainbus0
 scsibus0 at spc0: 8 targets, initiator 7
 sd0 at scsibus0 targ 0 lun 0: <GXemul, liveimage-luna8, 0>
