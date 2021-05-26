@@ -1,0 +1,176 @@
+.. 
+ Copyright (c) 2013-2021 Jun Ebihara All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+===========================================
+オープンソースカンファレンスNetBSDブースこの一年
+===========================================
+
+日本NetBSDユーザーグループは2021年もオープンソースカンファレンスを中心とするイベントに参加しています。
+2020/1のOSC2020大阪以降はZOOMでの参加になりました。
+NetBSD/aarch64からZOOM会議に参加する試みをしました。
+従来、ブースへの展示機材持ち込み＆差し入れに代わり、事前にtwitter上でデモ動画等を投稿されたものをtogetterでまとめておいて
+紹介するようにしてみました。、引き続きセミナー時間での参加・発表を歓迎します。
+
+NetBSD環境からのZOOM会議参加
+-----------------------------
+
+NetBSDからZOOM等の会議に参加するためには、以下の手順をとります。
+
+#. rustが動くようにする。
+#. audioが動くようにする。
+#. 内蔵カメラが動くようにする。
+#. Firefox80以降をpkgsrcからインストールする
+#. FirefoxのプラグインでLinuxまたはFreeBSDからインストールしているように見せかける。
+
+これまでに参加した一覧
+----------------------
+
+これまでに参加した一覧は以下のとおりです。
+
+  https://github.com/ebijun/NetBSD/blob/master/Guide/OSC/OSC100.csv
+
+
+このファイルはオープンソースカンファレンス過去来場者数一覧 http://www.ospn.jp/visitors/ を元に作成しています。
+
+
+どのくらい参加しているか
+-------------------------
+
+- 2021/5/29までにOSCは194回開催されています。
+- JNUGは175回参加しています。90.0%→90.2% (前年比0.2%増)
+
+OSCこの一年
+--------------
+
+2020年まとめ
+^^^^^^^^^^^^
+
+- 日本全国各地で1回+9回オンライン開催+ODC開催 
+- 参加者: 97743人 年間参加者5920人(2019年)→3140人(2020年)　
+- 参加団体:5904グループ 年間参加グループ　444グループ(2019) → 152グループ(2020)
+
+.. csv-table:: この一年
+ :widths: 10 40 10 20 30 30
+
+ 回数,イベント,日付,参加者,参加グループ,参加したら1
+ 184,2020 Online/Nagoya,5/30,370,14,1
+ 185,2020 Online/Hokkaido,6/27,450,22,1
+ 186,2020 Online/Niigata,7/25,120,10,1
+ 187,2020 Online/Kyoto,8/28-29,320,18,1
+ 188,2020 Online/Hiroshima,9/19,200,8,1
+ 189,2020 Online/Fall,10/23-24,500,15,1
+ 190,2020 Online/Aizu,10/25,120,-,　
+ 191,2020 Online/Fukuoka,11/28,240,14,1
+ ,ODC Online,12/19,,,参加
+ 192,2021 Online/Osaka,1/30,290,12,1
+ 193,2021 Online/Spring,3/5-6,570,26,1
+ 194,2021 Online/Nagoya,5/29,,15,1
+
+togetterアクセスで見たNetBSDブース
+-----------------------------------
+togetterのアクセスログは以下の場所にあります。
+
+  https://github.com/ebijun/NetBSD/blob/master/Event/togetter/togetterview/view.csv
+
+この一年のアクセス数集計は以下の通りです。
+
+.. csv-table::
+ :widths: 120 60 10
+
+ オープンソースカンファレンス2021 Online/Nagoya 名古屋*BSDユーザグループ2021年5月例会の記録,https://togetter.com/li/1720573,
+ 名古屋*BSDユーザグループ(NBUG)2021/4月例会の記録,https://togetter.com/li/1699631,539
+ 名古屋*BSDユーザグループ(NBUG)2021/3月例会の記録,https://togetter.com/li/1684969,328
+ オープンソースカンファレンス2021 Online/Spring NetBSDのご紹介 の記録,https://togetter.com/li/1675363,1154
+ 名古屋*BSDユーザグループ(NBUG)2021/2月例会の記録,https://togetter.com/li/1670754,667
+ オープンソースカンファレンス2021 Online/Osaka NetBSDのご紹介 の記録,https://togetter.com/li/1658323,861
+ 名古屋*BSDユーザグループ(NBUG)2021/1月例会の記録,https://togetter.com/li/1656474,341
+ オープンデベロッパーズカンファレンス2020 Online NetBSDのご紹介&名古屋*BSDユーザグループ(NB..,https://togetter.com/li/1637624,1121
+ オープンソースカンファレンス2020 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/1627360,569
+ 名古屋*BSDユーザグループ(NBUG)2020/11月例会の記録,https://togetter.com/li/1625965,354
+ 関西オープンソース 2020 BSDなひととき の記録,https://togetter.com/li/1617531,3138
+ オープンソースカンファレンス2020 Online/Fall BSDなひととき の記録,https://togetter.com/li/1611536,925
+ 名古屋*BSDユーザグループ(NBUG)2020/10月例会の記録,https://togetter.com/li/1609378,274
+ オープンソースカンファレンス2020 Online/Hiroshima NetBSDのご紹介 &名古屋*BSDユーザ..,https://togetter.com/li/1593951,445
+ オープンソースカンファレンス2020 Online/Kyoto NetBSDのご紹介 の記録,https://togetter.com/li/1582822,299
+ 名古屋*BSDユーザグループ(NBUG)2020/8月例会の記録,https://togetter.com/li/1579945,247
+ オープンソースカンファレンス2020 Online/Niigata NetBSDのご紹介 の記録,https://togetter.com/li/1565767,520
+ 名古屋*BSDユーザグループ(NBUG)2020/7月例会の記録,https://togetter.com/li/1561513,381
+ オープンソースカンファレンス2020 Online/Hokkaido NetBSDご紹介 の記録,https://togetter.com/li/1549704,417
+ オープンソースカンファレンス2020 Online/Nagoya 名古屋*BSDユーザグループ2020年5月例会(第..,https://togetter.com/li/1529053,534
+
+netbsd-advocacyメーリングリストへの報告
+--------------------------------------------
+
+netbsd-advocacyメーリングリストへの参加報告をしてみました。
+
+.. csv-table::
+
+ NetBSD machines at Open Source Conference 2020 Osaka,http://mail-index.netbsd.org/netbsd-advocacy/2020/01/28/msg000823.html
+
+NetBSD観光ガイド作成
+------------------------
+
+イベント毎に観光ガイドを作っています。セミナー参加者に配布しました。
+
+一覧：
+
+ https://github.com/ebijun/osc-demo/blob/master/README.md
+
+
+作成方法： 
+
+ https://github.com/ebijun/NetBSD/blob/master/Guide/Paper/sphinx.rst
+
+.. csv-table::
+ :widths: 10 20 100
+
+ 165,OSC2021名古屋,http://www.re.soum.co.jp/~jun/OSC2021nagoya.pdf
+ 164,OSC2021東京春,http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
+ 163,OSC2021大阪,http://www.re.soum.co.jp/~jun/OSC2021osaka.pdf
+ 162,ODC2020,http://www.re.soum.co.jp/~jun/ODC2020.pdf
+ 161,OSC2020福岡,http://www.re.soum.co.jp/~jun/OSC2020fukuoka.pdf
+ 160,KOF2020,http://www.re.soum.co.jp/~jun/KOF2020.pdf
+ 159,OSC2020東京秋,http://www.re.soum.co.jp/~jun/OSC2020tokyofall.pdf
+ 158,OSC2020広島,http://www.re.soum.co.jp/~jun/OSC2020hiroshima.pdf
+ 157,OSC2020京都,http://www.re.soum.co.jp/~jun/OSC2020kyoto.pdf
+ 156,OSC2020新潟,http://www.re.soum.co.jp/~jun/OSC2020niigata.pdf
+ 155,OSC2020北海道,http://www.re.soum.co.jp/~jun/OSC2020hokkaido.pdf
+ 154,OSC2020名古屋,http://www.re.soum.co.jp/~jun/OSC2020nagoya.pdf
+ 153,OSC2020大阪,http://www.re.soum.co.jp/~jun/OSC2020osaka.pdf
+
+
+旅費
+--------
+
+横浜からの旅費(=交通費＋宿泊費),機材配送費,資料印刷費実費をまとめています。
+
+.. csv-table::
+ :widths: 10 50 30 20
+ 
+ 月,イベント,旅費,機材配送
+ 2020/1,OSC大阪,26080,1469
+
+2021年
+-------------
+
+2021年もしばらくの間はオンライン開催が続きそうです。OSCは2021/1/30のOSC Online大阪(https://event.ospn.jp/osc2021-online-osaka/)からはじまります。
+セミナー/ミーティング時間での発表を歓迎します。
+
