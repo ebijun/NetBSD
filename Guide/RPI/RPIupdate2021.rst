@@ -20,7 +20,7 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ===========================================
-RaspberryPIのNetBSDイメージ2020進捗どうですか
+RaspberryPIのNetBSDイメージ2021進捗どうですか
 ===========================================
 
 
