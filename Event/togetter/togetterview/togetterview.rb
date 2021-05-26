@@ -1,4 +1,4 @@
-#! /usr/pkg/bin/ruby24
+#! /usr/pkg/bin/ruby26
 
 require 'open-uri'
 require 'nokogiri'

@@ -23,9 +23,9 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
- OSC/OSC2020
- RPI/RPIupdate2020
+ Place/nagoya
+ OSC/OSC2021
+ RPI/RPIupdate2021
  RPI
  Luna
  latexpdf
