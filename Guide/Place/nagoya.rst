@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2020 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2021 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -31,22 +31,27 @@
 NBUG例会この一年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+2020/3~6までは会場を確保する形の例会は開催していません。2020/5にオンラインでOSC名古屋枠内で例会を行いました。
+
 .. csv-table::
  :widths: 10 15 20 40
 
- 2020/5,OSC名古屋online,,
+ 2021/5/29,東/OSC名古屋,https://togetter.com/li/1720573,
+ 2021/4/17,北,https://togetter.com/li/1699631,539
+ 2021/3/20,北,https://togetter.com/li/1684969,328
+ 2021/2/20,千種,https://togetter.com/li/1670754,667
+ 2021/1/23,東,https://togetter.com/li/1656474,341
+ 2020/12/19,北/ODC,https://togetter.com/li/1637624,1121
+ 2020/11/21,北,https://togetter.com/li/1625965,354
+ 2020/10/17,北,https://togetter.com/li/1609378,274
+ 2020/9/19,西/OSC広島,https://togetter.com/li/1593951,445
+ 2020/8/22,北,https://togetter.com/li/1579945,247
+ 2020/7/18,北,https://togetter.com/li/1561513,381
+ 2020/6,中止,,
+ 2020/5/30,オンライン/OSC名古屋,https://togetter.com/li/1529053,534
  2020/4,中止,,
  2020/3,中止,,
- 2020/2,神宮西,あたりや,https://togetter.com/li/1469785
- 2020/1,黒川,本陣串や,https://togetter.com/li/1458375
- 2019/12,神宮西,好々,https://togetter.com/li/1443180
- 2019/11,黒川,菊井かつ,https://togetter.com/li/1431863
- 2019/10,池下,いしはらさん訃報,https://togetter.com/li/1421861
- 2019/9,黒川,本陣串や,https://togetter.com/li/1407443
- 2019/8,ODC→黒川,本陣串や,https://togetter.com/li/1394879
- 2019/7,OSC名古屋,OkiDoki,https://togetter.com/li/1375440
- 2019/6,黒川,菊井かつ,https://togetter.com/li/1368948
- 2019/5,神宮西,あたりや,https://togetter.com/li/1356522
+ 2020/2/15,熱田,https://togetter.com/li/1469785,840
 
 名古屋でのオープンソースカンファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -68,7 +73,8 @@ NBUG例会この一年
  2017 Nagoya,5/27,500,37,名古屋市中小企業振興会館 
  2018 Nagoya,5/19,500,37,名古屋市中小企業振興会館 
  2019 Nagoya,7/13,500,29,名古屋市中小企業振興会館 
- 2020 online Nagoya,5/30,,,ZOOM
+ 2020 online Nagoya,5/30,370,14,ZOOM
+ 2021 online Nagoya,5/29,,15,ZOOM
 
 オープンソースカンファレンス以前
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,6 +94,10 @@ NBUG例会この一年
 .. csv-table::
  :widths: 30 20 60
 
+ パウ,大須,タブレットから謎ハードまで。ボントンの隣。
+ 鯱の家,黒川,カレーうどん。
+ 陽龍,黒川,チャーシューメン。
+ ディバインレコード,新栄,11:00-
  円頓寺商店街,国際センター,堀川から丸の内まで続く商店街
  ふれあい館,円頓寺商店街,NBUG例会会場だった。トクサツガガガ最終回でビデオ屋。
  まつば,円頓寺商店街,NBUG例会会場脇。名古屋で数番目に自家焙煎をはじめた店。
@@ -111,7 +121,7 @@ NBUG例会この一年
  Brick Lane,名駅,クラフトビール＋ハンバーガー。湘南京都アメリカ。
  Used like new beer,名駅,菊井2-17-5 クラフトビール+サンドイッチ。民家改造。
  ワイズマーケット,国際センター,地ビール醸造。まるはちめいよん。
- 三八屋,一宮,地ビール醸造。例会前日金曜午後2100くらい。
+ 三八屋,一宮,地ビール醸造。例会終了後に寄る。
  Shanties,池下,西海岸クラフトビールとハンバーガー。
  Kitchen Lotus,千種,クラフトビア＋1ディッシュプレート。
  7days brewing,名古屋駅,駅前。クラフトビール。JBL43+DJブースもあるでよ。
@@ -119,11 +129,12 @@ NBUG例会この一年
  KEG,栄,クラフトビール専門店。lovelyの隣。
  kiya,久屋大通,ベルギービールインポーター。店内まるごと冷蔵庫。試飲OK。
  TRUNK,上前津,コールドブリューとクラフトビール京都志賀。
- AOI BREWING,ささしまライブ,静岡アオイブリューイング名古屋店。
  beer マーブル,塩釜口,ディレイラとコラボ。
  丸越メイナン,アピタ道徳,メイナンスイッチを押せる漬物店。
  ロンドベル,浄心,珈琲豆と鳩時計がめぐりあい宇宙。万代町はプラモ狂四郎の舞台。
  稲永スリップ跡,野蒜,愛知航空機永徳機体工場スリップ跡。
+ ウニタ書店,今池,スタービルに移転
+ 名古屋シネマテーク,今池,2021/5/29 緑の牢獄トークイベント
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -135,6 +146,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 165,OSC2021名古屋,http://www.re.soum.co.jp/~jun/OSC2021nagoya.pdf
  154,OSC2020名古屋,http://www.re.soum.co.jp/~jun/OSC2020nagoya.pdf
  144,OSC2019名古屋,http://www.re.soum.co.jp/~jun/OSC2019nagoya.pdf
  128,OSC2018名古屋,http://www.re.soum.co.jp/~jun/OSC2018nagoya.pdf
@@ -151,7 +163,9 @@ togetterまとめ
 
 .. csv-table::
  :widths: 80 80
-
+ 
+ OSC2021 Online/Nagoya 名古屋,https://togetter.com/li/1720573
+ OSC2020 Online/Nagoya 名古屋,https://togetter.com/li/1529053
  OSC2019名古屋 NetBSDブース展示の記録,https://togetter.com/li/1375440
  OSC2018名古屋 NetBSDブース展示の記録,https://togetter.com/li/1228817
  OSC2017名古屋 NetBSDブース展示の記録,https://togetter.com/li/1114389
