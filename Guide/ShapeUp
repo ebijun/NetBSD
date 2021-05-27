@@ -1,0 +1,2 @@
+# /screen /ebook /printer /prepress /default
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -sOutputFile=aaa.pdf $1
