@@ -55,11 +55,11 @@ acpi0 at mainbus0: Intel ACPICA 20210331
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF80FCBF420348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFF8E67E020348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF80F9BDE81808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFF8E37CA81808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF80F9BDE20408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFF8E37CA20408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -274,3 +274,9 @@ wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+umass0 at uhub0 port 1 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 3
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
