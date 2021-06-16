@@ -48,7 +48,7 @@ end
 ftp = Net::FTP.open(FTP) do |ftp|
 	# login and set mode
 	ftp.login()
-	ftp.passive = TRUE
+#	ftp.passive = TRUE
 #	ftp.debug_mode = TRUE
 
 	# chdir to branch
