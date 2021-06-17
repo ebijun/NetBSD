@@ -1,3 +1,7 @@
-#./gxemul -Xe luna-88k -I 1000000000 -M 256 -L /dev/tap0 -d 0:liveimage-luna88k-raw-20210418.img bsd.mp
-#./gxemul -e luna-88k -d 0:liveimage-luna88k-raw-20210418.img bsd.mp
-./gxemul -e luna-88k -L /dev/tap0 -d 0:liveimage-luna88k-raw-20210522.img bsd.mp
+IMAGE=liveimage-luna88k-raw-20210616.img
+KERNEL=bsd.mp
+#KERNEL=bsd.rd
+TAP="-L /dev/tap0"
+X=-X
+
+./gxemul ${X} -M 256 -e luna-88k ${TAP} -d 0:${IMAGE} ${KERNEL}
