@@ -20,6 +20,10 @@ Update:
 - Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
 XXX: should test big-endian image and pkgsrc
 
+http://mail-index.netbsd.org/port-arm/2021/06/17/msg007310.html
+ "earmv7hfeb works fine so far, pkgsrc included. aarc64eb doesn't boot
+  on a Raspberry Pi 3," 
+
 PR
 #55505 RaspberryPi3A+ can't find Wi-Fi module
  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=55505
