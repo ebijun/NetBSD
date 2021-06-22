@@ -30,6 +30,8 @@ Topics:
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
 - [Issue] Can't recognize DOS partition from Windows
   Should I Use MBR version image?
+- [PR] diagnostic assertion "l->l_stat == LSONPROC" failed on RPI3
+  http://gnats.netbsd.org/56264
 
 sysinfo:
  NetBSD-9.99.85 sh-20181212-20210618135752Z
