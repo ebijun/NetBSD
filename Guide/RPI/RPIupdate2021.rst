@@ -46,6 +46,7 @@ RaspberryPIのNetBSDイメージについて
  2021/2/27,9.99.80,,,1.1.1j,sudo,OSC東京春, http://mail-index.netbsd.org/port-arm/2021/02/27/msg007187.html
  2021/4/2,9.99.81,,,1.1.1k,openssh8.5,NBUG2021/4,http://mail-index.netbsd.org/port-arm/2021/04/02/msg007213.html
  2021/5/26,9.99.82,4.1.5,3.9.1nb1,,NetBSD9.2,OSC名古屋,http://mail-index.netbsd.org/port-arm/2021/05/26/msg007290.html
+ 2021/6/26,9.99.85,,,,次はgcc10,OSC北海道,http://mail-index.netbsd.org/port-arm/2021/06/17/msg007309.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
@@ -117,7 +118,7 @@ ryo@netbsd さんによる rpi64wip実装が進み、NetBSD/aarch64としてRPI3
 RPI4
 -------
 
-- テスト中です。pinebookとpkgsrcを共用しています。
+- pinebookとpkgsrcを共用しています。
 * http://mail-index.netbsd.org/port-arm/2020/11/18/msg007066.html
 * https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 

@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/nagoya
+ Place/hokkaido
  OSC/OSC2021
  RPI/RPIupdate2021
  RPI

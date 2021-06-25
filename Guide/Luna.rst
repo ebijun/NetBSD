@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2021 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -19,7 +19,7 @@
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-ルナ式練習帳、またはLunaの薄い本2020　[1]_
+ルナ式練習帳、またはLunaの薄い本2021　[1]_
 ===========================================
 
   「私が誰かは わかっているはずだ。」その声は天使の声だった。
@@ -660,6 +660,8 @@ LUNA年表　- 月の刃
  2018/7,青,LUNA-88K2 OSC2018Nagoya ブース展示 [165]_
  2020/4,,オムロン元社長・立石義雄氏逝去 [172]_
  2020/5,井,nono-0.0.3リリース [167]_ 
+ 2021/5,青,Here come LUNA-88K emulators! [182]_
+ 2021/6,井,nono-0.2.0リリース [181]_
 
 最近のLUNA
 ----------------
@@ -906,6 +908,8 @@ yaft X LUNA
 .. [179] https://twitter.com/ao_kenji/status/1330504720516063235
 .. [180] https://twitter.com/isaki68k/status/1330124516333412361
 .. [180] https://twitter.com/ao_kenji/status/1330019763775365120
+.. [181] https://twitter.com/isaki68k/status/1406522668321366022
+.. [182] Here come LUNA-88K emulators!  https://www.slideshare.net/ao_kenji/osc2021-nagoya-248742459
 
 このページ
 ~~~~~~~~~~~
