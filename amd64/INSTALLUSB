@@ -1,8 +1,8 @@
-VERSION=8.99.30
+VERSION=9.99.85
 #ARCH=i386
 ARCH=amd64
 #UEFI=uefi-
-DATE=201901040410Z
+DATE=202106280110Z
 IMAGE=/usr/release/images
 
 echo "gunzip < ${IMAGE}/NetBSD-${VERSION}-${ARCH}-${DATE}-${UEFI}install.img.gz |dd of=/dev/rsd0d bs=4m progress=320"

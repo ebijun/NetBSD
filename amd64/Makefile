@@ -65,3 +65,6 @@ update-info:
 	sys_info |sort > sysinfo
 	pkg_info |sort > pkginfo
 	dmesg -t > ../dmesg/${ARCH}/${SYSTEM}
+
+delete:
+	@rm -i ${RELEASE}/*
