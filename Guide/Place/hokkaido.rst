@@ -158,7 +158,7 @@ https://github.com/ebijun/osc-demo　にあります。
  142.,OSC2019北海道,http://www.re.soum.co.jp/~jun/OSC2019hokkaido.pdf
  126.,OSC2018北海道,http://www.re.soum.co.jp/~jun/OSC2018hokkaido.pdf
  109.,OSC2017北海道,http://www.re.soum.co.jp/~jun/OSC2017hokkaido.pdf
- 89.,OSC2016北海道,httpls://www.re.soum.co.jp/~jun/OSC2016hokkaido.pdf
+ 89.,OSC2016北海道,http://www.re.soum.co.jp/~jun/OSC2016hokkaido.pdf
  72.,OSC2015北海道,http://www.re.soum.co.jp/~jun/OSC2015hokkaido.pdf
  58.,OSC2014北海道,http://www.re.soum.co.jp/~jun/OSC2014hokkaido.pdf
  47.,OSC2013北海道,http://www.re.soum.co.jp/~jun/OSC2013hokkaido.pdf
