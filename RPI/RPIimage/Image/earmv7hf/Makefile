@@ -141,6 +141,7 @@ release:
 # earmv7hf: config.txt should contain start address
 #	(cd ../../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
+	echo "${PKG_PATH}" >> ${MNT}/usr/pkg/etc/pkgin/repositories.conf
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}

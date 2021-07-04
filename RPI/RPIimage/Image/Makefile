@@ -137,6 +137,7 @@ release:
 #	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 #	(cd ../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
+	echo "${PKG_PATH}" >> ${MNT}/usr/pkg/etc/pkgin/repositories.conf
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}

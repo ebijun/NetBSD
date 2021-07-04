@@ -57,6 +57,7 @@ release:
 	(cd ../..; tar cf - root ) |(cd ${MNT_ROOT};tar xvf -)
 	tar cf - etc |(cd ${MNT_ROOT};tar xvf -)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT_ROOT}/etc/pkg_install.conf 
+	echo "${PKG_PATH}" >> ${MNT}/usr/pkg/etc/pkgin/repositories.conf
 	#https://mail-index.netbsd.org/current-users/2020/05/01/msg038495.html
 	#rndctl -S var/db/entropy-file #running on amd64
 	#cp var/db/entropy-file ${MNT_ROOT}/var/db/entropy-file
