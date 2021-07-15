@@ -6,13 +6,16 @@
 
 # kernel update
 #make kernel-update
+#make umount
 #reboot
 #make mount
 #make update
+#make umount
 
 #reboot
 #make mount
 #make etcupdate
+#make umount
 #reboot
 
 #./Copy.sysinfo

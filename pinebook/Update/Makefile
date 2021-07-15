@@ -1,5 +1,6 @@
 RELEASE=/usr/release/images/
-IMG=${RELEASE}/NetBSD-9.99.85-evbarm-aarch64-202106200030Z-install.img
+IMG=${RELEASE}/NetBSD-9.99.86-evbarm-aarch64-202107140840Z-install.img
+#IMG=${RELEASE}/NetBSD-9.99.85-evbarm-aarch64-202106200030Z-install.img
 
 DK=dk1
 

@@ -1,0 +1,262 @@
+[    27.613] 
+X.Org X Server 1.20.12
+X Protocol Version 11, Revision 0
+[    27.630] Build Operating System: NetBSD/evbarm 9.99.86 - The NetBSD Foundation, Inc.
+[    27.648] Current Operating System: NetBSD pinebook.soum.co.jp 9.99.86 NetBSD 9.99.86 (GENERIC64) #0: Wed Jul 14 08:33:47 UTC 2021  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64 evbarm
+[    27.659] Build Date: 09 July 2021  05:11:11PM
+[    27.659]  
+[    27.662] Current version of pixman: 0.38.4
+[    27.673] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    27.678] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    27.709] (==) Log file: "/var/log/Xorg.0.log", Time: Thu Jul 15 19:12:09 2021
+[    27.731] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    27.732] (==) No Layout section.  Using the first Screen section.
+[    27.732] (==) No screen section available. Using defaults.
+[    27.733] (**) |-->Screen "Default Screen Section" (0)
+[    27.733] (**) |   |-->Monitor "<default monitor>"
+[    27.742] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    27.750] (==) Not automatically adding devices
+[    27.750] (==) Not automatically enabling devices
+[    27.750] (==) Not automatically adding GPU devices
+[    27.754] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    27.759] (==) FontPath set to:
+	/usr/X11R7/lib/X11/fonts/misc/,
+	/usr/X11R7/lib/X11/fonts/TTF/,
+	/usr/X11R7/lib/X11/fonts/Type1/,
+	/usr/X11R7/lib/X11/fonts/75dpi/,
+	/usr/X11R7/lib/X11/fonts/100dpi/
+[    27.759] (==) ModulePath set to "/usr/X11R7/lib/modules"
+[    27.760] (==) |-->Input Device "<default pointer>"
+[    27.760] (==) |-->Input Device "Pinebook 1080p keyboard"
+[    27.760] (==) No Layout section. Using the default mouse configuration.
+[    27.760] (==) No Layout section. Using the first keyboard device.
+[    27.762] (II) Loader magic: 0x2003961f8
+[    27.763] (II) Module ABI versions:
+[    27.763] 	X.Org ANSI C Emulation: 0.4
+[    27.763] 	X.Org Video Driver: 24.1
+[    27.763] 	X.Org XInput driver : 24.1
+[    27.763] 	X.Org Server Extension : 10.0
+[    27.764] (II) LoadModule: "glx"
+[    27.779] (II) Loading /usr/X11R7/lib/modules/extensions/libglx.so
+[    27.792] (II) Module glx: vendor="X.Org Foundation"
+[    27.792] 	compiled for 1.20.12, module version = 1.0.0
+[    27.792] 	ABI class: X.Org Server Extension, version 10.0
+[    27.792] (==) Matched modesetting as autoconfigured driver 0
+[    27.793] (==) Matched wsfb as autoconfigured driver 1
+[    27.793] (==) Assigned the driver to the xf86ConfigLayout
+[    27.793] (II) LoadModule: "modesetting"
+[    27.795] (II) Loading /usr/X11R7/lib/modules/drivers/modesetting_drv.so
+[    27.801] (II) Module modesetting: vendor="X.Org Foundation"
+[    27.801] 	compiled for 1.20.12, module version = 1.20.12
+[    27.802] 	Module class: X.Org Video Driver
+[    27.802] 	ABI class: X.Org Video Driver, version 24.1
+[    27.802] (II) LoadModule: "wsfb"
+[    27.804] (II) Loading /usr/X11R7/lib/modules/drivers/wsfb_drv.so
+[    27.807] (II) Module wsfb: vendor="X.Org Foundation"
+[    27.807] 	compiled for 1.20.12, module version = 0.4.0
+[    27.807] 	ABI class: X.Org Video Driver, version 24.1
+[    27.807] (II) LoadModule: "mouse"
+[    27.809] (II) Loading /usr/X11R7/lib/modules/drivers/mouse_drv.so
+[    27.814] (II) Module mouse: vendor="X.Org Foundation"
+[    27.814] 	compiled for 1.20.12, module version = 1.9.2
+[    27.814] 	Module class: X.Org XInput Driver
+[    27.814] 	ABI class: X.Org XInput driver, version 24.1
+[    27.814] (II) LoadModule: "kbd"
+[    27.816] (II) Loading /usr/X11R7/lib/modules/drivers/kbd_drv.so
+[    27.819] (II) Module kbd: vendor="X.Org Foundation"
+[    27.820] 	compiled for 1.20.12, module version = 1.9.0
+[    27.820] 	Module class: X.Org XInput Driver
+[    27.820] 	ABI class: X.Org XInput driver, version 24.1
+[    27.820] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    27.820] (II) wsfb: driver for wsdisplay framebuffer: wsfb
+[    27.822] (--) Using wscons driver on /dev/ttyE1 in pcvt compatibility mode (version 3.32)
+[    27.822] (--) using VT number 2
+[    27.833] (WW) Falling back to old probe method for modesetting
+[    27.834] (II) modeset(0): using default device
+[    27.834] (WW) Falling back to old probe method for wsfb
+[    27.835] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    27.836] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    27.836] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[    27.836] (==) modeset(0): RGB weight 888
+[    27.836] (==) modeset(0): Default visual is TrueColor
+[    27.836] (II) Loading sub module "glamoregl"
+[    27.836] (II) LoadModule: "glamoregl"
+[    27.844] (II) Loading /usr/X11R7/lib/modules/libglamoregl.so
+[    27.851] (II) Module glamoregl: vendor="X.Org Foundation"
+[    27.852] 	compiled for 1.20.12, module version = 1.0.1
+[    27.852] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    29.091] (EE) modeset(0): eglInitialize() failed
+[    29.139] (EE) modeset(0): glamor initialization failed
+[    29.139] (II) modeset(0): ShadowFB: preferred NO, enabled NO
+[    29.255] (II) modeset(0): Output eDP-1 has no monitor section
+[    29.256] (II) modeset(0): Output HDMI-1 has no monitor section
+[    29.376] (II) modeset(0): EDID for output eDP-1
+[    29.376] (II) modeset(0): Manufacturer: NCP  Model: 0  Serial#: 0
+[    29.376] (II) modeset(0): Year: 2016  Week: 0
+[    29.376] (II) modeset(0): EDID Version: 1.4
+[    29.376] (II) modeset(0): Digital Display Input
+[    29.376] (II) modeset(0): 8 bits per channel
+[    29.376] (II) modeset(0): Digital interface is DisplayPort
+[    29.377] (II) modeset(0): Max Image Size [cm]: horiz.: 26  vert.: 15
+[    29.377] (II) modeset(0): Gamma: 2.20
+[    29.377] (II) modeset(0): No DPMS capabilities specified
+[    29.377] (II) modeset(0): Supported color encodings: RGB 4:4:4 
+[    29.377] (II) modeset(0): Default color space is primary color space
+[    29.377] (II) modeset(0): First detailed timing is preferred mode
+[    29.377] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[    29.377] (II) modeset(0): redX: 0.640 redY: 0.329   greenX: 0.300 greenY: 0.600
+[    29.377] (II) modeset(0): blueX: 0.149 blueY: 0.060   whiteX: 0.312 whiteY: 0.328
+[    29.378] (II) modeset(0): Manufacturer's mask: 0
+[    29.378] (II) modeset(0): Supported detailed timing:
+[    29.378] (II) modeset(0): clock: 138.5 MHz   Image Size:  256 x 144 mm
+[    29.378] (II) modeset(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2080 h_border: 0
+[    29.378] (II) modeset(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1111 v_border: 0
+[    29.378] (II) modeset(0): Supported detailed timing:
+[    29.379] (II) modeset(0): clock: 110.9 MHz   Image Size:  256 x 144 mm
+[    29.379] (II) modeset(0): h_active: 1920  h_sync: 1968  h_sync_end 2000 h_blank_end 2080 h_border: 0
+[    29.379] (II) modeset(0): v_active: 1080  v_sync: 1083  v_sync_end 1088 v_blanking: 1111 v_border: 0
+[    29.379] (II) modeset(0): Monitor name: LC116LF3L01
+[    29.379] (II) modeset(0): EDID (in hex):
+[    29.379] (II) modeset(0): 	00ffffffffffff003870000000000000
+[    29.379] (II) modeset(0): 	001a0104a51a0f7806de50a3544c9926
+[    29.379] (II) modeset(0): 	0f505400000001010101010101010101
+[    29.380] (II) modeset(0): 	0101010101011a3680a070381f403020
+[    29.380] (II) modeset(0): 	3500009010000018542b80a070381f40
+[    29.380] (II) modeset(0): 	30203500009010000018000000100000
+[    29.380] (II) modeset(0): 	000000000000000000000000000000fc
+[    29.380] (II) modeset(0): 	004c433131364c46334c30310a20009a
+[    29.381] (II) modeset(0): Printing probed modes for output eDP-1
+[    29.381] (II) modeset(0): Modeline "1920x1080"x59.9  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[    29.381] (II) modeset(0): Modeline "1920x1080"x48.0  110.92  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (53.3 kHz e)
+[    29.381] (II) modeset(0): EDID for output HDMI-1
+[    29.382] (II) modeset(0): Output eDP-1 connected
+[    29.382] (II) modeset(0): Output HDMI-1 disconnected
+[    29.382] (II) modeset(0): Using exact sizes for initial modes
+[    29.382] (II) modeset(0): Output eDP-1 using initial mode 1920x1080 +0+0
+[    29.382] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[    29.382] (==) modeset(0): DPI set to (96, 96)
+[    29.382] (II) Loading sub module "fb"
+[    29.382] (II) LoadModule: "fb"
+[    29.387] (II) Loading /usr/X11R7/lib/modules/libfb.so
+[    29.393] (II) Module fb: vendor="X.Org Foundation"
+[    29.393] 	compiled for 1.20.12, module version = 1.0.0
+[    29.394] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    29.394] (II) UnloadModule: "wsfb"
+[    29.394] (II) Unloading wsfb
+[    29.417] (==) modeset(0): Backing store enabled
+[    29.418] (==) modeset(0): Silken mouse enabled
+[    29.430] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[    29.431] (==) modeset(0): DPMS enabled
+[    29.435] (II) Initializing extension Generic Event Extension
+[    29.439] (II) Initializing extension SHAPE
+[    29.444] (II) Initializing extension MIT-SHM
+[    29.449] (II) Initializing extension XInputExtension
+[    29.456] (II) Initializing extension XTEST
+[    29.461] (II) Initializing extension BIG-REQUESTS
+[    29.466] (II) Initializing extension SYNC
+[    29.470] (II) Initializing extension XKEYBOARD
+[    29.475] (II) Initializing extension XC-MISC
+[    29.479] (II) Initializing extension SECURITY
+[    29.484] (II) Initializing extension XFIXES
+[    29.489] (II) Initializing extension XFree86-Bigfont
+[    29.493] (II) Initializing extension RENDER
+[    29.498] (II) Initializing extension RANDR
+[    29.507] (II) Initializing extension COMPOSITE
+[    29.511] (II) Initializing extension DAMAGE
+[    29.516] (II) Initializing extension MIT-SCREEN-SAVER
+[    29.520] (II) Initializing extension DOUBLE-BUFFER
+[    29.525] (II) Initializing extension RECORD
+[    29.529] (II) Initializing extension DPMS
+[    29.534] (II) Initializing extension Present
+[    29.538] (II) Initializing extension X-Resource
+[    29.543] (II) Initializing extension XVideo
+[    29.552] (II) Initializing extension XVideo-MotionCompensation
+[    29.552] (II) Initializing extension GLX
+[    29.559] (II) AIGLX: Screen 0 is not DRI2 capable
+[    29.681] (II) IGLX: Loaded and initialized swrast
+[    29.681] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[    29.681] (II) Initializing extension XFree86-VidModeExtension
+[    29.684] (II) Initializing extension XFree86-DGA
+[    29.687] (II) Initializing extension XFree86-DRI
+[    29.687] (II) Initializing extension DRI2
+[    29.691] (II) modeset(0): Damage tracking initialized
+[    29.691] (II) modeset(0): Setting screen physical size to 508 x 285
+[    30.668] (II) Using input driver 'mouse' for '<default pointer>'
+[    30.668] (**) Option "CorePointer" "on"
+[    30.668] (**) <default pointer>: always reports core events
+[    30.669] (**) <default pointer>: auto calibration enabled
+[    30.669] (**) <default pointer>: associated screen: 0
+[    30.669] (WW) <default pointer>: No Device specified, looking for one...
+[    30.669] (II) <default pointer>: found Device "/dev/wsmouse"
+[    30.670] (--) <default pointer>: Device: "/dev/wsmouse"
+[    30.670] (==) <default pointer>: Protocol: "WSMouse"
+[    30.670] (**) <default pointer>: always reports core events
+[    30.670] (**) Option "Device" "/dev/wsmouse"
+[    30.671] (==) <default pointer>: Emulate3Buttons, Emulate3Timeout: 50
+[    30.671] (**) <default pointer>: ZAxisMapping: buttons 4 and 5
+[    30.671] (**) <default pointer>: Buttons: 9
+[    30.671] (II) XINPUT: Adding extended input device "<default pointer>" (type: MOUSE, id 6)
+[    30.672] (**) <default pointer>: (accel) keeping acceleration scheme 1
+[    30.672] (**) <default pointer>: (accel) acceleration profile 0
+[    30.672] (**) <default pointer>: (accel) acceleration factor: 2.000
+[    30.672] (**) <default pointer>: (accel) acceleration threshold: 4
+[    30.672] (II) Using input driver 'kbd' for 'Pinebook 1080p keyboard'
+[    30.672] (**) Option "CoreKeyboard" "on"
+[    30.672] (**) Pinebook 1080p keyboard: always reports core events
+[    30.672] (**) Pinebook 1080p keyboard: always reports core events
+[    30.673] (**) Option "Protocol" "wskbd"
+[    30.678] (--) Pinebook 1080p keyboard: Keyboard type: USB
+[    30.678] (**) Option "XkbRules" "base"
+[    30.678] (**) Option "XkbModel" "pc105"
+[    30.678] (**) Option "XkbLayout" "us"
+[    30.678] (**) Option "XkbVariant" "altgr-intl"
+[    30.678] (II) XINPUT: Adding extended input device "Pinebook 1080p keyboard" (type: KEYBOARD, id 7)
+[    35.773] (II) modeset(0): EDID vendor "NCP", prod id 0
+[    35.774] (II) modeset(0): Printing DDC gathered Modelines:
+[    35.774] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[    35.774] (II) modeset(0): Modeline "1920x1080"x0.0  110.92  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (53.3 kHz e)
+[    35.899] (II) modeset(0): EDID vendor "NCP", prod id 0
+[    35.899] (II) modeset(0): Printing DDC gathered Modelines:
+[    35.900] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[    35.900] (II) modeset(0): Modeline "1920x1080"x0.0  110.92  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (53.3 kHz e)
+[    36.025] (II) modeset(0): EDID vendor "NCP", prod id 0
+[    36.025] (II) modeset(0): Printing DDC gathered Modelines:
+[    36.026] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[    36.026] (II) modeset(0): Modeline "1920x1080"x0.0  110.92  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (53.3 kHz e)
+[    36.144] (II) modeset(0): EDID vendor "NCP", prod id 0
+[    36.145] (II) modeset(0): Printing DDC gathered Modelines:
+[    36.145] (II) modeset(0): Modeline "1920x1080"x0.0  138.50  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (66.6 kHz eP)
+[    36.145] (II) modeset(0): Modeline "1920x1080"x0.0  110.92  1920 1968 2000 2080  1080 1083 1088 1111 -hsync -vsync (53.3 kHz e)
+[    38.113] (EE) 
+[    38.114] (EE) Backtrace:
+[    38.906] (EE) 0: /usr/X11R7/bin/X (xorg_backtrace+0x38) [0x20029ab38]
+[    38.912] (EE) 1: /usr/X11R7/bin/X (os_move_fd+0x78) [0x200296788]
+[    38.917] (EE) 2: /usr/lib/libc.so.12 (__sigtramp_siginfo_2+0x0) [0xfffffb3b6590]
+[    38.923] (EE) 3: /usr/X11R7/lib/libepoxy.so.0 (epoxy_is_desktop_gl+0x38) [0xfffffbaeedb8]
+[    38.931] (EE) 4: /usr/X11R7/lib/libepoxy.so.0 (epoxy_has_glx+0xf8) [0xfffffba76a98]
+[    38.938] (EE) 5: /usr/X11R7/lib/libepoxy.so.0 (epoxy_has_glx+0x4b884) [0xfffffbac2224]
+[    38.946] (EE) 6: /usr/X11R7/lib/modules/drivers/modesetting_drv.so (ms_do_pageflip+0x60) [0xfffffaa48bf0]
+[    38.956] (EE) 7: /usr/X11R7/lib/modules/drivers/modesetting_drv.so (ms_vblank_close_screen+0x664) [0xfffffaa488e4]
+[    38.965] (EE) 8: /usr/X11R7/bin/X (present_set_abort_flip+0x2a4) [0x2002c7144]
+[    38.971] (EE) 9: /usr/X11R7/bin/X (present_set_abort_flip+0x6a4) [0x2002c7544]
+[    38.978] (EE) 10: /usr/X11R7/bin/X (present_extension_init+0x51c) [0x2002c63c0]
+[    38.984] (EE) 11: /usr/X11R7/bin/X (Dispatch+0x2fc) [0x20016abc0]
+[    38.989] (EE) 12: /usr/X11R7/bin/X (dix_main+0x388) [0x20013d1f8]
+[    38.994] (EE) 
+[    38.995] (EE) Segmentation fault at address 0x898
+[    38.999] (EE) 
+Fatal server error:
+[    39.002] (EE) Caught signal 11 (Segmentation fault). Server aborting
+[    39.007] (EE) 
+[    39.007] (EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.x.org
+ for help. 
+[    39.016] (EE) Please also check the log file at "/var/log/Xorg.0.log" for additional information.
+[    39.024] (EE) 
+[    39.035] (EE) Server terminated with error (1). Closing log file.
