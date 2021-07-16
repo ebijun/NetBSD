@@ -1,9 +1,26 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20210623)
+Subject: pinebook status update (20210716)
 
 Topics:
-- /usr/bin/aiomixer
- graphical mixer for NetBSD audio.
+- /usr/X11R7/lib/modules/drivers/modesetting_drv.so issue
+
+X hungs with xfce4/mate desktop.ctwm/icewm works.
+https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/X/Xorg.0.log
+
+depends on /usr/X11R7/lib/modules/drivers/modesetting_drv.so 
+ NetBSD-9.99.86-evbarm-aarch64-202107140840Z failed.
+ NetBSD-9.99.85-evbarm-aarch64-202106200030Z works well.
+
+- pkgin support
+ make pkg_summary. and pkgin works.
+ cd /usr/pkgsrc/packages/All
+ find . -name '*.tgz' -exec pkg_info -X {} \; > pkg_summary
+ gzip -f pkg_summary
+
+ pkgsrc packages:
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2021-1/
+
+- graphical mixer for NetBSD audio.
 
 on pinebook:
  Select a mixer device:
@@ -14,15 +31,19 @@ on pinebook pro:
 XXX: [inputs] tab controls audio output level.
  https://twitter.com/ebijun/status/1395184397599469568
 
-- audio CD with wavpack
- Encode: 
-   On Windows: Exact Audio Copy & foobar2000
-   On pkgsrc:
-   pkg_add abcde; pkg_add glyr
-   abcde -d /dev/rcd0a -B -o wv -1 -a default,cue
-   XXX: can't see each tracks with qmmp.
- Play: 
-  qmmp: can play wavpack file.
+- Audio CD with wavpack
+Encode: 
+ On Windows: Exact Audio Copy & foobar2000
+ On pkgsrc:
+ 1. pkg_add abcde; pkg_add glyr
+    abcde -d /dev/rcd0a -B -o wav -1 -a default,cue
+    -> wav,cue,jpg file created.
+ 2. pkg_add wavpack 
+    wavpack -h a.wav --write-binary-tag "Cover Art (Front)=@a.jpg" -w "cuesheet=@a.cue"
+    -> wv file created.
+
+Play: 
+  qmmp: can play wavpack file with cue. How can I show Cover Art?
    Setting->Output->OSS plugin(liboss.so)
 
 - touchpad: sometimes cursor far away.
@@ -36,15 +57,12 @@ XXX: [inputs] tab controls audio output level.
 pkgsrc:
 - works : inkscape,scribus,seamonkey,minitube,mikutter,xournalpp,libreoffice
 
-- firefox 88.0.1 and libreoffce 7.1.3.2 on NetBSD 9.99.82/aarch64 on pinebook.
- https://twitter.com/ebijun/status/1394599344611807242
+- firefox 90.0 and libreoffce 7.1.4.2 on NetBSD 9.99.85/aarch64 on pinebook.
 
  zoom meeting with firefox on NetBSD/aarch64 on pinebook pro 
   with UserAgent switcher addon as Linux.
  Send: Share Screen,camera/USB Camera
  Problem: Can"t show others screen/in-camera.
-- LibreOffice 7.1.2.2 works fine.
- https://twitter.com/ebijun/status/1382306151027548161
 
 - nono: luna68k/luna88k emulator
  add /etc/mk.conf
@@ -68,145 +86,41 @@ ToDo:
 
 System Updates:
 
-pkgsrc packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2021-1/
 
 sysinfo:
- NetBSD-9.99.85 sh-20181212-20210620002529Z
- userland-NetBSD-9.99.85/evbarm
+ NetBSD-9.99.86 sh-20181212-20210714083347Z
+ userland-NetBSD-9.99.86/evbarm
 
 pkgsrc:
- GConf-3.2.3nb10 ImageMagick-7.0.11.14 ImageMagick6-6.9.11.7nb9
- a2ps-4.14nb14 alsa-lib-1.2.4 ap24-php74-7.4.20nb6
- apache-2.4.48 aspell-0.60.8nb3 atkmm-2.28.1nb1
- atril-1.24.0nb11 autoconf-2.71nb1 autoconf213-2.13nb10
- autogen-5.18.16nb4 automake-1.16.3nb1 bash-5.1.8nb2
- bison-3.7.6nb1 cairo-1.16.0nb4 cairomm-1.14.2nb1
- caja-1.24.0nb5 caja-extensions-1.24.0nb6 clang-10.0.1nb4
- cmake-3.20.4 compface-1.5.2nb10 consolekit-1.2.2nb1
- coreutils-8.32nb1 curl-7.77.0 cyrus-sasl-2.1.27nb2
- dav1d-0.9.0 deforaos-pdfviewer-0.1.0nb11 dillo-3.0.5nb10
- docbook-xsl-1.79.2nb5 dos2unix-7.4.2nb1 dvipdfmx-20210318
- dvipsk-2021.1 editline-3.1.20210419nb1 eom-1.24.0nb7
- extra-cmake-modules-5.81.0 fd-3.01bnb1 ffmpeg2-2.8.17nb10
- ffmpeg3-3.4.8nb11 ffmpeg4-4.4nb6 fftw-3.3.9nb8
- firefox-88.0.1nb2 firefox-l10n-88.0.1nb1 fltk-1.3.6
- fluidsynth-2.2.1 fossil-2.15.2 gcc10-10.3.0nb1
- gcc8-8.4.0nb5 gconfmm-2.28.3nb27 gcr-3.38.0nb2
- gd-2.3.2nb1 gdbus-codegen-2.68.2 gdl-3.34.0nb8
- gedit-3.36.2nb6 gettext-tools-0.21nb2 ghostscript-agpl-9.54.0
- gimp-2.10.24nb9 git-base-2.32.0 glib2-2.68.2
- glib2-tools-2.68.2 glibmm-2.66.0nb2 gmake-4.3nb2
- gnome-desktop-2.32.1nb46 gnome-icon-theme-3.12.0nb7
- gnome-icon-theme-symbolic-3.12.0nb15 gnome-mime-data-2.18.0nb10
- gnutls-3.7.2 go-1.16.5 go-bin-1.14.2nb3 go115-1.15.13nb1
- go116-1.16.5nb1 graphviz-2.44.1nb15 gsed-4.8nb1
- gsftopkk-1.19.2nb12 gsl-2.6 gst-plugins0.10-base-0.10.36nb18
- gst-plugins1-base-1.16.2nb6 gstreamer0.10-0.10.36nb17
- gstreamer1-1.16.2nb3 gtk-doc-1.32nb6 gtk2+-2.24.33nb2
- gtk3+-3.24.29nb1 gtkmm-2.24.5nb14 gtkmm3-3.24.5
- gtksourceview2-2.10.5nb43 hal-info-20091130nb9
- help2man-1.48.3nb1 hunspell-1.7.0nb5 hyphen-2.8.8nb4
- icon-naming-utils-0.8.90nb9 inkscape-1.0.2nb7 intltool-0.51.0nb6
- jemalloc-5.2.1nb3 jwm-2.3.7nb12 kpathsea-6.3.3
- latexmk-463bnb3 lcms2-2.12 ldb-2.3.0nb1 libLLVM-9.0.1nb1
- libabw-0.1.3nb8 libaom-1.0.0nb4 libass-0.15.1
- libcdio-2.1.0nb4 libcdio-paranoia-2.0.1nb2 libcroco-0.6.13nb4
- libdvdnav-6.1.1 libdvdread-6.1.2 libetonyek-0.1.10
- libffi-3.3nb5 libfreehand-0.1.2nb9 libgtop-2.28.4nb19
- libheif-1.12.0 libical-3.0.10nb2 libidn-1.37nb1
- libidn2-2.3.1 libimagequant-2.15.1 libmwaw-0.3.18
- libogg-1.3.5 libpurple-2.14.4nb1 libreoffice-7.1.3.2nb2
- libsigc++-2.10.6nb2 libtasn1-4.17.0 libtool-base-2.4.6nb3
- libupnp-1.14.7 libvisio-0.1.7nb11 libvpx-1.10.0nb1
- libwpg-0.3.3nb5 libxkbcommon-1.3.0 libxml2-2.9.12
- libxslt-1.1.34nb6 libzip-1.7.3nb3 lintpkgsrc-4.96nb1
- llvm-10.0.1nb4 luatex-1.13.0 makeindexk-2.15nb13
- makejvf-20200412 marco-1.24.2 mate-calc-1.24.2
- mate-media-1.24.0nb5 mate-panel-1.24.2 mate-screensaver-1.24.2
- mate-session-manager-1.24.3 mate-terminal-1.24.1nb1
- medit-1.2.0nb18 mendexk-3.3 meson-0.58.1 mkvtoolnix-58.0.0
- mm-common-1.0.3 mozjs78-78.4.0nb3 mpg123-1.28.0
- mpich-3.2.1nb6 mpv-0.33.1nb3 mupdf-1.18.0nb2
- mysql-client-5.7.34nb1 mythes-1.2.4nb2 nasm-2.15.05nb1
- ncurses-6.2nb3 neon-0.31.2nb2 netpbm-10.79.04nb8
- nettle-3.7.3 nginx-1.20.1 nkf-2.15nb3 nodejs-14.17.0
- nspr-4.31 nss-3.66 osabi-NetBSD-9.99.85 oxygen-icons-5.81.0
- p11-kit-0.24.0 p5-Archive-Zip-1.68nb1 p5-Authen-SASL-2.16nb9
- p5-Business-ISBN-3.005nb1 p5-Business-ISBN-Data-20191107nb1
- p5-CDDB_get-2.28nb10 p5-Digest-HMAC-1.04nb11 p5-Email-Valid-1.202nb5
- p5-Error-0.17029nb2 p5-ExtUtils-Depends-0.8000nb2
- p5-ExtUtils-PkgConfig-1.16nb5 p5-File-Slurp-Tiny-0.004nb6
- p5-GSSAPI-0.28nb12 p5-IO-CaptureOutput-1.1105nb2
- p5-IO-Socket-INET6-2.72nb7 p5-IO-Socket-SSL-2.070nb1
- p5-Locale-libintl-1.32nb1 p5-MP3-Info-1.26nb4
- p5-MailTools-2.21nb2 p5-Module-Build-0.42310nb2
- p5-Mozilla-CA-20200520nb1 p5-Net-3.13nb1
- p5-Net-DNS-1.30nb1 p5-Net-Domain-TLD-1.75nb5
- p5-Net-IP-1.26nb9 p5-Net-LibIDN-0.12nb13
- p5-Net-SMTP-SSL-1.04nb5 p5-Net-SSLeay-1.90nb1
- p5-Parse-Yapp-1.21nb4 p5-SUPER-1.20190531nb2
- p5-Scalar-List-Utils-1.56nb1 p5-Socket6-0.29nb3
- p5-Sub-Identify-0.14nb5 p5-Sub-Uplevel-0.2800nb5
- p5-Test-Exception-0.43nb6 p5-Test-Needs-0.002006nb3
- p5-Test-NoWarnings-1.04nb12 p5-Test-Warn-0.36nb4
- p5-TimeDate-2.33nb1 p5-Tree-DAG_Node-1.31nb4
- p5-URI-5.09nb1 p5-XML-NamespaceSupport-1.12nb5
- p5-XML-Parser-2.46nb1 p5-XML-SAX-1.02nb1
- p5-XML-SAX-Base-1.09nb5 p5-XML-SAX-Expat-0.51nb7
- p5-XML-Simple-2.25nb4 p5-gettext-1.07nb6
- p5-glib2-1.3293nb1 p5-inc-latest-0.500nb6
- pangomm-2.46.0nb1 pcre2-10.37 perl-5.34.0nb2
- php-7.4.20 php74-curl-7.4.20nb10 php74-fpm-7.4.20nb6
- php74-gd-7.4.20nb1 php74-iconv-7.4.20 php74-intl-7.4.20nb6
- php74-json-7.4.20 php74-mbstring-7.4.20 php74-owncloud-10.6.0nb1
- php74-pdo-7.4.20 php74-pdo_sqlite-7.4.20nb6 php74-posix-7.4.20
- php74-sqlite3-7.4.20nb6 php74-zip-7.4.20nb5 php74-zlib-7.4.20nb1
- pkg_rolling-replace-0.24.12 pkgconf-1.7.4nb1 pkgdepgraph-2.8nb10
- pkgdiff-1.9nb2 pkgin-20.12.1nb1 pluma-1.24.2nb3
- png-1.6.37nb1 policykit-0.9nb29 polkit-0.119
- poppler-21.06.1 poppler-cpp-21.06.1 poppler-glib-21.06.1
- poppler-includes-21.06.1 protobuf-3.17.3 psutils-1.17nb11
- ptexenc-1.3.9 pulseaudio-14.2nb3 py27-typing-3.10.0.0
- py38-babel-2.9.1 py38-cElementTree-3.8.10 py38-cairo-1.20.1
- py38-certifi-2021.5.30 py38-ecdsa-0.17.0 py38-expat-3.8.10
- py38-libxml2-2.9.12nb1 py38-more-itertools-8.8.0 py38-pygments-2.9.0
- py38-setuptools-56.0.0 py38-six-1.16.0 py38-sqlite3-3.8.10nb19
- py38-urllib3-1.26.5 python38-3.8.10nb1 qalculate-3.5.0nb10
- qmmp-1.5.0 qt4-libs-4.8.7nb26 qt4-qdbus-4.8.7nb6
- qt4-tools-4.8.7nb7 qt5-qtbase-5.15.2nb5 rclone-1.55.0nb2
- redland-1.0.17nb29 rip-1.07nb9 ruby26-gettext-3.3.8
- ruby26-moneta-1.4.2 ruby26-oauth-0.5.6 ruby26-pkg-config-1.4.6
- ruby26-red-colors-0.2.0 ruby26-red-datasets-0.1.2
- ruby26-zip-2.3.0 rust-1.52.1nb4 samba-4.14.5 scim-1.4.17nb1
- scribus-1.4.8nb8 seamonkey-2.53.6nb4 speex-1.2.0nb1
- strigi-0.7.8nb42 sudo-1.9.7p1 swig-1.3.38nb3 tcsh-6.22.02nb2
- tex-babel-3.60 tex-cjk-gs-integrate-20201206.0nb1
- tex-csquotes-5.2l tex-graphics-def-2021 tex-hyperref-7.00k
- tex-hyph-utf8-2021 tex-hyphen-base-2021 tex-japanese-otf-1.7b8.57826
- tex-knuth-lib-2021 tex-knuth-local-2021 tex-kpathsea-2021
- tex-l3backend-2021 tex-l3kernel-2021 tex-l3packages-2021
- tex-latex-base-dev-20211201pre0 tex-latex-firstaid-dev-1.0l
- tex-lm-2.005 tex-lualibs-2.74 tex-luaotfload-3.18
- tex-luatex-1.13.0 tex-metafont-2021 tex-parskip-2.0h
- tex-plain-3.141592653.57963 tex-platex-2021 tex-plautopatch-0.9n
- tex-ptex-fontmaps-20201227.0nb1 tex-pxjahyper-0.7 tex-tex-3.141592653
- tex-texlive-scripts-2021 tex-texlive-scripts-doc-2021
- tex-texlive.infra-2021 tex-tlshell-2021 texi2html-5.0nb10
- texlive-collection-basic-2021 upmendex-0.55 vala-0.52.4
- vte3-0.60.3nb10 w3m-0.5.3.0.20210102nb1 web2c-2021
- wget-1.21.1nb2 wxGTK30-3.0.5.1nb3 x264-devel-20191217nb2
- xdvik-22.87.04nb1 xfce4-conf-4.14.3nb3 xfce4-desktop-4.14.4
- xfce4-exo-0.12.11nb5 xfce4-terminal-0.8.10 xfce4-thunar-1.8.17
- xfce4-tumbler-0.3.0nb10 xfce4-xarchiver-0.5.4.16nb1
- xscreensaver-5.45nb4 xterm-368 youtube-dl-20210606
- zenity-3.32.0nb1 zstd-1.5.0
-
-- mate
-  pkgsrc/devel/libappindicator depends on py27-gtk2
-- asunder
-  cdparanoia reading failed hangs on startup
-- pdfpc: testing failed
+ ImageMagick-7.1.0.2 adwaita-icon-theme-40.1 akonadi-1.13.0nb39
+ alsa-lib-1.2.5.1 ap24-php74-7.4.21nb6 apr-util-1.6.1nb11
+ atkmm-2.28.2 bash-5.1.8nb2 cairomm-1.14.3 cdk-5.0.20210324
+ clang-12.0.1 cmake-3.20.5 consolekit-1.2.4 enchant2-2.3.0
+ exiv2-0.27.4 firefox-90.0 firefox-l10n-90.0 fmtlib-8.0.1
+ fossil-2.16 gdbm-1.20 gdbus-codegen-2.68.3 gettext-tools-0.21nb3
+ git-base-2.32.0nb1 glew-2.2.0nb2 glib2-2.68.3nb1 glib2-tools-2.68.3
+ glibmm-2.66.1 go-1.16.6 go-bin-1.14.2nb3 go115-1.15.14
+ go116-1.16.6 googletest-1.11.0 gsl-2.7 harfbuzz-2.8.1
+ harfbuzz-icu-2.8.1 inkscape-1.1 libduktape-2.6.0nb2
+ libreoffice-7.1.4.2 libsigc++-2.10.7 libuv-1.41.1
+ libzip-1.8.0 llvm-12.0.1 lua52-5.2.4nb1 m4-1.4.19
+ marco-1.24.2nb1 mkvtoolnix-58.0.0 nodejs-14.17.3
+ nspr-4.32 nss-3.67 openjdk8-1.8.292nb1 openjpeg-2.4.0nb1
+ osabi-NetBSD-9.99.85 p11-kit-0.24.0nb1
+ p5-IO-Socket-SSL-2.071 p5-Test-Needs-0.002009
+ p5-Tree-DAG_Node-1.32 pangomm-2.46.1 pcre-8.45
+ php-7.4.21 php74-curl-7.4.21nb10 php74-fpm-7.4.21nb6
+ php74-gd-7.4.21nb1 php74-iconv-7.4.21 php74-intl-7.4.21nb6
+ php74-json-7.4.21 php74-mbstring-7.4.21 php74-pdo-7.4.21
+ php74-pdo_sqlite-7.4.21nb6 php74-posix-7.4.21 php74-sqlite3-7.4.21nb6
+ php74-zip-7.4.21nb5 php74-zlib-7.4.21nb1 pkg_install-20210410
+ pkg_rolling-replace-0.24.13 polkit-0.119nb1 py38-cElementTree-3.8.11
+ py38-certifi-2021.5.30 py38-cffi-1.14.6 py38-expat-3.8.11
+ py38-setuptools-57.1.0 py38-sqlite3-3.8.11nb19
+ py38-urllib3-1.26.6 python37-3.7.11 python38-3.8.11
+ qt5-qtbase-5.15.2nb6 rclone-1.55.0nb3 ruby26-base-2.6.8
+ ruby26-red-colors-0.2.0 rust-1.52.1nb4 sqlite3-3.36.0
+ sudo-1.9.7p1 x11-links-1.34
 
 System Updates:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
@@ -266,7 +180,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 9.99.85 (GENERIC64) #0: Sun Jun 20 00:25:29 UTC 2021  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.86 (GENERIC64) #0: Wed Jul 14 08:33:47 UTC 2021 mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
