@@ -1,6 +1,8 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.85-evbarm-aarch64-202106200930Z-install.img
+IMG=${RELEASE}/NetBSD-9.99.86-evbarm-aarch64-202107171950Z-install.img
 
+#-rw-r--r--  1 root  wheel  1625292800 Jul 18 09:48 /usr/release/images/NetBSD-9.99.86-evbarm-aarch64-202107171950Z-install.img
+#-rw-r--r--  1 root  wheel  1625292800 Jun 20 23:32 /usr/release/images/NetBSD-9.99.85-evbarm-aarch64-202106200930Z-install.img
 DK=dk1
 
 IMAGE=arm64.img
