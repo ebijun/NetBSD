@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202106170850Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202107240630Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -124,6 +124,7 @@ pkg-back:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	cp ../etc/rc.conf ${MNT}/etc/rc.conf
+	echo "${PKG_PATH}" >> ${MNT}/usr/pkg/etc/pkgin/repositories.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -137,7 +138,6 @@ release:
 #	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
 #	(cd ../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
-	echo "${PKG_PATH}" >> ${MNT}/usr/pkg/etc/pkgin/repositories.conf
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
