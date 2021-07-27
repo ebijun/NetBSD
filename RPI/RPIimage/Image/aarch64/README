@@ -1,29 +1,30 @@
-VERSION: :1,$s/2021-06-20/2021-06-20/g
-ISO:     :1,$s/202106182000Z/202106182000Z/g
-NetBSD:  :1,$s/9.99.85/9.99.85/g
+VERSION: :1,$s/2021-07-27/2021-07-27/g
+ISO:     :1,$s/202107260500Z/202107260500Z/g
+NetBSD:  :1,$s/9.99.87/9.99.87/g
 PKGSRC:  :1,$s/2021-1/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-06-20-netbsd-raspi-aarch64.img
+Subject: 2021-07-27-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-06-20-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2021-07-27-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-06-20-aarch64/2021-06-20-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-06-20-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-07-27-aarch64/2021-07-27-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-07-27-aarch64/MD5
 
 Topics:
-- curl-7.77.0  
-- perl-5.34.0nb2
-- sudo-1.9.7p1
-- UEFI v1.28
- https://github.com/pftf/RPi4/releases
-    Update TF-A binaries to version 2.5 [tianocore/edk2-non-osi@e1bb27f]
-    Ensure that ACPI reflects the UART setup from config.txt [tianocore/edk2-platforms@ea709f1]
-    Enable Bluetooth and UART in Windows OS [tianocore/edk2-platforms@086a3a3]
-
+- ruby27
+  mikutter:
+   cp -r /root/.mikutter to user home directory.
+   root user can't make twitter auth setting.
+- pkgin support
+  edit /usr/pkg/etc/pkgin/repositories.conf
+  cf.
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2021-1
+  and pkgin update
+  
 - only for RPI4 
   (fill dtb for RPI3?)
 - build script
@@ -35,28 +36,40 @@ Topics:
 - rpi cm4 + waveshare mini base board B seems stop after kernel load
   http://mail-index.netbsd.org/port-arm/2021/06/30/msg007343.html
 
+UEFI: v1.28
+ https://github.com/pftf/RPi4/releases
+    Update TF-A binaries to version 2.5 [tianocore/edk2-non-osi@e1bb27f]
+    Ensure that ACPI reflects the UART setup from config.txt [tianocore/edk2-platforms@ea709f1]
+    Enable Bluetooth and UART in Windows OS [tianocore/edk2-platforms@086a3a3]
+
 sysinfo:
- NetBSD-9.99.85 sh-20181212-20210618135752Z
- userland-NetBSD-9.99.85/evbarm
+ NetBSD-9.99.87 sh-20181212-20210725224308Z
+ userland-NetBSD-9.99.87/evbarm
 
 pkgsrc:
- bash-5.1.8nb2 cairo-1.16.0nb4 curl-7.77.0 dillo-3.0.5nb10
- fltk-1.3.6 fossil-2.15.2 gd-2.3.2nb1 git-base-2.32.0
- gnutls-3.7.2 gtk2+-2.24.33nb2 gtk3+-3.24.29nb1 libffi-3.3nb5
- libidn-1.37nb1 libidn2-2.3.1 libimagequant-2.15.1 libtasn1-4.17.0
- libxml2-2.9.12 libxslt-1.1.34nb6 lintpkgsrc-4.96nb1 nettle-3.7.3
- p11-kit-0.24.0 p5-Authen-SASL-2.16nb9 p5-Digest-HMAC-1.04nb11
- p5-Email-Valid-1.202nb5 p5-Error-0.17029nb2 p5-GSSAPI-0.28nb12
- p5-IO-CaptureOutput-1.1105nb2 p5-IO-Socket-INET6-2.72nb7
- p5-IO-Socket-SSL-2.070nb1 p5-MailTools-2.21nb2 p5-Mozilla-CA-20200520nb1
- p5-Net-DNS-1.30nb1 p5-Net-Domain-TLD-1.75nb5 p5-Net-IP-1.26nb9
- p5-Net-LibIDN-0.12nb13 p5-Net-SMTP-SSL-1.04nb5 p5-Net-SSLeay-1.90nb1
- p5-Socket6-0.29nb3 p5-TimeDate-2.33nb1 pcre2-10.37
- perl-5.34.0nb2 png-1.6.37nb1 python38-3.8.10nb1 qt5-qtbase-5.15.2nb5
- ruby26-gettext-3.3.8 ruby26-moneta-1.4.2 ruby26-oauth-0.5.6
- ruby26-red-colors-0.2.0 ruby26-red-datasets-0.1.2
- ruby26-zip-2.3.0 sudo-1.9.7p1 tcsh-6.22.02nb2
- wget-1.21.1nb2 zstd-1.5.0
+ bash-5.1.8nb3 curl-7.78.0 fltk-1.3.7 fossil-2.16
+ git-base-2.32.0nb1 glib2-2.68.3nb1 harfbuzz-2.8.1
+ libxml2-2.9.12nb1 nghttp2-1.44.0 p11-kit-0.24.0nb1
+ p5-IO-Socket-SSL-2.071 pcre-8.45 pkg_install-20210410
+ pkgin-21.7.0 py38-cElementTree-3.8.11 py38-expat-3.8.11
+ python38-3.8.11 qt5-qtbase-5.15.2nb6 ruby27-addressable-2.7.0
+ ruby27-atk-3.4.2 ruby27-base-2.7.4 ruby27-cairo-1.17.5
+ ruby27-cairo-gobject-3.4.2nb1 ruby27-delayer-1.1.2
+ ruby27-delayer-deferred-2.2.0 ruby27-diva-1.0.2
+ ruby27-gdk_pixbuf2-3.4.2 ruby27-gettext-3.3.8
+ ruby27-gio2-3.4.2 ruby27-glib2-3.4.2 ruby27-gobject-introspection-3.4.2
+ ruby27-gtk2-3.4.2nb1 ruby27-httpclient-2.8.3
+ ruby27-instance_storage-1.0.0 ruby27-locale-2.1.3
+ ruby27-memoist-0.16.2 ruby27-mikutter-4.1.5
+ ruby27-mikutter-plugins-twitter-4.1 ruby27-mini_portile2-2.5.0
+ ruby27-moneta-1.4.2 ruby27-native-package-installer-1.1.1
+ ruby27-nokogiri-1.11.2nb1 ruby27-oauth-0.5.6 ruby27-pango-3.4.2nb1
+ ruby27-pkg-config-1.4.6 ruby27-pluggaloid-1.5.0
+ ruby27-public_suffix-4.0.6 ruby27-racc-1.5.2nb1
+ ruby27-red-colors-0.2.0 ruby27-red-datasets-0.1.2
+ ruby27-simpleidn-0.2.1 ruby27-text-1.3.1
+ ruby27-twitter-text-simpleidn-3.0.0.0 ruby27-typed-array-0.1.2
+ ruby27-unf-0.1.4 ruby27-unf_ext-0.0.7.7 ruby27-zip-2.3.0
 
 RPI4 status:
 - boot via UEFI_VER=v1.28
@@ -79,15 +92,14 @@ In this image,pre-setted RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.85 evbarm-aarch64 202106182000Z arm64.img from nyftp.
-- boot via UEFI_VER=v1.26
+- NetBSD-current 9.99.87 evbarm-aarch64 202107260500Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/sysinfo
 
-Update from 2021-04-15:
- https://github.com/ebijun/NetBSD/commit/311716537054e1e42d5a3fef37a0c91faeb4d390#diff-cf95b12b2b3d346ddb27e4ed98c4177abc48e486232bc9e4ebd71a74da610dfb
+Update from 2021-06-20:
+https://github.com/ebijun/NetBSD/commit/9876205bedb9d67989b05e16159363f0f49ab6cd
 
 - mate/firefox/inkscape/libreoffice works well
    pkg_add mate
