@@ -1,21 +1,28 @@
-VERSION: :1,$s/2021-06-18/2021-06-18/g
-ISO:     :1,$s/202106170850Z/202106170850Z/g
-NetBSD:  :1,$s/9.99.85/9.99.85/g
-PKGSRC:  :1,$s/2021-06-18/2021-1/
+VERSION: :1,$s/2021-07-28/2021-07-28/g
+ISO:     :1,$s/202107270040Z/202107270040Z/g
+NetBSD:  :1,$s/9.99.87/9.99.87/g
+PKGSRC:  :1,$s/2021-07-28/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-06-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-07-28-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-06-18-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-07-28-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-06-18-earmv6hf/2021-06-18-netbsd-raspi-earmv6hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-06-18-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-07-28-earmv6hf/2021-07-28-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-07-28-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.85 evbarm-earmv6hf 202106170850Z rpi.img from nyftp.
+- NetBSD 9.99.87 evbarm-earmv6hf 202107270040Z rpi.img from nyftp.
+- gcc10
+- ruby27
+- pkgin support
+  check /usr/pkg/etc/pkgin/repositories.conf.
+  I add 
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2021-1
+  for testing, with pkg_summery.gz .
 
 - Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
 XXX: should test big-endian image and pkgsrc
@@ -31,28 +38,38 @@ PR
 - RPI4: testing on NetBSD/aarch64
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 
-Changes from 2021-05-26 version
-https://github.com/ebijun/NetBSD/commit/2184445d9edad47d1ffd4151dfb0950e8334023e
+Changes from 2021-06-18 version
+https://github.com/ebijun/NetBSD/commit/461c616423ed15c5050bd6ae15912a5d75e93787#diff-39e86155be9b5a0f937a5481e59c7784ee1515b36e534e2672c663d59d1ca679
+https://github.com/ebijun/NetBSD/commit/5723965b1dda992a0cc9a646d8d852907026e3d4#diff-39e86155be9b5a0f937a5481e59c7784ee1515b36e534e2672c663d59d1ca679
 
 sysinfo:
- NetBSD-9.99.85 sh-20181212-20210617062056Z userland-NetBSD-9.99.85/evbarm
+ g++-10.3.0 gcc-10.3.0 NetBSD-9.99.87 sh-20181212-20210726225036Z
+ userland-NetBSD-9.99.87/evbarm
 
 pkgsrc:
- bash-5.1.8nb2 cairo-1.16.0nb4 curl-7.77.0 dillo-3.0.5nb10
- fossil-2.15.2 gd-2.3.2nb1 git-base-2.32.0 gnutls-3.7.2
- gtk2+-2.24.33nb2 gtk3+-3.24.29nb1 libffi-3.3nb5 libidn-1.37nb1
- libimagequant-2.15.1 libxslt-1.1.34nb6 lintpkgsrc-4.96nb1
- nettle-3.7.3 p11-kit-0.24.0 p5-Authen-SASL-2.16nb9
- p5-Digest-HMAC-1.04nb11 p5-Email-Valid-1.202nb5
- p5-Error-0.17029nb2 p5-GSSAPI-0.28nb12 p5-IO-CaptureOutput-1.1105nb2
- p5-IO-Socket-INET6-2.72nb7 p5-IO-Socket-SSL-2.070nb1
- p5-MailTools-2.21nb2 p5-Mozilla-CA-20200520nb1
- p5-Net-DNS-1.30nb1 p5-Net-Domain-TLD-1.75nb5 p5-Net-IP-1.26nb9
- p5-Net-LibIDN-0.12nb13 p5-Net-SMTP-SSL-1.04nb5 p5-Net-SSLeay-1.90nb1
- p5-Socket6-0.29nb3 p5-TimeDate-2.33nb1 pcre2-10.37
- perl-5.34.0nb2 qt5-qtbase-5.15.2nb5 ruby26-gettext-3.3.8
- ruby26-oauth-0.5.6 ruby26-red-colors-0.2.0 ruby26-red-datasets-0.1.2
- ruby26-zip-2.3.0 sudo-1.9.7p1 tcsh-6.22.02nb2 wget-1.21.1nb2
+ bash-5.1.8nb3 curl-7.78.0 fltk-1.3.7 fossil-2.16 git-base-2.32.0nb1
+ glib2-2.68.3nb1 harfbuzz-2.8.1 libxml2-2.9.12nb1 nghttp2-1.44.0
+ p11-kit-0.24.0nb1 p5-IO-Socket-SSL-2.071 pcre-8.45 pkg_install-20210410
+ pkgin-21.7.0 py38-cElementTree-3.8.11 py38-expat-3.8.11
+ python38-3.8.11 qt5-qtbase-5.15.2nb6 ruby27-addressable-2.7.0
+ ruby27-atk-3.4.2 ruby27-base-2.7.4 ruby27-cairo-1.17.5
+ ruby27-cairo-gobject-3.4.2nb1 ruby27-delayer-1.1.2
+ ruby27-delayer-deferred-2.2.0 ruby27-diva-1.0.2
+ ruby27-gdk_pixbuf2-3.4.2 ruby27-gettext-3.3.8
+ ruby27-gio2-3.4.2 ruby27-glib2-3.4.2
+ ruby27-gobject-introspection-3.4.2 ruby27-gtk2-3.4.2nb1
+ ruby27-httpclient-2.8.3 ruby27-instance_storage-1.0.0
+ ruby27-locale-2.1.3 ruby27-memoist-0.16.2 ruby27-mikutter-4.1.5
+ ruby27-mikutter-plugins-twitter-4.1 ruby27-mini_portile2-2.5.0
+ ruby27-moneta-1.4.2 ruby27-native-package-installer-1.1.1
+ ruby27-nokogiri-1.11.2nb1 ruby27-oauth-0.5.6
+ ruby27-pango-3.4.2nb1 ruby27-pkg-config-1.4.6
+ ruby27-pluggaloid-1.5.0 ruby27-public_suffix-4.0.6
+ ruby27-racc-1.5.2nb1 ruby27-red-colors-0.2.0
+ ruby27-red-datasets-0.1.2 ruby27-simpleidn-0.2.1
+ ruby27-text-1.3.1 ruby27-twitter-text-simpleidn-3.0.0.0
+ ruby27-typed-array-0.1.2 ruby27-unf-0.1.4
+ ruby27-unf_ext-0.0.7.7 ruby27-zip-2.3.0
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -110,7 +127,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-06-18-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-07-28-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -333,22 +350,22 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference Online/Hokkaido 2021, NetBSD BOF.
+For Open Source Conference Online/Kyoto 2021, NetBSD BOF.
 I've updated raspberry-pi image.
 
-2021 Jun.26 Sat 15:00-15:45 JST (UTC+9) ROOM G
-https://event.ospn.jp/osc2021-online-do/session/342890
+2021 Jul.31 Sat 15:00-15:45 JST (UTC+9) ROOM C
+https://event.ospn.jp/osc2021-online-kyoto/session/349557
 
 Join meeting with ZOOM/YoutubeLive 
- https://ospn.connpass.com/event/211390/
+ https://ospn.connpass.com/event/214013/
 YoutubeLive https://www.youtube.com/c/OSPNjp
 
-http://www.re.soum.co.jp/~jun/OSC2021do.pdf
+http://www.re.soum.co.jp/~jun/OSC2021kyoto.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2021.rst
 
-- NetBSD 9.99.85 earmv6hf rpi.img.gz base
+- NetBSD 9.99.87 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -394,7 +411,7 @@ Installed Packages:
   vlgothic-ttf
   icewm
   xli
-  ruby24-mikutter
+  ruby27-mikutter
   uim
   fossil
   raspberrypi-userland
