@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.85 (RPI2) #0: Thu Jun 17 06:20:56 UTC 2021
+NetBSD 9.99.87 (RPI2) #0: Mon Jul 26 22:50:36 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -113,9 +113,9 @@ blake2s: self-test passed
 uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 sdmmc0: direct I/O error 5, r=6 p=0xd264bf14 write
-sdmmc0: SD card status: 4-bit, C10, U3, V30
-ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x0b8001e5:0x113>
-ld0: 29423 MB, 7472 cyl, 128 head, 63 sec, 512 bytes/sect x 60258304 sectors
+sdmmc0: SD card status: 4-bit, C10, U1
+ld0 at sdmmc0: <0x02:0x544d:SA16G:0x31:0x2850f02f:0x127>
+ld0: 14832 MB, 7533 cyl, 64 head, 63 sec, 512 bytes/sect x 30375936 sectors
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 uhub1 at uhub0 port 1: vendor 0424 (0x0424) product 9514 (0x9514), class 9/0, rev 2.00/2.00, addr 2
 uhub1: multiple transaction translators
@@ -147,7 +147,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.85/modules
+kern.module.path=/stand/evbarm/9.99.87/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!

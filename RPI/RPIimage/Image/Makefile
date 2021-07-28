@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202107240630Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202107270040Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -88,6 +88,7 @@ rpi:
 	mount_msdos /dev/${VND}e ${MNT}
 	mount_msdos /dev/${VND_TMP}e ${MNT_TMP}
 	(cd ${MNT_TMP}; cp -pr . ${MNT})
+	sync
 
 	umount ${MNT}
 	umount ${MNT_TMP}

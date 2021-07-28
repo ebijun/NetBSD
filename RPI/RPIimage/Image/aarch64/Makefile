@@ -42,6 +42,7 @@ boot_config:
 	unzip -d ${MNT_BOOT} ${UEFI_FIRM}
 	mv ${MNT_BOOT}/RPI_EFI.fd ${MNT_BOOT}/RPI_EFI.fd.org
 	cp boot/RPI_EFI.fd  ${MNT_BOOT} #disable 3GB barrier
+	sync
 	umount ${MNT_BOOT}
 	vnconfig -u ${VND}
 
@@ -127,7 +128,7 @@ pkg-back:
 	fsck /dev/${DK_RELEASE}
 	mount /dev/${DK_RELEASE} ${MNT_ROOT}
 	cp etc/rc.conf ${MNT_ROOT}/etc/rc.conf
-	echo "#${PKG_PATH}" >> ${MNT}/usr/pkg/etc/pkgin/repositories.conf
+	echo "${PKG_PATH}" >> ${MNT}/usr/pkg/etc/pkgin/repositories.conf
 	umount ${MNT_ROOT}
 	vnconfig -u ${VND}
  

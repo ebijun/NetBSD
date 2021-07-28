@@ -91,7 +91,7 @@ rpi:
 	mount_msdos /dev/${VND}e ${MNT}
 	mount_msdos /dev/${VND_TMP}e ${MNT_TMP}
 	(cd ${MNT_TMP}; cp -pr . ${MNT})
-
+	sync
 	umount ${MNT}
 	umount ${MNT_TMP}
 	vnconfig -u ${VND}
