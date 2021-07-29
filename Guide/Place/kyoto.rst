@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2020 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2021 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -48,9 +48,10 @@
  2016 Kyoto,7/29-30,1000,59,京都リサーチパーク
  2017 Kyoto,8/4-5,750,49,京都リサーチパーク
  2018 Kyoto,8/3-4,800,48,京都リサーチパーク
- 2019 Kyoto,8/2-3,,50,京都リサーチパーク
- 2020 Kyoto,8/28-29,Online
-
+ 2019 Kyoto,8/2-3,760,50,京都リサーチパーク
+ 2020 Kyoto,8/28-29,320,18,Online
+ 2021 Kyoto,7/30-31,,16,Online
+ 
 よく行く店
 ~~~~~~~~~~~~~~
 
@@ -58,10 +59,14 @@
  :widths: 30 20 60
 
  店名,エリア,コメント
+ 麥酒　夢詠ミ,祇園四条駅６番出口,平日15:45 土日祝12:45 21:00まで
+ 京都ビアラボ,河原町正面,忘れよIPA
  スタンドうみねこコト,蛸屋町１６０,最大35tap
  バンガロー,四条堀川東,10タップ 10oz 600円 15oz 900円
+ 京都醸造,市民防災センター前,黒猿にまで
  坊主バー,大宮,Sun3/60ユーザ＆僧侶とは何か。
- BEFORE9,二条殿町545,
+ BEFORE9,二条殿町545,15:00- 酸/果物生活
+ グリルタカラ,国際会館,洋食
  珈琲陣,大宮松原,ハムモーニング。マッチとコースター。
  幸福堂,壬生,アイスモナカ&きんつばをおみやげに新選組
  宇治橋通り商店街,宇治,2019/8/3　クラフトビール夜市。
@@ -77,12 +82,11 @@
  喫茶ルナ,東向日,http://www.openstreetmap.org/way/203043949
  ルナ美容院,西向日,http://www.openstreetmap.org/way/203450773
  島原温泉,丹波口,恵那のラジウム温泉
- メトロ,丸太町,2017/8/4はContaKt 5日がBORN FREE
+ メトロ,丸太町,2021/7/31 SeeQ Creationlab 4周年
  ソワレ,祇園,テレビカーで着いたら2階でケーキセット
- 磔磔,筋屋町,2017/8/4　木村充揮 近藤房之助 金子マリ 8/5 木村充揮 奇妙礼太郎 ヨモギ
+ 磔磔,筋屋町,2021/7/31 木村充揮 近藤房之助 三宅伸治3DAYS 8/6 小坂忠 8/7 Leyona 8/8 鮎川誠 友部正人
  奥満笑屋,丸太町,京都町家麦酒。キンシ正宗堀野記念館併設　
  efish,五条大橋,アップルのデザイナーだった西堀晋さんのカフェ
- ハイファイ堂,京都市役所,オーディオ機器中心
  ホホホ座/ガケ書房,北白川,車もめりこむ本屋
  一心,白川今出川,Streams-JP御用達。一心鍋で雑炊まで。
  田毎,三条,京都のたぬきうどんとは何か。みうらじゅんさんのサイン。
@@ -99,7 +103,7 @@
  慈恩弘国,東寺,金土　18:00-22:30 慈愛と恩恵に満ち満ちた弘法さまのお国（原文ママ 
  カトーコバーン食堂,北白川,11:00-23:00 北白川久保田町64-14 ベーカリー白川隣
  市電カフェ,梅小路公園,505 703 890 1605。ケムリクサは広島電鉄路面電車車番 1904「かも川」
-	  
+
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -110,6 +114,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 
+ 167,OSC2021京都,http://www.re.soum.co.jp/~jun/OSC2020kyoto.pdf
  157,OSC2020京都,http://www.re.soum.co.jp/~jun/OSC2020kyoto.pdf
  145,OSC2019京都,http://www.re.soum.co.jp/~jun/OSC2018kyoto.pdf
  128,OSC2018京都,http://www.re.soum.co.jp/~jun/OSC2018kyoto.pdf
@@ -128,7 +134,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2020京都 NetBSDブース展示の記録,
+ OSC2021京都 NetBSDブース展示の記録,https://togetter.com/li/1751521
+ OSC2020京都 NetBSDブース展示の記録,https://togetter.com/li/1582822
  OSC2019京都 NetBSDブース展示の記録,https://togetter.com/li/1382880
  OSC2018京都 NetBSDブース展示の記録,http://togetter.com/li/1252935
  OSC2017京都 NetBSDブース展示の記録,https://togetter.com/li/1136708

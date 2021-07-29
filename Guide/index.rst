@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/hokkaido
+ Place/kyoto
  OSC/OSC2021
  RPI/RPIupdate2021
  RPI

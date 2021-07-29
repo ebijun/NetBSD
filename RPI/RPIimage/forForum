@@ -5,21 +5,24 @@ https://www.raspberrypi.org/forums/viewforum.php?f=86
 :1,$s/202104010300Z/202104010300Z/g
 :1,$s?2021/04/02/msg007213.html?2021/04/02/msg007213.html?
 
-2021-04-02-netbsd-raspi-earmv6hf.img
+2021/07 NetBSD 9.99.87 image update
 
-I've updated 2021-04-02-netbsd9.99.81-raspi-earmv6hf.img.gz for RPI0/1/2/3.
+I've updated 2021-07 NetBSD images.
 
-http://mail-index.netbsd.org/port-arm/2021/04/02/msg007213.html
+2021-07-28-netbsd-raspi-earmv6hf.img: for RPI0-3
+ http://mail-index.netbsd.org/port-arm/2021/07/28/msg007381.html
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-04-02-earmv6hf/2021-04-02-netbsd-raspi-earmv6hf.img.gz
+2021-07-27-netbsd-raspi-aarch64.img: for RPI4
+ http://mail-index.netbsd.org/port-arm/2021/07/27/msg007380.html
+
 
 Update:
-- NetBSD 9.99.81 evbarm-earmv6hf 202104010300Z rpi.img from nyftp.
+- NetBSD 9.99.87 rpi.img from nyftp.
+- gcc10
+- ruby27
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
-- sysinfo and pkgsrc update 
- https://github.com/ebijun/NetBSD/commit/204c7f35c89d7ff3875ae3a0b010ed9d556505e7
 
 Overview:
 http://wiki.NetBSD.org/ports/evbarm/raspberry_pi/
