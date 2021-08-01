@@ -1,5 +1,5 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.86-amd64-202107140840Z-install.img
+IMG=${RELEASE}/NetBSD-9.99.87-amd64-202107311930Z-install.img
 
 ARCH=amd64
 VND0=vnd0
@@ -56,6 +56,8 @@ mount:
 umount:
 	umount ${MNT}
 	vndconfig -u vnd0
+	df
+	vnconfig -l
 
 fetch:
 	./NewestISO |sh
