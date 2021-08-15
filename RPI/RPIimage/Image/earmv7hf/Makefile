@@ -12,7 +12,7 @@
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202104240300Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202108130630Z/evbarm-earmv7hf/binary
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2021-1/
 
@@ -128,6 +128,7 @@ pkg-back:
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
 	cp etc/rc.conf ${MNT}/etc/rc.conf
+	echo "${PKG_PATH}" >> ${MNT}/usr/pkg/etc/pkgin/repositories.conf
 	umount ${MNT}
 	vnconfig -u ${VND}
 
@@ -141,7 +142,6 @@ release:
 # earmv7hf: config.txt should contain start address
 #	(cd ../../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
-	echo "${PKG_PATH}" >> ${MNT}/usr/pkg/etc/pkgin/repositories.conf
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
