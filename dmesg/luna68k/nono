@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.81 (GENERIC) #0: Wed Apr 14 22:08:28 UTC 2021
+NetBSD 9.99.88 (GENERIC) #0: Sun Aug 15 22:22:52 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/luna68k/compile/GENERIC
 LUNA-I (MC68030 CPU+MMU, MC68881 FPU)
 total memory = 128 MB
@@ -13,7 +13,7 @@ timecounter: Timecounters tick every 16.666 msec
 mainbus0 (root)
 clock0 at mainbus0: mk48t02
 lcd0 at mainbus0
-le0 at mainbus0: address 02:00:01:dd:af:df
+le0 at mainbus0: address 02:00:01:4b:9e:69
 le0: 32 receive buffers, 8 transmit buffers
 sio0 at mainbus0: uPD7201A
 siotty0 at sio0 channel 0
@@ -33,13 +33,15 @@ aes: BearSSL aes_ct
 aes_ccm: self-test passed
 chacha: Portable C ChaCha
 blake2s: self-test passed
+cd0 at scsibus0 target 5 lun 0: <NONO, SCSICD, 0> cdrom removable
+cd0: async, 8-bit transfers
 sd0 at scsibus0 target 6 lun 0: <NONO, SCSIHD, 0> disk fixed
 sd0: fabricating a geometry
-sd0: 435 MB, 435 cyl, 64 head, 32 sec, 512 bytes/sect x 892650 sectors
+sd0: 2615 MB, 2615 cyl, 64 head, 32 sec, 512 bytes/sect x 5355900 sectors
 sd0: async, 8-bit transfers
 boot device: sd0
 sd0: fabricating a geometry
 root on sd0a dumps on sd0b
 root file system type: ffs
-kern.module.path=/stand/luna68k/9.99.81/modules
+kern.module.path=/stand/luna68k/9.99.88/modules
 entropy: ready
