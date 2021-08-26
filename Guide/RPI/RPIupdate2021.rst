@@ -35,9 +35,6 @@ RaspberryPIのNetBSDイメージについて
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
- 2020/06/01,9.99.64,4.0.5,3.9.0,1.1.1g,,OSC名古屋,http://mail-index.netbsd.org/port-arm/2020/05/28/msg006699.html
- 2020/06/27,9.99.68,,3.9.0nb2,,icu67 bind9.16.3,OSC北海道,http://mail-index.netbsd.org/port-arm/2020/06/25/msg006812.html
- 2020/07/25,9.99.69,,,,Kernel Address SANitizer,OSC新潟,http://mail-index.netbsd.org/port-arm/2020/07/21/msg006885.html
  2020/08/28,9.99.71,4.0.6,,,RPI4+UEFI,OSC京都,http://mail-index.netbsd.org/port-arm/2020/08/27/msg006954.html
  2020/09/19,9.99.72,,3.9.0nb3,,GCC9.3,OSC広島,http://mail-index.netbsd.org/port-arm/2020/09/17/msg006975.html
  2020/10/24,9.99.74,4.1.2,,,NetBSD9.1,OSC東京秋,http://mail-index.netbsd.org/port-arm/2020/10/18/msg007015.html
@@ -48,6 +45,7 @@ RaspberryPIのNetBSDイメージについて
  2021/5/26,9.99.82,4.1.5,3.9.1nb1,,NetBSD9.2,OSC名古屋,http://mail-index.netbsd.org/port-arm/2021/05/26/msg007290.html
  2021/6/26,9.99.85,,,,次はgcc10,OSC北海道,http://mail-index.netbsd.org/port-arm/2021/06/17/msg007309.html
  2021/7/31,9.99.87,,,,gcc10/ruby27,OSC京都,http://mail-index.netbsd.org/port-arm/2021/07/28/msg007381.html
+ 2021/8/26,9.99.88,,,,bind-9.16.20,ODC,http://mail-index.netbsd.org/port-arm/2021/08/23/msg007421.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
