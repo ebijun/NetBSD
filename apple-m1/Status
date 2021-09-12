@@ -1,0 +1,59 @@
+DATE=`date +%Y%m%d`
+
+cat << EOF
+To: port-arm%netbsd.org@localhost
+Subject: apple m1 status update (${DATE})
+
+Install:
+ https://wiki.netbsd.org/ports/evbarm/apple/
+
+Topics:
+
+Hardware:
+ Apple Mac mini M1 2020 A2348 
+ USB SSD 128GB ELECOM ESD-EC0120GRDR
+
+Filesystem   1G-blocks      Used     Avail %Cap Mounted on
+/dev/dk1           109        15        89  14% /
+/dev/dk0             0         0         0  35% /boot
+
+ToDo:
+- X
+- audio
+- Wireless LAN
+
+pkgsrc:
+- pkgsrc packages:
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2021-1/
+  pkgin support
+
+System Updates:
+
+sysinfo:
+ NetBSD-9.99.88 sh-20181212-20210815222252Z
+ userland-NetBSD-9.99.88/evbarm
+
+pkgsrc:
+
+System Updates:
+
+
+Version: 
+ `uname -v`
+
+dmesg:
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
+
+sysinfo:
+ https://github.com/ebijun/NetBSD/blob/master/apple-m1/sysinfo
+
+pkginfo:
+ https://github.com/ebijun/NetBSD/blob/master/apple-m1/pkginfo
+
+pkgchk.conf:
+ https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkgchk.conf
+  cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
+
+--
+Jun Ebihara
+EOF
