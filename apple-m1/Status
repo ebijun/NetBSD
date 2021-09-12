@@ -8,6 +8,7 @@ Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Topics:
+- Start Apple M1
 
 Hardware:
  Apple Mac mini M1 2020 A2348 
@@ -51,7 +52,7 @@ pkginfo:
  https://github.com/ebijun/NetBSD/blob/master/apple-m1/pkginfo
 
 pkgchk.conf:
- https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkgchk.conf
+ https://github.com/ebijun/NetBSD/blob/master/apple-m1/pkgchk.conf
   cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 --
