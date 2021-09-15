@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2021 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -47,7 +47,8 @@ Maps:
  2017,11/26,200,32,サテライトキャンパスひろしま
  2018,9/23,170,18,サテライトキャンパスひろしま
  2019,9/15,200,19,サテライトキャンパスひろしま
- 2020,9/19,,,オンライン
+ 2020,9/19,200,8,オンライン
+ 2021,9/18,,13,オンライン
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,6 +60,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 159,OSC2021広島,http://www.re.soum.co.jp/~jun/OSC2021hiroshima.pdf
  158,OSC2020広島,http://www.re.soum.co.jp/~jun/OSC2020hiroshima.pdf
  146,OSC2018広島,http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
  130,OSC2018広島,http://www.re.soum.co.jp/~jun/OSC2018hiroshima.pdf
@@ -87,6 +89,7 @@ togetterまとめ
  OSC2018広島,OSC2018広島 NetBSDブース展示の記録,https://togetter.com/li/1269545
  OSC2019広島,OSC2019広島 NetBSDブース展示の記録,https://togetter.com/li/1404262
  OSC2020広島,OSC2020 Online/Hiroshima NetBSDのご紹介 の記録,https://togetter.com/li/1593951
+ OSC2021広島,OSC2021 Online/Hiroshima NetBSDのご紹介 の記録,https://togetter.com/li/1774874
 
 OSC広島発表
 ~~~~~~~~~~~~~
@@ -116,8 +119,9 @@ OSC広島発表
 .. csv-table::
  :widths: 30 15 80
 
- 松本無線パーツ,商工センター,日曜休み NHK前からバス
- Fuelstore,江波,Session's Brewery 14:00-23:00OYSTER CITY Pale AleとStout
+ ハードオフフォレオ広島東店,フォレオ広島,矢賀駅
+ 松本無線パーツ,商工センター,日曜休み NHK前からバス 岡山店が移転してる。
+ Session's Brewery,江波,14:00-23:00OYSTER CITY Pale AleとStout
  広島北ビールバー,可部,17:30-23:30 日月休
  RAKUBEER,三川町,国産地ビールの殿堂 12:00- 17:00-19:00ハッピーアワー
  もり,富士見町,お好み焼き。11:00-17:30 平日中休みあり 日曜休み 
@@ -130,7 +134,6 @@ OSC広島発表
  ハングアウト,八丁堀,17:30- 9タップ＆ハンバーガー
  GOLDEN GARDEN,新天地,RAKUBEER姉妹店　16:00- 3タップ 100種類
  宮島ブルワリー,宮島町,宮島町459-2 12:00-16:00 17:00-20:45
- 海軍さんの麦酒館,呉,呉吟醸ビールとがんす天。がんすって何？
  大和ミュージアム,呉,巨大戦艦大和展 零戦62型 回天 海龍
  ヤマトギャラリー零,呉,実物大アナライザー
  自由軒,呉,戦艦大和のオムライスとカツ丼
@@ -142,9 +145,9 @@ OSC広島発表
  さんちぇ,白島東口,サンフレッチェ/お好み焼き/クラフトビール
  獅魂,胡町,賀茂金秀/龍勢
  広島市現代美術館,比治山公園,丸木位里・俊 ―《原爆の図》をよむ
- ヲルガン座,十日市町,音楽喫茶。2018/9/23 19:00- 原マスミ
- 横川シネマ,横川,カメラを止めるな!/菊とギロチン
- サロンシネマ,大手町,日本一ひろいシートの映画館。スターリンの葬送狂騒曲
+ ヲルガン座,十日市町,音楽喫茶。2018/9/23 19:00- 原マスミ 2021/9/30まで休業
+ 横川シネマ,横川,2021/9/18 17:00-スーパーミキンコリニスタ舞台挨拶
+ サロンシネマ,大手町,日本一ひろいシートの映画館。2021/9/23 MINAMATA ―ミナマター
  松屋　広島金座街店,金座街 ,店舗限定かつ定食とカツカレーがある(c)おかのさん
  Groovin',京橋町,中古CD/DVD
  アーキウォーク広島,建築ガイド,http://www.oa-hiroshima.org/
