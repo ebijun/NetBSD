@@ -1,28 +1,50 @@
-VERSION: :1,$s/2021-08-23/2021-08-23/g
-ISO:     :1,$s/202108210520Z/202108210520Z/g
+VERSION: :1,$s/2021-09-18/2021-09-18/g
+ISO:     :1,$s/202109160900Z/202109160900Z/g
 NetBSD:  :1,$s/9.99.88/9.99.88/g
-PKGSRC:  :1,$s/2021-08-23/2021-1/
+PKGSRC:  :1,$s/2021-09-18/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-08-23-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-09-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-08-23-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-09-18-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-08-23-earmv6hf/2021-08-23-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-08-23-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-18-earmv6hf/2021-09-18-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-18-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.88 evbarm-earmv6hf 202108210520Z rpi.img from nyftp.
-- gcc10
-- ruby27
-- pkgin support
-  check /usr/pkg/etc/pkgin/repositories.conf.
-  I add 
-  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2021-1
-  for testing, with pkg_summery.gz .
+- NetBSD 9.99.88 evbarm-earmv6hf 202109160900Z rpi.img from nyftp.
+- openssh-8.7
+- git-base-2.33.0 
+- glib2-2.68.4
+- perl-5.34.0nb3
+- python38-3.8.12 
+- ruby27-mikutter-4.1.6
+- wget-1.21.2
+
+Problem:
+- backout kernel.img/kernel7.img
+RPI3(A/B/B+) boot failed with Sep.16. backout Aug.20 version.
+ Stopped at rainbow screen.
+RPI2 boot fine.
+
+/boot/kernel7.img
+ RPI3B boot:	NetBSD 9.99.88 (RPI2) #0: Fri Aug 20 20:25:28 UTC 2021
+/boot/kernel7.img.original
+ RPI3B fail:	NetBSD 9.99.88 (RPI2) #0: Thu Sep 16 08:33:24 UTC 2021
+
+- Ruby dependancy
+backout ruby27-glib2-3.4.3 related libs.
+pkg_add -U ruby27-glib2-3.4.3  #Ruby binding of GLib-2.x
+pkg_add -U ruby27-atk-3.4.3    #Ruby binding of ATK-1.0.x or later
+pkg_add -U ruby27-cairo-gobject-3.4.3 #Ruby binding of cairo-gobject
+pkg_add -U ruby27-pango-3.4.3  #Ruby binding of pango-1.x
+pkg_add -U ruby27-gio2-3.4.3   #Ruby binding of gio-2.0.x
+pkg_add -U ruby27-gobject-introspection-3.4.3 #Ruby binding of Gobject Introspection
+pkg_add -U ruby27-gdk_pixbuf2-3.4.3 #Ruby binding of GdkPixbuf-2.x
+pkg_add -U ruby27-mini_portile2-2.6.1
 
 - Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
 XXX: should test big-endian image and pkgsrc
@@ -42,36 +64,32 @@ PR
 - RPI4: testing on NetBSD/aarch64
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 
-Changes from 2021-06-18 version
-https://github.com/ebijun/NetBSD/commit/461c616423ed15c5050bd6ae15912a5d75e93787#diff-39e86155be9b5a0f937a5481e59c7784ee1515b36e534e2672c663d59d1ca679
-https://github.com/ebijun/NetBSD/commit/5723965b1dda992a0cc9a646d8d852907026e3d4#diff-39e86155be9b5a0f937a5481e59c7784ee1515b36e534e2672c663d59d1ca679
+Changes from 2021-08-23 version
+https://github.com/ebijun/NetBSD/commit/47e8ff0a095f64de8e0efb395d20fd2bc4e30701
+
+- pkgin support
+  check /usr/pkg/etc/pkgin/repositories.conf.
+  I add 
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2021-1
+  for testing, with pkg_summery.gz .
 
 sysinfo:
- bind-9.16.20 NetBSD-9.99.88 sh-20181212-20210820202528Z
- userland-NetBSD-9.99.88/evbarm
+ bozohttpd-20210824 libssh-41.0 openssh-8.7 opensshd-8.7
+ sh-20181212-20210916083324Z
 
 pkgsrc:
- at-spi2-core-2.40.3 fltk-1.3.7 gtk3+-3.24.30 libidn-1.38
- libidn2-2.3.2 lz4-1.9.3nb1 p11-kit-0.24.0nb2 pango-1.48.7
- ruby27-addressable-2.7.0 ruby27-atk-3.4.2 ruby27-base-2.7.4
- ruby27-cairo-1.17.5 ruby27-cairo-gobject-3.4.2nb1
- ruby27-delayer-1.1.2 ruby27-delayer-deferred-2.2.0
- ruby27-diva-1.0.2 ruby27-gdk_pixbuf2-3.4.2
- ruby27-gettext-3.3.8 ruby27-gio2-3.4.2 ruby27-glib2-3.4.2
- ruby27-gobject-introspection-3.4.2 ruby27-gtk2-3.4.2nb1
- ruby27-httpclient-2.8.3 ruby27-instance_storage-1.0.0
- ruby27-locale-2.1.3 ruby27-memoist-0.16.2
- ruby27-mikutter-4.1.5 ruby27-mikutter-plugins-twitter-4.1
- ruby27-mini_portile2-2.5.0 ruby27-moneta-1.4.2
- ruby27-native-package-installer-1.1.1 ruby27-nokogiri-1.11.2nb1
- ruby27-oauth-0.5.6 ruby27-pango-3.4.2nb1
- ruby27-pkg-config-1.4.6 ruby27-pluggaloid-1.5.0
- ruby27-public_suffix-4.0.6 ruby27-racc-1.5.2nb1
- ruby27-red-colors-0.2.0 ruby27-red-datasets-0.1.2
- ruby27-simpleidn-0.2.1 ruby27-text-1.3.1
- ruby27-twitter-text-simpleidn-3.0.0.0
- ruby27-typed-array-0.1.2 ruby27-unf-0.1.4
- ruby27-unf_ext-0.0.7.7 ruby27-zip-2.3.2
+ curl-7.79.0 git-base-2.33.0 glib2-2.68.4 libgcrypt-1.9.4
+ libwebp-1.2.1 libxkbcommon-1.3.1 p11-kit-0.24.0nb3
+ p5-IO-Socket-SSL-2.072 p5-Net-DNS-1.32 pango-1.48.9
+ perl-5.34.0nb3 py38-cElementTree-3.8.12 py38-expat-3.8.12
+ python38-3.8.12 ruby27-addressable-2.8.0 ruby27-atk-3.4.9
+ ruby27-cairo-gobject-3.4.9 ruby27-delayer-1.2.1 ruby27-diva-1.1.0
+ ruby27-gdk_pixbuf2-3.4.9 ruby27-gettext-3.4.0 ruby27-gio2-3.4.9
+ ruby27-glib2-3.4.9 ruby27-gobject-introspection-3.4.9
+ ruby27-gtk2-3.4.3nb1 ruby27-mikutter-4.1.6
+ ruby27-mini_portile2-2.7.0 ruby27-nokogiri-1.12.3
+ ruby27-pango-3.4.9 ruby27-red-colors-0.3.0
+ wget-1.21.2
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -129,7 +147,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-08-23-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-18-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
