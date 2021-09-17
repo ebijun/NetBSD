@@ -1,4 +1,4 @@
-#! /usr/pkg/bin/ruby26
+#! /usr/pkg/bin/ruby27
 # $Id: $
 
 require 'net/ftp'
@@ -9,7 +9,7 @@ CDN="nycdn.netbsd.org"
 BRANCH="/pub/NetBSD-daily/HEAD/"
 #BRANCH="/pub/NetBSD-daily/netbsd-9/"
 IMAGES="/usr/release/images/"
-
+ 
 ARCH="aarch64"
 
 class ISO
