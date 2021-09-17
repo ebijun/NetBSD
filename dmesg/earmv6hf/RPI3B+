@@ -89,24 +89,24 @@ gpioleds0 at simplebus0: ACT
 bcmrng0 at simplebus1: RNG
 entropy: ready
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu1: DC enabled IC enabled WB enabled EABT branch prediction enabled
-cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu2: DC enabled IC enabled WB enabled EABT branch prediction enabled
-cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu3: DC enabled IC enabled WB enabled EABT branch prediction enabled
 cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
 cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
 cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
 vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu2: DC enabled IC enabled WB enabled EABT branch prediction enabled
+cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu1: DC enabled IC enabled WB enabled EABT branch prediction enabled
+cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
+cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
+cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdmmc0 at bcmsdhost0
 sdhc0: SDHC 3.0, rev 153, caps <01610000/00000000>, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc1 at sdhc0 slot 0
@@ -121,10 +121,11 @@ blake2s: self-test passed
 uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 sdmmc0: direct I/O error 5, r=6 p=0xd264bf14 write
-ld0 at sdmmc0: <0x74:0x4a60:SD:0x00:0x6cd86451:0x153>
-ld0: 15238 MB, 7739 cyl, 64 head, 63 sec, 512 bytes/sect x 31207424 sectors
-ld0: 26046464 trailing sectors not covered by disklabel
-ld0: 4-bit width, 25.000 MHz
+sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
+ld0 at sdmmc0: <0x02:0x544d:SA16G:0x69:0x48dd6eb8:0x153>
+ld0: 14784 MB, 7509 cyl, 64 head, 63 sec, 512 bytes/sect x 30277632 sectors
+ld0: 25116672 trailing sectors not covered by disklabel
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 sdmmc1: 4-bit width, 50.000 MHz
 sdmmc1: SDIO function
 bwfm0 at sdmmc1 function 1
@@ -136,21 +137,19 @@ uhub1: 4 ports with 3 removable, self powered
 uhub2 at uhub1 port 1: vendor 0424 (0x0424) product 2514 (0x2514), class 9/0, rev 2.00/b.b3, addr 3
 uhub2: multiple transaction translators
 uhub2: 3 ports with 2 removable, self powered
-umass0 at uhub1 port 2 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 4
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
-uhidev0 at uhub1 port 3 configuration 1 interface 0
-uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, iclass 3/1
+uhidev0 at uhub2 port 2 configuration 1 interface 0
+uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub1 port 3 configuration 1 interface 1
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 5, iclass 3/0
+uhidev1 at uhub2 port 2 configuration 1 interface 1
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhidev2 at uhub1 port 3 configuration 1 interface 0
+uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 5, iclass 3/1
+ums0 at uhidev2: 3 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
 uhub0: autoconfiguration error: illegal enable change, port 1
 mue0 at uhub2 port 1
 mue0: vendor 0424 (0x0424) product 7800 (0x7800), rev 2.10/3.00, addr 6
@@ -158,6 +157,12 @@ mue0: LAN7800 id 0x7800 rev 0x2
 ukphy0 at mue0 phy 1: OUI 0x00800f, model 0x0013, rev. 2
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
 mue0: Ethernet address b8:27:eb:3d:70:4f
+umass0 at uhub1 port 2 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 7
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 cgd: self-test aes-xts-256
 cgd: self-test aes-xts-512
 cgd: self-test aes-cbc-128
@@ -166,13 +171,13 @@ cgd: self-test 3des-cbc-192
 cgd: self-test blowfish-cbc-448
 cgd: self-test aes-cbc-128 (encblkno8)
 cgd: self-tests passed
-ld0: 26046464 trailing sectors not covered by disklabel
-ld0: 26046464 trailing sectors not covered by disklabel
+ld0: 25116672 trailing sectors not covered by disklabel
+ld0: 25116672 trailing sectors not covered by disklabel
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
-ld0: 26046464 trailing sectors not covered by disklabel
+ld0: 25116672 trailing sectors not covered by disklabel
 root on ld0a dumps on ld0b
-ld0: 26046464 trailing sectors not covered by disklabel
+ld0: 25116672 trailing sectors not covered by disklabel
 root file system type: ffs
 kern.module.path=/stand/evbarm/9.99.88/modules
 WARNING: no TOD clock present
@@ -186,11 +191,11 @@ kern notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
 vchiq: vchiq_initialise: videocore initialized after 1 retries
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.bin
+bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 audio0 at vcaudio0: playback
 audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for playback
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
-bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 bwfm0: NVRAM file default:    brcmfmac43455-sdio.txt
 bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
 bwfm0: Found NVRAM file: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt

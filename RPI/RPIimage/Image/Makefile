@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202108210520Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202109160900Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -49,7 +49,8 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 
-all: file rpi extract bwfm-firmware
+KERNELDIR=RPI.202108210520Z
+all: file rpi extract bwfm-firmware kernel-update
 
 #update: cdmount update-extract cdunmount
 
