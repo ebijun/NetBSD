@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.88 (GENERIC) #0: Wed Sep  1 03:08:08 UTC 2021
+NetBSD 9.99.88 (GENERIC) #0: Mon Sep 20 02:26:05 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16295 MB
 avail memory = 15764 MB
@@ -54,11 +54,11 @@ acpi0 at mainbus0: Intel ACPICA 20210604
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8BD023420348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFAF8FC8820348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8BCD21E81808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFAF8CC7281808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8BCD21E28408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFAF8CC7228408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -229,13 +229,13 @@ uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00,
 uhub2: 2 ports with 2 removable, self powered
 tpm0: read 8 bytes, expected 10tpm0: deactivating entropy source
 ahcisata0 port 0: device present, speed: 6.0Gb/s
-uhub3 at uhub1 port 6: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.10/88.31, addr 1
-uhub3: single transaction translator
-uhub3: 4 ports with 0 removable, self powered
 wd0 at atabus0 drive 0
 wd0: <mSATA-512GB SSD>
 wd0: drive supports 1-sector PIO transfers, LBA48 addressing
 wd0: 476 GB, 992277 cyl, 16 head, 63 sec, 512 bytes/sect x 1000215216 sectors
+uhub3 at uhub1 port 6: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.10/88.31, addr 1
+uhub3: single transaction translator
+uhub3: 4 ports with 0 removable, self powered
 wd0: GPT GUID: 2bea82df-34b2-467e-bc78-6f75b19e3fd6
 dk0 at wd0: "b0200188-c060-47e4-abb2-6cc4c108c734", 992006765 blocks at 2048, type: ffs
 dk1 at wd0: "d6fdb5a8-8353-4831-94e6-b6ef80af8c56", 8204943 blocks at 992010240, type: swap
@@ -263,13 +263,16 @@ kern info: [drm] Memory usable by graphics device = 4096M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at msi7 vec 0 (i915drmkms0)
-iwm0: hw rev 0x210, fw ver 22.361476.0, address a4:02:b9:2f:d2:80
 intelfb0 at i915drmkms0
-warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:647: Unclaimed register detected before writing to register 0x41000
 intelfb0: framebuffer at 0xe00af000, size 1366x768, depth 32, stride 5504
+iwm0: hw rev 0x210, fw ver 22.361476.0, address a4:02:b9:2f:d2:80
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+kern error: [drm:(/usr/src/sys/external/bsd/drm2/dist/drm/i915/intel_sprite.c:131)intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A: -35
+kern error: [drm:(/usr/src/sys/external/bsd/drm2/dist/drm/i915/intel_sprite.c:131)intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A: -35
+kern error: [drm:(/usr/src/sys/external/bsd/drm2/dist/drm/i915/intel_sprite.c:131)intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A: -35
+kern error: [drm:(/usr/src/sys/external/bsd/drm2/dist/drm/i915/intel_sprite.c:131)intel_pipe_update_start] *ERROR* Potential atomic update failure on pipe A: -35
