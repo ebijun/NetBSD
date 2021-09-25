@@ -1,18 +1,18 @@
-VERSION: :1,$s/2021-10-02/2021-10-02/g
+VERSION: :1,$s/2021-09-25/2021-09-25/g
 ISO:     :1,$s/202109201510Z/202109201510Z/g
 NetBSD:  :1,$s/9.99.88/9.99.88/g
-PKGSRC:  :1,$s/2021-10-02/2021-1/
+PKGSRC:  :1,$s/2021-09-25/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-10-02-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-09-25-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-10-02-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-09-25-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-02-earmv6hf/2021-10-02-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-02-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-25-earmv6hf/2021-09-25-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-25-earmv6hf/MD5
 
 Update:
 - NetBSD 9.99.88 evbarm-earmv6hf 202109201510Z rpi.img from nyftp.
@@ -108,7 +108,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-02-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-25-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
