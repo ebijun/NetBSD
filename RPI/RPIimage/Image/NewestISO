@@ -22,7 +22,8 @@ class ISO
 	def check(path,arch)
 		l = @iso
 		while f=l.shift
-			if /#{arch}/ =~ f
+			if /#{arch}$/ =~ f
+		p f
 				@path = path+f
 				return path+f
 			end
