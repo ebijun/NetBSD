@@ -1,50 +1,21 @@
-VERSION: :1,$s/2021-09-18/2021-09-18/g
-ISO:     :1,$s/202109160900Z/202109160900Z/g
+VERSION: :1,$s/2021-10-02/2021-10-02/g
+ISO:     :1,$s/202109201510Z/202109201510Z/g
 NetBSD:  :1,$s/9.99.88/9.99.88/g
-PKGSRC:  :1,$s/2021-09-18/2021-1/
+PKGSRC:  :1,$s/2021-10-02/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-09-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-10-02-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-09-18-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-10-02-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-18-earmv6hf/2021-09-18-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-18-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-02-earmv6hf/2021-10-02-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-02-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.88 evbarm-earmv6hf 202109160900Z rpi.img from nyftp.
-- openssh-8.7
-- git-base-2.33.0 
-- glib2-2.68.4
-- perl-5.34.0nb3
-- python38-3.8.12 
-- ruby27-mikutter-4.1.6
-- wget-1.21.2
-
-Problem:
-- backout kernel.img/kernel7.img
-RPI3(A/B/B+) boot failed with Sep.16. backout Aug.20 version.
- Stopped at rainbow screen.
-RPI2 boot fine.
-
-/boot/kernel7.img
- RPI3B boot:	NetBSD 9.99.88 (RPI2) #0: Fri Aug 20 20:25:28 UTC 2021
-/boot/kernel7.img.original
- RPI3B fail:	NetBSD 9.99.88 (RPI2) #0: Thu Sep 16 08:33:24 UTC 2021
-
-- Ruby dependancy
-backout ruby27-glib2-3.4.3 related libs.
-pkg_add -U ruby27-glib2-3.4.3  #Ruby binding of GLib-2.x
-pkg_add -U ruby27-atk-3.4.3    #Ruby binding of ATK-1.0.x or later
-pkg_add -U ruby27-cairo-gobject-3.4.3 #Ruby binding of cairo-gobject
-pkg_add -U ruby27-pango-3.4.3  #Ruby binding of pango-1.x
-pkg_add -U ruby27-gio2-3.4.3   #Ruby binding of gio-2.0.x
-pkg_add -U ruby27-gobject-introspection-3.4.3 #Ruby binding of Gobject Introspection
-pkg_add -U ruby27-gdk_pixbuf2-3.4.3 #Ruby binding of GdkPixbuf-2.x
-pkg_add -U ruby27-mini_portile2-2.6.1
+- NetBSD 9.99.88 evbarm-earmv6hf 202109201510Z rpi.img from nyftp.
 
 - Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
 XXX: should test big-endian image and pkgsrc
@@ -64,8 +35,8 @@ PR
 - RPI4: testing on NetBSD/aarch64
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 
-Changes from 2021-08-23 version
-https://github.com/ebijun/NetBSD/commit/47e8ff0a095f64de8e0efb395d20fd2bc4e30701
+Changes from 2021-09-18 version
+https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
 
 - pkgin support
   check /usr/pkg/etc/pkgin/repositories.conf.
@@ -74,22 +45,12 @@ https://github.com/ebijun/NetBSD/commit/47e8ff0a095f64de8e0efb395d20fd2bc4e30701
   for testing, with pkg_summery.gz .
 
 sysinfo:
- bozohttpd-20210824 libssh-41.0 openssh-8.7 opensshd-8.7
- sh-20181212-20210916083324Z
+ libc-12.219 sh-20181212-20210920143005Z
 
 pkgsrc:
- curl-7.79.0 git-base-2.33.0 glib2-2.68.4 libgcrypt-1.9.4
- libwebp-1.2.1 libxkbcommon-1.3.1 p11-kit-0.24.0nb3
- p5-IO-Socket-SSL-2.072 p5-Net-DNS-1.32 pango-1.48.9
- perl-5.34.0nb3 py38-cElementTree-3.8.12 py38-expat-3.8.12
- python38-3.8.12 ruby27-addressable-2.8.0 ruby27-atk-3.4.9
- ruby27-cairo-gobject-3.4.9 ruby27-delayer-1.2.1 ruby27-diva-1.1.0
- ruby27-gdk_pixbuf2-3.4.9 ruby27-gettext-3.4.0 ruby27-gio2-3.4.9
- ruby27-glib2-3.4.9 ruby27-gobject-introspection-3.4.9
- ruby27-gtk2-3.4.3nb1 ruby27-mikutter-4.1.6
- ruby27-mini_portile2-2.7.0 ruby27-nokogiri-1.12.3
- ruby27-pango-3.4.9 ruby27-red-colors-0.3.0
- wget-1.21.2
+ gd-2.3.3nb1 gdk-pixbuf2-2.42.6 glib2-2.68.4nb1
+ ruby27-gettext-3.4.1 ruby27-mikutter-4.1.6nb1
+ ruby27-nokogiri-1.12.4 ruby27-unf_ext-0.0.8
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -147,7 +108,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-18-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-02-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -370,17 +331,16 @@ pkgsrc Todo:
 
 =====================
 
-For Open Developers Conference 2021, NetBSD BOF.
+For Open Source Conference 2021 Niigata, NetBSD BOF.
 I've updated raspberry-pi image.
 
-2021 Aug.28 Sat 14:00-14:45 JST (UTC+9) ROOM C
-https://event.ospn.jp/odc2021-online/session/375193
+2021 Oct. 2 Sat 13:20-13:40 JST (UTC+9)
+https://ospn.connpass.com/event/219884/
 
 Join meeting with ZOOM/YoutubeLive 
-  https://ospn.connpass.com/event/216508/
 YoutubeLive https://www.youtube.com/c/OSPNjp
 
-http://www.re.soum.co.jp/~jun/ODC2021.pdf
+http://www.re.soum.co.jp/~jun/OSC2021niigata.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2021.rst
