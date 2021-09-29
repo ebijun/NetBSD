@@ -4,10 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.88 (GENERIC64) #0: Wed Aug 11 11:16:49 UTC 2021
+NetBSD 9.99.88 (GENERIC64) #0: Fri Sep 24 18:47:29 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
-total memory = 3929 MB
-avail memory = 3793 MB
+total memory = 3927 MB
+avail memory = 3791 MB
 entropy: ready
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
@@ -18,9 +18,9 @@ simplebus1 at simplebus0
 acpifdt0 at simplebus0
 acpifdt0: SMBIOS rev. 3.3.0 @ 0x371d0000
 ACPI: RSDP 0x0000000033B20018 000024 (v02 RPIFDN)
-ACPI: XSDT 0x0000000033B2FE98 00006C (v01 RPIFDN RPI4     00000200      01000013)
+ACPI: XSDT 0x0000000033B2FE98 000074 (v01 RPIFDN RPI4     00000200      01000013)
 ACPI: FACP 0x0000000033B2E998 000114 (v06 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: DSDT 0x0000000033B27518 002451 (v02 RPIFDN RPI      00000002 INTL 20190509)
+ACPI: DSDT 0x0000000033B27518 002298 (v02 RPIFDN RPI      00000002 INTL 20190509)
 ACPI: CSRT 0x0000000033B2FA98 000169 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
 ACPI: DBG2 0x0000000033B2FD18 000061 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
 ACPI: GTDT 0x0000000033B2F998 000068 (v03 RPIFDN RPI4     00000200 EDK2 00000300)
@@ -28,17 +28,18 @@ ACPI: IORT 0x0000000033B2F598 0000B7 (v00 RPIFDN RPI4     00000200 EDK2 00000300
 ACPI: APIC 0x0000000033B2F698 000184 (v05 RPIFDN RPI4     00000200 EDK2 00000300)
 ACPI: PPTT 0x0000000033B2EB18 000184 (v02 RPIFDN RPI4     00000200 EDK2 00000300)
 ACPI: SSDT 0x0000000033B2ED98 000277 (v02 RPIFDN RPI4EMMC 00000002 INTL 20190509)
+ACPI: SSDT 0x0000000033B2F198 000244 (v05 RPIFDN RPI4XHCI 00000002 INTL 20190509)
 ACPI: BGRT 0x0000000033B2FE18 000038 (v01 INTEL  EDK2     00000002      01000013)
-ACPI: 2 ACPI AML tables successfully acquired and loaded
+ACPI: 3 ACPI AML tables successfully acquired and loaded
 acpi0 at acpifdt0: Intel ACPICA 20210604
 acpi0: X/RSDT: OemId <RPIFDN,RPI4    ,00000200>, AslId <    ,01000013>
 cpu0 at acpi0: Arm Cortex-A72 r0p3 (v8-A), id 0x0
 cpu0: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu0: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu0: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu0: L1 48KB/64B*256L*3W PIPT Instruction cache
-cpu0: L1 32KB/64B*256L*2W PIPT Data cache
-cpu0: L2 1024KB/64B*1024L*16W PIPT Unified cache
+cpu0: L1 48KB/64B 3-way (256 set) PIPT Instruction cache
+cpu0: L1 32KB/64B 2-way (256 set) PIPT Data cache
+cpu0: L2 1024KB/64B 16-way (1024 set) PIPT Unified cache
 cpu0: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
 cpu0: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu1 at acpi0: Arm Cortex-A72 r0p3 (v8-A), id 0x1
@@ -51,11 +52,6 @@ gtmr0 at acpi0: irq 27
 armgtmr0 at gtmr0: Generic Timer (54000 kHz, virtual)
 timecounter: Timecounter "armgtmr0" frequency 54000000 Hz quality 500
 PEPD (BCM2854) at acpi0 not configured
-xhci0 at acpi0 (XHC0, PNP0D10-0): mem 0x600000000-0x600000fff irq 175
-xhci0: 64-bit DMA
-xhci0: xHCI version 1.0
-usb0 at xhci0: USB revision 3.0
-usb1 at xhci0: USB revision 2.0
 CPU0 (ACPI0007) at acpi0 not configured
 CPU1 (ACPI0007) at acpi0 not configured
 CPU2 (ACPI0007) at acpi0 not configured
@@ -89,6 +85,11 @@ EC00 (PNP0C06) at acpi0 not configured
 acpitz0 at acpi0 (TZ00): cpu0 cpu1 cpu2 cpu3
 acpitz0: levels: critical 90.0 C, hot 85.0 C, passive 80.0 C, passive cooling
 sdhc1 at acpi0 (SDC3, BRCME88C-1): mem 0xfe340000-0xfe3400ff irq 158
+xhci0 at acpi0 (XHC0, PNP0D10-0): mem 0x600000000-0x600000fff irq 175
+xhci0: 64-bit DMA
+xhci0: xHCI version 1.0
+usb0 at xhci0: USB revision 3.0
+usb1 at xhci0: USB revision 2.0
 sdhc0: SDHC 3.0, rev 153, caps <01210000/00000000>, PIO, 250000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc0 at sdhc0 slot 0
 sdhc1: SDHC 3.0, rev 16, caps <45ee6432/0000a525>, PIO, 100000 kHz, embedded slot, HS 3.3V, re-tuning mode 3, 2048 byte blocks
@@ -99,30 +100,30 @@ wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu3: L1 48KB/64B*256L*3W PIPT Instruction cache
-cpu3: L1 32KB/64B*256L*2W PIPT Data cache
-cpu3: L2 1024KB/64B*1024L*16W PIPT Unified cache
-cpu3: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
-cpu3: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu1: L1 48KB/64B*256L*3W PIPT Instruction cache
-cpu1: L1 32KB/64B*256L*2W PIPT Data cache
-cpu1: L2 1024KB/64B*1024L*16W PIPT Unified cache
-cpu1: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
-cpu1: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu2: L1 48KB/64B*256L*3W PIPT Instruction cache
-cpu2: L1 32KB/64B*256L*2W PIPT Data cache
-cpu2: L2 1024KB/64B*1024L*16W PIPT Unified cache
+cpu2: L1 48KB/64B 3-way (256 set) PIPT Instruction cache
+cpu2: L1 32KB/64B 2-way (256 set) PIPT Data cache
+cpu2: L2 1024KB/64B 16-way (1024 set) PIPT Unified cache
 cpu2: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
 cpu2: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu1: L1 48KB/64B 3-way (256 set) PIPT Instruction cache
+cpu1: L1 32KB/64B 2-way (256 set) PIPT Data cache
+cpu1: L2 1024KB/64B 16-way (1024 set) PIPT Unified cache
+cpu1: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
+cpu1: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu3: L1 48KB/64B 3-way (256 set) PIPT Instruction cache
+cpu3: L1 32KB/64B 2-way (256 set) PIPT Data cache
+cpu3: L2 1024KB/64B 16-way (1024 set) PIPT Unified cache
+cpu3: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
+cpu3: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu0: PMU interrupting on irq 48
 cpu1: PMU interrupting on irq 49
 cpu2: PMU interrupting on irq 50
@@ -140,7 +141,7 @@ blake2s: self-test passed
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SA64G:0x72:0x2a7fc8c7:0x152>
 ld1: 59356 MB, 7566 cyl, 255 head, 63 sec, 512 bytes/sect x 121561088 sectors
-ld1: GPT GUID: 4a9760b5-024a-4419-b96b-953ca68a3da0
+ld1: GPT GUID: c92a0e6b-f7f6-44b8-b3f4-df311d0c62e3
 dk0 at ld1: "EFI", 163840 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 4751355 blocks at 163843, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -161,8 +162,12 @@ uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, 
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
-umass0 at uhub2 port 4 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 3
+uhidev2 at uhub2 port 2 configuration 1 interface 0
+uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 3, iclass 3/1
+ums0 at uhidev2: 3 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
+umass0 at uhub2 port 3 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 4
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
@@ -181,7 +186,7 @@ root file system type: ffs
 kern.module.path=/stand/evbarm/9.99.88/modules
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.bin
-WARNING: clock lost 8 days
+WARNING: clock lost 16 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 bwfm0: Found Firmware file: brcmfmac43455-sdio.bin

@@ -1,23 +1,24 @@
-VERSION: :1,$s/2021-08-13/2021-08-13/g
-ISO:     :1,$s/202108111200Z/202108111200Z/g
+VERSION: :1,$s/2021-09-26/2021-09-26/g
+ISO:     :1,$s/202109241910Z/202109241910Z/g
 NetBSD:  :1,$s/9.99.88/9.99.88/g
 PKGSRC:  :1,$s/2021-1/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-08-13-netbsd-raspi-aarch64.img
+Subject: 2021-09-26-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-08-13-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2021-09-26-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-08-13-aarch64/2021-08-13-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-08-13-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-26-aarch64/2021-09-26-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-26-aarch64/MD5
 
 Topics:
-- UEFI: v1.29
-  Should save default boot device setting. 
-  It takes some time to boot from microsd.
+
+- Raspberry Pi 4 UEFI Firmware v1.31
+  Add (temporary) work around for boot order not being preserved. Not that, while submitted to the EDK2 mailing list, this patch is not an official one, since effort is being made to look for a better solution.
+  Revert start4.elf/fixup.dat to the 2021.06.08 version, on account of multiple regressions having been introduced since, that are yet to be fixed.
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
@@ -47,22 +48,26 @@ bwfm0: autoconfiguration error: NVRAM file not available
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2021-1
   and pkgin update
 
-UEFI: v1.29
- https://github.com/pftf/RPi4/releases
-    Add Secure Boot default keys enrolment [tianocore/edk2-platforms@5ba08a9, tianocore/edk2-platforms@6196d93, tianocore/edk2@55266a9, tianocore/edk2@1910759, etc.]
-    Enable Boot Discovery Policy [tianocore/edk2-platforms@2e87ce8]
-    Fix non-standard ACPI CIDs [tianocore/edk2-platforms@1942692]
-
 sysinfo:
- NetBSD-9.99.88 sh-20181212-20210811111649Z
- userland-NetBSD-9.99.88/evbarm
+ bind-9.16.20 bozohttpd-20210824 libc-12.219
+ libssh-41.0 openssh-8.7 opensshd-8.7
+ sh-20181212-20210924184729Z
 
 pkgsrc:
- gtk3+-3.24.30 libidn-1.38 libidn2-2.3.2 lz4-1.9.3nb1
- pango-1.48.7 ruby27-zip-2.3.2
+ at-spi2-core-2.40.3 curl-7.79.0 gd-2.3.3nb1 git-base-2.33.0
+ libgcrypt-1.9.4 libwebp-1.2.1 p11-kit-0.24.0nb3
+ p5-IO-Socket-SSL-2.072 p5-Net-DNS-1.32 perl-5.34.0nb3
+ py38-cElementTree-3.8.12 py38-expat-3.8.12 python38-3.8.12
+ ruby27-addressable-2.8.0 ruby27-atk-3.4.9
+ ruby27-cairo-gobject-3.4.9 ruby27-delayer-1.2.1
+ ruby27-diva-1.1.0 ruby27-gdk_pixbuf2-3.4.9 ruby27-gettext-3.4.1
+ ruby27-gio2-3.4.9 ruby27-glib2-3.4.9 ruby27-gobject-introspection-3.4.9
+ ruby27-gtk2-3.4.3nb1 ruby27-mikutter-4.1.6nb1 ruby27-mini_portile2-2.7.0
+ ruby27-nokogiri-1.12.4 ruby27-pango-3.4.9 ruby27-red-colors-0.3.0
+ ruby27-unf_ext-0.0.8 wget-1.21.2
 
 RPI4 status:
-- boot via UEFI_VER=v1.29
+- boot via UEFI_VER=v1.31
  https://github.com/pftf/RPi4/releases
 
 In this image,pre-setted RPI_EFI.fd
@@ -79,14 +84,14 @@ In this image,pre-setted RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.88 evbarm-aarch64 202108111200Z arm64.img from nyftp.
+- NetBSD-current 9.99.88 evbarm-aarch64 202109241910Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/sysinfo
 
-Update from 2021-07-27:
-https://github.com/ebijun/NetBSD/commit/ff8782a194f788aea18ac53d15f9ee519c856f2e#
+Update from 2021-08-13:
+https://github.com/ebijun/NetBSD/commit/22e4de9f029bae87e6ff76bde829e231c1b40cab
 
 - mate/firefox/inkscape/libreoffice works well
    pkg_add mate
