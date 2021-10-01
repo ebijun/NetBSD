@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015-2020 Jun Ebihara All rights reserved.
+ Copyright (c) 2015-2021 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -51,7 +51,8 @@ Maps:
  2017 Nagaoka,10/28,120,12,長岡技術科学大学
  2018 Niigata,11/10,70,13,ほんぽーと新潟市立中央図書館
  2019 Niigata,10/5,50,15,ほんぽーと新潟市立中央図書館
- 2020 Niigata,7/25,,,オンライン開催
+ 2020 Niigata,7/25,120,10,オンライン開催
+ 2021 Niigata,10/2,,,オンライン開催
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,6 +64,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 170,OSC2021新潟,http://www.re.soum.co.jp/~jun/OSC2021niigata.pdf
  156,OSC2020新潟,http://www.re.soum.co.jp/~jun/OSC2020niigata.pdf
  148,OSC2019新潟,http://www.re.soum.co.jp/~jun/OSC2019niigata.pdf
  134,OSC2018新潟,http://www.re.soum.co.jp/~jun/OSC2018niigata.pdf
@@ -77,6 +79,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2021新潟 NetBSDブース展示の記録,https://togetter.com/li/1782152
+ OSC2020新潟 NetBSDブース展示の記録,https://togetter.com/li/1565767
  OSC2019新潟 NetBSDブース展示の記録,https://togetter.com/li/1413105
  OSC2018新潟 NetBSDブース展示の記録,https://togetter.com/li/1286767
  OSC2017長岡 NetBSDブース展示の記録,https://togetter.com/li/1165451

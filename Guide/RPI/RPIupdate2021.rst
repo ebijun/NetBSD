@@ -35,7 +35,6 @@ RaspberryPIのNetBSDイメージについて
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
- 2020/08/28,9.99.71,4.0.6,,,RPI4+UEFI,OSC京都,http://mail-index.netbsd.org/port-arm/2020/08/27/msg006954.html
  2020/09/19,9.99.72,,3.9.0nb3,,GCC9.3,OSC広島,http://mail-index.netbsd.org/port-arm/2020/09/17/msg006975.html
  2020/10/24,9.99.74,4.1.2,,,NetBSD9.1,OSC東京秋,http://mail-index.netbsd.org/port-arm/2020/10/18/msg007015.html
  2020/12/19,9.99.77,,3.9.1,,pkgdb,ODC,http://mail-index.netbsd.org/port-arm/2020/12/10/msg007120.html
@@ -47,6 +46,7 @@ RaspberryPIのNetBSDイメージについて
  2021/7/31,9.99.87,,,,gcc10/ruby27,OSC京都,http://mail-index.netbsd.org/port-arm/2021/07/28/msg007381.html
  2021/8/26,9.99.88,,,,bind-9.16.20,ODC,http://mail-index.netbsd.org/port-arm/2021/08/23/msg007421.html
  2021/9/18,9.99.88,4.1.6,,,openssh8.6,OSC広島,http://mail-index.netbsd.org/port-arm/2021/09/17/msg007439.html
+  2021/10/2,9.99.90,,,,,OSC新潟,http://mail-index.netbsd.org/port-arm/2021/09/25/msg007444.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
