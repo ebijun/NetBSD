@@ -4,15 +4,15 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.85 (GENERIC) #0: Tue Jun 29 11:35:28 UTC 2021
+NetBSD 9.99.90 (GENERIC) #0: Wed Oct  6 17:04:49 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 8031 MB
 avail memory = 7755 MB
-entropy: entering seed from bootloader with 0 bits of entropy
+entropy: entering seed from bootloader with 256 bits of entropy
+entropy: ready
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
-Sony Corporation VGN-NW50JB (C601JRZY)
 mainbus0 (root)
 ACPI: RSDP 0x00000000000F03B0 000024 (v02 Sony  )
 ACPI: XSDT 0x00000000B5F12F10 00005C (v01 Sony   VAIO     20090522 MSFT 00010013)
@@ -35,17 +35,17 @@ cpu0: node 0, package 0, core 0, smt 0
 cpu1 at mainbus0 apid 1
 cpu1: Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz, id 0x1067a
 cpu1: node 0, package 0, core 1, smt 0
-acpi0 at mainbus0: Intel ACPICA 20210331
+acpi0 at mainbus0: Intel ACPICA 20210604
 acpi0: X/RSDT: OemId <  Sony,    VAIO,20090522>, AslId <MSFT,00010013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF99C4FB9AA0C8 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF82EFFB9AA0C8 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF99C4FBA1A808 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0xFFFF82EFFBA1A808 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF99C4FB9D0B08 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF82EFFB9D0B08 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF99C4FBAD9708 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF82EFFBAD9708 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -56,11 +56,11 @@ attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
 pckbc1 at acpi0 (PS2K, PNP0303) (kbd port): io 0x60,0x64 irq 1
 pckbc2 at acpi0 (PS2M, SNY9001) (aux port): irq 12
 sony0 at acpi0 (SNC, SNY5001): Sony Miscellaneous Controller
-ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20210331/nsarguments-277)
-ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20210331/nsarguments-277)
-ACPI Error: Aborting method \PHS0 due to previous error (AE_AML_LOOP_TIMEOUT) (20210331/psparse-580)
-ACPI Error: Aborting method \PHS due to previous error (AE_AML_LOOP_TIMEOUT) (20210331/psparse-580)
-ACPI Error: Aborting method \_SB.PCI0.LPCB.SNC.GDDI due to previous error (AE_AML_LOOP_TIMEOUT) (20210331/psparse-580)
+ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20210604/nsarguments-277)
+ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20210604/nsarguments-277)
+ACPI Error: Aborting method \PHS0 due to previous error (AE_AML_LOOP_TIMEOUT) (20210604/psparse-580)
+ACPI Error: Aborting method \PHS due to previous error (AE_AML_LOOP_TIMEOUT) (20210604/psparse-580)
+ACPI Error: Aborting method \_SB.PCI0.LPCB.SNC.GDDI due to previous error (AE_AML_LOOP_TIMEOUT) (20210604/psparse-580)
 acpivga0 at acpi0 (GFX0): ACPI Display Adapter
 acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
 acpiout1 at acpivga0 (DD02, 0x0410): ACPI Display Output Device
@@ -268,7 +268,7 @@ cgd: self-tests passed
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.85/modules
+kern.module.path=/stand/amd64/9.99.90/modules
 kern info: [drm] Memory usable by graphics device = 512M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
@@ -283,4 +283,3 @@ wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
-acpibat0: normal capacity on 'charge state'
