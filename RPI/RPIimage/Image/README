@@ -16,6 +16,13 @@ https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-25-earmv6hf/MD5
 
 Update:
 - NetBSD 9.99.88 evbarm-earmv6hf 202109201510Z rpi.img from nyftp.
+- OpenSSH 8.8
+  "This release disables RSA signatures using the SHA-1 hash algorithm
+   by default."
+
+  Host old-host
+        HostkeyAlgorithms +ssh-rsa
+	PubkeyAcceptedAlgorithms +ssh-rsa
 
 - Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
 XXX: should test big-endian image and pkgsrc
