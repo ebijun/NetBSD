@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.81 (GENERIC) #0: Sun Mar 14 16:03:04 UTC 2021
+NetBSD 9.99.90 (GENERIC) #0: Tue Oct  5 21:05:12 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 3982 MB
 avail memory = 3832 MB
@@ -12,12 +12,11 @@ entropy: entering seed from bootloader with 256 bits of entropy
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
-ASUSTeK COMPUTER INC. X200MA (1.0       )
 mainbus0 (root)
 ACPI: RSDP 0x00000000000F04A0 000024 (v02 _ASUS_)
 ACPI: XSDT 0x00000000B9355080 00007C (v01 _ASUS_ Notebook 01072009 AMI  00010013)
 ACPI: FACP 0x00000000B93646D8 00010C (v05 _ASUS_ Notebook 01072009 AMI  00010013)
-Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 128/32 (20201113/tbfadt-640)
+Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 128/32 (20210604/tbfadt-640)
 ACPI: DSDT 0x00000000B9355190 00F543 (v02 _ASUS_ Notebook 01072009 INTL 20120913)
 ACPI: FACS 0x00000000B93B9F80 000040
 ACPI: APIC 0x00000000B93647E8 000068 (v03 _ASUS_ Notebook 01072009 AMI  00010013)
@@ -39,7 +38,7 @@ cpu0: node 0, package 0, core 0, smt 0
 cpu1 at mainbus0 apid 2
 cpu1: Intel(R) Celeron(R) CPU  N2830  @ 2.16GHz, id 0x30678
 cpu1: node 0, package 0, core 1, smt 0
-acpi0 at mainbus0: Intel ACPICA 20201113
+acpi0 at mainbus0: Intel ACPICA 20210604
 acpi0: X/RSDT: OemId <_ASUS_,Notebook,01072009>, AslId <AMI ,00010013>
 acpi0: autoconfiguration error: failed to look up EC object \_SB.PCI0.LPCB.EC0: AE_NOT_FOUND
 acpi0: autoconfiguration error: invalid PCI address for D011
@@ -47,13 +46,13 @@ acpi0: autoconfiguration error: invalid PCI address for D012
 acpi0: autoconfiguration error: invalid PCI address for D014
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFF49C138DC808 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFFC55198EC808 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFF49C138FD008 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
+ACPI: SSDT 0xFFFFFC551990D008 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFF49C4B073208 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFFC5551058208 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFF49C138EB308 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFFC55198FC308 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -248,7 +247,7 @@ WARNING: 5 errors while detecting hardware; check system log.
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.81/modules
+kern.module.path=/stand/amd64/9.99.90/modules
 kern info: [drm] Memory usable by graphics device = 2048M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
@@ -258,7 +257,6 @@ intelfb0: framebuffer at 0xc0080000, size 1920x1200, depth 32, stride 7680
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wskbd1: connecting to wsdisplay0
-acpibat0: normal capacity on 'charge state'
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
