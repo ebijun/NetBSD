@@ -1,5 +1,5 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.90-amd64-202110052120Z-install.img
+IMG=${RELEASE}/NetBSD-9.99.90-amd64-202110061710Z-install.img
 
 ARCH=amd64
 VND0=vnd0
