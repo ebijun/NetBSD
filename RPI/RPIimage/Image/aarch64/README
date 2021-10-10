@@ -1,36 +1,42 @@
-VERSION: :1,$s/2021-09-26/2021-09-26/g
-ISO:     :1,$s/202109241910Z/202109241910Z/g
-NetBSD:  :1,$s/9.99.88/9.99.88/g
+VERSION: :1,$s/2021-10-10/2021-10-10/g
+ISO:     :1,$s/202110061710Z/202110061710Z/g
+NetBSD:  :1,$s/9.99.90/9.99.90/g
 PKGSRC:  :1,$s/2021-1/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-09-26-netbsd-raspi-aarch64.img
+Subject: 2021-10-10-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-09-26-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2021-10-10-netbsd-raspi-aarch64.img.gz for RPI4.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-26-aarch64/2021-09-26-netbsd-raspi-aarch64.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-26-aarch64/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-10-aarch64/2021-10-10-netbsd-raspi-aarch64.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-10-aarch64/MD5
 
 Topics:
 
-- Raspberry Pi 4 UEFI Firmware v1.31
-  Add (temporary) work around for boot order not being preserved. Not that, while submitted to the EDK2 mailing list, this patch is not an official one, since effort is being made to look for a better solution.
-  Revert start4.elf/fixup.dat to the 2021.06.08 version, on account of multiple regressions having been introduced since, that are yet to be fixed.
+- openssh 8.8 https://www.openssh.com/txt/release-8.8
+cf.
+  ~/.ssh/config
+  Host bitbucket.org
+        HostkeyAlgorithms +ssh-rsa
+        PubkeyAcceptedAlgorithms +ssh-rsa
+- Python 3.9
+- ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
   http://mail-index.netbsd.org/port-arm/2021/08/08/msg007393.html
   the Arasan SDHCI is used to connect bwfm(4). 
 
-bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
-bwfm0: Firmware file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.bin
-bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
-bwfm0: NVRAM file default:    brcmfmac43455-sdio.txt
-bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt
+In this image, make a synbolic link
+
+/libdata/firmware/if_bwfm:
+ln -s brcmfmac43455-sdio.raspberrypi,4-model-b.txt "brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt"
+to avoid
 bwfm0: autoconfiguration error: NVRAM file not available
+ 
 
 - only for RPI4 
   (fill dtb for RPI3?)
@@ -49,22 +55,19 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- bind-9.16.20 bozohttpd-20210824 libc-12.219
- libssh-41.0 openssh-8.7 opensshd-8.7
- sh-20181212-20210924184729Z
+ NetBSD-9.99.90 openssh-8.8 opensshd-8.8
+ sh-20181212-20211006170449Z tzdata-2021b-partial
+ userland-NetBSD-9.99.90/evbarm
 
 pkgsrc:
- at-spi2-core-2.40.3 curl-7.79.0 gd-2.3.3nb1 git-base-2.33.0
- libgcrypt-1.9.4 libwebp-1.2.1 p11-kit-0.24.0nb3
- p5-IO-Socket-SSL-2.072 p5-Net-DNS-1.32 perl-5.34.0nb3
- py38-cElementTree-3.8.12 py38-expat-3.8.12 python38-3.8.12
- ruby27-addressable-2.8.0 ruby27-atk-3.4.9
- ruby27-cairo-gobject-3.4.9 ruby27-delayer-1.2.1
- ruby27-diva-1.1.0 ruby27-gdk_pixbuf2-3.4.9 ruby27-gettext-3.4.1
- ruby27-gio2-3.4.9 ruby27-glib2-3.4.9 ruby27-gobject-introspection-3.4.9
- ruby27-gtk2-3.4.3nb1 ruby27-mikutter-4.1.6nb1 ruby27-mini_portile2-2.7.0
- ruby27-nokogiri-1.12.4 ruby27-pango-3.4.9 ruby27-red-colors-0.3.0
- ruby27-unf_ext-0.0.8 wget-1.21.2
+ curl-7.79.1nb1 digest-20211005 gdk-pixbuf2-2.42.6
+ git-base-2.33.0nb1 glib2-2.68.4nb1 gnutls-3.7.2nb1
+ gtk2+-2.24.33nb3 gtk3+-3.24.30nb1 harfbuzz-3.0.0
+ libcups-2.3.3op2nb2 libimagequant-2.16.0 libxkbcommon-1.3.1
+ nghttp2-1.45.1 pango-1.48.10 py39-expat-3.9.7
+ python39-3.9.7 qt5-qtbase-5.15.2nb7
+ ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7
+ ruby27-nokogiri-1.12.5 wget-1.21.2nb1
 
 RPI4 status:
 - boot via UEFI_VER=v1.31
@@ -84,7 +87,7 @@ In this image,pre-setted RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.88 evbarm-aarch64 202109241910Z arm64.img from nyftp.
+- NetBSD-current 9.99.90 evbarm-aarch64 202110061710Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
