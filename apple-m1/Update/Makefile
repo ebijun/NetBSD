@@ -1,16 +1,15 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.88-evbarm-aarch64-202109151600Z-install.img
-
-#-rw-r--r--  1 root  wheel  1625292800 Aug 16 19:51 /usr/release/images/NetBSD-9.99.88-evbarm-aarch64-202108160550Z-install.img
-#-rw-r--r--  1 root  wheel  1625292800 Jul 18 09:48 /usr/release/images/NetBSD-9.99.86-evbarm-aarch64-202107171950Z-install.img
-#-rw-r--r--  1 root  wheel  1625292800 Jun 20 23:32 /usr/release/images/NetBSD-9.99.85-evbarm-aarch64-202106200930Z-install.img
-DK=dk1
+IMG=${RELEASE}/NetBSD-9.99.91-evbarm-aarch64-202110120340Z-install.img
+#NetBSD-9.99.88-evbarm-aarch64-202109151600Z-install.img
+#NetBSD-9.99.91-evbarm-aarch64-202110120340Z-install.img
 
 IMAGE=arm64.img
 VND0=/dev/sd0
 SD0=/dev/sd0
 MNT=/mnt1
-M1=/mnt
+M1=/
+
+DK=`dkctl vnd0 listwedges |grep ffs |awk -F: '{print $$1}'`
 
 ##
 
@@ -56,7 +55,6 @@ ls:
 
 mount:
 	vndconfig vnd0 ${IMG}
-	dkctl vnd0
 	mount /dev/${DK} ${MNT}
 
 umount:

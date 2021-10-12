@@ -1,5 +1,6 @@
 DIR=tmp`date +%Y%m%d`
 MACHINE=Apple_Mac_mini_M1_2020
+DATE=`date +%Y%m%d%H%M`
 
 all: check diff copy status
 	echo git diff
@@ -32,3 +33,13 @@ pkgchk:
 
 clean:
 	rm -r tmp20*
+
+fetch:
+	./NewestISO |sh
+
+backup:
+	mkdir ${DIR}
+	cp -p /netbsd ${DIR}
+	dmesg -t > ${DIR}/dmesg
+	pkg_info |sort > ${DIR}/pkginfo
+	sys_info > ${DIR}/sysinfo
