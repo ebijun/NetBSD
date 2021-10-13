@@ -128,7 +128,7 @@ pkg-back:
 	fsck /dev/${DK_RELEASE}
 	mount /dev/${DK_RELEASE} ${MNT_ROOT}
 	cp etc/rc.conf ${MNT_ROOT}/etc/rc.conf
-	echo "${PKG_PATH}" >> ${MNT}/usr/pkg/etc/pkgin/repositories.conf
+	echo "${PKG_PATH}" >> ${MNT_ROOT}/usr/pkg/etc/pkgin/repositories.conf
 	umount ${MNT_ROOT}
 	vnconfig -u ${VND}
  
