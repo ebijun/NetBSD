@@ -33,7 +33,7 @@ avahi-0.8nb4        Facilitate service discovery on a local network
 babl-0.1.88         Dynamic pixel conversion library
 base64-1.5          Encode and decode base64 files
 bash-5.1.8nb3       The GNU Bourne Again Shell
-bison-3.8.1         GNU yacc(1) replacement
+bison-3.8.2         GNU yacc(1) replacement
 blas-3.9.1          Basic Linear Algebra System (Netlib reference implementation)
 boehm-gc-8.0.4nb1   Garbage collection and memory leak detection for C and C++
 boost-headers-1.77.0 Free, peer-reviewed portable C++ source libraries (build-time headers)
@@ -56,14 +56,14 @@ cdparanoia-3.0.10.2nb4 CDDA reading utility with extra data verification feature
 cdrdao-1.2.4        Records audio or data CD-Rs in disk-at-once (DAO) mode
 cdrtools-3.01nb1    Software for creating ISO9660 images and writing CD/DVD/Blu-ray
 check-0.15.2        Unit test framework for C
-chromaprint-1.5.0nb1 Audio fingerprinting
+chromaprint-1.5.0nb2 Audio fingerprinting
 clang-12.0.1        C language family frontend for LLVM
 clutter-1.26.2nb7   Open GL based interactive canvas library
 clutter-gst-3.0.26nb6 Clutter GStreamer integration
 clutter-gtk-1.8.4nb3 GTK+ Integration library for Clutter
 cmake-3.21.3nb2     Cross platform make
 cmocka-1.1.5        Unit testing framework for C supporing mock objects
-cmus-2.9.1nb4       Small, fast and powerful text mode music player
+cmus-2.9.1nb5       Small, fast and powerful text mode music player
 cogl-1.22.0nb11     Modern 3D graphics API
 coinmp-1.8.4        Linear Programming solver library
 consolekit-1.2.4    Framework for defining and tracking users, login sessions, and seats
@@ -104,8 +104,8 @@ exempi-2.5.2nb3     XMP (Extensible Metadata Platform) library
 exiv2-0.27.4        Image metadata manipulation
 eyeD3-0.9.5nb1      Python audio data toolkit (ID3 and MP3)
 faad2-2.10.0        AAC decoding library
-ffmpeg4-4.4nb9      Decoding, encoding and streaming software (v4.x)
-ffmpegthumbnailer-2.2.2nb1 Lightweight video thumbnailer that can be used by file managers
+ffmpeg4-4.4nb10     Decoding, encoding and streaming software (v4.x)
+ffmpegthumbnailer-2.2.2nb2 Lightweight video thumbnailer that can be used by file managers
 fftw-3.3.10         Fast C routines to compute DFTs (single and double precision)
 filezilla-3.55.1nb1 FTP, FTPS, and SFTP client with intuitive GUI
 findutils-4.6.0nb2  The GNU find, locate, updatedb, and xargs utilities
@@ -126,7 +126,7 @@ gconfmm-2.28.3nb27  C++ bindings for gconf
 gcr-3.38.0nb3       Library for crypto UI and related tasks
 gd-2.3.3nb1         Graphics library for the dynamic creation of images
 gdbm-1.21           The GNU database manager
-gdbus-codegen-2.68.4 Generate code and/or documentation for one or more D-Bus interfaces
+gdbus-codegen-2.70.0 Generate code and/or documentation for one or more D-Bus interfaces
 gdk-pixbuf2-2.42.6  Library for image loading and manipulation
 gdk-pixbuf2-xlib-2.40.2 Deprecated Xlib integration for GdkPixbuf
 gdl-3.34.0nb8       Gnome Devtool Libraries
@@ -146,8 +146,8 @@ git-base-2.33.0nb1  GIT Tree History Storage Tool (base package)
 gle-3.1.0nb4        GL subroutines for drawing tubing and extrusions
 glew-2.2.0nb2       OpenGL Extension Wrangler Library
 glib-networking-2.64.3nb4 Network-related giomodules for glib
-glib2-2.68.4nb1     Some useful routines for C programming (glib2)
-glib2-tools-2.68.4  GLib2/gobject python-dependent tools
+glib2-2.70.0        Some useful routines for C programming (glib2)
+glib2-tools-2.70.0  GLib2/gobject python-dependent tools
 glibmm-2.66.1       C++ bindings for glib (2.4 API)
 glm-0.9.7.0         C++ mathematics library for graphics programming
 glyr-1.0.10nb29     Music related metadata search engine with CLI and C API
@@ -159,7 +159,7 @@ gnome-keyring-3.36.0 GNOME password and secret manager
 gnome-video-effects-0.5.0nb1 Collection of GStreamer effects for GNOME
 gnupg2-2.2.31       GnuPG with OpenPGP and S/MIME capabilities
 gnutls-3.7.2nb1     Transport Layer Security library
-go116-1.16.8        The Go programming language
+go116-1.16.9        The Go programming language
 gobject-introspection-1.68.0 GObject Introspection
 googletest-1.11.0   Google's C++ testing framework
 gperf-3.1           GNU perfect hash function generator
@@ -178,7 +178,7 @@ gst-plugins1-bad-1.16.2nb2 Open source multimedia framework - Bad plugins
 gst-plugins1-base-1.16.2nb6 Open source multimedia framework - Base plugins
 gst-plugins1-flac-1.16.2nb1 Open source multimedia framework - flac plugin
 gst-plugins1-good-1.16.2nb1 Open source multimedia framework - Good plugins
-gst-plugins1-libav-1.16.2nb4 GStreamer libav/ffmpeg plugin
+gst-plugins1-libav-1.16.2nb5 GStreamer libav/ffmpeg plugin
 gst-plugins1-mpg123-1.16.2nb1 Open source multimedia framework - mpg123 plugin
 gst-plugins1-ogg-1.16.2 Open source multimedia framework - ogg plugin
 gst-plugins1-opus-1.16.2 Open source multimedia framework - opus plugin
@@ -223,7 +223,7 @@ inkscape-1.1nb1     Scalable Vector Graphics (SVG) editor
 intel-backlight-20200418nb1 Tool for controlling backlight level on certain Intel GPUs
 intltool-0.51.0nb6  Internationalization Tool Collection
 iso-codes-3.77nb1   List of country, language and currency names
-itstool-2.0.6nb2    ITS Tool allows you to translate XML documents with PO files
+itstool-2.0.7       ITS Tool allows you to translate XML documents with PO files
 jack-1.9.19nb3      Low-latency audio server
 jansson-2.13.1      C library for encoding, decoding and manipulating JSON data
 jbig2dec-0.19nb1    JBIG2 decoder library
@@ -248,7 +248,7 @@ liba52-0.7.4nb3     Free ATSC A/52 stream decoder library
 libabw-0.1.3nb9     Library for AbiWord documents
 libao-1.2.2         Cross-platform audio library
 libao-sun-1.2.2nb2  Cross-platform audio library (Sun audio plugin)
-libaom-1.0.0nb4     Library for using AV1, video coding format
+libaom-3.1.3        Library for using AV1, video coding format
 libappindicator-12.10.0nb9 Allow applications to export a menu into the panel
 libart-2.3.21       High-performance 2D graphics library
 libass-0.15.2       Portable subtitle renderer for the ASS/SSA subtitle format
@@ -301,7 +301,7 @@ libgpod-0.8.3nb1    Library for accessing iPod onboard databases, playlists, etc
 libgsf-1.14.47nb3   GNOME structured file library
 libgtop-2.28.4nb19  Library to retrieve system information, used in GNOME2
 libgxps-0.2.2nb24   Library for XPS documents
-libheif-1.12.0      HEIF and AVIF file format decoder and encoder library
+libheif-1.12.0nb1   HEIF and AVIF file format decoder and encoder library
 libical-3.0.10nb2   Reference implementation of the iCalendar data type and format
 libiconv-1.14nb3    Character set conversion library
 libid3tag-0.15.1bnb2 ID3 tag library, part of MAD (MPEG Audio Decoder)
@@ -459,9 +459,9 @@ musepack-0rc475nb1  MPEG-Plus and MusePack decoder (V8)
 mypaint-brushes-2.0.2nb1 Default MyPaint brushes
 mythes-1.2.4nb2     Simple thesaurus library
 nasm-2.15.05nb1     General-purpose x86 assembler
-ncurses-6.2nb3      CRT screen handling and optimization package
+ncurses-6.2nb4      CRT screen handling and optimization package
 ncursesw-6.2        Wide character CRT screen handling and optimization package
-neon-0.31.2nb3      HTTP and WebDAV client library
+neon-0.32.1         HTTP and WebDAV client library
 netpbm-10.79.04nb8  Toolkit for conversion of images between different formats
 nettle-3.7.3        Cryptographic library
 nghttp2-1.45.1      Implementation of HTTP/2 in C
@@ -473,7 +473,7 @@ noto-ttf-20170410   Noto fonts for all languages
 npth-1.6            New Portable Threads Library (nPth)
 nspr-4.32           Platform-neutral API for system level and libc like functions
 nss-3.71            Libraries to support development of security-enabled applications
-obs-studio-26.1.2nb7 Video recording and live streaming software
+obs-studio-26.1.2nb8 Video recording and live streaming software
 oniguruma-6.9.7.1   Regular expressions library
 openal-soft-1.21.1nb2 Software implementation of the OpenAL 3D audio API
 openexr-2.5.5       High dynamic-range (HDR) image file format library and tools
@@ -482,7 +482,7 @@ openjpeg-2.4.0nb1   JPEG 2000 library
 opusfile-0.12       Decoding and seeking API for opus files
 orc-0.4.32          Compiler for vector operations
 orcus-0.16.1nb2     Import filter library for spreadsheet documents (0.16 branch)
-osabi-NetBSD-9.99.90 Operating System version dummy-package
+osabi-NetBSD-9.99.91 Operating System version dummy-package
 p11-kit-0.24.0nb3   PKCS#11 module manager
 p5-Alien-Build-2.38nb1 Build external dependencies for use in CPAN
 p5-Alien-Libxml2-0.17nb1 Perl interface to libxml2
@@ -569,7 +569,7 @@ poppler-includes-21.09.0 Poppler Xpdf includes (unsupported)
 popt-1.18           Command line option parsing library
 portaudio-190600.20161030nb9 Portable cross-platform audio API
 potrace-1.15        Utility for transforming bitmaps into vector graphics
-protobuf-3.18.0     Google protocol buffers
+protobuf-3.18.1     Google protocol buffers
 ptexenc-1.3.9       Library for Japanese pTeX and its tools
 pugixml-1.11.4      Light-weight C++ XML processing library
 pulseaudio-15.0     Sound server for POSIX and Win32 systems
@@ -664,11 +664,12 @@ py38-toml-0.10.2    Python Library for Tom's Obvious, Minimal Language
 py38-urllib3-1.26.6 HTTP library with thread-safe connection pooling
 py38-yaml-5.4.1     Collection of libraries to process YAML with Python
 py39-expat-3.9.7    Python interface to expat
-python27-2.7.18nb3  Interpreted, interactive, object-oriented programming language
+py39-libxml2-2.9.12nb1 Python wrapper for libxml2
+python27-2.7.18nb4  Interpreted, interactive, object-oriented programming language
 python37-3.7.12     Interpreted, interactive, object-oriented programming language
 python38-3.8.12     Interpreted, interactive, object-oriented programming language
 python39-3.9.7      Interpreted, interactive, object-oriented programming language
-qmmp-1.5.1nb2       Audio player similar to Winamp/XMMS using Qt
+qmmp-1.5.1nb3       Audio player similar to Winamp/XMMS using Qt
 qpdf-10.3.2nb1      Structural, content-preserving transformations on PDF files
 qr-code-generator-1.7.0 High-quality QR Code generator in C/C++
 qt4-libs-4.8.7nb27  C++ X GUI toolkit
@@ -692,7 +693,7 @@ readline-8.1        GNU library that can recall and edit previous input
 redland-1.0.17nb30  Libraries supporting the Resource Description Framework (RDF)
 rhash-1.4.2nb2      Calculate/check CRC32, MD5, SHA1, GOST, TTH, BTIH or other hash sums
 rhythmbox-3.4.4nb3  Music management application for GNOME
-rsync-3.2.3         Network file distribution/synchronisation utility
+rsync-3.2.3nb1      Network file distribution/synchronisation utility
 ruby27-addressable-2.8.0 Replacement for the URI Implementation of standard librrary
 ruby27-atk-3.4.9    Ruby binding of ATK-1.0.x or later
 ruby27-base-2.7.4   Ruby 2.7.4 release minimum base package
@@ -1007,9 +1008,9 @@ unzip-6.0nb9        List, test and extract compressed files in a ZIP archive
 upmendex-0.55       Multilingual index processor
 upower-0.99.13      Power management system message bus service
 usbids-20200622     Repository of USB IDs (usb.ids database)
-vala-0.54.0         Compiler for the GObject type system
+vala-0.54.1         Compiler for the GObject type system
 vamp-plugin-sdk-2.10.0 The Vamp audio analysis plugin system
-vlc-3.0.16nb3       VideoLAN media player and streaming server
+vlc-3.0.16nb4       VideoLAN media player and streaming server
 vlgothic-ttf-20200720 Free Japanese TrueType fonts named 'VLGothic'
 vte3-0.60.3nb12     Terminal widget with improved accessibility and I18N support
 w3m-0.5.3.0.20210102nb2 Multilingualized version of a pager/text-based browser w3m
