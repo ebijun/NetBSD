@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.90 (GENERIC) #0: Tue Oct  5 21:05:12 UTC 2021
+NetBSD 9.99.91 (GENERIC) #0: Tue Oct 12 19:57:53 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 3982 MB
 avail memory = 3832 MB
@@ -46,13 +46,13 @@ acpi0: autoconfiguration error: invalid PCI address for D012
 acpi0: autoconfiguration error: invalid PCI address for D014
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFFC55198EC808 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFCC14CC30D008 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFFC551990D008 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
+ACPI: SSDT 0xFFFFCC14CC30D808 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFFC5551058208 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFCC1503A58208 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFFC55198FC308 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFCC14CC31D408 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -247,7 +247,7 @@ WARNING: 5 errors while detecting hardware; check system log.
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.90/modules
+kern.module.path=/stand/amd64/9.99.91/modules
 kern info: [drm] Memory usable by graphics device = 2048M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.

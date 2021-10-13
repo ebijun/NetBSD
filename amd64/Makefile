@@ -66,6 +66,8 @@ update-info:
 	pkg_chk -g -C pkgchk.conf
 	sys_info |sort > sysinfo
 	pkg_info |sort > pkginfo
+
+dmesg:
 	dmesg -t > ../dmesg/${ARCH}/${SYSTEM}
 
 delete:
