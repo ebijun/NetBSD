@@ -1,11 +1,28 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20210912)
+Subject: apple m1 status update (20211013)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Topics:
-- Start Apple M1
+- boot failed sys/kern/kern_sleepq.c line 227 on NetBSD9.99.90 
+
+boot ok:
+NetBSD 9.99.88 (GENERIC64) #0: Wed Sep 15 13:16:57 UTC 2021
+
+boot failed:
+NetBSD 9.99.90 (GENERIC64) #0: Fri Oct  8 18:02:57 UTC 2021
+NetBSD 9.99.91 (GENERIC64) #0: Tue Oct 12 00:21:34 UTC 2021
+        
+sys/kern/kern_sleepq.c line 227 on NetBSD9.99.90 on apple m1.
+   https://twitter.com/ebijun/status/1446735443987341314
+
+- libreoffice build failed.
+[GAL] backgrounds
+[1]   Abort trap (core dumped) (LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+${LD_LIBRA...
+terminate called after throwing an instance of 'com::sun::star::uno::RuntimeException'
+gmake[1]: *** [/usr/pkgsrc/misc/libreoffice/work.aarch64/libreoffice-7.2.1.2/solenv/gbuild/Gallery.mk:56: /usr/pkgsrc/misc/libreoffice/work.aarch64/libreoffice-7.2.1.2/workdir/Gallery/backgrounds.done] Error 1
+gmake: *** [Makefile:287: build] Error 2
 
 Hardware:
  Apple Mac mini M1 2020 A2348 
@@ -28,16 +45,13 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- NetBSD-9.99.88 sh-20181212-20210815222252Z
- userland-NetBSD-9.99.88/evbarm
+ sh-20181212-20210915131657Z
 
 pkgsrc:
 
-System Updates:
-
 
 Version: 
- NetBSD 9.99.88 (GENERIC64) #0: Fri Sep 10 13:33:45 UTC 2021  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+   NetBSD 9.99.88 (GENERIC64) #0: Wed Sep 15 13:16:57 UTC 2021
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
