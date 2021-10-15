@@ -22,7 +22,7 @@ sys/kern/kern_sleepq.c line 227 on NetBSD9.99.90 on apple m1.
 
 - libreoffice build failed.
 [GAL] backgrounds
-[1]   Abort trap (core dumped) (LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+${LD_LIBRA...
+[1]   Abort trap (core dumped) (LD_LIBRARY_PATH=\${LD_LIBRARY_PATH:+\${LD_LIBRA...
 terminate called after throwing an instance of 'com::sun::star::uno::RuntimeException'
 gmake[1]: *** [/usr/pkgsrc/misc/libreoffice/work.aarch64/libreoffice-7.2.1.2/solenv/gbuild/Gallery.mk:56: /usr/pkgsrc/misc/libreoffice/work.aarch64/libreoffice-7.2.1.2/workdir/Gallery/backgrounds.done] Error 1
 gmake: *** [Makefile:287: build] Error 2

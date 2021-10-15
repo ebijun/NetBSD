@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20211013)
+Subject: apple m1 status update (20211016)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
@@ -23,7 +23,7 @@ sys/kern/kern_sleepq.c line 227 on NetBSD9.99.90 on apple m1.
 terminate called after throwing an instance of 'com::sun::star::uno::RuntimeException'
 gmake[1]: *** [/usr/pkgsrc/misc/libreoffice/work.aarch64/libreoffice-7.2.1.2/solenv/gbuild/Gallery.mk:56: /usr/pkgsrc/misc/libreoffice/work.aarch64/libreoffice-7.2.1.2/workdir/Gallery/backgrounds.done] Error 1
 gmake: *** [Makefile:287: build] Error 2
-
+ 
 Hardware:
  Apple Mac mini M1 2020 A2348 
  USB SSD 128GB ELECOM ESD-EC0120GRDR
@@ -48,10 +48,152 @@ sysinfo:
  sh-20181212-20210915131657Z
 
 pkgsrc:
-
+ CUnit-2.1nb1 ImageMagick6-6.9.11.7nb11 SDL2-2.0.16nb1 SDL_image-1.2.12nb9
+ a2ps-4.14nb14 asciidoc-9.1.0nb2 babl-0.1.88 bison-3.8.1
+ boost-headers-1.77.0 boost-jam-1.77.0 boost-libs-1.77.0
+ box2d-2.4.1 cbindgen-0.20.0 clang-12.0.1 cmake-3.21.3nb2
+ cmocka-1.1.5 coinmp-1.8.4 compface-1.5.2nb10 cppunit-1.15.1
+ curl-7.79.1nb1 dav1d-0.9.2 db4-4.8.30nb1 dbus-python-common-1.2.18
+ deforaos-browser-0.5.4nb1 deforaos-camera-0.3.0nb3
+ deforaos-editor-0.4.1nb3 deforaos-keyboard-0.4.0nb3
+ deforaos-locker-0.4.1nb3 deforaos-mailer-0.2.0nb6 deforaos-panel-0.4.1
+ deforaos-todo-0.3.0nb3 digest-20210929 elementary-xfce-icon-theme-0.11
+ emacs-26.3 emacs26-26.3nb16 enca-1.15 enchant-1.6.0nb9 enchant2-2.3.1
+ fam-2.7.0nb9 farstream-0.2.9nb8 ffmpeg4-4.4nb9 ffmpegthumbnailer-2.2.2nb1
+ fftw-3.3.10 findutils-4.6.0nb2 game-music-emu-0.6.3 gcc10-10.3.0nb1
+ gconfmm-2.28.3nb27 gd-2.3.3nb1 gdbm-1.21 gdbus-codegen-2.68.4
+ gdk-pixbuf2-2.42.6 gdk-pixbuf2-xlib-2.40.2 gegl-0.4.32
+ ghostscript-9.05nb26 ghostscript-agpl-9.55.0 ghostscript-fonts-8.11nb3
+ git-base-2.33.0nb1 gle-3.1.0nb4 glew-2.2.0nb2 glib-networking-2.64.3nb4
+ glib2-2.68.4nb1 glib2-tools-2.68.4 glibmm-2.66.1 glm-0.9.7.0
+ gnome-desktop-2.32.1nb46 gnome-icon-theme-3.12.0nb7
+ gnome-icon-theme-symbolic-3.12.0nb15 gnupg2-2.2.27nb3
+ gnutls-3.7.2nb1 gpgme-1.15.1 graphviz-2.44.1nb17 gsed-4.8nb1
+ gssdp-1.0.3nb16 gst-plugins0.10-good-0.10.31nb8
+ gst-plugins0.10-ogg-0.10.36nb2 gst-plugins0.10-theora-0.10.36nb2
+ gst-plugins0.10-v4l2-0.10.31nb6 gtar-base-1.34 gtk2+-2.24.33nb3
+ gtk3+-3.24.30nb1 gtksourceview4-4.8.0nb2 gtkspell-2.0.16nb34
+ gts-0.7.6nb1 gupnp-1.0.3nb12 gxemul-0.7.0nb1 hal-0.5.14nb27
+ hal-info-20091130nb9 harfbuzz-3.0.0 harfbuzz-icu-3.0.0
+ hunspell-1.7.0nb5 hunspell-en_US-20060207 hyphen-2.8.8nb4
+ icon-naming-utils-0.8.90nb9 imath-3.1.3 imlib2-1.7.3
+ jansson-2.13.1 jasper-2.0.33 jbig2dec-0.19nb1 json-c-0.15
+ jwm-2.3.7nb12 kterm-6.2.0nb24 lcms-1.19nb3 lcms2-2.12
+ ldb-2.2.1 libXaw3d-1.6.3 libabw-0.1.3nb9 libaom-1.0.0nb4
+ libart-2.3.21 libass-0.15.2 libassuan-2.5.5 libbluray-1.3.0nb1
+ libcdr-0.1.7nb3 libclucene-2.3.3.4nb20 libcroco-0.6.13nb4
+ libcups-2.3.3op2nb2 libde265-1.0.8nb1 libdv-1.0.0nb2 libdvdnav-6.1.1
+ libdvdread-6.1.2 libe-book-0.1.3nb19 libepubgen-0.1.1nb4
+ libetonyek-0.1.10nb1 libexif-0.6.23 libexttextcat-3.4.5
+ libfreehand-0.1.2nb10 libgnome-keyring-3.12.0nb1 libgsf-1.14.47nb3
+ libheif-1.12.0 libical-3.0.10nb2 libiconv-1.14nb3 libimagequant-2.16.0
+ libixion-0.16.1nb2 libksba-1.4.0 liblangtag-0.6.3nb4 liblqr-0.4.2nb1
+ libmodplug-0.8.9.0 libmspub-0.1.4nb18 libmwaw-0.3.18nb1
+ libmysofa-1.2 libnotify-0.7.9nb3 libnumbertext-1.0.7
+ libodfgen-0.1.7nb4 libpagemaker-0.0.4nb10 libpurple-2.14.4nb2
+ libqxp-0.0.2nb12 librevenge-0.0.4nb15 librsvg-2.50.7
+ libsamplerate-0.2.2 libsecret-0.20.4nb2 libshout-2.4.5
+ libsigc++-2.10.7 libsoxr-0.1.3 libspectre-0.2.9nb1
+ libstaroffice-0.0.7nb4 libtheora-1.1.1nb2 libusb1-1.0.24
+ libv4l-1.20.0 libva-2.6.1 libvisio-0.1.7nb12
+ libvpx-1.10.0nb1 libwildmidi-0.4.4 libwmf-0.2.8.4nb19
+ libwnck3-3.36.0 libwpd-0.10.3nb4 libwpg-0.3.3nb6
+ libwps-0.4.12nb3 libxdg-basedir-1.2.0 libxfce4gui-4.10.0nb19
+ libxfce4ui-4.14.1nb4 libxfce4util-4.14.0nb4 libxkbcommon-1.3.1
+ libxklavier-5.4nb7 libzip-1.8.0nb1 libzmf-0.0.2nb20
+ llvm-12.0.1 lmdb-0.9.29 lp_solve-5.5.2.3 lua52-5.2.4nb1
+ luit-2.0.20190106 lzip-1.22 mate-polkit-1.24.0nb3
+ mdds-1.6.0nb3 meson-0.59.2 mm-common-1.0.3 mng-2.0.3
+ mpg123-1.29.0 mplayer-1.4nb3 mplayer-fonts-20030714nb1
+ mplayer-share-1.4nb12 mpv-0.33.1nb5 mythes-1.2.4nb2
+ ncursesw-6.2 neon-0.31.2nb3 netpbm-10.79.04nb8 nghttp2-1.45.1
+ nginx-1.20.1nb1 ninja-build-1.10.2 nono-0.1.6 npth-1.6
+ nss-3.71 onscripter-20191116nb1 openal-soft-1.21.1nb2
+ openexr-3.1.1 openjpeg-2.4.0nb1 opusfile-0.12 orcus-0.16.1nb2
+ p5-Archive-Zip-1.68nb1 p5-Business-ISBN-3.006
+ p5-Business-ISBN-Data-20210112.006 p5-ExtUtils-Depends-0.8000nb2
+ p5-ExtUtils-PkgConfig-1.16nb5 p5-File-Slurp-Tiny-0.004nb6
+ p5-IO-Socket-SSL-2.072 p5-Locale-libintl-1.32nb1
+ p5-Net-3.13nb1 p5-Net-DNS-1.32 p5-Parse-Yapp-1.21nb4
+ p5-SUPER-1.20190531nb2 p5-Sub-Identify-0.14nb5 p5-Sub-Uplevel-0.2800nb5
+ p5-Test-Exception-0.43nb6 p5-Test-Warn-0.36nb4 p5-Tree-DAG_Node-1.32
+ p5-URI-5.09nb1 p5-XML-NamespaceSupport-1.12nb5 p5-XML-SAX-1.02nb1
+ p5-XML-SAX-Base-1.09nb5 p5-XML-SAX-Expat-0.51nb7
+ p5-XML-Simple-2.25nb4 p5-glib2-1.3293nb1 pango-1.48.10
+ pciids-20200222 php-7.4.24 php74-curl-7.4.24nb11
+ php74-fpm-7.4.24nb7 php74-gd-7.4.24nb1 php74-iconv-7.4.24
+ php74-intl-7.4.24nb6 php74-ja-wordpress-5.6 php74-json-7.4.24
+ php74-mbstring-7.4.24 php74-mysqli-7.4.24nb2 php74-owncloud-10.6.0nb1
+ php74-pdo-7.4.24 php74-pdo_sqlite-7.4.24nb6 php74-posix-7.4.24
+ php74-sqlite3-7.4.24nb6 php74-zip-7.4.24nb6 php74-zlib-7.4.24nb1
+ pinentry-1.1.1 pkg_rolling-replace-0.24.13 pkg_tarup-1.9.1
+ pkgclean-20200119 policykit-0.9nb29 poppler-21.09.0
+ poppler-glib-21.09.0 psutils-1.17nb11 pth-2.0.7nb5
+ py-gobject-shared-2.28.7nb5 py-gobject3-common-3.36.1 py27-cairo-1.18.2nb1
+ py27-expat-2.7.18 py27-setuptools-44.1.1 py37-cairo-1.20.1
+ py37-expat-3.7.12 py37-gobject-2.28.7nb3 py37-setuptools-57.4.0
+ py38-OpenSSL-20.0.1 py38-Socks-1.7.1 py38-alabaster-0.7.12
+ py38-babel-2.9.1 py38-certifi-2021.5.30 py38-cffi-1.14.6
+ py38-charset-normalizer-2.0.6 py38-cparser-2.20 py38-cryptodome-3.10.1
+ py38-cryptography-3.3.2 py38-dns-1.16.0nb1 py38-docutils-0.16nb1
+ py38-ecdsa-0.17.0 py38-idna-2.10 py38-imagesize-1.2.0
+ py38-iso8601-0.1.16 py38-jinja2-2.11.3 py38-markdown-3.1.1
+ py38-markupsafe-1.1.1 py38-packaging-20.9 py38-pyparsing-2.4.7
+ py38-pytz-2021.1 py38-requests-2.26.0 py38-roman-3.3
+ py38-setuptools-57.5.0 py38-snowballstemmer-2.1.0 py38-sphinx-3.5.4
+ py38-sphinxcontrib-applehelp-1.0.2 py38-sphinxcontrib-devhelp-1.0.2
+ py38-sphinxcontrib-htmlhelp-1.0.3 py38-sphinxcontrib-jsmath-1.0.1
+ py38-sphinxcontrib-qthelp-1.0.3 py38-sphinxcontrib-serializinghtml-1.1.5
+ py38-sqlite3-3.8.12nb19 py38-urllib3-1.26.6 py39-OpenSSL-20.0.1
+ py39-Socks-1.7.1 py39-alabaster-0.7.12 py39-anytree-2.8.0
+ py39-babel-2.9.1 py39-cElementTree-3.9.7 py39-certifi-2021.5.30
+ py39-cffi-1.14.6 py39-charset-normalizer-2.0.6 py39-cparser-2.20
+ py39-cryptodome-3.10.4 py39-cryptography-3.3.2 py39-dbus-1.2.18
+ py39-dns-1.16.0nb1 py39-docutils-0.16nb1 py39-ecdsa-0.17.0
+ py39-expat-3.9.7 py39-idna-2.10 py39-imagesize-1.2.0
+ py39-iso8601-0.1.16 py39-jinja2-2.11.3 py39-libxml2-2.9.12nb1
+ py39-lxml-4.6.3nb1 py39-markdown-3.1.1 py39-markupsafe-1.1.1
+ py39-packaging-20.9 py39-pygments-2.10.0 py39-pyparsing-2.4.7
+ py39-pytz-2021.1 py39-requests-2.26.0 py39-roman-3.3
+ py39-setuptools-57.5.0 py39-six-1.16.0 py39-snowballstemmer-2.1.0
+ py39-sphinx-3.5.4 py39-sphinxcontrib-applehelp-1.0.2
+ py39-sphinxcontrib-devhelp-1.0.2 py39-sphinxcontrib-htmlhelp-1.0.3
+ py39-sphinxcontrib-jsmath-1.0.1 py39-sphinxcontrib-qthelp-1.0.3
+ py39-sphinxcontrib-serializinghtml-1.1.5 py39-sqlite3-3.9.7nb19
+ py39-urllib3-1.26.7 python27-2.7.18nb3 python37-3.7.12
+ python39-3.9.7 qt5-qtbase-5.15.2nb7 qt5-qtdeclarative-5.15.2nb3
+ qt5-qtlocation-5.15.2nb2 qt5-qtmultimedia-5.15.2nb5
+ qt5-qtsensors-5.15.2nb2 qt5-qtserialport-5.15.2nb2
+ qt5-qtsvg-5.15.2nb3 qt5-qttools-5.15.2nb5
+ qt5-qtwebchannel-5.15.2nb2 qt5-qtwebsockets-5.15.2nb2
+ raptor2-2.0.15nb22 rarian-0.8.1nb7 rasqal-0.9.33nb23
+ re2c-2.2 redland-1.0.17nb30 rhash-1.4.2nb2 rsync-3.2.3nb1
+ ruby27-bsearch-1.5nb2 ruby27-delayer-1.2.1 ruby27-gettext-3.4.1
+ ruby27-gtk2-3.4.3nb1 ruby27-hmac-0.4.0 ruby27-httpclient-2.8.3nb1
+ ruby27-json-pure-2.5.1 ruby27-mikutter-4.1.7
+ ruby27-mikutter-plugins-twitter-4.1 ruby27-nokogiri-1.12.5
+ ruby27-rdtool-0.6.38nb2 ruby27-setup-3.4.1nb1 ruby27-unf_ext-0.0.8
+ rust-1.54.0nb1 serf-1.3.9nb1 sofia-sip-1.12.11nb5 spdlog-1.8.5
+ swig-1.3.38nb3 sylpheed-3.7.0nb8 taglib-1.12 talloc-2.3.3
+ tcl-8.6.11nb1 tdb-1.4.5 tevent-0.10.2nb1 texi2html-5.0nb10
+ tk-8.6.11 ttmkfdir2-20021109nb6 unixodbc-2.3.9
+ upower-0.99.13 usbids-20200622 vala-0.54.0 vte-0.28.1nb27
+ vte3-0.60.3nb12 waf-2.0.22 wavpack-5.4.0 webkit-gtk-2.34.0
+ wget-1.21.2nb1 woff2-1.0.2nb1 wxGTK30-3.0.5.1nb3
+ x264-devel-20191217nb2 x265-3.5 xcb-util-cursor-0.1.3
+ xdg-utils-1.1.3nb3 xfce4-appfinder-4.14.1 xfce4-conf-4.14.3nb3
+ xfce4-exo-0.12.11nb5 xfce4-garcon-0.7.0nb2
+ xfce4-icon-theme-4.4.3nb34 xfce4-mousepad-0.5.4
+ xfce4-orage-4.12.1nb24 xfce4-panel-4.14.4nb2
+ xfce4-power-manager-1.6.5nb5 xfce4-session-4.14.2nb6
+ xfce4-settings-4.14.3nb5 xfce4-terminal-0.8.10
+ xfce4-wm-4.14.6 xfce4-wm-themes-4.10.0nb16
+ xmlto-0.0.28nb5 xnp2-0.86nb11 xorg-util-macros-1.19.3
+ xscreensaver-5.45nb4 xterm-368 xvidcore-1.3.7
+ yasm-1.3.0 zip-3.0nb3 zonetab-0
 
 Version: 
-   NetBSD 9.99.88 (GENERIC64) #0: Wed Sep 15 13:16:57 UTC 2021
+ NetBSD 9.99.88 (GENERIC64.202109151316UTC) #2: Fri Oct 15 23:48:06 JST 2021  jun@amim1.soum.co.jp:/home/jun/Build/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
