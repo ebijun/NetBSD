@@ -1,21 +1,27 @@
-VERSION: :1,$s/2021-09-25/2021-09-25/g
+VERSION: :1,$s/2021-10-18/2021-10-18/g
 ISO:     :1,$s/202109201510Z/202109201510Z/g
 NetBSD:  :1,$s/9.99.88/9.99.88/g
-PKGSRC:  :1,$s/2021-09-25/2021-1/
+PKGSRC:  :1,$s/2021-10-18/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-09-25-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-10-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-09-25-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-10-18-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-25-earmv6hf/2021-09-25-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-25-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-18-earmv6hf/2021-10-18-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-18-earmv6hf/MD5
 
 Update:
 - NetBSD 9.99.88 evbarm-earmv6hf 202109201510Z rpi.img from nyftp.
+
+ 9.99.91 earmv6hf 202110170430Z on RPI3B 
+ boot failed.same point on apple m1/aarch64.
+ https://twitter.com/ebijun/status/1449832510167261186
+ https://twitter.com/ebijun/status/1446735443987341314
+
 - OpenSSH 8.8
   "This release disables RSA signatures using the SHA-1 hash algorithm
    by default."
@@ -55,9 +61,14 @@ sysinfo:
  libc-12.219 sh-20181212-20210920143005Z
 
 pkgsrc:
- gd-2.3.3nb1 gdk-pixbuf2-2.42.6 glib2-2.68.4nb1
- ruby27-gettext-3.4.1 ruby27-mikutter-4.1.6nb1
- ruby27-nokogiri-1.12.4 ruby27-unf_ext-0.0.8
+ curl-7.79.1nb1 digest-20211005 fribidi-1.0.11 gd-2.3.3nb1
+ gdk-pixbuf2-2.42.6 git-base-2.33.1 glib2-2.70.0 gnutls-3.7.2nb1
+ gtk2+-2.24.33nb3 gtk3+-3.24.30nb1 harfbuzz-3.0.0 libcups-2.3.3op2nb2
+ libimagequant-2.16.0 mozilla-rootcerts-1.0.20210916 nghttp2-1.45.1
+ pango-1.48.10 pkgin-21.10.0 py39-cElementTree-3.9.7 py39-expat-3.9.7
+ python39-3.9.7 qt5-qtbase-5.15.2nb7 ruby27-gettext-3.4.1
+ ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7
+ ruby27-nokogiri-1.12.5 ruby27-unf_ext-0.0.8 wget-1.21.2nb1
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -115,7 +126,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-09-25-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-18-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -338,16 +349,16 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2021 Niigata, NetBSD BOF.
+For Open Source Conference 2021 Fall, BSD BOF.
 I've updated raspberry-pi image.
 
-2021 Oct. 2 Sat 13:20-13:40 JST (UTC+9)
-https://ospn.connpass.com/event/219884/
+2021 Oct. 23 Sat 15:00-15:45 JST (UTC+9)
+https://ospn.connpass.com/event/220756/
 
 Join meeting with ZOOM/YoutubeLive 
 YoutubeLive https://www.youtube.com/c/OSPNjp
 
-http://www.re.soum.co.jp/~jun/OSC2021niigata.pdf
+http://www.re.soum.co.jp/~jun/OSC2021tokyofall.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2021.rst
