@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/niigata
+ Place/tokyo
  OSC/OSC2021
  RPI/RPIupdate2021
  RPI

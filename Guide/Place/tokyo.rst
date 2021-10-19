@@ -70,8 +70,8 @@ Maps:
  2019 Fall,11/23-24,830,63,明星大学
  2020 Spling,4/24-25,500,19,オンライン
  2020 Fall,10/23-24,500,15,オンライン
- 2021 Spring,3/6-7,,26,オンライン
-
+ 2021 Spring,3/6-7,570,26,オンライン
+ 2021 Fall,10/22-23,,,オンライン
 
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,6 +84,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 171,OSC2021東京秋,http://www.re.soum.co.jp/~jun/OSC2021tokyofall.pdf
  164,OSC2021東京春, http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
  159,OSC2020東京秋, http://www.re.soum.co.jp/~jun/OSC2020tokyofall.pdf
  152,OSC2019東京秋, http://www.re.soum.co.jp/~jun/OSC2019tokyofall.pdf
@@ -112,7 +113,8 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- オープンソースカンファレンス2021 Online/SpringNetBSDのご紹介 の記録,https://togetter.com/li/1675363
+ OSC2021 Online/Fall NetBSDのご紹介 の記録,https://togetter.com/li/1790501
+ OSC2021 Online/SpringNetBSDのご紹介 の記録,https://togetter.com/li/1675363
  OSC2020東京秋 BSDなひととき の記録,https://togetter.com/li/1611536
  OSC2019東京秋 NetBSDブース展示の記録,https://togetter.com/li/1433822
  OSC2019東京春 NetBSDブース展示の記録, https://togetter.com/li/1321833
