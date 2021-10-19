@@ -1,20 +1,22 @@
-VERSION: :1,$s/2021-10-10/2021-10-10/g
-ISO:     :1,$s/202110061710Z/202110061710Z/g
-NetBSD:  :1,$s/9.99.90/9.99.90/g
+VERSION: :1,$s/2021-10-19/2021-10-19/g
+ISO:     :1,$s/202110170430Z/202110170430Z/g
+NetBSD:  :1,$s/9.99.91/9.99.91/g
 PKGSRC:  :1,$s/2021-1/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-10-10-netbsd-raspi-aarch64.img
+Subject: 2021-10-19-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-10-10-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2021-10-19-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-10-aarch64/2021-10-10-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-10-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-19-aarch64/2021-10-19-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-19-aarch64/MD5
 
 Topics:
+- enabled RELRO and MKPIE for aarch64 
+  http://mail-index.netbsd.org/current-users/2021/10/15/msg041570.html
 
 - openssh 8.8 https://www.openssh.com/txt/release-8.8
 cf.
@@ -22,15 +24,13 @@ cf.
   Host bitbucket.org
         HostkeyAlgorithms +ssh-rsa
         PubkeyAcceptedAlgorithms +ssh-rsa
-- Python 3.9
-- ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
   http://mail-index.netbsd.org/port-arm/2021/08/08/msg007393.html
   the Arasan SDHCI is used to connect bwfm(4). 
 
-In this image, make a synbolic link
+In this image, a synbolic link added
 
 /libdata/firmware/if_bwfm:
 ln -s brcmfmac43455-sdio.raspberrypi,4-model-b.txt "brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt"
@@ -55,19 +55,12 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- NetBSD-9.99.90 openssh-8.8 opensshd-8.8
- sh-20181212-20211006170449Z tzdata-2021b-partial
- userland-NetBSD-9.99.90/evbarm
+ NetBSD-9.99.91 sh-20181212-20211017041449Z
+ userland-NetBSD-9.99.91/evbarm
 
 pkgsrc:
- curl-7.79.1nb1 digest-20211005 gdk-pixbuf2-2.42.6
- git-base-2.33.0nb1 glib2-2.68.4nb1 gnutls-3.7.2nb1
- gtk2+-2.24.33nb3 gtk3+-3.24.30nb1 harfbuzz-3.0.0
- libcups-2.3.3op2nb2 libimagequant-2.16.0 libxkbcommon-1.3.1
- nghttp2-1.45.1 pango-1.48.10 py39-expat-3.9.7
- python39-3.9.7 qt5-qtbase-5.15.2nb7
- ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7
- ruby27-nokogiri-1.12.5 wget-1.21.2nb1
+ fribidi-1.0.11 git-base-2.33.1 glib2-2.70.0
+ mozilla-rootcerts-1.0.20210916 py39-cElementTree-3.9.7
 
 RPI4 status:
 - boot via UEFI_VER=v1.31
@@ -87,7 +80,7 @@ In this image,pre-setted RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.90 evbarm-aarch64 202110061710Z arm64.img from nyftp.
+- NetBSD-current 9.99.91 evbarm-aarch64 202110170430Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
