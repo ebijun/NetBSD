@@ -7,7 +7,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2021-1/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202110061710Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202110170430Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img.gz
 #RPI=${BINARY}/gzimg/arm64mbr.img.gz
@@ -63,6 +63,8 @@ release:
 	#rndctl -S var/db/entropy-file #running on amd64
 	#cp var/db/entropy-file ${MNT_ROOT}/var/db/entropy-file
 	#ls -l ${MNT_ROOT}/var/db/entropy-file
+	# RPI4 symbolic link 
+	(cd ${MNT_ROOT}/libdata/firmware/if_bwfm/;ln -s brcmfmac43455-sdio.raspberrypi,4-model-b.txt "brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt")
 	umount ${MNT_ROOT}
 	vnconfig -u ${VND}
 
