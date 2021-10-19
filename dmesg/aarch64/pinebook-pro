@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.88 (GENERIC64) #0: Sun Aug 15 22:22:52 UTC 2021
+NetBSD 9.99.91 (GENERIC64) #0: Mon Oct 18 19:36:30 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3948 MB
 avail memory = 3811 MB
@@ -20,9 +20,9 @@ cpu0 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x0
 cpu0: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu0: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu0: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu0: L1 32KB/64B*256L*2W VIPT Instruction cache
-cpu0: L1 32KB/64B*128L*4W PIPT Data cache
-cpu0: L2 512KB/64B*512L*16W PIPT Unified cache
+cpu0: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu0: L1 32KB/64B 4-way (128 set) PIPT Data cache
+cpu0: L2 512KB/64B 16-way (512 set) PIPT Unified cache
 cpu0: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
 cpu0: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt0 at cpu0
@@ -69,12 +69,12 @@ syscon24 at simplebus0: System Controller Registers
 syscon25 at simplebus0: System Controller Registers
 syscon26 at simplebus0: System Controller Registers
 syscon27 at simplebus0: System Controller Registers
+rkcru0 at simplebus0: RK3399 CRU
+rkcru1 at simplebus0: RK3399 PMU CRU
 gtmr0 at simplebus0: Generic Timer
 gtmr0: interrupting on GICv3 irq 27
 armgtmr0 at gtmr0: Generic Timer (24000 kHz, virtual)
 timecounter: Timecounter "armgtmr0" frequency 24000000 Hz quality 500
-rkcru0 at simplebus0: RK3399 CRU
-rkcru1 at simplebus0: RK3399 PMU CRU
 rkiomux0 at simplebus0: RK3399 IOMUX control
 rkgpio0 at rkiomux0: GPIO (gpio0@ff720000)
 gpio0 at rkgpio0: 32 pins
@@ -145,12 +145,13 @@ rkusbphy3 at rkusb1: USB2 OTG port
 rkvop0 at simplebus0: RK3399 VOPL
 rkvop1 at simplebus0: RK3399 VOPB
 rkpcie0 at simplebus0: RK3399 PCIe
+rkpcie0: waiting 898 extra ms for reset (already waited 102)
 rkpcie0: MMIO (64-bit prefetchable): 0xfa000000+0x1e00000@0xfa000000
 rkpcie0: IO: 0xfbe00000+0x100000@0xfbe00000
 pci0 at rkpcie0 bus 0
 pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
 ppb0 at pci0 dev 0 function 0: vendor 1d87 product 0100 (rev. 0x00)
-ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x4 @ 5.0GT/s
+ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x4 @ 2.5GT/s
 pci1 at ppb0 bus 1
 pci1: i/o space, memory space enabled, rd/line, wr/inv ok
 nvme0 at pci1 dev 0 function 0: vendor 8086 product f1a6 (rev. 0x03)
@@ -263,75 +264,74 @@ timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu5: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu5: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu5: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu5: L1 48KB/64B*256L*3W PIPT Instruction cache
-cpu5: L1 32KB/64B*256L*2W PIPT Data cache
-cpu5: L2 1024KB/64B*1024L*16W PIPT Unified cache
+cpu5: L1 48KB/64B 3-way (256 set) PIPT Instruction cache
+cpu5: L1 32KB/64B 2-way (256 set) PIPT Data cache
+cpu5: L2 1024KB/64B 16-way (1024 set) PIPT Unified cache
 cpu5: revID=0x4, PMCv3, 4k table, 64k table, 16bit ASID
 cpu5: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu4: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu4: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu4: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu4: L1 48KB/64B*256L*3W PIPT Instruction cache
-cpu4: L1 32KB/64B*256L*2W PIPT Data cache
-cpu4: L2 1024KB/64B*1024L*16W PIPT Unified cache
+cpu4: L1 48KB/64B 3-way (256 set) PIPT Instruction cache
+cpu4: L1 32KB/64B 2-way (256 set) PIPT Data cache
+cpu4: L2 1024KB/64B 16-way (1024 set) PIPT Unified cache
 cpu4: revID=0x4, PMCv3, 4k table, 64k table, 16bit ASID
 cpu4: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu3: L1 32KB/64B*256L*2W VIPT Instruction cache
-cpu3: L1 32KB/64B*128L*4W PIPT Data cache
-cpu3: L2 512KB/64B*512L*16W PIPT Unified cache
-cpu3: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
-cpu3: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu1: L1 32KB/64B*256L*2W VIPT Instruction cache
-cpu1: L1 32KB/64B*128L*4W PIPT Data cache
-cpu1: L2 512KB/64B*512L*16W PIPT Unified cache
+cpu1: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu1: L1 32KB/64B 4-way (128 set) PIPT Data cache
+cpu1: L2 512KB/64B 16-way (512 set) PIPT Unified cache
 cpu1: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
 cpu1: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu2: L1 32KB/64B*256L*2W VIPT Instruction cache
-cpu2: L1 32KB/64B*128L*4W PIPT Data cache
-cpu2: L2 512KB/64B*512L*16W PIPT Unified cache
+cpu2: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu2: L1 32KB/64B 4-way (128 set) PIPT Data cache
+cpu2: L2 512KB/64B 16-way (512 set) PIPT Unified cache
 cpu2: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
 cpu2: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
+cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu3: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu3: L1 32KB/64B 4-way (128 set) PIPT Data cache
+cpu3: L2 512KB/64B 16-way (512 set) PIPT Unified cache
+cpu3: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
+cpu3: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt0: rate: 1416.000 MHz, 1125000 uV
+Lid: lid opened.
 cpufreqdt4: rate: 2000.000 MHz, 1300000 uV
 sdmmc1 at dwcmmc1
-Lid: lid opened.
-uhub0 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb4: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 uhub0: 1 port with 1 removable, self powered
-uhub1 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub1 at usb5: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub1: 1 port with 1 removable, self powered
-uhub2 at usb4: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+uhub2 at usb6: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 uhub2: 1 port with 1 removable, self powered
-uhub3 at usb5: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
+uhub3 at usb7: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub3: 1 port with 1 removable, self powered
-uhub4 at usb6: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+uhub4 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub4: 1 port with 1 removable, self powered
-uhub5 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub5 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub5: 1 port with 1 removable, self powered
+uhub6 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub6: 1 port with 1 removable, self powered
+uhub7 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub7: 1 port with 1 removable, self powered
+pic_establish_intr: pic gicv3 irq 23 already present
+armpmu1: autoconfiguration error: couldn't establish interrupts
+armpmu0: interrupting on GICv3 irq 23
 IPsec: Initialized Security Association Processing.
 aes: ARMv8.0-AES
 chacha: ARM NEON ChaCha
-adiantum: self-test passed
-aes_ccm: self-test passed
-blake2s: self-test passed
-uhub6 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
-uhub6: 1 port with 1 removable, self powered
 sdmmc2 at dwcmmc0
-uhub7 at usb7: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
-uhub7: 1 port with 1 removable, self powered
-armpmu0: interrupting on GICv3 irq 23
-armpmu1: interrupting on GICv3 irq 23
 sdhc0: autoconfiguration error: timeout waiting for mask 0x3 value 0 (state=0x1fff0a06)
 sdhc0: command or data phase inhibited
 sdhc0: autoconfiguration error: tuning did not complete, using fixed sampling clock
+ehci0: handing over low speed device on port 1 to companion controller
 ld0 at sdmmc0: <0x45:0x0100:DA4064:0x00:0x0b46130f:0x000>
 ld0: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
 ld0: 8-bit width, HS200, 4096 KB cache, 200.000 MHz
@@ -340,16 +340,15 @@ sdmmc2: SDIO function
 bwfm0 at sdmmc2 function 1
 (manufacturer 0x2d0, product 0xa9bf) at sdmmc2 function 2 not configured
 (manufacturer 0x2d0, product 0xa9bf, standard function interface code 0x2) at sdmmc2 function 3 not configured
-ehci0: handing over low speed device on port 1 to companion controller
-uhidev0 at uhub0 port 1 configuration 1 interface 0
-uhidev0: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x001e), rev 1.10/1.00, addr 2, iclass 3/1
-ukbd0 at uhidev0
-uhub8 at uhub5 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/85.36, addr 2
+uhub8 at uhub4 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/85.36, addr 2
 uhub8: single transaction translator
 uhub8: 4 ports with 4 removable, self powered
+uhidev0 at uhub7 port 1 configuration 1 interface 0
+uhidev0: Pine64 (0x258a) Pinebook Pro (0x001e), rev 1.10/0.01, addr 2, iclass 3/1
+ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub0 port 1 configuration 1 interface 1
-uhidev1: HAILUCK CO.,LTD (0x258a) USB KEYBOARD (0x001e), rev 1.10/1.00, addr 2, iclass 3/0
+uhidev1 at uhub7 port 1 configuration 1 interface 1
+uhidev1: Pine64 (0x258a) Pinebook Pro (0x001e), rev 1.10/0.01, addr 2, iclass 3/0
 uhidev1: 35 report ids
 ums0 at uhidev1 reportid 1: 3 buttons
 wsmouse0 at ums0 mux 0
@@ -368,19 +367,12 @@ run0: Ralink (0x0411) 802.11 n WLAN (0x01a2), rev 2.00/1.01, addr 3
 run0: MAC/BBP RT3070 (rev 0x0201), RF RT3020 (MIMO 1T1R), address 10:6f:3f:ea:e0:3c
 uvideo0 at uhub8 port 2 configuration 1 interface 0: Sonix Technology Co., Ltd. (0x0c45) USB Camera (0x6321), rev 2.00/0.00, addr 4
 video0 at uvideo0: Sonix Technology Co., Ltd. (0x0c45) USB Camera (0x6321), rev 2.00/0.00, addr 4
-cgd: self-test aes-xts-256
-cgd: self-test aes-xts-512
-cgd: self-test aes-cbc-128
-cgd: self-test aes-cbc-256
-cgd: self-test 3des-cbc-192
-cgd: self-test blowfish-cbc-448
-cgd: self-test aes-cbc-128 (encblkno8)
-cgd: self-tests passed
-WARNING: 3 errors while detecting hardware; check system log.
+WARNING: 4 errors while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
+/: replaying log to memory
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.88/modules
+kern.module.path=/stand/evbarm/9.99.91/modules
 bwfm0: Firmware file default:    brcmfmac43456-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43456-sdio.pine64,pinebook-pro.bin
 bwfm0: Found Firmware file: brcmfmac43456-sdio.bin
@@ -390,8 +382,11 @@ bwfm0: Found NVRAM file: brcmfmac43456-sdio.pine64,pinebook-pro.txt
 bwfm0: CHIPACTIVE
 bwfm0: wl0: Jun 16 2017 12:38:26 version 7.45.96.2 (66c4e21@sh-git) (r) FWID 01-1813af84
 bwfm0: address c0:84:7d:25:60:a8
+/: replaying log to disk
 wsdisplay0: screen 4 added (default, vt100 emulation)
-audio0(ausoc1): trigger_input failed: errno=5
-audio0(ausoc1): trigger_input failed: errno=5
-audio0(ausoc1): trigger_input failed: errno=5
-audio0(ausoc1): trigger_input failed: errno=5
+bwfm0: checksum error
+bwfm0: checksum error
+bwfm0: checksum error
+bwfm0: checksum error
+bwfm0: checksum error
+bwfm0: checksum error
