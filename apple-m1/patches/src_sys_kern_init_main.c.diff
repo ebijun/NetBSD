@@ -1,0 +1,18 @@
+--- src/sys/kern/init_main.c	2021/10/20 22:36:40	1.1
++++ src/sys/kern/init_main.c	2021/10/20 22:37:56
+@@ -805,7 +805,6 @@
+ 	 */
+ 	initclocks();
+ 
+-	cold = 0;	/* clocks are running, we're warm now! */
+ 	s = splsched();
+ 	curcpu()->ci_schedstate.spc_flags |= SPCF_RUNNING;
+ 	splx(s);
+@@ -826,6 +825,7 @@
+ #if defined(MULTIPROCESSOR)
+ 	cpu_boot_secondary_processors();
+ #endif
++	cold = 0;	/* clocks are running, we're warm now! */
+ 
+ 	/*
+ 	 * Bus scans can make it appear as if the system has paused, so
