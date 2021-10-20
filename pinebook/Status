@@ -5,14 +5,13 @@ To: port-arm%netbsd.org@localhost
 Subject: pinebook status update (${DATE})
 
 Topics:
-- /usr/X11R7/lib/modules/drivers/modesetting_drv.so issue
 
-X hungs with xfce4/mate desktop.icewm works.
-https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/X/Xorg.0.log
-
-depends on /usr/X11R7/lib/modules/drivers/modesetting_drv.so 
-NetBSD-9.99.86-evbarm-aarch64-202107140840Z failed.
-NetBSD-9.99.85-evbarm-aarch64-202106200030Z works well.
+- openssh 8.8
+- boost 1.77
+- firefox 92.0.1
+- mozilla-rootcerts-1.0.20210916
+- python 3.9.7
+- rust 1.54
 
 - graphical mixer for NetBSD audio.
 
@@ -40,7 +39,6 @@ Play:
   qmmp: can play wavpack file with cue. How can I show Cover Art?
    Setting->Output->OSS plugin(liboss.so)
 
-- touchpad: sometimes cursor far away.
 - audio0 input issue
   http://mail-index.netbsd.org/port-arm/2021/02/22/msg007185.html
   "Is audio input from the inbuilt microphone(s) working?  I get "read failed:
@@ -90,57 +88,113 @@ ToDo:
 System Updates:
 
 sysinfo:
- NetBSD-9.99.88 sh-20181212-20210815222252Z
- userland-NetBSD-9.99.88/evbarm
+ bind-9.16.20 bozohttpd-20210824 libc-12.219 libssh-41.0
+ NetBSD-9.99.91 openssh-8.8 opensshd-8.8
+ sh-20181212-202110180815Z tzdata-2021b-partial
+ userland-NetBSD-9.99.91/evbarm
 
 pkgsrc:
- ImageMagick-7.1.0.4nb1 ImageMagick6-6.9.11.7nb10
- SDL-1.2.15nb35 SDL2-2.0.16 adwaita-icon-theme-40.1.1
- alsa-lib-1.2.5.1nb1 ap24-php74-7.4.22nb6 atril-1.24.1
- audacious-plugins-4.1nb5 automake-1.16.4 bash-5.1.8nb3
- blas-3.9.1 caja-1.24.1 caja-extensions-1.24.1 cblas-3.9.1nb1
- cmake-3.21.1 cmark-0.30.1 cmus-2.9.1nb3 curl-7.78.0
- dav1d-0.9.1 dbus-python-common-1.2.18 emacs26-26.3nb15
- enchant2-2.3.1 engrampa-1.24.2 eom-1.24.2
- ffmpeg2-2.8.17nb11 ffmpeg3-3.4.8nb12 ffmpeg4-4.4nb7
- firefox-91.0 firefox-l10n-91.0 fltk-1.3.7
- fluidsynth-2.2.2nb1 go-1.16.7 go-bin-1.14.2nb4
- go115-1.15.15 go116-1.16.7 gtk3+-3.24.30 help2man-1.48.4
- imlib2-1.7.2 inkscape-1.1nb1 jasper-2.0.33
- kdelibs4-4.14.38nb22 koruri-ttf-20210720
- lapack-3.9.1nb1 lapacke-3.9.1nb2 libXft-2.3.4
- libcares-1.17.2 libidn-1.38 libidn2-2.3.2
- libmatekbd-1.24.1 libmateweather-1.24.1 libmikmod-3.3.11.1nb7
- libreoffice-7.1.5.2 librsvg-2.50.7 libuv-1.42.0
- libxml2-2.9.12nb1 lz4-1.9.3nb1 mate-1.24.1
- mate-applets-1.24.1 mate-backgrounds-1.24.2
- mate-common-1.24.2 mate-control-center-1.24.2
- mate-desktop-1.24.1 mate-media-1.24.1 mate-menus-1.24.1
- mate-notification-daemon-1.24.2 mate-power-manager-1.24.3
- mate-sensors-applet-1.24.1 mate-settings-daemon-1.24.2
- mate-themes-3.22.22 minitube-3.9 mkvtoolnix-60.0.0
- mozo-1.24.1 mpv-0.33.1nb4 mysql-client-5.7.35
- nghttp2-1.44.0 nodejs-14.17.4 nss-3.69 openal-soft-1.21.1nb1
- osabi-NetBSD-9.99.88 pango-1.48.7 phonon-4.10.3nb8
- php-7.4.22 php74-curl-7.4.22nb10 php74-fpm-7.4.22nb6
- php74-gd-7.4.22nb1 php74-iconv-7.4.22 php74-intl-7.4.22nb6
- php74-json-7.4.22 php74-mbstring-7.4.22 php74-pdo-7.4.22
- php74-pdo_sqlite-7.4.22nb6 php74-posix-7.4.22 php74-sqlite3-7.4.22nb6
- php74-zip-7.4.22nb5 php74-zlib-7.4.22nb1 pkgconf-1.8.0
- pkgin-21.7.0 poppler-21.07.0 poppler-cpp-21.07.0
- poppler-glib-21.07.0 poppler-includes-21.07.0 pulseaudio-15.0
- py27-gobject-2.28.7nb3 py38-charset-normalizer-2.0.3 py38-cython-0.29.24
- py38-dbus-1.2.18 py38-iso8601-0.1.16 py38-numpy-1.20.3nb1
- py38-requests-2.26.0 py38-scour-0.38.2 py38-serial-3.5
- py38-setuptools-57.4.0 py38-sphinxcontrib-serializinghtml-1.1.5
- qmmp-1.5.1 qr-code-generator-1.7.0 qt5-qtmultimedia-5.15.2nb5
- qt5-qttools-5.15.2nb5 rclone-1.55.0nb4 re2c-2.2 rhash-1.4.2
- seamonkey-2.53.6nb5 talloc-2.3.3 u-boot-pinebook-pro-2021.07
- upower-0.99.12 w3m-0.5.3.0.20210102nb2 xorg-cf-files-1.0.7
+ ImageMagick-7.1.0.8nb2 ImageMagick6-6.9.11.7nb11 SDL2-2.0.16nb1
+ akonadi-1.13.0nb40 ap24-php74-7.4.24nb6 apache-2.4.51
+ asciidoc-9.1.1 at-spi2-core-2.40.3 atril-1.24.1nb1
+ audacious-plugins-4.1nb8 babl-0.1.88 bison-3.8.2
+ boost-build-1.77.0 boost-docs-1.77.0 boost-headers-1.77.0
+ boost-jam-1.77.0 boost-libs-1.77.0 cbindgen-0.20.0
+ cmake-3.21.3nb2 cmark-0.30.2 cmus-2.9.1nb5
+ coreutils-9.0 cross-aarch64-none-elf-binutils-2.31.1nb1
+ cups-base-2.3.3op2nb2 curl-7.79.1nb1 dav1d-0.9.2
+ dconf-0.36.0nb6 deforaos-pdfviewer-0.1.0nb12 digest-20211005
+ ebook-tools-0.2.2nb13 emacs26-26.3nb16 exempi-2.5.2nb3
+ farstream-0.2.9nb8 ffmpeg2-2.8.17nb12 ffmpeg3-3.4.8nb14
+ ffmpeg4-4.4nb10 ffmpegthumbnailer-2.2.2nb2 fftw-3.3.10
+ findutils-4.8.0 firefox-92.0.1nb1 firefox-l10n-92.0.1
+ firefox52-52.9.0nb40 fluidsynth-2.2.3 fontconfig-2.13.1nb5
+ fribidi-1.0.11 gcr-3.38.0nb3 gd-2.3.3nb1 gdbm-1.21 gdbus-codegen-2.70.0
+ gdk-pixbuf2-2.42.6 gdk-pixbuf2-xlib-2.40.2 gegl-0.4.32
+ gexiv2-0.12.2nb3 ghostscript-9.05nb26 ghostscript-agpl-9.55.0
+ gimp-2.10.28nb1 git-base-2.33.1 glib-networking-2.64.3nb4
+ glib2-2.70.0 glib2-tools-2.70.0 gnupg2-2.2.32 gnutls-3.7.2nb1
+ go-1.17.2 go114-1.14.14 go116-1.16.9 go117-1.17.2 graphviz-2.44.1nb17
+ gspell-1.8.3nb7 gssdp-1.0.3nb16 gtk2+-2.24.33nb3 gtk3+-3.24.30nb1
+ gupnp-1.0.3nb12 harfbuzz-3.0.0 harfbuzz-icu-3.0.0 help2man-1.48.5
+ ibus-1.5.25nb1 imath-3.1.3 imlib2-1.7.3 itstool-2.0.7
+ kdelibs4-4.14.38nb23 kdepimlibs4-4.14.10nb32 kfilemetadata-4.14.3nb60
+ libabw-0.1.3nb9 libaom-3.1.3 libass-0.15.2 libatomic_ops-7.6.12
+ libbaloo4-4.14.3nb27 libcdr-0.1.7nb3 libclucene-2.3.3.4nb20
+ libcmis-0.5.2nb14 libcups-2.3.3op2nb2 libdazzle-3.38.0nb2
+ libdbusmenu-glib-12.10.2nb13 libdbusmenu-gtk3-12.10.2nb22
+ libe-book-0.1.3nb19 libepubgen-0.1.1nb4 libetonyek-0.1.10nb1
+ libexif-0.6.23 libfreehand-0.1.2nb10 libgcrypt-1.9.4
+ libgweather-40.0nb3 libhandy-0.0.13nb7 libheif-1.12.0nb1
+ libimagequant-2.16.0 libixion-0.16.1nb2 libkactivities4-4.13.3nb24
+ libmspub-0.1.4nb18 libmwaw-0.3.18nb1 libodfgen-0.1.7nb4
+ libpagemaker-0.0.4nb10 libpeas-1.26.0nb2 libpurple-2.14.4nb2
+ libqxp-0.0.2nb12 libraw-0.20.2 libreoffice-7.2.1.2
+ librevenge-0.0.4nb15 libsamplerate-0.2.2 libsecret-0.20.4nb2
+ libslang2-2.2.4nb4 libsndfile-1.0.31nb2 libstaroffice-0.0.7nb4
+ libvisio-0.1.7nb12 libwebp-1.2.1 libwpd-0.10.3nb4
+ libwpg-0.3.3nb6 libwps-0.4.12nb3 libxkbcommon-1.3.1
+ libzip-1.8.0nb1 libzmf-0.0.2nb20 mdds-1.6.0nb3
+ mdds1.2-1.3.1nb10 meson-0.59.2 mkvtoolnix-62.0.0
+ mozilla-rootcerts-1.0.20210916 mozjs60-60.8.0nb8
+ mozjs78-78.15.0 mpg123-1.29.1 mpv-0.33.1nb6
+ mupdf-1.18.0nb3 mysql-client-5.7.35nb1 ncurses-6.2nb4
+ neon-0.32.1 nghttp2-1.45.1 nginx-1.20.1nb1
+ nodejs-14.18.0 nono-0.2.2 nss-3.71 openal-soft-1.21.1nb2
+ openexr-3.1.1 openjdk8-1.8.292nb2 orcus-0.16.1nb2
+ osabi-NetBSD-9.99.91 p11-kit-0.24.0nb3 p5-Business-ISBN-3.006
+ p5-Business-ISBN-Data-20210112.006 p5-IO-Socket-SSL-2.072
+ p5-Net-DNS-1.32 p5-Test-NoWarnings-1.06 pango-1.48.10
+ pcre2-10.38 perl-5.34.0nb3 php-7.4.24 php74-curl-7.4.24nb11
+ php74-fpm-7.4.24nb7 php74-gd-7.4.24nb1 php74-iconv-7.4.24
+ php74-intl-7.4.24nb6 php74-json-7.4.24 php74-mbstring-7.4.24
+ php74-pdo-7.4.24 php74-pdo_sqlite-7.4.24nb6 php74-posix-7.4.24
+ php74-sqlite3-7.4.24nb6 php74-zip-7.4.24nb6 php74-zlib-7.4.24nb1
+ poppler-21.09.0 poppler-cpp-21.09.0 poppler-glib-21.09.0
+ poppler-includes-21.09.0 portaudio-190600.20161030nb9
+ postgresql95-client-9.5.25nb1 protobuf-3.18.1 py27-libxml2-2.9.12nb1
+ py38-expat-3.8.12 py38-pygments-2.10.0 py38-setuptools-57.5.0
+ py39-OpenSSL-20.0.1 py39-Socks-1.7.1 py39-alabaster-0.7.12
+ py39-anytree-2.8.0 py39-argparse-1.4.0 py39-asn1crypto-1.4.0
+ py39-atomicwrites-1.4.0 py39-attrs-19.3.0 py39-babel-2.9.1
+ py39-cElementTree-3.9.7 py39-cairo-1.20.1 py39-certifi-2021.10.8
+ py39-cffi-1.14.6 py39-chardet-4.0.0 py39-charset-normalizer-2.0.7
+ py39-cparser-2.20 py39-cryptodome-3.11.0 py39-cryptography-3.3.2
+ py39-cython-0.29.24 py39-dbus-1.2.18 py39-dns-1.16.0nb1
+ py39-docutils-0.16nb1 py39-ecdsa-0.17.0 py39-expat-3.9.7
+ py39-gobject3-3.36.1nb1
+ py39-gyp-0.1pre20200512.caa60026e223fc501e8b337fd5086ece4028b1c6
+ py39-idna-2.10 py39-imagesize-1.2.0 py39-importlib-metadata-2.0.0
+ py39-iso8601-0.1.16 py39-jinja2-2.11.3 py39-libxml2-2.9.12nb1
+ py39-linecache2-1.0.0nb1 py39-lxml-4.6.3nb1 py39-mako-1.1.4
+ py39-markdown-3.1.1 py39-markupsafe-1.1.1 py39-more-itertools-8.10.0
+ py39-packaging-20.9 py39-pbr-5.4.5 py39-pip-20.3.3
+ py39-pluggy-0.13.1nb1 py39-py-1.10.0 py39-pygments-2.10.0
+ py39-pyparsing-2.4.7 py39-pytz-2021.3 py39-requests-2.26.0
+ py39-roman-3.3 py39-serial-3.5 py39-setuptools-57.5.0
+ py39-setuptools_scm-5.0.2 py39-six-1.16.0 py39-snowballstemmer-2.1.0
+ py39-sphinx-3.5.4 py39-sphinxcontrib-applehelp-1.0.2
+ py39-sphinxcontrib-devhelp-1.0.2 py39-sphinxcontrib-htmlhelp-1.0.3
+ py39-sphinxcontrib-jsmath-1.0.1 py39-sphinxcontrib-qthelp-1.0.3
+ py39-sphinxcontrib-serializinghtml-1.1.5 py39-sphinxcontrib-websupport-1.1.2
+ py39-sqlite3-3.9.7nb19 py39-toml-0.10.2 py39-traceback2-1.4.0
+ py39-unittest2-1.1.0 py39-urllib3-1.26.7 py39-wcwidth-0.2.5
+ py39-zipp-3.4.1 python27-2.7.18nb4 python37-3.7.12
+ python38-3.8.12 python39-3.9.7 qalculate-3.5.0nb11
+ qmmp-1.5.1nb3 qt4-libs-4.8.7nb27 qt5-qtbase-5.15.2nb7
+ raptor2-2.0.15nb22 rasqal-0.9.33nb23 rclone-1.56.0nb2
+ redland-1.0.17nb30 rhash-1.4.2nb2 rsync-3.2.3nb1
+ rust-1.54.0nb1 samba-4.13.11 seamonkey-2.53.9nb1
+ seamonkey-l10n-2.53.9 source-highlight-3.1.9nb3
+ spidermonkey52-52.7.4nb15 sqlite3-3.36.0nb1 strigi-0.7.8nb43
+ tdb-1.4.5 telepathy-glib-0.24.1nb21 tex-luatexja-20210607.0
+ tex-tabulary-0.10 upower-0.99.13 vala-0.54.1 vorbis-tools-1.4.2nb2
+ vte3-0.60.3nb12 wget-1.21.2nb1 xfce4-mixer-4.11.0nb20
+ xfce4-tumbler-0.3.0nb12 xterm-369
 
 System Updates:
-https://github.com/ebijun/NetBSD/commit/aeb9c0272203be2d79967cfdcafd17182202101b
-https://github.com/ebijun/NetBSD/commit/acbed05e8c4c468143fcc49bff489e1a56de15b5
+
+https://github.com/ebijun/NetBSD/commit/8a7acba2c0ed32e9847fd0591383686043fae663https://github.com/ebijun/NetBSD/commit/71a54e0604827cb8ceefb638401f711d80578167
 
 Tips:
 - System Clocks
