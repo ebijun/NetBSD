@@ -20,6 +20,13 @@ NetBSD 9.99.91 (GENERIC64) #0: Tue Oct 12 00:21:34 UTC 2021
 sys/kern/kern_sleepq.c line 227 on NetBSD9.99.90 on apple m1.
    https://twitter.com/ebijun/status/1446735443987341314
 
+1. Arm MP startup issues -> works well
+http://mail-index.netbsd.org/port-arm/2021/10/20/msg007456.html
+http://mail-index.netbsd.org/port-arm/2021/10/21/msg007457.html
+
+2. Platform specific fix for ARM MP startup issue -> testing
+http://mail-index.netbsd.org/port-arm/2021/10/21/msg007460.html
+
 - libreoffice build failed.
 [GAL] backgrounds
 [1]   Abort trap (core dumped) (LD_LIBRARY_PATH=\${LD_LIBRARY_PATH:+\${LD_LIBRA...
@@ -37,6 +44,9 @@ Filesystem   1G-blocks      Used     Avail %Cap Mounted on
 
 ToDo:
 - X
+ startx -- -depth 30
+ http://mail-index.netbsd.org/port-arm/2021/10/21/msg007458.html
+
 - audio
 - Wireless LAN
 
