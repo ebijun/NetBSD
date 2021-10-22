@@ -1,0 +1,22 @@
+http://mail-index.netbsd.org/port-arm/2021/10/21/msg007460.html
+--- pic.c	2021/10/21 23:08:37	1.1
++++ pic.c	2021/10/21 23:12:02
+@@ -720,6 +720,9 @@
+ {
+ 	struct intrsource *is;
+ 	int off, nipl;
++	struct lwp *l = curlwp;
++	/* During init, we can still be on idle thread AFTER cold set to 0 */
++	int idle = (l->l_stat == LSIDL);
+ 
+ 	if (pic->pic_sources[irq]) {
+ 		printf("pic_establish_intr: pic %s irq %d already present\n",
+@@ -790,7 +793,7 @@
+ 	(*pic->pic_ops->pic_establish_irq)(pic, is);
+ 
+ unblock:
+-	if (cold || !is->is_mpsafe) {
++	if (cold || idle || !is->is_mpsafe) {
+ 		(*pic->pic_ops->pic_unblock_irqs)(pic, is->is_irq & ~0x1f,
+ 		    __BIT(is->is_irq & 0x1f));
+ 	} else {
