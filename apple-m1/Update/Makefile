@@ -75,4 +75,4 @@ brcm-firmware:
 update-info:
 	sys_info |sort > sysinfo
 	pkg_info |sort > pkginfo
-	dmesg -t > ../dmesg/aarch64/pinebook-pro
+	dmesg -t > ../../dmesg/aarch64/Apple_Mac_mini_M1_2020
