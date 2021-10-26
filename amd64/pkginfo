@@ -108,7 +108,7 @@ ffmpeg4-4.4nb10     Decoding, encoding and streaming software (v4.x)
 ffmpegthumbnailer-2.2.2nb2 Lightweight video thumbnailer that can be used by file managers
 fftw-3.3.10         Fast C routines to compute DFTs (single and double precision)
 filezilla-3.55.1nb1 FTP, FTPS, and SFTP client with intuitive GUI
-findutils-4.6.0nb2  The GNU find, locate, updatedb, and xargs utilities
+findutils-4.8.0     The GNU find, locate, updatedb, and xargs utilities
 firefox-91.0.2nb3   Web browser with support for extensions (version 91)
 firefox-l10n-91.0.2 Language packs for www/firefox
 flac-1.3.3          Free lossless audio codec
@@ -116,7 +116,7 @@ fltk-1.3.7          Fast Light Tool Kit for graphical user interfaces
 fluidsynth-2.2.3    Software synthesizer based on SoundFont2
 fossil-2.16         High-reliability, distributed software configuration management
 frei0r-1.7.0nb1     Collection of free and portable video plugins
-fribidi-1.0.10      Free Implementation of the Unicode Bidirectional Algorithm
+fribidi-1.0.11      Free Implementation of the Unicode Bidirectional Algorithm
 g95-0.93nb14        Fortran 95 compiler from g95.org
 game-music-emu-0.6.3 Video game music file emulation/playback library
 gawk-5.1.0          GNU awk
@@ -142,7 +142,7 @@ ghostscript-agpl-9.55.0 Postscript interpreter
 ghostscript-fonts-8.11nb3 Postscript fonts for Aladdin Ghostscript
 giflib-5.2.1nb4     GIF image format library
 gimp-2.10.24nb9     The GNU image manipulation program
-git-base-2.33.0nb1  GIT Tree History Storage Tool (base package)
+git-base-2.33.1     GIT Tree History Storage Tool (base package)
 gle-3.1.0nb4        GL subroutines for drawing tubing and extrusions
 glew-2.2.0nb2       OpenGL Extension Wrangler Library
 glib-networking-2.64.3nb4 Network-related giomodules for glib
@@ -157,7 +157,7 @@ gnome-doc-utils-0.20.10nb9 Documentation utilities for the GNOME project
 gnome-icon-theme-3.12.0nb7 Theme consisting of a set of icons for GNOME
 gnome-keyring-3.36.0 GNOME password and secret manager
 gnome-video-effects-0.5.0nb1 Collection of GStreamer effects for GNOME
-gnupg2-2.2.31       GnuPG with OpenPGP and S/MIME capabilities
+gnupg2-2.2.32       GnuPG with OpenPGP and S/MIME capabilities
 gnutls-3.7.2nb1     Transport Layer Security library
 go116-1.16.9        The Go programming language
 gobject-introspection-1.68.0 GObject Introspection
@@ -171,6 +171,7 @@ grilo-plugins-0.3.10nb9 Plugins for grilo media browser
 gsed-4.8nb1         GNU implementation of sed, the POSIX stream editor
 gsettings-desktop-schemas-40.0 Collection of GSettings schemas for the GNOME desktop
 gsl-2.7             The GNU Scientific Library
+gsm-1.0.19          Audio converter and library for converting u-law to gsm encoding
 gsmartcontrol-1.1.3 Hard disk drive health inspection tool
 gspell-1.8.3nb7     Spell checking API for GTK+ applications
 gssdp-1.0.3nb16     Simple Service Discovery Protocol library and device sniffer (1.0 branch)
@@ -228,6 +229,7 @@ jack-1.9.19nb3      Low-latency audio server
 jansson-2.13.1      C library for encoding, decoding and manipulating JSON data
 jbig2dec-0.19nb1    JBIG2 decoder library
 jbigkit-2.1nb1      JBIG-KIT lossless image compression library
+jemalloc-5.2.1nb3   General purpose malloc(3) implementation
 jpeg-9d             IJG's jpeg compression utilities
 jq-1.6              Command-line JSON processor
 json-c-0.15         JSON library in C
@@ -309,6 +311,7 @@ libidn-1.38         Internationalized Domain Names command line tool
 libidn2-2.3.2       Convert internationalized domain names to/from ASCII Encoding
 libimagequant-2.16.0 High-quality conversion of RGBA images to 8-bit indexed-color
 libindicator-12.10.1nb12 GTK+3 symbols and convience functions for indicators
+libiscsi-1.19.0     iscsi client library and utilities
 libixion-0.16.1nb2  General purpose formula parser & interpreter
 libkate-0.4.1nb20   Overlay codec, originally designed for karaoke and text
 libksba-1.4.0       X.509 library
@@ -448,12 +451,12 @@ mktexlsr-2020       Create or rebuild ls-R
 mlterm-3.9.1nb1     Multilingual terminal emulator
 mm-common-1.0.3     Provides build infrastructure utilities for GNOME C++ libraries
 mng-2.0.3           Multiple-image Network Graphics (MNG) reference library
-mozilla-rootcerts-1.0.20201204 Root CA certificates from the Mozilla Project
+mozilla-rootcerts-1.0.20210916 Root CA certificates from the Mozilla Project
 mozjs78-78.13.0     SpiderMonkey JavaScript library (78.x branch)
 mozo-1.24.1         Menu editor for MATE
 mp4v2-4.1.6         Library for reading and modifying mp4 files
 mpfr-4.1.0          GMP-based library for multiple-precision floating-point computations
-mpg123-1.29.0       MPEG layer 1, 2, and 3 audio player
+mpg123-1.29.1       MPEG layer 1, 2, and 3 audio player
 mpv-0.33.1nb3       Video player based on MPlayer and mplayer2
 musepack-0rc475nb1  MPEG-Plus and MusePack decoder (V8)
 mypaint-brushes-2.0.2nb1 Default MyPaint brushes
@@ -506,7 +509,7 @@ p5-Importer-0.026nb1 Perl5 module for exporting symbols
 p5-MailTools-2.21nb2 Perl5 modules related to mail applications
 p5-Module-Build-0.42310nb2 Build and install Perl modules
 p5-Module-Pluggable-5.2nb6 Automatically adds the ability to have plugins to modules
-p5-Mojolicious-9.17nb1 Perl web framework: The Web In A Box!
+p5-Mojolicious-9.21 Perl web framework: The Web In A Box!
 p5-Mozilla-CA-20200520nb1 Mozilla's CA cert bundle for Perl
 p5-MusicBrainz-DiscID-0.06nb2 Perl interface for the MusicBrainz libdiscid library
 p5-Net-3.13nb1      Perl5 modules to access and use network protocols
@@ -527,7 +530,7 @@ p5-Sub-Info-0.002nb5 Tool to inspect subroutines
 p5-Term-Table-0.015nb2 Format a header and rows into a table
 p5-Test-Needs-0.002009 Skip tests when modules not available
 p5-Test-Pod-1.52nb4 Perl5 module to check for POD errors in files
-p5-Test2-Suite-0.000140 Perl5 module with a rich set of tools for testing
+p5-Test2-Suite-0.000141 Perl5 module with a rich set of tools for testing
 p5-TimeDate-2.33nb1 Perl5 TimeDate distribution
 p5-URI-5.09nb1      Perl5 Uniform Resource Identifiers class (URI, RFC 2396)
 p5-WebService-MusicBrainz-1.0.5nb2 Perl 5 module providing an interface to MusicBrainz
@@ -548,7 +551,7 @@ password-store-1.7.3nb4 Standard UNIX password manager
 pccts-1.33.33nb1    Purdue Compiler Construction Tool Set
 pciids-20200222     Repository of PCI IDs (pci.ids database)
 pcre-8.45           Perl Compatible Regular Expressions library
-pcre2-10.37         Perl Compatible Regular Expressions library (major version 2)
+pcre2-10.38         Perl Compatible Regular Expressions library (major version 2)
 perl-5.34.0nb3      Practical Extraction and Report Language
 pinentry-1.1.1      Applications for entering PINs or Passphrases
 pkg_chk-2.0.11      Check installed package versions against pkgsrc
@@ -556,7 +559,7 @@ pkg_install-20210410 Package management and administration tools for pkgsrc
 pkgclean-20200119   Quickly clean up all work directories in pkgsrc
 pkgconf-1.8.0       API-driven pkg-config replacement
 pkgdiff-1.9nb2      Tools to create, maintain, and send back patches for pkgsrc
-pkgin-21.7.0        Apt / yum like tool for managing pkgsrc binary packages
+pkgin-21.10.0       Apt / yum like tool for managing pkgsrc binary packages
 pluma-1.24.2nb3     Small and lightweight UTF-8 text editor for MATE
 png-1.6.37nb1       Library for manipulating PNG images
 podofo-0.9.6nb2     Library to work with the PDF file format
@@ -669,6 +672,7 @@ python27-2.7.18nb4  Interpreted, interactive, object-oriented programming langua
 python37-3.7.12     Interpreted, interactive, object-oriented programming language
 python38-3.8.12     Interpreted, interactive, object-oriented programming language
 python39-3.9.7      Interpreted, interactive, object-oriented programming language
+qemu-6.1.0nb4       CPU emulator using dynamic translation
 qmmp-1.5.1nb3       Audio player similar to Winamp/XMMS using Qt
 qpdf-10.3.2nb1      Structural, content-preserving transformations on PDF files
 qr-code-generator-1.7.0 High-quality QR Code generator in C/C++
@@ -745,14 +749,17 @@ serf-1.3.9nb1       High-performance asynchronous HTTP client library
 shared-mime-info-1.10nb4 Core database of common types
 shotwell-0.30.8nb13 Photo organizer for the GNOME desktop
 smartmontools-7.2   Control and monitor storage systems using SMART
+snappy-1.1.9        General purpose data compression library
 sord-0.16.8         Lightweight C library for storing RDF data in memory
 soundtouch-2.1.2    Library for changing the tempo, pitch, and playback rates of audio
+sox-14.4.2nb3       SOund eXchange - universal sound sample translator
 spdlog-1.8.5        Fast C++ logging library
 speex-1.2.0nb1      Open-source, patent-free voice codec
 speexdsp-1.2.0      Open-source, patent-free voice codec DSP library
+spice-server-0.14.3 Simple Protocol for Independent Computing Environments
 spotify-player-0.1.1 Command driven spotify player
 spotify-qt-3.7      Lightweight Spotify client using Qt
-sqlite3-3.36.0      SQL Database Engine in a C Library
+sqlite3-3.36.0nb1   SQL Database Engine in a C Library
 sratom-0.6.8        Library for serialising LV2 atoms to/from RDF
 startup-notification-0.12nb3 X11 application startup notification library
 strawberry-0.9.3nb3 Music player and music collection organizer (based on Clementine)
