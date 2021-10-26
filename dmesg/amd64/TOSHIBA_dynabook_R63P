@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.91 (GENERIC) #0: Tue Oct 12 19:57:53 UTC 2021
+NetBSD 9.99.92 (GENERIC) #0: Mon Oct 25 20:32:38 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16295 MB
 avail memory = 15764 MB
@@ -54,11 +54,11 @@ acpi0 at mainbus0: Intel ACPICA 20210604
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFD6E48A020348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFF86618D820348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFD6E188A89008 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFF865E8C289008 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFD6E188A28408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFF865E8C228408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -131,7 +131,7 @@ wm0: interrupting at msi2 vec 0
 wm0: PCI-Express bus
 wm0: 2048 words FLASH, version 0.2.4
 wm0: Ethernet address b8:6b:23:f1:f2:c8
-wm0: 0x6a4480<FLASH,IOH_VALID,PCIE,ASF_FIRM,AMT,WOL,EEE>
+wm0: 0x6a4080<FLASH,PCIE,ASF_FIRM,AMT,WOL,EEE>
 ihphy0 at wm0 phy 2: i217 10/100/1000 media interface, rev. 5
 ihphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
 hdaudio1 at pci0 dev 27 function 0: HD Audio Controller
@@ -222,9 +222,6 @@ acpiacad0: AC adapter online.
 IPsec: Initialized Security Association Processing.
 aes: Intel AES-NI
 chacha: x86 SSE2 ChaCha
-adiantum: self-test passed
-aes_ccm: self-test passed
-blake2s: self-test passed
 uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
 tpm0: read 8 bytes, expected 10tpm0: deactivating entropy source
@@ -241,24 +238,16 @@ wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (
 uhub3 at uhub1 port 6: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.10/88.31, addr 1
 uhub3: single transaction translator
 uhub3: 4 ports with 0 removable, self powered
-uvideo0 at uhub1 port 7 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
 uhub4 at uhub2 port 1: vendor 8087 (0x8087) product 8001 (0x8001), class 9/0, rev 2.00/0.03, addr 2
 uhub4: single transaction translator
-video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
 uhub4: 8 ports with 8 removable, self powered
-cgd: self-test aes-xts-256
-cgd: self-test aes-xts-512
-cgd: self-test aes-cbc-128
-cgd: self-test aes-cbc-256
-cgd: self-test 3des-cbc-192
-cgd: self-test blowfish-cbc-448
-cgd: self-test aes-cbc-128 (encblkno8)
-cgd: self-tests passed
+uvideo0 at uhub1 port 7 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
+video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
 WARNING: 2 errors while detecting hardware; check system log.
 boot device: wd0
 root on dk0 dumps on dk1
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.91/modules
+kern.module.path=/stand/amd64/9.99.92/modules
 kern info: [drm] Memory usable by graphics device = 4096M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
