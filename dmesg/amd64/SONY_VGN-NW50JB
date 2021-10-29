@@ -4,12 +4,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.90 (GENERIC) #0: Wed Oct  6 17:04:49 UTC 2021
-	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+NetBSD 9.99.92 (GENERIC) #13: Fri Oct 29 10:59:44 JST 2021
+	jun@amir63p.soum.co.jp:/usr/obj.amd64/sys/arch/amd64/compile/GENERIC
 total memory = 8031 MB
 avail memory = 7755 MB
-entropy: entering seed from bootloader with 256 bits of entropy
-entropy: ready
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
@@ -35,17 +33,17 @@ cpu0: node 0, package 0, core 0, smt 0
 cpu1 at mainbus0 apid 1
 cpu1: Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz, id 0x1067a
 cpu1: node 0, package 0, core 1, smt 0
-acpi0 at mainbus0: Intel ACPICA 20210604
+acpi0 at mainbus0: Intel ACPICA 20210930
 acpi0: X/RSDT: OemId <  Sony,    VAIO,20090522>, AslId <MSFT,00010013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF82EFFB9AA0C8 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0xFFFFD1348D9A90C8 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF82EFFBA1A808 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0xFFFFD1348DAD5008 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF82EFFB9D0B08 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFFD1348D9D0B08 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF82EFFBAD9708 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFFD1348DAD9648 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -56,11 +54,11 @@ attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
 pckbc1 at acpi0 (PS2K, PNP0303) (kbd port): io 0x60,0x64 irq 1
 pckbc2 at acpi0 (PS2M, SNY9001) (aux port): irq 12
 sony0 at acpi0 (SNC, SNY5001): Sony Miscellaneous Controller
-ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20210604/nsarguments-277)
-ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20210604/nsarguments-277)
-ACPI Error: Aborting method \PHS0 due to previous error (AE_AML_LOOP_TIMEOUT) (20210604/psparse-580)
-ACPI Error: Aborting method \PHS due to previous error (AE_AML_LOOP_TIMEOUT) (20210604/psparse-580)
-ACPI Error: Aborting method \_SB.PCI0.LPCB.SNC.GDDI due to previous error (AE_AML_LOOP_TIMEOUT) (20210604/psparse-580)
+ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20210930/nsarguments-277)
+ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20210930/nsarguments-277)
+ACPI Error: Aborting method \PHS0 due to previous error (AE_AML_LOOP_TIMEOUT) (20210930/psparse-580)
+ACPI Error: Aborting method \PHS due to previous error (AE_AML_LOOP_TIMEOUT) (20210930/psparse-580)
+ACPI Error: Aborting method \_SB.PCI0.LPCB.SNC.GDDI due to previous error (AE_AML_LOOP_TIMEOUT) (20210930/psparse-580)
 acpivga0 at acpi0 (GFX0): ACPI Display Adapter
 acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
 acpiout1 at acpivga0 (DD02, 0x0410): ACPI Display Output Device
@@ -191,12 +189,6 @@ ichsmb0 at pci0 dev 31 function 3: Intel 82801I SMBus Controller (rev. 0x03)
 ichsmb0: interrupting at ioapic0 pin 19
 iic0 at ichsmb0: I2C bus
 isa0 at ichlpcib0
-pcppi0 at isa0 port 0x61
-spkr1 at pcppi0: PC Speaker
-wsbell at spkr1 not configured
-midi0 at pcppi0: PC speaker
-sysbeep0 at pcppi0
-attimer1: attached to pcppi0
 acpicpu0 at cpu0: ACPI CPU
 acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
 acpicpu0: C2: FFH, lat  57 us, pow   100 mW
@@ -223,9 +215,6 @@ IPsec: Initialized Security Association Processing.
 acpiacad0: AC adapter online.
 aes: Intel SSSE3 vpaes
 chacha: x86 SSE2 ChaCha
-adiantum: self-test passed
-aes_ccm: self-test passed
-blake2s: self-test passed
 uhub0 at usb0: NetBSD (0x0000) UHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) UHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
@@ -244,6 +233,9 @@ uhub7 at usb7: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00,
 uhub7: 6 ports with 6 removable, self powered
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 ahcisata0 port 1: device present, speed: 1.5Gb/s
+uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
+video0 at uvideo0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
+ehci0: handing over low speed device on port 3 to uhci1
 wd0 at atabus0 drive 0
 wd0: <TOSHIBA MK5055GSX>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
@@ -254,26 +246,72 @@ atapibus0 at atabus1: 1 targets
 cd0 at atapibus0 drive 0: <HL-DT-ST DVDRAM GT20N, 905HN033373, CS07> cdrom removable
 cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
 cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
-uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
-video0 at uvideo0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
-ehci0: handing over low speed device on port 3 to uhci1
-cgd: self-test aes-xts-256
-cgd: self-test aes-xts-512
-cgd: self-test aes-cbc-128
-cgd: self-test aes-cbc-256
-cgd: self-test 3des-cbc-192
-cgd: self-test blowfish-cbc-448
-cgd: self-test aes-cbc-128 (encblkno8)
-cgd: self-tests passed
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.90/modules
+kern.module.path=/stand/amd64/9.99.92/modules
 kern info: [drm] Memory usable by graphics device = 512M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
+pci_map.c: pass1
+pci_map.c: pass2
+pci_map.c: pass3
 i915drmkms0: interrupting at msi4 vec 0 (i915drmkms0)
 intelfb0 at i915drmkms0
+
+
+
+
+	<key>address</key>
+	<integer>0x0</integer>
+	<key>depth</key>
+	<integer>0x20</integer>
+	<key>device-driver</key>
+	<string>intelfb</string>
+	<key>device-parent</key>
+	<string>i915drmkms0</string>
+	<key>device-unit</key>
+	<integer>0x0</integer>
+	<key>height</key>
+	<integer>0x300</integer>
+	<key>interface-attributes</key>
+	<array>
+		<dict>
+			<key>attribute-name</key>
+			<string>wsemuldisplaydev</string>
+			<key>locators</key>
+			<array>
+				<dict>
+					<key>default</key>
+					<string>-1</string>
+					<key>loc-name</key>
+					<string>console</string>
+				</dict>
+				<dict>
+					<key>default</key>
+					<string>1</string>
+					<key>loc-name</key>
+					<string>kbdmux</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>attribute-name</key>
+			<string>intelfbbus</string>
+		</dict>
+	</array>
+	<key>is_console</key>
+	<true/>
+	<key>linebytes</key>
+	<integer>0x1580</integer>
+	<key>mode_callback</key>
+	<integer>0xffffffff8131dea8</integer>
+	<key>virtual_address</key>
+	<integer>0xffffa480bec43000</integer>
+	<key>width</key>
+	<integer>0x556</integer>
+
+
 intelfb0: framebuffer at 0xc0046000, size 1366x768, depth 32, stride 5504
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
