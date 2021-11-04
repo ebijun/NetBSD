@@ -37,13 +37,13 @@ acpi0 at mainbus0: Intel ACPICA 20210930
 acpi0: X/RSDT: OemId <  Sony,    VAIO,20090522>, AslId <MSFT,00010013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFD1348D9A90C8 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF82C7023A90C8 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFD1348DAD5008 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0xFFFF82C7024D5008 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFD1348D9D0B08 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF82C7023D0B08 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFD1348DAD9648 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF82C7024D9648 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -307,7 +307,7 @@ intelfb0 at i915drmkms0
 	<key>mode_callback</key>
 	<integer>0xffffffff8131dea8</integer>
 	<key>virtual_address</key>
-	<integer>0xffffa480bec43000</integer>
+	<integer>0xffff9180bec41000</integer>
 	<key>width</key>
 	<integer>0x556</integer>
 
@@ -317,6 +317,10 @@ wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd
 wsmux1: connecting to wsdisplay0
 ugen0 at uhub1 port 1
 ugen0: Sony (0x054c) product 01bb (0x01bb), rev 2.00/1.28, addr 2
+acpibat0: state changed on 'charge state' to 'LOW'
+acpibat0: state changed on 'charge state' to 'WARNING'
+acpibat0: normal capacity on 'charge'
+acpibat0: normal capacity on 'charge state'
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
