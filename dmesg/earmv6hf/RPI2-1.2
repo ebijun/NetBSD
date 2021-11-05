@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.88 (RPI2) #0: Mon Sep 20 14:30:05 UTC 2021
+NetBSD 9.99.92 (RPI2) #0: Thu Nov  4 12:40:00 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -18,13 +18,28 @@ cpus0 at simplebus0
 simplebus3 at simplebus0
 cpu0 at cpus0: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
 cpu0: DC enabled IC enabled WB enabled EABT branch prediction enabled
-cpu0: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu0: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu0: 512KB/64B 16-way write-through L2 PIPT Unified cache
+cpu0: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu0: L1 32KB/64B 4-way (128 set) write-back-locking-C PIPT Data cache
+cpu0: L2 512KB/64B 16-way (512 set) write-through PIPT Unified cache
 vfp0 at cpu0: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu1 at cpus0
-cpu2 at cpus0
-cpu3 at cpus0
+cpu1 at cpus0: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu1: DC enabled IC enabled WB enabled EABT branch prediction enabled
+cpu1: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu1: L1 32KB/64B 4-way (128 set) write-back-locking-C PIPT Data cache
+cpu1: L2 512KB/64B 16-way (512 set) write-through PIPT Unified cache
+vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu2 at cpus0: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu2: DC enabled IC enabled WB enabled EABT branch prediction enabled
+cpu2: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu2: L1 32KB/64B 4-way (128 set) write-back-locking-C PIPT Data cache
+cpu2: L2 512KB/64B 16-way (512 set) write-through PIPT Unified cache
+vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
+cpu3 at cpus0: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
+cpu3: DC enabled IC enabled WB enabled EABT branch prediction enabled
+cpu3: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu3: L1 32KB/64B 4-way (128 set) write-back-locking-C PIPT Data cache
+cpu3: L2 512KB/64B 16-way (512 set) write-through PIPT Unified cache
+vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
 fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
 simplebus4 at simplebus1
@@ -42,7 +57,7 @@ bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 49
 bcmgpio0: pins 32..54 interrupting on icu irq 50
 gpio0 at bcmgpio0: 54 pins
-bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA8 DMA9 DMA10 DMA11
+bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA6 DMA7 DMA8 DMA9 DMA10 DMA11
 /soc/power at simplebus1 not configured
 /phy at simplebus0 not configured
 bsciic0 at simplebus1: Broadcom Serial Controller
@@ -83,33 +98,12 @@ gpioleds0 at simplebus0: ACT PWR
 bcmrng0 at simplebus1: RNG
 entropy: ready
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu3: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu3: DC enabled IC enabled WB enabled EABT branch prediction enabled
-cpu3: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu3: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu3: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu2: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu2: DC enabled IC enabled WB enabled EABT branch prediction enabled
-cpu2: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu2: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu2: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp2 at cpu2: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
-cpu1: 600 MHz Cortex-A53 r0p4 (Cortex V8A core)
-cpu1: DC enabled IC enabled WB enabled EABT branch prediction enabled
-cpu1: 32KB/64B 2-way L1 VIPT Instruction cache
-cpu1: 32KB/64B 4-way write-back-locking-C L1 PIPT Data cache
-cpu1: 512KB/64B 16-way write-through L2 PIPT Unified cache
-vfp1 at cpu1: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 sdmmc0 at bcmsdhost0
 dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
 usb0 at dwctwo0: USB revision 2.0
 IPsec: Initialized Security Association Processing.
 aes: ARM NEON vpaes
 chacha: ARM NEON ChaCha
-adiantum: self-test passed
-aes_ccm: self-test passed
-blake2s: self-test passed
 uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 sdmmc0: direct I/O error 5, r=6 p=0xd264af14 write
@@ -135,19 +129,11 @@ uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
 uhub0: autoconfiguration error: illegal enable change, port 1
-cgd: self-test aes-xts-256
-cgd: self-test aes-xts-512
-cgd: self-test aes-cbc-128
-cgd: self-test aes-cbc-256
-cgd: self-test 3des-cbc-192
-cgd: self-test blowfish-cbc-448
-cgd: self-test aes-cbc-128 (encblkno8)
-cgd: self-tests passed
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.88/modules
+kern.module.path=/stand/evbarm/9.99.92/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!

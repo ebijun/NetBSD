@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202109201510Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202111041550Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -30,9 +30,13 @@ LIST=man modules xbase xcomp xetc xfont xserver
 
 #Firmware: 
 #git show HEAD |head 
-#Author: popcornmix <popcornmix@gmail.com>
-#Date:   Tue Nov 17 14:11:58 2020 +0000
-#    kernel: Bump to 5.4.77
+#Author: Dom Cobley <popcornmix@gmail.com>
+#Date:   Tue Nov 2 13:31:23 2021 +0000
+#    kernel: dtoverlays: Update all image sensor overlays for Media Controller option
+#    See: https://github.com/raspberrypi/linux/pull/4645
+#    
+#    firmware: ISP: Fix magenta colour in right hand image of stereo pair
+#    See: https://forums.raspberrypi.com/viewtopic.php?t=321089
 
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
@@ -50,7 +54,7 @@ VND_TMP=vnd2
 
 
 KERNELDIR=RPI.202108210520Z
-all: file rpi extract bwfm-firmware #kernel-update
+all: file rpi extract bwfm-firmware firm #kernel-update
 
 #update: cdmount update-extract cdunmount
 
@@ -186,7 +190,8 @@ cdunmount:
 firm:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
-	for i in ${FIRM} ; do (cp ${FIRMPATH}/$$i /mnt); done
+	for i in ${FIRM} ; do (cp  ${FIRMPATH}/$$i /mnt); done
+	for i in ${FIRMPATH}/*.dtb ; do (cp  $$i /mnt/dtb); done
 	umount ${MNT}
 	vnconfig -u ${VND}
 
