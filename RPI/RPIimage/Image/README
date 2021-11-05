@@ -1,26 +1,31 @@
-VERSION: :1,$s/2021-10-18/2021-10-18/g
-ISO:     :1,$s/202109201510Z/202109201510Z/g
-NetBSD:  :1,$s/9.99.88/9.99.88/g
-PKGSRC:  :1,$s/2021-10-18/2021-1/
+VERSION: :1,$s/2021-11-06/2021-11-06/g
+ISO:     :1,$s/202111041550Z/202111041550Z/g
+NetBSD:  :1,$s/9.99.92/9.99.92/g
+PKGSRC:  :1,$s/2021-11-06/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-10-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-11-06-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-10-18-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-11-06-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-18-earmv6hf/2021-10-18-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-18-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-06-earmv6hf/2021-11-06-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-06-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.88 evbarm-earmv6hf 202109201510Z rpi.img from nyftp.
+- NetBSD 9.99.92 evbarm-earmv6hf 202111041550Z rpi.img from nyftp.
+- Firmware update
+#Author: Dom Cobley <popcornmix@gmail.com>
+#Date:   Tue Nov 2 13:31:23 2021 +0000
 
- 9.99.91 earmv6hf 202110170430Z on RPI3B 
- boot failed.same point on apple m1/aarch64.
- https://twitter.com/ebijun/status/1449832510167261186
- https://twitter.com/ebijun/status/1446735443987341314
+- Raspberry PI zero 2 W
+  http://mail-index.netbsd.org/port-arm/2021/11/03/msg007479.html
+  "Sadly trying the latest current armv7 image failed to produce 
+  any results - just the coloured screen. The hardware doesn't 
+  seem to turn on the led unlike the original Pi zero 
+  so you don't get any boot diagnostic flashes."
 
 - OpenSSH 8.8
   "This release disables RSA signatures using the SHA-1 hash algorithm
@@ -58,17 +63,20 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- libc-12.219 sh-20181212-20210920143005Z
+ dhcpcd-9.4.1 libc-12.220 NetBSD-9.99.92 openssh-8.8
+ opensshd-8.8 sh-20181212-202111041240Z tzdata-2021e-(part-2021b)
+ userland-NetBSD-9.99.92/evbarm
 
 pkgsrc:
- curl-7.79.1nb1 digest-20211005 fribidi-1.0.11 gd-2.3.3nb1
- gdk-pixbuf2-2.42.6 git-base-2.33.1 glib2-2.70.0 gnutls-3.7.2nb1
- gtk2+-2.24.33nb3 gtk3+-3.24.30nb1 harfbuzz-3.0.0 libcups-2.3.3op2nb2
- libimagequant-2.16.0 mozilla-rootcerts-1.0.20210916 nghttp2-1.45.1
- pango-1.48.10 pkgin-21.10.0 py39-cElementTree-3.9.7 py39-expat-3.9.7
- python39-3.9.7 qt5-qtbase-5.15.2nb7 ruby27-gettext-3.4.1
- ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7
- ruby27-nokogiri-1.12.5 ruby27-unf_ext-0.0.8 wget-1.21.2nb1
+ curl-7.79.1nb2 digest-20211023 fribidi-1.0.11 git-base-2.33.1
+ glib2-2.70.0 gnutls-3.7.2nb1 gtk2+-2.24.33nb3 gtk3+-3.24.30nb1
+ harfbuzz-3.0.0 libcups-2.3.3op2nb3 libgpg-error-1.43
+ libimagequant-2.16.0 mozilla-rootcerts-1.0.20210916
+ nghttp2-1.46.0 p5-GSSAPI-0.28nb13 pango-1.48.10
+ pcre2-10.39 pkgin-21.10.1 py39-cElementTree-3.9.7
+ py39-expat-3.9.7 python39-3.9.7 qt5-qtbase-5.15.2nb7
+ ruby27-diva-1.1.1 ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7
+ ruby27-nokogiri-1.12.5 sudo-1.9.7p1nb1 wget-1.21.2nb1
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -126,7 +134,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-18-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-06-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -349,21 +357,20 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2021 Fall, BSD BOF.
+For Kansai Open Forum 2021 , BSD BOF.
 I've updated raspberry-pi image.
 
-2021 Oct. 23 Sat 15:00-15:45 JST (UTC+9)
-https://ospn.connpass.com/event/220756/
+2021 Nov. 13 Sat 17:00-17:50 JST (UTC+9)
+https://www.k-of.jp/2021/session/bsd%e3%81%aa%e3%81%b2%e3%81%a8%e3%81%a8%e3%81%8d/
 
-Join meeting with ZOOM/YoutubeLive 
-YoutubeLive https://www.youtube.com/c/OSPNjp
+Join meeting with Jitsi.
 
-http://www.re.soum.co.jp/~jun/OSC2021tokyofall.pdf
+http://www.re.soum.co.jp/~jun/KOF2021.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2021.rst
 
-- NetBSD 9.99.88 earmv6hf rpi.img.gz base
+- NetBSD 9.99.92 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
