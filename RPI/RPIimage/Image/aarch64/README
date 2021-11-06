@@ -1,27 +1,32 @@
-VERSION: :1,$s/2021-10-19/2021-10-19/g
-ISO:     :1,$s/202110170430Z/202110170430Z/g
-NetBSD:  :1,$s/9.99.91/9.99.91/g
+VERSION: :1,$s/2021-11-06/2021-11-06/g
+ISO:     :1,$s/202111050450Z/202111050450Z/g
+NetBSD:  :1,$s/9.99.92/9.99.92/g
 PKGSRC:  :1,$s/2021-1/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-10-19-netbsd-raspi-aarch64.img
+Subject: 2021-11-06-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-10-19-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2021-11-06-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-19-aarch64/2021-10-19-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-10-19-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-06-aarch64/2021-11-06-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-06-aarch64/MD5
 
 Topics:
-- enabled RELRO and MKPIE for aarch64 
-  http://mail-index.netbsd.org/current-users/2021/10/15/msg041570.html
+- Raspberry Pi 4 UEFI Firmware v1.32
 
+ Always use non translating DMA in DT mode [tianocore/edk2-platforms@efff29c]
+ Make sure normal memory is not be marked uncached [tianocore/edk2-platforms@af649f8]
+ Make sure all drivers are disconnected before reboot [tianocore/edk2-platforms@63d520f]
+ Fix ACPI MMIO host bridge window attribute [tianocore/edk2-platforms@ab6fcc2]
+ Revert to using latest start4.elf/fixup4.dat
+  
 - openssh 8.8 https://www.openssh.com/txt/release-8.8
 cf.
   ~/.ssh/config
-  Host bitbucket.org
+  Host old-host
         HostkeyAlgorithms +ssh-rsa
         PubkeyAcceptedAlgorithms +ssh-rsa
 
@@ -37,7 +42,6 @@ ln -s brcmfmac43455-sdio.raspberrypi,4-model-b.txt "brcmfmac43455-sdio.Raspberry
 to avoid
 bwfm0: autoconfiguration error: NVRAM file not available
  
-
 - only for RPI4 
   (fill dtb for RPI3?)
 - build script
@@ -55,15 +59,18 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- NetBSD-9.99.91 sh-20181212-20211017041449Z
- userland-NetBSD-9.99.91/evbarm
+ dhcpcd-9.4.1 libc-12.220 NetBSD-9.99.92
+ sh-20181212-20211105015330Z tzdata-2021e-(part-2021b)
+ userland-NetBSD-9.99.92/evbarm
 
 pkgsrc:
- fribidi-1.0.11 git-base-2.33.1 glib2-2.70.0
- mozilla-rootcerts-1.0.20210916 py39-cElementTree-3.9.7
+ curl-7.79.1nb2 digest-20211023 libcups-2.3.3op2nb3
+ libgpg-error-1.43 nghttp2-1.46.0 p5-GSSAPI-0.28nb13
+ pcre2-10.39 pkgin-21.10.0 ruby27-diva-1.1.1
+ sudo-1.9.7p1nb1
 
 RPI4 status:
-- boot via UEFI_VER=v1.31
+- boot via UEFI_VER=v1.32
  https://github.com/pftf/RPi4/releases
 
 In this image,pre-setted RPI_EFI.fd
@@ -80,7 +87,7 @@ In this image,pre-setted RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.91 evbarm-aarch64 202110170430Z arm64.img from nyftp.
+- NetBSD-current 9.99.92 evbarm-aarch64 202111050450Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
