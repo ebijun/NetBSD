@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.91 (GENERIC64) #0: Mon Oct 18 08:15:00 UTC 2021
+NetBSD 9.99.92 (GENERIC64) #0: Fri Nov  5 23:39:47 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 2022 MB
 avail memory = 1951 MB
@@ -27,8 +27,32 @@ cpu0: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
 cpu0: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt0 at cpu0
 cpu1 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x1
+cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu1: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu1: L1 32KB/64B 4-way (128 set) PIPT Data cache
+cpu1: L2 512KB/64B 16-way (512 set) PIPT Unified cache
+cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu2 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x2
+cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu2: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu2: L1 32KB/64B 4-way (128 set) PIPT Data cache
+cpu2: L2 512KB/64B 16-way (512 set) PIPT Unified cache
+cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu3 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x3
+cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
+cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
+cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
+cpu3: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
+cpu3: L1 32KB/64B 4-way (128 set) PIPT Data cache
+cpu3: L2 512KB/64B 16-way (512 set) PIPT Unified cache
+cpu3: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
+cpu3: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 gic0 at simplebus1: GIC
 armgic0 at gic0: Generic Interrupt Controller, 224 sources (215 valid)
 armgic0: 16 Priorities, 192 SPIs, 7 PPIs, 16 SGIs
@@ -170,49 +194,25 @@ spkr1 at audio1: PC Speaker (synthesized)
 wsbell at spkr1 not configured
 entropy: WARNING: extracting entropy too early
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu2: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
-cpu2: L1 32KB/64B 4-way (128 set) PIPT Data cache
-cpu2: L2 512KB/64B 16-way (512 set) PIPT Unified cache
-cpu2: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
-cpu2: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu1: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
-cpu1: L1 32KB/64B 4-way (128 set) PIPT Data cache
-cpu1: L2 512KB/64B 16-way (512 set) PIPT Unified cache
-cpu1: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
-cpu1: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
-cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
-cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
-cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
-cpu3: L1 32KB/64B 2-way (256 set) VIPT Instruction cache
-cpu3: L1 32KB/64B 4-way (128 set) PIPT Data cache
-cpu3: L2 512KB/64B 16-way (512 set) PIPT Unified cache
-cpu3: revID=0x80, PMCv3, 4k table, 64k table, 16bit ASID
-cpu3: auxID=0x11120, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt0: rate: 1152.000 MHz, 1300000 uV
 sdmmc0 at sunximmc0
 sdmmc1 at sunximmc1
 sdmmc2 at sunximmc2
 sun8icrypto0: AES-128 self-test initiated
 armpmu0: interrupting on GIC irq 148
-uhub0 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
-uhub0: 1 port with 1 removable, self powered
-uhub1 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
-uhub1: 1 port with 1 removable, self powered
-uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
-uhub2: 1 port with 1 removable, self powered
-Lid Switch: lid opened.
 armpmu0: interrupting on GIC irq 149
-uhub3 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
-uhub3: 1 port with 1 removable, self powered
 armpmu0: interrupting on GIC irq 150
 armpmu0: interrupting on GIC irq 151
+uhub0 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub0: 1 port with 1 removable, self powered
+uhub1 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub1: 1 port with 1 removable, self powered
+uhub2 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub2: 1 port with 1 removable, self powered
+uhub3 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub3: 1 port with 1 removable, self powered
 sun8icrypto0: AES-128 self-test passed
+Lid Switch: lid opened.
 IPsec: Initialized Security Association Processing.
 aes: ARMv8.0-AES
 chacha: ARM NEON ChaCha
@@ -222,16 +222,16 @@ sdmmc0: SD card status: 4-bit, C10, U1
 ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x62302b67:0x107>
 ld0: 60927 MB, 7767 cyl, 255 head, 63 sec, 512 bytes/sect x 124778496 sectors
 sdmmc2: autoconfiguration error: switch error
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 ld2 at sdmmc2: <0x45:0x0100:DA4064:0x00:0xdb1fd106:0x000>
 ld2: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
-ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 ld2: 8-bit width, 4096 KB cache, 52.000 MHz
-uhub4 at uhub2 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/88.32, addr 2
+uhub4 at uhub1 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/88.32, addr 2
 uhub4: single transaction translator
-uhub4: 4 ports with 1 removable, self powered
 umass0 at uhub3 port 1 configuration 1 interface 0
 umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 2
 umass0: using SCSI over Bulk-Only
+uhub4: 4 ports with 1 removable, self powered
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
@@ -259,11 +259,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld2
 root on ld2a dumps on ld2b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.91/modules
+kern.module.path=/stand/evbarm/9.99.92/modules
 entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
 axppmic0: normal capacity on 'charge state'
-sd0: detached
-scsibus0: detached
-umass0: detached
-umass0: at uhub3 port 1 (addr 2) disconnected
