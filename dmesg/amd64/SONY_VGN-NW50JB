@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (GENERIC) #13: Fri Oct 29 10:59:44 JST 2021
+NetBSD 9.99.92 (GENERIC) #23: Tue Nov  9 10:54:19 JST 2021
 	jun@amir63p.soum.co.jp:/usr/obj.amd64/sys/arch/amd64/compile/GENERIC
 total memory = 8031 MB
 avail memory = 7755 MB
@@ -37,13 +37,13 @@ acpi0 at mainbus0: Intel ACPICA 20210930
 acpi0: X/RSDT: OemId <  Sony,    VAIO,20090522>, AslId <MSFT,00010013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF82C7023A90C8 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0xFFFFC776727A90C8 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF82C7024D5008 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0xFFFFC776728D5008 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF82C7023D0B08 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFFC776727D0B08 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF82C7024D9648 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFFC776728D9648 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -233,9 +233,6 @@ uhub7 at usb7: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00,
 uhub7: 6 ports with 6 removable, self powered
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 ahcisata0 port 1: device present, speed: 1.5Gb/s
-uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
-video0 at uvideo0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
-ehci0: handing over low speed device on port 3 to uhci1
 wd0 at atabus0 drive 0
 wd0: <TOSHIBA MK5055GSX>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
@@ -246,6 +243,9 @@ atapibus0 at atabus1: 1 targets
 cd0 at atapibus0 drive 0: <HL-DT-ST DVDRAM GT20N, 905HN033373, CS07> cdrom removable
 cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
 cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
+uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
+video0 at uvideo0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
+ehci0: handing over low speed device on port 3 to uhci1
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
@@ -253,9 +253,15 @@ kern.module.path=/stand/amd64/9.99.92/modules
 kern info: [drm] Memory usable by graphics device = 512M
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
-pci_map.c: pass1
-pci_map.c: pass2
-pci_map.c: pass3
+a /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 492: linux_pci_map_rom
+d /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 512: linux_pci_map_rom
+A /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 461: pci_map_rom_md
+B /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 464: pci_map_rom_md
+C /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 467: pci_map_rom_md
+D /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 473: pci_map_rom_md
+e /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 516: linux_pci_map_rom
+f /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 530: linux_pci_map_rom
+g /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 532: linux_pci_map_rom
 i915drmkms0: interrupting at msi4 vec 0 (i915drmkms0)
 intelfb0 at i915drmkms0
 
@@ -305,9 +311,9 @@ intelfb0 at i915drmkms0
 	<key>linebytes</key>
 	<integer>0x1580</integer>
 	<key>mode_callback</key>
-	<integer>0xffffffff8131dea8</integer>
+	<integer>0xffffffff8131dfa8</integer>
 	<key>virtual_address</key>
-	<integer>0xffff9180bec41000</integer>
+	<integer>0xffff9c80bec41000</integer>
 	<key>width</key>
 	<integer>0x556</integer>
 
@@ -317,10 +323,6 @@ wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd
 wsmux1: connecting to wsdisplay0
 ugen0 at uhub1 port 1
 ugen0: Sony (0x054c) product 01bb (0x01bb), rev 2.00/1.28, addr 2
-acpibat0: state changed on 'charge state' to 'LOW'
-acpibat0: state changed on 'charge state' to 'WARNING'
-acpibat0: normal capacity on 'charge'
-acpibat0: normal capacity on 'charge state'
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
