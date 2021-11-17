@@ -16,6 +16,10 @@ kernel=/kernel.img
 kernel=/kernel.img
 [all]
 
+#Raspberry Pi camera under NetBSD current
+#http://mail-index.netbsd.org/current-users/2021/11/16/msg041683.html
+#start_x=1
+
 #bcm2708_fb.fbswap=0
 # http://mail-index.netbsd.org/port-arm/2014/07/24/msg002527.html
 # http://elinux.org/RPiconfig

@@ -36,6 +36,10 @@ Date:   Tue Nov 16 18:46:39 2021 +0000
   seem to turn on the led unlike the original Pi zero 
   so you don't get any boot diagnostic flashes."
 
+- [Only earmv6hf] rsync-3.2.3 dump core. use rsync-3.2.2.
+  [1]   Bus error (core dumped) rsync -4 -acv -e ssh /usr/pkgsrc/packages/All/... 
+  rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+  rsync error: error in rsync protocol data stream (code 12) at io.c(228) [Receiver=3.2.3]
 - OpenSSH 8.8
   "This release disables RSA signatures using the SHA-1 hash algorithm
    by default."

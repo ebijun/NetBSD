@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (RPI2) #0: Thu Nov  4 12:40:00 UTC 2021
+NetBSD 9.99.92 (RPI2) #0: Tue Nov 16 06:58:33 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -41,7 +41,6 @@ cpu3: L1 32KB/64B 4-way (128 set) write-back-locking-C PIPT Data cache
 cpu3: L2 512KB/64B 16-way (512 set) write-through PIPT Unified cache
 vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
-simplebus4 at simplebus1
 fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
 bcmicu0 at simplebus1
 bcmcprman0 at simplebus1: BCM283x Clock Controller
@@ -52,12 +51,11 @@ armgtmr0 at gtmr0: Generic Timer (19200 kHz, virtual)
 timecounter: Timecounter "armgtmr0" frequency 19200000 Hz quality 500
 bcmaux0 at simplebus1
 /soc/thermal@7e212000 at simplebus1 not configured
-/soc/dsi@7e209000 at simplebus1 not configured
 bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 49
 bcmgpio0: pins 32..54 interrupting on icu irq 50
 gpio0 at bcmgpio0: 54 pins
-/soc/firmware/gpio at simplebus4 not configured
+/soc/firmware at simplebus1 not configured
 bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA6 DMA7 DMA8 DMA9 DMA10 DMA11
 /soc/power at simplebus1 not configured
 /wifi-pwrseq at simplebus0 not configured
@@ -65,7 +63,6 @@ bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA6 DMA7 DMA8 DMA9 DMA10 DMA11
 bsciic0 at simplebus1: Broadcom Serial Controller
 bsciic0: interrupting on icu irq 53
 iic0 at bsciic0: I2C bus
-bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmmbox0 at simplebus1: VC mailbox
 bcmmbox0: interrupting on icu irq 65
 vcmbox0 at bcmmbox0
@@ -88,9 +85,10 @@ sdhc0: interrupting on icu irq 62
 bsciic2 at simplebus1: Broadcom Serial Controller
 bsciic2: interrupting on icu irq 53
 iic2 at bsciic2: I2C bus
-/soc/vec@7e806000 at simplebus1 not configured
 dwctwo0 at simplebus1: USB controller
 dwctwo0: interrupting on icu irq 9
+bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
+/soc/vec@7e806000 at simplebus1 not configured
 /soc/hdmi@7e902000 at simplebus1 not configured
 /soc/gpu at simplebus1 not configured
 genfb0 at simplebus1: switching to framebuffer console
@@ -146,23 +144,18 @@ uhidev2 at uhub3 port 2 configuration 1 interface 0
 uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 6, iclass 3/1
 ums0 at uhidev2: 3 buttons, W and Z dirs
 wsmouse0 at ums0 mux 0
-axe0 at uhub3 port 4
-axe0: ASIX Elec. Corp. (0x0b95) AX88772 (0x7720), rev 2.00/0.01, addr 7
-ukphy0 at axe0 phy 16: OUI 0x007063, model 0x0001, rev. 1
-ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-axe0: Ethernet address 00:90:cc:e7:fc:c6
 umass0 at uhub1 port 2 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 8
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 7
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 uhub0: autoconfiguration error: illegal enable change, port 1
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 mue0 at uhub2 port 1
-mue0: vendor 0424 (0x0424) product 7800 (0x7800), rev 2.10/3.00, addr 9
+mue0: vendor 0424 (0x0424) product 7800 (0x7800), rev 2.10/3.00, addr 8
 mue0: LAN7800 id 0x7800 rev 0x2
-ukphy1 at mue0 phy 1: OUI 0x00800f, model 0x0013, rev. 2
-ukphy1: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+ukphy0 at mue0 phy 1: OUI 0x00800f, model 0x0013, rev. 2
+ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
 mue0: Ethernet address b8:27:eb:3d:70:4f
 ld0: 25116672 trailing sectors not covered by disklabel
 ld0: 25116672 trailing sectors not covered by disklabel
@@ -177,7 +170,7 @@ WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 vchiq0: interrupting on icu irq 66
-vchiq: vchiq_init_state: slot_zero = 0xd2ab0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xd2ac0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 kern notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
