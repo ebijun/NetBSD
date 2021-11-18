@@ -55,6 +55,12 @@ http://mail-index.netbsd.org/port-arm/2021/06/17/msg007310.html
  "earmv7hfeb works fine so far, pkgsrc included. aarc64eb doesn't boot
   on a Raspberry Pi 3," 
 
+- Fw: gstreamer1 updated, raspberry help needed
+  http://mail-index.netbsd.org/port-arm/2021/11/17/msg007498.html
+  - multimedia/gst-plugins1-egl-gl
+  - multimedia/gst-plugins1-egl-opengl
+  - multimedia/gst-plugins1-omx
+
 PR
 #55505 RaspberryPi3A+ can't find Wi-Fi module
  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=55505
