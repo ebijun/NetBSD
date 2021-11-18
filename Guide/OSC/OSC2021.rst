@@ -54,38 +54,35 @@ NetBSDからZOOM等の会議に参加するためには、以下の手順をと�
 どのくらい参加しているか
 -------------------------
 
-- 2021/5/29までにOSCは194回開催されています。
-- JNUGは175回参加しています。90.0%→90.2% (前年比0.2%増)
+- 2021/11/20までにOSCは201回開催されています。
+- JNUGは181回参加しています。90.2%→90.0% (前年比0.2%減)
 
 OSCこの一年
 --------------
 
-2020年まとめ
+2021年まとめ
 ^^^^^^^^^^^^
 
-- 日本全国各地で1回+9回オンライン開催+ODC開催 
-- 参加者: 97743人 年間参加者5920人(2019年)→3140人(2020年)　
-- 参加団体:5904グループ 年間参加グループ　444グループ(2019) → 152グループ(2020)
+- 日本全国各地で10回オンライン開催+ODC開催 
+- 参加者: 101,128人 年間参加者3140人(2020年)→3115人(2021年)　
+- 参加団体:5904グループ 年間参加グループ　152グループ(2020) → 133グループ(2021)
 
 .. csv-table:: この一年
  :widths: 10 40 10 20 30 30
 
  回数,イベント,日付,参加者,参加グループ,参加したら1
- 184,2020 Online/Nagoya,5/30,370,14,1
- 185,2020 Online/Hokkaido,6/27,450,22,1
- 186,2020 Online/Niigata,7/25,120,10,1
- 187,2020 Online/Kyoto,8/28-29,320,18,1
- 188,2020 Online/Hiroshima,9/19,200,8,1
- 189,2020 Online/Fall,10/23-24,500,15,1
- 190,2020 Online/Aizu,10/25,120,-,　
- 191,2020 Online/Fukuoka,11/28,240,14,1
- ,ODC Online,12/19,,,参加
  192,2021 Online/Osaka,1/30,290,12,1
  193,2021 Online/Spring,3/5-6,570,26,1
- 194,2021 Online/Nagoya,5/29,400,15,1
+ 194,2021 Online/Nagoya,5/29,400,16,1
  195,2021 Online/Hokkaido,6/26,510,22,1
- 196,2021 Online/Kyoto,7/30-31,,15,1
- 
+ 196,2021 Online/Kyoto,7/30-31,235,16,1
+  ,ODC Online,8/28,300,10,参加
+ 197,2021 Online/Aizu,8/29,220,,
+ 198,2021 Online/Hiroshima,9/18,170,13,1
+ 199,2021 Online/Niigata,10/2,80,,1
+ 200,2021 Online/Fall,10/22-23,350,18,1
+ 201,2021 Online/Fukuoka,11/20,,,1
+
 togetterアクセスで見たNetBSDブース
 -----------------------------------
 togetterのアクセスログは以下の場所にあります。
@@ -97,19 +94,16 @@ togetterのアクセスログは以下の場所にあります。
 .. csv-table::
  :widths: 120 60 10
 
- OSC2021 Online/Fall BSDなひととき の記録 ,https://togetter.com/li/1790501,206
- OSC2021 Online/Niigata NetBSDのご紹介 の記録,https://togetter.com/li/1782152,414
- OSC2021 Online/Hiroshima NetBSDのご紹介 の記録,https://togetter.com/li/1774874,509
- ODC2021 Online NetBSDのご紹介の記録,https://togetter.com/li/1765257,409
- OSC2021 Online/Kyoto NetBSDのご紹介 の記録,https://togetter.com/li/1751521,494
- OSC2021 Online/Hokkaido NetBSDのご紹介 の記録,https://togetter.com/li/1735858,780
- OSC2021 Online/Nagoya 名古屋*BSDユーザグループ2021年5月例会の記録,https://togetter.com/li/1720573,772
- OSC2021 Online/Spring NetBSDのご紹介 の記録,https://togetter.com/li/1675363,1333
- OSC2021 Online/Osaka NetBSDのご紹介 の記録,https://togetter.com/li/1658323,1046
- ODC2020 Online NetBSDのご紹介,https://togetter.com/li/1637624,1255
- OSC2020 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/1627360,662
- 関西オープンソース 2020 BSDなひととき の記録,https://togetter.com/li/1617531,5680
- OSC2020 Online/Fall BSDなひととき の記録,https://togetter.com/li/1611536,1036
+ OSC2021 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/1803990,20
+ KOF 2021 BSDなひととき の記録,https://togetter.com/li/1800758,160
+ OSC2021 Online/Fall BSDなひととき の記録,https://togetter.com/li/1790501,473
+ OSC2021 Online/Niigata NetBSDのご紹介 の記録,https://togetter.com/li/1782152,483
+ OSC2021 Online/Hiroshima NetBSDのご紹介 の記録,https://togetter.com/li/1774874,555
+ オープンデベロッパーズカンファレンス2021 Online NetBSDのご紹介,https://togetter.com/li/1765257,468
+ OSC2021 Online/Kyoto NetBSDのご紹介 の記録,https://togetter.com/li/1751521,518
+ OSC2021 Online/Hokkaido NetBSDのご紹介 の記録,https://togetter.com/li/1735858,820
+ OSC2021 Online/Spring NetBSDのご紹介 の記録,https://togetter.com/li/1675363,1355
+ OSC2021 Online/Osaka NetBSDのご紹介 の記録,https://togetter.com/li/1658323,1069
 
 netbsd-advocacyメーリングリストへの報告
 --------------------------------------------
@@ -137,18 +131,17 @@ NetBSD観光ガイド作成
 .. csv-table::
  :widths: 10 20 100
 
- 171,OSC2021東京秋,http://www.re.soum.co.jp/~jun/OSC2021tokyofall.pdf
- 170,OSC2021新潟,http://www.re.soum.co.jp/~jun/OSC2021niigata.pdf 
- 169,OSC2021広島,http://www.re.soum.co.jp/~jun/OSC2021hiroshima.pdf
- 168,ODC2021,http://www.re.soum.co.jp/~jun/ODC2021.pdf
- 167,OSC2021京都,http://www.re.soum.co.jp/~jun/OSC2021kyoto.pdf
- 166,OSC2021北海道,http://www.re.soum.co.jp/~jun/OSC2021hokkaido.pdf
- 165,OSC2021名古屋,http://www.re.soum.co.jp/~jun/OSC2021nagoya.pdf
- 164,OSC2021東京春,http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
- 163,OSC2021大阪,http://www.re.soum.co.jp/~jun/OSC2021osaka.pdf
- 162,ODC2020,http://www.re.soum.co.jp/~jun/ODC2020.pdf
- 161,OSC2020福岡,http://www.re.soum.co.jp/~jun/OSC2020fukuoka.pdf
- 160,KOF2020,http://www.re.soum.co.jp/~jun/KOF2020.pdf
+ 173, OSC2021福岡 http://www.re.soum.co.jp/~jun/OSC2021fukuoka.pdf
+ 172,KOF2021    http://www.re.soum.co.jp/~jun/KOF2021.pdf
+ 171,OSC2021東京秋 http://www.re.soum.co.jp/~jun/OSC2021tokyofall.pdf
+ 170,OSC2021新潟 http://www.re.soum.co.jp/~jun/OSC2021niigata.pdf 
+ 169,OSC2021広島  http://www.re.soum.co.jp/~jun/OSC2021hiroshima.pdf
+ 168,ODC2021 http://www.re.soum.co.jp/~jun/ODC2021.pdf
+ 167,OSC2021京都 http://www.re.soum.co.jp/~jun/OSC2021kyoto.pdf
+ 166,OSC2021北海道 http://www.re.soum.co.jp/~jun/OSC2021hokkaido.pdf
+ 165,OSC2021名古屋 http://www.re.soum.co.jp/~jun/OSC2021nagoya.pdf
+ 164,OSC2021東京春 http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
+ 163,OSC2021大阪 http://www.re.soum.co.jp/~jun/OSC2021osaka.pdf
 
 旅費
 --------
@@ -161,9 +154,9 @@ NetBSD観光ガイド作成
  月,イベント,旅費,機材配送
  2020/1,OSC大阪,26080,1469
 
-2021年
+2022年
 -------------
 
-2021年もしばらくの間はオンライン開催が続きそうです。OSCは2021/1/30のOSC Online大阪(https://event.ospn.jp/osc2021-online-osaka/)からはじまります。
+2022年もしばらくの間はオンライン開催が続きそうです。OSCは2022/1/29のOSC Online大阪(https://event.ospn.jp/osc2022-online-osaka/)からはじまります。
 セミナー/ミーティング時間での発表を歓迎します。
 
