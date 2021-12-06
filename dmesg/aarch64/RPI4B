@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (GENERIC64) #0: Fri Nov  5 01:53:30 UTC 2021
+NetBSD 9.99.92 (GENERIC64) #0: Sun Dec  5 12:06:23 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3927 MB
 avail memory = 3791 MB
@@ -34,6 +34,7 @@ ACPI: 3 ACPI AML tables successfully acquired and loaded
 acpi0 at acpifdt0: Intel ACPICA 20210930
 acpi0: X/RSDT: OemId <RPIFDN,RPI4    ,00000200>, AslId <    ,01000013>
 cpu0 at acpi0: Arm Cortex-A72 r0p3 (v8-A), id 0x0
+cpu0: package 0, core 0, smt 0
 cpu0: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu0: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu0: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -43,6 +44,7 @@ cpu0: L2 1024KB/64B 16-way (1024 set) PIPT Unified cache
 cpu0: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
 cpu0: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu1 at acpi0: Arm Cortex-A72 r0p3 (v8-A), id 0x1
+cpu1: package 0, core 1, smt 0
 cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -52,6 +54,7 @@ cpu1: L2 1024KB/64B 16-way (1024 set) PIPT Unified cache
 cpu1: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
 cpu1: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu2 at acpi0: Arm Cortex-A72 r0p3 (v8-A), id 0x2
+cpu2: package 0, core 2, smt 0
 cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -61,6 +64,7 @@ cpu2: L2 1024KB/64B 16-way (1024 set) PIPT Unified cache
 cpu2: revID=0x0, PMCv3, 4k table, 64k table, 16bit ASID
 cpu2: auxID=0x10000, FP, CRC32, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpu3 at acpi0: Arm Cortex-A72 r0p3 (v8-A), id 0x3
+cpu3: package 0, core 3, smt 0
 cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -135,10 +139,10 @@ cpu3: PMU interrupting on irq 51
 IPsec: Initialized Security Association Processing.
 aes: ARM NEON vpaes
 chacha: ARM NEON ChaCha
-sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
-ld1 at sdmmc1: <0x02:0x544d:SA64G:0x72:0x2a7fc8c7:0x152>
-ld1: 59356 MB, 7566 cyl, 255 head, 63 sec, 512 bytes/sect x 121561088 sectors
-ld1: GPT GUID: e4d88d89-12f3-4b91-8f84-33158d78de3d
+sdmmc1: SD card status: 4-bit, C10, U3, V30, A1
+ld1 at sdmmc1: <0x74:0x4a60:USDU1:0x20:0x41b7d781:0x14c>
+ld1: 235 GB, 30743 cyl, 255 head, 63 sec, 512 bytes/sect x 493895680 sectors
+ld1: GPT GUID: a852220f-8bb8-4918-bb6c-7f504de26c28
 dk0 at ld1: "EFI", 163840 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 4751355 blocks at 163843, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -150,17 +154,23 @@ bwfm0 at sdmmc0 function 1
 uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 1
 uhub2: single transaction translator
 uhub2: 4 ports with 4 removable, self powered
-uhidev0 at uhub2 port 1 configuration 1 interface 0
-uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/1
+uhub3 at uhub2 port 1: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1.10/3.00, addr 2
+uhub3: 4 ports with 4 removable, self powered
+uhidev0 at uhub3 port 1 configuration 1 interface 0
+uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub2 port 1 configuration 1 interface 1
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/0
+uhidev1 at uhub3 port 1 configuration 1 interface 1
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhidev2 at uhub3 port 2 configuration 1 interface 0
+uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 4, iclass 3/1
+ums0 at uhidev2: 3 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
 umass0 at uhub2 port 3 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 3
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 5
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
@@ -171,7 +181,7 @@ root file system type: ffs
 kern.module.path=/stand/evbarm/9.99.92/modules
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.bin
-WARNING: clock lost 17 days
+WARNING: clock lost 47 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
@@ -182,4 +192,3 @@ bwfm0: CHIPACTIVE
 bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
 bwfm0: address dc:a6:32:03:31:c9
 wsdisplay0: screen 4 added (default, vt100 emulation)
-ld1c: error writing fsbn 464187 of 464187-464194 (ld1 bn 464187; cn 28 tn 228 sn 3), retrying
