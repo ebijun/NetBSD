@@ -48,8 +48,6 @@ bwfm0: autoconfiguration error: NVRAM file not available
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
 - [Issue] Can't recognize DOS partition from Windows
   Should I Use MBR version image?
-- [PR] diagnostic assertion "l->l_stat == LSONPROC" failed on RPI3
-  http://gnats.netbsd.org/56264
 - rpi cm4 + waveshare mini base board B seems stop after kernel load
   http://mail-index.netbsd.org/port-arm/2021/06/30/msg007343.html
 - pkgin support
