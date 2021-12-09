@@ -5,8 +5,8 @@ atk-2.36.0          Set of interfaces for accessibility
 bash-5.1.8nb3       The GNU Bourne Again Shell
 cairo-1.16.0nb4     Vector graphics library with cross-device output support
 cairo-gobject-1.16.0nb5 Vector graphics library with cross-device output support
-curl-7.79.1nb2      Client that groks URLs
-dbus-1.12.20nb1     Message bus system
+curl-7.80.0         Client that groks URLs
+dbus-1.12.20nb2     Message bus system
 desktop-file-utils-0.26 Utilities to manage desktop entries
 digest-20211023     Message digest wrapper utility
 dillo-3.0.5nb10     Very small and fast graphical web-browser
@@ -17,13 +17,13 @@ gd-2.3.3nb1         Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.42.6  Library for image loading and manipulation
 giflib-5.2.1nb4     GIF image format library
 git-base-2.33.1     GIT Tree History Storage Tool (base package)
-glib2-2.70.0        Some useful routines for C programming (glib2)
+glib2-2.70.1        Some useful routines for C programming (glib2)
 gmp-6.2.1           Library for arbitrary precision arithmetic
 gnutls-3.7.2nb1     Transport Layer Security library
 gobject-introspection-1.68.0 GObject Introspection
 gtk2+-2.24.33nb3    GIMP Toolkit v2 - libraries for building X11 user interfaces
 gtk3+-3.24.30nb1    GIMP Toolkit v3 - libraries for building X11 user interfaces
-harfbuzz-3.0.0      OpenType text shaping engine
+harfbuzz-3.1.1      OpenType text shaping engine
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
 icewm-1.2.38pre2nb2 Small, fast and light-weight window manager
 icu-69.1            Robust and full-featured Unicode services
@@ -43,7 +43,7 @@ libpaper-1.1.28     Paper size handling library
 libproxy-0.4.15nb1  Library that provides automatic proxy configuration management
 libpsl-0.21.1nb2    Library to handle the Public Suffix List
 libtasn1-4.17.0     ASN.1 structure parser library
-libunistring-0.9.10 Unicode string library
+libunistring-0.9.10nb1 Unicode string library
 libuuid-2.32.1      Generate unique identifiers for objects
 libwebp-1.2.1       WebP image format library and tools
 libxkbcommon-1.3.1  Library to handle keyboard descriptions
@@ -88,9 +88,9 @@ pkg_chk-2.0.11      Check installed package versions against pkgsrc
 pkg_install-20210410 Package management and administration tools for pkgsrc
 pkgin-21.10.1       Apt / yum like tool for managing pkgsrc binary packages
 png-1.6.37nb1       Library for manipulating PNG images
-py39-cElementTree-3.9.7 C implementation of Python ElementTree API
-py39-expat-3.9.7    Python interface to expat
-python39-3.9.7      Interpreted, interactive, object-oriented programming language
+py39-cElementTree-3.9.8 C implementation of Python ElementTree API
+py39-expat-3.9.8    Python interface to expat
+python39-3.9.9      Interpreted, interactive, object-oriented programming language
 qt5-qtbase-5.15.2nb7 C++ X GUI toolkit
 qt5-qtx11extras-5.15.2nb2 Qt5 module for X11 extras
 qt5-qtxmlpatterns-5.15.2nb2 Qt5 module for XML Patterns
@@ -124,7 +124,7 @@ ruby27-pango-3.4.9  Ruby binding of pango-1.x
 ruby27-pkg-config-1.4.6 Pure Ruby implementation of pkg-config
 ruby27-pluggaloid-1.5.0 Extensible plugin system for mikutter
 ruby27-public_suffix-4.0.6 Domain name parser based on the Public Suffix List
-ruby27-racc-1.5.2nb1 LALR(1) parser generator for Ruby
+ruby27-racc-1.6.0   LALR(1) parser generator for Ruby
 ruby27-red-colors-0.3.0 Wide array of features for dealing with colors
 ruby27-simpleidn-0.2.1 Punycode ACE to unicode UTF-8 (and vice-verse) string conversion
 ruby27-text-1.3.1   Collection of text algorithms for Ruby
@@ -134,7 +134,7 @@ ruby27-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
 ruby27-unf_ext-0.0.8 Unicode Normalization Form support library for CRuby
 shared-mime-info-1.10nb4 Core database of common types
 sudo-1.9.7p1nb1     Allow others to run commands as root
-tcsh-6.22.02nb2     Extended C-shell with many useful features
+tcsh-6.23.00nb2     Extended C-shell with many useful features
 tiff-4.3.0          Library and tools for reading and writing TIFF data files
 uim-1.8.9pre20210104nb1 Multilingual input method library
 vlgothic-ttf-20200720 Free Japanese TrueType fonts named 'VLGothic'

@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2021 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -50,7 +50,8 @@ Maps:
  2017,10/7,400,21,福岡大学 18号館
  2018,12/8,380,24,福岡ソフトリサーチパーク センタービル
  2019,11/9,350,24,九州産業大学
- 2020,11/28,,,オンライン
+ 2020,11/28,240,14,オンライン
+ 2021,11/20,,,オンライン
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,6 +63,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 173,OSC2021福岡,http://www.re.soum.co.jp/~jun/OSC2021fukuoka.pdf
  161,OSC2020福岡,http://www.re.soum.co.jp/~jun/OSC2020fukuoka.pdf
  151,OSC2019福岡,http://www.re.soum.co.jp/~jun/OSC2019fukuoka.pdf
  136,OSC2018福岡,http://www.re.soum.co.jp/~jun/OSC2018fukuoka.pdf
@@ -79,6 +81,8 @@ togetterまとめ
 
 .. csv-table::
  :widths: 70 70
+ 
+ OSC2021 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/1803990
  OSC2020 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/1627360
  OSC2019福岡 NetBSDブース展示の記録,https://togetter.com/li/1428096
  OSC2018福岡 NetBSDブース展示の記録,https://togetter.com/li/1296258
@@ -89,14 +93,13 @@ togetterまとめ
  OSC2013福岡 NetBSDブース展示の記録,http://togetter.com/li/590835
  OSC2012福岡 NetBSDブース展示の記録,http://togetter.com/li/419569
 
-
 よく行く店
 ~~~~~~~~~~~~~~
 
 .. csv-table::
  :widths: 25 15 60
 
- PADDY,渡辺通,地ビール。前日夜はたいていここにいます。
+ PADDY,渡辺通,地ビール。おつまみは麦烈。
  あすなろブルワリー,千代県庁口,ぶどうエールとちよIPA。18:00-23:00 日月休。
  ドライブイン鳥,伊万里,マークイズ福岡ももち店とは何か。いまりタクシー0955-23-8181。
  北九州市漫画ミュージアム,北九州,マカロニほうれん荘展 in 福岡 2019/1/17まで

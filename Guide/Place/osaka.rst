@@ -35,6 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
+ 関西オープンソース2021 BSDなひととき の記録,https://togetter.com/li/1800758
  OSC2021 Online/Osaka NetBSDのご紹介 の記録,https://togetter.com/li/1658323
  関西オープンソース2020 BSDなひととき の記録,https://togetter.com/li/1617531
  オープンソースカンファレンス2020大阪展示の記録,https://togetter.com/li/1459510

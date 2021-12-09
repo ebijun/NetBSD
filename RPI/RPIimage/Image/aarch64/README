@@ -1,18 +1,18 @@
-VERSION: :1,$s/2021-11-06/2021-11-06/g
-ISO:     :1,$s/202111050450Z/202111050450Z/g
+VERSION: :1,$s/2021-12-06/2021-12-06/g
+ISO:     :1,$s/202112051210Z/202112051210Z/g
 NetBSD:  :1,$s/9.99.92/9.99.92/g
 PKGSRC:  :1,$s/2021-1/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-11-06-netbsd-raspi-aarch64.img
+Subject: 2021-12-06-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-11-06-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2021-12-06-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-06-aarch64/2021-11-06-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-06-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-12-06-aarch64/2021-12-06-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-12-06-aarch64/MD5
 
 Topics:
 - Raspberry Pi 4 UEFI Firmware v1.32
@@ -48,8 +48,6 @@ bwfm0: autoconfiguration error: NVRAM file not available
  https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/Image/aarch64
 - [Issue] Can't recognize DOS partition from Windows
   Should I Use MBR version image?
-- [PR] diagnostic assertion "l->l_stat == LSONPROC" failed on RPI3
-  http://gnats.netbsd.org/56264
 - rpi cm4 + waveshare mini base board B seems stop after kernel load
   http://mail-index.netbsd.org/port-arm/2021/06/30/msg007343.html
 - pkgin support
@@ -59,15 +57,15 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- dhcpcd-9.4.1 libc-12.220 NetBSD-9.99.92
- sh-20181212-20211105015330Z tzdata-2021e-(part-2021b)
- userland-NetBSD-9.99.92/evbarm
+ sh-20181212-20211205120623Z tcsh-6.23.00
 
 pkgsrc:
- curl-7.79.1nb2 digest-20211023 libcups-2.3.3op2nb3
- libgpg-error-1.43 nghttp2-1.46.0 p5-GSSAPI-0.28nb13
- pcre2-10.39 pkgin-21.10.0 ruby27-diva-1.1.1
- sudo-1.9.7p1nb1
+ bash-5.1.12 curl-7.80.0 dbus-1.12.20nb2 fltk-1.3.8 fossil-2.17
+ git-base-2.34.1 glib2-2.70.1 gmp-6.2.1nb1 harfbuzz-3.1.2
+ libtasn1-4.18.0 libunistring-0.9.10nb1 pkgin-21.10.1
+ py39-cElementTree-3.9.9 py39-expat-3.9.9 python39-3.9.9
+ ruby27-base-2.7.5 ruby27-oauth-0.5.8 ruby27-racc-1.6.0
+ tcsh-6.23.00nb3 zsh-5.8nb3
 
 RPI4 status:
 - boot via UEFI_VER=v1.32
@@ -87,14 +85,14 @@ In this image,pre-setted RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.92 evbarm-aarch64 202111050450Z arm64.img from nyftp.
+- NetBSD-current 9.99.92 evbarm-aarch64 202112051210Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/sysinfo
 
-Update from 2021-08-13:
-https://github.com/ebijun/NetBSD/commit/22e4de9f029bae87e6ff76bde829e231c1b40cab
+Update from 2021-11-06:
+https://github.com/ebijun/NetBSD/commit/1b3ef330ecf023aa73d58ccb8b4029c520f33cdf
 
 - mate/firefox/inkscape/libreoffice works well
    pkg_add mate

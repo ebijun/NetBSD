@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202111041550Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202111160720Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -39,7 +39,7 @@ LIST=man modules xbase xcomp xetc xfont xserver
 #    See: https://forums.raspberrypi.com/viewtopic.php?t=321089
 
 
-FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
+FIRM=LICENCE.broadcom bootcode.bin fixup.dat    fixup4cd.dat fixup4x.dat  fixup_db.dat fixup4.dat   fixup4db.dat fixup_cd.dat fixup_x.dat start.elf    start4cd.elf start4x.elf  start_db.elf start4.elf   start4db.elf start_cd.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
 # mount point

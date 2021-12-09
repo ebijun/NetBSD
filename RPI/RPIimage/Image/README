@@ -1,24 +1,33 @@
-VERSION: :1,$s/2021-11-06/2021-11-06/g
-ISO:     :1,$s/202111041550Z/202111041550Z/g
+VERSION: :1,$s/2021-11-17/2021-11-17/g
+ISO:     :1,$s/02111160720Z/02111160720Z/g
 NetBSD:  :1,$s/9.99.92/9.99.92/g
-PKGSRC:  :1,$s/2021-11-06/2021-1/
+PKGSRC:  :1,$s/2021-11-17/2021-1/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-11-06-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-11-17-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-11-06-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-11-17-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-06-earmv6hf/2021-11-06-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-06-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-17-earmv6hf/2021-11-17-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-17-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.92 evbarm-earmv6hf 202111041550Z rpi.img from nyftp.
+- NetBSD 9.99.92 evbarm-earmv6hf 02111160720Z rpi.img from nyftp.
+- Re: Raspberry Pi camera under NetBSD current
+ http://mail-index.netbsd.org/current-users/2021/11/16/msg041683.html
+1. firmware copy start* and fix*
+2. sync dtb
 - Firmware update
-#Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Tue Nov 2 13:31:23 2021 +0000
+commit 12bc6e3677348adaffd155e7a04761e2661d4bff 
+Author: Dom Cobley <popcornmix@gmail.com>
+Date:   Tue Nov 16 18:46:39 2021 +0000
+    firmware: dtoverlay: Rebase aliases in overlays like labels
+    firmware: isp: Set core/vpu min clock to 320Mhz during ISP operation
+    firmware: arm_loader: Enable watchdog early if wanted
+    See: https://github.com/raspberrypi/firmware/issues/1651
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2021/11/03/msg007479.html
@@ -27,6 +36,10 @@ Update:
   seem to turn on the led unlike the original Pi zero 
   so you don't get any boot diagnostic flashes."
 
+- [Only earmv6hf] rsync-3.2.3 dump core. use rsync-3.2.2.
+  [1]   Bus error (core dumped) rsync -4 -acv -e ssh /usr/pkgsrc/packages/All/... 
+  rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+  rsync error: error in rsync protocol data stream (code 12) at io.c(228) [Receiver=3.2.3]
 - OpenSSH 8.8
   "This release disables RSA signatures using the SHA-1 hash algorithm
    by default."
@@ -41,6 +54,12 @@ XXX: should test big-endian image and pkgsrc
 http://mail-index.netbsd.org/port-arm/2021/06/17/msg007310.html
  "earmv7hfeb works fine so far, pkgsrc included. aarc64eb doesn't boot
   on a Raspberry Pi 3," 
+
+- Fw: gstreamer1 updated, raspberry help needed
+  http://mail-index.netbsd.org/port-arm/2021/11/17/msg007498.html
+  - multimedia/gst-plugins1-egl-gl
+  - multimedia/gst-plugins1-egl-opengl
+  - multimedia/gst-plugins1-omx
 
 PR
 #55505 RaspberryPi3A+ can't find Wi-Fi module
@@ -64,23 +83,25 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
 
 sysinfo:
  dhcpcd-9.4.1 libc-12.220 NetBSD-9.99.92 openssh-8.8
- opensshd-8.8 sh-20181212-202111041240Z tzdata-2021e-(part-2021b)
- userland-NetBSD-9.99.92/evbarm
+ opensshd-8.8 sh-20181212-20211116065833Z
+ tcsh-6.23.00 tzdata-2021e-(part-2021b) userland-NetBSD-9.99.92/evbarm
 
 pkgsrc:
- curl-7.79.1nb2 digest-20211023 fribidi-1.0.11 git-base-2.33.1
- glib2-2.70.0 gnutls-3.7.2nb1 gtk2+-2.24.33nb3 gtk3+-3.24.30nb1
- harfbuzz-3.0.0 libcups-2.3.3op2nb3 libgpg-error-1.43
- libimagequant-2.16.0 mozilla-rootcerts-1.0.20210916
- nghttp2-1.46.0 p5-GSSAPI-0.28nb13 pango-1.48.10
- pcre2-10.39 pkgin-21.10.1 py39-cElementTree-3.9.7
- py39-expat-3.9.7 python39-3.9.7 qt5-qtbase-5.15.2nb7
- ruby27-diva-1.1.1 ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7
- ruby27-nokogiri-1.12.5 sudo-1.9.7p1nb1 wget-1.21.2nb1
+ curl-7.80.0 dbus-1.12.20nb2 digest-20211023 fribidi-1.0.11
+ git-base-2.33.1 glib2-2.70.1 gnutls-3.7.2nb1 gtk2+-2.24.33nb3
+ gtk3+-3.24.30nb1 harfbuzz-3.1.1 libcups-2.3.3op2nb3 libgpg-error-1.43
+ libimagequant-2.16.0 libunistring-0.9.10nb1 mozilla-rootcerts-1.0.20210916
+ nghttp2-1.46.0 p5-GSSAPI-0.28nb13 pango-1.48.10 pcre2-10.39
+ pkgin-21.10.1 py39-cElementTree-3.9.8 py39-expat-3.9.8
+ python39-3.9.9 qt5-qtbase-5.15.2nb7 ruby27-diva-1.1.1
+ ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7 ruby27-nokogiri-1.12.5
+ ruby27-racc-1.6.0 sudo-1.9.7p1nb1 tcsh-6.23.00nb2
+ wget-1.21.2nb1
 
 Need Checking:
 - bluetooth keyboard/mouse setting
 - RPI camera module
+ http://mail-index.netbsd.org/current-users/2021/11/16/msg041683.html
 
 Got Reports:
 - HDMI output works very well however I wanted to change the resolution
@@ -134,7 +155,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-06-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-17-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -357,15 +378,17 @@ pkgsrc Todo:
 
 =====================
 
-For Kansai Open Forum 2021 , BSD BOF.
+For Open Source Conference 2021 Online/Fukuoka , NetBSD BOF.
 I've updated raspberry-pi image.
 
-2021 Nov. 13 Sat 17:00-17:50 JST (UTC+9)
-https://www.k-of.jp/2021/session/bsd%e3%81%aa%e3%81%b2%e3%81%a8%e3%81%a8%e3%81%8d/
+2021 Nov.17 Sat 14:00-14:45 JST (UTC+9)
+https://event.ospn.jp/osc2021-online-fukuoka/session/453408
 
-Join meeting with Jitsi.
+Join meeting with Zoom/YoutubeLive.
+https://www.youtube.com/c/OSPNjp Room D
+https://ospn.connpass.com/event/223013/ to get Zoom link.
 
-http://www.re.soum.co.jp/~jun/KOF2021.pdf
+http://www.re.soum.co.jp/~jun/OSC2021fukuoka.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2021.rst

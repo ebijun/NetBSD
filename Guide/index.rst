@@ -23,10 +23,10 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
- OSC/OSC2021
+ Place/fukuoka
  RPI/RPIupdate2021
  RPI
  Luna
  latexpdf
  Place/intro
+ OSC/OSC2021

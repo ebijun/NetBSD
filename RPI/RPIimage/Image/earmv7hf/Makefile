@@ -12,7 +12,7 @@
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202108130630Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202111271930Z/evbarm-earmv7hf/binary
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2021-1/
 
@@ -36,11 +36,16 @@ KERNEL7=${BINARY}/kernel/netbsd-RPI2.gz
 LIST=man modules xbase xcomp xetc xfont xserver 
 
 #Firmware: 
-#git show HEAD |head 
-#commit ae9a493932e47e08cabb25a2728037298075fd00
-#Date:   Tue Apr 10 18:34:46 2018 +0100
+#git show HEAD |head
+#Author: Dom Cobley <popcornmix@gmail.com>
+#Date:   Tue Nov 2 13:31:23 2021 +0000
+#    kernel: dtoverlays: Update all image sensor overlays for Media Controller option
+#    See: https://github.com/raspberrypi/linux/pull/4645
+#
+#    firmware: ISP: Fix magenta colour in right hand image of stereo pair
+#    See: https://forums.raspberrypi.com/viewtopic.php?t=321089
 
-FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
+FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup4cd.dat fixup4x.dat fixup_db.dat fixup4.dat fixup4db.dat fixup_cd.dat fixup_x.dat start.elf start4cd.elf start4x.elf start_db.elf start4.elf start4db.elf start_cd.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
 # mount point
@@ -54,7 +59,7 @@ MNT_TMP=/mnt2
 VND_TMP=vnd2
 
 #all: file rpi extract cdunmount kernel-update bwfm-firmware
-all: file rpi extract bwfm-firmware
+all: file rpi extract bwfm-firmware firm
 
 #update: cdmount update-extract cdunmount
 
@@ -177,6 +182,7 @@ firm:
 	vnconfig ${VND} ${FILE}
 	mount_msdos /dev/${VND}e ${MNT}
 	for i in ${FIRM} ; do (cp ${FIRMPATH}/$$i /mnt); done
+	for i in ${FIRMPATH}/*.dtb ; do (cp  $$i /mnt/dtb); done
 	umount ${MNT}
 	vnconfig -u ${VND}
 
