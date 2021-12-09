@@ -1,5 +1,6 @@
 RELEASE=/usr/release/images/
-IMG=${RELEASE}/NetBSD-9.99.92-evbarm-aarch64-202111060010Z-install.img
+IMG=${RELEASE}/NetBSD-9.99.92-evbarm-aarch64-202112080400Z-install.img
+#IMG=${RELEASE}/NetBSD-9.99.92-evbarm-aarch64-202111060010Z-install.img
 
 #-rw-r--r--  1 root  wheel  1677721600 Sep 27 11:27 /usr/release/images/NetBSD-9.99.89-evbarm-aarch64-202109262140Z-install.img
 #-rw-r--r--  1 root  wheel  1677721600 Sep 26 01:50 /usr/release/images/NetBSD-9.99.88-evbarm-aarch64-202109251150Z-install.img
@@ -23,7 +24,7 @@ etcupdate:
 	etcupdate -a -s /mnt1/evbarm-aarch64/binary/sets/etc.tar.xz
 
 update:
-	for i in ${LIST} ;do tar xzpf $$i -C / ;  done
+	for i in ${LIST} ;do echo tar xzpf $$i -C / ;  done
 
 kernel-update:
 	cp /mnt1/evbarm-aarch64/binary/kernel/netbsd-GENERIC64.gz /
