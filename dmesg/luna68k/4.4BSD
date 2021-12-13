@@ -1,0 +1,122 @@
+amir63p# nono
+tap down: tap3
+nono: Load_aout "SCSIHD 6,d:boot" machine id $12c mismatch
+
+
+Stinger ver 0.0 [Phase-31]
+
+Physical Memory = 0x1000000  (16 MB)
+
+sc0: async, parity, scsi id 7
+sc0 at 0xe1000000, ipl 2
+sd0: NONO SCSIHD rev 0, 1048575 512 byte blocks
+sd0 at sc0, slave 6
+
+Phase-31> boot
+Booting sd(0,0)vmunix
+553712+31276+109260 start 0x0
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+	The Regents of the University of California.
+Copyright (c) 1992 Hewlett-Packard Company
+Copyright (c) 1992 Motorola Inc.
+All rights reserved.
+
+4.4BSD non-Lite #0: Tue Dec  7 11:46:58 JST 2021
+    mochid@olive:/amd/fir/vol1/home/fir/mochid/bsd44-build/hgw-tree/bsd4.4-extra-tree/90work/kern/GUM1
+LUNA-I (20MHz MC68030 CPU+MMU, 20MHz MC68881 FPU)
+real mem = 16773120
+avail mem = 12787712
+using 409 buffers containing 1675264 bytes of memory
+bmc0: port 1, address 0x51000004, intr 0x81d10
+bmc0 at 0x51000004
+sio0: port 0, address 0x51000000, intr 0x8112a (console)
+sio0 at 0x51000000
+sc0: async, parity, scsi id 7
+sc0 at 0xe1000000, ipl 2
+sd0: NONO SCSIHD rev 0, 1048575 512 byte blocks
+sd0 at sc0, slave 6
+le0: hardware address 02:00:01:93:4d:78
+bpf: le0 attached
+le0 at 0xf1000000, ipl 3
+root on sd0a  swap on sd0b  dump on sd0b
+bpf: sl0 attached
+bpf: sl1 attached
+bpf: sl2 attached
+bpf: sl3 attached
+bpf: lo0 attached
+WARNING: bad date in battery clock
+WARNING: preposterous time in file system -- CHECK AND RESET THE DATE!
+Automatic boot in progress: starting file system checks.
+/dev/rsd0a: FILESYSTEM CLEAN; SKIPPING CHECKS
+starting network
+ifconfig: ioctl (SIOCGIFFLAGS): no such interface
+ifconfig: ioctl (SIOCGIFFLAGS): no such interface
+ifconfig: ioctl (SIOCGIFFLAGS): no such interface
+ifconfig: my-netmask: bad value
+ifconfig: ioctl (SIOCGIFFLAGS): no such interface
+ifconfig: ioctl (SIOCGIFFLAGS): no such interface
+ifconfig: ioctl (SIOCGIFFLAGS): no such interface
+add host myname.my.domain: gateway localhost
+starting system logger, time daemontimed: [-dtM] [-i net|-n net] [-F host1 host2 ...]
+.
+checking for core dump...
+savecore: no core dump
+checking quotas:quotacheck: not found
+ done.
+quotaon: not found
+preserving editor files
+clearing /tmp
+turning on accounting
+accton: not found
+standard daemons: update cron.
+starting network daemons: routed namednamed: not found
+ printerlpd: not found
+ portmap mountdJul  4 05:00:15 myname mountd[60]: Canb/mountdtab
+ nfsd nfsiod sendmailsendmail: not found
+ inetd amd.
+starting local daemons:.
+Sun Jul  4 05:00:22 PDT 1976
+Jul  4 05:00:22 myname init: kernel security level changed from 0 to 1
+
+
+4.4BSD non-Lite (myname.my.domain) (console)
+
+login: root
+Last login: Sat Nov  6 09:48:49 on console
+Warning: no Kerberos tickets issued.
+Copyright (c) 1980, 1983, 1986, 1988, 1990, 1991, 1993, 1994
+        The Regents of the University of California.   All rights reserved.
+
+4.4BSD non-Lite #0: Tue Dec  7 11:46:58 JST 2021
+
+Welcome to 4.4BSD non-Lite!
+
+Terminal type? [unknown] 
+erase ^H, kill ^U, intr ^C status ^T
+Don't login as root, use the su command.
+myname# dmesg
+4.4BSD non-Lite #0: Tue Dec  7 11:46:58 JST 2021
+    mochid@olive:/amd/fir/vol1/home/fir/mochid/bsd44-build/hgw-tree/bsd4.4-extra-tree/90work/kern/GUM1
+LUNA-I (20MHz MC68030 CPU+MMU, 20MHz MC68881 FPU)
+real mem = 16773120
+avail mem = 12787712
+using 409 buffers containing 1675264 bytes of memory
+bmc0: port 1, address 0x51000004, intr 0x81d10
+bmc0 at 0x51000004
+sio0: port 0, address 0x51000000, intr 0x8112a (console)
+sio0 at 0x51000000
+sc0: async, parity, scsi id 7
+sc0 at 0xe1000000, ipl 2
+sd0: NONO SCSIHD rev 0, 1048575 512 byte blocks
+sd0 at sc0, slave 6
+le0: hardware address 02:00:01:93:4d:78
+bpf: le0 attached
+le0 at 0xf1000000, ipl 3
+root on sd0a  swap on sd0b  dump on sd0b
+bpf: sl0 attached
+bpf: sl1 attached
+bpf: sl2 attached
+bpf: sl3 attached
+bpf: lo0 attached
+WARNING: bad date in battery clock
+WARNING: preposterous time in file system -- CHECK AND RESET THE DATE!
