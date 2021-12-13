@@ -1,0 +1,4 @@
+#! /bin/sh
+echo "tap: "$1
+sudo /sbin/ifconfig $1 up
+sudo /sbin/brconfig bridge0 add $1

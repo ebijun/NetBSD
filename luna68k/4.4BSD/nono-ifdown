@@ -1,0 +1,4 @@
+#! /bin/sh
+echo "tap down: "$1
+sudo /sbin/brconfig bridge0 delete $1
+sudo /sbin/ifconfig $1 down
