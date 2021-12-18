@@ -1,5 +1,5 @@
-#VER=snapshots
-VER=7.0
+VER=snapshots
+#VER=7.0
 
 DIR=cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/
 VND0=/dev/vnd0
