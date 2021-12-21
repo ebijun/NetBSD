@@ -9,7 +9,7 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2021-1
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2022
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202111160720Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202112201100Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -30,14 +30,10 @@ LIST=man modules xbase xcomp xetc xfont xserver
 
 #Firmware: 
 #git show HEAD |head 
+#commit 303d0012cd73da63e21133dadd90532d8328f5c2 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Tue Nov 2 13:31:23 2021 +0000
-#    kernel: dtoverlays: Update all image sensor overlays for Media Controller option
-#    See: https://github.com/raspberrypi/linux/pull/4645
-#    
-#    firmware: ISP: Fix magenta colour in right hand image of stereo pair
-#    See: https://forums.raspberrypi.com/viewtopic.php?t=321089
-
+#Date:   Tue Dec 7 15:49:49 2021 +0000
+#    kernel: Bump to 5.10.83
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat    fixup4cd.dat fixup4x.dat  fixup_db.dat fixup4.dat   fixup4db.dat fixup_cd.dat fixup_x.dat start.elf    start4cd.elf start4x.elf  start_db.elf start4.elf   start4db.elf start_cd.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
