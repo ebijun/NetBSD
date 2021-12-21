@@ -1,21 +1,21 @@
-VERSION: :1,$s/2021-11-17/2021-11-17/g
-ISO:     :1,$s/02111160720Z/02111160720Z/g
+VERSION: :1,$s/2021-12-21/2021-12-21/g
+ISO:     :1,$s/202112201100Z/2202112201100Z/g
 NetBSD:  :1,$s/9.99.92/9.99.92/g
-PKGSRC:  :1,$s/2021-11-17/2021-1/
+PKGSRC:  :1,$s/2021-12-21/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-11-17-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2021-12-21-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-11-17-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2021-12-21-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-17-earmv6hf/2021-11-17-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-17-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-12-21-earmv6hf/2021-12-21-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-12-21-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.92 evbarm-earmv6hf 02111160720Z rpi.img from nyftp.
+- NetBSD 9.99.92 evbarm-earmv6hf 2202112201100Z rpi.img from nyftp.
 - Re: Raspberry Pi camera under NetBSD current
  http://mail-index.netbsd.org/current-users/2021/11/16/msg041683.html
 1. firmware copy start* and fix*
@@ -36,10 +36,6 @@ Date:   Tue Nov 16 18:46:39 2021 +0000
   seem to turn on the led unlike the original Pi zero 
   so you don't get any boot diagnostic flashes."
 
-- [Only earmv6hf] rsync-3.2.3 dump core. use rsync-3.2.2.
-  [1]   Bus error (core dumped) rsync -4 -acv -e ssh /usr/pkgsrc/packages/All/... 
-  rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
-  rsync error: error in rsync protocol data stream (code 12) at io.c(228) [Receiver=3.2.3]
 - OpenSSH 8.8
   "This release disables RSA signatures using the SHA-1 hash algorithm
    by default."
@@ -82,21 +78,30 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- dhcpcd-9.4.1 libc-12.220 NetBSD-9.99.92 openssh-8.8
- opensshd-8.8 sh-20181212-20211116065833Z
- tcsh-6.23.00 tzdata-2021e-(part-2021b) userland-NetBSD-9.99.92/evbarm
+ sh-20181212-20211220064724Z tcsh-6.23.01
 
 pkgsrc:
- curl-7.80.0 dbus-1.12.20nb2 digest-20211023 fribidi-1.0.11
- git-base-2.33.1 glib2-2.70.1 gnutls-3.7.2nb1 gtk2+-2.24.33nb3
- gtk3+-3.24.30nb1 harfbuzz-3.1.1 libcups-2.3.3op2nb3 libgpg-error-1.43
- libimagequant-2.16.0 libunistring-0.9.10nb1 mozilla-rootcerts-1.0.20210916
- nghttp2-1.46.0 p5-GSSAPI-0.28nb13 pango-1.48.10 pcre2-10.39
- pkgin-21.10.1 py39-cElementTree-3.9.8 py39-expat-3.9.8
- python39-3.9.9 qt5-qtbase-5.15.2nb7 ruby27-diva-1.1.1
- ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7 ruby27-nokogiri-1.12.5
- ruby27-racc-1.6.0 sudo-1.9.7p1nb1 tcsh-6.23.00nb2
- wget-1.21.2nb1
+ at-spi2-atk-2.38.0nb1 at-spi2-core-2.40.3nb1 atk-2.36.0nb1
+ bash-5.1.12 cairo-gobject-1.16.0nb6 curl-7.80.0nb1
+ cwrappers-20180325 desktop-file-utils-0.26nb1 fltk-1.3.8
+ fossil-2.17nb1 gdk-pixbuf2-2.42.6nb1 git-base-2.34.1nb1
+ glib2-2.70.2nb1 gmp-6.2.1nb1 gnutls-3.7.2nb2
+ gobject-introspection-1.68.0nb1 gtk2+-2.24.33nb4
+ gtk3+-3.24.30nb2 harfbuzz-3.1.2nb1 icu-70.1 libcups-2.3.3op2nb4
+ libfetch-2.39nb1 libffi-3.4.2nb1 libtasn1-4.18.0
+ libxkbcommon-1.3.1nb1 libxml2-2.9.12nb2 libxslt-1.1.34nb7
+ m17n-lib-1.8.0nb6 medit-1.2.0nb19 mlterm-3.9.1nb2
+ nghttp2-1.46.0nb1 p11-kit-0.24.0nb4 pango-1.48.10nb1
+ pkg_install-20211115 pkgin-21.12.0nb1 py39-cElementTree-3.9.9
+ py39-expat-3.9.9 python39-3.9.9nb1 qt5-qtbase-5.15.2nb8
+ qt5-qtx11extras-5.15.2nb3 qt5-qtxmlpatterns-5.15.2nb3
+ ruby27-atk-3.4.9nb1 ruby27-base-2.7.5 ruby27-cairo-gobject-3.4.9nb1
+ ruby27-gdk_pixbuf2-3.4.9nb1 ruby27-gio2-3.4.9nb1 ruby27-glib2-3.4.9nb1
+ ruby27-gobject-introspection-3.4.9nb1 ruby27-gtk2-3.4.3nb2
+ ruby27-mikutter-4.1.7nb1 ruby27-nokogiri-1.12.5nb1
+ ruby27-oauth-0.5.8 ruby27-pango-3.4.9nb1 shared-mime-info-1.10nb5
+ tcsh-6.23.01 uim-1.8.9pre20210104nb2 wayland-1.18.0nb4
+ wayland-protocols-1.20nb1 wget-1.21.2nb2 zsh-5.8nb3
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -155,7 +160,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-11-17-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2021-12-21-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
