@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (RPI) #0: Thu Nov  4 12:40:00 UTC 2021
+NetBSD 9.99.92 (RPI) #0: Mon Dec 20 06:47:24 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 178 MB
@@ -23,14 +23,12 @@ cpu0: L1 16KB/32B 4-way (128 set) write-back-locking-C VIPT Data cache
 vfp0 at cpu0: VFP11, rounding, exceptions
 fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
 fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
-simplebus4 at simplebus1
 bcmicu0 at simplebus1
 bcmcprman0 at simplebus1: BCM283x Clock Controller
 bcmtmr0 at simplebus1: VC System Timer
 bcmtmr0: interrupting on icu irq 3
 bcmaux0 at simplebus1
 /soc/thermal@7e212000 at simplebus1 not configured
-/soc/dsi@7e209000 at simplebus1 not configured
 bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 49
 bcmgpio0: pins 32..54 interrupting on icu irq 50
@@ -41,10 +39,10 @@ bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA6 DMA7 DMA8 DMA9 DMA10 DMA11
 bsciic0 at simplebus1: Broadcom Serial Controller
 bsciic0: interrupting on icu irq 53
 iic0 at bsciic0: I2C bus
-bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmmbox0 at simplebus1: VC mailbox
 bcmmbox0: interrupting on icu irq 65
 vcmbox0 at bcmmbox0
+/soc/firmware at simplebus1 not configured
 /soc/txp@7e004000 at simplebus1 not configured
 plcom0 at simplebus1: ARM PL011 UART
 plcom0: txfifo disabled
@@ -59,9 +57,10 @@ iic1 at bsciic1: I2C bus
 bsciic2 at simplebus1: Broadcom Serial Controller
 bsciic2: interrupting on icu irq 53
 iic2 at bsciic2: I2C bus
-/soc/vec@7e806000 at simplebus1 not configured
 dwctwo0 at simplebus1: USB controller
 dwctwo0: interrupting on icu irq 9
+bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
+/soc/vec@7e806000 at simplebus1 not configured
 /soc/hdmi@7e902000 at simplebus1 not configured
 /soc/gpu at simplebus1 not configured
 genfb0 at simplebus1: switching to framebuffer console

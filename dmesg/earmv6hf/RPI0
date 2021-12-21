@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (RPI) #0: Thu Nov  4 12:40:00 UTC 2021
+NetBSD 9.99.92 (RPI) #0: Mon Dec 20 06:47:24 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 448 MB
 avail memory = 429 MB
@@ -23,14 +23,12 @@ cpu0: L1 16KB/32B 4-way (128 set) write-back-locking-C VIPT Data cache
 vfp0 at cpu0: VFP11, rounding, exceptions
 fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
 fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
-simplebus4 at simplebus1
 bcmicu0 at simplebus1
 bcmcprman0 at simplebus1: BCM283x Clock Controller
 bcmtmr0 at simplebus1: VC System Timer
 bcmtmr0: interrupting on icu irq 3
 bcmaux0 at simplebus1
 /soc/thermal@7e212000 at simplebus1 not configured
-/soc/dsi@7e209000 at simplebus1 not configured
 bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 49
 bcmgpio0: pins 32..54 interrupting on icu irq 50
@@ -41,10 +39,10 @@ bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA6 DMA7 DMA8 DMA9 DMA10 DMA11
 bsciic0 at simplebus1: Broadcom Serial Controller
 bsciic0: interrupting on icu irq 53
 iic0 at bsciic0: I2C bus
-bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmmbox0 at simplebus1: VC mailbox
 bcmmbox0: interrupting on icu irq 65
 vcmbox0 at bcmmbox0
+/soc/firmware at simplebus1 not configured
 /soc/txp@7e004000 at simplebus1 not configured
 plcom0 at simplebus1: ARM PL011 UART
 plcom0: txfifo disabled
@@ -58,9 +56,10 @@ iic1 at bsciic1: I2C bus
 bsciic2 at simplebus1: Broadcom Serial Controller
 bsciic2: interrupting on icu irq 53
 iic2 at bsciic2: I2C bus
-/soc/vec@7e806000 at simplebus1 not configured
 dwctwo0 at simplebus1: USB controller
 dwctwo0: interrupting on icu irq 9
+bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
+/soc/vec@7e806000 at simplebus1 not configured
 /soc/hdmi@7e902000 at simplebus1 not configured
 /soc/gpu at simplebus1 not configured
 genfb0 at simplebus1: switching to framebuffer console
@@ -88,6 +87,17 @@ sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
 ld0 at sdmmc0: <0x02:0x544d:SA16G:0x69:0x48dd6eb8:0x153>
 ld0: 14784 MB, 7509 cyl, 64 head, 63 sec, 512 bytes/sect x 30277632 sectors
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+uhidev0 at uhub0 port 1 configuration 1 interface 0
+uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/1
+ukbd0 at uhidev0
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub0 port 1 configuration 1 interface 1
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/0
+uhidev1: 2 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhub0: autoconfiguration error: illegal enable change, port 1
+WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs

@@ -4,7 +4,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (RPI2) #0: Thu Nov  4 12:40:00 UTC 2021
+NetBSD 9.99.92 (RPI2) #0: Mon Dec 20 06:47:24 UTC 2021
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 448 MB
 avail memory = 425 MB
@@ -42,7 +42,6 @@ cpu3: L2 512KB/64B 16-way (512 set) write-through PIPT Unified cache
 vfp3 at cpu3: NEON MPE (VFP 3.0+), rounding, NaN propagation, denormals
 fclock0 at simplebus2: 19200000 Hz fixed clock (osc)
 fclock1 at simplebus2: 480000000 Hz fixed clock (otg)
-simplebus4 at simplebus1
 bcmicu0 at simplebus1
 bcmcprman0 at simplebus1: BCM283x Clock Controller
 bcmicu1 at simplebus1: Multiprocessor
@@ -52,7 +51,6 @@ armgtmr0 at gtmr0: Generic Timer (19200 kHz, virtual)
 timecounter: Timecounter "armgtmr0" frequency 19200000 Hz quality 500
 bcmaux0 at simplebus1
 /soc/thermal@7e212000 at simplebus1 not configured
-/soc/dsi@7e209000 at simplebus1 not configured
 bcmgpio0 at simplebus1: GPIO controller 2835
 bcmgpio0: pins 0..31 interrupting on icu irq 49
 bcmgpio0: pins 32..54 interrupting on icu irq 50
@@ -63,11 +61,10 @@ bcmdmac0 at simplebus1: DMA0 DMA2 DMA4 DMA5 DMA6 DMA7 DMA8 DMA9 DMA10 DMA11
 bsciic0 at simplebus1: Broadcom Serial Controller
 bsciic0: interrupting on icu irq 53
 iic0 at bsciic0: I2C bus
-bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
 bcmmbox0 at simplebus1: VC mailbox
 bcmmbox0: interrupting on icu irq 65
 vcmbox0 at bcmmbox0
-/soc/firmware/gpio at simplebus4 not configured
+/soc/firmware at simplebus1 not configured
 /soc/timer@7e003000 at simplebus1 not configured
 /soc/txp@7e004000 at simplebus1 not configured
 plcom0 at simplebus1: ARM PL011 UART
@@ -87,9 +84,10 @@ sdhc0: interrupting on icu irq 62
 bsciic2 at simplebus1: Broadcom Serial Controller
 bsciic2: interrupting on icu irq 53
 iic2 at bsciic2: I2C bus
-/soc/vec@7e806000 at simplebus1 not configured
 dwctwo0 at simplebus1: USB controller
 dwctwo0: interrupting on icu irq 9
+bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
+/soc/vec@7e806000 at simplebus1 not configured
 /soc/hdmi@7e902000 at simplebus1 not configured
 /soc/gpu at simplebus1 not configured
 genfb0 at simplebus1: switching to framebuffer console
