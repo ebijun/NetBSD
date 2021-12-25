@@ -17,9 +17,9 @@ check:
 	pkg_info |sort > ${DIR}/pkginfo
 
 diff:
-	diff sysinfo ${DIR}/sysinfo |more
-	diff pkginfo ${DIR}/pkginfo|more
-	diff ../dmesg/aarch64/${MACHINE} ${DIR}/dmesg|more
+	diff sysinfo ${DIR}/sysinfo 
+	diff pkginfo ${DIR}/pkginfo
+	diff ../dmesg/aarch64/${MACHINE} ${DIR}/dmesg
 	diff pkgchk.conf /usr/pkgsrc/pkgchk.conf
 
 copy:

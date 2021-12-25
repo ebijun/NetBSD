@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20211107)
+Subject: apple m1 status update (20211226)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
@@ -13,9 +13,12 @@ Hardware:
  Apple Mac mini M1 2020 A2348 
  USB SSD 128GB ELECOM ESD-EC0120GRDR
 
-Filesystem   1G-blocks      Used     Avail %Cap Mounted on
-/dev/dk1           109        15        89  14% /
-/dev/dk0             0         0         0  35% /boot
+Filesystem   1M-blocks      Used     Avail %Cap Mounted on
+/dev/dk1        112570     71795     35146  67% /
+/dev/dk0            79        32        47  40% /boot
+ptyfs                0         0         0 100% /dev/pts
+procfs               0         0         0 100% /proc
+tmpfs             1891         0      1891   0% /var/shm
 
 ToDo:
 - audio
@@ -23,31 +26,164 @@ ToDo:
 
 pkgsrc:
 - pkgsrc packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2021-1/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2022/
   pkgin support
 
 System Updates:
 
 sysinfo:
- NetBSD-9.99.92
+ dhcpcd-9.4.1 libc-12.220 NetBSD-9.99.93 openssh-8.8 opensshd-8.8
+ sh-20181212-20211222023253Z tcsh-6.23.01 tzdata-2021e-(part-2021b)
+ userland-NetBSD-9.99.93/evbarm
 
 pkgsrc:
- ImageMagick-7.1.0.8nb2 ap24-php74-7.4.24nb6 apache-2.4.51
- asciidoc-9.1.1 bison-3.8.2 deforaos-pdfviewer-0.1.0nb12
- deforaos-player-0.2.0nb3 digest-20211005 ffmpeg4-4.4nb10
- ffmpegthumbnailer-2.2.2nb2 firefox-92.0.1 firefox-l10n-92.0.1
- gdbus-codegen-2.70.0 glib2-2.70.0 glib2-tools-2.70.0
- gnupg2-2.2.32 gvfs-1.6.7nb56 itstool-2.0.7 libaom-3.1.3
- libfetch-2.39nb1 libgweather-40.0nb3 libheif-1.12.0nb1
- mplayer-share-1.4nb13 mpv-0.33.1nb6 ncurses-6.2nb4
- neon-0.32.1 py27-libxml2-2.9.12nb1 py27-libxslt-1.1.34nb3
- py39-certifi-2021.10.8 py39-charset-normalizer-2.0.7
- py39-cryptodome-3.11.0 py39-pytz-2021.3 python27-2.7.18nb4
- qmmp-1.5.1nb3 samba-4.13.11 vala-0.54.1 wordpress-5.8
- xfce4-tumbler-0.3.0nb12
+ GConf-3.2.3nb11 ImageMagick-7.1.0.17 ImageMagick6-6.9.11.7nb12
+ ORBit2-2.14.19nb6 SDL-1.2.15nb36 SDL2-2.0.18 adwaita-icon-theme-40.1.1
+ ap24-php74-7.4.27nb7 apache-2.4.52 apr-1.7.0nb2 apr-util-1.6.1nb12
+ asciidoc-9.1.1nb1 aspell-0.60.8nb3 at-spi2-atk-2.38.0nb1
+ at-spi2-core-2.40.3nb1 atk-2.36.0nb1 atril-1.24.1nb2
+ automake-1.16.5 avahi-0.8nb5 babl-0.1.88nb1 bash-5.1.12
+ bison-3.8.2 blas-3.10.0 boehm-gc-8.2.0nb1 boost-headers-1.77.0nb1
+ boost-libs-1.77.0nb1 cairo-gobject-1.16.0nb6 cairomm-1.14.3
+ caja-1.24.1nb1 caja-dropbox-1.24.0nb4 caja-extensions-1.24.1nb1
+ cblas-3.10.0 clang-13.0.0nb1 cmake-3.22.1nb1 consolekit-1.2.4nb1
+ curl-7.80.0nb1 dbus-1.12.20nb2 dbus-glib-0.112nb1
+ dbus-python-common-1.2.18nb1 dconf-0.36.0nb7 deforaos-browser-0.5.4nb2
+ deforaos-camera-0.3.0nb4 deforaos-cpp-0.0.3nb6 deforaos-editor-0.4.1nb4
+ deforaos-keyboard-0.4.0nb4 deforaos-libdatabase-0.0.2nb5
+ deforaos-libdesktop-0.4.0nb6 deforaos-locker-0.4.1nb4
+ deforaos-mailer-0.2.0nb7 deforaos-mixer-0.4.0nb4 deforaos-panel-0.4.1nb1
+ deforaos-pdfviewer-0.1.0nb13 deforaos-phone-0.6.0nb5 deforaos-todo-0.3.0nb4
+ desktop-file-utils-0.26nb1 digest-20211023 djvulibre-lib-3.5.27
+ double-conversion-3.1.6 emacs26-26.3nb17 enchant-1.6.0nb10
+ enchant2-2.3.2nb1 engrampa-1.24.2nb1 eom-1.24.2nb1 esound-0.2.41nb3
+ exempi-2.5.2nb3 exiv2-0.27.5 farstream-0.2.9nb10 ffmpeg4-4.4.1nb1
+ ffmpegthumbnailer-2.2.2nb2 findutils-4.8.0 firefox-95.0.1nb1
+ firefox-l10n-95.0.1 fltk-1.3.8 fossil-2.17nb1 fribidi-1.0.11
+ gawk-5.1.1 gconfmm-2.28.3nb28 gdbm-1.22 gdbus-codegen-2.70.2
+ gdk-pixbuf2-2.42.6nb1 gdk-pixbuf2-xlib-2.40.2nb1 gegl-0.4.32nb1
+ geocode-glib-3.26.2nb3 gexiv2-0.12.2nb4 ghostscript-9.05nb27
+ ghostscript-agpl-9.55.0nb1 gimp-2.10.28nb2 git-base-2.34.1nb1
+ glib-networking-2.64.3nb5 glib2-2.70.2nb1 glib2-tools-2.70.2
+ glibmm-2.66.2nb1 gmake-4.3nb3 gmp-6.2.1nb2 gnome-desktop-2.32.1nb47
+ gnome-doc-utils-0.20.10nb10 gnome-icon-theme-symbolic-3.12.0nb16
+ gnome-themes-standard-3.20.2nb16 gnupg2-2.2.33nb1 gnutls-3.7.2nb2
+ gobject-introspection-1.68.0nb1 graphviz-2.49.3nb1
+ gsettings-desktop-schemas-40.0nb1 gsl-2.7.1 gspell-1.8.3nb8
+ gssdp-1.0.3nb17 gst-plugins0.10-base-0.10.36nb19
+ gst-plugins0.10-good-0.10.31nb9 gst-plugins0.10-oss-0.10.31nb7
+ gst-plugins0.10-v4l2-0.10.31nb7 gst-plugins1-base-1.18.5nb1
+ gstreamer0.10-0.10.36nb18 gstreamer1-1.18.5nb1
+ gtk-doc-1.32nb7 gtk2+-2.24.33nb4 gtk2-engines-2.20.2nb30
+ gtk2-engines-murrine-0.98.2nb13 gtk3+-3.24.30nb2
+ gtksourceview3-3.24.11nb7 gtksourceview4-4.8.0nb3
+ gtkspell-2.0.16nb35 gts-0.7.6nb2 gupnp-1.0.3nb13
+ gupnp-igd-0.2.5nb11 gvfs-1.6.7nb57 hal-0.5.14nb29
+ harfbuzz-3.1.2nb1 harfbuzz-icu-3.1.2nb1 hunspell-1.7.0nb6
+ icu-70.1 imlib2-1.7.4 itstool-2.0.7 jasper-2.0.33nb1
+ json-glib-1.6.2nb1 jwm-2.4.0nb1 kpathsea-6.3.3 lapack-3.10.0
+ lapacke-3.10.0 ldb-2.2.3 libIDL-0.8.14nb6 libabw-0.1.3nb10
+ libaom-3.2.0 libappindicator-12.10.0nb10 libass-0.15.2nb1
+ libatomic_ops-7.6.12 libbluray-1.3.0nb2 libcanberra-0.30nb6
+ libcdr-0.1.7nb4 libcroco-0.6.13nb5 libcups-2.3.3op2nb4
+ libdbusmenu-glib-12.10.2nb14 libdbusmenu-gtk3-12.10.2nb23
+ libe-book-0.1.3nb20 libetonyek-0.1.10nb2 libexif-0.6.24
+ libexttextcat-3.4.6 libfakekey-0.1 libfetch-2.39nb1
+ libffi-3.4.2nb1 libfreehand-0.1.2nb11 libglade-2.6.4nb38
+ libgnome-keyring-3.12.0nb2 libgpg-error-1.43 libgsf-1.14.47nb4
+ libgtop-2.28.4nb20 libgweather-40.0nb4 libgxps-0.2.2nb25
+ libheif-1.12.0nb1 libical-3.0.12 libindicator-12.10.1nb13
+ liblangtag-0.6.3nb5 liblqr-0.4.2nb2 libmatekbd-1.24.1nb1
+ libmatemixer-1.24.0nb5 libmateweather-1.24.1nb1 libmikmod-3.3.11.1nb8
+ libmspub-0.1.4nb19 libmypaint-1.6.1 libmysofa-1.2.1
+ libnice-0.1.16nb9 libnotify-0.7.9nb4 libpeas-1.26.0nb3
+ libpurple-2.14.4nb4 libqxp-0.0.2nb13 libreoffice-7.2.4.1
+ librsvg-2.50.7nb1 libsecret-0.20.4nb3 libsexy-0.1.11nb37
+ libsoup-2.70.0nb6 libtasn1-4.18.0 libunique-1.1.6nb33
+ libunistring-0.9.10nb1 libv4l-1.22.1 libvisio-0.1.7nb13
+ libvpx-1.11.0 libwmf-0.2.8.4nb20 libwnck-2.30.7nb2
+ libwnck3-3.36.0nb1 libxfce4gui-4.10.0nb20 libxfce4ui-4.16.1nb1
+ libxfce4util-4.16.0nb1 libxkbcommon-1.3.1nb1 libxklavier-5.4nb8
+ libxml2-2.9.12nb2 libxslt-1.1.34nb7 libzip-1.8.0nb2
+ libzmf-0.0.2nb21 llvm-13.0.0nb1 lua53-gi-0.9.2nb2
+ m17n-lib-1.8.0nb6 marco-1.24.2nb2 mate-applets-1.24.1nb1
+ mate-backgrounds-1.24.2nb1 mate-calc-1.24.2nb1 mate-common-1.24.2nb1
+ mate-control-center-1.24.2nb1 mate-desktop-1.24.1nb1
+ mate-icon-theme-1.24.0nb3 mate-icon-theme-faenza-1.20.0nb9
+ mate-indicator-applet-1.24.0nb3 mate-media-1.24.1nb1
+ mate-menus-1.24.1nb1 mate-netbook-1.24.0nb3
+ mate-notification-daemon-1.24.2nb1 mate-panel-1.24.2nb1
+ mate-polkit-1.24.0nb4 mate-power-manager-1.24.3nb1
+ mate-screensaver-1.24.2nb1 mate-sensors-applet-1.24.1nb1
+ mate-session-manager-1.24.3nb1 mate-settings-daemon-1.24.2nb1
+ mate-terminal-1.24.1nb2 mate-themes-3.22.22nb1
+ mate-utils-1.24.0nb3 medit-1.2.0nb19 meson-0.60.2
+ mktexlsr-2020 mlterm-3.9.1nb2 modular-xorg-xephyr-1.20.14
+ mozilla-rootcerts-1.0.20210916 mozo-1.24.1nb1 mpg123-1.29.3
+ mplayer-share-1.4nb14 mypaint-brushes-2.0.2nb1 nasm-2.15.05nb1
+ ncurses-6.3 ncursesw-6.3 neon-0.32.1nb2 netpbm-10.86.25
+ nghttp2-1.46.0nb1 nginx-1.20.2nb1 nono-0.2.4nb1 nspr-4.33
+ nss-3.73nb1 openal-soft-1.21.1nb3 openexr-3.1.3 osabi-NetBSD-9.99.93
+ p11-kit-0.24.0nb4 p5-ExtUtils-Depends-0.8001 p5-GSSAPI-0.28nb13
+ p5-URI-5.10 p5-glib2-1.3293nb2 pam-pwauth_suid-1.2nb1 pango-1.48.10nb1
+ pciutils-3.7.0nb2 pcre2-10.39 php-7.4.27 php74-curl-7.4.27nb12
+ php74-fpm-7.4.27nb8 php74-gd-7.4.27nb1 php74-iconv-7.4.27
+ php74-intl-7.4.27nb7 php74-json-7.4.27 php74-mbstring-7.4.27
+ php74-mysqli-7.4.27nb2 php74-pdo-7.4.27 php74-pdo_sqlite-7.4.27nb7
+ php74-posix-7.4.27 php74-sqlite3-7.4.27nb7 php74-zip-7.4.27nb7
+ php74-zlib-7.4.27nb1 pluma-1.24.2nb4 podofo-0.9.6nb2
+ policykit-0.9nb30 polkit-0.120nb1 poppler-21.11.0
+ poppler-cpp-21.11.0 poppler-data-0.4.11 poppler-glib-21.11.0nb1
+ postgresql13-client-13.5nb1 potrace-1.15 ptexenc-1.3.9
+ pulseaudio-15.0nb1 py-gobject-shared-2.28.7nb6 py27-gobject-2.28.7nb3
+ py27-gstreamer0.10-0.10.22nb9 py27-gtk2-2.24.0nb38 py27-libxml2-2.9.12nb2
+ py27-libxslt-1.1.34nb4 py39-OpenSSL-21.0.0 py39-cElementTree-3.9.9
+ py39-cairo-1.20.1 py39-certifi-2021.10.8 py39-cffi-1.15.0
+ py39-charset-normalizer-2.0.9 py39-cparser-2.21 py39-cryptodome-3.12.0
+ py39-dbus-1.2.18nb1 py39-docutils-0.17.1 py39-expat-3.9.9
+ py39-gobject3-3.36.1nb2 py39-imagesize-1.3.0 py39-iso8601-1.0.2
+ py39-libxml2-2.9.12nb2 py39-lxml-4.7.1 py39-markdown-3.2.2
+ py39-packaging-21.3 py39-pyparsing-3.0.6 py39-pytz-2021.3
+ py39-setuptools-59.6.0 py39-snowballstemmer-2.2.0 py39-sphinx-4.3.2
+ py39-sphinxcontrib-htmlhelp-2.0.0 py39-sqlite3-3.9.9nb20
+ python27-2.7.18nb6 python37-3.7.12nb1 python38-3.8.12nb1
+ python39-3.9.9nb1 qmmp-1.5.1nb5 qt5-qtbase-5.15.2nb8
+ qt5-qtdeclarative-5.15.2nb4 qt5-qtlocation-5.15.2nb3
+ qt5-qtmultimedia-5.15.2nb7 qt5-qtsensors-5.15.2nb3
+ qt5-qtserialport-5.15.2nb3 qt5-qtsvg-5.15.2nb4
+ qt5-qttools-5.15.2nb7 qt5-qtwebchannel-5.15.2nb3
+ qt5-qtwebsockets-5.15.2nb3 qt5-qtx11extras-5.15.2nb3
+ qt5-qtxmlpatterns-5.15.2nb3 raptor2-2.0.15nb23
+ rarian-0.8.1nb8 rasqal-0.9.33nb24 redland-1.0.17nb31
+ ruby27-atk-3.4.9nb1 ruby27-base-2.7.5 ruby27-cairo-gobject-3.4.9nb1
+ ruby27-diva-1.1.1 ruby27-gdk_pixbuf2-3.4.9nb1 ruby27-gio2-3.4.9nb1
+ ruby27-glib2-3.4.9nb1 ruby27-gobject-introspection-3.4.9nb1
+ ruby27-gtk2-3.4.3nb2 ruby27-mikutter-4.1.7nb1 ruby27-nokogiri-1.12.5nb1
+ ruby27-oauth-0.5.8 ruby27-pango-3.4.9nb1 ruby27-racc-1.6.0
+ ruby27-red-datasets-0.1.4 ruby27-zip-2.3.2 rust-1.56.1nb1
+ samba-4.13.15 serf-1.3.9nb2 shared-mime-info-1.10nb5
+ sofia-sip-1.12.11nb6 sqlite3-3.37.0nb1 sudo-1.9.7p1nb1
+ sylpheed-3.7.0nb9 tcl-8.6.12nb1 tcsh-6.23.01
+ tk-8.6.12 uim-1.8.9pre20210104nb2 unittest-cpp-2.0.0
+ upower-0.99.13nb1 vala-0.54.4 vte-0.28.1nb28
+ vte3-0.60.3nb13 waf-2.0.23 wayland-1.18.0nb4
+ wayland-protocols-1.20nb1 web2c-2021 webkit-gtk-2.34.3
+ wget-1.21.2nb2 wordpress-5.8 wxGTK30-3.0.5.1nb5
+ xfce4-4.16.0nb2 xfce4-appfinder-4.16.1nb1 xfce4-conf-4.16.0nb1
+ xfce4-desktop-4.16.0nb1 xfce4-exo-4.16.2nb1 xfce4-garcon-4.16.1nb1
+ xfce4-icon-theme-4.4.3nb35 xfce4-mousepad-0.5.8nb1
+ xfce4-orage-4.12.1nb26 xfce4-panel-4.16.3nb1
+ xfce4-power-manager-4.16.0nb1 xfce4-session-4.16.0nb1
+ xfce4-settings-4.16.2nb1 xfce4-terminal-0.8.10nb2
+ xfce4-thunar-4.16.10nb1 xfce4-tumbler-4.16.0nb1
+ xfce4-wm-4.16.1nb1 xfce4-wm-themes-4.10.0nb17
+ xkeyboard-config-2.34 xmlto-0.0.28nb6 xnp2-0.86nb12
+ xscreensaver-5.45nb5 xterm-370 xxhash-0.8.1
+ yelp-tools-3.32.2nb4 yelp-xsl-3.32.1nb1 zenity-3.41.0nb1
+ zsh-5.8nb3 zziplib-0.13.72nb1
 
 Version: 
- NetBSD 9.99.92 (GENERIC64) #0: Fri Nov  5 23:39:47 UTC 2021  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.93 (GENERIC64) #0: Wed Dec 22 02:32:53 UTC 2021  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
