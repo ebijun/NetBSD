@@ -1,10 +1,11 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
+    2018, 2019, 2020, 2021, 2022
+    The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.93 (GENERIC64) #0: Wed Dec 22 02:32:53 UTC 2021
+NetBSD 9.99.93 (GENERIC64) #0: Sat Jan  8 06:58:40 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 7564 MB
 avail memory = 7302 MB
@@ -181,15 +182,15 @@ genfb0: framebuffer at 0xe0df0000, size 1920x1080, depth 32, stride 7680
 wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
-appledart0 (/soc/iommu@681008000): error addr 0x00000000807844e0 status 0x09000400
-appledart1 (/soc/iommu@682008000): error addr 0x00000000516cc65f status 0x05000400
-appledart2 (/soc/iommu@683008000): error addr 0x00000000a7c605ee status 0x0f000400
-appledart0 (/soc/iommu@681008000): error addr 0x00000000807844e0 status 0x09000400
-appledart1 (/soc/iommu@682008000): error addr 0x00000000516cc65f status 0x05000400
-appledart2 (/soc/iommu@683008000): error addr 0x00000000a7c605ee status 0x0f000400
-appledart1 (/soc/iommu@682008000): error addr 0x00000000516cc65f status 0x05000400
-appledart2 (/soc/iommu@683008000): error addr 0x00000000a7c605ee status 0x0f000400
-appledart2 (/soc/iommu@683008000): error addr 0x00000000a7c605ee status 0x0f000400
+appledart0 (/soc/iommu@681008000): error addr 0x0000000090604462 status 0x09000400
+appledart1 (/soc/iommu@682008000): error addr 0x0000000050eec65f status 0x06000400
+appledart2 (/soc/iommu@683008000): error addr 0x00000000d7c6216a status 0x0f000400
+appledart0 (/soc/iommu@681008000): error addr 0x0000000090604462 status 0x09000400
+appledart1 (/soc/iommu@682008000): error addr 0x0000000050eec65f status 0x06000400
+appledart2 (/soc/iommu@683008000): error addr 0x00000000d7c6216a status 0x0f000400
+appledart1 (/soc/iommu@682008000): error addr 0x0000000050eec65f status 0x06000400
+appledart2 (/soc/iommu@683008000): error addr 0x00000000d7c6216a status 0x0f000400
+appledart2 (/soc/iommu@683008000): error addr 0x00000000d7c6216a status 0x0f000400
 entropy: WARNING: extracting entropy too early
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
@@ -216,15 +217,21 @@ sd0: 111 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 234441648 sectors
 sd0: GPT GUID: 984a61de-afb5-4fba-be4c-acc691a0cc8e
 dk0 at sd0: "EFI", 163840 blocks at 32768, type: msdos
 dk1 at sd0: "netbsd-root", 234242048 blocks at 196608, type: ffs
-uhidev0 at uhub1 port 2 configuration 1 interface 0
-uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/1
+uhub6 at uhub1 port 2: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1.10/3.00, addr 2
+uhub6: 4 ports with 4 removable, self powered
+uhidev0 at uhub6 port 1 configuration 1 interface 0
+uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub1 port 2 configuration 1 interface 1
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/0
+uhidev1 at uhub6 port 1 configuration 1 interface 1
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhidev2 at uhub6 port 2 configuration 1 interface 0
+uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 4, iclass 3/1
+ums0 at uhidev2: 3 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
 boot device: dk1
 root on dk1
 root file system type: ffs
@@ -234,57 +241,3 @@ WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
-ukbd0: was console keyboard
-wskbd0: detached
-ukbd0: detached
-uhidev0: detached
-uhidev0: at uhub1 port 2 (addr 2) disconnected
-uhid0: detached
-uhid1: detached
-uhidev1: detached
-uhidev1: at uhub1 port 2 (addr 2) disconnected
-uhub6 at uhub1 port 2: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1.10/3.00, addr 3
-uhub6: 4 ports with 4 removable, self powered
-uhidev0 at uhub6 port 1 configuration 1 interface 0
-uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
-ukbd0 at uhidev0
-wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub6 port 1 configuration 1 interface 1
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
-uhidev1: 2 report ids
-uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
-uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
-uhidev2 at uhub6 port 2 configuration 1 interface 0
-uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 5, iclass 3/1
-ums0 at uhidev2: 3 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
-ukbd0: was console keyboard
-wskbd0: detached
-ukbd0: detached
-uhidev0: detached
-uhidev0: at uhub6 port 1 (addr 4) disconnected
-uhid0: detached
-uhid1: detached
-uhidev1: detached
-uhidev1: at uhub6 port 1 (addr 4) disconnected
-wsmouse0: detached
-ums0: detached
-uhidev2: detached
-uhidev2: at uhub6 port 2 (addr 5) disconnected
-uhub6: detached
-uhub6: at uhub1 port 2 (addr 3) disconnected
-uhub6 at uhub1 port 2: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1.10/3.00, addr 6
-uhub6: 4 ports with 4 removable, self powered
-uhidev0 at uhub6 port 1 configuration 1 interface 0
-uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 7, iclass 3/1
-ukbd0 at uhidev0
-wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub6 port 1 configuration 1 interface 1
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 7, iclass 3/0
-uhidev1: 2 report ids
-uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
-uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
-uhidev2 at uhub6 port 2 configuration 1 interface 0
-uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 8, iclass 3/1
-ums0 at uhidev2: 3 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
