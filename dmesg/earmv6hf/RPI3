@@ -1,10 +1,11 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
+    2018, 2019, 2020, 2021, 2022
+    The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (RPI2) #0: Mon Dec 20 06:47:24 UTC 2021
+NetBSD 9.99.93 (RPI2) #0: Sat Jan  8 17:25:19 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -128,27 +129,21 @@ usmsc0: vendor 0424 (0x0424) product ec00 (0xec00), rev 2.00/2.00, addr 3
 smscphy0 at usmsc0 phy 1: SMSC LAN8700 10/100 Ethernet Transceiver, rev. 3
 smscphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
 usmsc0: Ethernet address b8:27:eb:b4:61:d5
-uhidev0 at uhub1 port 2 configuration 1 interface 0
+uhidev0 at uhub1 port 4 configuration 1 interface 0
 uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub1 port 2 configuration 1 interface 1
+uhidev1 at uhub1 port 4 configuration 1 interface 1
 uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
-umass0 at uhub1 port 3 configuration 1 interface 0
-umass0: StoreJet Transcend (0x8564) StoreJet Transcend (0x7000), rev 2.10/80.00, addr 5
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
 uhub0: autoconfiguration error: illegal enable change, port 1
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.92/modules
+kern.module.path=/stand/evbarm/9.99.93/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
@@ -168,7 +163,14 @@ bwfm0: Found Firmware file: brcmfmac43430-sdio.bin
 bwfm0: NVRAM file default:    brcmfmac43430-sdio.txt
 bwfm0: NVRAM file model-spec: brcmfmac43430-sdio.raspberrypi,3-model-b.txt
 bwfm0: Found NVRAM file: brcmfmac43430-sdio.raspberrypi,3-model-b.txt
+umass0 at uhub1 port 3 configuration 1 interface 0
+umass0: StoreJet Transcend (0x8564) StoreJet Transcend (0x7000), rev 2.10/80.00, addr 5
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 bwfm0: CHIPACTIVE
 bwfm0: wl0: Oct 23 2017 03:55:53 version 7.45.98.38 (r674442 CY) FWID 01-e58d219f
 bwfm0: address b8:27:eb:e1:34:80
 wsdisplay0: screen 4 added (default, vt100 emulation)
+usmsc0: DAD duplicate address 2407:c800:3f11:a0f::8 from b8:27:eb:dd:49:2d:87:00
