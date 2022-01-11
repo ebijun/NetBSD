@@ -56,8 +56,9 @@ sphinxに必要なlatex環境インストール
  # pkg_add tex-needspace
  # pkg_add tex-kvsetkeys
  # pkg_add tex-geometry
-  # pkg_add tex-hyperref
-   # pkg_add py-sphinxcontrib-svg2pdfconverter
+ # pkg_add tex-hyperref
+ # pkg_add py-sphinxcontrib-svg2pdfconverter
+ # pkg_add tex-tex-gyre
  
 dvipdfmx設定変更
 -------------------
