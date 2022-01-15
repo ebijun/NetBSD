@@ -5,9 +5,9 @@ ARCH=aarch64
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2021-1/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2022/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202112051210Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202201141100Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img.gz
 #RPI=${BINARY}/gzimg/arm64mbr.img.gz

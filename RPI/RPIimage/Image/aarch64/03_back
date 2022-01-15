@@ -1,15 +1,17 @@
 MNT=/mnt
-dd if=/dev/rsd0d of=back.img bs=4096 count=614400 progress=6000
+dd if=/dev/rsd0d of=back.img bs=4096 count=614400 progress=4000
 
 DIR=tmp`date +%Y%m%d-%H%M`
 mkdir $DIR
 
 vnconfig vnd0 back.img
+sleep 5
 ROOT=`dkctl vnd0 listwedges|grep ffs |awk -F: '{print $1}'`
 echo ${ROOT}
 
 fsck /dev/${ROOT}
 mount /dev/${ROOT} ${MNT}
+ls ${MNT}
 
 for i in dmesg pkginfo version sysinfo
 do

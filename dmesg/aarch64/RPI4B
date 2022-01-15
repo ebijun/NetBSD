@@ -1,10 +1,11 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
+    2018, 2019, 2020, 2021, 2022
+    The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (GENERIC64) #0: Sun Dec  5 12:06:23 UTC 2021
+NetBSD 9.99.93 (GENERIC64) #0: Fri Jan 14 07:40:52 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3927 MB
 avail memory = 3791 MB
@@ -31,7 +32,7 @@ ACPI: SSDT 0x0000000033B2ED98 000277 (v02 RPIFDN RPI4EMMC 00000002 INTL 20190509
 ACPI: SSDT 0x0000000033B2F198 000244 (v05 RPIFDN RPI4XHCI 00000002 INTL 20190509)
 ACPI: BGRT 0x0000000033B2FE18 000038 (v01 INTEL  EDK2     00000002      01000013)
 ACPI: 3 ACPI AML tables successfully acquired and loaded
-acpi0 at acpifdt0: Intel ACPICA 20210930
+acpi0 at acpifdt0: Intel ACPICA 20211217
 acpi0: X/RSDT: OemId <RPIFDN,RPI4    ,00000200>, AslId <    ,01000013>
 cpu0 at acpi0: Arm Cortex-A72 r0p3 (v8-A), id 0x0
 cpu0: package 0, core 0, smt 0
@@ -139,10 +140,10 @@ cpu3: PMU interrupting on irq 51
 IPsec: Initialized Security Association Processing.
 aes: ARM NEON vpaes
 chacha: ARM NEON ChaCha
-sdmmc1: SD card status: 4-bit, C10, U3, V30, A1
-ld1 at sdmmc1: <0x74:0x4a60:USDU1:0x20:0x41b7d781:0x14c>
-ld1: 235 GB, 30743 cyl, 255 head, 63 sec, 512 bytes/sect x 493895680 sectors
-ld1: GPT GUID: a852220f-8bb8-4918-bb6c-7f504de26c28
+sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
+ld1 at sdmmc1: <0x02:0x544d:SA16G:0x69:0x48dcd019:0x153>
+ld1: 14784 MB, 7509 cyl, 64 head, 63 sec, 512 bytes/sect x 30277632 sectors
+ld1: GPT GUID: 485ccde7-121f-4c06-b5f1-34cfe5fb0b80
 dk0 at ld1: "EFI", 163840 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 4751355 blocks at 163843, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -178,10 +179,10 @@ sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 boot device: dk1
 root on dk1
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.92/modules
+kern.module.path=/stand/evbarm/9.99.93/modules
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.bin
-WARNING: clock lost 47 days
+WARNING: clock lost 87 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
