@@ -1,10 +1,11 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
+    2018, 2019, 2020, 2021, 2022
+    The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (GENERIC64) #0: Sat Nov  6 13:39:06 UTC 2021
+NetBSD 9.99.93 (GENERIC64) #0: Sun Jan 16 20:43:20 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3948 MB
 avail memory = 3811 MB
@@ -13,10 +14,10 @@ Kernelized RAIDframe activated
 armfdt0 (root)
 simplebus0 at armfdt0: Pine64 Pinebook Pro
 cpus0 at simplebus0
-simplebus1 at simplebus0
 psci0 at simplebus0: PSCI 1.1
-simplebus2 at simplebus0
+simplebus1 at simplebus0
 cpu0 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x0
+cpu0: package 0, core 0, smt 0
 cpu0: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu0: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu0: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -27,6 +28,7 @@ cpu0: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
 cpu0: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt0 at cpu0
 cpu1 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x1
+cpu1: package 0, core 1, smt 0
 cpu1: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu1: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu1: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -37,6 +39,7 @@ cpu1: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
 cpu1: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt1 at cpu1
 cpu2 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x2
+cpu2: package 0, core 2, smt 0
 cpu2: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu2: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu2: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -47,6 +50,7 @@ cpu2: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
 cpu2: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt2 at cpu2
 cpu3 at cpus0: Arm Cortex-A53 r0p4 (v8-A), id 0x3
+cpu3: package 0, core 3, smt 0
 cpu3: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu3: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu3: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -57,6 +61,7 @@ cpu3: revID=0x180, PMCv3, 4k table, 64k table, 16bit ASID
 cpu3: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt3 at cpu3
 cpu4 at cpus0: Arm Cortex-A72 r0p2 (v8-A), id 0x100
+cpu4: package 1, core 0, smt 0
 cpu4: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu4: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu4: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -67,6 +72,7 @@ cpu4: revID=0x4, PMCv3, 4k table, 64k table, 16bit ASID
 cpu4: auxID=0x11120, GICv3, FP, CRC32, SHA1, SHA256, AES+PMULL, NEON, rounding, NaN propagation, denormals, 32x64bitRegs, Fused Multiply-Add
 cpufreqdt4 at cpu4
 cpu5 at cpus0: Arm Cortex-A72 r0p2 (v8-A), id 0x101
+cpu5: package 1, core 1, smt 0
 cpu5: IC enabled, DC enabled, EL0/EL1 stack Alignment check enabled
 cpu5: Cache Writeback Granule 16B, Exclusives Reservation Granule 16B
 cpu5: Dcache line 64, Icache line 64, DIC=0, IDC=0, LoUU=1, LoC=2, LoUIS=1
@@ -135,9 +141,9 @@ rkreg0 at rkpmic0: vdd_center
 rkreg1 at rkpmic0: vdd_cpu_l
 rkreg2 at rkpmic0: vcc_ddr
 rkreg3 at rkpmic0: vcc_1v8
-rkreg4 at rkpmic0: vcc1v8_dvp
-rkreg5 at rkpmic0: vcc3v0_touch
-rkreg6 at rkpmic0: vcc1v8_pmu
+rkreg4 at rkpmic0: LDO_REG1
+rkreg5 at rkpmic0: LDO_REG2
+rkreg6 at rkpmic0: vcc1v8_pmupll
 rkreg7 at rkpmic0: vcc_sdio
 rkreg8 at rkpmic0: vcca3v0_codec
 rkreg9 at rkpmic0: vcc_1v5
@@ -147,30 +153,33 @@ rkreg12 at rkpmic0: vcc3v3_s3
 rkreg13 at rkpmic0: vcc3v3_s0
 fan53555reg0 at iic0 addr 0x40: Silergy SYR82X
 fan53555reg1 at iic0 addr 0x41: Silergy SYR82X
-fregulator0 at simplebus0: vcc3v3_pcie
+fregulator0 at simplebus0: vcc0v9_s3
+fregulator1 at simplebus0: vcca1v8_s3
+fregulator2 at simplebus0: vcc3v3_ssd
+fregulator3 at simplebus0: vcc3v0_sd
+fregulator4 at simplebus0: vcc3v3_sys
+fregulator5 at simplebus0: vcc_sysin
+fregulator6 at simplebus0: vbus_5vout
 rkiic1 at simplebus0: Rockchip I2C (100000 Hz)
 iic1 at rkiic1: I2C bus
 fusb30x at iic1 addr 0x22 not configured
 cwfg0 at iic1 addr 0x62: CellWise CW2015 Fuel Gauge IC (ver. 0x70)
-fregulator1 at simplebus0: vcc1v8_s3
-fregulator2 at simplebus0: vcc3v3_sys
-fregulator3 at simplebus0: vcc_sys
-fregulator4 at simplebus0: vcc5v0_typec
-fregulator5 at simplebus0: vcc5v0_host
+fregulator7 at simplebus0: vcc5v0_otg
+fregulator8 at simplebus0: vcc_12v
+fregulator9 at simplebus0: vcc3v3_panel
 rkiic2 at simplebus0: Rockchip I2C (100000 Hz)
 iic2 at rkiic2: I2C bus
+es8316ac0 at iic2 addr 0x11: Everest Semi ES8316 Audio CODEC
+fregulator10 at simplebus0: vcc5v0_usb
 rkiic3 at simplebus0: Rockchip I2C (100000 Hz)
 iic3 at rkiic3: I2C bus
-es8316ac0 at iic3 addr 0x11: Everest Semi ES8316 Audio CODEC
-fregulator6 at simplebus0: dc_12v
 com0 at simplebus0: DesignWare APB UART, 64-byte FIFO
 com0: interrupting on GICv3 irq 131
 com1 at simplebus0: DesignWare APB UART, 64-byte FIFO
 com1: console
 com1: interrupting on GICv3 irq 132
-fregulator7 at simplebus0: vcc_lcd_en
-fregulator8 at simplebus0: vcc_phy
 pregulator0 at simplebus0: vdd_log
+fregulator11 at simplebus0: vcc_0v9
 mmcpwrseq0 at simplebus0: Simple MMC power sequence provider
 rkdrm0 at simplebus0
 rkpciephy0 at syscon0: RK3399 PCIe PHY
@@ -183,10 +192,12 @@ rkusbphy3 at rkusb1: USB2 OTG port
 /opp-table0 at simplebus0 not configured
 /opp-table1 at simplebus0 not configured
 rkvop0 at simplebus0: RK3399 VOPL
+rkvop0: interrupting on GICv3 irq 151
 rkvop1 at simplebus0: RK3399 VOPB
+rkvop1: interrupting on GICv3 irq 150
 rkpcie0 at simplebus0: RK3399 PCIe
 rkpcie0: waiting 898 extra ms for reset (already waited 102)
-rkpcie0: MMIO (64-bit prefetchable): 0xfa000000+0x1e00000@0xfa000000
+rkpcie0: MMIO (32-bit non-prefetchable): 0xfa000000+0x1e00000@0xfa000000
 rkpcie0: IO: 0xfbe00000+0x100000@0xfbe00000
 pci0 at rkpcie0 bus 0
 pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
@@ -210,12 +221,15 @@ ld4: 238 GB, 31130 cyl, 255 head, 63 sec, 512 bytes/sect x 500118192 sectors
 rkemmcphy0 at syscon0: eMMC PHY
 /phy@ff7c0000 at simplebus0 not configured
 /phy@ff800000 at simplebus0 not configured
-/amba/dma-controller@ff6e0000 at simplebus1 not configured
-/amba/dma-controller@ff6d0000 at simplebus1 not configured
-rktsadc0 at simplebus0: RK3328/3399 Temperature Sensor ADC
+/dma-controller@ff6e0000 at simplebus0 not configured
+/dma-controller@ff6d0000 at simplebus0 not configured
+rktsadc0 at simplebus0: RK3399 Temperature Sensor ADC
 rktsadc0: interrupting on GICv3 irq 129
+/gpu@ff9a0000 at simplebus0 not configured
+/battery at simplebus0 not configured
 /dc-charger at simplebus0 not configured
 /iommu@ff650800 at simplebus0 not configured
+/iommu@ff660480 at simplebus0 not configured
 sdhc0 at simplebus0: Arasan SDHCI controller
 sdhc0: interrupting on GICv3 irq 43
 sdhc0: SDHC 3.0, rev 16, caps <44edc880/800020f7>, 32-bit ADMA2, 200000 kHz, embedded slot, HS SDR50 DDR50 SDR104 HS200 1.8V, re-tuning mode 1, 1024 byte blocks
@@ -224,6 +238,7 @@ sdmmc0 at sdhc0 slot 0
 anxdp0 at simplebus0: eDP TX
 /dp@fec00000 at simplebus0 not configured
 /iommu@ff903f00 at simplebus0 not configured
+/iommu@ff914000 at simplebus0 not configured
 panel0 at simplebus0: panel
 /opp-table2 at simplebus0 not configured
 pwmbacklight0 at simplebus0: PWM Backlight, 0-255 (256 steps)
@@ -238,6 +253,7 @@ ehci0 at simplebus0: EHCI
 ehci0: interrupting on GICv3 irq 58
 ehci0: EHCI version 1.0
 ehci0: 1 companion controller, 1 port
+ehci0: Using DMA subregion for control data structures
 usb0 at ehci0: USB revision 2.0
 ohci0 at simplebus0: OHCI
 ohci0: interrupting on GICv3 irq 60
@@ -247,6 +263,7 @@ ehci1 at simplebus0: EHCI
 ehci1: interrupting on GICv3 irq 62
 ehci1: EHCI version 1.0
 ehci1: 1 companion controller, 1 port
+ehci1: Using DMA subregion for control data structures
 usb2 at ehci1: USB revision 2.0
 ohci1 at simplebus0: OHCI
 ohci1: interrupting on GICv3 irq 64
@@ -265,34 +282,34 @@ usb7 at xhci1: USB revision 2.0
 /saradc@ff100000 at simplebus0 not configured
 /syscon@ff320000/io-domains at syscon23 not configured
 /video-codec@ff650000 at simplebus0 not configured
+/video-codec@ff660000 at simplebus0 not configured
 /rga@ff680000 at simplebus0 not configured
 /efuse@ff690000 at simplebus0 not configured
 /syscon@ff770000/io-domains at syscon0 not configured
 /rktimer@ff850000 at simplebus0 not configured
-/iommu@ff914000 at simplebus0 not configured
 /iommu@ff924000 at simplebus0 not configured
 ausoc0 at simplebus0: hdmi-sound
-/gpu@ff9a0000 at simplebus0 not configured
+gpioleds0 at simplebus0: green:power red:standby
 rkv1crypto0 at simplebus0: Crypto v1
 entropy: ready
-/usb-charger at simplebus0 not configured
 armpmu0 at simplebus0: Performance Monitor Unit
 armpmu1 at simplebus0: Performance Monitor Unit
 dwcwdt0 at simplebus0: DesignWare Watchdog Timer
 dwcwdt0: default watchdog period is 15 seconds
-gpioleds0 at simplebus0: green:disk-activity red:standby
-gpiokeys0 at simplebus0: Power, Lid
-/wireless-wlan at simplebus0 not configured
+gpiokeys0 at simplebus0: Lid
+gpiokeys1 at simplebus0: Power
 ausoc1 at simplebus0: rockchip,es8316-codec
 rkdrm0: reserved 40 MB DRAM for CMA
 rkfb0 at rkdrm0
-rkfb0: framebuffer at 0x8ab5000, size 1920x1080, depth 32, stride 7680
+kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+kern info: [drm] No driver support for vblank timestamp query.
+kern info: [drm] Initialized rk 1.0.0 20191109 for rkdrm0 on minor 0
+rkdrm0: initialized rk 1.0.0 20191109 on minor 0
+rkfb0: framebuffer at 0x8ad9000, size 1920x1080, depth 32, stride 7680
+warning: /usr/src/sys/external/bsd/drm2/dist/drm/drm_atomic_helper.c:1497: [CRTC:38:crtc-1] vblank wait timed out
 wsdisplay0 at rkfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
-kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
-kern info: [drm] No driver support for vblank timestamp query.
-rkdrm0: initialized rk 1.0.0 20191109 on minor 0
 ausoc0: autoconfiguration error: couldn't acquire cpu dai on hdmi-sound node
 ausoc1: codec: es8316ac0, cpu: rki2s0, aux: simpleamp0
 audio0 at ausoc1: playback, capture, full duplex
@@ -301,9 +318,9 @@ audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-cpufreqdt0: rate: 1416.000 MHz, 1125000 uV
-cpufreqdt4: rate: 2000.000 MHz, 1300000 uV
 Lid: lid opened.
+cpufreqdt0: rate: 1416.000 MHz, 1125000 uV
+cpufreqdt4: rate: 1800.000 MHz, 1200000 uV
 sdmmc1 at dwcmmc1
 uhub0 at usb4: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 uhub0: 1 port with 1 removable, self powered
@@ -313,18 +330,15 @@ uhub2 at usb6: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00,
 uhub2: 1 port with 1 removable, self powered
 uhub3 at usb7: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub3: 1 port with 1 removable, self powered
-uhub4 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub4 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub4: 1 port with 1 removable, self powered
-uhub5 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub5 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub5: 1 port with 1 removable, self powered
-uhub6 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub6 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub6: 1 port with 1 removable, self powered
-uhub7 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub7 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub7: 1 port with 1 removable, self powered
-pic_establish_intr: pic gicv3 irq 23 already present
-armpmu1: autoconfiguration error: couldn't establish interrupts
-armpmu0: interrupting on GICv3 irq 23
-IPsec: Initialized Security Association Processing.
+armpmu1: autoconfiguration error: couldn't initialise PMU event counterIPsec: Initialized Security Association Processing.
 aes: ARMv8.0-AES
 chacha: ARM NEON ChaCha
 sdmmc2 at dwcmmc0
@@ -335,19 +349,17 @@ ehci0: handing over low speed device on port 1 to companion controller
 ld0 at sdmmc0: <0x45:0x0100:DA4064:0x00:0x0b46130f:0x000>
 ld0: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
 ld0: 8-bit width, HS200, 4096 KB cache, 200.000 MHz
-sdmmc2: 4-bit width, 50.000 MHz
-sdmmc2: SDIO function
-bwfm0 at sdmmc2 function 1
-(manufacturer 0x2d0, product 0xa9bf) at sdmmc2 function 2 not configured
-(manufacturer 0x2d0, product 0xa9bf, standard function interface code 0x2) at sdmmc2 function 3 not configured
-uhub8 at uhub4 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/85.36, addr 2
+run0 at uhub3 port 1
+run0: Ralink (0x0411) 802.11 n WLAN (0x01a2), rev 2.00/1.01, addr 1
+run0: MAC/BBP RT3070 (rev 0x0201), RF RT3020 (MIMO 1T1R), address 10:6f:3f:ea:e0:3c
+uhub8 at uhub7 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/85.36, addr 2
 uhub8: single transaction translator
 uhub8: 4 ports with 4 removable, self powered
-uhidev0 at uhub6 port 1 configuration 1 interface 0
+uhidev0 at uhub4 port 1 configuration 1 interface 0
 uhidev0: Pine64 (0x258a) Pinebook Pro (0x001e), rev 1.10/0.01, addr 2, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub6 port 1 configuration 1 interface 1
+uhidev1 at uhub4 port 1 configuration 1 interface 1
 uhidev1: Pine64 (0x258a) Pinebook Pro (0x001e), rev 1.10/0.01, addr 2, iclass 3/0
 uhidev1: 35 report ids
 ums0 at uhidev1 reportid 1: 3 buttons
@@ -362,26 +374,17 @@ uhid6 at uhidev1 reportid 31: input=0, output=0, feature=1
 uhid7 at uhidev1 reportid 32: input=0, output=0, feature=256
 uhid8 at uhidev1 reportid 34: input=0, output=0, feature=1
 uhid9 at uhidev1 reportid 35: input=0, output=0, feature=1
-run0 at uhub8 port 1
-run0: Ralink (0x0411) 802.11 n WLAN (0x01a2), rev 2.00/1.01, addr 3
-run0: MAC/BBP RT3070 (rev 0x0201), RF RT3020 (MIMO 1T1R), address 10:6f:3f:ea:e0:3c
-uvideo0 at uhub8 port 2 configuration 1 interface 0: Sonix Technology Co., Ltd. (0x0c45) USB Camera (0x6321), rev 2.00/0.00, addr 4
-video0 at uvideo0: Sonix Technology Co., Ltd. (0x0c45) USB Camera (0x6321), rev 2.00/0.00, addr 4
+uvideo0 at uhub8 port 2 configuration 1 interface 0: Sonix Technology Co., Ltd. (0x0c45) USB Camera (0x6321), rev 2.00/0.00, addr 3
+video0 at uvideo0: Sonix Technology Co., Ltd. (0x0c45) USB Camera (0x6321), rev 2.00/0.00, addr 3
 WARNING: 4 errors while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
-/: replaying log to memory
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.92/modules
-bwfm0: Firmware file default:    brcmfmac43456-sdio.bin
-bwfm0: Firmware file model-spec: brcmfmac43456-sdio.pine64,pinebook-pro.bin
-bwfm0: Found Firmware file: brcmfmac43456-sdio.bin
-bwfm0: NVRAM file default:    brcmfmac43456-sdio.txt
-bwfm0: NVRAM file model-spec: brcmfmac43456-sdio.pine64,pinebook-pro.txt
-bwfm0: Found NVRAM file: brcmfmac43456-sdio.pine64,pinebook-pro.txt
-bwfm0: CHIPACTIVE
-bwfm0: wl0: Jun 16 2017 12:38:26 version 7.45.96.2 (66c4e21@sh-git) (r) FWID 01-1813af84
-bwfm0: address c0:84:7d:25:60:a8
-/: replaying log to disk
+kern.module.path=/stand/evbarm/9.99.93/modules
 wsdisplay0: screen 4 added (default, vt100 emulation)
-audio0(ausoc1): trigger_input failed: errno=5
+umass0 at uhub8 port 1 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 4
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
