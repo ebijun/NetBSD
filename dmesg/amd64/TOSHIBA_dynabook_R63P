@@ -1,14 +1,14 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
+    2018, 2019, 2020, 2021, 2022
+    The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (GENERIC) #0: Mon Oct 25 20:32:38 UTC 2021
+NetBSD 9.99.93 (GENERIC) #0: Sun Jan 16 10:52:18 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16295 MB
 avail memory = 15764 MB
-entropy: entering seed from bootloader with 256 bits of entropy
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
@@ -50,15 +50,15 @@ cpu2: node 0, package 0, core 1, smt 0
 cpu3 at mainbus0 apid 3
 cpu3: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, id 0x306d4
 cpu3: node 0, package 0, core 1, smt 1
-acpi0 at mainbus0: Intel ACPICA 20210604
+acpi0 at mainbus0: Intel ACPICA 20211217
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF86618D820348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFB2347B820348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF865E8C289008 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFB2317A270008 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF865E8C228408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFB2317A21F708 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -126,7 +126,7 @@ xhci0: xHCI version 1.0
 usb0 at xhci0: USB revision 3.0
 usb1 at xhci0: USB revision 2.0
 Intel Core 5G (mobile) ME Interface (miscellaneous communications, revision 0x03) at pci0 dev 22 function 0 not configured
-wm0 at pci0 dev 25 function 0: I218 V Ethernet Connection (rev. 0x03)
+wm0 at pci0 dev 25 function 0, 64-bit DMA: I218 V Ethernet Connection (rev. 0x03)
 wm0: interrupting at msi2 vec 0
 wm0: PCI-Express bus
 wm0: 2048 words FLASH, version 0.2.4
@@ -163,8 +163,10 @@ pci2: i/o space, memory space enabled, rd/line, wr/inv ok
 iwm0 at pci2 dev 0 function 0: Intel Dual Band Wireless AC 7265 (rev. 0x59)
 iwm0: interrupting at msi5 vec 0
 ehci0 at pci0 dev 29 function 0: Intel Core 5G (mobile) USB EHCI (rev. 0x03)
+ehci0: 64-bit DMA
 ehci0: interrupting at ioapic0 pin 23
 ehci0: EHCI version 1.0
+ehci0: Using DMA subregion for control data structures
 usb2 at ehci0: USB revision 2.0
 pcib0 at pci0 dev 31 function 0: Intel Core 5G (mobile) LPC (rev. 0x03)
 ahcisata0 at pci0 dev 31 function 2: Intel Core 5G (mobile) SATA Controller (AHCI) (rev. 0x03)
@@ -247,15 +249,16 @@ WARNING: 2 errors while detecting hardware; check system log.
 boot device: wd0
 root on dk0 dumps on dk1
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.92/modules
-kern info: [drm] Memory usable by graphics device = 4096M
+kern.module.path=/stand/amd64/9.99.93/modules
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at msi7 vec 0 (i915drmkms0)
 iwm0: hw rev 0x210, fw ver 22.361476.0, address a4:02:b9:2f:d2:80
+kern info: [drm] Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
 intelfb0 at i915drmkms0
-warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:647: Unclaimed register detected before writing to register 0x41000
-intelfb0: framebuffer at 0xe00af000, size 1366x768, depth 32, stride 5504
+kern info: [drm] DRM_I915_DEBUG enabled
+kern info: [drm] DRM_I915_DEBUG_GEM enabled
+intelfb0: framebuffer at 0xeb741000, size 1366x768, depth 32, stride 5504
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)

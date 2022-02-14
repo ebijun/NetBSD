@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2021 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -71,7 +71,8 @@ Maps:
  2020 Spling,4/24-25,500,19,オンライン
  2020 Fall,10/23-24,500,15,オンライン
  2021 Spring,3/6-7,570,26,オンライン
- 2021 Fall,10/22-23,,,オンライン
+ 2021 Fall,10/22-23,350,18,オンライン
+ 2022 Spring,3/11-12,,,オンライン
 
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,6 +85,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 
  171,OSC2021東京秋,http://www.re.soum.co.jp/~jun/OSC2021tokyofall.pdf
  164,OSC2021東京春, http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
  159,OSC2020東京秋, http://www.re.soum.co.jp/~jun/OSC2020tokyofall.pdf
@@ -113,6 +115,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2022 Online/SpringNetBSDのご紹介 の記録,https://togetter.com/li/
  OSC2021 Online/Fall NetBSDのご紹介 の記録,https://togetter.com/li/1790501
  OSC2021 Online/SpringNetBSDのご紹介 の記録,https://togetter.com/li/1675363
  OSC2020東京秋 BSDなひととき の記録,https://togetter.com/li/1611536

@@ -2,11 +2,11 @@ DEVICE=rsd0d
 
 BOARD=raspi-aarch64
 
-#COMPRESS=-z
-#SUFFIX=.gz
+COMPRESS=-z
+SUFFIX=.gz
 
-DATE=`date +%Y-%m-%d`
-#DATE=2021-04-15
+#DATE=`date +%Y-%m-%d`
+DATE=2022-01-15
 
 #as usual
 progress $COMPRESS -f ${DATE}-netbsd-${BOARD}.img${SUFFIX} dd of=/dev/${DEVICE} bs=4m

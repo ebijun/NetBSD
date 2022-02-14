@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2021 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,6 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
+ OSC2022 Online/Osaka NetBSDのご紹介 の記録,https://togetter.com/li/1835534
  関西オープンソース2021 BSDなひととき の記録,https://togetter.com/li/1800758
  OSC2021 Online/Osaka NetBSDのご紹介 の記録,https://togetter.com/li/1658323
  関西オープンソース2020 BSDなひととき の記録,https://togetter.com/li/1617531
@@ -152,10 +153,6 @@ Maps:
  2005/10/28-29,大阪産業創造館,EWS4800/360AD ドリキャス+ISAバス　USL-5P
  2004/10-22-23,大阪産業創造館,XCAST ふきだしくん 
  2003/10/31-11/1,大阪産業創造館,XCAST トレバ
-
-2020
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
