@@ -1,54 +1,61 @@
-VERSION: :1,$s/2021-11-29/2021-11-29/g
-ISO:     :1,$s/202111271930Z/202111271930Z/g
-NetBSD:  :1,$s/9.99.92/9.99.92/g
-PKGSRC:  :1,$s/2021-11-29/2021-11-29/
+VERSION: :1,$s/2022-02-14/2022-02-14/g
+ISO:     :1,$s/202202130040Z/202202130040Z/g
+NetBSD:  :1,$s/9.99.93/9.99.93/g
+PKGSRC:  :1,$s/2022-02-14/2022-02-14/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2021-11-29-netbsd-armv7-earmv7hf.img
+Subject: 2022-02-14-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2021-11-29-netbsd9-armv7-earmv7hf.img.gz for RPI2/3.
+I've updated 2022-02-14-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2021-11-29-earmv7hf/2021-11-29-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2021-11-29-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2022-02-14-earmv7hf/2022-02-14-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2022-02-14-earmv7hf/MD5
 
 Update:
-- NetBSD 9.99.92 evbarm-armv7hf 202111271930Z armv7.img from nyftp.
+- NetBSD 9.99.93 evbarm-armv7hf 202202130040Z armv7.img from nyftp.
+- Raspberry PI zero 2 W support
+  need internal Wi-Fi support
 - Firmware:
+#commit 577aef2bc2f8e9dcd6955a85cf0621cc73b29db7
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Tue Nov 2 13:31:23 2021 +0000
-#    kernel: dtoverlays: Update all image sensor overlays for Media Controller option
+#Date:   Wed Feb 9 17:04:38 2022 +0000
+#    extra: Update dt-blob.dts to include cm4s
+#    See: https://github.com/raspberrypi/firmware/issues/1691
 
-- Recent Update from 2021-08-15
-https://github.com/ebijun/NetBSD/commit/e4b3d99117dcd136bee2e63c3b2990a0e398f019
- 
+- Recent Update from 2021-11-29
+https://github.com/ebijun/NetBSD/commit/56235e389155267153cb1088fc9ba0806439031d
+
 sysinfo:
- bind-9.16.20 bozohttpd-20210824 dhcpcd-9.4.1 libc-12.220 libssh-41.0
- NetBSD-9.99.92 openssh-8.8 opensshd-8.8 sh-20181212-20211127192142Z
- tcsh-6.23.00 tzdata-2021e-(part-2021b) userland-NetBSD-9.99.92/evbarm
+ bozohttpd-20220104 NetBSD-9.99.93 openssl-1.1.1m sh-20220122-20220213003945Z
+ tcsh-6.24.00 userland-NetBSD-9.99.93/evbarm
 
 pkgsrc:
- at-spi2-core-2.40.3 bash-5.1.12 curl-7.80.0 dbus-1.12.20nb2
- digest-20211023 fltk-1.3.8 fribidi-1.0.11 gd-2.3.3nb1
- gdk-pixbuf2-2.42.6 git-base-2.34.0 glib2-2.70.1 gmp-6.2.1nb1
- gnutls-3.7.2nb1 graphite2-1.3.14 gtk2+-2.24.33nb3
- gtk3+-3.24.30nb1 harfbuzz-3.1.1 libcups-2.3.3op2nb3
- libgcrypt-1.9.4 libgpg-error-1.43 libimagequant-2.16.0
- libtasn1-4.18.0 libunistring-0.9.10nb1 libwebp-1.2.1
- libxkbcommon-1.3.1 mozilla-rootcerts-1.0.20210916 nghttp2-1.46.0
- p11-kit-0.24.0nb3 p5-GSSAPI-0.28nb13 p5-IO-Socket-SSL-2.072
- p5-Net-DNS-1.32 pango-1.48.10 pcre2-10.39 perl-5.34.0nb3
- pkgin-21.10.1 py39-cElementTree-3.9.9 py39-expat-3.9.9
- python39-3.9.9 qt5-qtbase-5.15.2nb7 ruby27-addressable-2.8.0
- ruby27-atk-3.4.9 ruby27-cairo-gobject-3.4.9 ruby27-delayer-1.2.1
- ruby27-diva-1.1.1 ruby27-gdk_pixbuf2-3.4.9 ruby27-gettext-3.4.1
- ruby27-gio2-3.4.9 ruby27-glib2-3.4.9 ruby27-gobject-introspection-3.4.9
- ruby27-gtk2-3.4.3nb1 ruby27-httpclient-2.8.3nb1 ruby27-mikutter-4.1.7
- ruby27-mini_portile2-2.7.0 ruby27-nokogiri-1.12.5 ruby27-pango-3.4.9
- ruby27-racc-1.6.0 ruby27-red-colors-0.3.0 ruby27-unf_ext-0.0.8
- sudo-1.9.7p1nb1 tcsh-6.23.00nb3 wget-1.21.2nb1
+ at-spi2-atk-2.38.0nb1 at-spi2-core-2.40.3nb1 atk-2.36.0nb1
+ bash-5.1.16 cairo-gobject-1.16.0nb6 curl-7.81.0
+ desktop-file-utils-0.26nb1 fossil-2.17nb1 gdk-pixbuf2-2.42.6nb1
+ git-base-2.35.1 glib2-2.70.2nb1 gmp-6.2.1nb2 gnutls-3.7.3nb1
+ gobject-introspection-1.68.0nb1 gtk2+-2.24.33nb4 gtk3+-3.24.31
+ harfbuzz-3.3.2 icu-70.1 libcups-2.3.3op2nb4 libffi-3.4.2nb2
+ libgpg-error-1.44 libunistring-1.0 libxkbcommon-1.3.1nb1
+ libxml2-2.9.12nb2 libxslt-1.1.34nb7 lintpkgsrc-4.97
+ m17n-lib-1.8.0nb6 medit-1.2.0nb19 mlterm-3.9.2
+ nghttp2-1.46.0nb1 p11-kit-0.24.1 pango-1.48.10nb1
+ pkgin-21.12.0nb1 py39-cElementTree-3.9.10 py39-expat-3.9.10
+ python39-3.9.10 qt5-qtbase-5.15.2nb8 qt5-qtx11extras-5.15.2nb3
+ qt5-qtxmlpatterns-5.15.2nb3 ruby27-atk-3.4.9nb1 ruby27-base-2.7.5nb1
+ ruby27-cairo-gobject-3.4.9nb1 ruby27-diva-2.0.1 ruby27-gdk3-3.4.9nb1
+ ruby27-gdk_pixbuf2-3.4.9nb1 ruby27-gio2-3.4.9nb1 ruby27-glib2-3.4.9nb1
+ ruby27-gobject-introspection-3.4.9nb1 ruby27-gtk3-3.4.9nb1
+ ruby27-mikutter-5.0.4 ruby27-mikutter-plugins-twitter-5.0nb1
+ ruby27-native-package-installer-1.1.3 ruby27-nokogiri-1.13.0
+ ruby27-oauth-0.5.8 ruby27-pango-3.4.9nb1 ruby27-pkg-config-1.4.7
+ ruby27-pluggaloid-1.7.0 shared-mime-info-1.10nb5
+ tcsh-6.24.00 uim-1.8.9pre20210104nb2 wayland-1.18.0nb4
+ wayland-protocols-1.20nb1 wget-1.21.2nb2 zsh-5.8nb3
+ zstd-1.5.2
 
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2021-1/
@@ -69,6 +76,7 @@ System Update:
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
 dmesg:
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPIZero2W
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI2-1.2
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv7hf/RPI3
