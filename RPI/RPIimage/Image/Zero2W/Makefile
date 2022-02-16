@@ -4,8 +4,14 @@ VND0=vnd0
 MNT0=/mnt0
 DEVICE=sd0
 
+#BRANCH=netbsd-9
+BRANCH=HEAD
+
 dtb:
-	(cd ${MNT0};cp bcm2837-rpi-3-b-plus.dtb bcm2710-rpi-zero-2-w.dtb)
+	(cd ${MNT0};cp dtb/bcm2837-rpi-3-b-plus.dtb dtb/bcm2710-rpi-zero-2-w.dtb)
+
+ls:
+	(cd Firmware;ls start* fixup* bootcode.bin )
 
 fixup:
 	cp  Firmware/start* ${MNT0}/
@@ -24,12 +30,14 @@ umount:
 
 gunzip:
 	gunzip ${IMG}.gz
-	mkdir -p Firmware
-	(cd Firmware;7z e ../${FIRM})
 	
 fetch:
-	ftp https://nycdn.netbsd.org/pub/NetBSD-daily/netbsd-9/latest/evbarm-earmv7hf/binary/gzimg/armv7.img.gz
+	ftp https://nycdn.netbsd.org/pub/NetBSD-daily/${BRANCH}/latest/evbarm-earmv7hf/binary/gzimg/armv7.img.gz
+
+fetch-firmware:
 	ftp http://ftp.netbsd.org/pub/NetBSD/misc/mlelstv/rpi-firmware.zip
+	mkdir -p Firmware
+	(cd Firmware;7z e ../${FIRM})
 
 copy:
 	@echo progress -f ${IMG} dd of=/dev/r${DEVICE} bs=4m
