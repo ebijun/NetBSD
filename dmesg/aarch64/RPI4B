@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.93 (GENERIC64) #0: Fri Jan 14 07:40:52 UTC 2022
+NetBSD 9.99.93 (GENERIC64) #0: Mon Feb 14 13:22:30 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3927 MB
 avail memory = 3791 MB
@@ -107,7 +107,7 @@ RHPX (MSFT8000) at acpi0 not configured
 sdhc0 at acpi0 (SDC1, BCM2847-0): mem 0xfe300000-0xfe3000ff irq 158
 genet0 at acpi0 (ETH0, BCM6E4E-0): mem 0xfd580000-0xfd58ffff irq 189,190
 genet0: GENETv5.0
-genet0: Ethernet address dc:a6:32:03:31:c8
+genet0: Ethernet address dc:a6:32:70:a9:6c
 brgphy0 at genet0 phy 1: BCM54213PE 1000BASE-T media interface, rev. 2
 brgphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
 EC00 (PNP0C06) at acpi0 not configured
@@ -141,9 +141,9 @@ IPsec: Initialized Security Association Processing.
 aes: ARM NEON vpaes
 chacha: ARM NEON ChaCha
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
-ld1 at sdmmc1: <0x02:0x544d:SA16G:0x69:0x48dcd019:0x153>
-ld1: 14784 MB, 7509 cyl, 64 head, 63 sec, 512 bytes/sect x 30277632 sectors
-ld1: GPT GUID: 485ccde7-121f-4c06-b5f1-34cfe5fb0b80
+ld1 at sdmmc1: <0x02:0x544d:SA32G:0x69:0x2ac4fcd0:0x157>
+ld1: 29544 MB, 7503 cyl, 128 head, 63 sec, 512 bytes/sect x 60506112 sectors
+ld1: GPT GUID: f8716e05-34c0-47e0-b1a6-1d91314d6f1e
 dk0 at ld1: "EFI", 163840 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 4751355 blocks at 163843, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -155,22 +155,23 @@ bwfm0 at sdmmc0 function 1
 uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 1
 uhub2: single transaction translator
 uhub2: 4 ports with 4 removable, self powered
-uhub3 at uhub2 port 1: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1.10/3.00, addr 2
+uhub3 at uhub2 port 1: vendor 1a40 (0x1a40) USB 2.0 Hub (0x0101), class 9/0, rev 2.00/1.11, addr 2
+uhub3: single transaction translator
 uhub3: 4 ports with 4 removable, self powered
 uhidev0 at uhub3 port 1 configuration 1 interface 0
-uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/1
-ukbd0 at uhidev0
-wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub3 port 1 configuration 1 interface 1
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/0
-uhidev1: 2 report ids
-uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
-uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
-uhidev2 at uhub3 port 2 configuration 1 interface 0
-uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 4, iclass 3/1
-ums0 at uhidev2: 3 buttons, W and Z dirs
+uhidev0: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 3, iclass 3/1
+ums0 at uhidev0: 3 buttons, W and Z dirs
 wsmouse0 at ums0 mux 0
-umass0 at uhub2 port 3 configuration 1 interface 0
+uhidev1 at uhub3 port 4 configuration 1 interface 0
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
+ukbd0 at uhidev1
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev2 at uhub3 port 4 configuration 1 interface 1
+uhidev2: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
+uhidev2: 2 report ids
+uhid0 at uhidev2 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev2 reportid 2: input=3, output=0, feature=0
+umass0 at uhub2 port 4 configuration 1 interface 0
 umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 5
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
@@ -182,7 +183,7 @@ root file system type: ffs
 kern.module.path=/stand/evbarm/9.99.93/modules
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.bin
-WARNING: clock lost 87 days
+WARNING: clock lost 119 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
@@ -191,5 +192,5 @@ bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt
 bwfm0: Found NVRAM file: brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt
 bwfm0: CHIPACTIVE
 bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
-bwfm0: address dc:a6:32:03:31:c9
+bwfm0: address dc:a6:32:70:a9:6d
 wsdisplay0: screen 4 added (default, vt100 emulation)
