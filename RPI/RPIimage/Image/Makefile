@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202201081730Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202202160330Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -30,12 +30,13 @@ LIST=man modules xbase xcomp xetc xfont xserver
 
 #Firmware: 
 #git show HEAD |head 
-#commit 303d0012cd73da63e21133dadd90532d8328f5c2 (HEAD -> master, origin/master, origin/HEAD)
+#commit 577aef2bc2f8e9dcd6955a85cf0621cc73b29db7
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Tue Dec 7 15:49:49 2021 +0000
-#    kernel: Bump to 5.10.83
+#Date:   Wed Feb 9 17:04:38 2022 +0000
+#    extra: Update dt-blob.dts to include cm4s
+#    See: https://github.com/raspberrypi/firmware/issues/1691
 
-FIRM=LICENCE.broadcom bootcode.bin fixup.dat    fixup4cd.dat fixup4x.dat  fixup_db.dat fixup4.dat   fixup4db.dat fixup_cd.dat fixup_x.dat start.elf    start4cd.elf start4x.elf  start_db.elf start4.elf   start4db.elf start_cd.elf start_x.elf
+FIRM=LICENCE.broadcom bootcode.bin fixup4cd.dat fixup_cd.dat start.elf start4db.elf start_db.elf fixup.dat fixup4db.dat fixup_db.dat start4.elf start4x.elf start_x.elf fixup4.dat fixup4x.dat  fixup_x.dat  start4cd.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
 # mount point
@@ -188,6 +189,9 @@ firm:
 	mount_msdos /dev/${VND}e ${MNT}
 	for i in ${FIRM} ; do (cp  ${FIRMPATH}/$$i /mnt); done
 	for i in ${FIRMPATH}/*.dtb ; do (cp  $$i /mnt/dtb); done
+	# for RPI02W
+	mv ${MNT}/dtb/bcm2710-rpi-zero-2-w.dtb ${MNT}/dtb/bcm2710-rpi-zero-2-w.dtb.org
+	cp ${MNT}/dtb/bcm2837-rpi-3-b-plus.dtb ${MNT}/dtb/bcm2710-rpi-zero-2-w.dtb
 	umount ${MNT}
 	vnconfig -u ${VND}
 

@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.93 (RPI2) #0: Sat Jan  8 17:25:19 UTC 2022
+NetBSD 9.99.93 (RPI2) #0: Wed Feb 16 03:15:27 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -138,7 +138,7 @@ WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 vchiq0: interrupting on icu irq 66
-vchiq: vchiq_init_state: slot_zero = 0xd2aa0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xd2ab0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 kern notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
