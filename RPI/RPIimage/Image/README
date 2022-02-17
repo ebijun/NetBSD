@@ -1,42 +1,42 @@
-VERSION: :1,$s/2022-01-10/2022-01-10/g
-ISO:     :1,$s/202201081730Z/202201081730Z/g
+VERSION: :1,$s/2022-02-17/2022-02-17/g
+ISO:     :1,$s/202202160330Z/202202160330Z/g
 NetBSD:  :1,$s/9.99.93/9.99.93/g
-PKGSRC:  :1,$s/2022-01-10/2022/
+PKGSRC:  :1,$s/2022-02-17/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-01-10-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2022-02-17-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-01-10-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2022-02-17-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-01-10-earmv6hf/2022-01-10-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-01-10-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-02-17-earmv6hf/2022-02-17-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-02-17-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.93 evbarm-earmv6hf 2202201081730Z rpi.img from nyftp.
-- mikutter-5.0.2
-- openssl-1.1.1m 
+- NetBSD 9.99.93 evbarm-earmv6hf 2202202160330Z rpi.img from nyftp.
+- git-base-2.35.1
+- gtk3+-3.24.31
+- libffi-3.4.2nb2
+- mlterm-3.9.2
+- python39-3.9.10
+- ruby27-base-2.7.5nb1
+- ruby27-mikutter-5.0.4
 - Re: Raspberry Pi camera under NetBSD current
  http://mail-index.netbsd.org/current-users/2021/11/16/msg041683.html
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-commit 12bc6e3677348adaffd155e7a04761e2661d4bff 
-Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Tue Nov 16 18:46:39 2021 +0000
-    firmware: dtoverlay: Rebase aliases in overlays like labels
-    firmware: isp: Set core/vpu min clock to 320Mhz during ISP operation
-    firmware: arm_loader: Enable watchdog early if wanted
-    See: https://github.com/raspberrypi/firmware/issues/1651
+#commit 577aef2bc2f8e9dcd6955a85cf0621cc73b29db7
+#Author: Dom Cobley <popcornmix@gmail.com>
+#Date:   Wed Feb 9 17:04:38 2022 +0000
+#    extra: Update dt-blob.dts to include cm4s
+#    See: https://github.com/raspberrypi/firmware/issues/1691
 
 - Raspberry PI zero 2 W
-  http://mail-index.netbsd.org/port-arm/2021/11/03/msg007479.html
-  "Sadly trying the latest current armv7 image failed to produce 
-  any results - just the coloured screen. The hardware doesn't 
-  seem to turn on the led unlike the original Pi zero 
-  so you don't get any boot diagnostic flashes."
+  http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
+  earmv7hf works well.earmv6hf not yet.
 
 - OpenSSH 8.8
   "This release disables RSA signatures using the SHA-1 hash algorithm
@@ -80,16 +80,17 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- bozohttpd-20220104 NetBSD-9.99.93 openssl-1.1.1m
- sh-20181212-20220108172519Z tcsh-6.23.02
- userland-NetBSD-9.99.93/evbarm
+ sh-20220122-20220216031527Z 
 
 pkgsrc:
- bash-5.1.16 curl-7.81.0 gmp-6.2.1nb2 lintpkgsrc-4.97
- python39-3.9.9nb2 ruby27-diva-2.0.1 ruby27-gdk3-3.4.9nb1
- ruby27-gtk3-3.4.9nb1 ruby27-mikutter-5.0.2
- ruby27-mikutter-plugins-twitter-5.0 ruby27-nokogiri-1.12.5nb2
- ruby27-pluggaloid-1.7.0 tcsh-6.23.02
+ git-base-2.35.1 gnutls-3.7.3nb1 gtk3+-3.24.31 harfbuzz-3.3.2
+ libffi-3.4.2nb2 libgpg-error-1.44 libunistring-1.0 mlterm-3.9.2
+ p11-kit-0.24.1 py39-cElementTree-3.9.10 py39-expat-3.9.10
+ python39-3.9.10 ruby27-base-2.7.5nb1 ruby27-mikutter-5.0.4
+ ruby27-mikutter-plugins-twitter-5.0nb1
+ ruby27-native-package-installer-1.1.3
+ ruby27-nokogiri-1.13.0 ruby27-pkg-config-1.4.7
+ tcsh-6.24.00 zstd-1.5.2
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -148,7 +149,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-01-10-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-02-17-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -371,17 +372,17 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2021 Online/Fukuoka , NetBSD BOF.
+For Open Source Conference 2022 Online/Spring , NetBSD BOF.
 I've updated raspberry-pi image.
 
-2021 Nov.17 Sat 14:00-14:45 JST (UTC+9)
-https://event.ospn.jp/osc2021-online-fukuoka/session/453408
+Open Source Conference 2022 Online/Spring NetBSD BoF
 
-Join meeting with Zoom/YoutubeLive.
-https://www.youtube.com/c/OSPNjp Room D
-https://ospn.connpass.com/event/223013/ to get Zoom link.
+    2022 Mar.12 Sat 14:00-14:45 JST (UTC+9)
+    https://event.ospn.jp/osc2022-online-spring/session/523464
+    https://event.ospn.jp/osc2022-online-spring/
+    Join meeting with ZOOM/YoutubeLive
+    YoutubeLive https://www.youtube.com/c/OSPNjp
 
-http://www.re.soum.co.jp/~jun/OSC2021fukuoka.pdf
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2021.rst
