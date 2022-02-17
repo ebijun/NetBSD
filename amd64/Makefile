@@ -42,6 +42,10 @@ kernel-update:
 	md5 /netbsd*
 	what /netbsd
 
+modules:
+	ls ${MNT}/amd64/binary/sets/modules.tar.xz
+	tar xzpvf ${MNT}/amd64/binary/sets/modules.tar.xz -C /
+
 backup:
 	mkdir ${DATE}
 	pkg_chk -g
