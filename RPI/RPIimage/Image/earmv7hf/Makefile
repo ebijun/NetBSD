@@ -14,7 +14,7 @@ ARCH=earmv7hf
 # version information
 BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202202130040Z/evbarm-earmv7hf/binary
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2021-1/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2022/
 
 
 KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
