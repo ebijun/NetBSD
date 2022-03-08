@@ -1,22 +1,27 @@
-VERSION: :1,$s/2022-02-16/2022-02-16/g
-ISO:     :1,$s/202202141410Z/202202141410Z/g
-NetBSD:  :1,$s/9.99.93/9.99.93/g
+VERSION: :1,$s/2022-03-08/2022-03-08/g
+ISO:     :1,$s/202203060650Z/202203060650Z/g
+NetBSD:  :1,$s/9.99.94/9.99.94/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-02-16-netbsd-raspi-aarch64.img
+Subject: 2022-03-08-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-02-16-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2022-03-08-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-02-16-aarch64/2022-02-16-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-02-16-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-03-08-aarch64/2022-03-08-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-03-08-aarch64/MD5
 
 Topics:
-- mikutter-5.0.4
-- mlterm-3.9.2
+- add pkgsrc/net/tor [testing for the world in motion]
+  for https://www.bbc.com/news/technology-50150981 with this image,
+   % tor
+  from Browser,portforwarding with ssh.
+   % ssh rpi -L 9050:127.0.0.1:9050
+   set browser proxy socks5:localhost 9050
+- openssh-8.9
 
 - Raspberry Pi 4 UEFI Firmware v1.32
 
@@ -60,19 +65,14 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- sh-20220122-20220214132230Z tcsh-6.24.00
+ libssh-42.0 NetBSD-9.99.94 openssh-8.9 opensshd-8.9
+ sh-20220122-20220305165324Z userland-NetBSD-9.99.94/evbarm
 
 pkgsrc:
- git-base-2.35.1 gnutls-3.7.3nb1 gtk3+-3.24.31 harfbuzz-3.3.2 libffi-3.4.2nb2
- libgpg-error-1.44 libunistring-1.0 mlterm-3.9.2 p11-kit-0.24.1
- py39-cElementTree-3.9.10 py39-expat-3.9.10 python39-3.9.10
- ruby27-atk-3.5.1 ruby27-base-2.7.5nb1 ruby27-cairo-gobject-3.5.1
- ruby27-gdk3-3.5.1 ruby27-gdk_pixbuf2-3.5.1 ruby27-gio2-3.5.1
- ruby27-glib2-3.5.1 ruby27-gobject-introspection-3.5.1
- ruby27-gtk3-3.5.1 ruby27-mikutter-5.0.4
- ruby27-mikutter-plugins-twitter-5.0nb1 ruby27-native-package-installer-1.1.3
- ruby27-nokogiri-1.13.1 ruby27-pango-3.5.1 ruby27-pkg-config-1.4.7
- tcsh-6.24.00 zstd-1.5.2
+ digest-20220214 fossil-2.18 glib2-2.70.4 gobject-introspection-1.70.0
+ harfbuzz-3.4.0 libevent-2.1.12 libgcrypt-1.10.0 libwebp-1.2.2
+ libxkbcommon-1.4.0 nghttp2-1.47.0 pango-1.48.11 ruby27-mini_portile2-2.8.0
+ ruby27-nokogiri-1.13.3 tor-0.4.6.10 zsh-5.8nb4
 
 RPI4 status:
 - boot via UEFI_VER=v1.32
@@ -92,7 +92,7 @@ In this image,pre-setted RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.93 evbarm-aarch64 202202141410Z arm64.img from nyftp.
+- NetBSD-current 9.99.94 evbarm-aarch64 202203060650Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
