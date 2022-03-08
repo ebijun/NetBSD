@@ -1,25 +1,23 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2021-04-02/2021-04-02/g
+:1,$s/2022-03-08/2022-03-08/g
 :1,$s/9.99.81/9.99.81/g
 :1,$s/202104010300Z/202104010300Z/g
 :1,$s?2021/04/02/msg007213.html?2021/04/02/msg007213.html?
 
-2021/07 NetBSD 9.99.87 image update
+2022/03 NetBSD 9.99.94 image update
 
-I've updated 2021-07 NetBSD images.
+I've updated 2022-03 NetBSD images.
 
-2021-07-28-netbsd-raspi-earmv6hf.img: for RPI0-3
- http://mail-index.netbsd.org/port-arm/2021/07/28/msg007381.html
+2022-03-05-netbsd-raspi-earmv6hf.img: for RPI0-3
+ http://mail-index.netbsd.org/port-arm/2022/03/05/msg007597.html
 
-2021-07-27-netbsd-raspi-aarch64.img: for RPI4
- http://mail-index.netbsd.org/port-arm/2021/07/27/msg007380.html
+2022-03-08-netbsd-raspi-aarch64.img: for RPI4
+ http://mail-index.netbsd.org/port-arm/2022/03/08/msg007601.html
 
 
 Update:
-- NetBSD 9.99.87 rpi.img from nyftp.
-- gcc10
-- ruby27
+- NetBSD 9.99.94 rpi.img from nyftp.
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
