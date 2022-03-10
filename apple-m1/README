@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20220211)
+Subject: apple m1 status update (20220310)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
@@ -19,7 +19,7 @@ Hardware:
  USB SSD 128GB ELECOM ESD-EC0120GRDR
 
 Filesystem   1M-blocks      Used     Avail %Cap Mounted on
-/dev/dk1        112570     54604     52337  51% /
+/dev/dk1        112570     58856     48085  55% /
 /dev/dk0            79        32        47  40% /boot
 ptyfs                0         0         0 100% /dev/pts
 procfs               0         0         0 100% /proc
@@ -37,47 +37,58 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- sh-20220122-20220209223027Z tcsh-6.24.00
+ libssh-42.0 NetBSD-9.99.94 openssh-8.9 opensshd-8.9
+ sh-20220122-20220309002048Z tcsh-6.24.00
+ userland-NetBSD-9.99.94/evbarm
 
 pkgsrc:
- ImageMagick-7.1.0.22 SDL2-2.0.20 abseil-20211102.0 automake-1.16.5nb1
- boost-headers-1.78.0 boost-jam-1.78.0 boost-libs-1.78.0 clang-13.0.1
- cmake-3.22.2 double-conversion-3.2.0 exempi-2.5.2nb4 firefox-96.0.3
- firefox-l10n-96.0.3 font-util-1.3.2 ghostscript-agpl-9.55.0nb2
- git-base-2.35.1 gnucash-4.9nb1 gnutls-3.7.3nb1 googletest-1.11.0
- gtk3+-3.24.31 guile22-2.2.7nb4 guile22-slib-3.2.6nb2 harfbuzz-3.3.2
- harfbuzz-icu-3.3.2 imath-3.1.4 libVNCServer-0.9.13nb3 libabw-0.1.3nb11
- libcdr-0.1.7nb5 libclucene-2.3.3.4nb21 libdbi-0.9.0
- libdbi-driver-sqlite3-0.9.0nb13 libe-book-0.1.3nb21 libepubgen-0.1.1nb5
+ ImageMagick-7.1.0.27 SDL2-2.0.20 abseil-20211102.0 ap24-php74-7.4.28nb7
+ asciidoc-10.1.4 automake-1.16.5nb1 babl-0.1.90 boost-headers-1.78.0
+ boost-jam-1.78.0 boost-libs-1.78.0 clang-13.0.1 cmake-3.22.3
+ curl-7.82.0 dbus-1.14.0 dconf-0.40.0 digest-20220214
+ double-conversion-3.2.0 exempi-2.5.2nb4 findutils-4.9.0
+ firefox-97.0.2 firefox-l10n-97.0.2 flac-1.3.4 font-util-1.3.2
+ fossil-2.18 gdbm-1.23 gdbus-codegen-2.70.4 gegl-0.4.36
+ ghostscript-agpl-9.55.0nb2 git-base-2.35.1 glib2-2.70.4
+ glib2-tools-2.70.4 gnucash-4.9nb1 gnupg2-2.2.34 gnutls-3.7.3nb1
+ gobject-introspection-1.70.0 googletest-1.11.0 graphviz-2.50.0nb2
+ gstreamer1-1.18.5nb2 gtk3+-3.24.31 guile22-2.2.7nb5 guile22-slib-3.2.6nb3
+ harfbuzz-4.0.0 harfbuzz-icu-4.0.0 help2man-1.49.1 imath-3.1.4
+ libVNCServer-0.9.13nb3 libabw-0.1.3nb11 libcdr-0.1.7nb5
+ libclucene-2.3.3.4nb21 libdbi-0.9.0 libdbi-driver-sqlite3-0.9.0nb13
+ libduktape-2.7.0 libe-book-0.1.3nb21 libepubgen-0.1.1nb5
  libetonyek-0.1.10nb4 libffi-3.4.2nb2 libfreehand-0.1.2nb12
- libgpg-error-1.44 libixion-0.17.0 libksba-1.6.0 libmspub-0.1.4nb20
- libmwaw-0.3.18nb2 libodfgen-0.1.7nb5 libofx-0.9.15nb7
- libpagemaker-0.0.4nb11 libqxp-0.0.2nb14 libreoffice-7.3.0.3
- librevenge-0.0.4nb16 libstaroffice-0.0.7nb5 libunistring-1.0
- libunwind-13.0.1 libuv-1.43.0nb2 libva-2.13.0 libvisio-0.1.7nb14
- libwpd-0.10.3nb5 libwpg-0.3.3nb7 libwps-0.4.12nb4 libxml++-2.40.1nb10
- libzmf-0.0.2nb22 lld-13.0.1 llvm-13.0.1 ltm-1.2.0nb1 lzip-1.23
- mcookie-2.32.1 mdds-2.0.1 mlterm-3.9.2 mpv-0.34.1 neon-0.32.2
- nono-0.2.5 nss-3.75 openexr-3.1.4 opensp-1.5.2nb10 orcus-0.17.2
- p11-kit-0.24.1 p5-B-Hooks-EndOfScope-0.24nb4 p5-CGI-4.53
- p5-CPAN-Meta-Check-0.014nb5 p5-Capture-Tiny-0.48nb4
- p5-Class-Data-Inheritable-0.09 p5-Class-Inspector-1.36nb2
- p5-Class-Singleton-1.6nb1 p5-Crypt-SSLeay-0.72nb10 p5-Data-OptList-0.112
- p5-Date-Manip-6.86 p5-DateTime-1.5400 p5-DateTime-Format-Strptime-1.7900
- p5-DateTime-Locale-1.33 p5-DateTime-TimeZone-2.51
- p5-Devel-Caller-2.06nb7 p5-Devel-LexAlias-0.05nb8
- p5-Devel-StackTrace-2.04nb3 p5-Dist-CheckConflicts-0.11nb7
- p5-Encode-Locale-1.05nb7 p5-Eval-Closure-0.14nb6 p5-Exception-Class-1.45
- p5-ExtUtils-Config-0.008nb7 p5-ExtUtils-Helpers-0.026nb5
- p5-ExtUtils-InstallPaths-0.012nb4 p5-File-Listing-6.14nb1
- p5-File-ShareDir-1.118nb4 p5-File-ShareDir-Install-0.13nb4
- p5-Finance-Quote-1.49nb1 p5-HTML-Element-Extended-1.18nb12
- p5-HTML-Parser-3.76nb1 p5-HTML-TableExtract-2.15nb5
- p5-HTML-Tagset-3.20nb13 p5-HTML-Tree-5.07nb4
- p5-HTTP-Cookies-6.10nb1 p5-HTTP-Daemon-6.12nb2
- p5-HTTP-Date-6.05nb2 p5-HTTP-Message-6.33 p5-HTTP-Negotiate-6.01nb10
- p5-IO-HTML-1.004nb1 p5-Importer-0.026nb1 p5-JSON-4.03nb1
- p5-JSON-Parse-0.61nb1 p5-LWP-MediaTypes-6.04nb2
+ libgcrypt-1.10.0 libgpg-error-1.44 libical-3.0.14 libixion-0.17.0
+ libksba-1.6.0 libmspub-0.1.4nb20 libmwaw-0.3.18nb2
+ libodfgen-0.1.7nb5 libofx-0.9.15nb7 libpagemaker-0.0.4nb11
+ libpurple-2.14.8 libqxp-0.0.2nb14 libreoffice-7.3.1.3
+ librevenge-0.0.4nb16 librsvg-2.52.6 libsigc++-2.10.8
+ libstaroffice-0.0.7nb5 libunistring-1.0 libunwind-13.0.1
+ libuv-1.44.0 libva-2.14.0 libvisio-0.1.7nb14 libwebp-1.2.2
+ libwpd-0.10.3nb5 libwpg-0.3.3nb7 libwps-0.4.12nb4 libxkbcommon-1.4.0
+ libxml++-2.40.1nb10 libzmf-0.0.2nb22 lld-13.0.1 llvm-13.0.1
+ ltm-1.2.0nb1 lzip-1.23 mcookie-2.32.1 mdds-2.0.1
+ meson-0.61.2nb1 mlterm-3.9.2 mm-common-1.0.4 mpv-0.34.1
+ neon-0.32.2 nghttp2-1.47.0 nono-0.2.6 nss-3.76 openexr-3.1.4
+ opensp-1.5.2nb10 orcus-0.17.2 p11-kit-0.24.1
+ p5-B-Hooks-EndOfScope-0.24nb4 p5-CGI-4.53 p5-CPAN-Meta-Check-0.014nb5
+ p5-Capture-Tiny-0.48nb4 p5-Class-Data-Inheritable-0.09
+ p5-Class-Inspector-1.36nb2 p5-Class-Singleton-1.6nb1
+ p5-Crypt-SSLeay-0.72nb10 p5-Data-OptList-0.112 p5-Date-Manip-6.86
+ p5-DateTime-1.5500 p5-DateTime-Format-Strptime-1.7900
+ p5-DateTime-Locale-1.33 p5-DateTime-TimeZone-2.51 p5-Devel-Caller-2.06nb7
+ p5-Devel-LexAlias-0.05nb8 p5-Devel-StackTrace-2.04nb3
+ p5-Dist-CheckConflicts-0.11nb7 p5-Encode-Locale-1.05nb7
+ p5-Eval-Closure-0.14nb6 p5-Exception-Class-1.45 p5-ExtUtils-Config-0.008nb7
+ p5-ExtUtils-Helpers-0.026nb5 p5-ExtUtils-InstallPaths-0.012nb4
+ p5-File-Listing-6.14nb1 p5-File-ShareDir-1.118nb4
+ p5-File-ShareDir-Install-0.13nb4 p5-Finance-Quote-1.49nb1
+ p5-HTML-Element-Extended-1.18nb12 p5-HTML-Parser-3.76nb1
+ p5-HTML-TableExtract-2.15nb5 p5-HTML-Tagset-3.20nb13
+ p5-HTML-Tree-5.07nb4 p5-HTTP-Cookies-6.10nb1
+ p5-HTTP-Daemon-6.14 p5-HTTP-Date-6.05nb2 p5-HTTP-Message-6.36
+ p5-HTTP-Negotiate-6.01nb10 p5-IO-HTML-1.004nb1 p5-Importer-0.026nb1
+ p5-JSON-4.03nb1 p5-JSON-Parse-0.61nb1 p5-LWP-MediaTypes-6.04nb2
  p5-LWP-Protocol-https-6.10nb1 p5-List-AllUtils-0.19nb1
  p5-List-SomeUtils-0.58nb2 p5-List-SomeUtils-XS-0.58nb4
  p5-List-UtilsBy-0.11nb4 p5-MRO-Compat-0.13nb5 p5-Math-Round-0.07nb7
@@ -85,43 +96,50 @@ pkgsrc:
  p5-Module-Implementation-0.09nb7 p5-Module-Pluggable-5.2nb6
  p5-Module-Runtime-0.016nb4 p5-Net-HTTP-6.21nb1
  p5-Package-DeprecationManager-0.17nb6 p5-Package-Stash-0.39nb1
- p5-Package-Stash-XS-0.29nb3 p5-PadWalker-2.5nb1
- p5-Params-Util-1.07nb10 p5-Params-Validate-1.30nb1
- p5-Params-ValidationCompiler-0.30nb4 p5-Path-Class-0.37nb5
- p5-Ref-Util-0.204nb4 p5-Ref-Util-XS-0.117nb4 p5-Role-Tiny-2.002004nb1
- p5-Scalar-List-Utils-1.60 p5-Scope-Guard-0.21nb6 p5-Specio-0.47nb1
- p5-String-Util-1.32nb1 p5-Sub-Exporter-0.988
- p5-Sub-Exporter-Progressive-0.001013nb5 p5-Sub-Info-0.002nb5
- p5-Sub-Install-0.928nb7 p5-Sub-Name-0.26nb2 p5-Sub-Quote-2.006006nb2
- p5-Term-Table-0.015nb2 p5-Test-Fatal-0.016nb1 p5-Test-LeakTrace-0.17nb1
+ p5-Package-Stash-XS-0.29nb3 p5-PadWalker-2.5nb1 p5-Params-Util-1.07nb10
+ p5-Params-Validate-1.30nb1 p5-Params-ValidationCompiler-0.30nb4
+ p5-Path-Class-0.37nb5 p5-Ref-Util-0.204nb4 p5-Ref-Util-XS-0.117nb4
+ p5-Role-Tiny-2.002004nb1 p5-Scalar-List-Utils-1.60
+ p5-Scope-Guard-0.21nb6 p5-Specio-0.47nb1 p5-String-Util-1.32nb1
+ p5-Sub-Exporter-0.988 p5-Sub-Exporter-Progressive-0.001013nb5
+ p5-Sub-Info-0.002nb5 p5-Sub-Install-0.928nb7 p5-Sub-Name-0.26nb2
+ p5-Sub-Quote-2.006006nb2 p5-Term-Table-0.015nb2
+ p5-Test-Fatal-0.016nb1 p5-Test-LeakTrace-0.17nb1
  p5-Test-Requires-0.11nb1 p5-Test-Warnings-0.031
  p5-Test-Without-Module-0.20nb5 p5-Test2-Plugin-NoWarnings-0.09nb1
- p5-Test2-Suite-0.000141 p5-Text-Template-1.60 p5-Try-Tiny-0.30nb4
- p5-Variable-Magic-0.62nb4 p5-WWW-RobotRules-6.02nb10
- p5-inc-latest-0.500nb6 p5-libwww-6.60 p5-namespace-autoclean-0.29nb2
- p5-namespace-clean-0.27nb5 pinentry-1.2.0 polkit-0.120nb2
- poppler-22.01.0nb1 py-gobject3-common-3.42.0 py27-libxslt-1.1.34nb6
- py39-cElementTree-3.9.10 py39-charset-normalizer-2.0.11
+ p5-Test2-Suite-0.000144 p5-Text-Template-1.60
+ p5-Try-Tiny-0.30nb4 p5-Variable-Magic-0.62nb4
+ p5-WWW-RobotRules-6.02nb10 p5-inc-latest-0.500nb6 p5-libwww-6.61
+ p5-namespace-autoclean-0.29nb2 p5-namespace-clean-0.27nb5
+ pango-1.48.11 php-7.4.28 php74-curl-7.4.28nb12 php74-fpm-7.4.28nb8
+ php74-gd-7.4.28nb1 php74-iconv-7.4.28 php74-intl-7.4.28nb7
+ php74-json-7.4.28 php74-mbstring-7.4.28 php74-mysqli-7.4.28nb2
+ php74-pdo-7.4.28 php74-pdo_sqlite-7.4.28nb7 php74-posix-7.4.28
+ php74-sqlite3-7.4.28nb7 php74-zip-7.4.28nb7 php74-zlib-7.4.28nb1
+ pinentry-1.2.0 polkit-0.120nb2 poppler-22.03.0 poppler-cpp-22.03.0
+ poppler-glib-22.03.0 postgresql13-client-13.6 py-gobject3-common-3.42.0
+ py39-cElementTree-3.9.10 py39-charset-normalizer-2.0.12
  py39-cryptodome-3.14.1 py39-expat-3.9.10 py39-gobject3-3.42.0
  py39-importlib-metadata-4.10.1nb1 py39-libxml2-2.9.12nb5
- py39-lxml-4.7.1nb3 py39-pip-21.3.1nb2 py39-pyparsing-3.0.7
- py39-readline-3.9.10 py39-setuptools-60.8.1 py39-setuptools_scm-6.4.2
+ py39-lxml-4.8.0 py39-pip-21.3.1nb2 py39-pyparsing-3.0.7
+ py39-readline-3.9.10 py39-setuptools-60.9.3 py39-setuptools_scm-6.4.2
  py39-sphinx-4.4.0nb1 py39-sqlite3-3.9.10nb21 py39-tomli-2.0.0
- py39-zipp-3.4.1nb1 python27-2.7.18nb7 python37-3.7.12nb3
+ py39-zipp-3.4.1nb1 python27-2.7.18nb8 python37-3.7.12nb3
  python38-3.8.12nb3 python39-3.9.10 readline-8.1.2 rsync-3.2.3nb3
  ruby27-atk-3.5.1 ruby27-base-2.7.5nb1 ruby27-cairo-gobject-3.5.1
  ruby27-gdk3-3.5.1 ruby27-gdk_pixbuf2-3.5.1 ruby27-gio2-3.5.1
- ruby27-glib2-3.5.1 ruby27-gobject-introspection-3.5.1
- ruby27-gtk3-3.5.1 ruby27-mikutter-5.0.4
- ruby27-mikutter-plugins-twitter-5.0nb1 ruby27-nokogiri-1.13.1
- ruby27-pango-3.5.1 rust-1.57.0 samba-4.13.17 slib-3.2.6
- spdlog-1.9.2 swig3-3.0.12nb4 tcsh-6.24.00 tdb-1.4.6 tevent-0.11.0nb1
- tigervnc-1.12.0.1.20.13nb2 vala-0.54.6 webkit-gtk-2.34.5
- wordpress-5.8.3 x11vnc-0.9.16nb11 xfce4-session-4.16.0nb2
- xterm-370nb1 zstd-1.5.2 zxing-cpp-1.2.0
+ ruby27-glib2-3.5.1 ruby27-gobject-introspection-3.5.1 ruby27-gtk3-3.5.1
+ ruby27-mikutter-5.0.4 ruby27-mikutter-plugins-twitter-5.0nb1
+ ruby27-mini_portile2-2.8.0 ruby27-native-package-installer-1.1.3
+ ruby27-nokogiri-1.13.3 ruby27-pango-3.5.1 ruby27-pkg-config-1.4.7
+ rust-1.58.1 samba-4.13.17 slib-3.2.6 spdlog-1.9.2 sqlite3-3.38.0
+ swig3-3.0.12nb4 tcsh-6.24.00 tdb-1.4.6 tevent-0.11.0nb1
+ tigervnc-1.12.0.1.20.13nb2 vala-0.54.6 webkit-gtk-2.34.6
+ wget-1.21.3 wordpress-5.9.1 x11vnc-0.9.16nb11 xfce4-session-4.16.0nb2
+ xscreensaver-6.03 xterm-370nb1 zsh-5.8nb4 zstd-1.5.2 zxing-cpp-1.2.0
 
 Version: 
- NetBSD 9.99.93 (GENERIC64) #0: Wed Feb  9 22:30:27 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.94 (GENERIC64) #0: Wed Mar  9 00:20:48 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
