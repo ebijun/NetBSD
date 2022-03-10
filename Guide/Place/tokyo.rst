@@ -86,6 +86,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
  
+ 175, OSC2022東京春 http://www.re.soum.co.jp/~jun/OSC2022tokyospring.pdf
  171,OSC2021東京秋,http://www.re.soum.co.jp/~jun/OSC2021tokyofall.pdf
  164,OSC2021東京春, http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
  159,OSC2020東京秋, http://www.re.soum.co.jp/~jun/OSC2020tokyofall.pdf
@@ -115,7 +116,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
- OSC2022 Online/SpringNetBSDのご紹介 の記録,https://togetter.com/li/
+ OSC2022 Online/SpringNetBSDのご紹介 の記録, https://togetter.com/li/1856809
  OSC2021 Online/Fall NetBSDのご紹介 の記録,https://togetter.com/li/1790501
  OSC2021 Online/SpringNetBSDのご紹介 の記録,https://togetter.com/li/1675363
  OSC2020東京秋 BSDなひととき の記録,https://togetter.com/li/1611536
