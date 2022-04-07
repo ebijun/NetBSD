@@ -1,4 +1,4 @@
-VERSION: :1,$s/2022-03-08/2022-03-08/g
+VERSION: :1,$s/2022-04-07/2022-04-07/g
 ISO:     :1,$s/202203060650Z/202203060650Z/g
 NetBSD:  :1,$s/9.99.94/9.99.94/g
 PKGSRC:  :1,$s/2022/2022/
@@ -6,30 +6,22 @@ PKGSRC:  :1,$s/2022/2022/
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-03-08-netbsd-raspi-aarch64.img
+Subject: 2022-04-07-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-03-08-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2022-04-07-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-03-08-aarch64/2022-03-08-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-03-08-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-04-07-aarch64/2022-04-07-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-04-07-aarch64/MD5
 
 Topics:
-- add pkgsrc/net/tor [testing for the world in motion]
-  for https://www.bbc.com/news/technology-50150981 with this image,
-   % tor
-  from Browser,portforwarding with ssh.
-   % ssh rpi -L 9050:127.0.0.1:9050
-   set browser proxy socks5:localhost 9050
-- openssh-8.9
+- boot failed with 202204051310Z
+  so backout 202203060650Z
 
-- Raspberry Pi 4 UEFI Firmware v1.32
-
- Always use non translating DMA in DT mode [tianocore/edk2-platforms@efff29c]
- Make sure normal memory is not be marked uncached [tianocore/edk2-platforms@af649f8]
- Make sure all drivers are disconnected before reboot [tianocore/edk2-platforms@63d520f]
- Fix ACPI MMIO host bridge window attribute [tianocore/edk2-platforms@ab6fcc2]
- Revert to using latest start4.elf/fixup4.dat
+- Raspberry Pi 4 UEFI Firmware v1.33
+    Update TF-A to v2.6 to enable the PCI SMCCC interface [tianocore/edk2-non-osi@c1075e9]
+    Add upstream-pi4.dtbo overlay (Allows usage of downstream .dtb with upstream kernel)
+    Add 'clock-frequency' property for mini UART [tianocore/edk2-platforms@b0f3f90]
   
 - openssh 8.8 https://www.openssh.com/txt/release-8.8
 cf.
@@ -69,13 +61,17 @@ sysinfo:
  sh-20220122-20220305165324Z userland-NetBSD-9.99.94/evbarm
 
 pkgsrc:
- digest-20220214 fossil-2.18 glib2-2.70.4 gobject-introspection-1.70.0
- harfbuzz-3.4.0 libevent-2.1.12 libgcrypt-1.10.0 libwebp-1.2.2
- libxkbcommon-1.4.0 nghttp2-1.47.0 pango-1.48.11 ruby27-mini_portile2-2.8.0
- ruby27-nokogiri-1.13.3 tor-0.4.6.10 zsh-5.8nb4
+ cairo-1.16.0nb5 curl-7.82.0 dbus-1.14.0nb2 digest-20220214
+ fossil-2.18 glib2-2.70.5 gnutls-3.7.4 gobject-introspection-1.70.0
+ gtk3+-3.24.33 harfbuzz-4.1.0 libgcrypt-1.10.1 libuuid-2.32.1nb1
+ libwebp-1.2.2 libxkbcommon-1.4.0 libxml2-2.9.13 nghttp2-1.47.0
+ p5-IO-Socket-INET6-2.73 p5-Net-DNS-1.33 pango-1.50.5
+ perl-5.34.1 py39-cElementTree-3.9.12 py39-expat-3.9.12
+ python39-3.9.12 ruby27-mini_portile2-2.8.0 ruby27-nokogiri-1.13.3
+ tiff-4.3.0nb2 wget-1.21.3 zsh-5.8.1
 
 RPI4 status:
-- boot via UEFI_VER=v1.32
+- boot via UEFI_VER=v1.33
  https://github.com/pftf/RPi4/releases
 
 In this image,pre-setted RPI_EFI.fd
