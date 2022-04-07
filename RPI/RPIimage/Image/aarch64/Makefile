@@ -14,7 +14,7 @@ RPI=${BINARY}/gzimg/arm64.img.gz
 ORD=a.img
 
 # UEFI
-UEFI_VER=v1.32
+UEFI_VER=v1.33
 UEFI_FIRM=RPi4_UEFI_Firmware_${UEFI_VER}.zip
 UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 

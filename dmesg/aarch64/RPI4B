@@ -143,7 +143,7 @@ chacha: ARM NEON ChaCha
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SA32G:0x69:0x2ac4fcd0:0x157>
 ld1: 29544 MB, 7503 cyl, 128 head, 63 sec, 512 bytes/sect x 60506112 sectors
-ld1: GPT GUID: 728cf55e-ba14-4168-875e-4dd5d94e3f5d
+ld1: GPT GUID: 2fed8ff1-8677-41b5-a628-3b99cbe77fe8
 dk0 at ld1: "EFI", 163840 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 4751355 blocks at 163843, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -155,17 +155,27 @@ bwfm0 at sdmmc0 function 1
 uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 1
 uhub2: single transaction translator
 uhub2: 4 ports with 4 removable, self powered
-uhidev0 at uhub2 port 3 configuration 1 interface 0
-uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/1
+uhub3 at uhub2 port 1: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1.10/3.00, addr 2
+uhub3: 4 ports with 4 removable, self powered
+urtwn0 at uhub3 port 1
+urtwn0: Realtek (0x0bda) 802.11n WLAN NIC (0x8179), rev 2.00/0.00, addr 3
+urtwn0: MAC/BB RTL8188EU, RF 6052 1T1R, address 00:0f:00:4c:ae:dd
+urtwn0: 1 rx pipe, 2 tx pipes
+uhidev0 at uhub3 port 2 configuration 1 interface 0
+uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub2 port 3 configuration 1 interface 1
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/0
+uhidev1 at uhub3 port 2 configuration 1 interface 1
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
 uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
+uhidev2 at uhub3 port 3 configuration 1 interface 0
+uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 5, iclass 3/1
+ums0 at uhidev2: 3 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
 umass0 at uhub2 port 4 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 3
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 6
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
@@ -176,7 +186,7 @@ root file system type: ffs
 kern.module.path=/stand/evbarm/9.99.94/modules
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.bin
-WARNING: clock lost 139 days
+WARNING: clock lost 169 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
