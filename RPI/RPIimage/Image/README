@@ -1,39 +1,31 @@
-VERSION: :1,$s/2022-03-05/2022-03-05/g
-ISO:     :1,$s/202203040440Z/202203040440Z/g
-NetBSD:  :1,$s/9.99.94/9.99.94/g
-PKGSRC:  :1,$s/2022-03-05/2022/
+VERSION: :1,$s/2022-04-09/2022-04-09/g
+ISO:     :1,$s/202204060620Z/202204060620Z/g
+NetBSD:  :1,$s/9.99.96/9.99.96/g
+PKGSRC:  :1,$s/2022-04-09/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-03-05-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2022-04-09-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-03-05-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2022-04-09-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-03-05-earmv6hf/2022-03-05-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-03-05-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-04-09-earmv6hf/2022-04-09-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-04-09-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.94 evbarm-earmv6hf 2202203040440Z rpi.img from nyftp.
-- add pkgsrc/net/tor [testing for the world in motion]
-  for https://www.bbc.com/news/technology-50150981 with this image,
-   % tor
-  from Browser,portforwarding with ssh.
-   % ssh rpi -L 9050:127.0.0.1:9050
-   set browser proxy socks5:localhost 9050
-- openssh-8.9
-
+- NetBSD 9.99.96 evbarm-earmv6hf 2202204060620Z rpi.img from nyftp.
 - Re: Raspberry Pi camera under NetBSD current
  http://mail-index.netbsd.org/current-users/2021/11/16/msg041683.html
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-#commit 577aef2bc2f8e9dcd6955a85cf0621cc73b29db7
+#commit 2595b815bf0e3c2af4b9a6be2151661df1ed4710 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Wed Feb 9 17:04:38 2022 +0000
-#    extra: Update dt-blob.dts to include cm4s
-#    See: https://github.com/raspberrypi/firmware/issues/1691
+#Date:   Fri Apr 1 11:41:42 2022 +0100
+#    kernel: drm/vc4: Force trigger of dlist update on margins change
+#    See: https://github.com/raspberrypi/linux/pull/4970
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
@@ -81,14 +73,22 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- libssh-42.0 NetBSD-9.99.94 openssh-8.9 opensshd-8.9
- sh-20220122-20220303210314Z userland-NetBSD-9.99.94/evbarm
+ libssh-42.0 NetBSD-9.99.96 openssh-8.9 opensshd-8.9
+ openssl-1.1.1n sh-20220122-20220406032338Z tzdata-2022agtz
+ userland-NetBSD-9.99.96/evbarm
 
 pkgsrc:
- digest-20220214 fossil-2.18 glib2-2.70.4 gobject-introspection-1.70.0
- harfbuzz-3.4.0 libevent-2.1.12 libgcrypt-1.10.0 libwebp-1.2.2
- libxkbcommon-1.4.0 nghttp2-1.47.0 pango-1.48.11 tor-0.4.6.10
- zsh-5.8nb4
+ cairo-1.16.0nb5 curl-7.82.0 dbus-1.14.0nb2 digest-20220214
+ fossil-2.18 glib2-2.70.5 gnutls-3.7.4 gobject-introspection-1.70.0
+ gtk3+-3.24.33 harfbuzz-4.1.0 libgcrypt-1.10.1 libuuid-2.32.1nb1
+ libwebp-1.2.2 libxkbcommon-1.4.0 libxml2-2.9.13 nghttp2-1.47.0
+ p5-IO-Socket-INET6-2.73 p5-Net-DNS-1.33 pango-1.50.5
+ perl-5.34.1 py39-cElementTree-3.9.12 py39-expat-3.9.12
+ python39-3.9.12 ruby27-atk-3.5.1 ruby27-cairo-gobject-3.5.1
+ ruby27-gdk3-3.5.1 ruby27-gdk_pixbuf2-3.5.1 ruby27-gio2-3.5.1
+ ruby27-glib2-3.5.1 ruby27-gobject-introspection-3.5.1
+ ruby27-gtk3-3.5.1 ruby27-mini_portile2-2.8.0 ruby27-nokogiri-1.13.3
+ ruby27-pango-3.5.1 tiff-4.3.0nb2 wget-1.21.3 zsh-5.8.1
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -147,7 +147,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-03-05-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-04-09-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -385,7 +385,7 @@ http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2021.rst
 
-- NetBSD 9.99.94 earmv6hf rpi.img.gz base
+- NetBSD 9.99.96 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
