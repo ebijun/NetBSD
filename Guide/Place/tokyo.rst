@@ -86,7 +86,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
  
- 175, OSC2022東京春 http://www.re.soum.co.jp/~jun/OSC2022tokyospring.pdf
+ 175, OSC2022東京春, http://www.re.soum.co.jp/~jun/OSC2022tokyospring.pdf
  171,OSC2021東京秋,http://www.re.soum.co.jp/~jun/OSC2021tokyofall.pdf
  164,OSC2021東京春, http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
  159,OSC2020東京秋, http://www.re.soum.co.jp/~jun/OSC2020tokyofall.pdf
