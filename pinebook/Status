@@ -16,9 +16,9 @@ Problems:
 - seamonkey 2.53.10 can't start
 
 Topics:
-- pkgsrc update as after 2021Q4.
-  firefox 97.0.2 and libreoffice 7.3.1.3
-  https://twitter.com/ebijun/status/1501536054528012288
+- pkgsrc update as after 2022Q1.
+  firefox 98.0.2 and libreoffice 7.3.1.3
+  https://twitter.com/ebijun/status/1513773516402790403
 
 - graphical mixer for NetBSD audio.
 
@@ -95,55 +95,47 @@ ToDo:
 System Updates:
 
 sysinfo:
- libssh-42.0 NetBSD-9.99.94 openssh-8.9 opensshd-8.9
- sh-20220122-20220308204556Z tcsh-6.24.00
- userland-NetBSD-9.99.94/evbarm
+ NetBSD-9.99.96 openssl-1.1.1n sh-20220122-20220410195457Z
+ tzdata-2022agtz userland-NetBSD-9.99.96/evbarm
 
 pkgsrc:
- ImageMagick-7.1.0.27 abseil-20211102.0 alsa-lib-1.2.6.1
- ap24-php74-7.4.28nb7 asciidoc-10.1.4 automake-1.16.5nb1
- babl-0.1.90 clang-13.0.1 cmake-3.22.3 curl-7.82.0 cyrus-sasl-2.1.28
- dconf-0.40.0 digest-20220214 extra-cmake-modules-5.83.0
- findutils-4.9.0 firefox-97.0.2 firefox-l10n-97.0.2
- flac-1.3.4 fluidsynth-2.2.5 fossil-2.18 gdbm-1.23
- gdbus-codegen-2.70.4 gegl-0.4.36 ghostscript-agpl-9.55.0nb2
- git-base-2.35.1 glib2-2.70.4 glib2-tools-2.70.4
- gnupg2-2.2.34 gnutls-3.7.3nb1 go-1.17.8 go116-1.16.15
- go117-1.17.8 gobject-introspection-1.70.0
- graphviz-2.50.0nb2 gstreamer1-1.18.5nb2 guile22-2.2.7nb5
- harfbuzz-4.0.0 harfbuzz-icu-4.0.0 help2man-1.49.1
- imath-3.1.4 inkscape-1.1.2 ldb-2.4.2 libduktape-2.7.0
- libetonyek-0.1.10nb4 libgcrypt-1.10.0 libgpg-error-1.44
- libical-3.0.14 libixion-0.17.0 libpurple-2.14.8
- libreoffice-7.3.1.3 librsvg-2.52.6 libsigc++-2.10.8
- libuv-1.44.0 libva-2.14.0 libwebp-1.2.2 libxkbcommon-1.4.0
- llvm-13.0.1 ltm-1.2.0nb1 lzip-1.23 mdds-2.0.1 meson-0.61.2nb1
- mlterm-3.9.2 mm-common-1.0.4 mysql-client-5.7.37 nghttp2-1.47.0
- nodejs-14.19.0 nss-3.76 openexr-3.1.4 orcus-0.17.2 osabi-NetBSD-9.99.94
- p11-kit-0.24.1 pango-1.48.11 php-7.4.28 php74-curl-7.4.28nb12
- php74-fpm-7.4.28nb8 php74-gd-7.4.28nb1 php74-iconv-7.4.28
- php74-intl-7.4.28nb7 php74-json-7.4.28 php74-mbstring-7.4.28
- php74-pdo-7.4.28 php74-pdo_sqlite-7.4.28nb7 php74-posix-7.4.28
- php74-sqlite3-7.4.28nb7 php74-zip-7.4.28nb7 php74-zlib-7.4.28nb1
- polkit-0.120nb2 poppler-22.03.0 poppler-glib-22.03.0
- poppler-includes-22.03.0 poppler-utils-22.03.0
- protobuf-3.19.4 pugixml-1.12.1 py-gobject3-common-3.42.0
- py27-gobject3-3.36.1nb3 py39-attrs-21.4.0
- py39-charset-normalizer-2.0.12 py39-cryptodome-3.14.1
- py39-cython-0.29.28 py39-gobject3-3.42.0
- py39-gyp-0.1pre20210830.d6c5dd51dc3a60bf4ff32a5256713690a1a10376
- py39-importlib-metadata-4.10.1nb1 py39-lxml-4.8.0
- py39-numpy-1.21.5nb4 py39-py-1.11.0 py39-pyparsing-3.0.7
- py39-scour-0.38.2nb3 py39-setuptools-60.9.3
- py39-setuptools_scm-6.4.2 py39-sphinx-4.4.0nb1 python27-2.7.18nb8
- rclone-1.56.0nb7 rsync-3.2.3nb3 ruby27-mikutter-5.0.4
- ruby27-mikutter-plugins-twitter-5.0nb1 ruby27-mini_portile2-2.8.0
- ruby27-native-package-installer-1.1.3 ruby27-nokogiri-1.13.3
- ruby27-pkg-config-1.4.7 rust-1.58.1 samba-4.13.17
- spdlog-1.9.2 sqlite3-3.38.0 tcsh-6.24.00 tdb-1.4.6
- tevent-0.11.0nb1 u-boot-pinebook-pro-2022.01nb1
- wget-1.21.3 xfce4-session-4.16.0nb2 xscreensaver-6.02nb2
- xterm-370nb1 zsh-5.8nb4 zstd-1.5.2 zxing-cpp-1.2.0
+ ImageMagick-7.1.0.28 SDL-1.2.15nb37 SDL2-2.0.20nb1 SDL2_mixer-2.0.4nb8
+ alsa-lib-1.2.6.1nb1 apache-2.4.53 audacious-plugins-4.1nb10 babl-0.1.90nb1
+ cairo-1.16.0nb5 cln-1.3.6 cmake-3.22.3nb1 cmus-2.9.1nb7 cwrappers-20220403
+ dav1d-1.0.0 dbus-1.14.0nb2 dconf-0.40.0nb1 ffmpeg2-2.8.17nb14
+ ffmpeg3-3.4.8nb16 ffmpeg4-4.4.1nb3 firefox-98.0.2 firefox-l10n-98.0.2
+ firefox52-52.9.0nb42 fluidsynth-2.2.6 fontconfig-2.13.1nb6
+ gcr-3.38.1nb1 gdbus-codegen-2.70.5 gegl-0.4.36nb1
+ gexiv2-0.12.2nb5 glib2-2.70.5 glib2-tools-2.70.5 gnutls-3.7.4
+ go-bin-1.17.8 gspell-1.8.3nb9 gssdp-1.0.3nb18 gtk3+-3.24.33
+ gupnp-1.0.3nb14 harfbuzz-4.1.0 harfbuzz-icu-4.1.0 ibus-1.5.26nb1
+ jwm-2.4.1 ladspa-1.17nb1 lame-3.100nb3 libLLVM-13.0.1 libbluray-1.3.1
+ libdazzle-3.38.0nb4 libdbusmenu-glib-12.10.2nb15
+ libdbusmenu-gtk3-12.10.2nb24 libdrm-2.4.110 libgcrypt-1.10.1
+ libgee-0.20.3nb6 libgpg-error-1.45 libgweather-40.0nb5
+ libhandy-1.5.91nb1 libmikmod-3.3.11.1nb9 librsvg-2.52.8
+ libsamplerate-0.2.2nb1 libsecret-0.20.4nb4 libsndfile-1.1.0nb1
+ libuuid-2.32.1nb1 libuv-1.44.1 libxml2-2.9.13 mate-settings-daemon-1.24.2nb2
+ meson-0.61.3 mpv-0.34.1nb1 nginx-1.20.2nb6 nodejs-16.14.2nb1 nss-3.77nb1
+ openal-soft-1.21.1nb4 p5-IO-Socket-INET6-2.73 p5-Net-DNS-1.33
+ pango-1.50.5 pangomm-2.46.2 perl-5.34.1 phonon-4.10.3nb10
+ portaudio-190600.20161030nb10 protobuf-3.20.0 pulseaudio-15.0nb2
+ py39-cElementTree-3.9.12 py39-cairo-1.21.0 py39-expat-3.9.12
+ py39-libxml2-2.9.13 py39-numpy-1.22.3 py39-pip-21.3.1nb3
+ py39-setuptools-62.0.0 py39-sqlite3-3.9.12nb21 py39-tomli-2.0.1
+ py39-urllib3-1.26.9 python37-3.7.13 python39-3.9.12 qmmp-1.5.1nb6
+ qt5-qtmultimedia-5.15.2nb8 qt5-qttools-5.15.2nb8 samba-4.15.6nb1
+ seamonkey-2.53.10nb2 sqlite3-3.38.2 telepathy-glib-0.24.1nb23
+ tex-amsmath-2.17l tex-avantgar-2021 tex-bookman-2021 tex-c90-2021
+ tex-carlisle-2021 tex-cjk-4.8.5 tex-cjk-gs-integrate-20210625.0
+ tex-cjkutils-4.8.5 tex-cns-2018 tex-courier-2021 tex-fancyvrb-4.1b
+ tex-fonts-tlwg-0.7.3 tex-fontspec-2.8a tex-garuda-c90-2021
+ tex-haranoaji-20220220 tex-helvetic-2021 tex-iftex-1.0f
+ tex-ipaex-2021 tex-ncntrsbk-2021 tex-oberdiek-2021 tex-palatino-2021
+ tex-symbol-2021 tex-times-2021 tex-zapfchan-2021 tex-zapfding-2021
+ tiff-4.3.0nb2 unicode-character-database-14.0.0 unicode-emoji-14.0
+ vala-0.56.0 vte3-0.68.0nb2 xfce4-orage-4.16.0 xfce4-terminal-1.0.0
+ xnp2-0.86nb14 xscreensaver-6.03 xterm-372 zsh-5.8.1
 
 System Updates:
  https://github.com/ebijun/NetBSD/commit/7f58ddcde0b04631e3c656899cf6dd6a8aa51408
