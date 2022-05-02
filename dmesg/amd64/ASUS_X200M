@@ -49,13 +49,13 @@ acpi0: autoconfiguration error: invalid PCI address for D012
 acpi0: autoconfiguration error: invalid PCI address for D014
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC65EC10DE008 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFCA6F742DE008 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC65EC10DE808 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
+ACPI: SSDT 0xFFFFCA6F742DE808 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC65EF855E208 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFCA6FAB75E208 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC65EC10EE408 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFCA6F742EE408 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -134,9 +134,8 @@ ppb1: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.
 ppb1: link is x1 @ 2.5GT/s
 pci2 at ppb1 bus 2
 pci2: i/o space, memory space enabled, rd/line, wr/inv ok
-iwn0 at pci2 dev 0 function 0: Intel WiFi Link 5100 (rev. 0x00)
-iwn0: interrupting at msi2 vec 0
-iwn0: MIMO 1T2R, MoW, address 00:24:d6:a3:5b:3e
+iwm0 at pci2 dev 0 function 0: Intel Dual Band Wireless AC 7260 (rev. 0x73)
+iwm0: interrupting at msi2 vec 0
 ppb2 at pci0 dev 28 function 3: Intel Bay Trail PCIe Root Port (rev. 0x0e)
 ppb2: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 ppb2: link is x1 @ 2.5GT/s
@@ -192,10 +191,10 @@ coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=105
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu1: autoconfiguration error: lapic_set_lvt: WARNING: bad pin value 61
 timecounter: Timecounter "TSC" frequency 2166667000 Hz quality 3000
-acpiacad0: AC adapter online.
-IPsec: Initialized Security Association Processing.
+acpiacad0: AC adapter offline.
 uhub0 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 8 ports with 8 removable, self powered
+IPsec: Initialized Security Association Processing.
 aes: Intel SSSE3 vpaes
 chacha: x86 SSE2 ChaCha
 acpibat0: ASUSTeK LIon rechargeable battery
@@ -220,9 +219,8 @@ video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) USB2.0 HD UVC WebCam (0
 uhub2 at uhub1 port 4: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/85.37, addr 4
 uhub2: single transaction translator
 uhub2: 3 ports with 2 removable, self powered
-run0 at uhub2 port 2
-run0: Ralink (0x0411) 802.11 n WLAN (0x01a2), rev 2.00/1.01, addr 5
-run0: MAC/BBP RT3070 (rev 0x0201), RF RT3020 (MIMO 1T1R), address 10:6f:3f:eb:f0:01
+ubt0 at uhub2 port 1
+ubt0: vendor 8087 (0x8087) product 07dc (0x07dc), rev 2.00/0.01, addr 5
 WARNING: 5 errors while detecting hardware; check system log.
 boot device: wd0
 root on dk1 dumps on dk2
@@ -234,6 +232,7 @@ kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at msi5 vec 0 (i915drmkms0)
 intelfb0 at i915drmkms0
 intelfb0: framebuffer at 0xc0380000, size 1366x768, depth 32, stride 5504
+iwm0: hw rev 0x140, fw ver 17.352738.0, address a0:a8:cd:40:fc:81
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
