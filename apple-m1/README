@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20220406)
+Subject: apple m1 status update (20220512)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
@@ -19,7 +19,7 @@ Hardware:
  USB SSD 128GB ELECOM ESD-EC0120GRDR
 
 Filesystem   1M-blocks      Used     Avail %Cap Mounted on
-/dev/dk1        112570     72267     34674  67% /
+/dev/dk1        112570     98244      8697  91% /
 /dev/dk0            79        32        47  40% /boot
 ptyfs                0         0         0 100% /dev/pts
 procfs               0         0         0 100% /proc
@@ -37,37 +37,80 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- NetBSD-9.99.96 openssl-1.1.1n sh-20220122-20220405130954Z
- tzdata-2022agtz userland-NetBSD-9.99.96/evbarm
+ libcurses-9.1 libssh-43.0 openssh-9.0 opensshd-9.0
+ sh-20220122-20220510152904Z
 
 pkgsrc:
- ImageMagick-7.1.0.28 SDL-1.2.15nb37 SDL2-2.0.20nb1 SDL2_mixer-2.0.4nb8
- apache-2.4.53 babl-0.1.90nb1 cmake-3.22.3nb1 cwrappers-20220403
- dav1d-1.0.0 dbus-1.14.0nb2 dconf-0.40.0nb1 ffmpeg4-4.4.1nb3
- firefox-98.0.2 firefox-l10n-98.0.2 gdbus-codegen-2.70.5 gegl-0.4.36nb1
- gexiv2-0.12.2nb5 glib2-2.70.5 glib2-tools-2.70.5 gnutls-3.7.4
- gspell-1.8.3nb9 gssdp-1.0.3nb18 gst-plugins1-good-1.18.5nb2 gtk3+-3.24.33
- guile22-slib-3.2.6nb5 gupnp-1.0.3nb14 harfbuzz-4.1.0 harfbuzz-icu-4.1.0
- jwm-2.4.1 lame-3.100nb3 libbluray-1.3.1 libdbusmenu-glib-12.10.2nb15
- libdbusmenu-gtk3-12.10.2nb24 libgcrypt-1.10.1 libgweather-40.0nb5
- libmikmod-3.3.11.1nb9 librsvg-2.52.8 libsamplerate-0.2.2nb1
- libsecret-0.20.4nb4 libsndfile-1.1.0nb1 libuuid-2.32.1nb1
- libuv-1.44.1 libxml2-2.9.13 mate-settings-daemon-1.24.2nb2
- meson-0.61.3 mplayer-share-1.4nb15 nginx-1.20.2nb6
- nss-3.77 openal-soft-1.21.1nb4 osabi-NetBSD-9.99.96
- p5-CGI-4.54 p5-DateTime-1.5700 p5-DateTime-TimeZone-2.52
- p5-IO-Socket-INET6-2.73 p5-JSON-4.05 p5-Net-DNS-1.33
- pango-1.50.5 perl-5.34.1 pulseaudio-15.0nb2 py39-cElementTree-3.9.12
- py39-cairo-1.21.0 py39-expat-3.9.12 py39-libxml2-2.9.13 py39-pip-21.3.1nb3
- py39-readline-3.9.12 py39-sqlite3-3.9.12nb21 py39-tomli-2.0.1
- py39-urllib3-1.26.9 python37-3.7.13 python38-3.8.13 python39-3.9.12
- qmmp-1.5.1nb6 qt5-qtmultimedia-5.15.2nb8 qt5-qttools-5.15.2nb8
- seamonkey-2.53.10nb2 slib-3.2.6nb1 sqlite3-3.38.2 tiff-4.3.0nb2
- unzip-6.0nb9 vala-0.56.0 vera-ttf-1.10nb6 wordpress-5.9.2
- xfce4-orage-4.16.0 xnp2-0.86nb14 xterm-372 zsh-5.8.1
+ GConf-3.2.3nb12 ImageMagick6-6.9.11.7nb13 SDL2-2.0.22 ap24-php74-7.4.29nb8
+ apache-2.4.53nb1 apr-util-1.6.1nb13 asciidoc-10.1.4nb1 atril-1.24.1nb4
+ blas-3.10.1 boost-libs-1.78.0nb2 cairo-1.16.0nb5 caja-1.24.1nb2
+ caja-extensions-1.24.1nb2 cblas-3.10.1 clang-13.0.1nb1 cmake-3.23.1
+ curl-7.83.0 deforaos-configure-0.4.3 deforaos-cpp-0.0.6
+ deforaos-libdatabase-0.0.2nb6 deforaos-libdesktop-0.4.1
+ deforaos-libsystem-0.4.3 emacs26-26.3nb18 enchant2-2.3.3
+ farstream-0.2.9nb11 ffmpeg4-4.4.2 ffmpeg5-5.0.1nb1 firefox-98.0.2nb1
+ fossil-2.18nb1 gconfmm-2.28.3nb29 gegl-0.4.36nb2 geocode-glib-3.26.2nb4
+ gimp-2.10.30nb2 git-base-2.36.1 gnome-desktop-2.32.1nb48
+ gnome-doc-utils-0.20.10nb11 gnome-icon-theme-symbolic-3.12.0nb17
+ gnupg2-2.2.35 gpgme-1.17.1 graphviz-2.50.0nb4 gssdp-1.0.3nb19
+ gst-plugins0.10-base-0.10.36nb20 gst-plugins0.10-good-0.10.31nb10
+ gst-plugins0.10-oss-0.10.31nb8 gst-plugins0.10-v4l2-0.10.31nb8
+ gst-plugins1-base-1.20.1 gst-plugins1-good-1.20.1
+ gstreamer0.10-0.10.36nb19 gstreamer1-1.20.1 gtk-doc-1.32nb8
+ gtksourceview3-3.24.11nb8 gtksourceview4-4.8.0nb4 gupnp-1.0.3nb15
+ gupnp-igd-0.2.5nb12 gvfs-1.6.7nb59 harfbuzz-4.2.1 harfbuzz-icu-4.2.1
+ help2man-1.49.2 icu-71.1nb1 imath-3.1.5 jpeg-9e json-c-0.16
+ jwm-2.4.1nb1 kpathsea-6.3.4 ladspa-1.17nb1 lapack-3.10.1 lapacke-3.10.1
+ ldb-2.4.2 libabw-0.1.3nb12 libappindicator-12.10.0nb11 libbluray-1.3.1nb1
+ libcdr-0.1.7nb6 libclucene-2.3.3.4nb22 libcroco-0.6.13nb6 libcups-2.4.1
+ libdbi-driver-sqlite3-0.9.0nb14 libe-book-0.1.3nb22 libetonyek-0.1.10nb5
+ libfreehand-0.1.2nb13 libglade-2.6.4nb39 libgpg-error-1.45
+ libgsf-1.14.47nb5 libical-3.0.14nb1 liblangtag-0.6.3nb6
+ libmatekbd-1.24.1nb2 libmateweather-1.24.1nb2 libmspub-0.1.4nb21
+ libnice-0.1.16nb10 libnumbertext-1.0.10 libofx-0.9.15nb8
+ libpurple-2.14.8nb1 libqxp-0.0.2nb15 libreoffice-7.3.1.3nb1
+ librsvg-2.52.8nb1 libsexy-0.1.11nb38 libshout-2.4.6 libsoup-2.70.0nb7
+ libtool-2.4.6nb1 libtool-fortran-2.4.6nb2 libtool-info-2.4.6
+ libva-2.14.0nb1 libvisio-0.1.7nb15 libwmf-0.2.8.4nb21 libxkbcommon-1.4.0nb1
+ libxklavier-5.4nb9 libxml++-2.40.1nb11 libxml2-2.9.14 libxslt-1.1.34nb8
+ libzmf-0.0.2nb23 lintpkgsrc-4.98 llvm-13.0.1nb1 m17n-lib-1.8.0nb7
+ mate-applets-1.24.1nb2 mate-control-center-1.24.2nb2
+ mate-notification-daemon-1.24.2nb2 mate-panel-1.24.2nb2
+ mate-screensaver-1.24.2nb2 mate-settings-daemon-1.24.2nb3
+ medit-1.2.0nb20 mlterm-3.9.2nb1 mpg123-1.29.3nb1 mplayer-1.5
+ mplayer-share-1.5 mpv-0.34.1nb3 netpbm-10.86.25nb1 nghttp2-1.47.0nb1
+ nss-3.78 oniguruma-6.9.8 openal-soft-1.22.0 openexr-3.1.5 p5-DateTime-1.5800
+ pcre2-10.40 php-7.4.29nb1 php74-curl-7.4.29nb12 php74-fpm-7.4.29nb9
+ php74-gd-7.4.29nb1 php74-iconv-7.4.29 php74-intl-7.4.29nb8
+ php74-json-7.4.29 php74-mbstring-7.4.29 php74-mysqli-7.4.29nb2
+ php74-pdo-7.4.29 php74-pdo_sqlite-7.4.29nb8 php74-posix-7.4.29
+ php74-sqlite3-7.4.29nb8 php74-zip-7.4.29nb7 php74-zlib-7.4.29nb1
+ pkgin-21.12.0nb2 policykit-0.9nb31 poppler-22.04.0 poppler-cpp-22.04.0
+ poppler-glib-22.04.0 postgresql13-client-13.6nb1 ptexenc-1.4.0
+ py27-gstreamer0.10-0.10.22nb10 py27-gtk2-2.24.0nb39 py27-libxml2-2.9.13nb1
+ py27-libxslt-1.1.34nb7 py39-build-0.7.0nb3 py39-colorama-0.4.4nb2
+ py39-jinja2-3.1.2 py39-libxml2-2.9.14 py39-lxml-4.8.0nb1
+ py39-markupsafe-2.1.1 py39-pep517-0.12.0nb2 py39-pip-22.0.4
+ py39-pygments-2.12.0 py39-pyparsing-3.0.8 py39-setuptools-62.1.0
+ py39-sphinx-4.5.0 py39-sqlite3-3.9.12nb22 py39-toml-0.10.2nb1
+ qt5-qtbase-5.15.3 qt5-qtdeclarative-5.15.3 qt5-qtlocation-5.15.3
+ qt5-qtmultimedia-5.15.3 qt5-qtsensors-5.15.3 qt5-qtserialport-5.15.3
+ qt5-qtsvg-5.15.3 qt5-qttools-5.15.3 qt5-qtwebchannel-5.15.3
+ qt5-qtwebsockets-5.15.3 qt5-qtx11extras-5.15.3 qt5-qtxmlpatterns-5.15.3
+ raptor2-2.0.15nb24 rarian-0.8.1nb9 rasqal-0.9.33nb25 redland-1.0.17nb32
+ rsync-3.2.4 ruby27-base-2.7.6 ruby27-nokogiri-1.13.4
+ ruby27-public_suffix-4.0.7 rust-1.59.0nb1 samba-4.15.6nb1
+ seamonkey-2.53.10nb3 shared-mime-info-1.10nb6 spdlog-1.10.0
+ sqlite3-3.38.5 tcl-8.6.12nb2 uim-1.8.9pre20210104nb3
+ unixodbc-2.3.11 vala-0.56.1 vte3-0.68.0nb4 wayland-1.18.0nb5
+ web2c-2022 webkit-gtk-2.34.6nb1 wordpress-5.9.3 x11-links-1.35
+ xfce4-desktop-4.16.0nb1 xfce4-orage-4.16.0nb1 xfce4-panel-4.16.4
+ xfce4-session-4.16.0nb3 xfce4-settings-4.16.2nb3 xfce4-terminal-1.0.1
+ xfce4-thunar-4.16.11 xfce4-tumbler-4.16.0nb3 xmlto-0.0.28nb7
+ xscreensaver-6.03nb1 yelp-tools-3.32.2nb5 zxing-cpp-1.3.0
 
 Version: 
- NetBSD 9.99.96 (GENERIC64) #0: Tue Apr  5 13:09:54 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.96 (GENERIC64) #0: Tue May 10 15:29:04 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
