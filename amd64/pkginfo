@@ -4,7 +4,7 @@ GraphicsMagick-1.3.37 Tools and libraries for reading, writing, and manipulating
 ImageMagick6-6.9.11.7nb13 Package for display and interactive manipulation of images
 LuaJIT2-2.0.5nb2    Just-In-Time Compiler for the Lua programming language
 ORBit2-2.14.19nb6   High-performance CORBA ORB with C language support
-SDL-1.2.15nb37      Simple DirectMedia Layer, a cross-platform multimedia library
+SDL-1.2.15nb38      Simple DirectMedia Layer, a cross-platform multimedia library
 SDL2-2.0.22         Simple DirectMedia Layer - cross-platform multimedia library
 abcde-2.9.3nb3      Command-line utility to rip and encode an audio CD
 abseil-20211102.0   C++ Common Libraries
@@ -44,7 +44,7 @@ boost-libs-1.78.0nb2 Free, peer-reviewed portable C++ source libraries (binary l
 box2d-2.4.1         2D physics engine for games
 brasero-3.12.2nb11  CD/DVD burning application
 brotli-1.0.9        Generic-purpose lossless compression algorithm
-cairo-1.16.0nb5     Vector graphics library with cross-device output support
+cairo-1.16.0nb6     Vector graphics library with cross-device output support
 cairo-gobject-1.16.0nb6 Vector graphics library with cross-device output support
 cairomm-1.14.3      C++ API for cairo (1.0 API)
 caja-1.24.1nb2      File manager for the MATE desktop
@@ -60,25 +60,25 @@ cdrtools-3.02a10    Software for creating ISO9660 images and writing CD/DVD/Blu-
 check-0.15.2        Unit test framework for C
 chromaprint-1.5.1   Audio fingerprinting
 clang-13.0.1nb1     C language family frontend for LLVM
-clutter-1.26.2nb7   Open GL based interactive canvas library
+clutter-1.26.2nb8   Open GL based interactive canvas library
 clutter-gst-3.0.26nb6 Clutter GStreamer integration
-clutter-gtk-1.8.4nb3 GTK+ Integration library for Clutter
+clutter-gtk-1.8.4nb4 GTK+ Integration library for Clutter
 cmake-3.23.1        Cross platform make
 cmocka-1.1.5        Unit testing framework for C supporing mock objects
 cmus-2.9.1nb7       Small, fast and powerful text mode music player
-cogl-1.22.0nb11     Modern 3D graphics API
+cogl-1.22.0nb12     Modern 3D graphics API
 coinmp-1.8.4        Linear Programming solver library
 consolekit-1.2.4nb1 Framework for defining and tracking users, login sessions, and seats
 cppunit-1.15.1      C++ unit testing framework
-cups-base-2.3.3op2nb5 Common UNIX Printing System
-curl-7.83.0         Client that groks URLs
+cups-base-2.4.1     Common UNIX Printing System
+curl-7.83.1         Client that groks URLs
 cwrappers-20220403  pkgsrc compiler wrappers
 dav1d-1.0.0         AV1 decoder library
 db4-4.8.30nb1       Berkeley DB version 4 from Oracle
 dbus-1.14.0nb2      Message bus system
 dbus-glib-0.112nb1  GLib bindings for the D-BUS message bus system
 dconf-0.40.0nb1     Backend for gsettings
-deforaos-camera-0.3.0nb3 DeforaOS desktop camera
+deforaos-camera-0.3.0nb4 DeforaOS desktop camera
 deforaos-libdesktop-0.4.1 DeforaOS desktop library
 deforaos-libsystem-0.4.3 DeforaOS core system library
 dejavu-ttf-2.37     DejaVu family of TrueType fonts
@@ -163,12 +163,12 @@ gnome-icon-theme-3.12.0nb7 Theme consisting of a set of icons for GNOME
 gnome-keyring-3.36.0nb1 GNOME password and secret manager
 gnome-themes-standard-3.20.2nb17 Default themes for the GNOME desktop
 gnome-video-effects-0.5.0nb1 Collection of GStreamer effects for GNOME
-gnucash-4.9nb1      Personal or business finance management program
+gnucash-4.10nb1     Personal or business finance management program
 gnucash-docs-4.8    Documentation for GnuCash - personal double-entry accounting program
 gnupg2-2.2.35       GnuPG with OpenPGP and S/MIME capabilities
 gnutls-3.7.4        Transport Layer Security library
 go116-1.16.15       The Go programming language
-gobject-introspection-1.70.0 GObject Introspection
+gobject-introspection-1.70.0nb1 GObject Introspection
 googletest-1.11.0   Google's C++ testing framework
 gperf-3.1           GNU perfect hash function generator
 gpgme-1.17.1        GnuPG Made Easy
@@ -211,6 +211,8 @@ gts-0.7.6nb2        GNU Triangulated Surface Library
 gucharmap-2.32.1nb35 Unicode/ISO10646 character map and font viewer
 guile22-2.2.7nb5    Official extension language for the GNU operating system
 guile22-slib-3.2.6nb5 SLIB glue files for guile
+guile30-3.0.8       Official extension language for the GNU operating system
+guile30-slib-3.2.6  SLIB glue files for guile
 gupnp-1.0.3nb15     Framework for UPnP devices (1.0 branch)
 gvfs-1.6.7nb59      Userspace virtual filesystem
 gxemul-0.7.0        Framework for full-system computer architecture emulation
@@ -264,7 +266,7 @@ libao-sun-1.2.2nb2  Cross-platform audio library (Sun audio plugin)
 libaom-3.2.0        Library for using AV1, video coding format
 libappindicator-12.10.0nb11 Allow applications to export a menu into the panel
 libart-2.3.21       High-performance 2D graphics library
-libass-0.15.2nb1    Portable subtitle renderer for the ASS/SSA subtitle format
+libass-0.16.0       Portable subtitle renderer for the ASS/SSA subtitle format
 libassuan-2.5.5     IPC library used by some of the other GnuPG related packages
 libatomic_ops-7.6.12 Multi-platform library of atomic operations by Hans Boehm
 libbinio-1.4        Binary I/O stream class library
@@ -279,7 +281,7 @@ libcfg+-0.7.0       Command line and configuration file parsing library
 libclucene-2.3.3.4nb22 Text search engine written in C++
 libcmis-0.5.2nb17   Client library for the CMIS interface
 libcuefile-0rc475   CUE File library for the musepack decoder
-libcups-2.3.3op2nb4 Common UNIX Printing System library
+libcups-2.4.1       Common UNIX Printing System library
 libdaemon-0.14nb2   C library that eases the writing of UNIX daemons
 libdbi-0.9.0        Database Independent Abstraction Layer for C
 libdbi-driver-sqlite3-0.9.0nb14 SQLite3 driver for libdbi, a database abstraction
@@ -360,7 +362,7 @@ libproxy-0.4.15nb1  Library that provides automatic proxy configuration manageme
 libpsl-0.21.1nb2    Library to handle the Public Suffix List
 libqxp-0.0.2nb15    Library that parses the file format of QuarkXPress documents
 libraw-0.20.2       Raw decoding/processing library
-libreoffice-7.3.1.3 Office productivity suite from The Document Foundation
+libreoffice-7.3.1.3nb1 Office productivity suite from The Document Foundation
 libreplaygain-0rc475 ReplayGain library for the musepack decoder
 librespot-0.3.1nb3  Open Source Spotify client library
 librevenge-0.0.4nb16 Base library for writing document import filters
@@ -386,7 +388,7 @@ libusb1-1.0.24      USB Access Library (version 1)
 libuuid-2.32.1nb1   Generate unique identifiers for objects
 libuv-1.44.1        Cross-platform asychronous I/O
 libv4l-1.22.1       Video4Linux userspace library
-libva-2.14.0        Video Acceleration API
+libva-2.14.0nb1     Video Acceleration API
 libvisio-0.1.7nb15  Library and tools for parsing the visio file format
 libvolume_id-0.81.1nb1 Library to provide file system type information
 libvorbis-1.3.7     Library for the Ogg Vorbis audio encoding format
@@ -492,7 +494,7 @@ nss-3.78            Libraries to support development of security-enabled applica
 oniguruma-6.9.8     Regular expressions library
 openal-soft-1.22.0  Software implementation of the OpenAL 3D audio API
 openexr-3.1.5       High dynamic-range (HDR) image file format library and tools
-openjdk11-1.11.0.14.9nb1 Open-source implementation of the Java Platform, Standard Edition
+openjdk11-1.11.0.15.10 Open-source implementation of the Java Platform, Standard Edition
 openjpeg-2.4.0nb1   JPEG 2000 library
 openmp-13.0.0       Support for the OpenMP language
 opensp-1.5.2nb10    SGML parser, successor to "sp"
@@ -652,7 +654,7 @@ pangomm-2.46.2      C++ bindings for pango (1.4 API)
 password-store-1.7.3nb5 Standard UNIX password manager
 pccts-1.33.33nb1    Purdue Compiler Construction Tool Set
 pciids-20200222     Repository of PCI IDs (pci.ids database)
-pciutils-3.7.0nb2   PCI bus manipulation utility similar to NetBSD pcictl(8)
+pciutils-3.8.0      PCI bus manipulation utility similar to NetBSD pcictl(8)
 pcre-8.45           Perl Compatible Regular Expressions library
 pcre2-10.40         Perl Compatible Regular Expressions library (major version 2)
 perl-5.34.1         Practical Extraction and Report Language
@@ -750,14 +752,14 @@ py39-docutils-0.17.1nb1 Python tool to generate documents
 py39-ecdsa-0.17.0nb1 Easy-to-use implementation of ECDSA cryptography
 py39-expat-3.9.12   Python interface to expat
 py39-factory_boy-3.2.1nb1 Versatile test fixtures replacement
-py39-faker-13.3.5   Python package that generates fake data for you
+py39-faker-13.11.0  Python package that generates fake data for you
 py39-filetype-1.0.13 Infer binary file types checking the magic numbers signature
 py39-funcparserlib-0.3.6nb1 Recursive descent parsing library based on functional combinators
 py39-gobject3-3.42.0 Python bindings for glib2 gobject
 py39-graphviz-0.19.1nb1 Create and render graph descriptions in DOT language
 py39-idna-2.10nb1   Python module for Internationalized Domain Names in Applications (IDNA)
 py39-imagesize-1.3.0nb1 Parses image files' header and returns image size
-py39-importlib-metadata-4.10.1nb1 Read metadata from Python packages
+py39-importlib-metadata-4.11.3nb1 Read metadata from Python packages
 py39-iniconfig-1.1.1nb1 Brain-dead simple config-ini parsing
 py39-iso8601-1.0.2nb1 Simple Python module to parse ISO 8601 dates
 py39-jinja2-3.1.2   Small but fast and easy to use stand-alone template engine
@@ -768,7 +770,7 @@ py39-lxml-4.8.0nb1  Python binding for libxml2 and libxslt
 py39-mako-1.1.6nb2  Hyperfast and lightweight templating for the Python platform
 py39-markdown-3.2.2nb2 XHTML generator using a simple markup
 py39-markupsafe-2.1.1 Implements a unicode subclass that supports HTML strings
-py39-more-itertools-8.12.0nb1 More routines for operating on iterables, beyond itertools
+py39-more-itertools-8.13.0 More routines for operating on iterables, beyond itertools
 py39-numpy-1.22.3   Array processing for numbers, strings, records, and objects
 py39-olefile-0.46nb1 Python module to read/write MS OLE2 files
 py39-packaging-21.3nb1 Core utilities for Python packages
@@ -787,7 +789,7 @@ py39-rsa-4.8nb2     Pure-Python RSA implementation
 py39-s3transfer-0.4.2nb1 Amazon S3 Transfer Manager
 py39-scour-0.38.2nb3 Scour SVG Optimizer
 py39-serial-3.5nb2  Python Serial Port Extension
-py39-setuptools-62.1.0 New Python packaging system
+py39-setuptools-62.2.0 New Python packaging system
 py39-setuptools_scm-6.4.2 Manage your versions by scm tags
 py39-six-1.16.0nb1  Python 2 and 3 compatibility utilities
 py39-snowballstemmer-2.2.0nb1 Python module with stemmer algorithms for multiple natural languages
@@ -913,7 +915,7 @@ swig3-3.0.12nb4     Simplified Wrapper and Interface Generator (version 3)
 taglib-1.12         Library for accessing id tags in various media files
 talloc-2.3.3        Hierarchical pool based memory allocator with destructors
 tcl-8.6.12nb2       Tool Command Language, a dynamic language
-tcsh-6.24.00        Extended C-shell with many useful features
+tcsh-6.24.01        Extended C-shell with many useful features
 tdb-1.4.6           Small database system which uses files to store data
 tepl4-4.4.0nb5      GtkSourceView-based text editors and IDE helper library
 tevent-0.11.0nb1    Event system based on the talloc
@@ -1233,13 +1235,13 @@ xmlto-0.0.28nb7     Tool to help transform XML documents into other formats
 xorg-cf-files-1.0.7 Xorg imake rules
 xorg-util-macros-1.19.3 Xorg autotool macros
 xournalpp-1.1.1nb3  Take notes, sketch and annotate PDFs
-xscreensaver-6.03nb1 Screen saver and locker for the X window system
+xscreensaver-6.03nb2 Screen saver and locker for the X window system
 xvidcore-1.3.7      ISO MPEG-4 compliant video codec
 xxhash-0.8.1        Extremely fast non-cryptographic hash algorithm
 yasm-1.3.0          Complete rewrite of the NASM assembler with BSD license
 yelp-3.32.0nb10     Mallard capable help browser
 yelp-xsl-3.32.1nb1  XSL stylesheets for Yelp help browser
-youtube-dl-20211217nb2 Download videos from youtube.com
+youtube-dl-20211217nb3 Download videos from youtube.com
 yq-2.14.0           Command-line YAML and XML processor
 zenity-3.41.0nb1    Display GNOME dialogs from the command line
 zip-3.0nb3          Create/update ZIP files compatible with pkzip
