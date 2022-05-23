@@ -9,16 +9,16 @@ status:
 
 check:
 	echo ${DIR}
-	mkdir ${DIR}
+	mkdir -p ${DIR}
 	dmesg -t > ${DIR}/dmesg
 	sys_info > ${DIR}/sysinfo
 	pkg_info |sort > ${DIR}/pkginfo
 
 diff:
-	diff Update/sysinfo ${DIR}/sysinfo |more
-	diff Update/pkginfo ${DIR}/pkginfo|more
-	diff ../dmesg/aarch64/pinebook ${DIR}/dmesg|more
-	diff Update/pkgchk.conf /usr/pkgsrc/pkgchk.conf
+	diff -u Update/sysinfo ${DIR}/sysinfo |more
+	diff -u Update/pkginfo ${DIR}/pkginfo|more
+	diff -u ../dmesg/aarch64/pinebook ${DIR}/dmesg|more
+	diff -u Update/pkgchk.conf /usr/pkgsrc/pkgchk.conf
 
 copy:
 	cp ${DIR}/sysinfo Update/sysinfo
