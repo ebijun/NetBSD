@@ -18,7 +18,7 @@ akonadi-1.13.0nb43  The KDE PIM Storage Service
 alsa-lib-1.2.6.1nb1 Advanced Linux Sound Architecture (ALSA)
 amtk-5.0.2nb2       Actions, Menus and Toolbars Kit for GTK applications
 anthy-9100h         Kana Kanji conversion system
-anthy-elisp-9100hnb5 Emacs lisp files for inputmethod/anthy
+anthy-elisp-9100hnb6 Emacs lisp files for inputmethod/anthy
 ap24-php74-7.4.29nb8 Apache (apache24) module for PHP7.4
 apache-2.4.53nb1    Apache HTTP (Web) server, version 2.4
 apr-1.7.0nb2        Apache Portable Runtime
@@ -93,7 +93,7 @@ dbus-1.14.0nb2      Message bus system
 dbus-glib-0.112nb1  GLib bindings for the D-BUS message bus system
 dbus-python-common-1.2.18nb1 Python bindings for the D-BUS message bus system
 dconf-0.40.0nb1     Backend for gsettings
-deforaos-browser-0.5.4nb2 DeforaOS desktop file manager and desktop handler
+deforaos-browser-0.5.5 DeforaOS desktop file manager and desktop handler
 deforaos-camera-0.3.0nb4 DeforaOS desktop camera
 deforaos-editor-0.4.1nb4 DeforaOS desktop text editor
 deforaos-keyboard-0.4.0nb4 DeforaOS desktop virtual keyboard
@@ -101,7 +101,7 @@ deforaos-libdesktop-0.4.1 DeforaOS desktop library
 deforaos-libsystem-0.4.3 DeforaOS core system library
 deforaos-locker-0.4.1nb4 DeforaOS desktop screensaver
 deforaos-mixer-0.4.1 DeforaOS desktop volume mixer
-deforaos-panel-0.4.1nb1 DeforaOS desktop panel
+deforaos-panel-0.4.3 DeforaOS desktop panel
 deforaos-pdfviewer-0.1.0nb14 DeforaOS desktop PDF viewer
 deforaos-phone-0.6.0nb5 DeforaOS desktop telephony
 dejavu-ttf-2.37     DejaVu family of TrueType fonts
@@ -141,12 +141,13 @@ fd-3.01bnb1         File and directory management tool
 ffmpeg2-2.8.17nb15  Decoding, encoding and streaming software (v2.x)
 ffmpeg3-3.4.8nb17   Decoding, encoding and streaming software (v3.x)
 ffmpeg4-4.4.2       Decoding, encoding and streaming software (v4.x)
+ffmpeg5-5.0.1nb1    Decoding, encoding and streaming software (v5.x)
 ffmpegthumbnailer-2.2.2nb2 Lightweight video thumbnailer that can be used by file managers
 fftw-3.3.10         Fast C routines to compute DFTs (single and double precision)
 file-roller-3.38.0nb1 Archive manager for the GNOME desktop environment
 findutils-4.9.0     find, locate, updatedb, and xargs utilities
-firefox-100.0       Web browser with support for extensions (version 100)
-firefox-l10n-100.0  Language packs for www/firefox
+firefox-100.0.2     Web browser with support for extensions (version 100)
+firefox-l10n-100.0.2 Language packs for www/firefox
 firefox52-52.9.0nb43 Web browser with support for extensions (version 52ESR)
 firefox52-l10n-52.9.0 Language packs for www/firefox (version 52)
 flac-1.3.4          Free lossless audio codec
@@ -157,7 +158,7 @@ fmtlib-8.1.1        Formatting library
 fontconfig-2.13.1nb6 Library for configuring and customizing font access
 fossil-2.18nb1      High-reliability, distributed software configuration management
 freefont-ttf-20120503nb1 Free UCS Outline Fonts: FreeMono, FreeSans, and FreeSerif
-freeglut-3.2.1nb3   Alternative to the OpenGL Utility Toolkit (GLUT) library
+freeglut-3.2.2      Alternative to the OpenGL Utility Toolkit (GLUT) library
 freetype2-2.12.1    Font rendering engine and library API
 fribidi-1.0.11      Free Implementation of the Unicode Bidirectional Algorithm
 game-music-emu-0.6.3 Video game music file emulation/playback library
@@ -204,7 +205,7 @@ gnome-icon-theme-symbolic-3.12.0nb17 Symbolic icons for the GNOME icon sets
 gnome-keyring-3.36.0nb1 GNOME password and secret manager
 gnome-mime-data-2.18.0nb10 MIME and Application database for GNOME2
 gnupg2-2.2.35       GnuPG with OpenPGP and S/MIME capabilities
-gnutls-3.7.4        Transport Layer Security library
+gnutls-3.7.5        Transport Layer Security library
 go-1.18.2           Meta package providing the current release of the Go language
 go-bin-1.17.8       Bootstrap toolchain for lang/go*
 go114-1.14.14       The Go programming language
@@ -309,7 +310,7 @@ libabw-0.1.3nb12    Library for AbiWord documents
 libao-1.2.2         Cross-platform audio library
 libao-oss-1.2.2nb1  Cross-platform audio library (OSS plugin)
 libao-sun-1.2.2nb2  Cross-platform audio library (Sun audio plugin)
-libaom-3.2.0        Library for using AV1, video coding format
+libaom-3.3.0        Library for using AV1, video coding format
 libappindicator-12.10.0nb11 Allow applications to export a menu into the panel
 libarchive-3.4.3    Library to read/create different archive formats
 libart-2.3.21       High-performance 2D graphics library
@@ -403,7 +404,7 @@ libnotify-0.7.9nb4  Desktop notification framework
 libnumbertext-1.0.10 Convert to number names from numbers
 liboauth-1.0.3nb21  Embeddable oauth 1.0 implementation
 libodfgen-0.1.7nb5  Library to generate ODF documents through libwpd and libwps
-libogg-1.3.5        Ogg project codecs library
+libogg-1.3.5nb1     Ogg project codecs library
 liboggz-1.1.1nb1    Inspects, edits, and validates Ogg files
 libopus-1.3.1       Totally open, royalty-free, highly versatile audio codec library
 libotf-0.9.16nb2    Library for handling OpenType fonts (OTF)
@@ -415,7 +416,7 @@ libpsl-0.21.1nb2    Library to handle the Public Suffix List
 libpurple-2.14.8nb1 Plugin-based multi-protocol instant messaging library
 libqxp-0.0.2nb15    Library that parses the file format of QuarkXPress documents
 libraw-0.20.2       Raw decoding/processing library
-libreoffice-7.3.1.3nb1 Office productivity suite from The Document Foundation
+libreoffice-7.3.3.2 Office productivity suite from The Document Foundation
 libreplaygain-0rc475 ReplayGain library for the musepack decoder
 librevenge-0.0.4nb16 Base library for writing document import filters
 librsvg-2.52.8nb1   SVG library for GNOME
@@ -424,6 +425,7 @@ libsecret-0.20.4nb4 GObject based library for accessing the Secret Service API
 libsexy-0.1.11nb38  Collection of GTK+ widgets that beautify standard widgets
 libshout-2.4.6      Connects and sends data to icecast servers
 libsigc++-2.10.8    Type-safe callback system for C++ programs (v2)
+libsixel-1.8.6nb8   DEC SIXEL graphics codec encoder/decoder and converter
 libslang2-2.2.4nb4  Routines for rapid alpha-numeric terminal applications development
 libsndfile-1.1.0nb1 Library for reading and writing audio files
 libsoup-2.70.0nb7   HTTP library implementation in C
@@ -439,7 +441,7 @@ libupnp-1.14.7      Portable Universal Plug and Play (UPnP) SDK
 libusb-compat-0.1.7 USB access library version 0 compatibility layer on top of version 1
 libusb1-1.0.24      USB Access Library (version 1)
 libuuid-2.32.1nb1   Generate unique identifiers for objects
-libuv-1.44.1        Cross-platform asychronous I/O
+libuv-1.44.1nb1     Cross-platform asychronous I/O
 libv4l-1.22.1       Video4Linux userspace library
 libva-2.14.0nb1     Video Acceleration API
 libvisio-0.1.7nb15  Library and tools for parsing the visio file format
@@ -531,7 +533,7 @@ mpfr-4.1.0          GMP-based library for multiple-precision floating-point comp
 mpg123-1.29.3nb1    MPEG layer 1, 2, and 3 audio player
 mpich-3.2.1nb8      Open source MPI, MPI-2, and MPI-3 implementation from Univ. of Chicago
 mplayer-fonts-20030714nb1 Fonts for mplayer and gmplayer
-mpv-0.34.1nb3       Video player based on MPlayer and mplayer2
+mpv-0.34.1nb4       Video player based on MPlayer and mplayer2
 mupdf-1.19.1        Lightweight PDF, XPS and E-book viewer and toolkit
 musepack-0rc475nb1  MPEG-Plus and MusePack decoder (V8)
 mypaint-brushes-2.0.2nb1 Default MyPaint brushes
@@ -560,7 +562,7 @@ onscripter-20191116nb1 Interpreter to execute a script for NScripter
 openal-soft-1.22.0  Software implementation of the OpenAL 3D audio API
 openexr-3.1.5       High dynamic-range (HDR) image file format library and tools
 openjdk8-1.8.292nb3 Open-source implementation of the Java Platform, Standard Edition
-openjpeg-2.4.0nb1   JPEG 2000 library
+openjpeg-2.5.0      JPEG 2000 library
 openpa-1.0.4        Atomic primitives for high performance software
 openslp-1.2.1nb10   Open-source implementation of the Service Location Protocol
 opusfile-0.12       Decoding and seeking API for opus files
@@ -620,7 +622,7 @@ p5-glib2-1.3293nb2  Perl bindings for Glib 2
 p5-inc-latest-0.500nb6 Use modules bundled in inc/ if they are newer than installed ones
 p7zip-16.02nb2      File archiver with high compression
 pam-pwauth_suid-1.2nb1 PAM authentication module for unprivileged users
-pango-1.50.5        Library for layout and rendering of text
+pango-1.50.7        Library for layout and rendering of text
 pangomm-2.46.2      C++ bindings for pango (1.4 API)
 pciids-20200222     Repository of PCI IDs (pci.ids database)
 pciutils-3.8.0      PCI bus manipulation utility similar to NetBSD pcictl(8)
@@ -699,7 +701,7 @@ py39-asn1crypto-1.5.1 Fast, pure Python library for parsing and serializing ASN.
 py39-atomicwrites-1.4.0nb1 Python module for atomic file writes on POSIX
 py39-attrs-21.4.0   Attributes without boilerplate
 py39-babel-2.9.1nb2 Collection of tools for internationalizing Python applications
-py39-cElementTree-3.9.12 C implementation of Python ElementTree API
+py39-cElementTree-3.9.13 C implementation of Python ElementTree API
 py39-cairo-1.21.0   Python bindings for cairo
 py39-certifi-2021.10.8nb1 Python package for providing Mozilla's CA Bundle
 py39-cffi-1.15.0nb1 Foreign Function Interface for Python calling C code
@@ -708,12 +710,12 @@ py39-charset-normalizer-2.0.12 Universal Charset Detector
 py39-cparser-2.21nb1 C parser in Python
 py39-cryptodome-3.14.1 Cryptographic and hash functions for Python
 py39-cryptography-3.3.2nb1 Cryptographic recipes and primitives for Python
-py39-cython-0.29.28 C-Extensions for Python
+py39-cython-0.29.30 C-Extensions for Python
 py39-dbus-1.2.18nb1 Python bindings for the D-BUS message bus system
 py39-dns-1.16.0nb2  Python DNS toolkit
 py39-docutils-0.18  Python tool to generate documents
 py39-ecdsa-0.17.0nb1 Easy-to-use implementation of ECDSA cryptography
-py39-expat-3.9.12   Python interface to expat
+py39-expat-3.9.13   Python interface to expat
 py39-gobject3-3.42.0 Python bindings for glib2 gobject
 py39-gyp-0.1pre20210830.d6c5dd51dc3a60bf4ff32a5256713690a1a10376 GYP can Generate Your Projects
 py39-idna-2.10nb1   Python module for Internationalized Domain Names in Applications (IDNA)
@@ -735,13 +737,13 @@ py39-pip-22.0.4     Installs Python packages as an easy_install replacement
 py39-pluggy-0.13.1nb2 Plugin and hook calling mechanisms for python
 py39-py-1.11.0      Library with cross-python path, ini-parsing, io, code, log facilities
 py39-pygments-2.12.0 Python syntax highlighter
-py39-pyparsing-3.0.8 Parsing module for Python
+py39-pyparsing-3.0.9 Parsing module for Python
 py39-pytz-2021.3nb1 World timezone definitions, modern and historical
 py39-requests-2.27.1 HTTP library, written in Python, for human beings
 py39-roman-3.3nb2   Integer to Roman numerals converter for Python
 py39-scour-0.38.2nb3 Scour SVG Optimizer
 py39-serial-3.5nb2  Python Serial Port Extension
-py39-setuptools-62.2.0 New Python packaging system
+py39-setuptools-62.3.2 New Python packaging system
 py39-setuptools_scm-6.4.2 Manage your versions by scm tags
 py39-six-1.16.0nb1  Python 2 and 3 compatibility utilities
 py39-snowballstemmer-2.2.0nb1 Python module with stemmer algorithms for multiple natural languages
@@ -753,7 +755,7 @@ py39-sphinxcontrib-jsmath-1.0.1nb1 Sphinx API for math in HTML via JavaScript
 py39-sphinxcontrib-qthelp-1.0.3nb1 Sphinx API for QtHelp document
 py39-sphinxcontrib-serializinghtml-1.1.5nb1 Sphinx API for "serialized" HTML files
 py39-sphinxcontrib-websupport-1.1.2nb1 Sphinx API for Web Apps
-py39-sqlite3-3.9.12nb22 Built-in sqlite support for Python 2.5 and up
+py39-sqlite3-3.9.13nb22 Built-in sqlite support for Python 2.5 and up
 py39-toml-0.10.2nb1 Python Library for Tom's Obvious, Minimal Language
 py39-tomli-2.0.1    Lil' TOML parser
 py39-traceback2-1.4.0nb1 Backport of the traceback module to older Python versions
@@ -763,13 +765,13 @@ py39-zipp-3.4.1nb1  Backport of pathlib-compatible object wrapper for zip files
 python27-2.7.18nb8  Interpreted, interactive, object-oriented programming language
 python37-3.7.13     Interpreted, interactive, object-oriented programming language
 python38-3.8.13     Interpreted, interactive, object-oriented programming language
-python39-3.9.12     Interpreted, interactive, object-oriented programming language
+python39-3.9.13     Interpreted, interactive, object-oriented programming language
 qalculate-3.5.0nb13 Modern multi-purpose desktop calculator (console version)
 qca2-2.2.1nb4       Cross-platform crypto API for QT
 qimageblitz-0.0.6nb25 Interm graphical effect and filter library for KDE4.0
 qjson-0.8.1nb7      Qt library for handling JSON data
 qmmp-1.5.1nb7       Audio player similar to Winamp/XMMS using Qt
-qr-code-generator-1.7.0 High-quality QR Code generator in C/C++
+qr-code-generator-1.8.0 High-quality QR Code generator in C/C++
 qt4-libs-4.8.7nb28  C++ X GUI toolkit
 qt4-qdbus-4.8.7nb7  QT DBus support
 qt4-tools-4.8.7nb8  QT GUI (WYSIWYG) builder and other tools
@@ -822,7 +824,7 @@ ruby27-mikutter-plugins-twitter-5.0nb1 Plugins for mikutter to use Twitter
 ruby27-mini_portile2-2.8.0 Simple autoconf builder for developers
 ruby27-moneta-1.4.2 Unified interface to key/value stores
 ruby27-native-package-installer-1.1.3 Helper to install native packages on "gem install"
-ruby27-nokogiri-1.13.4 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby27-nokogiri-1.13.6 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby27-oauth-0.5.8  OAuth Core Ruby implementation
 ruby27-pango-3.5.1  Ruby binding of pango-1.x
 ruby27-pkg-config-1.4.7 Pure Ruby implementation of pkg-config
@@ -839,7 +841,7 @@ ruby27-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 ruby27-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
 ruby27-unf_ext-0.0.8 Unicode Normalization Form support library for CRuby
 ruby27-zip-2.3.2    Ruby module for reading and writing zip files
-rust-1.59.0nb1      Safe, concurrent, practical language
+rust-1.59.0nb2      Safe, concurrent, practical language
 samba-4.15.6nb1     SMB/CIFS protocol server suite
 schroedinger-1.0.11 Dirac video compression library
 scim-1.4.17nb2      Smart Common Input Method
@@ -880,7 +882,7 @@ tex-atbegshi-1.19   Execute stuff at \shipout time
 tex-atveryend-1.11  Hooks at the very end of a document
 tex-auxhook-1.6     Hooks for auxiliary files
 tex-avantgar-2021   Avantgarde font from URW 'Base 35' font pack for LaTeX
-tex-babel-3.73      Multilingual support for LaTeX, LuaLaTeX, XeLaTeX, and Plain TeX
+tex-babel-3.74      Multilingual support for LaTeX, LuaLaTeX, XeLaTeX, and Plain TeX
 tex-babel-japanese-2020 Babel support for Japanese
 tex-baekmuk-2.2.1   Baekmuk Korean TrueType fonts
 tex-bibtex-0.99dnb2 Reference management software for LaTeX
@@ -930,7 +932,7 @@ tex-etexcmds-1.7    Avoid name clashes with e-TeX commands
 tex-etoolbox-2.5k   e-TeX tools for LaTeX
 tex-euenc-0.1h      Unicode font encoding definitions for XeTeX
 tex-everyshi-4.00   Take action at every \shipout
-tex-fancyhdr-4.0.1  Extensive control of page headers and footers in LaTeX2e
+tex-fancyhdr-4.0.2  Extensive control of page headers and footers in LaTeX2e
 tex-fancyvrb-4.2    Sophisticated verbatim text
 tex-firstaid-1.0i   First aid for external LaTeX files and packages that need updating
 tex-fixjfm-0.8      Fix JFM (for *pTeX)
@@ -1152,7 +1154,7 @@ zenity-3.41.0nb1    Display GNOME dialogs from the command line
 zinnia-0.06         Online hand writing recognition system with machine learning
 zip-3.0nb3          Create/update ZIP files compatible with pkzip
 zonetab-0           NetBSD zone.tab file
-zsh-5.8.1           The Z shell
+zsh-5.9             The Z shell
 zstd-1.5.2          Fast real-time compression algorithm
 zxing-cpp-1.3.0     1D/2D barcode reader/writer library in C++
 zziplib-0.13.72nb1  Library for ZIP archive handling
