@@ -1,0 +1,851 @@
+NetBSD 2022 Annual General Meeting on 2022/05/21
+===================================================
+
+http://mail-index.netbsd.org/netbsd-announce/2022/05/11/msg000338.html
+
+::
+
+ America/Los_Angeles     Sat May 21 07:00:00 PDT 2022
+ America/Denver          Sat May 21 08:00:00 MDT 2022
+ America/Winnipeg        Sat May 21 09:00:00 CDT 2022
+ America/New_York        Sat May 21 10:00:00 EDT 2022
+ Europe/London           Sat May 21 15:00:00 BST 2022
+ Europe/Berlin           Sat May 21 16:00:00 CEST 2022
+ Europe/Sofia            Sat May 21 17:00:00 EEST 2022
+ Europe/Moscow           Sat May 21 17:00:00 MSK 2022
+ Asia/Calcutta           Sat May 21 19:30:00 IST 2022
+ Asia/Bangkok            Sat May 21 21:00:00 +07 2022
+ Asia/Manila             Sat May 21 22:00:00 PST 2022
+ Asia/Tokyo              Sat May 21 23:00:00 JST 2022
+ Australia/Adelaide      Sat May 21 23:30:00 ACST 2022
+ Australia/Melbourne     Sun May 22 00:00:00 AEST 2022
+ Pacific/Auckland        Sun May 22 02:00:00 NZST 2022
+
+::
+
+ <pickles> good morning! (if applicable, else hello! :) )
+ <racoon> morning :)
+ <spz> Dear Gentlebeings,
+ <spz> ,
+ <spz> Welcome to the 2022 Annual General Meeting
+ <spz> of The NetBSD Foundation.
+ <spz> ,
+ <spz> I am the moderator, i.e. voice-bot, for todays AGM.
+ <spz> ,
+ <spz> This is the agenda for this AGM:
+ <spz> ,
+ <spz> Intro 
+ <spz> ,
+ <spz> Reports from:
+ <spz> * board
+ <spz> * communications
+ <spz> * finance-exec
+ <spz> * membership-exec
+ <spz> * admins
+ <spz> * core
+ <spz> * security-team
+ <spz> * releng
+ <spz> * pkgsrc-pmc
+ <spz> * pkgsrc-security
+ <spz> * pkgbuild
+ <spz> * gnats
+ <spz> ,
+ <spz> Are there any last-minute additions to the reports? msg me.
+ <spz> ,
+ <spz> Q&A session for all of the above, and general questions.
+ <spz> ,
+ <spz> When Q&A begins, msg me "I have a question for <team>"
+ <spz> or "I have a question for <nick>" and I will give you voice
+ <spz> when it's your turn.
+ <spz> ,
+
+Introduction
+------------
+
+::
+
+ <spz> Here comes leot with the intro, 
+ <spz> followed by the reports by board and communication: 
+ <leot> Hello everyone and welcome! (this report was prepared by Cryo)
+ <leot> -
+ <leot> Hello, and welcome to the 20th Annual General Meeting of The
+ <leot> NetBSD Foundation.
+ <leot> -
+ <leot> First off, I'd like to thank spz (AGAIN) for volunteering to
+ <leot> handle moderating and admins for doing the behind the scenes
+ <leot> magic to make this event (and all our communication) possible.
+ <leot> -
+ <leot> Second, let me take a moment of your time to say that
+ <leot> we have all had a tough couple of years enduring a pandemic
+ <leot> that has cost some of us quite a bit.  No one expected that
+ <leot> it would last this long, or that the geopolitical and social
+ <leot> climates would have resulted in where we are now. I hope that
+ <leot> you are well and safe during these unstable times we live in now.
+ <leot> NetBSD and Pkgsrc continue to make improvements during this,
+ <leot> albeit a little slower. We are on the cusp of branching NetBSD-10
+ <leot> after 3 years of development with a slew of new features,
+ <leot> improvements, and squished bugs. Your commits are very much
+ <leot> appreciated, as is your continued support of the foundation.
+ <leot> -
+
+The report from the Board of Directors:
+---------------------------------------------------
+
+::
+
+ <leot> Now on to the report from the Board of Directors:
+ <leot> -
+ <leot> The NetBSD Foundation Board of Directors presents a consolidated
+ <leot> list of the relevant and major actions that occurred since last
+ <leot> AGM.  Quite a few discussions, actions, and follow-ups crossed
+ <leot> multiple meetings. Very few meetings resulted in not reaching
+ <leot> quorum. Check our weekly meeting minutes in:
+ <leot> localsrc/tnf/board/minutes for the latest on our progress.
+ <leot> During this period, new directors were elected by the members
+ <leot> and officers were renewed or installed.
+ <leot> -
+ <leot> We continued our support of BSDcan, AsiaBSDcon, and
+ <leot> EuroBSDcon to improve our representation at conferences and
+ <leot> developer summits.  Due to the never-ending pandemic, the
+ <leot> continued cancellations and move to virtual summits, any approved
+ <leot> contributions will be continue to be shifted until we can once
+ <leot> again meet somewhere in the future.
+ <leot> -
+ <leot> We participated in the Google Summer of Code for 2021 but there
+ <leot> was no virtual Google Summer of Code Mentor Summit. We are
+ <leot> currently participating in GSoC this year with 5 students!
+ <leot> -
+ <leot> Like last year, we have provided core with a pre-approved,
+ <leot> reasonable budget, to spend as they see most fit without an
+ <leot> additional confirmation step from us.
+ <leot> -
+ <leot> We continued to improve our interaction and relationships with
+ <leot> vendors, as well as participating in industry PSIRT/CSIRT
+ <leot> with commercial vendors and other open-source projects.
+ <leot> -
+ <leot> The funded contracts continued for:
+ <leot> o - improvements in release engineering by martin
+ <leot> o - improvements in WiFi by martin
+ <leot> -
+ <leot> We completed a fundraising campaign, started a new one, and
+ <leot> many many other minor things.
+ <leot> -
+ <leot> We would like to thank the vote coordinator, vote validator, and
+ <leot> nomcom for the handling of last year's slate.  The new voting
+ <leot> system was approved by the members, and we are starting the
+ <leot> use of it for board seat openings very very shortly.
+ <leot> -
+ <leot> It has been an honor and pleasure to continue working with
+ <leot> leot, mef, mlelstv, nia, riastradh, and wiz to accomplish all
+ <leot> that we have in this year.
+ <leot> -
+ <leot> Respectfully submitted on behalf of the Board of Directors
+ <leot> .eof
+ <leot> Here the report from communication prepared by <billc> and <nia>, thanks!:
+ <leot> -
+ <leot> A non-scientific representation of Social Media Presence:
+ <leot> -
+ <leot> Twitter: (very active)
+ <leot> @netbsd has 10,000 followers up from 9,490
+ <leot> @pkgsrc has 685 followers up from 639
+ <leot> -
+ <leot> We have created an account on the distributed social network
+ <leot> ActivityPub ('the fediverse'), where we have a small but
+ <leot> dedicated fan base.
+ <leot> @netbsd@mastodon.sdf.org has 230 followers (very active)
+ <leot> -
+ <leot> Facebook: 2,000 up from 1,900 members (sort of active)
+ <leot> -
+ <leot> Since we moved from FreeNode, to Libera.chat our numbers have
+ <leot> stabilized. To help improve connectivity, we have created a
+ <leot> Matrix bridge to our IRC channel.
+ <leot> Libera IRC users: (very very active)
+ <leot> #NetBSD: 228 down from 248
+ <leot> #NetBSD-code: 59 up from 56
+ <leot> #pkgsrc: 102 up from 92
+ <leot> -
+ <leot> .eof
+ <spz> thank you leot
+
+For finance-exec by Riastradh
+-------------------------------
+
+::
+
+ <spz> next presentation is for finance-exec by Riastradh
+ <Riastradh> Hi!  I'm Riastradh on finance-exec.  We maintain The NetBSD
+ <Riastradh> Foundation's financial records and assets at board's direction.
+ <Riastradh> We make sure the books are balanced and and send thank-you
+ <Riastradh> letters to donors so they can get tax deductions (in the US).
+ <Riastradh> We are:
+ <Riastradh> - riastradh
+ <Riastradh> - christos
+ <Riastradh> .
+ <Riastradh> We keep the books with ledger-cli <https://www.ledger-cli.org/>,
+ <Riastradh> which we've been doing for a few years now, and use it to
+ <Riastradh> prepare the public financial report and internal reports with
+ <Riastradh> more detail.  This way we have an audit trail, under source
+ <Riastradh> control, for all changes to the log of all transactions by TNF,
+ <Riastradh> which we reconcile with statements from financial institutions
+ <Riastradh> and payment processors.
+ <Riastradh> .
+ <Riastradh> The NetBSD Foundation's public 2021 financial report is at:
+ <Riastradh> https://www.NetBSD.org/foundation/reports/financial/2021.html
+ <Riastradh> .
+ <Riastradh> Highlights:
+ <Riastradh> - We have net assets of a bit over 200k USD.
+ <Riastradh> - We took in >50k USD last year -- hooray!
+ <Riastradh> - Not only that, but our expenses were unusually low, <20k USD.
+ <Riastradh>   => It's good that we did better than break even!
+ <Riastradh>   => But it also means we're not doing enough with the money.
+ <Riastradh>   => (How to spend money is up to board and core.)
+ <Riastradh> - (That said, we are still bad at fundraising.)
+ <Riastradh> .
+ <Riastradh> This year, in view of the high level of inflation since the
+ <Riastradh> pandemic, the board authorized finance-exec to invest funds in
+ <Riastradh> broad-market low-cost passively managed index funds in stocks and
+ <Riastradh> bonds instead of just cash accounts -- which we maybe should have
+ <Riastradh> done years ago since our net assets are substantially higher than
+ <Riastradh> our annual revenue and expenses.  But finance-exec prudently
+ <Riastradh> waited for the recent market crash so we haven't lost anything!
+ <Riastradh> (Except the value of the USD due to inflation.)
+ <Riastradh> .
+ <Riastradh> Happy to answer any questions about what finance-exec does!
+ <Riastradh> Thanks, -finance-exec
+ <spz> Thanks Riastradh
+
+Membership-exec by wiz
+------------------------
+
+::
+
+ <spz> next we're getting the report from membership-exec by wiz
+ <_wiz_> thanks, spz
+ <_wiz_> The current members of membership-exec are:
+ <_wiz_>     - Christos Zoulas <christos>
+ <_wiz_>     - Martin Husemann <martin>
+ <_wiz_>     - Lex Wennmacher <wennmach>
+ <_wiz_>     - Thomas Klausner <wiz>, and
+ <_wiz_>     - Ken Hornstein <kenh> who is on sabbatical.
+ <_wiz_> -
+ <_wiz_> Membership-exec is responsible for all aspects of
+ <_wiz_> "membership", but in practice the main task is to handle
+ <_wiz_> membership applications. The number of active developers
+ <_wiz_> (as of 2022-05-21) is 144 (down from 152 last year). As
+ <_wiz_> in the last years, Thomas Klausner <wiz> conducted an
+ <_wiz_> account cleanup.
+ <_wiz_> -
+ <_wiz_> Since the last AGM we gained 8 new developers and,
+ <_wiz_> mostly due to the account cleanup, lost 16.
+ <_wiz_> -
+ <_wiz_> The difference between developers and active developers
+ <_wiz_> is explained in the bylaws - an active developer has
+ <_wiz_> actually committed something in the last year, or contributed
+ <_wiz_> in an active way, like admins.
+ <_wiz_> -
+ <_wiz_> We'd like to emphasize that we appreciate all your replies
+ <_wiz_> to our membership RFC e-mails, although we do not usually
+ <_wiz_> acknowledge them. Please keep on providing feedback to
+ <_wiz_> the RFC mails.
+ <_wiz_> that's it from membership-exec.
+ <spz> Donning my admins’ hat:
+ <spz> good localtime() all
+ <spz> ,
+ <spz> admins is the following people:
+ <spz> christos, dogcow, gendalia, mspo, phil, riastradh, riz, seb, soda, spz, tls
+ <spz> ,
+ <spz> Statistics:
+ <spz> - admins runs the following TNF systems:
+ <spz> @ TastyLime
+ <spz> + 8 hardware systems and 6 Xen guests
+ <spz> = 1 earmv7hf, the rest amd64
+ <spz> @ Columbia University
+ <spz> + 11 hardware systems and 4 Xen guests,
+ <spz> = 2 i386 guests, the rest amd64
+ <spz> @ Washington University
+ <spz> + 7 hardware systems and 2 Xen guests 
+ <spz> = 1 earmv7hf and the rest amd64
+ <spz> @ Regensburg (commercial housing)
+ <spz> + 2 hardware systems, one of them with 2 Xen guests,
+ <spz> = all amd64
+ <spz> ,
+ <spz> - CDN services donated by Fastly
+ <spz> ,
+ <spz> NetBSD versions in use:
+ <spz> 3   pre-8.1
+ <spz> 3   8.1_STABLE
+ <spz> 4   9.0_STABLE
+ <spz> 7   9.1_STABLE
+ <spz> 12  9.2_STABLE
+ <spz> 2   currentish
+ <spz> ,
+ <spz> Changes in use of system:
+ <spz> the two armbulk builders have been retired: the aarch64 system @WWU builds
+ <spz> their packages faster and with less fuss.
+ <spz> ,
+ <spz> Notable plans are to get all 8.x systems updated.
+ <spz> ,
+ <spz> Thanks to riz, tls and phil for their resources, time
+ <spz> and blood sacrifices, too. :}
+ <spz> ,
+ <spz> Back to moderator.
+ <spz> ,
+
+core
+----------
+
+::
+
+ <spz> The next three reports will be given by __martin, for core, security-team and re
+ <spz> leng:
+ <__martin> hello everyone - here is the core report:
+ <__martin>  
+ <__martin> Core's job is to provide technical leadership for the
+ <__martin> project, manage funded projects, create roadmaps for
+ <__martin> the future of the project, and resolve disputes.
+ <__martin> Although we mean well, we have been doing less that
+ <__martin> what we've hoped to achieve, and we welcome help.
+ <__martin>  
+ <__martin> Our group is:
+ <__martin>    Alistair Crooks <agc@NetBSD.org>
+ <__martin>    Christos Zoulas <christos@NetBSD.org>
+ <__martin>    Chuck Silvers <chs@NetBSD.org>
+ <__martin>    Robert Elz <kre@NetBSD.org>
+ <__martin>    Martin Husemann <martin@NetBSD.org>
+ <__martin>    Matthew Green <mrg@NetBSD.org>
+ <__martin>    Taylor R Campbell <riastradh@NetBSD.org>
+ <__martin>  
+ <__martin> The group can be reached at <core@NetBSD.org>
+ <__martin>  
+ <__martin> One of the tasks of the core team is to oversee,
+ <__martin> initiate and approve funded projects. We had a few of
+ <__martin> those in the last year and a few ongoing and planned
+ <__martin> for the future.
+ <__martin>  
+ <__martin>  - Martin working on merging wifi from FreeBSD, with
+ <__martin>    nat@ and a student of Phil (James Browning) helping
+ <__martin>    a lot.
+ <__martin>  - releng work (martin)
+ <__martin>  - last year we only received one GSoC slot, but had another
+ <__martin>    worthwhile proposal, funded a second student implementing
+ <__martin>    a posix_spawn(2) extension to support chdir(2). The
+ <__martin>    official GSoC project failed, but the TNF funded student
+ <__martin>    succeeded and the code has been merged. The same student
+ <__martin>    is doing another project in this years GSoC.
+ <__martin>  - this year we got five projects for GSoC (more details
+ <__martin>    to be annouced shortly).
+ <__martin>    One of them is trying to get the Raspberry PI GPU
+ <__martin>    supported (via a kernel module),
+ <__martin>    one is about automation of some tedious and time-
+ <__martin>    consuming semi-manual jobs that finance-exec is doing
+ <__martin>    now when we receive donations.
+ <__martin>    Another one is about adding support for two more wifi
+ <__martin>    chipsets on top of the wifi renovation work.
+ <__martin>    The other two are enhancements to linux emulation
+ <__martin>    and improvements for inetd.
+ <__martin>  
+ <__martin> We are always open for suggestion from developers who would
+ <__martin> like to work on specific topics that require larger
+ <__martin> work or have been long neglected and need cleanup.
+ <__martin>  
+ <__martin> Another task of the core team is to resolve disputes
+ <__martin> between developers and provide ruling for contested
+ <__martin> issues. This year was quiet in this regard, besides
+ <__martin> one open item where we have to decide how to deal with
+ <__martin> userland requests for strong entropy. A public
+ <__martin> statement about our ruling on this is being worked on.
+ <__martin>  
+ <__martin> This needs to happen before the NetBSD 10 release.
+ <__martin> Next thing after that we plan to have the wifi work
+ <__martin> merged into -current (about one month after the
+ <__martin> netbsd-10 branch started), which initially might break
+ <__martin> a few chipsets. Hopefully this will be fixable
+ <__martin> quickly. Help from everyone with access to (supported)
+ <__martin> wifi hardware will be appreciated!
+
+Security team
+-------------------
+
+::
+
+ <__martin>  
+ <__martin> The most painful task for core is to automatically be
+ <__martin> part of the security team and acting as fallback to make
+ <__martin> sure that security issues are handled in a timely fashion.
+ <__martin> Please consider joining our security team to help.
+ <__martin>  
+ <__martin> Another way you can help the core team is to take over
+ <__martin> maintenance of some of our big 3rd party software.
+ <__martin> Currently most of this is done by both christos@ and mrg@,
+ <__martin> who could use more time for core and other business.
+ <__martin> If you feel you could help, please contact the current
+ <__martin> maintainer (see src/doc/3RDPARTY).
+ <__martin> thats it for core, happy to take questions later
+ <__martin> now for security team, this report was prepared mostly by shm:
+ <__martin> This is a brief report for security-team.
+ <__martin> -
+ <__martin> Since the last AGM, we have released two
+ <__martin> Security Advisories:
+ <__martin>  
+ <__martin> * NetBSD-SA2022-001 PPPoE discovery phase memory corruption
+ <__martin> * NetBSD-SA2021-002 Incorrect permissions in kernfs
+ <__martin>  
+ <__martin> Another SA for the recent mail.local(8) fixes is about
+ <__martin> to be published.
+ <__martin> -
+ <__martin> We'd like to encourage the NetBSD project members 
+ <__martin> participate in the security-team work. The process of
+ <__martin> writing advisories and handling the patches is
+ <__martin> time-consuming but rewarding: one gets to learn about
+ <__martin> different ways used to subvert security which in turn
+ <__martin> improves their ability to write secure code, implement
+ <__martin> security fixes, and at the same time learn how to
+ <__martin> convey complex technical concepts in clear and concise
+ <__martin> manners.  Because we are short-handed, we are slow
+ <__martin> analyzing issues, responding to known ones, or we are
+ <__martin> delayed on publishing already corrected security
+ <__martin> vulnerabilities. To be able to be more responsive, we
+ <__martin> need more hands on board! Feel free to contact us at
+ <__martin> security-team@.
+ <__martin> -
+ <__martin> Additionally we invite you to share with the team all
+ <__martin> your concerns about security of the NetBSD code,
+ <__martin> especially if you feel that the bug you just fixed
+ <__martin> could be connected with security. If you have any
+ <__martin> questions or ideas how to improve, we are here to
+ <__martin> help.
+ <__martin> -
+ <__martin> NetBSD continues to be represented in a product
+ <__martin> security incident response working group with other
+ <__martin> operating system vendors (CERT/VINCE/FULL DISCLOSURE)
+ <__martin> as well as software package distributors 
+ <__martin> (ISC/OpenSSL/NTP), and we are in direct contact with
+ <__martin> the security teams of the other BSD projects.
+ <__martin> This framework allows us to better work with vendors
+ <__martin> requiring an embargoed and/or coordinated release with
+ <__martin> other operating systems. We can begin working on
+ <__martin> issues that affect NetBSD much faster, instead of 
+ <__martin> only notified after an embargo is lifted.
+ <__martin> -
+ <__martin> Submitted respectfully on behalf of the 
+ <__martin> security-officer(s),the security-team, and the sirt team.
+ <__martin> that's it for security-team, moving on the releng-hat
+
+releng
+----------------
+
+::
+
+ <__martin> We are:
+ <__martin>   abs agc bouyer he jdc martin msaitoh phil reed riz
+ <__martin>   sborrill snj
+ <__martin>  
+ <__martin> Since the last meeting, we have:
+ <__martin>  
+ <__martin> - Released nothing (doh!) - last release (9.2) predates the last
+ <__martin>   meeting by a few days
+ <__martin> - Processed hundreds of pullup requests.
+ <__martin> - Started initial preparations to make the build cluster
+ <__martin>   independend from cvs (and also encouraged some developers
+ <__martin>   to experiment with off-the-shelf alternatives)
+ <__martin>  
+ <__martin> Similar to the last two years meeting we hoped to have
+ <__martin> branched for NetBSD 10 by now, but even now it has not
+ <__martin> yet happend - we are past the publicaly announced
+ <__martin> branch plan by slightly more than a week now.
+ <__martin> All but one blockers for the branch have been resolved
+ <__martin> by now, and the final one (new getentropy(2)) will
+ <__martin> have to wait for netbsd-11 if it does not get into
+ <__martin> tree within the next few days.
+ <__martin> The major challenges for netbsd-10 and a smooth release
+ <__martin> are
+ <__martin>  - new bugs in the new DRM code (e.g. black screen on
+ <__martin>    many i915 machines)
+ <__martin>  - handling of entropy (to block or not to block,
+ <__martin>    informally know as "waiting for randot" - we expect
+ <__martin>    a core resolution on that (but this does not delay
+ <__martin>    the branch itself)
+ <__martin>  
+ <__martin> Once the netbsd-10 branch is on its way we hope for a
+ <__martin> fast and smooth release cycle, but the major killer
+ <__martin> will be DRM bugs and it is not easy to estimate how
+ <__martin> fast they can be fixed. Optimistically we hope to not
+ <__martin> need more than three month from branch to final
+ <__martin> release.
+ <__martin> Midway during that netbsd-10 branch beta phase, we
+ <__martin> plan to do a 9.3 release. Quite a bit of changes
+ <__martin> happened on the branch since 9.2.
+ <__martin>  
+ <__martin> Another release for the netbsd-8 branch
+ <__martin> will happen too, but likely not too soon. We will
+ <__martin> desupport it a month after the NetBSD 10.0 release.
+ <__martin>  
+ <__martin> To close, I would like to remind everyone that release
+ <__martin> branches only improve because developers took the time
+ <__martin> to test their changes on the branch and submit a
+ <__martin> pullup request. We have been pretty good with this,
+ <__martin> and pulled up lots of security and usability improvements,
+ <__martin> as well as bug fixes to the various active branches.
+ <__martin> This is good for our users, thank you to everyone who
+ <__martin> cared and made it possible.
+ <spz> Thanks martin
+
+pkgsrc-pmc
+---------------
+
+::
+
+ <spz> and we'll be having wiz again for pkgsrc-pmc
+ <_wiz_> this presentation was prepared by gdt
+ <_wiz_> -
+ <_wiz_> The pkgsrc team kept pkgsrc-current up to date and in good working
+ <_wiz_> order, and delivered four -- the 71st through 74th -- stable branches,
+ <_wiz_> both source code and binary packages.  The big point is that no one
+ <_wiz_> found this surprising.
+ <_wiz_> -
+ <_wiz_> The pkgsrc team has welcomed a number of new developers.
+ <_wiz_> -
+ <_wiz_> pkgsrc continues to use the process started last year for assessing
+ <_wiz_> binary package sets before flipping the default symlink to them, and
+ <_wiz_> thus causing binary package users to use them.  The goal is to make
+ <_wiz_> sure enough resolvable issues have been resolved before the switch, so
+ <_wiz_> that users don't update and then not have e.g. firefox.  Thanks to
+ <_wiz_> nia@ for the idea and doing the assessing and symlink changing.
+ <_wiz_> -
+ <_wiz_> Some upstream packages continue to fail to build on some platforms.
+ <_wiz_> While pkgsrc has attempted to mitigate this, older platforms such as
+ <_wiz_> NetBSD 8 -- even more than a year ago -- are increasingly losing some
+ <_wiz_> packages that have complicated and difficult build requirements.
+ <_wiz_> -
+ <_wiz_> Rust support still requires significant effort, but during the past
+ <_wiz_> year this has been routine.
+ <_wiz_> -
+ <_wiz_> We continue to prune abandoned-by-upstream and broken packages at the
+ <_wiz_> more aggressive pace mentioned in last year's report, with no broad
+ <_wiz_> complaints.
+ <_wiz_> -
+ <_wiz_> As noted in last year's report, at the end of 2020 we switched the
+ <_wiz_> default path for the PKGDB on NetBSD from /var/db/pkg to
+ <_wiz_> ${PREFIX}/pkgdb.  We continue to see some issues among the user
+ <_wiz_> community about this, but much less.
+ <_wiz_> -
+ <_wiz_> Besides the usual, we are currently assessing the speed of bulk
+ <_wiz_> builds, in order to understand what can be done to deliver binary
+ <_wiz_> packages faster after a branch.
+ <_wiz_> -
+ <_wiz_>   -- gdt, for pkgsrc-pmc
+ <spz> Thanks wiz
+
+pkgsrc-security
+------------------
+
+::
+
+ <spz> drscream is presenting for pkgsrc-security
+ <drscream> The mission of the pkgsrc Security Team is to ensure that the ever-growing
+ <drscream> ecosystem of third party software is either safe to use or at least be sure
+ <drscream> people are aware of the known vulnerabilities.
+ <drscream>         -
+ <drscream> Our members monitor publicly available vulnerability feeds, mainly CVE.
+ <drscream>         -
+ <drscream> We aggregate received advisories believed to impact pkgsrc into the pkgsrc
+ <drscream> vulnerability list. When time allows we try to notify individual package
+ <drscream> MAINTAINERs and locate, commit patches to fix the vulnerabilities.
+ <drscream>         -
+ <drscream> Since 2021 our ticket handling crew is currently only 2 people, unfortunately
+ <drscream> pretty understaffed. We are looking and welcome people volunteering to join
+ <drscream> us!
+ <drscream>         -
+ <drscream> Currently handling tickets are:
+ <drscream>  - Leonardo Taccari <leot>
+ <drscream>  - Thomas Merkel <tm>
+ <drscream>         -
+ <drscream> The other current members of the team are:
+ <drscream>  - Alistair G. Crooks <agc>
+ <drscream>  - Daniel Horecki <morr>
+ <drscream>  - Thomas Klausner <wiz>
+ <drscream>  - Tobias Nygren <tnn>
+ <drscream>  - Ryo ONODERA <ryoon>
+ <drscream>  - Travis Paul <tpaul>
+ <drscream>  - Fredrik Pettai <pettai>
+ <drscream>  - Joerg Sonnenberger <joerg>
+ <drscream>  - Tim Zingelman <tez>
+ <drscream>         -
+ <drscream> The year in numbers:
+ <drscream> In 2021, the vulnerability list had 2070 lines added to it (338 more than last
+ <drscream> year) for a total of 22456 known vulnerabilities.
+ <drscream> In 2021, the ticket queue received 21960 new advisories (7887 less than last
+ <drscream> year). Of these 21960 new advisories:
+ <drscream>  stalled:  22    ( 0.1%)
+ <drscream>  resolved: 1881  ( 8.6%) (affecting pkgsrc packages)
+ <drscream>  rejected: 20057 (91.3%) (no impact or duplicates)
+ <drscream>         -
+ <drscream> The current count of vulnerable packages in pkgsrc-current is 728 (51 more
+ <drscream> than last year), in pkgsrc-stable is 733 (37 more than last year).
+ <drscream> See the periodic email to packages@NetBSD.org for the list.  We can always
+ <drscream> use help locating and committing security patches, in particular for the
+ <drscream> many of these that are maintained by pkgsrc-users.
+ <drscream>         -
+ <drscream> We encourage all developers to help us keep the vulnerability list up-to-date.
+ <drscream> If you become aware of a security issue or perform a security update in pkgsrc
+ <drscream> please edit the list. You don't need any special privilege for this.
+ <drscream> You'll find the list in localsrc CVS repository:
+ <drscream>  localsrc/security/advisories/pkg-vulnerabilities
+ <drscream> The team periodically signs off and uploads new revisions to ftp.NetBSD.org.
+ <drscream> If you prefer, you can contact us to make the edits, just by emailing the
+ <drscream> info to pkgsrc-security@.
+ <drscream>         -
+ <drscream> Please join the pkgsrc Security ticket handling crew, we're pretty understaffed
+ <drscream> at the moment! Feel free to get in touch with us for additional details or an
+ <drscream> introduction.
+ <drscream>         -
+ <drscream> EOF
+ <spz> Thanks drscream
+
+pkgbuilding
+----------------
+
+::
+
+ <spz> racoon reports on pkgbuilding
+ <racoon> gentlebeings, this presentation is on behalf of pkgbuild
+ <racoon> (the team responsible for building third-party software
+ <racoon> packages for NetBSD).  Sorry that it will likely duplicate
+ <racoon> some info from pkgsrc-pmc@.
+ <racoon> .
+ <racoon> While pkgsrc has made great strides in stability in the last
+ <racoon> few years, some challenges remain for the package building
+ <racoon> team in ensuring quality binary package sets for NetBSD.
+ <racoon> .
+ <racoon> The NetBSD 9 system C++ compiler is starting to show its age
+ <racoon> with a lack of support for certain C++17 features, and
+ <racoon> difficulties substituting the system compiler on some ARM
+ <racoon> variants is hurting the quality of the builds.  We are doing
+ <racoon> our best to rapidly adapt pkgsrc for this.  NetBSD 8 packages
+ <racoon> will stay at older versions due to similar, but more
+ <racoon> pronounced difficulties.
+ <racoon> .
+ <racoon> The NetBSD Foundation has provided increasing access to
+ <racoon> powerful hardware that enables us to get out new package
+ <racoon> updates quicker than ever before.  However, x86 still lags
+ <racoon> behind in speed, mostly due to a lack of parallelization in
+ <racoon> the older building infrastructure compared to our speedy
+ <racoon> AArch64 efforts.
+ <racoon> .
+ <racoon> Tests have shown that pkgsrc is very much ready for
+ <racoon> NetBSD 10, and we hope to publish a quality, complete set of
+ <racoon> binary packages before the release to enable in-depth
+ <racoon> testing by users.
+ <racoon> eof
+ <spz> thanks racoon
+
+gnats - bug database
+-----------------------
+
+::
+
+ <spz> and a report from our chief entomologist dh` on our gnats stats:
+ <dh`> Here's the bug database report since the last AGM (12 months):
+ <dh`>  
+ <dh`> GNATS statistics for 2021 (as of May 21 2022)
+ <dh`>  
+ <dh`> New PRs this year: 653, of which 400 are still open.
+ <dh`> Closed PRs this year: 679. Net change: -26. 
+ <dh`> Total PRs touched this year: 1145.
+ <dh`> Oldest PR touched this year: 2726.
+ <dh`> Oldest open PR: 1677; PR ignored for the longest: 3019.
+ <dh`>  
+ <dh`> Total number open: 5947
+ <dh`>  
+ <dh`> This year after working the overall count down over the summer it
+ <dh`> gradually crept back again, until we once again bumped 6000 last
+ <dh`> month. It is down again, though not really by enough yet. This is the
+ <dh`> weekly plot:
+ <dh`>  
+ <dh`>                                                  **      6030
+ <dh`>    **                                   **************  
+ <dh`>    ******                            *******************
+ <dh`>    ********              **    ** **********************
+ <dh`>    ********* *      ************************************
+ <dh`>    ***************************************************** 5880
+ <dh`>  
+ <dh`> The variation seen in this graph is only around 2% of the total, which
+ <dh`> is both good and bad; bad because there are still far too many
+ <dh`> outstanding PRs and we lose track of things, but good in that the
+ <dh`> count is not just growing without bound as has happened in some
+ <dh`> periods in the past. That was how we got to the point of having 6000
+ <dh`> open reports.
+ <dh`>  
+ <dh`> On the minus side, we are slightly ahead this year partly because
+ <dh`> fewer PRs came in this year (last year there were 879) -- since
+ <dh`> there's some reason to think this is a function of the community
+ <dh`> engagement level as much as anything else, it's a mixed blessing.
+ <dh`>  
+ <dh`> If anyone was wondering, the oldest open PR (PR 1677) is about a panic
+ <dh`> in unionfs, and the most untouched PR (PR 3019) is about NFS export
+ <dh`> permissions being per-volume rather than controllable on an individual
+ <dh`> subtree basis. Both of these are fairly intractable problems, but it
+ <dh`> would certainly be nice to see either retired this coming year if
+ <dh`> anyone feels the urge.
+ <dh`>  
+ <dh`> Here are the people who've been fixing the most bugs, as counted by
+ <dh`> commit messages found in PRs closed during the year.
+ <dh`>  
+ <dh`>   26  dholland@netbsd.org
+ <dh`>   26  gutteridge@netbsd.org
+ <dh`>   29  nia@netbsd.org
+ <dh`>   32  rin@netbsd.org
+ <dh`>   41  christos@netbsd.org
+ <dh`>  
+ <dh`> This list has a very long tail; there are 65 people who've fixed or
+ <dh`> helped fix at least one bug report. Thanks to one and all.
+ <dh`>  
+ <spz> Thanks dh
+ <dh`> (That's 65 developers, not counting patches) 
+ <dh`> And here are those who've been processing pullups, according to the
+ <dh`> same analysis:
+ <dh`>  
+ <dh`>    1  spz@netbsd.org (releng)
+ <dh`>    1  tm@netbsd.org (releng)
+ <dh`>    8  snj@netbsd.org (releng)
+ <dh`>    9  bsiegert@netbsd.org (releng)
+ <dh`>   47  martin@netbsd.org (releng)
+ <dh`>  
+ <dh`> As in several past years, Martin's being doing nearly all the work. 
+ <dh`> Many, many thanks, Martin.
+ <dh`>  
+ <dh`> (eot)
+ <spz> Sorry for the premature interruption, thanks dh
+
+Q&A
+---------
+
+::
+
+ <spz> Now Q&A begins, msg me "I have a question for <team>"
+ <dh`> no worries
+ <spz> or "I have a question for <nick>" and I will give you voice
+ <spz> no-one has any questions?
+
+1. getentropy/getrandom ABI changes at the current pace?
+
+::
+
+ <racoon> I have a question for releng
+ <racoon> how likely is it that netbsd-10 will ship without getentropy/getrandom ABI changes at the current pace?
+ <Riastradh> not likely, working on it right now
+ <racoon> do we have a rough (revised?) timeframe for the release?
+ <__martin> branch early next week, release in 3 month if DRM plays well
+ <racoon> thank you, __martin and Riastradh
+
+2. coreutils and upstreaming patches
+
+::
+
+ <spz> next question is by Irvise_ to core
+ <Irvise_> Hi, I recently updated support of GCC-Ada in pkgsrc. I also tried integrating it into core. However, there seems to be a lot of patches in coreutils, gcc and the build system that makes it pretty difficult. Is core interested in upstreaming patches to upstream to aid the task?
+ <Irvise_> Also, thank you for your work!
+ <__martin> yes, definitively!
+ <Irvise_> For example, upstream coreutils does not have support for aarch64-netbsd, and it seems that the support in src is... less than ideal...
+ <Irvise_> Okay, thank you!
+ <spz> kre2 for releng
+ <racoon> (it may be of interest for board to fund this project, providing we have willing victims^Wvolunteers)
+
+3. automatic point releases on stable branches periodically?
+
+::
+
+ <kre2> what would it take to enable automatic point releases on stable branches periodically?
+ <kre2> say every 5 or 6 months, simply release whatever is on the branch
+ <__martin> depends on "automatic" - it mostly is, but needs someone to write the release notes and push security-office to do the signing
+ <kre2> Could we generate release notes on the fly with pullups?
+ <__martin> maybe, we could add some markers to the CHANGES* entries
+ <kre2> Ask pullup requests to supply text to add/modify?
+ <__martin> worth thinking about, but even w/o regular point releases are easy to do
+ <__martin> (and probably a good idea)
+ <kre2> woud be better than nothibng for a year...   Thanks.
+
+4. drm/kms driver fails
+
+::
+
+ <spz> next is tse_, also for releng
+ <tse_> releng: are there any plans to delay the 10.0 release in order to get the graphical stack (for lack of a better word) in a more stable state, as there are reports from multiple users about problems with nouveau, for example, or is this not a priority? Thank you, and thanks for all the hard work :)
+ <__martin> good question - we will not delay the branch, but the release will certainly not happen with major hardware giving black screens
+ <Riastradh> It's hard...  Sorry, I wish I had a better answer!  Couple things I'd like to do before release (but after branch, probably):
+ <Riastradh> - create a fallback to dumb vga when the drm/kms driver fails
+ <Riastradh> - fix bugs arising from changes in the last update about when framebuffer devices attach if you don't have a display currently plugged in
+ <tse_> thanks!
+
+5. scm migration
+
+::
+
+ <spz> ok, next we've got wiz asking about scm migration
+ <Riastradh> Aside from that, well, need to sit down and do more diagnotics.  I kinda burned out a bit at the time the last update was merged, but I'm hoping to fix some more things.
+ <_wiz_> what is the state of the scm migration away from CVS?
+ <nbjoerg> we had one big problem with people getting connection resets from anonhg without a clear cause
+ <nbjoerg> that's supposedly fixed, but it is hard to get feedback :)
+ <spz> short comment from me to that: the support from admins could be better, the pandemic blahs haven't helped
+ <nbjoerg> the network speed of anonhg is a known issue, so don't be surprised if you get only 200KB/s on a bad day
+ <nbjoerg> at this point, if I don't hear anything about sporadic errors soon, I call the technical side done
+ <nbjoerg> there is still some documentation to be written and some of our automated tooling to be updated
+ <nbjoerg> so summary: please tell me if you run into problems. docs are still in progress, but I don't have immediate show stoppers ATM
+ <_wiz_> what can be done to speed it up? do you need help in particular areas?
+ <nbjoerg> bandwidth is a result of the hosting location
+ <nbjoerg> it's not too bad for initial clones as those go to fastly (and that finally works properly)
+ <nbjoerg> and if you update regulary
+ <_wiz_> and for the migration itself? :)
+ <nbjoerg> we can set a date later this year and hope that I can actually take time off work :)
+ <__martin> nbjoerg: can we do it before the wifi merge?
+ <nbjoerg> I'm open for most dates after July or so
+ <_wiz_> so july 15.
+ <nbjoerg> let's take that to the lists, but I'm not opposed
+ <_wiz_> thanks.
+
+6. signed binary pkgs
+
+::
+
+ <spz> ok, next a question by martin
+ <__martin> with the -10 release cycle starting, we will have new binary pkg setups
+ <__martin> I would really like us to ship signed binary pkgs for 10.0
+ <__martin> there is a project on the wiki describing the issues we have with that
+ <__martin> any volunteer to help is welcome!
+ <__martin> current tests were either failing because I am too stupid or there are bugs in the pkg tools
+ <__martin> (I'm assuming the latter)
+ <__martin> if this needs more work, I'm pretty sure it would also make a good suggestion for a funded project
+ <__martin> http://wiki.netbsd.org/projects/project/Make_signed_binary_pkgs_for_NetBSD_happen/
+ <racoon> then, we need good documentation for all the builders (currently jklos@, he@, bouyer@, mlelstv@, myself) to follow for easy setup, and a whole lot of keys from those people in the base system :)
+ <spz> and a master key in the base system
+
+Closing
+-------------
+
+::
+
+ <spz> anyway, more questions?
+ <spz> if not I'll hand over to leot for closing:
+ <leot> Thank you spz!
+ <leot>         -
+ <leot> Before closing, The NetBSD Foundation, would like to thanks...
+ <leot>         -
+ <leot> Thanks to all the places that host our server machines and thanks to
+ <leot> all kind heroes who do hands-on work too on them!
+ <leot>         -
+ <leot> Thanks to all the executive committees who do a lot of work behind the
+ <leot> scenes to keep everything running smoothly!
+ <leot>         -
+ <leot> Thanks to everyone who is running our services, participating and
+ <leot> helping in mailing lists, chat and other communities and filling PRs!
+ <leot>         -
+ <leot> Finally, thank you, for being part of this process today, fixing bugs,
+ <leot> committing new features and making NetBSD and pkgsrc the best operating
+ <leot> system and packaging system!
+ <leot> We couldn't do it without you, keep up the excellent work!
+ <leot>         -
+ <leot> EOF
+ <Cryo> Thanks everyone!
+ <pickles> thanks folks!
+ <wiedi> \o/
+ <racoon> <3
