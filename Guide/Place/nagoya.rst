@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2021 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2022 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -29,29 +29,26 @@
  https://github.com/ebijun/NetBSD/blob/master/Guide/Place/nagoya.rst
 
 NBUG例会この一年
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-2020/3~6までは会場を確保する形の例会は開催していません。2020/5にオンラインでOSC名古屋枠内で例会を行いました。
+OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:10までの枠内なので、この枠内にNetBSDの時間をいれていただいています。
 
 .. csv-table::
- :widths: 10 15 20 40
+ :widths: 15 15 15 6 
 
- 2021/5/29,東/OSC名古屋,https://togetter.com/li/1720573,
- 2021/4/17,北,https://togetter.com/li/1699631,539
- 2021/3/20,北,https://togetter.com/li/1684969,328
- 2021/2/20,千種,https://togetter.com/li/1670754,667
- 2021/1/23,東,https://togetter.com/li/1656474,341
- 2020/12/19,北/ODC,https://togetter.com/li/1637624,1121
- 2020/11/21,北,https://togetter.com/li/1625965,354
- 2020/10/17,北,https://togetter.com/li/1609378,274
- 2020/9/19,西/OSC広島,https://togetter.com/li/1593951,445
- 2020/8/22,北,https://togetter.com/li/1579945,247
- 2020/7/18,北,https://togetter.com/li/1561513,381
- 2020/6,中止,,
- 2020/5/30,オンライン/OSC名古屋,https://togetter.com/li/1529053,534
- 2020/4,中止,,
- 2020/3,中止,,
- 2020/2/15,熱田,https://togetter.com/li/1469785,840
+ OSC,NBUG例会,togetter,アクセス数
+ ,NBUG 2022/4月例会,https://togetter.com/li/1873517,382
+ OSC2022 Online/Spring , NBUG 2022/3月例会,https://togetter.com/li/1856809,644
+ ,NBUG 2022/2月例会,https://togetter.com/li/1847574,403
+ OSC2022 Online/Osaka ,NBUG 2022/1月例会,https://togetter.com/li/1835534,832
+ ,NBUG 2021/12月例会,https://togetter.com/li/1817903,399
+ OSC2021 Online/Fukuoka ,NBUG 2021/11月例会,https://togetter.com/li/1803990,607
+ OSC2021 Online/Fall ,NBUG 2021/10月例会,https://togetter.com/li/1790501,710
+ OSC2021 Online/Hiroshima , NBUG 2021/9月例会,https://togetter.com/li/1774874,797
+ ODC2021 Online , NBUG 2021/8月例会,https://togetter.com/li/1765257,690
+ OSC2021 Online/Kyoto , NBUG 2021/7月例会,https://togetter.com/li/1751521,705
+ OSC2021 Online/Hokkaido , NBUG 2021/6月例会,https://togetter.com/li/1735858,1018
+ OSC2021 Online/Nagoya , NBUG 2021年5月例会,https://togetter.com/li/1720573,1052
 
 名古屋でのオープンソースカンファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,7 +72,8 @@ NBUG例会この一年
  2019 Nagoya,7/13,500,29,名古屋市中小企業振興会館 
  2020 online Nagoya,5/30,370,14,ZOOM
  2021 online Nagoya,5/29,,15,ZOOM
-
+ 2022 online Nagoya,5/28,,,ZOON
+ 
 オープンソースカンファレンス以前
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

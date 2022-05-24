@@ -23,10 +23,11 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
+ Place/nagoya
  RPI/RPIupdate2022
  RPI
  Luna
  latexpdf
  Place/intro
  OSC/OSC2022
+ AGM/2022-agm.rst

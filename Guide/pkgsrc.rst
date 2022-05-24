@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -425,10 +425,6 @@ firefox
  % cd /usr/pkgsrc/www/firefox
  # make package-install
  % cd /usr/pkgsrc/www/firefox-l10n
- # make package-install
- # grep flashsupport /etc/mk.conf
- ACCEPTABLE_LICENSES+= adobe-flashsupport-license
- # cd /usr/pkgsrc/multimedia/adobe-flash-plugin11
  # make package-install
 
 LibreOffice
