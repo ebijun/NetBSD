@@ -1,13 +1,12 @@
-[ no symbol table formats found ]
+[ using 497592 bytes of bsd ELF symbol table ]
 Copyright (c) 1982, 1986, 1989, 1991, 1993
 	The Regents of the University of California.  All rights reserved.
-Copyright (c) 1995-2021 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+Copyright (c) 1995-2022 OpenBSD. All rights reserved.  https://www.OpenBSD.org
 
-OpenBSD 6.9-current (GENERIC.MP) #5: Sat May 15 14:27:51 JST 2021
-    aoyama@aurora.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC.MP
+OpenBSD 7.1 (GENERIC) #0: Thu Apr 14 03:05:06 JST 2022
+    aoyama@rhea.in.nk-home.net:/usr/src/sys/arch/luna88k/compile/GENERIC
 real mem = 134217728 (128MB)
-avail mem = 126795776 (120MB)
-warning: no entropy supplied by boot loader
+avail mem = 126832640 (120MB)
 random: boothowto does not indicate good seed
 mainbus0 at root: OMRON LUNA-88K, 25MHz
 cpu0: M88100 rev 0x0, 2 CMMU
@@ -15,7 +14,7 @@ cpu0: M88200 (16K) rev 0x0, full Icache
 cpu0: M88200 (16K) rev 0x0, full Dcache
 clock0 at mainbus0: MK48T02
 lcd0 at mainbus0
-le0 at mainbus0: address 02:00:01:c5:30:97
+le0 at mainbus0: address 02:00:01:5f:58:35
 le0: 32 receive buffers, 8 transmit buffers
 sio0 at mainbus0: 7201a
 siotty0 at sio0 channel 0
@@ -23,18 +22,17 @@ ws0 at sio0 channel 1
 wskbd0 at ws0: console keyboard
 wsmouse0 at ws0 mux 0
 xp0 at mainbus0: HD647180X I/O processor
-fb0 at mainbus0: 1280x1024, 1bpp
+fb0 at mainbus0: 1280x1024, 4bpp
 wsdisplay0 at fb0 mux 1: console (std, vt100 emulation), using wskbd0
 spc0 at mainbus0
 scsibus0 at spc0: 8 targets, initiator 7
 sd0 at scsibus0 targ 6 lun 0: <NONO, SCSIHD, 0>
 sd0: 2063MB, 512 bytes/sector, 4226725 sectors
-/dev/ksyms: Symbol table not valid.
 vscsi0 at root
 scsibus1 at vscsi0: 256 targets
 softraid0 at root
 scsibus2 at softraid0: 256 targets
-boot device: <unknown>
-root device: sd0
-swap device (default sd0b): 
-root on sd0a swap on sd0b dump on sd0b
+boot device: sd0
+root on sd0a (e144fed2c61b2429.a) swap on sd0b dump on sd0b
+WARNING: clock gained 3 days
+WARNING: CHECK AND RESET THE DATE!
