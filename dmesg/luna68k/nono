@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.97 (GENERIC) #0: Thu May 26 02:24:00 UTC 2022
+NetBSD 9.99.97 (GENERIC) #0: Sat Jun 11 11:20:40 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/luna68k/compile/GENERIC
 LUNA-I (MC68030 CPU+MMU, MC68881 FPU)
 total memory = 128 MB
@@ -14,24 +14,30 @@ timecounter: Timecounters tick every 16.666 msec
 mainbus0 (root)
 clock0 at mainbus0: mk48t02
 lcd0 at mainbus0
-le0 at mainbus0: address 02:00:01:8c:80:f1
+le0 at mainbus0: address 02:00:01:d6:00:6c
 le0: 32 receive buffers, 8 transmit buffers
 sio0 at mainbus0: uPD7201A
 siotty0 at sio0 channel 0
 ws0 at sio0 channel 1
 wskbd0 at ws0: console keyboard
 wsmouse0 at ws0 mux 0
-xp0 at mainbus0: HD647180X I/O processor
+xpbus0 at mainbus0
+xp0 at xpbus0: HD647180X I/O processor
+psgpam0 at xpbus0: HD647180X I/O processor as PSG PAM
+audio0 at psgpam0: playback
+audio0: slinear_be:16 -> none:16 1ch 93Hz, blk 8 bytes (43ms) for playback
 fb0 at mainbus0: 1280 x 1024, 4bpp
 wsdisplay0 at fb0 kbdmux 1: console (std, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 spc0 at mainbus0
 scsibus0 at spc0: 8 targets, 8 luns per target
-WARNING: system needs entropy for security; see entropy(7)
 timecounter: Timecounter "clockinterrupt" frequency 60 Hz quality 0
 scsibus0: waiting 2 seconds for devices to settle...
+WARNING: system needs entropy for security; see entropy(7)
 aes: BearSSL aes_ct
 chacha: Portable C ChaCha
+cd0 at scsibus0 target 5 lun 0: <NONO, SCSICD, 0> cdrom removable
+cd0: async, 8-bit transfers
 sd0 at scsibus0 target 6 lun 0: <NONO, SCSIHD, 0> disk fixed
 sd0: fabricating a geometry
 sd0: 2615 MB, 2615 cyl, 64 head, 32 sec, 512 bytes/sect x 5355900 sectors
