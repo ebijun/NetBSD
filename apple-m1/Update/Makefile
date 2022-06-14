@@ -1,5 +1,5 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.96-evbarm-aarch64-202205110540Z-install.img
+IMG=${RELEASE}/NetBSD-9.99.97-evbarm-aarch64-202206131340Z-install.img
 #IMG=${RELEASE}/NetBSD-9.99.96-evbarm-aarch64-202204051310Z-install.img
 #IMG=${RELEASE}/NetBSD-9.99.94-evbarm-aarch64-202203090730Z-install.img
 #IMG=${RELEASE}/NetBSD-9.99.93-evbarm-aarch64-202201080740Z-install.img
@@ -12,8 +12,12 @@ VND0=/dev/sd0
 SD0=/dev/sd0
 MNT=/mnt1
 M1=/
+# 
+VND-C=/dev/sd1
+MNT-C=/mnt-c
 
 DK=`dkctl vnd0 listwedges |grep ffs |awk -F: '{print $$1}'`
+DK-C=`dkctl ${VND-C} listwedges |grep ffs |awk -F: '{print $$1}'`
 
 ##
 
@@ -36,13 +40,19 @@ etcupdate:
 update:
 	@for i in ${LIST} ;do echo tar xzpf $$i -C ${M1} ;  done
 
+kernel-mount:
+	mount /dev/${DK-C} ${MNT-C}
+
+kernel-umount:
+	umount ${MNT-C}
+
 kernel-update:
-	cp ${MNT}/evbarm-aarch64/binary/kernel/netbsd-GENERIC64.gz ${M1}
-	gunzip ${M1}/netbsd-GENERIC64.gz
-	mv ${M1}/netbsd ${M1}/netbsd.1
-	mv ${M1}/netbsd-GENERIC64 ${M1}/netbsd
-	md5 ${M1}/netbsd*
-	what ${M1}/netbsd
+	cp ${MNT}/evbarm-aarch64/binary/kernel/netbsd-GENERIC64.gz ${MNT-C}
+	gunzip ${MNT-C}/netbsd-GENERIC64.gz
+	mv ${MNT-C}/netbsd ${MNT-C}/netbsd.1
+	mv ${MNT-C}/netbsd-GENERIC64 ${MNT-C}/netbsd
+	md5 ${MNT-C}/netbsd*
+	what ${MNT-C}/netbsd
 
 backup:
 	mkdir ${DATE}
