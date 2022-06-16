@@ -1,6 +1,6 @@
 VERSION: :1,$s/2022-06-16/2022-06-16/g
-ISO:     :1,$s/202205182340Z/202205182340Z/g
-NetBSD:  :1,$s/9.99.96/9.99.96/g
+ISO:     :1,$s/202206150250Z/202206150250Z/g
+NetBSD:  :1,$s/9.99.97/9.99.97/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
@@ -15,7 +15,7 @@ https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-06-16-aarch64/2022-
 https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-06-16-aarch64/MD5
 
 Topics:
-- NetBSD-9.99.96
+- NetBSD-9.99.97
   
 - openssh 9.0 https://www.openssh.com/txt/release-9.0
 
@@ -85,7 +85,7 @@ In this image,pre-setted RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.96 evbarm-aarch64 202205182340Z arm64.img from nyftp.
+- NetBSD-current 9.99.97 evbarm-aarch64 202206150250Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
