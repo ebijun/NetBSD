@@ -1,4 +1,4 @@
-VERSION: :1,$s/2022-05-20/2022-05-20/g
+VERSION: :1,$s/2022-06-16/2022-06-16/g
 ISO:     :1,$s/202205182340Z/202205182340Z/g
 NetBSD:  :1,$s/9.99.96/9.99.96/g
 PKGSRC:  :1,$s/2022/2022/
@@ -6,27 +6,24 @@ PKGSRC:  :1,$s/2022/2022/
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-05-20-netbsd-raspi-aarch64.img
+Subject: 2022-06-16-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-05-20-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2022-06-16-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-05-20-aarch64/2022-05-20-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-05-20-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-06-16-aarch64/2022-06-16-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-06-16-aarch64/MD5
 
 Topics:
 - NetBSD-9.99.96
-- openssh-9.0
-- openssl-1.1.1n
-- git-base-2.36.1
-- mlterm-3.9.2nb1
-
-- Raspberry Pi 4 UEFI Firmware v1.33
-    Update TF-A to v2.6 to enable the PCI SMCCC interface [tianocore/edk2-non-osi@c1075e9]
-    Add upstream-pi4.dtbo overlay (Allows usage of downstream .dtb with upstream kernel)
-    Add 'clock-frequency' property for mini UART [tianocore/edk2-platforms@b0f3f90]
   
 - openssh 9.0 https://www.openssh.com/txt/release-9.0
+
+"This release switches scp(1) from using the legacy scp/rcp protocol
+to using the SFTP protocol by default."
+"In case of incompatibility, the scp(1) client may be instructed to use
+the legacy scp/rcp using the -O flag."
+
 cf.
   ~/.ssh/config
   Host old-host
@@ -60,26 +57,15 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- bozohttpd-20220517 libcurses-9.1 libssh-43.0 NetBSD-9.99.96
- openssh-9.0 opensshd-9.0 openssl-1.1.1n sh-20220122-20220518223513Z
- tcsh-6.24.01 tzdata-2022agtz userland-NetBSD-9.99.96/evbarm
+ NetBSD-9.99.97 sh-20220122-20220614195756Z
+ userland-NetBSD-9.99.97/evbarm
 
 pkgsrc:
- cairo-1.16.0nb6 curl-7.83.1 dbus-1.14.0nb2 fossil-2.18nb1
- git-base-2.36.1 glib2-2.70.5 gnutls-3.7.4
- gobject-introspection-1.70.0nb1 gtk3+-3.24.33 harfbuzz-4.2.1
- icu-71.1 jpeg-9e libcups-2.4.1 libgcrypt-1.10.1
- libgpg-error-1.45 libuuid-2.32.1nb1 libxkbcommon-1.4.0nb1
- libxml2-2.9.14 libxslt-1.1.34nb8 lintpkgsrc-4.98 m17n-lib-1.8.0nb7
- medit-1.2.0nb20 mlterm-3.9.2nb1 nghttp2-1.47.0nb1
- p5-IO-Socket-INET6-2.73 p5-Net-DNS-1.33 pango-1.50.5
- pcre2-10.40 perl-5.34.1 pkgin-21.12.0nb2 py39-cElementTree-3.9.13
- py39-expat-3.9.13 python39-3.9.13 qt5-qtbase-5.15.3
- qt5-qtx11extras-5.15.3 qt5-qtxmlpatterns-5.15.3
- ruby27-base-2.7.6 ruby27-nokogiri-1.13.6 ruby27-public_suffix-4.0.7
- shared-mime-info-1.10nb6 sudo-1.9.10 tcsh-6.24.01 tiff-4.3.0nb2
- uim-1.8.9pre20210104nb3 wayland-1.18.0nb5 wget-1.21.3
- zsh-5.9
+ at-spi2-core-2.40.3nb2 dbus-1.14.0nb3 gdk-pixbuf2-2.42.8
+ gnutls-3.7.6 harfbuzz-4.3.0nb2 libxkbcommon-1.4.1
+ p5-Mozilla-CA-20211001 pango-1.50.7 qt5-qtbase-5.15.4
+ qt5-qtx11extras-5.15.4 qt5-qtxmlpatterns-5.15.4
+ ruby27-moneta-1.5.1 tiff-4.4.0
 
 RPI4 status:
 - boot via UEFI_VER=v1.33
