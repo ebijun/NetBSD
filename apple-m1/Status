@@ -8,6 +8,11 @@ Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Topics:
+- USB-C port enable:
+  boot from SSD via USB-C
+- firefox
+  ld: libxul.so: hidden symbol 'WebRtcSpl_CrossCorrelationNeon' isn't defined
+  ld: final link failed: bad value
 - X
  startx with twm, application dumps core. 
  https://twitter.com/ebijun/status/1479968894865784832
@@ -35,77 +40,86 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- libcurses-9.1 libssh-43.0 openssh-9.0 opensshd-9.0
- sh-20220122-20220510152904Z
+ bozohttpd-20220517 NetBSD-9.99.97 sh-20220122-20220613125506Z
+ tcsh-6.24.01 userland-NetBSD-9.99.97/evbarm
 
 pkgsrc:
- GConf-3.2.3nb12 ImageMagick6-6.9.11.7nb13 SDL2-2.0.22 ap24-php74-7.4.29nb8
- apache-2.4.53nb1 apr-util-1.6.1nb13 asciidoc-10.1.4nb1 atril-1.24.1nb4
- blas-3.10.1 boost-libs-1.78.0nb2 cairo-1.16.0nb5 caja-1.24.1nb2
- caja-extensions-1.24.1nb2 cblas-3.10.1 clang-13.0.1nb1 cmake-3.23.1
- curl-7.83.0 deforaos-configure-0.4.3 deforaos-cpp-0.0.6
- deforaos-libdatabase-0.0.2nb6 deforaos-libdesktop-0.4.1
- deforaos-libsystem-0.4.3 emacs26-26.3nb18 enchant2-2.3.3
- farstream-0.2.9nb11 ffmpeg4-4.4.2 ffmpeg5-5.0.1nb1 firefox-98.0.2nb1
- fossil-2.18nb1 gconfmm-2.28.3nb29 gegl-0.4.36nb2 geocode-glib-3.26.2nb4
- gimp-2.10.30nb2 git-base-2.36.1 gnome-desktop-2.32.1nb48
- gnome-doc-utils-0.20.10nb11 gnome-icon-theme-symbolic-3.12.0nb17
- gnupg2-2.2.35 gpgme-1.17.1 graphviz-2.50.0nb4 gssdp-1.0.3nb19
- gst-plugins0.10-base-0.10.36nb20 gst-plugins0.10-good-0.10.31nb10
- gst-plugins0.10-oss-0.10.31nb8 gst-plugins0.10-v4l2-0.10.31nb8
- gst-plugins1-base-1.20.1 gst-plugins1-good-1.20.1
- gstreamer0.10-0.10.36nb19 gstreamer1-1.20.1 gtk-doc-1.32nb8
- gtksourceview3-3.24.11nb8 gtksourceview4-4.8.0nb4 gupnp-1.0.3nb15
- gupnp-igd-0.2.5nb12 gvfs-1.6.7nb59 harfbuzz-4.2.1 harfbuzz-icu-4.2.1
- help2man-1.49.2 icu-71.1nb1 imath-3.1.5 jpeg-9e json-c-0.16
- jwm-2.4.1nb1 kpathsea-6.3.4 ladspa-1.17nb1 lapack-3.10.1 lapacke-3.10.1
- ldb-2.4.2 libabw-0.1.3nb12 libappindicator-12.10.0nb11 libbluray-1.3.1nb1
- libcdr-0.1.7nb6 libclucene-2.3.3.4nb22 libcroco-0.6.13nb6 libcups-2.4.1
- libdbi-driver-sqlite3-0.9.0nb14 libe-book-0.1.3nb22 libetonyek-0.1.10nb5
- libfreehand-0.1.2nb13 libglade-2.6.4nb39 libgpg-error-1.45
- libgsf-1.14.47nb5 libical-3.0.14nb1 liblangtag-0.6.3nb6
- libmatekbd-1.24.1nb2 libmateweather-1.24.1nb2 libmspub-0.1.4nb21
- libnice-0.1.16nb10 libnumbertext-1.0.10 libofx-0.9.15nb8
- libpurple-2.14.8nb1 libqxp-0.0.2nb15 libreoffice-7.3.1.3nb1
- librsvg-2.52.8nb1 libsexy-0.1.11nb38 libshout-2.4.6 libsoup-2.70.0nb7
- libtool-2.4.6nb1 libtool-fortran-2.4.6nb2 libtool-info-2.4.6
- libva-2.14.0nb1 libvisio-0.1.7nb15 libwmf-0.2.8.4nb21 libxkbcommon-1.4.0nb1
- libxklavier-5.4nb9 libxml++-2.40.1nb11 libxml2-2.9.14 libxslt-1.1.34nb8
- libzmf-0.0.2nb23 lintpkgsrc-4.98 llvm-13.0.1nb1 m17n-lib-1.8.0nb7
- mate-applets-1.24.1nb2 mate-control-center-1.24.2nb2
- mate-notification-daemon-1.24.2nb2 mate-panel-1.24.2nb2
- mate-screensaver-1.24.2nb2 mate-settings-daemon-1.24.2nb3
- medit-1.2.0nb20 mlterm-3.9.2nb1 mpg123-1.29.3nb1 mplayer-1.5
- mplayer-share-1.5 mpv-0.34.1nb3 netpbm-10.86.25nb1 nghttp2-1.47.0nb1
- nss-3.78 oniguruma-6.9.8 openal-soft-1.22.0 openexr-3.1.5 p5-DateTime-1.5800
- pcre2-10.40 php-7.4.29nb1 php74-curl-7.4.29nb12 php74-fpm-7.4.29nb9
- php74-gd-7.4.29nb1 php74-iconv-7.4.29 php74-intl-7.4.29nb8
- php74-json-7.4.29 php74-mbstring-7.4.29 php74-mysqli-7.4.29nb2
- php74-pdo-7.4.29 php74-pdo_sqlite-7.4.29nb8 php74-posix-7.4.29
- php74-sqlite3-7.4.29nb8 php74-zip-7.4.29nb7 php74-zlib-7.4.29nb1
- pkgin-21.12.0nb2 policykit-0.9nb31 poppler-22.04.0 poppler-cpp-22.04.0
- poppler-glib-22.04.0 postgresql13-client-13.6nb1 ptexenc-1.4.0
- py27-gstreamer0.10-0.10.22nb10 py27-gtk2-2.24.0nb39 py27-libxml2-2.9.13nb1
- py27-libxslt-1.1.34nb7 py39-build-0.7.0nb3 py39-colorama-0.4.4nb2
- py39-jinja2-3.1.2 py39-libxml2-2.9.14 py39-lxml-4.8.0nb1
- py39-markupsafe-2.1.1 py39-pep517-0.12.0nb2 py39-pip-22.0.4
- py39-pygments-2.12.0 py39-pyparsing-3.0.8 py39-setuptools-62.1.0
- py39-sphinx-4.5.0 py39-sqlite3-3.9.12nb22 py39-toml-0.10.2nb1
- qt5-qtbase-5.15.3 qt5-qtdeclarative-5.15.3 qt5-qtlocation-5.15.3
- qt5-qtmultimedia-5.15.3 qt5-qtsensors-5.15.3 qt5-qtserialport-5.15.3
- qt5-qtsvg-5.15.3 qt5-qttools-5.15.3 qt5-qtwebchannel-5.15.3
- qt5-qtwebsockets-5.15.3 qt5-qtx11extras-5.15.3 qt5-qtxmlpatterns-5.15.3
- raptor2-2.0.15nb24 rarian-0.8.1nb9 rasqal-0.9.33nb25 redland-1.0.17nb32
- rsync-3.2.4 ruby27-base-2.7.6 ruby27-nokogiri-1.13.4
- ruby27-public_suffix-4.0.7 rust-1.59.0nb1 samba-4.15.6nb1
- seamonkey-2.53.10nb3 shared-mime-info-1.10nb6 spdlog-1.10.0
- sqlite3-3.38.5 tcl-8.6.12nb2 uim-1.8.9pre20210104nb3
- unixodbc-2.3.11 vala-0.56.1 vte3-0.68.0nb4 wayland-1.18.0nb5
- web2c-2022 webkit-gtk-2.34.6nb1 wordpress-5.9.3 x11-links-1.35
- xfce4-desktop-4.16.0nb1 xfce4-orage-4.16.0nb1 xfce4-panel-4.16.4
- xfce4-session-4.16.0nb3 xfce4-settings-4.16.2nb3 xfce4-terminal-1.0.1
- xfce4-thunar-4.16.11 xfce4-tumbler-4.16.0nb3 xmlto-0.0.28nb7
- xscreensaver-6.03nb1 yelp-tools-3.32.2nb5 zxing-cpp-1.3.0
+ ImageMagick-7.1.0.37 SDL-1.2.15nb38 ap24-php74-7.4.30nb8
+ apache-2.4.54 asciidoc-10.2.0 at-spi2-core-2.40.3nb2
+ cairo-1.16.0nb6 cbindgen-0.23.0 cmake-3.23.2 curl-7.83.1
+ dbus-1.14.0nb3 deforaos-browser-0.5.5nb1 deforaos-camera-0.3.0nb4
+ deforaos-cpp-0.0.6nb1 deforaos-editor-0.4.1nb4
+ deforaos-libdatabase-0.0.2nb7 deforaos-libdesktop-0.4.1nb1
+ deforaos-mailer-0.2.0nb8 deforaos-mixer-0.4.1
+ deforaos-pdfviewer-0.1.0nb14 deforaos-phone-0.6.0nb5
+ docbook-xsl-1.79.2nb6 emacs-26.3 engrampa-1.24.2nb1 eom-1.24.2nb2
+ gdk-pixbuf2-2.42.8 gexiv2-0.12.2nb6 ghostscript-agpl-9.56.1
+ gnome-themes-standard-3.20.2nb17 gnutls-3.7.6
+ gobject-introspection-1.70.0nb1 graphviz-2.50.0nb5
+ gssdp-1.0.3nb20 gst-plugins1-base-1.20.2nb1
+ gst-plugins1-good-1.20.2 gstreamer1-1.20.2nb1 gtk-doc-1.32nb9
+ gtksourceview4-4.8.0nb5 gupnp-1.0.3nb16 gupnp-igd-0.2.5nb13
+ harfbuzz-4.3.0nb2 harfbuzz-icu-4.3.0 icu-71.1
+ json-glib-1.6.2nb2 jwm-2.4.2 libaom-3.3.0 libass-0.16.0
+ libgweather-40.0nb6 libnice-0.1.16nb11 libnotify-0.7.12nb1
+ libogg-1.3.5nb1 libreoffice-7.3.3.2 librsvg-2.54.3 libsecret-0.20.4nb5
+ libsixel-1.8.6nb8 libuv-1.44.1nb1 libxkbcommon-1.4.1 libzip-1.9.0
+ luatex-1.15.0 m4-1.4.19nb1 makejvf-20220121 mate-backgrounds-1.24.2nb1
+ mate-calc-1.24.2nb2 mate-common-1.24.2nb1 mate-icon-theme-1.24.0nb3
+ mate-icon-theme-faenza-1.20.0nb9 mate-media-1.24.1nb2 mate-themes-3.22.22nb1
+ mate-utils-1.24.0nb3 mendexk-3.6 mpv-0.34.1nb4 nginx-1.22.0nb1
+ ninja-build-1.11.0 nono-0.3.0 nspr-4.34 nss-3.79 openjpeg-2.5.0
+ osabi-NetBSD-9.99.97 p5-Mozilla-CA-20211001 pango-1.50.7
+ pciutils-3.8.0 php-7.4.30 php74-curl-7.4.30nb12 php74-fpm-7.4.30nb9
+ php74-gd-7.4.30nb2 php74-iconv-7.4.30 php74-intl-7.4.30nb8
+ php74-ja-wordpress-5.9.3 php74-json-7.4.30 php74-mbstring-7.4.30
+ php74-mysqli-7.4.30nb2 php74-owncloud-10.9.1 php74-pdo-7.4.30
+ php74-pdo_sqlite-7.4.30nb8 php74-posix-7.4.30 php74-sqlite3-7.4.30nb8
+ php74-zip-7.4.30nb7 php74-zlib-7.4.30nb1 pluma-1.24.2nb5 polkit-0.120nb3
+ poppler-glib-22.04.0nb1 postgresql13-client-13.7 py39-cElementTree-3.9.13
+ py39-expat-3.9.13 py39-importlib-metadata-4.11.3nb1 py39-lxml-4.9.0
+ py39-pyparsing-3.0.9 py39-readline-3.9.13 py39-setuptools-62.4.0
+ py39-smartypants-2.0.1nb1 py39-sqlite3-3.9.13nb22 py39-typogrify-2.0.7
+ py39-wheel-0.37.1nb2 python39-3.9.13 qmmp-1.5.1nb7 qt5-qtbase-5.15.4
+ qt5-qtdeclarative-5.15.4 qt5-qtlocation-5.15.4 qt5-qtmultimedia-5.15.4
+ qt5-qtsensors-5.15.4 qt5-qtserialport-5.15.4 qt5-qtsvg-5.15.4
+ qt5-qttools-5.15.4 qt5-qtwebchannel-5.15.4 qt5-qtwebsockets-5.15.4
+ qt5-qtx11extras-5.15.4 qt5-qtxmlpatterns-5.15.4 rarian-0.8.1nb10
+ ruby27-mikutter-plugins-twitter-5.0nb1 ruby27-moneta-1.5.1
+ ruby27-nokogiri-1.13.6 rust-1.60.0 sudo-1.9.10 talloc-2.3.4
+ tcsh-6.24.01 tex-amsfonts-3.04nb1 tex-amsmath-2.17l tex-arphic-ttf-2017
+ tex-atbegshi-1.19 tex-atveryend-1.11 tex-auxhook-1.6 tex-avantgar-2021
+ tex-babel-3.74 tex-baekmuk-2.2.1 tex-bigintcalc-1.5 tex-bitset-1.3
+ tex-bookman-2021 tex-booktabs-1.61803398nb1 tex-capt-of-2009
+ tex-carlisle-2021 tex-charter-2010 tex-cm-2018.49028nb1 tex-cmap-1.0j
+ tex-colortbl-1.0enb1 tex-courier-2021 tex-dehyph-2018 tex-dvips-2020
+ tex-enumitem-3.9 tex-etex-2.1.31600 tex-etex-pkg-2.7 tex-etexcmds-1.7
+ tex-fancyvrb-4.2 tex-firstaid-1.0q tex-float-1.3d tex-fpl-1.003
+ tex-framed-0.96 tex-gettitlestring-1.6 tex-graphics-1.4d
+ tex-graphics-cfg-2016.41448 tex-graphics-def-2022
+ tex-grfext-1.3 tex-grffile-2.1 tex-haranoaji-20220220
+ tex-helvetic-2021 tex-hycolor-1.10 tex-hyperref-7.00n
+ tex-hyph-utf8-2021 tex-hyphen-base-2021 tex-iftex-1.0f
+ tex-infwarerr-1.5 tex-intcalc-1.3 tex-knuth-lib-2021 tex-kpathsea-2022
+ tex-kvdefinekeys-1.6 tex-kvoptions-3.14 tex-kvsetkeys-1.18
+ tex-l3backend-2021.63025 tex-l3kernel-2021.63007 tex-l3packages-2021.61588
+ tex-latex-20211115.1 tex-latex-bin-2020 tex-latex-fonts-2013
+ tex-latexconfig-2020 tex-letltxmacro-1.6 tex-lm-2.005
+ tex-ltxcmds-1.25 tex-luatex-1.15.0 tex-mathpazo-1.003.52663
+ tex-ncntrsbk-2021 tex-needspace-1.3d tex-oberdiek-2021
+ tex-palatino-2021 tex-parskip-2.0h tex-pdfescape-1.15
+ tex-pdftex-2020nb1 tex-pdftexcmds-0.33 tex-plain-3.141592653.57963
+ tex-psnfss-9.3nb1 tex-ptex-base-2021 tex-ptex-fontmaps-20210625.0
+ tex-refcount-3.6 tex-rerunfilecheck-1.9 tex-stringenc-1.12
+ tex-symbol-2021 tex-tabulary-0.10 tex-tex-ini-files-2016
+ tex-texlive-scripts-2022 tex-texlive-scripts-doc-2022
+ tex-texlive.infra-2022 tex-times-2021 tex-tools-2021
+ tex-underscore-2010 tex-unicode-data-1.15 tex-uniquecounter-1.4
+ tex-updmap-map-2020 tex-upquote-1.3 tex-url-3.4
+ tex-varwidth-0.92nb1 tex-wrapfig-3.6nb1 tex-zapfchan-2021
+ tex-zapfding-2021 tiff-4.4.0 waf-2.0.24 xfce4-4.16.0nb3
+ xfce4-icon-theme-4.4.3nb35 xfce4-mousepad-0.5.9
+ xfce4-terminal-1.0.4 xscreensaver-6.04 zsh-5.9
 
 Version: 
  `uname -v`
