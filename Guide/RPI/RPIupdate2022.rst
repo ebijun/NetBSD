@@ -50,6 +50,7 @@ RaspberryPIのNetBSDイメージについて
  2022/3/12,9.99.94,5.0.4,,,tor,OSC東京春,http://mail-index.netbsd.org/port-arm/2022/03/05/msg007597.html
  2022/4/09,9.99.96,,,1.1.1n,,,http://mail-index.netbsd.org/port-arm/2022/03/05/msg007628.html
  2022/5/28,9.99.96,,3.9.2nb1,,OpenSSH9.0,OSC名古屋,http://mail-index.netbsd.org/port-arm/2022/03/05/msg007674.html
+ 2022/6/25,9.99.98,,,, icu-71.1 ,OSC北海道,http://mail-index.netbsd.org/port-arm/2022/06/22/msg007697.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
