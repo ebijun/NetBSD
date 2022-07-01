@@ -724,7 +724,26 @@ http://mail-index.netbsd.org/tech-pkg/2020/05/29/msg023265.html
 ::
 
    make show-buildlink3
-   
+
+5. pkglint
+
+コミットする前に、pkgsrc/pkgtools/pkglint を実行してチェックします。
+
+6. コミットメッセージ
+
+一行目にパッケージ名とバージョン／理由を書きます。
+
+::
+
+ geography/gama: Update to 2.19
+ 
+pkgsrc/doc: CHANGES-年号 に変更を追加します。
+
+::
+
+ doc: Updated geography/gama to 2.19
+
+  
 このドキュメント
 ----------------------
 
