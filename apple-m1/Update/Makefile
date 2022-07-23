@@ -1,5 +1,6 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.97-evbarm-aarch64-202206131340Z-install.img
+IMG=${RELEASE}/NetBSD-9.99.99-evbarm-aarch64-202207220000Z-install.img
+#IMG=${RELEASE}/NetBSD-9.99.97-evbarm-aarch64-202206131340Z-install.img
 #IMG=${RELEASE}/NetBSD-9.99.96-evbarm-aarch64-202204051310Z-install.img
 #IMG=${RELEASE}/NetBSD-9.99.94-evbarm-aarch64-202203090730Z-install.img
 #IMG=${RELEASE}/NetBSD-9.99.93-evbarm-aarch64-202201080740Z-install.img
@@ -14,7 +15,7 @@ MNT=/mnt1
 M1=/
 # 
 VND-C=/dev/sd1
-MNT-C=/mnt-c
+MNT-C=/
 
 DK=`dkctl vnd0 listwedges |grep ffs |awk -F: '{print $$1}'`
 DK-C=`dkctl ${VND-C} listwedges |grep ffs |awk -F: '{print $$1}'`
