@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.98 (RPI) #0: Mon Jun 20 18:06:28 UTC 2022
+NetBSD 9.99.99 (RPI) #0: Sun Jul 24 10:53:17 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI
 total memory = 192 MB
 avail memory = 177 MB
@@ -84,7 +84,7 @@ aes: BearSSL aes_ct
 chacha: Portable C ChaCha
 uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-sdmmc0: direct I/O error 5, r=6 p=0xc5b06f14 write
+sdmmc0: direct I/O error 5, r=6 p=0xc5b07f14 write
 sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
 ld0 at sdmmc0: <0x02:0x544d:SA32G:0x71:0x2acb024c:0x157>
 ld0: 29796 MB, 7567 cyl, 128 head, 63 sec, 512 bytes/sect x 61022208 sectors
@@ -103,7 +103,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.98/modules
+kern.module.path=/stand/evbarm/9.99.99/modules
 vchiq0: interrupting on icu irq 66
 vchiq: vchiq_init_state: slot_zero = 0xc5f40000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
