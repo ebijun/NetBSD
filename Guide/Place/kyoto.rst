@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2021 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2022 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -50,7 +50,8 @@
  2018 Kyoto,8/3-4,800,48,京都リサーチパーク
  2019 Kyoto,8/2-3,760,50,京都リサーチパーク
  2020 Kyoto,8/28-29,320,18,Online
- 2021 Kyoto,7/30-31,,16,Online
+ 2021 Kyoto,7/30-31,235,16,Online
+ 2022 Kyoto,7/29-30,,16,Online
  
 よく行く店
 ~~~~~~~~~~~~~~
@@ -59,6 +60,7 @@
  :widths: 30 20 60
 
  店名,エリア,コメント
+ Sun&Luna, 京都精華大学,上賀茂のカフェ
  麥酒　夢詠ミ,祇園四条駅６番出口,平日15:45 土日祝12:45 21:00まで
  京都ビアラボ,河原町正面,忘れよIPA
  スタンドうみねこコト,蛸屋町１６０,最大35tap
@@ -115,7 +117,8 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
  
- 167,OSC2021京都,http://www.re.soum.co.jp/~jun/OSC2020kyoto.pdf
+ 178,OSC2022京都,http://www.re.soum.co.jp/~jun/OSC2022kyoto.pdf
+ 167,OSC2021京都,http://www.re.soum.co.jp/~jun/OSC2021kyoto.pdf
  157,OSC2020京都,http://www.re.soum.co.jp/~jun/OSC2020kyoto.pdf
  145,OSC2019京都,http://www.re.soum.co.jp/~jun/OSC2018kyoto.pdf
  128,OSC2018京都,http://www.re.soum.co.jp/~jun/OSC2018kyoto.pdf
@@ -134,6 +137,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2022京都 NetBSDブース展示の記録, https://togetter.com/li/1921498
  OSC2021京都 NetBSDブース展示の記録,https://togetter.com/li/1751521
  OSC2020京都 NetBSDブース展示の記録,https://togetter.com/li/1582822
  OSC2019京都 NetBSDブース展示の記録,https://togetter.com/li/1382880
