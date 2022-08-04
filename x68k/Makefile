@@ -12,3 +12,6 @@ init:
 
 add_diskimage:
 	echo "spc0-id0-image = hd,${VM}.hds" >> nono.cfg
+
+fetch:
+	./NewestISO |sh
