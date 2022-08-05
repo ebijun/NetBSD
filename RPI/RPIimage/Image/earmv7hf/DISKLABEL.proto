@@ -1,13 +1,13 @@
 # /dev/rvnd0:
-type: SCSI
-disk: STORAGE DEVICE
+type: vnd
+disk: vnd
 label: fictitious
-flags: removable
+flags:
 bytes/sector: 512
 sectors/track: 32
 tracks/cylinder: 64
 sectors/cylinder: 2048
-cylinders: 587
+cylinders: 2520
 total sectors: 5160960
 rpm: 3600
 interleave: 1
@@ -17,10 +17,9 @@ headswitch: 0		# microseconds
 track-to-track seek: 0	# microseconds
 drivedata: 0 
 
-8 partitions:
+6 partitions:
 #        size    offset     fstype [fsize bsize cpg/sgs]
- a:   4702208    458752     4.2BSD      0     0     0  # (Cyl.    224 -   2010)
- b:    262144    196608       swap                     # (Cyl.     96 -    223)
- c:   4702208    458752     unused      0     0        # (Cyl.    224 -   2010)
- d:   5160960         0     unused      0     0        # (Cyl.      0 -   2010)
- e:    188416      8192      MSDOS                     # (Cyl.      4 -     95)
+ a:   4964352    196608     4.2BSD      0     0     0  # (Cyl.     96 -   2519)
+ c:   4964352    196608     unused      0     0        # (Cyl.     96 -   2519)
+ d:   5160960         0     unused      0     0        # (Cyl.      0 -   2519)
+ e:    163840     32768      MSDOS                     # (Cyl.     16 -     95)
