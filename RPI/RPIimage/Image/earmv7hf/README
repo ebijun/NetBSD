@@ -1,25 +1,21 @@
-VERSION: :1,$s/2022-08-05/2022-08-05/g
+VERSION: :1,$s/2022-08-06/2022-08-06/g
 ISO:     :1,$s/202208040500Z/202208040500Z/g
 NetBSD:  :1,$s/9.99.99/9.99.99/g
-PKGSRC:  :1,$s/2022-08-05/2022-08-05/
+PKGSRC:  :1,$s/2022-08-06/2022-08-06/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-08-05-netbsd-armv7-earmv7hf.img
+Subject: 2022-08-06-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-08-05-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2022-08-06-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2022-08-05-earmv7hf/2022-08-05-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2022-08-05-earmv7hf/MD5
-
-PROBLEM on earmv7hf: so resize_disklabel failed
-
-rpi# drvctl -p ld0
-drvctl: DRVCTLCOMMAND: Input/output error
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2022-08-06-earmv7hf/2022-08-06-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2022-08-06-earmv7hf/MD5
 
 Update:
+- Fixed: Resize error on 2022-08-06 version
 - NetBSD 9.99.99 evbarm-armv7hf 202208040500Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
