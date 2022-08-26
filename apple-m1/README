@@ -44,10 +44,6 @@ pkgsrc:
 - pkgsrc packages:
  http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2022/
   pkgin support
-- some packages need wayland and libxkbcommon.
-.include "../../devel/wayland/buildlink3.mk"
-.include "../../x11/libxkbcommon/buildlink3.mk"
-
 
 System Updates:
 
