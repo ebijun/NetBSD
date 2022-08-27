@@ -1,0 +1,77 @@
+[   1.0000000] Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+[   1.0000000]     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+[   1.0000000]     2018, 2019, 2020, 2021, 2022
+[   1.0000000]     The NetBSD Foundation, Inc.  All rights reserved.
+[   1.0000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
+[   1.0000000]     The Regents of the University of California.  All rights reserved.
+
+[   1.0000000] NetBSD 9.99.99 (INSTALL) #0: Fri Aug 26 22:01:20 UTC 2022
+[   1.0000000] 	xxx@xxx.xxx:/usr/src/sys/arch/news68k/compile/INSTALL
+[   1.0000000] SONY NET WORK STATION, Model NWS-1750, Machine ID #0
+[   1.0000000] total memory = 16384 KB
+[   1.0000000] avail memory = 11928 KB
+[   1.0000000] timecounter: Timecounters tick every 10.000 msec
+[   1.0000000] mainbus0 (root)
+[   1.0000000] hb0 at mainbus0
+[   1.0000000] le0 at hb0 addr 0xe0f00000 ipl 4: address xx:xx:xx:xx:xx:xx
+[   1.0000000] le0: 8 receive buffers, 2 transmit buffers
+[   1.0000000] timer0 at hb0 addr 0xe1000000 ipl 6
+[   1.0000000] mkclock0 at hb0 addr 0xe0d80000: mk48t02
+[   1.0000000] zsc0 at hb0 addr 0xe0d40000 ipl 5 vect 64
+[   1.0000000] zstty0 at zsc0 channel 0 (console i/o)
+[   1.0000000] zstty1 at zsc0 channel 1
+[   1.0000000] si0 at hb0 addr 0xe0cc0000 ipl 4
+[   1.0000000] scsibus0 at si0: 8 targets, 8 luns per target
+[   1.0000030] timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+[   1.0200050] scsibus0: waiting 2 seconds for devices to settle...
+[   1.9600050] aes: BearSSL aes_ct
+[   2.1700050] chacha: Portable C ChaCha
+[   2.3600050] WARNING: system needs entropy for security; see entropy(7)
+[   3.1900050] si0: reselect, BSY stuck, bus=0xff
+[   3.4900050] si0: reselect, BSY stuck, bus=0xff
+[   3.6300050] si0: select found SCSI bus busy, resetting...
+[   3.9300050] si0: reselect, BSY stuck, bus=0xff
+[   4.2300050] si0: reselect, BSY stuck, bus=0xff
+[   4.3600050] si0: select found SCSI bus busy, resetting...
+[   4.6700050] si0: reselect, BSY stuck, bus=0xff
+[   4.9800050] si0: reselect, BSY stuck, bus=0xff
+[   5.1200050] si0: select found SCSI bus busy, resetting...
+[   5.4300050] si0: reselect, BSY stuck, bus=0xff
+[   5.7400050] si0: reselect, BSY stuck, bus=0xff
+[   5.8800050] si0: select found SCSI bus busy, resetting...
+[   6.1900050] si0: reselect, BSY stuck, bus=0xff
+[   6.5000050] si0: reselect, BSY stuck, bus=0xff
+[   6.6400050] si0: select found SCSI bus busy, resetting...
+[   6.9500050] si0: reselect, BSY stuck, bus=0xff
+[   7.2600050] si0: reselect, BSY stuck, bus=0xff
+[   7.4000050] si0: select found SCSI bus busy, resetting...
+[   7.7100050] si0: reselect, BSY stuck, bus=0xff
+[   8.0200050] si0: reselect, BSY stuck, bus=0xff
+[   8.1600050] si0: select found SCSI bus busy, resetting...
+[   8.4700050] si0: reselect, BSY stuck, bus=0xff
+[   8.7700050] si0: reselect, BSY stuck, bus=0xff
+[   8.9100050] si0: select found SCSI bus busy, resetting...
+[   9.2100050] si0: reselect, BSY stuck, bus=0xff
+[   9.5200050] si0: reselect, BSY stuck, bus=0xff
+[   9.6600050] si0: select found SCSI bus busy, resetting...
+[   9.9700050] si0: reselect, BSY stuck, bus=0xff
+[  10.2700050] si0: reselect, BSY stuck, bus=0xff
+[  10.4000050] si0: select found SCSI bus busy, resetting...
+[  10.7000050] si0: reselect, BSY stuck, bus=0xff
+[  11.0000050] si0: reselect, BSY stuck, bus=0xff
+[  11.1400050] si0: select found SCSI bus busy, resetting...
+[  11.4500050] si0: reselect, BSY stuck, bus=0xff
+[  11.7600050] si0: reselect, BSY stuck, bus=0xff
+[  11.9000050] si0: select found SCSI bus busy, resetting...
+[  12.2100050] si0: reselect, BSY stuck, bus=0xff
+[  12.5100050] si0: reselect, BSY stuck, bus=0xff
+[  12.6500050] si0: select found SCSI bus busy, resetting...
+[  12.9600050] si0: reselect, BSY stuck, bus=0xff
+[  13.2700050] si0: reselect, BSY stuck, bus=0xff
+[  13.4100050] si0: select found SCSI bus busy, resetting...
+[  13.5600050] boot device: <unknown>
+[  13.5800050] md0: internal 1856 KB image area
+[  13.5900050] root on md0a
+[  13.6100050] root file system type: ffs
+[  13.6200050] kern.module.path=/stand/news68k/9.99.99/modules
+# 
