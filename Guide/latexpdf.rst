@@ -42,6 +42,7 @@ sphinxに必要なlatex環境インストール
  # pkg_add latexmk
  # pkg_add tex-platex
  # pkg_add texlive-collection-langjapanese
+ # pkg_add texlive-collection-fontutils
  # pkg_add tex-cmap
  # pkg_add tex-fancyhdr
  # pkg_add tex-titlesec
