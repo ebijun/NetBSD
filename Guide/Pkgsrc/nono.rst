@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.4.2
+ DISTNAME=       nono-0.4.3
 
 チェックサム作成
 ------------------
@@ -41,8 +41,8 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
- -rw-r--r--  1 jun  wheel   558 Aug  4 08:24 distinfo
- -rw-r--r--  1 jun  wheel  1164 Aug  4 08:24 Makefile
+ -rw-r--r--  1 jun  wheel  1180 Aug 28 06:14 Makefile
+ -rw-r--r--  1 jun  wheel   558 Aug 28 06:14 distinfo
 
  make package して動作を確認します。
  
@@ -70,22 +70,18 @@ commit
 
  cvs commit 
 
- nono: update to 0.4.2.
+ nono: update to 0.4.3.
  
- 0.4.2 (2022-08-03)
+ 0.4.3 (2022-08-27)
+ 
+ m68k(Fix): "Implement case level 0 and level 7 of PTESTR/PTESTW instructions."
+ m68k(Fix): "Fix match behavior when R/W bit are set on TT0/1 registers."      
+ m68k(Fix): "Fix that an application becomes inoperable on double bus fault in V
+M."                                                                    
+ m88k(Fix): "Improve pseudo STOP behaviors."                        
+ vm(Update): "Implement GETC/PUTC routines on LUNA-88K's internal PROM."        
+ vm(New): "Support NWS-1750. It's just a joke." 
 
- vm(Update):  "Improve a memory map on LUNA-88K."
- vm(Update):  "Improve a keyboard buzzer handling on LUNA. Implement the buzzer indicator on the software keyboard window."
- vm(Update):"Limit maximum ram size to 240MB when using PROM 1.20 on LUNA-88K due to PROM code constraint."
- vm(Update): "Implement behaviors when TVRAM scroll protrudes to the right, probably."
- vm(Fix):  "Fix a horizontal scroll amount of RFCNT to match real machine."
- m88k(Fix): "Fix an address mask when m88200 invalidates cache line."
- m88k(Fix): "Fix cache status when m88200 creates cache entry for writing."
- debugger(Update):  "Add unofficial NetBSD/luna88k system call to the exception history."
- app(Update):  "-X option supports loading symbol tables in NetBSD kernel."
- app(Fix):  "Fix a problem that application may not be able to be terminated when debugger is used."
- app(Fix):  "Fix a silent termination when Ctrl+Q is entered." 
- 
 doc をcommit します
 ---------------------
  
@@ -94,20 +90,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to  0.4.2
+ doc: Updated emulators/nono to  0.4.3
  
  cvs diff -u CHANGES-2022
- Index: CHANGES-2022
- ===================================================================
- RCS file: /cvsroot/pkgsrc/doc/CHANGES-2022,v
- retrieving revision 1.3672
- diff -u -r1.3672 CHANGES-2022
- --- CHANGES-2022        3 Aug 2022 21:54:21 -0000       1.3672
- +++ CHANGES-2022        3 Aug 2022 23:35:09 -0000
- @@ -5470,3 +5470,4 @@
-        Updated www/firefox-l10n to 103.0.1 [ryoon 2022-08-03]
-        Updated net/nsd to 4.6.0 [ryoon 2022-08-03]
-        Updated databases/p5-DBD-SQLite to 1.70 [wiz 2022-08-03]
- +       Updated emulators/nono to 0.4.2 [jun 2022-08-04]
+ Updated emulators/nono to 0.4.3 [jun 2022-08-28]
 
- 
+

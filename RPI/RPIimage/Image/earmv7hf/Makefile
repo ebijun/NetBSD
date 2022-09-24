@@ -12,7 +12,7 @@
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202208040500Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202208050850Z/evbarm-earmv7hf/binary
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2022/
 

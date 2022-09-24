@@ -197,6 +197,7 @@ htmlhelp_basename = 'NetBSDKankoGuidedoc'
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
@@ -218,7 +219,8 @@ latex_documents = [
 #latex_logo = None
 
 # http://sphinx-users.jp/cookbook/pdf/latex.html
-latex_docclass = {'manual': 'jsbook'}
+#latex_docclass = {'manual': 'jsbook' }
+latex_docclass = {'manual': 'ujbook' }
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -235,8 +237,6 @@ latex_docclass = {'manual': 'jsbook'}
 
 # If false, no module index is generated.
 #latex_domain_indices = True
-
-
 
 # -- Options for manual page output ---------------------------------------
 

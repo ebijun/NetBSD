@@ -23,10 +23,10 @@
  :maxdepth: 3
  :numbered:
 
- Place/kyoto
  RPI/RPIupdate2022
  RPI
  Luna
+ Pkgsrc/nono
  latexpdf
  Place/intro
  OSC/OSC2022

@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-6 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -59,6 +59,8 @@ RaspberryPIでNetBSDを使ってみる
 * USBマウス
 * 有線ネットワーク
 
+ケースは Geekworm Raspberry Pi 3/4ケースをそれぞれ使っています。
+
 起動ディスクの作成
 -------------------
 * ディスクイメージのダウンロード
@@ -77,19 +79,11 @@ RaspberryPIでNetBSDを使ってみる
 	disklabel sd0  ..... 必ずインストールするSDカードか確認してください。
 	gunzip < 2016-11-12-netbsd-raspi-earmv6hf.img.gz.gz|dd of=/dev/rsd0d bs=1m
 
-Cubieboard2,BananaPI用イメージ
+NetBSD Arm Bootable Images
 -------------------------------
 
- Cubieboard2,BananaPI用のイメージが、
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/allwinner/ 以下にあります。
- 同じ手順で起動できます。
-
-ODROID-C1用イメージ
--------------------------------
-
- ODROID-C1用のイメージが、
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/odroid_c1/ 以下にあります。
- 同じ手順で起動できます。
+ NetBSD Arm Bootable Images が、https://nycdn.netbsd.org/pub/arm/ 以下にあります。
+ RPIと同じ手順で起動できます。
 
 RaspberryPIの起動
 ------------------

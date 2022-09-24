@@ -10,11 +10,9 @@ CDN="nycdn.netbsd.org"
 #FTP="ftp7.jp.netbsd.org"
 
 BRANCH="/pub/NetBSD-daily/HEAD/"
-#BRANCH="/pub/NetBSD-daily/netbsd-7/"
 IMAGES="/usr/release/images/"
 
-ARCH="x68k"
-
+ARCH="news68k"
 
 class ISO
 	def initialize(list)
@@ -24,7 +22,8 @@ class ISO
 	def check(path,arch)
 		l = @iso
 		while f=l.shift
-			if /#{arch}.iso/ =~ f
+			if /#{arch}$/ =~ f
+		p f
 				@path = path+f
 				return path+f
 			end
@@ -60,14 +59,14 @@ ftp = Net::FTP.open(FTP) do |ftp|
 	# Check most recent image
 	while s=list.pop
 		# is image dir?
-		image=BRANCH+s+"/images/"
+		image=BRANCH+s+"/"
 		begin
 			path=ftp.chdir(image)
 		rescue Net::FTPPermError
 			next
 		end
 
-		# is ARCH iso?
+		# is ARCH?
 		begin
 			isofile=ISO.new(ftp.nlst())
 			if isofile.check(image,ARCH)
@@ -79,7 +78,7 @@ ftp = Net::FTP.open(FTP) do |ftp|
 			next
 		end
 	end
-	puts "ftp http://"+CDN+isofile.path
-	puts "mv "+isofile.body+".iso "+IMAGES+isofile.body+"-"+isofile.date+".iso"
+	puts "wget --level=2 -r http://"+CDN+isofile.path+"/binary/kernel/netbsd-INSTALL.gz"
+
 	ftp.quit
 end

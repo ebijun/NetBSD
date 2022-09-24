@@ -1,24 +1,25 @@
-VERSION: :1,$s/2022-07-24/2022-07-24/g
-ISO:     :1,$s/202207221940Z/202207221940Z/g
+VERSION: :1,$s/2022-08-28/2022-08-28/g
+ISO:     :1,$s/202208270430Z/202208270430Z/g
 NetBSD:  :1,$s/9.99.99/9.99.99/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-07-24-netbsd-raspi-aarch64.img
+Subject: 2022-08-28-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-07-24-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2022-08-28-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-07-24-aarch64/2022-07-24-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-07-24-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-08-28-aarch64/2022-08-28-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-08-28-aarch64/MD5
 
 Topics:
 - NetBSD-9.99.99
-- perl-5.36.0
-- python310-3.10.5nb1
- 
+- g++-10.4.0
+- gcc-10.4.0
+- git-base-2.37.2
+
 - openssh 9.0 https://www.openssh.com/txt/release-9.0
 
 "This release switches scp(1) from using the legacy scp/rcp protocol
@@ -59,27 +60,20 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- libdrm-3.6 NetBSD-9.99.99 sh-20220122-20220722170646Z
- userland-NetBSD-9.99.99/evbarm
+ g++-10.4.0 gcc-10.4.0 netpgp-3.99.18 sh-20220122-20220826220120Z
+ tzdata-2022c
 
 pkgsrc:
- curl-7.84.0nb1 dillo-3.0.5nb11 gd-2.3.3nb3 gdk-pixbuf2-2.42.8nb1
- git-base-2.37.1 gmp-6.2.1nb3 gnutls-3.7.6nb1
- gobject-introspection-1.70.0nb2 gtk2+-2.24.33nb6 gtk3+-3.24.34
- harfbuzz-4.4.1 libcups-2.4.2nb1 libffi-3.4.2nb3 libidn-1.41
- libidn2-2.3.3 libwebp-1.2.3 libxslt-1.1.34nb9 lintpkgsrc-4.98nb1
- mlterm-3.9.2nb3 mozilla-rootcerts-1.0.20220614 nettle-3.8
- nghttp2-1.48.0 p5-Authen-SASL-2.16nb10 p5-Digest-HMAC-1.04nb12
- p5-Email-Valid-1.202nb6 p5-Error-0.17029nb3 p5-GSSAPI-0.28nb14
- p5-IO-CaptureOutput-1.1105nb3 p5-IO-Socket-INET6-2.73nb1
- p5-IO-Socket-SSL-2.072nb1 p5-MailTools-2.21nb3
- p5-Mozilla-CA-20211001nb1 p5-Net-DNS-1.33nb1 p5-Net-Domain-TLD-1.75nb6
- p5-Net-IP-1.26nb10 p5-Net-LibIDN-0.12nb14 p5-Net-SMTP-SSL-1.04nb6
- p5-Net-SSLeay-1.90nb2 p5-Socket6-0.29nb4 p5-TimeDate-2.33nb2
- pango-1.50.8 perl-5.36.0 py310-cElementTree-3.10.5 py310-expat-3.10.5
- python310-3.10.5nb1 qt5-qtbase-5.15.5nb1 qt5-qtx11extras-5.15.5
- qt5-qtxmlpatterns-5.15.5 sudo-1.9.11p3 tcsh-6.24.01nb1
- wget-1.21.3nb1 zsh-5.9nb1
+ curl-7.84.0nb2 fltk-1.3.8nb1 fossil-2.19 gd-2.3.3nb4 git-base-2.37.2
+ glib2-2.72.3 gnutls-3.7.7 gtk3+-3.24.34nb2 harfbuzz-5.1.0
+ libepoll-shim-0.0.20210418nb2 libwebp-1.2.4 lintpkgsrc-2022.08.13
+ lz4-1.9.4 mlterm-3.9.2nb5 nettle-3.8.1 nghttp2-1.49.0
+ p5-IO-Socket-SSL-2.074 p5-Net-DNS-1.34 p5-Net-SSLeay-1.92
+ py310-cElementTree-3.10.6 py310-expat-3.10.6 python310-3.10.6
+ qt5-qtbase-5.15.5nb2 ruby27-cairo-1.17.7 ruby27-gdk3-3.5.1nb1
+ ruby27-gtk3-3.5.1nb1 ruby27-mikutter-5.0.4nb1 ruby27-nokogiri-1.13.8
+ ruby27-pkg-config-1.4.9 uim-1.8.9pre20210104nb4 wayland-1.21.0
+ wayland-protocols-1.26nb1
 
 RPI4 status:
 - boot via UEFI_VER=v1.33
@@ -99,7 +93,7 @@ In this image,pre-setted RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.99 evbarm-aarch64 202207221940Z arm64.img from nyftp.
+- NetBSD-current 9.99.99 evbarm-aarch64 202208270430Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
