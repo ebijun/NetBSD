@@ -1,26 +1,21 @@
-VERSION: :1,$s/2022-08-28/2022-08-28/g
-ISO:     :1,$s/202208270430Z/202208270430Z/g
-NetBSD:  :1,$s/9.99.99/9.99.99/g
-PKGSRC:  :1,$s/2022-08-28/2022/
+VERSION: :1,$s/2022-09-24/2022-09-24/g
+ISO:     :1,$s/202209231300Z/202209231300Z/g
+NetBSD:  :1,$s/9.99.100/9.99.100/g
+PKGSRC:  :1,$s/2022-09-24/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-08-28-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2022-09-24-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-08-28-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2022-09-24-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-08-28-earmv6hf/2022-08-28-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-08-28-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-09-24-earmv6hf/2022-09-24-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-09-24-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.99 evbarm-earmv6hf 2202208270430Z rpi.img from nyftp.
- git-base-2.37.2
- glib2-2.72.3
- mlterm-3.9.2nb5
- python310-3.10.6
- ruby27-mikutter-5.0.4nb1
+- NetBSD 9.99.100 evbarm-earmv6hf 2202209231300Z rpi.img from nyftp.
 
 - Re: Raspberry Pi camera under NetBSD current
  http://mail-index.netbsd.org/current-users/2021/11/16/msg041683.html
@@ -81,21 +76,18 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- netpgp-3.99.18 sh-20220122-20220826220120Z
- tzdata-2022c
+ bind-9.16.33 NetBSD-9.99.100 sh-20220122-202209231235Z
+ userland-NetBSD-9.99.100/evbarm
 
 pkgsrc:
- curl-7.84.0nb2 desktop-file-utils-0.26nb2 fltk-1.3.8nb1
- fossil-2.19 gd-2.3.3nb4 git-base-2.37.2 glib2-2.72.3
- gnutls-3.7.7 gtk3+-3.24.34nb2 harfbuzz-5.1.0
- libepoll-shim-0.0.20210418nb2 libwebp-1.2.4 lintpkgsrc-2022.08.13
- lz4-1.9.4 mlterm-3.9.2nb5 nettle-3.8.1 nghttp2-1.49.0
- p5-IO-Socket-SSL-2.074 p5-Net-DNS-1.34 p5-Net-SSLeay-1.92
- py310-cElementTree-3.10.6 py310-expat-3.10.6 python310-3.10.6
- qt5-qtbase-5.15.5nb2 ruby27-cairo-1.17.7 ruby27-gdk3-3.5.1nb1
- ruby27-gtk3-3.5.1nb1 ruby27-mikutter-5.0.4nb1 ruby27-nokogiri-1.13.8
- ruby27-pkg-config-1.4.9 uim-1.8.9pre20210104nb4 wayland-1.21.0
- wayland-protocols-1.26nb1
+ curl-7.85.0 gdk-pixbuf2-2.42.9 git-base-2.37.3 libtasn1-4.19.0
+ libxslt-1.1.34nb10 lintpkgsrc-2022.09.14 mlterm-3.9.2nb6 pcre2-10.40nb1
+ pkgin-22.9.0 py310-cElementTree-3.10.7 py310-expat-3.10.7 python310-3.10.7
+ qt5-qtbase-5.15.6 qt5-qtx11extras-5.15.6 qt5-qtxmlpatterns-5.15.6
+ ruby27-addressable-2.8.1 ruby27-cairo-1.17.8 ruby27-hashie-4.1.0
+ ruby27-native-package-installer-1.1.5 ruby27-oauth-1.1.0
+ ruby27-oauth-tty-1.0.3 ruby27-public_suffix-5.0.0 ruby27-snaky_hash-2.0.0
+ ruby27-unf_ext-0.0.8.2 ruby27-version_gem-1.1.0
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -154,7 +146,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-08-28-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-09-24-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -387,7 +379,7 @@ http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2022.rst
 
-- NetBSD 9.99.99 earmv6hf rpi.img.gz base
+- NetBSD 9.99.100 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
