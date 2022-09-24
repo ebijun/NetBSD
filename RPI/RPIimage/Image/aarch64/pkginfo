@@ -5,7 +5,7 @@ atk-2.36.0nb1       Set of interfaces for accessibility
 bash-5.1.16         The GNU Bourne Again Shell
 cairo-1.16.0nb6     Vector graphics library with cross-device output support
 cairo-gobject-1.16.0nb6 Vector graphics library with cross-device output support
-curl-7.84.0nb2      Client that groks URLs
+curl-7.85.0         Client that groks URLs
 dbus-1.14.0nb3      Message bus system
 digest-20220214     Message digest wrapper utility
 dillo-3.0.5nb11     Very small and fast graphical web-browser
@@ -13,9 +13,9 @@ fltk-1.3.8nb1       Fast Light Tool Kit for graphical user interfaces
 fossil-2.19         High-reliability, distributed software configuration management
 fribidi-1.0.11      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.3.3nb4         Graphics library for the dynamic creation of images
-gdk-pixbuf2-2.42.8nb1 Library for image loading and manipulation
+gdk-pixbuf2-2.42.9  Library for image loading and manipulation
 giflib-5.2.1nb4     GIF image format library
-git-base-2.37.2     GIT Tree History Storage Tool (base package)
+git-base-2.37.3     GIT Tree History Storage Tool (base package)
 glib2-2.72.3        Some useful routines for C programming (glib2)
 gmp-6.2.1nb3        Library for arbitrary precision arithmetic
 gnutls-3.7.7        Transport Layer Security library
@@ -43,22 +43,22 @@ libotf-0.9.16nb2    Library for handling OpenType fonts (OTF)
 libpaper-1.1.28     Paper size handling library
 libproxy-0.4.15nb1  Library that provides automatic proxy configuration management
 libpsl-0.21.1nb2    Library to handle the Public Suffix List
-libtasn1-4.18.0     ASN.1 structure parser library
+libtasn1-4.19.0     ASN.1 structure parser library
 libunistring-1.0    Unicode string library
 libuuid-2.32.1nb1   Generate unique identifiers for objects
 libwebp-1.2.4       WebP image format library and tools
 libxkbcommon-1.4.1  Library to handle keyboard descriptions
 libxml2-2.9.14      XML parser library from the GNOME project
-libxslt-1.1.34nb9   XSLT parser library from the GNOME project
+libxslt-1.1.34nb10  XSLT parser library from the GNOME project
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
-lintpkgsrc-2022.08.13 Sanity checks on the complete pkgsrc tree
+lintpkgsrc-2022.09.14 Sanity checks on the complete pkgsrc tree
 lrzsz-0.12.20nb1    Receive/Send files via X/Y/ZMODEM protocol.  (unrestrictive)
 lz4-1.9.4           Extremely Fast Compression algorithm
 lzo-2.10            Portable lossless data compression library
 m17n-db-1.8.0       The m17n database used by the m17n library
 m17n-lib-1.8.0nb7   Multilingualization library
 medit-1.2.0nb20     Programming and around-programming text editor
-mlterm-3.9.2nb5     Multilingual terminal emulator
+mlterm-3.9.2nb6     Multilingual terminal emulator
 mozilla-rootcerts-1.0.20220614 Root CA certificates from the Mozilla Project
 nettle-3.8.1        Cryptographic library
 nghttp2-1.49.0      Implementation of HTTP/2 in C
@@ -83,22 +83,22 @@ p5-Socket6-0.29nb4  Perl5 module to support getaddrinfo() and getnameinfo()
 p5-TimeDate-2.33nb2 Perl5 TimeDate distribution
 pango-1.50.8        Library for layout and rendering of text
 pcre-8.45           Perl Compatible Regular Expressions library
-pcre2-10.40         Perl Compatible Regular Expressions library (major version 2)
+pcre2-10.40nb1      Perl Compatible Regular Expressions library (major version 2)
 perl-5.36.0         Practical Extraction and Report Language
 pkg_chk-2.0.11      Check installed package versions against pkgsrc
 pkg_install-20211115 Package management and administration tools for pkgsrc
-pkgin-21.12.0nb2    Apt / yum like tool for managing pkgsrc binary packages
+pkgin-22.9.0        Apt / yum like tool for managing pkgsrc binary packages
 png-1.6.37nb1       Library for manipulating PNG images
-py310-cElementTree-3.10.6 C implementation of Python ElementTree API
-py310-expat-3.10.6  Python interface to expat
-python310-3.10.6    Interpreted, interactive, object-oriented programming language
-qt5-qtbase-5.15.5nb2 C++ X GUI toolkit
-qt5-qtx11extras-5.15.5 Qt5 module for X11 extras
-qt5-qtxmlpatterns-5.15.5 Qt5 module for XML Patterns
-ruby27-addressable-2.8.0 Replacement for the URI Implementation of standard librrary
+py310-cElementTree-3.10.7 C implementation of Python ElementTree API
+py310-expat-3.10.7  Python interface to expat
+python310-3.10.7    Interpreted, interactive, object-oriented programming language
+qt5-qtbase-5.15.6   C++ X GUI toolkit
+qt5-qtx11extras-5.15.6 Qt5 module for X11 extras
+qt5-qtxmlpatterns-5.15.6 Qt5 module for XML Patterns
+ruby27-addressable-2.8.1 Replacement for the URI Implementation of standard librrary
 ruby27-atk-3.5.1    Ruby binding of ATK-1.0.x or later
 ruby27-base-2.7.6   Ruby 2.7.6 release minimum base package
-ruby27-cairo-1.17.7 Ruby bindings for cairo
+ruby27-cairo-1.17.8 Ruby bindings for cairo
 ruby27-cairo-gobject-3.5.1 Ruby binding of cairo-gobject
 ruby27-delayer-1.2.1 Ruby module to delay the processing
 ruby27-delayer-deferred-2.2.0 Deferred for Delayer
@@ -110,6 +110,7 @@ ruby27-gio2-3.5.1   Ruby binding of gio-2.0.x
 ruby27-glib2-3.5.1  Ruby binding of GLib-2.x
 ruby27-gobject-introspection-3.5.1 Ruby binding of Gobject Introspection
 ruby27-gtk3-3.5.1nb1 Ruby binding of GTK+-3.x
+ruby27-hashie-4.1.0 Small collection of tools that make hashes more powerful
 ruby27-httpclient-2.8.3nb1 HTTP accessing library for Ruby
 ruby27-instance_storage-1.0.0 Manage class instances with dictionary
 ruby27-locale-2.1.3 Pure ruby library which provides basic APIs for localization
@@ -118,20 +119,23 @@ ruby27-mikutter-5.0.4nb1 Simple, powerful, and moeful twitter client
 ruby27-mikutter-plugins-twitter-5.0nb1 Plugins for mikutter to use Twitter
 ruby27-mini_portile2-2.8.0 Simple autoconf builder for developers
 ruby27-moneta-1.5.1 Unified interface to key/value stores
-ruby27-native-package-installer-1.1.3 Helper to install native packages on "gem install"
+ruby27-native-package-installer-1.1.5 Helper to install native packages on "gem install"
 ruby27-nokogiri-1.13.8 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
-ruby27-oauth-0.5.8  OAuth Core Ruby implementation
+ruby27-oauth-1.1.0  OAuth Core Ruby implementation
+ruby27-oauth-tty-1.0.3 OAuth 1.0 TTY CLI
 ruby27-pango-3.5.1  Ruby binding of pango-1.x
 ruby27-pkg-config-1.4.9 Pure Ruby implementation of pkg-config
 ruby27-pluggaloid-1.7.0 Extensible plugin system for mikutter
-ruby27-public_suffix-4.0.7 Domain name parser based on the Public Suffix List
+ruby27-public_suffix-5.0.0 Domain name parser based on the Public Suffix List
 ruby27-red-colors-0.3.0 Wide array of features for dealing with colors
 ruby27-simpleidn-0.2.1 Punycode ACE to unicode UTF-8 (and vice-verse) string conversion
+ruby27-snaky_hash-2.0.0 Hashie::Mash joint to make
 ruby27-text-1.3.1   Collection of text algorithms for Ruby
 ruby27-twitter-text-simpleidn-3.0.0.0 Forked version of Twitter-text gem without libIDN dependency
 ruby27-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 ruby27-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
-ruby27-unf_ext-0.0.8 Unicode Normalization Form support library for CRuby
+ruby27-unf_ext-0.0.8.2 Unicode Normalization Form support library for CRuby
+ruby27-version_gem-1.1.0 Sugar for Version modules
 shared-mime-info-1.10nb6 Core database of common types
 sudo-1.9.11p3       Allow others to run commands as root
 tcsh-6.24.01nb1     Extended C-shell with many useful features
