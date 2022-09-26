@@ -7,21 +7,21 @@ Subject: pinebook status update (${DATE})
 NetBSD Arm Bootable Images: NetBSD9/NetBSD-current
  https://nycdn.netbsd.org/pub/arm/
 
+Problem:
+ Boot: NetBSD-9.99.99-evbarm-aarch64-202208291550Z 
+ Boot stopped after module loading:
+       NetBSD-9.99.100-evbarm-aarch64-202209232300Z
+
 Update:
- g++-10.4.0
- gcc-10.4.0
- clang-13.0.1nb3
- firefox-102.0.1nb3
- gcc10-10.4.0
- libreoffice-7.3.3.2nb2
- llvm-13.0.1nb2
- mate-1.24.1nb2
- mlterm-3.9.2nb4
- nono-0.4.1
- nss-3.81
- perl-5.36.0
- python310-3.10.5nb1
- qmmp-1.5.1nb8
+ bind-9.16.33
+ firefox-104.0.2nb1
+ go-1.18.6
+ libreoffice-7.4.1.2
+ mlterm-3.9.2nb6
+ mpv-0.34.1nb10
+ python310-3.10.7
+ rust-1.62.1
+ samba-4.16.5
 
 Problems:
 - pinebook: 
@@ -126,69 +126,53 @@ ToDo:
 System Updates:
 
 sysinfo:
- netpgp-3.99.18 sh-20220122-20220829153919Z tzdata-2022c
+ bind-9.16.33 sh-20220122-20220923225815Z
+ userland-NetBSD-9.99.100/evbarm
 
 pkgsrc:
- SDL2-2.24.0nb1 SDL2_mixer-2.0.4nb10 amtk-5.0.2nb3 atril-1.24.1nb5
- audacious-plugins-4.1nb13 caja-1.24.1nb3 caja-dropbox-1.24.0nb6
- caja-extensions-1.24.1nb3 cbindgen-0.24.3 clang-14.0.6 cmake-3.24.1
- coreutils-9.1 curl-7.84.0nb2 deforaos-browser-0.5.5nb2
- deforaos-camera-0.3.0nb5 deforaos-editor-0.4.1nb5 deforaos-keyboard-0.4.0nb5
- deforaos-libdesktop-0.4.1nb2 deforaos-locker-0.4.2nb1 deforaos-mixer-0.4.1nb1
- deforaos-panel-0.4.3nb2 deforaos-pdfviewer-0.1.0nb15 deforaos-phone-0.6.0nb6
- desktop-file-utils-0.26nb2 double-conversion-3.2.1 dragonbox-1.1.3
- emacs26-26.3nb20 engrampa-1.24.2nb2 eom-1.24.2nb5 ffmpeg4-4.4.2nb3
- ffmpeg5-5.1nb1 file-roller-3.38.0nb2 firefox-103.0.2 firefox-l10n-103.0.2
- firefox52-52.9.0nb47 fltk-1.3.8nb1 fluidsynth-2.2.8nb1 fossil-2.19
- freeglut-3.2.2nb1 gcr-3.38.1nb4 gd-2.3.3nb4 gdbus-codegen-2.72.3
- gdl-3.34.0nb12 gedit-3.36.2nb11 gegl-0.4.38nb1 gimp-2.10.32nb3
- git-base-2.37.2 glib2-2.72.3 glib2-tools-2.72.3 gnome-keyring-3.36.0nb2
- gnutls-3.7.7 go-1.18.5 go117-1.17.13 go118-1.18.5 gpgme-1.18.0
- graphviz-5.0.0nb2 gspell-1.8.3nb11 gtk3+-3.24.34nb2 gtkmm3-3.24.5nb4
- gtksourceview3-3.24.11nb9 gtksourceview4-4.8.0nb6 gtkspell3-3.0.10nb7
- harfbuzz-5.1.0 harfbuzz-icu-5.1.0 ibus-1.5.26nb4 imlib2-1.9.1
- inkscape-1.2.1nb1 jasper-2.0.33nb2 ldb-2.5.2 libXaw3d-1.6.4
- libappindicator-12.10.0nb12 libbluray-1.3.2 libcanberra-0.30nb7
- libdazzle-3.38.0nb6 libdbusmenu-gtk3-12.10.2nb26
- libepoll-shim-0.0.20210418nb2 libfixmath-0.0.0pre20220623
- libgweather-40.0nb8 libhandy-1.5.91nb3 libindicator-12.10.1nb14
- libltdl-2.4.7 libmatekbd-1.24.1nb3 libmatemixer-1.24.0nb6
- libmateweather-1.24.1nb3 libmwaw-0.3.21 libnotify-0.7.12nb2
- libpeas-1.26.0nb4 libreoffice-7.4.0.3 libtool-base-2.4.7nb1
- libwebp-1.2.4 libwnck3-3.36.0nb2 libxfce4ui-4.16.1nb2 libxfce4util-4.16.0nb2
- lintpkgsrc-2022.08.13 llvm-14.0.6nb1 lz4-1.9.4 marco-1.24.2nb3
- mate-1.24.1nb3 mate-applets-1.24.1nb3 mate-backgrounds-1.24.2nb2
- mate-calc-1.24.2nb3 mate-common-1.24.2nb2 mate-control-center-1.24.2nb4
- mate-desktop-1.24.1nb2 mate-icon-theme-1.24.0nb4
- mate-icon-theme-faenza-1.20.0nb10 mate-indicator-applet-1.24.0nb4
- mate-media-1.24.1nb3 mate-menus-1.24.1nb2 mate-netbook-1.24.0nb4
- mate-notification-daemon-1.24.2nb3 mate-panel-1.24.2nb3 mate-polkit-1.24.0nb5
- mate-power-manager-1.24.3nb2 mate-screensaver-1.24.2nb3
- mate-sensors-applet-1.24.1nb2 mate-session-manager-1.24.3nb2
- mate-settings-daemon-1.24.2nb5 mate-terminal-1.24.1nb4 mate-themes-3.22.22nb2
- mate-utils-1.24.0nb4 meson-0.63.1 mkvtoolnix-70.0.0 mlterm-3.9.2nb5
- mozo-1.24.1nb3 mp4v2-5.0.1 mpv-0.34.1nb9 mupdf-1.20.0nb1 nettle-3.8.1
- nghttp2-1.49.0 nodejs-18.8.0 nspr-4.34.1 nss-3.82 openjdk8-1.8.342
- p5-IO-Socket-SSL-2.074 p5-Net-3.14 p5-Net-DNS-1.34 p5-Net-SSLeay-1.92
- pluma-1.24.2nb8 poppler-22.08.0 poppler-cpp-22.08.0 poppler-glib-22.08.0
- poppler-includes-22.08.0 poppler-utils-22.08.0 protobuf-3.21.5
- py27-libxml2-2.9.14 py310-cElementTree-3.10.6 py310-charset-normalizer-2.1.0
- py310-cython-0.29.32 py310-dns-2.2.1 py310-ecdsa-0.18.0 py310-expat-3.10.6
- py310-pip-22.2.2 py310-pygments-2.13.0 py310-pytz-2022.2.1
- py310-setuptools-63.4.3 py310-sqlite3-3.10.6nb22 py310-urllib3-1.26.12
- python27-2.7.18nb9 python310-3.10.6 qt5-qtbase-5.15.5nb2 rclone-1.58.1nb2
- rsync-3.2.5 ruby27-cairo-1.17.7 ruby27-gdk3-3.5.1nb1 ruby27-gtk3-3.5.1nb1
- ruby27-mikutter-5.0.4nb1 ruby27-nokogiri-1.13.8 ruby27-oauth-1.0.0
- ruby27-pkg-config-1.4.9 samba-4.16.4 scim-1.4.17nb4 scim-anthy-1.2.7nb36
- seamonkey-2.53.10nb6 tepl4-4.4.0nb6 tevent-0.13.0 tigervnc-1.12.0.1.20.13nb4
- uim-1.8.9pre20210104nb4 vte3-0.68.0nb6 wayland-1.21.0
- wayland-protocols-1.26nb1 wxGTK30-3.0.5.1nb8 xfce4-appfinder-4.16.1nb2
- xfce4-conf-4.16.0nb3 xfce4-desktop-4.16.1 xfce4-exo-4.16.4nb2
- xfce4-garcon-4.16.1nb2 xfce4-mousepad-0.5.10nb1 xfce4-orage-4.16.0nb3
- xfce4-panel-4.16.5 xfce4-session-4.16.0nb4 xfce4-settings-4.16.3nb1
- xfce4-terminal-1.0.4nb1 xfce4-thunar-4.16.11nb1 xfce4-tumbler-4.16.1
- xfce4-wm-4.16.1nb2 xfce4-wm-themes-4.10.0nb18 xnp2-0.86nb15
- zenity-3.41.0nb3 zxing-cpp-1.4.0
+ SDL-1.2.15nb40 SDL2-2.24.0nb2 SDL2_mixer-2.0.4nb11 SDL_mixer-1.2.12nb7
+ audacious-plugins-4.1nb14 babl-0.1.96 boehm-gc-8.2.2 cmus-2.9.1nb9
+ curl-7.85.0 exiv2-0.27.5nb1 ffmpeg2-2.8.20nb3 ffmpeg3-3.4.11nb3
+ ffmpeg4-4.4.2nb4 ffmpeg5-5.1.1nb1 firefox-104.0.2nb1
+ firefox-l10n-104.0.2 firefox52-52.9.0nb48 flac-1.4.0
+ fluidsynth-2.2.9 gawk-5.2.0 gdk-pixbuf2-2.42.9 gegl-0.4.38nb2
+ gexiv2-0.14.0nb1 git-base-2.37.3 gnupg2-2.2.37 go-1.18.6
+ go118-1.18.6 hunspell-1.7.1 ibus-1.5.27 ladspa-1.17nb2
+ lame-3.100nb4 libXft-2.3.6 libatomic_ops-7.6.14 libheif-1.13.0
+ libmikmod-3.3.11.1nb11 libreoffice-7.4.1.2 libsamplerate-0.2.2nb2
+ libsndfile-1.1.0nb2 libtasn1-4.19.0 libxslt-1.1.34nb10
+ lintpkgsrc-2022.09.14 mate-settings-daemon-1.24.2nb6
+ mate-terminal-1.26.0 meson-0.63.2 mkvtoolnix-70.0.0nb1
+ mlterm-3.9.2nb6 mpv-0.34.1nb10 mujs-1.2.0 mupdf-1.20.0nb2
+ neon-0.32.4 netpbm-10.86.34 nginx-1.22.0nb6 ninja-build-1.11.1
+ nspr-4.35 nss-3.83 openal-soft-1.22.2nb1 pcre2-10.40nb1
+ phonon-4.10.3nb12 pinentry-1.2.1 pkgin-22.9.0 poppler-22.09.0
+ poppler-cpp-22.09.0 poppler-glib-22.09.0 poppler-includes-22.09.0
+ poppler-utils-22.09.0 portaudio-190600.20161030nb12 pulseaudio-16.1nb1
+ py310-OpenSSL-22.0.0 py310-cElementTree-3.10.7
+ py310-charset-normalizer-2.1.1 py310-cryptography-38.0.1
+ py310-expat-3.10.7 py310-imagesize-1.4.1 py310-importlib-metadata-4.12.0
+ py310-more-itertools-8.14.0 py310-numpy-1.23.3 py310-sqlite3-3.10.7nb22
+ py310-zipp-3.8.1 py39-libxml2-2.9.14 python310-3.10.7
+ python37-3.7.14 python38-3.8.14 python39-3.9.14 qmmp-1.5.1nb9
+ qt5-qtbase-5.15.6 qt5-qtdeclarative-5.15.6 qt5-qtlocation-5.15.6
+ qt5-qtmultimedia-5.15.6 qt5-qtsensors-5.15.6 qt5-qtserialport-5.15.6
+ qt5-qtsvg-5.15.6 qt5-qttools-5.15.6 qt5-qtwebchannel-5.15.6
+ qt5-qtwebsockets-5.15.6 qt5-qtx11extras-5.15.6 qt5-qtxmlpatterns-5.15.6
+ rclone-1.58.1nb3 rsync-3.2.6 ruby27-addressable-2.8.1
+ ruby27-cairo-1.17.8 ruby27-hashie-4.1.0
+ ruby27-native-package-installer-1.1.5 ruby27-oauth-1.1.0
+ ruby27-oauth-tty-1.0.3 ruby27-public_suffix-5.0.0 ruby27-snaky_hash-2.0.0
+ ruby27-unf_ext-0.0.8.2 ruby27-version_gem-1.1.0 rust-1.62.1
+ samba-4.16.5 seamonkey-2.53.13nb1 seamonkey-l10n-2.53.13
+ sqlite3-3.39.3 tex-amsmath-2.17n tex-babel-3.79 tex-colortbl-1.0f
+ tex-fancyvrb-4.5 tex-graphics-1.4e tex-hypdoc-1.17
+ tex-hyperref-7.00s tex-kvoptions-3.15 tex-l3backend-2022
+ tex-l3kernel-2022 tex-l3packages-2022 tex-latex-20220601.5nb1
+ tex-latex-base-dev-20221101pre1nb1 tex-luaotfload-3.22
+ tex-rerunfilecheck-1.10 tex-tools-2022 vala-0.56.3
+ vorbis-tools-1.4.2nb4 vte3-0.68.0nb7 xfce4-session-4.16.0nb5
+ xnp2-0.86nb16
 
 System Updates:
  https://github.com/ebijun/NetBSD/commit/7f58ddcde0b04631e3c656899cf6dd6a8aa51408
