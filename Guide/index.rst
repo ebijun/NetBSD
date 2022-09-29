@@ -23,6 +23,7 @@
  :maxdepth: 3
  :numbered:
 
+ Place/hiroshima
  RPI/RPIupdate2022
  RPI
  Luna

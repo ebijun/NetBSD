@@ -668,6 +668,7 @@ LUNA年表　- 月の刃
  2022/6,井,nono-0.4.0リリース NetBSD/x68kブート
  2022/7,井,nono-0.4.1リリース [185]_
  2022/7,筒,NetBSD/luna88k シングルユーザブート [184]_
+ 2022/9,井,lunafb(4) improvement [186]_
  
 最近のLUNA
 ----------------
@@ -919,6 +920,7 @@ yaft X LUNA
 .. [183] http://mail-index.netbsd.org/source-changes/2022/06/10/msg139155.html
 .. [184] https://twitter.com/tsutsuii/status/1551955355101691904
 .. [185] https://twitter.com/isaki68k/status/1551020192037097473
+.. [186] http://mail-index.netbsd.org/source-changes/2022/09/25/msg141239.html
 
 このページ
 ~~~~~~~~~~~

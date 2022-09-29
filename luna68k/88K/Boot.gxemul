@@ -1,10 +1,10 @@
-IMAGE=liveimage-luna88k-raw-20220828.img
+IMAGE=liveimage-luna88k-raw-20220926.img
 
 ifconfig tap0 create
 ifconfig tap0 192.168.7.1
 
-KERNEL=bsd.mp
-#KERNEL=bsd.rd
+#KERNEL=bsd.mp
+KERNEL=bsd.rd
 TAP="-L /dev/tap0"
 #X=-X
 
