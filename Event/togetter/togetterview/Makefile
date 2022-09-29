@@ -9,7 +9,10 @@ view.csv:
 	./togetterview.rb 8 |fgrep -vf Pattern >> a.csv
 	./togetterview.rb 9 |fgrep -vf Pattern >> a.csv
 	./togetterview.rb 10 |fgrep -vf Pattern >> a.csv
-	grep -v ",/hot," a.csv > b.csv
-	grep -v ",/ranking," b.csv > view.csv
+	./togetterview.rb 11 |fgrep -vf Pattern >> a.csv
+	./togetterview.rb 12 |fgrep -vf Pattern >> a.csv
+	mv a.csv view.csv
+	tail -3 view.csv
+
 copy:
 	cp view.csv ..
