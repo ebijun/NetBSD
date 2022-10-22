@@ -1,40 +1,28 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20220924)
+Subject: apple m1 status update (20221023)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Topics:
 - X
- startx failed
- Backtrace:
-[   461.163] ioctl FBIOGETCMAP: Invalid argument
-[   461.163] ioctl FBIOPUTCMAP: Invalid argument
-[   461.163] (EE) 
-[   461.163] (EE) Backtrace:
-[   461.195] (EE) 0: /usr/X11R7/bin/X (xorg_backtrace+0x3c) [0xa423c8c]
-[   461.195] (EE) 1: /usr/X11R7/bin/X (os_move_fd+0x78) [0xa41e5f8]
-[   461.195] (EE) 2: /usr/lib/libc.so.12 (__sigtramp_siginfo_2+0x0) [0xfe9f99dcd488]
-[   461.195] (EE) 
-[   461.195] (EE) Bus error at address 0xc3c3c3c3c2c2c2c2
-[   461.195] (EE) 
-Fatal server error:
-[   461.195] (EE) Caught signal 10 (Bus error). Server aborting
+ startx but colormap
+  https://twitter.com/ebijun/status/1583622834990956545
  
  startx -- -depth 30
- http://mail-index.netbsd.org/port-arm/2021/10/21/msg007458.html
- https://twitter.com/ebijun/status/1480042814704873473
+  http://mail-index.netbsd.org/port-arm/2021/10/21/msg007458.html
+  https://twitter.com/ebijun/status/1480042814704873473
 
 Hardware:
  Apple Mac mini M1 2020 A2348 
  USB SSD 512GB BUFFALO SSD-PGM2.0U3-BC
 
 Filesystem   1M-blocks      Used     Avail %Cap Mounted on
-/dev/dk6        480587    289787    166770  63% /
+/dev/dk6        480587    349668    106889  76% /
 /dev/dk5            79        34        44  43% /boot
 ptyfs                0         0         0 100% /dev/pts
 procfs               0         0         0 100% /proc
-tmpfs             1913         0      1913   0% /var/shm
+tmpfs             1913        64      1849   3% /var/shm
 
 ToDo:
 - audio
@@ -48,55 +36,106 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- NetBSD-9.99.100 netpgp-3.99.18 sh-20220122-20220922210046Z
- userland-NetBSD-9.99.100/evbarm
+ bind-9.16.33 libssh-44.0 NetBSD-9.99.101 netpgp-3.99.18
+ ntp-4.2.8pl15 openssh-9.1 opensshd-9.1
+ sh-20220122-20221019223410Z tzdata-2022e
+ unbound-1.16.3 userland-NetBSD-9.99.101/evbarm
 
 pkgsrc:
- SDL-1.2.15nb40 SDL2-2.24.0nb2 SDL2_mixer-2.0.4nb11 SDL_mixer-1.2.12nb7
- babl-0.1.96 boehm-gc-8.2.2 curl-7.85.0 deforaos-libdatabase-0.1.0
- exiv2-0.27.5nb1 ffmpeg4-4.4.2nb4 ffmpeg5-5.1.1nb1 firefox-104.0.2nb1
- firefox-l10n-104.0.2 flac-1.4.0 fluidsynth-2.2.9 freerdp2-2.3.2nb7
- gawk-5.2.0 gdk-pixbuf2-2.42.9 gegl-0.4.38nb2 gexiv2-0.14.0nb1
- ghc-9.2.1nb3 git-base-2.37.3 gnupg2-2.2.37 gst-plugins1-good-1.20.3nb2
+ ImageMagick-7.1.0.50 SDL-1.2.15nb40 SDL2-2.24.0nb2
+ SDL2_mixer-2.0.4nb11 SDL_mixer-1.2.12nb7 abseil-20220623.1
+ ap24-php74-7.4.32nb8 babl-0.1.96 bash-5.2.2
+ boehm-gc-8.2.2 cairo-1.16.0nb7 cairomm-1.14.4
+ cmake-3.24.2nb1 curl-7.85.0 dbus-1.14.4
+ deforaos-libdatabase-0.1.0 elementary-xfce-icon-theme-0.17nb1
+ exiv2-0.27.5nb1 ffmpeg4-4.4.3 ffmpeg5-5.1.2 ffmpegthumbnailer-2.2.2nb3
+ firefox-105.0.3 firefox-l10n-105.0.3 flac-1.4.1
+ fluidsynth-2.3.0 fmtlib-9.1.0 freerdp2-2.3.2nb8
+ gawk-5.2.0 gdbus-codegen-2.72.4 gdk-pixbuf2-2.42.9
+ gegl-0.4.38nb2 gexiv2-0.14.0nb1 ghc-9.2.1nb3 git-base-2.38.1
+ glib2-2.72.4 glib2-tools-2.72.4 glibmm-2.66.5
+ gnupg2-2.2.40 gnutls-3.7.8 graphviz-6.0.2
+ gst-plugins1-good-1.20.3nb2 harfbuzz-5.2.0 harfbuzz-icu-5.2.0
  hs-attoparsec-0.14.4nb2 hs-base-compat-0.12.2
  hs-base-compat-batteries-0.12.2 hs-fail-4.9.0.0nb4 hs-hashable-1.4.1.0
  hs-integer-logarithms-1.0.3.1nb5 hs-primitive-0.7.4.0
- hs-scientific-0.3.7.0nb2 hs-th-abstraction-0.4.4.0 hunspell-1.7.1
- ladspa-1.17nb2 lame-3.100nb4 libXaw3d-1.6.4 libatomic_ops-7.6.14
- libheif-1.13.0 libmikmod-3.3.11.1nb11 libreoffice-7.4.1.2
- libsamplerate-0.2.2nb2 libsndfile-1.1.0nb2 libtasn1-4.19.0
- libxslt-1.1.34nb10 lintpkgsrc-2022.09.14 mate-1.24.1nb3
- mate-settings-daemon-1.24.2nb6 mate-terminal-1.26.0 meson-0.63.2
- mlterm-3.9.2nb6 mplayer-share-1.5nb2 mpv-0.34.1nb10
- neon-0.32.4 netpbm-10.86.34 nginx-1.22.0nb6 ninja-build-1.11.1
- nono-0.4.3 nspr-4.35 nss-3.83 openal-soft-1.22.2nb1
+ hs-scientific-0.3.7.0nb2 hs-th-abstraction-0.4.4.0
+ hunspell-1.7.1 iso-codes-4.11.0 ladspa-1.17nb2 lame-3.100nb4
+ libXaw3d-1.6.4 libaom-3.5.0 libatomic_ops-7.6.14 libbluray-1.3.3
+ libcups-2.4.2nb2 libebml-1.4.4 libffi-3.4.3 libgpg-error-1.46
+ libheif-1.13.0 libksba-1.6.2 libmatroska-1.7.1 libmikmod-3.3.11.1nb11
+ libreoffice-7.4.1.2 libsamplerate-0.2.2nb2 libsndfile-1.1.0nb2
+ libtasn1-4.19.0 libusb1-1.0.26 libxslt-1.1.37 lintpkgsrc-2022.09.29
+ mate-1.24.1nb3 mate-settings-daemon-1.24.2nb6 mate-terminal-1.26.0
+ meson-0.63.3 mktools-20220614 mlterm-3.9.2nb6 mplayer-share-1.5nb3
+ mpv-0.34.1nb10 neon-0.32.4 netpbm-10.86.34 nghttp2-1.50.0
+ nginx-1.22.1 ninja-build-1.11.1 nono-0.4.3 nspr-4.35
+ nss-3.84 openal-soft-1.22.2nb1 osabi-NetBSD-9.99.101
+ p5-Authen-SASL-2.16nb11 p5-DateTime-TimeZone-2.54 p5-Email-Valid-1.203
  p5-Finance-Quote-1.49nb2 p5-HTML-Parser-3.78 p5-HTTP-Message-6.37
- pcre2-10.40nb1 pcsc-lite-1.9.9 pinentry-1.2.1 pkgin-22.9.0
- poppler-22.09.0 poppler-cpp-22.09.0 poppler-glib-22.09.0
- pulseaudio-16.1nb1 py310-OpenSSL-22.0.0 py310-cElementTree-3.10.7
+ p5-JSON-Parse-0.62 p5-Specio-0.48 p5-Test-Warn-0.37
+ p5-Test2-Suite-0.000145 p5-Try-Tiny-0.31 pango-1.50.11
+ pcre2-10.40nb1 pcsc-lite-1.9.9 php-7.4.32 php74-curl-7.4.32nb12
+ php74-fpm-7.4.32nb9 php74-gd-7.4.32nb2 php74-iconv-7.4.32
+ php74-intl-7.4.32nb8 php74-json-7.4.32 php74-mbstring-7.4.32
+ php74-mysqli-7.4.32nb2 php74-pdo-7.4.32 php74-pdo_sqlite-7.4.32nb8
+ php74-posix-7.4.32 php74-sodium-7.4.32 php74-sqlite3-7.4.32nb8
+ php74-zip-7.4.32nb7 php74-zlib-7.4.32nb1 pinentry-1.2.1
+ pkgin-22.10.0 png-1.6.38 poppler-22.10.0 poppler-cpp-22.10.0
+ poppler-glib-22.10.0 popt-1.19 postgresql14-client-14.5nb1
+ protobuf-3.21.7 pulseaudio-16.1nb1 py27-gobject-2.28.7nb4
+ py310-OpenSSL-22.1.0 py310-cElementTree-3.10.8
  py310-charset-normalizer-2.1.1 py310-cryptography-38.0.1
- py310-expat-3.10.7 py310-imagesize-1.4.1 py310-readline-3.10.7
- py310-sqlite3-3.10.7nb22 python310-3.10.7 python37-3.7.14
- python38-3.8.14 python39-3.9.14 qmmp-1.5.1nb9 qt5-qtbase-5.15.6
- qt5-qtdeclarative-5.15.6 qt5-qtlocation-5.15.6 qt5-qtmultimedia-5.15.6
+ py310-expat-3.10.8 py310-imagesize-1.4.1 py310-pytz-2022.4
+ py310-readline-3.10.8 py310-setuptools-65.4.1
+ py310-setuptools-rust-1.5.2 py310-setuptools_scm-7.0.5nb1
+ py310-sqlite3-3.10.8nb22 py310-typing-extensions-4.4.0
+ python310-3.10.8 python37-3.7.15 python38-3.8.15 python39-3.9.15
+ qmmp-1.5.1nb10 qt5-qtbase-5.15.6 qt5-qtdeclarative-5.15.6
+ qt5-qtlocation-5.15.6 qt5-qtmultimedia-5.15.6
  qt5-qtsensors-5.15.6 qt5-qtserialport-5.15.6 qt5-qtsvg-5.15.6
  qt5-qttools-5.15.6 qt5-qtwebchannel-5.15.6 qt5-qtwebsockets-5.15.6
- qt5-qtx11extras-5.15.6 qt5-qtxmlpatterns-5.15.6 rsync-3.2.6
- ruby27-addressable-2.8.1 ruby27-cairo-1.17.8 ruby27-hashie-4.1.0
- ruby27-native-package-installer-1.1.5 ruby27-oauth-1.1.0
- ruby27-oauth-tty-1.0.3 ruby27-public_suffix-5.0.0 ruby27-snaky_hash-2.0.0
- ruby27-unf_ext-0.0.8.2 ruby27-version_gem-1.1.0 rust-1.62.1
- samba-4.16.5 seamonkey-2.53.13nb1 seamonkey-l10n-2.53.13
- sqlite3-3.39.3 tex-amsmath-2.17n tex-babel-3.79 tex-colortbl-1.0f
+ qt5-qtx11extras-5.15.6 qt5-qtxmlpatterns-5.15.6 readline-8.2
+ rsync-3.2.6 ruby27-addressable-2.8.1 ruby27-cairo-1.17.8
+ ruby27-hashie-4.1.0 ruby27-native-package-installer-1.1.5
+ ruby27-oauth-1.1.0 ruby27-oauth-tty-1.0.5 ruby27-public_suffix-5.0.0
+ ruby27-red-datasets-0.1.5 ruby27-snaky_hash-2.0.1
+ ruby27-unf_ext-0.0.8.2 ruby27-version_gem-1.1.1
+ ruby31-addressable-2.8.1 ruby31-atk-3.5.1 ruby31-base-3.1.2nb3
+ ruby31-bsearch-1.5nb2 ruby31-cairo-1.17.8 ruby31-cairo-gobject-3.5.1
+ ruby31-delayer-1.2.1 ruby31-delayer-deferred-2.2.0
+ ruby31-diva-2.0.1 ruby31-gdk3-3.5.1nb1 ruby31-gdk_pixbuf2-3.5.1
+ ruby31-gettext-3.4.1 ruby31-gio2-3.5.1 ruby31-glib2-3.5.1
+ ruby31-gobject-introspection-3.5.1 ruby31-gtk3-3.5.1nb1
+ ruby31-hashie-4.1.0 ruby31-hmac-0.4.0 ruby31-httpclient-2.8.3nb1
+ ruby31-instance_storage-1.0.0 ruby31-json-pure-2.5.1
+ ruby31-locale-2.1.3 ruby31-memoist-0.16.2 ruby31-mikutter-5.0.4nb1
+ ruby31-mikutter-plugins-twitter-5.0nb1 ruby31-mini_portile2-2.8.0
+ ruby31-moneta-1.5.1 ruby31-native-package-installer-1.1.5
+ ruby31-nokogiri-1.13.8 ruby31-oauth-1.1.0 ruby31-oauth-tty-1.0.5
+ ruby31-pango-3.5.1 ruby31-pkg-config-1.4.9 ruby31-pluggaloid-1.7.0
+ ruby31-public_suffix-5.0.0 ruby31-rdtool-0.6.38nb2
+ ruby31-red-colors-0.3.0 ruby31-red-datasets-0.1.5
+ ruby31-setup-3.4.1nb1 ruby31-simpleidn-0.2.1 ruby31-snaky_hash-2.0.1
+ ruby31-text-1.3.1 ruby31-twitter-text-simpleidn-3.0.0.0
+ ruby31-typed-array-0.1.2 ruby31-unf-0.1.4 ruby31-unf_ext-0.0.8.2
+ ruby31-version_gem-1.1.1 ruby31-zip-2.3.2 rust-1.63.0
+ samba-4.16.5 seamonkey-2.53.13nb2 seamonkey-l10n-2.53.13
+ shared-mime-info-2.2 spdlog-1.10.0nb1 sqlite3-3.39.4
+ tex-amsmath-2.17n tex-babel-3.79 tex-colortbl-1.0f
  tex-fancyvrb-4.5 tex-firstaid-1.0r tex-graphics-1.4e
  tex-hypdoc-1.17 tex-hyperref-7.00s tex-kvoptions-3.15
  tex-l3backend-2022 tex-l3kernel-2022 tex-l3packages-2022
- tex-latex-20220601.5nb1 tex-rerunfilecheck-1.10 tex-tools-2022
- vala-0.56.3 vorbis-tools-1.4.2nb4 vte3-0.68.0nb7
- xfce4-4.16.0nb7 xfce4-session-4.16.0nb5 xnp2-0.86nb16
+ tex-latex-20220601.5nb1 tex-rerunfilecheck-1.10
+ tex-tools-2022 vala-0.56.3 vorbis-tools-1.4.2nb4
+ vte3-0.68.0nb7 w3m-0.5.3.0.20220429nb1 x264-20220601
+ xcb-util-cursor-0.1.4 xcb-util-image-0.4.1 xcb-util-keysyms-0.4.1
+ xcb-util-renderutil-0.3.10 xcb-util-wm-0.4.2 xfce4-4.16.0nb8
+ xfce4-session-4.16.0nb5 xkeyboard-config-2.37 xnp2-0.86nb16
+ xscreensaver-6.05.1 xterm-374
 
 Version: 
- NetBSD 9.99.100 (GENERIC64) #0: Thu Sep 22 21:00:46 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.101 (GENERIC64) #0: Wed Oct 19 22:34:10 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
