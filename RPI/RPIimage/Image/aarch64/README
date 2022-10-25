@@ -1,38 +1,26 @@
-VERSION: :1,$s/2022-09-24/2022-09-24/g
-ISO:     :1,$s/202209231300Z/202209231300Z/g
-NetBSD:  :1,$s/9.99.100/9.99.100/g
+VERSION: :1,$s/2022-10-25/2022-10-25/g
+ISO:     :1,$s/202210240520Z/202210240520Z/g
+NetBSD:  :1,$s/9.99.101/9.99.101/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-09-24-netbsd-raspi-aarch64.img
+Subject: 2022-10-25-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-09-24-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2022-10-25-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-09-24-aarch64/2022-09-24-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-09-24-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-10-25-aarch64/2022-10-25-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-10-25-aarch64/MD5
 
 Topics:
-- NetBSD-9.99.100
-
-- openssh 9.0 https://www.openssh.com/txt/release-9.0
-
-"This release switches scp(1) from using the legacy scp/rcp protocol
-to using the SFTP protocol by default."
-"In case of incompatibility, the scp(1) client may be instructed to use
-the legacy scp/rcp using the -O flag."
-
-cf.
-  ~/.ssh/config
-  Host old-host
-        HostkeyAlgorithms +ssh-rsa
-        PubkeyAcceptedAlgorithms +ssh-rsa
-
+- NetBSD-9.99.101
+- openssh 9.1
+- ruby 3.1
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
-  http://mail-index.netbsd.org/port-arm/2021/08/08/msg007393.html
+ http://mail-index.netbsd.org/port-arm/2021/08/08/msg007393.html
   the Arasan SDHCI is used to connect bwfm(4). 
 
 In this image, a synbolic link added
@@ -57,19 +45,36 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- bind-9.16.33 NetBSD-9.99.100 sh-20220122-202209231235Z
- userland-NetBSD-9.99.100/evbarm
+ bind-9.16.33 libssh-44.0 NetBSD-9.99.101 ntp-4.2.8pl15
+ openssh-9.1 opensshd-9.1 sh-20220122-20221024050450Z
+ tzdata-2022e unbound-1.16.3 userland-NetBSD-9.99.101/evbarm
 
 pkgsrc:
- curl-7.85.0 gdk-pixbuf2-2.42.9 git-base-2.37.3 libtasn1-4.19.0
- libxslt-1.1.34nb10 lintpkgsrc-2022.09.14 mlterm-3.9.2nb6
- pcre2-10.40nb1 pkgin-22.9.0 py310-cElementTree-3.10.7
- py310-expat-3.10.7 python310-3.10.7 qt5-qtbase-5.15.6
- qt5-qtx11extras-5.15.6 qt5-qtxmlpatterns-5.15.6 ruby27-addressable-2.8.1
- ruby27-cairo-1.17.8 ruby27-hashie-4.1.0
- ruby27-native-package-installer-1.1.5 ruby27-oauth-1.1.0
- ruby27-oauth-tty-1.0.3 ruby27-public_suffix-5.0.0 ruby27-snaky_hash-2.0.0
- ruby27-unf_ext-0.0.8.2 ruby27-version_gem-1.1.0
+ bash-5.2.2 cairo-1.16.0nb7 curl-7.85.0 dbus-1.14.4 gdk-pixbuf2-2.42.9
+ git-base-2.38.1nb1 glib2-2.72.4 gnutls-3.7.8 harfbuzz-5.2.0
+ libcups-2.4.2nb2 libffi-3.4.4 libgpg-error-1.46 libtasn1-4.19.0
+ libxslt-1.1.37 lintpkgsrc-2022.09.29 mlterm-3.9.2nb6
+ nghttp2-1.50.0 p5-Authen-SASL-2.16nb11 p5-Email-Valid-1.203
+ pango-1.50.11 pcre2-10.40nb1 pkgin-22.10.0 png-1.6.38
+ py310-cElementTree-3.10.8 py310-expat-3.10.8 python310-3.10.8
+ qt5-qtbase-5.15.6 qt5-qtx11extras-5.15.6 qt5-qtxmlpatterns-5.15.6
+ ruby31-addressable-2.8.1 ruby31-atk-3.5.1 ruby31-base-3.1.2nb3
+ ruby31-cairo-1.17.8 ruby31-cairo-gobject-3.5.1 ruby31-delayer-1.2.1
+ ruby31-delayer-deferred-2.2.0 ruby31-diva-2.0.1 ruby31-gdk3-3.5.1nb1
+ ruby31-gdk_pixbuf2-3.5.1 ruby31-gettext-3.4.1 ruby31-gio2-3.5.1
+ ruby31-glib2-3.5.1 ruby31-gobject-introspection-3.5.1
+ ruby31-gtk3-3.5.1nb1 ruby31-hashie-4.1.0 ruby31-httpclient-2.8.3nb1
+ ruby31-instance_storage-1.0.0 ruby31-locale-2.1.3 ruby31-memoist-0.16.2
+ ruby31-mikutter-5.0.4nb1 ruby31-mikutter-plugins-twitter-5.0nb1
+ ruby31-mini_portile2-2.8.0 ruby31-moneta-1.5.1
+ ruby31-native-package-installer-1.1.5 ruby31-nokogiri-1.13.8
+ ruby31-oauth-1.1.0 ruby31-oauth-tty-1.0.5 ruby31-pango-3.5.1
+ ruby31-pkg-config-1.4.9 ruby31-pluggaloid-1.7.0 ruby31-public_suffix-5.0.0
+ ruby31-red-colors-0.3.0 ruby31-simpleidn-0.2.1 ruby31-snaky_hash-2.0.1
+ ruby31-text-1.3.1 ruby31-twitter-text-simpleidn-3.0.0.0
+ ruby31-typed-array-0.1.2 ruby31-unf-0.1.4 ruby31-unf_ext-0.0.8.2
+ ruby31-version_gem-1.1.1 shared-mime-info-2.2 xcb-util-image-0.4.1
+ xcb-util-keysyms-0.4.1 xcb-util-renderutil-0.3.10 xcb-util-wm-0.4.2nb1
 
 RPI4 status:
 - boot via UEFI_VER=v1.33
@@ -89,7 +94,7 @@ In this image,pre-setted RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.100 evbarm-aarch64 202209231300Z arm64.img from nyftp.
+- NetBSD-current 9.99.101 evbarm-aarch64 202210240520Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
