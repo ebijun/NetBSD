@@ -76,8 +76,7 @@ commit
  
  m68k(Fix): "Implement case level 0 and level 7 of PTESTR/PTESTW instructions."
  m68k(Fix): "Fix match behavior when R/W bit are set on TT0/1 registers."      
- m68k(Fix): "Fix that an application becomes inoperable on double bus fault in V
-M."                                                                    
+ m68k(Fix): "Fix that an application becomes inoperable on double bus fault in VM."                                                                    
  m88k(Fix): "Improve pseudo STOP behaviors."                        
  vm(Update): "Implement GETC/PUTC routines on LUNA-88K's internal PROM."        
  vm(New): "Support NWS-1750. It's just a joke." 
