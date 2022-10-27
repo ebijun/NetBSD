@@ -4,11 +4,6 @@ Subject: pinebook status update (20221027)
 NetBSD Arm Bootable Images: NetBSD9/NetBSD-current
  https://nycdn.netbsd.org/pub/arm/
 
-Problem:
-X Boot: NetBSD-9.99.99-evbarm-aarch64-202208291550Z 
-X Boot stopped after module loading:
-X       NetBSD-9.99.100-evbarm-aarch64-202209232300Z
-X
 Update:
  bind-9.16.33
  openssh-9.1
@@ -198,8 +193,7 @@ pkgsrc:
  xterm-374
 
 System Updates:
- https://github.com/ebijun/NetBSD/commit/7f58ddcde0b04631e3c656899cf6dd6a8aa51408
- https://github.com/ebijun/NetBSD/commit/1a7a7b71a209c35149f05d4cf5552f75b72af9a1
+https://github.com/ebijun/NetBSD/commit/2e07db8ce05b7f8dc77b266b9ba98a7cc8dfd170
 
 Tips:
 - System Clocks
