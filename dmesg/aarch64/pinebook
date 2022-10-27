@@ -5,10 +5,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.99 (GENERIC64) #0: Tue Jul 26 20:08:56 UTC 2022
+NetBSD 9.99.102 (GENERIC64) #0: Tue Oct 25 08:07:07 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 2020 MB
-avail memory = 1949 MB
+avail memory = 1946 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 armfdt0 (root)
@@ -194,9 +194,9 @@ gpiokeys0 at simplebus0: Lid Switch
 sunxidrm0: autoconfiguration error: failed to activate endpoint: 19
 sunxidrm0: reserved 39 MB DRAM for CMA (7 MB reclaimed from bootloader)
 sunxifb0 at sunxidrm0
-kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
-kern info: [drm] No driver support for vblank timestamp query.
-kern info: [drm] Initialized sunxi 1.0.0 20190123 for sunxidrm0 on minor 0
+[drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[drm] No driver support for vblank timestamp query.
+[drm] Initialized sunxi 1.0.0 20190123 for sunxidrm0 on minor 0
 sunxidrm0: initialized sunxi 1.0.0 20190123 on minor 0
 sunxifb0: framebuffer at 0xbe000000, size 1920x1080, depth 32, stride 7680
 wsdisplay0 at sunxifb0 kbdmux 1: console (default, vt100 emulation)
@@ -210,29 +210,29 @@ sdmmc0 at sunximmc0
 sdmmc1 at sunximmc1
 sdmmc2 at sunximmc2
 Lid Switch: lid opened.
-uhub0 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub0 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-uhub1 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub1 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub1: 1 port with 1 removable, self powered
-uhub2 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub2 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub2: 1 port with 1 removable, self powered
-uhub3 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+WARNING: system needs entropy for security; see entropy(7)
+uhub3 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub3: 1 port with 1 removable, self powered
 IPsec: Initialized Security Association Processing.
 aes: ARMv8.0-AES
 chacha: ARM NEON ChaCha
-WARNING: system needs entropy for security; see entropy(7)
 sdmmc1: 4-bit width, 50.000 MHz
 (manufacturer 0x24c, product 0xb703, standard function interface code 0x7) at sdmmc1 function 1 not configured
-sdmmc0: SD card status: 4-bit, C10, U1
-ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x62302b67:0x107>
-ld0: 60927 MB, 7767 cyl, 255 head, 63 sec, 512 bytes/sect x 124778496 sectors
 sdmmc2: autoconfiguration error: switch error
 ld2 at sdmmc2: <0x45:0x0100:DA4064:0x00:0xdb1fd106:0x000>
 ld2: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
-ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+sdmmc0: SD card status: 4-bit, C10, U1
+ld0 at sdmmc0: <0x74:0x4a60:USDU1:0x20:0x62302b67:0x107>
+ld0: 60927 MB, 7767 cyl, 255 head, 63 sec, 512 bytes/sect x 124778496 sectors
 ld2: 8-bit width, 4096 KB cache, 52.000 MHz
-uhub4 at uhub1 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/88.32, addr 2
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
+uhub4 at uhub0 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/88.32, addr 2
 uhub4: single transaction translator
 uhub4: 4 ports with 1 removable, self powered
 uhidev0 at uhub4 port 1 configuration 1 interface 0
@@ -255,17 +255,12 @@ urtwn0: MAC/BB RTL8188CUS, RF 6052 1T1R, address 34:76:c5:b3:9c:b6
 urtwn0: 1 rx pipe, 2 tx pipes
 uvideo0 at uhub4 port 3 configuration 1 interface 0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 5
 video0 at uvideo0: Generic (0x1908) USB2.0 PC CAMERA (0x2311), rev 2.00/1.00, addr 5
+swwdog0: software watchdog initialized
 WARNING: 7 errors while detecting hardware; check system log.
 boot device: ld2
 root on ld2a dumps on ld2b
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.99/modules
+kern.module.path=/stand/evbarm/9.99.102/modules
 entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
 axppmic0: normal capacity on 'charge state'
-umass0 at uhub3 port 1 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 2
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
