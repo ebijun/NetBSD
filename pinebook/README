@@ -1,32 +1,35 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20220926)
+Subject: pinebook status update (20221027)
 
 NetBSD Arm Bootable Images: NetBSD9/NetBSD-current
  https://nycdn.netbsd.org/pub/arm/
 
 Problem:
- Boot: NetBSD-9.99.99-evbarm-aarch64-202208291550Z 
- Boot stopped after module loading:
-       NetBSD-9.99.100-evbarm-aarch64-202209232300Z
-
+X Boot: NetBSD-9.99.99-evbarm-aarch64-202208291550Z 
+X Boot stopped after module loading:
+X       NetBSD-9.99.100-evbarm-aarch64-202209232300Z
+X
 Update:
  bind-9.16.33
- firefox-104.0.2nb1
- go-1.18.6
+ openssh-9.1
+ firefox-105.0.3
+ go-1.19.2
  libreoffice-7.4.1.2
  mlterm-3.9.2nb6
- mpv-0.34.1nb10
- python310-3.10.7
- rust-1.62.1
- samba-4.16.5
-
+ php-7.4.32
+ python310-3.10.8
+ rust-1.63.0
+ 
 Problems:
 - pinebook: 
   Can't see audio interface.aiomixer do nothing.
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57030
   dmesg diff:
    https://github.com/ebijun/NetBSD/commit/7f58ddcde0b04631e3c656899cf6dd6a8aa51408
+  
 - pinebook pro
   on X, Can't move mouse cursor,keeping left side of screen.
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57031
   dmesg diff:
    https://github.com/ebijun/NetBSD/commit/1a7a7b71a209c35149f05d4cf5552f75b72af9a1
 - seamonkey 2.53.10 can't start
@@ -123,53 +126,76 @@ ToDo:
 System Updates:
 
 sysinfo:
- bind-9.16.33 sh-20220122-20220923225815Z
- userland-NetBSD-9.99.100/evbarm
+ bind-9.16.33 libssh-44.0 NetBSD-9.99.102 ntp-4.2.8pl15 openssh-9.1
+ opensshd-9.1 sh-20220122-20221025080707Z tzdata-2022e
+ unbound-1.16.3 userland-NetBSD-9.99.102/evbarm
 
 pkgsrc:
- SDL-1.2.15nb40 SDL2-2.24.0nb2 SDL2_mixer-2.0.4nb11 SDL_mixer-1.2.12nb7
- audacious-plugins-4.1nb14 babl-0.1.96 boehm-gc-8.2.2 cmus-2.9.1nb9
- curl-7.85.0 exiv2-0.27.5nb1 ffmpeg2-2.8.20nb3 ffmpeg3-3.4.11nb3
- ffmpeg4-4.4.2nb4 ffmpeg5-5.1.1nb1 firefox-104.0.2nb1
- firefox-l10n-104.0.2 firefox52-52.9.0nb48 flac-1.4.0
- fluidsynth-2.2.9 gawk-5.2.0 gdk-pixbuf2-2.42.9 gegl-0.4.38nb2
- gexiv2-0.14.0nb1 git-base-2.37.3 gnupg2-2.2.37 go-1.18.6
- go118-1.18.6 hunspell-1.7.1 ibus-1.5.27 ladspa-1.17nb2
- lame-3.100nb4 libXft-2.3.6 libatomic_ops-7.6.14 libheif-1.13.0
- libmikmod-3.3.11.1nb11 libreoffice-7.4.1.2 libsamplerate-0.2.2nb2
- libsndfile-1.1.0nb2 libtasn1-4.19.0 libxslt-1.1.34nb10
- lintpkgsrc-2022.09.14 mate-settings-daemon-1.24.2nb6
- mate-terminal-1.26.0 meson-0.63.2 mkvtoolnix-70.0.0nb1
- mlterm-3.9.2nb6 mpv-0.34.1nb10 mujs-1.2.0 mupdf-1.20.0nb2
- neon-0.32.4 netpbm-10.86.34 nginx-1.22.0nb6 ninja-build-1.11.1
- nspr-4.35 nss-3.83 openal-soft-1.22.2nb1 pcre2-10.40nb1
- phonon-4.10.3nb12 pinentry-1.2.1 pkgin-22.9.0 poppler-22.09.0
- poppler-cpp-22.09.0 poppler-glib-22.09.0 poppler-includes-22.09.0
- poppler-utils-22.09.0 portaudio-190600.20161030nb12 pulseaudio-16.1nb1
- py310-OpenSSL-22.0.0 py310-cElementTree-3.10.7
+ ImageMagick-7.1.0.51 SDL-1.2.15nb40 SDL2-2.24.1 SDL2_mixer-2.0.4nb11
+ SDL_mixer-1.2.12nb7 abseil-20220623.1 ap24-php74-7.4.32nb8
+ audacious-plugins-4.1nb15 autogen-5.18.16nb8 babl-0.1.96
+ bash-5.2.2 boehm-gc-8.2.2 cairo-1.16.0nb7 cairomm-1.14.4
+ cmake-3.24.2nb1 cmus-2.10.0 cups-base-2.4.2nb2 curl-7.86.0nb1
+ dbus-1.14.4 dhcpcd-9.4.1 dhcpcd-icons-0.7.8
+ elementary-xfce-icon-theme-0.17nb1 exiv2-0.27.5nb1
+ extra-cmake-modules-5.98.0 ffmpeg2-2.8.20nb4 ffmpeg3-3.4.11nb4
+ ffmpeg4-4.4.3 ffmpeg5-5.1.2 ffmpegthumbnailer-2.2.2nb3
+ firefox-105.0.3 firefox-l10n-105.0.3 firefox52-52.9.0nb49
+ flac-1.4.2 fluidsynth-2.3.0 fmtlib-9.1.0 gawk-5.2.0
+ gdbus-codegen-2.72.4 gdk-pixbuf2-2.42.9 gegl-0.4.38nb2
+ gexiv2-0.14.0nb1 git-base-2.38.1nb1 glib2-2.72.4 glib2-tools-2.72.4
+ glibmm-2.66.5 gnupg2-2.2.40 gnutls-3.7.8 go-1.19.2 go118-1.18.7
+ go119-1.19.2 graphviz-6.0.2 guile22-2.2.7nb6 gvfs-1.6.7nb60
+ harfbuzz-5.2.0 harfbuzz-icu-5.2.0 hunspell-1.7.1 ibus-1.5.27
+ imake-1.0.9 iso-codes-4.11.0 jemalloc-5.3.0 jwm-2.4.3
+ ladspa-1.17nb2 lame-3.100nb4 ldb-2.6.1 libXft-2.3.6
+ libaom-3.5.0 libatomic_ops-7.6.14 libbluray-1.3.3 libcups-2.4.2nb2
+ libebml-1.4.4 libffi-3.4.4 libgpg-error-1.46 libhandy-1.8.0
+ libheif-1.13.0 libidn2-2.3.3nb1 libksba-1.6.2 libmatroska-1.7.1
+ libmikmod-3.3.11.1nb11 libpsl-0.21.1nb3 libreoffice-7.4.1.2
+ libsamplerate-0.2.2nb2 libsndfile-1.1.0nb2 libtasn1-4.19.0
+ libunistring-1.1 libusb1-1.0.26 libxslt-1.1.37 libzip-1.9.2nb1
+ lintpkgsrc-2022.09.29 mate-settings-daemon-1.24.2nb6
+ mate-terminal-1.26.0 meson-0.63.3 mktools-20220614 mkvtoolnix-71.1.0
+ mlterm-3.9.2nb6 mpich-3.4.3 mpv-0.34.1nb10 mujs-1.2.0
+ mupdf-1.20.3 neon-0.32.4 netpbm-10.86.34 nghttp2-1.50.0
+ nginx-1.22.1 ninja-build-1.11.1 nodejs-18.11.0 nspr-4.35
+ nss-3.84 openal-soft-1.22.2nb1 osabi-NetBSD-9.99.102
+ oxygen-icons-5.98.0 p5-Authen-SASL-2.16nb11 p5-Email-Valid-1.203
+ p5-Test-Warn-0.37 pango-1.50.11 pangomm-2.46.3 pcre2-10.40nb1
+ phonon-4.10.3nb12 php-7.4.32 php74-curl-7.4.32nb12 php74-fpm-7.4.32nb9
+ php74-gd-7.4.32nb2 php74-iconv-7.4.32 php74-intl-7.4.32nb8
+ php74-json-7.4.32 php74-mbstring-7.4.32 php74-pdo-7.4.32
+ php74-pdo_sqlite-7.4.32nb8 php74-posix-7.4.32 php74-sqlite3-7.4.32nb8
+ php74-zip-7.4.32nb8 php74-zlib-7.4.32nb1 pinentry-1.2.1
+ pkgin-22.10.0 png-1.6.38 poppler-22.10.0 poppler-cpp-22.10.0
+ poppler-glib-22.10.0 poppler-includes-22.10.0 poppler-utils-22.10.0
+ popt-1.19 portaudio-190600.20161030nb12 protobuf-3.21.8
+ pulseaudio-16.1nb1 py310-OpenSSL-22.1.0 py310-cElementTree-3.10.8
  py310-charset-normalizer-2.1.1 py310-cryptography-38.0.1
- py310-expat-3.10.7 py310-imagesize-1.4.1 py310-importlib-metadata-4.12.0
- py310-more-itertools-8.14.0 py310-numpy-1.23.3 py310-sqlite3-3.10.7nb22
- py310-zipp-3.8.1 py39-libxml2-2.9.14 python310-3.10.7
- python37-3.7.14 python38-3.8.14 python39-3.9.14 qmmp-1.5.1nb9
+ py310-expat-3.10.8 py310-imagesize-1.4.1 py310-importlib-metadata-4.12.0
+ py310-more-itertools-8.14.0 py310-numpy-1.23.4 py310-pytz-2022.4
+ py310-setuptools-65.5.0 py310-setuptools_scm-7.0.5nb1
+ py310-sqlite3-3.10.8nb22 py310-typing-extensions-4.4.0
+ py310-zipp-3.9.0 python310-3.10.8 qmmp-1.5.1nb10
  qt5-qtbase-5.15.6 qt5-qtdeclarative-5.15.6 qt5-qtlocation-5.15.6
  qt5-qtmultimedia-5.15.6 qt5-qtsensors-5.15.6 qt5-qtserialport-5.15.6
  qt5-qtsvg-5.15.6 qt5-qttools-5.15.6 qt5-qtwebchannel-5.15.6
  qt5-qtwebsockets-5.15.6 qt5-qtx11extras-5.15.6 qt5-qtxmlpatterns-5.15.6
- rclone-1.58.1nb3 rsync-3.2.6 ruby27-addressable-2.8.1
- ruby27-cairo-1.17.8 ruby27-hashie-4.1.0
- ruby27-native-package-installer-1.1.5 ruby27-oauth-1.1.0
- ruby27-oauth-tty-1.0.3 ruby27-public_suffix-5.0.0 ruby27-snaky_hash-2.0.0
- ruby27-unf_ext-0.0.8.2 ruby27-version_gem-1.1.0 rust-1.62.1
- samba-4.16.5 seamonkey-2.53.13nb1 seamonkey-l10n-2.53.13
- sqlite3-3.39.3 tex-amsmath-2.17n tex-babel-3.79 tex-colortbl-1.0f
- tex-fancyvrb-4.5 tex-graphics-1.4e tex-hypdoc-1.17
- tex-hyperref-7.00s tex-kvoptions-3.15 tex-l3backend-2022
- tex-l3kernel-2022 tex-l3packages-2022 tex-latex-20220601.5nb1
+ rclone-1.58.1nb5 readline-8.2 rsync-3.2.7 rust-1.63.0
+ samba-4.16.5 seamonkey-2.53.13nb2 seamonkey-l10n-2.53.13
+ shared-mime-info-2.2 spdlog-1.10.0nb1 sqlite3-3.39.4
+ sudo-1.9.12 tex-amsmath-2.17n tex-babel-3.79 tex-colortbl-1.0f
+ tex-fancyvrb-4.5 tex-graphics-1.4e tex-hypdoc-1.17 tex-hyperref-7.00s
+ tex-kvoptions-3.15 tex-l3backend-2022 tex-l3kernel-2022
+ tex-l3packages-2022 tex-latex-20220601.5nb1
  tex-latex-base-dev-20221101pre1nb1 tex-luaotfload-3.22
- tex-rerunfilecheck-1.10 tex-tools-2022 vala-0.56.3
- vorbis-tools-1.4.2nb4 vte3-0.68.0nb7 xfce4-session-4.16.0nb5
- xnp2-0.86nb16
+ tex-rerunfilecheck-1.10 tex-tools-2022 vala-0.56.3 vorbis-tools-1.4.2nb4
+ vte3-0.68.0nb7 w3m-0.5.3.0.20220429nb1 x264-20220601 xapian-1.4.21
+ xcb-util-cursor-0.1.4 xcb-util-image-0.4.1 xcb-util-keysyms-0.4.1
+ xcb-util-renderutil-0.3.10 xcb-util-wm-0.4.2nb1 xfce4-session-4.16.0nb5
+ xkeyboard-config-2.37 xnp2-0.86nb16 xscreensaver-6.05.1
+ xterm-374
 
 System Updates:
  https://github.com/ebijun/NetBSD/commit/7f58ddcde0b04631e3c656899cf6dd6a8aa51408
@@ -230,7 +256,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 9.99.99 (GENERIC64) #0: Tue Jul 26 20:08:56 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.102 (GENERIC64) #0: Tue Oct 25 08:07:07 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
