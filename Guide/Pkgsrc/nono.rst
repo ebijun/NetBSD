@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.4.3
+ DISTNAME=       nono-0.4.4
 
 チェックサム作成
 ------------------
@@ -41,8 +41,8 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
- -rw-r--r--  1 jun  wheel  1180 Aug 28 06:14 Makefile
- -rw-r--r--  1 jun  wheel   558 Aug 28 06:14 distinfo
+-rw-r--r--  1 jun  wheel  1180 Oct 27 23:42 Makefile
+-rw-r--r--  1 jun  wheel   558 Oct 27 23:42 distinfo
 
  make package して動作を確認します。
  
@@ -70,16 +70,33 @@ commit
 
  cvs commit 
 
- nono: update to 0.4.3.
+ nono: update to 0.4.4.
  
- 0.4.3 (2022-08-27)
+ 0.4.4 (2022-10-27)
  
- m68k(Fix): "Implement case level 0 and level 7 of PTESTR/PTESTW instructions."
- m68k(Fix): "Fix match behavior when R/W bit are set on TT0/1 registers."      
- m68k(Fix): "Fix that an application becomes inoperable on double bus fault in VM."                                                                    
- m88k(Fix): "Improve pseudo STOP behaviors."                        
- vm(Update): "Implement GETC/PUTC routines on LUNA-88K's internal PROM."        
- vm(New): "Support NWS-1750. It's just a joke." 
+Changes in 0.4.4:
+
+ vm(New):  "Support 8bpp board on LUNA provisionally."
+ vm(Fix):  "Change configuration item name from xxx-new-sci-ignore to xxx-new-sic-ignore."
+ vm(Fix): "Fix a problem that RAM is not placed correctly."
+ vm(Fix): "Fix an access to X68030 palette registers."
+ m88k(Update):  "Improve m88k core performance about 3%."
+ debugger(Fix):  "Memory break point now works even on address 0."
+ host(Fix): "Fix a queue overflow when many characters are pasted to the host serial console at a time."
+ GUI(New): "Implement x1.5 and x2.0 scale on the main window."
+ GUI(New): "Add fontsize 24."
+ GUI(New): "Link the front LCD window size and LCD charactor monitor size to font size."
+ GUI(New): "Split the Bt454/458 monitor from video monitor."
+ GUI(New): "Implement a palette monitor."
+ GUI(New): "Implement DIPSW setting window."
+ GUI(New):  "Implement memory edit."
+ GUI(New): "Implement disassemble monitor."
+ GUI(Update): "Implement output format selector on the memory dump monitor, and support MMU descriptor."
+ GUI(Update): "Implement one line up/down button on the memory dump monitor."
+ GUI(Update): "Support mouse wheel on the memory dump monitor."
+ GUI(Update): "Place a GTK control on the GTK panel correctly."
+ GUI(Update): "Don't load the default catalog. Because it contains unintended translation."
+ build(New): "Support wxWidgets 3.2 series." 
 
 doc をcommit します
 ---------------------
@@ -89,9 +106,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to  0.4.3
+ doc: Updated emulators/nono to  0.4.4
  
  cvs diff -u CHANGES-2022
- Updated emulators/nono to 0.4.3 [jun 2022-08-28]
+ Updated emulators/nono to 0.4.4 [jun 2022-10-27]
 
 

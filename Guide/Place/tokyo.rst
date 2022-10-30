@@ -86,6 +86,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
  
+ 181, OSC2022東京秋,http://www.re.soum.co.jp/~jun/OSC2022tokyofall.pdf
  175, OSC2022東京春, http://www.re.soum.co.jp/~jun/OSC2022tokyospring.pdf
  171,OSC2021東京秋,http://www.re.soum.co.jp/~jun/OSC2021tokyofall.pdf
  164,OSC2021東京春, http://www.re.soum.co.jp/~jun/OSC2021tokyospring.pdf
@@ -116,6 +117,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2022 Online/Fall BSDなひととき の記録,https://togetter.com/li/1964480
  OSC2022 Online/SpringNetBSDのご紹介 の記録, https://togetter.com/li/1856809
  OSC2021 Online/Fall NetBSDのご紹介 の記録,https://togetter.com/li/1790501
  OSC2021 Online/SpringNetBSDのご紹介 の記録,https://togetter.com/li/1675363
@@ -143,6 +145,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 25 15 60
 
+ みぞのくち醸造所,高津,11:00-23:00 ウタウト ワラウト
  いくどん柿生店,柿生,村人が集う焼肉店。いしはらさんの合言葉は「レバー大辛」。
  VERTERE,奥多摩,クラフトビール 月金14:00-19:30 土日12:00-19:30
  Snark Liquidworks,要町,クラフトビールとDEC 水木土日 12:00-21:00 金17:00-21:00
@@ -167,9 +170,8 @@ OSC東京まとめ
  加賀屋,本郷三丁目,もつMLというBSD関連の集まりがありましてな。
  丹青通商,亀戸,AppleII 5000円 マイコンマニュアル&ぱふ
  三ちゃん,荻窪,ピングドラムに出てきたラーメン店。スタミナラーメン。
- ジャーマンホビードラ,代々木八幡,飛行機模型が天井まで積んである 
  ピンバイス,門前仲町,個人経営の粋なプラモデル店
- ムーンライト,向ヶ丘遊園,ビール醸造所。季節のフルーツビール。
+ ムーンライト,生田,ビール醸造所。季節のフルーツビール。
  ヌビチヌ,野毛,素晴らしいスタンディングビアバー。
  大衆,生麦,焼肉ジンギスカンホッピー焼肉ジンギスカンホッピー。
  たん清,秋葉原,BSDマガジンの焼肉夜話。
