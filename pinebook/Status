@@ -34,6 +34,8 @@ Problems:
    https://github.com/ebijun/NetBSD/commit/1a7a7b71a209c35149f05d4cf5552f75b72af9a1
   fix: 
     http://mail-index.netbsd.org/port-arm/2022/10/30/msg007904.html
+    Narrowed down root cause to uhidev.c r1.82, 
+     over to jakllsch for further analysis.
 
 - seamonkey 2.53.10 can't start
 - gnucash build failed
