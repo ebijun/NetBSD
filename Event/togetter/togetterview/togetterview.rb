@@ -1,4 +1,4 @@
-#! /usr/pkg/bin/ruby27
+#! /usr/pkg/bin/ruby31
 
 require 'open-uri'
 require 'nokogiri'
