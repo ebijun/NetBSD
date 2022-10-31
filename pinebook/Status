@@ -37,6 +37,10 @@ Problems:
     Narrowed down root cause to uhidev.c r1.82, 
      over to jakllsch for further analysis.
 
+- Pinebook Pro graphics noticeably slower since DRM update
+  fixed: PR port-arm/56596 
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=56596 
+
 - seamonkey 2.53.10 can't start
 - gnucash build failed
 - USB Audio 2.0 Support
