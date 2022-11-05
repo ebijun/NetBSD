@@ -18,7 +18,7 @@ Update:
  python310-3.10.8
  rust-1.63.0
  
-Problems:
+Problems: 
 - pinebook: 
   Can't see audio interface.aiomixer do nothing.
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57030
@@ -32,10 +32,8 @@ Problems:
   http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57031
   dmesg diff:
    https://github.com/ebijun/NetBSD/commit/1a7a7b71a209c35149f05d4cf5552f75b72af9a1
-  fix: 
-    http://mail-index.netbsd.org/port-arm/2022/10/30/msg007904.html
-    Narrowed down root cause to uhidev.c r1.82, 
-     over to jakllsch for further analysis.
+  -> fixed: -current: Fri Nov  4 19:46:55 UTC 2022
+     src/sys/dev/usb: uhidev.c 
 
 - Pinebook Pro graphics noticeably slower since DRM update
   fixed: PR port-arm/56596 
@@ -51,6 +49,7 @@ Problems:
 Topics:
 - Tow-Boot on Pinebook Pro
   https://tow-boot.org/devices/pine64-pinebookPro.html
+  need more testing on NetBSD.
 
 - Pinebook GPU
  "I think I am making a bit of progress with the DRM driver 
