@@ -140,7 +140,8 @@
  2018 Hokkaido,7/6-7,730,66,札幌コンベンションセンター
  2019 Hokkaido,5/31-6/1,720,54,札幌コンベンションセンター
  2020 Hokkaido,6/27,450,22,オンライン開催
- 2021 Hokkaido,6/26,,22,オンライン開催
+ 2021 Hokkaido,6/26,510,22,オンライン開催
+ 2022 Hokkaido,6/25,,,オンライン開催
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -153,6 +154,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
  
+ 177.,OSC2022北海道,http://www.re.soum.co.jp/~jun/OSC2022hokkaido.pdf
  166.,OSC2021北海道,http://www.re.soum.co.jp/~jun/OSC2021hokkaido.pdf
  155.,OSC2020北海道,http://www.re.soum.co.jp/~jun/OSC2020hokkaido.pdf
  142.,OSC2019北海道,http://www.re.soum.co.jp/~jun/OSC2019hokkaido.pdf
@@ -170,6 +172,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2022北海道 NetBSDブース展示の記録,https://togetter.com/li/1905889
  OSC2021北海道 NetBSDブース展示の記録,https://togetter.com/li/1735858
  OSC2020北海道 NetBSDブース展示の記録,https://togetter.com/li/1549704
  OSC2019北海道 NetBSDブース展示の記録,https://togetter.com/li/1361738

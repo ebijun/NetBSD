@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -212,8 +212,22 @@ LibreOfficeをインストールしてみましょう。
  # cd /usr/pkgsrc/misc/libreoffice
  # make package-install
      : 9時間くらいかかります。
- # which loffice
- /usr/pkg/bin/loffice
+ # which libreoffice
+ /usr/pkg/bin/libreoffice
+ 
+IRCクライアントを動かしてみる
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+IRCクライアントとして hexchatをインストールします。
+
+::
+
+ # cd /usr/pkgsrc/chat/hexchat
+  # make package-install
+  #hexchat
+  # サーバ選択画面で http://Libera.Chat 指定します。
+  # チャンネルに#netbsd を指定します。
+ # 設定→設定→インタフェース→外観→一般→フォントでフォント選んで、右端の表示が切れるのを直します。
 
 依存しているパッケージを調べる
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

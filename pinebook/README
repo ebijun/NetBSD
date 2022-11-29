@@ -1,18 +1,72 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20220412)
+Subject: pinebook status update (20221123)
 
-Problems:
+NetBSD Arm Bootable Images: NetBSD9/NetBSD-current
+ https://nycdn.netbsd.org/pub/arm/
+
+Update:
+ NetBSD-9.99.106
+ clang-15.0.5
+ go-1.19.3
+ libreoffice-7.4.1.2nb1
+ llvm-15.0.5
+ nodejs-18.12.0nb1
+ nono-0.4.4
+ nss-3.85
+ openjdk8-1.8.342nb1
+ php-7.4.33
+ ruby31-base-3.1.2nb3
+ rust-1.64.0
+ samba-4.17.2nb1
+ scribus-1.4.8nb15
+ sudo-1.9.12p1
+
+Problems: 
+- X application issue:
+  changes between 
+    from NetBSD-9.99.106-evbarm-aarch64-202211072300Z-install.img
+    to   NetBSD-9.99.106-evbarm-aarch64-202211221110Z-install.img 
+  can't start mate and other programs. libdrm issues? 
+  backout xset,works fine.
 - pinebook: 
-  Can't see audio interface.aiomixer do nothing.
+  1. Using audio interface,rebooting.
+
+  2. Can't see audio interface.aiomixer do nothing.
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57030
   dmesg diff:
    https://github.com/ebijun/NetBSD/commit/7f58ddcde0b04631e3c656899cf6dd6a8aa51408
+  -> fixed: 
+      update sys/arch/arm/sunxi/sun8i_codec.c r1.10 
+  
 - pinebook pro
   on X, Can't move mouse cursor,keeping left side of screen.
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57031
   dmesg diff:
    https://github.com/ebijun/NetBSD/commit/1a7a7b71a209c35149f05d4cf5552f75b72af9a1
+  -> fixed: -current: Fri Nov  4 19:46:55 UTC 2022
+     src/sys/dev/usb: uhidev.c 
+
+- Pinebook Pro graphics noticeably slower since DRM update
+  fixed: PR port-arm/56596 
+  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=56596 
+
+- gimp with -python option: don't depends on python27 packages
 - seamonkey 2.53.10 can't start
+- gnucash build failed
+- USB Audio 2.0 Support
+  http://mail-index.netbsd.org/current-users/2022/06/03/msg042467.html
+  https://raw.githubusercontent.com/openbsd/src/master/sys/dev/usb/uaudio.c
 
 Topics:
+- Tow-Boot on Pinebook Pro
+  https://tow-boot.org/devices/pine64-pinebookPro.html
+  need more testing on NetBSD.
+
+- Pinebook GPU
+ "I think I am making a bit of progress with the DRM driver 
+  for the Pinebook."
+  http://mail-index.netbsd.org/port-arm/2022/05/12/msg007650.html
+
 - pkgsrc update as after 2022Q1.
   firefox 98.0.2 and libreoffice 7.3.1.3
   https://twitter.com/ebijun/status/1513773516402790403
@@ -69,7 +123,7 @@ pkgsrc:
  pkgsrc packages:
  http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2021-1/
 
-- nono: luna68k/luna88k emulator
+- nono: luna68k/luna88k/x68k emulator
  add /etc/mk.conf
   ACCEPTABLE_LICENSES= nono-license
  cd /usr/pkgsrc/emulators/nono;make ;make package-install
@@ -92,51 +146,56 @@ ToDo:
 System Updates:
 
 sysinfo:
- NetBSD-9.99.96 openssl-1.1.1n sh-20220122-20220410195457Z
- tzdata-2022agtz userland-NetBSD-9.99.96/evbarm
+ NetBSD-9.99.106 sh-20220122-20221122002552Z
+ tzdata-2022f userland-NetBSD-9.99.106/evbarm
 
 pkgsrc:
- ImageMagick-7.1.0.28 SDL-1.2.15nb37 SDL2-2.0.20nb1 SDL2_mixer-2.0.4nb8
- alsa-lib-1.2.6.1nb1 apache-2.4.53 audacious-plugins-4.1nb10 babl-0.1.90nb1
- cairo-1.16.0nb5 cln-1.3.6 cmake-3.22.3nb1 cmus-2.9.1nb7 cwrappers-20220403
- dav1d-1.0.0 dbus-1.14.0nb2 dconf-0.40.0nb1 ffmpeg2-2.8.17nb14
- ffmpeg3-3.4.8nb16 ffmpeg4-4.4.1nb3 firefox-98.0.2 firefox-l10n-98.0.2
- firefox52-52.9.0nb42 fluidsynth-2.2.6 fontconfig-2.13.1nb6
- gcr-3.38.1nb1 gdbus-codegen-2.70.5 gegl-0.4.36nb1
- gexiv2-0.12.2nb5 glib2-2.70.5 glib2-tools-2.70.5 gnutls-3.7.4
- go-bin-1.17.8 gspell-1.8.3nb9 gssdp-1.0.3nb18 gtk3+-3.24.33
- gupnp-1.0.3nb14 harfbuzz-4.1.0 harfbuzz-icu-4.1.0 ibus-1.5.26nb1
- jwm-2.4.1 ladspa-1.17nb1 lame-3.100nb3 libLLVM-13.0.1 libbluray-1.3.1
- libdazzle-3.38.0nb4 libdbusmenu-glib-12.10.2nb15
- libdbusmenu-gtk3-12.10.2nb24 libdrm-2.4.110 libgcrypt-1.10.1
- libgee-0.20.3nb6 libgpg-error-1.45 libgweather-40.0nb5
- libhandy-1.5.91nb1 libmikmod-3.3.11.1nb9 librsvg-2.52.8
- libsamplerate-0.2.2nb1 libsecret-0.20.4nb4 libsndfile-1.1.0nb1
- libuuid-2.32.1nb1 libuv-1.44.1 libxml2-2.9.13 mate-settings-daemon-1.24.2nb2
- meson-0.61.3 mpv-0.34.1nb1 nginx-1.20.2nb6 nodejs-16.14.2nb1 nss-3.77nb1
- openal-soft-1.21.1nb4 p5-IO-Socket-INET6-2.73 p5-Net-DNS-1.33
- pango-1.50.5 pangomm-2.46.2 perl-5.34.1 phonon-4.10.3nb10
- portaudio-190600.20161030nb10 protobuf-3.20.0 pulseaudio-15.0nb2
- py39-cElementTree-3.9.12 py39-cairo-1.21.0 py39-expat-3.9.12
- py39-libxml2-2.9.13 py39-numpy-1.22.3 py39-pip-21.3.1nb3
- py39-setuptools-62.0.0 py39-sqlite3-3.9.12nb21 py39-tomli-2.0.1
- py39-urllib3-1.26.9 python37-3.7.13 python39-3.9.12 qmmp-1.5.1nb6
- qt5-qtmultimedia-5.15.2nb8 qt5-qttools-5.15.2nb8 samba-4.15.6nb1
- seamonkey-2.53.10nb2 sqlite3-3.38.2 telepathy-glib-0.24.1nb23
- tex-amsmath-2.17l tex-avantgar-2021 tex-bookman-2021 tex-c90-2021
- tex-carlisle-2021 tex-cjk-4.8.5 tex-cjk-gs-integrate-20210625.0
- tex-cjkutils-4.8.5 tex-cns-2018 tex-courier-2021 tex-fancyvrb-4.1b
- tex-fonts-tlwg-0.7.3 tex-fontspec-2.8a tex-garuda-c90-2021
- tex-haranoaji-20220220 tex-helvetic-2021 tex-iftex-1.0f
- tex-ipaex-2021 tex-ncntrsbk-2021 tex-oberdiek-2021 tex-palatino-2021
- tex-symbol-2021 tex-times-2021 tex-zapfchan-2021 tex-zapfding-2021
- tiff-4.3.0nb2 unicode-character-database-14.0.0 unicode-emoji-14.0
- vala-0.56.0 vte3-0.68.0nb2 xfce4-orage-4.16.0 xfce4-terminal-1.0.0
- xnp2-0.86nb14 xscreensaver-6.03 xterm-372 zsh-5.8.1
+ ImageMagick-7.1.0.51nb1 ImageMagick6-6.9.11.7nb15 SDL2-2.24.1nb1
+ ap24-php74-7.4.33nb8 apache-2.4.54nb2 audacious-plugins-4.1nb16
+ bash-5.2.9 clang-15.0.5 cmake-3.25.0 cups-base-2.4.2nb5
+ ebook-tools-0.2.2nb16 emacs26-26.3nb21 farstream-0.2.9nb12
+ ffmpeg2-2.8.20nb5 ffmpeg3-3.4.11nb5 ffmpeg4-4.4.3nb1
+ ffmpeg5-5.1.2nb1 gdk-pixbuf2-2.42.10 ghostscript-9.05nb28
+ ghostscript-agpl-9.56.1nb3 git-base-2.38.1nb2
+ glib-networking-2.72.1nb1 gmake-4.4 gnupg2-2.2.40nb1
+ gnutls-3.7.8nb1 go-1.19.3 go118-1.18.8 go119-1.19.3
+ gobject-introspection-1.70.0nb3 graphviz-6.0.2nb1 gsed-4.9
+ gtk2+-2.24.33nb7 gtk3+-3.24.34nb3 kfilemetadata-4.14.3nb64
+ lcms2-2.14 libLLVM-13.0.1nb2 libXft-2.3.7 libbluray-1.3.3nb1
+ libcmis-0.5.2nb18 libcups-2.4.2nb3 libde265-1.0.9
+ libidn2-2.3.4 libimagequant-2.17.0 libnice-0.1.16nb12
+ libnumbertext-1.0.11 liboauth-1.0.3nb22 libpurple-2.14.10nb1
+ libreoffice-7.4.1.2nb1 libsixel-1.8.6nb9 llvm-15.0.5
+ meson-0.64.0 mkvtoolnix-72.0.0 mpfr-4.1.1 mpg123-1.31.1
+ mpv-0.35.0 mujs-1.3.0 mupdf-1.20.3nb1 mysql-client-5.7.40
+ ncursesw-6.3nb1 neon-0.32.4nb2 nghttp2-1.51.0 nginx-1.22.1nb2
+ nodejs-18.12.0nb1 nono-0.4.4 nss-3.85 openjdk8-1.8.342nb1
+ orc-0.4.33 osabi-NetBSD-9.99.106 php-7.4.33 php74-curl-7.4.33nb13
+ php74-fpm-7.4.33nb9 php74-gd-7.4.33nb2 php74-iconv-7.4.33
+ php74-intl-7.4.33nb8 php74-json-7.4.33 php74-mbstring-7.4.33
+ php74-pdo-7.4.33 php74-pdo_sqlite-7.4.33nb8 php74-posix-7.4.33
+ php74-sqlite3-7.4.33nb8 php74-zip-7.4.33nb8 php74-zlib-7.4.33nb1
+ pkgdiff-1.10nb2 podofo-0.9.6nb4 protobuf-3.21.9 pugixml-1.13
+ pulseaudio-16.1nb2 py310-certifi-2022.9.24 py310-charset-normalizer-3.0.1
+ py310-cryptography-38.0.3 py310-expat-3.10.8nb1 py310-iso8601-1.1.0
+ py310-mako-1.2.4 py310-markdown-3.4.1 py310-more-itertools-9.0.0
+ py310-numpy-1.23.5 py310-pbr-5.11.0 py310-pip-22.3.1
+ py310-pytz-2022.6 py310-setuptools-65.6.0 py310-setuptools_scm-7.0.5nb2
+ py310-sphinx-5.3.0 py310-zipp-3.10.0 qalculate-3.5.0nb14
+ qmmp-1.5.1nb11 qt4-libs-4.8.7nb30 qt5-qtbase-5.15.7
+ qt5-qtdeclarative-5.15.7 qt5-qtlocation-5.15.7 qt5-qtmultimedia-5.15.7
+ qt5-qtsensors-5.15.7 qt5-qtserialport-5.15.7 qt5-qtsvg-5.15.7
+ qt5-qttools-5.15.7 qt5-qtwebchannel-5.15.7 qt5-qtwebsockets-5.15.7
+ qt5-qtx11extras-5.15.7 qt5-qtxmlpatterns-5.15.7 raptor2-2.0.15nb25
+ rasqal-0.9.33nb26 rclone-1.58.1nb6 redland-1.0.17nb34
+ ruby31-base-3.1.2nb3 rust-1.64.0 samba-4.17.2nb1 scribus-1.4.8nb15
+ seamonkey-2.53.13nb3 spdlog-1.11.0 sqlite3-3.40.0 sudo-1.9.12p1
+ taglib-1.13 tidy-5.8.0 tigervnc-1.12.0.1.20.13nb5 vorbis-tools-1.4.2nb5
+ vte3-0.68.0nb8 wget-1.21.3nb2 xfce4-thunar-4.16.11nb1
+ xfce4-tumbler-4.16.1nb1 xterm-375 zsh-5.9nb2
 
 System Updates:
- https://github.com/ebijun/NetBSD/commit/7f58ddcde0b04631e3c656899cf6dd6a8aa51408
- https://github.com/ebijun/NetBSD/commit/1a7a7b71a209c35149f05d4cf5552f75b72af9a1
+https://github.com/ebijun/NetBSD/commit/2e07db8ce05b7f8dc77b266b9ba98a7cc8dfd170
 
 Tips:
 - System Clocks
@@ -193,7 +252,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 9.99.92 (GENERIC) #0: Mon Dec  6 04:25:36 UTC 2021  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+ NetBSD 9.99.106 (GENERIC64) #0: Tue Nov 22 00:25:52 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook

@@ -1,13 +1,14 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
+    2018, 2019, 2020, 2021, 2022
+    The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (GENERIC) #0: Sun Nov  7 12:29:58 UTC 2021
+NetBSD 9.99.98 (GENERIC) #0: Mon Jul 11 09:39:10 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 4000 MB
-avail memory = 3846 MB
+avail memory = 3845 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
@@ -51,15 +52,15 @@ cpu2: node 0, package 0, core 0, smt 1
 cpu3 at mainbus0 apid 3
 cpu3: Intel(R) Core(TM) i3-4030U CPU @ 1.90GHz, id 0x40651
 cpu3: node 0, package 0, core 1, smt 1
-acpi0 at mainbus0: Intel ACPICA 20210930
+acpi0 at mainbus0: Intel ACPICA 20211217
 acpi0: X/RSDT: OemId <DELL  , WN09   ,01072009>, AslId <AMI ,00010013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE56987925348 0003D3 (v01 PmRef  Cpu0Cst  00003001 INTL 20120711)
+ACPI: SSDT 0xFFFF8F0546B26788 0003D3 (v01 PmRef  Cpu0Cst  00003001 INTL 20120711)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE5696FECD808 0005AA (v01 PmRef  ApIst    00003000 INTL 20120711)
+ACPI: SSDT 0xFFFF8F052F0E3808 0005AA (v01 PmRef  ApIst    00003000 INTL 20120711)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFE5696FEBCA08 000119 (v01 PmRef  ApCst    00003000 INTL 20120711)
+ACPI: SSDT 0xFFFF8F052F0C2E88 000119 (v01 PmRef  ApCst    00003000 INTL 20120711)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -70,7 +71,7 @@ TPMX (PNP0C01) at acpi0 not configured
 FWHD (INT0800) at acpi0 not configured
 attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
 pckbc1 at acpi0 (PS2K, DLLK0651) (kbd port): io 0x60,0x64,0x62,0x66 irq 1
-GPI0 (INT33C7) at acpi0 not configured
+igpio0 at acpi0 (GPI0, INT33C7-1)igpio0: autoconfiguration error: couldn't find irq resource
 SDMA (INTL9C60) at acpi0 not configured
 I2C0 (INT33C2) at acpi0 not configured
 I2C1 (INT33C3) at acpi0 not configured
@@ -111,7 +112,9 @@ pckbc1: using irq 1 for kbd slot
 wskbd0 at pckbd0: console keyboard
 pms0 at pckbc1 (aux slot)
 pms0: Synaptics touchpad version 8.1
-pms0: Extended W mode, Middle button, Palm detect, One button click pad, Multi-finger Report, Multi-finger
+pms0: Extended W mode, Middle button, Palm detect, One button click pad, Multi-finger Report, Multi-finger, Reports max, Reports min
+pms0: Probed max coordinates right: 5660, top: 4720
+pms0: Probed min coordinates left: 1366, bottom: 1256
 pckbc1: autoconfiguration error: unable to establish interrupt for aux slot
 wsmouse0 at pms0 mux 0
 pci0 at mainbus0 bus 0: configuration mode 1
@@ -121,6 +124,13 @@ i915drmkms0 at pci0 dev 2 function 0: Intel HD Graphics (GT2) (rev. 0x0b)
 hdaudio0 at pci0 dev 3 function 0: HD Audio Controller
 hdaudio0: interrupting at msi0 vec 0
 hdaudio0: HDA ver. 1.0, OSS 2, ISS 0, BSS 0, SDO 1, 64-bit
+hdafg0 at hdaudio0: Intel HDMI/DP
+hdafg0: DP00 8ch: Digital Out [Jack]
+hdafg0: 8ch/0ch 48000Hz PCM16*
+audio0 at hdafg0: playback
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+spkr0 at audio0: PC Speaker (synthesized)
+wsbell at spkr0 not configured
 xhci0 at pci0 dev 20 function 0: Intel Core 4G (mobile) USB xHCI (rev. 0x04)
 xhci0: 64-bit DMA
 xhci0: interrupting at msi1 vec 0
@@ -131,16 +141,16 @@ Intel Core 4G (mobile) MEI (miscellaneous communications, revision 0x04) at pci0
 hdaudio1 at pci0 dev 27 function 0: HD Audio Controller
 hdaudio1: interrupting at msi2 vec 0
 hdaudio1: HDA ver. 1.0, OSS 4, ISS 4, BSS 0, SDO 1, 64-bit
-hdafg0 at hdaudio1: vendor 10ec product 0255
-hdafg0: DAC00 2ch: Speaker [Built-In]
-hdafg0: DAC01 2ch: HP Out [Jack]
-hdafg0: ADC02 2ch: Mic In [Built-In]
-hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
-audio0 at hdafg0: playback, capture, full duplex, independent
-audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
-audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
-spkr0 at audio0: PC Speaker (synthesized)
-wsbell at spkr0 not configured
+hdafg1 at hdaudio1: Realtek product 0255
+hdafg1: DAC00 2ch: Speaker [Built-In]
+hdafg1: DAC01 2ch: HP Out [Jack]
+hdafg1: ADC02 2ch: Mic In [Built-In]
+hdafg1: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio1 at hdafg1: playback, capture, full duplex, independent
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+spkr1 at audio1: PC Speaker (synthesized)
+wsbell at spkr1 not configured
 ppb0 at pci0 dev 28 function 0: Intel Core 4G (mobile) PCIe (rev. 0xe4)
 ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 pci1 at ppb0 bus 4
@@ -165,9 +175,11 @@ re0: using 256 tx descriptors
 rlphy0 at re0 phy 7: RTL8201E 10/100 media interface, rev. 2
 rlphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
 ehci0 at pci0 dev 29 function 0: Intel Core 4G (mobile) USB EHCI (rev. 0x04)
+ehci0: 64-bit DMA
 ehci0: interrupting at ioapic0 pin 23
 ehci0: BIOS has given up ownership
 ehci0: EHCI version 1.0
+ehci0: Using DMA subregion for control data structures
 usb2 at ehci0: USB revision 2.0
 pcib0 at pci0 dev 31 function 0: Intel Core 4G (mobile) LPC (rev. 0x04)
 ahcisata0 at pci0 dev 31 function 2: Intel Core 4G (mobile) SATA Controller (AHCI) (rev. 0x04)
@@ -180,6 +192,12 @@ ichsmb0 at pci0 dev 31 function 3: Intel Core 4G (mobile) SMBus (rev. 0x04)
 ichsmb0: interrupting at ioapic0 pin 18
 iic0 at ichsmb0: I2C bus
 isa0 at pcib0
+pcppi0 at isa0 port 0x61
+spkr2 at pcppi0: PC Speaker
+wsbell at spkr2 not configured
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
 acpicpu0 at cpu0: ACPI CPU
 acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
 acpicpu0: C2: FFH, lat 148 us, pow   200 mW
@@ -208,17 +226,17 @@ uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00,
 uhub0: 4 ports with 4 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub1: 9 ports with 9 removable, self powered
+acpiacad0: AC adapter online.
 acpibat0: SANYO LION rechargeable battery
 acpibat0: granularity: low->warn 0.028 Ah, warn->full 0.028 Ah
 uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
-acpiacad0: AC adapter online.
 ahcisata0 port 0: device present, speed: 6.0Gb/s
+ahcisata0 port 1: device present, speed: 1.5Gb/s
 IPsec: Initialized Security Association Processing.
 aes: Intel AES-NI
 chacha: x86 SSE2 ChaCha
 wd0 at atabus0 drive 0
-ahcisata0 port 1: device present, speed: 1.5Gb/s
 wd0: <ST1000LM024 HN-M101MBB>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
 wd0: 931 GB, 1938021 cyl, 16 head, 63 sec, 512 bytes/sect x 1953525168 sectors (4096 bytes/physsect; first aligned sector: 8)
@@ -241,18 +259,19 @@ uvideo0 at uhub3 port 5 configuration 1 interface 0: CN0VFVY97248744EB0JWA00 (0x
 video0 at uvideo0: CN0VFVY97248744EB0JWA00 (0x0c45) Integrated_Webcam_HD (0x670b), rev 2.00/32.62, addr 3
 ugen0 at uhub3 port 8
 ugen0: Generic (0x0bda) USB2.0-CRW (0x0129), rev 2.00/39.60, addr 4
-WARNING: 1 error while detecting hardware; check system log.
+WARNING: 2 errors while detecting hardware; check system log.
 boot device: wd0
 root on dk1 dumps on dk2
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.92/modules
-kern info: [drm] Memory usable by graphics device = 2048M
+kern.module.path=/stand/amd64/9.99.98/modules
 kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 kern info: [drm] Driver supports precise vblank timestamp query.
-kern info: [drm] failed to find VBIOS tables
 i915drmkms0: interrupting at msi6 vec 0 (i915drmkms0)
+kern info: [drm] Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
 intelfb0 at i915drmkms0
-intelfb0: framebuffer at 0xe0397000, size 1366x768, depth 32, stride 5504
+kern info: [drm] DRM_I915_DEBUG enabled
+kern info: [drm] DRM_I915_DEBUG_GEM enabled
+intelfb0: framebuffer at 0xe0009000, size 1366x768, depth 32, stride 5504
 iwm0: hw rev 0x140, fw ver 17.352738.0, address f0:42:1c:e2:cb:29
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
@@ -260,9 +279,183 @@ wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+uhub4 at uhub3 port 2: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1.10/3.00, addr 5
+uhub4: 4 ports with 4 removable, self powered
+uhidev0 at uhub4 port 3 configuration 1 interface 0
+uhidev0: Primax Electronics (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 6, iclass 3/1
+ums0 at uhidev0: 3 buttons, W and Z dirs
+wsmouse1 at ums0 mux 0
+uhidev1 at uhub4 port 4 configuration 1 interface 0
+uhidev1: Elecom (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 7, iclass 3/1
+ukbd0 at uhidev1
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev2 at uhub4 port 4 configuration 1 interface 1
+uhidev2: Elecom (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 7, iclass 3/0
+uhidev2: 2 report ids
+uhid0 at uhidev2 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev2 reportid 2: input=3, output=0, feature=0
 pckbport: command timeout
 autoconfiguration error: pms_enable: command error 35
 pckbport: command timeout
 autoconfiguration error: pms_disable: command error
 pckbport: command timeout
 autoconfiguration error: pms_enable: command error 35
+pckbport: command timeout
+autoconfiguration error: pms_disable: command error
+pckbport: command timeout
+autoconfiguration error: pms_enable: command error 35
+pckbport: command timeout
+autoconfiguration error: pms_disable: command error
+pckbport: command timeout
+autoconfiguration error: pms_enable: command error 35
+pckbport: command timeout
+autoconfiguration error: pms_disable: command error
+pckbport: command timeout
+autoconfiguration error: pms_enable: command error 35
+pckbport: command timeout
+autoconfiguration error: pms_disable: command error
+pckbport: command timeout
+autoconfiguration error: pms_enable: command error 35
+{drm:netbsd:pipe_config_infoframe_mismatch+0x40} *ERROR* mismatch in hdmi infoframe
+{drm:netbsd:pipe_config_infoframe_mismatch+0x4e} *ERROR* expected:
+i915drmkms0: 68 bytes @ 0xffff8f046ed2cbe8
+81 00 00 00 01 00 00 00  03 0c 00 00 00 00 00 00 | ................
+ff ff ff ff 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+{drm:netbsd:pipe_config_infoframe_mismatch+0x6f} *ERROR* found:
+i915drmkms0: 68 bytes @ 0xffff8f046e4e0be8
+81 00 00 00 01 04 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/display/intel_display.c:14031: pipe state doesn't match!
+{drm:netbsd:pipe_config_infoframe_mismatch+0x40} *ERROR* mismatch in hdmi infoframe
+{drm:netbsd:pipe_config_infoframe_mismatch+0x4e} *ERROR* expected:
+i915drmkms0: 68 bytes @ 0xffff8f046fefebe8
+81 00 00 00 01 00 00 00  03 0c 00 00 00 00 00 00 | ................
+ff ff ff ff 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+{drm:netbsd:pipe_config_infoframe_mismatch+0x6f} *ERROR* found:
+i915drmkms0: 68 bytes @ 0xffff8f046cef2be8
+81 00 00 00 01 04 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/display/intel_display.c:14031: pipe state doesn't match!
+{drm:netbsd:pipe_config_infoframe_mismatch+0x40} *ERROR* mismatch in hdmi infoframe
+{drm:netbsd:pipe_config_infoframe_mismatch+0x4e} *ERROR* expected:
+i915drmkms0: 68 bytes @ 0xffff8f0533f72be8
+81 00 00 00 01 00 00 00  03 0c 00 00 00 00 00 00 | ................
+ff ff ff ff 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+{drm:netbsd:pipe_config_infoframe_mismatch+0x6f} *ERROR* found:
+i915drmkms0: 68 bytes @ 0xffff8f046ed2cbe8
+81 00 00 00 01 04 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/display/intel_display.c:14031: pipe state doesn't match!
+{drm:netbsd:pipe_config_infoframe_mismatch+0x40} *ERROR* mismatch in hdmi infoframe
+{drm:netbsd:pipe_config_infoframe_mismatch+0x4e} *ERROR* expected:
+i915drmkms0: 68 bytes @ 0xffff8f046e9edbe8
+81 00 00 00 01 00 00 00  03 0c 00 00 00 00 00 00 | ................
+ff ff ff ff 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+{drm:netbsd:pipe_config_infoframe_mismatch+0x6f} *ERROR* found:
+i915drmkms0: 68 bytes @ 0xffff8f05383e8be8
+81 00 00 00 01 04 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/display/intel_display.c:14031: pipe state doesn't match!
+heartbeat rcs0 heartbeat {prio:-2147483645} not ticking
+heartbeat 	Awake? 6
+heartbeat 	Barriers?: no
+heartbeat 	Latency: 120us
+heartbeat 	Heartbeat: 3000 ms ago
+heartbeat 	Reset count: 0 (global 0)
+heartbeat 	Requests:
+heartbeat 		active  3:2de7*-  @ 5930ms: firefox[7926]
+heartbeat 		ring->start:  0x7fffa000
+heartbeat 		ring->head:   0x000036a0
+heartbeat 		ring->tail:   0x00003e38
+heartbeat 		ring->emit:   0x00003e38
+heartbeat 		ring->space:  0x00003828
+heartbeat 		ring->hwsp:   0x7fffe100
+heartbeat [head 36b8, postfix 37b8, tail 37d0, batch 0x00000000_7ffe0000]:
+warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/gt/intel_engine_cs.c:1234: WARN_ON_ONCE(hex_dump_to_buffer(buf + pos, len - pos, rowsize, sizeof(u32), line, sizeof(line), 0) >= sizeof(line))
+heartbeat [0000] 0200007a 02001000 00000000 00000000 0200007a 1c4c1501 80f0ff7f 00000000
+0200007a a1501001 80f0ff7f 00000000 01000011 20220000 f
+heartbeat [0020] 0200007a a1501001 80f0ff7f 00000000 01000011 20220000 ffffffff 01000011
+28220000 00009907 01004012 28220000 00f0ff7f 01000011 c
+heartbeat [0040] 28220000 00009907 01004012 28220000 00f0ff7f 01000011 c0200000 00020002
+0200007a a1501001 80f0ff7f 00000000 0200007a 02001000 0
+heartbeat [0060] 0200007a a1501001 80f0ff7f 00000000 0200007a 02001000 00000000 00000000
+0200007a 1c4c1501 80f0ff7f 00000000 00000004 05000011 5
+heartbeat [0080] 0200007a 1c4c1501 80f0ff7f 00000000 00000004 05000011 50200200 01000100
+50200100 01000100 50a00100 01000100 00000000 0000000c 0
+heartbeat [00a0] 50200100 01000100 50a00100 01000100 00000000 0000000c 0c517707 00000000
+05000011 50200200 00000100 50200100 00000100 50a00100 0
+heartbeat [00c0] 05000011 50200200 00000100 50200100 00000100 50a00100 00000100 01004012
+50a00100 00f0ff7f 00000000 01000004 00008018 0000fe7f 0
+heartbeat [00e0] 50a00100 00f0ff7f 00000000 01000004 00008018 0000fe7f 00218018 c0100000
+0200007a a1501001 00e1ff7f e72d0000 00000001 00000000
+
+heartbeat [0100] 0200007a a1501001 00e1ff7f e72d0000 00000001 00000000
+
+heartbeat 	On hold?: 0
+heartbeat 	MMIO base:  0x00002000
+heartbeat 	CCID: 0x0777510d
+heartbeat 	RING_START: 0x7fffa000
+heartbeat 	RING_HEAD:  0x00003774
+heartbeat 	RING_TAIL:  0x00003e38
+heartbeat 	RING_CTL:   0x00003001
+heartbeat 	RING_MODE:  0x00004000
+heartbeat 	RING_IMR: ffffffde
+heartbeat 	ACTHD:  0x00000000_18403774
+heartbeat 	BBADDR: 0x00000000_01aa43f4
+heartbeat 	DMA_FADDR: 0x00000000_7fffd770
+heartbeat 	IPEIR: 0x00000000
+heartbeat 	IPEHR: 0x0c000000
+heartbeat 	PP_DIR_BASE: 0x07990000
+heartbeat 	PP_DIR_BASE_READ: 0x00000000
+heartbeat 	PP_DIR_DCLV: 0xffffffff
+heartbeat 		E  3:2de7*-  @ 5930ms: firefox[7926]
+heartbeat 		E  3:2de8  @ 5920ms: X[8491]
+heartbeat 		E  3:2de9-  @ 5920ms: X[8491]
+heartbeat 		E  3:2dea-  @ 5910ms: X[8491]
+heartbeat 		E  3:2deb  @ 5900ms: firefox[7926]
+heartbeat 		E  3:2dec  @ 5890ms: firefox[7926]
+heartbeat 		E  3:2ded  @ 3000ms: [i915]
+heartbeat HWSP:
+heartbeat [0000] 01000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+00000000 00000000 00000000 00000000 00000000 00000000 0
+heartbeat [0020] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+00000000 00000000 00000000 00000000 00000000 00000000 0
+heartbeat *
+heartbeat [0100] e62d0000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+00000000 00000000 00000000 00000000 00000000 00000000 0
+heartbeat [0120] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+00000000 00000000 00000000 00000000 00000000 00000000 0
+heartbeat *
+heartbeat Idle? no
+heartbeat Signals:
+heartbeat 	[3:2de9] @ 5920ms
+heartbeat 	[3:2dea] @ 5910ms
+heartbeat 	[3:2de7*] @ 5930ms
+i915drmkms0: notice: Resetting chip for stopped heartbeat on rcs0
+i915drmkms0: notice: firefox[7926] context reset due to GPU hang
+pckbport: command timeout

@@ -1,23 +1,31 @@
-VERSION: :1,$s/2022-04-09/2022-04-09/g
-ISO:     :1,$s/202204060620Z/202204060620Z/g
-NetBSD:  :1,$s/9.99.96/9.99.96/g
-PKGSRC:  :1,$s/2022-04-09/2022/
+VERSION: :1,$s/2022-11-22/2022-11-22/g
+ISO:     :1,$s/202211210350Z/202211210350Z/g
+NetBSD:  :1,$s/9.99.106/9.99.106/g
+PKGSRC:  :1,$s/2022-11-22/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-04-09-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2022-11-22-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-04-09-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2022-11-22-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-04-09-earmv6hf/2022-04-09-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-04-09-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-11-22-earmv6hf/2022-11-22-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-11-22-earmv6hf/MD5
 
 Update:
-- NetBSD 9.99.96 evbarm-earmv6hf 2202204060620Z rpi.img from nyftp.
+- NetBSD 9.99.106 evbarm-earmv6hf 2202211210350Z rpi.img from nyftp.
+ sudo-1.9.12p1
+
+- armv6 on QEMU (was Re: armv6 support for rust)
+  http://mail-index.netbsd.org/tech-pkg/2022/10/21/msg026888.html
+- armv6 support for rust?
+  http://mail-index.netbsd.org/tech-pkg/2022/10/19/msg026864.html
+
 - Re: Raspberry Pi camera under NetBSD current
  http://mail-index.netbsd.org/current-users/2021/11/16/msg041683.html
+
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
@@ -31,13 +39,6 @@ Update:
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
   earmv7hf works well.earmv6hf not yet.
 
-- OpenSSH 8.9
-  "This release disables RSA signatures using the SHA-1 hash algorithm
-   by default."
-
-  Host old-host
-        HostkeyAlgorithms +ssh-rsa
-	PubkeyAcceptedAlgorithms +ssh-rsa
 
 - Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
 XXX: should test big-endian image and pkgsrc
@@ -73,22 +74,17 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- libssh-42.0 NetBSD-9.99.96 openssh-8.9 opensshd-8.9
- openssl-1.1.1n sh-20220122-20220406032338Z tzdata-2022agtz
- userland-NetBSD-9.99.96/evbarm
+ libdrm-3.7 NetBSD-9.99.106 sh-20220122-20221120145314Z
+ tzdata-2022f userland-NetBSD-9.99.106/evbarm
 
 pkgsrc:
- cairo-1.16.0nb5 curl-7.82.0 dbus-1.14.0nb2 digest-20220214
- fossil-2.18 glib2-2.70.5 gnutls-3.7.4 gobject-introspection-1.70.0
- gtk3+-3.24.33 harfbuzz-4.1.0 libgcrypt-1.10.1 libuuid-2.32.1nb1
- libwebp-1.2.2 libxkbcommon-1.4.0 libxml2-2.9.13 nghttp2-1.47.0
- p5-IO-Socket-INET6-2.73 p5-Net-DNS-1.33 pango-1.50.5
- perl-5.34.1 py39-cElementTree-3.9.12 py39-expat-3.9.12
- python39-3.9.12 ruby27-atk-3.5.1 ruby27-cairo-gobject-3.5.1
- ruby27-gdk3-3.5.1 ruby27-gdk_pixbuf2-3.5.1 ruby27-gio2-3.5.1
- ruby27-glib2-3.5.1 ruby27-gobject-introspection-3.5.1
- ruby27-gtk3-3.5.1 ruby27-mini_portile2-2.8.0 ruby27-nokogiri-1.13.3
- ruby27-pango-3.5.1 tiff-4.3.0nb2 wget-1.21.3 zsh-5.8.1
+ bash-5.2.9 curl-7.86.0nb1 gdk-pixbuf2-2.42.10 git-base-2.38.1nb2
+ gnutls-3.7.8nb1 gobject-introspection-1.70.0nb3 gtk2+-2.24.33nb7
+ gtk3+-3.24.34nb3 libcups-2.4.2nb3 libidn2-2.3.4 libimagequant-2.17.0
+ libpsl-0.21.1nb3 libunistring-1.1 py310-expat-3.10.8nb1
+ qt5-qtbase-5.15.7 qt5-qtx11extras-5.15.7 qt5-qtxmlpatterns-5.15.7
+ ruby31-moneta-1.5.2 ruby31-nokogiri-1.13.9 sudo-1.9.12p1
+ wget-1.21.3nb2 zsh-5.9nb2
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -147,7 +143,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-04-09-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-11-22-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -327,13 +323,8 @@ I2C - "Raspberry Pi I2C implementation still broken?"
    http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48855
    http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=48932
 
-XM6i - SHARP X68030 Emulator for NetBSD/x68k (Thanx isaki@)
-  http://www.pastel-flower.jp/~isaki/XM6i/
-  XM6i-0.55-netbsd7.0-earmv6hf-2015Q2.tar.gz
-  pkg_add wxGTK30-3.0.2nb6
-  XXX: use wxGTK30-3.0.2nb6 for XM6i-0.55
-
-  https://twitter.com/isaki68k/status/625138538271502337
+nono - LUNA/LUNA88K/X68K Emulator for NetBSD/x68k (Thanx isaki@)
+  http://www.pastel-flower.jp/~isaki/nono
 
 Todo:
 - set2pkg: update via pkgsrc.
@@ -370,22 +361,21 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2022 Online/Spring , NetBSD BOF.
+For Open Source Conference 2022 Online/Fukuoka, BSD BOF.
 I've updated raspberry-pi image.
 
-Open Source Conference 2022 Online/Spring NetBSD BoF
-
-    2022 Mar.12 Sat 14:00-14:45 JST (UTC+9)
-    https://event.ospn.jp/osc2022-online-spring/session/523464
-    https://event.ospn.jp/osc2022-online-spring/
-    Join meeting with ZOOM/YoutubeLive
-    YoutubeLive https://www.youtube.com/c/OSPNjp
+    2022 Nov.26 Sat 14:00-14:45 JST (UTC+9)
+    https://event.ospn.jp/osc2022-online-fukuoka/
+    https://event.ospn.jp/osc2022-online-fukuoka/session/697078
+    Join meeting with YoutubeLive https://www.youtube.com/c/OSPNjp ROOM C
+    Join meeting with ZOOM via compass https://ospn.connpass.com/event/258080/
+    YoutubeLive https://www.youtube.com/c/OSPNjp Room C
 
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
-https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2021.rst
+https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2022.rst
 
-- NetBSD 9.99.96 earmv6hf rpi.img.gz base
+- NetBSD 9.99.106 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -431,7 +421,7 @@ Installed Packages:
   vlgothic-ttf
   icewm
   xli
-  ruby27-mikutter
+  ruby31-mikutter
   uim
   fossil
   raspberrypi-userland
@@ -483,11 +473,6 @@ One more time: (we're gonna celebrate
  5. exit 
  6. mlterm-wscons --rotate=left
  7. cat vimperator.six
-    and @Chris_J_Baird only knows how to get to 1987.
- 8. ftp http://kildall.apana.org.au/~cjb/mandel5.c
- 9. cc mandel5.c
-10. ./a.out 1024 728 -2 -1.5 4.0 |tee f
-11. cat f
 
 --
 Jun Ebihara

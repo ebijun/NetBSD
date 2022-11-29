@@ -11,7 +11,7 @@ status:
 
 check:
 	echo ${DIR}
-	mkdir ${DIR}
+	mkdir -p ${DIR}
 	dmesg -t > ${DIR}/dmesg
 	sys_info > ${DIR}/sysinfo
 	pkg_info |sort > ${DIR}/pkginfo

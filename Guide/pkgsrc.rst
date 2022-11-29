@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2020 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -426,10 +426,6 @@ firefox
  # make package-install
  % cd /usr/pkgsrc/www/firefox-l10n
  # make package-install
- # grep flashsupport /etc/mk.conf
- ACCEPTABLE_LICENSES+= adobe-flashsupport-license
- # cd /usr/pkgsrc/multimedia/adobe-flash-plugin11
- # make package-install
 
 LibreOffice
 """"""""""""
@@ -728,7 +724,26 @@ http://mail-index.netbsd.org/tech-pkg/2020/05/29/msg023265.html
 ::
 
    make show-buildlink3
-   
+
+5. pkglint
+
+コミットする前に、pkgsrc/pkgtools/pkglint を実行してチェックします。
+
+6. コミットメッセージ
+
+一行目にパッケージ名とバージョン／理由を書きます。
+
+::
+
+ geography/gama: Update to 2.19
+ 
+pkgsrc/doc: CHANGES-年号 に変更を追加します。
+
+::
+
+ doc: Updated geography/gama to 2.19
+
+  
 このドキュメント
 ----------------------
 
