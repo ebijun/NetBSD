@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.106 (GENERIC64) #0: Thu Nov 17 20:43:39 UTC 2022
+NetBSD 9.99.108 (GENERIC64) #0: Sat Dec 10 20:58:37 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 7652 MB
 avail memory = 7376 MB
@@ -222,8 +222,8 @@ uhub4 at usb4: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00,
 uhub4: 4 ports with 4 removable, self powered
 uhub5 at usb5: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub5: 4 ports with 4 removable, self powered
-IPsec: Initialized Security Association Processing.
 WARNING: system needs entropy for security; see entropy(7)
+IPsec: Initialized Security Association Processing.
 ld4: GPT GUID: 5e6af92f-6399-419f-b886-174c1acc4511
 dk0 at ld4: "iBootSystemContainer", 128000 blocks at 6, type: <unknown>
 dk1 at ld4: "270a12a2-294a-4237-ab38-2379659c766e", 29920256 blocks at 128006, type: <unknown>
@@ -270,7 +270,7 @@ swwdog0: software watchdog initialized
 boot device: dk6
 root on dk6
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.106/modules
+kern.module.path=/stand/evbarm/9.99.108/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
