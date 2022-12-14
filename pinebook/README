@@ -1,25 +1,26 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20221123)
+Subject: pinebook status update (20221214)
 
 NetBSD Arm Bootable Images: NetBSD9/NetBSD-current
  https://nycdn.netbsd.org/pub/arm/
 
 Update:
- NetBSD-9.99.106
- clang-15.0.5
- go-1.19.3
- libreoffice-7.4.1.2nb1
- llvm-15.0.5
- nodejs-18.12.0nb1
- nono-0.4.4
- nss-3.85
- openjdk8-1.8.342nb1
- php-7.4.33
- ruby31-base-3.1.2nb3
- rust-1.64.0
- samba-4.17.2nb1
- scribus-1.4.8nb15
- sudo-1.9.12p1
+
+sysinfo:
+ NetBSD-9.99.108
+ clang-15.0.6
+ firefox-107.0.1
+ gtk3+-3.24.35
+ inkscape-1.2.1nb2
+ libreoffice-7.4.1.2nb2
+ llvm-15.0.6
+ nodejs-19.2.0
+ nss-3.86
+ php-7.4.33nb1
+ python310-3.10.9
+ ruby31-base-3.1.3
+ samba-4.17.3
+ scribus-1.4.8nb16
 
 Problems: 
 - X application issue:
@@ -27,24 +28,12 @@ Problems:
     from NetBSD-9.99.106-evbarm-aarch64-202211072300Z-install.img
     to   NetBSD-9.99.106-evbarm-aarch64-202211221110Z-install.img 
   can't start mate and other programs. libdrm issues? 
-  backout xset,works fine.
-- pinebook: 
-  1. Using audio interface,rebooting.
 
-  2. Can't see audio interface.aiomixer do nothing.
-  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57030
-  dmesg diff:
-   https://github.com/ebijun/NetBSD/commit/7f58ddcde0b04631e3c656899cf6dd6a8aa51408
-  -> fixed: 
-      update sys/arch/arm/sunxi/sun8i_codec.c r1.10 
-  
-- pinebook pro
-  on X, Can't move mouse cursor,keeping left side of screen.
-  http://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57031
-  dmesg diff:
-   https://github.com/ebijun/NetBSD/commit/1a7a7b71a209c35149f05d4cf5552f75b72af9a1
-  -> fixed: -current: Fri Nov  4 19:46:55 UTC 2022
-     src/sys/dev/usb: uhidev.c 
+  backout xbase,works fine.
+  https://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/NetBSD-9.99.106-evbarm-aarch64-202211072300Z-xbase.tar.gz
+
+- pinebook: 
+  Using audio interface,rebooting.
 
 - Pinebook Pro graphics noticeably slower since DRM update
   fixed: PR port-arm/56596 
@@ -146,53 +135,83 @@ ToDo:
 System Updates:
 
 sysinfo:
- NetBSD-9.99.106 sh-20220122-20221122002552Z
- tzdata-2022f userland-NetBSD-9.99.106/evbarm
+ NetBSD-9.99.108 sh-20220122-20221212211415Z tcsh-6.24.06
+ tzdata-2022ggtz userland-NetBSD-9.99.108/evbarm
 
 pkgsrc:
- ImageMagick-7.1.0.51nb1 ImageMagick6-6.9.11.7nb15 SDL2-2.24.1nb1
- ap24-php74-7.4.33nb8 apache-2.4.54nb2 audacious-plugins-4.1nb16
- bash-5.2.9 clang-15.0.5 cmake-3.25.0 cups-base-2.4.2nb5
- ebook-tools-0.2.2nb16 emacs26-26.3nb21 farstream-0.2.9nb12
- ffmpeg2-2.8.20nb5 ffmpeg3-3.4.11nb5 ffmpeg4-4.4.3nb1
- ffmpeg5-5.1.2nb1 gdk-pixbuf2-2.42.10 ghostscript-9.05nb28
- ghostscript-agpl-9.56.1nb3 git-base-2.38.1nb2
- glib-networking-2.72.1nb1 gmake-4.4 gnupg2-2.2.40nb1
- gnutls-3.7.8nb1 go-1.19.3 go118-1.18.8 go119-1.19.3
- gobject-introspection-1.70.0nb3 graphviz-6.0.2nb1 gsed-4.9
- gtk2+-2.24.33nb7 gtk3+-3.24.34nb3 kfilemetadata-4.14.3nb64
- lcms2-2.14 libLLVM-13.0.1nb2 libXft-2.3.7 libbluray-1.3.3nb1
- libcmis-0.5.2nb18 libcups-2.4.2nb3 libde265-1.0.9
- libidn2-2.3.4 libimagequant-2.17.0 libnice-0.1.16nb12
- libnumbertext-1.0.11 liboauth-1.0.3nb22 libpurple-2.14.10nb1
- libreoffice-7.4.1.2nb1 libsixel-1.8.6nb9 llvm-15.0.5
- meson-0.64.0 mkvtoolnix-72.0.0 mpfr-4.1.1 mpg123-1.31.1
- mpv-0.35.0 mujs-1.3.0 mupdf-1.20.3nb1 mysql-client-5.7.40
- ncursesw-6.3nb1 neon-0.32.4nb2 nghttp2-1.51.0 nginx-1.22.1nb2
- nodejs-18.12.0nb1 nono-0.4.4 nss-3.85 openjdk8-1.8.342nb1
- orc-0.4.33 osabi-NetBSD-9.99.106 php-7.4.33 php74-curl-7.4.33nb13
- php74-fpm-7.4.33nb9 php74-gd-7.4.33nb2 php74-iconv-7.4.33
- php74-intl-7.4.33nb8 php74-json-7.4.33 php74-mbstring-7.4.33
- php74-pdo-7.4.33 php74-pdo_sqlite-7.4.33nb8 php74-posix-7.4.33
- php74-sqlite3-7.4.33nb8 php74-zip-7.4.33nb8 php74-zlib-7.4.33nb1
- pkgdiff-1.10nb2 podofo-0.9.6nb4 protobuf-3.21.9 pugixml-1.13
- pulseaudio-16.1nb2 py310-certifi-2022.9.24 py310-charset-normalizer-3.0.1
- py310-cryptography-38.0.3 py310-expat-3.10.8nb1 py310-iso8601-1.1.0
- py310-mako-1.2.4 py310-markdown-3.4.1 py310-more-itertools-9.0.0
- py310-numpy-1.23.5 py310-pbr-5.11.0 py310-pip-22.3.1
- py310-pytz-2022.6 py310-setuptools-65.6.0 py310-setuptools_scm-7.0.5nb2
- py310-sphinx-5.3.0 py310-zipp-3.10.0 qalculate-3.5.0nb14
- qmmp-1.5.1nb11 qt4-libs-4.8.7nb30 qt5-qtbase-5.15.7
- qt5-qtdeclarative-5.15.7 qt5-qtlocation-5.15.7 qt5-qtmultimedia-5.15.7
- qt5-qtsensors-5.15.7 qt5-qtserialport-5.15.7 qt5-qtsvg-5.15.7
- qt5-qttools-5.15.7 qt5-qtwebchannel-5.15.7 qt5-qtwebsockets-5.15.7
- qt5-qtx11extras-5.15.7 qt5-qtxmlpatterns-5.15.7 raptor2-2.0.15nb25
- rasqal-0.9.33nb26 rclone-1.58.1nb6 redland-1.0.17nb34
- ruby31-base-3.1.2nb3 rust-1.64.0 samba-4.17.2nb1 scribus-1.4.8nb15
- seamonkey-2.53.13nb3 spdlog-1.11.0 sqlite3-3.40.0 sudo-1.9.12p1
- taglib-1.13 tidy-5.8.0 tigervnc-1.12.0.1.20.13nb5 vorbis-tools-1.4.2nb5
- vte3-0.68.0nb8 wget-1.21.3nb2 xfce4-thunar-4.16.11nb1
- xfce4-tumbler-4.16.1nb1 xterm-375 zsh-5.9nb2
+ CUnit-2.1.3 GConf-3.2.3nb15 ImageMagick-7.1.0.52
+ ImageMagick6-6.9.11.7nb16 SDL2-2.26.1 akonadi-1.13.0nb44
+ ap24-php74-7.4.33nb9 apache-2.4.54nb3 apr-util-1.6.1nb14
+ asciidoc-10.2.0nb2 atk-2.38.0 atkmm-2.28.3 atril-1.26.0
+ audacious-4.1nb4 audacious-plugins-4.1nb17 autogen-5.18.16nb9
+ babl-0.1.98 bash-5.2.12 boost-libs-1.78.0nb3 caja-1.26.1
+ caja-dropbox-1.26.0 caja-extensions-1.26.1 clang-15.0.6
+ cmake-3.25.1 ebook-tools-0.2.2nb17 emacs26-26.3nb22 engrampa-1.26.0
+ eom-1.26.0 farstream-0.2.9nb13 ffmpeg2-2.8.20nb6 ffmpeg3-3.4.11nb6
+ ffmpeg4-4.4.3nb2 ffmpeg5-5.1.2nb2 firefox-107.0.1 firefox-l10n-107.0.1
+ firefox52-52.9.0nb50 fossil-2.20 gawk-5.2.1 gconfmm-2.28.3nb31
+ gdbus-codegen-2.74.3 gdl-3.34.0nb13 gedit-3.36.2nb12 gegl-0.4.40
+ geocode-glib-3.26.2nb5 gimp-2.10.32nb4 glib2-2.74.3 glib2-tools-2.74.3
+ gnome-doc-utils-0.20.10nb13 gnome-icon-theme-symbolic-3.12.0nb18
+ gnupg2-2.2.40nb2 go-1.19.4 go-bin-1.19.4 go118-1.18.9
+ go119-1.19.4nb1 gobject-introspection-1.74.0 graphviz-7.0.4
+ gssdp-1.0.3nb22 gst-plugins0.10-base-0.10.36nb22
+ gst-plugins0.10-good-0.10.31nb11 gst-plugins0.10-oss-0.10.31nb9
+ gstreamer0.10-0.10.36nb21 gtk-doc-1.32nb11 gtk3+-3.24.35
+ gtkmm3-3.24.7 gtksourceview2-2.10.5nb47 gtksourceview3-3.24.11nb10
+ gtksourceview4-4.8.0nb7 gucharmap-2.32.1nb36 gupnp-1.0.3nb19
+ gupnp-igd-0.2.5nb14 gvfs-1.6.7nb61 harfbuzz-5.3.1
+ harfbuzz-icu-5.3.1 hwloc-1.11.13nb6 icu-72.1 inkscape-1.2.1nb2
+ jwm-2.4.3nb1 kdelibs4-4.14.38nb29 kdepimlibs4-4.14.10nb36
+ kfilemetadata-4.14.3nb65 libabw-0.1.3nb14 libappindicator-12.10.0nb13
+ libass-0.17.0 libbaloo4-4.14.3nb31 libbluray-1.3.4 libcdr-0.1.7nb7
+ libcmis-0.5.2nb19 libcroco-0.6.13nb7 libe-book-0.1.3nb23
+ libetonyek-0.1.10nb6 libfreehand-0.1.2nb15 libglade-2.6.4nb40
+ libgsf-1.14.47nb6 libgweather-40.0nb9 libical-3.0.14nb3
+ libkactivities4-4.13.3nb28 liblangtag-0.6.4nb1 libmatekbd-1.26.0
+ libmatemixer-1.26.0 libmateweather-1.26.0 libmspub-0.1.4nb22
+ libmysofa-1.3.1 libnice-0.1.16nb13 libpurple-2.14.10nb2
+ libqxp-0.0.2nb16 libreoffice-7.4.1.2nb2 librsvg-2.54.4nb1
+ libsexy-0.1.11nb39 libsoup-2.70.0nb8 libvisio-0.1.7nb17
+ libwmf-0.2.8.4nb23 libxkbcommon-1.4.1nb1 libxklavier-5.4nb10
+ libxml2-2.9.14nb1 libxslt-1.1.37nb1 libzmf-0.0.2nb24
+ llvm-15.0.6 m17n-lib-1.8.0nb8 marco-1.26.1 mate-applets-1.26.1
+ mate-backgrounds-1.26.0nb1 mate-calc-1.26.0 mate-common-1.26.0
+ mate-desktop-1.26.0 mate-icon-theme-1.26.0nb1
+ mate-icon-theme-faenza-1.20.0nb11 mate-indicator-applet-1.26.0
+ mate-media-1.26.0 mate-menus-1.26.0 mate-netbook-1.26.0
+ mate-notification-daemon-1.26.0 mate-panel-1.26.2 mate-polkit-1.26.1
+ mate-power-manager-1.26.0 mate-screensaver-1.26.1
+ mate-sensors-applet-1.26.0 mate-session-manager-1.26.0
+ mate-settings-daemon-1.26.0 mate-themes-3.22.23nb1 mate-utils-1.26.0
+ medit-1.2.0nb21 meson-0.64.1 mkvtoolnix-72.0.0nb1 mlterm-3.9.2nb8
+ mozilla-rootcerts-1.0.20221204 mozilla-rootcerts-openssl-2.10
+ mozjs78-78.15.0nb4 mozo-1.26.2 mpcomplex-1.1.0 mpfr-4.1.1nb1
+ mpv-0.35.0nb1 netpbm-10.86.34nb1 nghttp2-1.51.0nb1 nghttp3-0.7.1
+ nginx-1.22.1nb3 ngtcp2-0.11.0 nodejs-19.2.0 nss-3.86 pango-1.50.12
+ pcre2-10.41nb1 php-7.4.33nb1 php74-fpm-7.4.33nb10 php74-intl-7.4.33nb9
+ php74-pdo_sqlite-7.4.33nb9 php74-sqlite3-7.4.33nb9 pkgin-22.10.0nb1
+ pluma-1.26.0 png-1.6.39 policykit-0.9nb33 protobuf-3.21.10
+ py27-gtk2-2.24.0nb40 py310-cElementTree-3.10.9 py310-cairo-1.23.0
+ py310-certifi-2022.12.7 py310-chardet-5.1.0 py310-cryptodome-3.16.0
+ py310-cryptography-38.0.4 py310-expat-3.10.9nb1 py310-libxml2-2.9.14nb1
+ py310-lxml-4.9.1nb1 py310-setuptools-65.6.3 py310-sqlite3-3.10.9nb23
+ py310-urllib3-1.26.13 py310-zipp-3.11.0 python310-3.10.9
+ qalculate-3.5.0nb15 qmmp-1.5.1nb12 qt5-qtbase-5.15.7nb1
+ qt5-qtdeclarative-5.15.7nb1 qt5-qtlocation-5.15.7nb1
+ qt5-qtmultimedia-5.15.7nb1 qt5-qtsensors-5.15.7nb1
+ qt5-qtserialport-5.15.7nb1 qt5-qtsvg-5.15.7nb1 qt5-qttools-5.15.7nb1
+ qt5-qtwebchannel-5.15.7nb1 qt5-qtwebsockets-5.15.7nb1
+ qt5-qtx11extras-5.15.7nb1 qt5-qtxmlpatterns-5.15.7nb1 raptor2-2.0.15nb26
+ rarian-0.8.1nb11 rasqal-0.9.33nb27 rclone-1.58.1nb7 readline-8.2nb1
+ redland-1.0.17nb35 ruby31-base-3.1.3 samba-4.17.3 scribus-1.4.8nb16
+ seamonkey-2.53.13nb4 shared-mime-info-2.2nb1 spdlog-1.11.0nb1
+ sqlite3-3.40.0nb1 strigi-0.7.8nb48 tcl-8.6.12nb4 tcsh-6.24.06
+ telepathy-glib-0.24.1nb26 tepl4-4.4.0nb7 uim-1.8.9pre20210104nb5
+ upmendex-1.00nb1 vcdimager-2.0.1nb6 vte3-0.68.0nb9 wavpack-5.6.0
+ wayland-1.21.0nb1 xfce4-mousepad-0.5.10nb2 xfce4-orage-4.16.0nb4
+ xfce4-session-4.16.0nb6 xfce4-settings-4.16.5 xfce4-tumbler-4.16.1nb2
+ xmlto-0.0.28nb8 xscreensaver-6.05.1nb1
 
 System Updates:
 https://github.com/ebijun/NetBSD/commit/2e07db8ce05b7f8dc77b266b9ba98a7cc8dfd170
@@ -252,7 +271,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 9.99.106 (GENERIC64) #0: Tue Nov 22 00:25:52 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 9.99.108 (GENERIC64) #0: Mon Dec 12 21:14:15 UTC 2022  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
