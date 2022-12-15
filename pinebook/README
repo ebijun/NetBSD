@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20221214)
+Subject: pinebook status update (20221215)
 
 NetBSD Arm Bootable Images: NetBSD9/NetBSD-current
  https://nycdn.netbsd.org/pub/arm/
@@ -31,9 +31,11 @@ Problems:
 
   backout xbase,works fine.
   https://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/NetBSD-9.99.106-evbarm-aarch64-202211072300Z-xbase.tar.gz
+  PR port-arm/57112
 
 - pinebook: 
   Using audio interface,rebooting.
+  PR port-arm/57111 
 
 - Pinebook Pro graphics noticeably slower since DRM update
   fixed: PR port-arm/56596 
