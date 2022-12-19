@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.108 (GENERIC64) #0: Sat Dec 10 20:58:37 UTC 2022
+NetBSD 10.99.1 (GENERIC64) #0: Sun Dec 18 12:02:47 UTC 2022
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 7652 MB
 avail memory = 7376 MB
@@ -234,8 +234,8 @@ uhub6 at uhub5 port 1: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1
 umass0 at uhub1 port 1 configuration 1 interface 0
 umass0: BUFFALO (0x0411) SSD-PGMU3C (0x0320), rev 2.10/1.00, addr 1
 umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
 uhub6: 4 ports with 4 removable, self powered
+scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <BUFFALO, SSD-PGMU3C, 0000> disk fixed
 sd0: fabricating a geometry
 sd0: 476 GB, 488386 cyl, 64 head, 32 sec, 512 bytes/sect x 1000215216 sectors
@@ -270,7 +270,7 @@ swwdog0: software watchdog initialized
 boot device: dk6
 root on dk6
 root file system type: ffs
-kern.module.path=/stand/evbarm/9.99.108/modules
+kern.module.path=/stand/evbarm/10.99.1/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!

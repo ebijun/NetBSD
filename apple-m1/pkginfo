@@ -28,7 +28,7 @@ autoconf213-2.13nb11 Generates automatic source code configuration scripts (old 
 automake-1.16.5nb2  GNU Standards-compliant Makefile generator
 avahi-0.8nb5        Facilitate service discovery on a local network
 babl-0.1.98         Dynamic pixel conversion library
-bash-5.2.12         The GNU Bourne Again Shell
+bash-5.2.15         The GNU Bourne Again Shell
 bison-3.8.2nb1      GNU yacc(1) replacement
 blas-3.10.1         Basic Linear Algebra System (Netlib reference implementation)
 boehm-gc-8.2.2      Garbage collection and memory leak detection for C and C++
@@ -140,7 +140,7 @@ ghostscript-agpl-9.56.1nb3 Postscript interpreter
 ghostscript-fonts-8.11nb3 Postscript fonts for Aladdin Ghostscript
 giflib-5.2.1nb4     GIF image format library
 gimp-2.10.32nb4     The GNU image manipulation program
-git-base-2.38.1nb2  GIT Tree History Storage Tool (base package)
+git-base-2.38.2     GIT Tree History Storage Tool (base package)
 gle-3.1.0nb4        GL subroutines for drawing tubing and extrusions
 glew-2.2.0nb2       OpenGL Extension Wrangler Library
 glib-networking-2.72.1nb1 Network-related giomodules for glib
@@ -175,10 +175,10 @@ gst-plugins0.10-oss-0.10.31nb9 Open source multimedia framework - oss plugin
 gst-plugins0.10-theora-0.10.36nb2 Open source multimedia framework - theora plugin
 gst-plugins0.10-v4l2-0.10.31nb9 Open source multimedia framework - v4l2 plugin
 gst-plugins0.10-vorbis-0.10.36nb2 Open source multimedia framework - vorbis plugin
-gst-plugins1-base-1.20.3 Open source multimedia framework - base plugins
-gst-plugins1-good-1.20.3nb2 Open source multimedia framework - good plugins
+gst-plugins1-base-1.20.4 Open source multimedia framework - base plugins
+gst-plugins1-good-1.20.4 Open source multimedia framework - good plugins
 gstreamer0.10-0.10.36nb21 Open source multimedia framework
-gstreamer1-1.20.3   Open source multimedia framework
+gstreamer1-1.20.4   Open source multimedia framework
 gtar-base-1.34      The GNU tape archiver with remote magnetic tape support
 gtk-doc-1.32nb11    Tools for authors of the GTK+ reference documentation
 gtk2+-2.24.33nb7    GIMP Toolkit v2 - libraries for building X11 user interfaces
@@ -449,10 +449,10 @@ meson-0.64.1        Open source build system meant to be fast and user friendly
 midori-9.0nb21      Lightweight web browser using WebKit
 mktexlsr-2020       Create or rebuild ls-R
 mktools-20220614    Collection of pkgsrc mk infrastructure tools
-mlterm-3.9.2nb7     Multilingual terminal emulator
+mlterm-3.9.2nb8     Multilingual terminal emulator
 mm-common-1.0.4nb1  Provides build infrastructure utilities for GNOME C++ libraries
 mng-2.0.3           Multiple-image Network Graphics (MNG) reference library
-modular-xorg-xephyr-21.1.4 Xephyr server based on kdrive from modular X.org
+modular-xorg-xephyr-21.1.5 Xephyr server based on kdrive from modular X.org
 mozilla-rootcerts-1.0.20221204 Root CA certificates from the Mozilla Project
 mozo-1.26.2         Menu editor for MATE
 mpcomplex-1.1.0     Multiprecision complex arithmetic library
@@ -490,7 +490,7 @@ opensp-1.5.2nb11    SGML parser, successor to "sp"
 opusfile-0.12       Decoding and seeking API for opus files
 orc-0.4.33          Compiler for vector operations
 orcus-0.17.2        Import filter library for spreadsheet documents (0.16 branch)
-osabi-NetBSD-9.99.106 Operating System version dummy-package
+osabi-NetBSD-9.99.108 Operating System version dummy-package
 p11-kit-0.24.1      PKCS#11 module manager
 p5-Archive-Zip-1.68nb2 Perl5 module interface to manipulate zip files
 p5-Authen-SASL-2.16nb11 Perl module to handle SASL authentication
@@ -633,7 +633,7 @@ pango-1.50.12       Library for layout and rendering of text
 pciids-20200222     Repository of PCI IDs (pci.ids database)
 pciutils-3.8.0      PCI bus manipulation utility similar to NetBSD pcictl(8)
 pcre-8.45           Perl Compatible Regular Expressions library
-pcre2-10.41nb1      Perl Compatible Regular Expressions library (major version 2)
+pcre2-10.42         Perl Compatible Regular Expressions library (major version 2)
 pcsc-lite-1.9.9     Middleware to access a smart card using SCard API (PC/SC)
 perl-5.36.0         Practical Extraction and Report Language
 php-7.4.33nb1       PHP Hypertext Preprocessor version 7.4
@@ -675,7 +675,7 @@ poppler-glib-22.10.0 PDF rendering library (GLib wrapper)
 popt-1.19           Command line option parsing library
 postgresql14-client-14.6nb1 PostgreSQL database client programs
 potrace-1.16        Utility for transforming bitmaps into vector graphics
-protobuf-3.21.10    Google protocol buffers
+protobuf-3.21.12    Google protocol buffers
 psutils-1.17nb12    Utilities for manipulating PostScript documents
 ptexenc-1.4.0       Library for Japanese pTeX and its tools
 pth-2.0.7nb5        GNU Portable Thread library
@@ -718,7 +718,7 @@ py310-importlib-metadata-4.12.0 Read metadata from Python packages
 py310-iso8601-1.1.0 Simple Python module to parse ISO 8601 dates
 py310-jinja2-3.1.2  Small but fast and easy to use stand-alone template engine
 py310-libxml2-2.9.14nb1 Python wrapper for libxml2
-py310-lxml-4.9.1nb1 Python binding for libxml2 and libxslt
+py310-lxml-4.9.2    Python binding for libxml2 and libxslt
 py310-markdown-3.4.1 XHTML generator using a simple markup
 py310-markupsafe-2.1.1 Implements a unicode subclass that supports HTML strings
 py310-packaging-21.3nb1 Core utilities for Python packages
@@ -727,7 +727,7 @@ py310-pip-22.3.1    Installs Python packages as an easy_install replacement
 py310-poetry-core-1.0.8 Poetry PEP 517 build backend
 py310-pygments-2.13.0 Python syntax highlighter
 py310-pyparsing-3.0.9 Parsing module for Python
-py310-pytz-2022.6   World timezone definitions, modern and historical
+py310-pytz-2022.7   World timezone definitions, modern and historical
 py310-readline-3.10.9 Line editing support for Python
 py310-requests-2.28.1 HTTP library, written in Python, for human beings
 py310-roman-3.3nb2  Integer to Roman numerals converter for Python
@@ -781,21 +781,21 @@ rhash-1.4.3         Calculate/check CRC32, MD5, SHA1, GOST, TTH, BTIH or other h
 rsync-3.2.7         Network file distribution/synchronisation utility
 ruby27-base-2.7.7   Ruby 2.7.7 release minimum base package
 ruby31-addressable-2.8.1 Replacement for the URI Implementation of standard librrary
-ruby31-atk-4.0.4    Ruby binding of ATK-1.0.x or later
+ruby31-atk-4.0.5    Ruby binding of ATK-1.0.x or later
 ruby31-base-3.1.3   Ruby 3.1.3 release minimum base package
 ruby31-bsearch-1.5nb2 Binary search library for Ruby
 ruby31-cairo-1.17.8 Ruby bindings for cairo
-ruby31-cairo-gobject-4.0.4 Ruby binding of cairo-gobject
+ruby31-cairo-gobject-4.0.5 Ruby binding of cairo-gobject
 ruby31-delayer-1.2.1 Ruby module to delay the processing
 ruby31-delayer-deferred-2.2.0 Deferred for Delayer
 ruby31-diva-2.0.1   Implementation of expression for handling things
-ruby31-gdk3-4.0.4   Ruby binding of GDK3
-ruby31-gdk_pixbuf2-4.0.4 Ruby binding of GdkPixbuf-2.x
+ruby31-gdk3-4.0.5   Ruby binding of GDK3
+ruby31-gdk_pixbuf2-4.0.5 Ruby binding of GdkPixbuf-2.x
 ruby31-gettext-3.4.1 Ruby localization library like as GNU gettext
-ruby31-gio2-4.0.4   Ruby binding of gio-2.0.x
-ruby31-glib2-4.0.4  Ruby binding of GLib-2.x
-ruby31-gobject-introspection-4.0.4 Ruby binding of Gobject Introspection
-ruby31-gtk3-4.0.4   Ruby binding of GTK+-3.x
+ruby31-gio2-4.0.5   Ruby binding of gio-2.0.x
+ruby31-glib2-4.0.5  Ruby binding of GLib-2.x
+ruby31-gobject-introspection-4.0.5 Ruby binding of Gobject Introspection
+ruby31-gtk3-4.0.5   Ruby binding of GTK+-3.x
 ruby31-hashie-4.1.0 Small collection of tools that make hashes more powerful
 ruby31-hmac-0.4.0   Common interface to HMAC functionality
 ruby31-httpclient-2.8.3nb1 HTTP accessing library for Ruby
@@ -811,7 +811,7 @@ ruby31-native-package-installer-1.1.5 Helper to install native packages on "gem 
 ruby31-nokogiri-1.13.10 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby31-oauth-1.1.0  OAuth Core Ruby implementation
 ruby31-oauth-tty-1.0.5 OAuth 1.0 TTY CLI
-ruby31-pango-4.0.4  Ruby binding of pango-1.x
+ruby31-pango-4.0.5  Ruby binding of pango-1.x
 ruby31-pkg-config-1.5.1 Pure Ruby implementation of pkg-config
 ruby31-pluggaloid-1.7.0 Extensible plugin system for mikutter
 ruby31-public_suffix-5.0.1 Domain name parser based on the Public Suffix List
@@ -851,7 +851,7 @@ sylpheed-3.7.0nb9   Gtk based e-mail and netnews client
 taglib-1.13         Library for accessing id tags in various media files
 talloc-2.3.4nb1     Hierarchical pool based memory allocator with destructors
 tcl-8.6.12nb4       Tool Command Language, a dynamic language
-tcsh-6.24.04        Extended C-shell with many useful features
+tcsh-6.24.06        Extended C-shell with many useful features
 tdb-1.4.7nb1        Small database system which uses files to store data
 tevent-0.13.0       Event system based on the talloc
 tex-amsfonts-3.04nb1 TeX fonts from the American Mathematical Society
@@ -1004,7 +1004,7 @@ xfce4-orage-4.16.0nb4 Xfce time managing application
 xfce4-panel-4.16.5  Xfce panel
 xfce4-power-manager-4.16.0nb2 Xfce power manager
 xfce4-session-4.16.0nb6 Xfce session manager
-xfce4-settings-4.16.3nb2 Xfce settings manager
+xfce4-settings-4.16.5 Xfce settings manager
 xfce4-terminal-1.0.4nb1 Xfce terminal emulator
 xfce4-thunar-4.16.11nb1 Xfce file manager
 xfce4-tumbler-4.16.1nb2 D-Bus thumbnailing service

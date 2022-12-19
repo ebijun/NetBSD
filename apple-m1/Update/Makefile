@@ -1,5 +1,6 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-9.99.108-evbarm-aarch64-202212102100Z-install.img
+IMG=${RELEASE}/NetBSD-10.99.1-evbarm-aarch64-202212181420Z-install.img
+#IMG=${RELEASE}/NetBSD-9.99.108-evbarm-aarch64-202212102100Z-install.img
 #IMG=${RELEASE}/NetBSD-9.99.106-evbarm-aarch64-202211172110Z-install.img
 #IMG=${RELEASE}/NetBSD-9.99.101-evbarm-aarch64-202210200410Z-install.img
 #IMG=${RELEASE}/NetBSD-9.99.100-evbarm-aarch64-202209222110Z-install.img
