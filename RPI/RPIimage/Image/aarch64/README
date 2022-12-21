@@ -1,21 +1,21 @@
-VERSION: :1,$s/2022-12-13/2022-12-13/g
-ISO:     :1,$s/202212121100Z/202212121100Z/g
-NetBSD:  :1,$s/9.99.108/9.99.108/g
+VERSION: :1,$s/2022-12-21/2022-12-21/g
+ISO:     :1,$s/202212201330Z/202212201330Z/g
+NetBSD:  :1,$s/10.99.1/10.99.1/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-12-13-netbsd-raspi-aarch64.img
+Subject: 2022-12-21-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-12-13-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2022-12-21-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-12-13-aarch64/2022-12-13-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-12-13-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-12-21-aarch64/2022-12-21-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-12-21-aarch64/MD5
 
 Topics:
-- NetBSD-9.99.108
+- NetBSD-10.99.1
 - Raspberry Pi 4 UEFI Firmware v1.34
   Fix PCI DT node address in SyncPcie() [tianocore/edk2-platforms@ad00518]
 - Fixed X stack problem 
@@ -76,7 +76,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 9.99.108 evbarm-aarch64 202212121100Z arm64.img from nyftp.
+- NetBSD-current 10.99.1 evbarm-aarch64 202212201330Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
