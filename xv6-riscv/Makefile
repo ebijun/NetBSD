@@ -1,4 +1,4 @@
-NBTOOLS=src/obj.riscv/tooldir.NetBSD-9.99.91-amd64/bin/
+NBTOOLS=../usr/src/obj.riscv/tooldir.NetBSD-9.99.92-amd64/bin/
 
 start:
 	(cd xv6-riscv;PATH=${NBTOOLS}:${PATH} gmake TOOLPREFIX=riscv64--netbsd- qemu)
