@@ -18,8 +18,9 @@ Topics:
 - NetBSD-10.99.1
 - Raspberry Pi 4 UEFI Firmware v1.34
   Fix PCI DT node address in SyncPcie() [tianocore/edk2-platforms@ad00518]
-- Fixed X stack problem 
-  PR port-arm/57112
+- Please add vchiq at acpi to GENERIC64
+  PR 57044: fixed and pulluped, still open.
+  https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57044
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
