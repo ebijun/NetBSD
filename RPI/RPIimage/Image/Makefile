@@ -9,7 +9,7 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2022
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2023
 
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
