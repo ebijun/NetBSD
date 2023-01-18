@@ -9,12 +9,39 @@ Install:
 
 Topics:
 - X
+ startx failed with signal 11,
+ on NetBSD-10.99.2-evbarm-aarch64-202301170520Z.
+
+[  1603.915] (EE) Backtrace:
+[  1603.915] (EE) 0: /usr/X11R7/bin/X (xorg_backtrace+0x3c) [0x2c93cac]
+[  1603.916] (EE) 1: /usr/X11R7/bin/X (os_move_fd+0x78) [0x2c8e618]
+[  1603.916] (EE) 2: /usr/lib/libc.so.12 (__sigtramp_siginfo_2+0x0) [0xf29da1b2e1e8]
+[  1603.916] (EE) 3: /usr/X11R7/bin/X (CreateColormap+0x498) [0x2b74cb8]
+[  1603.916] (EE) 4: /usr/X11R7/bin/X (miCreateDefColormap+0x84) [0x2be6914]
+[  1603.916] (EE) 5: /usr/X11R7/lib/modules/drivers/wsfb_drv.so (+0x147c) [0xf29da105322c]
+[  1603.916] (EE) 6: /usr/X11R7/bin/X (AddScreen+0xac) [0x2b69e3c]
+[  1603.916] (EE) 7: /usr/X11R7/bin/X (InitOutput+0x26c) [0x2ba633c]
+[  1603.916] (EE) 8: /usr/X11R7/bin/X (dix_main+0x1a0) [0x2b38fd0]
+[  1603.916] (EE) 
+[  1603.916] (EE) Segmentation fault at address 0xf29da1252bb0
+[  1603.916] (EE) 
+Fatal server error:
+[  1603.916] (EE) Caught signal 11 (Segmentation fault). Server aborting
+
  startx but colormap
   https://twitter.com/ebijun/status/1583622834990956545
  
  startx -- -depth 30
   http://mail-index.netbsd.org/port-arm/2021/10/21/msg007458.html
   https://twitter.com/ebijun/status/1480042814704873473
+
+ application checked via tigervnc.
+  https://twitter.com/ebijun/status/1615544069161357314
+
+- lapack-3.11.0
+  pkgsrc/math/lapack make package Stacked,
+  It can build on RPI4/aarch64 
+
 
 Hardware:
  Apple Mac mini M1 2020 A2348 
@@ -34,18 +61,93 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- NetBSD-10.99.1 sh-20220122-20221218120247Z tcsh-6.24.06
- tzdata-2022ggtz userland-NetBSD-10.99.1/evbarm
+ NetBSD-10.99.2 sh-20220122-20230117015643Z
+ tcsh-6.24.07 userland-NetBSD-10.99.2/evbarm
 
 pkgsrc:
- bash-5.2.15 git-base-2.38.2 gst-plugins1-base-1.20.4
- gst-plugins1-good-1.20.4 gstreamer1-1.20.4 mlterm-3.9.2nb8
- modular-xorg-xephyr-21.1.5 osabi-NetBSD-10.99.1 pcre2-10.42
- protobuf-3.21.12 py310-lxml-4.9.2 py310-pytz-2022.7
- ruby31-atk-4.0.5 ruby31-cairo-gobject-4.0.5 ruby31-gdk3-4.0.5
- ruby31-gdk_pixbuf2-4.0.5 ruby31-gio2-4.0.5 ruby31-glib2-4.0.5
- ruby31-gobject-introspection-4.0.5 ruby31-gtk3-4.0.5
- ruby31-pango-4.0.5 tcsh-6.24.06 xfce4-settings-4.16.5
+ ImageMagick-7.1.0.57nb1 ImageMagick6-6.9.11.7nb17 SDL_image-1.2.12nb10
+ atril-1.26.0nb1 automake-1.16.5nb3 blas-3.11.0 caja-1.26.1nb1
+ caja-dropbox-1.26.0nb1 caja-extensions-1.26.1nb2 cblas-3.11.0
+ clang-15.0.7 curl-7.87.0 deforaos-browser-0.5.5nb3
+ deforaos-camera-0.3.0nb6 deforaos-editor-0.4.1nb6
+ deforaos-keyboard-0.4.0nb6 deforaos-libdesktop-0.4.1nb3
+ deforaos-locker-0.4.2nb2 deforaos-mailer-0.2.0nb10
+ deforaos-mixer-0.4.1nb2 deforaos-panel-0.4.3nb3
+ deforaos-pdfviewer-0.1.0nb16 deforaos-phone-0.6.0nb7
+ deforaos-todo-0.3.0nb6 djvulibre-lib-3.5.27nb2 emacs26-26.3nb23
+ engrampa-1.26.0nb1 eom-1.26.0nb1 farstream-0.2.9nb14
+ ffmpeg4-4.4.3nb3 ffmpeg5-5.1.2nb3 firefox-108.0.2 firefox-l10n-108.0.2
+ freerdp2-2.9.0 gcr-3.38.1nb5 gd-2.3.3nb5 gdbus-codegen-2.74.4
+ gdk-pixbuf2-2.42.10nb1 gdk-pixbuf2-xlib-2.40.2nb2 gegl-0.4.40nb1
+ geocode-glib-3.26.2nb6 gettext-lib-0.21.1 gettext-m4-0.21.1
+ gettext-tools-0.21.1 ghostscript-9.05nb29 ghostscript-agpl-10.0.0
+ gimp-2.10.32nb5 git-base-2.39.0 glib2-2.74.4 glib2-tools-2.74.4
+ gnome-desktop-2.32.1nb52 gnome-icon-theme-symbolic-3.12.0nb19
+ gnome-themes-standard-3.20.2nb20 gnupg2-2.2.41
+ gobject-introspection-1.74.0nb1 graphviz-7.0.6
+ gspell-1.8.3nb12 gssdp-1.0.3nb23 gst-plugins1-good-1.20.4nb1
+ gtk2+-2.24.33nb8 gtk2-engines-2.20.2nb31 gtk2-engines-murrine-0.98.2nb14
+ gtk3+-3.24.36nb1 gtksourceview3-3.24.11nb11 gtksourceview4-4.8.0nb8
+ gtkspell-2.0.16nb36 gts-0.7.6nb3 gupnp-1.0.3nb20 gupnp-igd-0.2.5nb15
+ gvfs-1.6.7nb62 help2man-1.49.3 imlib2-1.9.1nb1 jwm-2.4.3nb2
+ lapack-3.11.0 lapacke-3.11.0 lcms-1.19nb4 lcms2-2.14nb1
+ libVNCServer-0.9.13nb5 libappindicator-12.10.0nb14 libcanberra-0.30nb8
+ libcups-2.4.2nb4 libdbusmenu-gtk3-12.10.2nb27 libglade-2.6.4nb41
+ libgsf-1.14.47nb7 libgweather-40.0nb11 libgxps-0.2.2nb26
+ libindicator-12.10.1nb15 libkate-0.4.1nb22 libksba-1.6.3
+ libmatekbd-1.26.0nb1 libmatemixer-1.26.0nb1 libmateweather-1.26.0nb2
+ libnice-0.1.16nb14 libnotify-0.7.12nb3 libpeas-1.26.0nb5
+ libpsl-0.21.2 libreoffice-7.4.1.2nb3 librsvg-2.54.5nb1
+ libsexy-0.1.11nb40 libsixel-1.8.6nb10 libsndfile-1.2.0
+ libsoup-2.74.3nb1 libunique-1.1.6nb34 libunwind-15.0.7
+ libva-2.16.0 libwebp-1.2.4nb1 libwildmidi-0.4.5
+ libwnck-2.30.7nb3 libwnck3-3.36.0nb3 libxfce4ui-4.18.1
+ libxfce4util-4.18.0nb1 libxkbcommon-1.5.0 lld-15.0.7
+ llvm-15.0.7 m17n-lib-1.8.0nb9 marco-1.26.1nb1 mate-1.26.0nb1
+ mate-applets-1.26.1nb2 mate-backgrounds-1.26.0nb2 mate-calc-1.26.0nb1
+ mate-common-1.26.0nb1 mate-control-center-1.26.0nb1 mate-desktop-1.26.0nb1
+ mate-icon-theme-1.26.0nb2 mate-icon-theme-faenza-1.20.0nb12
+ mate-indicator-applet-1.26.0nb1 mate-media-1.26.0nb1
+ mate-menus-1.26.0nb1 mate-netbook-1.26.0nb1
+ mate-notification-daemon-1.26.0nb1 mate-panel-1.26.2nb2
+ mate-polkit-1.26.1nb1 mate-power-manager-1.26.0nb1
+ mate-screensaver-1.26.1nb1 mate-sensors-applet-1.26.0nb1
+ mate-session-manager-1.26.0nb1 mate-settings-daemon-1.26.0nb1
+ mate-terminal-1.26.0nb1 mate-themes-3.22.23nb2
+ mate-utils-1.26.0nb1 medit-1.2.0nb22 meson-1.0.0
+ midori-9.0nb23 mlterm-3.9.2nb9 modular-xorg-xephyr-21.1.6
+ mozo-1.26.2nb1 mpfr-4.2.0 netpbm-10.86.34nb2
+ nginx-1.22.1nb4 nono-0.4.4nb1 nss-3.87
+ openjpeg-2.5.0nb1 p5-CGI-4.55 p5-Clone-0.46
+ p5-DateTime-TimeZone-2.57 p5-HTML-Parser-3.80
+ p5-HTTP-Message-6.44nb1 p5-Mozilla-CA-20221114
+ p5-Variable-Magic-0.63 pciutils-3.9.0 php74-gd-7.4.33nb3
+ php74-nextcloud-25.0.2 pluma-1.26.0nb1 podofo-0.9.6nb5
+ poppler-22.10.0nb1 poppler-cpp-22.10.0nb1 poppler-glib-22.10.0nb1
+ py27-gtk2-2.24.0nb41 py310-OpenSSL-23.0.0 py310-alabaster-0.7.13
+ py310-cryptography-39.0.0 py310-curses-3.10.9nb6
+ py310-pytz-2022.7.1 py310-requests-2.28.2 py310-setuptools_scm-7.1.0
+ py310-sphinxcontrib-applehelp-1.0.3 py310-urllib3-1.26.14
+ python27-2.7.18nb10 qt5-qtbase-5.15.8 qt5-qtdeclarative-5.15.8
+ qt5-qtlocation-5.15.8 qt5-qtmultimedia-5.15.8 qt5-qtsensors-5.15.8
+ qt5-qtserialport-5.15.8 qt5-qtsvg-5.15.8 qt5-qttools-5.15.8
+ qt5-qtwebchannel-5.15.8 qt5-qtwebsockets-5.15.8 qt5-qtx11extras-5.15.8
+ qt5-qtxmlpatterns-5.15.8 rsync-3.2.7nb1 ruby31-gdk3-4.0.5nb1
+ ruby31-gdk_pixbuf2-4.0.5nb1 ruby31-gtk3-4.0.5nb1
+ ruby31-mikutter-5.0.4nb2 samba-4.17.4nb1 seamonkey-2.53.13nb5
+ sqlite3-3.40.1 sylpheed-3.7.0nb10 tcsh-6.24.07
+ tex-texlive-scripts-2022nb2 tiff-4.5.0 uim-1.8.9pre20210104nb6
+ vte-0.28.1nb29 vte3-0.68.0nb10 w3m-0.5.3.0.20220429nb2
+ wayland-protocols-1.31nb1 webkit-gtk-2.36.8nb3 wxGTK30-3.0.5.1nb9
+ xcb-util-0.4.1 xfce4-4.18.0nb2 xfce4-appfinder-4.18.0nb1
+ xfce4-conf-4.18.0nb1 xfce4-desktop-4.18.0nb1 xfce4-exo-4.18.0nb1
+ xfce4-garcon-4.18.0nb2 xfce4-icon-theme-4.4.3nb37
+ xfce4-mousepad-0.5.10nb3 xfce4-orage-4.16.0nb5 xfce4-panel-4.18.0nb1
+ xfce4-power-manager-4.18.0nb1 xfce4-session-4.18.0nb1
+ xfce4-settings-4.18.1nb1 xfce4-terminal-1.0.4nb2 xfce4-thunar-4.18.1nb1
+ xfce4-tumbler-4.18.0nb1 xfce4-wm-4.18.0nb1 xfce4-wm-themes-4.10.0nb19
+ xnp2-0.86nb17 xorgproto-2022.2 xscreensaver-6.05.1nb2
+ xterm-378 zenity-3.41.0nb4
 
 Version: 
  `uname -v`

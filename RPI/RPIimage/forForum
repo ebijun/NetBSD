@@ -1,23 +1,23 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2022-03-08/2022-03-08/g
-:1,$s/9.99.81/9.99.81/g
+:1,$s/2022-12-23/2022-12-23/g
+:1,$s/10.99.2/10.99.2/g
 :1,$s/202104010300Z/202104010300Z/g
 :1,$s?2021/04/02/msg007213.html?2021/04/02/msg007213.html?
 
-2022/03 NetBSD 9.99.94 image update
+2022/12 NetBSD 10.99 image update
 
-I've updated 2022-03 NetBSD images.
+I've updated 2022-12 NetBSD images.
 
-2022-03-05-netbsd-raspi-earmv6hf.img: for RPI0-3
- http://mail-index.netbsd.org/port-arm/2022/03/05/msg007597.html
+2022-12-23-netbsd-raspi-earmv6hf.img: for RPI0-3
+ http://mail-index.netbsd.org/port-arm/2022/12/23/msg008061.html
 
-2022-03-08-netbsd-raspi-aarch64.img: for RPI4
- http://mail-index.netbsd.org/port-arm/2022/03/08/msg007601.html
+2022-12-21-netbsd-raspi-aarch64.img: for RPI4
+ http://mail-index.netbsd.org/port-arm/2022/12/21/msg008056.html
 
 
 Update:
-- NetBSD 9.99.94 rpi.img from nyftp.
+- NetBSD 10.99 rpi.img from nyftp.
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/pkgsrc/pkginfo
@@ -34,6 +34,7 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3A+
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3B+
+  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/RPI4B
 
 Security:
 - security.pax.mprotect.enabled
