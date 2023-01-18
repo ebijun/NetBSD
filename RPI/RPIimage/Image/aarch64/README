@@ -1,21 +1,22 @@
-VERSION: :1,$s/2022-12-21/2022-12-21/g
-ISO:     :1,$s/202212201330Z/202212201330Z/g
-NetBSD:  :1,$s/10.99.1/10.99.1/g
+VERSION: :1,$s/2023-01-18/2023-01-18/g
+ISO:     :1,$s/202301171520Z/202301171520Z/g
+NetBSD:  :1,$s/10.99.2/10.99.2/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-12-21-netbsd-raspi-aarch64.img
+Subject: 2023-01-18-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-12-21-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2023-01-18-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-12-21-aarch64/2022-12-21-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2022-12-21-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-01-18-aarch64/2023-01-18-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-01-18-aarch64/MD5
 
 Topics:
-- NetBSD-10.99.1
+- NetBSD-10.99.2
+- adjust image file layout between /boot & NetBSD partition.
 - Raspberry Pi 4 UEFI Firmware v1.34
   Fix PCI DT node address in SyncPcie() [tianocore/edk2-platforms@ad00518]
 - Please add vchiq at acpi to GENERIC64
@@ -49,14 +50,24 @@ bwfm0: autoconfiguration error: NVRAM file not available
 - pkgin support
   edit /usr/pkg/etc/pkgin/repositories.conf
   cf.
-  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2022
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2023
   and pkgin update
 
 sysinfo:
- NetBSD-10.99.1 sh-20220122-20221220094009Z userland-NetBSD-10.99.1/evbarm
+ NetBSD-10.99.2 sh-20220122-20230117142711Z
+ tcsh-6.24.07 userland-NetBSD-10.99.2/evbarm
 
 pkgsrc:
- bash-5.2.15 git-base-2.39.0 pcre2-10.42
+ bash-5.2.15 curl-7.87.0 gd-2.3.3nb5 gdk-pixbuf2-2.42.10nb1
+ git-base-2.39.0 glib2-2.74.4 gobject-introspection-1.74.0nb1
+ gtk2+-2.24.33nb8 gtk3+-3.24.36nb1 libcups-2.4.2nb4
+ libpsl-0.21.2 libwebp-1.2.4nb1 libxkbcommon-1.5.0
+ m17n-lib-1.8.0nb9 medit-1.2.0nb22 mlterm-3.9.2nb9
+ p5-Mozilla-CA-20221114 pcre2-10.42 qt5-qtbase-5.15.8
+ qt5-qtx11extras-5.15.8 qt5-qtxmlpatterns-5.15.8 ruby31-gdk3-4.0.5nb1
+ ruby31-gdk_pixbuf2-4.0.5nb1 ruby31-gtk3-4.0.5nb1 ruby31-mikutter-5.0.4nb2
+ tcsh-6.24.07 tiff-4.5.0 uim-1.8.9pre20210104nb6
+ wayland-protocols-1.31nb1 xcb-util-0.4.1
 
 RPI4 status:
 - boot via UEFI_VER=v1.34
@@ -77,7 +88,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.1 evbarm-aarch64 202212201330Z arm64.img from nyftp.
+- NetBSD-current 10.99.2 evbarm-aarch64 202301171520Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
@@ -95,7 +106,7 @@ https://github.com/ebijun/NetBSD/commit/1b3ef330ecf023aa73d58ccb8b4029c520f33cdf
    pkg_add inkscape
    pkg_add gimp
    pkg_add scribus
-   pkg_add py38-sphinx
+   pkg_add py310-sphinx
    pkg_add wxGTK30
    pkg_add gnome-keyring
 

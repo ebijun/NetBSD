@@ -7,7 +7,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2023/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202212201330Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202301171520Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img.gz
 #RPI=${BINARY}/gzimg/arm64mbr.img.gz
@@ -92,8 +92,8 @@ restore:
 gpt:
 	vnconfig ${VND} ${FILE}
 	gpt create -p 2 ${VND}
-	gpt add -i 1 -l "EFI" -s 163840 -t efi ${VND}
-	gpt add -i 2 -l "netbsd-root" -s 4751355 -t ffs ${VND}
+	gpt add -i 1 -l "EFI" -s 90200 -t efi ${VND}
+	gpt add -i 2 -l "netbsd-root" -s 4824995 -t ffs ${VND}
 
 	newfs_msdos /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |head -2 |tail -1`
 	newfs -n 500000 -b 4096 /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |tail -1`
