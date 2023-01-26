@@ -1,0 +1,162 @@
+.. 
+ Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+===========================================
+オープンソースカンファレンスNetBSDブースこの一年
+===========================================
+
+日本NetBSDユーザーグループは2022年もオープンソースカンファレンスを中心とするイベントに参加しています。
+2020/1のOSC2020大阪以降はZOOMでの参加になりました。
+NetBSD/aarch64からZOOM会議に参加する試みをしました。
+従来、ブースへの展示機材持ち込み＆差し入れに代わり、事前にtwitter上でデモ動画等を投稿されたものをtogetterでまとめておいて
+紹介するようにしてみました。、引き続きセミナー時間での参加・発表を歓迎します。
+
+NetBSD環境からのZOOM会議参加
+-----------------------------
+
+NetBSDからZOOM等の会議に参加するためには、以下の手順をとります。
+
+#. rustが動くようにする。
+#. audioが動くようにする。
+#. 内蔵カメラが動くようにする。
+#. Firefox80以降をpkgsrcからインストールする
+#. FirefoxのプラグインでLinuxまたはFreeBSDからインストールしているように見せかける。
+
+これまでに参加した一覧
+----------------------
+
+これまでに参加した一覧は以下のとおりです。
+
+  https://github.com/ebijun/NetBSD/blob/master/Guide/OSC/OSC100.csv
+
+
+このファイルはオープンソースカンファレンス過去来場者数一覧 http://www.ospn.jp/visitors/ を元に作成しています。
+
+
+どのくらい参加しているか
+-------------------------
+
+- 2022/12/17までにOSCは212回開催されています。
+- JNUGは189回参加しています。90.0%→89.1% (前年比0.9%減)
+
+OSCこの一年
+--------------
+
+2022年まとめ
+^^^^^^^^^^^^
+
+- 日本全国各地で9回オンライン開催+ODC開催 
+- 参加者: 103,111人 年間参加者ここまで1848 人 3140人(2020年)→3115人(2021年)　
+- 参加団体:6160グループ 年間参加グループここまで89グループ 152グループ(2020) → 133グループ(2021)
+
+.. csv-table:: この一年
+ :widths: 10 40 10 20 30 30
+
+ 回数,イベント,日付,参加者,参加グループ,参加したら1
+ 202,2022 Online/Osaka,1/29,190,11,1
+ 203,2022 Online/Spring,3/11-12,420,19,1
+ 204,2022 Online/Aizu,4/30,105,,
+ 205,2022 Online/Nagoya,5/28,280,21,1
+ 206,2022 Online/Hokkaido,6/25,325,18,1
+ 207,2022 Online/Kyoto,7/29-30,235,14,1
+ 208,2022 Online/Yamaguchi,8/28,87,,
+ ,ODC Online,9/3,206,6,参加
+ 209,,2022 Online/Hiroshima,10/1,99,9,1
+ 210,,2022 Online/Fall,10/29-30,270,15,1
+ 211,2022 Online/Nagaoka,11/12,40,,KOF中継
+ 212,,2022 Online/Fukuoka,11/26,126,14,1
+
+ 
+togetterアクセスで見たNetBSDブース
+-----------------------------------
+togetterのアクセスログは以下の場所にあります。
+
+  https://github.com/ebijun/NetBSD/blob/master/Event/togetter/togetterview/view.csv
+
+この一年のアクセス数集計は以下の通りです。
+
+.. csv-table::
+ :widths: 120 60 10
+
+ OSC2022 Online/Fukuoka,https://togetter.com/li/1977568,416
+ KOF 2022,https://togetter.com/li/1970580,924
+ OSC2022 Online/Fall,https://togetter.com/li/1964480,898
+ OSC2022 Online/Hiroshima ,https://togetter.com/li/1950893,695
+ ODC2022 Online,https://togetter.com/li/1938050,1076
+ OSC2022 Online/Kyoto,https://togetter.com/li/1921498,1556
+ OSC2022 Online/Hokkaido,https://togetter.com/li/1905889,1449
+ OSC2022 Online/Nagoya,https://togetter.com/li/1891762,1031
+ OSC2022 Online/Spring,https://togetter.com/li/1856809,867
+ OSC2022 Online/Osaka,https://togetter.com/li/1835534,1109
+
+netbsd-advocacyメーリングリストへの報告
+--------------------------------------------
+
+netbsd-advocacyメーリングリストへの参加報告をしてみました。
+
+.. csv-table::
+
+ NetBSD machines at Open Source Conference 2020 Osaka,http://mail-index.netbsd.org/netbsd-advocacy/2020/01/28/msg000823.html
+
+NetBSD観光ガイド作成
+------------------------
+
+イベント毎に観光ガイドを作っています。セミナー参加者に配布しました。
+
+一覧：
+
+ https://github.com/ebijun/osc-demo/blob/master/README.md
+
+
+作成方法： 
+
+ https://github.com/ebijun/NetBSD/blob/master/Guide/Paper/sphinx.rst
+
+.. csv-table::
+ :widths: 10 20 100
+
+ 183,OSC2022福岡,http://www.re.soum.co.jp/~jun/OSC2022fukuoka.pdf
+ 182, KOF2022 ,http://www.re.soum.co.jp/~jun/KOF2022.pdf
+ 181, OSC2022東京秋,http://www.re.soum.co.jp/~jun/OSC2022tokyofall.pdf
+ 180,OSC2022広島, http://www.re.soum.co.jp/~jun/OSC2022hiroshima.pdf
+ 179,ODC2022,http://www.re.soum.co.jp/~jun/ODC2022.pdf
+ 178,OSC2022京都,http://www.re.soum.co.jp/~jun/OSC2022kyoto.pdf
+ 177,OSC2022北海道,http://www.re.soum.co.jp/~jun/OSC2022hokkaido.pdf
+ 176,OSC2022名古屋,http://www.re.soum.co.jp/~jun/OSC2022nagoya.pdf
+ 175,OSC2022東京春,http://www.re.soum.co.jp/~jun/OSC2022tokyospring.pdf
+ 174,OSC2022大阪,http://www.re.soum.co.jp/~jun/OSC2022osaka.pdf
+
+旅費
+--------
+
+横浜からの旅費(=交通費＋宿泊費),機材配送費,資料印刷費実費をまとめています。
+
+.. csv-table::
+ :widths: 10 50 30 20
+ 
+ 月,イベント,旅費,機材配送
+ 2020/1,OSC大阪,26080,1469
+
+2023年
+-------------
+
+2023年もしばらくの間はオンライン開催が続きそうですが、現地グループが集まったハイブリッド開催もできるようになってきました。OSCは2023/1/28のOSC Online大阪(https://event.ospn.jp/osc2023-online-osaka/)からはじまります。セミナー/ミーティング時間での発表を歓迎します。
+

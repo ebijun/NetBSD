@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -23,12 +23,12 @@
  :maxdepth: 3
  :numbered:
 
- Place/fukuoka
- RPI/RPIupdate2022
+ Place/osaka
+ RPI/RPIupdate2023
  RPI
  Luna
  Pkgsrc/nono
  latexpdf
  Place/intro
- OSC/OSC2022
+ OSC/OSC2023
  AGM/2022-agm.rst
