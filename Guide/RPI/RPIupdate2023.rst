@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -20,7 +20,7 @@
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ===========================================
-RaspberryPIのNetBSDイメージ2022進捗どうですか
+RaspberryPIのNetBSDイメージ2023進捗どうですか
 ===========================================
 
 
@@ -35,13 +35,7 @@ RaspberryPIのNetBSDイメージについて
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
- 2021/8/26,9.99.88,,,,bind-9.16.20,ODC,http://mail-index.netbsd.org/port-arm/2021/08/23/msg007421.html
- 2021/9/18,9.99.88,4.1.6,,,openssh8.6,OSC広島,http://mail-index.netbsd.org/port-arm/2021/09/17/msg007439.html
- 2021/10/2,9.99.90,,,,,OSC新潟,http://mail-index.netbsd.org/port-arm/2021/09/25/msg007444.html
- 2021/10/23,(9.99.92),4.1.7,,,(openssh8.8),OSC東京秋,http://mail-index.netbsd.org/port-arm/2021/10/18/msg007452.html
- 2021/11/13,9.99.92,,,,openssh8.8 Zero2,KOF2021,http://mail-index.netbsd.org/port-arm/2021/11/05/msg007482.html
- 2021/11/20,9.99.92,,,,ファーム更新,OSC福岡,http://mail-index.netbsd.org/port-arm/2021/11/17/msg007495.html
-  2022/1/29,9.99.92,5.0.2,3.9.2,1.1.1m,drm大改修,OSC大阪,http://mail-index.netbsd.org/port-arm/2022/01/10/msg007542.html
+ 2022/1/29,9.99.92,5.0.2,3.9.2,1.1.1m,drm大改修,OSC大阪,http://mail-index.netbsd.org/port-arm/2022/01/10/msg007542.html
  2022/3/12,9.99.94,5.0.4,,,tor,OSC東京春,http://mail-index.netbsd.org/port-arm/2022/03/05/msg007597.html
  2022/4/09,9.99.96,,,1.1.1n,,,http://mail-index.netbsd.org/port-arm/2022/03/05/msg007628.html
  2022/5/28,9.99.96,,3.9.2nb1,,OpenSSH9.0,OSC名古屋,http://mail-index.netbsd.org/port-arm/2022/03/05/msg007674.html
@@ -50,7 +44,7 @@ RaspberryPIのNetBSDイメージについて
  2022/8/28,9.99.99,5.04nb1,3.9.2nb5,,nono 0.4.3,ODC,http://mail-index.netbsd.org/port-arm/2022/08/30/msg007814.html
  2022/9/24,9.99.100,,3.9.2nb6,,,OSC広島,http://mail-index.netbsd.org/port-arm/2022/09/24/msg007863.html
  2022/10/29,9.99.102,,,,rust/earmv6hf,OSC東京,http://mail-index.netbsd.org/port-arm/2022/10/26/msg007897.html
-  2022/11/26,9.99.106,,,,sudo,OSC福岡,http://mail-index.netbsd.org/port-arm/2022/11/22/msg007990.html
+ 2023/1/28,10.99.2,5.0.4nb2,3.9.2,,10ブランチ,OSC大阪,http://mail-index.netbsd.org/port-arm/2023/01/19/msg008093.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。

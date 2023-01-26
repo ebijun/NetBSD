@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2022 Jun Ebihara All rights reserved.
+ Copyright (c) 2022-3 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -41,10 +41,10 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
--rw-r--r--  1 jun  wheel  1180 Oct 27 23:42 Makefile
--rw-r--r--  1 jun  wheel   558 Oct 27 23:42 distinfo
+ -rw-r--r--  1 jun  wheel  1180 Oct 27 23:42 Makefile
+ -rw-r--r--  1 jun  wheel   558 Oct 27 23:42 distinfo
 
- make package して動作を確認します。
+make package して動作を確認します。
  
 pkglint
 ----------

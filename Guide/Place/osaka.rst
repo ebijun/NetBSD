@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -34,6 +34,8 @@ Maps:
 
 .. csv-table::
  :widths: 70 70
+
+ OSC2023 Online/Osaka NetBSDのご紹介 の記録,https://togetter.com/li/2060234
  関西オープンソース2022 BSDなひととき の記録,https://togetter.com/li/1970580
  OSC2022 Online/Osaka NetBSDのご紹介 の記録,https://togetter.com/li/1835534
  関西オープンソース2021 BSDなひととき の記録,https://togetter.com/li/1800758
@@ -110,6 +112,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 37年前の Sun 3/60 のために最新のNetBSDと最新のX.orgをメンテする話,KOF2022, https://speakerdeck.com/tsutsui/kof2022
  お歳暮でSun3が送られてきたので,OSC2020大阪,https://speakerdeck.com/tsutsui/osc2020osaka
  Fixing NetBSD/zaurus 8.1,KOF2019,https://speakerdeck.com/tsutsui/kof2019-netbsd
  dosbox tutorial,OSC2019大阪,@kapper1224 http://kapper1224.sblo.jp/
@@ -134,6 +137,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2022/11/12,大阪産業創造館,sun3/60
  2020/1/25,大阪産業創造館, NetBSD9.0 RC1/sun3 
  2019/11/8-9,南港ATC,mplayer on ZAURUS/PC6001VX/X68030 with Neptune-X
  2019/1/26,大阪産業創造館,X68030+nanotodon
@@ -154,6 +158,34 @@ Maps:
  2005/10/28-29,大阪産業創造館,EWS4800/360AD ドリキャス+ISAバス　USL-5P
  2004/10-22-23,大阪産業創造館,XCAST ふきだしくん 
  2003/10/31-11/1,大阪産業創造館,XCAST トレバ
+
+2022
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2022/11/11/DSC_0706.JPG
+.. image::  ../Picture/2022/11/12/DSC_0716.JPG
+.. image::  ../Picture/2022/11/12/DSC_0717.JPG
+.. image::  ../Picture/2022/11/12/DSC_0718.JPG
+.. image::  ../Picture/2022/11/12/DSC_0719.JPG
+.. image::  ../Picture/2022/11/12/DSC_0720.JPG
+.. image::  ../Picture/2022/11/12/DSC_0721.JPG
+.. image::  ../Picture/2022/11/12/DSC_0722.JPG
+.. image::  ../Picture/2022/11/12/DSC_0723.JPG
+.. image::  ../Picture/2022/11/12/DSC_0724.JPG
+.. image::  ../Picture/2022/11/12/DSC_0725.JPG
+.. image::  ../Picture/2022/11/12/DSC_0726.JPG
+.. image::  ../Picture/2022/11/12/DSC_0727.JPG
+.. image::  ../Picture/2022/11/12/DSC_0729.JPG
+.. image::  ../Picture/2022/11/12/DSC_0730.JPG
+.. image::  ../Picture/2022/11/12/DSC_0731.JPG
+.. image::  ../Picture/2022/11/12/DSC_0732.JPG
+.. image::  ../Picture/2022/11/12/DSC_0733.JPG
+.. image::  ../Picture/2022/11/12/DSC_0734.JPG
+.. image::  ../Picture/2022/11/12/DSC_0735.JPG
+.. image::  ../Picture/2022/11/12/DSC_0739.JPG
+.. image::  ../Picture/2022/11/12/DSC_0747.JPG
+.. image::  ../Picture/2022/11/12/DSC_0748.JPG
+.. image::  ../Picture/2022/11/12/DSC_0749.JPG
 
 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
