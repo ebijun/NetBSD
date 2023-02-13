@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.5.0
+ DISTNAME=       nono-0.5.1
 
 チェックサム作成
 ------------------
@@ -41,8 +41,8 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
- -rw-r--r--  1 jun  wheel  1180 Oct 27 23:42 Makefile
- -rw-r--r--  1 jun  wheel   558 Oct 27 23:42 distinfo
+ -rw-r--r--  1 jun  wheel  1182 Feb 14 06:42 Makefile
+ -rw-r--r--  1 jun  wheel   558 Feb 14 06:43 distinfo
 
 make package して動作を確認します。
  
@@ -70,23 +70,18 @@ commit
 
  cvs commit 
 
- nono: update to 0.5.0.
+ nono: update to 0.5.1.
  
- Changes in 0.5.0:
- vm(New): "Start to implement HD647180."
- vm(New): "Implement X68030 extended memory."
- vm(Fix): "Fix an abnormal termination on writing to DREG when buffer full in SPC."
- m68k(Update): "Improve performance of m68030."
- debugger(Fix): "Fix BackSpace input."
- GUI(Update): "Reorganize monitor menu."
- GUI(Update): "Add mainview scale specified in configuration and monitor rate to menu."
- GUI(Fix): "Support 24 dot fonts in memory dump window."
- app(New): "Implement --create-sram option."
- app(New): "Support configuration file ~/.nono.cfg."
- app(Update): "Support configration fast-mode monitor-fontsize mainview-scale"
- app(Update): "Support display format specification in -Mmemdump."
-~
-
+ Changes in 0.5.1:
+ 
+ vm(Fix): "Fix a bus error in areas with no extended memory in X68030."
+ vm(Update): "Implement DAA instruction on HD647180."
+ debugger(Fix): "Fix breakpoints set while HD647180 is in reset state not working."
+ GUI(New):  "Implement a device map monitor."
+ GUI(Update): "Link control size with font size, on DIPSW window."
+ GUI(Fix):  "Support 24 dot fonts in a bitmap monitor window."
+ GUI(Fix): "Fix an abnormal termination when a bitmap monitor window is resized." 
+ 
 
 doc をcommit します
 ---------------------
@@ -96,9 +91,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to  0.5.0
+ doc: Updated emulators/nono to  0.5.1
  
  cvs diff -u CHANGES-2023
- Updated emulators/nono to 0.5.0 [jun 2023-01-26]
+ Updated emulators/nono to 0.5.1 [jun 2023-02-14]
 
 
