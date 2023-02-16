@@ -1,27 +1,23 @@
-VERSION: :1,$s/2023-01-18/2023-01-18/g
-ISO:     :1,$s/202301171520Z/202301171520Z/g
+VERSION: :1,$s/2023-02-16/2023-02-16/g
+ISO:     :1,$s/202302150640Z/202302150640Z/g
 NetBSD:  :1,$s/10.99.2/10.99.2/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2023-01-18-netbsd-raspi-aarch64.img
+Subject: 2023-02-16-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2023-01-18-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2023-02-16-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-01-18-aarch64/2023-01-18-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-01-18-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-02-16-aarch64/2023-02-16-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-02-16-aarch64/MD5
 
 Topics:
 - NetBSD-10.99.2
-- adjust image file layout between /boot & NetBSD partition.
 - Raspberry Pi 4 UEFI Firmware v1.34
   Fix PCI DT node address in SyncPcie() [tianocore/edk2-platforms@ad00518]
-- Please add vchiq at acpi to GENERIC64
-  PR 57044: fixed and pulluped, still open.
-  https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57044
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
@@ -54,20 +50,22 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- NetBSD-10.99.2 sh-20220122-20230117142711Z
- tcsh-6.24.07 userland-NetBSD-10.99.2/evbarm
+ bind-9.16.37 openssl-1.1.1t sh-20220122-20230215063151Z
 
 pkgsrc:
- bash-5.2.15 curl-7.87.0 gd-2.3.3nb5 gdk-pixbuf2-2.42.10nb1
- git-base-2.39.0 glib2-2.74.4 gobject-introspection-1.74.0nb1
- gtk2+-2.24.33nb8 gtk3+-3.24.36nb1 libcups-2.4.2nb4
- libpsl-0.21.2 libwebp-1.2.4nb1 libxkbcommon-1.5.0
- m17n-lib-1.8.0nb9 medit-1.2.0nb22 mlterm-3.9.2nb9
- p5-Mozilla-CA-20221114 pcre2-10.42 qt5-qtbase-5.15.8
- qt5-qtx11extras-5.15.8 qt5-qtxmlpatterns-5.15.8 ruby31-gdk3-4.0.5nb1
- ruby31-gdk_pixbuf2-4.0.5nb1 ruby31-gtk3-4.0.5nb1 ruby31-mikutter-5.0.4nb2
- tcsh-6.24.07 tiff-4.5.0 uim-1.8.9pre20210104nb6
- wayland-protocols-1.31nb1 xcb-util-0.4.1
+ brotli-1.0.9 cairo-1.16.0nb9 cairo-gobject-1.16.0nb7 dillo-3.0.5nb12
+ fltk-1.3.8nb2 fontconfig-2.14.2 freetype2-2.13.0 gd-2.3.3nb6
+ gdk-pixbuf2-2.42.10nb2 git-base-2.39.1 glib2-2.74.5 graphite2-1.3.14nb1
+ gtk2+-2.24.33nb9 gtk3+-3.24.36nb2 harfbuzz-6.0.0 libXft-2.3.7nb1
+ libotf-0.9.16nb3 libxml2-2.10.3nb2 m17n-lib-1.8.0nb10 medit-1.2.0nb23
+ mlterm-3.9.2nb10 pango-1.50.12nb1 py310-cElementTree-3.10.10
+ py310-expat-3.10.10nb1 python310-3.10.10 qt5-qtbase-5.15.8nb1
+ qt5-qtx11extras-5.15.8nb1 qt5-qtxmlpatterns-5.15.8nb1 ruby31-atk-4.1.1
+ ruby31-cairo-1.17.8nb1 ruby31-cairo-gobject-4.1.1 ruby31-gdk3-4.1.1
+ ruby31-gdk_pixbuf2-4.1.1 ruby31-gio2-4.1.1 ruby31-glib2-4.1.1
+ ruby31-gobject-introspection-4.1.1 ruby31-gtk3-4.1.1
+ ruby31-mikutter-5.0.4nb3 ruby31-pango-4.1.1 sudo-1.9.12p2
+ tiff-4.5.0nb1 zstd-1.5.4
 
 RPI4 status:
 - boot via UEFI_VER=v1.34
@@ -88,7 +86,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.2 evbarm-aarch64 202301171520Z arm64.img from nyftp.
+- NetBSD-current 10.99.2 evbarm-aarch64 202302150640Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
@@ -138,7 +136,7 @@ Pre-installed packages:
 
 - pre-build packages:
   See /etc/pkg_install.conf
-  PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2022/
+  PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2023/
 
 pkgsrc: 
   # cd /usr
