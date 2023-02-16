@@ -1,8 +1,7 @@
 RELEASE=/usr/release/images
-#IMG=${RELEASE}/NetBSD-10.99.2-evbarm-aarch64-202301170520Z-install.img
+IMG=${RELEASE}/NetBSD-10.99.2-evbarm-aarch64-202302150640Z-install.img
 
-# Test X11
-IMG=${RELEASE}/NetBSD-10.99.1-evbarm-aarch64-202212181420Z-install.img
+#IMG=${RELEASE}/NetBSD-10.99.2-evbarm-aarch64-202301170520Z-install.img
 
 IMAGE=arm64.img
 VND0=/dev/sd0

@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.2 (GENERIC64) #0: Tue Jan 17 01:56:43 UTC 2023
+NetBSD 10.99.2 (GENERIC64) #0: Wed Feb 15 06:31:51 UTC 2023
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 7652 MB
 avail memory = 7376 MB
@@ -241,21 +241,21 @@ sd0: fabricating a geometry
 sd0: 476 GB, 488386 cyl, 64 head, 32 sec, 512 bytes/sect x 1000215216 sectors
 sd0: fabricating a geometry
 uhidev0 at uhub6 port 3 configuration 1 interface 0
-uhidev0: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 2, iclass 3/1
-ums0 at uhidev0: 3 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
+uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/1
+ukbd0 at uhidev0
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub6 port 3 configuration 1 interface 1
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 2, iclass 3/0
+uhidev1: 2 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
 sd0: GPT GUID: 7d34b4fa-6c48-4c94-980b-783ee852d022
 dk5 at sd0: "EFI", 163840 blocks at 32768, type: msdos
 dk6 at sd0: "netbsd-root", 1000013824 blocks at 196608, type: ffs
-uhidev1 at uhub6 port 4 configuration 1 interface 0
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/1
-ukbd0 at uhidev1
-wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev2 at uhub6 port 4 configuration 1 interface 1
-uhidev2: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/0
-uhidev2: 2 report ids
-uhid0 at uhidev2 reportid 1: input=1, output=0, feature=0
-uhid1 at uhidev2 reportid 2: input=3, output=0, feature=0
+uhidev2 at uhub6 port 4 configuration 1 interface 0
+uhidev2: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 3, iclass 3/1
+ums0 at uhidev2: 3 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
 uaudio0 at uhub5 port 2 configuration 1 interface 0
 uaudio0: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 4
 uaudio0: audio rev 1.00
@@ -276,20 +276,17 @@ WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
-vnd0: GPT GUID: 31036f97-4237-4868-bb55-b3df15576a49
-dk7 at vnd0: "EFI system", 262144 blocks at 2048, type: msdos
-dk8 at vnd0: "0cdf4226-044a-4221-bcf6-25bcd693d4cc", 3112960 blocks at 264192, type: ffs
-wsmouse0: detached
-ums0: detached
-uhidev0: detached
-uhidev0: at uhub6 port 3 (addr 2) disconnected
 ukbd0: was console keyboard
 wskbd0: detached
 ukbd0: detached
-uhidev1: detached
-uhidev1: at uhub6 port 4 (addr 3) disconnected
+uhidev0: detached
+uhidev0: at uhub6 port 3 (addr 2) disconnected
 uhid1: detached
 uhid0: detached
+uhidev1: detached
+uhidev1: at uhub6 port 3 (addr 2) disconnected
+wsmouse0: detached
+ums0: detached
 uhidev2: detached
 uhidev2: at uhub6 port 4 (addr 3) disconnected
 uhub6: detached
