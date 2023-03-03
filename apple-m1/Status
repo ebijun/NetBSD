@@ -10,24 +10,24 @@ Install:
 Topics:
 - X
  startx failed with signal 11,
- on NetBSD-10.99.2-evbarm-aarch64-202302150640Z
+ till NetBSD-10.99.2-evbarm-aarch64-202302150640Z
 
 X.Org X Server 1.21.1.7
-[    45.481] (EE) Backtrace:
-[    45.482] (EE) 0: /usr/X11R7/bin/X (xorg_backtrace+0x3c) [0x8be1b8c]
-[    45.482] (EE) 1: /usr/X11R7/bin/X (os_move_fd+0x78) [0x8bdd4f8]
-[    45.482] (EE) 2: /usr/lib/libc.so.12 (__sigtramp_siginfo_2+0x0) [0xf30fef81e1e8]
-[    45.482] (EE) 3: /usr/X11R7/bin/X (CreateColormap+0x498) [0x8ac4ae8]
-[    45.482] (EE) 4: /usr/X11R7/bin/X (miCreateDefColormap+0x84) [0x8b37744]
-[    45.482] (EE) 5: /usr/X11R7/lib/modules/drivers/wsfb_drv.so (+0x147c) [0xf30fee68322c]
-[    45.482] (EE) 6: /usr/X11R7/bin/X (AddScreen+0xac) [0x8ab9c6c]
-[    45.482] (EE) 7: /usr/X11R7/bin/X (InitOutput+0x26c) [0x8af616c]
-[    45.482] (EE) 8: /usr/X11R7/bin/X (dix_main+0x1a0) [0x8a88fd0]
-[    45.482] (EE) 
-[    45.482] (EE) Segmentation fault at address 0xf30fef2428f0
-[    45.482] (EE) 
+[    40.591] (EE) Backtrace:
+[    40.592] (EE) 0: /usr/X11R7/bin/X (xorg_backtrace+0x3c) [0x9761b8c]
+[    40.592] (EE) 1: /usr/X11R7/bin/X (os_move_fd+0x78) [0x975d4f8]
+[    40.592] (EE) 2: /usr/lib/libc.so.12 (__sigtramp_siginfo_2+0x0) [0xf7d48807e1e8]
+[    40.592] (EE) 3: /usr/X11R7/bin/X (CreateColormap+0x418) [0x9644a68]
+[    40.592] (EE) 4: /usr/X11R7/bin/X (miCreateDefColormap+0x84) [0x96b7744]
+[    40.592] (EE) 5: /usr/X11R7/lib/modules/drivers/wsfb_drv.so (+0x147c) [0xf7d4874e322c]
+[    40.592] (EE) 6: /usr/X11R7/bin/X (AddScreen+0xac) [0x9639c6c]
+[    40.592] (EE) 7: /usr/X11R7/bin/X (InitOutput+0x26c) [0x967616c]
+[    40.592] (EE) 8: /usr/X11R7/bin/X (dix_main+0x1a0) [0x9608fd0]
+[    40.592] (EE) 
+[    40.592] (EE) Segmentation fault at address 0xf7d487aa07f0
+[    40.592] (EE) 
 Fatal server error:
-[    45.482] (EE) Caught signal 11 (Segmentation fault). Server aborting
+[    40.592] (EE) Caught signal 11 (Segmentation fault). Server aborting
 
  startx but colormap
   https://twitter.com/ebijun/status/1583622834990956545
@@ -69,116 +69,22 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- bind-9.16.37 openssl-1.1.1t sh-20220122-20230215063151Z
+ sh-20220122-20230301200841Z
 
 pkgsrc:
- ImageMagick-7.1.0.60 ImageMagick6-6.9.11.7nb18 SDL2-2.26.3
- SDL_ttf-2.0.11nb5 apache-2.4.55 apr-1.7.2 apr-util-1.6.3
- atril-1.26.0nb2 babl-0.1.98nb1 boost-headers-1.81.0
- boost-jam-1.81.0 boost-libs-1.81.0 cairo-1.16.0nb9
- cairo-gobject-1.16.0nb7 cairomm-1.14.4nb1 caja-1.26.1nb2
- caja-dropbox-1.26.0nb2 caja-extensions-1.26.1nb3 cmake-3.25.2
- compat90-9.0nb1 dbus-1.14.6 dconf-0.40.0nb3 deforaos-browser-0.5.5nb4
- deforaos-camera-0.3.0nb7 deforaos-editor-0.4.1nb7
- deforaos-keyboard-0.4.0nb7 deforaos-libdesktop-0.4.1nb4
- deforaos-mailer-0.2.0nb11 deforaos-mixer-0.4.1nb3 deforaos-panel-0.4.3nb4
- deforaos-pdfviewer-0.1.0nb17 deforaos-phone-0.6.0nb8 deforaos-todo-0.3.0nb7
- dillo-3.0.5nb12 emacs26-26.3nb24 engrampa-1.26.0nb2 eom-1.26.0nb2
- exempi-2.5.2nb5 ffmpeg4-4.4.3nb4 ffmpeg5-5.1.2nb4 ffmpegthumbnailer-2.2.2nb4
- firefox-109.0.1 firefox-l10n-109.0.1 fltk-1.3.8nb2 fluidsynth-2.3.1
- fontconfig-2.14.2 freerdp2-2.9.0nb1 freetype2-2.13.0 gcr-3.38.1nb6
- gd-2.3.3nb6 gdbus-codegen-2.74.5 gdk-pixbuf2-2.42.10nb2 gegl-0.4.40nb2
- gexiv2-0.14.0nb2 ghc-9.4.4nb2 ghostscript-9.05nb30 ghostscript-agpl-10.0.0nb1
- gimp-2.10.32nb6 git-base-2.39.2 glib2-2.74.5 glib2-tools-2.74.5
- gnome-desktop-2.32.1nb53 gnome-icon-theme-symbolic-3.12.0nb20
- gnome-themes-standard-3.20.2nb21 gnutls-3.8.0 graphite2-1.3.14nb1
- graphviz-7.1.0nb1 gspell-1.8.3nb13 gssdp-1.0.3nb24 gst-plugins1-base-1.20.5
- gst-plugins1-good-1.20.5nb1 gstreamer1-1.20.5 gtk2+-2.24.33nb9
- gtk2-engines-2.20.2nb32 gtk2-engines-murrine-0.98.2nb15
- gtk3+-3.24.36nb2 gtksourceview3-3.24.11nb12 gtksourceview4-4.8.0nb9
- gtkspell-2.0.16nb37 gupnp-1.0.3nb21 harfbuzz-7.0.0 harfbuzz-icu-7.0.0
- hs-attoparsec-0.14.4nb3 hs-base-compat-0.12.2nb1
- hs-base-compat-batteries-0.12.2nb1 hs-data-array-byte-0.1.0.1nb1
- hs-fail-4.9.0.0nb5 hs-hashable-1.4.2.0nb1 hs-integer-logarithms-1.0.3.1nb6
- hs-primitive-0.7.4.0nb1 hs-scientific-0.3.7.0nb3 hs-th-abstraction-0.4.5.0nb1
- hunspell-1.7.2nb1 imlib2-1.9.1nb2 itstool-2.0.7nb2
- jwm-2.4.3nb3 ladspa-1.17nb3 libXft-2.3.7nb1 libabw-0.1.3nb15
- libappindicator-12.10.0nb15 libass-0.17.0nb1 libbluray-1.3.4nb1
- libcanberra-0.30nb9 libcdr-0.1.7nb8 libclucene-2.3.3.4nb23
- libdbusmenu-glib-12.10.2nb17 libdbusmenu-gtk3-12.10.2nb28
- libde265-1.0.11 libe-book-0.1.3nb24 libepubgen-0.1.1nb6
- libetonyek-0.1.10nb7 libfreehand-0.1.2nb16 libglade-2.6.4nb42
- libgweather-40.0nb12 libgxps-0.2.2nb27 libiconv-1.17 libindicator-12.10.1nb16
- libixion-0.17.0nb1 libkate-0.4.1nb23 libmatekbd-1.26.0nb2
- libmatemixer-1.26.0nb2 libmateweather-1.26.0nb3 libmspub-0.1.4nb23
- libmwaw-0.3.21nb1 libnotify-0.8.1 libodfgen-0.1.7nb6 libotf-0.9.16nb3
- libpagemaker-0.0.4nb12 libpeas-1.26.0nb6 libpurple-2.14.12
- libqxp-0.0.2nb17 libreoffice-7.5.0.3 librevenge-0.0.4nb17 librsvg-2.54.5nb2
- libsamplerate-0.2.2nb3 libsecret-0.20.4nb7 libsexy-0.1.11nb41
- libsixel-1.8.6nb11 libsndfile-1.2.0nb1 libspectre-0.2.9nb2
- libstaroffice-0.0.7nb6 libunique-1.1.6nb35 libva-2.17.0
- libvisio-0.1.7nb18 libvpx-1.13.0 libwmf-0.2.8.4nb24 libwnck-2.30.7nb4
- libwnck3-3.36.0nb4 libwpd-0.10.3nb6 libwpg-0.3.3nb9 libwps-0.4.12nb5
- libxfce4ui-4.18.2 libxfce4util-4.18.1nb1 libxml2-2.10.3nb2
- libzmf-0.0.2nb25 luatex-1.15.0nb2 m17n-lib-1.8.0nb10 marco-1.26.1nb2
- mate-1.26.0nb2 mate-applets-1.26.1nb3 mate-backgrounds-1.26.0nb3
- mate-calc-1.26.0nb2 mate-common-1.26.0nb2 mate-control-center-1.26.0nb2
- mate-desktop-1.26.0nb2 mate-icon-theme-1.26.0nb3
- mate-icon-theme-faenza-1.20.0nb13 mate-indicator-applet-1.26.0nb2
- mate-media-1.26.0nb2 mate-menus-1.26.0nb2 mate-netbook-1.26.0nb2
- mate-notification-daemon-1.26.0nb2 mate-panel-1.26.2nb3
- mate-polkit-1.26.1nb2 mate-power-manager-1.26.0nb2 mate-screensaver-1.26.1nb2
- mate-sensors-applet-1.26.0nb2 mate-session-manager-1.26.0nb2
- mate-settings-daemon-1.26.0nb2 mate-terminal-1.26.0nb2 mate-themes-3.22.23nb3
- mate-utils-1.26.0nb2 mdds-2.0.1nb1 medit-1.2.0nb23 midori-9.0nb24
- mlterm-3.9.2nb10 mozo-1.26.2nb2 mpg123-1.31.2 nasm-2.16.01
- ncurses-6.4 ncursesw-6.4 neon-0.32.5 nginx-1.22.1nb5 nono-0.5.1
- nss-3.88.1 onscripter-20191116nb2 orcus-0.17.2nb1 osabi-NetBSD-10.99.2
- p5-Alien-Build-2.38nb2 p5-Alien-Libxml2-0.17nb5 p5-Carp-1.50nb4
- p5-Crypt-RC4-2.02nb14 p5-Data-Dumper-2.183nb1 p5-Digest-Perl-MD5-1.9nb8
- p5-FFI-CheckLib-0.28nb1 p5-File-Which-1.27nb1 p5-File-chdir-0.1010nb8
- p5-Filter-1.60nb2 p5-Finance-Quote-1.53nb1 p5-HTML-LinkExtractor-0.13nb14
- p5-HTML-Selector-XPath-0.26 p5-HTML-TokeParser-Simple-3.16nb9
- p5-HTML-TreeBuilder-LibXML-0.26nb6 p5-HTML-TreeBuilder-XPath-0.14nb11
- p5-IO-stringy-2.111nb8 p5-OLE-Storage_Lite-0.20nb3
- p5-Path-Tiny-0.144 p5-PkgConfig-0.25026nb2 p5-Spiffy-0.46nb8
- p5-Spreadsheet-ParseExcel-0.6500nb7 p5-Spreadsheet-XLSX-0.15nb7
- p5-Sub-Override-0.09nb8 p5-Test-Base-0.89nb5 p5-Test-Deep-1.204
- p5-Test-YAML-1.07nb5 p5-UNIVERSAL-require-0.19nb1 p5-Web-Scraper-0.38nb8
- p5-XML-LibXML-2.0207nb5 p5-XML-XPathEngine-0.14nb9 p5-YAML-1.30nb2
- pango-1.50.12nb1 php74-gd-7.4.33nb4 pkgconf-1.9.4 pluma-1.26.0nb2
- podofo-0.9.8nb1 poppler-23.01.0nb1 poppler-cpp-23.01.0nb1
- poppler-data-0.4.12 poppler-glib-23.01.0nb1 pulseaudio-16.1nb3
- py-gobject-shared-2.28.7nb7 py27-cairo-1.18.2nb3 py27-gtk2-2.24.0nb42
- py310-cElementTree-3.10.10 py310-cairo-1.23.0nb1 py310-cryptodome-3.17
- py310-cryptography-39.0.1 py310-curses-3.10.10nb6 py310-expat-3.10.10nb1
- py310-gobject3-3.42.0nb1 py310-libxml2-2.10.3nb2 py310-packaging-23.0
- py310-pygments-2.14.0 py310-pyproject_hooks-1.0.0 py310-readline-3.10.10
- py310-setuptools-67.2.0 py310-sphinxcontrib-htmlhelp-2.0.1
- py310-sqlite3-3.10.10nb23 py310-zipp-3.13.0 python310-3.10.10
- qmmp-1.5.1nb13 qt5-qtbase-5.15.8nb1 qt5-qtdeclarative-5.15.8nb1
- qt5-qtlocation-5.15.8nb1 qt5-qtmultimedia-5.15.8nb1 qt5-qtsensors-5.15.8nb1
- qt5-qtserialport-5.15.8nb1 qt5-qtsvg-5.15.8nb1 qt5-qttools-5.15.8nb1
- qt5-qtwebchannel-5.15.8nb1 qt5-qtwebsockets-5.15.8nb1
- qt5-qtx11extras-5.15.8nb1 qt5-qtxmlpatterns-5.15.8nb1
- ruby31-atk-4.1.1 ruby31-cairo-1.17.8nb1 ruby31-cairo-gobject-4.1.1
- ruby31-gdk3-4.1.1 ruby31-gdk_pixbuf2-4.1.1 ruby31-gio2-4.1.1
- ruby31-glib2-4.1.1 ruby31-gobject-introspection-4.1.1
- ruby31-gtk3-4.1.1 ruby31-pango-4.1.1 rust-1.66.1
- samba-4.17.5 seamonkey-2.53.13nb6 sudo-1.9.12p2 sylpheed-3.7.0nb11
- talloc-2.4.0 tdb-1.4.8 tevent-0.14.1 tiff-4.5.0nb1
- tigervnc-1.12.0.1.20.13nb6 tk-8.6.12nb1 ttmkfdir2-20021109nb7
- vala-0.56.3nb1 vte-0.28.1nb30 vte3-0.68.0nb11 waf-2.0.25
- web2c-2022nb1 webkit-gtk-2.36.8nb4 wxGTK30-3.0.5.1nb10
- x11-links-1.35 xfce4-4.18.0nb3 xfce4-appfinder-4.18.0nb2
- xfce4-conf-4.18.0nb2 xfce4-desktop-4.18.0nb2 xfce4-exo-4.18.0nb2
- xfce4-garcon-4.18.0nb3 xfce4-icon-theme-4.4.3nb38
- xfce4-mousepad-0.6.0 xfce4-orage-4.18.0 xfce4-panel-4.18.0nb2
- xfce4-power-manager-4.18.1 xfce4-session-4.18.1 xfce4-settings-4.18.2
- xfce4-terminal-1.0.4nb3 xfce4-thunar-4.18.3nb1 xfce4-tumbler-4.18.0nb2
- xfce4-wm-4.18.0nb2 xfce4-wm-themes-4.10.0nb20 xkeyboard-config-2.38
- xnp2-0.86nb18 xorg-cf-files-1.0.7nb2 xorg-util-macros-1.20.0
- xscreensaver-6.05.1nb3 zenity-3.41.0nb5 zstd-1.5.4
+ ImageMagick-7.1.0.62 curl-7.88.1 dav1d-1.1.0 firefox-110.0
+ firefox-l10n-110.0 font-util-1.4.0 gdbus-codegen-2.74.6
+ glib-networking-2.74.0 glib2-2.74.6 glib2-tools-2.74.6
+ gnupg2-2.4.0 gnutls-3.8.0nb1 libass-0.17.1 libproxy-0.4.18
+ lmdb-0.9.30 meson-1.0.1 nghttp2-1.52.0 openal-soft-1.23.0
+ p5-HTTP-Daemon-6.15 poppler-23.02.0 poppler-cpp-23.02.0
+ poppler-glib-23.02.0 postgresql14-client-14.7 py310-build-0.10.0
+ py310-pip-23.0.1 py310-setuptools-67.3.3
+ py310-typing-extensions-4.5.0 py310-zipp-3.15.0 ruby31-atk-4.1.2
+ ruby31-cairo-gobject-4.1.2 ruby31-gdk3-4.1.2 ruby31-gdk_pixbuf2-4.1.2
+ ruby31-gio2-4.1.2 ruby31-glib2-4.1.2 ruby31-gobject-introspection-4.1.2
+ ruby31-gtk3-4.1.2 ruby31-pango-4.1.2 sqlite3-3.41.0
+ sudo-1.9.13p2 uim-1.8.9 xorg-cf-files-1.0.8
 
 Version: 
  `uname -v`
