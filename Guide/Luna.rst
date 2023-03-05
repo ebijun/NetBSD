@@ -672,7 +672,9 @@ LUNA年表　- 月の刃
  2022/9,井,lunafb(4) improvement [186]_
  2022/10,井,nono-0.4.4リリース [187]_
  2023/1,井,nono-0.5.0リリース [188]_
-  
+ 2023/2,井,nono-0.5.1リリース [189]_
+ 2023/2,青,LUNA88K Boot 0.8 [190]_ 
+ 
 最近のLUNA
 ----------------
 
@@ -926,6 +928,8 @@ yaft X LUNA
 .. [186] http://mail-index.netbsd.org/source-changes/2022/09/25/msg141239.html
 .. [187] https://twitter.com/isaki68k/status/1585612735932674049
 .. [188] https://twitter.com/isaki68k/status/1618215457722617856
+.. [189] https://twitter.com/isaki68k/status/1624651445684563968
+.. [190] https://twitter.com/ao_kenji/status/1625846099394330625
 
 このページ
 ~~~~~~~~~~~
