@@ -72,7 +72,11 @@ Maps:
  2020 Fall,10/23-24,500,15,オンライン
  2021 Spring,3/6-7,570,26,オンライン
  2021 Fall,10/22-23,350,18,オンライン
- 2022 Spring,3/11-12,,,オンライン
+ 2022 Spring,3/11-12,420,19,オンライン
+ 2022 Fall,10/28-29,270,15,オンライン
+ 2023 Spring,3/10-11,,,オンライン
+ 2023 Tokyo,4/1,,,東京都立産業貿易センター台東館
+ 
 
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,7 +89,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 
+
+ 185, OSC2023東京春,http://www.re.soum.co.jp/~jun/OSC2023tokyospring.pdf 
  181, OSC2022東京秋,http://www.re.soum.co.jp/~jun/OSC2022tokyofall.pdf
  175, OSC2022東京春, http://www.re.soum.co.jp/~jun/OSC2022tokyospring.pdf
  171,OSC2021東京秋,http://www.re.soum.co.jp/~jun/OSC2021tokyofall.pdf
@@ -117,10 +122,11 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2023 Online/Spring NetBSDのご紹介 の記録, https://togetter.com/li/2094211
  OSC2022 Online/Fall BSDなひととき の記録,https://togetter.com/li/1964480
- OSC2022 Online/SpringNetBSDのご紹介 の記録, https://togetter.com/li/1856809
+ OSC2022 Online/Spring NetBSDのご紹介 の記録, https://togetter.com/li/1856809
  OSC2021 Online/Fall NetBSDのご紹介 の記録,https://togetter.com/li/1790501
- OSC2021 Online/SpringNetBSDのご紹介 の記録,https://togetter.com/li/1675363
+ OSC2021 Online/Spring NetBSDのご紹介 の記録,https://togetter.com/li/1675363
  OSC2020東京秋 BSDなひととき の記録,https://togetter.com/li/1611536
  OSC2019東京秋 NetBSDブース展示の記録,https://togetter.com/li/1433822
  OSC2019東京春 NetBSDブース展示の記録, https://togetter.com/li/1321833
