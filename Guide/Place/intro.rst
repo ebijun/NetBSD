@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -228,6 +228,35 @@ IRCクライアントとして hexchatをインストールします。
   # サーバ選択画面で http://Libera.Chat 指定します。
   # チャンネルに#netbsd を指定します。
  # 設定→設定→インタフェース→外観→一般→フォントでフォント選んで、右端の表示が切れるのを直します。
+
+aws/kubectl コマンド
+~~~~~~~~~~~~~~
+
+AWSを操作するコマンドはnet/py-awscliにあります。
+
+::
+
+ # cd /usr/pkgsrc/net/py-awscli
+ # make package-install
+ # which aws
+ /usr/pkg/bin/aws
+ % aws
+ Note: AWS CLI version 2, the latest major version of the AWS CLI, is now stable and recommended for general use. For more information, see the AWS CLI version 2 installation instructions at: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+ 
+ usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+
+kubectl は net/kubectl にあります。
+
+::
+
+ # cd /usr/pkgsrc/net/kubectl
+ # make package-install
+ # which kubectl
+ /usr/pkg/bin/kubectl
+ % kubectl
+ kubectl controls the Kubernetes cluster manager.
+
+ Find more information at: https://kubernetes.io/docs/reference/kubectl/overview/
 
 依存しているパッケージを調べる
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

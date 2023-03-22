@@ -108,3 +108,16 @@ uplatexを使う
 
 
 .. [1] https://texwiki.texjp.org/?LaTeX のエラーメッセージ
+
+pip でのモジュール追加
+-----------------------------
+
+pip は/usr/pkg/bin/pip3.10 にあります。pip+バージョンです。sphinxcontribに追加する場合の例です。
+
+::
+
+ % pip3.10  install sphinxcontrib-blockdiag
+ % pip3.10  install sphinxcontrib-seqdiag
+ % pip3.10  install sphinxcontrib-actdiag
+ % pip3.10  install sphinxcontrib-nwdiag
+ 
