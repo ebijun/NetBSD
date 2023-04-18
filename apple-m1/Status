@@ -8,6 +8,19 @@ Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Topics:
+- USB2 audio
+recognize , but audio output causes reboot.
+
+uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 4
+uaudio0: ignored setting with format 0x80000000
+uaudio0: audio rev 2.00
+audio0 at uaudio0: playback
+audio0: slinear_le:16 2ch 48000Hz, blk 23040 bytes (60ms) for playback
+spkr0 at audio0: PC Speaker (synthesized)
+
+- pkgsrc/math blas lapack and lapacke make stacked
+  make fine on RPI4.
+
 - X
  startx failed with signal 11,
  till NetBSD-10.99.2-evbarm-aarch64-202302150640Z
@@ -69,22 +82,59 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- sh-20220122-20230301200841Z
+ libm-0.13 NetBSD-10.99.3 sh-20220122-20230417203743Z
+ tzdata-2023cgtz userland-NetBSD-10.99.3/evbarm
 
 pkgsrc:
- ImageMagick-7.1.0.62 curl-7.88.1 dav1d-1.1.0 firefox-110.0
- firefox-l10n-110.0 font-util-1.4.0 gdbus-codegen-2.74.6
- glib-networking-2.74.0 glib2-2.74.6 glib2-tools-2.74.6
- gnupg2-2.4.0 gnutls-3.8.0nb1 libass-0.17.1 libproxy-0.4.18
- lmdb-0.9.30 meson-1.0.1 nghttp2-1.52.0 openal-soft-1.23.0
- p5-HTTP-Daemon-6.15 poppler-23.02.0 poppler-cpp-23.02.0
- poppler-glib-23.02.0 postgresql14-client-14.7 py310-build-0.10.0
- py310-pip-23.0.1 py310-setuptools-67.3.3
- py310-typing-extensions-4.5.0 py310-zipp-3.15.0 ruby31-atk-4.1.2
- ruby31-cairo-gobject-4.1.2 ruby31-gdk3-4.1.2 ruby31-gdk_pixbuf2-4.1.2
- ruby31-gio2-4.1.2 ruby31-glib2-4.1.2 ruby31-gobject-introspection-4.1.2
- ruby31-gtk3-4.1.2 ruby31-pango-4.1.2 sqlite3-3.41.0
- sudo-1.9.13p2 uim-1.8.9 xorg-cf-files-1.0.8
+ ImageMagick-7.1.1.6 SDL2-2.26.5 abseil-20230125.2 apache-2.4.57
+ apr-1.7.3nb1 cmake-3.26.3 curl-8.0.1 eigen3-3.4.0
+ elementary-xfce-icon-theme-0.17nb2 ffmpeg5-5.1.3
+ firefox-111.0.1 firefox-l10n-111.0.1 fossil-2.21
+ freeimage-3.18.0nb9 gegl-0.4.40nb3 ghostscript-agpl-10.0.0nb2
+ giflib-5.2.1nb5 git-base-2.40.0 gmake-4.4.1 googletest-1.13.0
+ gpgme-1.19.0 gsed-4.9nb1 gst-plugins1-bad-1.22.1
+ gst-plugins1-base-1.22.1 gst-plugins1-good-1.22.1
+ gstreamer1-1.22.1 gtar-base-1.34nb1 guile30-3.0.9nb1
+ guile30-slib-3.2.6 harfbuzz-7.1.0 harfbuzz-icu-7.1.0
+ jasper-4.0.0 kicad-7.0.0 kpathsea-6.3.5 ldb-2.6.2
+ libcups-2.4.2nb5 libfixmath-0.0.0pre20220623nb1
+ libgcrypt-1.10.2 libgpg-error-1.47 libheif-1.15.2nb1
+ libmspack-0.10.1alpha libpaper-2.1.0nb2 libpeas-1.26.0nb7
+ libraw-0.21.1nb1 librsvg-2.56.0 libv4l-1.24.1
+ libva-2.18.0 libxfce4ui-4.18.3 libxml2-2.10.4
+ luatex-1.16.0 makejvf-20220723 mate-desktop-1.26.1
+ md4c-0.4.8 mendexk-3.6nb1 mlterm-3.9.3 mozilla-rootcerts-openssl-2.10
+ mpg123-1.31.3 netpbm-10.86.34nb3 nono-0.6.0 nss-3.89
+ occt-7.7.0 openexr-3.1.6 osg-3.6.5nb31 p5-DateTime-TimeZone-2.60
+ p5-Filter-1.64 p5-IPC-Run3-0.048nb8 p5-Test-Fatal-0.017
+ php74-nextcloud-25.0.4 pkgconf-1.9.4nb1 poppler-23.03.0
+ poppler-cpp-23.03.0 poppler-glib-23.03.0 poppler-includes-23.03.0
+ psutils-2.10 ptexenc-1.4.3 py310-cElementTree-3.10.11
+ py310-cryptography-39.0.2 py310-curses-3.10.11nb6 py310-expat-3.10.11nb1
+ py310-importlib-metadata-6.1.0 py310-libxml2-2.10.4 py310-markdown-3.4.3
+ py310-markupsafe-2.1.2 py310-packaging-23.1 py310-pip-23.0.1nb1
+ py310-pygments-2.15.0 py310-pytz-2023.3 py310-readline-3.10.11
+ py310-setuptools-67.6.1 py310-sqlite3-3.10.11nb23 py310-urllib3-1.26.15
+ python310-3.10.11 qmmp-1.5.1nb14 qt5-qtbase-5.15.9
+ qt5-qtdeclarative-5.15.9 qt5-qtlocation-5.15.9 qt5-qtmultimedia-5.15.9
+ qt5-qtsensors-5.15.9 qt5-qtserialport-5.15.9 qt5-qtsvg-5.15.9
+ qt5-qttools-5.15.9 qt5-qtwebchannel-5.15.9 qt5-qtwebsockets-5.15.9
+ qt5-qtx11extras-5.15.9 qt5-qtxmlpatterns-5.15.9 rapidjson-1.1.0nb1
+ raptor2-2.0.16 rasqal-0.9.33nb28 redland-1.0.17nb36
+ ruby27-base-2.7.8 ruby31-base-3.1.4 ruby31-moneta-1.6.0
+ ruby31-version_gem-1.1.2 rust-1.68.2 samba-4.17.7 scribus-1.5.8nb7
+ sqlite3-3.41.2 sudo-1.9.13p3 swig4-4.1.1 tex-babel-3.87
+ tex-fancyvrb-4.5a tex-firstaid-1.0u tex-graphics-1.4e.66204
+ tex-graphics-def-2022.64487 tex-haranoaji-20230223 tex-hypdoc-1.18
+ tex-hyperref-7.00v tex-hyphen-base-2023 tex-kpathsea-2023
+ tex-kvsetkeys-1.19 tex-l3backend-2023 tex-l3kernel-2023
+ tex-l3packages-2023 tex-latex-20221101.1 tex-luatex-1.16.0
+ tex-oberdiek-2022 tex-pdftex-2022 tex-texlive-scripts-2023
+ tex-texlive-scripts-doc-2023 tex-texlive.infra-2023 tex-tools-2022.64892
+ tex-unicode-data-1.16 vala-0.56.5 web2c-2023
+ wxGTK32-3.2.2.1 xfce4-4.18.0nb4 xfce4-desktop-4.18.1 xfce4-garcon-4.18.1
+ xfce4-panel-4.18.3 xfce4-session-4.18.2 xfce4-thunar-4.18.4
+ zstd-1.5.5
 
 Version: 
  `uname -v`
