@@ -1,21 +1,21 @@
-VERSION: :1,$s/2023-03-04/2023-03-04/g
-ISO:     :1,$s/202303030400Z/202303030400Z/g
-NetBSD:  :1,$s/10.99.2/10.99.2/g
-PKGSRC:  :1,$s/2023-03-04/2022/
+VERSION: :1,$s/2023-04-19/2023-04-19/g
+ISO:     :1,$s/202304172110Z/202304172110Z/g
+NetBSD:  :1,$s/10.99.3/10.99.3/g
+PKGSRC:  :1,$s/2023-04-19/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2023-03-04-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2023-04-19-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2023-03-04-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2023-04-19-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-03-04-earmv6hf/2023-03-04-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-03-04-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-04-19-earmv6hf/2023-04-19-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-04-19-earmv6hf/MD5
 
 Update:
-- NetBSD 10.99.2 evbarm-earmv6hf 2202303030400Z rpi.img from nyftp.
+- NetBSD 10.99.3 evbarm-earmv6hf 2202304172110Z rpi.img from nyftp.
 
 - armv6 on QEMU (was Re: armv6 support for rust)
   http://mail-index.netbsd.org/tech-pkg/2022/10/21/msg026888.html
@@ -73,14 +73,17 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- sh-20220122-20230302054510Z
+ libm-0.13 NetBSD-10.99.3 sh-20220122-20230417203743Z tcsh-6.24.10
+ tzdata-2023cgtz userland-NetBSD-10.99.3/evbarm
 
 pkgsrc:
- curl-7.88.1 dbus-1.14.6 glib2-2.74.6 gnutls-3.8.0nb1 libproxy-0.4.18
- nghttp2-1.52.0 ruby31-atk-4.1.2 ruby31-cairo-gobject-4.1.2 ruby31-gdk3-4.1.2
- ruby31-gdk_pixbuf2-4.1.2 ruby31-gio2-4.1.2 ruby31-glib2-4.1.2
- ruby31-gobject-introspection-4.1.2 ruby31-gtk3-4.1.2 ruby31-pango-4.1.2
- sudo-1.9.13p2 uim-1.8.9
+ curl-8.0.1 double-conversion-3.2.1 fossil-2.21 giflib-5.2.1nb5
+ git-base-2.40.0 harfbuzz-7.1.0 libgcrypt-1.10.2 libgpg-error-1.47
+ libpaper-2.1.0nb2 libxml2-2.10.4 md4c-0.4.8 mlterm-3.9.3
+ py310-cElementTree-3.10.11 py310-expat-3.10.11nb1 python310-3.10.11
+ qt5-qtbase-5.15.9 qt5-qtx11extras-5.15.9 qt5-qtxmlpatterns-5.15.9
+ ruby31-base-3.1.4 ruby31-moneta-1.6.0 ruby31-version_gem-1.1.2
+ sudo-1.9.13p3 tcsh-6.24.10 uim-1.8.9nb1 zstd-1.5.5
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -139,7 +142,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-03-04-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-04-19-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -371,7 +374,7 @@ http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2022.rst
 
-- NetBSD 10.99.2 earmv6hf rpi.img.gz base
+- NetBSD 10.99.3 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
