@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.3 (GENERIC64) #0: Mon Apr 17 20:37:43 UTC 2023
+NetBSD 10.99.4 (GENERIC64) #0: Mon May  8 01:28:35 UTC 2023
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 7652 MB
 avail memory = 7376 MB
@@ -235,45 +235,42 @@ umass0: BUFFALO (0x0411) SSD-PGMU3C (0x0320), rev 2.10/1.00, addr 1
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <BUFFALO, SSD-PGMU3C, 0000> disk fixed
-uaudio0 at uhub5 port 1 configuration 1 interface 0
-uaudio0: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 1
-uaudio0: audio rev 1.00
-audio0 at uaudio0: playback
-audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (60ms) for playback
-spkr0 at audio0: PC Speaker (synthesized)
-wsbell at spkr0 not configured
-uhidev0 at uhub5 port 1 configuration 1 interface 2
-uhidev0: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 1, iclass 3/0
-uhid0 at uhidev0: input=1, output=0, feature=0
+uhub6 at uhub5 port 1: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1.10/3.00, addr 1
+uhub6: 4 ports with 4 removable, self powered
 sd0: fabricating a geometry
 sd0: 476 GB, 488386 cyl, 64 head, 32 sec, 512 bytes/sect x 1000215216 sectors
 sd0: fabricating a geometry
-uhub6 at uhub5 port 2: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1.10/3.00, addr 2
-uhub6: 4 ports with 4 removable, self powered
+umass1 at uhub4 port 2 configuration 1 interface 0
+umass1: SSK (0x0bda) SSK Storage (0x9210), rev 3.20/20.01, addr 2
+umass1: using SCSI over Bulk-Only
+scsibus1 at umass1: 2 targets, 1 lun per target
+uhidev0 at uhub6 port 3 configuration 1 interface 0
+uhidev0: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 3, iclass 3/1
+ums0 at uhidev0: 3 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
 sd0: GPT GUID: 7d34b4fa-6c48-4c94-980b-783ee852d022
 dk5 at sd0: "EFI", 163840 blocks at 32768, type: msdos
 dk6 at sd0: "netbsd-root", 1000013824 blocks at 196608, type: ffs
-uhidev1 at uhub6 port 1 configuration 1 interface 0
-uhidev1: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 3, iclass 3/1
-ums0 at uhidev1: 3 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
-uhidev2 at uhub6 port 3 configuration 1 interface 0
-uhidev2: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
-ukbd0 at uhidev2
+sd1 at scsibus1 target 0 lun 0: <SSK, SSK Storage, 1.00> disk fixed
+sd1: fabricating a geometry
+sd1: 931 GB, 953869 cyl, 64 head, 32 sec, 512 bytes/sect x 1953525168 sectors
+sd1: fabricating a geometry
+uhidev1 at uhub6 port 4 configuration 1 interface 0
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
+ukbd0 at uhidev1
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev3 at uhub6 port 3 configuration 1 interface 1
-uhidev3: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
-uhidev3: 2 report ids
-uhid1 at uhidev3 reportid 1: input=1, output=0, feature=0
-uhid2 at uhidev3 reportid 2: input=3, output=0, feature=0
+uhidev2 at uhub6 port 4 configuration 1 interface 1
+uhidev2: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
+uhidev2: 2 report ids
+uhid0 at uhidev2 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev2 reportid 2: input=3, output=0, feature=0
 swwdog0: software watchdog initialized
 boot device: dk6
 root on dk6
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.3/modules
+kern.module.path=/stand/evbarm/10.99.4/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-WARNING: system needs entropy for security; see entropy(7)
 entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
