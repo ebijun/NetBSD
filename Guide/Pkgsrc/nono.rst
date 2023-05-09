@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.5.1
+ DISTNAME=       nono-0.6.0
 
 チェックサム作成
 ------------------
@@ -70,18 +70,13 @@ commit
 
  cvs commit 
 
- nono: update to 0.5.1.
+ nono: update to 0.6.0.
  
- Changes in 0.5.1:
- 
- vm(Fix): "Fix a bus error in areas with no extended memory in X68030."
- vm(Update): "Implement DAA instruction on HD647180."
- debugger(Fix): "Fix breakpoints set while HD647180 is in reset state not working."
- GUI(New):  "Implement a device map monitor."
- GUI(Update): "Link control size with font size, on DIPSW window."
- GUI(Fix):  "Support 24 dot fonts in a bitmap monitor window."
- GUI(Fix): "Fix an abnormal termination when a bitmap monitor window is resized." 
- 
+ 0.6.0 (2023-03-22)
+
+        vm(New): "Implement a bank memory and ethernet (RTL8019AS) of Nereid expansion board."
+        vm(Fix): "Fix an interrupt level when -X option is used in X68030."
+        debugger(Update): "Support X68030 IOCS call in the exception history." 
 
 doc をcommit します
 ---------------------
@@ -91,9 +86,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to  0.5.1
+ doc: Updated emulators/nono to  0.6.0
  
  cvs diff -u CHANGES-2023
- Updated emulators/nono to 0.5.1 [jun 2023-02-14]
+ Updated emulators/nono to 0.6.0 [jun 2023-03-29]
 
 

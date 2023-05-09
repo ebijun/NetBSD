@@ -28,6 +28,7 @@
  RPI
  Luna
  Pkgsrc/nono
+ Pkgsrc/chatgpt
  latexpdf
  Place/intro
  OSC/OSC2023
