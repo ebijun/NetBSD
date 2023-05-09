@@ -9,17 +9,26 @@ Install:
 
 Topics:
 - USB2 audio
-recognize , but audio output causes reboot.
 
-uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 4
-uaudio0: ignored setting with format 0x80000000
-uaudio0: audio rev 2.00
-audio0 at uaudio0: playback
-audio0: slinear_le:16 2ch 48000Hz, blk 23040 bytes (60ms) for playback
-spkr0 at audio0: PC Speaker (synthesized)
+works ok
+ uaudio0 at uhub5 port 1 configuration 1 interface 0
+ uaudio0: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 17
+ uaudio0: audio rev 1.00
+ audio0 at uaudio0: playback
+ audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (60ms) for playback
 
-- pkgsrc/math blas lapack and lapacke make stacked
-  make fine on RPI4.
+recognize ok ,but sound output awful just like boss overdrive compressor.
+ uaudio0 at uhub5 port 1 configuration 1 interface 0
+ uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 5
+ uaudio0: ignored setting with format 0x80000000
+ uaudio0: audio rev 2.00
+ audio0 at uaudio0: playback
+ audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (30ms) for playback
+
+- pkgsrc/textproc/ruby-nokogiri
+  make package 
+    ok with ar 2.34
+    failed with ar 2.39
 
 - X
  startx failed with signal 11,
@@ -82,59 +91,113 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- libm-0.13 NetBSD-10.99.3 sh-20220122-20230417203743Z
- tzdata-2023cgtz userland-NetBSD-10.99.3/evbarm
+ dhcpcd-10.0.1 NetBSD-10.99.4 sh-20220122-20230508012835Z
+ tcsh-6.24.10 userland-NetBSD-10.99.4/evbarm
 
 pkgsrc:
- ImageMagick-7.1.1.6 SDL2-2.26.5 abseil-20230125.2 apache-2.4.57
- apr-1.7.3nb1 cmake-3.26.3 curl-8.0.1 eigen3-3.4.0
- elementary-xfce-icon-theme-0.17nb2 ffmpeg5-5.1.3
- firefox-111.0.1 firefox-l10n-111.0.1 fossil-2.21
- freeimage-3.18.0nb9 gegl-0.4.40nb3 ghostscript-agpl-10.0.0nb2
- giflib-5.2.1nb5 git-base-2.40.0 gmake-4.4.1 googletest-1.13.0
- gpgme-1.19.0 gsed-4.9nb1 gst-plugins1-bad-1.22.1
- gst-plugins1-base-1.22.1 gst-plugins1-good-1.22.1
- gstreamer1-1.22.1 gtar-base-1.34nb1 guile30-3.0.9nb1
- guile30-slib-3.2.6 harfbuzz-7.1.0 harfbuzz-icu-7.1.0
- jasper-4.0.0 kicad-7.0.0 kpathsea-6.3.5 ldb-2.6.2
- libcups-2.4.2nb5 libfixmath-0.0.0pre20220623nb1
- libgcrypt-1.10.2 libgpg-error-1.47 libheif-1.15.2nb1
- libmspack-0.10.1alpha libpaper-2.1.0nb2 libpeas-1.26.0nb7
- libraw-0.21.1nb1 librsvg-2.56.0 libv4l-1.24.1
- libva-2.18.0 libxfce4ui-4.18.3 libxml2-2.10.4
- luatex-1.16.0 makejvf-20220723 mate-desktop-1.26.1
- md4c-0.4.8 mendexk-3.6nb1 mlterm-3.9.3 mozilla-rootcerts-openssl-2.10
- mpg123-1.31.3 netpbm-10.86.34nb3 nono-0.6.0 nss-3.89
- occt-7.7.0 openexr-3.1.6 osg-3.6.5nb31 p5-DateTime-TimeZone-2.60
- p5-Filter-1.64 p5-IPC-Run3-0.048nb8 p5-Test-Fatal-0.017
- php74-nextcloud-25.0.4 pkgconf-1.9.4nb1 poppler-23.03.0
- poppler-cpp-23.03.0 poppler-glib-23.03.0 poppler-includes-23.03.0
- psutils-2.10 ptexenc-1.4.3 py310-cElementTree-3.10.11
- py310-cryptography-39.0.2 py310-curses-3.10.11nb6 py310-expat-3.10.11nb1
- py310-importlib-metadata-6.1.0 py310-libxml2-2.10.4 py310-markdown-3.4.3
- py310-markupsafe-2.1.2 py310-packaging-23.1 py310-pip-23.0.1nb1
- py310-pygments-2.15.0 py310-pytz-2023.3 py310-readline-3.10.11
- py310-setuptools-67.6.1 py310-sqlite3-3.10.11nb23 py310-urllib3-1.26.15
- python310-3.10.11 qmmp-1.5.1nb14 qt5-qtbase-5.15.9
- qt5-qtdeclarative-5.15.9 qt5-qtlocation-5.15.9 qt5-qtmultimedia-5.15.9
- qt5-qtsensors-5.15.9 qt5-qtserialport-5.15.9 qt5-qtsvg-5.15.9
- qt5-qttools-5.15.9 qt5-qtwebchannel-5.15.9 qt5-qtwebsockets-5.15.9
- qt5-qtx11extras-5.15.9 qt5-qtxmlpatterns-5.15.9 rapidjson-1.1.0nb1
- raptor2-2.0.16 rasqal-0.9.33nb28 redland-1.0.17nb36
- ruby27-base-2.7.8 ruby31-base-3.1.4 ruby31-moneta-1.6.0
- ruby31-version_gem-1.1.2 rust-1.68.2 samba-4.17.7 scribus-1.5.8nb7
- sqlite3-3.41.2 sudo-1.9.13p3 swig4-4.1.1 tex-babel-3.87
- tex-fancyvrb-4.5a tex-firstaid-1.0u tex-graphics-1.4e.66204
- tex-graphics-def-2022.64487 tex-haranoaji-20230223 tex-hypdoc-1.18
- tex-hyperref-7.00v tex-hyphen-base-2023 tex-kpathsea-2023
- tex-kvsetkeys-1.19 tex-l3backend-2023 tex-l3kernel-2023
- tex-l3packages-2023 tex-latex-20221101.1 tex-luatex-1.16.0
- tex-oberdiek-2022 tex-pdftex-2022 tex-texlive-scripts-2023
- tex-texlive-scripts-doc-2023 tex-texlive.infra-2023 tex-tools-2022.64892
- tex-unicode-data-1.16 vala-0.56.5 web2c-2023
- wxGTK32-3.2.2.1 xfce4-4.18.0nb4 xfce4-desktop-4.18.1 xfce4-garcon-4.18.1
- xfce4-panel-4.18.3 xfce4-session-4.18.2 xfce4-thunar-4.18.4
- zstd-1.5.5
+ GConf-3.2.3nb16 ImageMagick-7.1.1.8nb1 ImageMagick6-6.9.11.7nb20
+ SDL-1.2.15nb41 SDL2-2.26.5nb1 SDL2_mixer-2.0.4nb12 a2ps-4.15.4nb1
+ abseil-20230125.3 ap24-php74-7.4.33nb10 apache-2.4.57nb2
+ apr-1.7.4 apr-util-1.6.3nb1 asciidoc-10.2.0nb4 atril-1.26.1nb1
+ boost-headers-1.82.0 boost-jam-1.82.0 boost-libs-1.82.0
+ caja-1.26.1nb3 caja-extensions-1.26.1nb4 cbindgen-0.24.3
+ chatgpt-shell-cli-0.0.20230505 clang-15.0.7nb1 cmake-3.26.3nb1
+ curl-8.0.1nb1 dav1d-1.2.0 deforaos-libdatabase-0.1.0nb2
+ deforaos-pdfviewer-0.1.0nb18 eigen3-3.4.0nb1 emacs26-26.3nb26
+ enchant2-2.3.4 engrampa-1.26.1 eom-1.26.1 exempi-2.5.2nb6
+ exiv2-0.27.6 faad2-2.10.1 farstream-0.2.9nb15 ffmpeg4-4.4.4nb1
+ ffmpeg5-5.1.3nb2 firefox-112.0.1nb3 firefox-l10n-112.0.1
+ fluidsynth-2.3.2nb1 fontconfig-2.14.2nb1 fossil-2.21nb1
+ freeimage-3.18.0nb10 freerdp2-2.9.0nb3 freetype2-2.13.0nb1
+ fribidi-1.0.12 gconfmm-2.28.3nb32 gd-2.3.3nb8 gegl-0.4.40nb6
+ geocode-glib-3.26.2nb7 ghostscript-9.05nb31 ghostscript-agpl-10.01.1
+ gimp-2.10.32nb10 git-base-2.40.1 glib-networking-2.74.0nb1
+ gnome-desktop-2.32.1nb54 gnome-doc-utils-0.20.10nb14
+ gnome-icon-theme-symbolic-3.12.0nb21 gnome-themes-standard-3.20.2nb22
+ gnucash-5.1 gnupg2-2.4.1 gnutls-3.8.0nb2 gpgme-1.20.0
+ graphviz-7.1.0nb3 gssdp-1.0.3nb25 gst-plugins0.10-base-0.10.36nb23
+ gst-plugins0.10-good-0.10.31nb12 gst-plugins0.10-ogg-0.10.36nb2
+ gst-plugins0.10-oss-0.10.31nb10 gst-plugins0.10-theora-0.10.36nb2
+ gst-plugins0.10-v4l2-0.10.31nb10 gst-plugins0.10-vorbis-0.10.36nb2
+ gst-plugins1-bad-1.22.2 gst-plugins1-base-1.22.2
+ gst-plugins1-good-1.22.2nb1 gstreamer0.10-0.10.36nb22
+ gstreamer1-1.22.2 gtk-doc-1.32nb12 gtk2+-2.24.33nb10 gtk3+-3.24.37
+ gtksourceview3-3.24.11nb13 gtksourceview4-4.8.0nb10 gumbo-parser-0.10.1
+ gupnp-1.0.3nb22 gupnp-igd-0.2.5nb16 gvfs-1.6.7nb63 hal-0.5.14nb30
+ harfbuzz-7.2.0 harfbuzz-icu-7.2.0 icu-73.1nb1 imath-3.1.7
+ jansson-2.14 jq-1.6nb1 jwm-2.4.3nb4 kicad-7.0.0nb2 ladspa-1.17nb4
+ lame-3.100nb5 ldb-2.7.2 libVNCServer-0.9.13nb6 libXft-2.3.8
+ libabw-0.1.3nb17 libappindicator-12.10.0nb16 libatomic_ops-7.8.0
+ libbluray-1.3.4nb2 libcdr-0.1.7nb10 libclucene-2.3.3.4nb24
+ libcroco-0.6.13nb8 libcups-2.4.2nb6 libdbi-driver-sqlite3-0.9.0nb16
+ libe-book-0.1.3nb26 libepoll-shim-0.0.20230411 libepubgen-0.1.1nb7
+ libetonyek-0.1.10nb9 libfreehand-0.1.2nb18 libglade-2.6.4nb43
+ libgsf-1.14.47nb8 libgweather-40.0nb13 libheif-1.16.1
+ libical-3.0.16 libimagequant-2.18.0 libixion-0.17.0nb2
+ liblangtag-0.6.4nb2 libmatekbd-1.26.0nb3 libmateweather-1.26.0nb4
+ libmikmod-3.3.11.1nb12 libmspub-0.1.4nb25 libmwaw-0.3.21nb2
+ libnice-0.1.16nb15 libodfgen-0.1.7nb7 libofx-0.9.15nb11
+ libopus-1.4 libpagemaker-0.0.4nb13 libpurple-2.14.12nb1
+ libqxp-0.0.2nb19 libreoffice-7.5.1.2nb4 librevenge-0.0.4nb18
+ librsvg-2.56.0nb1 libsamplerate-0.2.2nb4 libsexy-0.1.11nb42
+ libsixel-1.8.6nb12 libsndfile-1.2.0nb2 libsoup-2.74.3nb2
+ libstaroffice-0.0.7nb7 libvisio-0.1.7nb20 libwmf-0.2.8.4nb25
+ libwnck-2.30.7nb4 libwpd-0.10.3nb7 libwpg-0.3.3nb10
+ libwps-0.4.12nb6 libxkbcommon-1.5.0nb1 libxklavier-5.4nb11
+ libxml++-2.40.1nb14 libxml2-2.10.4nb1 libxslt-1.1.37nb2
+ libzip-1.9.2nb2 libzmf-0.0.2nb27 lld-15.0.7nb1
+ llvm-15.0.7nb1 m17n-lib-1.8.0nb11 marco-1.26.2 mate-1.26.0nb3
+ mate-applets-1.26.1nb4 mate-calc-1.26.0nb3 mate-control-center-1.26.1
+ mate-media-1.26.0nb3 mate-menus-1.26.1 mate-notification-daemon-1.26.0nb3
+ mate-panel-1.26.3 mate-power-manager-1.26.1 mate-screensaver-1.26.1nb3
+ mate-session-manager-1.26.1 mate-settings-daemon-1.26.0nb4
+ mdds-2.0.1nb2 medit-1.2.0nb24 meson-1.1.0 midori-9.0nb25
+ mlterm-3.9.3nb1 mplayer-1.5 mplayer-share-1.5nb6 mpv-0.35.1nb3
+ neon-0.32.5nb1 netpbm-10.86.34nb4 nghttp2-1.52.0nb1
+ nginx-1.24.0nb5 nono-0.6.1 nss-3.89.1 openal-soft-1.23.1nb1
+ openexr-3.1.7nb1 opusfile-0.12nb1 orcus-0.17.2nb2 osabi-NetBSD-10.99.3
+ osg-3.6.5nb35 p5-Alien-Libxml2-0.17nb6 p5-HTML-Parser-3.81
+ p5-HTTP-Daemon-6.16 p5-Net-HTTP-6.22 p5-URI-5.18 p5-XML-LibXML-2.0207nb6
+ p5-libwww-6.68 pciutils-3.10.0 perl-5.36.1 php-7.4.33nb2
+ php74-curl-7.4.33nb14 php74-fpm-7.4.33nb11 php74-intl-7.4.33nb10
+ php74-pdo_sqlite-7.4.33nb10 php74-sqlite3-7.4.33nb10 php74-zip-7.4.33nb9
+ pkgin-22.10.0nb2 pluma-1.26.0nb3 policykit-0.9nb34 poppler-23.05.0
+ poppler-cpp-23.05.0 poppler-glib-23.05.0 poppler-includes-23.05.0
+ postgresql14-client-14.7nb1 pulseaudio-16.1nb4 py27-gstreamer0.10-0.10.22nb12
+ py27-gtk2-2.24.0nb43 py310-OpenSSL-23.1.1 py310-babel-2.12.1
+ py310-calver-2022.6.26 py310-charset-normalizer-3.1.0
+ py310-cryptography-40.0.2 py310-dns-2.3.0 py310-docutils-0.19
+ py310-editables-0.3 py310-gi-docgen-2023.1 py310-hatchling-1.14.1
+ py310-idna-3.4 py310-importlib-metadata-6.6.0 py310-libxml2-2.10.4nb1
+ py310-lxml-4.9.2nb1 py310-pathspec-0.11.1 py310-pip-23.1.2
+ py310-pluggy-1.0.0 py310-poetry-core-1.5.2 py310-pygments-2.15.1
+ py310-requests-2.30.0 py310-roman-4.0 py310-setuptools-67.7.2
+ py310-setuptools-rust-1.6.0 py310-sphinx-7.0.0
+ py310-sphinxcontrib-applehelp-1.0.4 py310-sqlite3-3.10.11nb24
+ py310-trove-classifiers-2023.5.2 py310-urllib3-2.0.2
+ py310-wheel-0.40.0 py310-zstandard-0.21.0 python37-3.7.16
+ qmmp-1.5.1nb16 qt5-qtbase-5.15.9nb1 qt5-qtdeclarative-5.15.9nb1
+ qt5-qtlocation-5.15.9nb1 qt5-qtmultimedia-5.15.9nb2
+ qt5-qtsensors-5.15.9nb1 qt5-qtserialport-5.15.9nb1 qt5-qtsvg-5.15.9nb1
+ qt5-qttools-5.15.9nb2 qt5-qtwebchannel-5.15.9nb1
+ qt5-qtwebsockets-5.15.9nb1 qt5-qtx11extras-5.15.9nb1
+ qt5-qtxmlpatterns-5.15.9nb1 raptor2-2.0.16nb1 rarian-0.8.1nb12
+ rasqal-0.9.33nb29 re2c-3.0 redland-1.0.17nb37 ruby31-atk-4.1.4
+ ruby31-cairo-gobject-4.1.4 ruby31-gdk3-4.1.4 ruby31-gdk_pixbuf2-4.1.4
+ ruby31-gio2-4.1.4 ruby31-glib2-4.1.4 ruby31-gobject-introspection-4.1.4
+ ruby31-gtk3-4.1.4 ruby31-mikutter-5.0.4nb3
+ ruby31-mikutter-plugins-twitter-5.0nb1 ruby31-nokogiri-1.14.2nb1
+ ruby31-pango-4.1.4 rust-1.69.0 samba-4.18.2 scribus-1.5.8nb12
+ seamonkey-2.53.16nb2 seamonkey-l10n-2.53.16 shared-mime-info-2.2nb2
+ sqlite3-3.41.2nb1 sylpheed-3.7.0nb11 tcl-8.6.12nb5 tcsh-6.24.10
+ tigervnc-1.13.1.1.20.13nb1 uim-1.8.9nb2 vala-0.56.7 vorbis-tools-1.4.2nb6
+ vte3-0.68.0nb12 w3m-0.5.3.0.20230121 wayland-1.21.0nb2
+ webkit-gtk-2.36.8nb5 wget-1.21.3nb3 wxGTK32-3.2.2.1nb2
+ x11vnc-0.9.16nb13 xfce4-4.18.0nb6 xfce4-conf-4.18.1 xfce4-mousepad-0.6.0nb1
+ xfce4-orage-4.18.0nb1 xfce4-session-4.18.2nb1 xfce4-settings-4.18.2nb1
+ xfce4-thunar-4.18.6 xfce4-tumbler-4.18.1nb1 xmlto-0.0.28nb9
+ xnp2-0.86nb19 xscreensaver-6.05.1nb4 yelp-tools-3.32.2nb8
+ zxing-cpp-2.0.0
 
 Version: 
  `uname -v`
