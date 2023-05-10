@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.6.0
+ DISTNAME=       nono-0.6.1
 
 チェックサム作成
 ------------------
@@ -41,8 +41,9 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
- -rw-r--r--  1 jun  wheel  1182 Feb 14 06:42 Makefile
- -rw-r--r--  1 jun  wheel   558 Feb 14 06:43 distinfo
+  -rw-r--r--  1 jun  wheel  1180 May  9 06:39 Makefile
+ -rw-r--r--  1 jun  wheel   558 May  9 06:39 distinfo
+
 
 make package して動作を確認します。
  
@@ -70,13 +71,16 @@ commit
 
  cvs commit 
 
- nono: update to 0.6.0.
+ nono: update to 0.6.1 .
  
- 0.6.0 (2023-03-22)
+ 
+ 0.6.1 (2023-04-21)
 
-        vm(New): "Implement a bank memory and ethernet (RTL8019AS) of Nereid expansion board."
-        vm(Fix): "Fix an interrupt level when -X option is used in X68030."
-        debugger(Update): "Support X68030 IOCS call in the exception history." 
+ vm(Update): "Change that access to the range from $e000'0000 to $efff'ffff doesn't cause a bus error on
+ NWS-1750. Along with this, xxx-news-sic-ignore is obsoleted."                                          
+ vm(Update): "Implement dummy TRAP#15 handler on NWS-1750's PROM emulation."                            
+ GUI(New): "Implement NEWS' device map monitor."                                   
+ GUI(Fix): "Fix problem that some monitors are not shown in menu since ver 0.6.0."    
 
 doc をcommit します
 ---------------------
@@ -86,9 +90,10 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to  0.6.0
+ doc: Updated emulators/nono to  0.6.1
  
  cvs diff -u CHANGES-2023
- Updated emulators/nono to 0.6.0 [jun 2023-03-29]
+ 
+        Updated emulators/nono to 0.6.1 [jun 2023-05-09]
 
 
