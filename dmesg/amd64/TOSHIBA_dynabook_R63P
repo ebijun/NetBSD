@@ -1,26 +1,17 @@
-Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020, 2021, 2022
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+    2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.97 (GENERIC.202205222200UTC) #1: Mon May 23 19:00:41 JST 2022
+NetBSD 10.99.4 (GENERIC.202305100130UTC) #2: Wed May 10 11:58:01 JST 2023
 	jun@amir63p.soum.co.jp:/home/jun/Build/src/sys/arch/amd64/compile/GENERIC
 total memory = 16295 MB
-avail memory = 15764 MB
-pool redzone disabled for 'buf2k'
-pool redzone disabled for 'buf4k'
-pool redzone disabled for 'buf32k'
-pool redzone disabled for 'buf64k'
-entropy: no seed from bootloader
-pool redzone disabled for 'sigacts'
-pool redzone disabled for 'mclpl'
+avail memory = 15740 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
-efi: missing or invalid systbl
-SMBIOS rev. 2.6 @ 0xd9bff000 (40 entries)
 mainbus0 (root)
 ACPI: RSDP 0x00000000000F0030 000014 (v00 TOSHIB)
 ACPI: RSDT 0x00000000D90ED000 000068 (v01 TOSHIB A0096    00000006      01000013)
@@ -47,96 +38,49 @@ ACPI: 6 ACPI AML tables successfully acquired and loaded
 ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x20, 40 pins
 x2APIC available but disabled by DMAR table
 cpu0 at mainbus0 apid 0
-cpu0: 8 page colors
 cpu0: Use lfence to serialize rdtsc
-cpu0: [re]calibrating local timer
-cpu0: apic clock running at 99 MHz
 cpu0: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, id 0x306d4
 cpu0: node 0, package 0, core 0, smt 0
 cpu1 at mainbus0 apid 1
-cpu1: 2 page colors
-i82489_ipi_init: ESR 00000040
 cpu1: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, id 0x306d4
 cpu1: node 0, package 0, core 0, smt 1
 cpu2 at mainbus0 apid 2
-cpu2: 2 page colors
 cpu2: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, id 0x306d4
 cpu2: node 0, package 0, core 1, smt 0
 cpu3 at mainbus0 apid 3
-cpu3: 2 page colors
 cpu3: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, id 0x306d4
 cpu3: node 0, package 0, core 1, smt 1
-acpi0 at mainbus0: Intel ACPICA 20211217
+acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
-allocated pic ioapic0 type level pin 9 level 6 to cpu0 slot 0 idt entry 96
-acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
-MCFG: MEMMAP: 0x0000000000000000-0x000000000009ebff, size=0x000000000009ec00, type=1(Memory)
-MCFG: MEMMAP: 0x000000000009ec00-0x000000000009ffff, size=0x0000000000001400, type=2(Reserved)
-MCFG: MEMMAP: 0x00000000000e0000-0x00000000000fffff, size=0x0000000000020000, type=2(Reserved)
-MCFG: MEMMAP: 0x0000000000100000-0x00000000d8fbefff, size=0x00000000d8ebf000, type=1(Memory)
-MCFG: MEMMAP: 0x00000000d8fbf000-0x00000000d8fbffff, size=0x0000000000001000, type=4(NVS)
-MCFG: MEMMAP: 0x00000000d8fc0000-0x00000000d8fc1fff, size=0x0000000000002000, type=2(Reserved)
-MCFG: MEMMAP: 0x00000000d8fc2000-0x00000000d90befff, size=0x00000000000fd000, type=4(NVS)
-MCFG: MEMMAP: 0x00000000d90bf000-0x00000000d90eefff, size=0x0000000000030000, type=3(ACPI)
-MCFG: MEMMAP: 0x00000000d90ef000-0x00000000d9ffffff, size=0x0000000000f11000, type=2(Reserved)
-MCFG: MEMMAP: 0x00000000da000000-0x00000000dd7fffff, size=0x0000000003800000, type=2(Reserved)
-MCFG: MEMMAP: 0x00000000f8000000-0x00000000fbffffff, size=0x0000000004000000, type=2(Reserved)
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFA508DBE22788 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFD8B3AEC34488 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFA505DA868008 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFD8B0AEE77008 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFA505DA81E708 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFD8B0AEE0ED08 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
-acpi0: ACPI-Safe 24-bit timer
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
 timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
 acpivga0 at acpi0 (GFX0): ACPI Display Adapter
-acpivga0: capabilities: _DOS _DOD _ROM
 acpiout0 at acpivga0 (DDC1, 0x0400): ACPI Display Output Device
-acpiout0: capabilities: _BCL _BCM _BQC _DCS _DGS _DSS
 acpiout0: brightness levels: [0-100]
 acpiout1 at acpivga0 (DDC2, 0x0300): ACPI Display Output Device
-acpiout1: capabilities: _DCS _DGS _DSS
 acpiout2 at acpivga0 (DDC3, 0x0301): ACPI Display Output Device
-acpiout2: capabilities: _DCS _DGS _DSS
 acpiout3 at acpivga0 (DDC4, 0x0302): ACPI Display Output Device
-acpiout3: capabilities: _DCS _DGS _DSS
 acpiout4 at acpivga0 (DDC5, 0x0303): ACPI Display Output Device
-acpiout4: capabilities: _DCS _DGS _DSS
 acpiout5 at acpivga0 (DDC6, 0x0006): ACPI Display Output Device
-acpiout5: capabilities: _DCS _DGS _DSS
 acpiout6 at acpivga0 (DDC7, 0x0007): ACPI Display Output Device
-acpiout6: capabilities: _DCS _DGS _DSS
 acpiout7 at acpivga0 (DDC8, 0x0008): ACPI Display Output Device
-acpiout7: capabilities: _DCS _DGS _DSS
 acpiout8 at acpivga0 (DDC9, 0x0009): ACPI Display Output Device
-acpiout8: capabilities: _DCS _DGS _DSS
 acpiout9 at acpivga0 (DDCA, 0x000a): ACPI Display Output Device
-acpiout9: capabilities: _DCS _DGS _DSS
 acpiout10 at acpivga0 (DDCB, 0x000b): ACPI Display Output Device
-acpiout10: capabilities: _DCS _DGS _DSS
 acpiout11 at acpivga0 (DDCC, 0x000c): ACPI Display Output Device
-acpiout11: capabilities: _DCS _DGS _DSS
 acpiout12 at acpivga0 (DDCD, 0x000d): ACPI Display Output Device
-acpiout12: capabilities: _DCS _DGS _DSS
 acpiout13 at acpivga0 (DDCE, 0x000e): ACPI Display Output Device
-acpiout13: capabilities: _DCS _DGS _DSS
 acpiout14 at acpivga0 (DDCF, 0x000f): ACPI Display Output Device
-acpiout14: capabilities: _DCS _DGS _DSS
-acpivga0: output device acpiout5 not connected
-acpivga0: output device acpiout6 not connected
-acpivga0: output device acpiout7 not connected
-acpivga0: output device acpiout8 not connected
-acpivga0: output device acpiout9 not connected
-acpivga0: output device acpiout10 not connected
-acpivga0: output device acpiout11 not connected
-acpivga0: output device acpiout12 not connected
-acpivga0: output device acpiout13 not connected
-acpivga0: output device acpiout14 not connected
 acpivga0: connected output devices:
 acpivga0:   0x0400 (acpiout0): Int. Digital Flat Panel, index 0, port 0, head 0
 acpivga0:   0x0300 (acpiout1): Ext. Digital Monitor, index 0, port 0, head 0, bios detect
@@ -144,23 +88,6 @@ acpivga0:   0x0301 (acpiout2): Ext. Digital Monitor, index 1, port 0, head 0, bi
 acpivga0:   0x0302 (acpiout3): Ext. Digital Monitor, index 2, port 0, head 0, bios detect
 acpivga0:   0x0303 (acpiout4): Ext. Digital Monitor, index 3, port 0, head 0, bios detect
 acpiwmi0 at acpi0 (AMW0, PNP0C14-0): ACPI WMI Interface
-acpiwmi0: {12486A2C-A42C-40DB-9D1C-9F374DD38B89} oid 4142 count 46 flags 05
-acpiwmi0: {DE6C985A-52D0-409E-AAE6-2E45D487CF0B} oid 4242 count 46 flags 05
-acpiwmi0: {7AAC1ADA-8070-4C8D-B177-F4CD37309E14} oid 4342 count 2C flags 05
-acpiwmi0: {37D79218-463C-424F-A7FB-479FADAC448C} oid 4442 count 2C flags 05
-acpiwmi0: {CA4AD789-B66C-47BF-B0D4-384DCA0F0FB3} oid 4542 count 04 flags 05
-acpiwmi0: {DD26DA65-05A6-4038-BAC1-E7A773D8C568} oid 4642 count 04 flags 05
-acpiwmi0: {AC5887E5-CAD3-4810-AF93-3256904B0473} oid 4742 count 10 flags 05
-acpiwmi0: {60D7BEE8-0B7D-40AF-92A5-AEE024A517FF} oid 4842 count 10 flags 05
-acpiwmi0: {7BCE8CBC-FAF5-44AD-B681-B9FB2D56A296} oid 4942 count 01 flags 05
-acpiwmi0: {0E3802AE-693E-4F59-A59D-F97D34242B6C} oid 4A42 count 46 flags 05
-acpiwmi0: {A10EEFBE-18B4-43BF-A4C5-53C89A7574AC} oid 4B42 count 2C flags 05
-acpiwmi0: {FBCB0122-FB0A-4125-8702-CEBB04FCEC93} oid 4143 count 03 flags 06
-acpiwmi0: {ABBDB6CF-D6A6-4B24-9749-8BFD1330F0C1} oid 4243 count 02 flags 06
-acpiwmi0: {2966047C-9743-4BDB-B762-181FBF9BFFCA} oid 4343 count 02 flags 06
-acpiwmi0: {313DE37C-F1EC-423B-8160-00175F8DE80F} oid 4443 count 02 flags 06
-acpiwmi0: {010A6A81-6D0A-4F19-8EFB-A4E47AB93EA5} oid 4144 count 02 flags 06
-acpiwmi0: {05901221-D566-11D1-B2F0-00A0C9062910} oid 4141 count 01 flags 00
 acpiwmibus at acpiwmi0 not configured
 tpm0 at acpi0 (GTPM, IFX0102): mem 0xfed40000-0xfed44fff
 tpm0: device 0x001a15d1 rev 0x10
@@ -168,80 +95,30 @@ attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
 pckbc1 at acpi0 (PS2K, TOS7407) (kbd port): io 0x60,0x64 irq 1
 pckbc2 at acpi0 (PS2M, TTP1000) (aux port): irq 12
 valz0 at acpi0 (VALZ, TOS6208): Toshiba VALZ
-valz0: WARNING: power management not supported
 BT (TOS6205) at acpi0 not configured
 acpiacad0 at acpi0 (ADP1, ACPI0003): ACPI AC Adapter
 acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
 acpilid0 at acpi0 (LID, PNP0C0D): ACPI Lid Switch
 acpibat0 at acpi0 (BAT1, PNP0C0A-1): ACPI Battery
 acpitz0 at acpi0 (TZ01)
-acpitz0: polling interval 30.0 seconds
 acpitz0: levels: critical 107.0 C, passive cooling
 ACPI: Enabled 4 GPEs in block 00 to 7F
 pckbd0 at pckbc1 (kbd slot)
-allocated pic ioapic0 type edge pin 1 level 6 to cpu0 slot 1 idt entry 97
 pckbc1: using irq 1 for kbd slot
 wskbd0 at pckbd0: console keyboard
 pms0 at pckbc1 (aux slot)
-pms0: synaptics_probe: Not synaptics.
-pms0: reset 0 0xaa 0x00
-pms0: ALPS PS/2 E6 signature: 0x0 0x0 0x64
-pms0: ALPS PS/2 E7 signature: 0x73 0x3 0xA
-pms0: ALPS PS/2 EC signature: 0x88 0xB3 0x22
-pms0: ALPS Firmware ID: 0x88 0xB3 0x22
 pms0: ALPS PS/2 V7 pointing device
-allocated pic ioapic0 type edge pin 12 level 6 to cpu0 slot 2 idt entry 98
 pckbc1: using irq 12 for aux slot
 wsmouse0 at pms0 mux 0
 pci0 at mainbus0 bus 0: configuration mode 1
-acpi0: MCFG: 000:00:0: invalid config space (cfg[0x100]=0xffffffff, alias=false)
-acpi0: MCFG: 000:00:0: Ok (cfg[0x100]=0xffffffff extconf=N)
-acpi0: MCFG: 000:02:0: Ok (cfg[0x100]=0x2001001b extconf=Y)
-acpi0: MCFG: 000:03:0: invalid config space (cfg[0x100]=0x00000000, alias=false)
-acpi0: MCFG: 000:03:0: Ok (cfg[0x100]=0x00000000 extconf=N)
-acpi0: MCFG: 000:20:0: invalid config space (cfg[0x100]=0x00000000, alias=false)
-acpi0: MCFG: 000:20:0: Ok (cfg[0x100]=0x00000000 extconf=N)
-acpi0: MCFG: 000:22:0: invalid config space (cfg[0x100]=0x00000000, alias=false)
-acpi0: MCFG: 000:22:0: Ok (cfg[0x100]=0x00000000 extconf=N)
-acpi0: MCFG: 000:25:0: invalid config space (cfg[0x100]=0x00000000, alias=false)
-acpi0: MCFG: 000:25:0: Ok (cfg[0x100]=0x00000000 extconf=N)
-acpi0: MCFG: 000:27:0: invalid config space (cfg[0x100]=0xffffffff, alias=false)
-acpi0: MCFG: 000:27:0: Ok (cfg[0x100]=0xffffffff extconf=N)
-acpi0: MCFG: 000:28:0: Ok (cfg[0x100]=0x20000000 extconf=Y)
-acpi0: MCFG: 000:28:2: Ok (cfg[0x100]=0x20000000 extconf=Y)
-acpi0: MCFG: 000:29:0: invalid config space (cfg[0x100]=0xffffffff, alias=false)
-acpi0: MCFG: 000:29:0: Ok (cfg[0x100]=0xffffffff extconf=N)
-acpi0: MCFG: 000:31:0: invalid config space (cfg[0x100]=0xffffffff, alias=false)
-acpi0: MCFG: 000:31:0: Ok (cfg[0x100]=0xffffffff extconf=N)
-acpi0: MCFG: 000:31:2: invalid config space (cfg[0x100]=0x00000000, alias=false)
-acpi0: MCFG: 000:31:2: Ok (cfg[0x100]=0x00000000 extconf=N)
-acpi0: MCFG: bus 0: valid devices
-acpi0: MCFG: 000:00:0
-acpi0: MCFG: 000:02:0
-acpi0: MCFG: 000:03:0
-acpi0: MCFG: 000:20:0
-acpi0: MCFG: 000:22:0
-acpi0: MCFG: 000:25:0
-acpi0: MCFG: 000:27:0
-acpi0: MCFG: 000:28:0
-acpi0: MCFG: 000:28:2
-acpi0: MCFG: 000:29:0
-acpi0: MCFG: 000:31:0
-acpi0: MCFG: 000:31:2
-acpi0: acpimcfg_map_bus done
 pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
 pchb0 at pci0 dev 0 function 0: Intel Core 5G Host Bridge (rev. 0x09)
 i915drmkms0 at pci0 dev 2 function 0: Intel HD Graphics 5500 (rev. 0x09)
-pci_mem_find: void region
-i915drmkms0: WARNING: power management not supported
 hdaudio0 at pci0 dev 3 function 0: HD Audio Controller
-allocated pic msi0 type edge pin 0 level 7 to cpu0 slot 16 idt entry 112
 hdaudio0: interrupting at msi0 vec 0
 hdaudio0: HDA ver. 1.0, OSS 3, ISS 0, BSS 0, SDO 1, 64-bit
-hdafg0 at hdaudio0 vendor 0x8086 product 0x2808 nid 0x01: Intel HDMI/DP
+hdafg0 at hdaudio0: Intel HDMI/DP
 hdafg0: DP00 8ch: Digital Out [Jack]
-    nid=03 [pin: Digital Out (Jack)]
-           nid=02 [audio output] [source: dac]
 hdafg0: 8ch/0ch 48000Hz PCM16*
 audio0 at hdafg0: playback
 audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
@@ -249,65 +126,26 @@ spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 xhci0 at pci0 dev 20 function 0: Intel Core 5G (mobile) USB xHCI (rev. 0x03)
 xhci0: 64-bit DMA
-allocated pic msi1 type edge pin 0 level 6 to cpu0 slot 17 idt entry 99
 xhci0: interrupting at msi1 vec 0
 xhci0: xHCI version 1.0
-xhci0: hcs1=f000820 hcs2=84000054 hcs3=200000a
-xhci0: hcc=0x200077c1<XECP=0x2000,MAXPSA=0x7,SEC,SPC,PAE,NSS,LTC,AC64>
-xhci0: xECP 8000
-xhci0: ECR: 0x02000802
-xhci0:  SP: 0x02000802 0x20425355 0x30180b01 0x00000000
-xhci0:  hs ports 1 - 11
-xhci0: ECR: 0x03000802
-xhci0:  SP: 0x03000802 0x20425355 0x1000040c 0x00000000
-xhci0:  ss ports 12 - 15
-xhci0: ECR: 0x00000cc1
-xhci0: ECR: 0x0000fcc0
-xhci0: ECR: 0x00000801
-xhci0: ECR: 0x0005000a
-xhci0: PAGESIZE 0x00000001
-xhci0: sc_pgsz 0x00001000
-xhci0: sc_maxslots 0x00000020
-xhci0: sc_maxports 15
-xhci0: sc_maxspbuf 16
-xhci0: eventst: 0x000000011f118fc0 0xffffb3013db42fc0 1000
-xhci0: dcbaa: 0x000000011f119000 0xffffb3013db43000 1000
-xhci0: current IMOD 1000
-xhci0: USBCMD 0x00000005
-xhci0: USB3PRM / USB3.0 configurable ports: 0x0000000f
-xhci0: USB3_PSSEN / Enabled USB3.0 ports under xHCI: 0x0000000f
-xhci0: XUSB2PRM / USB2.0 ports can switch from EHCI to xHCI:0x000004ff
-xhci0: XUSB2PR / USB2.0 ports under xHCI: 0x000007ff
 usb0 at xhci0: USB revision 3.0
 usb1 at xhci0: USB revision 2.0
 Intel Core 5G (mobile) ME Interface (miscellaneous communications, revision 0x03) at pci0 dev 22 function 0 not configured
 wm0 at pci0 dev 25 function 0, 64-bit DMA: I218 V Ethernet Connection (rev. 0x03)
-allocated pic msi2 type edge pin 0 level 6 to cpu0 slot 18 idt entry 100
 wm0: interrupting at msi2 vec 0
 wm0: PCI-Express bus
 wm0: 2048 words FLASH, version 0.2.4
 wm0: Ethernet address b8:6b:23:f1:f2:c8
-wm0: COMPAT = 801
 wm0: 0x6a4080<FLASH,PCIE,ASF_FIRM,AMT,WOL,EEE>
 ihphy0 at wm0 phy 2: i217 10/100/1000 media interface, rev. 5
 ihphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
 hdaudio1 at pci0 dev 27 function 0: HD Audio Controller
-allocated pic msi3 type edge pin 0 level 7 to cpu0 slot 19 idt entry 113
 hdaudio1: interrupting at msi3 vec 0
 hdaudio1: HDA ver. 1.0, OSS 4, ISS 4, BSS 0, SDO 1, 64-bit
-hdafg1 at hdaudio1 vendor 0x10EC product 0x0255 nid 0x01: Realtek product 0255
+hdafg1 at hdaudio1: Realtek product 0255
 hdafg1: DAC00 2ch: Speaker [Built-In]
-    nid=14 [pin: Speaker (Built-In)]
-           nid=0C [audio mixer] [source: dac, record]
-                  nid=02 [audio output] [source: dac]
-                  nid=0B [audio mixer] [source: record]
 hdafg1: DAC01 2ch: HP Out [Jack]
-    nid=21 [pin: HP Out (Black Jack)]
-           nid=0D [audio mixer] [source: dac, record]
-                  nid=03 [audio output] [source: dac]
-                  nid=0B [audio mixer] [source: record]
 hdafg1: ADC02 2ch: Mic In [Jack]
-    nid=19 [pin: Mic In (Black Jack)]
 hdafg1: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
 audio1 at hdafg1: playback, capture, full duplex, independent
 audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
@@ -318,31 +156,19 @@ ppb0 at pci0 dev 28 function 0: Intel Core 5G (mobile) PCIe (rev. 0xe3)
 ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 ppb0: link is x1 @ 2.5GT/s
 pci1 at ppb0 bus 1
-acpi0: MCFG: 001:00:0: Ok (cfg[0x100]=0x14020001 extconf=Y)
-acpi0: MCFG: bus 1: valid devices
-acpi0: MCFG: 001:00:0
-acpi0: acpimcfg_map_bus done
 pci1: i/o space, memory space enabled, rd/line, wr/inv ok
 rtsx0 at pci1 dev 0 function 0: Realtek Semiconductor RTS5227 PCI-E Card Reader (rev. 0x01)
-allocated pic msi4 type edge pin 0 level 6 to cpu0 slot 20 idt entry 101
 rtsx0: interrupting at msi4 vec 0
 sdmmc0 at rtsx0
 ppb1 at pci0 dev 28 function 2: Intel Core 5G (mobile) PCIe (rev. 0xe3)
 ppb1: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 ppb1: link is x1 @ 2.5GT/s
 pci2 at ppb1 bus 2
-acpi0: MCFG: 002:00:0: Ok (cfg[0x100]=0x14010001 extconf=Y)
-acpi0: MCFG: bus 2: valid devices
-acpi0: MCFG: 002:00:0
-acpi0: acpimcfg_map_bus done
 pci2: i/o space, memory space enabled, rd/line, wr/inv ok
 iwm0 at pci2 dev 0 function 0: Intel Dual Band Wireless AC 7265 (rev. 0x59)
-allocated pic msi5 type edge pin 0 level 6 to cpu0 slot 21 idt entry 102
 iwm0: interrupting at msi5 vec 0
-iwm0: WARNING: power management not supported
 ehci0 at pci0 dev 29 function 0: Intel Core 5G (mobile) USB EHCI (rev. 0x03)
 ehci0: 64-bit DMA
-allocated pic ioapic0 type level pin 23 level 6 to cpu0 slot 3 idt entry 103
 ehci0: interrupting at ioapic0 pin 23
 ehci0: EHCI version 1.0
 ehci0: Using DMA subregion for control data structures
@@ -351,7 +177,6 @@ pcib0 at pci0 dev 31 function 0: Intel Core 5G (mobile) LPC (rev. 0x03)
 ahcisata0 at pci0 dev 31 function 2: Intel Core 5G (mobile) SATA Controller (AHCI) (rev. 0x03)
 ahcisata0: 64-bit DMA
 ahcisata0: AHCI revision 1.30, 3 ports, 32 slots, CAP 0xcf34ff02<PSC,SSC,PMD,SAM,ISS=0x3=Gen3,SCLO,SAL,SALP,SSS,SNCQ,S64A>
-allocated pic msi6 type edge pin 0 level 6 to cpu0 slot 22 idt entry 104
 ahcisata0: interrupting at msi6 vec 0
 atabus0 at ahcisata0 channel 0
 isa0 at pcib0
@@ -361,7 +186,6 @@ wsbell at spkr2 not configured
 midi0 at pcppi0: PC speaker
 sysbeep0 at pcppi0
 attimer1: attached to pcppi0
-cpu0: unknown i686 model 3d, can't get bus clock (0x0)
 acpicpu0 at cpu0: ACPI CPU
 acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
 acpicpu0: C2: FFH, lat 148 us, pow   200 mW
@@ -390,49 +214,23 @@ acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
 acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
 acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
 acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
-acpicpu0: id 0, lapic id 0, cap 0x0bfd, flags 0x001ae297
-acpicpu0: P-state coordination: 4 CPUs, domain 0, type HW_ALL
 coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=105
 acpicpu1 at cpu1: ACPI CPU
-acpicpu1: id 1, lapic id 1, cap 0x0bfd, flags 0x001ae297
-acpicpu1: P-state coordination: 4 CPUs, domain 0, type HW_ALL
 acpicpu2 at cpu2: ACPI CPU
-acpicpu2: id 2, lapic id 2, cap 0x0bfd, flags 0x001ae297
-acpicpu2: P-state coordination: 4 CPUs, domain 0, type HW_ALL
 coretemp1 at cpu2: thermal sensor, 1 C resolution, Tjmax=105
 acpicpu3 at cpu3: ACPI CPU
-acpicpu3: id 3, lapic id 3, cap 0x0bfd, flags 0x001ae297
-acpicpu3: P-state coordination: 4 CPUs, domain 0, type HW_ALL
-SRAT: 0 NUMA nodes
-Initializing SSP: 4c404571d8e6301e 993ab9c65d5bd235 a2bfee81ae4d4fdd d4d28a7e43312c4d cdc322651b658cef 9f02ecddcbbcbb7b 5bc13f60a3d6bab5 ed95add165e71703 
-cpu0: [re]calibrating local timer
-cpu0: apic clock running at 99 MHz
-timecounter: Timecounter "lapic" frequency 99769000 Hz quality -100
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-UVM: using package allocation scheme, 1 package(s) per bucket
-cpu1: TSC skew=12 drift=-8
-cpu1: running
-cpu2: TSC skew=28 drift=-40
-cpu2: running
-cpu3: TSC skew=34 drift=-54
-cpu3: running
-timecounter: Timecounter "TSC" frequency 2294688000 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2294692000 Hz quality 3000
 uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 uhub0: 4 ports with 4 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub1: 11 ports with 11 removable, self powered
-acpicpu3: ACPI CPUs started
 acpiacad0: AC adapter online.
-acpiacad0: AC adapter connected
 IPsec: Initialized Security Association Processing.
-aes: Intel AES-NI
-chacha: x86 SSE2 ChaCha
-adiantum: self-test passed
-aes_ccm: self-test passed
-blake2s: self-test passed
 uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
-tpm0: read 8 bytes, expected 10tpm0: deactivating entropy source
+tpm0: read 8 bytes, expected 10
+tpm0: deactivating entropy source
 ahcisata0 port 0: device present, speed: 6.0Gb/s
 wd0 at atabus0 drive 0
 wd0: <mSATA-512GB SSD>
@@ -450,221 +248,62 @@ uhub4 at uhub2 port 1: vendor 8087 (0x8087) product 8001 (0x8001), class 9/0, re
 uhub4: single transaction translator
 uhub4: 8 ports with 8 removable, self powered
 uvideo0 at uhub1 port 7 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
-video0 at uvideo0pool redzone disabled for 'video'
-: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
-crypto: assign driver 0, flags 2
-crypto: driver 0 registers alg 1 flags 0 maxoplen 0
-crypto: driver 0 registers alg 2 flags 0 maxoplen 0
-crypto: driver 0 registers alg 3 flags 0 maxoplen 0
-crypto: driver 0 registers alg 4 flags 0 maxoplen 0
-crypto: driver 0 registers alg 5 flags 0 maxoplen 0
-crypto: driver 0 registers alg 26 flags 0 maxoplen 0
-crypto: driver 0 registers alg 27 flags 0 maxoplen 0
-crypto: driver 0 registers alg 29 flags 0 maxoplen 0
-crypto: driver 0 registers alg 33 flags 0 maxoplen 0
-crypto: driver 0 registers alg 17 flags 0 maxoplen 0
-crypto: driver 0 registers alg 6 flags 0 maxoplen 0
-crypto: driver 0 registers alg 19 flags 0 maxoplen 0
-crypto: driver 0 registers alg 7 flags 0 maxoplen 0
-crypto: driver 0 registers alg 20 flags 0 maxoplen 0
-crypto: driver 0 registers alg 15 flags 0 maxoplen 0
-crypto: driver 0 registers alg 24 flags 0 maxoplen 0
-crypto: driver 0 registers alg 25 flags 0 maxoplen 0
-crypto: driver 0 registers alg 8 flags 0 maxoplen 0
-crypto: driver 0 registers alg 21 flags 0 maxoplen 0
-crypto: driver 0 registers alg 16 flags 0 maxoplen 0
-crypto: driver 0 registers alg 9 flags 0 maxoplen 0
-crypto: driver 0 registers alg 10 flags 0 maxoplen 0
-crypto: driver 0 registers alg 13 flags 0 maxoplen 0
-crypto: driver 0 registers alg 14 flags 0 maxoplen 0
-crypto: driver 0 registers alg 28 flags 0 maxoplen 0
-crypto: driver 0 registers alg 30 flags 0 maxoplen 0
-crypto: driver 0 registers alg 31 flags 0 maxoplen 0
-crypto: driver 0 registers alg 32 flags 0 maxoplen 0
-crypto: driver 0 registers alg 11 flags 0 maxoplen 0
-crypto: driver 0 registers alg 18 flags 0 maxoplen 0
-crypto: driver 0 registers alg 23 flags 0 maxoplen 0
-crypto: driver 0 registers alg 22 flags 0 maxoplen 0
-cgd: self-test aes-xts-256
-cgd: self-test aes-xts-512
-cgd: self-test aes-cbc-128
-cgd: self-test aes-cbc-256
-cgd: self-test 3des-cbc-192
-cgd: self-test blowfish-cbc-448
-cgd: self-test aes-cbc-128 (encblkno8)
-cgd: self-tests passed
-Searching for RAID components...
+video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
+swwdog0: software watchdog initialized
 boot device: wd0
 root on dk0 dumps on dk1
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.97/modules
-pci_mem_find: void region
-i915drmkms0: map 5 failed
-i915drmkms0 {drm:netbsd:intel_uc_init_early+0x9c} enable_guc=0 (guc:no submission:no huc:no)
-{drm:netbsd:i915_gem_init_early+0x67} fake context support initialized
-pci_mem_find: void region
-pci_mem_find: void region
-pci_mem_find: void region
-pci_mem_find: void region
-pci_mem_find: void region
-pci_mem_find: void region
-pci_mem_find: void region
-pci_mem_find: void region
-pci_mem_find: void region
-pci_mem_find: void region
-pci_mem_find: void region
-pci_mem_find: void region
-i915drmkms0 {drm:netbsd:intel_uncore_init_mmio+0x2b4} unclaimed mmio detected on uncore init, clearing
-{drm:netbsd:i915_ggtt_probe_hw+0x3bd} GGTT size = 4096M
-{drm:netbsd:i915_ggtt_probe_hw+0x3db} GMADR size = 256M
-{drm:netbsd:i915_ggtt_probe_hw+0x404} DSM size = 0M
-{drm:netbsd:intel_opregion_setup+0x4c} graphic opregion physical addr: 0xd9096018
-{drm:netbsd:intel_opregion_setup+0x142} ACPI OpRegion version 2.0.0
-{drm:netbsd:intel_opregion_setup+0x166} Public ACPI methods supported
-{drm:netbsd:intel_opregion_setup+0x446} SWSCI supported
-{drm:netbsd:swsci+0x192} SWSCI request timed out
-{drm:netbsd:swsci+0x2ca} SWSCI request already in progress
-{drm:netbsd:intel_opregion_setup+0x514} SWSCI GBDA callbacks 00000001, SBCB callbacks 00000001
-{drm:netbsd:intel_opregion_setup+0x413} ASLE supported
-{drm:netbsd:intel_opregion_setup+0x3fb} ASLE extension supported
-kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
-kern info: [drm] Driver supports precise vblank timestamp query.
-{drm:netbsd:intel_power_domains_init_hw+0x23} rawclk rate: 24000 kHz
-allocated pic msi7 type edge pin 0 level 6 to cpu0 slot 23 idt entry 105
+kern.module.path=/stand/amd64/10.99.4/modules
+WARNING: NVRAM century is 56 but RTC year is 2023
+Supports vblank timestamp caching Rev 2 (21.10.2013).
+Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at msi7 vec 0 (i915drmkms0)
-{drm:netbsd:intel_dump_cdclk_state+0x36} Current CDCLK 675000 kHz, VCO 0 kHz, ref 0 kHz, bypass 0 kHz, voltage level 3
-{drm:netbsd:intel_update_max_cdclk+0x8d} Max CD clock rate: 540000 kHz
-{drm:netbsd:intel_modeset_init+0x1992} Max dotclock rate: 540000 kHz
-iwm0: Ch. 1: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 2: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 3: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 4: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 5: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 6: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 7: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 8: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 9: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 10: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 11: valid +ibss active -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 12: valid -ibss passive -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 13: valid -ibss passive -radar -dfs +wide +40MHz -80MHz -160MHz
-iwm0: Ch. 14: invalid -ibss passive -radar -dfs -wide -40MHz -80MHz -160MHz
-iwm0: Ch. 36: valid -ibss passive -radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 40: valid -ibss passive -radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 44: valid -ibss passive -radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 48: valid -ibss passive -radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 52: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 56: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 60: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 64: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 100: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 104: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 108: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 112: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 116: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 120: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 124: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 128: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 132: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 136: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 140: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 144: valid -ibss passive +radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 149: valid -ibss passive -radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 153: valid -ibss passive -radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 157: valid -ibss passive -radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 161: valid -ibss passive -radar +dfs +wide +40MHz +80MHz -160MHz
-iwm0: Ch. 165: valid -ibss passive -radar +dfs +wide -40MHz -80MHz -160MHz
 iwm0: hw rev 0x210, fw ver 22.361476.0, address a4:02:b9:2f:d2:80
-iwm0: 11a rates: 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-iwm0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
-iwm0: 11g rates: 1Mbps 2Mbps 5.5Mbps 11Mbps 6Mbps 9Mbps 12Mbps 18Mbps 24Mbps 36Mbps 48Mbps 54Mbps
-{drm:netbsd:intel_engines_init+0x439} Initialized 11 context workarounds on rcs'0
-{drm:netbsd:intel_engines_driver_register+0x10d} renamed rcs'0 to rcs0
-{drm:netbsd:intel_engines_driver_register+0x10d} renamed bcs'0 to bcs0
-{drm:netbsd:intel_engines_driver_register+0x10d} renamed vcs'0 to vcs0
-{drm:netbsd:intel_engines_driver_register+0x10d} renamed vecs'0 to vecs0
-kern info: [drm] Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
+Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
 intelfb0 at i915drmkms0
-i915 device info: pciid=0x1616 rev=0x09 platform=BROADWELL (subplatform=0x1) gen=8
-i915 device info: engines: 47
-i915 device info: gen: 8
-i915 device info: gt: 2
-i915 device info: iommu: n/a
-i915 device info: memory-regions: 5
-i915 device info: page-sizes: 1000
-i915 device info: platform: BROADWELL
-i915 device info: ppgtt-size: 48
-i915 device info: ppgtt-type: 2
-i915 device info: is_mobile: no
-i915 device info: is_lp: no
-i915 device info: require_force_probe: no
-i915 device info: is_dgfx: no
-i915 device info: has_64bit_reloc: yes
-i915 device info: gpu_reset_clobbers_display: no
-i915 device info: has_reset_engine: yes
-i915 device info: has_fpga_dbg: yes
-i915 device info: has_global_mocs: no
-i915 device info: has_gt_uc: no
-i915 device info: has_l3_dpf: no
-i915 device info: has_llc: yes
-i915 device info: has_logical_ring_contexts: yes
-i915 device info: has_logical_ring_elsq: no
-i915 device info: has_logical_ring_preemption: no
-i915 device info: has_pooled_eu: no
-i915 device info: has_rc6: yes
-i915 device info: has_rc6p: no
-i915 device info: has_rps: yes
-i915 device info: has_runtime_pm: yes
-i915 device info: has_snoop: no
-i915 device info: has_coherent_ggtt: yes
-i915 device info: unfenced_needs_alignment: no
-i915 device info: hws_needs_physical: no
-i915 device info: cursor_needs_physical: no
-i915 device info: has_csr: no
-i915 device info: has_ddi: yes
-i915 device info: has_dp_mst: yes
-i915 device info: has_dsb: no
-i915 device info: has_dsc: no
-i915 device info: has_fbc: no
-i915 device info: has_gmch: no
-i915 device info: has_hdcp: no
-i915 device info: has_hotplug: yes
-i915 device info: has_ipc: no
-i915 device info: has_modular_fia: no
-i915 device info: has_overlay: no
-i915 device info: has_psr: yes
-i915 device info: overlay_needs_physical: no
-i915 device info: supports_tv: no
-i915 device info: slice total: 1, mask=0001
-i915 device info: subslice total: 3
-i915 device info: slice0: 3 subslices, mask=00000007
-i915 device info: slice1: 0 subslices, mask=00000000
-i915 device info: slice2: 0 subslices, mask=00000000
-i915 device info: EU total: 24
-i915 device info: EU per subslice: 8
-i915 device info: has slice power gating: no
-i915 device info: has subslice power gating: no
-i915 device info: has EU power gating: no
-i915 device info: CS timestamp frequency: 12500 kHz
-kern info: [drm] DRM_I915_DEBUG enabled
-kern info: [drm] DRM_I915_DEBUG_GEM enabled
+DRM_I915_DEBUG enabled
+DRM_I915_DEBUG_GEM enabled
 intelfb0: framebuffer at 0xe0001000, size 1366x768, depth 32, stride 5504
-{drm:netbsd:intel_reference_shared_dpll+0x86} using LCPLL 1350 for pipe A
-{drm:netbsd:lpt_disable_backlight+0x2c} set backlight PWM = 0
-{drm:netbsd:intel_set_cdclk+0x62} Changing CDCLK to 337500 kHz, VCO 0 kHz, ref 0 kHz, bypass 0 kHz, voltage level 2
-{drm:netbsd:ilk_hpd_irq_handler+0xd0} hotplug event received, stat 0x00000008, dig 0x00000012, pins 0x00000010, long 0x00000010
-{drm:netbsd:intel_hpd_irq_handler+0xec} digital hpd on [ENCODER:76:DDI A] - long
-{drm:netbsd:ilk_hpd_irq_handler+0xd0} hotplug event received, stat 0x00000008, dig 0x00000012, pins 0x00000010, long 0x00000010
-{drm:netbsd:intel_hpd_irq_handler+0xec} digital hpd on [ENCODER:76:DDI A] - long
-{drm:netbsd:lpt_enable_backlight+0x150} set backlight PWM = 872
-max_dotclock according to supported modes: 76420
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
-max_dotclock according to supported modes: 76420
 wsdisplay0: screen 1 added (default, vt100 emulation)
-max_dotclock according to supported modes: 76420
 wsdisplay0: screen 2 added (default, vt100 emulation)
-max_dotclock according to supported modes: 76420
 wsdisplay0: screen 3 added (default, vt100 emulation)
-max_dotclock according to supported modes: 76420
 wsdisplay0: screen 4 added (default, vt100 emulation)
+warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x20a8
+warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x4432c
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x20a8
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x20a8
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+uaudio0 at uhub1 port 1 configuration 1 interface 0
+uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 3
+uaudio0: ignored setting with format 0x80000000
+uaudio0: audio rev 2.00
+audio2 at uaudio0: playback
+audio2: slinear_le:16 2ch 48000Hz, blk 11520 bytes (30ms) for playback
+spkr3 at audio2: PC Speaker (synthesized)
+wsbell at spkr3 not configured
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x20a8
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x44324
+warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x20a8
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
