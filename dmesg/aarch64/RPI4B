@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.3 (GENERIC64) #0: Wed Apr 19 07:40:49 UTC 2023
+NetBSD 10.99.4 (GENERIC64) #0: Mon May 15 01:42:42 UTC 2023
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3928 MB
 avail memory = 3786 MB
@@ -142,7 +142,7 @@ IPsec: Initialized Security Association Processing.
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SA32G:0x69:0x2ac4fcd0:0x157>
 ld1: 29544 MB, 7503 cyl, 128 head, 63 sec, 512 bytes/sect x 60506112 sectors
-ld1: GPT GUID: c599091c-969c-474f-a752-53faf9a67ed6
+ld1: GPT GUID: d06fecf8-4aad-40bb-909d-67c3ee08bcbc
 dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 5070755 blocks at 90203, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -179,11 +179,11 @@ swwdog0: software watchdog initialized
 boot device: dk1
 root on dk1
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.3/modules
-WARNING: clock lost 125 days
+kern.module.path=/stand/evbarm/10.99.4/modules
+WARNING: clock lost 150 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc001674f2000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc001674fe000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
