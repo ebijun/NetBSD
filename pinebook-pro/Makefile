@@ -1,7 +1,8 @@
 RELEASE=/usr/release/images
 #IMG=${RELEASE}/NetBSD-10.99.1-evbarm-aarch64-202212210140Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.2-evbarm-aarch64-202301182330Z-install.img
-IMG=${RELEASE}/NetBSD-10.99.2-evbarm-aarch64-202303041720Z-install.img
+#IMG=${RELEASE}/NetBSD-10.99.2-evbarm-aarch64-202303041720Z-install.img
+IMG=${RELEASE}/NetBSD-10.99.4-evbarm-aarch64-202305160840Z-install.img
 
 #for recover X11
 #IMG=${RELEASE}/NetBSD-9.99.106-evbarm-aarch64-202211072300Z-install.img
