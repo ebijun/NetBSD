@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2022 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2023 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -37,18 +37,23 @@ OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:1
  :widths: 15 15 15 6 
 
  OSC,NBUG例会,togetter,アクセス数
- ,NBUG 2022/4月例会,https://togetter.com/li/1873517,382
- OSC2022 Online/Spring , NBUG 2022/3月例会,https://togetter.com/li/1856809,644
- ,NBUG 2022/2月例会,https://togetter.com/li/1847574,403
- OSC2022 Online/Osaka ,NBUG 2022/1月例会,https://togetter.com/li/1835534,832
- ,NBUG 2021/12月例会,https://togetter.com/li/1817903,399
- OSC2021 Online/Fukuoka ,NBUG 2021/11月例会,https://togetter.com/li/1803990,607
- OSC2021 Online/Fall ,NBUG 2021/10月例会,https://togetter.com/li/1790501,710
- OSC2021 Online/Hiroshima , NBUG 2021/9月例会,https://togetter.com/li/1774874,797
- ODC2021 Online , NBUG 2021/8月例会,https://togetter.com/li/1765257,690
- OSC2021 Online/Kyoto , NBUG 2021/7月例会,https://togetter.com/li/1751521,705
- OSC2021 Online/Hokkaido , NBUG 2021/6月例会,https://togetter.com/li/1735858,1018
- OSC2021 Online/Nagoya , NBUG 2021年5月例会,https://togetter.com/li/1720573,1052
+ 
+  OSC 2023/Nagoya ,2023/5月例会,https://togetter.com/li/2142714,259
+ ,2023/4月例会,https://togetter.com/li/2129326,420
+ OSC2023/Tokyo Spring,AsiaBSDCon2023,https://togetter.com/li/2112458,1561
+  OSC2023 Online/Spring ,2023/3月例会,https://togetter.com/li/2094211,842
+  ,2023/2月例会,https://togetter.com/li/2081847,846
+ OSC 2023 Online/Osaka ,2023/1月例会,https://togetter.com/li/2060234,1657
+ ,2022/12月例会,https://togetter.com/li/2010441,931
+ OSC2022 Online/Fukuoka ,2022/11月例会,https://togetter.com/li/1977568,975
+ KOF 2022,,https://togetter.com/li/1970580,1556
+ OSC2022 Online/Fall,2022/10月例会,https://togetter.com/li/1964480,1561
+ OSC2022 Online Hiroshima,2022/9月例会,https://togetter.com/li/1950893,1141
+ ODC2022 Online ,2022/8月例会,https://togetter.com/li/1938050,1497
+ OSC2022  Online/Kyoto,2022/7月例会,https://togetter.com/li/1921498,2226
+ OSC2022 Online/Hokkaido,2022/6月例会,https://togetter.com/li/1905889,1658
+ OSC 2022 Online/Nagoya,2022年5月例会,https://togetter.com/li/1891762,1451
+ ,2022/4月例会,https://togetter.com/li/1873517,904
 
 名古屋でのオープンソースカンファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -71,9 +76,11 @@ OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:1
  2018 Nagoya,5/19,500,37,名古屋市中小企業振興会館 
  2019 Nagoya,7/13,500,29,名古屋市中小企業振興会館 
  2020 online Nagoya,5/30,370,14,ZOOM
- 2021 online Nagoya,5/29,,15,ZOOM
- 2022 online Nagoya,5/28,,,ZOON
- 
+ 2021 online Nagoya,5/29,400,16,ZOOM
+ 2022 online Nagoya,5/28,280,21,ZOOM
+ 2023 online Nagoya,5/20,,,ZOOM
+ 2023 Nagoya,5/28,,,名古屋市中小企業振興会館 
+   
 オープンソースカンファレンス以前
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -92,6 +99,8 @@ OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:1
 .. csv-table::
  :widths: 30 20 60
 
+ 名古屋シネマテーク,今池,2023/7月閉館！？！？！？
+ マルワ模型店,新瀬戸,2023閉店廃業かも
  パウ,大須,タブレットから謎ハードまで。ボントンの隣。
  鯱の家,黒川,カレーうどん。
  陽龍,黒川,チャーシューメン。
@@ -99,7 +108,6 @@ OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:1
  円頓寺商店街,国際センター,堀川から丸の内まで続く商店街
  ふれあい館,円頓寺商店街,NBUG例会会場だった。トクサツガガガ最終回でビデオ屋。
  まつば,円頓寺商店街,NBUG例会会場脇。名古屋で数番目に自家焙煎をはじめた店。
- あたりや,金山,最近の裏例会定番。
  本陣串や,黒川,ビックリコーラとは何か。
  五條,円頓寺商店街,酒場放浪記で取り上げられる。とり天もおいしい。
  菊井かつ,黒川,かつ10本豚かつ10本青いやつ。円頓寺は消滅。黒川へいこう。
@@ -116,7 +124,7 @@ OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:1
  丸八寿司,国際センター,薬師丸ひろこ巻の秘密を漏らしてはならない。
  松楽,吹上,中華。かにチャーハンの鍋振り。
  好来道場,吹上,総本家。桜山の好陽軒が昔の好来軒の味なので食べくらべよう。
- Brick Lane,名駅,クラフトビール＋ハンバーガー。湘南京都アメリカ。
+ Brick Lane,名駅,クラフトビール＋ハンバーガー。トトロの隣のtotopia。
  Used like new beer,名駅,菊井2-17-5 クラフトビール+サンドイッチ。民家改造。
  ワイズマーケット,国際センター,地ビール醸造。まるはちめいよん。
  三八屋,一宮,地ビール醸造。例会終了後に寄る。
@@ -132,7 +140,7 @@ OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:1
  ロンドベル,浄心,珈琲豆と鳩時計がめぐりあい宇宙。万代町はプラモ狂四郎の舞台。
  稲永スリップ跡,野蒜,愛知航空機永徳機体工場スリップ跡。
  ウニタ書店,今池,スタービルに移転
- 名古屋シネマテーク,今池,2021/5/29 緑の牢獄トークイベント
+
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -144,6 +152,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 186,OSC2023名古屋,http://www.re.soum.co.jp/~jun/OSC2023nagoya.pdf
+ 176,OSC2022名古屋,http://www.re.soum.co.jp/~jun/OSC2022nagoya.pdf 
  165,OSC2021名古屋,http://www.re.soum.co.jp/~jun/OSC2021nagoya.pdf
  154,OSC2020名古屋,http://www.re.soum.co.jp/~jun/OSC2020nagoya.pdf
  144,OSC2019名古屋,http://www.re.soum.co.jp/~jun/OSC2019nagoya.pdf
@@ -161,7 +171,9 @@ togetterまとめ
 
 .. csv-table::
  :widths: 80 80
- 
+
+ OSC2023 Online/Nagoya 名古屋,https://togetter.com/li/2142714
+ OSC2022 Online/Nagoya 名古屋,https://togetter.com/li/1950893
  OSC2021 Online/Nagoya 名古屋,https://togetter.com/li/1720573
  OSC2020 Online/Nagoya 名古屋,https://togetter.com/li/1529053
  OSC2019名古屋 NetBSDブース展示の記録,https://togetter.com/li/1375440
