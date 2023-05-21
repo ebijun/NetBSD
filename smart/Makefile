@@ -5,6 +5,9 @@ DISK=wd0
 
 DIR="${MACHINE}/${VENDOR}/${PRODUCT}/${DISK}"
 
+echo:
+	echo ${DIR}
+
 smart:
 	mkdir -p ${DIR}
 	sudo atactl ${DISK} smart status	> ${DIR}/status
