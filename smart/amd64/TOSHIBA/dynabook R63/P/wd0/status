@@ -1,8 +1,8 @@
 SMART supported, SMART enabled
 id value thresh crit collect reliability description                 raw
   5 100   50     no  online  positive    Reallocated sector count    0
-  9 100    0     no  online  positive    Power-on hours count        14
- 12 100    0     no  online  positive    Device power cycle count    31
+  9 100    0     no  online  positive    Power-on hours count        227
+ 12 100    0     no  online  positive    Device power cycle count    46
 167 100    0     no  online  positive    Unknown                     0
 168 100    0     no  online  positive    Unknown                     0
 169 100   10     yes online  positive    Unknown                     0
@@ -16,17 +16,17 @@ id value thresh crit collect reliability description                 raw
 183 100    0     no  online  positive    Runtime Bad Block           0
 184 100   90     yes online  positive    End-to-end error            0
 187 100    0     no  online  positive    Reported Uncorrectable Errors 0
-192 100    0     no  online  positive    Power-off retract count     8
-194  42    0     no  online  positive    Temperature                 42 Lifetime min/max 30/125
+192 100    0     no  online  positive    Power-off retract count     9
+194  48    0     no  online  positive    Temperature                 48 Lifetime min/max 30/125
 196 100    0     no  online  positive    Reallocated event count     0
 197 100    0     no  online  positive    Current pending sector      0
 199 100    0     no  online  positive    Ultra DMA CRC error count   0
 206 200    0     no  online  positive    Flying height               2
-207 200    0     no  online  positive    Spin high current           17
-208 200    0     no  online  positive    Spin buzz                   5
+207 200    0     no  online  positive    Spin high current           23
+208 200    0     no  online  positive    Spin buzz                   8
 231 100    5     yes online  positive    Temperature                 0
-233 100    0     no  online  positive    Media wearout indicator     2388
-234 100    0     no  online  positive    Unknown                     447
-241 100    0     no  online  positive    Total LBAs Written          1192
-242 100    0     no  online  positive    Total LBAs Read             10
-243  50    0     no  online  positive    Unknown                     42
+233 100    0     no  online  positive    Media wearout indicator     3451
+234 100    0     no  online  positive    Unknown                     3128
+241 100    0     no  online  positive    Total LBAs Written          1407
+242 100    0     no  online  positive    Total LBAs Read             267
+243  50    0     no  online  positive    Unknown                     48
