@@ -1,0 +1,29 @@
+SMART supported, SMART enabled
+id value thresh crit collect reliability description                 raw
+  1 100   51     yes online  positive    Raw read error rate         2
+  2 252    0     no  online  positive    Throughput performance      0
+  3  92   25     yes online  positive    Spin-up time                2433
+  4 100    0     no  online  positive    Start/stop count            772
+  5 252   10     yes online  positive    Reallocated sector count    0
+  7 252   51     no  online  positive    Seek error rate             0
+  8 252   15     no  offline positive    Seek time performance       0
+  9 100    0     no  online  positive    Power-on hours count        11138
+ 10 252   51     no  online  positive    Spin retry count            0
+ 11 100    0     no  online  positive    Calibration retry count     158
+ 12 100    0     no  online  positive    Device power cycle count    808
+ 13 100    0     no  online  positive    Soft read error rate        0
+181  97    0     no  online  positive    Program Fail Count          69691463
+191 100    0     no  online  positive    G-sense error rate          77
+192 252    0     no  online  positive    Power-off retract count     0
+193  28    0     no  online  positive    Load cycle count            736486
+194  62    0     no  online  positive    Temperature                 38 Lifetime min/max 13/45
+195 100    0     no  online  positive    Hardware ECC Recovered      0
+196 252    0     no  online  positive    Reallocated event count     0
+197 252    0     no  online  positive    Current pending sector      0
+198 252    0     no  offline positive    Offline uncorrectable       0
+199 200    0     no  online  positive    Ultra DMA CRC error count   0
+200 100    0     no  online  positive    Write error rate            5543
+240 100    0     no  online  positive    Head flying hours           4586
+241  98    0     no  online  positive    Total LBAs Written          3943548
+242  94    0     no  online  positive    Total LBAs Read             9117520
+254 252    0     no  online  positive    Free Fall Sensor            0
