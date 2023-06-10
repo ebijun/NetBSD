@@ -35,9 +35,6 @@ RaspberryPIのNetBSDイメージについて
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
- 2022/1/29,9.99.92,5.0.2,3.9.2,1.1.1m,drm大改修,OSC大阪,http://mail-index.netbsd.org/port-arm/2022/01/10/msg007542.html
- 2022/3/12,9.99.94,5.0.4,,,tor,OSC東京春,http://mail-index.netbsd.org/port-arm/2022/03/05/msg007597.html
- 2022/4/09,9.99.96,,,1.1.1n,,,http://mail-index.netbsd.org/port-arm/2022/03/05/msg007628.html
  2022/5/28,9.99.96,,3.9.2nb1,,OpenSSH9.0,OSC名古屋,http://mail-index.netbsd.org/port-arm/2022/03/05/msg007674.html
  2022/6/25,9.99.98,,,, icu-71.1 ,OSC北海道,http://mail-index.netbsd.org/port-arm/2022/06/22/msg007697.html
  2022/7/30,9.99.99,,3.9.2nb4,,Python3.10,OSC京都,http://mail-index.netbsd.org/port-arm/2022/07/25/msg007730.html
@@ -48,6 +45,10 @@ RaspberryPIのNetBSDイメージについて
  2023/2/17,10.99.2,5.0.4nb3,3.9.2nb10,1.1.1t,,NBUG2月, http://mail-index.netbsd.org/port-arm/2023/02/17/msg008116.html
  2023/3/11,10.99.2,,,,,OSC東京春, http://mail-index.netbsd.org/port-arm/2023/03/04/msg008133.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
+ 2023/4/19,10.99.3,,3.9.3,,,NBUG4月, http://mail-index.netbsd.org/port-arm/2023/04/19/msg008212.html
+ 2023/5/16,10.99.4,,,3.0.8,twitterAPI,OSC名古屋, http://mail-index.netbsd.org/port-arm/2023/05/16/msg008251html
+ 年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
+
 
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。
