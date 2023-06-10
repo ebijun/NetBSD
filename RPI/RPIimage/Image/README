@@ -1,21 +1,21 @@
-VERSION: :1,$s/2023-05-16/2023-05-16/g
-ISO:     :1,$s/202305150440Z/202305150440Z/g
+VERSION: :1,$s/2023-06-10/2023-06-10/g
+ISO:     :1,$s/202306091110Z/202306091110Z/g
 NetBSD:  :1,$s/10.99.4/10.99.4/g
-PKGSRC:  :1,$s/2023-05-16/2022/
+PKGSRC:  :1,$s/2023-06-10/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2023-05-16-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2023-06-10-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2023-05-16-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2023-06-10-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-05-16-earmv6hf/2023-05-16-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-05-16-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-06-10-earmv6hf/2023-06-10-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-06-10-earmv6hf/MD5
 
 Update:
-- NetBSD 10.99.4 evbarm-earmv6hf 2202305150440Z rpi.img from nyftp.
+- NetBSD 10.99.4 evbarm-earmv6hf 2202306091110Z rpi.img from nyftp.
 - openssl-3.0.8 
 -- replace pkg_install
 - rust build failed in earmv6hf
@@ -76,23 +76,19 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- dhcpcd-10.0.1 NetBSD-10.99.4 openssl-3.0.8 sh-20220122-20230515014242Z
- userland-NetBSD-10.99.4/evbarm
+ bozohttpd-20230602 openssl-3.0.9 sh-20220122-20230609102455Z
 
 pkgsrc:
- curl-8.0.1nb1 fontconfig-2.14.2nb1 fossil-2.21nb1 freetype2-2.13.0nb1
- fribidi-1.0.12 gd-2.3.3nb8 git-base-2.40.1 gnutls-3.8.0nb3
- gtk2+-2.24.33nb10 gtk3+-3.24.37 harfbuzz-7.2.0 icu-73.1nb1
- libXft-2.3.8 libcups-2.4.2nb6 libepoll-shim-0.0.20230411
- libimagequant-2.18.0 libxkbcommon-1.5.0nb1 libxml2-2.10.4nb1
- libxslt-1.1.37nb2 m17n-lib-1.8.0nb11 medit-1.2.0nb24
- mlterm-3.9.3nb1 nghttp2-1.53.0 perl-5.36.1 pkgin-22.10.0nb2
- qt5-qtbase-5.15.9nb1 qt5-qtx11extras-5.15.9nb1 qt5-qtxmlpatterns-5.15.9nb1
- ruby31-addressable-2.8.4 ruby31-atk-4.1.5 ruby31-cairo-gobject-4.1.5
- ruby31-gdk3-4.1.5 ruby31-gdk_pixbuf2-4.1.5 ruby31-gio2-4.1.5
- ruby31-glib2-4.1.5 ruby31-gobject-introspection-4.1.5 ruby31-gtk3-4.1.5
- ruby31-mini_portile2-2.8.2 ruby31-nokogiri-1.14.4 ruby31-pango-4.1.5
- shared-mime-info-2.2nb2 uim-1.8.9nb2 wayland-1.21.0nb2 wget-1.21.3nb3
+ curl-8.1.2 double-conversion-3.3.0 fribidi-1.0.13 glib2-2.74.6nb1
+ gsettings-desktop-schemas-40.0nb1 harfbuzz-7.3.0 libduktape-2.7.0
+ libproxy-0.5.1 libxslt-1.1.38 mozilla-rootcerts-1.0.20230505
+ nettle-3.9.1 p5-IO-Socket-SSL-2.081 p5-Net-DNS-1.38
+ python310-3.10.12 qt5-qtbase-5.15.9nb2 qt5-qtx11extras-5.15.9nb2
+ qt5-qtxmlpatterns-5.15.9nb2 ruby31-atk-4.1.7 ruby31-cairo-gobject-4.1.7
+ ruby31-gdk3-4.1.7 ruby31-gdk_pixbuf2-4.1.7 ruby31-gio2-4.1.7
+ ruby31-glib2-4.1.7 ruby31-gobject-introspection-4.1.7 ruby31-gtk3-4.1.7
+ ruby31-pango-4.1.7 ruby31-version_gem-1.1.3 uim-1.8.9nb3
+ wget-1.21.4
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -151,7 +147,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-05-16-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-06-10-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
