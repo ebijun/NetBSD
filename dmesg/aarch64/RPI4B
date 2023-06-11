@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.4 (GENERIC64) #0: Mon May 15 01:42:42 UTC 2023
+NetBSD 10.99.4 (GENERIC64) #0: Sat Jun 10 07:05:18 UTC 2023
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3928 MB
 avail memory = 3786 MB
@@ -142,7 +142,7 @@ IPsec: Initialized Security Association Processing.
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SA32G:0x69:0x2ac4fcd0:0x157>
 ld1: 29544 MB, 7503 cyl, 128 head, 63 sec, 512 bytes/sect x 60506112 sectors
-ld1: GPT GUID: d06fecf8-4aad-40bb-909d-67c3ee08bcbc
+ld1: GPT GUID: 4fbf1ca4-604c-44d6-a652-d48ffc8a848e
 dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 5070755 blocks at 90203, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -160,9 +160,10 @@ uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 
 uhub2: single transaction translator
 sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 uhub2: 4 ports with 4 removable, self powered
-uhub3 at uhub2 port 2: ALCOR (0x058f) Generic USB Hub (0x9254), class 9/0, rev 1.10/3.00, addr 3
+uhub3 at uhub2 port 3: vendor 1a40 (0x1a40) USB 2.0 Hub (0x0101), class 9/0, rev 2.00/1.11, addr 3
+uhub3: single transaction translator
 uhub3: 4 ports with 4 removable, self powered
-uhidev0 at uhub3 port 3 configuration 1 interface 0
+uhidev0 at uhub3 port 1 configuration 1 interface 0
 uhidev0: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 4, iclass 3/1
 ums0 at uhidev0: 3 buttons, W and Z dirs
 wsmouse0 at ums0 mux 0
@@ -180,21 +181,21 @@ boot device: dk1
 root on dk1
 root file system type: ffs
 kern.module.path=/stand/evbarm/10.99.4/modules
-WARNING: clock lost 150 days
+WARNING: clock lost 176 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc001674fe000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc001674dc000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
 vchiq: vchiq_initialise: videocore initialized after 1 retries
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.bin
-bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 audio0 at vcaudio0: playback
 audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for playback
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
+bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 bwfm0: NVRAM file default:    brcmfmac43455-sdio.txt
 bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt
 bwfm0: Found NVRAM file: brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt
@@ -204,3 +205,4 @@ bwfm0: CHIPACTIVE
 bwfm0: address dc:a6:32:70:a9:6d
 bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
 wsdisplay0: screen 4 added (default, vt100 emulation)
+genet0: frame error
