@@ -6,7 +6,7 @@ BOARD=armv7-earmv7hf
 #SUFFIX=.gz
 
 DATE=`date +%Y-%m-%d`
-#DATE=2018-12-02
+#DATE=2022-08-05
 
 #as usual
 progress $COMPRESS -f ${DATE}-netbsd-${BOARD}.img${SUFFIX} dd of=/dev/${DEVICE} bs=4m

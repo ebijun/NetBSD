@@ -1,149 +1,140 @@
 anthy-9100h         Kana Kanji conversion system
 at-spi2-atk-2.38.0nb1 Assistive Technology Service Provider Interface A11y Toolkit
 at-spi2-core-2.40.3nb2 Assistive Technology Service Provider Interface Core
-atk-2.36.0nb1       Set of interfaces for accessibility
-bash-5.1.16         The GNU Bourne Again Shell
-cairo-1.16.0nb6     Vector graphics library with cross-device output support
-cairo-gobject-1.16.0nb6 Vector graphics library with cross-device output support
-curl-7.84.0nb1      Client that groks URLs
-dbus-1.14.0nb3      Message bus system
-desktop-file-utils-0.26nb1 Utilities to manage desktop entries
+atk-2.38.0          Set of interfaces for accessibility
+bash-5.2.15         The GNU Bourne Again Shell
+brotli-1.0.9        Generic-purpose lossless compression algorithm
+cairo-1.16.0nb9     Vector graphics library with cross-device output support
+cairo-gobject-1.16.0nb7 Vector graphics library with cross-device output support
+curl-8.1.2          Client that groks URLs
+dbus-1.14.6         Message bus system
 digest-20220214     Message digest wrapper utility
-dillo-3.0.5nb11     Very small and fast graphical web-browser
-fltk-1.3.8nb1       Fast Light Tool Kit for graphical user interfaces
-fossil-2.19         High-reliability, distributed software configuration management
-fribidi-1.0.11      Free Implementation of the Unicode Bidirectional Algorithm
-gd-2.3.3nb4         Graphics library for the dynamic creation of images
-gdk-pixbuf2-2.42.8nb1 Library for image loading and manipulation
-giflib-5.2.1nb4     GIF image format library
-git-base-2.37.1     GIT Tree History Storage Tool (base package)
-glib2-2.72.3        Some useful routines for C programming (glib2)
+dillo-3.0.5nb12     Very small and fast graphical web-browser
+double-conversion-3.3.0 Conversion routines for IEEE doubles
+fltk-1.3.8nb2       Fast Light Tool Kit for graphical user interfaces
+fontconfig-2.14.2nb1 Library for configuring and customizing font access
+fossil-2.22         High-reliability, distributed software configuration management
+freetype2-2.13.1    Font rendering engine and library API
+fribidi-1.0.13      Free Implementation of the Unicode Bidirectional Algorithm
+gd-2.3.3nb10        Graphics library for the dynamic creation of images
+gdk-pixbuf2-2.42.10nb2 Library for image loading and manipulation
+giflib-5.2.1nb5     GIF image format library
+git-base-2.41.0nb1  GIT Tree History Storage Tool (base package)
+glib2-2.76.4        Some useful routines for C programming (glib2)
 gmp-6.2.1nb3        Library for arbitrary precision arithmetic
-gnutls-3.7.7        Transport Layer Security library
-gobject-introspection-1.70.0nb2 GObject Introspection
-graphite2-1.3.14    Cross-platform rendering for complex writing systems
-gtk2+-2.24.33nb6    GIMP Toolkit v2 - libraries for building X11 user interfaces
-gtk3+-3.24.34       GIMP Toolkit v3 - libraries for building X11 user interfaces
-harfbuzz-5.0.1      OpenType text shaping engine
+gnutls-3.8.0nb3     Transport Layer Security library
+gobject-introspection-1.76.1 GObject Introspection
+graphite2-1.3.14nb1 Cross-platform rendering for complex writing systems
+gsettings-desktop-schemas-40.0nb1 Collection of GSettings schemas for the GNOME desktop
+gtk2+-2.24.33nb10   GIMP Toolkit v2 - libraries for building X11 user interfaces
+gtk3+-3.24.38       GIMP Toolkit v3 - libraries for building X11 user interfaces
+harfbuzz-7.3.0      OpenType text shaping engine
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
 icewm-1.2.38pre2nb2 Small, fast and light-weight window manager
-icu-71.1            Robust and full-featured Unicode services
+icu-73.2            Robust and full-featured Unicode services
 jbigkit-2.1nb1      JBIG-KIT lossless image compression library
 jpeg-9e             IJG's jpeg compression utilities
+libXft-2.3.8        Library for configuring and customizing font access
 libcfg+-0.7.0       Command line and configuration file parsing library
-libcups-2.4.2nb1    Common UNIX Printing System library
-libffi-3.4.2nb3     Foreign function interface
+libcups-2.4.6nb1    Common UNIX Printing System library
+libduktape-2.7.0    Embeddable Javascript engine library
+libepoll-shim-0.0.20230411 Small epoll implemented using kevent
+libffi-3.4.4        Foreign function interface
 libgcroots-0.2.3    Garbage collector supporting library
-libgcrypt-1.10.1    GNU cryptographic library
-libgpg-error-1.45   Definitions of common error values for all GnuPG components
-libidn-1.41         Internationalized Domain Names command line tool
-libidn2-2.3.3       Convert internationalized domain names to/from ASCII Encoding
-libimagequant-2.16.0 High-quality conversion of RGBA images to 8-bit indexed-color
-libotf-0.9.16nb2    Library for handling OpenType fonts (OTF)
-libpaper-1.1.28     Paper size handling library
-libproxy-0.4.15nb1  Library that provides automatic proxy configuration management
-libpsl-0.21.1nb2    Library to handle the Public Suffix List
-libtasn1-4.18.0     ASN.1 structure parser library
-libunistring-1.0    Unicode string library
+libgcrypt-1.10.2    GNU cryptographic library
+libgpg-error-1.47   Definitions of common error values for all GnuPG components
+libidn2-2.3.4       Convert internationalized domain names to/from ASCII Encoding
+libimagequant-4.2.0 High-quality conversion of RGBA images to 8-bit indexed-color
+libotf-0.9.16nb3    Library for handling OpenType fonts (OTF)
+libpaper-2.1.1      Paper size handling library
+libproxy-0.5.3      Library that provides automatic proxy configuration management
+libpsl-0.21.2       Library to handle the Public Suffix List
+libtasn1-4.19.0     ASN.1 structure parser library
+libunistring-1.1    Unicode string library
 libuuid-2.32.1nb1   Generate unique identifiers for objects
-libwebp-1.2.3       WebP image format library and tools
-libxkbcommon-1.4.1  Library to handle keyboard descriptions
-libxml2-2.9.14      XML parser library from the GNOME project
-libxslt-1.1.34nb9   XSLT parser library from the GNOME project
+libwebp-1.2.4nb1    WebP image format library and tools
+libxkbcommon-1.5.0nb1 Library to handle keyboard descriptions
+libxml2-2.10.4nb1   XML parser library from the GNOME project
+libxslt-1.1.38      XSLT parser library
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
-lintpkgsrc-4.99     Sanity checks on the complete pkgsrc tree
+lintpkgsrc-2022.09.29 Sanity checks on the complete pkgsrc tree
 lrzsz-0.12.20nb1    Receive/Send files via X/Y/ZMODEM protocol.  (unrestrictive)
-lz4-1.9.3nb1        Extremely Fast Compression algorithm
+lz4-1.9.4           Extremely Fast Compression algorithm
 lzo-2.10            Portable lossless data compression library
 m17n-db-1.8.0       The m17n database used by the m17n library
-m17n-lib-1.8.0nb7   Multilingualization library
-medit-1.2.0nb20     Programming and around-programming text editor
-mlterm-3.9.2nb4     Multilingual terminal emulator
-mozilla-rootcerts-1.0.20220614 Root CA certificates from the Mozilla Project
-nettle-3.8.1        Cryptographic library
-nghttp2-1.48.0      Implementation of HTTP/2 in C
-p11-kit-0.24.1      PKCS#11 module manager
-p5-Authen-SASL-2.16nb10 Perl module to handle SASL authentication
-p5-Digest-HMAC-1.04nb12 Perl5 module for HMAC
-p5-Email-Valid-1.202nb6 Perl5 module for testing validity of an email address
-p5-Error-0.17029nb3 Perl extension module for try/throw/catch exception handling
-p5-GSSAPI-0.28nb14  Perl extension providing access to the GSSAPIv2 library
-p5-IO-CaptureOutput-1.1105nb3 Capture STDOUT and STDERR from Perl code, subprocesses, or XS
-p5-IO-Socket-INET6-2.73nb1 Perl object interface for AF_INET/AF_INET6 domain sockets
-p5-IO-Socket-SSL-2.072nb1 Perl5 SSL socket interface class
-p5-MailTools-2.21nb3 Perl5 modules related to mail applications
-p5-Mozilla-CA-20211001nb1 Mozilla's CA cert bundle for Perl
-p5-Net-DNS-1.34     Perl5 module for DNS resolution
-p5-Net-Domain-TLD-1.75nb6 Work with TLD names
-p5-Net-IP-1.26nb10  Perl extension for manipulating IPv4/IPv6 addresses
-p5-Net-LibIDN-0.12nb14 Perl bindings for GNU Libidn
-p5-Net-SMTP-SSL-1.04nb6 Perl5 module providing SSL support for Net::SMTP
-p5-Net-SSLeay-1.90nb2 Perl5 module for using OpenSSL
-p5-Socket6-0.29nb4  Perl5 module to support getaddrinfo() and getnameinfo()
-p5-TimeDate-2.33nb2 Perl5 TimeDate distribution
-pango-1.50.8        Library for layout and rendering of text
-pcre-8.45           Perl Compatible Regular Expressions library
-pcre2-10.40         Perl Compatible Regular Expressions library (major version 2)
-perl-5.36.0         Practical Extraction and Report Language
+m17n-lib-1.8.0nb12  Multilingualization library
+md4c-0.4.8          Markdown for C library and parser
+medit-1.2.0nb24     Programming and around-programming text editor
+mlterm-3.9.3nb2     Multilingual terminal emulator
+mozilla-rootcerts-1.0.20230505 Root CA certificates from the Mozilla Project
+nettle-3.9.1        Cryptographic library
+nghttp2-1.55.1      Implementation of HTTP/2 in C
+p11-kit-0.25.0      PKCS#11 module manager
+pango-1.50.14       Library for layout and rendering of text
+pcre2-10.42         Perl Compatible Regular Expressions library (major version 2)
+perl-5.38.0         Practical Extraction and Report Language
 pkg_chk-2.0.11      Check installed package versions against pkgsrc
-png-1.6.37nb1       Library for manipulating PNG images
-py310-cElementTree-3.10.6 C implementation of Python ElementTree API
-py310-expat-3.10.6  Python interface to expat
-python310-3.10.6    Interpreted, interactive, object-oriented programming language
-qt5-qtbase-5.15.5nb1 C++ X GUI toolkit
-qt5-qtx11extras-5.15.5 Qt5 module for X11 extras
-qt5-qtxmlpatterns-5.15.5 Qt5 module for XML Patterns
+pkg_install-20211115 Package management and administration tools for pkgsrc
+pkgin-22.10.0nb2    Apt / yum like tool for managing pkgsrc binary packages
+png-1.6.40          Library for manipulating PNG images
+py310-cElementTree-3.10.12 C implementation of Python ElementTree API
+py310-expat-3.10.12nb1 Python interface to expat
+python310-3.10.12   Interpreted, interactive, object-oriented programming language
+qt5-qtbase-5.15.10  C++ X GUI toolkit
+qt5-qtx11extras-5.15.10 Qt5 module for X11 extras
+qt5-qtxmlpatterns-5.15.10 Qt5 module for XML Patterns
 raspberrypi-userland-20170109nb3 Various libraries for the Raspberry Pi
-ruby27-addressable-2.8.0 Replacement for the URI Implementation of standard librrary
-ruby27-atk-3.5.1    Ruby binding of ATK-1.0.x or later
-ruby27-base-2.7.6   Ruby 2.7.6 release minimum base package
-ruby27-cairo-1.17.5 Ruby bindings for cairo
-ruby27-cairo-gobject-3.5.1 Ruby binding of cairo-gobject
-ruby27-delayer-1.2.1 Ruby module to delay the processing
-ruby27-delayer-deferred-2.2.0 Deferred for Delayer
-ruby27-diva-2.0.1   Implementation of expression for handling things
-ruby27-gdk3-3.5.1   Ruby binding of GDK3
-ruby27-gdk_pixbuf2-3.5.1 Ruby binding of GdkPixbuf-2.x
-ruby27-gettext-3.4.1 Ruby localization library like as GNU gettext
-ruby27-gio2-3.5.1   Ruby binding of gio-2.0.x
-ruby27-glib2-3.5.1  Ruby binding of GLib-2.x
-ruby27-gobject-introspection-3.5.1 Ruby binding of Gobject Introspection
-ruby27-gtk3-3.5.1   Ruby binding of GTK+-3.x
-ruby27-httpclient-2.8.3nb1 HTTP accessing library for Ruby
-ruby27-instance_storage-1.0.0 Manage class instances with dictionary
-ruby27-locale-2.1.3 Pure ruby library which provides basic APIs for localization
-ruby27-memoist-0.16.2 Replacement of memoizable, memoize methods invocation
-ruby27-mikutter-5.0.4 Simple, powerful, and moeful twitter client
-ruby27-mikutter-plugins-twitter-5.0nb1 Plugins for mikutter to use Twitter
-ruby27-mini_portile2-2.8.0 Simple autoconf builder for developers
-ruby27-moneta-1.5.1 Unified interface to key/value stores
-ruby27-native-package-installer-1.1.3 Helper to install native packages on "gem install"
-ruby27-nokogiri-1.13.6 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
-ruby27-oauth-0.5.8  OAuth Core Ruby implementation
-ruby27-pango-3.5.1  Ruby binding of pango-1.x
-ruby27-pkg-config-1.4.7 Pure Ruby implementation of pkg-config
-ruby27-pluggaloid-1.7.0 Extensible plugin system for mikutter
-ruby27-public_suffix-4.0.7 Domain name parser based on the Public Suffix List
-ruby27-red-colors-0.3.0 Wide array of features for dealing with colors
-ruby27-simpleidn-0.2.1 Punycode ACE to unicode UTF-8 (and vice-verse) string conversion
-ruby27-text-1.3.1   Collection of text algorithms for Ruby
-ruby27-twitter-text-simpleidn-3.0.0.0 Forked version of Twitter-text gem without libIDN dependency
-ruby27-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
-ruby27-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
-ruby27-unf_ext-0.0.8 Unicode Normalization Form support library for CRuby
-shared-mime-info-1.10nb6 Core database of common types
-sudo-1.9.11p3       Allow others to run commands as root
-tcsh-6.24.01nb1     Extended C-shell with many useful features
-tiff-4.4.0          Library and tools for reading and writing TIFF data files
-uim-1.8.9pre20210104nb3 Multilingual input method library
-vlgothic-ttf-20200720 Free Japanese TrueType fonts named 'VLGothic'
-wget-1.21.3nb1      Retrieve files from the 'net via HTTP and FTP
-xcb-util-0.4.0      XCB Utilities
-xcb-util-image-0.4.0 XCB port of Xlib's XImage and XShmImage
-xcb-util-keysyms-0.4.0 XCB Utilities
-xcb-util-renderutil-0.3.9 Convenience functions for the Render extension
-xcb-util-wm-0.4.1   Client and window-manager helpers for ICCCM and EWMH
+ruby31-addressable-2.8.4 Replacement for the URI Implementation of standard librrary
+ruby31-atk-4.1.7    Ruby binding of ATK-1.0.x or later
+ruby31-base-3.1.4nb1 Ruby 3.1.4 release minimum base package
+ruby31-cairo-1.17.12 Ruby bindings for cairo
+ruby31-cairo-gobject-4.1.7 Ruby binding of cairo-gobject
+ruby31-delayer-1.2.1 Ruby module to delay the processing
+ruby31-delayer-deferred-2.2.0 Deferred for Delayer
+ruby31-diva-2.0.1   Implementation of expression for handling things
+ruby31-gdk3-4.1.7   Ruby binding of GDK3
+ruby31-gdk_pixbuf2-4.1.7 Ruby binding of GdkPixbuf-2.x
+ruby31-gettext-3.4.1 Ruby localization library like as GNU gettext
+ruby31-gio2-4.1.7   Ruby binding of gio-2.0.x
+ruby31-glib2-4.1.7  Ruby binding of GLib-2.x
+ruby31-gobject-introspection-4.1.7 Ruby binding of Gobject Introspection
+ruby31-gtk3-4.1.7   Ruby binding of GTK+-3.x
+ruby31-hashie-4.1.0 Small collection of tools that make hashes more powerful
+ruby31-httpclient-2.8.3nb1 HTTP accessing library for Ruby
+ruby31-instance_storage-1.0.0 Manage class instances with dictionary
+ruby31-locale-2.1.3 Pure ruby library which provides basic APIs for localization
+ruby31-memoist-0.16.2 Replacement of memoizable, memoize methods invocation
+ruby31-mikutter-5.0.4nb3 Simple, powerful, and moeful twitter client
+ruby31-mini_portile2-2.8.2 Simple autoconf builder for developers
+ruby31-moneta-1.6.0 Unified interface to key/value stores
+ruby31-native-package-installer-1.1.5 Helper to install native packages on "gem install"
+ruby31-nokogiri-1.14.4 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby31-oauth-1.1.0  OAuth Core Ruby implementation
+ruby31-oauth-tty-1.0.5 OAuth 1.0 TTY CLI
+ruby31-pango-4.1.7  Ruby binding of pango-1.x
+ruby31-pkg-config-1.5.2 Pure Ruby implementation of pkg-config
+ruby31-pluggaloid-1.7.0 Extensible plugin system for mikutter
+ruby31-public_suffix-5.0.1 Domain name parser based on the Public Suffix List
+ruby31-red-colors-0.3.0 Wide array of features for dealing with colors
+ruby31-snaky_hash-2.0.1 Hashie::Mash joint to make
+ruby31-text-1.3.1   Collection of text algorithms for Ruby
+ruby31-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
+ruby31-version_gem-1.1.3 Sugar for Version modules
+shared-mime-info-2.2nb2 Core database of common types
+sudo-1.9.13p3       Allow others to run commands as root
+tcsh-6.24.10        Extended C-shell with many useful features
+tiff-4.5.1          Library and tools for reading and writing TIFF data files
+uim-1.8.9nb3        Multilingual input method library
+vlgothic-ttf-20220612 Free Japanese TrueType fonts named 'VLGothic'
+wayland-1.21.0nb2   Display server protocol - development libraries
+wayland-protocols-1.32 Additional wayland functionality
+wget-1.21.4         Retrieve files from the 'net via HTTP and FTP
+xcb-util-0.4.1      XCB Utilities
+xcb-util-image-0.4.1 XCB port of Xlib's XImage and XShmImage
+xcb-util-keysyms-0.4.1 XCB Utilities
+xcb-util-renderutil-0.3.10 Convenience functions for the Render extension
+xcb-util-wm-0.4.2nb1 Client and window-manager helpers for ICCCM and EWMH
 xli-1.17.0nb13      X11 Image Loading Utility
 xmlcatmgr-2.2nb1    XML and SGML catalog manager
-zsh-5.9nb1          The Z shell
-zstd-1.5.2          Fast real-time compression algorithm
+zsh-5.9nb2          The Z shell
+zstd-1.5.5          Fast real-time compression algorithm
