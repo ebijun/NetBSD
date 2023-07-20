@@ -1,22 +1,21 @@
-VERSION: :1,$s/2022-08-06/2022-08-06/g
-ISO:     :1,$s/202208040500Z/202208040500Z/g
-NetBSD:  :1,$s/9.99.99/9.99.99/g
-PKGSRC:  :1,$s/2022-08-06/2022-08-06/g
+VERSION: :1,$s/2023-07-20/2023-07-20/g
+ISO:     :1,$s/202307181140Z/202307181140Z/g
+NetBSD:  :1,$s/10.99.6/10.99.6/g
+PKGSRC:  :1,$s/2023-07-20/2023-07-20/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2022-08-06-netbsd-armv7-earmv7hf.img
+Subject: 2023-07-20-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2022-08-06-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2023-07-20-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2022-08-06-earmv7hf/2022-08-06-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2022-08-06-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2023-07-20-earmv7hf/2023-07-20-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2023-07-20-earmv7hf/MD5
 
 Update:
-- Fixed: Resize error on 2022-08-06 version
-- NetBSD 9.99.99 evbarm-armv7hf 202208040500Z armv7.img from nyftp.
+- NetBSD 10.99.6 evbarm-armv7hf 202307181140Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 - Firmware:
@@ -25,43 +24,59 @@ Update:
 #Date:   Wed Feb 9 17:04:38 2022 +0000
 #    extra: Update dt-blob.dts to include cm4s
 #    See: https://github.com/raspberrypi/firmware/issues/1691
+- drop ruby31-mikutter-plugins-twitter
 
 - Recent Update from 2021-11-29
 https://github.com/ebijun/NetBSD/commit/56235e389155267153cb1088fc9ba0806439031d
 
 sysinfo:
- bozohttpd-20220517 g++-10.4.0 gcc-10.4.0 libcurses-9.1 libdrm-3.6
- libssh-43.0 NetBSD-9.99.99 openssh-9.0 opensshd-9.0 openssl-1.1.1n
- sh-20220122-20220803212021Z tcsh-6.24.01 tzdata-2022agtz
- userland-NetBSD-9.99.99/evbarm
+ bind-9.16.42 bozohttpd-20230602 dhcpcd-10.0.1 g++-10.5.0 gcc-10.5.0
+ libdrm-3.7 libm-0.13 libssh-44.0 NetBSD-10.99.6 netpgp-3.99.18
+ ntp-4.2.8pl15 openssh-9.1 opensshd-9.1 openssl-3.0.9
+ sh-20220122-20230718101712Z tcsh-6.24.10 tzdata-2023cgtz
+ unbound-1.16.3 userland-NetBSD-10.99.6/evbarm
 
 pkgsrc:
- at-spi2-core-2.40.3nb2 cairo-1.16.0nb6 curl-7.84.0nb1
- dbus-1.14.0nb3 digest-20220214 dillo-3.0.5nb11 fltk-1.3.8nb1
- fossil-2.19 gd-2.3.3nb4 gdk-pixbuf2-2.42.8nb1 git-base-2.37.1
- glib2-2.72.3 gmp-6.2.1nb3 gnutls-3.7.7 gobject-introspection-1.70.0nb2
- gtk2+-2.24.33nb6 gtk3+-3.24.34 harfbuzz-5.0.1 icu-71.1 jpeg-9e
- libcups-2.4.2nb1 libffi-3.4.2nb3 libgcrypt-1.10.1 libgpg-error-1.45
- libidn-1.41 libidn2-2.3.3 libuuid-2.32.1nb1 libwebp-1.2.3 libxkbcommon-1.4.1
- libxml2-2.9.14 libxslt-1.1.34nb9 lintpkgsrc-4.99 m17n-lib-1.8.0nb7
- medit-1.2.0nb20 mlterm-3.9.2nb4 mozilla-rootcerts-1.0.20220614
- nettle-3.8.1 nghttp2-1.48.0 p5-Authen-SASL-2.16nb10
- p5-Digest-HMAC-1.04nb12 p5-Email-Valid-1.202nb6 p5-Error-0.17029nb3
- p5-GSSAPI-0.28nb14 p5-IO-CaptureOutput-1.1105nb3
- p5-IO-Socket-INET6-2.73nb1 p5-IO-Socket-SSL-2.072nb1
- p5-MailTools-2.21nb3 p5-Mozilla-CA-20211001nb1 p5-Net-DNS-1.34
- p5-Net-Domain-TLD-1.75nb6 p5-Net-IP-1.26nb10 p5-Net-LibIDN-0.12nb14
- p5-Net-SMTP-SSL-1.04nb6 p5-Net-SSLeay-1.90nb2 p5-Socket6-0.29nb4
- p5-TimeDate-2.33nb2 pango-1.50.8 pcre2-10.40 perl-5.36.0
- py310-cElementTree-3.10.6 py310-expat-3.10.6 python310-3.10.6
- qt5-qtbase-5.15.5nb1 qt5-qtx11extras-5.15.5 qt5-qtxmlpatterns-5.15.5
- ruby27-atk-3.5.1 ruby27-base-2.7.6 ruby27-cairo-gobject-3.5.1
- ruby27-gdk3-3.5.1 ruby27-gdk_pixbuf2-3.5.1 ruby27-gio2-3.5.1
- ruby27-glib2-3.5.1 ruby27-gobject-introspection-3.5.1
- ruby27-gtk3-3.5.1 ruby27-mini_portile2-2.8.0 ruby27-moneta-1.5.1
- ruby27-nokogiri-1.13.6 ruby27-pango-3.5.1 ruby27-public_suffix-4.0.7
- shared-mime-info-1.10nb6 sudo-1.9.11p3 tcsh-6.24.01nb1
- tiff-4.4.0 uim-1.8.9pre20210104nb3 wget-1.21.3nb1 zsh-5.9nb1
+ atk-2.38.0 bash-5.2.15 brotli-1.0.9 cairo-1.16.0nb9
+ cairo-gobject-1.16.0nb7 curl-8.1.2 dbus-1.14.6 dillo-3.0.5nb12
+ double-conversion-3.3.0 fltk-1.3.8nb2 fontconfig-2.14.2nb1
+ fossil-2.22 freetype2-2.13.1 fribidi-1.0.13 gd-2.3.3nb10
+ gdk-pixbuf2-2.42.10nb2 giflib-5.2.1nb5 git-base-2.41.0nb1
+ glib2-2.76.4 gnutls-3.8.0nb3 gobject-introspection-1.76.1
+ graphite2-1.3.14nb1 gsettings-desktop-schemas-40.0nb1
+ gtk2+-2.24.33nb10 gtk3+-3.24.38 harfbuzz-7.3.0
+ icu-73.2 libXft-2.3.8 libcups-2.4.6nb1 libduktape-2.7.0
+ libepoll-shim-0.0.20230411 libffi-3.4.4 libgcrypt-1.10.2
+ libgpg-error-1.47 libidn2-2.3.4 libimagequant-4.2.0
+ libotf-0.9.16nb3 libpaper-2.1.1 libproxy-0.5.3
+ libpsl-0.21.2 libtasn1-4.19.0 libunistring-1.1
+ libwebp-1.2.4nb1 libxkbcommon-1.5.0nb1 libxml2-2.10.4nb1
+ libxslt-1.1.38 lintpkgsrc-2022.09.29 lz4-1.9.4
+ m17n-lib-1.8.0nb12 md4c-0.4.8 medit-1.2.0nb24
+ mlterm-3.9.3nb2 mozilla-rootcerts-1.0.20230505
+ nettle-3.9.1 nghttp2-1.55.1 p11-kit-0.25.0 pango-1.50.14
+ pcre2-10.42 perl-5.38.0 pkg_install-20211115 pkgin-22.10.0nb2
+ png-1.6.40 py310-cElementTree-3.10.12 py310-expat-3.10.12nb1
+ python310-3.10.12 qt5-qtbase-5.15.10 qt5-qtx11extras-5.15.10
+ qt5-qtxmlpatterns-5.15.10 ruby31-addressable-2.8.4
+ ruby31-atk-4.1.7 ruby31-base-3.1.4nb1 ruby31-cairo-1.17.12
+ ruby31-cairo-gobject-4.1.7 ruby31-delayer-1.2.1
+ ruby31-delayer-deferred-2.2.0 ruby31-diva-2.0.1
+ ruby31-gdk3-4.1.7 ruby31-gdk_pixbuf2-4.1.7 ruby31-gettext-3.4.1
+ ruby31-gio2-4.1.7 ruby31-glib2-4.1.7 ruby31-gobject-introspection-4.1.7
+ ruby31-gtk3-4.1.7 ruby31-hashie-4.1.0 ruby31-httpclient-2.8.3nb1
+ ruby31-instance_storage-1.0.0 ruby31-locale-2.1.3 ruby31-memoist-0.16.2
+ ruby31-mikutter-5.0.4nb3 ruby31-mini_portile2-2.8.2 ruby31-moneta-1.6.0
+ ruby31-native-package-installer-1.1.5 ruby31-nokogiri-1.14.4
+ ruby31-oauth-1.1.0 ruby31-oauth-tty-1.0.5 ruby31-pango-4.1.7
+ ruby31-pkg-config-1.5.2 ruby31-pluggaloid-1.7.0 ruby31-public_suffix-5.0.1
+ ruby31-red-colors-0.3.0 ruby31-snaky_hash-2.0.1 ruby31-text-1.3.1
+ ruby31-typed-array-0.1.2 ruby31-version_gem-1.1.3 shared-mime-info-2.2nb2
+ sudo-1.9.13p3 tcsh-6.24.10 tiff-4.5.1 uim-1.8.9nb3
+ vlgothic-ttf-20220612 wayland-1.21.0nb2 wayland-protocols-1.32
+ wget-1.21.4 xcb-util-0.4.1 xcb-util-image-0.4.1
+ xcb-util-keysyms-0.4.1 xcb-util-renderutil-0.3.10
+ xcb-util-wm-0.4.2nb1 zsh-5.9nb2 zstd-1.5.5
 
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2021-1/
