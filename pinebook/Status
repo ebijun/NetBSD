@@ -8,15 +8,11 @@ NetBSD Arm Bootable Images: NetBSD9/NetBSD-current
  https://nycdn.netbsd.org/pub/arm/
 
 Update:
-- NetBSD-10.99.4
-- firefox-112.0.1nb3 issue
-  need firefox --safe-mode
-    Settings->Performance
-       uncheck: "Use recommended performance settings"
-       uncheck: "Use hardware acceletation when available"
-  still access failed cf. facebook
-- icu-73.1nb1
-- libreoffice-7.5.1.2nb4
+- NetBSD-10.99.6
+- NetBSD-10.99.6
+- gcc-10.5.0
+- firefox-115.0.2
+- rust-1.70.0
 
 Problems: 
 - pinebook: 
@@ -123,77 +119,65 @@ ToDo:
 System Updates:
 
 sysinfo:
- bozohttpd-20230602 openssl-3.0.9 sh-20220122-20230610213638Z
+ bind-9.16.42 dhcpcd-10.0.2 g++-10.5.0 gcc-10.5.0 NetBSD-10.99.6
+ sh-20220122-20230720132847Z userland-NetBSD-10.99.6/evbarm
 
 pkgsrc:
- ImageMagick-7.1.1.11 ImageMagick6-6.9.11.7nb22 a2ps-4.15.4nb2
- audacious-4.1nb9 audacious-plugins-4.1nb23 babl-0.1.98nb2
- cbindgen-0.24.6 cmake-3.26.4 cups-base-2.4.2nb9 curl-8.1.2
- dav1d-1.2.1 dconf-0.40.0nb4 double-conversion-3.3.0
- emacs26-26.3nb29 enchant2-2.5.0 ffmpeg5-5.1.3nb3 ffmpeg6-6.0nb1
- firefox-113.0.2 firefox-l10n-113.0.2 fmtlib-10.0.0 fribidi-1.0.13
- gawk-5.2.2 gcr-3.38.1nb7 gd-2.3.3nb10 gegl-0.4.40nb9 gexiv2-0.14.1nb1
- gimp-2.10.32nb13 git-base-2.41.0nb1 glib-networking-2.74.0nb2
- glib2-2.74.6nb1 gnome-desktop-2.32.1nb54 gnupg2-2.4.2
- go-1.20.5 go119-1.19.10 go120-1.20.5 graphviz-8.0.5
- gspell-1.8.3nb14 gssdp-1.0.3nb26 gst-plugins1-base-1.22.3
- gstreamer1-1.22.3 gtk3+-3.24.38 gupnp-1.0.3nb23
- harfbuzz-icu-7.3.0 hunspell-1.7.2nb2 ibus-1.5.28nb1 imath-3.1.9
- jemalloc-5.3.0nb1 libcares-1.19.1 libdazzle-3.38.0nb9
- libdbusmenu-glib-12.10.2nb18 libdbusmenu-gtk3-12.10.2nb29 libgee-0.20.3nb9
- libgweather-40.0nb14 libhandy-1.8.0nb3 libheif-1.16.2 libimagequant-4.2.0
- libixion-0.17.0nb3 libmatekbd-1.26.1 libmateweather-1.26.1
- libproxy-0.5.1nb1 libsecret-0.20.4nb8 libsixel-1.8.6nb13
- libuv-1.45.0 libxfce4ui-4.18.4 libxslt-1.1.38 luatex-1.17.0
- m17n-lib-1.8.0nb12 mate-media-1.26.1 mate-notification-daemon-1.26.1
- mate-screensaver-1.26.2 mate-settings-daemon-1.26.1 mate-themes-3.22.24
- meson-1.1.1 minitube-3.9.3nb4 mkvtoolnix-77.0 mlterm-3.9.3nb2
- mozilla-rootcerts-1.0.20230505 mozilla-rootcerts-openssl-2.11
- mpv-0.35.1nb4 mupdf-1.22.1 mysql-client-5.7.42 nettle-3.9.1
- nghttp2-1.54.0 nghttp3-0.12.0 nginx-1.24.0nb7 ngtcp2-0.16.0
- nodejs-20.2.0 openexr-3.1.7nb3 orc-0.4.34 p5-IO-Socket-SSL-2.081
- p5-JSON-4.10 p5-Locale-libintl-1.33 p5-Module-Build-0.42340
- p5-Net-3.15 p5-Net-DNS-1.38 p5-Scalar-List-Utils-1.63
- p5-URI-5.19 php74-gd-7.4.33nb5 pkg_rolling-replace-0.24.14
- pkgconf-1.9.5 polkit-121 psutils-3.0.3 py-gobject3-common-3.44.1
- py310-OpenSSL-23.2.0 py310-attrs-23.1.0 py310-cElementTree-3.10.12
- py310-cryptodome-3.18.0 py310-cryptography-41.0.1 py310-cython-0.29.35
- py310-docutils-0.20.1 py310-expat-3.10.12nb1 py310-gobject3-3.44.1
- py310-libxslt-1.1.38 py310-markupsafe-2.1.3 py310-pdf-3.9.0
- py310-pluggy-1.0.0 py310-pspdfutils-3.0.3 py310-puremagic-1.15
- py310-requests-2.31.0 py310-roman-4.1 py310-setuptools-67.8.0
- py310-sqlite3-3.10.12nb24 py310-urllib3-2.0.3 py310-wcwidth-0.2.6
- py39-argparse-1.4.0nb1 py39-asn1crypto-1.5.1 py39-py-1.11.0
- py39-six-1.16.0nb1 py39-sphinxcontrib-websupport-1.1.2nb1
- py39-toml-0.10.2nb1 python27-2.7.18nb11 python310-3.10.12
- python37-3.7.17 python38-3.8.17 python39-3.9.17 qmmp-1.5.1nb17
- qt5-qtbase-5.15.9nb2 qt5-qtdeclarative-5.15.10 qt5-qtlocation-5.15.10
- qt5-qtmultimedia-5.15.10 qt5-qtsensors-5.15.10 qt5-qtserialport-5.15.10
- qt5-qtsvg-5.15.10 qt5-qttools-5.15.10 qt5-qtwebchannel-5.15.10
- qt5-qtwebsockets-5.15.10 qt5-qtx11extras-5.15.9nb2 qt5-qtxmlpatterns-5.15.10
- ruby27-base-2.7.8 ruby27-racc-1.6.0 ruby31-addressable-2.8.4
- ruby31-atk-4.1.7 ruby31-cairo-1.17.8nb1 ruby31-cairo-gobject-4.1.7
- ruby31-delayer-1.2.1 ruby31-delayer-deferred-2.2.0 ruby31-diva-2.0.1
- ruby31-gdk3-4.1.7 ruby31-gdk_pixbuf2-4.1.7 ruby31-gettext-3.4.1
- ruby31-gio2-4.1.7 ruby31-glib2-4.1.7 ruby31-gobject-introspection-4.1.7
- ruby31-gtk3-4.1.7 ruby31-hashie-4.1.0 ruby31-hmac-0.4.0
- ruby31-httpclient-2.8.3nb1 ruby31-idn-0.1.0 ruby31-instance_storage-1.0.0
- ruby31-locale-2.1.3 ruby31-memoist-0.16.2 ruby31-mikutter-5.0.4nb3
- ruby31-mikutter-plugins-twitter-5.0nb1 ruby31-mini_portile2-2.8.2
- ruby31-moneta-1.6.0 ruby31-native-package-installer-1.1.5
- ruby31-nokogiri-1.14.2nb1 ruby31-oauth-1.1.0 ruby31-oauth-tty-1.0.5
- ruby31-pango-4.1.7 ruby31-pkg-config-1.5.1 ruby31-pluggaloid-1.7.0
- ruby31-public_suffix-5.0.1 ruby31-red-colors-0.3.0 ruby31-red-datasets-0.1.7
- ruby31-simpleidn-0.2.1 ruby31-snaky_hash-2.0.1 ruby31-text-1.3.1
- ruby31-twitter-text-3.1.0 ruby31-twitter-text-simpleidn-3.0.0.0
- ruby31-typed-array-0.1.2 ruby31-unf-0.1.4 ruby31-unf_ext-0.0.8.2
- ruby31-version_gem-1.1.3 ruby31-zip-2.3.2 serf-1.3.10nb1
- spdlog-1.11.0nb2 sqlite3-3.42.0 telepathy-glib-0.24.1nb29
- tex-babel-3.89 tex-hyperref-7.00y tex-latex-base-dev-20230601pre3
- tex-latex-firstaid-dev-1.0z tigervnc-1.13.1.1.20.13nb2
- uim-1.8.9nb3 vala-0.56.8nb1 vte3-0.72.2 wget-1.21.4
- x11-links-1.35 xfce4-mousepad-0.6.1 xfce4-panel-4.18.4
- xfce4-session-4.18.3
+ ImageMagick-7.1.1.12 SDL2-2.28.1 a2ps-4.15.5 babl-0.1.106
+ cbindgen-0.24.6nb1 cups-base-2.4.6 editline-3.1.20221030nb2
+ estd-0.11nb4 exiv2-0.28.0 firefox-115.0.2 firefox-l10n-115.0.2
+ flac-1.4.3 fluidsynth-2.3.3 fossil-2.22 freetype2-2.13.1
+ gcc10-10.5.0 gdbus-codegen-2.76.4 gegl-0.4.46 gettext-0.22
+ gettext-asprintf-0.22 gettext-lib-0.22nb1 gettext-m4-0.22
+ gettext-tools-0.22 gexiv2-0.14.1nb2 ghostscript-agpl-10.01.2
+ gimp-2.10.34 glib-networking-2.76.1 glib2-2.76.4 glib2-tools-2.76.4
+ glibmm-2.66.6 gnupg2-2.4.3 go-1.20.6 go118-1.18.10nb1
+ go119-1.19.11nb1 go120-1.20.6nb1 gobject-introspection-1.76.1
+ gpgme-1.21.0 graphviz-8.1.0 gst-plugins1-base-1.22.4
+ gstreamer1-1.22.4 icu-73.2 imake-1.0.9nb1 inih-53
+ lcms2-2.15 libLLVM-13.0.1nb3 libassuan-2.5.6 libcups-2.4.6nb1
+ libde265-1.0.12 libgsf-1.14.50 libheif-1.16.2nb1 libksba-1.6.4
+ libpaper-2.1.1 libproxy-0.5.3 libpurple-2.14.12nb2
+ libuv-1.46.0 libzip-1.10.0 lmdb-0.9.31 mkvtoolnix-78.0
+ mm-common-1.0.5 mupdf-1.22.2 nghttp2-1.55.1 nghttp3-0.13.0
+ nginx-1.24.0nb8 ngtcp2-0.17.0 nodejs-20.4.0nb1 nss-3.91
+ openexr-3.1.9 osabi-NetBSD-10.99.6 p11-kit-0.25.0
+ p5-Archive-Zip-1.68nb3 p5-Authen-SASL-2.16nb12 p5-Business-ISBN-3.006nb2
+ p5-Business-ISBN-Data-20210112.006nb2 p5-CDDB_get-2.28nb12
+ p5-Digest-HMAC-1.04nb13 p5-Email-Valid-1.203nb1 p5-Error-0.17029nb4
+ p5-ExtUtils-Depends-0.8001nb2 p5-ExtUtils-PkgConfig-1.16nb7
+ p5-File-Slurp-Tiny-0.004nb8 p5-GSSAPI-0.28nb15
+ p5-IO-CaptureOutput-1.1105nb4 p5-IO-Socket-INET6-2.73nb2
+ p5-IO-Socket-SSL-2.081nb1 p5-IPC-Run3-0.048nb9 p5-JSON-4.10nb1
+ p5-Locale-libintl-1.33nb1 p5-MP3-Info-1.26nb6 p5-MailTools-2.21nb4
+ p5-Module-Build-0.42340nb1 p5-Mozilla-CA-20221114nb1 p5-Net-3.15nb1
+ p5-Net-DNS-1.38nb1 p5-Net-Domain-TLD-1.75nb7 p5-Net-IP-1.26nb11
+ p5-Net-LibIDN-0.12nb15 p5-Net-SMTP-SSL-1.04nb7 p5-Net-SSLeay-1.92nb1
+ p5-Parse-Yapp-1.21nb6 p5-SUPER-1.20190531nb4
+ p5-Scalar-List-Utils-1.63nb1 p5-Socket6-0.29nb5
+ p5-Sub-Identify-0.14nb7 p5-Sub-Uplevel-0.2800nb7 p5-Test-Exception-0.43nb8
+ p5-Test-Needs-0.002010nb1 p5-Test-NoWarnings-1.06nb2 p5-Test-Warn-0.37nb1
+ p5-TimeDate-2.33nb3 p5-Tree-DAG_Node-1.32nb2 p5-URI-5.19nb1
+ p5-XML-NamespaceSupport-1.12nb7 p5-XML-Parser-2.46nb3 p5-XML-SAX-1.02nb3
+ p5-XML-SAX-Base-1.09nb7 p5-XML-SAX-Expat-0.51nb9 p5-XML-Simple-2.25nb6
+ p5-gettext-1.07nb8 p5-glib2-1.3293nb4 p5-inc-latest-0.500nb8
+ pango-1.50.14 perl-5.38.0 png-1.6.40 poppler-23.06.0 poppler-cpp-23.06.0
+ poppler-glib-23.06.0 poppler-includes-23.06.0 poppler-utils-23.06.0
+ py310-Pillow-10.0.0 py310-anytree-2.9.0 py310-cairo-1.24.0
+ py310-charset-normalizer-3.2.0 py310-cryptography-41.0.2
+ py310-cython-0.29.36 py310-importlib-metadata-6.8.0 py310-iso8601-2.0.0
+ py310-lxml-4.9.3 py310-numpy-1.25.1 py310-olefile-0.46nb1 py310-pdf-3.12.0
+ py310-pip-23.1.2nb1 py310-pluggy-1.2.0 py310-pspdfutils-3.0.4
+ py310-pyparsing-3.1.0 py310-setuptools-68.0.0 py310-zipp-3.16.2
+ qt5-qtbase-5.15.10 qt5-qtx11extras-5.15.10 rclone-1.58.1nb13
+ readline-8.2nb2 ruby31-base-3.1.4nb1 ruby31-cairo-1.17.12
+ ruby31-nokogiri-1.14.4 ruby31-pkg-config-1.5.2 rust-1.70.0
+ samba-4.18.3 svt-av1-1.4.1 taglib-1.13.1 tcl-8.6.13 tex-amsmath-2.17o
+ tex-haranoaji-20230610 tex-hyperref-7.00ynb1 tex-l3backend-2023.66896
+ tex-l3kernel-2023.67294 tex-latex-20230601.0
+ tex-latex-base-dev-20231101pre0 tex-platex-2023 tex-tools-2023
+ tiff-4.5.1 tk-8.6.13 vala-0.56.9 vlgothic-ttf-20220612
+ wayland-protocols-1.32 xapian-1.4.23 xkeyboard-config-2.39
 
 System Updates:
 https://github.com/ebijun/NetBSD/commit/2e07db8ce05b7f8dc77b266b9ba98a7cc8dfd170
