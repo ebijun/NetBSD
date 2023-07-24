@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2022 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2023 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -51,7 +51,9 @@
  2019 Kyoto,8/2-3,760,50,京都リサーチパーク
  2020 Kyoto,8/28-29,320,18,Online
  2021 Kyoto,7/30-31,235,16,Online
- 2022 Kyoto,7/29-30,,16,Online
+ 2022 Kyoto,7/29-30,235,14,Online
+ 2023 Kyoto,7/22,,,京都リサーチパーク
+ 2023 Kyoto,7/29,,,Online
  
 よく行く店
 ~~~~~~~~~~~~~~
@@ -60,35 +62,37 @@
  :widths: 30 20 60
 
  店名,エリア,コメント
+ 京都みなみ会館,東寺,頭脳警察/サニーデイサービス 2023/9/30閉館
+ 京都醸造,市民防災センター前,潤と大海の蛙とうるわし。かわづと読むこと。
+ 麥酒　夢詠ミ,祇園四条駅６番出口,火曜休平日16:30 土日祝15:00 24:00まで
+ 鈴屋,二条,7:00- モーニング since 1946
+ 幸福堂,壬生,アイスモナカ&きんつばをおみやげに新選組
+ 宇治橋通り商店街,宇治,2023/8/5　クラフトビール夜市。
  Sun&Luna, 京都精華大学,上賀茂のカフェ
- 麥酒　夢詠ミ,祇園四条駅６番出口,平日15:45 土日祝12:45 21:00まで
- 京都ビアラボ,河原町正面,忘れよIPA
+ 京都ビアラボ,河原町正面,Two Rabbits コラボ
  スタンドうみねこコト,蛸屋町１６０,最大35tap
  バンガロー,四条堀川東,10タップ 10oz 600円 15oz 900円
- 京都醸造,市民防災センター前,黒猿にまで
  坊主バー,大宮,Sun3/60ユーザ＆僧侶とは何か。
  BEFORE9,二条殿町545,15:00- 酸/果物生活
  グリルタカラ,国際会館,洋食
- 珈琲陣,大宮松原,ハムモーニング。マッチとコースター。
- 幸福堂,壬生,アイスモナカ&きんつばをおみやげに新選組
- 宇治橋通り商店街,宇治,2019/8/3　クラフトビール夜市。
+ INADA COFFEE,大宮松原,珈琲陣引き継ぎ 9:00- 日曜休
  宮武,丹波口,10:30-14:00 17:00-23:00
  ととや,丹波口,寿司&うなぎ 10:00-15:00
  喫茶ナス,丹波口,下京区裏畑町32 11:30-18:30(17:30) カツカレー
  一乗寺ブルワリー,一乗寺,2016/8に直営店オープン
- のらくろ,出町柳,トルコライス＝チキンライス+オムレツ+ビフカツ
- 和知,烏丸,京都最強の地ビール居酒屋
+ のらくろ,出町柳,トルコライス＝チキンライス+オムレツ+ビフカツ 閉店
+ 和知,烏丸,京都最強の地ビール居酒屋 どうなってる？
  CRAFT MAN,烏丸綾小路下,20タップ K家系列 2:00くらいまで
- BEER PUB Takumiya,船谷町400-1
+ BEER PUB Takumiya,船谷町400-1,Blacktide × Totopia × Yマーケット
  キートス,壬生坊城,フィンランドパン
  喫茶ルナ,東向日,http://www.openstreetmap.org/way/203043949
  ルナ美容院,西向日,http://www.openstreetmap.org/way/203450773
  島原温泉,丹波口,恵那のラジウム温泉
- メトロ,丸太町,2021/7/31 SeeQ Creationlab 4周年
+ メトロ,丸太町,Terry Riley 33周年でニナクラヴィッツ
  ソワレ,祇園,テレビカーで着いたら2階でケーキセット
  磔磔,筋屋町,2021/7/31 木村充揮 近藤房之助 三宅伸治3DAYS 8/6 小坂忠 8/7 Leyona 8/8 鮎川誠 友部正人
  奥満笑屋,丸太町,京都町家麦酒。キンシ正宗堀野記念館併設　
- efish,五条大橋,アップルのデザイナーだった西堀晋さんのカフェ
+ efish,五条大橋,アップルのデザイナーだった西堀晋さんのカフェ→閉店→ ha ra 
  ホホホ座/ガケ書房,北白川,車もめりこむ本屋
  一心,白川今出川,Streams-JP御用達。一心鍋で雑炊まで。
  田毎,三条,京都のたぬきうどんとは何か。みうらじゅんさんのサイン。
@@ -116,7 +120,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 
+
+ 188,OSC2023京都,http://www.re.soum.co.jp/~jun/OSC2023kyoto.pdf 
  178,OSC2022京都,http://www.re.soum.co.jp/~jun/OSC2022kyoto.pdf
  167,OSC2021京都,http://www.re.soum.co.jp/~jun/OSC2021kyoto.pdf
  157,OSC2020京都,http://www.re.soum.co.jp/~jun/OSC2020kyoto.pdf
@@ -137,6 +142,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2023京都 NetBSDブース展示の記録, https://togetter.com/li/2189221
  OSC2022京都 NetBSDブース展示の記録, https://togetter.com/li/1921498
  OSC2021京都 NetBSDブース展示の記録,https://togetter.com/li/1751521
  OSC2020京都 NetBSDブース展示の記録,https://togetter.com/li/1582822
@@ -152,6 +158,9 @@ togetterまとめ
 
 OSC京都展示物
 ~~~~~~~~~~~~~~~~~~
+#. nono+NetBSD/luna88K
+#. LUNAII+256色ディスプレイ表示+DOOM
+#. ZAURUS SL-860
 #. sparc64 Genial 737s
 #. OMRON LUNA and LUNAII and LUNA88K
 #. LUNAII and mikutter
@@ -189,6 +198,28 @@ OSC京都展示物
 #. Squeak on hpcmips 
 #. OneSeg TV recording with hpcmips,
 #. bc benchmark time x electricity consumption 
+
+2023年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2023/07/22/DSC_1514.JPG
+.. image::  ../Picture/2023/07/22/DSC_1517.JPG
+.. image::  ../Picture/2023/07/22/DSC_1520.JPG
+.. image::  ../Picture/2023/07/22/DSC_1521.JPG
+.. image::  ../Picture/2023/07/22/DSC_1522.JPG
+.. image::  ../Picture/2023/07/22/DSC_1528.JPG
+.. image::  ../Picture/2023/07/22/DSC_1529.JPG
+.. image::  ../Picture/2023/07/22/DSC_1531.JPG
+.. image::  ../Picture/2023/07/22/DSC_1532.JPG
+.. image::  ../Picture/2023/07/22/DSC_1533.JPG
+.. image::  ../Picture/2023/07/22/DSC_1534.JPG
+.. image::  ../Picture/2023/07/22/DSC_1535.JPG
+.. image::  ../Picture/2023/07/22/DSC_1536.JPG
+.. image::  ../Picture/2023/07/22/DSC_1537.JPG
+.. image::  ../Picture/2023/07/22/DSC_1538.JPG
+.. image::  ../Picture/2023/07/22/DSC_1541.JPG
+.. image::  ../Picture/2023/07/22/DSC_1542.JPG
+.. image::  ../Picture/2023/07/22/DSC_1544.JPG
 
 2019年
 ~~~~~~~~~~~~~~~~~~

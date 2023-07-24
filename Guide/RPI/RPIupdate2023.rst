@@ -43,10 +43,10 @@ RaspberryPIのNetBSDイメージについて
  2023/1/28,10.99.2,5.0.4nb2,3.9.2,,10ブランチ,OSC大阪,http://mail-index.netbsd.org/port-arm/2023/01/19/msg008093.html
  2023/2/17,10.99.2,5.0.4nb3,3.9.2nb10,1.1.1t,,NBUG2月, http://mail-index.netbsd.org/port-arm/2023/02/17/msg008116.html
  2023/3/11,10.99.2,,,,,OSC東京春, http://mail-index.netbsd.org/port-arm/2023/03/04/msg008133.html
- 年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
  2023/4/19,10.99.3,,3.9.3,,,NBUG4月, http://mail-index.netbsd.org/port-arm/2023/04/19/msg008212.html
  2023/5/16,10.99.4,,,3.0.8,twitterAPI,OSC名古屋, http://mail-index.netbsd.org/port-arm/2023/05/16/msg008251html
  2023/6/17,10.99.4,,3.9.3nb2,3.0.9,,OSC北海道,http://mail-index.netbsd.org/port-arm/2023/06/10/msg008272.html
+ 2023/7/18,10.99.5,5.0.4nb4,,,,OSC京都,http://mail-index.netbsd.org/port-arm/2023/07/18/msg008300.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 
