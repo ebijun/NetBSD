@@ -26,5 +26,5 @@ umount:
 	vnconfig -u ${VND0}
  
 fetch:
-	rm -r cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k
+	rm -fr cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k
 	wget --level=1 -r https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k
