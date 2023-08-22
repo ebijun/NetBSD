@@ -152,6 +152,8 @@ logclean:
 	mount /dev/${VND}a ${MNT}
 	rm -f ${MNT}/var/run/dmesg.boot
 	rm -f ${MNT}/var/log/lastlogx 
+	touch ${MNT}/var/log/lastlogx 
+	chgrp utmp ${MNT}/var/log/lastlogx 
 #	rm -f ${MNT}/var/log/maillog 
 	rm -f ${MNT}/var/log/maillog.0.gz 
 	rm -f ${MNT}/var/log/wtmpx

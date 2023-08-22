@@ -7,7 +7,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2023/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202307151840Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202308210630Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img.gz
 #RPI=${BINARY}/gzimg/arm64mbr.img.gz
@@ -89,11 +89,14 @@ restore:
 	vnconfig -u ${VND}
 	vnconfig -u ${VND_ORG}
 
+#4096*709632=512*5677056=2906652672
+#5677056-90200-6=5586850
+#03_back
 gpt:
 	vnconfig ${VND} ${FILE}
 	gpt create -p 2 ${VND}
 	gpt add -i 1 -l "EFI" -s 90200 -t efi ${VND}
-	gpt add -i 2 -l "netbsd-root" -s 5070755 -t ffs ${VND}
+	gpt add -i 2 -l "netbsd-root" -s 5586850 -t ffs ${VND}
 
 	newfs_msdos /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |head -2 |tail -1`
 	newfs -n 500000 -b 4096 /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |tail -1`
@@ -102,7 +105,7 @@ gpt:
 # make image file. 512*3813376=2GB
 file: 
 	echo Create ${FILE}.
-	dd if=/dev/zero of=${FILE} bs=512 count=5160960 progress=62000
+	dd if=/dev/zero of=${FILE} bs=4096 count=709632 progress=62000
 #	 2048*2400
 	sleep 3
 
@@ -142,6 +145,8 @@ logclean:
 	mount /dev/${DK_RELEASE} ${MNT_ROOT}
 	rm -f ${MNT_ROOT}/var/run/dmesg.boot
 	rm -f ${MNT_ROOT}/var/log/lastlogx 
+	touch ${MNT_ROOT}/var/log/lastlogx 
+	chgrp utmp ${MNT_ROOT}/var/log/lastlogx 
 #	rm -f ${MNT_ROOT}/var/log/maillog 
 	rm -f ${MNT_ROOT}/var/log/maillog.0.gz 
 	rm -f ${MNT_ROOT}/var/log/wtmpx
