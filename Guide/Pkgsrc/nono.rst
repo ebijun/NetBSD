@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.6.1
+ DISTNAME=       nono-0.6.2
 
 チェックサム作成
 ------------------
@@ -41,9 +41,8 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
-  -rw-r--r--  1 jun  wheel  1180 May  9 06:39 Makefile
- -rw-r--r--  1 jun  wheel   558 May  9 06:39 distinfo
-
+ -rw-r--r--  1 root  wheel  1163 Aug 17 20:25 Makefile
+ -rw-r--r--  1 root  wheel   558 Aug 17 20:25 distinfo
 
 make package して動作を確認します。
  
@@ -71,16 +70,16 @@ commit
 
  cvs commit 
 
- nono: update to 0.6.1 .
- 
- 
- 0.6.1 (2023-04-21)
+ nono: update to 0.6.2 .
 
- vm(Update): "Change that access to the range from $e000'0000 to $efff'ffff doesn't cause a bus error on
- NWS-1750. Along with this, xxx-news-sic-ignore is obsoleted."                                          
- vm(Update): "Implement dummy TRAP#15 handler on NWS-1750's PROM emulation."                            
- GUI(New): "Implement NEWS' device map monitor."                                   
- GUI(Fix): "Fix problem that some monitors are not shown in menu since ver 0.6.0."    
+ 0.6.2 (2023/08/16)
+
+ m88k(Fix):"Implement that hardwired BATCs are enable even if the address translation is disabled on m88200."
+ m88k(Update):"Improve m88200 BATC/PATC search performance."
+ vm(Fix): "Negate PEDEC interrupts when resetting."
+ vm(Update):  "Implement multicast filter on Nereid and Lance."
+ vm(Update): "Reorganize host file handling on LUNA-I/LUNA-88K internal PROM. It obsoletes --load-only option."
+ build(Update): "Search wxWidgets 3.2, 3.0 in order." 
 
 doc をcommit します
 ---------------------
@@ -90,10 +89,10 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to  0.6.1
+ doc: Updated emulators/nono to  0.6.2
  
  cvs diff -u CHANGES-2023
  
-        Updated emulators/nono to 0.6.1 [jun 2023-05-09]
+        Updated emulators/nono to 0.6.2 [jun 2023-08-17]
 
 

@@ -1,14 +1,13 @@
-Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
-    2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
-    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023
-    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.4 (GENERIC.202305100130UTC) #2: Wed May 10 11:58:01 JST 2023
-	jun@amir63p.soum.co.jp:/home/jun/Build/src/sys/arch/amd64/compile/GENERIC
+NetBSD 9.99.92 (GENERIC) #0: Mon Dec  6 04:25:36 UTC 2021
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16295 MB
-avail memory = 15740 MB
+avail memory = 15764 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
@@ -50,15 +49,15 @@ cpu2: node 0, package 0, core 1, smt 0
 cpu3 at mainbus0 apid 3
 cpu3: Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz, id 0x306d4
 cpu3: node 0, package 0, core 1, smt 1
-acpi0 at mainbus0: Intel ACPICA 20221020
+acpi0 at mainbus0: Intel ACPICA 20210930
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFD8B3AEC34488 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFFCF742220348 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFD8B0AEE77008 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFFCF440C89008 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFD8B0AEE0ED08 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFFCF440C28408 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -117,13 +116,8 @@ i915drmkms0 at pci0 dev 2 function 0: Intel HD Graphics 5500 (rev. 0x09)
 hdaudio0 at pci0 dev 3 function 0: HD Audio Controller
 hdaudio0: interrupting at msi0 vec 0
 hdaudio0: HDA ver. 1.0, OSS 3, ISS 0, BSS 0, SDO 1, 64-bit
-hdafg0 at hdaudio0: Intel HDMI/DP
-hdafg0: DP00 8ch: Digital Out [Jack]
-hdafg0: 8ch/0ch 48000Hz PCM16*
-audio0 at hdafg0: playback
-audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
-spkr0 at audio0: PC Speaker (synthesized)
-wsbell at spkr0 not configured
+hdaudio0: autoconfiguration error: RIRB timeout
+hdaudio0: autoconfiguration error: RIRB timeout
 xhci0 at pci0 dev 20 function 0: Intel Core 5G (mobile) USB xHCI (rev. 0x03)
 xhci0: 64-bit DMA
 xhci0: interrupting at msi1 vec 0
@@ -131,7 +125,7 @@ xhci0: xHCI version 1.0
 usb0 at xhci0: USB revision 3.0
 usb1 at xhci0: USB revision 2.0
 Intel Core 5G (mobile) ME Interface (miscellaneous communications, revision 0x03) at pci0 dev 22 function 0 not configured
-wm0 at pci0 dev 25 function 0, 64-bit DMA: I218 V Ethernet Connection (rev. 0x03)
+wm0 at pci0 dev 25 function 0: I218 V Ethernet Connection (rev. 0x03)
 wm0: interrupting at msi2 vec 0
 wm0: PCI-Express bus
 wm0: 2048 words FLASH, version 0.2.4
@@ -142,16 +136,16 @@ ihphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX
 hdaudio1 at pci0 dev 27 function 0: HD Audio Controller
 hdaudio1: interrupting at msi3 vec 0
 hdaudio1: HDA ver. 1.0, OSS 4, ISS 4, BSS 0, SDO 1, 64-bit
-hdafg1 at hdaudio1: Realtek product 0255
-hdafg1: DAC00 2ch: Speaker [Built-In]
-hdafg1: DAC01 2ch: HP Out [Jack]
-hdafg1: ADC02 2ch: Mic In [Jack]
-hdafg1: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
-audio1 at hdafg1: playback, capture, full duplex, independent
-audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
-audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
-spkr1 at audio1: PC Speaker (synthesized)
-wsbell at spkr1 not configured
+hdafg0 at hdaudio1: vendor 10ec product 0255
+hdafg0: DAC00 2ch: Speaker [Built-In]
+hdafg0: DAC01 2ch: HP Out [Jack]
+hdafg0: ADC02 2ch: Mic In [Jack]
+hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: playback, capture, full duplex, independent
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+spkr0 at audio0: PC Speaker (synthesized)
+wsbell at spkr0 not configured
 ppb0 at pci0 dev 28 function 0: Intel Core 5G (mobile) PCIe (rev. 0xe3)
 ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 ppb0: link is x1 @ 2.5GT/s
@@ -168,10 +162,8 @@ pci2: i/o space, memory space enabled, rd/line, wr/inv ok
 iwm0 at pci2 dev 0 function 0: Intel Dual Band Wireless AC 7265 (rev. 0x59)
 iwm0: interrupting at msi5 vec 0
 ehci0 at pci0 dev 29 function 0: Intel Core 5G (mobile) USB EHCI (rev. 0x03)
-ehci0: 64-bit DMA
 ehci0: interrupting at ioapic0 pin 23
 ehci0: EHCI version 1.0
-ehci0: Using DMA subregion for control data structures
 usb2 at ehci0: USB revision 2.0
 pcib0 at pci0 dev 31 function 0: Intel Core 5G (mobile) LPC (rev. 0x03)
 ahcisata0 at pci0 dev 31 function 2: Intel Core 5G (mobile) SATA Controller (AHCI) (rev. 0x03)
@@ -181,8 +173,8 @@ ahcisata0: interrupting at msi6 vec 0
 atabus0 at ahcisata0 channel 0
 isa0 at pcib0
 pcppi0 at isa0 port 0x61
-spkr2 at pcppi0: PC Speaker
-wsbell at spkr2 not configured
+spkr1 at pcppi0: PC Speaker
+wsbell at spkr1 not configured
 midi0 at pcppi0: PC speaker
 sysbeep0 at pcppi0
 attimer1: attached to pcppi0
@@ -220,25 +212,26 @@ acpicpu2 at cpu2: ACPI CPU
 coretemp1 at cpu2: thermal sensor, 1 C resolution, Tjmax=105
 acpicpu3 at cpu3: ACPI CPU
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-timecounter: Timecounter "TSC" frequency 2294692000 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2294688000 Hz quality 3000
 uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 uhub0: 4 ports with 4 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub1: 11 ports with 11 removable, self powered
 acpiacad0: AC adapter online.
 IPsec: Initialized Security Association Processing.
+aes: Intel AES-NI
+chacha: x86 SSE2 ChaCha
 uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub2: 2 ports with 2 removable, self powered
-tpm0: read 8 bytes, expected 10
-tpm0: deactivating entropy source
+tpm0: read 8 bytes, expected 10tpm0: deactivating entropy source
 ahcisata0 port 0: device present, speed: 6.0Gb/s
 wd0 at atabus0 drive 0
-wd0: <mSATA-512GB SSD>
+wd0: <SUNEAST SE900MSA3 1024G>
 wd0: drive supports 1-sector PIO transfers, LBA48 addressing
-wd0: 476 GB, 992277 cyl, 16 head, 63 sec, 512 bytes/sect x 1000215216 sectors
-wd0: GPT GUID: 2bea82df-34b2-467e-bc78-6f75b19e3fd6
-dk0 at wd0: "b0200188-c060-47e4-abb2-6cc4c108c734", 992006765 blocks at 2048, type: ffs
-dk1 at wd0: "d6fdb5a8-8353-4831-94e6-b6ef80af8c56", 8204943 blocks at 992010240, type: swap
+wd0: 953 GB, 1984533 cyl, 16 head, 63 sec, 512 bytes/sect x 2000409264 sectors
+wd0: GPT GUID: a5bb2ae2-2ee5-401d-af9c-195ea74ce391
+dk0 at wd0: "1fa9bb8e-e8a9-4e9c-b32d-65555f99cc3a", 1967034368 blocks at 2048, type: ffs
+dk1 at wd0: "b6c21e83-c843-4610-bdf5-c71e899337d1", 33370767 blocks at 1967038464, type: swap
 wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags)
 wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags)
 uhub3 at uhub1 port 6: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.10/88.31, addr 1
@@ -249,61 +242,26 @@ uhub4: single transaction translator
 uhub4: 8 ports with 8 removable, self powered
 uvideo0 at uhub1 port 7 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
 video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb3b2), rev 2.00/83.73, addr 2
-swwdog0: software watchdog initialized
+WARNING: 2 errors while detecting hardware; check system log.
 boot device: wd0
 root on dk0 dumps on dk1
 root file system type: ffs
-kern.module.path=/stand/amd64/10.99.4/modules
-WARNING: NVRAM century is 56 but RTC year is 2023
-Supports vblank timestamp caching Rev 2 (21.10.2013).
-Driver supports precise vblank timestamp query.
+kern.module.path=/stand/amd64/9.99.92/modules
+kern info: [drm] Memory usable by graphics device = 4096M
+kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+kern info: [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at msi7 vec 0 (i915drmkms0)
 iwm0: hw rev 0x210, fw ver 22.361476.0, address a4:02:b9:2f:d2:80
-Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
 intelfb0 at i915drmkms0
-DRM_I915_DEBUG enabled
-DRM_I915_DEBUG_GEM enabled
-intelfb0: framebuffer at 0xe0001000, size 1366x768, depth 32, stride 5504
+warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:647: Unclaimed register detected before writing to register 0x41000
+intelfb0: framebuffer at 0xe00af000, size 1366x768, depth 32, stride 5504
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
-warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x20a8
-warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x4432c
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x20a8
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x20a8
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-uaudio0 at uhub1 port 1 configuration 1 interface 0
-uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 3
-uaudio0: ignored setting with format 0x80000000
-uaudio0: audio rev 2.00
-audio2 at uaudio0: playback
-audio2: slinear_le:16 2ch 48000Hz, blk 11520 bytes (30ms) for playback
-spkr3 at audio2: PC Speaker (synthesized)
-wsbell at spkr3 not configured
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x20a8
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x44324
-warning: /home/jun/Build/src/sys/external/bsd/drm2/dist/drm/i915/intel_uncore.c:1197: Unclaimed write to register 0x20a8
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
-audio0(hdafg0): audio_write: device timeout, seq=0, usrbuf=65268/H65268, outbuf=1920/1920
+tap0: Ethernet address f2:0b:a4:83:01:c9
+tap1: Ethernet address f2:0b:a4:4c:ce:ed
+tap0: detached
+tap1: detached
