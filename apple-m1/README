@@ -1,21 +1,21 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20230820)
+Subject: apple m1 status update (20230913)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Update
- openssh-9.3
- firefox-115.0.2nb1
- gcc10-10.5.0
- libreoffice-7.5.5.2
- llvm-15.0.7nb2
- nss-3.92
- perl-5.38.0
- python311-3.11.4nb2
- ruby31-base-3.1.4nb1
- rust-1.70.0
- samba-4.18.5
+ NetBSD-10.99.8
+ boost-libs-1.83.0
+ emacs-28.2
+ firefox-117.0
+ libreoffice-7.5.5.2nb1
+ mate-1.26.0nb5
+ nss-3.93
+ python311-3.11.5
+ rust-1.70.0nb1
+ samba-4.18.6
+ xfce4-4.18.1
 
 Topics:
 - USB2 audio
@@ -88,12 +88,12 @@ Hardware:
  USB SSD 512GB BUFFALO SSD-PGM2.0U3-BC
 
 Filesystem   1M-blocks      Used     Avail %Cap Mounted on
-/dev/dk6        480587    240087    216470  52% /
+/dev/dk6        480587    244556    212001  53% /
 /dev/dk5            79        34        44  43% /boot
 ptyfs                0         0         0 100% /dev/pts
 procfs               0         0         0 100% /proc
 tmpfs             1913         0      1913   0% /var/shm
-/dev/sd1a       946388    431885    467184  48% /media
+/dev/sd0a       946388    435261    463807  48% /media
 
 ToDo:
 - audio
@@ -107,137 +107,78 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- dhcpcd-10.0.2 libc-12.221 libssh-45.0 NetBSD-10.99.7 openssh-9.3
- opensshd-9.3 sh-20220122-20230816222202Z userland-NetBSD-10.99.7/evbarm
+ ftpd-20230902 NetBSD-10.99.8 libpcap-1.10.4 sh-20220122-20230912072327Z
+ sqlite3-3.43.0 tcpdump-4.99.4 userland-NetBSD-10.99.8/evbarm
 
 pkgsrc:
- GConf-3.2.3nb17 ImageMagick-7.1.1.12 ImageMagick6-6.9.12.91 SDL2-2.28.2
- a2ps-4.15.5 at-spi2-core-2.40.3nb3 avahi-0.8nb6 babl-0.1.106nb1
- cbindgen-0.24.6nb1 clang-15.0.7nb2 cmake-3.27.1nb1 curl-8.2.1nb1
- dav1d-1.2.1nb1 dbus-python-common-1.3.2nb1 dconf-0.40.0nb5
- desktop-file-utils-0.26nb3 exiv2-0.28.0nb3 firefox-115.0.2nb1
- firefox-l10n-115.0.2 flac-1.4.3 fontconfig-2.14.2nb2 fossil-2.22
- freetype2-2.13.1 gcc10-10.5.0 gdbus-codegen-2.76.4nb1 gegl-0.4.46
- gettext-lib-0.22nb1 gettext-m4-0.22 gettext-tools-0.22
- ghostscript-agpl-10.01.2 glib-networking-2.76.1nb1 glib2-2.76.4nb1
- glib2-tools-2.76.4nb1 glibmm-2.66.6 gmp-6.3.0 gnome-doc-utils-0.20.10nb15
- gnupg2-2.4.3 gnutls-3.8.1 gobject-introspection-1.76.1nb1
- googletest-1.14.0 gpgme-1.21.0 graphite2-1.3.14nb2 graphviz-8.1.0
- gsettings-desktop-schemas-40.0nb2 gspell-1.8.4 gst-plugins1-base-1.22.4
- gst-plugins1-good-1.22.4 gstreamer1-1.22.4nb1 gtar-base-1.35
- harfbuzz-8.0.1 harfbuzz-icu-8.0.1 icu-73.2nb1 imake-1.0.9nb1
- inih-53nb1 iso-codes-4.11.0nb1 jbig2dec-0.19nb2 json-glib-1.6.2nb3
- lcms2-2.15 libassuan-2.5.6 libcups-2.4.6nb1 libgsf-1.14.50
- libheif-1.16.2nb1 libimagequant-4.2.0nb1 libkate-0.4.1nb24
- libksba-1.6.4 libmicrodns-0.2.0nb1 libpaper-2.1.1 libproxy-0.5.3
- libpsl-0.21.2nb1 libpurple-2.14.12nb2 libreoffice-7.5.5.2
- libsigc++-2.10.8nb1 libsndfile-1.2.0nb3 libuuid-2.32.1nb2
- libuv-1.46.0 libva-2.19.0 libwebp-1.3.1 libxkbcommon-1.5.0nb2
- libxml2-2.10.4nb2 libxslt-1.1.38nb1 libzip-1.10.0nb1
- llvm-15.0.7nb2 lmdb-0.9.31 meson-1.2.1nb1 mm-common-1.0.5nb1
- mozilla-rootcerts-1.0.20230720 mozilla-rootcerts-openssl-2.12
- mpv-0.35.1nb5 netpbm-10.86.34nb5 nghttp2-1.55.1 nginx-1.24.0nb9
- ninja-build-1.11.1nb1 nss-3.92 openal-soft-1.23.1nb2
- openexr-3.1.9 orc-0.4.34nb1 osabi-NetBSD-10.99.5 p11-kit-0.25.0
- p5-Alien-Build-2.80nb1 p5-Alien-Libxml2-0.17nb7 p5-Archive-Zip-1.68nb3
- p5-Authen-SASL-2.16nb12 p5-B-Hooks-EndOfScope-0.26nb1
- p5-Business-ISBN-3.006nb2 p5-Business-ISBN-Data-20210112.006nb2
- p5-CGI-4.57nb1 p5-CPAN-Meta-Check-0.017nb1 p5-Capture-Tiny-0.48nb6
- p5-Carp-1.50nb5 p5-Class-Data-Inheritable-0.09nb2
- p5-Class-Inspector-1.36nb4 p5-Class-Singleton-1.6nb3
- p5-Clone-0.46nb1 p5-Crypt-RC4-2.02nb15 p5-Crypt-SSLeay-0.72nb12
- p5-Data-Dumper-2.183nb2 p5-Data-OptList-0.114nb1 p5-Date-Manip-6.92nb1
- p5-DateTime-1.5900nb1 p5-DateTime-Format-Strptime-1.7900nb2
- p5-DateTime-Locale-1.38nb1 p5-DateTime-TimeZone-2.60nb1
- p5-Devel-Caller-2.07nb1 p5-Devel-LexAlias-0.05nb10
- p5-Devel-StackTrace-2.04nb5 p5-Digest-HMAC-1.04nb13
- p5-Digest-Perl-MD5-1.9nb9 p5-Dist-CheckConflicts-0.11nb9
- p5-Email-Valid-1.203nb1 p5-Encode-Locale-1.05nb9
- p5-Error-0.17029nb4 p5-Eval-Closure-0.14nb8 p5-Exception-Class-1.45nb2
- p5-ExtUtils-Config-0.008nb9 p5-ExtUtils-Depends-0.8001nb2
- p5-ExtUtils-Helpers-0.026nb7 p5-ExtUtils-InstallPaths-0.012nb6
- p5-ExtUtils-PkgConfig-1.16nb7 p5-FFI-CheckLib-0.31nb1
- p5-File-Listing-6.15nb1 p5-File-ShareDir-1.118nb6
- p5-File-ShareDir-Install-0.14nb1 p5-File-Slurp-Tiny-0.004nb8
- p5-File-Which-1.27nb2 p5-File-chdir-0.1011nb1 p5-Filter-1.64nb1
- p5-Finance-Quote-1.58 p5-GSSAPI-0.28nb15 p5-HTML-Element-Extended-1.18nb14
- p5-HTML-LinkExtractor-0.13nb15 p5-HTML-Parser-3.81nb1
- p5-HTML-Selector-XPath-0.26nb1 p5-HTML-TableExtract-2.15nb7
- p5-HTML-Tagset-3.20nb15 p5-HTML-TokeParser-Simple-3.16nb10
- p5-HTML-Tree-5.07nb6 p5-HTML-TreeBuilder-LibXML-0.26nb7
- p5-HTML-TreeBuilder-XPath-0.14nb12 p5-HTTP-CookieJar-0.014nb1
- p5-HTTP-Cookies-6.10nb3 p5-HTTP-Daemon-6.16nb1
- p5-HTTP-Date-6.05nb4 p5-HTTP-Message-6.44nb2
- p5-HTTP-Negotiate-6.01nb12 p5-IO-CaptureOutput-1.1105nb4
- p5-IO-HTML-1.004nb3 p5-IO-Socket-INET6-2.73nb2
- p5-IO-Socket-SSL-2.081nb1 p5-IO-stringy-2.111nb9 p5-IPC-Run3-0.048nb9
- p5-Importer-0.026nb3 p5-JSON-4.10nb1 p5-JSON-Parse-0.62nb1
- p5-LWP-MediaTypes-6.04nb4 p5-LWP-Protocol-https-6.10nb3
- p5-List-AllUtils-0.19nb3 p5-List-SomeUtils-0.59nb1
- p5-List-SomeUtils-XS-0.58nb6 p5-List-UtilsBy-0.12nb1
- p5-Locale-libintl-1.33nb1 p5-MRO-Compat-0.15nb1 p5-MailTools-2.21nb4
- p5-Math-Round-0.07nb9 p5-Module-Build-0.42340nb1
- p5-Module-Build-Tiny-0.045nb1 p5-Module-Implementation-0.09nb9
- p5-Module-Pluggable-5.2nb8 p5-Module-Runtime-0.016nb6
- p5-Mozilla-CA-20221114nb1 p5-Net-3.15nb1 p5-Net-DNS-1.38nb1
- p5-Net-Domain-TLD-1.75nb7 p5-Net-HTTP-6.22nb1 p5-Net-IP-1.26nb11
- p5-Net-LibIDN-0.12nb15 p5-Net-SMTP-SSL-1.04nb7 p5-Net-SSLeay-1.92nb1
- p5-OLE-Storage_Lite-0.22nb1 p5-Package-DeprecationManager-0.18nb1
- p5-Package-Stash-0.40nb1 p5-Package-Stash-XS-0.30nb1
- p5-PadWalker-2.5nb3 p5-Params-Util-1.102nb1 p5-Params-Validate-1.31nb1
- p5-Params-ValidationCompiler-0.31nb1 p5-Parse-Yapp-1.21nb6
- p5-Path-Class-0.37nb7 p5-Path-Tiny-0.144nb1 p5-PkgConfig-0.25026nb3
- p5-Ref-Util-0.204nb6 p5-Ref-Util-XS-0.117nb6 p5-Role-Tiny-2.002004nb3
- p5-SUPER-1.20190531nb4 p5-Scalar-List-Utils-1.63nb1
- p5-Scope-Guard-0.21nb8 p5-Socket6-0.29nb5 p5-Specio-0.48nb1
- p5-Spiffy-0.46nb9 p5-Spreadsheet-ParseExcel-0.6500nb8
- p5-Spreadsheet-XLSX-0.15nb8 p5-String-Util-1.34nb1 p5-Sub-Exporter-0.989nb1
- p5-Sub-Exporter-Progressive-0.001013nb7 p5-Sub-Identify-0.14nb7
- p5-Sub-Info-0.002nb7 p5-Sub-Install-0.929nb1 p5-Sub-Name-0.27nb1
- p5-Sub-Override-0.09nb9 p5-Sub-Quote-2.006008nb1 p5-Sub-Uplevel-0.2800nb7
- p5-Term-Table-0.016nb1 p5-Test-Base-0.89nb6 p5-Test-Deep-1.204nb1
- p5-Test-Exception-0.43nb8 p5-Test-Fatal-0.017nb1 p5-Test-LeakTrace-0.17nb3
- p5-Test-Requires-0.11nb3 p5-Test-Warn-0.37nb1 p5-Test-Warnings-0.031nb2
- p5-Test-Without-Module-0.21nb1 p5-Test-YAML-1.07nb6
- p5-Test2-Plugin-NoWarnings-0.09nb3 p5-Test2-Suite-0.000155nb1
- p5-Text-Template-1.61nb1 p5-TimeDate-2.33nb3 p5-Tree-DAG_Node-1.32nb2
- p5-Try-Tiny-0.31nb1 p5-UNIVERSAL-require-0.19nb2 p5-URI-5.19nb1
- p5-Variable-Magic-0.63nb1 p5-WWW-RobotRules-6.02nb12 p5-Web-Scraper-0.38nb9
- p5-XML-LibXML-2.0208nb1 p5-XML-NamespaceSupport-1.12nb7
- p5-XML-Parser-2.46nb3 p5-XML-SAX-1.02nb3 p5-XML-SAX-Base-1.09nb7
- p5-XML-SAX-Expat-0.51nb9 p5-XML-Simple-2.25nb6 p5-XML-XPathEngine-0.14nb10
- p5-YAML-1.30nb3 p5-gettext-1.07nb8 p5-glib2-1.3293nb4 p5-inc-latest-0.500nb8
- p5-libwww-6.70nb1 p5-namespace-autoclean-0.29nb4 p5-namespace-clean-0.27nb7
- pango-1.50.14 perl-5.38.0 php74-owncloud-10.9.1nb3 png-1.6.40
- poppler-23.06.0 poppler-cpp-23.06.0 poppler-glib-23.06.0nb1
- poppler-includes-23.06.0 postgresql14-client-14.9 py310-Pillow-10.0.0
- py310-anytree-2.9.0 py310-cairo-1.24.0 py310-certifi-2023.7.22
- py310-chardet-5.2.0 py310-charset-normalizer-3.2.0
- py310-cryptography-41.0.3 py310-dbus-1.3.2 py310-dns-2.4.2
- py310-importlib-metadata-6.8.0 py310-lxml-4.9.3 py310-markdown-3.4.4
- py310-olefile-0.46nb1 py310-pathspec-0.11.2 py310-pdf-3.14.0
- py310-pip-23.2.1 py310-pluggy-1.2.0 py310-pspdfutils-3.0.8
- py310-pygments-2.16.1 py310-pyparsing-3.1.1 py310-scons-4.5.2nb2
- py310-setuptools-68.0.0 py310-sphinx-7.1.2 py310-trove-classifiers-2023.8.7
- py310-typing-extensions-4.7.1 py310-urllib3-2.0.4 py310-wheel-0.41.1
- py310-zipp-3.16.2 py311-cElementTree-3.11.4 py311-expat-3.11.4nb1
- py311-libxml2-2.10.4nb1 py311-setuptools-68.0.0 python311-3.11.4nb2
- qt5-qtdeclarative-5.15.10nb1 re2c-3.0nb1 readline-8.2nb2 rhash-1.4.4
- ruby31-addressable-2.8.5 ruby31-base-3.1.4nb1 ruby31-cairo-1.17.12
- ruby31-cairo-gobject-4.1.9 ruby31-gio2-4.1.9 ruby31-glib2-4.1.9
- ruby31-gobject-introspection-4.1.9 ruby31-mini_portile2-2.8.4
- ruby31-native-package-installer-1.1.8 ruby31-public_suffix-5.0.3
- rust-1.70.0 samba-4.18.5 spdlog-1.12.0nb2 sudo-1.9.14p3
- svt-av1-1.5.0 taglib-1.13.1nb1 talloc-2.4.1nb1 tcl-8.6.13
- tdb-1.4.9nb1 tevent-0.14.1nb1 tex-l3kernel-2023.67294
- tex-latex-20230601.0 tk-8.6.13 unixodbc-2.3.12 vala-0.56.10
- waf-2.0.25nb1 wayland-protocols-1.32 xfce4-4.18.0nb8
- xfce4-settings-4.18.3 xkeyboard-config-2.39nb1 xxhash-0.8.2
- yelp-tools-3.32.2nb9 yelp-xsl-3.32.1nb2 zxing-cpp-2.1.0
- zziplib-0.13.72nb2
+ SDL2-2.28.3 a2ps-4.15.5nb1 abseil-20230802.0 anthy-9100hnb1
+ asciidoc-10.2.0nb5 at-spi2-atk-2.38.0nb2 at-spi2-core-2.44.1 atk-2.38.0nb1
+ boost-headers-1.83.0 boost-jam-1.83.0 boost-libs-1.83.0 brotli-1.1.0
+ caja-dropbox-1.26.0nb3 caja-extensions-1.26.1nb5 cbindgen-0.25.0
+ cdparanoia-3.0.10.2nb5 cmake-3.27.4 dbus-1.14.10 emacs-28.2
+ emacs28-28.2nb9 eom-1.26.1nb1 farstream-0.2.9nb16 firefox-117.0
+ firefox-l10n-117.0 fmtlib-10.1.1 font-util-1.4.1 freetype2-2.13.2
+ gdk-pixbuf2-2.42.10nb3 gdk-pixbuf2-xlib-2.40.2nb3 gegl-0.4.46nb1
+ geocode-glib-3.26.2nb8 gexiv2-0.14.1nb3 gimp-2.10.34nb1 git-base-2.42.0
+ glibmm-2.66.6nb1 gnome-desktop-2.32.1nb55 gnome-keyring-3.36.0nb4
+ gpgme-1.22.0 graphviz-8.1.0nb1 gssdp-1.6.2 gst-plugins1-bad-1.22.4nb1
+ gst-plugins1-base-1.22.4nb1 gst-plugins1-good-1.22.4nb1 gtk-doc-1.32nb13
+ gtk2+-2.24.33nb11 gtk3+-3.24.38nb1 gtksourceview4-4.8.4 gupnp-1.6.5
+ gupnp-igd-1.6.0 harfbuzz-8.1.1 harfbuzz-icu-8.1.1 inih-57 itstool-2.0.7nb3
+ json-c-0.17 ldb-2.7.2nb1 libaom-3.7.0 libappindicator-12.10.0nb17
+ libcanberra-0.30nb10 libgit2-1.6.4nb2 libgweather-40.0nb15
+ libixion-0.17.0nb4 libnice-0.1.21 libnotify-0.8.1nb1
+ libpeas-1.26.0nb8 libpurple-2.14.12nb3 libreoffice-7.5.5.2nb1
+ librsvg-2.56.3 libsixel-1.8.6nb14 libsndfile-1.2.2 libsoup-2.74.3nb3
+ libsoup3-3.4.2nb1 libwnck3-3.36.0nb5 libzip-1.10.1 lld-15.0.7nb2
+ lua54-5.4.6nb1 mate-1.26.0nb5 medit-1.2.0nb25 meson-1.2.1nb2
+ mozo-1.26.2nb3 mpfr-4.2.1 mpv-0.36.0 nghttp2-1.56.0 nginx-1.24.0nb10
+ nss-3.93 orcus-0.17.2nb3 osabi-NetBSD-10.99.7 p5-Authen-SASL-2.1700
+ p5-Module-Build-Tiny-0.046 p5-Sub-Exporter-0.990 pango-1.50.14nb1
+ pkgconf-2.0.2 pluma-1.26.1nb1 psutils-3.0.3nb1 pulseaudio-16.1nb5
+ py27-cairo-1.18.2nb3 py27-gobject-2.28.7nb4 py27-gstreamer0.10-0.10.22nb12
+ py27-gtk2-2.24.0nb43 py311-OpenSSL-23.2.0 py311-Pillow-10.0.0
+ py311-Socks-1.7.1nb1 py311-alabaster-0.7.13 py311-anytree-2.9.0nb1
+ py311-argparse-manpage-4.3 py311-babel-2.12.1 py311-build-1.0.3
+ py311-cElementTree-3.11.5 py311-cairo-1.24.0 py311-calver-2022.6.26
+ py311-certifi-2023.7.22 py311-cffi-1.15.1 py311-chardet-5.2.0
+ py311-charset-normalizer-3.2.0 py311-colorama-0.4.6 py311-cparser-2.21nb1
+ py311-cryptodome-3.18.0 py311-cryptography-41.0.3 py311-curses-3.11.5nb6
+ py311-dbus-1.3.2 py311-dns-2.4.2 py311-docutils-0.20.1
+ py311-ecdsa-0.18.0 py311-editables-0.5 py311-expat-3.11.5nb1
+ py311-flit_core-3.9.0 py311-gi-docgen-2023.1 py311-gobject3-3.44.1
+ py311-hatchling-1.18.0 py311-idna-3.4 py311-imagesize-1.4.1
+ py311-importlib-metadata-6.8.0 py311-iso8601-2.0.0 py311-jinja2-3.1.2
+ py311-lxml-4.9.3 py311-markdown-3.4.4 py311-markupsafe-2.1.3
+ py311-olefile-0.46nb1 py311-packaging-23.1 py311-pathspec-0.11.2
+ py311-pdf-3.15.5 py311-pep517-0.13.0 py311-pip-23.2.1
+ py311-pluggy-1.3.0 py311-poetry-core-1.7.0 py311-pspdfutils-3.2.0
+ py311-puremagic-1.15 py311-pygments-2.16.1 py311-pyparsing-3.1.1
+ py311-pyproject_hooks-1.0.0 py311-pytz-2023.3 py311-readline-3.11.5
+ py311-requests-2.31.0 py311-roman-4.1 py311-scons-4.5.2nb3
+ py311-semantic_version-2.10.0 py311-setuptools-68.1.2
+ py311-setuptools-rust-1.7.0 py311-setuptools_scm-7.1.0 py311-six-1.16.0nb1
+ py311-smartypants-2.0.1nb1 py311-snowballstemmer-2.2.0nb1 py311-sphinx-7.1.2
+ py311-sphinxcontrib-applehelp-1.0.4 py311-sphinxcontrib-devhelp-1.0.2nb1
+ py311-sphinxcontrib-htmlhelp-2.0.1 py311-sphinxcontrib-jsmath-1.0.1nb1
+ py311-sphinxcontrib-qthelp-1.0.3nb1
+ py311-sphinxcontrib-serializinghtml-1.1.5nb1 py311-sqlite3-3.11.5nb24
+ py311-trove-classifiers-2023.8.7 py311-typing-extensions-4.7.1
+ py311-typogrify-2.0.7nb1 py311-urllib3-2.0.4 py311-wheel-0.41.2
+ py311-zipp-3.16.2 py311-zstandard-0.21.0 py39-toml-0.10.2nb1
+ py39-tomli-2.0.1 python310-3.10.13 python311-3.11.5
+ python38-3.8.18 python39-3.9.18 re2c-3.1 ruby31-atk-4.2.0
+ ruby31-cairo-gobject-4.2.0 ruby31-gdk3-4.2.0 ruby31-gdk_pixbuf2-4.2.0
+ ruby31-gio2-4.2.0 ruby31-glib2-4.2.0 ruby31-gobject-introspection-4.2.0
+ ruby31-gtk3-4.2.0 ruby31-pango-4.2.0 ruby31-pkg-config-1.5.5
+ rust-1.70.0nb1 samba-4.18.6 seamonkey-2.53.16nb3 shared-mime-info-2.2nb3
+ sqlite3-3.43.0 svt-av1-1.7.0 tex-etoolbox-2.5k tex-hyperref-7.00ynb1
+ tiff-4.5.1nb1 vala-0.56.12 vte-0.28.1nb31 vte3-0.72.2nb1
+ xfce4-4.18.1 xfce4-appfinder-4.18.1 xfce4-settings-4.18.3nb1
+ xfce4-terminal-1.1.0 xfce4-thunar-4.18.7
 
 Version: 
- NetBSD 10.99.7 (GENERIC64) #0: Wed Aug 16 22:22:02 UTC 2023  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 10.99.8 (GENERIC64) #0: Tue Sep 12 07:23:27 UTC 2023  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
