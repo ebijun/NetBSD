@@ -1,44 +1,29 @@
-VERSION: :1,$s/2023-08-22/2023-08-22/g
-ISO:     :1,$s/202308210630Z/202308210630Z/g
-NetBSD:  :1,$s/10.99.7/10.99.7/g
+VERSION: :1,$s/2023-09-27/2023-09-27/g
+ISO:     :1,$s/202309261750Z/202309261750Z/g
+NetBSD:  :1,$s/10.99.9/10.99.9/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2023-08-22-netbsd-raspi-aarch64.img
+Subject: 2023-09-27-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2023-08-22-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2023-09-27-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-08-22-aarch64/2023-08-22-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-08-22-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-09-27-aarch64/2023-09-27-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-09-27-aarch64/MD5
 
 Topics:
-- enlarge image file size
-- bind-9.16.42
-- g++-10.5.0
-- gcc-10.5.0
-- libc-12.221
-- libssh-45.0
-- NetBSD-10.99.7
-- openssh-9.3
-- icu-73.2nb1
-- mozilla-rootcerts-1.0.20230720
-- perl-5.38.0
-- python311-3.11.4nb2
-- ruby31-base-3.1.4nb1
-- Can't get twitter API access.
-  drop ruby31-mikutter-plugins-twitter
-- Raspberry Pi 4 UEFI Firmware v1.35
+- [Test] Firmware update /boot/fixup4*.dat,start4*.elf
+#Author: Dom Cobley <popcornmix@gmail.com>
+#Date:   Thu Sep 21 19:03:28 2023 +0100
+FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
-- pkgsrc/inputmethod/uim build failed
-  ld: connection.cpp:(.text+0x4d0): undefined reference to `alloca'
-  ximic.cpp:(.text+0x710): undefined reference to `alloca'
-  ximic.cpp:(.text+0xe18): undefined reference to `alloca'
-  ximic.cpp:(.text+0x13d0): undefined reference to `alloca'
-  ximtrans.cpp:(.text+0xd7c): undefined reference to `alloca'
-  ld: uim_xim-ximtrans.o:ximtrans.cpp:(.text+0x11fc): more undefined references to `alloca' follow
+- fix PR57565
+https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57565
+ /usr/share/mk/sys.mk
+  ARFLAGS=?=rl to ARFLAGS=?=r
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
@@ -71,31 +56,28 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- bind-9.16.42 dhcpcd-10.0.2 g++-10.5.0 gcc-10.5.0 libc-12.221 libssh-45.0
- NetBSD-10.99.7 openssh-9.3 opensshd-9.3 libpcap-1.10.4
- sh-20220122-20230821004149Z tcpdump-4.99.4 userland-NetBSD-10.99.7/evbarm
+ dhcpcd-10.0.2 ftpd-20230922 libc-12.221 libssh-45.0 NetBSD-10.99.9
+ openssh-9.3 opensshd-9.3 libpcap-1.10.4 sh-20220122-20230926155546Z
+ sqlite3-3.43.0 tcpdump-4.99.4 userland-NetBSD-10.99.9/evbarm
 
 pkgsrc:
- at-spi2-atk-2.38.0nb2 at-spi2-core-2.40.3nb3 atk-2.38.0nb1 curl-8.2.1nb1
- fontconfig-2.14.2nb2 fossil-2.22 freetype2-2.13.1 gdk-pixbuf2-2.42.10nb3
- git-base-2.41.0nb2 glib2-2.76.4nb1 gmp-6.3.0 gnutls-3.8.1
- gobject-introspection-1.76.1nb1 graphite2-1.3.14nb2
- gsettings-desktop-schemas-40.0nb2 gtk2+-2.24.33nb11 gtk3+-3.24.38nb1
- harfbuzz-8.0.1nb1 icu-73.2nb1 libcups-2.4.6nb1 libimagequant-4.2.0nb1
- libpaper-2.1.1 libproxy-0.5.3 libpsl-0.21.2nb1 libuuid-2.32.1nb2
- libwebp-1.3.1 libxkbcommon-1.5.0nb2 libxml2-2.10.4nb2 libxslt-1.1.38nb1
- medit-1.2.0nb25 mozilla-rootcerts-1.0.20230720 nghttp2-1.55.1
- p11-kit-0.25.0 pango-1.50.14nb1 perl-5.38.0 png-1.6.40
- py311-cElementTree-3.11.4 py311-expat-3.11.4nb1 python311-3.11.4nb2
- qt5-qtbase-5.15.10 qt5-qtx11extras-5.15.10 qt5-qtxmlpatterns-5.15.10
- ruby31-addressable-2.8.5 ruby31-atk-4.1.9 ruby31-base-3.1.4nb1
- ruby31-cairo-1.17.12 ruby31-cairo-gobject-4.1.9 ruby31-gdk_pixbuf2-4.1.9
- ruby31-gio2-4.1.9 ruby31-glib2-4.1.9 ruby31-gobject-introspection-4.1.9
- ruby31-mikutter-5.0.5 ruby31-mini_portile2-2.8.4
- ruby31-native-package-installer-1.1.8 ruby31-nokogiri-1.14.4
- ruby31-pango-4.1.9 ruby31-pkg-config-1.5.2 ruby31-public_suffix-5.0.3
- shared-mime-info-2.2nb3 sudo-1.9.14p3 tiff-4.5.1nb1 vlgothic-ttf-20220612
- wayland-protocols-1.32
+ anthy-9100hnb1 at-spi2-atk-2.38.0nb2 at-spi2-core-2.44.1
+ atk-2.38.0nb1 brotli-1.1.0 curl-8.3.0 dbus-1.14.10 fontconfig-2.14.2nb2
+ freetype2-2.13.2 gdk-pixbuf2-2.42.10nb3 git-base-2.42.0
+ glib2-2.76.5 gmp-6.3.0 gnutls-3.8.1 gobject-introspection-1.76.1nb1
+ graphite2-1.3.14nb2 gsettings-desktop-schemas-40.0nb2 gtk2+-2.24.33nb11
+ gtk3+-3.24.38nb1 harfbuzz-8.1.1 icu-73.2nb1 libimagequant-4.2.1
+ libpsl-0.21.2nb1 libuuid-2.32.1nb2 libwebp-1.3.2 libxkbcommon-1.5.0nb2
+ libxml2-2.10.4nb2 libxslt-1.1.38nb1 medit-1.2.0nb25
+ mozilla-rootcerts-1.0.20230720 nghttp2-1.56.0 pango-1.50.14nb1
+ pkgin-23.8.1 py311-cElementTree-3.11.5 py311-expat-3.11.5nb1
+ python311-3.11.5 ruby31-addressable-2.8.5 ruby31-atk-4.2.0
+ ruby31-cairo-gobject-4.2.0 ruby31-gdk3-4.2.0 ruby31-gdk_pixbuf2-4.2.0
+ ruby31-gio2-4.2.0 ruby31-glib2-4.2.0 ruby31-gobject-introspection-4.2.0
+ ruby31-gtk3-4.2.0 ruby31-mikutter-5.0.5 ruby31-mini_portile2-2.8.4
+ ruby31-native-package-installer-1.1.8 ruby31-nokogiri-1.15.4
+ ruby31-pango-4.2.0 ruby31-pkg-config-1.5.5 ruby31-public_suffix-5.0.3
+ shared-mime-info-2.2nb3 sudo-1.9.14p3 tiff-4.5.1nb1
 
 RPI4 status:
 - boot via UEFI_VER=v1.35
@@ -116,7 +98,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.7 evbarm-aarch64 202308210630Z arm64.img from nyftp.
+- NetBSD-current 10.99.9 evbarm-aarch64 202309261750Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
