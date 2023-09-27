@@ -10,11 +10,11 @@ VER=snapshots
 #ftp http://www.nk-home.net/~aoyama/liveimage/boot
 
 # Snapshot Update
-ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.mp
-ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.rd
-ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd
-ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/boot
-#cp -p snapshots/cdn.openbsd.org/pub/OpenBSD/snapshots/luna88k/bsd .
-#cp -p snapshots/cdn.openbsd.org/pub/OpenBSD/snapshots/luna88k/bsd.mp .
-#cp -p snapshots/cdn.openbsd.org/pub/OpenBSD/snapshots/luna88k/bsd.rd .
-#cp -p snapshots/cdn.openbsd.org/pub/OpenBSD/snapshots/luna88k/boot .
+#ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.mp
+#ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd.rd
+#ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/bsd
+#ftp https://cdn.openbsd.org/pub/OpenBSD/${VER}/luna88k/boot
+cp -p snapshots/cdn.openbsd.org/pub/OpenBSD/snapshots/luna88k/bsd .
+cp -p snapshots/cdn.openbsd.org/pub/OpenBSD/snapshots/luna88k/bsd.mp .
+cp -p snapshots/cdn.openbsd.org/pub/OpenBSD/snapshots/luna88k/bsd.rd .
+cp -p snapshots/cdn.openbsd.org/pub/OpenBSD/snapshots/luna88k/boot .
