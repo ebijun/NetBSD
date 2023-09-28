@@ -35,9 +35,6 @@ RaspberryPIのNetBSDイメージについて
 
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
- 2022/6/25,9.99.98,,,, icu-71.1 ,OSC北海道,http://mail-index.netbsd.org/port-arm/2022/06/22/msg007697.html
- 2022/7/30,9.99.99,,3.9.2nb4,,Python3.10,OSC京都,http://mail-index.netbsd.org/port-arm/2022/07/25/msg007730.html
- 2022/8/28,9.99.99,5.04nb1,3.9.2nb5,,nono 0.4.3,ODC,http://mail-index.netbsd.org/port-arm/2022/08/30/msg007814.html
  2022/9/24,9.99.100,,3.9.2nb6,,,OSC広島,http://mail-index.netbsd.org/port-arm/2022/09/24/msg007863.html
  2022/10/29,9.99.102,,,,rust/earmv6hf,OSC東京,http://mail-index.netbsd.org/port-arm/2022/10/26/msg007897.html
  2023/1/28,10.99.2,5.0.4nb2,3.9.2,,10ブランチ,OSC大阪,http://mail-index.netbsd.org/port-arm/2023/01/19/msg008093.html
@@ -48,8 +45,8 @@ RaspberryPIのNetBSDイメージについて
  2023/6/17,10.99.4,,3.9.3nb2,3.0.9,,OSC北海道,http://mail-index.netbsd.org/port-arm/2023/06/10/msg008272.html
  2023/7/18,10.99.5,5.0.4nb4,,,,OSC京都,http://mail-index.netbsd.org/port-arm/2023/07/18/msg008300.html
  2023/8/26,10.99.7,5.0.5,,,,ODC,http://mail-index.netbsd.org/port-arm/2023/08/23/msg008364.html
+ 2023/9/30,10.99.9,,,,,OSC東京,http://mail-index.netbsd.org/port-arm/2023/09/28/msg008405.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
-
 
 OSCはほぼ毎月のように日本各地で行われています。
 前に、OpenBSDのTheoさんに、自分のノートPCのアップデートをどのくらいの周期でやってるのかきいてみました。
@@ -74,6 +71,7 @@ NetBSDのイメージを配るとしたとき、どのくらいの周期でア�
 新しいハードウェア対応
 ----------------------
 
+#. RPI5:2023/10末出荷開始 Broadcom BCM2712 64-bit quad-core Arm Cortex-A76  2.4GHz
 #. RPI4:OSC2019島根から：http://mail-index.netbsd.org/port-arm/2019/10/03/msg006208.html
   https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/README
 #. RPI3/RPI0WのBluetooth/無線LAN:OSC2019広島版からテストをはじめました

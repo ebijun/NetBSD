@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2022 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -75,9 +75,10 @@ Maps:
  2022 Spring,3/11-12,420,19,オンライン
  2022 Fall,10/28-29,270,15,オンライン
  2023 Spring,3/10-11,,,オンライン
- 2023 Tokyo,4/1,,,東京都立産業貿易センター台東館
+ 2023 Spring,4/1,450,53,東京都立産業貿易センター台東館
+ 2023 Fall,9/29-30,,,オンライン
+ 2023 Fall,10/21,,,大田区産業プラザPIO
  
-
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -90,6 +91,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
 
+ 189, OSC2023東京秋,http://www.re.soum.co.jp/~jun/OSC2023tokyofall.pdf
  185, OSC2023東京春,http://www.re.soum.co.jp/~jun/OSC2023tokyospring.pdf 
  181, OSC2022東京秋,http://www.re.soum.co.jp/~jun/OSC2022tokyofall.pdf
  175, OSC2022東京春, http://www.re.soum.co.jp/~jun/OSC2022tokyospring.pdf
@@ -122,6 +124,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2023 Online/Fall BSDなひととき の記録,https://togetter.com/li/2231931
  OSC2023 Online/Spring NetBSDのご紹介 の記録, https://togetter.com/li/2094211
  OSC2022 Online/Fall BSDなひととき の記録,https://togetter.com/li/1964480
  OSC2022 Online/Spring NetBSDのご紹介 の記録, https://togetter.com/li/1856809
@@ -151,10 +154,10 @@ OSC東京まとめ
 .. csv-table::
  :widths: 25 15 60
 
- みぞのくち醸造所,高津,11:00-23:00 ウタウト ワラウト
+ みぞのくち醸造所,高津,12:00-23:00 ウタウト ワラウト
  いくどん柿生店,柿生,村人が集う焼肉店。いしはらさんの合言葉は「レバー大辛」。
  VERTERE,奥多摩,クラフトビール 月金14:00-19:30 土日12:00-19:30
- Snark Liquidworks,要町,クラフトビールとDEC 水木土日 12:00-21:00 金17:00-21:00
+ CYCAD BREWING ,要町,クラフトビールとDEC 木金月 15:00-23:00 土日13:00-23:00
  riot beer,祖師ヶ谷大蔵,クラフトビール 木〜土15:00-21:00 土日13:00-18:00
  フタコビール,二子玉川,クラフトビール 11:30-23:00
  エビナビール,海老名,クラフトビール 月~金17:00-22:30 土日14:00-22:30
@@ -176,7 +179,7 @@ OSC東京まとめ
  加賀屋,本郷三丁目,もつMLというBSD関連の集まりがありましてな。
  丹青通商,亀戸,AppleII 5000円 マイコンマニュアル&ぱふ
  三ちゃん,荻窪,ピングドラムに出てきたラーメン店。スタミナラーメン。
- ピンバイス,門前仲町,個人経営の粋なプラモデル店
+ ピンバイス,門前仲町,個人経営の粋なプラモデル店 小林店長2023/7逝去
  ムーンライト,生田,ビール醸造所。季節のフルーツビール。
  ヌビチヌ,野毛,素晴らしいスタンディングビアバー。
  大衆,生麦,焼肉ジンギスカンホッピー焼肉ジンギスカンホッピー。
@@ -192,6 +195,7 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2023/4/1,OSC2023東京春,NetBSD/next68k
  2019/11/23-24,OSC2019東京秋,NetBSD/zaurus8.1
  2019/2/22-23,OSC2018東京春,Zrouter FreeBSD/mips NetBSD/nintendo64
  2018/10/27-28,OSC2018東京秋,Linux on Nintendo64
@@ -222,6 +226,34 @@ OSC東京主な展示物
  2006/3/17-18,OSC2006東京春,hpcmips/sh/arm
  2005/3/25-26,OSC2005,hpcmips/sh/arm
  2004/9/4,OSC2004,hpcmips/sh/arm
+
+2023年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2023/04/01/DSC_1137.JPG
+.. image::  ../Picture/2023/04/01/DSC_1138.JPG
+.. image::  ../Picture/2023/04/01/DSC_1139.JPG
+.. image::  ../Picture/2023/04/01/DSC_1140.JPG
+.. image::  ../Picture/2023/04/01/DSC_1141.JPG
+.. image::  ../Picture/2023/04/01/DSC_1142.JPG
+.. image::  ../Picture/2023/04/01/DSC_1143.JPG
+.. image::  ../Picture/2023/04/01/DSC_1144.JPG
+.. image::  ../Picture/2023/04/01/DSC_1145.JPG
+.. image::  ../Picture/2023/04/01/DSC_1146.JPG
+.. image::  ../Picture/2023/04/01/DSC_1147.JPG
+.. image::  ../Picture/2023/04/01/DSC_1148.JPG
+.. image::  ../Picture/2023/04/01/DSC_1149.JPG
+.. image::  ../Picture/2023/04/01/DSC_1150.JPG
+.. image::  ../Picture/2023/04/01/DSC_1151.JPG
+.. image::  ../Picture/2023/04/01/DSC_1152.JPG
+.. image::  ../Picture/2023/04/01/DSC_1153.JPG
+.. image::  ../Picture/2023/04/01/DSC_1154.JPG
+.. image::  ../Picture/2023/04/01/DSC_1155.JPG
+.. image::  ../Picture/2023/04/01/DSC_1156.JPG
+.. image::  ../Picture/2023/04/01/DSC_1157.JPG
+.. image::  ../Picture/2023/04/01/DSC_1159.JPG
+.. image::  ../Picture/2023/04/01/DSC_1160.JPG
+.. image::  ../Picture/2023/04/01/DSC_1161.JPG
 
 2019年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
