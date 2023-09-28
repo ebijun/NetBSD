@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.7 (GENERIC) #0: Tue Aug 22 17:27:49 UTC 2023
+NetBSD 10.99.9 (GENERIC) #0: Tue Sep 26 15:55:46 UTC 2023
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC
 total memory = 948 MB
 avail memory = 912 MB
@@ -129,11 +129,11 @@ usmsc0: vendor 0424 (0x0424) product ec00 (0xec00), rev 2.00/2.00, addr 3
 smscphy0 at usmsc0 phy 1: SMSC LAN8700 10/100 Ethernet Transceiver, rev. 3
 smscphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
 usmsc0: Ethernet address b8:27:eb:b4:61:d5
-uhidev0 at uhub1 port 3 configuration 1 interface 0
+uhidev0 at uhub1 port 5 configuration 1 interface 0
 uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 4, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub1 port 3 configuration 1 interface 1
+uhidev1 at uhub1 port 5 configuration 1 interface 1
 uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 4, iclass 3/1
 uhidev1: 6 report ids
 ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
@@ -144,6 +144,12 @@ uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
 uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
 uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
 uhub0: autoconfiguration error: illegal enable change, port 1
+umass0 at uhub1 port 4 configuration 1 interface 0
+umass0: StoreJet Transcend (0x8564) StoreJet Transcend (0x7000), rev 2.10/80.00, addr 5
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 swwdog0: software watchdog initialized
 ld0: 115904512 trailing sectors not covered by disklabel
 ld0: 115904512 trailing sectors not covered by disklabel
@@ -153,12 +159,12 @@ ld0: 115904512 trailing sectors not covered by disklabel
 root on ld0a dumps on ld0b
 ld0: 115904512 trailing sectors not covered by disklabel
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.7/modules
+kern.module.path=/stand/evbarm/10.99.9/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 vchiq0: interrupting on icu irq 66
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xbbac0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xbbaf0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 bwfm0: Firmware file default:    brcmfmac43430-sdio.bin
@@ -169,12 +175,6 @@ bwfm0: NVRAM file model-spec: brcmfmac43430-sdio.raspberrypi,3-model-b.txt
 bwfm0: Found NVRAM file: brcmfmac43430-sdio.raspberrypi,3-model-b.txt
 bwfm0: CLM file default:    brcmfmac43430-sdio.clm_blob
 bwfm0: CLM file model-spec: brcmfmac43430-sdio.raspberrypi,3-model-b.clm_blob
-umass0 at uhub1 port 4 configuration 1 interface 0
-umass0: StoreJet Transcend (0x8564) StoreJet Transcend (0x7000), rev 2.10/80.00, addr 5
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 audio0 at vcaudio0: playback
 audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for playback
 spkr0 at audio0: PC Speaker (synthesized)

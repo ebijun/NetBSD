@@ -12,7 +12,7 @@
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202308230100Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202309261750Z/evbarm-earmv7hf/binary
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2023/
 
@@ -37,13 +37,11 @@ LIST=man modules xbase xcomp xetc xfont xserver
 
 #Firmware: 
 #git show HEAD |head
-#commit 577aef2bc2f8e9dcd6955a85cf0621cc73b29db7
+#commit 6b37a457122714aa14b2c7df0926455173fd04f1
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Wed Feb 9 17:04:38 2022 +0000
-#    extra: Update dt-blob.dts to include cm4s
-#    See: https://github.com/raspberrypi/firmware/issues/1691
+#Date:   Thu Sep 21 19:03:28 2023 +0100
 
-FIRM=LICENCE.broadcom bootcode.bin fixup4cd.dat fixup_cd.dat start.elf start4db.elf start_db.elf fixup.dat fixup4db.dat fixup_db.dat start4.elf start4x.elf start_x.elf fixup4.dat fixup4x.dat  fixup_x.dat  start4cd.elf start_cd.elf
+FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup4.dat fixup4cd.dat fixup4db.dat fixup4x.dat fixup_cd.dat fixup_db.dat fixup_x.dat start.elf start4.elf start4cd.elf start4db.elf start4x.elf start_cd.elf start_db.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
 # mount point
@@ -145,6 +143,8 @@ release:
 # earmv7hf: config.txt should contain start address
 #	(cd ../../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
+	# PR57565 - fix ar
+	(patch -d ${MNT}/usr/share/mk < ../../Patch/57565/usr/share/mk/sys.mk.patch )
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
