@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202308220000Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202309261750Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -30,11 +30,9 @@ LIST=man modules xbase xcomp xetc xfont xserver
 
 #Firmware: 
 #git show HEAD |head 
-#commit 2595b815bf0e3c2af4b9a6be2151661df1ed4710 (HEAD -> master, origin/master, origin/HEAD)
+#commit 6b37a457122714aa14b2c7df0926455173fd04f1
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Fri Apr 1 11:41:42 2022 +0100
-#    kernel: drm/vc4: Force trigger of dlist update on margins change
-#    See: https://github.com/raspberrypi/linux/pull/4970
+#Date:   Thu Sep 21 19:03:28 2023 +0100
 
 FIRM=LICENCE.broadcom bootcode.bin fixup4cd.dat fixup_cd.dat start.elf start4db.elf start_db.elf fixup.dat fixup4db.dat fixup_db.dat start4.elf start4x.elf start_x.elf fixup4.dat fixup4x.dat  fixup_x.dat  start4cd.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -138,9 +136,9 @@ release:
 	mount /dev/${VND}a ${MNT}
 	mount /dev/${VND}e ${MNT}/boot
 	(cd ..; tar cf - etc root ) |(cd ${MNT};tar xvf -)
-#	(cd ..; tar cf - Oshimaya) |(cd ${MNT}/root;tar xvf -)
-#	(cd ../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
+	# PR57565 - fix ar
+	(patch -d ${MNT}/usr/share/mk < ../Patch/57565/usr/share/mk/sys.mk.patch )
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
@@ -243,11 +241,3 @@ libssls:
 	umount ${MNT}
 	vnconfig -u ${VND}
 
-mikutter-key:
-	echo mikutter key
-	vnconfig ${VND} ${FILE}
-	fsck -fy /dev/r${VND}a
-	mount /dev/${VND}a ${MNT}
-	patch -d ${MNT}/root/.mikutter/plugin/twitter_api_keys < mikutter/twitter_api_keys.rb.patch
-	umount ${MNT}
-	vnconfig -u ${VND}

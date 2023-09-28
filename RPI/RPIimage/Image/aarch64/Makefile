@@ -7,7 +7,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2023/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202308210630Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202309261750Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img.gz
 #RPI=${BINARY}/gzimg/arm64mbr.img.gz
@@ -17,6 +17,13 @@ ORD=a.img
 UEFI_VER=v1.35
 UEFI_FIRM=RPi4_UEFI_Firmware_${UEFI_VER}.zip
 UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
+
+#Firmware:
+#git show HEAD |head
+#commit 6b37a457122714aa14b2c7df0926455173fd04f1 (HEAD -> master, origin/master, origin/HEAD)
+#Author: Dom Cobley <popcornmix@gmail.com>
+#Date:   Thu Sep 21 19:03:28 2023 +0100
+FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
 PKGSRC=../../../../pkgsrc/pkgsrc-2018-08-04.tar.gz 
 
@@ -40,6 +47,11 @@ boot_config:
 	(cd ${MNT_BOOT};rm  LICENCE.broadcom bootcode.bin cmdline.txt config.txt fixup.dat fixup4.dat fixup4cd.dat fixup_cd.dat start.elf start4.elf start4cd.elf start_cd.elf)
 	(cd ${MNT_BOOT};rm -r dtb)	#keep for RPI3
 	unzip -d ${MNT_BOOT} ${UEFI_FIRM}
+	# Copy newer firm
+	mv ${MNT_BOOT}/fixup4.dat ${MNT_BOOT}/fixup4.dat.org
+	mv ${MNT_BOOT}/start4.elf ${MNT_BOOT}/start4.elf.org
+	cp ${FIRMPATH}/fixup4*.dat  ${MNT_BOOT}/
+	cp ${FIRMPATH}/start4*.elf  ${MNT_BOOT}/
 	# Copy RPI_EFI.fd
 	mv ${MNT_BOOT}/RPI_EFI.fd ${MNT_BOOT}/RPI_EFI.fd.org
 	cp boot/RPI_EFI.fd  ${MNT_BOOT} #disable 3GB barrier
@@ -65,6 +77,8 @@ release:
 	#ls -l ${MNT_ROOT}/var/db/entropy-file
 	# RPI4 symbolic link 
 	(cd ${MNT_ROOT}/libdata/firmware/if_bwfm/;ln -s brcmfmac43455-sdio.raspberrypi,4-model-b.txt "brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt")
+	# PR57565 - fix ar
+	(patch -d ${MNT_ROOT}/usr/share/mk < Patch/57565/usr/share/mk/sys.mk.patch )
 	umount ${MNT_ROOT}
 	vnconfig -u ${VND}
 
@@ -181,15 +195,3 @@ fetch:
 	sh Fetch
 	rm Fetch
 
-#Firmware:
-#git show HEAD |head
-#Author: popcornmix <popcornmix@gmail.com>
-#Date:   Tue Nov 17 14:11:58 2020 +0000
-#    kernel: Bump to 5.4.77
-
-
-FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup_cd.dat start.elf start_cd.elf
-FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
-
-firm:
-	cp -r ${FIRMPATH}/* Firm

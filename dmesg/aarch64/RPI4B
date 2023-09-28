@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.7 (GENERIC64) #0: Mon Aug 21 00:41:49 UTC 2023
+NetBSD 10.99.9 (GENERIC64) #0: Tue Sep 26 15:55:46 UTC 2023
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3928 MB
 avail memory = 3786 MB
@@ -32,7 +32,7 @@ ACPI: SSDT 0x0000000033B2ED98 000277 (v02 RPIFDN RPI4EMMC 00000002 INTL 20200925
 ACPI: SSDT 0x0000000033B2F198 000244 (v05 RPIFDN RPI4XHCI 00000002 INTL 20200925)
 ACPI: BGRT 0x0000000033B2FE18 000038 (v01 INTEL  EDK2     00000002      01000013)
 ACPI: 3 ACPI AML tables successfully acquired and loaded
-acpi0 at acpifdt0: Intel ACPICA 20221020
+acpi0 at acpifdt0: Intel ACPICA 20230628
 acpi0: X/RSDT: OemId <RPIFDN,RPI4    ,00000200>, AslId <    ,01000013>
 cpu0 at acpi0: Arm Cortex-A72 r0p3 (v8-A), id 0x0
 cpu0: package 0, core 0, smt 0
@@ -142,7 +142,7 @@ IPsec: Initialized Security Association Processing.
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SA32G:0x69:0x2ac4fcd0:0x157>
 ld1: 29544 MB, 7503 cyl, 128 head, 63 sec, 512 bytes/sect x 60506112 sectors
-ld1: GPT GUID: 30a3608b-8fe5-4851-b7d2-6c0bcbf91d3a
+ld1: GPT GUID: 5b7bc7f6-d347-4e13-bae2-d415c276541e
 dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 5586850 blocks at 90203, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -151,14 +151,14 @@ sdmmc0: SDIO function
 bwfm0 at sdmmc0 function 1
 (manufacturer 0x2d0, product 0xa9a6) at sdmmc0 function 2 not configured
 (manufacturer 0x2d0, product 0xa9a6, standard function interface code 0x2) at sdmmc0 function 3 not configured
-umass0 at uhub0 port 1 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 1
+uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 1
+uhub2: single transaction translator
+uhub2: 4 ports with 4 removable, self powered
+umass0 at uhub2 port 3 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 2
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 2
-uhub2: single transaction translator
-uhub2: 4 ports with 4 removable, self powered
 sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 uhidev0 at uhub2 port 4 configuration 1 interface 0
 uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
@@ -178,22 +178,22 @@ swwdog0: software watchdog initialized
 boot device: dk1
 root on dk1
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.7/modules
-WARNING: clock lost 77 days
+kern.module.path=/stand/evbarm/10.99.9/modules
+WARNING: clock lost 113 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc001674ee000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc001674d5000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
 vchiq: vchiq_initialise: videocore initialized after 1 retries
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.bin
-bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 audio0 at vcaudio0: playback
 audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for playback
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
+bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 bwfm0: NVRAM file default:    brcmfmac43455-sdio.txt
 bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt
 bwfm0: Found NVRAM file: brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt
