@@ -1,21 +1,27 @@
-VERSION: :1,$s/2023-08-23/2023-08-23/g
-ISO:     :1,$s/202308220000Z/202308220000Z/g
-NetBSD:  :1,$s/10.99.7/10.99.7/g
-PKGSRC:  :1,$s/2023-08-23/2022/
+VERSION: :1,$s/2023-09-28/2023-09-28/g
+ISO:     :1,$s/202309261750Z/202309261750Z/g
+NetBSD:  :1,$s/10.99.9/10.99.9/g
+PKGSRC:  :1,$s/2023-09-28/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2023-08-23-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2023-09-28-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2023-08-23-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2023-09-28-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-08-23-earmv6hf/2023-08-23-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-08-23-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-09-28-earmv6hf/2023-09-28-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-09-28-earmv6hf/MD5
 
 Update:
-- NetBSD 10.99.7 evbarm-earmv6hf 202308220000Z rpi.img from nyftp.
+- NetBSD 10.99.9 evbarm-earmv6hf 202309261750Z rpi.img from nyftp.
+- Firmware update
+	Date:   Thu Sep 21 19:03:28 2023 +0100
+- fix PR57565
+ https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57565
+ /usr/share/mk/sys.mk
+  ARFLAGS=?=rl to ARFLAGS=?=r
 - rust build failed in earmv6hf
   rust-1.66.1 works.
 - armv6 on QEMU (was Re: armv6 support for rust)
@@ -29,11 +35,10 @@ Update:
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-#commit 2595b815bf0e3c2af4b9a6be2151661df1ed4710 (HEAD -> master, origin/master, origin/HEAD)
+#git show HEAD |head 
+#commit 6b37a457122714aa14b2c7df0926455173fd04f1
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Fri Apr 1 11:41:42 2022 +0100
-#    kernel: drm/vc4: Force trigger of dlist update on margins change
-#    See: https://github.com/raspberrypi/linux/pull/4970
+#Date:   Thu Sep 21 19:03:28 2023 +0100
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
@@ -74,27 +79,19 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- dhcpcd-10.0.2 libc-12.221 libssh-45.0 NetBSD-10.99.7 openssh-9.3
- opensshd-9.3 libpcap-1.10.4 sh-20220122-20230821223717Z
- tcpdump-4.99.4 userland-NetBSD-10.99.7/evbarm
+ ftpd-20230922 NetBSD-10.99.9 sh-20220122-20230926155546Z
+ sqlite3-3.43.0 userland-NetBSD-10.99.9/evbarm
 
 pkgsrc:
- at-spi2-atk-2.38.0nb2 at-spi2-core-2.40.3nb3 atk-2.38.0nb1
- curl-8.2.1nb1 fontconfig-2.14.2nb2 gd-2.3.3nb10 gdk-pixbuf2-2.42.10nb3
- git-base-2.41.0nb2 glib2-2.76.4nb1 gmp-6.3.0 gnutls-3.8.1
- gobject-introspection-1.76.1nb1 gsettings-desktop-schemas-40.0nb2
- gtk2+-2.24.33nb11 harfbuzz-8.0.1nb1 icu-73.2nb1 libimagequant-2.18.0
- libproxy-0.5.3 libpsl-0.21.2nb1 libuuid-2.32.1nb2 libwebp-1.3.1
- libxkbcommon-1.5.0nb2 libxml2-2.10.4nb2 libxslt-1.1.38nb1
- m17n-lib-1.8.0nb12 mlterm-3.9.3nb2 mozilla-rootcerts-1.0.20230720
- pango-1.50.14nb1 py311-cElementTree-3.11.4 py311-expat-3.11.4nb1
- python311-3.11.4nb2 ruby31-addressable-2.8.5 ruby31-atk-4.1.9
- ruby31-cairo-gobject-4.1.9 ruby31-gdk_pixbuf2-4.1.9
- ruby31-gio2-4.1.9 ruby31-glib2-4.1.9 ruby31-gobject-introspection-4.1.9
- ruby31-mikutter-5.0.5 ruby31-mini_portile2-2.8.4
- ruby31-native-package-installer-1.1.8 ruby31-pango-4.1.9
- ruby31-public_suffix-5.0.3 shared-mime-info-2.2nb3
- sudo-1.9.14p3 tiff-4.5.1nb1
+ anthy-9100hnb1 at-spi2-core-2.44.1 brotli-1.1.0 curl-8.3.0
+ dbus-1.14.10 freetype2-2.13.2 git-base-2.42.0 gtk3+-3.24.38nb1
+ harfbuzz-8.1.1 libwebp-1.3.2 medit-1.2.0nb25 nghttp2-1.56.0
+ pkgin-23.8.1 py311-cElementTree-3.11.5 py311-expat-3.11.5nb1
+ python311-3.11.5 ruby31-atk-4.2.0 ruby31-cairo-gobject-4.2.0
+ ruby31-gdk3-4.2.0 ruby31-gdk_pixbuf2-4.2.0 ruby31-gio2-4.2.0
+ ruby31-glib2-4.2.0 ruby31-gobject-introspection-4.2.0
+ ruby31-gtk3-4.2.0 ruby31-nokogiri-1.15.4 ruby31-pango-4.2.0
+ ruby31-pkg-config-1.5.5
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -153,7 +150,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-08-23-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-09-28-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -385,7 +382,7 @@ http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2022.rst
 
-- NetBSD 10.99.7 earmv6hf rpi.img.gz base
+- NetBSD 10.99.9 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
