@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.8 (GENERIC64) #0: Tue Sep 12 07:23:27 UTC 2023
+NetBSD 10.99.10 (GENERIC64) #0: Sun Oct 15 07:03:17 UTC 2023
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 7652 MB
 avail memory = 7376 MB
@@ -210,8 +210,6 @@ wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
-uhub0: 1 port with 1 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub1: 1 port with 1 removable, self powered
 uhub2 at usb2: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
@@ -222,6 +220,8 @@ uhub4 at usb4: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00,
 uhub4: 4 ports with 4 removable, self powered
 uhub5 at usb5: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub5: 4 ports with 4 removable, self powered
+uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+uhub0: 1 port with 1 removable, self powered
 WARNING: system needs entropy for security; see entropy(7)
 IPsec: Initialized Security Association Processing.
 ld4: GPT GUID: 5e6af92f-6399-419f-b886-174c1acc4511
@@ -280,133 +280,10 @@ swwdog0: software watchdog initialized
 boot device: dk6
 root on dk6
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.8/modules
+kern.module.path=/stand/evbarm/10.99.10/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 entropy: best effort
 entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
-spkr0: detached
-audio0: detached
-uaudio0: detached
-uaudio0: at uhub6 port 4 (addr 4) disconnected
-uhid5: detached
-uhidev2: detached
-uhidev2: at uhub6 port 4 (addr 4) disconnected
-ukbd0: was console keyboard
-wskbd0: detached
-ukbd0: detached
-uhidev0: detached
-uhidev0: at uhub6 port 3 (addr 3) disconnected
-uhid4: detached
-uhid3: detached
-uhid2: detached
-uhid1: detached
-uhid0: detached
-wsmouse0: detached
-ums0: detached
-uhidev1: detached
-uhidev1: at uhub6 port 3 (addr 3) disconnected
-uhub6: detached
-uhub6: at uhub5 port 1 (addr 2) disconnected
-uhub6 at uhub5 port 1: vendor 1a40 (0x1a40) USB 2.0 Hub (0x0101), class 9/0, rev 2.00/1.11, addr 5
-uhub6: single transaction translator
-uhub6: 4 ports with 4 removable, self powered
-uhidev0 at uhub6 port 3 configuration 1 interface 0
-uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 6, iclass 3/1
-ukbd0 at uhidev0
-wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub6 port 3 configuration 1 interface 1
-uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 6, iclass 3/1
-uhidev1: 6 report ids
-ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
-uhid0 at uhidev1 reportid 2: input=7, output=0, feature=0
-uhid1 at uhidev1 reportid 3: input=1, output=0, feature=0
-uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
-uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
-uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
-uaudio0 at uhub6 port 4 configuration 1 interface 0
-uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 7
-uaudio0: ignored setting with format 0x80000000
-uaudio0: audio rev 2.00
-audio0 at uaudio0: playback
-audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (30ms) for playback
-spkr0 at audio0: PC Speaker (synthesized)
-wsbell at spkr0 not configured
-spkr0: detached
-audio0: detached
-uaudio0: detached
-uaudio0: at uhub6 port 4 (addr 7) disconnected
-uaudio0 at uhub6 port 4 configuration 1 interface 0
-uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 8
-uaudio0: ignored setting with format 0x80000000
-uaudio0: audio rev 2.00
-audio0 at uaudio0: playback
-audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (30ms) for playback
-spkr0 at audio0: PC Speaker (synthesized)
-wsbell at spkr0 not configured
-spkr0: detached
-audio0: detached
-uaudio0: detached
-uaudio0: at uhub6 port 4 (addr 8) disconnected
-uhub6: port 4, device not enabled
-uaudio0 at uhub6 port 4 configuration 1 interface 0
-uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 9
-uaudio0: ignored setting with format 0x80000000
-uaudio0: audio rev 2.00
-audio0 at uaudio0: playback
-audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (30ms) for playback
-spkr0 at audio0: PC Speaker (synthesized)
-wsbell at spkr0 not configured
-spkr0: detached
-audio0: detached
-uaudio0: detached
-uaudio0: at uhub6 port 4 (addr 9) disconnected
-uaudio0 at uhub6 port 4 configuration 1 interface 0
-uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 10
-uaudio0: ignored setting with format 0x80000000
-uaudio0: audio rev 2.00
-audio0 at uaudio0: playback
-audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (30ms) for playback
-spkr0 at audio0: PC Speaker (synthesized)
-wsbell at spkr0 not configured
-spkr0: detached
-audio0: detached
-uaudio0: detached
-uaudio0: at uhub6 port 4 (addr 10) disconnected
-uaudio0 at uhub6 port 4 configuration 1 interface 0
-uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 11
-uaudio0: ignored setting with format 0x80000000
-uaudio0: audio rev 2.00
-audio0 at uaudio0: playback
-audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (30ms) for playback
-spkr0 at audio0: PC Speaker (synthesized)
-wsbell at spkr0 not configured
-spkr0: detached
-audio0: detached
-uaudio0: detached
-uaudio0: at uhub6 port 4 (addr 11) disconnected
-uaudio0 at uhub6 port 4 configuration 1 interface 0
-uaudio0: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 12
-uaudio0: audio rev 1.00
-audio0 at uaudio0: playback
-audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (60ms) for playback
-spkr0 at audio0: PC Speaker (synthesized)
-wsbell at spkr0 not configured
-uhidev2 at uhub6 port 4 configuration 1 interface 2
-uhidev2: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 12, iclass 3/0
-uhid5 at uhidev2: input=1, output=0, feature=0
-sd0: detached
-scsibus0: detached
-umass0: detached
-umass0: at uhub4 port 2 (addr 1) disconnected
-umass0 at uhub4 port 2 configuration 1 interface 0
-umass0: Realtek (0x0bda) RTL9210B-CG (0x9210), rev 3.20/20.01, addr 13
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <Realtek, RTL9210B-CG, 1.00> disk fixed
-sd0: fabricating a geometry
-sd0: 931 GB, 953869 cyl, 64 head, 32 sec, 512 bytes/sect x 1953525168 sectors
-sd0: fabricating a geometry
