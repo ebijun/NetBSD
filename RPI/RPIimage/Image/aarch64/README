@@ -1,23 +1,32 @@
-VERSION: :1,$s/2023-09-27/2023-09-27/g
-ISO:     :1,$s/202309261750Z/202309261750Z/g
-NetBSD:  :1,$s/10.99.9/10.99.9/g
+VERSION: :1,$s/2023-10-18/2023-10-18/g
+ISO:     :1,$s/202310170120Z/202310170120Z/g
+NetBSD:  :1,$s/10.99.10/10.99.10/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2023-09-27-netbsd-raspi-aarch64.img
+Subject: 2023-10-18-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2023-09-27-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2023-10-18-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-09-27-aarch64/2023-09-27-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-09-27-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-10-18-aarch64/2023-10-18-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-10-18-aarch64/MD5
 
 Topics:
+- [Test] RPI4 8GB
+  It works on my RPI8GB, please report port-arm@ if not works.
+- add pkgsrc/net/sayaka : SNS called Misskey client support
+  to show misskey.io timeline with sayaka:
+  # mlterm-wscons
+  # sayaka --local misskey.io 
 - [Test] Firmware update /boot/fixup4*.dat,start4*.elf
+#git log HEAD |head
+#commit 7f14c6192dd536392efbad2280e990285447591a
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Thu Sep 21 19:03:28 2023 +0100
+#Date:   Thu Oct 12 15:39:53 2023 +0100
+
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
 - fix PR57565
@@ -56,28 +65,14 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- dhcpcd-10.0.2 ftpd-20230922 libc-12.221 libssh-45.0 NetBSD-10.99.9
- openssh-9.3 opensshd-9.3 libpcap-1.10.4 sh-20220122-20230926155546Z
- sqlite3-3.43.0 tcpdump-4.99.4 userland-NetBSD-10.99.9/evbarm
+ dhcpcd-10.0.3 ftpd-20230930 NetBSD-10.99.10 sh-20220122-20231016173118Z
+ userland-NetBSD-10.99.10/evbarm
 
 pkgsrc:
- anthy-9100hnb1 at-spi2-atk-2.38.0nb2 at-spi2-core-2.44.1
- atk-2.38.0nb1 brotli-1.1.0 curl-8.3.0 dbus-1.14.10 fontconfig-2.14.2nb2
- freetype2-2.13.2 gdk-pixbuf2-2.42.10nb3 git-base-2.42.0
- glib2-2.76.5 gmp-6.3.0 gnutls-3.8.1 gobject-introspection-1.76.1nb1
- graphite2-1.3.14nb2 gsettings-desktop-schemas-40.0nb2 gtk2+-2.24.33nb11
- gtk3+-3.24.38nb1 harfbuzz-8.1.1 icu-73.2nb1 libimagequant-4.2.1
- libpsl-0.21.2nb1 libuuid-2.32.1nb2 libwebp-1.3.2 libxkbcommon-1.5.0nb2
- libxml2-2.10.4nb2 libxslt-1.1.38nb1 medit-1.2.0nb25
- mozilla-rootcerts-1.0.20230720 nghttp2-1.56.0 pango-1.50.14nb1
- pkgin-23.8.1 py311-cElementTree-3.11.5 py311-expat-3.11.5nb1
- python311-3.11.5 ruby31-addressable-2.8.5 ruby31-atk-4.2.0
- ruby31-cairo-gobject-4.2.0 ruby31-gdk3-4.2.0 ruby31-gdk_pixbuf2-4.2.0
- ruby31-gio2-4.2.0 ruby31-glib2-4.2.0 ruby31-gobject-introspection-4.2.0
- ruby31-gtk3-4.2.0 ruby31-mikutter-5.0.5 ruby31-mini_portile2-2.8.4
- ruby31-native-package-installer-1.1.8 ruby31-nokogiri-1.15.4
- ruby31-pango-4.2.0 ruby31-pkg-config-1.5.5 ruby31-public_suffix-5.0.3
- shared-mime-info-2.2nb3 sudo-1.9.14p3 tiff-4.5.1nb1
+ curl-8.4.0 libimagequant-4.2.1nb1 mbedtls-2.28.3nb1 nghttp2-1.57.0
+ py311-cElementTree-3.11.6 py311-expat-3.11.6nb1 python311-3.11.6
+ qt5-qtbase-5.15.11 qt5-qtx11extras-5.15.11 qt5-qtxmlpatterns-5.15.11
+ sayaka-3.7.1 vlgothic-ttf-20230918 wslay-1.1.1
 
 RPI4 status:
 - boot via UEFI_VER=v1.35
@@ -98,7 +93,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.9 evbarm-aarch64 202309261750Z arm64.img from nyftp.
+- NetBSD-current 10.99.10 evbarm-aarch64 202310170120Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
@@ -117,7 +112,7 @@ https://github.com/ebijun/NetBSD/commit/1b3ef330ecf023aa73d58ccb8b4029c520f33cdf
    pkg_add gimp
    pkg_add scribus
    pkg_add py310-sphinx
-   pkg_add wxGTK30
+   pkg_add wxGTK31
    pkg_add gnome-keyring
 
 - Sphinx with latexpdf
@@ -145,6 +140,7 @@ Pre-installed packages:
   dillo
   medit
   lrzsz
+  sayaka
 
 - pre-build packages:
   See /etc/pkg_install.conf
