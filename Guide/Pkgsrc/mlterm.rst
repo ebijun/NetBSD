@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2016 Jun Ebihara All rights reserved.
+ Copyright (c) 2016-2023 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -21,7 +21,7 @@
 
 
 =========================
-mlterm-fbを使ってみる
+mlterm-wscons を使ってみる
 =========================
 
 mlterm
@@ -33,7 +33,7 @@ mlterm (pkgsrc/x11/mlterm) [mlterm]_ は、X上で動作する多言語ターミ
 .. image:: ../Picture/2013/08/02/DSC_2283.jpg
  :width: 800
 
-mlterm-fb向けオプション設定
+mlterm-wscons 向けオプション設定
 ------------------------------
 
 /etc/mk.confに、mltermに与えるオプションを指定しておきます。pkgsrc/x11/mlterm以下を利用して、mltermをインストールします。
@@ -44,17 +44,29 @@ mlterm-fb向けオプション設定
  PKG_OPTIONS.mlterm=xft2 mlterm-fb
  # cd /usr/pkgsrc/x11/mlterm
  # make package-install
- # which mlterm-fb
- /usr/pkg/bin/mlterm-fb
+ # which mlterm-wscons
+ /usr/pkg/bin/mlterm-wscons
+
+mlterm-wscons フォント設定
+-------------------------------------
+
+mlfc コマンドを実行すると、true typeフォントを検索して、
+~/.mlterm/aafont と ~/.mlterm/font-fb ファイルを更新します。
+
+::
+
+ $ mlfc
+ Updating /home/jun/.mlterm/aafont
+ Updating /home/jun/.mlterm/font-fb
 
 起動
 -----------
 
- コンソール画面からmlterm-fbを起動します。
+ コンソール画面からmlterm-wsconsを起動します。
 
 ::
 
- % mlterm-fb
+ % mlterm-wscons
 
 PCでのmlterm-fb起動
 -----------------------
@@ -66,12 +78,12 @@ NetBSD/i386,amd64でmlterm-fbを利用する場合、起動時にVESAを指定�
 #. boot
 #. 起動
 #. ログイン
-#. mlterm-fb起動
+#. mlterm-wscons起動
 
 テスト画像表示
 ---------------
 
- mlterm-fbを起動した状態で、catを利用して、画像イメージを表示します。
+ mlterm-wsconfを起動した状態で、catを利用して、画像イメージを表示します。
 
 ::
 
@@ -89,7 +101,7 @@ NetBSD/i386,amd64でmlterm-fbを利用する場合、起動時にVESAを指定�
  % jpegtopnm aaa.jpg |pnmquant 256 |ppmtosixel > aaa.sixel
  % pngtopnm  aaa.png |pnmquant 256 |ppmtosixel > aaa.sixel
 
-mltermソースからmlterm-fbをコンパイルする
+mltermソースからmlterm-wsconsをコンパイルする
 -------------------------------------------
 
 ::
@@ -112,19 +124,19 @@ mltermについて
 
  *http://mlterm.sourceforge.net/* に、より詳しい情報があります。
 
-mlterm-fb上でtwを動かしてみる
+mlterm-fb上でsayakaを動かしてみる
 -------------------------------
 
-mlterm-fb上で日本語が表示できたら、tw [tw]_ を利用してツイッターのタイムラインを表示してみましょう。
+mlterm-wscons上で日本語が表示できたら、sayaka [sayaka]_ を利用してmisskey.ioのタイムラインを表示してみましょう。
 
 twのインストール
 -------------------
 
-pkgsrcからtwをインストールします。
+pkgsrcからsayakaをインストールします。
 
 ::
 
- # cd /usr/pkgsrc/net/ruby-tw
+ # cd /usr/pkgsrc/net/sayaka
  # make package-install 
 
 .. rubic:: 
@@ -132,5 +144,5 @@ pkgsrcからtwをインストールします。
 .. [mlterm] mlterm http://mlterm.sourceforge.net/
 .. [tw] tw http://shokai.github.io/tw/
 .. [はよーん] http://jnug.net/msg012914ja.html
-
+.. [sayaka] https://github.com/isaki68k/sayaka
 
