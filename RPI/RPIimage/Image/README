@@ -1,23 +1,25 @@
-VERSION: :1,$s/2023-09-28/2023-09-28/g
-ISO:     :1,$s/202309261750Z/202309261750Z/g
-NetBSD:  :1,$s/10.99.9/10.99.9/g
-PKGSRC:  :1,$s/2023-09-28/2022/
+VERSION: :1,$s/2023-10-19/2023-10-19/g
+ISO:     :1,$s/202310172220Z/202310172220Z/g
+NetBSD:  :1,$s/10.99.10/10.99.10/g
+PKGSRC:  :1,$s/2023-10-19/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2023-09-28-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2023-10-19-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2023-09-28-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2023-10-19-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-09-28-earmv6hf/2023-09-28-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-09-28-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-10-19-earmv6hf/2023-10-19-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-10-19-earmv6hf/MD5
 
 Update:
-- NetBSD 10.99.9 evbarm-earmv6hf 202309261750Z rpi.img from nyftp.
-- Firmware update
-	Date:   Thu Sep 21 19:03:28 2023 +0100
+- NetBSD 10.99.10 evbarm-earmv6hf 202310172220Z rpi.img from nyftp.
+- add pkgsrc/net/sayaka : SNS called Misskey client support
+  to show misskey.io timeline with sayaka:
+  # mlterm-wscons
+  # sayaka --local misskey.io 
 - fix PR57565
  https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57565
  /usr/share/mk/sys.mk
@@ -35,15 +37,14 @@ Update:
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-#git show HEAD |head 
-#commit 6b37a457122714aa14b2c7df0926455173fd04f1
+#git log HEAD |head 
+#commit 7f14c6192dd536392efbad2280e990285447591a
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Thu Sep 21 19:03:28 2023 +0100
+#Date:   Thu Oct 12 15:39:53 2023 +0100
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
   earmv7hf works well.earmv6hf not yet.
-
 
 - Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
 XXX: should test big-endian image and pkgsrc
@@ -79,19 +80,14 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- ftpd-20230922 NetBSD-10.99.9 sh-20220122-20230926155546Z
- sqlite3-3.43.0 userland-NetBSD-10.99.9/evbarm
+ dhcpcd-10.0.3 ftpd-20230930 NetBSD-10.99.10 sh-20220122-20231017193316Z
+ userland-NetBSD-10.99.10/evbarm
 
 pkgsrc:
- anthy-9100hnb1 at-spi2-core-2.44.1 brotli-1.1.0 curl-8.3.0
- dbus-1.14.10 freetype2-2.13.2 git-base-2.42.0 gtk3+-3.24.38nb1
- harfbuzz-8.1.1 libwebp-1.3.2 medit-1.2.0nb25 nghttp2-1.56.0
- pkgin-23.8.1 py311-cElementTree-3.11.5 py311-expat-3.11.5nb1
- python311-3.11.5 ruby31-atk-4.2.0 ruby31-cairo-gobject-4.2.0
- ruby31-gdk3-4.2.0 ruby31-gdk_pixbuf2-4.2.0 ruby31-gio2-4.2.0
- ruby31-glib2-4.2.0 ruby31-gobject-introspection-4.2.0
- ruby31-gtk3-4.2.0 ruby31-nokogiri-1.15.4 ruby31-pango-4.2.0
- ruby31-pkg-config-1.5.5
+ curl-8.4.0 glib2-2.76.5 mbedtls-2.28.3nb1 nghttp2-1.57.0
+ py311-cElementTree-3.11.6 py311-expat-3.11.6nb1 python311-3.11.6
+ qt5-qtbase-5.15.11 qt5-qtx11extras-5.15.11 qt5-qtxmlpatterns-5.15.11
+ sayaka-3.7.1 tiff-4.6.0 vlgothic-ttf-20230918 wslay-1.1.1
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -134,13 +130,6 @@ System Update:
 
 http://cvsweb.netbsd.org/bsdweb.cgi/src/distrib/sets/lists/base/shl.mi
 
-mikutter support : 
- I make sample API key,pre-installed.
- https://github.com/ebijun/NetBSD/tree/master/RPI/RPIimage/root/.mikutter/plugin
- https://github.com/Akkiesoft/how-to-make-mikutter-work-again
-  cd /root/.mikutter
-  git submodule add https://github.com/toshia/twitter_api_keys.git twitter_api_keys
-
 RPI Wifi:
  http://mail-index.netbsd.org/port-arm/2019/08/31/msg006102.html
 
@@ -150,7 +139,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-09-28-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-10-19-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -368,19 +357,17 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2023 Online/Fall, BSD BOF.
+For Open Source Conference 2023 Fall
 I've updated raspberry-pi image.
 
-    2023 Nov.30 Sat 14:00-14:45 JST (UTC+9)
-    https://event.ospn.jp/osc2023-online-fall/session/1098479
-    Join meeting with YoutubeLive https://www.youtube.com/c/OSPNjp ROOM B
-    Join meeting with ZOOM https://ospn.connpass.com/event/295182/
+    2023 Oct.21 Sat 10:00-16:00 JST (UTC+9)
+    https://event.ospn.jp/osc2023-fall/
 
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
-https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2022.rst
+https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2023.rst
 
-- NetBSD 10.99.9 earmv6hf rpi.img.gz base
+- NetBSD 10.99.10 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
@@ -400,14 +387,9 @@ https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2022.rst
 Appear mikutter window. and mikutter-chan tell you,
 
 "Well done on the installation!" [Next]
-"Hi! This is mikutter-chan speaking to you,join the twitter with me!" [Next]
- 1. "Click the link https:......" click the URL, 
-    copy URL into dillo.
- 2. "login with the Twitter account you wish to use."
- 3. "Go along until you see a 7-digit code and type it in at the top."
-  -> get pin number.
-  -> paste pin number to mikutter
- 4. "Congratulations! You have attained achievement register_account!"
+"Hi! This is mikutter-chan speaking to you,join the mastodon with me!" [Next]
+ :
+"Congratulations! You have attained achievement register_account!"
 
   Share your twitter timeline with your family!
 
@@ -440,6 +422,7 @@ Installed Packages:
   dillo
   medit
   lrzsz
+  sayaka
 
 To control HDMI output,add/delete "console=fb" on cmdline.txt.
 If delete console=fb definition,you can get serial console instead.
