@@ -6,7 +6,7 @@ bash-5.2.15         The GNU Bourne Again Shell
 brotli-1.1.0        Generic-purpose lossless compression algorithm
 cairo-1.16.0nb9     Vector graphics library with cross-device output support
 cairo-gobject-1.16.0nb7 Vector graphics library with cross-device output support
-curl-8.3.0          Client that groks URLs
+curl-8.4.0          Client that groks URLs
 dbus-1.14.10        Message bus system
 digest-20220214     Message digest wrapper utility
 dillo-3.0.5nb12     Very small and fast graphical web-browser
@@ -20,7 +20,7 @@ gd-2.3.3nb10        Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.42.10nb3 Library for image loading and manipulation
 giflib-5.2.1nb5     GIF image format library
 git-base-2.42.0     GIT Tree History Storage Tool (base package)
-glib2-2.76.4nb1     Some useful routines for C programming (glib2)
+glib2-2.76.5        Some useful routines for C programming (glib2)
 gmp-6.3.0           Library for arbitrary precision arithmetic
 gnutls-3.8.1        Transport Layer Security library
 gobject-introspection-1.76.1nb1 GObject Introspection
@@ -62,12 +62,13 @@ lz4-1.9.4           Extremely Fast Compression algorithm
 lzo-2.10            Portable lossless data compression library
 m17n-db-1.8.0       The m17n database used by the m17n library
 m17n-lib-1.8.0nb12  Multilingualization library
+mbedtls-2.28.3nb1   Lightweight, modular cryptographic and SSL/TLS library (2.x branch)
 md4c-0.4.8          Markdown for C library and parser
 medit-1.2.0nb25     Programming and around-programming text editor
 mlterm-3.9.3nb2     Multilingual terminal emulator
 mozilla-rootcerts-1.0.20230720 Root CA certificates from the Mozilla Project
 nettle-3.9.1        Cryptographic library
-nghttp2-1.56.0      Implementation of HTTP/2 in C
+nghttp2-1.57.0      Implementation of HTTP/2 in C
 p11-kit-0.25.0      PKCS#11 module manager
 pango-1.50.14nb1    Library for layout and rendering of text
 pcre2-10.42         Perl Compatible Regular Expressions library (major version 2)
@@ -76,12 +77,12 @@ pkg_chk-2.0.11      Check installed package versions against pkgsrc
 pkg_install-20211115 Package management and administration tools for pkgsrc
 pkgin-23.8.1        Apt / yum like tool for managing pkgsrc binary packages
 png-1.6.40          Library for manipulating PNG images
-py311-cElementTree-3.11.5 C implementation of Python ElementTree API
-py311-expat-3.11.5nb1 Python interface to expat
-python311-3.11.5    Interpreted, interactive, object-oriented programming language
-qt5-qtbase-5.15.10  C++ X GUI toolkit
-qt5-qtx11extras-5.15.10 Qt5 module for X11 extras
-qt5-qtxmlpatterns-5.15.10 Qt5 module for XML Patterns
+py311-cElementTree-3.11.6 C implementation of Python ElementTree API
+py311-expat-3.11.6nb1 Python interface to expat
+python311-3.11.6    Interpreted, interactive, object-oriented programming language
+qt5-qtbase-5.15.11  C++ X GUI toolkit
+qt5-qtx11extras-5.15.11 Qt5 module for X11 extras
+qt5-qtxmlpatterns-5.15.11 Qt5 module for XML Patterns
 raspberrypi-userland-20170109nb3 Various libraries for the Raspberry Pi
 ruby31-addressable-2.8.5 Replacement for the URI Implementation of standard librrary
 ruby31-atk-4.2.0    Ruby binding of ATK-1.0.x or later
@@ -119,15 +120,17 @@ ruby31-snaky_hash-2.0.1 Hashie::Mash joint to make
 ruby31-text-1.3.1   Collection of text algorithms for Ruby
 ruby31-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 ruby31-version_gem-1.1.3 Sugar for Version modules
+sayaka-3.7.1        Terminal specific Twitter client
 shared-mime-info-2.2nb3 Core database of common types
 sudo-1.9.14p3       Allow others to run commands as root
 tcsh-6.24.10        Extended C-shell with many useful features
-tiff-4.5.1nb1       Library and tools for reading and writing TIFF data files
+tiff-4.6.0          Library and tools for reading and writing TIFF data files
 uim-1.8.9nb3        Multilingual input method library
-vlgothic-ttf-20220612 Free Japanese TrueType fonts named 'VLGothic'
+vlgothic-ttf-20230918 Free Japanese TrueType fonts named 'VLGothic'
 wayland-1.21.0nb2   Display server protocol - development libraries
 wayland-protocols-1.32 Additional wayland functionality
 wget-1.21.4         Retrieve files from the 'net via HTTP and FTP
+wslay-1.1.1         WebSocket library written in C
 xcb-util-0.4.1      XCB Utilities
 xcb-util-image-0.4.1 XCB port of Xlib's XImage and XShmImage
 xcb-util-keysyms-0.4.1 XCB Utilities
