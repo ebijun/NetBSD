@@ -1,8 +1,8 @@
 SMART supported, SMART enabled
 id value thresh crit collect reliability description                 raw
   5 100   50     no  online  positive    Reallocated sector count    0
-  9 100    0     no  online  positive    Power-on hours count        1130
- 12 100    0     no  online  positive    Device power cycle count    89
+  9 100    0     no  online  positive    Power-on hours count        2598
+ 12 100    0     no  online  positive    Device power cycle count    181
 167 100    0     no  online  positive    Unknown                     0
 168 100    0     no  online  positive    Unknown                     0
 169 100   10     yes online  positive    Unknown                     0
@@ -16,17 +16,17 @@ id value thresh crit collect reliability description                 raw
 183 100    0     no  online  positive    Runtime Bad Block           0
 184 100   90     yes online  positive    End-to-end error            0
 187 100    0     no  online  positive    Reported Uncorrectable Errors 0
-192 100    0     no  online  positive    Power-off retract count     10
-194  48    0     no  online  positive    Temperature                 48 Lifetime min/max 30/125
+192 100    0     no  online  positive    Power-off retract count     11
+194  48    0     no  online  positive    Temperature                 48 Lifetime min/max 0/125
 196 100    0     no  online  positive    Reallocated event count     0
 197 100    0     no  online  positive    Current pending sector      0
 199 100    0     no  online  positive    Ultra DMA CRC error count   0
-206 200    0     no  online  positive    Flying height               5
-207 200    0     no  online  positive    Spin high current           72
-208 200    0     no  online  positive    Spin buzz                   28
-231  98    5     yes online  positive    Temperature                 2
-233 100    0     no  online  positive    Media wearout indicator     12426
-234 100    0     no  online  positive    Unknown                     19799
-241 100    0     no  online  positive    Total LBAs Written          3041
-242 100    0     no  online  positive    Total LBAs Read             963
-243  50    0     no  online  positive    Unknown                     50
+206 200    0     no  online  positive    Flying height               11
+207 200    0     no  online  positive    Spin high current           126
+208 200    0     no  online  positive    Spin buzz                   60
+231  94    5     yes online  positive    Temperature                 6
+233 100    0     no  online  positive    Media wearout indicator     25867
+234 100    0     no  online  positive    Unknown                     49157
+241 100    0     no  online  positive    Total LBAs Written          3985
+242 100    0     no  online  positive    Total LBAs Read             2113
+243  50    0     no  online  positive    Unknown                     48
