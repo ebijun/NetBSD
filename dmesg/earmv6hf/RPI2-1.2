@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.2 (RPI2) #0: Tue Jan 17 14:27:11 UTC 2023
+NetBSD 10.99.10 (RPI2) #0: Tue Oct 17 19:33:16 UTC 2023
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -69,7 +69,7 @@ vcmbox0 at bcmmbox0
 /soc/timer@7e003000 at simplebus1 not configured
 /soc/txp@7e004000 at simplebus1 not configured
 plcom0 at simplebus1: ARM PL011 UART
-plcom0: txfifo disabled
+plcom0: txfifo 16 bytes
 plcom0: console
 plcom0: interrupting on icu irq 57
 bcmsdhost0 at simplebus1: SD HOST controller
@@ -106,8 +106,8 @@ uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00,
 uhub0: 1 port with 1 removable, self powered
 sdmmc0: direct I/O error 5, r=6 p=0xd2647f14 write
 sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
-ld0 at sdmmc0: <0x02:0x544d:SA32G:0x75:0x2b2fb4d9:0x167>
-ld0: 29796 MB, 7567 cyl, 128 head, 63 sec, 512 bytes/sect x 61022208 sectors
+ld0 at sdmmc0: <0x02:0x544d:SA64G:0x79:0x49742ec7:0x169>
+ld0: 59114 MB, 7535 cyl, 255 head, 63 sec, 512 bytes/sect x 121065472 sectors
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 uhub1 at uhub0 port 1: vendor 0424 (0x0424) product 9514 (0x9514), class 9/0, rev 2.00/2.00, addr 2
 uhub1: multiple transaction translators
@@ -117,38 +117,31 @@ usmsc0: vendor 0424 (0x0424) product ec00 (0xec00), rev 2.00/2.00, addr 3
 smscphy0 at usmsc0 phy 1: SMSC LAN8700 10/100 Ethernet Transceiver, rev. 3
 smscphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
 usmsc0: Ethernet address b8:27:eb:03:f5:9d
-uhub2 at uhub1 port 5: vendor 1a40 (0x1a40) USB 2.0 Hub (0x0101), class 9/0, rev 2.00/1.11, addr 4
-uhub2: single transaction translator
-uhub2: 4 ports with 4 removable, self powered
-uhidev0 at uhub2 port 1 configuration 1 interface 0
-uhidev0: vendor 0461 (0x0461) USB Optical Mouse (0x4d0f), rev 2.00/2.00, addr 5, iclass 3/1
-ums0 at uhidev0: 3 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
-uhidev1 at uhub2 port 4 configuration 1 interface 0
-uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 6, iclass 3/1
-ukbd0 at uhidev1
+uhidev0 at uhub1 port 2 configuration 1 interface 0
+uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/1
+ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev2 at uhub2 port 4 configuration 1 interface 1
-uhidev2: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 6, iclass 3/0
-uhidev2: 2 report ids
-uhid0 at uhidev2 reportid 1: input=1, output=0, feature=0
-uhid1 at uhidev2 reportid 2: input=3, output=0, feature=0
+uhidev1 at uhub1 port 2 configuration 1 interface 1
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 4, iclass 3/0
+uhidev1: 2 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
 uhub0: autoconfiguration error: illegal enable change, port 1
 swwdog0: software watchdog initialized
 WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.2/modules
+kern.module.path=/stand/evbarm/10.99.10/modules
 WARNING: no TOD clock present
-WARNING: using filesystem time
-WARNING: CHECK AND RESET THE DATE!
 vchiq0: interrupting on icu irq 66
-vchiq: vchiq_init_state: slot_zero = 0xd2aa0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xd2ab0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
 vchiq: vchiq_initialise: videocore initialized after 1 retries
+WARNING: using filesystem time
+WARNING: CHECK AND RESET THE DATE!
 audio0 at vcaudio0: playback
 audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for playback
 spkr0 at audio0: PC Speaker (synthesized)
