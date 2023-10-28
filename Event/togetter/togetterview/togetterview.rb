@@ -17,7 +17,7 @@ doc = Nokogiri::HTML.parse(html, nil, charset)
 doc.xpath("//div[@class='inner']").each do |item|
 	c     = item.css('span').children
 
-	if c.size == 0
+	if (c.size == 0 || c.size == 4)
 		next
 	end
 
@@ -27,6 +27,6 @@ doc.xpath("//div[@class='inner']").each do |item|
 	end
 	title = item.css('h3').inner_text
 	url = item.css('a').attribute('href').value
-	# pickup pv 
-	puts title+','+url+","+c[3].inner_text
+
+	puts title+','+url+","+c[6].children.children.inner_text
 end
