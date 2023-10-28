@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -49,7 +49,8 @@
  2016,9/24,180,24,松江テルサ
  2017,10/14,113,19,松江テルサ
  2018,11/23,100,19,松江テルサ
- 2019,9/28,,19,松江テルサ
+ 2019,9/28,150,19,松江テルサ
+ 2023,10/28,,,松江テルサ
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,6 +62,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 191,OSC2023島根,http://www.re.soum.co.jp/~jun/OSC2023shimane.pdf
  147,OSC2019島根,http://www.re.soum.co.jp/~jun/OSC2019shimane.pdf
  135,OSC2018島根,http://www.re.soum.co.jp/~jun/OSC2018shimane.pdf
  115,OSC2017島根,http://www.re.soum.co.jp/~jun/OSC2017shimane.pdf
@@ -78,7 +80,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2019島根 NetBSDブース展示の記録,https://togetter.com/li/
+ OSC2023島根 NetBSDブース展示の記録,https://togetter.com/li/2247549
+ OSC2019島根 NetBSDブース展示の記録,https://togetter.com/li/1409871
  OSC2018島根 NetBSDブース展示の記録,https://togetter.com/li/1291113
  OSC2017島根 NetBSDブース展示の記録,https://togetter.com/li/1160781
  OSC2016島根 NetBSDブース展示の記録,https://togetter.com/li/1028314
@@ -98,7 +101,9 @@ togetterまとめ
 .. csv-table::
  :widths: 30 25 60
 
- LOVE YOUR NEIGHBOR,売布神社前,クラフトビールとハンバーガー。11:30-14:30 18:30-1:00
+ CRAFT BEER PARADISE,朝日町,平日18:30 土日15:30-
+ 島根県立石見美術館,益田,内藤廣展
+ LOVE YOUR NEIGHBOR,売布神社前,クラフトビールとハンバーガー。臨時休業中?
  S-PARK,松江駅,ビアへるん+島根日本酒全種類　十旭日(じゅうじあさひ)
  松江地ビール館,遊覧船発着場,ビアへるん。1730までだからすぐ行く。
  石見麦酒,江津市,地ビールブルワリー。松江駅で松江茶ビール。札幌さいとさんの店。
@@ -200,6 +205,50 @@ OSC松江展示物
 #. SONY NEWS
 #. OMRON LUNAII
 #. Sun Java Station
+
+2019年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2019/09/27/DSC_7694.JPG
+.. image::  ../Picture/2019/09/27/DSC_7695.JPG
+.. image::  ../Picture/2019/09/27/DSC_7696.JPG
+.. image::  ../Picture/2019/09/27/DSC_7699.JPG
+.. image::  ../Picture/2019/09/27/DSC_7700.JPG
+.. image::  ../Picture/2019/09/27/DSC_7701.JPG
+.. image::  ../Picture/2019/09/27/DSC_7702.JPG
+.. image::  ../Picture/2019/09/27/DSC_7704.JPG
+.. image::  ../Picture/2019/09/27/DSC_7705.JPG
+.. image::  ../Picture/2019/09/27/DSC_7710.JPG
+.. image::  ../Picture/2019/09/27/DSC_7711.JPG
+.. image::  ../Picture/2019/09/28/DSC_7713.JPG
+.. image::  ../Picture/2019/09/28/DSC_7714.JPG
+.. image::  ../Picture/2019/09/28/DSC_7715.JPG
+.. image::  ../Picture/2019/09/28/DSC_7716.JPG
+.. image::  ../Picture/2019/09/28/DSC_7717.JPG
+.. image::  ../Picture/2019/09/28/DSC_7718.JPG
+.. image::  ../Picture/2019/09/28/DSC_7719.JPG
+.. image::  ../Picture/2019/09/28/DSC_7727.JPG
+.. image::  ../Picture/2019/09/28/DSC_7728.JPG
+.. image::  ../Picture/2019/09/28/DSC_7729.JPG
+.. image::  ../Picture/2019/09/28/DSC_7730.JPG
+.. image::  ../Picture/2019/09/28/DSC_7731.JPG
+.. image::  ../Picture/2019/09/28/DSC_7735.JPG
+.. image::  ../Picture/2019/09/28/DSC_7737.JPG
+.. image::  ../Picture/2019/09/28/DSC_7738.JPG
+.. image::  ../Picture/2019/09/28/DSC_7739.JPG
+.. image::  ../Picture/2019/09/28/DSC_7742.JPG
+.. image::  ../Picture/2019/09/28/DSC_7744.JPG
+.. image::  ../Picture/2019/09/28/DSC_7745.JPG
+.. image::  ../Picture/2019/09/28/DSC_7746.JPG
+.. image::  ../Picture/2019/09/28/DSC_7747.JPG
+.. image::  ../Picture/2019/09/28/DSC_7748.JPG
+.. image::  ../Picture/2019/09/28/DSC_7749.JPG
+.. image::  ../Picture/2019/09/28/DSC_7750.JPG
+.. image::  ../Picture/2019/09/28/DSC_7751.JPG
+.. image::  ../Picture/2019/09/28/DSC_7752.JPG
+.. image::  ../Picture/2019/09/28/DSC_7753.JPG
+.. image::  ../Picture/2019/09/28/DSC_7754.JPG
+
 
 2018年
 ~~~~~~~~~~~~~~~~~~
