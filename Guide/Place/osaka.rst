@@ -110,7 +110,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
- KOFの20年とBSDユーザーグループの20年／中野秀男氏, https://www.k-of.jp/2022/session/nakano-ebijun-talk/
+ KOFの20年とBSDユーザーグループの20年／中野秀男氏,KOF2022, https://www.k-of.jp/2022/session/nakano-ebijun-talk/
  37年前の Sun 3/60 のために最新のNetBSDと最新のX.orgをメンテする話,KOF2022, https://speakerdeck.com/tsutsui/kof2022
  お歳暮でSun3が送られてきたので,OSC2020大阪,https://speakerdeck.com/tsutsui/osc2020osaka
  Fixing NetBSD/zaurus 8.1,KOF2019,https://speakerdeck.com/tsutsui/kof2019-netbsd

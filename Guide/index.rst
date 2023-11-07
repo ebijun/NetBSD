@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/shimane
+ Place/osaka
  RPI/RPIupdate2023
  RPI
  Luna
