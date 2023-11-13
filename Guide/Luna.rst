@@ -674,7 +674,8 @@ LUNA年表　- 月の刃
  2023/1,井,nono-0.5.0リリース [188]_
  2023/2,井,nono-0.5.1リリース [189]_
  2023/2,青,LUNA88K Boot 0.8 [190]_ 
- 
+ 2023/11,井,nonoの話 [191]_
+
 最近のLUNA
 ----------------
 
@@ -930,6 +931,7 @@ yaft X LUNA
 .. [188] https://twitter.com/isaki68k/status/1618215457722617856
 .. [189] https://twitter.com/isaki68k/status/1624651445684563968
 .. [190] https://twitter.com/ao_kenji/status/1625846099394330625
+.. [191] http://www.pastel-flower.jp/~isaki/NetBSD/osc23hi/
 
 このページ
 ~~~~~~~~~~~

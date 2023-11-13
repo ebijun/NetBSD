@@ -62,7 +62,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
- 193,OSC2023広島,http://www.re.soum.co.jp/~jun/OSC2022hiroshima.pdf
+ 193,OSC2023広島,http://www.re.soum.co.jp/~jun/OSC2023hiroshima.pdf
  180,OSC2022広島,http://www.re.soum.co.jp/~jun/OSC2022hiroshima.pdf
  159,OSC2021広島,http://www.re.soum.co.jp/~jun/OSC2021hiroshima.pdf
  158,OSC2020広島,http://www.re.soum.co.jp/~jun/OSC2020hiroshima.pdf
@@ -118,6 +118,8 @@ OSC広島発表
  響け!…ない NetBSD,OSC2017広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc17hi/
  響け!…ない NetBSD 近くないフィナーレ,OSC2018広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc18hi/
  響け! NetBSD 〜AUDIO2へようこそ〜,OSC2019広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc19hi/
+ SONY NEWS NetBSD移植作業とNWS-3260展示,OSC2023広島,https://speakerdeck.com/tsutsui/kof2023
+ nonoの話,OSC2023広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc23hi/
 
 よく行く店
 ~~~~~~~~~~~~~~
