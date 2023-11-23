@@ -1,27 +1,27 @@
-VERSION: :1,$s/2023-10-19/2023-10-19/g
-ISO:     :1,$s/202310181610Z/202310181610Z/g
+VERSION: :1,$s/2023-11-24/2023-11-24/g
+ISO:     :1,$s/202311230800Z/202311230800Z/g
 NetBSD:  :1,$s/10.99.10/10.99.10/g
-PKGSRC:  :1,$s/2023-10-19/2023-10-19/g
+PKGSRC:  :1,$s/2023-11-24/2023-11-24/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
-Subject: 2023-10-19-netbsd-armv7-earmv7hf.img
+Subject: 2023-11-24-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2023-10-19-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2023-11-24-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2023-10-19-earmv7hf/2023-10-19-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2023-10-19-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2023-11-24-earmv7hf/2023-11-24-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2023-11-24-earmv7hf/MD5
 
 Update:
-- NetBSD 10.99.10 evbarm-armv7hf 202310181610Z armv7.img from nyftp.
+- NetBSD 10.99.10 evbarm-armv7hf 202311230800Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 - Firmware:
 # git log HEAD |head
-#commit 7f14c6192dd536392efbad2280e990285447591a
+#commit 8972935fd0c01940bb5fe0004402f554e71ce2e2 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Thu Oct 12 15:39:53 2023 +0100
+#Date:   Tue Nov 21 16:12:52 2023 +0000
 
 - fix PR57565
  https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57565
@@ -29,14 +29,26 @@ Update:
   ARFLAGS=?=rl to ARFLAGS=?=r
 
 sysinfo:
- dhcpcd-10.0.3 ftpd-20230930 NetBSD-10.99.10 sh-20220122-20231018131034Z
- userland-NetBSD-10.99.10/evbarm
+ dhcpcd-10.0.4 libssh-45.1 openssh-9.5 opensshd-9.5 openssl-3.0.12
+ sh-20220122-20231122174835Z
 
 pkgsrc:
- curl-8.4.0 mbedtls-2.28.3nb1 nghttp2-1.57.0 py311-cElementTree-3.11.6
- py311-expat-3.11.6nb1 python311-3.11.6 qt5-qtbase-5.15.11
- qt5-qtx11extras-5.15.11 qt5-qtxmlpatterns-5.15.11 sayaka-3.7.1 tiff-4.6.0
- vlgothic-ttf-20230918 wslay-1.1.1
+ bash-5.2.21 cairo-1.18.0 curl-8.4.0nb1 dillo-3.0.5nb14 fltk-1.3.8nb3
+ fontconfig-2.14.2nb3 fossil-2.22nb2 freetype2-2.13.2nb1 gd-2.3.3nb12
+ gdk-pixbuf2-2.42.10nb4 giflib-5.2.1nb6 git-base-2.42.1nb1 glib2-2.78.1nb1
+ gnutls-3.8.2 gobject-introspection-1.78.1nb1 graphite2-1.3.14nb3
+ gtk2+-2.24.33nb16 gtk3+-3.24.38nb6 harfbuzz-8.3.0 icu-74.1 libXft-2.3.8nb1
+ libcups-2.4.6nb4 libgcrypt-1.10.3 libotf-0.9.16nb4 libpaper-2.1.2
+ libwebp-1.3.2nb1 libxkbcommon-1.6.0nb1 libxml2-2.10.4nb4 libxslt-1.1.38nb2
+ m17n-lib-1.8.0nb15 medit-1.2.0nb29 mlterm-3.9.3nb6 nghttp2-1.58.0nb1
+ p11-kit-0.25.3 pango-1.50.14nb3 pkg_chk-2.0.12 pkgin-23.8.1nb2
+ python311-3.11.6nb4 qt5-qtbase-5.15.11nb5 qt5-qtx11extras-5.15.11nb3
+ qt5-qtxmlpatterns-5.15.11nb3 readline-8.2nb2 ruby31-base-3.1.4nb2
+ ruby31-cairo-1.17.12nb2 ruby31-cairo-gobject-4.2.0nb2 ruby31-gdk3-4.2.0nb3
+ ruby31-gdk_pixbuf2-4.2.0nb1 ruby31-gtk3-4.2.0nb3 ruby31-mikutter-5.0.5nb4
+ ruby31-mini_portile2-2.8.5 ruby31-nokogiri-1.15.5 ruby31-pango-4.2.0nb2
+ ruby31-public_suffix-5.0.4 sayaka-3.7.2 shared-mime-info-2.2nb4 sudo-1.9.15p2
+ uim-1.8.9nb8 wayland-1.21.0nb3 wget-1.21.4nb2
 
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2023/
