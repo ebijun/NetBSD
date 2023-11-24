@@ -5,7 +5,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.10 (RPI2) #0: Tue Oct 17 19:33:16 UTC 2023
+NetBSD 10.99.10 (RPI2) #0: Wed Nov 22 03:52:58 UTC 2023
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -128,11 +128,11 @@ uhub1: 4 ports with 3 removable, self powered
 uhub2 at uhub1 port 1: vendor 0424 (0x0424) product 2514 (0x2514), class 9/0, rev 2.00/b.b3, addr 3
 uhub2: multiple transaction translators
 uhub2: 3 ports with 2 removable, self powered
-uhidev0 at uhub1 port 2 configuration 1 interface 0
+uhidev0 at uhub2 port 3 configuration 1 interface 0
 uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 4, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub1 port 2 configuration 1 interface 1
+uhidev1 at uhub2 port 3 configuration 1 interface 1
 uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 4, iclass 3/1
 uhidev1: 6 report ids
 uhid0 at uhidev1 reportid 1: input=7, output=0, feature=0
@@ -141,15 +141,9 @@ uhid2 at uhidev1 reportid 3: input=1, output=0, feature=0
 uhid3 at uhidev1 reportid 4: input=1, output=0, feature=0
 uhid4 at uhidev1 reportid 5: input=2, output=0, feature=0
 uhid5 at uhidev1 reportid 6: input=0, output=0, feature=7
-umass0 at uhub1 port 3 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 5
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
 uhub0: autoconfiguration error: illegal enable change, port 1
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 465 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
 mue0 at uhub2 port 1
-mue0: vendor 0424 (0x0424) product 7800 (0x7800), rev 2.10/3.00, addr 6
+mue0: vendor 0424 (0x0424) product 7800 (0x7800), rev 2.10/3.00, addr 5
 mue0: LAN7800 id 0x7800 rev 0x2
 ukphy0 at mue0 phy 1: OUI 0x00800f, model 0x0013, rev. 2
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
@@ -185,6 +179,12 @@ bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
 bwfm0: Found NVRAM file: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
 bwfm0: CLM file default:    brcmfmac43455-sdio.clm_blob
 bwfm0: CLM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.clm_blob
+umass0 at uhub2 port 2 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 6
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 465 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
 bwfm0: CHIPACTIVE
 bwfm0: address b8:27:eb:68:25:1a
 bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
