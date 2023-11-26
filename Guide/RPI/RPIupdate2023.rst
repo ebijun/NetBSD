@@ -47,6 +47,7 @@ RaspberryPIのNetBSDイメージについて
  2023/8/26,10.99.7,5.0.5,,,,ODC,http://mail-index.netbsd.org/port-arm/2023/08/23/msg008364.html
  2023/9/30,10.99.9,,,,certctl,OSC東京,http://mail-index.netbsd.org/port-arm/2023/09/28/msg008405.html
  2023/10/19,10.99.10,,,,misskey.io,OSC島根,http://mail-index.netbsd.org/port-arm/2023/10/19/msg008416.html
+ 2023/11/25,10.99.10,5.0.5nb4,3.9/3nb3,3.0.12,OpenSSH9.5,OSC長岡,http://mail-index.netbsd.org/port-arm/2023/11/24/msg008433.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
@@ -87,8 +88,8 @@ NetBSDのftpサイトはCDN対応のところからダウンロードできる�
 
 OSCでやっているデモ
 ------------------------
-RaspberryPIっぽいなにかということで、omxplayerを使ってcrontabで動画を流すデモと、XM6iで
-NetBSD/x68kを動かすデモをやっていました。
+RaspberryPIっぽいなにかということで、omxplayerを使って動画を流すデモと、nonoで
+NetBSD/x68k,OpenBSD/luna88k,NetBSD/luna68kを動かすデモをやっています。
 
 
 security.pax.mprotect.enabled
