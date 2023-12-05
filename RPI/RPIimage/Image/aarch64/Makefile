@@ -7,7 +7,7 @@ FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2023/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202311220910Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202312031440Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img.gz
 #RPI=${BINARY}/gzimg/arm64mbr.img.gz
@@ -20,9 +20,9 @@ UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 
 #Firmware:
 #git show HEAD |head
-#commit 8972935fd0c01940bb5fe0004402f554e71ce2e2 (HEAD -> master, origin/master, origin/HEAD)
+#commit 5ffb2e29c0e14dede001447a6977e126e950cf3e (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Tue Nov 21 16:12:52 2023 +0000
+#Date:   Wed Nov 29 14:33:09 2023 +0000
 
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 

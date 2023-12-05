@@ -1,5 +1,5 @@
 MNT=/mnt
-dd if=/dev/rsd0d of=back.img bs=4096 count=709632 progress=4000
+dd if=/dev/rsd0d of=back.img bs=4096 count=709632 progress=9000
 
 DIR=tmp`date +%Y%m%d-%H%M`
 mkdir $DIR
