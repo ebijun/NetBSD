@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/niigata
+ Place/fukuoka
  RPI/RPIupdate2023
  RPI
  Luna
