@@ -1,0 +1,291 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+    2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+    2024
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 10.0_RC2 (GENERIC) #0: Mon Jan  1 14:04:52 UTC 2024
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+total memory = 16315 MB
+avail memory = 15757 MB
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+efi: systbl at pa a4d57f18
+mainbus0 (root)
+ACPI: RSDP 0x00000000A52FE014 000024 (v02 TOSHIB)
+ACPI: XSDT 0x00000000A52B6188 0000FC (v01 TOSHIB A009F    20170310      01000013)
+ACPI: FACP 0x00000000A52F2000 0000F4 (v05 TOSHIB A009F    20170310 MSFT 0000005F)
+ACPI: DSDT 0x00000000A52C1000 02AEC5 (v02 TOSHIB A009F    20170310 INTL 20141107)
+ACPI: FACS 0x00000000A5270000 000040
+ACPI: TCPA 0x00000000A52FC000 000032 (v02 INTEL  EDK2     00000002      01000013)
+ACPI: SSDT 0x00000000A52FB000 0003A7 (v02 INTEL  Tpm2Tabl 00001000 INTL 20141107)
+ACPI: TPM2 0x00000000A52FA000 000034 (v03 INTEL  EDK2     00000002      01000013)
+ACPI: UEFI 0x00000000A5287000 000042 (v01 INTEL  EDK2     00000002      01000013)
+ACPI: SSDT 0x00000000A52F4000 005548 (v02 SaSsdt SaSsdt   00003000 INTL 20141107)
+ACPI: SSDT 0x00000000A52F3000 0005C5 (v02 Intel  PerfTune 00001000 INTL 20141107)
+ACPI: HPET 0x00000000A52F1000 000038 (v01 TOSHIB A009F    20170310 MSFT 0000005F)
+ACPI: LPIT 0x00000000A52F0000 000094 (v01 TOSHIB A009F    20170310 MSFT 0000005F)
+ACPI: APIC 0x00000000A52EF000 0000BC (v03 TOSHIB A009F    20170310 MSFT 0000005F)
+ACPI: MCFG 0x00000000A52EE000 00003C (v01 TOSHIB A009F    20170310 MSFT 0000005F)
+ACPI: MSDM 0x00000000A52ED000 000055 (v03 TOSHIB A009F    20170310 MSFT 0000005F)
+ACPI: SLIC 0x00000000A52EC000 000176 (v01 TOSHIB A009F    20170310 MSFT 0000005F)
+ACPI: SSDT 0x00000000A52C0000 000248 (v02 TOSHIB sensrhub 00000000 INTL 20141107)
+ACPI: SSDT 0x00000000A52BF000 0002D4 (v01 TOSHIB EInkApp  00000000 INTL 20141107)
+ACPI: SSDT 0x00000000A52BC000 002BAE (v02 TOSHIB PtidDevc 00001000 INTL 20141107)
+ACPI: SSDT 0x00000000A52BB000 0001D2 (v02 TOSHIB Sata0Ide 00001000 INTL 20141107)
+ACPI: SSDT 0x00000000A52BA000 000B49 (v02 TOSHIB UsbCTabl 00001000 INTL 20141107)
+ACPI: DBGP 0x00000000A52B9000 000034 (v01 INTEL           00000000 MSFT 0000005F)
+ACPI: DBG2 0x00000000A52B8000 000054 (v00 INTEL           00000000 MSFT 0000005F)
+ACPI: SSDT 0x00000000A52B7000 0006C7 (v02 TOSHIB SYSTEM-2 00001000 INTL 20141107)
+ACPI: BOOT 0x00000000A52FD000 000028 (v01 INTEL  TIANO    00000002 MSFT 01000013)
+ACPI: SSDT 0x00000000A52B5000 000E73 (v02 CpuRef CpuSsdt  00003000 INTL 20141107)
+ACPI: DMAR 0x00000000A52B4000 0000A8 (v01 INTEL  SKL      00000001 INTL 00000001)
+ACPI: FPDT 0x00000000A52B3000 000044 (v01 TOSHIB A009F    00000000      00000000)
+ACPI: ASF! 0x00000000A52B2000 0000A5 (v32 INTEL   HCG     00000001 TFSM 000F4240)
+ACPI: BGRT 0x00000000A52B1000 000038 (v01 INTEL  EDK2     00000002      01000013)
+ACPI: 11 ACPI AML tables successfully acquired and loaded
+ioapic0 at mainbus0 apid 2: pa 0xfec00000, version 0x20, 120 pins
+x2APIC available but disabled by DMAR table
+cpu0 at mainbus0 apid 0
+cpu0: Use lfence to serialize rdtsc
+cpu0: CPU base freq 2400000000 Hz
+cpu0: CPU max freq 2800000000 Hz
+cpu0: TSC freq CPUID 2400000000 Hz
+cpu0: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz, id 0x406e3
+cpu0: node 0, package 0, core 0, smt 0
+cpu1 at mainbus0 apid 2
+cpu1: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz, id 0x406e3
+cpu1: node 0, package 0, core 1, smt 0
+cpu2 at mainbus0 apid 1
+cpu2: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz, id 0x406e3
+cpu2: node 0, package 0, core 0, smt 1
+cpu3 at mainbus0 apid 3
+cpu3: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz, id 0x406e3
+cpu3: node 0, package 0, core 1, smt 1
+acpi0 at mainbus0: Intel ACPICA 20221020
+acpi0: X/RSDT: OemId <TOSHIB,A009F   ,20170310>, AslId <    ,01000013>
+acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFC6021C838808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFC5FEE96A6008 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFC5FEE96FA008 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFC5FEE96AC748 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
+acpi0: SCI interrupting at int 9
+acpi0: fixed power button present
+timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 24000000 Hz quality 2000
+acpivga0 at acpi0 (GFX0): ACPI Display Adapter
+acpiout0 at acpivga0 (DD01, 0x0300): ACPI Display Output Device
+acpiout1 at acpivga0 (DD02, 0x0301): ACPI Display Output Device
+acpiout2 at acpivga0 (DD03, 0x0302): ACPI Display Output Device
+acpiout3 at acpivga0 (DD04, 0x0303): ACPI Display Output Device
+acpiout4 at acpivga0 (DD05, 0x0005): ACPI Display Output Device
+acpiout5 at acpivga0 (DD06, 0x0006): ACPI Display Output Device
+acpiout6 at acpivga0 (DD07, 0x0007): ACPI Display Output Device
+acpiout7 at acpivga0 (DD08, 0x0008): ACPI Display Output Device
+acpiout8 at acpivga0 (DD09, 0x0009): ACPI Display Output Device
+acpiout9 at acpivga0 (DD0A, 0x000a): ACPI Display Output Device
+acpiout10 at acpivga0 (DD0B, 0x000b): ACPI Display Output Device
+acpiout11 at acpivga0 (DD0C, 0x000c): ACPI Display Output Device
+acpiout12 at acpivga0 (DD0D, 0x000d): ACPI Display Output Device
+acpiout13 at acpivga0 (DD0E, 0x000e): ACPI Display Output Device
+acpiout14 at acpivga0 (DD0F, 0x000f): ACPI Display Output Device
+acpiout15 at acpivga0 (DD1F, 0x0400): ACPI Display Output Device
+acpiout15: brightness levels: [0-100]
+acpiout16 at acpivga0 (SKC0, 0xca00): ACPI Display Output Device
+acpivga0: connected output devices:
+acpivga0:   0x0400 (acpiout15): Unknown Output Device, head 0
+FWHD (INT0800) at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
+lpt0 at acpi0 (PEC2, PNP0401-2): io 0xffff-0x10006,0x3ff-0x406 irq 15
+lpt0: autoconfiguration error: can't map i/o space
+pckbc1 at acpi0 (PS2K, MSFT0001) (kbd port): io 0x60,0x64 irq 1
+pckbc2 at acpi0 (PS2M, TOS020C) (aux port): irq 12
+acpiwmi0 at acpi0 (AMW0, PNP0C14-0): ACPI WMI Interface
+acpiwmibus at acpiwmi0 not configured
+acpiwmi1 at acpi0 (WMTF, PNP0C14-TBFP): ACPI WMI Interface
+acpiwmibus at acpiwmi1 not configured
+PEPD (INT33A1) at acpi0 not configured
+valz0 at acpi0 (VALZ, TOS6208): Toshiba VALZ
+BT (TOS6205) at acpi0 not configured
+acpiacad0 at acpi0 (ADP1, ACPI0003): ACPI AC Adapter
+acpibat0 at acpi0 (BAT1, PNP0C0A-1): ACPI Battery
+acpilid0 at acpi0 (LID, PNP0C0D): ACPI Lid Switch
+acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
+tpm0 at acpi0 (TPM, MSFT0101): mem 0xfed40000-0xfed44fff
+tpm0: device 0x001a15d1 rev 0x10
+acpitz0 at acpi0 (TZ01)
+acpitz0: levels: critical 102.0 C, passive cooling
+ACPI: Enabled 4 GPEs in block 00 to 7F
+pckbd0 at pckbc1 (kbd slot)
+pckbc1: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc1 (aux slot)
+pms0: ALPS PS/2 V7 pointing device
+pckbc1: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: Intel Core 6G Host and DRAM (U) (rev. 0x08)
+i915drmkms0 at pci0 dev 2 function 0: Intel HD Graphics 520 (GT2) (rev. 0x07)
+xhci0 at pci0 dev 20 function 0: Intel 100 Series xHCI (rev. 0x21)
+xhci0: 64-bit DMA
+xhci0: interrupting at msi0 vec 0
+xhci0: xHCI version 1.0
+usb0 at xhci0: USB revision 3.0
+usb1 at xhci0: USB revision 2.0
+Intel 100 Series Thermal (miscellaneous DASP, revision 0x21) at pci0 dev 20 function 2 not configured
+Intel 100 Series MEI (miscellaneous communications, revision 0x21) at pci0 dev 22 function 0 not configured
+ahcisata0 at pci0 dev 23 function 0: Intel 100 Series SATA (AHCI) (rev. 0x21)
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.31, 1 port, 32 slots, CAP 0xc734ff00<PSC,SSC,PMD,SAM,ISS=0x3=Gen3,SCLO,SAL,SALP,SNCQ,S64A>
+ahcisata0: interrupting at msi1 vec 0
+atabus0 at ahcisata0 channel 1
+ppb0 at pci0 dev 28 function 0: Intel 100 Series PCIe (rev. 0xf1)
+ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 8.0GT/s
+ppb0: link is x1 @ 2.5GT/s
+pci1 at ppb0 bus 1
+pci1: i/o space, memory space enabled
+rtsx0 at pci1 dev 0 function 0: Realtek Semiconductor RTS5227 PCI-E Card Reader (rev. 0x01)
+rtsx0: interrupting at msi2 vec 0
+sdmmc0 at rtsx0
+ppb1 at pci0 dev 28 function 2: Intel 100 Series PCIe (rev. 0xf1)
+ppb1: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 8.0GT/s
+ppb1: link is x1 @ 2.5GT/s
+pci2 at ppb1 bus 2
+pci2: i/o space, memory space enabled
+iwm0 at pci2 dev 0 function 0: Intel Dual Band Wireless AC 8260 (rev. 0x3a)
+iwm0: interrupting at msi3 vec 0
+pcib0 at pci0 dev 31 function 0: Intel 100 Series (PCH-U) LPC (rev. 0x21)
+Intel 100 Series PMC (miscellaneous memory, revision 0x21) at pci0 dev 31 function 2 not configured
+hdaudio0 at pci0 dev 31 function 3: HD Audio Controller
+hdaudio0: interrupting at msi4 vec 0
+hdaudio0: HDA ver. 1.0, OSS 9, ISS 7, BSS 0, SDO 1, 64-bit
+hdafg0 at hdaudio0: Realtek product 0255
+hdafg0: DAC00 2ch: Speaker [Built-In]
+hdafg0: DAC01 2ch: HP Out [Jack]
+hdafg0: ADC02 2ch: Mic In [Jack]
+hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: playback, capture, full duplex, independent
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+spkr0 at audio0: PC Speaker (synthesized)
+wsbell at spkr0 not configured
+hdafg1 at hdaudio0: Intel HDMI/DP
+hdafg1: DP00 8ch: Digital Out [Jack]
+hdafg1: 8ch/0ch 48000Hz PCM16*
+audio1 at hdafg1: playback, capture, full duplex, independent
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+spkr1 at audio1: PC Speaker (synthesized)
+wsbell at spkr1 not configured
+ichsmb0 at pci0 dev 31 function 4: Intel 100 Series SMBus (rev. 0x21)
+ichsmb0: interrupting at ioapic0 pin 16
+iic0 at ichsmb0: I2C bus
+tco0 at ichsmb0: TCO (watchdog) timer configured.
+tco0: Min/Max interval 1/367 seconds
+wm0 at pci0 dev 31 function 6, 64-bit DMA: I219 V Ethernet Connection (rev. 0x21)
+wm0: interrupting at msi5 vec 0
+wm0: PCI-Express bus
+wm0: 4096 words FLASH, version 0.13.4
+wm0: Ethernet address ec:21:e5:c8:71:37
+wm0: 0x6a4080<FLASH,PCIE,ASF_FIRM,AMT,WOL,EEE>
+ihphy0 at wm0 phy 2: i217 10/100/1000 media interface, rev. 6
+ihphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+isa0 at pcib0
+pcppi0 at isa0 port 0x61
+spkr2 at pcppi0: PC Speaker
+wsbell at spkr2 not configured
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+acpicpu0: C2: FFH, lat 151 us, pow   200 mW
+acpicpu0: C3: FFH, lat 1034 us, pow   200 mW
+acpicpu0: P0: FFH, lat  10 us, pow 15000 mW, 2301 MHz, turbo boost
+acpicpu0: P1: FFH, lat  10 us, pow 14088 mW, 2300 MHz
+acpicpu0: P2: FFH, lat  10 us, pow 13340 mW, 2200 MHz
+acpicpu0: P3: FFH, lat  10 us, pow 12607 mW, 2100 MHz
+acpicpu0: P4: FFH, lat  10 us, pow 11888 mW, 2000 MHz
+acpicpu0: P5: FFH, lat  10 us, pow 10495 mW, 1800 MHz
+acpicpu0: P6: FFH, lat  10 us, pow  9680 mW, 1700 MHz
+acpicpu0: P7: FFH, lat  10 us, pow  8372 mW, 1500 MHz
+acpicpu0: P8: FFH, lat  10 us, pow  7738 mW, 1400 MHz
+acpicpu0: P9: FFH, lat  10 us, pow  7119 mW, 1300 MHz
+acpicpu0: P10: FFH, lat  10 us, pow  5789 mW, 1100 MHz
+acpicpu0: P11: FFH, lat  10 us, pow  5209 mW, 1000 MHz
+acpicpu0: P12: FFH, lat  10 us, pow  4090 mW,  800 MHz
+acpicpu0: P13: FFH, lat  10 us, pow  3550 mW,  700 MHz
+acpicpu0: P14: FFH, lat  10 us, pow  2386 mW,  500 MHz
+acpicpu0: P15: FFH, lat  10 us, pow  1885 mW,  400 MHz
+acpicpu0: T0: I/O, lat   1 us, pow     0 mW, 100 %
+acpicpu0: T1: I/O, lat   1 us, pow     0 mW,  88 %
+acpicpu0: T2: I/O, lat   1 us, pow     0 mW,  76 %
+acpicpu0: T3: I/O, lat   1 us, pow     0 mW,  64 %
+acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
+acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
+acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
+acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
+coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
+acpicpu1 at cpu1: ACPI CPU
+coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=100
+acpicpu2 at cpu2: ACPI CPU
+acpicpu3 at cpu3: ACPI CPU
+cpu0: CPU base freq 2400000000 Hz
+cpu0: CPU max freq 2800000000 Hz
+cpu0: TSC freq CPUID 2400000000 Hz
+cpu0: TSC freq calibrated 2400002000 Hz
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "TSC" frequency 2400002000 Hz quality 3000
+uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+uhub0: 6 ports with 6 removable, self powered
+uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
+uhub1: 12 ports with 12 removable, self powered
+acpiacad0: AC adapter online.
+tpm0: read 8 bytes, expected 10tpm0: deactivating entropy source
+IPsec: Initialized Security Association Processing.
+ahcisata0 port 1: device present, speed: 6.0Gb/s
+uvideo0 at uhub1 port 6 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb537), rev 2.00/75.10, addr 1
+video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb537), rev 2.00/75.10, addr 1
+wd0 at atabus0 drive 0
+wd0: <EDILOCA EN206 2TB>
+wd0: drive supports 1-sector PIO transfers, LBA48 addressing
+wd0: 1907 GB, 3969045 cyl, 16 head, 63 sec, 512 bytes/sect x 4000797360 sectors
+wd0: GPT GUID: b4045b8e-dc1b-4fda-a5eb-250de8c23571
+dk0 at wd0: "b6250e60-2c70-4106-ac98-de007449438a", 262144 blocks at 2048, type: msdos
+dk1 at wd0: "98b0d195-6fc7-4124-92d4-97ddadb7f585", 3967119360 blocks at 264192, type: ffs
+dk2 at wd0: "2dee2ea8-2915-4b93-9828-ae41ff9fffb9", 33413775 blocks at 3967383552, type: swap
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags)
+wd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags)
+swwdog0: software watchdog initialized
+WARNING: 1 error while detecting hardware; check system log.
+boot device: wd0
+root on dk1 dumps on dk2
+root file system type: ffs
+kern.module.path=/stand/amd64/10.0/modules
+[drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[drm] Driver supports precise vblank timestamp query.
+i915drmkms0: interrupting at msi6 vec 0 (i915drmkms0)
+i915drmkms0: notice: Failed to load DMC firmware i915/skl_dmc_ver1_27.bin. Disabling runtime power management.
+[drm] Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
+intelfb0 at i915drmkms0
+[drm] DRM_I915_DEBUG enabled
+[drm] DRM_I915_DEBUG_GEM enabled
+intelfb0: framebuffer at 0xb0040000, size 1920x1080, depth 32, stride 7680
+iwm0: hw rev 0x200, fw ver 22.361476.0, address b4:d5:bd:a4:e7:dc
+wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)
+acpibat0: normal capacity on 'charge state'
+{drm:netbsd:intel_pipe_update_start+0x2ff} *ERROR* Potential atomic update failure on pipe A: -35
