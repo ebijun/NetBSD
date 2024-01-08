@@ -1,13 +1,15 @@
-Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+    2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+    2024
+    The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (GENERIC) #23: Tue Nov  9 10:54:19 JST 2021
-	jun@amir63p.soum.co.jp:/usr/obj.amd64/sys/arch/amd64/compile/GENERIC
+NetBSD 10.0_RC2 (GENERIC) #0: Mon Jan  1 14:04:52 UTC 2024
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 8031 MB
-avail memory = 7755 MB
+avail memory = 7743 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
@@ -33,17 +35,17 @@ cpu0: node 0, package 0, core 0, smt 0
 cpu1 at mainbus0 apid 1
 cpu1: Intel(R) Core(TM)2 Duo CPU     P8700  @ 2.53GHz, id 0x1067a
 cpu1: node 0, package 0, core 1, smt 0
-acpi0 at mainbus0: Intel ACPICA 20210930
+acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <  Sony,    VAIO,20090522>, AslId <MSFT,00010013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC776727A90C8 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0xFFFFE04C82113988 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC776728D5008 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0xFFFFE04B53C18808 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC776727D0B08 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFFE04B53B0FC08 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC776728D9648 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFFE04B53C55388 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -54,11 +56,11 @@ attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
 pckbc1 at acpi0 (PS2K, PNP0303) (kbd port): io 0x60,0x64 irq 1
 pckbc2 at acpi0 (PS2M, SNY9001) (aux port): irq 12
 sony0 at acpi0 (SNC, SNY5001): Sony Miscellaneous Controller
-ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20210930/nsarguments-277)
-ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20210930/nsarguments-277)
-ACPI Error: Aborting method \PHS0 due to previous error (AE_AML_LOOP_TIMEOUT) (20210930/psparse-580)
-ACPI Error: Aborting method \PHS due to previous error (AE_AML_LOOP_TIMEOUT) (20210930/psparse-580)
-ACPI Error: Aborting method \_SB.PCI0.LPCB.SNC.GDDI due to previous error (AE_AML_LOOP_TIMEOUT) (20210930/psparse-580)
+ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20221020/nsarguments-277)
+ACPI Warning: \_SB.PCI0.LPCB.SNC.GSNE: Insufficient arguments - Caller passed 0, method requires 1 (20221020/nsarguments-277)
+ACPI Error: Aborting method \PHS0 due to previous error (AE_AML_LOOP_TIMEOUT) (20221020/psparse-580)
+ACPI Error: Aborting method \PHS due to previous error (AE_AML_LOOP_TIMEOUT) (20221020/psparse-580)
+ACPI Error: Aborting method \_SB.PCI0.LPCB.SNC.GDDI due to previous error (AE_AML_LOOP_TIMEOUT) (20221020/psparse-580)
 acpivga0 at acpi0 (GFX0): ACPI Display Adapter
 acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
 acpiout1 at acpivga0 (DD02, 0x0410): ACPI Display Output Device
@@ -102,14 +104,16 @@ uhci2 at pci0 dev 26 function 2: Intel 82801I USB UHCI Controller (rev. 0x03)
 uhci2: interrupting at ioapic0 pin 19
 usb2 at uhci2: USB revision 1.0
 ehci0 at pci0 dev 26 function 7: Intel 82801I USB EHCI Controller (rev. 0x03)
+ehci0: 64-bit DMA
 ehci0: interrupting at ioapic0 pin 19
 ehci0: EHCI version 1.0
 ehci0: 3 companion controllers, 2 ports each: uhci0 uhci1 uhci2
+ehci0: Using DMA subregion for control data structures
 usb3 at ehci0: USB revision 2.0
 hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
 hdaudio0: interrupting at msi0 vec 0
 hdaudio0: HDA ver. 1.0, OSS 4, ISS 4, BSS 0, SDO 1, 64-bit
-hdafg0 at hdaudio0: vendor 10ec product 0262
+hdafg0 at hdaudio0: Realtek ALC262
 hdafg0: DAC00 2ch: Speaker [Built-In], HP Out [Jack]
 hdafg0: ADC01 2ch: Mic In [Jack] [Built-In]
 hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
@@ -118,9 +122,14 @@ audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
 audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
-hdafg1 at hdaudio0: vendor 8086 product 2802
+hdafg1 at hdaudio0: Intel G45 HDMI/2
 hdafg1: HDMI00 8ch: Digital Out [Jack]
 hdafg1: 8ch/0ch 48000Hz PCM16*
+audio1 at hdafg1: playback, capture, full duplex, independent
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+spkr1 at audio1: PC Speaker (synthesized)
+wsbell at spkr1 not configured
 ppb0 at pci0 dev 28 function 0: Intel 82801I PCI Express Port #1 (rev. 0x03)
 ppb0: PCI Express capability version 1 <Root Port of PCI-E Root Complex> x1 @ 2.5GT/s
 pci1 at ppb0 bus 1
@@ -151,9 +160,11 @@ uhci5 at pci0 dev 29 function 2: Intel 82801I USB UHCI Controller (rev. 0x03)
 uhci5: interrupting at ioapic0 pin 18
 usb6 at uhci5: USB revision 1.0
 ehci1 at pci0 dev 29 function 7: Intel 82801I USB EHCI Controller (rev. 0x03)
+ehci1: 64-bit DMA
 ehci1: interrupting at ioapic0 pin 23
 ehci1: EHCI version 1.0
 ehci1: 3 companion controllers, 2 ports each: uhci3 uhci4 uhci5
+ehci1: Using DMA subregion for control data structures
 usb7 at ehci1: USB revision 2.0
 ppb3 at pci0 dev 30 function 0: Intel 82801BAM Hub-PCI Bridge (rev. 0x93)
 pci4 at ppb3 bus 11
@@ -189,6 +200,12 @@ ichsmb0 at pci0 dev 31 function 3: Intel 82801I SMBus Controller (rev. 0x03)
 ichsmb0: interrupting at ioapic0 pin 19
 iic0 at ichsmb0: I2C bus
 isa0 at ichlpcib0
+pcppi0 at isa0 port 0x61
+spkr2 at pcppi0: PC Speaker
+wsbell at spkr2 not configured
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
 acpicpu0 at cpu0: ACPI CPU
 acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
 acpicpu0: C2: FFH, lat  57 us, pow   100 mW
@@ -203,9 +220,11 @@ acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
 acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
 acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
 acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
-coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=100
+coretemp0 at cpu0: thermal sensor, 1 C resolutioncoretemp0: autoconfiguration error: WARNING: Tjmax(0) might exceeded the limit.
+, Tjmax=0
 acpicpu1 at cpu1: ACPI CPU
-coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=100
+coretemp1 at cpu1: thermal sensor, 1 C resolutioncoretemp1: autoconfiguration error: WARNING: Tjmax(0) might exceeded the limit.
+, Tjmax=0
 fwohci0: BUS reset
 fwohci0: node_id=0xc800ffc0, gen=1, CYCLEMASTER mode
 ieee1394if0: 1 nodes, maxhop <= 0 cable IRM irm(0) (me)
@@ -213,8 +232,6 @@ ieee1394if0: bus manager 0
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 IPsec: Initialized Security Association Processing.
 acpiacad0: AC adapter online.
-aes: Intel SSSE3 vpaes
-chacha: x86 SSE2 ChaCha
 uhub0 at usb0: NetBSD (0x0000) UHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub0: 2 ports with 2 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) UHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
@@ -233,6 +250,8 @@ uhub7 at usb7: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00,
 uhub7: 6 ports with 6 removable, self powered
 ahcisata0 port 0: device present, speed: 1.5Gb/s
 ahcisata0 port 1: device present, speed: 1.5Gb/s
+uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
+video0 at uvideo0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
 wd0 at atabus0 drive 0
 wd0: <TOSHIBA MK5055GSX>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
@@ -243,82 +262,20 @@ atapibus0 at atabus1: 1 targets
 cd0 at atapibus0 drive 0: <HL-DT-ST DVDRAM GT20N, 905HN033373, CS07> cdrom removable
 cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
 cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA)
-uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
-video0 at uvideo0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
-ehci0: handing over low speed device on port 3 to uhci1
+swwdog0: software watchdog initialized
+WARNING: 2 errors while detecting hardware; check system log.
 boot device: wd0
 root on wd0a dumps on wd0b
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.92/modules
-kern info: [drm] Memory usable by graphics device = 512M
-kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
-kern info: [drm] Driver supports precise vblank timestamp query.
-a /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 492: linux_pci_map_rom
-d /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 512: linux_pci_map_rom
-A /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 461: pci_map_rom_md
-B /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 464: pci_map_rom_md
-C /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 467: pci_map_rom_md
-D /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 473: pci_map_rom_md
-e /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 516: linux_pci_map_rom
-f /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 530: linux_pci_map_rom
-g /usr/src/sys/external/bsd/drm2/linux/linux_pci.c: 532: linux_pci_map_rom
-i915drmkms0: interrupting at msi4 vec 0 (i915drmkms0)
+kern.module.path=/stand/amd64/10.0/modules
+[drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[drm] Driver supports precise vblank timestamp query.
+i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
+[drm] Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
 intelfb0 at i915drmkms0
-
-
-
-
-	<key>address</key>
-	<integer>0x0</integer>
-	<key>depth</key>
-	<integer>0x20</integer>
-	<key>device-driver</key>
-	<string>intelfb</string>
-	<key>device-parent</key>
-	<string>i915drmkms0</string>
-	<key>device-unit</key>
-	<integer>0x0</integer>
-	<key>height</key>
-	<integer>0x300</integer>
-	<key>interface-attributes</key>
-	<array>
-		<dict>
-			<key>attribute-name</key>
-			<string>wsemuldisplaydev</string>
-			<key>locators</key>
-			<array>
-				<dict>
-					<key>default</key>
-					<string>-1</string>
-					<key>loc-name</key>
-					<string>console</string>
-				</dict>
-				<dict>
-					<key>default</key>
-					<string>1</string>
-					<key>loc-name</key>
-					<string>kbdmux</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>attribute-name</key>
-			<string>intelfbbus</string>
-		</dict>
-	</array>
-	<key>is_console</key>
-	<true/>
-	<key>linebytes</key>
-	<integer>0x1580</integer>
-	<key>mode_callback</key>
-	<integer>0xffffffff8131dfa8</integer>
-	<key>virtual_address</key>
-	<integer>0xffff9c80bec41000</integer>
-	<key>width</key>
-	<integer>0x556</integer>
-
-
-intelfb0: framebuffer at 0xc0046000, size 1366x768, depth 32, stride 5504
+[drm] DRM_I915_DEBUG enabled
+[drm] DRM_I915_DEBUG_GEM enabled
+intelfb0: framebuffer at 0xc0010000, size 1366x768, depth 32, stride 5504
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 ugen0 at uhub1 port 1
