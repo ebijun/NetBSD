@@ -1,0 +1,4 @@
+ls -l /dev/tap
+chmod g+rw /dev/tap
+ifconfig bridge0 create
+brconfig bridge0 add wm0
