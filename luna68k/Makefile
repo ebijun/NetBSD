@@ -69,3 +69,7 @@ dmesg:
 	cp /mnt/root/dmesg ../dmesg/luna68k/nono
 	umount ${MNT}
 	vnconfig -u ${VND0}
+
+replace:
+	@echo cp -p `ls -t liveimage-luna68k-raw-*.img |head -1` "liveimage-luna68k-raw-`date +%Y-%m-%d`.img" 
+
