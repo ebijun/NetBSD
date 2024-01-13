@@ -70,17 +70,23 @@ commit
 
  cvs commit 
 
- nono: update to 0.6.2 .
+ nono: update to 0.6.3 .
 
- 0.6.2 (2023/08/16)
-
- m88k(Fix):"Implement that hardwired BATCs are enable even if the address translation is disabled on m88200."
- m88k(Update):"Improve m88200 BATC/PATC search performance."
- vm(Fix): "Negate PEDEC interrupts when resetting."
- vm(Update):  "Implement multicast filter on Nereid and Lance."
- vm(Update): "Reorganize host file handling on LUNA-I/LUNA-88K internal PROM. It obsoletes --load-only option."
- build(Update): "Search wxWidgets 3.2, 3.0 in order." 
-
+ 0.6.3 (2023/11/30)
+ m68k(New): "Implement an instruction cache. Finally X68030 IPL can display corr
+ect MPU clock speed."                                                           
+ vm(New): "Implement areaset and extended areaset features on X68030."          
+ vm(New): "Implement an option whether to cut FC2 or not on X68030."            
+ vm(New): "Implement a system port monitor on X68030."                          
+ vm(New): "Implement an access status monitor."                          
+ vm(Update): "Restrict memory size to 255MB when using PROM image on LUNA-I."  
+ vm(Update): "Change memory size limit to 512MB on LUNA-I, LUNA-88K and X68030."
+ m68k(Fix): "Fix the problem that an address error while executing bus error han
+dler does not cause double bus fault."                                         
+ vm(Fix): Issue#131 "Correct interrupt levels from XP Processor on LUNA-88K."   
+ GUI(Fix): Issue#133 "Fix the problem that the bitmap plane monitor did not supp
+ort 256-color mode."                                                            
+ build(Fix): "Make util/mkcgrom buildable on OpenBSD."
 doc をcommit します
 ---------------------
  
@@ -89,10 +95,10 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to  0.6.2
+ doc: Updated emulators/nono to  0.6.3
  
  cvs diff -u CHANGES-2023
  
-        Updated emulators/nono to 0.6.2 [jun 2023-08-17]
+        Updated emulators/nono to 0.6.3 [jun 2023-12-10]
 
 
