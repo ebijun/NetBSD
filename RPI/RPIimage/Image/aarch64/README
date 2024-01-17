@@ -58,7 +58,7 @@ bwfm0: autoconfiguration error: NVRAM file not available
 - pkgin support
   edit /usr/pkg/etc/pkgin/repositories.conf
   cf.
-  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2023
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2024
   and pkgin update
 
 sysinfo:
@@ -142,7 +142,7 @@ Pre-installed packages:
 
 - pre-build packages:
   See /etc/pkg_install.conf
-  PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2023/
+  PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2024/
 
 pkgsrc: 
   # cd /usr
