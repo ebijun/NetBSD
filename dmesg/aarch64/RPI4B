@@ -1,11 +1,12 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
     2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
-    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+    2024
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.10 (GENERIC64) #0: Sun Dec  3 14:35:54 UTC 2023
+NetBSD 10.99.10 (GENERIC64) #0: Sun Jan 14 10:38:47 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 8024 MB
 avail memory = 7735 MB
@@ -142,7 +143,7 @@ IPsec: Initialized Security Association Processing.
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SA32G:0x69:0x2ac4fcd0:0x157>
 ld1: 29544 MB, 7503 cyl, 128 head, 63 sec, 512 bytes/sect x 60506112 sectors
-ld1: GPT GUID: 3a901111-d2d9-4d00-bac0-57283d1c2742
+ld1: GPT GUID: 42a5d47f-4400-4d05-bb69-7808a0ac84be
 dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 5586850 blocks at 90203, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -151,7 +152,7 @@ sdmmc0: SDIO function
 bwfm0 at sdmmc0 function 1
 (manufacturer 0x2d0, product 0xa9a6) at sdmmc0 function 2 not configured
 (manufacturer 0x2d0, product 0xa9a6, standard function interface code 0x2) at sdmmc0 function 3 not configured
-umass0 at uhub0 port 1 configuration 1 interface 0
+umass0 at uhub0 port 2 configuration 1 interface 0
 umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 1
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
@@ -161,38 +162,34 @@ uhub2: single transaction translator
 sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 uhub2: 4 ports with 4 removable, self powered
 uhidev0 at uhub2 port 4 configuration 1 interface 0
-uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
+uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
 uhidev1 at uhub2 port 4 configuration 1 interface 1
-uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
-uhidev1: 6 report ids
-uhid0 at uhidev1 reportid 1: input=7, output=0, feature=0
-uhid1 at uhidev1 reportid 2: input=7, output=0, feature=0
-uhid2 at uhidev1 reportid 3: input=1, output=0, feature=0
-uhid3 at uhidev1 reportid 4: input=1, output=0, feature=0
-uhid4 at uhidev1 reportid 5: input=2, output=0, feature=0
-uhid5 at uhidev1 reportid 6: input=0, output=0, feature=7
+uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/0
+uhidev1: 2 report ids
+uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
+uhid1 at uhidev1 reportid 2: input=3, output=0, feature=0
 swwdog0: software watchdog initialized
 boot device: dk1
 root on dk1
 root file system type: ffs
 kern.module.path=/stand/evbarm/10.99.10/modules
-WARNING: clock lost 182 days
+WARNING: clock lost 225 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc002674e0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc002674e7000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
 vchiq: vchiq_initialise: videocore initialized after 1 retries
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.bin
-bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 audio0 at vcaudio0: playback
 audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for playback
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
+bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
 bwfm0: NVRAM file default:    brcmfmac43455-sdio.txt
 bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt
 bwfm0: Found NVRAM file: brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt
