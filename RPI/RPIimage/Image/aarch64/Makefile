@@ -5,9 +5,9 @@ ARCH=aarch64
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2023/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2024/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202312031440Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202401141100Z/evbarm-aarch64/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img.gz
 #RPI=${BINARY}/gzimg/arm64mbr.img.gz
@@ -20,9 +20,12 @@ UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 
 #Firmware:
 #git show HEAD |head
-#commit 5ffb2e29c0e14dede001447a6977e126e950cf3e (HEAD -> master, origin/master, origin/HEAD)
+#commit 0968de28716a9b1f106b8492646d0ed0a2800152 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Wed Nov 29 14:33:09 2023 +0000
+#Date:   Thu Jan 11 16:27:38 2024 +0000
+#
+#    kernel: Bump to 6.1.72
+
 
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
@@ -78,8 +81,6 @@ release:
 	#ls -l ${MNT_ROOT}/var/db/entropy-file
 	# RPI4 symbolic link 
 	(cd ${MNT_ROOT}/libdata/firmware/if_bwfm/;ln -s brcmfmac43455-sdio.raspberrypi,4-model-b.txt "brcmfmac43455-sdio.Raspberry Pi 4 Model B.txt")
-	# PR57565 - fix ar
-	(patch -d ${MNT_ROOT}/usr/share/mk < Patch/57565/usr/share/mk/sys.mk.patch )
 	umount ${MNT_ROOT}
 	vnconfig -u ${VND}
 
