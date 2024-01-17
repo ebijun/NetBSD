@@ -107,4 +107,3 @@ doc をcommit します。
  
         Updated emulators/nono to 0.6.4 [jun 2024-01-08]
 
-
