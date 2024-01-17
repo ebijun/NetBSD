@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2022-3 Jun Ebihara All rights reserved.
+ Copyright (c) 2022-4 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.6.2
+ DISTNAME=       nono-0.6.4
 
 チェックサム作成
 ------------------
@@ -41,8 +41,10 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
- -rw-r--r--  1 root  wheel  1163 Aug 17 20:25 Makefile
- -rw-r--r--  1 root  wheel   558 Aug 17 20:25 distinfo
+ -rw-r--r--  1 jun  wheel  1163 Jan  8 11:33 Makefile
+ -rw-r--r--  1 jun  wheel   558 Jan  8 11:33 distinfo
+
+
 
 make package して動作を確認します。
  
@@ -70,16 +72,26 @@ commit
 
  cvs commit 
 
- nono: update to 0.6.2 .
+ nono: update to 0.6.4. 
 
- 0.6.2 (2023/08/16)
-
- m88k(Fix):"Implement that hardwired BATCs are enable even if the address translation is disabled on m88200."
- m88k(Update):"Improve m88200 BATC/PATC search performance."
- vm(Fix): "Negate PEDEC interrupts when resetting."
- vm(Update):  "Implement multicast filter on Nereid and Lance."
- vm(Update): "Reorganize host file handling on LUNA-I/LUNA-88K internal PROM. It obsoletes --load-only option."
- build(Update): "Search wxWidgets 3.2, 3.0 in order." 
+ 0.6.4 (2023/12/28)
+ 
+ vm(New): "Implement a Windrv compatible device on X68030. You can access a host d
+ irectory via the device on Human68k."
+ vm(New): "Implement a contrast feature on X68030."
+ vm(Update): "Implement that writing to the SPC is made to wait if the internal qu
+ eue is full. You can write a SCSI media on Human68k."
+ vm(Update): "DMAC now uses FC (Function Code) to access on X68030."
+ vm(Update): "Connect the host's [PageUp], [PageDown] and [End] key to guest's [ROLL UP], [ROLL DOWN] and [UNDO] key respectively on X68030. "
+ vm(Fix): "Fix the problem that SCC, FDC, SPC and Nereid are not reset correctly on X68030."
+ vm(Fix): "Fix a CIIN condition on X68030."
+ vm(Fix): "Fix $ED0000..$EDFFFF was user-accessible on X68030."
+ vm(Fix): "Fix timing that mouse sends its data on X68030. It should not affect anything."
+ GUI(New): "Rearrange menus. A part of "Device > Operation" and old "File" menus are integrated into"VM"."
+ GUI(New): "Add "Send CTRL+OPT.1+DEL" menu on X68030."
+ GUI(Fix): "Fix an abnormal termination when open the loglevel setting window since 0.6.3."
+ debugger(Fix): "Fix an abnormal termination when the argument of command line option -b cannot be parsed as a hexadecimal number."
+ debugger(New): "--bi-exg option."
 
 doc をcommit します
 ---------------------
@@ -89,10 +101,10 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to  0.6.2
+ doc: Updated emulators/nono to  0.6.4
  
- cvs diff -u CHANGES-2023
+ cvs diff -u CHANGES-2024
  
-        Updated emulators/nono to 0.6.2 [jun 2023-08-17]
+        Updated emulators/nono to 0.6.4 [jun 2024-01-08]
 
 
