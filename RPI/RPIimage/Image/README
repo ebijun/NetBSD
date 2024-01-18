@@ -1,31 +1,28 @@
-VERSION: :1,$s/2023-12-05/2023-12-05/g
-ISO:     :1,$s/202312041140Z/202312041140Z/g
+VERSION: :1,$s/2024-01-18/2024-01-18/g
+ISO:     :1,$s/202401170410Z/202401170410Z/g
 NetBSD:  :1,$s/10.99.10/10.99.10/g
-PKGSRC:  :1,$s/2023-12-05/2022/
+PKGSRC:  :1,$s/2024-01-18/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2023-12-05-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2024-01-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2023-12-05-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2024-01-18-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-12-05-earmv6hf/2023-12-05-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-12-05-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-01-18-earmv6hf/2024-01-18-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-01-18-earmv6hf/MD5
 
 Update:
-- NetBSD 10.99.10 evbarm-earmv6hf 202312041140Z rpi.img from nyftp.
+- NetBSD 10.99.10 evbarm-earmv6hf 202401170410Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
   # mlterm-wscons
   # sayaka --local misskey.io 
-- fix PR57565
- https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57565
- /usr/share/mk/sys.mk
-  ARFLAGS=?=rl to ARFLAGS=?=r
 - rust build failed in earmv6hf
   rust-1.66.1 works.
+  rust-bin-1.73.0nb1 is ok.
 - armv6 on QEMU (was Re: armv6 support for rust)
   http://mail-index.netbsd.org/tech-pkg/2022/10/21/msg026888.html
 - armv6 support for rust?
@@ -79,14 +76,16 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- sh-20220122-20231204014929Z
+ dhcpcd-10.0.6 libssh-46.1 openssh-9.6 opensshd-9.6 sh-20220122-20240116210852Z
+ tzdata-2023dgtz
 
 pkgsrc:
- bash-5.2.21nb1 giflib-5.2.1nb6 git-base-2.43.0 gobject-introspection-1.78.1nb2
- harfbuzz-8.3.0 libgcrypt-1.10.3 libotf-0.9.16nb4 libxkbcommon-1.6.0nb1
- libxslt-1.1.38nb2 m17n-lib-1.8.0nb15 mozilla-rootcerts-1.0.20231115
- p11-kit-0.25.3 ruby31-base-3.1.4nb2 ruby31-mini_portile2-2.8.5
- ruby31-public_suffix-5.0.4 wayland-1.21.0nb3
+ bash-5.2.26 cairo-1.18.0nb1 curl-8.5.0 dillo-3.0.5nb14 fltk-1.3.8nb3
+ fontconfig-2.15.0 fossil-2.23 icu-74.2 libgpg-error-1.47nb1 libpsl-0.21.5
+ libxml2-2.10.4nb6 mlterm-3.9.3nb6 perl-5.38.2 pkg_install-20211115nb2
+ pkgin-23.8.1nb3 python311-3.11.7 qt5-qtbase-5.15.12 qt5-qtx11extras-5.15.12
+ qt5-qtxmlpatterns-5.15.12 ruby31-nokogiri-1.15.5 ruby31-pkg-config-1.5.6
+ shared-mime-info-2.4 tiff-4.6.0nb3 wget-1.21.4nb2
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -138,7 +137,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2023-12-05-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-01-18-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -356,11 +355,12 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2023 Fall
+For Open Source Conference 2024 Osaka
 I've updated raspberry-pi image.
 
-    2023 Oct.21 Sat 10:00-16:00 JST (UTC+9)
-    https://event.ospn.jp/osc2023-fall/
+    2024 Jan.25 Sat 10:00-16:00 JST (UTC+9)
+    2024 Jan.25 Sat 10:00-10:50 JST (UTC+9) NetBSD BoF
+    https://event.ospn.jp/osc2024-osaka/
 
 http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
