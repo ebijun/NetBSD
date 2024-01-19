@@ -12,9 +12,9 @@
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202312050520Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202401181020Z/evbarm-earmv7hf/binary
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2023/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2024/
 
 
 KERNELDIR=`grep ^IMAGE= Makefile | awk -F- '{print "RPI."$$5}'|sed -e s/.iso//`
@@ -36,9 +36,11 @@ KERNEL7=${BINARY}/kernel/netbsd-RPI2.gz
 LIST=man modules xbase xcomp xetc xfont xserver 
 
 #Firmware: 
-#commit 5ffb2e29c0e14dede001447a6977e126e950cf3e (HEAD -> master, origin/master, origin/HEAD)
+#commit 0968de28716a9b1f106b8492646d0ed0a2800152 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Wed Nov 29 14:33:09 2023 +0000
+#Date:   Thu Jan 11 16:27:38 2024 +0000
+#    kernel: Bump to 6.1.72
+
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup4.dat fixup4cd.dat fixup4db.dat fixup4x.dat fixup_cd.dat fixup_db.dat fixup_x.dat start.elf start4.elf start4cd.elf start4db.elf start4x.elf start_cd.elf start_db.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -142,8 +144,6 @@ release:
 # earmv7hf: config.txt should contain start address
 #	(cd ../../boot;cp * ${MNT}/boot)
 	echo "PKG_PATH=${PKG_PATH}" >> ${MNT}/etc/pkg_install.conf 
-	# PR57565 - fix ar
-	(patch -d ${MNT}/usr/share/mk < ../../Patch/57565/usr/share/mk/sys.mk.patch )
 	umount ${MNT}/boot
 	umount ${MNT}
 	vnconfig -u ${VND}
