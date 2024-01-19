@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.0_RC2 (GENERIC) #0: Mon Jan  1 14:04:52 UTC 2024
+NetBSD 10.0_RC3 (GENERIC) #0: Tue Jan 16 08:28:51 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16315 MB
 avail memory = 15757 MB
@@ -69,13 +69,13 @@ acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <TOSHIB,A009F   ,20170310>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC6021C838808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
+ACPI: SSDT 0xFFFF9B1724838808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC5FEE96A6008 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
+ACPI: SSDT 0xFFFF9B13F16A6008 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC5FEE96FA008 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
+ACPI: SSDT 0xFFFF9B13F16FA008 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC5FEE96AC748 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
+ACPI: SSDT 0xFFFF9B13F16AC748 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
@@ -288,4 +288,5 @@ wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
 acpibat0: normal capacity on 'charge state'
-{drm:netbsd:intel_pipe_update_start+0x2ff} *ERROR* Potential atomic update failure on pipe A: -35
+tap0: Ethernet address f2:0b:a4:cc:1f:30
+tap0: detached
