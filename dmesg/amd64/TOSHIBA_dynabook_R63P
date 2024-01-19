@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.0_RC2 (GENERIC) #0: Mon Jan  1 14:04:52 UTC 2024
+NetBSD 10.0_RC3 (GENERIC) #0: Tue Jan 16 08:28:51 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16295 MB
 avail memory = 15740 MB
@@ -55,11 +55,11 @@ acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8654ECB42808 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFFB1C70B42808 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8651EEE5F808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFFB1972E5F808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF8651EEE25248 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFFB1972E25248 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900

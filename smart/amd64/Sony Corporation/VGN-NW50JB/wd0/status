@@ -1,0 +1,26 @@
+SMART supported, SMART enabled
+id value thresh crit collect reliability description                 raw
+  1 100   50     yes online  positive    Raw read error rate         0
+  2 100   50     yes offline positive    Throughput performance      0
+  3 100    1     yes online  positive    Spin-up time                1382
+  4 100    0     no  online  positive    Start/stop count            1472
+  5 100   50     yes online  positive    Reallocated sector count    0
+  7 100   50     yes online  positive    Seek error rate             0
+  8 100   50     yes offline positive    Seek time performance       0
+  9   1    0     no  online  positive    Power-on hours count        56062
+ 10 129   30     yes online  positive    Spin retry count            0
+ 12 100    0     no  online  positive    Device power cycle count    1339
+191 100    0     no  online  positive    G-sense error rate          355
+192 100    0     no  online  positive    Power-off retract count     58
+193   1    0     no  online  positive    Load cycle count            2758054
+194 100    0     no  online  positive    Temperature                 37 Lifetime min/max 13/57
+196 100    0     no  online  positive    Reallocated event count     0
+197 100    0     no  online  positive    Current pending sector      0
+198 100    0     no  offline positive    Offline uncorrectable       0
+199 200    0     no  online  positive    Ultra DMA CRC error count   0
+220 100    0     no  online  positive    Disk shift                  8248
+222   1    0     no  online  positive    Loaded hours                48472
+223 100    0     no  online  positive    Load/unload retry count     0
+224 100    0     no  online  positive    Load friction               0
+226 100    0     no  online  positive    Load-in time                364
+240 100    1     yes offline positive    Head flying hours           0

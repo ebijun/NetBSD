@@ -1,36 +1,37 @@
-Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
-    2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
-    2018, 2019, 2020, 2021 The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+    2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+    2024
+    The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 9.99.92 (GENERIC) #0: Mon Oct 25 20:32:38 UTC 2021
+NetBSD 10.0_RC2 (GENERIC) #0: Mon Jan  1 14:04:52 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 3982 MB
-avail memory = 3829 MB
-entropy: entering seed from bootloader with 256 bits of entropy
+avail memory = 3822 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
 efi: systbl at pa b9b4bf18
 mainbus0 (root)
-ACPI: RSDP 0x00000000B9355000 000024 (v02 _ASUS_)
-ACPI: XSDT 0x00000000B9355080 00008C (v01 _ASUS_ Notebook 01072009 AMI  00010013)
-ACPI: FACP 0x00000000B93646E8 00010C (v05 _ASUS_ Notebook 01072009 AMI  00010013)
-Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 128/32 (20210604/tbfadt-640)
-ACPI: DSDT 0x00000000B93551A0 00F543 (v02 _ASUS_ Notebook 01072009 INTL 20120913)
+ACPI: RSDP 0x00000000B93A4000 000024 (v02 _ASUS_)
+ACPI: XSDT 0x00000000B93A4080 00008C (v01 _ASUS_ Notebook 01072009 AMI  00010013)
+ACPI: FACP 0x00000000B93B5EE0 00010C (v05 _ASUS_ Notebook 01072009 AMI  00010013)
+Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 128/32 (20221020/tbfadt-640)
+ACPI: DSDT 0x00000000B93A41A0 011D3A (v02 _ASUS_ Notebook 01072009 INTL 20120913)
 ACPI: FACS 0x00000000B93B9F80 000040
-ACPI: APIC 0x00000000B93647F8 000068 (v03 _ASUS_ Notebook 01072009 AMI  00010013)
-ACPI: FPDT 0x00000000B9364860 000044 (v01 _ASUS_ Notebook 01072009 AMI  00010013)
-ACPI: MCFG 0x00000000B93648A8 00003C (v01 _ASUS_ Notebook 01072009 MSFT 00000097)
-ACPI: LPIT 0x00000000B93648E8 000104 (v01 _ASUS_ Notebook 00000003 VLV2 0100000D)
-ACPI: ECDT 0x00000000B93649F0 0000C1 (v01 _ASUS_ Notebook 01072009 AMI. 00000005)
-ACPI: HPET 0x00000000B9364AB8 000038 (v01 _ASUS_ Notebook 01072009 AMI. 00000005)
-ACPI: SSDT 0x00000000B9364AF0 000763 (v01 PmRef  CpuPm    00003000 INTL 20061109)
-ACPI: SSDT 0x00000000B9365258 000290 (v01 PmRef  Cpu0Tst  00003000 INTL 20061109)
-ACPI: SSDT 0x00000000B93654E8 00017A (v01 PmRef  ApTst    00003000 INTL 20061109)
-ACPI: UEFI 0x00000000B9365668 000042 (v01 _ASUS_ Notebook 00000000      00000000)
-ACPI: BGRT 0x00000000B93656B0 000038 (v00 _ASUS_ Notebook 01072009 AMI  00010013)
+ACPI: APIC 0x00000000B93B5FF0 000068 (v03 _ASUS_ Notebook 01072009 AMI  00010013)
+ACPI: FPDT 0x00000000B93B6058 000044 (v01 _ASUS_ Notebook 01072009 AMI  00010013)
+ACPI: MCFG 0x00000000B93B60A0 00003C (v01 _ASUS_ Notebook 01072009 MSFT 00000097)
+ACPI: LPIT 0x00000000B93B60E0 000104 (v01 _ASUS_ Notebook 00000003 VLV2 0100000D)
+ACPI: ECDT 0x00000000B93B61E8 0000C1 (v01 _ASUS_ Notebook 01072009 AMI. 00000005)
+ACPI: HPET 0x00000000B93B62B0 000038 (v01 _ASUS_ Notebook 01072009 AMI. 00000005)
+ACPI: SSDT 0x00000000B93B62E8 000763 (v01 PmRef  CpuPm    00003000 INTL 20061109)
+ACPI: SSDT 0x00000000B93B6A50 000290 (v01 PmRef  Cpu0Tst  00003000 INTL 20061109)
+ACPI: SSDT 0x00000000B93B6CE0 00017A (v01 PmRef  ApTst    00003000 INTL 20061109)
+ACPI: UEFI 0x00000000B93B6E60 000042 (v01 _ASUS_ Notebook 00000000      00000000)
+ACPI: BGRT 0x00000000B93B6EA8 000038 (v00 _ASUS_ Notebook 01072009 AMI  00010013)
 ACPI: MSDM 0x00000000B8D7AF98 000055 (v03 _ASUS_ Notebook 00000000 ASUS 00000001)
 ACPI: 4 ACPI AML tables successfully acquired and loaded
 ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 87 pins
@@ -41,7 +42,7 @@ cpu0: node 0, package 0, core 0, smt 0
 cpu1 at mainbus0 apid 2
 cpu1: Intel(R) Celeron(R) CPU  N2830  @ 2.16GHz, id 0x30678
 cpu1: node 0, package 0, core 1, smt 0
-acpi0 at mainbus0: Intel ACPICA 20210604
+acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <_ASUS_,Notebook,01072009>, AslId <AMI ,00010013>
 acpi0: autoconfiguration error: failed to look up EC object \_SB.PCI0.LPCB.EC0: AE_NOT_FOUND
 acpi0: autoconfiguration error: invalid PCI address for D011
@@ -49,13 +50,13 @@ acpi0: autoconfiguration error: invalid PCI address for D012
 acpi0: autoconfiguration error: invalid PCI address for D014
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFCA6F742DE008 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFA2289C8DB808 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFCA6F742DE808 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
+ACPI: SSDT 0xFFFFA2289C8DC008 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFCA6FAB75E208 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFA228D379D348 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFCA6F742EE408 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
+ACPI: SSDT 0xFFFFA2289C8ECC48 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -85,6 +86,11 @@ acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
 acpibat0: ACPI 4.0 functionality present
 ADMA (DMA0F28) at acpi0 not configured
 acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
+PEPD (INT3396) at acpi0 not configured
+BTH0 (BCM2E1A) at acpi0 not configured
+GPS0 (BCM4752) at acpi0 not configured
+SHUB (SMO91D0) at acpi0 not configured
+MBID (INT33BD) at acpi0 not configured
 acpiwmi0 at acpi0 (ATKD, PNP0C14-ATK): ACPI WMI Interface
 acpiwmibus at acpiwmi0 not configured
 ASHS (ATK4001) at acpi0 not configured
@@ -108,11 +114,17 @@ ahcisata0: 64-bit DMA
 ahcisata0: AHCI revision 1.30, 2 ports, 32 slots, CAP 0xc720ff01<PSC,SSC,PMD,ISS=0x2=Gen2,SCLO,SAL,SALP,SNCQ,S64A>
 ahcisata0: interrupting at msi0 vec 0
 atabus0 at ahcisata0 channel 0
+xhci0 at pci0 dev 20 function 0: Intel Bay Trail USB xHCI (rev. 0x0e)
+xhci0: 64-bit DMA
+xhci0: interrupting at msi1 vec 0
+xhci0: xHCI version 1.0
+usb0 at xhci0: USB revision 3.0
+usb1 at xhci0: USB revision 2.0
 Intel Bay Trail Trusted Execution Engine (miscellaneous crypto, revision 0x0e) at pci0 dev 26 function 0 not configured
 hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
-hdaudio0: interrupting at msi1 vec 0
+hdaudio0: interrupting at msi2 vec 0
 hdaudio0: HDA ver. 1.0, OSS 4, ISS 4, BSS 0, SDO 1, 64-bit
-hdafg0 at hdaudio0: vendor 10ec product 0233
+hdafg0 at hdaudio0: Realtek product 0233
 hdafg0: DAC00 2ch: Speaker [Built-In]
 hdafg0: DAC01 2ch: HP Out [Jack]
 hdafg0: ADC02 2ch: Mic In [Built-In]
@@ -122,9 +134,14 @@ audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
 audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
-hdafg1 at hdaudio0: vendor 8086 product 2882
+hdafg1 at hdaudio0: Intel product 2882
 hdafg1: DP00 8ch: Digital Out [Jack]
 hdafg1: 8ch/0ch 48000Hz PCM16*
+audio1 at hdafg1: playback, capture, full duplex, independent
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+spkr1 at audio1: PC Speaker (synthesized)
+wsbell at spkr1 not configured
 ppb0 at pci0 dev 28 function 0: Intel Bay Trail PCIe Root Port (rev. 0x0e)
 ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 pci1 at ppb0 bus 1
@@ -135,32 +152,34 @@ ppb1: link is x1 @ 2.5GT/s
 pci2 at ppb1 bus 2
 pci2: i/o space, memory space enabled, rd/line, wr/inv ok
 iwm0 at pci2 dev 0 function 0: Intel Dual Band Wireless AC 7260 (rev. 0x73)
-iwm0: interrupting at msi2 vec 0
+iwm0: interrupting at msi3 vec 0
 ppb2 at pci0 dev 28 function 3: Intel Bay Trail PCIe Root Port (rev. 0x0e)
 ppb2: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
 ppb2: link is x1 @ 2.5GT/s
 pci3 at ppb2 bus 3
 pci3: i/o space, memory space enabled, rd/line, wr/inv ok
 rtsx0 at pci3 dev 0 function 0: Realtek Semiconductor RTL8402 PCI-E Card Reader (rev. 0x01)
-rtsx0: interrupting at msix3 vec 0
+rtsx0: interrupting at msix4 vec 0
 sdmmc0 at rtsx0
 re0 at pci3 dev 0 function 2: RealTek 8100E/8101E/8102E/8102EL PCIe 10/100BaseTX (rev. 0x06)
-re0: interrupting at msix4 vec 0
+re0: interrupting at msix5 vec 0
 re0: RTL8402 (0x4400)
 re0: Ethernet address 10:c3:7b:b4:e6:f1
 re0: using 256 tx descriptors
 rlphy0 at re0 phy 7: RTL8201E 10/100 media interface, rev. 2
 rlphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
-ehci0 at pci0 dev 29 function 0: Intel Bay Trail USB EHCI (rev. 0x0e)
-ehci0: interrupting at ioapic0 pin 23
-ehci0: BIOS has given up ownership
-ehci0: EHCI version 1.0
-usb0 at ehci0: USB revision 2.0
 pcib0 at pci0 dev 31 function 0: Intel Bay Trail LPC Interface Bridge (rev. 0x0e)
 ichsmb0 at pci0 dev 31 function 3: Intel Bay Trail PCU SMBus (rev. 0x0e)
 ichsmb0: interrupting at ioapic0 pin 18
 iic0 at ichsmb0: I2C bus
 isa0 at pcib0
+com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, 16-byte FIFO
+pcppi0 at isa0 port 0x61
+spkr2 at pcppi0: PC Speaker
+wsbell at spkr2 not configured
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
 acpicpu0 at cpu0: ACPI CPU
 acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
 acpicpu0: C2: FFH, lat 500 us, pow    10 mW
@@ -190,52 +209,400 @@ acpicpu1 at cpu1: ACPI CPU
 coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=105
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 cpu1: autoconfiguration error: lapic_set_lvt: WARNING: bad pin value 61
-timecounter: Timecounter "TSC" frequency 2166667000 Hz quality 3000
-acpiacad0: AC adapter offline.
-uhub0 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
-uhub0: 8 ports with 8 removable, self powered
+timecounter: Timecounter "TSC" frequency 2166668000 Hz quality 3000
+uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+uhub0: 1 port with 1 removable, self powered
+uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
+uhub1: 6 ports with 6 removable, self powered
+acpiacad0: AC adapter online.
 IPsec: Initialized Security Association Processing.
-aes: Intel SSSE3 vpaes
-chacha: x86 SSE2 ChaCha
-acpibat0: ASUSTeK LIon rechargeable battery
-acpibat0: granularity: low->warn 0.244 Wh, warn->full 0.244 Wh
 ahcisata0 port 0: device present, speed: 3.0Gb/s
-wd0 at atabus0 drive 0
-wd0: <ST2000LM015-2E8174>
-wd0: drive supports 16-sector PIO transfers, LBA48 addressing
-wd0: 1863 GB, 3876021 cyl, 16 head, 63 sec, 512 bytes/sect x 3907029168 sectors (4096 bytes/physsect; first aligned sector: 8)
-wd0: GPT GUID: c11f6009-3d35-4eba-959f-9d9d4f075a3d
-dk0 at wd0: "7660b6d1-f5c6-4d48-8d1d-7b9584aeb3ce", 262144 blocks at 2048, type: msdos
-dk1 at wd0: "2bf9bdbb-c8ce-4e61-b22f-c03a0677817b", 17190912 blocks at 264192, type: ffs
-dk2 at wd0: "3859f8d4-11d1-43a0-8e32-4b23a402e6ce", 8157184 blocks at 17455104, type: swap
-dk3 at wd0: "d089f83e-7953-4631-9b2e-577b450e810e", 3881416847 blocks at 25612288, type: ffs
-wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags)
-wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags)
-uhub1 at uhub0 port 1: vendor 8087 (0x8087) product 07e6 (0x07e6), class 9/0, rev 2.00/0.14, addr 2
-uhub1: single transaction translator
-uhub1: 4 ports with 4 removable, self powered
-uvideo0 at uhub1 port 3 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) USB2.0 HD UVC WebCam (0xb424), rev 2.00/69.69, addr 3
-video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) USB2.0 HD UVC WebCam (0xb424), rev 2.00/69.69, addr 3
-uhub2 at uhub1 port 4: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/85.37, addr 4
+uvideo0 at uhub1 port 3 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) USB2.0 HD UVC WebCam (0xb424), rev 2.00/69.69, addr 1
+video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) USB2.0 HD UVC WebCam (0xb424), rev 2.00/69.69, addr 1
+uhub2 at uhub1 port 4: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/85.37, addr 2
 uhub2: single transaction translator
 uhub2: 3 ports with 2 removable, self powered
+wd0 at atabus0 drive 0
+wd0: <Hanye Q55-1TSY04>
+wd0: drive supports 8-sector PIO transfers, LBA48 addressing
+wd0: 953 GB, 1984533 cyl, 16 head, 63 sec, 512 bytes/sect x 2000409264 sectors
+wd0: GPT GUID: c67956f2-6ca7-45a2-8a48-c03fcb0d1968
+dk0 at wd0: "f55648f6-6d1d-4462-9e7a-410a663fa2ad", 262144 blocks at 2048, type: msdos
+dk1 at wd0: "783a97ab-eab8-4564-bd61-dc3e5af04aae", 1991989248 blocks at 264192, type: ffs
+dk2 at wd0: "eda9365e-c669-4dd2-aac6-36e5ba6211c1", 8155791 blocks at 1992253440, type: swap
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags)
 ubt0 at uhub2 port 1
-ubt0: vendor 8087 (0x8087) product 07dc (0x07dc), rev 2.00/0.01, addr 5
+ubt0: vendor 8087 (0x8087) product 07dc (0x07dc), rev 2.00/0.01, addr 3
+umass0 at uhub2 port 3 configuration 1 interface 0
+umass0: JetFlash (0x8564) Mass Storage Device (0x1000), rev 2.10/11.00, addr 4
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <JetFlash, Transcend 16GB, 1100> disk removable
+sd0: fabricating a geometry
+sd0: 14950 MB, 14950 cyl, 64 head, 32 sec, 512 bytes/sect x 30617600 sectors
+sd0: fabricating a geometry
+sd0: GPT GUID: a0c1153c-b117-45ea-a6ad-23f85af159cc
+dk3 at sd0: "EFI system", 262144 blocks at 2048, type: msdos
+dk4 at sd0: "6243c27e-a3d9-4589-a077-aa045dcc03df", 4853760 blocks at 264192, type: ffs
+swwdog0: software watchdog initialized
+WARNING: 5 errors while detecting hardware; check system log.
+boot device: sd0
+root on dk4 dumps on dk2
+root file system type: ffs
+kern.module.path=/stand/amd64/10.0/modules
+[drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[drm] Driver supports precise vblank timestamp query.
+i915drmkms0: interrupting at msi6 vec 0 (i915drmkms0)
+[drm] Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
+intelfb0 at i915drmkms0
+[drm] DRM_I915_DEBUG enabled
+[drm] DRM_I915_DEBUG_GEM enabled
+intelfb0: framebuffer at 0xc0020000, size 1366x768, depth 32, stride 5504
+iwm0: hw rev 0x140, fw ver 17.352738.0, address a0:a8:cd:40:fc:81
+wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+dk2 at wd0 (eda9365e-c669-4dd2-aac6-36e5ba6211c1) deleted
+dk2: detached
+dk1 at wd0 (783a97ab-eab8-4564-bd61-dc3e5af04aae) deleted
+dk1: detached
+dk0 at wd0 (f55648f6-6d1d-4462-9e7a-410a663fa2ad) deleted
+dk0: detached
+syncing disks... done
+unmounted tmpfs on /var/shm type tmpfs
+unmounted tmpfs on /tmp type tmpfs
+sysbeep0: detached
+midi0: detached
+wd0: detached
+uhub0: detached
+com0: detached
+iic0: detached
+pci1: detached
+usb0: detached
+atabus0: detached
+ichsmb0: detached
+ppb0: detached
+ahcisata0: detached
+pchb0: detached
+attimer1: detached
+dk3 at sd0 (EFI system) deleted
+dk3: detached
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+    2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+    2024
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 10.0_RC2 (GENERIC) #0: Mon Jan  1 14:04:52 UTC 2024
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
+total memory = 3982 MB
+avail memory = 3822 MB
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+efi: systbl at pa b9b4bf18
+mainbus0 (root)
+ACPI: RSDP 0x00000000B93A4000 000024 (v02 _ASUS_)
+ACPI: XSDT 0x00000000B93A4080 00008C (v01 _ASUS_ Notebook 01072009 AMI  00010013)
+ACPI: FACP 0x00000000B93B5EE0 00010C (v05 _ASUS_ Notebook 01072009 AMI  00010013)
+Firmware Warning (ACPI): 32/64X length mismatch in FADT/Gpe0Block: 128/32 (20221020/tbfadt-640)
+ACPI: DSDT 0x00000000B93A41A0 011D3A (v02 _ASUS_ Notebook 01072009 INTL 20120913)
+ACPI: FACS 0x00000000B93B9F80 000040
+ACPI: APIC 0x00000000B93B5FF0 000068 (v03 _ASUS_ Notebook 01072009 AMI  00010013)
+ACPI: FPDT 0x00000000B93B6058 000044 (v01 _ASUS_ Notebook 01072009 AMI  00010013)
+ACPI: MCFG 0x00000000B93B60A0 00003C (v01 _ASUS_ Notebook 01072009 MSFT 00000097)
+ACPI: LPIT 0x00000000B93B60E0 000104 (v01 _ASUS_ Notebook 00000003 VLV2 0100000D)
+ACPI: ECDT 0x00000000B93B61E8 0000C1 (v01 _ASUS_ Notebook 01072009 AMI. 00000005)
+ACPI: HPET 0x00000000B93B62B0 000038 (v01 _ASUS_ Notebook 01072009 AMI. 00000005)
+ACPI: SSDT 0x00000000B93B62E8 000763 (v01 PmRef  CpuPm    00003000 INTL 20061109)
+ACPI: SSDT 0x00000000B93B6A50 000290 (v01 PmRef  Cpu0Tst  00003000 INTL 20061109)
+ACPI: SSDT 0x00000000B93B6CE0 00017A (v01 PmRef  ApTst    00003000 INTL 20061109)
+ACPI: UEFI 0x00000000B93B6E60 000042 (v01 _ASUS_ Notebook 00000000      00000000)
+ACPI: BGRT 0x00000000B93B6EA8 000038 (v00 _ASUS_ Notebook 01072009 AMI  00010013)
+ACPI: MSDM 0x00000000B8D7AF98 000055 (v03 _ASUS_ Notebook 00000000 ASUS 00000001)
+ACPI: 4 ACPI AML tables successfully acquired and loaded
+ioapic0 at mainbus0 apid 1: pa 0xfec00000, version 0x20, 87 pins
+cpu0 at mainbus0 apid 0
+cpu0: Use lfence to serialize rdtsc
+cpu0: Intel(R) Celeron(R) CPU  N2830  @ 2.16GHz, id 0x30678
+cpu0: node 0, package 0, core 0, smt 0
+cpu1 at mainbus0 apid 2
+cpu1: Intel(R) Celeron(R) CPU  N2830  @ 2.16GHz, id 0x30678
+cpu1: node 0, package 0, core 1, smt 0
+acpi0 at mainbus0: Intel ACPICA 20221020
+acpi0: X/RSDT: OemId <_ASUS_,Notebook,01072009>, AslId <AMI ,00010013>
+acpi0: autoconfiguration error: failed to look up EC object \_SB.PCI0.LPCB.EC0: AE_NOT_FOUND
+acpi0: autoconfiguration error: invalid PCI address for D011
+acpi0: autoconfiguration error: invalid PCI address for D012
+acpi0: autoconfiguration error: invalid PCI address for D014
+acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFBDDCEFEDB808 00045B (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFBDDCEFEDC008 000433 (v01 PmRef  Cpu0Cst  00003001 INTL 20061109)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFBDDD26D9D348 00015F (v01 PmRef  ApIst    00003000 INTL 20061109)
+ACPI: Dynamic OEM Table Load:
+ACPI: SSDT 0xFFFFBDDCEFEECC48 00008D (v01 PmRef  ApCst    00003000 INTL 20061109)
+acpi0: SCI interrupting at int 9
+acpi0: fixed power button present
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+acpiec0 at acpi0 (EC0, PNP0C09): io 0x62,0x66
+acpivga0 at acpi0 (GFX0): ACPI Display Adapter
+acpiout0 at acpivga0 (DD01, 0x0100): ACPI Display Output Device
+acpiout1 at acpivga0 (DD02, 0x0002): ACPI Display Output Device
+acpiout2 at acpivga0 (DD03, 0x0200): ACPI Display Output Device
+acpiout3 at acpivga0 (DD04, 0x0004): ACPI Display Output Device
+acpiout4 at acpivga0 (DD05, 0x0005): ACPI Display Output Device
+acpiout5 at acpivga0 (DD06, 0x0006): ACPI Display Output Device
+acpiout6 at acpivga0 (DD07, 0x0007): ACPI Display Output Device
+acpiout7 at acpivga0 (DD08, 0x0008): ACPI Display Output Device
+acpiout8 at acpivga0 (LCDD, 0x0400): ACPI Display Output Device
+acpiout8: brightness levels: [0-100]
+acpiout9 at acpivga0 (ISP0, 0x0f38): ACPI Display Output Device
+acpivga0: connected output devices:
+acpivga0:   0x0400 (acpiout8): Unknown Output Device, head 0
+FWHD (INT0800) at acpi0 not configured
+attimer1 at acpi0 (TIMR, PNP0100): io 0x40-0x43,0x50-0x53 irq 0
+pckbc1 at acpi0 (PS2M, ETD0108) (aux port): irq 12
+pckbc2 at acpi0 (PS2K, ATK3001) (kbd port): io 0x60,0x64 irq 1
+acpiacad0 at acpi0 (AC0, ACPI0003): ACPI AC Adapter
+acpibat0 at acpi0 (BAT0, PNP0C0A-0): ACPI Battery
+acpibat0: ACPI 4.0 functionality present
+ADMA (DMA0F28) at acpi0 not configured
+acpibut0 at acpi0 (PWRB, PNP0C0C): ACPI Power Button
+PEPD (INT3396) at acpi0 not configured
+BTH0 (BCM2E1A) at acpi0 not configured
+GPS0 (BCM4752) at acpi0 not configured
+SHUB (SMO91D0) at acpi0 not configured
+MBID (INT33BD) at acpi0 not configured
+acpiwmi0 at acpi0 (ATKD, PNP0C14-ATK): ACPI WMI Interface
+acpiwmibus at acpiwmi0 not configured
+ASHS (ATK4001) at acpi0 not configured
+acpilid0 at acpi0 (LID, PNP0C0D): ACPI Lid Switch
+acpibut1 at acpi0 (SLPB, PNP0C0E): ACPI Sleep Button
+acpitz0 at acpi0 (THRM): cpu0 cpu1
+acpitz0: levels: critical 75.0 C, passive 105.0 C, passive cooling
+ACPI: Enabled 4 GPEs in block 00 to 3F
+pckbd0 at pckbc2 (kbd slot)
+pckbc2: using irq 1 for kbd slot
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc2 (aux slot)
+pckbc2: using irq 12 for aux slot
+wsmouse0 at pms0 mux 0
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+pchb0 at pci0 dev 0 function 0: Intel Bay Trail Processor Transaction Router (rev. 0x0e)
+i915drmkms0 at pci0 dev 2 function 0: Intel Bay Trail Integrated Graphics Device (rev. 0x0e)
+ahcisata0 at pci0 dev 19 function 0: Intel Bay Trail SATA (AHCI) (rev. 0x0e)
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.30, 2 ports, 32 slots, CAP 0xc720ff01<PSC,SSC,PMD,ISS=0x2=Gen2,SCLO,SAL,SALP,SNCQ,S64A>
+ahcisata0: interrupting at msi0 vec 0
+atabus0 at ahcisata0 channel 0
+xhci0 at pci0 dev 20 function 0: Intel Bay Trail USB xHCI (rev. 0x0e)
+xhci0: 64-bit DMA
+xhci0: interrupting at msi1 vec 0
+xhci0: xHCI version 1.0
+usb0 at xhci0: USB revision 3.0
+usb1 at xhci0: USB revision 2.0
+Intel Bay Trail Trusted Execution Engine (miscellaneous crypto, revision 0x0e) at pci0 dev 26 function 0 not configured
+hdaudio0 at pci0 dev 27 function 0: HD Audio Controller
+hdaudio0: interrupting at msi2 vec 0
+hdaudio0: HDA ver. 1.0, OSS 4, ISS 4, BSS 0, SDO 1, 64-bit
+hdafg0 at hdaudio0: Realtek product 0233
+hdafg0: DAC00 2ch: Speaker [Built-In]
+hdafg0: DAC01 2ch: HP Out [Jack]
+hdafg0: ADC02 2ch: Mic In [Built-In]
+hdafg0: 2ch/2ch 44100Hz 48000Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio0 at hdafg0: playback, capture, full duplex, independent
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+spkr0 at audio0: PC Speaker (synthesized)
+wsbell at spkr0 not configured
+hdafg1 at hdaudio0: Intel product 2882
+hdafg1: DP00 8ch: Digital Out [Jack]
+hdafg1: 8ch/0ch 48000Hz PCM16*
+audio1 at hdafg1: playback, capture, full duplex, independent
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+spkr1 at audio1: PC Speaker (synthesized)
+wsbell at spkr1 not configured
+ppb0 at pci0 dev 28 function 0: Intel Bay Trail PCIe Root Port (rev. 0x0e)
+ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
+pci1 at ppb0 bus 1
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb1 at pci0 dev 28 function 1: Intel Bay Trail PCIe Root Port (rev. 0x0e)
+ppb1: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
+ppb1: link is x1 @ 2.5GT/s
+pci2 at ppb1 bus 2
+pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+iwm0 at pci2 dev 0 function 0: Intel Dual Band Wireless AC 7260 (rev. 0x73)
+iwm0: interrupting at msi3 vec 0
+ppb2 at pci0 dev 28 function 3: Intel Bay Trail PCIe Root Port (rev. 0x0e)
+ppb2: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x1 @ 5.0GT/s
+ppb2: link is x1 @ 2.5GT/s
+pci3 at ppb2 bus 3
+pci3: i/o space, memory space enabled, rd/line, wr/inv ok
+rtsx0 at pci3 dev 0 function 0: Realtek Semiconductor RTL8402 PCI-E Card Reader (rev. 0x01)
+rtsx0: interrupting at msix4 vec 0
+sdmmc0 at rtsx0
+re0 at pci3 dev 0 function 2: RealTek 8100E/8101E/8102E/8102EL PCIe 10/100BaseTX (rev. 0x06)
+re0: interrupting at msix5 vec 0
+re0: RTL8402 (0x4400)
+re0: Ethernet address 10:c3:7b:b4:e6:f1
+re0: using 256 tx descriptors
+rlphy0 at re0 phy 7: RTL8201E 10/100 media interface, rev. 2
+rlphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
+pcib0 at pci0 dev 31 function 0: Intel Bay Trail LPC Interface Bridge (rev. 0x0e)
+ichsmb0 at pci0 dev 31 function 3: Intel Bay Trail PCU SMBus (rev. 0x0e)
+ichsmb0: interrupting at ioapic0 pin 18
+iic0 at ichsmb0: I2C bus
+isa0 at pcib0
+com0 at isa0 port 0x3f8-0x3ff irq 4: ns16550a, 16-byte FIFO
+pcppi0 at isa0 port 0x61
+spkr2 at pcppi0: PC Speaker
+wsbell at spkr2 not configured
+midi0 at pcppi0: PC speaker
+sysbeep0 at pcppi0
+attimer1: attached to pcppi0
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow  1000 mW
+acpicpu0: C2: FFH, lat 500 us, pow    10 mW
+acpicpu0: C3: FFH, lat 1500 us, pow    10 mW
+acpicpu0: P0: FFH, lat  10 us, pow  2000 mW, 2159 MHz, turbo boost
+acpicpu0: P1: FFH, lat  10 us, pow  2000 mW, 2158 MHz
+acpicpu0: P2: FFH, lat  10 us, pow  1860 mW, 1992 MHz
+acpicpu0: P3: FFH, lat  10 us, pow  1720 mW, 1826 MHz
+acpicpu0: P4: FFH, lat  10 us, pow  1580 mW, 1660 MHz
+acpicpu0: P5: FFH, lat  10 us, pow  1440 mW, 1494 MHz
+acpicpu0: P6: FFH, lat  10 us, pow  1300 mW, 1328 MHz
+acpicpu0: P7: FFH, lat  10 us, pow  1160 mW, 1162 MHz
+acpicpu0: P8: FFH, lat  10 us, pow  1020 mW,  996 MHz
+acpicpu0: P9: FFH, lat  10 us, pow   880 mW,  830 MHz
+acpicpu0: P10: FFH, lat  10 us, pow   740 mW,  664 MHz
+acpicpu0: P11: FFH, lat  10 us, pow   600 mW,  498 MHz
+acpicpu0: T0: FFH, lat   1 us, pow   600 mW, 100 %
+acpicpu0: T1: FFH, lat   1 us, pow   525 mW,  88 %
+acpicpu0: T2: FFH, lat   1 us, pow   450 mW,  75 %
+acpicpu0: T3: FFH, lat   1 us, pow   375 mW,  63 %
+acpicpu0: T4: FFH, lat   1 us, pow   300 mW,  50 %
+acpicpu0: T5: FFH, lat   1 us, pow   225 mW,  38 %
+acpicpu0: T6: FFH, lat   1 us, pow   150 mW,  25 %
+acpicpu0: T7: FFH, lat   1 us, pow    75 mW,  13 %
+coretemp0 at cpu0: thermal sensor, 1 C resolution, Tjmax=105
+acpicpu1 at cpu1: ACPI CPU
+coretemp1 at cpu1: thermal sensor, 1 C resolution, Tjmax=105
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+cpu1: autoconfiguration error: lapic_set_lvt: WARNING: bad pin value 61
+timecounter: Timecounter "TSC" frequency 2166668000 Hz quality 3000
+uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+uhub0: 1 port with 1 removable, self powered
+uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
+uhub1: 6 ports with 6 removable, self powered
+acpiacad0: AC adapter online.
+IPsec: Initialized Security Association Processing.
+ahcisata0 port 0: device present, speed: 3.0Gb/s
+uvideo0 at uhub1 port 3 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) USB2.0 HD UVC WebCam (0xb424), rev 2.00/69.69, addr 1
+video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) USB2.0 HD UVC WebCam (0xb424), rev 2.00/69.69, addr 1
+uhub2 at uhub1 port 4: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/85.37, addr 2
+uhub2: single transaction translator
+uhub2: 3 ports with 2 removable, self powered
+wd0 at atabus0 drive 0
+wd0: <Hanye Q55-1TSY04>
+wd0: drive supports 8-sector PIO transfers, LBA48 addressing
+wd0: 953 GB, 1984533 cyl, 16 head, 63 sec, 512 bytes/sect x 2000409264 sectors
+wd0: GPT GUID: c67956f2-6ca7-45a2-8a48-c03fcb0d1968
+dk0 at wd0: "f55648f6-6d1d-4462-9e7a-410a663fa2ad", 262144 blocks at 2048, type: msdos
+dk1 at wd0: "783a97ab-eab8-4564-bd61-dc3e5af04aae", 1991989248 blocks at 264192, type: ffs
+dk2 at wd0: "eda9365e-c669-4dd2-aac6-36e5ba6211c1", 8155791 blocks at 1992253440, type: swap
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags)
+ubt0 at uhub2 port 1
+ubt0: vendor 8087 (0x8087) product 07dc (0x07dc), rev 2.00/0.01, addr 3
+swwdog0: software watchdog initialized
 WARNING: 5 errors while detecting hardware; check system log.
 boot device: wd0
 root on dk1 dumps on dk2
 root file system type: ffs
-kern.module.path=/stand/amd64/9.99.92/modules
-kern info: [drm] Memory usable by graphics device = 2048M
-kern info: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
-kern info: [drm] Driver supports precise vblank timestamp query.
-i915drmkms0: interrupting at msi5 vec 0 (i915drmkms0)
-intelfb0 at i915drmkms0
-intelfb0: framebuffer at 0xc0380000, size 1366x768, depth 32, stride 5504
+kern.module.path=/stand/amd64/10.0/modules
+[drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[drm] Driver supports precise vblank timestamp query.
+i915drmkms0: interrupting at msi6 vec 0 (i915drmkms0)
 iwm0: hw rev 0x140, fw ver 17.352738.0, address a0:a8:cd:40:fc:81
+[drm] Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
+intelfb0 at i915drmkms0
+[drm] DRM_I915_DEBUG enabled
+[drm] DRM_I915_DEBUG_GEM enabled
+intelfb0: framebuffer at 0xc0020000, size 1366x768, depth 32, stride 5504
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+{drm:netbsd:pipe_config_infoframe_mismatch+0x40} *ERROR* mismatch in hdmi infoframe
+{drm:netbsd:pipe_config_infoframe_mismatch+0x4e} *ERROR* expected:
+i915drmkms0: 68 bytes @ 0xffffbddd076f3be8
+81 00 00 00 01 00 00 00  03 0c 00 00 00 00 00 00 | ................
+ff ff ff ff 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+{drm:netbsd:pipe_config_infoframe_mismatch+0x6f} *ERROR* found:
+i915drmkms0: 68 bytes @ 0xffffbddcf0ed0be8
+81 00 00 00 01 04 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/display/intel_display.c:14031: pipe state doesn't match!
+{drm:netbsd:pipe_config_infoframe_mismatch+0x40} *ERROR* mismatch in hdmi infoframe
+{drm:netbsd:pipe_config_infoframe_mismatch+0x4e} *ERROR* expected:
+i915drmkms0: 68 bytes @ 0xffffbddd01b5fbe8
+81 00 00 00 01 00 00 00  03 0c 00 00 00 00 00 00 | ................
+ff ff ff ff 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+{drm:netbsd:pipe_config_infoframe_mismatch+0x6f} *ERROR* found:
+i915drmkms0: 68 bytes @ 0xffffbddd0221ebe8
+81 00 00 00 01 04 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/display/intel_display.c:14031: pipe state doesn't match!
+{drm:netbsd:pipe_config_infoframe_mismatch+0x40} *ERROR* mismatch in hdmi infoframe
+{drm:netbsd:pipe_config_infoframe_mismatch+0x4e} *ERROR* expected:
+i915drmkms0: 68 bytes @ 0xffffbddd076f3be8
+81 00 00 00 01 00 00 00  03 0c 00 00 00 00 00 00 | ................
+ff ff ff ff 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+{drm:netbsd:pipe_config_infoframe_mismatch+0x6f} *ERROR* found:
+i915drmkms0: 68 bytes @ 0xffffbddcf2b19be8
+81 00 00 00 01 04 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00 | ................
+00 00 00 00                                      | ....
+warning: /usr/src/sys/external/bsd/drm2/dist/drm/i915/display/intel_display.c:14031: pipe state doesn't match!
+uhidev0 at uhub2 port 3 configuration 1 interface 0
+uhidev0: Logitech (0x046d) USB Receiver (0xc534), rev 2.00/29.00, addr 4, iclass 3/1
+ukbd0 at uhidev0
+wskbd1 at ukbd0 mux 1
+wskbd1: connecting to wsdisplay0
+uhidev1 at uhub2 port 3 configuration 1 interface 1
+uhidev1: Logitech (0x046d) USB Receiver (0xc534), rev 2.00/29.00, addr 4, iclass 3/1
+uhidev1: 17 report ids
+ums0 at uhidev1 reportid 2: 16 buttons, W and Z dirs
+wsmouse1 at ums0 mux 0
+uhid0 at uhidev1 reportid 3: input=4, output=0, feature=0
+uhid1 at uhidev1 reportid 4: input=1, output=0, feature=0
+uhid2 at uhidev1 reportid 16: input=6, output=6, feature=0
+uhid3 at uhidev1 reportid 17: input=19, output=19, feature=0
