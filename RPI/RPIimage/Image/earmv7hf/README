@@ -1,43 +1,43 @@
-VERSION: :1,$s/2023-12-06/2023-12-06/g
-ISO:     :1,$s/202312050520Z/202312050520Z/g
+VERSION: :1,$s/2024-01-19/2024-01-19/g
+ISO:     :1,$s/202401181020Z/202401181020Z/g
 NetBSD:  :1,$s/10.99.10/10.99.10/g
-PKGSRC:  :1,$s/2023-12-06/2023-12-06/g
+PKGSRC:  :1,$s/2024-01-19/2024-01-19/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2023-12-06-netbsd-armv7-earmv7hf.img
+Subject: 2024-01-19-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2023-12-06-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2024-01-19-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2023-12-06-earmv7hf/2023-12-06-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2023-12-06-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-01-19-earmv7hf/2024-01-19-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-01-19-earmv7hf/MD5
 
 Update:
-- NetBSD 10.99.10 evbarm-armv7hf 202312050520Z armv7.img from nyftp.
+- NetBSD 10.99.10 evbarm-armv7hf 202401181020Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 - Firmware:
 # git log HEAD |head
-#commit 5ffb2e29c0e14dede001447a6977e126e950cf3e (HEAD -> master, origin/master, origin/HEAD)
+#commit 0968de28716a9b1f106b8492646d0ed0a2800152 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Wed Nov 29 14:33:09 2023 +0000
-
-- fix PR57565
- https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=57565
- /usr/share/mk/sys.mk
-  ARFLAGS=?=rl to ARFLAGS=?=r
+#Date:   Thu Jan 11 16:27:38 2024 +0000
+#    kernel: Bump to 6.1.72
 
 sysinfo:
- sh-20220122-20231204014929Z
+ dhcpcd-10.0.6 libssh-46.1 openssh-9.6 opensshd-9.6 sh-20220122-20240118074857Z
+ tzdata-2023dgtz
 
 pkgsrc:
- bash-5.2.21nb1 cairo-1.18.0nb1 git-base-2.43.0 gobject-introspection-1.78.1nb2 
- libproxy-0.5.3nb3 mozilla-rootcerts-1.0.20231115
+ bash-5.2.26 curl-8.5.0 fontconfig-2.15.0 fossil-2.23 gnutls-3.8.3 icu-74.2
+ libgpg-error-1.47nb1 libpsl-0.21.5 libxml2-2.10.4nb6 perl-5.38.2
+ pkg_install-20211115nb2 pkgin-23.8.1nb3 python311-3.11.7 qt5-qtbase-5.15.12
+ qt5-qtx11extras-5.15.12 qt5-qtxmlpatterns-5.15.12 ruby31-pkg-config-1.5.6
+ shared-mime-info-2.4 tiff-4.6.0nb3
 
 - packages:
-  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2023/
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2024/
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/earmv7hf/pkginfo
