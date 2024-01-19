@@ -2,17 +2,17 @@ anthy-9100hnb1      Kana Kanji conversion system
 at-spi2-atk-2.38.0nb2 Assistive Technology Service Provider Interface A11y Toolkit
 at-spi2-core-2.44.1 Assistive Technology Service Provider Interface Core
 atk-2.38.0nb1       Set of interfaces for accessibility
-bash-5.2.21nb1      The GNU Bourne Again Shell
+bash-5.2.26         The GNU Bourne Again Shell
 brotli-1.1.0        Generic-purpose lossless compression algorithm
 cairo-1.18.0nb1     Vector graphics library with cross-device output support
-curl-8.4.0nb1       Client that groks URLs
+curl-8.5.0          Client that groks URLs
 dbus-1.14.10        Message bus system
 digest-20220214     Message digest wrapper utility
 dillo-3.0.5nb14     Very small and fast graphical web-browser
 double-conversion-3.3.0 Conversion routines for IEEE doubles
 fltk-1.3.8nb3       Fast Light Tool Kit for graphical user interfaces
-fontconfig-2.14.2nb3 Library for configuring and customizing font access
-fossil-2.22nb2      High-reliability, distributed software configuration management
+fontconfig-2.15.0   Library for configuring and customizing font access
+fossil-2.23         High-reliability, distributed software configuration management
 freetype2-2.13.2nb1 Font rendering engine and library API
 fribidi-1.0.13      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.3.3nb12        Graphics library for the dynamic creation of images
@@ -21,7 +21,7 @@ giflib-5.2.1nb6     GIF image format library
 git-base-2.43.0     GIT Tree History Storage Tool (base package)
 glib2-2.78.1nb1     Some useful routines for C programming (glib2)
 gmp-6.3.0           Library for arbitrary precision arithmetic
-gnutls-3.8.2        Transport Layer Security library
+gnutls-3.8.3        Transport Layer Security library
 gobject-introspection-1.78.1nb2 GObject Introspection
 graphite2-1.3.14nb3 Cross-platform rendering for complex writing systems
 gsettings-desktop-schemas-40.0nb2 Collection of GSettings schemas for the GNOME desktop
@@ -30,7 +30,7 @@ gtk3+-3.24.38nb6    GIMP Toolkit v3 - libraries for building X11 user interfaces
 harfbuzz-8.3.0      OpenType text shaping engine
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
 icewm-1.2.38pre2nb2 Small, fast and light-weight window manager
-icu-74.1            Robust and full-featured Unicode services
+icu-74.2            Robust and full-featured Unicode services
 jbigkit-2.1nb1      JBIG-KIT lossless image compression library
 jpeg-9e             IJG's jpeg compression utilities
 libXft-2.3.8nb1     Library for configuring and customizing font access
@@ -41,18 +41,18 @@ libepoll-shim-0.0.20230411 Small epoll implemented using kevent
 libffi-3.4.4        Foreign function interface
 libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.10.3    GNU cryptographic library
-libgpg-error-1.47   Definitions of common error values for all GnuPG components
+libgpg-error-1.47nb1 Definitions of common error values for all GnuPG components
 libidn2-2.3.4       Convert internationalized domain names to/from ASCII Encoding
 libotf-0.9.16nb4    Library for handling OpenType fonts (OTF)
 libpaper-2.1.2      Paper size handling library
 libproxy-0.5.3nb3   Library that provides automatic proxy configuration management
-libpsl-0.21.2nb1    Library to handle the Public Suffix List
+libpsl-0.21.5       Library to handle the Public Suffix List
 libtasn1-4.19.0     ASN.1 structure parser library
 libunistring-1.1    Unicode string library
 libuuid-2.32.1nb2   Generate unique identifiers for objects
 libwebp-1.3.2nb1    WebP image format library and tools
 libxkbcommon-1.6.0nb1 Library to handle keyboard descriptions
-libxml2-2.10.4nb4   XML parser library from the GNOME project
+libxml2-2.10.4nb6   XML parser library from the GNOME project
 libxslt-1.1.38nb2   XSLT parser library
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
 lintpkgsrc-2022.09.29 Sanity checks on the complete pkgsrc tree
@@ -71,15 +71,15 @@ nghttp2-1.58.0nb1   Implementation of HTTP/2 in C
 p11-kit-0.25.3      PKCS#11 module manager
 pango-1.50.14nb3    Library for layout and rendering of text
 pcre2-10.42         Perl Compatible Regular Expressions library (major version 2)
-perl-5.38.0         Practical Extraction and Report Language
+perl-5.38.2         Practical Extraction and Report Language
 pkg_chk-2.0.12      Check installed package versions against pkgsrc
-pkg_install-20211115 Package management and administration tools for pkgsrc
-pkgin-23.8.1nb2     Apt / yum like tool for managing pkgsrc binary packages
+pkg_install-20211115nb2 Package management and administration tools for pkgsrc
+pkgin-23.8.1nb3     Apt / yum like tool for managing pkgsrc binary packages
 png-1.6.40          Library for manipulating PNG images
-python311-3.11.6nb4 Interpreted, interactive, object-oriented programming language
-qt5-qtbase-5.15.11nb5 C++ X GUI toolkit
-qt5-qtx11extras-5.15.11nb3 Qt5 module for X11 extras
-qt5-qtxmlpatterns-5.15.11nb3 Qt5 module for XML Patterns
+python311-3.11.7    Interpreted, interactive, object-oriented programming language
+qt5-qtbase-5.15.12  C++ X GUI toolkit
+qt5-qtx11extras-5.15.12 Qt5 module for X11 extras
+qt5-qtxmlpatterns-5.15.12 Qt5 module for XML Patterns
 raspberrypi-userland-20170109nb3 Various libraries for the Raspberry Pi
 readline-8.2nb2     GNU library that can recall and edit previous input
 ruby31-addressable-2.8.5 Replacement for the URI Implementation of standard librrary
@@ -110,7 +110,7 @@ ruby31-nokogiri-1.15.5 HTML, XML, SAX, and Reader parser with XPath and CSS sele
 ruby31-oauth-1.1.0  OAuth Core Ruby implementation
 ruby31-oauth-tty-1.0.5 OAuth 1.0 TTY CLI
 ruby31-pango-4.2.0nb2 Ruby binding of pango-1.x
-ruby31-pkg-config-1.5.5 Pure Ruby implementation of pkg-config
+ruby31-pkg-config-1.5.6 Pure Ruby implementation of pkg-config
 ruby31-pluggaloid-1.7.0 Extensible plugin system for mikutter
 ruby31-public_suffix-5.0.4 Domain name parser based on the Public Suffix List
 ruby31-red-colors-0.3.0 Wide array of features for dealing with colors
@@ -119,10 +119,10 @@ ruby31-text-1.3.1   Collection of text algorithms for Ruby
 ruby31-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 ruby31-version_gem-1.1.3 Sugar for Version modules
 sayaka-3.7.2        Terminal specific Twitter client
-shared-mime-info-2.2nb4 Core database of common types
+shared-mime-info-2.4 Core database of common types
 sudo-1.9.15p2       Allow others to run commands as root
 tcsh-6.24.10        Extended C-shell with many useful features
-tiff-4.6.0          Library and tools for reading and writing TIFF data files
+tiff-4.6.0nb3       Library and tools for reading and writing TIFF data files
 uim-1.8.9nb8        Multilingual input method library
 vlgothic-ttf-20230918 Free Japanese TrueType fonts named 'VLGothic'
 wayland-1.21.0nb3   Display server protocol - development libraries
