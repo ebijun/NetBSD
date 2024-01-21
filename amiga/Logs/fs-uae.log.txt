@@ -1,0 +1,2105 @@
+fs_data_init fs-uae fs-uae.dat
+checking dat file: /usr/pkg/bin/fs-uae
+no dat file: /usr/pkg/bin/fs-uae
+checking dat file: /usr/pkg/bin/fs-uae.dat
+checking dat file: /usr/pkg/bin/../share/fs-uae/fs-uae.dat
+FS-UAE 3.1.66 (Built for NetBSD x86-64)
+Copyright 1995-2002 Bernd Schmidt, 1999-2017 Toni Wilen,
+2003-2007 Richard Drummond, 2006-2011 Mustafa 'GnoStiC' Tufan,
+2011-2017 Frode Solheim, and contributors.
+
+This is free software; see the file COPYING for copying conditions. There
+is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE. See the README for more copyright info, and the source code for
+a full list of contributors
+
+current directory is /usr/local/Github/NetBSD/amiga
+UAE: Initializing core derived from WinUAE 3300b2
+
+----------------------------------------------------------------------------
+libfsemu init
+----------------------------------------------------------------------------
+
+[FSE] Init (early)
+current time() is: 1705841239
+localtime+timegm:  1705873639
+localtime+mktime:  1705841239
+time of day:       1705841239 + (367834 / 1000000)
+localtime offset:  32400
+[FSE] Calling fs_ml_init
+fs_ml_init (operating system: netbsd)
+load config file
+loading config from /home/jun/FS-UAE/Configurations/cyberstorm.fs-uae
+
+----------------------------------------------------------------------------
+config (/home/jun/FS-UAE/Configurations/cyberstorm.fs-uae)
+----------------------------------------------------------------------------
+
+accelerator = cyberstorm-ppc
+accelerator_rom = cyberstormppc.rom
+accuracy = -1
+amiga_model = A1200
+chip_memory = 2048
+cpu = 68060
+floppy_drive_speed = 0
+hard_drive_0 = AmigaOS/AmiNet
+kickstart_rom_file = A1200_3.1.rom
+save_disk = 0
+zorro_iii_memory = 16384
+- checking /home/jun/.config/fs-uae/configurations-dir
+checking /usr/pkg/bin/Portable.ini
+checking /usr/pkg/Portable.ini
+checking /usr/Portable.ini
+checking /Portable.ini
+- checking /home/jun/.config/fs-uae/base-dir
+- using home directory "/home/jun"
+- using base dir $HOME/FS-UAE
+- using base ($BASE / $FSUAE) directory "/home/jun/FS-UAE"
+resolve_path /home/jun/FS-UAE/Configurations (absolute)
+- using "Configurations" directory "/home/jun/FS-UAE/Configurations"
+checking config file /home/jun/FS-UAE/Configurations/Host.fs-uae
+- checking /home/jun/.config/fs-uae/data-dir
+resolve_path /home/jun/FS-UAE/Data (absolute)
+- using "Data" directory "/home/jun/FS-UAE/Data"
+[I18N] Locale is set to ja_JP.UTF-8
+[I18N] Checking locale dir "/usr/pkg/bin/../../Locale"
+[I18N] Using data dir "/usr/pkg/bin/../share/fs-uae/share-dir"
+[I18N] Using locale dir "/usr/pkg/bin/../share/locale"
+
+----------------------------------------------------------------------------
+fs-uae init
+----------------------------------------------------------------------------
+
+configure logging: none
+[GLIB] Version 2.78.1 (Compiled against 2.78.1)
+- checking /home/jun/.config/fs-uae/kickstarts-dir
+resolve_path /home/jun/FS-UAE/Kickstarts (absolute)
+- using "Kickstarts" directory "/home/jun/FS-UAE/Kickstarts"
+- checking /home/jun/.config/fs-uae/floppies-dir
+resolve_path /home/jun/FS-UAE/Floppies (absolute)
+- using "Floppies" directory "/home/jun/FS-UAE/Floppies"
+- checking /home/jun/.config/fs-uae/cdroms-dir
+resolve_path /home/jun/FS-UAE/CD-ROMs (absolute)
+- using "CD-ROMs" directory "/home/jun/FS-UAE/CD-ROMs"
+- checking /home/jun/.config/fs-uae/hard-drives-dir
+resolve_path /home/jun/FS-UAE/Hard Drives (absolute)
+- using "Hard Drives" directory "/home/jun/FS-UAE/Hard Drives"
+[PLUGINS] Initializing
+- checking /home/jun/.config/fs-uae/system-dir
+resolve_path /home/jun/FS-UAE/System (absolute)
+- using "System" directory "/home/jun/FS-UAE/System"
+[PLUGINS] Loading plugins from /home/jun/FS-UAE/System
+[PLUGINS] Could not open plugins dir /home/jun/FS-UAE/System
+- checking /home/jun/.config/fs-uae/plugins-dir
+- read from file: /usr/pkg/share/fs-uae/plugins
+- expanded path: /usr/pkg/share/fs-uae/plugins
+resolve_path /usr/pkg/share/fs-uae/plugins (absolute)
+- using "Plugins" directory "/usr/pkg/share/fs-uae/plugins"
+[PLUGINS] Loading plugins from /usr/pkg/share/fs-uae/plugins
+[PLUGINS] Checking /usr/pkg/share/fs-uae/plugins/qemu-uae.so/Plugin.ini
+[PLUGINS] Test /usr/pkg/bin/../../Plugin.ini
+[PLUGINS] Is plugin: 0
+fs_uae_configure_amiga_model
+using PAL mode (50Hz)
+[VIDEO] fs_emu_set_video_frame_rate: 50.00 (50)
+[DISPLAY] Sync: g_fs_emu_video_sync_to_vblank = 0
+config match for "A1200"
+fs_uae_state_dir:
+- checking /home/jun/.config/fs-uae/save-states-dir
+resolve_path /home/jun/FS-UAE/Save States (absolute)
+- using "Save States" directory "/home/jun/FS-UAE/Save States"
+save_states_dir: /home/jun/FS-UAE/Save States
+save_dir_name not set, using cyberstorm
+- using state dir /home/jun/FS-UAE/Save States/cyberstorm
+final state dir path: /home/jun/FS-UAE/Save States/cyberstorm
+- checking /home/jun/.config/fs-uae/controllers-dir
+resolve_path /home/jun/FS-UAE/Controllers (absolute)
+- using "Controllers" directory "/home/jun/FS-UAE/Controllers"
+- checking /home/jun/.config/fs-uae/logs-dir
+- checking /home/jun/.config/fs-uae/cache-dir
+resolve_path /home/jun/FS-UAE/Cache (absolute)
+- using "Cache" directory "/home/jun/FS-UAE/Cache"
+resolve_path /home/jun/FS-UAE/Cache/Logs (absolute)
+- using "Logs" directory "/home/jun/FS-UAE/Cache/Logs"
+switch to log file /home/jun/FS-UAE/Cache/Logs/fs-uae.log.txt
+- checking /home/jun/.config/fs-uae/themes-dir
+resolve_path /home/jun/FS-UAE/Themes (absolute)
+- using "Themes" directory "/home/jun/FS-UAE/Themes"
+themes_dir = /home/jun/FS-UAE/Themes
+[FSE] Init
+[FSE] Read config
+THEME: Init
+THEME: Loading ""
+[VIDEO] Initialize
+fs_emu_video_dummy_init
+[VIDEO] Initialize legacy video
+[FSE] fse_init_video_2
+[RENDER] Stretch mode = 2
+[RENDER] Scale mode = 1
+full-scene anti-aliasing is not requested
+checking video sync mode
+not specified: no video sync
+no video sync (using timers only)
+using default video format BGRA
+using default texture format
+[VIDEO] Using low latency vsync when full vsync is enabled
+[VIDEO] Creating window
+fs_ml_video_create_window
+keyboard input grab: 305419896
+[SDL] Version 2.28.5 (Compiled against 2.28.5)
+[DISPLAY] 0: 1920x1080+0+0 @60
+Monitor - j 0 pos 0
+Monitor - j 1 pos 0
+Monitor - j 2 pos 0
+Monitor - j 3 pos 0
+Monitor index 0 flags 15
+Monitor: found index 0 for flag 2
+Monitor "middle-left" (flag 2) => index 0
+[SDL] Defaulting to fullscreen_mode = desktop for SDL 2
+automatic input grab: 1
+using windowed mode
+setting (windowed) video mode 960 540
+[SDL] CreateWindow(x=805240832, y=805240832, w=960, h=540, flags=290)
+[DISPLAY] Host refresh rate: 60 Hz
+[X11] Requesting dark window manager theme
+[X11] Setting _NET_WM_ICON from icon images
+fs_image_destroy
+fs_image_destroy
+fs_image_destroy
+fs_image_destroy
+fs_image_destroy
+opengl vendor: Intel Open Source Technology Center
+opengl renderer: Mesa DRI Intel(R) HD Graphics 520 (Skylake GT2) 
+opengl version: 3.0 Mesa 19.1.17
+opengl shading language version: 1.30
+opengl extensions: GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_3DFX_texture_compression_FXT1 GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_fog_distance GL_APPLE_packed_pixels GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_NV_primitive_restart GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_APPLE_object_purgeable GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_texture_array GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_AMD_texture_texture4 GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_AMD_conservative_depth GL_AMD_depth_clamp_separate GL_AMD_draw_buffers_blend GL_AMD_seamless_cubemap_per_texture GL_AMD_shader_stencil_export GL_ARB_ES2_compatibility GL_ARB_blend_func_extended GL_ARB_debug_output GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_stencil_export GL_ARB_shader_texture_lod GL_ARB_texture_cube_map_array GL_ARB_texture_gather GL_ARB_texture_multisample GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_NV_texture_barrier GL_ARB_draw_indirect GL_ARB_get_program_binary GL_ARB_robustness GL_ARB_separate_shader_objects GL_ARB_shader_bit_encoding GL_ARB_shader_precision GL_ARB_texture_compression_bptc GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_AMD_multi_draw_indirect GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_shader_atomic_counters GL_ARB_shader_image_load_store GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_texture_storage GL_ARB_transform_feedback_instanced GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_transform_feedback GL_AMD_query_buffer_object GL_AMD_shader_trinary_minmax GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_clear_buffer_object GL_ARB_compute_shader GL_ARB_copy_image GL_ARB_explicit_uniform_location GL_ARB_fragment_layer_viewport GL_ARB_framebuffer_no_attachments GL_ARB_invalidate_subdata GL_ARB_multi_draw_indirect GL_ARB_program_interface_query GL_ARB_robust_buffer_access_behavior GL_ARB_shader_image_size GL_ARB_shader_storage_buffer_object GL_ARB_stencil_texturing GL_ARB_texture_query_levels GL_ARB_texture_storage_multisample GL_ARB_texture_view GL_ARB_vertex_attrib_binding GL_KHR_debug GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_ARB_buffer_storage GL_ARB_clear_texture GL_ARB_indirect_parameters GL_ARB_internalformat_query2 GL_ARB_multi_bind GL_ARB_query_buffer_object GL_ARB_seamless_cubemap_per_texture GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_stencil8 GL_ARB_vertex_type_10f_11f_11f_rev GL_EXT_shader_framebuffer_fetch GL_EXT_shader_integer_mix GL_INTEL_performance_query GL_ARB_ES3_1_compatibility GL_ARB_clip_control GL_ARB_conditional_render_inverted GL_ARB_cull_distance GL_ARB_derivative_control GL_ARB_get_texture_sub_image GL_ARB_pipeline_statistics_query GL_ARB_shader_texture_image_samples GL_ARB_texture_barrier GL_ARB_transform_feedback_overflow_query GL_EXT_polygon_offset_clamp GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_robust_buffer_access_behavior GL_ARB_fragment_shader_interlock GL_ARB_parallel_shader_compile GL_ARB_post_depth_coverage GL_ARB_shader_atomic_counter_ops GL_ARB_shader_ballot GL_ARB_shader_clock GL_EXT_shader_samples_identical GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_NV_fragment_shader_interlock GL_MESA_shader_integer_functions GL_ARB_polygon_offset_clamp GL_ARB_texture_filter_anisotropic GL_KHR_parallel_shader_compile GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_texture_sRGB_R8 GL_INTEL_shader_atomic_float_minmax GL_NV_compute_shader_derivatives 
+opengl max texture size (estimate): 16384x16384
+*** Setting swap interval to 0 ***
+initial input grab: 1
+init_opengl
+fse_init_video_opengl
+setup_opengl
+loaded sub-texture "sidebar_edge.png"
+fs_image_destroy
+loaded sub-texture "sidebar.png"
+fs_image_destroy
+loaded sub-texture "gloss.png"
+fs_image_destroy
+loaded sub-texture "glow_left.png"
+fs_image_destroy
+loaded sub-texture "glow_top.png"
+fs_image_destroy
+loaded sub-texture "glow_top_left.png"
+fs_image_destroy
+loaded sub-texture "close.png"
+fs_image_destroy
+loaded sub-texture "volume.png"
+fs_image_destroy
+loaded sub-texture "volume_muted.png"
+fs_image_destroy
+loaded sub-texture "stretch-aspect.png"
+fs_image_destroy
+loaded sub-texture "stretch.png"
+fs_image_destroy
+loaded sub-texture "item_background.png"
+fs_image_destroy
+loaded sub-texture "top_item_background.png"
+fs_image_destroy
+loaded sub-texture "heading_strip.png"
+fs_image_destroy
+loaded sub-texture "pause_indicator.png"
+fs_image_destroy
+loaded sub-texture "logo-32.png"
+fs_image_destroy
+loaded sub-texture "top_background.png"
+fs_image_destroy
+loaded sub-texture "top_background_fade.png"
+fs_image_destroy
+loaded sub-texture "bezel/left.png"
+fs_image_destroy
+loaded sub-texture "bezel/right.png"
+fs_image_destroy
+loaded sub-texture "stretch-none.png"
+fs_image_destroy
+loaded sub-texture "bezel/left-overlay.png"
+fs_image_destroy
+loaded sub-texture "bezel/right-overlay.png"
+fs_image_destroy
+initializing menu
+load font from data 0x7eef65cc4980 size 26822
+font height: 32 pixels
+512 characters
+load font from data 0x7eef651439c0 size 26832
+font height: 32 pixels
+512 characters
+[SHADERS] Initialize
+create windows is done
+fse_init_renderer
+scale: -1.00 -1.00 align: 0.50 0.50
+[FSE] Calling fs_ml_init_2
+[INPUT] fs_ml_input_init
+[INPUT] fs_ml_mouse_init
+[INPUT] Adding system mouse
+[MANYMOUSE] Copyright (c) 2005-2012 Ryan C. Gordon
+[MANYMOUSE] Thread running
+[MANYMOUSE] Initialization failed (-1)
+[INPUT] Joystick device count: 0
+[INPUT] Initialize
+fs_emu_input_sdl_init
+[INPUT] fs_emu_input_init
+init_input_configs
+reading input device configs from /home/jun/FS-UAE/Controllers
+reading input device configs from /home/jun/FS-UAE/Data/Devs/Keyboards
+could not read directory /home/jun/FS-UAE/Data/Devs/Keyboards
+reading input device configs from /home/jun/FS-UAE/Controllers
+[INPUT] Using default modifier key LALT
+[INPUT] Initializing devices for "menu"
+0 Keyboard
+[INPUT] Config name "Keyboard"
+get system config for device: Keyboard
+checked data "input/Keyboard.conf" = 3
+config file for Keyboard was not found
+[INPUT] Did not find config for device "Keyboard"
+get system config for device: keyboard_0_0_0_0_netbsd
+checked data "input/keyboard_0_0_0_0_netbsd.conf" = 3
+config file for keyboard_0_0_0_0_netbsd was not found
+[INPUT] Did not find menu config for device "keyboard_0_0_0_0_netbsd"
+get system config for device: keyboard
+checked data "input/keyboard.conf" = 0
+read config for keyboard for menu (from data)
+checked data "input/default_keyboard.conf" = 0
+read config for default_keyboard for menu (from data)
+did not find action for "skip_right"
+key_down (274) => action "down" (4)
+key_backspace (8) => action "back" (6)
+did not find action for "skip_left"
+key_return (13) => action "primary" (5)
+did not find action for "default_keyboard"
+key_left (276) => action "left" (1)
+did not find action for "secondary"
+key_escape (27) => action "escape" (10)
+key_right (275) => action "right" (2)
+key_up (273) => action "up" (3)
+1 MOUSE
+[INPUT] Config name "MOUSE"
+get system config for device: MOUSE
+checked data "input/MOUSE.conf" = 3
+config file for MOUSE was not found
+[INPUT] Did not find config for device "MOUSE"
+get system config for device: mouse_0_0_0_0_netbsd
+checked data "input/mouse_0_0_0_0_netbsd.conf" = 3
+config file for mouse_0_0_0_0_netbsd was not found
+[INPUT] Did not find menu config for device "mouse_0_0_0_0_netbsd"
+get system config for device: mouse
+checked data "input/mouse.conf" = 0
+read config for mouse for menu (from data)
+no config for platform menu
+[INPUT] Did not find menu config for device"mouse"
+[AUDIO] Initialize
+[AUDIO] Initialize OpenAL audio driver
+[OPENAL] Opened device: OpenAL Soft
+[OPENAL] Information:
+[OPENAL] Devices:
+- OpenAL Soft
+[OPENAL] Default device: OpenAL Soft
+OPENAL: trying frequency 48000
+OPENAL: created context
+OPENAL: made context current
+openal: number of stereo sources is 2
+[AUDIO] Buffer target size (ms) = 40
+fs_uae_init_recording
+not running in record mode
+[AUDIO] Stream 0, frequency: 48000, buffers: 48 buffer size: 512 bytes
+[AUDIO] Stream 1, frequency: 44100, buffers: 48 buffer size: 28224 bytes
+adding rtg resolution 672x540
+adding rtg resolution 960x540
+adding rtg resolution 1344x1080
+adding rtg resolution 960x540
+resolution already exists
+adding rtg resolution 1920x1080
+fs_uae_init_video
+fs_uae_configure_menu
+[FSE] fs_emu_run, main_function at 0x1c11a3746
+checking OpenGL capabilities
+GL_ARB_sync extension found
+error looking up functions
+[OPENGL] Deciding video sync method
+[OPENGL] Using default sync method
+- SYNC_FINISH_SWAP_FINISH
+[FSE] Emulation thread started
+[FSE] Run main function at 0x1c11a3746
+amiga_main
+KB: keyboard_settrans
+target_default_options p=0x1c47ea580 type=0
+target_default_options: enabling floppy sounds
+ -- stub -- target_save_options zfile=0x7eef6444d000 p=0x1c47ea580
+built_in_chipset_prefs, ignore = 0
+fixup_cpu
+built_in_chipset_prefs, ignore = 0
+ -- stub -- target_fixup_options 
+graphics_setup
+preinit_shm
+NATMEM: Total physical RAM 16315 MB, all RAM 16315 MB
+NATMEM: Attempting to reserve: 2048 MB
+NATMEM: jit compiler 0
+VM: Reserve  0x80000000 bytes
+VM: Reserve  0x80000000 bytes, got address 0x7eeed3000000
+NATMEM: Reserved 0x7eeed3000000-0x7eef53000000 (0x80000000 2048M)
+ -- stub -- target_cfgfile_load 
+built_in_chipset_prefs, ignore = 0
+fixup_cpu
+built_in_chipset_prefs, ignore = 0
+ -- stub -- target_fixup_options 
+set_device_rom path=(null) romtype=262144 devnum=0
+boardromconfig 0x0
+target_default_options p=0x1c47ea580 type=1
+target_default_options: enabling floppy sounds
+built_in_chipset_prefs, ignore = 0
+
+----------------------------------------------------------------------------
+uae configuration
+----------------------------------------------------------------------------
+
+fs_uae_configure_amiga_hardware
+fs_uae_load_rom_files /home/jun/FS-UAE/Kickstarts
+found file "A1200_3.1.rom"
+amiga_add_rom_file /home/jun/FS-UAE/Kickstarts/A1200_3.1.rom
+- found cached crc32
+found file "cyberstormppc.rom"
+amiga_add_rom_file /home/jun/FS-UAE/Kickstarts/cyberstormppc.rom
+- found cached crc32
+configuring "Amiga 1200", accuracy=1
+amiga_quickstart model=4 config=6 compa=0 (accuracy 1)
+set_device_rom path=(null) romtype=262144 devnum=0
+boardromconfig 0x0
+target_default_options p=0x1c47ea580 type=1
+target_default_options: enabling floppy sounds
+built_in_chipset_prefs, ignore = 0
+set option "cachesize" to "0" (result: 1)
+[ROM] Found cyberstormppc.rom
+set option "cpuboard_type" to "CyberstormPPC" (result: 1)
+set option "cpuboardmem1_size" to "128" (result: 1)
+resolve_path cyberstormppc.rom (relative)
+checking ./cyberstormppc.rom
+checking /home/jun/FS-UAE/Configurations/cyberstormppc.rom
+checking /home/jun/FS-UAE/Kickstarts/cyberstormppc.rom
+- found /home/jun/FS-UAE/Kickstarts/cyberstormppc.rom
+get_device_rom_new romtype=262144 devnum=0
+- return brc ()
+set option "cpuboard_rom_file" to "/home/jun/FS-UAE/Kickstarts/cyberstormppc.rom" (result: 1)
+set option "cpu_model" to "68060" (result: 1)
+set option "fpu_model" to "68060" (result: 1)
+set option "mmu_model" to "68060" (result: 1)
+set option "cpu_24bit_addressing" to "false" (result: 1)
+set option "cpu_speed" to "max" (result: 1)
+set option "blitter_cycle_exact" to "false" (result: 1)
+set option "cpu_compatible" to "false" (result: 1)
+set option "cpu_cycle_exact" to "false" (result: 1)
+set option "waiting_blits" to "false" (result: 1)
+set option "immediate_blits" to "true" (result: 1)
+set option "chipmem_size" to "4" (result: 1)
+set option "z3mem_size" to "16" (result: 1)
+set option "sound_stereo_separation" to "7" (result: 1)
+set option "sound_filter_type" to "enhanced" (result: 1)
+configure_floppies
+value for option floppy_drive_0: (null)
+set option "floppy0" to "" (result: 1)
+set option "floppy0type" to "0" (result: 1)
+value for option floppy_drive_1: (null)
+set option "floppy1" to "" (result: 1)
+set option "floppy1type" to "0" (result: 1)
+value for option floppy_drive_2: (null)
+set option "floppy2" to "" (result: 1)
+set option "floppy2type" to "0" (result: 1)
+value for option floppy_drive_3: (null)
+set option "floppy3" to "" (result: 1)
+set option "floppy3type" to "0" (result: 1)
+set option "floppy_speed" to "0" (result: 1)
+set option "nr_floppies" to "1" (result: 1)
+set option "floppy1" to "" (result: 1)
+set option "floppy1type" to "-1" (result: 1)
+set option "floppy2" to "" (result: 1)
+set option "floppy2type" to "-1" (result: 1)
+set option "floppy3" to "" (result: 1)
+set option "floppy3type" to "-1" (result: 1)
+set option "floppy_volume" to "80" (result: 1)
+set option "diskimage0" to "" (result: 1)
+set option "diskimage1" to "" (result: 1)
+set option "diskimage2" to "" (result: 1)
+set option "diskimage3" to "" (result: 1)
+set option "diskimage4" to "" (result: 1)
+set option "diskimage5" to "" (result: 1)
+set option "diskimage6" to "" (result: 1)
+set option "diskimage7" to "" (result: 1)
+set option "diskimage8" to "" (result: 1)
+set option "diskimage9" to "" (result: 1)
+set option "diskimage10" to "" (result: 1)
+set option "diskimage11" to "" (result: 1)
+set option "diskimage12" to "" (result: 1)
+set option "diskimage13" to "" (result: 1)
+set option "diskimage14" to "" (result: 1)
+set option "diskimage15" to "" (result: 1)
+set option "diskimage16" to "" (result: 1)
+set option "diskimage17" to "" (result: 1)
+set option "diskimage18" to "" (result: 1)
+set option "diskimage19" to "" (result: 1)
+fs_uae_configure_hard_drives
+resolve_path AmigaOS/AmiNet (relative)
+checking ./AmigaOS/AmiNet
+checking /home/jun/FS-UAE/Configurations/AmigaOS/AmiNet
+checking /home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet
+- found /home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet
+hard drive mount: /home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet
+device: DH0
+mount name: AmiNet
+read only: 0
+boot priority: 0
+set option "filesystem2" to "rw,DH0:AmiNet:/home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet,0" (result: 1)
+set option "uaehf0" to "dir,rw,DH0:AmiNet:/home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet,0" (result: 1)
+configure_cdrom
+configuring joystick ports:
+set option "joyport0" to "none" (result: 1)
+set option "joyport1" to "none" (result: 1)
+fs_uae_configure_actions
+fs_uae_read_override_actions_for_port 0
+fs_uae_read_override_actions_for_port 1
+fs_uae_read_override_actions_for_port 2
+fs_uae_read_override_actions_for_port 3
+fs_uae_read_override_actions_for_port 4
+fs_uae_read_override_actions_for_port 5
+fs_uae_read_override_actions_for_port 6
+fs_uae_read_override_actions_for_port 7
+configuring joystick port 1 (auto)
+trying to auto-configure joystick in port 1
+configure joystick "JOYSTICK" for "amiga" (port index 1
+did not match device #0 (Keyboard)
+did not match device #1 (MOUSE)
+configure joystick "JOYSTICK #2" for "amiga" (port index 1
+did not match device #0 (Keyboard)
+did not match device #1 (MOUSE)
+could not auto-configure joystick,using keyboard emulation
+configuring joystick port 0 (auto)
+configuring joystick port 2 (nothing)
+nothing connected to port
+configuring joystick port 3 (nothing)
+nothing connected to port
+configuring joystick port 4 (nothing)
+nothing connected to port
+configuring joystick port 5 (nothing)
+nothing connected to port
+configuring joystick port 6 (nothing)
+nothing connected to port
+configuring joystick port 7 (nothing)
+nothing connected to port
+set option "statefile" to "/home/jun/FS-UAE/Save States/cyberstorm/Saved State.uss" (result: 1)
+amiga_set_save_image_dir /home/jun/FS-UAE/Save States/cyberstorm
+- checking /home/jun/.config/fs-uae/module-ripper-dir
+resolve_path /home/jun/FS-UAE/Cache/Modules (absolute)
+- using "Modules" directory "/home/jun/FS-UAE/Cache/Modules"
+amiga_set_module_ripper_dir /home/jun/FS-UAE/Cache/Modules
+set option "sound_frequency" to "48000" (result: 1)
+amiga_set_audio_frequency: 48000
+fs_uae_set_uae_paths
+did not find "built-in" driveclick directory
+read_custom_uae_options
+writing uae config to /home/jun/FS-UAE/Cache/Logs/debug.uae
+ -- stub -- target_save_options zfile=0x7eef6444d0c0 p=0x1c47ea580
+using text cache texture size 2048x2048
+
+----------------------------------------------------------------------------
+end of uae configuration
+----------------------------------------------------------------------------
+
+ -- stub -- init_joystick return 1
+ -- stub -- init_mouse return 1
+ -- stub -- init_kb return 1
+ -- stub -- gui_init 
+ -- stub -- logging_init 
+init_shm
+NATMEM: size            0x10000000
+NATMEM: z3size        + 0x01000000
+NATMEM: z3rtgmem_size + 0x00000000
+NATMEM: othersize     + 0x00000000
+NATMEM: totalsize     = 0x11000000
+Z3 REAL mapping. JIT direct compatible.
+NATMEM: JIT direct compatible: 1
+NATMEM: Our special area: 0x7eeed3000000-0x7eeee4000000 (0x11000000 272M)
+built_in_chipset_prefs, ignore = 0
+fixup_cpu
+built_in_chipset_prefs, ignore = 0
+ -- stub -- target_fixup_options 
+ -- stub -- target_run 
+ -- stub -- get_mouse_num return 0
+[WARNING] Will not log further calls to get_mouse_num
+ -- stub -- get_joystick_num return 0
+[WARNING] Will not log further calls to get_joystick_num
+ -- stub -- get_kb_num return 0
+[WARNING] Will not log further calls to get_kb_num
+ -- stub -- input_get_default_keyboard num=0 return 0
+ -- stub -- input_get_default_keyboard num=1 return 0
+ -- stub -- input_get_default_keyboard num=2 return 0
+ -- stub -- input_get_default_keyboard num=3 return 0
+ -- stub -- input_get_default_keyboard num=4 return 0
+ -- stub -- input_get_default_keyboard num=5 return 0
+ -- stub -- input_get_default_keyboard num=6 return 0
+ -- stub -- input_get_default_keyboard num=7 return 0
+ -- stub -- input_get_default_keyboard num=8 return 0
+ -- stub -- input_get_default_keyboard num=9 return 0
+ -- stub -- input_get_default_keyboard num=10 return 0
+ -- stub -- input_get_default_keyboard num=11 return 0
+ -- stub -- input_get_default_keyboard num=12 return 0
+ -- stub -- input_get_default_keyboard num=13 return 0
+ -- stub -- input_get_default_keyboard num=14 return 0
+ -- stub -- input_get_default_keyboard num=15 return 0
+ -- stub -- input_get_default_keyboard num=16 return 0
+ -- stub -- input_get_default_keyboard num=17 return 0
+ -- stub -- input_get_default_keyboard num=18 return 0
+ -- stub -- input_get_default_keyboard num=19 return 0
+RTAREA located at 00EF0000
+MMAN: mapped_malloc 0x00010000 start=0x00000000 UAE Boot ROM (rtarea)
+MMAN: Flags: ROMIN
+shmget of size 65536 (64k) for rtarea
+uae_shmat shmid 0 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
+VM: Decommit 0x10000    bytes at 0x7eeed3ef0000
+- VirtualAlloc addr=0x7eeed3ef0000 size=65536 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x10000    bytes at 0x7eeed3ef0000 (READ_WRITE)
+- VirtualAlloc addr=0x7eeed3ef0000 size=65536 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x10000    bytes at 0x7eeed3ef0000 (READ_WRITE)
+0x7eeed3ef0000: VA 00EF0000 - 00F00000 10000 (64k) ok (0x7eeed3ef0000)
+uaegfx.card magic code: 00EF3000-00EF313E ABI=00000000
+segtracker: install
+MMAN: mapped_malloc 0x01000000 start=0x40000000 Zorro III Fast RAM (z3)
+MMAN: Flags: RAM THREADSAFE
+shmget of size 16777216 (16384k) for z3
+uae_shmat shmid 1 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
+VM: Decommit 0x1000020  bytes at 0x7eef13000000
+- VirtualAlloc addr=0x7eef13000000 size=16777248 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x1000020  bytes at 0x7eef13000000 (READ_WRITE)
+- VirtualAlloc addr=0x7eef13000000 size=16777248 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x1000020  bytes at 0x7eef13000000 (READ_WRITE)
+0x7eef13000000: VA 40000000 - 41000020 1000020 (16384k) ok (0x7eef13000000)
+MMAN: mapped_malloc 0x00010000 start=0x00000000 Filesystem autoconfig (filesys)
+MMAN: Flags: IO SAFE
+shmget of size 65536 (64k) for filesys
+uae_shmat shmid 2 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
+- VirtualAlloc addr=0x0 size=65536 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+NATMEM: Allocated non-reserved memory size 65536
+- VirtualAlloc addr=0x0 size=65536 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+NATMEM: Allocated non-reserved memory size 65536
+0x0: VA FFFF81112D000000 - FFFF81112D010000 10000 (64k) ok (0x0)
+bsdsocket.library installed
+MMAN: mapped_malloc 0x00080000 start=0x00000000 Kickstart ROM (kick)
+MMAN: Flags: ROM THREADSAFE
+shmget of size 524288 (512k) for kick
+uae_shmat shmid 3 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
+VM: Decommit 0x80020    bytes at 0x7eeed3f80000
+- VirtualAlloc addr=0x7eeed3f80000 size=524320 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x80020    bytes at 0x7eeed3f80000 (READ_WRITE)
+- VirtualAlloc addr=0x7eeed3f80000 size=524320 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x80020    bytes at 0x7eeed3f80000 (READ_WRITE)
+0x7eeed3f80000: VA 00F80000 - 01000020 80020 (512k) ok (0x7eeed3f80000)
+ -- stub -- my_issamepath 
+ -- stub -- my_issamepath 
+ -- stub -- my_issamepath 
+[WARNING] Will not log further calls to my_issamepath
+MMAN: mapped_malloc 0x00200000 start=0x00000000 Chip memory (chip)
+MMAN: Flags: RAM THREADSAFE
+shmget of size 2097152 (2048k) for chip
+uae_shmat shmid 4 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
+VM: Decommit 0x200020   bytes at 0x7eeed3000000
+- VirtualAlloc addr=0x7eeed3000000 size=2097184 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x200020   bytes at 0x7eeed3000000 (READ_WRITE)
+- VirtualAlloc addr=0x7eeed3000000 size=2097184 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x200020   bytes at 0x7eeed3000000 (READ_WRITE)
+0x7eeed3000000: VA 00000000 - 00200020 200020 (2048k) ok (0x7eeed3000000)
+MMAN: mapped_malloc 0x08000000 start=0x08000000 RAMSEY memory (high) (ramsey_high)
+MMAN: Flags: RAM THREADSAFE
+shmget of size 134217728 (131072k) for ramsey_high
+uae_shmat shmid 5 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
+VM: Decommit 0x8000000  bytes at 0x7eeedb000000
+- VirtualAlloc addr=0x7eeedb000000 size=134217728 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x8000000  bytes at 0x7eeedb000000 (READ_WRITE)
+- VirtualAlloc addr=0x7eeedb000000 size=134217728 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x8000000  bytes at 0x7eeedb000000 (READ_WRITE)
+0x7eeedb000000: VA 08000000 - 10000000 8000000 (131072k) ok (0x7eeedb000000)
+MMAN: mapped_malloc 0x08000000 start=0x0c000000 CPUBoard RAM (cyberstorm)
+MMAN: Flags: RAM THREADSAFE
+shmget of size 134217728 (131072k) for cyberstorm
+uae_shmat shmid 6 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
+VM: Decommit 0x8000000  bytes at 0x7eeedf000000
+- VirtualAlloc addr=0x7eeedf000000 size=134217728 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x8000000  bytes at 0x7eeedf000000 (READ_WRITE)
+- VirtualAlloc addr=0x7eeedf000000 size=134217728 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x8000000  bytes at 0x7eeedf000000 (READ_WRITE)
+0x7eeedf000000: VA 0C000000 - 14000000 8000000 (131072k) ok (0x7eeedf000000)
+MMAN: mapped_malloc 0x00080000 start=0x00f00000 CPUBoard F00000 (rom_f0_ppc)
+MMAN: Flags: ROM
+shmget of size 524288 (512k) for rom_f0_ppc
+uae_shmat shmid 7 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
+VM: Decommit 0x80000    bytes at 0x7eeed3f00000
+- VirtualAlloc addr=0x7eeed3f00000 size=524288 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x80000    bytes at 0x7eeed3f00000 (READ_WRITE)
+- VirtualAlloc addr=0x7eeed3f00000 size=524288 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x80000    bytes at 0x7eeed3f00000 (READ_WRITE)
+0x7eeed3f00000: VA 00F00000 - 00F80000 80000 (512k) ok (0x7eeed3f00000)
+MMAN: mapped_malloc 0x00080000 start=0xfff00000 CPUBoard MAPROM (maprom)
+MMAN: Flags: RAM INDIRECT NOALLOC
+shmget of size 524288 (512k) for maprom
+MMAN: mapped_malloc using existing baseaddr 0x7eeee2f80000
+MMAN: mapped_malloc 0x00080000 start=0xfff00000 CPUBoard MAPROM2 (maprom2)
+MMAN: Flags: RAM INDIRECT NOALLOC
+shmget of size 524288 (512k) for maprom2
+MMAN: mapped_malloc using existing baseaddr 0x7eeee2f00000
+- VirtualProtect addr=0x7eeed3ef0000 size=8192 prot=4
+  PAGE_READWRITE
+ROM VP 00EF0000 - 00F00000 10000 (64k) UNPROT
+- VirtualProtect addr=0x7eeed3f80000 size=524288 prot=4
+  PAGE_READWRITE
+ROM VP 00F80000 - 01000000 80000 (512k) UNPROT
+ROM loader.. (<none>)
+read_rom_name 
+MMAN: mapped_malloc 0x00080000 start=0x00000000 Extended Kickstart ROM (rom_e0)
+MMAN: Flags: ROM THREADSAFE
+shmget of size 524288 (512k) for rom_e0
+uae_shmat shmid 10 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
+VM: Decommit 0x80000    bytes at 0x7eeed3e00000
+- VirtualAlloc addr=0x7eeed3e00000 size=524288 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x80000    bytes at 0x7eeed3e00000 (READ_WRITE)
+- VirtualAlloc addr=0x7eeed3e00000 size=524288 type=4096 prot=4
+  MEM_COMMIT
+  PAGE_READWRITE
+commit prot=3
+VM: Commit   0x80000    bytes at 0x7eeed3e00000 (READ_WRITE)
+0x7eeed3e00000: VA 00E00000 - 00E80000 80000 (512k) ok (0x7eeed3e00000)
+ROM loader end
+uae_shmat shmid 5 shmaddr 0x7eeedb000000, shmflg 0 natmem_offset = 0x7eeed3000000
+cpuboard_map currprefs.cpuboard_type = 10
+uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+cyberstorm_maprom
+uae_shmat shmid 8 shmaddr 0x7eefd2f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+cyberstorm_maprom (done)
+uae_shmat shmid 3 shmaddr 0x7eeed3f80000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 4 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3e00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 0 shmaddr 0x7eeed3ef0000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3b00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 3 shmaddr 0x7eeed3a80000, shmflg 0 natmem_offset = 0x7eeed3000000
+memory init end
+gfx_set_picasso_state 0
+drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=0
+drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=1
+gui_disk_image_change drive 3 <no disk>
+driveclick_insert drive=3 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 3 <no disk>
+drive_insert drv=0x1c2e46460 dnum=2 fname= fake=0
+drive_insert drv=0x1c2e46460 dnum=2 fname= fake=1
+gui_disk_image_change drive 2 <no disk>
+driveclick_insert drive=2 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 2 <no disk>
+drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=0
+drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=1
+gui_disk_image_change drive 1 <no disk>
+driveclick_insert drive=1 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 1 <no disk>
+drive_insert drv=0x1c2e01820 dnum=0 fname= fake=0
+drive_insert drv=0x1c2e01820 dnum=0 fname= fake=1
+gui_disk_image_change drive 0 <no disk>
+driveclick_insert drive=0 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 0 <no disk>
+No disk in drive 0.
+Resetting frame rate hack
+fixup_cpu
+1870 CPU functions
+Building CPU, 46224 opcodes (5 0 0)
+CPU=68060, FPU=68060, MMU=68060, JIT=0. fast
+graphics_init
+calling reset_drawing
+init_colors
+currprefs.m68k_speed is -1, not allowing full sync
+init_sound
+ -- stub -- input_get_default_keyboard num=0 return 0
+ -- stub -- input_get_default_keyboard num=1 return 0
+ -- stub -- input_get_default_keyboard num=2 return 0
+ -- stub -- input_get_default_keyboard num=3 return 0
+ -- stub -- input_get_default_keyboard num=4 return 0
+ -- stub -- input_get_default_keyboard num=5 return 0
+ -- stub -- input_get_default_keyboard num=6 return 0
+ -- stub -- input_get_default_keyboard num=7 return 0
+ -- stub -- input_get_default_keyboard num=8 return 0
+ -- stub -- input_get_default_keyboard num=9 return 0
+ -- stub -- input_get_default_keyboard num=10 return 0
+ -- stub -- input_get_default_keyboard num=11 return 0
+ -- stub -- input_get_default_keyboard num=12 return 0
+ -- stub -- input_get_default_keyboard num=13 return 0
+ -- stub -- input_get_default_keyboard num=14 return 0
+ -- stub -- input_get_default_keyboard num=15 return 0
+ -- stub -- input_get_default_keyboard num=16 return 0
+ -- stub -- input_get_default_keyboard num=17 return 0
+ -- stub -- input_get_default_keyboard num=18 return 0
+ -- stub -- input_get_default_keyboard num=19 return 0
+Resetting frame rate hack
+ -- stub -- target_reset 
+ -- stub -- my_resolvesoftlink 
+my_getvolumeinfo /home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet
+ -- stub -- filesys_addexternals 
+Initializing mainboard IDE
+Initializing CPUBoard 'CyberStorm PPC' SCSI controller
+init_shm
+uae_shmat shmid 5 shmaddr 0x7eeedb000000, shmflg 0 natmem_offset = 0x7eeed3000000
+cpuboard_map currprefs.cpuboard_type = 10
+uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+cyberstorm_maprom
+uae_shmat shmid 8 shmaddr 0x7eefd2f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+cyberstorm_maprom (done)
+uae_shmat shmid 3 shmaddr 0x7eeed3f80000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 4 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3e00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 0 shmaddr 0x7eeed3ef0000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3b00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 3 shmaddr 0x7eeed3a80000, shmflg 0 natmem_offset = 0x7eeed3000000
+memory init end
+uae_start_tread "filesys" function at 0x1c12617da arg 0x1c3c885a0
+initparallel
+Reset at 00000000. Chipset mask = 00000007
+00000000    2048K/1 =    2048K Chip memory
+00200000    8704K/0 =    8704K <none>
+00A80000     512K/1 =     512K Kickstart ROM (3AD2601F)
+00B00000     512K/1 =     512K Extended Kickstart ROM (A63586E4)
+00B80000     448K/0 =     448K <none>
+00BF0000      64K/0 =      64K CIA
+00C00000    1536K/0 =    1536K <none>
+00D80000     256K/0 =     256K Gayle (low)
+00DC0000      64K/0 =      64K Battery backed up clock (none)
+00DD0000     128K/0 =     128K Gayle (high)
+00DF0000      64K/0 =      64K Custom chipset
+00E00000     512K/1 =     512K Extended Kickstart ROM (A63586E4)
+00E80000      64K/0 =      64K Autoconfig Z2
+00E90000     384K/0 =     384K <none>
+00EF0000      64K/1 =      64K UAE Boot ROM
+00F00000     256K/1 =     256K CPUBoard F00000 (E20EEA22)
+00F40000      64K/0 =      64K <none>
+00F50000     192K/0 =     192K CPUBoard IO
+00F80000     512K/1 =     512K Kickstart ROM (3AD2601F)
+01000000     112M/0 =     112M <none>
+08000000     128M/1 =     128M RAMSEY memory (high)
+10000000    3839M/0 =    3839M <none>
+FFF00000     512K/1 =     512K CPUBoard MAPROM
+FFF80000     512K/0 =     512K <none>
+uae_start_tread "ide" function at 0x1c128451e arg 0x1c3cf6760
+drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=0
+drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=1
+gui_disk_image_change drive 3 <no disk>
+driveclick_insert drive=3 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 3 <no disk>
+drive_insert drv=0x1c2e46460 dnum=2 fname= fake=0
+drive_insert drv=0x1c2e46460 dnum=2 fname= fake=1
+gui_disk_image_change drive 2 <no disk>
+driveclick_insert drive=2 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 2 <no disk>
+drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=0
+drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=1
+gui_disk_image_change drive 1 <no disk>
+driveclick_insert drive=1 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 1 <no disk>
+drive_insert drv=0x1c2e01820 dnum=0 fname= fake=0
+drive_insert drv=0x1c2e01820 dnum=0 fname= fake=1
+gui_disk_image_change drive 0 <no disk>
+driveclick_insert drive=0 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 0 <no disk>
+uae_shmat shmid 10 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3080000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3100000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3180000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 1 shmaddr 0x7eef13000000, shmflg 0 natmem_offset = 0x7eeed3000000
+CPUBoard 'CyberStorm PPC' flash file '/home/jun/FS-UAE/Kickstarts/cyberstormppc.rom' loaded, RW.
+CPUBoard 'CyberStorm PPC' ROM '/home/jun/FS-UAE/Kickstarts/cyberstormppc.rom' 131072 loaded
+- VirtualProtect addr=0x7eeed3ef0000 size=8192 prot=4
+  PAGE_READWRITE
+ROM VP 00EF0000 - 00F00000 10000 (64k) UNPROT
+- VirtualProtect addr=0x7eeed3f80000 size=524288 prot=4
+  PAGE_READWRITE
+ROM VP 00F80000 - 01000000 80000 (512k) UNPROT
+- VirtualProtect addr=0x7eeed3e00000 size=524288 prot=4
+  PAGE_READWRITE
+ROM VP 00E00000 - 00E80000 80000 (512k) UNPROT
+uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+mousehack_reset
+PAL mode V=50.0804Hz H=15625.0881Hz (227x312+0) IDX=10 (PAL) D=0 RTG=0/0
+target_graphics_buffer_update - clearing buffer
+RTGFREQ: 312*50.0804 = 15625.0879 / 50.1 = 312
+ -- stub -- updatedisplayarea 
+[AUDIO] fs_emu_audio_resume_stream 0
+gfx_set_picasso_state 0
+ -- stub -- fpux_restore 
+68060 MMU: enabled=0 page8k=0 PC=00f80002
+hardreset, memory cleared
+init_sound
+driveclick_init
+open_sound returning 1
+[AUDIO] Buffer underrun in stream 0
+wait_for_frame_no_netplay: new frame rate 50.00 (time: 20000)
+fs_uae_reconfigure_input_ports_amiga
+sending event to set port 0 to mode 1
+sending event to set port 1 to mode 2
+fs_uae_reconfigure_input_ports_host
+configuring joystick port 0
+* nothing in port
+* FIXME
+configuring joystick port 1
+* nothing in port
+* FIXME
+configuring joystick port 2
+* nothing in port
+* FIXME
+configuring joystick port 3
+* nothing in port
+* FIXME
+configuring joystick port 4
+* nothing in port
+* FIXME
+configuring joystick port 5
+* nothing in port
+* FIXME
+configuring joystick port 6
+* nothing in port
+* FIXME
+configuring joystick port 7
+* nothing in port
+* FIXME
+map_custom_keyboard_actions
+map_custom_joystick_actions
+[INPUT] Map custom joystick actions for keyboard
+[INPUT] Config name "keyboard_0_0_0_0_netbsd"
+get system config for device: keyboard_0_0_0_0_netbsd
+checked data "input/keyboard_0_0_0_0_netbsd.conf" = 3
+config file for keyboard_0_0_0_0_netbsd was not found
+[INPUT] Did not find generic gamepad config for device "keyboard_0_0_0_0_netbsd"
+config name "keyboard"
+get system config for device: keyboard
+checked data "input/keyboard.conf" = 0
+read config for keyboard for universal (from data)
+checked data "input/default_keyboard.conf" = 0
+read config for default_keyboard for universal (from data)
+no config for platform universal
+[INPUT] Did not find generic gamepad config for device"keyboard"
+[INPUT] Map custom joystick actions for mouse
+[INPUT] Config name "mouse_0_0_0_0_netbsd"
+get system config for device: mouse_0_0_0_0_netbsd
+checked data "input/mouse_0_0_0_0_netbsd.conf" = 3
+config file for mouse_0_0_0_0_netbsd was not found
+[INPUT] Did not find generic gamepad config for device "mouse_0_0_0_0_netbsd"
+config name "mouse"
+get system config for device: mouse
+checked data "input/mouse.conf" = 0
+read config for mouse for universal (from data)
+no config for platform universal
+[INPUT] Did not find generic gamepad config for device"mouse"
+amiga_set_joystick_port_mode port=0 mode=1
+fs_uae_reconfigure_input_ports_host
+configuring joystick port 0
+* amiga mouse
+* using device MOUSE
+mapping mouse to port 0
+fs_emu_configure_mouse (device: MOUSE)
+did not match device #0 (Keyboard)
+matched device #1
+configuring joystick port 1
+* nothing in port
+* FIXME
+configuring joystick port 2
+* nothing in port
+* FIXME
+configuring joystick port 3
+* nothing in port
+* FIXME
+configuring joystick port 4
+* nothing in port
+* FIXME
+configuring joystick port 5
+* nothing in port
+* FIXME
+configuring joystick port 6
+* nothing in port
+* FIXME
+configuring joystick port 7
+* nothing in port
+* FIXME
+map_custom_keyboard_actions
+map_custom_joystick_actions
+[INPUT] Map custom joystick actions for keyboard
+[INPUT] Config name "keyboard_0_0_0_0_netbsd"
+get system config for device: keyboard_0_0_0_0_netbsd
+checked data "input/keyboard_0_0_0_0_netbsd.conf" = 3
+config file for keyboard_0_0_0_0_netbsd was not found
+[INPUT] Did not find generic gamepad config for device "keyboard_0_0_0_0_netbsd"
+config name "keyboard"
+get system config for device: keyboard
+checked data "input/keyboard.conf" = 0
+read config for keyboard for universal (from data)
+checked data "input/default_keyboard.conf" = 0
+read config for default_keyboard for universal (from data)
+no config for platform universal
+[INPUT] Did not find generic gamepad config for device"keyboard"
+[INPUT] Map custom joystick actions for mouse
+[INPUT] Config name "mouse_0_0_0_0_netbsd"
+get system config for device: mouse_0_0_0_0_netbsd
+checked data "input/mouse_0_0_0_0_netbsd.conf" = 3
+config file for mouse_0_0_0_0_netbsd was not found
+[INPUT] Did not find generic gamepad config for device "mouse_0_0_0_0_netbsd"
+config name "mouse"
+get system config for device: mouse
+checked data "input/mouse.conf" = 0
+read config for mouse for universal (from data)
+no config for platform universal
+[INPUT] Did not find generic gamepad config for device"mouse"
+amiga_set_joystick_port_mode port=1 mode=2
+fs_uae_reconfigure_input_ports_host
+configuring joystick port 0
+* amiga mouse
+* using device MOUSE
+mapping mouse to port 0
+fs_emu_configure_mouse (device: MOUSE)
+did not match device #0 (Keyboard)
+matched device #1
+configuring joystick port 1
+* amiga joystick
+* using device KEYBOARD
+configure joystick "KEYBOARD" for "amiga" (port index 1
+matched device #0
+config name "Keyboard"
+get system config for device: Keyboard
+checked data "input/Keyboard.conf" = 3
+config file for Keyboard was not found
+did not find config for device "Keyboard"
+config name "keyboard_0_0_0_0_netbsd"
+get system config for device: keyboard_0_0_0_0_netbsd
+checked data "input/keyboard_0_0_0_0_netbsd.conf" = 3
+config file for keyboard_0_0_0_0_netbsd was not found
+did not find config for device "keyboard_0_0_0_0_netbsd"
+config name "keyboard"
+get system config for device: keyboard
+checked data "input/keyboard.conf" = 0
+read config for keyboard for amiga (from data)
+checked data "input/default_keyboard.conf" = 0
+read config for default_keyboard for amiga (from data)
+key_ralt (307) => action "1" (68)
+key_down (274) => action "down" (63)
+key_right (275) => action "right" (61)
+did not find action for "default_keyboard"
+key_up (273) => action "up" (62)
+key_left (276) => action "left" (60)
+key_rctrl (305) => action "1" (68)
+[INPUT] Config name "keyboard_0_0_0_0_netbsd"
+get system config for device: keyboard_0_0_0_0_netbsd
+checked data "input/keyboard_0_0_0_0_netbsd.conf" = 3
+config file for keyboard_0_0_0_0_netbsd was not found
+[INPUT] Did not find generic gamepad config for device "keyboard_0_0_0_0_netbsd"
+config name "keyboard"
+get system config for device: keyboard
+checked data "input/keyboard.conf" = 0
+read config for keyboard for universal (from data)
+checked data "input/default_keyboard.conf" = 0
+read config for default_keyboard for universal (from data)
+no config for platform universal
+[INPUT] Did not find generic gamepad config for device"keyboard"
+configuring joystick port 2
+* nothing in port
+* FIXME
+configuring joystick port 3
+* nothing in port
+* FIXME
+configuring joystick port 4
+* nothing in port
+* FIXME
+configuring joystick port 5
+* nothing in port
+* FIXME
+configuring joystick port 6
+* nothing in port
+* FIXME
+configuring joystick port 7
+* nothing in port
+* FIXME
+map_custom_keyboard_actions
+map_custom_joystick_actions
+[INPUT] Map custom joystick actions for keyboard
+[INPUT] Config name "keyboard_0_0_0_0_netbsd"
+get system config for device: keyboard_0_0_0_0_netbsd
+checked data "input/keyboard_0_0_0_0_netbsd.conf" = 3
+config file for keyboard_0_0_0_0_netbsd was not found
+[INPUT] Did not find generic gamepad config for device "keyboard_0_0_0_0_netbsd"
+config name "keyboard"
+get system config for device: keyboard
+checked data "input/keyboard.conf" = 0
+read config for keyboard for universal (from data)
+checked data "input/default_keyboard.conf" = 0
+read config for default_keyboard for universal (from data)
+no config for platform universal
+[INPUT] Did not find generic gamepad config for device"keyboard"
+[INPUT] Map custom joystick actions for mouse
+[INPUT] Config name "mouse_0_0_0_0_netbsd"
+get system config for device: mouse_0_0_0_0_netbsd
+checked data "input/mouse_0_0_0_0_netbsd.conf" = 3
+config file for mouse_0_0_0_0_netbsd was not found
+[INPUT] Did not find generic gamepad config for device "mouse_0_0_0_0_netbsd"
+config name "mouse"
+get system config for device: mouse
+checked data "input/mouse.conf" = 0
+read config for mouse for universal (from data)
+no config for platform universal
+[INPUT] Did not find generic gamepad config for device"mouse"
+Display Size: 640x480 Offset: 74x36
+First: 26 Last: 0 MinV: 0 MaxV: 0 Min: 26
+[VIDEO] fs_emu_set_video_frame_rate: 50.08 (50)
+[DISPLAY] Sync: g_fs_emu_video_sync_to_vblank = 0
+[AUDIO] Buffer underrun in stream 0
+wait_for_frame_no_netplay: new frame rate 50.08 (time: 19967)
+[AUDIO] Buffer underrun in stream 0
+CS: SCSI reset
+uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 4 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
+SERIAL: period=372, baud=9600, hsyncs=14, bits=8, PC=f00100
+68060 MMU: enabled=0 page8k=0 PC=00f0017e
+68060 MMU: enabled=0 page8k=0 PC=00f001c2
+[AUDIO] Buffer underrun in stream 0
+68060 FPU state: enabled
+SERIAL: period=30, baud=115200, hsyncs=1, bits=8, PC=f81d5c
+[reset].
+ROM Location: 00f80000.
+   Version: 46.
+  Revision: 11.
+  ROM Type: AROS ROM Operating System and Libraries.
+ Copyright: Copyright . 1995-2015 The AROS Development Team, All Rights Reserved..
+ ROM Model: 20.05.2015.
+ROM Location: 00e00000.
+   Version: 46.
+  Revision: 11.
+  ROM Type: AROS EXT Extension Libraries.
+ Copyright: Copyright . 1995-2015 The AROS Development Team, All Rights Reserved..
+ ROM Model: 20.05.2015.
+CPU: 68060 FPU: 68060.
+PCR: 04300100.
+[SysBase] invalid at: 00000000.
+[SysBase] kernel commandline 'nomonitors sysdebug=InitCode,debugmmu,mungwall'.
+RAM lower: 00001000.
+RAM upper: 001fffff.
+SS  lower: 0003f800.
+SS  upper: 0003ffff.
+Added memory header:.
+Lower: 00001000.
+Upper: 00200000.
+Resident start: 00f80000.
+Resident end  : 00ffa06c.
+Resident start: 00f00000.
+Resident end  : 00f80000.
+Resident start: 00e00000.
+Resident end  : 00e6f7ba.
+Resident modules (addr: pri flags version name):.
++ 00fe4a14:  127 02   3 "kernel.resource".
++ 00f828fa:  120 01  51 "exec.library".
++ 00f00a28:  120 02   1 "CyberstormPPCEarlyStartup".
++ 00f00d1c:  120 02   1 "CyberstormPPC.IDTag".
++ 00f00bc0:  115 01   1 "CyberstormPPCLauncher".
++ 00fa1b12:  110 82  41 "expansion.library".
++ 00f00aa8:  107 02   1 "CyberstormPPCEarlyCleanup".
++ 00f00f18:  106 02   1 "CyberstormSCSI".
++ 00fa797a:  105 82   2 "debug.library".
++ 00ff5514:  105 01  41 "diag init".
++ 00f9e370:  103 81  41 "utility.library".
++ 00f10654:  102 01 100 "CyberStormLibInit".
++ 00f8ea4c:  101 81  41 "aros.library".
++ 00f82030:  100 01  41 "mmu".
++ 00fe87fc:  100 01   1 "task.resource".
++ 00fef822:  100 81  41 "potgo.resource".
++ 00ff4e8e:  100 01  41 "bootloader.resource".
++ 00fe81f6:   99 01   2 "processor.resource".
++ 00f9f5ae:   94 81  43 "oop.library".
++ 00fc82f0:   92 81   1 "hiddclass.hidd".
++ 00fef308:   80 01   0 "cia.resource".
++ 00ff011e:   80 01   1 "FileSystem.resource".
++ 00fe4258:   70 81  41 "battclock.resource".
++ 00fc95ba:   66 81   1 "graphics.hidd".
++ 00e016fc:   65 81  41 "graphics.library".
++ 00e13ea0:   64 81  50 "layers.library".
++ 00fa89ec:   50 81  41 "timer.device".
++ 00ff330a:   48 81  41 "card.resource".
++ 00fd666a:   45 81   2 "keyboard.hidd".
++ 00fd7034:   45 81   2 "mouse.hidd".
++ 00ff0356:   45 01  41 "misc.resource".
++ 00faab4e:   44 81  41 "keyboard.device".
++ 00fb311e:   44 81  41 "gameport.device".
++ 00fa2e5a:   40 81   3 "partition.library".
++ 00fd7dce:   40 81   1 "amigakbd.hidd".
++ 00fd8756:   40 81   1 "amigamouse.hidd".
++ 00e0017c:   40 81  41 "keymap.library".
++ 00fefa82:   39 81  41 "disk.resource".
++ 00fb0b3c:   35 81  41 "trackdisk.device".
++ 00fa9c3c:   30 81  41 "input.device".
++ 00e1852a:   15 81  50 "intuition.library".
++ 00fd9316:    9 81   1 "amigavideo.hidd".
++ 00e62902:    5 81  40 "cd.device".
++ 00fab5cc:    4 81  41 "console.device".
++ 00fb4ed0:    4 81  42 "ata.device".
++ 00fe356c:    4 81   1 "ata_gayle.hidd".
++ 00e3fa24:    0 81  41 "gadtools.library".
++ 00e5f712:    0 81  40 "mathieeesingbas.library".
++ 00e601f8:    0 81  41 "freeanim.library".
++ 00e60578:    0 81  40 "lowlevel.library".
++ 00fbdffe:   -1 01  41 "afs-handler".
++ 00e6410c:   -1 01  40 "cdfs-handler".
++ 00ff595a:   -9 01  41 "romboot".
++ 00fdecf6:  -10 81   1 "uaegfx.hidd".
++ 00e6df76:  -45 01  41 "alert.hook..
+".
++ 00fb5018:  -49 01  42 "ATA boot wait".
++ 00fe9940:  -50 01  41 "dosboot.resource".
++ 00f8f3d8: -120 00  50 "dos.library".
++ 00fb3bec: -120 80  41 "audio.device".
++ 00e5c574: -120 80  45 "workbench.library".
++ 00e5ee8e: -120 80  41 "mathffp.library".
++ 00fed038: -121 04  41 "DOSBoot cleanup".
++ 00e4a670: -122 84  44 "icon.library".
++ 00fe8efc: -123 04  41 "lddemon.resource".
++ 00ff0614: -123 04  41 "shell.resource".
++ 00e669f4: -123 04  41 "shellcommands.resource".
++ 00e6a336: -123 04  44 "workbook.resource".
++ 00e6deb6: -123 00  40 "workbench.task".
++ 00fbacf6: -124 04  41 "con-handler".
++ 00fc5112: -125 04   1 "ram-handler".
++ 00e612ba: -126 84  41 "nonvolatile.library".
++ 00e619c4: -126 84  42 "nvdisk.library".
++ 00e62408: -126 84  41 "setpatch.library".
+[SysBase] at: 000015a4.
+[start] InitCode(RTF_SINGLETASK, 0).
+[exec] Mungwall enabled.
+[InitCode] calling InitResident (120 02 "CyberstormPPCEarlyStartup").
+[InitCode] calling InitResident (120 02 "CyberstormPPC.IDTag").
+[InitCode] calling InitResident (110 82 "expansion.library").
+configchain.
+Found board 00e80000: mfg=2011 prod=82 size=00010000 serial=00000001 diag=00002000.
+Configuring board: cd=00003478 mfg=2011 prod=82 size=00010000 type=d1.
+uae_shmat shmid 2 shmaddr 0x7eeed3e90000, shmflg 0 natmem_offset = 0x7eeed3000000
+Card 2: Z2 0x00e90000   64K ROM Filesystem autoconfig
+uae_shmat shmid 1 shmaddr 0x7eef13000000, shmflg 0 natmem_offset = 0x7eeed3000000
+-> configured, 00e90000 - 00e9ffff.
+Found board 00e80000: mfg=2011 prod=83 size=01000000 serial=00000001 diag=00000000.
+Configuring board: cd=00003528 mfg=2011 prod=83 size=01000000 type=a0.
+size=1 prev=64 new=64 end=255.
+uae_shmat shmid 1 shmaddr 0x7eef13000000, shmflg 0 natmem_offset = 0x7eeed3000000
+Card 3: Z3 0x40000000   16M RAM Zorro III Fast RAM
+Memory map after autoconfig:
+00000000    2048K/1 =    2048K Chip memory
+00200000    8704K/0 =    8704K <none>
+00A80000     512K/1 =     512K Kickstart ROM (3AD2601F)
+00B00000     512K/1 =     512K Extended Kickstart ROM (A63586E4)
+00B80000     448K/0 =     448K <none>
+00BF0000      64K/0 =      64K CIA
+00C00000    1536K/0 =    1536K <none>
+00D80000     256K/0 =     256K Gayle (low)
+00DC0000      64K/0 =      64K Battery backed up clock (MSM6242B)
+00DD0000     128K/0 =     128K Gayle (high)
+00DF0000      64K/0 =      64K Custom chipset
+00E00000     512K/1 =     512K Extended Kickstart ROM (A63586E4)
+00E80000      64K/0 =      64K <none>
+00E90000      64K/0 =      64K Filesystem autoconfig
+00EA0000     320K/0 =     320K <none>
+00EF0000      64K/1 =      64K UAE Boot ROM
+00F00000     384K/1 =     384K CPUBoard F00000 (56D80233)
+00F60000      64K/0 =      64K CPUBoard IO
+00F70000      64K/0 =      64K <none>
+00F80000     512K/1 =     512K Kickstart ROM (3AD2601F)
+01000000     112M/0 =     112M <none>
+08000000     128M/1 =     128M RAMSEY memory (high)
+10000000     768M/0 =     768M <none>
+40000000      16M/1 =      16M Zorro III Fast RAM
+41000000    3055M/0 =    3055M <none>
+FFF00000     512K/1 =     512K CPUBoard MAPROM
+FFF80000     512K/0 =     512K <none>
+-> configured, 40000000 - 40ffffff.
+configchain done.
+MBRAM @08000000, size 08000000.
+adding ram boards.
+ram board at 40000000, size 01000000 attr 00000405.
+ram boards done.
+[InitCode] calling InitResident (107 02 "CyberstormPPCEarlyCleanup").
+[InitCode] calling InitResident (106 02 "CyberstormSCSI").
+[InitCode] calling InitResident (105 82 "debug.library").
+[InitCode] leave InitCode(0x02, 0).
+[Sysbase] now at: 080006ac.
+SS  lower: 001fd000.
+SS  upper: 001fefff.
+[InitCode] enter InitCode(0x01, 0).
+[InitCode] kickmemptr=0x00000000 kicktagptr=0x00000000 kickchecksum=0x00000000.
+[InitCode] calling InitResident (120 01 "exec.library").
+[InitCode] calling InitResident (115 01 "CyberstormPPCLauncher").
+[InitCode] calling InitResident (105 01 "diag init").
+callroms.
+Read boot ROM base=00e90000 cd=00003478 type=d1.
+da_Config=90.
+Size=0200 DiagPoint=01e0 BootPoint=01e6 Name=000e.
+Name='UAE'.
+Call boot rom @0801b760 board 00e90000 diag 0801b580 configdev 00003478.
+filesystem: diagentry 0801b590 configdev 00003478
+->success.
+Read boot ROM base=40000000 cd=00003528 type=a0.
+Board without boot ROM.
+Read boot ROM base=00f01060 cd=000035d8 type=d2.
+da_Config=90.
+Size=ffff DiagPoint=0010 BootPoint=014e Name=0000.
+Call boot rom @0801b9a8 board 00f01060 diag 0801b998 configdev 000035d8.
+->success.
+callroms done.
+08000000: 08000020 - 0ff80000 00000505 40 'expansion.memory'.
+40000000: 40000020 - 41000000 00000405 20 'Fast Memory'.
+00001000: 00001000 - 00200000 00001703 -10 'chip memory'.
+000021c8: 00f80000 - 01000000 00000400 -128 'Kickstart ROM'.
+00002250: 00e00000 - 00e80000 00000400 -128 'Kickstart ROM'.
+[InitCode] calling InitResident (103 81 "utility.library").
+[InitCode] calling InitResident (102 01 "CyberStormLibInit").
+uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+[InitCode] calling InitResident (101 81 "aros.library").
+[InitCode] calling InitResident (100 81 "cybpci.library").
+[InitCode] calling InitResident (100 01 "mmu").
+Initializing MMU setup.
+VBR 40ff5000.
+Remapped 8192 byte Chip region to Fast, 001fd000 - 001fefff -> 40ff2000 - 40ff3fff (SS_Stack), flags 00000b00.
+68060 MMU: enabled=0 page8k=0 PC=00fe5d20
+68060 MMU: enabled=1 page8k=0 PC=00fe5d38
+.
+################################################################################.
+#                               Software Failure!                              #.
+#                         Task : 0x08011428 - Boot Task                        #.
+#             Error: 0x80000002 - Hardware bus fault/address error             #.
+################################################################################.
+PC   : 0x00EF0408.
+CPU context:.
+D0: 00EF0408 00000020 080006AC 00DFF000.
+D4: 00000020 00000000 00000001 0802D06C.
+A0: 00DFF000 00EFFFFC 0801B918 00F82060.
+A4: 00000000 00EF0408 080006AC 08011280.
+SR:     2300.
+PC: 00EF040.
+Stack trace:.
+0x00EF0408 Invalid stack frame address.
+################################################################################.
+CPU reset PC=f8627c (Kickstart ROM)..
+ -- stub -- target_reset 
+hdf_close_target
+hdf_close_target
+hdf_close_target
+hdf_close_target
+hdf_close_target
+hdf_close_target
+hdf_close_target
+ -- stub -- my_resolvesoftlink 
+my_getvolumeinfo /home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet
+ -- stub -- filesys_addexternals 
+Initializing mainboard IDE
+Initializing CPUBoard 'CyberStorm PPC' SCSI controller
+init_shm
+uae_shmat shmid 5 shmaddr 0x7eeedb000000, shmflg 0 natmem_offset = 0x7eeed3000000
+cpuboard_map currprefs.cpuboard_type = 10
+uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+cyberstorm_maprom
+uae_shmat shmid 8 shmaddr 0x7eefd2f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+cyberstorm_maprom (done)
+uae_shmat shmid 3 shmaddr 0x7eeed3f80000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 4 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3e00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 0 shmaddr 0x7eeed3ef0000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3b00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 3 shmaddr 0x7eeed3a80000, shmflg 0 natmem_offset = 0x7eeed3000000
+memory init end
+uae_start_tread "filesys" function at 0x1c12617da arg 0x1c3c885a0
+initparallel
+Reset at 00F8627C. Chipset mask = 00000007
+00000000    2048K/1 =    2048K Chip memory
+00200000    8704K/0 =    8704K <none>
+00A80000     512K/1 =     512K Kickstart ROM (3AD2601F)
+00B00000     512K/1 =     512K Extended Kickstart ROM (A63586E4)
+00B80000     448K/0 =     448K <none>
+00BF0000      64K/0 =      64K CIA
+00C00000    1536K/0 =    1536K <none>
+00D80000     256K/0 =     256K Gayle (low)
+00DC0000      64K/0 =      64K Battery backed up clock (MSM6242B)
+00DD0000     128K/0 =     128K Gayle (high)
+00DF0000      64K/0 =      64K Custom chipset
+00E00000     512K/1 =     512K Extended Kickstart ROM (A63586E4)
+00E80000      64K/0 =      64K Autoconfig Z2
+00E90000     384K/0 =     384K <none>
+00EF0000      64K/1 =      64K UAE Boot ROM
+00F00000     256K/1 =     256K CPUBoard F00000 (CBD3C034)
+00F40000      64K/0 =      64K <none>
+00F50000     192K/0 =     192K CPUBoard IO
+00F80000     512K/1 =     512K Kickstart ROM (3AD2601F)
+01000000     112M/0 =     112M <none>
+08000000     128M/1 =     128M RAMSEY memory (high)
+10000000    3839M/0 =    3839M <none>
+FFF00000     512K/1 =     512K CPUBoard MAPROM
+FFF80000     512K/0 =     512K <none>
+drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=0
+drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=1
+gui_disk_image_change drive 3 <no disk>
+driveclick_insert drive=3 eject=1 click_initialized=1 wave_initialized=1 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 3 <no disk>
+drive_insert drv=0x1c2e46460 dnum=2 fname= fake=0
+drive_insert drv=0x1c2e46460 dnum=2 fname= fake=1
+gui_disk_image_change drive 2 <no disk>
+driveclick_insert drive=2 eject=1 click_initialized=1 wave_initialized=1 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 2 <no disk>
+drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=0
+drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=1
+gui_disk_image_change drive 1 <no disk>
+driveclick_insert drive=1 eject=1 click_initialized=1 wave_initialized=1 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 1 <no disk>
+drive_insert drv=0x1c2e01820 dnum=0 fname= fake=0
+drive_insert drv=0x1c2e01820 dnum=0 fname= fake=1
+gui_disk_image_change drive 0 <no disk>
+driveclick_insert drive=0 eject=1 click_initialized=1 wave_initialized=1 currprefs.floppyslots[drive].dfxclick=1
+gui_disk_image_change drive 0 <no disk>
+uae_shmat shmid 10 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3080000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3100000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7eeed3180000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 1 shmaddr 0x7eef13000000, shmflg 0 natmem_offset = 0x7eeed3000000
+CPUBoard 'CyberStorm PPC' flash file '/home/jun/FS-UAE/Kickstarts/cyberstormppc.rom' loaded, RW.
+CPUBoard 'CyberStorm PPC' ROM '/home/jun/FS-UAE/Kickstarts/cyberstormppc.rom' 131072 loaded
+- VirtualProtect addr=0x7eeed3ef0000 size=8192 prot=4
+  PAGE_READWRITE
+ROM VP 00EF0000 - 00F00000 10000 (64k) UNPROT
+- VirtualProtect addr=0x7eeed3f80000 size=524288 prot=4
+  PAGE_READWRITE
+ROM VP 00F80000 - 01000000 80000 (512k) UNPROT
+- VirtualProtect addr=0x7eeed3e00000 size=524288 prot=4
+  PAGE_READWRITE
+ROM VP 00E00000 - 00E80000 80000 (512k) UNPROT
+uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+mousehack_reset
+PAL mode V=50.0804Hz H=15625.0881Hz (227x312+0) IDX=10 (PAL) D=0 RTG=0/0
+target_graphics_buffer_update - clearing buffer
+RTGFREQ: 312*50.0804 = 15625.0879 / 50.1 = 312
+gfx_set_picasso_state 0
+Display Size: 640x480 Offset: 74x36
+First: 44 Last: 300 MinV: 0 MaxV: 0 Min: 26
+PAL mode V=26.3936Hz H=15625.0881Hz (227x312+0) IDX=10 (PAL) D=0 RTG=0/0
+target_graphics_buffer_update - clearing buffer
+RTGFREQ: 592*26.3936 = 15625.0002 / 26.4 = 592
+ -- stub -- updatedisplayarea 
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (fffffffe) at fe51b4 -> fe513c!
+Exception 3 (e6e61e) at fe51b4 -> fe513c!
+Exception 3 (4878fffe) at fe51b4 -> fe513c!
+Exception 3 (42414840) at fe51b4 -> fe513c!
+Exception 3 (2e726572) at fe51b4 -> fe513c!
+Exception 3 (6b6e6f76) at fe51b4 -> fe513c!
+Exception 3 (6e20636e) at fe51b4 -> fe513c!
+Exception 3 (6b6e6f76) at fe51b4 -> fe513c!
+Exception 3 (65616478) at fe51b4 -> fe513c!
+Exception 3 (2c206e6e) at fe51b4 -> fe513c!
+Exception 3 (6d656d6e) at fe51b4 -> fe513c!
+Exception 3 (696e2060) at fe51b4 -> fe513c!
+Exception 3 (63686562) at fe51b4 -> fe513c!
+Exception 3 (756e6a) at fe51b4 -> fe513c!
+Exception 3 (6e2e6c68) at fe51b4 -> fe513c!
+Exception 3 (72617278) at fe51b4 -> fe513c!
+Exception 3 (4d656d6e) at fe51b4 -> fe513c!
+Exception 3 (e6f45c) at e6f3ec -> fe513c!
+Exception 3 (84000000) at fe51b4 -> fe513c!
+Illegal instruction: 4772 at 00E6EC04 -> 00FE5644
+Exception 3 (e6eb8a) at fe56c4 -> fe513c!
+B-Trap FFFF at 00FFFFCC -> 00FE5644
+Exception 3 (4c004e74) at fe51b4 -> fe513c!
+Exception 3 (22442c50) at fe51b4 -> fe513c!
+Exception 3 (60266e) at fe51b4 -> fe513c!
+Illegal instruction: 00e5 at 000CB108 -> 00FE5644
+Exception 3 (244cde) at fe51b4 -> fe513c!
+B-Trap FF7E at 000A42AA -> 00FE5644
+B-Trap FFFF at 00FFFEDC -> 00FE5644
+Exception 3 (244cde) at fe51b4 -> fe513c!
+Exception 3 (4eb900fe) at fe51b4 -> fe513c!
+Exception 3 (4042ae) at fe51b4 -> fe513c!
+Exception 3 (e) at fe51b4 -> fe513c!
+Exception 3 (83868) at fe51b4 -> fe513c!
+Exception 3 (2f004eb8) at fe51b4 -> fe513c!
+Exception 3 (2f0a4eb8) at fe51b4 -> fe513c!
+Exception 3 (4880122a) at fe51b4 -> fe513c!
+Exception 3 (3c43ee) at fe51b4 -> fe513c!
+Exception 3 (e6a752) at fe51b4 -> fe513c!
+Exception 3 (670e7200) at fe51b4 -> fe513c!
+Display Size: 640x480 Offset: 74x36
+First: 44 Last: 300 MinV: 0 MaxV: 0 Min: 26
+[VIDEO] fs_emu_set_video_frame_rate: 26.39 (26)
+[DISPLAY] Sync: g_fs_emu_video_sync_to_vblank = 0
+PAL mode V=50.0801Hz H=15625.0881Hz (227x312+0) IDX=10 (PAL) D=0 RTG=0/0
+target_graphics_buffer_update - clearing buffer
+RTGFREQ: 312*50.0801 = 15624.9998 / 50.1 = 312
+ -- stub -- updatedisplayarea 
+wait_for_frame_no_netplay: new frame rate 26.39 (time: 37887)
+Display Size: 640x480 Offset: 74x36
+First: 44 Last: 300 MinV: 0 MaxV: 0 Min: 26
+[VIDEO] fs_emu_set_video_frame_rate: 50.08 (50)
+[DISPLAY] Sync: g_fs_emu_video_sync_to_vblank = 0
+[AUDIO] Buffer underrun in stream 0
+wait_for_frame_no_netplay: new frame rate 50.08 (time: 19968)
+Exception 3 (1ac2052) at fe51b4 -> fe513c!
+B-Trap FD5A at 00040140 -> 00FE5644
+Exception 3 (4e75206a) at fe51b4 -> fe513c!
+Exception 3 (24362a) at fe51b4 -> fe513c!
+Exception 3 (2442ae) at fe51b4 -> fe513c!
+Exception 3 (122b0036) at fe51b4 -> fe513c!
+Exception 3 (9c43ee) at fe51b4 -> fe513c!
+Exception 3 (842ae) at fe51b4 -> fe513c!
+Exception 3 (2a004fee) at fe51b4 -> fe513c!
+Exception 3 (128206c) at fe51b4 -> fe513c!
+Exception 3 (82c78) at fe51b4 -> fe513c!
+Exception 3 (244243ee) at fe51b4 -> fe513c!
+Exception 3 (42a745f8) at fe51b4 -> fe513c!
+Exception 3 (20422c6a) at fe51b4 -> fe513c!
+Exception 3 (670a2c78) at fe51b4 -> fe513c!
+Exception 3 (67642f0a) at fe51b4 -> fe513c!
+Exception 3 (7854508e) at fe51b4 -> fe513c!
+Exception 3 (556e72) at fe51b4 -> fe513c!
+Exception 3 (72617278) at fe51b4 -> fe513c!
+B-Trap FFFF at 00030000 -> 00FE5644
+Exception 3 (508f4e74) at fe51b4 -> fe513c!
+Exception 3 (11002c4c) at fe51b4 -> fe513c!
+Exception 3 (72c2240e) at fe51b4 -> fe513c!
+Exception 3 (93c92c78) at fe51b4 -> fe513c!
+Exception 3 (7a14da8e) at fe51b4 -> fe513c!
+Exception 3 (22442c78) at fe51b4 -> fe513c!
+Exception 3 (6c42ae) at fe51b4 -> fe513c!
+Exception 3 (2e08de84) at fe51b4 -> fe513c!
+Exception 3 (588f4e74) at fe51b4 -> fe513c!
+Illegal instruction: 533e at 00E6702A -> 00FE5644
+Exception 3 (1c42a6) at fe51b4 -> fe513c!
+Exception 3 (28402202) at fe51b4 -> fe513c!
+Exception 3 (fd4e2842) at fe51b4 -> fe513c!
+Exception 3 (544e74) at fe51b4 -> fe513c!
+Exception 3 (875843f8) at fe51b4 -> fe513c!
+Exception 3 (57c54884) at fe51b4 -> fe513c!
+Exception 3 (884aae) at fe51b4 -> fe513c!
+Exception 3 (e66ee6) at fe51b4 -> fe513c!
+Exception 3 (681fffe) at fe51b4 -> fe513c!
+Exception 3 (97cb286c) at fe51b4 -> fe513c!
+Exception 3 (74002202) at fe51b4 -> fe513c!
+Exception 3 (e66d5e) at e66cee -> fe513c!
+Exception 3 (70002c78) at fe51b4 -> fe513c!
+Exception 3 (44fc588e) at fe51b4 -> fe513c!
+Exception 3 (2a004fee) at c672c -> fe513c!
+Exception 3 (c000008) at fe51b4 -> fe513c!
+Illegal instruction: 4173 at 00E66C42 -> 00FE5644
+Exception 3 (7c28dc8e) at fe51b4 -> fe513c!
+Exception 3 (7854508e) at fe51b4 -> fe513c!
+Illegal instruction: 00e6 at 00E66BA0 -> 00FE5644
+[AUDIO] fs_emu_audio_resume_stream 0
+EMU: Enter menu
+update_main_menu
+floppy in 0: 
+EMU: Ungrab input
+[INPUT] Releasing input
+update_main_menu
+floppy in 0: 
+on_quit selected from menu
+fs_emu_quit
+executing quit function
+quit_function
+fs_ml_quit
+running g_quit_function
+force_quit_thread: 1 seconds passed
+force_quit_thread: 2 seconds passed
+force_quit_thread: 3 seconds passed
+force_quit_thread: 4 seconds passed
+force_quit_thread: 5 seconds passed
+force_quit_thread: 6 seconds passed
+force_quit_thread: 7 seconds passed
+force_quit_thread: 8 seconds passed
+force_quit_thread: 9 seconds passed
+force_quit_thread: 10 seconds passed
+force_quit_thread: should force quit (FIXME: not implemented)
+calling amiga_quit
+uae_quit
+UAE: Stopping
+- VirtualProtect addr=0x7eeed3ef0000 size=8192 prot=4
+  PAGE_READWRITE
+ROM VP 00EF0000 - 00F00000 10000 (64k) UNPROT
+- VirtualProtect addr=0x7eeed3f80000 size=524288 prot=4
+  PAGE_READWRITE
+ROM VP 00F80000 - 01000000 80000 (512k) UNPROT
+- VirtualProtect addr=0x7eeed3e00000 size=524288 prot=4
+  PAGE_READWRITE
+ROM VP 00E00000 - 00E80000 80000 (512k) UNPROT
+ -- stub -- close_joystick 
+ -- stub -- close_mouse 
+ -- stub -- close_kb 
+serial: close fd=-1
+ -- stub -- gui_exit 
+VM: Decommit 0x1000000  bytes at 0x7eef13000000
+mapped_free direct Zorro III Fast RAM
+VM: Decommit 0x10000    bytes at 0x7eef64159000
+mapped_free direct Filesystem autoconfig
+hdf_close_target
+hdf_close_target
+hdf_close_target
+hdf_close_target
+hdf_close_target
+hdf_close_target
+hdf_close_target
+VM: Decommit 0x8000000  bytes at 0x7eeedb000000
+mapped_free direct RAMSEY memory (high)
+VM: Decommit 0x80000    bytes at 0x7eeed3f80000
+mapped_free direct Kickstart ROM
+VM: Decommit 0x200000   bytes at 0x7eeed3000000
+mapped_free direct Chip memory
+mapped_free indirect CPUBoard MAPROM
+mapped_free indirect CPUBoard MAPROM2
+VM: Decommit 0x80000    bytes at 0x7eeed3f00000
+mapped_free direct CPUBoard F00000
+VM: Decommit 0x10000    bytes at 0x7eeed3ef0000
+VM: Decommit 0x8000000  bytes at 0x7eeedf000000
+VM: Decommit 0x80000    bytes at 0x7eeed3e00000
+ -- stub -- machdep_free 
+real_main returned
+calling filesys_flush_cache
+flushing all file streams
+[CORE] Return from amiga_main
+fs_ml_quit
+fs_ml_quit already called
+calling fs_ml_stop because emu thread is done
+[FSE] fs_emu_run: main loop is done
+[FSE] Waiting for emulation thread to stop...
+[FSE] Emulation thread stopped
+[OPENAL] fs_emu_audio_shutdown
+OPENAL: Stopping stream 0
+OPENAL: Stopping stream 1
+OPENAL: alcDestroyContext
+OPENAL: alcCloseDevice
+[FSE] Returning from fs_emu_run
+fs-uae shutting down, fs_emu_run returned
+state dir /home/jun/FS-UAE/Save States/cyberstorm was removed because it was empty
+end of main function
