@@ -3,6 +3,27 @@ FS-UAE_config=/home/jun/.config/fs-uae
 FS-UAE=/home/jun/FS-UAE
 AMIGAROM=/usr/local/NetBSD/amiga/amiga-os-310-a1200.rom
 
+#11
+start:
+	fs-uae
+
+#10
+copy-netbsd:
+	cp NetBSD-install.fs-uae ${FS-UAE}/Configurations/
+	cat ${FS-UAE}/Configurations/NetBSD-install.fs-uae
+	cp NetBSD-root+swap.hdf.xz ${FS-UAE}/Hard\ Drives/
+	gunzip ${FS-UAE}/Hard\ Drives/NetBSD-root+swap.hdf.xz
+
+#10
+copy:
+	cp Default.fs-uae ${FS-UAE}/Configurations/
+	cat ${FS-UAE}/Configurations/Default.fs-uae
+
+#9
+fetch:
+	ftp http://www.nagoya.bug.gr.jp/~hamajima/fs-uae/Default.fs-uae
+	ftp http://www.nagoya.bug.gr.jp/~hamajima/fs-uae/NetBSD-root+swap.hdf.xz
+
 #8
 cyberstorm:
 	ls -l ${FS-UAE}/Configurations/cyberstorm.fs-uae
@@ -10,7 +31,7 @@ cyberstorm:
 	fs-uae ${FS-UAE}/Configurations/cyberstorm.fs-uae
 
 #7
-copy:
+copy-cyberstorm:
 	cp cyberstorm.fs-uae ${FS-UAE}/Configurations/
 
 #6
@@ -47,3 +68,15 @@ pkg_add:
 
 log:
 	more  /home/jun/FS-UAE/Cache/Logs/fs-uae.log.txt
+
+#-11
+netbsd:
+	ls -l ${FS-UAE}/Configurations/NetBSD-install.fs-uae
+	cat ${FS-UAE}/Configurations/NetBSD-install.fs-uae
+	fs-uae ${FS-UAE}/Configurations/NetBSD-install.fs-uae
+
+#-09
+mkdisk:
+	echo -n "rdsk" > ${FS-UAE}/Hard\ Drives/NetBSD-usr.hdf
+	dd if=/dev/zero of=${FS-UAE}/Hard\ Drives/NetBSD-usr.hdf oseek=4 bs=1m count=8000
+
