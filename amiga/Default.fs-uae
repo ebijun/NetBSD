@@ -1,5 +1,5 @@
 amiga_model = A1200
-kickstart_file = A1200_3.1.rom
+kickstart_rom_file = A1200_3.1.rom
 cpu = 68060
 accelerator = cyberstorm-ppc
 accelerator_rom = cyberstormppc.rom
@@ -11,7 +11,3 @@ floppy_drive_speed = 0
 hard_drive_0_controller = scsi
 hard_drive_0_type = rdb
 hard_drive_0 = NetBSD-root+swap.hdf
-hard_drive_1_controller = scsi
-hard_drive_1_type = rdb
-hard_drive_1 = NetBSD-usr.hdf
-network_card = a2065

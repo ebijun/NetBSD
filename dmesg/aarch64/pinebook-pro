@@ -1,11 +1,12 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
     2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
-    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+    2024
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.4 (GENERIC64) #0: Tue May 16 08:22:11 UTC 2023
+NetBSD 10.99.10 (GENERIC64) #0: Thu Jan 18 14:42:09 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3946 MB
 avail memory = 3803 MB
@@ -122,15 +123,15 @@ gtmr0: interrupting on GICv3 irq 27
 armgtmr0 at gtmr0: Generic Timer (24000 kHz, virtual)
 timecounter: Timecounter "armgtmr0" frequency 24000000 Hz quality 500
 rkiomux0 at simplebus0: RK3399 IOMUX control
-rkgpio0 at rkiomux0: GPIO (gpio0@ff720000)
+rkgpio0 at rkiomux0: GPIO v1 (gpio0@ff720000)
 gpio0 at rkgpio0: 32 pins
-rkgpio1 at rkiomux0: GPIO (gpio1@ff730000)
+rkgpio1 at rkiomux0: GPIO v1 (gpio1@ff730000)
 gpio1 at rkgpio1: 32 pins
-rkgpio2 at rkiomux0: GPIO (gpio2@ff780000)
+rkgpio2 at rkiomux0: GPIO v1 (gpio2@ff780000)
 gpio2 at rkgpio2: 32 pins
-rkgpio3 at rkiomux0: GPIO (gpio3@ff788000)
+rkgpio3 at rkiomux0: GPIO v1 (gpio3@ff788000)
 gpio3 at rkgpio3: 32 pins
-rkgpio4 at rkiomux0: GPIO (gpio4@ff790000)
+rkgpio4 at rkiomux0: GPIO v1 (gpio4@ff790000)
 gpio4 at rkgpio4: 32 pins
 rkpwm0 at simplebus0: PWM
 rkpwm1 at simplebus0: PWM
@@ -196,19 +197,7 @@ rkvop0: interrupting on GICv3 irq 151
 rkvop1 at simplebus0: RK3399 VOPB
 rkvop1: interrupting on GICv3 irq 150
 rkpcie0 at simplebus0: RK3399 PCIe
-rkpcie0: waiting 898 extra ms for reset (already waited 102)
-rkpcie0: MMIO (32-bit non-prefetchable): 0xfa000000+0x1e00000@0xfa000000
-rkpcie0: IO: 0xfbe00000+0x100000@0xfbe00000
-pci0 at rkpcie0 bus 0
-pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
-ppb0 at pci0 dev 0 function 0: vendor 1d87 product 0100 (rev. 0x00)
-ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x4 @ 2.5GT/s
-pci1 at ppb0 bus 1
-pci1: i/o space, memory space enabled, rd/line, wr/inv ok
-nvme0 at pci1 dev 0 function 0: vendor 8086 product f1a6 (rev. 0x03)
-nvme0: NVMe 1.3
-nvme0: for admin queue interrupting at irq 8192 (MSI-X vec 0)
-nvme0: autoconfiguration error: unable to enable controller
+rkpcie0: link training timeout (link_st 0)
 /power-management@ff310000/power-controller at syscon1 not configured
 rkemmcphy0 at syscon0: eMMC PHY
 /phy@ff7c0000 at simplebus0 not configured
@@ -286,6 +275,8 @@ m25p0 at spi0 slave 0
 /iommu@ff924000 at simplebus0 not configured
 ausoc0 at simplebus0: hdmi-sound
 gpioleds0 at simplebus0: green:power red:standby
+rkv1crypto0 at simplebus0: Crypto v1
+entropy: ready
 armpmu0 at simplebus0: Performance Monitor Unit
 armpmu1 at simplebus0: Performance Monitor Unit
 dwcwdt0 at simplebus0: DesignWare Watchdog Timer
@@ -327,25 +318,31 @@ uhub3: 1 port with 1 removable, self powered
 rkspi0: autoconfiguration error: spi_clk 37125000 is too low for speed 20000000, using speed 18562500
 uhub4 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub4: 1 port with 1 removable, self powered
-m25p0: JEDEC ID mfgid:0xC8, devid:0x4018
-armpmu1: interrupting on GICv3 irq 23
-WARNING: system needs entropy for security; see entropy(7)
-uhub6 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub5 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub5: 1 port with 1 removable, self powered
+uhub6 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub6: 1 port with 1 removable, self powered
+m25p0: JEDEC ID mfgid:0xC8, devid:0x4018
 spiflash0 at m25p0: GigaDevice 25Q127CSIG SPI flash
 spiflash0: 16384 KB, 256 sectors of 64 KB each
-armpmu0: autoconfiguration error: couldn't initialise PMU event counteruhub5 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
-uhub5: 1 port with 1 removable, self powered
-uhub7 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
+uhub7 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub7: 1 port with 1 removable, self powered
-IPsec: Initialized Security Association Processing.
+armpmu0: interrupting on GICv3 irq 23
+armpmu1: autoconfiguration error: couldn't initialise PMU event counter
 sdmmc2 at dwcmmc0
+IPsec: Initialized Security Association Processing.
+sdmmc1: SD card status: 4-bit, C10, U3, V30, A1
+ld1 at sdmmc1: <0xad:0x4c53:USD00:0x10:0x41dec4ba:0x167>
+ld1: 30250 MB, 7682 cyl, 128 head, 63 sec, 512 bytes/sect x 61952000 sectors
+ld1: GPT GUID: e7aafb74-c924-47e6-9d75-f65d2a64dc8e
+autoconfiguration error: ld1: bad GPT partition array CRC
+ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
 sdhc0: autoconfiguration error: timeout waiting for mask 0x3 value 0 (state=0x1fff0a06)
 sdhc0: command or data phase inhibited
 sdhc0: autoconfiguration error: tuning did not complete, using fixed sampling clock
+ehci0: handing over low speed device on port 1 to companion controller
 ld0 at sdmmc0: <0x45:0x0100:DA4064:0x00:0x0b46130f:0x000>
 ld0: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
-ehci0: handing over low speed device on port 1 to companion controller
 ld0: 8-bit width, HS200, 4096 KB cache, 200.000 MHz
 sdmmc2: 4-bit width, 50.000 MHz
 sdmmc2: SDIO function
@@ -355,7 +352,7 @@ bwfm0 at sdmmc2 function 1
 run0 at uhub3 port 1
 run0: Ralink (0x0411) 802.11 n WLAN (0x01a2), rev 2.00/1.01, addr 1
 run0: MAC/BBP RT3070 (rev 0x0201), RF RT3020 (MIMO 1T1R), address 10:6f:3f:ea:e0:3c
-uhub8 at uhub7 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/60.90, addr 2
+uhub8 at uhub6 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/60.90, addr 2
 uhub8: single transaction translator
 uhub8: 4 ports with 1 removable, self powered
 uhidev0 at uhub4 port 1 configuration 1 interface 0
@@ -372,20 +369,22 @@ uhid1 at uhidev1 reportid 3: input=3, output=0, feature=0
 uhid2 at uhidev1 reportid 5: input=0, output=0, feature=5
 uhid3 at uhidev1 reportid 6: input=0, output=0, feature=1039
 uhid4 at uhidev1 reportid 9: input=1, output=0, feature=0
-uhid5 at uhidev1 reportid 30: input=7, output=0, feature=0
-uhid6 at uhidev1 reportid 31: input=0, output=0, feature=1
-uhid7 at uhidev1 reportid 32: input=0, output=0, feature=256
-uhid8 at uhidev1 reportid 34: input=0, output=0, feature=1
-uhid9 at uhidev1 reportid 35: input=0, output=0, feature=1
+uts0 at uhidev1 reportid 30
+uts0: autoconfiguration error: touchscreen has no range report
+uhid5 at uhidev1 reportid 31: input=0, output=0, feature=1
+uhid6 at uhidev1 reportid 32: input=0, output=0, feature=256
+uts1 at uhidev1 reportid 34
+uts1: autoconfiguration error: touchscreen has no X report
+uhid7 at uhidev1 reportid 35: input=0, output=0, feature=1
 uvideo0 at uhub8 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0x0c45) USB Camera (0x6321), rev 2.00/0.00, addr 3
 video0 at uvideo0: Sonix Technology Co., Ltd. (0x0c45) USB Camera (0x6321), rev 2.00/0.00, addr 3
 swwdog0: software watchdog initialized
 rkspi0: RXFIFO overflow
-WARNING: 6 errors while detecting hardware; check system log.
+WARNING: 8 errors while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.4/modules
+kern.module.path=/stand/evbarm/10.99.10/modules
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.pine64,pinebook-pro.bin
 bwfm0: Found Firmware file: brcmfmac43455-sdio.bin
@@ -394,5 +393,4 @@ bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.pine64,pinebook-pro.txt
 bwfm0: autoconfiguration error: NVRAM file not available
 bwfm0: CLM file default:    brcmfmac43455-sdio.clm_blob
 bwfm0: CLM file model-spec: brcmfmac43455-sdio.pine64,pinebook-pro.clm_blob
-entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
