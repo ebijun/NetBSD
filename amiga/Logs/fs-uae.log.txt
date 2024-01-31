@@ -21,31 +21,19 @@ libfsemu init
 ----------------------------------------------------------------------------
 
 [FSE] Init (early)
-current time() is: 1705841239
-localtime+timegm:  1705873639
-localtime+mktime:  1705841239
-time of day:       1705841239 + (367834 / 1000000)
+current time() is: 1706336248
+localtime+timegm:  1706368648
+localtime+mktime:  1706336248
+time of day:       1706336248 + (470722 / 1000000)
 localtime offset:  32400
 [FSE] Calling fs_ml_init
 fs_ml_init (operating system: netbsd)
 load config file
-loading config from /home/jun/FS-UAE/Configurations/cyberstorm.fs-uae
-
-----------------------------------------------------------------------------
-config (/home/jun/FS-UAE/Configurations/cyberstorm.fs-uae)
-----------------------------------------------------------------------------
-
-accelerator = cyberstorm-ppc
-accelerator_rom = cyberstormppc.rom
-accuracy = -1
-amiga_model = A1200
-chip_memory = 2048
-cpu = 68060
-floppy_drive_speed = 0
-hard_drive_0 = AmigaOS/AmiNet
-kickstart_rom_file = A1200_3.1.rom
-save_disk = 0
-zorro_iii_memory = 16384
+- using $exe directory "/usr/pkg/bin"
+checking config file /usr/pkg/bin/Config.fs-uae
+checking config file Config.fs-uae
+checking config file fs-uae.conf
+checking config file /home/jun/.config/fs-uae/fs-uae.conf
 - checking /home/jun/.config/fs-uae/configurations-dir
 checking /usr/pkg/bin/Portable.ini
 checking /usr/pkg/Portable.ini
@@ -57,6 +45,26 @@ checking /Portable.ini
 - using base ($BASE / $FSUAE) directory "/home/jun/FS-UAE"
 resolve_path /home/jun/FS-UAE/Configurations (absolute)
 - using "Configurations" directory "/home/jun/FS-UAE/Configurations"
+checking config file /home/jun/FS-UAE/Configurations/Default.fs-uae
+loading config from /home/jun/FS-UAE/Configurations/Default.fs-uae
+
+----------------------------------------------------------------------------
+config (/home/jun/FS-UAE/Configurations/Default.fs-uae)
+----------------------------------------------------------------------------
+
+accelerator = cyberstorm-ppc
+accelerator_rom = cyberstormppc.rom
+accuracy = -1
+amiga_model = A1200
+chip_memory = 2048
+cpu = 68060
+floppy_drive_speed = 0
+hard_drive_0 = NetBSD-root+swap.hdf
+hard_drive_0_controller = scsi
+hard_drive_0_type = rdb
+kickstart_rom_file = A1200_3.1.rom
+save_disk = 0
+zorro_iii_memory = 1048576
 checking config file /home/jun/FS-UAE/Configurations/Host.fs-uae
 - checking /home/jun/.config/fs-uae/data-dir
 resolve_path /home/jun/FS-UAE/Data (absolute)
@@ -109,9 +117,9 @@ fs_uae_state_dir:
 resolve_path /home/jun/FS-UAE/Save States (absolute)
 - using "Save States" directory "/home/jun/FS-UAE/Save States"
 save_states_dir: /home/jun/FS-UAE/Save States
-save_dir_name not set, using cyberstorm
-- using state dir /home/jun/FS-UAE/Save States/cyberstorm
-final state dir path: /home/jun/FS-UAE/Save States/cyberstorm
+save_dir_name not set, using Default
+- using state dir /home/jun/FS-UAE/Save States/Default
+final state dir path: /home/jun/FS-UAE/Save States/Default
 - checking /home/jun/.config/fs-uae/controllers-dir
 resolve_path /home/jun/FS-UAE/Controllers (absolute)
 - using "Controllers" directory "/home/jun/FS-UAE/Controllers"
@@ -226,10 +234,10 @@ fs_image_destroy
 loaded sub-texture "bezel/right-overlay.png"
 fs_image_destroy
 initializing menu
-load font from data 0x7eef65cc4980 size 26822
+load font from data 0x7d001db827c0 size 26822
 font height: 32 pixels
 512 characters
-load font from data 0x7eef651439c0 size 26832
+load font from data 0x7d001cfd4480 size 26832
 font height: 32 pixels
 512 characters
 [SHADERS] Initialize
@@ -319,7 +327,7 @@ resolution already exists
 adding rtg resolution 1920x1080
 fs_uae_init_video
 fs_uae_configure_menu
-[FSE] fs_emu_run, main_function at 0x1c11a3746
+[FSE] fs_emu_run, main_function at 0x11cfa3746
 checking OpenGL capabilities
 GL_ARB_sync extension found
 error looking up functions
@@ -327,12 +335,12 @@ error looking up functions
 [OPENGL] Using default sync method
 - SYNC_FINISH_SWAP_FINISH
 [FSE] Emulation thread started
-[FSE] Run main function at 0x1c11a3746
+[FSE] Run main function at 0x11cfa3746
 amiga_main
 KB: keyboard_settrans
-target_default_options p=0x1c47ea580 type=0
+target_default_options p=0x1205ea580 type=0
 target_default_options: enabling floppy sounds
- -- stub -- target_save_options zfile=0x7eef6444d000 p=0x1c47ea580
+ -- stub -- target_save_options zfile=0x7d001c307000 p=0x1205ea580
 built_in_chipset_prefs, ignore = 0
 fixup_cpu
 built_in_chipset_prefs, ignore = 0
@@ -343,8 +351,8 @@ NATMEM: Total physical RAM 16315 MB, all RAM 16315 MB
 NATMEM: Attempting to reserve: 2048 MB
 NATMEM: jit compiler 0
 VM: Reserve  0x80000000 bytes
-VM: Reserve  0x80000000 bytes, got address 0x7eeed3000000
-NATMEM: Reserved 0x7eeed3000000-0x7eef53000000 (0x80000000 2048M)
+VM: Reserve  0x80000000 bytes, got address 0x7cff8b200000
+NATMEM: Reserved 0x7cff8b200000-0x7d000b200000 (0x80000000 2048M)
  -- stub -- target_cfgfile_load 
 built_in_chipset_prefs, ignore = 0
 fixup_cpu
@@ -352,7 +360,7 @@ built_in_chipset_prefs, ignore = 0
  -- stub -- target_fixup_options 
 set_device_rom path=(null) romtype=262144 devnum=0
 boardromconfig 0x0
-target_default_options p=0x1c47ea580 type=1
+target_default_options p=0x1205ea580 type=1
 target_default_options: enabling floppy sounds
 built_in_chipset_prefs, ignore = 0
 
@@ -372,7 +380,7 @@ configuring "Amiga 1200", accuracy=1
 amiga_quickstart model=4 config=6 compa=0 (accuracy 1)
 set_device_rom path=(null) romtype=262144 devnum=0
 boardromconfig 0x0
-target_default_options p=0x1c47ea580 type=1
+target_default_options p=0x1205ea580 type=1
 target_default_options: enabling floppy sounds
 built_in_chipset_prefs, ignore = 0
 set option "cachesize" to "0" (result: 1)
@@ -398,7 +406,7 @@ set option "cpu_cycle_exact" to "false" (result: 1)
 set option "waiting_blits" to "false" (result: 1)
 set option "immediate_blits" to "true" (result: 1)
 set option "chipmem_size" to "4" (result: 1)
-set option "z3mem_size" to "16" (result: 1)
+set option "z3mem_size" to "1024" (result: 1)
 set option "sound_stereo_separation" to "7" (result: 1)
 set option "sound_filter_type" to "enhanced" (result: 1)
 configure_floppies
@@ -444,18 +452,28 @@ set option "diskimage17" to "" (result: 1)
 set option "diskimage18" to "" (result: 1)
 set option "diskimage19" to "" (result: 1)
 fs_uae_configure_hard_drives
-resolve_path AmigaOS/AmiNet (relative)
-checking ./AmigaOS/AmiNet
-checking /home/jun/FS-UAE/Configurations/AmigaOS/AmiNet
-checking /home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet
-- found /home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet
-hard drive mount: /home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet
+resolve_path NetBSD-root+swap.hdf (relative)
+checking ./NetBSD-root+swap.hdf
+checking /home/jun/FS-UAE/Configurations/NetBSD-root+swap.hdf
+checking /home/jun/FS-UAE/Hard Drives/NetBSD-root+swap.hdf
+- found /home/jun/FS-UAE/Hard Drives/NetBSD-root+swap.hdf
+hard drive type explicitly set to rdb
+resolve_path (empty string)
+hard drive file: /home/jun/FS-UAE/Hard Drives/NetBSD-root+swap.hdf
+rdb mode: 1
 device: DH0
-mount name: AmiNet
 read only: 0
 boot priority: 0
-set option "filesystem2" to "rw,DH0:AmiNet:/home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet,0" (result: 1)
-set option "uaehf0" to "dir,rw,DH0:AmiNet:/home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet,0" (result: 1)
+surfaces: 0
+reserved: 0
+hd controller: scsi0
+sectors: 0
+block size: 512
+file system: 
+get_filesys_controller scsi0
+ - HD_CONTROLLER_TYPE_SCSI_AUTO
+set option "hardfile2" to "rw,DH0:/home/jun/FS-UAE/Hard Drives/NetBSD-root+swap.hdf,0,0,0,512,0,,scsi0" (result: 1)
+set option "uaehf0" to "hdf,rw,DH0:/home/jun/FS-UAE/Hard Drives/NetBSD-root+swap.hdf,0,0,0,512,0,,scsi0" (result: 1)
 configure_cdrom
 configuring joystick ports:
 set option "joyport0" to "none" (result: 1)
@@ -491,8 +509,8 @@ configuring joystick port 6 (nothing)
 nothing connected to port
 configuring joystick port 7 (nothing)
 nothing connected to port
-set option "statefile" to "/home/jun/FS-UAE/Save States/cyberstorm/Saved State.uss" (result: 1)
-amiga_set_save_image_dir /home/jun/FS-UAE/Save States/cyberstorm
+set option "statefile" to "/home/jun/FS-UAE/Save States/Default/Saved State.uss" (result: 1)
+amiga_set_save_image_dir /home/jun/FS-UAE/Save States/Default
 - checking /home/jun/.config/fs-uae/module-ripper-dir
 resolve_path /home/jun/FS-UAE/Cache/Modules (absolute)
 - using "Modules" directory "/home/jun/FS-UAE/Cache/Modules"
@@ -503,7 +521,7 @@ fs_uae_set_uae_paths
 did not find "built-in" driveclick directory
 read_custom_uae_options
 writing uae config to /home/jun/FS-UAE/Cache/Logs/debug.uae
- -- stub -- target_save_options zfile=0x7eef6444d0c0 p=0x1c47ea580
+ -- stub -- target_save_options zfile=0x7d001c3070c0 p=0x1205ea580
 using text cache texture size 2048x2048
 
 ----------------------------------------------------------------------------
@@ -517,13 +535,13 @@ end of uae configuration
  -- stub -- logging_init 
 init_shm
 NATMEM: size            0x10000000
-NATMEM: z3size        + 0x01000000
+NATMEM: z3size        + 0x40000000
 NATMEM: z3rtgmem_size + 0x00000000
 NATMEM: othersize     + 0x00000000
-NATMEM: totalsize     = 0x11000000
+NATMEM: totalsize     = 0x50000000
 Z3 REAL mapping. JIT direct compatible.
 NATMEM: JIT direct compatible: 1
-NATMEM: Our special area: 0x7eeed3000000-0x7eeee4000000 (0x11000000 272M)
+NATMEM: Our special area: 0x7cff8b200000-0x7cffdb200000 (0x50000000 1280M)
 built_in_chipset_prefs, ignore = 0
 fixup_cpu
 built_in_chipset_prefs, ignore = 0
@@ -555,45 +573,45 @@ built_in_chipset_prefs, ignore = 0
  -- stub -- input_get_default_keyboard num=17 return 0
  -- stub -- input_get_default_keyboard num=18 return 0
  -- stub -- input_get_default_keyboard num=19 return 0
-RTAREA located at 00EF0000
 MMAN: mapped_malloc 0x00010000 start=0x00000000 UAE Boot ROM (rtarea)
 MMAN: Flags: ROMIN
 shmget of size 65536 (64k) for rtarea
-uae_shmat shmid 0 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
-VM: Decommit 0x10000    bytes at 0x7eeed3ef0000
-- VirtualAlloc addr=0x7eeed3ef0000 size=65536 type=4096 prot=4
+uae_shmat shmid 0 shmaddr 0x0, shmflg 0 natmem_offset = 0x7cff8b200000
+VM: Decommit 0x10000    bytes at 0x7cff8c100000
+- VirtualAlloc addr=0x7cff8c100000 size=65536 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x10000    bytes at 0x7eeed3ef0000 (READ_WRITE)
-- VirtualAlloc addr=0x7eeed3ef0000 size=65536 type=4096 prot=4
+VM: Commit   0x10000    bytes at 0x7cff8c100000 (READ_WRITE)
+- VirtualAlloc addr=0x7cff8c100000 size=65536 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x10000    bytes at 0x7eeed3ef0000 (READ_WRITE)
-0x7eeed3ef0000: VA 00EF0000 - 00F00000 10000 (64k) ok (0x7eeed3ef0000)
-uaegfx.card magic code: 00EF3000-00EF313E ABI=00000000
+VM: Commit   0x10000    bytes at 0x7cff8c100000 (READ_WRITE)
+0x7cff8c100000: VA 00F00000 - 00F10000 10000 (64k) ok (0x7cff8c100000)
+uaegfx.card magic code: 00F03000-00F0313E ABI=00000000
 segtracker: install
-MMAN: mapped_malloc 0x01000000 start=0x40000000 Zorro III Fast RAM (z3)
+MMAN: mapped_malloc 0x40000000 start=0x40000000 Zorro III Fast RAM (z3)
 MMAN: Flags: RAM THREADSAFE
-shmget of size 16777216 (16384k) for z3
-uae_shmat shmid 1 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
-VM: Decommit 0x1000020  bytes at 0x7eef13000000
-- VirtualAlloc addr=0x7eef13000000 size=16777248 type=4096 prot=4
+shmget of size 1073741824 (1048576k) for z3
+uae_shmat shmid 1 shmaddr 0x0, shmflg 0 natmem_offset = 0x7cff8b200000
+NATMEM: Removing barrier (32 bytes) beyond reserved memory
+VM: Decommit 0x40000000 bytes at 0x7cffcb200000
+- VirtualAlloc addr=0x7cffcb200000 size=1073741824 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x1000020  bytes at 0x7eef13000000 (READ_WRITE)
-- VirtualAlloc addr=0x7eef13000000 size=16777248 type=4096 prot=4
+VM: Commit   0x40000000 bytes at 0x7cffcb200000 (READ_WRITE)
+- VirtualAlloc addr=0x7cffcb200000 size=1073741824 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x1000020  bytes at 0x7eef13000000 (READ_WRITE)
-0x7eef13000000: VA 40000000 - 41000020 1000020 (16384k) ok (0x7eef13000000)
+VM: Commit   0x40000000 bytes at 0x7cffcb200000 (READ_WRITE)
+0x7cffcb200000: VA 40000000 - 80000000 40000000 (1048576k) ok (0x7cffcb200000)
 MMAN: mapped_malloc 0x00010000 start=0x00000000 Filesystem autoconfig (filesys)
 MMAN: Flags: IO SAFE
 shmget of size 65536 (64k) for filesys
-uae_shmat shmid 2 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 2 shmaddr 0x0, shmflg 0 natmem_offset = 0x7cff8b200000
 - VirtualAlloc addr=0x0 size=65536 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
@@ -602,24 +620,24 @@ NATMEM: Allocated non-reserved memory size 65536
   MEM_COMMIT
   PAGE_READWRITE
 NATMEM: Allocated non-reserved memory size 65536
-0x0: VA FFFF81112D000000 - FFFF81112D010000 10000 (64k) ok (0x0)
+0x0: VA FFFF830074E00000 - FFFF830074E10000 10000 (64k) ok (0x0)
 bsdsocket.library installed
 MMAN: mapped_malloc 0x00080000 start=0x00000000 Kickstart ROM (kick)
 MMAN: Flags: ROM THREADSAFE
 shmget of size 524288 (512k) for kick
-uae_shmat shmid 3 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
-VM: Decommit 0x80020    bytes at 0x7eeed3f80000
-- VirtualAlloc addr=0x7eeed3f80000 size=524320 type=4096 prot=4
+uae_shmat shmid 3 shmaddr 0x0, shmflg 0 natmem_offset = 0x7cff8b200000
+VM: Decommit 0x80020    bytes at 0x7cff8c180000
+- VirtualAlloc addr=0x7cff8c180000 size=524320 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x80020    bytes at 0x7eeed3f80000 (READ_WRITE)
-- VirtualAlloc addr=0x7eeed3f80000 size=524320 type=4096 prot=4
+VM: Commit   0x80020    bytes at 0x7cff8c180000 (READ_WRITE)
+- VirtualAlloc addr=0x7cff8c180000 size=524320 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x80020    bytes at 0x7eeed3f80000 (READ_WRITE)
-0x7eeed3f80000: VA 00F80000 - 01000020 80020 (512k) ok (0x7eeed3f80000)
+VM: Commit   0x80020    bytes at 0x7cff8c180000 (READ_WRITE)
+0x7cff8c180000: VA 00F80000 - 01000020 80020 (512k) ok (0x7cff8c180000)
  -- stub -- my_issamepath 
  -- stub -- my_issamepath 
  -- stub -- my_issamepath 
@@ -627,79 +645,79 @@ VM: Commit   0x80020    bytes at 0x7eeed3f80000 (READ_WRITE)
 MMAN: mapped_malloc 0x00200000 start=0x00000000 Chip memory (chip)
 MMAN: Flags: RAM THREADSAFE
 shmget of size 2097152 (2048k) for chip
-uae_shmat shmid 4 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
-VM: Decommit 0x200020   bytes at 0x7eeed3000000
-- VirtualAlloc addr=0x7eeed3000000 size=2097184 type=4096 prot=4
+uae_shmat shmid 4 shmaddr 0x0, shmflg 0 natmem_offset = 0x7cff8b200000
+VM: Decommit 0x200020   bytes at 0x7cff8b200000
+- VirtualAlloc addr=0x7cff8b200000 size=2097184 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x200020   bytes at 0x7eeed3000000 (READ_WRITE)
-- VirtualAlloc addr=0x7eeed3000000 size=2097184 type=4096 prot=4
+VM: Commit   0x200020   bytes at 0x7cff8b200000 (READ_WRITE)
+- VirtualAlloc addr=0x7cff8b200000 size=2097184 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x200020   bytes at 0x7eeed3000000 (READ_WRITE)
-0x7eeed3000000: VA 00000000 - 00200020 200020 (2048k) ok (0x7eeed3000000)
+VM: Commit   0x200020   bytes at 0x7cff8b200000 (READ_WRITE)
+0x7cff8b200000: VA 00000000 - 00200020 200020 (2048k) ok (0x7cff8b200000)
 MMAN: mapped_malloc 0x08000000 start=0x08000000 RAMSEY memory (high) (ramsey_high)
 MMAN: Flags: RAM THREADSAFE
 shmget of size 134217728 (131072k) for ramsey_high
-uae_shmat shmid 5 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
-VM: Decommit 0x8000000  bytes at 0x7eeedb000000
-- VirtualAlloc addr=0x7eeedb000000 size=134217728 type=4096 prot=4
+uae_shmat shmid 5 shmaddr 0x0, shmflg 0 natmem_offset = 0x7cff8b200000
+VM: Decommit 0x8000000  bytes at 0x7cff93200000
+- VirtualAlloc addr=0x7cff93200000 size=134217728 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x8000000  bytes at 0x7eeedb000000 (READ_WRITE)
-- VirtualAlloc addr=0x7eeedb000000 size=134217728 type=4096 prot=4
+VM: Commit   0x8000000  bytes at 0x7cff93200000 (READ_WRITE)
+- VirtualAlloc addr=0x7cff93200000 size=134217728 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x8000000  bytes at 0x7eeedb000000 (READ_WRITE)
-0x7eeedb000000: VA 08000000 - 10000000 8000000 (131072k) ok (0x7eeedb000000)
+VM: Commit   0x8000000  bytes at 0x7cff93200000 (READ_WRITE)
+0x7cff93200000: VA 08000000 - 10000000 8000000 (131072k) ok (0x7cff93200000)
 MMAN: mapped_malloc 0x08000000 start=0x0c000000 CPUBoard RAM (cyberstorm)
 MMAN: Flags: RAM THREADSAFE
 shmget of size 134217728 (131072k) for cyberstorm
-uae_shmat shmid 6 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
-VM: Decommit 0x8000000  bytes at 0x7eeedf000000
-- VirtualAlloc addr=0x7eeedf000000 size=134217728 type=4096 prot=4
+uae_shmat shmid 6 shmaddr 0x0, shmflg 0 natmem_offset = 0x7cff8b200000
+VM: Decommit 0x8000000  bytes at 0x7cff97200000
+- VirtualAlloc addr=0x7cff97200000 size=134217728 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x8000000  bytes at 0x7eeedf000000 (READ_WRITE)
-- VirtualAlloc addr=0x7eeedf000000 size=134217728 type=4096 prot=4
+VM: Commit   0x8000000  bytes at 0x7cff97200000 (READ_WRITE)
+- VirtualAlloc addr=0x7cff97200000 size=134217728 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x8000000  bytes at 0x7eeedf000000 (READ_WRITE)
-0x7eeedf000000: VA 0C000000 - 14000000 8000000 (131072k) ok (0x7eeedf000000)
+VM: Commit   0x8000000  bytes at 0x7cff97200000 (READ_WRITE)
+0x7cff97200000: VA 0C000000 - 14000000 8000000 (131072k) ok (0x7cff97200000)
 MMAN: mapped_malloc 0x00080000 start=0x00f00000 CPUBoard F00000 (rom_f0_ppc)
 MMAN: Flags: ROM
 shmget of size 524288 (512k) for rom_f0_ppc
-uae_shmat shmid 7 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
-VM: Decommit 0x80000    bytes at 0x7eeed3f00000
-- VirtualAlloc addr=0x7eeed3f00000 size=524288 type=4096 prot=4
+uae_shmat shmid 7 shmaddr 0x0, shmflg 0 natmem_offset = 0x7cff8b200000
+VM: Decommit 0x80000    bytes at 0x7cff8c100000
+- VirtualAlloc addr=0x7cff8c100000 size=524288 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x80000    bytes at 0x7eeed3f00000 (READ_WRITE)
-- VirtualAlloc addr=0x7eeed3f00000 size=524288 type=4096 prot=4
+VM: Commit   0x80000    bytes at 0x7cff8c100000 (READ_WRITE)
+- VirtualAlloc addr=0x7cff8c100000 size=524288 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x80000    bytes at 0x7eeed3f00000 (READ_WRITE)
-0x7eeed3f00000: VA 00F00000 - 00F80000 80000 (512k) ok (0x7eeed3f00000)
+VM: Commit   0x80000    bytes at 0x7cff8c100000 (READ_WRITE)
+0x7cff8c100000: VA 00F00000 - 00F80000 80000 (512k) ok (0x7cff8c100000)
 MMAN: mapped_malloc 0x00080000 start=0xfff00000 CPUBoard MAPROM (maprom)
 MMAN: Flags: RAM INDIRECT NOALLOC
 shmget of size 524288 (512k) for maprom
-MMAN: mapped_malloc using existing baseaddr 0x7eeee2f80000
+MMAN: mapped_malloc using existing baseaddr 0x7cff9b180000
 MMAN: mapped_malloc 0x00080000 start=0xfff00000 CPUBoard MAPROM2 (maprom2)
 MMAN: Flags: RAM INDIRECT NOALLOC
 shmget of size 524288 (512k) for maprom2
-MMAN: mapped_malloc using existing baseaddr 0x7eeee2f00000
-- VirtualProtect addr=0x7eeed3ef0000 size=8192 prot=4
+MMAN: mapped_malloc using existing baseaddr 0x7cff9b100000
+- VirtualProtect addr=0x7cff8c100000 size=8192 prot=4
   PAGE_READWRITE
-ROM VP 00EF0000 - 00F00000 10000 (64k) UNPROT
-- VirtualProtect addr=0x7eeed3f80000 size=524288 prot=4
+ROM VP 00F00000 - 00F10000 10000 (64k) UNPROT
+- VirtualProtect addr=0x7cff8c180000 size=524288 prot=4
   PAGE_READWRITE
 ROM VP 00F80000 - 01000000 80000 (512k) UNPROT
 ROM loader.. (<none>)
@@ -707,51 +725,50 @@ read_rom_name
 MMAN: mapped_malloc 0x00080000 start=0x00000000 Extended Kickstart ROM (rom_e0)
 MMAN: Flags: ROM THREADSAFE
 shmget of size 524288 (512k) for rom_e0
-uae_shmat shmid 10 shmaddr 0x0, shmflg 0 natmem_offset = 0x7eeed3000000
-VM: Decommit 0x80000    bytes at 0x7eeed3e00000
-- VirtualAlloc addr=0x7eeed3e00000 size=524288 type=4096 prot=4
+uae_shmat shmid 10 shmaddr 0x0, shmflg 0 natmem_offset = 0x7cff8b200000
+VM: Decommit 0x80000    bytes at 0x7cff8c000000
+- VirtualAlloc addr=0x7cff8c000000 size=524288 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x80000    bytes at 0x7eeed3e00000 (READ_WRITE)
-- VirtualAlloc addr=0x7eeed3e00000 size=524288 type=4096 prot=4
+VM: Commit   0x80000    bytes at 0x7cff8c000000 (READ_WRITE)
+- VirtualAlloc addr=0x7cff8c000000 size=524288 type=4096 prot=4
   MEM_COMMIT
   PAGE_READWRITE
 commit prot=3
-VM: Commit   0x80000    bytes at 0x7eeed3e00000 (READ_WRITE)
-0x7eeed3e00000: VA 00E00000 - 00E80000 80000 (512k) ok (0x7eeed3e00000)
+VM: Commit   0x80000    bytes at 0x7cff8c000000 (READ_WRITE)
+0x7cff8c000000: VA 00E00000 - 00E80000 80000 (512k) ok (0x7cff8c000000)
 ROM loader end
-uae_shmat shmid 5 shmaddr 0x7eeedb000000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 5 shmaddr 0x7cff93200000, shmflg 0 natmem_offset = 0x7cff8b200000
 cpuboard_map currprefs.cpuboard_type = 10
-uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 7 shmaddr 0x7cff8c100000, shmflg 0 natmem_offset = 0x7cff8b200000
 cyberstorm_maprom
-uae_shmat shmid 8 shmaddr 0x7eefd2f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 8 shmaddr 0x7d008b100000, shmflg 0 natmem_offset = 0x7cff8b200000
 cyberstorm_maprom (done)
-uae_shmat shmid 3 shmaddr 0x7eeed3f80000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 4 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3e00000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 0 shmaddr 0x7eeed3ef0000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3b00000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 3 shmaddr 0x7eeed3a80000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 3 shmaddr 0x7cff8c180000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 4 shmaddr 0x7cff8b200000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 10 shmaddr 0x7cff8c000000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 10 shmaddr 0x7cff8bd00000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 3 shmaddr 0x7cff8bc80000, shmflg 0 natmem_offset = 0x7cff8b200000
 memory init end
 gfx_set_picasso_state 0
-drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=0
-drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=1
+drive_insert drv=0x11ec68a80 dnum=3 fname= fake=0
+drive_insert drv=0x11ec68a80 dnum=3 fname= fake=1
 gui_disk_image_change drive 3 <no disk>
 driveclick_insert drive=3 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
 gui_disk_image_change drive 3 <no disk>
-drive_insert drv=0x1c2e46460 dnum=2 fname= fake=0
-drive_insert drv=0x1c2e46460 dnum=2 fname= fake=1
+drive_insert drv=0x11ec46460 dnum=2 fname= fake=0
+drive_insert drv=0x11ec46460 dnum=2 fname= fake=1
 gui_disk_image_change drive 2 <no disk>
 driveclick_insert drive=2 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
 gui_disk_image_change drive 2 <no disk>
-drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=0
-drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=1
+drive_insert drv=0x11ec23e40 dnum=1 fname= fake=0
+drive_insert drv=0x11ec23e40 dnum=1 fname= fake=1
 gui_disk_image_change drive 1 <no disk>
 driveclick_insert drive=1 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
 gui_disk_image_change drive 1 <no disk>
-drive_insert drv=0x1c2e01820 dnum=0 fname= fake=0
-drive_insert drv=0x1c2e01820 dnum=0 fname= fake=1
+drive_insert drv=0x11ec01820 dnum=0 fname= fake=0
+drive_insert drv=0x11ec01820 dnum=0 fname= fake=1
 gui_disk_image_change drive 0 <no disk>
 driveclick_insert drive=0 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
 gui_disk_image_change drive 0 <no disk>
@@ -788,26 +805,27 @@ init_sound
  -- stub -- input_get_default_keyboard num=19 return 0
 Resetting frame rate hack
  -- stub -- target_reset 
- -- stub -- my_resolvesoftlink 
-my_getvolumeinfo /home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet
  -- stub -- filesys_addexternals 
 Initializing mainboard IDE
 Initializing CPUBoard 'CyberStorm PPC' SCSI controller
+Adding SCSI HD 'cpuboard' unit 0 ('/home/jun/FS-UAE/Hard Drives/NetBSD-root+swap.hdf')
+Adding CPUBoard 'CyberStorm PPC' HD unit 0 ('/home/jun/FS-UAE/Hard Drives/NetBSD-root+swap.hdf')
+hdf_close_target
+hfd open: '/home/jun/FS-UAE/Hard Drives/NetBSD-root+swap.hdf'
+HDF '/home/jun/FS-UAE/Hard Drives/NetBSD-root+swap.hdf' opened, size=4100096K mode=3 empty=0
 init_shm
-uae_shmat shmid 5 shmaddr 0x7eeedb000000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 5 shmaddr 0x7cff93200000, shmflg 0 natmem_offset = 0x7cff8b200000
 cpuboard_map currprefs.cpuboard_type = 10
-uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 7 shmaddr 0x7cff8c100000, shmflg 0 natmem_offset = 0x7cff8b200000
 cyberstorm_maprom
-uae_shmat shmid 8 shmaddr 0x7eefd2f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 8 shmaddr 0x7d008b100000, shmflg 0 natmem_offset = 0x7cff8b200000
 cyberstorm_maprom (done)
-uae_shmat shmid 3 shmaddr 0x7eeed3f80000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 4 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3e00000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 0 shmaddr 0x7eeed3ef0000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3b00000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 3 shmaddr 0x7eeed3a80000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 3 shmaddr 0x7cff8c180000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 4 shmaddr 0x7cff8b200000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 10 shmaddr 0x7cff8c000000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 10 shmaddr 0x7cff8bd00000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 3 shmaddr 0x7cff8bc80000, shmflg 0 natmem_offset = 0x7cff8b200000
 memory init end
-uae_start_tread "filesys" function at 0x1c12617da arg 0x1c3c885a0
 initparallel
 Reset at 00000000. Chipset mask = 00000007
 00000000    2048K/1 =    2048K Chip memory
@@ -823,8 +841,7 @@ Reset at 00000000. Chipset mask = 00000007
 00DF0000      64K/0 =      64K Custom chipset
 00E00000     512K/1 =     512K Extended Kickstart ROM (A63586E4)
 00E80000      64K/0 =      64K Autoconfig Z2
-00E90000     384K/0 =     384K <none>
-00EF0000      64K/1 =      64K UAE Boot ROM
+00E90000     448K/0 =     448K <none>
 00F00000     256K/1 =     256K CPUBoard F00000 (E20EEA22)
 00F40000      64K/0 =      64K <none>
 00F50000     192K/0 =     192K CPUBoard IO
@@ -834,44 +851,45 @@ Reset at 00000000. Chipset mask = 00000007
 10000000    3839M/0 =    3839M <none>
 FFF00000     512K/1 =     512K CPUBoard MAPROM
 FFF80000     512K/0 =     512K <none>
-uae_start_tread "ide" function at 0x1c128451e arg 0x1c3cf6760
-drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=0
-drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=1
+uae_start_tread "ide" function at 0x11d08451e arg 0x11faf6760
+drive_insert drv=0x11ec68a80 dnum=3 fname= fake=0
+drive_insert drv=0x11ec68a80 dnum=3 fname= fake=1
 gui_disk_image_change drive 3 <no disk>
 driveclick_insert drive=3 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
 gui_disk_image_change drive 3 <no disk>
-drive_insert drv=0x1c2e46460 dnum=2 fname= fake=0
-drive_insert drv=0x1c2e46460 dnum=2 fname= fake=1
+drive_insert drv=0x11ec46460 dnum=2 fname= fake=0
+drive_insert drv=0x11ec46460 dnum=2 fname= fake=1
 gui_disk_image_change drive 2 <no disk>
 driveclick_insert drive=2 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
 gui_disk_image_change drive 2 <no disk>
-drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=0
-drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=1
+drive_insert drv=0x11ec23e40 dnum=1 fname= fake=0
+drive_insert drv=0x11ec23e40 dnum=1 fname= fake=1
 gui_disk_image_change drive 1 <no disk>
 driveclick_insert drive=1 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
 gui_disk_image_change drive 1 <no disk>
-drive_insert drv=0x1c2e01820 dnum=0 fname= fake=0
-drive_insert drv=0x1c2e01820 dnum=0 fname= fake=1
+drive_insert drv=0x11ec01820 dnum=0 fname= fake=0
+drive_insert drv=0x11ec01820 dnum=0 fname= fake=1
 gui_disk_image_change drive 0 <no disk>
 driveclick_insert drive=0 eject=1 click_initialized=0 wave_initialized=0 currprefs.floppyslots[drive].dfxclick=1
 gui_disk_image_change drive 0 <no disk>
-uae_shmat shmid 10 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3080000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3100000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3180000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 1 shmaddr 0x7eef13000000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 10 shmaddr 0x7cff8b200000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 10 shmaddr 0x7cff8b280000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 10 shmaddr 0x7cff8b300000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 10 shmaddr 0x7cff8b380000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 1 shmaddr 0x7cffcb200000, shmflg 0 natmem_offset = 0x7cff8b200000
 CPUBoard 'CyberStorm PPC' flash file '/home/jun/FS-UAE/Kickstarts/cyberstormppc.rom' loaded, RW.
 CPUBoard 'CyberStorm PPC' ROM '/home/jun/FS-UAE/Kickstarts/cyberstormppc.rom' 131072 loaded
-- VirtualProtect addr=0x7eeed3ef0000 size=8192 prot=4
+- VirtualProtect addr=0x7cff8c100000 size=8192 prot=4
   PAGE_READWRITE
-ROM VP 00EF0000 - 00F00000 10000 (64k) UNPROT
-- VirtualProtect addr=0x7eeed3f80000 size=524288 prot=4
+ROM VP 00F00000 - 00F10000 10000 (64k) UNPROT
+- VirtualProtect addr=0x7cff8c180000 size=524288 prot=4
   PAGE_READWRITE
 ROM VP 00F80000 - 01000000 80000 (512k) UNPROT
-- VirtualProtect addr=0x7eeed3e00000 size=524288 prot=4
+- VirtualProtect addr=0x7cff8c000000 size=524288 prot=4
   PAGE_READWRITE
 ROM VP 00E00000 - 00E80000 80000 (512k) UNPROT
-uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 7 shmaddr 0x7cff8c100000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 1 shmaddr 0x7cffcb200000, shmflg 0 natmem_offset = 0x7cff8b200000
 mousehack_reset
 PAL mode V=50.0804Hz H=15625.0881Hz (227x312+0) IDX=10 (PAL) D=0 RTG=0/0
 target_graphics_buffer_update - clearing buffer
@@ -1105,12 +1123,11 @@ First: 26 Last: 0 MinV: 0 MaxV: 0 Min: 26
 wait_for_frame_no_netplay: new frame rate 50.08 (time: 19967)
 [AUDIO] Buffer underrun in stream 0
 CS: SCSI reset
-uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 4 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 7 shmaddr 0x7cff8c100000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 4 shmaddr 0x7cff8b200000, shmflg 0 natmem_offset = 0x7cff8b200000
 SERIAL: period=372, baud=9600, hsyncs=14, bits=8, PC=f00100
 68060 MMU: enabled=0 page8k=0 PC=00f0017e
 68060 MMU: enabled=0 page8k=0 PC=00f001c2
-[AUDIO] Buffer underrun in stream 0
 68060 FPU state: enabled
 SERIAL: period=30, baud=115200, hsyncs=1, bits=8, PC=f81d5c
 [reset].
@@ -1225,17 +1242,11 @@ Resident modules (addr: pri flags version name):.
 [InitCode] calling InitResident (120 02 "CyberstormPPC.IDTag").
 [InitCode] calling InitResident (110 82 "expansion.library").
 configchain.
-Found board 00e80000: mfg=2011 prod=82 size=00010000 serial=00000001 diag=00002000.
-Configuring board: cd=00003478 mfg=2011 prod=82 size=00010000 type=d1.
-uae_shmat shmid 2 shmaddr 0x7eeed3e90000, shmflg 0 natmem_offset = 0x7eeed3000000
-Card 2: Z2 0x00e90000   64K ROM Filesystem autoconfig
-uae_shmat shmid 1 shmaddr 0x7eef13000000, shmflg 0 natmem_offset = 0x7eeed3000000
--> configured, 00e90000 - 00e9ffff.
-Found board 00e80000: mfg=2011 prod=83 size=01000000 serial=00000001 diag=00000000.
-Configuring board: cd=00003528 mfg=2011 prod=83 size=01000000 type=a0.
-size=1 prev=64 new=64 end=255.
-uae_shmat shmid 1 shmaddr 0x7eef13000000, shmflg 0 natmem_offset = 0x7eeed3000000
-Card 3: Z3 0x40000000   16M RAM Zorro III Fast RAM
+Found board 00e80000: mfg=2011 prod=83 size=40000000 serial=00000001 diag=00000000.
+Configuring board: cd=00003478 mfg=2011 prod=83 size=40000000 type=a6.
+size=64 prev=64 new=64 end=255.
+uae_shmat shmid 1 shmaddr 0x7cffcb200000, shmflg 0 natmem_offset = 0x7cff8b200000
+Card 2: Z3 0x40000000 1024M RAM Zorro III Fast RAM
 Memory map after autoconfig:
 00000000    2048K/1 =    2048K Chip memory
 00200000    8704K/0 =    8704K <none>
@@ -1249,10 +1260,7 @@ Memory map after autoconfig:
 00DD0000     128K/0 =     128K Gayle (high)
 00DF0000      64K/0 =      64K Custom chipset
 00E00000     512K/1 =     512K Extended Kickstart ROM (A63586E4)
-00E80000      64K/0 =      64K <none>
-00E90000      64K/0 =      64K Filesystem autoconfig
-00EA0000     320K/0 =     320K <none>
-00EF0000      64K/1 =      64K UAE Boot ROM
+00E80000     512K/0 =     512K <none>
 00F00000     384K/1 =     384K CPUBoard F00000 (56D80233)
 00F60000      64K/0 =      64K CPUBoard IO
 00F70000      64K/0 =      64K <none>
@@ -1260,15 +1268,15 @@ Memory map after autoconfig:
 01000000     112M/0 =     112M <none>
 08000000     128M/1 =     128M RAMSEY memory (high)
 10000000     768M/0 =     768M <none>
-40000000      16M/1 =      16M Zorro III Fast RAM
-41000000    3055M/0 =    3055M <none>
+40000000    1024M/1 =    1024M Zorro III Fast RAM
+80000000    2047M/0 =    2047M <none>
 FFF00000     512K/1 =     512K CPUBoard MAPROM
 FFF80000     512K/0 =     512K <none>
--> configured, 40000000 - 40ffffff.
+-> configured, 40000000 - 7fffffff.
 configchain done.
 MBRAM @08000000, size 08000000.
 adding ram boards.
-ram board at 40000000, size 01000000 attr 00000405.
+ram board at 40000000, size 40000000 attr 00000405.
 ram boards done.
 [InitCode] calling InitResident (107 02 "CyberstormPPCEarlyCleanup").
 [InitCode] calling InitResident (106 02 "CyberstormSCSI").
@@ -1283,741 +1291,103 @@ SS  upper: 001fefff.
 [InitCode] calling InitResident (115 01 "CyberstormPPCLauncher").
 [InitCode] calling InitResident (105 01 "diag init").
 callroms.
-Read boot ROM base=00e90000 cd=00003478 type=d1.
-da_Config=90.
-Size=0200 DiagPoint=01e0 BootPoint=01e6 Name=000e.
-Name='UAE'.
-Call boot rom @0801b760 board 00e90000 diag 0801b580 configdev 00003478.
-filesystem: diagentry 0801b590 configdev 00003478
-->success.
-Read boot ROM base=40000000 cd=00003528 type=a0.
+Read boot ROM base=40000000 cd=00003478 type=a6.
 Board without boot ROM.
-Read boot ROM base=00f01060 cd=000035d8 type=d2.
+Read boot ROM base=00f01060 cd=00003528 type=d2.
 da_Config=90.
 Size=ffff DiagPoint=0010 BootPoint=014e Name=0000.
-Call boot rom @0801b9a8 board 00f01060 diag 0801b998 configdev 000035d8.
+Call boot rom @0801b590 board 00f01060 diag 0801b580 configdev 00003528.
 ->success.
 callroms done.
 08000000: 08000020 - 0ff80000 00000505 40 'expansion.memory'.
-40000000: 40000020 - 41000000 00000405 20 'Fast Memory'.
+40000000: 40000020 - 80000000 00000405 20 'Fast Memory'.
 00001000: 00001000 - 00200000 00001703 -10 'chip memory'.
 000021c8: 00f80000 - 01000000 00000400 -128 'Kickstart ROM'.
 00002250: 00e00000 - 00e80000 00000400 -128 'Kickstart ROM'.
 [InitCode] calling InitResident (103 81 "utility.library").
 [InitCode] calling InitResident (102 01 "CyberStormLibInit").
-uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
+uae_shmat shmid 7 shmaddr 0x7cff8c100000, shmflg 0 natmem_offset = 0x7cff8b200000
+uae_shmat shmid 7 shmaddr 0x7cff8c100000, shmflg 0 natmem_offset = 0x7cff8b200000
 [InitCode] calling InitResident (101 81 "aros.library").
 [InitCode] calling InitResident (100 81 "cybpci.library").
 [InitCode] calling InitResident (100 01 "mmu").
 Initializing MMU setup.
-VBR 40ff5000.
-Remapped 8192 byte Chip region to Fast, 001fd000 - 001fefff -> 40ff2000 - 40ff3fff (SS_Stack), flags 00000b00.
+VBR 7fff5000.
+[AUDIO] fs_emu_audio_resume_stream 0
+Remapped 8192 byte Chip region to Fast, 001fd000 - 001fefff -> 7fff2000 - 7fff3fff (SS_Stack), flags 00000b00.
 68060 MMU: enabled=0 page8k=0 PC=00fe5d20
 68060 MMU: enabled=1 page8k=0 PC=00fe5d38
-.
-################################################################################.
-#                               Software Failure!                              #.
-#                         Task : 0x08011428 - Boot Task                        #.
-#             Error: 0x80000002 - Hardware bus fault/address error             #.
-################################################################################.
-PC   : 0x00EF0408.
-CPU context:.
-D0: 00EF0408 00000020 080006AC 00DFF000.
-D4: 00000020 00000000 00000001 0802D06C.
-A0: 00DFF000 00EFFFFC 0801B918 00F82060.
-A4: 00000000 00EF0408 080006AC 08011280.
-SR:     2300.
-PC: 00EF040.
-Stack trace:.
-0x00EF0408 Invalid stack frame address.
-################################################################################.
-CPU reset PC=f8627c (Kickstart ROM)..
- -- stub -- target_reset 
-hdf_close_target
-hdf_close_target
-hdf_close_target
-hdf_close_target
-hdf_close_target
-hdf_close_target
-hdf_close_target
- -- stub -- my_resolvesoftlink 
-my_getvolumeinfo /home/jun/FS-UAE/Hard Drives/AmigaOS/AmiNet
- -- stub -- filesys_addexternals 
-Initializing mainboard IDE
-Initializing CPUBoard 'CyberStorm PPC' SCSI controller
-init_shm
-uae_shmat shmid 5 shmaddr 0x7eeedb000000, shmflg 0 natmem_offset = 0x7eeed3000000
-cpuboard_map currprefs.cpuboard_type = 10
-uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
-cyberstorm_maprom
-uae_shmat shmid 8 shmaddr 0x7eefd2f00000, shmflg 0 natmem_offset = 0x7eeed3000000
-cyberstorm_maprom (done)
-uae_shmat shmid 3 shmaddr 0x7eeed3f80000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 4 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3e00000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 0 shmaddr 0x7eeed3ef0000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3b00000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 3 shmaddr 0x7eeed3a80000, shmflg 0 natmem_offset = 0x7eeed3000000
-memory init end
-uae_start_tread "filesys" function at 0x1c12617da arg 0x1c3c885a0
-initparallel
-Reset at 00F8627C. Chipset mask = 00000007
-00000000    2048K/1 =    2048K Chip memory
-00200000    8704K/0 =    8704K <none>
-00A80000     512K/1 =     512K Kickstart ROM (3AD2601F)
-00B00000     512K/1 =     512K Extended Kickstart ROM (A63586E4)
-00B80000     448K/0 =     448K <none>
-00BF0000      64K/0 =      64K CIA
-00C00000    1536K/0 =    1536K <none>
-00D80000     256K/0 =     256K Gayle (low)
-00DC0000      64K/0 =      64K Battery backed up clock (MSM6242B)
-00DD0000     128K/0 =     128K Gayle (high)
-00DF0000      64K/0 =      64K Custom chipset
-00E00000     512K/1 =     512K Extended Kickstart ROM (A63586E4)
-00E80000      64K/0 =      64K Autoconfig Z2
-00E90000     384K/0 =     384K <none>
-00EF0000      64K/1 =      64K UAE Boot ROM
-00F00000     256K/1 =     256K CPUBoard F00000 (CBD3C034)
-00F40000      64K/0 =      64K <none>
-00F50000     192K/0 =     192K CPUBoard IO
-00F80000     512K/1 =     512K Kickstart ROM (3AD2601F)
-01000000     112M/0 =     112M <none>
-08000000     128M/1 =     128M RAMSEY memory (high)
-10000000    3839M/0 =    3839M <none>
-FFF00000     512K/1 =     512K CPUBoard MAPROM
-FFF80000     512K/0 =     512K <none>
-drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=0
-drive_insert drv=0x1c2e68a80 dnum=3 fname= fake=1
-gui_disk_image_change drive 3 <no disk>
-driveclick_insert drive=3 eject=1 click_initialized=1 wave_initialized=1 currprefs.floppyslots[drive].dfxclick=1
-gui_disk_image_change drive 3 <no disk>
-drive_insert drv=0x1c2e46460 dnum=2 fname= fake=0
-drive_insert drv=0x1c2e46460 dnum=2 fname= fake=1
-gui_disk_image_change drive 2 <no disk>
-driveclick_insert drive=2 eject=1 click_initialized=1 wave_initialized=1 currprefs.floppyslots[drive].dfxclick=1
-gui_disk_image_change drive 2 <no disk>
-drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=0
-drive_insert drv=0x1c2e23e40 dnum=1 fname= fake=1
-gui_disk_image_change drive 1 <no disk>
-driveclick_insert drive=1 eject=1 click_initialized=1 wave_initialized=1 currprefs.floppyslots[drive].dfxclick=1
-gui_disk_image_change drive 1 <no disk>
-drive_insert drv=0x1c2e01820 dnum=0 fname= fake=0
-drive_insert drv=0x1c2e01820 dnum=0 fname= fake=1
-gui_disk_image_change drive 0 <no disk>
-driveclick_insert drive=0 eject=1 click_initialized=1 wave_initialized=1 currprefs.floppyslots[drive].dfxclick=1
-gui_disk_image_change drive 0 <no disk>
-uae_shmat shmid 10 shmaddr 0x7eeed3000000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3080000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3100000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 10 shmaddr 0x7eeed3180000, shmflg 0 natmem_offset = 0x7eeed3000000
-uae_shmat shmid 1 shmaddr 0x7eef13000000, shmflg 0 natmem_offset = 0x7eeed3000000
-CPUBoard 'CyberStorm PPC' flash file '/home/jun/FS-UAE/Kickstarts/cyberstormppc.rom' loaded, RW.
-CPUBoard 'CyberStorm PPC' ROM '/home/jun/FS-UAE/Kickstarts/cyberstormppc.rom' 131072 loaded
-- VirtualProtect addr=0x7eeed3ef0000 size=8192 prot=4
-  PAGE_READWRITE
-ROM VP 00EF0000 - 00F00000 10000 (64k) UNPROT
-- VirtualProtect addr=0x7eeed3f80000 size=524288 prot=4
-  PAGE_READWRITE
-ROM VP 00F80000 - 01000000 80000 (512k) UNPROT
-- VirtualProtect addr=0x7eeed3e00000 size=524288 prot=4
-  PAGE_READWRITE
-ROM VP 00E00000 - 00E80000 80000 (512k) UNPROT
-uae_shmat shmid 7 shmaddr 0x7eeed3f00000, shmflg 0 natmem_offset = 0x7eeed3000000
-mousehack_reset
-PAL mode V=50.0804Hz H=15625.0881Hz (227x312+0) IDX=10 (PAL) D=0 RTG=0/0
+[InitCode] calling InitResident (100 01 "task.resource").
+[InitCode] calling InitResident (100 81 "potgo.resource").
+[InitCode] calling InitResident (100 01 "bootloader.resource").
+[InitCode] calling InitResident (99 01 "processor.resource").
+[InitCode] calling InitResident (94 81 "oop.library").
+[InitCode] calling InitResident (92 81 "hiddclass.hidd").
+[InitCode] calling InitResident (80 01 "cia.resource").
+[InitCode] calling InitResident (80 01 "FileSystem.resource").
+[InitCode] calling InitResident (70 81 "battclock.resource").
+[InitCode] calling InitResident (66 81 "graphics.hidd").
+[InitCode] calling InitResident (65 81 "graphics.library").
+[InitCode] calling InitResident (64 81 "layers.library").
+[InitCode] calling InitResident (60 01 "BootVGA.Monitor").
+[InitCode] calling InitResident (50 81 "timer.device").
+PAL mode V=49.9204Hz H=15625.0881Hz (227x312+1) IDX=10 (PAL) D=0 RTG=0/0
 target_graphics_buffer_update - clearing buffer
-RTGFREQ: 312*50.0804 = 15625.0879 / 50.1 = 312
-gfx_set_picasso_state 0
-Display Size: 640x480 Offset: 74x36
-First: 44 Last: 300 MinV: 0 MaxV: 0 Min: 26
-PAL mode V=26.3936Hz H=15625.0881Hz (227x312+0) IDX=10 (PAL) D=0 RTG=0/0
-target_graphics_buffer_update - clearing buffer
-RTGFREQ: 592*26.3936 = 15625.0002 / 26.4 = 592
- -- stub -- updatedisplayarea 
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (fffffffe) at fe51b4 -> fe513c!
-Exception 3 (e6e61e) at fe51b4 -> fe513c!
-Exception 3 (4878fffe) at fe51b4 -> fe513c!
-Exception 3 (42414840) at fe51b4 -> fe513c!
-Exception 3 (2e726572) at fe51b4 -> fe513c!
-Exception 3 (6b6e6f76) at fe51b4 -> fe513c!
-Exception 3 (6e20636e) at fe51b4 -> fe513c!
-Exception 3 (6b6e6f76) at fe51b4 -> fe513c!
-Exception 3 (65616478) at fe51b4 -> fe513c!
-Exception 3 (2c206e6e) at fe51b4 -> fe513c!
-Exception 3 (6d656d6e) at fe51b4 -> fe513c!
-Exception 3 (696e2060) at fe51b4 -> fe513c!
-Exception 3 (63686562) at fe51b4 -> fe513c!
-Exception 3 (756e6a) at fe51b4 -> fe513c!
-Exception 3 (6e2e6c68) at fe51b4 -> fe513c!
-Exception 3 (72617278) at fe51b4 -> fe513c!
-Exception 3 (4d656d6e) at fe51b4 -> fe513c!
-Exception 3 (e6f45c) at e6f3ec -> fe513c!
-Exception 3 (84000000) at fe51b4 -> fe513c!
-Illegal instruction: 4772 at 00E6EC04 -> 00FE5644
-Exception 3 (e6eb8a) at fe56c4 -> fe513c!
-B-Trap FFFF at 00FFFFCC -> 00FE5644
-Exception 3 (4c004e74) at fe51b4 -> fe513c!
-Exception 3 (22442c50) at fe51b4 -> fe513c!
-Exception 3 (60266e) at fe51b4 -> fe513c!
-Illegal instruction: 00e5 at 000CB108 -> 00FE5644
-Exception 3 (244cde) at fe51b4 -> fe513c!
-B-Trap FF7E at 000A42AA -> 00FE5644
-B-Trap FFFF at 00FFFEDC -> 00FE5644
-Exception 3 (244cde) at fe51b4 -> fe513c!
-Exception 3 (4eb900fe) at fe51b4 -> fe513c!
-Exception 3 (4042ae) at fe51b4 -> fe513c!
-Exception 3 (e) at fe51b4 -> fe513c!
-Exception 3 (83868) at fe51b4 -> fe513c!
-Exception 3 (2f004eb8) at fe51b4 -> fe513c!
-Exception 3 (2f0a4eb8) at fe51b4 -> fe513c!
-Exception 3 (4880122a) at fe51b4 -> fe513c!
-Exception 3 (3c43ee) at fe51b4 -> fe513c!
-Exception 3 (e6a752) at fe51b4 -> fe513c!
-Exception 3 (670e7200) at fe51b4 -> fe513c!
-Display Size: 640x480 Offset: 74x36
-First: 44 Last: 300 MinV: 0 MaxV: 0 Min: 26
-[VIDEO] fs_emu_set_video_frame_rate: 26.39 (26)
+[VIDEO] fs_emu_set_video_frame_rate: 49.92 (50)
 [DISPLAY] Sync: g_fs_emu_video_sync_to_vblank = 0
-PAL mode V=50.0801Hz H=15625.0881Hz (227x312+0) IDX=10 (PAL) D=0 RTG=0/0
-target_graphics_buffer_update - clearing buffer
-RTGFREQ: 312*50.0801 = 15624.9998 / 50.1 = 312
- -- stub -- updatedisplayarea 
-wait_for_frame_no_netplay: new frame rate 26.39 (time: 37887)
-Display Size: 640x480 Offset: 74x36
-First: 44 Last: 300 MinV: 0 MaxV: 0 Min: 26
-[VIDEO] fs_emu_set_video_frame_rate: 50.08 (50)
-[DISPLAY] Sync: g_fs_emu_video_sync_to_vblank = 0
-[AUDIO] Buffer underrun in stream 0
-wait_for_frame_no_netplay: new frame rate 50.08 (time: 19968)
-Exception 3 (1ac2052) at fe51b4 -> fe513c!
-B-Trap FD5A at 00040140 -> 00FE5644
-Exception 3 (4e75206a) at fe51b4 -> fe513c!
-Exception 3 (24362a) at fe51b4 -> fe513c!
-Exception 3 (2442ae) at fe51b4 -> fe513c!
-Exception 3 (122b0036) at fe51b4 -> fe513c!
-Exception 3 (9c43ee) at fe51b4 -> fe513c!
-Exception 3 (842ae) at fe51b4 -> fe513c!
-Exception 3 (2a004fee) at fe51b4 -> fe513c!
-Exception 3 (128206c) at fe51b4 -> fe513c!
-Exception 3 (82c78) at fe51b4 -> fe513c!
-Exception 3 (244243ee) at fe51b4 -> fe513c!
-Exception 3 (42a745f8) at fe51b4 -> fe513c!
-Exception 3 (20422c6a) at fe51b4 -> fe513c!
-Exception 3 (670a2c78) at fe51b4 -> fe513c!
-Exception 3 (67642f0a) at fe51b4 -> fe513c!
-Exception 3 (7854508e) at fe51b4 -> fe513c!
-Exception 3 (556e72) at fe51b4 -> fe513c!
-Exception 3 (72617278) at fe51b4 -> fe513c!
-B-Trap FFFF at 00030000 -> 00FE5644
-Exception 3 (508f4e74) at fe51b4 -> fe513c!
-Exception 3 (11002c4c) at fe51b4 -> fe513c!
-Exception 3 (72c2240e) at fe51b4 -> fe513c!
-Exception 3 (93c92c78) at fe51b4 -> fe513c!
-Exception 3 (7a14da8e) at fe51b4 -> fe513c!
-Exception 3 (22442c78) at fe51b4 -> fe513c!
-Exception 3 (6c42ae) at fe51b4 -> fe513c!
-Exception 3 (2e08de84) at fe51b4 -> fe513c!
-Exception 3 (588f4e74) at fe51b4 -> fe513c!
-Illegal instruction: 533e at 00E6702A -> 00FE5644
-Exception 3 (1c42a6) at fe51b4 -> fe513c!
-Exception 3 (28402202) at fe51b4 -> fe513c!
-Exception 3 (fd4e2842) at fe51b4 -> fe513c!
-Exception 3 (544e74) at fe51b4 -> fe513c!
-Exception 3 (875843f8) at fe51b4 -> fe513c!
-Exception 3 (57c54884) at fe51b4 -> fe513c!
-Exception 3 (884aae) at fe51b4 -> fe513c!
-Exception 3 (e66ee6) at fe51b4 -> fe513c!
-Exception 3 (681fffe) at fe51b4 -> fe513c!
-Exception 3 (97cb286c) at fe51b4 -> fe513c!
-Exception 3 (74002202) at fe51b4 -> fe513c!
-Exception 3 (e66d5e) at e66cee -> fe513c!
-Exception 3 (70002c78) at fe51b4 -> fe513c!
-Exception 3 (44fc588e) at fe51b4 -> fe513c!
-Exception 3 (2a004fee) at c672c -> fe513c!
-Exception 3 (c000008) at fe51b4 -> fe513c!
-Illegal instruction: 4173 at 00E66C42 -> 00FE5644
-Exception 3 (7c28dc8e) at fe51b4 -> fe513c!
-Exception 3 (7854508e) at fe51b4 -> fe513c!
-Illegal instruction: 00e6 at 00E66BA0 -> 00FE5644
+[InitCode] calling InitResident (48 81 "card.resource").
+PCMCIA slot enabled.
+[TaskRes] NewAddTask(0x0803b1b8).
+[TaskRes] NewAddTask: task @ 0x0803b1b8.
+[TaskRes] TaskResAddTask: taskentry @ 0x0803b7wait_for_frame_no_netplay: new frame rate 49.92 (time: 20031)
+50 for 'card.resource'.
+[InitCode] calling InitResident (45 81 "keyboard.hidd").
+[InitCode] calling InitResident (45 81 "mouse.hidd").
+[InitCode] calling InitResident (45 01 "misc.resource").
+[InitCode] calling InitResident (44 81 "keyboard.device").
+[InitCode] calling InitResident (44 81 "gameport.device").
+[InitCode] calling InitResident (40 81 "partition.library").
+[InitCode] calling InitResident (40 81 "amigakbd.hidd").
+[InitCode] calling InitResident (40 81 "amigamouse.hidd").
+[InitCode] calling InitResident (40 81 "keymap.library").
+[InitCode] calling InitResident (39 81 "disk.resource").
 [AUDIO] fs_emu_audio_resume_stream 0
+[InitCode] calling InitResident (35 81 "trackdisk.device").
+[TaskRes] NewAddTask(0x08041068).
+[AUDIO] Buffer underrun in stream 0
+[TaskRes] NewAddTask: task @ 0x08041068.
+[TaskRes] TaskResAddTask: taskentry @ 0x0803ff58 for 'trackdisk.device'.
+[InitCode] calling InitResident (30 81 "input.device").
+[TaskRes] NewAddTask(0x080419c8).
+[TaskRes] NewAddTask: task @ 0x080419c8.
+[TaskRes] TaskResAddTask: taskentry @ 0x08043f68 for 'input.device'.
+[InitCode] calling InitResident (15 81 "intuition.library").
+[TaskRes] NewAddTask(0x082adda8).
+[TaskRes] NewAddTask: task @ 0x082adda8.
+[TaskRes] TaskResAddTask: taskentry @ 0x08047420 for 'Intuition menu handler'.
+[TaskRes] NewAddTask(0x08047648).
+[TaskRes] NewAddTask: task @ 0x08047648.
+[TaskRes] TaskResAddTask: taskentry @ 0x08047ac8 for 'Screennotify Handler >>'.
+[InitCode] calling InitResident (9 81 "amigavideo.hidd").
+[InitCode] calling InitResident (5 81 "cd.device").
+[InitCode] calling InitResident (4 81 "console.device").
+[TaskRes] NewAddTask(0x080592f8).
+[TaskRes] NewAddTask: task @ 0x080592f8.
+[TaskRes] TaskResAddTask: taskentry @ 0x08059788 for 'console.device'.
+[InitCode] calling InitResident (4 81 "ata.device").
+[TaskRes] NewAddTask(0x0805b728).
+[TaskRes] NewAddTask: task @ 0x0805b728.
+[TaskRes] TaskResAddTask: taskentry @ 0x0805bd50 for 'ATA.daemon'.
+[InitCode] calling InitResident (4 81 "ata_gayle.hidd").
+[ATA] Gayle ID=d1. Possible IDE port=00da0000..
+[ATA] Status=7f,7f.
+[ATA] Drives not detected.
+[InitCode] calling InitResident (0 01 "cdrive.filesystem").
+[InitCode] calling InitResident (0 01 "BootVGA.Monitor").
+Display Size: 640x520 Offset: 74x20
+First: 36 Last: 296 MinV: 36 MaxV: 296 Min: 26
+Display Size: 640x512 Offset: 74x28
+First: 40 Last: 296 MinV: 40 MaxV: 296 Min: 26
 EMU: Enter menu
 update_main_menu
 floppy in 0: 
@@ -2045,23 +1415,25 @@ force_quit_thread: should force quit (FIXME: not implemented)
 calling amiga_quit
 uae_quit
 UAE: Stopping
-- VirtualProtect addr=0x7eeed3ef0000 size=8192 prot=4
+- VirtualProtect addr=0x7cff8c100000 size=8192 prot=4
   PAGE_READWRITE
-ROM VP 00EF0000 - 00F00000 10000 (64k) UNPROT
-- VirtualProtect addr=0x7eeed3f80000 size=524288 prot=4
+ROM VP 00F00000 - 00F10000 10000 (64k) UNPROT
+- VirtualProtect addr=0x7cff8c180000 size=524288 prot=4
   PAGE_READWRITE
 ROM VP 00F80000 - 01000000 80000 (512k) UNPROT
-- VirtualProtect addr=0x7eeed3e00000 size=524288 prot=4
+- VirtualProtect addr=0x7cff8c000000 size=524288 prot=4
   PAGE_READWRITE
 ROM VP 00E00000 - 00E80000 80000 (512k) UNPROT
  -- stub -- close_joystick 
  -- stub -- close_mouse 
  -- stub -- close_kb 
 serial: close fd=-1
+hdf_close_target
+closing file handle 0x7d001abe8ef0
  -- stub -- gui_exit 
-VM: Decommit 0x1000000  bytes at 0x7eef13000000
+VM: Decommit 0x40000000 bytes at 0x7cffcb200000
 mapped_free direct Zorro III Fast RAM
-VM: Decommit 0x10000    bytes at 0x7eef64159000
+VM: Decommit 0x10000    bytes at 0x7d001c233000
 mapped_free direct Filesystem autoconfig
 hdf_close_target
 hdf_close_target
@@ -2070,19 +1442,19 @@ hdf_close_target
 hdf_close_target
 hdf_close_target
 hdf_close_target
-VM: Decommit 0x8000000  bytes at 0x7eeedb000000
+VM: Decommit 0x8000000  bytes at 0x7cff93200000
 mapped_free direct RAMSEY memory (high)
-VM: Decommit 0x80000    bytes at 0x7eeed3f80000
+VM: Decommit 0x80000    bytes at 0x7cff8c180000
 mapped_free direct Kickstart ROM
-VM: Decommit 0x200000   bytes at 0x7eeed3000000
+VM: Decommit 0x200000   bytes at 0x7cff8b200000
 mapped_free direct Chip memory
 mapped_free indirect CPUBoard MAPROM
 mapped_free indirect CPUBoard MAPROM2
-VM: Decommit 0x80000    bytes at 0x7eeed3f00000
+VM: Decommit 0x80000    bytes at 0x7cff8c100000
+VM: Decommit 0x10000    bytes at 0x7cff8c100000
 mapped_free direct CPUBoard F00000
-VM: Decommit 0x10000    bytes at 0x7eeed3ef0000
-VM: Decommit 0x8000000  bytes at 0x7eeedf000000
-VM: Decommit 0x80000    bytes at 0x7eeed3e00000
+VM: Decommit 0x8000000  bytes at 0x7cff97200000
+VM: Decommit 0x80000    bytes at 0x7cff8c000000
  -- stub -- machdep_free 
 real_main returned
 calling filesys_flush_cache
@@ -2101,5 +1473,5 @@ OPENAL: alcDestroyContext
 OPENAL: alcCloseDevice
 [FSE] Returning from fs_emu_run
 fs-uae shutting down, fs_emu_run returned
-state dir /home/jun/FS-UAE/Save States/cyberstorm was removed because it was empty
+state dir /home/jun/FS-UAE/Save States/Default was removed because it was empty
 end of main function

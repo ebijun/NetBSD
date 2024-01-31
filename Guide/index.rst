@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -23,13 +23,13 @@
  :maxdepth: 3
  :numbered:
 
- Place/fukuoka
- RPI/RPIupdate2023
+ Place/osaka
+ RPI/RPIupdate2024
+ OSC/OSC2024
  RPI
- Luna
  Pkgsrc/nono
  Pkgsrc/chatgpt
  latexpdf
  Place/intro
- OSC/OSC2023
+ Luna
  AGM/2023-agm.rst

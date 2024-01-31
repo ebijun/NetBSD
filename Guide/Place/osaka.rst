@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,6 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
+ オープンソースカンファレンス2024大阪展示の記録,https://togetter.com/li/2298407
  KOF2023&OSC2023広島の記録,https://togetter.com/li/2254094
  OSC2023 Online/Osaka NetBSDのご紹介 の記録,https://togetter.com/li/2060234
  関西オープンソース2022 BSDなひととき の記録,https://togetter.com/li/1970580
@@ -110,6 +111,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ SONY NEWS NetBSD移植作業とNWS-3260展示,KOF2023, https://speakerdeck.com/tsutsui/kof2023
  KOFの20年とBSDユーザーグループの20年／中野秀男氏,KOF2022, https://www.k-of.jp/2022/session/nakano-ebijun-talk/
  37年前の Sun 3/60 のために最新のNetBSDと最新のX.orgをメンテする話,KOF2022, https://speakerdeck.com/tsutsui/kof2022
  お歳暮でSun3が送られてきたので,OSC2020大阪,https://speakerdeck.com/tsutsui/osc2020osaka
@@ -136,7 +138,8 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
- 2022/11/12,大阪産業創造館,sun3/60
+ 2023/11/10-11,南港ATC,NEWS NWS-3260
+ 2022/11/12,南港ATC,sun3/60
  2020/1/25,大阪産業創造館, NetBSD9.0 RC1/sun3 
  2019/11/8-9,南港ATC,mplayer on ZAURUS/PC6001VX/X68030 with Neptune-X
  2019/1/26,大阪産業創造館,X68030+nanotodon
@@ -157,6 +160,35 @@ Maps:
  2005/10/28-29,大阪産業創造館,EWS4800/360AD ドリキャス+ISAバス　USL-5P
  2004/10-22-23,大阪産業創造館,XCAST ふきだしくん 
  2003/10/31-11/1,大阪産業創造館,XCAST トレバ
+
+2023
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2023/11/10/DSC_2200.JPG
+.. image::  ../Picture/2023/11/10/DSC_2201.JPG
+.. image::  ../Picture/2023/11/10/DSC_2202.JPG
+.. image::  ../Picture/2023/11/11/DSC_2209.JPG
+.. image::  ../Picture/2023/11/11/DSC_2210.JPG
+.. image::  ../Picture/2023/11/11/DSC_2211.JPG
+.. image::  ../Picture/2023/11/11/DSC_2212.JPG
+.. image::  ../Picture/2023/11/11/DSC_2213.JPG
+.. image::  ../Picture/2023/11/11/DSC_2214.JPG
+.. image::  ../Picture/2023/11/11/DSC_2218.JPG
+.. image::  ../Picture/2023/11/11/DSC_2219.JPG
+.. image::  ../Picture/2023/11/11/DSC_2220.JPG
+.. image::  ../Picture/2023/11/11/DSC_2221.JPG
+.. image::  ../Picture/2023/11/11/DSC_2222.JPG
+.. image::  ../Picture/2023/11/11/DSC_2223.JPG
+.. image::  ../Picture/2023/11/11/DSC_2224.JPG
+.. image::  ../Picture/2023/11/11/DSC_2225.JPG
+.. image::  ../Picture/2023/11/11/DSC_2226.JPG
+.. image::  ../Picture/2023/11/11/DSC_2227.JPG
+.. image::  ../Picture/2023/11/11/DSC_2228.JPG
+.. image::  ../Picture/2023/11/11/DSC_2229.JPG
+.. image::  ../Picture/2023/11/11/DSC_2232.JPG
+.. image::  ../Picture/2023/11/11/DSC_2233.JPG
+.. image::  ../Picture/2023/11/11/DSC_2234.JPG
+
 
 2022
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
