@@ -1,18 +1,18 @@
-VERSION: :1,$s/2024-01-17/2024-01-17/g
-ISO:     :1,$s/202401141100Z/202401141100Z/g
+VERSION: :1,$s/2024-02-21/2024-02-21/g
+ISO:     :1,$s/202402190640Z/202402190640Z/g
 NetBSD:  :1,$s/10.99.10/10.99.10/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2024-01-17-netbsd-raspi-aarch64.img
+Subject: 2024-02-21-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2024-01-17-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2024-02-21-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-01-17-aarch64/2024-01-17-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-01-17-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-02-21-aarch64/2024-02-21-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-02-21-aarch64/MD5
 
 Topics:
 - [Researching] RPI5: not booting yet
@@ -62,15 +62,26 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- dhcpcd-10.0.6 libssh-46.1 openssh-9.6 opensshd-9.6 sh-20220122-20240114103847Z
- tzdata-2023dgtz
-
+ bozohttpd-20240126 gzip-20240203 libm-0.14 sh-20220122-20240219043321Z
+ tzdata-2024agtz unbound-1.19.1
+ 
 pkgsrc:
- bash-5.2.26 curl-8.5.0 fontconfig-2.15.0 fossil-2.23 icu-74.2
- libgpg-error-1.47nb1 libpsl-0.21.5 libxml2-2.10.4nb6 perl-5.38.2
- pkg_install-20211115nb2 pkgin-23.8.1nb3 python311-3.11.7 qt5-qtbase-5.15.12
- qt5-qtx11extras-5.15.12 qt5-qtxmlpatterns-5.15.12 ruby31-pkg-config-1.5.6
- shared-mime-info-2.4 tiff-4.6.0nb3
+ curl-8.6.0 git-base-2.43.1 glib2-2.78.4 gnutls-3.8.3 gtk3+-3.24.41
+ libffi-3.4.6 libidn2-2.3.7 libimagequant-4.3.0 libpaper-2.1.3 libproxy-0.5.4
+ libxml2-2.12.4 libxslt-1.1.39 md4c-0.5.2 nghttp2-1.59.0 pcre2-10.43 png-1.6.42
+ python311-3.11.8 ruby32-addressable-2.8.5 ruby32-atk-4.2.0 ruby32-base-3.2.3
+ ruby32-cairo-1.17.12nb2 ruby32-cairo-gobject-4.2.0nb2 ruby32-delayer-1.2.1
+ ruby32-delayer-deferred-2.2.0 ruby32-diva-2.0.1 ruby32-gdk3-4.2.0nb3
+ ruby32-gdk_pixbuf2-4.2.0nb1 ruby32-gettext-3.4.1 ruby32-gio2-4.2.0
+ ruby32-glib2-4.2.0 ruby32-gobject-introspection-4.2.0 ruby32-gtk3-4.2.0nb3
+ ruby32-hashie-4.1.0 ruby32-httpclient-2.8.3nb1 ruby32-instance_storage-1.0.0
+ ruby32-locale-2.1.3 ruby32-memoist-0.16.2 ruby32-mikutter-5.0.5nb4
+ ruby32-mini_portile2-2.8.5 ruby32-moneta-1.6.0
+ ruby32-native-package-installer-1.1.9 ruby32-nokogiri-1.16.2 ruby32-oauth-1.1.0
+ ruby32-oauth-tty-1.0.5 ruby32-pango-4.2.0nb2 ruby32-pkg-config-1.5.6
+ ruby32-pluggaloid-1.7.0 ruby32-public_suffix-5.0.4 ruby32-red-colors-0.4.0
+ ruby32-snaky_hash-2.0.1 ruby32-text-1.3.1 ruby32-typed-array-0.1.2
+ ruby32-version_gem-1.1.3
 
 RPI4 status:
 - boot via UEFI_VER=v1.35
@@ -91,7 +102,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.10 evbarm-aarch64 202401141100Z arm64.img from nyftp.
+- NetBSD-current 10.99.10 evbarm-aarch64 202402190640Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
