@@ -1,6 +1,7 @@
 amiga_model = A1200
+kickstart_file = A1200_3.1.rom
 kickstart_rom_file = A1200_3.1.rom
-cpu = 68060
+cpu = 68020
 accelerator = cyberstorm-ppc
 accelerator_rom = cyberstormppc.rom
 accuracy = -1
@@ -9,6 +10,3 @@ zorro_iii_memory = 16384
 save_disk = 0
 floppy_drive_speed = 0
 hard_drive_0 = AmigaOS/AmiNet
-#hard_drive_1_controller = scsi
-#hard_drive_1_type = rdb
-#hard_drive_1 = NetBSD-root+swap.hdf
