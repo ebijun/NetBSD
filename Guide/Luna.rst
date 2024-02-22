@@ -727,6 +727,32 @@ yaft X LUNA
 * ハード保守
 * 詳しい人がいなくなる
 
+pkgsrc on Luna88K/OpenBSD
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Luna88K/OpenBSD 上で、pkgsrcを使っていくつかパッケージを作ってみました。
+
+<pre>
+ nono88k# ls /usr/pkgsrc/packages/All/
+ bash-5.2.21nb1.tgz         libiconv-1.17.tgz          pcre2-10.42.tgz
+ bison-3.8.2nb1.tgz         libidn2-2.3.4.tgz          perl-5.38.2.tgz
+ bsdtar-3.4.3.tgz           libtool-base-2.4.7nb1.tgz  pkgconf-2.0.3.tgz
+ bzip2-1.0.8.tgz            libunistring-1.1.tgz       tcsh-6.24.10.tgz
+ digest-20220214.tgz        libxml2-2.10.4nb6.tgz      tradcpp-0.5.3.tgz
+ fetch-1.9nb2.tgz           lz4-1.9.4.tgz              xmlcatmgr-2.2nb1.tgz
+ gettext-lib-0.22.3.tgz     m4-1.4.19nb1.tgz           xorg-cf-files-1.0.8.tgz
+ gettext-tools-0.22.3.tgz   mandoc-1.14.6nb1.tgz       xorgproto-2023.2.tgz
+ gmake-4.4.1.tgz            ncurses-6.4.tgz            xz-5.4.5.tgz
+ grep-3.11.tgz              ncursesw-6.4.tgz           zlib-1.2.13.tgz
+ libfetch-2.39nb2.tgz       nghttp2-1.58.0nb1.tgz
+</pre>
+
+.. csv-table:: 失敗する主なパッケージ
+
+ パッケージ, 失敗するパッケージ
+ sayaka, gcc7
+
+
 ----
 
  「それなら、なぜ、先祖代々の墓を守って山間に生活したがる農民を、ダム工事のためにおいだすんだね？それぞれの人間にそれぞれの幸福がある。それなら、なぜ、彼らを一般化の中に投げ込むんだ。君はなぜ、そういう役割をひきうけるんだ？」 [6]_
