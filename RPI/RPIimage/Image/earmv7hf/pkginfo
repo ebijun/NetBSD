@@ -5,7 +5,7 @@ atk-2.38.0nb1       Set of interfaces for accessibility
 bash-5.2.26         The GNU Bourne Again Shell
 brotli-1.1.0        Generic-purpose lossless compression algorithm
 cairo-1.18.0nb1     Vector graphics library with cross-device output support
-curl-8.5.0          Client that groks URLs
+curl-8.6.0          Client that groks URLs
 dbus-1.14.10        Message bus system
 digest-20220214     Message digest wrapper utility
 dillo-3.0.5nb14     Very small and fast graphical web-browser
@@ -18,15 +18,15 @@ fribidi-1.0.13      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.3.3nb12        Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.42.10nb4 Library for image loading and manipulation
 giflib-5.2.1nb6     GIF image format library
-git-base-2.43.0     GIT Tree History Storage Tool (base package)
-glib2-2.78.1nb1     Some useful routines for C programming (glib2)
+git-base-2.43.2     GIT Tree History Storage Tool (base package)
+glib2-2.78.4        Some useful routines for C programming (glib2)
 gmp-6.3.0           Library for arbitrary precision arithmetic
 gnutls-3.8.3        Transport Layer Security library
 gobject-introspection-1.78.1nb2 GObject Introspection
 graphite2-1.3.14nb3 Cross-platform rendering for complex writing systems
 gsettings-desktop-schemas-40.0nb2 Collection of GSettings schemas for the GNOME desktop
 gtk2+-2.24.33nb16   GIMP Toolkit v2 - libraries for building X11 user interfaces
-gtk3+-3.24.38nb6    GIMP Toolkit v3 - libraries for building X11 user interfaces
+gtk3+-3.24.41       GIMP Toolkit v3 - libraries for building X11 user interfaces
 harfbuzz-8.3.0      OpenType text shaping engine
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
 icewm-1.2.38pre2nb2 Small, fast and light-weight window manager
@@ -38,22 +38,22 @@ libcfg+-0.7.0       Command line and configuration file parsing library
 libcups-2.4.6nb4    Common UNIX Printing System library
 libduktape-2.7.0    Embeddable Javascript engine library
 libepoll-shim-0.0.20230411 Small epoll implemented using kevent
-libffi-3.4.4        Foreign function interface
+libffi-3.4.6        Foreign function interface
 libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.10.3    GNU cryptographic library
 libgpg-error-1.47nb1 Definitions of common error values for all GnuPG components
-libidn2-2.3.4       Convert internationalized domain names to/from ASCII Encoding
+libidn2-2.3.7       Convert internationalized domain names to/from ASCII Encoding
 libotf-0.9.16nb4    Library for handling OpenType fonts (OTF)
-libpaper-2.1.2      Paper size handling library
-libproxy-0.5.3nb3   Library that provides automatic proxy configuration management
+libpaper-2.1.3      Paper size handling library
+libproxy-0.5.4      Library that provides automatic proxy configuration management
 libpsl-0.21.5       Library to handle the Public Suffix List
 libtasn1-4.19.0     ASN.1 structure parser library
 libunistring-1.1    Unicode string library
 libuuid-2.32.1nb2   Generate unique identifiers for objects
 libwebp-1.3.2nb1    WebP image format library and tools
 libxkbcommon-1.6.0nb1 Library to handle keyboard descriptions
-libxml2-2.10.4nb6   XML parser library from the GNOME project
-libxslt-1.1.38nb2   XSLT parser library
+libxml2-2.12.4      XML parser library from the GNOME project
+libxslt-1.1.39      XSLT parser library
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
 lintpkgsrc-2022.09.29 Sanity checks on the complete pkgsrc tree
 lrzsz-0.12.20nb1    Receive/Send files via X/Y/ZMODEM protocol.  (unrestrictive)
@@ -62,62 +62,62 @@ lzo-2.10            Portable lossless data compression library
 m17n-db-1.8.0       The m17n database used by the m17n library
 m17n-lib-1.8.0nb15  Multilingualization library
 mbedtls-2.28.3nb1   Lightweight, modular cryptographic and SSL/TLS library (2.x branch)
-md4c-0.4.8          Markdown for C library and parser
+md4c-0.5.2          Markdown for C library and parser
 medit-1.2.0nb29     Programming and around-programming text editor
 mlterm-3.9.3nb6     Multilingual terminal emulator
-mozilla-rootcerts-1.0.20231115 Root CA certificates from the Mozilla Project
+mozilla-rootcerts-1.0.20240214 Root CA certificates from the Mozilla Project
 nettle-3.9.1        Cryptographic library
-nghttp2-1.58.0nb1   Implementation of HTTP/2 in C
+nghttp2-1.59.0      Implementation of HTTP/2 in C
 p11-kit-0.25.3      PKCS#11 module manager
 pango-1.50.14nb3    Library for layout and rendering of text
-pcre2-10.42         Perl Compatible Regular Expressions library (major version 2)
+pcre2-10.43         Perl Compatible Regular Expressions library (major version 2)
 perl-5.38.2         Practical Extraction and Report Language
 pkg_chk-2.0.12      Check installed package versions against pkgsrc
-pkg_install-20211115nb2 Package management and administration tools for pkgsrc
+pkg_install-20240126 Package management and administration tools for pkgsrc
 pkgin-23.8.1nb3     Apt / yum like tool for managing pkgsrc binary packages
-png-1.6.40          Library for manipulating PNG images
-python311-3.11.7    Interpreted, interactive, object-oriented programming language
+png-1.6.42          Library for manipulating PNG images
+python311-3.11.8    Interpreted, interactive, object-oriented programming language
 qt5-qtbase-5.15.12  C++ X GUI toolkit
 qt5-qtx11extras-5.15.12 Qt5 module for X11 extras
 qt5-qtxmlpatterns-5.15.12 Qt5 module for XML Patterns
 raspberrypi-userland-20170109nb3 Various libraries for the Raspberry Pi
 readline-8.2nb2     GNU library that can recall and edit previous input
-ruby31-addressable-2.8.5 Replacement for the URI Implementation of standard librrary
-ruby31-atk-4.2.0    Ruby binding of ATK-1.0.x or later
-ruby31-base-3.1.4nb2 Ruby 3.1.4 release minimum base package
-ruby31-cairo-1.17.12nb2 Ruby bindings for cairo
-ruby31-cairo-gobject-4.2.0nb2 Ruby binding of cairo-gobject
-ruby31-delayer-1.2.1 Ruby module to delay the processing
-ruby31-delayer-deferred-2.2.0 Deferred for Delayer
-ruby31-diva-2.0.1   Implementation of expression for handling things
-ruby31-gdk3-4.2.0nb3 Ruby binding of GDK3
-ruby31-gdk_pixbuf2-4.2.0nb1 Ruby binding of GdkPixbuf-2.x
-ruby31-gettext-3.4.1 Ruby localization library like as GNU gettext
-ruby31-gio2-4.2.0   Ruby binding of gio-2.0.x
-ruby31-glib2-4.2.0  Ruby binding of GLib-2.x
-ruby31-gobject-introspection-4.2.0 Ruby binding of Gobject Introspection
-ruby31-gtk3-4.2.0nb3 Ruby binding of GTK+-3.x
-ruby31-hashie-4.1.0 Small collection of tools that make hashes more powerful
-ruby31-httpclient-2.8.3nb1 HTTP accessing library for Ruby
-ruby31-instance_storage-1.0.0 Manage class instances with dictionary
-ruby31-locale-2.1.3 Pure ruby library which provides basic APIs for localization
-ruby31-memoist-0.16.2 Replacement of memoizable, memoize methods invocation
-ruby31-mikutter-5.0.5nb4 Simple, powerful, and moeful twitter client
-ruby31-mini_portile2-2.8.5 Simple autoconf builder for developers
-ruby31-moneta-1.6.0 Unified interface to key/value stores
-ruby31-native-package-installer-1.1.8 Helper to install native packages on "gem install"
-ruby31-nokogiri-1.15.5 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
-ruby31-oauth-1.1.0  OAuth Core Ruby implementation
-ruby31-oauth-tty-1.0.5 OAuth 1.0 TTY CLI
-ruby31-pango-4.2.0nb2 Ruby binding of pango-1.x
-ruby31-pkg-config-1.5.6 Pure Ruby implementation of pkg-config
-ruby31-pluggaloid-1.7.0 Extensible plugin system for mikutter
-ruby31-public_suffix-5.0.4 Domain name parser based on the Public Suffix List
-ruby31-red-colors-0.3.0 Wide array of features for dealing with colors
-ruby31-snaky_hash-2.0.1 Hashie::Mash joint to make
-ruby31-text-1.3.1   Collection of text algorithms for Ruby
-ruby31-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
-ruby31-version_gem-1.1.3 Sugar for Version modules
+ruby32-addressable-2.8.5 Replacement for the URI Implementation of standard librrary
+ruby32-atk-4.2.0    Ruby binding of ATK-1.0.x or later
+ruby32-base-3.2.3   Ruby 3.2.3 release minimum base package
+ruby32-cairo-1.17.12nb2 Ruby bindings for cairo
+ruby32-cairo-gobject-4.2.0nb2 Ruby binding of cairo-gobject
+ruby32-delayer-1.2.1 Ruby module to delay the processing
+ruby32-delayer-deferred-2.2.0 Deferred for Delayer
+ruby32-diva-2.0.1   Implementation of expression for handling things
+ruby32-gdk3-4.2.0nb3 Ruby binding of GDK3
+ruby32-gdk_pixbuf2-4.2.0nb1 Ruby binding of GdkPixbuf-2.x
+ruby32-gettext-3.4.1 Ruby localization library like as GNU gettext
+ruby32-gio2-4.2.0   Ruby binding of gio-2.0.x
+ruby32-glib2-4.2.0  Ruby binding of GLib-2.x
+ruby32-gobject-introspection-4.2.0 Ruby binding of Gobject Introspection
+ruby32-gtk3-4.2.0nb3 Ruby binding of GTK+-3.x
+ruby32-hashie-4.1.0 Small collection of tools that make hashes more powerful
+ruby32-httpclient-2.8.3nb1 HTTP accessing library for Ruby
+ruby32-instance_storage-1.0.0 Manage class instances with dictionary
+ruby32-locale-2.1.3 Pure ruby library which provides basic APIs for localization
+ruby32-memoist-0.16.2 Replacement of memoizable, memoize methods invocation
+ruby32-mikutter-5.0.5nb4 Simple, powerful, and moeful twitter client
+ruby32-mini_portile2-2.8.5 Simple autoconf builder for developers
+ruby32-moneta-1.6.0 Unified interface to key/value stores
+ruby32-native-package-installer-1.1.9 Helper to install native packages on "gem install"
+ruby32-nokogiri-1.16.2 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby32-oauth-1.1.0  OAuth Core Ruby implementation
+ruby32-oauth-tty-1.0.5 OAuth 1.0 TTY CLI
+ruby32-pango-4.2.0nb2 Ruby binding of pango-1.x
+ruby32-pkg-config-1.5.6 Pure Ruby implementation of pkg-config
+ruby32-pluggaloid-1.7.0 Extensible plugin system for mikutter
+ruby32-public_suffix-5.0.4 Domain name parser based on the Public Suffix List
+ruby32-red-colors-0.4.0 Wide array of features for dealing with colors
+ruby32-snaky_hash-2.0.1 Hashie::Mash joint to make
+ruby32-text-1.3.1   Collection of text algorithms for Ruby
+ruby32-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
+ruby32-version_gem-1.1.3 Sugar for Version modules
 sayaka-3.7.2        Terminal specific Twitter client
 shared-mime-info-2.4 Core database of common types
 sudo-1.9.15p2       Allow others to run commands as root
