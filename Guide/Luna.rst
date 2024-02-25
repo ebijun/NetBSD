@@ -751,7 +751,7 @@ Luna88K/OpenBSD 上で、pkgsrcを使っていくつかパッケージを作っ�
 
  パッケージ, 失敗するパッケージ
  sayaka, gcc7
-
+ nanotodon,openssl,undefined reference to `memcpy'
 
 ----
 
