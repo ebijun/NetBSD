@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.6.4
+ DISTNAME=       nono-0.7.0
 
 チェックサム作成
 ------------------
@@ -41,10 +41,8 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
- -rw-r--r--  1 jun  wheel  1163 Jan  8 11:33 Makefile
- -rw-r--r--  1 jun  wheel   558 Jan  8 11:33 distinfo
-
-
+ -rw-r--r--  1 jun  wheel  1163 Feb 26 05:30 Makefile
+ -rw-r--r--  1 jun  wheel   558 Feb 26 05:30 distinfo
 
 make package して動作を確認します。
  
@@ -72,26 +70,25 @@ commit
 
  cvs commit 
 
- nono: update to 0.6.4. 
+ nono: update to 0.7.0. 
 
- 0.6.4 (2023/12/28)
- 
- vm(New): "Implement a Windrv compatible device on X68030. You can access a host d
- irectory via the device on Human68k."
- vm(New): "Implement a contrast feature on X68030."
- vm(Update): "Implement that writing to the SPC is made to wait if the internal qu
- eue is full. You can write a SCSI media on Human68k."
- vm(Update): "DMAC now uses FC (Function Code) to access on X68030."
- vm(Update): "Connect the host's [PageUp], [PageDown] and [End] key to guest's [ROLL UP], [ROLL DOWN] and [UNDO] key respectively on X68030. "
- vm(Fix): "Fix the problem that SCC, FDC, SPC and Nereid are not reset correctly on X68030."
- vm(Fix): "Fix a CIIN condition on X68030."
- vm(Fix): "Fix $ED0000..$EDFFFF was user-accessible on X68030."
- vm(Fix): "Fix timing that mouse sends its data on X68030. It should not affect anything."
- GUI(New): "Rearrange menus. A part of "Device > Operation" and old "File" menus are integrated into"VM"."
- GUI(New): "Add "Send CTRL+OPT.1+DEL" menu on X68030."
- GUI(Fix): "Fix an abnormal termination when open the loglevel setting window since 0.6.3."
- debugger(Fix): "Fix an abnormal termination when the argument of command line option -b cannot be parsed as a hexadecimal number."
- debugger(New): "--bi-exg option."
+ 0.7.0 (2024-02-21)
+
+ vm(New): "Start to support virt68k."
+ vm(Fix): "Fix problem that the interrupt acknowledge didn't handle correctly when two Nereid boards are installed simul
+taneously."
+ vm(Fix): "Fix several spurious interrupts on resetting on various devices."
+ vm(Fix): "Implement MIE on X68030 SCC."
+ vm(Fix): "Fix not to update TxDR on starting the timer on X68030 MFP."
+ vm(Fix): "Fix several accesses to CRTC on X68030."
+ vm(Update): "Fix and rearrange whole bus access. Some device wait may be changed intentionally or unintentionally."
+ vm(Update): "Rearrange the power devices on all architecture."
+ app(New): "Graphic rendering now can use AVX2 on amd64."
+ app(Update): "-X option is changed to accept only one argument if -H is not specified."
+ app(Update): "Configuration item exec-file and exec-arg are added."
+ app(Update): "--initrd option and configuration item exec-initrd are added."
+ app(Update): "Path beginning of '~' in the configuration file is replaced to the home directory."
+ app(Fix): "-Lhelp can be displayed even if -X is specified."
 
 doc をcommit します
 ---------------------
@@ -101,9 +98,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to  0.6.4
+ doc: Updated emulators/nono to  0.7.0
  
  cvs diff -u CHANGES-2024
  
-        Updated emulators/nono to 0.6.4 [jun 2024-01-08]
+        Updated emulators/nono to 0.7.0 [jun 2024-02-26]
 
