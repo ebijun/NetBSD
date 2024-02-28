@@ -8,18 +8,10 @@ NetBSD Arm Bootable Images: NetBSD9/NetBSD10/NetBSD-current
  https://www.armbsd.org
 
 Update:
- openssh-9.6
- boost-libs-1.84.0
- cmake-3.28.1
- icu-74.2
- libreoffice-7.6.4.1nb1
- mate-1.26.1nb7
- nodejs-21.6.0
- nss-3.96.1
- perl-5.38.2
- python311-3.11.7
- rust-1.74.1nb1
- samba-4.19.4
+ firefox-123.0
+ libreoffice-7.6.4.1nb2
+ mate-1.26.1nb8
+ mlterm-3.9.3nb7
 
 Problems: 
 - pinebook: 
@@ -123,72 +115,73 @@ ToDo:
  ToDo:
  - internal WiFi
 
-System Updates:
-
-
 sysinfo:
- dhcpcd-10.0.6 libssh-46.1 openssh-9.6 opensshd-9.6 sh-20220122-20240118144209Z
- tzdata-2023dgtz
-
+ bind-9.18.24 bozohttpd-20240126 gzip-20240203 libm-0.14
+ sh-20220122-20240226231112Z tzdata-2024agtz unbound-1.19.1
+ 
 pkgsrc:
- ImageMagick-7.1.1.26 ImageMagick6-6.9.13.3 SDL-1.2.15nb42 aspell-0.60.8.1
- atril-1.26.1nb8 autoconf-2.72 bash-5.2.26 blas-3.12.0 boost-build-1.84.0
- boost-docs-1.84.0 boost-headers-1.84.0 boost-jam-1.84.0 boost-libs-1.84.0
- bsdtar-3.7.2 cblas-3.12.0 cmake-3.28.1 cmocka-1.1.7 curl-8.5.0
- deforaos-pdfviewer-0.1.0nb23 desktop-file-utils-0.26nb4 dhcpcd-10.0.6
- enchant2-2.6.5 exempi-2.5.2nb7 faad2-2.11.1 ffmpeg6-6.1.1 fmtlib-10.2.1
- fontconfig-2.15.0 fossil-2.23 gettext-0.22.4 gettext-asprintf-0.22.4
- gettext-lib-0.22.4 gettext-m4-0.22.4 gettext-tools-0.22.4 gimp-2.10.36nb5
- gnutls-3.8.3 go-1.21.6 go-bin-1.21.5 go120-1.20.13 go121-1.21.6
- graphviz-8.1.0nb8 gst-plugins1-bad-1.22.8 gst-plugins1-base-1.22.8
- gstreamer1-1.22.8 gtk4-4.12.4nb1 gumbo-parser-0.12.1 icu-74.2 imake-1.0.10
- itstool-2.0.7nb5 jasper-4.1.2 kdelibs4-4.14.38nb37 kfilemetadata-4.14.3nb73
- lapack-3.12.0 lapacke-3.12.0 lcms2-2.16 libabw-0.1.3nb19 libaom-3.8.0
- libarchive-3.7.2 libatomic_ops-7.8.2 libcares-1.25.0 libcdr-0.1.7nb12
- libclucene-2.3.3.4nb25 libcmis-0.5.2nb25 libde265-1.0.15 libe-book-0.1.3nb28
- libebml-1.4.5 libepubgen-0.1.1nb8 libetonyek-0.1.10nb12 libfetch-2.40
- libfreehand-0.1.2nb20 libgpg-error-1.47nb1 libheif-1.17.6 libixion-0.18.1nb1
- libkactivities4-4.13.3nb36 liblangtag-0.6.7 libmateweather-1.26.3
- libmspub-0.1.4nb27 libmwaw-0.3.21nb3 libodfgen-0.1.7nb8 libpagemaker-0.0.4nb14
- libplacebo-6.338.1 libpsl-0.21.5 libqxp-0.0.2nb21 libreoffice-7.6.4.1nb1
- librevenge-0.0.4nb19 libstaroffice-0.0.7nb8 libusb-compat-0.1.8
- libvisio-0.1.7nb22 libwpd-0.10.3nb8 libwpg-0.3.3nb11 libwps-0.4.12nb7
- libxml2-2.10.4nb6 libzmf-0.0.2nb29 mate-1.26.1nb7 mate-media-1.26.2
- mate-panel-1.26.4 mdds-2.1.1nb1 mdds1.2-1.3.1nb14 meson-1.3.1 mkvtoolnix-82.0
- mpv-0.37.0 mujs-1.3.4 mupdf-1.23.7nb1 nodejs-21.6.0 nss-3.96.1 orcus-0.18.1nb1
- p5-Clone-0.46nb1 p5-Crypt-SSLeay-0.72nb13 p5-Encode-Locale-1.05nb9
- p5-File-Listing-6.16 p5-HTML-Parser-3.81nb1 p5-HTML-Tagset-3.20nb15
- p5-HTTP-CookieJar-0.014nb1 p5-HTTP-Cookies-6.11 p5-HTTP-Daemon-6.16nb1
- p5-HTTP-Date-6.06 p5-HTTP-Message-6.45 p5-HTTP-Negotiate-6.01nb12
- p5-IO-HTML-1.004nb3 p5-IO-Socket-SSL-2.084 p5-LWP-MediaTypes-6.04nb4
- p5-LWP-Protocol-https-6.11 p5-Mozilla-CA-20231213 p5-Net-DNS-1.42
- p5-Net-HTTP-6.23 p5-Net-SSLeay-1.94 p5-Path-Class-0.37nb7 p5-Try-Tiny-0.31nb1
- p5-URI-5.21 p5-WWW-RobotRules-6.02nb12 p5-XML-Parser-2.47 p5-libwww-6.73
- perl-5.38.2 pkg_install-20211115nb2 pkgin-23.8.1nb3 poppler-24.01.0
- poppler-cpp-24.01.0 poppler-includes-24.01.0 poppler-utils-24.01.0
- protobuf-25.2 py311-Pillow-10.2.0 py311-alabaster-0.7.16 py311-attrs-23.2.0
- py311-babel-2.14.0 py311-cryptodome-3.20.0 py311-cython-3.0.8 py311-glad2-2.0.4
- py311-importlib-metadata-7.0.1 py311-jinja2-3.1.3 py311-libxml2-2.10.4nb4
- py311-lxml-5.1.0 py311-markdown-3.5.2 py311-markupsafe-2.1.4
- py311-more-itertools-10.2.0 py311-numpy-1.26.3 py311-olefile-0.47
- py311-pbr-6.0.0 py311-pdf-3.17.4 py311-pip-23.3.2 py311-setuptools-69.0.3nb1
- py311-sphinxcontrib-applehelp-1.0.8 py311-sphinxcontrib-devhelp-1.0.6
- py311-sphinxcontrib-htmlhelp-2.0.5 py311-sphinxcontrib-qthelp-1.0.7
- py311-sphinxcontrib-serializinghtml-1.1.10 py311-typing-extensions-4.9.0
- py311-wcwidth-0.2.13 python311-3.11.7 qt5-qtbase-5.15.12
- qt5-qtdeclarative-5.15.12 qt5-qtlocation-5.15.12 qt5-qtmultimedia-5.15.12
- qt5-qtscript-5.15.12 qt5-qtsensors-5.15.12 qt5-qtserialport-5.15.12
- qt5-qtspeech-5.15.12 qt5-qtsvg-5.15.12 qt5-qttools-5.15.12
- qt5-qtwayland-5.15.12 qt5-qtwebchannel-5.15.12 qt5-qtwebsockets-5.15.12
- qt5-qtx11extras-5.15.12 qt5-qtxmlpatterns-5.15.12 qt6-qtbase-6.6.1nb1
- qt6-qtdeclarative-6.6.1 qt6-qtmultimedia-6.6.1 qt6-qtquick3d-6.6.1
- qt6-qtquicktimeline-6.6.1 qt6-qtshadertools-6.6.1 qt6-qtsvg-6.6.1
- rclone-1.65.0nb1 ruby31-pkg-config-1.5.6 ruby31-unf_ext-0.0.9.1 rust-1.74.1nb1
- samba-4.19.4 seamonkey-2.53.16nb9 shared-mime-info-2.4
- source-highlight-3.1.9nb7 spdlog-1.13.0 sqlite3-3.45.0 strigi-0.7.8nb56
- svt-av1-1.8.0 tex-uptex-2023 tiff-4.6.0nb3 vte3-0.74.2
- vulkan-headers-1.3.224nb1 waf-2.0.26 xfce4-settings-4.18.4 xfce4-thunar-4.18.10
- xfce4-tumbler-4.18.2nb1 xkanon-090830nb9 xterm-389 zxing-cpp-2.2.1
+ ImageMagick-7.1.1.28 SDL-1.2.15nb43 SDL2-2.30.0 SDL2_mixer-2.0.4nb14
+ abseil-20240116.1 alsa-lib-1.2.11 asunder-3.0.1 atril-1.26.2 attica-qt5-5.114.0
+ audacious-plugins-4.1nb31 autoconf-archive-2023.02.20 babl-0.1.108 cmake-3.28.3
+ cmark-0.31.0 cmus-2.10.0nb7 curl-8.6.0 dav1d-1.4.0 dos2unix-7.5.2
+ enchant2-2.6.7 exiv2-0.28.2 extra-cmake-modules-5.114.0 ffmpeg2-2.8.20nb16
+ ffmpeg3-3.4.11nb18 ffmpeg4-4.4.4nb9 ffmpeg5-5.1.4nb4 ffmpeg6-6.1.1nb3
+ ffmpegthumbnailer-2.2.2nb6 firefox-123.0 firefox-l10n-123.0 fluidsynth-2.3.4nb1
+ gdbus-codegen-2.78.4 gegl-0.4.48 gettext-0.22.5 gettext-asprintf-0.22.5
+ gettext-lib-0.22.5 gettext-m4-0.22.5 gettext-tools-0.22.5 git-base-2.44.0
+ glib2-2.78.4 glib2-tools-2.78.4 glm-1.0.0 gnupg2-2.4.4 go-1.21.7 go120-1.20.14
+ go121-1.21.7 gst-plugins1-bad-1.22.10 gst-plugins1-base-1.22.10
+ gst-plugins1-good-1.22.10nb1 gstreamer1-1.22.10 gtk2+-2.24.33nb17 gtk3+-3.24.41
+ gtk4-4.12.5 imath-3.1.10 imlib2-1.9.1nb5 inih-58 iso-codes-4.16.0 jasper-4.2.1
+ karchive-5.114.0 kauth-5.114.0 kbookmarks-5.108.0nb4 kcodecs-5.114.0
+ kcompletion-5.114.0 kconfig-5.114.0 kconfigwidgets-5.108.0nb5
+ kcoreaddons-5.114.0 kcrash-5.114.0 kdbusaddons-5.114.0
+ kdesignerplugin-5.108.0nb4 kdewebkit-5.108.0nb4 kfilemetadata-4.14.3nb74
+ kglobalaccel-5.108.0nb4 kguiaddons-5.114.0 ki18n-5.114.0 kiconthemes-5.108.0nb5
+ kio-5.108.0nb4 kitemmodels-5.114.0 kitemviews-5.114.0 kjobwidgets-5.114.0
+ knotifications-5.108.0nb6 kparts-5.108.0nb4 kplotting-5.114.0
+ ktextwidgets-5.108.0nb5 kwallet-5.108.0nb5 kwidgetsaddons-5.114.0
+ kwindowsystem-5.114.0 kxmlgui-5.108.0nb5 libaom-3.8.1 libcares-1.27.0
+ libffi-3.4.6 libgpg-error-1.48 libidn-1.42 libidn2-2.3.7 libimagequant-4.3.0
+ libixion-0.19.0 libksba-1.6.6 libmikmod-3.3.11.1nb13 libmspack-0.10.1alpha
+ libpaper-2.1.3 libproxy-0.5.4 libreoffice-7.6.4.1nb2 libunistring-1.2
+ libunwind-16.0.6 libusb1-1.0.27 libuv-1.48.0 libvpx-1.14.0 libxfce4ui-4.18.5
+ libxfce4util-4.18.2 libxml2-2.12.4 libxslt-1.1.39 lmdb-0.9.32 lzip-1.24
+ mate-1.26.1nb8 mate-panel-1.26.4nb1 mate-settings-daemon-1.26.1nb5 md4c-0.5.2
+ meson-1.3.2 mkvtoolnix-82.0nb1 mlterm-3.9.3nb7 mozilla-rootcerts-1.0.20240214
+ mozilla-rootcerts-openssl-2.14 mpg123-1.32.5 mpv-0.37.0nb2 neon-0.33.0
+ nghttp2-1.59.0 nghttp3-1.2.0 nginx-1.24.0nb17 ngtcp2-1.3.0 nodejs-21.6.2
+ nono-0.6.4 npth-1.7 nss-3.98 openal-soft-1.23.1nb3 openexr-3.2.2 openjpeg-2.5.1
+ orc-0.4.37 orcus-0.19.2 oxygen-icons-5.114.0 p5-Capture-Tiny-0.48nb6
+ p5-Email-Valid-1.204 p5-IO-Socket-SSL-2.085 p5-LWP-Protocol-https-6.13
+ p5-Net-DNS-1.44 p5-URI-5.27 p5-libwww-6.76 pciutils-3.11.1 pcre2-10.43
+ phonon-4.10.3nb17 phonon-qt5-4.11.1nb18 pkgconf-2.1.1 pluma-1.26.1nb6
+ png-1.6.43 poppler-24.02.0 poppler-cpp-24.02.0 poppler-includes-24.02.0
+ poppler-utils-24.02.0 protobuf-25.3 pulseaudio-17.0 py-cairo-shared-1.26.0
+ py311-OpenSSL-24.0.0 py311-cairo-1.26.0 py311-certifi-2024.2.2
+ py311-cryptography-42.0.5 py311-dns-2.6.1 py311-glad2-2.0.5
+ py311-libxml2-2.12.4 py311-libxslt-1.1.39 py311-mako-1.3.2
+ py311-markupsafe-2.1.5 py311-numpy-1.26.4 py311-pdf-4.0.2 py311-pip-24.0
+ py311-pluggy-1.4.0 py311-puremagic-1.21 py311-pytz-2024.1
+ py311-setuptools-69.1.1 py311-typing-extensions-4.10.0 py311-urllib3-2.2.1
+ python311-3.11.8 qalculate-4.9.0nb1 qmmp-1.6.5nb6 qt5-qtmultimedia-5.15.12nb1
+ qt5-qtscript-5.15.12nb1 qt5-qtspeech-5.15.12nb1 qt5-qttools-5.15.12nb1
+ qt5-qtwebkit-5.212.0.alpha4nb25 qt6-qtbase-6.6.2 qt6-qtdeclarative-6.6.2
+ qt6-qtlanguageserver-6.6.2 qt6-qtmultimedia-6.6.1nb2 qt6-qtquick3d-6.6.2
+ qt6-qtquicktimeline-6.6.2 qt6-qtshadertools-6.6.2 qt6-qtsvg-6.6.2
+ rclone-1.65.0nb2 ruby31-native-package-installer-1.1.9 samba-4.19.5
+ seamonkey-2.53.16nb11 solid-5.114.0 sonnet-5.114.0 sqlite3-3.45.1 taglib-2.0
+ talloc-2.4.2 tdb-1.4.10 tevent-0.16.1 tex-babel-24.2 tex-colortbl-1.0g
+ tex-fancyvrb-4.5c tex-fontspec-2.9a tex-haranoaji-20231009 tex-hypdoc-1.19
+ tex-hyperref-7.01h tex-japanese-otf-20231010 tex-l3backend-2023.70027
+ tex-l3kernel-2024.70027 tex-l3packages-2023.69992 tex-latex-20231101.1
+ tex-latex-base-dev-20240601pre1 tex-latex-firstaid-dev-1.1b tex-ltxcmds-1.26
+ tex-lualibs-2.76 tex-luaotfload-3.27 tex-modes-4.3 tex-titlesec-2.16
+ tex-tools-20231101c tex-unicode-data-1.17 vulkan-headers-1.3.275
+ w3m-0.5.3.0.20230121nb3 webkit-gtk-2.36.8nb10 wxGTK32-3.2.4nb1 x264-20231001
+ xfce4-garcon-4.18.2 xfce4-mousepad-0.6.2 xfce4-terminal-1.1.2nb1
+ xfce4-tumbler-4.18.2nb2 xkeyboard-config-2.41 xnp2-0.86nb23
+ xscreensaver-6.08nb2 xterm-390 xvkbd-4.1
 
 System Updates:
 https://github.com/ebijun/NetBSD/commit/2e07db8ce05b7f8dc77b266b9ba98a7cc8dfd170
