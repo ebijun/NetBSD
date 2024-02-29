@@ -1,4 +1,4 @@
 echo -n '#'
 dmesg |grep sd |grep MB |tail -1
 echo "gunzip < `ls -lt /usr/release/images/*amd64*install* |head -1 |awk '{print $9}'`| dd of=/dev/rsd0d progress=400 bs=4m "
-echo "Boot with F12 to USB Boot on Dynabook R63"
+echo "echo Boot with F12 to USB Boot on Dynabook R63"
