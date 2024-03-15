@@ -2,20 +2,20 @@ SMART supported, SMART enabled
 id value thresh crit collect reliability description                 raw
   1 100   50     no  online  positive    Raw read error rate         0
   5 100   50     no  online  positive    Reallocated sector count    0
-  9 100   50     no  online  positive    Power-on hours count        98
- 12 100   50     no  online  positive    Device power cycle count    28
+  9 100   50     no  online  positive    Power-on hours count        6991
+ 12 100   50     no  online  positive    Device power cycle count    34
 160 100   50     no  online  positive    Unknown                     0
 161 100   50     no  online  positive    Unknown                     100
 163 100   50     no  online  positive    Unknown                     458
-164 100   50     no  online  positive    Unknown                     5
-165 100   50     no  online  positive    Unknown                     17
-166 100   50     no  online  positive    Unknown                     1
-167 100   50     no  online  positive    Unknown                     4
+164 100   50     no  online  positive    Unknown                     173
+165 100   50     no  online  positive    Unknown                     488
+166 100   50     no  online  positive    Unknown                     2
+167 100   50     no  online  positive    Unknown                     149
 168 100   50     no  online  positive    Unknown                     0
 169 100   50     no  online  positive    Unknown                     100
-175 100   50     no  online  positive    Program Fail Count          33554432
-176 100   50     no  online  positive    Erase Fail Count            355
-177 100   50     no  online  positive    Wear Leveling Count         220598
+175 100   50     no  online  positive    Program Fail Count          184549376
+176 100   50     no  online  positive    Erase Fail Count            1208305
+177 100   50     no  online  positive    Wear Leveling Count         8218520
 178 100   50     no  online  positive    Used Reserved Block Count   0
 181 100   50     no  online  positive    Program Fail Count          0
 182 100   50     no  online  positive    Erase Fail Count            0
@@ -27,5 +27,5 @@ id value thresh crit collect reliability description                 raw
 198 100   50     no  online  positive    Offline uncorrectable       0
 199 100   50     no  online  positive    Ultra DMA CRC error count   0
 232 100   50     no  online  positive    Available reserved space    100
-241 100   50     no  online  positive    Total LBAs Written          34880
-242 100   50     no  online  positive    Total LBAs Read             4159
+241 100   50     no  online  positive    Total LBAs Written          1060740
+242 100   50     no  online  positive    Total LBAs Read             513397
