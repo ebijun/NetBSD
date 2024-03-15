@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.0_RC4 (GENERIC) #0: Tue Feb  6 12:38:53 UTC 2024
+NetBSD 10.0_RC6 (GENERIC) #0: Tue Mar 12 10:19:02 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16315 MB
 avail memory = 15757 MB
@@ -69,13 +69,13 @@ acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <TOSHIB,A009F   ,20170310>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC86970638808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
+ACPI: SSDT 0xFFFFB59590A38808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC8663D4A6008 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFB5925D8A6008 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC8663D4FA008 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFB5925D8FA008 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC8663D4AC748 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFB5925D8AC748 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
@@ -195,6 +195,7 @@ wm0 at pci0 dev 31 function 6, 64-bit DMA: I219 V Ethernet Connection (rev. 0x21
 wm0: interrupting at msi5 vec 0
 wm0: PCI-Express bus
 wm0: 4096 words FLASH, version 0.13.4
+wm0: RX packet buffer size: 26KB
 wm0: Ethernet address ec:21:e5:c8:71:37
 wm0: 0x6a4080<FLASH,PCIE,ASF_FIRM,AMT,WOL,EEE>
 ihphy0 at wm0 phy 2: i217 10/100/1000 media interface, rev. 6
@@ -242,9 +243,9 @@ acpicpu3 at cpu3: ACPI CPU
 cpu0: CPU base freq 2400000000 Hz
 cpu0: CPU max freq 2800000000 Hz
 cpu0: TSC freq CPUID 2400000000 Hz
-cpu0: TSC freq calibrated 2400002000 Hz
+cpu0: TSC freq calibrated 2400005000 Hz
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-timecounter: Timecounter "TSC" frequency 2400002000 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2400005000 Hz quality 3000
 uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 uhub0: 6 ports with 6 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
