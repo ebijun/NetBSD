@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -76,21 +76,23 @@ Maps:
  2022 Fall,10/28-29,270,15,オンライン
  2023 Spring,3/10-11,340,18,オンライン
  2023 Spring,4/1,450,53,東京都立産業貿易センター台東館
- 2023 Fall,9/29-30,,,オンライン
- 2023 Fall,10/21,,,大田区産業プラザPIO
+ 2023 Fall,9/29-30,202,14,オンライン
+ 2023 Fall,10/21,300,29,大田区産業プラザPIO
+ 2024 Spring,3/1-2,,,オンライン
+ 2024 Spring,3/10,,,東京都立産業貿易センター台東館
+
  
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-これまですべてのバックナンバーは
-
-https://github.com/ebijun/osc-demo　にあります。
+これまですべてのバックナンバーは https://github.com/ebijun/osc-demo　にあります。
 
 .. csv-table::
  :widths: 20 30 80
 
  No,イベント,URL
 
+ 197, OSC2024東京春,http://www.re.soum.co.jp/~jun/OSC2023tokyospring.pdf 
  190, OSC2023東京秋,http://www.re.soum.co.jp/~jun/OSC2023tokyofall.pdf
  185, OSC2023東京春,http://www.re.soum.co.jp/~jun/OSC2023tokyospring.pdf 
  181, OSC2022東京秋,http://www.re.soum.co.jp/~jun/OSC2022tokyofall.pdf
@@ -124,6 +126,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2024 Online/Spring NetBSDのご紹介 の記録, https://togetter.com/li/2314715
  OSC2023 Online/Fall BSDなひととき の記録,https://togetter.com/li/2231931
  OSC2023 Online/Spring NetBSDのご紹介 の記録, https://togetter.com/li/2094211
  OSC2022 Online/Fall BSDなひととき の記録,https://togetter.com/li/1964480
@@ -227,6 +230,9 @@ OSC東京主な展示物
  2005/3/25-26,OSC2005,hpcmips/sh/arm
  2004/9/4,OSC2004,hpcmips/sh/arm
 
+
+
+
 2023年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -254,6 +260,23 @@ OSC東京主な展示物
 .. image::  ../Picture/2023/04/01/DSC_1159.JPG
 .. image::  ../Picture/2023/04/01/DSC_1160.JPG
 .. image::  ../Picture/2023/04/01/DSC_1161.JPG
+.. image::  ../Picture/2023/10/21/DSC_2080.JPG
+.. image::  ../Picture/2023/10/21/DSC_2081.JPG
+.. image::  ../Picture/2023/10/21/DSC_2082.JPG
+.. image::  ../Picture/2023/10/21/DSC_2083.JPG
+.. image::  ../Picture/2023/10/21/DSC_2084.JPG
+.. image::  ../Picture/2023/10/21/DSC_2085.JPG
+.. image::  ../Picture/2023/10/21/DSC_2086.JPG
+.. image::  ../Picture/2023/10/21/DSC_2087.JPG
+.. image::  ../Picture/2023/10/21/DSC_2088.JPG
+.. image::  ../Picture/2023/10/21/DSC_2089.JPG
+.. image::  ../Picture/2023/10/21/DSC_2090.JPG
+.. image::  ../Picture/2023/10/21/DSC_2091.JPG
+.. image::  ../Picture/2023/10/21/DSC_2092.JPG
+.. image::  ../Picture/2023/10/21/DSC_2093.JPG
+.. image::  ../Picture/2023/10/21/DSC_2095.JPG
+
+
 
 2019年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
