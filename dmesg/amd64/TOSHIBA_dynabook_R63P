@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.0_RC5 (GENERIC) #0: Tue Feb 27 05:27:39 UTC 2024
+NetBSD 10.0_RC6 (GENERIC) #0: Tue Mar 12 10:19:02 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16295 MB
 avail memory = 15740 MB
@@ -55,11 +55,11 @@ acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <TOSHIB,A0096   ,00000006>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF86A6B5942808 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
+ACPI: SSDT 0xFFFFB8D154542808 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF86A3B7C5F808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFB8CE5685F808 0005AA (v02 PmRef  ApIst    00003000 INTL 20130927)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF86A3B7C25248 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
+ACPI: SSDT 0xFFFFB8CE56825248 000119 (v02 PmRef  ApCst    00003000 INTL 20130927)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
@@ -222,7 +222,7 @@ acpicpu2 at cpu2: ACPI CPU
 coretemp1 at cpu2: thermal sensor, 1 C resolution, Tjmax=105
 acpicpu3 at cpu3: ACPI CPU
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-timecounter: Timecounter "TSC" frequency 2294691000 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2294689000 Hz quality 3000
 uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 uhub0: 4 ports with 4 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
@@ -256,7 +256,7 @@ boot device: wd0
 root on dk0 dumps on dk1
 root file system type: ffs
 kern.module.path=/stand/amd64/10.0/modules
-WARNING: NVRAM century is 42 but RTC year is 2024
+WARNING: NVRAM century is 11 but RTC year is 2024
 [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at msi7 vec 0 (i915drmkms0)
