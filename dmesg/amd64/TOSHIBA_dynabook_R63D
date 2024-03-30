@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.0_RC6 (GENERIC) #0: Tue Mar 12 10:19:02 UTC 2024
+NetBSD 10.0 (GENERIC) #0: Thu Mar 28 08:33:33 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16315 MB
 avail memory = 15757 MB
@@ -69,13 +69,13 @@ acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <TOSHIB,A009F   ,20170310>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFB59590A38808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
+ACPI: SSDT 0xFFFFF8EDD2838808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFB5925D8A6008 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFF8EA9F6A6008 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFB5925D8FA008 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFF8EA9F6FA008 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFB5925D8AC748 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFF8EA9F6AC888 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
