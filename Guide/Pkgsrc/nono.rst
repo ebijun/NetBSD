@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.7.0
+ DISTNAME=       nono-0.7.1
 
 チェックサム作成
 ------------------
@@ -41,8 +41,8 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
- -rw-r--r--  1 jun  wheel  1163 Feb 26 05:30 Makefile
- -rw-r--r--  1 jun  wheel   558 Feb 26 05:30 distinfo
+ -rw-r--r--  1 jun  wheel  1163 Apr  3 11:23 Makefile
+ -rw-r--r--  1 jun  wheel   558 Apr  3 11:23 distinfo
 
 make package して動作を確認します。
  
@@ -70,25 +70,18 @@ commit
 
  cvs commit 
 
- nono: update to 0.7.0. 
+ nono: update to 0.7.1. 
 
- 0.7.0 (2024-02-21)
+ 0.7.1 (2024/03/28)
 
- vm(New): "Start to support virt68k."
- vm(Fix): "Fix problem that the interrupt acknowledge didn't handle correctly when two Nereid boards are installed simul
-taneously."
- vm(Fix): "Fix several spurious interrupts on resetting on various devices."
- vm(Fix): "Implement MIE on X68030 SCC."
- vm(Fix): "Fix not to update TxDR on starting the timer on X68030 MFP."
- vm(Fix): "Fix several accesses to CRTC on X68030."
- vm(Update): "Fix and rearrange whole bus access. Some device wait may be changed intentionally or unintentionally."
- vm(Update): "Rearrange the power devices on all architecture."
- app(New): "Graphic rendering now can use AVX2 on amd64."
- app(Update): "-X option is changed to accept only one argument if -H is not specified."
- app(Update): "Configuration item exec-file and exec-arg are added."
- app(Update): "--initrd option and configuration item exec-initrd are added."
- app(Update): "Path beginning of '~' in the configuration file is replaced to the home directory."
- app(Fix): "-Lhelp can be displayed even if -X is specified."
+ m88k(Update): "Set good m88100, m88200 mask version. It makes OpenBSD/luna88k faster 10~20%."
+ vm(Update): "Change canonical machine name from virt68k to virt-m68k. (vmtype=virt68k can also be used.)"
+ vm(Update): "Support VirtIO's indirect descriptor."
+ vm(Update): "Adjust VirtIO Network's queue size."
+ vm(New): "Implement VirtIO Entropy device."
+ vm(Fix): "Fix Goldfish timer to raise an interrupt immediately if the specified time is in the past."
+ vm(Fix): "Fix CRTC accesses on X68030 broken since ver 0.7.0."
+
 
 doc をcommit します
 ---------------------
@@ -98,9 +91,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to  0.7.0
+ doc: Updated emulators/nono to 0.7.1
  
  cvs diff -u CHANGES-2024
  
-        Updated emulators/nono to 0.7.0 [jun 2024-02-26]
+        Updated emulators/nono to 0.7.1 [jun 2024-04-03]
 
