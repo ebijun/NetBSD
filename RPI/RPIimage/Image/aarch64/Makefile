@@ -5,25 +5,29 @@ ARCH=aarch64
 # set image file name
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
+#NetBSD-current
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202404171240Z/evbarm-aarch64/binary
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2024/
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202402190640Z/evbarm-aarch64/binary
+#NetBSD10
+#BINARY=nycdn.netbsd.org/pub/NetBSD-daily/netbsd-10/202404140340Z/
+#PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/10.0/All/
+
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/arm64.img.gz
 #RPI=${BINARY}/gzimg/arm64mbr.img.gz
 ORD=a.img
 
 # UEFI
-UEFI_VER=v1.35
+UEFI_VER=v1.37
 UEFI_FIRM=RPi4_UEFI_Firmware_${UEFI_VER}.zip
 UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 
 #Firmware:
 #git show HEAD |head
-#commit c700ec07c8c9b4bd25c47bfb22ee12e935ebbf26 (HEAD -> master, origin/master, origin/HEAD)
+#commit 63cb359fa93cfa8d15768a538b6479c717b8b54b (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Mon Feb 19 12:39:29 2024 +0000
-#    kernel: Bump to 6.6.17
+#Date:   Wed Apr 17 17:39:06 2024 +0100
 
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
