@@ -36,11 +36,9 @@ KERNEL7=${BINARY}/kernel/netbsd-RPI2.gz
 LIST=man modules xbase xcomp xetc xfont xserver 
 
 #Firmware: 
-#commit 0968de28716a9b1f106b8492646d0ed0a2800152 (HEAD -> master, origin/master, origin/HEAD)
+#commit 63cb359fa93cfa8d15768a538b6479c717b8b54b (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Thu Jan 11 16:27:38 2024 +0000
-#    kernel: Bump to 6.1.72
-
+#Date:   Wed Apr 17 17:39:06 2024 +0100
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup4.dat fixup4cd.dat fixup4db.dat fixup4x.dat fixup_cd.dat fixup_db.dat fixup_x.dat start.elf start4.elf start4cd.elf start4db.elf start4x.elf start_cd.elf start_db.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
