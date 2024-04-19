@@ -1,5 +1,7 @@
 version=$(git log sysinfo |grep commit |head -2 |tail -1|awk '{print $2}')
 
+grep '^BINARY' Makefile
+
 echo "sysinfo:"
 git diff $version sysinfo |grep '^+'  |sed -e 's/+/ /' 
 
