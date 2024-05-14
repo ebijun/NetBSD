@@ -1,22 +1,24 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20240220)
+Subject: apple m1 status update (20240506)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 sysinfo:
- libm-0.14
+ bind-9.18.24
+ tcsh-6.24.12
 
 pkgsrc:
- cmake-3.28.3
- git-base-2.43.1
- glib2-2.78.4
- gtk3+-3.24.41
- gtk4-4.12.5
- libreoffice-7.6.4.1nb2
- mate-1.26.1nb8
- nss-3.98
- python311-3.11.8
+ boost-libs-1.85.0
+ llvm-17.0.6
+ mate-1.26.1nb11
+ mlterm-3.9.3nb9
+ nss-3.99
+ python311-3.11.9
+ ruby31-base-3.1.5
+ rust-1.76.0
+ samba-4.20.0
+ uim-1.8.9nb10
 
 failed:
  firefox-121.0.1 still fail on my aarch64 environment.
@@ -93,12 +95,13 @@ Hardware:
  USB SSD 512GB BUFFALO SSD-PGM2.0U3-BC
 
 Filesystem   1M-blocks      Used     Avail %Cap Mounted on
-/dev/dk6        480587    250710    205847  54% /
+/dev/dk6        480587    255631    200926  55% /
 /dev/dk5            79        34        44  43% /boot
 ptyfs                0         0         0 100% /dev/pts
 procfs               0         0         0 100% /proc
-tmpfs             1913         5      1907   0% /var/shm
-/dev/sd1a       946388    456129    442940  50% /media
+tmpfs             1913         0      1913   0% /var/shm
+/dev/sd1a       946388    462571    436497  51% /media
+/dev/dk8          1493       909       509  64% /mnt1
 
 ToDo:
 - audio
@@ -112,47 +115,113 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- bozohttpd-20240126 gzip-20240203 libm-0.14 sh-20220122-20240219043321Z
- tzdata-2024agtz unbound-1.19.1
+ bind-9.18.24 bozohttpd-20240428 sh-20220122-20240505025302Z sqlite3-3.45.1
+ tcsh-6.24.12
 
 pkgsrc:
- ImageMagick-7.1.1.27 SDL-1.2.15nb43 SDL2-2.30.0 SDL2_mixer-2.0.4nb14
- abseil-20240116.1 atril-1.26.2 bsdtar-3.7.2 cmake-3.28.3 curl-8.6.0 dav1d-1.4.0
- enchant2-2.6.7 exiv2-0.28.2 ffmpeg4-4.4.4nb9 ffmpeg5-5.1.4nb4 ffmpeg6-6.1.1nb3
- ffmpegthumbnailer-2.2.2nb6 fluidsynth-2.3.4nb1 gdbus-codegen-2.78.4
- gegl-0.4.46nb7 git-base-2.43.1 glib2-2.78.4 glib2-tools-2.78.4 glm-1.0.0
- gnupg2-2.4.4 gnutls-3.8.3 gst-plugins1-good-1.22.8nb1 gtk3+-3.24.41 gtk4-4.12.5
- guile22-slib-3.3.1 gumbo-parser-0.12.1 imath-3.1.10 imlib2-1.9.1nb5 inih-58
- jasper-4.2.0 libaom-3.8.1 libarchive-3.7.2 libffi-3.4.6 libgit2-1.7.2
- libidn-1.42 libidn2-2.3.7 libimagequant-4.3.0 libixion-0.19.0
- libmikmod-3.3.11.1nb13 libpaper-2.1.3 libproxy-0.5.4 libreoffice-7.6.4.1nb2
- libusb1-1.0.27 libuv-1.48.0 libvpx-1.14.0 libxfce4ui-4.18.5 libxfce4util-4.18.2
- libxml2-2.12.4 libxslt-1.1.39 lmdb-0.9.32 lzip-1.24 mate-1.26.1nb8
- mate-panel-1.26.4nb1 mate-settings-daemon-1.26.1nb5 md4c-0.5.2 meson-1.3.2
- mpg123-1.32.4 mpv-0.37.0nb2 neon-0.33.0 nghttp2-1.59.0 nginx-1.24.0nb17
- nss-3.98 openal-soft-1.23.1nb3 orc-0.4.37 orcus-0.19.2 osg-3.6.5nb47
- p5-Date-Manip-6.94 p5-Email-Valid-1.204 p5-IO-Socket-SSL-2.085
- p5-LWP-Protocol-https-6.12 p5-Net-DNS-1.43 p5-Test-Warnings-0.033 p5-URI-5.25
- p5-XML-LibXML-2.0210 p5-libwww-6.76 pcre2-10.43 pkg_install-20211115nb2
- pkgconf-2.1.1 pluma-1.26.1nb6 png-1.6.42 postgresql14-client-14.11
- protobuf-25.3 pulseaudio-17.0 py-cairo-shared-1.26.0 py311-OpenSSL-24.0.0
- py311-cairo-1.26.0 py311-certifi-2024.2.2 py311-cryptography-42.0.3
- py311-dns-2.6.1 py311-glad2-2.0.5 py311-hatchling-1.21.1 py311-libxml2-2.12.4
- py311-markupsafe-2.1.5 py311-pdf-4.0.2 py311-pip-24.0 py311-pluggy-1.4.0
- py311-poetry-core-1.9.0 py311-puremagic-1.20 py311-pytz-2024.1
- py311-setuptools-69.1.0 py311-trove-classifiers-2024.1.31 py311-urllib3-2.2.0
- python311-3.11.8 qmmp-1.6.5nb6 qt5-qtmultimedia-5.15.12nb1
- ruby31-native-package-installer-1.1.9 seamonkey-2.53.16nb11 slib-3.3.1
- sqlite3-3.45.1 taglib-2.0 talloc-2.4.2 tdb-1.4.10 tevent-0.16.1 tex-babel-24.2
- tex-fancyvrb-4.5c tex-haranoaji-20231009 tex-hypdoc-1.19 tex-hyperref-7.01h
- tex-latex-20231101.1 tex-ltxcmds-1.26 tex-tools-20231101c tex-unicode-data-1.17
- vlc-3.0.20nb3 vulkan-headers-1.3.275 w3m-0.5.3.0.20230121nb3 xfce4-4.18.1nb9
- xfce4-garcon-4.18.2 xfce4-mousepad-0.6.2 xfce4-terminal-1.1.2
- xfce4-tumbler-4.18.2nb2 xkbcomp-1.4.7 xkeyboard-config-2.41 xnp2-0.86nb23
- xscreensaver-6.08nb2
+ ImageMagick-7.1.1.29nb1 SDL2-2.30.3 SDL2_mixer-2.0.4nb15 a2ps-4.15.5nb2
+ abseil-20240116.2 apache-2.4.59 argon2-20190702 atril-1.26.2nb3 babl-0.1.108
+ bash-5.2.26nb1 boost-headers-1.85.0nb1 boost-jam-1.85.0 boost-libs-1.85.0
+ bsdtar-3.7.4 cairo-1.18.0nb2 cairomm-1.14.5nb3 caja-1.26.3nb5
+ caja-dropbox-1.26.0nb8 caja-extensions-1.26.1nb11 cmake-3.29.2 curl-8.7.1
+ deforaos-browser-0.5.5nb9 deforaos-camera-0.3.0nb12 deforaos-editor-0.4.1nb12
+ deforaos-keyboard-0.4.0nb12 deforaos-libdesktop-0.4.1nb9
+ deforaos-mixer-0.4.1nb8 deforaos-panel-0.4.3nb9 deforaos-pdfviewer-0.1.0nb26
+ deforaos-phone-0.6.0nb14 elementary-xfce-icon-theme-0.18 emacs28-28.2nb18
+ enchant2-2.7.3 engrampa-1.26.2nb2 eom-1.26.1nb7 ffmpeg4-4.4.4nb10
+ ffmpeg5-5.1.4nb5 ffmpeg6-6.1.1nb4 fftw-3.3.10nb2 fossil-2.24 fribidi-1.0.14
+ gcc10-10.5.0nb2 gcc12-libs-12.3.0nb1 gcc13-libjit-13.2.0 gcr-3.38.1nb13
+ gdbus-codegen-2.80.0 gegl-0.4.48nb2 gettext-lib-0.22.5 gettext-m4-0.22.5
+ gettext-tools-0.22.5 gexiv2-0.14.2 ghostscript-agpl-10.03.0 gimp-2.10.36nb9
+ git-base-2.45.0 glib-networking-2.80.0 glib2-2.80.0 glib2-tools-2.80.0
+ glm-1.0.1 gnome-desktop-44.0nb4 gnome-icon-theme-symbolic-3.12.0nb26
+ gnome-keyring-3.36.0nb9 gnome-themes-standard-3.20.2nb28 gnupg2-2.4.5
+ gnutls-3.8.5nb1 gobject-introspection-1.80.1nb2 graphviz-10.0.1 gspell-1.8.4nb5
+ gst-plugins1-bad-1.22.10 gst-plugins1-base-1.24.1 gst-plugins1-good-1.24.1nb2
+ gstreamer1-1.24.1 gtk2+-2.24.33nb18 gtk2-engines-2.20.2nb36
+ gtk2-engines-murrine-0.98.2nb19 gtk3+-3.24.41nb2 gtk4-4.14.3
+ gtksourceview3-3.24.11nb19 gtksourceview4-4.8.4nb6 gtkspell-2.0.16nb41
+ harfbuzz-8.4.0 harfbuzz-icu-8.4.0 imath-3.1.11 imlib2-1.12.2 iso-codes-4.16.0
+ jasper-4.2.4 jwm-2.4.3nb9 kpathsea-6.4.0 lame-3.100nb6 ldb-2.9.0 libXaw3d-1.6.6
+ libaom-3.9.0 libappindicator-12.10.0nb24 libarchive-3.7.4 libassuan-2.5.7
+ libcanberra-0.30nb15 libdbusmenu-gtk3-16.04.0nb4 libdeflate-1.20
+ libglade-2.6.4nb48 libgpg-error-1.49 libgweather-40.0nb21 libgxps-0.2.2nb32
+ libheif-1.17.6nb1 libical-3.0.18 libimagequant-4.3.1 libindicator-12.10.1nb21
+ libksba-1.6.6 libmad-0.15.1bnb3 libmatekbd-1.26.1nb6 libmatemixer-1.26.1nb5
+ libmateweather-1.26.3nb2 libnice-0.1.22 libnotify-0.8.1nb6 libopus-1.5.2
+ libpaper-2.2.5 libpeas-1.26.0nb13 libproxy-0.5.6 libreoffice-24.2.2.2
+ librsvg-2.58.0 libsexy-0.1.11nb47 libunique-1.1.6nb39 libunistring-1.2
+ libva-2.21.0 libwebp-1.4.0 libwildmidi-0.4.6 libwnck-2.30.7nb8
+ libwnck3-3.36.0nb10 libxfce4ui-4.18.6nb2 libxfce4util-4.18.2nb2
+ libxkbcommon-1.7.0 llvm-17.0.6 ltm-1.3.0 luatex-1.18.0nb1 lzip-1.24.1
+ makejvf-20230917 marco-1.26.2nb5 mate-1.26.1nb11 mate-applets-1.26.1nb10
+ mate-backgrounds-1.26.0nb8 mate-calc-1.26.0nb9 mate-common-1.26.0nb7
+ mate-control-center-1.26.1nb6 mate-desktop-1.26.2nb5 mate-icon-theme-1.26.0nb8
+ mate-icon-theme-faenza-1.20.0nb18 mate-indicator-applet-1.26.0nb7
+ mate-media-1.26.2nb2 mate-menus-1.26.1nb5 mate-netbook-1.26.0nb7
+ mate-notification-daemon-1.26.1nb6 mate-panel-1.26.4nb3 mate-polkit-1.26.1nb7
+ mate-power-manager-1.26.1nb5 mate-screensaver-1.26.2nb6
+ mate-sensors-applet-1.26.0nb7 mate-session-manager-1.26.1nb5
+ mate-settings-daemon-1.26.1nb7 mate-terminal-1.26.1nb5 mate-themes-3.22.24nb5
+ mate-utils-1.26.1nb5 medit-1.2.0nb30 mendexk-3.6nb2 meson-1.4.0 mlterm-3.9.3nb9
+ mm-common-1.0.6 mozilla-rootcerts-1.0.20240214 mozilla-rootcerts-openssl-2.14
+ mozo-1.26.2nb8 mpfi-1.5.4 mpg123-1.32.6 mpv-0.37.0nb3 ncursesw-6.4nb1
+ netpbm-11.02.09 nghttp2-1.61.0 ninja-build-1.12.0 npth-1.7 nss-3.99
+ openexr-3.2.4 openjpeg-2.5.2 orc-0.4.38 osg-3.6.5nb50
+ p5-B-Hooks-EndOfScope-0.28 p5-CGI-4.64 p5-CPAN-Meta-Requirements-2.143
+ p5-CPAN-Requirements-Dynamic-0.001 p5-Date-Manip-6.95 p5-DateTime-Locale-1.42
+ p5-DateTime-TimeZone-2.62 p5-ExtUtils-Config-0.009
+ p5-ExtUtils-InstallPaths-0.013 p5-Finance-Quote-1.61 p5-HTML-Parser-3.82
+ p5-HTML-Tagset-3.24 p5-HTTP-Message-6.45nb1 p5-LWP-Protocol-https-6.14
+ p5-Module-Build-Tiny-0.048 p5-Mozilla-CA-20240313 p5-Net-DNS-1.45
+ p5-Test2-Plugin-NoWarnings-0.10 p5-Test2-Suite-0.000162 p5-URI-5.28
+ p5-Variable-Magic-0.64 p5-libwww-6.77nb1 pango-1.52.2nb2 pciutils-3.11.1
+ pinentry-1.3.0nb1 pkgconf-2.2.0 pluma-1.26.1nb8 png-1.6.43 poppler-24.03.0nb1
+ poppler-cpp-24.03.0nb1 poppler-includes-24.03.0 protobuf-26.1 ptexenc-1.4.6
+ py-gobject-shared-2.28.7nb11 py-gobject3-common-3.48.2 py27-cairo-1.18.2nb6
+ py27-gtk2-2.24.0nb48 py311-OpenSSL-24.1.0 py311-Pillow-10.3.0 py311-build-1.2.1
+ py311-cairo-1.26.0nb1 py311-cparser-2.22 py311-cryptography-42.0.6
+ py311-defusedxml-0.7.1nb1 py311-docutils-0.21.2 py311-ecdsa-0.19.0
+ py311-glad2-2.0.6 py311-gobject3-3.48.2 py311-hatchling-1.24.2 py311-idna-3.7
+ py311-importlib-metadata-7.1.0 py311-lxml-5.2.1 py311-markdown-3.6
+ py311-packaging-24.0 py311-pdf-4.2.0nb1 py311-pluggy-1.5.0 py311-puremagic-1.23
+ py311-pygments-2.18.0 py311-pyparsing-3.1.2 py311-roman-4.2 py311-scons-4.7.0
+ py311-setuptools-69.5.1 py311-setuptools-rust-1.9.0 py311-sphinx-7.3.7
+ py311-trove-classifiers-2024.4.10 py311-typing-extensions-4.11.0
+ py311-urllib3-2.2.1 py311-wheel-0.43.0 py311-zipp-3.18.1
+ py311-zstandard-0.22.0nb1 python310-3.10.14 python311-3.11.9 python38-3.8.19
+ python39-3.9.19 qmmp-1.6.5nb7 qt5-qtbase-5.15.13nb2
+ qt5-qtdeclarative-5.15.13nb1 qt5-qtmultimedia-5.15.13nb1 qt5-qtsvg-5.15.13nb1
+ qt5-qtx11extras-5.15.13nb1 qt5-qtxmlpatterns-5.15.13nb1 rsync-3.3.0
+ ruby31-base-3.1.5 rust-1.76.0 samba-4.20.0 seamonkey-2.53.16nb13 spdlog-1.14.1
+ sqlite3-3.45.3 sudo-1.9.15p5 sylpheed-3.7.0nb16 taglib-2.0.1 tcl-8.6.14
+ tcsh-6.24.12 tex-colortbl-1.0g tex-hyphen-base-2024 tex-kpathsea-2024
+ tex-l3backend-2024 tex-l3kernel-2024.70637 tex-l3packages-2024
+ tex-latex-bin-2024 tex-latexconfig-2023 tex-luatex-1.18.0 tex-oberdiek-2023
+ tex-tex-ini-files-2023 tex-texlive-scripts-2024.70742
+ tex-texlive-scripts-doc-2024.70742 tex-texlive.infra-2024
+ tigervnc-1.13.1.1.20.13nb6 tk-8.6.14 tree-sitter-0.22.5 tree-sitter-bash-0.20.5
+ tree-sitter-c-0.20.7 tree-sitter-c-sharp-0.20.0 tree-sitter-cmake-0.4.1
+ tree-sitter-cpp-0.22.0 tree-sitter-css-0.21.0 tree-sitter-dockerfile-0.1.2nb1
+ tree-sitter-elixir-0.2.0 tree-sitter-go-0.20.0 tree-sitter-go-mod-1.0.2
+ tree-sitter-heex-0.6.0 tree-sitter-html-0.20.1 tree-sitter-java-0.20.2
+ tree-sitter-json-0.21.0 tree-sitter-python-0.21.0 tree-sitter-ruby-0.20.1
+ tree-sitter-rust-0.21.2 tree-sitter-toml-0.5.1nb1 tree-sitter-tsx-0.20.2
+ tree-sitter-typescript-0.20.4 tree-sitter-yaml-0.5.0nb1 uim-1.8.9nb10
+ vala-0.56.17 vlc-3.0.20nb4 vte-0.28.1nb35 vte3-0.74.2nb2 vulkan-headers-1.3.282
+ w3m-0.5.3.0.20230121nb4 waf-2.0.27 wavpack-5.7.0 wayland-protocols-1.35
+ web2c-2024nb1 wget-1.24.5 wxGTK30-3.0.5.1nb15 x264-20231001 x265-3.6
+ xfce4-4.18.1nb14 xfce4-appfinder-4.18.1nb5 xfce4-conf-4.18.3nb2
+ xfce4-desktop-4.18.1nb5 xfce4-exo-4.18.0nb7 xfce4-garcon-4.18.2nb2
+ xfce4-icon-theme-4.4.3nb43 xfce4-mousepad-0.6.2nb2 xfce4-orage-4.18.0nb7
+ xfce4-panel-4.18.6nb2 xfce4-power-manager-4.18.3nb2 xfce4-session-4.18.3nb6
+ xfce4-settings-4.18.4nb2 xfce4-terminal-1.1.3nb2 xfce4-thunar-4.18.10nb2
+ xfce4-tumbler-4.18.2nb5 xfce4-wm-4.18.0nb7 xfce4-wm-themes-4.10.0nb25
+ xli-1.17.0nb14 xnp2-0.86nb25 xorg-util-macros-1.20.1 xscreensaver-6.08nb4
+ xxhash-0.8.2nb1 zenity-3.41.0nb11 zstd-1.5.6 zxcvbn-c-2.5 zziplib-0.13.74
 
 Version: 
- NetBSD 10.99.10 (GENERIC64) #0: Mon Feb 19 04:33:21 UTC 2024  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 10.99.10 (GENERIC64) #0: Sun May  5 02:53:02 UTC 2024  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
