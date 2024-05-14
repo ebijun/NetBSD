@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.7.1
+ DISTNAME=       nono-0.7.2
 
 チェックサム作成
 ------------------
@@ -41,8 +41,9 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
- -rw-r--r--  1 jun  wheel  1163 Apr  3 11:23 Makefile
- -rw-r--r--  1 jun  wheel   558 Apr  3 11:23 distinfo
+ -rw-r--r--  1 jun  wheel  1164 May 14 18:04 Makefile
+ -rw-r--r--  1 jun  wheel   306 May 14 18:04 PLIST
+ -rw-r--r--  1 jun  wheel   558 May 14 18:05 distinfo
 
 make package して動作を確認します。
  
@@ -70,17 +71,18 @@ commit
 
  cvs commit 
 
- nono: update to 0.7.1. 
+ nono: update to 0.7.2. 
 
- 0.7.1 (2024/03/28)
+ 0.7.2 (2024/05/11)
 
- m88k(Update): "Set good m88100, m88200 mask version. It makes OpenBSD/luna88k faster 10~20%."
- vm(Update): "Change canonical machine name from virt68k to virt-m68k. (vmtype=virt68k can also be used.)"
- vm(Update): "Support VirtIO's indirect descriptor."
- vm(Update): "Adjust VirtIO Network's queue size."
- vm(New): "Implement VirtIO Entropy device."
- vm(Fix): "Fix Goldfish timer to raise an interrupt immediately if the specified time is in the past."
- vm(Fix): "Fix CRTC accesses on X68030 broken since ver 0.7.0."
+ m68k(Update): "Improve ATC and TT search performance about 10%."
+ vm(Update): "Implement a burst transfer on LUNA and virt-m68k. It improves the performance of m68k by about 6-10% and m88
+k by about 3%. (X68030 hardware doesn't support the burst transfer)"
+ vm(Update): "Improve performance of whole virt-m68k and virtio-block slightly."
+ vm(Update): "Minor adjustment for scheduler monitor and 88100 register monitor."
+ vm(Update): "Change unit to 2MB/char on X68030 access stat monitor to be consistent with other VMs."
+ vm(New): "Implement performance measurement gimic on virt-m68k."
+ m68k(Fix): "Fix problem that "Restart VM" sometimes causes app termination since ver 0.6.3."
 
 
 doc をcommit します
@@ -91,9 +93,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 0.7.1
+ doc: Updated emulators/nono to 0.7.2
  
  cvs diff -u CHANGES-2024
  
-        Updated emulators/nono to 0.7.1 [jun 2024-04-03]
+        Updated emulators/nono to 0.7.2 [jun 2024-05-14]
 
