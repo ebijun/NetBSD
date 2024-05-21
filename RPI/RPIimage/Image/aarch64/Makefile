@@ -6,7 +6,7 @@ ARCH=aarch64
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 #NetBSD-current
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202404171240Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202405181950Z/evbarm-aarch64/binary
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2024/
 
 #NetBSD10
@@ -22,6 +22,8 @@ ORD=a.img
 UEFI_VER=v1.37
 UEFI_FIRM=RPi4_UEFI_Firmware_${UEFI_VER}.zip
 UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
+
+RPI5_UEFI=RPI5
 
 #Firmware:
 #git show HEAD |head
@@ -61,6 +63,10 @@ boot_config:
 	# Copy RPI_EFI.fd
 	mv ${MNT_BOOT}/RPI_EFI.fd ${MNT_BOOT}/RPI_EFI.fd.org
 	cp boot/RPI_EFI.fd  ${MNT_BOOT} #disable 3GB barrier
+	# https://github.com/worproject/rpi5-uefi/releases
+	cp RPI5/RPI_EFI.fd ${MNT_BOOT}/RPI_EFI.fd.rpi5-uefi
+	cp RPI5/bcm2712-rpi-5-b.dtb ${MNT_BOOT}
+	cp RPI5/config.txt ${MNT_BOOT}/config.txt.rpi5-uefi
 	sync
 	umount ${MNT_BOOT}
 	vnconfig -u ${VND}
