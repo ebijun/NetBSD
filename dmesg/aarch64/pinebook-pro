@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.10 (GENERIC64) #0: Mon Feb 26 23:11:12 UTC 2024
+NetBSD 10.99.10 (GENERIC64) #0: Tue May 21 04:01:26 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 3946 MB
 avail memory = 3803 MB
@@ -318,26 +318,25 @@ uhub3: 1 port with 1 removable, self powered
 rkspi0: autoconfiguration error: spi_clk 37125000 is too low for speed 20000000, using speed 18562500
 uhub4 at usb0: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub4: 1 port with 1 removable, self powered
-uhub5 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
-uhub5: 1 port with 1 removable, self powered
 m25p0: JEDEC ID mfgid:0xC8, devid:0x4018
 spiflash0 at m25p0: GigaDevice 25Q127CSIG SPI flash
 spiflash0: 16384 KB, 256 sectors of 64 KB each
+uhub5 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub5: 1 port with 1 removable, self powered
 uhub6 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub6: 1 port with 1 removable, self powered
 uhub7 at usb3: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
 uhub7: 1 port with 1 removable, self powered
-armpmu1: interrupting on GICv3 irq 23
-armpmu0: autoconfiguration error: couldn't initialise PMU event counter
-IPsec: Initialized Security Association Processing.
 sdmmc2 at dwcmmc0
+armpmu0: interrupting on GICv3 irq 23
+armpmu1: autoconfiguration error: couldn't initialise PMU event counter
+IPsec: Initialized Security Association Processing.
 sdmmc1: SD card status: 4-bit, C10, U3, V30, A1
 ld1 at sdmmc1: <0xad:0x4c53:USD00:0x10:0x41dec4ba:0x167>
 ld1: 30250 MB, 7682 cyl, 128 head, 63 sec, 512 bytes/sect x 61952000 sectors
 sdhc0: autoconfiguration error: timeout waiting for mask 0x3 value 0 (state=0x1fff0a06)
 sdhc0: command or data phase inhibited
 sdhc0: autoconfiguration error: tuning did not complete, using fixed sampling clock
-warning: /usr/src/sys/external/bsd/drm2/dist/drm/drm_atomic_helper.c:1497: [CRTC:38:crtc-1] vblank wait timed out
 ehci0: handing over low speed device on port 1 to companion controller
 ld0 at sdmmc0: <0x45:0x0100:DA4064:0x00:0x0b46130f:0x000>
 ld0: 59640 MB, 7603 cyl, 255 head, 63 sec, 512 bytes/sect x 122142720 sectors
@@ -350,6 +349,10 @@ sdmmc2: SDIO function
 bwfm0 at sdmmc2 function 1
 (manufacturer 0x2d0, product 0xa9bf) at sdmmc2 function 2 not configured
 (manufacturer 0x2d0, product 0xa9bf, standard function interface code 0x2) at sdmmc2 function 3 not configured
+urtwn0 at uhub3 port 1
+urtwn0: I-O DATA DEVICE, INC. (0x04bb) WN-G150UM (0x094c), rev 2.00/2.00, addr 1
+urtwn0: MAC/BB RTL8188CUS, RF 6052 1T1R, address 34:76:c5:b3:9c:b6
+urtwn0: 1 rx pipe, 2 tx pipes
 uhub8 at uhub6 port 1: vendor 05e3 (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/60.90, addr 2
 uhub8: single transaction translator
 uhub8: 4 ports with 1 removable, self powered
@@ -376,10 +379,6 @@ uts1: autoconfiguration error: touchscreen has no X report
 uhid7 at uhidev1 reportid 35: input=0, output=0, feature=1
 uvideo0 at uhub8 port 1 configuration 1 interface 0: Sonix Technology Co., Ltd. (0x0c45) USB Camera (0x6321), rev 2.00/0.00, addr 3
 video0 at uvideo0: Sonix Technology Co., Ltd. (0x0c45) USB Camera (0x6321), rev 2.00/0.00, addr 3
-urtwn0 at uhub8 port 2
-urtwn0: I-O DATA DEVICE, INC. (0x04bb) WN-G150UM (0x094c), rev 2.00/2.00, addr 4
-urtwn0: MAC/BB RTL8188CUS, RF 6052 1T1R, address 34:76:c5:b3:9c:b6
-urtwn0: 1 rx pipe, 2 tx pipes
 swwdog0: software watchdog initialized
 rkspi0: RXFIFO overflow
 WARNING: 8 errors while detecting hardware; check system log.
@@ -396,3 +395,4 @@ bwfm0: autoconfiguration error: NVRAM file not available
 bwfm0: CLM file default:    brcmfmac43455-sdio.clm_blob
 bwfm0: CLM file model-spec: brcmfmac43455-sdio.pine64,pinebook-pro.clm_blob
 wsdisplay0: screen 4 added (default, vt100 emulation)
+rktsadc0: warning over limit on 'CPU'
