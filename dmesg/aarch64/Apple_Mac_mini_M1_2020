@@ -6,10 +6,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.10 (GENERIC64) #0: Sun May  5 02:53:02 UTC 2024
+NetBSD 10.99.10 (GENERIC64) #0: Tue Jun 18 14:08:11 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
-total memory = 7652 MB
-avail memory = 7376 MB
+total memory = 7651 MB
+avail memory = 7375 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 armfdt0 (root)
@@ -287,6 +287,3 @@ WARNING: CHECK AND RESET THE DATE!
 entropy: best effort
 entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
-vnd0: GPT GUID: 6636f48e-f48e-4636-8ef4-36668ef43666
-dk7 at vnd0: "EFI system", 262144 blocks at 2048, type: msdos
-dk8 at vnd0: "6636f48e-f48e-4636-8ef4-36668ef43666", 3112960 blocks at 264192, type: ffs

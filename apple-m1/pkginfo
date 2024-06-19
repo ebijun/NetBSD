@@ -1,7 +1,7 @@
-CUnit-2.1.3         C Unit checking test software
-GConf-3.2.3nb18     Configuration database system used by GNOME
-ImageMagick-7.1.1.29nb1 Package for display and non-interactive manipulation of images
-ImageMagick6-6.9.13.3 Package for display and interactive manipulation of images
+CUnit-2.1.3nb1      C Unit checking test software
+GConf-3.2.3nb19     Configuration database system used by GNOME
+ImageMagick-7.1.1.29nb3 Package for display and non-interactive manipulation of images
+ImageMagick6-6.9.13.3nb2 Package for display and interactive manipulation of images
 ORBit2-2.14.19nb6   High-performance CORBA ORB with C language support
 SDL-1.2.15nb43      Simple DirectMedia Layer, a cross-platform multimedia library
 SDL2-2.30.3         Simple DirectMedia Layer - cross-platform multimedia library
@@ -14,16 +14,16 @@ abseil-20240116.2   C++ Common Libraries
 adwaita-icon-theme-40.1.1 Standard GNOME icons
 anthy-9100hnb1      Kana Kanji conversion system
 ap24-php74-7.4.33nb10 Apache (apache24) module for PHP7.4
-apache-2.4.59       Apache HTTP (Web) server, version 2.4
+apache-2.4.59nb2    Apache HTTP (Web) server, version 2.4
 apr-1.7.4           Apache Portable Runtime
-apr-util-1.6.3nb3   Apache Portable Runtime utilities
+apr-util-1.6.3nb4   Apache Portable Runtime utilities
 argon2-20190702     Password hash Argon2
-asciidoc-10.2.0nb6  ASCII to formatted document converter
+asciidoc-10.2.0nb7  ASCII to formatted document converter
 aspell-0.60.8.1     Spell checker with good multi-language support
 at-spi2-atk-2.38.0nb2 Assistive Technology Service Provider Interface A11y Toolkit
 at-spi2-core-2.44.1 Assistive Technology Service Provider Interface Core
 atk-2.38.0nb1       Set of interfaces for accessibility
-atril-1.26.2nb3     Simple multi-page document viewer for the MATE environment
+atril-1.26.2nb4     Simple multi-page document viewer for the MATE environment
 autoconf-2.72       Generates automatic source code configuration scripts
 autoconf213-2.13nb11 Generates automatic source code configuration scripts (old version)
 automake-1.16.5nb3  GNU Standards-compliant Makefile generator
@@ -36,31 +36,31 @@ blas-3.12.0         Basic Linear Algebra System (Netlib reference implementation
 boehm-gc-8.2.4      Garbage collection and memory leak detection for C and C++
 boost-headers-1.85.0nb1 Free, peer-reviewed portable C++ source libraries (build-time headers)
 boost-jam-1.85.0    Free, peer-reviewed portable C++ source libraries (Boost.Jam utility)
-boost-libs-1.85.0   Free, peer-reviewed portable C++ source libraries (binary libraries)
+boost-libs-1.85.0nb1 Free, peer-reviewed portable C++ source libraries (binary libraries)
 box2d-2.4.1         2D physics engine for games
 brotli-1.1.0        Generic-purpose lossless compression algorithm
 bsdtar-3.7.4        Fast multi-format tape archiver
 cairo-1.18.0nb2     Vector graphics library with cross-device output support
 cairomm-1.14.5nb3   C++ API for cairo (1.0 API)
-caja-1.26.3nb5      File manager for the MATE desktop
+caja-1.26.3nb6      File manager for the MATE desktop
 caja-dropbox-1.26.0nb8 Dropbox Caja extension
-caja-extensions-1.26.1nb11 Set of extensions for Caja
+caja-extensions-1.26.1nb12 Set of extensions for Caja
 cbindgen-0.26.0     Generating C bindings from Rust code
 cblas-3.12.0        C interface to the reference BLAS library
 cdparanoia-3.0.10.2nb5 CDDA reading utility with extra data verification features
 chatgpt-shell-cli-0.0.20230516 Shell script to use OpenAI's ChatGPT and DALL-E
 check-0.15.2        Unit test framework for C
-clang-16.0.6nb1     C language family frontend for LLVM
-cmake-3.29.2        Cross platform make
+clang-17.0.6nb1     C language family frontend for LLVM
+cmake-3.29.4        Cross platform make
 cmocka-1.1.7        Unit testing framework for C supporting mock objects
 coinmp-1.8.4        Linear Programming solver library
 compat90-9.0nb1     Shared libraries for NetBSD 9.0 compatibility
 compface-1.5.2nb11  48x48x1 image compression and decompression (X-face utility)
 consolekit-1.2.6    Framework for defining and tracking users, login sessions, and seats
 cppunit-1.15.1      C++ unit testing framework
-curl-8.7.1          Client that groks URLs
+curl-8.8.0nb1       Client that groks URLs
 cwrappers-20220403  pkgsrc compiler wrappers
-dav1d-1.4.0         AV1 decoder library
+dav1d-1.4.2         AV1 decoder library
 db4-4.8.30nb1       Berkeley DB version 4 from Oracle
 dbus-1.14.10        Message bus system
 dbus-glib-0.112nb1  GLib bindings for the D-BUS message bus system
@@ -81,99 +81,101 @@ deforaos-phone-0.6.0nb14 DeforaOS desktop telephony
 dejavu-ttf-2.37     DejaVu family of TrueType fonts
 desktop-file-utils-0.26nb4 Utilities to manage desktop entries
 digest-20220214     Message digest wrapper utility
-dillo-3.0.5nb14     Very small and fast graphical web-browser
+dillo-3.1.0         Very small and fast graphical web-browser
 djvulibre-lib-3.5.27nb3 Compression library for scanned documents
 docbook-xml-4.5     XML DTD designed for computer documentation
 docbook-xsl-1.79.2nb7 Docbook XSL modular stylesheet
 double-conversion-3.3.0 Conversion routines for IEEE doubles
 dragonbox-1.1.3     Floating-point to binary-to-decimal conversion library
 eigen3-3.4.0nb1     C++ template library for linear algebra
-elementary-xfce-icon-theme-0.18 Elementary icons forked, extended and maintained for Xfce
-emacs28-28.2nb18    GNU editing macros (editor)
+elementary-xfce-icon-theme-0.19 Elementary icons forked, extended and maintained for Xfce
+emacs28-28.2nb20    GNU editing macros (editor)
 enca-1.15           Extremely Naive Charset Analyser
 enchant-1.6.0nb10   Generic spell checking library
-enchant2-2.7.3      Generic spell checking library
+enchant2-2.8.0      Generic spell checking library
 engrampa-1.26.2nb2  Archive manager utility for the MATE Environment
-eom-1.26.1nb7       Eye of MATE: an image viewing and cataloging program
+eom-1.26.1nb8       Eye of MATE: an image viewing and cataloging program
 exempi-2.5.2nb7     XMP (Extensible Metadata Platform) library
 exiv2-0.28.2        Image metadata manipulation
 faad2-2.11.1        AAC decoding library
 fam-2.7.0nb9        File Alteration Monitor
-farstream-0.2.9nb18 Audio/video communications framework
-ffmpeg4-4.4.4nb10   Decoding, encoding and streaming software (v4.x)
-ffmpeg5-5.1.4nb5    Decoding, encoding and streaming software (v5.x)
-ffmpeg6-6.1.1nb4    Decoding, encoding and streaming software (v6.x)
+farstream-0.2.9nb20 Audio/video communications framework
+ffmpeg4-4.4.4nb12   Decoding, encoding and streaming software (v4.x)
+ffmpeg5-5.1.4nb7    Decoding, encoding and streaming software (v5.x)
+ffmpeg6-6.1.1nb6    Decoding, encoding and streaming software (v6.x)
 ffmpegthumbnailer-2.2.2nb6 Lightweight video thumbnailer that can be used by file managers
 fftw-3.3.10nb2      Fast C routines to compute DFTs (single and double precision)
 findutils-4.9.0     find, locate, updatedb, and xargs utilities
 firefox-119.0.1     Web browser with support for extensions (version 119)
 firefox-l10n-119.0.1 Language packs for www/firefox
+firefox115-115.11.0nb1 Web browser with support for extensions (version 115ESR)
+firefox115-l10n-115.11.0 Language packs for www/firefox115
 flac-1.4.3          Free lossless audio codec
 flex-2.6.4          Fast clone of lex(1), the lexical scanner generator
-fltk-1.3.8nb3       Fast Light Tool Kit for graphical user interfaces
+fltk-1.3.9          Fast Light Tool Kit for graphical user interfaces
 fluidsynth-2.3.4nb1 Software synthesizer based on SoundFont2
 fmtlib-10.2.1       Formatting library
 font-util-1.4.1     Tools for truncating and subseting of ISO10646-1 BDF fonts
 fontconfig-2.15.0   Library for configuring and customizing font access
-fossil-2.24         High-reliability, distributed software configuration management
+fossil-2.24nb1      High-reliability, distributed software configuration management
 freetype2-2.13.2nb1 Font rendering engine and library API
-fribidi-1.0.14      Free Implementation of the Unicode Bidirectional Algorithm
+fribidi-1.0.15      Free Implementation of the Unicode Bidirectional Algorithm
 gallery-dl-1.25.8nb1 Command-line program to download image galleries and collections
 game-music-emu-0.6.3 Video game music file emulation/playback library
 gawk-5.3.0          GNU awk
 gcc10-10.5.0nb2     The GNU Compiler Collection (GCC) - 10.0 Release Series
-gcc12-libs-12.3.0nb1 The GNU Compiler Collection (GCC) support shared libraries
-gcc13-libjit-13.2.0 GNU Compiler Collection 13 (gcclibjit library)
-gconfmm-2.28.3nb33  C++ bindings for gconf
+gcc12-libs-12.3.0nb2 The GNU Compiler Collection (GCC) support shared libraries
+gcc13-libjit-13.3.0 GNU Compiler Collection 13 (gcclibjit library)
+gconfmm-2.28.3nb34  C++ bindings for gconf
 gcr-3.38.1nb13      Library for crypto UI and related tasks
-gd-2.3.3nb12        Graphics library for the dynamic creation of images
+gd-2.3.3nb13        Graphics library for the dynamic creation of images
 gdbm-1.23           The GNU database manager
-gdbus-codegen-2.80.0 Generate code and/or documentation for one or more D-Bus interfaces
+gdbus-codegen-2.80.3 Generate code and/or documentation for one or more D-Bus interfaces
 gdk-pixbuf2-2.42.10nb4 Library for image loading and manipulation
 gdk-pixbuf2-xlib-2.40.2nb4 Deprecated Xlib integration for GdkPixbuf
-gegl-0.4.48nb2      Graph based image processing framework
-geocode-glib-3.26.2nb9 GNOME convenience library for geocoding
+gegl-0.4.48nb3      Graph based image processing framework
+geocode-glib-3.26.2nb10 GNOME convenience library for geocoding
 getopt-1.1.6        Program to help shell scripts parse command-line parameters
 gettext-lib-0.22.5  Internationalized Message Handling Library (libintl)
 gettext-m4-0.22.5   Autoconf/automake m4 files for GNU NLS library
 gettext-tools-0.22.5 Tools for providing messages in different languages
 gexiv2-0.14.2       GObject-based wrapper around the Exiv2 library
 ghc-9.4.4nb2        Compiler for the functional language Haskell - 9.4 Release Series
-ghostscript-9.05nb35 Meta-package for installing the preferred ghostscript version
-ghostscript-agpl-10.03.0 Postscript interpreter
+ghostscript-9.05nb37 Meta-package for installing the preferred ghostscript version
+ghostscript-agpl-10.03.1nb1 Postscript interpreter
 ghostscript-fonts-8.11nb3 Postscript fonts for Aladdin Ghostscript
 giflib-5.2.1nb6     GIF image format library
-gimp-2.10.36nb9     The GNU image manipulation program
-git-base-2.45.0     GIT Tree History Storage Tool (base package)
+gimp-2.10.38nb1     The GNU image manipulation program
+git-base-2.45.2     GIT Tree History Storage Tool (base package)
 gle-3.1.0nb4        GL subroutines for drawing tubing and extrusions
 glew-2.2.0nb2       OpenGL Extension Wrangler Library
-glib-networking-2.80.0 Network-related giomodules for glib
-glib2-2.80.0        Some useful routines for C programming (glib2)
-glib2-tools-2.80.0  GLib2/gobject python-dependent tools
-glibmm-2.66.6nb1    C++ bindings for glib (2.4 API)
+glib-networking-2.80.0nb2 Network-related giomodules for glib
+glib2-2.80.3        Some useful routines for C programming (glib2)
+glib2-tools-2.80.3  GLib2/gobject python-dependent tools
+glibmm-2.66.7       C++ bindings for glib (2.4 API)
 glm-1.0.1           C++ mathematics library for software based on the OpenGL GLSL
 gmake-4.4.1         GNU version of 'make' utility
 gmp-6.3.0           Library for arbitrary precision arithmetic
 gnome-desktop-44.0nb4 Common GNOME2 desktop files and libgnome-desktop library
 gnome-doc-utils-0.20.10nb15 Documentation utilities for the GNOME project
 gnome-icon-theme-3.12.0nb8 Theme consisting of a set of icons for GNOME
-gnome-icon-theme-symbolic-3.12.0nb26 Symbolic icons for the GNOME icon sets
+gnome-icon-theme-symbolic-3.12.0nb27 Symbolic icons for the GNOME icon sets
 gnome-keyring-3.36.0nb9 GNOME password and secret manager
-gnome-themes-standard-3.20.2nb28 Default themes for the GNOME desktop
-gnupg2-2.4.5        GnuPG with OpenPGP and S/MIME capabilities
-gnutls-3.8.5nb1     Transport Layer Security library
+gnome-themes-standard-3.20.2nb29 Default themes for the GNOME desktop
+gnupg2-2.4.5nb2     GnuPG with OpenPGP and S/MIME capabilities
+gnutls-3.8.5nb3     Transport Layer Security library
 gobject-introspection-1.80.1nb2 GObject Introspection
 googletest-1.14.0   Google's C++ testing framework
 gperf-3.1           GNU perfect hash function generator
 gpgme-1.23.2        GnuPG Made Easy
 graphene-1.10.8nb1  Thin layer of graphic data types
 graphite2-1.3.14nb3 Cross-platform rendering for complex writing systems
-graphviz-10.0.1     Graph Drawing Programs from AT&T Research and Lucent Bell Labs
+graphviz-10.0.1nb2  Graph Drawing Programs from AT&T Research and Lucent Bell Labs
 gsed-4.9nb1         GNU implementation of sed, the POSIX stream editor
 gsettings-desktop-schemas-40.0nb2 Collection of GSettings schemas for the GNOME desktop
 gsl-2.7.1           The GNU Scientific Library
 gspell-1.8.4nb5     Spell checking API for GTK+ applications
-gssdp-1.6.2nb2      Simple Service Discovery Protocol library and device sniffer
+gssdp-1.6.2nb3      Simple Service Discovery Protocol library and device sniffer
 gst-plugins0.10-base-0.10.36nb23 Open source multimedia framework - Base plugins
 gst-plugins0.10-good-0.10.31nb12 Open source multimedia framework - Good plugins
 gst-plugins0.10-ogg-0.10.36nb2 Open source multimedia framework - ogg plugin
@@ -181,20 +183,20 @@ gst-plugins0.10-oss-0.10.31nb10 Open source multimedia framework - oss plugin
 gst-plugins0.10-theora-0.10.36nb2 Open source multimedia framework - theora plugin
 gst-plugins0.10-v4l2-0.10.31nb10 Open source multimedia framework - v4l2 plugin
 gst-plugins0.10-vorbis-0.10.36nb2 Open source multimedia framework - vorbis plugin
-gst-plugins1-bad-1.22.10 Open source multimedia framework - bad plugins
-gst-plugins1-base-1.24.1 Open source multimedia framework - base plugins
-gst-plugins1-good-1.24.1nb2 Open source multimedia framework - good plugins
+gst-plugins1-bad-1.24.4 Open source multimedia framework - bad plugins
+gst-plugins1-base-1.24.4 Open source multimedia framework - base plugins
+gst-plugins1-good-1.24.4 Open source multimedia framework - good plugins
 gstreamer0.10-0.10.36nb22 Open source multimedia framework
-gstreamer1-1.24.1   Open source multimedia framework
+gstreamer1-1.24.4   Open source multimedia framework
 gtar-base-1.35      The GNU tape archiver with remote magnetic tape support
-gtk-doc-1.32nb15    Tools for authors of the GTK+ reference documentation
-gtk2+-2.24.33nb18   GIMP Toolkit v2 - libraries for building X11 user interfaces
+gtk-doc-1.34.0nb1   Tools for authors of the GTK+ reference documentation
+gtk2+-2.24.33nb20   GIMP Toolkit v2 - libraries for building X11 user interfaces
 gtk2-engines-2.20.2nb36 Theme engines for GTK+ version 2
 gtk2-engines-murrine-0.98.2nb19 GTK2+ engine featuring a modern glassy look
-gtk3+-3.24.41nb2    GIMP Toolkit v3 - libraries for building X11 user interfaces
-gtk4-4.14.3         Multi-platform toolkit for creating GUIs, version 4
-gtksourceview3-3.24.11nb19 Text widget that extends GTK3's GtkTextView widget (v3)
-gtksourceview4-4.8.4nb6 Text widget that extends GTK3's GtkTextView widget (v4)
+gtk3+-3.24.42nb1    GIMP Toolkit v3 - libraries for building X11 user interfaces
+gtk4-4.14.4nb2      Multi-platform toolkit for creating GUIs, version 4
+gtksourceview3-3.24.11nb20 Text widget that extends GTK3's GtkTextView widget (v3)
+gtksourceview4-4.8.4nb7 Text widget that extends GTK3's GtkTextView widget (v4)
 gtkspell-2.0.16nb41 Spell checking GtkTextView widget (v2)
 gts-0.7.6nb4        GNU Triangulated Surface Library
 guile22-2.2.7nb6    Official extension language for the GNU operating system
@@ -202,14 +204,14 @@ guile22-slib-3.3.1  SLIB glue files for guile
 guile30-3.0.9nb1    Official extension language for the GNU operating system
 guile30-slib-3.2.6  SLIB glue files for guile
 gumbo-parser-0.12.1 HTML5 parsing library in pure C99
-gupnp-1.6.6nb2      Framework for UPnP devices
-gupnp-igd-1.6.0nb1  Library to handle UPnP IGD port mapping
-gvfs-1.6.7nb66      Userspace virtual filesystem
+gupnp-1.6.6nb3      Framework for UPnP devices
+gupnp-igd-1.6.0nb2  Library to handle UPnP IGD port mapping
+gvfs-1.6.7nb68      Userspace virtual filesystem
 gxemul-0.7.0nb1     Framework for full-system computer architecture emulation
 hal-0.5.14nb30      FreeDesktop hardware abstraction layer
 hal-info-20091130nb10 FreeDesktop hardware abstraction layer (info subpackage)
-harfbuzz-8.4.0      OpenType text shaping engine
-harfbuzz-icu-8.4.0  OpenType text shaping engine (ICU integration)
+harfbuzz-8.5.0      OpenType text shaping engine
+harfbuzz-icu-8.5.0nb1 OpenType text shaping engine (ICU integration)
 help2man-1.49.3     Generate simple manual pages from program output
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
 hs-attoparsec-0.14.4nb3 Fast combinator parsing for bytestrings and text
@@ -226,9 +228,9 @@ http-parser-2.9.4   Parser for HTTP messages written in C
 hunspell-1.7.2nb2   Improved spellchecker
 hunspell-en_US-20060207 US American English dictionaries for hunspell
 hyphen-2.8.8nb5     Library for high quality hyphenation and justification
-icewm-1.2.38pre2nb2 Small, fast and light-weight window manager
+icewm-3.5.0         Small, fast and light-weight window manager
 icon-naming-utils-0.8.90nb10 Adapts GNOME and KDE icon names to the Icon Naming Specification
-icu-74.2            Robust and full-featured Unicode services
+icu-75.1            Robust and full-featured Unicode services
 imake-1.0.10        Obsolete build tool for X software
 imath-3.1.11        2D and 3D vector, matrix, and math operations for computer graphics
 imlib2-1.12.2       Image manipulation library
@@ -244,7 +246,7 @@ jpeg-9e             IJG's jpeg compression utilities
 jq-1.6nb1           Command-line JSON processor
 json-c-0.17         JSON library in C
 json-glib-1.6.2nb3  JSON parser for GLib-based libraries and applications
-jwm-2.4.3nb9        Lightweight window manager with virtual desktops
+jwm-2.4.3nb10       Lightweight window manager with virtual desktops
 kpathsea-6.4.0      Path searching library for TeX-related files
 kterm-6.2.0nb24     Multi-lingual terminal emulator for X
 ladspa-1.17nb4      Linux Audio Developers Simple Plugin API
@@ -259,30 +261,30 @@ libVNCServer-0.9.13nb6 Easy API to write one's own vnc server
 libXaw3d-1.6.6      X 3D Athena Widget Set
 libXft-2.3.8nb1     Library for configuring and customizing font access
 liba52-0.7.4nb3     Free ATSC A/52 stream decoder library
-libabw-0.1.3nb19    Library for AbiWord documents
+libabw-0.1.3nb20    Library for AbiWord documents
 libao-1.2.2         Cross-platform audio library
 libao-sun-1.2.2nb2  Cross-platform audio library (Sun audio plugin)
 libaom-3.9.0        Library for using AV1, video coding format
 libappindicator-12.10.0nb24 Allow applications to export a menu into the panel
 libarchive-3.7.4    Library to read/create different archive formats
 libart-2.3.21       High-performance 2D graphics library
-libass-0.17.1nb1    Portable subtitle renderer for the ASS/SSA subtitle format
+libass-0.17.2       Portable subtitle renderer for the ASS/SSA subtitle format
 libassuan-2.5.7     IPC library used by some of the other GnuPG related packages
 libatomic_ops-7.8.2 Multi-platform library of atomic operations by Hans Boehm
 libaudiofile-0.3.6nb1 Sound library for SGI audio file
-libbluray-1.3.4nb4  Library for Blu-Ray Discs playback for media players
+libbluray-1.3.4nb5  Library for Blu-Ray Discs playback for media players
 libcanberra-0.30nb15 Desktop event sound library
 libcddb-1.3.2nb1    Library to access data on a CDDB server
 libcdio-2.1.0nb5    CD-ROM access library
-libcdr-0.1.7nb12    Corel Draw file format importer library
+libcdr-0.1.7nb13    Corel Draw file format importer library
 libcfg+-0.7.0       Command line and configuration file parsing library
 libclucene-2.3.3.4nb25 Text search engine written in C++
-libcroco-0.6.13nb9  Toolkit to parse and manipulate CSS (Cascading Style Sheets)
+libcroco-0.6.13nb10 Toolkit to parse and manipulate CSS (Cascading Style Sheets)
 libcuefile-0rc475   CUE File library for the musepack decoder
-libcups-2.4.6nb4    Common UNIX Printing System library
+libcups-2.4.8nb1    Common UNIX Printing System library
 libdaemon-0.14nb2   C library that eases the writing of UNIX daemons
 libdbi-0.9.0        Database Independent Abstraction Layer for C
-libdbi-driver-sqlite3-0.9.0nb17 SQLite3 driver for libdbi, a database abstraction
+libdbi-driver-sqlite3-0.9.0nb18 SQLite3 driver for libdbi, a database abstraction
 libdbusmenu-glib-16.04.0nb1 Glib2 library created by pulling some code from indicator-applet
 libdbusmenu-gtk3-16.04.0nb4 GTK3+ library created by pulling some code from indicator-applet
 libde265-1.0.15     Open h.265 video codec implementation
@@ -293,12 +295,12 @@ libdvbpsi-0.2.2     PSI decoder and generator library for MPEG2 and DVB streams 
 libdvdnav-6.1.1     Library to navigate DVDs
 libdvdplay-1.0.1nb4 Simple API library designed for DVD navigation
 libdvdread-6.1.2    DVD access library
-libe-book-0.1.3nb28 Library for importing non-HTML reflowable e-book formats
+libe-book-0.1.3nb29 Library for importing non-HTML reflowable e-book formats
 libebml-1.4.5       Extensible Binary Meta Language support library
 libelf-0.8.13nb1    ELF object file access library
-libepoll-shim-0.0.20230411 Small epoll implemented using kevent
+libepoll-shim-0.0.20240608 Small epoll implemented using kevent
 libepubgen-0.1.1nb8 EPUB generator library for librevenge
-libetonyek-0.1.10nb12 Library for Apple Office suite files
+libetonyek-0.1.10nb13 Library for Apple Office suite files
 libev-4.33          Full-featured and high-performance event loop
 libexif-0.6.24      EXIF file library
 libexttextcat-3.4.6 Text categorization library
@@ -306,19 +308,19 @@ libfakekey-0.1      X Virtual Keyboard Library
 libfetch-2.40       Library to access HTTP/FTP server
 libffi-3.4.6        Foreign function interface
 libfixmath-0.0.0pre20220623nb1 Q16.16 format fixed point operations in C
-libfreehand-0.1.2nb20 Library for Adobe/Macromedia drawings
+libfreehand-0.1.2nb21 Library for Adobe/Macromedia drawings
 libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.10.3    GNU cryptographic library
-libgit2-1.7.2       Portable, pure C implementation of the Git core methods
-libglade-2.6.4nb48  Runtime interpreter for GLADE GUI files
+libgit2-1.8.1nb1    Portable, pure C implementation of the Git core methods
+libglade-2.6.4nb49  Runtime interpreter for GLADE GUI files
 libgnome-keyring-3.12.0nb2 GNOME password and secret manager
 libgpg-error-1.49   Definitions of common error values for all GnuPG components
-libgsf-1.14.50nb2   GNOME structured file library
+libgsf-1.14.50nb3   GNOME structured file library
 libgtop-2.28.4nb21  Library to retrieve system information, used in GNOME2
-libgweather-40.0nb21 Weather information access library
+libgweather-40.0nb22 Weather information access library
 libgxps-0.2.2nb32   Library for XPS documents
 libheif-1.17.6nb1   HEIF and AVIF file format decoder and encoder library
-libical-3.0.18      Reference implementation of the iCalendar data type and format
+libical-3.0.18nb1   Reference implementation of the iCalendar data type and format
 libiconv-1.17       Character set conversion library
 libidn-1.42         Internationalized Domain Names command line tool
 libidn2-2.3.7       Convert internationalized domain names to/from ASCII Encoding
@@ -327,28 +329,28 @@ libindicator-12.10.1nb21 GTK+3 symbols and convience functions for indicators
 libixion-0.19.0     General purpose formula parser & interpreter
 libkate-0.4.1nb24   Overlay codec, originally designed for karaoke and text
 libksba-1.6.6       X.509 library
-liblangtag-0.6.7    RFC 5646 language tag interface library
+liblangtag-0.6.7nb1 RFC 5646 language tag interface library
 liblqr-0.4.2nb2     Content-aware image resizing library
 libltdl-2.4.7       Generic shared library support (libltdl abstraction library)
 libmad-0.15.1bnb3   High-quality MPEG audio decoder
-libmatekbd-1.26.1nb6 MATE keyboard configuration library
+libmatekbd-1.26.1nb7 MATE keyboard configuration library
 libmatemixer-1.26.1nb5 MATE audio mixer
-libmateweather-1.26.3nb2 Weather information access library
+libmateweather-1.26.3nb3 Weather information access library
 libmatroska-1.7.1   Extensible open standard Audio/Video container format
 libmicrodns-0.2.0nb1 Minimal mDNS resolver (and announcer) cross-platform library
 libmikmod-3.3.11.1nb13 MikMod Sound Library
 libmodplug-0.8.9.0  Library for decoding mod-like music formats
 libmspack-0.10.1alpha Archiver for Microsoft format CAB, CHM, WIM, LIT, HLP, KWAJ and SZDD
-libmspub-0.1.4nb27  Library for importing Microsoft Publisher content
+libmspub-0.1.4nb28  Library for importing Microsoft Publisher content
 libmtp-1.1.19       Implementation of Media Transfer Protocol (MTP)
 libmwaw-0.3.21nb3   Import library for pre-OSX Mac text formats
 libmypaint-1.6.1    Library for making brushstrokes
 libmysofa-1.3.2     Reader for AES SOFA HRTF files
-libnice-0.1.22      IETF's Interactive Connectivity Establishment standard implementation
+libnice-0.1.22nb2   IETF's Interactive Connectivity Establishment standard implementation
 libnotify-0.8.1nb6  Desktop notification framework
 libnumbertext-1.0.11 Convert to number names from numbers
 libodfgen-0.1.7nb8  Library to generate ODF documents through libwpd and libwps
-libofx-0.9.15nb13   OFX (Open Financial eXchange) Library
+libofx-0.9.15nb15   OFX (Open Financial eXchange) Library
 libogg-1.3.5nb1     Ogg project codecs library
 liboggz-1.1.1nb1    Inspects, edits, and validates Ogg files
 libopus-1.5.2       Totally open, royalty-free, highly versatile audio codec library
@@ -356,26 +358,26 @@ libotf-0.9.16nb4    Library for handling OpenType fonts (OTF)
 libpagemaker-0.0.4nb14 Library and utilities for Adobe PageMaker files
 libpaper-2.2.5      Paper size handling library
 libpeas-1.26.0nb13  GObject-based plugins engine
-libplacebo-6.338.1  GPU-accelerated image/video processing primitives and shaders
-libproxy-0.5.6      Library that provides automatic proxy configuration management
+libplacebo-6.338.2  GPU-accelerated image/video processing primitives and shaders
+libproxy-0.5.6nb2   Library that provides automatic proxy configuration management
 libpsl-0.21.5       Library to handle the Public Suffix List
-libpurple-2.14.12nb5 Plugin-based multi-protocol instant messaging library
-libqxp-0.0.2nb21    Library that parses the file format of QuarkXPress documents
+libpurple-2.14.12nb7 Plugin-based multi-protocol instant messaging library
+libqxp-0.0.2nb22    Library that parses the file format of QuarkXPress documents
 libraw-0.21.1nb1    Raw decoding/processing library
-libreoffice-24.2.2.2 Office productivity suite from The Document Foundation
+libreoffice-24.2.3.2nb1 Office productivity suite from The Document Foundation
 libreplaygain-0rc475 ReplayGain library for the musepack decoder
-librevenge-0.0.4nb19 Base library for writing document import filters
-librsvg-2.58.0      SVG library for GNOME
+librevenge-0.0.5    Base library for writing document import filters
+librsvg-2.58.0nb1   SVG library for GNOME
 libsamplerate-0.2.2nb4 Sample rate converter library
 libsecret-0.20.4nb9 GObject based library for accessing the Secret Service API
 libsexy-0.1.11nb47  Collection of GTK+ widgets that beautify standard widgets
 libshout-2.4.6nb1   Connects and sends data to icecast servers
 libsigc++-2.10.8nb1 Type-safe callback system for C++ programs (v2)
-libsixel-1.8.6nb18  DEC SIXEL graphics codec encoder/decoder and converter
-libsndfile-1.2.2    Library for reading and writing audio files
+libsixel-1.8.6nb20  DEC SIXEL graphics codec encoder/decoder and converter
+libsndfile-1.2.2nb1 Library for reading and writing audio files
 libsodium-1.0.18    Library for build higher-level cryptographic tools
-libsoup-2.74.3nb4   HTTP library implementation in C (major version 2)
-libsoup3-3.4.4nb1   HTTP library implementation in C (major version 3)
+libsoup-2.74.3nb5   HTTP library implementation in C (major version 2)
+libsoup3-3.4.4nb3   HTTP library implementation in C (major version 3)
 libsoxr-0.1.3       SoX Resample library
 libspectre-0.2.9nb3 Small library for rendering Postscript documents
 libssh2-1.11.0nb2   SSH2 protocol library
@@ -388,20 +390,20 @@ libtool-fortran-2.4.7nb1 Generic shared library support script (the script itsel
 libtool-info-2.4.7  Generic shared library support script - info pages
 libunique-1.1.6nb39 Library for writing single instance applications (deprecated)
 libunistring-1.2    Unicode string library
-libunwind-16.0.6    LLVM libunwind
+libunwind-17.0.6    LLVM libunwind
 libupnp-1.14.7      Portable Universal Plug and Play (UPnP) SDK
 libusb1-1.0.27      USB Access Library (version 1)
 libuuid-2.32.1nb2   Generate unique identifiers for objects
 libuv-1.48.0        Cross-platform asychronous I/O
 libv4l-1.24.1       Video4Linux userspace library
 libva-2.21.0        Video Acceleration API
-libvisio-0.1.7nb22  Library and tools for parsing the visio file format
+libvisio-0.1.7nb23  Library and tools for parsing the visio file format
 libvolume_id-0.81.1nb1 Library to provide file system type information
 libvorbis-1.3.7     Library for the Ogg Vorbis audio encoding format
-libvpx-1.14.0       On2 VP8/VP9 video codec library from Google
+libvpx-1.14.1       On2 VP8/VP9 video codec library from Google
 libwebp-1.4.0       WebP image format library and tools
 libwildmidi-0.4.6   Midi processing library and a midi player using the GUS patch set
-libwmf-0.2.8.4nb27  Library for reading and converting WMF (Windows Meta Files)
+libwmf-0.2.8.4nb28  Library for reading and converting WMF (Windows Meta Files)
 libwnck-2.30.7nb8   Library to write pagers and tasklists
 libwnck3-3.36.0nb10 Library to write pagers and tasklists
 libwpd-0.10.3nb8    Library for importing and exporting WordPerfect(tm) documents
@@ -411,19 +413,19 @@ libxcvt-0.1.2       VESA CVT standard timing modelines generator
 libxdg-basedir-1.2.0 XDG Base Directory library
 libxfce4ui-4.18.6nb2 Xfce widget library
 libxfce4util-4.18.2nb2 Xfce basic library
-libxkbcommon-1.7.0  Library to handle keyboard descriptions
-libxklavier-5.4nb12 High-level API for the X Keyboard Extension (XKB)
-libxml++-2.40.1nb15 C++ wrapper for the libxml XML parser library (2.6 API)
-libxml2-2.12.4      XML parser library from the GNOME project
+libxkbcommon-1.7.0nb2 Library to handle keyboard descriptions
+libxklavier-5.4nb13 High-level API for the X Keyboard Extension (XKB)
+libxml++-2.40.1nb16 C++ wrapper for the libxml XML parser library (2.6 API)
+libxml2-2.12.4nb1   XML parser library from the GNOME project
 libxmp-4.5.0        Player for many different Amiga and PC module formats
-libxslt-1.1.39      XSLT parser library
+libxslt-1.1.39nb1   XSLT parser library
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
-libzip-1.10.1nb2    C library to manipulate zip archives
-libzmf-0.0.2nb29    Library to parse Zoner Callisto/Draw documents
+libzip-1.10.1nb4    C library to manipulate zip archives
+libzmf-0.0.2nb30    Library to parse Zoner Callisto/Draw documents
 lintpkgsrc-2022.09.29 Sanity checks on the complete pkgsrc tree
-lld-16.0.6          The LLVM Linker
-llvm-17.0.6         Low Level Virtual Machine compiler infrastructure
-lmdb-0.9.32         Symas Lightning Memory-Mapped Database
+lld-17.0.6          The LLVM Linker
+llvm-17.0.6nb1      Low Level Virtual Machine compiler infrastructure
+lmdb-0.9.33         Symas Lightning Memory-Mapped Database
 lp_solve-5.5.2.3    Mixed Integer Linear Programming (MILP) solver
 lrzsz-0.12.20nb1    Receive/Send files via X/Y/ZMODEM protocol.  (unrestrictive)
 ltm-1.3.0           Number theoretic multiple-precision integer library
@@ -437,43 +439,43 @@ lz4-1.9.4           Extremely Fast Compression algorithm
 lzip-1.24.1         Lossless data compressor based on the LZMA algorithm
 lzo-2.10            Portable lossless data compression library
 m17n-db-1.8.0       The m17n database used by the m17n library
-m17n-lib-1.8.0nb15  Multilingualization library
+m17n-lib-1.8.0nb16  Multilingualization library
 m4-1.4.19nb1        GNU version of UNIX m4 macro language processor
 makejvf-20230917    Make Japanese VF file from Japanese TeX TFM file
 marco-1.26.2nb5     Fork of GNOME Metacity
 mate-1.26.1nb11     Meta-package for MATE desktop environment
-mate-applets-1.26.1nb10 MATE panel applets
+mate-applets-1.26.1nb11 MATE panel applets
 mate-backgrounds-1.26.0nb8 Set of backgrounds packaged with the MATE desktop
-mate-calc-1.26.0nb9 Calculator for MATE Desktop
+mate-calc-1.26.0nb10 Calculator for MATE Desktop
 mate-common-1.26.0nb7 Sample files for MATE Application development
-mate-control-center-1.26.1nb6 MATE Control Center
+mate-control-center-1.26.1nb7 MATE Control Center
 mate-desktop-1.26.2nb5 MATE desktop library
 mate-icon-theme-1.26.0nb8 Collection of icons used as the basis for MATE themes
 mate-icon-theme-faenza-1.20.0nb18 Faenza and Faience icon themes for MATE desktop
 mate-indicator-applet-1.26.0nb7 MATE indicator applet
-mate-media-1.26.2nb2 MATE media tools for MATE Desktop
+mate-media-1.26.2nb3 MATE media tools for MATE Desktop
 mate-menus-1.26.1nb5 Implementation of the desktop menu specification for MATE
 mate-netbook-1.26.0nb7 Simple window management tool for MATE desktop
-mate-notification-daemon-1.26.1nb6 Notification daemon for MATE desktop
-mate-panel-1.26.4nb3 MATE panel application
+mate-notification-daemon-1.26.1nb7 Notification daemon for MATE desktop
+mate-panel-1.26.4nb4 MATE panel application
 mate-polkit-1.26.1nb7 MATE desktop environment Authentication Agent for PolicyKit
 mate-power-manager-1.26.1nb5 Power manager for MATE
-mate-screensaver-1.26.2nb6 Screen saver and locker for the MATE desktop
+mate-screensaver-1.26.2nb7 Screen saver and locker for the MATE desktop
 mate-sensors-applet-1.26.0nb7 MATE Sensors applets
 mate-session-manager-1.26.1nb5 MATE session manager
-mate-settings-daemon-1.26.1nb7 MATE settings daemon
+mate-settings-daemon-1.26.1nb8 MATE settings daemon
 mate-terminal-1.26.1nb5 MATE terminal emulator application
 mate-themes-3.22.24nb5 Icons and themes for MATE desktop
 mate-utils-1.26.1nb5 Utilities for MATE Desktop
 mcookie-2.32.1      Tool for creating cookies for xauth(1)
 md4c-0.5.2          Markdown for C library and parser
 mdds-2.1.1nb1       Collection of multi-dimensional data structure and indexing algorithms
-medit-1.2.0nb30     Programming and around-programming text editor
+medit-1.2.0nb31     Programming and around-programming text editor
 mendexk-3.6nb2      Replacement for makeindex with many enhancements
-meson-1.4.0         Open source build system meant to be fast and user friendly
+meson-1.4.1         Open source build system meant to be fast and user friendly
 mktexlsr-2020       Create or rebuild ls-R
 mktools-20220614    Collection of pkgsrc mk infrastructure tools
-mlterm-3.9.3nb9     Multilingual terminal emulator
+mlterm-3.9.3nb10    Multilingual terminal emulator
 mm-common-1.0.6     Provides build infrastructure utilities for GNOME C++ libraries
 mng-2.0.3           Multiple-image Network Graphics (MNG) reference library
 mozilla-rootcerts-1.0.20240214 Root CA certificates from the Mozilla Project
@@ -485,7 +487,7 @@ mpfr-4.2.1          GMP-based library for multiple-precision floating-point comp
 mpg123-1.32.6       MPEG layer 1, 2, and 3 audio player
 mplayer-fonts-20030714nb1 Fonts for mplayer and gmplayer
 mplayer-share-1.5nb6 Documentation used by mplayer and gmplayer
-mpv-0.37.0nb3       Video player based on MPlayer and mplayer2
+mpv-0.38.0nb1       Video player based on MPlayer and mplayer2
 mujs-1.3.4          Lightweight embedded JavaScript interpreter
 musepack-0rc475nb1  MPEG-Plus and MusePack decoder (V8)
 mypaint-brushes-2.0.2nb1 Default MyPaint brushes
@@ -493,19 +495,18 @@ mypaint-brushes1-1.3.1 Default MyPaint brushes (v1)
 mythes-1.2.4nb3     Simple thesaurus library
 nas-1.9.4nb1        Network Audio System
 nasm-2.16.01        General-purpose x86 assembler
-ncurses-6.4         CRT screen handling and optimization package
-ncursesw-6.4nb1     Wide character CRT screen handling and optimization package
-neon-0.33.0         HTTP and WebDAV client library
-netpbm-11.02.09     Toolkit for conversion of images between different formats
+ncurses-6.5         CRT screen handling and optimization package
+neon-0.33.0nb2      HTTP and WebDAV client library
+netpbm-11.02.09nb1  Toolkit for conversion of images between different formats
 nettle-3.9.1        Cryptographic library
 ng-spice-shared-40  Next generation circuit simulation program (shared libraries)
-nghttp2-1.61.0      Implementation of HTTP/2 in C
-nginx-1.24.0nb17    Lightweight HTTP server and mail proxy server
-ninja-build-1.12.0  Small build system with a focus on speed
+nghttp2-1.62.1nb1   Implementation of HTTP/2 in C
+nginx-1.26.1        Lightweight HTTP server and mail proxy server
+ninja-build-1.12.1  Small build system with a focus on speed
 npapi-sdk-0.27.2    Reusable, released NPAPI-SDK
 npth-1.7            New Portable Threads Library (nPth)
 nspr-4.35           Platform-neutral API for system level and libc like functions
-nss-3.99            Libraries to support development of security-enabled applications
+nss-3.101           Libraries to support development of security-enabled applications
 oniguruma-6.9.9     Regular expressions library
 onscripter-20230825nb1 Interpreter to execute a script for NScripter
 openal-soft-1.23.1nb3 Software implementation of the OpenAL 3D audio API
@@ -516,16 +517,16 @@ opusfile-0.12nb2    Decoding and seeking API for opus files
 orc-0.4.38          Compiler for vector operations
 orcus-0.19.2        Import filter library for spreadsheet documents (0.16 branch)
 osabi-NetBSD-10.99.10 Operating System version dummy-package
-osg-3.6.5nb50       High performance 3D graphics toolkit
+osg-3.6.5nb54       High performance 3D graphics toolkit
 p11-kit-0.25.3      PKCS#11 module manager
-p5-Alien-Build-2.80nb1 Build external dependencies for use in CPAN
+p5-Alien-Build-2.83 Build external dependencies for use in CPAN
 p5-Alien-Build-Plugin-Download-GitLab-0.01 Alien::Build plugin to download from GitLab
-p5-Alien-Libxml2-0.19 Perl interface to libxml2
+p5-Alien-Libxml2-0.19nb1 Perl interface to libxml2
 p5-Archive-Zip-1.68nb3 Perl5 module interface to manipulate zip files
 p5-Authen-SASL-2.1700 Perl module to handle SASL authentication
 p5-B-Hooks-EndOfScope-0.28 Perl 5 module to execute code after a scope finished compilation
-p5-Business-ISBN-3.006nb2 Perl5 module to work with International Standard Book Numbers (ISBNs)
-p5-Business-ISBN-Data-20210112.006nb2 Data for the p5-Business-ISBN package
+p5-Business-ISBN-3.009 Perl5 module to work with International Standard Book Numbers (ISBNs)
+p5-Business-ISBN-Data-20240523.001 Data for the p5-Business-ISBN package
 p5-CGI-4.64         Perl5 module for writing forms-based CGI programs
 p5-CPAN-Meta-Check-0.018 Perl module to verify requirements in a CPAN::Meta object
 p5-CPAN-Meta-Requirements-2.143 Set of version requirements for a CPAN dist
@@ -585,7 +586,7 @@ p5-HTTP-CookieJar-0.014nb1 Minimalist HTTP user agent cookie jar
 p5-HTTP-Cookies-6.11 HTTP cookie jars
 p5-HTTP-Daemon-6.16nb1 Simple http server class
 p5-HTTP-Date-6.06   Perl 5 module providing date conversion routines
-p5-HTTP-Message-6.45nb1 Construct HTTP style messages
+p5-HTTP-Message-6.46 Construct HTTP style messages
 p5-HTTP-Negotiate-6.01nb12 Negotiate HTTP service parameters
 p5-IO-CaptureOutput-1.1105nb4 Capture STDOUT and STDERR from Perl code, subprocesses, or XS
 p5-IO-HTML-1.004nb3 Open an HTML file with automatic charset detection
@@ -631,7 +632,7 @@ p5-Params-Validate-1.31nb1 Validate method/function parameters
 p5-Params-ValidationCompiler-0.31nb1 Build an optimized subroutine parameter validator once, use it forever
 p5-Parse-Yapp-1.21nb6 Perl5 LALR parser
 p5-Path-Class-0.37nb7 Cross-platform path specification manipulation
-p5-Path-Tiny-0.144nb1 Perl5 file path utility
+p5-Path-Tiny-0.146  Perl5 file path utility
 p5-PkgConfig-0.25026nb3 Pure-Perl Core-Only replacement for pkg-config
 p5-Readonly-2.05nb7 Perl 5 module for creating read-only scalars, arrays and hashes
 p5-Ref-Util-0.204nb6 Utility functions for checking references
@@ -644,7 +645,7 @@ p5-Socket6-0.29nb5  Perl5 module to support getaddrinfo() and getnameinfo()
 p5-Specio-0.48nb1   Type constraints and coercions for Perl
 p5-Spiffy-0.46nb9   Object-oriented Perl framework
 p5-Spreadsheet-ParseExcel-0.6600 Perl module to get information from an Excel file
-p5-Spreadsheet-XLSX-0.15nb8 Perl 5 module to read MS Excel 2007 files
+p5-Spreadsheet-XLSX-0.18 Perl 5 module to read MS Excel 2007 files
 p5-String-Util-1.34nb1 String processing utilities
 p5-Sub-Exporter-0.991 Sophisticated exporter for custom-built routines
 p5-Sub-Exporter-Progressive-0.001013nb7 Only use Sub::Exporter if you need it
@@ -667,7 +668,7 @@ p5-Test-Warnings-0.033 Test for warnings and the lack of them
 p5-Test-Without-Module-0.21nb1 Perl 5 module to fallback test behaviour in absence of modules
 p5-Test-YAML-1.07nb6 Testing Module for YAML Implementations
 p5-Test2-Plugin-NoWarnings-0.10 Perl5 module for testing for warnings
-p5-Test2-Suite-0.000162 Perl5 module with a rich set of tools for testing
+p5-Test2-Suite-0.000163 Perl5 module with a rich set of tools for testing
 p5-Text-Template-1.61nb1 Perl5 library for generating form letters
 p5-TimeDate-2.33nb3 Perl5 TimeDate distribution
 p5-Tree-DAG_Node-1.32nb2 Class for representing nodes in a tree
@@ -677,7 +678,7 @@ p5-URI-5.28         Perl5 Uniform Resource Identifiers class (URI, RFC 2396)
 p5-Variable-Magic-0.64 Perl 5 module to associate user-defined magic to variables
 p5-WWW-RobotRules-6.02nb12 Perl 5 module database of robots.txt-derived permissions
 p5-Web-Scraper-0.38nb9 Perl 5 Web Scraping Toolkit inspired by Scrapi
-p5-XML-LibXML-2.0210 Perl interface to the libxml2 library
+p5-XML-LibXML-2.0210nb1 Perl interface to the libxml2 library
 p5-XML-NamespaceSupport-1.12nb7 Perl module to the SAX2 NamespaceSupport class
 p5-XML-Parser-2.47  Perl extension interface to James Clark's XML parser, expat
 p5-XML-SAX-1.02nb3  Perl interface to the SAX2 XML Parser
@@ -699,10 +700,10 @@ password-store-1.7.4 Standard UNIX password manager
 pciids-20200222     Repository of PCI IDs (pci.ids database)
 pciutils-3.11.1     PCI bus manipulation utility similar to NetBSD pcictl(8)
 pcre-8.45           Perl Compatible Regular Expressions library
-pcre2-10.43         Perl Compatible Regular Expressions library (major version 2)
+pcre2-10.44         Perl Compatible Regular Expressions library (major version 2)
 pcsc-lite-2.0.0     Middleware to access a smart card using SCard API (PC/SC)
 perl-5.38.2         Practical Extraction and Report Language
-php-7.4.33nb4       PHP Hypertext Preprocessor version 7.4
+php-7.4.33nb5       PHP Hypertext Preprocessor version 7.4
 php74-curl-7.4.33nb16 PHP extension for curl functions
 php74-fpm-7.4.33nb11 FPM interface for PHP7.4
 php74-gd-7.4.33nb7  PHP extension for GD graphics library
@@ -725,9 +726,9 @@ pkg_install-20211115nb2 Package management and administration tools for pkgsrc
 pkg_rolling-replace-0.24.14 Replace/upgrade packages in-place
 pkg_tarup-1.9.1     Generates binary package(s) from installed pkg(s)
 pkgclean-20200119   Quickly clean up all work directories in pkgsrc
-pkgconf-2.2.0       API-driven pkg-config replacement
-pkgin-23.8.1nb3     Apt / yum like tool for managing pkgsrc binary packages
-pluma-1.26.1nb8     Small and lightweight UTF-8 text editor for MATE
+pkgconf-2.2.0nb1    API-driven pkg-config replacement
+pkgin-23.8.1nb4     Apt / yum like tool for managing pkgsrc binary packages
+pluma-1.26.1nb9     Small and lightweight UTF-8 text editor for MATE
 png-1.6.43          Library for manipulating PNG images
 podofo-0.9.8nb4     Library to work with the PDF file format
 policykit-0.9nb34   Framework for managing admin policies and privileges
@@ -737,9 +738,9 @@ poppler-cpp-24.03.0nb1 PDF rendering library (cpp wrapper)
 poppler-data-0.4.12 Support files for poppler
 poppler-includes-24.03.0 Poppler Xpdf includes (unsupported)
 popt-1.19           Command line option parsing library
-postgresql14-client-14.11 PostgreSQL database client programs
+postgresql14-client-14.12nb1 PostgreSQL database client programs
 potrace-1.16        Utility for transforming bitmaps into vector graphics
-protobuf-26.1       Google protocol buffers
+protobuf-27.1       Google protocol buffers
 psutils-3.0.3nb1    Utilities for manipulating PostScript documents (compatibility package)
 ptexenc-1.4.6       Library for Japanese pTeX and its tools
 pth-2.0.7nb5        GNU Portable Thread library
@@ -750,27 +751,27 @@ py-gobject3-common-3.48.2 Python version independent files for glib2 gobject bin
 py27-cairo-1.18.2nb6 Python bindings for cairo (Python 2.x version)
 py27-gobject-2.28.7nb5 Python bindings for glib2 gobject
 py27-gstreamer0.10-0.10.22nb12 Python bindings for gstreamer0.10
-py27-gtk2-2.24.0nb48 Python bindings for GTK+2
+py27-gtk2-2.24.0nb49 Python bindings for GTK+2
 py311-OpenSSL-24.1.0 Python interface to the OpenSSL library
 py311-Pillow-10.3.0 Python Imaging Library (Fork)
 py311-Socks-1.7.1nb1 Python SOCKS client module
 py311-alabaster-0.7.16 Configurable sidebar-enabled Sphinx theme
 py311-anytree-2.12.1 Powerful and Lightweight Python Tree Data Structure
-py311-argparse-manpage-4.5nb1 Build manual page from python's ArgumentParser object
-py311-babel-2.14.0  Collection of tools for internationalizing Python applications
+py311-argparse-manpage-4.6 Build manual page from python's ArgumentParser object
+py311-babel-2.15.0  Collection of tools for internationalizing Python applications
 py311-brotli-1.1.0  Generic-purpose lossless compression algorithm (Python module)
 py311-brotlicffi-1.1.0.0 Python CFFI bindings to the Brotli library
 py311-build-1.2.1   Simple, correct PEP517 package builder
 py311-cairo-1.26.0nb1 Python bindings for cairo
 py311-calver-2022.6.26 Setuptools extension for CalVer package versions
-py311-certifi-2024.2.2 Python package for providing Mozilla's CA Bundle
+py311-certifi-2024.6.2 Python package for providing Mozilla's CA Bundle
 py311-cffi-1.16.0nb1 Foreign Function Interface for Python calling C code
 py311-chardet-5.2.0nb1 Universal encoding detector for Python 3
 py311-charset-normalizer-3.3.2 Universal Charset Detector
 py311-colorama-0.4.6nb1 Cross-platform coloured terminal text
-py311-cparser-2.22  C parser in Python
+py311-cparser-2.22nb1 C parser in Python
 py311-cryptodome-3.20.0 Cryptographic and hash functions for Python
-py311-cryptography-42.0.6 Cryptographic recipes and primitives for Python
+py311-cryptography-42.0.8 Cryptographic recipes and primitives for Python
 py311-dbus-1.3.2nb1 Python bindings for the D-BUS message bus system
 py311-defusedxml-0.7.1nb1 XML bomb protection for Python stdlib modules
 py311-dns-2.6.1     Python DNS toolkit
@@ -778,7 +779,7 @@ py311-docutils-0.21.2 Python tool to generate documents
 py311-ecdsa-0.19.0  Easy-to-use implementation of ECDSA cryptography
 py311-editables-0.5nb1 Editable installations
 py311-flit_core-3.9.0nb1 Distribution-building parts of Flit
-py311-gi-docgen-2023.3nb1 Documentation tool for GObject-based libraries
+py311-gi-docgen-2024.1 Documentation tool for GObject-based libraries
 py311-glad2-2.0.6   Multi-Language GL/GLES/EGL/GLX/WGL Loader-Generator
 py311-gobject3-3.48.2 Python bindings for glib2 gobject
 py311-hatchling-1.24.2 Modern, extensible Python build backend
@@ -786,9 +787,9 @@ py311-idna-3.7      Python module for Internationalized Domain Names in Applicat
 py311-imagesize-1.4.1 Parses image files' header and returns image size
 py311-importlib-metadata-7.1.0 Read metadata from Python packages
 py311-iso8601-2.1.0nb1 Simple Python module to parse ISO 8601 dates
-py311-jinja2-3.1.3  Small but fast and easy to use stand-alone template engine
-py311-libxml2-2.12.4 Python wrapper for libxml2
-py311-lxml-5.2.1    Python binding for libxml2 and libxslt
+py311-jinja2-3.1.4  Small but fast and easy to use stand-alone template engine
+py311-libxml2-2.12.4nb1 Python wrapper for libxml2
+py311-lxml-5.2.2nb1 Python binding for libxml2 and libxslt
 py311-markdown-3.6  XHTML generator using a simple markup
 py311-markupsafe-2.1.5 Implements a unicode subclass that supports HTML strings
 py311-olefile-0.47  Python module to read/write MS OLE2 files
@@ -805,58 +806,58 @@ py311-pygments-2.18.0 Python syntax highlighter
 py311-pyparsing-3.1.2 Parsing module for Python
 py311-pyproject_hooks-1.0.0nb1 Wrappers to call pyproject.toml-based build backend hooks
 py311-pytz-2024.1   World timezone definitions, modern and historical
-py311-requests-2.31.0 HTTP library, written in Python, for human beings
+py311-requests-2.32.3 HTTP library, written in Python, for human beings
 py311-roman-4.2     Integer to Roman numerals converter for Python
 py311-scons-4.7.0   Python-based, open-source build system
 py311-semantic_version-2.10.0 Semantic version comparison for Python
-py311-setuptools-69.5.1 New Python packaging system
+py311-setuptools-70.0.0 New Python packaging system
 py311-setuptools-rust-1.9.0 Setuptools plugin for Rust support
-py311-setuptools_scm-8.0.4 Manage your versions by scm tags
+py311-setuptools_scm-8.1.0 Manage your versions by scm tags
 py311-six-1.16.0nb1 Python 2 and 3 compatibility utilities
 py311-smartypants-2.0.1nb1 Python with the SmartyPants
 py311-snowballstemmer-2.2.0nb1 Python module with stemmer algorithms for multiple natural languages
-py311-sphinx-7.3.7  Python documentation generator
+py311-sphinx-7.3.7nb1 Python documentation generator
 py311-sphinxcontrib-applehelp-1.0.8 Sphinx API for Apple help books
 py311-sphinxcontrib-devhelp-1.0.6 Sphinx API for Devhelp document
 py311-sphinxcontrib-htmlhelp-2.0.5 Sphinx API for HTML help
 py311-sphinxcontrib-jsmath-1.0.1nb1 Sphinx API for math in HTML via JavaScript
 py311-sphinxcontrib-qthelp-1.0.7 Sphinx API for QtHelp document
 py311-sphinxcontrib-serializinghtml-1.1.10 Sphinx API for "serialized" HTML files
-py311-trove-classifiers-2024.4.10 Canonical source for classifiers on PyPI (pypi.org)
-py311-typing-extensions-4.11.0 Backported and Experimental Type Hints for Python
+py311-trove-classifiers-2024.5.22 Canonical source for classifiers on PyPI (pypi.org)
+py311-typing-extensions-4.12.2 Backported and Experimental Type Hints for Python
 py311-typogrify-2.0.7nb1 Filters to enhance web typography
 py311-urllib3-2.2.1 HTTP library with thread-safe connection pooling
 py311-wheel-0.43.0  Built-package format for Python
-py311-zipp-3.18.1   Backport of pathlib-compatible object wrapper for zip files
+py311-zipp-3.19.2   Backport of pathlib-compatible object wrapper for zip files
 py311-zstandard-0.22.0nb1 Zstandard bindings for Python
 py39-toml-0.10.2nb1 Python Library for Tom's Obvious, Minimal Language
 py39-tomli-2.0.1    Lil' TOML parser
-python27-2.7.18nb15 Interpreted, interactive, object-oriented programming language
-python310-3.10.14   Interpreted, interactive, object-oriented programming language
-python311-3.11.9    Interpreted, interactive, object-oriented programming language
+python27-2.7.18nb16 Interpreted, interactive, object-oriented programming language
+python310-3.10.14nb1 Interpreted, interactive, object-oriented programming language
+python311-3.11.9nb1 Interpreted, interactive, object-oriented programming language
 python37-3.7.17     Interpreted, interactive, object-oriented programming language
-python38-3.8.19     Interpreted, interactive, object-oriented programming language
-python39-3.9.19     Interpreted, interactive, object-oriented programming language
-qmmp-1.6.5nb7       Audio player similar to Winamp/XMMS using Qt5
-qt5-qtbase-5.15.13nb2 C++ X GUI toolkit
-qt5-qtdeclarative-5.15.13nb1 Qt5 module for declarative framework
-qt5-qtmultimedia-5.15.13nb1 Qt5 module for multimedia
-qt5-qtsvg-5.15.13nb1 Qt5 module for SVG
-qt5-qtx11extras-5.15.13nb1 Qt5 module for X11 extras
-qt5-qtxmlpatterns-5.15.13nb1 Qt5 module for XML Patterns
+python38-3.8.19nb1  Interpreted, interactive, object-oriented programming language
+python39-3.9.19nb1  Interpreted, interactive, object-oriented programming language
+qmmp-1.6.5nb9       Audio player similar to Winamp/XMMS using Qt5
+qt5-qtbase-5.15.14nb1 C++ X GUI toolkit
+qt5-qtdeclarative-5.15.14nb1 Qt5 module for declarative framework
+qt5-qtmultimedia-5.15.14nb1 Qt5 module for multimedia
+qt5-qtsvg-5.15.14nb1 Qt5 module for SVG
+qt5-qtx11extras-5.15.14nb1 Qt5 module for X11 extras
+qt5-qtxmlpatterns-5.15.14nb1 Qt5 module for XML Patterns
 rapidjson-1.1.0nb1  Fast JSON parser/generator with SAX/DOM style API
-raptor2-2.0.16nb3   RDF Parser Toolkit written in C
-rarian-0.8.1nb13    Documentation metadata library
-rasqal-0.9.33nb31   Library that handles RDF query syntaxes
+raptor2-2.0.16nb5   RDF Parser Toolkit written in C
+rarian-0.8.1nb14    Documentation metadata library
+rasqal-0.9.33nb33   Library that handles RDF query syntaxes
 re2c-3.1            Deterministic Finite State Automaton generator
 readline-8.2nb2     GNU library that can recall and edit previous input
-redland-1.0.17nb39  Libraries supporting the Resource Description Framework (RDF)
-rhash-1.4.4nb1      Calculate/check CRC32, MD5, SHA1, GOST, TTH, BTIH or other hash sums
-rsync-3.3.0         Network file distribution/synchronisation utility
+redland-1.0.17nb41  Libraries supporting the Resource Description Framework (RDF)
+rhash-1.4.4nb2      Calculate/check CRC32, MD5, SHA1, GOST, TTH, BTIH or other hash sums
+rsync-3.3.0nb1      Network file distribution/synchronisation utility
 ruby27-base-2.7.8   Ruby 2.7.8 release minimum base package
 ruby31-addressable-2.8.5 Replacement for the URI Implementation of standard librrary
 ruby31-atk-4.2.0    Ruby binding of ATK-1.0.x or later
-ruby31-base-3.1.5   Ruby 3.1.5 release minimum base package
+ruby31-base-3.1.6   Ruby 3.1.6 release minimum base package
 ruby31-bsearch-1.5nb2 Binary search library for Ruby
 ruby31-cairo-1.17.12nb2 Ruby bindings for cairo
 ruby31-cairo-gobject-4.2.0nb2 Ruby binding of cairo-gobject
@@ -898,13 +899,13 @@ ruby31-unf-0.1.4    Wrapper library to bring Unicode Normalization Form support
 ruby31-unf_ext-0.0.9.1 Unicode Normalization Form support library for CRuby
 ruby31-version_gem-1.1.3 Sugar for Version modules
 ruby31-zip-2.3.2    Ruby module for reading and writing zip files
-rust-1.76.0         Safe, concurrent, practical language
-samba-4.20.0        SMB/CIFS protocol server suite
+rust-1.76.0nb3      Safe, concurrent, practical language
+samba-4.20.1nb2     SMB/CIFS protocol server suite
 schroedinger-1.0.11 Dirac video compression library
 seamonkey-2.53.16nb13 All-in-one Internet application suite
 seamonkey-l10n-2.53.16 Language packs for www/seamonkey
 serf-1.3.10nb2      High-performance asynchronous HTTP client library
-shared-mime-info-2.4 Core database of common types
+shared-mime-info-2.4nb1 Core database of common types
 slib-3.3.1          Portable Scheme library of compatibility and utility functions
 smpeg-0.4.5         SDL MPEG Player Library
 sofia-sip-1.12.11nb7 Open-source SIP User-Agent library
@@ -912,7 +913,7 @@ spdlog-1.14.1       Fast C++ logging library
 speex-1.2.1         Open-source, patent-free voice codec
 speexdsp-1.2.1      Open-source, patent-free voice codec DSP library
 sqlite-2.8.17nb3    SQL Database Engine in a C Library
-sqlite3-3.45.3      SQL Database Engine in a C Library
+sqlite3-3.46.0nb1   SQL Database Engine in a C Library
 startup-notification-0.12nb3 X11 application startup notification library
 sudo-1.9.15p5       Allow others to run commands as root
 svt-av1-1.8.0       Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder)
@@ -922,8 +923,8 @@ swig4-4.1.1         Simplified Wrapper and Interface Generator (version 4)
 sylpheed-3.7.0nb16  Gtk based e-mail and netnews client
 taglib-2.0.1        Library for accessing id tags in various media files
 talloc-2.4.2        Hierarchical pool based memory allocator with destructors
-tcl-8.6.14          Tool Command Language, a dynamic language
-tcsh-6.24.12        Extended C-shell with many useful features
+tcl-8.6.14nb1       Tool Command Language, a dynamic language
+tcsh-6.24.13        Extended C-shell with many useful features
 tdb-1.4.10          Small database system which uses files to store data
 tevent-0.16.1       Event system based on the talloc
 tex-amsfonts-3.04nb1 TeX fonts from the American Mathematical Society
@@ -1027,18 +1028,18 @@ tex-zapfchan-2021   Zapf Chancery fonts from URW 'Base 35' font pack for LaTeX
 tex-zapfding-2021   Dingbat typeface from URW 'Base 35' font pack for LaTeX
 texi2html-5.0nb11   Texinfo-to-HTML direct translator
 tiff-4.6.0nb3       Library and tools for reading and writing TIFF data files
-tigervnc-1.13.1.1.20.13nb6 High-performance, platform-neutral VNC client/server
+tigervnc-1.13.1.1.20.13nb8 High-performance, platform-neutral VNC client/server
 tk-8.6.14           Graphical toolkit for TCL
 tradcpp-0.5.3       Traditional (K&R-style) C preprocessor
 tree-1.8.0          Print a text or HTML tree diagram of a directory structure
-tree-sitter-0.22.5  Incremental parsing system for programming tools
+tree-sitter-0.22.6  Incremental parsing system for programming tools
 tree-sitter-bash-0.20.5 Bash grammar for tree-sitter
 tree-sitter-c-0.20.7 C grammar for tree-sitter
 tree-sitter-c-sharp-0.20.0 C# grammar for tree-sitter
-tree-sitter-cmake-0.4.1 CMake grammar for tree-sitter
-tree-sitter-cpp-0.22.0 C++ grammar for tree-sitter
+tree-sitter-cmake-0.5.0 CMake grammar for tree-sitter
+tree-sitter-cpp-0.22.2 C++ grammar for tree-sitter
 tree-sitter-css-0.21.0 CSS grammar for tree-sitter
-tree-sitter-dockerfile-0.1.2nb1 Dockerfile grammar for tree-sitter
+tree-sitter-dockerfile-0.2.0 Dockerfile grammar for tree-sitter
 tree-sitter-elixir-0.2.0 Elixir grammar for tree-sitter
 tree-sitter-go-0.20.0 Go grammar for tree-sitter
 tree-sitter-go-mod-1.0.2 go.mod grammar for tree-sitter
@@ -1054,7 +1055,7 @@ tree-sitter-tsx-0.20.2 TSX grammar for tree-sitter
 tree-sitter-typescript-0.20.4 TypeScript grammar for tree-sitter
 tree-sitter-yaml-0.5.0nb1 YAML grammar for tree-sitter
 ttmkfdir2-20021109nb8 Tool that creates a fonts.scale file
-uim-1.8.9nb10       Multilingual input method library
+uim-1.8.9nb11       Multilingual input method library
 unittest-cpp-2.0.0  Lightweight unit testing framework for C++
 unixodbc-2.3.12     ODBC 2.x/3.x driver manager
 unzip-6.0nb9        List, test and extract compressed files in a ZIP archive
@@ -1065,17 +1066,17 @@ vala-0.56.17        Compiler for the GObject type system
 vera-ttf-1.10nb6    Bitstream Vera TrueType fonts
 vlc-3.0.20nb4       VideoLAN media player and streaming server
 vlgothic-ttf-20230918 Free Japanese TrueType fonts named 'VLGothic'
-vorbis-tools-1.4.2nb8 Ogg Vorbis encoder and player
+vorbis-tools-1.4.2nb10 Ogg Vorbis encoder and player
 vte-0.28.1nb35      Terminal widget with improved accessibility and I18N support
-vte3-0.74.2nb2      Terminal widget with improved accessibility and I18N support
-vulkan-headers-1.3.282 Headers for Vulkan Graphics API
+vte3-0.76.2         Terminal widget with improved accessibility and I18N support
+vulkan-headers-1.3.287 Headers for Vulkan Graphics API
 w3m-0.5.3.0.20230121nb4 Multilingualized version of a pager/text-based browser w3m
 waf-2.0.27          Framework for configuring, compiling, and installing applications
 wavpack-5.7.0       Audio codec for lossless, lossy and hybrid compression
-wayland-1.21.0nb3   Display server protocol - development libraries
+wayland-1.23.0      Display server protocol - development libraries
 wayland-protocols-1.35 Additional wayland functionality
 web2c-2024nb1       TeX implementation translating WEB to C
-wget-1.24.5         Retrieve files from the 'net via HTTP and FTP
+wget-1.24.5nb2      Retrieve files from the 'net via HTTP and FTP
 woff2-1.0.2nb1      WOFF font file format library
 wxGTK30-3.0.5.1nb15 Cross-platform wxWidgets GUI library (3.0 branch)
 x11-links-1.35nb1   Shadow tree of links to native X11 headers and libraries
@@ -1089,38 +1090,38 @@ xcb-util-keysyms-0.4.1 XCB Utilities
 xcb-util-renderutil-0.3.10 Convenience functions for the Render extension
 xcb-util-wm-0.4.2nb1 Client and window-manager helpers for ICCCM and EWMH
 xdg-utils-1.1.3nb3  Tools to assist applications with various desktop integration tasks
-xfce4-4.18.1nb14    Meta-package for the Xfce desktop environment
+xfce4-4.18.1nb15    Meta-package for the Xfce desktop environment
 xfce4-appfinder-4.18.1nb5 Xfce application finder
 xfce4-conf-4.18.3nb2 Xfce client-server configuration storage and query system
 xfce4-desktop-4.18.1nb5 Xfce desktop background manager
 xfce4-exo-4.18.0nb7 Xfce extension library
 xfce4-garcon-4.18.2nb2 Xfce menu library
 xfce4-icon-theme-4.4.3nb43 Xfce icon themes
-xfce4-mousepad-0.6.2nb2 Xfce text editor
-xfce4-orage-4.18.0nb7 Xfce time managing application
+xfce4-mousepad-0.6.2nb3 Xfce text editor
+xfce4-orage-4.18.0nb8 Xfce time managing application
 xfce4-panel-4.18.6nb2 Xfce panel
 xfce4-power-manager-4.18.3nb2 Xfce power manager
-xfce4-session-4.18.3nb6 Xfce session manager
-xfce4-settings-4.18.4nb2 Xfce settings manager
+xfce4-session-4.18.3nb7 Xfce session manager
+xfce4-settings-4.18.4nb3 Xfce settings manager
 xfce4-terminal-1.1.3nb2 Xfce terminal emulator
 xfce4-thunar-4.18.10nb2 Xfce file manager
-xfce4-tumbler-4.18.2nb5 D-Bus thumbnailing service
+xfce4-tumbler-4.18.2nb7 D-Bus thumbnailing service
 xfce4-wm-4.18.0nb7  Xfce window manager
 xfce4-wm-themes-4.10.0nb25 Xfce window manager themes
 xkbcomp-1.4.7       XKBD keymap compiler
 xkeyboard-config-2.41 X Keyboard Configuration Database
 xli-1.17.0nb14      X11 Image Loading Utility
 xmlcatmgr-2.2nb1    XML and SGML catalog manager
-xmlto-0.0.28nb10    Tool to help transform XML documents into other formats
+xmlto-0.0.28nb11    Tool to help transform XML documents into other formats
 xnp2-0.86nb25       Neko Project II PC-9801 emulator
 xorg-cf-files-1.0.8 Xorg imake rules
 xorg-util-macros-1.20.1 Xorg autotool macros
 xorgproto-2023.1    Various X headers from Xorg X11
-xscreensaver-6.08nb4 Screen saver and locker for the X window system
+xscreensaver-6.08nb5 Screen saver and locker for the X window system
 xvidcore-1.3.7nb1   ISO MPEG-4 compliant video codec
-xxhash-0.8.2nb1     Extremely fast non-cryptographic hash algorithm
+xxhash-0.8.2nb2     Extremely fast non-cryptographic hash algorithm
 yasm-1.3.0          Complete rewrite of the NASM assembler with BSD license
-yelp-tools-42.1nb1  Set of command-line tools to build and check your documentation
+yelp-tools-42.1nb2  Set of command-line tools to build and check your documentation
 yelp-xsl-42.1       XSL stylesheets for Yelp help browser
 zenity-3.41.0nb11   Display GNOME dialogs from the command line
 zip-3.0nb3          Create/update ZIP files compatible with pkzip
@@ -1129,4 +1130,4 @@ zsh-5.9nb2          The Z shell
 zstd-1.5.6          Fast real-time compression algorithm
 zxcvbn-c-2.5        Password strength estimator
 zxing-cpp-2.2.1     1D/2D barcode reader/writer library in C++
-zziplib-0.13.74     Library for ZIP archive handling
+zziplib-0.13.76     Library for ZIP archive handling
