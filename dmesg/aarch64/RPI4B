@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.10 (GENERIC64) #0: Sat May 18 19:28:36 UTC 2024
+NetBSD 10.99.10 (GENERIC64) #0: Tue Jun 18 04:07:18 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 8024 MB
 avail memory = 7734 MB
@@ -140,32 +140,32 @@ cpu1: PMU interrupting on irq 49
 cpu2: PMU interrupting on irq 50
 cpu3: PMU interrupting on irq 51
 IPsec: Initialized Security Association Processing.
+sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
+ld1 at sdmmc1: <0x02:0x544d:SA64G:0x72:0x49a81750:0x174>
+ld1: 59356 MB, 7566 cyl, 255 head, 63 sec, 512 bytes/sect x 121561088 sectors
+ld1: GPT GUID: d6ecd272-1df5-4b79-8041-dc79c2e1015c
+dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
+dk1 at ld1: "netbsd-root", 5586850 blocks at 90203, type: ffs
+ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
 sdmmc0: 4-bit width, 50.000 MHz
 sdmmc0: SDIO function
 bwfm0 at sdmmc0 function 1
 (manufacturer 0x2d0, product 0xa9a6) at sdmmc0 function 2 not configured
 (manufacturer 0x2d0, product 0xa9a6, standard function interface code 0x2) at sdmmc0 function 3 not configured
-sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
-ld1 at sdmmc1: <0x02:0x544d:SE032:0x90:0xe4b5e5a3:0x15c>
-ld1: 29512 MB, 7495 cyl, 128 head, 63 sec, 512 bytes/sect x 60440576 sectors
-ld1: GPT GUID: 34cd8574-ce09-4889-a98b-5a5d4c7dc0c2
-dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
-dk1 at ld1: "netbsd-root", 5586850 blocks at 90203, type: ffs
-ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
-uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 1
-uhub2: single transaction translator
-uhub2: 4 ports with 4 removable, self powered
-umass0 at uhub0 port 1 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 2
+umass0 at uhub0 port 2 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 1
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
+uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 2
+uhub2: single transaction translator
+uhub2: 4 ports with 4 removable, self powered
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 sd0: 953 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 2000409264 sectors
-uhidev0 at uhub2 port 3 configuration 1 interface 0
+uhidev0 at uhub2 port 4 configuration 1 interface 0
 uhidev0: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub2 port 3 configuration 1 interface 1
+uhidev1 at uhub2 port 4 configuration 1 interface 1
 uhidev1: vendor 056e (0x056e) TK-FCP027 Series (0x1014), rev 1.10/1.03, addr 3, iclass 3/0
 uhidev1: 2 report ids
 uhid0 at uhidev1 reportid 1: input=1, output=0, feature=0
@@ -175,10 +175,10 @@ boot device: dk1
 root on dk1
 root file system type: ffs
 kern.module.path=/stand/evbarm/10.99.10/modules
-WARNING: clock lost 39 days
+WARNING: clock lost 68 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc002674af000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc0026749f000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
