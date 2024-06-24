@@ -19,7 +19,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202405202140Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202406221720Z/evbarm-earmv6hf/binary
 #BINARY=nycdn.netbsd.org/pub/NetBSD-daily/netbsd-10/202403292200Z/evbarm-earmv6hf/binary/
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
