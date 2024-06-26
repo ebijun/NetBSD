@@ -1,7 +1,6 @@
-amiga_model = A1200
-kickstart_file = A1200_3.1.rom
-kickstart_rom_file = A1200_3.1.rom
-cpu = 68020
+amiga_model = A3000
+kickstart_rom_file = amiga-os-310-a3000.rom
+cpu = 68030
 accelerator = cyberstorm-ppc
 accelerator_rom = cyberstormppc.rom
 accuracy = -1
@@ -10,3 +9,4 @@ zorro_iii_memory = 16384
 save_disk = 0
 floppy_drive_speed = 0
 hard_drive_0 = AmigaOS/AmiNet
+hard_drive_1 = ENV
