@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -31,29 +31,24 @@
 NBUG例会この一年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:10までの枠内なので、この枠内にNetBSDの時間をいれていただいています。
-
 .. csv-table::
  :widths: 15 15 15 6 
 
  OSC,NBUG例会,togetter,アクセス数
  
-  OSC 2023/Nagoya ,2023/5月例会,https://togetter.com/li/2142714,259
- ,2023/4月例会,https://togetter.com/li/2129326,420
- OSC2023/Tokyo Spring,AsiaBSDCon2023,https://togetter.com/li/2112458,1561
-  OSC2023 Online/Spring ,2023/3月例会,https://togetter.com/li/2094211,842
-  ,2023/2月例会,https://togetter.com/li/2081847,846
- OSC 2023 Online/Osaka ,2023/1月例会,https://togetter.com/li/2060234,1657
- ,2022/12月例会,https://togetter.com/li/2010441,931
- OSC2022 Online/Fukuoka ,2022/11月例会,https://togetter.com/li/1977568,975
- KOF 2022,,https://togetter.com/li/1970580,1556
- OSC2022 Online/Fall,2022/10月例会,https://togetter.com/li/1964480,1561
- OSC2022 Online Hiroshima,2022/9月例会,https://togetter.com/li/1950893,1141
- ODC2022 Online ,2022/8月例会,https://togetter.com/li/1938050,1497
- OSC2022  Online/Kyoto,2022/7月例会,https://togetter.com/li/1921498,2226
- OSC2022 Online/Hokkaido,2022/6月例会,https://togetter.com/li/1905889,1658
- OSC 2022 Online/Nagoya,2022年5月例会,https://togetter.com/li/1891762,1451
- ,2022/4月例会,https://togetter.com/li/1873517,904
+ NBUG 2024/05 OSC Nagoya,https://togetter.com/li/2359557,325
+ NBUG 2024/03~04,https://togetter.com/li/2332837,261
+ NBUG 2024/02,https://togetter.com/li/2314715,817
+ NBUG 2024/01,https://togetter.com/li/2298407,1162
+ NBUG 2023/12,https://togetter.com/li/2271317,655
+ NBUG 2023/11,https://togetter.com/li/2260623,540
+ NBUG 2023/10,https://togetter.com/li/2240886,1015
+ NBUG 2023/09,https://togetter.com/li/2231931,977
+ NBUG 2023/08,https://togetter.com/li/2208216,949
+ NBUG 2023/07,https://togetter.com/li/2189221,1526
+ NBUG 2023/06,https://togetter.com/li/2165257,1575
+ NBUG 2023/05 OSC Nagoya,https://togetter.com/li/2142714,2453
+
 
 名古屋でのオープンソースカンファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -80,6 +75,8 @@ OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:1
  2022 online Nagoya,5/28,280,21,ZOOM
  2023 online Nagoya,5/20,,,ZOOM
  2023 Nagoya,5/28,,,名古屋市中小企業振興会館 
+ 2024 Nagoya,5/25,,,名古屋市中小企業振興会館 
+
    
 オープンソースカンファレンス以前
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,12 +96,12 @@ OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:1
 .. csv-table::
  :widths: 30 20 60
 
- 名古屋シネマテーク,今池,2023/7月閉館！？！？！？
- マルワ模型店,新瀬戸,2023閉店廃業かも
+ ナゴヤキネマ・ノイ,今池,シネマテークから新規オープン。悪は存在しない。
  パウ,大須,タブレットから謎ハードまで。ボントンの隣。
  鯱の家,黒川,カレーうどん。
  陽龍,黒川,チャーシューメン。
  ディバインレコード,新栄,11:00-
+ ラジオデイズレコード,新栄,9:00-
  円頓寺商店街,国際センター,堀川から丸の内まで続く商店街
  ふれあい館,円頓寺商店街,NBUG例会会場だった。トクサツガガガ最終回でビデオ屋。
  まつば,円頓寺商店街,NBUG例会会場脇。名古屋で数番目に自家焙煎をはじめた店。
@@ -116,7 +113,7 @@ OSCの日程とNBUG例会の日程をあわせています。会場は13:30-16:1
  テラゾ,円頓寺商店街,ロックバー。元オックスの人が。
  KDS,第一アメ横1F,昔は車道にあった。小坂井ブランドの300Bとか。
  ツゲ電機,雪見町,テクトロントランス。
- エイトリック,上小田井,マルツ近く。手巻きトランス。
+ エイトリック,美浜,マルツ近くから美浜に移転。手巻きトランス。
  ボントン,第一アメ横2F,昔は横浜石川町にもあった。
  ショップインバース,メガタウン,第一アメ横隣のツクモの奥。
  ハイファイ堂,大須赤門通,真空管の在庫豊富。レコード店閉店。
@@ -152,6 +149,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 198,OSC2024名古屋,http://www.re.soum.co.jp/~jun/OSC2024nagoya.pdf
  186,OSC2023名古屋,http://www.re.soum.co.jp/~jun/OSC2023nagoya.pdf
  176,OSC2022名古屋,http://www.re.soum.co.jp/~jun/OSC2022nagoya.pdf 
  165,OSC2021名古屋,http://www.re.soum.co.jp/~jun/OSC2021nagoya.pdf
@@ -172,6 +170,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2024 Online/Nagoya 名古屋,https://togetter.com/li/2359557
  OSC2023 Online/Nagoya 名古屋,https://togetter.com/li/2142714
  OSC2022 Online/Nagoya 名古屋,https://togetter.com/li/1950893
  OSC2021 Online/Nagoya 名古屋,https://togetter.com/li/1720573
@@ -202,6 +201,46 @@ OSC名古屋展示物
 #. HP712/80
 #. Speecys
 #. samtk
+
+
+
+オープンソースカンファレンス2024 Nagoya&NBUG5月例会
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2023/05/28/DSC_1348.JPG
+.. image::  ../Picture/2023/05/28/DSC_1349.JPG
+.. image::  ../Picture/2023/05/28/DSC_1350.JPG
+.. image::  ../Picture/2023/05/28/DSC_1351.JPG
+.. image::  ../Picture/2023/05/28/DSC_1352.JPG
+.. image::  ../Picture/2023/05/28/DSC_1353.JPG
+.. image::  ../Picture/2023/05/28/DSC_1356.JPG
+.. image::  ../Picture/2023/05/28/DSC_1357.JPG
+.. image::  ../Picture/2023/05/28/DSC_1358.JPG
+.. image::  ../Picture/2023/05/28/DSC_1359.JPG
+.. image::  ../Picture/2023/05/28/DSC_1362.JPG
+.. image::  ../Picture/2023/05/28/DSC_1363.JPG
+.. image::  ../Picture/2023/05/28/DSC_1364.JPG
+.. image::  ../Picture/2023/05/28/DSC_1365.JPG
+.. image::  ../Picture/2023/05/28/DSC_1366.JPG
+.. image::  ../Picture/2023/05/28/DSC_1367.JPG
+.. image::  ../Picture/2023/05/28/DSC_1368.JPG
+.. image::  ../Picture/2023/05/28/DSC_1369.JPG
+.. image::  ../Picture/2023/05/28/DSC_1370.JPG
+.. image::  ../Picture/2023/05/28/DSC_1371.JPG
+.. image::  ../Picture/2023/05/28/DSC_1373.JPG
+.. image::  ../Picture/2023/05/28/DSC_1374.JPG
+.. image::  ../Picture/2023/05/28/DSC_1375.JPG
+.. image::  ../Picture/2023/05/28/DSC_1376.JPG
+.. image::  ../Picture/2023/05/28/DSC_1377.JPG
+.. image::  ../Picture/2023/05/28/DSC_1378.JPG
+.. image::  ../Picture/2023/05/28/DSC_1379.JPG
+.. image::  ../Picture/2023/05/28/DSC_1380.JPG
+.. image::  ../Picture/2023/05/28/DSC_1381.JPG
+.. image::  ../Picture/2023/05/28/DSC_1382.JPG
+.. image::  ../Picture/2023/05/28/DSC_1383.JPG
+.. image::  ../Picture/2023/05/28/DSC_1384.JPG
+.. image::  ../Picture/2023/05/28/DSC_1385.JPG
+
 
 オープンソースカンファレンス2019 Nagoya&NBUG7月例会
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

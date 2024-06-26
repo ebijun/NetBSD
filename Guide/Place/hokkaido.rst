@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -39,12 +39,15 @@
 .. csv-table::
  :widths: 30 20 60
 
+ 空き地,狸小路5,2024/6/29 19:30- カリオストロの城上映会
+ TRANS BREWING BEER STAND,南2条西5丁目6-1,15：00-23：00
+ Streetlight Brewing,北10西19,12:00-20:00/15:00-21:00
  BEER COTAN,南2西3,忽布古丹醸造直営店 12:00/17:00-23:00
  そらとしば,エスコン,よなよな直営
  はりねずみ珈琲店,南3西8,青りんごソーダとプリンとタンザニアキリマンジャロ。タンノイ。
  滝川クラフトビール工房,滝川,泉町1丁目9区。空知ピルスナー。温泉。
  おやじ中華ナリケン,狸小路,マコモダケの春巻。
- paul's cafe,紀伊國屋書店下,ベルギービールとチキンのランチ。LO19時。
+ paul's cafe,紀伊國屋書店下,ベルギービールとチキンのランチ。2024/3/31閉店
  ミンガス,大通32番出口,9:00-24:00　A7。
  モエレ沼公園,東区,香川のイサムノグチ庭園美術館とセットで回ろう。
  ビアパブひらら,澄川4/南3西5,さいとさんの店。澄川醸造。土曜酒屋営業。Bnewsに詳しい。
@@ -78,9 +81,9 @@
  ウェスタンラボ,新琴似4,アンプ、スピーカーのリペア。310のシールド。
  ゲームショップ1983,北35西5,店員さんがルイージ。常にルイージ。通販専門。
  坂ビスケット,琴似,坂会館には2階もある。隣はつぼ八1号店。
- キコキコ商店,南12西6,渋さのCDと珈琲。2021/7/11まで休み。
+ キコキコ商店,南12西6,渋さのCDと珈琲。
  モスコミュール,宮の杜4条,カレーと夜景とモスコ
- シアターキノ,狸小路6南3,アメリカンユートピアは2021/7/3から。Stop Making Sense上映あり。
+ シアターキノ,狸小路6南3,2024/6/29から関心領域
  赤星,南3西7,500円ラーメン
  こふじ,北2西3,昼ランチ
  亜珈里,豊平公園,ザンギ定食大盛900円。朝8:00-
@@ -144,8 +147,9 @@
  2020 Hokkaido,6/27,450,22,オンライン開催
  2021 Hokkaido,6/26,510,22,オンライン開催
  2022 Hokkaido,6/25,325,18,オンライン開催
- 2023 Hokkaido,6/17,,,オンライン開催
- 2023 Hokkaido,6/24,,,札幌市産業振興センター
+ 2023 Hokkaido,6/17,225,15,オンライン開催
+ 2023 Hokkaido,6/24,278,30,札幌市産業振興センター
+ 2024 Hokkaido,6/29,,,札幌市産業振興センター
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -158,6 +162,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
 
+ 199.,OSC2024北海道,http://www.re.soum.co.jp/~jun/OSC2024hokkaido.pdf
  187.,OSC2023北海道,http://www.re.soum.co.jp/~jun/OSC2023hokkaido.pdf
  177.,OSC2022北海道,http://www.re.soum.co.jp/~jun/OSC2022hokkaido.pdf
  166.,OSC2021北海道,http://www.re.soum.co.jp/~jun/OSC2021hokkaido.pdf
@@ -177,6 +182,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2024北海道 NetBSDブース展示の記録,https://togetter.com/li/2377329
  OSC2023北海道 NetBSDブース展示の記録,https://togetter.com/li/2165257
  OSC2022北海道 NetBSDブース展示の記録,https://togetter.com/li/1905889
  OSC2021北海道 NetBSDブース展示の記録,https://togetter.com/li/1735858
@@ -218,6 +224,28 @@ OSC北海道展示物
 #. NetBSD/Zaurus
 #. Making install-image Presentation by つついさん
   http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html
+
+2023年
+^^^^^^^^^^
+
+.. image::  ../Picture/2023/06/24/DSC_1437.JPG
+.. image::  ../Picture/2023/06/24/DSC_1438.JPG
+.. image::  ../Picture/2023/06/24/DSC_1439.JPG
+.. image::  ../Picture/2023/06/24/DSC_1440.JPG
+.. image::  ../Picture/2023/06/24/DSC_1441.JPG
+.. image::  ../Picture/2023/06/24/DSC_1442.JPG
+.. image::  ../Picture/2023/06/24/DSC_1443.JPG
+.. image::  ../Picture/2023/06/24/DSC_1444.JPG
+.. image::  ../Picture/2023/06/24/DSC_1445.JPG
+.. image::  ../Picture/2023/06/24/DSC_1446.JPG
+.. image::  ../Picture/2023/06/24/DSC_1447.JPG
+.. image::  ../Picture/2023/06/24/DSC_1448.JPG
+.. image::  ../Picture/2023/06/24/DSC_1449.JPG
+.. image::  ../Picture/2023/06/24/DSC_1450.JPG
+.. image::  ../Picture/2023/06/24/DSC_1451.JPG
+.. image::  ../Picture/2023/06/24/DSC_1452.JPG
+.. image::  ../Picture/2023/06/24/DSC_1453.JPG
+.. image::  ../Picture/2023/06/24/DSC_1454.JPG
 
 2019年
 ^^^^^^^^^^

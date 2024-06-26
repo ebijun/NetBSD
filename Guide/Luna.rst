@@ -681,6 +681,9 @@ LUNA年表　- 月の刃
  2023/11,井,nonoの話 [191]_
  2023/12,井,nono-0.6.4リリース 
  2024/2,井,nono-0.7.0リリース 
+ 2024/3,井,nono-0.7.1リリース
+ 2024/5,井,nono-0.7.2リリース
+ 2024/5,青,OSC2024NagoyaでLUNA88K展示 [192]_
 
 最近のLUNA
 ----------------
@@ -964,6 +967,7 @@ Luna88K/OpenBSD 上で、pkgsrcを使っていくつかパッケージを作っ�
 .. [189] https://twitter.com/isaki68k/status/1624651445684563968
 .. [190] https://twitter.com/ao_kenji/status/1625846099394330625
 .. [191] http://www.pastel-flower.jp/~isaki/NetBSD/osc23hi/
+.. [192] https://event.ospn.jp/slides/OSC2024_Nagoya/OSC2024Nagoya_BSD.pdf
 
 このページ
 ~~~~~~~~~~~
