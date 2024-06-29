@@ -1,20 +1,22 @@
 https://www.raspberrypi.org/forums/viewforum.php?f=86
 
-:1,$s/2022-12-23/2022-12-23/g
-:1,$s/10.99.2/10.99.2/g
+:1,$s/2024-06-29/2024-06-29/g
+:1,$s/10.99.10/10.99.10/g
 :1,$s/202104010300Z/202104010300Z/g
 :1,$s?2021/04/02/msg007213.html?2021/04/02/msg007213.html?
 
-2022/12 NetBSD 10.99 image update
+2024/06 NetBSD 10.99 image update
 
-I've updated 2022-12 NetBSD images.
+I've updated 2024-06 NetBSD images.
 
-2022-12-23-netbsd-raspi-earmv6hf.img: for RPI0-3
- http://mail-index.netbsd.org/port-arm/2022/12/23/msg008061.html
+2024-06-24-netbsd-raspi-earmv6hf.img: for RPI0-3
+ http://mail-index.netbsd.org/port-arm/2024/06/24/msg008778.html
 
-2022-12-21-netbsd-raspi-aarch64.img: for RPI4
- http://mail-index.netbsd.org/port-arm/2022/12/21/msg008056.html
+2024-06-24-netbsd-armv7-earmv7hf.img for RPI2-3
+ http://mail-index.netbsd.org/port-arm/2024/06/24/msg008779.html
 
+2024-06-19-netbsd-raspi-aarch64.img: for RPI4
+ http://mail-index.netbsd.org/port-arm/2024/06/19/msg008775.html
 
 Update:
 - NetBSD 10.99 rpi.img from nyftp.
@@ -35,16 +37,6 @@ dmesg:
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3A+
   https://github.com/ebijun/NetBSD/blob/master/dmesg/earmv6hf/RPI3B+
   https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/RPI4B
-
-Security:
-- security.pax.mprotect.enabled
-  http://netbsd.org/gallery/presentations/msaitoh/2016_BSDCan/BSDCan2016-NetBSD.pdf
-  man security
-  man paxctl
-  sysctl -a |grep pax
-  If application failed, such as omxplayer.
-  try to test 
-  sysctl -w security.pax.mprotect.enabled=0 
 
 ---
 Comments are welcome on port-arm netbsd mailinglist or
