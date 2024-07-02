@@ -1,0 +1,182 @@
+.. 
+ Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+===========================================
+オープンソースカンファレンスNetBSDブースこの一年
+===========================================
+
+日本NetBSDユーザーグループは2024年もオープンソースカンファレンスを中心とするイベントに参加しています。
+2020/1のOSC2020大阪以降はZOOMでの参加になりましたが、2023/5のOSC2023名古屋以降ZOOMと展示を分けて開催するようになりました。
+NetBSD/aarch64からZOOM会議に参加する試みをしました。
+従来、ブースへの展示機材持ち込み＆差し入れに代わり、事前にtwitter上でデモ動画等を投稿されたものをtogetterでまとめておいて紹介するようにしてみました。、引き続きセミナー時間での参加・発表を歓迎します。
+
+NetBSD環境からのZOOM会議参加
+-----------------------------
+
+NetBSDからZOOM等の会議に参加するためには、以下の手順をとります。
+
+#. rustが動くようにする。
+#. audioが動くようにする。
+#. 内蔵カメラが動くようにする。
+#. Firefox80以降をpkgsrcからインストールする
+#. FirefoxのプラグインでLinuxまたはFreeBSDからインストールしているように見せかける。
+
+これまでに参加した一覧
+----------------------
+
+これまでに参加した一覧は以下のとおりです。
+
+  https://github.com/ebijun/NetBSD/blob/master/Guide/OSC/OSC100.csv
+
+
+このファイルはオープンソースカンファレンス過去来場者数一覧 http://www.ospn.jp/visitors/ を元に作成しています。
+
+
+どのくらい参加しているか
+-------------------------
+
+- 2024/1/27までにOSCは229回開催されています。
+- JNUGは205回参加しています。89.5%→89.5% (前年比変わらず)
+
+OSCこの一年
+--------------
+
+2023年まとめ
+^^^^^^^^^^^^
+
+- 日本全国各地で10回+オンライン開催6回+ODC開催 
+- 参加者: 107,270人 年間参加者3404人 3115人(2021年)→2383人(2022年)→3304人(2023年)
+- 参加団体:6547グループ 年間参加グループ 317グループ  133グループ(2021)→127グループ(2022)→299グループ(2022)
+
+.. csv-table:: この一年
+ :widths: 10 40 10 20 30 30
+
+ 回数,イベント,日付,参加者,参加グループ,参加したら1
+ 217,2023 Nagoya,5/28,325,24,1
+ 218,2023 Online/Hokkaido,6/24,225,15,1
+ 219,2023 Hokkaido,6/24,278,30,1
+ 220,2023 Kyoto,7/22,250,26,1
+ 221,2023 Online/Kyoto,7/22,150,12,1
+ ,ODC ,8/26,120,8,参加
+ 222,2023 Online Fall,9/29-30,202,14,1
+ 223,2023 Tokyo Fall,10/21,300,29,1
+ 224,2023 Shimane,10/21,100,18,1
+ 225,2023 Hiroshima,11/12,54,14,1
+ 226,2023 Niigata,11/25,37,,1
+ 227,2023 Fukuoka,12/9,150,20,1
+ 228,2023 Yamaguchi,12/10,55,		
+ 229,2024,2024 Osaka,1/27,220,32,1
+ 230,2024 Online/Spring,3/1-2,312,20,1
+ 231,2024 Tokyo/Spring,3/10,530,48,1
+ 232,2024 Nagoya,5/25,250,36,1
+
+togetterアクセスで見たNetBSDブース
+-----------------------------------
+togetterのアクセスログは以下の場所にあります。
+
+  https://github.com/ebijun/NetBSD/blob/master/Event/togetter/togetterview/view.csv
+
+この一年のアクセス数集計は以下の通りです。
+
+.. csv-table::
+ :widths: 120 60 10
+
+ OSC2024 Hokkaido,https://togetter.com/li/2377329,542
+ OSC2024 Nagoya,https://togetter.com/li/2359557,921
+ AsiaBSDCon 2024,https://togetter.com/li/2337258,647
+ OSC2024 Spring,https://togetter.com/li/2314715,904
+ OSC2024 Osaka,https://togetter.com/li/2298407,1236
+ OSC2023 Fukuoka,https://togetter.com/li/2271317,692
+ OSC2023 Niigata,https://togetter.com/li/2260623,553
+ KOF2023& OSC2023 Hiroshima ,https://togetter.com/li/2254094,1300
+ OSC2023 Shimane,https://togetter.com/li/2247549,1306
+ OSC2023 Tokyo/Fall,https://togetter.com/li/2240886,1055
+ OSC2023 Online/Fall,https://togetter.com/li/2231931,1026
+ ODC2023 NetBSD,https://togetter.com/li/2208216,982
+ OSC2023 Kyoto ,https://togetter.com/li/2189221,1562
+ OSC2023 Hokkaido,https://togetter.com/li/2165257,1700
+
+netbsd-advocacyメーリングリストへの報告
+--------------------------------------------
+
+netbsd-advocacyメーリングリストへの参加報告をしてみました。
+
+.. csv-table::
+
+ NetBSD machines at Open Source Conference 2020 Osaka,http://mail-index.netbsd.org/netbsd-advocacy/2020/01/28/msg000823.html
+
+NetBSD観光ガイド作成
+------------------------
+
+イベント毎に観光ガイドを作っています。セミナー参加者に配布しました。
+
+一覧：
+
+ https://github.com/ebijun/osc-demo/blob/master/README.md
+
+
+作成方法： 
+
+ https://github.com/ebijun/NetBSD/blob/master/Guide/Paper/sphinx.rst
+
+.. csv-table::
+ :widths: 10 20 100
+
+ 199,OSC2024北海道,http://www.re.soum.co.jp/~jun/OSC2024hokkaido.pdf
+ 198,OSC2023名古屋,http://www.re.soum.co.jp/~jun/OSC2024nagoya.pdf
+ 197,OSC2024東京春, http://www.re.soum.co.jp/~jun/OSC2024tokyospring.pdf
+ 196,OSC2024大阪, http://www.re.soum.co.jp/~jun/OSC2024osaka.pdf 
+ 195,OSC2023福岡, http://www.re.soum.co.jp/~jun/OSC2023fukuoka.pdf
+ 194,OSC2023新潟, http://www.re.soum.co.jp/~jun/OSC2023niigata.pdf
+ 193,OSC2023広島, http://www.re.soum.co.jp/~jun/OSC2023hiroshima.pdf
+ 192, KOF2023 ,http://www.re.soum.co.jp/~jun/KOF2023.pdf
+ 191,OSC2023島根,http://www.re.soum.co.jp/~jun/OSC2023shimane.pdf
+ 190,OSC2023東京秋,http://www.re.soum.co.jp/~jun/OSC2023tokyofall.pdf
+ZZ 189,ODC2023,http://www.re.soum.co.jp/~jun/ODC2023.pdf 
+ 188,OSC2023京都,http://www.re.soum.co.jp/~jun/OSC2023kyoto.pdf
+ 187,OSC2023北海道,http://www.re.soum.co.jp/~jun/OSC2023hokkaido.pdf
+
+旅費
+--------
+
+横浜からの旅費(=交通費＋宿泊費),機材配送費,資料印刷費実費をまとめています。機材配送はヤマトの「スマホでかんたん発送」サービスを利用しています。
+
+.. csv-table::
+ :widths: 10 50 30 20
+ 
+ 月,イベント,旅費,機材配送
+ 2020/1,OSC大阪,26080,1469
+ 2023/5,OSC名古屋,19300,0
+ 2023/6,OSC北海道,45392,3891
+ 2023/7,OSC京都,25004,3618
+ 2023/10,OSC島根,56603,0
+ 2023/11,KOF/OSC広島,59459,0
+ 2023/11,OSC新潟,20958,0
+ 2023/12,OSC福岡,37960,3720
+ 2024/1,OSC大阪,28464,0
+ 2024/5,OSC名古屋,20440,0
+ 2024/6,OSC北海道,35993,4091
+
+2024年
+-------------
+
+OSCは2024/1/27のOSC Online大阪(https://event.ospn.jp/osc2024-osaka/)からはじまります。ブース展示/ミーティング時間での発表を歓迎します。
+
