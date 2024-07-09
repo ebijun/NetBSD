@@ -684,6 +684,8 @@ LUNA年表　- 月の刃
  2024/3,井,nono-0.7.1リリース
  2024/5,井,nono-0.7.2リリース
  2024/5,青,OSC2024NagoyaでLUNA88K展示 [192]_
+ 2024/7,井,nono-0.7.3リリース
+
 
 最近のLUNA
 ----------------
@@ -741,7 +743,8 @@ pkgsrc on Luna88K/OpenBSD
 
 Luna88K/OpenBSD 上で、pkgsrcを使っていくつかパッケージを作ってみました。
 
-<pre>
+::
+
  nono88k# ls /usr/pkgsrc/packages/All/
  bash-5.2.21nb1.tgz         libiconv-1.17.tgz          pcre2-10.42.tgz
  bison-3.8.2nb1.tgz         libidn2-2.3.4.tgz          perl-5.38.2.tgz
@@ -754,7 +757,6 @@ Luna88K/OpenBSD 上で、pkgsrcを使っていくつかパッケージを作っ�
  gmake-4.4.1.tgz            ncurses-6.4.tgz            xz-5.4.5.tgz
  grep-3.11.tgz              ncursesw-6.4.tgz           zlib-1.2.13.tgz
  libfetch-2.39nb2.tgz       nghttp2-1.58.0nb1.tgz
-</pre>
 
 .. csv-table:: 失敗する主なパッケージ
 
