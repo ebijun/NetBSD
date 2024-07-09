@@ -33,7 +33,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.7.2
+ DISTNAME=       nono-0.7.3
 
 チェックサム作成
 ------------------
@@ -41,9 +41,8 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum  
- -rw-r--r--  1 jun  wheel  1164 May 14 18:04 Makefile
- -rw-r--r--  1 jun  wheel   306 May 14 18:04 PLIST
- -rw-r--r--  1 jun  wheel   558 May 14 18:05 distinfo
+ -rw-r--r--  1 jun  wheel  1164 Jul  9 10:00 Makefile
+ -rw-r--r--  1 jun  wheel   304 Jul  9 10:01 distinfo
 
 make package して動作を確認します。
  
@@ -71,19 +70,26 @@ commit
 
  cvs commit 
 
- nono: update to 0.7.2. 
+ nono: update to 0.7.3.
 
- 0.7.2 (2024/05/11)
+ 0.7.3 (2024/07/03)
 
- m68k(Update): "Improve ATC and TT search performance about 10%."
- vm(Update): "Implement a burst transfer on LUNA and virt-m68k. It improves the performance of m68k by about 6-10% and m88
-k by about 3%. (X68030 hardware doesn't support the burst transfer)"
- vm(Update): "Improve performance of whole virt-m68k and virtio-block slightly."
- vm(Update): "Minor adjustment for scheduler monitor and 88100 register monitor."
- vm(Update): "Change unit to 2MB/char on X68030 access stat monitor to be consistent with other VMs."
- vm(New): "Implement performance measurement gimic on virt-m68k."
- m68k(Fix): "Fix problem that "Restart VM" sometimes causes app termination since ver 0.6.3."
-
+ vm(Fix): "Fix problem that resetting on LUNA-88K sometimes stops the scheduler."
+ vm(Fix): "Fix problem that MSX-DOS mode immediately exits since er 0.7.0."
+ vm(Fix): "Fix problem that the real PROM image could not access SPC correctly on LUNA-I since ver 0.7.0."
+ vm(Fix): "Make an error if the directory specified by windrv-path does not exist on startup."
+ vm(Fix): "Fix problem that the renderer runs excessively."
+ vm(New): "X68030 Contrast rendering now can use NEON on aarch64."
+ vm(New): "Implement SSG (YM2149) registers only (It doesn't work yet)."
+ vm(Update): "Mainview scaling is now done by the renderer thread."
+ vm(Update): "Display register addresses on the SPC monitor."
+ vm(Update): "Change several SCSI internal structures. No functional changes intended."
+ vm(Update): "Various internal improvements. No functional changes intended."
+ m68k(Update): "Put back the number of ATC lines to 22. It improves the performance about 2%."
+ GUI(New): "Make the access status monitor graphical."
+ GUI(Update): "Change whole bitmap internal structures. No functional changes intended."
+ GUI(Update): "Improve scaling performance at preset magnification by 3-5 times."
+ vm(New): "Allow CPU affinity configuration for debugging and evaluation." 
 
 doc をcommit します
 ---------------------
@@ -93,9 +99,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 0.7.2
+ doc: Updated emulators/nono to 0.7.3
  
  cvs diff -u CHANGES-2024
  
-        Updated emulators/nono to 0.7.2 [jun 2024-05-14]
+        Updated emulators/nono to 0.7.3 [jun 2024-07-09]
 
