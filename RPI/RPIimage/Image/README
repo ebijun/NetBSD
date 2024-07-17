@@ -1,27 +1,31 @@
-VERSION: :1,$s/2024-06-24/2024-06-24/g
-ISO:     :1,$s/202406221720Z/202406221720Z/g
-NetBSD:  :1,$s/10.99.10/10.99.10/g
-PKGSRC:  :1,$s/2024-06-24/2022/
+VERSION: :1,$s/2024-07-18/2024-07-18/g
+ISO:     :1,$s/202407170200Z/202407170200Z/g
+NetBSD:  :1,$s/10.99.11/10.99.11/g
+PKGSRC:  :1,$s/2024-07-18/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2024-06-24-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2024-07-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2024-06-24-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2024-07-18-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-06-24-earmv6hf/2024-06-24-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-06-24-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-07-18-earmv6hf/2024-07-18-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-07-18-earmv6hf/MD5
 
 Update:
-- NetBSD 10.99.10 evbarm-earmv6hf 202406221720Z rpi.img from nyftp.
-- gcc12.3
+- NetBSD 10.99.11 evbarm-earmv6hf 202407170200Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
   # mlterm-wscons
   # sayaka --local misskey.io 
 - rust build ok: rust-1.76.0nb3.tgz
+
+add earmv6hf to pkgsrc/lang/rust/platform.mk:
+
+.if ${OPSYS} == "NetBSD" && (${MACHINE_ARCH} == "aarch64" || ${MACHINE_ARCH} == "earmv7hf" || ${MACHINE_ARCH} == "earmv6hf")
+
 - armv6 on QEMU (was Re: armv6 support for rust)
   http://mail-index.netbsd.org/tech-pkg/2022/10/21/msg026888.html
 - Re: Raspberry Pi camera under NetBSD current
@@ -30,9 +34,10 @@ Update:
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-commit bfbba6aa9ecc16d44c571ad00b4650ae10c939f6 
+commit 8d5579c475569d1cacf6f386122c050ab09e69b0 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Fri Jun 21 15:56:17 2024 +0100
+Date:   Tue Jul 16 14:09:52 2024 +0100
+    kernel: Bump to 6.6.40
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
@@ -72,21 +77,15 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- dhcpcd-10.0.8 g++-12.3.0 gcc-12.3.0 libstdc++-9.1 pkg_install-20240307
- sh-20220122-20240622133654Z tcsh-6.24.13
- 
+ g++-12.4.0 gcc-12.4.0 libdrm-3.8 libssh-47.0 NetBSD-10.99.11 openssh-9.8
+ opensshd-9.8 sh-20220122-20240716224510Z userland-NetBSD-10.99.11/evbarm
+
 pkgsrc:
- curl-8.8.0nb1 dav1d-1.4.2 dillo-3.1.1 fossil-2.24nb1 fribidi-1.0.15
- gd-2.3.3nb13 git-base-2.45.2 glib2-2.80.3 gnutls-3.8.5nb3 gtk2+-2.24.33nb20
- gtk3+-3.24.42nb1 harfbuzz-8.5.0 icewm-3.5.0 icu-75.1 imlib2-1.12.2 libaom-3.9.0
- libde265-1.0.15 libepoll-shim-0.0.20240608 libheif-1.17.6nb1 libproxy-0.5.6nb2
- libxkbcommon-1.7.0nb2 libxml2-2.12.4nb1 libxslt-1.1.39nb1 m17n-lib-1.8.0nb16
- medit-1.2.0nb31 mlterm-3.9.3nb10 mozilla-rootcerts-1.0.20240607 nettle-3.10
- nghttp2-1.62.1nb1 pcre2-10.44 pkgin-23.8.1nb4 python311-3.11.9nb1
- qt5-qtbase-5.15.14nb1 qt5-qtx11extras-5.15.14 qt5-qtxmlpatterns-5.15.14nb1
- ruby32-mini_portile2-2.8.7 ruby32-nokogiri-1.16.6 ruby32-public_suffix-5.1.0
- shared-mime-info-2.4nb1 svt-av1-1.8.0 tcsh-6.24.13 wayland-1.23.0
- wget-1.24.5nb2 x265-3.6
+ dav1d-1.4.3 fltk-1.3.9nb2 gd-2.3.3nb14 gdk-pixbuf2-2.42.12 gnutls-3.8.6
+ harfbuzz-9.0.0 icewm-3.6.0 libaom-3.9.1 libcups-2.4.10 libgpg-error-1.50
+ libproxy-0.5.7 libxml2-2.12.8 libxslt-1.1.42 m17n-lib-1.8.0nb17
+ mlterm-3.9.3nb11 mozilla-rootcerts-1.0.20240702 p11-kit-0.25.5 pango-1.54.0
+ qt5-qtx11extras-5.15.14nb1 raqm-0.10.1 sayaka-3.7.6 uim-1.8.9nb11
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -138,7 +137,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-06-24-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-07-18-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -367,7 +366,7 @@ http://www.jp.NetBSD.org/
 https://www.facebook.com/NetBSD.jp 
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2023.rst
 
-- NetBSD 10.99.10 earmv6hf rpi.img.gz base
+- NetBSD 10.99.11 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
