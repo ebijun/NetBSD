@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.0_STABLE (GENERIC) #0: Sat May  4 12:05:45 UTC 2024
+NetBSD 10.0_STABLE (GENERIC) #0: Wed Jul  3 19:16:46 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 8031 MB
 avail memory = 7743 MB
@@ -39,15 +39,15 @@ acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <  Sony,    VAIO,20090522>, AslId <MSFT,00010013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFEAE74210F988 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF855CC4D0D988 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFEAE613C93008 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0xFFFF855B96893008 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFEAE613B0EE88 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF855B9670EE88 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFEAE613C55388 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF855B96855408 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
-timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
 timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
 acpiec0 at acpi0 (EC, PNP0C09): io 0x62,0x66
@@ -220,11 +220,11 @@ acpicpu0: T4: I/O, lat   1 us, pow     0 mW,  52 %
 acpicpu0: T5: I/O, lat   1 us, pow     0 mW,  40 %
 acpicpu0: T6: I/O, lat   1 us, pow     0 mW,  28 %
 acpicpu0: T7: I/O, lat   1 us, pow     0 mW,  16 %
-coretemp0 at cpu0: thermal sensor, 1 C resolutioncoretemp0: autoconfiguration error: WARNING: Tjmax(0) might exceeded the limit.
-, Tjmax=0
+coretemp0 at cpu0: thermal sensor, 1 C resolution
+coretemp0: autoconfiguration error: WARNING: Tjmax(0) retrieved was below expected range, using default (100).
 acpicpu1 at cpu1: ACPI CPU
-coretemp1 at cpu1: thermal sensor, 1 C resolutioncoretemp1: autoconfiguration error: WARNING: Tjmax(0) might exceeded the limit.
-, Tjmax=0
+coretemp1 at cpu1: thermal sensor, 1 C resolution
+coretemp1: autoconfiguration error: WARNING: Tjmax(0) retrieved was below expected range, using default (100).
 fwohci0: BUS reset
 fwohci0: node_id=0xc800ffc0, gen=1, CYCLEMASTER mode
 ieee1394if0: 1 nodes, maxhop <= 0 cable IRM irm(0) (me)
@@ -248,16 +248,19 @@ uhub6 at usb6: NetBSD (0x0000) UHCI root hub (0x0000), class 9/0, rev 1.00/1.00,
 uhub6: 2 ports with 2 removable, self powered
 uhub7 at usb7: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub7: 6 ports with 6 removable, self powered
-ahcisata0 port 0: device present, speed: 1.5Gb/s
+ahcisata0 port 0: device present, speed: 3.0Gb/s
 ahcisata0 port 1: device present, speed: 1.5Gb/s
 uvideo0 at uhub3 port 2 configuration 1 interface 0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
 video0 at uvideo0: Chicony Electronics Co., Ltd. (0x04f2) product b14e (0xb14e), rev 2.00/41.12, addr 2
 wd0 at atabus0 drive 0
-wd0: <TOSHIBA MK5055GSX>
+wd0: <CSSD-S6L2TMGAX 2TB>
 wd0: drive supports 16-sector PIO transfers, LBA48 addressing
-wd0: 465 GB, 969021 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
-wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100), WRITE DMA FUA, NCQ (32 tags)
-wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA), NCQ (31 tags)
+wd0: 1907 GB, 3969045 cyl, 16 head, 63 sec, 512 bytes/sect x 4000797360 sectors
+wd0: GPT GUID: db17ffb1-81ad-4490-8d2e-b2856aa7e1c1
+dk0 at wd0: "a9f1f7e4-b6ab-4114-b21b-3242b89b2a08", 3984347136 blocks at 2048, type: ffs
+dk1 at wd0: "ad410801-b28c-41ac-a65a-bb789c3deb29", 16448143 blocks at 3984349184, type: swap
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags)
 atapibus0 at atabus1: 1 targets
 cd0 at atapibus0 drive 0: <HL-DT-ST DVDRAM GT20N, 905HN033373, CS07> cdrom removable
 cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133)
@@ -265,12 +268,13 @@ cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (
 swwdog0: software watchdog initialized
 WARNING: 2 errors while detecting hardware; check system log.
 boot device: wd0
-root on wd0a dumps on wd0b
+root on dk0 dumps on dk1
 root file system type: ffs
 kern.module.path=/stand/amd64/10.0/modules
 [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
+WARNING: clock gained 2 days
 [drm] Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
 intelfb0 at i915drmkms0
 [drm] DRM_I915_DEBUG enabled
@@ -284,4 +288,3 @@ wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
-acpibat0: normal capacity on 'charge state'
