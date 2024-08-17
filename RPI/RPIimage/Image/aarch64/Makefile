@@ -6,7 +6,7 @@ ARCH=aarch64
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 #NetBSD-current
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202406180510Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202407150120Z/evbarm-aarch64/binary
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2024/
 
 #NetBSD10
@@ -41,8 +41,8 @@ VND=vnd0
 MNT_BOOT=/mnt1
 MNT_ROOT=/mnt2
 VND_ORG=vnd1
-DK_BOOT=/dev/dk0
-DK_ROOT=/dev/dk1
+DK_BOOT=/dev/dk2
+DK_ROOT=/dev/dk3
 ORG_BOOT=/mnt3
 ORG_ROOT=/mnt4
 DK_RELEASE=`dkctl ${VND} listwedges|grep ffs |awk -F: '{print $$1}'`

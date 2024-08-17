@@ -12,7 +12,7 @@
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202406221720Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202407160300Z/evbarm-earmv7hf/binary
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2024/
 
@@ -36,10 +36,10 @@ KERNEL7=${BINARY}/kernel/netbsd-RPI2.gz
 LIST=man modules xbase xcomp xetc xfont xserver 
 
 #Firmware: 
-#commit 5c83250276c4fa9d79a93ebc5a739a5ab6a4d6a7 (HEAD -> master, origin/master, origin/HEAD)
+#commit 8d5579c475569d1cacf6f386122c050ab09e69b0 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Mon May 20 15:37:10 2024 +0100
-#    kernel: Bump to 6.6.31
+#Date:   Tue Jul 16 14:09:52 2024 +0100
+#    kernel: Bump to 6.6.40
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup4.dat fixup4cd.dat fixup4db.dat fixup4x.dat fixup_cd.dat fixup_db.dat fixup_x.dat start.elf start4.elf start4cd.elf start4db.elf start4x.elf start_cd.elf start_db.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
