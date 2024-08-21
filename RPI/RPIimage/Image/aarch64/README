@@ -1,18 +1,18 @@
-VERSION: :1,$s/2024-07-16/2024-07-16/g
-ISO:     :1,$s/202407150120Z/202407150120Z/g
+VERSION: :1,$s/2024-08-21/2024-08-21/g
+ISO:     :1,$s/202408190930Z/202408190930Z/g
 NetBSD:  :1,$s/10.99.11/10.99.11/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2024-07-16-netbsd-raspi-aarch64.img
+Subject: 2024-08-21-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2024-07-16-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2024-08-21-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-07-16-aarch64/2024-07-16-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-07-16-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-08-21-aarch64/2024-08-21-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-08-21-aarch64/MD5
 
 Topics:
 - [Researching] RPI5: not booting yet
@@ -24,14 +24,10 @@ Topics:
     config.txt.rpi5-uefi
     bcm2712-rpi-5-b.dtb
 
-- pkgsrc/www/firefox
- 120.X start failed
- 119.X works well 
 - [Test] Firmware update /boot/fixup4*.dat,start4*.elf
-commit 361c1b238f47352b5dc8f7fab7ac8c5693c730f6
+commit 6b029c7772b5d29a50a07c477a808a7effb0a373 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Tue Jun 18 11:30:43 2024 +0100
-    kernel: Bump to 6.6.34
+Date:   Tue Aug 13 14:42:23 2024 +0100
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
@@ -63,16 +59,15 @@ bwfm0: autoconfiguration error: NVRAM file not available
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2024
   and pkgin update
 
+y
 sysinfo:
- g++-12.4.0 gcc-12.4.0 libdrm-3.8 libssh-47.0 NetBSD-10.99.11 openssh-9.8
- opensshd-9.8 sh-20220122-20240714194334Z userland-NetBSD-10.99.11/evbarm
+ awk-20240728 libc-12.222 ntp-4.2.8pl18 sh-20220122-20240819082832Z
 
 pkgsrc:
- dav1d-1.4.3 dillo-3.1.1 fltk-1.3.9nb2 gd-2.3.3nb14 gdk-pixbuf2-2.42.12
- gnutls-3.8.6 harfbuzz-9.0.0 icewm-3.6.0 libaom-3.9.1 libcups-2.4.10
- libgpg-error-1.50 libproxy-0.5.7 libxml2-2.12.8 libxslt-1.1.42
- m17n-lib-1.8.0nb17 mlterm-3.9.3nb11 mozilla-rootcerts-1.0.20240702 nettle-3.10
- p11-kit-0.25.5 pango-1.54.0 raqm-0.10.1 ruby32-nokogiri-1.16.6
+ curl-8.9.1 git-base-2.46.0 glib2-2.80.4 gtk3+-3.24.43 jpeg-9f libgcrypt-1.11.0
+ libheif-1.18.2 libimagequant-4.3.3 libproxy-0.5.8 libxml2-2.12.9 lz4-1.10.0
+ mbedtls-2.28.8 ruby32-addressable-2.8.7 ruby32-base-3.2.5
+ ruby32-nokogiri-1.16.7 ruby32-public_suffix-6.0.1 sayaka-3.7.7
 
 RPI4 status:
 - boot via UEFI_VER=v1.37
@@ -93,7 +88,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.11 evbarm-aarch64 202407150120Z arm64.img from nyftp.
+- NetBSD-current 10.99.11 evbarm-aarch64 202408190930Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
