@@ -6,7 +6,7 @@ ARCH=aarch64
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 #NetBSD-current
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202407150120Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202408190930Z/evbarm-aarch64/binary
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2024/
 
 #NetBSD10
@@ -28,10 +28,9 @@ RPI5_UEFI=RPI5
 
 #Firmware:
 #git show HEAD |head
-#commit 361c1b238f47352b5dc8f7fab7ac8c5693c730f6
+#commit 6b029c7772b5d29a50a07c477a808a7effb0a373 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Tue Jun 18 11:30:43 2024 +0100
-#    kernel: Bump to 6.6.34
+#Date:   Tue Aug 13 14:42:23 2024 +0100
 
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
