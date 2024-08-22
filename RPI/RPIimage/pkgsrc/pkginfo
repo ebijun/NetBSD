@@ -5,7 +5,7 @@ atk-2.38.0nb1       Set of interfaces for accessibility
 bash-5.2.26nb1      The GNU Bourne Again Shell
 brotli-1.1.0        Generic-purpose lossless compression algorithm
 cairo-1.18.0nb2     Vector graphics library with cross-device output support
-curl-8.8.0nb1       Client that groks URLs
+curl-8.9.1          Client that groks URLs
 dav1d-1.4.3         AV1 decoder library
 dbus-1.14.10        Message bus system
 digest-20220214     Message digest wrapper utility
@@ -19,15 +19,15 @@ fribidi-1.0.15      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.3.3nb14        Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.42.12 Library for image loading and manipulation
 giflib-5.2.1nb6     GIF image format library
-git-base-2.45.2     GIT Tree History Storage Tool (base package)
-glib2-2.80.3        Some useful routines for C programming (glib2)
+git-base-2.46.0     GIT Tree History Storage Tool (base package)
+glib2-2.80.4        Some useful routines for C programming (glib2)
 gmp-6.3.0           Library for arbitrary precision arithmetic
 gnutls-3.8.6        Transport Layer Security library
 gobject-introspection-1.80.1nb2 GObject Introspection
 graphite2-1.3.14nb3 Cross-platform rendering for complex writing systems
 gsettings-desktop-schemas-40.0nb2 Collection of GSettings schemas for the GNOME desktop
 gtk2+-2.24.33nb20   GIMP Toolkit v2 - libraries for building X11 user interfaces
-gtk3+-3.24.42nb1    GIMP Toolkit v3 - libraries for building X11 user interfaces
+gtk3+-3.24.43       GIMP Toolkit v3 - libraries for building X11 user interfaces
 harfbuzz-9.0.0      OpenType text shaping engine
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
 icewm-3.6.0         Small, fast and light-weight window manager
@@ -35,7 +35,7 @@ icu-75.1            Robust and full-featured Unicode services
 imlib2-1.12.2       Image manipulation library
 jbigkit-2.1nb1      JBIG-KIT lossless image compression library
 jisx0213fonts-0.0nb2 X11 bitmap fonts for JIS X 0213
-jpeg-9e             IJG's jpeg compression utilities
+jpeg-9f             IJG's jpeg compression utilities
 libXft-2.3.8nb1     Library for configuring and customizing font access
 libaom-3.9.1        Library for using AV1, video coding format
 libcups-2.4.10      Common UNIX Printing System library
@@ -44,29 +44,29 @@ libduktape-2.7.0    Embeddable Javascript engine library
 libepoll-shim-0.0.20240608 Small epoll implemented using kevent
 libffi-3.4.6        Foreign function interface
 libgcroots-0.2.3    Garbage collector supporting library
-libgcrypt-1.10.3    GNU cryptographic library
+libgcrypt-1.11.0    GNU cryptographic library
 libgpg-error-1.50   Definitions of common error values for all GnuPG components
-libheif-1.17.6nb1   HEIF and AVIF file format decoder and encoder library
+libheif-1.18.2      HEIF and AVIF file format decoder and encoder library
 libidn2-2.3.7       Convert internationalized domain names to/from ASCII Encoding
 libotf-0.9.16nb4    Library for handling OpenType fonts (OTF)
 libpaper-2.2.5      Paper size handling library
-libproxy-0.5.7      Library that provides automatic proxy configuration management
+libproxy-0.5.8      Library that provides automatic proxy configuration management
 libpsl-0.21.5       Library to handle the Public Suffix List
 libtasn1-4.19.0     ASN.1 structure parser library
-libunistring-1.1    Unicode string library
+libunistring-1.2    Unicode string library
 libuuid-2.32.1nb2   Generate unique identifiers for objects
 libwebp-1.4.0       WebP image format library and tools
 libxkbcommon-1.7.0nb2 Library to handle keyboard descriptions
-libxml2-2.12.8      XML parser library from the GNOME project
+libxml2-2.12.9      XML parser library from the GNOME project
 libxslt-1.1.42      XSLT parser library
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
 lintpkgsrc-2022.09.29 Sanity checks on the complete pkgsrc tree
 lrzsz-0.12.20nb1    Receive/Send files via X/Y/ZMODEM protocol.  (unrestrictive)
-lz4-1.9.4           Extremely Fast Compression algorithm
+lz4-1.10.0          Extremely Fast Compression algorithm
 lzo-2.10            Portable lossless data compression library
 m17n-db-1.8.0       The m17n database used by the m17n library
 m17n-lib-1.8.0nb17  Multilingualization library
-mbedtls-2.28.3nb1   Lightweight, modular cryptographic and SSL/TLS library (2.x branch)
+mbedtls-2.28.8      Lightweight, modular cryptographic and SSL/TLS library (2.x branch)
 md4c-0.5.2          Markdown for C library and parser
 medit-1.2.0nb31     Programming and around-programming text editor
 mlterm-3.9.3nb11    Multilingual terminal emulator
@@ -87,9 +87,9 @@ qt5-qtx11extras-5.15.14nb1 Qt5 module for X11 extras
 qt5-qtxmlpatterns-5.15.14nb1 Qt5 module for XML Patterns
 raqm-0.10.1         Library for complex text layout
 raspberrypi-userland-20170109nb3 Various libraries for the Raspberry Pi
-ruby32-addressable-2.8.5 Replacement for the URI Implementation of standard librrary
+ruby32-addressable-2.8.7 Replacement for the URI Implementation of standard librrary
 ruby32-atk-4.2.2    Ruby binding of ATK-1.0.x or later
-ruby32-base-3.2.4   Ruby 3.2.4 release minimum base package
+ruby32-base-3.2.5   Ruby 3.2.5 release minimum base package
 ruby32-cairo-1.17.12nb3 Ruby bindings for cairo
 ruby32-cairo-gobject-4.2.2 Ruby binding of cairo-gobject
 ruby32-delayer-1.2.1 Ruby module to delay the processing
@@ -110,16 +110,17 @@ ruby32-mikutter-5.0.7nb2 Simple, powerful, and moeful twitter client
 ruby32-mini_portile2-2.8.7 Simple autoconf builder for developers
 ruby32-moneta-1.6.0 Unified interface to key/value stores
 ruby32-native-package-installer-1.1.9 Helper to install native packages on "gem install"
-ruby32-nokogiri-1.16.6 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby32-nokogiri-1.16.7 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby32-pango-4.2.2  Ruby binding of pango-1.x
 ruby32-pkg-config-1.5.6 Pure Ruby implementation of pkg-config
 ruby32-pluggaloid-1.7.0 Extensible plugin system for mikutter
-ruby32-public_suffix-5.1.0 Domain name parser based on the Public Suffix List
+ruby32-public_suffix-6.0.1 Domain name parser based on the Public Suffix List
 ruby32-red-colors-0.4.0 Wide array of features for dealing with colors
 ruby32-text-1.3.1   Collection of text algorithms for Ruby
 ruby32-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
-sayaka-3.7.6        Terminal specific Misskey client
+sayaka-3.7.7        Terminal specific Misskey client
 shared-mime-info-2.4nb1 Core database of common types
+sqlite3-3.46.1      SQL Database Engine in a C Library
 sudo-1.9.15p5       Allow others to run commands as root
 svt-av1-1.8.0       Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder)
 tcsh-6.24.13        Extended C-shell with many useful features
