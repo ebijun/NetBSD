@@ -1,48 +1,36 @@
-VERSION: :1,$s/2024-07-17/2024-07-17/g
-ISO:     :1,$s/202407160300Z/202407160300Z/g
+VERSION: :1,$s/2024-08-22/2024-08-22/g
+ISO:     :1,$s/202408210350Z/202408210350Z/g
 NetBSD:  :1,$s/10.99.11/10.99.11/g
-PKGSRC:  :1,$s/2024-07-17/2024-07-17/g
+PKGSRC:  :1,$s/2024-08-22/2024-08-22/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2024-07-17-netbsd-armv7-earmv7hf.img
+Subject: 2024-08-22-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2024-07-17-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2024-08-22-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-07-17-earmv7hf/2024-07-17-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-07-17-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-08-22-earmv7hf/2024-08-22-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-08-22-earmv7hf/MD5
 
 Update:
-- NetBSD 10.99.11 evbarm-armv7hf 202407160300Z armv7.img from nyftp.
+- NetBSD 10.99.11 evbarm-armv7hf 202408210350Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 - Firmware:
-commit 8d5579c475569d1cacf6f386122c050ab09e69b0 (HEAD -> master, origin/master, origin/HEAD)
+commit 6b029c7772b5d29a50a07c477a808a7effb0a373 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Tue Jul 16 14:09:52 2024 +0100
-    kernel: Bump to 6.6.40
+Date:   Tue Aug 13 14:42:23 2024 +0100
     
 sysinfo:
- dhcpcd-10.0.8 g++-12.4.0 gcc-12.4.0 libdrm-3.8 libssh-47.0 libstdc++-9.1
- NetBSD-10.99.11 openssh-9.8 opensshd-9.8 pkg_install-20240307
- sh-20220122-20240715192530Z tcsh-6.24.13 userland-NetBSD-10.99.11/evbarm
+ awk-20240728 libc-12.222 ntp-4.2.8pl18 sh-20220122-20240820224529Z
 
 pkgsrc:
- curl-8.8.0nb1 dav1d-1.4.3 dillo-3.1.1 fltk-1.3.9nb2 fossil-2.24nb1
- fribidi-1.0.15 gd-2.3.3nb14 gdk-pixbuf2-2.42.12 git-base-2.45.2 glib2-2.80.3
- gnutls-3.8.6 gtk2+-2.24.33nb20 gtk3+-3.24.42nb1 harfbuzz-9.0.0 icewm-3.6.0
- icu-75.1 imlib2-1.12.2 libaom-3.9.1 libcups-2.4.10 libde265-1.0.15
- libepoll-shim-0.0.20240608 libgpg-error-1.50 libheif-1.17.6nb1 libproxy-0.5.7
- libxkbcommon-1.7.0nb2 libxml2-2.12.8 libxslt-1.1.42 m17n-lib-1.8.0nb17
- medit-1.2.0nb31 mlterm-3.9.3nb11 mozilla-rootcerts-1.0.20240702 nettle-3.10
- nghttp2-1.62.1nb1 p11-kit-0.25.5 pango-1.54.0 pcre2-10.44 pkgin-23.8.1nb4
- python311-3.11.9nb1 qt5-qtbase-5.15.14nb1 qt5-qtx11extras-5.15.14nb1
- qt5-qtxmlpatterns-5.15.14nb1 raqm-0.10.1 ruby32-mini_portile2-2.8.7
- ruby32-nokogiri-1.16.6 ruby32-public_suffix-5.1.0 sayaka-3.7.6
- shared-mime-info-2.4nb1 svt-av1-1.8.0 tcsh-6.24.13 uim-1.8.9nb11 wayland-1.23.0
- wget-1.24.5nb2 x265-3.6
+ curl-8.9.1 git-base-2.46.0 glib2-2.80.4 gtk3+-3.24.43 jpeg-9f libgcrypt-1.11.0
+ libheif-1.18.2 libproxy-0.5.8 libxml2-2.12.9 lz4-1.10.0
+ ruby32-addressable-2.8.7 ruby32-base-3.2.5 ruby32-nokogiri-1.16.7
+ ruby32-public_suffix-6.0.1 sayaka-3.7.7
 
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2024/
