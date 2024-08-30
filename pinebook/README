@@ -1,18 +1,20 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20240722)
+Subject: pinebook status update (20240830)
 
 NetBSD Arm Bootable Images: NetBSD9/NetBSD10/NetBSD-current
  https://www.armbsd.org
 
 Update:
- g++-12.4.0
- gcc-12.4.0
- NetBSD-10.99.11
- openssh-9.8
- firefox-128.0 -- failed.
- libreoffice-24.2.4.2 -- failed
- rust-1.76.0nb1
  
+ libc-12.222
+ NetBSD-10.99.12
+ firefox-129.0.2 -? stable on 115
+ gcc12-12.4.0
+ libstemmer-2.2.0nb1
+ python312-3.12.5
+ rust-1.79.0
+ xnp2-0.86nb26
+
 Problems: 
 - pinebook: 
   Using audio interface,rebooting.
@@ -116,38 +118,59 @@ ToDo:
  - internal WiFi
 
 sysinfo:
- g++-12.4.0 gcc-12.4.0 libdrm-3.8 libssh-47.0 NetBSD-10.99.11 openssh-9.8
- opensshd-9.8 sh-20220122-20240719044813Z userland-NetBSD-10.99.11/evbarm
- 
+ awk-20240728 libc-12.222 NetBSD-10.99.12 ntp-4.2.8pl18 pkg_install-20240826
+ sh-20220122-20240828065017Z userland-NetBSD-10.99.12/evbarm
+
 pkgsrc:
- ImageMagick-7.1.1.35 SDL2-2.30.5 abseil-20240116.2nb1 alsa-lib-1.2.12
- apache-2.4.62 assimp-5.4.2 cdk-5.0.20240619nb1 clang-18.1.8 cmake-3.30.1
- cups-base-2.4.10 dav1d-1.4.3 emacs26-26.3nb40 exiv2-0.28.3 ffmpeg7-7.0.1nb1
- firefox-128.0 firefox-l10n-128.0 fltk-1.3.9nb2 fmtlib-11.0.1
- gcc12-libs-12.4.0nb1 gd-2.3.3nb14 gdbus-codegen-2.80.4 gdk-pixbuf2-2.42.12
- glib2-2.80.4 glib2-tools-2.80.4 gnutls-3.8.6 go-1.22.5 go121-1.21.12
- go122-1.22.5 googletest-1.15.0 graphviz-12.0.0nb1 gst-plugins1-bad-1.24.5
- gst-plugins1-base-1.24.5 gst-plugins1-good-1.24.5 gstreamer1-1.24.5
- gtk3+-3.24.43 harfbuzz-9.0.0 harfbuzz-icu-9.0.0 icewm-3.6.0 kbookmarks-5.116.0
- kdewebkit-5.116.0 kio-5.116.0 kparts-5.116.0 kxmlgui-5.116.0 ldb-2.9.1
- libaom-3.9.1 libass-0.17.3 libcups-2.4.10 libgpg-error-1.50 libgsf-1.14.52
- libksba-1.6.7 libproxy-0.5.7 libreoffice-24.2.4.2 librsvg-2.58.1
- libsecret-0.20.5 libsixel-1.8.6nb21 libunwind-18.1.8 libupnp-1.14.19
- libva-2.22.0 libxslt-1.1.42 llvm-18.1.8 lua54-5.4.7 m17n-lib-1.8.0nb17
- mate-panel-1.26.6 meson-1.5.0 mkvtoolnix-86.0nb1 mlterm-3.9.3nb11
- mozilla-rootcerts-1.0.20240702 mozilla-rootcerts-openssl-2.16 nginx-1.26.1nb2
- nodejs-22.4.1 nss-3.102 osabi-NetBSD-10.99.11 p11-kit-0.25.5
- p5-IO-Socket-SSL-2.087 pango-1.54.0 pinentry-1.3.1 pixman-0.43.4
- portaudio-190700.20210406 protobuf-27.2 py-cairo-shared-1.26.1
- py311-Pillow-10.4.0nb1 py311-cairo-1.26.1 py311-certifi-2024.7.4
- py311-importlib-metadata-8.0.0 py311-libxslt-1.1.42 py311-pdf-4.3.0
- py311-pip-24.1.2 py311-puremagic-1.26 py311-setuptools-70.3.0
- py311-zstandard-0.23.0 qt6-qtbase-6.7.2 qt6-qtdeclarative-6.7.2
- qt6-qtimageformats-6.7.2 qt6-qtlanguageserver-6.7.2 qt6-qtmultimedia-6.7.2
- qt6-qtquick3d-6.7.2 qt6-qtquicktimeline-6.7.2 qt6-qtshadertools-6.7.2
- qt6-qtsvg-6.7.2 raqm-0.10.1 rclone-1.65.0nb6 rust-1.66.1 samba-4.20.2
- vala-0.56.17nb1 webkit-gtk-2.36.8nb15 wxGTK30-3.0.5.1nb16 wxGTK32-3.2.5nb2
- xdg-utils-1.2.1 xfce4-session-4.18.4 xfce4-settings-4.18.6 zziplib-0.13.77
+ SDL2-2.30.6 abseil-20240722.0 akonadi-23.08.4nb3 apache-ant-1.10.14
+ appstream-1.0.3nb2 apr-1.7.5 asciidoc-10.2.1 box2d-2.4.2 caja-1.26.4
+ cmake-3.30.2 cmark-0.31.1 curl-8.9.1nb1 desktop-file-utils-0.27
+ djvulibre-lib-3.5.28 enchant2-2.8.2 ffmpeg6-6.1.2 ffmpeg7-7.0.2 firefox-129.0.2
+ firefox-l10n-129.0.2 firefox52-52.9.0nb69 fluidsynth-2.3.6 fmtlib-11.0.2
+ freetype2-2.13.3 gcc12-12.4.0 gcr-3.40.0 gexiv2-0.14.3
+ ghostscript-agpl-10.03.1nb2 git-base-2.46.0 gnupg2-2.4.5nb3 gnutls-3.8.7.1
+ go-1.22.6 go121-1.21.13 go122-1.22.6 googletest-1.15.2 gpgme-1.23.2nb1
+ graphviz-12.1.0 gst-plugins1-bad-1.24.7 gstreamer1-1.24.7 jpeg-9f
+ json-glib-1.8.0 kdesignerplugin-5.116.0nb1 kdewebkit-5.116.0nb1 kio-5.116.0nb1
+ kparts-5.116.0nb1 kwallet-5.116.0nb1 libadwaita-1.5.2 libassuan-3.0.1
+ libdeflate-1.21 libgcrypt-1.11.0nb1 libheif-1.18.2nb1 libimagequant-4.3.3
+ libinotify-0.0.20240724 libixion-0.19.0nb1 libmtp-1.1.21 libnotify-0.8.3
+ libproxy-0.5.8 libpurple-2.14.13 libreoffice-24.2.5.2nb1 libstemmer-2.2.0nb1
+ libxml2-2.12.9 libxmlb-0.3.14 lz4-1.10.0 marco-1.26.2nb6 mate-1.26.1nb13
+ mate-applets-1.26.1nb11 mate-utils-1.26.1nb5 meson-1.5.1 mpg123-1.32.7
+ nghttp3-1.5.0 nginx-1.26.2 ngtcp2-1.7.0 nodejs-22.7.0 nss-3.103
+ openjdk17-1.17.0.11.9 opusfile-0.12nb3 orc-0.4.39 osg-3.6.5nb54 p5-Clone-0.47
+ p5-HTML-Parser-3.83 p5-IO-Socket-SSL-2.088 p5-IPC-Run3-0.049
+ p5-Mozilla-CA-20240730 p5-Net-DNS-1.46 p5-Scalar-List-Utils-1.65
+ p5-Try-Tiny-0.32 pinentry-1.3.1nb1 pkgconf-2.3.0 pkgdiff-1.12 protobuf-27.3
+ py311-babel-2.16.0 py312-Socks-1.7.1nb1 py312-alabaster-1.0.0
+ py312-anytree-2.12.1 py312-babel-2.16.0 py312-brotli-1.1.0
+ py312-brotlicffi-1.1.0.0 py312-certifi-2024.7.4 py312-cffi-1.17.0
+ py312-charset-normalizer-3.3.2 py312-cparser-2.22nb1
+ py312-cryptography-43.0.0nb1 py312-dbus-1.3.2nb1 py312-docutils-0.21.2
+ py312-idna-3.8 py312-imagesize-1.4.1 py312-importlib-metadata-8.4.0
+ py312-jinja2-3.1.4 py312-libxml2-2.12.9 py312-lxml-5.3.0 py312-markdown-3.7
+ py312-markupsafe-2.1.5 py312-numpy-2.1.0 py312-packaging-24.1
+ py312-py-1.11.0nb1 py312-pygments-2.18.0 py312-pyparsing-3.1.4
+ py312-requests-2.32.3 py312-roman-4.2 py312-setuptools-73.0.1
+ py312-six-1.16.0nb1 py312-snowballstemmer-2.2.0nb1 py312-sphinx-8.0.2
+ py312-sphinxcontrib-applehelp-2.0.0 py312-sphinxcontrib-devhelp-2.0.0
+ py312-sphinxcontrib-htmlhelp-2.1.0 py312-sphinxcontrib-jsmath-1.0.1nb1
+ py312-sphinxcontrib-qthelp-2.0.0 py312-sphinxcontrib-serializinghtml-2.0.0
+ py312-sphinxcontrib-websupport-2.0.0 py312-toml-0.10.2nb3 py312-tomli-2.0.1nb1
+ py312-urllib3-2.2.2 py312-zipp-3.20.1 py312-zstandard-0.23.0 python312-3.12.5
+ rclone-1.67.0 ruby32-addressable-2.8.7 ruby32-atk-4.2.2 ruby32-base-3.2.5
+ ruby32-cairo-1.17.12nb3 ruby32-cairo-gobject-4.2.2 ruby32-gdk3-4.2.2
+ ruby32-gdk_pixbuf2-4.2.2 ruby32-gio2-4.2.2 ruby32-glib2-4.2.2
+ ruby32-gobject-introspection-4.2.2 ruby32-gtk3-4.2.2 ruby32-locale-2.1.4
+ ruby32-mini_portile2-2.8.7 ruby32-native-package-installer-1.1.9
+ ruby32-nokogiri-1.16.7 ruby32-pango-4.2.2 ruby32-pkg-config-1.5.6
+ ruby32-public_suffix-6.0.1 ruby32-red-colors-0.4.0 ruby32-simpleidn-0.2.3
+ ruby32-version_gem-1.1.4 rust-1.79.0 samba-4.20.4 scribus-1.6.2
+ spdlog-1.14.1nb1 sqlite3-3.46.1 svt-av1-2.2.0 sylpheed-3.7.0nb17 taglib-2.0.2
+ tdb-1.4.12 tigervnc-1.14.0.1.20.13 uchardet-0.0.8 unixodbc-2.3.12nb1
+ unzip-6.0nb10 x11-links-1.36 xapian-1.4.26 xnp2-0.86nb26 xterm-393
+ zenity3-3.44.4 zziplib-0.13.78
 
 Tips:
 - System Clocks
@@ -204,7 +227,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 10.99.11 (GENERIC64) #0: Fri Jul 19 04:48:13 UTC 2024  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 10.99.12 (GENERIC64) #0: Wed Aug 28 06:50:17 UTC 2024  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
