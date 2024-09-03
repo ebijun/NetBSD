@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -52,9 +52,10 @@
  2020 Kyoto,8/28-29,320,18,Online
  2021 Kyoto,7/30-31,235,16,Online
  2022 Kyoto,7/29-30,235,14,Online
- 2023 Kyoto,7/22,,,京都リサーチパーク
- 2023 Kyoto,7/29,,,Online
- 
+ 2023 Kyoto,7/22,250,26,京都リサーチパーク
+ 2023 Kyoto,7/29,150,12,Online
+ 2024 Kyoto,7/29,,,京都リサーチパーク
+  
 よく行く店
 ~~~~~~~~~~~~~~
 
@@ -62,8 +63,7 @@
  :widths: 30 20 60
 
  店名,エリア,コメント
- 京都みなみ会館,東寺,頭脳警察/サニーデイサービス 2023/9/30閉館
- 京都醸造,市民防災センター前,潤と大海の蛙とうるわし。かわづと読むこと。
+ 京都醸造,市民防災センター前,18番のバス大宮五条→唐戸町→四条大宮
  麥酒　夢詠ミ,祇園四条駅６番出口,火曜休平日16:30 土日祝15:00 24:00まで
  鈴屋,二条,7:00- モーニング since 1946
  幸福堂,壬生,アイスモナカ&きんつばをおみやげに新選組
@@ -121,6 +121,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
 
+ 200,OSC2024京都,http://www.re.soum.co.jp/~jun/OSC2024kyoto.pdf 
  188,OSC2023京都,http://www.re.soum.co.jp/~jun/OSC2023kyoto.pdf 
  178,OSC2022京都,http://www.re.soum.co.jp/~jun/OSC2022kyoto.pdf
  167,OSC2021京都,http://www.re.soum.co.jp/~jun/OSC2021kyoto.pdf
@@ -142,6 +143,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2024京都 NetBSDブース展示の記録, https://togetter.com/li/2403819
  OSC2023京都 NetBSDブース展示の記録, https://togetter.com/li/2189221
  OSC2022京都 NetBSDブース展示の記録, https://togetter.com/li/1921498
  OSC2021京都 NetBSDブース展示の記録,https://togetter.com/li/1751521
