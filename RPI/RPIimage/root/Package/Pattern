@@ -1,5 +1,11 @@
-/Failed:/d
-s/-[0-9]*$//
+/-[0-9]*$//
+s/ap24/ap/
 s/py27/py/
+s/py312/py/
+s/emacs26/emacs/
+s/php56/php/
+s/php82/php/
+s/postgresql12/postgresql/
+s/postgresql13/postgresql/
 s?^?(cd /usr/pkgsrc/*/?
 s?$?;make package-install)?
