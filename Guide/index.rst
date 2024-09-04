@@ -23,7 +23,6 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
  RPI/RPIupdate2024
  OSC/OSC2024
  RPI
