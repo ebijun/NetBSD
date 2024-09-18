@@ -1,18 +1,18 @@
-VERSION: :1,$s/2024-08-21/2024-08-21/g
-ISO:     :1,$s/202408190930Z/202408190930Z/g
-NetBSD:  :1,$s/10.99.11/10.99.11/g
+VERSION: :1,$s/2024-09-18/2024-09-18/g
+ISO:     :1,$s/202409162300Z/202409162300Z/g
+NetBSD:  :1,$s/10.99.12/10.99.12/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2024-08-21-netbsd-raspi-aarch64.img
+Subject: 2024-09-18-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2024-08-21-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2024-09-18-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-08-21-aarch64/2024-08-21-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-08-21-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-09-18-aarch64/2024-09-18-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-09-18-aarch64/MD5
 
 Topics:
 - [Researching] RPI5: 
@@ -27,9 +27,9 @@ Topics:
     bcm2712-rpi-5-b.dtb
 
 - [Test] Firmware update /boot/fixup4*.dat,start4*.elf
-commit 6b029c7772b5d29a50a07c477a808a7effb0a373 (HEAD -> master, origin/master, origin/HEAD)
+commit 48cd9f9dfe536c5ad32367a1554b12d5a7325d00 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Tue Aug 13 14:42:23 2024 +0100
+Date:   Fri Sep 13 16:04:06 2024 +0100
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
@@ -61,19 +61,23 @@ bwfm0: autoconfiguration error: NVRAM file not available
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2024
   and pkgin update
 
-y
 sysinfo:
- awk-20240728 libc-12.222 ntp-4.2.8pl18 sh-20220122-20240819082832Z
-
+ NetBSD-10.99.12 openssl-3.0.15 libpcap-1.10.5 pkg_install-20240826
+ sh-20220122-20240916214814Z tcpdump-4.99.5 userland-NetBSD-10.99.12/evbarm
+ yacc-2.020240109
+ 
 pkgsrc:
- curl-8.9.1 git-base-2.46.0 glib2-2.80.4 gtk3+-3.24.43 jpeg-9f libgcrypt-1.11.0
- libheif-1.18.2 libimagequant-4.3.3 libproxy-0.5.8 libxml2-2.12.9 lz4-1.10.0
- mbedtls-2.28.8 ruby32-addressable-2.8.7 ruby32-base-3.2.5
- ruby32-nokogiri-1.16.7 ruby32-public_suffix-6.0.1 sayaka-3.7.7
+ curl-8.10.0 freetype2-2.13.3 gnutls-3.8.7.1 gobject-introspection-1.80.1nb3
+ libgcrypt-1.11.0nb1 libheif-1.18.2nb1 mozilla-rootcerts-1.0.20240827
+ nghttp2-1.63.0 pkg_install-20240826 png-1.6.44 py312-setuptools-74.1.2
+ python312-3.12.6 qt5-qtbase-5.15.15 qt5-qtx11extras-5.15.15
+ qt5-qtxmlpatterns-5.15.15 sayaka-3.8.0 sqlite3-3.46.1 svt-av1-2.2.0
+ wayland-protocols-1.37
 
 RPI4 status:
 - boot via UEFI_VER=v1.37
   https://github.com/pftf/RPi4/releases
+XXX switch to 1.38 next month.
 
 In this image,pre-setted /boot/RPI_EFI.fd
 1. Advanced Configration
@@ -90,13 +94,13 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.11 evbarm-aarch64 202408190930Z arm64.img from nyftp.
+- NetBSD-current 10.99.12 evbarm-aarch64 202409162300Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/sysinfo
 
-Update from 20221-06:
+Update from 2022-06:
 https://github.com/ebijun/NetBSD/commit/1b3ef330ecf023aa73d58ccb8b4029c520f33cdf
 
 - mate/firefox/inkscape/libreoffice works well
@@ -108,9 +112,12 @@ https://github.com/ebijun/NetBSD/commit/1b3ef330ecf023aa73d58ccb8b4029c520f33cdf
    pkg_add inkscape
    pkg_add gimp
    pkg_add scribus
-   pkg_add py310-sphinx
-   pkg_add wxGTK31
+   pkg_add py312-sphinx
+   pkg_add wxGTK32
    pkg_add gnome-keyring
+
+   /root/.xinitrc 
+   #mate-session; exit <-- uncomment this line & startx to test mate desktop
 
 - Sphinx with latexpdf
   https://github.com/ebijun/NetBSD/blob/master/Guide/latexpdf.rst 
