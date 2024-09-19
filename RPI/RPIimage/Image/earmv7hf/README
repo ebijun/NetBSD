@@ -1,36 +1,40 @@
-VERSION: :1,$s/2024-08-22/2024-08-22/g
-ISO:     :1,$s/202408210350Z/202408210350Z/g
-NetBSD:  :1,$s/10.99.11/10.99.11/g
-PKGSRC:  :1,$s/2024-08-22/2024-08-22/g
+VERSION: :1,$s/2024-09-19/2024-09-19/g
+ISO:     :1,$s/202409181750Z/202409181750Z/g
+NetBSD:  :1,$s/10.99.12/10.99.12/g
+PKGSRC:  :1,$s/2024-09-19/2024-09-19/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2024-08-22-netbsd-armv7-earmv7hf.img
+Subject: 2024-09-19-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2024-08-22-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2024-09-19-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-08-22-earmv7hf/2024-08-22-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-08-22-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-09-19-earmv7hf/2024-09-19-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-09-19-earmv7hf/MD5
 
 Update:
-- NetBSD 10.99.11 evbarm-armv7hf 202408210350Z armv7.img from nyftp.
+- NetBSD 10.99.12 evbarm-armv7hf 202409181750Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 - Firmware:
-commit 6b029c7772b5d29a50a07c477a808a7effb0a373 (HEAD -> master, origin/master, origin/HEAD)
+commit 48cd9f9dfe536c5ad32367a1554b12d5a7325d00 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Tue Aug 13 14:42:23 2024 +0100
+Date:   Fri Sep 13 16:04:06 2024 +0100
     
 sysinfo:
- awk-20240728 libc-12.222 ntp-4.2.8pl18 sh-20220122-20240820224529Z
-
+ NetBSD-10.99.12 openssl-3.0.15 libpcap-1.10.5 pkg_install-20240826
+ sh-20220122-20240918161238Z tcpdump-4.99.5 userland-NetBSD-10.99.12/evbarm
+ wpa_supplicant-2.11 yacc-2.020240109
+ 
 pkgsrc:
- curl-8.9.1 git-base-2.46.0 glib2-2.80.4 gtk3+-3.24.43 jpeg-9f libgcrypt-1.11.0
- libheif-1.18.2 libproxy-0.5.8 libxml2-2.12.9 lz4-1.10.0
- ruby32-addressable-2.8.7 ruby32-base-3.2.5 ruby32-nokogiri-1.16.7
- ruby32-public_suffix-6.0.1 sayaka-3.7.7
+ curl-8.10.0 freetype2-2.13.3 git-base-2.46.1 gnutls-3.8.7.1
+ gobject-introspection-1.80.1nb3 imlib2-1.12.2nb1 libgcrypt-1.11.0nb1
+ libheif-1.18.2nb2 mozilla-rootcerts-1.1.20240827 nghttp2-1.63.0 png-1.6.44
+ py312-setuptools-75.1.0 python312-3.12.6 qt5-qtx11extras-5.15.15
+ qt5-qtxmlpatterns-5.15.15 sayaka-3.8.0 sqlite3-3.46.1 sudo-1.9.16 svt-av1-2.2.0
+ wayland-protocols-1.37 x265-4.0
 
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2024/
