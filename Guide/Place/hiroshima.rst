@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -50,7 +50,9 @@ Maps:
  2020,9/19,200,8,オンライン
  2021,9/18,170,13,オンライン
  2022,10/1,99,9,オンライン
- 2023,11/12,,,サテライトキャンパスひろしま
+ 2023,11/12,54,14,サテライトキャンパスひろしま
+ 2024,9/29,,,サテライトキャンパスひろしま
+
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,6 +64,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 202,OSC2024広島,http://www.re.soum.co.jp/~jun/OSC2024hiroshima.pdf
  193,OSC2023広島,http://www.re.soum.co.jp/~jun/OSC2023hiroshima.pdf
  180,OSC2022広島,http://www.re.soum.co.jp/~jun/OSC2022hiroshima.pdf
  159,OSC2021広島,http://www.re.soum.co.jp/~jun/OSC2021hiroshima.pdf
@@ -96,6 +99,8 @@ togetterまとめ
  OSC2021広島,OSC2021 Online/Hiroshima NetBSDのご紹介 の記録,https://togetter.com/li/1774874
  OSC2022広島,OSC2022 Online/Hiroshima NetBSDのご紹介 の記録,https://togetter.com/li/1950893
  OSC2023広島,KOF2023&OSC2023/Hiroshima NetBSDのご紹介 の記録,https://togetter.com/li/2254094
+ OSC2024広島,OSC2024 NetBSDブースの記録,https://togetter.com/li/2437595
+
 
 OSC広島発表
 ~~~~~~~~~~~~~
@@ -104,8 +109,8 @@ OSC広島発表
  :widths: 70 25 99
 
  ておくれライブイメージ,OSC2011広島,http://www.ceres.dti.ne.jp/tsutsui/osc11hi/Teokure-Live-Image.html
- XM6iのご紹介, OSC2011広島, http://xm6i.org/event/osc2011hi
- NetBSD/x68kとXM6i 追いかけっこ開発,OSC2012広島,http://xm6i.org/event/osc2012hi
+ XM6iのご紹介, OSC2011広島, http://xm6i/event/osc2011hi
+ NetBSD/x68kとXM6i 追いかけっこ開発,OSC2012広島,http://xm6i/event/osc2012hi
  OSC展示に見るNetBSD6.0新機能,OSC2012広島, http://www.slideshare.net/tsutsuii/osc-netbsd-60
  (XM6iによる?)NetBSD/m68k FPE の実装,OSC2013広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc13hi/
  NetBSD/x68k 近況,OSC2013広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc13hi/
@@ -127,19 +132,23 @@ OSC広島発表
 .. csv-table::
  :widths: 30 15 80
 
- ハードオフフォレオ広島東店,フォレオ広島,矢賀駅 オーディオセレクション
+ ビールスタンド重富,銀山町,17:00-壱度注ぎ/弐度注ぎ/参度注ぎ/重富注ぎ 北口1Fekieにも
+ Neighborly Brewing,大手町1,日の出ラガーとコーヒースタウト
+ hangout,本川町二丁目,17:00-22:00 9タップ＆ハンバーガー
+ ヲルガン座,十日市町,音楽喫茶。めいかしカフェ＆のらえもんとぺぺ。
  松本無線パーツ,商工センター,日曜休み NHK前からバス 2023/11/23-25 セール
+ 赤い東横イン,球場そば,東横インが赤い。ローソンも赤い。
+ むさし,広島駅,地下のむさしでおにぎり弁当
+ アンデルセン,紙屋町,マフィンプレートのモーニング
+ そらや,八丁堀4,立ち飲み 14:00-
+ ハードオフフォレオ広島東店,フォレオ広島,矢賀駅 オーディオセレクション
  Session's Brewery,十日市1-2-3,14:00-23:00OYSTER CITY Pale AleとStout
  広島北ビールバー,可部,17:30-23:30 金曜土曜営業
  RAKUBEER,三川町,国産地ビールの殿堂 15:00-20:00 土日12:00-20:00
  もり,富士見町,お好み焼き。11:00-21:30 平日中休みあり 日曜休み 
  ちんちくりん,薬研堀,ちんちくりん焼き
- むさし,広島駅,地下のむさしでおにぎり弁当
- ビールスタンド重富,銀山町,17:00-壱度注ぎ/弐度注ぎ/参度注ぎ/重富注ぎ 北口1Fekieにも
- アンデルセン,紙屋町,マフィンプレートのモーニング
  県立広島大学,宇品,2011年OSC開催地
  広島国際学院大学,中野東, 2012年OSC開催地
- hangout,本川町二丁目,17:00-22:00 9タップ＆ハンバーガー
  GOLDEN GARDEN,新天地,RAKUBEER姉妹店　16:00- 3タップ 100種類
  宮島ブルワリー,宮島町,宮島町459-2 12:00-16:00 17:00-20:45
  大和ミュージアム,呉,巨大戦艦大和展 零戦62型 回天 海龍
@@ -152,13 +161,12 @@ OSC広島発表
  ロペス,広島,2002年の目標：打率3割5分56本塁打160打点
  さんちぇ,白島東口,サンフレッチェ/お好み焼き/クラフトビール
  獅魂,胡町,賀茂金秀/龍勢
- 広島市現代美術館,比治山公園,ヒロシマイトとは何か。
- ヲルガン座,十日市町,音楽喫茶。藤井一彦弾き語りツアー。
- 横川シネマ,横川,中村達也＋doravideo ツアー ジャン・ユスターシュ映画祭
- サロンシネマ,大手町,日本一ひろいシートの映画館。シーナ&ロケッツ
- 松屋　広島金座街店,金座街 ,店舗限定かつ定食とカツカレーがある(c)おかのさん　閉店？
+ 広島市現代美術館,比治山公園,山村浩二／西島大介／Perfume COSTUME MUSEUM 
+ 横川シネマ,横川,VICTORIA SHEN JAPAN TOUR 2024
+ サロンシネマ,大手町,日本一ひろいシートの映画館。マルホランドドライブとルックバック
+ 松屋　広島金座街店,金座街 ,店舗限定かつ定食とカツカレーがある(c)おかのさん
  Groovin',京橋町,中古CD/DVD
- アーキウォーク広島,建築ガイド,http://www.oa-hiroshima.org/
+ アーキウォーク広島,建築ガイド,http://www.oa-hiroshima/
  たまゆら,竹原,日の丸写真館　旧笠井邸 ほり川のほぼろ焼き 茶房ゆかり
  ひろしまバス祭り,新井口,バスピーとおにゃのことは何か http://t.co/2nNpfj0Ya0
  袋町小学校平和資料館,袋町,被爆した校舎
@@ -180,6 +188,40 @@ OSC広島発表
  陸軍被服支厰倉庫,出汐,峠三吉「倉庫の記録」
  広島市郷土資料館,宇品,曲がった鉄骨と、かもじづくり。かもじって何？
  旧広島港湾事務所,宇品,広島唯一の明治時代の公共建築かつ被曝建物。
+
+2023年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2023/11/12/DSC_2241.JPG
+.. image::  ../Picture/2023/11/12/DSC_2244.JPG
+.. image::  ../Picture/2023/11/12/DSC_2245.JPG
+.. image::  ../Picture/2023/11/12/DSC_2246.JPG
+.. image::  ../Picture/2023/11/12/DSC_2247.JPG
+.. image::  ../Picture/2023/11/12/DSC_2248.JPG
+.. image::  ../Picture/2023/11/12/DSC_2249.JPG
+.. image::  ../Picture/2023/11/12/DSC_2250.JPG
+.. image::  ../Picture/2023/11/12/DSC_2252.JPG
+.. image::  ../Picture/2023/11/12/DSC_2253.JPG
+.. image::  ../Picture/2023/11/12/DSC_2254.JPG
+.. image::  ../Picture/2023/11/12/DSC_2256.JPG
+.. image::  ../Picture/2023/11/12/DSC_2257.JPG
+.. image::  ../Picture/2023/11/12/DSC_2258.JPG
+.. image::  ../Picture/2023/11/12/DSC_2259.JPG
+.. image::  ../Picture/2023/11/12/DSC_2261.JPG
+.. image::  ../Picture/2023/11/12/DSC_2262.JPG
+.. image::  ../Picture/2023/11/12/DSC_2263.JPG
+.. image::  ../Picture/2023/11/12/DSC_2264.JPG
+.. image::  ../Picture/2023/11/12/DSC_2265.JPG
+.. image::  ../Picture/2023/11/12/DSC_2266.JPG
+.. image::  ../Picture/2023/11/12/DSC_2267.JPG
+.. image::  ../Picture/2023/11/12/DSC_2268.JPG
+.. image::  ../Picture/2023/11/12/DSC_2269.JPG
+.. image::  ../Picture/2023/11/12/DSC_2270.JPG
+.. image::  ../Picture/2023/11/12/DSC_2271.JPG
+.. image::  ../Picture/2023/11/12/DSC_2272.JPG
+.. image::  ../Picture/2023/11/12/DSC_2273.JPG
+.. image::  ../Picture/2023/11/12/DSC_2274.JPG
+.. image::  ../Picture/2023/11/12/DSC_2276.JPG
 
 2019年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
