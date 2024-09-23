@@ -7,17 +7,6 @@ Subject: pinebook status update (${DATE})
 NetBSD Arm Bootable Images: NetBSD9/NetBSD10/NetBSD-current
  https://www.armbsd.org
 
-Update:
- 
- libc-12.222
- NetBSD-10.99.12
- firefox-129.0.2 -? stable on 115
- gcc12-12.4.0
- libstemmer-2.2.0nb1
- python312-3.12.5
- rust-1.79.0
- xnp2-0.86nb26
-
 Problems: 
 - pinebook: 
   Using audio interface,rebooting.
@@ -121,59 +110,66 @@ ToDo:
  - internal WiFi
 
 sysinfo:
- awk-20240728 libc-12.222 NetBSD-10.99.12 ntp-4.2.8pl18 pkg_install-20240826
- sh-20220122-20240828065017Z userland-NetBSD-10.99.12/evbarm
-
+ openssl-3.0.15 libpcap-1.10.5 sh-20220122-20240921064221Z tcpdump-4.99.5
+ wpa_supplicant-2.11 yacc-2.020240109
+ 
 pkgsrc:
- SDL2-2.30.6 abseil-20240722.0 akonadi-23.08.4nb3 apache-ant-1.10.14
- appstream-1.0.3nb2 apr-1.7.5 asciidoc-10.2.1 box2d-2.4.2 caja-1.26.4
- cmake-3.30.2 cmark-0.31.1 curl-8.9.1nb1 desktop-file-utils-0.27
- djvulibre-lib-3.5.28 enchant2-2.8.2 ffmpeg6-6.1.2 ffmpeg7-7.0.2 firefox-129.0.2
- firefox-l10n-129.0.2 firefox52-52.9.0nb69 fluidsynth-2.3.6 fmtlib-11.0.2
- freetype2-2.13.3 gcc12-12.4.0 gcr-3.40.0 gexiv2-0.14.3
- ghostscript-agpl-10.03.1nb2 git-base-2.46.0 gnupg2-2.4.5nb3 gnutls-3.8.7.1
- go-1.22.6 go121-1.21.13 go122-1.22.6 googletest-1.15.2 gpgme-1.23.2nb1
- graphviz-12.1.0 gst-plugins1-bad-1.24.7 gstreamer1-1.24.7 jpeg-9f
- json-glib-1.8.0 kdesignerplugin-5.116.0nb1 kdewebkit-5.116.0nb1 kio-5.116.0nb1
- kparts-5.116.0nb1 kwallet-5.116.0nb1 libadwaita-1.5.2 libassuan-3.0.1
- libdeflate-1.21 libgcrypt-1.11.0nb1 libheif-1.18.2nb1 libimagequant-4.3.3
- libinotify-0.0.20240724 libixion-0.19.0nb1 libmtp-1.1.21 libnotify-0.8.3
- libproxy-0.5.8 libpurple-2.14.13 libreoffice-24.2.5.2nb1 libstemmer-2.2.0nb1
- libxml2-2.12.9 libxmlb-0.3.14 lz4-1.10.0 marco-1.26.2nb6 mate-1.26.1nb13
- mate-applets-1.26.1nb11 mate-utils-1.26.1nb5 meson-1.5.1 mpg123-1.32.7
- nghttp3-1.5.0 nginx-1.26.2 ngtcp2-1.7.0 nodejs-22.7.0 nss-3.103
- openjdk17-1.17.0.11.9 opusfile-0.12nb3 orc-0.4.39 osg-3.6.5nb54 p5-Clone-0.47
- p5-HTML-Parser-3.83 p5-IO-Socket-SSL-2.088 p5-IPC-Run3-0.049
- p5-Mozilla-CA-20240730 p5-Net-DNS-1.46 p5-Scalar-List-Utils-1.65
- p5-Try-Tiny-0.32 pinentry-1.3.1nb1 pkgconf-2.3.0 pkgdiff-1.12 protobuf-27.3
- py311-babel-2.16.0 py312-Socks-1.7.1nb1 py312-alabaster-1.0.0
- py312-anytree-2.12.1 py312-babel-2.16.0 py312-brotli-1.1.0
- py312-brotlicffi-1.1.0.0 py312-certifi-2024.7.4 py312-cffi-1.17.0
- py312-charset-normalizer-3.3.2 py312-cparser-2.22nb1
- py312-cryptography-43.0.0nb1 py312-dbus-1.3.2nb1 py312-docutils-0.21.2
- py312-idna-3.8 py312-imagesize-1.4.1 py312-importlib-metadata-8.4.0
- py312-jinja2-3.1.4 py312-libxml2-2.12.9 py312-lxml-5.3.0 py312-markdown-3.7
- py312-markupsafe-2.1.5 py312-numpy-2.1.0 py312-packaging-24.1
- py312-py-1.11.0nb1 py312-pygments-2.18.0 py312-pyparsing-3.1.4
- py312-requests-2.32.3 py312-roman-4.2 py312-setuptools-73.0.1
- py312-six-1.16.0nb1 py312-snowballstemmer-2.2.0nb1 py312-sphinx-8.0.2
- py312-sphinxcontrib-applehelp-2.0.0 py312-sphinxcontrib-devhelp-2.0.0
- py312-sphinxcontrib-htmlhelp-2.1.0 py312-sphinxcontrib-jsmath-1.0.1nb1
- py312-sphinxcontrib-qthelp-2.0.0 py312-sphinxcontrib-serializinghtml-2.0.0
- py312-sphinxcontrib-websupport-2.0.0 py312-toml-0.10.2nb3 py312-tomli-2.0.1nb1
- py312-urllib3-2.2.2 py312-zipp-3.20.1 py312-zstandard-0.23.0 python312-3.12.5
- rclone-1.67.0 ruby32-addressable-2.8.7 ruby32-atk-4.2.2 ruby32-base-3.2.5
- ruby32-cairo-1.17.12nb3 ruby32-cairo-gobject-4.2.2 ruby32-gdk3-4.2.2
- ruby32-gdk_pixbuf2-4.2.2 ruby32-gio2-4.2.2 ruby32-glib2-4.2.2
- ruby32-gobject-introspection-4.2.2 ruby32-gtk3-4.2.2 ruby32-locale-2.1.4
- ruby32-mini_portile2-2.8.7 ruby32-native-package-installer-1.1.9
- ruby32-nokogiri-1.16.7 ruby32-pango-4.2.2 ruby32-pkg-config-1.5.6
- ruby32-public_suffix-6.0.1 ruby32-red-colors-0.4.0 ruby32-simpleidn-0.2.3
- ruby32-version_gem-1.1.4 rust-1.79.0 samba-4.20.4 scribus-1.6.2
- spdlog-1.14.1nb1 sqlite3-3.46.1 svt-av1-2.2.0 sylpheed-3.7.0nb17 taglib-2.0.2
- tdb-1.4.12 tigervnc-1.14.0.1.20.13 uchardet-0.0.8 unixodbc-2.3.12nb1
- unzip-6.0nb10 x11-links-1.36 xapian-1.4.26 xnp2-0.86nb26 xterm-393
- zenity3-3.44.4 zziplib-0.13.78
+ ImageMagick-7.1.1.35nb1 SDL2-2.30.7 a2ps-4.15.5nb2 arandr-0.1.11nb1
+ assimp-5.4.3 bsdtar-3.7.5 cairo-1.18.2 cbindgen-0.27.0 cmake-3.30.3 curl-8.10.1
+ dtc-1.7.1 ffmpeg2-2.8.22 ffmpeg3-3.4.13 ffmpeg4-4.4.5 ffmpeg5-5.1.6
+ ffmpeg6-6.1.2nb1 ffmpeg7-7.0.2nb1 firefox115-115.15.0 firefox115-l10n-115.15.0
+ gedit-3.36.2nb24 giflib-5.2.2 gimp-2.10.38nb2 git-base-2.46.1
+ gnome-doc-utils-0.20.10nb15 go-1.22.7 go122-1.22.7
+ gobject-introspection-1.80.1nb3 gst-plugins1-base-1.24.7
+ gst-plugins1-good-1.24.7 ibus-1.5.30 ibus-anthy-1.5.15 imath-3.1.12
+ imlib2-1.12.2nb1 inkscape-1.3.2nb4 libarchive-3.7.5 libcares-1.33.1
+ libheif-1.18.2nb2 libreoffice-24.8.0.3 luatex-1.18.0nb2 mkvtoolnix-87.0
+ mozilla-rootcerts-1.1.20240827 mozilla-rootcerts-openssl-2.17 nghttp2-1.63.0
+ nodejs-22.9.0 nss-3.104 orc-0.4.40 osabi-NetBSD-10.99.12 osg-3.6.5nb55
+ p5-IO-Socket-SSL-2.089 p5-MIME-Base32-1.303nb7 p5-URI-5.29 pkg_install-20240826
+ png-1.6.44 protobuf-28.2 psutils-3.0.3nb1 py-cairo-shared-1.27.0
+ py27-cairo-1.18.2nb6 py27-enum34-1.1.10nb1 py27-funcsigs-1.0.2nb1
+ py27-gobject-2.28.7nb5 py27-gtk2-2.24.0nb49 py27-ipaddress-1.0.23nb1
+ py27-scandir-1.10.0nb1 py27-setuptools-44.1.1nb1 py27-typing-3.10.0.0nb1
+ py311-Pillow-10.4.0nb1 py311-cffi-1.17.0 py311-cparser-2.22nb1
+ py311-cryptography-43.0.0 py311-libxml2-2.12.8 py311-olefile-0.47
+ py311-pdf-4.3.1 py311-pspdfutils-3.3.2 py311-puremagic-1.27
+ py311-setuptools-70.3.0 py312-OpenSSL-24.2.1 py312-Pillow-10.4.0nb1
+ py312-atomicwrites-1.4.1nb1 py312-attrs-24.2.0 py312-cairo-1.27.0
+ py312-certifi-2024.8.30 py312-cffi-1.17.1 py312-chardet-5.2.0nb1
+ py312-cryptodome-3.20.0 py312-cryptography-43.0.1 py312-cython-3.0.11
+ py312-defusedxml-0.7.1nb1 py312-dns-2.6.1 py312-ecdsa-0.19.0
+ py312-gobject3-3.48.2
+ py312-gyp-0.1pre20210830.d6c5dd51dc3a60bf4ff32a5256713690a1a10376nb2
+ py312-idna-3.10 py312-importlib-metadata-8.5.0 py312-iso8601-2.1.0nb1
+ py312-libxslt-1.1.42 py312-mako-1.3.5 py312-more-itertools-10.5.0
+ py312-numpy-2.1.1 py312-olefile-0.47 py312-pbr-6.1.0 py312-pdf-4.3.1
+ py312-pip-24.2 py312-pluggy-1.5.0 py312-puremagic-1.27 py312-pytz-2024.2
+ py312-scour-0.38.2nb3 py312-serial-3.5nb2 py312-setuptools-74.1.2
+ py312-setuptools_scm-8.1.0 py312-typing-extensions-4.12.2 py312-urllib3-2.2.3
+ py312-wcwidth-0.2.13nb1 py312-zipp-3.20.2 py39-argparse-1.4.0nb1
+ py39-asn1crypto-1.5.1 py39-six-1.16.0nb1 python310-3.10.15 python311-3.11.10
+ python312-3.12.6 python38-3.8.20 python39-3.9.20 qt5-qtbase-5.15.15
+ qt5-qtdeclarative-5.15.15 qt5-qtlocation-5.15.15 qt5-qtmultimedia-5.15.15
+ qt5-qtscript-5.15.15 qt5-qtsensors-5.15.15 qt5-qtserialport-5.15.15
+ qt5-qtspeech-5.15.15 qt5-qtsvg-5.15.15 qt5-qttools-5.15.15
+ qt5-qtwayland-5.15.15 qt5-qtwebchannel-5.15.15 qt5-qtwebsockets-5.15.15
+ qt5-qtx11extras-5.15.15 qt5-qtxmlpatterns-5.15.15 rclone-1.68.0
+ ruby31-base-3.1.6 ruby31-idn-0.1.0 ruby31-simpleidn-0.2.1
+ ruby31-twitter-text-3.1.0 ruby31-twitter-text-simpleidn-3.0.0.0
+ ruby31-unf-0.1.4 ruby31-unf_ext-0.0.9.1 ruby32-atk-4.2.3
+ ruby32-cairo-gobject-4.2.3 ruby32-delayer-1.2.1 ruby32-delayer-deferred-2.2.0
+ ruby32-diva-2.0.1 ruby32-gdk_pixbuf2-4.2.3 ruby32-gettext-3.4.1
+ ruby32-gio2-4.2.3 ruby32-glib2-4.2.3 ruby32-gobject-introspection-4.2.3
+ ruby32-hashie-4.1.0 ruby32-hmac-0.4.0 ruby32-httpclient-2.8.3nb1
+ ruby32-instance_storage-1.0.0 ruby32-memoist-0.16.2 ruby32-mikutter-5.0.7nb2
+ ruby32-moneta-1.6.0 ruby32-oauth-1.1.0 ruby32-oauth-tty-1.0.5
+ ruby32-pango-4.2.3 ruby32-pluggaloid-1.7.0 ruby32-red-datasets-0.1.7
+ ruby32-snaky_hash-2.0.1 ruby32-text-1.3.1 ruby32-typed-array-0.1.2
+ ruby32-unf-0.2.0 ruby32-unf_ext-0.0.9.1 ruby32-zip-2.3.2 samba-4.20.5
+ scribus-1.6.2nb1 sudo-1.9.16nb1 tiff-4.7.0 wayland-protocols-1.37 wxGTK32-3.2.6
+ x265-4.0 xfce4-desktop-4.18.1nb5 xfce4-thunar-4.18.11 xscreensaver-6.08nb6
+ xterm-394 youtube-dl-20211217nb5
 
 Tips:
 - System Clocks
