@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2015-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -54,7 +54,8 @@ Maps:
  2020 Niigata,7/25,120,10,オンライン開催
  2021 Niigata,10/2,80,,オンライン開催
  2022 Nagaoka,11/12,40,,オンライン開催 KOF会場から休憩時間にリモート参加
- 2023 Niigata,11/25,,,ほんぽーと新潟市立中央図書館
+ 2023 Niigata,11/25,37,15,ほんぽーと新潟市立中央図書館
+ 2024 Nagaoka,10/12,,,長岡技術科学大学
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,6 +67,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 203,OSC2024長岡,http://www.re.soum.co.jp/~jun/OSC2024nagaoka.pdf
  194,OSC2023新潟,http://www.re.soum.co.jp/~jun/OSC2023niigata.pdf
  170,OSC2021新潟,http://www.re.soum.co.jp/~jun/OSC2021niigata.pdf
  156,OSC2020新潟,http://www.re.soum.co.jp/~jun/OSC2020niigata.pdf
@@ -82,6 +84,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2024長岡 NetBSDブース展示の記録,https://togetter.com/li/2446541
  OSC2023新潟 NetBSDブース展示の記録,https://togetter.com/li/2260623
  OSC2021新潟 NetBSDブース展示の記録,https://togetter.com/li/1782152
  OSC2020新潟 NetBSDブース展示の記録,https://togetter.com/li/1565767
@@ -132,15 +135,42 @@ togetterまとめ
  SWANLAKE Pub Edo,代々木上原,東京代々木上原駅にあるスワンレイクのビアバー
  Rhino,坂之上,クラフトビール
  金子屋,長岡,すべてを満たす定食と俺
- 龍文堂,長岡,ひぐらし実写版のロケがあったらしい
- かおす書房,東坂之上町,長岡市東坂之上町１丁目
+ 安福亭,長岡,あんぷくてい。柏町1丁目　太麺ラーメン餃子
+ 龍文堂,長岡,表町の模型店 ひぐらし実写版のロケがあったらしい
+ かおす書房,閉店,日本の古本屋でコスモス書房を見る
  ユウピット電子,本町,電子部品
  パラダイスガラッジ,関原町,懐かしおもちゃ
  ミヤウチショウガカレー研究所,宮内,なぜかテクノ。なぜか生姜。
- 音色,東坂之上町,ジャズ喫茶/ライブ
+ 音色,東坂之上町,ねじきと読む。ジャズ喫茶/ライブ
  中華大吉,殿町,24:00-4:00 日曜休
  雑本堂,東坂之上町,古書 映画関連
- MLB taproom bow,見附市,12:00-14:00 19:00-24:00 
+ ハードオフ長岡古正寺店,イオン,技科大に行く途中にある重要店。工具館もある。 
+ HEISEI BREWING,新保,10:00-19:00 タップルーム
+
+2023年
+---------------
+
+.. image::  ../Picture/2023/11/25/DSC_2339.JPG
+.. image::  ../Picture/2023/11/25/DSC_2340.JPG
+.. image::  ../Picture/2023/11/25/DSC_2341.JPG
+.. image::  ../Picture/2023/11/25/DSC_2342.JPG
+.. image::  ../Picture/2023/11/25/DSC_2343.JPG
+.. image::  ../Picture/2023/11/25/DSC_2344.JPG
+.. image::  ../Picture/2023/11/25/DSC_2345.JPG
+.. image::  ../Picture/2023/11/25/DSC_2346.JPG
+.. image::  ../Picture/2023/11/25/DSC_2347.JPG
+.. image::  ../Picture/2023/11/25/DSC_2348.JPG
+.. image::  ../Picture/2023/11/25/DSC_2349.JPG
+.. image::  ../Picture/2023/11/25/DSC_2350.JPG
+.. image::  ../Picture/2023/11/25/DSC_2351.JPG
+.. image::  ../Picture/2023/11/25/DSC_2352.JPG
+.. image::  ../Picture/2023/11/25/DSC_2353.JPG
+.. image::  ../Picture/2023/11/25/DSC_2354.JPG
+.. image::  ../Picture/2023/11/25/DSC_2355.JPG
+.. image::  ../Picture/2023/11/25/DSC_2356.JPG
+.. image::  ../Picture/2023/11/25/DSC_2357.JPG
+.. image::  ../Picture/2023/11/25/DSC_2358.JPG
+.. image::  ../Picture/2023/11/25/DSC_2359.JPG
 
 2019年
 ---------------

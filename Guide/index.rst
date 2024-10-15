@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/hiroshima
+ Place/niigata
  RPI/RPIupdate2024
  OSC/OSC2024
  RPI

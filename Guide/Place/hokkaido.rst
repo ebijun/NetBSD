@@ -121,6 +121,7 @@
  カメラのいわもと,白石区本通1丁目南3-7,真空管と真空管式アンプも扱ってる http://iwamoto-camera.com/
  カメラ修理センター,北2条東3,http://sapporocamera-repair-center.co.jp/
  イシオ,北4西28,http://www.isio28.com/
+ INHERIT CAMERA,平岸1条9,2024/9開店
 
 北海道でのオープンソースカンファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
