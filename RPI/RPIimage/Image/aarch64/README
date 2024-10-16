@@ -1,20 +1,35 @@
-VERSION: :1,$s/2024-09-18/2024-09-18/g
-ISO:     :1,$s/202409162300Z/202409162300Z/g
+VERSION: :1,$s/2024-10-16/2024-10-16/g
+ISO:     :1,$s/202410141310Z/202410141310Z/g
 NetBSD:  :1,$s/10.99.12/10.99.12/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2024-09-18-netbsd-raspi-aarch64.img
+Subject: 2024-10-16-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2024-09-18-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2024-10-16-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-09-18-aarch64/2024-09-18-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-09-18-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-10-16-aarch64/2024-10-16-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-10-16-aarch64/MD5
 
 Topics:
+- add net/nanotodon
+  Nanotodon is a light-weight CUI/C99 mastodon client.
+
+arm64$ nanotodon
+Hello! Welcome to nanotodon!
+First, Please tell me the server where you live.
+(https://[please enter this part]/)
+>social.mikutter.hachune.net
+
+Next, I will do application authentication.
+Please access to following URL, then after authorization, please input displayed authorization code.
+https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
+> [input authorization code]
+ :
+
 - [Researching] RPI5: 
  Re: NetBSD on Raspberry PI5
  http://mail-index.netbsd.org/port-arm/2024/08/21/msg008868.html
@@ -62,17 +77,19 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- NetBSD-10.99.12 openssl-3.0.15 libpcap-1.10.5 pkg_install-20240826
- sh-20220122-20240916214814Z tcpdump-4.99.5 userland-NetBSD-10.99.12/evbarm
- yacc-2.020240109
- 
+ bind-9.18.30 libssh-48.0 openssh-9.9 opensshd-9.9 sh-20220122-20241014122628Z
+ wpa_supplicant-2.11
+
 pkgsrc:
- curl-8.10.0 freetype2-2.13.3 gnutls-3.8.7.1 gobject-introspection-1.80.1nb3
- libgcrypt-1.11.0nb1 libheif-1.18.2nb1 mozilla-rootcerts-1.0.20240827
- nghttp2-1.63.0 pkg_install-20240826 png-1.6.44 py312-setuptools-74.1.2
- python312-3.12.6 qt5-qtbase-5.15.15 qt5-qtx11extras-5.15.15
- qt5-qtxmlpatterns-5.15.15 sayaka-3.8.0 sqlite3-3.46.1 svt-av1-2.2.0
- wayland-protocols-1.37
+ bash-5.2.37 cairo-1.18.2 curl-8.10.1 fribidi-1.0.16 giflib-5.2.2
+ git-base-2.47.0 imlib2-1.12.2nb1 libaom-3.10.0nb1 libepoxy-1.5.10nb2
+ libheif-1.18.2nb2 libproxy-0.5.9 mlterm-3.9.3nb13
+ mozilla-rootcerts-1.1.20240827 nanotodon-0.4.0 pixman-0.43.4
+ py312-setuptools-75.1.0 python312-3.12.7 raqm-0.10.2 ruby32-atk-4.2.3
+ ruby32-cairo-gobject-4.2.3 ruby32-gdk3-4.2.3 ruby32-gdk_pixbuf2-4.2.3
+ ruby32-gio2-4.2.3 ruby32-glib2-4.2.3 ruby32-gobject-introspection-4.2.3
+ ruby32-gtk3-4.2.3 ruby32-pango-4.2.3 sayaka-3.8.1 sudo-1.9.16nb1
+ tiff-4.7.0 x265-4.0
 
 RPI4 status:
 - boot via UEFI_VER=v1.37
@@ -94,7 +111,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.12 evbarm-aarch64 202409162300Z arm64.img from nyftp.
+- NetBSD-current 10.99.12 evbarm-aarch64 202410141310Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
