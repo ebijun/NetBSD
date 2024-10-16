@@ -15,6 +15,21 @@ https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-10-16-earmv6hf/2024
 https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-10-16-earmv6hf/MD5
 
 Update:
+- add net/nanotodon
+  Nanotodon is a light-weight CUI/C99 mastodon client.
+
+arm64$ nanotodon
+Hello! Welcome to nanotodon!
+First, Please tell me the server where you live.
+(https://[please enter this part]/)
+>social.mikutter.hachune.net
+
+Next, I will do application authentication.
+Please access to following URL, then after authorization, please input displayed authorization code.
+https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
+> [input authorization code]
+ :
+
 - NetBSD 10.99.12 evbarm-earmv6hf 202410141310Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
