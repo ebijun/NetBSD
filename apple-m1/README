@@ -1,19 +1,23 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20240916)
+Subject: apple m1 status update (20241017)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Update:
- NetBSD-10.99.12
- firefox-129.0.2
- libreoffice-24.8.0.3
- mate-1.26.1nb13
- python312-3.12.6
- qt5-qtbase-5.15.15
- sayaka-3.8.0
- tigervnc-1.14.0.1.20.13 ... new config dir: ~/.config/tigervnc
-
+ bind-9.18.30
+ libssh-48.0
+ openssh-9.9
+ boost-libs-1.86.0
+ firefox-131.0.2
+ libreoffice-24.8.2.1
+ mlterm-3.9.3nb13
+ osabi-NetBSD-10.99.12
+ python312-3.12.7
+ rust-1.80.1
+ samba-4.20.5
+ sayaka-3.8.1
+ 
 Topics:
 - USB2 audio
 
@@ -85,12 +89,11 @@ Hardware:
  USB SSD 512GB BUFFALO SSD-PGM2.0U3-BC
 
 Filesystem   1M-blocks      Used     Avail %Cap Mounted on
-/dev/dk6        480587    253104    203453  55% /
+/dev/dk6        480587    198243    258314  43% /
 /dev/dk5            79        34        44  43% /boot
 ptyfs                0         0         0 100% /dev/pts
 procfs               0         0         0 100% /proc
-tmpfs             1912         4      1908   0% /var/shm
-/dev/sd0a       946388    480887    418181  53% /media
+tmpfs             1912         0      1912   0% /var/shm
 
 ToDo:
 - audio
@@ -104,38 +107,55 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- awk-20240728 NetBSD-10.99.12 ntp-4.2.8pl18 openssl-3.0.15 libpcap-1.10.5
- pkg_install-20240826 sh-20220122-20240915040532Z tcpdump-4.99.5
- userland-NetBSD-10.99.12/evbarm
- 
+ bind-9.18.30 libssh-48.0 openssh-9.9 opensshd-9.9 sh-20220122-20241014122628Z
+ wpa_supplicant-2.11 yacc-2.020240109
+
 pkgsrc:
- SDL2-2.30.7 apr-1.7.5 caja-1.26.4 cmake-3.30.3 curl-8.10.0
- djvulibre-lib-3.5.28 enchant2-2.8.2 firefox-129.0.2 firefox-l10n-129.0.2
- firefox115-115.15.0 firefox115-l10n-115.15.0 fluidsynth-2.3.6 freetype2-2.13.3
- gcr-3.40.0 gnutls-3.8.7.1 gobject-introspection-1.80.1nb3 graphviz-12.1.0
- gst-plugins1-bad-1.24.7 gst-plugins1-base-1.24.7 gst-plugins1-good-1.24.7
- gstreamer1-1.24.7 libgcrypt-1.11.0nb1 libheif-1.18.2nb1 libpurple-2.14.13
- libreoffice-24.8.0.3 libxml2-2.12.9 luatex-1.18.0nb2 mate-1.26.1nb13
- mbedtls-2.28.8 mozilla-rootcerts-1.0.20240827 mozilla-rootcerts-openssl-2.17
- nghttp2-1.63.0 nginx-1.26.2 nss-3.104 osg-3.6.5nb55 p5-Clone-0.47
- p5-DateTime-TimeZone-2.63 p5-ExtUtils-Config-0.010 p5-ExtUtils-Helpers-0.028
- p5-Finance-Quote-1.61nb1 p5-IO-Socket-SSL-2.089 p5-MIME-Base32-1.303nb7
- p5-Module-Build-Tiny-0.051 p5-Net-DNS-1.46 p5-Try-Tiny-0.32 p5-URI-5.29
- protobuf-27.4 py312-anytree-2.12.1 py312-cairo-1.26.1 py312-certifi-2024.8.30
- py312-cffi-1.17.1 py312-cparser-2.22nb1 py312-cryptography-43.0.1
- py312-dbus-1.3.2nb1 py312-gobject3-3.48.2 py312-idna-3.8
- py312-importlib-metadata-8.4.0 py312-libxml2-2.12.9 py312-lxml-5.3.0
- py312-markdown-3.7 py312-packaging-24.1 py312-pygments-2.18.0
- py312-pyparsing-3.1.4 py312-scons-4.8.1 py312-setuptools-74.0.0
- py312-six-1.16.0nb1 py312-zipp-3.20.1 python310-3.10.15 python311-3.11.10
- python312-3.12.6 python38-3.8.20 python39-3.9.20 qt5-qtbase-5.15.15
- qt5-qtdeclarative-5.15.15 qt5-qtmultimedia-5.15.15 qt5-qtsvg-5.15.15
- qt5-qtx11extras-5.15.15 qt5-qtxmlpatterns-5.15.15 ruby32-addressable-2.8.7
- ruby32-mini_portile2-2.8.7 sayaka-3.8.0 sqlite3-3.46.1 svt-av1-2.2.0
- taglib-2.0.2 tigervnc-1.14.0.1.20.13 tree-sitter-tsx-0.20.4 vlc-3.0.21
+ ImageMagick-7.1.1.35nb1 MesaLib-21.3.9nb4 SDL2-2.30.8 atril-1.26.2nb5
+ bash-5.2.37 boost-headers-1.86.0 boost-jam-1.86.0 boost-libs-1.86.0
+ bsdtar-3.7.5 cairo-1.18.2 cbindgen-0.27.0 cmake-3.30.5 curl-8.10.1
+ deforaos-pdfviewer-0.1.0nb27 emacs-29.4 emacs29-29.4nb3 exempi-2.5.2nb8
+ ffmpeg4-4.4.5 ffmpeg5-5.1.6 ffmpeg6-6.1.2nb1 ffmpeg7-7.1 firefox-131.0.2
+ firefox-l10n-131.0.2 firefox115-115.16.1 firefox115-l10n-115.16.0
+ fribidi-1.0.16 gcc14-libjit-14.2.0 ghostscript-agpl-10.04.0 giflib-5.2.2
+ gimp-2.10.38nb3 git-base-2.47.0 graphviz-12.1.2nb1 gst-plugins1-bad-1.24.8
+ gst-plugins1-base-1.24.8 gst-plugins1-good-1.24.8 gstreamer1-1.24.8
+ imath-3.1.12 imlib2-1.12.2nb1 jwm-2.4.5 libLLVM-13.0.1nb4 libabw-0.1.3nb21
+ libaom-3.10.0nb1 libarchive-3.7.5 libcdr-0.1.7nb14 libclucene-2.3.3.4nb26
+ libdeflate-1.22 libe-book-0.1.3nb30 libepoxy-1.5.10nb2 libepubgen-0.1.1nb9
+ libetonyek-0.1.10nb14 libfreehand-0.1.2nb22 libgsf-1.14.53 libheif-1.18.2nb2
+ libixion-0.19.0nb2 libmspub-0.1.4nb29 libmwaw-0.3.21nb4 libodfgen-0.1.7nb9
+ libpagemaker-0.0.4nb15 libproxy-0.5.9 libqxp-0.0.2nb23 libreoffice-24.8.2.1
+ librevenge-0.0.5nb1 libstaroffice-0.0.7nb9 libuv-1.49.1 libvisio-0.1.7nb24
+ libwpd-0.10.3nb9 libwpg-0.3.3nb12 libwps-0.4.12nb8 libzip-1.11.1
+ libzmf-0.0.2nb31 mdds-2.1.1nb2 meson-1.5.2 mlterm-3.9.3nb13
+ mozilla-rootcerts-1.1.20240827 nss-3.105 orc-0.4.40 orcus-0.19.2nb1
+ osabi-NetBSD-10.99.12 osg-3.6.5nb56 p5-ExtUtils-InstallPaths-0.014
+ p5-HTTP-Message-7.00 p5-Mozilla-CA-20240924 p5-Net-DNS-1.47
+ p5-Scalar-List-Utils-1.66 p5-URI-5.30 p5-namespace-autoclean-0.31
+ pkg_install-20240826 png-1.6.44 poppler-24.10.0 poppler-cpp-24.10.0
+ poppler-includes-24.10.0 protobuf-28.2 py-cairo-shared-1.27.0
+ py311-installer-0.7.0nb1 py311-pspdfutils-3.3.2 py312-Pillow-10.4.0nb1
+ py312-Socks-1.7.1nb1 py312-babel-2.16.0 py312-brotli-1.1.0
+ py312-brotlicffi-1.1.0.0 py312-build-1.2.2.post1 py312-cairo-1.27.0
+ py312-charset-normalizer-3.4.0 py312-dns-2.7.0 py312-docutils-0.21.2
+ py312-glad2-2.0.8 py312-idna-3.10 py312-importlib-metadata-8.5.0
+ py312-iso8601-2.1.0nb1 py312-jinja2-3.1.4 py312-markupsafe-3.0.1
+ py312-olefile-0.47 py312-pdf-5.0.1 py312-puremagic-1.28 py312-pyparsing-3.2.0
+ py312-pyproject_hooks-1.2.0 py312-pytz-2024.2 py312-requests-2.32.3nb1
+ py312-roman-4.2 py312-setuptools-75.2.0 py312-tomli-2.0.2
+ py312-trove-classifiers-2024.10.13 py312-urllib3-2.2.3 py312-zipp-3.20.2
+ py312-zstandard-0.23.0 python312-3.12.7 raqm-0.10.2 rhash-1.4.5
+ ruby32-atk-4.2.3 ruby32-cairo-gobject-4.2.3 ruby32-gdk3-4.2.3
+ ruby32-gdk_pixbuf2-4.2.3 ruby32-gio2-4.2.3 ruby32-glib2-4.2.3
+ ruby32-gobject-introspection-4.2.3 ruby32-gtk3-4.2.3 ruby32-pango-4.2.3
+ ruby32-unf-0.2.0 rust-1.80.1 samba-4.20.5 sayaka-3.8.1 sudo-1.9.16nb1
+ tiff-4.7.0 tree-sitter-0.24.3 tree-sitter-elixir-0.3.1 tree-sitter-go-mod-1.1.0
+ vlc-3.0.21nb1 vte3-0.76.4 wayland-protocols-1.37 wxGTK32-3.2.6 x265-4.0
+ xfce4-tumbler-4.18.2nb8 xscreensaver-6.08nb6
 
 Version: 
- NetBSD 10.99.12 (GENERIC64) #0: Sun Sep 15 04:05:32 UTC 2024  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 10.99.12 (GENERIC64) #0: Mon Oct 14 12:26:28 UTC 2024  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
