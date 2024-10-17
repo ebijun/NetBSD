@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20240923)
+Subject: pinebook status update (20241018)
 
 NetBSD Arm Bootable Images: NetBSD9/NetBSD10/NetBSD-current
  https://www.armbsd.org
@@ -107,66 +107,40 @@ ToDo:
  - internal WiFi
 
 sysinfo:
- openssl-3.0.15 libpcap-1.10.5 sh-20220122-20240921064221Z tcpdump-4.99.5
- wpa_supplicant-2.11 yacc-2.020240109
- 
+ bind-9.18.30 libssh-48.0 openssh-9.9 opensshd-9.9 sh-20220122-20241014122628Z
+
 pkgsrc:
- ImageMagick-7.1.1.35nb1 SDL2-2.30.7 a2ps-4.15.5nb2 arandr-0.1.11nb1
- assimp-5.4.3 bsdtar-3.7.5 cairo-1.18.2 cbindgen-0.27.0 cmake-3.30.3 curl-8.10.1
- dtc-1.7.1 ffmpeg2-2.8.22 ffmpeg3-3.4.13 ffmpeg4-4.4.5 ffmpeg5-5.1.6
- ffmpeg6-6.1.2nb1 ffmpeg7-7.0.2nb1 firefox115-115.15.0 firefox115-l10n-115.15.0
- gedit-3.36.2nb24 giflib-5.2.2 gimp-2.10.38nb2 git-base-2.46.1
- gnome-doc-utils-0.20.10nb15 go-1.22.7 go122-1.22.7
- gobject-introspection-1.80.1nb3 gst-plugins1-base-1.24.7
- gst-plugins1-good-1.24.7 ibus-1.5.30 ibus-anthy-1.5.15 imath-3.1.12
- imlib2-1.12.2nb1 inkscape-1.3.2nb4 libarchive-3.7.5 libcares-1.33.1
- libheif-1.18.2nb2 libreoffice-24.8.0.3 luatex-1.18.0nb2 mkvtoolnix-87.0
- mozilla-rootcerts-1.1.20240827 mozilla-rootcerts-openssl-2.17 nghttp2-1.63.0
- nodejs-22.9.0 nss-3.104 orc-0.4.40 osabi-NetBSD-10.99.12 osg-3.6.5nb55
- p5-IO-Socket-SSL-2.089 p5-MIME-Base32-1.303nb7 p5-URI-5.29 pkg_install-20240826
- png-1.6.44 protobuf-28.2 psutils-3.0.3nb1 py-cairo-shared-1.27.0
- py27-cairo-1.18.2nb6 py27-enum34-1.1.10nb1 py27-funcsigs-1.0.2nb1
- py27-gobject-2.28.7nb5 py27-gtk2-2.24.0nb49 py27-ipaddress-1.0.23nb1
- py27-scandir-1.10.0nb1 py27-setuptools-44.1.1nb1 py27-typing-3.10.0.0nb1
- py311-Pillow-10.4.0nb1 py311-cffi-1.17.0 py311-cparser-2.22nb1
- py311-cryptography-43.0.0 py311-libxml2-2.12.8 py311-olefile-0.47
- py311-pdf-4.3.1 py311-pspdfutils-3.3.2 py311-puremagic-1.27
- py311-setuptools-70.3.0 py312-OpenSSL-24.2.1 py312-Pillow-10.4.0nb1
- py312-atomicwrites-1.4.1nb1 py312-attrs-24.2.0 py312-cairo-1.27.0
- py312-certifi-2024.8.30 py312-cffi-1.17.1 py312-chardet-5.2.0nb1
- py312-cryptodome-3.20.0 py312-cryptography-43.0.1 py312-cython-3.0.11
- py312-defusedxml-0.7.1nb1 py312-dns-2.6.1 py312-ecdsa-0.19.0
- py312-gobject3-3.48.2
- py312-gyp-0.1pre20210830.d6c5dd51dc3a60bf4ff32a5256713690a1a10376nb2
- py312-idna-3.10 py312-importlib-metadata-8.5.0 py312-iso8601-2.1.0nb1
- py312-libxslt-1.1.42 py312-mako-1.3.5 py312-more-itertools-10.5.0
- py312-numpy-2.1.1 py312-olefile-0.47 py312-pbr-6.1.0 py312-pdf-4.3.1
- py312-pip-24.2 py312-pluggy-1.5.0 py312-puremagic-1.27 py312-pytz-2024.2
- py312-scour-0.38.2nb3 py312-serial-3.5nb2 py312-setuptools-74.1.2
- py312-setuptools_scm-8.1.0 py312-typing-extensions-4.12.2 py312-urllib3-2.2.3
- py312-wcwidth-0.2.13nb1 py312-zipp-3.20.2 py39-argparse-1.4.0nb1
- py39-asn1crypto-1.5.1 py39-six-1.16.0nb1 python310-3.10.15 python311-3.11.10
- python312-3.12.6 python38-3.8.20 python39-3.9.20 qt5-qtbase-5.15.15
- qt5-qtdeclarative-5.15.15 qt5-qtlocation-5.15.15 qt5-qtmultimedia-5.15.15
- qt5-qtscript-5.15.15 qt5-qtsensors-5.15.15 qt5-qtserialport-5.15.15
- qt5-qtspeech-5.15.15 qt5-qtsvg-5.15.15 qt5-qttools-5.15.15
- qt5-qtwayland-5.15.15 qt5-qtwebchannel-5.15.15 qt5-qtwebsockets-5.15.15
- qt5-qtx11extras-5.15.15 qt5-qtxmlpatterns-5.15.15 rclone-1.68.0
- ruby31-base-3.1.6 ruby31-idn-0.1.0 ruby31-simpleidn-0.2.1
- ruby31-twitter-text-3.1.0 ruby31-twitter-text-simpleidn-3.0.0.0
- ruby31-unf-0.1.4 ruby31-unf_ext-0.0.9.1 ruby32-atk-4.2.3
- ruby32-cairo-gobject-4.2.3 ruby32-delayer-1.2.1 ruby32-delayer-deferred-2.2.0
- ruby32-diva-2.0.1 ruby32-gdk_pixbuf2-4.2.3 ruby32-gettext-3.4.1
- ruby32-gio2-4.2.3 ruby32-glib2-4.2.3 ruby32-gobject-introspection-4.2.3
- ruby32-hashie-4.1.0 ruby32-hmac-0.4.0 ruby32-httpclient-2.8.3nb1
- ruby32-instance_storage-1.0.0 ruby32-memoist-0.16.2 ruby32-mikutter-5.0.7nb2
- ruby32-moneta-1.6.0 ruby32-oauth-1.1.0 ruby32-oauth-tty-1.0.5
- ruby32-pango-4.2.3 ruby32-pluggaloid-1.7.0 ruby32-red-datasets-0.1.7
- ruby32-snaky_hash-2.0.1 ruby32-text-1.3.1 ruby32-typed-array-0.1.2
- ruby32-unf-0.2.0 ruby32-unf_ext-0.0.9.1 ruby32-zip-2.3.2 samba-4.20.5
- scribus-1.6.2nb1 sudo-1.9.16nb1 tiff-4.7.0 wayland-protocols-1.37 wxGTK32-3.2.6
- x265-4.0 xfce4-desktop-4.18.1nb5 xfce4-thunar-4.18.11 xscreensaver-6.08nb6
- xterm-394 youtube-dl-20211217nb5
+ MesaLib-21.3.9nb4 SDL2-2.30.8 atril-1.26.2nb5 bash-5.2.37 boost-build-1.86.0
+ boost-docs-1.86.0 boost-headers-1.86.0 boost-jam-1.86.0 boost-libs-1.86.0
+ cmake-3.30.5 cmus-2.10.0nb9 cups-base-2.4.10nb1 deforaos-pdfviewer-0.1.0nb27
+ exempi-2.5.2nb8 ffmpeg7-7.1 firefox-131.0.2 firefox-l10n-131.0.2
+ firefox115-115.16.1 firefox115-l10n-115.16.0 fribidi-1.0.16
+ ghostscript-agpl-10.04.0 gimp-2.10.38nb3 git-base-2.47.0 go-1.23.2 go122-1.22.8
+ go123-1.23.2 graphviz-12.1.2nb1 gst-plugins1-bad-1.24.8
+ gst-plugins1-base-1.24.8 gst-plugins1-good-1.24.8 gstreamer1-1.24.8 jwm-2.4.5
+ kdelibs4-4.14.38nb40 libabw-0.1.3nb21 libaom-3.10.0nb1 libcares-1.34.1nb1
+ libcdr-0.1.7nb14 libclucene-2.3.3.4nb26 libdeflate-1.22 libe-book-0.1.3nb30
+ libepubgen-0.1.1nb9 libetonyek-0.1.10nb14 libfreehand-0.1.2nb22 libgsf-1.14.53
+ libixion-0.19.0nb2 libkactivities4-4.13.3nb38 libmspub-0.1.4nb29
+ libmwaw-0.3.21nb4 libodfgen-0.1.7nb9 libpagemaker-0.0.4nb15 libproxy-0.5.9
+ libqxp-0.0.2nb23 libreoffice-24.8.2.1 librevenge-0.0.5nb1 libslang2-2.2.4nb5
+ libstaroffice-0.0.7nb9 libuv-1.49.1 libvisio-0.1.7nb24 libwpd-0.10.3nb9
+ libwpg-0.3.3nb12 libwps-0.4.12nb8 libzip-1.11.1 libzmf-0.0.2nb31 mdds-2.1.1nb2
+ mdds1.2-1.3.1nb15 meson-1.5.2 mkvtoolnix-87.0nb1 mlterm-3.9.3nb13 mpv-0.38.0nb1
+ nghttp3-1.6.0 ngtcp2-1.8.0 nss-3.105 openjdk17-1.17.0.12.7 openjdk8-1.8.422
+ orcus-0.19.2nb1 osg-3.6.5nb56 p5-HTTP-Message-7.00 p5-Mozilla-CA-20240924
+ p5-Net-DNS-1.47 p5-Scalar-List-Utils-1.66 p5-URI-5.30 poppler-24.10.0
+ poppler-cpp-24.10.0 poppler-includes-24.10.0 poppler-utils-24.10.0
+ py312-charset-normalizer-3.4.0 py312-cryptodome-3.21.0 py312-dns-2.7.0
+ py312-glad2-2.0.8 py312-markupsafe-3.0.1 py312-numpy-2.1.2 py312-pdf-5.0.1
+ py312-pspdfutils-3.3.5 py312-puremagic-1.28 py312-pyparsing-3.2.0
+ py312-requests-2.32.3nb1 py312-setuptools-75.2.0 py312-tomli-2.0.2
+ python312-3.12.7 qmmp-1.6.5nb9 qt6-qtbase-6.7.3 qt6-qtdeclarative-6.7.3
+ qt6-qtimageformats-6.7.3 qt6-qtlanguageserver-6.7.3 qt6-qtmultimedia-6.7.3
+ qt6-qtquick3d-6.7.3 qt6-qtquicktimeline-6.7.3 qt6-qtshadertools-6.7.3
+ qt6-qtsvg-6.7.3 raqm-0.10.2 rclone-1.68.1 rhash-1.4.5 ruby32-gdk3-4.2.3
+ ruby32-gtk3-4.2.3 rust-1.80.1 source-highlight-3.1.9nb8 strigi-0.7.8nb58
+ vte3-0.76.4 xfce4-tumbler-4.18.2nb8
 
 Tips:
 - System Clocks
@@ -223,7 +197,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 10.99.12 (GENERIC64) #0: Sat Sep 21 06:42:21 UTC 2024  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 10.99.12 (GENERIC64) #0: Mon Oct 14 12:26:28 UTC 2024  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
