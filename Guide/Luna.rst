@@ -686,6 +686,7 @@ LUNA年表　- 月の刃
  2024/5,青,OSC2024NagoyaでLUNA88K展示 [192]_
  2024/7,井,nono-0.7.3リリース
  2024/8,青,FUZIXを88kのXP上で起動実験
+ 2024/10,青,FUZIX 0.5 on OpenBSD/Luna88k [193]_
 
 最近のLUNA
 ----------------
@@ -970,6 +971,7 @@ Luna88K/OpenBSD 上で、pkgsrcを使っていくつかパッケージを作っ�
 .. [190] https://twitter.com/ao_kenji/status/1625846099394330625
 .. [191] http://www.pastel-flower.jp/~isaki/NetBSD/osc23hi/
 .. [192] https://event.ospn.jp/slides/OSC2024_Nagoya/OSC2024Nagoya_BSD.pdf
+.. [193] https://youtu.be/4OfjWRmDh2U 
 
 このページ
 ~~~~~~~~~~~

@@ -78,8 +78,10 @@ Maps:
  2023 Spring,4/1,450,53,東京都立産業貿易センター台東館
  2023 Fall,9/29-30,202,14,オンライン
  2023 Fall,10/21,300,29,大田区産業プラザPIO
- 2024 Spring,3/1-2,,,オンライン
- 2024 Spring,3/10,,,東京都立産業貿易センター台東館
+ 2024 Spring,3/1-2,312,20,オンライン
+ 2024 Spring,3/10,530,48,東京都立産業貿易センター台東館
+ 2024 Fall,3/1-2,,,オンライン
+ 2024 Fall,3/10,,,東京都立産業貿易センター台東館
 
  
 観光ガイドバックナンバー
@@ -92,6 +94,7 @@ Maps:
 
  No,イベント,URL
 
+ 204, OSC2024東京秋,http://www.re.soum.co.jp/~jun/OSC2024tokyofall.pdf 
  197, OSC2024東京春,http://www.re.soum.co.jp/~jun/OSC2023tokyospring.pdf 
  190, OSC2023東京秋,http://www.re.soum.co.jp/~jun/OSC2023tokyofall.pdf
  185, OSC2023東京春,http://www.re.soum.co.jp/~jun/OSC2023tokyospring.pdf 
@@ -126,6 +129,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2024 Online/Fall NetBSDのご紹介 の記録, https://togetter.com/li/2446541
  OSC2024 Online/Spring NetBSDのご紹介 の記録, https://togetter.com/li/2314715
  OSC2023 Online/Fall BSDなひととき の記録,https://togetter.com/li/2231931
  OSC2023 Online/Spring NetBSDのご紹介 の記録, https://togetter.com/li/2094211
@@ -182,7 +186,6 @@ OSC東京まとめ
  加賀屋,本郷三丁目,もつMLというBSD関連の集まりがありましてな。
  丹青通商,亀戸,AppleII 5000円 マイコンマニュアル&ぱふ
  三ちゃん,荻窪,ピングドラムに出てきたラーメン店。スタミナラーメン。
- ピンバイス,門前仲町,個人経営の粋なプラモデル店 小林店長2023/7逝去
  ムーンライト,生田,ビール醸造所。季節のフルーツビール。
  ヌビチヌ,野毛,素晴らしいスタンディングビアバー。
  大衆,生麦,焼肉ジンギスカンホッピー焼肉ジンギスカンホッピー。
@@ -198,6 +201,7 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2024/3/10,OSC2024東京春,NetBSD/atari
  2023/4/1,OSC2023東京春,NetBSD/next68k
  2019/11/23-24,OSC2019東京秋,NetBSD/zaurus8.1
  2019/2/22-23,OSC2018東京春,Zrouter FreeBSD/mips NetBSD/nintendo64
@@ -231,7 +235,39 @@ OSC東京主な展示物
  2004/9/4,OSC2004,hpcmips/sh/arm
 
 
+2024年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. image::  ../Picture/2024/03/10/DSC_2783.JPG
+.. image::  ../Picture/2024/03/10/DSC_2784.JPG
+.. image::  ../Picture/2024/03/10/DSC_2785.JPG
+.. image::  ../Picture/2024/03/10/DSC_2786.JPG
+.. image::  ../Picture/2024/03/10/DSC_2787.JPG
+.. image::  ../Picture/2024/03/10/DSC_2788.JPG
+.. image::  ../Picture/2024/03/10/DSC_2789.JPG
+.. image::  ../Picture/2024/03/10/DSC_2790.JPG
+.. image::  ../Picture/2024/03/10/DSC_2791.JPG
+.. image::  ../Picture/2024/03/10/DSC_2792.JPG
+.. image::  ../Picture/2024/03/10/DSC_2794.JPG
+.. image::  ../Picture/2024/03/10/DSC_2795.JPG
+.. image::  ../Picture/2024/03/10/DSC_2796.JPG
+.. image::  ../Picture/2024/03/10/DSC_2797.JPG
+.. image::  ../Picture/2024/03/10/DSC_2798.JPG
+.. image::  ../Picture/2024/03/10/DSC_2799.JPG
+.. image::  ../Picture/2024/03/10/DSC_2800.JPG
+.. image::  ../Picture/2024/03/10/DSC_2801.JPG
+.. image::  ../Picture/2024/03/10/DSC_2802.JPG
+.. image::  ../Picture/2024/03/10/DSC_2803.JPG
+.. image::  ../Picture/2024/03/10/DSC_2804.JPG
+.. image::  ../Picture/2024/03/10/DSC_2805.JPG
+.. image::  ../Picture/2024/03/10/DSC_2806.JPG
+.. image::  ../Picture/2024/03/10/DSC_2807.JPG
+.. image::  ../Picture/2024/03/10/DSC_2808.JPG
+.. image::  ../Picture/2024/03/10/DSC_2809.JPG
+.. image::  ../Picture/2024/03/10/DSC_2810.JPG
+.. image::  ../Picture/2024/03/10/DSC_2811.JPG
+.. image::  ../Picture/2024/03/10/DSC_2816.JPG
+.. image::  ../Picture/2024/03/10/DSC_2817.JPG
 
 2023年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
