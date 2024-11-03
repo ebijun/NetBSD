@@ -40,9 +40,10 @@ Makefile 内のバージョンをあげます。
 
 ::  
 
- % make makesum  
- -rw-r--r--  1 jun  wheel  1164 Jul  9 10:00 Makefile
- -rw-r--r--  1 jun  wheel   304 Jul  9 10:01 distinfo
+ % make makesum
+ -rw-r--r--  1 jun   wheel   357 Nov  4 01:17 PLIST
+ -rw-r--r--  1 root  wheel   558 Nov  4 00:59 distinfo
+ -rw-r--r--  1 jun   wheel  1164 Nov  4 00:56 Makefile
 
 make package して動作を確認します。
  
@@ -102,9 +103,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 0.7.3
+ doc: Updated emulators/nono to 1.0.0
  
  cvs diff -u CHANGES-2024
  
-        Updated emulators/nono to 0.7.3 [jun 2024-07-09]
+        Updated emulators/nono to 1.0.0 [jun 2024-11-04]
 
