@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/shimane
+ Place/osaka
  RPI/RPIupdate2024
  OSC/OSC2024
  RPI

@@ -35,6 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
+ 2024/10-11 NetBSDブースの記録,https://togetter.com/li/2456931
  オープンソースカンファレンス2024大阪展示の記録,https://togetter.com/li/2298407
  KOF2023&OSC2023広島の記録,https://togetter.com/li/2254094
  OSC2023 Online/Osaka NetBSDのご紹介 の記録,https://togetter.com/li/2060234
@@ -64,7 +65,10 @@ Maps:
 .. csv-table::
  :widths: 25 15 60
 
- 中之島美術館,中之島,長沢芦雪&ターナー
+ Craft Beer Base Mother Tree,梅田,As Time Gose By
+ クラフトマン UMAMI,梅田ESTの先,ぷーさんのダークハニーハント#2
+ ビールと羊,梅田,知らんけどとKUDAMON。
+ 中之島美術館,中之島,塩田千春
  marca,大正,クラフトビール。大正タグボート平日16:00 土日11:00 23時。
  旧ヤム邸,谷六,カレー。二階にねこがいる。11:30-14:00 18:00-21:00
  Goul Goul,谷六,17:00-23:00 オープン時にThis is PiL
@@ -83,7 +87,7 @@ Maps:
  ドリーム,西宮北口,15000回ループしてからKOF会場にゴー!8:00-17:00。
  ドルフィンズ,梅田,大阪さん業界館開催時に打ち上げをやってた堺筋本町は閉店。梅田か天満橋に行くこと。
  地底旅行,弁天町,大阪地底1200mから湧く地底ビールと温泉
- 電気蕎麦,天満橋,ピーという発信音の後に日本蕎麦。看板に注目
+ 電気蕎麦,天満橋,ピーという発信音の後に日本蕎麦。看板に注目。閉店。
  アートコートギャラリー,天満宮,OAP彫刻の小径2022-2024: 市野雅彦・坪田昌之「Twist」
  ファンダンゴ,堺,関西ロックパンク修行場　堺に移転4周年。
  タイムボム,南堀江,中古レコード。タイムボムレコーズというのがありましてな。2019/12に四ツ橋に移転
@@ -112,9 +116,10 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ digital VAX NetBSD/vaxの歴史とVAXstation 3100/m30展示,OSC2024大阪,https://speakerdeck.com/tsutsui/osc2024osaka
  SONY NEWS NetBSD移植作業とNWS-3260展示,KOF2023, https://speakerdeck.com/tsutsui/kof2023
  KOFの20年とBSDユーザーグループの20年／中野秀男氏,KOF2022, https://www.k-of.jp/2022/session/nakano-ebijun-talk/
- 37年前の Sun 3/60 のために最新のNetBSDと最新のX.orgをメンテする話,KOF2022, https://speakerdeck.com/tsutsui/kof2022
+ 37年前の Sun 3/60 のために最新のNetBSDと最新のXをメンテする話,KOF2022, https://speakerdeck.com/tsutsui/kof2022
  お歳暮でSun3が送られてきたので,OSC2020大阪,https://speakerdeck.com/tsutsui/osc2020osaka
  Fixing NetBSD/zaurus 8.1,KOF2019,https://speakerdeck.com/tsutsui/kof2019-netbsd
  dosbox tutorial,OSC2019大阪,@kapper1224 http://kapper1224.sblo.jp/
@@ -125,7 +130,7 @@ Maps:
  PC6001 emulator PC6001VX on NetBSD + pkgsrc,OSC大阪2017,https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
  NetBSD/dreamcast IDE HDD,KOF2016,https://speakerdeck.com/tsutsui/kof2016-netbsd-dreamcast-ide-hdd
  emacs18.59&mule1.1,KOF2015,https://speakerdeck.com/tsutsui/kof2015-emacs-18-dot-59-and-mule-1-dot-1-on-netbsd-7-dot-0
- fdgw2,KOF2015,http://e-yuuki.org/events/fdgw2/assets/player/KeynoteDHTMLPlayer.html#0
+ fdgw2,KOF2015,http://e-yuuki/events/fdgw2/assets/player/KeynoteDHTMLPlayer.html#0
  KOFにおけるLUNA展示,KOF2014,https://speakerdeck.com/tsutsui/kof-and-luna-at-netbsd-booth
  NetBSDブートローダー解説とluna68kでの実装,KOF2013,http://www.ceres.dti.ne.jp/tsutsui/kof2013/NetBSD_bootloader.html
  なぜ謎マシン,KOF2011,http://www.ceres.dti.ne.jp/tsutsui/kof2011/Why-enigmatic-machines.html
@@ -139,6 +144,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2024/1/27,大阪産業創造館,VAXstation 3100/m30
  2023/11/10-11,南港ATC,NEWS NWS-3260
  2022/11/12,南港ATC,sun3/60
  2020/1/25,大阪産業創造館, NetBSD9.0 RC1/sun3 
@@ -161,6 +167,34 @@ Maps:
  2005/10/28-29,大阪産業創造館,EWS4800/360AD ドリキャス+ISAバス　USL-5P
  2004/10-22-23,大阪産業創造館,XCAST ふきだしくん 
  2003/10/31-11/1,大阪産業創造館,XCAST トレバ
+
+2024
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2024/01/27/DSC_2571.JPG
+.. image::  ../Picture/2024/01/27/DSC_2572.JPG
+.. image::  ../Picture/2024/01/27/DSC_2573.JPG
+.. image::  ../Picture/2024/01/27/DSC_2574.JPG
+.. image::  ../Picture/2024/01/27/DSC_2575.JPG
+.. image::  ../Picture/2024/01/27/DSC_2576.JPG
+.. image::  ../Picture/2024/01/27/DSC_2577.JPG
+.. image::  ../Picture/2024/01/27/DSC_2578.JPG
+.. image::  ../Picture/2024/01/27/DSC_2579.JPG
+.. image::  ../Picture/2024/01/27/DSC_2580.JPG
+.. image::  ../Picture/2024/01/27/DSC_2581.JPG
+.. image::  ../Picture/2024/01/27/DSC_2582.JPG
+.. image::  ../Picture/2024/01/27/DSC_2583.JPG
+.. image::  ../Picture/2024/01/27/DSC_2584.JPG
+.. image::  ../Picture/2024/01/27/DSC_2585.JPG
+.. image::  ../Picture/2024/01/27/DSC_2586.JPG
+.. image::  ../Picture/2024/01/27/DSC_2587.JPG
+.. image::  ../Picture/2024/01/27/DSC_2588.JPG
+.. image::  ../Picture/2024/01/27/DSC_2589.JPG
+.. image::  ../Picture/2024/01/27/DSC_2590.JPG
+.. image::  ../Picture/2024/01/27/DSC_2591.JPG
+.. image::  ../Picture/2024/01/27/DSC_2592.JPG
+.. image::  ../Picture/2024/01/27/DSC_2593.JPG
+.. image::  ../Picture/2024/01/27/DSC_2594.JPG
 
 2023
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
