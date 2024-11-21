@@ -1,5 +1,6 @@
 RELEASE=/usr/release/images
-IMG=${RELEASE}/NetBSD-10.99.12-evbarm-aarch64-202410141310Z-install.img
+IMG=${RELEASE}/NetBSD-10.99.12-evbarm-aarch64-202411210240Z-install.img
+#IMG=${RELEASE}/NetBSD-10.99.12-evbarm-aarch64-202410141310Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.12-evbarm-aarch64-202409150410Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.11-evbarm-aarch64-202408160830Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.11-evbarm-aarch64-202407140910Z-install.img
@@ -9,8 +10,6 @@ IMG=${RELEASE}/NetBSD-10.99.12-evbarm-aarch64-202410141310Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.10-evbarm-aarch64-202401141100Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.10-evbarm-aarch64-202312041140Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.10-evbarm-aarch64-202311051250Z-install.img
-#IMG=${RELEASE}/NetBSD-10.99.10-evbarm-aarch64-202310150750Z-install.img
-#IMG=${RELEASE}/NetBSD-10.99.8-evbarm-aarch64-202309121100Z-install.img
 
 IMAGE=arm64.img
 VND0=/dev/sd0
