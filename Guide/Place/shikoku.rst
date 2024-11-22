@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -36,7 +36,7 @@ Maps:
 
  オープンソースソフトウェアシンポジウム KAOS (KAgawa Open Source)
  2001年9月23日～24日 香川大学工学部
- http://www.jp.netbsd.org/ja/JP/ml/admin-ja/200107/msg00006.html
+ http://www.jp.netbsd/ja/JP/ml/admin-ja/200107/msg00006.html
  http://www.yagoto-urayama.jp/~oshimaya/nbug/oss2001/index.html
 
 四国でのオープンソースカンファレンス
@@ -54,8 +54,9 @@ Maps:
  2015, Tokushima, 11/14 , 200, 24
  2016, OSuCehime,10/8, ,
  2018, Kagawa, 10/6,110,14
- 2019, Tokushima,10/19,,24
-
+ 2019, Tokushima,10/19,200,24
+ 2024, Ehime    ,  11/12 ,    ,    
+  
 togetterまとめ
 ~~~~~~~~~~~~~~~
 
@@ -67,6 +68,8 @@ togetterまとめ
  オープンソースアンカンファレンス2014香川　NetBSDブース展示の記録,http://togetter.com/li/654135
  OSC2015徳島 NetBSDブース展示の記録,https://togetter.com/li/899923
  OSC2018香川 NetBSDブース展示の記録,https://togetter.com/li/1273756
+ OSC2019徳島 NetBSDブース展示の記録,https://togetter.com/li/1418848
+ 2024/10-11 NetBSDブースの記録,https://togetter.com/li/2456931
 
 四国での発表
 ~~~~~~~~~~~~
@@ -81,13 +84,15 @@ NetBSD20年 tsutsuii@ さん
  http://www.slideshare.net/tsutsuii/osc2013tokushima-net-bsd20th
 
 XM6i近況 isaki68k@ さん
- http://xm6i.org/event/osc2012eh/page1.html
+ http://xm6i/event/osc2012eh/page1.html
 
 NetBSD/x68k近況　isaki68k@ さん
  http://www.pastel-flower.jp/~isaki/NetBSD/osc12eh/page1.html
 
 OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
  https://speakerdeck.com/tsutsui/osunc14kg-netbsd-ddd
+
+
 
 四国での主な展示物
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -100,6 +105,7 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
  2014, hp300 RPI zaurus hpcarm
  2015, PANIX RPI zaurus hpcarm
  2018, LUNA+PSG XM6i omxplayer EeePC
+ 2019, PANIX RPI
 
 よく行く店 徳島
 ~~~~~~~~~~~~~~~~~~~~~
@@ -166,14 +172,24 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
 .. csv-table::
  :widths: 25 15 60
 
+ BOKKE,南堀端町5-6,7タップ 土曜は14:00-
+ DD4D,千舟町4-2-6,松山市駅5分 ボルテスVコラボ
+ HOJO Brewing,伊予北条,11:00-19:30
  道後麦酒館,道後温泉,クラフトビールとじゃこ天
+ 臥龍醸造,大洲,大洲98-1
+ ごごしまビアファーム,由良町,11：00～17：00 Iyokan IPA
+ 麦宿伝,三津,祓川2-5-13 ダブルパンチ。
+ 豚珍行,二番町,三宅大志さんのサイン色紙
+ プラモ,余戸,余戸南3丁目
+ 冨田電子機器,保免中,保免中2丁目14-18
+ アイコー技研,西石井,西石井3-2-6
  伊丹十三記念館,東石井,旅の時代 ― 伊丹十三の日本人大探訪 ―
  利休,山西,三津浜焼き
  一酒一感 蔵元屋,勝山町,愛媛蔵元の地酒スタンドバー
  坊っちゃん書房,閉店,混沌とした古本の渦
  marui records,銀天街,レコード/CD　銀天街へ移転
  more music,大手町,中古レコード/CD
- イタリア軒,二番町,西洋料理
+ イタリア軒,二番町,西洋料理　2017/8 閉店
  独奏,二番町,街の雑踏に潜むバー。 
  宇和米博物館,宇和町,毎日新聞活版機械？第２校舎
 
@@ -187,6 +203,38 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
  Rockカフェぽおる,はりまや町,ロックバー。近くに移転したらしい
  森山製パン所,宝永町,味付けサンド ピーナツ味
  横山隆一記念まんが館,はりまや橋,安倍夜朗展
+
+2019年 徳島
+~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2019/10/19/DSC_7910.JPG
+.. image::  ../Picture/2019/10/19/DSC_7911.JPG
+.. image::  ../Picture/2019/10/19/DSC_7912.JPG
+.. image::  ../Picture/2019/10/19/DSC_7913.JPG
+.. image::  ../Picture/2019/10/19/DSC_7914.JPG
+.. image::  ../Picture/2019/10/19/DSC_7915.JPG
+.. image::  ../Picture/2019/10/19/DSC_7917.JPG
+.. image::  ../Picture/2019/10/19/DSC_7918.JPG
+.. image::  ../Picture/2019/10/19/DSC_7919.JPG
+.. image::  ../Picture/2019/10/19/DSC_7920.JPG
+.. image::  ../Picture/2019/10/19/DSC_7921.JPG
+.. image::  ../Picture/2019/10/19/DSC_7922.JPG
+.. image::  ../Picture/2019/10/19/DSC_7923.JPG
+.. image::  ../Picture/2019/10/19/DSC_7924.JPG
+.. image::  ../Picture/2019/10/19/DSC_7925.JPG
+.. image::  ../Picture/2019/10/19/DSC_7926.JPG
+.. image::  ../Picture/2019/10/19/DSC_7927.JPG
+.. image::  ../Picture/2019/10/19/DSC_7928.JPG
+.. image::  ../Picture/2019/10/19/DSC_7929.JPG
+.. image::  ../Picture/2019/10/19/DSC_7930.JPG
+.. image::  ../Picture/2019/10/19/DSC_7931.JPG
+.. image::  ../Picture/2019/10/19/DSC_7932.JPG
+.. image::  ../Picture/2019/10/19/DSC_7933.JPG
+.. image::  ../Picture/2019/10/19/DSC_7934.JPG
+.. image::  ../Picture/2019/10/19/DSC_7935.JPG
+.. image::  ../Picture/2019/10/19/DSC_7936.JPG
+.. image::  ../Picture/2019/10/19/DSC_7937.JPG
+
 
 2018年 香川
 ~~~~~~~~~~~~~

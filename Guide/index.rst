@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/niigata
+ Place/shikoku
  RPI/RPIupdate2024
  OSC/OSC2024
  RPI

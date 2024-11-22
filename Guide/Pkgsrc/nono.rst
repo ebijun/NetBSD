@@ -33,16 +33,17 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-0.7.3
+ DISTNAME=       nono-1.0.0
 
 チェックサム作成
 ------------------
 
 ::  
 
- % make makesum  
- -rw-r--r--  1 jun  wheel  1164 Jul  9 10:00 Makefile
- -rw-r--r--  1 jun  wheel   304 Jul  9 10:01 distinfo
+ % make makesum
+ -rw-r--r--  1 jun   wheel   357 Nov  4 01:17 PLIST
+ -rw-r--r--  1 root  wheel   558 Nov  4 00:59 distinfo
+ -rw-r--r--  1 jun   wheel  1164 Nov  4 00:56 Makefile
 
 make package して動作を確認します。
  
@@ -70,26 +71,29 @@ commit
 
  cvs commit 
 
- nono: update to 0.7.3.
+ nono: update to 1.0.0.
 
- 0.7.3 (2024/07/03)
+ 1.0.0 (2024/10/31)
 
- vm(Fix): "Fix problem that resetting on LUNA-88K sometimes stops the scheduler."
- vm(Fix): "Fix problem that MSX-DOS mode immediately exits since er 0.7.0."
- vm(Fix): "Fix problem that the real PROM image could not access SPC correctly on LUNA-I since ver 0.7.0."
- vm(Fix): "Make an error if the directory specified by windrv-path does not exist on startup."
- vm(Fix): "Fix problem that the renderer runs excessively."
- vm(New): "X68030 Contrast rendering now can use NEON on aarch64."
- vm(New): "Implement SSG (YM2149) registers only (It doesn't work yet)."
- vm(Update): "Mainview scaling is now done by the renderer thread."
- vm(Update): "Display register addresses on the SPC monitor."
- vm(Update): "Change several SCSI internal structures. No functional changes intended."
- vm(Update): "Various internal improvements. No functional changes intended."
- m68k(Update): "Put back the number of ATC lines to 22. It improves the performance about 2%."
- GUI(New): "Make the access status monitor graphical."
- GUI(Update): "Change whole bitmap internal structures. No functional changes intended."
- GUI(Update): "Improve scaling performance at preset magnification by 3-5 times."
- vm(New): "Allow CPU affinity configuration for debugging and evaluation." 
+ m68k(New): "Implement data cache."
+ vm(Update): "Rewrite whole bus structure."
+ m68k(Update): "Implement FTRAPcc instructions."
+ m68k(Fix): "Fix problem that MOVE.W ea,CCR instruction was not privileged."
+ m68k(Fix): "Fix cache entry clear operation."
+ m68k(Fix): "Fix problem that RTE instruction may not be able to recover from a bus error if it occurred on an instruction which accesses the same register's (An)+ or -(An) twice."
+ m68k(Fix): "Fix problem that some exception vector was fetched from wrong address space."
+ m68k(Fix): "Fix problem that 68030 register monitor displays FPU registers even though no FPU."
+ vm(Update): "Fix accessing to Lance's undefined port on LUNA-88K."
+ vm(Update): "Fix accessing to CRTC's undefined port on X68030."
+ vm(Update): "Implement several DOS calls on Human68k mode. Now you can run fputest.x (0.17.* and later) on it."
+ vm(Fix): "Fix a device reset on VirtIO Network device."
+ vm(Fix): "Fix a word access to some DMAC registers on X68030."
+ vm(Fix): "Fix problem that the third decimal place of configuration item mpu-clock may not be able to specified correctly."
+ vm(Fix): "Fix possibility of an abnormal termination on CTRL+OPT.1+DEL input on X68030."
+ vm(Fix): "Fix problem that you could not access the floppy again while the motor is on on X68030."
+ app(Update): "Make -c optional when -H is specified."
+ GUI(Fix): "Support display of 100x speed or more on performance counter."
+ util(New): "Implement runx. It can run instructiontest.x and fputest.x (before 0.16.* and after 0.17.*)." 
 
 doc をcommit します
 ---------------------
@@ -99,9 +103,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 0.7.3
+ doc: Updated emulators/nono to 1.0.0
  
  cvs diff -u CHANGES-2024
  
-        Updated emulators/nono to 0.7.3 [jun 2024-07-09]
+        Updated emulators/nono to 1.0.0 [jun 2024-11-04]
 

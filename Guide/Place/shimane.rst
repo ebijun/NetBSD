@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -50,8 +50,9 @@
  2017,10/14,113,19,松江テルサ
  2018,11/23,100,19,松江テルサ
  2019,9/28,150,19,松江テルサ
- 2023,10/28,,,松江テルサ
-
+ 2023,10/28,100,18,松江テルサ
+ 2024,11/2,,,島根県民会館 
+ 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -62,6 +63,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+
+ 205,OSC2024島根,http://www.re.soum.co.jp/~jun/OSC2024shimane.pdf 
  191,OSC2023島根,http://www.re.soum.co.jp/~jun/OSC2023shimane.pdf
  147,OSC2019島根,http://www.re.soum.co.jp/~jun/OSC2019shimane.pdf
  135,OSC2018島根,http://www.re.soum.co.jp/~jun/OSC2018shimane.pdf
@@ -80,6 +83,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2024島根 NetBSDブース展示の記録,https://togetter.com/li/2456931
  OSC2023島根 NetBSDブース展示の記録,https://togetter.com/li/2247549
  OSC2019島根 NetBSDブース展示の記録,https://togetter.com/li/1409871
  OSC2018島根 NetBSDブース展示の記録,https://togetter.com/li/1291113
@@ -101,18 +105,23 @@ togetterまとめ
 .. csv-table::
  :widths: 30 25 60
 
- CRAFT BEER PARADISE,朝日町,平日18:30 土日15:30-
+ らーめんとんてき大翔,殿町３３３,ラーテキセット
+ Imagine.coffee,伊勢宮,ひつじ製菓とのペアリングとか。
+ S-PARK,松江駅,ビアへるん+島根日本酒全種類　十旭日(じゅうじあさひ)
+ CRAFT BEER PARADISE,朝日町,平日18:30 土日15:30
+ 松江地ビール館,遊覧船発着場,ビアへるん。1730までだからすぐ行く。
+ ミートショップきたがき,西茶町,ビーフコロッケとミンチカツ
+ しまね映画祭,,砂の器 35mm上映
+ NAKEDSPACE,末次本町京店77,2024/11/9 神在音楽祭
+ 山陰ケーブルビジョン,,鷹の爪団を放映しつづけている
  島根県立石見美術館,益田,内藤廣展
  LOVE YOUR NEIGHBOR,売布神社前,クラフトビールとハンバーガー。臨時休業中?
- S-PARK,松江駅,ビアへるん+島根日本酒全種類　十旭日(じゅうじあさひ)
- 松江地ビール館,遊覧船発着場,ビアへるん。1730までだからすぐ行く。
  石見麦酒,江津市,地ビールブルワリー。松江駅で松江茶ビール。札幌さいとさんの店。
- Imagine.coffee,伊勢宮,ひつじ製菓とのペアリングとか。
  一隆,伊勢宮町,玉鋼 八塩折酒 割子そば
  ちくてい,,ラーメン
  ベニヤ模型,末次本町,http://www5e.biglobe.ne.jp/~beniya-m/
  EAD,松江大橋,リニューアル前は、とりあえずを頼むととりあえずが出て来た。
- デンゲンパーツ,くにびきメッセ隣,電子部品・無線機屋
+ デンゲンパーツ,くにびきメッセ隣,電子部品・無線機屋 閉店
  たぬき堂書店,伊勢宮,昭和初期地元書籍多数
  國暉酒造,東茶街,蔵しっく館
  島根県立美術館,宍道湖畔,ベルギー近代美術の精華展
@@ -120,7 +129,7 @@ togetterまとめ
  服部珈琲工房,市内,冬珈琲 黒田店はオフハウス近く。朝粥モーニング
  国際宇宙・生物研究所,東横イン裏,エドゥリスリオハ白
  ホーランエンヤ,城山稲荷神社,OSC2009のときサンライズから見た
- ジャズバーぽえむ,松江大橋,園山ビル2F。4344がある。
+ ジャズバーぽえむ,松江大橋,園山ビル2F。4344がある。閉店。
  三英堂,浜乃木,若草を買う。
  赤べこ,朝日町交差点,上寿司、煮物、大将がX68の偉い人に面影が
  じう,ハイカラビル,日本酒バー
@@ -141,6 +150,8 @@ togetterまとめ
 
  475ビール,富士見町,JAPBrewery
  焼きそば樫 ,河原町,復活！！俺の愛を焼きそばに込めてFor you。
+ おはよう堂,鳥取市公設卸売市場,魚定食26種類
+ 鳥人,津ノ井,飛魚だしスープ
  鳥取環境大学,若葉台,鳥取名産NEWSとヤギ。
  道の駅,琴浦町,琴浦さんの水
  稲田屋,米子,稲田姫 朝日町58-11
@@ -205,6 +216,41 @@ OSC松江展示物
 #. SONY NEWS
 #. OMRON LUNAII
 #. Sun Java Station
+
+
+2023年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2024/10/27/DSC_2108.JPG
+.. image::  ../Picture/2024/10/27/DSC_2109.JPG
+.. image::  ../Picture/2024/10/27/DSC_2110.JPG
+.. image::  ../Picture/2024/10/27/DSC_2111.JPG
+.. image::  ../Picture/2024/10/27/DSC_2112.JPG
+.. image::  ../Picture/2024/10/27/DSC_2113.JPG
+.. image::  ../Picture/2024/10/27/DSC_2116.JPG
+.. image::  ../Picture/2024/10/27/DSC_2117.JPG
+.. image::  ../Picture/2024/10/27/DSC_2118.JPG
+.. image::  ../Picture/2024/10/27/DSC_2119.JPG
+.. image::  ../Picture/2024/10/27/DSC_2120.JPG
+.. image::  ../Picture/2024/10/27/DSC_2122.JPG
+.. image::  ../Picture/2024/10/27/DSC_2123.JPG
+.. image::  ../Picture/2024/10/27/DSC_2124.JPG
+.. image::  ../Picture/2024/10/28/DSC_2125.JPG
+.. image::  ../Picture/2024/10/28/DSC_2126.JPG
+.. image::  ../Picture/2024/10/28/DSC_2127.JPG
+.. image::  ../Picture/2024/10/28/DSC_2128.JPG
+.. image::  ../Picture/2024/10/28/DSC_2129.JPG
+.. image::  ../Picture/2024/10/28/DSC_2130.JPG
+.. image::  ../Picture/2024/10/28/DSC_2131.JPG
+.. image::  ../Picture/2024/10/28/DSC_2132.JPG
+.. image::  ../Picture/2024/10/28/DSC_2133.JPG
+.. image::  ../Picture/2024/10/28/DSC_2134.JPG
+.. image::  ../Picture/2024/10/28/DSC_2135.JPG
+.. image::  ../Picture/2024/10/28/DSC_2136.JPG
+.. image::  ../Picture/2024/10/28/DSC_2137.JPG
+.. image::  ../Picture/2024/10/28/DSC_2138.JPG
+.. image::  ../Picture/2024/10/28/DSC_2139.JPG
+.. image::  ../Picture/2024/10/28/DSC_2140.JPG
 
 2019年
 ~~~~~~~~~~~~~~~~~~
