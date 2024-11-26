@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20241018)
+Subject: pinebook status update (20241126)
 
 NetBSD Arm Bootable Images: NetBSD9/NetBSD10/NetBSD-current
  https://www.armbsd.org
@@ -107,40 +107,95 @@ ToDo:
  - internal WiFi
 
 sysinfo:
- bind-9.18.30 libssh-48.0 openssh-9.9 opensshd-9.9 sh-20220122-20241014122628Z
+ sh-20220122-20241124194118Z tzdata-2024bgtz
 
 pkgsrc:
- MesaLib-21.3.9nb4 SDL2-2.30.8 atril-1.26.2nb5 bash-5.2.37 boost-build-1.86.0
- boost-docs-1.86.0 boost-headers-1.86.0 boost-jam-1.86.0 boost-libs-1.86.0
- cmake-3.30.5 cmus-2.10.0nb9 cups-base-2.4.10nb1 deforaos-pdfviewer-0.1.0nb27
- exempi-2.5.2nb8 ffmpeg7-7.1 firefox-131.0.2 firefox-l10n-131.0.2
- firefox115-115.16.1 firefox115-l10n-115.16.0 fribidi-1.0.16
- ghostscript-agpl-10.04.0 gimp-2.10.38nb3 git-base-2.47.0 go-1.23.2 go122-1.22.8
- go123-1.23.2 graphviz-12.1.2nb1 gst-plugins1-bad-1.24.8
- gst-plugins1-base-1.24.8 gst-plugins1-good-1.24.8 gstreamer1-1.24.8 jwm-2.4.5
- kdelibs4-4.14.38nb40 libabw-0.1.3nb21 libaom-3.10.0nb1 libcares-1.34.1nb1
- libcdr-0.1.7nb14 libclucene-2.3.3.4nb26 libdeflate-1.22 libe-book-0.1.3nb30
- libepubgen-0.1.1nb9 libetonyek-0.1.10nb14 libfreehand-0.1.2nb22 libgsf-1.14.53
- libixion-0.19.0nb2 libkactivities4-4.13.3nb38 libmspub-0.1.4nb29
- libmwaw-0.3.21nb4 libodfgen-0.1.7nb9 libpagemaker-0.0.4nb15 libproxy-0.5.9
- libqxp-0.0.2nb23 libreoffice-24.8.2.1 librevenge-0.0.5nb1 libslang2-2.2.4nb5
- libstaroffice-0.0.7nb9 libuv-1.49.1 libvisio-0.1.7nb24 libwpd-0.10.3nb9
- libwpg-0.3.3nb12 libwps-0.4.12nb8 libzip-1.11.1 libzmf-0.0.2nb31 mdds-2.1.1nb2
- mdds1.2-1.3.1nb15 meson-1.5.2 mkvtoolnix-87.0nb1 mlterm-3.9.3nb13 mpv-0.38.0nb1
- nghttp3-1.6.0 ngtcp2-1.8.0 nss-3.105 openjdk17-1.17.0.12.7 openjdk8-1.8.422
- orcus-0.19.2nb1 osg-3.6.5nb56 p5-HTTP-Message-7.00 p5-Mozilla-CA-20240924
- p5-Net-DNS-1.47 p5-Scalar-List-Utils-1.66 p5-URI-5.30 poppler-24.10.0
- poppler-cpp-24.10.0 poppler-includes-24.10.0 poppler-utils-24.10.0
- py312-charset-normalizer-3.4.0 py312-cryptodome-3.21.0 py312-dns-2.7.0
- py312-glad2-2.0.8 py312-markupsafe-3.0.1 py312-numpy-2.1.2 py312-pdf-5.0.1
- py312-pspdfutils-3.3.5 py312-puremagic-1.28 py312-pyparsing-3.2.0
- py312-requests-2.32.3nb1 py312-setuptools-75.2.0 py312-tomli-2.0.2
- python312-3.12.7 qmmp-1.6.5nb9 qt6-qtbase-6.7.3 qt6-qtdeclarative-6.7.3
- qt6-qtimageformats-6.7.3 qt6-qtlanguageserver-6.7.3 qt6-qtmultimedia-6.7.3
- qt6-qtquick3d-6.7.3 qt6-qtquicktimeline-6.7.3 qt6-qtshadertools-6.7.3
- qt6-qtsvg-6.7.3 raqm-0.10.2 rclone-1.68.1 rhash-1.4.5 ruby32-gdk3-4.2.3
- ruby32-gtk3-4.2.3 rust-1.80.1 source-highlight-3.1.9nb8 strigi-0.7.8nb58
- vte3-0.76.4 xfce4-tumbler-4.18.2nb8
+ GConf-3.2.3nb22 ImageMagick-7.1.1.35nb6 ImageMagick6-6.9.13.3nb6
+ SDL2-2.30.9nb1 amtk-5.0.2nb12 apache-2.4.62nb3 appstream-1.0.3nb5
+ apr-util-1.6.3nb7 asunder-3.0.1nb3 at-spi2-core-2.54.0nb4 atkmm-2.28.4nb2
+ attica-qt5-5.116.0nb3 audacious-4.1nb22 audacious-plugins-4.1nb40
+ autogen-5.18.16nb15 babl-0.1.110 boost-libs-1.86.0nb3 bsdtar-3.7.7
+ caja-1.26.4nb5 clang-18.1.8nb3 cmake-3.31.0nb1 curl-8.11.0nb2 dav1d-1.5.0
+ deforaos-camera-0.3.0nb14 deforaos-editor-0.4.1nb14
+ deforaos-libdesktop-0.4.1nb11 deforaos-mixer-0.4.1nb10 deforaos-phone-0.6.0nb16
+ ebook-tools-0.2.2nb25 elementary-xfce-icon-theme-0.20 engrampa-1.26.2nb4
+ eom-1.26.1nb13 farstream-0.2.9nb23 ffmpeg2-2.8.22nb3 ffmpeg3-3.4.13nb3
+ ffmpeg4-4.4.5nb4 ffmpeg5-5.1.6nb3 ffmpeg6-6.1.2nb4 ffmpeg7-7.1nb4
+ file-roller-3.38.0nb12 firefox-132.0.2 firefox-l10n-132.0.1 fltk-1.3.10
+ fluidsynth-2.4.0 fossil-2.25nb1 gconfmm-2.28.3nb37 gdbus-codegen-2.82.2
+ gdl-3.34.0nb28 gedit-3.36.2nb29 gegl-0.4.50nb1 geocode-glib-3.26.2nb13
+ ghostscript-9.05nb40 ghostscript-agpl-10.04.0nb3 gimp-2.10.38nb10
+ git-base-2.47.0nb3 glib-networking-2.80.0nb5 glib2-2.82.2 glib2-tools-2.82.2
+ gnome-icon-theme-symbolic-3.12.0nb30 gnupg2-2.4.6nb4 gnutls-3.8.8nb2 go-1.23.3
+ go122-1.22.9 go123-1.23.3 gpgme-1.24.0nb1 graphviz-12.2.0 gspell-1.8.4nb7
+ gssdp-1.6.2nb6 gst-plugins1-bad-1.24.9 gst-plugins1-base-1.24.9
+ gst-plugins1-good-1.24.9nb1 gstreamer1-1.24.9 gtk-doc-1.34.0nb4
+ gtk2+-2.24.33nb25 gtk2-engines-2.20.2nb38 gtk2-engines-murrine-0.98.2nb21
+ gtk3+-3.24.43nb5 gtkmm-2.24.5nb24 gtkmm3-3.24.9nb6 gtksourceview4-4.8.4nb12
+ gtkspell-2.0.16nb43 gupnp-1.6.6nb6 gupnp-igd-1.6.0nb5 gvfs-1.6.7nb71
+ harfbuzz-10.1.0 harfbuzz-icu-10.1.0 hwloc-1.11.13nb12 icu-76.1 imlib2-1.12.2nb2
+ jwm-2.4.5nb3 karchive-5.116.0nb3 kauth-5.116.0nb3 kbookmarks-5.116.0nb3
+ kcodecs-5.116.0nb3 kcompletion-5.116.0nb3 kconfig-5.116.0nb3
+ kconfigwidgets-5.116.0nb3 kcoreaddons-5.116.0nb3 kcrash-5.116.0nb3
+ kdbusaddons-5.116.0nb3 kdoctools-5.116.0nb3 kglobalaccel-5.116.0nb3
+ kguiaddons-5.116.0nb3 ki18n-5.116.0nb3 kiconthemes-5.116.0nb3 kio-5.116.0nb4
+ kitemmodels-5.116.0nb3 kitemviews-5.116.0nb3 kjobwidgets-5.116.0nb3
+ knotifications-5.116.0nb5 kparts-5.116.0nb4 kplotting-5.116.0nb3
+ kservice-5.116.0nb3 ktextwidgets-5.116.0nb3 kwallet-5.116.0nb4
+ kwidgetsaddons-5.116.0nb3 kwindowsystem-5.116.0nb3 kxmlgui-5.116.0nb3
+ libabw-0.1.3nb24 libappindicator-12.10.0nb26 libarchive-3.7.7
+ libbluray-1.3.4nb8 libcanberra-0.30nb17 libcares-1.34.3 libcdr-0.1.7nb17
+ libcroco-0.6.13nb13 libcups-2.4.11nb3 libdazzle-3.38.0nb17
+ libdbusmenu-gtk3-16.04.0nb6 libdbusmenu-qt5-0.9.3.16.04.20160218nb29
+ libe-book-0.1.3nb33 libetonyek-0.1.10nb17 libfreehand-0.1.2nb25
+ libgcrypt-1.11.0nb2 libglade-2.6.4nb54 libgpg-error-1.51 libgsf-1.14.53nb3
+ libgweather-40.0nb27 libhandy-1.8.0nb11 libheif-1.19.5 libical-3.0.18nb4
+ libindicator-12.10.1nb23 liblangtag-0.6.7nb4 libmatemixer-1.26.1nb7
+ libmspub-0.1.4nb32 libmysofa-1.3.3 libnice-0.1.22nb5 libnotify-0.8.3nb2
+ libpeas-1.26.0nb15 libproxy-0.5.9nb3 libpurple-2.14.13nb4 libqxp-0.0.2nb26
+ librsvg-2.58.1nb3 libsixel-1.8.6nb24 libsoup-2.74.3nb8 libsoup3-3.4.4nb6
+ libunique-1.1.6nb41 libuv-1.49.2 libvisio-0.1.7nb27 libwmf-0.2.8.4nb31
+ libwnck-2.30.7nb10 libwnck3-3.36.0nb12 libxfce4ui-4.18.6nb4
+ libxfce4util-4.18.2nb4 libxkbcommon-1.7.0nb5 libxklavier-5.4nb16
+ libxml2-2.12.9nb3 libxslt-1.1.42nb3 libzip-1.11.2nb3 libzmf-0.0.2nb34
+ llvm-18.1.8nb3 m17n-lib-1.8.0nb20 mate-backgrounds-1.26.0nb10
+ mate-common-1.26.0nb9 mate-desktop-1.26.2nb7 mate-icon-theme-1.26.0nb10
+ mate-icon-theme-faenza-1.20.0nb20 mate-themes-3.22.24nb7 medit-1.2.0nb36
+ meson-1.6.0nb1 mlterm-3.9.3nb18 mozjs78-78.15.0nb12 mpg123-1.32.9 mpv-0.39.0nb3
+ mupdf-1.24.10nb3 neon-0.33.0nb5 netpbm-11.02.09nb4 nghttp2-1.64.0nb3
+ nginx-1.26.2nb6 ngtcp2-1.8.1 nodejs-23.2.0nb1 nspr-4.36 nss-3.107
+ openal-soft-1.24.0 openexr-3.3.2 openh264-2.5.0 osg-3.6.5nb61
+ p5-CDDB_get-2.28nb13 p5-JSON-4.10nb2 p5-MIME-Base32-1.303nb8
+ p5-MP3-Info-1.26nb7 p5-Parse-Yapp-1.21nb7 p5-URI-5.31nb1 perl-5.40.0nb1
+ phonon-qt5-4.11.1nb23 php-7.4.33nb8 pixman-0.44.0 pkg_install-20241101
+ pkgin-23.8.1nb7 pluma-1.26.1nb14 polkit-qt5-0.200.0nb4 poppler-24.10.0nb3
+ poppler-cpp-24.10.0nb3 poppler-includes-24.10.0nb3 poppler-utils-24.10.0nb3
+ protobuf-28.3 py-gobject3-common-3.50.0 py27-gtk2-2.24.0nb54
+ py312-Pillow-11.0.0 py312-cryptography-43.0.3 py312-gobject3-3.50.0
+ py312-libxml2-2.12.9nb3 py312-lxml-5.3.0nb3 py312-mako-1.3.6
+ py312-markupsafe-3.0.2 py312-numpy-2.1.3 py312-packaging-24.2 py312-pdf-5.1.0
+ py312-pip-24.3.1 py312-setuptools-75.6.0 py312-sphinx-8.1.3 py312-tomli-2.1.0
+ py312-zipp-3.21.0 python27-2.7.18nb19 python310-3.10.15nb3 python311-3.11.10nb3
+ python312-3.12.7nb3 python39-3.9.20nb3 qalculate-5.1.1nb3 qca2-qt5-2.3.8nb4
+ qmmp-1.6.5nb12 qt4-libs-4.8.7nb46 qt5-qtbase-5.15.16 qt5-qtdeclarative-5.15.16
+ qt5-qtlocation-5.15.16 qt5-qtmultimedia-5.15.16 qt5-qtscript-5.15.16
+ qt5-qtsensors-5.15.16 qt5-qtserialport-5.15.16 qt5-qtspeech-5.15.16
+ qt5-qtsvg-5.15.16 qt5-qttools-5.15.16 qt5-qtwayland-5.15.16
+ qt5-qtwebchannel-5.15.16 qt5-qtwebsockets-5.15.16 qt5-qtx11extras-5.15.16
+ qt5-qtxmlpatterns-5.15.16 qt6-qtbase-6.8.0nb4 qt6-qtimageformats-6.8.0nb3
+ qt6-qtlanguageserver-6.8.0nb3 qt6-qtshadertools-6.8.0nb3 qt6-qtsvg-6.8.0nb3
+ rclone-1.68.2 ruby32-atk-4.2.3nb2 ruby32-base-3.2.6 ruby32-gdk3-4.2.3nb2
+ ruby32-gtk3-4.2.3nb2 ruby32-mikutter-5.0.7nb4 ruby32-mini_portile2-2.8.8
+ ruby32-nokogiri-1.16.7nb3 ruby32-pkg-config-1.5.7 rust-1.80.1nb3
+ samba-4.21.1nb3 scim-1.4.17nb14 scribus-1.6.2nb9 shared-mime-info-2.4nb4
+ solid-5.116.0nb3 sonnet-5.116.0nb3 spdlog-1.15.0 sqlite3-3.47.0nb3
+ strigi-0.7.8nb61 svt-av1-2.3.0 sylpheed-3.7.0nb19 tcl-8.6.14nb4
+ telepathy-glib-0.24.1nb37 tepl4-4.4.0nb22 tex-atveryend-1.12 tex-colortbl-1.0i
+ tex-fancyhdr-4.3.1 tigervnc-1.14.0.1.20.13nb3 uim-1.8.9nb16 upmendex-1.08nb4
+ vcdimager-2.0.1nb12 vorbis-tools-1.4.2nb13 vte-0.28.1nb37 wayland-1.23.0nb3
+ wget-1.25.0 x265-4.1 xfce4-conf-4.18.3nb4 xfce4-exo-4.18.0nb9
+ xfce4-mousepad-0.6.3nb4 xmlto-0.0.28nb14 xnp2-0.86nb28 xorg-util-macros-1.20.2
+ xterm-395 yelp-tools-42.1nb5
 
 Tips:
 - System Clocks
@@ -197,7 +252,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 10.99.12 (GENERIC64) #0: Mon Oct 14 12:26:28 UTC 2024  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 10.99.12 (GENERIC64) #0: Sun Nov 24 19:41:18 UTC 2024  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook

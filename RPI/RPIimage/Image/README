@@ -1,18 +1,18 @@
-VERSION: :1,$s/2024-10-16/2024-10-16/g
-ISO:     :1,$s/202410141310Z/202410141310Z/g
+VERSION: :1,$s/2024-11-22/2024-11-22/g
+ISO:     :1,$s/202411210240Z/202411210240Z/g
 NetBSD:  :1,$s/10.99.12/10.99.12/g
-PKGSRC:  :1,$s/2024-10-16/2022/
+PKGSRC:  :1,$s/2024-11-22/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2024-10-16-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2024-11-22-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2024-10-16-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2024-11-22-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-10-16-earmv6hf/2024-10-16-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-10-16-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-11-22-earmv6hf/2024-11-22-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-11-22-earmv6hf/MD5
 
 Update:
 - add net/nanotodon
@@ -30,7 +30,7 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 10.99.12 evbarm-earmv6hf 202410141310Z rpi.img from nyftp.
+- NetBSD 10.99.12 evbarm-earmv6hf 202411210240Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
   # mlterm-wscons
@@ -50,10 +50,9 @@ add earmv6hf to pkgsrc/lang/rust/platform.mk:
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-commit 8d5579c475569d1cacf6f386122c050ab09e69b0 (HEAD -> master, origin/master, origin/HEAD)
+commit 4193185a9380f7c7ddf2084ecb891bc4bfd020a9 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Tue Jul 16 14:09:52 2024 +0100
-    kernel: Bump to 6.6.40
+Date:   Wed Nov 20 13:54:23 2024 +0000
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
@@ -159,7 +158,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-10-16-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-11-22-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
