@@ -1,10 +1,13 @@
 RELEASE=/usr/release/images
 #IMG=${RELEASE}/NetBSD-10.99.10-evbarm-aarch64-202312050520Z-install.img
+#IMG=${RELEASE}/NetBSD-10.99.10-evbarm-aarch64-202312050520Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.10-evbarm-aarch64-202401181910Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.10-evbarm-aarch64-202405210700Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.10-evbarm-aarch64-202406251210Z-install.img
 #IMG=${RELEASE}/NetBSD-10.99.11-evbarm-aarch64-202407200800Z-install.img
-IMG=${RELEASE}/NetBSD-10.99.12-evbarm-aarch64-202408280900Z-install.img
+#IMG=${RELEASE}/NetBSD-10.99.12-evbarm-aarch64-202408280900Z-install.img
+#IMG=${RELEASE}/NetBSD-10.99.12-evbarm-aarch64-202409211400Z-install.img
+IMG=${RELEASE}/NetBSD-10.99.12-evbarm-aarch64-202411251000Z-install.img
 
 DK=dk1
 
