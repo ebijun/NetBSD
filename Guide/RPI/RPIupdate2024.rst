@@ -36,9 +36,6 @@ RaspberryPIのNetBSDイメージについて
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
  2019/8/3,8.99.51→9.99.1,3.9.2,,,9.0_BETA,OSC京都,http://mail-index.netbsd.org/port-arm/2019/07/31/msg005994.html
  2023/1/28,10.99.2,5.0.4nb2,3.9.2,,10ブランチ,OSC大阪,http://mail-index.netbsd.org/port-arm/2023/01/19/msg008093.html
- 2023/9/30,10.99.9,,,,certctl,OSC東京,http://mail-index.netbsd.org/port-arm/2023/09/28/msg008405.html
- 2023/10/19,10.99.10,,,,misskey.io,OSC島根,http://mail-index.netbsd.org/port-arm/2023/10/19/msg008416.html
- 2023/11/25,10.99.10,5.0.5nb4,3.9.3nb3,3.0.12,OpenSSH9.5,OSC長岡,http://mail-index.netbsd.org/port-arm/2023/11/24/msg008433.html
  2023/12/9,10.99.10,,,,,OSC福岡,http://mail-index.netbsd.org/port-arm/2023/12/05/msg008449.html
  2024/1/27,10.99.10,,3.9.3nb6,,10RC3,OSC大阪,http://mail-index.netbsd.org/port-arm/2024/01/18/msg008522.html
  2024/3/2,10.99.10,,3.9.3nb7,,10RC5 ruby3.2,OSC東京,http://mail-index.netbsd.org/port-arm/2024/02/22/msg008586.html
@@ -48,6 +45,7 @@ RaspberryPIのNetBSDイメージについて
  2024/9/7,10.99.12,,,,,ODC,http://mail-index.netbsd.org/port-arm/2024/08/22/msg008875.html
  2024/9/29,10.99.12,,,3.0.15,sayaka 3.8.1,OSC広島,http://mail-index.netbsd.org/port-arm/2024/09/20/msg008918.html
  2024/10/26,10.99.12,,3.9.3nb13,,nanotodon,OSC東京,http://mail-index.netbsd.org/port-arm/2024/10/16/msg009010.html
+ 2024/12/7,10.99.12,,3.9.3nb16,,,OSC福岡,http://mail-index.netbsd.org/port-arm/2024/11/23/msg009037.html
  年月,NetBSD,mikutter,mlterm,OpenSSL,ネタ,OSC,URL
 
 OSCはほぼ毎月のように日本各地で行われています。
