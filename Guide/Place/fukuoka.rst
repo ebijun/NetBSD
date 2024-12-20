@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -53,7 +53,8 @@ Maps:
  2020,11/28,240,14,オンライン
  2021,11/20,135,11,オンライン
  2022,11/26,126,14,オンライン
- 2023,12/9,,,福岡ソフトリサーチパーク センタービル
+ 2023,12/9,150,20,福岡ソフトリサーチパーク センタービル
+ 2024,12/7,,,九州産業大学 12号館
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,6 +66,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 208,OSC2024福岡,http://www.re.soum.co.jp/~jun/OSC2024fukuoka.pdf
  195,OSC2023福岡,http://www.re.soum.co.jp/~jun/OSC2023fukuoka.pdf
  183,OSC2022福岡,http://www.re.soum.co.jp/~jun/OSC2022fukuoka.pdf
  173,OSC2021福岡,http://www.re.soum.co.jp/~jun/OSC2021fukuoka.pdf
@@ -86,6 +88,7 @@ togetterまとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2024 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/2474850
  OSC2023 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/2271317
  OSC2022 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/1977568
  OSC2021 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/1803990
@@ -106,6 +109,7 @@ togetterまとめ
  :widths: 25 15 60
 
  PADDY,渡辺通,地ビール。おつまみは麦烈。木屋とpigaleにもある。
+ B.R.E.W.,大濠公園,Brewed BazzとBrewd BazzのNitro。窒素5連コンボが組める店。
  和パスタ 煙草屋 （禁煙）,六本松,屋号が煙草屋
  太宰府ブルワリー,太宰府,17:00まで。天神UMEエール。
  ブルーマスター,別府,あまおうエール 12:00-16:00 日祝休 
@@ -161,6 +165,7 @@ OSC福岡主な展示物
 .. csv-table::
  :widths: 15 35 60
 
+ 2023/12/9,福岡ソフトリサーチパーク,RPI4+nono
  2019/11/9,九州産業大学,RPI3+XM6i pinebook
  2018/12/8,福岡ソフトリサーチパーク,RPI3+XM6i 
  2017/10/7,福岡大学 18号館,RPI3+XM6i OrangePi One
@@ -174,6 +179,25 @@ OSC福岡主な展示物
  2009/12/5,九州産業大学,hpcmips/hpcarm/Jornada680/WZero3
  2008/12/13,福岡大学,hpcmips/hpcarm/Jornada680/WZero3/USBカメラ
  2007/12/8,ASCビル,hpcmips/hpcarm/Jornada680
+
+2023年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2023/12/09/DSC_2371.JPG
+.. image::  ../Picture/2023/12/09/DSC_2372.JPG
+.. image::  ../Picture/2023/12/09/DSC_2373.JPG
+.. image::  ../Picture/2023/12/09/DSC_2375.JPG
+.. image::  ../Picture/2023/12/09/DSC_2376.JPG
+.. image::  ../Picture/2023/12/09/DSC_2377.JPG
+.. image::  ../Picture/2023/12/09/DSC_2380.JPG
+.. image::  ../Picture/2023/12/09/DSC_2381.JPG
+.. image::  ../Picture/2023/12/09/DSC_2382.JPG
+.. image::  ../Picture/2023/12/09/DSC_2384.JPG
+.. image::  ../Picture/2023/12/09/DSC_2385.JPG
+.. image::  ../Picture/2023/12/09/DSC_2386.JPG
+.. image::  ../Picture/2023/12/09/DSC_2387.JPG
+.. image::  ../Picture/2023/12/09/DSC_2388.JPG
+.. image::  ../Picture/2023/12/09/DSC_2390.JPG
 
 2019年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -70,13 +70,6 @@ OSCこの一年
  :widths: 10 40 10 20 30 30
 
  回数,イベント,日付,参加者,参加グループ,参加したら1
- 222,2023 Online Fall,9/29-30,202,14,1
- 223,2023 Tokyo Fall,10/21,300,29,1
- 224,2023 Shimane,10/21,100,18,1
- 225,2023 Hiroshima,11/12,54,14,1
- 226,2023 Niigata,11/25,37,,1
- 227,2023 Fukuoka,12/9,150,20,1
- 228,2023 Yamaguchi,12/10,55,		
  229,2024 Osaka,1/27,220,32,1
  230,2024 Online/Spring,3/1-2,312,20,1
  231,2024 Tokyo/Spring,3/10,530,48,1
@@ -89,7 +82,9 @@ OSCこの一年
  237,2024 Online/Fall,10/19,203,15,1
  238,2024 Tokyo/Fall,10/26,300,47,1
  239,2024 Shimane,11/2,50,9,1
-
+ 240,2024 Yamaguchi,11/9,40,,
+ 241,2024 Ehime,11/16,50,9,1
+ 242,2024 Fukuoka,12/7,,1
 
 togetterアクセスで見たNetBSDブース
 -----------------------------------
@@ -102,21 +97,18 @@ togetterのアクセスログは以下の場所にあります。
 .. csv-table::
  :widths: 120 60 10
 
- 2024/10-11 NetBSDブースの記録,https://togetter.com/li/2456931,559
- OSC2024 Nagaoka & Fall ,https://togetter.com/li/2446541,894
- OSC2024 Hiroshima ,https://togetter.com/li/2437595,1189
- ODC2024,https://togetter.com/li/2423438,629
- OSC2024 Kyoto,https://togetter.com/li/2403819,775
- OSC2024 Hokkaido ,https://togetter.com/li/2377329,896
- OSC2024 Nagoya ,https://togetter.com/li/2359557,1146
- AsiaBSDCon 2024,https://togetter.com/li/2337258,754
- OSC2024 Spring ,https://togetter.com/li/2314715,1054
- OSC2024 Osaka ,https://togetter.com/li/2298407,1566
- OSC2023 Fukuoka ,https://togetter.com/li/2271317,744
- OSC2023 Niigata ,https://togetter.com/li/2260623,632
- KOF2023 & OSC2023 Hiroshima ,https://togetter.com/li/2254094,1417
- OSC2023 Shimane ,https://togetter.com/li/2247549,1369
-
+ OSC2024 Fukuoka ,https://togetter.com/li/2474850,144
+ 2024/10-11 ,https://togetter.com/li/2456931,920
+ OSC2024 Nagaoka & Fall ,https://togetter.com/li/2446541,993
+ OSC2024 Hiroshima ,https://togetter.com/li/2437595,1235
+ ODC2024,https://togetter.com/li/2423438,667
+ OSC2024 Kyoto,https://togetter.com/li/2403819,803
+ OSC2024 Hokkaido,https://togetter.com/li/2377329,901
+ OSC2024 Nagoya,https://togetter.com/li/2359557,1159
+ AsiaBSDCon 2024,https://togetter.com/li/2337258,766
+ OSC2024 Spring,https://togetter.com/li/2314715,1069
+ OSC2024 Osaka ,https://togetter.com/li/2298407,1587
+ OSC2023 Fukuoka,https://togetter.com/li/2271317,750
 
 netbsd-advocacyメーリングリストへの報告
 --------------------------------------------
@@ -148,7 +140,7 @@ NetBSD観光ガイド作成
 .. csv-table::
  :widths: 10 20 100
 
-
+ 208,OSC2024福岡, http://www.re.soum.co.jp/~jun/OSC2024fukuoka.pdf 
  207,OSC2024愛媛, http://www.re.soum.co.jp/~jun/OSC2024ehime.pdf 
  206,KOF2024, http://www.re.soum.co.jp/~jun/KOF2024.pdf 
  205,OSC2024島根, http://www.re.soum.co.jp/~jun/OSC2024shimane.pdf
@@ -191,7 +183,8 @@ NetBSD観光ガイド作成
  2024/10,OSC東京,1080
  2024/11,OSC島根,58184
  2024/11,KOF,29704
- 2024/11,OSC愛媛,35434+1300
+ 2024/11,OSC愛媛,40454,1622
+ 2024/12,OSC福岡,35789,1886
 
 2025年
 -------------
