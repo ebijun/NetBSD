@@ -6,12 +6,13 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.0_STABLE (GENERIC) #0: Sat May  4 12:05:45 UTC 2024
+NetBSD 10.1 (GENERIC) #0: Mon Dec 16 13:08:11 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16315 MB
-avail memory = 15757 MB
+avail memory = 15753 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
+RTC BIOS diagnostic error 0x80<clock_battery>
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
 efi: systbl at pa a4d57f18
 mainbus0 (root)
@@ -69,13 +70,13 @@ acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <TOSHIB,A009F   ,20170310>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC420DF634808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
+ACPI: SSDT 0xFFFFFB033FEA7808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC41DAC4C5808 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFFB000D0F5808 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC41DAC4A6808 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFFB000D0D6808 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFC41DAC4AC9C8 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFFB000D09C9C8 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
 timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
@@ -98,6 +99,7 @@ acpiout12 at acpivga0 (DD0D, 0x000d): ACPI Display Output Device
 acpiout13 at acpivga0 (DD0E, 0x000e): ACPI Display Output Device
 acpiout14 at acpivga0 (DD0F, 0x000f): ACPI Display Output Device
 acpiout15 at acpivga0 (DD1F, 0x0400): ACPI Display Output Device
+acpiout15: _BQC broken, enabling quirk
 acpiout15: brightness levels: [0-100]
 acpiout16 at acpivga0 (SKC0, 0xca00): ACPI Display Output Device
 acpivga0: connected output devices:
@@ -243,16 +245,16 @@ acpicpu3 at cpu3: ACPI CPU
 cpu0: CPU base freq 2400000000 Hz
 cpu0: CPU max freq 2800000000 Hz
 cpu0: TSC freq CPUID 2400000000 Hz
-cpu0: TSC freq calibrated 2399998000 Hz
+cpu0: TSC freq calibrated 2400006000 Hz
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-timecounter: Timecounter "TSC" frequency 2399998000 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2400006000 Hz quality 3000
 uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+acpiacad0: AC adapter online.
 uhub0: 6 ports with 6 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub1: 12 ports with 12 removable, self powered
-acpiacad0: AC adapter online.
-tpm0: read 8 bytes, expected 10tpm0: deactivating entropy source
 IPsec: Initialized Security Association Processing.
+tpm0: read 8 bytes, expected 10tpm0: deactivating entropy source
 ahcisata0 port 1: device present, speed: 6.0Gb/s
 uvideo0 at uhub1 port 6 configuration 1 interface 0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb537), rev 2.00/75.10, addr 1
 video0 at uvideo0: Chicony Electronics Co.,Ltd. (0x04f2) TOSHIBA Web Camera - FHD (0xb537), rev 2.00/75.10, addr 1
@@ -271,7 +273,7 @@ WARNING: 1 error while detecting hardware; check system log.
 boot device: wd0
 root on dk1 dumps on dk2
 root file system type: ffs
-kern.module.path=/stand/amd64/10.0/modules
+kern.module.path=/stand/amd64/10.1/modules
 [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at msi6 vec 0 (i915drmkms0)
