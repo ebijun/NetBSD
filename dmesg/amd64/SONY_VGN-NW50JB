@@ -6,10 +6,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.0_STABLE (GENERIC) #0: Wed Jul  3 19:16:46 UTC 2024
+NetBSD 10.1 (GENERIC) #0: Mon Dec 16 13:08:11 UTC 2024
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 8031 MB
-avail memory = 7743 MB
+avail memory = 7741 MB
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
 timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
@@ -39,13 +39,13 @@ acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <  Sony,    VAIO,20090522>, AslId <MSFT,00010013>
 acpi0: MCFG: segment 0, bus 0-255, address 0x00000000e0000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF855CC4D0D988 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF822B5DB41988 000223 (v01 PmRef  Cpu0Ist  00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF855B96893008 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
+ACPI: SSDT 0xFFFF822A2F852008 0007A2 (v01 PmRef  Cpu0Cst  00003001 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF855B9670EE88 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF822A2F70DE88 0000FD (v01 PmRef  ApIst    00003000 INTL 20051117)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFF855B96855408 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
+ACPI: SSDT 0xFFFF822A2F854688 000047 (v01 PmRef  ApCst    00003000 INTL 20051117)
 acpi0: SCI interrupting at int 9
 timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
@@ -270,11 +270,10 @@ WARNING: 2 errors while detecting hardware; check system log.
 boot device: wd0
 root on dk0 dumps on dk1
 root file system type: ffs
-kern.module.path=/stand/amd64/10.0/modules
+kern.module.path=/stand/amd64/10.1/modules
 [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
 [drm] Driver supports precise vblank timestamp query.
 i915drmkms0: interrupting at ioapic0 pin 16 (i915drmkms0)
-WARNING: clock gained 2 days
 [drm] Initialized i915 1.6.0 20200114 for i915drmkms0 on minor 0
 intelfb0 at i915drmkms0
 [drm] DRM_I915_DEBUG enabled
@@ -288,3 +287,4 @@ wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
 wsdisplay0: screen 4 added (default, vt100 emulation)
+acpibat0: normal capacity on 'charge state'
