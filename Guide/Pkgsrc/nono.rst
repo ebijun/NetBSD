@@ -26,6 +26,15 @@ nono のバージョンアップ
 
 pkgsrc/emulators/nono 以下を更新して、nonoのバージョンアップをしてみます。
 
+
+フリーズしているか確認
+--------------------------
+
+以下のURLを見て、pkgsrcがフリーズしているか確認します。フリーズしている時はバージョンアップしません。
+
+ https://mail-index.netbsd.org/pkgsrc-changes/index.html
+ https://www.pkgsrc.org/is-a-freeze-on/
+
 バージョン指定
 ---------------------
 
@@ -33,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.0.0
+ DISTNAME=       nono-1.1.0
 
 チェックサム作成
 ------------------
@@ -41,9 +50,9 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum
- -rw-r--r--  1 jun   wheel   357 Nov  4 01:17 PLIST
- -rw-r--r--  1 root  wheel   558 Nov  4 00:59 distinfo
- -rw-r--r--  1 jun   wheel  1164 Nov  4 00:56 Makefile
+ -rw-r--r--  1 jun   wheel  1148 Dec 29 04:35 Makefile
+ -rw-r--r--  1 jun   wheel   357 Nov  4 01:22 PLIST
+ -rw-r--r--  1 root  wheel   558 Dec 29 04:36 distinfo
 
 make package して動作を確認します。
  
@@ -71,29 +80,36 @@ commit
 
  cvs commit 
 
- nono: update to 1.0.0.
+ nono: update to 1.1.0.
 
- 1.0.0 (2024/10/31)
+ 1.1.0 (2024/12/25)
 
- m68k(New): "Implement data cache."
- vm(Update): "Rewrite whole bus structure."
- m68k(Update): "Implement FTRAPcc instructions."
- m68k(Fix): "Fix problem that MOVE.W ea,CCR instruction was not privileged."
- m68k(Fix): "Fix cache entry clear operation."
- m68k(Fix): "Fix problem that RTE instruction may not be able to recover from a bus error if it occurred on an instruction which accesses the same register's (An)+ or -(An) twice."
- m68k(Fix): "Fix problem that some exception vector was fetched from wrong address space."
- m68k(Fix): "Fix problem that 68030 register monitor displays FPU registers even though no FPU."
- vm(Update): "Fix accessing to Lance's undefined port on LUNA-88K."
- vm(Update): "Fix accessing to CRTC's undefined port on X68030."
- vm(Update): "Implement several DOS calls on Human68k mode. Now you can run fputest.x (0.17.* and later) on it."
- vm(Fix): "Fix a device reset on VirtIO Network device."
- vm(Fix): "Fix a word access to some DMAC registers on X68030."
- vm(Fix): "Fix problem that the third decimal place of configuration item mpu-clock may not be able to specified correctly."
- vm(Fix): "Fix possibility of an abnormal termination on CTRL+OPT.1+DEL input on X68030."
- vm(Fix): "Fix problem that you could not access the floppy again while the motor is on on X68030."
- app(Update): "Make -c optional when -H is specified."
- GUI(Fix): "Support display of 100x speed or more on performance counter."
- util(New): "Implement runx. It can run instructiontest.x and fputest.x (before 0.16.* and after 0.17.*)." 
+ m68k(New): "Start implementing 68040. Currently, it supports some new instructions, MMU and FPU."
+ m68k(New): "Implement cpSAVE, cpRESTORE behavior on 68030."
+ m68k(Fix): "Fix the order that FSAVE writes to the memory."
+ m68k(Fix): "Fix flags on FBcc, FDBcc, FScc, FTRAPcc."
+ m68k(Fix): "Fix branch address calculation on FDBcc."
+ m68k(Fix): "Fix OVFL, UNFL flags on FMOVE.X FPn,<ea>."
+ m68k(Fix): "Improve result of FMOVE.[BW] FPn,<ea> when FPn is out of range."
+ m68k(Fix): "Fix a problem that there were cases where F-line exception was not occurred even if the F-line instruction pattern was illegal."
+ m68k(Fix): "Implement that initialize FPU registers on the FPU reset."
+ m68k(Fix): "Implement a format error exception on RTE and FRESTORE."
+ m68k(Update): "Implement the decimal representation of the FPn on the register monitor."
+ m68k(Update): "If an instruction has an illegal EA, the debugger now shows it as an illegal instruction."
+ m68k(Update): "The debugger now shows branch condition even on FBcc, FDBcc, FScc and FTRAPcc."
+ hd64180(Fix): "Fix CPIR, CPDR, INIR, INDR, OTIR, OTDR instructions."
+ hd64180(Fix): "Fix contents that is pushed into the stack when the undefined opcode trap."
+ hd64180(Update): "Supports disassemble of Z80's undefined opcode as SLL or LD IXr,n."
+ hd64180(New): "Add xp-clock configuration."
+ vm(New): "Implement a terminal emulation of serial console on virt-m68k (and NEWS)."
+ vm(New): "Implement BI_COMMANDLINE on BootInfo. Now you can specify the root device to NetBSD/virt68k."
+ vm(Fix): "Clear the SPC's internal queue on the reset."
+ vm(Fix): "Implement a reset on virtio-net."
+ vm(Fix): "Fix a problem that Goldfish Timer might not work after the reset."
+ vm(Fix): "Clear the Goldfish PIC's monitor counter on the reset."
+ GUI(Fix): "Fix SPC address label on X68030 SPC monitor."
+ GUI(Fix): "Support virt-m68k on the vector table monitor."
+ GUI(Fix): "Fix a proiblem where cursor key input was sometimes not possible." 
 
 doc をcommit します
 ---------------------
@@ -103,9 +119,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.0.0
+ doc: Updated emulators/nono to 1.1.0
  
  cvs diff -u CHANGES-2024
  
-        Updated emulators/nono to 1.0.0 [jun 2024-11-04]
+        Updated emulators/nono to 1.1.0 [jun 2024-12-29]
 
