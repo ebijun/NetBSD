@@ -3,13 +3,13 @@ at-spi2-core-2.54.0nb4 Assistive Technology Service Provider Interface Core
 bash-5.2.37         The GNU Bourne Again Shell
 brotli-1.1.0        Generic-purpose lossless compression algorithm
 cairo-1.18.2        Vector graphics library with cross-device output support
-curl-8.11.0nb2      Client that groks URLs
+curl-8.11.1nb1      Client that groks URLs
 dav1d-1.5.0         AV1 decoder library
 dbus-1.14.10        Message bus system
 digest-20220214     Message digest wrapper utility
 dillo-3.1.1         Very small and fast graphical web-browser
 double-conversion-3.3.0 Conversion routines for IEEE doubles
-fltk-1.3.9nb2       Fast Light Tool Kit for graphical user interfaces
+fltk-1.3.10         Fast Light Tool Kit for graphical user interfaces
 fontconfig-2.15.0   Library for configuring and customizing font access
 fossil-2.25nb1      High-reliability, distributed software configuration management
 freetype2-2.13.3    Font rendering engine and library API
@@ -17,7 +17,7 @@ fribidi-1.0.16      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.3.3nb14        Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.42.12 Library for image loading and manipulation
 giflib-5.2.2        GIF image format library
-git-base-2.47.0nb3  GIT Tree History Storage Tool (base package)
+git-base-2.47.1     GIT Tree History Storage Tool (base package)
 glib2-2.82.2        Some useful routines for C programming (glib2)
 gmp-6.3.0           Library for arbitrary precision arithmetic
 gnutls-3.8.8nb2     Transport Layer Security library
@@ -29,8 +29,8 @@ gtk3+-3.24.43nb5    GIMP Toolkit v3 - libraries for building X11 user interfaces
 harfbuzz-10.1.0     OpenType text shaping engine
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
 icewm-3.6.0         Small, fast and light-weight window manager
-icu-76.1            Robust and full-featured Unicode services
-imlib2-1.12.2nb1    Image manipulation library
+icu-76.1nb1         Robust and full-featured Unicode services
+imlib2-1.12.2nb2    Image manipulation library
 jbigkit-2.1nb1      JBIG-KIT lossless image compression library
 jisx0213fonts-0.0nb2 X11 bitmap fonts for JIS X 0213
 jpeg-9f             IJG's jpeg compression utilities
@@ -45,7 +45,7 @@ libffi-3.4.6        Foreign function interface
 libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.11.0nb2 GNU cryptographic library
 libgpg-error-1.51   Definitions of common error values for all GnuPG components
-libheif-1.19.3      HEIF and AVIF file format decoder and encoder library
+libheif-1.19.5      HEIF and AVIF file format decoder and encoder library
 libidn2-2.3.7       Convert internationalized domain names to/from ASCII Encoding
 libimagequant-4.3.3 High-quality conversion of RGBA images to 8-bit indexed-color
 libotf-0.9.16nb4    Library for handling OpenType fonts (OTF)
@@ -69,7 +69,7 @@ m17n-lib-1.8.0nb20  Multilingualization library
 md4c-0.5.2          Markdown for C library and parser
 medit-1.2.0nb36     Programming and around-programming text editor
 mlterm-3.9.3nb18    Multilingual terminal emulator
-mozilla-rootcerts-1.1.20240827 Root CA certificates from the Mozilla Project
+mozilla-rootcerts-1.1.20241118 Root CA certificates from the Mozilla Project
 nanotodon-0.4.0nb3  CUI/C99 mastodon client
 nettle-3.10         Cryptographic library
 nghttp2-1.64.0nb3   Implementation of HTTP/2 in C
@@ -78,17 +78,18 @@ p11-kit-0.25.5      PKCS#11 module manager
 pango-1.54.0        Library for layout and rendering of text
 pcre2-10.44         Perl Compatible Regular Expressions library (major version 2)
 perl-5.40.0nb1      Practical Extraction and Report Language
-pixman-0.44.0       Library of low-level pixel manipulation routines
+pixman-0.44.2       Library of low-level pixel manipulation routines
 pkg_chk-2.0.12      Check installed package versions against pkgsrc
 pkg_install-20241101 Package management and administration tools for pkgsrc
-pkgin-23.8.1nb7     Apt / yum like tool for managing pkgsrc binary packages
+pkgin-24.12.0       Apt / yum like tool for managing pkgsrc binary packages
 png-1.6.44          Library for manipulating PNG images
-py312-setuptools-75.5.0 New Python packaging system
-python312-3.12.7nb3 Interpreted, interactive, object-oriented programming language
-qt5-qtbase-5.15.15nb5 C++ X GUI toolkit
-qt5-qtx11extras-5.15.15nb3 Qt5 module for X11 extras
-qt5-qtxmlpatterns-5.15.15nb3 Qt5 module for XML Patterns
+py312-setuptools-75.6.0 New Python packaging system
+python312-3.12.8nb2 Interpreted, interactive, object-oriented programming language
+qt5-qtbase-5.15.16  C++ X GUI toolkit
+qt5-qtx11extras-5.15.16 Qt5 module for X11 extras
+qt5-qtxmlpatterns-5.15.16 Qt5 module for XML Patterns
 raqm-0.10.2         Library for complex text layout
+readline-8.2nb2     GNU library that can recall and edit previous input
 ruby32-addressable-2.8.7 Replacement for the URI Implementation of standard librrary
 ruby32-atk-4.2.3nb2 Ruby binding of ATK-1.0.x or later
 ruby32-base-3.2.6   Ruby 3.2.6 release minimum base package
@@ -108,13 +109,13 @@ ruby32-httpclient-2.8.3nb1 HTTP accessing library for Ruby
 ruby32-instance_storage-1.0.0 Manage class instances with dictionary
 ruby32-locale-2.1.4 Pure ruby library which provides basic APIs for localization
 ruby32-memoist-0.16.2 Replacement of memoizable, memoize methods invocation
-ruby32-mikutter-5.0.7nb4 Simple, powerful, and moeful twitter client
-ruby32-mini_portile2-2.8.7 Simple autoconf builder for developers
+ruby32-mikutter-5.0.8 Simple, powerful, and moeful twitter client
+ruby32-mini_portile2-2.8.8 Simple autoconf builder for developers
 ruby32-moneta-1.6.0 Unified interface to key/value stores
 ruby32-native-package-installer-1.1.9 Helper to install native packages on "gem install"
-ruby32-nokogiri-1.16.7nb3 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby32-nokogiri-1.16.8 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby32-pango-4.2.3  Ruby binding of pango-1.x
-ruby32-pkg-config-1.5.7 Pure Ruby implementation of pkg-config
+ruby32-pkg-config-1.5.8 Pure Ruby implementation of pkg-config
 ruby32-pluggaloid-1.7.0 Extensible plugin system for mikutter
 ruby32-public_suffix-6.0.1 Domain name parser based on the Public Suffix List
 ruby32-red-colors-0.4.0 Wide array of features for dealing with colors
@@ -122,10 +123,10 @@ ruby32-text-1.3.1   Collection of text algorithms for Ruby
 ruby32-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 sayaka-3.8.1        Terminal specific Misskey client
 shared-mime-info-2.4nb4 Core database of common types
-sqlite3-3.47.0nb3   SQL Database Engine in a C Library
+sqlite3-3.47.2      SQL Database Engine in a C Library
 sudo-1.9.16nb1      Allow others to run commands as root
 svt-av1-2.3.0       Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder)
-tcsh-6.24.13        Extended C-shell with many useful features
+tcsh-6.24.14        Extended C-shell with many useful features
 tiff-4.7.0          Library and tools for reading and writing TIFF data files
 ttmkfdir2-20021109nb8 Tool that creates a fonts.scale file
 uim-1.8.9nb16       Multilingual input method library
@@ -134,7 +135,7 @@ vlgothic-ttf-20230918 Free Japanese TrueType fonts named 'VLGothic'
 wayland-1.23.0nb3   Display server protocol - development libraries
 wayland-protocols-1.37 Additional wayland functionality
 wget-1.25.0         Retrieve files from the 'net via HTTP and FTP
-x265-4.0            High Efficiency Video Coding (HEVC)
+x265-4.1            High Efficiency Video Coding (HEVC)
 xcb-util-0.4.1      XCB Utilities
 xcb-util-image-0.4.1 XCB port of Xlib's XImage and XShmImage
 xcb-util-keysyms-0.4.1 XCB Utilities
