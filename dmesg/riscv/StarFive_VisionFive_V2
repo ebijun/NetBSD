@@ -1,0 +1,319 @@
+amir63d# tip cons
+connected
+€
+U-Boot SPL 2021.10 (Feb 28 2023 - 21:44:53 +0800)
+DDR version: dc2e84f0.
+Trying to boot from SPI
+
+OpenSBI v1.2
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|____/_____|
+        | |
+        |_|
+
+Platform Name             : StarFive VisionFive V2
+Platform Features         : medeleg
+Platform HART Count       : 5
+Platform IPI Device       : aclint-mswi
+Platform Timer Device     : aclint-mtimer @ 4000000Hz
+Platform Console Device   : uart8250
+Platform HSM Device       : jh7110-hsm
+Platform PMU Device       : ---
+Platform Reboot Device    : pm-reset
+Platform Shutdown Device  : pm-reset
+Firmware Base             : 0x40000000
+Firmware Size             : 292 KB
+Runtime SBI Version       : 1.0
+
+Domain0 Name              : root
+Domain0 Boot HART         : 1
+Domain0 HARTs             : 0*,1*,2*,3*,4*
+Domain0 Region00          : 0x0000000002000000-0x000000000200ffff (I)
+Domain0 Region01          : 0x0000000040000000-0x000000004007ffff ()
+Domain0 Region02          : 0x0000000000000000-0xffffffffffffffff (R,W,X)
+Domain0 Next Address      : 0x0000000040200000
+Domain0 Next Arg1         : 0x0000000042200000
+Domain0 Next Mode         : S-mode
+Domain0 SysReset          : yes
+
+Boot HART ID              : 1
+Boot HART Domain          : root
+Boot HART Priv Version    : v1.11
+Boot HART Base ISA        : rv64imafdcbx
+Boot HART ISA Extensions  : none
+Boot HART PMP Count       : 8
+Boot HART PMP Granularity : 4096
+Boot HART PMP Address Bits: 34
+Boot HART MHPM Count      : 2
+Boot HART MIDELEG         : 0x0000000000000222
+Boot HART MEDELEG         : 0x000000000000b109
+
+
+U-Boot 2021.10 (Feb 28 2023 - 21:44:53 +0800), Build: jenkins-VF2_515_Branch_SDK_Release-31
+
+CPU:   rv64imacu
+Model: StarFive VisionFive V2
+DRAM:  8 GiB
+MMC:   sdio0@16010000: 0, sdio1@16020000: 1
+Loading Environment from SPIFlash... SF: Detected gd25lq128 with page size 256 Bytes, erase size 4 KiB, total 16 MiB
+*** Warning - bad CRC, using default environment
+
+StarFive EEPROM format v2
+
+--------EEPROM INFO--------
+Vendor : StarFive Technology Co., Ltd.
+Product full SN: VF7110B1-2318-D008E000-18003526
+data version: 0x2
+PCB revision: 0xb2
+BOM revision: A
+Ethernet MAC0 address: 6c:cf:39:00:ac:80
+Ethernet MAC1 address: 6c:cf:39:00:ac:81
+--------EEPROM INFO--------
+
+In:    serial@10000000
+Out:   serial@10000000
+Err:   serial@10000000
+Model: StarFive VisionFive V2
+Net:   eth0: ethernet@16030000, eth1: ethernet@16040000
+switch to partitions #0, OK
+mmc1 is current device
+found device 1
+bootmode flash device 1
+** Invalid partition 3 **
+Couldn't find partition mmc 1:3
+Can't set block device
+** Invalid partition 3 **
+Couldn't find partition mmc 1:3
+Can't set block device
+Hit any key to stop autoboot:  2  1  0
+** Invalid partition 3 **
+Couldn't find partition mmc 1:3
+Can't set block device
+Importing environment from mmc1 ...
+## Warning: Input data exceeds 1048576 bytes - truncated
+## Info: input data size = 1048578 = 0x100002
+** Invalid partition 3 **
+Couldn't find partition mmc 1:3
+Can't set block device
+## Warning: defaulting to text format
+## Error: "boot2" not defined
+switch to partitions #0, OK
+mmc1 is current device
+Scanning mmc 1:1...
+libfdt fdt_check_header(): FDT_ERR_BADMAGIC
+Card did not respond to voltage select! : -110
+** Unable to read file ubootefi.var **
+Failed to load EFI variables
+Found EFI removable media binary efi/boot/bootriscv64.efi
+185024 bytes read in 14 ms (12.6 MiB/s)
+libfdt fdt_check_header(): FDT_ERR_BADMAGIC
+
+  \\-__,------,___.
+   \\        __,---`  NetBSD/riscv efiboot (riscv64)
+    \\       `---,_.  Revision 2.15 (Sun Jan  5 22:11:18 UTC 2025)
+     \\-,_____,.---`
+      \\
+       \\
+        \\
+
+Press return to boot now, any other key for boot prompt
+booting netbsd - starting in 5 seconds. 
+clk u5_dw_i2c_clk_core already disabled
+clk u5_dw_i2c_clk_apb already disabled
+
+------------
+NetBSD start
+
+sp:      0x0000_0000_fd80_2000
+pc:      0x0000_0000_fce0_0080
+hart:    0x0000_0000_0000_0001
+dtb:     0x0000_0000_fda0_0000
+l1:      0x0000_0000_fd80_b000
+l2:      0x0000_0000_fd80_a000
+uspace:  0x0000_0000_fd80_0000
+bootstk: 0x0000_0000_fd80_2000
+vtopdiff:0xffff_ffbf_0320_0000
+
+bss:     0x0000_0000_fd75_8924 - 0x0000_0000_fd80_c000
+
+l2pde:   0x0000_0000_fd80_a800:  0x0000_0000_3f60_2c01
+
+kern:    0x0000_0000_fd80_b000:  0x0000_0000_3f38_00ef
+kern:    0x0000_0000_fd80_b008:  0x0000_0000_3f40_00ef
+kern:    0x0000_0000_fd80_b010:  0x0000_0000_3f48_00ef
+kern:    0x0000_0000_fd80_b018:  0x0000_0000_3f50_00ef
+kern:    0x0000_0000_fd80_b020:  0x0000_0000_3f58_00ef
+kern:    0x0000_0000_fd80_b028:  0x0000_0000_3f60_00ef
+kern:    0x0000_0000_fd80_b030:  0x0000_0000_3f68_00ef
+kern:    0x0000_0000_fd80_b038:  0x0000_0000_3f70_00ef
+kern:    0x0000_0000_fd80_b040:  0x0000_0000_3f78_00ef
+kern:    0x0000_0000_fd80_b048:  0x0000_0000_3f80_00ef
+kern:    0x0000_0000_fd80_b050:  0x0000_0000_3f88_00ef
+kern:    0x0000_0000_fd80_b058:  0x0000_0000_3f90_00ef
+kern:    0x0000_0000_fd80_b060:  0x0000_0000_3f98_00ef
+kern:    0x0000_0000_fd80_b068:  0x0000_0000_3fa0_00ef
+kern:    0x0000_0000_fd80_b070:  0x0000_0000_3fa8_00ef
+kern:    0x0000_0000_fd80_b078:  0x0000_0000_3fb0_00ef
+dtb:     0x0000_0000_fd80_b080:  0x0000_0000_3f68_00e7
+PM
+[   1.0000000] FDT<0xffffffc002000000>
+[   1.0000000] devmap 0xffffffc0008220d0
+[   1.0000000] bootstrap
+[   1.0000000] stdout
+[   1.0000000] fdt size a000/9804
+[   1.0000000] consinit ok
+[   1.0000000] NetBSD/riscv (fdt) booting ...
+[   1.0000000] FDT /memory @ 0x40080000 size 0x7e72000
+[   1.0000000] FDT /memory @ 0x47f0e000 size 0xb5fd8000
+[   1.0000000] FDT /memory @ 0xfdeea000 size 0x835000
+[   1.0000000] FDT /memory @ 0xfe720000 size 0x3000
+[   1.0000000] FDT /memory @ 0xfe72b000 size 0x1819000
+[   1.0000000] FDT /memory @ 0xfff45000 size 0x1400bb000
+[   1.0000000] init_riscv: memory start 40080000 end 240000000 (len 1fff80000)
+[   1.0000000] cpu_kernel_vm_init: kernel phys start 0xfce00000 end 0xfd800000
+[   1.0000000] cpu_kernel_vm_init: init   phys start 0xfd800000 end 0xfd80c000
+[   1.0000000] dm:   0xffffffc000a0ac08 :  0x100000e7
+[   1.0000000] dm:   0xffffffc000a0ac10 :  0x200000e7
+[   1.0000000] dm:   0xffffffc000a0ac18 :  0x300000e7
+[   1.0000000] dm:   0xffffffc000a0ac20 :  0x400000e7
+[   1.0000000] dm:   0xffffffc000a0ac28 :  0x500000e7
+[   1.0000000] dm:   0xffffffc000a0ac30 :  0x600000e7
+[   1.0000000] dm:   0xffffffc000a0ac38 :  0x700000e7
+[   1.0000000] dm:   0xffffffc000a0ac40 :  0x800000e7
+[   1.0000000] bootargs: console=ttyS0,115200  debug rootwait  earlycon=sbi
+[   1.0000000] msgbufaddr = 0xffffffe23fff0000
+[   1.0000000] ------------------------------------------
+[   1.0000000]            kern_vtopdiff = 0xffffffbf03200000
+[   1.0000000]             memory_start = 0x        40080000
+[   1.0000000]               memory_end = 0x       240000000
+[   1.0000000]              memory_size = 0x       1fff80000
+[   1.0000000]           kernstart_phys = 0x        fce00000
+[   1.0000000]             kernend_phys = 0x        fd800000
+[   1.0000000]               msgbufaddr = 0xffffffe23fff0000
+[   1.0000000]    VM_MIN_KERNEL_ADDRESS = 0xffffffc000000000
+[   1.0000000]           kernstart_mega = 0xffffffc000000000
+[   1.0000000]                kernstart = 0xffffffc000000000
+[   1.0000000]                  kernend = 0xffffffc000a00000
+[   1.0000000]             kernend_mega = 0xffffffc000a00000
+[   1.0000000]    VM_MAX_KERNEL_ADDRESS = 0xffffffd000000000
+[   1.0000000]         pmap_direct_base = 0xffffffe000000000
+[   1.0000000] ------------------------------------------
+[   1.0000000] adding       0x40080000 -       0x47ef2000  to freelist 0
+[   1.0000000] adding       0x47f0e000 -       0xfce00000  to freelist 0
+[   1.0000000] adding       0xfd80c000 -       0xfda00000  to freelist 0
+[   1.0000000] adding       0xfda0a000 -       0xfdee6000  to freelist 0
+[   1.0000000] adding       0xfdeea000 -       0xfe71f000  to freelist 0
+[   1.0000000] adding       0xfe720000 -       0xfe723000  to freelist 0
+[   1.0000000] adding       0xfe72b000 -       0xfff44000  to freelist 0
+[   1.0000000] adding       0xfff45000 -      0x23fff0000  to freelist 0
+[   1.0000000] common cpusets bs_pde 0xffffffc000a0a000 ASID max 0 kcpusets nkmempages limits: ffffffc004000000 - ffffffd000000000
+[   1.0000000] kva   : ffffffc004000000 - ffffffc28aa00000
+[   1.0000000] mpstart
+sbi_trap_error: hart0: trap handler failed (error -2)
+sbi_trap_error: hart0: mcause=0x0000000000000005 mtval=0x0000000040048060
+sbi_trap_error: hart0: mepc=0x0000000040004cac mstatus=0x0000000200001800
+sbi_trap_error: hart0: ra=0x0000000040009ee2 sp=0x0000000040047f10
+sbi_trap_error: hart0: gp=0x0000000000000000 tp=0x0000000040048000
+sbi_trap_error: hart0: s0=0x0000000040047f20 s1=0x0000000040048000
+sbi_trap_error: hart0: a0=0x0000000040048060 a1=0x0000000000000002
+sbi_trap_error: hart0: a2=0x0000000000000000 a3=0x0000000000000019
+sbi_trap_error: hart0: a4=0x0000000000000001 a5=0x0000000040048060
+sbi_trap_error: hart0: a6=0x00000000400480a8 a7=0x0000000000000004
+sbi_trap_error: hart0: s2=0x00000000400241a8 s3=0x0000000000000000
+sbi_trap_error: hart0: s4=0x0000000000000000 s5=0x0000000040029000
+sbi_trap_error: hart0: s6=0x0000000040029020 s7=0x0000000000000000
+sbi_trap_error: hart0: s8=0x000000000000001c s9=0x0000000040035ab0
+sbi_trap_error: hart0: s10=0x0000000000000000 s11=0x0000000000000000
+sbi_trap_error: hart0: t0=0x0000000000000000 t1=0x0000000000000000
+sbi_trap_error: hart0: t2=0x0000000000000000 t3=0x0000000000002000
+sbi_trap_error: hart0: t4=0x0000000000000000 t5=0x0000000000000000
+sbi_trap_error: hart0: t6=0x0000000000000000
+hart0: WARNING: AP 1 failed to start
+[   1.0000000] AP startup problems
+[   1.0000000] Loaded initial symtab at 0xffffffc00085c1e8, strtab at 0xffffffc0008e8a68, # entries 23959
+[   1.0000000] Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+[   1.0000000]     2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+[   1.0000000]     2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+[   1.0000000]     2024, 2025
+[   1.0000000]     The NetBSD Foundation, Inc.  All rights reserved.
+[   1.0000000] Copyright (c) 1982, 1986, 1989, 1991, 1993
+[   1.0000000]     The Regents of the University of California.  All rights reserved.
+
+[   1.0000000] NetBSD 10.99.12 (GENERIC64) #0: Sun Jan  5 22:11:18 UTC 2025
+[   1.0000000] 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/riscv/compile/GENERIC64
+[   1.0000000] total memory = 8181 MB
+[   1.0000000] avail memory = 7913 MB
+[   1.0000000] mainbus0 (root)
+[   1.0000000] simplebus0 at mainbus0: StarFive VisionFive V2
+[   1.0000000] simplebus1 at simplebus0
+[   1.0000000] cpus0 at simplebus0
+[   1.0000000] simplebus2 at simplebus0
+[   1.0000000] cpu0 at cpus0: disabled (unresponsive)
+[   1.0000000] cpu1 at cpus0: SiFive 7-Series Processor (E7, S7, U7 series) imp. 4210427
+[   1.0000000] cpu2 at cpus0: SiFive 7-Series Processor (E7, S7, U7 series) imp. 4210427
+[   1.0000000] cpu3 at cpus0: SiFive 7-Series Processor (E7, S7, U7 series) imp. 4210427
+[   1.0000000] cpu4 at cpus0: SiFive 7-Series Processor (E7, S7, U7 series) imp. 4210427
+[   1.0000000] intc0 at cpu0: local interrupt controller
+[   1.0000000] intc1 at cpu1: local interrupt controller
+[   1.0000000] intc2 at cpu2: local interrupt controller
+[   1.0000000] intc3 at cpu3: local interrupt controller
+[   1.0000000] intc4 at cpu4: local interrupt controller
+[   1.0000000] fclock0 at simplebus0: 24000000 Hz fixed clock (osc)
+[   1.0000000] fclock1 at simplebus0: 50000000 Hz fixed clock (gmac1_rmii_refin)
+[   1.0000000] fclock2 at simplebus0: 51200000 Hz fixed clock (stg_apb)
+[   1.0000000] fclock3 at simplebus0: 50000000 Hz fixed clock (gmac0_rmii_refin)
+[   1.0000000] fclock4 at simplebus0: 297000000 Hz fixed clock (hdmitx0_pixelclk)
+[   1.0000000] fclock5 at simplebus0: 10000000 Hz fixed clock (mipitx_dphy_rxesc)
+[   1.0000000] fclock6 at simplebus0: 297000000 Hz fixed clock (mipitx_dphy_txbytehs)
+[   1.0000000] syscon0 at simplebus1: System Controller Registers
+[   1.0000000] syscon1 at simplebus1: System Controller Registers
+[   1.0000000] syscon2 at simplebus1: System Controller Registers
+[   1.0000000] fclock7 at simplebus0: 125000000 Hz fixed clock (gmac1_rgmii_rxin)
+[   1.0000000] fclock8 at simplebus0: 12288000 Hz fixed clock (i2stx_bclk_ext)
+[   1.0000000] fclock9 at simplebus0: 192000 Hz fixed clock (i2stx_lrck_ext)
+[   1.0000000] fclock10 at simplebus0: 12288000 Hz fixed clock (i2srx_bclk_ext)
+[   1.0000000] fclock11 at simplebus0: 192000 Hz fixed clock (i2srx_lrck_ext)
+[   1.0000000] fclock12 at simplebus0: 49152000 Hz fixed clock (tdm_ext)
+[   1.0000000] fclock13 at simplebus0: 49152000 Hz fixed clock (mclk_ext)
+[   1.0000000] fclock14 at simplebus0: 50000000 Hz fixed clock (jtag_tck_inner)
+[   1.0000000] fclock15 at simplebus0: 50000000 Hz fixed clock (bist_apb)
+[   1.0000000] fclock16 at simplebus0: 125000000 Hz fixed clock (gmac0_rgmii_rxin)
+[   1.0000000] fclock17 at simplebus0: 32768 Hz fixed clock (clk_rtc)
+[   1.0000000] syscon3 at simplebus1: System Controller Registers
+[   1.0000000] plic0 at simplebus1: RISC-V PLIC (136 IRQs)
+[   1.0000000] jh7110pinctrl0 at simplebus1: Pin Controller
+[   1.0000000] ccache0 at simplebus1: L2 cache controller. 2048 KiB/64B 16-way (2048 set).
+[   1.0000000] /soc/clock-controller at simplebus1 not configured
+[   1.0000000] /soc/reset-controller at simplebus1 not configured
+[   1.0000000] /soc/snd-card at simplebus1 not configured
+[   1.0000000] /soc/clint@2000000 at simplebus1 not configured
+[   1.0000000] /soc/spi@13010000 at simplebus1 not configured
+[   1.0000000] /soc/otp@17050000 at simplebus1 not configured
+[   1.0000000] /soc/usbdrd at simplebus1 not configured
+[   1.0000000] /soc/rtc@17040000 at simplebus1 not configured
+[   1.0000000] /soc/pmu@17030000 at simplebus1 not configured
+[   1.0000000] com0 at simplebus1: couldn't get clock
+[   1.0000000] dwiic0 at simplebus1: missing clock
+[   1.0000000] dwcmmc0 at simplebus1: couldn't get clock biu
+[   1.0000000] dwcmmc1 at simplebus1: couldn't get clock biu
+[   1.0000000] /soc/ethernet@16030000 at simplebus1 not configured
+[   1.0000000] /soc/ethernet@16040000 at simplebus1 not configured
+[   1.0000000] /soc/dmc@100b0000 at simplebus1 not configured
+[   1.0000000] /gpio-restart at simplebus0 not configured
+[   1.0000000] /soc/pmu at simplebus1 not configured
+[   1.0000000] WARNING: system needs entropy for security; see entropy(7)
+[   1.3799955] cpu_boot_secondary_processors: starting secondary processors
+[   1.3958800] cpu_boot_secondary_processors: secondary processors hatched. 3 running
+[   1.4099932] swwdog0: software watchdog initialized
+[   1.4099932] WARNING: 5 errors while detecting hardware; check system log.
+[   1.4257267] boot device: <unknown>
+[   1.4257267] root device: ?
+[   2.6630342] use one of: ddb halt reboot
+[   2.6630342] root device: 
+[   3.2688365] use one of: ddb halt reboot
+[   3.2711040] root device: ~
+[EOT]
