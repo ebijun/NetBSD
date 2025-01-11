@@ -20,11 +20,11 @@ giflib-5.2.2        GIF image format library
 git-base-2.47.1     GIT Tree History Storage Tool (base package)
 glib2-2.82.2        Some useful routines for C programming (glib2)
 gmp-6.3.0           Library for arbitrary precision arithmetic
-gnutls-3.8.8nb2     Transport Layer Security library
+gnutls-3.8.8nb4     Transport Layer Security library
 gobject-introspection-1.80.1nb3 GObject Introspection
 gsettings-desktop-schemas-40.0nb2 Collection of GSettings schemas for the GNOME desktop
-gtk2+-2.24.33nb25   GIMP Toolkit v2 - libraries for building X11 user interfaces
-gtk3+-3.24.43nb5    GIMP Toolkit v3 - libraries for building X11 user interfaces
+gtk2+-2.24.33nb26   GIMP Toolkit v2 - libraries for building X11 user interfaces
+gtk3+-3.24.43nb6    GIMP Toolkit v3 - libraries for building X11 user interfaces
 harfbuzz-10.1.0     OpenType text shaping engine
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
 icewm-3.6.0         Small, fast and light-weight window manager
@@ -53,7 +53,7 @@ libpsl-0.21.5       Library to handle the Public Suffix List
 libtasn1-4.19.0     ASN.1 structure parser library
 libunistring-1.2    Unicode string library
 libuuid-2.32.1nb2   Generate unique identifiers for objects
-libwebp-1.4.0       WebP image format library and tools
+libwebp-1.5.0       WebP image format library and tools
 libxkbcommon-1.7.0nb5 Library to handle keyboard descriptions
 libxml2-2.12.9nb3   XML parser library from the GNOME project
 libxslt-1.1.42nb3   XSLT parser library
@@ -69,11 +69,11 @@ medit-1.2.0nb36     Programming and around-programming text editor
 mlterm-3.9.3nb18    Multilingual terminal emulator
 mozilla-rootcerts-1.1.20241118 Root CA certificates from the Mozilla Project
 nanotodon-0.4.0nb3  CUI/C99 mastodon client
-nettle-3.10         Cryptographic library
+nettle-3.10.1       Cryptographic library
 nghttp2-1.64.0nb3   Implementation of HTTP/2 in C
 openh264-2.5.0      H.264 encoder/decoder library from Cisco
 p11-kit-0.25.5      PKCS#11 module manager
-pango-1.54.0        Library for layout and rendering of text
+pango-1.55.5        Library for layout and rendering of text
 pcre2-10.44         Perl Compatible Regular Expressions library (major version 2)
 perl-5.40.0nb1      Practical Extraction and Report Language
 pixman-0.44.2       Library of low-level pixel manipulation routines
@@ -82,12 +82,13 @@ pkg_install-20240826 Package management and administration tools for pkgsrc
 pkgin-24.12.0       Apt / yum like tool for managing pkgsrc binary packages
 png-1.6.44          Library for manipulating PNG images
 py312-setuptools-75.6.0 New Python packaging system
-python312-3.12.7nb3 Interpreted, interactive, object-oriented programming language
+python312-3.12.8nb2 Interpreted, interactive, object-oriented programming language
 qt5-qtbase-5.15.16  C++ X GUI toolkit
 qt5-qtx11extras-5.15.16 Qt5 module for X11 extras
 qt5-qtxmlpatterns-5.15.16 Qt5 module for XML Patterns
 raqm-0.10.2         Library for complex text layout
 raspberrypi-userland-20170109nb3 Various libraries for the Raspberry Pi
+readline-8.2nb2     GNU library that can recall and edit previous input
 ruby32-addressable-2.8.7 Replacement for the URI Implementation of standard librrary
 ruby32-atk-4.2.3nb2 Ruby binding of ATK-1.0.x or later
 ruby32-base-3.2.6   Ruby 3.2.6 release minimum base package
@@ -111,7 +112,7 @@ ruby32-mikutter-5.0.8 Simple, powerful, and moeful twitter client
 ruby32-mini_portile2-2.8.8 Simple autoconf builder for developers
 ruby32-moneta-1.6.0 Unified interface to key/value stores
 ruby32-native-package-installer-1.1.9 Helper to install native packages on "gem install"
-ruby32-nokogiri-1.16.8 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby32-nokogiri-1.18.1 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby32-pango-4.2.3  Ruby binding of pango-1.x
 ruby32-pkg-config-1.5.8 Pure Ruby implementation of pkg-config
 ruby32-pluggaloid-1.7.0 Extensible plugin system for mikutter
