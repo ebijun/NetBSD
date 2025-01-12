@@ -110,6 +110,7 @@ pkg:
 	vnconfig ${VND} ${FILE}
 	fsck /dev/r${VND}a
 	mount /dev/${VND}a ${MNT}
+	sed -ie /ROOT.a/s/log,//   ${MNT}/etc/fstab
 	echo rc_configured=YES  >> ${MNT}/etc/rc.conf
 	echo sshd=NO            >> ${MNT}/etc/rc.conf
 	echo syslogd=NO         >> ${MNT}/etc/rc.conf

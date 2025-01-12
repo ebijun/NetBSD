@@ -1,28 +1,28 @@
-VERSION: :1,$s/2024-12-24/2024-12-24/g
-ISO:     :1,$s/202412231520Z/202412231520Z/g
+VERSION: :1,$s/2025-01-12/2025-01-12/g
+ISO:     :1,$s/202501100520Z/202501100520Z/g
 NetBSD:  :1,$s/10.99.12/10.99.12/g
-PKGSRC:  :1,$s/2024-12-24/2022/
+PKGSRC:  :1,$s/2025-01-12/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2024-12-24-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2025-01-12-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2024-12-24-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2025-01-12-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-12-24-earmv6hf/2024-12-24-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-12-24-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-01-12-earmv6hf/2025-01-12-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-01-12-earmv6hf/MD5
 
 Update:
-- python312: python312-3.12.8nb2.tgz is ok.
+- fstab
+  To resize_root,disable log from /etc/fstab.
 - libgtop:
 checking for X... 
 malloc: make_cmd.c:658: assertion botched
 realloc: underflow detected; mh_nbytes out of range
 Aborting...[1]   Abort trap (core dumped) /usr/bin/env INSTALL=/usr/bin/install -c -o ro...
 *** Error code 134
-
 - add net/nanotodon
   Nanotodon is a light-weight CUI/C99 mastodon client.
 
@@ -38,7 +38,7 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 10.99.12 evbarm-earmv6hf 202412231520Z rpi.img from nyftp.
+- NetBSD 10.99.12 evbarm-earmv6hf 202501100520Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
   # mlterm-wscons
@@ -58,9 +58,9 @@ add earmv6hf to pkgsrc/lang/rust/platform.mk:
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-commit 4193185a9380f7c7ddf2084ecb891bc4bfd020a9 (HEAD -> master, origin/master, origin/HEAD)
+commit 81c2e6f8ca51223bb503fa51047c74fdad1c2d04 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Wed Nov 20 13:54:23 2024 +0000
+Date:   Fri Dec 20 15:59:54 2024 +0000
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
@@ -100,22 +100,11 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- libcurses-9.2 sh-20220122-20241223101559Z tcsh-6.24.14 tzdata-2024bgtz
+ sh-20220122-20250109192833Z
 
 pkgsrc:
- at-spi2-core-2.54.0nb4 curl-8.11.1nb1 dav1d-1.5.0 fltk-1.3.10 fossil-2.25nb1
- git base-2.47.1 glib2-2.82.2 gnutls-3.8.8nb2 gtk2+-2.24.33nb25 gtk3+-3.24.43nb5
- harfbuzz 10.1.0 icu-76.1nb1 imlib2-1.12.2nb2 libaom-3.10.0nb1 libcups-2.4.11nb3
- libgcrypt 1.11.0nb2 libgpg-error-1.51 libheif-1.19.5 libproxy-0.5.9nb3
- libxkbcommon 1.7.0nb5 libxml2-2.12.9nb3 libxslt-1.1.42nb3 m17n-lib-1.8.0nb20
- medit 1.2.0nb36 mlterm-3.9.3nb18 mozilla-rootcerts-1.1.20241118
- nanotodon 0.4.0nb3 nghttp2-1.64.0nb3 openh264-2.5.0 perl-5.40.0nb1
- pixman 0.44.2 pkgin-24.12.0 py312-setuptools-75.6.0 python312-3.12.7nb3
- qt5 qtbase-5.15.16 qt5-qtx11extras-5.15.16 qt5-qtxmlpatterns-5.15.16
- ruby32 atk-4.2.3nb2 ruby32-base-3.2.6 ruby32-gdk3-4.2.3nb2 ruby32-gtk3-4.2.3nb2
- ruby32 mikutter-5.0.8 ruby32-mini_portile2-2.8.8 ruby32-nokogiri-1.16.8
- ruby32 pkg-config-1.5.8 shared-mime-info-2.4nb4 sqlite3-3.47.2 svt-av1-2.3.0
- tcsh 6.24.14 uim-1.8.9nb16 wayland-1.23.0nb3 wget-1.25.0 x265-4.1
+ gnutls-3.8.8nb4 gtk2+-2.24.33nb26 gtk3+-3.24.43nb6 libwebp-1.5.0 nettle-3.10.1 pango-1.55.5
+ python312-3.12.8nb2 readline-8.2nb2 ruby32-nokogiri-1.18.1
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -167,7 +156,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2024-12-24-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-01-12-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -223,7 +212,7 @@ Pre-compiled packages:
 
 See /etc/pkg_install.conf
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2024/
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2025/
 
 - If you use Official Package for NetBSD9:
 
