@@ -6,8 +6,8 @@ ARCH=aarch64
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 #NetBSD-current
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202412270350Z/evbarm-aarch64/binary
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2024/
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202501120240Z/evbarm-aarch64/binary
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2025/
 
 #NetBSD10
 #BINARY=nycdn.netbsd.org/pub/NetBSD-daily/netbsd-10/202404140340Z/
@@ -28,9 +28,10 @@ RPI5_UEFI=RPI5
 
 #Firmware:
 #git show HEAD |head
-#commit 81c2e6f8ca51223bb503fa51047c74fdad1c2d04 (HEAD -> master, origin/master, origin/HEAD)
+#commit 9e65e647c2d8cb1453875c509bf6a730288b7491 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Fri Dec 20 15:59:54 2024 +0000
+#Date:   Fri Jan 10 13:20:21 2025 +0000
+
 
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 

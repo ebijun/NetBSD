@@ -1,12 +1,12 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
     2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
     2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
-    2024
+    2024, 2025
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.12 (GENERIC64) #0: Fri Dec 27 00:57:53 UTC 2024
+NetBSD 10.99.12 (GENERIC64) #0: Sat Jan 11 23:00:02 UTC 2025
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 8024 MB
 avail memory = 7733 MB
@@ -148,7 +148,7 @@ bwfm0 at sdmmc0 function 1
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SF064:0x01:0xf60436a2:0x183>
 ld1: 59024 MB, 7524 cyl, 255 head, 63 sec, 512 bytes/sect x 120881152 sectors
-ld1: GPT GUID: 50d56f6c-70c9-4088-abd3-23ad9bd10793
+ld1: GPT GUID: 4d08fc62-3910-4480-a771-1ea4170945d4
 dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 6041010 blocks at 90203, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -175,10 +175,10 @@ boot device: dk1
 root on dk1
 root file system type: ffs
 kern.module.path=/stand/evbarm/10.99.12/modules
-WARNING: clock lost 260 days
+WARNING: clock lost 276 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc0029f027000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc0029efc2000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
