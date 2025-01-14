@@ -1,18 +1,18 @@
-VERSION: :1,$s/2024-12-25/2024-12-25/g
-ISO:     :1,$s/202412240140Z/202412240140Z/g
+VERSION: :1,$s/2025-01-14/2025-01-14/g
+ISO:     :1,$s/202501130440Z/202501130440Z/g
 NetBSD:  :1,$s/10.99.12/10.99.12/g
-PKGSRC:  :1,$s/2024-12-25/2024-12-25/g
+PKGSRC:  :1,$s/2025-01-14/2025-01-14/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2024-12-25-netbsd-armv7-earmv7hf.img
+Subject: 2025-01-14-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2024-12-25-netbsd9-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2025-01-14-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-12-25-earmv7hf/2024-12-25-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2024-12-25-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-01-14-earmv7hf/2025-01-14-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-01-14-earmv7hf/MD5
 
 Update:
 - add net/nanotodon
@@ -30,25 +30,31 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 10.99.12 evbarm-armv7hf 202412240140Z armv7.img from nyftp.
+- NetBSD 10.99.12 evbarm-armv7hf 202501130440Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 - Firmware:
-commit 81c2e6f8ca51223bb503fa51047c74fdad1c2d04 (HEAD -> master, origin/master, origin/HEAD)
+commit 9e65e647c2d8cb1453875c509bf6a730288b7491 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Fri Dec 20 15:59:54 2024 +0000
+Date:   Fri Jan 10 13:20:21 2025 +0000
 
 sysinfo:
- libcurses-9.2 sh-20220122-20241223101559Z tcsh-6.24.14
+ libcurses-9.2 sh-20220122-20250112231030Z tcsh-6.24.14
 
 pkgsrc:
- curl-8.11.1nb1 fltk-1.3.10 git-base-2.47.1 icu-76.1nb1 imlib2-1.12.2nb2
- libheif-1.19.5 mozilla-rootcerts-1.1.20241118 nanotodon-0.4.0nb3 perl-5.40.0nb1
- pixman-0.44.2 pkg_install-20241101 pkgin-24.12.0 py312-setuptools-75.6.0
- python312-3.12.8nb2 readline-8.2nb2 ruby32-atk-4.2.3nb2 ruby32-gdk3-4.2.3nb2
- ruby32-gtk3-4.2.3nb2 ruby32-mikutter-5.0.8 ruby32-mini_portile2-2.8.8
- ruby32-nokogiri-1.16.8 ruby32-pkg-config-1.5.8 sqlite3-3.47.2 tcsh-6.24.14
- wget-1.25.0 x265-4.1
+ curl-8.11.1nb1 fltk-1.3.10 git-base-2.47.1 glib2-2.82.4 gnutls-3.8.8nb4
+ gtk2+ 2.24.33nb26 gtk3+-3.24.43nb6 harfbuzz-10.2.0 icu-76.1nb1 imlib2-1.12.2nb2
+ libheif 1.19.5 libuuid-2.40.2 libwebp-1.5.0 medit-1.2.0nb37 mlterm-3.9.3nb19
+ mozilla rootcerts-1.1.20241118 nanotodon-0.5.0 nettle-3.10.1 pango-1.56.0
+ perl 5.40.0nb1 pixman-0.44.2 pkg_install-20241101 pkgin-24.12.0 png-1.6.45
+ py312 setuptools-75.8.0 python312-3.12.8nb2 qt5-qtbase-5.15.16nb1
+ readline 8.2nb2 ruby32-atk-4.2.5 ruby32-cairo-1.17.14
+ ruby32 cairo-gobject-4.2.5 ruby32-gdk3-4.2.5 ruby32-gdk_pixbuf2-4.2.5
+ ruby32 gio2-4.2.5 ruby32-glib2-4.2.5 ruby32-gobject-introspection-4.2.5
+ ruby32 gtk3-4.2.5 ruby32-mikutter-5.1.0 ruby32-mini_portile2-2.8.8
+ ruby32 nokogiri-1.18.1 ruby32-pango-4.2.5nb1 ruby32-pkg-config-1.5.8
+ sqlite3 3.47.2nb1 tcsh-6.24.14 uim-1.8.9nb17 wayland-protocols-1.39 wget-1.25.0
+ x265 4.1
 
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2024/
