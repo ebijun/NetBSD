@@ -8,20 +8,23 @@ Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Update:
- firefox-132.0.2
- icu-76.1nb1
- libreoffice-24.8.3.2nb1
- mate-1.26.1nb15
- mlterm-3.9.3nb18
- nss-3.107
- perl-5.40.0nb1
- python312-3.12.8nb2
- rust-1.81.0
- samba-4.21.2nb2
- webkit-gtk-2.36.8nb20
- wxGTK32-3.2.6nb5
+ boost-libs-1.87.0nb1
+ firefox-133.0.3nb1
+ inkscape-1.4nb6
+ libreoffice-24.8.4.2nb1
+ mate-1.26.1nb16
+ mlterm-3.9.3nb19
+ xfce4-4.18.1nb22
 
 Topics:
+- stable-diffusion.cpp works well.
+        git clone --recursive https://github.com/leejet/stable-diffusion.cpp
+        cd stable-diffusion.cpp
+        mkdir build
+        cd build
+        cmake ..
+        cmake --build . --config Release
+ 
 - USB2 audio
 
 works ok
@@ -102,74 +105,86 @@ ToDo:
 
 pkgsrc:
 - pkgsrc packages:
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2024/
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/aarch64/aarch64/2025/
   pkgin support
 
 System Updates:
 
 sysinfo:
- libcurses-9.2 sh-20220122-20241228055615Z tcsh-6.24.14
+ sh-20220122-20250114213925Z
 
 pkgsrc:
- ImageMagick-7.1.1.35nb6 SDL2-2.30.10 amtk-5.0.2nb12 appstream-1.0.4
- asciidoc-10.2.1nb3 atril-1.26.2nb10 caja-1.26.4nb5 caja-dropbox-1.26.0nb10
- caja-extensions-1.26.1nb17 cmake-3.31.3 curl-8.11.1nb1
- deforaos-browser-0.5.5nb11 deforaos-camera-0.3.0nb14 deforaos-editor-0.4.1nb14
- deforaos-keyboard-0.4.0nb14 deforaos-libdesktop-0.4.1nb11
- deforaos-mixer-0.4.1nb10 deforaos-panel-0.4.3nb11 deforaos-pdfviewer-0.1.0nb32
- deforaos-phone-0.6.0nb16 emacs29-29.4nb10 engrampa-1.26.2nb4 eom-1.26.1nb13
- ffmpeg4-4.4.5nb4 ffmpeg5-5.1.6nb4 ffmpeg6-6.1.2nb6 ffmpeg7-7.1nb4
- firefox-132.0.2 firefox-l10n-132.0.2 firefox115-115.18.0
- firefox115-l10n-115.18.0 fltk-1.3.10 fluidsynth-2.4.1 gcr-3.40.0nb2
- gedit-3.36.2nb29 ghostscript-agpl-10.04.0nb3 gimp-2.10.38nb10 git-base-2.47.1
- gnome-desktop-44.0nb6 gnome-keyring-3.36.0nb11 gnome-themes-standard-3.20.2nb34
- gnupg2-2.4.7 gpgme-1.24.1 graphviz-12.2.0 gst-plugins1-bad-1.24.10
- gst-plugins1-base-1.24.10 gst-plugins1-good-1.24.10 gstreamer1-1.24.10
- gtk-doc-1.34.0nb4 gtk4-4.16.7 gtksourceview3-3.24.11nb25 gumbo-parser-0.12.2
- gvfs-1.6.7nb73 icu-76.1nb1 imlib2-1.12.2nb2 jwm-2.4.6 libadwaita-1.6.1nb3
- libappindicator-12.10.0nb26 libcanberra-0.30nb17 libcmis-0.6.2
- libdbusmenu-gtk3-16.04.0nb6 libdeflate-1.23 libgweather-40.0nb27 libheif-1.19.5
- libindicator-12.10.1nb23 libmatekbd-1.26.1nb12 libmatemixer-1.26.1nb7
- libmateweather-1.26.3nb8 libnotify-0.8.3nb3 libpeas-1.26.0nb15
- libreoffice-24.8.3.2nb1 libsoup3-3.4.5 libwnck3-3.36.0nb12 libxfce4ui-4.18.6nb4
- libxfce4util-4.18.2nb4 marco-1.26.2nb8 mate-1.26.1nb15 mate-applets-1.26.1nb16
- mate-backgrounds-1.26.0nb10 mate-calc-1.26.0nb15 mate-common-1.26.0nb9
- mate-control-center-1.26.1nb12 mate-desktop-1.26.2nb7
- mate-icon-theme-1.26.0nb10 mate-icon-theme-faenza-1.20.0nb20
- mate-indicator-applet-1.26.0nb9 mate-media-1.26.2nb8 mate-menus-1.26.1nb7
- mate-netbook-1.26.0nb9 mate-notification-daemon-1.26.1nb12 mate-panel-1.26.6nb5
- mate-polkit-1.26.1nb9 mate-power-manager-1.26.1nb7 mate-screensaver-1.26.2nb12
- mate-sensors-applet-1.26.0nb9 mate-session-manager-1.26.1nb7
- mate-settings-daemon-1.26.1nb13 mate-terminal-1.26.1nb7 mate-themes-3.22.24nb7
- mate-utils-1.26.1nb7 meson-1.6.1 mlterm-3.9.3nb18
- mozilla-rootcerts-1.1.20241118 mozilla-rootcerts-openssl-2.18 mozo-1.26.2nb10
- neon-0.33.0nb5 nginx-1.26.2nb7 npth-1.8 nss-3.107 openal-soft-1.24.1
- openjpeg-2.5.3 p5-Alien-Build-2.84nb4 p5-Capture-Tiny-0.50 p5-MailTools-2.22
- p5-Sub-Name-0.28 perl-5.40.0nb1 pixman-0.44.2 pkg_install-20241101
- pkgin-24.12.0 pluma-1.26.1nb14 postgresql14-client-14.15 pulseaudio-17.0nb1
- py312-cryptography-44.0.0 py312-lxml-5.3.0nb3 py312-setuptools-75.6.0
- py312-tomli-2.2.1 python310-3.10.16 python311-3.11.11nb1 python312-3.12.8nb2
- python39-3.9.21 qmmp-1.6.5nb12 qt5-qtbase-5.15.16 qt5-qtdeclarative-5.15.16
- qt5-qtlocation-5.15.16 qt5-qtmultimedia-5.15.16 qt5-qtsensors-5.15.16
- qt5-qtserialport-5.15.16 qt5-qtsvg-5.15.16 qt5-qttools-5.15.16
- qt5-qtwebchannel-5.15.16 qt5-qtwebsockets-5.15.16 qt5-qtx11extras-5.15.16
- qt5-qtxmlpatterns-5.15.16 raptor2-2.0.16nb8 rarian-0.8.5nb3 rasqal-0.9.33nb36
- redland-1.0.17nb44 ruby32-atk-4.2.3nb2 ruby32-gdk3-4.2.3nb2
- ruby32-gtk3-4.2.3nb2 ruby32-mini_portile2-2.8.8 ruby32-pkg-config-1.5.8
- rust-1.81.0 samba-4.21.2nb2 sqlite3-3.47.2 talloc-2.4.2nb1 tcsh-6.24.14
- tdb-1.4.12nb1 tepl4-4.4.0nb22 tevent-0.16.1nb1 tree-sitter-c-0.23.2
- tree-sitter-go-0.23.4 tree-sitter-python-0.23.5 tree-sitter-rust-0.23.2
- uchardet-0.0.8 uim-1.8.9nb16 vlc-3.0.21nb4 vte3-0.76.4nb5
- vulkan-headers-1.3.296 w3m-0.5.3.0.20230121nb5 wayland-1.23.0nb3
- webkit-gtk-2.36.8nb20 wget-1.25.0 wxGTK30-3.0.5.1nb18 wxGTK32-3.2.6nb5 x265-4.1
- xfce4-4.18.1nb21 xfce4-appfinder-4.18.1nb7 xfce4-conf-4.18.3nb4
- xfce4-desktop-4.18.1nb7 xfce4-exo-4.18.0nb9 xfce4-garcon-4.18.2nb4
- xfce4-icon-theme-4.4.3nb45 xfce4-mousepad-0.6.3nb4 xfce4-orage-4.18.0nb13
- xfce4-panel-4.18.6nb4 xfce4-power-manager-4.18.4nb2 xfce4-session-4.18.4nb5
- xfce4-settings-4.18.6nb5 xfce4-terminal-1.1.3nb4 xfce4-thunar-4.18.11nb2
- xfce4-tumbler-4.18.2nb13 xfce4-wm-4.18.0nb9 xfce4-wm-themes-4.10.0nb27
- xmlto-0.0.28nb14 xscreensaver-6.08nb11 yelp-tools-42.1nb5 zenity3-3.44.4nb2
-
+ SDL-1.2.15nb44 SDL2-2.30.11 SDL_image-1.2.12nb12 SDL_mixer-1.2.12nb8
+ SDL_ttf-2.0.11nb7 abseil-20240722.0nb1 amtk-5.0.2nb13 atril-1.26.2nb11
+ boost-headers-1.87.0 boost-jam-1.87.0 boost-libs-1.87.0nb1 caja-1.26.4nb6
+ caja-dropbox-1.26.0nb11 caja-extensions-1.26.1nb18 deforaos-browser-0.5.5nb12
+ deforaos-camera-0.3.0nb15 deforaos-editor-0.4.1nb15 deforaos-keyboard-0.4.0nb15
+ deforaos-libdesktop-0.4.1nb12 deforaos-mixer-0.4.1nb11 deforaos-panel-0.4.3nb12
+ deforaos-pdfviewer-0.1.0nb33 deforaos-phone-0.6.0nb17 emacs29-29.4nb11
+ engrampa-1.26.2nb5 eom-1.26.1nb14 exempi-2.5.2nb9 firefox-133.0.3nb1
+ firefox-l10n-133.0.3 firefox115-115.19.0 firefox115-l10n-115.19.0
+ fluidsynth-2.4.2 fmtlib-11.1.2 gcc10-10.5.0nb4 gcc12-12.4.0nb1
+ gcc12-libs-12.4.0nb3 gcr-3.40.0nb3 gdbm-1.24 gdbus-codegen-2.82.4
+ gedit-3.36.2nb30 gegl-0.4.52 gimp-2.10.38nb12 git-base-2.48.0 glib2-2.82.4
+ glib2-tools-2.82.4 gnome-desktop-44.0nb7 gnome-icon-theme-symbolic-3.12.0nb31
+ gnome-keyring-3.36.0nb12 gnome-themes-standard-3.20.2nb35 gnutls-3.8.8nb4
+ graphviz-12.2.0nb1 gsl-2.8 gspell-1.8.4nb8 gst-plugins1-bad-1.24.11
+ gst-plugins1-base-1.24.11 gst-plugins1-good-1.24.11 gstreamer1-1.24.11
+ gtk2+-2.24.33nb26 gtk2-engines-2.20.2nb39 gtk2-engines-murrine-0.98.2nb22
+ gtk3+-3.24.43nb6 gtk4-4.16.7nb1 gtkmm3-3.24.9nb7 gtksourceview3-3.24.11nb26
+ gtksourceview4-4.8.4nb13 gtkspell-2.0.16nb44 gumbo-parser-0.13.0
+ harfbuzz-10.2.0 harfbuzz-icu-10.2.0 inkscape-1.4nb6 json-c-0.18 jwm-2.4.6nb1
+ libabw-0.1.3nb25 libadwaita-1.6.1nb4 libappindicator-12.10.0nb27
+ libcanberra-0.30nb18 libcdr-0.1.7nb18 libclucene-2.3.3.4nb27 libcmis-0.6.2nb1
+ libdbusmenu-gtk3-16.04.0nb7 libdisplay-info-0.2.0 libe-book-0.1.3nb34
+ libepubgen-0.1.1nb10 libetonyek-0.1.10nb18 libfreehand-0.1.2nb26
+ libglade-2.6.4nb55 libgweather-40.0nb28 libical-3.0.19 libindicator-12.10.1nb24
+ libixion-0.19.0nb3 libmatekbd-1.26.1nb13 libmatemixer-1.26.1nb8
+ libmateweather-1.26.3nb9 libmspub-0.1.4nb33 libmwaw-0.3.21nb5
+ libnotify-0.8.3nb4 libodfgen-0.1.7nb10 libpagemaker-0.0.4nb16
+ libpeas-1.26.0nb16 libqxp-0.0.2nb27 libreoffice-24.8.4.2nb1 librevenge-0.0.5nb2
+ librsvg-2.59.2 libstaroffice-0.0.7nb10 libunique-1.1.6nb42 libuuid-2.40.2
+ libvisio-0.1.7nb28 libwebp-1.5.0 libwnck-2.30.7nb11 libwnck3-3.36.0nb13
+ libwpd-0.10.3nb10 libwpg-0.3.3nb13 libwps-0.4.12nb9 libxfce4ui-4.20.0nb1
+ libxfce4util-4.20.0nb2 libxfce4windowing-4.20.0nb2 libzmf-0.0.2nb35
+ marco-1.26.2nb9 mate-1.26.1nb16 mate-applets-1.26.1nb17
+ mate-backgrounds-1.26.0nb11 mate-calc-1.26.0nb16 mate-common-1.26.0nb10
+ mate-control-center-1.26.1nb13 mate-desktop-1.26.2nb8
+ mate-icon-theme-1.26.0nb11 mate-icon-theme-faenza-1.20.0nb21
+ mate-indicator-applet-1.26.0nb10 mate-media-1.26.2nb9 mate-menus-1.26.1nb8
+ mate-netbook-1.26.0nb10 mate-notification-daemon-1.26.1nb13
+ mate-panel-1.26.6nb6 mate-polkit-1.26.1nb10 mate-power-manager-1.26.1nb8
+ mate-screensaver-1.26.2nb13 mate-sensors-applet-1.26.0nb10
+ mate-session-manager-1.26.1nb8 mate-settings-daemon-1.26.1nb14
+ mate-terminal-1.26.1nb8 mate-themes-3.22.24nb8 mate-utils-1.26.1nb8
+ mcookie-2.40.2 mdds-2.1.1nb3 medit-1.2.0nb37 mlterm-3.9.3nb19 mozo-1.26.2nb11
+ mpg123-1.32.10 nettle-3.10.1 nginx-1.26.2nb8 oniguruma-6.9.10
+ onscripter-20230825nb2 orcus-0.19.2nb2 osg-3.6.5nb62 p5-Locale-libintl-1.34
+ p5-Module-Pluggable-6.3 p5-Net-DNS-1.49 p5-Specio-0.49 p5-Term-Table-0.024
+ p5-Test-Warnings-0.037 pango-1.56.0 pangomm-2.46.3nb5 php-7.4.33nb9
+ pluma-1.26.1nb15 png-1.6.45 poppler-24.10.0nb4 protobuf-29.3
+ py27-gtk2-2.24.0nb55 py312-Pillow-11.1.0 py312-certifi-2024.12.14
+ py312-charset-normalizer-3.4.1 py312-jinja2-3.1.5 py312-numpy-2.2.1
+ py312-pygments-2.19.1 py312-pyparsing-3.2.1 py312-setuptools-75.8.0
+ py312-six-1.17.0 py312-trove-classifiers-2025.1.10.15 py312-urllib3-2.3.0
+ qt5-qtbase-5.15.16nb1 re2c-4.0.2nb1 ruby32-atk-4.2.5 ruby32-cairo-1.17.14
+ ruby32-cairo-gobject-4.2.5 ruby32-gdk3-4.2.5 ruby32-gdk_pixbuf2-4.2.5
+ ruby32-gio2-4.2.5 ruby32-glib2-4.2.5 ruby32-gobject-introspection-4.2.5
+ ruby32-gtk3-4.2.5 ruby32-pango-4.2.5nb1 samba-4.21.3 scribus-1.6.2nb11
+ smpeg-0.4.5nb1 sqlite3-3.47.2nb1 sudo-1.9.16p2 sylpheed-3.7.0nb20 tcl-8.6.14nb5
+ tepl4-4.4.0nb23 tex-latex-20240601.2 tree-sitter-0.24.6 tree-sitter-c-0.23.4
+ tree-sitter-css-0.23.2 tree-sitter-elixir-0.3.3 tree-sitter-heex-0.7.0
+ tree-sitter-java-0.23.5 tree-sitter-python-0.23.6 uim-1.8.9nb17 vte-0.28.1nb38
+ vte3-0.76.4nb6 wayland-protocols-1.39 webkit-gtk-2.36.8nb21 wxGTK30-3.0.5.1nb19
+ wxGTK32-3.2.6nb6 xfce4-4.18.1nb22 xfce4-appfinder-4.20.0nb1
+ xfce4-conf-4.20.0nb1 xfce4-desktop-4.20.0 xfce4-exo-4.20.0nb1
+ xfce4-garcon-4.20.0nb1 xfce4-icon-theme-4.4.3nb46 xfce4-mousepad-0.6.3nb5
+ xfce4-orage-4.18.0nb14 xfce4-panel-4.20.0 xfce4-power-manager-4.20.0
+ xfce4-session-4.20.0 xfce4-settings-4.20.0 xfce4-terminal-1.1.4
+ xfce4-thunar-4.20.0 xfce4-tumbler-4.20.0nb1 xfce4-wm-4.20.0
+ xfce4-wm-themes-4.10.0nb28 xnp2-0.86nb29 xscreensaver-6.08nb12 xxhash-0.8.3
+ zenity3-3.44.4nb3 zxing-cpp-2.3.0
+ 
 Version: 
  `uname -v`
 
