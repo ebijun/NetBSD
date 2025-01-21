@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.1.0
+ DISTNAME=       nono-1.1.1
 
 チェックサム作成
 ------------------
@@ -50,9 +50,10 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum
- -rw-r--r--  1 jun   wheel  1148 Dec 29 04:35 Makefile
- -rw-r--r--  1 jun   wheel   357 Nov  4 01:22 PLIST
- -rw-r--r--  1 root  wheel   558 Dec 29 04:36 distinfo
+ -rw-r--r--  1 jun  wheel  1148 Jan  8 20:48 Makefile
+ -rw-r--r--  1 jun  wheel   357 Nov  4 01:22 PLIST
+ -rw-r--r--  1 jun  wheel   558 Jan  8 20:48 distinfo
+
 
 make package して動作を確認します。
  
@@ -80,36 +81,16 @@ commit
 
  cvs commit 
 
- nono: update to 1.1.0.
+ nono: update to 1.1.1.
 
- 1.1.0 (2024/12/25)
+ 1.1.1 (2024/12/31)
 
- m68k(New): "Start implementing 68040. Currently, it supports some new instructions, MMU and FPU."
- m68k(New): "Implement cpSAVE, cpRESTORE behavior on 68030."
- m68k(Fix): "Fix the order that FSAVE writes to the memory."
- m68k(Fix): "Fix flags on FBcc, FDBcc, FScc, FTRAPcc."
- m68k(Fix): "Fix branch address calculation on FDBcc."
- m68k(Fix): "Fix OVFL, UNFL flags on FMOVE.X FPn,<ea>."
- m68k(Fix): "Improve result of FMOVE.[BW] FPn,<ea> when FPn is out of range."
- m68k(Fix): "Fix a problem that there were cases where F-line exception was not occurred even if the F-line instruction pattern was illegal."
- m68k(Fix): "Implement that initialize FPU registers on the FPU reset."
- m68k(Fix): "Implement a format error exception on RTE and FRESTORE."
- m68k(Update): "Implement the decimal representation of the FPn on the register monitor."
- m68k(Update): "If an instruction has an illegal EA, the debugger now shows it as an illegal instruction."
- m68k(Update): "The debugger now shows branch condition even on FBcc, FDBcc, FScc and FTRAPcc."
- hd64180(Fix): "Fix CPIR, CPDR, INIR, INDR, OTIR, OTDR instructions."
- hd64180(Fix): "Fix contents that is pushed into the stack when the undefined opcode trap."
- hd64180(Update): "Supports disassemble of Z80's undefined opcode as SLL or LD IXr,n."
- hd64180(New): "Add xp-clock configuration."
- vm(New): "Implement a terminal emulation of serial console on virt-m68k (and NEWS)."
- vm(New): "Implement BI_COMMANDLINE on BootInfo. Now you can specify the root device to NetBSD/virt68k."
- vm(Fix): "Clear the SPC's internal queue on the reset."
- vm(Fix): "Implement a reset on virtio-net."
- vm(Fix): "Fix a problem that Goldfish Timer might not work after the reset."
- vm(Fix): "Clear the Goldfish PIC's monitor counter on the reset."
- GUI(Fix): "Fix SPC address label on X68030 SPC monitor."
- GUI(Fix): "Support virt-m68k on the vector table monitor."
- GUI(Fix): "Fix a proiblem where cursor key input was sometimes not possible." 
+ m68k(Fix): "Fix flags on FABS, FNEG, FMOVE.D <ea>,FPn, FMOVE.X <ea>,FPn and FMOVE.X FPn,<ea>."
+ m68k(Update): "Implement behaviors of FMOVEM.X -(An),<fplist> that should be an illegal instruction."
+ m68k(Update): "Implement a part of behaviros of FMOVEM.X <fplist>,(An)+ that should be an illegal instruction."
+ vm(Fix): "Fix hangup problem when you insert two floppies on startup on X68030 since ver 0.7.0."
+ vm(Update): "Implement a part of IOCS _B_INTVCS on Human68k mode."
+ util(Update): "Implement a part of IOCS _B_INTVCS on runx."
 
 doc をcommit します
 ---------------------
@@ -119,9 +100,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.1.0
+ doc: Updated emulators/nono to 1.1.1
  
- cvs diff -u CHANGES-2024
+ cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.1.0 [jun 2024-12-29]
+        Updated emulators/nono to 1.1.1 [jun 2025-01-08]
 
