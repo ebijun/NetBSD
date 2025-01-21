@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2016-2023 Jun Ebihara All rights reserved.
+ Copyright (c) 2016-2025 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -67,6 +67,9 @@ mlfc コマンドを実行すると、true typeフォントを検索して、
 ::
 
  % mlterm-wscons
+ Shift-F1: 画面横分割
+ Shift-F2: 画面縦分割
+ Shift-F3: 画面移動
 
 PCでのmlterm-fb起動
 -----------------------
@@ -83,7 +86,7 @@ NetBSD/i386,amd64でmlterm-fbを利用する場合、起動時にVESAを指定�
 テスト画像表示
 ---------------
 
- mlterm-wsconfを起動した状態で、catを利用して、画像イメージを表示します。
+ mlterm-wsconsを起動した状態で、catを利用して、画像イメージを表示します。
 
 ::
 
@@ -129,7 +132,7 @@ mlterm-fb上でsayakaを動かしてみる
 
 mlterm-wscons上で日本語が表示できたら、sayaka [sayaka]_ を利用してmisskey.ioのタイムラインを表示してみましょう。
 
-twのインストール
+sayakaのインストール
 -------------------
 
 pkgsrcからsayakaをインストールします。
@@ -138,6 +141,16 @@ pkgsrcからsayakaをインストールします。
 
  # cd /usr/pkgsrc/net/sayaka
  # make package-install 
+
+nanotodonのインストール
+---------------------------
+
+pkgsrcからnanotodon をインストールします。
+
+::
+
+ # cd /usr/pkgsrc/net/nanotodon
+ # make package-install
 
 .. rubic:: 
 
