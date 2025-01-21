@@ -1,0 +1,67 @@
+.. 
+ Copyright (c) 2025 Jun Ebihara All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+=================================
+PC6001VXを使ってみる
+=================================
+
+特徴
+----
+
+* PC6001エミュレータ PC6001VXを使ってみます。
+
+準備するもの
+-------------
+
+* pkgsrc/emulators/PC6001VX
+
+Tiny みずいろ
+----------------
+
+- PC6001VX 起動
+- How Many Pages? 2
+- 右クリック→拡張カートリッジ→PC-6006 拡張ROM/RAMカートリッジ→ROMなし
+- https://bn-x.tripod.com/02tinymizu/
+- https://tsutsui.hatenablog.com/entry/ar1891638
+
+::
+
+    機種設定および起動時の MODE (機種選択) は PC-6001(32K)を選択
+    How Many Page? は 2 を入力
+    エミュレータのテープファイルとして tiny_mizuiro_prologue_PSG_01.P6 を選択 (※1)
+    "CLOAD" で BASIC プログラムロード
+    ロードが終わったら次のテープファイルとして tiny_mizuiro_prologue_PSG_02.P6 を選択
+    "RUN" で BASIC プログラムを実行 →機械語パートのロード開始
+    ロードが終わって "HIT ANY KEY" の表示が出たら適当なキーを押す
+    デモスタート! (※2)
+
+
+画像出力
+-----------
+
+- 画像変換 for PC-6001でVRAMをダウンロードして
+- PC6001VXモニタモードで
+- loadm ファイル名 0xe000 0xf9ff 
+- out 0xb0 0xf2
+- 事前に screen 3,2,2 とか screen 4,2,2 とか実行しておいて BASICで何かしら初期化したあとにデバッガで
+- loadmem [ファイル名] 0xe000 0xf9ff
+- でロードして、デバッガから戻って PAGEキー（PAGE UPキー）を押すとグラフィック画面出ると思います
+
