@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2022-4 Jun Ebihara All rights reserved.
+ Copyright (c) 2022-5 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.1.1
+ DISTNAME=       nono-1.1.2
 
 チェックサム作成
 ------------------
@@ -54,6 +54,9 @@ Makefile 内のバージョンをあげます。
  -rw-r--r--  1 jun  wheel   357 Nov  4 01:22 PLIST
  -rw-r--r--  1 jun  wheel   558 Jan  8 20:48 distinfo
 
+ -rw-r--r--  1 jun  wheel  1148 Jan 23 20:02 Makefile
+ -rw-r--r--  1 jun  wheel   357 Nov  4 01:22 PLIST
+ -rw-r--r--  1 jun  wheel   558 Jan 23 20:03 distinfo
 
 make package して動作を確認します。
  
@@ -81,16 +84,14 @@ commit
 
  cvs commit 
 
- nono: update to 1.1.1.
+ nono: update to 1.1.2.
 
- 1.1.1 (2024/12/31)
-
- m68k(Fix): "Fix flags on FABS, FNEG, FMOVE.D <ea>,FPn, FMOVE.X <ea>,FPn and FMOVE.X FPn,<ea>."
- m68k(Update): "Implement behaviors of FMOVEM.X -(An),<fplist> that should be an illegal instruction."
- m68k(Update): "Implement a part of behaviros of FMOVEM.X <fplist>,(An)+ that should be an illegal instruction."
- vm(Fix): "Fix hangup problem when you insert two floppies on startup on X68030 since ver 0.7.0."
- vm(Update): "Implement a part of IOCS _B_INTVCS on Human68k mode."
- util(Update): "Implement a part of IOCS _B_INTVCS on runx."
+ m68k(Fix): "Revert FMOVEM.X -(An),<fplist> and FMOVEM.X <fplist>,(An)+ to the illegal instruction because the behavior can no longer be confirmed."
+ m68k(Fix): "Fix that illegal instructions around FMOVE.X FPn,<ea> might change FPSR."
+ m68k(Fix): "Fix problem that 68030 ATC incorrectly operated Modified bit since ver 0.7.2."
+ m68k(Fix): "Fix disassemble of CMP.[WL] An,Dn since ver 1.1.0."
+ vm/human68k(Update): "Implement timer work area."
+ util/runx(Fix): "Fix several probl"
 
 doc をcommit します
 ---------------------
@@ -100,9 +101,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.1.1
+ doc: Updated emulators/nono to 1.1.2
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.1.1 [jun 2025-01-08]
+        Updated emulators/nono to 1.1.2 [jun 2025-01-23]
 
