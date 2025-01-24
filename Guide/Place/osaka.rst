@@ -35,6 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
+ オープンソースカンファレンス2025大阪展示の記録,https://togetter.com/li/2496475
  2024/10-11 NetBSDブースの記録,https://togetter.com/li/2456931
  オープンソースカンファレンス2024大阪展示の記録,https://togetter.com/li/2298407
  KOF2023&OSC2023広島の記録,https://togetter.com/li/2254094
@@ -66,13 +67,13 @@ Maps:
  :widths: 25 15 60
 
  電子原人,谷町九丁目,17:00-22:00 そば
+ Goul Goul,谷六,17:00-23:00 オープン時にThis is PiL
  marca,大正,クラフトビール。大正タグボート平日16:00 土日11:00 23時。 
  Craft Beer Base Mother Tree,梅田,As Time Gose By
  クラフトマン UMAMI,梅田ESTの先,ぷーさんのダークハニーハント#2
  ビールと羊,梅田,知らんけどとKUDAMON。
  中之島美術館,中之島,塩田千春
  旧ヤム邸,谷六,カレー。二階にねこがいる。11:30-14:00 18:00-21:00
- Goul Goul,谷六,17:00-23:00 オープン時にThis is PiL
  テタールヴァレ,谷四,ビアバー。11:00-23:00
  YELLOW APE CRAFT,北浜,20タップ。15:00-24:30
  BAK BREWERY,高麗橋,火曜日〜土曜日 18時〜25時L.O 日曜日13時〜19時L.O.
@@ -117,6 +118,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ PC-6001のPSG演奏デモをなるべくNetBSD環境を使って作った話,KOF2024,https://speakerdeck.com/tsutsui/kof2024
  digital VAX NetBSD/vaxの歴史とVAXstation 3100/m30展示,OSC2024大阪,https://speakerdeck.com/tsutsui/osc2024osaka
  SONY NEWS NetBSD移植作業とNWS-3260展示,KOF2023, https://speakerdeck.com/tsutsui/kof2023
  KOFの20年とBSDユーザーグループの20年／中野秀男氏,KOF2022, https://www.k-of.jp/2022/session/nakano-ebijun-talk/
@@ -145,6 +147,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2024/11/8-9,南港ATC,LUNA PC-6001mkII
  2024/1/27,大阪産業創造館,VAXstation 3100/m30
  2023/11/10-11,南港ATC,NEWS NWS-3260
  2022/11/12,南港ATC,sun3/60
@@ -172,6 +175,33 @@ Maps:
 2024
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. image::  ../Picture/2024/11/09/IMG20241109160120.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109153340.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109153343.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109103353.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109103400.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109103506.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109103601.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109103618.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109105715.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109114905.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109115134.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109115212.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109115830.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109122233.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109123442.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109124701.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109124718.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109130942.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109134330.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109140758.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109151838.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109153336.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109153346.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109153348.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109162529.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109110410.jpg
+.. image::  ../Picture/2024/11/09/IMG20241109111130.jpg
 .. image::  ../Picture/2024/01/27/DSC_2571.JPG
 .. image::  ../Picture/2024/01/27/DSC_2572.JPG
 .. image::  ../Picture/2024/01/27/DSC_2573.JPG
