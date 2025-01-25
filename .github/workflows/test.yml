@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-cross-live-ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        machine: [alpha, evbarm-aarch64, evbarm-earmv7hf, i386, macppc, sparc, sparc64, vax]
+
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: prepare
+       uses: actions/checkout@v4
+
+     - name: build an image and test ssh on NetBSD on emulator
+       uses: ./
+       with:
+         machine: "${{ matrix.machine }}"
+         release: "10.1"
+
+         prepare: |
+           pkg_add tcsh
+
+         configure: |
+           pwd
+
+         build: |
+           uname -a
+           sysctl hw.model
+           ls -lR /home/runner
