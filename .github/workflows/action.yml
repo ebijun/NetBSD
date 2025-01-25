@@ -1,0 +1,293 @@
+name: "netbsd-cross-live-ci"
+description: "Action to test projects on NetBSD using live images and emulators"
+inputs:
+  release:
+    description: "The NetBSD release version (e.g., 10.1)."
+    required: false
+    default: "10.1"
+  machine:
+    description: "The target machine architecture (e.g., vax, amd64)."
+    required: true
+  ftphost:
+    description: "NetBSD FTP mirror host to fetch source and binary sets."
+    required: false
+    default: "cdn.NetBSD.org"
+  prepare:
+    description: "Command to prepare the environment (e.g., install packages) on NetBSD."
+    required: false
+    default: "true"
+  configure:
+    description: "Command to configure the project on NetBSD."
+    required: false
+    default: "true"
+  build:
+    description: "Command to build the project on NetBSD."
+    required: false
+    default: "make && make install"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Update host packages
+      shell: bash
+      run: |
+        echo "Update host packages"
+        sudo apt-get purge -qq firefox || true
+        sudo apt-get autoremove -qq -y
+        sudo apt-get update -qq
+        sudo apt-get upgrade -qq -y
+        sudo apt-get install -qq -y build-essential
+
+    - uses: actions/checkout@v4
+
+    - name: Set environment variables
+      shell: bash
+      run: |
+        echo "Set environment variables"
+        HOSTHOME=$HOME
+        MACHINE=${{ inputs.machine }}
+        RELEASEMACHINEDIR=${MACHINE}
+        # check in case of "evbarm-aarch64" or "evbarm-earmv7hf" etc.
+        if [ "${MACHINE#*-}" != "${MACHINE}" ]; then
+          MACHINE_ARCH="${MACHINE#*-}"
+          MACHINE="${MACHINE%%-*}"
+        fi
+        RELEASE=${{ inputs.release }}
+        FTPHOST=${{ inputs.ftphost }}
+        RELEASEDIR=pub/NetBSD/NetBSD-${RELEASE}
+        NETBSDSRCDIR=$HOME/netbsd-src
+        TOOLDIR=$NETBSDSRCDIR/tooldir.${RELEASEMACHINEDIR}
+        IMAGE=$HOME/netbsd-${RELEASE}-${RELEASEMACHINEDIR}.img
+        TARGETROOTDIR=$HOME/targetroot.${RELEASEMACHINEDIR}
+        cat >> $GITHUB_ENV <<EOF
+        HOSTHOME=$HOME
+        MACHINE=$MACHINE
+        RELEASEMACHINEDIR=${RELEASEMACHINEDIR}
+        RELEASE=$RELEASE
+        FTPHOST=$FTPHOST
+        RELEASEDIR=$RELEASEDIR
+        NETBSDSRCDIR=$NETBSDSRCDIR
+        TOOLDIR=$TOOLDIR
+        IMAGE=$IMAGE
+        TARGETROOTDIR=$TARGETROOTDIR
+        EOF
+        if [ ! -z "${MACHINE_ARCH}" ]; then
+          echo "MACHINE_ARCH=$MACHINE_ARCH" >> $GITHUB_ENV
+        fi
+
+    - name: Fetch NetBSD sources and build cross toolchains
+      shell: bash
+      run: |
+        echo "Fetch NetBSD sources and build cross toolchains"
+        sh ${GITHUB_ACTION_PATH}/scripts/buildtools.sh
+
+    - name: Prepare emulator and environment
+      shell: bash
+      run: |
+        echo "Prepare emulator and environment"
+        cd $HOME
+        case "${MACHINE}" in
+        alpha)
+          echo "Installing qemu-system-alpha..."
+          # sudo apt-get install -qq -y qemu-system-alpha
+          # qemu 8.2.2 (from ubuntu 24.04 LTS) cannot run NetBSD/alpha.
+          # See https://raymii.org/s/articles/NetBSD_on_QEMU_Alpha.html
+          sudo sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources
+          sudo apt-get -qq update
+          sudo apt-get build-dep -qq -yy qemu
+          git clone https://gitlab.com/qemu-project/qemu.git
+          (cd qemu && git checkout v9.1.2)	# as tested on pkgsrc-2024Q4
+          (cd qemu && curl -sSL https://raw.githubusercontent.com/NetBSD/pkgsrc/refs/heads/pkgsrc-2024Q4/emulators/qemu/patches/patch-hw_rtc_mc146818rtc.c | patch -p0)
+          (cd qemu && git submodule init && git submodule update --recursive)
+          JOBS=4
+          (cd qemu && sh configure --target-list=alpha-softmmu && make -j $JOBS)
+          SSH_PORT=10022
+          HOST_IP=10.0.2.2
+          GUEST_IP=10.0.2.15
+          #QEMU_BIN=qemu-system-alpha
+          QEMU_BIN=$HOME/qemu/build/qemu-system-alpha
+          cat >> $GITHUB_ENV <<EOF
+        SSH_PORT=$SSH_PORT
+        HOST_IP=$HOST_IP
+        GUEST_IP=$GUEST_IP
+        QEMU_BIN=$QEMU_BIN
+        EOF
+          ;;
+        evbarm)
+          QEMU_BIOS=$HOME/QEMU_EFI.fd
+          case "${MACHINE_ARCH}" in
+          aarch64)
+            echo "Installing qemu-system-aarch64..."
+            sudo apt-get install -qq -y qemu-system-aarch64
+            QEMU_BIN=qemu-system-aarch64
+            # See https://wiki.netbsd.org/ports/evbarm/qemu_arm/
+            curl -sSLo ${QEMU_BIOS} https://snapshots.linaro.org/components/kernel/leg-virt-tianocore-edk2-upstream/4480/QEMU-AARCH64/RELEASE_GCC5/QEMU_EFI.fd
+            ;;
+          *)
+            echo "Installing qemu-system-arm..."
+            sudo apt-get install -qq -y qemu-system-arm
+            QEMU_BIN=qemu-system-arm
+            curl -sSLo ${QEMU_BIOS} https://snapshots.linaro.org/components/kernel/leg-virt-tianocore-edk2-upstream/4480/QEMU-ARM/RELEASE_GCC5/QEMU_EFI.fd
+            ;;
+          esac
+          SSH_PORT=10022
+          HOST_IP=10.0.2.2
+          GUEST_IP=10.0.2.15
+          cat >> $GITHUB_ENV <<EOF
+        SSH_PORT=$SSH_PORT
+        HOST_IP=$HOST_IP
+        GUEST_IP=$GUEST_IP
+        QEMU_BIN=$QEMU_BIN
+        QEMU_BIOS=$QEMU_BIOS
+        EOF
+          ;;
+        hppa)
+          echo "Installing qemu-system-hppa..."
+          sudo apt-get install -qq -y qemu-system-hppa
+          SSH_PORT=10022
+          HOST_IP=10.0.2.2
+          GUEST_IP=10.0.2.15
+          QEMU_BIN=qemu-system-hppa
+          cat >> $GITHUB_ENV <<EOF
+        SSH_PORT=$SSH_PORT
+        HOST_IP=$HOST_IP
+        GUEST_IP=$GUEST_IP
+        QEMU_BIN=$QEMU_BIN
+        EOF
+          ;;
+        i386)
+          echo "Installing qemu-system-i386..."
+          sudo apt-get install -qq -y qemu-system-i386
+          SSH_PORT=10022
+          HOST_IP=10.0.2.2
+          GUEST_IP=10.0.2.15
+          QEMU_BIN=qemu-system-i386
+          cat >> $GITHUB_ENV <<EOF
+        SSH_PORT=$SSH_PORT
+        HOST_IP=$HOST_IP
+        GUEST_IP=$GUEST_IP
+        QEMU_BIN=$QEMU_BIN
+        EOF
+          ;;
+        macppc)
+          echo "Installing qemu-system-ppc..."
+          sudo apt-get install -qq -y qemu-system-ppc
+          SSH_PORT=10022
+          HOST_IP=10.0.2.2
+          GUEST_IP=10.0.2.15
+          QEMU_BIN=qemu-system-ppc
+          cat >> $GITHUB_ENV <<EOF
+        SSH_PORT=$SSH_PORT
+        HOST_IP=$HOST_IP
+        GUEST_IP=$GUEST_IP
+        QEMU_BIN=$QEMU_BIN
+        EOF
+          ;;
+        sparc)
+          echo "Installing qemu-system-sparc..."
+          sudo apt-get install -qq -y qemu-system-sparc
+          SSH_PORT=10022
+          HOST_IP=10.0.2.2
+          GUEST_IP=10.0.2.15
+          QEMU_BIN=qemu-system-sparc
+          cat >> $GITHUB_ENV <<EOF
+        SSH_PORT=$SSH_PORT
+        HOST_IP=$HOST_IP
+        GUEST_IP=$GUEST_IP
+        QEMU_BIN=$QEMU_BIN
+        EOF
+          ;;
+        sparc64)
+          echo "Installing qemu-system-sparc64..."
+          sudo apt-get install -qq -y qemu-system-sparc64
+          SSH_PORT=10022
+          HOST_IP=10.0.2.2
+          GUEST_IP=10.0.2.15
+          QEMU_BIN=qemu-system-sparc64
+          cat >> $GITHUB_ENV <<EOF
+        SSH_PORT=$SSH_PORT
+        HOST_IP=$HOST_IP
+        GUEST_IP=$GUEST_IP
+        QEMU_BIN=$QEMU_BIN
+        EOF
+          ;;
+        vax)
+          echo "Installing dependencies for simh..."
+          sudo apt-get install -qq -y libpcap-dev libpcre3-dev vde2 libsdl2-dev libsdl2-ttf-dev libedit-dev
+          echo "Cloning simh repository and building emulator..."
+          git clone https://github.com/open-simh/simh
+          (cd simh && make TESTS=0 microvax3900)
+          SSH_PORT=10022
+          HOST_IP=10.0.2.2
+          GUEST_IP=10.0.2.15
+          SIMH_BIN=$HOME/simh/BIN/microvax3900
+          SIMH_BOOT=$HOME/simh-boot-netbsd-vax
+          cat >> $GITHUB_ENV <<EOF
+        SSH_PORT=$SSH_PORT
+        HOST_IP=$HOST_IP
+        GUEST_IP=$GUEST_IP
+        SIMH_BIN=$SIMH_BIN
+        SIMH_BOOT=$SIMH_BOOT
+        EOF
+          cat > $SIMH_BOOT <<EOF
+        set cpu 256m
+        set nothrottle
+        set rq0 ra92
+        set rq1 disable
+        set rq2 disable
+        set rq3 disable
+        set tq0 disable
+        set tq1 disable
+        set tq2 disable
+        set tq3 disable
+        attach rq0 $IMAGE
+        attach xq nat:tcp=${SSH_PORT}:${GUEST_IP}:22
+        expect '>>>' send 'boot dua0\r'; continue
+        boot cpu
+        EOF
+          echo "Generated simh startup file:"
+          cat $SIMH_BOOT
+          ;;
+        *)
+          echo "Emulator setup for target architecture ${MACHINE} is not supported (yet)."
+          exit 1
+          ;;
+        esac 
+
+    - name: Create a NetBSD image
+      shell: bash
+      run: |
+        echo "Create a NetBSD image"
+        sh ${GITHUB_ACTION_PATH}/scripts/mkliveimage.sh
+
+    - name: Boot NetBSD on emulator and wait for multi-user mode
+      shell: bash
+      run: |
+        echo "Booting NetBSD on the emulator..."
+        case "${MACHINE}" in
+        alpha|evbarm|hppa|i386|macppc|sparc|sparc64)
+          sh ${GITHUB_ACTION_PATH}/scripts/start-qemu.sh
+          ;;
+        vax)
+          sh ${GITHUB_ACTION_PATH}/scripts/start-simh.sh
+          ;;
+        *)
+          echo "Booting NetBSD for target ${MACHINE} is not supported (yet)."
+          exit 1
+          ;;
+        esac 
+
+    - name: Build project in NetBSD environment
+      shell: bash
+      run: |
+        echo "Building the project on NetBSD using the emulator..."
+        ssh -p $SSH_PORT root@localhost <<EOF
+        set -ex	# Exit on error and write each command to standard error
+        cd $GITHUB_WORKSPACE
+        echo "Running preparation command..."
+        ${{ inputs.prepare }}
+        echo "Running configure command..."
+        ${{ inputs.configure }}
+        echo "Running build command..."
+        ${{ inputs.build }}
+        EOF
