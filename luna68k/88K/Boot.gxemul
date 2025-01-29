@@ -5,8 +5,8 @@ PKGSRC=pkgsrc.img
 ifconfig tap0 create
 ifconfig tap0 192.168.7.1
 
-#KERNEL=bsd.mp
-KERNEL=bsd.rd
+KERNEL=bsd.mp
+#KERNEL=bsd.rd
 TAP="-L /dev/tap0"
 #X=-X
 

@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.1.2
+ DISTNAME=       nono-1.2.0
 
 チェックサム作成
 ------------------
@@ -50,13 +50,9 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum
- -rw-r--r--  1 jun  wheel  1148 Jan  8 20:48 Makefile
+ -rw-r--r--  1 jun  wheel  1192 Jan 28 20:44 Makefile
  -rw-r--r--  1 jun  wheel   357 Nov  4 01:22 PLIST
- -rw-r--r--  1 jun  wheel   558 Jan  8 20:48 distinfo
-
- -rw-r--r--  1 jun  wheel  1148 Jan 23 20:02 Makefile
- -rw-r--r--  1 jun  wheel   357 Nov  4 01:22 PLIST
- -rw-r--r--  1 jun  wheel   558 Jan 23 20:03 distinfo
+ -rw-r--r--  1 jun  wheel   626 Jan 28 20:48 distinfo
 
 make package して動作を確認します。
  
@@ -84,14 +80,18 @@ commit
 
  cvs commit 
 
- nono: update to 1.1.2.
+ nono: update to 1.2.0.
 
- m68k(Fix): "Revert FMOVEM.X -(An),<fplist> and FMOVEM.X <fplist>,(An)+ to the illegal instruction because the behavior can no longer be confirmed."
- m68k(Fix): "Fix that illegal instructions around FMOVE.X FPn,<ea> might change FPSR."
- m68k(Fix): "Fix problem that 68030 ATC incorrectly operated Modified bit since ver 0.7.2."
- m68k(Fix): "Fix disassemble of CMP.[WL] An,Dn since ver 1.1.0."
- vm/human68k(Update): "Implement timer work area."
- util/runx(Fix): "Fix several probl"
+ 1.2.0 (2025/01/26)
+
+ host(New): "Add a usermode (SLIRP) to host network driver."
+ host(Update): "Change the behavior when hostnet-driver value is auto."
+ vm(Update): "Even if the CPU goes into STOP state during full speed mode, keep it if DMAC is active on X68030."
+ vm(Fix): "Fix problem that polling didn't resume when the drive select signal changed."
+ vm(Fix): "Fix virtio_net not receiving multicast packets."
+ vm(Fix): "Fix multicast hash on Lance(AM7990)."
+ vm(Fix): "Fix RTL8019AS whole receiving algorithm including multicast hash. "
+ vm(New): "Implement RSR.PHY bit on RTL8019AS."
 
 doc をcommit します
 ---------------------
@@ -101,9 +101,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.1.2
+ doc: Updated emulators/nono to 1.2.0
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.1.2 [jun 2025-01-23]
+        Updated emulators/nono to 1.2.0 [jun 2025-01-28]
 
