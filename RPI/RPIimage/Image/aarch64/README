@@ -1,20 +1,33 @@
-VERSION: :1,$s/2025-01-13/2025-01-13/g
-ISO:     :1,$s/202501120240Z/202501120240Z/g
+VERSION: :1,$s/2025-02-18/2025-02-18/g
+ISO:     :1,$s/202502161900Z/202502161900Z/g
 NetBSD:  :1,$s/10.99.12/10.99.12/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-01-13-netbsd-raspi-aarch64.img
+Subject: 2025-02-18-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-01-13-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2025-02-18-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-01-13-aarch64/2025-01-13-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-01-13-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-02-18-aarch64/2025-02-18-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-02-18-aarch64/MD5
 
 Topics:
+- dillo option changes in /etc/mk.conf, 
+ s/ssl/tls/
+- libreoffice build failed:
+<command-line>: note: this is the location of the previous definition
+{standard input}: Assembler messages:
+{standard input}:23: Error: previous CFI entry not closed (missing .cfi_endproc)
+{standard input}:58: Error: CFI instruction used without previous .cfi_startproc
+{standard input}:59: Error: CFI instruction used without previous .cfi_startproc
+{standard input}:60: Error: CFI instruction used without previous .cfi_startproc
+{standard input}:61: Error: CFI instruction used without previous .cfi_startproc
+{standard input}:63: Error: .cfi_endproc without corresponding .cfi_startproc
+gmake[1]: *** [/mnt/aarch64/pkgsrc/misc/libreoffice/work.aarch64/libreoffice-25.2.0.3/solenv/gbuild/LinkTarget.mk:367: /mnt/aarch64/pkgsrc/misc/libreoffice/work.aarch64/libreoffice-25.2.0.3/workdir/GenCObject/UnpackedTarball/mariadb-connector-c/libmariadb/ma_context.o] Error 1
+
 - add net/nanotodon
   Nanotodon is a light-weight CUI/C99 mastodon client.
 
@@ -42,9 +55,9 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
     bcm2712-rpi-5-b.dtb
 
 - [Test] Firmware update /boot/fixup4*.dat,start4*.elf
-commit 81c2e6f8ca51223bb503fa51047c74fdad1c2d04 (HEAD -> master, origin/master, origin/HEAD)
+commit 9995946dce284505d3dd46c7563d74a691f38a70 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Fri Dec 20 15:59:54 2024 +0000
+Date:   Mon Feb 17 20:02:53 2025 +0000
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
@@ -77,23 +90,24 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- sh-20220122-20250111230002Z
+ bind-9.20.4 dhcpcd-10.2.0 sh-20220122-20250216185449Z tcsh-6.24.15
+ tzdata-2025agtz
 
 pkgsrc:
- glib2-2.82.4 gnutls-3.8.8nb4 gtk2+-2.24.33nb26 gtk3+-3.24.43nb6
- harfbuzz-10.2.0 libuuid-2.40.2 libwebp-1.5.0 medit-1.2.0nb37 mlterm-3.9.3nb19
- nanotodon-0.5.0 nettle-3.10.1 pango-1.56.0 png-1.6.45 py312-setuptools-75.8.0
- qt5-qtbase-5.15.16nb1 ruby32-atk-4.2.5 ruby32-cairo-1.17.14
- ruby32-cairo-gobject-4.2.5 ruby32-gdk3-4.2.5 ruby32-gdk_pixbuf2-4.2.5
- ruby32-gio2-4.2.5 ruby32-glib2-4.2.5 ruby32-gobject-introspection-4.2.5
- ruby32-gtk3-4.2.5 ruby32-mikutter-5.1.0 ruby32-nokogiri-1.18.1
- ruby32-pango-4.2.5nb1 sqlite3-3.47.2nb1 uim-1.8.9nb17 wayland-protocols-1.39
+ MesaLib-21.3.9nb4 curl-8.12.1 dav1d-1.5.1 dillo-3.2.0nb1 fltk-1.4.1nb1
+ gdbm-1.24 git-base-2.48.1 gnutls-3.8.9 gobject-introspection-1.82.0
+ gtk2+-2.24.33nb27 libLLVM-13.0.1nb4 libelf-0.8.13nb1 libffi-3.4.7
+ libimagequant-4.3.4 libpaper-2.2.6 libtasn1-4.20.0 libva-2.22.0 pango-1.56.1
+ pcre2-10.45 perl-5.40.1 python312-3.12.9 ruby32-atk-4.2.7 ruby32-base-3.2.7
+ ruby32-cairo-gobject-4.2.7 ruby32-gdk3-4.2.7 ruby32-gdk_pixbuf2-4.2.7
+ ruby32-gio2-4.2.7 ruby32-glib2-4.2.7 ruby32-gobject-introspection-4.2.7
+ ruby32-gtk3-4.2.7 ruby32-mikutter-5.1.1nb1 ruby32-nokogiri-1.18.2
+ ruby32-pango-4.2.7 ruby32-pkg-config-1.5.9 sqlite3-3.48.0 sudo-1.9.16p2
+ tcsh-6.24.15 wayland-1.23.0nb4
 
 RPI4 status:
-- boot via UEFI_VER=v1.37
+- boot via UEFI_VER=v1.40
   https://github.com/pftf/RPi4/releases
-XXX 1.38 : can't save setting value?
-XXX 1.39 : DO NOT USE - issues reported
 
 In this image,pre-setted /boot/RPI_EFI.fd
 1. Advanced Configration
@@ -110,7 +124,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.12 evbarm-aarch64 202501120240Z arm64.img from nyftp.
+- NetBSD-current 10.99.12 evbarm-aarch64 202502161900Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
