@@ -1,18 +1,18 @@
-VERSION: :1,$s/2025-01-12/2025-01-12/g
-ISO:     :1,$s/202501100520Z/202501100520Z/g
+VERSION: :1,$s/2025-02-18/2025-02-18/g
+ISO:     :1,$s/202502171350Z/202502171350Z/g
 NetBSD:  :1,$s/10.99.12/10.99.12/g
-PKGSRC:  :1,$s/2025-01-12/2022/
+PKGSRC:  :1,$s/2025-02-18/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-01-12-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2025-02-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-01-12-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2025-02-18-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-01-12-earmv6hf/2025-01-12-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-01-12-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-02-18-earmv6hf/2025-02-18-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-02-18-earmv6hf/MD5
 
 Update:
 - fstab
@@ -23,6 +23,7 @@ malloc: make_cmd.c:658: assertion botched
 realloc: underflow detected; mh_nbytes out of range
 Aborting...[1]   Abort trap (core dumped) /usr/bin/env INSTALL=/usr/bin/install -c -o ro...
 *** Error code 134
+
 - add net/nanotodon
   Nanotodon is a light-weight CUI/C99 mastodon client.
 
@@ -38,11 +39,15 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 10.99.12 evbarm-earmv6hf 202501100520Z rpi.img from nyftp.
+- NetBSD 10.99.12 evbarm-earmv6hf 202502171350Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
   # mlterm-wscons
   # sayaka --local --server misskey.io 
+- pkgsrc/devel/SDL2
+  failed with "sort: unknown option -- V"
+   mv /usr/bin/sort /usr/bin/sort.org
+   cp /usr/pkg/bin/gsort /usr/bin/sort
 - rust build ok: rust-1.76.0nb3.tgz
 
 add earmv6hf to pkgsrc/lang/rust/platform.mk:
@@ -100,11 +105,20 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- sh-20220122-20250109192833Z
-
+ bind-9.20.4 dhcpcd-10.2.0 sh-20220122-20250217130417Z tzdata-2025agtz
+ 
 pkgsrc:
- gnutls-3.8.8nb4 gtk2+-2.24.33nb26 gtk3+-3.24.43nb6 libwebp-1.5.0 nettle-3.10.1 pango-1.55.5
- python312-3.12.8nb2 readline-8.2nb2 ruby32-nokogiri-1.18.1
+ dav1d-1.5.1 dillo-3.2.0 git-base-2.48.1 glib2-2.82.4
+ gobject introspection-1.82.0 gtk2+-2.24.33nb27 harfbuzz-10.2.0 libffi-3.4.7
+ libpaper 2.2.6 libtasn1-4.20.0 libuuid-2.40.2 medit-1.2.0nb37 mlterm-3.9.3nb19
+ nanotodon 0.5.0 pango-1.56.1 pcre2-10.45 perl-5.40.1 pkg_install-20241101
+ png 1.6.45 py312-setuptools-75.8.0 python312-3.12.9 qt5-qtbase-5.15.16nb1
+ ruby32 atk-4.2.7 ruby32-base-3.2.7 ruby32-cairo-1.17.14
+ ruby32 cairo-gobject-4.2.7 ruby32-gdk3-4.2.7 ruby32-gdk_pixbuf2-4.2.7
+ ruby32 gio2-4.2.7 ruby32-glib2-4.2.7 ruby32-gobject-introspection-4.2.7
+ ruby32 gtk3-4.2.7 ruby32-mikutter-5.1.1nb1 ruby32-nokogiri-1.18.2
+ ruby32 pango-4.2.7 ruby32-pkg-config-1.5.9 sqlite3-3.48.0 sudo-1.9.16p2
+ uim 1.8.9nb17 wayland-1.23.0nb4 wayland-protocols-1.39
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -156,7 +170,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-01-12-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-02-18-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
