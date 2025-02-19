@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2025 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -80,8 +80,9 @@ Maps:
  2023 Fall,10/21,300,29,大田区産業プラザPIO
  2024 Spring,3/1-2,312,20,オンライン
  2024 Spring,3/10,530,48,東京都立産業貿易センター台東館
- 2024 Fall,3/1-2,,,オンライン
- 2024 Fall,3/10,,,東京都立産業貿易センター台東館
+ 2024 Fall,3/1-2,203,15,オンライン
+ 2024 Fall,3/10,300,47,東京都立産業貿易センター台東館
+ 2025 Spring,2/21-22,,,駒澤大学 駒沢キャンパス
 
  
 観光ガイドバックナンバー
@@ -94,6 +95,7 @@ Maps:
 
  No,イベント,URL
 
+ 210, OSC2025東京春,http://www.re.soum.co.jp/~jun/OSC2024tokyofall.pdf 
  204, OSC2024東京秋,http://www.re.soum.co.jp/~jun/OSC2024tokyofall.pdf 
  197, OSC2024東京春,http://www.re.soum.co.jp/~jun/OSC2023tokyospring.pdf 
  190, OSC2023東京秋,http://www.re.soum.co.jp/~jun/OSC2023tokyofall.pdf
@@ -129,6 +131,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2025 Online/Spring NetBSDのご紹介 の記録, https://posfie.com/@ebijun/p/AeMxGBR
  OSC2024 Online/Fall NetBSDのご紹介 の記録, https://togetter.com/li/2446541
  OSC2024 Online/Spring NetBSDのご紹介 の記録, https://togetter.com/li/2314715
  OSC2023 Online/Fall BSDなひととき の記録,https://togetter.com/li/2231931
@@ -201,6 +204,8 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+
+ 2024/10/26,OSC2025東京秋,FUZIX on OpenBSD/luna88K on RPI nanotodon
  2024/3/10,OSC2024東京春,NetBSD/atari
  2023/4/1,OSC2023東京春,NetBSD/next68k
  2019/11/23-24,OSC2019東京秋,NetBSD/zaurus8.1
@@ -238,6 +243,24 @@ OSC東京主な展示物
 2024年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. image::  ../Picture/2024/10/26/IMG20241026091304.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026104112.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026103736.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026093203.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026101814.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026104245.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026110141.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026115945.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026124140.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026124235.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026131016.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026131156.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026132623.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026140700.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026142313.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026151812.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026151817.jpg
+.. image::  ../Picture/2024/10/26/IMG20241026151820.jpg
 .. image::  ../Picture/2024/03/10/DSC_2783.JPG
 .. image::  ../Picture/2024/03/10/DSC_2784.JPG
 .. image::  ../Picture/2024/03/10/DSC_2785.JPG

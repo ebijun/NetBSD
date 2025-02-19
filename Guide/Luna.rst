@@ -730,6 +730,12 @@ yaft X LUNA
 ~~~~~~~~~~~~~~~~~
  yet another frame buffer terminal [136]_
 
+LUNA88KのXでカラー背景
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* 1280x1024の画像を作る
+* ImageMajikのconvertでconvert 何とか.png -colors 32 32.xpm
+* .xinitrc にxpmroot 32.xpm を追加する。
 
 老ハード介護問題
 ~~~~~~~~~~~~~~~~
