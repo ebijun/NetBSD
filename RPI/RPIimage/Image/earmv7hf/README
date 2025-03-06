@@ -16,6 +16,8 @@ http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-02-20-earmv7hf/MD5
 
 Update:
 - PC6001VX start failed.
+ pkg/59096: qt6 apps with qt6-qtbase don't work on NetBSD/earmv7hf 10.1
+ https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=59096
  qt.qpa.plugin: Could not find the Qt platform plugin "xcb" in ""
  This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
  [1]   Abort trap (core dumped) PC6001VX
