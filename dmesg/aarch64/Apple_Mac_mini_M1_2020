@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.12 (GENERIC64) #0: Sun Feb 16 18:54:49 UTC 2025
+NetBSD 10.99.12 (GENERIC64) #0: Sat Mar 15 22:01:16 UTC 2025
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 7651 MB
 avail memory = 7374 MB
@@ -200,11 +200,11 @@ nvme0: NVMe 1.1
 nvme0: interrupting on irq 590
 nvme0: APPLE SSD AP0256Q, firmware 387.120., serial 0ba0160360893e2c
 ld4 at nvme0 nsid 1
-ld4: 233 GB, 7599 cyl, 128 head, 63 sec, 4096 bytes/sect x 61279344 sectors
+ld4: 233 GB, 7599 cyl, 128 head, 63 sec, 4096 bytes/sect x 61279344 sectors (0 bytes/physsect)
 ld5 at nvme0 nsid 2
-ld5: 3072 KB, 0 cyl, 16 head, 63 sec, 4096 bytes/sect x 768 sectors
+ld5: 3072 KB, 0 cyl, 16 head, 63 sec, 4096 bytes/sect x 768 sectors (0 bytes/physsect)
 ld6 at nvme0 nsid 3
-ld6: 128 MB, 32 cyl, 16 head, 63 sec, 4096 bytes/sect x 32768 sectors
+ld6: 128 MB, 32 cyl, 16 head, 63 sec, 4096 bytes/sect x 32768 sectors (0 bytes/physsect)
 genfb0 at simplebus2: Simple Framebuffer (1920x1080 32-bpp @ 0x9e3a18000)
 genfb0: framebuffer at 0xe3a18000, size 1920x1080, depth 32, stride 7680
 wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
@@ -234,20 +234,31 @@ dk4 at ld4: "RecoveryOSContainer", 1310709 blocks at 59968630, type: <unknown>
 uhub6 at uhub5 port 1: vendor 1a40 (0x1a40) USB 2.0 Hub (0x0101), class 9/0, rev 2.00/1.11, addr 1
 uhub6: single transaction translator
 uhub6: 4 ports with 4 removable, self powered
-umass0 at uhub3 port 1 configuration 1 interface 0
-umass0: BUFFALO (0x0411) SSD-PGMU3C (0x0320), rev 2.10/1.00, addr 1
+umass0 at uhub4 port 2 configuration 1 interface 0
+umass0: SSK (0x0bda) SSK Storage (0x9210), rev 3.20/20.01, addr 2
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <BUFFALO, SSD-PGMU3C, 0000> disk fixed
+sd0 at scsibus0 target 0 lun 0: <SSK, SSK Storage, 1.00> disk fixed
 sd0: fabricating a geometry
-sd0: 476 GB, 488386 cyl, 64 head, 32 sec, 512 bytes/sect x 1000215216 sectors
+sd0: 931 GB, 953869 cyl, 64 head, 32 sec, 512 bytes/sect x 1953525168 sectors
 sd0: fabricating a geometry
+umass1 at uhub3 port 1 configuration 1 interface 0
+umass1: Realtek (0x0bda) RTL9210B-CG (0x9210), rev 2.10/20.01, addr 1
+umass1: using SCSI over Bulk-Only
+scsibus1 at umass1: 2 targets, 1 lun per target
+sd1 at scsibus1 target 0 lun 0: <Realtek, RTL9210B-CG, 1.00> disk fixed
+sd1: fabricating a geometry
+sd1: 953 GB, 976762 cyl, 64 head, 32 sec, 512 bytes/sect x 2000409264 sectors
+sd1: fabricating a geometry
+sd1: GPT GUID: e7af6b38-62ff-4c2b-a395-b65b9d9346cb
+dk5 at sd1: "EFI", 90200 blocks at 3, type: msdos
+dk6 at sd1: "netbsd-root", 2000314368 blocks at 90203, type: ffs
 uhidev0 at uhub6 port 3 configuration 1 interface 0
-uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 2, iclass 3/1
+uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
 uhidev1 at uhub6 port 3 configuration 1 interface 1
-uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 2, iclass 3/1
+uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
 uhidev1: 6 report ids
 ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
 wsmouse0 at ums0 mux 0
@@ -256,35 +267,24 @@ uhid1 at uhidev1 reportid 3: input=1, output=0, feature=0
 uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
 uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
 uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
-sd0: GPT GUID: 7d34b4fa-6c48-4c94-980b-783ee852d022
-dk5 at sd0: "EFI", 163840 blocks at 32768, type: msdos
-dk6 at sd0: "netbsd-root", 1000013824 blocks at 196608, type: ffs
 uaudio0 at uhub6 port 4 configuration 1 interface 0
-uaudio0: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 3
+uaudio0: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 4
 uaudio0: audio rev 1.00
 audio0 at uaudio0: playback
 audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (60ms) for playback
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
 uhidev2 at uhub6 port 4 configuration 1 interface 2
-uhidev2: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 3, iclass 3/0
+uhidev2: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 4, iclass 3/0
 uhid5 at uhidev2: input=1, output=0, feature=0
 swwdog0: software watchdog initialized
 boot device: dk6
 root on dk6
+entropy: best effort
 root file system type: ffs
 kern.module.path=/stand/evbarm/10.99.12/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-entropy: best effort
 entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
-umass1 at uhub4 port 2 configuration 1 interface 0
-umass1: SSK (0x0bda) SSK Storage (0x9210), rev 3.20/20.01, addr 4
-umass1: using SCSI over Bulk-Only
-scsibus1 at umass1: 2 targets, 1 lun per target
-sd1 at scsibus1 target 0 lun 0: <SSK, SSK Storage, 1.00> disk fixed
-sd1: fabricating a geometry
-sd1: 931 GB, 953869 cyl, 64 head, 32 sec, 512 bytes/sect x 1953525168 sectors
-sd1: fabricating a geometry
