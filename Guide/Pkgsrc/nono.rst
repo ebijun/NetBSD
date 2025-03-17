@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.2.0
+ DISTNAME=       nono-1.3.0
 
 チェックサム作成
 ------------------
@@ -53,6 +53,10 @@ Makefile 内のバージョンをあげます。
  -rw-r--r--  1 jun  wheel  1192 Jan 28 20:44 Makefile
  -rw-r--r--  1 jun  wheel   357 Nov  4 01:22 PLIST
  -rw-r--r--  1 jun  wheel   626 Jan 28 20:48 distinfo
+
+ -rw-r--r--  1 root  125  1202 Feb 27 17:20 Makefile
+ -rw-r--r--  1 root  125   357 Jan  8 20:42 PLIST
+ -rw-r--r--  1 root  125   558 Feb 27 17:21 distinfo
 
 make package して動作を確認します。
  
@@ -80,18 +84,28 @@ commit
 
  cvs commit 
 
- nono: update to 1.2.0.
+ nono: update to 1.3.0.
 
- 1.2.0 (2025/01/26)
-
- host(New): "Add a usermode (SLIRP) to host network driver."
- host(Update): "Change the behavior when hostnet-driver value is auto."
- vm(Update): "Even if the CPU goes into STOP state during full speed mode, keep it if DMAC is active on X68030."
- vm(Fix): "Fix problem that polling didn't resume when the drive select signal changed."
- vm(Fix): "Fix virtio_net not receiving multicast packets."
- vm(Fix): "Fix multicast hash on Lance(AM7990)."
- vm(Fix): "Fix RTL8019AS whole receiving algorithm including multicast hash. "
- vm(New): "Implement RSR.PHY bit on RTL8019AS."
+ 1.3.0 (2025/02/26)
+ 
+ vm(New): "Implement VirtIO SCSI."
+ vm(New): "X68030 MFP timer interrupts now support real-time synchronization."
+ vm(New): "NWS-1750 system timer interrupt now supports real-time synchronization."
+ vm(Update): "X68030 MFP free-run timer now doesn't use scheduler events."
+ vm(Fix): "Fix an issue that specifying 2GB or more of memory would cause an error (on virt-m68k)."
+ vm(Fix): "Fix an issue that full speed mode could not be relased by pressing SHIFT key in X68030 JP keyboard mode."
+ vm(Fix): "Fix to transition to bus free phase when a SCSI device asserts RST."
+ vm(Fix): "Fix an issue that the disk size over 10GB was not displayed correctly on SCSI device monitor."
+ m68k(Update): "Make various improvements to 68040 table search processing."
+ m68k(Update): "Improve almost 68040 instruction cycles somewhat closer."
+ m68k(Fix): "Improve or implement some 68030 instruction cycles."
+ m68k(Fix): "Fix an issue that the exception history could not detect the IOCS call on 68040."
+ m68k(Update): "The exception history now supports Human68k DOS calls."
+ m88k(Fix): "Fix an issue that access to devices other than main memory may fail since ver 0.7.2."
+ host(Fix): "Fix an issue dropping ICMPv6 Echo Request packet to router's link local address on the usermode network."
+ app(New): "Support --fd0, --fd1 options for X68030."
+ GUI(Fix): "Remove incorrect software keyboard window from the menu on NWS-1750 and virt-m68k."
+ vm(Update): "Change performance measurement gimic on virt-m68k from VirtIONet to GFTTY." 
 
 doc をcommit します
 ---------------------
@@ -101,9 +115,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.2.0
+ doc: Updated emulators/nono to 1.3.0
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.2.0 [jun 2025-01-28]
+        Updated emulators/nono to 1.3.0 [jun 2025-02-27]
 
