@@ -8,7 +8,7 @@ dav1d-1.5.1         AV1 decoder library
 dbus-1.14.10        Message bus system
 digest-20220214     Message digest wrapper utility
 dillo-3.2.0nb1      Very small and fast graphical web-browser
-double-conversion-3.3.0 Conversion routines for IEEE doubles
+double-conversion-3.3.1 Conversion routines for IEEE doubles
 fltk-1.4.1nb1       Fast Light Tool Kit for graphical user interfaces
 fontconfig-2.15.0   Library for configuring and customizing font access
 fossil-2.25nb1      High-reliability, distributed software configuration management
@@ -18,7 +18,7 @@ gd-2.3.3nb14        Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.42.12 Library for image loading and manipulation
 giflib-5.2.2        GIF image format library
 git-base-2.48.1     GIT Tree History Storage Tool (base package)
-glib2-2.82.4        Some useful routines for C programming (glib2)
+glib2-2.82.5        Some useful routines for C programming (glib2)
 gmp-6.3.0           Library for arbitrary precision arithmetic
 gnutls-3.8.9        Transport Layer Security library
 gobject-introspection-1.82.0 GObject Introspection
@@ -30,12 +30,12 @@ harfbuzz-10.2.0     OpenType text shaping engine
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
 icewm-3.6.0         Small, fast and light-weight window manager
 icu-76.1nb1         Robust and full-featured Unicode services
-imlib2-1.12.2nb2    Image manipulation library
+imlib2-1.12.3       Image manipulation library
 jbigkit-2.1nb1      JBIG-KIT lossless image compression library
 jisx0213fonts-0.0nb2 X11 bitmap fonts for JIS X 0213
 jpeg-9f             IJG's jpeg compression utilities
 libXft-2.3.8nb1     Library for configuring and customizing font access
-libaom-3.10.0nb1    Library for using AV1, video coding format
+libaom-3.12.0       Library for using AV1, video coding format
 libcups-2.4.11nb3   Common UNIX Printing System library
 libde265-1.0.15     Open h.265 video codec implementation
 libduktape-2.7.0    Embeddable Javascript engine library
@@ -44,7 +44,7 @@ libffi-3.4.7        Foreign function interface
 libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.11.0nb2 GNU cryptographic library
 libgpg-error-1.51   Definitions of common error values for all GnuPG components
-libheif-1.19.5      HEIF and AVIF file format decoder and encoder library
+libheif-1.19.5nb1   HEIF and AVIF file format decoder and encoder library
 libidn2-2.3.7       Convert internationalized domain names to/from ASCII Encoding
 libotf-0.9.16nb4    Library for handling OpenType fonts (OTF)
 libpaper-2.2.6      Paper size handling library
@@ -55,7 +55,7 @@ libunistring-1.2    Unicode string library
 libuuid-2.40.2      Generate unique identifiers for objects
 libwebp-1.5.0       WebP image format library and tools
 libxkbcommon-1.7.0nb5 Library to handle keyboard descriptions
-libxml2-2.12.9nb3   XML parser library from the GNOME project
+libxml2-2.12.10     XML parser library from the GNOME project
 libxslt-1.1.42nb3   XSLT parser library
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
 lintpkgsrc-2022.09.29 Sanity checks on the complete pkgsrc tree
@@ -70,8 +70,8 @@ mlterm-3.9.3nb19    Multilingual terminal emulator
 mozilla-rootcerts-1.1.20241118 Root CA certificates from the Mozilla Project
 nanotodon-0.5.0     CUI/C99 mastodon client
 nettle-3.10.1       Cryptographic library
-nghttp2-1.64.0nb3   Implementation of HTTP/2 in C
-openh264-2.5.0      H.264 encoder/decoder library from Cisco
+nghttp2-1.65.0      Implementation of HTTP/2 in C
+openh264-2.6.0      H.264 encoder/decoder library from Cisco
 p11-kit-0.25.5      PKCS#11 module manager
 pango-1.56.1        Library for layout and rendering of text
 pcre2-10.45         Perl Compatible Regular Expressions library (major version 2)
@@ -80,8 +80,8 @@ pixman-0.44.2       Library of low-level pixel manipulation routines
 pkg_chk-2.0.12      Check installed package versions against pkgsrc
 pkg_install-20241101 Package management and administration tools for pkgsrc
 pkgin-24.12.0       Apt / yum like tool for managing pkgsrc binary packages
-png-1.6.45          Library for manipulating PNG images
-py312-setuptools-75.8.0 New Python packaging system
+png-1.6.47          Library for manipulating PNG images
+py312-setuptools-75.8.2 New Python packaging system
 python312-3.12.9    Interpreted, interactive, object-oriented programming language
 qt5-qtbase-5.15.16nb1 C++ X GUI toolkit
 qt5-qtx11extras-5.15.16 Qt5 module for X11 extras
@@ -104,7 +104,7 @@ ruby32-gio2-4.2.7   Ruby binding of gio-2.0.x
 ruby32-glib2-4.2.7  Ruby binding of GLib-2.x
 ruby32-gobject-introspection-4.2.7 Ruby binding of Gobject Introspection
 ruby32-gtk3-4.2.7   Ruby binding of GTK+-3.x
-ruby32-httpclient-2.8.3nb1 HTTP accessing library for Ruby
+ruby32-httpclient-2.9.0 HTTP accessing library for Ruby
 ruby32-instance_storage-1.0.0 Manage class instances with dictionary
 ruby32-locale-2.1.4 Pure ruby library which provides basic APIs for localization
 ruby32-memoist-0.16.2 Replacement of memoizable, memoize methods invocation
@@ -112,9 +112,9 @@ ruby32-mikutter-5.1.1nb1 Simple, powerful, and moeful twitter client
 ruby32-mini_portile2-2.8.8 Simple autoconf builder for developers
 ruby32-moneta-1.6.0 Unified interface to key/value stores
 ruby32-native-package-installer-1.1.9 Helper to install native packages on "gem install"
-ruby32-nokogiri-1.18.2 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby32-nokogiri-1.18.3 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby32-pango-4.2.7  Ruby binding of pango-1.x
-ruby32-pkg-config-1.5.9 Pure Ruby implementation of pkg-config
+ruby32-pkg-config-1.6.0 Pure Ruby implementation of pkg-config
 ruby32-pluggaloid-1.7.0 Extensible plugin system for mikutter
 ruby32-public_suffix-6.0.1 Domain name parser based on the Public Suffix List
 ruby32-red-colors-0.4.0 Wide array of features for dealing with colors
@@ -123,7 +123,7 @@ ruby32-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 sayaka-3.8.1        Terminal specific Misskey client
 shared-mime-info-2.4nb4 Core database of common types
 sqlite3-3.48.0      SQL Database Engine in a C Library
-sudo-1.9.16p2       Allow others to run commands as root
+sudo-1.9.16p2nb1    Allow others to run commands as root
 svt-av1-2.3.0       Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder)
 tcsh-6.24.15        Extended C-shell with many useful features
 tiff-4.7.0          Library and tools for reading and writing TIFF data files
@@ -132,7 +132,7 @@ uim-1.8.9nb17       Multilingual input method library
 unifont-15.0.03     GNU Unifont - glyphs for all printable code points in Unicode 9.0 BMP
 vlgothic-ttf-20230918 Free Japanese TrueType fonts named 'VLGothic'
 wayland-1.23.0nb4   Display server protocol - development libraries
-wayland-protocols-1.39 Additional wayland functionality
+wayland-protocols-1.41 Additional wayland functionality
 wget-1.25.0         Retrieve files from the 'net via HTTP and FTP
 x265-4.1            High Efficiency Video Coding (HEVC)
 xcb-util-0.4.1      XCB Utilities
@@ -143,4 +143,4 @@ xcb-util-wm-0.4.2nb1 Client and window-manager helpers for ICCCM and EWMH
 xli-1.17.0nb14      X11 Image Loading Utility
 xmlcatmgr-2.2nb1    XML and SGML catalog manager
 zsh-5.9nb2          The Z shell
-zstd-1.5.6          Fast real-time compression algorithm
+zstd-1.5.7          Fast real-time compression algorithm
