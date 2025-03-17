@@ -1,27 +1,19 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20250218)
+Subject: apple m1 status update (20250317)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Update:
  bind-9.20.4
- boost-headers-1.87.0nb1
- cmake-3.31.5
- firefox-135.0nb1
- git-base-2.48.1
- gtk2+-2.24.33nb27
- gtk4-4.16.12
- nss-3.108
- perl-5.40.1
+ libssh-48.1
+ boost-headers-1.87.0nb3
+ firefox-135.0.1
+ gimp-2.10.38nb13
+ llvm-18.1.8nb4
  python312-3.12.9
  qmmp-1.6.5nb13
- ruby32-base-3.2.7
- rust-1.82.0
- scribus-1.6.2nb12
- tigervnc-1.14.1.1.20.13
- wavpack-5.8.1
- wxGTK32-3.2.6nb7
+ rust-1.83.0
 
 Topics:
 - stable-diffusion.cpp works well.
@@ -105,12 +97,12 @@ Hardware:
  USB SSD 512GB BUFFALO SSD-PGM2.0U3-BC
 
 Filesystem   1M-blocks      Used     Avail %Cap Mounted on
-/dev/dk6        480587    211425    245132  46% /
-/dev/dk5            79        34        44  43% /boot
+/dev/dk6        955474    119897    787803  13% /
+/dev/dk5            43        28        15  65% /boot
 ptyfs                0         0         0 100% /dev/pts
 procfs               0         0         0 100% /proc
 tmpfs             1912         6      1906   0% /var/shm
-/dev/sd1a       946388    524442    374626  58% /media
+/dev/sd0a       946388    524778    374291  58% /media
 
 ToDo:
 - audio
@@ -164,7 +156,7 @@ pkgsrc:
  xfce4-settings-4.20.1 xfce4-thunar-4.20.2 xnp2-0.86nb30
 
 Version: 
- NetBSD 10.99.12 (GENERIC64) #0: Sun Feb 16 18:54:49 UTC 2025  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 10.99.12 (GENERIC64) #0: Sat Mar 15 22:01:16 UTC 2025  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
