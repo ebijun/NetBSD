@@ -16,9 +16,9 @@
 #g
 #x
 #
-VERSION=202104142250Z
+VERSION=202503030410Z
 TEO=http://teokurebsd.org/netbsd/liveimage/20200518-luna68k
-IMAGE=liveimage-luna68k-raw-2021-02-19.img
+IMAGE=liveimage-luna68k-raw-2025-03-04.img
 IMAGE_CURRENT=liveimage-luna68k-raw-`date +%Y-%m-%d`.img
 VND0=vnd0
 MNT=/mnt
