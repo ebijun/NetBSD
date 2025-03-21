@@ -1,5 +1,5 @@
 To: port-arm%netbsd.org@localhost
-Subject: pinebook status update (20250219)
+Subject: pinebook status update (20250318)
 
 NetBSD Arm Bootable Images: NetBSD9/NetBSD10/NetBSD-current
  https://www.armbsd.org
@@ -101,57 +101,39 @@ ToDo:
  - internal WiFi
 
 sysinfo:
- bind-9.20.4 dhcpcd-10.2.0 sh-20220122-20250217232848Z tcsh-6.24.15
- tzdata-2025agtz
+ dhcpcd-10.2.2 libssh-48.1 sh-20220122-20250316223436Z
 
 pkgsrc:
- SDL-1.2.15nb45 SDL2-2.32.0nb1 SDL2_mixer-2.8.0nb1 SDL_mixer-1.2.12nb9
- abseil-20250127.0 apache-2.4.63 audacious-plugins-4.1nb42
- boost-headers-1.87.0nb1 cbindgen-0.28.0 cmake-3.31.5 cmus-2.10.0nb10
- curl-8.12.1 dav1d-1.5.1 deforaos-keyboard-0.4.0nb16 dhcpcd-10.2.0 dtc-1.7.2
- ffmpeg2-2.8.22nb5 ffmpeg3-3.4.13nb5 ffmpeg4-4.4.5nb5 ffmpeg5-5.1.6nb5
- ffmpeg6-6.1.2nb7 ffmpeg7-7.1nb5 firefox-135.0nb1 firefox-l10n-135.0
- firefox115-115.20.0nb1 firefox115-l10n-115.20.0 firefox52-52.9.0nb73
- flac-1.5.0nb1 fltk-1.3.11 fluidsynth-2.4.3nb1 fmtlib-11.1.3 gegl-0.4.54nb1
- git-base-2.48.1 gnutls-3.8.9 go-1.23.6 go-bin-1.22.10 go122-1.22.12
- go123-1.23.6 gobject-introspection-1.82.0 googletest-1.16.0 gpgme-1.24.2
- gst-plugins1-bad-1.24.12 gst-plugins1-base-1.24.12 gst-plugins1-good-1.24.12nb1
- gstreamer1-1.24.12 gtk2+-2.24.33nb27 gtk4-4.16.12 gupnp-1.6.7 json-glib-1.10.6
- karchive-5.116.0nb4 kauth-5.116.0nb4 kbookmarks-5.116.0nb4 kcodecs-5.116.0nb4
- kcompletion-5.116.0nb4 kconfig-5.116.0nb4 kconfigwidgets-5.116.0nb4
- kcoreaddons-5.116.0nb4 kdbusaddons-5.116.0nb4 kglobalaccel-5.116.0nb4
- ki18n-5.116.0nb4 kiconthemes-5.116.0nb4 kio-5.116.0nb5 kitemmodels-5.116.0nb4
- kitemviews-5.116.0nb4 kjobwidgets-5.116.0nb4 knotifications-5.116.0nb7
- kparts-5.116.0nb5 kplotting-5.116.0nb4 ktextwidgets-5.116.0nb4
- kwallet-5.116.0nb5 kwidgetsaddons-5.116.0nb4 kwindowsystem-5.116.0nb6
- kxmlgui-5.116.0nb4 ladspa-1.17nb5 lame-3.100nb7 libexif-0.6.25 libfetch-2.40nb1
- libffi-3.4.7 libimagequant-4.3.4 libmikmod-3.3.12nb1 libpaper-2.2.6
- libpurple-2.14.14 libsamplerate-0.2.2nb5 libsndfile-1.2.2nb2 libsoup3-3.6.4
- libtasn1-4.20.0 libuv-1.50.0 libvpx-1.15.0 libxfce4windowing-4.20.2
- libzip-1.11.3 llvm-18.1.8nb4 mate-settings-daemon-1.26.1nb15 meson-1.7.0
- mkvtoolnix-90.0nb1 mpv-0.39.0nb4 nginx-1.26.3 ninja-build-1.12.1nb1
- nodejs-23.7.0 nss-3.108 openal-soft-1.24.2nb1 osg-3.6.5nb63 pango-1.56.1
- pcre2-10.45 perl-5.40.1 phonon-4.10.3nb18 phonon-qt5-4.11.1nb24 polkit-126
- portaudio-190700.20210406nb1 protobuf-29.3nb1 pulseaudio-17.0nb2
- py312-attrs-25.1.0 py312-babel-2.17.0 py312-certifi-2025.1.31
- py312-cryptography-44.0.1 py312-cython-3.0.12 py312-importlib-metadata-8.6.1
- py312-lxml-5.3.1 py312-mako-1.3.9 py312-more-itertools-10.6.0 py312-numpy-2.2.3
- py312-pbr-6.1.1 py312-pdf-5.3.0 py312-pip-25.0.1 py312-pytz-2025.1
- py312-roman-5.0 python312-3.12.9 qmmp-1.6.5nb13 qt5-qtmultimedia-5.15.16nb1
- qt5-qtscript-5.15.16nb1 qt5-qtspeech-5.15.16nb1 qt5-qttools-5.15.16nb1
- qt6-qtbase-6.8.2 qt6-qtdeclarative-6.8.2 qt6-qtimageformats-6.8.2
- qt6-qtlanguageserver-6.8.2 qt6-qtmultimedia-6.8.2nb1 qt6-qtquick3d-6.8.2
- qt6-qtquicktimeline-6.8.2 qt6-qtshadertools-6.8.2 qt6-qtsvg-6.8.2 rsync-3.4.1
- ruby32-atk-4.2.7 ruby32-base-3.2.7 ruby32-cairo-gobject-4.2.7 ruby32-gdk3-4.2.7
- ruby32-gdk_pixbuf2-4.2.7 ruby32-gio2-4.2.7 ruby32-glib2-4.2.7
- ruby32-gobject-introspection-4.2.7 ruby32-gtk3-4.2.7 ruby32-mikutter-5.1.1nb1
- ruby32-nokogiri-1.18.2 ruby32-pango-4.2.7 ruby32-pkg-config-1.5.9
- ruby32-red-datasets-0.1.8 rust-1.82.0 scribus-1.6.2nb12 solid-5.116.0nb4
- sonnet-5.116.0nb4 spdlog-1.15.1 sqlite3-3.48.0 talloc-2.4.3 tcl-8.6.16
- tcsh-6.24.15 tdb-1.4.13 tevent-0.16.2 tigervnc-1.14.1.1.20.13 tk-8.6.16
- vorbis-tools-1.4.2nb14 wavpack-5.8.1 wayland-1.23.0nb4 wxGTK32-3.2.6nb7
- xfce4-desktop-4.20.0nb1 xfce4-orage-4.20.0 xfce4-panel-4.20.3
- xfce4-settings-4.20.1 xfce4-thunar-4.20.2 xnp2-0.86nb30
+ GConf-3.2.5 ImageMagick-7.1.1.35nb7 SDL-1.2.15nb46 SDL2-2.32.2
+ SDL2_mixer-2.8.1 a2ps-4.15.6 avahi-0.8nb7 boost-headers-1.87.0nb3
+ bsdtar-3.7.7nb1 cmake-3.31.6 coreutils-9.6 dhcpcd-10.2.2
+ double-conversion-3.3.1 elementary-xfce-icon-theme-0.21 exiv2-0.28.5
+ faad2-2.11.2 ffmpeg7-7.1.1 firefox-135.0.1 firefox-l10n-135.0.1
+ firefox115-115.21.0 firefox115-l10n-115.21.0 fmtlib-11.1.4 gdbus-codegen-2.82.5
+ gimp-2.10.38nb13 glib2-2.82.5 glib2-tools-2.82.5 go-1.24.1 go123-1.23.7
+ go124-1.24.1 harfbuzz-10.4.0 harfbuzz-icu-10.4.0 icewm-3.7.0 imlib2-1.12.3nb1
+ libaom-3.12.0 libarchive-3.7.7nb1 libassuan-3.0.2 libfetch-2.40nb2
+ libheif-1.19.7 libnotify-0.8.4 libproxy-0.5.9nb4 libxml2-2.12.10
+ mktools-20250213 mpv-0.39.0nb5 nghttp2-1.65.0 nghttp3-1.8.0 ngtcp2-1.11.0
+ nodejs-23.9.0 nss-3.108nb1 openh264-2.6.0 orc-0.4.41 pciutils-3.13.0
+ pkg_install-20250219 pkgconf-2.4.3 png-1.6.47 poppler-24.10.0nb5
+ poppler-utils-24.10.0nb4 py312-OpenSSL-25.0.0nb1 py312-alabaster-1.0.0nb1
+ py312-attrs-25.3.0 py312-cryptography-44.0.2 py312-cython-3.0.12nb1
+ py312-docutils-0.21.2nb1 py312-idna-3.10nb1 py312-jinja2-3.1.6
+ py312-libxml2-2.12.10 py312-mako-1.3.9nb1 py312-markdown-3.7nb1
+ py312-markupsafe-3.0.2nb1 py312-more-itertools-10.6.0nb1
+ py312-packaging-24.2nb1 py312-pdf-5.3.1 py312-pyparsing-3.2.1nb1
+ py312-roman_numerals_py-3.1.0 py312-setuptools-75.8.2
+ py312-setuptools_scm-8.2.0 py312-sphinx-8.2.3
+ py312-sphinxcontrib-applehelp-2.0.0nb1 py312-sphinxcontrib-devhelp-2.0.0nb1
+ py312-sphinxcontrib-htmlhelp-2.1.0nb1 py312-sphinxcontrib-qthelp-2.0.0nb1
+ py312-sphinxcontrib-serializinghtml-2.0.0nb1
+ py312-sphinxcontrib-websupport-2.0.0nb1 py312-tomli-2.2.1nb1
+ py312-typing-extensions-4.12.2nb1 py312-zstandard-0.23.0nb1
+ qt6-qtmultimedia-6.8.2nb2 rclone-1.69.1nb1 re2c-4.1 ruby32-cairo-1.18.4
+ ruby32-httpclient-2.9.0 ruby32-nokogiri-1.18.4 ruby32-pkg-config-1.6.0
+ ruby32-version_gem-1.1.6 rust-1.83.0 sudo-1.9.16p2nb1 tigervnc-1.15.0.1.20.13
+ wayland-protocols-1.41 xfce4-desktop-4.20.1 xscreensaver-6.09 zstd-1.5.7
 
 Tips:
 - System Clocks
@@ -208,7 +190,7 @@ XXX: link from dbus or mate-power-manager?
 
 
 Version: 
- NetBSD 10.99.12 (GENERIC64) #0: Mon Feb 17 23:28:48 UTC 2025  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 10.99.12 (GENERIC64) #0: Sun Mar 16 22:34:36 UTC 2025  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/pinebook
