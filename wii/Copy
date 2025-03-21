@@ -1,0 +1,16 @@
+DEVICE=rsd0d
+
+BOARD=evbppc
+
+#COMPRESS=-z
+#SUFFIX=.gz
+
+DATE=`date +%Y-%m-%d`
+#DATE=2025-01-12
+
+#as usual
+#progress $COMPRESS -f ${DATE}-netbsd-${BOARD}.img${SUFFIX} dd of=/dev/${DEVICE} bs=4m
+#
+
+progress -z -f nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202503210850Z/${BOARD}/binary/gzimg/wii.img.gz  dd of=/dev/${DEVICE} bs=4m
+
