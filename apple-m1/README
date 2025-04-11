@@ -1,19 +1,21 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20250317)
+Subject: apple m1 status update (20250411)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Update:
- bind-9.20.4
- libssh-48.1
- boost-headers-1.87.0nb3
- firefox-135.0.1
- gimp-2.10.38nb13
- llvm-18.1.8nb4
- python312-3.12.9
- qmmp-1.6.5nb13
- rust-1.83.0
+ cairo-1.18.4
+ git-base-2.49.0
+ inkscape-1.4nb6
+ mlterm-3.9.4
+ nss-3.110
+ pango-1.56.3
+ python312-3.12.9nb1
+ qmmp-1.7.4
+ samba-4.21.3
+ scribus-1.6.2nb12
+ wxGTK32-3.2.7
 
 Topics:
 - stable-diffusion.cpp works well.
@@ -97,12 +99,12 @@ Hardware:
  USB SSD 512GB BUFFALO SSD-PGM2.0U3-BC
 
 Filesystem   1M-blocks      Used     Avail %Cap Mounted on
-/dev/dk6        955474    119897    787803  13% /
+/dev/dk6        955474    123103    784597  13% /
 /dev/dk5            43        28        15  65% /boot
 ptyfs                0         0         0 100% /dev/pts
 procfs               0         0         0 100% /proc
 tmpfs             1912         6      1906   0% /var/shm
-/dev/sd0a       946388    524778    374291  58% /media
+/dev/sd0a       946388    527091    371977  58% /media
 
 ToDo:
 - audio
@@ -116,47 +118,28 @@ pkgsrc:
 System Updates:
 
 sysinfo:
- bind-9.20.4 dhcpcd-10.2.0 sh-20220122-20250216185449Z tcsh-6.24.15
- tzdata-2025agtz
+ sh-20220122-20250409114432Z tzdata-2025bgtz
 
 pkgsrc:
- SDL-1.2.15nb45 SDL2-2.32.0nb1 SDL2_mixer-2.8.0nb1 SDL_mixer-1.2.12nb9
- abseil-20250127.0 apache-2.4.63 boost-headers-1.87.0nb1 cbindgen-0.28.0
- cmake-3.31.5 curl-8.12.1 dav1d-1.5.1 deforaos-keyboard-0.4.0nb16 dillo-3.2.0
- ffmpeg4-4.4.5nb5 ffmpeg5-5.1.6nb5 ffmpeg6-6.1.2nb7 ffmpeg7-7.1nb5
- firefox-135.0nb1 firefox-l10n-135.0 firefox115-115.20.0nb1
- firefox115-l10n-115.20.0 flac-1.5.0nb1 fltk-1.3.11 fluidsynth-2.4.3nb1
- fmtlib-11.1.3 gegl-0.4.54nb1 git-base-2.48.1 gnutls-3.8.9
- gobject-introspection-1.82.0 googletest-1.16.0 gpgme-1.24.2
- gst-plugins1-bad-1.24.12 gst-plugins1-base-1.24.12 gst-plugins1-good-1.24.12nb1
- gstreamer1-1.24.12 gtk2+-2.24.33nb27 gtk4-4.16.12 gupnp-1.6.7 json-glib-1.10.6
- ladspa-1.17nb5 lame-3.100nb7 libexif-0.6.25 libfetch-2.40nb1 libffi-3.4.7
- libimagequant-4.3.4 libmikmod-3.3.12nb1 libpaper-2.2.6 libpurple-2.14.14
- libsamplerate-0.2.2nb5 libsndfile-1.2.2nb2 libsoup3-3.6.4 libtasn1-4.20.0
- libuv-1.50.0 libvpx-1.15.0 libxfce4windowing-4.20.2 libzip-1.11.3
- llvm-18.1.8nb4 mate-settings-daemon-1.26.1nb15 meson-1.7.0 mpv-0.39.0nb4
- nginx-1.26.3 ninja-build-1.12.1nb1 nss-3.108 openal-soft-1.24.2nb1
- osg-3.6.5nb63 p5-CGI-4.67 p5-Date-Manip-6.96 p5-DateTime-TimeZone-2.64
- p5-Locale-libintl-1.35 p5-Mozilla-CA-20250202 p5-Net-DNS-1.49nb1
- p5-Test-Warnings-0.038 pango-1.56.1 pcre2-10.45 perl-5.40.1 polkit-126
- protobuf-29.3nb1 pulseaudio-17.0nb2 py312-babel-2.17.0 py312-certifi-2025.1.31
- py312-cryptography-44.0.1 py312-importlib-metadata-8.6.1 py312-lxml-5.3.1
- py312-numpy-2.2.3 py312-pdf-5.3.0 py312-pytz-2025.1 py312-roman-5.0
- py312-trove-classifiers-2025.1.15.22 python312-3.12.9 qmmp-1.6.5nb13
- qt5-qtmultimedia-5.15.16nb1 qt5-qttools-5.15.16nb1 rsync-3.4.1 ruby32-atk-4.2.7
- ruby32-base-3.2.7 ruby32-cairo-gobject-4.2.7 ruby32-gdk3-4.2.7
- ruby32-gdk_pixbuf2-4.2.7 ruby32-gio2-4.2.7 ruby32-glib2-4.2.7
- ruby32-gobject-introspection-4.2.7 ruby32-gtk3-4.2.7 ruby32-pango-4.2.7
- ruby32-pkg-config-1.5.9 rust-1.82.0 scribus-1.6.2nb12 spdlog-1.15.1
- sqlite3-3.48.0 talloc-2.4.3 tcl-8.6.16 tcsh-6.24.15 tdb-1.4.13 tevent-0.16.2
- tigervnc-1.14.1.1.20.13 tk-8.6.16 tree-sitter-0.25.1nb1 tree-sitter-c-0.23.5
- tree-sitter-elixir-0.3.4 tree-sitter-heex-0.8.0 vorbis-tools-1.4.2nb14
- wavpack-5.8.1 wayland-1.23.0nb4 wxGTK32-3.2.6nb7 xfce4-4.20.0nb2
- xfce4-desktop-4.20.0nb1 xfce4-orage-4.20.0 xfce4-panel-4.20.3
- xfce4-settings-4.20.1 xfce4-thunar-4.20.2 xnp2-0.86nb30
+ SDL2-2.32.4 abseil-20250127.1 amtk-5.0.2nb13 atkmm-2.28.4nb2 babl-0.1.112
+ cairo-1.18.4 fltk13-1.3.11nb1 fluidsynth-2.4.4 gedit-3.36.2nb30 gegl-0.4.58
+ ghostscript-agpl-10.05.0 git-base-2.49.0 gperf-3.2nb1 gtkmm3-3.24.9nb7
+ guile22-2.2.7nb7 guile30-3.0.10nb1 gupnp-1.6.8 gvfs-1.6.7nb73 imlib2-1.12.3nb2
+ inkscape-1.4nb6 jasper-4.2.5 libgpg-error-1.53 libheif-1.19.7nb2 libical-3.0.20
+ libusb1-1.0.28 libxfce4util-4.20.1 mlterm-3.9.4 nss-3.110 openal-soft-1.24.3
+ p5-Alien-Libxml2-0.20 p5-Date-Manip-6.97 p5-DateTime-Locale-1.45
+ p5-DateTime-TimeZone-2.65 p5-Scalar-List-Utils-1.69 p5-Test-Deep-1.205
+ pango-1.56.3 pangomm-2.46.3nb5 protobuf-29.4 py312-numpy-2.2.3
+ py312-poetry-core-2.1.2 py312-pytz-2025.2 py312-scour-0.38.2nb3
+ py312-serial-3.5nb2 py312-typing-extensions-4.13.0 python311-3.11.11nb2
+ python312-3.12.9nb1 qmmp-1.7.4 qt5-qtdeclarative-5.15.16nb1 ruby31-base-3.1.7
+ ruby32-base-3.2.8 ruby32-nokogiri-1.18.7 samba-4.21.3 scribus-1.6.2nb12
+ spdlog-1.15.2 sqlite3-3.49.1nb2 tepl4-4.4.0nb23 uchardet-0.0.8 vala-0.56.18
+ wayland-1.23.0nb5 webp-pixbuf-loader-0.2.7 wpa_gui-2.6nb38 wxGTK32-3.2.7
+ xfce4-orage-4.20.1
 
 Version: 
- NetBSD 10.99.12 (GENERIC64) #0: Sat Mar 15 22:01:16 UTC 2025  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 10.99.12 (GENERIC64) #0: Wed Apr  9 11:44:32 UTC 2025  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020
