@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.3.0
+ DISTNAME=       nono-1.4.0
 
 チェックサム作成
 ------------------
@@ -50,15 +50,24 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum
- -rw-r--r--  1 jun  wheel  1192 Jan 28 20:44 Makefile
- -rw-r--r--  1 jun  wheel   357 Nov  4 01:22 PLIST
- -rw-r--r--  1 jun  wheel   626 Jan 28 20:48 distinfo
-
- -rw-r--r--  1 root  125  1202 Feb 27 17:20 Makefile
- -rw-r--r--  1 root  125   357 Jan  8 20:42 PLIST
- -rw-r--r--  1 root  125   558 Feb 27 17:21 distinfo
+ 
+ -rw-r--r--  1 root  125  1202 Mar 31 10:45 Makefile
+ -rw-r--r--  1 root  125   357 Mar  3 21:35 PLIST
+ -rw-r--r--  1 root  125   555 Mar 31 10:45 distinfo
 
 make package して動作を確認します。
+ 
+Patch /usr/pkgsrc/emulators/nono/patches/patch-cli_Makefile failed
+
+1 out of 1 hunks failed--saving rejects to po/Makefile.rej
+1 out of 1 hunks failed--saving rejects to wx/Makefile.rej
+
+ERROR: Patching failed due to modified or broken patch file(s):
+ERROR: 	/usr/pkgsrc/emulators/nono/patches/patch-cli_Makefile
+ERROR: 	/usr/pkgsrc/emulators/nono/patches/patch-po_Makefile
+ERROR: 	/usr/pkgsrc/emulators/nono/patches/patch-wx_Makefile
+
+ 
  
 pkglint
 ----------
@@ -84,28 +93,26 @@ commit
 
  cvs commit 
 
- nono: update to 1.3.0.
+ nono: update to 1.4.0.
 
- 1.3.0 (2025/02/26)
+ pkgsrc:
+  
+
+ 1.4.0 (2025/03/30)
  
- vm(New): "Implement VirtIO SCSI."
- vm(New): "X68030 MFP timer interrupts now support real-time synchronization."
- vm(New): "NWS-1750 system timer interrupt now supports real-time synchronization."
- vm(Update): "X68030 MFP free-run timer now doesn't use scheduler events."
- vm(Fix): "Fix an issue that specifying 2GB or more of memory would cause an error (on virt-m68k)."
- vm(Fix): "Fix an issue that full speed mode could not be relased by pressing SHIFT key in X68030 JP keyboard mode."
- vm(Fix): "Fix to transition to bus free phase when a SCSI device asserts RST."
- vm(Fix): "Fix an issue that the disk size over 10GB was not displayed correctly on SCSI device monitor."
- m68k(Update): "Make various improvements to 68040 table search processing."
- m68k(Update): "Improve almost 68040 instruction cycles somewhat closer."
- m68k(Fix): "Improve or implement some 68030 instruction cycles."
- m68k(Fix): "Fix an issue that the exception history could not detect the IOCS call on 68040."
- m68k(Update): "The exception history now supports Human68k DOS calls."
- m88k(Fix): "Fix an issue that access to devices other than main memory may fail since ver 0.7.2."
- host(Fix): "Fix an issue dropping ICMPv6 Echo Request packet to router's link local address on the usermode network."
- app(New): "Support --fd0, --fd1 options for X68030."
- GUI(Fix): "Remove incorrect software keyboard window from the menu on NWS-1750 and virt-m68k."
- vm(Update): "Change performance measurement gimic on virt-m68k from VirtIONet to GFTTY." 
+ vm(New): "Implement HD647180 ASCI (Asynchronous Serial Communication Interface)."
+ vm(Fix): "Fix an issue that keyboard LED changes may not be reflected in the software keyboard window on X68030."
+ host(New): "Implement run-time switching of the network and serial host driver."
+ app(Update): "Change hostcom-driver=cons to hostcom-driver=console (cons is still available)."
+ GUI(Fix): "Fix an issue that the title might not change after leaving mouse mode."
+ GUI(Fix): "Fix abnormal terminations caused by status panel width."
+ GUI(Fix): "Fix an issue that changing the font size while the log monitor is displayed might cause an abnormal termination."
+ GUI(Fix): "Fix an issue that changing the font size might break layout on the log monitor and LCD monitor."
+ GUI(Fix): "Fix several issues that drawing window might cause abnormal termination."
+ GUI(Fix): "Adjust button size on the memory monitor."
+ GUI(Update): "Adjust main window layout when the window is shrunk."
+ GUI(Update): "Adjust initial size of memory monitorand bitmap monitor."
+ GUI(Update): "Adjust window stretch of memory monitor, log monitor, history monitor and vector monitor."
 
 doc をcommit します
 ---------------------
@@ -115,9 +122,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.3.0
+ doc: Updated emulators/nono to 1.4.0
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.3.0 [jun 2025-02-27]
+        Updated emulators/nono to 1.4.0 [jun 2025-03-31]
 
