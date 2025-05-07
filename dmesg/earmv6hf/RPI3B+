@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.12 (RPI2) #0: Sat Mar 15 22:01:16 UTC 2025
+NetBSD 10.99.14 (RPI2) #0: Mon May  5 20:24:30 UTC 2025
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -159,12 +159,12 @@ ld0: 236584960 trailing sectors not covered by disklabel
 root on ld0a dumps on ld0b
 ld0: 236584960 trailing sectors not covered by disklabel
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.12/modules
+kern.module.path=/stand/evbarm/10.99.14/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 vchiq0: interrupting on icu irq 66
-vchiq: vchiq_init_state: slot_zero = 0xd2aa0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xd2ab0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)

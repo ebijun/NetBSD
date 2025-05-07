@@ -19,7 +19,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202503160230Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202505060010Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -32,9 +32,10 @@ LIST=man modules xbase xcomp xetc xfont xserver
 
 #Firmware: 
 # git log HEAD |head
-#commit 9d64ff8924383723ba32cd91c079ab0622be3549 (HEAD -> master, origin/master, origin/HEAD)
+#commit 619048892aa2ec90f8b65d8a68eca69311fe9366 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Wed Mar 12 12:40:47 2025 +0000
+#Date:   Tue May 6 15:22:40 2025 +0100
+
 
 FIRM=LICENCE.broadcom bootcode.bin fixup4cd.dat fixup_cd.dat start.elf start4db.elf start_db.elf fixup.dat fixup4db.dat fixup_db.dat start4.elf start4x.elf start_x.elf fixup4.dat fixup4x.dat  fixup_x.dat  start4cd.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
