@@ -1,0 +1,63 @@
+--- xhci.c	2025/05/07 19:45:36	1.1
++++ xhci.c	2025/05/07 19:51:04
+@@ -132,6 +132,7 @@
+ 	int16_t xp_isoc_next; /* next frame */
+ 	uint8_t xp_maxb; /* max burst */
+ 	uint8_t xp_mult;
++	uint8_t xp_ival;
+ };
+ 
+ #define XHCI_COMMAND_RING_TRBS 256
+@@ -3983,6 +3984,8 @@
+ 		break;
+ 	}
+ 
++	/* for TBC calculation */
++	xpipe->xp_ival = ival;
+ 	xpipe->xp_maxb = maxb + 1;
+ 	xpipe->xp_mult = mult + 1;
+ 
+@@ -4604,9 +4607,9 @@
+ 		usb_syncmem(dma, 0, xfer->ux_length,
+ 		    isread ? BUS_DMASYNC_PREREAD : BUS_DMASYNC_PREWRITE);
+ 
+-	ival = xfer->ux_pipe->up_endpoint->ue_edesc->bInterval;
+-	if (ival >= 1 && ival <= 16)
+-		ival = 1 << (ival - 1);
++	ival = xpipe->xp_ival;
++	if (ival >= 0 && ival <= 18)
++		ival = 1 << ival;
+ 	else
+ 		ival = 1; /* fake something up */
+ 
+@@ -4615,8 +4618,8 @@
+ 
+ 		DPRINTF("mfindex %jx", (uintmax_t)mfindex, 0, 0, 0);
+ 		mfindex = XHCI_MFINDEX_GET(mfindex + 1);
+-		mfindex /= USB_UFRAMES_PER_FRAME;
+-		mfindex += 7; /* 7 frames is max possible IST */
++		/* 7 frames is max possible IST */
++		mfindex += 7 * USB_UFRAMES_PER_FRAME;
+ 		xpipe->xp_isoc_next = roundup2(mfindex, ival);
+ 	}
+ 
+@@ -4639,7 +4642,8 @@
+ 		    XHCI_TRB_3_TLBPC_SET(tlbpc) |
+ 		    XHCI_TRB_3_IOC_BIT;
+ 		if (XHCI_HCC_CFC(sc->sc_hcc)) {
+-			control |= XHCI_TRB_3_FRID_SET(xpipe->xp_isoc_next);
++			control |= XHCI_TRB_3_FRID_SET(xpipe->xp_isoc_next /
++			    USB_UFRAMES_PER_FRAME);
+ #if 0
+ 		} else if (xpipe->xp_isoc_next == -1) {
+ 			control |= XHCI_TRB_3_FRID_SET(xpipe->xp_isoc_next);
+@@ -4653,7 +4657,8 @@
+ #endif
+ 		xhci_xfer_put_trb(xx, i, parameter, status, control);
+ 
+-		xpipe->xp_isoc_next += ival;
++		xpipe->xp_isoc_next =
++		    XHCI_MFINDEX_GET(xpipe->xp_isoc_next + ival);
+ 		offs += len;
+ 	}
+ 

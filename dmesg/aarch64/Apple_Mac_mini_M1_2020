@@ -6,8 +6,8 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.12 (GENERIC64) #0: Wed Apr  9 11:44:32 UTC 2025
-	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+NetBSD 10.99.14 (GENERIC64.202505070000UTC) #1: Thu May  8 04:56:50 JST 2025
+	jun@amir63d.soum.co.jp:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 7651 MB
 avail memory = 7374 MB
 timecounter: Timecounters tick every 10.000 msec
@@ -234,57 +234,79 @@ dk4 at ld4: "RecoveryOSContainer", 1310709 blocks at 59968630, type: <unknown>
 uhub6 at uhub5 port 1: vendor 1a40 (0x1a40) USB 2.0 Hub (0x0101), class 9/0, rev 2.00/1.11, addr 1
 uhub6: single transaction translator
 uhub6: 4 ports with 4 removable, self powered
-umass0 at uhub4 port 2 configuration 1 interface 0
-umass0: SSK (0x0bda) SSK Storage (0x9210), rev 3.20/20.01, addr 2
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <SSK, SSK Storage, 1.00> disk fixed
-sd0: fabricating a geometry
-sd0: 931 GB, 953869 cyl, 64 head, 32 sec, 512 bytes/sect x 1953525168 sectors
-sd0: fabricating a geometry
-umass1 at uhub3 port 1 configuration 1 interface 0
-umass1: Realtek (0x0bda) RTL9210B-CG (0x9210), rev 2.10/20.01, addr 1
-umass1: using SCSI over Bulk-Only
-scsibus1 at umass1: 2 targets, 1 lun per target
-sd1 at scsibus1 target 0 lun 0: <Realtek, RTL9210B-CG, 1.00> disk fixed
-sd1: fabricating a geometry
-sd1: 953 GB, 976762 cyl, 64 head, 32 sec, 512 bytes/sect x 2000409264 sectors
-sd1: fabricating a geometry
-sd1: GPT GUID: e7af6b38-62ff-4c2b-a395-b65b9d9346cb
-dk5 at sd1: "EFI", 90200 blocks at 3, type: msdos
-dk6 at sd1: "netbsd-root", 2000314368 blocks at 90203, type: ffs
-uhidev0 at uhub6 port 3 configuration 1 interface 0
-uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
-ukbd0 at uhidev0
-wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub6 port 3 configuration 1 interface 1
-uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
-uhidev1: 6 report ids
-ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
-uhid0 at uhidev1 reportid 2: input=7, output=0, feature=0
-uhid1 at uhidev1 reportid 3: input=1, output=0, feature=0
-uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
-uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
-uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
+uhub7 at uhub3 port 1: Generic (0x0bda) 4-Port USB 2.0 Hub (0x5420), class 9/0, rev 2.10/1.61, addr 1
+uhub7: multiple transaction translators
+uhub7: 4 ports with 4 removable, self powered
 uaudio0 at uhub6 port 4 configuration 1 interface 0
-uaudio0: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 4
+uaudio0: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 2
 uaudio0: audio rev 1.00
 audio0 at uaudio0: playback
 audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (60ms) for playback
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
-uhidev2 at uhub6 port 4 configuration 1 interface 2
-uhidev2: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 4, iclass 3/0
-uhid5 at uhidev2: input=1, output=0, feature=0
+uhidev0 at uhub6 port 4 configuration 1 interface 2
+uhidev0: LUXMAN LXU-OT2 (0x08bb) LUXMAN LXU-OT2 (0x2704), rev 1.10/1.00, addr 2, iclass 3/0
+uhid0 at uhidev0: input=1, output=0, feature=0
+umass0 at uhub7 port 1 configuration 1 interface 0
+umass0: Realtek (0x0bda) RTL9210B-CG (0x9210), rev 2.10/f0.01, addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+uhub8 at uhub7 port 3: VIA Labs, Inc. (0x2109) USB2.0 Hub (0x2817), class 9/0, rev 2.10/1.64, addr 3
+uhub8: multiple transaction translators
+uhub8: 4 ports with 4 removable, self powered
+sd0 at scsibus0 target 0 lun 0: <ORICO, , 1.00> disk fixed
+sd0: fabricating a geometry
+sd0: 953 GB, 976762 cyl, 64 head, 32 sec, 512 bytes/sect x 2000409264 sectors
+sd0: fabricating a geometry
+sd0: GPT GUID: e7af6b38-62ff-4c2b-a395-b65b9d9346cb
+dk5 at sd0: "EFI", 90200 blocks at 3, type: msdos
+dk6 at sd0: "netbsd-root", 2000314368 blocks at 90203, type: ffs
+umass1 at uhub8 port 4 configuration 1 interface 0
+umass1: ASMT (0x174c) ASM225 (0x55aa), rev 2.10/1.00, addr 4
+umass1: using SCSI over Bulk-Only
+scsibus1 at umass1: 2 targets, 1 lun per target
+sd1 at scsibus1 target 0 lun 0: <ASMT, ASM225, 0> disk fixed
+sd1: 1907 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 4000797360 sectors
 swwdog0: software watchdog initialized
 boot device: dk6
 root on dk6
 entropy: best effort
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.12/modules
+kern.module.path=/stand/evbarm/10.99.14/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
+spkr0: detached
+audio0: detached
+uaudio0: detached
+uaudio0: at uhub6 port 4 (addr 2) disconnected
+uhid0: detached
+uhidev0: detached
+uhidev0: at uhub6 port 4 (addr 2) disconnected
+uhub6: detached
+uhub6: at uhub5 port 1 (addr 1) disconnected
+uhub6 at uhub5 port 1: vendor 1a40 (0x1a40) USB 2.0 Hub (0x0101), class 9/0, rev 2.00/1.11, addr 3
+uhub6: single transaction translator
+uhub6: 4 ports with 4 removable, self powered
+uaudio0 at uhub6 port 4 configuration 1 interface 0
+uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 4
+uaudio0: ignored setting with format 0x80000000
+uaudio0: audio rev 2.00
+audio0 at uaudio0: playback
+audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (30ms) for playback
+spkr0 at audio0: PC Speaker (synthesized)
+wsbell at spkr0 not configured
+spkr0: detached
+audio0: detached
+uaudio0: detached
+uaudio0: at uhub6 port 4 (addr 4) disconnected
+uaudio0 at uhub6 port 4 configuration 1 interface 0
+uaudio0: Topping (0x152a) D10s (0x8750), rev 2.00/1.04, addr 5
+uaudio0: ignored setting with format 0x80000000
+uaudio0: audio rev 2.00
+audio0 at uaudio0: playback
+audio0: slinear_le:16 2ch 48000Hz, blk 11520 bytes (30ms) for playback
+spkr0 at audio0: PC Speaker (synthesized)
+wsbell at spkr0 not configured
