@@ -1,22 +1,20 @@
-VERSION: :1,$s/2025-03-12/2025-03-12/g
-ISO:     :1,$s/202503110400Z/202503110400Z/g
-NetBSD:  :1,$s/10.99.12/10.99.12/g
+VERSION: :1,$s/2025-05-09/2025-05-09/g
+ISO:     :1,$s/202505080230Z/202505080230Z/g
+NetBSD:  :1,$s/10.99.14/10.99.14/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-03-12-netbsd-raspi-aarch64.img
+Subject: 2025-05-09-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-03-12-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2025-05-09-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-03-12-aarch64/2025-03-12-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-03-12-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-05-09-aarch64/2025-05-09-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-05-09-aarch64/MD5
 
 Topics:
-- dillo option changes in /etc/mk.conf, 
- s/ssl/tls/
 - libreoffice build failed:
 <command-line>: note: this is the location of the previous definition
 {standard input}: Assembler messages:
@@ -89,15 +87,26 @@ bwfm0: autoconfiguration error: NVRAM file not available
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2024
   and pkgin update
 
+
 sysinfo:
- dhcpcd-10.2.2 libssh-48.1 sh-20220122-20250310223502Z
+ libc-12.223 libssh-49.0 NetBSD-10.99.14 openssh-10.0 opensshd-10.0
+ sh-20220122-20250508022724Z tzdata-2025bgtz userland-NetBSD-10.99.14/evbarm
 
 pkgsrc:
- double-conversion-3.3.1 glib2-2.82.5 harfbuzz-10.4.0 icewm-3.7.0
-imlib2-1.12.3nb1 libaom-3.12.0 libheif-1.19.7 libproxy-0.5.9nb4 libxml2-2.12.10
-nghttp2-1.65.0 openh264-2.6.0 pkg_install-20250219 png-1.6.47
-py312-setuptools-75.8.2 ruby32-httpclient-2.9.0 ruby32-nokogiri-1.18.3
-ruby32-pkg-config-1.6.0 sudo-1.9.16p2nb1 wayland-protocols-1.41 zstd-1.5.7
+ at-spi2-core-2.54.0nb5 cairo-1.18.4 curl-8.13.0nb2 dillo-3.2.0nb2 fltk-1.4.3
+ gd-2.3.3nb15 gdk-pixbuf2-2.42.12nb1 giflib-5.2.2nb1 git-base-2.49.0nb2
+ gnutls-3.8.9nb1 gtk2+-2.24.33nb30 gtk3+-3.24.43nb9 harfbuzz-11.2.0 icu-77.1
+ imlib2-1.12.3nb3 libXft-2.3.9 libcups-2.4.12 libffi-3.4.8 libgpg-error-1.55
+ libjpeg-turbo-3.1.0 libproxy-0.5.9nb6 libwebp-1.5.0nb1 libxkbcommon-1.7.0nb6
+ libxml2-2.14.2nb2 libxslt-1.1.42nb4 m17n-lib-1.8.0nb22 medit-1.2.0nb39
+ mlterm-3.9.4nb2 nanotodon-0.5.0nb2 nghttp2-1.65.0nb1 pango-1.56.3 perl-5.40.2
+ pixman-0.46.0 pkg_chk-2.0.13 pkgin-24.12.0nb1 png-1.6.48
+ py312-setuptools-79.0.1 python312-3.12.10nb1 qt5-qtbase-5.15.16nb4
+ qt5-qtx11extras-5.15.16nb2 qt5-qtxmlpatterns-5.15.16nb2 ruby32-base-3.2.8
+ ruby32-cairo-1.18.4 ruby32-gdk3-4.2.7nb1 ruby32-gtk3-4.2.7nb1
+ ruby32-mikutter-5.1.1nb2 ruby32-nokogiri-1.18.8 shared-mime-info-2.4nb5
+ sqlite3-3.49.1nb3 sudo-1.9.16p2nb2 tiff-4.7.0nb1 uim-1.8.9nb19
+ wayland-1.23.0nb6 wayland-protocols-1.44 wget-1.25.0nb1 xli-1.17.0nb15
 
 RPI4 status:
 - boot via UEFI_VER=v1.41
@@ -118,7 +127,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.12 evbarm-aarch64 202503110400Z arm64.img from nyftp.
+- NetBSD-current 10.99.14 evbarm-aarch64 202505080230Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
