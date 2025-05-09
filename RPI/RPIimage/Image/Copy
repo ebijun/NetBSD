@@ -8,7 +8,7 @@ BOARD=raspi-earmv6hf
 #SUFFIX=.gz
 
 DATE=`date +%Y-%m-%d`
-#DATE=2025-01-12
+#DATE=2025-05-07
 
 #as usual
 progress $COMPRESS -f ${DATE}-netbsd-${BOARD}.img${SUFFIX} dd of=/dev/${DEVICE} bs=4m
