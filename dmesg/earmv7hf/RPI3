@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.12 (GENERIC) #0: Sat Mar 15 22:01:16 UTC 2025
+NetBSD 10.99.14 (GENERIC) #0: Fri May  9 01:32:25 UTC 2025
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC
 total memory = 948 MB
 avail memory = 912 MB
@@ -113,7 +113,7 @@ armpmu0: interrupting on local_intc irq 9
 uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
 IPsec: Initialized Security Association Processing.
-sdmmc0: direct I/O error 5, r=6 p=0xbba73f1c write
+sdmmc0: direct I/O error 5, r=6 p=0xbba72f1c write
 sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
 ld0 at sdmmc0: <0x02:0x544d:SF128:0x00:0x00ff66a2:0x182>
 ld0: 115 GB, 15047 cyl, 255 head, 63 sec, 512 bytes/sect x 241745920 sectors (0 bytes/physsect)
@@ -154,33 +154,33 @@ ld0: 236584960 trailing sectors not covered by disklabel
 root on ld0a dumps on ld0b
 ld0: 236584960 trailing sectors not covered by disklabel
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.12/modules
+kern.module.path=/stand/evbarm/10.99.14/modules
 WARNING: no TOD clock present
 vchiq0: interrupting on icu irq 66
 WARNING: using filesystem time
 vchiq: vchiq_init_state: slot_zero = 0xbbad0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
-WARNING: CHECK AND RESET THE DATE!
 bwfm0: Firmware file default:    brcmfmac43430-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43430-sdio.raspberrypi,3-model-b.bin
+WARNING: CHECK AND RESET THE DATE!
 bwfm0: Found Firmware file: brcmfmac43430-sdio.bin
 bwfm0: NVRAM file default:    brcmfmac43430-sdio.txt
 bwfm0: NVRAM file model-spec: brcmfmac43430-sdio.raspberrypi,3-model-b.txt
 bwfm0: Found NVRAM file: brcmfmac43430-sdio.raspberrypi,3-model-b.txt
 bwfm0: CLM file default:    brcmfmac43430-sdio.clm_blob
 bwfm0: CLM file model-spec: brcmfmac43430-sdio.raspberrypi,3-model-b.clm_blob
-umass0 at uhub1 port 2 configuration 1 interface 0
-umass0: StoreJet Transcend (0x8564) StoreJet Transcend (0x7000), rev 2.10/80.00, addr 5
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
 audio0 at vcaudio0: playback
 audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for playback
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 bwfm0: CHIPACTIVE
-sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 bwfm0: address b8:27:eb:e1:34:80
 bwfm0: wl0: Oct 23 2017 03:55:53 version 7.45.98.38 (r674442 CY) FWID 01-e58d219f
 wsdisplay0: screen 4 added (default, vt100 emulation)
+umass0 at uhub1 port 2 configuration 1 interface 0
+umass0: StoreJet Transcend (0x8564) StoreJet Transcend (0x7000), rev 2.10/80.00, addr 5
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
