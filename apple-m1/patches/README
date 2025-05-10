@@ -1,0 +1,286 @@
+https://mail-index.netbsd.org/port-arm/2025/05/08/msg009170.html
+
+hw.xhci.debug = 0
+
+Topper D10s
+m1$ vmstat -u usbhist
+50000 entries, next is 115
+000002.259914 xhci_open#1@4: called: addr 0 depth 0 port 0 speed 4
+000002.259914 xhci_open#1@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.259914 xhci_open#1@4:  mps 0x200 maxb 0 bival 0 pipe 0xffff000801ac3580
+000002.260499 xhci_open#2@4: called: addr 0 depth 0 port 0 speed 4
+000002.260499 xhci_open#2@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.260499 xhci_open#2@4:  mps 0x2 maxb 0 bival 8 pipe 0xffff000801ac3d00
+000002.260516 xhci_open#3@4: called: addr 0 depth 0 port 0 speed 3
+000002.260516 xhci_open#3@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.260516 xhci_open#3@4:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009de09e080
+000002.260998 xhci_open#4@4: called: addr 0 depth 0 port 0 speed 3
+000002.260998 xhci_open#4@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.260998 xhci_open#4@4:  mps 0x8 maxb 0 bival 12 pipe 0xffff0009de09e680
+000002.261008 xhci_open#5@4: called: addr 0 depth 0 port 0 speed 4
+000002.261008 xhci_open#5@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.261008 xhci_open#5@4:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009de09e980
+000002.261481 xhci_open#6@4: called: addr 0 depth 0 port 0 speed 4
+000002.261481 xhci_open#6@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.261481 xhci_open#6@4:  mps 0x2 maxb 0 bival 8 pipe 0xffff0009de08a280
+000002.261490 xhci_open#7@4: called: addr 0 depth 0 port 0 speed 3
+000002.261491 xhci_open#7@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.261491 xhci_open#7@4:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009de08a580
+000002.261946 xhci_open#8@4: called: addr 0 depth 0 port 0 speed 3
+000002.261946 xhci_open#8@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.261946 xhci_open#8@4:  mps 0x8 maxb 0 bival 12 pipe 0xffff0009de08ab80
+000002.261955 xhci_open#9@4: called: addr 0 depth 0 port 0 speed 4
+000002.261955 xhci_open#9@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.261955 xhci_open#9@4:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009de08ae80
+000002.262399 xhci_open#10@4: called: addr 0 depth 0 port 0 speed 4
+000002.262400 xhci_open#10@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.262400 xhci_open#10@4:  mps 0x2 maxb 0 bival 8 pipe 0xffff0009de03f800
+000002.262415 xhci_open#11@4: called: addr 0 depth 0 port 0 speed 3
+000002.262415 xhci_open#11@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.262415 xhci_open#11@4:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009de03fb00
+000002.262841 xhci_open#12@4: called: addr 0 depth 0 port 0 speed 3
+000002.262841 xhci_open#12@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.262841 xhci_open#12@4:  mps 0x8 maxb 0 bival 12 pipe 0xffff0009de02f400
+000002.719917 xhci_open#13@7: called: addr 0 depth 1 port 1 speed 3
+000002.719917 xhci_open#13@7:  slot 1 dci 1 epaddr 0x00 attr 0x00
+000002.719917 xhci_open#13@7:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009ddc6ee80
+000002.719921 xhci_setup_ctx#0@7: slot 1 dci 1: ival 0 mps 0x40
+000002.719921 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x8
+000002.719934 xhci_open#14@4: called: addr 0 depth 1 port 1 speed 3
+000002.719934 xhci_open#14@4:  slot 1 dci 1 epaddr 0x00 attr 0x00
+000002.719934 xhci_open#14@4:  mps 0x40 maxb 0 bival 0 pipe 0xffff000801252e00
+000002.719938 xhci_setup_ctx#0@4: slot 1 dci 1: ival 0 mps 0x40
+000002.719938 xhci_setup_ctx#0@4:  mult 0 maxburst 0 mep 0 atl 0x8
+000002.754163 xhci_open#15@7: called: addr 1 depth 1 port 1 speed 3
+000002.754163 xhci_open#15@7:  slot 1 dci 3 epaddr 0x81 attr 0x03
+000002.754163 xhci_open#15@7:  mps 0x1 maxb 0 bival 12 pipe 0xffff0009ddf20500
+000002.754168 xhci_setup_ctx#0@7: slot 1 dci 3: ival 11 mps 0x1
+000002.754168 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0x1 atl 0x1
+000003.889970 xhci_open#16@7: called: addr 0 depth 2 port 1 speed 3
+000003.889970 xhci_open#16@7:  slot 2 dci 1 epaddr 0x00 attr 0x00
+000003.889970 xhci_open#16@7:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009ddf20c80
+000003.889972 xhci_setup_ctx#0@7: slot 2 dci 1: ival 0 mps 0x40
+000003.889972 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x8
+000003.953089 xhci_open#17@7: called: addr 2 depth 2 port 1 speed 3
+000003.953089 xhci_open#17@7:  slot 2 dci 4 epaddr 0x02 attr 0x02
+000003.953089 xhci_open#17@7:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009ddfbb400
+000003.953092 xhci_setup_ctx#0@7: slot 2 dci 4: ival 0 mps 0x200
+000003.953092 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x200
+000003.953111 xhci_open#18@7: called: addr 2 depth 2 port 1 speed 3
+000003.953112 xhci_open#18@7:  slot 2 dci 3 epaddr 0x81 attr 0x02
+000003.953112 xhci_open#18@7:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009ddfbb700
+000003.953114 xhci_setup_ctx#0@7: slot 2 dci 3: ival 0 mps 0x200
+000003.953114 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x200
+000004.349991 xhci_open#19@7: called: addr 0 depth 2 port 3 speed 3
+000004.349991 xhci_open#19@7:  slot 3 dci 1 epaddr 0x00 attr 0x00
+000004.349991 xhci_open#19@7:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009ddf19500
+000004.349994 xhci_setup_ctx#0@7: slot 3 dci 1: ival 0 mps 0x40
+000004.349994 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x8
+000004.373034 xhci_open#20@7: called: addr 3 depth 2 port 3 speed 3
+000004.373034 xhci_open#20@7:  slot 3 dci 3 epaddr 0x81 attr 0x03
+000004.373034 xhci_open#20@7:  mps 0x1 maxb 0 bival 7 pipe 0xffff0009ddf19e00
+000004.373038 xhci_setup_ctx#0@7: slot 3 dci 3: ival 6 mps 0x1
+000004.373038 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0x1 atl 0x1
+000005.480044 xhci_open#21@7: called: addr 0 depth 3 port 4 speed 3
+000005.480044 xhci_open#21@7:  slot 4 dci 1 epaddr 0x00 attr 0x00
+000005.480044 xhci_open#21@7:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009ddf9fe80
+000005.480046 xhci_setup_ctx#0@7: slot 4 dci 1: ival 0 mps 0x40
+000005.480047 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x8
+000005.501775 xhci_open#22@7: called: addr 4 depth 3 port 4 speed 3
+000005.501776 xhci_open#22@7:  slot 4 dci 4 epaddr 0x02 attr 0x02
+000005.501776 xhci_open#22@7:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009ddf09500
+000005.501778 xhci_setup_ctx#0@7: slot 4 dci 4: ival 0 mps 0x200
+000005.501778 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x200
+000005.501798 xhci_open#23@7: called: addr 4 depth 3 port 4 speed 3
+000005.501798 xhci_open#23@7:  slot 4 dci 3 epaddr 0x81 attr 0x02
+000005.501798 xhci_open#23@7:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009ddf09800
+000005.501800 xhci_setup_ctx#0@7: slot 4 dci 3: ival 0 mps 0x200
+000005.501800 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x200
+1746841934.687156 xhci_open#24@5: called: addr 1 depth 1 port 1 speed 3
+1746841934.687156 xhci_open#24@5:  slot 1 dci 2 epaddr 0x01 attr 0x05
+1746841934.687156 xhci_open#24@5:  mps 0x188 maxb 0 bival 1 pipe 0xffff00097fd0de00
+1746841934.687215 xhci_setup_ctx#0@5: slot 1 dci 2: ival 0 mps 0x188
+1746841934.687215 xhci_setup_ctx#0@5:  mult 0 maxburst 0 mep 0x188 atl 0x188
+1746841934.687383 xhci_open#25@5: called: addr 1 depth 1 port 1 speed 3
+1746841934.687383 xhci_open#25@5:  slot 1 dci 3 epaddr 0x81 attr 0x11
+1746841934.687383 xhci_open#25@5:  mps 0x4 maxb 0 bival 4 pipe 0xffff0009a698e500
+1746841934.687415 xhci_setup_ctx#0@5: slot 1 dci 3: ival 3 mps 0x4
+1746841934.687415 xhci_setup_ctx#0@5:  mult 0 maxburst 0 mep 0x4 atl 0x4
+1746841934.687725 xhci_device_isoc_enter#0@5: bival 0 ival 1 isoc_next 0x178
+1746841934.687725 xhci_device_isoc_enter#0@5: mfindex 0x13f isoc_next 0x178
+1746841998.153689 xhci_open#26@6: called: addr 1 depth 1 port 1 speed 3
+1746841998.153690 xhci_open#26@6:  slot 1 dci 2 epaddr 0x01 attr 0x05
+1746841998.153690 xhci_open#26@6:  mps 0x188 maxb 0 bival 1 pipe 0xffff0009a5f9fb00
+1746841998.153692 xhci_setup_ctx#0@6: slot 1 dci 2: ival 0 mps 0x188
+1746841998.153693 xhci_setup_ctx#0@6:  mult 0 maxburst 0 mep 0x188 atl 0x188
+1746841998.153875 xhci_open#27@6: called: addr 1 depth 1 port 1 speed 3
+1746841998.153875 xhci_open#27@6:  slot 1 dci 3 epaddr 0x81 attr 0x11
+1746841998.153875 xhci_open#27@6:  mps 0x4 maxb 0 bival 4 pipe 0xffff000999e91280
+1746841998.153878 xhci_setup_ctx#0@6: slot 1 dci 3: ival 3 mps 0x4
+1746841998.153878 xhci_setup_ctx#0@6:  mult 0 maxburst 0 mep 0x4 atl 0x4
+1746841998.154038 xhci_device_isoc_enter#0@6: bival 0 ival 1 isoc_next 0xc5
+1746841998.154039 xhci_device_isoc_enter#0@6: mfindex 0x8c isoc_next 0xc5
+
+LUXMAN LXU-OT2
+m1$ vmstat -u usbhist
+50000 entries, next is 156
+000002.259914 xhci_open#1@4: called: addr 0 depth 0 port 0 speed 4
+000002.259914 xhci_open#1@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.259914 xhci_open#1@4:  mps 0x200 maxb 0 bival 0 pipe 0xffff000801ac3580
+000002.260499 xhci_open#2@4: called: addr 0 depth 0 port 0 speed 4
+000002.260499 xhci_open#2@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.260499 xhci_open#2@4:  mps 0x2 maxb 0 bival 8 pipe 0xffff000801ac3d00
+000002.260516 xhci_open#3@4: called: addr 0 depth 0 port 0 speed 3
+000002.260516 xhci_open#3@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.260516 xhci_open#3@4:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009de09e080
+000002.260998 xhci_open#4@4: called: addr 0 depth 0 port 0 speed 3
+000002.260998 xhci_open#4@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.260998 xhci_open#4@4:  mps 0x8 maxb 0 bival 12 pipe 0xffff0009de09e680
+000002.261008 xhci_open#5@4: called: addr 0 depth 0 port 0 speed 4
+000002.261008 xhci_open#5@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.261008 xhci_open#5@4:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009de09e980
+000002.261481 xhci_open#6@4: called: addr 0 depth 0 port 0 speed 4
+000002.261481 xhci_open#6@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.261481 xhci_open#6@4:  mps 0x2 maxb 0 bival 8 pipe 0xffff0009de08a280
+000002.261490 xhci_open#7@4: called: addr 0 depth 0 port 0 speed 3
+000002.261491 xhci_open#7@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.261491 xhci_open#7@4:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009de08a580
+000002.261946 xhci_open#8@4: called: addr 0 depth 0 port 0 speed 3
+000002.261946 xhci_open#8@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.261946 xhci_open#8@4:  mps 0x8 maxb 0 bival 12 pipe 0xffff0009de08ab80
+000002.261955 xhci_open#9@4: called: addr 0 depth 0 port 0 speed 4
+000002.261955 xhci_open#9@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.261955 xhci_open#9@4:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009de08ae80
+000002.262399 xhci_open#10@4: called: addr 0 depth 0 port 0 speed 4
+000002.262400 xhci_open#10@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.262400 xhci_open#10@4:  mps 0x2 maxb 0 bival 8 pipe 0xffff0009de03f800
+000002.262415 xhci_open#11@4: called: addr 0 depth 0 port 0 speed 3
+000002.262415 xhci_open#11@4:  slot 0 dci 1 epaddr 0x00 attr 0x00
+000002.262415 xhci_open#11@4:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009de03fb00
+000002.262841 xhci_open#12@4: called: addr 0 depth 0 port 0 speed 3
+000002.262841 xhci_open#12@4:  slot 0 dci 3 epaddr 0x81 attr 0x03
+000002.262841 xhci_open#12@4:  mps 0x8 maxb 0 bival 12 pipe 0xffff0009de02f400
+000002.719917 xhci_open#13@7: called: addr 0 depth 1 port 1 speed 3
+000002.719917 xhci_open#13@7:  slot 1 dci 1 epaddr 0x00 attr 0x00
+000002.719917 xhci_open#13@7:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009ddc6ee80
+000002.719921 xhci_setup_ctx#0@7: slot 1 dci 1: ival 0 mps 0x40
+000002.719921 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x8
+000002.719934 xhci_open#14@4: called: addr 0 depth 1 port 1 speed 3
+000002.719934 xhci_open#14@4:  slot 1 dci 1 epaddr 0x00 attr 0x00
+000002.719934 xhci_open#14@4:  mps 0x40 maxb 0 bival 0 pipe 0xffff000801252e00
+000002.719938 xhci_setup_ctx#0@4: slot 1 dci 1: ival 0 mps 0x40
+000002.719938 xhci_setup_ctx#0@4:  mult 0 maxburst 0 mep 0 atl 0x8
+000002.754163 xhci_open#15@7: called: addr 1 depth 1 port 1 speed 3
+000002.754163 xhci_open#15@7:  slot 1 dci 3 epaddr 0x81 attr 0x03
+000002.754163 xhci_open#15@7:  mps 0x1 maxb 0 bival 12 pipe 0xffff0009ddf20500
+000002.754168 xhci_setup_ctx#0@7: slot 1 dci 3: ival 11 mps 0x1
+000002.754168 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0x1 atl 0x1
+000003.889970 xhci_open#16@7: called: addr 0 depth 2 port 1 speed 3
+000003.889970 xhci_open#16@7:  slot 2 dci 1 epaddr 0x00 attr 0x00
+000003.889970 xhci_open#16@7:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009ddf20c80
+000003.889972 xhci_setup_ctx#0@7: slot 2 dci 1: ival 0 mps 0x40
+000003.889972 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x8
+000003.953089 xhci_open#17@7: called: addr 2 depth 2 port 1 speed 3
+000003.953089 xhci_open#17@7:  slot 2 dci 4 epaddr 0x02 attr 0x02
+000003.953089 xhci_open#17@7:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009ddfbb400
+000003.953092 xhci_setup_ctx#0@7: slot 2 dci 4: ival 0 mps 0x200
+000003.953092 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x200
+000003.953111 xhci_open#18@7: called: addr 2 depth 2 port 1 speed 3
+000003.953112 xhci_open#18@7:  slot 2 dci 3 epaddr 0x81 attr 0x02
+000003.953112 xhci_open#18@7:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009ddfbb700
+000003.953114 xhci_setup_ctx#0@7: slot 2 dci 3: ival 0 mps 0x200
+000003.953114 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x200
+000004.349991 xhci_open#19@7: called: addr 0 depth 2 port 3 speed 3
+000004.349991 xhci_open#19@7:  slot 3 dci 1 epaddr 0x00 attr 0x00
+000004.349991 xhci_open#19@7:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009ddf19500
+000004.349994 xhci_setup_ctx#0@7: slot 3 dci 1: ival 0 mps 0x40
+000004.349994 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x8
+000004.373034 xhci_open#20@7: called: addr 3 depth 2 port 3 speed 3
+000004.373034 xhci_open#20@7:  slot 3 dci 3 epaddr 0x81 attr 0x03
+000004.373034 xhci_open#20@7:  mps 0x1 maxb 0 bival 7 pipe 0xffff0009ddf19e00
+000004.373038 xhci_setup_ctx#0@7: slot 3 dci 3: ival 6 mps 0x1
+000004.373038 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0x1 atl 0x1
+000005.480044 xhci_open#21@7: called: addr 0 depth 3 port 4 speed 3
+000005.480044 xhci_open#21@7:  slot 4 dci 1 epaddr 0x00 attr 0x00
+000005.480044 xhci_open#21@7:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009ddf9fe80
+000005.480046 xhci_setup_ctx#0@7: slot 4 dci 1: ival 0 mps 0x40
+000005.480047 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x8
+000005.501775 xhci_open#22@7: called: addr 4 depth 3 port 4 speed 3
+000005.501776 xhci_open#22@7:  slot 4 dci 4 epaddr 0x02 attr 0x02
+000005.501776 xhci_open#22@7:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009ddf09500
+000005.501778 xhci_setup_ctx#0@7: slot 4 dci 4: ival 0 mps 0x200
+000005.501778 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x200
+000005.501798 xhci_open#23@7: called: addr 4 depth 3 port 4 speed 3
+000005.501798 xhci_open#23@7:  slot 4 dci 3 epaddr 0x81 attr 0x02
+000005.501798 xhci_open#23@7:  mps 0x200 maxb 0 bival 0 pipe 0xffff0009ddf09800
+000005.501800 xhci_setup_ctx#0@7: slot 4 dci 3: ival 0 mps 0x200
+000005.501800 xhci_setup_ctx#0@7:  mult 0 maxburst 0 mep 0 atl 0x200
+1746841934.687156 xhci_open#24@5: called: addr 1 depth 1 port 1 speed 3
+1746841934.687156 xhci_open#24@5:  slot 1 dci 2 epaddr 0x01 attr 0x05
+1746841934.687156 xhci_open#24@5:  mps 0x188 maxb 0 bival 1 pipe 0xffff00097fd0de00
+1746841934.687215 xhci_setup_ctx#0@5: slot 1 dci 2: ival 0 mps 0x188
+1746841934.687215 xhci_setup_ctx#0@5:  mult 0 maxburst 0 mep 0x188 atl 0x188
+1746841934.687383 xhci_open#25@5: called: addr 1 depth 1 port 1 speed 3
+1746841934.687383 xhci_open#25@5:  slot 1 dci 3 epaddr 0x81 attr 0x11
+1746841934.687383 xhci_open#25@5:  mps 0x4 maxb 0 bival 4 pipe 0xffff0009a698e500
+1746841934.687415 xhci_setup_ctx#0@5: slot 1 dci 3: ival 3 mps 0x4
+1746841934.687415 xhci_setup_ctx#0@5:  mult 0 maxburst 0 mep 0x4 atl 0x4
+1746841934.687725 xhci_device_isoc_enter#0@5: bival 0 ival 1 isoc_next 0x178
+1746841934.687725 xhci_device_isoc_enter#0@5: mfindex 0x13f isoc_next 0x178
+1746841998.153689 xhci_open#26@6: called: addr 1 depth 1 port 1 speed 3
+1746841998.153690 xhci_open#26@6:  slot 1 dci 2 epaddr 0x01 attr 0x05
+1746841998.153690 xhci_open#26@6:  mps 0x188 maxb 0 bival 1 pipe 0xffff0009a5f9fb00
+1746841998.153692 xhci_setup_ctx#0@6: slot 1 dci 2: ival 0 mps 0x188
+1746841998.153693 xhci_setup_ctx#0@6:  mult 0 maxburst 0 mep 0x188 atl 0x188
+1746841998.153875 xhci_open#27@6: called: addr 1 depth 1 port 1 speed 3
+1746841998.153875 xhci_open#27@6:  slot 1 dci 3 epaddr 0x81 attr 0x11
+1746841998.153875 xhci_open#27@6:  mps 0x4 maxb 0 bival 4 pipe 0xffff000999e91280
+1746841998.153878 xhci_setup_ctx#0@6: slot 1 dci 3: ival 3 mps 0x4
+1746841998.153878 xhci_setup_ctx#0@6:  mult 0 maxburst 0 mep 0x4 atl 0x4
+1746841998.154038 xhci_device_isoc_enter#0@6: bival 0 ival 1 isoc_next 0xc5
+1746841998.154039 xhci_device_isoc_enter#0@6: mfindex 0x8c isoc_next 0xc5
+1746842715.034713 xhci_open#28@6: called: addr 0 depth 1 port 1 speed 3
+1746842715.034713 xhci_open#28@6:  slot 2 dci 1 epaddr 0x00 attr 0x00
+1746842715.034713 xhci_open#28@6:  mps 0x40 maxb 0 bival 0 pipe 0xffff000973b0cb80
+1746842715.034715 xhci_setup_ctx#0@6: slot 2 dci 1: ival 0 mps 0x40
+1746842715.034715 xhci_setup_ctx#0@6:  mult 0 maxburst 0 mep 0 atl 0x8
+1746842717.534841 xhci_open#29@6: called: addr 0 depth 1 port 1 speed 3
+1746842717.534841 xhci_open#29@6:  slot 3 dci 1 epaddr 0x00 attr 0x00
+1746842717.534841 xhci_open#29@6:  mps 0x40 maxb 0 bival 0 pipe 0xffff000973b0cb80
+1746842717.534843 xhci_setup_ctx#0@6: slot 3 dci 1: ival 0 mps 0x40
+1746842717.534843 xhci_setup_ctx#0@6:  mult 0 maxburst 0 mep 0 atl 0x8
+1746842718.814906 xhci_open#30@4: called: addr 0 depth 1 port 1 speed 3
+1746842718.814906 xhci_open#30@4:  slot 4 dci 1 epaddr 0x00 attr 0x00
+1746842718.814906 xhci_open#30@4:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009785b6800
+1746842718.814908 xhci_setup_ctx#0@4: slot 4 dci 1: ival 0 mps 0x40
+1746842718.814908 xhci_setup_ctx#0@4:  mult 0 maxburst 0 mep 0 atl 0x8
+1746842729.495454 xhci_open#31@6: called: addr 0 depth 1 port 1 speed 2
+1746842729.495454 xhci_open#31@6:  slot 5 dci 1 epaddr 0x00 attr 0x00
+1746842729.495454 xhci_open#31@6:  mps 0x40 maxb 0 bival 0 pipe 0xffff0009718b3700
+1746842729.495455 xhci_setup_ctx#0@6: slot 5 dci 1: ival 0 mps 0x40
+1746842729.495455 xhci_setup_ctx#0@6:  mult 0 maxburst 0 mep 0 atl 0x8
+1746842772.806654 xhci_open#32@6: called: addr 5 depth 1 port 1 speed 2
+1746842772.806654 xhci_open#32@6:  slot 5 dci 4 epaddr 0x02 attr 0x09
+1746842772.806654 xhci_open#32@6:  mps 0xc0 maxb 0 bival 1 pipe 0xffff000979195880
+1746842772.806658 xhci_setup_ctx#0@6: slot 5 dci 4: ival 3 mps 0xc0
+1746842772.806658 xhci_setup_ctx#0@6:  mult 0 maxburst 0 mep 0xc0 atl 0xc0
+1746842772.806853 xhci_device_isoc_enter#0@6: bival 3 ival 8 isoc_next 0x2ea8
+1746842772.806853 xhci_device_isoc_enter#0@6: mfindex 0x2e6a isoc_next 0x2ea8
+1746842782.967740 xhci_open#33@6: called: addr 5 depth 1 port 1 speed 2
+1746842782.967740 xhci_open#33@6:  slot 5 dci 4 epaddr 0x02 attr 0x09
+1746842782.967740 xhci_open#33@6:  mps 0xc0 maxb 0 bival 1 pipe 0xffff000999e91280
+1746842782.967743 xhci_setup_ctx#0@6: slot 5 dci 4: ival 3 mps 0xc0
+1746842782.967743 xhci_setup_ctx#0@6:  mult 0 maxburst 0 mep 0xc0 atl 0xc0
+1746842782.967940 xhci_device_isoc_enter#0@6: bival 3 ival 8 isoc_next 0x2c30
+1746842782.967940 xhci_device_isoc_enter#0@6: mfindex 0x2bf2 isoc_next 0x2c30
+1746842977.930087 xhci_open#34@6: called: addr 5 depth 1 port 1 speed 2
+1746842977.930087 xhci_open#34@6:  slot 5 dci 4 epaddr 0x02 attr 0x09
+1746842977.930087 xhci_open#34@6:  mps 0xc0 maxb 0 bival 1 pipe 0xffff000965918580
+1746842977.930090 xhci_setup_ctx#0@6: slot 5 dci 4: ival 3 mps 0xc0
+1746842977.930090 xhci_setup_ctx#0@6:  mult 0 maxburst 0 mep 0xc0 atl 0xc0
+1746842977.930277 xhci_device_isoc_enter#0@6: bival 3 ival 8 isoc_next 0x38b8
+1746842977.930278 xhci_device_isoc_enter#0@6: mfindex 0x387e isoc_next 0x38b8
+
+m1$ 
+
+
