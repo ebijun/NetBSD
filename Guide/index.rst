@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
+ Place/nagoya
  stable-diffusion.cpp
  PC6001VX/PC6001VX
  Pkgsrc/mlterm
@@ -35,4 +35,4 @@
  latexpdf
  Place/intro
  Luna
- AGM/2024-agm.rst
+ AGM/2025-agm.rst

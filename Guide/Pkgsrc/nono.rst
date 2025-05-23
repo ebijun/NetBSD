@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.4.1
+ DISTNAME=       nono-1.4.2
 
 チェックサム作成
 ------------------
@@ -82,29 +82,16 @@ commit
 
  cvs commit 
 
- nono: update to 1.4.1.
+ nono: update to 1.4.2.
 
- 1.4.1 (2025/04/30)
+ 1.4.2 (2025/05/17)
  
- m88k: "Fix several exception priorities."
- m88k: "Implement the illegal instruction exception."
- m88k: "Fix several DMx registers upon a data access exception."
- m88k: "Fix the behavior of the ld.d instruction when an exception occurred on the second word."
- m88k: "Fix that PID and SXIP registers were writeable."
- m88k: "Revert the search method inside the BATC/PATC to that of ver 0.6.1."
- vm: "Implement an interrupt handler in the builtin emulated PROM on LUNA-88K. This fixes the issue where the hexdump command on the OpenBSD/luna88k boot loader was hanging when accessing the bus error region."
- vm: "Modify and adjust the memory map on LUNA-88K."
- vm: "Implement the SCSI bus transition from the selection phase to the message out phase. This fixes the abnormal termination while booting UniOS Mach. (But it doesn't work yet.)"
- vm: "Change the handling of write-protected SCSI image files."
- vm: "Support the LUNA-88K software keyboard(?). As a result of this, several internal keycodes on LUNA-I and X68030 are also moved."
- debugger: "The breakpoint monitor now supports m88k."
- debugger: "The breakpoint monitor now supports 1-byte instructions like HD64180."
- debugger: "Fix the abnormal termination when a breakpoint has an invalid CPU name."
- debugger: "The vector table now supports LUNA-88K."
- debugger: "Change the syntax of the bv command."
- debugger: "The bi command supports some mnemonics."
- debugger: "Implement --bi and --bv options."
- util/nvramedit: "Fix the file size of NVRAM.DAT." 
+ m88k: "Fix the FPHS[12] registers if any source register contains 0 when the FP precise exception occurs."
+ m88k: "Implement a table search operation with CI."
+ m88k: "Implement that a cache hit invalidates the cache entry if the accesss is CI. These two changes should fix an occasional OpenBSD panic since ver 0.7.1."
+ m88k: "Fix the behavior of the xmem instruction in a cache-inhibited region."
+ m88k: "Fix an issue that bus snooping didn't change cache status in some case."
+ m88k: "Fix the cache status on 88200 Cache Copyback {,and Invalidate} commands." 
 
 doc をcommit します
 ---------------------
@@ -114,9 +101,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.4.1
+ doc: Updated emulators/nono to 1.4.2
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.4.1 [jun 2025-04-30]
+        Updated emulators/nono to 1.4.2 [jun 2025-05-18]
 
