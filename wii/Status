@@ -1,0 +1,52 @@
+DATE=`date +%Y%m%d`
+
+cat << EOF
+To: port-powerpc%netbsd.org@localhost
+Subject: wii status update (${DATE})
+
+Re: NetBSD on Nintendo Wii (PowerPC 750CL)
+ https://mail-index.netbsd.org/port-powerpc/2024/01/27/msg003636.html
+
+Topics:
+- add 64GB microSD
+- add HDMI adapter
+- add USB urtwn0
+
+pkgsrc:
+
+NetBSD wii 10.99.14 NetBSD 10.99.14 (WII) #0: Sat May 10 18:58:53 UTC 2025  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbppc/compile/WII evbppc
+
+ld0: 59311 MB, 7561 cyl, 255 head, 63 sec, 512 bytes/sect x 121468928 sectors (0 bytes/physsect)
+ld0: 4-bit width, High-Speed/SDR25, 48.000 MHz
+
+elapse          end             start           name
+270:20:00	2025/5/24 16:02	2025/5/13 9:42	cmake-3.31.7nb2.tgz
+30:49:00	2025/5/25 23:38	2025/5/24 16:49	re2c-4.2.tgz
+29:21:00	2025/5/12 2:48	2025/5/10 21:27	sqlite3-3.49.2.tgz
+09:33:00	2025/5/13 0:16	2025/5/12 14:43	perl-5.40.2.tgz
+06:34:00	2025/5/12 14:43	2025/5/12 8:09	gettext-tools-0.22.5.tgz
+04:37:00	2025/5/26 4:15	2025/5/25 23:38	ninja-build-1.12.1nb1.tgz
+03:11:00	2025/5/12 5:59	2025/5/12 2:48	python312-3.12.10nb1.tgz
+
+pkgsrc packages:
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/evbppc/2025
+
+Version: 
+ `uname -v`
+
+dmesg:
+ https://github.com/ebijun/NetBSD/blob/master/dmesg/evbppc/Nintendo_Wii
+
+sysinfo:
+ https://github.com/ebijun/NetBSD/blob/master/wii//sysinfo
+
+pkginfo:
+ https://github.com/ebijun/NetBSD/blob/master/wii/pkginfo
+
+pkgchk.conf:
+ https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkgchk.conf
+  cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
+
+--
+Jun Ebihara
+EOF

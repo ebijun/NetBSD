@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2024 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2025 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,20 +35,19 @@ NBUG例会この一年
  :widths: 15 15 15 6 
 
  OSC,NBUG例会,togetter,アクセス数
- 
- NBUG 2024/05 OSC Nagoya,https://togetter.com/li/2359557,325
- NBUG 2024/03~04,https://togetter.com/li/2332837,261
- NBUG 2024/02,https://togetter.com/li/2314715,817
- NBUG 2024/01,https://togetter.com/li/2298407,1162
- NBUG 2023/12,https://togetter.com/li/2271317,655
- NBUG 2023/11,https://togetter.com/li/2260623,540
- NBUG 2023/10,https://togetter.com/li/2240886,1015
- NBUG 2023/09,https://togetter.com/li/2231931,977
- NBUG 2023/08,https://togetter.com/li/2208216,949
- NBUG 2023/07,https://togetter.com/li/2189221,1526
- NBUG 2023/06,https://togetter.com/li/2165257,1575
- NBUG 2023/05 OSC Nagoya,https://togetter.com/li/2142714,2453
-
+ NBUG 2025/5,https://posfie.com//@ebijun/p/mSFyoC4,69
+ NBUG 2025/4,https://posfie.com//@ebijun/p/Kp5byp4,153
+ NBUG 2025/3,https://posfie.com//@ebijun/p/BxNgldk,311
+ NBUG 2025/2,https://posfie.com//@ebijun/p/AeMxGBR,721
+ NBUG 2025/1,https://posfie.com//@ebijun/p/EUD3bz3,859
+ NBUG 2024/12,https://posfie.com//@ebijun/p/5vkKc1V,605
+ NBUG 2024/11,https://posfie.com//@ebijun/p/OdRTPcq,1335
+ NBUG 2024/10,https://posfie.com//@ebijun/p/asBFcLt,1290
+ NBUG 2024/9,https://posfie.com//@ebijun/p/mk23csW,1392
+ NBUG 2024/8,https://posfie.com//@ebijun/p/vwUWA40,764
+ NBUG 2024/7,https://posfie.com//@ebijun/p/QvpvCT4,998
+ NBUG 2024/6,https://posfie.com//@ebijun/p/ew5jXWs,1099
+ NBUGなひととき 2024,https://posfie.com//@ebijun/p/tz1YCc0,1262
 
 名古屋でのオープンソースカンファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,9 +72,10 @@ NBUG例会この一年
  2020 online Nagoya,5/30,370,14,ZOOM
  2021 online Nagoya,5/29,400,16,ZOOM
  2022 online Nagoya,5/28,280,21,ZOOM
- 2023 online Nagoya,5/20,,,ZOOM
- 2023 Nagoya,5/28,,,名古屋市中小企業振興会館 
- 2024 Nagoya,5/25,,,名古屋市中小企業振興会館 
+ 2023 online Nagoya,5/20,165,12,ZOOM
+ 2023 Nagoya,5/28,325,24,名古屋市中小企業振興会館 
+ 2024 Nagoya,5/25,250,36,名古屋市中小企業振興会館 
+ 2025 Nagoya,5/31,,,名古屋市中小企業振興会館 
 
    
 オープンソースカンファレンス以前
@@ -96,7 +96,7 @@ NBUG例会この一年
 .. csv-table::
  :widths: 30 20 60
 
- ナゴヤキネマ・ノイ,今池,シネマテークから新規オープン。悪は存在しない。
+ ナゴヤキネマ・ノイ,今池,シネマテークから新規オープン。ボリビア／ウカマウ集団の軌跡。
  パウ,大須,タブレットから謎ハードまで。ボントンの隣。
  鯱の家,黒川,カレーうどん。
  陽龍,黒川,チャーシューメン。
@@ -149,6 +149,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 211,OSC2025名古屋,http://www.re.soum.co.jp/~jun/OSC2025nagoya.pdf
  198,OSC2024名古屋,http://www.re.soum.co.jp/~jun/OSC2024nagoya.pdf
  186,OSC2023名古屋,http://www.re.soum.co.jp/~jun/OSC2023nagoya.pdf
  176,OSC2022名古屋,http://www.re.soum.co.jp/~jun/OSC2022nagoya.pdf 
@@ -169,7 +170,7 @@ togetterまとめ
 
 .. csv-table::
  :widths: 80 80
-
+ OSC2025 名古屋,https://posfie.com/@ebijun/p/mSFyoC4
  OSC2024 Online/Nagoya 名古屋,https://togetter.com/li/2359557
  OSC2023 Online/Nagoya 名古屋,https://togetter.com/li/2142714
  OSC2022 Online/Nagoya 名古屋,https://togetter.com/li/1950893

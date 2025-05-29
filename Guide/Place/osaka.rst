@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2025 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -111,6 +111,9 @@ Maps:
  初音,新梅田食道街,くしかつ おでん
  kamikaze,西大橋,ビアバー　15:00-22:30LO
  バナナクレープ,瓦屋町,絶版漫画平日14:00-20:00 日祝12:00-18:00 
+ フォーエヴァーレコード,難波,難波中2-4-7 12:00-20:00
+ レコードあんぐらあ,心斎橋,土日14:00-1900
+ マルかバツ,心斎橋,12:00-21:00 水曜休
 
 主な発表
 ~~~~~~~~~~~~~~
