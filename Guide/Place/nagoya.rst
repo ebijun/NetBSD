@@ -35,19 +35,19 @@ NBUG例会この一年
  :widths: 15 15 15 6 
 
  OSC,NBUG例会,togetter,アクセス数
- NBUG 2025/5,https://posfie.com//@ebijun/p/mSFyoC4,69
- NBUG 2025/4,https://posfie.com//@ebijun/p/Kp5byp4,153
- NBUG 2025/3,https://posfie.com//@ebijun/p/BxNgldk,311
- NBUG 2025/2,https://posfie.com//@ebijun/p/AeMxGBR,721
- NBUG 2025/1,https://posfie.com//@ebijun/p/EUD3bz3,859
- NBUG 2024/12,https://posfie.com//@ebijun/p/5vkKc1V,605
- NBUG 2024/11,https://posfie.com//@ebijun/p/OdRTPcq,1335
- NBUG 2024/10,https://posfie.com//@ebijun/p/asBFcLt,1290
- NBUG 2024/9,https://posfie.com//@ebijun/p/mk23csW,1392
- NBUG 2024/8,https://posfie.com//@ebijun/p/vwUWA40,764
- NBUG 2024/7,https://posfie.com//@ebijun/p/QvpvCT4,998
- NBUG 2024/6,https://posfie.com//@ebijun/p/ew5jXWs,1099
- NBUGなひととき 2024,https://posfie.com//@ebijun/p/tz1YCc0,1262
+ 名古屋,NBUG 2025/5,https://posfie.com//@ebijun/p/mSFyoC4,69
+ ,NBUG 2025/4,https://posfie.com//@ebijun/p/Kp5byp4,153
+ AsiaBSDCon-lite,NBUG 2025/3,https://posfie.com//@ebijun/p/BxNgldk,311
+ 東京,NBUG 2025/2,https://posfie.com//@ebijun/p/AeMxGBR,721
+ 大阪,NBUG 2025/1,https://posfie.com//@ebijun/p/EUD3bz3,859
+ 福岡,NBUG 2024/12,https://posfie.com//@ebijun/p/5vkKc1V,605
+ 東京/島根/KOF/愛媛,NBUG 2024/11,https://posfie.com//@ebijun/p/OdRTPcq,1335
+ 長岡/東京,NBUG 2024/10,https://posfie.com//@ebijun/p/asBFcLt,1290
+ 広島,NBUG 2024/9,https://posfie.com//@ebijun/p/mk23csW,1392
+ ODC,NBUG 2024/8,https://posfie.com//@ebijun/p/vwUWA40,764
+ 京都,NBUG 2024/7,https://posfie.com//@ebijun/p/QvpvCT4,998
+ 北海道,NBUG 2024/6,https://posfie.com//@ebijun/p/ew5jXWs,1099
+ 名古屋,NBUGなひととき 2024,https://posfie.com//@ebijun/p/tz1YCc0,1262
 
 名古屋でのオープンソースカンファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -170,6 +170,7 @@ togetterまとめ
 
 .. csv-table::
  :widths: 80 80
+
  OSC2025 名古屋,https://posfie.com/@ebijun/p/mSFyoC4
  OSC2024 Online/Nagoya 名古屋,https://togetter.com/li/2359557
  OSC2023 Online/Nagoya 名古屋,https://togetter.com/li/2142714
