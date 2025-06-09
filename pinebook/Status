@@ -96,6 +96,11 @@ ToDo:
  mate/xfce4/camera/WiFi
  ToDo:  
  - HDMI output via USB-C 
+ - USB3 via USB-C: 
+   - https://mail-index.netbsd.org/port-arm/2025/05/26/msg009201.html
+     - Driver for FUSB302B USB-C power controller (from OpenBSD).
+     - Driver for RK3399 USB-C phy (from OpenBSD) plus extra clocks.
+     - Add support for interrupts to the RK3399 GPIO driver.
  - Audio output: can't switch speaker & headphone out
 
 - Pinebook
