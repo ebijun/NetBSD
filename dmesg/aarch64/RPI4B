@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.14 (GENERIC64) #0: Thu May  8 02:27:24 UTC 2025
+NetBSD 10.99.14 (GENERIC64) #0: Sun Jun  8 20:52:29 UTC 2025
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 8021 MB
 avail memory = 7730 MB
@@ -109,10 +109,9 @@ RHPX (MSFT8000) at acpi0 not configured
 sdhc0 at acpi0 (SDC1, BCM2847-0): mem 0xfe300000-0xfe3000ff irq 158
 genet0 at acpi0 (ETH0, BCM6E4E-0): mem 0xfd580000-0xfd58ffff irq 189,190
 genet0: GENETv5.0
-genet0: Ethernet address 3b:36:00:f2:29:24
+genet0: Ethernet address f2:6d:00:f2:44:1a
 brgphy0 at genet0 phy 1: BCM54213PE 1000BASE-T media interface, rev. 2
 brgphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
-autoconfiguration error: The multicast bit is set in the MAC address. It's wrong.
 EC00 (PNP0C06) at acpi0 not configured
 acpitz0 at acpi0 (TZ00): cpu0 cpu1 cpu2 cpu3
 acpitz0: levels: critical 90.0 C, hot 85.0 C, passive 80.0 C, passive cooling
@@ -132,14 +131,14 @@ wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+uhub0: 4 ports with 4 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub1: 1 port with 1 removable, self powered
 cpu0: PMU interrupting on irq 48
 cpu1: PMU interrupting on irq 49
 cpu2: PMU interrupting on irq 50
 cpu3: PMU interrupting on irq 51
-uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
-uhub0: 4 ports with 4 removable, self powered
 IPsec: Initialized Security Association Processing.
 sdmmc0: 4-bit width, 50.000 MHz
 sdmmc0: SDIO function
@@ -149,15 +148,15 @@ bwfm0 at sdmmc0 function 1
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SF064:0x01:0xf60436a2:0x183>
 ld1: 59024 MB, 7524 cyl, 255 head, 63 sec, 512 bytes/sect x 120881152 sectors (0 bytes/physsect)
-ld1: GPT GUID: c9c37694-dab9-4105-8e8c-63ced17daaf0
+ld1: GPT GUID: 2ce23e58-58d7-4e66-8eb3-306ecfcc5c6d
 dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 6041010 blocks at 90203, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
-uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 1
+uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 2
 uhub2: single transaction translator
 uhub2: 4 ports with 4 removable, self powered
-umass0 at uhub0 port 2 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 2
+umass0 at uhub0 port 1 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 1
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
@@ -177,12 +176,11 @@ uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
 uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
 uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
 swwdog0: software watchdog initialized
-WARNING: 1 error while detecting hardware; check system log.
 boot device: dk1
 root on dk1
 root file system type: ffs
 kern.module.path=/stand/evbarm/10.99.14/modules
-WARNING: clock lost 76 days
+WARNING: clock lost 108 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec7f000, is_master = 0
@@ -206,3 +204,4 @@ bwfm0: CHIPACTIVE
 bwfm0: address d8:3a:dd:28:ce:ef
 bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
 wsdisplay0: screen 4 added (default, vt100 emulation)
+nd6_rtrequest: bad gateway value: genet0
