@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.14 (RPI2) #0: Mon May  5 20:24:30 UTC 2025
+NetBSD 10.99.14 (RPI2) #0: Wed Jun 11 21:20:37 UTC 2025
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -119,7 +119,7 @@ bwfm0 at sdmmc1 function 1
 (manufacturer 0x2d0, product 0xa9a6) at sdmmc1 function 2 not configured
 (manufacturer 0x2d0, product 0xa9a6, standard function interface code 0x2) at sdmmc1 function 3 not configured
 sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
-ld0 at sdmmc0: <0x02:0x544d:SF128:0x00:0x0a0ddda1:0x17c>
+ld0 at sdmmc0: <0x02:0x544d:SF128:0x00:0x004f07b0:0x17c>
 ld0: 115 GB, 15047 cyl, 255 head, 63 sec, 512 bytes/sect x 241745920 sectors (0 bytes/physsect)
 ld0: 236584960 trailing sectors not covered by disklabel
 ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -144,12 +144,18 @@ uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
 uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
 uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
 uhub0: autoconfiguration error: illegal enable change, port 1
+umass0 at uhub2 port 2 configuration 1 interface 0
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 5
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 465 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
 mue0 at uhub2 port 1
-mue0: vendor 0424 (0x0424) product 7800 (0x7800), rev 2.10/3.00, addr 5
+mue0: vendor 0424 (0x0424) product 7800 (0x7800), rev 2.10/3.00, addr 6
 mue0: LAN7800 id 0x7800 rev 0x2
 ukphy0 at mue0 phy 1: OUI 0x00800f, model 0x0013, rev. 2
 ukphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
-mue0: Ethernet address b8:27:eb:3d:70:4f
+mue0: Ethernet address b8:27:eb:3c:cf:09
 swwdog0: software watchdog initialized
 ld0: 236584960 trailing sectors not covered by disklabel
 ld0: 236584960 trailing sectors not covered by disklabel
@@ -164,7 +170,7 @@ WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 vchiq0: interrupting on icu irq 66
-vchiq: vchiq_init_state: slot_zero = 0xd2ab0000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xd2aa0000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
@@ -181,13 +187,8 @@ bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
 bwfm0: Found NVRAM file: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
 bwfm0: CLM file default:    brcmfmac43455-sdio.clm_blob
 bwfm0: CLM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.clm_blob
-umass0 at uhub2 port 2 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 6
-umass0: using SCSI over Bulk-Only
-scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 465 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
 bwfm0: CHIPACTIVE
-bwfm0: address b8:27:eb:68:25:1a
+bwfm0: address b8:27:eb:69:9a:5c
 bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
 wsdisplay0: screen 4 added (default, vt100 emulation)
+nd6_rtrequest: bad gateway value: mue0
