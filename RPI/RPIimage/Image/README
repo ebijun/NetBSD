@@ -1,18 +1,18 @@
-VERSION: :1,$s/2025-05-07/2025-05-07/g
-ISO:     :1,$s/202505060010Z/202505060010Z/g
+VERSION: :1,$s/2025-06-13/2025-06-13/g
+ISO:     :1,$s/202506120130Z/202506120130Z/g
 NetBSD:  :1,$s/10.99.14/10.99.14/g
-PKGSRC:  :1,$s/2025-05-07/2022/
+PKGSRC:  :1,$s/2025-06-13/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-05-07-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2025-06-13-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-05-07-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2025-06-13-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-05-07-earmv6hf/2025-05-07-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-05-07-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-13-earmv6hf/2025-06-13-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-13-earmv6hf/MD5
 
 Update:
 - fstab
@@ -39,7 +39,7 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 10.99.14 evbarm-earmv6hf 202505060010Z rpi.img from nyftp.
+- NetBSD 10.99.14 evbarm-earmv6hf 202506120130Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
   # mlterm-wscons
@@ -105,22 +105,17 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- libc-12.223 libssh-49.0 NetBSD-10.99.14 openssh-10.0 opensshd-10.0
- sh-20220122-20250505202430Z tzdata-2025bgtz userland-NetBSD-10.99.14/evbarm
+ bind-9.20.9 dhcpcd-10.2.3 pkg_install-20250417 sh-20220122-20250611212037Z
 
 pkgsrc:
- cairo-1.18.4 curl-8.13.0nb2 dillo-3.2.0nb2 fltk-1.4.2nb1 gd-2.3.3nb15
- gdk-pixbuf2-2.42.12nb1 git-base-2.49.0nb2 gnutls-3.8.9nb1 gtk2+-2.24.33nb30
- gtk3+-3.24.43nb9 harfbuzz-11.1.0 icu-77.1 imlib2-1.12.3nb3 libatomic-13.2.0
- libcups-2.4.11nb6 libffi-3.4.8 libjpeg-turbo-3.1.0 libwebp-1.5.0nb1
- libxkbcommon-1.7.0nb6 libxml2-2.14.2nb1 libxslt-1.1.42nb4 m17n-lib-1.8.0nb22
- medit-1.2.0nb39 mlterm-3.9.4nb2 nghttp2-1.65.0nb1 pango-1.56.3 perl-5.40.2
- pkg_chk-2.0.13 python312-3.12.9nb1 qt5-qtbase-5.15.16nb4
- qt5-qtx11extras-5.15.16nb2 qt5-qtxmlpatterns-5.15.16nb2 ruby32-base-3.2.8
- ruby32-cairo-1.18.4 ruby32-gdk3-4.2.7nb1 ruby32-gtk3-4.2.7nb1
- ruby32-httpclient-2.9.0 ruby32-nokogiri-1.18.7nb1 shared-mime-info-2.4nb5
- sqlite3-3.49.1nb3 sudo-1.9.16p2nb1 tiff-4.7.0nb1 uim-1.8.9nb19
- wayland-1.23.0nb6 xli-1.17.0nb15
+ at-spi2-core-2.54.0nb5 fossil-2.26 giflib-5.2.2nb1 harfbuzz-11.2.1 icewm-3.7.4
+ libXft-2.3.9 libcups-2.4.12 libgcrypt-1.11.1 libgpg-error-1.55
+ libjpeg-turbo-3.1.0nb1 libproxy-0.5.9nb6 libxml2-2.14.3 nanotodon-0.5.0nb2
+ pixman-0.46.0 pkgin-25.5.1 png-1.6.48 py312-setuptools-80.9.0 python312-3.12.11
+ ruby32-atk-4.2.9 ruby32-glib2-4.2.9 ruby32-gobject-introspection-4.2.9
+ ruby32-mikutter-5.1.1nb2 ruby32-nokogiri-1.18.8 ruby32-pkg-config-1.6.2
+ sayaka-3.8.2 sqlite3-3.49.2 sudo-1.9.16p2nb2 wayland-protocols-1.44
+ wget-1.25.0nb1
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -172,7 +167,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-05-07-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-13-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
