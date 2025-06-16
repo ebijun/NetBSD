@@ -1,0 +1,15 @@
+
+DIR=`ls -t|grep tmp20  |head -1|sed -e 's/://'`
+
+ARCH=evbppc
+MACHINE=Nintendo_Wii
+
+
+COMMAND=ls
+#COMMAND=diff 
+#COMMAND=cp
+
+echo ${COMMAND} ${DIR}/dmesg    ../dmesg/${ARCH}/${MACHINE}
+echo ${COMMAND} ${DIR}/pkginfo  pkginfo
+echo ${COMMAND} ${DIR}/sysinfo  sysinfo
+

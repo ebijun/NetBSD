@@ -1,8 +1,5 @@
-DATE=`date +%Y%m%d`
-
-cat << EOF
 To: port-powerpc%netbsd.org@localhost
-Subject: wii status update (${DATE})
+Subject: wii status update (20250616)
 
 Re: NetBSD on Nintendo Wii (PowerPC 750CL)
  https://mail-index.netbsd.org/port-powerpc/2024/01/27/msg003636.html
@@ -32,7 +29,7 @@ pkgsrc packages:
  http://cdn.netbsd.org/pub/NetBSD/misc/jun/evbppc/2025
 
 Version: 
- `uname -v`
+ NetBSD 10.99.14 (WII) #0: Sat May 10 18:58:53 UTC 2025  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbppc/compile/WII
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/evbppc/Nintendo_Wii
@@ -43,7 +40,9 @@ sysinfo:
 pkginfo:
  https://github.com/ebijun/NetBSD/blob/master/wii/pkginfo
 
+pkgchk.conf:
+ https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkgchk.conf
+  cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 --
 Jun Ebihara
-EOF
