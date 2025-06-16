@@ -40,9 +40,6 @@ sysinfo:
 pkginfo:
  https://github.com/ebijun/NetBSD/blob/master/wii/pkginfo
 
-pkgchk.conf:
- https://github.com/ebijun/NetBSD/blob/master/pinebook/Update/pkgchk.conf
-  cp pkgchk.conf /usr/pkgsrc;pkg_add pkg_chk; pkg_chk -au
 
 --
 Jun Ebihara
