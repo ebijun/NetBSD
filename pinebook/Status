@@ -109,164 +109,25 @@ ToDo:
  - internal WiFi
 
 sysinfo:
- bind-9.20.9 dhcpcd-10.2.3 libc-12.223 libssh-49.0 NetBSD-10.99.14 openssh-10.0
- opensshd-10.0 pkg_install-20250417 sh-20220122-20250525165907Z tzdata-2025bgtz
- userland-NetBSD-10.99.14/evbarm
- 
+ sh-20220122-20250615150932Z
+
 pkgsrc:
- GConf-3.2.5nb1 ImageMagick-7.1.1.47 ImageMagick6-6.9.13.3nb9 MesaLib-21.3.9nb5
- SDL2-2.32.6 SDL_image-1.2.12nb13 abseil-20250127.1 alsa-lib-1.2.14
- amtk-5.0.2nb14 apache-2.4.63nb2 appstream-1.0.4nb2 appstream-glib-0.8.3nb9
- apr-util-1.6.3nb8 arandr-0.1.11nb2 asciidoc-10.2.1nb5 asunder-3.0.1nb5
- at-spi2-core-2.54.0nb5 atril-1.26.2nb14 attica-0.4.2nb12 attica-qt5-5.116.0nb5
- audacious-4.1nb25 audacious-plugins-4.1nb46 autogen-5.18.16nb16
- automoc4-0.9.88nb33 babl-0.1.114 boost-libs-1.87.0nb2 cairo-1.18.4
- caja-1.26.4nb8 caja-dropbox-1.26.0nb12 caja-extensions-1.26.1nb21
- cbindgen-0.29.0 clang-19.1.7nb1 cmake-3.31.7nb2 cmus-2.10.0nb11
- cups-base-2.4.12 curl-8.13.0nb2 dbus-glib-0.114 deforaos-browser-0.5.5nb13
- deforaos-camera-0.3.0nb16 deforaos-editor-0.4.1nb16 deforaos-keyboard-0.4.0nb17
- deforaos-libdesktop-0.4.1nb13 deforaos-locker-0.4.2nb12
- deforaos-mixer-0.4.1nb12 deforaos-panel-0.4.3nb13 deforaos-pdfviewer-0.1.0nb36
- deforaos-phone-0.6.0nb18 dhcpcd-10.2.3 dialog-1.3.20240619
- djvulibre-lib-3.5.28nb1 dvipdfmx-20250205nb1 dvipsk-2025.1
- ebook-tools-0.2.2nb26 editline-3.1.20250104 emacs26-26.3nb50 enchant2-2.8.4
- eom-1.26.1nb16 fam-2.7.0nb10 farstream-0.2.9nb25 ffmpeg2-2.8.22nb8
- ffmpeg3-3.4.13nb8 ffmpeg4-4.4.5nb8 ffmpeg5-5.1.6nb8 ffmpeg6-6.1.2nb10
- ffmpeg7-7.1.1nb3 ffmpegthumbnailer-2.2.2nb8 firefox-138.0.4
- firefox-l10n-138.0.4 firefox52-52.9.0nb76 fltk13-1.3.11nb2 fluidsynth-2.4.6
- fmtlib-11.2.0 gconfmm-2.28.3nb38 gcr-3.40.0nb4 gd-2.3.3nb15
- gdk-pixbuf2-2.42.12nb1 gdk-pixbuf2-xlib-2.40.2nb5 gdl-3.34.0nb31
- gedit-3.36.2nb32 gegl-0.4.62 geocode-glib-3.26.2nb15 ghostscript-9.05nb43
- ghostscript-agpl-10.05.1 giflib-5.2.2nb1 gimp-3.0.4 git-base-2.49.0nb2
- glib-networking-2.80.0nb6 gnome-desktop-44.0nb8
- gnome-icon-theme-symbolic-3.12.0nb33 gnome-keyring-3.36.0nb13 gnupg2-2.4.8
- gnutls-3.8.9nb1 go-1.24.3 go123-1.23.9 go124-1.24.3 googletest-1.17.0
- gperf-3.2nb1 gpgme-1.24.3 grantlee-0.5.1nb12 graphviz-12.2.1
- gsftopkk-1.19.2nb16 gspell-1.8.4nb9 gssdp-1.6.2nb8 gst-plugins1-good-1.24.12nb2
- gtk-doc-1.34.0nb5 gtk2+-2.24.33nb30 gtk2-engines-2.20.2nb40
- gtk2-engines-murrine-0.98.2nb23 gtk3+-3.24.43nb9 gtk4-4.16.12nb3
- gtkmm-2.24.5nb26 gtkmm3-3.24.9nb9 gtksourceview3-3.24.11nb28
- gtksourceview4-4.8.4nb15 gtkspell-2.0.16nb45 gtkspell3-3.0.10nb18 gts-0.7.6nb5
- guile22-2.2.7nb7 gupnp-1.6.8nb2 gupnp-igd-1.6.0nb7 gvfs-1.6.7nb75
- harfbuzz-11.2.1 harfbuzz-icu-11.2.1 hwloc-1.11.13nb13 ibus-1.5.32 icewm-3.7.4
- icu-77.1 imlib2-1.12.3nb3 inih-60 jansson-2.14.1 jasper-4.2.5nb1 jwm-2.4.6nb3
- kauth-5.116.0nb6 kbookmarks-5.116.0nb6 kcodecs-5.116.0nb6
- kcompletion-5.116.0nb6 kconfig-5.116.0nb6 kconfigwidgets-5.116.0nb6
- kcoreaddons-5.116.0nb6 kcrash-5.116.0nb5 kdbusaddons-5.116.0nb6
- kdelibs4-4.14.38nb47 kdoctools-5.116.0nb5 kglobalaccel-5.116.0nb6
- kguiaddons-5.116.0nb5 ki18n-5.116.0nb6 kiconthemes-5.116.0nb6 kio-5.116.0nb8
- kitemmodels-5.116.0nb6 kitemviews-5.116.0nb6 kjobwidgets-5.116.0nb6
- knotifications-5.116.0nb9 kparts-5.116.0nb7 kpathsea-6.4.1 kplotting-5.116.0nb6
- kservice-5.116.0nb5 ktextwidgets-5.116.0nb6 kwallet-5.116.0nb7
- kwidgetsaddons-5.116.0nb6 kwindowsystem-5.116.0nb8 kxmlgui-5.116.0nb6
- lcms-1.19nb6 lcms2-2.16nb1 libXft-2.3.9 libabw-0.1.3nb26 libadwaita-1.6.1nb7
- libappindicator-12.10.0nb28 libatomic-13.2.0 libavif-1.3.0 libbluray-1.3.4nb9
- libcanberra-0.30nb19 libcares-1.34.5 libcdr-0.1.7nb19 libcmis-0.6.2nb3
- libcroco-0.6.13nb14 libcups-2.4.12 libdazzle-3.38.0nb19
- libdbusmenu-gtk3-16.04.0nb8 libdbusmenu-qt-0.9.3.16.04.20160218nb9
- libdbusmenu-qt5-0.9.3.16.04.20160218nb31 libde265-1.0.16 libdeflate-1.24
- libe-book-0.1.3nb35 libetonyek-0.1.10nb19 libffi-3.4.8 libfreehand-0.1.2nb27
- libgcrypt-1.11.1 libglade-2.6.4nb57 libgpg-error-1.55 libgsf-1.14.53nb5
- libgweather-40.0nb31 libgxps-0.2.2nb33 libhandy-1.8.0nb13 libheif-1.19.8
- libhighway-1.2.0 libical-3.0.20nb1 libindicator-12.10.1nb25 libixion-0.19.0nb4
- libjpeg-turbo-3.1.0nb1 libjxl-0.11.1nb3 libkactivities4-4.13.3nb45
- liblangtag-0.6.7nb5 liblqr-0.4.3 libmatekbd-1.26.1nb15 libmatemixer-1.26.1nb9
- libmateweather-1.26.3nb12 libmspub-0.1.4nb34 libnice-0.1.22nb7
- libnotify-0.8.4nb1 libpeas-1.26.0nb17 libproxy-0.5.9nb6 libpurple-2.14.14nb1
- libqxp-0.0.2nb28 libraw-0.21.1nb2 librsvg-2.59.2nb2 libshout-2.4.6nb2
- libsixel-1.8.6nb27 libsoup-2.74.3nb10 libsoup3-3.6.5nb1 libtheora-1.2.0nb1
- libunique-1.1.6nb43 libunwind-19.1.7nb1 libusb1-1.0.28 libuv-1.51.0
- libvisio-0.1.7nb29 libvpx-1.15.1 libwebp-1.5.0nb1 libwmf-0.2.8.4nb33
- libwnck-2.30.7nb12 libwnck3-3.36.0nb14 libxfce4ui-4.20.0nb2
- libxfce4util-4.20.1nb1 libxfce4windowing-4.20.2nb1 libxkbcommon-1.7.0nb6
- libxklavier-5.4nb17 libxml2-2.14.2nb2 libxslt-1.1.42nb4 libzmf-0.0.2nb36
- llvm-19.1.7 luatex-1.21.0 m17n-lib-1.8.0nb22 makeindexk-2.17nb2
- makejvf-20241229 marco-1.26.2nb10 mate-1.26.1nb17 mate-applets-1.26.1nb21
- mate-backgrounds-1.26.0nb12 mate-calc-1.26.0nb18 mate-common-1.26.0nb11
- mate-control-center-1.26.1nb15 mate-desktop-1.26.2nb9
- mate-icon-theme-1.26.0nb12 mate-icon-theme-faenza-1.20.0nb22
- mate-indicator-applet-1.26.0nb11 mate-media-1.26.2nb11 mate-menus-1.26.1nb9
- mate-netbook-1.26.0nb11 mate-notification-daemon-1.26.1nb15
- mate-panel-1.26.6nb9 mate-polkit-1.26.1nb11 mate-power-manager-1.26.1nb10
- mate-screensaver-1.26.2nb15 mate-sensors-applet-1.26.0nb11
- mate-session-manager-1.26.1nb10 mate-settings-daemon-1.26.1nb17
- mate-terminal-1.26.1nb9 mate-themes-3.22.24nb9 mate-utils-1.26.1nb9
- medit-1.2.0nb39 mendexk-3.8 meson-1.8.1 minitube-3.9.3nb14 mkvtoolnix-92.0
- mlterm-3.9.4nb2 mng-2.0.3nb1 mozjs78-78.15.0nb14 mozo-1.26.2nb12 mpv-0.40.0nb1
- mupdf-1.24.10nb7 neon-0.33.0nb7 netpbm-11.02.09nb6 nghttp2-1.65.0nb1
- nghttp3-1.9.0 nginx-1.28.0nb1 ngtcp2-1.12.0 nodejs-24.1.0 nss-3.110nb1
- onscripter-20230825nb3 openal-soft-1.24.3 openexr-3.3.3
- openjdk17-1.17.0.13.11nb3 openjdk8-1.8.432nb3 openjpeg-2.5.3nb1 orcus-0.19.2nb3
- osabi-NetBSD-10.99.14 osg-3.6.5nb68 p5-URI-5.32 pango-1.56.3 perl-5.40.2
- phonon-4.10.3nb19 phonon-qt5-4.11.1nb26 php74-7.4.33nb3 pixman-0.46.0
- pkg_chk-2.0.13 pkg_rolling-replace-0.24.15 pkgconf-2.4.3nb1 pkgin-25.5.1
- pluma-1.26.1nb17 png-1.6.48 podofo-0.9.8nb5 polkit-qt-0.112.0nb10
- polkit-qt5-0.200.0nb6 poppler-24.10.0nb8 poppler-cpp-24.10.0nb6
- poppler-includes-24.10.0nb6 poppler-utils-24.10.0nb7 protobuf-29.4 ps2eps-1.70
- ptexenc-1.5.1 py-cairo-shared-1.28.0 py27-gtk2-2.24.0nb57 py312-OpenSSL-25.1.0
- py312-Pillow-11.2.1nb2 py312-Socks-1.7.1nb2 py312-anytree-2.13.0
- py312-babel-2.17.0nb1 py312-cairo-1.28.0 py312-certifi-2025.4.26
- py312-cffi-1.17.1nb1 py312-chardet-5.2.0nb2 py312-charset-normalizer-3.4.2
- py312-cparser-2.22nb2 py312-cryptodome-3.23.0 py312-cryptography-45.0.2
- py312-cython-3.1.1 py312-defusedxml-0.7.1nb2 py312-glad2-2.0.8nb1
- py312-imagesize-1.4.1nb1 py312-importlib-metadata-8.7.0 py312-libxml2-2.14.2nb1
- py312-libxslt-1.1.42nb4 py312-lxml-5.4.0 py312-mako-1.3.10 py312-markdown-3.8
- py312-markupsafe-3.0.2nb2 py312-more-itertools-10.7.0 py312-numpy-2.2.6
- py312-packaging-25.0 py312-pbr-6.1.1nb1 py312-pdf-5.5.0 py312-pip-25.1.1
- py312-pluggy-1.6.0 py312-pspdfutils-3.3.10 py312-puremagic-1.29
- py312-py-1.11.0nb2 py312-pyparsing-3.2.3 py312-pytz-2025.2nb1
- py312-requests-2.32.3nb2 py312-roman-5.0nb1 py312-scour-0.38.2nb4
- py312-setuptools-80.8.0 py312-setuptools_scm-8.3.1 py312-snowballstemmer-3.0.1
- py312-sphinxcontrib-jsmath-1.0.1nb2 py312-toml-0.10.2nb4
- py312-typing-extensions-4.13.2 py312-urllib3-2.4.0 py312-wcwidth-0.2.13nb2
- python27-2.7.18nb21 python310-3.10.17nb1 python311-3.11.12nb1
- python312-3.12.10nb1 python39-3.9.22nb1 qalculate-5.1.1nb5 qca2-2.2.1nb8
- qca2-qt5-2.3.8nb6 qimageblitz-0.0.6nb29 qjson-0.8.1nb11 qmmp-1.7.4nb4
- qt4-libs-4.8.7nb51 qt4-qdbus-4.8.7nb12 qt4-tools-4.8.7nb14
- qt5-qtbase-5.15.16nb4 qt5-qtdeclarative-5.15.16nb3 qt5-qtlocation-5.15.16nb2
- qt5-qtmultimedia-5.15.16nb3 qt5-qtscript-5.15.16nb3 qt5-qtsensors-5.15.16nb2
- qt5-qtserialport-5.15.16nb2 qt5-qtspeech-5.15.16nb3 qt5-qtsvg-5.15.16nb2
- qt5-qttools-5.15.16nb4 qt5-qtwayland-5.15.16nb2 qt5-qtwebchannel-5.15.16nb2
- qt5-qtwebsockets-5.15.16nb2 qt5-qtx11extras-5.15.16nb2
- qt5-qtxmlpatterns-5.15.16nb2 qt6-qtbase-6.8.3nb3 qt6-qtdeclarative-6.8.3nb2
- qt6-qtimageformats-6.8.3nb2 qt6-qtlanguageserver-6.8.3nb2
- qt6-qtmultimedia-6.8.3nb3 qt6-qtquick3d-6.8.3nb2 qt6-qtquicktimeline-6.8.3nb2
- qt6-qtshadertools-6.8.3nb2 qt6-qtsvg-6.8.3nb2 raptor2-2.0.16nb10
- rarian-0.8.5nb4 rasqal-0.9.33nb38 rclone-1.69.2 re2c-4.2 redland-1.0.17nb46
- rhash-1.4.6 ruby31-base-3.1.7 ruby32-base-3.2.8 ruby32-gdk3-4.2.7nb1
- ruby32-gdk_pixbuf2-4.2.7nb1 ruby32-gtk3-4.2.7nb1 ruby32-mikutter-5.1.1nb2
- ruby32-mini_portile2-2.8.9 ruby32-nokogiri-1.18.8 ruby32-pkg-config-1.6.2
- ruby32-public_suffix-6.0.2 ruby32-red-datasets-0.2.0 ruby32-version_gem-1.1.8
- rust-1.85.1nb3 samba-4.21.3nb4 scim-1.4.17nb16 scribus-1.6.2nb17 serf-1.3.10nb3
- shared-mime-info-2.4nb5 solid-5.116.0nb6 sonnet-5.116.0nb6 spdlog-1.15.3
- sqlite3-3.49.2 strigi-0.7.8nb64 sudo-1.9.16p2nb2 sylpheed-3.7.0nb21
- tcl-8.6.16nb2 telepathy-glib-0.24.1nb38 tepl4-4.4.0nb25 tex-adjustbox-1.3c
- tex-amsmath-2.17t tex-auto-pst-pdf-0.7 tex-babel-25.7 tex-csquotes-5.2o
- tex-dvipdfmx-2025 tex-enumitem-3.11 tex-environ-0.3 tex-epstopdf-2.36
- tex-etoolbox-2.5l tex-extractbb-1.1.0 tex-fancyhdr-5.2 tex-firstaid-1.1j
- tex-fontspec-2.9e tex-graphics-1.4g tex-graphics-def-2024
- tex-haranoaji-20231009.2 tex-hyperref-7.01l tex-hyph-utf8-2025
- tex-hyphen-base-2025 tex-iftex-1.0g tex-japanese-otf-20250218 tex-kpathsea-2025
- tex-l3backend-2025 tex-l3kernel-2025 tex-l3packages-2025 tex-latex-20241101
- tex-latex-base-dev-20250601pre3 tex-latex-bin-2025 tex-latex-firstaid-dev-1.1n
- tex-luaotfload-3.29 tex-luatex-1.21.0 tex-needspace-1.3e tex-oberdiek-2024
- tex-pdfcrop-1.42 tex-platex-2025 tex-preview-14.0.6 tex-pslatex-1.3
- tex-pst-pdf-1.2f tex-pstricks-3.21 tex-standalone-1.5a tex-tex-ini-files-2025
- tex-texlive-scripts-2025 tex-texlive-scripts-doc-2025
- tex-texlive-scripts-extra-2024 tex-texlive.infra-2025 tex-titlesec-2.17
- tex-tlshell-2025 tex-tools-20241102 tex-unicode-data-1.18
- texlive-collection-basic-2025 tiff-4.7.0nb1 tigervnc-1.15.0.1.20.13nb2
- uim-1.8.9nb19 upmendex-1.11 upower-1.90.9nb2 vala-0.56.18 vcdimager-2.0.1nb14
- vorbis-tools-1.4.2nb16 vte-0.28.1nb39 vte3-0.76.4nb8 w3m-0.5.3.0.20230121nb6
- wayland-1.23.0nb6 wayland-protocols-1.44 web2c-2025 webkit-gtk-2.36.8nb24
- wget-1.25.0nb1 woff2-1.0.2nb3 wxGTK30-3.0.5.1nb20 wxGTK32-3.2.8 xapian-1.4.29
- xdvik-22.87.06nb5 xfce4-appfinder-4.20.0nb2 xfce4-conf-4.20.0nb2
- xfce4-desktop-4.20.1nb2 xfce4-exo-4.20.0nb2 xfce4-garcon-4.20.0nb2
- xfce4-mousepad-0.6.3nb7 xfce4-orage-4.20.1nb2 xfce4-panel-4.20.3nb1
- xfce4-session-4.20.0nb2 xfce4-settings-4.20.1nb2 xfce4-terminal-1.1.4nb1
- xfce4-thunar-4.20.2nb1 xfce4-tumbler-4.20.0nb4 xfce4-wm-4.20.0nb1
- xfce4-wm-themes-4.10.0nb29 xkanon-090830nb14 xli-1.17.0nb15 xmlto-0.0.28nb15
- xscreensaver-6.09nb2 xterm-398 yelp-tools-42.1nb6 zenity3-3.44.4nb4
+ SDL2-2.32.8 appstream-1.0.5 assimp-6.0.1 coreutils-9.6nb1 curl-8.14.1
+ cyrus-sasl-2.1.28nb2 dhcpcd-10.2.4 editline-3.1.20250104nb1 enchant2-2.8.6
+ fossil-2.26 gdbus-codegen-2.84.2 gimp-3.0.4nb1 glib2-2.84.2 glib2-tools-2.84.2
+ go-1.24.4 go123-1.23.10 go124-1.24.4 gtk4-4.16.13 libass-0.17.4
+ libmikmod-3.3.13 libusb1-1.0.29 libxml2-2.14.3 libxslt-1.1.43nb4 mpg123-1.33.0
+ nghttp3-1.10.1 nginx-1.28.0nb2 ngtcp2-1.13.0 nodejs-24.2.0 nss-3.112
+ perl-5.40.2nb1 php74-7.4.33nb4 pkg_install-20250417 py312-cryptography-45.0.4
+ py312-cython-3.1.2 py312-libxml2-2.14.3 py312-libxslt-1.1.43nb4 py312-pdf-5.6.0
+ py312-pip-25.1.1nb1 py312-requests-2.32.4 py312-setuptools-80.9.0
+ py312-typing-extensions-4.14.0 python310-3.10.18 python311-3.11.13
+ python312-3.12.11 python39-3.9.23 qt6-qtquick3d-6.8.3nb3 rclone-1.69.3nb1
+ ruby32-atk-4.2.9 ruby32-cairo-gobject-4.2.9 ruby32-gdk3-4.2.9
+ ruby32-gdk_pixbuf2-4.2.9 ruby32-gio2-4.2.9 ruby32-glib2-4.2.9
+ ruby32-gobject-introspection-4.2.9 ruby32-gtk3-4.2.9 ruby32-pango-4.2.9
+ ruby32-snaky_hash-2.0.3 samba-4.21.6 xterm-399
+
 Tips:
 - System Clocks
  % sysctl -a |grep freq
