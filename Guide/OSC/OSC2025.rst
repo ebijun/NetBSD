@@ -59,7 +59,7 @@ NetBSDからZOOM等の会議に参加するためには、以下の手順をと�
 OSCこの一年
 --------------
 
-2024年まとめ
+2025年まとめ
 ^^^^^^^^^^^^
 
 - 日本全国各地で10回+オンライン開催6回+ODC開催 
@@ -70,21 +70,22 @@ OSCこの一年
  :widths: 10 40 10 20 30 30
 
  回数,イベント,日付,参加者,参加グループ,参加したら1
- 229,2024 Osaka,1/27,220,32,1
- 230,2024 Online/Spring,3/1-2,312,20,1
- 231,2024 Tokyo/Spring,3/10,530,48,1
- 232,2024 Nagoya,5/25,250,36,1
- 233,2024 Hokkaido,6/29,400,34,1
- 234,2024 Kyoto,7/27,330,38,1
-    ,2024 ODC,9/7,170,10,1
- 235,2024 Hiroshima,9/29,113,17,1
- 236,2024 Nagaoka,10/12,93,14,1
- 237,2024 Online/Fall,10/19,203,15,1
- 238,2024 Tokyo/Fall,10/26,300,47,1
- 239,2024 Shimane,11/2,50,9,1
- 240,2024 Yamaguchi,11/9,40,,
- 241,2024 Ehime,11/16,50,9,1
- 242,2024 Fukuoka,12/7,,1
+ 233,,2024 Hokkaido,6/29,400,34,1
+ 234,,2024 Kyoto,7/27,330,38,1
+ ,,ODC ,9/7,170,10,参加
+ 235,,2024 Hiroshima,9/29,113,17,1
+ 236,,2024 Nagaoka,10/12,93,14,1
+ 237,,2024 Online/Fall,10/18-19,203,15,1
+ 238,,2024 Tokyo/Fall,10/26,300,47,1
+ 239,,2024 Shimane,11/2,50,9,1
+ 240,,2024 Yamaguchi,11/9,40,,
+ 241,,2024 Ehime,11/16,65,18,1
+ 242,,2024 Fukuoka,12/7,220,19,1
+ 243,,2025 Osaka,1/25,200,25,1
+ 244,,2025 Tokyo/Spring,2/21-22,850,65,1
+ 245,,2025 Shirahama,5/17,76,,DNF
+ 246,,2025 Nagoya,5/31,320,37,1
+ 247,,2025 Shimane,6/21,120,17,1
 
 togetterアクセスで見たNetBSDブース
 -----------------------------------
@@ -97,18 +98,20 @@ togetterのアクセスログは以下の場所にあります。
 .. csv-table::
  :widths: 120 60 10
 
- OSC2024 Fukuoka ,https://togetter.com/li/2474850,144
- 2024/10-11 ,https://togetter.com/li/2456931,920
- OSC2024 Nagaoka & Fall ,https://togetter.com/li/2446541,993
- OSC2024 Hiroshima ,https://togetter.com/li/2437595,1235
- ODC2024,https://togetter.com/li/2423438,667
- OSC2024 Kyoto,https://togetter.com/li/2403819,803
- OSC2024 Hokkaido,https://togetter.com/li/2377329,901
- OSC2024 Nagoya,https://togetter.com/li/2359557,1159
- AsiaBSDCon 2024,https://togetter.com/li/2337258,766
- OSC2024 Spring,https://togetter.com/li/2314715,1069
- OSC2024 Osaka ,https://togetter.com/li/2298407,1587
- OSC2023 Fukuoka,https://togetter.com/li/2271317,750
+ OSC2025 Hokkaido ,https://posfie.com//@ebijun/p/jobKi6a,36
+ OSC2025 Shimane ,https://posfie.com//@ebijun/p/plRcVrG,284
+ OSC2025 Shirahama&Nagoya ,https://posfie.com//@ebijun/p/mSFyoC4,403
+ AsiaBSDCon-Lite in Tokyo,https://posfie.com//@ebijun/p/BxNgldk,331
+ OSC2025 Tokyo/Spring,https://posfie.com//@ebijun/p/AeMxGBR,766
+ OSC2025 Osaka ,https://posfie.com//@ebijun/p/EUD3bz3,904
+ OSC2024 Fukuoka ,https://posfie.com//@ebijun/p/5vkKc1V,631
+ 2024/10-11 ,https://posfie.com//@ebijun/p/OdRTPcq,1487
+ OSC2024 Nagaoka & Fall,https://posfie.com//@ebijun/p/asBFcLt,1342
+ OSC2024 Hiroshima,https://posfie.com//@ebijun/p/mk23csW,1423
+ ODC2024,https://posfie.com//@ebijun/p/vwUWA40,786
+ OSC2024 Kyoto ,https://posfie.com//@ebijun/p/QvpvCT4,1064
+ OSC2024 Hokkaido,https://posfie.com//@ebijun/p/ew5jXWs,1219
+
 
 netbsd-advocacyメーリングリストへの報告
 --------------------------------------------
@@ -140,6 +143,9 @@ NetBSD観光ガイド作成
 .. csv-table::
  :widths: 10 20 100
 
+ 212,OSC2025北海道, http://www.re.soum.co.jp/~jun/OSC2025hokkaido.pdf
+ 212,OSC2025島根, http://www.re.soum.co.jp/~jun/OSC2025shimane.pdf
+ 211,OSC2025名古屋,http://www.re.soum.co.jp/~jun/OSC2025nagoya.pdf
  210,OSC2025東京春, http://www.re.soum.co.jp/~jun/OSC2025tokyospring.pdf 
  209,OSC2024大阪, http://www.re.soum.co.jp/~jun/OSC2025osaka.pdf 
  208,OSC2024福岡, http://www.re.soum.co.jp/~jun/OSC2024fukuoka.pdf 
@@ -152,9 +158,6 @@ NetBSD観光ガイド作成
  201,ODC2024,http://www.re.soum.co.jp/~jun/ODC2024.pdf
  200,OSC2024京都,http://www.re.soum.co.jp/~jun/OSC2024kyoto.pdf
  199,OSC2024北海道,http://www.re.soum.co.jp/~jun/OSC2024hokkaido.pdf
- 198,OSC2024名古屋,http://www.re.soum.co.jp/~jun/OSC2024nagoya.pdf
- 197,OSC2024東京春, http://www.re.soum.co.jp/~jun/OSC2024tokyospring.pdf
- 196,OSC2024大阪, http://www.re.soum.co.jp/~jun/OSC2024osaka.pdf 
 
 旅費
 --------
@@ -187,9 +190,13 @@ NetBSD観光ガイド作成
  2024/12,OSC福岡,35789,1886
  2025/1,OSC大阪,28464,0
  2025/2,OSC東京春,500,0
+ 2025/5,OSC白浜,2600,0
+ 2025/5,OSC名古屋,21494,0
+ 2025/6,OSC島根,50014,0
+ 2025/7,OSC北海道,32781,0
 
 2025年
 -------------
 
-OSCは2025/1/25のOSC 大阪(https://event.ospn.jp/osc2025-osaka/)からはじまります。ブース展示/ミーティング時間での発表を歓迎します。
+OSCは2025/1/25のOSC 大阪(https://event.ospn.jp/osc2025-osaka/)からはじまります。ブース展示/ミーティング時間での発表/差し入れ等を歓迎します。
 
