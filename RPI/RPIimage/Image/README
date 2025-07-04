@@ -17,7 +17,8 @@ https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-13-earmv6hf/MD5
 Update:
 - fstab
   To resize_root,disable log from /etc/fstab.
-- libgtop: failed.
+- bash should use --without-bash-malloc option
+ libgtop: failed.
  checking for X... 
  malloc: make_cmd.c:658: assertion botched
  realloc: underflow detected; mh_nbytes out of range
