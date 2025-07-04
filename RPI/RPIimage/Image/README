@@ -17,6 +17,7 @@ https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-13-earmv6hf/MD5
 Update:
 - fstab
   To resize_root,disable log from /etc/fstab.
+
 - bash should use --without-bash-malloc option
  libgtop: failed.
  checking for X... 
@@ -24,6 +25,11 @@ Update:
  realloc: underflow detected; mh_nbytes out of range
  Aborting...[1]   Abort trap (core dumped) /usr/bin/env INSTALL=/usr/bin/install -c -o ro...
  *** Error code 134
+
+ and add --tag=CC on Makefile
+ pkgsrc/sysutils/libgtop/work.earmv7hf/libgtop-2.28.4/src/daemon/Makefile
+ pkgsrc/sysutils/libgtop/work.earmv7hf/libgtop-2.28.4/examples/Makefile
+ LINK = $(LIBTOOL) --tag=CC --mode=link $(CC) $(CFLAGS) $(LDFLAGS) ..
 
 - add net/nanotodon
   Nanotodon is a light-weight CUI/C99 mastodon client.
