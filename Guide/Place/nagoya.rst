@@ -137,7 +137,7 @@ NBUG例会この一年
  ロンドベル,浄心,珈琲豆と鳩時計がめぐりあい宇宙。万代町はプラモ狂四郎の舞台。
  稲永スリップ跡,野蒜,愛知航空機永徳機体工場スリップ跡。
  ウニタ書店,今池,スタービルに移転
-
+ Calla's,蒲郡,ウィスキー大充実
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -205,8 +205,62 @@ OSC名古屋展示物
 #. samtk
 
 
-
 オープンソースカンファレンス2024 Nagoya&NBUG5月例会
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2024/05/25/DSC_3142.JPG
+.. image::  ../Picture/2024/05/25/DSC_3143.JPG
+.. image::  ../Picture/2024/05/25/DSC_3144.JPG
+.. image::  ../Picture/2024/05/25/DSC_3145.JPG
+.. image::  ../Picture/2024/05/25/DSC_3146.JPG
+.. image::  ../Picture/2024/05/25/DSC_3147.JPG
+.. image::  ../Picture/2024/05/25/DSC_3148.JPG
+.. image::  ../Picture/2024/05/25/DSC_3149.JPG
+.. image::  ../Picture/2024/05/25/DSC_3150.JPG
+.. image::  ../Picture/2024/05/25/DSC_3151.JPG
+.. image::  ../Picture/2024/05/25/DSC_3152.JPG
+.. image::  ../Picture/2024/05/25/DSC_3153.JPG
+.. image::  ../Picture/2024/05/25/DSC_3154.JPG
+.. image::  ../Picture/2024/05/25/DSC_3155.JPG
+.. image::  ../Picture/2024/05/25/DSC_3156.JPG
+.. image::  ../Picture/2024/05/25/DSC_3157.JPG
+.. image::  ../Picture/2024/05/25/DSC_3158.JPG
+.. image::  ../Picture/2024/05/25/DSC_3159.JPG
+.. image::  ../Picture/2024/05/25/DSC_3160.JPG
+.. image::  ../Picture/2024/05/25/DSC_3161.JPG
+.. image::  ../Picture/2024/05/25/DSC_3162.JPG
+.. image::  ../Picture/2024/05/25/DSC_3163.JPG
+.. image::  ../Picture/2024/05/25/DSC_3164.JPG
+.. image::  ../Picture/2024/05/25/DSC_3165.JPG
+.. image::  ../Picture/2024/05/25/DSC_3166.JPG
+.. image::  ../Picture/2024/05/25/DSC_3167.JPG
+.. image::  ../Picture/2024/05/25/DSC_3168.JPG
+.. image::  ../Picture/2024/05/25/DSC_3169.JPG
+.. image::  ../Picture/2024/05/25/DSC_3170.JPG
+.. image::  ../Picture/2024/05/25/DSC_3171.JPG
+.. image::  ../Picture/2024/05/25/DSC_3172.JPG
+.. image::  ../Picture/2024/05/25/DSC_3173.JPG
+.. image::  ../Picture/2024/05/25/DSC_3174.JPG
+.. image::  ../Picture/2024/05/25/DSC_3175.JPG
+.. image::  ../Picture/2024/05/25/DSC_3176.JPG
+.. image::  ../Picture/2024/05/25/DSC_3177.JPG
+.. image::  ../Picture/2024/05/25/DSC_3178.JPG
+.. image::  ../Picture/2024/05/25/DSC_3179.JPG
+.. image::  ../Picture/2024/05/25/DSC_3180.JPG
+.. image::  ../Picture/2024/05/25/DSC_3181.JPG
+.. image::  ../Picture/2024/05/25/DSC_3182.JPG
+.. image::  ../Picture/2024/05/25/DSC_3183.JPG
+.. image::  ../Picture/2024/05/25/DSC_3184.JPG
+.. image::  ../Picture/2024/05/25/DSC_3186.JPG
+.. image::  ../Picture/2024/05/25/DSC_3189.JPG
+.. image::  ../Picture/2024/05/25/DSC_3190.JPG
+.. image::  ../Picture/2024/05/25/DSC_3194.JPG
+.. image::  ../Picture/2024/05/25/DSC_3196.JPG
+.. image::  ../Picture/2024/05/25/DSC_3197.JPG
+.. image::  ../Picture/2024/05/25/DSC_3198.JPG
+.. image::  ../Picture/2024/05/25/DSC_3199.JPG
+
+オープンソースカンファレンス2023 Nagoya&NBUG5月例会
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image::  ../Picture/2023/05/28/DSC_1348.JPG

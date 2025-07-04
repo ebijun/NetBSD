@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2025 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -51,7 +51,8 @@
  2018,11/23,100,19,松江テルサ
  2019,9/28,150,19,松江テルサ
  2023,10/28,100,18,松江テルサ
- 2024,11/2,,,島根県民会館 
+ 2024,11/2,50,9,島根県民会館 
+ 2025,6/21,,,松江テルサ
  
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +64,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
-
+ 212,OSC2025島根,http://www.re.soum.co.jp/~jun/OSC2025shimane.pdf 
  205,OSC2024島根,http://www.re.soum.co.jp/~jun/OSC2024shimane.pdf 
  191,OSC2023島根,http://www.re.soum.co.jp/~jun/OSC2023shimane.pdf
  147,OSC2019島根,http://www.re.soum.co.jp/~jun/OSC2019shimane.pdf
@@ -82,7 +83,7 @@ togetterまとめ
 
 .. csv-table::
  :widths: 80 80
-
+ OSC2025島根 NetBSDブース展示の記録,https://posfie.com/@ebijun/p/plRcVrG
  OSC2024島根 NetBSDブース展示の記録,https://togetter.com/li/2456931
  OSC2023島根 NetBSDブース展示の記録,https://togetter.com/li/2247549
  OSC2019島根 NetBSDブース展示の記録,https://togetter.com/li/1409871
@@ -105,6 +106,7 @@ togetterまとめ
 .. csv-table::
  :widths: 30 25 60
 
+ 橘屋そば店,東本町2-64,あごの焼きと豊の秋と割子そばとかつ丼
  らーめんとんてき大翔,殿町３３３,ラーテキセット
  Imagine.coffee,伊勢宮,ひつじ製菓とのペアリングとか。
  S-PARK,松江駅,ビアへるん+島根日本酒全種類　十旭日(じゅうじあさひ)
@@ -112,7 +114,7 @@ togetterまとめ
  松江地ビール館,遊覧船発着場,ビアへるん。1730までだからすぐ行く。
  ミートショップきたがき,西茶町,ビーフコロッケとミンチカツ
  しまね映画祭,,砂の器 35mm上映
- NAKEDSPACE,末次本町京店77,2024/11/9 神在音楽祭
+ NAKEDSPACE,末次本町京店77,2025/6/21 CITY VIBES VOL.6
  山陰ケーブルビジョン,,鷹の爪団を放映しつづけている
  島根県立石見美術館,益田,内藤廣展
  LOVE YOUR NEIGHBOR,売布神社前,クラフトビールとハンバーガー。臨時休業中?
@@ -121,7 +123,6 @@ togetterまとめ
  ちくてい,,ラーメン
  ベニヤ模型,末次本町,http://www5e.biglobe.ne.jp/~beniya-m/
  EAD,松江大橋,リニューアル前は、とりあえずを頼むととりあえずが出て来た。
- デンゲンパーツ,くにびきメッセ隣,電子部品・無線機屋 閉店
  たぬき堂書店,伊勢宮,昭和初期地元書籍多数
  國暉酒造,東茶街,蔵しっく館
  島根県立美術館,宍道湖畔,ベルギー近代美術の精華展
@@ -129,7 +130,6 @@ togetterまとめ
  服部珈琲工房,市内,冬珈琲 黒田店はオフハウス近く。朝粥モーニング
  国際宇宙・生物研究所,東横イン裏,エドゥリスリオハ白
  ホーランエンヤ,城山稲荷神社,OSC2009のときサンライズから見た
- ジャズバーぽえむ,松江大橋,園山ビル2F。4344がある。閉店。
  三英堂,浜乃木,若草を買う。
  赤べこ,朝日町交差点,上寿司、煮物、大将がX68の偉い人に面影が
  じう,ハイカラビル,日本酒バー
@@ -148,6 +148,9 @@ togetterまとめ
 .. csv-table::
  :widths: 30 20 60
 
+ 鳥取県立美術館,倉吉,9:00-17:00 2025/7/19- 水木しげるの妖怪 百鬼夜行展
+ ボルゾイ・レコード,鳥取駅前,鳥取市新町201 12:00-20:00
+ SHEEPSHEEP BOOKS,鳥取駅前,鳥取市元町１２１ 12:00-19:00
  475ビール,富士見町,JAPBrewery
  焼きそば樫 ,河原町,復活！！俺の愛を焼きそばに込めてFor you。
  おはよう堂,鳥取市公設卸売市場,魚定食26種類
@@ -217,6 +220,27 @@ OSC松江展示物
 #. OMRON LUNAII
 #. Sun Java Station
 
+2024年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2024/11/01/IMG20241101223455.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102091441.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102093925.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102115422.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102115428.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102115850.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102120833.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102120840.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102121915.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102122246.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102122252.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102122449.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102122454.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102122457.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102122639.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102122755.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102122824.jpg
+.. image::  ../Picture/2024/11/02/IMG20241102145756.jpg
 
 2023年
 ~~~~~~~~~~~~~~~~~~

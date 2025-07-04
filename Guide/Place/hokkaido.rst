@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2025 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -39,6 +39,7 @@
 .. csv-table::
  :widths: 30 20 60
  
+ まだ名前のない喫茶店,石山通,11:00-19:00 札幌市南区南３１条西１０丁目１−１３
  枯淡珈琲,南1西13,11:00-18:30LO
  俊カフェ,南3西7,11:00-18:00 谷川俊太郎さん公認
  MEN-EIJI,平岸2-11,いつもストーンズが流れている
@@ -65,7 +66,7 @@
  サッポロジンギスカン,南6西6,移転しました。ジンギスカン鍋自動掃除ロボットは必見。
  ホールステアーズ,南3西3,いつも一番最後に行く宮越屋。
  ブラウンブックスカフェ,南3西7,Cafe と Vintage
- イエロー,スガイビル裏,ラムカレーとかピリカワッカのスタウト豚ロースのすき煮風スープカリー
+ イエロー,南1西4,ラムカレーとかピリカワッカのスタウト豚ロースのすき煮風スープカリー
  丸大ビル,南2西1,ニャル子さん本拠地のアニメイトとメロンブックス5社連動。
  麦酒停,中島公園,壁一面にビール缶が。Rogueとかmikkelerとかある。北海道生活参照。
  米風亭,ブラウンブックスカフェ近く,ヒューガルデンと油そばおみやげ。
@@ -152,7 +153,9 @@
  2022 Hokkaido,6/25,325,18,オンライン開催
  2023 Hokkaido,6/17,225,15,オンライン開催
  2023 Hokkaido,6/24,278,30,札幌市産業振興センター
- 2024 Hokkaido,6/29,,,札幌市産業振興センター
+ 2024 Hokkaido,6/29,400,34,札幌市産業振興センター
+ 2025 Hokkaido,7/5,,,札幌市産業振興センター
+ 
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -165,6 +168,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
 
+ 213.,OSC2025北海道,http://www.re.soum.co.jp/~jun/OSC2025hokkaido.pdf
  199.,OSC2024北海道,http://www.re.soum.co.jp/~jun/OSC2024hokkaido.pdf
  187.,OSC2023北海道,http://www.re.soum.co.jp/~jun/OSC2023hokkaido.pdf
  177.,OSC2022北海道,http://www.re.soum.co.jp/~jun/OSC2022hokkaido.pdf
@@ -185,6 +189,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2025北海道 NetBSDブース展示の記録,https://posfie.com/@ebijun/p/jobKi6a
  OSC2024北海道 NetBSDブース展示の記録,https://togetter.com/li/2377329
  OSC2023北海道 NetBSDブース展示の記録,https://togetter.com/li/2165257
  OSC2022北海道 NetBSDブース展示の記録,https://togetter.com/li/1905889
@@ -227,6 +232,30 @@ OSC北海道展示物
 #. NetBSD/Zaurus
 #. Making install-image Presentation by つついさん
   http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html
+
+
+2024年
+^^^^^^^^^^
+
+.. image::  ../Picture/2024/06/29/IMG20240629093207.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629093216.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629093758.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629100654.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629103400.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629111115.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629111146.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629124820.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629133651.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629152241.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629152244.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629152248.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629152255.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629152259.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629160807.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629171120.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629175920.jpg
+.. image::  ../Picture/2024/06/29/IMG20240629183339.jpg
+
 
 2023年
 ^^^^^^^^^^
