@@ -59,6 +59,7 @@ mlfc コマンドを実行すると、true typeフォントを検索して、
  Updating /home/jun/.mlterm/aafont
  Updating /home/jun/.mlterm/font-fb
 
+
 起動
 -----------
 
@@ -70,6 +71,9 @@ mlfc コマンドを実行すると、true typeフォントを検索して、
  Shift-F1: 画面横分割
  Shift-F2: 画面縦分割
  Shift-F3: 画面移動
+ % mlterm-wscons -p RPI2.png --contrast 70
+ 背景をRPI2.pngにします。コントラストを70%に設定します。
+
 
 PCでのmlterm-fb起動
 -----------------------
