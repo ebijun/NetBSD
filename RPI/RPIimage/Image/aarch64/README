@@ -16,15 +16,13 @@ https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-10-aarch64/MD5
 
 Topics:
 - libreoffice build failed:
-<command-line>: note: this is the location of the previous definition
-{standard input}: Assembler messages:
-{standard input}:23: Error: previous CFI entry not closed (missing .cfi_endproc)
-{standard input}:58: Error: CFI instruction used without previous .cfi_startproc
-{standard input}:59: Error: CFI instruction used without previous .cfi_startproc
-{standard input}:60: Error: CFI instruction used without previous .cfi_startproc
-{standard input}:61: Error: CFI instruction used without previous .cfi_startproc
-{standard input}:63: Error: .cfi_endproc without corresponding .cfi_startproc
-gmake[1]: *** [/mnt/aarch64/pkgsrc/misc/libreoffice/work.aarch64/libreoffice-25.2.0.3/solenv/gbuild/LinkTarget.mk:367: /mnt/aarch64/pkgsrc/misc/libreoffice/work.aarch64/libreoffice-25.2.0.3/workdir/GenCObject/UnpackedTarball/mariadb-connector-c/libmariadb/ma_context.o] Error 1
+ pkgsrc/misc/libreoffice/work.aarch64/libreoffice-25.2.4.3/workdir/UnpackedTarball/pdfium/core/fxcrt/numerics/safe_conversions.h:43:32: warning: unused parameter 'value' [-Wunused-parameter]
+   43 |   static constexpr bool Do(Src value) {
+      |                            ~~~~^~~~~
+gmake: *** [Makefile:178: Executable_gengal] Error 2
+*** Error code 2
+
+add (void)value;
 
 - add net/nanotodon
   Nanotodon is a light-weight CUI/C99 mastodon client.
