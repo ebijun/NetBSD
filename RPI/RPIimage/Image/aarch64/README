@@ -16,14 +16,32 @@ https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-10-aarch64/MD5
 
 Topics:
 - libreoffice build failed:
- pkgsrc/misc/libreoffice/work.aarch64/libreoffice-25.2.4.3/workdir/UnpackedTarball/pdfium/core/fxcrt/numerics/safe_conversions.h:43:32: warning: unused parameter 'value' [-Wunused-parameter]
+1. pkgsrc/misc/libreoffice/work.aarch64/libreoffice-25.2.4.3/workdir/UnpackedTarball/pdfium/core/fxcrt/numerics/safe_conversions.h:43:32: warning: unused parameter 'value' [-Wunused-parameter]
    43 |   static constexpr bool Do(Src value) {
       |                            ~~~~^~~~~
 gmake: *** [Makefile:178: Executable_gengal] Error 2
 *** Error code 2
 
-add (void)value;
+2. libreoffice-25.2.4.3/workdir/UnpackedTarball/pdfium/core/fpdfdoc/cpdf_bafontmap.cpp 
 
+  ByteString sAlias;
+//  RetainPtr<CPDF_Font> pFont =
+//      bFind ? FindFontSameCharset(&sAlias, nCharset) : nullptr;
+  RetainPtr<CPDF_Font> pFont;
+  if (!bFind) {
+    pFont = FindFontSameCharset(&sAlias, nCharset);
+  }       
+  if (!pFont) {
+    pFont = AddFontToDocument(sFontName, nCharset);
+    sAlias = EncodeFontAlias(sFontName, nCharset);
+  }
+
+3. libreoffice/work.aarch64/libreoffice-25.2.4.3/workdir/UnpackedTarball/pdfium/core/fpdfdoc/cpdf_bafontmap.cpp:283:12: error: could not convert 'nullptr' from 'std::nullptr_t' to 'fxcrt::RetainPtr<CPDF_Font>'
+  283 |     return nullptr;
+  
+  //  if (!pFontDict)
+  //    return nullptr;
+ 
 - add net/nanotodon
   Nanotodon is a light-weight CUI/C99 mastodon client.
 
