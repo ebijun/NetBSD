@@ -1,12 +1,12 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
     2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
     2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
-    2024
+    2024, 2025
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.1 (GENERIC) #0: Mon Dec 16 13:08:11 UTC 2024
+NetBSD 10.1_STABLE (GENERIC) #0: Fri May 16 05:17:34 UTC 2025
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/amd64/compile/GENERIC
 total memory = 16315 MB
 avail memory = 15753 MB
@@ -70,16 +70,16 @@ acpi0 at mainbus0: Intel ACPICA 20221020
 acpi0: X/RSDT: OemId <TOSHIB,A009F   ,20170310>, AslId <    ,01000013>
 acpi0: MCFG: segment 0, bus 0-63, address 0x00000000f8000000
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFDA589ECA7808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
+ACPI: SSDT 0xFFFFB1EFA5EA7808 00037F (v02 PmRef  Cpu0Cst  00003001 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFDA556BEF5808 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFB1EC73095808 00072F (v02 PmRef  Cpu0Ist  00003000 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFDA556BED6808 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFB1EC73106808 0005AA (v02 PmRef  ApIst    00003000 INTL 20141107)
 ACPI: Dynamic OEM Table Load:
-ACPI: SSDT 0xFFFFDA556BE9C9C8 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
+ACPI: SSDT 0xFFFFB1EC730DC9C8 000119 (v02 PmRef  ApCst    00003000 INTL 20141107)
 acpi0: SCI interrupting at int 9
 acpi0: fixed power button present
-timecounter: Timecounter "ACPI-Fast" frequency 3579545 Hz quality 1000
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
 hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
 timecounter: Timecounter "hpet0" frequency 24000000 Hz quality 2000
 acpivga0 at acpi0 (GFX0): ACPI Display Adapter
@@ -245,9 +245,9 @@ acpicpu3 at cpu3: ACPI CPU
 cpu0: CPU base freq 2400000000 Hz
 cpu0: CPU max freq 2800000000 Hz
 cpu0: TSC freq CPUID 2400000000 Hz
-cpu0: TSC freq calibrated 2400004000 Hz
+cpu0: TSC freq calibrated 2400003000 Hz
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-timecounter: Timecounter "TSC" frequency 2400004000 Hz quality 3000
+timecounter: Timecounter "TSC" frequency 2400003000 Hz quality 3000
 uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
 acpiacad0: AC adapter online.
 uhub0: 6 ports with 6 removable, self powered
@@ -286,6 +286,7 @@ intelfb0: framebuffer at 0xb0040000, size 1920x1080, depth 32, stride 7680
 iwm0: hw rev 0x200, fw ver 22.361476.0, address b4:d5:bd:a4:e7:dc
 wsdisplay0 at intelfb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
 wsmux1: connecting to wsdisplay0
+acpibat0: normal capacity on 'charge state'
 wsdisplay0: screen 1 added (default, vt100 emulation)
 wsdisplay0: screen 2 added (default, vt100 emulation)
 wsdisplay0: screen 3 added (default, vt100 emulation)
