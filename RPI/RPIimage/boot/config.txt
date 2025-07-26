@@ -5,6 +5,7 @@ cmdline=../cmdline.txt
 # UART settings, see https://www.raspberrypi.org/documentation/configuration/uart.md
 enable_uart=1
 force_turbo=0
+hdmi_force_hotplug=1
 # Default kernel for BCM2836 and later
 kernel=/kernel7.img
 # Override kernel for BCM2835 based boards
