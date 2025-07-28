@@ -15,6 +15,13 @@ https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-10-aarch64/2025-
 https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-10-aarch64/MD5
 
 Topics:
+- dillo build failed:
+checking whether the C compiler works... no
+configure: error: in '/mnt/aarch64/pkgsrc/www/dillo/work.aarch64/dillo-3.2.0':
+configure: error: C compiler cannot create executables
+See 'config.log' for more details
+*** Error code 77
+
 - libreoffice build failed:
 1. pkgsrc/misc/libreoffice/work.aarch64/libreoffice-25.2.4.3/workdir/UnpackedTarball/pdfium/core/fxcrt/numerics/safe_conversions.h:43:32: warning: unused parameter 'value' [-Wunused-parameter]
    43 |   static constexpr bool Do(Src value) {
