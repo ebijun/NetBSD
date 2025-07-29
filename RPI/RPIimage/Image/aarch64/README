@@ -1,18 +1,18 @@
-VERSION: :1,$s/2025-06-10/2025-06-10/g
-ISO:     :1,$s/202506090650Z/202506090650Z/g
-NetBSD:  :1,$s/10.99.14/10.99.14/g
+VERSION: :1,$s/2025-07-29/2025-07-29/g
+ISO:     :1,$s/20250728112801Z/20250728112801Z/g
+NetBSD:  :1,$s/10.99.15/10.99.15/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-06-10-netbsd-raspi-aarch64.img
+Subject: 2025-07-29-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-06-10-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2025-07-29-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-10-aarch64/2025-06-10-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-06-10-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-07-29-aarch64/2025-07-29-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-07-29-aarch64/MD5
 
 Topics:
 - dillo build failed:
@@ -76,9 +76,9 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
     bcm2712-rpi-5-b.dtb
 
 - [Test] Firmware update /boot/fixup4*.dat,start4*.elf
-commit 5476ef5c463f18017c752d5d6ddc4f72d498a252 (HEAD -> master, origin/master, origin/HEAD)
+commit 35441eb8dfd922f3c283bb1a75b22412e3e06c54 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Mon Jun 9 11:19:26 2025 +0100
+Date:   Thu Jul 24 15:34:54 2025 +0100
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
@@ -111,17 +111,22 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- bind-9.20.9 dhcpcd-10.2.3 pkg_install-20250417 sh-20220122-20250608205229Z
+ bind-9.20.11 g++-12.5.0 gcc-12.5.0 NetBSD-10.99.15 openssl-3.5.1
+sh-20220122-20250728112801Z tcsh-6.24.16 userland-NetBSD-10.99.15/evbarm
 
 pkgsrc:
- curl-8.14.1 fossil-2.26 glib2-2.84.2 harfbuzz-11.2.1 icewm-3.7.4
- libepoxy-1.5.10nb2 libgcrypt-1.11.1 libjpeg-turbo-3.1.0nb1 libxml2-2.14.3
- libxslt-1.1.43nb4 perl-5.40.2nb1 pkg_install-20250417 pkgin-25.5.1
- py312-setuptools-80.9.0 python312-3.12.11 ruby32-atk-4.2.9
- ruby32-cairo-gobject-4.2.9 ruby32-gdk3-4.2.9 ruby32-gdk_pixbuf2-4.2.9
- ruby32-gio2-4.2.9 ruby32-glib2-4.2.9 ruby32-gobject-introspection-4.2.9
- ruby32-gtk3-4.2.9 ruby32-mini_portile2-2.8.9 ruby32-pango-4.2.9
- ruby32-pkg-config-1.6.2 ruby32-public_suffix-6.0.2 sayaka-3.8.2 sqlite3-3.49.2
+ at-spi2-core-2.54.0nb6 bash-5.3nb1 freetype2-2.13.3nb1 gdk-pixbuf2-2.42.12nb2
+git-base-2.50.1 glib2-2.84.3 gnutls-3.8.10 gobject-introspection-1.84.0
+gsettings-desktop-schemas-40.0nb3 gtk2+-2.24.33nb31 gtk3+-3.24.43nb10
+icewm-3.8.1 libffi-3.5.1 libimagequant-4.4.0 libjpeg-turbo-3.1.1
+libproxy-0.5.10nb1 libwebp-1.6.0 libxml2-2.14.5 mozilla-rootcerts-1.1.20250711
+nettle-3.10.2 nghttp2-1.66.0 pango-1.56.4 perl-5.42.0 pixman-0.46.2
+pkgin-25.7.0 png-1.6.50 qt5-qtbase-5.15.17 qt5-qtx11extras-5.15.17
+qt5-qtxmlpatterns-5.15.17 ruby32-base-3.2.8nb1 ruby32-gdk3-4.2.9nb1
+ruby32-gdk_pixbuf2-4.2.9nb1 ruby32-gio2-4.2.9nb1
+ruby32-gobject-introspection-4.2.9nb1 ruby32-gtk3-4.2.9nb1
+ruby32-mikutter-5.1.1nb3 ruby32-pango-4.2.9nb1 sayaka-3.8.3 sqlite3-3.50.3
+sudo-1.9.17p1 tcsh-6.24.16 wayland-protocols-1.45
 
 RPI4 status:
 - boot via UEFI_VER=v1.42
@@ -142,7 +147,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 10.99.14 evbarm-aarch64 202506090650Z arm64.img from nyftp.
+- NetBSD-current 10.99.15 evbarm-aarch64 20250728112801Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
@@ -179,7 +184,7 @@ Pre-installed packages:
   vlgothic-ttf
   icewm
   xli
-  ruby31-mikutter
+  ruby32-mikutter
   uim
   fossil
   sudo
