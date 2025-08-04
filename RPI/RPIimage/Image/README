@@ -1,21 +1,21 @@
-VERSION: :1,$s/2025-07-30/2025-07-30/g
-ISO:     :1,$s/20250729155056Z/20250729155056Z/g
-NetBSD:  :1,$s/10.99.15/10.99.15/g
-PKGSRC:  :1,$s/2025-07-30/2022/
+VERSION: :1,$s/2025-08-04/2025-08-04/g
+ISO:     :1,$s/20250803082249Z/20250803082249Z/g
+NetBSD:  :1,$s/11.99.1/11.99.1/g
+PKGSRC:  :1,$s/2025-08-04/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-07-30-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2025-08-04-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-07-30-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2025-08-04-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-07-30-earmv6hf/2025-07-30-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-07-30-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-08-04-earmv6hf/2025-08-04-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-08-04-earmv6hf/MD5
 
 Update:
-- openssl-3.5.1
+- NetBSD-11.99.1 
 - pkgsrc/www/dillo failed.
 - need check icewm
 - fstab
@@ -49,7 +49,7 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 10.99.15 evbarm-earmv6hf 20250729155056Z rpi.img from nyftp.
+- NetBSD 11.99.1 evbarm-earmv6hf 20250803082249Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
   # mlterm-wscons
@@ -73,9 +73,9 @@ add earmv6hf to pkgsrc/lang/rust/platform.mk:
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-commit 35441eb8dfd922f3c283bb1a75b22412e3e06c54 (HEAD -> master, origin/master, origin/HEAD)
+commit 95be71b8c0f63f03dc06dd0e4c2e5535e6fb4a93 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Thu Jul 24 15:34:54 2025 +0100
+Date:   Fri Aug 1 13:22:52 2025 +0100
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
@@ -115,25 +115,10 @@ https://github.com/ebijun/NetBSD/commit/4b4566c7b33b38a9aa9b3ae7326d069d431a1d63
   for testing, with pkg_summery.gz .
 
 sysinfo:
- bind-9.20.11 g++-12.5.0 gcc-12.5.0 NetBSD-10.99.15 openssl-3.5.1
- sh-20220122-20250729155056Z tcsh-6.24.16 userland-NetBSD-10.99.15/evbarm
+ NetBSD-11.99.1 sh-20220122-20250803082249Z userland-NetBSD-11.99.1/evbarm
 
 pkgsrc:
- at-spi2-core-2.54.0nb6 bash-5.3nb1 curl-8.14.1 fltk-1.4.3 freetype2-2.13.3nb1
- gdk-pixbuf2-2.42.12nb2 git-base-2.50.1 glib2-2.84.3 gnutls-3.8.10
- gobject-introspection-1.84.0 graphite2-1.3.14nb3
- gsettings-desktop-schemas-40.0nb3 gtk2+-2.24.33nb31 gtk3+-3.24.43nb10
- harfbuzz-11.2.1nb1 icewm-3.8.1 libffi-3.5.1 libjpeg-turbo-3.1.1
- libproxy-0.5.10nb1 libwebp-1.6.0 libxml2-2.14.5 libxslt-1.1.43nb4
- mozilla-rootcerts-1.1.20250711 nettle-3.10.2 nghttp2-1.66.0 pango-1.56.4nb1
- perl-5.42.0 pixman-0.46.2 pkg_install-20250417 pkgin-25.7.0 png-1.6.50
- qt5-qtbase-5.15.17 qt5-qtx11extras-5.15.17 qt5-qtxmlpatterns-5.15.17
- ruby32-base-3.2.8nb1 ruby32-cairo-gobject-4.2.9 ruby32-gdk3-4.2.9nb1
- ruby32-gdk_pixbuf2-4.2.9nb1 ruby32-gio2-4.2.9nb1
- ruby32-gobject-introspection-4.2.9nb1 ruby32-gtk3-4.2.9nb1
- ruby32-mikutter-5.1.1nb3 ruby32-mini_portile2-2.8.9 ruby32-pango-4.2.9nb1
- ruby32-public_suffix-6.0.2 sayaka-3.8.3 sqlite3-3.50.3 sudo-1.9.17p1
- tcsh-6.24.16 wayland-protocols-1.45
+ bash-5.3.3nb1 fltk-1.4.4 harfbuzz-11.3.3 pixman-0.46.4 ruby32-base-3.2.9
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -185,7 +170,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-07-30-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-08-04-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -407,14 +392,14 @@ pkgsrc Todo:
 
 =====================
 
-For Open Source Conference 2025 Shirahama & Nagoya
+For Open Source Conference 2025
 I've updated raspberry-pi image.
 
 https://www.facebook.com/NetBSD.jp 
 http://www.jp.NetBSD.org/
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2025.rst
 
-- NetBSD 10.99.15 earmv6hf rpi.img.gz base
+- NetBSD 11.99.1 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
