@@ -1,18 +1,18 @@
-VERSION: :1,$s/2025-07-30/2025-07-30/g
-ISO:     :1,$s/20250730021654Z/20250730021654Z/g
-NetBSD:  :1,$s/10.99.15/10.99.15/g
-PKGSRC:  :1,$s/2025-07-30/2025-07-30/g
+VERSION: :1,$s/2025-08-06/2025-08-06/g
+ISO:     :1,$s/20250805160214Z/20250805160214Z/g
+NetBSD:  :1,$s/11.99.1/11.99.1/g
+PKGSRC:  :1,$s/2025-08-06/2025-08-06/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-07-30-netbsd-armv7-earmv7hf.img
+Subject: 2025-08-06-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-07-30-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2025-08-06-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-07-30-earmv7hf/2025-07-30-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-07-30-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-08-06-earmv7hf/2025-08-06-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-08-06-earmv7hf/MD5
 
 Update:
 - PC6001VX start failed.
@@ -41,7 +41,7 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 10.99.15 evbarm-armv7hf 20250730021654Z armv7.img from nyftp.
+- NetBSD 11.99.1 evbarm-armv7hf 20250805160214Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 
@@ -50,22 +50,11 @@ commit 35441eb8dfd922f3c283bb1a75b22412e3e06c54 (HEAD -> master, origin/master, 
 Author: Dom Cobley <popcornmix@gmail.com>
 Date:   Thu Jul 24 15:34:54 2025 +0100
 
+
 sysinfo:
- bind-9.20.11 g++-12.5.0 gcc-12.5.0 NetBSD-10.99.15 openssl-3.5.1
- sh-20220122-20250730021654Z tcsh-6.24.16 userland-NetBSD-10.99.15/evbarm
+ NetBSD-11.99.1 sh-20220122-20250805160214Z userland-NetBSD-11.99.1/evbarm
 
 pkgsrc:
- at-spi2-core-2.54.0nb6 bash-5.3nb1 freetype2-2.13.3nb1 gdk-pixbuf2-2.42.12nb2
- git-base-2.50.1 glib2-2.84.3 gnutls-3.8.10 gobject-introspection-1.84.0
- gsettings-desktop-schemas-40.0nb3 gtk3+-3.24.43nb10 harfbuzz-11.3.2 icewm-3.8.1
- libffi-3.5.1 libjpeg-turbo-3.1.1 libproxy-0.5.10nb1 libwebp-1.6.0
- libxml2-2.14.5 mozilla-rootcerts-1.1.20250711 nghttp2-1.66.0 pango-1.56.4nb1
- perl-5.42.0 pixman-0.46.4 pkg_install-20250417 pkgin-25.7.0 png-1.6.50
- qt5-qtbase-5.15.17 qt5-qtx11extras-5.15.17 qt5-qtxmlpatterns-5.15.17
- ruby32-base-3.2.9 ruby32-gdk3-4.2.9nb1 ruby32-gdk_pixbuf2-4.2.9nb1
- ruby32-gio2-4.2.9nb1 ruby32-gobject-introspection-4.2.9nb1 ruby32-gtk3-4.2.9nb1
- ruby32-pango-4.2.9nb1 sayaka-3.8.3 sqlite3-3.50.3 sudo-1.9.17p1 tcsh-6.24.16
- wayland-protocols-1.45
 
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2024/
