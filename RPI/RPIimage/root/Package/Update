@@ -1,5 +1,5 @@
-#ulimit -d
-#ulimit -d unlimited
+ulimit -d
+ulimit -d unlimited
 #ftp http://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc.tar.gz
 #tar xzvf pkgsrc.tar.gz -C /usr
 #pkg_add rsync
