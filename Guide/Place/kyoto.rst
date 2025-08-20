@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2024 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2025 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -54,7 +54,8 @@
  2022 Kyoto,7/29-30,235,14,Online
  2023 Kyoto,7/22,250,26,京都リサーチパーク
  2023 Kyoto,7/29,150,12,Online
- 2024 Kyoto,7/29,,,京都リサーチパーク
+ 2024 Kyoto,7/27,330,38,京都リサーチパーク
+ 2025 Kyoto,8/3,,,京都リサーチパーク
   
 よく行く店
 ~~~~~~~~~~~~~~
@@ -63,8 +64,8 @@
  :widths: 30 20 60
 
  店名,エリア,コメント
+ 麥酒　夢詠ミ,祇園四条駅６番出口, 2025年8月3日（日）17時-20時
  京都醸造,市民防災センター前,18番のバス大宮五条→唐戸町→四条大宮
- 麥酒　夢詠ミ,祇園四条駅６番出口,火曜休平日16:30 土日祝15:00 24:00まで
  鈴屋,二条,7:00- モーニング since 1946
  幸福堂,壬生,アイスモナカ&きんつばをおみやげに新選組
  宇治橋通り商店街,宇治,2023/8/5　クラフトビール夜市。
@@ -80,7 +81,6 @@
  ととや,丹波口,寿司&うなぎ 10:00-15:00
  喫茶ナス,丹波口,下京区裏畑町32 11:30-18:30(17:30) カツカレー
  一乗寺ブルワリー,一乗寺,2016/8に直営店オープン
- のらくろ,出町柳,トルコライス＝チキンライス+オムレツ+ビフカツ 閉店
  和知,烏丸,京都最強の地ビール居酒屋 どうなってる？
  CRAFT MAN,烏丸綾小路下,20タップ K家系列 2:00くらいまで
  BEER PUB Takumiya,船谷町400-1,Blacktide × Totopia × Yマーケット
@@ -121,6 +121,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
 
+ 214,OSC2025京都,http://www.re.soum.co.jp/~jun/OSC2025kyoto.pdf
  200,OSC2024京都,http://www.re.soum.co.jp/~jun/OSC2024kyoto.pdf 
  188,OSC2023京都,http://www.re.soum.co.jp/~jun/OSC2023kyoto.pdf 
  178,OSC2022京都,http://www.re.soum.co.jp/~jun/OSC2022kyoto.pdf
@@ -143,6 +144,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2025京都 NetBSDブース展示の記録, https://posfie.com/@ebijun/p/LpFGcI4
  OSC2024京都 NetBSDブース展示の記録, https://togetter.com/li/2403819
  OSC2023京都 NetBSDブース展示の記録, https://togetter.com/li/2189221
  OSC2022京都 NetBSDブース展示の記録, https://togetter.com/li/1921498
@@ -200,6 +202,28 @@ OSC京都展示物
 #. Squeak on hpcmips 
 #. OneSeg TV recording with hpcmips,
 #. bc benchmark time x electricity consumption 
+
+2024年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2024/07/27/IMG20240727090411.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727093046.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727093212.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727093221.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727093713.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727111344.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727124549.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727130128.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727134214.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727140210.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727140214.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727140219.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727140222.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727140229.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727145206.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727152627.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727163743.jpg
+.. image::  ../Picture/2024/07/27/IMG20240727183214.jpg
 
 2023年
 ~~~~~~~~~~~~~~~~~~
