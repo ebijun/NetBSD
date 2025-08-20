@@ -16,10 +16,12 @@
 #g
 #x
 #
-VERSION=202503030410Z
+VERSION=20250813064728Z
+
 TEO=http://teokurebsd.org/netbsd/liveimage/20200518-luna68k
 IMAGE=liveimage-luna68k-raw-2025-03-04.img
 IMAGE_CURRENT=liveimage-luna68k-raw-`date +%Y-%m-%d`.img
+IMAGE_KERNEL=liveimage-luna68k-raw.img
 VND0=vnd0
 MNT=/mnt
 SETS=`find nycdn.netbsd.org -name sets |tail -1`
@@ -43,6 +45,7 @@ cdrom:
 	ftp -4 http://cdn.netbsd.org/pub/NetBSD/NetBSD-9.1/images/NetBSD-9.1-luna68k.iso
 
 IMAGEORG=liveimage-luna68k-raw-20200518.img
+
 
 
 update:
@@ -73,3 +76,12 @@ dmesg:
 replace:
 	@echo cp -p `ls -t liveimage-luna68k-raw-*.img |head -1` "liveimage-luna68k-raw-`date +%Y-%m-%d`.img" 
 
+kernel:
+	vnconfig vnd0 ${IMAGE_KERNEL}
+	fsck /dev/vnd0a
+	mount /dev/vnd0a /mnt
+	what /mnt/netbsd
+	cp /usr/src/sys/arch/luna68k/compile/GENERIC/netbsd /mnt/netbsd
+	what /mnt/netbsd
+	umount /mnt
+	vnconfig -u vnd0
