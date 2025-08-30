@@ -64,16 +64,28 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- [Researching] RPI5: 
- https://mail-index.netbsd.org/port-arm/2025/07/30/msg009356.html
- https://dmesgd.nycbug.org/index.cgi?do=view&id=8470
+- for RPI5: 
+1. Download RPI5-D0v1
+ https://github.com/NumberOneGit/rpi5-uefi/releases/tag/v0.1
+ Download RPI5_D0.zip 
+ 
+2. Extract  RPI5_D0.zip with msdos format MicroSD 
+ mount_msdos -l /dev/sd0e /mnt
+ cd /mnt
+ 7z e RPI5_D0.zip
 
- https://github.com/worproject/rpi5-uefi
- https://github.com/NumberOneGit/rpi5-uefi
+3. copy this RPI4 image to USB disk
 
- This image has 
- https://github.com/NumberOneGit/rpi5-uefi/archive/refs/tags/v0.1.tar.gz       
- as /boot/RPI5_v0.1.tar.gz
+4. Connect RPI5:
+ MicroSD:(RPI5_D0)
+ USB disk(RPI4 image)
+ USB Keyboard/Mouse
+ HDMI
+
+5. Connect Power Supply and boot comes are you are,as you were.
+
+dmesg:
+ https://dmesgd.nycbug.org/dmesgd?do=view&id=8519
 
 - [Test] Firmware update /boot/fixup4*.dat,start4*.elf
 commit 95be71b8c0f63f03dc06dd0e4c2e5535e6fb4a93 (HEAD -> master, origin/master, origin/HEAD)
