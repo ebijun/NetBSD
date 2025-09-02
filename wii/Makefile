@@ -1,7 +1,7 @@
 #
 # https://mail-index.netbsd.org/port-powerpc/2024/01/27/msg003636.html
 
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/202505102300Z/evbppc/binary/gzimg/wii.img.gz
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20250820110359Z/evbppc/binary/gzimg/wii.img.gz
 
 DIR=tmp`date +%Y%m%d`
 MACHINE=wii
