@@ -21,6 +21,7 @@ Update:
  qt.qpa.plugin: Could not find the Qt platform plugin "xcb" in ""
  This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
  [1]   Abort trap (core dumped) PC6001VX
+ https://mail-index.netbsd.org/pkgsrc-bugs/2025/09/07/msg074314.html
 
 - firefox
  pkgsrc/www/firefox/work.earmv7hf/firefox-138.0.4/third_party/aom/aom_ports/aarch32_cpudetect.c:75:2: error: #error "Runtime CPU detection selected, but no CPU detection method " "available for your platform. Rerun cmake with -
