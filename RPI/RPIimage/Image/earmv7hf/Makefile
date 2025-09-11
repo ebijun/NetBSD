@@ -32,8 +32,8 @@ SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/armv7.img
 KERNEL7=${BINARY}/kernel/netbsd-RPI2.gz
 
-#LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
+LIST_UPDATE=base base32 comp debug debug32 dtb games gpufw kern-GENERIC man manhtml modules rescue tests text xbase xetc xcomp xdebug xfont xserver
 
 #Firmware: 
 #commit 95be71b8c0f63f03dc06dd0e4c2e5535e6fb4a93 (HEAD -> master, origin/master, origin/HEAD)
@@ -236,3 +236,8 @@ bwfm-firmware:
 	cp -p ../kernel/Firmware/LICENCE.broadcom_bcm43xx ${MNT}/libdata/firmware/if_bwfm/
 	umount ${MNT}
 	vnconfig -u ${VND}
+
+image-update:
+	@echo mount /dev/sd0a /mnt
+	@for i in ${LIST_UPDATE} ; do (echo tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
+	@echo cp ${SETS}/etc.tgz ${MNT}/
