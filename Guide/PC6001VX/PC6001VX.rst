@@ -65,10 +65,22 @@ Tiny みずいろ
 - loadmem [ファイル名] 0xe000 0xf9ff
 - でロードして、デバッガから戻って PAGEキー（PAGE UPキー）を押すとグラフィック画面出ると思います
 
-
-
 投稿がしたいのに feat. PC-6001 プログラム 
 ------------------------------------------------
 
 - https://tsutsui.hatenablog.com/entry/toukoumiku-p6
+
+NetBSD/earmv7hf
+----------------------
+
+- 問題点 https://mail-index.netbsd.org/pkgsrc-bugs/2025/09/07/msg074314.html の差分での変更点
+- つついさん作変更点をファイルに落とした：
+  https://github.com/ebijun/NetBSD/blob/master/pkgsrc/PC6001VX/qt6-qtbase/patch-src_corelib_plugin_qelfparser_p.cpp を 
+  pkgsrc/x11/qt6-qtbase/patchesに置きます。
+- make makepatchsum
+- make package でqt6パッケージを作る
+- PC6001VXを一度起動する（キー入力がなかなか入らない)
+- ~/.pc6001vx4/pc6001vx.ini のhwAccel=trueをfalseに変更する
+- もういちどPC6001VXを起動する
+
 
