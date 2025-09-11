@@ -1,3 +1,5 @@
+* https://mail-index.netbsd.org/pkgsrc-bugs/2025/09/07/msg074314.html by tsutsui@ san.
+
 --- src/corelib/plugin/qelfparser_p.cpp.orig	2024-10-01 10:46:30.000000000 +0000
 +++ src/corelib/plugin/qelfparser_p.cpp
 @@ -619,15 +619,15 @@ static QLibraryScanResult scanProgramHea
