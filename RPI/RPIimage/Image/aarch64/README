@@ -1,20 +1,27 @@
-VERSION: :1,$s/2025-08-05/2025-08-05/g
-ISO:     :1,$s/20250803082249Z/20250803082249Z/g
+VERSION: :1,$s/2025-09-18/2025-09-18/g
+ISO:     :1,$s/20250829163109Z/20250829163109Z/g
 NetBSD:  :1,$s/11.99.1/11.99.1/g
 PKGSRC:  :1,$s/2022/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-08-05-netbsd-raspi-aarch64.img
+Subject: 2025-09-18-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-08-05-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2025-09-18-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-08-05-aarch64/2025-08-05-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-08-05-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-09-18-aarch64/2025-09-18-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-09-18-aarch64/MD5
 
 Topics:
+- PROBLEM: sdmmc1: couldn't enable card: 60
+can't read MicroSD card.
+
+on nyftp daily build:
+ 20250829163109Z OK (This image)
+ 20250908130616Z or later NG
+
 - dillo build failed:
 checking whether the C compiler works... no
 configure: error: in '/mnt/aarch64/pkgsrc/www/dillo/work.aarch64/dillo-3.2.0':
@@ -122,14 +129,22 @@ bwfm0: autoconfiguration error: NVRAM file not available
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2024
   and pkgin update
 
-ary
 sysinfo:
- NetBSD-11.99.1 sh-20220122-20250803082249Z userland-NetBSD-11.99.1/evbarm
+ sh-20220122-20250829163109Z
 
 pkgsrc:
- bash-5.3.3nb1 dbus-1.16.2nb1 libffi-3.5.2 pango-1.56.4nb1 pixman-0.46.4
- readline-8.3 sqlite3-3.50.4
-
+ MesaLib-21.3.9nb5 cairo-1.18.4nb1 curl-8.16.0 fltk-1.4.4 fontconfig-2.17.1
+ gd-2.3.3nb16 gdk-pixbuf2-2.42.12nb4 git-base-2.51.0 glib2-2.84.4
+ gtk2+-2.24.33nb33 gtk3+-3.24.50nb1 harfbuzz-11.4.5 icewm-3.9.0 imlib2-1.12.3nb4
+ lerc-4.0.0 libLLVM-13.0.1nb4 libcups-2.4.12nb1 libelf-0.8.13nb1
+ libepoxy-1.5.10nb2 libgcrypt-1.11.2 libjpeg-turbo-3.1.2 libva-2.22.0
+ libwebp-1.6.0nb1 m17n-lib-1.8.0nb23 medit-1.2.0nb40 mlterm-3.9.4nb3
+ nghttp2-1.67.0 pcre2-10.46 qt5-qtbase-5.15.17nb1 raqm-0.10.3 ruby32-atk-4.3.3
+ ruby32-base-3.2.9 ruby32-cairo-gobject-4.3.3 ruby32-gdk3-4.3.3
+ ruby32-gdk_pixbuf2-4.3.3 ruby32-gio2-4.3.3 ruby32-glib2-4.3.3
+ ruby32-gobject-introspection-4.3.3 ruby32-gtk3-4.3.3 ruby32-mikutter-5.1.1nb4
+ ruby32-nokogiri-1.18.9 ruby32-pango-4.3.3 ruby32-pkg-config-1.6.3 sayaka-3.8.4
+ tiff-4.7.0nb3 uim-1.8.9nb20 wayland-1.23.0nb7
 RPI4 status:
 - boot via UEFI_VER=v1.42
   https://github.com/pftf/RPi4/releases
@@ -149,7 +164,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 11.99.1 evbarm-aarch64 20250803082249Z arm64.img from nyftp.
+- NetBSD-current 11.99.1 evbarm-aarch64 20250829163109Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
