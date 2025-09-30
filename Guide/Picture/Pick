@@ -1,4 +1,4 @@
-SRC=../Place/kyoto.rst
+SRC=../Place/niigata.rst
 
 grep Picture.org/ ${SRC} |awk '{print $3}' |sed -e 's?../Picture.org/??'
 #grep Picture/ ${SRC} |awk '{print $3}' |sed -e 's?../Picture/??' 

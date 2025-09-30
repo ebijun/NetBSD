@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2015-2024 Jun Ebihara All rights reserved.
+ Copyright (c) 2015-2025 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -55,7 +55,8 @@ Maps:
  2021 Niigata,10/2,80,,オンライン開催
  2022 Nagaoka,11/12,40,,オンライン開催 KOF会場から休憩時間にリモート参加
  2023 Niigata,11/25,37,15,ほんぽーと新潟市立中央図書館
- 2024 Nagaoka,10/12,,,長岡技術科学大学
+ 2024 Nagaoka,10/12,93,14,長岡技術科学大学
+ 2025 Niigata,10/4,,,新潟国際情報大学　新潟中央キャンパス
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,6 +68,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 216,OSC2025新潟,http://www.re.soum.co.jp/~jun/OSC2025niigata.pdf 
  203,OSC2024長岡,http://www.re.soum.co.jp/~jun/OSC2024nagaoka.pdf
  194,OSC2023新潟,http://www.re.soum.co.jp/~jun/OSC2023niigata.pdf
  170,OSC2021新潟,http://www.re.soum.co.jp/~jun/OSC2021niigata.pdf
@@ -84,6 +86,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2025新潟 NetBSDブース展示の記録,https://posfie.com/@ebijun/p/9uZIwuH
  OSC2024長岡 NetBSDブース展示の記録,https://togetter.com/li/2446541
  OSC2023新潟 NetBSDブース展示の記録,https://togetter.com/li/2260623
  OSC2021新潟 NetBSDブース展示の記録,https://togetter.com/li/1782152
@@ -100,10 +103,12 @@ togetterまとめ
 .. csv-table::
  :widths: 60 30 60
 
- Bier Bar Ferkel,古町,ドイツビール 土曜は13:00-21:00
+ KONKRET,古町,上大川前通6番町1211-5三好マンション鏡橋105号
+ 04and_beer,古町,西堀前通8番町1523
+ 沼垂ビール,沼垂,ぬったりビール。ほんぽーと徒歩5分。土曜は13:00-21:00
+ Bier Bar Ferkel,古町,ドイツビール。閉店しました。
  酒屋やよい,弥彦,弥彦ブリューイングテイスティング
  弥彦ブリューイング,弥彦,いちごミルクエール
- 沼垂ビール,沼垂,ぬったりビール。ほんぽーと徒歩5分。土曜は13:00-21:00
  蒲原神社,沼垂,金子孝信生家
  潟東樋口記念美術館,西蒲,金子孝信作品コーナー
  衆楽,沼垂,ラーチャン＆カレー。11:00-14:30 17:30-21:00
@@ -146,6 +151,23 @@ togetterまとめ
  雑本堂,東坂之上町,古書 映画関連
  ハードオフ長岡古正寺店,イオン,技科大に行く途中にある重要店。工具館もある。 
  HEISEI BREWING,新保,10:00-19:00 タップルーム
+
+2024年
+---------------
+
+.. image::  ../Picture/2024/10/12/IMG20241012095939.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012100054.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012111838.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012113004.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012113954.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012114954.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012151300.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012172321.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012173147.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012111845.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012115949.jpg
+.. image::  ../Picture/2024/10/12/IMG20241012172241.jpg
+
 
 2023年
 ---------------
