@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 11.99.1 (GENERIC64) #0: Fri Aug 29 16:31:09 UTC 2025
+NetBSD 11.99.3 (GENERIC64) #0: Mon Oct  6 07:51:44 UTC 2025
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 8021 MB
 avail memory = 7730 MB
@@ -109,9 +109,10 @@ RHPX (MSFT8000) at acpi0 not configured
 sdhc0 at acpi0 (SDC1, BCM2847-0): mem 0xfe300000-0xfe3000ff irq 158
 genet0 at acpi0 (ETH0, BCM6E4E-0): mem 0xfd580000-0xfd58ffff irq 189,190
 genet0: GENETv5.0
-genet0: Ethernet address a8:97:00:f2:61:b0
+genet0: Ethernet address 8d:bc:00:f2:64:94
 brgphy0 at genet0 phy 1: BCM54213PE 1000BASE-T media interface, rev. 2
 brgphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+autoconfiguration error: The multicast bit is set in the MAC address. It's wrong.
 EC00 (PNP0C06) at acpi0 not configured
 acpitz0 at acpi0 (TZ00): cpu0 cpu1 cpu2 cpu3
 acpitz0: levels: critical 90.0 C, hot 85.0 C, passive 80.0 C, passive cooling
@@ -147,8 +148,8 @@ bwfm0 at sdmmc0 function 1
 (manufacturer 0x2d0, product 0xa9a6, standard function interface code 0x2) at sdmmc0 function 3 not configured
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SF064:0x01:0xf60436a2:0x183>
-ld1: 59024 MB, 7524 cyl, 255 head, 63 sec, 512 bytes/sect x 120881152 sectors (0 bytes/physsect)
-ld1: GPT GUID: 1e2b6f31-8e40-4dcb-94b7-b6975f9847e9
+ld1: 59024 MB, 7524 cyl, 255 head, 63 sec, 512 bytes/sect x 120881152 sectors
+ld1: GPT GUID: c2a9fe8f-a233-44dd-813c-fa64cd25f34b
 dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 6041010 blocks at 90203, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -161,29 +162,16 @@ umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 sd0: 953 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 2000409264 sectors
-uhidev0 at uhub2 port 4 configuration 1 interface 0
-uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
-ukbd0 at uhidev0
-wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub2 port 4 configuration 1 interface 1
-uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
-uhidev1: 6 report ids
-ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
-wsmouse0 at ums0 mux 0
-uhid0 at uhidev1 reportid 2: input=7, output=0, feature=0
-uhid1 at uhidev1 reportid 3: input=1, output=0, feature=0
-uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
-uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
-uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
 swwdog0: software watchdog initialized
+WARNING: 1 error while detecting hardware; check system log.
 boot device: dk1
 root on dk1
 root file system type: ffs
-kern.module.path=/stand/evbarm/11.99.1/modules
-WARNING: clock lost 208 days
+kern.module.path=/stand/evbarm/11.99.3/modules
+WARNING: clock lost 227 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec85000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec8e000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
@@ -205,3 +193,17 @@ bwfm0: address d8:3a:dd:28:ce:ef
 bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
 wsdisplay0: screen 4 added (default, vt100 emulation)
 nd6_rtrequest: bad gateway value: genet0
+uhidev0 at uhub2 port 4 configuration 1 interface 0
+uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
+ukbd0 at uhidev0
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev1 at uhub2 port 4 configuration 1 interface 1
+uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
+uhidev1: 6 report ids
+ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
+uhid0 at uhidev1 reportid 2: input=7, output=0, feature=0
+uhid1 at uhidev1 reportid 3: input=1, output=0, feature=0
+uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
+uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
+uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
