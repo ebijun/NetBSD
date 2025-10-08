@@ -1,24 +1,20 @@
-VERSION: :1,$s/2025-09-28/2025-09-28/g
-ISO:     :1,$s/20250927135626Z/20250927135626Z/g
+VERSION: :1,$s/2025-10-08/2025-10-08/g
+ISO:     :1,$s/20251007103830Z/20251007103830Z/g
 NetBSD:  :1,$s/11.99.3/11.99.3/g
-PKGSRC:  :1,$s/2025-09-28/2025-09-28/g
+PKGSRC:  :1,$s/2025-10-08/2025-10-08/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-09-28-netbsd-armv7-earmv7hf.img
+Subject: 2025-10-08-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-09-28-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2025-10-08-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-09-28-earmv7hf/2025-09-28-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-09-28-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-10-08-earmv7hf/2025-10-08-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-10-08-earmv7hf/MD5
 
 Update:
-- PC6001VX start failed.
- pkg/59096: qt6 apps with qt6-qtbase don't work on NetBSD/earmv7hf 10.1
- -> fixed. thanx.
-
 - firefox
  pkgsrc/www/firefox/work.earmv7hf/firefox-138.0.4/third_party/aom/aom_ports/aarch32_cpudetect.c:75:2: error: #error "Runtime CPU detection selected, but no CPU detection method " "available for your platform. Rerun cmake with -
 DCONFIG_RUNTIME_CPU_DETECT=0."
@@ -38,18 +34,18 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 11.99.3 evbarm-armv7hf 20250927135626Z armv7.img from nyftp.
+- NetBSD 11.99.3 evbarm-armv7hf 20251007103830Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 
 - Firmware:
-commit 70c596a513fb6a37f26405a40e60733a833a1672 (HEAD -> master, origin/master, origin/HEAD)
+commit 4110ba807ae84b343da239fc30db49ea426f9c5d (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Sat Sep 27 11:46:26 2025 +0100
+Date:   Mon Oct 6 13:50:24 2025 +0100
 
 sysinfo:
- NetBSD-11.99.3 sh-20220122-20250927135626Z unbound-1.23.1
- userland-NetBSD-11.99.3/evbarm
+ g++-14.3.0 gcc-14.3.0 libstdc++-9.2 NetBSD-11.99.3 sh-20220122-20251007103830Z
+ unbound-1.23.1 userland-NetBSD-11.99.3/evbarm
 
 pkgsrc:
  bash-5.3.3nb1 cairo-1.18.4nb1 curl-8.16.0 dbus-1.16.2nb1 fltk-1.4.4
@@ -58,8 +54,8 @@ pkgsrc:
  imlib2-1.12.3nb4 lerc-4.0.0 libcups-2.4.12nb1 libffi-3.5.2 libgcrypt-1.11.2
  libjpeg-turbo-3.1.2 libproxy-0.5.11 libwebp-1.6.0nb1 libxml2-2.14.6
  m17n-lib-1.8.0nb23 medit-1.2.0nb40 mlterm-3.9.4nb3 nettle-3.10.2 nghttp2-1.67.1
- p11-kit-0.25.8 pcre2-10.46 qt5-qtbase-5.15.17nb2 raqm-0.10.3 readline-8.3
- ruby32-atk-4.3.3 ruby32-cairo-gobject-4.3.3 ruby32-gdk3-4.3.3
+ p11-kit-0.25.8 pango-1.57.0 pcre2-10.46 qt5-qtbase-5.15.17nb2 raqm-0.10.3
+ readline-8.3 ruby32-atk-4.3.3 ruby32-cairo-gobject-4.3.3 ruby32-gdk3-4.3.3
  ruby32-gdk_pixbuf2-4.3.3 ruby32-gio2-4.3.3 ruby32-glib2-4.3.3
  ruby32-gobject-introspection-4.3.3 ruby32-gtk3-4.3.3 ruby32-mikutter-5.1.1nb4
  ruby32-nokogiri-1.18.10 ruby32-pango-4.3.3 ruby32-pkg-config-1.6.4 sayaka-3.8.4
