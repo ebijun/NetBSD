@@ -6,16 +6,16 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.14 (WII) #0: Sat May 10 18:58:53 UTC 2025
+NetBSD 11.99.3 (WII) #0: Sun Oct 19 17:14:12 UTC 2025
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbppc/compile/WII
 total memory = 90112 KB
-avail memory = 68056 KB
+avail memory = 68028 KB
 timecounter: Timecounters tick every 10.000 msec
 mainbus0 (root): Nintendo Wii
 cpu0 at mainbus0: 750 (Revision 0x7103), ID 0 (primary)
 cpu0: HID0 0x8051c2e4<EMCP,NAP,DPM,NHR,ICE,DCE,SPD,SGE,DCFA,BTIC,BHT>, powersave: 1
 cpu0: 729.00 MHz, 256KB WB L2 cache
-genfb0 at mainbus0 addr 0x0c002000: NTSC 480i
+genfb0 at mainbus0 addr 0x0c002000: NTSC 480p
 genfb0: framebuffer at 0x1698000, size 640x448, depth 16, stride 1280
 wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
@@ -66,20 +66,33 @@ uhub1 at usb1: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00,
 uhub1: 2 ports with 2 removable, self powered
 uhub2 at usb2: NetBSD (0x0000) EHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub2: 4 ports with 4 removable, self powered
-sdmmc0: SD card status: 4-bit, C10, U3, V30, A1
-ld0 at sdmmc0: <0x9f:0x5449:SPCC :0x20:0x64670678:0x191>
-ld0: 59311 MB, 7561 cyl, 255 head, 63 sec, 512 bytes/sect x 121468928 sectors (0 bytes/physsect)
-ld0: 4-bit width, High-Speed/SDR25, 48.000 MHz
+sdmmc0: SD card status: 4-bit, C10, U3, V30, A2, Cache, Host/Card self-maintenance
+ld0 at sdmmc0: <0x9f:0x5449:SPCC :0x07:0x46640058:0x193>
+ld0: 115 GB, 15126 cyl, 255 head, 63 sec, 512 bytes/sect x 242999296 sectors
+ld0: 4-bit width, High-Speed/SDR25, Cache (disabled), 48.000 MHz
 sdmmc1: 4-bit width, 25.000 MHz
 bwi0 at sdmmc1 function 1: Broadcom Wireless
-bwi0: autoconfiguration error: no BBP id for device id 0x044b
-ehci0: handing over full speed device on port 1 to companion controller
-uhidev0 at uhub0 port 1 configuration 1 interface 0
-uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 2, iclass 3/1
+bwi0: BBP id 0x4318, BBP rev 0x2, BBP pkg 2
+bwi0: MAC: rev 9
+bwi0: PHY type 2, rev 7, ver 3
+bwi0: RF manu 0x17f, type 0x2050, rev 8
+umass0 at uhub2 port 1 configuration 1 interface 0
+umass0: Realtek (0x0bda) RTL9210B-CG (0x9210), rev 2.10/20.01, addr 2
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus1 target 0 lun 0: <Realtek, RTL9210B-CG, 1.00> disk fixed
+sd0: fabricating a geometry
+sd0: 931 GB, 953869 cyl, 64 head, 32 sec, 512 bytes/sect x 1953525168 sectors
+sd0: fabricating a geometry
+uhub3 at uhub2 port 2: vendor 1a40 (0x1a40) USB2.0 HUB (0x0101), class 9/0, rev 2.00/1.00, addr 3
+uhub3: single transaction translator
+uhub3: 4 ports with 4 removable, self powered
+uhidev0 at uhub3 port 3 configuration 1 interface 0
+uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 4, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub0 port 1 configuration 1 interface 1
-uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 2, iclass 3/1
+uhidev1 at uhub3 port 3 configuration 1 interface 1
+uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 4, iclass 3/1
 uhidev1: 6 report ids
 ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
 wsmouse0 at ums0 mux 0
@@ -88,20 +101,14 @@ uhid1 at uhidev1 reportid 3: input=1, output=0, feature=0
 uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
 uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
 uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
-urtwn0 at uhub2 port 2
-urtwn0: Realtek (0x0bda) 802.11n NIC (0x8179), rev 2.00/0.00, addr 2
-urtwn0: MAC/BB RTL8188EU, RF 6052 1T1R, address 7c:f1:7e:bb:1b:3a
-urtwn0: 1 rx pipe, 2 tx pipes
 ehci0: handing over full speed device on port 3 to companion controller
-WARNING: 1 error while detecting hardware; check system log.
 boot device: ld0
 root on ld0a dumps on ld0b
 root file system type: ffs
-kern.module.path=/stand/evbppc/10.99.14/modules
-WARNING: preposterous TOD clock time
-WARNING: using filesystem time
-WARNING: CHECK AND RESET THE DATE!
+kern.module.path=/stand/evbppc/11.99.3/modules
 entropy: best effort
 ubt0 at uhub1 port 1
 ubt0: Broadcom Corp (0x057e) BCM2045A (0x0305), rev 2.00/1.00, addr 2
+bwi0: firmware rev 0x0127, patch level 0x000e
 wsdisplay0: screen 4 added (default, vt100 emulation)
+bthub0 at ubt0 local-bdaddr 00:1b:7a:a8:92:c7
