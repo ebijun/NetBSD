@@ -82,7 +82,9 @@ Maps:
  2024 Spring,3/10,530,48,東京都立産業貿易センター台東館
  2024 Fall,3/1-2,203,15,オンライン
  2024 Fall,3/10,300,47,東京都立産業貿易センター台東館
- 2025 Spring,2/21-22,,,駒澤大学 駒沢キャンパス
+ 2025 Spring,2/21-22,850,65,駒澤大学 駒沢キャンパス
+ 2025 Fall,10/17-18,,,オンライン
+ 2025 Fall,10/25,,,東京都立産業貿易センター台東館
 
  
 観光ガイドバックナンバー
@@ -95,6 +97,7 @@ Maps:
 
  No,イベント,URL
 
+ 217, OSC2025東京秋,http://www.re.soum.co.jp/~jun/OSC2025tokyofall.pdf
  210, OSC2025東京春,http://www.re.soum.co.jp/~jun/OSC2024tokyofall.pdf 
  204, OSC2024東京秋,http://www.re.soum.co.jp/~jun/OSC2024tokyofall.pdf 
  197, OSC2024東京春,http://www.re.soum.co.jp/~jun/OSC2023tokyospring.pdf 
@@ -131,6 +134,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2025 Online/Fall NetBSDのご紹介 の記録, https://posfie.com/@ebijun/p/KsHuz6A
  OSC2025 Online/Spring NetBSDのご紹介 の記録, https://posfie.com/@ebijun/p/AeMxGBR
  OSC2024 Online/Fall NetBSDのご紹介 の記録, https://togetter.com/li/2446541
  OSC2024 Online/Spring NetBSDのご紹介 の記録, https://togetter.com/li/2314715
@@ -204,8 +208,8 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
-
- 2024/10/26,OSC2025東京秋,FUZIX on OpenBSD/luna88K on RPI nanotodon
+ 2025/2/21-22,OSC2025東京春,LUNA+PC6001,FUZIX on OpenBSD/luna88K on RPI
+ 2024/10/26,OSC2024東京秋,FUZIX on OpenBSD/luna88K on RPI nanotodon
  2024/3/10,OSC2024東京春,NetBSD/atari
  2023/4/1,OSC2023東京春,NetBSD/next68k
  2019/11/23-24,OSC2019東京秋,NetBSD/zaurus8.1
@@ -239,6 +243,58 @@ OSC東京主な展示物
  2005/3/25-26,OSC2005,hpcmips/sh/arm
  2004/9/4,OSC2004,hpcmips/sh/arm
 
+
+2025年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2025/02/21/IMG20250221104852.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221104923.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221105509.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221110148.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221110440.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221123457.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221123542.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221123545.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221124112.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221124121.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221124945.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221124949.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221124952.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221124957.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221125001.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221130425.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221130527.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221130816.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221130825.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221130958.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221131134.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221131413.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221131417.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221131716.jpg
+.. image::  ../Picture/2025/02/21/IMG20250221161002.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222093907.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222093910.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222093921.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222094534.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222095651.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222095659.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222095704.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222095711.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222100702.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222100823.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222102516.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222110737.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222123227.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222133347.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222152317.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222152813.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222152836.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222152839.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222152842.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222152848.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222152858.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222152911.jpg
+.. image::  ../Picture/2025/02/22/IMG20250222152915.jpg
 
 2024年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

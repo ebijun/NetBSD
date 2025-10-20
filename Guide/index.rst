@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/niigata
+ Place/tokyo
  stable-diffusion.cpp
  PC6001VX/PC6001VX
  Pkgsrc/mlterm
