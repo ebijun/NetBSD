@@ -1,0 +1,11 @@
+pkgin install cmake
+pkgin install ninja-build
+git clone --recursive https://github.com/awemorris/PlayfieldEngine.git
+cd PlayfieldEngine
+git submodule update --init
+mkdir build
+cd build
+cmake ..
+make
+cp ../samples/shoot2/* .
+./playfield
