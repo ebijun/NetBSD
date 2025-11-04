@@ -23,10 +23,11 @@
  :maxdepth: 3
  :numbered:
 
- Place/tokyo
+ Place/osaka
  stable-diffusion.cpp
  PC6001VX/PC6001VX
  Pkgsrc/mlterm
+ Pkgsrc/playfield
  RPI/RPIupdate2025
  OSC/OSC2025
  RPI

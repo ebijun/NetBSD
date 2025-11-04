@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.5.0
+ DISTNAME=       nono-1.6.0
 
 チェックサム作成
 ------------------
@@ -51,9 +51,10 @@ Makefile 内のバージョンをあげます。
 
  % make makesum
  
- -rw-r--r--  1 root  125  1202 Mar 31 10:45 Makefile
- -rw-r--r--  1 root  125   357 Mar  3 21:35 PLIST
- -rw-r--r--  1 root  125   555 Mar 31 10:45 distinfo
+-rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
+-rw-r--r--  1 jun  wheel  1202 Nov  2 14:42 Makefile
+-rw-r--r--  1 jun  wheel   357 Nov  2 14:43 PLIST
+-rw-r--r--  1 jun  wheel   350 Nov  2 14:44 distinfo
 
 make package して動作を確認します。
  
@@ -82,24 +83,22 @@ commit
 
  cvs commit 
 
- nono: update to 1.5.0.
+ nono: update to 1.6.0.
 
- 1.5.0 (2025/09/07)
+ 1.6.0 (2025/10/29)
 
- vm(New): "Implement 1024x1024 mode of the graphic screen partially on X68030. T
-his makes NetBSD/x68k X server work though default configuration only."
- vm(New): "Implement VIRTIO_BLK_T_GET_ID command in VirtIO Block."
- vm(Update): "Limit suppressing full speed mode by key press to LUNA."
- vm(Update): "Create an initialized SRAM.DAT if it doesn't exist on X68030. This
- also obsoletes --create-sram option."
- vm(Fix): "Fix wait state count for Nereid bank memory."
- m88k(Update): "Implement that floating-point instructions raise an exception wh
-en SFD1 is set."
- m88k(Fix): "Fix missing exception for rte instruction in user mode."
- GUI(Update): "Display MHz too in the performance counter."
- GUI(Fix): "Fix possible abnormal termination when opening or closeing some moni
-tor windows."
- host(Update): Reimplement log."
+ host(New): "Implement sound output."
+ vm(New): "Implement ADPCM (playback only) on X68030."
+ vm(Update): "Implement external request transfer on X68030 DMAC."
+ vm(Update): "Implement link array chain mode on X68030 DMAC."
+ vm(Update): "Separate loglevel per channel."
+ vm(Update): "Implement FPACK __LTOS on Human68k mode."
+ GUI(New): "Implement thread monitor."
+ app(New): "Support specifying cores for heterogeneous CPU (formally)."
+ vm(Fix): "Revert to suppressing full speed mode on key press on X68030. It was removed in ver 1.5.0, but was reintroduced to address unintended side effects."
+ host(Update): "host-avx2, host-neon are renamed to hostcpu-avx2, hostcpu-neon."
+ app(Fix): "Fix possible abnormal termination if the configuration file contains non-ASCII characters on NetBSD 11.0_BETA."
+
 
 doc をcommit します
 ---------------------
@@ -109,9 +108,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.5.0
+ doc: Updated emulators/nono to 1.6.0
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.5.0 [jun 2025-09-08]
+        Updated emulators/nono to 1.6.0 [jun 2025-11-02]
 
