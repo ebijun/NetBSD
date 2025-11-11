@@ -20,6 +20,11 @@ Update:
 - fstab
   To resize_root,disable log from /etc/fstab.
 
+- pkgsrc/devel/cargo-c failed with /usr/pkg/lib/librustc_driver-43ce19429944873a.so: Undefined PLT symbol "_ZNSt18condition_variable4waitERSt11unique_lockISt5mutexE" (symnum = 9211)
+ https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=59754
+ I put 
+ https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-10-10-earmv6hf/libstdc%2B%2B.so.9.1
+
 - bash should use --without-bash-malloc option
  libgtop: failed.
  checking for X... 

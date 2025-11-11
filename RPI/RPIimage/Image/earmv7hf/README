@@ -15,6 +15,13 @@ http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-10-08-earmv7hf/2025-10-08-n
 http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-10-08-earmv7hf/MD5
 
 Update:
+- pkgsrc/devel/cargo-c failed with /usr/pkg/lib/librustc_driver-43ce19429944873a
+.so: Undefined PLT symbol "_ZNSt18condition_variable4waitERSt11unique_lockISt5mu
+texE" (symnum = 9211)
+ https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=59754
+ I put 
+ https://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-10-08-earmv7hf/libstdc%2B%2B.so.9.1
+
 - firefox
  pkgsrc/www/firefox/work.earmv7hf/firefox-138.0.4/third_party/aom/aom_ports/aarch32_cpudetect.c:75:2: error: #error "Runtime CPU detection selected, but no CPU detection method " "available for your platform. Rerun cmake with -
 DCONFIG_RUNTIME_CPU_DETECT=0."
