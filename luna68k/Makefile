@@ -16,15 +16,17 @@
 #g
 #x
 #
-VERSION=20250813064728Z
+VERSION=20251114071131Z
 
 TEO=http://teokurebsd.org/netbsd/liveimage/20200518-luna68k
 IMAGE=liveimage-luna68k-raw-2025-03-04.img
 IMAGE_CURRENT=liveimage-luna68k-raw-`date +%Y-%m-%d`.img
 IMAGE_KERNEL=liveimage-luna68k-raw.img
+ISO=/usr/release/images/NetBSD-11.99.4-luna68k-20251114071131Z.iso
 VND0=vnd0
+VND1=vnd1
 MNT=/mnt
-SETS=`find nycdn.netbsd.org -name sets |tail -1`
+SETS=/cdrom/luna68k/binary/sets
 
 #https://gist.github.com/tsutsui/340546bdc064cee786ed2473fb510463
 CONFIG=https://gist.githubusercontent.com/tsutsui/340546bdc064cee786ed2473fb510463/raw/24f6f3312ea89509044792d3b5a915aaac971a06/nono.cfg
@@ -41,22 +43,19 @@ pkgsrc:
 	ftp http://www.pastel-flower.jp/~isaki/NetBSD/patch/pkgsrc-nono-20201013.diff
 	ftp http://www.pastel-flower.jp/~isaki/NetBSD/patch/nono-20201013.diff
 
-cdrom:
-	ftp -4 http://cdn.netbsd.org/pub/NetBSD/NetBSD-9.1/images/NetBSD-9.1-luna68k.iso
-
-IMAGEORG=liveimage-luna68k-raw-20200518.img
-
-
+cdmount:
+	#ftp -4 http://cdn.netbsd.org/pub/NetBSD/NetBSD-9.1/images/NetBSD-9.1-luna68k.iso
+	vnconfig vnd1 ${ISO}
+	mount_cd9660 /dev/vnd1 /cdrom
 
 update:
-	cp ${IMAGE} ${IMAGE_CURRENT}
 	vnconfig ${VND0} ${IMAGE_CURRENT}
 	fsck /dev/${VND0}a
 	mount /dev/${VND0}a ${MNT}
-	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/${VERSION}/luna68k/binary/sets/base.tgz -C /mnt
-	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/${VERSION}/luna68k/binary/sets/kern-GENERIC.tgz -C /mnt
-	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/${VERSION}/luna68k/binary/sets/modules.tgz -C /mnt
-	tar xzpf nycdn.netbsd.org/pub/NetBSD-daily/HEAD/${VERSION}/luna68k/binary/sets/rescue.tgz -C /mnt
+	tar xzpf /cdrom/luna68k/binary/sets/base.tgz -C /mnt
+	tar xzpf /cdrom/luna68k/binary/sets/kern-GENERIC.tgz -C /mnt
+	tar xzpf /cdrom/luna68k/binary/sets/modules.tgz -C /mnt
+	tar xzpf /cdrom/luna68k/binary/sets/rescue.tgz -C /mnt
 	cp ${SETS}/etc.tgz ${MNT}
 
 last:

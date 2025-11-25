@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/osaka
+ Place/yamaguchi
  stable-diffusion.cpp
  PC6001VX/PC6001VX
  Pkgsrc/mlterm

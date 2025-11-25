@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2025 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -54,7 +54,8 @@ Maps:
  2021,11/20,135,11,オンライン
  2022,11/26,126,14,オンライン
  2023,12/9,150,20,福岡ソフトリサーチパーク センタービル
- 2024,12/7,,,九州産業大学 12号館
+ 2024,12/7,220,19,九州産業大学 12号館
+ 2025,11/22,,,九州産業大学 12号館
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,6 +67,8 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+
+ 219,OSC2025福岡,http://www.re.soum.co.jp/~jun/OSC2025fukuoka.pdf 
  208,OSC2024福岡,http://www.re.soum.co.jp/~jun/OSC2024fukuoka.pdf
  195,OSC2023福岡,http://www.re.soum.co.jp/~jun/OSC2023fukuoka.pdf
  183,OSC2022福岡,http://www.re.soum.co.jp/~jun/OSC2022fukuoka.pdf
@@ -88,6 +91,7 @@ togetterまとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2025 Online/Fukuoka NetBSDのご紹介 の記録,https://posfie.com/@ebijun/p/NgePtcK
  OSC2024 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/2474850
  OSC2023 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/2271317
  OSC2022 Online/Fukuoka NetBSDのご紹介 の記録,https://togetter.com/li/1977568
@@ -165,6 +169,7 @@ OSC福岡主な展示物
 .. csv-table::
  :widths: 15 35 60
 
+ 2024/12/7,九州産業大学,RPI4+nono+sayaka+nanotodon
  2023/12/9,福岡ソフトリサーチパーク,RPI4+nono
  2019/11/9,九州産業大学,RPI3+XM6i pinebook
  2018/12/8,福岡ソフトリサーチパーク,RPI3+XM6i 
@@ -179,6 +184,23 @@ OSC福岡主な展示物
  2009/12/5,九州産業大学,hpcmips/hpcarm/Jornada680/WZero3
  2008/12/13,福岡大学,hpcmips/hpcarm/Jornada680/WZero3/USBカメラ
  2007/12/8,ASCビル,hpcmips/hpcarm/Jornada680
+
+
+2024年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture/2024/12/07/IMG20241207094623.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207121731.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207121734.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207121739.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207122014.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207122020.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207130701.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207132934.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207133622.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207133853.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207153628.jpg
+.. image::  ../Picture/2024/12/07/IMG20241207153910.jpg
+
 
 2023年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

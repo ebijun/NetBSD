@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.6.0
+ DISTNAME=       nono-1.6.2
 
 チェックサム作成
 ------------------
@@ -51,10 +51,11 @@ Makefile 内のバージョンをあげます。
 
  % make makesum
  
--rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
--rw-r--r--  1 jun  wheel  1202 Nov  2 14:42 Makefile
--rw-r--r--  1 jun  wheel   357 Nov  2 14:43 PLIST
--rw-r--r--  1 jun  wheel   350 Nov  2 14:44 distinfo
+ drwxr-xr-x  2 jun  wheel   512 Nov 12 14:15 CVS
+ -rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
+ -rw-r--r--  1 jun  wheel  1202 Nov 12 14:15 Makefile
+ -rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
+ -rw-r--r--  1 jun  wheel   350 Nov 12 14:16 distinfo
 
 make package して動作を確認します。
  
@@ -83,22 +84,13 @@ commit
 
  cvs commit 
 
- nono: update to 1.6.0.
+ nono: update to 1.6.2.
 
- 1.6.0 (2025/10/29)
+ 1.6.2 (2025/11/11)
+ m68k(Fix): "Fix the FRESTORE instruction to ignore the length field in null-state frame on 68881." 
 
- host(New): "Implement sound output."
- vm(New): "Implement ADPCM (playback only) on X68030."
- vm(Update): "Implement external request transfer on X68030 DMAC."
- vm(Update): "Implement link array chain mode on X68030 DMAC."
- vm(Update): "Separate loglevel per channel."
- vm(Update): "Implement FPACK __LTOS on Human68k mode."
- GUI(New): "Implement thread monitor."
- app(New): "Support specifying cores for heterogeneous CPU (formally)."
- vm(Fix): "Revert to suppressing full speed mode on key press on X68030. It was removed in ver 1.5.0, but was reintroduced to address unintended side effects."
- host(Update): "host-avx2, host-neon are renamed to hostcpu-avx2, hostcpu-neon."
- app(Fix): "Fix possible abnormal termination if the configuration file contains non-ASCII characters on NetBSD 11.0_BETA."
-
+ 1.6.1 (2025/11/07)
+ m88k(Update): "Pseudo STOP state now supports OpenBSD/luna88k 7.8."
 
 doc をcommit します
 ---------------------
@@ -108,9 +100,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.6.0
+ doc: Updated emulators/nono to 1.6.2
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.6.0 [jun 2025-11-02]
+        Updated emulators/nono to 1.6.2 [jun 2025-11-12]
 
