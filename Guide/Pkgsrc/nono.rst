@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.6.2
+ DISTNAME=       nono-1.6.3
 
 チェックサム作成
 ------------------
@@ -51,11 +51,11 @@ Makefile 内のバージョンをあげます。
 
  % make makesum
  
- drwxr-xr-x  2 jun  wheel   512 Nov 12 14:15 CVS
- -rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
- -rw-r--r--  1 jun  wheel  1202 Nov 12 14:15 Makefile
- -rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
- -rw-r--r--  1 jun  wheel   350 Nov 12 14:16 distinfo
+ drwxrwxr-x   2 600   125   512 Nov 12 13:59 CVS
+ -rw-r--r--   1 root  125    54 Nov 12 13:59 DESCR
+ -rw-r--r--   1 root  125  1202 Nov 26 05:16 Makefile
+ -rw-r--r--   1 root  125   357 Nov 12 13:59 PLIST
+ -rw-r--r--   1 root  125   350 Nov 26 05:16 distinfo
 
 make package して動作を確認します。
  
@@ -84,13 +84,19 @@ commit
 
  cvs commit 
 
- nono: update to 1.6.2.
+ nono: update to 1.6.3.
 
- 1.6.2 (2025/11/11)
- m68k(Fix): "Fix the FRESTORE instruction to ignore the length field in null-state frame on 68881." 
+ 1.6.3 (2025/11/25)
 
- 1.6.1 (2025/11/07)
- m88k(Update): "Pseudo STOP state now supports OpenBSD/luna88k 7.8."
+ m68k(Fix): "Fix page address mask in several places on 68030 table search."
+ m68k(Update): "Revert 68030 ATC to original-compliant behavior (FC-mixed 22-entries). These two fixes make current NetBSD/m68k newpmap kernel bootable (though the actual cause should be a bug in the NetBSD kernel)."
+ m68k(Fix): "Fix inverted condition in PFLUSH* for deleting global entries on 68040."
+ GUI(New): "Implement 68030 and 68040 page table monitor window."
+ GUI(Fix): "Fix an abnormal termination when the log window is stretched."
+ debugger(Fix): "Fix an issue where instruction breakpoints might not work."
+ debugger(Update): "Show NetBSD/m68k system call number for exception history."
+ build(Fix): "Fix a build error on platforms other than x86_64 and i386 after ver 1.6.0."
+ vm(Update): "Note: It includes a lot of time axis-related changes that were in the work for the next release, but no functional changes are expected." 
 
 doc をcommit します
 ---------------------
@@ -100,9 +106,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.6.2
+ doc: Updated emulators/nono to 1.6.3
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.6.2 [jun 2025-11-12]
+        Updated emulators/nono to 1.6.3 [jun 2025-11-26]
 
