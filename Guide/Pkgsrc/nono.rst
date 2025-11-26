@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.5.0
+ DISTNAME=       nono-1.6.3
 
 チェックサム作成
 ------------------
@@ -51,9 +51,11 @@ Makefile 内のバージョンをあげます。
 
  % make makesum
  
- -rw-r--r--  1 root  125  1202 Mar 31 10:45 Makefile
- -rw-r--r--  1 root  125   357 Mar  3 21:35 PLIST
- -rw-r--r--  1 root  125   555 Mar 31 10:45 distinfo
+ drwxrwxr-x   2 600   125   512 Nov 12 13:59 CVS
+ -rw-r--r--   1 root  125    54 Nov 12 13:59 DESCR
+ -rw-r--r--   1 root  125  1202 Nov 26 05:16 Makefile
+ -rw-r--r--   1 root  125   357 Nov 12 13:59 PLIST
+ -rw-r--r--   1 root  125   350 Nov 26 05:16 distinfo
 
 make package して動作を確認します。
  
@@ -82,24 +84,19 @@ commit
 
  cvs commit 
 
- nono: update to 1.5.0.
+ nono: update to 1.6.3.
 
- 1.5.0 (2025/09/07)
+ 1.6.3 (2025/11/25)
 
- vm(New): "Implement 1024x1024 mode of the graphic screen partially on X68030. T
-his makes NetBSD/x68k X server work though default configuration only."
- vm(New): "Implement VIRTIO_BLK_T_GET_ID command in VirtIO Block."
- vm(Update): "Limit suppressing full speed mode by key press to LUNA."
- vm(Update): "Create an initialized SRAM.DAT if it doesn't exist on X68030. This
- also obsoletes --create-sram option."
- vm(Fix): "Fix wait state count for Nereid bank memory."
- m88k(Update): "Implement that floating-point instructions raise an exception wh
-en SFD1 is set."
- m88k(Fix): "Fix missing exception for rte instruction in user mode."
- GUI(Update): "Display MHz too in the performance counter."
- GUI(Fix): "Fix possible abnormal termination when opening or closeing some moni
-tor windows."
- host(Update): Reimplement log."
+ m68k(Fix): "Fix page address mask in several places on 68030 table search."
+ m68k(Update): "Revert 68030 ATC to original-compliant behavior (FC-mixed 22-entries). These two fixes make current NetBSD/m68k newpmap kernel bootable (though the actual cause should be a bug in the NetBSD kernel)."
+ m68k(Fix): "Fix inverted condition in PFLUSH* for deleting global entries on 68040."
+ GUI(New): "Implement 68030 and 68040 page table monitor window."
+ GUI(Fix): "Fix an abnormal termination when the log window is stretched."
+ debugger(Fix): "Fix an issue where instruction breakpoints might not work."
+ debugger(Update): "Show NetBSD/m68k system call number for exception history."
+ build(Fix): "Fix a build error on platforms other than x86_64 and i386 after ver 1.6.0."
+ vm(Update): "Note: It includes a lot of time axis-related changes that were in the work for the next release, but no functional changes are expected." 
 
 doc をcommit します
 ---------------------
@@ -109,9 +106,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.5.0
+ doc: Updated emulators/nono to 1.6.3
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.5.0 [jun 2025-09-08]
+        Updated emulators/nono to 1.6.3 [jun 2025-11-26]
 

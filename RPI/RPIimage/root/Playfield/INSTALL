@@ -1,0 +1,22 @@
+vi /usr/pkg/etc/pkgin/repositories.conf 
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv6hf/2025
+
+pkgin install git-base
+pkgin install cmake
+pkgin install ninja-build
+git clone --recursive https://github.com/awemorris/PlayfieldEngine.git
+cd PlayfieldEngine
+git submodule update --init
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_RPATH=/usr/X11R7/lib ..
+make
+check /usr/local
+make install
+check /usr/local
+
+cp ../samples/shoot2/* .
+./playfield
+
+cd /usr/local
+tar czvf /root/playfield-`uname -p`-nightly-20251026-7cbe585.tgz /usr/local 

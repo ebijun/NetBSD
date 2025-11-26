@@ -35,6 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
+ 関西オープンフォーラム2025 BSDなひとときの記録, https://posfie.com/@ebijun/p/poMBvId
  オープンソースカンファレンス2025大阪展示の記録,https://togetter.com/li/2496475
  2024/10-11 NetBSDブースの記録,https://togetter.com/li/2456931
  オープンソースカンファレンス2024大阪展示の記録,https://togetter.com/li/2298407
@@ -121,6 +122,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ GitHub Actionsを使ってNetBSDマイナー機種用のビルドテストCIを書いてみた話,OSC2025大阪,https://speakerdeck.com/tsutsui/osc2025osaka
  PC-6001のPSG演奏デモをなるべくNetBSD環境を使って作った話,KOF2024,https://speakerdeck.com/tsutsui/kof2024
  digital VAX NetBSD/vaxの歴史とVAXstation 3100/m30展示,OSC2024大阪,https://speakerdeck.com/tsutsui/osc2024osaka
  SONY NEWS NetBSD移植作業とNWS-3260展示,KOF2023, https://speakerdeck.com/tsutsui/kof2023
@@ -150,6 +152,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2025/1/25,大阪産業創造館,UMAX Apus2000/200
  2024/11/8-9,南港ATC,LUNA PC-6001mkII
  2024/1/27,大阪産業創造館,VAXstation 3100/m30
  2023/11/10-11,南港ATC,NEWS NWS-3260
@@ -174,6 +177,26 @@ Maps:
  2005/10/28-29,大阪産業創造館,EWS4800/360AD ドリキャス+ISAバス　USL-5P
  2004/10-22-23,大阪産業創造館,XCAST ふきだしくん 
  2003/10/31-11/1,大阪産業創造館,XCAST トレバ
+
+2025
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2025/01/25/IMG20250125105503.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125105507.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125105712.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125110425.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125110427.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125110654.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125110806.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125110812.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125110815.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125110819.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125112217.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125112237.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125131907.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125134143.jpg
+.. image::  ../Picture/2025/01/25/IMG20250125134639.jpg
+
 
 2024
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
