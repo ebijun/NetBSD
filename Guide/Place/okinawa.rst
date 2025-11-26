@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-9 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2025 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -50,7 +50,8 @@ Maps:
  2016 Okinawa,7/2,130,20,沖縄コンベンションセンター
  2017 Okinawa,6/17,100,14,沖縄県市町村自治会館
  2018 Okinawa,6/16,80,12,沖縄コンベンションセンター
- 2019 Okinawa,4/20,,11,沖縄県市町村自治会館
+ 2019 Okinawa,4/20,100,11,沖縄県市町村自治会館
+ 2025 Okinawa,11/29,,,SAKURA innobase Okinawa
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,6 +63,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 221,OSC2025沖縄,http://www.re.soum.co.jp/~jun/OSC2025okinawa.pdf
  141,OSC2019沖縄,http://www.re.soum.co.jp/~jun/OSC2019okinawa.pdf
  125,OSC2018沖縄,http://www.re.soum.co.jp/~jun/OSC2018okinawa.pdf
  107,OSC2017沖縄,http://www.re.soum.co.jp/~jun/OSC2017okinawa.pdf
@@ -78,7 +80,8 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
- OSC2019沖縄 NetBSDブース展示の記録,
+ OSC2025沖縄 NetBSDブース展示の記録,https://posfie.com/@ebijun/p/NgePtcK
+ OSC2019沖縄 NetBSDブース展示の記録,https://posfie.com/@ebijun/p/YGCEert
  OSC2018沖縄 NetBSDブース展示の記録,https://togetter.com/li/1237675
  OSC2017沖縄 NetBSDブース展示の記録,http://togetter.com/li/1120958
  OSC2016沖縄 NetBSDブース展示の記録,http://togetter.com/li/995155
@@ -93,24 +96,28 @@ togetterまとめ
 .. csv-table::
  :widths: 60 30 60
 
+ NAHA LOCAL BREWERIES' GARDEN,牧志,希望ヶ丘公園 13:00-20:00
+ HEAVY SASORI BREWING,牧志,17:00-24:00 那覇市牧志3-9-14-2
+ ウォルフブロイ,首里,13:00-19:30
+ MAHOWBREW,安里,330沿い 18:00-23:00
+ 桜坂ブルワリー,牧志,12:00-18:00
+ 浮島ブルーイング,牧志,17:00-23:30
+ KANEHIDECRAFT BREWERY,旭橋,15:00-20:00
  スクの水揚げの季節,旧暦の7月1日,2019年は5月29日
+ 市場の古本屋ウララ,牧志公設市場,『市場のことば、本の声』
  COFFEEpotohoto,栄町市場,珈琲豆焙煎販売。毎年1個スタンプを押す。
- 桜坂劇場,国際通り,第11回沖縄国際映画祭
+ 桜坂劇場,国際通り,マッツミケルセン 女性の休日
  バッカスの胃袋,国際通り,旧ヘリオスパブビール各種。15:00-23:00/24:00 3F?
- 豚々ジャッキー,久米,11:00-14:00 17:00-21:00
+ 豚々ジャッキー,久米,11:30-14:00 17:00-21:00
+ とんかつ小やじ,松尾,11:00-20:00
  コザ麦酒工房,沖縄市,火～土 17:00-23:30 (金土は0:00まで)
- 沖縄ブルーイング,アメリカンビレッジ,16:00- ビール醸造所
- 浮島ブルーイング,牧志x浮島,17:00-22:00
  珈琲屋台ひばり屋,牧志,那覇市牧志3-9-26。10:30-19:00
  沖縄電子,宜野湾,電子部品店 9:00-18:00
- エビスチキン,宜野湾,あひる焼き持ち帰り専門店 おやじの体調チェック
  クラフトビアハウス 麦,県庁前,沖縄でクラフトビールを飲める。
  ジャッキーステーキハウス,旭橋,打ち上げに使う
  スマグラーズアイリッシュパブ,県庁脇,フィッシュ&チップス
  松風苑,南風原,金城哲夫資料館は必見
- ハードオフ,泡瀬/宜野湾/小禄,小禄が増えてる！マンタ公園とは何か。
- 市場の古本屋ウララ,牧志公設市場,『市場のことば、本の声』
- 宮里小書店,栄町市場,日祝定休
+ ハードオフ,宜野湾/小禄/中城/泡瀬,マンタ公園とは何か。
  BOOKSじのん,宜野湾,金城哲夫研究を買いたい。9:00-20:00
  くじらブックス,八重瀬,11:00-20:00 屋宣原135-2
  我楽多文庫,奥武山公園,ねこのいる古本屋
@@ -122,7 +129,6 @@ togetterまとめ
  ギャラリー小禄,奥武山公園,沖縄であんみつ。
  沖縄県立博物館・美術館,おもろまち,喫茶店で豆焙煎
  ステーキハウス８８, 辻,国際通りにもあるけど辻。
- 沖縄熱血社交場,国際通り,ライブハウス。アラケモ本拠地
  DEEokinawa,www.dee-okinawa.com,スク情報(水揚げ/定食/のぼり)
  ピッツァＴＯＧＯ,宜野湾,石窯ピザ
  アメリカンNo.1倉庫,宜野湾,営業しているのだろうか
@@ -134,13 +140,43 @@ togetterまとめ
  リサイクルショップエース,大謝名,10:00-
  北谷ハーバーブルワリー,北谷,北谷町字美浜53-1 17:30-23:00
  I's Public Ale House,北谷,17:00-1:00
- Dojo Bar Naha,安里１丁目交差点,19:00-
  ポストマン,読谷,プラモデル 13:00-19:00
  キングタコス,金武,タコチキンフライライスチーズ。
  やっぱりステーキ2nd,美栄橋,AM11:00-AM7:00まで営業
- 伊豆味ドライブイン,伊豆味,11:00-20:00 うなぎと蝮の謎 3月~7月休
  CONTE,首里城,11:00-17:00 県産豚のロースト
- 言事堂,松尾,古書店。移転予定。
+ 言事堂,松尾,古書店。長野県 諏訪市末広5-18 に移転
+
+2019年
+----------
+
+.. image::  ../Picture/2019/04/19/DSC_6960.JPG
+.. image::  ../Picture/2019/04/19/DSC_6961.JPG
+.. image::  ../Picture/2019/04/19/DSC_6962.JPG
+.. image::  ../Picture/2019/04/19/DSC_6963.JPG
+.. image::  ../Picture/2019/04/19/DSC_6964.JPG
+.. image::  ../Picture/2019/04/19/DSC_6966.JPG
+.. image::  ../Picture/2019/04/19/DSC_6967.JPG
+.. image::  ../Picture/2019/04/19/DSC_6968.JPG
+.. image::  ../Picture/2019/04/19/DSC_6969.JPG
+.. image::  ../Picture/2019/04/19/DSC_6970.JPG
+.. image::  ../Picture/2019/04/19/DSC_6974.JPG
+.. image::  ../Picture/2019/04/20/DSC_6975.JPG
+.. image::  ../Picture/2019/04/20/DSC_6976.JPG
+.. image::  ../Picture/2019/04/20/DSC_6977.JPG
+.. image::  ../Picture/2019/04/20/DSC_6978.JPG
+.. image::  ../Picture/2019/04/20/DSC_6979.JPG
+.. image::  ../Picture/2019/04/20/DSC_6980.JPG
+.. image::  ../Picture/2019/04/20/DSC_6981.JPG
+.. image::  ../Picture/2019/04/20/DSC_6982.JPG
+.. image::  ../Picture/2019/04/20/DSC_6984.JPG
+.. image::  ../Picture/2019/04/20/DSC_6988.JPG
+.. image::  ../Picture/2019/04/20/DSC_6989.JPG
+.. image::  ../Picture/2019/04/20/DSC_6990.JPG
+.. image::  ../Picture/2019/04/20/DSC_6991.JPG
+.. image::  ../Picture/2019/04/20/DSC_6992.JPG
+.. image::  ../Picture/2019/04/20/DSC_6993.JPG
+.. image::  ../Picture/2019/04/20/DSC_6994.JPG
+
 
 2018年
 ----------
