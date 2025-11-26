@@ -6,7 +6,7 @@ ARCH=aarch64
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 #NetBSD-current
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20251006075144Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20251125125914Z/evbarm-aarch64/binary
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2025/
 
 #NetBSD10
@@ -19,18 +19,18 @@ RPI=${BINARY}/gzimg/arm64.img.gz
 ORD=a.img
 
 # UEFI
-UEFI_VER=v1.42
+UEFI_VER=v1.50
 UEFI_FIRM=RPi4_UEFI_Firmware_${UEFI_VER}.zip
 UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 
 # https://github.com/worproject/rpi5-uefi/releases/download/v0.3/
-# https://github.com/NumberOneGit/rpi5-uefi
+# https://github.com/NumberOneGit/rpi5-uefi <-- use this
 RPI5_UEFI=RPI5
 
 #Firmware:
-#commit 4110ba807ae84b343da239fc30db49ea426f9c5d (HEAD -> master, origin/master, origin/HEAD)
+#commit b2fcbf1f02f85c86384d271d3b00442097f21661 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Mon Oct 6 13:50:24 2025 +0100
+#Date:   Tue Nov 25 14:39:54 2025 +0000
 
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
@@ -112,23 +112,24 @@ restore:
 	vnconfig -u ${VND}
 	vnconfig -u ${VND_ORG}
 
-#4096*766402=512*6131216=3139182592
-#6131216-90200-6=6041010
+#4096*804722=512*6437776=3296141312
+#6437776-90200-6=6347570
 #03_back
 gpt:
 	vnconfig ${VND} ${FILE}
 	gpt create -p 2 ${VND}
 	gpt add -i 1 -l "EFI" -s 90200 -t efi ${VND}
-	gpt add -i 2 -l "netbsd-root" -s 6041010 -t ffs ${VND}
+	gpt add -i 2 -l "netbsd-root" -s 6347570 -t ffs ${VND}
 
 	newfs_msdos /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |head -2 |tail -1`
 	newfs -n 500000 -b 4096 /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |tail -1`
 	vnconfig -u ${VND}
 
 # make image file. 512*3813376=2GB
+# edit 03_Back
 file: 
 	echo Create ${FILE}.
-	dd if=/dev/zero of=${FILE} bs=4096 count=766402 progress=62000
+	dd if=/dev/zero of=${FILE} bs=4096 count=804722 progress=62000
 	sleep 3
 
 # stop sshd for package install
