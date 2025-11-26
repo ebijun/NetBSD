@@ -1,20 +1,30 @@
-VERSION: :1,$s/2025-10-07/2025-10-07/g
-ISO:     :1,$s/20251006075144Z/20251006075144Z/g
-NetBSD:  :1,$s/11.99.3/11.99.3/g
-PKGSRC:  :1,$s/2022/2022/
+VERSION: :1,$s/2025-11-26/2025-11-26/g
+ISO:     :1,$s/20251125125914Z/20251125125914Z/g
+NetBSD:  :1,$s/11.99.4/11.99.4/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-10-07-netbsd-raspi-aarch64.img
+Subject: 2025-11-26-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-10-07-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2025-11-26-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-10-07-aarch64/2025-10-07-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-10-07-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-11-26-aarch64/2025-11-26-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-11-26-aarch64/MD5
 
 Topics:
+- gcc-14.3.0 
+  CFLAGS+=-Wno-error=incompatible-pointer-types -Wno-error=declaration-after-statement
+
+- libc-12.224
+  if pkgsrc/devel/cargo-c failed,use 2025-09-18-aarch64.
+  https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=59754
+
+- firefox build failed
+ https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=59775
+ nit https://github.com/ebijun/NetBSD/blob/master/pkgsrc/firefox/patch-js_src_jit_arm64_vixl_Registers-vixl.h
+
 - dillo build failed:
 checking whether the C compiler works... no
 configure: error: in '/mnt/aarch64/pkgsrc/www/dillo/work.aarch64/dillo-3.2.0':
@@ -23,47 +33,8 @@ See 'config.log' for more details
 *** Error code 77
 
 - libreoffice build failed:
-1. pkgsrc/misc/libreoffice/work.aarch64/libreoffice-25.2.4.3/workdir/UnpackedTarball/pdfium/core/fxcrt/numerics/safe_conversions.h:43:32: warning: unused parameter 'value' [-Wunused-parameter]
-   43 |   static constexpr bool Do(Src value) {
-      |                            ~~~~^~~~~
-gmake: *** [Makefile:178: Executable_gengal] Error 2
-*** Error code 2
-
-2. libreoffice-25.2.4.3/workdir/UnpackedTarball/pdfium/core/fpdfdoc/cpdf_bafontmap.cpp 
-
-  ByteString sAlias;
-//  RetainPtr<CPDF_Font> pFont =
-//      bFind ? FindFontSameCharset(&sAlias, nCharset) : nullptr;
-  RetainPtr<CPDF_Font> pFont;
-  if (!bFind) {
-    pFont = FindFontSameCharset(&sAlias, nCharset);
-  }       
-  if (!pFont) {
-    pFont = AddFontToDocument(sFontName, nCharset);
-    sAlias = EncodeFontAlias(sFontName, nCharset);
-  }
-
-3. libreoffice/work.aarch64/libreoffice-25.2.4.3/workdir/UnpackedTarball/pdfium/core/fpdfdoc/cpdf_bafontmap.cpp:283:12: error: could not convert 'nullptr' from 'std::nullptr_t' to 'fxcrt::RetainPtr<CPDF_Font>'
-  283 |     return nullptr;
-  
-  //  if (!pFontDict)
-  //    return nullptr;
+  Fixed.libreoffice-25.8.2.2.
  
-- add net/nanotodon
-  Nanotodon is a light-weight CUI/C99 mastodon client.
-
-arm64$ nanotodon
-Hello! Welcome to nanotodon!
-First, Please tell me the server where you live.
-(https://[please enter this part]/)
->social.mikutter.hachune.net
-
-Next, I will do application authentication.
-Please access to following URL, then after authorization, please input displayed authorization code.
-https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
-> [input authorization code]
- :
-
 - for RPI5: 
 1. Download RPI5-D0v1
  https://github.com/NumberOneGit/rpi5-uefi/releases/tag/v0.1
@@ -123,16 +94,30 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- NetBSD-11.99.3 sh-20220122-20251006075144Z unbound-1.23.1
- userland-NetBSD-11.99.3/evbarm
+ g++-14.3.0 gcc-14.3.0 libc-12.224 libssh-50.0 libstdc++-9.2 NetBSD-11.99.4
+ openssh-10.2 opensshd-10.2 sh-20220122-20251125125914Z
+ userland-NetBSD-11.99.4/evbarm
 
 pkgsrc:
- at-spi2-core-2.54.0nb8 curl-8.16.0nb1 freetype2-2.14.1 harfbuzz-12.1.0
- libcups-2.4.14 libproxy-0.5.11 libxml2-2.14.6 nghttp2-1.67.1 p11-kit-0.25.10
- pango-1.57.0 pkgin-25.10.0 qt5-qtbase-5.15.17nb2 ruby32-nokogiri-1.18.10
- ruby32-pkg-config-1.6.4 tiff-4.7.1
+ at-spi2-core-2.58.1 cairo-1.18.4nb2 curl-8.17.0 dbus-1.16.2nb2
+ fontconfig-2.17.1nb1 fossil-2.27 gd-2.3.3nb17 gdk-pixbuf2-2.42.12nb5
+ git-base-2.52.0 glib2-2.84.4nb1 gobject-introspection-1.84.0nb1
+ gsettings-desktop-schemas-40.0nb4 gtk2+-2.24.33nb34 gtk3+-3.24.51
+ harfbuzz-12.2.0 imlib2-1.12.5 libcups-2.4.14nb1 libgpg-error-1.56
+ libproxy-0.5.11nb2 libxkbcommon-1.13.0 m17n-lib-1.8.0nb24 medit-1.2.0nb41
+ mlterm-3.9.4nb4 mozilla-rootcerts-1.1.20251029 mpdecimal-4.0.1
+ nanotodon-0.5.0nb3 nghttp2-1.68.0 pango-1.57.0nb1 pcre2-10.47
+ py313-setuptools-80.9.0 python313-3.13.9 qt5-qtbase-5.15.17nb3
+ qt5-qtx11extras-5.15.17nb1 qt5-qtxmlpatterns-5.15.17nb1 raqm-0.10.3nb1
+ readline-8.3nb1 ruby32-atk-4.3.3nb1 ruby32-cairo-1.18.4nb1
+ ruby32-cairo-gobject-4.3.3nb1 ruby32-gdk3-4.3.3nb1 ruby32-gdk_pixbuf2-4.3.3nb1
+ ruby32-gio2-4.3.3nb1 ruby32-glib2-4.3.3nb1
+ ruby32-gobject-introspection-4.3.3nb1 ruby32-gtk3-4.3.3nb1
+ ruby32-mikutter-5.1.1nb5 ruby32-pango-4.3.3nb1 shared-mime-info-2.4nb6
+ sqlite3-3.51.0 uim-1.8.9nb21 wayland-1.24.0 zsh-5.9nb3
+
 RPI4 status:
-- boot via UEFI_VER=v1.42
+- boot via UEFI_VER=v1.50
   https://github.com/pftf/RPi4/releases
 
 In this image,pre-setted /boot/RPI_EFI.fd
@@ -150,7 +135,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 11.99.3 evbarm-aarch64 20251006075144Z arm64.img from nyftp.
+- NetBSD-current 11.99.4 evbarm-aarch64 20251125125914Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
