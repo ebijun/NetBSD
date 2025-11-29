@@ -16,5 +16,5 @@ add_diskimage:
 fetch:
 	./NewestISO |sh
 
-replace:
+update:
 	@cp -p `ls -t liveimage-x68k-with-packages-*.hds |head -1` "liveimage-x68k-with-packages-`date +%Y%m%d`.hds" 
