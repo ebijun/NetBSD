@@ -163,3 +163,11 @@ pkgsrcからnanotodon をインストールします。
 .. [はよーん] http://jnug.net/msg012914ja.html
 .. [sayaka] https://github.com/isaki68k/sayaka
 
+NetBSD/x68k での表示方法
+----------------------------
+
+::
+
+ % mlterm-x68kgrf
+ LANG=ja_JP.UTF-8ja
+ 
