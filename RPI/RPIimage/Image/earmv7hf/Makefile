@@ -12,7 +12,7 @@
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20251007103830Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20251110022047Z/evbarm-earmv7hf/binary
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2025/
 
@@ -36,9 +36,9 @@ LIST=man modules xbase xcomp xetc xfont xserver
 LIST_UPDATE=base base32 comp debug debug32 dtb games gpufw kern-GENERIC man manhtml modules rescue tests text xbase xetc xcomp xdebug xfont xserver
 
 #Firmware: 
-#commit 4110ba807ae84b343da239fc30db49ea426f9c5d (HEAD -> master, origin/master, origin/HEAD)
+#commit 65796398ca3bbb46a8911fd424c7659c96be6eb6 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Mon Oct 6 13:50:24 2025 +0100
+#Date:   Mon Nov 3 16:12:48 2025 +0000
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup4.dat fixup4cd.dat fixup4db.dat fixup4x.dat fixup_cd.dat fixup_db.dat fixup_x.dat start.elf start4.elf start4cd.elf start4db.elf start4x.elf start_cd.elf start_db.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -241,3 +241,4 @@ image-update:
 	@echo mount /dev/sd0a /mnt
 	@for i in ${LIST_UPDATE} ; do (echo tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
 	@echo cp ${SETS}/etc.tgz ${MNT}/
+	@echo cp -r ${BINARY}/kernel/netbsd-GENERIC.img.gz ${MNT}/

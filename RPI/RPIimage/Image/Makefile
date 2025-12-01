@@ -19,7 +19,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20251009161003Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20251130071203Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -29,12 +29,13 @@ KERNEL7=${BINARY}/kernel/netbsd-RPI2.gz
 
 #LIST=man misc modules tests text xbase xcomp xetc xfont xserver
 LIST=man modules xbase xcomp xetc xfont xserver 
+LIST_UPDATE=base base32 comp debug debug32 dtb games gpufw index.html kern-RPI kern-RPI2 man manhtml misc modules rescue tests text xbase xcomp xdebug xetc xfont xserver
 
 #Firmware: 
 # git log HEAD |head
-#commit 4110ba807ae84b343da239fc30db49ea426f9c5d (HEAD -> master, origin/master, origin/HEAD)
+#commit 55c0555f30b4ff1ad20a3dd4db535b0d013c0a40 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Mon Oct 6 13:50:24 2025 +0100
+#Date:   Thu Nov 27 16:44:21 2025 +0000
 
 FIRM=LICENCE.broadcom bootcode.bin fixup4cd.dat fixup_cd.dat start.elf start4db.elf start_db.elf fixup.dat fixup4db.dat fixup_db.dat start4.elf start4x.elf start_x.elf fixup4.dat fixup4x.dat  fixup_x.dat  start4cd.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -241,4 +242,11 @@ libssls:
 	(cd ${MNT}/usr/lib;ln -s libcrypto.so.12  libcrypto.so.11)
 	umount ${MNT}
 	vnconfig -u ${VND}
+
+image-update:
+	#@echo mount /dev/sd0a ${MNT}
+	#@for i in ${LIST_UPDATE} ; do (echo tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
+	#@echo cp ${SETS}/etc.tgz ${MNT}/
+	@echo cp -p ${BINARY}/kernel/netbsd-RPI.img.gz  ${MNT}/kernel.img.gz
+	@echo cp -p ${BINARY}/kernel/netbsd-RPI2.img.gz  ${MNT}/kernel7.img.gz
 
