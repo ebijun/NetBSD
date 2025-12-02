@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 10.99.14 (GENERIC64) #0: Sat Jun 14 15:29:24 UTC 2025
+NetBSD 11.99.4 (GENERIC64) #0: Mon Dec  1 09:31:44 UTC 2025
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 7651 MB
 avail memory = 7374 MB
@@ -200,11 +200,11 @@ nvme0: NVMe 1.1
 nvme0: interrupting on irq 590
 nvme0: APPLE SSD AP0256Q, firmware 387.120., serial 0ba0160360893e2c
 ld4 at nvme0 nsid 1
-ld4: 233 GB, 7599 cyl, 128 head, 63 sec, 4096 bytes/sect x 61279344 sectors (0 bytes/physsect)
+ld4: 233 GB, 7599 cyl, 128 head, 63 sec, 4096 bytes/sect x 61279344 sectors
 ld5 at nvme0 nsid 2
-ld5: 3072 KB, 0 cyl, 16 head, 63 sec, 4096 bytes/sect x 768 sectors (0 bytes/physsect)
+ld5: 3072 KB, 0 cyl, 16 head, 63 sec, 4096 bytes/sect x 768 sectors
 ld6 at nvme0 nsid 3
-ld6: 128 MB, 32 cyl, 16 head, 63 sec, 4096 bytes/sect x 32768 sectors (0 bytes/physsect)
+ld6: 128 MB, 32 cyl, 16 head, 63 sec, 4096 bytes/sect x 32768 sectors
 genfb0 at simplebus2: Simple Framebuffer (1920x1080 32-bpp @ 0x9e3a18000)
 genfb0: framebuffer at 0xe3a18000, size 1920x1080, depth 32, stride 7680
 wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
@@ -258,8 +258,22 @@ sd0: fabricating a geometry
 sd0: GPT GUID: e7af6b38-62ff-4c2b-a395-b65b9d9346cb
 dk5 at sd0: "EFI", 90200 blocks at 3, type: msdos
 dk6 at sd0: "netbsd-root", 2000314368 blocks at 90203, type: ffs
+uhidev1 at uhub7 port 3 configuration 1 interface 0
+uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 4, iclass 3/1
+ukbd0 at uhidev1
+wskbd0 at ukbd0: console keyboard, using wsdisplay0
+uhidev2 at uhub7 port 3 configuration 1 interface 1
+uhidev2: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 4, iclass 3/1
+uhidev2: 6 report ids
+ums0 at uhidev2 reportid 1: 5 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
+uhid1 at uhidev2 reportid 2: input=7, output=0, feature=0
+uhid2 at uhidev2 reportid 3: input=1, output=0, feature=0
+uhid3 at uhidev2 reportid 4: input=1, output=0, feature=0
+uhid4 at uhidev2 reportid 5: input=2, output=0, feature=0
+uhid5 at uhidev2 reportid 6: input=0, output=0, feature=7
 umass1 at uhub7 port 4 configuration 1 interface 0
-umass1: ASMT (0x174c) ASM225 (0x55aa), rev 2.10/1.00, addr 4
+umass1: ASMT (0x174c) ASM225 (0x55aa), rev 2.10/1.00, addr 5
 umass1: using SCSI over Bulk-Only
 scsibus1 at umass1: 2 targets, 1 lun per target
 sd1 at scsibus1 target 0 lun 0: <ASMT, ASM225, 0> disk fixed
@@ -269,10 +283,9 @@ boot device: dk6
 root on dk6
 entropy: best effort
 root file system type: ffs
-kern.module.path=/stand/evbarm/10.99.14/modules
+kern.module.path=/stand/evbarm/11.99.4/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
 entropy: ready
 wsdisplay0: screen 4 added (default, vt100 emulation)
-nd6_rtrequest: bad gateway value: bge0
