@@ -1,26 +1,24 @@
-VERSION: :1,$s/2025-10-08/2025-10-08/g
-ISO:     :1,$s/20251007103830Z/20251007103830Z/g
-NetBSD:  :1,$s/11.99.3/11.99.3/g
-PKGSRC:  :1,$s/2025-10-08/2025-10-08/g
+VERSION: :1,$s/2025-12-02/2025-12-02/g
+ISO:     :1,$s/20251201093144Z/20251201093144Z/g
+NetBSD:  :1,$s/11.99.4/11.99.4/g
+PKGSRC:  :1,$s/2025-12-02/2025-12-02/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-10-08-netbsd-armv7-earmv7hf.img
+Subject: 2025-12-02-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-10-08-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2025-12-02-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-10-08-earmv7hf/2025-10-08-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-10-08-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-12-02-earmv7hf/2025-12-02-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-12-02-earmv7hf/MD5
 
 Update:
 - pkgsrc/devel/cargo-c failed with /usr/pkg/lib/librustc_driver-43ce19429944873a
 .so: Undefined PLT symbol "_ZNSt18condition_variable4waitERSt11unique_lockISt5mu
 texE" (symnum = 9211)
  https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=59754
- I put 
- https://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-10-08-earmv7hf/libstdc%2B%2B.so.9.1
 
 - firefox
  pkgsrc/www/firefox/work.earmv7hf/firefox-138.0.4/third_party/aom/aom_ports/aarch32_cpudetect.c:75:2: error: #error "Runtime CPU detection selected, but no CPU detection method " "available for your platform. Rerun cmake with -
@@ -41,32 +39,42 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 11.99.3 evbarm-armv7hf 20251007103830Z armv7.img from nyftp.
+- NetBSD 11.99.4 evbarm-armv7hf 20251201093144Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 
 - Firmware:
-commit 4110ba807ae84b343da239fc30db49ea426f9c5d (HEAD -> master, origin/master, origin/HEAD)
+commit 55c0555f30b4ff1ad20a3dd4db535b0d013c0a40 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Mon Oct 6 13:50:24 2025 +0100
+Date:   Thu Nov 27 16:44:21 2025 +0000
 
 sysinfo:
- g++-14.3.0 gcc-14.3.0 libstdc++-9.2 NetBSD-11.99.3 sh-20220122-20251007103830Z
- unbound-1.23.1 userland-NetBSD-11.99.3/evbarm
+ libc-12.224 libssh-50.0 NetBSD-11.99.4 openssh-10.2 opensshd-10.2
+ sh-20220122-20251201093144Z userland-NetBSD-11.99.4/evbarm
 
 pkgsrc:
- bash-5.3.3nb1 cairo-1.18.4nb1 curl-8.16.0 dbus-1.16.2nb1 fltk-1.4.4
- fontconfig-2.17.1 gd-2.3.3nb16 gdk-pixbuf2-2.42.12nb4 git-base-2.51.0
- glib2-2.84.4 gtk2+-2.24.33nb33 gtk3+-3.24.50nb1 harfbuzz-11.4.5 icewm-3.9.0
- imlib2-1.12.3nb4 lerc-4.0.0 libcups-2.4.12nb1 libffi-3.5.2 libgcrypt-1.11.2
- libjpeg-turbo-3.1.2 libproxy-0.5.11 libwebp-1.6.0nb1 libxml2-2.14.6
- m17n-lib-1.8.0nb23 medit-1.2.0nb40 mlterm-3.9.4nb3 nettle-3.10.2 nghttp2-1.67.1
- p11-kit-0.25.8 pango-1.57.0 pcre2-10.46 qt5-qtbase-5.15.17nb2 raqm-0.10.3
- readline-8.3 ruby32-atk-4.3.3 ruby32-cairo-gobject-4.3.3 ruby32-gdk3-4.3.3
- ruby32-gdk_pixbuf2-4.3.3 ruby32-gio2-4.3.3 ruby32-glib2-4.3.3
- ruby32-gobject-introspection-4.3.3 ruby32-gtk3-4.3.3 ruby32-mikutter-5.1.1nb4
- ruby32-nokogiri-1.18.10 ruby32-pango-4.3.3 ruby32-pkg-config-1.6.4 sayaka-3.8.4
- sqlite3-3.50.4 tiff-4.7.0nb3 uim-1.8.9nb20 wayland-1.23.0nb7
+ at-spi2-core-2.58.1 brotli-1.2.0 cairo-1.18.4nb2 curl-8.17.0 dbus-1.16.2nb2
+ fontconfig-2.17.1nb1 fossil-2.27 freetype2-2.14.1 gd-2.3.3nb17
+ gdk-pixbuf2-2.42.12nb5 git-base-2.51.2 glib2-2.84.4nb1
+ gobject-introspection-1.84.0nb1 graphene-1.10.8nb3
+ gsettings-desktop-schemas-40.0nb4 gsl-2.8 gst-plugins1-bad-1.26.7
+ gst-plugins1-base-1.26.7 gstreamer1-1.26.7 gtk2+-2.24.33nb34 gtk3+-3.24.51
+ gtk4-4.18.6nb3 harfbuzz-12.2.0 imlib2-1.12.5 iso-codes-4.16.0 jasper-4.2.8
+ lcms2-2.16nb2 libb2-0.98.1nb1 libcups-2.4.14nb1 libgpg-error-1.56
+ libproxy-0.5.11nb2 libxkbcommon-1.12.3 m17n-lib-1.8.0nb24 medit-1.2.0nb41
+ mlterm-3.9.4nb4 mng-2.0.3nb1 mozilla-rootcerts-1.1.20251029 mpdecimal-4.0.1
+ nanotodon-0.5.0nb3 nghttp2-1.68.0 p11-kit-0.25.10 pango-1.57.0nb1 pcre2-10.47
+ pkgin-25.10.0 py313-setuptools-80.9.0 python313-3.13.9 qt5-qtbase-5.15.17nb3
+ qt5-qtx11extras-5.15.17nb1 qt5-qtxmlpatterns-5.15.17nb1 qt6-qt5compat-6.10.0
+ qt6-qtbase-6.10.0 qt6-qtdeclarative-6.10.0 qt6-qtimageformats-6.10.0
+ qt6-qtlanguageserver-6.10.0 qt6-qtshadertools-6.10.0 qt6-qtsvg-6.10.0
+ raqm-0.10.3nb1 readline-8.3nb1 ruby32-atk-4.3.3nb1 ruby32-cairo-1.18.4nb1
+ ruby32-cairo-gobject-4.3.3nb1 ruby32-gdk3-4.3.3nb1 ruby32-gdk_pixbuf2-4.3.3nb1
+ ruby32-gio2-4.3.3nb1 ruby32-glib2-4.3.3nb1
+ ruby32-gobject-introspection-4.3.3nb1 ruby32-gtk3-4.3.3nb1
+ ruby32-mikutter-5.1.1nb5 ruby32-pango-4.3.3nb1 shared-mime-info-2.4nb6
+ sqlite3-3.51.0 tiff-4.7.1 uim-1.9.7pre20251027 wayland-1.24.0
+ xcb-util-cursor-0.1.6 zsh-5.9nb3
 
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2025/
