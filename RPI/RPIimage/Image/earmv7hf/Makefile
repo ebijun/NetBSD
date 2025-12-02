@@ -7,12 +7,11 @@
 #procfs               16         16          0 100% /proc
 #tmpfs            485376         16     485360   0% /tmp
 #tmpfs            485376         16     485360   0% /var/shm
-#/dev/sd0a     465183712   93936240  347988288  21% /mnt
 
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20251110022047Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20251201093144Z/evbarm-earmv7hf/binary
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2025/
 
@@ -36,9 +35,9 @@ LIST=man modules xbase xcomp xetc xfont xserver
 LIST_UPDATE=base base32 comp debug debug32 dtb games gpufw kern-GENERIC man manhtml modules rescue tests text xbase xetc xcomp xdebug xfont xserver
 
 #Firmware: 
-#commit 65796398ca3bbb46a8911fd424c7659c96be6eb6 (HEAD -> master, origin/master, origin/HEAD)
+#commit 55c0555f30b4ff1ad20a3dd4db535b0d013c0a40 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Mon Nov 3 16:12:48 2025 +0000
+#Date:   Thu Nov 27 16:44:21 2025 +0000
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup4.dat fixup4cd.dat fixup4db.dat fixup4x.dat fixup_cd.dat fixup_db.dat fixup_x.dat start.elf start4.elf start4cd.elf start4db.elf start4x.elf start_cd.elf start_db.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -74,8 +73,9 @@ extract:
 rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
+#	(32768+163840)+5480448=5480448
 	fdisk -uf -0 -s 12/32768/163840 ${VND} 
-	fdisk -uf -1 -s 169/196608/4964352 ${VND} 
+	fdisk -uf -1 -s 169/196608/5480448 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
@@ -100,9 +100,8 @@ rpi:
 # make image file. 512*3813376=2GB
 file: 
 	echo Create ${FILE}.
-#	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
-	dd if=/dev/zero of=${FILE} bs=512 count=5160960 progress=62000
-#	 2048*2520
+# 2048*2772
+	dd if=/dev/zero of=${FILE} bs=512 count=5677056 progress=70963
 	sleep 3
 
 # stop sshd for package install
