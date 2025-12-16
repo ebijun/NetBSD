@@ -1,0 +1,10 @@
+#INST=./nycdn.netbsd.org/pub/NetBSD-daily/netbsd-11/1214114847Z/virt68k/installation/ramdisks/inst-ramdisk.fs
+INST=./nycdn.netbsd.org/pub/NetBSD-daily/netbsd-11/20251214114847Z/virt68k/installation/ramdisks/inst-ramdisk.fs
+
+install:
+	nono --initrd ${INST}
+
+fetch:
+	./NewestISO|sh -v
+file:
+	dd if=/dev/zero of=virt68k.img bs=1m count=2048
