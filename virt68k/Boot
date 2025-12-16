@@ -1,0 +1,1 @@
+qemu-system-m68k -machine virt -nographic -m 512m -device virtio-net-device,netdev=net0 -netdev type=user,id=net0 -drive file=pkgsrc.img,if=virtio -drive file=virt68k.img,if=virtio -kernel netbsd-GENERIC 
