@@ -8,3 +8,6 @@ fetch:
 	./NewestISO|sh -v
 file:
 	dd if=/dev/zero of=virt68k.img bs=1m count=2048
+
+update:
+	cp -p virt68k.img liveimage-virt68k-raw-`date +%Y-%m-%d`.img
