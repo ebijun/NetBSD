@@ -1,0 +1,82 @@
+entropy: ready
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+    2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+    2024, 2025
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 11.99.4 (GENERIC) #0: Mon Dec 29 06:02:51 UTC 2025
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/virt68k/compile/GENERIC
+Qemu 10.1.2: MC68040+MMU+FPU, 4k+4k on-chip physical I/D caches
+total memory = 128 MB
+avail memory = 121 MB
+timecounter: Timecounters tick every 10.000 msec
+mainbus0 (root)
+gfpic0 at mainbus0 addr 0xff000000: Google Goldfish PIC
+gfpic0: interrupting at IPL 1
+gfpic1 at mainbus0 addr 0xff001000: Google Goldfish PIC
+gfpic1: interrupting at IPL 2
+gfpic2 at mainbus0 addr 0xff002000: Google Goldfish PIC
+gfpic2: interrupting at IPL 3
+gfpic3 at mainbus0 addr 0xff003000: Google Goldfish PIC
+gfpic3: interrupting at IPL 4
+gfpic4 at mainbus0 addr 0xff004000: Google Goldfish PIC
+gfpic4: interrupting at IPL 5
+gfpic5 at mainbus0 addr 0xff005000: Google Goldfish PIC
+gfpic5: interrupting at IPL 6
+gfrtc0 at mainbus0 addr 0xff006000: Google Goldfish RTC + timer
+gfrtc0: hardclock interrupting at gfpic5 irq 1 (IPL 6)
+gfrtc0: Using as delay() timer.
+gfrtc1 at mainbus0 addr 0xff007000: Google Goldfish RTC + timer
+gfrtc1: using as Time of Day Register.
+gftty0 at mainbus0 addr 0xff008000: Google Goldfish TTY
+gftty0: console
+gftty0: interrupting at gfpic0 irq 32 (IPL 1)
+virtctrl0 at mainbus0 addr 0xff009000: Qemu Virtual System Controller
+virtctrl0: features=0x00000001
+virtio0 at mainbus0 addr 0xff01fa00
+virtio0: VirtIO-MMIO-v2
+virtio0: block device (id 2, rev. 0x01)
+ld0 at virtio0: features: 0x110002e54<V1,INDIRECT_DESC,DISCARD,CONFIG_WCE,TOPOLOGY,FLUSH,BLK_SIZE,GEOMETRY,SEG_MAX>
+ld0: Unknown SIZE_MAX, assuming 65536
+ld0: max 254 segs of max 65536 bytes
+virtio0: allocated 4227072 byte for virtqueue 0 for I/O request, size 1024
+virtio0: using 4194304 byte (262144 entries) indirect descriptors
+virtio0: interrupting at gfpic4 irq 30 (IPL 5)
+ld0: 2048 MB, 4161 cyl, 16 head, 63 sec, 512 bytes/sect x 4194304 sectors
+virtio1 at mainbus0 addr 0xff01fc00
+virtio1: VirtIO-MMIO-v2
+virtio1: block device (id 2, rev. 0x01)
+ld1 at virtio1: features: 0x110002e54<V1,INDIRECT_DESC,DISCARD,CONFIG_WCE,TOPOLOGY,FLUSH,BLK_SIZE,GEOMETRY,SEG_MAX>
+ld1: Unknown SIZE_MAX, assuming 65536
+ld1: max 254 segs of max 65536 bytes
+virtio1: allocated 4227072 byte for virtqueue 0 for I/O request, size 1024
+virtio1: using 4194304 byte (262144 entries) indirect descriptors
+virtio1: interrupting at gfpic4 irq 31 (IPL 5)
+ld1: 5230 MB, 10627 cyl, 16 head, 63 sec, 512 bytes/sect x 10712016 sectors
+virtio2 at mainbus0 addr 0xff01fe00
+virtio2: VirtIO-MMIO-v2
+virtio2: network device (id 1, rev. 0x01)
+vioif0 at virtio2: features: 0x130870020<V1,EVENT_IDX,INDIRECT_DESC,CTRL_MAC,CTRL_RX,CTRL_VQ,STATUS,MAC>
+vioif0: Ethernet address 52:54:00:12:34:56
+virtio2: allocated 65536 byte for virtqueue 0 for rx0, size 1024
+virtio2: using 32768 byte (2048 entries) indirect descriptors
+virtio2: allocated 65536 byte for virtqueue 1 for tx0, size 1024
+virtio2: using 32768 byte (2048 entries) indirect descriptors
+virtio2: allocated 32768 byte for virtqueue 2 for control, size 1024
+virtio2: interrupting at gfpic4 irq 32 (IPL 5)
+Spurious interrupt on CPU ipl 5
+No statclock; using hardclock.
+Initialzing hardclock: freq=100 Hz, interval=10000 usec
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+swwdog0: software watchdog initialized
+root device: ld0
+dump device (default ld0b): 
+file system (default generic): 
+root on ld0a dumps on ld0b
+root file system type: ffs
+kern.module.path=/stand/virt68k/11.99.4/modules
+init path (default /sbin/init): 
+init: trying /sbin/init
