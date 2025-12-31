@@ -51,11 +51,11 @@ Makefile 内のバージョンをあげます。
 
  % make makesum
  
- drwxrwxr-x   2 600   125   512 Nov 12 13:59 CVS
- -rw-r--r--   1 root  125    54 Nov 12 13:59 DESCR
- -rw-r--r--   1 root  125  1202 Nov 26 05:16 Makefile
- -rw-r--r--   1 root  125   357 Nov 12 13:59 PLIST
- -rw-r--r--   1 root  125   350 Nov 26 05:16 distinfo
+ drwxr-xr-x  2 jun  wheel   512 Dec 11 05:47 CVS
+ -rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
+ -rw-r--r--  1 jun  wheel  1202 Dec 11 05:55 Makefile
+ -rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
+ -rw-r--r--  1 jun  wheel   350 Dec 11 05:56 distinfo
 
 make package して動作を確認します。
  
@@ -84,19 +84,23 @@ commit
 
  cvs commit 
 
- nono: update to 1.6.3.
+ nono: update to 1.6.4.
 
- 1.6.3 (2025/11/25)
+ 1.6.4 (2025/12/08)
 
- m68k(Fix): "Fix page address mask in several places on 68030 table search."
- m68k(Update): "Revert 68030 ATC to original-compliant behavior (FC-mixed 22-entries). These two fixes make current NetBSD/m68k newpmap kernel bootable (though the actual cause should be a bug in the NetBSD kernel)."
- m68k(Fix): "Fix inverted condition in PFLUSH* for deleting global entries on 68040."
- GUI(New): "Implement 68030 and 68040 page table monitor window."
- GUI(Fix): "Fix an abnormal termination when the log window is stretched."
- debugger(Fix): "Fix an issue where instruction breakpoints might not work."
- debugger(Update): "Show NetBSD/m68k system call number for exception history."
- build(Fix): "Fix a build error on platforms other than x86_64 and i386 after ver 1.6.0."
- vm(Update): "Note: It includes a lot of time axis-related changes that were in the work for the next release, but no functional changes are expected." 
+ m68k(Fix): "Fix SRP/URP register masks in 68040. This makes NetBSD newpmap kernel bootable."
+ m68k(Fix): "Fix an issue where the lower 4 bits of SRP/CRP register in 68030 were cleared."
+ m68k(Fix): "Fix memory accesses in PACK/UNPK instructions to a single word access."
+ m68k(Update): "Implement several corner cases in 68030 PTEST instruction."
+ m68k(Update): "Rewrite whole 68030 MMU and improve performance slightly."
+ m68k(Update): "Improve 68030 ATC performance slightly."
+ vm(Update): "Implement ESC D and ESC M in serial console emulation."
+ host(Fix): "Fix an abnormal termination in usermode network."
+ host(Fix): "Fix an issue that the application could not be terminated in usermode network."
+ GUI(Update): "Improve the page table monitor."
+ GUI(Fix): "Remove incorrect TT hit rate in 68030 ATC monitor since ver 1.6.3."
+ debugger(Fix): "Fix an issue where different exceptions occurring consecutively at the same address were not recorded in Exception history."
+ debugger(New): "Implement "pe" command." 
 
 doc をcommit します
 ---------------------
@@ -106,9 +110,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.6.3
+ doc: Updated emulators/nono to 1.6.4
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.6.3 [jun 2025-11-26]
+        Updated emulators/nono to 1.6.4 [jun 2025-12-11]
 

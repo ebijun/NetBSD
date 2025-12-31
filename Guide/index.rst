@@ -23,7 +23,7 @@
  :maxdepth: 3
  :numbered:
 
- Place/okinawa
+ Place/hiroshima
  stable-diffusion.cpp
  PC6001VX/PC6001VX
  Pkgsrc/mlterm
