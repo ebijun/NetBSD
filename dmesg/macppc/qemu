@@ -1,0 +1,96 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+    2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+    2024, 2025
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 11.99.4 (GENERIC) #0: Wed Dec 31 20:57:29 UTC 2025
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/macppc/compile/GENERIC
+total memory = 256 MB
+avail memory = 226 MB
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+found openpic PIC at 80040000
+OpenPIC Version 1.2: Supports 1 CPUs and 64 interrupt sources.
+bootpath: /pci@f2000000/mac-io@c/ata-3@21000/cdrom@0:2,netbsd-GENERIC
+mainbus0 (root): PowerMac3,1
+cpu0 at mainbus0: 7400 (Revision 2.9), ID 0 (primary)
+cpu0: HID0 0x809400a4<EMCP,DOZE,DPM,EIEC,SGE,BTIC,BHT>, powersave: 1
+cpu0: 0.00 MHz L2 cache present but not enabled 
+memory0 at mainbus0
+uninorth0 at mainbus0
+pci0 at uninorth0 bus 0
+pci0: i/o space, memory space enabled
+pchb0 at pci0 dev 11 function 0
+pchb0: Apple Computer UniNorth Host-PCI Bridge (rev. 0x00)
+obio0 at pci0 dev 12 function 0: addr 0x80000000
+obio0: enabling KeyLargo internal modem
+cuda0 at obio0 offset 0x16000 irq 25
+nadb0 at cuda0: Apple Desktop Bus
+iic0 at cuda0: I2C bus
+zsc0 at obio0 irq 37,36
+zstty0 at zsc0 channel 0 (console i/o)
+zstty1 at zsc0 channel 1
+wdc0 at obio0 offset 0x20000 irq 13, level triggered: DMA transfer
+atabus0 at wdc0 channel 0
+wdc1 at obio0 offset 0x21000 irq 14, level triggered: DMA transfer
+atabus1 at wdc1 channel 0
+ohci0 at pci0 dev 13 function 0: Apple Computer Intrepid USB Controller (rev. 0x00)
+ohci0: interrupting at irq 28
+ohci0: OHCI version 1.0
+usb0 at ohci0: USB revision 1.0
+genfb0 at pci0 dev 14 function 0: vendor 1234 product 1111 (rev. 0x02)
+wm0 at pci0 dev 15 function 0, 32-bit DMA: Intel i82540EM 1000BASE-T Ethernet (rev. 0x03)
+wm0: interrupting at irq 30
+wm0: 32-bit 33MHz PCI bus
+wm0: 64 words (6 address bits) MicroWire EEPROM
+wm0: RX packet buffer size: 48KB
+wm0: Ethernet address 52:54:00:12:34:56
+wm0: 0x200002<LOCK_EECD,WOL>
+makphy0 at wm0 phy 1: Marvell 88E1011 Gigabit PHY, rev. 0
+makphy0: Failed to access EADR. Are you an emulator?
+makphy0: Failed to read EXTSR. Are you an emulator?. Regard as 1000BASE-T.
+makphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
+uni_n0 at mainbus0 address 0xf8000000
+vmmask 7f000000 schedmask 7f000000 highmask 7f000000
+WARNING: system needs entropy for security; see entropy(7)
+timecounter: Timecounter "mftb" frequency 25000000 Hz quality 100
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+uhub0 at usb0: NetBSD (0x0000) OHCI root hub (0x0000), class 9/0, rev 1.00/1.00, addr 1
+uhub0: 3 ports with 3 removable, self powered
+IPsec: Initialized Security Association Processing.
+adbkbd0 at nadb0 addr 2: mapped device (0)
+wskbd0 at adbkbd0 mux 1
+wsmouse0 at adbkbd0 mux 0
+adbms0 at nadb0 addr 3: relative positioning device (mouse?) (0)
+wsmouse1 at adbms0 mux 0
+wd0 at atabus0 drive 1
+wd0: <QEMU HARDDISK>
+wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+wd0: 1536 MB, 3120 cyl, 16 head, 63 sec, 512 bytes/sect x 3145728 sectors
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+wd0(wdc0:0:1): using PIO mode 4, DMA mode 2 (using DMA)
+atapibus0 at atabus1: 2 targets
+cd0 at atapibus0 drive 0: <QEMU DVD-ROM, QM00003, 2.5+> cdrom removable
+cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+wd1 at atabus1 drive 1
+wd1: <QEMU HARDDISK>
+wd1: drive supports 16-sector PIO transfers, LBA48 addressing
+wd1: 5230 MB, 10627 cyl, 16 head, 63 sec, 512 bytes/sect x 10712016 sectors
+wd1: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+cd0(wdc1:0:0): using PIO mode 4, DMA mode 2 (using DMA)
+wd1(wdc1:0:1): using PIO mode 4, DMA mode 2 (using DMA)
+swwdog0: software watchdog initialized
+entropy: best effort
+boot device: <unknown>
+root device: wd0
+dump device (default wd0b): 
+file system (default generic): 
+root on wd0a dumps on wd0b
+root file system type: ffs
+kern.module.path=/stand/macppc/11.99.4/modules
+init path (default /sbin/init): 
+init: trying /sbin/init
+entropy: ready
