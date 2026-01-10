@@ -1,24 +1,28 @@
-VERSION: :1,$s/2025-12-02/2025-12-02/g
-ISO:     :1,$s/20251201093144Z/20251201093144Z/g
+VERSION: :1,$s/2026-01-10/2026-01-10/g
+ISO:     :1,$s/20260109123941Z/20260109123941Z/g
 NetBSD:  :1,$s/11.99.4/11.99.4/g
-PKGSRC:  :1,$s/2025-12-02/2025-12-02/g
+PKGSRC:  :1,$s/2026-01-10/2026-01-10/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-12-02-netbsd-armv7-earmv7hf.img
+Subject: 2026-01-10-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-12-02-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2026-01-10-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-12-02-earmv7hf/2025-12-02-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2025-12-02-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-01-10-earmv7hf/2026-01-10-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-01-10-earmv7hf/MD5
 
 Update:
 - pkgsrc/devel/cargo-c failed with /usr/pkg/lib/librustc_driver-43ce19429944873a
 .so: Undefined PLT symbol "_ZNSt18condition_variable4waitERSt11unique_lockISt5mu
 texE" (symnum = 9211)
  https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=59754
+-> Fixed. 
+CFLAGS+=-Wno-error=incompatible-pointer-types -Wno-error=declaration-after-statement -Wno-error=deprecated-declarations
+cargo-c-0.10.19 
+# $NetBSD: Makefile,v 1.31 2025/12/15 12:19:22 adam Exp $
 
 - firefox
  pkgsrc/www/firefox/work.earmv7hf/firefox-138.0.4/third_party/aom/aom_ports/aarch32_cpudetect.c:75:2: error: #error "Runtime CPU detection selected, but no CPU detection method " "available for your platform. Rerun cmake with -
@@ -39,45 +43,27 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 11.99.4 evbarm-armv7hf 20251201093144Z armv7.img from nyftp.
+- NetBSD 11.99.4 evbarm-armv7hf 20260109123941Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 
 - Firmware:
-commit 55c0555f30b4ff1ad20a3dd4db535b0d013c0a40 (HEAD -> master, origin/master, origin/HEAD)
+commit 24b0217f98d5e3331a249c63e5b91a8125886641 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Thu Nov 27 16:44:21 2025 +0000
+Date:   Fri Jan 9 17:40:45 2026 +0000
 
 sysinfo:
- libc-12.224 libssh-50.0 NetBSD-11.99.4 openssh-10.2 opensshd-10.2
- sh-20220122-20251201093144Z userland-NetBSD-11.99.4/evbarm
+ gzip-20260107 libutil-7.25 sh-20220122-20260109123941Z tzdata-2025cgtz
 
 pkgsrc:
- at-spi2-core-2.58.1 brotli-1.2.0 cairo-1.18.4nb2 curl-8.17.0 dbus-1.16.2nb2
- fontconfig-2.17.1nb1 fossil-2.27 freetype2-2.14.1 gd-2.3.3nb17
- gdk-pixbuf2-2.42.12nb5 git-base-2.51.2 glib2-2.84.4nb1
- gobject-introspection-1.84.0nb1 graphene-1.10.8nb3
- gsettings-desktop-schemas-40.0nb4 gsl-2.8 gst-plugins1-bad-1.26.7
- gst-plugins1-base-1.26.7 gstreamer1-1.26.7 gtk2+-2.24.33nb34 gtk3+-3.24.51
- gtk4-4.18.6nb3 harfbuzz-12.2.0 imlib2-1.12.5 iso-codes-4.16.0 jasper-4.2.8
- lcms2-2.16nb2 libb2-0.98.1nb1 libcups-2.4.14nb1 libgpg-error-1.56
- libproxy-0.5.11nb2 libxkbcommon-1.12.3 m17n-lib-1.8.0nb24 medit-1.2.0nb41
- mlterm-3.9.4nb4 mng-2.0.3nb1 mozilla-rootcerts-1.1.20251029 mpdecimal-4.0.1
- nanotodon-0.5.0nb3 nghttp2-1.68.0 p11-kit-0.25.10 pango-1.57.0nb1 pcre2-10.47
- pkgin-25.10.0 py313-setuptools-80.9.0 python313-3.13.9 qt5-qtbase-5.15.17nb3
- qt5-qtx11extras-5.15.17nb1 qt5-qtxmlpatterns-5.15.17nb1 qt6-qt5compat-6.10.0
- qt6-qtbase-6.10.0 qt6-qtdeclarative-6.10.0 qt6-qtimageformats-6.10.0
- qt6-qtlanguageserver-6.10.0 qt6-qtshadertools-6.10.0 qt6-qtsvg-6.10.0
- raqm-0.10.3nb1 readline-8.3nb1 ruby32-atk-4.3.3nb1 ruby32-cairo-1.18.4nb1
- ruby32-cairo-gobject-4.3.3nb1 ruby32-gdk3-4.3.3nb1 ruby32-gdk_pixbuf2-4.3.3nb1
- ruby32-gio2-4.3.3nb1 ruby32-glib2-4.3.3nb1
- ruby32-gobject-introspection-4.3.3nb1 ruby32-gtk3-4.3.3nb1
- ruby32-mikutter-5.1.1nb5 ruby32-pango-4.3.3nb1 shared-mime-info-2.4nb6
- sqlite3-3.51.0 tiff-4.7.1 uim-1.9.7pre20251027 wayland-1.24.0
- xcb-util-cursor-0.1.6 zsh-5.9nb3
+ bash-5.3.9 git-base-2.52.0 gnutls-3.8.11nb1 libcups-2.4.16 libjpeg-turbo-3.1.3
+ libpaper-2.2.7 libproxy-0.5.12 libxkbcommon-1.13.1 perl-5.42.0nb1 png-1.6.53
+ python313-3.13.11 qt6-qtbase-6.10.1 qt6-qtdeclarative-6.10.1
+ qt6-qtimageformats-6.10.1 qt6-qtlanguageserver-6.10.1 qt6-qtshadertools-6.10.1
+ qt6-qtsvg-6.10.1 sqlite3-3.51.1 wayland-protocols-1.46
 
 - packages:
-  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2025/
+  http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2026/
 
 - pre-installed packages:
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/earmv7hf/pkginfo
