@@ -1,6 +1,6 @@
 anthy-9100hnb1      Kana Kanji conversion system
 at-spi2-core-2.58.1 Assistive Technology Service Provider Interface Core
-bash-5.3.3nb1       The GNU Bourne Again Shell
+bash-5.3.9          The GNU Bourne Again Shell
 brotli-1.2.0        Generic-purpose lossless compression algorithm
 cairo-1.18.4nb2     Vector graphics library with cross-device output support
 curl-8.17.0         Client that groks URLs
@@ -14,10 +14,10 @@ fribidi-1.0.16      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.3.3nb17        Graphics library for the dynamic creation of images
 gdk-pixbuf2-2.42.12nb5 Library for image loading and manipulation
 giflib-5.2.2nb1     GIF image format library
-git-base-2.51.2     GIT Tree History Storage Tool (base package)
+git-base-2.52.0     GIT Tree History Storage Tool (base package)
 glib2-2.84.4nb1     Some useful routines for C programming (glib2)
 gmp-6.3.0           Library for arbitrary precision arithmetic
-gnutls-3.8.10       Transport Layer Security library
+gnutls-3.8.11nb1    Transport Layer Security library
 gobject-introspection-1.84.0nb1 GObject Introspection
 graphene-1.10.8nb3  Thin layer of graphic data types
 graphite2-1.3.14nb3 Cross-platform rendering for complex writing systems
@@ -43,7 +43,7 @@ lerc-4.0.0          Limited Error Raster Compression library
 libXft-2.3.9        Library for configuring and customizing font access
 libatomic-13.2.0    Atomic fallback implementation for GCC
 libb2-0.98.1nb1     C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
-libcups-2.4.14nb1   Common UNIX Printing System library
+libcups-2.4.16      Common UNIX Printing System library
 libduktape-2.7.0    Embeddable Javascript engine library
 libepoll-shim-0.0.20240608 Small epoll implemented using kevent
 libffi-3.5.2        Foreign function interface
@@ -51,15 +51,15 @@ libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.11.2    GNU cryptographic library
 libgpg-error-1.56   Definitions of common error values for all GnuPG components
 libidn2-2.3.7       Convert internationalized domain names to/from ASCII Encoding
-libjpeg-turbo-3.1.2 Accelerated libjpeg with SIMD instructions
+libjpeg-turbo-3.1.3 Accelerated libjpeg with SIMD instructions
 libotf-0.9.16nb4    Library for handling OpenType fonts (OTF)
-libpaper-2.2.6      Paper size handling library
-libproxy-0.5.11nb2  Library that provides automatic proxy configuration management
+libpaper-2.2.7      Paper size handling library
+libproxy-0.5.12     Library that provides automatic proxy configuration management
 libtasn1-4.20.0     ASN.1 structure parser library
 libunistring-1.2    Unicode string library
 libuuid-2.40.2      Generate unique identifiers for objects
 libwebp-1.6.0nb1    WebP image format library and tools
-libxkbcommon-1.12.3 Library to handle keyboard descriptions
+libxkbcommon-1.13.1 Library to handle keyboard descriptions
 libxml2-2.14.6      XML parser library from the GNOME project
 libxslt-1.1.43nb4   XSLT parser library
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
@@ -81,23 +81,23 @@ nghttp2-1.68.0      Implementation of HTTP/2 in C
 p11-kit-0.25.10     PKCS#11 module manager
 pango-1.57.0nb1     Library for layout and rendering of text
 pcre2-10.47         Perl Compatible Regular Expressions library (major version 2)
-perl-5.42.0         Practical Extraction and Report Language
+perl-5.42.0nb1      Practical Extraction and Report Language
 pkg_chk-2.0.13      Check installed package versions against pkgsrc
 pkg_install-20250417 Package management and administration tools for pkgsrc
 pkgin-25.10.0       Apt / yum like tool for managing pkgsrc binary packages
-png-1.6.50          Library for manipulating PNG images
+png-1.6.53          Library for manipulating PNG images
 py313-setuptools-80.9.0 New Python packaging system
-python313-3.13.9    Interpreted, interactive, object-oriented programming language
+python313-3.13.11   Interpreted, interactive, object-oriented programming language
 qt5-qtbase-5.15.17nb3 C++ X GUI toolkit
 qt5-qtx11extras-5.15.17nb1 Qt5 module for X11 extras
 qt5-qtxmlpatterns-5.15.17nb1 Qt5 module for XML Patterns
 qt6-qt5compat-6.10.0 Qt6 module for Qt5 portability
-qt6-qtbase-6.10.0   C++ X GUI toolkit
-qt6-qtdeclarative-6.10.0 Qt6 module for the QML language
-qt6-qtimageformats-6.10.0 Additional image handlers for Qt6
-qt6-qtlanguageserver-6.10.0 Qt6 language server implementation
-qt6-qtshadertools-6.10.0 Qt6 shadertools
-qt6-qtsvg-6.10.0    Qt6 module for SVG
+qt6-qtbase-6.10.1   C++ X GUI toolkit
+qt6-qtdeclarative-6.10.1 Qt6 module for the QML language
+qt6-qtimageformats-6.10.1 Additional image handlers for Qt6
+qt6-qtlanguageserver-6.10.1 Qt6 language server implementation
+qt6-qtshadertools-6.10.1 Qt6 shadertools
+qt6-qtsvg-6.10.1    Qt6 module for SVG
 raqm-0.10.3nb1      Library for complex text layout
 raspberrypi-userland-20170109nb3 Various libraries for the Raspberry Pi
 readline-8.3nb1     GNU library that can recall and edit previous input
@@ -134,7 +134,7 @@ ruby32-text-1.3.1   Collection of text algorithms for Ruby
 ruby32-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 sayaka-3.8.4        Terminal specific Misskey client
 shared-mime-info-2.4nb6 Core database of common types
-sqlite3-3.51.0      SQL Database Engine in a C Library
+sqlite3-3.51.1      SQL Database Engine in a C Library
 sudo-1.9.17p1       Allow others to run commands as root
 tcsh-6.24.16        Extended C-shell with many useful features
 tiff-4.7.1          Library and tools for reading and writing TIFF data files
@@ -143,7 +143,7 @@ uim-1.9.7pre20251027 Multilingual input method library
 unifont-15.0.03     GNU Unifont - glyphs for all printable code points in Unicode 9.0 BMP
 vlgothic-ttf-20230918 Free Japanese TrueType fonts named 'VLGothic'
 wayland-1.24.0      Display server protocol - development libraries
-wayland-protocols-1.45 Additional wayland functionality
+wayland-protocols-1.46 Additional wayland functionality
 xcb-util-0.4.1      XCB Utilities
 xcb-util-cursor-0.1.6 XCB port of Xlib's libXcursor
 xcb-util-image-0.4.1 XCB port of Xlib's XImage and XShmImage
