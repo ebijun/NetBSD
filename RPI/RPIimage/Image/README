@@ -1,18 +1,18 @@
-VERSION: :1,$s/2025-12-01/2025-12-01/g
-ISO:     :1,$s/20251130071203Z/20251130071203Z/g
+VERSION: :1,$s/2026-01-13/2026-01-13/g
+ISO:     :1,$s/20260112172513Z/20260112172513Z/g
 NetBSD:  :1,$s/11.99.4/11.99.4/g
-PKGSRC:  :1,$s/2025-12-01/2022/
+PKGSRC:  :1,$s/2026-01-13/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2025-12-01-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2026-01-13-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2025-12-01-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2026-01-13-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-12-01-earmv6hf/2025-12-01-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-12-01-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-01-13-earmv6hf/2026-01-13-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-01-13-earmv6hf/MD5
 
 Update:
 - NetBSD-11.99.4 
@@ -48,7 +48,7 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 11.99.4 evbarm-earmv6hf 20251130071203Z rpi.img from nyftp.
+- NetBSD 11.99.4 evbarm-earmv6hf 20260112172513Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
   # mlterm-wscons
@@ -72,9 +72,9 @@ add earmv6hf to pkgsrc/lang/rust/platform.mk:
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-commit 55c0555f30b4ff1ad20a3dd4db535b0d013c0a40 (HEAD -> master, origin/master, origin/HEAD)
+commit 24b0217f98d5e3331a249c63e5b91a8125886641 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Thu Nov 27 16:44:21 2025 +0000
+Date:   Fri Jan 9 17:40:45 2026 +0000
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
@@ -111,26 +111,23 @@ PR
   for testing, with pkg_summery.gz .
 
 sysinfo:
- libc-12.224 libssh-50.0 NetBSD-11.99.4 openssh-10.2 opensshd-10.2
- sh-20220122-20251130071203Z userland-NetBSD-11.99.4/evbarm
+ gzip-20260107 libutil-7.25 sh-20220122-20260112172513Z tzdata-2025cgtz
 
 pkgsrc:
- at-spi2-core-2.58.1 brotli-1.2.0 cairo-1.18.4nb2 curl-8.17.0 dbus-1.16.2nb2
- fontconfig-2.17.1nb1 fossil-2.27 gd-2.3.3nb17 gdk-pixbuf2-2.42.12nb5
- git-base-2.52.0 glib2-2.84.4nb1 gnutls-3.8.11nb1
- gobject-introspection-1.84.0nb1 gsettings-desktop-schemas-40.0nb4
- gtk2+-2.24.33nb34 gtk3+-3.24.51 harfbuzz-12.2.0 imlib2-1.12.5 libcups-2.4.14nb1
- libgpg-error-1.56 libproxy-0.5.11nb2 libxkbcommon-1.13.0 m17n-lib-1.8.0nb24
- medit-1.2.0nb41 mlterm-3.9.4nb4 mozilla-rootcerts-1.1.20251029 mpdecimal-4.0.1
- nanotodon-0.5.0nb3 nghttp2-1.68.0 pango-1.57.0nb1 pcre2-10.47 png-1.6.51
- py313-setuptools-80.9.0 python313-3.13.9 qt5-qtbase-5.15.17nb3
- qt5-qtx11extras-5.15.17nb1 qt5-qtxmlpatterns-5.15.17nb1 raqm-0.10.3nb1
- readline-8.3nb1 ruby32-atk-4.3.3nb1 ruby32-cairo-1.18.4nb1
- ruby32-cairo-gobject-4.3.3nb1 ruby32-gdk3-4.3.3nb1 ruby32-gdk_pixbuf2-4.3.3nb1
- ruby32-gio2-4.3.3nb1 ruby32-glib2-4.3.3nb1
- ruby32-gobject-introspection-4.3.3nb1 ruby32-gtk3-4.3.3nb1
- ruby32-mikutter-5.1.1nb5 ruby32-pango-4.3.3nb1 shared-mime-info-2.4nb6
- sqlite3-3.51.0 tiff-4.7.1 uim-1.8.9nb21 wayland-1.24.0
+ bash-5.3.9 double-conversion-3.4.0 graphene-1.10.8nb3 gsl-2.8
+ gst-plugins1-bad-1.26.10 gst-plugins1-base-1.26.10 gstreamer1-1.26.10
+ gtk4-4.18.6nb3 harfbuzz-12.3.0 iso-codes-4.16.0 jasper-4.2.8 lcms2-2.16nb2
+ libb2-0.98.1nb1 libcups-2.4.16 libgpg-error-1.58 libjpeg-turbo-3.1.3
+ libpaper-2.2.7 libproxy-0.5.12 libxkbcommon-1.13.1 libxml2-2.14.6nb1
+ mng-2.0.3nb1 perl-5.42.0nb1 png-1.6.53 python313-3.13.11 qt5-qtbase-5.15.18
+ qt5-qtx11extras-5.15.18 qt5-qtxmlpatterns-5.15.18 qt6-qt5compat-6.10.1
+ qt6-qtbase-6.10.1nb1 qt6-qtdeclarative-6.10.1 qt6-qtimageformats-6.10.1
+ qt6-qtlanguageserver-6.10.1 qt6-qtshadertools-6.10.1 qt6-qtsvg-6.10.1
+ ruby32-atk-4.3.4 ruby32-cairo-gobject-4.3.4 ruby32-gdk3-4.3.4
+ ruby32-gdk_pixbuf2-4.3.4 ruby32-gio2-4.3.4 ruby32-glib2-4.3.4
+ ruby32-gobject-introspection-4.3.4 ruby32-gtk3-4.3.4 ruby32-pango-4.3.4
+ sayaka-3.8.5 sqlite3-3.51.1 ttmkfdir2-20021109nb9 uim-1.9.7pre20251027
+ wayland-protocols-1.47 xcb-util-cursor-0.1.6
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -182,7 +179,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2025-12-01-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-01-13-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
