@@ -1,7 +1,5 @@
 # Makefile for RPI image.
 #
-#5160960=
-#8192+188416+262144+4702208
 #
 #Filesystem   512-blocks       Used      Avail %Cap Mounted on
 #/dev/ld0a     120895282    4408554  110441964   3% /
@@ -9,7 +7,7 @@
 ARCH=earmv6hf
 #ARCH=earm
 
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2025
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2026
 #PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/10.0/All/
 
 
@@ -19,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20251130071203Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260112172513Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -33,9 +31,9 @@ LIST_UPDATE=base base32 comp debug debug32 dtb games gpufw index.html kern-RPI k
 
 #Firmware: 
 # git log HEAD |head
-#commit 55c0555f30b4ff1ad20a3dd4db535b0d013c0a40 (HEAD -> master, origin/master, origin/HEAD)
+#commit 24b0217f98d5e3331a249c63e5b91a8125886641 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Thu Nov 27 16:44:21 2025 +0000
+#Date:   Fri Jan 9 17:40:45 2026 +0000
 
 FIRM=LICENCE.broadcom bootcode.bin fixup4cd.dat fixup_cd.dat start.elf start4db.elf start_db.elf fixup.dat fixup4db.dat fixup_db.dat start4.elf start4x.elf start_x.elf fixup4.dat fixup4x.dat  fixup_x.dat  start4cd.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -75,7 +73,8 @@ rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
 	fdisk -uf -0 -s 12/32768/163840 ${VND} #32bit FAT id 12 DISKLABEL.proto
-	fdisk -uf -1 -s 169/196608/4964352 ${VND} 
+	# 6193152-196608=5996544
+	fdisk -uf -1 -s 169/196608/5996544 ${VND} 
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
@@ -101,9 +100,8 @@ rpi:
 # make image file. 512*3813376=2GB
 file: 
 	echo Create ${FILE}.
-#	dd if=/dev/zero of=${FILE} bs=512 count=3813376 progress=50000
-	dd if=/dev/zero of=${FILE} bs=512 count=5160960 progress=62000
-#	 2048*2520
+#	2048*3024=6193152
+	dd if=/dev/zero of=${FILE} bs=512 count=6193152 progress=62000
 	sleep 3
 
 # stop sshd for package install
@@ -244,9 +242,10 @@ libssls:
 	vnconfig -u ${VND}
 
 image-update:
-	#@echo mount /dev/sd0a ${MNT}
-	#@for i in ${LIST_UPDATE} ; do (echo tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
-	#@echo cp ${SETS}/etc.tgz ${MNT}/
+	@echo mount /dev/sd0a ${MNT}
+	@for i in ${LIST_UPDATE} ; do (echo tar xzpf ${SETS}/$${i}.tgz -C ${MNT};); done
+	@echo cp ${SETS}/etc.tgz ${MNT}/
 	@echo cp -p ${BINARY}/kernel/netbsd-RPI.img.gz  ${MNT}/kernel.img.gz
 	@echo cp -p ${BINARY}/kernel/netbsd-RPI2.img.gz  ${MNT}/kernel7.img.gz
+	@echo umount /dev/sd0a 
 
