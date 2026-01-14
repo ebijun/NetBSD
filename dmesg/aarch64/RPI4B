@@ -1,12 +1,12 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
     2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
     2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
-    2024, 2025
+    2024, 2025, 2026
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 11.99.4 (GENERIC64) #0: Tue Nov 25 12:59:14 UTC 2025
+NetBSD 11.99.4 (GENERIC64) #0: Tue Jan 13 10:06:58 UTC 2026
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 8021 MB
 avail memory = 7730 MB
@@ -140,18 +140,18 @@ cpu1: PMU interrupting on irq 49
 cpu2: PMU interrupting on irq 50
 cpu3: PMU interrupting on irq 51
 IPsec: Initialized Security Association Processing.
-sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
-ld1 at sdmmc1: <0x02:0x544d:SF064:0x01:0xf60436a2:0x183>
-ld1: 59024 MB, 7524 cyl, 255 head, 63 sec, 512 bytes/sect x 120881152 sectors
-ld1: GPT GUID: ceb2aa36-bba5-4b49-b161-a26e68952aed
-dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
-dk1 at ld1: "netbsd-root", 6347570 blocks at 90203, type: ffs
-ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
 sdmmc0: 4-bit width, 50.000 MHz
 sdmmc0: SDIO function
 bwfm0 at sdmmc0 function 1
 (manufacturer 0x2d0, product 0xa9a6) at sdmmc0 function 2 not configured
 (manufacturer 0x2d0, product 0xa9a6, standard function interface code 0x2) at sdmmc0 function 3 not configured
+sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
+ld1 at sdmmc1: <0x02:0x544d:SF064:0x01:0xf60436a2:0x183>
+ld1: 59024 MB, 7524 cyl, 255 head, 63 sec, 512 bytes/sect x 120881152 sectors
+ld1: GPT GUID: 6a0a119f-5a51-4698-839b-34d48389fb4a
+dk0 at ld1: "EFI", 90200 blocks at 3, type: msdos
+dk1 at ld1: "netbsd-root", 7635122 blocks at 90203, type: ffs
+ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
 uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 2
 uhub2: single transaction translator
 uhub2: 4 ports with 4 removable, self powered
@@ -180,14 +180,16 @@ boot device: dk1
 root on dk1
 root file system type: ffs
 kern.module.path=/stand/evbarm/11.99.4/modules
-WARNING: clock lost 4 days
+WARNING: clock lost 53 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec6c000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec7a000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
-vchiq: vchiq_initialise: videocore initialized after 1 retries
+notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
+vchiq: vchiq_initialise: videocore initialized after 2 retries
+bwfm0: chip 0x00004345 rev 6
 bwfm0: Firmware file default:    brcmfmac43455-sdio.bin
 bwfm0: Firmware file model-spec: brcmfmac43455-sdio.Raspberry Pi 4 Model B.bin
 bwfm0: Found Firmware file: brcmfmac43455-sdio.bin

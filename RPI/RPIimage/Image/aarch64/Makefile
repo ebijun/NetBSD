@@ -6,8 +6,8 @@ ARCH=aarch64
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 #NetBSD-current
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20251125125914Z/evbarm-aarch64/binary
-PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2025/
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260113100658Z/evbarm-aarch64/binary
+PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2026/
 
 #NetBSD10
 #BINARY=nycdn.netbsd.org/pub/NetBSD-daily/netbsd-10/202404140340Z/
@@ -28,9 +28,9 @@ UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 RPI5_UEFI=RPI5
 
 #Firmware:
-#commit b2fcbf1f02f85c86384d271d3b00442097f21661 (HEAD -> master, origin/master, origin/HEAD)
+#commit 24b0217f98d5e3331a249c63e5b91a8125886641 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Tue Nov 25 14:39:54 2025 +0000
+#Date:   Fri Jan 9 17:40:45 2026 +0000
 
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
@@ -45,6 +45,8 @@ DK_ROOT=/dev/dk3
 ORG_BOOT=/mnt3
 ORG_ROOT=/mnt4
 DK_RELEASE=`dkctl ${VND} listwedges|grep ffs |awk -F: '{print $$1}'`
+
+LIST_UPDATE= base comp debug dtb games gpufw kern-GENERIC64 man manhtml misc modules rescue tests text xbase xcomp xdebug xetc xfont xserver
 
 all: file gpt restore boot_config
 #all: img boot_config
@@ -119,17 +121,16 @@ gpt:
 	vnconfig ${VND} ${FILE}
 	gpt create -p 2 ${VND}
 	gpt add -i 1 -l "EFI" -s 90200 -t efi ${VND}
-	gpt add -i 2 -l "netbsd-root" -s 6347570 -t ffs ${VND}
+	gpt add -i 2 -l "netbsd-root" -s 7635122 -t ffs ${VND}
 
 	newfs_msdos /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |head -2 |tail -1`
 	newfs -n 500000 -b 4096 /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |tail -1`
 	vnconfig -u ${VND}
 
-# make image file. 512*3813376=2GB
 # edit 03_Back
 file: 
 	echo Create ${FILE}.
-	dd if=/dev/zero of=${FILE} bs=4096 count=804722 progress=62000
+	dd if=/dev/zero of=${FILE} bs=4096 count=965666 progress=62000
 	sleep 3
 
 # stop sshd for package install
@@ -203,4 +204,10 @@ fetch:
 	./NewestISO |tee Fetch
 	sh Fetch
 	rm Fetch
+
+image-update:
+	@echo mount ${DK_ROOT} ${MNT_ROOT}
+	@for i in ${LIST_UPDATE} ; do (echo tar xzpf ${SETS}/$${i}.tar.xz -C ${MNT_ROOT} ;); done
+	@echo cp ${SETS}/etc.tar.xz ${MNT_ROOT}/
+	@echo umount ${DK_ROOT}
 
