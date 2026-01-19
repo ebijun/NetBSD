@@ -1,0 +1,10 @@
+#http://www.yagoto-urayama.jp/~oshimaya/nbug/etc/bench/bcbench.html
+
+echo πの小数点以下2000桁計算時間
+
+    time sh -c 'echo "scale=2000; 4*a(1)" | bc -l' > /dev/null
+
+echo eの小数点以下2000桁計算時間
+
+    time sh -c 'echo "scale=2000; e(1)" | bc -l' > /dev/null
+
