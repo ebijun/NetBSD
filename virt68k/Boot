@@ -1,4 +1,4 @@
-IMG=liveimage-virt68k-raw-2025-12-20.img
+IMG=liveimage-virt68k-raw-2026-01-20.img
 
 qemu-system-m68k  -machine virt -nographic \
 	-m 128m -device virtio-net-device,netdev=net0 \
@@ -6,4 +6,4 @@ qemu-system-m68k  -machine virt -nographic \
 	-drive file=pkgsrc.img,if=virtio,index=2 \
 	-drive file=${IMG},if=virtio,index=1 \
 	-append "root=ld0" \
-	-kernel netbsd-GENERIC 
+	-kernel netbsd-GENERIC
