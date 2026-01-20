@@ -17,7 +17,7 @@ giflib-5.2.2nb1     GIF image format library
 git-base-2.52.0     GIT Tree History Storage Tool (base package)
 glib2-2.86.3        Some useful routines for C programming (glib2)
 gmp-6.3.0           Library for arbitrary precision arithmetic
-gnutls-3.8.11nb1    Transport Layer Security library
+gnutls-3.8.11nb2    Transport Layer Security library
 gobject-introspection-1.86.0 GObject Introspection
 graphene-1.10.8nb3  Thin layer of graphic data types
 graphite2-1.3.14nb3 Cross-platform rendering for complex writing systems
@@ -26,13 +26,13 @@ gsl-2.8             The GNU Scientific Library
 gst-plugins1-bad-1.26.10 Open source multimedia framework - bad plugins
 gst-plugins1-base-1.26.10 Open source multimedia framework - base plugins
 gstreamer1-1.26.10  Open source multimedia framework
-gtk2+-2.24.33nb34   GIMP Toolkit v2 - libraries for building X11 user interfaces
+gtk2+-2.24.33nb35   GIMP Toolkit v2 - libraries for building X11 user interfaces
 gtk3+-3.24.51       GIMP Toolkit v3 - libraries for building X11 user interfaces
 gtk4-4.20.3         Multi-platform toolkit for creating GUIs, version 4
 harfbuzz-12.3.0     OpenType text shaping engine
 hicolor-icon-theme-0.17nb1 Standard icon theme called hicolor
-icewm-3.9.0         Small, fast and light-weight window manager
-icu-78.1            Robust and full-featured Unicode services
+icewm-4.0.0         Small, fast and light-weight window manager
+icu-78.2            Robust and full-featured Unicode services
 imlib2-1.12.5       Image manipulation library
 iso-codes-4.16.0    List of country, language and currency names
 jasper-4.2.8        Software-based reference implementation of the JPEG-2000 codec
@@ -42,7 +42,7 @@ lcms2-2.16nb2       Little Color Management System - a color management library
 lerc-4.0.0          Limited Error Raster Compression library
 libXft-2.3.9        Library for configuring and customizing font access
 libb2-0.98.1nb1     C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
-libcups-2.4.16      Common UNIX Printing System library
+libcups-2.4.16nb1   Common UNIX Printing System library
 libduktape-2.7.0    Embeddable Javascript engine library
 libepoll-shim-0.0.20240608 Small epoll implemented using kevent
 libepoxy-1.5.10nb2  Library for OpenGL function pointer management
@@ -57,12 +57,12 @@ libotf-0.9.16nb4    Library for handling OpenType fonts (OTF)
 libpaper-2.2.7      Paper size handling library
 libproxy-0.5.12     Library that provides automatic proxy configuration management
 librsvg-2.60.1      SVG library for GNOME
-libtasn1-4.20.0     ASN.1 structure parser library
+libtasn1-4.21.0     ASN.1 structure parser library
 libunistring-1.2    Unicode string library
 libuuid-2.40.2      Generate unique identifiers for objects
 libwebp-1.6.0nb1    WebP image format library and tools
 libxkbcommon-1.13.1 Library to handle keyboard descriptions
-libxml2-2.14.6nb1   XML parser library from the GNOME project
+libxml2-2.14.6nb2   XML parser library from the GNOME project
 libxslt-1.1.43nb5   XSLT parser library
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
 lintpkgsrc-2022.09.29 Sanity checks on the complete pkgsrc tree
@@ -87,7 +87,7 @@ perl-5.42.0nb1      Practical Extraction and Report Language
 pkg_chk-2.0.13      Check installed package versions against pkgsrc
 pkg_install-20250417 Package management and administration tools for pkgsrc
 pkgin-25.10.0       Apt / yum like tool for managing pkgsrc binary packages
-png-1.6.53          Library for manipulating PNG images
+png-1.6.54          Library for manipulating PNG images
 py313-setuptools-80.9.0 New Python packaging system
 python313-3.13.11   Interpreted, interactive, object-oriented programming language
 qt5-qtbase-5.15.18  C++ X GUI toolkit
@@ -102,7 +102,7 @@ qt6-qtshadertools-6.10.1 Qt6 shadertools
 qt6-qtsvg-6.10.1    Qt6 module for SVG
 raqm-0.10.3nb1      Library for complex text layout
 readline-8.3nb1     GNU library that can recall and edit previous input
-ruby32-addressable-2.8.7 Replacement for the URI Implementation of standard librrary
+ruby32-addressable-2.8.8 Replacement for the URI Implementation of standard librrary
 ruby32-atk-4.3.4    Ruby binding of ATK-1.0.x or later
 ruby32-base-3.2.9   Ruby 3.2.9 release minimum base package
 ruby32-cairo-1.18.4nb1 Ruby bindings for cairo
@@ -127,15 +127,15 @@ ruby32-moneta-1.6.0 Unified interface to key/value stores
 ruby32-native-package-installer-1.1.9 Helper to install native packages on "gem install"
 ruby32-nokogiri-1.18.10 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
 ruby32-pango-4.3.4  Ruby binding of pango-1.x
-ruby32-pkg-config-1.6.4 Pure Ruby implementation of pkg-config
+ruby32-pkg-config-1.6.5 Pure Ruby implementation of pkg-config
 ruby32-pluggaloid-1.7.0 Extensible plugin system for mikutter
-ruby32-public_suffix-6.0.2 Domain name parser based on the Public Suffix List
+ruby32-public_suffix-7.0.2 Domain name parser based on the Public Suffix List
 ruby32-red-colors-0.4.0 Wide array of features for dealing with colors
 ruby32-text-1.3.1   Collection of text algorithms for Ruby
 ruby32-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 sayaka-3.8.5        Terminal specific Misskey client
 shared-mime-info-2.4nb6 Core database of common types
-sqlite3-3.51.1      SQL Database Engine in a C Library
+sqlite3-3.51.2      SQL Database Engine in a C Library
 sudo-1.9.17p1       Allow others to run commands as root
 tcsh-6.24.16        Extended C-shell with many useful features
 tiff-4.7.1          Library and tools for reading and writing TIFF data files
@@ -153,5 +153,5 @@ xcb-util-renderutil-0.3.10 Convenience functions for the Render extension
 xcb-util-wm-0.4.2nb1 Client and window-manager helpers for ICCCM and EWMH
 xli-1.17.0nb15      X11 Image Loading Utility
 xmlcatmgr-2.2nb1    XML and SGML catalog manager
-zsh-5.9nb3          The Z shell
+zsh-5.9nb4          The Z shell
 zstd-1.5.7          Fast real-time compression algorithm

@@ -6,7 +6,7 @@ ARCH=aarch64
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 #NetBSD-current
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260113100658Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260119220223Z/evbarm-aarch64/binary
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2026/
 
 #NetBSD10
@@ -28,9 +28,9 @@ UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 RPI5_UEFI=RPI5
 
 #Firmware:
-#commit 24b0217f98d5e3331a249c63e5b91a8125886641 (HEAD -> master, origin/master, origin/HEAD)
+#commit ef7f1aa2b5a2d4b9bf19353f9875b48308389abb (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Fri Jan 9 17:40:45 2026 +0000
+#Date:   Mon Jan 19 11:45:47 2026 +0000
 
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
@@ -114,14 +114,14 @@ restore:
 	vnconfig -u ${VND}
 	vnconfig -u ${VND_ORG}
 
-#4096*804722=512*6437776=3296141312
-#6437776-90200-6=6347570
+#117260+7635119+9=7752388
+#512*7752388=4096*969048=3969222656
 #03_back
 gpt:
 	vnconfig ${VND} ${FILE}
 	gpt create -p 2 ${VND}
-	gpt add -i 1 -l "EFI" -s 90200 -t efi ${VND}
-	gpt add -i 2 -l "netbsd-root" -s 7635122 -t ffs ${VND}
+	gpt add -i 1 -l "EFI" -s 117260 -t efi ${VND}
+	gpt add -i 2 -l "netbsd-root" -s 7635119 -t ffs ${VND}
 
 	newfs_msdos /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |head -2 |tail -1`
 	newfs -n 500000 -b 4096 /dev/r`dkctl ${VND} listwedges |awk -F: '{print $$1}' |tail -1`
@@ -130,7 +130,7 @@ gpt:
 # edit 03_Back
 file: 
 	echo Create ${FILE}.
-	dd if=/dev/zero of=${FILE} bs=4096 count=965666 progress=62000
+	dd if=/dev/zero of=${FILE} bs=4096 count=969048 progress=62000
 	sleep 3
 
 # stop sshd for package install
