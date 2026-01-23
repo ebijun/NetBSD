@@ -165,10 +165,20 @@ bwfm0: NVRAM file model-spec: brcmfmac43430-sdio.raspberrypi,3-model-b.txt
 bwfm0: Found NVRAM file: brcmfmac43430-sdio.raspberrypi,3-model-b.txt
 bwfm0: CLM file default:    brcmfmac43430-sdio.clm_blob
 bwfm0: CLM file model-spec: brcmfmac43430-sdio.raspberrypi,3-model-b.clm_blob
+bwfm0: CHIPACTIVE
+bwfm0: address b8:27:eb:e1:34:80
+bwfm0: wl0: Oct 23 2017 03:55:53 version 7.45.98.38 (r674442 CY) FWID 01-e58d219f
 audio0 at vcaudio0: playback
 audio0: slinear_le:16 -> slinear_le:16 2ch 48000Hz, blk 7680 bytes (40ms) for playback
 spkr0 at audio0: PC Speaker (synthesized)
 wsbell at spkr0 not configured
+wsdisplay0: screen 4 added (default, vt100 emulation)
+umass0 at uhub1 port 3 configuration 1 interface 0
+umass0: StoreJet Transcend (0x8564) StoreJet Transcend (0x7000), rev 2.10/80.00, addr 5
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 223 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
 bwfm0: CHIPACTIVE
 bwfm0: address b8:27:eb:4e:e9:dd
 bwfm0: wl0: Oct 23 2017 03:55:53 version 7.45.98.38 (r674442 CY) FWID 01-e58d219f
