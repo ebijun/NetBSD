@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2025 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2026 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -35,6 +35,7 @@ Maps:
 .. csv-table::
  :widths: 70 70
 
+ オープンソースカンファレンス2026大阪展示の記録,https://posfie.com/@ebijun/p/Vfaj1UC
  関西オープンフォーラム2025 BSDなひとときの記録, https://posfie.com/@ebijun/p/poMBvId
  オープンソースカンファレンス2025大阪展示の記録,https://togetter.com/li/2496475
  2024/10-11 NetBSDブースの記録,https://togetter.com/li/2456931
@@ -67,6 +68,10 @@ Maps:
 .. csv-table::
  :widths: 25 15 60
 
+ 719 craft beer,東天満２,土14:00-21:00 ブロンドエール
+ コーポ,東三国,18:00-0:00 イングリッシュビター
+ Holly's cafe,堺筋本町/ATC,小倉モーニング&水出し珈琲
+ Ape Brewing,瓦町２,17:00-0:30 じゅもん やんちゃ。
  電子原人,谷町九丁目,17:00-22:00 そば
  Goul Goul,谷六,17:00-23:00 オープン時にThis is PiL
  marca,大正,クラフトビール。大正タグボート平日16:00 土日11:00 23時。 
@@ -78,7 +83,7 @@ Maps:
  テタールヴァレ,谷四,ビアバー。11:00-23:00
  YELLOW APE CRAFT,北浜,20タップ。15:00-24:30
  BAK BREWERY,高麗橋,火曜日〜土曜日 18時〜25時L.O 日曜日13時〜19時L.O.
-  BEER BELLY,土佐堀,箕面ビール。17:00-24:00
+ BEER BELLY,土佐堀,箕面ビール。17:00-24:00
  ホビーランド,本町,ミニタリープラモデル専門店。エッチングパーツが熱い。月~土12-20 日祝11-19 火休
  東京真空管商会,日本橋,関西真空管の聖地。五階百貨店に移転。11:00-19:00 火休。
  デジット,日本橋,秋葉で小売してないパーツもある。シリコンハウス3F
@@ -90,7 +95,6 @@ Maps:
  ドリーム,西宮北口,15000回ループしてからKOF会場にゴー!8:00-17:00。
  ドルフィンズ,梅田,大阪さん業界館開催時に打ち上げをやってた堺筋本町は閉店。梅田か天満橋に行くこと。
  地底旅行,弁天町,大阪地底1200mから湧く地底ビールと温泉
- 電気蕎麦,天満橋,ピーという発信音の後に日本蕎麦。看板に注目。閉店。
  アートコートギャラリー,天満宮,OAP彫刻の小径2022-2024: 市野雅彦・坪田昌之「Twist」
  ファンダンゴ,堺,関西ロックパンク修行場　堺に移転4周年。
  タイムボム,南堀江,中古レコード。タイムボムレコーズというのがありましてな。2019/12に四ツ橋に移転
@@ -120,8 +124,9 @@ Maps:
 ~~~~~~~~~~~~~~
 
 .. csv-table::
- :widths: 15 15 60
-
+ :widths: 30 15 45
+ 
+ 今年もNetBSD環境を使ってPC-6001のPSG演奏デモを作った話,KOF2025,https://speakerdeck.com/tsutsui/kof2025
  GitHub Actionsを使ってNetBSDマイナー機種用のビルドテストCIを書いてみた話,OSC2025大阪,https://speakerdeck.com/tsutsui/osc2025osaka
  PC-6001のPSG演奏デモをなるべくNetBSD環境を使って作った話,KOF2024,https://speakerdeck.com/tsutsui/kof2024
  digital VAX NetBSD/vaxの歴史とVAXstation 3100/m30展示,OSC2024大阪,https://speakerdeck.com/tsutsui/osc2024osaka
@@ -152,6 +157,7 @@ Maps:
 .. csv-table::
  :widths: 15 15 60
 
+ 2025/11/8,南港ATC,LUNA PC6001 RPI5
  2025/1/25,大阪産業創造館,UMAX Apus2000/200
  2024/11/8-9,南港ATC,LUNA PC-6001mkII
  2024/1/27,大阪産業創造館,VAXstation 3100/m30
@@ -180,6 +186,22 @@ Maps:
 
 2025
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2025/11/08/IMG20251108105232.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108105235.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108115454.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108120041.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108120044.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108121319.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108105908.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108122614.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108122617.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108122619.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108123352.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108123401.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108130236.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108151601.jpg
+.. image::  ../Picture/2025/11/08/IMG20251108152029.jpg
 
 .. image::  ../Picture/2025/01/25/IMG20250125105503.jpg
 .. image::  ../Picture/2025/01/25/IMG20250125105507.jpg

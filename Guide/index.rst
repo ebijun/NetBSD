@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2025 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2026 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -23,13 +23,19 @@
  :maxdepth: 3
  :numbered:
 
- Place/hiroshima
+ www.netbsd.org/about
+ www.netbsd.org/ports.rst
+ www.netbsd.org/pkgsrc-intro
+ www.netbsd.org/commit-guidelines
+ www.netbsd.org/security
+ www.netbsd.org/application-procedure.rst
+ Place/osaka
  stable-diffusion.cpp
  PC6001VX/PC6001VX
  Pkgsrc/mlterm
  Pkgsrc/playfield
- RPI/RPIupdate2025
- OSC/OSC2025
+ RPI/RPIupdate2026
+ OSC/OSC2026
  RPI
  Pkgsrc/nono
  Pkgsrc/chatgpt
