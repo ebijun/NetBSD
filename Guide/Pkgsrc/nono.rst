@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2022-5 Jun Ebihara All rights reserved.
+ Copyright (c) 2022-6 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.6.3
+ DISTNAME=       nono-1.6.5
 
 チェックサム作成
 ------------------
@@ -51,15 +51,14 @@ Makefile 内のバージョンをあげます。
 
  % make makesum
  
- drwxr-xr-x  2 jun  wheel   512 Dec 11 05:47 CVS
+ drwxr-xr-x  2 jun  wheel   512 Jan 28 21:22 CVS
  -rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
- -rw-r--r--  1 jun  wheel  1202 Dec 11 05:55 Makefile
+ -rw-r--r--  1 jun  wheel  1202 Jan 28 21:22 Makefile
  -rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
- -rw-r--r--  1 jun  wheel   350 Dec 11 05:56 distinfo
+ -rw-r--r--  1 jun  wheel   350 Jan 28 21:22 distinfo
 
 make package して動作を確認します。
- 
- 
+  
 pkglint
 ----------
  
@@ -84,23 +83,13 @@ commit
 
  cvs commit 
 
- nono: update to 1.6.4.
+ nono: update to 1.6.5.
 
- 1.6.4 (2025/12/08)
+ 1.6.5 (2026/01/28)
 
- m68k(Fix): "Fix SRP/URP register masks in 68040. This makes NetBSD newpmap kernel bootable."
- m68k(Fix): "Fix an issue where the lower 4 bits of SRP/CRP register in 68030 were cleared."
- m68k(Fix): "Fix memory accesses in PACK/UNPK instructions to a single word access."
- m68k(Update): "Implement several corner cases in 68030 PTEST instruction."
- m68k(Update): "Rewrite whole 68030 MMU and improve performance slightly."
- m68k(Update): "Improve 68030 ATC performance slightly."
- vm(Update): "Implement ESC D and ESC M in serial console emulation."
- host(Fix): "Fix an abnormal termination in usermode network."
- host(Fix): "Fix an issue that the application could not be terminated in usermode network."
- GUI(Update): "Improve the page table monitor."
- GUI(Fix): "Remove incorrect TT hit rate in 68030 ATC monitor since ver 1.6.3."
- debugger(Fix): "Fix an issue where different exceptions occurring consecutively at the same address were not recorded in Exception history."
- debugger(New): "Implement "pe" command." 
+ vm(Update): "Support serial console on the compatible PROM on LUNA-I and LUNA88K."
+ debugger(Update): "Fix a collision between debugger and log to stdout."
+ debugger(New): "Implement "pf" command." 
 
 doc をcommit します
 ---------------------
@@ -110,9 +99,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.6.4
+ doc: Updated emulators/nono to 1.6.5
  
  cvs diff -u CHANGES-2025
  
-        Updated emulators/nono to 1.6.4 [jun 2025-12-11]
+        Updated emulators/nono to 1.6.5 [jun 2026-01-28]
 
