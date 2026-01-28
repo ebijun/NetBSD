@@ -35,7 +35,7 @@ NetBSDでは、サポート対象のアーキテクチャを「,ポート (Port)
  sparc64 , sparc         , Sun UltraSPARC (64-bit)                , 10.1
  xen     , i386 x86\_64 , Xen Virtual Machine Monitor            , 10.1
 
-#ティア II: Organic (有機的ポート)
+ティア II: Organic (有機的ポート)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 現在、49のポートがTier IIステータスです。
