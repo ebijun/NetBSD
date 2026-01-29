@@ -101,7 +101,7 @@ doc をcommit します。
 
  doc: Updated emulators/nono to 1.6.5
  
- cvs diff -u CHANGES-2025
+ cvs diff -u CHANGES-2026
  
         Updated emulators/nono to 1.6.5 [jun 2026-01-28]
 

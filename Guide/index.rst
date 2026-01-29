@@ -30,14 +30,14 @@
  www.netbsd.org/security
  www.netbsd.org/application-procedure.rst
  Place/osaka
- stable-diffusion.cpp
+ Pkgsrc/nono
  PC6001VX/PC6001VX
  Pkgsrc/mlterm
  Pkgsrc/playfield
  RPI/RPIupdate2026
  OSC/OSC2026
  RPI
- Pkgsrc/nono
+ stable-diffusion.cpp
  Pkgsrc/chatgpt
  latexpdf
  Place/intro
