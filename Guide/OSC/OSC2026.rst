@@ -1,0 +1,214 @@
+.. 
+ Copyright (c) 2013-2026 Jun Ebihara All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+===========================================
+オープンソースカンファレンスNetBSDブースこの一年
+===========================================
+
+日本NetBSDユーザーグループは2024年もオープンソースカンファレンスを中心とするイベントに参加しています。
+2020/1のOSC2020大阪以降はZOOMでの参加になりましたが、2023/5のOSC2023名古屋以降ZOOMと展示を分けて開催するようになりました。
+NetBSD/aarch64からZOOM会議に参加する試みをしました。
+従来、ブースへの展示機材持ち込み＆差し入れに代わり、事前にtwitter上でデモ動画等を投稿されたものをtogetterでまとめておいて紹介するようにしてみました。、引き続きセミナー時間での参加・発表を歓迎します。
+
+NetBSD環境からのZOOM会議参加
+-----------------------------
+
+NetBSDからZOOM等の会議に参加するためには、以下の手順をとります。
+
+#. rustが動くようにする。
+#. audioが動くようにする。
+#. 内蔵カメラが動くようにする。
+#. Firefox80以降をpkgsrcからインストールする
+#. FirefoxのプラグインでLinuxまたはFreeBSDからインストールしているように見せかける。
+
+これまでに参加した一覧
+----------------------
+
+これまでに参加した一覧は以下のとおりです。
+
+  https://github.com/ebijun/NetBSD/blob/master/Guide/OSC/OSC100.csv
+
+
+このファイルはオープンソースカンファレンス過去来場者数一覧 http://www.ospn.jp/visitors/ を元に作成しています。
+
+
+どのくらい参加しているか
+-------------------------
+
+- 2025/12/27までにOSCは256回開催されています。
+- JNUGは230回参加しています。89.5%→89.8% (前年比+0.3%)
+
+OSCこの一年
+--------------
+
+2025年まとめ
+^^^^^^^^^^^^
+
+- 日本全国各地で13回+オンライン開催1回+ODC開催 
+- 参加者: 113,702人 年間参加者3356人 3115人(2021年)→2383人(2022年)→3304人(2023年)→3296人(2024年)→3356人(2025年)
+- 参加団体:7192グループ 年間参加グループ 320グループ  
+- 133グループ(2021)→127グループ(2022)→299グループ(2022)→317グループ(2023)→357グループ(2024)→320グループ(2025年)
+
+.. csv-table:: この一年
+ :widths: 10 40 10 20 30 30
+
+ 回数,イベント,日付,参加者,参加グループ,参加したら1
+ 243,,2025 Osaka,1/25,200,25,1
+ 244,,2025 Tokyo/Spring,2/21-22,850,65,1
+ 245,,2025 Shirahama,5/17,76,,DNF
+ 246,,2025 Nagoya,5/31,320,37,1
+ 247,,2025 Shimane,6/21,120,17,1
+ 248,,2025 Hokkaido,7/5,440,33,1
+ 249,,2025 Kyoto,8/3,290,36,1
+ ,,ODC ,9/6,150,6,参加
+ 250,,2025 Niigata,10/4,30,8,1
+ 251,,2025 Online/Fall,10/17-18,209,15,1
+ 252,,2025 Tokyo/Fall,10/25,290,36,1
+ 253,,2025 Fukuoka,11/22,190,20,1
+ 254,,2025 Yamaguchi,11/23,60,8,1
+ 255,,2025 Okinawa,11/29,52,,1
+ 256,,2025 Hiroshima,10/25,79,14,1
+
+togetterアクセスで見たNetBSDブース
+-----------------------------------
+togetterのアクセスログは以下の場所にあります。
+
+  https://github.com/ebijun/NetBSD/blob/master/Event/togetter/togetterview/view.csv
+
+この一年のアクセス数集計は以下の通りです。
+
+.. csv-table::
+ :widths: 120 60 10
+
+ OSC2026 Osaka,https://posfie.com//@ebijun/p/Vfaj1UC,167
+ OSC2025 Hiroshima,https://posfie.com//@ebijun/p/WkwSt6x,233
+ OSC2025 Fukuoka-Yamaguchi-Okinawa ,https://posfie.com//@ebijun/p/NgePtcK,284
+ KOF2025,https://posfie.com//@ebijun/p/poMBvId,292
+ OSC2025 Tokyo/Fall,https://posfie.com//@ebijun/p/KsHuz6A,298
+ OSC2025 Niigata,https://posfie.com//@ebijun/p/9uZIwuH,336
+ ODC2025,https://posfie.com//@ebijun/p/tctRUi9,507
+ OSC2025 Kyoto,https://posfie.com//@ebijun/p/LpFGcI4,619
+ OSC2025 Hokkaido,https://posfie.com//@ebijun/p/jobKi6a,507
+ JNUG 22th,https://posfie.com//@ebijun/p/hseqd7j,379
+ OSC2025 Shimane,https://posfie.com//@ebijun/p/plRcVrG,452
+ OSC2025 Shirahama&Nagoya,https://posfie.com//@ebijun/p/mSFyoC4,625
+ AsiaBSDCon-Lite in Tokyo,https://posfie.com//@ebijun/p/BxNgldk,399
+ OSC2025 Tokyo/Spring,https://posfie.com//@ebijun/p/AeMxGBR,1016
+ OSC2025 Osaka,https://posfie.com//@ebijun/p/EUD3bz3,1150
+
+netbsd-advocacyメーリングリストへの報告
+--------------------------------------------
+
+netbsd-advocacyメーリングリストへの参加報告をしてみました。
+
+ https://wiki.netbsd.org/users/jun/
+
+.. csv-table::
+
+ NetBSD machines at Open Source Conference 2020 Osaka,http://mail-index.netbsd.org/netbsd-advocacy/2020/01/28/msg000823.html
+
+NetBSD観光ガイド作成
+------------------------
+
+イベント毎に観光ガイドを作っています。セミナー参加者に配布しました。
+
+一覧：
+
+ https://github.com/ebijun/osc-demo/blob/master/README.md
+
+
+作成方法： 
+
+ https://github.com/ebijun/NetBSD/blob/master/Guide/Paper/sphinx.rst
+
+ 2020年以降のものは
+ https://cdn.netbsd.org/pub/NetBSD/misc/jun/OSC/
+ にあります。
+
+.. csv-table::
+ :widths: 10 20 100
+
+ 223,OSC2026大阪,http://www.re.soum.co.jp/~jun/OSC2026osaka.pdf
+ 222,OSC2025広島,http://www.re.soum.co.jp/~jun/OSC2025hiroshima.pdf
+ 221,OSC2025沖縄,http://www.re.soum.co.jp/~jun/OSC2025okinawa.pdf
+ 220,OSC2025山口,http://www.re.soum.co.jp/~jun/OSC2025yamaguchi.pdf
+ 219,OSC2025福岡,http://www.re.soum.co.jp/~jun/OSC2025fukuoka.pdf 
+ 218,KOF2025,http://www.re.soum.co.jp/~jun/KOF2025.pdf 
+ 217,OSC2025東京秋,http://www.re.soum.co.jp/~jun/OSC2025tokyofall.pdf
+ 216,OSC2025新潟,http://www.re.soum.co.jp/~jun/OSC2025niigata.pdf 
+ 215,ODC2025,http://www.re.soum.co.jp/~jun/ODC2025.pdf
+ 214,OSC2025京都, http://www.re.soum.co.jp/~jun/OSC2025kyoto.pdf
+ 213,OSC2025北海道, http://www.re.soum.co.jp/~jun/OSC2025hokkaido.pdf
+ 212,OSC2025島根, http://www.re.soum.co.jp/~jun/OSC2025shimane.pdf
+ 211,OSC2025名古屋,http://www.re.soum.co.jp/~jun/OSC2025nagoya.pdf
+ 210,OSC2025東京春, http://www.re.soum.co.jp/~jun/OSC2025tokyospring.pdf 
+ 209,OSC2025大阪, http://www.re.soum.co.jp/~jun/OSC2025osaka.pdf 
+
+旅費
+--------
+
+横浜からの旅費(=交通費＋宿泊費),機材配送費,資料印刷費実費をまとめています。機材配送はヤマトの「スマホでかんたん発送」サービスを利用しています。
+
+.. csv-table::
+ :widths: 10 50 30 20
+ 
+ 月,イベント,旅費,機材配送
+ 2020/1,OSC大阪,26080,1469
+ 2023/5,OSC名古屋,19300,0
+ 2023/6,OSC北海道,45392,3891
+ 2023/7,OSC京都,25004,3618
+ 2023/10,OSC島根,56603,0
+ 2023/11,KOF/OSC広島,59459,0
+ 2023/11,OSC新潟,20958,0
+ 2023/12,OSC福岡,37960,3720
+ 2024/1,OSC大阪,28464,0
+ 2024/5,OSC名古屋,20440,0
+ 2024/6,OSC北海道,35993,4091
+ 2024/7,OSC京都,25734,3376
+ 2024/9,ODC,1120,0
+ 2024/9,OSC広島,36604,0
+ 2024/10,OSC長岡,19796
+ 2024/10,OSC東京,1080
+ 2024/11,OSC島根,58184
+ 2024/11,KOF,29704
+ 2024/11,OSC愛媛,40454,1622
+ 2024/12,OSC福岡,35789,1886
+ 2025/1,OSC大阪,28464,0
+ 2025/2,OSC東京春,500,0
+ 2025/5,OSC白浜,2600,0
+ 2025/5,OSC名古屋,21494,0
+ 2025/6,OSC島根,50014,0
+ 2025/7,OSC北海道,32781,0
+ 2025/8,OSC京都,25110,0
+ 2025/10,OSC新潟,21120,0
+ 2025/11,KOF,28780,0
+ 2025/11,OSC福岡,46000,0
+ 2025/11,OSC山口,26700,0
+ 2025/11,OSC沖縄,35655,0
+ 2025/12,OSC広島,38460,0
+ 2026/01,OSC大阪,28360,0
+ 2026/4,OSC香川,25039,0
+
+2026年
+-------------
+
+OSCは2026/1/31のOSC 大阪(https://event.ospn.jp/osc2026-osaka/)からはじまります。ブース展示/ミーティング時間での発表/差し入れ等を歓迎します。
+
