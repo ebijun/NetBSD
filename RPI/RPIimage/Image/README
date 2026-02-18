@@ -1,38 +1,24 @@
-VERSION: :1,$s/2026-01-13/2026-01-13/g
-ISO:     :1,$s/20260112172513Z/20260112172513Z/g
-NetBSD:  :1,$s/11.99.4/11.99.4/g
-PKGSRC:  :1,$s/2026-01-13/2022/
+VERSION: :1,$s/2026-02-18/2026-02-18/g
+ISO:     :1,$s/20260217135350Z/20260217135350Z/g
+NetBSD:  :1,$s/11.99.5/11.99.5/g
+PKGSRC:  :1,$s/2026-02-18/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2026-01-13-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2026-02-18-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2026-01-13-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2026-02-18-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-01-13-earmv6hf/2026-01-13-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-01-13-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-02-18-earmv6hf/2026-02-18-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-02-18-earmv6hf/MD5
 
 Update:
-- NetBSD-11.99.4 
-- pkgsrc/www/dillo failed.
+- NetBSD-11.99.5 
+- pkgsrc/www/dillo failed. try www/palemoon.
 - fstab
   To resize_root,disable log from /etc/fstab.
-
-- bash should use --without-bash-malloc option
- libgtop: failed.
- checking for X... 
- malloc: make_cmd.c:658: assertion botched
- realloc: underflow detected; mh_nbytes out of range
- Aborting...[1]   Abort trap (core dumped) /usr/bin/env INSTALL=/usr/bin/install -c -o ro...
- *** Error code 134
-
- and add --tag=CC on Makefile
- pkgsrc/sysutils/libgtop/work.earmv7hf/libgtop-2.28.4/src/daemon/Makefile
- pkgsrc/sysutils/libgtop/work.earmv7hf/libgtop-2.28.4/examples/Makefile
- LINK = $(LIBTOOL) --tag=CC --mode=link $(CC) $(CFLAGS) $(LDFLAGS) ..
-
 - add net/nanotodon
   Nanotodon is a light-weight CUI/C99 mastodon client.
 
@@ -48,20 +34,11 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 11.99.4 evbarm-earmv6hf 20260112172513Z rpi.img from nyftp.
+- NetBSD 11.99.5 evbarm-earmv6hf 20260217135350Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
   # mlterm-wscons
   # sayaka --local --server misskey.io 
-- pkgsrc/devel/SDL2
-  failed with "sort: unknown option -- V"
-   mv /usr/bin/sort /usr/bin/sort.org
-   cp /usr/pkg/bin/gsort /usr/bin/sort
-- rust build ok: rust-1.76.0nb3.tgz
-
-add earmv6hf to pkgsrc/lang/rust/platform.mk:
-
-.if ${OPSYS} == "NetBSD" && (${MACHINE_ARCH} == "aarch64" || ${MACHINE_ARCH} == "earmv7hf" || ${MACHINE_ARCH} == "earmv6hf")
 
 - armv6 on QEMU (was Re: armv6 support for rust)
   http://mail-index.netbsd.org/port-arm/2024/09/01/msg008901.html
@@ -72,9 +49,9 @@ add earmv6hf to pkgsrc/lang/rust/platform.mk:
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-commit 24b0217f98d5e3331a249c63e5b91a8125886641 (HEAD -> master, origin/master, origin/HEAD)
+commit 832291b92d4985fd729bb9f11ff780a5c0e90419 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Fri Jan 9 17:40:45 2026 +0000
+Date:   Wed Feb 11 18:38:33 2026 +0000
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
@@ -111,23 +88,25 @@ PR
   for testing, with pkg_summery.gz .
 
 sysinfo:
- gzip-20260107 libutil-7.25 sh-20220122-20260112172513Z tzdata-2025cgtz
+ bind-9.20.18 NetBSD-11.99.5 openssl-3.5.5 sh-20220122-20260217135350Z
+ unbound-1.24.2 userland-NetBSD-11.99.5/evbarm yacc-2.020241231
 
 pkgsrc:
- bash-5.3.9 double-conversion-3.4.0 graphene-1.10.8nb3 gsl-2.8
- gst-plugins1-bad-1.26.10 gst-plugins1-base-1.26.10 gstreamer1-1.26.10
- gtk4-4.18.6nb3 harfbuzz-12.3.0 iso-codes-4.16.0 jasper-4.2.8 lcms2-2.16nb2
- libb2-0.98.1nb1 libcups-2.4.16 libgpg-error-1.58 libjpeg-turbo-3.1.3
- libpaper-2.2.7 libproxy-0.5.12 libxkbcommon-1.13.1 libxml2-2.14.6nb1
- mng-2.0.3nb1 perl-5.42.0nb1 png-1.6.53 python313-3.13.11 qt5-qtbase-5.15.18
- qt5-qtx11extras-5.15.18 qt5-qtxmlpatterns-5.15.18 qt6-qt5compat-6.10.1
- qt6-qtbase-6.10.1nb1 qt6-qtdeclarative-6.10.1 qt6-qtimageformats-6.10.1
- qt6-qtlanguageserver-6.10.1 qt6-qtshadertools-6.10.1 qt6-qtsvg-6.10.1
- ruby32-atk-4.3.4 ruby32-cairo-gobject-4.3.4 ruby32-gdk3-4.3.4
- ruby32-gdk_pixbuf2-4.3.4 ruby32-gio2-4.3.4 ruby32-glib2-4.3.4
- ruby32-gobject-introspection-4.3.4 ruby32-gtk3-4.3.4 ruby32-pango-4.3.4
- sayaka-3.8.5 sqlite3-3.51.1 ttmkfdir2-20021109nb9 uim-1.9.7pre20251027
- wayland-protocols-1.47 xcb-util-cursor-0.1.6
+ at-spi2-core-2.58.3nb1 cairo-1.18.4nb3 curl-8.18.0nb2 gdk-pixbuf2-2.44.4
+ git-base-2.53.0nb1 glib2-2.86.3 gnutls-3.8.11nb3 gobject-introspection-1.86.0
+ gtk2+-2.24.33nb35 gtk3+-3.24.51nb1 gtk4-4.20.3nb1 harfbuzz-12.3.2 icewm-4.0.0
+ icu-78.2 libatomic-15.1.0 libcups-2.4.16nb2 libepoxy-1.5.10nb2 libgcrypt-1.12.0
+ libgpg-error-1.58nb2 libproxy-0.5.12nb1 librsvg-2.60.1nb1 libtasn1-4.21.0
+ libxkbcommon-1.13.1nb1 libxml2-2.14.6nb2 libxslt-1.1.43nb6 m17n-lib-1.8.0nb25
+ nanotodon-0.5.0nb5 nghttp2-1.68.0nb1 p11-kit-0.26.2 pango-1.57.0nb2
+ pkgin-26.1.0 png-1.6.54 py313-setuptools-81.0.0 python313-3.13.12
+ qt5-qtbase-5.15.18nb1 qt5-qtx11extras-5.15.18nb1 qt5-qtxmlpatterns-5.15.18nb1
+ qt6-qt5compat-6.10.1nb1 qt6-qtbase-6.10.1nb2 qt6-qtdeclarative-6.10.1nb1
+ qt6-qtimageformats-6.10.1nb1 qt6-qtlanguageserver-6.10.1nb1
+ qt6-qtshadertools-6.10.1nb1 qt6-qtsvg-6.10.1nb1 ruby32-addressable-2.8.8
+ ruby32-base-3.2.10 ruby32-nokogiri-1.19.0 ruby32-pkg-config-1.6.5
+ ruby32-public_suffix-7.0.2 shared-mime-info-2.4nb7 sqlite3-3.51.2
+ uim-1.9.7pre20251027nb1 wayland-1.24.0nb1 zsh-5.9nb4
 
 Need Checking:
 - bluetooth keyboard/mouse setting
@@ -179,7 +158,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-01-13-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-02-18-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -409,7 +388,7 @@ https://www.facebook.com/NetBSD.jp
 http://www.jp.NetBSD.org/
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2025.rst
 
-- NetBSD 11.99.4 earmv6hf rpi.img.gz base
+- NetBSD 11.99.5 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
