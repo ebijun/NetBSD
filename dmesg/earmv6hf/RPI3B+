@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 11.99.4 (RPI2) #0: Mon Jan 12 17:25:13 UTC 2026
+NetBSD 11.99.5 (RPI2) #0: Tue Feb 17 13:53:50 UTC 2026
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -92,6 +92,7 @@ dwctwo0: interrupting on icu irq 9
 bcmpmwdog0 at simplebus1: Power management, Reset and Watchdog controller
 /soc/vec@7e806000 at simplebus1 not configured
 /soc/hdmi@7e902000 at simplebus1 not configured
+/soc/v3d@7ec00000 at simplebus1 not configured
 /soc/gpu at simplebus1 not configured
 genfb0 at simplebus1: switching to framebuffer console
 genfb0: framebuffer at 0xfdc5a000, size 1920x1280, depth 32, stride 10240
@@ -99,30 +100,34 @@ wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
 vchiq0 at simplebus1: BCM2835 VCHIQ
-/arm-pmu at simplebus0 not configured
 gpioleds0 at simplebus0: ACT
+/arm-pmu at simplebus0 not configured
+/soc/hvs@7e400000 at simplebus1 not configured
 bcmrng0 at simplebus1: RNG
 entropy: ready
+/soc/pixelvalve@7e206000 at simplebus1 not configured
+/soc/pixelvalve@7e207000 at simplebus1 not configured
+/soc/pixelvalve@7e807000 at simplebus1 not configured
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
 sdmmc0 at bcmsdhost0
 sdhc0: SDHC 3.0, rev 153, caps <01610000/00000000>, platform DMA, 200000 kHz, HS 3.3V, re-tuning mode 1, 1024 byte blocks
 sdmmc1 at sdhc0 slot 0
 dwctwo0: Core Release: 2.80a (snpsid=4f54280a)
 usb0 at dwctwo0: USB revision 2.0
+IPsec: Initialized Security Association Processing.
 uhub0 at usb0: NetBSD (0x0000) DWC2 root hub (0x0000), class 9/0, rev 2.00/1.00, addr 1
 uhub0: 1 port with 1 removable, self powered
-IPsec: Initialized Security Association Processing.
 sdmmc0: direct I/O error 5, r=6 p=0xd2a46f1c write
-sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
-ld0 at sdmmc0: <0x02:0x544d:SF128:0x00:0x004f07b0:0x17c>
-ld0: 115 GB, 15047 cyl, 255 head, 63 sec, 512 bytes/sect x 241745920 sectors
-ld0: 235552768 trailing sectors not covered by disklabel
-ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 sdmmc1: 4-bit width, 50.000 MHz
 sdmmc1: SDIO function
 bwfm0 at sdmmc1 function 1
 (manufacturer 0x2d0, product 0xa9a6) at sdmmc1 function 2 not configured
 (manufacturer 0x2d0, product 0xa9a6, standard function interface code 0x2) at sdmmc1 function 3 not configured
+sdmmc0: SD card status: 4-bit, C10, U1, V10, A1
+ld0 at sdmmc0: <0x02:0x544d:SF128:0x00:0x004f07b0:0x17c>
+ld0: 115 GB, 15047 cyl, 255 head, 63 sec, 512 bytes/sect x 241745920 sectors
+ld0: 235552768 trailing sectors not covered by disklabel
+ld0: 4-bit width, High-Speed/SDR25, 50.000 MHz
 uhub1 at uhub0 port 1: vendor 0424 (0x0424) product 2514 (0x2514), class 9/0, rev 2.00/b.b3, addr 2
 uhub1: multiple transaction translators
 uhub1: 4 ports with 3 removable, self powered
@@ -159,7 +164,7 @@ ld0: 235552768 trailing sectors not covered by disklabel
 root on ld0a dumps on ld0b
 ld0: 235552768 trailing sectors not covered by disklabel
 root file system type: ffs
-kern.module.path=/stand/evbarm/11.99.4/modules
+kern.module.path=/stand/evbarm/11.99.5/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
@@ -182,13 +187,13 @@ bwfm0: NVRAM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
 bwfm0: Found NVRAM file: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
 bwfm0: CLM file default:    brcmfmac43455-sdio.clm_blob
 bwfm0: CLM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.clm_blob
+bwfm0: CHIPACTIVE
+bwfm0: address b8:27:eb:69:9a:5c
+bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
 umass0 at uhub2 port 2 configuration 1 interface 0
 umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 6
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 sd0: 465 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
-bwfm0: CHIPACTIVE
-bwfm0: address b8:27:eb:69:9a:5c
-bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
 wsdisplay0: screen 4 added (default, vt100 emulation)

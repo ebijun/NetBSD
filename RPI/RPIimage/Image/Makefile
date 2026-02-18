@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260112172513Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260217135350Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -31,9 +31,9 @@ LIST_UPDATE=base base32 comp debug debug32 dtb games gpufw index.html kern-RPI k
 
 #Firmware: 
 # git log HEAD |head
-#commit 24b0217f98d5e3331a249c63e5b91a8125886641 (HEAD -> master, origin/master, origin/HEAD)
+#commit 832291b92d4985fd729bb9f11ff780a5c0e90419 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Fri Jan 9 17:40:45 2026 +0000
+#Date:   Wed Feb 11 18:38:33 2026 +0000
 
 FIRM=LICENCE.broadcom bootcode.bin fixup4cd.dat fixup_cd.dat start.elf start4db.elf start_db.elf fixup.dat fixup4db.dat fixup_db.dat start4.elf start4x.elf start_x.elf fixup4.dat fixup4x.dat  fixup_x.dat  start4cd.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -191,7 +191,7 @@ firm:
 	for i in ${FIRMPATH}/*.dtb ; do (cp  $$i /mnt/dtb); done
 	# for RPI02W
 	mv ${MNT}/dtb/bcm2710-rpi-zero-2-w.dtb ${MNT}/dtb/bcm2710-rpi-zero-2-w.dtb.org
-	cp ${MNT}/dtb/bcm2837-rpi-3-b-plus.dtb ${MNT}/dtb/bcm2710-rpi-zero-2-w.dtb
+	cp ${MNT}/dtb/broadcom/bcm2837-rpi-3-b-plus.dtb ${MNT}/dtb/bcm2710-rpi-zero-2-w.dtb
 	umount ${MNT}
 	vnconfig -u ${VND}
 
