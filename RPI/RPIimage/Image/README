@@ -57,12 +57,12 @@ Date:   Wed Feb 11 18:38:33 2026 +0000
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
   earmv7hf works well.earmv6hf not yet.
 
-- Raspberry Pi [0-3] have been supported in big-endian mode (Rin Okuyama)
-XXX: should test big-endian image and pkgsrc
-
+- Raspberry Pi [0-3] have been supported in big-endian mode
 http://mail-index.netbsd.org/port-arm/2021/06/17/msg007310.html
  "earmv7hfeb works fine so far, pkgsrc included. aarc64eb doesn't boot
   on a Raspberry Pi 3," 
+https://mail-index.netbsd.org/port-arm/2026/02/23/msg009553.html
+ "because now vcaudio(4) works even on aarch64eb :-)"
 
 - Fw: gstreamer1 updated, raspberry help needed
   http://mail-index.netbsd.org/port-arm/2021/11/17/msg007498.html
