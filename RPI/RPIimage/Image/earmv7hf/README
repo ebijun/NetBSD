@@ -1,29 +1,20 @@
-VERSION: :1,$s/2026-01-10/2026-01-10/g
-ISO:     :1,$s/20260109123941Z/20260109123941Z/g
-NetBSD:  :1,$s/11.99.4/11.99.4/g
-PKGSRC:  :1,$s/2026-01-10/2026-01-10/g
+VERSION: :1,$s/2026-02-23/2026-02-23/g
+ISO:     :1,$s/20260222121456Z/20260222121456Z/g
+NetBSD:  :1,$s/11.99.5/11.99.5/g
+PKGSRC:  :1,$s/2026-02-23/2026-02-23/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2026-01-10-netbsd-armv7-earmv7hf.img
+Subject: 2026-02-23-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2026-01-10-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2026-02-23-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-01-10-earmv7hf/2026-01-10-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-01-10-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-02-23-earmv7hf/2026-02-23-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-02-23-earmv7hf/MD5
 
 Update:
-- pkgsrc/devel/cargo-c failed with /usr/pkg/lib/librustc_driver-43ce19429944873a
-.so: Undefined PLT symbol "_ZNSt18condition_variable4waitERSt11unique_lockISt5mu
-texE" (symnum = 9211)
- https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=59754
--> Fixed. 
-CFLAGS+=-Wno-error=incompatible-pointer-types -Wno-error=declaration-after-statement -Wno-error=deprecated-declarations
-cargo-c-0.10.19 
-# $NetBSD: Makefile,v 1.31 2025/12/15 12:19:22 adam Exp $
-
 - firefox
  pkgsrc/www/firefox/work.earmv7hf/firefox-138.0.4/third_party/aom/aom_ports/aarch32_cpudetect.c:75:2: error: #error "Runtime CPU detection selected, but no CPU detection method " "available for your platform. Rerun cmake with -
 DCONFIG_RUNTIME_CPU_DETECT=0."
@@ -43,24 +34,40 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 11.99.4 evbarm-armv7hf 20260109123941Z armv7.img from nyftp.
+- NetBSD 11.99.5 evbarm-armv7hf 20260222121456Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 
 - Firmware:
-commit 24b0217f98d5e3331a249c63e5b91a8125886641 (HEAD -> master, origin/master, origin/HEAD)
+commit 832291b92d4985fd729bb9f11ff780a5c0e90419 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Fri Jan 9 17:40:45 2026 +0000
+Date:   Wed Feb 11 18:38:33 2026 +0000
 
 sysinfo:
- gzip-20260107 libutil-7.25 sh-20220122-20260109123941Z tzdata-2025cgtz
+ bind-9.20.18 NetBSD-11.99.5 openssl-3.5.5 sh-20220122-20260222121456Z
+ unbound-1.24.2 userland-NetBSD-11.99.5/evbarm yacc-2.020241231
 
 pkgsrc:
- bash-5.3.9 git-base-2.52.0 gnutls-3.8.11nb1 libcups-2.4.16 libjpeg-turbo-3.1.3
- libpaper-2.2.7 libproxy-0.5.12 libxkbcommon-1.13.1 perl-5.42.0nb1 png-1.6.53
- python313-3.13.11 qt6-qtbase-6.10.1 qt6-qtdeclarative-6.10.1
- qt6-qtimageformats-6.10.1 qt6-qtlanguageserver-6.10.1 qt6-qtshadertools-6.10.1
- qt6-qtsvg-6.10.1 sqlite3-3.51.1 wayland-protocols-1.46
+ at-spi2-core-2.58.3nb1 cairo-1.18.4nb3 curl-8.18.0nb1 double-conversion-3.4.0
+ gdk-pixbuf2-2.44.5 git-base-2.53.0 glib2-2.86.3 gnutls-3.8.11nb2
+ gobject-introspection-1.86.0 gst-plugins1-bad-1.26.10 gst-plugins1-base-1.26.10
+ gstreamer1-1.26.10 gtk2+-2.24.33nb36 gtk3+-3.24.51nb4 gtk4-4.20.3nb2
+ harfbuzz-12.3.2 icewm-4.0.0 icu-78.2 libatomic-15.1.0 libcups-2.4.16nb1
+ libgcrypt-1.12.0 libgpg-error-1.58nb2 libproxy-0.5.12nb1 librsvg-2.60.2
+ libtasn1-4.21.0 libxkbcommon-1.13.1nb1 libxml2-2.14.6nb2 libxslt-1.1.43nb6
+ m17n-lib-1.8.0nb25 medit-1.2.0nb43 mlterm-3.9.4nb5 nanotodon-0.5.0nb4
+ nghttp2-1.68.0nb1 p11-kit-0.26.1 pango-1.57.0nb2 pkgin-26.1.0 png-1.6.54
+ py313-setuptools-80.10.2 python313-3.13.12 qt5-qtbase-5.15.18nb2
+ qt5-qtx11extras-5.15.18nb1 qt5-qtxmlpatterns-5.15.18nb1 qt6-qt5compat-6.10.2nb1
+ qt6-qtbase-6.10.2 qt6-qtdeclarative-6.10.2 qt6-qtimageformats-6.10.2
+ qt6-qtlanguageserver-6.10.2 qt6-qtshadertools-6.10.2 qt6-qtsvg-6.10.2
+ ruby32-addressable-2.8.8 ruby32-atk-4.3.4 ruby32-base-3.2.10
+ ruby32-cairo-gobject-4.3.4 ruby32-gdk3-4.3.4 ruby32-gdk_pixbuf2-4.3.4
+ ruby32-gio2-4.3.4 ruby32-glib2-4.3.4 ruby32-gobject-introspection-4.3.4
+ ruby32-gtk3-4.3.4 ruby32-nokogiri-1.19.0 ruby32-pango-4.3.4
+ ruby32-pkg-config-1.6.5 ruby32-public_suffix-7.0.2 sayaka-3.8.6
+ shared-mime-info-2.4nb7 sqlite3-3.51.2 ttmkfdir2-20021109nb9
+ uim-1.9.7pre20251027nb2 wayland-1.24.0nb1 wayland-protocols-1.47 zsh-5.9nb4
 
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2026/
