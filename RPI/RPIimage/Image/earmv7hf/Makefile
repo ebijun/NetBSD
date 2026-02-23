@@ -11,7 +11,7 @@
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260109123941Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260222121456Z/evbarm-earmv7hf/binary
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2026/
 
@@ -35,9 +35,10 @@ LIST=man modules xbase xcomp xetc xfont xserver
 LIST_UPDATE=base base32 comp debug debug32 dtb games gpufw kern-GENERIC man manhtml modules rescue tests text xbase xetc xcomp xdebug xfont xserver
 
 #Firmware: 
-#commit 24b0217f98d5e3331a249c63e5b91a8125886641 (HEAD -> master, origin/master, origin/HEAD)
+#commit 832291b92d4985fd729bb9f11ff780a5c0e90419 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Fri Jan 9 17:40:45 2026 +0000
+#Date:   Wed Feb 11 18:38:33 2026 +0000
+
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup4.dat fixup4cd.dat fixup4db.dat fixup4x.dat fixup_cd.dat fixup_db.dat fixup_x.dat start.elf start4.elf start4cd.elf start4db.elf start4x.elf start_cd.elf start_db.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
@@ -73,9 +74,11 @@ extract:
 rpi:
 	# set disklabel
 	vnconfig ${VND} ${FILE}
-#	(32768+163840)+5480448=5480448
-	fdisk -uf -0 -s 12/32768/163840 ${VND} 
-	fdisk -uf -1 -s 169/196608/5480448 ${VND} 
+
+	fdisk -uf -0 -s 12/32768/196608 ${VND} #32bit FAT id 12 DISKLABEL.proto
+	# 6225920-(196608-32768)=5996544
+	fdisk -uf -1 -s 169/229376/5996544 ${VND}
+
 	disklabel -DR ${VND} DISKLABEL.proto
 	# newfs dos and ffs
 	newfs -n 500000 -b 4096 /dev/r${VND}a
@@ -100,8 +103,8 @@ rpi:
 # make image file. 512*3813376=2GB
 file: 
 	echo Create ${FILE}.
-# 2048*2772
-	dd if=/dev/zero of=${FILE} bs=512 count=5677056 progress=70963
+#       2048*3040=6225920
+	dd if=/dev/zero of=${FILE} bs=512 count=6225920 progress=77824
 	sleep 3
 
 # stop sshd for package install
@@ -181,7 +184,7 @@ firm:
 	for i in ${FIRM} ; do (cp ${FIRMPATH}/$$i ${MNT}); done
 	for i in ${FIRMPATH}/*.dtb ; do (cp  $$i ${MNT}/dtb); done
 	# for RPI02W
-	cp ${MNT}/dtb/bcm2837-rpi-3-b-plus.dtb ${MNT}/dtb/bcm2710-rpi-zero-2-w.dtb
+	cp ${MNT}/dtb/broadcom/bcm2837-rpi-3-b-plus.dtb ${MNT}/dtb/bcm2710-rpi-zero-2-w.dtb
 	umount ${MNT}
 	vnconfig -u ${VND}
 

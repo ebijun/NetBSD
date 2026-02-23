@@ -1,4 +1,7 @@
-dd if=/dev/rsd0d of=back.img bs=4096 count=709632 progress=8870
+# 6225920*512/4096=778240
+dd if=/dev/rsd0d of=back.img bs=4096 count=778240 progress=9728
+sync
+
 # earmv7hf: config.txt should contain start address
 
 DIR=tmp`date +%Y%m%d-%H%M`
