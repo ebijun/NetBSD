@@ -1,34 +1,22 @@
-VERSION: :1,$s/2026-01-20/2026-01-20/g
-ISO:     :1,$s/20260119220223Z/20260119220223Z/g
+VERSION: :1,$s/2026-02-24/2026-02-24/g
+ISO:     :1,$s/20260223085807Z/20260223085807Z/g
 NetBSD:  :1,$s/11.99.5/11.99.5/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2026-01-20-netbsd-raspi-aarch64.img
+Subject: 2026-02-24-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2026-01-20-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2026-02-24-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-01-20-aarch64/2026-01-20-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-01-20-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-02-24-aarch64/2026-02-24-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-02-24-aarch64/MD5
 
 Topics:
-- icu-78.2
-- dtb update
 - gcc-14.3.0 
   CFLAGS+=-Wno-error=incompatible-pointer-types -Wno-error=declaration-after-statement -Wno-error=deprecated-declarations -Wno-error=implicit-function-declaration -Wno-error=sign-compare -Wno-error=undef
  and more if need.
-
-- libc-12.224
-  if pkgsrc/devel/cargo-c failed,use 2025-09-18-aarch64.
-  https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=59754
--> fixed.
-
-- firefox build failed
- https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=59775
- nit https://github.com/ebijun/NetBSD/blob/master/pkgsrc/firefox/patch-js_src_jit_arm64_vixl_Registers-vixl.h
--> fixed.
 
 - dillo build failed:
 checking whether the C compiler works... no
@@ -36,9 +24,6 @@ configure: error: in '/mnt/aarch64/pkgsrc/www/dillo/work.aarch64/dillo-3.2.0':
 configure: error: C compiler cannot create executables
 See 'config.log' for more details
 *** Error code 77
-
-- libreoffice build failed:
-  Fixed.libreoffice-25.8.2.2.
  
 - for RPI5: 
 1. Download RPI5-D0v1
@@ -64,9 +49,9 @@ dmesg:
  https://dmesgd.nycbug.org/dmesgd?do=view&id=8519
 
 - [Test] Firmware update /boot/fixup4*.dat,start4*.elf
-commit ef7f1aa2b5a2d4b9bf19353f9875b48308389abb (HEAD -> master, origin/master, origin/HEAD)
+commit 16b8310ef4f9b33ab8023036d4e14404f38cf9e9 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Mon Jan 19 11:45:47 2026 +0000
+Date:   Thu Feb 19 12:47:48 2026 +0000
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
@@ -98,16 +83,27 @@ bwfm0: autoconfiguration error: NVRAM file not available
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/aarch64/2026
   and pkgin update
 
-
-ary
 sysinfo:
- NetBSD-11.99.5 sh-20220122-20260119220223Z unbound-1.24.2
- userland-NetBSD-11.99.5/evbarm yacc-2.020241231
+ bind-9.20.18 openssl-3.5.5 sh-20220122-20260223085807Z
 
 pkgsrc:
- gnutls-3.8.11nb2 gtk2+-2.24.33nb35 icewm-4.0.0 icu-78.2 libcups-2.4.16nb1
- libtasn1-4.21.0 libxml2-2.14.6nb2 png-1.6.54 ruby32-addressable-2.8.8
- ruby32-pkg-config-1.6.5 ruby32-public_suffix-7.0.2 sqlite3-3.51.2 zsh-5.9nb4
+ MesaLib-21.3.9nb5 at-spi2-core-2.58.3nb1 cairo-1.18.4nb3 curl-8.18.0nb2
+ gdk-pixbuf2-2.44.5 git-base-2.53.0nb1 gnutls-3.8.11nb3 gtk2+-2.24.33nb37
+ gtk3+-3.24.51nb4 gtk4-4.20.3nb3 harfbuzz-12.3.2 libLLVM-13.0.1nb4
+ libcups-2.4.16nb2 libelf-0.8.13nb1 libgcrypt-1.12.0 libgpg-error-1.58nb2
+ libproxy-0.5.12nb2 librsvg-2.60.2 libva-2.23.0 libxkbcommon-1.13.1nb1
+ libxslt-1.1.43nb6 m17n-lib-1.8.0nb25 medit-1.2.0nb43 mlterm-3.9.4nb6
+ nanotodon-0.5.0nb5 nghttp2-1.68.0nb1 p11-kit-0.26.2 pango-1.57.0nb2
+ pkgin-26.2.0 png-1.6.55 py313-setuptools-81.0.0 python313-3.13.12
+ qt5-qtbase-5.15.18nb3 qt5-qtx11extras-5.15.18nb1 qt5-qtxmlpatterns-5.15.18nb1
+ qt6-qt5compat-6.10.1nb1 qt6-qtbase-6.10.2nb1 qt6-qtdeclarative-6.10.1nb1
+ qt6-qtimageformats-6.10.2nb1 qt6-qtlanguageserver-6.10.2nb1
+ qt6-qtshadertools-6.10.2nb1 qt6-qtsvg-6.10.2nb1 raqm-0.10.4 ruby32-atk-4.3.5
+ ruby32-base-3.2.10 ruby32-cairo-1.18.4nb2 ruby32-cairo-gobject-4.3.5
+ ruby32-gdk3-4.3.5 ruby32-gdk_pixbuf2-4.3.5 ruby32-gio2-4.3.5 ruby32-glib2-4.3.5
+ ruby32-gobject-introspection-4.3.5 ruby32-gtk3-4.3.5 ruby32-mikutter-5.1.1nb6
+ ruby32-nokogiri-1.19.0 ruby32-pango-4.3.5 sayaka-3.8.6 shared-mime-info-2.4nb7
+ uim-1.9.7pre20251027nb3 wayland-1.24.0nb1
 
 RPI4 status:
 - boot via UEFI_VER=v1.50
@@ -128,7 +124,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 11.99.5 evbarm-aarch64 20260119220223Z arm64.img from nyftp.
+- NetBSD-current 11.99.5 evbarm-aarch64 20260223085807Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
@@ -198,6 +194,8 @@ pkgsrc:
 
 EEPROM verson:
  Check&update with Raspberry Pi OS (pi:raspberry)
+ boot from m2.SSD with RPI5 needs update latest version.
+
  pi@raspberrypi:~ $ cat /etc/default/rpi-eeprom-update 
  FIRMWARE_RELEASE_STATUS="stable"
  pi@raspberrypi:~ $ sudo rpi-eeprom-update
