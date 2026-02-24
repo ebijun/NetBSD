@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 11.99.5 (GENERIC64) #0: Mon Jan 19 22:02:23 UTC 2026
+NetBSD 11.99.5 (GENERIC64) #0: Mon Feb 23 08:58:07 UTC 2026
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 8021 MB
 avail memory = 7730 MB
@@ -148,7 +148,7 @@ bwfm0 at sdmmc0 function 1
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SF064:0x01:0xf60436a2:0x183>
 ld1: 59024 MB, 7524 cyl, 255 head, 63 sec, 512 bytes/sect x 120881152 sectors
-ld1: GPT GUID: 8cdf5f38-6111-4afe-a9b0-d6eadf53e1b3
+ld1: GPT GUID: a37d80a1-7039-4c6e-83d3-675f1093b88f
 dk0 at ld1: "EFI", 117260 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 7635119 blocks at 117263, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -159,6 +159,8 @@ umass0 at uhub0 port 1 configuration 1 interface 0
 umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 1
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 953 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 2000409264 sectors
 uhidev0 at uhub2 port 4 configuration 1 interface 0
 uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
 ukbd0 at uhidev0
@@ -173,17 +175,15 @@ uhid1 at uhidev1 reportid 3: input=1, output=0, feature=0
 uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
 uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
 uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 953 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 2000409264 sectors
 swwdog0: software watchdog initialized
 boot device: dk1
 root on dk1
 root file system type: ffs
 kern.module.path=/stand/evbarm/11.99.5/modules
-WARNING: clock lost 59 days
+WARNING: clock lost 94 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec65000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec67000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
