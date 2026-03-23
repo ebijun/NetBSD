@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.6.5
+ DISTNAME=       nono-1.6.6
 
 チェックサム作成
 ------------------
@@ -51,11 +51,11 @@ Makefile 内のバージョンをあげます。
 
  % make makesum
  
- drwxr-xr-x  2 jun  wheel   512 Jan 28 21:22 CVS
- -rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
- -rw-r--r--  1 jun  wheel  1202 Jan 28 21:22 Makefile
- -rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
- -rw-r--r--  1 jun  wheel   350 Jan 28 21:22 distinfo
+ drwxrwxr-x  2 600   125   512 Mar  8 10:22 CVS
+ -rw-r--r--  1 root  125    54 Mar  8 10:22 DESCR
+ -rw-r--r--  1 root  125  1202 Mar  8 10:23 Makefile
+ -rw-r--r--  1 root  125   357 Mar  8 10:22 PLIST
+ -rw-r--r--  1 root  125   350 Mar  8 10:23 distinfo
 
 make package して動作を確認します。
   
@@ -83,13 +83,14 @@ commit
 
  cvs commit 
 
- nono: update to 1.6.5.
+ nono: update to 1.6.6.
 
- 1.6.5 (2026/01/28)
+ 1.6.6 (2026/03/06)
 
- vm(Update): "Support serial console on the compatible PROM on LUNA-I and LUNA88K."
- debugger(Update): "Fix a collision between debugger and log to stdout."
- debugger(New): "Implement "pf" command." 
+ m68k(Fix): "Probably fix 68030 cache burst operations."
+ m68k(Update): "Improve 68030 cache performance."
+ m68k(Update): "Improve performance about bus operations."
+ host(Fix): "Fix abnormal termination when outputting log messages on CLI since ver 1.6.5." 
 
 doc をcommit します
 ---------------------
@@ -99,9 +100,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.6.5
+ doc: Updated emulators/nono to 1.6.6
  
  cvs diff -u CHANGES-2026
  
-        Updated emulators/nono to 1.6.5 [jun 2026-01-28]
+        Updated emulators/nono to 1.6.6 [jun 2026-03-08]
 
