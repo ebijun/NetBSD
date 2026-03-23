@@ -1,0 +1,42 @@
+$NetBSD$
+
+--- ./work.earmv7hf/userland-734d76b0675685e9ec9148694f2cc00f58e5ebc0/host_applications/linux/apps/raspicam/RaspiVidYUV.c.org	2026-03-22 19:48:24.848409624 +0000
++++ ./work.earmv7hf/userland-734d76b0675685e9ec9148694f2cc00f58e5ebc0/host_applications/linux/apps/raspicam/RaspiVidYUV.c
+@@ -58,6 +58,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH D
+ #include <memory.h>
+ #include <sysexits.h>
+ 
++extern char *basename(char *path); 
+ #define VERSION_STRING "v1.3.12"
+ 
+ #include "bcm_host.h"
+@@ -359,7 +360,7 @@ static int parse_cmdline(int argc, const char **argv, 
+       switch (command_id)
+       {
+       case CommandHelp:
+-         display_valid_parameters(basename(argv[0]));
++         display_valid_parameters((char *)basename(argv[0]));
+          return -1;
+ 
+       case CommandWidth: // Width > 0
+@@ -1237,9 +1238,9 @@ int main(int argc, const char **argv)
+    // Do we have any parameters
+    if (argc == 1)
+    {
+-      fprintf(stdout, "\n%s Camera App %s\n\n", basename(argv[0]), VERSION_STRING);
++      fprintf(stdout, "\n%s Camera App %s\n\n", (char *)basename(argv[0]), VERSION_STRING);
+ 
+-      display_valid_parameters(basename(argv[0]));
++      display_valid_parameters((char *)basename(argv[0]));
+       exit(EX_USAGE);
+    }
+ 
+@@ -1252,7 +1253,7 @@ int main(int argc, const char **argv)
+ 
+    if (state.verbose)
+    {
+-      fprintf(stderr, "\n%s Camera App %s\n\n", basename(argv[0]), VERSION_STRING);
++      fprintf(stderr, "\n%s Camera App %s\n\n", (char *)basename(argv[0]), VERSION_STRING);
+       dump_status(&state);
+    }
+ 

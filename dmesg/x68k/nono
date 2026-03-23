@@ -1,0 +1,79 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+    2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+    2024, 2025, 2026
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 11.99.5 (GENERIC) #0: Sun Mar  8 21:07:26 UTC 2026
+	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/x68k/compile/GENERIC
+X68030 (m68030 CPU/MMU, m68881 FPU, 25MHz clock)
+total memory = 524 MB
+avail memory = 508 MB
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+mainbus0 (root)
+intio0 at mainbus0 mapped at 0x3e2000
+ne0 at intio0 addr 0xece300 intr 0xf9: Nereid Ethernet
+ne0: NE2000 (RTL8019) Ethernet
+ne0: Ethernet address 02:00:01:3c:2b:58
+ne0: 10base2, 10baseT, 10baseT-FDX, auto, default [0x00 0x10] auto
+mfp0 at intio0 addr 0xe88000 intr 0x40
+clock0 at mfp0: MFP timer C
+kbd0 at mfp0
+powsw0 at mfp0: Front Switch
+rtc0 at intio0 addr 0xe8a000: RP5C15
+dmac0 at intio0 addr 0xe84000: HD63450 DMAC
+dmac0: 4 channels available.
+zsc0 at intio0 addr 0xe98000 intr 0x70
+zstty0 at zsc0 channel 0
+ms0 at zsc0 channel 1
+neptune0 at intio0 addr 0xece000 intr 0xf9: no device found.
+neptune1 at intio0 addr 0xece400 intr 0xf9: no device found.
+opm0 at intio0 addr 0xe90000
+vs0 at intio0 addr 0xe92000 using DMA ch3 intr 0x6a and 0x6b
+dmac0: allocating ch 3 for vs.
+vs0: MSM6258V ADPCM voice synthesizer
+audio0 at vs0: playback, capture, half duplex
+audio0: slinear_be:16 -> adpcm:4 1ch 15625Hz, blk 625 bytes (80ms) for playback
+audio0: slinear_be:16 <- adpcm:4 1ch 15625Hz, blk 625 bytes (80ms) for recording
+spkr0 at audio0: PC Speaker (synthesized)
+fdc0 at intio0 addr 0xe94000 intr 0x60 using DMA ch0 intr 0x64 and 0x65
+dmac0: allocating ch 0 for fdc.
+fdc0: uPD72065 FDC
+fd0 at fdc0 drive 0: 1.2MB/[1024bytes/sector], 77 cyl, 2 head, 8 sec
+fd1 at fdc0 drive 1: 1.2MB/[1024bytes/sector], 77 cyl, 2 head, 8 sec
+par0 at intio0 addr 0xe8c000 intr 0x63: parallel port (write only, interrupt)
+scsirom0 at intio0 addr 0xfc0000: On-board at 0xe96020
+spc0 at scsirom0
+scsibus0 at spc0: 8 targets, 8 luns per target
+sram0 at intio0 addr 0xed0000: 16k bytes accessible
+bmd0 at intio0 addr 0xece3f0: Nereid Bank Memory Disk
+bmd0: 16 MB, 0xee0000(64KB) x 256 pages
+grfbus0 at mainbus0
+grf0 at grfbus0: 768 x 512 16 colors builtin display
+ite0 at grf0: rows 32 cols 96
+grf1 at grfbus0: 768 x 512 16 colors graphic display
+ite at grf1 not configured
+enabling interrupts
+WARNING: system needs entropy for security; see entropy(7)
+timecounter: Timecounter "mfp" frequency 20000 Hz quality 100
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+scsibus0: waiting 2 seconds for devices to settle...
+WARNING: lwp 18 (system scsibus0-d) flags 0x20000000: timecounter went backwards from (1 + 0x04e0a84be4041e9b/2^64) sec to (1 + 0x02e807bbb6241273/2^64) sec in netbsd:mi_switch+0x1c0
+sd0 at scsibus0 target 0 lun 0: <NONO, SCSIHD, 0> disk fixed
+sd0: fabricating a geometry
+sd0: 4096 MB, 4096 cyl, 64 head, 32 sec, 512 bytes/sect x 8388608 sectors
+sd0: async, 8-bit transfers
+cd0 at scsibus0 target 5 lun 0: <NONO, SCSICD, 0> cdrom removable
+cd0: async, 8-bit transfers
+bell0: YM2151 OPM bell emulation.
+swwdog0: software watchdog initialized
+sd0: fabricating a geometry
+boot device: sd0
+root on sd0a dumps on sd0b
+root file system type: ffs
+kern.module.path=/stand/x68k/11.99.5/modules
+entropy: best effort
+entropy: ready
