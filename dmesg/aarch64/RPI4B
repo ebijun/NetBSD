@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 11.99.5 (GENERIC64) #0: Mon Feb 23 08:58:07 UTC 2026
+NetBSD 11.99.5 (GENERIC64) #0: Mon Mar 23 12:44:50 UTC 2026
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 8021 MB
 avail memory = 7730 MB
@@ -18,20 +18,20 @@ armfdt0: using EFI runtime services for RTC
 simplebus0 at armfdt0: Raspberry Pi Foundation Raspberry Pi 4 Model B
 simplebus1 at simplebus0
 acpifdt0 at simplebus0
-acpifdt0: SMBIOS rev. 3.3.0 @ 0x39e00000
-ACPI: RSDP 0x0000000038EAB018 000024 (v02 RPIFDN)
-ACPI: XSDT 0x0000000038EABF18 000074 (v01 RPIFDN RPI4     00000200      01000013)
-ACPI: FACP 0x0000000038EAB098 000114 (v06 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: DSDT 0x0000000038961018 0022D9 (v02 RPIFDN RPI      00000002 INTL 20230628)
-ACPI: CSRT 0x0000000038EABB18 000169 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: DBG2 0x0000000038EABD98 000061 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: GTDT 0x0000000038EAB898 000068 (v03 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: IORT 0x0000000038EAB998 0000B7 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: APIC 0x0000000038EAB218 000184 (v05 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: PPTT 0x0000000038EAB498 000184 (v02 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: SSDT 0x0000000038980018 000277 (v02 RPIFDN RPI4EMMC 00000002 INTL 20230628)
-ACPI: SSDT 0x0000000038980418 000244 (v05 RPIFDN RPI4XHCI 00000002 INTL 20230628)
-ACPI: BGRT 0x0000000038EABE98 000038 (v01 INTEL  EDK2     00000002      01000013)
+acpifdt0: SMBIOS rev. 3.3.0 @ 0x39e20000
+ACPI: RSDP 0x0000000038EC3018 000024 (v02 RPIFDN)
+ACPI: XSDT 0x0000000038EC3F18 000074 (v01 RPIFDN RPI4     00000200      01000013)
+ACPI: FACP 0x0000000038EC3098 000114 (v06 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: DSDT 0x0000000038979018 0022D9 (v02 RPIFDN RPI      00000002 INTL 20230628)
+ACPI: CSRT 0x0000000038EC3B18 000169 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: DBG2 0x0000000038EC3D98 000061 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: GTDT 0x0000000038EC3898 000068 (v03 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: IORT 0x0000000038EC3998 0000B7 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: APIC 0x0000000038EC3218 000184 (v05 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: PPTT 0x0000000038EC3498 000184 (v02 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: SSDT 0x00000000389C8018 000277 (v02 RPIFDN RPI4EMMC 00000002 INTL 20230628)
+ACPI: SSDT 0x00000000389C8418 000244 (v05 RPIFDN RPI4XHCI 00000002 INTL 20230628)
+ACPI: BGRT 0x0000000038EC3E98 000038 (v01 INTEL  EDK2     00000002      01000013)
 ACPI: 3 ACPI AML tables successfully acquired and loaded
 acpi0 at acpifdt0: Intel ACPICA 20251212
 acpi0: X/RSDT: OemId <RPIFDN,RPI4    ,00000200>, AslId <    ,01000013>
@@ -109,7 +109,7 @@ RHPX (MSFT8000) at acpi0 not configured
 sdhc0 at acpi0 (SDC1, BCM2847-0): mem 0xfe300000-0xfe3000ff irq 158
 genet0 at acpi0 (ETH0, BCM6E4E-0): mem 0xfd580000-0xfd58ffff irq 189,190
 genet0: GENETv5.0
-genet0: Ethernet address d8:3a:dd:28:ce:ee
+genet0: Ethernet address 56:51:00:f2:49:07
 brgphy0 at genet0 phy 1: BCM54213PE 1000BASE-T media interface, rev. 2
 brgphy0: 10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, 1000baseT, 1000baseT-FDX, auto
 EC00 (PNP0C06) at acpi0 not configured
@@ -131,14 +131,14 @@ wsdisplay0 at genfb0 kbdmux 1: console (default, vt100 emulation)
 wsmux1: connecting to wsdisplay0
 wsdisplay0: screen 1-3 added (default, vt100 emulation)
 timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
-uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
-uhub0: 4 ports with 4 removable, self powered
 uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
 uhub1: 1 port with 1 removable, self powered
 cpu0: PMU interrupting on irq 48
 cpu1: PMU interrupting on irq 49
 cpu2: PMU interrupting on irq 50
 cpu3: PMU interrupting on irq 51
+uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+uhub0: 4 ports with 4 removable, self powered
 IPsec: Initialized Security Association Processing.
 sdmmc0: 4-bit width, 50.000 MHz
 sdmmc0: SDIO function
@@ -148,19 +148,17 @@ bwfm0 at sdmmc0 function 1
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SF064:0x01:0xf60436a2:0x183>
 ld1: 59024 MB, 7524 cyl, 255 head, 63 sec, 512 bytes/sect x 120881152 sectors
-ld1: GPT GUID: a37d80a1-7039-4c6e-83d3-675f1093b88f
+ld1: GPT GUID: 2e3cc394-f604-453d-8156-182479f6ad7c
 dk0 at ld1: "EFI", 117260 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 7635119 blocks at 117263, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
-uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 2
+uhub2 at uhub1 port 1: vendor 2109 (0x2109) USB2.0 Hub (0x3431), class 9/0, rev 2.10/4.21, addr 1
 uhub2: single transaction translator
 uhub2: 4 ports with 4 removable, self powered
 umass0 at uhub0 port 1 configuration 1 interface 0
-umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 1
+umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 2
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
-sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
-sd0: 953 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 2000409264 sectors
 uhidev0 at uhub2 port 4 configuration 1 interface 0
 uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
 ukbd0 at uhidev0
@@ -175,15 +173,14 @@ uhid1 at uhidev1 reportid 3: input=1, output=0, feature=0
 uhid2 at uhidev1 reportid 4: input=1, output=0, feature=0
 uhid3 at uhidev1 reportid 5: input=2, output=0, feature=0
 uhid4 at uhidev1 reportid 6: input=0, output=0, feature=7
+sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd0: 953 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 2000409264 sectors
 swwdog0: software watchdog initialized
 boot device: dk1
 root on dk1
 root file system type: ffs
 kern.module.path=/stand/evbarm/11.99.5/modules
-WARNING: clock lost 94 days
-WARNING: using filesystem time
-WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec67000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec62000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
