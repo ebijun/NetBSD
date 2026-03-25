@@ -1,18 +1,36 @@
-VERSION: :1,$s/2026-02-23/2026-02-23/g
-ISO:     :1,$s/20260222121456Z/20260222121456Z/g
+VERSION: :1,$s/2026-03-25/2026-03-25/g
+ISO:     :1,$s/20260323205847Z/20260323205847Z/g
 NetBSD:  :1,$s/11.99.5/11.99.5/g
-PKGSRC:  :1,$s/2026-02-23/2026-02-23/g
+PKGSRC:  :1,$s/2026-03-25/2026-03-25/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2026-02-23-netbsd-armv7-earmv7hf.img
+Subject: 2026-03-25-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2026-02-23-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2026-03-25-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-02-23-earmv7hf/2026-02-23-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-02-23-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-03-25-earmv7hf/2026-03-25-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-03-25-earmv7hf/MD5
+
+Topic:
+- ruby33
+ If YJIT is not available in the running environment (e.g., compiled 
+ with `--disable-yjit`), the constant `RubyVM::YJIT` is not defined, 
+ leading to the `NameError` despite the version check passing.
+
+ pkgsrc/net/mikutter:
+  /usr/pkg/share/mikutter/mikutter.rb:62
+ -    RubyVM::YJIT.enable if RUBY_VERSION.split('.') >= %w[3 3]
+ +    RubyVM::YJIT.enable if defined?(RubyVM::YJIT) && RUBY_VERSION.split('.') >= %w[3 3]
+
+- YM2149 PC6001 PSG Player on Raspberry Pi 3B/Zero
+ https://speakerdeck.com/tsutsui/osc2026tokyo-spring?slide=4
+- Raspberry Pi 4 support on 32 bit earmv7hf GENERIC kernel
+ https://mail-index.netbsd.org/port-arm/2026/03/19/msg009557.html
+- Raspberry Pi 3B: /dev/mem mmap GPIO works on earmv7hf but not on aarch64
+ https://mail-index.netbsd.org/port-arm/2026/02/16/msg009541.html
 
 Update:
 - firefox
@@ -34,40 +52,42 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 11.99.5 evbarm-armv7hf 20260222121456Z armv7.img from nyftp.
+- NetBSD 11.99.5 evbarm-armv7hf 20260323205847Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 
 - Firmware:
-commit 832291b92d4985fd729bb9f11ff780a5c0e90419 (HEAD -> master, origin/master, origin/HEAD)
+commit e14dd8db855fe0a37c2695157448eee5b18d307e (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Wed Feb 11 18:38:33 2026 +0000
+Date:   Tue Mar 24 15:09:09 2026 +0000
 
 sysinfo:
- bind-9.20.18 NetBSD-11.99.5 openssl-3.5.5 sh-20220122-20260222121456Z
- unbound-1.24.2 userland-NetBSD-11.99.5/evbarm yacc-2.020241231
+ dhcpcd-10.3.1 libpcap-1.10.6 (64-bit time_t) pkg_install-20260227
+ sh-20220122-20260323205847Z tcpdump-4.99.6 tzdata-2026agtz
 
 pkgsrc:
- at-spi2-core-2.58.3nb1 cairo-1.18.4nb3 curl-8.18.0nb1 double-conversion-3.4.0
- gdk-pixbuf2-2.44.5 git-base-2.53.0 glib2-2.86.3 gnutls-3.8.11nb2
- gobject-introspection-1.86.0 gst-plugins1-bad-1.26.10 gst-plugins1-base-1.26.10
- gstreamer1-1.26.10 gtk2+-2.24.33nb36 gtk3+-3.24.51nb4 gtk4-4.20.3nb2
- harfbuzz-12.3.2 icewm-4.0.0 icu-78.2 libatomic-15.1.0 libcups-2.4.16nb1
- libgcrypt-1.12.0 libgpg-error-1.58nb2 libproxy-0.5.12nb1 librsvg-2.60.2
- libtasn1-4.21.0 libxkbcommon-1.13.1nb1 libxml2-2.14.6nb2 libxslt-1.1.43nb6
- m17n-lib-1.8.0nb25 medit-1.2.0nb43 mlterm-3.9.4nb5 nanotodon-0.5.0nb4
- nghttp2-1.68.0nb1 p11-kit-0.26.1 pango-1.57.0nb2 pkgin-26.1.0 png-1.6.54
- py313-setuptools-80.10.2 python313-3.13.12 qt5-qtbase-5.15.18nb2
- qt5-qtx11extras-5.15.18nb1 qt5-qtxmlpatterns-5.15.18nb1 qt6-qt5compat-6.10.2nb1
- qt6-qtbase-6.10.2 qt6-qtdeclarative-6.10.2 qt6-qtimageformats-6.10.2
- qt6-qtlanguageserver-6.10.2 qt6-qtshadertools-6.10.2 qt6-qtsvg-6.10.2
- ruby32-addressable-2.8.8 ruby32-atk-4.3.4 ruby32-base-3.2.10
- ruby32-cairo-gobject-4.3.4 ruby32-gdk3-4.3.4 ruby32-gdk_pixbuf2-4.3.4
- ruby32-gio2-4.3.4 ruby32-glib2-4.3.4 ruby32-gobject-introspection-4.3.4
- ruby32-gtk3-4.3.4 ruby32-nokogiri-1.19.0 ruby32-pango-4.3.4
- ruby32-pkg-config-1.6.5 ruby32-public_suffix-7.0.2 sayaka-3.8.6
- shared-mime-info-2.4nb7 sqlite3-3.51.2 ttmkfdir2-20021109nb9
- uim-1.9.7pre20251027nb2 wayland-1.24.0nb1 wayland-protocols-1.47 zsh-5.9nb4
+ curl-8.19.0 freetype2-2.14.2 giflib-6.1.2 git-base-2.53.0nb1 glib2-2.86.4nb1
+ gnutls-3.8.12 gst-plugins1-bad-1.28.1 gst-plugins1-base-1.28.1
+ gstreamer1-1.28.1 gtk2+-2.24.33nb37 gtk3+-3.24.51nb5 gtk4-4.20.3nb4
+ harfbuzz-13.0.1 imlib2-1.12.5nb1 jasper-4.2.9 lerc-4.1.0 libcups-2.4.16nb2
+ libgcrypt-1.12.1 libgpg-error-1.59 libproxy-0.5.12nb2 libxml2-2.15.1
+ libxslt-1.1.45 mlterm-3.9.4nb6 mozilla-rootcerts-1.1.20260211
+ nanotodon-0.5.0nb5 p11-kit-0.26.2 pkg_install-20260227 pkgin-26.2.0 png-1.6.55
+ py313-setuptools-82.0.1 qt5-qtbase-5.15.18nb3 qt6-qtbase-6.10.2nb1
+ qt6-qtdeclarative-6.10.2nb1 qt6-qtimageformats-6.10.2nb1
+ qt6-qtlanguageserver-6.10.2nb1 qt6-qtshadertools-6.10.2nb1 qt6-qtsvg-6.10.2nb1
+ raqm-0.10.4 ruby33-3.3.10nb1 ruby33-addressable-2.8.9 ruby33-atk-4.3.5
+ ruby33-cairo-1.18.4nb2 ruby33-cairo-gobject-4.3.5 ruby33-delayer-1.2.1
+ ruby33-delayer-deferred-2.2.0 ruby33-diva-2.0.1 ruby33-gdk3-4.3.5
+ ruby33-gdk_pixbuf2-4.3.5 ruby33-gettext-3.4.1 ruby33-gio2-4.3.5
+ ruby33-glib2-4.3.5 ruby33-gobject-introspection-4.3.5 ruby33-gtk3-4.3.5
+ ruby33-httpclient-2.9.0 ruby33-instance_storage-1.0.0 ruby33-locale-2.1.5
+ ruby33-memoist-0.16.2 ruby33-mikutter-5.1.1nb7 ruby33-mini_portile2-2.8.9
+ ruby33-moneta-1.6.0 ruby33-native-package-installer-1.1.9
+ ruby33-nokogiri-1.19.1 ruby33-pango-4.3.5 ruby33-pkg-config-1.6.5
+ ruby33-pluggaloid-1.7.0 ruby33-public_suffix-7.0.5 ruby33-red-colors-0.4.0
+ ruby33-text-1.3.1 ruby33-typed-array-0.1.2 sqlite3-3.52.0
+ uim-1.9.7pre20251027nb3 wayland-1.24.0nb2
 
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2026/
