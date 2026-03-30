@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.6.6
+ DISTNAME=       nono-1.7.0
 
 チェックサム作成
 ------------------
@@ -51,11 +51,11 @@ Makefile 内のバージョンをあげます。
 
  % make makesum
  
- drwxrwxr-x  2 600   125   512 Mar  8 10:22 CVS
- -rw-r--r--  1 root  125    54 Mar  8 10:22 DESCR
- -rw-r--r--  1 root  125  1202 Mar  8 10:23 Makefile
- -rw-r--r--  1 root  125   357 Mar  8 10:22 PLIST
- -rw-r--r--  1 root  125   350 Mar  8 10:23 distinfo
+ drwxr-xr-x  2 jun  wheel   512 Mar 31 05:10 CVS
+-rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
+-rw-r--r--  1 jun  wheel  1202 Mar 31 05:16 Makefile
+-rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
+-rw-r--r--  1 jun  wheel   350 Mar 31 05:16 distinfo
 
 make package して動作を確認します。
   
@@ -83,14 +83,16 @@ commit
 
  cvs commit 
 
- nono: update to 1.6.6.
+ nono: update to 1.7.0.
 
- 1.6.6 (2026/03/06)
+ 1.7.0 (2026/03/28)
 
- m68k(Fix): "Probably fix 68030 cache burst operations."
- m68k(Update): "Improve 68030 cache performance."
- m68k(Update): "Improve performance about bus operations."
- host(Fix): "Fix abnormal termination when outputting log messages on CLI since ver 1.6.5." 
+ host(New): "Support QCOW2 disk image format."
+ vm(Update): "Mostly reimplement serial console emulation as VT220 compatible."
+ vm(New): "Make VirtIO Network, Entropy, SCSI devices possible to disable."
+ vm(Update): "Do not power off on the guest OS panic on virt-m68k."
+ m68k(New): "Make instruction/data caches possible to disable."
+ vm(Update): "Arrange log names in some devices." 
 
 doc をcommit します
 ---------------------
@@ -100,9 +102,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.6.6
+ doc: Updated emulators/nono to 1.7.0
  
  cvs diff -u CHANGES-2026
  
-        Updated emulators/nono to 1.6.6 [jun 2026-03-08]
+        Updated emulators/nono to 1.7.0 [jun 2026-03-30]
 
