@@ -1,0 +1,30 @@
+$NetBSD$
+
+Force the use of LDFLAGS and CFLAGS from the environment (pkgsrc).
+The original Makefile uses $(shell sdl2-config ...) which may not
+resolve correctly within the pkgsrc wrapper environment, leading
+to missing library links during the final build stage.
+
+--- Makefile.orig	2026-04-08 22:52:23.005517765 +0000
++++ Makefile
+@@ -3,15 +3,17 @@ CC = gcc
+ OBJS = main.o m6800.o m6800asm.o bm2mem.o bm2sub.o sound.o tape.o printer.o util.o menu.o init.o depend.o sdlxpm.o srecord.o hex.o conf.o
+ 
+ # SDL2.0
+-CFLAGS = -O3 -finline-limit-20000 -DM68_TRACE -DM68_SUB -Wall $(shell sdl2-config --cflags)
+-LDFLAGS = -s $(shell sdl2-config --libs)
++CFLAGS += -O3 -finline-limit-20000 -DM68_TRACE -DM68_SUB -Wall
++LDFLAGS += -s
+ 
+ # SDL1.2
+ #CFLAGS = -O3 -finline-limit-20000 -DM68_TRACE -DM68_SUB -Wall $(shell sdl-config --cflags)
+ #LDFLAGS = -s $(shell sdl-config --libs)
+ 
++all: $(EXE)
++
+ $(EXE): $(OBJS)
+-	$(CC) -o $(EXE) $(OBJS) $(LDFLAGS)
++	$(CC) -o $(EXE) $(OBJS) $(LDFLAGS)  $(shell sdl2-config --libs)
+ win32: $(OBJS) resource.o
+ 	$(CC) -o $(EXE) $(OBJS) resource.o $(LDFLAGS)
+ 
