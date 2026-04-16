@@ -878,7 +878,7 @@ AViiON実機の入手
 .. [3] Look Back in Anger: http://en.wikipedia.org/wiki/Look_Back_in_Anger_%28song%29
 .. [4] バーナード・マラマッドに関する研究 http://www.ishikawa-nct.ac.jp/lab/G/koguma/www/ehp/suzukihp.pdf
 .. [5] Be My Wife: http://en.wikipedia.org/wiki/Be_My_Wife
-.. [6] 高橋和巳『散華』論 -生活人としての大家- ,東口昌央,1988, http://ir.lib.osaka-kyoiku.ac.jp/dspace/handle/123456789/15270
+.. [6] 高橋和巳『散華』論 -生活人としての大家- ,東口昌央,1988,https://osaka-kyoiku.repo.nii.ac.jp/records/2081338
 .. [7] https://twitter.com/ebijun/status/231983148118970368
 .. [8] NetBSD/luna68kブートローダー実装作業日記,2013/1/4 http://togetter.com/li/433650
 .. [9] NetBSDブース @ 関西オープンソース 2011,2011/11/13 http://togetter.com/li/213724
