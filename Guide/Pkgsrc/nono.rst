@@ -52,10 +52,10 @@ Makefile 内のバージョンをあげます。
  % make makesum
  
  drwxr-xr-x  2 jun  wheel   512 Mar 31 05:10 CVS
--rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
--rw-r--r--  1 jun  wheel  1202 Mar 31 05:16 Makefile
--rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
--rw-r--r--  1 jun  wheel   350 Mar 31 05:16 distinfo
+ -rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
+ -rw-r--r--  1 jun  wheel  1202 Mar 31 05:16 Makefile
+ -rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
+ -rw-r--r--  1 jun  wheel   350 Mar 31 05:16 distinfo
 
 make package して動作を確認します。
   

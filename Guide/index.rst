@@ -26,7 +26,7 @@
 
  www.netbsd.org/NetBSD-11.0-RC3
  www.netbsd.org/pkgsrc-2026Q1.rst
- Place/kagawa
+ Place/shikoku
  www.netbsd.org/about
  www.netbsd.org/ports.rst
  www.netbsd.org/pkgsrc-intro
