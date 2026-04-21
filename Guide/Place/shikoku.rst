@@ -97,6 +97,9 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
 PC-6001のPSG演奏デモを機会にNetBSDを真面目に説明してみる tsutsuii@さん
  https://speakerdeck.com/tsutsui/osc2024ehime
 
+OSC東京でいただいた UIAPduinoマイコンボードで PSG演奏と液晶ドッド絵デモ
+ https://speakerdeck.com/tsutsui/osc2026kagawa
+
 
 四国での主な展示物
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -111,6 +114,7 @@ PC-6001のPSG演奏デモを機会にNetBSDを真面目に説明してみる tsu
  2018, LUNA+PSG XM6i omxplayer EeePC
  2019, PANIX RPI
  2024, PC6001 LUNA+mlterm+nanotodon 花梨先輩
+ 2026, macppc UIAPduino PC6001 WiiU 
 
 よく行く店 徳島
 ~~~~~~~~~~~~~~~~~~~~~
@@ -153,15 +157,14 @@ PC-6001のPSG演奏デモを機会にNetBSDを真面目に説明してみる tsu
 .. csv-table::
  :widths: 25 15 60
 
+ ビールルームとりかご,瓦町,多賀町2-17-11 しろすずめ11:00～20:30
+ リバーサイド351,松島二丁目,松島町3-5-1株式会社瀬戸内 タップルーム12:00～20:00
  麺之介,瓦町,KAOS (KAgawa Open Source)から十余年。
  なタ書,瓦町2-9-7,完全予約制
  ルヌガンガ,亀井町11-13,10:00-19:00
  古本YOMS,田町1-7,
  半空,瓦町1-10-18,
- THE CRAIC,高松築港駅構内,17:00～21:00 駅ナカのビアパブ 
- ビールルームとりかご,瓦町,多賀町2-17-11 しろすずめ11:00～20:30
  OHLOY BREWING,内町3-4,13:00～21:00 タップルームとボトルショップ
- リバーサイド351,松島二丁目,松島町3-5-1株式会社瀬戸内 タップルーム12:00～20:00
  さすらいのカンテキ,西の丸町7-5,
  HOPHEADS,大工町7-1.17:00～翌3:00                                                                       |
  Maison De Biere,百間町,毎月第3土曜にClub Biere 
