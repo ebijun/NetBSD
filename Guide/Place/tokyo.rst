@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2025 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2026 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -83,9 +83,9 @@ Maps:
  2024 Fall,3/1-2,203,15,オンライン
  2024 Fall,3/10,300,47,東京都立産業貿易センター台東館
  2025 Spring,2/21-22,850,65,駒澤大学 駒沢キャンパス
- 2025 Fall,10/17-18,,,オンライン
- 2025 Fall,10/25,,,東京都立産業貿易センター台東館
-
+ 2025 Fall,10/17-18,209,15,オンライン
+ 2025 Fall,10/25,350,47,東京都立産業貿易センター台東館
+ 2026 Spring,2/27-28,,,駒澤大学 駒沢キャンパス
  
 観光ガイドバックナンバー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,8 +97,9 @@ Maps:
 
  No,イベント,URL
 
+ 224, OSC2026東京春,http://www.re.soum.co.jp/~jun/OSC2026tokyospring.pdf
  217, OSC2025東京秋,http://www.re.soum.co.jp/~jun/OSC2025tokyofall.pdf
- 210, OSC2025東京春,http://www.re.soum.co.jp/~jun/OSC2024tokyofall.pdf 
+ 210, OSC2025東京春,http://www.re.soum.co.jp/~jun/OSC2025tokyospring.pdf 
  204, OSC2024東京秋,http://www.re.soum.co.jp/~jun/OSC2024tokyofall.pdf 
  197, OSC2024東京春,http://www.re.soum.co.jp/~jun/OSC2023tokyospring.pdf 
  190, OSC2023東京秋,http://www.re.soum.co.jp/~jun/OSC2023tokyofall.pdf
@@ -134,6 +135,7 @@ OSC東京まとめ
 .. csv-table::
  :widths: 70 70
 
+ OSC2026 Online/Spring NetBSDのご紹介 の記録, https://posfie.com/@ebijun/p/QvR9Tx9
  OSC2025 Online/Fall NetBSDのご紹介 の記録, https://posfie.com/@ebijun/p/KsHuz6A
  OSC2025 Online/Spring NetBSDのご紹介 の記録, https://posfie.com/@ebijun/p/AeMxGBR
  OSC2024 Online/Fall NetBSDのご紹介 の記録, https://togetter.com/li/2446541
@@ -168,6 +170,14 @@ OSC東京まとめ
 .. csv-table::
  :widths: 25 15 60
 
+ 254BeeR,白楽,みちのり
+ ペコラビール,五月台,土日12:00-22:00
+ TDM 1874,天王町,Eゾーン
+ ゆめが丘サンデーブルーイング,ゆめが丘,Sunday Happy Wheat
+ Tokyo Aleworks,有楽町,池袋ナイトオウルスタウト
+ Namachaんスタンド,椎名町,三田線IPA
+ Beer Cellar Tokyo,狛江,Comeback Schwarz
+ Cafe.maison de K.,九品仏,福岡basecampフェアとかkiyaとか
  みぞのくち醸造所,高津,12:00-23:00 ウタウト ワラウト
  いくどん柿生店,柿生,村人が集う焼肉店。いしはらさんの合言葉は「レバー大辛」。
  VERTERE,奥多摩,クラフトビール 月金14:00-19:30 土日12:00-19:30
@@ -199,7 +209,6 @@ OSC東京まとめ
  たん清,秋葉原,BSDマガジンの焼肉夜話。
  名曲喫茶ライオン,渋谷,百軒店の伝説。
  ヴィオロン,阿佐谷,名曲喫茶。真空管アンプの最終目的地。
- Galaxy,原宿,マニアックラヴ＆シャッフルマスター＆REBOOT
  池田電子,町田,町田市金森187-20 木曜定休 うずたかく積まれている
  
 OSC東京主な展示物
@@ -208,6 +217,7 @@ OSC東京主な展示物
 .. csv-table::
  :widths: 15 15 60
 
+ 2025/10/25,OSC2025東京秋,FUZIX on OpenBSD/luna88K on RPI5 PlayfieldEngine
  2025/2/21-22,OSC2025東京春,LUNA+PC6001,FUZIX on OpenBSD/luna88K on RPI
  2024/10/26,OSC2024東京秋,FUZIX on OpenBSD/luna88K on RPI nanotodon
  2024/3/10,OSC2024東京春,NetBSD/atari
@@ -246,6 +256,31 @@ OSC東京主な展示物
 
 2025年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2025/10/25/IMG20251025092621.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025094818.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025095417.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025102200.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025102204.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025102206.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025102318.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025102322.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025104055.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025104107.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025105828.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025105832.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025110121.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025110308.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025131050.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025131708.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025143910.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025153930.jpg
+
+
+.. image::  ../Picture/2025/10/25/IMG20251025152606.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025125331.jpg
+.. image::  ../Picture/2025/10/25/IMG20251025104041.jpg
+
 
 .. image::  ../Picture/2025/02/21/IMG20250221104852.jpg
 .. image::  ../Picture/2025/02/21/IMG20250221104923.jpg

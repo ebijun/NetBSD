@@ -23,21 +23,25 @@
  :maxdepth: 3
  :numbered:
 
+
+ www.netbsd.org/NetBSD-11.0-RC3
+ www.netbsd.org/pkgsrc-2026Q1.rst
+ Place/shikoku
  www.netbsd.org/about
  www.netbsd.org/ports.rst
  www.netbsd.org/pkgsrc-intro
  www.netbsd.org/commit-guidelines
  www.netbsd.org/security
  www.netbsd.org/application-procedure.rst
- Place/osaka
  Pkgsrc/nono
+ stable-diffusion.cpp
+ Pkgsrc/cflags
  PC6001VX/PC6001VX
  Pkgsrc/mlterm
  Pkgsrc/playfield
  RPI/RPIupdate2026
  OSC/OSC2026
  RPI
- stable-diffusion.cpp
  Pkgsrc/chatgpt
  latexpdf
  Place/intro

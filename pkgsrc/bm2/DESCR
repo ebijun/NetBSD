@@ -1,0 +1,15 @@
+bm2 is an emulator for the Hitachi Basic Master Jr. (MB-6885), a classic
+Japanese 8-bit computer based on the Motorola 6800 CPU.
+
+Key features include:
+- Emulation of the M6800 CPU and memory map.
+- Built-in emulation of some monitor subroutines, allowing machine
+  language programs to run even without original ROM images.
+- Support for keyboard, timers, text and graphic displays.
+- Sound output and cassette tape I/O emulation.
+- Emulation of the MP-1710 color adapter.
+- Support for printer output to a file.
+- Ability to load Motorola S-record and Intel HEX formats.
+
+This emulator uses the SDL (Simple DirectMedia Layer) library for
+cross-platform compatibility.

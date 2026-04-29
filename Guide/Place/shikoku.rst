@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2024 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2026 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -55,7 +55,8 @@ Maps:
  2016, OSuCehime,10/8, ,
  2018, Kagawa, 10/6,110,14
  2019, Tokushima,10/19,200,24
- 2024, Ehime    ,  11/12 ,    ,    
+ 2024, Ehime    ,  11/16 , 65   ,  18
+ 2026, Kagawa   ,        ,   ,     
   
 togetterまとめ
 ~~~~~~~~~~~~~~~
@@ -70,6 +71,7 @@ togetterまとめ
  OSC2018香川 NetBSDブース展示の記録,https://togetter.com/li/1273756
  OSC2019徳島 NetBSDブース展示の記録,https://togetter.com/li/1418848
  2024/10-11 NetBSDブースの記録,https://togetter.com/li/2456931
+ OSC2026香川 NetBSDブースの記録,https://posfie.com/@ebijun/p/TARTFTx
 
 四国での発表
 ~~~~~~~~~~~~
@@ -92,6 +94,11 @@ NetBSD/x68k近況　isaki68k@ さん
 OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
  https://speakerdeck.com/tsutsui/osunc14kg-netbsd-ddd
 
+PC-6001のPSG演奏デモを機会にNetBSDを真面目に説明してみる tsutsuii@さん
+ https://speakerdeck.com/tsutsui/osc2024ehime
+
+OSC東京でいただいた UIAPduinoマイコンボードで PSG演奏と液晶ドッド絵デモ
+ https://speakerdeck.com/tsutsui/osc2026kagawa
 
 
 四国での主な展示物
@@ -106,6 +113,8 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
  2015, PANIX RPI zaurus hpcarm
  2018, LUNA+PSG XM6i omxplayer EeePC
  2019, PANIX RPI
+ 2024, PC6001 LUNA+mlterm+nanotodon 花梨先輩
+ 2026, macppc UIAPduino PC6001 WiiU 
 
 よく行く店 徳島
 ~~~~~~~~~~~~~~~~~~~~~
@@ -148,9 +157,18 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
 .. csv-table::
  :widths: 25 15 60
 
+ ビールルームとりかご,瓦町,多賀町2-17-11 しろすずめ11:00～20:30
+ リバーサイド351,松島二丁目,松島町3-5-1株式会社瀬戸内 タップルーム12:00～20:00
  麺之介,瓦町,KAOS (KAgawa Open Source)から十余年。
+ なタ書,瓦町2-9-7,完全予約制
+ ルヌガンガ,亀井町11-13,10:00-19:00
+ 古本YOMS,田町1-7,
+ 半空,瓦町1-10-18,
+ OHLOY BREWING,内町3-4,13:00～21:00 タップルームとボトルショップ
+ さすらいのカンテキ,西の丸町7-5,
+ HOPHEADS,大工町7-1.17:00～翌3:00                                                                       |
+ Maison De Biere,百間町,毎月第3土曜にClub Biere 
  iL,常磐町,ノイズ喫茶
- Maison De Biere,百間町,毎月第3土曜にClub Biere
  Hopheads,大工町,17:00-3:00
  タビ式,瓦町,アブサン 階段 18:57-04:07
  melobar,古新町,2018/10/20 DJ Lord Sassafras
@@ -203,6 +221,42 @@ OS(un)Cにおける 締切駆動開発展示のススメ  tsutsuii@ さん
  Rockカフェぽおる,はりまや町,ロックバー。近くに移転したらしい
  森山製パン所,宝永町,味付けサンド ピーナツ味
  横山隆一記念まんが館,はりまや橋,安倍夜朗展
+
+
+2024年 愛媛
+~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2024/11/16/IMG20241116065737.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116094043.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116104511.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116104914.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116104923.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116105015.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116105024.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116105648.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116105653.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116105655.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116105705.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116105819.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116105823.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116110908.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116111200.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116111239.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116111245.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116115346.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116122052.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116131109.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116131916.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116131922.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116131926.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116132344.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116132347.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116151520.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116154608.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116131919.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116121837.jpg
+.. image::  ../Picture/2024/11/16/IMG20241116100156.jpg
+
 
 2019年 徳島
 ~~~~~~~~~~~~~~~~~~~
