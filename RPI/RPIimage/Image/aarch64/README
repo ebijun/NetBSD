@@ -16,6 +16,12 @@ https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-04-29-aarch64/MD5
 Topics:
 - Raspberry Pi 4 support on aarch64 FDT boot (without ACPI) 
  https://mail-index.netbsd.org/port-arm/2026/03/19/msg009556.html
+ https://mail-index.netbsd.org/port-arm/2026/04/30/msg009598.html
+  1. fdtbus: handle /chosen compatible "simple_bus" for Raspberry Pi 4
+  2. aarch64/pmap: also prepare MD aarch64_mmap_flags() in PMAP_MI case
+  3. bcm283x: skip bcmgenfb specific initialization in !bcmgenfb case
+  4. evbarm/conf: add bcm2838pcie and bcm2838rng for Raspberry Pi 4B
+  5. aarch64: fix /dev/mem mmap cookie handling for MMIO devices
 
 - gcc-14.3.0 
   CFLAGS+=-Wno-error=incompatible-pointer-types -Wno-error=declaration-after-statement -Wno-error=deprecated-declarations -Wno-error=implicit-function-declaration -Wno-error=sign-compare -Wno-error=undef
