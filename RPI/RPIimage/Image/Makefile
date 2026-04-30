@@ -17,7 +17,7 @@ FILE_TMP=a.img
 PKGSRC=../../../pkgsrc/pkgsrc-2016Q1.tar.gz 
 
 # extract sets.
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260325090945Z/evbarm-earmv6hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260429162959Z/evbarm-earmv6hf/binary
 SETS=${BINARY}/sets
 RPI=${BINARY}/gzimg/rpi.img
 KERNELBIN=${BINARY}/kernel/netbsd-RPI.bin.gz
@@ -30,10 +30,9 @@ LIST=man modules xbase xcomp xetc xfont xserver
 LIST_UPDATE=base base32 comp debug debug32 dtb games gpufw index.html kern-RPI kern-RPI2 man manhtml misc modules rescue tests text xbase xcomp xdebug xetc xfont xserver
 
 #Firmware: 
-# git log HEAD |head
-#commit 1248a22f2d6f80273d00ed88ba9713d6095b4ed3 (HEAD -> master, origin/master, origin/HEAD)
+#commit 57b8dbdce68c8f5e2a425d86e4e7e149e911b9d3 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Wed Mar 25 18:45:04 2026 +000
+#Date:   Tue Apr 21 15:01:44 2026 +0100
 
 FIRM=LICENCE.broadcom bootcode.bin fixup4cd.dat fixup_cd.dat start.elf start4db.elf start_db.elf fixup.dat fixup4db.dat fixup_db.dat start4.elf start4x.elf start_x.elf fixup4.dat fixup4x.dat  fixup_x.dat  start4cd.elf start_cd.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
