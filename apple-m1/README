@@ -1,35 +1,31 @@
 To: port-arm%netbsd.org@localhost
-Subject: apple m1 status update (20251202)
+Subject: apple m1 status update (20260502)
 
 Install:
  https://wiki.netbsd.org/ports/evbarm/apple/
 
 Update:
- gcc-14.3.0
- libc-12.224
- NetBSD-11.99.4
- openssh-10.2
- openssl-3.5.1
- boost-libs-1.89.0nb1
- cmake-4.1.2
- firefox-145.0
- gimp-3.0.6nb1
- inkscape-1.4.2nb7
- libreoffice-25.8.3.2
- mate-1.26.1nb19
- mlterm-3.9.4nb4
- nanotodon-0.5.0nb3
- poppler-25.08.0nb4
- python313-3.13.9
- ruby32-base-3.2.9
- rust-1.90.0
- samba-4.21.9nb1
- scribus-1.6.4nb7
- texlive-collection-langcjk-2025
- uim-1.8.9nb21
- webkit-gtk-2.36.8nb27
- wpa_gui-2.6nb41
- wxGTK32-3.2.8.1nb3
+ bind-9.20.22
+ openssh-10.3
+ openssl-3.5.6
+ boost-libs-1.90.0nb3
+ clang-21.1.8
+ cmake-4.3.2
+ firefox-148.0
+ harfbuzz-14.2.0nb1
+ icu-78.3
+ inkscape-1.4.3nb1
+ llvm-21.1.8
+ mate-1.26.1nb20
+ mlterm-3.9.4nb6
+ nanotodon-0.5.0nb5
+ nss-3.123.1
+ perl-5.42.2
+ poppler-25.08.0nb8
+ python313-3.13.13
+ ruby33-3.3.11
+ rust-1.94.1nb1
+ wxGTK32-3.2.10
 
 Topics:
 - stable-diffusion.cpp works well.
@@ -113,12 +109,12 @@ Hardware:
  USB SSD 512GB BUFFALO SSD-PGM2.0U3-BC
 
 Filesystem   1M-blocks      Used     Avail %Cap Mounted on
-/dev/dk6        955474    124513    783187  13% /
-/dev/dk5            43        28        15  65% /boot
+/dev/dk6        955474    131445    776255  15% /
+/dev/dk5            43        43         0 100% /boot
 ptyfs                0         0         0 100% /dev/pts
 procfs               0         0         0 100% /proc
-tmpfs             1912         0      1912   0% /var/shm
-/dev/sd1a      1938192    518939   1322343  28% /media
+tmpfs             1912         3      1909   1% /var/shm
+/dev/sd1a      1938192    523211   1318071  29% /media
 
 ToDo:
 - audio
@@ -355,7 +351,7 @@ pkgsrc:
  zenity3-3.44.4nb6 zsh-5.9nb3 zxcvbn-c-2.6
 
 Version: 
- NetBSD 11.99.4 (GENERIC64) #0: Mon Dec  1 09:31:44 UTC 2025  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
+ NetBSD 11.99.5 (GENERIC64) #0: Thu Apr 30 13:16:32 UTC 2026  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 
 dmesg:
  https://github.com/ebijun/NetBSD/blob/master/dmesg/aarch64/Apple_Mac_mini_M1_2020

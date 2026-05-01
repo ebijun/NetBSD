@@ -92,8 +92,8 @@ ffmpeg7-7.1.3nb4    Decoding, encoding and streaming software (v7.x)
 ffmpeg8-8.1nb1      Decoding, encoding and streaming software (v8.x)
 fftw-3.3.11         Fast C routines to compute DFTs (single and double precision)
 findutils-4.9.0     find, locate, updatedb, and xargs utilities
-firefox-148.0       Web browser with support for extensions (version 148)
-firefox-l10n-148.0  Language packs for www/firefox
+firefox-148.0.2     Web browser with support for extensions (version 148)
+firefox-l10n-148.0.2 Language packs for www/firefox
 flac-1.5.0nb1       Free lossless audio codec
 flex-2.6.4          Fast clone of lex(1), the lexical scanner generator
 fltk13-1.3.11nb2    Fast Light Tool Kit for graphical user interfaces
@@ -125,6 +125,7 @@ ghostscript-9.05nb47 Meta-package for installing the preferred ghostscript versi
 ghostscript-agpl-10.07.0 Postscript interpreter
 ghostscript-fonts-8.11nb3 Postscript fonts for Aladdin Ghostscript
 giflib-6.1.3        GIF image format library
+gimp-3.2.4          The GNU image manipulation program
 git-base-2.54.0     GIT Tree History Storage Tool (base package)
 gle-3.1.0nb4        GL subroutines for drawing tubing and extrusions
 glew-2.3.1          OpenGL Extension Wrangler Library
@@ -290,6 +291,7 @@ libimagequant-4.4.1 High-quality conversion of RGBA images to 8-bit indexed-colo
 libindicator-12.10.1nb28 GTK+3 symbols and convience functions for indicators
 libixion-0.20.0nb2  General purpose formula parser & interpreter
 libjpeg-turbo-3.1.4.1 Accelerated libjpeg with SIMD instructions
+libjxl-0.11.2       JpegXL reference codec
 libkate-0.4.1nb24   Overlay codec, originally designed for karaoke and text
 libksba-1.6.8       X.509 library
 liblangtag-0.6.8nb1 RFC 5646 language tag interface library
@@ -323,6 +325,7 @@ libpeas-1.26.0nb21  GObject-based plugins engine
 libproxy-0.5.12nb2  Library that provides automatic proxy configuration management
 libpsl-0.21.5       Library to handle the Public Suffix List
 libqxp-0.0.2nb30    Library that parses the file format of QuarkXPress documents
+libreoffice-26.2.0.3 Office productivity suite from The Document Foundation
 libreplaygain-0rc475 ReplayGain library for the musepack decoder
 librevenge-0.0.5nb3 Base library for writing document import filters
 librsvg-2.60.2      SVG library for GNOME
@@ -376,6 +379,7 @@ libxslt-1.1.45      XSLT parser library
 libyaml-0.2.5       YAML 1.1 parser and emitter written in C
 libzmf-0.0.2nb38    Library to parse Zoner Callisto/Draw documents
 lintpkgsrc-2026.03.21 Sanity checks on the complete pkgsrc tree
+litehtml-0.9nb1     Fast and lightweight HTML/CSS rendering engine
 lld-21.1.8          The LLVM Linker
 llvm-21.1.8         Low Level Virtual Machine compiler infrastructure
 lmdb-0.9.35         Symas Lightning Memory-Mapped Database
@@ -751,7 +755,6 @@ py312-pyproject_hooks-1.2.0nb1 Wrappers to call pyproject.toml-based build backe
 py312-pytz-2025.2nb1 World timezone definitions, modern and historical
 py312-requests-2.32.5 HTTP library, written in Python, for human beings
 py312-roman-5.1     Integer to Roman numerals converter for Python
-py312-roman_numerals_py-3.1.0 Manipulate well-formed Roman numerals
 py312-scons-4.9.1nb1 Python-based, open-source build system
 py312-scour-0.38.2nb4 Scour SVG Optimizer
 py312-semantic_version-2.10.0nb1 Semantic version comparison for Python
@@ -762,7 +765,6 @@ py312-setuptools_scm-8.3.1 Manage your versions by scm tags
 py312-six-1.17.0    Python 2 and 3 compatibility utilities
 py312-smartypants-2.0.2 Python with the SmartyPants
 py312-snowballstemmer-3.0.1 Python module with stemmer algorithms for multiple natural languages
-py312-sphinx-8.2.3  Python documentation generator
 py312-sphinxcontrib-applehelp-2.0.0nb1 Sphinx API for Apple help books
 py312-sphinxcontrib-devhelp-2.0.0nb1 Sphinx API for Devhelp document
 py312-sphinxcontrib-htmlhelp-2.1.0nb1 Sphinx API for HTML help
@@ -778,21 +780,47 @@ py312-urllib3-2.5.0 HTTP library with thread-safe connection pooling
 py312-wheel-0.45.1nb1 Tool for manipulating Python wheel files
 py312-zipp-3.21.0   Backport of pathlib-compatible object wrapper for zip files
 py312-zstandard-0.23.0nb1 Zstandard bindings for Python
+py313-Socks-1.7.1nb2 Python SOCKS client module
+py313-alabaster-1.0.0nb1 Configurable sidebar-enabled Sphinx theme
+py313-babel-2.18.0  Collection of tools for internationalizing Python applications
+py313-brotli-1.1.0  Generic-purpose lossless compression algorithm (Python module)
+py313-brotlicffi-1.1.0.0 Python CFFI bindings to the Brotli library
 py313-cairo-1.29.0nb1 Python bindings for cairo
+py313-certifi-2026.4.22 Python package for providing Mozilla's CA Bundle
+py313-cffi-2.0.0    Foreign Function Interface for Python calling C code
+py313-charset-normalizer-3.4.7 Universal Charset Detector
+py313-cparser-3.0   C parser in Python
 py313-dns-2.8.0     Python DNS toolkit
 py313-docutils-0.22.4 Python tool to generate documents
 py313-gobject3-3.54.5nb1 Python bindings for glib2 gobject
 py313-idna-3.13     Python module for Internationalized Domain Names in Applications (IDNA)
+py313-imagesize-2.0.0 Parses image files' header and returns image size
 py313-iso8601-2.1.0nb2 Simple Python module to parse ISO 8601 dates
+py313-jinja2-3.1.6  Small but fast and easy to use stand-alone template engine
 py313-libxml2-2.15.1 Python wrapper for libxml2
 py313-lxml-6.1.0    Python binding for libxml2 and libxslt
 py313-markdown-3.10.2 XHTML generator using a simple markup
+py313-markupsafe-3.0.3 Implements a unicode subclass that supports HTML strings
 py313-numpy-2.4.4   Array processing for numbers, strings, records, and objects
+py313-packaging-26.2 Core utilities for Python packages
 py313-pygments-2.20.0 Python syntax highlighter
+py313-pyparsing-3.3.2 Parsing module for Python
+py313-requests-2.33.1 HTTP library, written in Python, for human beings
+py313-roman_numerals-4.1.0 Manipulate well-formed Roman numerals
 py313-scour-0.38.2nb4 Scour SVG Optimizer
 py313-serial-3.5nb2 Python Serial Port Extension
 py313-setuptools-82.0.1 New Python packaging system
 py313-six-1.17.0    Python 2 and 3 compatibility utilities
+py313-snowballstemmer-3.0.1 Python module with stemmer algorithms for multiple natural languages
+py313-sphinx-9.1.0  Python documentation generator
+py313-sphinxcontrib-applehelp-2.0.0nb1 Sphinx API for Apple help books
+py313-sphinxcontrib-devhelp-2.0.0nb1 Sphinx API for Devhelp document
+py313-sphinxcontrib-htmlhelp-2.1.0nb1 Sphinx API for HTML help
+py313-sphinxcontrib-jsmath-1.0.1nb2 Sphinx API for math in HTML via JavaScript
+py313-sphinxcontrib-qthelp-2.0.0nb1 Sphinx API for QtHelp document
+py313-sphinxcontrib-serializinghtml-2.0.0nb1 Sphinx API for "serialized" HTML files
+py313-urllib3-2.6.3 HTTP library with thread-safe connection pooling
+py313-zstandard-0.23.0nb1 Zstandard bindings for Python
 py39-Socks-1.7.1nb1 Python SOCKS client module
 py39-smartypants-2.0.1nb1 Python with the SmartyPants
 py39-snowballstemmer-2.2.0nb1 Python module with stemmer algorithms for multiple natural languages
@@ -825,6 +853,7 @@ qt6-qtimageformats-6.10.2nb1 Additional image handlers for Qt6
 qt6-qtlanguageserver-6.10.2nb1 Qt6 language server implementation
 qt6-qtshadertools-6.10.2nb1 Qt6 shadertools
 qt6-qtsvg-6.10.2nb1 Qt6 module for SVG
+qt6-qttools-6.10.2nb1 Qt6 development tools
 raptor2-2.0.16nb14  RDF Parser Toolkit written in C
 raqm-0.10.5         Library for complex text layout
 rarian-0.8.5nb5     Documentation metadata library
@@ -874,6 +903,7 @@ ruby33-3.3.11       Ruby 3.3.11 release package
 rust-1.94.1nb1      Safe, concurrent, practical language
 samba-4.24.1        SMB/CIFS protocol server suite
 schroedinger-1.0.11 Dirac video compression library
+scribus-1.7.0nb5    Publishing layout with graphical interface (Qt5 port)
 serf-1.3.10nb3      High-performance asynchronous HTTP client library
 shared-mime-info-2.4nb7 Core database of common types
 slib-3.3.1          Portable Scheme library of compatibility and utility functions
@@ -1206,9 +1236,11 @@ xxhash-0.8.3        Extremely fast non-cryptographic hash algorithm
 yasm-1.3.0          Complete rewrite of the NASM assembler with BSD license
 yelp-xsl-42.1       XSL stylesheets for Yelp help browser
 zenity3-3.44.4nb7   Display GTK dialogs from the command line
+zint-2.16.0         Open source barcode generating solution
 zip-3.0nb3          Create/update ZIP files compatible with pkzip
 zonetab-0           NetBSD zone.tab file
 zsh-5.9nb4          The Z shell
 zstd-1.5.7          Fast real-time compression algorithm
 zxcvbn-c-2.6        Password strength estimator
+zxing-cpp-3.0.2     1D/2D barcode reader/writer library in C++
 zziplib-0.13.78     Library for ZIP archive handling
