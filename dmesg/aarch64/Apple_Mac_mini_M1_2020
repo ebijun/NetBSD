@@ -1,12 +1,12 @@
 Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
     2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
     2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
-    2024, 2025
+    2024, 2025, 2026
     The NetBSD Foundation, Inc.  All rights reserved.
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 11.99.4 (GENERIC64) #0: Mon Dec  1 09:31:44 UTC 2025
+NetBSD 11.99.5 (GENERIC64) #0: Thu Apr 30 13:16:32 UTC 2026
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 7651 MB
 avail memory = 7374 MB
@@ -258,11 +258,11 @@ sd0: fabricating a geometry
 sd0: GPT GUID: e7af6b38-62ff-4c2b-a395-b65b9d9346cb
 dk5 at sd0: "EFI", 90200 blocks at 3, type: msdos
 dk6 at sd0: "netbsd-root", 2000314368 blocks at 90203, type: ffs
-uhidev1 at uhub7 port 3 configuration 1 interface 0
+uhidev1 at uhub7 port 2 configuration 1 interface 0
 uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 4, iclass 3/1
 ukbd0 at uhidev1
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev2 at uhub7 port 3 configuration 1 interface 1
+uhidev2 at uhub7 port 2 configuration 1 interface 1
 uhidev2: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 4, iclass 3/1
 uhidev2: 6 report ids
 ums0 at uhidev2 reportid 1: 5 buttons, W and Z dirs
@@ -283,7 +283,7 @@ boot device: dk6
 root on dk6
 entropy: best effort
 root file system type: ffs
-kern.module.path=/stand/evbarm/11.99.4/modules
+kern.module.path=/stand/evbarm/11.99.5/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
