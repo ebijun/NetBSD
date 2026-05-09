@@ -1,0 +1,54 @@
+BOOT=boot-2026-03-12.iso
+IMG1=2026-03-13-netbsd-macppc.img 
+PKGSRC=pkgsrc.img
+MEM=256
+
+KERNEL=netbsd-GENERIC
+
+qemu-system-ppc \
+    -m ${MEM} \
+    -drive file=${IMG1},format=raw,media=disk,index=1 \
+    -drive file=${BOOT},format=raw,media=cdrom,readonly=on,index=2 \
+    -drive file=${PKGSRC},format=raw,media=disk,index=3 \
+    -prom-env boot-device=cd:,netbsd-GENERIC \
+    -nic user,model=e1000,hostfwd=tcp:127.0.0.1:5428-:22 \
+    -M mac99 \
+    -prom-env qemu_boot_hack=y
+
+#    -nographic \
+#    -nographic \
+#    -device usb-kbd \
+#    -device pci-ohci,id=ohci -device usb-kbd,bus=ohci.0 \
+#    -M mac99,via=pmu  \
+#    -k ja
+#    -g 1280x768x32 \
+#    -serial stdio \
+#    -prom-env boot-device=cd:,${KERNEL} \
+#    -prom-env "boot-args=console=fb" \
+#    -prom-env "qemu_boot_hack=y" \
+#    -device usb-kbd \
+#    -prom-env console=fb \
+#    -prom-env "boot-args=console=fb" \
+#    -prom-env "qemu_boot_hack=y auto-boot?=false"\
+#    -prom-env "auto-boot?=false" \
+
+#qemu-system-ppc \
+#    -m ${MEM} \
+#    -prom-env boot-device=cd:,${KERNEL} \
+#    -drive file=${IMG1},format=raw,media=disk,index=1 \
+#    -drive file=${BOOT},format=raw,media=cdrom,readonly=on,index=2 \
+#    -drive file=${PKGSRC},format=raw,media=disk,index=3 \
+#    -nic user,model=e1000,hostfwd=tcp:127.0.0.1:10099-:22 \
+#    -M mac99 \
+#    -nographic \
+#    -k ja
+
+#qemu-system-ppc \
+#    -m ${MEM} \
+#    -drive file=${IMG1},format=raw,media=disk,index=1 \
+#    -drive file=${BOOT},format=raw,media=cdrom,readonly=on,index=2 \
+#    -M mac99 \
+#    -device usb-mouse \
+#    -g 1280x768x32 
+
+
