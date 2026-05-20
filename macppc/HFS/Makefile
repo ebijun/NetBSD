@@ -1,6 +1,6 @@
 scp:
 #	scp -P 5428 localhost:a.iso .
-	scp -P 10099 a.iso localhost:
+	scp -P 5428 a.iso localhost:
 
 copy:
 #	hcopy netbsd-INSTALL :

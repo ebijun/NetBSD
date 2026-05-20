@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.7.0
+ DISTNAME=       nono-1.7.1
 
 チェックサム作成
 ------------------
@@ -50,12 +50,13 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum
- 
- drwxr-xr-x  2 jun  wheel   512 Mar 31 05:10 CVS
+
+ drwxr-xr-x  2 jun  wheel   512 May  3 13:13 CVS
  -rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
- -rw-r--r--  1 jun  wheel  1202 Mar 31 05:16 Makefile
+ -rw-r--r--  1 jun  wheel  1202 May  3 13:20 Makefile
  -rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
- -rw-r--r--  1 jun  wheel   350 Mar 31 05:16 distinfo
+ -rw-r--r--  1 jun  wheel   350 May  3 13:20 distinfo
+
 
 make package して動作を確認します。
   
@@ -83,16 +84,17 @@ commit
 
  cvs commit 
 
- nono: update to 1.7.0.
+ nono: update to 1.7.1.
 
- 1.7.0 (2026/03/28)
-
- host(New): "Support QCOW2 disk image format."
- vm(Update): "Mostly reimplement serial console emulation as VT220 compatible."
- vm(New): "Make VirtIO Network, Entropy, SCSI devices possible to disable."
- vm(Update): "Do not power off on the guest OS panic on virt-m68k."
- m68k(New): "Make instruction/data caches possible to disable."
- vm(Update): "Arrange log names in some devices." 
+ 1.7.1 (2026/04/30)
+ 
+ host(Fix): "Fix an issue where QCOW2 image may become corrupted during writing."
+ m68k(Fix): "Fix trivial issues on 68040 ATC."
+ vm(Update): "Arrange monitor names in some devices."
+ vm(Fix): "Fix several X68030 DMAC issues related to uninitialized variable since ver 1.6.0."
+ GUI(Fix): "Implement a tooltip for VirtIO Block indicator on the status panel."
+ app(Fix): "Fix abnormal termination on normal termination since ver 1.5.0."
+ debugger(Fix): "Fix bi command's several parse issues since ver 1.6.4." 
 
 doc をcommit します
 ---------------------
@@ -102,9 +104,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.7.0
+ doc: Updated emulators/nono to 1.7.1
  
  cvs diff -u CHANGES-2026
  
-        Updated emulators/nono to 1.7.0 [jun 2026-03-30]
+        Updated emulators/nono to 1.7.1 [jun 2026-05-03]
 
