@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.7.1
+ DISTNAME=       nono-1.8.0
 
 チェックサム作成
 ------------------
@@ -51,11 +51,11 @@ Makefile 内のバージョンをあげます。
 
  % make makesum
 
- drwxr-xr-x  2 jun  wheel   512 May  3 13:13 CVS
- -rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
- -rw-r--r--  1 jun  wheel  1202 May  3 13:20 Makefile
- -rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
- -rw-r--r--  1 jun  wheel   350 May  3 13:20 distinfo
+ drwxr-xr-x  2 jun   wheel   512 Jun  2 20:35 CVS
+ -rw-r--r--  1 jun   wheel    54 May 14  2024 DESCR
+ -rw-r--r--  1 jun   wheel  1202 Jun  2 20:36 Makefile
+ -rw-r--r--  1 jun   wheel   357 Nov  2  2025 PLIST
+ -rw-r--r--  1 root  wheel   350 Jun  2 20:36 distinfo
 
 
 make package して動作を確認します。
@@ -84,17 +84,16 @@ commit
 
  cvs commit 
 
- nono: update to 1.7.1.
+ nono: update to 1.8.0.
 
- 1.7.1 (2026/04/30)
- 
- host(Fix): "Fix an issue where QCOW2 image may become corrupted during writing."
- m68k(Fix): "Fix trivial issues on 68040 ATC."
- vm(Update): "Arrange monitor names in some devices."
- vm(Fix): "Fix several X68030 DMAC issues related to uninitialized variable since ver 1.6.0."
- GUI(Fix): "Implement a tooltip for VirtIO Block indicator on the status panel."
- app(Fix): "Fix abnormal termination on normal termination since ver 1.5.0."
- debugger(Fix): "Fix bi command's several parse issues since ver 1.6.4." 
+ 1.8.0 (2026/05/30)
+
+ vm(Update): "Change the VM time resolution from 1GHz to 19.2GHz. This allows the XP processor to run at exactly 6.144MHz."
+ vm(New): "Implement tone and volume on SSG(YM2149)."
+ vm(New): "Implement PAM behavior on the volume register on SSG(YM2149). This makes NetBSD/luna68k's psgpam(4) audio device work."
+ GUI(Fix): "Fix possible flickering on the sound monitor."
+ GUI(Fix): "Fix an issue where the access indicators of devices connected via SCSI bus would not light up correctly."
+ app(Update): "Support libslirp-4.9." 
 
 doc をcommit します
 ---------------------
@@ -104,9 +103,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.7.1
+ doc: Updated emulators/nono to 1.8.0
  
  cvs diff -u CHANGES-2026
  
-        Updated emulators/nono to 1.7.1 [jun 2026-05-03]
+        Updated emulators/nono to 1.8.0 [jun 2026-06-02]
 
