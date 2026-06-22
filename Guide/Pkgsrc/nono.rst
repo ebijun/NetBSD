@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.7.0
+ DISTNAME=       nono-1.8.0
 
 チェックサム作成
 ------------------
@@ -50,12 +50,13 @@ Makefile 内のバージョンをあげます。
 ::  
 
  % make makesum
- 
- drwxr-xr-x  2 jun  wheel   512 Mar 31 05:10 CVS
- -rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
- -rw-r--r--  1 jun  wheel  1202 Mar 31 05:16 Makefile
- -rw-r--r--  1 jun  wheel   357 Nov  2 15:01 PLIST
- -rw-r--r--  1 jun  wheel   350 Mar 31 05:16 distinfo
+
+ drwxr-xr-x  2 jun   wheel   512 Jun  2 20:35 CVS
+ -rw-r--r--  1 jun   wheel    54 May 14  2024 DESCR
+ -rw-r--r--  1 jun   wheel  1202 Jun  2 20:36 Makefile
+ -rw-r--r--  1 jun   wheel   357 Nov  2  2025 PLIST
+ -rw-r--r--  1 root  wheel   350 Jun  2 20:36 distinfo
+
 
 make package して動作を確認します。
   
@@ -83,16 +84,16 @@ commit
 
  cvs commit 
 
- nono: update to 1.7.0.
+ nono: update to 1.8.0.
 
- 1.7.0 (2026/03/28)
+ 1.8.0 (2026/05/30)
 
- host(New): "Support QCOW2 disk image format."
- vm(Update): "Mostly reimplement serial console emulation as VT220 compatible."
- vm(New): "Make VirtIO Network, Entropy, SCSI devices possible to disable."
- vm(Update): "Do not power off on the guest OS panic on virt-m68k."
- m68k(New): "Make instruction/data caches possible to disable."
- vm(Update): "Arrange log names in some devices." 
+ vm(Update): "Change the VM time resolution from 1GHz to 19.2GHz. This allows the XP processor to run at exactly 6.144MHz."
+ vm(New): "Implement tone and volume on SSG(YM2149)."
+ vm(New): "Implement PAM behavior on the volume register on SSG(YM2149). This makes NetBSD/luna68k's psgpam(4) audio device work."
+ GUI(Fix): "Fix possible flickering on the sound monitor."
+ GUI(Fix): "Fix an issue where the access indicators of devices connected via SCSI bus would not light up correctly."
+ app(Update): "Support libslirp-4.9." 
 
 doc をcommit します
 ---------------------
@@ -102,9 +103,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.7.0
+ doc: Updated emulators/nono to 1.8.0
  
  cvs diff -u CHANGES-2026
  
-        Updated emulators/nono to 1.7.0 [jun 2026-03-30]
+        Updated emulators/nono to 1.8.0 [jun 2026-06-02]
 

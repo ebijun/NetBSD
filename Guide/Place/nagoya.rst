@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2014-2025 Jun Ebihara All rights reserved.
+ Copyright (c) 2014-2026 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -32,22 +32,24 @@ NBUG例会この一年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. csv-table::
- :widths: 15 15 15 6 
+ :widths: 4 6 6 15 6 
+ 
+ 回数,日付,会場,togetter,アクセス数
+ 第300回,2025/04/19,中,https://posfie.com//@ebijun/p/Kp5byp4,324
+ 第301回,2025/05/31,OSC名古屋,https://posfie.com//@ebijun/p/mSFyoC4,726
+ 第302回,2025/06/14,東,https://posfie.com//@ebijun/p/plRcVrG,529
+ 第303回,2025/07/19,中,https://posfie.com//@ebijun/p/LpFGcI4,708
+ 第304回,2025/08/23,東,https://posfie.com//@ebijun/p/tctRUi9,583
+ 第305回,2025/09/20,中,https://posfie.com//@ebijun/p/9uZIwuH,417
+ 第306回,2025/10/18,中,https://posfie.com//@ebijun/p/KsHuz6A,392
+ 第307回,2025/11/15,北,https://posfie.com//@ebijun/p/poMBvId,389
+ 第308回,2025/12/20,瑞穂,https://posfie.com//@ebijun/p/WkwSt6x,328
+ 第309回,2026/01/24,瑞穂,https://posfie.com//@ebijun/p/Vfaj1UC,439
+ 第310回,2026/02/21,中,https://posfie.com//@ebijun/p/QvR9Tx9,690
+ 第311回,2026/03/14,千種,https://posfie.com//@ebijun/p/TARTFTx,638
+ 第312回,2026/04/25,北,https://posfie.com//@ebijun/p/lpOl8KO,126
+ 第313回,2026/05/23,OSC名古屋,https://posfie.com//@ebijun/p/lpOl8KO,126
 
- OSC,NBUG例会,togetter,アクセス数
- 名古屋,NBUG 2025/5,https://posfie.com//@ebijun/p/mSFyoC4,69
- ,NBUG 2025/4,https://posfie.com//@ebijun/p/Kp5byp4,153
- AsiaBSDCon-lite,NBUG 2025/3,https://posfie.com//@ebijun/p/BxNgldk,311
- 東京,NBUG 2025/2,https://posfie.com//@ebijun/p/AeMxGBR,721
- 大阪,NBUG 2025/1,https://posfie.com//@ebijun/p/EUD3bz3,859
- 福岡,NBUG 2024/12,https://posfie.com//@ebijun/p/5vkKc1V,605
- 東京/島根/KOF/愛媛,NBUG 2024/11,https://posfie.com//@ebijun/p/OdRTPcq,1335
- 長岡/東京,NBUG 2024/10,https://posfie.com//@ebijun/p/asBFcLt,1290
- 広島,NBUG 2024/9,https://posfie.com//@ebijun/p/mk23csW,1392
- ODC,NBUG 2024/8,https://posfie.com//@ebijun/p/vwUWA40,764
- 京都,NBUG 2024/7,https://posfie.com//@ebijun/p/QvpvCT4,998
- 北海道,NBUG 2024/6,https://posfie.com//@ebijun/p/ew5jXWs,1099
- 名古屋,NBUGなひととき 2024,https://posfie.com//@ebijun/p/tz1YCc0,1262
 
 名古屋でのオープンソースカンファレンス
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,9 +77,9 @@ NBUG例会この一年
  2023 online Nagoya,5/20,165,12,ZOOM
  2023 Nagoya,5/28,325,24,名古屋市中小企業振興会館 
  2024 Nagoya,5/25,250,36,名古屋市中小企業振興会館 
- 2025 Nagoya,5/31,,,名古屋市中小企業振興会館 
-
-   
+ 2025 Nagoya,5/31,320,37,名古屋市中小企業振興会館 
+ 2026 Nagoya,5/23,,,名古屋市中小企業振興会館 
+    
 オープンソースカンファレンス以前
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -97,7 +99,8 @@ NBUG例会この一年
  :widths: 30 20 60
 
  ナゴヤキネマ・ノイ,今池,シネマテークから新規オープン。ボリビア／ウカマウ集団の軌跡。
- パウ,大須,タブレットから謎ハードまで。ボントンの隣。
+ パウ,大須,タブレットから謎ハードまで。パウはなれ。
+ ボントン,大須,第二アメ横に移転。昔は横浜石川町にもあった。
  鯱の家,黒川,カレーうどん。
  陽龍,黒川,チャーシューメン。
  ディバインレコード,新栄,11:00-
@@ -114,7 +117,6 @@ NBUG例会この一年
  KDS,第一アメ横1F,昔は車道にあった。小坂井ブランドの300Bとか。
  ツゲ電機,雪見町,テクトロントランス。
  エイトリック,美浜,マルツ近くから美浜に移転。手巻きトランス。
- ボントン,第一アメ横2F,昔は横浜石川町にもあった。
  ショップインバース,メガタウン,第一アメ横隣のツクモの奥。
  ハイファイ堂,大須赤門通,真空管の在庫豊富。レコード店閉店。
  マルツ,上小田井,マルツは鶴舞線終点にあります。例会会場から意外と近い。
@@ -149,6 +151,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 225,OSC2026名古屋,http://www.re.soum.co.jp/~jun/OSC2026nagoya.pdf
  211,OSC2025名古屋,http://www.re.soum.co.jp/~jun/OSC2025nagoya.pdf
  198,OSC2024名古屋,http://www.re.soum.co.jp/~jun/OSC2024nagoya.pdf
  186,OSC2023名古屋,http://www.re.soum.co.jp/~jun/OSC2023nagoya.pdf
@@ -171,6 +174,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2026 名古屋,https://posfie.com//@ebijun/p/lpOl8KO
  OSC2025 名古屋,https://posfie.com/@ebijun/p/mSFyoC4
  OSC2024 Online/Nagoya 名古屋,https://togetter.com/li/2359557
  OSC2023 Online/Nagoya 名古屋,https://togetter.com/li/2142714
@@ -204,6 +208,53 @@ OSC名古屋展示物
 #. Speecys
 #. samtk
 
+オープンソースカンファレンス2025 Nagoya&NBUG5月例会
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2025/05/31/IMG20250531092221.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531092224.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531092324.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531094255.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531094811.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531100111.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531103041.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531120318.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531120321.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531120324.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531120327.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531134716.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531144138.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531153548.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531153609.jpg
+
+
+.. image::  ../Picture/2025/05/31/IMG20250531094816.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531092328.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531093915.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531093919.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531093921.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531092226.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531093939.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531095144.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531095919.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531092039.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531100117.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531123332.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531134419.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531144134.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531144143.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531144257.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531145144.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531152332.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531153554.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531153557.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531153601.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531153605.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531153611.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531153614.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531153616.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531153618.jpg
+.. image::  ../Picture/2025/05/31/IMG20250531160445.jpg
 
 オープンソースカンファレンス2024 Nagoya&NBUG5月例会
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

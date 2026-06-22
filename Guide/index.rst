@@ -24,9 +24,9 @@
  :numbered:
 
 
- www.netbsd.org/NetBSD-11.0-RC3
+ www.netbsd.org/NetBSD-11.0-RC4
  www.netbsd.org/pkgsrc-2026Q1.rst
- Place/shikoku
+ Place/nagoya
  www.netbsd.org/about
  www.netbsd.org/ports.rst
  www.netbsd.org/pkgsrc-intro
