@@ -11,7 +11,7 @@
 ARCH=earmv7hf
 
 # version information
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260429050408Z/evbarm-earmv7hf/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260621130417Z/evbarm-earmv7hf/binary
 
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2026/
 
@@ -35,9 +35,9 @@ LIST=man modules xbase xcomp xetc xfont xserver
 LIST_UPDATE=base base32 comp debug debug32 dtb games gpufw kern-GENERIC man manhtml modules rescue tests text xbase xetc xcomp xdebug xfont xserver
 
 #Firmware: 
-#commit 57b8dbdce68c8f5e2a425d86e4e7e149e911b9d3 (HEAD -> master, origin/master, origin/HEAD)
-#Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Tue Apr 21 15:01:44 2026 +0100
+#commit afc8dbd74865c6d367dba5505c5a863252588ca8 (HEAD -> master, origin/master, origin/HEAD)
+#Author: Serge Schneider <serge@raspberrypi.com>
+#Date:   Sun Jun 21 19:02:13 2026 +0100
 
 FIRM=LICENCE.broadcom bootcode.bin fixup.dat fixup4.dat fixup4cd.dat fixup4db.dat fixup4x.dat fixup_cd.dat fixup_db.dat fixup_x.dat start.elf start4.elf start4cd.elf start4db.elf start4x.elf start_cd.elf start_db.elf start_x.elf
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
