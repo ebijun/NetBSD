@@ -6,7 +6,7 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 11.99.5 (RPI2) #0: Wed Apr 29 16:29:59 UTC 2026
+NetBSD 11.99.6 (RPI2) #0: Mon Jun 22 22:27:17 UTC 2026
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/RPI2
 total memory = 948 MB
 avail memory = 915 MB
@@ -164,7 +164,7 @@ ld0: 235552768 trailing sectors not covered by disklabel
 root on ld0a dumps on ld0b
 ld0: 235552768 trailing sectors not covered by disklabel
 root file system type: ffs
-kern.module.path=/stand/evbarm/11.99.5/modules
+kern.module.path=/stand/evbarm/11.99.6/modules
 WARNING: no TOD clock present
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
@@ -188,12 +188,12 @@ bwfm0: Found NVRAM file: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
 bwfm0: CLM file default:    brcmfmac43455-sdio.clm_blob
 bwfm0: CLM file model-spec: brcmfmac43455-sdio.raspberrypi,3-model-b-plus.clm_blob
 bwfm0: CHIPACTIVE
-bwfm0: address b8:27:eb:69:9a:5c
-bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
 umass0 at uhub2 port 2 configuration 1 interface 0
 umass0: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 2.10/80.00, addr 6
 umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
+bwfm0: address b8:27:eb:69:9a:5c
+bwfm0: wl0: Mar  1 2015 07:29:38 version 7.45.18 (r538002) FWID 01-6a2c8ad4
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 sd0: 465 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 976773168 sectors
 wsdisplay0: screen 4 added (default, vt100 emulation)
