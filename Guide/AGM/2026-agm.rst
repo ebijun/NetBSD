@@ -1,0 +1,833 @@
+NetBSD AGM2025: Annual General Meeting, May 17, 21:00 UTC
+===================================================
+
+https://mail-index.netbsd.org/netbsd-announce/2026/05/17/msg000397.html
+
+::
+
+ America/Los_Angeles     Sat Jun 06 07:00 PDT
+ America/Denver          Sat Jun 06 08:00 MDT
+ America/Winnipeg        Sat Jun 06 09:00 CDT
+ America/New_York        Sat Jun 06 10:00 EDT
+ Europe/London           Sat Jun 06 15:00 BST
+ Europe/Berlin           Sat Jun 06 16:00 CEST
+ Europe/Sofia            Sat Jun 06 17:00 EEST
+ Europe/Moscow           Sat Jun 06 17:00 MSK
+ Asia/Calcutta           Sat Jun 06 14:00 IST
+ Asia/Bangkok            Sat Jun 06 21:00 UTC+07
+ Asia/Manila             Sat Jun 06 22:00 PST
+ Asia/Tokyo              Sat Jun 06 23:00 JST
+ Australia/Adelaide      Sat Jun 06 23:30 ACST
+ Australia/Melbourne     Sun Jun 07 00:00 AEST
+ Pacific/Auckland        Sun Jun 07 02:00 NZST
+
+ * Topic for #netbsd-agm is: The NetBSD Foundation Annual General Meeting - Next Meeting Today at 14:00 UTC
+ <krelz> lusers
+ <spz> and rusers
+ <leot> Hello!
+ <fvc70r> good morning
+ <sborrill> Hi!
+ <jklos> Good meeting day to everyone :)
+ <PGoyette> a sleepy hello from America/Los_Angeles
+ <SnoopyOnZNCNow> Hi
+ <ktnb> Hi all
+ <schbax> hello everyone
+ <leot> We will start in around 5 minutes, sorry! (some last-time presentation and adjustment to the schedule!)
+ <Cryo> Welcome!
+ <Cryo> leot will be moderating today.  We will take questions at the end of the presentations.
+ <SnoopyOnZNCNow> What is this? is there some sort of introduction to this apart from https://freedoom.github.io/ ? i'm new
+ <Cryo> We have the executive committees presenting today on what has been happening since the last AGM
+ <racoon> If you somehow ended up here without seeing the announcement, read: https://mail-index.netbsd.org/netbsd-announce/2026/05/17/msg000397.html
+ <SnoopyOnZNCNow> racoon: oh ok thank you
+ <leot> OK, we are about to start... sorry for the delay!
+ <leot> Hello everyone!
+ <Cryo> I'll start off by thanking you for coming.
+ <Cryo> and handing it to leot!
+ <leot> Thanks Cryo and thanks for coming!
+ <leot> .
+
+Introduction
+------------------------------
+
+::
+
+ <leot> Welcome to The NetBSD Foundation Annual General Meeting 2026!
+ <leot> .
+ <leot> In the agenda we will have reports from:
+ <leot> .
+ <leot> - board (<billc>)
+ <leot> - core (<kre>)
+ <leot> - admins (<spz>)
+ <leot> - finance-exec (<riastradh>)
+ <leot> - membership-exec (<martin>)
+ <leot> - releng (<martin>)
+ <leot> - security-team (<martin>)
+ <leot> - pkgsrc-pmc (<wiz>)
+ <leot> - pkgsrc-security (<tm>)
+ <leot> .
+ <leot> If there are any last-minute additions please /msg me!
+ <leot> .
+ <leot> The Q&A session will be at the end of all the presentations.
+ <leot> .
+ <leot> When Q&A begins please /msg me with "I have question for <team>" or
+ <leot> "I have question for <nick>" and I will give you voice when it is
+ <leot> your turn.
+ <leot> .
+
+Board of Directors
+---------------------------------------------------
+
+::
+
+ <leot> Next presentation is prepared by <billc> and board@ for board!
+ <leot> I will present on <billc> behalf
+ <leot> .
+ <leot> Welcome to the 24th Annual General Meeting of The NetBSD Foundation.
+ <leot> .
+ <leot> 2025 progress:
+ <leot> - Recent stable releases include NetBSD 10.1 (Dec 2024), 9.4, and 9.3
+ <leot> - Development is currently focused on the imminent transition to NetBSD-11 [RC4]
+ <leot> .
+ <leot> We are preparing for:
+ <leot> - BSDcan in Ottawa, Canada
+ <leot> - The ISF Common Good Cyber Fund (CGCG) application window, which runs
+ <leot>   from June 23 to August 4, 2026.
+ <leot> .
+ <leot> We recognize that different avenues may well be available to us regarding grants
+ <leot> and funding, and we are looking for volunteers to help us investigate, apply,
+ <leot> and deliver for the programs available. This includes, but is not limited to,
+ <leot> potential opportunities from the Internet Society, the Linux Foundation through
+ <leot> Alpha-Omega, Germany's Sovereign Tech Agency and Prototype Fund, or grants from
+ <leot> the European Union through NLnet.
+ <leot> .
+ <leot> The NetBSD Foundation Board of Directors presents a consolidated list
+ <leot> of the relevant and major actions that occurred since last AGM.
+ <leot> Quite a few discussions, actions, and follow-ups crossed multiple meetings.
+ <leot> Very few meetings resulted in not reaching quorum.
+ <leot> During this period, new director(s) were elected by the members and
+ <leot> officers were renewed or installed.
+ <leot> We continued with our Bronze level sponsorship support of BSDcan,
+ <leot> AsiaBSDcon, and EuroBSDcon to improve our representation at conferences
+ <leot> and developer summits.
+ * ktnb has quit (Ping timeout: 246 seconds)
+ <leot> .
+ <leot> We participated in the Google Summer of Code for 2025 and we attended
+ <leot> the Google Summer of Code Mentor Summit in Munich, Germany.
+ <leot> We are currently participating in GSoC this year with 5 students!
+ <leot> .
+ <leot> For 2025, these are the projects that passed:
+ <leot> - Asynchronous I/O Framework
+ <leot> - Using bubblewrap to add sandboxing to NetBSD
+ <leot> - Enhancing Support for NAT64 Protocol Translation in NetBSD
+ <leot> .
+ <leot> For 2026, these projects have been chosen:
+ <leot> - Improving and Stabilizing the racoon2 IKE Daemon in NetBSD
+ <leot> - Port the Enlightenment desktop environment to NetBSD
+ <leot> - improving RAIDframe
+ <leot> - Testing Compat Linux: Syscall testing
+ <leot> - Convert a Wi-Fi driver to the new Wi-Fi stack
+ <leot> .
+ <leot> We continued to improve our interaction and relationships with
+ <leot> vendors, as well as participating in industry PSIRT/CSIRT
+ <leot> with commercial vendors and other open-source projects.
+ <leot> .
+ <leot> We successfully completed the large-scale migration of our repository
+ <leot> infrastructure from CVS to a Git/Mercurial ecosystem, including the
+ <leot> launch of live hgweb and gitweb test environments.
+ <leot> .
+ <leot> We also advanced our security and compliance posture by initiating CNA (CVE Numbering
+ <leot> Authority) onboarding with MITRE and ensure readiness for the EU Cyber
+ <leot> Resilience Act (CRA).
+ <leot> .
+ <leot> We also implemented "Anti-Slop" protocols to protect codebase integrity
+ <leot> against code not written by humans.
+ <leot> .
+ <leot> The funded contracts continued for:
+ <leot> - improvements in release engineering
+ <leot> .
+ <leot> We are 12% through a fundraising campaign. *Please* consider
+ <leot> donating, as we are a US IRS 501(c)3 charitable organization.
+ <leot> .
+ <leot> EOF
+
+Core
+-------------------------------
+
+::
+
+ <leot> Next in the agenda we have... core@ presentation by <kre>! krelz, please go ahead!
+ <krelz> Hi everyone, before I begin, any other core members who want to add something
+ <krelz> to what I am about to present, msg leot and I'm sure you can be snuck in when I
+ <krelz> am done, which won't take long...
+ <krelz> .
+ <krelz> Report from core for 2026 NetBSD AGM
+ <krelz> .
+ <krelz> core is tasked with technical management of the NetBSD project.
+ <krelz> .
+ <krelz> The current members of core are:
+ <krelz> .
+ <krelz>         Christos Zoulas         christos@
+ <krelz>         Chuck Silvers           chs@
+ <krelz>         Robert Elz              kre@
+ <krelz>         Martin Husemann         martin@
+ <krelz>         Matthew Green           mrg@
+ <krelz>         Taylor R Campbell       riastradh@
+ <krelz>         Rin Okuyama             rin@
+ <krelz> .
+ <krelz> Actual technical management is difficult in a volunteer project,
+ <krelz> as developers work on whatever interests them.   One aspect
+ <krelz> which is sometimes important is in setting disputes between
+ <krelz> developers.   Fortunately there was only one such dispute in
+ <krelz> the past year, which was easily amicably settled.
+ <krelz> .
+ <krelz> Core doesn't hold regular formal meetings, issues are discussed
+ <krelz> when they arise, otherwise we're mostly fairly dormant.
+ <krelz> .
+ <krelz> core, as a group, can be reached at core@netbsd.org
+ <krelz> .
+ <krelz> That's it for me, for this year's core report, I will be here for questions later
+ <krelz> .
+ <leot> Thank you kre!
+
+Admins
+-------------------------------
+
+::
+ 
+ <spz> good localtime() all
+ <spz> ,
+ <spz> admins is the following people:
+ <spz> christos, dogcow, kim, mspo, phil, riastradh, riz, seb, soda, spz, tls
+ <spz> ,
+ <leot> Next in the agenda... we have the admins@ presentation from spz! Please go ahead!
+ <spz> Statistics:
+ <spz> - admins runs the following TNF systems:
+ <spz> @ TastyLime
+ <spz> + 8 hardware systems, 6 'regular' Xen guests and 3 repotest Xen guests
+ <spz> = 1 earmv7hf, the rest amd64
+ <spz> - public services, the repo(s), sundry
+ <spz> @ AOA
+ <spz> + 6 hardware systems
+ <spz> = all amd64
+ <spz> - the NetBSD build farm
+ <spz> @ Washington University
+ <spz> + 7 hardware systems
+ <spz> = 2 aarch64 and the rest amd64
+ <spz> - two pkg builders, the repo conversion and a CI system, sundry
+ <spz> @ Regensburg
+ <spz> + 2 hardware systems, one of them with 2 Xen guests
+ <spz> = all amd64 (+ a sparc64 serving consoles)
+ <spz> - the offsite backup, archive, wip.pkgsrc.org and a CI system
+ <spz> ,
+ <spz> - CDN services donated by Fastly
+ <spz> - Housing donated by TastyLime, Two Sigma, WWU, and spz
+ <spz> ,
+ <spz> NetBSD versions in use:
+ <spz> 6   10.0_STABLE (1 earmv7hf, 1 aarch, 4 amd64)
+ <spz> 6   10.1 (5 amd64)
+ <spz> 13  10.1_STABLE (13 amd64)
+ <spz> 1   11.0_RC3 (amd64)
+ <spz> 2   11.0_RC4 (aarch64, amd64)
+ <spz> ,
+ <spz> Changes:
+ <spz> Riastradh spent even more time on the mail system so we can still send
+ <spz> mail to Google mail accounts.
+ <spz> Also Riastradh has been developping the future reposerver setup.
+ <spz> ,
+ <spz> Notable issues:
+ <spz> - spam suppression by technical means, which makes life hard(er) for
+ <spz>   legitimate mailing lists and hasn't stopped spammers (or phishing) yet.
+ <spz> - LLM scraping. Anti-social "all your resources are belong to us",
+ <spz>   total disregard for robots.txt, and backed by lots of money
+ <spz>   so they can buy all the shady "residential proxies" they want,
+ <spz>   so IP blacklists aren't feasible. Their capacity to scrape
+ <spz>   vastly outnumbers our capacity to serve, they are very aggressive,
+ <spz>   so the chance of a human getting to use the wip.pkgsrc.org website
+ <spz>   is slim. And to add insult to injury they could just download the repo
+ <spz>   instead of diffing every possible version of every file against every
+ <spz>   other version via the web interface:
+ <spz>   the point is they don't want to use resources carefully, because that
+ <spz>   would require thought and LLMs are all about not expending that.
+ <spz>   (if you detect some foaming at the mouth here: yes. aarrrggghhh!)
+ <spz> ,
+ <spz>   We are very sorry but we'll have to add countermeasures like for
+ <spz>   archive.NetBSD.org, if possibly not the same, or shut the
+ <spz>   web interface down like we did with the cvsweb access to wikisrc.
+ <spz> ,
+ <spz>   The other NetBSD web sites survive thanks to having a limited
+ <spz>   number of links (the scrapers only visit each one twice a day),
+ <spz>   and CDN caching.
+ <spz> - hardware aging at TastyLime, both the TNF servers and the network
+ <spz>   equipment. The latter is being dealt with, there will be a downtime
+ <spz>   for sometime soon. The former suffers from requiring half a week time
+ <spz>   on-site and roughly two weeks from off-site to get anything working
+ <spz>   properly again, and the activation energy required to do that is a lot.
+ <spz> - the perennially full /pub/pkgsrc/packages on ftp.NetBSD.org.
+ <spz>   we have a plan, it "just" needs implementing.
+ <spz> ,
+ <spz> We often get asked:
+ <spz> - why don't you use a Cloud provider or rent servers instead:
+ <spz>         + did that with the offsite backup server, the provider ceased
+ <spz>         operations and just shut everything off: our data? sucks to be us.
+ <spz>         If we own the server it might get switched off, but we could get
+ <spz>         it (and thus our data) back
+ <spz>         + but you could have backups: having 50TB in total backed up and
+ <spz>         not paying an arm and a leg for retrieval and making certain the
+ <spz>         backup provider isn't going funny is either expensive or difficult
+ <spz>         + in the long run renting servers is not cheaper if they actually
+ <spz>         are busy all the time
+ <spz>         + we should always consider if this (whatever this) is a good use
+ <spz>         of TNF funds.
+ <spz> - we could sponsor you a server
+ <spz>         Thanks, kind of you to offer. However:
+ <spz>         If it's just one server we couldn't do OS updates. Having IPMI
+ <spz>         on the open Internet for console access is not a good security
+ <spz>         stance. Thus we are at a server and a console server, and having
+ <spz>         a console server and several servers just scales better.
+ <spz>         Plus we'd like to have at least one member of admins in viable
+ <spz>         site visit distance and an expectation of duration: site moves
+ <spz>         aren't much less work than hardware renewals.
+ <spz> ,
+ <spz> Thanks to riz, tls and phil for their resources, time
+ <spz> and blood sacrifices, too. :}
+ <spz> ,
+ <spz> Back to moderator.
+ <leot> Thank you very much spz!
+
+Finance-exec
+-------------------------------
+ 
+::
+
+ <leot> Next in the agenda we have... Riastradh with the finance-exec@ presentation!
+ <Riastradh> Hi, folks!
+ <Riastradh> Finance-exec hoards the cash, keeps the books, sends
+ <Riastradh> thank-you notes to donors, and pays out contracts and
+ <Riastradh> reimbursements.
+ <Riastradh> .
+ <Riastradh> We are:
+ <Riastradh> - christos (Christos Zoulas)
+ <Riastradh> - reed (Jeremy C Reed)
+ <Riastradh> - riastradh (Taylor R Campbell)
+ <Riastradh> .
+ <Riastradh> The NetBSD Foundation's public 2025 financial report is at:
+ <Riastradh> https://www.NetBSD.org/foundation/reports/financial/2025.html
+ <Riastradh> We produce this from an internal ledger maintained with
+ <Riastradh> ledger(1) <https://www.ledger-cli.org/>.
+ <Riastradh> .
+ <Riastradh> Highlights:
+ <Riastradh> - We have net assets of a little over 400k USD as of today
+ <Riastradh>   (we received a large donation in 2026).
+ <Riastradh> - In 2025, we received about 80k USD -- far surpassing our
+ <Riastradh>   usual donation target of 50k USD!
+ <Riastradh> - We spent 21k USD, mainly on:
+ <Riastradh>   o supporting conferences and sending developers to them
+ <Riastradh>   o release engineering
+ <Riastradh> .
+ <Riastradh> That was a lot more income and a lot less expenses than we
+ <Riastradh> usually have.  But forecasting:
+ <Riastradh> - We expect to purchase some more hardware replacements this
+ <Riastradh>   year, and components like RAM have gotten much more
+ <Riastradh>   expensive recently.
+ <Riastradh> - We have more funds for funded projects now, and while core
+ <Riastradh>   or pkgsrc-pmc directs the funds, they're really driven by
+ <Riastradh>   the developer proposals that are available -- so if you
+ <Riastradh>   want to work on a funded project, send a proposal!
+ <Riastradh> .
+ <Riastradh> Happy to answer any questions about what finance-exec does,
+ <Riastradh> or swap notes on using ledger(1)!
+ <Riastradh> Thanks,
+ <Riastradh> -Riastradh, on behalf of finance-exec
+ 
+Membership-exec
+-------------------
+ 
+::
+
+ <leot> Thanks a lot Riastradh!
+ <leot> Next presentation is from <martin> with the membership-exec@ presentation!
+ <__martin> thanks
+ <__martin> The current members of membership-exec are:
+ <__martin> - Christos Zoulas <christos>
+ <__martin> - Martin Husemann <martin>
+ <__martin> - Lex Wennmacher <wennmach>
+ <__martin> - Thomas Klausner <wiz>, and
+ <__martin> - Ken Hornstein <kenh> who is on sabbatical.
+ <__martin>  -
+ <__martin> Membership-exec is responsible for all aspects of
+ <__martin> "membership", but in practice the main task is to handle
+ <__martin> membership applications. The number of active developers
+ <__martin> (as of 2026-06-06) is 138. Note that this number is a
+ <__martin> bit outdated, as the membership activity validation process
+ <__martin> required for the board election has not yet happened.
+ <__martin>  -
+ <__martin> Since the last AGM on 2025-05-17 we gained only 5 new
+ <__martin> developers, which is (again) way too few. We need to invite
+ <__martin> more people, please help active users and encourage them to
+ <__martin> apply.
+ <__martin>  -
+ <__martin> The difference between developers and active developers
+ <__martin> is explained in the bylaws - an active developer has
+ <__martin> actually committed something in the last year, or contributed
+ <__martin> in an active way, like admins.
+ <__martin>  -
+ <__martin> We'd like to emphasize that we appreciate all your replies
+ <__martin> to our membership RFC e-mails, although we do not usually
+ <__martin> acknowledge them. Please keep on providing feedback to
+ <__martin> the RFC mails.
+ <__martin> thanks, back to moderator
+ <leot> Thank you Martin!
+
+Release Engneering
+-------------------
+ 
+::
+
+ <leot> Next presentation... always from Martin but this time with the releng@ hat! :) Please go ahead __martin!
+ <__martin> hi again
+ <__martin> We are:
+ <__martin> abs agc bouyer he jdc martin msaitoh phil reed riz
+ <__martin> sborrill snj
+ <__martin>    -
+ <__martin> Since the last meeting, we have:
+ <__martin>  o Branched netbsd-11.
+ <__martin>  o Not released any formal release (only four release
+ <__martin>    candidates for 11.0).
+ <__martin>  o Processed hundreds of pullup requests.
+ <__martin>  o Streamlined the process of cutting a release.
+ <__martin>    -
+ <__martin> Currently we are about to release the fifth (and
+ <__martin> this time definitvely last) release candidate for 11.0.
+ <__martin> 11.0 has had bad luck with security updates of 3rd party
+ <__martin> components last minute and slow progress on making
+ <__martin> these components updatable on relelase branches
+ <__martin> (like libssh moving to /usr/lib/private/).
+ <__martin>    -
+ <__martin> We have only two issues open for 11.0:
+ <__martin>  (1) the missing unbound import (catch-up to current)
+ <__martin>  (2) a new expat release that has not made it into
+ <__martin>      -current, but fixes a few security issues
+ <__martin>    -
+ <__martin> Volunteers are welcome to help with both - please
+ <__martin> contact me directly if you have some time to help.
+ <__martin>    -
+ <__martin> I hope to cut RC5 later this weekend or early next week,
+ <__martin> and then the final release maybe 10 days later. If one
+ <__martin> of the above items does not make it in, so be it.
+ <__martin>    -
+ <__martin> We have streamlined the process of actually cutting a
+ <__martin> release (or release candidate) and admins made it possible
+ <__martin> to completely stay out of this process now. Only one releng
+ <__martin> member and one security-office member are needed now.
+ <__martin>    -
+ <__martin> A release still takes realistically slightly less than 24h
+ <__martin> wall clock time, the biggest time consumers are all fully
+ <__martin> automated: 4h build time, 6h network transfer to ftp, 1h
+ <__martin> generating hashes. Plus various minor manual things like
+ <__martin> editing the web page and posting the release annoucement.
+ <__martin>    -
+ <__martin> We are still processing a huge amount of pullups.
+ <__martin> This is only possible because developers take the time
+ <__martin> to test their changes on the branch and submit a
+ <__martin> pullup request. We have been pretty good with this,
+ <__martin> and pulled up lots of security and usability
+ <__martin> improvements, as well as bug fixes to the various
+ <__martin> active branches. This is good for our users, thank you
+ <__martin> to everyone who cared and made it possible.
+ <__martin>    -
+ <__martin> The following paragraph is (unfortunately) a verbatim
+ <__martin> copy from last year - and still valid.
+ <__martin>    -
+ <__martin> The biggest current issue is the over-aged netbsd-9 branch.
+ <__martin> We need to get the NetBSD 11 release out ASAP to be
+ <__martin> able to move NetBSD 9.x out of support.
+ <__martin>    -
+ <__martin> After the 11.0 release (and probably the repository switch)
+ <__martin> I plan to start a discussion about rules and processes,
+ <__martin> trying to make the time from branching to first release way
+ <__martin> smaller. A slow release cycle is not that bad overall (IMO)
+ <__martin> but a year long delay between branching and first release
+ <__martin> is clearly wrong.
+ <__martin>    -
+ <__martin> That is all from release engineering for this year, we are
+ <__martin> hoping to have a list of several formal releases in next
+ <__martin> years report and also be close to the final release of
+ <__martin> 12.0.
+ <leot> Thank you Martin!
+
+Security-team
+-------------------------------
+ 
+::
+
+ <leot> Next in the agenda we have... Again Martin, but with the security-team@ hat! Feel free to go ahead __martin!
+ <__martin> This is a brief report for security-team.
+ <__martin>  -
+ <__martin> We are: agc billc cherry christos chs cyber hgutch joerg js
+ <__martin> kre martin maya mrg riastradh rin shm spz
+ <__martin>  -
+ <__martin> Since last AGM we have not published any security
+ <__martin> advisories. We have fixed (and pulled up) one issue that
+ <__martin> has an SA pending, but it has not been finalized.
+ <__martin>  -
+ <__martin> There have been numerous bug fixes applied to the tree, and
+ <__martin> pulled up to NetBSD-9, NetBSD-10 and NetBSD-11 release
+ <__martin> branches. We also have updated lots of 3rd party components
+ <__martin> in the tree when they had new releases fixing security
+ <__martin> issues. Right now only the expat library needs an update in
+ <__martin> -current.
+ <__martin>  -
+ <__martin> Most security work goes on "behind the scenes" and we
+ <__martin> usually concur with request of reporters for a specific
+ <__martin> publication date.
+ <__martin>  -
+ <__martin> Where needed we also involve NetBSD developers outside the
+ <__martin> team when special expertise is needed. While we try to
+ <__martin> assess all reported issues timely, we sometimes struggle
+ <__martin> with doing so. Currently we have (if I did not miscount)
+ <__martin> two open reports that need to be addressed.
+ <__martin>  -
+ <__martin> To improve our own process, becoming more reliable and more
+ <__martin> transparent we are currently applying to become a CNA (CVE
+ <__martin> number authority). This will allow us to assign and publish
+ <__martin> our own CVE records. The process forces us to have public
+ <__martin> statements of response times and processes for issues
+ <__martin> reported to us. We might need to introduce a ticket system
+ <__martin> to help with doing timely responses.
+ <__martin>  -
+ <__martin> NetBSD continues to be represented in a product security
+ <__martin> incident response working group with other operating system
+ <__martin> vendors, as well as a direct contact team with other BSD
+ <__martin> projects. This framework allows us to work better with
+ <__martin> vendors requiring an embargoed and/or coordinated release
+ <__martin> with other operating systems. We can begin working on
+ <__martin> issues that affect NetBSD much faster, instead of only
+ <__martin> being notified after an embargo is lifted. We are expanding
+ <__martin> the number of vendors as time goes on, as well as
+ <__martin> participating in FIRST.
+ <__martin>  -
+ <__martin> This is teaching us quite a bit of where we need to
+ <__martin> improve our process, which is currently on-going.
+ <__martin>  -
+ <__martin> Thanks to everyone helping with security issues!
+ <leot> Thank you very much Martin!
+
+pkgsrc-pmc
+----------------
+ 
+::
+
+ <leot> Next in the agenda we have... pkgsrc-pmc presentation, written by <wiz>!
+ <leot> Unfortunately <wiz> could not attend the AGM so I will present it
+ <leot> The pkgsrc team kept thousands of packages in pkgsrc up to date and in
+ <leot> good working order, and delivered four -- the 87th through 90th --
+ <leot> stable branches. Great work, and thank you to bsiegert@ and maya@ for
+ <leot> handling the branches!
+ <leot> .
+ <leot> The pkgsrc team has welcomed one new developer, kikadf, who takes good
+ <leot> care of chromium and wayland.
+ <leot> .
+ <leot> The current roster is:
+ <leot> - agc (emeritus member)
+ <leot> - dholland (board representative)
+ <leot> - schmonz
+ <leot> - wiz
+ <leot> .
+ <leot> Thank you for working on pkgsrc!!
+ <leot> -- wiz, for pkgsrc-pmc
+ <leot> Thanks!
+ 
+pkgsrc-security
+----------------
+ 
+::
+
+ <leot> Next in the agenda... we have pkgsrc-security@ presentation, prepared by <tm>!
+ <leot> He's only online via a mobile, so I will present it!
+ <leot> The mission of the pkgsrc Security Team is to ensure that the ever-growing
+ <leot> ecosystem of third party software is either safe to use or at least be sure
+ <leot> people are aware of the known vulnerabilities.
+ <leot>         -
+ <leot> Our members monitor publicly available vulnerability feeds, mainly CVE.
+ <leot>         -
+ <leot> We aggregate received advisories believed to impact pkgsrc into the pkgsrc
+ <leot> vulnerability list. When time allows we try to notify individual package
+ <leot> MAINTAINERs and locate, commit patches to fix the vulnerabilities.
+ <leot>         -
+ <leot> Since 2021 our ticket handling crew is currently only 2 people, unfortunately
+ <leot> pretty understaffed. We are looking and welcome people volunteering to join
+ <leot> us!
+ <leot>         -
+ <leot> Currently handling tickets are:
+ <leot>  - Leonardo Taccari <leot>
+ <leot>  - Thomas Merkel <tm>
+ <leot>         -
+ <leot> The other current members of the team are:
+ <leot>  - Thomas Klausner <wiz>
+ <leot>  - Tobias Nygren <tnn>
+ <leot>  - Tim Zingelman <tez>
+ <leot>         -
+ <leot> The year in numbers:
+ <leot> In 2024, the vulnerability list had 9482 lines added to it (8967 more than last
+ <leot> year) for a total of 30231 known vulnerabilities.
+ <leot> In 2025, the ticket queue received 50050 new advisories (9330 more than last
+ <leot> year). Of these 50050 new advisories:
+ <leot>  new:        302 ( 0.6%) (not able to handle in 2025)
+ <leot>  stalled:      0 ( 0.0%)
+ <leot>  resolved:  1697 ( 3.4%) (affecting pkgsrc packages)
+ <leot>  rejected: 48051 (96.0%) (no impact or duplicates)
+ <leot>         -
+ <leot> Zafer Aydogan <zafer> also joined pkgsrc-security rotation list for several
+ <leot> months in 2025 and helped us. Thanks Zafer!
+ <leot>         -
+ <leot> The current count of vulnerable packages in pkgsrc-current is 787 (138 more
+ <leot> than last year), in pkgsrc-stable is 809 (144 more than last year).
+ <leot> See the periodic email to packages@NetBSD.org for the list.
+ <leot> But we've 3548 vulnerabilities to review!
+ <leot> We can always use help locating and committing security patches, in particular
+ <leot> for the many of these that are maintained by pkgsrc-users.
+ <leot>         -
+ <leot> We encourage all developers to help us keep the vulnerability list up-to-date.
+ <leot> If you become aware of a security issue or perform a security update in pkgsrc
+ <leot> please edit the list. You don't need any special privilege for this.
+ <leot> You'll find the list in pkgsrc CVS repository:
+ <leot>  pkgsrc/doc/pkg-vulnerabilities
+ <leot>         -
+ <leot> Please join the pkgsrc Security ticket handling crew, we're pretty understaffed
+ <leot> at the moment! Feel free to get in touch with us for additional details or an
+ <leot> introduction.
+ <leot>         -
+ <leot> EOF
+ <leot> Thank you very much <tm>!
+ <leot> We have another presentation that was not in the agenda!
+
+gnats
+------------
+
+::
+
+ <leot> There is a gnats@ presentation by <dholland>!
+ <leot> Feel free to go ahead David!
+ <nbdholland> (This got held up by a schmozzle yesterday. Thanks to riastradh@ for running my dodgy scripts for me.)
+ <nbdholland>  
+ <nbdholland> Here's the bug database report since the last AGM (12 months):
+ <nbdholland>  
+ <nbdholland> GNATS statistics for 2025 (as of June  6 2026)
+ <nbdholland>  
+ <nbdholland> New PRs this year: 880, of which 578 are still open.
+ <nbdholland> Closed PRs this year: 445. Net change: +435. 
+ <nbdholland> Total PRs touched this year: 946.
+ <nbdholland> Oldest PR touched this year: 5514.
+ <nbdholland> Oldest open PR: 1677; PR ignored for the longest: 4691.
+ <nbdholland>  
+ <nbdholland> Total number open: 7313
+ <nbdholland>  
+ <nbdholland> (Recall that this isn't github: in NetBSD "PR" means "problem report",
+ <nbdholland> not "pull request".)
+ <nbdholland>  
+ <nbdholland> This is the weekly plot:
+ <nbdholland>  
+ <nbdholland>                                                        * 6900
+ <nbdholland>                                                   ******
+ <nbdholland>                                               **********
+ <nbdholland>                                             ************
+ <nbdholland>                                       ******************
+ <nbdholland>                                   **********************
+ <nbdholland>                 ******** *******************************
+ <nbdholland>              *******************************************
+ <nbdholland>       **************************************************
+ <nbdholland>    ***************************************************** 6360
+ <nbdholland>  
+ <nbdholland> If anyone was wondering, the oldest open PR (PR 1677) is about a
+ <nbdholland> panic in unionfs. This is unfortunately still current. The most
+ <nbdholland> untouched PR (PR 4691) is about ECC memory handling on sun3.
+ <nbdholland>  
+ <nbdholland> Unfortunately, we seem to have reverted to our old pattern of an ever-increasing backlog.
+ <nbdholland>  
+ <nbdholland> Anyhow, here are the people who've been fixing the most bugs, as
+ <nbdholland> counted by commit messages found in PRs closed during the year.
+ <nbdholland>  
+ <nbdholland>   10  skrll@netbsd.org
+ <nbdholland>   14  martin@netbsd.org
+ <nbdholland>   15  bsiegert@netbsd.org
+ <nbdholland>   18  gutteridge@netbsd.org
+ <nbdholland>   23  jkoshy@netbsd.org
+ <nbdholland>   27  kre@netbsd.org
+ <nbdholland>   29  dmcmahill@netbsd.org
+ <nbdholland>   50  nia@netbsd.org
+ <nbdholland>   53  wiz@netbsd.org
+ <nbdholland>  105  riastradh@netbsd.org
+ <nbdholland>  
+ <nbdholland> This list always has a very long tail, and the difference between
+ <nbdholland> being on it and not is only one commit. This year there were 55 people
+ <nbdholland> who fixed or helped fix at least one bug report, down a bit from last
+ <nbdholland> year. Thanks to one and all.
+ <nbdholland>  
+ <nbdholland> And here are those who've been processing pullups for bugs, according
+ <nbdholland> to the same analysis:
+ <nbdholland>  
+ <nbdholland>    1  snj@netbsd.org (releng)
+ <nbdholland>    2  bsiegert@netbsd.org (releng)
+ <nbdholland>    2  jdc@netbsd.org (releng)
+ <nbdholland>    4  bouyer@netbsd.org (releng)
+ <nbdholland>   16  maya@netbsd.org (releng)
+ <nbdholland>  127  martin@netbsd.org (releng)
+ <nbdholland>  
+ <nbdholland> Note that this reflects pullups specifically linked into gnats, not
+ <nbdholland> all releng work. Nonetheless, it remains heavily skewed. Many, many,
+ <nbdholland> many thanks, Martin.
+ <nbdholland>  
+ <nbdholland> <eot>
+ <leot> Thank you very much nbdholland!
+ 
+Q&A
+-----
+ 
+::
+
+ <leot> Now we can start the Q&A session.
+ <leot> I have at least 2 questions already in the queue
+ <leot> If you have more questions, feel free to /msg me with possible <team> / <nick> that may answer the question and I will voice you when it's your turn
+ <leot> racoon has some questions for admins@! racoon, feel free to go ahead!
+ <racoon> hello netbsd, hello admins
+ <leot> (admins@ feel free to /msg me if you can answer their questions!)
+ <racoon> my first question is whether it's possible to whitelist netbsd ftp(1) so that it doesn't need to pass a challenge to download files from archive.netbsd.org. my own experience of AI scrapers would say that's an unusual user agent to scrape, but i don't know how heinous they are. i'd like to do e.g. automated fetches of old distfiles
+ <racoon> *unusual user agent to fake
+ <Riastradh> racoon: the captcha in there is a temporary workaround, we might deploy anubis or something in the near future
+ <spz> if ftp has a recognisable user agent that might actually a great idea
+ <racoon> my second question is whether it's possible that more hardware might be moved to e.g. germany, japan in the future, so that we're less centralized in the US
+ <Riastradh> racoon: Some of the hardware is in Germany already!
+ <spz> it's easier for TNF to buy stuff in the US, typically cheaper too. We'll have to think about it.
+ <Riastradh> (we are already running anubis on https://hgweb.test.netbsd.org and https://gitweb.test.netbsd.org/, just haven't deployed it or anything comparable on other services yet)
+ <racoon> thank you
+ <Riastradh> racoon: We would need a rack to do it, with enough machines to make it worthwhile to maintain there.  If you have a rack to offer, we could arrange that!
+ <leot> Thanks racoon, spz and Riastradh!
+ <leot> We have a question from cagney_, probably for admins@ / gnats@!
+ <leot> cagney_, feel free to go ahead with your question(s)!
+ <cagney_> leot, tks, yes; and hello all
+ <cagney_> I'm just wondering if, once NetBSD makes it off CVS, if the next big plan is the bug database? Any plans for that?
+ <Riastradh> heh
+ <Riastradh> We have had so many grandiose plans for bug database migration I lost count!
+ <spz> yes, but it's got goats feet and then some
+ <spz> since we do not want to lose old info
+ <nbdholland> This has a long and unfortunate history
+ <Riastradh> So, yes, it would be nice to migrate off gnats but we don't have a plan.
+ <spz> otherwise: gnats should die. die die die die already. :-P
+ <nbdholland> and what spz said.
+ <Riastradh> But maybe we can start planning after we're done with CVS.
+ <nbdholland> We've already done a lot of planning. The problem has always been getting any real work done on it
+ <Riastradh> (Actually we won't quite be _done_ with CVS because there'll still be a read-only CVS front end!)
+ <cagney_> My only experience is that while it matters to preserve old bugs, it matters less to migrate them to a new system.
+ <cagney_> anyway, looking forward to move ment
+ <leot> Thanks cagney_, spz, Riastradh and nbdholland!
+ <leot> We have another question, from ktnb... probably for security-team@ / core@ I think!
+ <ktnb> Hello!
+ <ktnb> it seems like there are endless numbers of bugs and security bugs being around daily nowadays. I'm not sure if these bugs are found mostly by AI or not but is there any consideration on how or if we should do audits to find holes in NetBSD? in other words, how do we plan to 'keep up with the times' in this security bug world?
+ <leot> If anyone would like to answer and has not been voiced, feel free to /msg me!
+ <__martin> I'll try to answer that
+ <__martin> we currently receive real bug reports at still moderate rates
+ <__martin> we see a few "spamish" things that first ask for bug bounty programs and then never come back with real issues
+ <__martin> so right now I'd say it is still handable w/o additional measures
+ <nbdholland> In the long run we would also like to use formal verification tools to get ahead of the game
+ <krelz> I didn't mention it in the core report, as I'm not a finance person and didn't
+ <krelz> want to commit TNF to spend money, but core can receive proposals for projects
+ <krelz> which can be funded if they seem worthwhile (at moderate rates)
+ <krelz> If there are any proposals for how we could do active audits of the code,
+ <krelz> rather than just waiting for someone else to find bugs and tell us about them,
+ <krelz> that seems like something which might be worthy of some expenditure
+ <krelz> .
+ <ktnb> That was kind of my concern: are we not getting a lot of bugs because of lack of usage or are we just _that_ good
+ <krelz> It is probably some of both of those, much of our codebase is old, and fairly
+ <krelz> satble, there aren't a lot of bugs (even less security issues) to find probably,
+ <Riastradh> Perhaps but we shouldn't get cocky...
+ <krelz> and most of what does exist, is relatively harmless (unlikely, and not catastrophic)
+ <krelz> But also, our user base isn't all that huge, compared to other systems, so
+ <krelz> stray bugs can take longer to be encontered.
+ <krelz> But that's also (in some respects) a good thing, as finding bugs in NetBSD
+ <krelz> isn't so profitable for hackers, that they are less likely to bother
+ <krelz> .
+ <khorben> I'd like to add and emphasize on a few things: in NetBSD we rely on third-party components
+ <khorben> some of these components have a security impact and subject to scrutiny (and CVEs)
+ <khorben> so regardless of our relevance, we are targets too and should fund efforts ourselves
+ <khorben> as mentioned earlier in board's summary, we are looking for volunteers to help us do that
+ <khorben> thanks!
+ <khorben> .
+ <krelz> Agreed.   Send proposals to core@
+ <ktnb> Thank folks!
+ <leot> Thanks ktnb, __martin, nbdholland, krelz, Riastradh and khorben!
+ <leot> We have another question! From Ltning... probably for some pkgsrc folks! (maybe I can answer it, but if you can answer it, feel free to request voice via /msg me)
+ <Ltning> Hey all, I am a first-ish time pkgsrc patch submitted, specifically 60114
+ <Ltning> It's a simple patch, of which I'd like to contribute more from time to time, but it seems "stuck"
+ <Ltning> I guess my questions are 1) What can I do differently to get it unstuck, and 2) is there documentation on not just how to submit patches but how to "chase" them?
+ <racoon> Ltning: since mail is a non-live medium, and irc is, my main suggestion would be to poke us on irc
+ <Ltning> (I realise the pkgsrc team, like all others, are understaffed and overworked, so this is not meant to be criticism :)
+ <racoon> it's also always helpful to say which platforms you've tested on
+ <racoon> just because it shows confidence in the patch
+ <Riastradh> Ltning: One thing that would be helpful is to make sure the `make test' target works, in addition to saying what platforms you've tested it on.
+ <Ltning> Yeah - I have tried a couple times, but I guess not insistently enough. So perhaps the documentation could mention how-to-poke and also these things.
+ <nbdholland> Another thing is, as per the discussion above, we all dislike gnats, and one of the reasons is that it's very difficult to find things in it
+ <Ltning> Roger that - thanks. Will follow up with that.
+ <nbdholland> So if you file a patch in a gnats PR, and it doesn't get attention quickly, chances are you need to poke someone about it
+ <krelz> Also remember that everything in netbsd (incl pokgsrc)
+ <krelz> is done by voolunteers - the best way to get someone to look
+ <Riastradh> .oO(pokage source)
+ <krelz> at a patch, is to find a developer with similar interests
+ <krelz> (sorry for typos...)
+ <krelz> and convince them to take a look - any developer will do,
+ <Ltning> Yea. I guess the last comment from me then is - this is useful information, and I wish I didn't have to waste your time in this "call" to get it. 
+ <krelz> the "pkgsrc team" (I believe) are generally more interested in
+ <Ltning> Don't forget the impostor syndrome - I may be brave enough to poke randomly on IRC, but not everyone will be ..
+ <krelz> the workings of pkgsrc itself, rather than individual packages
+ <krelz> Finally, for an upgrade, which your PR is, it really helps to include
+ <krelz> info on what has changed, why someone would want the upgrade
+ <krelz> .
+ <leot> Thanks Ltning, racoon, nbdholland Riastradh and krelz!
+ <leot> We have another question, probably for finance-exec@
+ <nbdholland> Stuff like this about prodding people about patches being forgotten does appear on the lists at times
+ <nbdholland> and it's ok to ask procedural questions there
+ <Uilebheist> Hi all, Hi NetBSD
+ <Uilebheist> You mentioned that you are a US IRS 501(c)3 charitable organization - which is great for US people wanting to make a donation, but do you have or plan anything for people elsewhere?
+ <Riastradh> We have discussed forming a potential nonprofit organization in Europe.
+ <Riastradh> The main question is: How much administrative overhead does this bring on us (recall we're pretty much all volunteers, plus some part-time contracts with TNF)?
+ <Riastradh> And, is that administrative burden worth the additional fundraising it would bring in?
+ <spz> specifically, there are EU-wide nonprofits, but that's a lot of red tape
+ <khorben> I can add to that, we have tried to revive an existing NetBSD structure in Germany to help with this
+ <khorben> unfortunately it hasn't brought fruition as of now
+ <Riastradh> And the administrative burden is likely to be more than just the sum of the administrative burden of two organizations separately, because they would have to be notionally independent, and we would have to have to come up with a reasonable governance structure for managing the assets.
+ <khorben> and indeed there are already broader OSS structures in Europe and elsewhere
+ <khorben> (and what Riastradh says)
+ <Uilebheist> Thank you.  I guess for now we might just make a slighly smaller donation and not get tax back!
+ <Riastradh> For example, you may be familiar with the FSF (Free Software Foundation) and FSFE (Free Software Foundation Europe) -- although they are mostly aligned in goals, they are independent organizations with independent governance structure, and sometimes disagree.
+ <Uilebheist> Ah yes, noticed these.
+ <leot> Thanks Uilebheist, spz, Riastradh, nbdholland and khorben!
+ <leot> I think the questions queue via my /query is currently empty!
+ <leot> Any other questions?
+ <leot> (And/or if I've missed any questions, please /msg them again!)
+ <Cryo> Alright, thanks everyone for coming.
+ <leot> Cryo: wait!
+ <leot> We have another question! :)
+ * leot gives voice to wiedi
+ <wiedi> Hi, is there a status update on the repo migration? (Thanks to everyone working on it!)
+ <Riastradh> We have infrastructure in place, just requiring tying up some loose ends for deployment, and we need to prepare a clean final conversion.
+ <krelz> Also, there is the test infrastructure, that not enough developers have been using
+ <Riastradh> The infrastructure has taken a while because we're doing it a little differently from before, so we can reproducibly generate fresh images to test and deploy, rather than manually tinkering with a long-term server installation, and it took some engineering to get the software in shape for that.
+ <wiedi> Thank you, looking forward to using it :)
+ <wiedi> does the test infra also have a pkgsrc repo? I forgot... will have a look
+ <Riastradh> yes, it does
+ <wiedi> amazing, thanks for your work and answers :)
+ <leot> Thanks wiedi, Riastradh and krelz!
+ <leot> Any other questions? :)
+ <Riastradh> There are currently two test deployments, not all aligned on repository data (will change that soon), which you can test as a developer and anonymously.
+ <Riastradh> Developer access is at hg.test.n.o or git.test.n.o over ssh, and anonymous access is at anonhg.test.n.o or anongit.test.n.o (or https://hgweb.test.netbsd.org/ or https://gitweb.test.netbsd.org).
+ <krelz> Please, developers, use that, so you canb be familiar with
+ <Riastradh> and there's a test repsitory called testsrc which is small to mess around with
+ <krelz> how things will work.  Less issues after the real change happens.
+ <Riastradh> Notes on usage: https://www.netbsd.org/developers/mercurial/ https://www.netbsd.org/developers/git/
+ <krelz> Nothing can be :bad: in the tests, you can play safely
+ <Cryo> Alright, again, thanks for coming. We are excited about the roadmap ahead and look forward to achieving these milestones together. Thank you for your time and your dedication to NetBSD.
+ <Cryo> See you next year!
+ <leot> Thank you!
+ <Riastradh> There's also still read-only CVS access via anoncvs.test.n.o (testsrc only for now, will be everything once deployed) for access on small machines where git and hg have trouble running.
+ <khorben> thanks @all!
+ * Cryo turns up the lights
+ <Cryo> o/ have a great rest of your day
