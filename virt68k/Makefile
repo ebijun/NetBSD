@@ -1,6 +1,6 @@
 #INST=./nycdn.netbsd.org/pub/NetBSD-daily/netbsd-11/1214114847Z/virt68k/installation/ramdisks/inst-ramdisk.fs
 INST=./nycdn.netbsd.org/pub/NetBSD-daily/netbsd-11/20251214114847Z/virt68k/installation/ramdisks/inst-ramdisk.fs
-KERNEL=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260214175915Z/virt68k/binary/kernel/netbsd-GENERIC.gz
+KERNEL=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260523140238Z/virt68k/binary/kernel/netbsd-GENERIC.gz
 
 
 install:

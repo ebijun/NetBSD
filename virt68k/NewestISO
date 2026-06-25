@@ -80,7 +80,7 @@ ftp = Net::FTP.open(FTP) do |ftp|
 		end
 	end
 	puts "wget --level=2 -r http://"+CDN+isofile.path+"/binary/kernel/netbsd-GENERIC.gz"
-	puts "wget --level=2 -r http://"+CDN+isofile.path+"/installation/ramdisks/inst-ramdisk.fs"
+#	puts "wget --level=2 -r http://"+CDN+isofile.path+"/installation/ramdisks/inst-ramdisk.fs"
 
 	ftp.quit
 end

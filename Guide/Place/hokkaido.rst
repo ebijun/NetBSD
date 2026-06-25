@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2025 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2026 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -38,15 +38,17 @@
 
 .. csv-table::
  :widths: 30 20 60
- 
- まだ名前のない喫茶店,石山通,11:00-19:00 札幌市南区南３１条西１０丁目１−１３
+
  枯淡珈琲,南1西13,11:00-18:30LO
+ めいらあ堂,桑園,札幌の自家焙煎ネルドリップ珈琲の店
+ まだ名前のない喫茶店,石山通,11:00-19:00 札幌市南区南３１条西１０丁目１−１３
+ スカイショップ小笠原,新千歳空港,ティンカーベルのオホーツクベーク
  俊カフェ,南3西7,11:00-18:00 谷川俊太郎さん公認
  MEN-EIJI,平岸2-11,いつもストーンズが流れている
- 空き地,狸小路5,2024/6/29 19:30- カリオストロの城上映会
  TRANS BREWING BEER STAND,南2条西5丁目6-1,15：00-23：00
  Streetlight Brewing,北10西19,12:00-20:00/15:00-21:00
  BEER COTAN,南2西3,忽布古丹醸造直営店 12:00/17:00-23:00
+ BOSSA,狸小路,ジャズ喫茶。M9500+336L。
  そらとしば,エスコン,よなよな直営
  ハリネズミ珈琲店,南3西8,青りんごソーダとプリンとタンザニアキリマンジャロ。タンノイ。
  滝川クラフトビール工房,滝川,泉町1丁目9区。空知ピルスナー。温泉。
@@ -154,8 +156,8 @@
  2023 Hokkaido,6/17,225,15,オンライン開催
  2023 Hokkaido,6/24,278,30,札幌市産業振興センター
  2024 Hokkaido,6/29,400,34,札幌市産業振興センター
- 2025 Hokkaido,7/5,,,札幌市産業振興センター
- 
+ 2025 Hokkaido,7/5,440,33,札幌市産業振興センター
+ 2026 Hokkaido,6/27,,,札幌市産業振興センター
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -168,6 +170,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
 
+ 228.,OSC2026北海道,http://www.re.soum.co.jp/~jun/OSC2026hokkaido.pdf
  213.,OSC2025北海道,http://www.re.soum.co.jp/~jun/OSC2025hokkaido.pdf
  199.,OSC2024北海道,http://www.re.soum.co.jp/~jun/OSC2024hokkaido.pdf
  187.,OSC2023北海道,http://www.re.soum.co.jp/~jun/OSC2023hokkaido.pdf
@@ -189,6 +192,7 @@ togetterまとめ
 .. csv-table::
  :widths: 80 80
 
+ OSC2026北海道 NetBSDブース展示の記録,https://posfie.com/@ebijun/p/3QUhHvw
  OSC2025北海道 NetBSDブース展示の記録,https://posfie.com/@ebijun/p/jobKi6a
  OSC2024北海道 NetBSDブース展示の記録,https://togetter.com/li/2377329
  OSC2023北海道 NetBSDブース展示の記録,https://togetter.com/li/2165257
@@ -232,6 +236,41 @@ OSC北海道展示物
 #. NetBSD/Zaurus
 #. Making install-image Presentation by つついさん
   http://www.ceres.dti.ne.jp/tsutsui/osc12do/NetBSD-cross-liveimage.html
+
+
+2025年
+^^^^^^^^^^
+
+.. image::  ../Picture/2025/07/05/IMG20250705093649.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705093652.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705095041.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705095043.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705095050.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705095339.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705113521.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705113546.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705113736.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705113953.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705114112.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705114120.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705114154.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705114216.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705114227.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705130614.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705133101.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705133108.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705133114.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705133122.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705133519.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705134133.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705141715.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705145926.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705151337.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705152850.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705152904.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705160531.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705095342.jpg
+.. image::  ../Picture/2025/07/05/IMG20250705100127.jpg
 
 
 2024年

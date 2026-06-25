@@ -24,9 +24,9 @@
  :numbered:
 
 
- www.netbsd.org/NetBSD-11.0-RC4
- www.netbsd.org/pkgsrc-2026Q1.rst
- Place/nagoya
+ www.netbsd.org/NetBSD-11.0-RC5
+ www.netbsd.org/pkgsrc-2026Q2.rst
+ Place/hokkaido
  www.netbsd.org/about
  www.netbsd.org/ports.rst
  www.netbsd.org/pkgsrc-intro
@@ -46,4 +46,4 @@
  latexpdf
  Place/intro
  Luna
- AGM/2025-agm.rst
+ AGM/2026-agm.rst
