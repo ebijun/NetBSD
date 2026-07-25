@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.8.1
+ DISTNAME=       nono-1.8.2
 
 チェックサム作成
 ------------------
@@ -51,11 +51,11 @@ Makefile 内のバージョンをあげます。
 
  % make makesum
 
- drwxr-xr-x  2 jun  wheel   512 Jun 26 05:23 CVS
+ drwxr-xr-x  2 jun  wheel   512 Jul 26 00:04 CVS
  -rw-r--r--  1 jun  wheel    54 May 14  2024 DESCR
- -rw-r--r--  1 jun  wheel  1202 Jun 26 05:24 Makefile
+ -rw-r--r--  1 jun  wheel  1202 Jul 26 00:04 Makefile
  -rw-r--r--  1 jun  wheel   357 Nov  2  2025 PLIST
- -rw-r--r--  1 jun  wheel   350 Jun 26 05:24 distinfo
+ -rw-r--r--  1 jun  wheel   350 Jul 26 00:04 distinfo
 
 make package して動作を確認します。
   
@@ -83,16 +83,22 @@ commit
 
  cvs commit 
 
- nono: update to 1.8.1.
+ nono: update to 1.8.2.
 
- 1.8.1 (2026/06/25)
- vm(Update): "Rewrite whole SSG(YM2149). Implement envelope and noise."
- vm(Fix): "Fix some tone pitches on SSG(YM2149)."
- vm(New): "Support SSG(YM2149) even on LUNA-88K."
- vm(Fix): "Fix an issue where the time display would become incorrect after 115 days since ver 1.8.0."
- host(New): "Add PulseAudio to host sound driver. It can be enabled by configure --enable-pulseaudio."
- host(Update): "Sound latency may be improved."
- GUI(Update): "Show spectrum analyzer on the sound monitor." 
+ 1.8.2 (2026/07/24)
+ vm(New): "Implement OPM on X68030."
+ vm(New): "Implement screen compositing on X68030."
+ vm(New): "Implement CRTC timing on X68030."
+ vm(New): "Implement CRTC raster interrupt on X68030."
+ vm(Fix): "Make various fixes to the CRTC monitor on X68030."
+ vm(New): "Implement the array chain transfer on DMAC on X68030."
+ vm(Update): "Support parallel transfers on DMAC on X68030."
+ vm(Fix): "Fix some of the transfer termination condition on DMAC on X68030 since ver 1.5.1."
+ vm(Fix): "Fix an issue where TxDR could not be written during event mode on MFP on X68030."
+ vm(Fix): "Fix an issue where the scheduler could hang when writing to the ADPCM register."
+ vm(Fix): "Fix accesses around the sprite register on X68030."
+ vm(Fix): "Implement response to commands for allow/reject media ejection on Windrv on X68030."
+ GUI(Update): "Improve layouts of the loglevel settings window." 
 
 doc をcommit します
 ---------------------
@@ -102,9 +108,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.8.1
+ doc: Updated emulators/nono to 1.8.2
  
  cvs diff -u CHANGES-2026
  
-        Updated emulators/nono to 1.8.1 [jun 2026-06-26]
+        Updated emulators/nono to 1.8.2 [jun 2026-07-26]
 
