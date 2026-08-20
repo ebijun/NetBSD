@@ -1,31 +1,32 @@
 anthy-9100hnb1      Kana Kanji conversion system
-at-spi2-core-2.60.4 Assistive Technology Service Provider Interface Core
+at-spi2-core-2.60.5 Assistive Technology Service Provider Interface Core
 bash-5.3.15         The GNU Bourne Again Shell
 brotli-1.2.0        Generic-purpose lossless compression algorithm
 cairo-1.18.4nb3     Vector graphics library with cross-device output support
-curl-8.20.0nb2      Client that groks URLs
+curl-8.21.0         Client that groks URLs
 dbus-1.16.2nb2      Message bus system
 digest-20220214     Message digest wrapper utility
 double-conversion-3.4.0 Conversion routines for IEEE doubles
-fontconfig-2.17.1nb1 Library for configuring and customizing font access
+fontconfig-2.18.2   Library for configuring and customizing font access
 fossil-2.27         High-reliability, distributed software configuration management
 freetype2-2.14.3    Font rendering engine and library API
 fribidi-1.0.16      Free Implementation of the Unicode Bidirectional Algorithm
 gd-2.3.3nb17        Graphics library for the dynamic creation of images
-gdk-pixbuf2-2.44.6  Library for image loading and manipulation
+gdk-pixbuf2-2.44.7  Library for image loading and manipulation
 giflib-6.1.3        GIF image format library
-git-base-2.54.0nb1  GIT Tree History Storage Tool (base package)
-glib2-2.88.1        Some useful routines for C programming (glib2)
+git-base-2.55.0     GIT Tree History Storage Tool (base package)
+glib2-2.88.3        Some useful routines for C programming (glib2)
+glib2-introspection-2.88.3 Introspection data for glib2
 gmp-6.3.0           Library for arbitrary precision arithmetic
 gnutls-3.8.13nb1    Transport Layer Security library
 gobject-introspection-1.86.0nb3 GObject Introspection
 graphene-1.10.8nb3  Thin layer of graphic data types
 graphite2-1.3.15    Cross-platform rendering for complex writing systems
-gsettings-desktop-schemas-40.0nb4 Collection of GSettings schemas for the GNOME desktop
+gsettings-desktop-schemas-50.1 Collection of GSettings schemas for the GNOME desktop
 gsl-2.8             The GNU Scientific Library
-gst-plugins1-bad-1.28.3 Open source multimedia framework - bad plugins
-gst-plugins1-base-1.28.2 Open source multimedia framework - base plugins
-gstreamer1-1.28.3   Open source multimedia framework
+gst-plugins1-bad-1.28.5 Open source multimedia framework - bad plugins
+gst-plugins1-base-1.28.5 Open source multimedia framework - base plugins
+gstreamer1-1.28.5   Open source multimedia framework
 gtk2+-2.24.33nb38   GIMP Toolkit v2 - libraries for building X11 user interfaces
 gtk3+-3.24.52nb1    GIMP Toolkit v3 - libraries for building X11 user interfaces
 gtk4-4.22.4         Multi-platform toolkit for creating GUIs, version 4
@@ -39,19 +40,19 @@ jasper-4.2.9        Software-based reference implementation of the JPEG-2000 cod
 jbigkit-2.1nb1      JBIG-KIT lossless image compression library
 jisx0213fonts-0.0nb2 X11 bitmap fonts for JIS X 0213
 lcms2-2.19.1        Little Color Management System - a color management library
-lerc-4.1.0          Limited Error Raster Compression library
+lerc-4.2.0          Limited Error Raster Compression library
 libXft-2.3.9        Library for configuring and customizing font access
 libatomic-15.1.0    Atomic fallback implementation for GCC
 libb2-0.98.1nb1     C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
 libcups-2.4.19nb1   Common UNIX Printing System library
 libduktape-2.7.0    Embeddable Javascript engine library
 libepoll-shim-0.0.20240608 Small epoll implemented using kevent
-libffi-3.5.2        Foreign function interface
+libffi-3.8.0        Foreign function interface
 libgcroots-0.2.3    Garbage collector supporting library
 libgcrypt-1.12.2    GNU cryptographic library
 libgpg-error-1.61   Definitions of common error values for all GnuPG components
 libidn2-2.3.7       Convert internationalized domain names to/from ASCII Encoding
-libjpeg-turbo-3.1.4.1 Accelerated libjpeg with SIMD instructions
+libjpeg-turbo-3.2.0nb2 Accelerated libjpeg with SIMD instructions
 libotf-0.9.16nb4    Library for handling OpenType fonts (OTF)
 libpaper-2.2.8      Paper size handling library
 libproxy-0.5.12nb3  Library that provides automatic proxy configuration management
@@ -59,7 +60,7 @@ librsvg-2.60.2      SVG library for GNOME
 libtasn1-4.21.0     ASN.1 structure parser library
 libunistring-1.4.2  Unicode string library
 libuuid-2.40.2      Generate unique identifiers for objects
-libwebp-1.6.0nb1    WebP image format library and tools
+libwebp-1.6.0nb3    WebP image format library and tools
 libxkbcommon-1.13.2 Library to handle keyboard descriptions
 libxml2-2.15.1      XML parser library from the GNOME project
 libxslt-1.1.45      XSLT parser library
@@ -72,24 +73,24 @@ m17n-db-1.8.0       The m17n database used by the m17n library
 m17n-lib-1.8.0nb25  Multilingualization library
 md4c-0.5.3          Markdown for C library and parser
 medit-1.2.0nb43     Programming and around-programming text editor
-mlterm-3.9.4nb7     Multilingual terminal emulator
+mlterm-3.9.5        Multilingual terminal emulator
 mng-2.0.3nb1        Multiple-image Network Graphics (MNG) reference library
-mozilla-rootcerts-1.1.20260412 Root CA certificates from the Mozilla Project
+mozilla-rootcerts-1.1.20260611 Root CA certificates from the Mozilla Project
 mpdecimal-4.0.1     C/C++ arbitrary precision decimal floating point libraries
 nanotodon-0.5.0nb6  CUI/C99 mastodon client
 nettle-4.0          Cryptographic library
-nghttp2-1.69.0      Implementation of HTTP/2 in C
-p11-kit-0.26.2      PKCS#11 module manager
-pango-1.57.1        Library for layout and rendering of text
+nghttp2-1.70.0      Implementation of HTTP/2 in C
+p11-kit-0.26.4      PKCS#11 module manager
+pango-1.58.0        Library for layout and rendering of text
 pcre2-10.47         Perl Compatible Regular Expressions library (major version 2)
-perl-5.42.2nb3      Practical Extraction and Report Language
+perl-5.44.0         Practical Extraction and Report Language
 pkg_chk-2.0.13      Check installed package versions against pkgsrc
 pkg_install-20260227 Package management and administration tools for pkgsrc
 pkgin-26.4.0        Apt / yum like tool for managing pkgsrc binary packages
 png-1.6.58nb1       Library for manipulating PNG images
-py313-setuptools-82.0.1 New Python packaging system
-python313-3.13.14   Interpreted, interactive, object-oriented programming language
-qt5-qtbase-5.15.19  C++ X GUI toolkit
+py313-setuptools-84.0.0 New Python packaging system
+python313-3.13.15   Interpreted, interactive, object-oriented programming language
+qt5-qtbase-5.15.19nb1 C++ X GUI toolkit
 qt5-qtx11extras-5.15.19 (no description)
 qt5-qtxmlpatterns-5.15.19 Qt5 module for XML Patterns
 qt6-qt5compat-6.11.1nb1 Qt6 module for Qt5 portability
@@ -99,48 +100,48 @@ qt6-qtimageformats-6.11.1nb1 Additional image handlers for Qt6
 qt6-qtlanguageserver-6.11.1nb1 Qt6 language server implementation
 qt6-qtshadertools-6.11.1nb1 Qt6 shadertools
 qt6-qtsvg-6.11.1nb1 Qt6 module for SVG
-raqm-0.10.5         Library for complex text layout
+raqm-0.11.0         Library for complex text layout
 raspberrypi-userland-20170109nb3 Various libraries for the Raspberry Pi
 readline-8.3nb1     GNU library that can recall and edit previous input
-ruby33-3.3.11nb2    Ruby 3.3.11 release package
-ruby33-addressable-2.9.0 Replacement for the URI Implementation of standard librrary
-ruby33-atk-4.3.6    Ruby binding of ATK-1.0.x or later
-ruby33-cairo-1.18.5 Ruby bindings for cairo
-ruby33-cairo-gobject-4.3.6 Ruby binding of cairo-gobject
-ruby33-delayer-1.2.1 Ruby module to delay the processing
-ruby33-delayer-deferred-2.2.0 Deferred for Delayer
-ruby33-diva-2.0.1   Implementation of expression for handling things
-ruby33-gdk3-4.3.6nb1 Ruby binding of GDK3
-ruby33-gdk_pixbuf2-4.3.6 Ruby binding of GdkPixbuf-2.x
-ruby33-gettext-3.4.1 Ruby localization library like as GNU gettext
-ruby33-gio2-4.3.6   Ruby binding of gio-2.0.x
-ruby33-glib2-4.3.6  Ruby binding of GLib-2.x
-ruby33-gobject-introspection-4.3.6 Ruby binding of Gobject Introspection
-ruby33-gtk3-4.3.6nb1 Ruby binding of GTK+-3.x
-ruby33-httpclient-2.9.0 HTTP accessing library for Ruby
-ruby33-instance_storage-1.0.0 Manage class instances with dictionary
-ruby33-locale-2.1.5 Pure ruby library which provides basic APIs for localization
-ruby33-memoist-0.16.2 Replacement of memoizable, memoize methods invocation
-ruby33-mikutter-5.1.2nb1 Simple, powerful, and moeful mastodon client
-ruby33-mini_portile2-2.8.9 Simple autoconf builder for developers
-ruby33-moneta-1.6.0 Unified interface to key/value stores
-ruby33-native-package-installer-1.1.9 Helper to install native packages on "gem install"
-ruby33-nokogiri-1.19.4 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
-ruby33-pango-4.3.6  Ruby binding of pango-1.x
-ruby33-pkg-config-1.6.5 Pure Ruby implementation of pkg-config
-ruby33-pluggaloid-1.7.0 Extensible plugin system for mikutter
-ruby33-public_suffix-7.0.5 Domain name parser based on the Public Suffix List
-ruby33-red-colors-0.4.0 Wide array of features for dealing with colors
-ruby33-text-1.3.1   Collection of text algorithms for Ruby
-ruby33-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
+ruby34-3.4.10       Ruby 3.4.10 release package
+ruby34-addressable-2.9.0 Replacement for the URI Implementation of standard librrary
+ruby34-atk-4.3.6    Ruby binding of ATK-1.0.x or later
+ruby34-cairo-1.18.5 Ruby bindings for cairo
+ruby34-cairo-gobject-4.3.6 Ruby binding of cairo-gobject
+ruby34-delayer-1.2.1 Ruby module to delay the processing
+ruby34-delayer-deferred-2.2.0 Deferred for Delayer
+ruby34-diva-2.0.1   Implementation of expression for handling things
+ruby34-gdk3-4.3.6nb1 Ruby binding of GDK3
+ruby34-gdk_pixbuf2-4.3.6 Ruby binding of GdkPixbuf-2.x
+ruby34-gettext-3.4.1 Ruby localization library like as GNU gettext
+ruby34-gio2-4.3.6   Ruby binding of gio-2.0.x
+ruby34-glib2-4.3.6  Ruby binding of GLib-2.x
+ruby34-gobject-introspection-4.3.6 Ruby binding of Gobject Introspection
+ruby34-gtk3-4.3.6nb1 Ruby binding of GTK+-3.x
+ruby34-httpclient-2.9.0 HTTP accessing library for Ruby
+ruby34-instance_storage-1.0.0 Manage class instances with dictionary
+ruby34-locale-2.1.5 Pure ruby library which provides basic APIs for localization
+ruby34-memoist-0.16.2 Replacement of memoizable, memoize methods invocation
+ruby34-mikutter-5.1.2nb1 Simple, powerful, and moeful mastodon client
+ruby34-mini_portile2-2.8.9 Simple autoconf builder for developers
+ruby34-moneta-1.6.0 Unified interface to key/value stores
+ruby34-native-package-installer-1.1.9 Helper to install native packages on "gem install"
+ruby34-nokogiri-1.19.4 HTML, XML, SAX, and Reader parser with XPath and CSS selector support
+ruby34-pango-4.3.6  Ruby binding of pango-1.x
+ruby34-pkg-config-1.6.5 Pure Ruby implementation of pkg-config
+ruby34-pluggaloid-1.7.0 Extensible plugin system for mikutter
+ruby34-public_suffix-7.0.5 Domain name parser based on the Public Suffix List
+ruby34-red-colors-0.4.0 Wide array of features for dealing with colors
+ruby34-text-1.3.1   Collection of text algorithms for Ruby
+ruby34-typed-array-0.1.2 Provides methods for creating type-enforced Arrays
 sayaka-3.8.7        Terminal specific Misskey client
 shared-mime-info-2.4nb7 Core database of common types
-sqlite3-3.53.2      SQL Database Engine in a C Library
+sqlite3-3.53.4      SQL Database Engine in a C Library
 sudo-1.9.17p1       Allow others to run commands as root
 tcsh-6.24.16        Extended C-shell with many useful features
-tiff-4.7.1          Library and tools for reading and writing TIFF data files
+tiff-4.7.2          Library and tools for reading and writing TIFF data files
 ttmkfdir2-20021109nb9 Tool that creates a fonts.scale file
-uim-1.9.7pre20251027nb4 Multilingual input method library
+uim-1.9.7pre20251027nb5 Multilingual input method library
 unifont-15.0.03     GNU Unifont - glyphs for all printable code points in Unicode 9.0 BMP
 vlgothic-ttf-20230918 Free Japanese TrueType fonts named 'VLGothic'
 wayland-1.25.0      Display server protocol - development libraries
