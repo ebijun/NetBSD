@@ -42,7 +42,7 @@ Makefile 内のバージョンをあげます。
 
 ::
 
- DISTNAME=       nono-1.8.2
+ DISTNAME=       nono-1.8.3
 
 チェックサム作成
 ------------------
@@ -83,22 +83,21 @@ commit
 
  cvs commit 
 
- nono: update to 1.8.2.
+ nono: update to 1.8.3.
 
- 1.8.2 (2026/07/24)
- vm(New): "Implement OPM on X68030."
- vm(New): "Implement screen compositing on X68030."
- vm(New): "Implement CRTC timing on X68030."
- vm(New): "Implement CRTC raster interrupt on X68030."
- vm(Fix): "Make various fixes to the CRTC monitor on X68030."
- vm(New): "Implement the array chain transfer on DMAC on X68030."
- vm(Update): "Support parallel transfers on DMAC on X68030."
- vm(Fix): "Fix some of the transfer termination condition on DMAC on X68030 since ver 1.5.1."
- vm(Fix): "Fix an issue where TxDR could not be written during event mode on MFP on X68030."
- vm(Fix): "Fix an issue where the scheduler could hang when writing to the ADPCM register."
- vm(Fix): "Fix accesses around the sprite register on X68030."
- vm(Fix): "Implement response to commands for allow/reject media ejection on Windrv on X68030."
- GUI(Update): "Improve layouts of the loglevel settings window." 
+ add options.mk for alsa and pulseaudio 
+  https://gist.github.com/tsutsui/4d2f78d001871479e7e5a68695606952
+ 
+ 1.8.3 (2026/08/29)
+ 
+ build(New): "Migrated to C++17."
+ m68030(Fix): "Fix access to the cache-inhibited area. This fixes the issue where 4.4BSD failed to boot since ver 1.6.6."
+ vm(Fix): "Fix and adjust "out of tune" mark on SSG monitor."
+ vm(Update): "In CLI app, power-off sequence on the system port also makes power button off on X68030."
+ debugger(Fix): "Fix branch information for DJNZ on HD64180."
+ debugger(Fix): "Fix mnemonic of LD r,(IX+d) / LD (IX+d),r where r is H/L on HD64180."
+ debugger(New): "Implement bt command."
+ vm(Update): "MSX-DOS mode now can pass command line arguments to the guest command." 
 
 doc をcommit します
 ---------------------
@@ -108,9 +107,9 @@ doc をcommit します。
 
 ::
 
- doc: Updated emulators/nono to 1.8.2
+ doc: Updated emulators/nono to 1.8.3
  
  cvs diff -u CHANGES-2026
  
-        Updated emulators/nono to 1.8.2 [jun 2026-07-26]
+        Updated emulators/nono to 1.8.3 [jun 2026-08-31]
 

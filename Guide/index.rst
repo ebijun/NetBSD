@@ -23,10 +23,9 @@
  :maxdepth: 3
  :numbered:
 
-
- www.netbsd.org/NetBSD-11.0-RC5
+ www.netbsd.org/NetBSD-11.0
  www.netbsd.org/pkgsrc-2026Q2.rst
- Place/hokkaido
+ Place/hiroshima.rst
  www.netbsd.org/about
  www.netbsd.org/ports.rst
  www.netbsd.org/pkgsrc-intro

@@ -20,3 +20,6 @@ clean:
 
 requires:
 	pkg_info -a -Q REQUIRES  | fgrep -v /usr/pkg | sort -u
+
+restore:
+	git restore notfound.list packages

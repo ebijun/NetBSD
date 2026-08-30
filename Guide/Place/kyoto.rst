@@ -55,7 +55,8 @@
  2023 Kyoto,7/22,250,26,京都リサーチパーク
  2023 Kyoto,7/29,150,12,Online
  2024 Kyoto,7/27,330,38,京都リサーチパーク
- 2025 Kyoto,8/3,,,京都リサーチパーク
+ 2025 Kyoto,8/3,290,36,京都リサーチパーク
+ 2026 Kyoto,8/1,,,京都リサーチパーク
   
 よく行く店
 ~~~~~~~~~~~~~~
@@ -65,6 +66,8 @@
 
  店名,エリア,コメント
  麥酒　夢詠ミ,祇園四条駅６番出口, 2025年8月3日（日）17時-20時
+ coyote,東塩小路町,キャンパスプラザ京都 8:30-17:00 
+ Weekenders Coffee,松原通御幸町,8:00-16:00 月火金休み
  京都醸造,市民防災センター前,18番のバス大宮五条→唐戸町→四条大宮
  鈴屋,二条,7:00- モーニング since 1946
  幸福堂,壬生,アイスモナカ&きんつばをおみやげに新選組
@@ -121,6 +124,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
 
+ 230,OSC2026京都,http://www.re.soum.co.jp/~jun/OSC2026kyoto.pdf
  214,OSC2025京都,http://www.re.soum.co.jp/~jun/OSC2025kyoto.pdf
  200,OSC2024京都,http://www.re.soum.co.jp/~jun/OSC2024kyoto.pdf 
  188,OSC2023京都,http://www.re.soum.co.jp/~jun/OSC2023kyoto.pdf 
@@ -202,6 +206,43 @@ OSC京都展示物
 #. Squeak on hpcmips 
 #. OneSeg TV recording with hpcmips,
 #. bc benchmark time x electricity consumption 
+
+2025年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2025/08/03/IMG20250803084518.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803084618.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803084638.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803091438.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803091659.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803093646.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803094527.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803094554.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803094723.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803102014.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803102019.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803102024.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803102031.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803110737.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803110753.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803113032.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803114134.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803115130.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803130644.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803132121.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803162008.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803173219.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803173223.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803173858.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803103951.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803104124.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803104310.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803104316.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803104324.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803130726.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803180401.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803190849.jpg
+.. image::  ../Picture/2025/08/03/IMG20250803192847.jpg
 
 2024年
 ~~~~~~~~~~~~~~~~~~

@@ -105,3 +105,19 @@ NetBSD/earmv7hf
 - もういちどPC6001VXを起動する
 
 
+rpi-psgplayer
+------------------
+
+- https://github.com/tsutsui/rpi-psgplayer
+- カーネルを作り直す
+- git clone git@github.com:tsutsui/rpi-psgplayer.git
+- git clone git@github.com:tsutsui/p6-odorumiku.git
+-        git clone git@github.com:tsutsui/p6-psgmmlc.git
+- https://github.com/tsutsui/p6psgmmlc
+p6-odorumiku/mml
+/usr/local/Github/p6-odorumiku/mml
+amir63d$ p6psgmmlc sm40196287_p6drv.mml sm40196287_p6drv.bin
+amir63d$ ls
+sm40196287_p6drv.bin      sm40196287_p6drv.mml
+
+

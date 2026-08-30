@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2025 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2026 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -52,7 +52,8 @@
  2019,9/28,150,19,松江テルサ
  2023,10/28,100,18,松江テルサ
  2024,11/2,50,9,島根県民会館 
- 2025,6/21,,,松江テルサ
+ 2025,6/21,120,17,松江テルサ
+ 2026,7/11,,,松江テルサ
  
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -64,6 +65,7 @@ https://github.com/ebijun/osc-demo　にあります。
  :widths: 20 30 80
 
  No,イベント,URL
+ 229,OSC2025島根,http://www.re.soum.co.jp/~jun/OSC2025shimane.pdf 
  212,OSC2025島根,http://www.re.soum.co.jp/~jun/OSC2025shimane.pdf 
  205,OSC2024島根,http://www.re.soum.co.jp/~jun/OSC2024shimane.pdf 
  191,OSC2023島根,http://www.re.soum.co.jp/~jun/OSC2023shimane.pdf
@@ -83,6 +85,8 @@ togetterまとめ
 
 .. csv-table::
  :widths: 80 80
+
+ OSC2026島根 NetBSDブース展示の記録,https://posfie.com/@ebijun/p/s0cekjK
  OSC2025島根 NetBSDブース展示の記録,https://posfie.com/@ebijun/p/plRcVrG
  OSC2024島根 NetBSDブース展示の記録,https://togetter.com/li/2456931
  OSC2023島根 NetBSDブース展示の記録,https://togetter.com/li/2247549
@@ -110,37 +114,34 @@ togetterまとめ
  らーめんとんてき大翔,殿町３３３,ラーテキセット
  Imagine.coffee,伊勢宮,ひつじ製菓とのペアリングとか。
  S-PARK,松江駅,ビアへるん+島根日本酒全種類　十旭日(じゅうじあさひ)
- CRAFT BEER PARADISE,朝日町,平日18:30 土日15:30
- 松江地ビール館,遊覧船発着場,ビアへるん。1730までだからすぐ行く。
+ CRAFT BEER PARADISE,朝日町,平日17:30 
+ 松江地ビール館,遊覧船発着場,ビアへるんはあるけどレストラン、売店、立飲は閉店
  ミートショップきたがき,西茶町,ビーフコロッケとミンチカツ
  しまね映画祭,,砂の器 35mm上映
- NAKEDSPACE,末次本町京店77,2025/6/21 CITY VIBES VOL.6
+ NAKEDSPACE,末次本町京店77,2026/7/26 NAKED SPACE FINAL PARTY
  山陰ケーブルビジョン,,鷹の爪団を放映しつづけている
- 島根県立石見美術館,益田,内藤廣展
- LOVE YOUR NEIGHBOR,売布神社前,クラフトビールとハンバーガー。臨時休業中?
- 石見麦酒,江津市,地ビールブルワリー。松江駅で松江茶ビール。札幌さいとさんの店。
+ 島根県立石見美術館,益田,レペルトワール・ドゥ・グーモデルヌ
+ 石見麦酒,波子,地ビールブルワリー。波子駅にある。札幌さいとさんの店。
  一隆,伊勢宮町,玉鋼 八塩折酒 割子そば
  ちくてい,,ラーメン
  ベニヤ模型,末次本町,http://www5e.biglobe.ne.jp/~beniya-m/
  EAD,松江大橋,リニューアル前は、とりあえずを頼むととりあえずが出て来た。
- たぬき堂書店,伊勢宮,昭和初期地元書籍多数
  國暉酒造,東茶街,蔵しっく館
- 島根県立美術館,宍道湖畔,ベルギー近代美術の精華展
+ 島根県立美術館,宍道湖畔,タピオ・ヴィルカラ
  塩見茶屋,八雲記念館前,ぼてぼて茶の具の種類
  服部珈琲工房,市内,冬珈琲 黒田店はオフハウス近く。朝粥モーニング
  国際宇宙・生物研究所,東横イン裏,エドゥリスリオハ白
  ホーランエンヤ,城山稲荷神社,OSC2009のときサンライズから見た
  三英堂,浜乃木,若草を買う。
  赤べこ,朝日町交差点,上寿司、煮物、大将がX68の偉い人に面影が
- じう,ハイカラビル,日本酒バー
- 福吉,秋鹿町,天然うなぎ
+ 福吉,秋鹿町,天然うなぎ。11:00-
  川京,末次本町,みんきぃさんおすすめ。しじみと鰻。
  東風,雑賀町,そば こちと読みます。ランチあり。日月休
  麺屋 ひばり,松江城,あごだし白湯らぁめん
- 西洋軒,,
+ 西洋軒,しんじ湖温泉,洋食
  田中屋,出雲大社,
- よびこ,,
- やまいち,,
+ やまいち,新大橋,しじみ汁
+ 松江赤十字病院,松江,7話で冷泉麻子様の祖母が入院している病院のモデル
 
 鳥取
 ~~~~~~
@@ -219,6 +220,58 @@ OSC松江展示物
 #. SONY NEWS
 #. OMRON LUNAII
 #. Sun Java Station
+
+2025年
+~~~~~~~~~~~~~~~~~~
+
+.. image::  ../Picture/2025/06/20/IMG20250620115005.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620115007.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620115316.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620115320.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620123918.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620125039.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620163446.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620163448.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620163523.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620163632.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620164531.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620164547.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620164550.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620165031.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620170902.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620193046.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621070543.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621070548.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621070817.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621070900.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621091646.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621091649.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621102509.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621102514.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621102552.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621102559.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621102605.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621102824.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621103745.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621103752.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621104206.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621112836.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621113419.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621114827.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621131216.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621131224.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620102747.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620114940.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620123903.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620143218.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620161944.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620161951.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620163216.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620173643.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620182142.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620190847.jpg
+.. image::  ../Picture/2025/06/20/IMG20250620191554.jpg
+.. image::  ../Picture/2025/06/21/IMG20250621144640.jpg
 
 2024年
 ~~~~~~~~~~~~~~~~~~
