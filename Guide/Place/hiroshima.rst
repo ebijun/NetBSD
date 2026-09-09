@@ -1,5 +1,5 @@
 .. 
- Copyright (c) 2013-2024 Jun Ebihara All rights reserved.
+ Copyright (c) 2013-2026 Jun Ebihara All rights reserved.
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
@@ -52,7 +52,8 @@ Maps:
  2022,10/1,99,9,オンライン
  2023,11/12,54,14,サテライトキャンパスひろしま
  2024,9/29,113,17,サテライトキャンパスひろしま
- 2025,12/13,,,サテライトキャンパスひろしま
+ 2025,12/13,79,14,サテライトキャンパスひろしま
+ 2026,9/12,,,サテライトキャンパスひろしま
 
 観光ガイドバックナンバー 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,6 +66,7 @@ https://github.com/ebijun/osc-demo　にあります。
 
  No,イベント,URL
 
+ 232,OSC2026広島,http://www.re.soum.co.jp/~jun/OSC2026hiroshima.pdf
  222,OSC2025広島,http://www.re.soum.co.jp/~jun/OSC2025hiroshima.pdf
  202,OSC2024広島,http://www.re.soum.co.jp/~jun/OSC2024hiroshima.pdf
  193,OSC2023広島,http://www.re.soum.co.jp/~jun/OSC2023hiroshima.pdf
@@ -103,6 +105,7 @@ togetterまとめ
  OSC2023広島,KOF2023&OSC2023/Hiroshima NetBSDのご紹介 の記録,https://togetter.com/li/2254094
  OSC2024広島,OSC2024 NetBSDブースの記録,https://togetter.com/li/2437595
  OSC2025広島,OSC2025 NetBSDブースの記録,https://posfie.com/@ebijun/p/WkwSt6x
+ OSC2026広島,OSC2026 NetBSDブースの記録,https://posfie.com/@ebijun/p/zsGBpJW
 
 OSC広島発表
 ~~~~~~~~~~~~~
@@ -128,6 +131,7 @@ OSC広島発表
  SONY NEWS NetBSD移植作業とNWS-3260展示,OSC2023広島,https://speakerdeck.com/tsutsui/kof2023
  nonoの話,OSC2023広島,http://www.pastel-flower.jp/~isaki/NetBSD/osc23hi/
  NetBSD/virt68kの話,OSC2024広島,https://www.pastel-flower.jp/~isaki/NetBSD/osc24hi/
+ NetBSD/m68k 近況,OSC2025広島,https://www.pastel-flower.jp/~isaki/NetBSD/osc25hi/
 
 よく行く店
 ~~~~~~~~~~~~~~
@@ -191,6 +195,40 @@ OSC広島発表
  陸軍被服支厰倉庫,出汐,峠三吉「倉庫の記録」
  広島市郷土資料館,宇品,曲がった鉄骨と、かもじづくり。かもじって何？
  旧広島港湾事務所,宇品,広島唯一の明治時代の公共建築かつ被曝建物。
+
+
+2025年
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. image::  ../Picture/2025/12/13/IMG20251213095341.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213101445.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213101507.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213102031.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213110401.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213110410.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213111149.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213111240.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213111250.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213111302.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213111355.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213112332.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213112616.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213112658.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213112702.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213112900.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213112906.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213113016.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213113217.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213113253.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213113256.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213113533.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213113538.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213131240.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213134234.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213141557.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213192802.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213112327.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213112352.jpg
+.. image::  ../Picture/2025/12/13/IMG20251213124213.jpg
 
 2024年
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

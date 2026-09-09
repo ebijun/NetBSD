@@ -729,7 +729,11 @@ LUNA年表　- 月の刃
  2026/4,,miod さんFirst Compiler on the Moon　[198]_
  2026/4,井,nono-1.7.1リリース
  2026/5,井,nono-1.8.0リリース SSGサポート開始
- 2026/6,井,nono-1.8.1リリース SSGサポート開始
+ 2026/6,井,nono-1.8.1リリース 
+ 2026/7,井,nono-1.8.2リリース X68030のOPM実装
+ 2026/8,筒,CPUクロック20MHz RAM 16MBの LUNAで 30秒アニメGIF再生デモ [200]_
+ 2026/8,井,nono-1.8.3リリース C++17に移行
+ 
 
 最近のLUNA
 ----------------
@@ -1100,6 +1104,8 @@ AViiON実機の入手
 .. [196] https://retropcnews.com/archives/1561
 .. [197] https://retropcnews.com/archives/1696
 .. [198] http://miod.online.fr/software/openbsd/stories/m88k3.html
+.. [199] https://ameblo.jp/pcv-98722l/image-12668757586-14926912385.html
+.. [200] https://speakerdeck.com/tsutsui/osc2026kyoto
 
 このページ
 ~~~~~~~~~~~
