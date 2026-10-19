@@ -6,7 +6,7 @@ ARCH=aarch64
 FILE=`date +%Y-%m-%d`-netbsd-raspi-${ARCH}.img
 
 #NetBSD-current
-BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20260820065157Z/evbarm-aarch64/binary
+BINARY=nycdn.netbsd.org/pub/NetBSD-daily/HEAD/20261018091708Z/evbarm-aarch64/binary
 PKG_PATH=http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/${ARCH}/2026/
 
 #NetBSD10
@@ -19,7 +19,7 @@ RPI=${BINARY}/gzimg/arm64.img.gz
 ORD=a.img
 
 # UEFI
-UEFI_VER=v1.52
+UEFI_VER=v1.53
 UEFI_FIRM=RPi4_UEFI_Firmware_${UEFI_VER}.zip
 UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 
@@ -28,9 +28,9 @@ UEFI_URL=https://github.com/pftf/RPi4/releases/download/${UEFI_VER}/${UEFI_FIRM}
 RPI5_UEFI=RPI5
 
 #Firmware:
-#commit 3d301dd924bcd758a4c8cb19fe8531031f033f43 (HEAD -> master, origin/master, origin/HEAD)
+#commit 6c87074190d5d364b814dccca83229801a4ac939 (HEAD -> master, origin/master, origin/HEAD)
 #Author: Dom Cobley <popcornmix@gmail.com>
-#Date:   Mon Aug 10 18:32:49 2026 +0100
+#Date:   Thu Oct 15 14:39:44 2026 +0100
 
 FIRMPATH=/usr/local/NetBSD/RPI/Firmware/firmware/boot
 
