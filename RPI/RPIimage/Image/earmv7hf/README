@@ -1,18 +1,18 @@
-VERSION: :1,$s/2026-08-20/2026-08-20/g
-ISO:     :1,$s/20260819092839Z/20260819092839Z/g
-NetBSD:  :1,$s/11.99.7/11.99.7/g
-PKGSRC:  :1,$s/2026-08-20/2026-08-20/g
+VERSION: :1,$s/2026-10-20/2026-10-20/g
+ISO:     :1,$s/20261019093827Z/20261019093827Z/g
+NetBSD:  :1,$s/11.99.9/11.99.9/g
+PKGSRC:  :1,$s/2026-10-20/2026-10-20/g
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2026-08-20-netbsd-armv7-earmv7hf.img
+Subject: 2026-10-20-netbsd-armv7-earmv7hf.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2026-08-20-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
+I've updated 2026-10-20-netbsd-armv7-earmv7hf.img.gz for RPI Zero2W/2/3.
 
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-08-20-earmv7hf/2026-08-20-netbsd-armv7-earmv7hf.img.gz
-http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-08-20-earmv7hf/MD5
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-10-20-earmv7hf/2026-10-20-netbsd-armv7-earmv7hf.img.gz
+http://cdn.netbsd.org/pub/NetBSD/misc/jun/armv7/2026-10-20-earmv7hf/MD5
 
 Topic:
 - YM2149 PC6001 PSG Player on Raspberry Pi 3B/Zero
@@ -42,40 +42,44 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 11.99.7 evbarm-armv7hf 20260819092839Z armv7.img from nyftp.
+- NetBSD 11.99.9 evbarm-armv7hf 20261019093827Z armv7.img from nyftp.
 - Raspberry PI zero 2 W support
   need internal Wi-Fi support
 
 - Firmware:
-commit 3d301dd924bcd758a4c8cb19fe8531031f033f43 (HEAD -> master, origin/master, origin/HEAD)
+commit 6c87074190d5d364b814dccca83229801a4ac939 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Mon Aug 10 18:32:49 2026 +0100
+Date:   Thu Oct 15 14:39:44 2026 +0100
 
-XXX: omxplayer can't view this newer firmware?[Checking]
+XXX: omxplayer can't view this newer firmware.
 
 sysinfo:
- dhcpcd-10.5.2 NetBSD-11.99.7 sh-20220122-20260819092839Z tzdata-2026cgtz
- userland-NetBSD-11.99.7/evbarm
-
+ bind-9.20.29 g++-14.4.0 gcc-14.4.0 NetBSD-11.99.9 openssh-10.6 opensshd-10.6
+ sh-20220122-20261019093827Z tzdata-2026egtz unbound-1.26.1
+ userland-NetBSD-11.99.9/evbarm
+ 
 pkgsrc:
- at-spi2-core-2.60.5 curl-8.21.0 fontconfig-2.18.2 gdk-pixbuf2-2.44.7
- git-base-2.55.0 glib2-2.88.3 glib2-introspection-2.88.3
- gsettings-desktop-schemas-50.1 gst-plugins1-bad-1.28.5 gst-plugins1-base-1.28.5
- gstreamer1-1.28.5 lerc-4.2.0 libffi-3.8.0 libjpeg-turbo-3.2.0nb2
- libwebp-1.6.0nb3 mlterm-3.9.5 mozilla-rootcerts-1.1.20260611 nghttp2-1.70.0
- p11-kit-0.26.4 pango-1.58.0 perl-5.44.0 py313-setuptools-84.0.0
- python313-3.13.15 qt5-qtbase-5.15.19nb1 raqm-0.11.0 ruby34-3.4.10
- ruby34-addressable-2.9.0 ruby34-atk-4.3.6 ruby34-cairo-1.18.5
- ruby34-cairo-gobject-4.3.6 ruby34-delayer-1.2.1 ruby34-delayer-deferred-2.2.0
- ruby34-diva-2.0.1 ruby34-gdk3-4.3.6nb1 ruby34-gdk_pixbuf2-4.3.6
- ruby34-gettext-3.4.1 ruby34-gio2-4.3.6 ruby34-glib2-4.3.6
- ruby34-gobject-introspection-4.3.6 ruby34-gtk3-4.3.6nb1 ruby34-httpclient-2.9.0
- ruby34-instance_storage-1.0.0 ruby34-locale-2.1.5 ruby34-memoist-0.16.2
- ruby34-mikutter-5.1.2nb1 ruby34-mini_portile2-2.8.9 ruby34-moneta-1.6.0
- ruby34-native-package-installer-1.1.9 ruby34-nokogiri-1.19.4 ruby34-pango-4.3.6
- ruby34-pkg-config-1.6.5 ruby34-pluggaloid-1.7.0 ruby34-public_suffix-7.0.5
- ruby34-red-colors-0.4.0 ruby34-text-1.3.1 ruby34-typed-array-0.1.2
- sqlite3-3.53.4 tiff-4.7.2 uim-1.9.7pre20251027nb5
+ anthy-9100hnb2 at-spi2-core-2.62.0.1 bash-5.3.20 cairo-1.18.6nb2 curl-8.22.0
+ dbus-1.16.2nb3 fontconfig-2.18.3 freetype2-2.15.0 fribidi-1.0.17 gd-2.3.3nb20
+ gdk-pixbuf2-2.44.8nb3 git-base-2.56.0 glib2-2.90.1
+ glib2-introspection-2.90.1nb2 gobject-introspection-1.86.0nb6
+ graphene-1.10.8nb6 gsettings-desktop-schemas-50.1nb1 gst-plugins1-bad-1.28.7
+ gst-plugins1-base-1.28.7 gstreamer1-1.28.7 gtk2+-2.24.33nb41 gtk3+-3.24.52nb5
+ gtk4-4.24.1 harfbuzz-14.6.0 icewm-4.1.0 libcups-2.4.19nb4 libgcrypt-1.12.4
+ libidn2-2.3.8 libproxy-0.5.12nb6 librsvg-2.62.4nb2 libuuid-2.42.3
+ libxml2-2.15.3 m17n-lib-1.8.0nb28 medit-1.2.0nb46 mlterm-3.9.5nb4
+ mozilla-rootcerts-1.1.20260908 p11-kit-0.26.5 pango-1.58.2nb3 pcre2-10.49
+ perl-5.44.0nb2 png-1.6.59 qt5-qtbase-5.15.19nb4 qt5-qtx11extras-5.15.19nb3
+ qt5-qtxmlpatterns-5.15.19nb3 qt6-qt5compat-6.11.2nb1 qt6-qtbase-6.11.2nb4
+ qt6-qtdeclarative-6.11.2nb1 qt6-qtimageformats-6.11.2nb3
+ qt6-qtlanguageserver-6.11.2nb3 qt6-qtshadertools-6.11.2nb3 qt6-qtsvg-6.11.2nb3
+ raqm-0.11.0nb3 ruby34-3.4.11 ruby34-atk-4.3.7nb3 ruby34-cairo-1.18.5nb3
+ ruby34-cairo-gobject-4.3.7nb3 ruby34-gdk3-4.3.7nb3 ruby34-gdk_pixbuf2-4.3.7nb3
+ ruby34-gio2-4.3.7nb3 ruby34-glib2-4.3.7nb3
+ ruby34-gobject-introspection-4.3.7nb3 ruby34-gtk3-4.3.7nb3
+ ruby34-mikutter-5.1.2nb4 ruby34-pango-4.3.7nb3 ruby34-red-colors-0.5.0
+ sayaka-3.8.8 shared-mime-info-2.4nb10 uim-1.9.7pre20251027nb6 zsh-5.9.2
+
 - packages:
   http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/earmv7hf/2026/
 
