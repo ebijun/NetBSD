@@ -1,21 +1,21 @@
-VERSION: :1,$s/2026-08-25/2026-08-25/g
-ISO:     :1,$s/20260824112803Z/20260824112803Z/g
-NetBSD:  :1,$s/11.99.7/11.99.7/g
-PKGSRC:  :1,$s/2026-08-25/2022/
+VERSION: :1,$s/2026-10-21/2026-10-21/g
+ISO:     :1,$s/20261020064044Z/20261020064044Z/g
+NetBSD:  :1,$s/11.99.9/11.99.9/g
+PKGSRC:  :1,$s/2026-10-21/2022/
 # Check MD5 filename before post this mail.
 # why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2026-08-25-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
+Subject: 2026-10-21-netbsd-raspi-earmv6hf.img (Re: Raspberry Pi update please.)
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2026-08-25-netbsd-raspi-earmv6hf.img.gz for RPI.
+I've updated 2026-10-21-netbsd-raspi-earmv6hf.img.gz for RPI.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-08-25-earmv6hf/2026-08-25-netbsd-raspi-earmv6hf.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-08-25-earmv6hf/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-10-21-earmv6hf/2026-10-21-netbsd-raspi-earmv6hf.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-10-21-earmv6hf/MD5
 
 Update:
-- NetBSD-11.99.7
+- NetBSD-11.99.9
 - pkgsrc/www/dillo failed. try www/palemoon.
 - fstab
   To resize_root,disable log from /etc/fstab.
@@ -34,7 +34,7 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 > [input authorization code]
  :
 
-- NetBSD 11.99.7 evbarm-earmv6hf 20260824112803Z rpi.img from nyftp.
+- NetBSD 11.99.9 evbarm-earmv6hf 20261020064044Z rpi.img from nyftp.
 - add pkgsrc/net/sayaka : SNS called Misskey client support
   to show misskey.io timeline with sayaka:
   # mlterm-wscons
@@ -49,9 +49,9 @@ https://social.mikutter.hachune.net/oauth/authorize?client_id=XXX...
 1. firmware copy start* and fix*
 2. sync dtb
 - Firmware update
-commit 06df1d1a5cc34cc32a4d748239dc1523711fae8b (HEAD -> master, origin/master, origin/HEAD)
+commit 6c87074190d5d364b814dccca83229801a4ac939 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Fri Aug 21 12:39:45 2026 +0100
+Date:   Thu Oct 15 14:39:44 2026 +0100
 
 - Raspberry PI zero 2 W
   http://mail-index.netbsd.org/port-arm/2022/02/14/msg007593.html
@@ -161,7 +161,7 @@ Overview:
 QEMU,with GENERIC kernel : vexpress to GENERIC: testing
  https://github.com/ebijun/NetBSD/tree/master/vexpress/Boot
  https://github.com/ebijun/NetBSD/tree/master/vexpress/vexpress-v2p-ca15-tc1.dtb
- http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-08-25-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
+ http://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-10-21-earmv6hf/QEMU/netbsd-GENERIC.ub.gz
  http://mail-index.netbsd.org/port-arm/2017/06/02/msg004154.html
 
 dmesg:
@@ -391,7 +391,7 @@ https://www.facebook.com/NetBSD.jp
 http://www.jp.NetBSD.org/
 https://github.com/ebijun/NetBSD/blob/master/Guide/RPI/RPIupdate2025.rst
 
-- NetBSD 11.99.7 earmv6hf rpi.img.gz base
+- NetBSD 11.99.9 earmv6hf rpi.img.gz base
 - Connect HDMI,USB Keyboard,USB Mouse,Ether(dhcpd and ntpd will work)
 - login root (no passwd)
 - startx ,and icewm running.
