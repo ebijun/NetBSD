@@ -6,10 +6,10 @@ Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
 Copyright (c) 1982, 1986, 1989, 1991, 1993
     The Regents of the University of California.  All rights reserved.
 
-NetBSD 11.99.9 (GENERIC64) #0: Sun Oct 18 09:17:08 UTC 2026
+NetBSD 11.99.11 (GENERIC64) #0: Mon Nov 23 02:38:31 UTC 2026
 	mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/GENERIC64
 total memory = 8021 MB
-avail memory = 7730 MB
+avail memory = 7729 MB
 entropy: ready
 timecounter: Timecounters tick every 10.000 msec
 Kernelized RAIDframe activated
@@ -18,20 +18,20 @@ armfdt0: using EFI runtime services for RTC
 simplebus0 at armfdt0: Raspberry Pi Foundation Raspberry Pi 4 Model B
 simplebus1 at simplebus0
 acpifdt0 at simplebus0
-acpifdt0: SMBIOS rev. 3.8.0 @ 0x39d60000
-ACPI: RSDP 0x0000000038F1F018 000024 (v02 RPIFDN)
-ACPI: XSDT 0x0000000038F1FF18 000074 (v01 RPIFDN RPI4     00000200      01000013)
-ACPI: FACP 0x0000000038F1F098 000114 (v06 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: DSDT 0x00000000389D4018 0022D9 (v02 RPIFDN RPI      00000002 INTL 20230628)
-ACPI: CSRT 0x0000000038F1FB18 000169 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: DBG2 0x0000000038F1FD98 000061 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: GTDT 0x0000000038F1F898 000068 (v03 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: IORT 0x0000000038F1F998 0000B7 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: APIC 0x0000000038F1F218 000184 (v05 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: PPTT 0x0000000038F1F498 000184 (v02 RPIFDN RPI4     00000200 EDK2 00000300)
-ACPI: SSDT 0x0000000038A80018 000277 (v02 RPIFDN RPI4EMMC 00000002 INTL 20230628)
-ACPI: SSDT 0x0000000038A80418 000244 (v05 RPIFDN RPI4XHCI 00000002 INTL 20230628)
-ACPI: BGRT 0x0000000038F1FE98 000038 (v01 INTEL  EDK2     00000002      01000013)
+acpifdt0: SMBIOS rev. 3.8.0 @ 0x3a7b0000
+ACPI: RSDP 0x000000003997E018 000024 (v02 RPIFDN)
+ACPI: XSDT 0x000000003997EF18 000074 (v01 RPIFDN RPI4     00000200      01000013)
+ACPI: FACP 0x000000003997E098 000114 (v06 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: DSDT 0x0000000039434018 0022D9 (v02 RPIFDN RPI      00000002 INTL 20251212)
+ACPI: CSRT 0x000000003997EB18 000169 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: DBG2 0x000000003997ED98 000061 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: GTDT 0x000000003997E898 000068 (v03 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: IORT 0x000000003997E998 0000B7 (v00 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: APIC 0x000000003997E218 000184 (v05 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: PPTT 0x000000003997E498 000184 (v02 RPIFDN RPI4     00000200 EDK2 00000300)
+ACPI: SSDT 0x00000000394E1018 000277 (v02 RPIFDN RPI4EMMC 00000002 INTL 20251212)
+ACPI: SSDT 0x00000000394E1418 000244 (v05 RPIFDN RPI4XHCI 00000002 INTL 20251212)
+ACPI: BGRT 0x000000003997EE98 000038 (v01 INTEL  EDK2     00000002      01000013)
 ACPI: 3 ACPI AML tables successfully acquired and loaded
 acpi0 at acpifdt0: Intel ACPICA 20260408
 acpi0: X/RSDT: OemId <RPIFDN,RPI4    ,00000200>, AslId <    ,01000013>
@@ -148,7 +148,7 @@ bwfm0 at sdmmc0 function 1
 sdmmc1: SD card status: 4-bit, C10, U1, V10, A1
 ld1 at sdmmc1: <0x02:0x544d:SF064:0x01:0xf60436a2:0x183>
 ld1: 59024 MB, 7524 cyl, 255 head, 63 sec, 512 bytes/sect x 120881152 sectors
-ld1: GPT GUID: b71736af-502c-4b99-a917-8f2ea67c014e
+ld1: GPT GUID: ebd0538b-4edf-4a90-b2aa-6c7268d82975
 dk0 at ld1: "EFI", 117260 blocks at 3, type: msdos
 dk1 at ld1: "netbsd-root", 7635119 blocks at 117263, type: ffs
 ld1: 4-bit width, High-Speed/SDR25, 50.000 MHz
@@ -161,11 +161,11 @@ umass0: using SCSI over Bulk-Only
 scsibus0 at umass0: 2 targets, 1 lun per target
 sd0 at scsibus0 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
 sd0: 953 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 2000409264 sectors
-uhidev0 at uhub2 port 4 configuration 1 interface 0
+uhidev0 at uhub2 port 2 configuration 1 interface 0
 uhidev0: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
 ukbd0 at uhidev0
 wskbd0 at ukbd0: console keyboard, using wsdisplay0
-uhidev1 at uhub2 port 4 configuration 1 interface 1
+uhidev1 at uhub2 port 2 configuration 1 interface 1
 uhidev1: Compx (0x25a7) 2.4G Receiver (0xfa61), rev 1.10/6.23, addr 3, iclass 3/1
 uhidev1: 6 report ids
 ums0 at uhidev1 reportid 1: 5 buttons, W and Z dirs
@@ -179,11 +179,11 @@ swwdog0: software watchdog initialized
 boot device: dk1
 root on dk1
 root file system type: ffs
-kern.module.path=/stand/evbarm/11.99.9/modules
-WARNING: clock lost 48 days
+kern.module.path=/stand/evbarm/11.99.11/modules
+WARNING: clock lost 13 days
 WARNING: using filesystem time
 WARNING: CHECK AND RESET THE DATE!
-vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec43000, is_master = 0
+vchiq: vchiq_init_state: slot_zero = 0xffffc0029ec48000, is_master = 0
 vchiq: local ver 8 (min 3), remote ver 8.
 vcaudio0 at vchiq0: auds
 notice: vchiq_get_state: g_state.remote->initialised != 1 (0)
