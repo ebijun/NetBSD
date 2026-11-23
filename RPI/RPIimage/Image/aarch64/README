@@ -1,17 +1,16 @@
-VERSION: :1,$s/2026-10-19/2026-10-19/g
-ISO:     :1,$s/20261018091708Z/20261018091708Z/g
-NetBSD:  :1,$s/11.99.9/11.99.9/g
+VERSION: :1,$s/2026-11-23/2026-11-23/g
+ISO:     :1,$s/20261123023831Z/20261123023831Z/g
+NetBSD:  :1,$s/11.99.11/11.99.11/g
 # Check MD5 filename before post this mail.
-# why dont we take off alone.
 
 To: port-armNetBSD.org@localhost
-Subject: 2026-10-19-netbsd-raspi-aarch64.img
+Subject: 2026-11-23-netbsd-raspi-aarch64.img
 From: Jun Ebihara <jun@soum.co.jp>
 
-I've updated 2026-10-19-netbsd-raspi-aarch64.img.gz for RPI4.
+I've updated 2026-11-23-netbsd-raspi-aarch64.img.gz for RPI4.
 
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-10-19-aarch64/2026-10-19-netbsd-raspi-aarch64.img.gz
-https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-10-19-aarch64/MD5
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-11-23-aarch64/2026-11-23-netbsd-raspi-aarch64.img.gz
+https://cdn.netbsd.org/pub/NetBSD/misc/jun/raspberry-pi/2026-11-23-aarch64/MD5
 
 Topics:
 - [Testing] https://github.com/ebijun/wsfb-player
@@ -64,9 +63,9 @@ dmesg:
  https://dmesgd.nycbug.org/dmesgd?do=view&id=8519
 
 - [Test] Firmware update /boot/fixup4*.dat,start4*.elf
-commit 6c87074190d5d364b814dccca83229801a4ac939 (HEAD -> master, origin/master, origin/HEAD)
+commit 4a44943386efa917f012ec55aba8b51f750be0f7 (HEAD -> master, origin/master, origin/HEAD)
 Author: Dom Cobley <popcornmix@gmail.com>
-Date:   Thu Oct 15 14:39:44 2026 +0100
+Date:   Wed Nov 18 16:11:00 2026 +0000
 
 - SD/MMC Configration
   Switch Default uSD/eMMC Routing: Arasan SDHCI -> EMMC2
@@ -99,34 +98,32 @@ bwfm0: autoconfiguration error: NVRAM file not available
   and pkgin update
 
 sysinfo:
- bind-9.20.29 g++-14.4.0 gcc-14.4.0 NetBSD-11.99.9 openssh-10.6 opensshd-10.6
- sh-20220122-20261018091708Z tzdata-2026egtz unbound-1.26.1
- userland-NetBSD-11.99.9/evbarm
+ NetBSD-11.99.11 sh-20220122-20261123023831Z tzdata-2026fgtz unbound-1.26.2
+ userland-NetBSD-11.99.11/evbarm
  
 pkgsrc:
- anthy-9100hnb2 at-spi2-core-2.62.0.1 bash-5.3.20 cairo-1.18.4nb4 curl-8.22.0
- dbus-1.16.2nb3 fribidi-1.0.17 gd-2.3.3nb18 gdk-pixbuf2-2.44.8nb3
- git-base-2.56.0 glib2-2.90.1 glib2-introspection-2.88.3nb1
- gobject-introspection-1.86.0nb6 graphene-1.10.8nb6
- gsettings-desktop-schemas-50.1nb1 gst-plugins1-bad-1.28.7
- gst-plugins1-base-1.28.7 gstreamer1-1.28.7 gtk2+-2.24.33nb39 gtk3+-3.24.52nb3
- gtk4-4.22.4nb1 harfbuzz-14.4.0nb1 icewm-4.1.0 libcups-2.4.19nb4
- libgcrypt-1.12.4 libidn2-2.3.8 libproxy-0.5.12nb4 librsvg-2.62.3nb2
- libuuid-2.42.3 libxml2-2.15.4 m17n-lib-1.8.0nb26 medit-1.2.0nb44
- mlterm-3.9.5nb2 mozilla-rootcerts-1.1.20260908 pango-1.58.2nb1 pcre2-10.49
- perl-5.44.0nb2 png-1.6.59 python313-3.13.16 qt5-qtbase-5.15.19nb2
- qt5-qtx11extras-5.15.19nb1 qt5-qtxmlpatterns-5.15.19nb1 qt6-qt5compat-6.11.2nb1
- qt6-qtbase-6.11.2nb2 qt6-qtdeclarative-6.11.2nb1 qt6-qtimageformats-6.11.2nb1
- qt6-qtlanguageserver-6.11.2nb1 qt6-qtshadertools-6.11.2nb1 qt6-qtsvg-6.11.2nb1
- raqm-0.11.0nb1 ruby33-3.3.12nb2 ruby34-3.4.11 ruby34-atk-4.3.7nb1
- ruby34-cairo-1.18.5nb1 ruby34-cairo-gobject-4.3.7nb1 ruby34-gdk3-4.3.7nb1
- ruby34-gdk_pixbuf2-4.3.7nb1 ruby34-gio2-4.3.7nb1 ruby34-glib2-4.3.7nb1
- ruby34-gobject-introspection-4.3.7nb1 ruby34-gtk3-4.3.7nb1
- ruby34-mikutter-5.1.2nb2 ruby34-pango-4.3.7nb1 ruby34-red-colors-0.5.0
- sayaka-3.8.8 shared-mime-info-2.4nb8 uim-1.9.7pre20251027nb6 zsh-5.9.2
+ MesaLib-21.3.9nb5 cairo-1.18.6nb2 curl-8.23.0 dbus-1.16.2nb5 freetype2-2.15.0
+ fribidi-1.0.18 gd-2.3.3nb20 glib2-introspection-2.90.1nb2
+ gobject-introspection-1.86.0nb6 gsettings-desktop-schemas-50.1nb3
+ gst-plugins1-bad-1.28.8 gst-plugins1-base-1.28.8 gstreamer1-1.28.8
+ gtk2+-2.24.33nb41 gtk3+-3.24.52nb5 gtk4-4.24.1 harfbuzz-15.0.0 lcms2-2.19.1nb1
+ lerc-4.3.0 libLLVM-13.0.1nb4 libcups-2.4.20 libelf-0.8.13nb1
+ libjpeg-turbo-3.2.1 libproxy-0.5.12nb6 librsvg-2.62.4nb2 libunistring-1.5
+ libva-2.24.1 m17n-lib-1.8.0nb28 medit-1.2.0nb46 mlterm-3.9.5nb4
+ mozilla-rootcerts-1.1.20260908nb2 nghttp2-1.71.0 pango-1.58.2nb3
+ python313-3.13.18 python314-3.14.10 qt5-qtbase-5.15.19nb4
+ qt5-qtx11extras-5.15.19nb3 qt5-qtxmlpatterns-5.15.19nb3 qt6-qt5compat-6.11.2nb3
+ qt6-qtbase-6.11.2nb4 qt6-qtdeclarative-6.11.2nb3 qt6-qtimageformats-6.11.2nb3
+ qt6-qtlanguageserver-6.11.2nb3 qt6-qtshadertools-6.11.2nb3 qt6-qtsvg-6.11.2nb3
+ raqm-0.11.0nb3 ruby34-3.4.12 ruby34-atk-4.3.7nb3 ruby34-cairo-1.18.5nb3
+ ruby34-cairo-gobject-4.3.7nb3 ruby34-gdk3-4.3.7nb3 ruby34-gdk_pixbuf2-4.3.7nb3
+ ruby34-gio2-4.3.7nb3 ruby34-glib2-4.3.7nb3
+ ruby34-gobject-introspection-4.3.7nb3 ruby34-gtk3-4.3.7nb3
+ ruby34-mikutter-5.1.2nb4 ruby34-pango-4.3.7nb3 shared-mime-info-2.4nb10
+ sqlite3-3.54.1 uim-1.9.7pre20251027nb8
 
 RPI4 status:
-- boot via UEFI_VER=v1.53
+- boot via UEFI_VER=v1.54-rc
   https://github.com/pftf/RPi4/releases
 
 In this image,pre-setted /boot/RPI_EFI.fd
@@ -144,7 +141,7 @@ In this image,pre-setted /boot/RPI_EFI.fd
   https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2711_bootloader_config.md
 
 Update:
-- NetBSD-current 11.99.9 evbarm-aarch64 20261018091708Z arm64.img from nyftp.
+- NetBSD-current 11.99.11 evbarm-aarch64 20261123023831Z arm64.img from nyftp.
 - pkginfo
  https://github.com/ebijun/NetBSD/blob/master/RPI/RPIimage/Image/aarch64/pkginfo
 - sysinfo
